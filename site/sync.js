@@ -43,8 +43,18 @@
   //   cards     per card the copy graded most recently
   //   session   this browser's unfinished practice set, never the other device's
   // `local` wins ties where there is no time to compare and it changed last.
+  //
+  // `epoch` is the exception to "nothing is lost": clearing progress, restoring
+  // an earlier copy or importing a backup replaces the state and raises it. A
+  // copy from a lower epoch is then dropped whole instead of merged back in.
   function merge(local, remote) {
     if (!remote) return local;
+    if ((local.epoch || 0) !== (remote.epoch || 0)) {
+      var win = (local.epoch || 0) > (remote.epoch || 0) ? local : remote, o = {};
+      for (var key in win) o[key] = win[key];
+      o.session = local.session || null;
+      return o;
+    }
     var a = local, b = remote, prim = (a.at || 0) >= (b.at || 0) ? a : b, sec = prim === a ? b : a;
     var out = { v: 1 };
     out.answers = {};
@@ -104,7 +114,40 @@
   function strip(s) { var o = {}; for (var k in s) if (k !== 'session' && k !== 'at') o[k] = s[k]; return o; }
   function same(x, y) { return !!x && !!y && canon(strip(x)) === canon(strip(y)); }
 
-  if (typeof module !== 'undefined' && module.exports) { module.exports = { merge: merge, same: same }; return; }
+  // Which JLPT level a question, mock set or flashcard belongs to ('n5' … 'n1'):
+  // question and set ids start with it; a card key starts with its lesson number.
+  var LESSON_LEVELS = [[17, 'n5'], [34, 'n4'], [58, 'n3'], [75, 'n2'], [92, 'n1']];
+  function levelOf(id) {
+    var m = /^(n[1-5])-/.exec(id);
+    if (m) return m[1];
+    var n = parseInt(id, 10);
+    if (isNaN(n)) return '';
+    for (var i = 0; i < LESSON_LEVELS.length; i++) if (n <= LESSON_LEVELS[i][0]) return LESSON_LEVELS[i][1];
+    return '';
+  }
+  // The state without one level's answers, review entries, mock tests and cards
+  // ('all': without any; settings and reported questions stay).
+  function without(s, level) {
+    var out = {}, k;
+    for (k in s) out[k] = s[k];
+    ['answers', 'review', 'mock', 'cards'].forEach(function (part) {
+      out[part] = {};
+      for (var id in (s[part] || {})) if (level !== 'all' && levelOf(id) !== level) out[part][id] = s[part][id];
+    });
+    if (level === 'all') { out.days = {}; out.cardDays = {}; out.session = null; }
+    return out;
+  }
+  // What the state holds, per level: { n5: { answers, review, mocks, cards }, … } and the days practised.
+  function summary(s) {
+    var by = {}, add = function (id, what, n) { var l = levelOf(id); if (!l) return; (by[l] || (by[l] = { answers: 0, review: 0, mocks: 0, cards: 0 }))[what] += n; };
+    for (var q in (s.answers || {})) if (s.answers[q].length) add(q, 'answers', 1);
+    for (var r in (s.review || {})) add(r, 'review', 1);
+    for (var m in (s.mock || {})) add(m, 'mocks', (s.mock[m].attempts || []).length);
+    for (var c in (s.cards || {})) add(c, 'cards', 1);
+    return { levels: by, days: Object.keys(s.days || {}).length };
+  }
+
+  if (typeof module !== 'undefined' && module.exports) { module.exports = { merge: merge, same: same, without: without, summary: summary, levelOf: levelOf }; return; }
 
   // ─── Browser ───
   if (!root.fetch) return;
@@ -207,6 +250,81 @@
     else if (Date.now() - lastPull > 60000) pull();          // back on this tab: the other device may have moved on
   });
 
+  // ─── Managing progress: replace it (clear, restore, import), export it ───
+  // Replacing can't go through merge(), which would bring everything back: the
+  // new state gets a higher epoch, so every device takes it whole. Signed in,
+  // the latest copy is fetched first so answers from another device that
+  // already reached the server are not thrown away by accident.
+  function replaceWith(make, what) {
+    var before = acct().token ? pull() : Promise.resolve();
+    return before.then(function () {
+      var st = state(), cur = st.get(), next = make(cur);
+      ls.set('jp_quiz_v1_backup', JSON.stringify({ at: Date.now(), data: cur }));
+      next.v = 1;
+      next.epoch = Math.max(cur.epoch || 0, (remote && remote.data && remote.data.epoch) || 0) + 1;
+      next.at = Date.now();
+      st.set(next);
+      track('account_progress', { action: what });
+      render();
+      if (acct().token) return sync();
+    });
+  }
+  function exportFile() {
+    var d = new Date(), a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([JSON.stringify(state().get())], { type: 'application/json' }));
+    a.download = 'jpnotes-progress-' + d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2) + '.json';
+    a.click();
+    track('account_progress', { action: 'export' });
+  }
+  function importFile(file) {
+    var fr = new FileReader();
+    fr.onload = function () {
+      var s;
+      try { s = JSON.parse(fr.result); if (!s || s.v !== 1 || typeof s.answers !== 'object') throw 0; }
+      catch (e) { root.alert(t('这不是有效的进度文件。', 'That isn’t a valid progress file.')); return; }
+      if (!root.confirm(t('用这个文件里的进度替换现在的进度？' + (acct().token ? '你所有设备上的进度都会换成它。' : '') + '现在的进度会在这个浏览器里留一份备份。',
+        'Replace your current progress with the one in this file? ' + (acct().token ? 'All your devices will get it. ' : '') + 'A backup of the current progress is kept in this browser.'))) return;
+      replaceWith(function () { s.session = null; return s; }, 'import');
+    };
+    fr.readAsText(file);
+  }
+  var LEVELS = ['n5', 'n4', 'n3', 'n2', 'n1'];
+  var versions = null;       // restore points from the server, while that list is open
+  function progressHtml() {
+    var sum = summary(state().get()), parts = [];
+    LEVELS.forEach(function (l) {
+      var x = sum.levels[l]; if (!x) return;
+      var bits = [];
+      if (x.answers) bits.push(t(x.answers + ' 题', x.answers + ' questions'));
+      if (x.review) bits.push(t('错题本 ' + x.review, x.review + ' to review'));
+      if (x.mocks) bits.push(t('模拟考 ' + x.mocks + ' 场', x.mocks + ' mock test' + (x.mocks > 1 ? 's' : '')));
+      if (x.cards) bits.push(t('卡片 ' + x.cards, x.cards + ' cards'));
+      if (bits.length) parts.push('<li><b>' + l.toUpperCase() + '</b> ' + bits.join(t('、', ', ')) + '</li>');
+    });
+    var has = parts.length > 0;
+    var h = '<p class="acct-title acct-sub">' + t('学习进度', 'Your progress') + (sum.days ? ' <span class="acct-muted">' + t('练习过 ' + sum.days + ' 天', sum.days + ' days practised') + '</span>' : '') + '</p>' +
+      (has ? '<ul class="acct-levels">' + parts.join('') + '</ul>' : '<p class="acct-muted">' + t('还没有做题记录。', 'No practice recorded yet.') + '</p>') +
+      '<div class="acct-actions"><button type="button" class="acct-btn" data-acct="export"' + (has ? '' : ' disabled') + '>' + t('导出备份', 'Export backup') + '</button>' +
+      '<label class="acct-btn">' + t('导入备份', 'Import backup') + '<input type="file" accept="application/json" data-acct-file hidden></label>' +
+      (acct().token ? '<button type="button" class="acct-btn" data-acct="history">' + t('恢复到之前的版本', 'Restore an earlier copy') + '</button>' : '') + '</div>';
+    if (versions) {
+      h += '<div class="acct-versions">' + (versions === 'loading' ? '<p class="acct-muted">' + t('读取中…', 'Loading…') + '</p>' :
+        !versions.length ? '<p class="acct-muted">' + t('云端还没有更早的版本。', 'No earlier copies are stored yet.') + '</p>' :
+        '<p class="acct-muted">' + t('云端保留最近几次同步前的版本，以及过去 14 天每天最后一份。', 'Kept online: the copies before your last few syncs, and the last one of each of the past 14 days.') + '</p><ul>' +
+        versions.map(function (v) {
+          return '<li><span>' + esc(new Date(v.saved).toLocaleString(EN() ? 'en' : 'zh-CN', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })) + ' · ' + t(v.answers + ' 题有记录', v.answers + ' questions answered') + '</span>' +
+            '<button type="button" class="acct-btn" data-acct="restore" data-v="' + v.version + '">' + t('恢复', 'Restore') + '</button></li>';
+        }).join('') + '</ul>') + '</div>';
+    }
+    if (has) {
+      h += '<div class="acct-actions acct-clear"><select class="acct-scope" aria-label="' + t('要清空的范围', 'What to clear') + '">' +
+        LEVELS.filter(function (l) { return sum.levels[l]; }).map(function (l) { return '<option value="' + l + '">' + t('只清空 ' + l.toUpperCase(), l.toUpperCase() + ' only') + '</option>'; }).join('') +
+        '<option value="all">' + t('清空全部进度', 'All progress') + '</option></select>' +
+        '<button type="button" class="acct-link" data-acct="clear">' + t('清空', 'Clear') + '</button></div>';
+    }
+    return '<div class="acct-prog">' + h + '</div>';
+  }
+
   // ─── The account block of the settings dialog ───
   var box = null;
   function time(ms) { var d = new Date(ms); return ('0' + d.getHours()).slice(-2) + ':' + ('0' + d.getMinutes()).slice(-2); }
@@ -219,7 +337,7 @@
       box.innerHTML = '<p class="acct-title">' + t('登录以同步进度', 'Sign in to sync your progress') + '</p>' +
         '<p class="acct-muted">' + t('登录后，做题记录、错题本、模拟考成绩和单词卡会在你的各个设备之间同步。不登录也能照常使用，进度只存在这个浏览器里。',
           'Your answers, review list, mock test results and flashcards then follow you across devices. Without signing in everything works as before, kept in this browser only.') + ' ' + about() + '</p>' +
-        '<div class="acct-g"></div>' + (status.kind === 'error' ? '<p class="acct-err">' + esc(status.msg) + '</p>' : '');
+        '<div class="acct-g"></div>' + (status.kind === 'error' ? '<p class="acct-err">' + esc(status.msg) + '</p>' : '') + progressHtml();
       google();
       return;
     }
@@ -230,7 +348,7 @@
       '<p class="acct-muted">' + line + '</p>' +
       '<div class="acct-actions"><button type="button" class="acct-btn" data-acct="sync">' + t('立即同步', 'Sync now') + '</button><button type="button" class="acct-btn" data-acct="out">' + t('退出登录', 'Sign out') + '</button>' +
       '<button type="button" class="acct-link" data-acct="delete">' + t('删除账号和云端数据', 'Delete account and synced data') + '</button></div>' +
-      '<p class="acct-muted">' + about() + '</p>';
+      '<p class="acct-muted">' + about() + '</p>' + progressHtml();
   }
   function signedIn(r) {
     setAcct({ token: r.data.token, email: r.data.email });
@@ -241,6 +359,25 @@
   function onClick(e) {
     var el = e.target.closest('[data-acct]'), act = el && el.getAttribute('data-acct');
     if (act === 'sync') pull();
+    else if (act === 'export') exportFile();
+    else if (act === 'history') {
+      if (versions) { versions = null; render(); return; }
+      versions = 'loading'; render();
+      api('GET', '/sync/history').then(function (r) { versions = r.data.versions || []; render(); }).catch(function (e2) { versions = null; setStatus('error', e2.message); });
+    } else if (act === 'restore') {
+      var ver = el.getAttribute('data-v');
+      if (!root.confirm(t('把进度恢复到这个版本？之后做的题不会保留；你所有设备上的进度都会换成它。现在的进度会在这个浏览器里留一份备份。',
+        'Go back to this copy? Answers recorded after it are not kept, and all your devices will get it. A backup of the current progress is kept in this browser.'))) return;
+      api('GET', '/sync/history/' + ver).then(function (r) {
+        versions = null;
+        return replaceWith(function () { var d = r.data.data; d.session = null; return d; }, 'restore');
+      }).catch(function (e2) { setStatus('error', e2.message); });
+    } else if (act === 'clear') {
+      var sel = box.querySelector('.acct-scope'), lv = sel ? sel.value : 'all', name = lv === 'all' ? t('全部', 'all') : lv.toUpperCase();
+      if (!root.confirm(t('清空' + name + '进度（做题记录、错题本、模拟考成绩、单词卡）？' + (acct().token ? '你所有设备和云端的都会清空。' : '') + '清空前的进度会在这个浏览器里留一份备份，登录用户也可以从“恢复到之前的版本”找回。',
+        'Clear ' + (lv === 'all' ? 'all' : name) + ' progress (answers, review list, mock test results, flashcards)? ' + (acct().token ? 'It is cleared on all your devices and online. ' : '') + 'A backup stays in this browser, and signed-in readers can also get it back from "Restore an earlier copy".'))) return;
+      replaceWith(function (cur) { return without(cur, lv); }, lv === 'all' ? 'clear_all' : 'clear_level');
+    }
     else if (act === 'out') {
       track('account_logout', {});
       api('POST', '/auth/logout').catch(function () {}).then(function () { setAcct(null); remote = null; status = { kind: 'idle' }; render(); });
@@ -252,7 +389,11 @@
   root.jpAccount = {
     mount: function (el) {
       if (!el) return;
-      if (box !== el) { box = el; el.addEventListener('click', onClick); }
+      if (box !== el) {
+        box = el; el.addEventListener('click', onClick);
+        el.addEventListener('change', function (e) { if (e.target.hasAttribute('data-acct-file') && e.target.files[0]) importFile(e.target.files[0]); });
+      }
+      versions = null;
       track('account_view', { signed_in: !!acct().token });
       render();
     }
