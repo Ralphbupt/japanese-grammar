@@ -3749,16 +3749,16 @@ ${AI_SCRIPT}
     );
     const aboutMeta = {
       en: {
-        title: "About Japanese Grammar Notes — Who Makes It, Sources & License",
+        title: "About jpnotes.dev — Who Makes It, Sources & License",
         desc: "Who makes jpnotes.dev, why, which references it uses, and how to report a mistake or contribute. Free JLPT N5–N1 notes and practice under CC BY-NC 4.0.",
         keywords: "about jpnotes.dev, Japanese grammar notes, JLPT self-study, open source",
-        name: "About Japanese Grammar Notes", site: "Japanese Grammar Notes", crumb: "About",
+        name: "About jpnotes.dev", site: "jpnotes.dev", crumb: "About",
       },
       zh: {
-        title: "关于本站 - 日语语法笔记 | 作者、内容来源与开源协议",
-        desc: "了解 jpnotes.dev 日语语法笔记是谁做的、为什么做、参考了哪些资料、如何反馈错误与参与贡献。这是一份免费、开源、采用 CC BY-NC 4.0 许可的 JLPT N5–N1 语法学习笔记，含接续规则、例句、辨析与练习。",
-        keywords: "日语语法笔记关于, 作者, jpnotes.dev, 日语学习, JLPT 自学, 中文母语者",
-        name: "关于日语语法笔记", site: "日语语法笔记", crumb: "关于本站",
+        title: "关于 jpnotes.dev | 作者、内容来源与开源协议",
+        desc: "了解 jpnotes.dev 是谁做的、为什么做、参考了哪些资料、如何反馈错误与参与贡献。免费、开源、采用 CC BY-NC 4.0 许可的 JLPT N5–N1 语法讲解和题库，含接续规则、例句、辨析、练习题、听力与模拟考。",
+        keywords: "jpnotes.dev, 关于, 作者, 日语学习, JLPT 自学, 中文母语者",
+        name: "关于 jpnotes.dev", site: "jpnotes.dev", crumb: "关于本站",
       },
     };
     const aboutOgImage = `${SITE}about/og-image.png`;
@@ -4913,8 +4913,8 @@ Each \`/lessonNN/\` page contains:
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="#b8283f" stroke-width="2" opacity="0.3"/>
-  <text x="600" y="220" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="96" fill="#1a1a2e" font-weight="bold">日语语法笔记</text>
-  <text x="600" y="320" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="42" fill="#4a4740">Japanese Grammar Notes</text>
+  <text x="600" y="220" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="96" fill="#1a1a2e" font-weight="bold">jpnotes.dev</text>
+  <text x="600" y="320" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="42" fill="#4a4740">JLPT grammar &amp; practice</text>
   <text x="600" y="400" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="36" fill="#b8283f">N5 → N4 → N3 → N2 → N1</text>
   <text x="600" y="470" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="24" fill="#605c55">Free · Bilingual · N5 → N1 · Audio</text>
   <text x="600" y="550" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="20" fill="#605c55">${SITE_HOST}</text>
@@ -4948,7 +4948,7 @@ Each \`/lessonNN/\` page contains:
   <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="#b8283f" stroke-width="2" opacity="0.3"/>
   <text x="600" y="180" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="48" fill="#b8283f" font-weight="bold">JLPT ${level}</text>
   <text x="600" y="310" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="64" fill="#1a1a2e" font-weight="bold">${escJaTitle}</text>
-  <text x="600" y="430" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="32" fill="#4a4740">Japanese Grammar Notes</text>
+  <text x="600" y="430" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="32" fill="#4a4740">JLPT grammar &amp; practice</text>
   <text x="600" y="550" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="20" fill="#605c55">${SITE_HOST}</text>
 </svg>`;
     await sharp(Buffer.from(lessonOgSvg))
@@ -4972,7 +4972,7 @@ Each \`/lessonNN/\` page contains:
     { slug: "N3", topLabel: "JLPT N3", mainTitle: "N3 文法チェックリスト", sub: `${ogLevelCounts.N3} 课 · 100+ 语法点`, accent: "#b8283f" },
     { slug: "N2", topLabel: "JLPT N2", mainTitle: "N2 文法チェックリスト", sub: `${ogLevelCounts.N2} 课 · 75+ 语法点`, accent: "#b8283f" },
     ...(ogLevelCounts.N1 ? [{ slug: "N1", topLabel: "JLPT N1", mainTitle: "N1 文法チェックリスト", sub: `${ogLevelCounts.N1} 课 · 100+ 语法点`, accent: "#b8283f" }] : []),
-    { slug: "about", topLabel: "About · 关于", mainTitle: "日语语法笔记", sub: "N5 → N1 · Free · Bilingual", accent: "#b8283f" },
+    { slug: "about", topLabel: "About · 关于", mainTitle: "jpnotes.dev", sub: "N5 → N1 · Free · Bilingual", accent: "#b8283f" },
     { slug: "anki", topLabel: "Anki Decks", mainTitle: "JLPT 文法 卡组", sub: "N5 · N4 · N3 · N2 · N1", accent: "#b8283f" },
     { slug: "practice", topLabel: "JLPT Practice · 做题", mainTitle: "JLPT 練習問題", sub: "N5 → N1 · Listening · Mock tests · Free", accent: "#b8283f" },
     { slug: "listening", topLabel: "JLPT Listening · 听力", mainTitle: "JLPT 聴解練習", sub: "N5 → N1 · 650+ questions · Transcripts", accent: "#b8283f" },
