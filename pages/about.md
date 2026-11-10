@@ -3,7 +3,7 @@
 ## 这是什么||What is this
 
 :::zh
-「日语语法笔记」是一份免费、双语（中文 + 英文）的 JLPT N5 → N1 语法学习材料，共 **{{LESSONS}} 课、{{POINTS}}+ 个语法点**。每个语法点包含：
+jpnotes.dev 是一份免费、双语（中文 + 英文）的 JLPT N5 → N1 语法讲解和题库，共 **{{LESSONS}} 课、{{POINTS}}+ 个语法点**。每个语法点包含：
 
 - **接续规则**：动词 / 形容词 / 名词的具体接续方式
 - **3+ 例句**：覆盖日常对话和考试常见语境
@@ -15,7 +15,7 @@
 :::
 
 :::en
-"Japanese Grammar Notes" is a free JLPT N5 → N1 grammar study set, with every explanation written in both English and Chinese: **{{LESSONS}} lessons covering {{POINTS}}+ grammar points**. Each grammar point includes:
+jpnotes.dev is a free JLPT N5 → N1 grammar reference and question bank, with every explanation written in both English and Chinese: **{{LESSONS}} lessons covering {{POINTS}}+ grammar points**. Each grammar point includes:
 
 - **Conjugation rules**: how it combines with verbs / adjectives / nouns
 - **3+ example sentences**: covering daily conversation and exam-style contexts
