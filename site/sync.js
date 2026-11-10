@@ -296,8 +296,9 @@
   }
   var LEVELS = ['n5', 'n4', 'n3', 'n2', 'n1'];
   var versions = null;       // restore points from the server, while that list is open
+  var manageOpen = false;    // the "manage" fold stays as the reader left it across redraws
   function progressHtml() {
-    var sum = summary(state().get()), parts = [];
+    var sum = summary(state().get()), rows = [];
     LEVELS.forEach(function (l) {
       var x = sum.levels[l]; if (!x) return;
       var bits = [];
@@ -305,30 +306,30 @@
       if (x.review) bits.push(t('错题本 ' + x.review, x.review + ' to review'));
       if (x.mocks) bits.push(t('模拟考 ' + x.mocks + ' 场', x.mocks + ' mock test' + (x.mocks > 1 ? 's' : '')));
       if (x.cards) bits.push(t('卡片 ' + x.cards, x.cards + ' cards'));
-      if (bits.length) parts.push('<li><b>' + l.toUpperCase() + '</b> ' + bits.join(t('、', ', ')) + '</li>');
+      if (bits.length) rows.push('<li><b>' + l.toUpperCase() + '</b><span>' + bits.join(' · ') + '</span></li>');
     });
-    var has = parts.length > 0;
-    var h = '<p class="acct-title acct-sub">' + t('学习进度', 'Your progress') + (sum.days ? ' <span class="acct-muted">' + t('练习过 ' + sum.days + ' 天', sum.days + ' days practised') + '</span>' : '') + '</p>' +
-      (has ? '<ul class="acct-levels">' + parts.join('') + '</ul>' : '<p class="acct-muted">' + t('还没有做题记录。', 'No practice recorded yet.') + '</p>') +
-      '<div class="acct-actions"><button type="button" class="acct-btn" data-acct="export"' + (has ? '' : ' disabled') + '>' + t('导出备份', 'Export backup') + '</button>' +
+    var has = rows.length > 0;
+    var h = '<div class="acct-head"><p class="acct-title">' + t('学习进度', 'Your progress') + '</p>' + (sum.days ? '<span class="acct-muted">' + t('练习过 ' + sum.days + ' 天', sum.days + (sum.days === 1 ? ' day' : ' days') + ' practised') + '</span>' : '') + '</div>' +
+      (has ? '<ul class="acct-levels">' + rows.join('') + '</ul>' : '<p class="acct-muted">' + t('还没有做题记录。', 'No practice recorded yet.') + '</p>');
+    var m = '<div class="acct-actions"><button type="button" class="acct-btn" data-acct="export"' + (has ? '' : ' disabled') + '>' + t('导出备份', 'Export backup') + '</button>' +
       '<label class="acct-btn">' + t('导入备份', 'Import backup') + '<input type="file" accept="application/json" data-acct-file hidden></label>' +
-      (acct().token ? '<button type="button" class="acct-btn" data-acct="history">' + t('恢复到之前的版本', 'Restore an earlier copy') + '</button>' : '') + '</div>';
+      (acct().token ? '<button type="button" class="acct-btn" data-acct="history">' + t('恢复旧版本', 'Restore earlier copy') + '</button>' : '') + '</div>';
     if (versions) {
-      h += '<div class="acct-versions">' + (versions === 'loading' ? '<p class="acct-muted">' + t('读取中…', 'Loading…') + '</p>' :
+      m += '<div class="acct-versions">' + (versions === 'loading' ? '<p class="acct-muted">' + t('读取中…', 'Loading…') + '</p>' :
         !versions.length ? '<p class="acct-muted">' + t('云端还没有更早的版本。', 'No earlier copies are stored yet.') + '</p>' :
-        '<p class="acct-muted">' + t('云端保留最近几次同步前的版本，以及过去 14 天每天最后一份。', 'Kept online: the copies before your last few syncs, and the last one of each of the past 14 days.') + '</p><ul>' +
+        '<p class="acct-fine">' + t('云端保留最近几次同步前的版本，以及过去 14 天每天最后一份。', 'Kept online: the copies before your last few syncs, and the last one of each of the past 14 days.') + '</p><ul>' +
         versions.map(function (v) {
           return '<li><span>' + esc(new Date(v.saved).toLocaleString(EN() ? 'en' : 'zh-CN', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })) + ' · ' + t(v.answers + ' 题有记录', v.answers + ' questions answered') + '</span>' +
-            '<button type="button" class="acct-btn" data-acct="restore" data-v="' + v.version + '">' + t('恢复', 'Restore') + '</button></li>';
+            '<button type="button" class="acct-btn acct-sm" data-acct="restore" data-v="' + v.version + '">' + t('恢复', 'Restore') + '</button></li>';
         }).join('') + '</ul>') + '</div>';
     }
     if (has) {
-      h += '<div class="acct-actions acct-clear"><select class="acct-scope" aria-label="' + t('要清空的范围', 'What to clear') + '">' +
+      m += '<div class="acct-clear"><span class="acct-muted">' + t('清空进度', 'Clear progress') + '</span><select class="acct-scope" aria-label="' + t('要清空的范围', 'What to clear') + '">' +
         LEVELS.filter(function (l) { return sum.levels[l]; }).map(function (l) { return '<option value="' + l + '">' + t('只清空 ' + l.toUpperCase(), l.toUpperCase() + ' only') + '</option>'; }).join('') +
-        '<option value="all">' + t('清空全部进度', 'All progress') + '</option></select>' +
-        '<button type="button" class="acct-link" data-acct="clear">' + t('清空', 'Clear') + '</button></div>';
+        '<option value="all">' + t('全部', 'Everything') + '</option></select>' +
+        '<button type="button" class="acct-btn acct-sm acct-danger" data-acct="clear">' + t('清空', 'Clear') + '</button></div>';
     }
-    return '<div class="acct-prog">' + h + '</div>';
+    return '<section class="acct-card">' + h + '<details class="acct-manage"' + (manageOpen ? ' open' : '') + '><summary>' + t('备份与管理', 'Backup & manage') + '</summary>' + m + '</details></section>';
   }
 
   // ─── The account block of the settings dialog ───
@@ -343,32 +344,31 @@
     box.hidden = false;
     var a = acct();
     if (!a.token) {
-      box.innerHTML = '<p class="acct-title">' + t('登录以同步进度', 'Sign in to sync your progress') + '</p>' +
-        '<p class="acct-muted">' + t('登录后，做题记录、错题本、模拟考成绩和单词卡会在你的各个设备之间同步。不登录也能照常使用，进度只存在这个浏览器里。',
-          'Your answers, review list, mock test results and flashcards then follow you across devices. Without signing in everything works as before, kept in this browser only.') + ' ' + about() + '</p>' +
-        '<div class="acct-g"></div>' + mailHtml() + (status.kind === 'error' ? '<p class="acct-err">' + esc(status.msg) + '</p>' : '') + progressHtml();
+      box.innerHTML = '<section class="acct-card"><p class="acct-title">' + t('登录', 'Sign in') + '</p>' +
+        '<p class="acct-muted">' + t('在手机和电脑之间同步做题进度，不登录也能用。', 'Sync your practice progress across devices. Optional: everything works without it.') + '</p>' +
+        '<div class="acct-g"></div>' + mailHtml() + (status.kind === 'error' ? '<p class="acct-err">' + esc(status.msg) + '</p>' : '') +
+        '<p class="acct-fine">' + t('只保存你的邮箱和进度。', 'Only your email address and progress are stored. ') + about() + '</p></section>' + progressHtml();
       google();
       return;
     }
     var line = status.kind === 'busy' ? t('同步中…', 'Syncing…') :
       status.kind === 'error' ? '<span class="acct-err">' + t('同步失败：', 'Sync failed: ') + esc(status.msg) + '</span>' :
-      a.at ? t('进度已是最新', 'Progress is up to date') + (a.moved ? t(' · 上次更新 ', ' · last change ') + time(a.moved) : '') : '';
-    box.innerHTML = '<p class="acct-title">' + esc(a.email) + '</p>' +
-      '<p class="acct-muted">' + line + '</p>' +
-      '<div class="acct-actions"><button type="button" class="acct-btn" data-acct="sync">' + t('立即同步', 'Sync now') + '</button><button type="button" class="acct-btn" data-acct="out">' + t('退出登录', 'Sign out') + '</button>' +
-      '<button type="button" class="acct-link" data-acct="delete">' + t('删除账号和云端数据', 'Delete account and synced data') + '</button></div>' +
-      '<p class="acct-muted">' + about() + '</p>' + progressHtml();
+      a.at ? '<span class="acct-ok">✓</span> ' + t('进度已是最新', 'Progress is up to date') + (a.moved ? t(' · 上次更新 ', ' · last change ') + time(a.moved) : '') : '';
+    box.innerHTML = '<section class="acct-card"><div class="acct-id"><span class="acct-avatar" aria-hidden="true">' + esc((a.email || '?').charAt(0).toUpperCase()) + '</span>' +
+      '<div><p class="acct-title">' + esc(a.email) + '</p><p class="acct-muted">' + line + '</p></div></div>' +
+      '<div class="acct-actions"><button type="button" class="acct-btn" data-acct="sync">' + t('立即同步', 'Sync now') + '</button><button type="button" class="acct-btn" data-acct="out">' + t('退出登录', 'Sign out') + '</button></div>' +
+      '<p class="acct-fine">' + about() + ' · <button type="button" class="acct-link" data-acct="delete">' + t('删除账号和云端数据', 'Delete account and synced data') + '</button></p></section>' + progressHtml();
   }
   // The other way in, for readers who can't reach Google: a 6-digit code by email.
   function mailHtml() {
     if (!EMAIL_ON) return '';
     var m = mailState;
-    return '<div class="acct-mail"><p class="acct-muted">' + t('或者用邮箱登录，我们会发一个 6 位验证码：', 'Or sign in by email; we send a 6-digit code:') + '</p>' +
-      '<div class="acct-actions"><input type="email" class="acct-input" data-mail="email" autocomplete="email" placeholder="you@example.com" value="' + esc(m.email) + '">' +
-      '<button type="button" class="acct-btn" data-acct="mail-send"' + (m.busy ? ' disabled' : '') + '>' + (m.sent ? t('重新发送', 'Send again') : t('发送验证码', 'Send code')) + '</button></div>' +
-      (m.sent ? '<div class="acct-actions"><input type="text" class="acct-input acct-code" data-mail="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="' + t('6 位验证码', '6-digit code') + '" value="' + esc(m.code) + '">' +
-        '<button type="button" class="acct-btn" data-acct="mail-verify"' + (m.busy ? ' disabled' : '') + '>' + t('登录', 'Sign in') + '</button></div>' : '') +
-      (m.msg ? '<p class="' + (m.err ? 'acct-err' : 'acct-muted') + '">' + esc(m.msg) + '</p>' : '') + '</div>';
+    return '<div class="acct-or"><span>' + t('或', 'or') + '</span></div>' +
+      '<div class="acct-field"><input type="email" data-mail="email" autocomplete="email" placeholder="' + t('邮箱地址', 'Email address') + '" aria-label="' + t('邮箱地址', 'Email address') + '" value="' + esc(m.email) + '">' +
+      '<button type="button" data-acct="mail-send"' + (m.busy ? ' disabled' : '') + '>' + (m.sent ? t('重新发送', 'Send again') : t('发送验证码', 'Send code')) + '</button></div>' +
+      (m.sent ? '<div class="acct-field"><input type="text" class="acct-code" data-mail="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="' + t('6 位验证码', '6-digit code') + '" aria-label="' + t('6 位验证码', '6-digit code') + '" value="' + esc(m.code) + '">' +
+        '<button type="button" class="acct-primary" data-acct="mail-verify"' + (m.busy ? ' disabled' : '') + '>' + t('登录', 'Sign in') + '</button></div>' : '') +
+      (m.msg ? '<p class="' + (m.err ? 'acct-err' : 'acct-muted') + '">' + esc(m.msg) + '</p>' : '');
   }
   function mailSend() {
     var m = mailState;
@@ -434,6 +434,7 @@
       if (box !== el) {
         box = el; el.addEventListener('click', onClick);
         el.addEventListener('change', function (e) { if (e.target.hasAttribute('data-acct-file') && e.target.files[0]) importFile(e.target.files[0]); });
+        el.addEventListener('toggle', function (e) { if (e.target.classList && e.target.classList.contains('acct-manage')) manageOpen = e.target.open; }, true);
         el.addEventListener('input', function (e) { var k = e.target.getAttribute && e.target.getAttribute('data-mail'); if (k) mailState[k] = e.target.value; });
         el.addEventListener('keydown', function (e) {
           var k = e.key === 'Enter' && e.target.getAttribute && e.target.getAttribute('data-mail');
@@ -454,7 +455,7 @@
     var el = box.querySelector('.acct-g');
     var dev = LOCAL && q.get('devlogin');
     if (dev) {    // local worker with DEV_LOGIN=1: no Google round trip, for tests
-      el.innerHTML = '<button type="button" class="acct-btn" data-dev>Dev sign-in: ' + esc(dev) + '</button>';
+      el.innerHTML = '<button type="button" class="acct-btn acct-wide" data-dev>Dev sign-in: ' + esc(dev) + '</button>';
       el.firstChild.onclick = function () { api('POST', '/auth/google', { dev: dev }).then(signedIn).catch(function (e) { setStatus('error', e.message); }); };
       return;
     }
@@ -471,7 +472,9 @@
         client_id: CLIENT_ID,
         callback: function (res) { api('POST', '/auth/google', { credential: res.credential }).then(signedIn).catch(function (e) { track('account_login_error', { status: e.status || 0 }); setStatus('error', e.message); }); }
       });
-      root.google.accounts.id.renderButton(target, { theme: 'outline', size: 'large', text: 'signin_with', shape: 'pill', locale: EN() ? 'en' : 'zh_CN' });
+      var c = document.documentElement.classList, dark = c.contains('theme-dark') || (!c.contains('theme-light') && root.matchMedia && root.matchMedia('(prefers-color-scheme: dark)').matches);
+      root.google.accounts.id.renderButton(target, { theme: dark ? 'filled_black' : 'outline', size: 'large', text: 'continue_with', shape: 'rectangular', logo_alignment: 'center',
+        width: Math.max(200, Math.min(400, Math.floor(target.getBoundingClientRect().width) || 320)), locale: EN() ? 'en' : 'zh_CN' });
     }).catch(function () {
       track('account_gsi_fail', {});     // Google unreachable (mainland China, blockers)
       var target = box && box.querySelector('.acct-g');
