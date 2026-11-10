@@ -5901,9 +5901,10 @@ body.ai-open #tc-ai { border-color: var(--accent); box-shadow: 0 0 0 2px var(--a
 .acct-link { background: none; border: 0; padding: 0; color: var(--text-muted); text-decoration: underline; cursor: pointer; font: inherit; font-size: .85rem; }
 .acct a, .settings-foot a { color: var(--link); }
 .settings-foot { margin: 1rem 0 0; font-size: .82rem; line-height: 1.6; color: var(--text-muted); }
-/* Signed in: a dot on the account buttons */
-html.acct-in #tc-acct, html.acct-in #settings-btn, html.acct-in .m-btn[data-m="settings"] { position: relative; }
-html.acct-in #tc-acct::after, html.acct-in #settings-btn::after, html.acct-in .m-btn[data-m="settings"]::after { content: ""; position: absolute; top: 5px; right: 5px; width: 7px; height: 7px; border-radius: 50%; background: #3fb950; }
+/* The account buttons carry a dot only when syncing has failed (html.acct-warn,
+   set by sync.js): signed in and working shows nothing, so it never nags. */
+html.acct-warn #tc-acct, html.acct-warn #settings-btn, html.acct-warn .m-btn[data-m="settings"] { position: relative; }
+html.acct-warn #tc-acct::after, html.acct-warn #settings-btn::after, html.acct-warn .m-btn[data-m="settings"]::after { content: ""; position: absolute; top: 5px; right: 5px; width: 7px; height: 7px; border-radius: 50%; background: #d29922; }
 `);
 
 // ─── JS ───

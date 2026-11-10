@@ -121,10 +121,8 @@
 
   function acct() { try { return JSON.parse(ls.get('jp_acct')) || {}; } catch (e) { return {}; } }
   function setAcct(a) {
-    if (a) ls.set('jp_acct', JSON.stringify(a)); else ls.del('jp_acct');
-    document.documentElement.classList.toggle('acct-in', !!(a && a.token));
+    if (a) ls.set('jp_acct', JSON.stringify(a)); else { ls.del('jp_acct'); document.documentElement.classList.remove('acct-warn'); }
   }
-  document.documentElement.classList.toggle('acct-in', !!acct().token);
 
   function api(method, path, body) {
     var a = acct(), head = {};
@@ -154,7 +152,11 @@
   function state() { return root.jpQuizState || stored; }
   var remote = null;                            // { version, data } as last seen on the server
   var busy = false, again = false, timer = null, status = { kind: 'idle' };
-  function setStatus(kind, msg) { status = { kind: kind, msg: msg, at: Date.now() }; render(); }
+  function setStatus(kind, msg) {
+    status = { kind: kind, msg: msg, at: Date.now() };
+    document.documentElement.classList.toggle('acct-warn', kind === 'error' && !!acct().token);   // the only mark on the account button
+    render();
+  }
 
   // One round: fetch the server's copy if we don't have it, merge, show the
   // result here, and send it back if the server's differs. A 409 means another
