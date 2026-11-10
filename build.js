@@ -123,6 +123,12 @@ const FEEDBACK_JS_HASH = require("crypto").createHash("md5").update(FEEDBACK_JS_
 const { buildQuiz, loadLevel: loadQuizLevel, LEVELS: QUIZ_LEVELS, TYPES: QUIZ_TYPES, MOCK: QUIZ_MOCK, QUIZ_PUBLIC, QUIZ_LINKS, AUDIO_REQUESTS: QUIZ_AUDIO_REQUESTS, ABOVE_LEVEL, aboveLevel, CK_IMG_DIR: QUIZ_CK_IMG_DIR } = require("./build-quiz");
 const SETTINGS_JS_HASH = require("crypto").createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "settings-modal.js"))).digest("hex").slice(0, 8);
 const SETTINGS_SCRIPT = `<script src="${SITE_PATH}settings-modal.js?v=${SETTINGS_JS_HASH}" defer></script>`;
+// Where pages fetch mp3s from: the R2 bucket behind audio.jpnotes.dev (uploaded
+// by tools/audio-sync.py; keys mirror audio/). AUDIO_BASE=/audio builds a site
+// that plays the local copies instead (rsync audio/ into dist/audio/ first),
+// for audio that isn't uploaded yet.
+const AUDIO_BASE = (process.env.AUDIO_BASE || "https://audio.jpnotes.dev").replace(/\/$/, "");
+const AUDIO_ORIGIN = /^https?:/.test(AUDIO_BASE) ? " " + new URL(AUDIO_BASE).origin : "";
 // Content-Security-Policy connect-src allowlist. This is the technical
 // guarantee behind the "your key never leaves your browser except to the
 // provider you picked" promise: the browser itself refuses fetch/XHR/beacon
@@ -138,7 +144,7 @@ const AI_PROVIDER_HOSTS = [...new Set(
 // Inline scripts stay allowed — the pages are built with many of them — but a
 // script or image from any other host is refused, so an injected tag can't
 // load code or leak data (an <img> beacon) elsewhere.
-const CSP_META = `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://giscus.app; style-src 'self' 'unsafe-inline' https://giscus.app; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data:; frame-src https://giscus.app; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">`;
+const CSP_META = `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://giscus.app; style-src 'self' 'unsafe-inline' https://giscus.app; img-src 'self' data: blob:; media-src 'self' blob:${AUDIO_ORIGIN}; font-src 'self' data:; frame-src https://giscus.app; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">`;
 // Copies of the site (someone rebuilding the repo on their own domain): the
 // host is checked against jpnotes.dev itself — not SITE, which a copy changes —
 // and a copy gets a banner pointing to the original, a canonical link back to
@@ -338,14 +344,14 @@ const TTS_JS = `document.addEventListener('DOMContentLoaded', function(){
     btn.setAttribute('aria-label', 'Read aloud');
     var ready = null;   // Audio already loading from a hover, consumed by the next click
     btn.addEventListener('pointerenter', function() {
-      if (!ready) { ready = new Audio('/audio/' + audioId + '.mp3'); ready.preload = 'auto'; }
+      if (!ready) { ready = new Audio('${AUDIO_BASE}/' + audioId + '.mp3'); ready.preload = 'auto'; }
     });
     btn.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
       if (currentBtn === btn) { stopCurrent(); return; }
       stopCurrent();
-      var audio = ready || new Audio('/audio/' + audioId + '.mp3');
+      var audio = ready || new Audio('${AUDIO_BASE}/' + audioId + '.mp3');
       ready = null;
       current = audio;
       currentBtn = btn;
@@ -3935,7 +3941,7 @@ ${sidebarMarkupHtml}
     <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span>${level ? `<a href="${SITE_PATH}${level}/">${level}</a><span class="sep">›</span>` : ""}<span>${m.crumb}</span>
   </nav>
   <header class="quiz-head"><h1>${m.h1}</h1><p>${m.lead}</p><p class="quiz-nav">${m.nav}</p></header>
-  ${appAttrs === null ? m.body : `<div id="quiz-app" data-level="${level}" ${appAttrs}></div>`}${m.about || ""}
+  ${appAttrs === null ? m.body : `<div id="quiz-app" data-level="${level}" data-audio="${AUDIO_BASE}" ${appAttrs}></div>`}${m.about || ""}
   <div id="quiz-feedback"></div>
   ${siteFooterHtml}
 </main>

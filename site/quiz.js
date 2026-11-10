@@ -18,6 +18,8 @@
   var EN = document.documentElement.getAttribute('data-force-lang') !== 'zh';
   var LESSON_BASE = '/' + (EN ? '' : 'zh/');
   var KEY = 'jp_quiz_v1';
+  // mp3s come from the audio host the build names (R2), or /audio on a local build.
+  var AUDIO_BASE = app.getAttribute('data-audio') || '/audio';
   var DAY = 86400;
   var KEEP_ANSWERS = 5;          // per question
   var RECENT = 20;               // answers that make up a type's accuracy
@@ -498,7 +500,7 @@
   var player = null;
   // 🔊 next to a question's sentence: play it, tap again to stop.
   function say(el) {
-    var src = '/audio/' + el.getAttribute('data-k') + '.mp3';
+    var src = AUDIO_BASE + '/' + el.getAttribute('data-k') + '.mp3';
     if (player && player.src.indexOf(src) >= 0 && !player.paused) { player.pause(); return; }
     if (player) player.pause();
     player = new Audio(src);
@@ -506,7 +508,7 @@
     track('quiz_say', { level: LEVEL });
   }
   function listen(el) {
-    var src = '/audio/' + el.getAttribute('data-k') + '.mp3';
+    var src = AUDIO_BASE + '/' + el.getAttribute('data-k') + '.mp3';
     if (player && player.src.indexOf(src) >= 0 && !player.paused) { player.pause(); el.textContent = '🔊 ' + t('继续听', 'Resume'); return; }
     if (!player || player.src.indexOf(src) < 0) { if (player) player.pause(); player = new Audio(src); player.onended = function () { el.textContent = '🔊 ' + t('再听一遍', 'Play again'); }; }
     el.textContent = '⏸ ' + t('暂停', 'Pause');
@@ -1246,7 +1248,7 @@
   // One <audio> element plays everything. iOS starts audio only from a tap;
   // once that element has played, it may go on to the next file by itself,
   // which the mock test's back-to-back items rely on.
-  var CK_AUDIO = '/audio/choukai/', CK_IMG = '/images/choukai/';
+  var CK_AUDIO = AUDIO_BASE + '/choukai/', CK_IMG = '/images/choukai/';
   var ck = { el: null, mode: 'all', end: null, from: 0, loop: false, onEnd: null };
   // Practice speed (0.75× / 1× / 1.25×), kept in prefs; the mock sitting is always 1×.
   var CK_RATES = [0.75, 1, 1.25];
@@ -1685,7 +1687,7 @@
       else if (act === 'c-home') cardsHome();
       else if (act === 'c-show') showBack();
       else if (act === 'c-grade') grade(+el.getAttribute('data-k'));
-      else if (act === 'c-audio') new Audio('/audio/' + el.getAttribute('data-k')).play().catch(function () {});
+      else if (act === 'c-audio') new Audio(AUDIO_BASE + '/' + el.getAttribute('data-k')).play().catch(function () {});
     });
     app.addEventListener('change', function (e) {
       var act = e.target.getAttribute('data-act');

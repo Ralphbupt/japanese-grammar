@@ -47,7 +47,6 @@ jobs:
 
       - run: npm ci
       - run: npm run build
-      - run: cp -r audio dist/audio
       - run: python build-anki.py
 
       # Snapshot the sitemap that is live right now, before this deploy replaces
