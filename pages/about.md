@@ -120,7 +120,7 @@ Different parts of the site were made and checked differently:
 - **sharp**：生成 OG 图片
 - **GitHub Pages + Cloudflare Registrar**：托管 + 自定义域名 jpnotes.dev
 
-页面是**静态站点**，每次推送 main 分支，GitHub Actions 自动构建并部署。服务器端只有一个 Cloudflare Worker，负责免费 AI 中转和读者反馈（见下方「问 AI」的隐私说明）。
+页面是**静态站点**，每次推送 main 分支，GitHub Actions 自动构建并部署。服务器端只有两个 Cloudflare Worker：一个负责免费 AI 中转和读者反馈（见下方「问 AI」的隐私说明），一个负责可选的登录和进度同步（见「登录与进度同步的隐私」）；音频文件放在 Cloudflare R2。
 :::
 
 :::en
@@ -135,7 +135,7 @@ Tech stack:
 - **sharp**: OG image generation
 - **GitHub Pages + Cloudflare Registrar**: hosting + custom domain (jpnotes.dev)
 
-The pages are a **static site**: every push to main triggers a GitHub Actions build and deploy. The only server-side piece is one Cloudflare Worker for the free AI relay and reader feedback (see the "Ask AI" privacy notes below).
+The pages are a **static site**: every push to main triggers a GitHub Actions build and deploy. The only server-side pieces are two Cloudflare Workers: one for the free AI relay and reader feedback (see the "Ask AI" privacy notes below), one for the optional sign-in and progress sync (see "Sign-in and progress sync"); audio files are served from Cloudflare R2.
 :::
 
 <a id="ai-setup"></a>
@@ -224,6 +224,34 @@ The 🤖 "Ask AI" side panel on lesson pages sends the current lesson plus your 
 - **Fully local option.** To keep everything on your machine, run a local model with Ollama or LM Studio; the browser then only talks to localhost.
 
 The free model costs you nothing; with your own key, billing is between you and the provider, and this site takes no part and no cut.
+:::
+
+<a id="account-privacy"></a>
+
+## 登录与进度同步的隐私||Sign-in and progress sync: what is stored
+
+:::zh
+练习题、模拟题和语法卡片页可以用 Google 账号登录（测试中），登录后做题进度会在你的各个设备之间同步。**登录完全可选：不登录时，进度只存在这个浏览器里，本站的服务器收不到任何东西。**
+
+- **保存什么。** 你的邮箱地址；Google 给这个账号的一串编号（用来认出下次登录的是同一个人）；登录会话（只保存令牌的哈希，180 天后过期）；以及你的做题进度：每题最近几次作答、错题本、每天做了多少题、模拟考成绩和没考完的那一场、语法卡片的复习状态、练习页的几项偏好（每组题数、听力语速等）。为了在合并出错时能恢复，还会保留这份进度最近 3 个旧版本。
+- **不保存什么。** 姓名、头像（Google 会一并发来，本站直接丢弃）；密码（Google 从不把它交给任何网站）；「问 AI」的密钥和对话；IP 地址。这个服务没有开启请求日志。
+- **存在哪里。** 本站自己的 Cloudflare 数据库（D1，亚太区），只有 api.jpnotes.dev 上的一个 Cloudflare Worker 能读写，[源码](https://github.com/Ralphbupt/japanese-grammar/blob/main/worker/src/account.js)公开。合并两台设备进度的规则在[这个文件](https://github.com/Ralphbupt/japanese-grammar/blob/main/site/sync.js)里。
+- **用来做什么。** 只用来同步进度。不会给你发推广邮件，不会把邮箱或进度交给任何第三方。
+- **Google 能看到什么。** 登录按钮来自 Google 的脚本，只在登录框出现时才加载；Google 会知道你用这个账号登录过 jpnotes.dev，但看不到你的做题进度。
+- **这个浏览器里。** 登录令牌存在 localStorage；第一次和云端合并之前，会在本机留一份合并前的进度备份。
+- **退出和删除。** 「退出登录」只结束这台设备的会话，本机和云端的进度都保留。「删除账号和云端数据」会立刻删掉上面列出的全部内容，本机浏览器里的进度不受影响；Cloudflare 的数据库备份最多再保留 30 天后自动清除。
+:::
+
+:::en
+The practice, mock test and flashcard pages let you sign in with a Google account (in beta) so your progress follows you across devices. **Signing in is optional: without it, progress stays in this browser and this site's server receives nothing.**
+
+- **What is stored.** Your email address; the id number Google assigns to the account (to recognise the same person next time); your sign-in sessions (only a hash of the token, expiring after 180 days); and your progress: the last few answers per question, the review list, how many questions you did each day, mock test results and an unfinished test, flashcard review state, and a few practice settings (set size, listening speed and the like). The three previous versions of that progress are kept as well, to recover from a bad merge.
+- **What is not stored.** Your name and picture (Google sends them along; they are discarded); a password (Google never gives one to any site); "Ask AI" keys or conversations; IP addresses. Request logging is turned off for this service.
+- **Where.** In this site's own Cloudflare database (D1, Asia-Pacific), readable and writable only by one Cloudflare Worker at api.jpnotes.dev, whose [source](https://github.com/Ralphbupt/japanese-grammar/blob/main/worker/src/account.js) is public. The rules for merging two devices' progress are in [this file](https://github.com/Ralphbupt/japanese-grammar/blob/main/site/sync.js).
+- **What it is used for.** Syncing your progress, nothing else. No marketing email, and neither your address nor your progress is passed to anyone.
+- **What Google sees.** The sign-in button comes from Google's script, loaded only when the sign-in box is shown. Google learns that you signed in to jpnotes.dev with that account; it does not see your progress.
+- **In this browser.** The sign-in token is kept in localStorage, and just before the first merge with the online copy a backup of your progress as it was is saved locally.
+- **Signing out and deleting.** "Sign out" ends the session on this device only; progress stays both here and online. "Delete account and synced data" removes everything listed above at once and leaves the progress in this browser alone; Cloudflare's database backups expire on their own within 30 days.
 :::
 
 ## 播客||Podcast

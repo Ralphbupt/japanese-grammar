@@ -196,7 +196,8 @@
     if (!a.token) {
       box.innerHTML = '<h2>' + t('同步进度', 'Sync your progress') + ' <small class="q-tag">' + t('测试中', 'Beta') + '</small></h2>' +
         '<p class="q-muted">' + t('登录后，做题记录、错题本、模拟考成绩和单词卡会在你的各个设备之间同步。不登录也能照常使用，进度只存在这个浏览器里。我们只保存你的邮箱和这些进度。',
-          'Sign in and your answers, review list, mock test results and flashcards follow you across devices. Without signing in everything works as before, kept in this browser only. We store your email address and that progress, nothing else.') + '</p>' +
+          'Sign in and your answers, review list, mock test results and flashcards follow you across devices. Without signing in everything works as before, kept in this browser only. We store your email address and that progress, nothing else.') +
+          ' <a href="/' + (EN ? '' : 'zh/') + 'about/#account-privacy">' + t('保存了什么、怎么删除', 'What is stored and how to delete it') + '</a></p>' +
         '<div class="q-acct-g"></div>' + (status.kind === 'error' ? '<p class="q-acct-err">' + esc(status.msg) + '</p>' : '');
       google();
       return;
