@@ -45,7 +45,34 @@
     return fresh();
   }
   var S = load();
-  function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }
+  // `at`: when this browser last changed the state; site/sync.js (signed-in
+  // readers) uses it to tell which side is newer, and hears of every change.
+  function save() {
+    S.at = Date.now();
+    try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {}
+    if (window.jpSync) window.jpSync.changed();
+  }
+  // A question whose answer changed (rev bump) starts over.
+  function prune() {
+    Object.keys(S.answers).forEach(function (id) {
+      var q = Q[id], a = S.answers[id];
+      if (q && a.length && (a[a.length - 1].rev || 1) !== q.rev) { delete S.answers[id]; delete S.review[id]; }
+    });
+  }
+  // For sync.js: the state, and a way to hand back one merged with the copy on
+  // the server. The home screen is redrawn; a question on screen is left alone.
+  var AT_HOME = false;
+  app.addEventListener('click', function (e) { if (e.target.closest('[data-act]')) AT_HOME = false; }, true);
+  window.jpQuizState = {
+    get: function () { return S; },
+    set: function (s) {
+      var f = fresh(); for (var k in f) if (!(k in s)) s[k] = f[k];
+      S = s; prune();
+      try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {}
+      if (D) ALL = D.questions.filter(function (q) { return S.reported.indexOf(q.id) < 0; });
+      if (AT_HOME) { if (MOCK) mockList(); else if (CARDS) { if (C.length) cardsHome(); } else if (D) home(); }
+    }
+  };
 
   // ─── Data ───
   var D, Q = {}, ALL = [];
@@ -54,7 +81,7 @@
   // The text under the app (what the level tests, FAQ, lesson links) is for the
   // start screen; while a set, test or card session is on screen it's hidden.
   // A new screen also stops any listening audio.
-  function view(home) { document.body.classList.toggle('quiz-busy', !home); ckStop(); }
+  function view(home) { AT_HOME = !!home; document.body.classList.toggle('quiz-busy', !home); ckStop(); }
   // Scroll the app to the top of the window — below the desktop quick controls
   // (#top-controls, fixed top right), which would otherwise cover the top bar.
   function toTop() {
@@ -71,11 +98,7 @@
     fetch(app.getAttribute('data-src')).then(function (r) { return r.json(); }).then(function (d) {
     D = d;
     D.questions.forEach(function (q) { Q[q.id] = q; });
-    // A question whose answer changed (rev bump) starts over.
-    Object.keys(S.answers).forEach(function (id) {
-      var q = Q[id], a = S.answers[id];
-      if (q && a.length && (a[a.length - 1].rev || 1) !== q.rev) { delete S.answers[id]; delete S.review[id]; }
-    });
+    prune();
     ALL = D.questions.filter(function (q) { return S.reported.indexOf(q.id) < 0; });
     home();
     // Deep links from other pages: #type=kanji, #lesson=lesson05, #ref=lesson05.3
@@ -1629,6 +1652,7 @@
   function schedule(x, grade) {
     var n = Date.now();
     x = x ? JSON.parse(JSON.stringify(x)) : { s: 'learn', step: 0, ivl: 0, ease: 2.5, lapses: 0 };
+    x.t = n;   // last graded: sync keeps the copy graded most recently
     if (x.s === 'learn') {
       if (grade === 0) { x.step = 0; x.due = n + CARD_STEPS[0]; }
       else if (grade === 1) x.due = n + CARD_STEPS[x.step] * 1.5;
