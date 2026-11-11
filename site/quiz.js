@@ -804,7 +804,7 @@
     h += '<details class="q-report"><summary>' + t('这题有问题？', 'Something wrong with this question?') + '</summary>' +
       [['answer', '答案不对', 'The answer is wrong'], ['two', '有两个对的', 'Two options work'], ['stem', '题目不通顺', 'The question reads badly'], ['other', '其他', 'Something else']]
         .map(function (r) { return '<button class="q-btn" data-act="report" data-k="' + r[0] + '">' + t(r[1], r[2]) + '</button>'; }).join(' ') +
-      '<div class="q-report-more" hidden><textarea maxlength="1000" rows="3" placeholder="' + t('哪里不对？可以不写', 'What’s wrong? (optional)') + '"></textarea>' +
+      '<div class="q-report-more" hidden><textarea maxlength="1000" rows="3" placeholder="' + t('哪里不对？可以不写', 'What’s wrong? (optional)') + '"></textarea>' + (window.jpFeedback && window.jpFeedback.emailField ? window.jpFeedback.emailField() : '') +
       '<button class="q-btn q-btn-primary" data-act="report-send">' + t('提交', 'Send') + '</button></div></details></div>';
     var P = q.passage && D.passages[q.passage];
     if (!left.length && P && P.au) h += listenBtn(P.au);
@@ -1840,8 +1840,9 @@
       if (S.reported.indexOf(id) < 0) S.reported.push(id);
       save();
       track('quiz_report', { id: id, reason: reason });
-      var done = function (ok) { det.outerHTML = '<p class="q-muted q-report">' + (ok ? t('谢谢！这题之后不会再出给你，我会检查。', 'Thanks — you won’t see this one again, and it’ll be checked.') : t('没发出去，但这题之后不会再出给你。', 'Couldn’t send it, but you won’t see this one again.')) + '</p>'; };
-      if (window.jpFeedback) window.jpFeedback.send({ kind: 'question', qid: id, reason: reason, choice: last ? last.c : null, text: det.querySelector('textarea').value.trim() }).then(function () { done(true); }, function () { done(false); });
+      var emIn = det.querySelector('.fb-email input'), email = emIn ? emIn.value.trim() : '';
+      var done = function (ok) { det.outerHTML = '<p class="q-muted q-report">' + (ok ? t('谢谢！这题之后不会再出给你，我会检查。', 'Thanks — you won’t see this one again, and it’ll be checked.') + (window.jpFeedback.sentNote ? ' ' + window.jpFeedback.sentNote(email).replace(/^[^！!]*[！!—]\s*/, '') : '') : t('没发出去，但这题之后不会再出给你。', 'Couldn’t send it, but you won’t see this one again.')) + '</p>'; };
+      if (window.jpFeedback) window.jpFeedback.send({ kind: 'question', qid: id, reason: reason, choice: last ? last.c : null, text: det.querySelector('textarea').value.trim(), email: email }).then(function () { done(true); }, function () { done(false); });
       else done(false);
     }
     else if (act === 'retry') start('retry', arrange(app._last.bad.map(function (id) { return Q[id]; })));

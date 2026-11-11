@@ -53,6 +53,8 @@
       var win = (local.epoch || 0) > (remote.epoch || 0) ? local : remote, o = {};
       for (var key in win) o[key] = win[key];
       o.session = local.session || null;
+      o.fbRids = rids(local, remote);   // replacing progress doesn't lose the way replies to feedback come back
+      if (!o.fbRids.length) delete o.fbRids;
       return o;
     }
     var a = local, b = remote, prim = (a.at || 0) >= (b.at || 0) ? a : b, sec = prim === a ? b : a;
@@ -99,10 +101,19 @@
       var x = (a.cardDays || {})[d] || {}, y = (b.cardDays || {})[d] || {};
       out.cardDays[d] = { n: Math.max(x.n || 0, y.n || 0), r: Math.max(x.r || 0, y.r || 0) };
     });
+    var r = rids(a, b); if (r.length) out.fbRids = r;
     out.at = Math.max(a.at || 0, b.at || 0);
     // Fields a newer quiz.js may add: the more recent side's.
     keys(prim, sec).forEach(function (k) { if (!(k in out)) out[k] = k in prim ? prim[k] : sec[k]; });
     return out;
+  }
+
+  // The ids feedback.js gave the notes sent from each device (a reply to any
+  // of them shows on every device): both sides', newest last, at most 20.
+  function rids(a, b) {
+    var seen = {}, out = [];
+    (a.fbRids || []).concat(b.fbRids || []).forEach(function (r) { if (typeof r === 'string' && !seen[r]) { seen[r] = 1; out.push(r); } });
+    return out.slice(-20);
   }
 
   // Same content? Key order, `at` and the per-browser `session` don't count.

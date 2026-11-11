@@ -233,6 +233,7 @@ The account button (top right) lets you sign in with a Google account or a code 
 - **GitHub PR**：直接提交修复，特别欢迎补充例句和易错点对比
 - **邮箱**：[pengcheng199@gmail.com](mailto:pengcheng199@gmail.com)
 - **页面里直接写**：练习题、模拟题、语法卡片页底部的「💬 反馈 / 建议」，以及每道题解析下的「这题有问题？」。匿名，不用登录。发送的只有：你写的文字、当前页面地址、界面语言；如果是针对某道题，还有题号、你选的选项和你勾的原因。为了防止刷屏，会存一个按日期加盐的 IP 哈希（每天换盐，无法还原 IP，也无法跨天关联），用来限制每人每天最多 20 条。数据存在本站自己的 Cloudflare D1 数据库里，只用来改进题目和网站。
+- **回复怎么回到你这里**：第一次发反馈时，浏览器会生成一个随机编号（存在本机 localStorage），跟反馈一起发出。它不含任何个人信息，只用来把回复送回这个浏览器：之后打开本站时会拿这个编号问一下有没有回复，有就显示出来。登录了的话，编号会跟进度一起同步，换设备也能看到回复。想收到邮件可以留邮箱（选填）：只用来发这一封回复，发完就删除；90 天内没回复也会删除。
 
 我会回复每一个反馈。
 :::
@@ -244,6 +245,7 @@ Found a typo? Awkward example? Unclear explanation?
 - **GitHub PR**: submit a fix directly; additions to examples and comparison notes especially welcome
 - **Email**: [pengcheng199@gmail.com](mailto:pengcheng199@gmail.com)
 - **Right on the page**: "💬 Feedback / suggestions" at the bottom of the practice, mock test and flashcard pages, and "Something wrong with this question?" under each explanation. Anonymous, no sign-in. What's sent: the text you write, the page address and the interface language; for a question, also its id, the option you picked and the reason you ticked. To stop flooding, a daily-salted hash of your IP is stored (the salt changes every day, so it can't be turned back into an IP or linked across days) and used to cap each reader at 20 notes a day. It's kept in this site's own Cloudflare D1 database and used only to fix questions and improve the site.
+- **How a reply reaches you**: the first time you send a note, your browser makes a random id (kept in its localStorage) and sends it along. It carries nothing about you; it only lets the reply find its way back to this browser: when you open the site later, it asks whether that id has a reply and shows it if so. If you're signed in, the id syncs with your progress, so replies show on your other devices too. To get an email as well, leave an address (optional): it's used only to send that one reply and deleted right after, or after 90 days if there's no reply.
 
 I respond to every piece of feedback.
 :::
