@@ -124,9 +124,10 @@ const SYNC_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "sync.js"), "ut
 const SYNC_JS_HASH = require("crypto").createHash("md5").update(SYNC_JS_SRC).digest("hex").slice(0, 8);
 const GOOGLE_CLIENT_ID = "128997752412-49bo0pmc3ncp8n5esbvcgdsr7ifsg3l3.apps.googleusercontent.com";
 const ACCOUNT_API = "https://api.jpnotes.dev";
-// Sign-in by emailed code (Resend, via the account Worker): false until delivery to
-// QQ / 163 mailboxes has been checked; ?emaillogin=1 shows it on any page meanwhile.
-const EMAIL_LOGIN = false;
+// Sign-in by emailed code (Resend, via the account Worker). Open to everyone since
+// 2026-11-11; delivery to QQ / 163 mailboxes was not tested first, so watch
+// account_code_sent against email sign-ins (account-report.sh).
+const EMAIL_LOGIN = true;
 const FEEDBACK_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "feedback.js"), "utf-8");
 const FEEDBACK_JS_HASH = require("crypto").createHash("md5").update(FEEDBACK_JS_SRC).digest("hex").slice(0, 8);
 // Practice / mock test / flashcard pages; QUIZ_PUBLIC and QUIZ_LINKS are set in build-quiz.js.
