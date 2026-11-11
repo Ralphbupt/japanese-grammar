@@ -371,3 +371,6 @@ body.quiz-busy .quiz-about { display: none; }
 /* After a set with listening: one quiet line pointing at the podcast */
 .q-podcast { margin: .9rem .2rem 0; font-size: .92rem; color: var(--text-muted); }
 .q-podcast a { color: var(--link); }
+
+/* One line, signed out, where progress is on the reader's mind */
+.q-sync-hint { margin: .9rem 0 0; font-size: .88rem; color: var(--text-muted); }

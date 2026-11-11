@@ -279,7 +279,7 @@
     // Overall progress: questions seen at least once, and recent accuracy (same window as the per-type bars).
     var LV = ALL.filter(onLevel), done = LV.filter(function (q) { return seen(q.id); }).length, all = accuracy(function () { return true; });
     if (done) h += '<div class="q-total"><div class="q-total-line"><b>' + t('总进度', 'Progress') + '</b> ' + t('已做 ', '') + done + ' / ' + LV.length + t(' 题', ' questions') + '（' + Math.round(done * 100 / LV.length) + '%）' +
-      (all ? ' · ' + t('最近正确率 ', 'recent accuracy ') + all.pct + '%' : '') + ' <button class="q-link q-an-link" data-act="analysis">' + t('做题分析 ›', 'Analysis ›') + '</button></div><div class="q-total-bar"><span style="width:' + (done * 100 / LV.length) + '%"></span></div></div>';
+      (all ? ' · ' + t('最近正确率 ', 'recent accuracy ') + all.pct + '%' : '') + ' <button class="q-link q-an-link" data-act="analysis">' + t('做题分析 ›', 'Analysis ›') + '</button>' + (signedIn() || !window.jpnotesOpenSettings ? '' : ' <button class="q-link q-an-link" data-act="signin" data-k="home">' + t('同步到其他设备 ›', 'Sync to other devices ›') + '</button>') + '</div><div class="q-total-bar"><span style="width:' + (done * 100 / LV.length) + '%"></span></div></div>';
     // The listening page (/n5-listening/) has only listening questions: say so, so
     // its daily set isn't taken for the mixed one on the practice page.
     var onlyCk = ALL.length && ALL.every(isCk), only = onlyCk ? 'listening' : D.page;
@@ -832,6 +832,20 @@
     return '<p class="q-podcast">' + ICO_EAR + t('继续练听力：', 'Keep listening: ') + list + '</p>';
   }
 
+  // Signed out: say once, where progress matters, that it can follow the reader
+  // to another device. The button opens the account dialog (settings-modal.js).
+  function signedIn() { try { return !!(JSON.parse(localStorage.getItem('jp_acct')) || {}).token; } catch (e) { return false; } }
+  function syncHint(where) {
+    if (signedIn() || !window.jpnotesOpenSettings) return '';
+    return '<p class="q-sync-hint">' + t('想在手机和电脑上接着做？', 'Want to carry on from your phone or laptop? ') +
+      '<button class="q-link" data-act="signin" data-k="' + where + '">' + t('登录，同步进度', 'Sign in to sync your progress') + '</button></p>';
+  }
+  app.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-act="signin"]');
+    if (!b) return;
+    track('account_prompt', { from: b.getAttribute('data-k') });
+    window.jpnotesOpenSettings();
+  });
   function shareBtn() { return window.jpShare ? '<button class="q-btn" data-act="share">' + t('分享成绩', 'Share my score') + '</button>' : ''; }
   function shareScore(el) {
     var o = app._share || {};
@@ -846,7 +860,7 @@
     var bad = res.filter(function (r) { return !r.ok || r.g; });
     track('quiz_finish', { kind: s.kind, score: ok, size: res.length, level: LEVEL });
     var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button></div>' +
-      '<div class="q-card q-summary"><p class="q-score">' + ok + ' / ' + res.length + '</p><p class="q-muted">' + t('用时约 ', 'About ') + Math.max(mins, 1) + t(' 分钟', ' min') + '</p>' + (shareBtn() ? '<p class="q-share">' + shareBtn() + '</p>' : '');
+      '<div class="q-card q-summary"><p class="q-score">' + ok + ' / ' + res.length + '</p><p class="q-muted">' + t('用时约 ', 'About ') + Math.max(mins, 1) + t(' 分钟', ' min') + '</p>' + (shareBtn() ? '<p class="q-share">' + shareBtn() + '</p>' : '') + syncHint('set');
     if (bad.length) {
       h += '<h2>' + t('错题和猜的', 'Missed or guessed') + '</h2><ul class="q-sumlist">' + bad.map(function (r) {
         var q = Q[r.id];
@@ -1143,7 +1157,7 @@
       h += '</ul>';
       var slow = Object.keys(att.answers).filter(function (id) { return Q[id] && !isCk(Q[id]); }).sort(function (a, b) { return (att.answers[b].ms || 0) - (att.answers[a].ms || 0); }).slice(0, 3);
       if (slow.length) h += '<p class="q-muted">' + t('用时最长：', 'Slowest: ') + slow.map(function (id) { return id.split('-').pop() + '（' + Math.round((att.answers[id].ms || 0) / 1000) + 's）'; }).join('、') + '</p>';
-      h += '<div class="q-actions"><button class="q-btn q-btn-primary" data-act="m-review" data-k="wrong">' + t('复盘错题和猜的题', 'Review misses and guesses') + '</button><button class="q-btn" data-act="m-review" data-k="all">' + t('全部题目', 'All questions') + '</button></div>' + shareBtn() + '</div>';
+      h += '<div class="q-actions"><button class="q-btn q-btn-primary" data-act="m-review" data-k="wrong">' + t('复盘错题和猜的题', 'Review misses and guesses') + '</button><button class="q-btn" data-act="m-review" data-k="all">' + t('全部题目', 'All questions') + '</button></div>' + shareBtn() + syncHint('mock') + '</div>';
       app._share = { text: t('我在 jpnotes.dev 做了 JLPT ' + LEVEL + ' 模拟考，' + (att.mode === 'full' ? (hasL ? '估分 ' + sum + ' / 180。' : '言语知识和阅读估分 ' + sum + ' 分。') : '') + '免费模考，按真题结构出题：', 'I took a JLPT ' + LEVEL + ' mock test on jpnotes.dev' + (att.mode === 'full' ? (hasL ? ' — estimated ' + sum + '/180' : ' — estimated ' + sum + ' without listening') : '') + '. Free mock tests laid out like the real exam:'), src: 'mock_result' };
       M = { set: set, test: test, att: att, key: key };
       app.innerHTML = h;
