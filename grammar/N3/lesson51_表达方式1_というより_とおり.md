@@ -287,6 +287,19 @@ The actual situation matches what was stated. "Just as..." / "According to..."
 
 9. 予定のとおり、来週試験がある。（○ / ×）
 10. 彼はまじめだというより、つまらない人だ。（○ / ×）
+
+**答案**
+
+1. というより
+2. というと／といえば（两个都可以）
+3. とおり（后面已经有「に」）
+4. といっても
+5. この店は、おいしいというより安い。
+6. といっても
+7. とおりに（「とおり」也可以）
+8. 参考：日本の夏といえば、花火大会だ。
+9. ○
+10. ○（「まじめというより」也可以，「だ」可有可无）
 :::
 :::en
 **I. Fill in with the appropriate grammar (というより, といっても, というと/といえば, とおりに):**
@@ -316,6 +329,19 @@ The actual situation matches what was stated. "Just as..." / "According to..."
 
 9. 予定のとおり、来週試験がある。(○ / ×)
 10. 彼はまじめだというより、つまらない人だ。(○ / ×)
+
+**Answers**
+
+1. というより
+2. というと／といえば (either works)
+3. とおり (「に」 is already there)
+4. といっても
+5. この店は、おいしいというより安い。
+6. といっても
+7. とおりに (「とおり」 also works)
+8. Sample: 日本の夏といえば、花火大会だ。
+9. ○
+10. ○ (「まじめというより」 also works; the 「だ」 is optional)
 :::
 
 ## 复习计划||Review Schedule

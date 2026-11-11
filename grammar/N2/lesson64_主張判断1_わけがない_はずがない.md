@@ -402,6 +402,19 @@ This lesson covers N2-level expressions for assertion and judgment. 「ないわ
 
 9. 被邀请了就不能不去。（ないわけにはいかない）
 10. 这么努力的人不可能失败。（わけがない）
+
+**答案**
+
+1. ないわけにはいかない（行かないわけにはいかない）
+2. はずがない（依据是「毎日練習している」；「わけがない」也可以）
+3. に相違ない（书面断定）
+4. はずがない（依据是「一週間前に出した」；「わけがない」也可以）
+5. わけがない（凭常识判断，带"怎么可能"的语气）
+6. はずがない（根据对那个孩子的了解）
+7. わけがない（常识上不可能）
+8. はずがない（依据是「確かにポケットに入れた」）
+9. 招待された以上、行かないわけにはいかない。
+10. こんなに努力している人が失敗するわけがない。
 :::
 :::en
 **Part 1: Choose the appropriate grammar (ないわけにはいかない / に相違ない / わけがない / はずがない)**
@@ -422,6 +435,19 @@ This lesson covers N2-level expressions for assertion and judgment. 「ないわ
 
 9. Since I was invited, I have no choice but to go. (Use ないわけにはいかない)
 10. There's no way someone who tries this hard would fail. (Use わけがない)
+
+**Answers**
+
+1. ないわけにはいかない (行かないわけにはいかない)
+2. はずがない (the basis is 「毎日練習している」; 「わけがない」 also works)
+3. に相違ない (formal, written conviction)
+4. はずがない (the basis is 「一週間前に出した」; 「わけがない」 also works)
+5. わけがない (common sense, with a "no way!" tone)
+6. はずがない (based on what you know about the child)
+7. わけがない (impossible by common sense)
+8. はずがない (the basis is 「確かにポケットに入れた」)
+9. 招待された以上、行かないわけにはいかない。
+10. こんなに努力している人が失敗するわけがない。
 :::
 
 ## 复习计划||Review Schedule

@@ -380,7 +380,7 @@ Relays information heard from others or the news. Equivalent to 「〜そうだ 
 2. 親（　　）、子供の安全が一番大切だ。
 3. 試験に落ちたということは、準備が足りなかった（　　）。
 4. もっと簡単な方法はない（　　）と思う。
-5. プロ（　　）、失敗することはある。
+5. 専門家（　　）、この結果は予想できなかった。
 
 **二、「ということだ」的意思是结论还是传闻？**
 
@@ -392,6 +392,19 @@ Relays information heard from others or the news. Equivalent to 「〜そうだ 
 
 9. 能不能想办法缩短会议时间呢。（ないものか）
 10. 作为留学生来说，他的日语非常流利。（としては）
+
+**答案**
+
+1. ということだ（传闻，「ニュースによると」表示消息来源）
+2. としては（站在父母的立场；「としても」也可以）
+3. ということだ（结论：也就是说）
+4. ものか（空前已有「ない」，合起来是「ないものか」）
+5. としても（即使作为专家，也没能预料到这个结果）
+6. 传闻（「先生の話では」表示消息来源）
+7. 结论（「〜ということは、〜ということだ」推出结论）
+8. 传闻（「天気予報によると」表示消息来源）
+9. 会議の時間をなんとか短くできないものか。
+10. 留学生としては、彼の日本語はとても流暢だ。
 :::
 :::en
 **Part 1: Choose the appropriate grammar (ということだ / ないものか / としては / としても)**
@@ -400,7 +413,7 @@ Relays information heard from others or the news. Equivalent to 「〜そうだ 
 2. 親（　　）、子供の安全が一番大切だ。
 3. 試験に落ちたということは、準備が足りなかった（　　）。
 4. もっと簡単な方法はない（　　）と思う。
-5. プロ（　　）、失敗することはある。
+5. 専門家（　　）、この結果は予想できなかった。
 
 **Part 2: Is 「ということだ」 a conclusion or hearsay?**
 
@@ -412,6 +425,19 @@ Relays information heard from others or the news. Equivalent to 「〜そうだ 
 
 9. Isn't there some way to shorten the meeting time? (Use ないものか)
 10. For an international student, his Japanese is very fluent. (Use としては)
+
+**Answers**
+
+1. ということだ (hearsay; 「ニュースによると」 names the source)
+2. としては (from a parent's standpoint; 「としても」 also works)
+3. ということだ (conclusion: "that means")
+4. ものか (the 「ない」 is already in the sentence, making 「ないものか」)
+5. としても (even as an expert, I couldn't have predicted this result)
+6. Hearsay (「先生の話では」 names the source)
+7. Conclusion (「〜ということは、〜ということだ」 draws a conclusion)
+8. Hearsay (「天気予報によると」 names the source)
+9. 会議の時間をなんとか短くできないものか。
+10. 留学生としては、彼の日本語はとても流暢だ。
 :::
 
 ## 复习计划||Review Schedule

@@ -505,6 +505,19 @@ Can be used for both positive and negative situations.
 8. 不愧是每天练习的人，钢琴弹得很好。（だけあって）
 9. 因为电车晚点了所以迟到了。（ものだから）
 10. 正因为期待很大，失望也更大。（だけに）
+
+**答案**
+
+1. あまり（心配のあまり）
+2. ばこそ（愛すればこそ）
+3. だけに（「混雑」不是夸奖，「だけあって」只用于正面评价）
+4. ものだから
+5. だけあって（「さすが」常和「だけあって」搭配）
+6. 緊張のあまり、面接でうまく話せなかった。
+7. 友達であればこそ、正直に話すのだ。
+8. 毎日練習しているだけあって、ピアノがとても上手だ。
+9. 電車が遅れたものだから、遅刻してしまった。
+10. 期待が大きかっただけに、失望も大きかった。
 :::
 :::en
 **Part 1: Choose the appropriate grammar (あまり / ばこそ / だけに・だけあって / ものだから)**
@@ -522,6 +535,19 @@ Can be used for both positive and negative situations.
 8. As expected of someone who practices every day, they play piano well. (Use だけあって)
 9. Because the train was delayed, I was late. (Use ものだから)
 10. Precisely because expectations were high, the disappointment was even greater. (Use だけに)
+
+**Answers**
+
+1. あまり (心配のあまり)
+2. ばこそ (愛すればこそ)
+3. だけに (being crowded is not praise, and 「だけあって」 is only for positive evaluations)
+4. ものだから
+5. だけあって (「さすが」 pairs naturally with 「だけあって」)
+6. 緊張のあまり、面接でうまく話せなかった。
+7. 友達であればこそ、正直に話すのだ。
+8. 毎日練習しているだけあって、ピアノがとても上手だ。
+9. 電車が遅れたものだから、遅刻してしまった。
+10. 期待が大きかっただけに、失望も大きかった。
 :::
 
 ## 复习计划||Review Schedule

@@ -393,6 +393,19 @@ Both meanings convey "moving along a line or direction."
 8. 在日本工作的话，礼仪很重要。（上で）
 9. 经过多年努力，终于实现了梦想。（末に）
 10. 除了英语之外，还需要IT技能。（に加えて）
+
+**答案**
+
+1. を踏まえて（以上次的失败为前提）
+2. を除いて（除了年末年初）
+3. 上で（た形＋上で，"……之后再……"）
+4. に加えて（除了日语还会中文）
+5. 末に（经过漫长的讨论，「ようやく」是提示）
+6. 会社の方針に沿って、このプロジェクトを進めてください。
+7. 今回の失敗を踏まえて、新しい計画が立てられた。
+8. 日本で働く上で、マナーはとても大切だ。
+9. 長年の努力の末に、ついに夢を実現した。
+10. 英語に加えて、ITのスキルも必要だ。
 :::
 :::en
 **Part 1: Choose the correct grammar (に沿って / を踏まえて / を除いて / に加えて / 上で / 末に)**
@@ -410,6 +423,19 @@ Both meanings convey "moving along a line or direction."
 8. When working in Japan, etiquette is important. (Use 上で)
 9. After years of effort, the dream was finally realized. (Use 末に)
 10. In addition to English, IT skills are also needed. (Use に加えて)
+
+**Answers**
+
+1. を踏まえて (taking the last failure into account)
+2. を除いて (except over the New Year holidays)
+3. 上で (ta-form + 上で, "after doing… then…")
+4. に加えて (Chinese in addition to Japanese)
+5. 末に (after long discussion; 「ようやく」 is the hint)
+6. 会社の方針に沿って、このプロジェクトを進めてください。
+7. 今回の失敗を踏まえて、新しい計画が立てられた。
+8. 日本で働く上で、マナーはとても大切だ。
+9. 長年の努力の末に、ついに夢を実現した。
+10. 英語に加えて、ITのスキルも必要だ。
 :::
 
 ## 复习计划||Review Schedule

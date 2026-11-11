@@ -416,6 +416,19 @@ This lesson covers the second set of commonly used N3 grammar. 「ことか」 e
 
 9. 仔细考虑的结果，决定辞职。（結果）
 10. 小时候看了多少遍这本漫画啊。（ことか）
+
+**答案**
+
+1. a（どんなに）
+2. b（渇いてたまらない）
+3. b（懐かしくてならない）
+4. a（食べてもかまいませんか）
+5. b（ことがある）
+6. ○
+7. ✕（暑くてたまらない；い形容词要变成「〜くて」）
+8. ○
+9. よく考えた結果、会社を辞めることにした。
+10. 子供の頃、この漫画を何度読んだことか。
 :::
 :::en
 **Part 1: Choose the correct grammar**
@@ -436,6 +449,19 @@ This lesson covers the second set of commonly used N3 grammar. 「ことか」 e
 
 9. As a result of careful thought, I decided to quit my job. (Use 結果)
 10. How many times I read this manga as a child! (Use ことか)
+
+**Answers**
+
+1. a (どんなに)
+2. b (渇いてたまらない)
+3. b (懐かしくてならない)
+4. a (食べてもかまいませんか)
+5. b (ことがある)
+6. ○
+7. ✕ (暑くてたまらない: an i-adjective takes the 「〜くて」 form)
+8. ○
+9. よく考えた結果、会社を辞めることにした。
+10. 子供の頃、この漫画を何度読んだことか。
 :::
 
 ## 复习计划||Review Schedule

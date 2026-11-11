@@ -502,6 +502,23 @@ Structure: 「A（で）さえ〜」
 12. 价格自不必说，品质也很出色。（はもとより）
 13. 这个公园大人自不必说，连小孩和老人也很喜欢。（はもとより）
 14. 吸烟不仅对自己有害，对周围人也有害。（のみならず）
+
+**答案**
+
+1. はもとより（国内有分公司是理所当然的；「のみならず」也正确）
+2. はもとより（治头痛是这种药的本职；「のみならず」也正确）
+3. のみならず（客观陈述他会的语言；如果他是日本人，「はもとより」更好）
+4. のみならず（新闻式的客观陈述；「はもとより」也正确）
+5. のみならず（「はもとより」也正确）
+6. この問題は日本のみならず、世界中で議論されている。
+7. 味はもとより、見た目も美しい料理だ。
+8. 学生のみならず、社会人にも人気がある。
+9. 英語はもとより、プログラミングもできる。
+10. この本は日本のみならず、世界中でよく売れている。
+11. 彼は学業のみならず、スポーツにも優れている。
+12. 価格はもとより、品質も優れている。
+13. この公園は大人はもとより、子供やお年寄りにも人気がある。
+14. 喫煙は自分の体のみならず、周りの人にも害を与える。
 :::
 :::en
 **Part 1: Choose the appropriate grammar (はもとより / のみならず)**
@@ -526,6 +543,23 @@ Structure: 「A（で）さえ〜」
 12. Not to mention the price, the quality is also excellent. (Use はもとより)
 13. Not to mention adults, even children and the elderly enjoy this park. (Use はもとより)
 14. Smoking is harmful not only to oneself, but to those around as well. (Use のみならず)
+
+**Answers**
+
+1. はもとより (domestic branches are a given; 「のみならず」 is also correct)
+2. はもとより (headaches are what the medicine is for; 「のみならず」 is also correct)
+3. のみならず (an objective list of his languages; if he is Japanese, 「はもとより」 fits better)
+4. のみならず (an objective, news-style statement; 「はもとより」 is also correct)
+5. のみならず (「はもとより」 is also correct)
+6. この問題は日本のみならず、世界中で議論されている。
+7. 味はもとより、見た目も美しい料理だ。
+8. 学生のみならず、社会人にも人気がある。
+9. 英語はもとより、プログラミングもできる。
+10. この本は日本のみならず、世界中でよく売れている。
+11. 彼は学業のみならず、スポーツにも優れている。
+12. 価格はもとより、品質も優れている。
+13. この公園は大人はもとより、子供やお年寄りにも人気がある。
+14. 喫煙は自分の体のみならず、周りの人にも害を与える。
 :::
 
 ## 复习计划||Review Schedule

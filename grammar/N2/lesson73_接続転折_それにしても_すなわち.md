@@ -304,6 +304,19 @@ This lesson covers N2-level conjunctions and transitional expressions. 「それ
 
 9. 日本語能力試験N2、（　　）中級後半レベルの試験を受ける。
 10. 原料費が高騰した。（　　）、製品の値上げが避けられない。
+
+**答案**
+
+1. しかも（追加）
+2. それなのに（与预期相反，带不满）
+3. それにしても（承认前面，但仍然觉得……）
+4. したがって（因此，书面语）
+5. すなわち（换言之）
+6. 彼は試験に合格した。しかも、一番だった。
+7. 10時に会う約束をした。それなのに、彼は1時間も遅れてきた。
+8. それにしても、これは高すぎるでしょう。
+9. すなわち（N2 = 中级后半水平，同一事物的换种说法）
+10. したがって（原料费上涨 → 不得不涨价，因果）
 :::
 :::en
 **Part 1: Choose the correct conjunction (それにしても / それなのに / しかも / したがって / すなわち)**
@@ -324,6 +337,19 @@ This lesson covers N2-level conjunctions and transitional expressions. 「それ
 
 9. 日本語能力試験N2、（　　）中級後半レベルの試験を受ける。
 10. 原料費が高騰した。（　　）、製品の値上げが避けられない。
+
+**Answers**
+
+1. しかも (adding a point)
+2. それなのに (contrary to expectation, with dissatisfaction)
+3. それにしても (granting the first part, but still)
+4. したがって (therefore, written style)
+5. すなわち (in other words)
+6. 彼は試験に合格した。しかも、一番だった。
+7. 10時に会う約束をした。それなのに、彼は1時間も遅れてきた。
+8. それにしても、これは高すぎるでしょう。
+9. すなわち (N2 = upper-intermediate level; the same thing said another way)
+10. したがって (cause and effect: higher material costs lead to a price rise)
 :::
 
 ## 复习计划||Review Schedule

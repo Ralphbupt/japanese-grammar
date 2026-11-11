@@ -321,6 +321,19 @@ This lesson covers N2 grammar for "emphatic evaluation" and "negative conjecture
 
 9. 彼女はもう来るまい。（　　）
 10. こんな失敗は二度とするまい。（　　）
+
+**答案**
+
+1. だけのことはある（前面有「さすが」）
+2. だけまし（カードが無事だっただけましだ）
+3. だけは（やるだけはやった：该做的都做了）
+4. まい（决心：再也不去了）
+5. だけのことはある（买得值）
+6. さすが日本に10年住んでいただけのことはある。日本語がとても流暢だ。
+7. 給料は安いが、仕事があるだけましだ。
+8. もう二度と嘘はつくまいと誓う。
+9. 推测（她大概不会来了）
+10. 决心（再也不犯这种错了）
 :::
 :::en
 **Part 1: Choose the correct grammar (だけのことはある / だけは / だけまし / まい)**
@@ -341,6 +354,19 @@ This lesson covers N2 grammar for "emphatic evaluation" and "negative conjecture
 
 9. 彼女はもう来るまい。(　　)
 10. こんな失敗は二度とするまい。(　　)
+
+**Answers**
+
+1. だけのことはある (「さすが」 comes before it)
+2. だけまし (カードが無事だっただけましだ)
+3. だけは (やるだけはやった: I did all I could)
+4. まい (resolve: I'll never go again)
+5. だけのことはある (it was worth buying)
+6. さすが日本に10年住んでいただけのことはある。日本語がとても流暢だ。
+7. 給料は安いが、仕事があるだけましだ。
+8. もう二度と嘘はつくまいと誓う。
+9. Conjecture (she probably won't come now)
+10. Resolve (I will never make such a mistake again)
 :::
 
 ## 复习计划||Review Schedule

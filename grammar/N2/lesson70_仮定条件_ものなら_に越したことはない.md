@@ -457,6 +457,21 @@ Note: the premise must be uncertain or imagined. For something that will certain
 10. 想要成功的话，应该不怕失败。（ことだ）
 11. 出门还是带伞最好。（に越したことはない）
 12. 如果这个愿望能实现的话，什么都愿意做。（ものなら）
+
+**答案**
+
+1. ものなら（「できる」是可能形，后面是愿望）
+2. ようものなら（遅刻しようものなら：万一……就会招致严重后果）
+3. ことだ（给对方的建议）
+4. に越したことはない
+5. ようものなら（裏切るようなことをしようものなら）
+6. ものがある（感慨：确实有……之处）
+7. としたら（「もし」+ 假设）
+8. 10年前に戻れるものなら、戻りたい。
+9. ここでタバコを吸おうものなら、罰金を取られる。
+10. 成功したいなら、失敗を恐れないことだ。
+11. 出かけるときは、傘を持っていくに越したことはない。
+12. この願いがかなうものなら、何でもする。
 :::
 :::en
 **Part 1: Choose the correct grammar (ものなら / ようものなら / ことだ / に越したことはない / ものがある / としたら)**
@@ -476,6 +491,21 @@ Note: the premise must be uncertain or imagined. For something that will certain
 10. If you want to succeed, you should not fear failure. (Use ことだ)
 11. It's best to bring an umbrella when going out. (Use に越したことはない)
 12. If this wish could come true, I'd do anything. (Use ものなら)
+
+**Answers**
+
+1. ものなら (「できる」 is a potential form, followed by a wish)
+2. ようものなら (遅刻しようものなら: if you ever did, it would bring trouble)
+3. ことだ (advice to the listener)
+4. に越したことはない
+5. ようものなら (裏切るようなことをしようものなら)
+6. ものがある (the speaker is struck by a quality)
+7. としたら (「もし」 + a hypothesis)
+8. 10年前に戻れるものなら、戻りたい。
+9. ここでタバコを吸おうものなら、罰金を取られる。
+10. 成功したいなら、失敗を恐れないことだ。
+11. 出かけるときは、傘を持っていくに越したことはない。
+12. この願いがかなうものなら、何でもする。
 :::
 
 ## 复习计划||Review Schedule

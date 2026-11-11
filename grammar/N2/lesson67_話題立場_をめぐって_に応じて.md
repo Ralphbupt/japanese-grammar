@@ -557,6 +557,19 @@ In many sentences either works.
 8. 根据客户的需求来提供服务。（に応じて）
 9. 外观暂且不论，功能很好。（はともかく）
 10. 无论赞成还是反对，请说出你的理由。（にしても〜にしても）
+
+**答案**
+
+1. を問わず（不问有无经验）
+2. をめぐって（围绕法案展开争论）
+3. はともかく（成绩暂且不论）
+4. にしても、にしても（買うにしても買わないにしても）
+5. を中心に（以关西地区为中心）
+6. 男女を問わず、参加できます。
+7. その問題をめぐって、意見が大きく分かれている。
+8. お客様のニーズに応じて、サービスを提供します。
+9. 見た目はともかく、機能はとてもいい。
+10. 賛成するにしても反対するにしても、理由を述べてください。
 :::
 :::en
 **Part 1: Choose the correct grammar (にしても〜にしても / はともかく / をめぐって / を問わず / を中心に / に応じて)**
@@ -574,6 +587,19 @@ In many sentences either works.
 8. We provide services according to customer needs. (Use に応じて)
 9. Appearance aside, the functionality is excellent. (Use はともかく)
 10. Whether you agree or disagree, please state your reasons. (Use にしても〜にしても)
+
+**Answers**
+
+1. を問わず (regardless of experience)
+2. をめぐって (the debate centres on the bill)
+3. はともかく (grades aside)
+4. にしても, にしても (買うにしても買わないにしても)
+5. を中心に (centred on the Kansai region)
+6. 男女を問わず、参加できます。
+7. その問題をめぐって、意見が大きく分かれている。
+8. お客様のニーズに応じて、サービスを提供します。
+9. 見た目はともかく、機能はとてもいい。
+10. 賛成するにしても反対するにしても、理由を述べてください。
 :::
 
 ## 复习计划||Review Schedule

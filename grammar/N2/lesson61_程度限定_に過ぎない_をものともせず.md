@@ -335,6 +335,19 @@ This lesson covers N2-level grammar for degree and limitation. 「に過ぎな�
 8. 他不顾家人的反对，去了海外。（もかまわず）
 9. 她能取得这个成绩正是平时努力的结果。（にほかならない）
 10. 不畏伤痛，选手们坚持到了最后。（をものともせず）
+
+**答案**
+
+1. に限る
+2. に過ぎない
+3. にほかならない
+4. もかまわず（人目もかまわず）
+5. をものともせず
+6. これは小さなミスに過ぎない。
+7. 夏はスイカに限る。
+8. 彼は家族の反対もかまわず、海外へ行った。
+9. 彼女がこの成績を取れたのは、日頃の努力の結果にほかならない。
+10. 選手たちはけがの痛みをものともせず、最後まで戦い抜いた。
 :::
 :::en
 **Part 1: Choose the appropriate grammar (に過ぎない / にほかならない / に限る / もかまわず / をものともせず)**
@@ -352,6 +365,19 @@ This lesson covers N2-level grammar for degree and limitation. 「に過ぎな�
 8. Regardless of his family's opposition, he went abroad. (Use もかまわず)
 9. Her achievement is none other than the result of daily effort. (Use にほかならない)
 10. Undaunted by their injuries, the athletes persevered to the end. (Use をものともせず)
+
+**Answers**
+
+1. に限る
+2. に過ぎない
+3. にほかならない
+4. もかまわず (人目もかまわず)
+5. をものともせず
+6. これは小さなミスに過ぎない。
+7. 夏はスイカに限る。
+8. 彼は家族の反対もかまわず、海外へ行った。
+9. 彼女がこの成績を取れたのは、日頃の努力の結果にほかならない。
+10. 選手たちはけがの痛みをものともせず、最後まで戦い抜いた。
 :::
 
 ## 复习计划||Review Schedule

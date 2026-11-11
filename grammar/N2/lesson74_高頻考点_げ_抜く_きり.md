@@ -463,6 +463,19 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 8. 经过重重困难，他坚持跑完了全程。（抜く）
 9. 时隔5年和老朋友见面了。（ぶりに）
 10. 每人限购两个。（につき）
+
+**答案**
+
+1. げ（悲しげな目）
+2. 抜く（やり抜くことができた）
+3. 次第だ（本人の努力次第だ）
+4. きり（寝たきり：卧床不起）
+5. ぶりに（20年ぶりに）
+6. につき（告示用语，因为……）
+7. 彼は何か言いたげだった。
+8. 多くの困難を乗り越えて、彼は最後まで走り抜いた。
+9. 5年ぶりに旧友に会った。
+10. お一人様につき2個までとさせていただきます。
 :::
 :::en
 **Part 1: Choose the correct grammar (げ / 抜く / 次第だ・次第で / きり / ぶりに / につき)**
@@ -480,6 +493,19 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 8. Despite many difficulties, he ran the entire course. (Use 抜く)
 9. I met an old friend for the first time in 5 years. (Use ぶりに)
 10. Limited to two per person. (Use につき)
+
+**Answers**
+
+1. げ (悲しげな目)
+2. 抜く (やり抜くことができた)
+3. 次第だ (本人の努力次第だ)
+4. きり (寝たきり: bedridden)
+5. ぶりに (20年ぶりに)
+6. につき (notice language: due to)
+7. 彼は何か言いたげだった。
+8. 多くの困難を乗り越えて、彼は最後まで走り抜いた。
+9. 5年ぶりに旧友に会った。
+10. お一人様につき2個までとさせていただきます。
 :::
 
 ## 复习计划||Review Schedule
