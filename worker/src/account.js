@@ -96,15 +96,17 @@ async function verifyGoogle(token, env) {
 }
 
 // The user behind (provider, subject); an existing user with the same email
-// gets this sign-in method added; otherwise a new user.
-async function userFor(env, provider, who) {
+// gets this sign-in method added; otherwise a new user, with the country the
+// request came from (Cloudflare's code, not the IP).
+async function userFor(env, provider, who, req) {
   const db = env.DB;
   const known = await db.prepare('SELECT user_id FROM identities WHERE provider = ? AND subject = ?').bind(provider, who.sub).first();
   if (known) return known.user_id;
   let user = await db.prepare('SELECT id FROM users WHERE email = ?').bind(who.email).first();
   if (!user) {
     user = { id: randomId(12) };
-    await db.prepare('INSERT INTO users (id, email, created) VALUES (?, ?, ?)').bind(user.id, who.email, now()).run();
+    const country = /^[A-Z]{2}$/.test(req?.cf?.country || '') ? req.cf.country : null;
+    await db.prepare('INSERT INTO users (id, email, created, country) VALUES (?, ?, ?, ?)').bind(user.id, who.email, now(), country).run();
   }
   await db.prepare('INSERT OR IGNORE INTO identities (provider, subject, user_id, created) VALUES (?, ?, ?, ?)').bind(provider, who.sub, user.id, now()).run();
   return user.id;
@@ -154,7 +156,7 @@ async function emailStart(req, env, input, local) {
   return { ok: true };
 }
 
-async function emailVerify(env, input) {
+async function emailVerify(req, env, input) {
   const email = String(input.email || '').trim().toLowerCase(), code = String(input.code || '').replace(/\D/g, '');
   const db = env.DB, t = Math.floor(Date.now() / 1000);
   const row = await db.prepare('SELECT hash, expires, attempts FROM email_codes WHERE email = ?').bind(email).first();
@@ -164,7 +166,7 @@ async function emailVerify(env, input) {
     throw new HttpError(401, 'Wrong code.');
   }
   await db.prepare('DELETE FROM email_codes WHERE email = ?').bind(email).run();
-  const userId = await userFor(env, 'email', { sub: email, email });
+  const userId = await userFor(env, 'email', { sub: email, email }, req);
   return { token: await newSession(env, userId), email };
 }
 
@@ -232,11 +234,11 @@ async function route(req, env, url, local) {
     const who = local && env.DEV_LOGIN === '1' && typeof input.dev === 'string' && /^[^@\s]+@example\.com$/.test(input.dev)
       ? { sub: 'dev:' + input.dev, email: input.dev }
       : await verifyGoogle(input.credential, env);
-    const userId = await userFor(env, 'google', who);
+    const userId = await userFor(env, 'google', who, req);
     return reply({ token: await newSession(env, userId), email: who.email });
   }
   if (method === 'POST' && path === '/auth/email/start') return reply(await emailStart(req, env, await body(req, 2000), local));
-  if (method === 'POST' && path === '/auth/email/verify') return reply(await emailVerify(env, await body(req, 2000)));
+  if (method === 'POST' && path === '/auth/email/verify') return reply(await emailVerify(req, env, await body(req, 2000)));
   const me = await session(req, env);
   if (method === 'GET' && path === '/me') return reply({ email: me.email });
   if (method === 'POST' && path === '/auth/logout') {
