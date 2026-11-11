@@ -4023,6 +4023,34 @@ ${AI_SCRIPT}
 <p>${L(`${level} 考言语知识（文字・词汇・语法）、阅读和听力。${split ? "计分分三科：言语知识、阅读、听力" : "计分分两科：言语知识和阅读合为一科，听力一科"}。言语知识和阅读${cfg.sections.length > 2 ? `分两场，共 ${minutes} 分钟` : `在同一场考，${minutes} 分钟`}，之后是听力。总分 180，合格要同时满足总分 ≥ ${cfg.pass}，以及每科不低于最低分：`,
   `The ${level} tests language knowledge (vocabulary and grammar), reading and listening. ${split ? "They are scored as three parts" : "They are scored as two parts: language knowledge and reading together, and listening"}. Language knowledge and reading ${cfg.sections.length > 2 ? `are two sittings, ${minutes} minutes in all` : `are one ${minutes}-minute sitting`}, then comes listening. Out of 180, you pass with a total of at least ${cfg.pass} and every part at or above its minimum:`)}</p>
 <table><tr><th>${L("科目", "Part")}</th><th>${L("分数", "Score")}</th><th>${L("最低分", "Minimum")}</th></tr>${scoreRows}</table>`;
+    // One line of technique per item type, and the guide that has the rest.
+    // What the pages ranking above these had and ours didn't (2026-11-11).
+    const TYPE_TIPS = {
+      kanji: ["读画线汉字的读音。陷阱在长音和短音、促音「っ」、清音和浊音：先在心里读一遍，再看选项。", "Read the underlined kanji. The traps are long and short vowels, small っ and voiced sounds — say the word to yourself before you look at the options."],
+      hyouki: ["给画线的假名选汉字。选项里是形近字或同音字，靠句子的意思来定。", "Pick the kanji for the underlined kana. The options are look-alike kanji or words with the same reading; the meaning of the sentence decides."],
+      gokeisei: ["填前缀、后缀或复合词的一部分（再〜、〜化、〜的）。连同它常接的词一起记。", "Fill in a prefix, suffix or part of a compound (再〜, 〜化, 〜的). Learn each one together with the words it attaches to."],
+      bunmyaku: ["选能填进空格的词。空格前后的词决定答案，所以背单词要连搭配的助词和动词一起背。", "Choose the word that fits the blank. The words right next to the blank decide it, so learn words with the particles and verbs they go with."],
+      iikae: ["选和画线部分意思最接近的说法。看选项之前，先自己换一种说法。", "Choose the option closest in meaning to the underlined part. Put it in your own words before you read the options."],
+      youhou: ["四个句子用了同一个词，只有一句自然。看它和什么搭配（主语、宾语、场合），不只看词典释义。", "Four sentences use the same word and one is natural. Check what the word combines with (subject, object, situation), not just its dictionary meaning."],
+      short: ["一篇一问。先看问题；答案通常落在一句话上，多半靠近结尾。", "One question per text. Read the question first; the answer usually rests on a single sentence, often near the end."],
+      mid: ["几道题按文章顺序出。画线部分和「これ・それ」指的是刚说过的内容，回到前一句去找。", "Several questions, in the order of the text. Underlined words and これ / それ point back to what was just said — reread the sentence before."],
+      long: ["先扫一眼问题，再从头读一遍。题目顺着文章走，最后一题多半问作者最想说的话。", "Skim the questions, then read once from the top. The questions follow the text, and the last one usually asks for the writer's main point."],
+      tougou: ["同一话题的两篇短文。先分别记下两人的立场，题目问的是相同点和不同点。", "Two texts on one topic. Note each writer's position first; the questions ask what they share and where they differ."],
+      shuchou: ["一篇长的议论文。作者的主张多在最后一段，以及「しかし」这类转折词之后。", "A long opinion piece. The writer's claim tends to sit in the last paragraph and after contrast words such as しかし."],
+      info: ["通知、时刻表或价目表。先看题目里的条件，只找符合条件的部分，不要通读；别漏掉「※」后面的注意事项。", "A notice, timetable or price list. Read the conditions in the question first and scan only for those — don't read the whole page, and check the notes marked ※."],
+      kadai: ["对话前先播问题：这个人接下来（或最先）要做什么。计划会在对话里改变，最后定下来的才是答案。", "You hear the question before the talk: what will this person do next, or first? Plans change as they speak — the last decision is the answer."],
+      point: ["先播问题，并留时间看选项。只听被问的那一点（多半是理由），其余的放过。", "The question comes first and you get time to read the options. Listen for that one thing — usually a reason — and let the rest go."],
+      gaiyou: ["事先不播问题，试卷上什么都不印。抓整体的话题或说话人的看法，不追细节。", "No question beforehand and nothing printed. Follow the overall topic or the speaker's opinion, not the details."],
+      hatsuwa: ["看图和箭头：箭头指的人是说话的人。三个选项播出之前，先想他是在请求、提议还是道歉。", "Look at the picture and the arrow: the person with the arrow is the one speaking. Before the three options play, decide whether they are asking, offering or apologising."],
+      sokuji: ["一句短话、三个回应，试卷上不印。马上决定，然后放下这题；重复了原句里某个词的选项常常是陷阱。", "One short line and three replies, nothing printed. Decide at once and let it go — an option that repeats a word from the line is often the trap."],
+      ctougou: ["较长的对话或说明，常常要比较几个选择。边听边用表格记下每个选择的特点。", "Longer talks, often comparing several choices. Note each choice's features in a grid as you listen."],
+    };
+    const typeTips = (keys, slug, zh, e) => {
+      const li = keys.filter((k) => TYPE_TIPS[k]).map((k) => `<li><b>${tName(k)}</b> — ${L(...TYPE_TIPS[k])}</li>`).join("");
+      const more = fs.existsSync(path.join(__dirname, "grammar/guides", `${slug}.md`)) ? `<p>${L("完整的做法和例子：", "The full method, with examples: ")}<a href="${SITE_PATH}${slug}/">${L(zh, e)}</a>${L("。", ".")}</p>` : "";
+      return li ? `<h2>${L("每种题型怎么做", "How to answer each item type")}</h2>\n<ul>${li}</ul>${more}` : "";
+    };
+    const officialFaq = `<dt>${L("哪里有官方样题？", "Where are the official sample questions?")}</dt><dd>${L(`JLPT 官网免费提供每个级别的样题（含听力录音和答案）：<a href="https://www.jlpt.jp/cn/samples/forlearners.html" rel="noopener">jlpt.jp 样题</a>。量不大，适合考前按真考时间完整做一遍；平时的练习用这里的题。`, `The JLPT site has a free sample paper for each level, with listening audio and answers: <a href="https://www.jlpt.jp/e/samples/forlearners.html" rel="noopener">jlpt.jp sample questions</a>. It is short — keep it for one timed run before the exam, and use the questions here for everyday practice.`)}</dd>`;
     if (kind === "practice") {
       const types = Object.entries(bundle.practice.types).map(([k]) => ({ k, n: bundle.practice.questions.filter((q) => q.type === k).length }));
       return `<section class="quiz-about">${format}
@@ -4040,6 +4068,7 @@ ${AI_SCRIPT}
 <h2>${L("常见问题", "Questions")}</h2>
 <dl>
 <dt>${L("免费吗？", "Is it free?")}</dt><dd>${L("完全免费，没有广告，也不用注册。", "Yes — no ads and no sign-up.")}</dd>
+${officialFaq}
 <dt>${L("和真题有多像？", "How close is it to the real JLPT?")}</dt><dd>${L(`题型、题干格式和难度按 ${level} 真题设计，${level === "N5" || level === "N4" ? "语法和阅读带振假名" : "和真考一样不带振假名"}。题目全部原创，不是真题。`, `Item types, layout and difficulty follow the real ${level}; ${level === "N5" || level === "N4" ? "grammar and reading carry furigana, as on the test" : "there's no furigana, as on the test"}. All questions are original, not past papers.`)}</dd>
 <dt>${L("有听力吗？", "Is there listening?")}</dt><dd>${ck ? L("有。点播放听一段录音（可以重听），答完看带振假名和翻译的原文，每句都能单独重播。", "Yes. Play the recording (as often as you like), answer, then read the transcript with furigana and a translation, and replay any line on its own.") : L("还没有，听力题在规划中。", "Not yet; listening questions are planned.")}</dd>
 <dt>${L("想计时考一次？", "Want a timed run?")}</dt><dd>${bundle.mocks.length ? L(`做 <a href="${SITE_PATH}${lv}-mock-test/">${level} 模拟题</a>：按真考的结构和时间，交卷后估分。`, `Take the <a href="${SITE_PATH}${lv}-mock-test/">${level} mock test</a>: the real structure and timing, with an estimated score.`) : L("模拟题准备中。", "A mock test is on the way.")}</dd>
@@ -4061,12 +4090,23 @@ ${lessonList}${(() => {
       const nP = new Set(qs.map((q) => q.passage).filter(Boolean)).size;
       const easy = level === "N5" || level === "N4";
       const others = SUBSET_PAGES.find((p) => p.id === kind).levels.filter((l) => l !== level).map((l) => `<a href="${SITE_PATH}${l.toLowerCase()}-${kind}/">${l}</a>`).join(" · ");
+      // The real test's count per type, from the mock (it follows the official layout).
+      const onTest = {};
+      for (const q of bundle.mocks[0]?.test.questions || []) if (keys.includes(q.type)) onTest[q.type] = (onTest[q.type] || 0) + 1;
+      const sit = cfg.sections.find((x) => x.types.includes(keys[0])), alone = cfg.sections.length > 2 && !reading;
+      const sitName = en ? sit.en : sit.zh;
       return `<section class="quiz-about">
-<h2>${L(`这里有哪些题（${qs.length} 道）`, `What's here (${qs.length} questions)`)}</h2>
+<h2>${L(`JLPT ${level} ${reading ? "阅读" : "文字词汇"}考什么`, `What the JLPT ${level} ${reading ? "reading" : "vocabulary"} section tests`)}</h2>
 <p>${reading
-  ? L(`${nP} 篇原创文章，覆盖 ${level} 阅读的全部题型，格式和真题一致：`, `${nP} original passages in every ${level} reading format, laid out like the real test:`)
-  : L(`${level} 文字词汇的全部题型，题目原创，格式和真题一致：`, `Every ${level} vocabulary item type, written from scratch in the real format:`)}</p>
-<ul>${keys.map((k) => `<li>${tName(k)} — ${qs.filter((q) => q.type === k).length}</li>`).join("")}</ul>
+  ? L(`阅读在「${sitName}」这一场里，${cfg.sections.length > 2 ? "和语法一起" : "和文字词汇、语法一起"}共 ${sit.minutes} 分钟，时间自己分配，所以要给阅读留够时间。${split ? "阅读单独计分。" : "阅读和言语知识合并计分。"}真考的题型和题数：`,
+      `Reading is part of the “${sitName}” sitting: ${sit.minutes} minutes shared with ${cfg.sections.length > 2 ? "grammar" : "vocabulary and grammar"}, and how you divide them is up to you — leave enough for the passages. ${split ? "Reading gets its own score." : "Reading is scored together with language knowledge."} The item types and how many of each are on the test:`)
+  : L(`文字词汇${alone ? `是第一场，单独 ${sit.minutes} 分钟` : `在「${sitName}」这一场里，和语法、阅读共 ${sit.minutes} 分钟，排在最前面`}。每题只有一个词或一句话，做得快才能把时间留给后面。真考的题型和题数：`,
+      `Vocabulary ${alone ? `is the first sitting, ${sit.minutes} minutes on its own` : `opens the “${sitName}” sitting, ${sit.minutes} minutes shared with grammar and reading`}. Each item is one word or one sentence; answering fast is what leaves time for the rest. The item types and how many of each are on the test:`)}</p>
+<table><tr><th>${L("题型", "Item type")}</th><th>${L("真考题数", "On the test")}</th><th>${L("这里的题", "Questions here")}</th></tr>${keys.map((k) => `<tr><td>${tName(k)}</td><td>${onTest[k] || "—"}</td><td>${qs.filter((q) => q.type === k).length}</td></tr>`).join("")}</table>
+<p>${reading
+  ? L(`这里一共 ${qs.length} 道题、${nP} 篇原创文章，格式和真题一致，每题都有答案和解析。`, `Here: ${qs.length} questions on ${nP} original passages, laid out like the real test, each with its answer and an explanation.`)
+  : L(`这里一共 ${qs.length} 道原创题，格式和真题一致，每题都有答案和解析。`, `Here: ${qs.length} original questions in the real format, each with its answer and an explanation.`)}</p>
+${typeTips(keys, reading ? "jlpt-reading-tips" : "jlpt-vocabulary-grammar-tips", reading ? "JLPT 阅读做题技巧" : "JLPT 文字词汇・语法做题技巧", reading ? "JLPT reading tips" : "JLPT vocabulary and grammar tips")}
 <h2>${L("怎么用", "How it works")}</h2>
 <ul>
 <li>${L(reading ? "每天一组，或者按题型专练。一篇文章的题连在一起做。" : "每天一组，或者按题型专练，比如只练汉字读音。", reading ? "A daily set, or drill one format. All the questions on a passage come together." : "A daily set, or drill one format, such as kanji readings.")}</li>
@@ -4082,6 +4122,7 @@ ${reading ? `<li>${L("做完一篇的最后一题后，可以看全文翻译。�
 <dt>${L("有振假名吗？", "Is there furigana?")}</dt><dd>${reading
   ? (easy ? L("有，和真考一样。", "Yes, as on the real test.") : level === "N3" ? L("只给基础汉字以外的词加，和真考的做法接近。", "Only on words with less common kanji, close to the real test.") : L("没有，和真考一样。", "No, as on the real test."))
   : L("词汇题没有，和真考一样。", "No, as on the real test.")}</dd>
+${officialFaq}
 <dt>${L("想计时考一次？", "Want a timed run?")}</dt><dd>${bundle.mocks.length ? L(`做 <a href="${SITE_PATH}${lv}-mock-test/">${level} 模拟题</a>：按真考的结构和时间，交卷后估分。`, `Take the <a href="${SITE_PATH}${lv}-mock-test/">${level} mock test</a>: the real structure and timing, with an estimated score.`) : L("模拟题还在准备中。", "A mock test is on its way.")}</dd>
 </dl>
 <h2>${L("相关", "More")}</h2>
@@ -4100,6 +4141,7 @@ ${reading ? `<li>${L("做完一篇的最后一题后，可以看全文翻译。�
 <h2>${L(`JLPT ${level} 听力考什么`, `What the JLPT ${level} listening section tests`)}</h2>
 <p>${L(`听力是单独一场，约 ${ckSec.minutes} 分钟，单独计分（0–${cfg.listening.max} 分，最低 ${cfg.listening.min} 分）。每段录音只放一次，题目和选项大多不印在试卷上，要边听边记。真考的题型和题数：`, `Listening is its own sitting, about ${ckSec.minutes} minutes, scored on its own (0–${cfg.listening.max}, minimum ${cfg.listening.min}). Each recording plays once, and most questions and options aren't printed, so you take notes as you listen. The item types and how many of each are on the test:`)}</p>
 <table><tr><th>${L("题型", "Item type")}</th><th>${L("真考题数", "On the test")}</th><th>${L("这里的录音", "Recordings here")}</th></tr>${ckTypes.map((k) => `<tr><td>${tName(k)}</td><td>${onTest[k] || "—"}</td><td>${recs(k)}</td></tr>`).join("")}</table>
+${typeTips(ckTypes, "jlpt-listening-tips", "JLPT 听力做题技巧", "JLPT listening tips")}
 <h2>${L("怎么练", "How it works")}</h2>
 <ul>
 <li>${L("点播放听录音，练习时可以重听；想模拟真考，就只听一遍再作答。", "Play the recording; in practice you can replay it — to train for the real thing, listen once and answer.")}</li>
@@ -4113,6 +4155,7 @@ ${reading ? `<li>${L("做完一篇的最后一题后，可以看全文翻译。�
 <dt>${L("免费吗？", "Is it free?")}</dt><dd>${L("完全免费，没有广告，也不用注册。", "Yes — no ads and no sign-up.")}</dd>
 <dt>${L("录音是真题吗？", "Are these past-paper recordings?")}</dt><dd>${L(`不是。剧本全部原创，题型、长度、语速按 ${level} 真题设计；声音由 AI 语音合成（Google Gemini），每段都逐句检查过读音和说话人。`, `No. Every script is original, written to the real ${level}'s formats, length and speed; the voices are AI speech (Google Gemini), and every recording was checked line by line for readings and speakers.`)}</dd>
 <dt>${L("可以下载 MP3 吗？", "Can I download the MP3s?")}</dt><dd>${L("目前只能在线播放；页面打开过的录音会缓存，之后网络不好也能放。", "Not for now — they play online, and recordings you've opened are cached so they still play on a weak connection.")}</dd>
+${officialFaq}
 <dt>${L("想按真考计时做一遍？", "Want a timed run like the real test?")}</dt><dd>${bundle.mocks.length ? L(`<a href="${SITE_PATH}${lv}-mock-test/">${level} 模拟题</a>的最后一场就是听力：每段只放一次，题间留作答时间，交卷后和其他科目一起估分。`, `The last sitting of the <a href="${SITE_PATH}${lv}-mock-test/">${level} mock test</a> is listening: each recording once, time to answer after it, scored with the other parts.`) : L("模拟题准备中。", "A mock test is on the way.")}</dd>
 </dl>
 <h2>${L("做完题，多听真实的日语", "After the questions: real Japanese to listen to")}</h2>
@@ -4222,7 +4265,7 @@ ${lessonList}</section>`;
       if (wrong && q.type !== "narabe") ans += `<ul>${wrong}</ul>`;
       return `<div class="qs-item"><p class="qs-type">${n + 1}. ${sEsc(en ? ty.en : ty.zh)} · <span lang="ja">${sEsc(ty.ja)}</span></p>${body}<details><summary>${L("看答案和解析", "Answer and explanation")}</summary>${ans}</details></div>`;
     }).join("");
-    return `<section class="quiz-about quiz-samples"><h2>${L("例题", "Sample questions")}</h2><p>${L("从题库里抽的几道题，答案和解析折叠在下面。完整的练习在上面开始。", "A few questions from the bank, with the answers folded underneath. Start the full practice above.")}</p>${items}</section>`;
+    return `<section class="quiz-about quiz-samples"><h2>${L("例题（附答案和解析）", "Sample questions with answers")}</h2><p>${L("从题库里抽的几道题，答案和解析折叠在下面。完整的练习在上面开始。", "A few questions from the bank, with the answers folded underneath. Start the full practice above.")}</p>${items}</section>`;
   };
   // schema.org Question for each sample (plain text, no furigana).
   const quizSampleSchema = (qs, en) => qs.map((q) => {
