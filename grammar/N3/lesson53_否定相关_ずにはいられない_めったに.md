@@ -424,6 +424,19 @@ Double negative → "It's not that I can't…" or "not impossible" — expresses
 
 9. 他的努力绝对不是白费的。（決して〜ない）
 10. 这样的机会很难得。（めったに〜ない）
+
+**答案**
+
+1. a（ずにはいられない）
+2. b（決して）
+3. b（そうにない）
+4. b（ないことはない）
+5. c（めったに）
+6. 別に怒っていません。
+7. 彼女の歌を聞くと、感動せずにはいられない。
+8. この仕事は今日中に終わりそうもない。
+9. 彼の努力は決して無駄ではない。
+10. こんな機会はめったにない。
 :::
 :::en
 **Part 1: Choose the correct grammar**
@@ -444,6 +457,19 @@ Double negative → "It's not that I can't…" or "not impossible" — expresses
 
 9. His efforts are absolutely not in vain. (Use 決して〜ない)
 10. An opportunity like this is rare. (Use めったに〜ない)
+
+**Answers**
+
+1. a (ずにはいられない)
+2. b (決して)
+3. b (そうにない)
+4. b (ないことはない)
+5. c (めったに)
+6. 別に怒っていません。
+7. 彼女の歌を聞くと、感動せずにはいられない。
+8. この仕事は今日中に終わりそうもない。
+9. 彼の努力は決して無駄ではない。
+10. こんな機会はめったにない。
 :::
 
 ## 复习计划||Review Schedule

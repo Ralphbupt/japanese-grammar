@@ -309,6 +309,19 @@ This lesson covers N2 grammar for "uncontrollable emotions" and "necessary preco
 8. 不亲自去看看的话，不知道情况怎样。（ないことには）
 9. 不先通过考试就拿不到资格证。（てからでないと）
 10. 天气太热了，热得受不了。（てしょうがない）
+
+**答案**
+
+1. しょうがない（空前已有「で」，合起来是「心配でしょうがない」；「しかたがない」也可以）
+2. ないことには（丈夫でないことには，后项是否定）
+3. てからでないと（買ってからでないと，强调先后顺序）
+4. てはいられない（寝てはいられない，情况紧迫）
+5. てしょうがない（懐かしくてしょうがない；「てしかたがない」也可以）
+6. 故郷が恋しくてしかたがない。
+7. みんなが残業しているのに、自分だけ先に帰ってはいられない。
+8. 自分で実際に見に行かないことには、状況はわからない。
+9. 試験に合格してからでないと、資格は取れない。
+10. 暑くてしょうがない。
 :::
 :::en
 **Part 1: Choose the correct grammar (てしょうがない / てしかたがない / てはいられない / ないことには / てからでないと)**
@@ -326,6 +339,19 @@ This lesson covers N2 grammar for "uncontrollable emotions" and "necessary preco
 8. Unless you go see it yourself, you won't know the situation. (Use ないことには)
 9. You can't get the certificate until you pass the exam first. (Use てからでないと)
 10. It's so hot I can't stand it. (Use てしょうがない)
+
+**Answers**
+
+1. しょうがない (the 「で」 is already there, giving 「心配でしょうがない」; 「しかたがない」 also works)
+2. ないことには (丈夫でないことには, followed by a negative)
+3. てからでないと (買ってからでないと, stresses the order of steps)
+4. てはいられない (寝てはいられない, the situation is pressing)
+5. てしょうがない (懐かしくてしょうがない; 「てしかたがない」 also works)
+6. 故郷が恋しくてしかたがない。
+7. みんなが残業しているのに、自分だけ先に帰ってはいられない。
+8. 自分で実際に見に行かないことには、状況はわからない。
+9. 試験に合格してからでないと、資格は取れない。
+10. 暑くてしょうがない。
 :::
 
 ## 复习计划||Review Schedule

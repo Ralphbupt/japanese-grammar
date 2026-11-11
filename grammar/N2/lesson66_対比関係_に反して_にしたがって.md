@@ -477,6 +477,19 @@ This lesson covers N2 grammar for expressing "contrast" and "correlated change."
 8. 随着技术进步，很多工作被机器取代了。（につれて）
 9. 请按照公司的规定行动。（にしたがって）
 10. 这家餐厅好吃的反面，价格很贵。（反面）
+
+**答案**
+
+1. に反して（与预想相反）
+2. 一方で（同一个人的两个侧面，后项不是坏的一面；「反面」也可以）
+3. 反面（前好后坏，同一主语；「一方で」也可以）
+4. につれて（季节变化与换衣服联动；「にしたがって」也可以）
+5. にしたがって（"按照"指示，只能用这个）
+6. みんなの期待に反して、新製品は売れなかった。
+7. 彼は仕事ができる一方で、私生活はだらしない。
+8. 技術が進歩するにつれて、多くの仕事が機械に取って代わられた。
+9. 会社の規則にしたがって行動してください。
+10. このレストランはおいしい反面、値段が高い。
 :::
 :::en
 **Part 1: Choose the correct grammar (に反して / 一方（で）/ 反面 / につれて / にしたがって)**
@@ -494,6 +507,19 @@ This lesson covers N2 grammar for expressing "contrast" and "correlated change."
 8. As technology advances, many jobs have been replaced by machines. (Use につれて)
 9. Please act according to company regulations. (Use にしたがって)
 10. This restaurant is delicious, but on the flip side, it's expensive. (Use 反面)
+
+**Answers**
+
+1. に反して (contrary to the forecast)
+2. 一方で (two sides of one person, and the second isn't a bad side; 「反面」 also works)
+3. 反面 (good then bad, same subject; 「一方で」 also works)
+4. につれて (the change of season and of clothes go together; 「にしたがって」 also works)
+5. にしたがって ("following" the instructions; only this one fits)
+6. みんなの期待に反して、新製品は売れなかった。
+7. 彼は仕事ができる一方で、私生活はだらしない。
+8. 技術が進歩するにつれて、多くの仕事が機械に取って代わられた。
+9. 会社の規則にしたがって行動してください。
+10. このレストランはおいしい反面、値段が高い。
 :::
 
 ## 复习计划||Review Schedule

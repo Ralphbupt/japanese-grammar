@@ -367,6 +367,19 @@ A compound verb suffix with two core meanings: ① physically "entering inside" 
 8. 大家互相讨论一下吧。（〜合う）
 9. 数据正在载入中。（〜込む）
 10. 你尝尝看这个蛋糕。（てごらん）
+
+**答案**
+
+1. a（相談したらいい；c 要说成「相談すればいい」）
+2. b（すればよかった）
+3. a（飲んでごらん）
+4. a（申し込めばいい）
+5. b（助け合う）
+6. どうすればいいか分からない。
+7. あれを買わなければよかった。
+8. みんなで話し合いましょう。
+9. データを読み込んでいます。
+10. このケーキ、食べてごらん。
 :::
 :::en
 **Part 1: Fill in the blank with the correct grammar**
@@ -393,6 +406,19 @@ A compound verb suffix with two core meanings: ① physically "entering inside" 
 8. Let's all discuss it together. (Use 〜合う)
 9. The data is loading. (Use 〜込む)
 10. Try this cake. (Use てごらん)
+
+**Answers**
+
+1. a (相談したらいい; c would have to be 「相談すればいい」)
+2. b (すればよかった)
+3. a (飲んでごらん)
+4. a (申し込めばいい)
+5. b (助け合う)
+6. どうすればいいか分からない。
+7. あれを買わなければよかった。
+8. みんなで話し合いましょう。
+9. データを読み込んでいます。
+10. このケーキ、食べてごらん。
 :::
 
 ## 复习计划||Review Schedule

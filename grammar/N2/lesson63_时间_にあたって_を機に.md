@@ -261,6 +261,19 @@ This lesson covers N2-level expressions for time and occasion. 「にあたっ�
 8. 趁搬家的机会，把不需要的东西都扔了。（を機に）
 9. 以那次失败为契机，他完全改变了工作方式。（をきっかけに）
 10. 在开幕式之前，进行了安全检查。（に先立って）
+
+**答案**
+
+1. にあたって（演讲是入社仪式中的一环，不是"之前"）
+2. に先立って（彩排在发表会之前进行）
+3. を機に（「をきっかけに」也可以）
+4. にあたって（后半句是注意事项；开演前的广播常说「に先立ちまして」，「に先立って」也可以）
+5. のをきっかけに（动词た形后要加「の」；「のを機に」也可以）
+6. 出国に先立って、パスポートを取得する必要がある。
+7. 卒業にあたって、先生方にお礼を申し上げたいと思います。
+8. 引っ越しを機に、いらない物を全部捨てた。
+9. その失敗をきっかけに、彼は仕事のやり方をすっかり変えた。
+10. 開会式に先立って、安全点検が行われた。
 :::
 :::en
 **Part 1: Choose the appropriate grammar (にあたって / に先立って / を機に / をきっかけに)**
@@ -278,6 +291,19 @@ This lesson covers N2-level expressions for time and occasion. 「にあたっ�
 8. Taking the opportunity of moving, I threw away all the unnecessary things. (Use を機に)
 9. Triggered by that failure, he completely changed his way of working. (Use をきっかけに)
 10. Prior to the opening ceremony, a safety check was conducted. (Use に先立って)
+
+**Answers**
+
+1. にあたって (the speech is part of the ceremony, not something done before it)
+2. に先立って (the rehearsal takes place before the recital)
+3. を機に (「をきっかけに」 also works)
+4. にあたって (the second half gives instructions; pre-show announcements often say 「に先立ちまして」, so 「に先立って」 also works)
+5. のをきっかけに (a verb in ta-form needs 「の」 first; 「のを機に」 also works)
+6. 出国に先立って、パスポートを取得する必要がある。
+7. 卒業にあたって、先生方にお礼を申し上げたいと思います。
+8. 引っ越しを機に、いらない物を全部捨てた。
+9. その失敗をきっかけに、彼は仕事のやり方をすっかり変えた。
+10. 開会式に先立って、安全点検が行われた。
 :::
 
 ## 复习计划||Review Schedule

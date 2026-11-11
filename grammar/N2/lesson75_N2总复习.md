@@ -540,6 +540,29 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 19. 工事中のため、通行を止める。（改为用告示风格的「につき」）
 
 20. 年を取るに対して、体力が落ちる。
+
+**答案**
+
+1. b（からといって：不能因为……就……，后面是否定评价）
+2. b（心配のあまり：过于……以致）
+3. b（過ぎない：只不过是）
+4. c（ほかならない：正是，积极评价）
+5. b（につれて：随着变化而变化）
+6. c（にしたがって：按照指示）
+7. c（寂しげな目）
+8. b（耐え抜いた：坚持到底）
+9. a（悔しくてならない：……得不得了）
+10. b（会ったきり：自那以后就再没有……）
+11. b（戻れるものなら：如果能……的话，表示愿望）
+12. b（遅刻しようものなら：万一……就会招致严重后果）
+13. さすが日本に20年住んでいただけのことはある。日本語がとても自然だ。
+14. 財布をなくしたが、パスポートが無事だっただけましだ。
+15. もう二度とこんなことはするまいと誓う。
+16. それにしても、2時間も待つのは長すぎるでしょう。
+17. 安いからといって、たくさん買うのはよくない。（「からといって」后面接否定或批评，不能接劝诱）
+18. 彼は出かけたきり、帰ってこない。
+19. 工事中につき、通行止め。
+20. 年を取るにつれて、体力が落ちる。（「に対して」表示对象或对比，随着变化要用「につれて」）
 :::
 :::en
 **Part 1: Fill in the most appropriate grammar**
@@ -601,6 +624,29 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 19. 工事中のため、通行を止める。(Rewrite using notice-style 「につき」)
 
 20. 年を取るに対して、体力が落ちる。
+
+**Answers**
+
+1. b (からといって: "just because…, doesn't mean…", followed by a criticism)
+2. b (心配のあまり: so worried that…)
+3. b (過ぎない: is nothing more than)
+4. c (ほかならない: is none other than, a positive judgment)
+5. b (につれて: one change follows another)
+6. c (にしたがって: following the instructions)
+7. c (寂しげな目)
+8. b (耐え抜いた: endured to the end)
+9. a (悔しくてならない: unbearably frustrated)
+10. b (会ったきり: met once, and nothing since)
+11. b (戻れるものなら: if only I could, a wish)
+12. b (遅刻しようものなら: if you ever did, it would bring trouble)
+13. さすが日本に20年住んでいただけのことはある。日本語がとても自然だ。
+14. 財布をなくしたが、パスポートが無事だっただけましだ。
+15. もう二度とこんなことはするまいと誓う。
+16. それにしても、2時間も待つのは長すぎるでしょう。
+17. 安いからといって、たくさん買うのはよくない。(「からといって」 is followed by a negation or criticism, not an invitation)
+18. 彼は出かけたきり、帰ってこない。
+19. 工事中につき、通行止め。
+20. 年を取るにつれて、体力が落ちる。(「に対して」 marks a target or contrast; a change that follows another takes 「につれて」)
 :::
 
 ## 复习计划||Review Schedule

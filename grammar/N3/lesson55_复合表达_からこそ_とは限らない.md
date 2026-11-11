@@ -391,6 +391,19 @@ This lesson covers "compound expressions" — fixed patterns formed by combining
 8. 努力未必能成功。（とは限らない）
 9. 按规定员工不能迟到。（ことになっている）
 10. 贵是贵，但味道很好。（ことは〜が）
+
+**答案**
+
+1. a（からこそ）
+2. b（ことになっている）
+3. a（読んだことは読んだが）
+4. b（ところが）
+5. c（とは限らない）
+6. 友達だからこそ、本当のことが言える。
+7. 前に彼に会ったことがあるような気がする。
+8. 努力すれば成功するとは限らない。
+9. 社員は遅刻してはいけないことになっている。
+10. 高いことは高いが、味はとてもいい。
 :::
 :::en
 **Part 1: Fill in the blank with the correct grammar**
@@ -417,6 +430,19 @@ This lesson covers "compound expressions" — fixed patterns formed by combining
 8. Effort doesn't necessarily lead to success. (Use とは限らない)
 9. The rule is that employees must not be late. (Use ことになっている)
 10. It is expensive, but the taste is great. (Use ことは〜が)
+
+**Answers**
+
+1. a (からこそ)
+2. b (ことになっている)
+3. a (読んだことは読んだが)
+4. b (ところが)
+5. c (とは限らない)
+6. 友達だからこそ、本当のことが言える。
+7. 前に彼に会ったことがあるような気がする。
+8. 努力すれば成功するとは限らない。
+9. 社員は遅刻してはいけないことになっている。
+10. 高いことは高いが、味はとてもいい。
 :::
 
 ## 复习计划||Review Schedule

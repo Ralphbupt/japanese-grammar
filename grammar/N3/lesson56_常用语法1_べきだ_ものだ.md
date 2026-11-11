@@ -348,6 +348,19 @@ Multiple meanings:
 8. 不用特地道歉。（ことはない）
 9. 学生应该多读书。（べきだ）
 10. 小时候经常在河边玩。（ものだ）
+
+**答案**
+
+1. b（わけにはいかない）
+2. b（しかない）
+3. c（ことはない）
+4. a（べきではない）
+5. b（ものだ；表示人的本性、一般规律）
+6. みんなが頑張っているのに、私だけ怠けるわけにはいかない。
+7. 自分で何とかするしかない。
+8. わざわざ謝ることはない。
+9. 学生はもっと本を読むべきだ。
+10. 子供の頃、よく川辺で遊んだものだ。
 :::
 :::en
 **Part 1: Fill in the blank with the correct grammar**
@@ -374,6 +387,19 @@ Multiple meanings:
 8. There's no need to go out of your way to apologize. (Use ことはない)
 9. Students should read more books. (Use べきだ)
 10. I used to play by the river as a child. (Use ものだ)
+
+**Answers**
+
+1. b (わけにはいかない)
+2. b (しかない)
+3. c (ことはない)
+4. a (べきではない)
+5. b (ものだ: human nature, a general truth)
+6. みんなが頑張っているのに、私だけ怠けるわけにはいかない。
+7. 自分で何とかするしかない。
+8. わざわざ謝ることはない。
+9. 学生はもっと本を読むべきだ。
+10. 子供の頃、よく川辺で遊んだものだ。
 :::
 
 ## 复习计划||Review Schedule

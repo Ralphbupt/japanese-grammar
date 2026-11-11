@@ -409,6 +409,19 @@ This lesson covers N2 grammar for "expertise," "results," and "near-misses." 「
 8. 犹豫来犹豫去，最终什么都没决定。（あげく）
 9. 差一点就把手机弄丢了。（ところだった）
 10. 他不说一句抱怨地工作了30年。（ことなく）
+
+**答案**
+
+1. あげく（犹豫了很久，最后的结果）
+2. にかけては
+3. ところだった（差一点就……，实际没发生）
+4. ことなく
+5. ずに済んだ（「保険があったので」是过去的事，用过去形）
+6. に当たらない（驚くに当たらない：不值得惊讶）
+7. 料理にかけては、彼女が一番だ。
+8. さんざん迷ったあげく、結局何も決められなかった。
+9. もう少しでスマホをなくすところだった。
+10. 彼は一言も文句を言うことなく、30年間働いた。
 :::
 :::en
 **Part 1: Choose the correct grammar (にかけては / に当たらない / あげく（に）/ ことなく / ずに済む / ところだった)**
@@ -426,6 +439,19 @@ This lesson covers N2 grammar for "expertise," "results," and "near-misses." 「
 8. After much hesitation, nothing was decided in the end. (Use あげく)
 9. I almost lost my phone. (Use ところだった)
 10. He worked for 30 years without ever complaining. (Use ことなく)
+
+**Answers**
+
+1. あげく (the end result after long hesitation)
+2. にかけては
+3. ところだった (almost happened, but didn't)
+4. ことなく
+5. ずに済んだ (past, since 「保険があったので」 is about the past)
+6. に当たらない (驚くに当たらない: nothing to be surprised about)
+7. 料理にかけては、彼女が一番だ。
+8. さんざん迷ったあげく、結局何も決められなかった。
+9. もう少しでスマホをなくすところだった。
+10. 彼は一言も文句を言うことなく、30年間働いた。
 :::
 
 ## 复习计划||Review Schedule

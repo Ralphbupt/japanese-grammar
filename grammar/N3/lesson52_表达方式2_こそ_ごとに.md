@@ -308,6 +308,19 @@ Two meanings: ① Each time something happens. ② At regular intervals.
 
 9. 日本に行く（　　）、お土産を買ってくる。
 10. このバスは15分（　　）来る。
+
+**答案**
+
+1. ふり（知っているふりをして）
+2. こそ
+3. ことに（驚いたことに）
+4. ごとに
+5. 授業中、起きているふりをしていた。
+6. こそ（あなたにこそ）
+7. こそ（こちらこそ）
+8. 嬉しいことに、志望校に合格した。
+9. たびに（每次去都……，是反复发生的事）
+10. ごとに（每隔15分钟，是固定间隔）
 :::
 :::en
 **I. Fill in with the appropriate grammar (ふりをする, こそ, ことに, ごとに):**
@@ -334,6 +347,19 @@ Two meanings: ① Each time something happens. ② At regular intervals.
 
 9. 日本に行く（　　）、お土産を買ってくる。
 10. このバスは15分（　　）来る。
+
+**Answers**
+
+1. ふり (知っているふりをして)
+2. こそ
+3. ことに (驚いたことに)
+4. ごとに
+5. 授業中、起きているふりをしていた。
+6. こそ (あなたにこそ)
+7. こそ (こちらこそ)
+8. 嬉しいことに、志望校に合格した。
+9. たびに (every time I go: a repeated occasion)
+10. ごとに (every 15 minutes: a fixed interval)
 :::
 
 ## 复习计划||Review Schedule
