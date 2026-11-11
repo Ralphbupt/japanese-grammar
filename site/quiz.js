@@ -465,6 +465,27 @@
     if (idx < s.i) replay([q], idx + 1);
     toTop();
   }
+  function groupCount(n, all) { return t('已选 ' + n + ' / ' + all + ' 题，全部选完后一起看答案', n + ' of ' + all + ' answered — the answers show once all are done'); }
+  // A pick (or 不会) in a passage group: kept until the whole group is checked,
+  // and it can still be changed.
+  function pickInGroup(choice) {
+    cur.pend = choice; cur.hasPend = true;
+    var box = root();
+    box.querySelectorAll('.q-opt').forEach(function (b, i) { b.classList.toggle('q-picked', i === choice); });
+    var idk = box.querySelector('[data-act="idk"]'); if (idk) idk.classList.toggle('q-on', choice == null);
+    var ids = Object.keys(curs), n = ids.filter(function (id) { return curs[id].hasPend; }).length;
+    var go = app.querySelector('[data-act="group-submit"]'); if (go) go.disabled = n < ids.length;
+    var cnt = app.querySelector('.q-group-n'); if (cnt) cnt.textContent = groupCount(n, ids.length);
+    var next = ids.filter(function (id) { return !curs[id].hasPend; })[0];
+    if (next) cur = curs[next];   // the keyboard goes on to the next open question
+  }
+  function submitGroup() {
+    var ids = Object.keys(curs);
+    if (ids.some(function (id) { return !curs[id].hasPend; })) return;
+    var go = app.querySelector('.q-group-go'); if (go) go.remove();
+    ids.forEach(function (id) { cur = curs[id]; submit(cur.pend); });
+    var first = app.querySelector('.q-sub'); if (first) first.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  }
   // Back link, previous-question link, position, type, progress bar.
   function topBar(idx, n, q) {
     var s = S.session, p = idx - 1;
@@ -499,6 +520,10 @@
         '<div class="q-actions">' + '<button class="q-btn q-idk" data-act="idk">' + t('不会', 'I don’t know') + '</button>' + '</div>' +
         '<div class="q-feedback" aria-live="polite"></div></div>';
     });
+    // As in the test, a passage's questions are answered first and checked
+    // together: an answer shown early would give the next question away.
+    if (idx >= s.i) h += '<div class="q-actions q-group-go"><span class="q-muted q-group-n">' + groupCount(0, group.length) + '</span>' +
+      '<button class="q-btn q-btn-primary" data-act="group-submit" disabled>' + t('提交，看答案', 'Check my answers') + '</button></div>';
     app.innerHTML = h + '</div>';
     curs = {};
     group.forEach(function (g) { curs[g.id] = { q: g, start: Date.now(), picked: [null, null, null, null], guess: false, done: false, root: app.querySelector('.q-sub[data-q="' + g.id + '"]') }; });
@@ -1764,13 +1789,14 @@
     else if (act === 'unreview') { delete S.review[el.getAttribute('data-k')]; save(); var y = window.scrollY; reviewList(); window.scrollTo(0, y); }
     else if (act === 'drop') { S.session = null; save(); home(); }
     else if (act === 'home') home();
-    else if (act === 'opt') submit(+el.getAttribute('data-i'));
+    else if (act === 'opt') { if (curs && !cur.done) pickInGroup(+el.getAttribute('data-i')); else submit(+el.getAttribute('data-i')); }
+    else if (act === 'group-submit') submitGroup();
     else if (act === 'piece' && !cur.done) { var k = cur.picked.indexOf(null); if (k >= 0) { cur.picked[k] = +el.getAttribute('data-i'); fillSlots(); } }
     else if (act === 'slot' && !cur.done) { cur.picked[+el.getAttribute('data-k')] = null; fillSlots(); }
     else if (act === 'submit') { var star = [].indexOf.call(app.querySelectorAll('.q-slot'), app.querySelector('.q-star')); submit(cur.picked[star]); }
     else if (act === 'next') ask(el.hasAttribute('data-k') ? +el.getAttribute('data-k') : undefined);
     else if (act === 'prev') ask(+el.getAttribute('data-k'));
-    else if (act === 'idk') submit(null);
+    else if (act === 'idk') { if (curs && !cur.done) pickInGroup(null); else submit(null); }
     else if (act === 'was-guess') {
       var gq = cur.q, ans = S.answers[gq.id], last = ans && ans[ans.length - 1];
       if (last) last.g = true;
@@ -1831,11 +1857,12 @@
   document.addEventListener('keydown', function (e) {
     if (!cur || cur.mock || e.target.matches('input, textarea, select') || e.metaKey || e.ctrlKey || e.altKey) return;
     if (!document.body.contains(app.querySelector('.q-card'))) return;
-    if (!cur.done && cur.q.type !== 'narabe' && /^[1-4]$/.test(e.key) && +e.key <= cur.q.options.length) submit(+e.key - 1);
-    else if (!cur.done && cur.q.type !== 'narabe' && e.key === '0') submit(null);
+    var answer = curs ? pickInGroup : submit;
+    if (!cur.done && cur.q.type !== 'narabe' && /^[1-4]$/.test(e.key) && +e.key <= cur.q.options.length) answer(+e.key - 1);
+    else if (!cur.done && cur.q.type !== 'narabe' && e.key === '0') answer(null);
     else if (e.key === 'ArrowLeft' && app.querySelector('[data-act="prev"]')) { e.preventDefault(); app.querySelector('[data-act="prev"]').click(); }
     else if (e.key === 'Enter') {
-      var b = app.querySelector('[data-act="next"]') || app.querySelector('[data-act="submit"]:not([disabled])');
+      var b = app.querySelector('[data-act="next"]') || app.querySelector('[data-act="submit"]:not([disabled])') || app.querySelector('[data-act="group-submit"]:not([disabled])');
       if (b) { e.preventDefault(); b.click(); }
     }
   });
