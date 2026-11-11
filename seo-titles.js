@@ -27,7 +27,7 @@ module.exports = {
     zh: "日语动词三类分类与ます形变形规则 | JLPT N5 语法",
   },
   lesson04: {
-    en: "て-form (te form) Conjugation Rules & Chart | JLPT N5 Grammar",
+    en: "て形 (Te-Form) Rules & Chart — How to Make the Japanese Te Form | N5",
     zh: "て形变形规则与音便对照表 | JLPT N5 日语语法",
   },
   lesson05: {
@@ -58,7 +58,7 @@ module.exports = {
     desc: "The tara-form and なら in Japanese: how to conjugate たら, when なら means “if that's the case”, and a chart comparing と, ば, たら and なら, with common mistakes.",
   },
   lesson11: {
-    en: "可能形 Potential & 受身形 Passive Form (られる) Conjugation | JLPT N5",
+    en: "可能形 vs 受身形 — Potential vs Passive Form (rareru) | JLPT N5",
     zh: "可能形与受身形（被动）变形规则和用法 | JLPT N5 语法",
   },
   lesson12: {
@@ -116,7 +116,7 @@ module.exports = {
     zh: "ておく和てある的区别・て以来 | JLPT N4 日语语法",
   },
   lesson25: {
-    en: "という, ということ (to iu / to iu koto) Meaning | JLPT N4",
+    en: "という Meaning (to iu) — ということ, というのは, というより | N4",
     zh: "という・ということ 用法详解 | JLPT N4 日语语法",
   },
   lesson26: {
@@ -144,7 +144,7 @@ module.exports = {
     zh: "すぎる・やすい/にくい・ことはない・复合动词 | JLPT N4 语法",
   },
   lesson32: {
-    en: "と思う vs と思っている, かどうか, のように | JLPT N4",
+    en: "と思う vs と思っている (to omou / to omotte iru) Difference | N4",
     zh: "と思う和と思っている的区别・かどうか・のように | JLPT N4",
   },
   lesson33: {
@@ -161,8 +161,8 @@ module.exports = {
     zh: "JLPT N4 语法清单 — 全部 N4 语法点一览（可打勾）",
   },
   lesson35: {
-    en: "において / における, に対して, について, によって | JLPT N3",
-    zh: "において・における・に対して・について・によって 的区别 | JLPT N3",
+    en: "において vs における (ni oite / ni okeru) Meaning & Difference | N3",
+    zh: "において和における的区别・に対して・について・によって | JLPT N3",
   },
   lesson36: {
     en: "に関して, にとって, に基づいて, にわたって | JLPT N3 Grammar",
@@ -173,7 +173,7 @@ module.exports = {
     zh: "おかげで和せいで的区别・ために・からには | JLPT N3 语法",
   },
   lesson38: {
-    en: "“Although” in Japanese — にもかかわらず, ながらも, くせに | JLPT N3",
+    en: "ながらも, にもかかわらず, くせに — “Although” in Japanese | N3",
     zh: "にもかかわらず・ながらも・くせに・としても 的区别 | JLPT N3",
   },
   lesson39: {
@@ -223,7 +223,7 @@ module.exports = {
     zh: "まま・だらけ・っぱなし・ずに・ように見える | JLPT N3 语法",
   },
   lesson50: {
-    en: "“Instead Of” in Japanese — 代わりに (kawari ni), ついでに | JLPT N3",
+    en: "How to Say “Instead Of” in Japanese — 代わりに (kawari ni) | N3",
     zh: "代わりに・ついでに・に比べて・によると・たびに | JLPT N3",
     desc: "How to say instead of, while you're at it, compared to and every time in Japanese: 代わりに, ついでに, に比べて, によると, たびに and て初めて, with examples.",
   },

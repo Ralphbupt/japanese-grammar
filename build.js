@@ -2707,7 +2707,7 @@ ${SETTINGS_SCRIPT}`;
   // a teacher marks a notebook (the grammar point in red, a note beside it).
   const homeMainHtml = `<header class="home-hero">
     <div class="hero-copy">
-      <h1><span class="lang-zh">日语语法笔记 — JLPT N5 到 N1 全部语法</span><span class="lang-en">Japanese Grammar Notes — JLPT N5 to N1</span></h1>
+      <h1><span class="lang-zh">jpnotes — JLPT N5 到 N1 语法讲解与题库</span><span class="lang-en">jpnotes — JLPT N5 to N1 grammar and practice</span></h1>
       <p class="home-intro">
         <span class="lang-zh">免费的 JLPT 语法笔记和题库：<strong>${totalLessons} 课、${totalPoints}+ 语法点</strong>，每个都有接续、例句和易混辨析；学完就做题，听力、阅读、模拟考都有。</span>
         <span class="lang-en">Free JLPT grammar notes and a question bank: <strong>${totalLessons} lessons, ${totalPoints}+ grammar points</strong>, each with its conjugation, example sentences and the patterns it gets confused with. Then practise: listening, reading and mock tests included.</span>
@@ -2800,14 +2800,14 @@ ${SETTINGS_SCRIPT}`;
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Japanese Grammar Notes — Free JLPT N5 to N1 Grammar Lessons | 日语语法笔记</title>
+<title>jpnotes — Free JLPT N5–N1 Grammar, Practice Tests & Listening</title>
 <meta name="description" content="Free JLPT N5–N1 grammar lessons, listening practice and mock tests: examples with audio, explanations for every answer, Anki decks. No sign-up. 中文版免费。">
 <meta name="keywords" content="Japanese grammar, JLPT N2, N5, N4, N3, 日语语法, 日本語文法, grammar notes, spaced repetition, 语法笔记">
 <link rel="canonical" href="${SITE}">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N1">
+<meta property="og:title" content="jpnotes — Free JLPT N5–N1 Grammar, Practice Tests & Listening">
 <meta property="og:description" content="Free JLPT N5–N1 practice questions, listening with audio, timed mock tests and grammar lessons. Every answer explained, no sign-up.">
 <meta property="og:url" content="${SITE}">
 <meta property="og:image" content="${SITE}og-image.png">
@@ -2818,7 +2818,7 @@ ${SETTINGS_SCRIPT}`;
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N1">
+<meta name="twitter:title" content="jpnotes — Free JLPT N5–N1 Grammar, Practice Tests & Listening">
 <meta name="twitter:description" content="Free JLPT N5–N1 practice questions, listening, mock tests and grammar lessons. Every answer explained.">
 <meta name="twitter:image" content="${SITE}og-image.png">
 
@@ -2828,7 +2828,7 @@ ${SETTINGS_SCRIPT}`;
 [{
   "@context": "https://schema.org",
   "@type": "Course",
-  "name": "Japanese Grammar Notes – N5 to N1",
+  "name": "jpnotes – JLPT N5 to N1",
   "description": "Free structured Japanese grammar notes covering JLPT N5 to N1, with bilingual explanations, example sentences, and spaced repetition.",
   "provider": { "@type": "Person", "name": "Ralphbupt" },
   "inLanguage": ["en", "zh-CN"],
@@ -2848,7 +2848,7 @@ ${SETTINGS_SCRIPT}`;
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "jpnotes",
-  "alternateName": ["jpnotes.dev", "Japanese Grammar Notes", "日语语法笔记"],
+  "alternateName": ["jpnotes.dev", "jp notes", "JPNotes", "Japanese Grammar Notes", "日语语法笔记"],
   "url": "${SITE}",
   "inLanguage": ["en", "zh-CN"]
 }]
@@ -2863,7 +2863,7 @@ ${SETTINGS_SCRIPT}`;
 <meta name="theme-color" content="#1a1a2e">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="日语文法">
+<meta name="apple-mobile-web-app-title" content="jpnotes">
 
 ${CSP_META}
 ${CLONE_GUARD}
@@ -3117,7 +3117,7 @@ ${AI_SCRIPT}
   "teaches": [${v.points.slice(0, 5).map(p => `"${p.replace(/"/g, '\\"')}"`).join(", ") || '""'}],
   "audience": { "@type": "EducationalAudience", "educationalRole": "student" },
   "author": { "@type": "Person", "name": "Ralphbupt", "url": "https://github.com/Ralphbupt" },
-  "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N1", "url": "${SITE}" }
+  "isPartOf": { "@type": "Course", "name": "jpnotes – JLPT N5 to N1", "url": "${SITE}" }
 },
 {
   "@context": "https://schema.org",
@@ -3440,7 +3440,7 @@ html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
   "description": "${m.desc.replace(/"/g, '\\"')}",
   "url": "${lv.url}",
   "inLanguage": ["${lang.htmlLang}", "ja"],
-  "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N1", "url": "${SITE}" },
+  "isPartOf": { "@type": "Course", "name": "jpnotes – JLPT N5 to N1", "url": "${SITE}" },
   "hasPart": [${lessons.map(l => `{"@type": "Article", "name": "${l.jaTitle.replace(/"/g, '\\"')}", "url": "${SITE}${l.id}/"}`).join(",")}]
 },
 {
@@ -3563,7 +3563,7 @@ ${AI_SCRIPT}
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">${JSON.stringify([
   { "@context": "https://schema.org", "@type": "CollectionPage", name: m.h1, description: m.desc, url: lv.url, inLanguage: lang.htmlLang,
-    isPartOf: { "@type": "Course", name: "Japanese Grammar Notes – N5 to N1", url: SITE } },
+    isPartOf: { "@type": "Course", name: "jpnotes – JLPT N5 to N1", url: SITE } },
   { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
     { "@type": "ListItem", position: 1, name: m.home, item: SITE },
     { "@type": "ListItem", position: 2, name: m.crumb, item: lv.url }] },
@@ -3670,7 +3670,7 @@ ${AI_SCRIPT}
   "description": "${m.desc.replace(/"/g, '\\"')}",
   "url": "${lv.url}",
   "inLanguage": ["${lang.htmlLang}", "ja"],
-  "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N1", "url": "${SITE}" },
+  "isPartOf": { "@type": "Course", "name": "jpnotes – JLPT N5 to N1", "url": "${SITE}" },
   "hasPart": [${guidePages.map(l => `{"@type": "Article", "name": "${l.jaTitle.replace(/"/g, '\\"')}", "url": "${SITE}${l.id}/"}`).join(",")}]
 },
 {
@@ -4262,14 +4262,14 @@ ${lessonList}</section>`;
     const count = practice.questions.length;
     const meta = {
       en: {
-        title: `JLPT ${level} Practice Questions — ${ckLevels.includes(level) ? "Listening, " : ""}Vocabulary, Grammar & Reading, with Explanations`,
+        title: `JLPT ${level} Practice Test — Free Questions with Answers & Explanations`,
         desc: `Free JLPT ${level} practice: ${count} exam-style questions — ${ckLevels.includes(level) ? "listening with audio, " : ""}kanji, vocabulary, grammar and reading — with an explanation for every option.`,
-        h1: `JLPT ${level} Practice Questions`, crumb: `${level} Practice`,
+        h1: `JLPT ${level} Practice Test`, crumb: `${level} Practice`,
         lead: `Exam-style ${level} questions in every format of the test${ckLevels.includes(level) ? ", listening included" : " except listening"}. Answer, see why each option is right or wrong, and the ones you miss come back a few days later.`,
         nav: navLinks(practiceId, true),
       },
       zh: {
-        title: `JLPT ${level} 练习题 - ${ckLevels.includes(level) ? "听力・" : ""}文字词汇・语法・阅读在线做题，附详细解析`,
+        title: `JLPT ${level} 练习题在线做（免费）- 题型同真题${ckLevels.includes(level) ? "，含听力" : ""}，每题有解析`,
         desc: `免费 JLPT ${level} 练习：${count} 道仿真题，覆盖${ckLevels.includes(level) ? "听力（带音频）、" : ""}汉字读音、词汇、语法、句子排序和阅读，即时判分，每个错误选项都有解析，错题本按间隔重复自动复习。`,
         h1: `JLPT ${level} 练习题`, crumb: `${level} 练习`,
         lead: `${ckLevels.includes(level) ? "覆盖" : "除听力外覆盖 "}${level} 考试的全部题型${ckLevels.includes(level) ? "（含听力）" : ""}。答完马上看每个选项为什么对、为什么错，答错的题过几天会再考你一次。`,
@@ -4371,14 +4371,14 @@ ${lessonList}</section>`;
     const setsFor = (code) => JSON.stringify(sets.map((x) => ({ ...x, src: x.src[code], key: x.key[code] })));
     const mockMeta = {
       en: {
-        title: `JLPT ${level} Mock Test Online — Timed${hasCk ? ", Listening Included" : ""}, with Scores and Explanations`,
+        title: `JLPT ${level} Mock Test — Free Timed Sample Exam with Score`,
         desc: `Free timed JLPT ${level} mock test in the real format${hasCk ? ", listening included" : ""}: an estimated score against the pass marks and every question explained.`,
         h1: `JLPT ${level} Mock Test`, crumb: `${level} Mock test`,
         lead: `Original questions in the real test's order and timing, not in the practice bank. No answers until you submit; then an estimated score, where the time went, and an explanation for every question.`,
         nav: navLinks(mockId, true),
       },
       zh: {
-        title: `JLPT ${level} 模拟题在线测试 - ${hasCk ? "含听力，" : ""}计时、估分、逐题解析`,
+        title: `JLPT ${level} 模拟题在线测试（免费）- 计时估分${hasCk ? "，含听力" : ""}`,
         desc: `免费 JLPT ${level} 在线模拟考：按真题结构和时间出题（文字词汇、语法、阅读${hasCk ? "、听力" : ""}），交卷后估算分数、对照合格线，按题型分析，每道题都有解析。`,
         h1: `JLPT ${level} 模拟题`, crumb: `${level} 模拟题`,
         lead: `原创题目，按真考的顺序和时间作答，和练习题不重复。交卷前不显示答案；交卷后估算分数、看时间花在哪里、逐题看解析。`,
@@ -4846,8 +4846,8 @@ Each \`/lessonNN/\` page contains:
 `, "utf-8");
 
   fs.writeFileSync(path.join(__dirname, "dist/manifest.json"), JSON.stringify({
-    name: "日语语法笔记 – N5→N1",
-    short_name: "日语文法",
+    name: "jpnotes – JLPT N5→N1",
+    short_name: "jpnotes",
     start_url: SITE_PATH,
     scope: SITE_PATH,
     display: "standalone",
