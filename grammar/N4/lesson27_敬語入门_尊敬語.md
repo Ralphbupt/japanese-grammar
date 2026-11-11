@@ -154,6 +154,10 @@ Japanese society distinguishes **the listener's status + the formality of the si
 
 ### 接続||Conjugation
 :::zh
+- 和語动词：お + ます形（去ます） + になります
+- 漢語动词（する结尾）：ご + 漢語 + になります
+- 来る／する，以及ます形词干只有一拍的动词（見る・着る・寝る）不能套，要用特殊敬语动词
+
 **对于没有特殊敬语动词的普通动词，用这个模板**：
 
 | 类型 | 公式 | 例 |
@@ -169,6 +173,10 @@ Japanese society distinguishes **the listener's status + the formality of the si
 :::
 
 :::en
+- Native verbs: お + masu-stem (drop ます) + になります
+- Sino-Japanese verbs (ending in する): ご + kanji compound + になります
+- Not for 来る / する or verbs with a one-mora masu-stem (見る・着る・寝る): those take a special honorific verb
+
 **For ordinary verbs without a special honorific form, use this template**:
 
 | Type | Formula | Example |

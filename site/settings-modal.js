@@ -66,6 +66,7 @@
       b.setAttribute('aria-checked', b.getAttribute('data-theme') === c ? 'true' : 'false');
     });
     document.querySelectorAll('.js-ruby-toggle').forEach(function (i) { i.checked = !hide; });
+    document.querySelectorAll('.js-ruby-btn').forEach(function (b) { b.setAttribute('aria-pressed', hide ? 'false' : 'true'); });
     document.querySelectorAll('.js-lang-btn').forEach(function (b) { b.textContent = en ? '中文' : 'EN'; });
     document.querySelectorAll('.js-lang-set').forEach(function (b) { b.setAttribute('aria-pressed', (b.getAttribute('data-lang') === 'en') === en ? 'true' : 'false'); });
   }
@@ -111,6 +112,9 @@
     });
   }
 
+  document.addEventListener('click', function (e) {
+    if (e.target.closest && e.target.closest('.js-ruby-btn')) setRuby(document.body.classList.contains('hide-ruby'));
+  });
   function setRuby(show) {
     document.body.classList.toggle('hide-ruby', !show);
     savePrefs({ hideRuby: !show });
@@ -264,8 +268,11 @@
     bar.innerHTML =
       (hasSearch ? '<button type="button" class="tc-pill tc-icon" data-proxy="search-btn" aria-label="搜索 / Search" title="搜索 / Search ( / )">' + hasSearch.innerHTML + '</button>' : '') +
       (hasAi ? '<button type="button" class="tc-pill tc-icon" id="tc-ai" data-proxy="ai-btn" aria-label="问 AI / Ask AI" title="问 AI / Ask AI">' + document.getElementById('ai-btn').innerHTML + '</button>' : '') +
+      // Furigana sits out here (2026-11-12): it is the one setting a reader flips
+      // while working — on to read a lesson, off to test themselves on a question.
+      '<button type="button" class="tc-pill tc-ruby js-ruby-btn" aria-label="汉字注音 / Furigana" title="汉字注音 / Furigana" lang="ja">ふりがな</button>' +
       '<button type="button" class="tc-pill tc-lang js-lang-btn">EN</button>' +
-      // Account, and with it everything set once and left alone: theme, furigana, share.
+      // Account, and with it everything set once and left alone: theme, share.
       '<button type="button" class="tc-pill tc-icon" id="tc-acct" data-open-settings aria-label="账号与设置 / Account & settings" title="账号与设置 / Account & settings">' + USER_ICON + '</button>';
     document.body.appendChild(bar);
     // Search and AI keep their single owner: forward the click to the sidebar button.

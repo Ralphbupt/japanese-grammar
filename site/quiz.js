@@ -823,12 +823,24 @@
   }
 
   // The review list itself: what was missed, the last answer, when it comes back.
+  // `rlGroup` narrows it to one part of the test (moji / bunpou / dokkai / choukai); 开始复习 then
+  // takes only that part.
+  var rlGroup = '';
+  function grpOf(q) { return D.types[q.type] ? D.types[q.type].g : ''; }
   function reviewList() {
     view(false);
-    var n = now(), list = inReview().sort(function (a, b) { return S.review[a.id].due - S.review[b.id].due; });
-    var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button><span>' + t('错题本 · ', 'Review list · ') + list.length + t(' 题', '') + '</span><span></span></div><div class="q-card q-summary">';
-    if (!list.length) h += '<p>' + t('错题本空了。', 'The review list is empty.') + '</p>';
-    else h += '<p><button class="q-btn q-btn-primary" data-act="review"' + (due().length ? '' : ' data-early="1"') + '>' + t('开始复习', 'Start reviewing') + '</button></p><ul class="q-sumlist">' + list.map(function (q) {
+    var n = now(), every = inReview().sort(function (a, b) { return S.review[a.id].due - S.review[b.id].due; });
+    var groups = Object.keys(D.groups).filter(function (g) { return every.some(function (q) { return grpOf(q) === g; }); });
+    if (groups.indexOf(rlGroup) < 0) rlGroup = '';
+    var list = rlGroup ? every.filter(function (q) { return grpOf(q) === rlGroup; }) : every;
+    var dueN = list.filter(function (q) { return S.review[q.id].due <= n; }).length;
+    var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button><span>' + t('错题本 · ', 'Review list · ') + every.length + t(' 题', '') + '</span><span></span></div><div class="q-card q-summary">';
+    if (groups.length > 1) h += '<div class="q-filter" role="group" aria-label="' + t('按部分筛选', 'Filter by part') + '">' + [''].concat(groups).map(function (g) {
+      var xs = g ? every.filter(function (q) { return grpOf(q) === g; }) : every, dn = xs.filter(function (q) { return S.review[q.id].due <= n; }).length;
+      return '<button class="q-btn q-filter-btn" data-act="rl-group" data-k="' + g + '" aria-pressed="' + (g === rlGroup) + '" title="' + t('今天到期 ' + dn + ' 题，共 ' + xs.length + ' 题', dn + ' due today of ' + xs.length) + '">' + (g ? esc(bi(D.groups[g])) : t('全部', 'All')) + ' <span class="q-muted">' + dn + '/' + xs.length + '</span></button>';
+    }).join('') + '</div><p class="q-muted q-small">' + t('数字是 今天到期 / 总数。', 'The numbers are due today / total.') + '</p>';
+    if (!every.length) h += '<p>' + t('错题本空了。', 'The review list is empty.') + '</p>';
+    else h += '<p><button class="q-btn q-btn-primary" data-act="review" data-k="' + rlGroup + '"' + (dueN ? '' : ' data-early="1"') + '>' + (rlGroup ? t('开始复习' + bi(D.groups[rlGroup]), 'Review ' + bi(D.groups[rlGroup])) : t('开始复习', 'Start reviewing')) + (dueN ? ' <span class="q-btn-n">' + t('到期 ' + dueN + ' 题', dueN + ' due') + '</span>' : t('（提前复习）', ' (early)')) + '</button></p><ul class="q-sumlist">' + list.map(function (q) {
       var a = S.answers[q.id] || [], last = a[a.length - 1], days = Math.ceil((S.review[q.id].due - n) / DAY);
       var mine = !last ? '' : last.ok ? t('猜对', 'Guessed right') : last.c == null ? t('不会', 'Didn’t know') : t('你选 ', 'You: ') + '<span lang="ja">' + q.options[last.c] + '</span>';
       return '<li><div lang="ja" class="q-sumstem">' + sumLabel(q) + '</div>' +
@@ -922,9 +934,11 @@
     }
     else if (kind === 'ref') start('ref', subset(function (q) { return (q.refs || []).indexOf(k) >= 0; }, n), k);
     else if (kind === 'review') {
-      var list = due();
-      if (!list.length) list = inReview().sort(function (a, b) { return S.review[a.id].due - S.review[b.id].due; });
-      start('review', arrange(list.slice(0, n)));
+      // k = one part of the test, from the review list's filter; '' / none = everything.
+      var mine = function (q) { return !k || (D.types[q.type] && D.types[q.type].g === k); };
+      var list = due().filter(mine).sort(function (a, b) { return S.review[a.id].due - S.review[b.id].due; });
+      if (!list.length) list = inReview().filter(mine).sort(function (a, b) { return S.review[a.id].due - S.review[b.id].due; });
+      start('review', arrange(list.slice(0, n)), k || '');   // the label carries the part into 再来一组
     }
   }
 
@@ -1783,6 +1797,7 @@
     if (act === 'daily' || act === 'type' || act === 'lesson' || act === 'review' || act === 'pre') startKind(act, el.getAttribute('data-k'));
     else if (act === 'resume') ask();
     else if (act === 'review-list') reviewList();
+    else if (act === 'rl-group') { rlGroup = el.getAttribute('data-k') || ''; reviewList(); }
     else if (act === 'analysis') analysis();
     else if (act === 'share') shareScore(el);
     else if (act === 'weak') startKind('weak');

@@ -2479,6 +2479,7 @@ async function main() {
   const mobileBarHtml = `<div id="m-bar"><a id="m-title" href="${SITE_PATH}"></a>
     <button type="button" class="m-btn" data-m="search" aria-label="搜索 / Search">${ICON_SEARCH}</button>
     <button type="button" class="m-btn" data-m="ai" aria-label="问 AI / Ask AI" hidden>${ICON_CHAT}</button>
+    <button type="button" class="m-btn js-ruby-btn" aria-label="汉字注音 / Furigana"><span class="ruby-ico" aria-hidden="true"><span>あ</span>漢</span></button>
     <button type="button" class="m-btn" data-m="settings" aria-label="账号与设置 / Account & settings">${ICON_USER}</button>
   </div>`;
   const sidebarMarkupHtml = `${mobileBarHtml}
@@ -5927,6 +5928,13 @@ html.theme-dark #search-box { background: #1f1f2e; }
 .tc-pill input { margin: 0 .3rem 0 0; vertical-align: -1px; }
 .tc-icon { padding: .38rem .55rem; display: inline-flex; align-items: center; }
 .tc-icon svg, #settings-box .js-theme-btn svg { width: 17px; height: 17px; display: block; }
+/* Furigana button: the word itself in the top bar, a kana over a kanji in the phone bar. Off = struck through / kana faded. */
+.tc-ruby[aria-pressed="true"] { color: var(--ui); border-color: var(--ui); }
+.tc-ruby[aria-pressed="false"] { color: var(--text-muted); text-decoration: line-through; }
+.ruby-ico { display: inline-flex; flex-direction: column; align-items: center; font-size: 15px; line-height: 1; font-weight: 600; }
+.ruby-ico > span { font-size: 9px; line-height: 1; margin-bottom: 1px; font-weight: 400; }
+.m-btn.js-ruby-btn[aria-pressed="true"] { color: var(--ui); }
+.m-btn.js-ruby-btn[aria-pressed="false"] .ruby-ico > span { opacity: .2; }
 /* Theme picker: five swatch buttons, in the settings modal and in the
    top-bar menu. Swatches show each theme's own page and text colours. */
 .settings-row-theme > div { flex: 1; }

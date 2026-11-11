@@ -505,6 +505,10 @@ Expresses a command, but softer than 「〜ろ」. Mainly used in **top-down** s
 ### 接続||Conjugation
 
 :::zh
+- 命令形：五段动词 う段 → え段（飲む → 飲め）；一段动词 る → ろ（食べる → 食べろ）
+- 来る → 来い（こい），する → しろ
+- 禁止形：动词辞書形 + な（飲むな）
+
 **命令形（做！）：**
 
 | 动词类型 | 规则 | 例 |
@@ -520,6 +524,10 @@ Expresses a command, but softer than 「〜ろ」. Mainly used in **top-down** s
 :::
 
 :::en
+- Imperative: Godan verbs, u-column → e-column (飲む → 飲め); Ichidan verbs, る → ろ (食べる → 食べろ)
+- 来る → 来い (こい), する → しろ
+- Prohibitive: dictionary form + な (飲むな)
+
 **Imperative (Do it!):**
 
 | Verb type | Rule | Example |

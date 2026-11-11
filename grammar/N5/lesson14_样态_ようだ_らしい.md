@@ -112,6 +112,11 @@
 ### 接続||Conjugation
 
 :::zh
+- 动词/い形容词 简体 + みたいだ
+- な形容词 语干/名词 + みたいだ（不加な/の）
+- 修饰名词：みたい**な** + 名词
+- 修饰动词/形容词：みたい**に**
+
 みたいだ是ようだ的**口语版**，接续更简单：
 
 | | ようだ | みたいだ |
@@ -125,6 +130,11 @@
 :::
 
 :::en
+- Verb / い-adjective plain form + みたいだ
+- な-adjective stem / noun + みたいだ (no な / の)
+- Before a noun: みたい**な** + noun
+- Before a verb or adjective: みたい**に**
+
 みたいだ is the **casual version** of ようだ with simpler conjugation:
 
 | | ようだ | みたいだ |
@@ -157,6 +167,44 @@
 5. 誰もいない**みたいだ**。電気が消えている。(Seems like no one is here — the lights are off.)
 6. 彼女は疲れている**みたいで**、ずっとあくびをしている。(She seems tired — she keeps yawning.)
 7. 隣の部屋で何かあった**みたいだ**。(Something seems to have happened in the next room.)
+:::
+
+### みたいだ做修饰语||みたいだ as a Modifier
+
+:::zh
+みたいだ除了表示推断（好像……），还表示**比喻**："像……一样"。它像な形容词一样变化，后面接什么就用什么形式：
+
+| 后面接 | 形式 | 例 |
+|---|---|---|
+| 名词 | みたい**な** | 子供**みたいな**顔（像孩子一样的脸） |
+| 动词/形容词 | みたい**に** | 子供**みたいに**笑う（像孩子一样笑） |
+| 句子中顿 | みたい**で** | 夢**みたいで**、信じられない（像做梦一样，难以相信） |
+| 句尾 | みたい**だ** | まるで夢**みたいだ**（简直像做梦一样） |
+
+- 妹は子供**みたいな**顔で笑いました。（妹妹露出孩子一样的表情笑了。→ みたいな+名词）
+- 彼は子供**みたいに**よく泣く。（他像孩子一样爱哭。→ みたいに+动词）
+- 今日は夏**みたいに**暑い。（今天热得像夏天一样。→ みたいに+形容词）
+- 田中さん**みたいな**人になりたい。（我想成为田中先生那样的人。）
+
+> 做题时先看空格后面：后面是名词选みたいな，是动词或形容词选みたいに，句子到此结束选みたいだ。
+:::
+
+:::en
+Besides inference ("it seems…"), みたいだ also makes a **comparison**: "like…". It conjugates like a な-adjective, so the form depends on what follows:
+
+| What follows | Form | Example |
+|---|---|---|
+| Noun | みたい**な** | 子供**みたいな**顔 (a childlike face) |
+| Verb / adjective | みたい**に** | 子供**みたいに**笑う (to laugh like a child) |
+| Clause continues | みたい**で** | 夢**みたいで**、信じられない (it's like a dream — I can't believe it) |
+| End of sentence | みたい**だ** | まるで夢**みたいだ** (it's just like a dream) |
+
+- 妹は子供**みたいな**顔で笑いました。(My little sister smiled with a childlike face. → みたいな + noun)
+- 彼は子供**みたいに**よく泣く。(He cries a lot, like a child. → みたいに + verb)
+- 今日は夏**みたいに**暑い。(Today is hot like summer. → みたいに + adjective)
+- 田中さん**みたいな**人になりたい。(I want to become a person like Tanaka-san.)
+
+> In a question, look at what comes after the blank: a noun takes みたいな, a verb or adjective takes みたいに, and the end of the sentence takes みたいだ.
 :::
 
 ### ようだ vs みたいだ 详细对比||Detailed Comparison: ようだ vs みたいだ

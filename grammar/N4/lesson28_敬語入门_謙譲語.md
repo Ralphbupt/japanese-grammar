@@ -38,6 +38,10 @@
 
 ### 接続||Conjugation
 :::zh
+- 没有规则，逐个记，主语是自己或我方
+- 行く・来る → 参る／伺う，いる → おる，食べる・飲む・もらう → いただく
+- 言う → 申す，見る → 拝見する，する → いたす
+
 **和尊敬語一样没有规律，只能背**。和尊敬語对比记忆效率最高：
 
 | 普通动词 | **尊敬語**（别人做） | **謙譲語**（我做） | 中文 |
@@ -61,6 +65,10 @@
 :::
 
 :::en
+- No rule: learn them one by one; the subject is yourself or your side
+- 行く・来る → 参る / 伺う, いる → おる, 食べる・飲む・もらう → いただく
+- 言う → 申す, 見る → 拝見する, する → いたす
+
 **No rule — just memorize**. Easiest learned in parallel with sonkeigo:
 
 | Plain verb | **Sonkeigo** (others do it) | **Kenjogo** (I do it) | English |
@@ -124,6 +132,11 @@
 
 ### 接続||Conjugation
 :::zh
+- 和語动词：お + ます形（去ます） + します
+- 漢語动词：ご + 漢語 + します
+- 更郑重：お／ご + 〜 + いたします
+- 主语必须是自己（或我方），而且动作要涉及对方
+
 **没有特殊謙譲動詞时用这个**：
 
 | 类型 | 公式 | 例 |
@@ -143,6 +156,11 @@
 :::
 
 :::en
+- Native verbs: お + masu-stem + します
+- Sino-Japanese verbs: ご + kanji compound + します
+- More formal: お／ご + 〜 + いたします
+- The subject must be yourself (or your side), and the action must involve the other person
+
 **For verbs without a special humble form**:
 
 | Type | Formula | Example |
