@@ -157,4 +157,11 @@ test("clearing one level leaves the others, the settings and the day counts", ()
   assert.strictEqual(sum.days, 1);
 });
 
+test("feedback reply ids from both devices are kept, also across a replace", () => {
+  const a = base({ fbRids: ["a1"], at: 1 }), b = base({ fbRids: ["b1", "a1"], at: 2 });
+  assert.deepStrictEqual(merge(a, b).fbRids.sort(), ["a1", "b1"]);
+  const cleared = base({ epoch: 2, fbRids: [], at: 3 });
+  assert.deepStrictEqual(merge(cleared, b).fbRids.sort(), ["a1", "b1"]);
+  assert.ok(!("fbRids" in merge(base({}), base({}))));
+});
 console.log(n + " tests passed");

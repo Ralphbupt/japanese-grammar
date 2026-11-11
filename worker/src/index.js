@@ -11,6 +11,7 @@
  *   POST /v1/chat/completions   → Claude, else Workers AI; model fixed
  *   GET  /v1/models             → the one model on offer
  *   POST /feedback              → a reader's note from the practice pages, into D1
+ *   POST /feedback/replies      → the owner's replies to notes sent from this browser ({ rids })
  *
  * Guard rails, because the quota is shared by everyone:
  *   - only browsers on jpnotes.dev — CORS + Origin check (localhost only under wrangler dev)
@@ -31,8 +32,11 @@
  *     do not count against anyone's limit.
  *
  * Feedback (POST /feedback) is the one thing stored: what the reader wrote,
- * the page and question it was about, and a daily-salted hash of the IP so
- * one reader can send at most FEEDBACK_PER_DAY a day.
+ * the page and question it was about, a daily-salted hash of the IP so
+ * one reader can send at most FEEDBACK_PER_DAY a day, the random id the
+ * reader's browser made (rid) so a reply can find its way back, and an email
+ * address only if the reader typed one (cleared once the reply is mailed, or
+ * after EMAIL_DAYS). Replies are written from admin.jpnotes.dev.
  *
  * Otherwise nothing is logged: no questions, answers or IPs. The only record is a
  * usage counter in Analytics Engine (dataset jpnotes_ai_usage), one row per
@@ -73,6 +77,9 @@ const DAILY_NEURONS = 9500;                           // Free plan allows 10,000
 const CACHE_TTL = 3 * 86400;
 const FEEDBACK_PER_DAY = 20;
 const FEEDBACK_MAX = 1000;                            // characters of text
+const EMAIL_DAYS = 90;                                // an address waiting for a reply is kept this long at most
+const RID_RE = /^[0-9a-f]{20}$/;
+const EMAIL_RE = /^[^\s@]{1,64}@[^\s@]{1,190}\.[a-z]{2,}$/i;
 const MAX_MESSAGES = 40;                              // the panel sends the system prompt + the last 6 turns
 
 // Backup providers, tried in order when Workers AI can't answer (the day's
@@ -112,6 +119,7 @@ export default {
     const path = new URL(req.url).pathname.replace(/\/+$/, '');
     if (req.method === 'GET' && path === '/v1/models') return json({ data: [{ id: env.ANTHROPIC_API_KEY ? CLAUDE_MODEL : MODEL_NAME }] }, 200, cors);
     if (req.method === 'POST' && path === '/feedback') return feedback(req, env, cors);
+    if (req.method === 'POST' && path === '/feedback/replies') return replies(req, env, cors);
     if (req.method !== 'POST' || path !== '/v1/chat/completions') return json({ error: { message: 'Not found' } }, 404, cors);
 
     const raw = await req.text();
@@ -219,15 +227,41 @@ async function feedback(req, env, cors) {
   const choice = Number.isInteger(b.choice) && b.choice >= 0 && b.choice <= 3 ? b.choice : null;
   const page = /^\/[\w\-\/]{0,120}$/.test(b.page) ? b.page : null;
   const lang = b.lang === 'zh' ? 'zh' : 'en';
+  const rid = RID_RE.test(b.rid) ? b.rid : null;
+  const email = typeof b.email === 'string' && b.email.length <= 200 && EMAIL_RE.test(b.email.trim()) ? b.email.trim().toLowerCase() : null;
   if (kind === 'general' ? !text : !qid) return json({ ok: false, message: 'Empty' }, 400, cors);
   if (!env.FEEDBACK) return json({ ok: false, message: 'Feedback is not set up' }, 503, cors);
   const day = new Date().toISOString().slice(0, 10);
   const ip = await hashIp(req.headers.get('CF-Connecting-IP') || '0.0.0.0', env);
   const sent = await env.FEEDBACK.prepare('SELECT COUNT(*) AS n FROM feedback WHERE day = ? AND ip = ?').bind(day, ip).first();
   if (sent && sent.n >= FEEDBACK_PER_DAY) return json({ ok: false, message: '今天的反馈已经够多了，谢谢！明天再来。 / That\u2019s plenty for today — thank you! Try again tomorrow.' }, 429, cors);
-  await env.FEEDBACK.prepare('INSERT INTO feedback (at, day, ip, kind, page, qid, choice, reason, lang, text) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)')
-    .bind(new Date().toISOString(), day, ip, kind, page, qid, choice, reason, lang, text || null).run();
+  const old = new Date(Date.now() - EMAIL_DAYS * 86400e3).toISOString();
+  await env.FEEDBACK.batch([
+    env.FEEDBACK.prepare('INSERT INTO feedback (at, day, ip, kind, page, qid, choice, reason, lang, text, rid, email) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)')
+      .bind(new Date().toISOString(), day, ip, kind, page, qid, choice, reason, lang, text || null, rid, email),
+    env.FEEDBACK.prepare('UPDATE feedback SET email = NULL WHERE email IS NOT NULL AND at < ?').bind(old),
+  ]);
   return json({ ok: true }, 200, cors);
+}
+
+// The replies to notes this browser sent (its rid, and the signed-in reader's
+// other devices' rids). Only the reader's own note, the page and the reply go back.
+async function replies(req, env, cors) {
+  const raw = await req.text();
+  if (raw.length > 2000) return json({ ok: false, message: 'Too long' }, 413, cors);
+  let b;
+  try { b = JSON.parse(raw); } catch (e) { return json({ ok: false, message: 'Bad JSON' }, 400, cors); }
+  const rids = (Array.isArray(b.rids) ? b.rids : []).filter((r) => RID_RE.test(r)).slice(0, 20);
+  if (!rids.length) return json({ ok: true, replies: [], pending: 0 }, 200, cors);
+  if (!env.FEEDBACK) return json({ ok: false, message: 'Feedback is not set up' }, 503, cors);
+  const q = rids.map(() => '?').join(',');
+  const rows = await env.FEEDBACK.prepare(`SELECT id, at, page, qid, text, reply, replied_at FROM feedback WHERE rid IN (${q}) ORDER BY id DESC LIMIT 50`).bind(...rids).all();
+  const list = rows.results || [];
+  return json({
+    ok: true,
+    replies: list.filter((r) => r.reply).map((r) => ({ id: r.id, at: r.at, page: r.page, qid: r.qid, text: (r.text || '').slice(0, 300), reply: r.reply, replied_at: r.replied_at })),
+    pending: list.filter((r) => !r.reply).length,
+  }, 200, cors);
 }
 
 function claudeParams(messages, max_tokens) {
