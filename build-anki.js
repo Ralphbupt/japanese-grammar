@@ -576,7 +576,7 @@ async function main() {
 <meta charset="UTF-8">
 <meta http-equiv="Content-Language" content="zh-CN, en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://jpnotes.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://jpnotes.dev https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com https://*.google-analytics.com https://*.analytics.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
 <title>JLPT Grammar Anki Decks N5–N1 (free .apkg) | 日语语法 Anki 卡组</title>
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">

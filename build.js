@@ -147,6 +147,8 @@ const AUDIO_ORIGIN = /^https?:/.test(AUDIO_BASE) ? " " + new URL(AUDIO_BASE).ori
 // were compromised. The AI host is parsed from site/ai-assistant.js (only the
 // site's own relay since the own-key providers were removed, 2026-11-10);
 // localhost/127.0.0.1 on any port covers the local relay and account worker.
+// cloudflareinsights.com: Cloudflare Web Analytics, which the zone injects into
+// every page (static.cloudflareinsights.com beacon script, allowed in script-src).
 const AI_PROVIDER_HOSTS = [...new Set(
   [...AI_JS_SRC.matchAll(/(?:base|altBase): '(https?:\/\/[^'/]+)/g)]
     .map(m => m[1]).filter(h => !/localhost|127\.0\.0\.1/.test(h))
@@ -156,7 +158,7 @@ const AI_PROVIDER_HOSTS = [...new Set(
 // Inline scripts stay allowed — the pages are built with many of them — but a
 // script or image from any other host is refused, so an injected tag can't
 // load code or leak data (an <img> beacon) elsewhere.
-const CSP_META = `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://giscus.app https://accounts.google.com/gsi/client; style-src 'self' 'unsafe-inline' https://giscus.app https://accounts.google.com/gsi/style; img-src 'self' data: blob:; media-src 'self' blob:${AUDIO_ORIGIN}; font-src 'self' data:; frame-src https://giscus.app https://accounts.google.com/gsi/; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; connect-src 'self' ${ACCOUNT_API} https://accounts.google.com/gsi/ https://*.google-analytics.com https://*.analytics.google.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">`;
+const CSP_META = `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://giscus.app https://accounts.google.com/gsi/client https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://giscus.app https://accounts.google.com/gsi/style; img-src 'self' data: blob:; media-src 'self' blob:${AUDIO_ORIGIN}; font-src 'self' data:; frame-src https://giscus.app https://accounts.google.com/gsi/; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; connect-src 'self' ${ACCOUNT_API} https://cloudflareinsights.com https://accounts.google.com/gsi/ https://*.google-analytics.com https://*.analytics.google.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">`;
 // Copies of the site (someone rebuilding the repo on their own domain): the
 // host is checked against jpnotes.dev itself — not SITE, which a copy changes —
 // and a copy gets a banner pointing to the original, a canonical link back to

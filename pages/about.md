@@ -11,7 +11,7 @@ jpnotes.dev 是一份免费、双语（中文 + 英文）的 JLPT N5 → N1 语�
 - **易错点**：中文母语者特别容易踩的坑
 - **间隔复习**：当天 → 1 → 4 → 7 → 14 → 30 天勾选清单
 
-内容免费、无广告。访问量只用 Google Analytics 做匿名统计。
+内容免费、无广告。访问量用 Google Analytics 和 Cloudflare Web Analytics（不用 cookie）做匿名统计。
 :::
 
 :::en
@@ -23,7 +23,7 @@ jpnotes.dev is a free JLPT N5 → N1 grammar reference and question bank, with e
 - **Common pitfalls**: mistakes Chinese native speakers tend to make
 - **Spaced repetition**: review checklist for day 0 → 1 → 4 → 7 → 14 → 30
 
-Free and ad-free. Visits are counted anonymously with Google Analytics.
+Free and ad-free. Visits are counted anonymously with Google Analytics and Cloudflare Web Analytics (no cookies).
 :::
 
 ## 为什么做这个||Why I built it
@@ -167,7 +167,7 @@ The 📎 selector above the input sets what is sent with your question: by defau
 
 - **回答经过本站中转。** 由一个 Cloudflare Worker（ai.jpnotes.dev）把你的问题和这一课的正文交给 Anthropic 的 Claude，再把回答传回来。如果你所在地区 Claude 不支持，或当天额度用完、出错，会改由 Cloudflare Workers AI 上的模型回答，再不行就由 Groq 或 Cerebras 上的模型回答：都只转发问题和这一课的正文，不附带你的 IP，由这些服务商按各自的隐私政策处理。本站不记录问题、回答，也不开启请求日志；为了每天限次，它只保存 IP 的加盐哈希，按天计数，两天后自动删除；另外只统计每次请求来自哪个按钮（讲解、快捷提问等）和消耗了多少额度，不含内容和 IP。[中转源码](https://github.com/Ralphbupt/japanese-grammar/blob/main/worker/src/index.js)同样公开。
 - **对话只在你的浏览器里。** 每一课的对话记录、练习题的讲解记录都存在这台设备的浏览器里（localStorage），不上传，也不随账号同步；点「清空对话」即删除。
-- **浏览器层面的白名单。** 每个页面都带有 Content-Security-Policy 的 `connect-src` 规则，只允许连接本站自己的服务（AI 中转、账号同步）、Google Analytics 和 Google 登录，以及开发用的 localhost。即使页面上某段脚本被篡改，浏览器也会拒绝把数据发往白名单之外的任何地址。
+- **浏览器层面的白名单。** 每个页面都带有 Content-Security-Policy 的 `connect-src` 规则，只允许连接本站自己的服务（AI 中转、账号同步）、Google Analytics、Cloudflare Web Analytics 和 Google 登录，以及开发用的 localhost。即使页面上某段脚本被篡改，浏览器也会拒绝把数据发往白名单之外的任何地址。
 - **自行验证。** 按 F12 打开开发者工具的 Network 面板，再提一个问题：你只会看到发往 ai.jpnotes.dev 的请求。侧栏的[全部源码](https://github.com/Ralphbupt/japanese-grammar/blob/main/site/ai-assistant.js)只有一个文件，欢迎审阅。
 
 「问 AI」免费，额度由本站承担。早期版本可以填自己的 API key 直连其他服务商；因为没有人使用，这个功能已于 2026 年 11 月移除，之前保存在浏览器里的密钥会在下次打开侧栏时自动清除。
@@ -178,7 +178,7 @@ The 📎 selector above the input sets what is sent with your question: by defau
 
 - **Answers go through this site's relay.** A Cloudflare Worker (ai.jpnotes.dev) that passes your question and the lesson text to Anthropic's Claude and streams the answer back. If Claude isn't supported in your region, or the day's allowance is used up, or it fails, a model on Cloudflare Workers AI answers instead, then one on Groq or Cerebras: in every case only the question and the lesson text are sent, not your IP, and those providers handle the request under their own privacy policies. The relay does not log questions or answers and has request logging turned off; to enforce the daily limit it keeps only a salted hash of your IP, counted per day and deleted after two days. Beyond that it only counts which button each request came from (Explain, quick prompts, …) and how much quota it used — no text, no IP. The [relay source](https://github.com/Ralphbupt/japanese-grammar/blob/main/worker/src/index.js) is public too.
 - **Conversations stay in your browser.** Each lesson's chat and the log of practice explanations are kept in this device's browser (localStorage); they are not uploaded and an account does not sync them. "Clear chat" deletes them.
-- **A browser-enforced allowlist.** Every page ships a Content-Security-Policy `connect-src` rule that only permits connections to this site's own services (the AI relay, account sync), Google Analytics and Google sign-in, plus localhost for development. Even if a script on the page were tampered with, the browser would refuse to send data anywhere else.
+- **A browser-enforced allowlist.** Every page ships a Content-Security-Policy `connect-src` rule that only permits connections to this site's own services (the AI relay, account sync), Google Analytics, Cloudflare Web Analytics and Google sign-in, plus localhost for development. Even if a script on the page were tampered with, the browser would refuse to send data anywhere else.
 - **Verify it yourself.** Open DevTools (F12) → Network and ask a question: the only requests you will see go to ai.jpnotes.dev. The panel's [entire source](https://github.com/Ralphbupt/japanese-grammar/blob/main/site/ai-assistant.js) is one file; reviews welcome.
 
 "Ask AI" is free; this site covers the cost. Earlier versions let you add your own API key and talk to other providers directly; nobody used it, so it was removed in November 2026, and a key saved in your browser is deleted the next time you open the panel.
