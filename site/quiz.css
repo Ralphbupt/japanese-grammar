@@ -17,6 +17,10 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-btn:disabled { opacity: .45; cursor: default; }
 .q-btn-primary { background: var(--ui); border-color: var(--ui); color: var(--ui-on); font-weight: 600; }
 .q-btn-primary:hover:not(:disabled) { filter: brightness(1.08); }
+.q-filter { display: flex; flex-wrap: wrap; gap: .4em; margin: 0 0 .3em; }
+.q-filter-btn { padding: .35em .8em; border-radius: 999px; font-size: .92rem; }
+.q-filter-btn[aria-pressed="true"] { border-color: var(--ui); background: var(--ui-soft); font-weight: 600; }
+.q-btn-n { font-weight: 400; opacity: .85; font-size: .9em; }
 .q-btn-big { width: 100%; justify-content: center; min-height: 52px; font-size: 1.05rem; }
 .q-prev { margin-left: .9rem; }
 .q-link { background: none; border: 0; color: var(--link); font: inherit; cursor: pointer; padding: 0; }
