@@ -395,7 +395,7 @@
       '<div class="ai-resize" title="' + esc(t('拖动调整宽度，双击恢复默认', 'Drag to resize, double-click to reset')) + '"></div>' +
       '<div class="ai-head">' +
         '<span class="ai-title"><button type="button" class="ai-back">' + (QUIZ ? '<span class="lang-zh">‹ 题目</span><span class="lang-en">‹ Question</span>' : '<span class="lang-zh">‹ 课文</span><span class="lang-en">‹ Lesson</span>') + '</button>' +
-          '<span class="ai-name">🤖 <span class="lang-zh">问 AI</span><span class="lang-en">Ask AI</span></span> ' +
+          '<span class="ai-name"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg> <span class="lang-zh">问 AI</span><span class="lang-en">Ask AI</span></span> ' +
           '<button type="button" class="ai-model" title="' + esc(t('思考深度', 'Thinking depth')) + '"></button></span>' +
         '<div class="ai-model-menu" hidden></div>' +
         '<span class="ai-head-btns">' +
@@ -527,7 +527,7 @@
       return;
     }
     if (!history.length && QUIZ) {
-      msgsEl.innerHTML = '<div class="ai-note">' + esc(t('答完一道题后，点解析里的「🤖 AI 讲解」，AI 会针对你选的选项讲为什么错、怎么区分，还可以接着追问。', 'After answering a question, press "🤖 Explain with AI" under the explanation: the AI explains why your choice was wrong and how to tell them apart, and you can ask follow-ups.')) + '</div>';
+      msgsEl.innerHTML = '<div class="ai-note">' + esc(t('答完一道题后，点解析里的「AI 讲解」，AI 会针对你选的选项讲为什么错、怎么区分，还可以接着追问。', 'After answering a question, press "Explain with AI" under the explanation: the AI explains why your choice was wrong and how to tell them apart, and you can ask follow-ups.')) + '</div>';
       return;
     }
     if (!history.length) {
