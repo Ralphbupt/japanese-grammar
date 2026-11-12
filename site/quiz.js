@@ -21,6 +21,7 @@
   // Line icons (the site's one set; .ico is styled globally) for text built here.
   function ico(d) { return '<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + d + '</svg>'; }
   var ICO_BOOK = ico('<path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/>');
+  var ICO_BOT = ico('<path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/>');
   var ICO_EAR = ico('<path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/>');
   // mp3s come from the audio host the build names (R2), or /audio on a local build.
   var AUDIO_BASE = app.getAttribute('data-audio') || '/audio';
@@ -653,9 +654,8 @@
   function aiBtn(primary, act) {
     if (!window.jpAI) return '';
     act = act || 'ai';
-    return '<p class="q-ai"><button class="q-btn' + (primary ? ' q-btn-primary' : '') + '" data-act="' + act + '">🤖 ' + t('AI 讲解', 'Explain with AI') + '</button>' +
+    return '<p class="q-ai"><button class="q-btn' + (primary ? ' q-btn-primary' : '') + '" data-act="' + act + '">' + ICO_BOT + ' ' + t('AI 讲解', 'Explain with AI') + '</button>' +
       '<button class="q-btn q-ai-more" data-act="' + act + '" data-mode="parse">' + t('拆解句子', 'Break down the sentence') + '</button>' +
-      '<button class="q-btn q-ai-more" data-act="' + act + '" data-mode="sum">' + t('语法点总结', 'Grammar summary') + '</button>' +
       (primary ? ' <span class="q-muted">' + t('针对你选的选项讲，可以追问', 'about the option you picked; ask follow-ups') + '</span>' : '') + '</p>';
   }
   function plainJa(html) {
@@ -723,10 +723,7 @@
     if (mode === 'parse') {
       prompt = t('帮我拆解这个句子。', 'Break down the sentence for me.');
       how = (q.ck ? t('拆解对话里决定答案的那一两句。', 'Break down the one or two lines of the dialogue the answer turns on. ') : q.passage ? t('拆解文章里和这道题有关的那一两句。', 'Break down the one or two sentences of the text this question turns on. ') : t('拆解这道题的完整句子。', 'Break down this question’s full sentence. ')) +
-        t('每个意群一行：日语（汉字注读音）— 意思，动词写原形和变形名称；关键语法加粗并说明它在句中的作用。最后一行给自然的翻译。', 'One line per chunk: Japanese (reading) — meaning; verbs with dictionary form and the form’s name; key grammar in bold with what it does here. Last line: a natural translation.') + rule;
-    } else if (mode === 'sum') {
-      prompt = t('帮我总结这题涉及的语法和词。', 'Summarise the grammar and words in this question.');
-      how = t('总结正确答案和最主要的一两个干扰项：每个写接续或用法、意思、一个' + LEVEL + '水平的新例句（附翻译）；最后说它们怎么区分。可以用短列表。', 'Summarise the answer and the main one or two distractors: for each, how it attaches or is used, its meaning, one new ' + LEVEL + '-level example (with translation); then how to tell them apart. Short lists are fine.') + rule;
+        t('每个意群一行：日语（汉字注读音）— 意思，动词写原形和变形名称；变形要写带汉字的形式再注读音，如 引いた（ひいた），有音便或不规则变化时用半句话说明规则（如 く → いた）；并用半句话说明这里为什么用这个形（意思上的原因，或后面的词要求的接续，如「ので」前接普通形，事情已经发生所以用た形）；关键语法加粗并说明它在句中的作用。标点符号不单独成行，日语原文不加引号。最后一行给自然的翻译。', 'One line per chunk: Japanese (reading) — meaning; verbs with dictionary form and the form’s name; write the inflected form with its kanji and then the reading, e.g. 引いた（ひいた）, and where there is a sound change or an irregular form say the rule in a few words (e.g. く → いた); and say in a few words why this form is used here (the meaning, or what the following word requires — e.g. ので takes the plain form, and the event has already happened, hence the た-form); key grammar in bold with what it does here. No line for punctuation alone, no quotation marks around the Japanese. Last line: a natural translation.') + rule;
     }
     L.push(t('【讲解要求】', '[How to explain]') + ' ' + how);
     track('quiz_ai', { id: q.id, ok: ok, guess: !!guess, mode: mode || 'why' });

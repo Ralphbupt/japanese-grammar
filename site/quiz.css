@@ -21,6 +21,7 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-filter-btn { padding: .35em .8em; border-radius: 999px; font-size: .92rem; }
 .q-filter-btn[aria-pressed="true"] { border-color: var(--ui); background: var(--ui-soft); font-weight: 600; }
 .q-btn-n { font-weight: 400; opacity: .85; font-size: .9em; }
+.q-btn .ico { color: inherit; margin-right: 0; }
 .q-btn-big { width: 100%; justify-content: center; min-height: 52px; font-size: 1.05rem; }
 .q-prev { margin-left: .9rem; }
 .q-link { background: none; border: 0; color: var(--link); font: inherit; cursor: pointer; padding: 0; }
