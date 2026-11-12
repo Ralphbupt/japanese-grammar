@@ -461,7 +461,7 @@
 
   // Google's button (their script, loaded only when a signed-out reader opens
   // the dialog; it renders an iframe).
-  var gsi = null;
+  var gsi = null, gsiFailed = false;
   function google() {
     var el = box.querySelector('.acct-g');
     var dev = LOCAL && q.get('devlogin');
@@ -471,14 +471,26 @@
       return;
     }
     if (!CLIENT_ID) return;
+    // Where Google can't be reached (mainland China) the script neither loads nor
+    // fails for a long time: after a few seconds say so and point at the email
+    // code below. A failure is remembered for the page — every render() comes
+    // through here, and retrying each time flashed the notice and counted the
+    // same reader many times.
+    var slow = function () {
+      var target = box && box.querySelector('.acct-g');
+      if (target && !target.firstChild && !acct().token) target.innerHTML = '<p class="acct-muted">' + (EMAIL_ON ? t('Google 登录加载不出来（访问不了 Google 时用不了），请用下面的邮箱验证码登录。', 'Google sign-in isn’t loading (it needs access to Google). Use the email code below instead.') : t('Google 登录没能加载（网络访问不了 Google 时无法使用）。', 'Google sign-in didn’t load (it needs access to Google).')) + '</p>';
+    };
+    if (gsiFailed) { slow(); return; }
     if (!gsi) gsi = new Promise(function (ok, fail) {
       var s = document.createElement('script');
-      s.src = 'https://accounts.google.com/gsi/client'; s.async = true; s.onload = ok; s.onerror = function () { gsi = null; fail(new Error('gsi')); };
+      s.src = 'https://accounts.google.com/gsi/client'; s.async = true; s.onload = ok; s.onerror = function () { fail(new Error('gsi')); };
       document.head.appendChild(s);
     });
+    if (!root.google || !root.google.accounts) setTimeout(function () { if (!root.google || !root.google.accounts) slow(); }, 4000);
     gsi.then(function () {
       var target = box && box.querySelector('.acct-g');
       if (!target || acct().token) return;
+      target.innerHTML = '';     // the "isn't loading" notice, if the script arrived late
       root.google.accounts.id.initialize({
         client_id: CLIENT_ID,
         callback: function (res) { api('POST', '/auth/google', { credential: res.credential }).then(signedIn).catch(function (e) { track('account_login_error', { status: e.status || 0 }); setStatus('error', e.message); }); }
@@ -487,9 +499,9 @@
       root.google.accounts.id.renderButton(target, { theme: dark ? 'filled_black' : 'outline', size: 'large', text: 'continue_with', shape: 'rectangular', logo_alignment: 'center',
         width: Math.max(200, Math.min(400, Math.floor(target.getBoundingClientRect().width) || 320)), locale: EN() ? 'en' : 'zh_CN' });
     }).catch(function () {
-      track('account_gsi_fail', {});     // Google unreachable (mainland China, blockers)
-      var target = box && box.querySelector('.acct-g');
-      if (target) target.innerHTML = '<p class="acct-muted">' + t('Google 登录没能加载（网络访问不了 Google 时无法使用）。', 'Google sign-in didn’t load (it needs access to Google).') + '</p>';
+      if (!gsiFailed) track('account_gsi_fail', {});     // Google unreachable (mainland China, blockers); once per page
+      gsiFailed = true;
+      slow();
     });
   }
 
