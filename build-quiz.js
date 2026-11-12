@@ -271,6 +271,13 @@ function pointSummary(md, from) {
 }
 
 // Grammar points per lesson from the markdown: { lesson05: { title, 1: {zh, en, slug, conj?, ex?}, …, vocab } }
+// The id build.js gives the lesson's <h2>: it is made from the rendered HTML, where
+// marked has already escaped & < > " ', so 「"为了……"」 ends up as quot;为了……quot;.
+// Has to match exactly, or 回课文看这个语法 lands at the top of the lesson.
+function pointSlug(text) {
+  const esc = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  return esc.replace(/[\s\u3000]+/g, "_").replace(/[<>"'&]/g, "");
+}
 function lessonPoints(level) {
   const dir = path.join(ROOT, "grammar", level);
   const out = {};
@@ -285,7 +292,7 @@ function lessonPoints(level) {
     points.title = { zh: t1zh.replace(/^Lesson\s*\d+\s*[–-]\s*/, ""), en: (t1en || t1zh).replace(/^Lesson\s*\d+\s*[–-]\s*/, "") };
     for (const h of md.matchAll(/^## (\d+)\.\s*(.+)$/gm)) {
       const [zh, en] = h[2].split("||").map((s) => s.trim());
-      points[h[1]] = { zh, en: en ? en.replace(/^\d+\.\s*/, "") : zh, slug: `${h[1]}._${zh}`.replace(/[\s　]+/g, "_").replace(/[<>"'&]/g, ""), ...pointSummary(md, h.index + h[0].length) };
+      points[h[1]] = { zh, en: en ? en.replace(/^\d+\.\s*/, "") : zh, slug: pointSlug(`${h[1]}. ${zh}`), ...pointSummary(md, h.index + h[0].length) };
     }
     if (/^## 本课单词表/m.test(md)) points.vocab = { zh: "本课单词表", en: "Vocabulary", slug: "本课单词表" };
     out[m[1]] = points;
