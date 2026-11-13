@@ -698,5 +698,85 @@
       null
     ],
     "rev": 2
+  },
+  {
+    "id": "n3-l54-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson54#3"
+    ],
+    "difficulty": 2,
+    "stem": "駅に着いたら急に強い雨が降ってきた。朝、母に言われたとおりに、かさを（　）。",
+    "options": [
+      "持ってくればよかった",
+      "持ってきてはいけない",
+      "持ってくることがある",
+      "持ってきたばかりだった"
+    ],
+    "answer": 0,
+    "full": "駅に着いたら急に強い雨が降ってきた。朝、母に言われたとおりに、かさを持ってくればよかった。",
+    "tr": {
+      "zh": "到了车站突然下起大雨来。早上要是照妈妈说的带伞来就好了。",
+      "en": "It suddenly started raining hard when I got to the station. I should have brought an umbrella, as my mother told me to this morning."
+    },
+    "why": {
+      "zh": "线索：现在下雨了，而早上妈妈说过要带伞：自己没带，现在后悔。\n规则：「动词ば形＋よかった」＝要是……就好了，表示对实际上没做的事感到后悔。\n辨析：「持ってくればよかった」＝实际上没带，后悔；「持ってきたばかりだった」＝刚刚带来，说明伞就在手里，那就不用后悔，也和第一句的困境不合。",
+      "en": "Clue: It is raining now, and the speaker's mother said to take an umbrella this morning: the speaker didn't, and regrets it.\nRule: Verb ば-form + 「よかった」 = \"I should have …\": regret about something one didn't actually do.\nContrast: 「持ってくればよかった」 = didn't bring it, and regrets that; 「持ってきたばかりだった」 = had only just brought it, so the umbrella is at hand and there is nothing to regret, which doesn't fit the trouble in the first sentence."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「てはいけない」是禁止，“照妈妈说的不许带伞”和下雨的情况不合。",
+        "en": "「てはいけない」 is a prohibition; \"mustn't bring an umbrella, as my mother said\" doesn't fit the rain."
+      },
+      {
+        "zh": "「ことがある」是“有时会……”，说的是平时的情况，不是今天早上这一次的事。",
+        "en": "「ことがある」 means \"sometimes …\", a general habit, not what happened this one morning."
+      },
+      {
+        "zh": "「たばかりだった」是“刚刚……”，表示伞已经带来了，和突然下雨而后悔的情况不合。",
+        "en": "「たばかりだった」 means \"had only just …\", so the umbrella would be there, which doesn't fit being caught in the rain."
+      }
+    ]
+  },
+  {
+    "id": "n3-l54-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson54#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「来月京都へ行くんですが、いい所を知りませんか。」\nB「京都なら山田さんが詳しいから、（　）。」",
+    "options": [
+      "聞いてみたものですよ",
+      "聞いてみたばかりですよ",
+      "聞いてみたらいいですよ",
+      "聞いてみればよかったです"
+    ],
+    "answer": 2,
+    "full": "A「来月京都へ行くんですが、いい所を知りませんか。」\nB「京都なら山田さんが詳しいから、聞いてみたらいいですよ。」",
+    "tr": {
+      "zh": "A：“我下个月去京都，你知道什么好地方吗？” B：“京都的话山田很熟悉，问问他就好了。”",
+      "en": "A: \"I'm going to Kyoto next month. Do you know any good places?\" B: \"Yamada knows Kyoto well, so you should ask him.\""
+    },
+    "why": {
+      "zh": "线索：A在征求意见，B说了理由「山田さんが詳しいから」，接下来是给A的建议。\n规则：「动词た形＋らいい」＝……就好了、建议你……，用来向对方提出轻松的建议。\n辨析：「聞いてみたらいい」＝建议今后去问；「聞いてみればよかった」＝要是问了就好了，是对过去没做的事后悔，而A的旅行是「来月」，现在问还来得及。",
+      "en": "Clue: A is asking for advice; B gives a reason, 「山田さんが詳しいから」, and then a suggestion for A.\nRule: Verb た-form + 「らいい」 = \"you should … / why not …\": a light suggestion to the listener.\nContrast: 「聞いてみたらいい」 = a suggestion for what to do next; 「聞いてみればよかった」 = \"should have asked\", regret about the past, but A's trip is 「来月」 and there is still time to ask."
+    },
+    "wrong": [
+      {
+        "zh": "「たものだ」是回忆过去常做的事（“以前常常……”），不是给对方的建议。",
+        "en": "「たものだ」 recalls what one often did in the past (\"used to\"); it isn't advice."
+      },
+      {
+        "zh": "「たばかりだ」是“刚刚……”，说的是已经做过的事，和「詳しいから」后面要接的建议不合。",
+        "en": "「たばかりだ」 means \"have only just …\", something already done; after 「詳しいから」 a suggestion is needed."
+      },
+      null,
+      {
+        "zh": "「ばよかった」是对过去的后悔，旅行是下个月，现在问还来得及。",
+        "en": "「ばよかった」 is regret about the past; the trip is next month, so there is still time to ask."
+      }
+    ]
   }
 ]

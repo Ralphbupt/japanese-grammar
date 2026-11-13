@@ -496,5 +496,464 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n3-dk-107",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、留学生が書いた作文です。",
+    "passage": "日本に来て一番困ったのは、言葉でも食べ物でもなく、ごみの出し方でした。私の国では、ごみは全部同じ袋に入れて、好きな時間に出すことができます。[[1]]、日本では燃えるごみ、燃えないごみ、びん、缶などに細かく分けて、決まった曜日の朝に出さなければなりません。\n来たばかりのころ、私はそのルールをよく知らなくて、燃えるごみの日にびんを出してしまいました。すると、その袋には「回収できません」と書かれた紙がはられて、夕方になっても[[2]]。恥ずかしくて、だれにも見られないように急いで部屋に持って帰りました。\n次の日、隣に住んでいる山田さんが、ごみの分け方[[3]]書かれた市のパンフレットを持ってきてくれました。そして、笑いながら[[4]]言いました。「私も引っ越してきたころは、よく間違えましたよ。分からないことがあったら、いつでも聞いてくださいね。」その言葉を聞いて、気持ちが少し楽になりました。\nあれから一年がたち、今では、ごみを分けることにすっかり慣れました。分けて出したごみが新しい製品に生まれ変わると知ってからは、面倒だと[[5]]。国に帰ったら、家族や友達にもこの習慣を伝えたいと思っています。",
+    "tr": {
+      "zh": "来日本以后最让我头疼的，不是语言，也不是食物，而是扔垃圾的方法。在我的国家，垃圾全都装进同一个袋子，想什么时候扔就什么时候扔。可是在日本，必须细分成可燃垃圾、不可燃垃圾、瓶子、罐子等等，在规定的星期几的早上拿出去。\n刚来的时候，我不太清楚这个规定，在可燃垃圾的日子把瓶子拿出去了。结果那个袋子上被贴了一张写着“无法回收”的纸，到了傍晚也还原样放在那里。我很不好意思，为了不被人看见，赶紧把它拿回了房间。\n第二天，住在隔壁的山田女士给我拿来了市里印的、写着垃圾分类方法的小册子。然后她笑着这样说：“我刚搬来的时候也常常弄错呢。有不明白的地方，随时来问我吧。”听了这句话，我心里轻松了一些。\n从那以后过了一年，现在我已经完全习惯给垃圾分类了。自从知道分类扔出去的垃圾会变成新的产品以后，我就不再觉得麻烦了。回国以后，我想把这个习惯也告诉家人和朋友。",
+      "en": "What troubled me most after coming to Japan was not the language or the food but how to put out the rubbish. In my country, all rubbish goes into the same bag and you can put it out whenever you like. In Japan, however, you have to sort it finely into burnable rubbish, non-burnable rubbish, bottles, cans and so on, and put it out on the morning of a fixed day of the week.\nWhen I had just arrived, I didn't know that rule well and put bottles out on a burnable-rubbish day. A slip of paper saying 'Cannot be collected' was then stuck on the bag, and even in the evening it was still sitting there as it was. I was embarrassed and hurried to carry it back to my room so that nobody would see.\nThe next day Ms Yamada, who lives next door, brought me a city leaflet about how to sort rubbish. Then, smiling, she said this: 'When I first moved here, I often got it wrong too. If there's anything you don't understand, ask me any time.' Hearing those words, I felt a little better.\nA year has passed since then, and now I am completely used to sorting rubbish. Ever since I learned that sorted rubbish is reborn as new products, I have stopped thinking of it as a bother. When I go back to my country, I want to pass this habit on to my family and friends."
+    },
+    "questions": [
+      {
+        "options": [
+          "しかし",
+          "それで",
+          "つまり",
+          "そのうえ"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：空格前是「私の国では…好きな時間に出すことができます」，空格后是「日本では…決まった曜日の朝に出さなければなりません」，「私の国では」和「日本では」互相对比，内容相反。\n规则：「しかし」＝但是，连接内容相反或形成对比的两句话。\n辨析：「それで」＝因此，前面是原因、后面是结果；自己国家可以随便扔，并不是日本要分类的原因。「そのうえ」＝而且，是同方向的添加，这里两边方向相反。",
+          "en": "Clue: Before the blank is 「私の国では…好きな時間に出すことができます」, after it 「日本では…決まった曜日の朝に出さなければなりません」; 「私の国では」 and 「日本では」 are set against each other and say opposite things.\nRule: 「しかし」 = \"however\", joining two sentences that are opposed or contrasted.\nContrast: 「それで」 = \"so\", cause then result, but the freedom at home is not the reason Japan sorts its rubbish. 「そのうえ」 = \"on top of that\" adds in the same direction, and here the two sides go opposite ways."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「それで」表示前因后果，可自己国家的做法不是日本要分类的原因。",
+            "en": "「それで」 (so) gives a result, but the custom at home doesn't cause Japan's rule."
+          },
+          {
+            "zh": "「つまり」是换一种说法重复前面的内容，可后面说的是和前面相反的日本的做法。",
+            "en": "「つまり」 (in other words) restates what came before, but what follows is the opposite, Japanese way."
+          },
+          {
+            "zh": "「そのうえ」是同方向的添加，这里前后是对比。",
+            "en": "「そのうえ」 (what's more) adds a similar point; here the two sentences contrast."
+          }
+        ]
+      },
+      {
+        "options": [
+          "そのまま置かれていました",
+          "きれいに片付いていました",
+          "だれかが持っていきました",
+          "回収の車が来てくれました"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：袋子上贴了「回収できません」的纸；下一句是「急いで部屋に持って帰りました」，说明袋子还在垃圾站。\n规则：「〜ても」＝即使……也，后面是和一般预想相反的状态：到了傍晚，垃圾通常早已被收走，这里却还在。\n容易错：只看「夕方になっても」就选一个通顺的句子。要和前面的「回収できません」、后面的「持って帰りました」都对得上才行。",
+          "en": "Clue: A slip saying 「回収できません」 was stuck on the bag, and the next sentence is 「急いで部屋に持って帰りました」, so the bag was still at the collection point.\nRule: 「〜ても」 = \"even when …\": what follows goes against the usual expectation. By evening rubbish is normally gone, but this bag was not.\nTrap: Choosing a sentence that merely reads smoothly after 「夕方になっても」. It has to agree with 「回収できません」 before it and 「持って帰りました」 after it."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "如果已经收拾干净了，就不需要自己「部屋に持って帰りました」，也和「回収できません」矛盾。",
+            "en": "If it had been cleared away, there'd be nothing to carry back to the room, and it contradicts 「回収できません」."
+          },
+          {
+            "zh": "如果有人拿走了，后面就不能自己拿回房间；「夕方になっても」后面也不接一次性的动作。",
+            "en": "If someone had taken it, the writer couldn't carry it home; 「夕方になっても」 isn't followed by a one-off action either."
+          },
+          {
+            "zh": "纸上写的是「回収できません」，回收车不会来收这袋垃圾，后文也说是自己拿回去的。",
+            "en": "The slip says 「回収できません」, so no truck collected it, and the writer took it back personally."
+          }
+        ]
+      },
+      {
+        "options": [
+          "について",
+          "によって",
+          "に対して",
+          "にとって"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：空格前是「ごみの分け方」，空格后是「書かれた市のパンフレット」，小册子的内容就是垃圾的分类方法。\n规则：「名词＋について」＝关于……，表示说、写、调查、考虑的内容：「日本の文化について書く」。\n辨析：「に対して」＝对……（动作、态度的对象，「客に対して丁寧に話す」），不表示文章的内容；「にとって」＝对……来说，后面接评价（「私にとって大切だ」）。",
+          "en": "Clue: Before the blank is 「ごみの分け方」, after it 「書かれた市のパンフレット」: how to sort rubbish is what the leaflet is about.\nRule: Noun + 「について」 = \"about\": the content of speaking, writing, researching or thinking: 「日本の文化について書く」.\nContrast: 「に対して」 = \"towards\" (the target of an action or attitude, 「客に対して丁寧に話す」), not the topic of a text; 「にとって」 = \"for, from the standpoint of\", followed by a judgement (「私にとって大切だ」)."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「によって書かれた」是“由……写的”，「によって」前面应该是写的人，不是内容。",
+            "en": "「によって書かれた」 means \"written by\", so a writer, not the content, would have to come before it."
+          },
+          {
+            "zh": "「に対して」表示动作或态度的对象，不表示写的内容。",
+            "en": "「に対して」 marks the target of an action or attitude, not what a text is about."
+          },
+          {
+            "zh": "「にとって」是“对……来说”，后面要接评价，不能接「書かれた」。",
+            "en": "「にとって」 (for …) needs a judgement after it, not 「書かれた」."
+          }
+        ]
+      },
+      {
+        "options": [
+          "こう",
+          "そう",
+          "ああ",
+          "どう"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：空格后是「言いました」，紧接着才是山田女士说的话「私も引っ越してきたころは…」；在这之前她还什么都没说。\n规则：指后面马上要说出的内容用「こ」系列：「こう言いました。「…」」。\n辨析：「そう」指前面已经说过的话（「…」。そう言って帰りました），这里引用的话在后面，所以不能用；「ああ」指说话人和读者都知道的事，读者并不知道她说了什么。",
+          "en": "Clue: After the blank is 「言いました」, and only then come Ms Yamada's words 「私も引っ越してきたころは…」; she has said nothing before this.\nRule: The こ-series points forward to what is about to be quoted: 「こう言いました。「…」」.\nContrast: 「そう」 points back to words already given (「…」。そう言って帰りました), but here the quotation comes afterwards; 「ああ」 is for something writer and reader both know, and the reader doesn't know what she said."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「そう」指前面已经出现的话，可山田女士的话在后面才出现。",
+            "en": "「そう」 refers back to words already quoted, but Ms Yamada's words come only afterwards."
+          },
+          {
+            "zh": "「ああ」指双方都知道的内容，读者还不知道她说了什么。",
+            "en": "「ああ」 refers to something both sides already know; the reader doesn't know her words yet."
+          },
+          {
+            "zh": "「どう」是疑问词，这不是问句。",
+            "en": "「どう」 is a question word, and this is not a question."
+          }
+        ]
+      },
+      {
+        "options": [
+          "思わなくなりました",
+          "思うことにしました",
+          "思うようになりました",
+          "思わないはずでした"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：前面是「すっかり慣れました」，以及「新しい製品に生まれ変わると知ってからは」；后面还说想把这个习惯告诉家人，可见他现在的看法是正面的。\n规则：「〜なくなる」＝变得不……了，表示以前那样、现在不那样的变化：「思わない」→「思わなくなりました」。\n辨析：「思うようになりました」也是变化，但方向相反，是“变得觉得麻烦了”；知道了分类的意义以后，应该是不再觉得麻烦。",
+          "en": "Clue: Before it are 「すっかり慣れました」 and 「新しい製品に生まれ変わると知ってからは」, and afterwards the writer wants to pass the habit on to family: the present view is positive.\nRule: 「〜なくなる」 = \"no longer …\", a change from doing to not doing: 「思わない」 → 「思わなくなりました」.\nContrast: 「思うようになりました」 is also a change but the other way, \"came to find it a bother\"; after learning what sorting is for, the bother should disappear."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「思うことにしました」是“决定认为它麻烦”，和习惯了、想告诉家人的内容矛盾。",
+            "en": "「思うことにしました」 (decided to think it a bother) contradicts being used to it and wanting to share it."
+          },
+          {
+            "zh": "「思うようになりました」是“变得觉得麻烦了”，方向相反。",
+            "en": "「思うようになりました」 (came to think it a bother) is a change in the wrong direction."
+          },
+          {
+            "zh": "「思わないはずでした」是“本来应该不觉得”，暗示实际上觉得麻烦，和后文矛盾。",
+            "en": "「思わないはずでした」 (I wasn't supposed to think so) implies it actually is a bother, against what follows."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-108",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、ミンさんがホームステイをした家の田中さんに書いた手紙です。",
+    "passage": "田中さん、お元気ですか。国に帰ってから、もう半年がたちました。私は先月から、日本の会社と取引のある貿易会社で働いています。\n仕事では毎日日本語を使っています。電話で話すのはまだ苦手ですが、メールは辞書を使わないで書ける[[1]]。田中さんの家で、毎晩その日の出来事を日本語で話したことが、今とても役に立っています。\n先週、初めて通訳[[2]]、日本から来たお客様を工場に案内しました。緊張して、最初は声が小さくなってしまいました。[[3]]、お客様が「ゆっくりでいいですよ」と言ってくださったので、最後まで落ち着いて話すことができました。\nところで、こちらでも時々、お母さんに教えていただいたカレーを作っています。でも、何回作っても[[4]]。野菜の切り方が違うのでしょうか。それとも、何か特別なものを入れていらっしゃったのでしょうか。今度ぜひ教えてください。\n来年の春、出張で東京に行くことになりそうです。まだはっきり決まっていませんが、[[5]]ときは、必ずお宅に伺いたいと思っています。みなさんにお会いできる日を楽しみにしています。これから寒くなりますから、どうぞお体に気をつけてください。",
+    "tr": {
+      "zh": "田中先生，您好吗？我回国已经半年了。从上个月起，我在一家和日本公司有业务往来的贸易公司工作。\n工作中每天都用日语。打电话我还不太行，不过邮件已经能不查词典就写出来了。在田中先生家里，每天晚上用日语讲当天发生的事，这对我现在的工作帮助很大。\n上个星期，我第一次作为翻译，带从日本来的客人参观了工厂。我很紧张，一开始声音都变小了。不过，客人对我说“慢慢说就可以”，所以我一直到最后都能镇定地说话。\n对了，我在这边也常常做妈妈教我的咖喱。可是不管做多少次，都做不出那个味道。是蔬菜的切法不一样吗？还是您放了什么特别的东西呢？下次请一定告诉我。\n明年春天，我可能要去东京出差。虽然还没有完全定下来，到那时我一定去府上拜访。我期待着和大家见面的那一天。接下来天气要变冷了，请多保重身体。",
+      "en": "Dear Mr Tanaka, how are you? It is already half a year since I returned to my country. Since last month I have been working at a trading company that does business with Japanese firms.\nI use Japanese every day at work. I'm still not good at talking on the phone, but I have become able to write emails without a dictionary. Talking in Japanese every evening at your house about what had happened that day is a great help to me now.\nLast week, for the first time, I showed visitors from Japan around the factory as an interpreter. I was nervous, and at first my voice came out small. However, one of the visitors kindly said, 'You can take your time,' so I was able to speak calmly to the end.\nBy the way, I sometimes make the curry your wife taught me here too. But however many times I make it, it never comes out with that taste. Is the way I cut the vegetables different? Or did she put in something special? Please do tell me next time.\nNext spring it looks as though I will go to Tokyo on business. It isn't settled yet, but when that time comes I would very much like to visit your home. I am looking forward to the day I can see you all. It is going to get cold, so please take good care of yourselves."
+    },
+    "questions": [
+      {
+        "options": [
+          "ようになりました",
+          "ことになりました",
+          "ことにしました",
+          "ところでした"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：前半句是「電話で話すのはまだ苦手ですが」，「が」后面要说的是已经会了的事；空格前是可能形「書ける」。\n规则：「可能形＋ようになる」＝（以前不会）现在会了，表示能力的变化：「書けるようになりました」。\n辨析：「ことになりました」＝（由别人或情况）决定了……，「ことにしました」＝自己决定……，两个都说“决定”，前面接的是要做的事（「行くことになりました」），不能接表示能力的「書ける」。",
+          "en": "Clue: The first half is 「電話で話すのはまだ苦手ですが」, so after 「が」 comes something the writer can now do; before the blank is the potential form 「書ける」.\nRule: Potential form + 「ようになる」 = \"have become able to\", a change in ability: 「書けるようになりました」.\nContrast: 「ことになりました」 = it has been decided (by others or circumstances), 「ことにしました」 = I decided; both are about decisions and follow an action to be done (「行くことになりました」), not the ability 「書ける」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「ことになりました」表示事情被决定了，“会写”是能力，不是决定出来的。",
+            "en": "「ことになりました」 says something has been decided; being able to write is an ability, not a decision."
+          },
+          {
+            "zh": "「ことにしました」是自己决定做某事，前面不能接表示能力的「書ける」。",
+            "en": "「ことにしました」 is your own decision to do something and can't follow the ability 「書ける」."
+          },
+          {
+            "zh": "「書けるところでした」不成立；「ところでした」是“差点儿就……”，实际上没有发生。",
+            "en": "「書けるところでした」 doesn't work; 「ところでした」 means \"nearly\", something that didn't happen."
+          }
+        ]
+      },
+      {
+        "options": [
+          "として",
+          "について",
+          "に対して",
+          "によって"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：空格前是「通訳」，后面是「お客様を工場に案内しました」，带客人参观的是写信人自己，「通訳」是他这时的身份。\n规则：「名词＋として」＝作为……，表示身份、立场、资格：「留学生として日本に来た」。\n辨析：「について」＝关于……，表示说或写的内容（「通訳について話す」）；这里不是谈翻译这个话题，而是以翻译的身份去做事。",
+          "en": "Clue: Before the blank is 「通訳」, after it 「お客様を工場に案内しました」; the person doing the guiding is the writer, and 「通訳」 is the role he did it in.\nRule: Noun + 「として」 = \"as\", a role, position or capacity: 「留学生として日本に来た」.\nContrast: 「について」 = \"about\", the content of talk or writing (「通訳について話す」); he isn't discussing interpreting, he is acting in that role."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「について」是“关于”，后面要接说、写、调查等，不能接「案内しました」。",
+            "en": "「について」 (about) goes with speaking, writing or researching, not with 「案内しました」."
+          },
+          {
+            "zh": "「に対して」表示动作的对象，带领的对象是「お客様」，不是「通訳」。",
+            "en": "「に対して」 marks the target of an action; the ones being guided are the visitors, not 「通訳」."
+          },
+          {
+            "zh": "「によって」表示手段、原因或被动句里的动作者，「通訳によって案内しました」说不通。",
+            "en": "「によって」 marks a means, a cause or the agent of a passive; 「通訳によって案内しました」 doesn't work."
+          }
+        ]
+      },
+      {
+        "options": [
+          "けれども",
+          "だから",
+          "そのうえ",
+          "たとえば"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：空格前是「緊張して、最初は声が小さくなってしまいました」（不顺利），空格后是「最後まで落ち着いて話すことができました」（顺利），前后相反。\n规则：「けれども」＝但是，连接内容相反的两句话。\n辨析：「だから」＝所以，前面是原因；紧张、声音小不会是能镇定说话的原因。「そのうえ」＝而且，再加一件同方向的事，后面应该还是不好的事。",
+          "en": "Clue: Before the blank is 「緊張して、最初は声が小さくなってしまいました」 (it went badly), after it 「最後まで落ち着いて話すことができました」 (it went well): the two are opposite.\nRule: 「けれども」 = \"however\", joining two sentences that go against each other.\nContrast: 「だから」 = \"so\", with the cause first; being nervous and quiet is no reason for speaking calmly. 「そのうえ」 = \"on top of that\" adds one more thing of the same kind, so something bad would have to follow."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「だから」表示因果，紧张不是能镇定说话的原因。",
+            "en": "「だから」 (so) gives a result, but nervousness doesn't cause speaking calmly."
+          },
+          {
+            "zh": "「そのうえ」是同方向的添加，后面却是好的结果。",
+            "en": "「そのうえ」 (what's more) adds a similar point, but a good outcome follows."
+          },
+          {
+            "zh": "「たとえば」用来举例，后面不是前一句的例子。",
+            "en": "「たとえば」 introduces an example, and what follows is not an example of the previous sentence."
+          }
+        ]
+      },
+      {
+        "options": [
+          "あの味にはなりません",
+          "すぐに上手になりました",
+          "おいしいと言われます",
+          "作り方を思い出します"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：空格后连着问「野菜の切り方が違うのでしょうか」「何か特別なものを入れていらっしゃったのでしょうか」，最后还请对方「教えてください」，说明自己做的和妈妈做的味道不一样。\n规则：「何回〜ても」＝不管……多少次也，后面是不如愿的、不变的结果：「何回作ってもあの味にはなりません」。\n容易错：只看「何回作っても」就选。前面有「でも」，后面在问哪里不同，所以空格里是不如愿的结果。",
+          "en": "Clue: Right after the blank the writer asks 「野菜の切り方が違うのでしょうか」 and 「何か特別なものを入れていらっしゃったのでしょうか」, and then 「教えてください」: his curry doesn't taste like hers.\nRule: 「何回〜ても」 = \"however many times …\", followed by an unchanging result that falls short of the wish: 「何回作ってもあの味にはなりません」.\nTrap: Choosing from 「何回作っても」 alone. 「でも」 comes before it and questions about what differs come after, so the blank holds a result that falls short."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「何回作っても」后面不接“马上就做好了”；如果已经做得好，也不会问「切り方が違うのでしょうか」。",
+            "en": "「何回作っても」 can't be followed by \"I soon got good at it\", and if he had, he wouldn't ask 「切り方が違うのでしょうか」."
+          },
+          {
+            "zh": "如果被人说好吃，前面的「でも」和后面问哪里不同的句子就接不上。",
+            "en": "If people said it was good, neither 「でも」 before it nor the questions about what differs would follow."
+          },
+          {
+            "zh": "如果想得起做法，就不用请对方「教えてください」；也和「でも」接不上。",
+            "en": "If he remembered how to make it, he wouldn't ask 「教えてください」, and it doesn't follow 「でも」."
+          }
+        ]
+      },
+      {
+        "options": [
+          "その",
+          "あの",
+          "この",
+          "どの"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：前一句是「来年の春、出張で東京に行くことになりそうです」，还加了「まだはっきり決まっていませんが」，说的是还没实现的、将来的事。\n规则：指前面刚提到的、还没实现或假设的事用「そ」系列：「そのときは」＝到那时。\n辨析：「あのとき」指写信人和读信人都经历过的过去（「あのときは楽しかったですね」），不能指将来；「このとき」指眼前或正在讲述的那一刻。",
+          "en": "Clue: The sentence before is 「来年の春、出張で東京に行くことになりそうです」, with 「まだはっきり決まっていませんが」 added: a future event that hasn't happened yet.\nRule: The そ-series refers to something just mentioned that is still unrealised or hypothetical: 「そのときは」 = \"when that time comes\".\nContrast: 「あのとき」 points to a past that writer and reader both lived through (「あのときは楽しかったですね」), never to the future; 「このとき」 is the moment at hand or being narrated."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「あのとき」指双方都记得的过去，明年春天还没有到。",
+            "en": "「あのとき」 is a past both remember; next spring hasn't come yet."
+          },
+          {
+            "zh": "「このとき」指现在或正在叙述的那个时刻，不指还没确定的将来。",
+            "en": "「このとき」 is the present or the moment being narrated, not an undecided future."
+          },
+          {
+            "zh": "「どのとき」是疑问的说法，这里不是问句。",
+            "en": "「どのとき」 is a question form, and this is not a question."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-109",
+    "type": "bunshou",
+    "difficulty": 3,
+    "intro": "次の文章は、会社員が書いたエッセイです。",
+    "passage": "半年前から、会社の帰りに一つ前の駅で電車を降りて、家まで歩いている。きっかけは、健康診断で医者に「運動が足りませんね」と言われたことだ。スポーツクラブに通う時間はないが、歩くだけなら[[1]]と思った。\n始めたころは、三十分歩くだけで足が痛くなり、次の日の朝は起きるのもつらかった。[[2]]、雨の日や疲れた日は、やめる理由をさがしてばかりいた。それでも続けられたのは、歩いているうちに町の小さな変化に気がつくようになったからだ。\nたとえば、古い家の庭に咲く花は、季節[[3]]変わっていく。夕方になると、商店街の肉屋からコロッケのにおいがしてくる。小さな公園では、子どもたちが暗くなるまでボールで遊んでいる。電車の窓から外を見ていたころは、[[4]]ことに全く気がつかなかった。毎日通っているのに、私は自分の住む町をほとんど知らなかったのだ。\n最近は体が軽くなり、夜もよく眠れる。けれども、私にとって一番うれしいのは、体重が減ったことよりも、帰り道が楽しみになったことだ。来月からは、朝も一駅歩いてみようと考えている。運動は苦しいものだと思っていたが、自分に合った楽しみ方を見つければ、だれでも続けられる[[5]]。",
+    "tr": {
+      "zh": "从半年前开始，我下班回家时提前一站下电车，走路回家。起因是体检时医生对我说“你运动不够啊”。我没有时间去健身房，但只是走路的话，我想自己好像也能做到。\n刚开始的时候，只走三十分钟脚就疼了，第二天早上连起床都很难受。而且，下雨天或者累的日子，我总是在找不走的理由。尽管这样还是坚持下来了，是因为走着走着，我开始注意到街上细小的变化。\n比如，老房子院子里开的花，随着季节不断变化。到了傍晚，商店街的肉店会飘来炸肉饼的香味。小公园里，孩子们玩球一直玩到天黑。以前从电车的窗户往外看的时候，我完全没有注意到那样的事。明明每天都经过，我对自己住的这个地方却几乎一无所知。\n最近身体变轻了，晚上也睡得很好。不过，对我来说最高兴的，与其说是体重减轻了，不如说是回家的路变成了一种期待。我打算从下个月开始，早上也走一站。我以前觉得运动是件辛苦的事，但只要找到适合自己的享受方法，也许谁都能坚持下去。",
+      "en": "For the past six months I have been getting off the train one station early on my way home from work and walking the rest. It started when a doctor told me at my health check-up, 'You're not getting enough exercise.' I have no time to go to a gym, but I thought that if it was only walking, even I could probably manage it.\nWhen I started, my legs hurt after just thirty minutes of walking, and the next morning even getting up was hard. On top of that, on rainy days and tired days I did nothing but look for reasons to quit. I was able to keep going all the same because, as I walked, I began to notice small changes in the town.\nFor example, the flowers blooming in the garden of an old house change with the seasons. In the evening, the smell of croquettes drifts from the butcher's in the shopping street. In a small park, children play ball until it gets dark. In the days when I looked out through the train window, I never noticed such things at all. Although I passed through every day, I knew almost nothing about the town I live in.\nRecently my body feels lighter and I sleep well at night. But for me the happiest thing is not so much that I have lost weight as that I now look forward to the way home. From next month I'm thinking of walking one station in the morning too. I used to think exercise was something painful, but if you find a way of enjoying it that suits you, perhaps anyone can keep it up."
+    },
+    "questions": [
+      {
+        "options": [
+          "自分にもできそうだ",
+          "運動にはならない",
+          "時間がかかりすぎる",
+          "医者に相談しよう"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：前半句「スポーツクラブに通う時間はないが」的「が」表示转折，后面应该是做得到的事；下一段开头「始めたころは」也说明他真的开始走了。\n规则：「〜だけなら」＝如果只是……的话，后面接“那就可以、那就不难”这类判断：「歩くだけなら自分にもできそうだ」。\n容易错：「運動にはならない」接在「歩くだけなら」后面语法上没问题，但那样他就不会开始走路了，和全文矛盾。",
+          "en": "Clue: The 「が」 in 「スポーツクラブに通う時間はないが」 turns the sentence, so something he can do should follow; 「始めたころは」 at the start of the next paragraph shows he really began walking.\nRule: 「〜だけなら」 = \"if it's only …\", followed by a judgement like \"then it's possible / not hard\": 「歩くだけなら自分にもできそうだ」.\nTrap: 「運動にはならない」 is grammatical after 「歩くだけなら」, but then he wouldn't have started walking, against the whole text."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "如果认为走路算不上运动，他就不会开始走了，和下一段「始めたころは」矛盾。",
+            "en": "If he thought walking didn't count as exercise, he wouldn't have started, against 「始めたころは」 in the next paragraph."
+          },
+          {
+            "zh": "前面说「時間はないが」，后面再说太花时间，就不是转折了，他也不会开始。",
+            "en": "After 「時間はないが」, saying it takes too long is no turn at all, and he wouldn't have begun."
+          },
+          {
+            "zh": "医生的话是起因，后文没有再去咨询医生，而是直接开始走路了。",
+            "en": "The doctor's remark was the trigger; he doesn't go and consult a doctor afterwards, he simply starts walking."
+          }
+        ]
+      },
+      {
+        "options": [
+          "それに",
+          "ところが",
+          "つまり",
+          "それとも"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：空格前「足が痛くなり、次の日の朝は起きるのもつらかった」是难受的事，空格后「やめる理由をさがしてばかりいた」又是一件不顺利的事；再后面用「それでも続けられた」把这两件事一起转折。\n规则：「それに」＝而且、再加上，在前面的事情上再添一件同方向的事。\n辨析：「ところが」＝然而，后面是和预想相反的事；脚疼以后想放弃并不出人意料，真正的转折是后面的「それでも」。",
+          "en": "Clue: 「足が痛くなり、次の日の朝は起きるのもつらかった」 before the blank is one hardship, and 「やめる理由をさがしてばかりいた」 after it is another; then 「それでも続けられた」 turns against both together.\nRule: 「それに」 = \"besides, on top of that\": it adds one more thing of the same kind.\nContrast: 「ところが」 = \"however\", for something against expectation; wanting to quit after sore legs is no surprise, and the real turn is the later 「それでも」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「ところが」表示和预想相反，可脚疼和想放弃是同一方向的事。",
+            "en": "「ところが」 (however) marks the unexpected, but sore legs and wanting to quit point the same way."
+          },
+          {
+            "zh": "「つまり」是换句话说，找不走的理由并不是“脚疼”的另一种说法。",
+            "en": "「つまり」 (in other words) restates, and looking for excuses is not a restatement of sore legs."
+          },
+          {
+            "zh": "「それとも」用在疑问句里表示选择，这里不是问句。",
+            "en": "「それとも」 (or) offers a choice in a question; this isn't one."
+          }
+        ]
+      },
+      {
+        "options": [
+          "によって",
+          "について",
+          "に対して",
+          "として"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：空格前是「季節」，空格后是「変わっていく」，花是跟着季节的不同而变化的。\n规则：「名词＋によって＋変わる／違う」＝因……而变化、不同：「国によって習慣が違う」。\n辨析：「について」＝关于……，后面接说、写、考虑等（「季節について話す」），不能接「変わっていく」；「として」＝作为……，表示身份或立场。",
+          "en": "Clue: Before the blank is 「季節」, after it 「変わっていく」: the flowers change as the season changes.\nRule: Noun + 「によって」 + 「変わる／違う」 = \"change / differ depending on\": 「国によって習慣が違う」.\nContrast: 「について」 = \"about\", followed by speaking, writing or thinking (「季節について話す」), not by 「変わっていく」; 「として」 = \"as\", a role or standpoint."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「について」是“关于”，后面要接说、写、考虑等，不能接「変わっていく」。",
+            "en": "「について」 (about) goes with speaking, writing or thinking, not with 「変わっていく」."
+          },
+          {
+            "zh": "「に対して」表示动作或态度的对象，花不是“对着季节”变化的。",
+            "en": "「に対して」 marks the target of an action or attitude; flowers don't change \"towards\" a season."
+          },
+          {
+            "zh": "「として」是“作为”，「季節として変わっていく」意思不通。",
+            "en": "「として」 (as) gives 「季節として変わっていく」, which makes no sense."
+          }
+        ]
+      },
+      {
+        "options": [
+          "そんな",
+          "あんな",
+          "どんな",
+          "どういう"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：前面三句刚写了院子里的花、肉店飘来的香味、公园里玩球的孩子，空格后的「こと」指的就是这些刚说过的事。\n规则：文章里指前面刚写过的内容用「そ」系列：「そんなこと」＝那样的事。\n辨析：「あんな」指作者和读者都知道的事（「あんなことは二度としたくない」是对知道内情的人说的）；读者没有见过那个院子、肉店和公园，所以不用「あ」。",
+          "en": "Clue: The three sentences before it have just described the garden flowers, the smell from the butcher's and the children in the park; 「こと」 after the blank means those things just mentioned.\nRule: In a text, what has just been written is referred to with the そ-series: 「そんなこと」 = \"things like that\".\nContrast: 「あんな」 is for something writer and reader both know (「あんなことは二度としたくない」 is said to someone who knows the story); the reader has never seen that garden, butcher's or park, so あ is out."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「あんな」指作者和读者都知道的事，读者并不知道那些情景。",
+            "en": "「あんな」 needs something both writer and reader know; the reader doesn't know those scenes."
+          },
+          {
+            "zh": "「どんなことに全く気がつかなかった」不是问句，疑问词用不上。",
+            "en": "「どんなことに全く気がつかなかった」 isn't a question, so a question word has no place."
+          },
+          {
+            "zh": "「どういう」也是疑问词，这里是陈述句。",
+            "en": "「どういう」 is also a question word, and this is a statement."
+          }
+        ]
+      },
+      {
+        "options": [
+          "のかもしれない",
+          "ことになっている",
+          "ところだった",
+          "はずがない"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：句子前半是「運動は苦しいものだと思っていたが」，「が」后面是和以前的想法相反的新看法；「見つければ」是条件，后面是作者根据自己的经历做的推测。\n规则：「〜のかもしれない」＝也许是……，表示不十分肯定的推测，接普通形：「続けられるのかもしれない」。\n辨析：「はずがない」＝不可能……，「だれでも続けられるはずがない」是“不可能谁都能坚持”，和他自己坚持了半年、还打算早上也走的内容相反。",
+          "en": "Clue: The first half is 「運動は苦しいものだと思っていたが」, so after 「が」 comes a new view opposed to the old one; 「見つければ」 is a condition, and what follows is the writer's guess from his own experience.\nRule: 「〜のかもしれない」 = \"perhaps it is that …\", a guess without full certainty, after the plain form: 「続けられるのかもしれない」.\nContrast: 「はずがない」 = \"cannot possibly\"; 「だれでも続けられるはずがない」 says not everyone could possibly keep it up, the reverse of his six months of walking and his plan to walk in the mornings too."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「ことになっている」表示规定或安排，“谁都能坚持”不是规定。",
+            "en": "「ことになっている」 states a rule or arrangement; \"anyone can keep it up\" is not a rule."
+          },
+          {
+            "zh": "「ところだった」是“差点儿就……”，说的是过去没发生的事，和「見つければ」接不上。",
+            "en": "「ところだった」 (\"nearly\") is about something in the past that didn't happen and can't follow 「見つければ」."
+          },
+          {
+            "zh": "「はずがない」是“不可能”，和他自己坚持下来的经历相反。",
+            "en": "「はずがない」 (cannot possibly) contradicts his own experience of keeping it up."
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -2054,5 +2054,1408 @@
    null
   ],
   "traps": ["condition-conflict", "not-possible", "order"]
+ },
+ {
+  "id": "n2-ck-126",
+  "type": "kadai",
+  "scene": "美術館の受付で、女の人と係の人が話しています。",
+  "question": "女の人は全部でいくら払いますか。",
+  "lines": [
+   [
+    "F",
+    "すみません、大人二枚、お願いします。あ、このクーポン、使えますか。ホームページに載ってたんですけど。"
+   ],
+   [
+    "M",
+    "はい、お使いいただけます。お一人様二百円引きですので、一般の千五百円が千三百円になりまして、お二人で二千六百円でございます。"
+   ],
+   [
+    "F",
+    "じゃあ、それで。"
+   ],
+   [
+    "M",
+    "あ、お客様、本日は金曜日ですので、お二人でしたら、ペア券というのもございます。二枚一組で二千四百円です。ただ、こちらはクーポンとは併せてお使いいただけないんですが。"
+   ],
+   [
+    "F",
+    "それでも、そっちのほうがお得ですね。じゃあ、ペア券にします。"
+   ],
+   [
+    "M",
+    "かしこまりました。音声ガイドはいかがなさいますか。一台五百円で、作品の解説をお聞きいただけます。"
+   ],
+   [
+    "F",
+    "うーん、連れは前にも来たことがあるから要らないって言ってたんですけど、私は初めてだし……。じゃあ、一台だけお願いします。あ、これにはクーポン、使えないんですよね。"
+   ],
+   [
+    "M",
+    "申し訳ございません。クーポンは入館料のみとなっております。"
+   ],
+   [
+    "F",
+    "わかりました。"
+   ]
+  ],
+  "options": [
+   "2400円",
+   "2900円",
+   "3100円",
+   "3400円"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在美术馆的接待处，女人和工作人员在交谈。",
+    "question": "女人一共付多少钱？",
+    "lines": [
+     "不好意思，要两张成人票。啊，这张优惠券能用吗？是在官网上看到的。",
+     "可以用。每位减两百日元，普通票一千五变成一千三，两位一共两千六百日元。",
+     "那就这样吧。",
+     "啊，这位客人，今天是星期五，两位的话还有一种双人票，两张一套两千四百日元。不过这个不能和优惠券一起用。",
+     "那也还是那个划算。那就要双人票。",
+     "好的。需要语音导览吗？一台五百日元，可以听作品的讲解。",
+     "嗯……同伴说以前来过，不需要，可我是第一次来……那就只要一台。啊，这个不能用优惠券吧？",
+     "非常抱歉，优惠券只能用于门票。",
+     "知道了。"
+    ],
+    "options": [
+     "2400日元",
+     "2900日元",
+     "3100日元",
+     "3400日元"
+    ]
+   },
+   "en": {
+    "scene": "At a museum reception desk, a woman is talking to a staff member.",
+    "question": "How much will the woman pay in total?",
+    "lines": [
+     "Excuse me, two adults, please. Oh, can I use this coupon? It was on your website.",
+     "Yes, you can. It's 200 yen off per person, so the regular 1,500 yen becomes 1,300 — 2,600 yen for the two of you.",
+     "All right, that then.",
+     "Oh, ma'am, since it's Friday, there's also a pair ticket for two people: 2,400 yen for the set of two. It can't be combined with the coupon, though.",
+     "Even so, that's the better deal. I'll take the pair ticket, then.",
+     "Certainly. Would you like an audio guide? It's 500 yen per device, with commentary on the works.",
+     "Hmm, my friend said he doesn't need one because he's been here before, but it's my first time... Just one, then, please. Oh — I can't use the coupon on this, can I?",
+     "I'm afraid not. The coupon is for admission only.",
+     "I see."
+    ],
+    "options": [
+     "2,400 yen",
+     "2,900 yen",
+     "3,100 yen",
+     "3,400 yen"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：工作人员说双人票「二枚一組で二千四百円」，女的说「ペア券にします」；语音导览「一台五百円」，她说「一台だけお願いします」。\n推理：门票改成双人票 2400 日元（优惠券不能并用，所以不是 2600），再加一台导览 500 日元，共 2900 日元。导览也不能用优惠券。\n容易错：最先算出来的 2600 日元被双人票取代；同伴不要导览，只算一台。",
+   "en": "Evidence: The clerk says the pair ticket is 「二枚一組で二千四百円」 and she says 「ペア券にします」; the audio guide is 「一台五百円」 and she says 「一台だけお願いします」.\nReasoning: Admission becomes the 2,400-yen pair ticket (no coupon with it, so not 2,600), plus one guide at 500 yen: 2,900 yen. The coupon doesn't apply to the guide either.\nTrap: the 2,600 yen worked out first is replaced by the pair ticket; her friend doesn't want a guide, so only one is charged."
+  },
+  "wrong": [
+   {
+    "zh": "这只是双人票的钱，还要加一台语音导览 500 日元。",
+    "en": "That is the pair ticket alone; one audio guide adds 500 yen."
+   },
+   null,
+   {
+    "zh": "这是用优惠券的 2600 日元加导览；她改买了 2400 日元的双人票。",
+    "en": "That is the 2,600-yen coupon price plus a guide; she switched to the 2,400-yen pair ticket."
+   },
+   {
+    "zh": "这是借两台导览的价钱；同伴不要，只借一台。",
+    "en": "That would be two audio guides; her friend doesn't want one."
+   }
+  ],
+  "traps": [
+   "number",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n2-ck-127",
+  "type": "kadai",
+  "scene": "観光地の貸し自転車の店で、男の人と店の人が話しています。",
+  "question": "男の人は全部でいくら払いますか。",
+  "lines": [
+   [
+    "M",
+    "すみません、自転車を二台借りたいんですが。この辺は坂が多いって聞いたので、電動のを、一日で。"
+   ],
+   [
+    "F",
+    "電動は一日千八百円ですが、もう午後一時を過ぎていますし、うちは五時までですので、四時間までの半日料金でいかがでしょう。半日でしたら、電動が千二百円、普通の自転車が六百円です。"
+   ],
+   [
+    "M",
+    "あ、じゃあ、半日で。電動二台だと二千四百円か。……あ、でも、妻は普通のでいいって言ってたな。毎日自転車で通勤してるから、坂は平気だって。"
+   ],
+   [
+    "F",
+    "では、電動を一台と、普通のを一台ですね。"
+   ],
+   [
+    "M",
+    "ええ。私は自信がないので、電動にしておきます。"
+   ],
+   [
+    "F",
+    "かしこまりました。それから、保険料として、一台につき百円ずつ頂いております。こちらは皆様にお願いしておりまして。"
+   ],
+   [
+    "M",
+    "わかりました。ちなみに、返すのが五時を少し過ぎたら、どうなりますか。"
+   ],
+   [
+    "F",
+    "その場合は、一日料金との差額を頂くことになりますので、お気をつけください。"
+   ],
+   [
+    "M",
+    "じゃあ、四時半には戻るようにします。"
+   ]
+  ],
+  "options": [
+   "1400円",
+   "1800円",
+   "2000円",
+   "2600円"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在旅游地的自行车出租店，男人和店员在交谈。",
+    "question": "男人一共付多少钱？",
+    "lines": [
+     "不好意思，我想租两辆自行车。听说这一带坡多，要电动的，租一天。",
+     "电动的一天一千八百日元，不过现在已经过下午一点了，我们又只开到五点，按四小时以内的半天价怎么样？半天的话，电动的一千二，普通自行车六百。",
+     "啊，那就半天。两辆电动的是两千四啊……啊，不过我太太说普通的就行。她每天骑车上班，说上坡不要紧。",
+     "那就是电动的一辆、普通的一辆对吧。",
+     "对。我自己没把握，还是要电动的。",
+     "好的。另外，保险费每辆收一百日元，这个是所有客人都要交的。",
+     "知道了。顺便问一下，还车稍微过了五点会怎么样？",
+     "那样的话要补收和一天价之间的差额，请您注意。",
+     "那我们争取四点半回来。"
+    ],
+    "options": [
+     "1400日元",
+     "1800日元",
+     "2000日元",
+     "2600日元"
+    ]
+   },
+   "en": {
+    "scene": "At a bicycle rental shop in a tourist area, a man is talking to the shop clerk.",
+    "question": "How much will the man pay in total?",
+    "lines": [
+     "Excuse me, I'd like to rent two bicycles. I hear it's hilly around here, so electric ones, for the day.",
+     "Electric ones are 1,800 yen a day, but it's already past one in the afternoon and we close at five, so how about the half-day rate, up to four hours? For a half day, electric is 1,200 yen and an ordinary bicycle 600.",
+     "Oh, a half day, then. Two electric ones would be 2,400 yen... Ah, but my wife said an ordinary one is fine. She cycles to work every day, so hills don't bother her.",
+     "So one electric and one ordinary, then.",
+     "Yes. I'm not so confident myself, so I'll stick with electric.",
+     "Certainly. Also, we charge 100 yen per bicycle for insurance. We ask this of every customer.",
+     "I see. By the way, what happens if we bring them back a little after five?",
+     "In that case we'd have to charge the difference from the full-day rate, so please be careful.",
+     "Then we'll make sure we're back by half past four."
+    ],
+    "options": [
+     "1,400 yen",
+     "1,800 yen",
+     "2,000 yen",
+     "2,600 yen"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：店员说半天「電動が千二百円、普通の自転車が六百円」，确认「電動を一台と、普通のを一台」，又说「保険料として、一台につき百円ずつ」。\n推理：半天价，电动 1200 + 普通 600 = 1800 日元，再加两辆的保险 200 日元，共 2000 日元。他打算四点半还车，不会补一天价的差额。\n容易错：他自己先算的「電動二台だと二千四百円」随后改掉了；保险费是最后才加上的。",
+   "en": "Evidence: The clerk gives the half-day rates 「電動が千二百円、普通の自転車が六百円」, confirms 「電動を一台と、普通のを一台」, and adds 「保険料として、一台につき百円ずつ」.\nReasoning: Half day: 1,200 + 600 = 1,800 yen, plus 200 yen insurance for two bicycles = 2,000 yen. He plans to be back by 4:30, so no full-day difference is charged.\nTrap: his own 「電動二台だと二千四百円」 is changed right after; the insurance comes only at the end."
+  },
+  "wrong": [
+   {
+    "zh": "这是两辆都租普通车再加保险；他自己还是要电动的。",
+    "en": "That is two ordinary bicycles plus insurance; he keeps an electric one for himself."
+   },
+   {
+    "zh": "这只是两辆车的租金，还要加每辆 100 日元的保险费。",
+    "en": "That is the rental alone; insurance adds 100 yen per bicycle."
+   },
+   null,
+   {
+    "zh": "这是两辆电动车加保险；太太改成了普通车。",
+    "en": "That is two electric bicycles plus insurance; his wife takes an ordinary one."
+   }
+  ],
+  "traps": [
+   "number",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n2-ck-128",
+  "type": "kadai",
+  "scene": "男の人が、陶芸教室の人と電話で話しています。",
+  "question": "男の人は当日、全部でいくら払いますか。",
+  "lines": [
+   [
+    "M",
+    "来週の土曜日に、会社の同僚と体験コースに参加したいんですが、五人で予約できますか。"
+   ],
+   [
+    "F",
+    "はい、土曜の午後でしたら空いております。料金はお一人様三千円ですが、五名様以上ですと団体料金になりまして、お一人様二千五百円です。"
+   ],
+   [
+    "M",
+    "じゃあ、一万二千五百円ですね。……あ、すみません。一人、出張が入ったんでした。四人でお願いします。"
+   ],
+   [
+    "F",
+    "四名様ですと、申し訳ありませんが、通常の料金になりますので、一万二千円でございます。"
+   ],
+   [
+    "M",
+    "あ、そうか。まあ、しかたないですね。"
+   ],
+   [
+    "F",
+    "作品は、こちらで焼いて、ひと月ほどでお渡しできます。取りにいらっしゃるか、お送りするかになりますが、お送りする場合は、何名様分でも、まとめて千五百円頂いております。"
+   ],
+   [
+    "M",
+    "うーん、近ければ取りに行くんですけど、ちょっと遠いので……。会社あてに、まとめて送ってください。"
+   ],
+   [
+    "F",
+    "かしこまりました。では、送料も、当日、体験の料金と一緒にお支払いください。"
+   ],
+   [
+    "M",
+    "わかりました。"
+   ]
+  ],
+  "options": [
+   "10000円",
+   "12000円",
+   "12500円",
+   "13500円"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "男人在和陶艺教室的人通电话。",
+    "question": "男人当天一共付多少钱？",
+    "lines": [
+     "下周六我想和公司同事一起参加体验课，五个人能预约吗？",
+     "可以，周六下午有空位。费用是每位三千日元，五位以上按团体价，每位两千五百日元。",
+     "那就是一万两千五百日元吧。……啊，对不起，有一个人要出差来着。请按四个人订。",
+     "四位的话，很抱歉，要按普通价，一共一万两千日元。",
+     "啊，是吗。嗯，那也没办法。",
+     "作品由我们烧制，一个月左右可以交给您。可以来取，也可以寄送；寄送的话，不管几位的份，一起收一千五百日元。",
+     "嗯……近的话就去取了，可是有点远……请一起寄到公司吧。",
+     "好的。那运费也请在当天和体验费一起付。",
+     "知道了。"
+    ],
+    "options": [
+     "10000日元",
+     "12000日元",
+     "12500日元",
+     "13500日元"
+    ]
+   },
+   "en": {
+    "scene": "A man is talking on the phone with someone at a pottery class.",
+    "question": "How much will the man pay in total on the day?",
+    "lines": [
+     "I'd like to join the trial course next Saturday with some colleagues. Can I book for five?",
+     "Yes, Saturday afternoon is free. The fee is 3,000 yen per person, but for five or more the group rate applies: 2,500 yen each.",
+     "So that's 12,500 yen. ...Oh, sorry. One of us has a business trip, I forgot. Four people, please.",
+     "For four, I'm afraid the regular rate applies, so it comes to 12,000 yen.",
+     "Oh, I see. Well, it can't be helped.",
+     "We fire the pieces here and they're ready in about a month. You can collect them or have them sent; if we send them, it's 1,500 yen for the lot, however many people.",
+     "Hmm, I'd come and get them if you were nearby, but it's a bit far... Please send them all together to our office.",
+     "Certainly. Then please pay the shipping on the day as well, together with the course fee.",
+     "All right."
+    ],
+    "options": [
+     "10,000 yen",
+     "12,000 yen",
+     "12,500 yen",
+     "13,500 yen"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：教室的人说「四名様ですと……通常の料金になりますので、一万二千円」，寄送「まとめて千五百円」，最后说「送料も、当日、体験の料金と一緒にお支払いください」。\n推理：人数从五人减到四人，团体价不适用，体验费 12000 日元；男的选择寄到公司，运费 1500 日元当天一起付，共 13500 日元。\n容易错：少了一个人，单价反而从 2500 变回 3000；运费是不是当天付，只在最后说了一次。",
+   "en": "Evidence: The staff member says 「四名様ですと……通常の料金になりますので、一万二千円」, sending costs 「まとめて千五百円」, and 「送料も、当日、体験の料金と一緒にお支払いください」.\nReasoning: With four people instead of five the group rate no longer applies, so the course is 12,000 yen; he asks to have the pieces sent to the office, and the 1,500-yen shipping is paid on the day too: 13,500 yen.\nTrap: one person fewer puts the price per head back up from 2,500 to 3,000; that shipping is paid on the day is said only once, at the end."
+  },
+  "wrong": [
+   {
+    "zh": "这是四个人按团体价算的；四个人不能用团体价。",
+    "en": "That is four people at the group rate, which needs five or more."
+   },
+   {
+    "zh": "这只是四个人的体验费，还要加当天一起付的运费 1500 日元。",
+    "en": "That is the course fee alone; the 1,500-yen shipping is also paid on the day."
+   },
+   {
+    "zh": "这是五个人的团体价；后来改成了四个人。",
+    "en": "That is the group price for five; the booking was changed to four."
+   },
+   null
+  ],
+  "traps": [
+   "number",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n2-ck-129",
+  "type": "kadai",
+  "scene": "女の人が、クリニックの人と電話で話しています。",
+  "question": "女の人は明日、何を持っていきますか。",
+  "lines": [
+   [
+    "F",
+    "明日、健康診断を予約している中村ですが、持っていくものを確認したくて、お電話しました。"
+   ],
+   [
+    "M",
+    "はい。まず保険証と、それから、先週お送りした問診票にご記入のうえ、お持ちください。"
+   ],
+   [
+    "F",
+    "え、問診票ですか。届いてないんですけど……。先月引っ越したので、前の住所に行ってしまったのかもしれません。"
+   ],
+   [
+    "M",
+    "そうですか。でしたら、明日こちらで書いていただきますので、結構です。そのかわり、ご予約の時間より十五分ほど早めにお越しいただけますか。"
+   ],
+   [
+    "F",
+    "わかりました。あと、会社から受診券というのをもらってるんですが、これも要りますか。"
+   ],
+   [
+    "M",
+    "あ、会社の健康診断でいらっしゃるんですね。それは必ずお持ちください。お忘れになると、費用を全額ご負担いただくことになってしまいますので。"
+   ],
+   [
+    "F",
+    "はい。それから、検査のときのために、着替えも持っていったほうがいいですか。"
+   ],
+   [
+    "M",
+    "いえ、検査用の服はこちらでご用意しておりますので、そのままお越しください。"
+   ],
+   [
+    "F",
+    "じゃあ、荷物は少なくて済みますね。"
+   ]
+  ],
+  "options": [
+   "保険証と受診券",
+   "保険証と問診票",
+   "問診票と受診券",
+   "受診券と着替え"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "女人在和诊所的人通电话。",
+    "question": "女人明天带什么去？",
+    "lines": [
+     "我是预约了明天体检的中村，想确认一下要带的东西，所以打了电话。",
+     "好的。首先是保险证，还有上周寄给您的问诊表，请填好带来。",
+     "啊，问诊表？我没收到啊……我上个月搬了家，可能寄到以前的地址去了。",
+     "是这样啊。那明天在我们这儿填就行，不用带了。不过请您比预约时间早十五分钟左右来，可以吗？",
+     "知道了。另外，公司给了我一张体检券，这个也要带吗？",
+     "啊，您是来做公司的体检啊。那个请务必带来。忘了的话，费用就得您全额自己付了。",
+     "好的。还有，检查的时候穿的替换衣服，也带去比较好吗？",
+     "不用，检查用的衣服我们这边准备了，您直接来就行。",
+     "那要带的东西不多。"
+    ],
+    "options": [
+     "保险证和体检券",
+     "保险证和问诊表",
+     "问诊表和体检券",
+     "体检券和替换衣服"
+    ]
+   },
+   "en": {
+    "scene": "A woman is talking on the phone with someone at a clinic.",
+    "question": "What will the woman take with her tomorrow?",
+    "lines": [
+     "This is Nakamura; I have a health check booked for tomorrow, and I'm calling to check what I should bring.",
+     "Certainly. First your insurance card, and then please fill in the medical questionnaire we sent you last week and bring it.",
+     "Oh, a questionnaire? I haven't received one... I moved last month, so it may have gone to my old address.",
+     "I see. In that case you can fill one in here tomorrow, so never mind. Instead, could you come about fifteen minutes before your appointment?",
+     "All right. Also, my company gave me something called a check-up voucher. Do I need that too?",
+     "Ah, you're coming for a company health check. Please be sure to bring that. If you forget it, you would have to pay the whole fee yourself.",
+     "I will. And should I bring a change of clothes for the tests?",
+     "No, we provide clothes for the tests, so just come as you are.",
+     "So I won't have much to carry, then."
+    ],
+    "options": [
+     "Her insurance card and the check-up voucher",
+     "Her insurance card and the questionnaire",
+     "The questionnaire and the check-up voucher",
+     "The check-up voucher and a change of clothes"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：诊所的人说「まず保険証と……」，关于体检券说「それは必ずお持ちください」。\n推理：保险证一开始就要求带，之后没有取消；体检券必须带。问诊表她没收到，「明日こちらで書いていただきますので、結構です」；检查用的衣服诊所准备。所以带保险证和体检券。\n容易错：保险证只在开头说了一次，后面谈的都是别的东西，容易忘掉。",
+   "en": "Evidence: The clinic says 「まず保険証と……」, and of the voucher, 「それは必ずお持ちください」.\nReasoning: The insurance card is asked for at the start and never withdrawn; the voucher is a must. She never received the questionnaire — 「明日こちらで書いていただきますので、結構です」 — and the clinic provides clothes for the tests. So: insurance card and voucher.\nTrap: the insurance card is mentioned once at the start and is easy to lose among the later items."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "问诊表她没收到，明天在诊所填，不用带。",
+    "en": "She never received the questionnaire and will fill one in at the clinic."
+   },
+   {
+    "zh": "问诊表不用带；保险证则要带。",
+    "en": "The questionnaire isn't needed, while the insurance card is."
+   },
+   {
+    "zh": "检查用的衣服诊所准备；保险证要带。",
+    "en": "The clinic provides clothes for the tests, and the insurance card is needed."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n2-ck-130",
+  "type": "kadai",
+  "scene": "写真クラブで、女の人と会長の男の人が、来月の写真展について話しています。",
+  "question": "女の人は写真展の日までに何を用意しますか。",
+  "lines": [
+   [
+    "F",
+    "会長、来月の写真展ですけど、出す写真は、去年みたいに、クラブでまとめて印刷に出すんですよね。"
+   ],
+   [
+    "M",
+    "それがね、今年は予算が厳しくて、各自でってことになったんだ。大きさだけは、去年と同じにそろえてね。"
+   ],
+   [
+    "F",
+    "そうなんですか。じゃあ、額も自分で買わないといけませんね。"
+   ],
+   [
+    "M",
+    "いや、額は公民館が貸してくれるんだよ。全部同じもののほうが、会場もすっきり見えるしね。"
+   ],
+   [
+    "F",
+    "よかった。あと、写真の下に貼る、題名のカードはどうしましょう。"
+   ],
+   [
+    "M",
+    "あれは、字体をそろえたいから、僕がまとめて作るよ。題名が決まったら、メールで教えてくれればいいから。"
+   ],
+   [
+    "F",
+    "わかりました。壁にかけるひもとか道具は要りますか。"
+   ],
+   [
+    "M",
+    "それも会場に備えつけのがあるから、心配ないよ。前の日の準備には、手ぶらで来てくれれば……あ、手ぶらじゃだめか。肝心のものを忘れないでね。"
+   ],
+   [
+    "F",
+    "はい。今週中にお店に頼んでおきます。"
+   ]
+  ],
+  "options": [
+   "写真を入れる額",
+   "題名を書いたカード",
+   "壁にかける道具",
+   "印刷した写真"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "在摄影俱乐部，女人和会长（男）在谈下个月的摄影展。",
+    "question": "女人在摄影展之前要准备什么？",
+    "lines": [
+     "会长，下个月的摄影展，参展的照片是像去年那样，由俱乐部统一送去冲印吧？",
+     "这个嘛，今年预算紧，定下来各人自己弄了。只是尺寸要统一成和去年一样的。",
+     "是这样啊。那相框也得自己买了吧。",
+     "不用，相框公民馆会借给我们。全都一样的话，会场看起来也整齐。",
+     "太好了。还有，贴在照片下面的标题卡怎么办？",
+     "那个想把字体统一起来，我一起做。标题定了以后，发邮件告诉我就行。",
+     "知道了。挂到墙上用的绳子、工具之类的要带吗？",
+     "那些会场里也有现成的，不用担心。前一天布展，空着手来就……啊，空手可不行。最要紧的东西别忘了啊。",
+     "好的。我这周之内就去店里订。"
+    ],
+    "options": [
+     "装照片的相框",
+     "写着标题的卡片",
+     "挂到墙上的工具",
+     "冲印好的照片"
+    ]
+   },
+   "en": {
+    "scene": "At a photography club, a woman and the club's chairman are talking about next month's exhibition.",
+    "question": "What will the woman get ready before the exhibition?",
+    "lines": [
+     "About next month's exhibition — the club will send everyone's photos off for printing together, like last year, won't it?",
+     "Well, actually, the budget's tight this year, so we decided everyone does their own. Just keep to the same size as last year.",
+     "Oh, really? Then I'll have to buy my own frame too.",
+     "No, the community centre lends us frames. The room looks neater when they're all the same, too.",
+     "That's a relief. And what about the title cards that go under the photos?",
+     "I want the lettering to match, so I'll make those all together. Just email me your title once you've decided.",
+     "All right. Do I need cord or tools for hanging it on the wall?",
+     "The hall has those as well, so don't worry. Just come empty-handed to the set-up the day before... oh, not empty-handed. Don't forget the one thing that matters.",
+     "I won't. I'll order it at the shop this week."
+    ],
+    "options": [
+     "A frame for the photo",
+     "A card with the title on it",
+     "Tools for hanging it on the wall",
+     "A print of her photo"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：会长说印照片「今年は……各自でってことになったんだ」，最后说「肝心のものを忘れないでね」，女的回答「今週中にお店に頼んでおきます」。\n推理：今年照片要各人自己冲印，「肝心のもの」指的就是照片，她这周去店里订。相框公民馆出借，标题卡会长统一做（她只要发邮件告诉标题），挂的工具会场有。\n容易错：答案没有直接说出来，要从「各自で」和「肝心のもの」推出来。",
+   "en": "Evidence: The chairman says printing is 「今年は……各自でってことになったんだ」 and ends with 「肝心のものを忘れないでね」; she answers 「今週中にお店に頼んでおきます」.\nReasoning: This year each member prints their own photo; 「肝心のもの」 is the photo itself, which she'll order at a shop this week. Frames are lent by the community centre, the chairman makes the title cards (she only emails her title), and the hall has hanging tools.\nTrap: the answer is never named outright — it follows from 「各自で」 and 「肝心のもの」."
+  },
+  "wrong": [
+   {
+    "zh": "相框由公民馆出借，不用自己买。",
+    "en": "The community centre lends the frames."
+   },
+   {
+    "zh": "标题卡会长统一做，她只要发邮件告诉标题。",
+    "en": "The chairman makes the cards; she only emails her title."
+   },
+   {
+    "zh": "挂的绳子和工具会场里有现成的。",
+    "en": "The hall already has cord and tools."
+   },
+   null
+  ],
+  "traps": [
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n2-ck-131",
+  "type": "kadai",
+  "scene": "市民会館の窓口で、男の人と係の人が話しています。",
+  "question": "男の人はどの部屋を予約しますか。",
+  "lines": [
+   [
+    "M",
+    "来月十日の午後、合唱の練習で部屋を借りたいんですが、多目的ホールは空いていますか。"
+   ],
+   [
+    "F",
+    "あいにく十日は、ホールは一日中、講演会が入っておりまして。和室でしたら空いておりますが。"
+   ],
+   [
+    "M",
+    "和室か……。ピアノがないと、練習にならないんですよ。"
+   ],
+   [
+    "F",
+    "でしたら、第一会議室はいかがでしょう。電子ピアノをお貸しできますし、四十名様まで入れます。"
+   ],
+   [
+    "M",
+    "あ、それなら。うちは全部で三十人ですから。"
+   ],
+   [
+    "F",
+    "あ、ただ、会議室は壁が薄いものですから、歌や楽器はご遠慮いただいているんでした。申し訳ありません、うっかりしておりました。"
+   ],
+   [
+    "M",
+    "そうですか。困ったな。"
+   ],
+   [
+    "F",
+    "ピアノがあって音が出せるのは、あとは音楽室だけなんですが、こちらは定員が二十名でして……。"
+   ],
+   [
+    "M",
+    "二十人か。……あ、待てよ。十日は男性だけの練習だから、来るのは十二、三人だ。それなら入りますね。"
+   ],
+   [
+    "F",
+    "はい、でしたら問題ございません。"
+   ],
+   [
+    "M",
+    "じゃあ、そこでお願いします。"
+   ]
+  ],
+  "options": [
+   "音楽室",
+   "多目的ホール",
+   "第一会議室",
+   "和室"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在市民会馆的窗口，男人和工作人员在交谈。",
+    "question": "男人预约哪个房间？",
+    "lines": [
+     "下个月十号下午，我想借个房间练合唱，多功能厅有空吗？",
+     "不巧十号那天大厅一整天都有讲演会。和室倒是空着。",
+     "和室啊……没有钢琴的话没法练。",
+     "那第一会议室怎么样？可以借电子钢琴，能容纳四十人。",
+     "啊，那可以。我们一共三十个人。",
+     "啊，不过会议室墙壁薄，唱歌和乐器是谢绝的。对不起，我一时疏忽了。",
+     "这样啊。这可难办了。",
+     "有钢琴又能出声的，就只剩音乐室了，可是那里限二十人……",
+     "二十人啊……啊，等等。十号只是男声部练习，来的也就十二三个人。那就坐得下了。",
+     "是的，那就没问题了。",
+     "那就订那里。"
+    ],
+    "options": [
+     "音乐室",
+     "多功能厅",
+     "第一会议室",
+     "和室"
+    ]
+   },
+   "en": {
+    "scene": "At the counter of a civic hall, a man is talking to a staff member.",
+    "question": "Which room will the man book?",
+    "lines": [
+     "I'd like to book a room for choir practice on the afternoon of the 10th next month. Is the multipurpose hall free?",
+     "I'm afraid the hall is taken all day on the 10th for a lecture. The Japanese-style room is free, though.",
+     "The Japanese-style room... We can't really practise without a piano.",
+     "Then how about Meeting Room 1? We can lend you an electric piano, and it holds up to forty people.",
+     "Oh, that would do. There are thirty of us in all.",
+     "Ah, but the meeting rooms have thin walls, so we don't allow singing or instruments there. I'm sorry, that slipped my mind.",
+     "I see. That's a problem.",
+     "The only other room with a piano where you can make noise is the music room, but its capacity is twenty...",
+     "Twenty... Oh, wait. The 10th is a men-only practice, so only twelve or thirteen will come. We'd fit, then.",
+     "Yes, that would be no problem.",
+     "Then I'll take that one, please."
+    ],
+    "options": [
+     "The music room",
+     "The multipurpose hall",
+     "Meeting Room 1",
+     "The Japanese-style room"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：工作人员说「ピアノがあって音が出せるのは、あとは音楽室だけ……定員が二十名」，男的说「十日は男性だけの練習だから、来るのは十二、三人だ。それなら入りますね」。\n推理：音乐室限二十人，合唱团共三十人本来坐不下，但十号只有十二三个人来，所以订音乐室。大厅那天有讲演会；和室没有钢琴；第一会议室墙薄，不能唱歌。\n容易错：「三十人」和「二十名」让人以为音乐室不行；最后一句的「そこ」指音乐室。",
+   "en": "Evidence: The clerk says 「ピアノがあって音が出せるのは、あとは音楽室だけ……定員が二十名」, and the man says 「十日は男性だけの練習だから、来るのは十二、三人だ。それなら入りますね」.\nReasoning: The music room holds twenty and the choir has thirty, but only twelve or thirteen come on the 10th, so he books the music room. The hall has a lecture that day; the Japanese-style room has no piano; Meeting Room 1 has thin walls and no singing is allowed.\nTrap: 「三十人」 against 「二十名」 seems to rule the music room out; 「そこ」 in the last line is the music room."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "十号那天大厅一整天有讲演会。",
+    "en": "The hall is taken all day by a lecture."
+   },
+   {
+    "zh": "会议室墙薄，不能唱歌、用乐器。",
+    "en": "The meeting room has thin walls; singing isn't allowed."
+   },
+   {
+    "zh": "和室没有钢琴，没法练。",
+    "en": "The Japanese-style room has no piano."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n2-ck-132",
+  "type": "kadai",
+  "scene": "大学で、女の学生と男の先輩が、夏休みの集中講義について話しています。",
+  "question": "女の学生はどの講義を申し込みますか。",
+  "lines": [
+   [
+    "F",
+    "先輩、夏の集中講義、あと二単位取らないといけないんですけど、どれがいいと思いますか。"
+   ],
+   [
+    "M",
+    "地域経済論がおすすめだよ。試験がなくて、町を歩いてレポートを書くだけだから。"
+   ],
+   [
+    "F",
+    "へえ、いいですね。……あ、でも、これ、九月の第二週ですよね。ゼミの合宿と重なっちゃいます。八月の第一週なら空いてるんですけど。"
+   ],
+   [
+    "M",
+    "八月の頭か。それだと、心理学入門と、環境科学と、映像文化論だね。"
+   ],
+   [
+    "F",
+    "心理学は、一年のときに似たのを取っちゃったんですよ。同じ分野だと、単位として数えてもらえないらしくて。"
+   ],
+   [
+    "M",
+    "そうなんだ。環境科学は？　先生の話、わかりやすいって評判だよ。"
+   ],
+   [
+    "F",
+    "でも、計算の課題が毎日出るって聞きました。私、数字はどうも……。"
+   ],
+   [
+    "M",
+    "じゃあ、残りは一つか。あれは、最後の日にグループで発表があるけど、大丈夫？"
+   ],
+   [
+    "F",
+    "一人じゃないなら、何とかなりそうです。それにします。"
+   ]
+  ],
+  "options": [
+   "地域経済論",
+   "心理学入門",
+   "映像文化論",
+   "環境科学"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在大学里，女学生和男学长在谈暑假的集中授课。",
+    "question": "女学生报哪门课？",
+    "lines": [
+     "学长，暑假的集中授课，我还得再拿两个学分，你觉得选哪个好？",
+     "我推荐地域经济论。没有考试，只要在街上走走、写篇报告就行。",
+     "哦，不错啊……啊，不过这个是九月第二周吧。跟研讨班的集训撞上了。八月第一周的话我倒有空。",
+     "八月初啊。那就是心理学入门、环境科学和影像文化论了。",
+     "心理学我一年级的时候修过类似的了。听说同一个领域的不能算学分。",
+     "这样啊。环境科学呢？都说那位老师讲得很好懂。",
+     "可是听说每天都有计算作业。我对数字实在是……",
+     "那就只剩一个了。那门课最后一天要分组发表，没问题吗？",
+     "不是一个人的话，应该能应付。就选那个。"
+    ],
+    "options": [
+     "地域经济论",
+     "心理学入门",
+     "影像文化论",
+     "环境科学"
+    ]
+   },
+   "en": {
+    "scene": "At a university, a female student and an older male student are talking about the summer intensive courses.",
+    "question": "Which course will the female student sign up for?",
+    "lines": [
+     "I still need two more credits from the summer intensive courses. Which one do you think is good?",
+     "I'd recommend Regional Economics. There's no exam — you just walk around town and write a report.",
+     "Oh, that sounds good. ...Ah, but it's in the second week of September, isn't it? That clashes with my seminar's camp. I'm free in the first week of August, though.",
+     "Early August, huh. Then it's Introduction to Psychology, Environmental Science, or Film and Media Culture.",
+     "I took something similar to the psychology one in my first year. Apparently another course in the same field doesn't count for credit.",
+     "I see. What about Environmental Science? People say the lecturer explains things really clearly.",
+     "But I heard there's a calculation assignment every day. Numbers and I just don't...",
+     "So that leaves one. That one has a group presentation on the last day — are you OK with that?",
+     "As long as I'm not on my own, I think I'll manage. I'll go with that."
+    ],
+    "options": [
+     "Regional Economics",
+     "Introduction to Psychology",
+     "Film and Media Culture",
+     "Environmental Science"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：学长说八月初有「心理学入門と、環境科学と、映像文化論」，排除两门后说「残りは一つか」，女学生说「それにします」。\n推理：地域经济论在九月，和集训冲突；心理学她修过类似的，不算学分；环境科学每天有计算作业，她不擅长。剩下的影像文化论虽然有分组发表，她说能应付，所以报这门。\n容易错：影像文化论的名字只出现一次，之后只说「残りは一つ」「あれ」「それ」。",
+   "en": "Evidence: The senior lists the early-August courses, 「心理学入門と、環境科学と、映像文化論」; after two are ruled out he says 「残りは一つか」, and she says 「それにします」.\nReasoning: Regional Economics is in September and clashes with her seminar camp; psychology wouldn't count because she took a similar course; Environmental Science has daily calculation work, which she's bad at. That leaves Film and Media Culture, whose group presentation she can handle.\nTrap: the course is named only once; afterwards it is just 「残りは一つ」, 「あれ」, 「それ」."
+  },
+  "wrong": [
+   {
+    "zh": "学长推荐的这门在九月第二周，和研讨班集训冲突。",
+    "en": "The recommended course is in September and clashes with her seminar camp."
+   },
+   {
+    "zh": "她一年级修过类似的课，同一领域不算学分。",
+    "en": "She took a similar course, so it wouldn't count for credit."
+   },
+   null,
+   {
+    "zh": "每天有计算作业，她不擅长数字。",
+    "en": "It has daily calculation assignments, and she's bad with numbers."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n2-ck-133",
+  "type": "kadai",
+  "scene": "会社で、男の人と課長が、取引先への訪問について話しています。",
+  "question": "二人はいつ取引先を訪問しますか。",
+  "lines": [
+   [
+    "M",
+    "課長、水曜日の山川工業さんへの訪問ですが、先方から、日を変えてもらえないかと連絡がありまして。木曜か金曜なら都合がつくそうです。"
+   ],
+   [
+    "F",
+    "木曜は、私、大阪に出張なのよね。今回は値段の話になるから、私も一緒に行かないと。"
+   ],
+   [
+    "M",
+    "では、金曜でしょうか。午前中は先方の会議があるそうで、午後になりますが。"
+   ],
+   [
+    "F",
+    "金曜の午後って、あなた、安全研修じゃなかった？"
+   ],
+   [
+    "M",
+    "あ、そうでした。でも、研修なら来月にも同じものがありますから、そちらに回してもらえば……。"
+   ],
+   [
+    "F",
+    "あれは今月中に受けることになってるから、動かせないわよ。来週の月曜は？"
+   ],
+   [
+    "M",
+    "見積もりの返事が金曜までなので、それでは間に合いません。"
+   ],
+   [
+    "F",
+    "そうか。うーん……あ、大阪の会議は午前中で終わるんだった。昼の新幹線に乗れば、夕方には戻れるわ。先方、遅い時間でもいいかしら。"
+   ],
+   [
+    "M",
+    "四時以降なら何時でも、とおっしゃっていました。"
+   ],
+   [
+    "F",
+    "じゃあ、その日で決まりね。先方に伝えておいて。"
+   ]
+  ],
+  "options": [
+   "水曜日",
+   "木曜日",
+   "金曜日",
+   "来週の月曜日"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在公司，男人和科长在谈拜访客户的事。",
+    "question": "两人什么时候去拜访客户？",
+    "lines": [
+     "科长，星期三去山川工业拜访的事，对方来联系说能不能改个日子。说星期四或星期五可以。",
+     "星期四我要去大阪出差啊。这次要谈价格，我也得一起去。",
+     "那就星期五？听说上午对方有会，得是下午。",
+     "星期五下午，你不是有安全培训吗？",
+     "啊，对了。不过培训下个月也有同样的，让他们把我调到那一期的话……",
+     "那个规定这个月之内要参加，动不了的。下周一呢？",
+     "报价的答复期限是星期五，那样就来不及了。",
+     "是吗。嗯……啊，大阪的会上午就结束了。坐中午的新干线，傍晚能赶回来。对方晚一点的时间行吗？",
+     "他们说四点以后几点都行。",
+     "那就定那天了。你跟对方说一声。"
+    ],
+    "options": [
+     "星期三",
+     "星期四",
+     "星期五",
+     "下周一"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a man and his section manager are talking about a visit to a client.",
+    "question": "When will the two of them visit the client?",
+    "lines": [
+     "About Wednesday's visit to Yamakawa Industries — they've asked whether we could change the day. They say Thursday or Friday would work.",
+     "On Thursday I'm away in Osaka. This time we'll be talking prices, so I have to go with you.",
+     "Friday, then? They have a meeting in the morning, so it would be the afternoon.",
+     "Friday afternoon — don't you have the safety training then?",
+     "Oh, that's right. But the same training runs next month too, so if I ask to be moved to that one...",
+     "You're required to take it this month, so it can't be moved. What about next Monday?",
+     "Our reply on the estimate is due by Friday, so that would be too late.",
+     "I see. Hmm... oh, the Osaka meeting finishes in the morning. If I take a midday Shinkansen, I can be back by early evening. Would a late time suit them?",
+     "They said any time from four o'clock on is fine.",
+     "Then that day it is. Let them know."
+    ],
+    "options": [
+     "Wednesday",
+     "Thursday",
+     "Friday",
+     "Next Monday"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：科长说「大阪の会議は午前中で終わるんだった。昼の新幹線に乗れば、夕方には戻れるわ」，接着说「その日で決まりね」。\n推理：大阪出差是星期四（「木曜は、私、大阪に出張」），科长傍晚能回来，对方四点以后都可以，所以定在星期四。星期三对方要求改；星期五下午男的有动不了的培训；下周一赶不上星期五的报价期限。\n容易错：星期四一开始被科长否定了，最后又回到这一天，而且只说「その日」。",
+   "en": "Evidence: The manager says 「大阪の会議は午前中で終わるんだった。昼の新幹線に乗れば、夕方には戻れるわ」 and then 「その日で決まりね」.\nReasoning: The Osaka trip is on Thursday (「木曜は、私、大阪に出張」); she can be back by early evening and the client is free from four, so it's Thursday. The client asked to move Wednesday; on Friday afternoon he has training that can't be moved; next Monday misses Friday's deadline for the estimate.\nTrap: Thursday is rejected at first and comes back at the end, named only as 「その日」."
+  },
+  "wrong": [
+   {
+    "zh": "星期三是原定的日子，对方要求改期。",
+    "en": "Wednesday was the original day, which the client asked to change."
+   },
+   null,
+   {
+    "zh": "星期五下午男的有安全培训，必须这个月参加，动不了。",
+    "en": "On Friday afternoon he has training that can't be moved."
+   },
+   {
+    "zh": "报价的答复期限是星期五，下周一来不及。",
+    "en": "The estimate is due Friday, so next Monday is too late."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n2-ck-134",
+  "type": "kadai",
+  "scene": "ホテルのフロントで、女の人と係の人が話しています。",
+  "question": "女の人は明日、何時のバスに乗りますか。",
+  "lines": [
+   [
+    "F",
+    "明日、空港までバスで行きたいんですが、午前中は何時のがありますか。"
+   ],
+   [
+    "M",
+    "九時から三十分おきに出ておりまして、空港までは四十分ほどです。飛行機は何時のご出発ですか。"
+   ],
+   [
+    "F",
+    "一時です。国際線なので、二時間前には着いていたいんですけど、朝、駅前の市場をのぞきたいので、できるだけ遅いのがいいんです。"
+   ],
+   [
+    "M",
+    "十一時にお着きになればよろしいんですね。十時半のバスですと十一時を過ぎてしまいますので、十時のバスになります。ただ、午前中は道が込みまして、三十分ほど余計にかかることがございます。念のため、もう一本早いのになさったほうが安心かと思います。"
+   ],
+   [
+    "F",
+    "うーん、それだと、市場はあきらめるしかないかな……。"
+   ],
+   [
+    "M",
+    "あ、失礼いたしました。明日は日曜日でしたね。日曜は通勤の車がございませんので、ほぼ時間どおりに着きます。"
+   ],
+   [
+    "F",
+    "よかった。じゃあ、早いほうにしなくても大丈夫ですね。"
+   ],
+   [
+    "M",
+    "はい。お席のご予約を承りましょうか。"
+   ],
+   [
+    "F",
+    "お願いします。"
+   ]
+  ],
+  "options": [
+   "9時",
+   "9時半",
+   "10時",
+   "10時半"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在酒店前台，女人和工作人员在交谈。",
+    "question": "女人明天坐几点的巴士？",
+    "lines": [
+     "明天我想坐巴士去机场，上午有几点的？",
+     "从九点起每三十分钟一班，到机场四十分钟左右。您的航班是几点起飞？",
+     "一点。是国际航班，想提前两个小时到，不过早上我想去车站前的市场逛逛，所以越晚越好。",
+     "十一点到就可以对吧。十点半的车会过十一点，所以是十点那班。不过上午路上堵，有时要多花三十分钟左右。保险起见，再提前一班会比较放心。",
+     "嗯……那样的话，市场只好放弃了吧……",
+     "啊，对不起。明天是星期天啊。星期天没有上班的车，基本上能按时到。",
+     "太好了。那就不用坐早的那班了吧。",
+     "是的。要帮您预订座位吗？",
+     "麻烦了。"
+    ],
+    "options": [
+     "9点",
+     "9点半",
+     "10点",
+     "10点半"
+    ]
+   },
+   "en": {
+    "scene": "At a hotel front desk, a woman is talking to a staff member.",
+    "question": "What time is the bus the woman will take tomorrow?",
+    "lines": [
+     "I'd like to take the bus to the airport tomorrow. What times are there in the morning?",
+     "They leave every thirty minutes from nine, and it takes about forty minutes to the airport. What time is your flight?",
+     "One o'clock. It's an international flight, so I want to be there two hours ahead, but I'd like to look round the market by the station in the morning, so the later the better.",
+     "So you need to arrive by eleven. The 10:30 bus would get there after eleven, so it would be the ten o'clock bus. However, the roads are busy in the morning and it can take about thirty minutes longer. To be safe, I'd suggest the one before that.",
+     "Hmm, then I suppose I'd have to give up on the market...",
+     "Oh, I beg your pardon. Tomorrow is Sunday, isn't it? There's no commuter traffic on Sundays, so the bus arrives more or less on time.",
+     "Oh, good. So I don't need to take the earlier one, then.",
+     "That's right. Shall I reserve a seat for you?",
+     "Yes, please."
+    ],
+    "options": [
+     "9:00",
+     "9:30",
+     "10:00",
+     "10:30"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：工作人员说「十時半のバスですと十一時を過ぎてしまいますので、十時のバスになります」，后来又说「明日は日曜日でしたね。……ほぼ時間どおりに着きます」，女的说「早いほうにしなくても大丈夫ですね」。\n推理：一点的航班要十一点到机场，车程四十分钟，十点的车十点四十到。工作人员担心堵车，建议提前一班（九点半），但明天是星期天不堵，所以还是坐十点的。\n容易错：「もう一本早いの」是九点半，被星期天这句话取消了；十点半的车到机场已过十一点。",
+   "en": "Evidence: The clerk says 「十時半のバスですと十一時を過ぎてしまいますので、十時のバスになります」, later 「明日は日曜日でしたね。……ほぼ時間どおりに着きます」, and she says 「早いほうにしなくても大丈夫ですね」.\nReasoning: For a one o'clock flight she must arrive by eleven; the ride is forty minutes, so the 10:00 bus arrives at 10:40. He suggests the one before (9:30) because of traffic, but tomorrow is Sunday and there is none, so she keeps the 10:00.\nTrap: 「もう一本早いの」 is the 9:30, withdrawn by the Sunday remark; the 10:30 arrives after eleven."
+  },
+  "wrong": [
+   {
+    "zh": "九点是头班车，没有人建议坐这一班。",
+    "en": "Nine is just the first bus; nobody suggests taking it."
+   },
+   {
+    "zh": "这是怕堵车才建议的；明天是星期天不堵，不用提前。",
+    "en": "That was suggested for traffic, but tomorrow is Sunday and there's none."
+   },
+   null,
+   {
+    "zh": "十点半的车到机场已经过十一点，来不及提前两小时。",
+    "en": "The 10:30 arrives after eleven, less than two hours before the flight."
+   }
+  ],
+  "traps": [
+   "number",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n2-ck-135",
+  "type": "kadai",
+  "scene": "女の人が、通信販売の会社の人と電話で話しています。",
+  "question": "女の人はかばんをどこに送りますか。",
+  "lines": [
+   [
+    "F",
+    "先日そちらで注文したかばんが届いたんですが、開けてみたら、ファスナーが閉まらなくて。"
+   ],
+   [
+    "M",
+    "大変申し訳ございません。すぐに新しいものとお取り替えいたします。"
+   ],
+   [
+    "F",
+    "箱に入っていた紙には、返品は配送センターへって書いてあるんですが、そこに送ればいいですか。"
+   ],
+   [
+    "M",
+    "いえ、そちらは、色や大きさが合わないといった、お客様のご都合での返品の場合でして。今回のような場合は、原因を調べる必要がございますので、検査の担当がおります東京の本社のほうへお願いしております。"
+   ],
+   [
+    "F",
+    "そうなんですか。修理センターっていうのも書いてありますけど。"
+   ],
+   [
+    "M",
+    "そちらは、お使いになっているうちに壊れたものをお直しするところでして。今回は修理ではなく、交換とさせていただきます。"
+   ],
+   [
+    "F",
+    "わかりました。あ、うちの近くにお店があるんですけど、そこに持っていくのはだめですか。"
+   ],
+   [
+    "M",
+    "申し訳ございません。店舗では、通信販売の商品はお受けできないことになっておりまして。送料はこちらで負担いたしますので、着払いでお送りください。"
+   ],
+   [
+    "F",
+    "はい。じゃあ、今日中に出します。"
+   ]
+  ],
+  "options": [
+   "東京の本社",
+   "配送センター",
+   "近くの店",
+   "修理センター"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "女人在和邮购公司的人通电话。",
+    "question": "女人把包寄到哪里？",
+    "lines": [
+     "前几天在你们那儿订的包到了，可是打开一看，拉链拉不上。",
+     "实在对不起。我们马上给您换一个新的。",
+     "箱子里的那张纸上写着退货请寄到配送中心，寄到那儿就行吗？",
+     "不，那是颜色、大小不合适这类因客人自身原因退货的情况。像这次这种情况，需要调查原因，所以请寄到有检验负责人的东京总公司。",
+     "是这样啊。上面还写着一个维修中心。",
+     "那是修理使用过程中坏掉的东西的地方。这次不是修理，而是给您更换。",
+     "知道了。啊，我家附近有你们的店，拿到那儿去不行吗？",
+     "非常抱歉，店铺规定不能受理邮购的商品。运费由我们承担，请用到付寄出。",
+     "好的。那我今天之内寄出。"
+    ],
+    "options": [
+     "东京的总公司",
+     "配送中心",
+     "附近的店",
+     "维修中心"
+    ]
+   },
+   "en": {
+    "scene": "A woman is talking on the phone with someone at a mail-order company.",
+    "question": "Where will the woman send the bag?",
+    "lines": [
+     "The bag I ordered from you the other day has arrived, but when I opened the box, the zip wouldn't close.",
+     "I'm terribly sorry. We'll replace it with a new one right away.",
+     "The sheet in the box says returns go to the distribution centre. Should I send it there?",
+     "No, that's for returns for the customer's own reasons, such as the wrong colour or size. In a case like this we need to look into the cause, so we ask you to send it to our Tokyo head office, where the inspection staff are.",
+     "I see. It also mentions a repair centre.",
+     "That's where we fix items that break while in use. This time it will be a replacement, not a repair.",
+     "All right. Oh, there's one of your shops near my home — couldn't I take it there?",
+     "I'm sorry, but our shops can't accept mail-order goods. We'll cover the postage, so please send it cash on delivery.",
+     "All right. I'll send it off today."
+    ],
+    "options": [
+     "The Tokyo head office",
+     "The distribution centre",
+     "A shop near her home",
+     "The repair centre"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：公司的人说「今回のような場合は、原因を調べる必要がございますので……東京の本社のほうへお願いしております」。\n推理：到货就有毛病的商品要查原因，所以寄到总公司。配送中心只收因客人自身原因的退货；维修中心修的是用坏的东西，这次是更换；店铺不受理邮购商品。\n容易错：纸上写的「返品は配送センターへ」是另一种情况；「東京の本社」只说了一次。",
+   "en": "Evidence: The company says 「今回のような場合は、原因を調べる必要がございますので……東京の本社のほうへお願いしております」.\nReasoning: A product that arrives faulty has to be examined, so it goes to the head office. The distribution centre takes returns made for the customer's own reasons; the repair centre fixes things that break in use, and this is a replacement; the shops can't accept mail-order goods.\nTrap: the printed 「返品は配送センターへ」 covers a different case; 「東京の本社」 is said only once."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "配送中心只收颜色、大小不合适等因客人原因的退货。",
+    "en": "The distribution centre is for returns made for the customer's own reasons."
+   },
+   {
+    "zh": "店铺不能受理邮购的商品。",
+    "en": "The shops can't accept mail-order goods."
+   },
+   {
+    "zh": "维修中心修的是用坏的东西；这次是更换，不是修理。",
+    "en": "The repair centre fixes items broken in use; this is a replacement."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n2-ck-136",
+  "type": "kadai",
+  "scene": "レストランで、アルバイトの男の人と先輩の女の人が話しています。",
+  "question": "男の人はこのあとだれに連絡しますか。",
+  "lines": [
+   [
+    "M",
+    "先輩、来週の土曜、大学の試験と重なっちゃって、休みたいんですけど、店長に言えばいいですか。"
+   ],
+   [
+    "F",
+    "店長は今週、新しい店の準備で、ずっと向こうに行ってるよ。電話しても、なかなか出られないと思う。"
+   ],
+   [
+    "M",
+    "じゃあ、副店長の森さんに？"
+   ],
+   [
+    "F",
+    "森さんは、仕入れの担当だからね。シフトの表は、今月から木村さんが作ってるの。知らなかった？"
+   ],
+   [
+    "M",
+    "え、そうなんですか。店長だとばかり思ってました。"
+   ],
+   [
+    "F",
+    "店長、忙しくなったから、任せたんだって。ただね、休むときは、代わりに入れる人を自分で見つけてからっていう決まりだよ。"
+   ],
+   [
+    "M",
+    "そうでした……。今から、ほかのアルバイトの人に聞いて回らないと。"
+   ],
+   [
+    "F",
+    "土曜でしょ。私、その日なら空いてるから、入ってあげてもいいよ。"
+   ],
+   [
+    "M",
+    "本当ですか。助かります。"
+   ],
+   [
+    "F",
+    "じゃあ、私が代わるってことも、一緒に伝えといてね。今日は休みのはずだから、メールで。"
+   ]
+  ],
+  "options": [
+   "店長",
+   "森さん",
+   "ほかのアルバイトの人",
+   "木村さん"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "在餐厅，打工的男人和女前辈在交谈。",
+    "question": "男人接下来联系谁？",
+    "lines": [
+     "前辈，下周六跟大学的考试撞上了，我想请假，跟店长说就行吗？",
+     "店长这周为了新店的筹备，一直在那边。打电话估计也很难接。",
+     "那就找副店长森先生？",
+     "森先生是管进货的。排班表从这个月起是木村做的。你不知道？",
+     "啊，是吗？我一直以为是店长。",
+     "听说店长忙起来了，就交出去了。不过啊，规定是请假要先自己找好替班的人。",
+     "对了……那我现在得挨个去问其他打工的人了。",
+     "是周六吧。我那天有空，可以替你上。",
+     "真的吗？太感谢了。",
+     "那你把我替你这件事也一起说一下。今天应该是休息，发邮件吧。"
+    ],
+    "options": [
+     "店长",
+     "森先生",
+     "其他打工的人",
+     "木村"
+    ]
+   },
+   "en": {
+    "scene": "At a restaurant, a male part-timer is talking to a more senior female co-worker.",
+    "question": "Whom will the man contact next?",
+    "lines": [
+     "Next Saturday clashes with an exam at university, so I'd like the day off. Should I tell the manager?",
+     "The manager's over at the new branch all this week getting it ready. Even if you phone, I doubt he can pick up.",
+     "Then Mr Mori, the assistant manager?",
+     "Mr Mori's in charge of buying stock. Since this month it's Kimura who makes the shift table. Didn't you know?",
+     "Oh, really? I was sure it was the manager.",
+     "He got too busy, so he handed it over, apparently. But the rule is that before you take a day off, you find someone to cover for you yourself.",
+     "That's right... I'll have to go round asking the other part-timers now.",
+     "It's Saturday, right? I'm free that day, so I could cover for you.",
+     "Really? That's a big help.",
+     "Then mention that I'm covering for you when you tell her. She should be off today, so do it by email."
+    ],
+    "options": [
+     "The manager",
+     "Mr Mori",
+     "The other part-timers",
+     "Kimura"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：前辈说「シフトの表は、今月から木村さんが作ってるの」，最后说「私が代わるってことも、一緒に伝えといてね。今日は休みのはずだから、メールで」。\n推理：排班由木村负责，所以请假要告诉木村，并说明前辈替班。店长在新店很难联系上，而且已经不管排班；森先生管进货；前辈答应替班，不用再去问别的打工的人。\n容易错：最后一句没有说名字，要记住排班表是谁做的。",
+   "en": "Evidence: The senior says 「シフトの表は、今月から木村さんが作ってるの」 and finally 「私が代わるってことも、一緒に伝えといてね。今日は休みのはずだから、メールで」.\nReasoning: Kimura handles the shifts, so he tells Kimura about the day off and that the senior will cover. The manager is at the new branch, hard to reach, and no longer does the shifts; Mr Mori handles purchasing; since the senior offers to cover, he needn't ask the other part-timers.\nTrap: the last line gives no name — you have to remember who makes the shift table."
+  },
+  "wrong": [
+   {
+    "zh": "店长在新店很难联系上，而且排班已经交给别人了。",
+    "en": "The manager is hard to reach and no longer makes the shift table."
+   },
+   {
+    "zh": "森先生是管进货的，不管排班。",
+    "en": "Mr Mori is in charge of purchasing, not shifts."
+   },
+   {
+    "zh": "前辈答应替班，不用再找别人。",
+    "en": "The senior offers to cover, so he needn't ask anyone else."
+   },
+   null
+  ],
+  "traps": [
+   "someone-else",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n2-ck-137",
+  "type": "kadai",
+  "scene": "パン工場で、案内係の人が見学に来た人たちに話しています。",
+  "question": "見学に来た人たちはこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "皆様、本日は工場見学にお越しいただき、ありがとうございます。いつもですと、はじめに会社の歴史を紹介する映像をご覧いただくのですが、ただ今部屋が空いておりませんので、本日は最後にいたします。"
+   ],
+   [
+    "F",
+    "工場の中は清潔にしておかなければなりませんので、入る前に、白い上着と帽子を着けていただきます。あ、その前に、お荷物ですね。カメラや携帯電話も中にはお持ち込みいただけませんので、お着替えの前に、後ろのロッカーにすべてお預けください。"
+   ],
+   [
+    "F",
+    "上着を着ましたら、入り口で手を洗ってから、中に入ります。"
+   ]
+  ],
+  "options": [
+   "映像を見る",
+   "荷物を預ける",
+   "白い上着を着る",
+   "手を洗う"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在面包工厂，讲解员正在对来参观的人讲话。",
+    "question": "来参观的人接下来首先做什么？",
+    "lines": [
+     "各位，感谢大家今天来参观工厂。平时是先看介绍公司历史的影片，不过现在房间没有空，所以今天放到最后。",
+     "工厂里面必须保持清洁，所以进去之前请穿上白色上衣、戴上帽子。啊，在那之前，是各位的行李。相机和手机也不能带进去，所以换衣服之前，请全部存放到后面的储物柜里。",
+     "穿好上衣以后，在入口洗了手再进去。"
+    ],
+    "options": [
+     "看影片",
+     "寄存行李",
+     "穿白色上衣",
+     "洗手"
+    ]
+   },
+   "en": {
+    "scene": "At a bread factory, a guide is speaking to a group of visitors.",
+    "question": "What will the visitors do first?",
+    "lines": [
+     "Thank you all for coming on our factory tour today. Normally we begin with a film about the company's history, but the room isn't free at the moment, so today we'll show it last.",
+     "The factory floor has to be kept clean, so before going in you'll put on a white coat and a cap. Oh — before that, your belongings. Cameras and mobile phones can't be taken inside either, so before you change, please leave everything in the lockers behind you.",
+     "Once you have your coats on, we'll wash our hands at the entrance and then go in."
+    ],
+    "options": [
+     "Watch a film",
+     "Leave their belongings",
+     "Put on a white coat",
+     "Wash their hands"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：讲解员说「あ、その前に、お荷物ですね。……お着替えの前に、後ろのロッカーにすべてお預けください。」\n推理：顺序是：存行李 → 穿上衣、戴帽子 → 在入口洗手 → 进工厂。影片平时最先看，但今天「本日は最後にいたします」。所以首先存行李。\n容易错：先说的是穿上衣，然后才用「その前に」补上存行李；影片的顺序今天换了。",
+   "en": "Evidence: The guide says 「あ、その前に、お荷物ですね。……お着替えの前に、後ろのロッカーにすべてお預けください。」\nReasoning: The order is: lockers → coat and cap → wash hands at the entrance → go in. The film usually comes first, but today 「本日は最後にいたします」. So the first thing is to leave their belongings.\nTrap: the coat is mentioned first and the lockers are added afterwards with 「その前に」; the film has been moved to the end today."
+  },
+  "wrong": [
+   {
+    "zh": "平时先看影片，但今天房间没有空，改到最后。",
+    "en": "The film normally comes first, but today it has been moved to the end."
+   },
+   null,
+   {
+    "zh": "穿上衣之前要先把行李存进储物柜。",
+    "en": "Belongings go into the lockers before changing."
+   },
+   {
+    "zh": "洗手是穿好上衣以后、在入口做的事。",
+    "en": "Hand-washing comes after the coats, at the entrance."
+   }
+  ],
+  "traps": [
+   "order",
+   "later"
+  ]
  }
 ]

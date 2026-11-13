@@ -811,5 +811,45 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n3-l50-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson50#1"
+    ],
+    "difficulty": 2,
+    "stem": "同僚に頼まれて今度の日曜日に出勤する（　）、来週の水曜日に休みをもらうことになった。",
+    "options": [
+      "ついでに",
+      "たびに",
+      "とおりに",
+      "代わりに"
+    ],
+    "answer": 3,
+    "full": "同僚に頼まれて今度の日曜日に出勤する代わりに、来週の水曜日に休みをもらうことになった。",
+    "tr": {
+      "zh": "受同事之托这个星期天去上班，作为交换，下周三休息一天。",
+      "en": "A colleague asked me to work this Sunday, and in return I get next Wednesday off."
+    },
+    "why": {
+      "zh": "线索：前面是「日曜日に出勤する」，后面是「水曜日に休みをもらう」：用一件事换另一件事。\n规则：「动词普通形＋代わりに」＝作为……的交换、补偿，做了前面的事，就得到（或付出）后面的事。\n辨析：「〜代わりに」＝交换、补偿（手伝う代わりに昼ご飯をごちそうしてもらう）；「〜ついでに」＝利用做A的机会顺便做B，两件事要在同一个机会里做，而星期天和下周三是不同的日子。",
+      "en": "Clue: 「日曜日に出勤する」 before the blank, 「水曜日に休みをもらう」 after it: one thing in return for the other.\nRule: Verb plain form + 「代わりに」 = \"in exchange for, to make up for\": doing the first brings (or costs) the second.\nContrast: 「〜代わりに」 = exchange (手伝う代わりに昼ご飯をごちそうしてもらう); 「〜ついでに」 = doing B on the same occasion as A, but Sunday and next Wednesday are different days."
+    },
+    "wrong": [
+      {
+        "zh": "「ついでに」是“顺便”，要利用同一个机会做另一件事，星期天上班和星期三休息不是同一个机会。",
+        "en": "「ついでに」 means \"while I'm at it\", using the same occasion; working Sunday and taking Wednesday off aren't one occasion."
+      },
+      {
+        "zh": "「たびに」是“每次……都”，表示反复，而这里说的是「今度の日曜日」这一次。",
+        "en": "「たびに」 means \"every time\", something repeated; this is about one time, 「今度の日曜日」."
+      },
+      {
+        "zh": "「とおりに」是“按照……那样”，“按照上班那样休息”意思不通。",
+        "en": "「とおりに」 means \"exactly as\"; \"take a day off exactly as I work\" makes no sense."
+      },
+      null
+    ]
   }
 ]

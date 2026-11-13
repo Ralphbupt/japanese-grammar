@@ -793,5 +793,302 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n2-dk-309",
+    "type": "mid",
+    "difficulty": 3,
+    "passage": "入社五年目の春、初めて新入社員の指導を任された。正直に言えば、気が重かった。自分の仕事だけでも手一杯なのに、人に教える時間まで取られるのは損だと思ったからだ。教えるというのは、自分がすでに持っている知識を相手に分けてやることで、与える側には何も残らない。そう考えていたのである。\nところが、教え始めてすぐ、私は言葉に詰まった。注文を受けたら必ず在庫を二度確認する、という手順を説明したとき、新人に「一度ではいけないのですか」と聞かれたのだ。答えられなかった。先輩に教わったとおりに続けてきただけで、理由を考えたことがなかったからである。古い記録を調べてみると、十年ほど前に、確認の漏れから取引先に大きな損害を与えたことがあり、それ以来の決まりだと分かった。\n同じようなことは、その後も何度もあった。そのたびに調べたり考えたりしているうちに、ばらばらに覚えていた手順が互いにつながり、仕事の全体が見えるようになってきた。分かっているつもりだったことが、説明しようとして初めて、分かっていなかったと明らかになる。新人の素朴な質問は、私の知識の穴を照らしてくれたのだ。\n一年が過ぎた今、あの指導でいちばん多くを学んだのは、新人ではなく私自身だったと思う。教えることは、知識を一方的に渡すことではない。相手の疑問を借りて、自分の理解を作り直すことなのである。後輩の指導を負担としか感じられない人には、ぜひそう伝えたい。",
+    "tr": {
+      "zh": "进公司第五年的春天，我第一次被安排指导新员工。说实话，心情很沉重。光是自己的工作就已经忙不过来了，连教人的时间都要被占去，我觉得很吃亏。所谓教，就是把自己已经有的知识分给对方，给的一方什么也留不下。我当时就是这么想的。\n可是，刚开始教，我就说不出话来了。在说明“接到订单后一定要确认两次库存”这个步骤时，新人问我：“一次不行吗？”我答不上来。因为我只是照着前辈教的一直做下来，从来没有想过理由。查了旧的记录才知道，大约十年前，曾因为确认上的疏漏给客户造成过很大的损失，这是从那以后定下的规矩。\n类似的事后来又有过好多次。每次去查、去想，原来零零散散记住的步骤就互相连了起来，渐渐看得见工作的全貌了。自以为懂的事情，要到想说明的时候才第一次发现其实并不懂。新人朴素的提问，照出了我知识上的漏洞。\n一年过去了，现在我觉得，在那次指导中学到最多的，不是新人，而是我自己。教，并不是单方面地把知识交出去，而是借对方的疑问，重新建立自己的理解。对那些只把指导后辈看成负担的人，我很想把这一点告诉他们。",
+      "en": "In the spring of my fifth year at the company, I was put in charge of training a new employee for the first time. To be honest, my heart was heavy. I had my hands full with my own work, and having the time to teach someone taken from me as well seemed a loss. Teaching means handing out to someone else the knowledge you already have, and nothing is left for the giver. That was how I thought.\nBut soon after I began teaching, I was lost for words. When I explained the procedure of always checking the stock twice on receiving an order, the newcomer asked, 'Isn't once enough?' I couldn't answer. I had simply carried on as my seniors taught me and had never thought about the reason. Looking through old records, I found that about ten years earlier a missed check had caused a client great damage, and that the rule dated from then.\nThe same sort of thing happened many times afterwards. As I looked things up and thought them through each time, procedures I had memorised separately linked up with one another, and I came to see the work as a whole. Things I thought I understood turn out, only when I try to explain them, not to have been understood. The newcomer's simple questions lit up the holes in my knowledge.\nNow that a year has passed, I think the one who learned most from that training was not the newcomer but me. Teaching is not handing knowledge over one way. It is rebuilding your own understanding by borrowing the other person's questions. To those who can feel training a junior only as a burden, I very much want to say so."
+    },
+    "questions": [
+      {
+        "q": "「そう考えていた」とあるが、筆者はどう考えていたのか。",
+        "options": [
+          "新入社員の指導は、もっと経験の長い社員がするべきだ",
+          "人に教えても、教える側が得るものは何もない",
+          "自分の知識は、まだ人に教えられるほど多くはない",
+          "教える時間を減らせば、自分の仕事も早く終わる"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「教えるというのは、自分がすでに持っている知識を相手に分けてやることで、与える側には何も残らない。そう考えていたのである」。\n推理：「そう」指紧接在前面的一句：教只是把知识分给对方，给的一方什么也留不下。「与える側には何も残らない」＝选项的「教える側が得るものは何もない」。\n容易错：把前面「手一杯」的心情当成「そう」的内容；那是觉得“吃亏”的背景，不是对“教”的看法。",
+          "en": "Evidence: 「教えるというのは、自分がすでに持っている知識を相手に分けてやることで、与える側には何も残らない。そう考えていたのである」.\nReasoning: 「そう」 points to the sentence just before it: teaching only hands knowledge out, and the giver keeps nothing. 「与える側には何も残らない」 = the option's 「教える側が得るものは何もない」.\nTrap: Taking the earlier 「手一杯」 as what 「そう」 refers to; that is the background to feeling it a loss, not a view of teaching."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有说应该由谁来指导。",
+            "en": "The text never says who ought to do the training."
+          },
+          null,
+          {
+            "zh": "正好相反：作者以为教就是把「すでに持っている知識」分出去，并不觉得自己知识不够。",
+            "en": "The opposite: the writer saw teaching as handing out 「すでに持っている知識」, with no doubt about having enough."
+          },
+          {
+            "zh": "作者只是觉得时间被占去「損だ」，没有考虑减少教的时间。",
+            "en": "The writer only felt losing the time was 「損だ」; cutting teaching time isn't considered."
+          }
+        ]
+      },
+      {
+        "q": "筆者が新人の質問に答えられなかったのはなぜか。",
+        "options": [
+          "手順を教わったばかりで、まだよく覚えていなかったから",
+          "十年前の記録が、会社にはもう残っていなかったから",
+          "教わった手順に従うだけで、理由を考えてこなかったから",
+          "質問の内容が、自分の担当する仕事と関係がなかったから"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「答えられなかった。先輩に教わったとおりに続けてきただけで、理由を考えたことがなかったからである」。\n推理：紧接在「答えられなかった」后面的「…からである」直接说了理由：只是照前辈教的做下来，从没想过为什么。「教わったとおりに続けてきただけ」＝选项的「教わった手順に従うだけ」。\n容易错：记录是有的，作者后来查到了；步骤也是做了多年的，不是刚学。",
+          "en": "Evidence: 「答えられなかった。先輩に教わったとおりに続けてきただけで、理由を考えたことがなかったからである」.\nReasoning: The 「…からである」 right after 「答えられなかった」 gives the reason: the writer had just carried on as taught and never asked why. 「教わったとおりに続けてきただけ」 = the option's 「教わった手順に従うだけ」.\nTrap: The records did exist, since the writer found them later; and the procedure had been followed for years, not just learned."
+        },
+        "wrong": [
+          {
+            "zh": "作者是「続けてきた」，步骤早已熟悉，不知道的是理由。",
+            "en": "The writer had 「続けてきた」 the procedure and knew it well; what was missing was the reason."
+          },
+          {
+            "zh": "正好相反：作者查了旧记录，才知道规矩的由来。",
+            "en": "The opposite: the writer looked through the old records and found where the rule came from."
+          },
+          null,
+          {
+            "zh": "问的正是作者自己在说明的步骤。",
+            "en": "The question was about the very procedure the writer was explaining."
+          }
+        ]
+      },
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "options": [
+          "教えることは、自分の理解を見直して深める機会になる",
+          "新人の指導は負担が大きいので、会社が時間を与えるべきだ",
+          "仕事の手順は、理由が分からなくても守ることが大切だ",
+          "知識の多い人ほど、新人に分かりやすく教えることができる"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「教えることは、知識を一方的に渡すことではない。相手の疑問を借りて、自分の理解を作り直すことなのである」。\n推理：最后一段是结论：学得最多的是自己，教是借对方的疑问重新建立自己的理解。「自分の理解を作り直す」＝选项的「自分の理解を見直して深める」。\n容易错：第一段“教是负担、给的一方什么也留不下”是作者以前的想法，后面被自己推翻了。",
+          "en": "Evidence: 「教えることは、知識を一方的に渡すことではない。相手の疑問を借りて、自分の理解を作り直すことなのである」.\nReasoning: The last paragraph is the conclusion: the writer learned the most, and teaching rebuilds your own understanding through the other person's questions. 「自分の理解を作り直す」 = the option's 「自分の理解を見直して深める」.\nTrap: The first paragraph's view (a burden, nothing left for the giver) is what the writer used to think and later overturned."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "作者想对只把指导看成负担的人说它有收获，没有要求公司给时间。",
+            "en": "The writer wants to tell those who see training only as a burden that it pays off; no demand is made of the company."
+          },
+          {
+            "zh": "作者正是因为不知道理由而答不上来，去查了理由之后才看见工作的全貌。",
+            "en": "Not knowing the reason is exactly what left the writer unable to answer; finding the reasons brought the whole job into view."
+          },
+          {
+            "zh": "文中没有说知识多的人教得好；作者反而发现了自己知识的漏洞。",
+            "en": "Nothing says knowledgeable people teach better; the writer instead found holes in their own knowledge."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-310",
+    "type": "mid",
+    "difficulty": 3,
+    "passage": "スーパーで牛乳を買うとき、私は長い間、棚の奥に手を伸ばしていた。奥にあるものほど期限の日付が新しいからだ。同じ値段なら少しでも新しいほうが得だと考えるのは、買い物をする者として当然の知恵だと思っていた。\nその習慣を見直すきっかけになったのは、近所の店でアルバイトをしている学生の話である。彼によると、手前に並べた商品は期限が近づいても売れ残りやすく、閉店後に毎日かなりの量を捨てているという。まだ十分に食べられるものばかりだそうだ。「奥から取っていくお客さんは、今日飲む分でも奥から取るんです」と彼は苦笑いした。私は耳が痛かった。牛乳は二、三日で飲み切ってしまうのに、一週間も先の日付を選んでいたのは、まさに私だったからだ。\n食品が大量に捨てられている問題について、私はこれまで、作りすぎる企業や、売れ残りを出す店の責任だと考えていた。しかし、店が多めに商品を並べるのは、棚が空いていると客が離れてしまうからであり、期限の近いものが残るのは、客がそれを避けるからである。捨てられる食品の山は、私たち一人一人の小さな選択が積み重なったものでもあったのだ。そう考えると、店や企業だけを責めることはできなくなった。\n今は、すぐに使うものは手前から取るようにしている。もちろん、それだけで問題が解決するとは思わない。それでも、誰かを責める前に、自分の「当然の知恵」を疑ってみることから始めたいのである。",
+    "tr": {
+      "zh": "在超市买牛奶的时候，我长期以来都是把手伸到货架的里面去拿。因为越靠里面的，保质期的日期越新。同样的价钱，哪怕新一点也更划算——我一直以为这样想是买东西的人理所当然的智慧。\n让我重新审视这个习惯的，是在附近店里打工的一个学生说的话。据他说，摆在前面的商品即使快到期了也容易卖剩下，每天关门以后要扔掉相当多，而且据说全是还完全可以吃的东西。他苦笑着说：“从里面拿的客人，就算是今天要喝的也从里面拿。”我听了很惭愧。因为牛奶明明两三天就喝完了，却去挑一个星期以后的日期的，正是我自己。\n关于食品被大量扔掉的问题，我以前一直认为是生产过多的企业和卖剩下的商店的责任。但是，商店之所以多摆商品，是因为货架空着客人就会走掉；快到期的东西之所以剩下，是因为客人避开它。被扔掉的食品堆成的山，也是我们每一个人小小的选择累积起来的。这样一想，就没法只责备商店和企业了。\n现在，马上要用的东西我都尽量从前面拿。当然，我并不认为光靠这个问题就能解决。即便如此，在责备别人之前，我还是想从怀疑自己那“理所当然的智慧”开始。",
+      "en": "When buying milk at the supermarket, I used for a long time to reach to the back of the shelf, because the further back an item is, the later its date. I thought that reckoning the fresher one a better deal at the same price was the natural wisdom of a shopper.\nWhat made me rethink the habit was something said by a student who works part-time at a shop nearby. According to him, the items placed at the front tend to go unsold even as their date approaches, and quite a lot are thrown away every day after closing, all of it still perfectly good to eat, he says. 'Customers who take from the back take from the back even when they'll drink it today,' he said with a wry smile. It stung to hear. Although I finish milk in two or three days, the one choosing a date a whole week ahead was none other than me.\nAs for the problem of food being thrown away in large amounts, I had until then thought it the responsibility of companies that make too much and shops that are left with unsold stock. But shops put out plenty of goods because customers drift away when shelves are empty, and the items near their date are left because customers avoid them. The mountain of discarded food was also the piling up of small choices by each one of us. Seeing it that way, I could no longer blame only the shops and companies.\nNow I take things I will use soon from the front. Of course, I don't think that alone will solve the problem. Even so, before blaming anyone, I want to begin by doubting my own 'natural wisdom'."
+    },
+    "questions": [
+      {
+        "q": "「私は耳が痛かった」とあるが、なぜか。",
+        "options": [
+          "学生が店の客について、失礼な言い方をしたと感じたから",
+          "店で毎日捨てられている量が、想像よりずっと多かったから",
+          "期限の近い牛乳を買って、飲めずに捨てたことがあったから",
+          "すぐ飲むのに新しい日付の物を選ぶ客が、自分だったから"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「牛乳は二、三日で飲み切ってしまうのに、一週間も先の日付を選んでいたのは、まさに私だったからだ」。\n推理：「耳が痛い」是别人的话正好说中自己的缺点、听着难受的意思。紧接着的「…からだ」说明了理由：学生说的那种“今天喝也从里面拿”的客人，正是作者自己。\n容易错：按字面理解成“被数量吓到”或“觉得学生失礼”，都不是这个惯用语的意思。",
+          "en": "Evidence: 「牛乳は二、三日で飲み切ってしまうのに、一週間も先の日付を選んでいたのは、まさに私だったからだ」.\nReasoning: 「耳が痛い」 means someone's words hit your own fault and are painful to hear. The following 「…からだ」 gives the reason: the customer the student described, taking from the back even for milk drunk today, was the writer.\nTrap: Reading it as being shocked by the amount, or as finding the student rude; neither is what the idiom means."
+        },
+        "wrong": [
+          {
+            "zh": "作者没有觉得学生失礼，而是觉得说的正是自己。",
+            "en": "The writer didn't find the student rude; the remark fitted the writer exactly."
+          },
+          {
+            "zh": "扔掉的量多是学生说的事实，但「耳が痛かった」的理由在后面的「まさに私だったからだ」。",
+            "en": "The amount discarded is a fact the student reports, but the reason for 「耳が痛かった」 is the following 「まさに私だったからだ」."
+          },
+          {
+            "zh": "文中说作者的牛奶「二、三日で飲み切ってしまう」，没有扔过。",
+            "en": "The writer's milk is 「二、三日で飲み切ってしまう」; none was thrown away."
+          },
+          null
+        ]
+      },
+      {
+        "q": "筆者によると、店が商品を多めに並べるのはなぜか。",
+        "options": [
+          "期限の近い商品を、新しい商品の奥に置いておきたいから",
+          "棚に商品が少ないと、客が来なくなってしまうから",
+          "多く仕入れたほうが、一つあたりの値段が安くなるから",
+          "売れ残りが出ても、店が損をすることはないから"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「店が多めに商品を並べるのは、棚が空いていると客が離れてしまうからであり」。\n推理：「…のは…からであり」直接给出理由：货架空着客人就会走掉。「棚が空いている」＝选项的「棚に商品が少ない」，「客が離れてしまう」＝「客が来なくなってしまう」。\n容易错：快到期的商品是摆在「手前」的，不是里面。",
+          "en": "Evidence: 「店が多めに商品を並べるのは、棚が空いていると客が離れてしまうからであり」.\nReasoning: 「…のは…からであり」 states the reason outright: customers drift away when the shelves are empty. 「棚が空いている」 = the option's 「棚に商品が少ない」; 「客が離れてしまう」 = 「客が来なくなってしまう」.\nTrap: The items near their date are placed at the 「手前」, not at the back."
+        },
+        "wrong": [
+          {
+            "zh": "正好相反：快到期的商品摆在「手前」，里面的是日期新的。",
+            "en": "The opposite: items near their date are at the 「手前」; the newer ones are at the back."
+          },
+          null,
+          {
+            "zh": "文中没有提到进货的价格。",
+            "en": "Purchase prices are never mentioned."
+          },
+          {
+            "zh": "文中没有说商店不受损失，只说每天要扔掉相当多。",
+            "en": "The text doesn't say shops lose nothing, only that a good deal is thrown away daily."
+          }
+        ]
+      },
+      {
+        "q": "食品が捨てられる問題について、筆者はどのように考えているか。",
+        "options": [
+          "作りすぎる企業と売れ残りを出す店に、すべての責任がある",
+          "客が手前の商品から買うようにすれば、問題はなくなる",
+          "消費者である自分の買い方を見直すことから始めるべきだ",
+          "期限の日付を見えなくすれば、捨てられる食品は減るはずだ"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「捨てられる食品の山は、私たち一人一人の小さな選択が積み重なったものでもあったのだ」；「誰かを責める前に、自分の「当然の知恵」を疑ってみることから始めたいのである」。\n推理：作者以前认为是企业和商店的责任，「しかし」之后发现消费者的选择也是原因，所以结论是先从怀疑自己的习惯做起。「自分の「当然の知恵」を疑ってみる」＝选项的「自分の買い方を見直す」。\n容易错：作者明说「それだけで問題が解決するとは思わない」，所以“从前面拿就能解决”说过头了。",
+          "en": "Evidence: 「捨てられる食品の山は、私たち一人一人の小さな選択が積み重なったものでもあったのだ」; 「誰かを責める前に、自分の「当然の知恵」を疑ってみることから始めたいのである」.\nReasoning: The writer used to blame companies and shops, but after 「しかし」 sees shoppers' choices as a cause too, and so concludes by starting with doubt about their own habit. 「自分の「当然の知恵」を疑ってみる」 = the option's 「自分の買い方を見直す」.\nTrap: The writer says 「それだけで問題が解決するとは思わない」, so 'taking from the front solves it' goes too far."
+        },
+        "wrong": [
+          {
+            "zh": "这是作者「これまで」的想法，「しかし」之后认识到消费者的选择也有份。",
+            "en": "This is what the writer thought 「これまで」; after 「しかし」 shoppers' choices are seen to share in it."
+          },
+          {
+            "zh": "与「それだけで問題が解決するとは思わない」相反。",
+            "en": "This contradicts 「それだけで問題が解決するとは思わない」."
+          },
+          null,
+          {
+            "zh": "文中没有提出不显示日期的办法。",
+            "en": "Hiding the dates is never proposed in the text."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-311",
+    "type": "mid",
+    "difficulty": 3,
+    "passage": "財布を持たずに出かけるようになって、二年ほどになる。支払いはすべてスマートフォンで済ませている。小銭を数えて後ろの人を待たせることもなく、いくら使ったかも自動で記録されるので、現金よりずっと合理的だと満足していた。\nところが、年末に一年分の記録をまとめて見て、驚いた。食費も交際費も、現金を使っていたころより二割近く増えていたのである。何か特別に高い物を買った覚えもない。給料が上がったわけでも、生活を変えたわけでもない。思い当たるのは、支払いの方法だけだった。\n現金で払うときには、財布から札を出し、それが目の前で人の手に渡っていく。財布が薄くなるのを見れば、今月は使いすぎたと嫌でも感じる。この小さな痛みが、次の買い物の前に私を立ち止まらせていたのだろう。スマートフォンを軽くかざすだけの支払いには、それがない。記録は確かに残るが、わざわざ開かなければ目に入らない。記録されていることと、自分で分かっていることは、別だったのである。\nでは、現金に戻るべきだろうか。私はそうは思わない。便利さを捨てるのは現実的ではないし、問題は道具そのものにあるのではないからだ。そこで、毎週日曜の夜に、その週の支払いを必ず見直すことにした。道具が痛みを消してくれるのなら、立ち止まるきっかけは自分で作るしかない。技術が便利になればなるほど、それをどう使うかを決める手間は、かえって使う側に残されるのだと思う。",
+    "tr": {
+      "zh": "不带钱包出门，已经有两年左右了。付款全部用智能手机解决。不会因为数零钱让后面的人等，花了多少也会自动记录下来，所以我一直很满意，觉得比现金合理得多。\n可是，年底把一年的记录汇总起来一看，我吃了一惊。伙食费也好，交际费也好，都比用现金的时候增加了将近两成。我也不记得买过什么特别贵的东西。工资并没有涨，生活也没有改变。能想到的，只有付款的方式。\n用现金付款的时候，要从钱包里拿出钞票，眼看着它交到别人手里。看到钱包变薄，不想感觉也会感觉到这个月花多了。大概就是这小小的痛感，让我在下一次买东西之前停下来想一想。而把手机轻轻一靠的付款里，没有这个。记录确实留着，但不特意打开就看不到。有记录和自己心里有数，原来是两回事。\n那么，应该回到现金吗？我不这么认为。舍弃方便不现实，而且问题并不在工具本身。于是，我决定每个星期天晚上一定把那一周的支出重新看一遍。既然工具替我消除了痛感，那么停下来的契机只能自己去创造。我想，技术越是方便，决定怎样使用它的工夫，反而越是留给了使用的一方。",
+      "en": "It has been about two years since I started going out without a wallet. I make every payment with my smartphone. I never keep the people behind me waiting while I count coins, and how much I spent is recorded automatically, so I was satisfied that it was far more rational than cash.\nBut at the end of the year, when I looked at a year's records together, I was surprised. Both my food and my social spending had risen nearly twenty per cent compared with when I used cash. I had no memory of buying anything especially expensive. My pay had not gone up, nor had I changed how I live. The only thing I could think of was the way I paid.\nWhen you pay in cash, you take notes out of your wallet and they pass into someone's hand before your eyes. Seeing the wallet grow thin, you feel, like it or not, that you have spent too much this month. That small pain was probably what made me stop before the next purchase. A payment made by lightly holding up a smartphone has none of it. The record does remain, but it doesn't meet your eye unless you go and open it. Being recorded and knowing it yourself were two different things.\nShould I go back to cash, then? I don't think so. Giving up convenience isn't realistic, and the problem doesn't lie in the tool itself. So I decided to go over the week's payments every Sunday night without fail. If the tool removes the pain, I have to make the occasion to stop myself. The more convenient technology becomes, I think, the more the trouble of deciding how to use it is, on the contrary, left to the user."
+    },
+    "questions": [
+      {
+        "q": "「それがない」とあるが、何がないのか。",
+        "options": [
+          "お金が減っていくことを実感させる、小さな痛み",
+          "支払った金額が自動的に残される、正確な記録",
+          "次の買い物を早くしたいと思う、強い気持ち",
+          "店の人と直接言葉を交わす、ほんの短いやりとり"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「この小さな痛みが、次の買い物の前に私を立ち止まらせていたのだろう。スマートフォンを軽くかざすだけの支払いには、それがない」。\n推理：「それ」指前一句的「この小さな痛み」，也就是看到钱包变薄、感到花多了的那种感觉。用现金有、用手机没有的，就是这个。\n容易错：记录在手机支付里是有的（「記録は確かに残る」），所以“没有”的不是记录。",
+          "en": "Evidence: 「この小さな痛みが、次の買い物の前に私を立ち止まらせていたのだろう。スマートフォンを軽くかざすだけの支払いには、それがない」.\nReasoning: 「それ」 points to 「この小さな痛み」 in the sentence before: the feeling of having overspent on seeing the wallet grow thin. That is what cash has and phone payment lacks.\nTrap: Phone payment does have a record (「記録は確かに残る」), so the record is not what is missing."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "正好相反：手机支付「記録は確かに残る」。",
+            "en": "The opposite: with phone payment 「記録は確かに残る」."
+          },
+          {
+            "zh": "痛感是让人在下次买东西前「立ち止まらせ」的东西，文中没有说想快点买。",
+            "en": "The pain is what made the writer stop before the next purchase; a wish to buy sooner isn't mentioned."
+          },
+          {
+            "zh": "文中没有提到和店员的交谈。",
+            "en": "Talking with shop staff is never mentioned."
+          }
+        ]
+      },
+      {
+        "q": "筆者は、支出が増えた原因は何だと考えているか。",
+        "options": [
+          "給料が上がって、生活に少し余裕ができたこと",
+          "支払いの記録が、実際より少なく表示されていたこと",
+          "外食や人との付き合いの機会が、以前より増えたこと",
+          "使った額を意識しにくい方法で払うようになったこと"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「給料が上がったわけでも、生活を変えたわけでもない。思い当たるのは、支払いの方法だけだった」；「記録されていることと、自分で分かっていることは、別だったのである」。\n推理：作者排除了工资和生活的变化，剩下的只有付款方式；第三段说明这种方式没有“痛感”，不特意打开记录就意识不到花了多少。所以原因是用了不容易意识到金额的付款方式。\n容易错：伙食费、交际费增加是结果，不是因为生活变了。",
+          "en": "Evidence: 「給料が上がったわけでも、生活を変えたわけでもない。思い当たるのは、支払いの方法だけだった」; 「記録されていることと、自分で分かっていることは、別だったのである」.\nReasoning: Pay and lifestyle are ruled out, leaving only the way of paying; the third paragraph explains that it carries no 'pain' and the amount isn't noticed unless the record is opened. So the cause is paying in a way that makes spending hard to notice.\nTrap: Higher food and social spending is the result, not a sign that the writer's life changed."
+        },
+        "wrong": [
+          {
+            "zh": "与「給料が上がったわけでも…ない」相反。",
+            "en": "This contradicts 「給料が上がったわけでも…ない」."
+          },
+          {
+            "zh": "记录是准确留下的，问题是不打开就「目に入らない」。",
+            "en": "The record is kept accurately; the trouble is that unless opened it 「目に入らない」."
+          },
+          {
+            "zh": "与「生活を変えたわけでもない」相反。",
+            "en": "This contradicts 「生活を変えたわけでもない」."
+          },
+          null
+        ]
+      },
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "options": [
+          "使いすぎを防ぐには、現金での支払いに戻るのが最もよい",
+          "便利な道具ほど、使い方を自分で工夫する必要がある",
+          "記録が自動で残るので、お金の管理は機械に任せればよい",
+          "技術がさらに進歩すれば、使いすぎの問題は自然になくなる"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「道具が痛みを消してくれるのなら、立ち止まるきっかけは自分で作るしかない。技術が便利になればなるほど、それをどう使うかを決める手間は、かえって使う側に残されるのだと思う」。\n推理：作者不回到现金，而是自己定下每周回顾支出的规矩，并总结说：技术越方便，怎么用就越要使用者自己来决定。「どう使うかを決める手間は…使う側に残される」＝选项的「使い方を自分で工夫する必要がある」。\n容易错：看到现金的好处就选“回到现金”，但作者明说「私はそうは思わない」。",
+          "en": "Evidence: 「道具が痛みを消してくれるのなら、立ち止まるきっかけは自分で作るしかない。技術が便利になればなるほど、それをどう使うかを決める手間は、かえって使う側に残されるのだと思う」.\nReasoning: Rather than return to cash, the writer sets a rule of reviewing spending weekly and concludes that the more convenient the technology, the more its use is for the user to decide. 「どう使うかを決める手間は…使う側に残される」 = the option's 「使い方を自分で工夫する必要がある」.\nTrap: Choosing 'go back to cash' on seeing its merits, although the writer says 「私はそうは思わない」."
+        },
+        "wrong": [
+          {
+            "zh": "对「現金に戻るべきだろうか」，作者回答「私はそうは思わない」。",
+            "en": "To 「現金に戻るべきだろうか」 the writer answers 「私はそうは思わない」."
+          },
+          null,
+          {
+            "zh": "正好相反：有记录不等于自己心里有数，所以作者决定自己每周回顾。",
+            "en": "The opposite: being recorded is not the same as knowing, so the writer reviews the spending personally each week."
+          },
+          {
+            "zh": "正好相反：作者认为技术越方便，留给使用者的工夫反而越多。",
+            "en": "The opposite: the writer thinks the more convenient technology gets, the more is left to the user."
+          }
+        ]
+      }
+    ]
   }
 ]

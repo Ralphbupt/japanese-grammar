@@ -581,5 +581,45 @@
       null
     ],
     "rev": 2
+  },
+  {
+    "id": "n3-l52-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson52#1"
+    ],
+    "difficulty": 2,
+    "stem": "道の向こうから苦手な先輩が歩いてくるのが見えたので、携帯電話を見ながら（　）。",
+    "options": [
+      "気がつかないはずだった",
+      "気がつきそうもなかった",
+      "気がつくことになっていた",
+      "気がつかないふりをした"
+    ],
+    "answer": 3,
+    "full": "道の向こうから苦手な先輩が歩いてくるのが見えたので、携帯電話を見ながら気がつかないふりをした。",
+    "tr": {
+      "zh": "看到路对面走来一个我不擅长应付的前辈，就一边看手机一边装作没注意到。",
+      "en": "I saw a senior colleague I find hard to deal with coming from across the street, so I looked at my phone and pretended not to notice."
+    },
+    "why": {
+      "zh": "线索：「見えたので」说明其实已经看到了；「苦手な先輩」「携帯電話を見ながら」：不想打招呼，故意做样子。\n规则：「动词普通形＋ふりをする」＝假装……，实际上不是那样，却故意做出那个样子。\n辨析：「気がつかないふりをした」＝其实注意到了，装作没注意到；「気がつかないはずだった」＝按理说不会注意到，是推断，可是前面已经说了「見えた」。",
+      "en": "Clue: 「見えたので」 shows the speaker did see him; 「苦手な先輩」 and 「携帯電話を見ながら」: not wanting to greet him, the speaker puts on an act.\nRule: Verb plain form + 「ふりをする」 = \"pretend to …\": deliberately acting as if something untrue were so.\nContrast: 「気がつかないふりをした」 = noticed, but acted as if not; 「気がつかないはずだった」 = wasn't expected to notice, a deduction, yet the sentence already says 「見えた」."
+    },
+    "wrong": [
+      {
+        "zh": "「はずだった」是“按理说应该……”的推断，可是前面已经说了看到了前辈。",
+        "en": "「はずだった」 is a deduction, \"was supposed to …\", but the sentence already says the speaker saw him."
+      },
+      {
+        "zh": "「そうもなかった」是“看样子不会……”，是对样子的判断，而自己已经看到了。",
+        "en": "「そうもなかった」 means \"didn't look likely to\", a judgement from appearances; the speaker had already seen him."
+      },
+      {
+        "zh": "「ことになっていた」表示规定或约定，“注意到”不是约定好的事。",
+        "en": "「ことになっていた」 states a rule or arrangement; noticing someone isn't arranged."
+      },
+      null
+    ]
   }
 ]

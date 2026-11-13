@@ -582,5 +582,85 @@
       null
     ],
     "rev": 2
+  },
+  {
+    "id": "n3-l56-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson56#1"
+    ],
+    "difficulty": 2,
+    "stem": "これは友だちに借りた大切な本だから、どんなに気に入っても、自分のものに（　）。",
+    "options": [
+      "することになっている",
+      "したほうがいいと思う",
+      "しないわけにはいかない",
+      "するわけにはいかない"
+    ],
+    "answer": 3,
+    "full": "これは友だちに借りた大切な本だから、どんなに気に入っても、自分のものにするわけにはいかない。",
+    "tr": {
+      "zh": "这是向朋友借的重要的书，所以不管多喜欢，也不能据为己有。",
+      "en": "It's a precious book I borrowed from a friend, so however much I like it, I can't keep it for myself."
+    },
+    "why": {
+      "zh": "线索：理由是「友だちに借りた大切な本だから」，后面有「どんなに気に入っても」：想要，但情理上不行。\n规则：「动词辞书形＋わけにはいかない」＝（从常识、情理上）不能……，不是能力上做不到，而是不应该那样做。\n辨析：「するわけにはいかない」＝不能做；「しないわけにはいかない」＝不能不做，也就是必须做，意思正好相反。借来的书“必须变成自己的”讲不通。",
+      "en": "Clue: The reason is 「友だちに借りた大切な本だから」, then 「どんなに気に入っても」: the speaker would like to, but it wouldn't be right.\nRule: Verb dictionary form + 「わけにはいかない」 = \"can't (by common sense or duty)\": not a lack of ability, but something one shouldn't do.\nContrast: 「するわけにはいかない」 = can't do it; 「しないわけにはいかない」 = can't not do it, i.e. must do it, the opposite. A borrowed book that one \"must\" keep makes no sense."
+    },
+    "wrong": [
+      {
+        "zh": "「ことになっている」表示规定或约定，借来的书不会规定变成自己的东西。",
+        "en": "「ことになっている」 states a rule or arrangement; no rule makes a borrowed book yours."
+      },
+      {
+        "zh": "「たほうがいい」是建议“最好……”，和「借りた本だから」这个理由矛盾。",
+        "en": "「たほうがいい」 advises \"had better\", which contradicts the reason 「借りた本だから」."
+      },
+      {
+        "zh": "「しないわけにはいかない」是“不能不……”，即必须据为己有，和理由相反。",
+        "en": "「しないわけにはいかない」 means \"can't not\", i.e. must keep it, the opposite of what the reason leads to."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n3-l56-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson56#4"
+    ],
+    "difficulty": 2,
+    "stem": "人にはそれぞれ事情があるのだから、自分がよく知らない人のことを簡単に（　）。",
+    "options": [
+      "悪く言うしかないだろう",
+      "悪く言うべきではない",
+      "悪く言わないことはない",
+      "悪く言ったほうがいい"
+    ],
+    "answer": 1,
+    "full": "人にはそれぞれ事情があるのだから、自分がよく知らない人のことを簡単に悪く言うべきではない。",
+    "tr": {
+      "zh": "每个人都有各自的情况，所以不应该随便说自己不太了解的人的坏话。",
+      "en": "Everyone has their own circumstances, so you shouldn't speak ill of people you don't know well so easily."
+    },
+    "why": {
+      "zh": "线索：理由是「人にはそれぞれ事情があるのだから」，后面是「よく知らない人のことを簡単に」：说话人认为这样做不对。\n规则：「动词辞书形＋べきではない」＝不应该……，根据道理、常识，劝对方或一般人不要那样做。\n辨析：「言うべきではない」＝不应该说（说话人的主张）；「言うしかない」＝只能说（没有别的办法），“有各自的情况”不能成为只能说坏话的理由。",
+      "en": "Clue: The reason is 「人にはそれぞれ事情があるのだから」, followed by 「よく知らない人のことを簡単に」: the speaker thinks doing so is wrong.\nRule: Verb dictionary form + 「べきではない」 = \"shouldn't\": telling the listener or people in general, on grounds of reason or common sense, not to do something.\nContrast: 「言うべきではない」 = shouldn't say it (the speaker's view); 「言うしかない」 = can only say it (no other way). People having their own circumstances is no reason to be forced to speak ill of them."
+    },
+    "wrong": [
+      {
+        "zh": "「しかない」是“只能……”，“每个人都有各自的情况”不是只能说坏话的理由。",
+        "en": "「しかない」 means \"can only\"; that everyone has their circumstances is no reason for having to speak ill of them."
+      },
+      null,
+      {
+        "zh": "「ないことはない」是“也不是不……”，是消极的肯定，和「のだから」后面要接的主张不合。",
+        "en": "「ないことはない」 means \"it's not that … not\", a reluctant yes; it doesn't fit the claim that 「のだから」 leads to."
+      },
+      {
+        "zh": "「たほうがいい」是建议去做，和「事情があるのだから」这个理由的方向相反。",
+        "en": "「たほうがいい」 advises doing it, which goes against the reason 「事情があるのだから」."
+      }
+    ]
   }
 ]

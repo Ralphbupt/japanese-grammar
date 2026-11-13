@@ -694,5 +694,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l74-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson74#4"
+    ],
+    "difficulty": 2,
+    "stem": "大学時代に親しかった友人とは、五年前に彼の結婚式で（　）。今ごろ元気にしているだろうか。",
+    "options": [
+      "会うたびに連絡を取っている",
+      "会ったきり連絡を取っていない",
+      "会って以来連絡を取り続けている",
+      "会ったあげく連絡を取っていない"
+    ],
+    "answer": 1,
+    "full": "大学時代に親しかった友人とは、五年前に彼の結婚式で会ったきり連絡を取っていない。今ごろ元気にしているだろうか。",
+    "tr": {
+      "zh": "大学时代要好的那位朋友，五年前在他的婚礼上见过一面之后就再没联系。不知他现在过得好不好。",
+      "en": "I haven't been in touch with my close friend from university since I saw him at his wedding five years ago. I wonder how he is doing now."
+    },
+    "why": {
+      "zh": "线索：后一句「元気にしているだろうか」说明不知道对方的近况，也就是五年来一直没有联系。\n规则：「动词た形＋きり」＋否定＝那次之后，本该有的下文一直没有出现（「出かけたきり戻らない」「会ったきり連絡がない」）。\n辨析：「〜て以来」是“自从……以后一直……”，后面接一直持续的状态（「会って以来、連絡を取り続けている」）；「〜たきり」强调那是最后一次，之后什么都没发生。",
+      "en": "Clue: The next sentence, 「元気にしているだろうか」, shows the speaker doesn't know how the friend is, so there has been no contact for five years.\nRule: 「verb ta-form ＋ きり」 ＋ negative = since that one time, what should have followed never has (「出かけたきり戻らない」「会ったきり連絡がない」).\nContrast: 「〜て以来」 means \"ever since …\" and leads to a state that has continued (「会って以来、連絡を取り続けている」); 「〜たきり」 stresses that it was the last time and nothing has happened since."
+    },
+    "wrong": [
+      {
+        "zh": "「たびに」是“每次……都”，和「五年前に」这一次的事不合；一直有联系也就不会说「元気にしているだろうか」。",
+        "en": "「たびに」 means \"every time\", which doesn't fit the single occasion 「五年前に」; and someone in regular contact wouldn't say 「元気にしているだろうか」."
+      },
+      null,
+      {
+        "zh": "“从那以后一直保持联系”的话，就应该知道对方的近况，和后一句矛盾。",
+        "en": "If they had kept in touch ever since, the speaker would know how he is, which contradicts the next sentence."
+      },
+      {
+        "zh": "「あげく」前面是折腾了很久的过程，“在婚礼上见了一面”不是这样的过程。",
+        "en": "「あげく」 follows a long, wearing process; meeting once at a wedding isn't one."
+      }
+    ]
+  },
+  {
+    "id": "n2-l74-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson74#3"
+    ],
+    "difficulty": 2,
+    "stem": "同じ内容の提案であっても、説明のしかた（　）、相手に与える印象がまったく違ってしまうこともある。",
+    "options": [
+      "のあまり",
+      "に限って",
+      "にかけては",
+      "次第では"
+    ],
+    "answer": 3,
+    "full": "同じ内容の提案であっても、説明のしかた次第では、相手に与える印象がまったく違ってしまうこともある。",
+    "tr": {
+      "zh": "即使是内容相同的提案，有时说明的方式不同，给对方的印象就会完全不一样。",
+      "en": "Even with a proposal of the same content, depending on how it is explained, the impression it makes on the other person can sometimes be completely different."
+    },
+    "why": {
+      "zh": "线索：前面是名词「説明のしかた」，后面是「まったく違ってしまうこともある」：在某种说明方式下，会出现这样的结果。\n规则：「名词＋次第で」＝结果由这个名词决定；加上「は」的「次第では」＝根据它的情况，有可能出现某个特定的结果，后面常是「〜こともある」「〜かもしれない」（「天候次第では中止になることもある」）。\n辨析：「にかけては」是“在……方面（没人比得上）”，后面接对能力的高评价（「説明のうまさにかけては社内一だ」），不表示“取决于”。",
+      "en": "Clue: The noun 「説明のしかた」 comes before the blank and 「まったく違ってしまうこともある」 after it: with some ways of explaining, this is what can happen.\nRule: 「noun ＋ 次第で」 = the result is decided by that noun; with 「は」, 「次第では」 = depending on how it turns out, one particular result is possible, often followed by 「〜こともある」「〜かもしれない」 (「天候次第では中止になることもある」).\nContrast: 「にかけては」 means \"when it comes to … (no one is better)\" and leads to high praise of an ability (「説明のうまさにかけては社内一だ」); it doesn't mean \"depending on\"."
+    },
+    "wrong": [
+      {
+        "zh": "「のあまり」是“过于……以致”，前面是感情或程度的词（「緊張のあまり」），「説明のしかた」不是。",
+        "en": "「のあまり」 means \"from too much …\" and follows a word of feeling or degree (「緊張のあまり」); 「説明のしかた」 isn't one."
+      },
+      {
+        "zh": "「に限って」是“偏偏……”，前面是特定的人或时候（「急ぐ日に限って」），不表示结果取决于什么。",
+        "en": "「に限って」 means \"of all times / … of all people\" and follows a particular person or occasion (「急ぐ日に限って」); it doesn't say what the result depends on."
+      },
+      {
+        "zh": "「にかけては」后面接“谁也比不上”这类能力评价，不接「印象が違ってしまうこともある」。",
+        "en": "「にかけては」 leads to praise of an ability such as \"second to none\", not to 「印象が違ってしまうこともある」."
+      },
+      null
+    ]
   }
 ]

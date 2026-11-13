@@ -851,5 +851,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n1-l76-023",
+    "type": "bunpou",
+    "refs": [
+      "lesson76#5"
+    ],
+    "difficulty": 2,
+    "stem": "在宅勤務が全社的に（　）、社員同士が何気ない雑談を交わす機会はめっきり減ってしまった。",
+    "options": [
+      "導入されてからというもの",
+      "導入されてからでなければ",
+      "導入されたのを皮切りに",
+      "導入されようものなら"
+    ],
+    "answer": 0,
+    "full": "在宅勤務が全社的に導入されてからというもの、社員同士が何気ない雑談を交わす機会はめっきり減ってしまった。",
+    "tr": {
+      "zh": "自从全公司实行居家办公以来，员工之间随口闲聊的机会明显少了。",
+      "en": "Ever since remote work was introduced company-wide, chances for employees to chat casually have dropped off sharply."
+    },
+    "why": {
+      "zh": "线索：后半句「めっきり減ってしまった」说的是某件事之后一直持续到现在的变化。\n规则：「〜てからというもの」＝自从……以后就一直……，接动词て形，后面是和以前大不相同、并持续下去的状态。\n辨析：「〜てからでなければ」＝不先……就不能……，后面要接「〜ない／できない」：「部長の許可を得てからでなければ、発注できない」。这里后面是已经发生的变化，不是做不到的事。",
+      "en": "Clue: The second half, 「めっきり減ってしまった」, describes a change that has lasted ever since some event.\nRule: 「〜てからというもの」 = ever since …, after the て-form, followed by a lasting state very different from before.\nContrast: 「〜てからでなければ」 = not until … can …, and needs 「〜ない／できない」 after it: 「部長の許可を得てからでなければ、発注できない」. Here what follows is a change that has already happened, not something impossible."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜てからでなければ」后面要接“不能……”这类否定，接不了「減ってしまった」这种已经发生的事实。",
+        "en": "「〜てからでなければ」 must be followed by a negative such as \"cannot …\"; it can't lead into an accomplished fact like 「減ってしまった」."
+      },
+      {
+        "zh": "「〜を皮切りに」表示以某事为开端，同类的事接连展开；闲聊机会减少不是一连串同类活动。",
+        "en": "「〜を皮切りに」 marks the first of a series of similar events; fewer chances to chat is not such a series."
+      },
+      {
+        "zh": "「〜ようものなら」是“万一……的话（后果严重）”的假设，不能用来叙述已经发生的事。",
+        "en": "「〜ようものなら」 is a hypothetical \"if … were ever to happen (it would be terrible)\" and can't narrate something that has already happened."
+      }
+    ]
+  },
+  {
+    "id": "n1-l76-024",
+    "type": "bunpou",
+    "refs": [
+      "lesson76#4"
+    ],
+    "difficulty": 2,
+    "stem": "新たな規制を設けても、設けた（　）抜け道を探し出す業者が現れ、行政の対応は常に後手に回っている。",
+    "options": [
+      "からには",
+      "かたわら",
+      "そばから",
+      "ところを"
+    ],
+    "answer": 2,
+    "full": "新たな規制を設けても、設けたそばから抜け道を探し出す業者が現れ、行政の対応は常に後手に回っている。",
+    "tr": {
+      "zh": "即使出台新的规定，刚一出台就有业者找出漏洞，行政部门的应对总是慢一步。",
+      "en": "Even when new regulations are introduced, operators find loopholes as fast as they are made, and the authorities are always a step behind."
+    },
+    "why": {
+      "zh": "线索：「設けても、設けた（　）」重复同一个动词，后面又有「常に」，说的是做了多少次都马上白费。\n规则：「〜そばから」＝刚……就又……，接动词辞书形或た形（「設ける」「設けた」），表示同样的事反复发生，带无奈的语气。\n辨析：「〜かたわら」是“一边从事主业一边……”，前后是同一个人长期并行的两件事：「会社に勤めるかたわら、小説を書いている」。",
+      "en": "Clue: 「設けても、設けた（　）」 repeats the same verb and 「常に」 follows — however often it is done, it is undone at once.\nRule: 「〜そばから」 = no sooner … than … again; it follows the dictionary or た form (「設ける」「設けた」) and describes something that keeps happening, with a note of exasperation.\nContrast: 「〜かたわら」 means \"alongside one's main work\", two long-term activities of the same person: 「会社に勤めるかたわら、小説を書いている」."
+    },
+    "wrong": [
+      {
+        "zh": "「〜からには」是“既然……就要……”，后面接决心或义务，接不了“出现钻空子的业者”。",
+        "en": "「〜からには」 (now that …) is followed by resolve or obligation, not by \"operators appear who find loopholes\"."
+      },
+      {
+        "zh": "「〜かたわら」表示同一个人在主业之外兼做另一件事，这里前后主语不同，也不是并行的活动。",
+        "en": "「〜かたわら」 describes one person doing something alongside their main work; here the subjects differ and the actions aren't parallel."
+      },
+      null,
+      {
+        "zh": "「〜ところを」是“正在……的时候（被看见、被打扰）”，后面接「見られる」「邪魔する」等，和「現れ」接不上。",
+        "en": "「〜ところを」 means \"just when … (was seen / interrupted)\" and takes verbs like 「見られる」; it doesn't connect to 「現れ」."
+      }
+    ]
   }
 ]

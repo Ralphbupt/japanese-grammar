@@ -3634,5 +3634,924 @@
    "done-already",
    "later"
   ]
+ },
+ {
+  "id": "n5-ck-136",
+  "type": "kadai",
+  "scene": "ゆうびんきょくで 男の 人と ゆうびんきょくの 人が 話しています。",
+  "question": "男の 人は ゆうびんきょくで 何を 買いますか。",
+  "lines": [
+   [
+    "M",
+    "すみません、はがきを 5まい ください。それから、ふうとうも おねがいします。"
+   ],
+   [
+    "F",
+    "すみません、ふうとうは ここには ありません。となりの 店に ありますよ。"
+   ],
+   [
+    "M",
+    "そうですか。じゃ、きってを……あ、きっては うちに たくさん ありました。きっては いりません。"
+   ],
+   [
+    "F",
+    "はい。じゃ、はがきだけですね。"
+   ],
+   [
+    "M",
+    "はい。あの、ここで はがきを 書きたいです。ペンは ありますか。"
+   ],
+   [
+    "F",
+    "あそこの つくえの 上に あります。どうぞ つかって ください。"
+   ]
+  ],
+  "options": [
+   "ふうとう",
+   "はがき",
+   "きって",
+   "ペン"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在邮局，一个男人和邮局的工作人员在说话。",
+    "question": "男人在邮局买什么？",
+    "lines": [
+     "你好，请给我五张明信片。另外还要信封。",
+     "对不起，信封这里没有。隔壁的店里有。",
+     "是吗。那给我邮票……啊，邮票家里还有很多。邮票不要了。",
+     "好的。那就只要明信片对吧。",
+     "对。那个，我想在这里写明信片。有笔吗？",
+     "那边的桌子上有。请用吧。"
+    ],
+    "options": [
+     "信封",
+     "明信片",
+     "邮票",
+     "笔"
+    ]
+   },
+   "en": {
+    "scene": "At a post office, a man is talking with a clerk.",
+    "question": "What will the man buy at the post office?",
+    "lines": [
+     "Excuse me, five postcards, please. And envelopes too.",
+     "I'm sorry, we don't have envelopes here. The shop next door has them.",
+     "I see. Then stamps… oh, I have plenty of stamps at home. I don't need stamps.",
+     "All right. So just the postcards.",
+     "Yes. Um, I'd like to write the postcards here. Do you have a pen?",
+     "There's one on that desk over there. Please use it."
+    ],
+    "options": [
+     "Envelopes",
+     "Postcards",
+     "Stamps",
+     "A pen"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说「きっては いりません」，邮局的人确认：「じゃ、はがきだけですね。」男的回答「はい」。\n推理：信封邮局没有（「ここには ありません」）；邮票刚要买就想起家里有很多，收回了；笔是借用桌上的，不是买。剩下的只有明信片。\n容易错：说出口又收回的东西（きって）不算。",
+   "en": "Evidence: The man says 「きっては いりません」, the clerk checks 「じゃ、はがきだけですね。」 and he answers 「はい」.\nReasoning: The post office has no envelopes (「ここには ありません」); he starts to ask for stamps, remembers he has plenty at home and takes it back; the pen is one he borrows from the desk. Only the postcards are left.\nTrap: something asked for and then withdrawn (きって) doesn't count."
+  },
+  "wrong": [
+   {
+    "zh": "信封邮局里没有，要去隔壁的店买。",
+    "en": "The post office has no envelopes; they're sold next door."
+   },
+   null,
+   {
+    "zh": "邮票家里有很多，他说「いりません」。",
+    "en": "He has plenty of stamps at home and says 「いりません」."
+   },
+   {
+    "zh": "笔是借桌上的用，不是买。",
+    "en": "He borrows the pen on the desk; he doesn't buy one."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "done-already",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-ck-137",
+  "type": "kadai",
+  "scene": "じゅぎょうの あとで 男の 学生と 女の 学生が 話しています。",
+  "question": "女の 学生は これから どこへ 行きますか。",
+  "lines": [
+   [
+    "M",
+    "ヤンさん、ぼくは これから としょかんで べんきょうします。いっしょに どうですか。"
+   ],
+   [
+    "F",
+    "すみません、きょうは ちょっと……。ぎんこうへ 行きますから。"
+   ],
+   [
+    "M",
+    "ぎんこうは 3時までですよ。もう 3時半です。"
+   ],
+   [
+    "F",
+    "あ、そうですか。じゃ、ぎんこうは あした 行きます。"
+   ],
+   [
+    "M",
+    "じゃ、としょかんへ 行きませんか。"
+   ],
+   [
+    "F",
+    "すみません。4時から 本やで しごとが ありますから、もう 行きます。うちへは 9時に かえります。"
+   ]
+  ],
+  "options": [
+   "としょかん",
+   "ぎんこう",
+   "うち",
+   "本や"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "下课后，一个男学生和一个女学生在说话。",
+    "question": "女学生接下来去哪里？",
+    "lines": [
+     "小杨，我现在去图书馆学习。一起去怎么样？",
+     "对不起，今天有点……我要去银行。",
+     "银行到三点就关门了。现在已经三点半了。",
+     "啊，是吗。那银行明天再去。",
+     "那去图书馆吧？",
+     "对不起。四点开始我在书店有工作，这就得走了。九点才回家。"
+    ],
+    "options": [
+     "图书馆",
+     "银行",
+     "家",
+     "书店"
+    ]
+   },
+   "en": {
+    "scene": "After class, a male student and a female student are talking.",
+    "question": "Where will the female student go now?",
+    "lines": [
+     "Yang-san, I'm going to study in the library now. How about coming along?",
+     "Sorry, not today… I'm going to the bank.",
+     "The bank closes at three. It's already half past three.",
+     "Oh, really? Then I'll go to the bank tomorrow.",
+     "Then won't you come to the library?",
+     "Sorry. I have work at the bookshop from four, so I'm off now. I'll go home at nine."
+    ],
+    "options": [
+     "The library",
+     "The bank",
+     "Home",
+     "The bookshop"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「4時から 本やで しごとが ありますから、もう 行きます。」\n推理：去图书馆的是男的；银行三点关门，现在三点半，她改成「あした 行きます」；回家是九点的事。现在要去的是书店。\n容易错：图书馆是对方的打算，不是她的。",
+   "en": "Evidence: She says: 「4時から 本やで しごとが ありますから、もう 行きます。」\nReasoning: The library is where the man is going; the bank closes at three and it's half past, so she changes it to 「あした 行きます」; going home is at nine. Where she goes now is the bookshop.\nTrap: the library is the other speaker's plan, not hers."
+  },
+  "wrong": [
+   {
+    "zh": "去图书馆的是男学生，女的两次都说「すみません」。",
+    "en": "The library is the man's plan; she says 「すみません」 both times."
+   },
+   {
+    "zh": "银行已经关门了，她说明天去。",
+    "en": "The bank is already closed; she'll go tomorrow."
+   },
+   {
+    "zh": "回家是九点，在书店的工作之后。",
+    "en": "She goes home at nine, after work at the bookshop."
+   },
+   null
+  ],
+  "traps": [
+   "other-option-attribute",
+   "not-possible",
+   "later"
+  ]
+ },
+ {
+  "id": "n5-ck-138",
+  "type": "kadai",
+  "scene": "教室で 先生が 学生に 話しています。",
+  "question": "学生は あした 何時に 駅の 前へ 行きますか。",
+  "lines": [
+   [
+    "F",
+    "みなさん、あしたは どうぶつえんへ 行きます。学校へは 来ないで ください。駅の 前で 会いましょう。"
+   ],
+   [
+    "F",
+    "時間は 9時……あ、すみません。9時は 電車の 時間です。みなさんは 8時半に 来て ください。"
+   ],
+   [
+    "F",
+    "どうぶつえんは 10時からです。ひるごはんは 12時に みんなで 食べます。"
+   ]
+  ],
+  "options": [
+   "8時半",
+   "9時",
+   "10時",
+   "12時"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在教室里，老师在对学生说话。",
+    "question": "学生明天几点去车站前面？",
+    "lines": [
+     "各位，明天去动物园。请不要来学校。我们在车站前面集合吧。",
+     "时间是九点……啊，对不起。九点是电车的时间。请大家八点半来。",
+     "动物园十点开门。午饭十二点大家一起吃。"
+    ],
+    "options": [
+     "八点半",
+     "九点",
+     "十点",
+     "十二点"
+    ]
+   },
+   "en": {
+    "scene": "In a classroom, a teacher is talking to the students.",
+    "question": "What time will the students go to the front of the station tomorrow?",
+    "lines": [
+     "Everyone, tomorrow we're going to the zoo. Please don't come to school. Let's meet in front of the station.",
+     "The time is nine… oh, sorry. Nine is the time of the train. Please come at half past eight.",
+     "The zoo opens at ten. We'll all have lunch together at twelve."
+    ],
+    "options": [
+     "8:30",
+     "9:00",
+     "10:00",
+     "12:00"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：老师说：「9時は 電車の 時間です。みなさんは 8時半に 来て ください。」\n推理：老师先说了九点，马上道歉更正：九点是电车开的时间，集合是八点半。十点是动物园开门，十二点是吃午饭。\n容易错：先听到的「9時」被更正了，要听到最后。",
+   "en": "Evidence: The teacher says: 「9時は 電車の 時間です。みなさんは 8時半に 来て ください。」\nReasoning: She first says nine, then apologises and corrects herself: nine is when the train leaves, and the students are to come at half past eight. Ten is when the zoo opens; twelve is lunch.\nTrap: the 「9時」 you hear first is corrected — keep listening."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "九点是电车的时间，老师自己更正了。",
+    "en": "Nine is the train's time; the teacher corrects herself."
+   },
+   {
+    "zh": "十点是动物园开门的时间。",
+    "en": "Ten is when the zoo opens."
+   },
+   {
+    "zh": "十二点是吃午饭的时间。",
+    "en": "Twelve is lunchtime."
+   }
+  ],
+  "traps": [
+   "number",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-ck-139",
+  "type": "kadai",
+  "scene": "ホテルの 前で りょこうの 会社の 人が 話しています。",
+  "question": "みんなは こうえんまで なにで 行きますか。",
+  "lines": [
+   [
+    "M",
+    "みなさん、おはようございます。きょうは 山の 上の こうえんへ 行きます。"
+   ],
+   [
+    "M",
+    "いつもは ここから バスで 行きますが、きょうは 日曜日で、道に 車が 多いです。ですから、きょうは 電車で 行きます。駅は すぐ そこです。"
+   ],
+   [
+    "M",
+    "こうえんでは じてんしゃに のりましょう。かえりは おそいですから、タクシーで かえります。"
+   ]
+  ],
+  "options": [
+   "じてんしゃ",
+   "バス",
+   "タクシー",
+   "電車"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "在酒店前面，旅行社的人在说话。",
+    "question": "大家坐什么去公园？",
+    "lines": [
+     "各位早上好。今天去山上的公园。",
+     "平时从这里坐巴士去，不过今天是星期天，路上车很多。所以今天坐电车去。车站就在那边。",
+     "到了公园我们骑自行车吧。回来的时候比较晚，所以坐出租车回来。"
+    ],
+    "options": [
+     "自行车",
+     "巴士",
+     "出租车",
+     "电车"
+    ]
+   },
+   "en": {
+    "scene": "In front of a hotel, a man from a travel company is talking.",
+    "question": "How will everyone get to the park?",
+    "lines": [
+     "Good morning, everyone. Today we're going to the park at the top of the mountain.",
+     "We usually go by bus from here, but today is Sunday and there are a lot of cars on the road. So today we'll go by train. The station is right over there.",
+     "Let's ride bicycles in the park. We'll be late coming back, so we'll return by taxi."
+    ],
+    "options": [
+     "By bicycle",
+     "By bus",
+     "By taxi",
+     "By train"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「いつもは ここから バスで 行きますが……きょうは 電車で 行きます。」\n推理：巴士是「いつも」的做法，今天星期天路上车多，改坐电车。自行车是到了公园以后骑的，出租车是「かえり」坐的。\n容易错：「いつもは〜が、きょうは〜」，要听「きょうは」后面。",
+   "en": "Evidence: He says: 「いつもは ここから バスで 行きますが……きょうは 電車で 行きます。」\nReasoning: The bus is what they do 「いつも」; today is Sunday and the roads are full, so they take the train. Bicycles are for inside the park, and the taxi is for the way back (「かえり」).\nTrap: 「いつもは〜が、きょうは〜」 — the answer comes after 「きょうは」."
+  },
+  "wrong": [
+   {
+    "zh": "自行车是在公园里骑的。",
+    "en": "The bicycles are for riding in the park."
+   },
+   {
+    "zh": "巴士是平时坐的，今天路上车多，不坐。",
+    "en": "The bus is the usual way; not today, because of the traffic."
+   },
+   {
+    "zh": "出租车是回来的时候坐的。",
+    "en": "The taxi is for the way back."
+   },
+   null
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n5-ck-140",
+  "type": "kadai",
+  "scene": "くすりやで 店の 人が 男の 人に 話しています。",
+  "question": "男の 人は いちにちに くすりを ぜんぶで いくつ 飲みますか。",
+  "lines": [
+   [
+    "F",
+    "これが おくすりです。いちにちに 3かい、あさと ひると ばん、ごはんの あとで 飲んで ください。"
+   ],
+   [
+    "F",
+    "1かいに 二つです。"
+   ],
+   [
+    "F",
+    "一週間 飲んで ください。おさけは 飲まないで くださいね。"
+   ]
+  ],
+  "options": [
+   "二つ",
+   "三つ",
+   "六つ",
+   "七つ"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在药店，店员在对一个男人说话。",
+    "question": "男人一天一共吃几粒药？",
+    "lines": [
+     "这是您的药。一天三次，早上、中午和晚上，请在饭后吃。",
+     "一次两粒。",
+     "请吃一个星期。请不要喝酒。"
+    ],
+    "options": [
+     "两粒",
+     "三粒",
+     "六粒",
+     "七粒"
+    ]
+   },
+   "en": {
+    "scene": "At a pharmacy, the pharmacist is talking to a man.",
+    "question": "How many tablets in all does the man take in a day?",
+    "lines": [
+     "Here is your medicine. Please take it three times a day — morning, noon and evening — after meals.",
+     "Two each time.",
+     "Please take it for a week. And please don't drink alcohol."
+    ],
+    "options": [
+     "Two",
+     "Three",
+     "Six",
+     "Seven"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：店员说：「いちにちに 3かい……1かいに 二つです。」\n推理：一天三次，每次两粒，3 × 2 = 6，一天一共六粒。「六つ」没有直接说出来，要自己算。\n容易错：「二つ」只是一次的量；「3かい」是次数；「一週間」是吃多久。",
+   "en": "Evidence: The pharmacist says: 「いちにちに 3かい……1かいに 二つです。」\nReasoning: Three times a day, two each time: 3 × 2 = 6 a day. 「六つ」 is never said — you work it out.\nTrap: 「二つ」 is one dose, 「3かい」 is how many times, and 「一週間」 is how long."
+  },
+  "wrong": [
+   {
+    "zh": "两粒是一次的量，一天要吃三次。",
+    "en": "Two is a single dose; he takes it three times a day."
+   },
+   {
+    "zh": "三是一天吃的次数，每次是两粒。",
+    "en": "Three is the number of times a day; each time is two."
+   },
+   null,
+   {
+    "zh": "七是「一週間」的天数，不是药的粒数。",
+    "en": "Seven is the days in 「一週間」, not a number of tablets."
+   }
+  ],
+  "traps": [
+   "number",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n5-ck-141",
+  "type": "kadai",
+  "scene": "学校で 男の 学生と 女の 先生が 話しています。",
+  "question": "男の 学生は さくぶんを だれに わたしますか。",
+  "lines": [
+   [
+    "M",
+    "先生、さくぶんを 書きました。先生に 出しますか。"
+   ],
+   [
+    "F",
+    "いいえ、わたしじゃ ありません。さくぶんは 川田先生が 読みます。"
+   ],
+   [
+    "M",
+    "じゃ、川田先生の へやへ 行きます。"
+   ],
+   [
+    "F",
+    "川田先生は きょう 休みですよ。となりの へやの 木村さんに わたして ください。"
+   ],
+   [
+    "M",
+    "はい、わかりました。リーさんも まだですから、リーさんにも 言います。"
+   ]
+  ],
+  "options": [
+   "女の 先生",
+   "川田先生",
+   "リーさん",
+   "木村さん"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "在学校，一个男学生和一位女老师在说话。",
+    "question": "男学生把作文交给谁？",
+    "lines": [
+     "老师，我写好作文了。是交给老师您吗？",
+     "不，不是交给我。作文是川田老师看。",
+     "那我去川田老师的房间。",
+     "川田老师今天休息。请交给隔壁房间的木村。",
+     "好的，明白了。小李也还没交，我也告诉小李。"
+    ],
+    "options": [
+     "女老师",
+     "川田老师",
+     "小李",
+     "木村"
+    ]
+   },
+   "en": {
+    "scene": "At school, a male student and a female teacher are talking.",
+    "question": "Who will the male student hand his composition to?",
+    "lines": [
+     "Sensei, I've written my composition. Do I hand it in to you?",
+     "No, not to me. Kawada-sensei reads the compositions.",
+     "Then I'll go to Kawada-sensei's room.",
+     "Kawada-sensei is off today. Please give it to Kimura-san in the room next door.",
+     "Yes, I understand. Lee-san hasn't handed his in either, so I'll tell him too."
+    ],
+    "options": [
+     "The female teacher",
+     "Kawada-sensei",
+     "Lee-san",
+     "Kimura-san"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：老师说：「川田先生は きょう 休みですよ。となりの へやの 木村さんに わたして ください。」\n推理：学生以为交给眼前的老师，老师说「わたしじゃ ありません」；看作文的是川田老师，但他今天休息，所以交给隔壁的木村。小李是还没交作文的同学。\n容易错：「読む人」（川田先生）和「わたす人」（木村さん）不是同一个人。",
+   "en": "Evidence: The teacher says: 「川田先生は きょう 休みですよ。となりの へやの 木村さんに わたして ください。」\nReasoning: He assumes he hands it to her; she says 「わたしじゃ ありません」. Kawada-sensei reads the compositions but is off today, so it goes to Kimura-san next door. Lee-san is a classmate who hasn't handed his in yet.\nTrap: the person who reads it (川田先生) is not the person he hands it to (木村さん)."
+  },
+  "wrong": [
+   {
+    "zh": "老师自己说「わたしじゃ ありません」。",
+    "en": "The teacher herself says 「わたしじゃ ありません」."
+   },
+   {
+    "zh": "川田老师看作文，但今天休息，不能交给他。",
+    "en": "Kawada-sensei reads them, but he's off today, so the student can't give it to him."
+   },
+   {
+    "zh": "小李是也还没交作文的同学。",
+    "en": "Lee-san is a classmate who hasn't handed his in either."
+   },
+   null
+  ],
+  "traps": [
+   "denied-guess",
+   "not-possible",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-ck-142",
+  "type": "kadai",
+  "scene": "学校で 女の 学生と 男の 先生が 話しています。",
+  "question": "女の 学生は 何曜日に 先生の へやへ 行きますか。",
+  "lines": [
+   [
+    "F",
+    "先生、しつもんが あります。あとで 先生の へやへ 行っても いいですか。"
+   ],
+   [
+    "M",
+    "きょうは 火曜日ですね。すみません、きょうは これから 出かけます。"
+   ],
+   [
+    "F",
+    "じゃ、あしたは どうですか。"
+   ],
+   [
+    "M",
+    "水曜日は いちにち じゅぎょうが あります。あさっての 午後は どうですか。"
+   ],
+   [
+    "F",
+    "はい、だいじょうぶです。"
+   ],
+   [
+    "M",
+    "金曜日は 学校に 来ませんから、あさって 来て くださいね。"
+   ]
+  ],
+  "options": [
+   "火曜日",
+   "水曜日",
+   "木曜日",
+   "金曜日"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在学校，一个女学生和一位男老师在说话。",
+    "question": "女学生星期几去老师的房间？",
+    "lines": [
+     "老师，我有问题想问。待会儿可以去老师的房间吗？",
+     "今天是星期二吧。对不起，我今天这就要出去。",
+     "那明天怎么样？",
+     "星期三一整天都有课。后天下午怎么样？",
+     "好的，没问题。",
+     "星期五我不来学校，所以请后天来哦。"
+    ],
+    "options": [
+     "星期二",
+     "星期三",
+     "星期四",
+     "星期五"
+    ]
+   },
+   "en": {
+    "scene": "At school, a female student and a male teacher are talking.",
+    "question": "On which day will the female student go to the teacher's room?",
+    "lines": [
+     "Sensei, I have a question. May I come to your room later?",
+     "Today is Tuesday, isn't it. Sorry, I'm going out now.",
+     "Then how about tomorrow?",
+     "On Wednesday I have classes all day. How about the day after tomorrow, in the afternoon?",
+     "Yes, that's fine.",
+     "I'm not at school on Friday, so do come the day after tomorrow."
+    ],
+    "options": [
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：老师说「きょうは 火曜日ですね」，又说：「あさっての 午後は どうですか。」学生回答「はい、だいじょうぶです」。\n推理：今天星期二，明天星期三，「あさって」就是星期四。「木曜日」没有说出来，要自己推。今天老师要出去，星期三一整天有课，星期五老师不来学校。\n容易错：对话里说出来的三个星期（火・水・金）都是不行的日子。",
+   "en": "Evidence: The teacher says 「きょうは 火曜日ですね」 and then 「あさっての 午後は どうですか。」; she answers 「はい、だいじょうぶです」.\nReasoning: Today is Tuesday, tomorrow Wednesday, so 「あさって」 is Thursday. 「木曜日」 is never said — you work it out. Today he's going out, Wednesday is full of classes, and on Friday he isn't at school.\nTrap: the three days actually named (Tuesday, Wednesday, Friday) are all days that don't work."
+  },
+  "wrong": [
+   {
+    "zh": "星期二是今天，老师这就要出去。",
+    "en": "Tuesday is today, and the teacher is going out."
+   },
+   {
+    "zh": "星期三老师一整天有课。",
+    "en": "On Wednesday the teacher has classes all day."
+   },
+   null,
+   {
+    "zh": "星期五老师不来学校。",
+    "en": "On Friday the teacher isn't at school."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-ck-143",
+  "type": "kadai",
+  "scene": "教室で 女の 学生と 男の 学生が 話しています。",
+  "question": "男の 学生は きょう じゅぎょうの あとで 何を しますか。",
+  "lines": [
+   [
+    "F",
+    "上田さん、きょうも じゅぎょうの あとで テニスを しますか。"
+   ],
+   [
+    "M",
+    "いつもは しますが、きょうは 雨ですから、しません。"
+   ],
+   [
+    "F",
+    "じゃ、いっしょに えいがを 見に 行きませんか。"
+   ],
+   [
+    "M",
+    "いいですね。でも、あした テストが ありますから、きょうは としょかんで べんきょうします。"
+   ],
+   [
+    "F",
+    "そうですか。じゃ、わたしも えいがは 見ません。うちへ かえります。"
+   ]
+  ],
+  "options": [
+   "べんきょうを します",
+   "テニスを します",
+   "えいがを 見ます",
+   "うちへ かえります"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在教室里，一个女学生和一个男学生在说话。",
+    "question": "男学生今天下课后做什么？",
+    "lines": [
+     "上田，今天下课后也打网球吗？",
+     "平时都打，不过今天下雨，不打了。",
+     "那一起去看电影吧？",
+     "好啊。不过明天有考试，今天我在图书馆学习。",
+     "是吗。那我也不看电影了。我回家。"
+    ],
+    "options": [
+     "学习",
+     "打网球",
+     "看电影",
+     "回家"
+    ]
+   },
+   "en": {
+    "scene": "In a classroom, a female student and a male student are talking.",
+    "question": "What will the male student do after class today?",
+    "lines": [
+     "Ueda-san, are you playing tennis after class again today?",
+     "I usually do, but it's raining today, so I won't.",
+     "Then shall we go and see a film together?",
+     "That sounds nice. But there's a test tomorrow, so today I'll study in the library.",
+     "I see. Then I won't see the film either. I'll go home."
+    ],
+    "options": [
+     "Study",
+     "Play tennis",
+     "See a film",
+     "Go home"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「あした テストが ありますから、きょうは としょかんで べんきょうします。」\n推理：网球是「いつも」打的，今天下雨不打；看电影他先说「いいですね」，但接着用「でも」拒绝了；回家的是女的。\n容易错：「いいですね。でも……」是拒绝，不是答应。",
+   "en": "Evidence: He says: 「あした テストが ありますから、きょうは としょかんで べんきょうします。」\nReasoning: Tennis is what he does 「いつも」, but not today in the rain; to the film he says 「いいですね」 and then turns it down with 「でも」; the one going home is the woman.\nTrap: 「いいですね。でも……」 is a refusal, not a yes."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "网球平时打，今天下雨不打。",
+    "en": "He usually plays tennis, but not today because of the rain."
+   },
+   {
+    "zh": "他说「いいですね。でも……」，因为明天有考试，不去。",
+    "en": "He says 「いいですね。でも……」 — with a test tomorrow, he doesn't go."
+   },
+   {
+    "zh": "回家的是女学生。",
+    "en": "The one going home is the female student."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "other-option-attribute"
+  ]
+ },
+ {
+  "id": "n5-ck-144",
+  "type": "kadai",
+  "scene": "プールの 入口で 男の 人と 女の 人が 話しています。",
+  "question": "男の 人は きっぷを 何まい 買いますか。",
+  "lines": [
+   [
+    "M",
+    "きっぷを 買いますね。おとな 二人と 子ども 三人ですから、5まいですね。"
+   ],
+   [
+    "F",
+    "あ、ゆうたは まだ 4さいですから、きっぷは いりませんよ。"
+   ],
+   [
+    "M",
+    "そうですか。"
+   ],
+   [
+    "F",
+    "それから、わたしの きっぷは もう あります。"
+   ],
+   [
+    "M",
+    "わかりました。じゃ、買いますね。"
+   ]
+  ],
+  "options": [
+   "2まい",
+   "3まい",
+   "4まい",
+   "5まい"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在游泳池入口，一个男人和一个女人在说话。",
+    "question": "男人买几张票？",
+    "lines": [
+     "我去买票了。大人两个、孩子三个，一共五张对吧。",
+     "啊，悠太才四岁，不用买票。",
+     "是吗。",
+     "还有，我的票已经有了。",
+     "知道了。那我去买了。"
+    ],
+    "options": [
+     "两张",
+     "三张",
+     "四张",
+     "五张"
+    ]
+   },
+   "en": {
+    "scene": "At the entrance to a swimming pool, a man and a woman are talking.",
+    "question": "How many tickets will the man buy?",
+    "lines": [
+     "I'll buy the tickets. Two adults and three children, so five, right?",
+     "Oh, Yuta is only four, so he doesn't need a ticket.",
+     "I see.",
+     "Also, I already have my ticket.",
+     "Got it. I'll buy them, then."
+    ],
+    "options": [
+     "2",
+     "3",
+     "4",
+     "5"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说「ゆうたは まだ 4さいですから、きっぷは いりませんよ」，又说「わたしの きっぷは もう あります」。\n推理：本来是五张；悠太四岁不用票，减一张；女的已经有票，再减一张：5 − 1 − 1 = 3。\n容易错：「二人」是大人的人数，「4さい」是年龄，都不是票数；只减一次会选四张。",
+   "en": "Evidence: The woman says 「ゆうたは まだ 4さいですから、きっぷは いりませんよ」 and then 「わたしの きっぷは もう あります」.\nReasoning: It starts at five; Yuta, aged four, needs none, so one less; she already has hers, so one less again: 5 − 1 − 1 = 3.\nTrap: 「二人」 is the number of adults and 「4さい」 is an age, not tickets; subtracting only once gives four."
+  },
+  "wrong": [
+   {
+    "zh": "「二人」是大人的人数，不是要买的票数。",
+    "en": "「二人」 is the number of adults, not the tickets to buy."
+   },
+   null,
+   {
+    "zh": "只减了一次；悠太的和女的已有的那张都要减。「4」是悠太的年龄。",
+    "en": "That subtracts only once; both Yuta's and the one she already has come off. 「4」 is Yuta's age."
+   },
+   {
+    "zh": "五张是男的一开始算的，后来减了两张。",
+    "en": "Five is his first count; two come off afterwards."
+   }
+  ],
+  "traps": [
+   "number",
+   "done-already"
+  ]
+ },
+ {
+  "id": "n5-ck-145",
+  "type": "kadai",
+  "scene": "スーパーで 男の 人と 女の 人が 話しています。",
+  "question": "女の 人は 何を 買いますか。",
+  "lines": [
+   [
+    "M",
+    "ぼくは こんばん カレーを つくりますから、にくと やさいを 買います。山口さんは？"
+   ],
+   [
+    "F",
+    "わたしは さかなが 食べたいです。……あ、きょうは さかなが 高いですね。"
+   ],
+   [
+    "M",
+    "たまごは やすいですよ。"
+   ],
+   [
+    "F",
+    "たまごは うちに あります。そうですね……。高いですが、きょうは さかなに します。"
+   ]
+  ],
+  "options": [
+   "さかな",
+   "にく",
+   "やさい",
+   "たまご"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在超市，一个男人和一个女人在说话。",
+    "question": "女人买什么？",
+    "lines": [
+     "我今晚做咖喱，所以买肉和蔬菜。山口小姐呢？",
+     "我想吃鱼。……啊，今天鱼好贵啊。",
+     "鸡蛋很便宜哦。",
+     "鸡蛋家里有。嗯……虽然贵，今天还是买鱼吧。"
+    ],
+    "options": [
+     "鱼",
+     "肉",
+     "蔬菜",
+     "鸡蛋"
+    ]
+   },
+   "en": {
+    "scene": "At a supermarket, a man and a woman are talking.",
+    "question": "What will the woman buy?",
+    "lines": [
+     "I'm making curry tonight, so I'll buy meat and vegetables. How about you, Yamaguchi-san?",
+     "I want to eat fish. …Oh, fish is expensive today.",
+     "Eggs are cheap.",
+     "I have eggs at home. Hmm… It's expensive, but I'll have fish today."
+    ],
+    "options": [
+     "Fish",
+     "Meat",
+     "Vegetables",
+     "Eggs"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的最后说：「高いですが、きょうは さかなに します。」\n推理：肉和蔬菜是男的做咖喱要买的；鸡蛋男的推荐了，但她家里有。鱼虽然贵，她还是决定买。\n容易错：问的是女的；「高いですね」听起来像要放弃，但最后一句才是决定。",
+   "en": "Evidence: At the end she says: 「高いですが、きょうは さかなに します。」\nReasoning: Meat and vegetables are what the man buys for his curry; he suggests eggs, but she has some at home. The fish is expensive, yet she decides on it.\nTrap: the question is about the woman; 「高いですね」 sounds like giving up, but the last line is the decision."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "肉是男的做咖喱要买的。",
+    "en": "Meat is what the man buys for his curry."
+   },
+   {
+    "zh": "蔬菜也是男的要买的。",
+    "en": "Vegetables are also the man's shopping."
+   },
+   {
+    "zh": "鸡蛋她家里有，不买。",
+    "en": "She has eggs at home, so she doesn't buy any."
+   }
+  ],
+  "traps": [
+   "other-option-attribute",
+   "done-already"
+  ]
  }
 ]

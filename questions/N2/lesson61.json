@@ -578,5 +578,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l61-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson61#1"
+    ],
+    "difficulty": 2,
+    "stem": "社長の発言はメディアで批判されているが、あれは会議で出た一つの案を（　）、会社としての正式な決定ではない。",
+    "options": [
+      "紹介するのみならず",
+      "紹介したばかりか",
+      "紹介したに過ぎず",
+      "紹介するに限らず"
+    ],
+    "answer": 2,
+    "full": "社長の発言はメディアで批判されているが、あれは会議で出た一つの案を紹介したに過ぎず、会社としての正式な決定ではない。",
+    "tr": {
+      "zh": "社长的发言受到媒体批评，但那只不过是介绍了会上提出的一个方案，并不是公司的正式决定。",
+      "en": "The president's remark is being criticised in the media, but he was merely presenting one idea raised at a meeting; it is not the company's official decision."
+    },
+    "why": {
+      "zh": "线索：后面是「正式な決定ではない」，前面有「一つの案」，是在把事情往小里说。\n规则：「普通形＋に過ぎない」＝只不过是……；句中停顿时用「に過ぎず」。\n辨析：「〜のみならず」「〜ばかりか」都是“不仅……而且……”，后面要追加程度更高的内容；这里后面是否定「ではない」，不是追加。",
+      "en": "Clue: What follows is 「正式な決定ではない」, and 「一つの案」 comes before: the speaker is playing the matter down.\nRule: plain form ＋ 「に過ぎない」 = merely, nothing more than; mid-sentence it becomes 「に過ぎず」.\nContrast: 「〜のみならず」 and 「〜ばかりか」 both mean \"not only… but also\" and need something added on; here a denial (「ではない」) follows, not an addition."
+    },
+    "wrong": [
+      {
+        "zh": "「〜のみならず」是“不仅……”，后面要追加别的内容，接不上「正式な決定ではない」。",
+        "en": "「〜のみならず」 (not only) needs an addition after it, not 「正式な決定ではない」."
+      },
+      {
+        "zh": "「〜ばかりか」是“岂止……甚至……”，后面是更进一步的事，和否定的后半句不合。",
+        "en": "「〜ばかりか」 (not just… but even) leads to something further, which the negative second half is not."
+      },
+      null,
+      {
+        "zh": "「〜に限らず」是“不限于……”，前面接名词，意思也是追加，不合这里。",
+        "en": "「〜に限らず」 (not limited to) follows a noun and also adds something, which doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n2-l61-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson61#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「最近、仕事の疲れがなかなか取れないんです。」\nB「そういうときは、無理をしないで早く家に帰って（　）よ。」",
+    "options": [
+      "ゆっくり休むに過ぎません",
+      "ゆっくり休むに限ります",
+      "ゆっくり休むとは限りません",
+      "ゆっくり休むわけがありません"
+    ],
+    "answer": 1,
+    "full": "A「最近、仕事の疲れがなかなか取れないんです。」\nB「そういうときは、無理をしないで早く家に帰ってゆっくり休むに限りますよ。」",
+    "tr": {
+      "zh": "A：“最近工作的疲劳老是消不掉。”\nB：“这种时候，别勉强，早点回家好好休息最好了。”",
+      "en": "A: \"Lately I just can't shake off the tiredness from work.\"\nB: \"At times like that, nothing beats not pushing yourself, going home early and getting a good rest.\""
+    },
+    "why": {
+      "zh": "线索：B 用「そういうときは」开头，是在针对对方的烦恼提出自己认为最好的办法。\n规则：「辞书形（休む）＋に限る」＝……最好，是说话人的主观推荐，常用「〜ときは〜に限る」。\n辨析：「〜とは限らない」＝不一定……，是否定“总是如此”，虽然也有「限」字，意思完全不同：「高い物がいいとは限らない」。",
+      "en": "Clue: B starts with 「そういうときは」, offering what he thinks is the best remedy for A's trouble.\nRule: dictionary form (「休む」) ＋ 「に限る」 = …is the best thing, a personal recommendation, often as 「〜ときは〜に限る」.\nContrast: 「〜とは限らない」 = not necessarily; it shares 「限」 but means something else entirely: 「高い物がいいとは限らない」."
+    },
+    "wrong": [
+      {
+        "zh": "「〜に過ぎない」是“只不过……”，把事情说小，不能用来给建议。",
+        "en": "「〜に過ぎない」 (merely) plays something down; it can't give advice."
+      },
+      null,
+      {
+        "zh": "「〜とは限らない」是“不一定……”，“早点回家不一定好好休息”作为建议说不通。",
+        "en": "「〜とは限らない」 means \"not necessarily\"; that makes no sense as advice."
+      },
+      {
+        "zh": "「〜わけがない」是“不可能……”，是强烈的否定判断，不是建议。",
+        "en": "「〜わけがない」 (no way that…) is a strong denial, not advice."
+      }
+    ]
   }
 ]

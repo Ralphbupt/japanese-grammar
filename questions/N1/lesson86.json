@@ -694,5 +694,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n1-l86-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson86#2"
+    ],
+    "difficulty": 3,
+    "stem": "これほど深刻な健康被害を出した以上、企業の責任者から被害者に対して直接の謝罪と十分な説明が（　）。",
+    "options": [
+      "あるべくもないのである",
+      "あればそれまでである",
+      "あるには及ばないのである",
+      "あってしかるべきである"
+    ],
+    "answer": 3,
+    "full": "これほど深刻な健康被害を出した以上、企業の責任者から被害者に対して直接の謝罪と十分な説明があってしかるべきである。",
+    "tr": {
+      "zh": "既然造成了如此严重的健康损害，企业负责人理应直接向受害者道歉并作出充分说明。",
+      "en": "Having caused such serious harm to people's health, the company's management ought by rights to apologise to the victims directly and give a full explanation."
+    },
+    "why": {
+      "zh": "线索：「〜以上」（既然）后面要接理所当然的要求或义务。\n规则：「动词て形＋しかるべきだ」＝理应……、……才对，表示从道理上说应该如此，而现实往往还没做到：「謝罪があってしかるべきだ」。\n辨析：「〜べくもない」只差在「べく」后面，意思却是“根本无法……”：「真相は知るべくもない」。说“无从道歉”，和「以上」引出的要求相反。",
+      "en": "Clue: 「〜以上」 (given that …) must lead to a demand or obligation that follows as a matter of course.\nRule: て-form + 「しかるべきだ」 = ought by rights to …; it is only proper, though often it hasn't happened yet: 「謝罪があってしかるべきだ」.\nContrast: 「〜べくもない」 also contains 「べく」 but means \"cannot possibly …\": 「真相は知るべくもない」. \"There can be no apology\" is the opposite of what 「以上」 calls for."
+    },
+    "wrong": [
+      {
+        "zh": "「〜べくもない」是“根本不可能有”，和“既然造成了损害就应该……”的逻辑相反。",
+        "en": "「〜べくもない」 means \"there cannot possibly be\", the reverse of \"having caused harm, they should …\"."
+      },
+      {
+        "zh": "「〜ばそれまでだ」是“如果……就完了”，“有了道歉就完了”说不通。",
+        "en": "「〜ばそれまでだ」 means \"if …, that is the end of it\"; \"if there is an apology, it's all over\" makes no sense."
+      },
+      {
+        "zh": "「〜には及ばない」是“不必……”，变成“不必道歉和说明”，和「以上」矛盾。",
+        "en": "「〜には及ばない」 means \"there is no need to …\", giving \"no apology is needed\", which contradicts 「以上」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l86-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson86#6"
+    ],
+    "difficulty": 2,
+    "stem": "どれほど多額の資金を投じて優れた技術を開発したところで、肝心の消費者に必要とされなければ（　）。",
+    "options": [
+      "それに越したことはない",
+      "それまでのことであろう",
+      "それには及ばないのである",
+      "それに限ったことではない"
+    ],
+    "answer": 1,
+    "full": "どれほど多額の資金を投じて優れた技術を開発したところで、肝心の消費者に必要とされなければそれまでのことであろう。",
+    "tr": {
+      "zh": "无论投入多少资金开发出多么出色的技术，如果最关键的消费者不需要，那也就到此为止了。",
+      "en": "However much money is poured into developing superb technology, if the consumers who matter have no need for it, that is the end of the matter."
+    },
+    "why": {
+      "zh": "线索：前面是「どれほど〜たところで」（无论怎样……也），接着是假定「〜なければ」，说的是努力白费的情况。\n规则：「〜ば／たらそれまでだ（それまでのことだ）」＝如果……就一切都完了，之前的东西全都失去意义。\n辨析：「〜に越したことはない」是“最好……”：「安いに越したことはない」，前面接希望出现的情况。“不被需要”不是值得期待的事。",
+      "en": "Clue: 「どれほど〜たところで」 (however much … even so) is followed by the supposition 「〜なければ」 — the case where the effort comes to nothing.\nRule: 「〜ば／たらそれまでだ（それまでのことだ）」 = if …, that's the end of it; everything before it loses its point.\nContrast: 「〜に越したことはない」 means \"nothing is better than …\": 「安いに越したことはない」, and follows something desirable. Not being needed is hardly desirable."
+    },
+    "wrong": [
+      {
+        "zh": "「それに越したことはない」是“那是最好不过”，“不被消费者需要是最好的”意思反了。",
+        "en": "「それに越したことはない」 means \"nothing could be better\"; \"not being needed by consumers is best\" is the reverse."
+      },
+      null,
+      {
+        "zh": "「それには及ばない」是“不必那样做”，用来谢绝别人的提议，接不上“如果不被需要”。",
+        "en": "「それには及ばない」 means \"there is no need for that\", used to decline an offer; it doesn't follow \"if it isn't needed\"."
+      },
+      {
+        "zh": "「〜に限ったことではない」是“不只是……才这样”，这里没有“别处也一样”的意思。",
+        "en": "「〜に限ったことではない」 means \"it isn't only …\"; there is no \"the same goes elsewhere\" here."
+      }
+    ]
   }
 ]

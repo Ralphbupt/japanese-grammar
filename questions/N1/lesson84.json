@@ -694,5 +694,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n1-l84-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson84#3"
+    ],
+    "difficulty": 3,
+    "stem": "戦場に取り残された市民の姿を克明に描いたこの記録映画は、見る者の胸に平和の尊さを強く（　）。",
+    "options": [
+      "訴えかけるまでもない",
+      "訴えかけるべくもない",
+      "訴えかけるには及ばない",
+      "訴えかけずにはおかない"
+    ],
+    "answer": 3,
+    "full": "戦場に取り残された市民の姿を克明に描いたこの記録映画は、見る者の胸に平和の尊さを強く訴えかけずにはおかない。",
+    "tr": {
+      "zh": "这部细致描绘被困在战场上的平民的纪录片，必然会让观众深切感受到和平的可贵。",
+      "en": "This documentary, which portrays in minute detail the civilians left behind on the battlefield, cannot fail to bring home to its viewers how precious peace is."
+    },
+    "why": {
+      "zh": "线索：主语是「記録映画」这样的作品，后面是它对「見る者の胸」产生的作用，又有「強く」。\n规则：「动词ない形（去掉ない）＋ずにはおかない」＝必然会……、不由得让人……，表示某事物自然引起某种反应或结果。\n辨析：「〜までもない」是“用不着……”，表示没有必要：「言うまでもない」。它和表示程度的「強く」不相称，意思也变成这部电影不需要打动人。",
+      "en": "Clue: The subject is a work, 「記録映画」; what follows is its effect on 「見る者の胸」, with 「強く」.\nRule: verb ない-stem + 「ずにはおかない」 = is bound to …, cannot fail to …; something naturally produces a reaction or result.\nContrast: 「〜までもない」 means \"there is no need to …\": 「言うまでもない」. It doesn't sit with 「強く」, and would say the film has no need to move anyone."
+    },
+    "wrong": [
+      {
+        "zh": "「〜までもない」是“用不着诉说”，和称赞这部电影感染力的句意相反，也和「強く」不搭。",
+        "en": "「〜までもない」 means \"needs no appeal\", the reverse of praising the film's power, and it clashes with 「強く」."
+      },
+      {
+        "zh": "「〜べくもない」是“根本无法……”，变成这部电影无法打动人，和「克明に描いた」的评价矛盾。",
+        "en": "「〜べくもない」 means \"cannot possibly …\", saying the film can't move anyone — at odds with 「克明に描いた」."
+      },
+      {
+        "zh": "「〜には及ばない」是“不必……”，同样变成没有必要打动观众。",
+        "en": "「〜には及ばない」 means \"there is no need to …\", again saying there is no need to move the audience."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l84-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson84#6"
+    ],
+    "difficulty": 2,
+    "stem": "記録的な豪雨により線路の一部が流失し、同鉄道は復旧のめどが立つまで全線での運転見合わせを（　）。",
+    "options": [
+      "余儀なくさせることとなった",
+      "余儀なくされることとなった",
+      "禁じ得なかったのである",
+      "ものともしなかったのである"
+    ],
+    "answer": 1,
+    "full": "記録的な豪雨により線路の一部が流失し、同鉄道は復旧のめどが立つまで全線での運転見合わせを余儀なくされることとなった。",
+    "tr": {
+      "zh": "由于创纪录的暴雨冲毁了部分线路，该铁路在有望修复之前不得不全线停运。",
+      "en": "With part of the track washed away by record rainfall, the railway has been forced to suspend service on the entire line until there is some prospect of restoration."
+    },
+    "why": {
+      "zh": "线索：原因是「豪雨により線路が流失し」，主语「同鉄道」是受影响、别无选择的一方。\n规则：「名词＋を余儀なくされる」＝（因外部情况）被迫……，主语是不得不这样做的人或组织。\n辨析：「〜を余儀なくさせる」主语是造成这种局面的原因：「豪雨は鉄道に運休を余儀なくさせた」。看主语是受害的一方还是原因。",
+      "en": "Clue: The cause is 「豪雨により線路が流失し」, and the subject 「同鉄道」 is the party affected, left with no choice.\nRule: noun + 「を余儀なくされる」 = be forced into … (by outside circumstances); the subject is the person or organisation that has to do it.\nContrast: With 「〜を余儀なくさせる」 the subject is the cause: 「豪雨は鉄道に運休を余儀なくさせた」. Check whether the subject is the one affected or the cause."
+    },
+    "wrong": [
+      {
+        "zh": "「〜を余儀なくさせる」的主语应是迫使别人这样做的原因（暴雨），这里主语是铁路公司自己。",
+        "en": "The subject of 「〜を余儀なくさせる」 should be the cause that forces someone else (the rain); here the subject is the railway itself."
+      },
+      null,
+      {
+        "zh": "「〜を禁じ得ない」是“不禁（感到）……”，前面接「怒り」「同情」等感情，不接「運転見合わせ」。",
+        "en": "「〜を禁じ得ない」 means \"cannot help feeling …\" and follows emotions such as 「怒り」「同情」, not 「運転見合わせ」."
+      },
+      {
+        "zh": "「〜をものともしない」是“不把（困难）当回事”，线路被冲毁、停运的一方不可能“不在乎停运”。",
+        "en": "「〜をものともしない」 means \"to think nothing of (a difficulty)\"; a railway whose track is gone can't \"think nothing of\" its own suspension."
+      }
+    ]
   }
 ]

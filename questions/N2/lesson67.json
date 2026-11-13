@@ -1166,5 +1166,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l67-031",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#6"
+    ],
+    "difficulty": 2,
+    "stem": "この店のランチは、客の希望（　）ご飯の量を無料で増やしたり減らしたりできるので、幅広い年齢層に人気がある。",
+    "options": [
+      "を中心に",
+      "に応じて",
+      "をめぐって",
+      "のもとで"
+    ],
+    "answer": 1,
+    "full": "この店のランチは、客の希望に応じてご飯の量を無料で増やしたり減らしたりできるので、幅広い年齢層に人気がある。",
+    "tr": {
+      "zh": "这家店的午餐可以根据客人的要求免费增减米饭的量，所以受到各个年龄层的欢迎。",
+      "en": "At this restaurant the amount of rice at lunch can be increased or reduced free of charge according to the customer's wishes, so it is popular with a wide range of ages."
+    },
+    "why": {
+      "zh": "线索：后面是「増やしたり減らしたりできる」，做法随「客の希望」而变。\n规则：「名词＋に応じて」＝根据……（的不同而相应地改变做法），前面常是「希望」「予算」「能力」等会有差别的词。\n辨析：「〜を中心に」＝以……为中心（「若者を中心に人気がある」），说的是范围的重点，不是随之改变。别被后面的「人気がある」带过去，空格修饰的是「増やしたり減らしたり」。",
+      "en": "Clue: What follows is 「増やしたり減らしたりできる」: what is done changes with 「客の希望」.\nRule: noun ＋ 「に応じて」 = in accordance with, adjusting to…; it follows words that vary, such as 「希望」「予算」「能力」.\nContrast: 「〜を中心に」 = centred on (「若者を中心に人気がある」), the focus of a range, not an adjustment. Don't be drawn by 「人気がある」 later on; the blank modifies 「増やしたり減らしたり」."
+    },
+    "wrong": [
+      {
+        "zh": "「〜を中心に」是“以……为中心”，表示重点所在，接不上「増やしたり減らしたり」。",
+        "en": "「〜を中心に」 (centred on) marks a focus and can't lead into 「増やしたり減らしたり」."
+      },
+      null,
+      {
+        "zh": "「〜をめぐって」是“围绕……（争论）”，后面接议论、对立。",
+        "en": "「〜をめぐって」 (over) is followed by debate or conflict."
+      },
+      {
+        "zh": "「〜のもとで」是“在……（的指导、条件）之下”，前面接「先生」「指導」「法律」等，不接「客の希望」。",
+        "en": "「〜のもとで」 (under) follows words like 「先生」「指導」「法律」, not 「客の希望」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-032",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#7"
+    ],
+    "difficulty": 2,
+    "stem": "A「この報告書、誰が書いたんでしょうか。」\nB「この丁寧な字や表の作り方（　）、たぶん経理の鈴木さんでしょう。」",
+    "options": [
+      "からすると",
+      "にしたら",
+      "としては",
+      "を問わず"
+    ],
+    "answer": 0,
+    "full": "A「この報告書、誰が書いたんでしょうか。」\nB「この丁寧な字や表の作り方からすると、たぶん経理の鈴木さんでしょう。」",
+    "tr": {
+      "zh": "A：“这份报告是谁写的呢？”\nB：“从这工整的字和表格的做法来看，大概是会计部的铃木吧。”",
+      "en": "A: \"Who could have written this report?\"\nB: \"Judging from the neat handwriting and the way the tables are laid out, it's probably Suzuki in accounting.\""
+    },
+    "why": {
+      "zh": "线索：空格前是看得到的线索（丁寧な字・表の作り方），后面是推测「たぶん…でしょう」。\n规则：「名词＋からすると」＝从……来判断，前面是判断的依据，后面接推测。\n辨析：「〜にしたら」＝站在……的立场上（「親にしたら心配だろう」），前面只接人；「字」「作り方」不是人，没有立场可言。",
+      "en": "Clue: Before the blank are visible signs (「丁寧な字」「表の作り方」), and after it a guess, 「たぶん…でしょう」.\nRule: noun ＋ 「からすると」 = judging from…; the ground for the judgement comes before, the guess after.\nContrast: 「〜にしたら」 = from the standpoint of (「親にしたら心配だろう」) and takes only a person; handwriting and layout have no standpoint."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜にしたら」是“站在……的立场”，前面只接人，「字」「作り方」不是人。",
+        "en": "「〜にしたら」 (from …'s point of view) takes a person; 「字」 and 「作り方」 aren't people."
+      },
+      {
+        "zh": "「〜としては」是“作为……（的身份、立场）”，不表示判断的依据。",
+        "en": "「〜としては」 (as, in the capacity of) gives a role or standpoint, not grounds for a judgement."
+      },
+      {
+        "zh": "「〜を問わず」是“不论……”，前面接「年齢」「男女」等有多种情况的词，后面也不接推测。",
+        "en": "「〜を問わず」 (regardless of) follows words like 「年齢」「男女」 and isn't followed by a guess."
+      }
+    ]
   }
 ]

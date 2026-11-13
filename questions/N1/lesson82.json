@@ -696,5 +696,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n1-l82-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson82#5"
+    ],
+    "difficulty": 3,
+    "stem": "何分にも（　）、進行に行き届かない点も多々あるかと存じますが、何とぞご容赦くださいますようお願い申し上げます。",
+    "options": [
+      "初めての司会にかこつけて",
+      "初めての司会にしては",
+      "初めての司会のこととて",
+      "初めての司会といえども"
+    ],
+    "answer": 2,
+    "full": "何分にも初めての司会のこととて、進行に行き届かない点も多々あるかと存じますが、何とぞご容赦くださいますようお願い申し上げます。",
+    "tr": {
+      "zh": "毕竟是第一次担任主持，进行中想必有许多不周之处，还请各位多多包涵。",
+      "en": "As this is my first time as host, I am sure there will be many shortcomings in how things are run, and I ask for your kind indulgence."
+    },
+    "why": {
+      "zh": "线索：句首有「何分にも」（毕竟、无奈），句末是请求原谅的「ご容赦ください」。\n规则：「名词＋のこととて」＝因为……（所以请原谅），是道歉、请求谅解时说明理由的郑重说法，常和「何分（にも）」一起用：「何分にも不慣れなこととて」。\n辨析：「〜にしては」是“就……来说，却出乎意料……”：「初めての司会にしては落ち着いている」。第一次主持出现不周是意料之中，不能用它。",
+      "en": "Clue: 「何分にも」 (after all, I'm afraid) opens the sentence and it ends with a request for forgiveness, 「ご容赦ください」.\nRule: noun + 「のこととて」 = since … (please forgive), a formal way of giving the reason in an apology, often with 「何分（にも）」: 「何分にも不慣れなこととて」.\nContrast: 「〜にしては」 means \"for a …, surprisingly …\": 「初めての司会にしては落ち着いている」. Shortcomings from a first-time host are what one expects, so it can't be used."
+    },
+    "wrong": [
+      {
+        "zh": "「〜にかこつけて」是“拿……当借口（做别的事）”，带贬义，不会用在自己的道歉里，后面也不是借机做的事。",
+        "en": "「〜にかこつけて」 means \"using … as a pretext (to do something else)\"; it is disparaging and not used in one's own apology."
+      },
+      {
+        "zh": "「〜にしては」表示和预想相反，“第一次主持却有很多不周”不合逻辑。",
+        "en": "「〜にしては」 marks something contrary to expectation; \"many shortcomings, for a first-time host\" is illogical."
+      },
+      null,
+      {
+        "zh": "「〜といえども」是“即使是……也……”，“即使是第一次主持也有不周”逻辑反了。",
+        "en": "「〜といえども」 means \"even …\"; \"even though it is my first time, there will be shortcomings\" has the logic backwards."
+      }
+    ]
+  },
+  {
+    "id": "n1-l82-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson82#4"
+    ],
+    "difficulty": 2,
+    "stem": "三年ぶりに入場制限なしで開催される（　）、会場周辺は早朝から大勢の見物客でにぎわいを見せていた。",
+    "options": [
+      "とあって",
+      "ところを",
+      "といえども",
+      "とはいえ"
+    ],
+    "answer": 0,
+    "full": "三年ぶりに入場制限なしで開催されるとあって、会場周辺は早朝から大勢の見物客でにぎわいを見せていた。",
+    "tr": {
+      "zh": "由于时隔三年不限制入场人数举办，会场周边从清晨起就挤满了前来观看的人。",
+      "en": "With the event being held without admission limits for the first time in three years, the area around the venue was bustling with spectators from early morning."
+    },
+    "why": {
+      "zh": "线索：前半句是“时隔三年不限入场”这种特别的情况，后半句是由此自然出现的热闹场面。\n规则：「普通形＋とあって」＝因为是……（这种特殊情况），所以……，用来客观叙述看到的情形，多见于新闻报道。\n辨析：「〜とはいえ」是转折，“虽说……但是……”：「三年ぶりとはいえ、客足は伸びなかった」。这里前后是因果，不是转折。",
+      "en": "Clue: The first half is a special circumstance (no admission limits for the first time in three years); the second is the lively scene it naturally produced.\nRule: plain form + 「とあって」 = because it is … (a special situation), …; used to report what one observes, common in news writing.\nContrast: 「〜とはいえ」 is adversative, \"although …\": 「三年ぶりとはいえ、客足は伸びなかった」. Here the two halves are cause and effect, not contrast."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜ところを」是“本应……的时候却……”或“正在……时（被……）”，和后面的热闹场面接不上。",
+        "en": "「〜ところを」 means \"when it would normally be …\" or \"just as … (was caught)\"; it doesn't lead to the lively scene."
+      },
+      {
+        "zh": "「〜といえども」是“即使……也……”，表示让步，这里前后是因果关系。",
+        "en": "「〜といえども」 means \"even though …\" — a concession, whereas the two halves here are cause and effect."
+      },
+      {
+        "zh": "「〜とはいえ」是“虽说……但是……”，表示转折，和“所以很热闹”相反。",
+        "en": "「〜とはいえ」 means \"although …\" — a contrast, the opposite of \"so it was crowded\"."
+      }
+    ]
   }
 ]

@@ -349,5 +349,45 @@
       null
     ],
     "rev": 2
+  },
+  {
+    "id": "n3-l45-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson45#1"
+    ],
+    "difficulty": 2,
+    "stem": "この小説は千ページ以上もあるので、休みの間に全部読みたいが、一週間では（　）と思う。",
+    "options": [
+      "読み出さない",
+      "読み直さない",
+      "読み続けない",
+      "読みきれない"
+    ],
+    "answer": 3,
+    "full": "この小説は千ページ以上もあるので、休みの間に全部読みたいが、一週間では読みきれないと思う。",
+    "tr": {
+      "zh": "这部小说有一千多页，虽然想在假期里全部读完，但我想一个星期读不完。",
+      "en": "This novel is over a thousand pages long, so although I'd like to read all of it over the holiday, I don't think I can finish it in a week."
+    },
+    "why": {
+      "zh": "线索：「千ページ以上もある」「全部読みたいが」「一週間では」：想全部读，但量太多、时间不够。\n规则：「动词ます形＋きれない」＝不能全部……完，表示量太多或时间不够，做不完（「食べきれない」「数えきれない」）。\n辨析：「読みきれない」＝想读也读不完（做不到）；「読み直さない」＝不重新读、「読み続けない」＝不继续读，都是自己决定“不做”，和前面的「全部読みたいが」接不上。",
+      "en": "Clue: 「千ページ以上もある」, 「全部読みたいが」, 「一週間では」: the speaker wants to read it all, but there is too much for the time.\nRule: Verb ます-stem + 「きれない」 = \"can't … completely\": there is too much, or too little time (「食べきれない」, 「数えきれない」).\nContrast: 「読みきれない」 = can't finish however much one wants to; 「読み直さない」 (won't reread) and 「読み続けない」 (won't go on reading) are choices not to do something, which doesn't follow 「全部読みたいが」."
+    },
+    "wrong": [
+      {
+        "zh": "「読み出す」是“开始读”，“想全部读，但一个星期不会开始读”前后接不上。",
+        "en": "「読み出す」 means \"start reading\"; \"I want to read it all, but in a week I won't start\" doesn't hold together."
+      },
+      {
+        "zh": "「読み直す」是“重新读一遍”，这里说的是第一遍能不能读完，不是重读。",
+        "en": "「読み直す」 means \"read again\"; the point here is whether the first reading can be finished, not rereading."
+      },
+      {
+        "zh": "「読み続けない」是“不继续读下去”，是自己的决定，和「全部読みたい」矛盾。",
+        "en": "「読み続けない」 means \"won't go on reading\", a decision that contradicts 「全部読みたい」."
+      },
+      null
+    ]
   }
 ]

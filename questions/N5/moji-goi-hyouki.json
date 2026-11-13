@@ -521,5 +521,175 @@
       { "zh": "「と」是「ト」，「ナ」是「な」。", "en": "と is ト; ナ is な." },
       { "zh": "「と」是清音「ト」，不是「ド」。", "en": "と is unvoiced: ト, not ド." }
     ]
+  },
+  {
+    "id": "n5-mg-231",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "よる うちで テレビを <<みます>>。",
+    "options": ["見ます", "貝ます", "目ます", "具ます"],
+    "kj": "夜うちでテレビを見ます。",
+    "answer": 0,
+    "tr": { "zh": "晚上在家看电视。", "en": "I watch TV at home in the evening." },
+    "why": { "zh": "「みます」（看）写作「見ます」：上面「目」，下面「儿」。", "en": "みます (to see, watch) is 「見ます」: 「目」 on top, two legs below." },
+    "wrong": [
+      null,
+      { "zh": "「貝」读「かい」（贝），下面是两点。", "en": "「貝」 is かい (shell), with two short dots below." },
+      { "zh": "「目」读「め」（眼睛），下面没有「儿」。", "en": "「目」 is め (eye) — it has no legs." },
+      { "zh": "「具」读「ぐ」（工具），下面多了一横。", "en": "「具」 is ぐ (tool), with an extra line below." }
+    ]
+  },
+  {
+    "id": "n5-mg-232",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "まいあさ ぎゅうにゅうを <<のみます>>。",
+    "options": ["飲みます", "飯みます", "飲ます", "食みます"],
+    "kj": "毎朝牛乳を飲みます。",
+    "answer": 0,
+    "tr": { "zh": "我每天早上喝牛奶。", "en": "I drink milk every morning." },
+    "why": { "zh": "「のみます」（喝）写作「飲みます」：食字旁加「欠」，假名从「み」开始。", "en": "のみます (to drink) is 「飲みます」: the 食 radical plus 「欠」, with kana from み." },
+    "wrong": [
+      null,
+      { "zh": "「飯」读「はん」（饭），右边是「反」。", "en": "「飯」 is はん (meal), with 「反」 on the right." },
+      { "zh": "少了「み」：假名要写「みます」。", "en": "The み is missing: the kana part is みます." },
+      { "zh": "「食」是「たべます」（吃）的字。", "en": "「食」 is the kanji of たべます (to eat)." }
+    ]
+  },
+  {
+    "id": "n5-mg-233",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "みんなの まえで なまえを <<いいました>>。",
+    "options": ["言いました", "言ました", "話いました", "語いました"],
+    "kj": "みんなの前で名前を言いました。",
+    "answer": 0,
+    "tr": { "zh": "我在大家面前说了名字。", "en": "I said my name in front of everyone." },
+    "why": { "zh": "「いいます」（说）写作「言います」，汉字后面要有一个「い」。", "en": "いいます (to say) is 「言います」, with one い after the kanji." },
+    "wrong": [
+      null,
+      { "zh": "少了「い」：「言」只读「い」，后面还要写「いました」。", "en": "An い is missing: 「言」 covers only the first い." },
+      { "zh": "「話」是「はなします」（说话）的字。", "en": "「話」 is the kanji of はなします (to talk)." },
+      { "zh": "「語」读「ご」（语言），如「日本語」。", "en": "「語」 is ご (language), as in 「日本語」." }
+    ]
+  },
+  {
+    "id": "n5-mg-234",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "あした えきで ともだちに <<あいます>>。",
+    "options": ["会います", "会ます", "今います", "社います"],
+    "kj": "明日駅で友だちに会います。",
+    "answer": 0,
+    "tr": { "zh": "明天在车站见朋友。", "en": "I'm meeting a friend at the station tomorrow." },
+    "why": { "zh": "「あいます」（见面）写作「会います」，和「会社」的「会」是同一个字。", "en": "あいます (to meet) is 「会います」 — the same 「会」 as in 「会社」." },
+    "wrong": [
+      null,
+      { "zh": "少了「い」：假名要写「います」。", "en": "The い is missing: the kana part is います." },
+      { "zh": "「今」读「いま」（现在），下面不一样。", "en": "「今」 is いま (now); its lower part is different." },
+      { "zh": "「社」读「しゃ」，是「会社」的第二个字。", "en": "「社」 is しゃ, the second kanji of 「会社」." }
+    ]
+  },
+  {
+    "id": "n5-mg-235",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "ノートに なまえを <<かきます>>。",
+    "options": ["書きます", "事きます", "昼きます", "書ます"],
+    "kj": "ノートに名前を書きます。",
+    "answer": 0,
+    "tr": { "zh": "在笔记本上写名字。", "en": "I write my name in the notebook." },
+    "why": { "zh": "「かきます」（写）写作「書きます」，下面是「日」，假名从「き」开始。", "en": "かきます (to write) is 「書きます」, with 「日」 at the bottom and kana from き." },
+    "wrong": [
+      null,
+      { "zh": "「事」读「こと」（事情），下面是一个钩。", "en": "「事」 is こと (thing, matter), ending in a hook." },
+      { "zh": "「昼」读「ひる」（白天）。", "en": "「昼」 is ひる (daytime)." },
+      { "zh": "少了「き」：假名要写「きます」。", "en": "The き is missing: the kana part is きます." }
+    ]
+  },
+  {
+    "id": "n5-mg-236",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "この とけいは とても <<ふるい>>です。",
+    "options": ["古い", "古るい", "吉い", "右い"],
+    "kj": "この時計はとても古いです。",
+    "answer": 0,
+    "tr": { "zh": "这块表很旧。", "en": "This watch is very old." },
+    "why": { "zh": "「ふるい」（旧）写作「古い」：「十」加「口」，假名只有「い」。", "en": "ふるい (old) is 「古い」: 「十」 over 「口」, with only い in kana." },
+    "wrong": [
+      null,
+      { "zh": "多了「る」：「古」已经读「ふる」。", "en": "The る is extra: 「古」 already reads ふる." },
+      { "zh": "「吉」读「きち」，上面是「士」。", "en": "「吉」 is きち, with 「士」 on top." },
+      { "zh": "「右」读「みぎ」（右边）。", "en": "「右」 is みぎ (right)." }
+    ]
+  },
+  {
+    "id": "n5-mg-237",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "この みせの パンは <<やすい>>です。",
+    "options": ["安い", "安すい", "字い", "案い"],
+    "kj": "この店のパンは安いです。",
+    "answer": 0,
+    "tr": { "zh": "这家店的面包很便宜。", "en": "The bread at this shop is cheap." },
+    "why": { "zh": "「やすい」（便宜）写作「安い」：宝盖头下面是「女」，假名只有「い」。", "en": "やすい (cheap) is 「安い」: a roof over 「女」, with only い in kana." },
+    "wrong": [
+      null,
+      { "zh": "多了「す」：「安」已经读「やす」。", "en": "The す is extra: 「安」 already reads やす." },
+      { "zh": "「字」读「じ」（字），下面是「子」。", "en": "「字」 is じ (letter), with 「子」 below." },
+      { "zh": "「案」读「あん」，下面多了「木」。", "en": "「案」 is あん, with 「木」 added below." }
+    ]
+  },
+  {
+    "id": "n5-mg-238",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "もう すこし <<ちいさい>> かばんは ありませんか。",
+    "options": ["小さい", "少さい", "小い", "小いさい"],
+    "kj": "もう少し小さいかばんはありませんか。",
+    "answer": 0,
+    "tr": { "zh": "有没有再小一点的包？", "en": "Do you have a slightly smaller bag?" },
+    "why": { "zh": "「ちいさい」（小）写作「小さい」：「小」读「ちい」，假名是「さい」。", "en": "ちいさい (small) is 「小さい」: 「小」 reads ちい, and the kana part is さい." },
+    "wrong": [
+      null,
+      { "zh": "「少」是「すくない」「すこし」的字，下面多一撇。", "en": "「少」 is the kanji of すくない and すこし — it has an extra stroke." },
+      { "zh": "少了「さ」：假名要写「さい」。", "en": "The さ is missing: the kana part is さい." },
+      { "zh": "多了「い」：「小」已经读「ちい」。", "en": "The い is extra: 「小」 already reads ちい." }
+    ]
+  },
+  {
+    "id": "n5-mg-239",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "えきから ホテルまで <<たくしー>>で いきました。",
+    "options": ["タクシー", "タワシー", "タクツー", "ダクシー"],
+    "kj": "駅からホテルまでタクシーで行きました。",
+    "answer": 0,
+    "tr": { "zh": "从车站坐出租车去了酒店。", "en": "I took a taxi from the station to the hotel." },
+    "why": { "zh": "「たくしー」（出租车）写作「タクシー」。", "en": "たくしー (taxi) is 「タクシー」." },
+    "wrong": [
+      null,
+      { "zh": "「く」是「ク」，「ワ」是「わ」。", "en": "く is ク; ワ is わ." },
+      { "zh": "「し」是「シ」，「ツ」是「つ」。", "en": "し is シ; ツ is つ." },
+      { "zh": "开头是清音「タ」，不是「ダ」。", "en": "It starts unvoiced: タ, not ダ." }
+    ]
+  },
+  {
+    "id": "n5-mg-240",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "つぎの かどを <<みぎ>>に まがって ください。",
+    "options": ["右", "石", "左", "古"],
+    "kj": "次の角を右に曲がってください。",
+    "answer": 0,
+    "tr": { "zh": "请在下一个拐角向右拐。", "en": "Please turn right at the next corner." },
+    "why": { "zh": "「みぎ」（右）写作「右」，下面是「口」。", "en": "みぎ (right) is 「右」, with 「口」 underneath." },
+    "wrong": [
+      null,
+      { "zh": "「石」读「いし」（石头），上面的横不出头。", "en": "「石」 is いし (stone); its top stroke doesn't cross." },
+      { "zh": "「左」读「ひだり」（左），下面是「工」。", "en": "「左」 is ひだり (left), with 「工」 underneath." },
+      { "zh": "「古」读「ふるい」（旧），上面是「十」。", "en": "「古」 is ふるい (old), with 「十」 on top." }
+    ]
   }
 ]

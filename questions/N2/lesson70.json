@@ -736,5 +736,126 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l70-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson70#4"
+    ],
+    "difficulty": 2,
+    "stem": "A「発表の資料は前日に配ればいいでしょうか。」\nB「早めに（　）から、できれば今週中にお願いします。」",
+    "options": [
+      "配っておくわけにはいかない",
+      "配っておくというものでもない",
+      "配っておくに越したことはない",
+      "配っておくどころではない"
+    ],
+    "answer": 2,
+    "full": "A「発表の資料は前日に配ればいいでしょうか。」\nB「早めに配っておくに越したことはないから、できれば今週中にお願いします。」",
+    "tr": {
+      "zh": "A“发表用的资料前一天发可以吗？” B“早点发下去总是最好的，可以的话请在本周内发。”",
+      "en": "A: \"Would it be all right to hand out the presentation materials the day before?\" B: \"It's always best to get them out early, so this week if you can, please.\""
+    },
+    "why": {
+      "zh": "线索：B 接着说「できれば今週中にお願いします」，是希望早点发；「から」前面是这个请求的理由。\n规则：「动词辞书形（「配る」「持っていく」）＋に越したことはない」＝……当然最好，说的是谁都认同的常识性判断。\n辨析：「〜というものでもない」是“也并不是说……就好”，用来否定一般的想法（「早ければいいというものでもない」），方向正好相反。",
+      "en": "Clue: B goes on 「できれば今週中にお願いします」, wanting them out early; what comes before 「から」 is the reason for that request.\nRule: 「verb dictionary form (「配る」「持っていく」) ＋ に越したことはない」 = nothing beats …, a common-sense judgement everyone would accept.\nContrast: 「〜というものでもない」 means \"it's not necessarily true that …\" and denies a common assumption (「早ければいいというものでもない」), which points the opposite way."
+    },
+    "wrong": [
+      {
+        "zh": "「わけにはいかない」是“（出于情理）不能……”；说“不能提前发”，后面就不会请对方本周内发。",
+        "en": "「わけにはいかない」 means \"can't (for social or moral reasons)\"; if they couldn't be handed out early, B wouldn't ask for them this week."
+      },
+      {
+        "zh": "「というものでもない」是“也并不是说……”，否定“早发为好”，和后面的请求矛盾。",
+        "en": "「というものでもない」 means \"it isn't necessarily that …\", denying that early is better, which contradicts the request that follows."
+      },
+      null,
+      {
+        "zh": "「どころではない」是“哪里顾得上……”，表示没有那个余力，不能作为请对方早发的理由。",
+        "en": "「どころではない」 means \"this is no time for …\"; it can't be the reason for asking someone to hand them out early."
+      }
+    ]
+  },
+  {
+    "id": "n2-l70-021",
+    "type": "bunpou",
+    "refs": [
+      "lesson70#2",
+      "lesson70#1"
+    ],
+    "difficulty": 2,
+    "stem": "このあたりは冬になると道路が凍るので、うっかりスピードを（　）、大きな事故につながりかねない。",
+    "options": [
+      "出そうものなら",
+      "出せるものなら",
+      "出さないことには",
+      "出したところで"
+    ],
+    "answer": 0,
+    "full": "このあたりは冬になると道路が凍るので、うっかりスピードを出そうものなら、大きな事故につながりかねない。",
+    "tr": {
+      "zh": "这一带一到冬天路面就结冰，万一不小心开快了，就可能酿成大事故。",
+      "en": "The roads around here freeze in winter, so if you carelessly speed, it could well lead to a serious accident."
+    },
+    "why": {
+      "zh": "线索：「うっかり」＋后面的严重后果「大きな事故につながりかねない」。\n规则：「动词意向形（「出そう」「言おう」）＋ものなら」＝万一做了A，就会出大事，后面是严重的后果。\n辨析：「可能形＋ものなら」（「出せるものなら」）是“要是能……的话（其实很难）”，后面接愿望或挑衅（「戻れるものなら戻りたい」）；「意向形＋ものなら」后面接坏结果。只差一个词形，意思完全不同。",
+      "en": "Clue: 「うっかり」 and the grave outcome that follows, 「大きな事故につながりかねない」.\nRule: 「verb volitional form (「出そう」「言おう」) ＋ ものなら」 = if one should happen to do A, something terrible follows.\nContrast: 「potential form ＋ ものなら」 (「出せるものなら」) means \"if one could … (though it's hardly possible)\" and leads to a wish or a dare (「戻れるものなら戻りたい」); 「volitional ＋ ものなら」 leads to a bad result. One form apart, completely different meanings."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「可能形＋ものなら」是“要是能……的话”，后面接愿望；这里后面是事故，而且和「うっかり」不搭。",
+        "en": "「potential ＋ ものなら」 means \"if one could …\" and leads to a wish; here an accident follows, and it clashes with 「うっかり」."
+      },
+      {
+        "zh": "「ないことには」是“不……的话（就不行）”；“不开快就会出事故”意思反了。",
+        "en": "「ないことには」 means \"unless …\"; \"unless you speed, there may be an accident\" says the opposite."
+      },
+      {
+        "zh": "「たところで」是“就算……也（没用）”，后面接“结果不会改变”的内容，不接「事故につながりかねない」。",
+        "en": "「たところで」 means \"even if … (it's no use)\" and leads to \"nothing changes\", not to 「事故につながりかねない」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l70-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson70#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「来月、初めて学会で発表するんですが、緊張しそうで…。」\nB「それなら、本番までに何度も声に出して（　）。」",
+    "options": [
+      "練習しておいたものですよ",
+      "練習しておくことですよ",
+      "練習しておくわけですよ",
+      "練習しておくところですよ"
+    ],
+    "answer": 1,
+    "full": "A「来月、初めて学会で発表するんですが、緊張しそうで…。」\nB「それなら、本番までに何度も声に出して練習しておくことですよ。」",
+    "tr": {
+      "zh": "A“下个月我第一次在学会上发表，感觉会很紧张……” B“那样的话，正式上场之前要反复出声练习。”",
+      "en": "A: \"I'm presenting at an academic conference for the first time next month, and I think I'll be nervous…\" B: \"In that case, the thing to do is practise out loud again and again before the day.\""
+    },
+    "why": {
+      "zh": "线索：A 在说自己的担心，B 用「それなら」回应，是在给对方提建议。\n规则：「动词辞书形／ない形＋ことだ」＝（针对对方的具体情况）应该……、最好……，是上对下或有经验的人给的忠告（「休むことだ」「無理をしないことだ」）。\n辨析：「た形＋ものだ」是回忆“过去常常……”（「学生のころはよく練習したものだ」），说的是自己的往事，不是给对方的建议。",
+      "en": "Clue: A is voicing a worry and B answers with 「それなら」: B is giving advice.\nRule: 「verb dictionary form / nai-form ＋ ことだ」 = \"you should …\", advice for the listener's particular situation, from a senior or someone experienced (「休むことだ」「無理をしないことだ」).\nContrast: 「ta-form ＋ ものだ」 recalls \"I used to …\" (「学生のころはよく練習したものだ」); it's about the speaker's own past, not advice."
+    },
+    "wrong": [
+      {
+        "zh": "「たものだ」是回忆过去的习惯，和指将来的「本番までに」对不上，也不是建议。",
+        "en": "「たものだ」 recalls a past habit; it doesn't match 「本番までに」, which points to the future, and it isn't advice."
+      },
+      null,
+      {
+        "zh": "「わけだ」是“难怪……／也就是说……”，说明由事实得出的结论，不用来给人建议。",
+        "en": "「わけだ」 means \"no wonder … / which means …\", a conclusion drawn from facts, not a way to give advice."
+      },
+      {
+        "zh": "「ところだ」是“正要……”，说的是说话人自己马上要做的事，接在「それなら」后面答非所问。",
+        "en": "「ところだ」 means \"I'm just about to …\", something the speaker is about to do; after 「それなら」 it doesn't answer A."
+      }
+    ]
   }
 ]

@@ -465,5 +465,45 @@
       null
     ],
     "rev": 2
+  },
+  {
+    "id": "n3-l40-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson40#2"
+    ],
+    "difficulty": 2,
+    "stem": "昨日は朝から晩まで町の中を歩き回ったので、ホテルに着いたときには、もう一歩も（　）。",
+    "options": [
+      "歩かないうちに疲れていた",
+      "歩けないために疲れていた",
+      "歩けないくらい疲れていた",
+      "歩かないように疲れていた"
+    ],
+    "answer": 2,
+    "full": "昨日は朝から晩まで町の中を歩き回ったので、ホテルに着いたときには、もう一歩も歩けないくらい疲れていた。",
+    "tr": {
+      "zh": "昨天从早到晚在城里到处走，到酒店的时候，已经累得一步也走不动了。",
+      "en": "I walked around town from morning till night yesterday, so by the time I got to the hotel I was so tired I couldn't take another step."
+    },
+    "why": {
+      "zh": "线索：「歩き回ったので」是原因，后面要说累到什么程度；「もう一歩も」后面要接否定。\n规则：「动词普通形＋くらい／ぐらい」＝……到……的程度，用一个具体的状态来说明后面「疲れていた」的程度。\n辨析：「歩けないくらい疲れた」＝累的程度（累→走不动）；「歩けないために疲れた」＝因为走不动所以累，原因和结果反了。",
+      "en": "Clue: 「歩き回ったので」 is the reason, and what follows should say how tired; 「もう一歩も」 needs a negative after it.\nRule: Verb plain form + 「くらい／ぐらい」 = \"so … that …\": a concrete state shows the degree of 「疲れていた」.\nContrast: 「歩けないくらい疲れた」 = degree (tired, therefore couldn't walk); 「歩けないために疲れた」 = tired because of being unable to walk, which reverses cause and result."
+    },
+    "wrong": [
+      {
+        "zh": "「ないうちに」是“还没……的时候就”，“一步还没走就累了”和走了一整天矛盾。",
+        "en": "「ないうちに」 means \"before …ing\"; \"tired before walking a single step\" contradicts having walked all day."
+      },
+      {
+        "zh": "「ために」表示原因，“因为走不动所以累了”把因果关系说反了。",
+        "en": "「ために」 gives a cause; \"tired because I couldn't walk\" turns cause and result around."
+      },
+      null,
+      {
+        "zh": "「ないように」是“为了不……”，表示目的，“为了不走而累”意思不通。",
+        "en": "「ないように」 means \"so as not to\", a purpose; \"tired so as not to walk\" makes no sense."
+      }
+    ]
   }
 ]

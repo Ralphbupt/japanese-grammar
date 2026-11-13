@@ -2157,5 +2157,541 @@
    "attitude-combo",
    "twisted"
   ]
+ },
+ {
+  "id": "n1-ck-326",
+  "type": "gaiyou",
+  "scene": "大学の歴史の講義で、先生が話しています。",
+  "question": "先生は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "今日は、夜の明かりの話をします。ガス灯や電灯が広まる前、庶民にとって、ろうそくや油は決して安いものではありませんでした。ですから、日が沈めば仕事をやめて寝る、というのが普通の暮らしだったわけです。"
+   ],
+   [
+    "M",
+    "ところが十九世紀の後半、都市に街灯がともり、家庭にも電灯が入ってくると、事情が一変します。商店は夜遅くまで店を開け、芝居やよせも、夜の興行が中心になっていきます。"
+   ],
+   [
+    "M",
+    "工場では、機械を休ませないために夜勤が導入されました。これは労働者の健康という新たな問題も生みましたが、それについては来週扱います。"
+   ],
+   [
+    "M",
+    "家庭の中でも、夕食のあとに本を読んだり、縫い物をしたりする時間が生まれました。つまり、明かりは単に暗がりを照らしただけではなく、人々の一日の使い方そのものを組み替えたのです。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "明かりの普及がもたらした生活時間の変化",
+   "ろうそくや油がかつて高価だった理由",
+   "夜勤が労働者の健康に及ぼした影響",
+   "都市で夜の娯楽が盛んになった背景"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "大学的历史课上，老师在讲话。",
+    "question": "老师在讲什么？",
+    "lines": [
+     "今天讲夜间照明。在煤气灯和电灯普及以前，对老百姓来说，蜡烛和灯油绝不便宜。所以，太阳落山就收工睡觉，是当时普通的生活。",
+     "可是到了十九世纪后半叶，城市里亮起了路灯，家庭里也装上了电灯，情况就完全变了。商店开到很晚，戏剧和曲艺场也渐渐以夜场演出为主。",
+     "工厂为了不让机器停下来，引进了夜班。这也带来了工人健康这个新问题，不过那个下周再讲。",
+     "在家庭里，也有了晚饭后读书、做针线的时间。也就是说，灯光不只是照亮了黑暗，而是把人们一天的时间安排本身重新组合了。"
+    ],
+    "options": [
+     "照明的普及带来的生活时间的变化",
+     "蜡烛和灯油过去昂贵的原因",
+     "夜班对工人健康的影响",
+     "城市里夜间娱乐兴盛的背景"
+    ]
+   },
+   "en": {
+    "scene": "In a university history lecture, the lecturer is speaking.",
+    "question": "What is the lecturer talking about?",
+    "lines": [
+     "Today I'll talk about light at night. Before gas lamps and electric light spread, candles and oil were by no means cheap for ordinary people. So the normal way of life was to stop work and go to bed when the sun went down.",
+     "But in the second half of the nineteenth century, once street lamps were lit in the cities and electric light entered homes, everything changed. Shops stayed open late, and theatres and variety halls came to centre on evening performances.",
+     "In factories, night shifts were introduced so that the machines never rested. That also created a new problem, workers' health, but we'll deal with that next week.",
+     "In the home, too, there came to be time after supper for reading or sewing. In other words, light did not merely illuminate the dark; it rearranged the very way people used their day."
+    ],
+    "options": [
+     "How the spread of lighting changed the hours people keep",
+     "Why candles and oil used to be expensive",
+     "The effect of night shifts on workers' health",
+     "The background to the growth of night-time entertainment in cities"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：最后一句：「明かりは単に暗がりを照らしただけではなく、人々の一日の使い方そのものを組み替えたのです。」\n推理：先讲照明普及以前日落而息，再举商店和娱乐、工厂夜班、家庭里晚饭后的时间这三个例子，最后用「つまり」归纳：灯光改变了人们一天的用法。贯穿全篇的是“照明普及→生活时间的变化”。\n容易错：其他三项都只是其中一个例子或开头的铺垫；工人的健康还明说「来週扱います」。",
+   "en": "Evidence: The last sentence: 「明かりは単に暗がりを照らしただけではなく、人々の一日の使い方そのものを組み替えたのです。」\nReasoning: He starts with life before lighting (to bed at sunset), gives three examples — shops and entertainment, factory night shifts, evenings at home — and sums up with 「つまり」: light changed how people use their day. The thread is 'lighting spread → daily hours changed'.\nTrap: each other option is just one example or the opening set-up; workers' health is explicitly left for 「来週」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "只在开头提到蜡烛和灯油不便宜，没有讲为什么贵。",
+    "en": "The cost of candles and oil is only the opening set-up; no reason is given."
+   },
+   {
+    "zh": "工人的健康问题他说「来週扱います」，这次没讲。",
+    "en": "He says workers' health is for 「来週」, not this talk."
+   },
+   {
+    "zh": "夜间娱乐只是变化的例子之一。",
+    "en": "Night-time entertainment is just one example of the change."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n1-ck-327",
+  "type": "gaiyou",
+  "scene": "テレビで、交通問題の専門家が話しています。",
+  "question": "専門家は、主に何について説明していますか。",
+  "lines": [
+   [
+    "F",
+    "地方で、路線バスの減便や廃止が相次いでいます。利用者が減って採算が取れないからだ、と思われがちですが、最近は事情が違います。乗る人がいる路線でも、走らせられなくなっているんです。"
+   ],
+   [
+    "F",
+    "足りないのは運転手です。大型の免許を取るには費用も時間もかかりますし、早朝や深夜の勤務があるわりに、賃金はほかの産業の平均を下回っています。若い人が入ってこないので、五十代、六十代が現場を支えているのが実情です。"
+   ],
+   [
+    "F",
+    "加えて、働き過ぎを防ぐために、勤務と勤務の間に空けなければならない休息の時間が延びました。必要な改正ですが、同じ本数を走らせるのに、これまで以上の人数が要るようになったわけです。"
+   ],
+   [
+    "F",
+    "運賃の値上げや、自動運転の実験に踏み切る会社も出てきました。しかし、運転手不足そのものに手を打たないかぎり、効果は限られるでしょう。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "バスの利用者が減り続けている理由",
+   "自動運転のバスが抱えている課題",
+   "バスの運転手が不足している背景",
+   "運転手の休息時間を延ばす必要性"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "电视上，一位交通问题专家在讲话。",
+    "question": "专家主要在说明什么？",
+    "lines": [
+     "地方上，公交线路接连减班、停运。人们往往以为是因为乘客减少、收支不平衡，但最近情况不一样了。就连有人坐的线路也开不下去了。",
+     "缺的是司机。考大型车驾照既花钱又花时间，而且有清晨和深夜的班，工资却低于其他行业的平均水平。年轻人不进来，实际情况是五十多岁、六十多岁的人在支撑着一线。",
+     "再加上，为了防止过度劳动，两次出勤之间必须留出的休息时间延长了。这是必要的修改，但要开同样多的班次，就需要比以前更多的人。",
+     "也有公司开始提高票价或做自动驾驶的试验。但是，不对司机不足本身采取措施，效果恐怕有限。"
+    ],
+    "options": [
+     "公交乘客不断减少的原因",
+     "自动驾驶公交车面临的课题",
+     "公交司机不足的背景",
+     "延长司机休息时间的必要性"
+    ]
+   },
+   "en": {
+    "scene": "On TV, a specialist in transport issues is speaking.",
+    "question": "What is the specialist mainly explaining?",
+    "lines": [
+     "In the regions, bus routes are being cut back or scrapped one after another. People tend to think it's because passengers have fallen and the routes don't pay, but lately the situation is different. Even routes that do have passengers can no longer be run.",
+     "What is lacking is drivers. A licence for large vehicles costs money and time, and despite early-morning and late-night shifts, the pay is below the average for other industries. Young people aren't coming in, so in reality it's people in their fifties and sixties who keep things going.",
+     "On top of that, to prevent overwork, the rest period that must be left between one shift and the next has been lengthened. It's a necessary reform, but it means more people than before are needed to run the same number of buses.",
+     "Some companies have gone ahead with fare rises or trials of self-driving buses. But unless the driver shortage itself is tackled, the effect will be limited."
+    ],
+    "options": [
+     "Why bus passengers keep decreasing",
+     "The problems facing self-driving buses",
+     "The background to the shortage of bus drivers",
+     "The need to lengthen drivers' rest periods"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「足りないのは運転手です。」之后依次讲了驾照的负担、工资低、年轻人不来，以及休息时间延长后需要更多人。\n推理：开头先否定“乘客减少”这个常见看法，然后整段都在说明为什么司机不够，最后也说「運転手不足そのものに手を打たないかぎり」效果有限。所以主题是司机不足的背景。\n容易错：休息时间只是原因之一，而且她讲的是延长带来的结果，不是论证其必要性；自动驾驶只在最后提了一句。",
+   "en": "Evidence: 「足りないのは運転手です。」 — followed by the burden of the licence, low pay, no young recruits, and longer rest periods requiring more staff.\nReasoning: She first sets aside the usual view (fewer passengers), then spends the whole talk on why drivers are short; she ends by saying little will work 「運転手不足そのものに手を打たないかぎり」. So the topic is the background to the driver shortage.\nTrap: rest periods are just one cause — and she describes the effect of lengthening them, not the case for it; self-driving gets a single mention at the end."
+  },
+  "wrong": [
+   {
+    "zh": "她一开始就说「最近は事情が違います」，有乘客的线路也开不了。",
+    "en": "She says at once 「最近は事情が違います」: even routes with passengers can't run."
+   },
+   {
+    "zh": "自动驾驶只是最后提到的对策之一，没有讲它的课题。",
+    "en": "Self-driving is only a measure mentioned at the end; its problems aren't discussed."
+   },
+   null,
+   {
+    "zh": "休息时间的延长只是司机不足的原因之一，不是整段的主题。",
+    "en": "Longer rest periods are one cause of the shortage, not the topic of the whole talk."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "partial-content",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n1-ck-328",
+  "type": "gaiyou",
+  "scene": "テレビのドキュメンタリー番組で、ナレーターが話しています。",
+  "question": "話のテーマは何ですか。",
+  "lines": [
+   [
+    "M",
+    "潮が引くと、沖へ向かって何百メートルも泥の平原が現れます。ひがたです。一見、何もない不毛の地に見えますが、泥をひとすくいすれば、中には貝やカニがひしめいています。"
+   ],
+   [
+    "M",
+    "彼らは、川から流れ込む汚れを食べ、分解します。ひがた一つが、大きな下水処理場に匹敵する働きをしているとも言われます。"
+   ],
+   [
+    "M",
+    "春と秋には、数千キロを旅する渡り鳥がここに降り立ちます。鳥たちにとってひがたは、次の飛行に備えて栄養を蓄える、欠かすことのできない中継地です。"
+   ],
+   [
+    "M",
+    "さらに、浅い泥の海は波の力を弱め、背後の陸地をたかしおから守ってきました。かつてひがたは、役に立たない土地と見なされ、各地で埋め立てられました。失われて初めて、私たちはその働きの大きさに気づいたのです。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "渡り鳥が長い距離を旅できる理由",
+   "干潟が果たしているさまざまな役割",
+   "干潟の埋め立てが進められた経緯",
+   "干潟を守るための取り組み"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "电视纪录片节目里，解说员在讲话。",
+    "question": "这段话的主题是什么？",
+    "lines": [
+     "潮水一退，朝着海面就会出现几百米宽的泥滩。这就是滩涂。乍一看像是什么都没有的不毛之地，但捧起一把泥，里面挤满了贝类和螃蟹。",
+     "它们吃掉并分解从河里流进来的污物。据说一片滩涂所起的作用，抵得上一座大型污水处理厂。",
+     "春天和秋天，飞行数千公里的候鸟在这里降落。对鸟儿们来说，滩涂是为下一段飞行储备营养的、不可缺少的中转站。",
+     "而且，浅浅的泥海能减弱波浪的力量，一直保护着背后的陆地免受风暴潮的侵袭。过去，滩涂被看作没有用的土地，在各地被填埋。失去以后，我们才意识到它的作用有多大。"
+    ],
+    "options": [
+     "候鸟能长距离飞行的原因",
+     "滩涂所起的各种作用",
+     "滩涂被填埋的经过",
+     "保护滩涂的措施"
+    ]
+   },
+   "en": {
+    "scene": "In a TV documentary, the narrator is speaking.",
+    "question": "What is the theme of the talk?",
+    "lines": [
+     "When the tide goes out, a plain of mud appears, stretching hundreds of metres towards the open sea. This is a tidal flat. At first glance it looks like barren ground with nothing on it, but scoop up a handful of mud and it is crowded with shellfish and crabs.",
+     "They eat and break down the dirt that flows in from rivers. A single tidal flat is said to do work comparable to a large sewage treatment plant.",
+     "In spring and autumn, migratory birds that travel thousands of kilometres come down here. For them the flat is an indispensable staging post where they build up nourishment for the next flight.",
+     "What is more, the shallow, muddy sea weakens the force of waves and has protected the land behind it from storm surges. Tidal flats were once regarded as useless land and were filled in all over the country. Only after losing them did we realise how much they do."
+    ],
+    "options": [
+     "Why migratory birds can travel long distances",
+     "The various roles that tidal flats play",
+     "How the filling-in of tidal flats came about",
+     "Efforts to protect tidal flats"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：最后一句：「失われて初めて、私たちはその働きの大きさに気づいたのです。」\n推理：解说依次讲了滩涂的三种作用：生物分解污物（相当于污水处理厂）、候鸟的中转站、减弱波浪保护陆地，最后用「その働きの大きさ」收束。所以主题是滩涂的各种作用。\n容易错：生物、候鸟、填埋都出现了，但各自只是一种作用的例子或结尾的一句；保护滩涂的措施则完全没讲。",
+   "en": "Evidence: The last sentence: 「失われて初めて、私たちはその働きの大きさに気づいたのです。」\nReasoning: The narration goes through three things a tidal flat does — its creatures break down dirt (like a sewage plant), it is a staging post for migratory birds, it weakens waves and shields the land — and closes on 「その働きの大きさ」. So the theme is the flat's various roles.\nTrap: the creatures, the birds and the land-filling all appear, but each is one example of a role or a single closing remark; efforts to protect the flats are never described."
+  },
+  "wrong": [
+   {
+    "zh": "候鸟只是说明滩涂是中转站的一个例子。",
+    "en": "The birds are just one example: the flat as a staging post."
+   },
+   null,
+   {
+    "zh": "填埋只在结尾提了一句，没有讲经过。",
+    "en": "The filling-in gets one remark at the end; how it came about isn't told."
+   },
+   {
+    "zh": "结尾只说失去后才意识到它的作用，没有讲保护的措施。",
+    "en": "The ending says only that its value was realised once it was lost; no protection efforts are described."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n1-ck-329",
+  "type": "gaiyou",
+  "scene": "家電メーカーの会議で、開発部の女の人が話しています。",
+  "question": "女の人は、主に何について説明していますか。",
+  "lines": [
+   [
+    "F",
+    "新しい炊飯器について、ご報告します。当初は十月の発売を予定しておりましたが、結論から申しますと、来年の二月にずれ込む見通しです。"
+   ],
+   [
+    "F",
+    "試作機の性能そのものは、目標を満たしております。問題は、ふたの部分に使う部品でして、長時間使った場合に、ごくまれに蒸気が漏れることが、先月の耐久試験でわかりました。"
+   ],
+   [
+    "F",
+    "部品の仕入れ先を替えることも検討しましたが、形が特殊なため、すぐに対応できるところがありません。そこで、今の仕入れ先と共同で設計を改めることにしました。これに三か月、改めて行う試験に一か月を見込んでいます。"
+   ],
+   [
+    "F",
+    "他社が年末に同じ価格帯の製品を出すという情報もあり、営業の皆さんにはご迷惑をおかけします。ですが、不具合を抱えたまま市場に出せば、取り返しがつきません。ご理解をお願いいたします。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "他社の新製品に対抗するための方法",
+   "部品の仕入れ先を替える必要性",
+   "試作機の性能を高めるための計画",
+   "新製品の発売が延期になった事情"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "家电厂商的会议上，开发部的女人在讲话。",
+    "question": "女人主要在说明什么？",
+    "lines": [
+     "我来报告新电饭锅的情况。原定十月上市，先说结论，预计要推迟到明年二月。",
+     "样机的性能本身达到了目标。问题在于锅盖部分使用的零件，上个月的耐久试验发现，长时间使用时极少数情况下会漏蒸汽。",
+     "我们也考虑过更换零件的供应商，但因为形状特殊，没有能马上对应的厂家。于是决定和现在的供应商一起修改设计。这预计需要三个月，重新做试验再要一个月。",
+     "另外有消息说其他公司年底要推出同一价位的产品，给销售部的各位添麻烦了。但是，带着缺陷投放市场的话，后果无法挽回。请各位理解。"
+    ],
+    "options": [
+     "对抗其他公司新产品的方法",
+     "更换零件供应商的必要性",
+     "提高样机性能的计划",
+     "新产品延期上市的缘由"
+    ]
+   },
+   "en": {
+    "scene": "At a meeting of a home-appliance maker, a woman from the development department is speaking.",
+    "question": "What is the woman mainly explaining?",
+    "lines": [
+     "I'd like to report on the new rice cooker. We originally planned to launch it in October, but to give you the conclusion first, it is now expected to slip to February next year.",
+     "The performance of the prototype itself meets our targets. The problem is a part used in the lid: last month's endurance test showed that, after long use, steam very occasionally leaks.",
+     "We considered changing the supplier of the part, but because of its unusual shape nobody could take it on at short notice. So we have decided to revise the design jointly with the present supplier. We expect that to take three months, and the renewed testing one more.",
+     "We also hear that a competitor will bring out a product in the same price range at the end of the year, and I'm sorry for the trouble this causes everyone in sales. But if we put it on the market with a defect, there will be no undoing it. I ask for your understanding."
+    ],
+    "options": [
+     "How to counter a competitor's new product",
+     "The need to change the supplier of a part",
+     "A plan to raise the prototype's performance",
+     "Why the launch of the new product has been postponed"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：开头：「当初は十月の発売を予定しておりましたが、……来年の二月にずれ込む見通しです。」之后讲零件漏蒸汽、要修改设计和重新试验。\n推理：先说结论（推迟上市），再说原因（零件的缺陷）、对策和所需时间，最后请大家理解。整段都是在交代为什么要推迟，「ずれ込む」＝推迟。\n容易错：更换供应商是考虑过但没采用的方案；样机性能「目標を満たしております」；其他公司的产品只是带过。",
+   "en": "Evidence: The opening: 「当初は十月の発売を予定しておりましたが、……来年の二月にずれ込む見通しです。」 — followed by the leaking part, the redesign and the renewed testing.\nReasoning: She gives the conclusion (the launch slips), then the cause (a faulty part), the remedy and the time it needs, and asks for understanding. The whole talk accounts for the delay; 「ずれ込む」 means to slip later.\nTrap: changing supplier was considered and not adopted; the prototype's performance already 「目標を満たしております」; the competitor is a passing remark."
+  },
+  "wrong": [
+   {
+    "zh": "其他公司的产品只在最后提到，没有讲对抗的方法。",
+    "en": "The competitor's product is mentioned only at the end; no counter-measure is discussed."
+   },
+   {
+    "zh": "更换供应商考虑过，但没有能对应的厂家，结果没换。",
+    "en": "Changing supplier was considered, but no one could do it, so they didn't."
+   },
+   {
+    "zh": "她说样机的性能「目標を満たしております」。",
+    "en": "She says the prototype's performance 「目標を満たしております」."
+   },
+   null
+  ],
+  "traps": [
+   "detail-as-topic",
+   "twisted",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n1-ck-330",
+  "type": "gaiyou",
+  "scene": "ラジオで、生活文化の研究者が話しています。",
+  "question": "研究者は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "風呂敷という名前は、もともと風呂で使われたことから来ています。江戸時代の銭湯で、脱いだ着物を包んでおいたり、床に敷いてその上で着替えたりした布なんですね。"
+   ],
+   [
+    "M",
+    "それがやがて、商人が品物を運ぶ道具になり、家庭でも、贈り物を届けるときや、旅の荷物をまとめるのに欠かせないものになりました。"
+   ],
+   [
+    "M",
+    "ところが戦後、紙袋や手提げかばんが出回ると、風呂敷は急速に姿を消します。残ったのは、結婚式など改まった場面で贈り物を包むという、儀礼的な使い方だけでした。"
+   ],
+   [
+    "M",
+    "それが近年、レジ袋を減らす動きの中で、繰り返し使える包みとして見直されています。瓶を包む、肩から下げるといった結び方を紹介する本も人気です。こうして見ると、一枚の布が、その時々の暮らしの求めに応じて役割を変えてきたことがわかります。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "風呂敷の使われ方の移り変わり",
+   "風呂敷という名前が付いた由来",
+   "風呂敷を使った包み方や結び方",
+   "レジ袋を減らす取り組みの広がり"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "广播里，一位生活文化研究者在讲话。",
+    "question": "研究者在讲什么？",
+    "lines": [
+     "“风吕敷”这个名字，原本来自它是在澡堂里用的。它是江户时代在公共澡堂里用来包脱下的衣服、或者铺在地上在上面换衣服的布。",
+     "后来它成了商人搬运货物的工具，在家庭里，送礼物、整理旅行行李时也少不了它。",
+     "可是战后，纸袋和手提包普及开来，风吕敷就迅速消失了。剩下的只有在婚礼等郑重场合包礼物这种礼仪性的用法。",
+     "到了近年，在减少塑料购物袋的潮流中，它作为可以反复使用的包装又重新受到重视。介绍包瓶子、挎在肩上等系法的书也很受欢迎。这样看来，可以知道一块布随着各个时代生活的需要改变了自己的角色。"
+    ],
+    "options": [
+     "风吕敷用法的变迁",
+     "“风吕敷”这个名字的由来",
+     "用风吕敷包东西、打结的方法",
+     "减少塑料购物袋的行动的扩大"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, a researcher of everyday culture is speaking.",
+    "question": "What is the researcher talking about?",
+    "lines": [
+     "The name furoshiki comes from the fact that it was originally used at the bath. In the public baths of the Edo period it was a cloth for wrapping the clothes you had taken off, or for spreading on the floor to change on.",
+     "In time it became a tool for merchants carrying goods, and in the home too it became indispensable for delivering gifts or bundling luggage for a journey.",
+     "After the war, however, once paper bags and handbags were everywhere, the furoshiki rapidly disappeared. All that remained was a ceremonial use: wrapping gifts on formal occasions such as weddings.",
+     "In recent years, with the move to cut down on plastic shopping bags, it has been rediscovered as a wrapping you can use again and again. Books showing ways to tie it — around a bottle, or to hang from the shoulder — are popular too. Looked at this way, we can see that one cloth has changed its role to meet what daily life asked of it at each time."
+    ],
+    "options": [
+     "How the uses of the furoshiki have changed over time",
+     "Where the name furoshiki comes from",
+     "Ways of wrapping and tying with a furoshiki",
+     "The spread of efforts to reduce plastic bags"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：最后一句：「一枚の布が、その時々の暮らしの求めに応じて役割を変えてきたことがわかります。」\n推理：按时间顺序讲了四个阶段：澡堂里用的布→搬运东西的工具→战后只剩礼仪用途→近年作为环保包装被重新重视。「役割を変えてきた」就是用法的变迁。\n容易错：名字的由来只是开头的引子；系法和塑料袋只是最后一个阶段里的细节。",
+   "en": "Evidence: The last sentence: 「一枚の布が、その時々の暮らしの求めに応じて役割を変えてきたことがわかります。」\nReasoning: He goes through four stages in order: a cloth for the bath → a means of carrying things → after the war, ceremonial use only → rediscovered recently as reusable wrapping. 「役割を変えてきた」 is the change in how it is used.\nTrap: the origin of the name is only the way in; tying methods and plastic bags are details of the last stage."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "名字的由来只是开头的引子，后面讲的都是用法。",
+    "en": "The name's origin is only the opening; the rest is about its uses."
+   },
+   {
+    "zh": "系法只是提到介绍它的书很受欢迎，没有讲具体方法。",
+    "en": "Tying comes up only as popular books; no methods are explained."
+   },
+   {
+    "zh": "塑料袋只是风吕敷重新受重视的背景。",
+    "en": "Plastic bags are merely the background to its rediscovery."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n1-ck-331",
+  "type": "gaiyou",
+  "scene": "講演会で、科学の歴史の研究者が話しています。",
+  "question": "話のテーマは何ですか。",
+  "lines": [
+   [
+    "F",
+    "今では、国じゅうの時計が同じ時刻を指しているのは当たり前です。でも、百五十年ほど前までは、町ごとに時刻が違っていました。太陽がまみなみに来たときを正午としていたので、東の町と西の町では、数分から数十分のずれがあったのです。"
+   ],
+   [
+    "F",
+    "歩いたり馬に乗ったりして移動していた時代には、それで何の不都合もありませんでした。隣の町に着く頃には、ずれなど問題にならなかったからです。"
+   ],
+   [
+    "F",
+    "事情を変えたのは鉄道です。駅ごとに時刻が違っては、時刻表が作れません。そこで鉄道会社が、まず自分たちの路線の中で時刻をそろえ始めます。"
+   ],
+   [
+    "F",
+    "さらに電信が普及して、離れた土地の間で瞬時に連絡が取れるようになると、ばらばらの時刻はいよいよ不便になりました。こうして各国は、国全体で一つの時刻を使うという決まりを、法律で定めるに至ったのです。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "鉄道の時刻表が果たした役割",
+   "町によって正午がずれる仕組み",
+   "国で統一した時刻が定められた経緯",
+   "電信が人々の暮らしに与えた影響"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "讲座上，一位科学史研究者在讲话。",
+    "question": "这段话的主题是什么？",
+    "lines": [
+     "现在，全国的钟表指着同一个时刻是理所当然的。但是，直到大约一百五十年前，每个城镇的时刻都不一样。因为把太阳到正南方的时候定为正午，所以东边的城镇和西边的城镇有几分钟到几十分钟的偏差。",
+     "在靠步行或骑马出行的时代，这没有任何不便。因为到达邻镇的时候，那点偏差根本不成问题。",
+     "改变情况的是铁路。每个车站时刻不同的话，就编不出时刻表。于是铁路公司先在自己的线路内开始统一时刻。",
+     "再后来电报普及，相隔很远的地方之间可以瞬间取得联系，各不相同的时刻就越发不方便了。就这样，各国终于用法律规定了全国使用一个时刻。"
+    ],
+    "options": [
+     "铁路时刻表所起的作用",
+     "各城镇的正午不一致的原理",
+     "全国统一的时刻被确定下来的经过",
+     "电报给人们生活带来的影响"
+    ]
+   },
+   "en": {
+    "scene": "At a public lecture, a historian of science is speaking.",
+    "question": "What is the theme of the talk?",
+    "lines": [
+     "Today we take it for granted that clocks all over the country show the same time. But until about a hundred and fifty years ago, the time differed from town to town. Noon was when the sun was due south, so a town in the east and a town in the west were several minutes to several tens of minutes apart.",
+     "In the days when people travelled on foot or on horseback, that caused no inconvenience at all. By the time you reached the next town, the difference simply didn't matter.",
+     "What changed things was the railway. If the time differs at every station, you can't draw up a timetable. So the railway companies began by making the time uniform along their own lines.",
+     "Then the telegraph spread, and once distant places could be in touch in an instant, having scattered times became more inconvenient still. That is how countries came, in the end, to lay down by law that one time would be used throughout the nation."
+    ],
+    "options": [
+     "The role played by railway timetables",
+     "How noon comes to differ from town to town",
+     "How a single national time came to be established",
+     "The effect of the telegraph on people's lives"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：最后一句：「こうして各国は、国全体で一つの時刻を使うという決まりを、法律で定めるに至ったのです。」\n推理：从各城镇时刻不同讲起，经过铁路（时刻表）、电报的普及，一步步讲到用法律统一全国的时刻。「こうして……に至った」表示前面都是到达这一结果的过程，所以主题是统一时刻确立的经过。\n容易错：正午的偏差是出发点；铁路的时刻表和电报各是过程中的一个因素。",
+   "en": "Evidence: The last sentence: 「こうして各国は、国全体で一つの時刻を使うという決まりを、法律で定めるに至ったのです。」\nReasoning: Starting from towns each having their own time, she moves through the railway (timetables) and the telegraph to a single national time fixed by law. 「こうして……に至った」 marks everything before it as the path to that result, so the theme is how unified time came about.\nTrap: the shifting noon is the starting point; railway timetables and the telegraph are each one factor along the way."
+  },
+  "wrong": [
+   {
+    "zh": "时刻表只是铁路需要统一时刻的理由，是过程中的一环。",
+    "en": "Timetables are only why railways needed uniform time — one step along the way."
+   },
+   {
+    "zh": "正午的偏差只是开头说明过去情况的部分。",
+    "en": "The differing noon only describes the earlier situation at the start."
+   },
+   null,
+   {
+    "zh": "电报只是让时刻不统一更不方便的因素之一。",
+    "en": "The telegraph is one factor that made scattered times more inconvenient."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "partial-content"
+  ]
  }
 ]

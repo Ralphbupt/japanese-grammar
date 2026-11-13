@@ -1544,5 +1544,545 @@
         "en": "てい is the on reading (「締結」); here it's the kun reading しめ."
       }
     ]
+  },
+  {
+    "id": "n3-mg-141",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "卒業後の進路について、先生に<<相談>>した。",
+    "options": [
+      "そうだん",
+      "じょうだん",
+      "めんだん",
+      "かいだん"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "关于毕业后的出路，我和老师商量了。",
+      "en": "I talked to my teacher about what to do after graduating."
+    },
+    "why": {
+      "zh": "「相（そう）」+「談（だん）」：「そうだん」。「相談に 乗る」＝帮人出主意。",
+      "en": "「相」 そう + 「談」 だん: そうだん. 「相談に 乗る」 = give someone advice."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「じょうだん」是「冗談」（玩笑）。",
+        "en": "じょうだん is 「冗談」 (a joke)."
+      },
+      {
+        "zh": "「めんだん」是「面談」（面谈）。",
+        "en": "めんだん is 「面談」 (an interview, a meeting)."
+      },
+      {
+        "zh": "「かいだん」是「会談」（会谈）或「階段」（楼梯）。",
+        "en": "かいだん is 「会談」 (talks) or 「階段」 (stairs)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-142",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "警察が事故の<<原因>>を調べている。",
+    "options": [
+      "げんいん",
+      "よういん",
+      "げんりょう",
+      "げんこう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "警察正在调查事故的原因。",
+      "en": "The police are looking into the cause of the accident."
+    },
+    "why": {
+      "zh": "「原（げん）」+「因（いん）」：「げんいん」。「原因を 調べる」「〜が 原因で」。",
+      "en": "「原」 げん + 「因」 いん: げんいん. 「原因を 調べる」, 「〜が 原因で」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「よういん」是「要因」（主要因素），第一个字不同。",
+        "en": "よういん is 「要因」 (a factor); the first kanji is different."
+      },
+      {
+        "zh": "「げんりょう」是「原料」（原料）。",
+        "en": "げんりょう is 「原料」 (raw material)."
+      },
+      {
+        "zh": "「げんこう」是「原稿」（稿子）。",
+        "en": "げんこう is 「原稿」 (a manuscript)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-143",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "旅行の<<準備>>は、もうできましたか。",
+    "options": [
+      "じゅんび",
+      "せつび",
+      "よび",
+      "じゅんばん"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "旅行的准备已经做好了吗？",
+      "en": "Are you ready for the trip yet?"
+    },
+    "why": {
+      "zh": "「準（じゅん）」+「備（び）」：「じゅんび」。「準備を する」「準備が できる」。",
+      "en": "「準」 じゅん + 「備」 び: じゅんび. 「準備を する」, 「準備が できる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「せつび」是「設備」（设备）。",
+        "en": "せつび is 「設備」 (equipment, facilities)."
+      },
+      {
+        "zh": "「よび」是「予備」（备用）。",
+        "en": "よび is 「予備」 (spare, reserve)."
+      },
+      {
+        "zh": "「じゅんばん」是「順番」（顺序）。",
+        "en": "じゅんばん is 「順番」 (order, turn)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-144",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "この機械は使い方が<<複雑>>で、覚えるのが大変だ。",
+    "options": [
+      "ふくざつ",
+      "こんざつ",
+      "ふくすう",
+      "ふくしゅう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这台机器的用法很复杂，记起来很费劲。",
+      "en": "This machine is complicated to use and hard to learn."
+    },
+    "why": {
+      "zh": "「複（ふく）」+「雑（ざつ）」：「ふくざつ」。反义词是「単純（たんじゅん）」「簡単」。",
+      "en": "「複」 ふく + 「雑」 ざつ: ふくざつ. Its opposites are 「単純」 (たんじゅん) and 「簡単」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「こんざつ」是「混雑」（拥挤）。",
+        "en": "こんざつ is 「混雑」 (crowding)."
+      },
+      {
+        "zh": "「ふくすう」是「複数」（多个）。",
+        "en": "ふくすう is 「複数」 (plural, several)."
+      },
+      {
+        "zh": "「ふくしゅう」是「復習」（复习）。",
+        "en": "ふくしゅう is 「復習」 (review)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-145",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "警察はその男が犯人ではないかと<<疑って>>いる。",
+    "options": [
+      "うたがって",
+      "うかがって",
+      "したがって",
+      "あつかって"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "警察怀疑那个男人是不是犯人。",
+      "en": "The police suspect that the man may be the culprit."
+    },
+    "why": {
+      "zh": "「疑う」读「うたがう」，て形是「うたがって」。名词是「疑い（うたがい）」。",
+      "en": "「疑う」 is うたがう, て-form うたがって. The noun is 「疑い」 (うたがい)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「うかがって」是「伺って」（拜访、请教）。",
+        "en": "うかがって is 「伺って」 (visit, ask — humble)."
+      },
+      {
+        "zh": "「したがって」是「従って」（听从、遵照）。",
+        "en": "したがって is 「従って」 (follow, obey)."
+      },
+      {
+        "zh": "「あつかって」是「扱って」（对待、处理）。",
+        "en": "あつかって is 「扱って」 (handle, treat)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-146",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "祖母は庭でトマトやきゅうりを<<育てて>>いる。",
+    "options": [
+      "そだてて",
+      "たてて",
+      "すてて",
+      "うえて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "祖母在院子里种着西红柿和黄瓜。",
+      "en": "My grandmother grows tomatoes and cucumbers in her garden."
+    },
+    "why": {
+      "zh": "「育てる」读「そだてる」，て形是「そだてて」。自动词是「育つ（そだつ）」；「子どもを 育てる」。",
+      "en": "「育てる」 is そだてる, て-form そだてて. Its pair is 「育つ」 (そだつ); 「子どもを 育てる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たてて」是「建てて」「立てて」（建、立）。",
+        "en": "たてて is 「建てて」 or 「立てて」 (build, stand up)."
+      },
+      {
+        "zh": "「すてて」是「捨てて」（扔掉）。",
+        "en": "すてて is 「捨てて」 (throw away)."
+      },
+      {
+        "zh": "「うえて」是「植えて」（种植），意思相近但字不同。",
+        "en": "うえて is 「植えて」 (plant): close in meaning, but a different kanji."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-147",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "祖父は子どものころ、とても<<貧しい>>生活をしていたそうだ。",
+    "options": [
+      "まずしい",
+      "くるしい",
+      "きびしい",
+      "さびしい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "听说祖父小时候过着非常贫穷的生活。",
+      "en": "I hear my grandfather lived a very poor life as a child."
+    },
+    "why": {
+      "zh": "「貧しい」读「まずしい」。音读是「ひん」「びん」：「貧乏（びんぼう）」。",
+      "en": "「貧しい」 is まずしい. The on readings are ひん and びん: 「貧乏」 (びんぼう)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「くるしい」是「苦しい」（痛苦、艰难）。",
+        "en": "くるしい is 「苦しい」 (painful, hard)."
+      },
+      {
+        "zh": "「きびしい」是「厳しい」（严格、严峻）。",
+        "en": "きびしい is 「厳しい」 (strict, harsh)."
+      },
+      {
+        "zh": "「さびしい」是「寂しい」（寂寞）。",
+        "en": "さびしい is 「寂しい」 (lonely)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-148",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "駅前のスーパーは、夜十一時まで<<営業>>している。",
+    "options": [
+      "えいぎょう",
+      "ざんぎょう",
+      "さぎょう",
+      "じゅぎょう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "车站前的超市营业到晚上十一点。",
+      "en": "The supermarket in front of the station is open until eleven at night."
+    },
+    "why": {
+      "zh": "「営（えい）」+「業（ぎょう）」：「えいぎょう」。「営業時間」「営業中」。",
+      "en": "「営」 えい + 「業」 ぎょう: えいぎょう. 「営業時間」, 「営業中」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ざんぎょう」是「残業」（加班）。",
+        "en": "ざんぎょう is 「残業」 (overtime)."
+      },
+      {
+        "zh": "「さぎょう」是「作業」（作业、操作）。",
+        "en": "さぎょう is 「作業」 (work, operation)."
+      },
+      {
+        "zh": "「じゅぎょう」是「授業」（上课）。",
+        "en": "じゅぎょう is 「授業」 (a class)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-149",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "この店では、いろいろな<<種類>>のパンを売っている。",
+    "options": [
+      "しゅるい",
+      "しょるい",
+      "ぶんるい",
+      "じんるい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这家店卖各种各样的面包。",
+      "en": "This shop sells many kinds of bread."
+    },
+    "why": {
+      "zh": "「種（しゅ）」+「類（るい）」：「しゅるい」。「種類が 多い」。",
+      "en": "「種」 しゅ + 「類」 るい: しゅるい. 「種類が 多い」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しょるい」是「書類」（文件）。",
+        "en": "しょるい is 「書類」 (documents)."
+      },
+      {
+        "zh": "「ぶんるい」是「分類」（分类）。",
+        "en": "ぶんるい is 「分類」 (classification)."
+      },
+      {
+        "zh": "「じんるい」是「人類」（人类）。",
+        "en": "じんるい is 「人類」 (humankind)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-150",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "駅前の喫茶店がアルバイトを<<募集>>している。",
+    "options": [
+      "ぼしゅう",
+      "ぼしゅ",
+      "ぼうしゅう",
+      "へんしゅう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "车站前的咖啡店正在招兼职。",
+      "en": "The café in front of the station is looking for part-time staff."
+    },
+    "why": {
+      "zh": "「募（ぼ）」+「集（しゅう）」：「ぼしゅう」，「ぼ」短、「しゅう」长。",
+      "en": "「募」 ぼ + 「集」 しゅう: ぼしゅう, with short ぼ and long しゅう."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「集」读长音「しゅう」。",
+        "en": "「集」 is long: しゅう."
+      },
+      {
+        "zh": "「募」读短音「ぼ」，不是「ぼう」。",
+        "en": "「募」 is short ぼ, not ぼう."
+      },
+      {
+        "zh": "「へんしゅう」是「編集」（编辑）。",
+        "en": "へんしゅう is 「編集」 (editing)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-151",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "今日は<<湿度>>が高くて、とても蒸し暑い。",
+    "options": [
+      "しつど",
+      "しっど",
+      "しつどう",
+      "おんど"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "今天湿度高，非常闷热。",
+      "en": "The humidity is high today and it is very muggy."
+    },
+    "why": {
+      "zh": "「湿（しつ）」+「度（ど）」：「しつど」，不变成促音，「ど」是短音。",
+      "en": "「湿」 しつ + 「度」 ど: しつど, with no small っ and a short ど."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しつ」在这里不变成促音。",
+        "en": "しつ doesn't become a small っ here."
+      },
+      {
+        "zh": "「度」读短音「ど」。",
+        "en": "「度」 is short: ど."
+      },
+      {
+        "zh": "「おんど」是「温度」（温度）。",
+        "en": "おんど is 「温度」 (temperature)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-152",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "天気がよかったので、洗濯物はもう<<乾いて>>いる。",
+    "options": [
+      "かわいて",
+      "かれて",
+      "がわいて",
+      "ういて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "因为天气好，洗的衣服已经干了。",
+      "en": "The weather was fine, so the washing is already dry."
+    },
+    "why": {
+      "zh": "「乾く」读「かわく」，て形是「かわいて」。他动词是「乾かす（かわかす）」。",
+      "en": "「乾く」 is かわく, て-form かわいて. The transitive verb is 「乾かす」 (かわかす)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「かれて」是「枯れて」（枯萎）。",
+        "en": "かれて is 「枯れて」 (wither)."
+      },
+      {
+        "zh": "「か」是清音。",
+        "en": "か is unvoiced."
+      },
+      {
+        "zh": "「ういて」是「浮いて」（浮起来）。",
+        "en": "ういて is 「浮いて」 (float)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-153",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "用事があったので、友達の誘いを<<断った>>。",
+    "options": [
+      "ことわった",
+      "ことなった",
+      "うたがった",
+      "てつだった"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "因为有事，我拒绝了朋友的邀请。",
+      "en": "I had something to do, so I turned down my friend's invitation."
+    },
+    "why": {
+      "zh": "「断る」读「ことわる」，た形是「ことわった」。「誘いを 断る」。",
+      "en": "「断る」 is ことわる, た-form ことわった. 「誘いを 断る」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ことなった」是「異なった」（不同）。",
+        "en": "ことなった is 「異なった」 (differed)."
+      },
+      {
+        "zh": "「うたがった」是「疑った」（怀疑）。",
+        "en": "うたがった is 「疑った」 (doubted)."
+      },
+      {
+        "zh": "「てつだった」是「手伝った」（帮忙）。",
+        "en": "てつだった is 「手伝った」 (helped)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-154",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "初めて会ったとき、彼はまじめな人だという<<印象>>を受けた。",
+    "options": [
+      "いんしょう",
+      "いんしょ",
+      "いんぞう",
+      "たいしょう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "第一次见面时，他给我的印象是个认真的人。",
+      "en": "When we first met, he struck me as a serious person."
+    },
+    "why": {
+      "zh": "「印（いん）」+「象（しょう）」：「いんしょう」。「印象を 受ける」「印象に 残る」。",
+      "en": "「印」 いん + 「象」 しょう: いんしょう. 「印象を 受ける」, 「印象に 残る」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「象」读长音「しょう」。",
+        "en": "「象」 is long: しょう."
+      },
+      {
+        "zh": "「象」表示动物时读「ぞう」，在「印象」里读「しょう」。",
+        "en": "「象」 is ぞう for the animal; in 「印象」 it is しょう."
+      },
+      {
+        "zh": "「たいしょう」是「対象」（对象）。",
+        "en": "たいしょう is 「対象」 (target, object)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-155",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "この川は<<浅い>>ので、小さい子どもでも安全に遊べる。",
+    "options": [
+      "あさい",
+      "あざい",
+      "あらい",
+      "うすい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这条河很浅，小孩子也能安全地玩。",
+      "en": "This river is shallow, so even small children can play in it safely."
+    },
+    "why": {
+      "zh": "「浅い」读「あさい」。反义词是「深い（ふかい）」。",
+      "en": "「浅い」 is あさい. Its opposite is 「深い」 (ふかい)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「さ」是清音。",
+        "en": "さ is unvoiced."
+      },
+      {
+        "zh": "「あらい」是「荒い」「粗い」（粗暴、粗糙）。",
+        "en": "あらい is 「荒い」 or 「粗い」 (rough, coarse)."
+      },
+      {
+        "zh": "「うすい」是「薄い」（薄、淡）。",
+        "en": "うすい is 「薄い」 (thin, weak)."
+      }
+    ]
   }
 ]

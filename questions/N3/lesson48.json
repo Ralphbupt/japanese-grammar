@@ -698,5 +698,45 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n3-l48-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson48#1"
+    ],
+    "difficulty": 2,
+    "stem": "ずっと探していた財布は、あきらめて新しいのを買った（　）、かばんの底から出てきた。",
+    "options": [
+      "ついでに",
+      "たびに",
+      "とたんに",
+      "代わりに"
+    ],
+    "answer": 2,
+    "full": "ずっと探していた財布は、あきらめて新しいのを買ったとたんに、かばんの底から出てきた。",
+    "tr": {
+      "zh": "找了很久的钱包，刚死心买了个新的，就从包底冒出来了。",
+      "en": "The wallet I'd been looking for all this time turned up at the bottom of my bag the moment I gave up and bought a new one."
+    },
+    "why": {
+      "zh": "线索：空格前是た形「買った」，后面是意外的事「かばんの底から出てきた」。\n规则：「动词た形＋とたん（に）」＝刚一……就……，前面的事刚做完，马上发生了没想到的事。后面不能是说话人有意做的事。\n辨析：「〜たとたん」＝刚……就发生意外（一次）；「〜たびに」＝每次……都……，接辞书形，表示反复，而钱包只找到了一次。",
+      "en": "Clue: The blank follows the た-form 「買った」, and what comes next is a surprise, 「かばんの底から出てきた」.\nRule: Verb た-form + 「とたん（に）」 = \"the moment …\": right after the first thing, something unexpected happens. What follows can't be the speaker's deliberate action.\nContrast: 「〜たとたん」 = a surprise right after, once; 「〜たびに」 = \"every time\", after the dictionary form, something repeated, whereas the wallet turned up only once."
+    },
+    "wrong": [
+      {
+        "zh": "「ついでに」是“顺便（再做一件事）”，后面要是自己有意做的事，钱包出现不是有意做的。",
+        "en": "「ついでに」 means \"while I'm at it\" and is followed by a deliberate action; the wallet turning up isn't one."
+      },
+      {
+        "zh": "「たびに」是“每次……都”，接辞书形，表示反复发生的事，这里只发生了一次。",
+        "en": "「たびに」 means \"every time\", follows the dictionary form and describes something repeated; this happened once."
+      },
+      null,
+      {
+        "zh": "「代わりに」是“代替……、作为交换”，买新钱包和旧钱包出现不是交换关系。",
+        "en": "「代わりに」 means \"instead of / in exchange\"; buying a new wallet and the old one turning up aren't an exchange."
+      }
+    ]
   }
 ]

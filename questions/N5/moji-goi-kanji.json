@@ -692,5 +692,260 @@
       { "zh": "「千」开头是清音「せ」。", "en": "「千」 starts unvoiced: せ." },
       { "zh": "「千」读「せん」，不是「せい」。", "en": "「千」 is せん, not せい." }
     ]
+  },
+  {
+    "id": "n5-mg-141",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "<<先月>> にほんへ きました。",
+    "options": ["せんげつ", "こんげつ", "らいげつ", "まいつき"],
+    "kj": "先月日本へ来ました。",
+    "answer": 0,
+    "tr": { "zh": "我上个月来了日本。", "en": "I came to Japan last month." },
+    "why": { "zh": "「先（せん）」+「月（げつ）」：「せんげつ」（上个月）。一起记：先月／今月／来月。", "en": "「先」 is せん and 「月」 is げつ: せんげつ (last month). Learn the set: 先月／今月／来月." },
+    "wrong": [
+      null,
+      { "zh": "「こんげつ」是「今月」（这个月）。", "en": "こんげつ is 「今月」 (this month)." },
+      { "zh": "「らいげつ」是「来月」（下个月）。", "en": "らいげつ is 「来月」 (next month)." },
+      { "zh": "「まいつき」是「毎月」（每个月）。", "en": "まいつき is 「毎月」 (every month)." }
+    ]
+  },
+  {
+    "id": "n5-mg-142",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "えきの <<北>>に こうえんが あります。",
+    "options": ["きた", "みなみ", "ひがし", "にし"],
+    "kj": "駅の北に公園があります。",
+    "answer": 0,
+    "tr": { "zh": "车站的北边有公园。", "en": "There is a park to the north of the station." },
+    "why": { "zh": "「北」读「きた」（北）。四个方向：東（ひがし）・西（にし）・南（みなみ）・北（きた）。", "en": "「北」 is きた (north). The four directions: 東 ひがし, 西 にし, 南 みなみ, 北 きた." },
+    "wrong": [
+      null,
+      { "zh": "「みなみ」是「南」（南）。", "en": "みなみ is 「南」 (south)." },
+      { "zh": "「ひがし」是「東」（东）。", "en": "ひがし is 「東」 (east)." },
+      { "zh": "「にし」是「西」（西）。", "en": "にし is 「西」 (west)." }
+    ]
+  },
+  {
+    "id": "n5-mg-143",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "つくえの <<上>>に じしょが あります。",
+    "options": ["うえ", "した", "なか", "よこ"],
+    "kj": "机の上に辞書があります。",
+    "answer": 0,
+    "tr": { "zh": "桌子上有词典。", "en": "There is a dictionary on the desk." },
+    "why": { "zh": "「上」表示位置时读「うえ」（上面）。", "en": "As a position, 「上」 is うえ (on, above)." },
+    "wrong": [
+      null,
+      { "zh": "「した」是「下」（下面）。", "en": "した is 「下」 (under)." },
+      { "zh": "「なか」是「中」（里面）。", "en": "なか is 「中」 (inside)." },
+      { "zh": "「よこ」是「横」（旁边）。", "en": "よこ is 「横」 (beside)." }
+    ]
+  },
+  {
+    "id": "n5-mg-144",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "あの <<女の人>>は だれですか。",
+    "options": ["おんなのひと", "おとこのひと", "おんなのこ", "おとこのこ"],
+    "kj": "あの女の人はだれですか。",
+    "answer": 0,
+    "tr": { "zh": "那位女士是谁？", "en": "Who is that woman?" },
+    "why": { "zh": "「女」读「おんな」，「人」读「ひと」：「おんなのひと」（女人）。", "en": "「女」 is おんな and 「人」 is ひと: おんなのひと (woman)." },
+    "wrong": [
+      null,
+      { "zh": "「おとこのひと」是「男の人」（男人）。", "en": "おとこのひと is 「男の人」 (man)." },
+      { "zh": "「おんなのこ」是「女の子」（女孩）：「子」才读「こ」。", "en": "おんなのこ is 「女の子」 (girl) — こ is 「子」." },
+      { "zh": "「おとこのこ」是「男の子」（男孩）。", "en": "おとこのこ is 「男の子」 (boy)." }
+    ]
+  },
+  {
+    "id": "n5-mg-145",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "<<口>>を おおきく あけて ください。",
+    "options": ["くち", "みみ", "はな", "あし"],
+    "kj": "口を大きく開けてください。",
+    "answer": 0,
+    "tr": { "zh": "请把嘴张大。", "en": "Please open your mouth wide." },
+    "why": { "zh": "「口」读「くち」（嘴）。", "en": "「口」 is くち (mouth)." },
+    "wrong": [
+      null,
+      { "zh": "「みみ」是「耳」（耳朵）。", "en": "みみ is 「耳」 (ear)." },
+      { "zh": "「はな」是「鼻」（鼻子）或「花」（花）。", "en": "はな is 「鼻」 (nose) or 「花」 (flower)." },
+      { "zh": "「あし」是「足」（脚）。", "en": "あし is 「足」 (foot, leg)." }
+    ]
+  },
+  {
+    "id": "n5-mg-146",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "<<木よう日>>に びょういんへ いきます。",
+    "options": ["もくようび", "かようび", "きんようび", "どようび"],
+    "kj": "木よう日に病院へ行きます。",
+    "answer": 0,
+    "tr": { "zh": "星期四去医院。", "en": "I'm going to the hospital on Thursday." },
+    "why": { "zh": "星期四「木よう日」读「もくようび」：「木」在星期里用音读「もく」。", "en": "Thursday is もくようび — in the weekday, 「木」 is read もく." },
+    "wrong": [
+      null,
+      { "zh": "「かようび」是「火よう日」（星期二）。", "en": "かようび is 「火よう日」 (Tuesday)." },
+      { "zh": "「きんようび」是「金よう日」（星期五）。", "en": "きんようび is 「金よう日」 (Friday)." },
+      { "zh": "「どようび」是「土よう日」（星期六）。", "en": "どようび is 「土よう日」 (Saturday)." }
+    ]
+  },
+  {
+    "id": "n5-mg-147",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "たんじょうびは 5がつ <<七日>>です。",
+    "options": ["なのか", "ようか", "むいか", "ここのか"],
+    "kj": "誕生日は5月七日です。",
+    "answer": 0,
+    "tr": { "zh": "我的生日是5月7日。", "en": "My birthday is May 7th." },
+    "why": { "zh": "日期「七日」读「なのか」（七号）。", "en": "The date 「七日」 is なのか (the 7th)." },
+    "wrong": [
+      null,
+      { "zh": "「ようか」是「八日」（八号）。", "en": "ようか is 「八日」 (the 8th)." },
+      { "zh": "「むいか」是「六日」（六号）。", "en": "むいか is 「六日」 (the 6th)." },
+      { "zh": "「ここのか」是「九日」（九号）。", "en": "ここのか is 「九日」 (the 9th)." }
+    ]
+  },
+  {
+    "id": "n5-mg-148",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "<<毎年>> なつに うみへ いきます。",
+    "options": ["まいとし", "まいつき", "まいにち", "まいしゅう"],
+    "kj": "毎年夏に海へ行きます。",
+    "answer": 0,
+    "tr": { "zh": "我每年夏天去海边。", "en": "I go to the sea every summer." },
+    "why": { "zh": "「毎（まい）」+「年（とし）」：「まいとし」（每年）。", "en": "「毎」 is まい and 「年」 is とし: まいとし (every year)." },
+    "wrong": [
+      null,
+      { "zh": "「まいつき」是「毎月」（每个月）。", "en": "まいつき is 「毎月」 (every month)." },
+      { "zh": "「まいにち」是「毎日」（每天）。", "en": "まいにち is 「毎日」 (every day)." },
+      { "zh": "「まいしゅう」是「毎週」（每周）。", "en": "まいしゅう is 「毎週」 (every week)." }
+    ]
+  },
+  {
+    "id": "n5-mg-149",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "まいあさ ラジオで ニュースを <<聞きます>>。",
+    "options": ["ききます", "かきます", "いきます", "よみます"],
+    "kj": "毎朝ラジオでニュースを聞きます。",
+    "answer": 0,
+    "tr": { "zh": "我每天早上用收音机听新闻。", "en": "I listen to the news on the radio every morning." },
+    "why": { "zh": "「聞く」读「きく」（听），ます形「ききます」。", "en": "「聞く」 is きく (to listen): ききます." },
+    "wrong": [
+      null,
+      { "zh": "「かきます」是「書きます」（写）。", "en": "かきます is 「書きます」 (write)." },
+      { "zh": "「いきます」是「行きます」（去）。", "en": "いきます is 「行きます」 (go)." },
+      { "zh": "「よみます」是「読みます」（读）。", "en": "よみます is 「読みます」 (read)." }
+    ]
+  },
+  {
+    "id": "n5-mg-150",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "この かばんは とても <<高い>>です。",
+    "options": ["たかい", "やすい", "ひくい", "ながい"],
+    "kj": "このかばんはとても高いです。",
+    "answer": 0,
+    "tr": { "zh": "这个包很贵。", "en": "This bag is very expensive." },
+    "why": { "zh": "「高い」读「たかい」（贵；高）。反义词：安い（便宜）／低い（矮）。", "en": "「高い」 is たかい (expensive; high). Opposites: 安い (cheap), 低い (low)." },
+    "wrong": [
+      null,
+      { "zh": "「やすい」是「安い」（便宜）。", "en": "やすい is 「安い」 (cheap)." },
+      { "zh": "「ひくい」是「低い」（低、矮）。", "en": "ひくい is 「低い」 (low)." },
+      { "zh": "「ながい」是「長い」（长）。", "en": "ながい is 「長い」 (long)." }
+    ]
+  },
+  {
+    "id": "n5-mg-151",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "まいあさ 7じに うちを <<出ます>>。",
+    "options": ["でます", "だします", "はいります", "てます"],
+    "kj": "毎朝7時にうちを出ます。",
+    "answer": 0,
+    "tr": { "zh": "我每天早上七点出门。", "en": "I leave home at seven every morning." },
+    "why": { "zh": "「出る」读「でる」（出去），ます形「でます」。", "en": "「出る」 is でる (to leave, go out): でます." },
+    "wrong": [
+      null,
+      { "zh": "「だします」写作「出します」（拿出、交出），中间有「し」。", "en": "だします is written 「出します」 (take out, hand in), with し." },
+      { "zh": "「はいります」是「入ります」（进去）。", "en": "はいります is 「入ります」 (enter)." },
+      { "zh": "开头是浊音「で」，不是「て」。", "en": "It starts voiced: で, not て." }
+    ]
+  },
+  {
+    "id": "n5-mg-152",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "らいげつの <<二十日>>に くにへ かえります。",
+    "options": ["はつか", "ふつか", "はたち", "にじゅうにち"],
+    "kj": "来月の二十日に国へ帰ります。",
+    "answer": 0,
+    "tr": { "zh": "我下个月二十号回国。", "en": "I'm going back to my country on the 20th of next month." },
+    "why": { "zh": "日期「二十日」读法特殊：「はつか」（二十号）。", "en": "The date 「二十日」 has a special reading: はつか (the 20th)." },
+    "wrong": [
+      null,
+      { "zh": "「ふつか」是「二日」（二号）。", "en": "ふつか is 「二日」 (the 2nd)." },
+      { "zh": "「はたち」是「二十歳」（二十岁）。", "en": "はたち is 「二十歳」 (twenty years old)." },
+      { "zh": "二十号不按数字读成「にじゅうにち」。", "en": "The 20th isn't read number by number as にじゅうにち." }
+    ]
+  },
+  {
+    "id": "n5-mg-153",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "よる ともだちに <<電話>>を かけました。",
+    "options": ["でんわ", "でんき", "てんわ", "でんしゃ"],
+    "kj": "夜友だちに電話をかけました。",
+    "answer": 0,
+    "tr": { "zh": "晚上我给朋友打了电话。", "en": "I called a friend in the evening." },
+    "why": { "zh": "「電（でん）」+「話（わ）」：「でんわ」（电话）。电话用「かける」。", "en": "「電」 is でん and 「話」 is わ: でんわ (telephone). You かける a phone call." },
+    "wrong": [
+      null,
+      { "zh": "「でんき」是「電気」（电、电灯）。", "en": "でんき is 「電気」 (electricity, light)." },
+      { "zh": "「電」是浊音「でん」，不是「てん」。", "en": "「電」 is voiced: でん, not てん." },
+      { "zh": "「でんしゃ」是「電車」（电车）。", "en": "でんしゃ is 「電車」 (train)." }
+    ]
+  },
+  {
+    "id": "n5-mg-154",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "でんしゃの なかで ずっと <<立って>> いました。",
+    "options": ["たって", "まって", "たて", "だって"],
+    "kj": "電車の中でずっと立っていました。",
+    "answer": 0,
+    "tr": { "zh": "我在电车里一直站着。", "en": "I was standing the whole time on the train." },
+    "why": { "zh": "「立つ」读「たつ」（站），て形「たって」，有促音「っ」。", "en": "「立つ」 is たつ (to stand); te-form たって, with a small っ." },
+    "wrong": [
+      null,
+      { "zh": "「まって」是「待って」（等）。", "en": "まって is 「待って」 (waiting)." },
+      { "zh": "少了促音「っ」。", "en": "Missing the small っ." },
+      { "zh": "开头是清音「た」，不是「だ」。", "en": "It starts unvoiced: た, not だ." }
+    ]
+  },
+  {
+    "id": "n5-mg-155",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "わたしの <<国>>は ふゆが とても さむいです。",
+    "options": ["くに", "こく", "まち", "ぐに"],
+    "kj": "私の国は冬がとても寒いです。",
+    "answer": 0,
+    "tr": { "zh": "我的国家冬天很冷。", "en": "Winters are very cold in my country." },
+    "why": { "zh": "「国」单独用时读「くに」（国家）。", "en": "On its own, 「国」 is くに (country)." },
+    "wrong": [
+      null,
+      { "zh": "「こく」是音读，用在「外国（がいこく）」这样的词里。", "en": "こく is the reading inside words like 「外国」 (がいこく)." },
+      { "zh": "「まち」是「町」（城镇）。", "en": "まち is 「町」 (town)." },
+      { "zh": "单独用时不浊化，是「くに」。", "en": "On its own it isn't voiced: くに." }
+    ]
   }
 ]

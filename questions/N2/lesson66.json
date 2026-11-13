@@ -734,5 +734,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l66-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#2"
+    ],
+    "difficulty": 2,
+    "stem": "インターネットの普及で誰でも簡単に情報を発信できるようになった（　）、誤った情報が広まる危険性も高まっている。",
+    "options": [
+      "とたんに",
+      "からには",
+      "一方で",
+      "につれて"
+    ],
+    "answer": 2,
+    "full": "インターネットの普及で誰でも簡単に情報を発信できるようになった一方で、誤った情報が広まる危険性も高まっている。",
+    "tr": {
+      "zh": "随着互联网的普及，谁都能轻松地发布信息，另一方面，错误信息扩散的危险也在增加。",
+      "en": "With the spread of the internet anyone can now easily put out information; at the same time, the danger of false information spreading is growing."
+    },
+    "why": {
+      "zh": "线索：前面是好的一面（誰でも簡単に発信できる），后面是「危険性も高まっている」，同一件事的另一面。\n规则：「普通形＋一方（で）」＝一方面……，另一方面……，把并存的两个方面摆在一起。\n辨析：「〜につれて」也常写社会变化，但要接辞书形或名词（「普及するにつれて」），表示两边一起逐渐变化；这里前面是た形「なった」，接不上。",
+      "en": "Clue: A good side comes first (「誰でも簡単に発信できる」), then 「危険性も高まっている」: the other side of the same thing.\nRule: plain form ＋ 「一方（で）」 = on the one hand…, on the other…, setting two coexisting sides next to each other.\nContrast: 「〜につれて」 also describes social change, but it takes a dictionary form or noun (「普及するにつれて」) for two things changing gradually together; it can't follow the た-form 「なった」."
+    },
+    "wrong": [
+      {
+        "zh": "「〜たとたんに」是“刚一……就……”，后面是瞬间发生的一件事，不接「高まっている」这种持续的状态。",
+        "en": "「〜たとたんに」 (the moment…) is followed by one sudden event, not an ongoing state like 「高まっている」."
+      },
+      {
+        "zh": "「〜からには」是“既然……就……”，后面接决心、义务，不接客观的状况。",
+        "en": "「〜からには」 (now that…) leads to resolve or duty, not an objective state of affairs."
+      },
+      null,
+      {
+        "zh": "「〜につれて」接辞书形或名词，不接た形「なった」。",
+        "en": "「〜につれて」 takes a dictionary form or noun, not the た-form 「なった」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-021",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#4"
+    ],
+    "difficulty": 2,
+    "stem": "事故の原因についての調査が進む（　）、当初の発表とは異なる新しい事実が次々と明らかになってきた。",
+    "options": [
+      "に反して",
+      "かわりに",
+      "にこたえて",
+      "につれて"
+    ],
+    "answer": 3,
+    "full": "事故の原因についての調査が進むにつれて、当初の発表とは異なる新しい事実が次々と明らかになってきた。",
+    "tr": {
+      "zh": "随着对事故原因的调查不断推进，与当初公布的内容不同的新事实接连浮出水面。",
+      "en": "As the investigation into the cause of the accident went on, new facts differing from the initial announcement came to light one after another."
+    },
+    "why": {
+      "zh": "线索：前面是逐渐推进的「調査が進む」，后面是「次々と明らかになってきた」，也是一点点发生的变化。\n规则：「辞书形（進む）＋につれて」＝随着……，一方变化，另一方也跟着变化。\n辨析：「〜に反して」＝与……相反，前面只接名词（「予想に反して」）；虽然句中有「当初の発表とは異なる」，但相反的对象是「発表」，不是「調査が進む」。",
+      "en": "Clue: 「調査が進む」 is gradual progress, and 「次々と明らかになってきた」 is also a change that happens bit by bit.\nRule: dictionary form (「進む」) ＋ 「につれて」 = as…, one thing changes and another changes with it.\nContrast: 「〜に反して」 = contrary to, and it takes only a noun (「予想に反して」); the sentence does say 「当初の発表とは異なる」, but what the facts differ from is the announcement, not 「調査が進む」."
+    },
+    "wrong": [
+      {
+        "zh": "「〜に反して」前面接「予想」「期待」等名词，不接动词「進む」。",
+        "en": "「〜に反して」 follows nouns such as 「予想」「期待」, not the verb 「進む」."
+      },
+      {
+        "zh": "「〜かわりに」是“不做……而做……/作为交换”，调查并没有被别的事代替。",
+        "en": "「〜かわりに」 (instead of / in exchange for) doesn't fit: nothing replaces the investigation."
+      },
+      {
+        "zh": "「〜にこたえて」是“响应……”，前面接「期待」「要望」等名词。",
+        "en": "「〜にこたえて」 (in response to) follows nouns like 「期待」「要望」."
+      },
+      null
+    ]
   }
 ]

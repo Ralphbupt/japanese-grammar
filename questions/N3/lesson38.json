@@ -467,5 +467,45 @@
       null
     ],
     "rev": 2
+  },
+  {
+    "id": "n3-l38-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson38#4"
+    ],
+    "difficulty": 2,
+    "stem": "今から急いで駅へ向かった（　）、9時の新幹線にはもう間に合わないだろうから、次のに乗ろう。",
+    "options": [
+      "とたん",
+      "ものの",
+      "からには",
+      "としても"
+    ],
+    "answer": 3,
+    "full": "今から急いで駅へ向かったとしても、9時の新幹線にはもう間に合わないだろうから、次のに乗ろう。",
+    "tr": {
+      "zh": "就算现在赶去车站，9点的新干线恐怕也赶不上了，坐下一班吧。",
+      "en": "Even if we rushed to the station now, we probably wouldn't make the 9 o'clock Shinkansen, so let's take the next one."
+    },
+    "why": {
+      "zh": "线索：「今から」说明还没去车站，「向かった」只是假设；后面是「間に合わないだろう」。\n规则：「动词た形＋としても」＝就算……也……，假设一件事，后面说结果不会变。这里的た形不表示过去。\n辨析：「〜としても」＝假设（行ったとしても間に合わない＝还没去）；「〜ものの」＝事实（行ったものの間に合わなかった＝已经去了）。有「今から」「だろう」，只能是假设。",
+      "en": "Clue: 「今から」 shows they haven't left yet, so 「向かった」 is only a supposition; what follows is 「間に合わないだろう」.\nRule: Verb た-form + 「としても」 = \"even if …\": it supposes something and says the result stays the same. The た-form here is not past tense.\nContrast: 「〜としても」 = supposition (行ったとしても間に合わない: not gone yet); 「〜ものの」 = fact (行ったものの間に合わなかった: already went). With 「今から」 and 「だろう」 it can only be a supposition."
+    },
+    "wrong": [
+      {
+        "zh": "「たとたん」是“刚一……就（发生了意外的事）”，说的是已经发生的事，不能和「今から」「だろう」一起用。",
+        "en": "「たとたん」 means \"the moment … (something unexpected happened)\" and describes what has already happened; it can't go with 「今から」 and 「だろう」."
+      },
+      {
+        "zh": "「ものの」前面是已经成立的事实，可是「今から」表示还没去。",
+        "en": "「ものの」 follows an established fact, but 「今から」 shows they haven't gone yet."
+      },
+      {
+        "zh": "「からには」是“既然……就要……”，后面接决心或义务，不接「間に合わないだろう」这样的推测。",
+        "en": "「からには」 means \"now that …\" and is followed by a resolve or duty, not a guess like 「間に合わないだろう」."
+      },
+      null
+    ]
   }
 ]

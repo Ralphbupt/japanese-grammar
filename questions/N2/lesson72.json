@@ -463,5 +463,87 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l72-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson72#1",
+      "lesson72#3"
+    ],
+    "difficulty": 2,
+    "stem": "このホテルは料理も接客も期待以上にすばらしかった。さすが、旅行雑誌で何度も一位に（　）。",
+    "options": [
+      "選ばれるだけましである",
+      "選ばれるだけのことはある",
+      "選ばれるわけにはいかない",
+      "選ばれるどころではない"
+    ],
+    "answer": 1,
+    "full": "このホテルは料理も接客も期待以上にすばらしかった。さすが、旅行雑誌で何度も一位に選ばれるだけのことはある。",
+    "tr": {
+      "zh": "这家酒店的菜和服务都好得超出预期。真不愧是多次被旅行杂志评为第一的酒店。",
+      "en": "Both the food and the service at this hotel were even better than I had expected. No wonder it has been ranked first by travel magazines so many times."
+    },
+    "why": {
+      "zh": "线索：前一句是亲身体验后的好评，后一句以「さすが」开头，是在说“名不虚传”。\n规则：「普通形＋だけのことはある」＝结果和它的名声、地位、付出的努力相称，“不愧是……”，常和「さすが」一起用。\n辨析：同一课的「だけましだ」是“（虽然不理想）至少……还算好”，用在不太好的情况下退一步安慰自己（「けががなかっただけましだ」）；这里是满意的评价，不是退一步。",
+      "en": "Clue: The first sentence is praise from experience, and the second opens with 「さすが」: \"it lives up to its name\".\nRule: 「plain form ＋ だけのことはある」 = the result matches the reputation, status or effort, \"as you'd expect from …\"; it often comes with 「さすが」.\nContrast: 「だけましだ」 from the same lesson means \"at least … (though things aren't good)\", a consolation in a poor situation (「けががなかっただけましだ」); here the speaker is fully satisfied, not settling for less."
+    },
+    "wrong": [
+      {
+        "zh": "「だけましだ」是在不理想的情况下说“至少还算好”；这里是满意的称赞，而且和「さすが」不搭。",
+        "en": "「だけましだ」 says \"at least that's something\" in a poor situation; here it is satisfied praise, and it doesn't go with 「さすが」."
+      },
+      null,
+      {
+        "zh": "「わけにはいかない」是“（出于情理）不能……”，和称赞酒店的上下文无关。",
+        "en": "「わけにはいかない」 means \"can't (for social or moral reasons)\"; it has nothing to do with praising the hotel."
+      },
+      {
+        "zh": "「どころではない」是“哪里谈得上……”，是否定的说法，和前面的好评矛盾。",
+        "en": "「どころではない」 means \"far from …\", a denial that contradicts the praise before it."
+      }
+    ]
+  },
+  {
+    "id": "n2-l72-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson72#3",
+      "lesson72#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「昨日の台風で、うちの店の看板が飛ばされてしまってね。」\nB「それは大変でしたね。でも、けが人が（　）よ。」",
+    "options": [
+      "出なかっただけのことはあります",
+      "出なかったばかりです",
+      "出なかったものがあります",
+      "出なかっただけましです"
+    ],
+    "answer": 3,
+    "full": "A「昨日の台風で、うちの店の看板が飛ばされてしまってね。」\nB「それは大変でしたね。でも、けが人が出なかっただけましですよ。」",
+    "tr": {
+      "zh": "A“昨天的台风把我们店的招牌刮跑了。” B“那真是够呛。不过，没有人受伤就算不错了。”",
+      "en": "A: \"Yesterday's typhoon blew our shop sign clean off.\" B: \"That must have been awful. Still, at least nobody was hurt.\""
+    },
+    "why": {
+      "zh": "线索：B 先说「大変でしたね」，再用「でも」转折：坏事里找出一点还算好的地方来安慰对方。\n规则：「普通形＋だけましだ」＝情况虽然不好，但没有更糟，至少……这一点还算好（「けが人が出なかっただけましだ」）。\n辨析：「だけのことはある」是“不愧是……／没白……”，用来称赞名副其实的好结果（「練習しただけのことはある」），不能用来在坏事中安慰人。",
+      "en": "Clue: B first says 「大変でしたね」 and then turns with 「でも」: picking out the one good point in a bad event to comfort A.\nRule: 「plain form ＋ だけましだ」 = things are bad but could have been worse; at least this much is good (「けが人が出なかっただけましだ」).\nContrast: 「だけのことはある」 means \"as you'd expect / it was worth it\" and praises a deserved good result (「練習しただけのことはある」); it can't console someone after a misfortune."
+    },
+    "wrong": [
+      {
+        "zh": "「だけのことはある」是称赞“不愧……”，招牌被刮跑的场合没有可称赞的对象。",
+        "en": "「だけのことはある」 praises something as deserved; there is nothing to praise when a sign has been blown away."
+      },
+      {
+        "zh": "「たばかり」接在肯定的た形后表示“刚刚……”，不接「出なかった」。",
+        "en": "「たばかり」 follows an affirmative ta-form to mean \"have just …\"; it doesn't follow 「出なかった」."
+      },
+      {
+        "zh": "「ものがある」是“有……之处、令人觉得……”，前面是表示感受的词（「心を打つものがある」），不接「出なかった」。",
+        "en": "「ものがある」 means \"there is something … about it\" and follows a word of impression (「心を打つものがある」), not 「出なかった」."
+      },
+      null
+    ]
   }
 ]

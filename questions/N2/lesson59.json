@@ -738,5 +738,125 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l59-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson59#5"
+    ],
+    "difficulty": 2,
+    "stem": "決算の時期と部下の急な退職が重なって、毎日夜遅くまで残業が続いており、夏休みの旅行の計画を（　）。",
+    "options": [
+      "立てずにはいられない",
+      "立てるに決まっている",
+      "立てるどころではない",
+      "立てるほかしかたがない"
+    ],
+    "answer": 2,
+    "full": "決算の時期と部下の急な退職が重なって、毎日夜遅くまで残業が続いており、夏休みの旅行の計画を立てるどころではない。",
+    "tr": {
+      "zh": "结算期又碰上下属突然辞职，每天都加班到深夜，哪还顾得上做暑假旅行的计划。",
+      "en": "With the closing of the books and a subordinate's sudden resignation coming at once, I've been working late every night; this is no time to be planning a summer trip."
+    },
+    "why": {
+      "zh": "线索：前面说「毎日夜遅くまで残業が続いており」，忙得没有余力；空格前的「旅行の計画」却是轻松的事。\n规则：「辞书形（立てる）＋どころではない」＝情况紧迫，根本谈不上做……。\n辨析：「〜ずにはいられない」＝控制不住、忍不住去做（「笑わずにはいられない」）；这里是没有条件做，方向正好相反。",
+      "en": "Clue: The first half says 「毎日夜遅くまで残業が続いており」: no time or energy to spare, while 「旅行の計画」 is a leisure matter.\nRule: dictionary form (「立てる」) ＋ 「どころではない」 = the situation is far too pressing for …\nContrast: 「〜ずにはいられない」 = can't help doing (「笑わずにはいられない」); here the speaker is in no position to do it, the opposite direction."
+    },
+    "wrong": [
+      {
+        "zh": "「〜ずにはいられない」是“忍不住要……”，和忙得没空的前文矛盾。",
+        "en": "「〜ずにはいられない」 means \"can't help doing\", which contradicts being too busy."
+      },
+      {
+        "zh": "「〜に決まっている」是“肯定会……”的断定，忙成这样却说肯定会做计划，前后不通。",
+        "en": "「〜に決まっている」 asserts \"will surely…\"; being this busy doesn't lead to surely making plans."
+      },
+      null,
+      {
+        "zh": "「〜ほかしかたがない」是“只好……”，做旅行计划并不是被迫的唯一选择。",
+        "en": "「〜ほかしかたがない」 means \"have no choice but to\"; planning a trip is not something the overtime forces on you."
+      }
+    ]
+  },
+  {
+    "id": "n2-l59-021",
+    "type": "bunpou",
+    "refs": [
+      "lesson59#1"
+    ],
+    "difficulty": 2,
+    "stem": "インターネットで何でもすぐに調べられる時代になったが、情報が多いからといって、正しい判断が（　）。",
+    "options": [
+      "できるに決まっている",
+      "できずにはいられない",
+      "できないわけにはいかない",
+      "できるというわけではない"
+    ],
+    "answer": 3,
+    "full": "インターネットで何でもすぐに調べられる時代になったが、情報が多いからといって、正しい判断ができるというわけではない。",
+    "tr": {
+      "zh": "如今是什么都能马上在网上查到的时代，但并不是信息多就能做出正确的判断。",
+      "en": "We live in an age when anything can be looked up online at once, but having a lot of information doesn't mean you can judge correctly."
+    },
+    "why": {
+      "zh": "线索：「情報が多いからといって」。「からといって」后面一定是否定“由此就能得出的结论”的说法。\n规则：「AからといってB（という）わけではない／とは限らない」＝不能因为 A 就说 B。\n辨析：「〜わけではない」是部分否定（并不是说就……）；「〜わけにはいかない」是出于情理“不能做……”，说的是自己能不能那样做，和推论无关。",
+      "en": "Clue: 「情報が多いからといって」. After 「からといって」 the sentence has to deny the conclusion one would naturally draw.\nRule: 「AからといってB（という）わけではない／とは限らない」 = A is no ground for saying B.\nContrast: 「〜わけではない」 is a partial denial (it doesn't follow that…); 「〜わけにはいかない」 means one can't do something for social or moral reasons, which has nothing to do with drawing a conclusion."
+    },
+    "wrong": [
+      {
+        "zh": "「〜に決まっている」是肯定的断定，「からといって」后面不能接顺着前项的结论。",
+        "en": "「〜に決まっている」 is a firm affirmative; 「からといって」 can't be followed by the conclusion it sets up."
+      },
+      {
+        "zh": "「〜ずにはいられない」是“忍不住……”，不接可能动词「できる」，意思也不通。",
+        "en": "「〜ずにはいられない」 means \"can't help doing\"; it doesn't attach to 「できる」 and makes no sense here."
+      },
+      {
+        "zh": "「〜ないわけにはいかない」是“不能不……”，表示义务，不是对推论的否定。",
+        "en": "「〜ないわけにはいかない」 means \"cannot not do\", an obligation, not the denial of an inference."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l59-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson59#4"
+    ],
+    "difficulty": 2,
+    "stem": "A「部長にもう一度頼んでみたらどうですか。」\nB「いや、会議で決まったことだから、今さら（　）、結論は変わらないよ。」",
+    "options": [
+      "何度頼んでみたからには",
+      "何度頼んでみたところで",
+      "何度頼んでみたとたんに",
+      "何度頼んでみたばかりに"
+    ],
+    "answer": 1,
+    "full": "A「部長にもう一度頼んでみたらどうですか。」\nB「いや、会議で決まったことだから、今さら何度頼んでみたところで、結論は変わらないよ。」",
+    "tr": {
+      "zh": "A：“再去求一次部长怎么样？”\nB：“不行，这是会上定下来的，事到如今求多少次，结论也不会变。”",
+      "en": "A: \"Why not try asking the department head once more?\"\nB: \"No, it was decided at the meeting, so however many times we ask now, the conclusion won't change.\""
+    },
+    "why": {
+      "zh": "线索：后面是否定的预测「結論は変わらない」，前面有「今さら」「何度」。\n规则：「た形（頼んだ・頼んでみた）＋ところで」＝就算做了……也没用，后面接“不会有好结果”的判断；常和「何度」「いくら」「今さら」搭配。\n辨析：「〜たからには」＝既然做了……就（要做到底），后面是决心或义务，不是“白费”。",
+      "en": "Clue: What follows is a negative prediction, 「結論は変わらない」, with 「今さら」 and 「何度」 before the blank.\nRule: た-form (「頼んだ」「頼んでみた」) ＋ 「ところで」 = even if one does…, it's no use; it often comes with 「何度」「いくら」「今さら」.\nContrast: 「〜たからには」 = now that one has done…, followed by resolve or duty, not by \"it won't help\"."
+    },
+    "wrong": [
+      {
+        "zh": "「〜たからには」是“既然……就要……”，后面接决心、义务，接不上「変わらない」。",
+        "en": "「〜たからには」 (now that…) leads to resolve or duty, not to 「変わらない」."
+      },
+      null,
+      {
+        "zh": "「〜たとたんに」是“刚一……就发生了……”，后面是实际发生的变化，不和「何度」及否定的预测搭配。",
+        "en": "「〜たとたんに」 (the moment…) is followed by a change that actually happened; it doesn't go with 「何度」 or a negative prediction."
+      },
+      {
+        "zh": "「〜たばかりに」是“就因为……才落得坏结果”，说已经发生的事，这里是还没做的假设。",
+        "en": "「〜たばかりに」 (just because… a bad result) is about something that already happened; here it's a supposition."
+      }
+    ]
   }
 ]

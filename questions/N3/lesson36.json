@@ -581,5 +581,45 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n3-l36-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson36#3"
+    ],
+    "difficulty": 2,
+    "stem": "来月から始まるこのドラマは、50年前に北海道の小さな町で実際にあった事件（　）作られたそうだ。",
+    "options": [
+      "にわたって",
+      "に比べて",
+      "に基づいて",
+      "にとって"
+    ],
+    "answer": 2,
+    "full": "来月から始まるこのドラマは、50年前に北海道の小さな町で実際にあった事件に基づいて作られたそうだ。",
+    "tr": {
+      "zh": "听说下个月开播的这部电视剧，是根据50年前北海道一个小镇上真实发生的事件拍成的。",
+      "en": "I hear this drama, which starts next month, was based on something that really happened in a small town in Hokkaido 50 years ago."
+    },
+    "why": {
+      "zh": "线索：空格前是「実際にあった事件」，后面是「作られた」：电视剧是以这个事件为根据拍的。\n规则：「名词＋に基づいて」＝以……为根据、依据，后面接「作る」「決める」「判断する」等。\n辨析：「〜に基づいて」＝以……为依据（事実に基づいて書く）；「〜にわたって」＝在整个期间、范围内持续（50年にわたって続く），前面要是时间或范围，不是「事件」。",
+      "en": "Clue: 「実際にあった事件」 comes before the blank and 「作られた」 after it: the drama was made with that event as its basis.\nRule: Noun + 「に基づいて」 = \"based on …\", followed by verbs like 「作る」, 「決める」, 「判断する」.\nContrast: 「〜に基づいて」 = on the basis of (事実に基づいて書く); 「〜にわたって」 = throughout a period or range (50年にわたって続く). It needs a length of time or a range before it, not 「事件」."
+    },
+    "wrong": [
+      {
+        "zh": "「にわたって」前面要是期间或范围（50年、全国），「事件にわたって」不成立。",
+        "en": "「にわたって」 needs a period or a range before it (50年, 全国); 「事件にわたって」 doesn't work."
+      },
+      {
+        "zh": "「に比べて」是“和……相比”，后面要有比较的内容，和「作られた」接不上。",
+        "en": "「に比べて」 means \"compared with\" and needs a comparison after it; it doesn't connect to 「作られた」."
+      },
+      null,
+      {
+        "zh": "「にとって」是“对……来说”，后面要接评价，「事件にとって作られた」意思不通。",
+        "en": "「にとって」 means \"for …\" and is followed by a judgement; 「事件にとって作られた」 makes no sense."
+      }
+    ]
   }
 ]

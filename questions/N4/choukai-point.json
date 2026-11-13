@@ -3231,5 +3231,1143 @@
    "denied-guess",
    "mentioned-not-asked"
   ]
+ },
+ {
+  "id": "n4-ck-233",
+  "type": "point",
+  "scene": "会社で 男の人と 女の人が 話しています。",
+  "question": "女の人は どうして 会社に おくれましたか。",
+  "lines": [
+   [
+    "M",
+    "中村さん、けさは おそかったですね。電車が 止まったんですか。"
+   ],
+   [
+    "F",
+    "いいえ、電車は いつもの 時間に 来ましたよ。"
+   ],
+   [
+    "M",
+    "じゃあ、ねぼうですか。"
+   ],
+   [
+    "F",
+    "いえ、ちゃんと 6時に 起きました。駅に 着いてから、さいふを 忘れた ことに 気が ついて、家に 取りに 帰ったんです。"
+   ],
+   [
+    "M",
+    "それは たいへんでしたね。雨も ふって いましたし。"
+   ],
+   [
+    "F",
+    "ええ。でも、雨で おくれたんじゃ ありません。かさは 持って いましたから。"
+   ]
+  ],
+  "options": [
+   "電車が 止まったから",
+   "ねぼうしたから",
+   "さいふを 忘れたから",
+   "雨が ふって いたから"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "公司里，一个男人和一个女人在说话。",
+    "question": "女人为什么上班迟到了？",
+    "lines": [
+     "中村，今天早上来得晚啊。电车停了吗？",
+     "没有，电车是按平时的时间来的。",
+     "那是睡过头了？",
+     "不是，我6点就起来了。到了车站才发现忘了带钱包，就回家去拿了。",
+     "那真够呛。还下着雨。",
+     "是啊。不过不是因为下雨。我带着伞呢。"
+    ],
+    "options": [
+     "因为电车停了",
+     "因为睡过头了",
+     "因为忘了钱包",
+     "因为下雨"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking at the office.",
+    "question": "Why was the woman late for work?",
+    "lines": [
+     "Nakamura-san, you were late this morning. Did the train stop?",
+     "No, the train came at the usual time.",
+     "Then did you oversleep?",
+     "No, I got up at six as usual. After I got to the station, I realized I'd forgotten my wallet and went home to get it.",
+     "That must have been a pain. And it was raining, too.",
+     "Yes. But it wasn't because of the rain. I had my umbrella."
+    ],
+    "options": [
+     "The train stopped",
+     "She overslept",
+     "She forgot her wallet",
+     "It was raining"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「さいふを 忘れた ことに 気が ついて、家に 取りに 帰ったんです。」\n推理：男的猜的电车和睡过头都被否定（「いつもの 時間に 来ました」「6時に 起きました」）；下雨她也说「雨で おくれたんじゃ ありません」。真正的原因只说了一次。\n容易错：最后提到的雨听起来像原因，但被否定了。",
+   "en": "Evidence: She says: 「さいふを 忘れた ことに 気が ついて、家に 取りに 帰ったんです。」\nReasoning: His guesses, the train and oversleeping, are both denied (「いつもの 時間に 来ました」, 「6時に 起きました」), and of the rain she says 「雨で おくれたんじゃ ありません」. The real reason is said once.\nTrap: the rain comes last and sounds like a cause, but she denies it."
+  },
+  "wrong": [
+   {
+    "zh": "她说电车「いつもの 時間に 来ました」。",
+    "en": "She says the train came at the usual time."
+   },
+   {
+    "zh": "她说「ちゃんと 6時に 起きました」，没睡过头。",
+    "en": "She got up at six; she didn't oversleep."
+   },
+   null,
+   {
+    "zh": "她说「雨で おくれたんじゃ ありません」，她带了伞。",
+    "en": "She says it wasn't the rain; she had an umbrella."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n4-ck-234",
+  "type": "point",
+  "scene": "女の人と 留学生の 男の人が 話しています。",
+  "question": "男の人は どうして 日本語の 勉強を 始めましたか。",
+  "lines": [
+   [
+    "F",
+    "リーさんは どうして 日本語の 勉強を 始めたんですか。日本の アニメが 好きだからですか。"
+   ],
+   [
+    "M",
+    "アニメが 好きなのは 弟です。ぼくは あまり 見ません。"
+   ],
+   [
+    "F",
+    "じゃあ、日本の 会社で はたらきたいからですか。"
+   ],
+   [
+    "M",
+    "それは 今の ゆめですが、始めた ときは 考えて いませんでした。高校の とき、日本人の 友だちが できて、その 人と 日本語で 話したいと 思ったんです。"
+   ],
+   [
+    "F",
+    "そうですか。日本の 料理も 好きですか。"
+   ],
+   [
+    "M",
+    "ええ。でも、それは 日本に 来てから 好きに なりました。"
+   ]
+  ],
+  "options": [
+   "日本人の 友だちと 話したかったから",
+   "アニメが 好きだから",
+   "日本の 会社で はたらきたいと 思ったから",
+   "日本の 料理が 好きだから"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个留学生男人在说话。",
+    "question": "男人为什么开始学日语？",
+    "lines": [
+     "小李，你为什么开始学日语的？是因为喜欢日本动画吗？",
+     "喜欢动画的是我弟弟。我不怎么看。",
+     "那是因为想在日本的公司工作吗？",
+     "那是现在的梦想，开始学的时候还没想过。高中的时候交了个日本朋友，想跟他用日语说话。",
+     "这样啊。日本菜也喜欢吗？",
+     "嗯。不过那是来日本以后才喜欢上的。"
+    ],
+    "options": [
+     "因为想和日本朋友说话",
+     "因为喜欢动画",
+     "因为想在日本的公司工作",
+     "因为喜欢日本菜"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a male international student are talking.",
+    "question": "Why did the man start studying Japanese?",
+    "lines": [
+     "Lee-san, why did you start studying Japanese? Is it because you like Japanese anime?",
+     "It's my younger brother who likes anime. I don't watch it much.",
+     "Then is it because you want to work at a Japanese company?",
+     "That's my dream now, but I wasn't thinking about it when I started. In high school I made a Japanese friend, and I wanted to talk with that person in Japanese.",
+     "I see. Do you like Japanese food too?",
+     "Yes. But I came to like it after I came to Japan."
+    ],
+    "options": [
+     "He wanted to talk with a Japanese friend",
+     "He likes anime",
+     "He wants to work at a Japanese company",
+     "He likes Japanese food"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「日本人の 友だちが できて、その 人と 日本語で 話したいと 思ったんです。」\n推理：喜欢动画的是弟弟；在日本公司工作是「今の ゆめ」，开始时没想过；日本菜是来日本以后才喜欢的。问的是开始学的原因，只有朋友这一条。\n容易错：现在的想法和开始时的原因不一样；弟弟的爱好不是他的。",
+   "en": "Evidence: He says: 「日本人の 友だちが できて、その 人と 日本語で 話したいと 思ったんです。」\nReasoning: The anime fan is his brother; working at a Japanese company is 「今の ゆめ」, not something he had in mind at the start; he came to like Japanese food only after arriving. The question asks why he started.\nTrap: what he wants now isn't why he began; his brother's hobby isn't his."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "喜欢动画的是弟弟，他自己不怎么看。",
+    "en": "It's his brother who likes anime; he rarely watches it."
+   },
+   {
+    "zh": "这是现在的梦想，「始めた ときは 考えて いませんでした」。",
+    "en": "That's his dream now; he wasn't thinking of it when he started."
+   },
+   {
+    "zh": "日本菜是来日本以后才喜欢的，不是开始学的原因。",
+    "en": "He came to like the food after coming to Japan."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n4-ck-235",
+  "type": "point",
+  "scene": "女の人が 友だちの 電話に メッセージを 残して います。",
+  "question": "女の人は どうして あしたの 食事に 行けなく なりましたか。",
+  "lines": [
+   [
+    "F",
+    "もしもし、ゆみです。あしたの 食事の ことなんだけど、ごめん、行けなく なって しまったの。"
+   ],
+   [
+    "F",
+    "仕事は 休みだし、かぜも もう 治ったんだけど、けさ 急に 母から 電話が あって、あした いなかから 出て くるって 言うの。駅まで むかえに 行かなくては いけなくて。"
+   ],
+   [
+    "F",
+    "店の 予約は わたしが キャンセルして おくね。本当に ごめんね。また 来週 行こう。"
+   ]
+  ],
+  "options": [
+   "仕事が あるから",
+   "かぜを ひいたから",
+   "店の 予約が できなかったから",
+   "母を むかえに 行くから"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个女人在朋友的电话上留言。",
+    "question": "女人为什么明天不能去吃饭了？",
+    "lines": [
+     "喂，我是由美。关于明天吃饭的事，对不起，我去不了了。",
+     "工作是休息，感冒也已经好了，可是今天早上妈妈突然来电话，说明天从老家过来。我得去车站接她。",
+     "店的预约我来取消。真的对不起。下周再去吧。"
+    ],
+    "options": [
+     "因为有工作",
+     "因为感冒了",
+     "因为没订到店",
+     "因为要去接妈妈"
+    ]
+   },
+   "en": {
+    "scene": "A woman is leaving a message on her friend's phone.",
+    "question": "Why can't the woman go to tomorrow's meal any more?",
+    "lines": [
+     "Hello, it's Yumi. About tomorrow's meal — I'm sorry, I can't go any more.",
+     "I'm off work, and my cold is better now, but my mother suddenly called this morning and said she's coming up from the countryside tomorrow. I have to go and meet her at the station.",
+     "I'll cancel the restaurant reservation. I'm really sorry. Let's go next week."
+    ],
+    "options": [
+     "She has work",
+     "She caught a cold",
+     "She couldn't book the restaurant",
+     "She is going to meet her mother"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「母から 電話が あって、あした いなかから 出て くるって 言うの。駅まで むかえに 行かなくては いけなくて。」\n推理：「仕事は 休みだし、かぜも もう 治ったんだけど」——这两个都先被排除了；店是已经订好的，她说由她来取消。原因是要去车站接妈妈。\n容易错：「〜し、〜も……んだけど」列出来的是「不是原因」的事。",
+   "en": "Evidence: She says: 「母から 電話が あって、あした いなかから 出て くるって 言うの。駅まで むかえに 行かなくては いけなくて。」\nReasoning: 「仕事は 休みだし、かぜも もう 治ったんだけど」 rules those two out first; the restaurant is already booked — she'll cancel it. The reason is meeting her mother at the station.\nTrap: the things listed with 「〜し、〜も……んだけど」 are what the reason is not."
+  },
+  "wrong": [
+   {
+    "zh": "她说「仕事は 休み」。",
+    "en": "She says she's off work."
+   },
+   {
+    "zh": "感冒「もう 治った」。",
+    "en": "Her cold is already better."
+   },
+   {
+    "zh": "店已经订好了，她说的是由她取消预约。",
+    "en": "The restaurant was booked; she says she'll cancel it."
+   },
+   null
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n4-ck-236",
+  "type": "point",
+  "scene": "会社で 男の人と 女の人が 話しています。",
+  "question": "女の人は 今 どうやって 会社に 来て いますか。",
+  "lines": [
+   [
+    "M",
+    "森田さんは 会社まで 何で 来て いるんですか。ぼくは 地下鉄です。"
+   ],
+   [
+    "F",
+    "前は バスでしたが、時間が かかるので やめました。"
+   ],
+   [
+    "M",
+    "じゃあ、今は 自転車ですか。けんこうに いいですよね。"
+   ],
+   [
+    "F",
+    "自転車は 夫が 駅まで 使って いるんです。わたしは 去年 引っ越して、会社が 近く なったので、歩いて 来て います。20分ぐらいですよ。"
+   ],
+   [
+    "M",
+    "それは いいですね。"
+   ]
+  ],
+  "options": [
+   "歩いて",
+   "地下鉄",
+   "バス",
+   "自転車"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "公司里，一个男人和一个女人在说话。",
+    "question": "女人现在怎么来公司？",
+    "lines": [
+     "森田，你是怎么来公司的？我坐地铁。",
+     "以前坐公交车，但太花时间，就不坐了。",
+     "那现在是骑自行车？对健康好啊。",
+     "自行车是我丈夫骑去车站用的。我去年搬了家，离公司近了，所以走路来。大概20分钟。",
+     "那真不错。"
+    ],
+    "options": [
+     "走路",
+     "地铁",
+     "公交车",
+     "自行车"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking at the office.",
+    "question": "How does the woman come to the office now?",
+    "lines": [
+     "Morita-san, how do you get to the office? I take the subway.",
+     "I used to take the bus, but it took too long, so I stopped.",
+     "So now it's by bicycle? That's good for your health.",
+     "My husband uses the bicycle to get to the station. I moved last year and the office is close now, so I walk. It's about twenty minutes.",
+     "That's nice."
+    ],
+    "options": [
+     "On foot",
+     "By subway",
+     "By bus",
+     "By bicycle"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「会社が 近く なったので、歩いて 来て います。」\n推理：地铁是男的自己的方式；公交车是「前は」，已经不坐了；自行车是男的猜的，其实是丈夫在用。问的是女的现在的方式。\n容易错：一开始听到的「地下鉄」是提问的人自己的事。",
+   "en": "Evidence: She says: 「会社が 近く なったので、歩いて 来て います。」\nReasoning: The subway is how the man commutes; the bus is 「前は」, which she gave up; the bicycle is his guess, and her husband uses it. The question is about the woman, now.\nTrap: the first thing you hear, 「地下鉄」, is about the person asking."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "坐地铁的是男的。",
+    "en": "It's the man who takes the subway."
+   },
+   {
+    "zh": "公交车是以前，「時間が かかるので やめました」。",
+    "en": "The bus was before; she stopped because it took too long."
+   },
+   {
+    "zh": "自行车是丈夫骑去车站用的。",
+    "en": "Her husband uses the bicycle to get to the station."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n4-ck-237",
+  "type": "point",
+  "scene": "女の人と 男の人が 話しています。",
+  "question": "男の人の お姉さんは 今 どこに 住んで いますか。",
+  "lines": [
+   [
+    "F",
+    "田村さんは ごきょうだいが いますか。"
+   ],
+   [
+    "M",
+    "ええ、姉と 弟が います。"
+   ],
+   [
+    "F",
+    "みなさん、東京ですか。"
+   ],
+   [
+    "M",
+    "いえ、東京に いるのは ぼくだけです。弟は 大学が 京都なので、そっちに 住んで います。"
+   ],
+   [
+    "F",
+    "お姉さんは？"
+   ],
+   [
+    "M",
+    "姉は 去年まで 両親と いっしょに 福岡に いましたが、けっこんして、今は ご主人の 仕事で 札幌に います。"
+   ]
+  ],
+  "options": [
+   "とうきょう",
+   "さっぽろ",
+   "きょうと",
+   "ふくおか"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在说话。",
+    "question": "男人的姐姐现在住在哪里？",
+    "lines": [
+     "田村，你有兄弟姐妹吗？",
+     "有，一个姐姐和一个弟弟。",
+     "都在东京吗？",
+     "不，在东京的只有我。弟弟的大学在京都，所以住在那边。",
+     "姐姐呢？",
+     "姐姐到去年为止和父母一起住在福冈，结婚以后，现在因为丈夫的工作在札幌。"
+    ],
+    "options": [
+     "东京",
+     "札幌",
+     "京都",
+     "福冈"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking.",
+    "question": "Where does the man's older sister live now?",
+    "lines": [
+     "Tamura-san, do you have any brothers or sisters?",
+     "Yes, an older sister and a younger brother.",
+     "Are you all in Tokyo?",
+     "No, I'm the only one in Tokyo. My brother's university is in Kyoto, so he lives there.",
+     "And your sister?",
+     "She was in Fukuoka with our parents until last year, but she got married, and now she's in Sapporo because of her husband's job."
+    ],
+    "options": [
+     "Tokyo",
+     "Sapporo",
+     "Kyoto",
+     "Fukuoka"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「姉は 去年まで 両親と いっしょに 福岡に いましたが、……今は ご主人の 仕事で 札幌に います。」\n推理：东京只有男的自己；京都是弟弟；福冈是姐姐「去年まで」住的地方。现在姐姐在札幌。\n容易错：福冈也是姐姐的事，但那是以前；问的是「今」。",
+   "en": "Evidence: He says: 「姉は 去年まで 両親と いっしょに 福岡に いましたが、……今は ご主人の 仕事で 札幌に います。」\nReasoning: Only the man is in Tokyo; Kyoto is his brother; Fukuoka is where his sister lived 「去年まで」. She is in Sapporo now.\nTrap: Fukuoka is about the sister too, but in the past; the question says 「今」."
+  },
+  "wrong": [
+   {
+    "zh": "在东京的只有男的自己。",
+    "en": "Only the man himself is in Tokyo."
+   },
+   null,
+   {
+    "zh": "住在京都的是上大学的弟弟。",
+    "en": "It's the younger brother, at university, who lives in Kyoto."
+   },
+   {
+    "zh": "福冈是姐姐到去年为止住的地方。",
+    "en": "Fukuoka is where she lived until last year."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n4-ck-238",
+  "type": "point",
+  "scene": "男の人と 女の人が 話しています。",
+  "question": "女の人は 誕生日に ご主人から 何を もらいましたか。",
+  "lines": [
+   [
+    "M",
+    "石川さん、きのうは 誕生日でしたね。ご主人から 何か もらいましたか。"
+   ],
+   [
+    "F",
+    "ええ。前から 時計が ほしいと 言って いたんですが……。"
+   ],
+   [
+    "M",
+    "じゃあ、時計を もらったんですね。"
+   ],
+   [
+    "F",
+    "それが、ほしかった 時計は 店に なかったそうで、さいふを くれました。"
+   ],
+   [
+    "M",
+    "へえ。花は？ 去年は 花を もらったと 言って いましたよね。"
+   ],
+   [
+    "F",
+    "今年は 花は ありませんでした。でも、むすめが ケーキを 作って くれて、うれしかったです。"
+   ]
+  ],
+  "options": [
+   "時計",
+   "花",
+   "ケーキ",
+   "さいふ"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "女人生日时从丈夫那里收到了什么？",
+    "lines": [
+     "石川，昨天是你生日吧。你先生送你什么了吗？",
+     "嗯。我之前一直说想要手表……",
+     "那是收到手表了？",
+     "结果他说我想要的那块表店里没有，就送了我钱包。",
+     "哦。花呢？你说过去年收到了花。",
+     "今年没有花。不过女儿给我做了蛋糕，我很高兴。"
+    ],
+    "options": [
+     "手表",
+     "花",
+     "蛋糕",
+     "钱包"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "What did the woman get from her husband for her birthday?",
+    "lines": [
+     "Ishikawa-san, it was your birthday yesterday. Did you get something from your husband?",
+     "Yes. I'd been saying for a while that I wanted a watch, but…",
+     "So he gave you a watch.",
+     "Well, he said the watch I wanted wasn't in the shop, so he gave me a wallet.",
+     "Oh. What about flowers? You said you got flowers last year.",
+     "There were no flowers this year. But my daughter made me a cake, and I was happy."
+    ],
+    "options": [
+     "A watch",
+     "Flowers",
+     "A cake",
+     "A wallet"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「ほしかった 時計は 店に なかったそうで、さいふを くれました。」\n推理：手表是她想要的，但没买到；花是去年的事，「今年は 花は ありませんでした」；蛋糕是女儿做的，不是丈夫送的。\n容易错：想要的东西和实际收到的东西不一样；蛋糕是别人给的。",
+   "en": "Evidence: She says: 「ほしかった 時計は 店に なかったそうで、さいふを くれました。」\nReasoning: The watch is what she wanted, but he couldn't get it; flowers were last year — 「今年は 花は ありませんでした」; the cake came from her daughter, not her husband.\nTrap: what she wanted isn't what she got; the cake is from someone else."
+  },
+  "wrong": [
+   {
+    "zh": "手表是她想要的，但店里没有，没收到。",
+    "en": "She wanted a watch, but the shop didn't have it."
+   },
+   {
+    "zh": "花是去年收到的，今年没有。",
+    "en": "Flowers were last year; none this year."
+   },
+   {
+    "zh": "蛋糕是女儿做的，不是丈夫送的。",
+    "en": "The cake was made by her daughter, not given by her husband."
+   },
+   null
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n4-ck-239",
+  "type": "point",
+  "scene": "教室で 女の 学生が 夏休みに ついて 話しています。",
+  "question": "女の 学生は 夏休みに 何を しましたか。",
+  "lines": [
+   [
+    "F",
+    "わたしは 夏休みに 海で 泳ぎたいと 思って いました。でも、休みの 前に 足に けがを して、泳げなく なって しまいました。"
+   ],
+   [
+    "F",
+    "友だちは 山に 登りに 行きましたが、わたしは 行けませんでした。それで、毎日 うちで 本を 読もうと 思ったんですが、姉に さそわれて、いっしょに 料理教室に 通いました。"
+   ],
+   [
+    "F",
+    "はじめは あまり 行きたく なかったんですが、とても 楽しかったです。本は 一さつも 読みませんでした。"
+   ]
+  ],
+  "options": [
+   "海で 泳いだ",
+   "料理を 習った",
+   "山に 登った",
+   "本を 読んだ"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "教室里，一个女生在讲暑假的事。",
+    "question": "女生暑假做了什么？",
+    "lines": [
+     "我本来想暑假去海里游泳。可是放假前脚受了伤，游不了了。",
+     "朋友去爬山了，我没能去。所以我想每天在家看书，但是姐姐邀我，就一起去上了烹饪班。",
+     "一开始不太想去，结果非常开心。书一本也没看。"
+    ],
+    "options": [
+     "在海里游泳",
+     "学做菜",
+     "爬山",
+     "看书"
+    ]
+   },
+   "en": {
+    "scene": "A female student is talking about her summer vacation in class.",
+    "question": "What did the female student do in the summer vacation?",
+    "lines": [
+     "I wanted to swim in the sea during the summer vacation. But I hurt my leg before the vacation and couldn't swim.",
+     "My friends went mountain climbing, but I couldn't go. So I thought I'd read books at home every day, but my older sister invited me, and we went to a cooking class together.",
+     "At first I didn't really want to go, but it was a lot of fun. I didn't read a single book."
+    ],
+    "options": [
+     "Swam in the sea",
+     "Learned cooking",
+     "Climbed a mountain",
+     "Read books"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女生说：「姉に さそわれて、いっしょに 料理教室に 通いました。」\n推理：游泳是「泳ぎたいと 思って いました」，脚受伤没游成；爬山是朋友去的；看书是「読もうと 思った」，最后「一さつも 読みませんでした」。实际做的只有上烹饪班。\n容易错：「〜たいと 思って いました」「〜ようと 思ったんですが」都是没实现的打算。",
+   "en": "Evidence: She says: 「姉に さそわれて、いっしょに 料理教室に 通いました。」\nReasoning: Swimming was only 「泳ぎたいと 思って いました」 — she hurt her leg; her friends climbed the mountain; reading was 「読もうと 思った」, and in the end 「一さつも 読みませんでした」. What she actually did was the cooking class.\nTrap: 「〜たいと 思って いました」 and 「〜ようと 思ったんですが」 are plans that didn't happen."
+  },
+  "wrong": [
+   {
+    "zh": "想游泳，但脚受伤「泳げなく なって しまいました」。",
+    "en": "She wanted to swim but hurt her leg and couldn't."
+   },
+   null,
+   {
+    "zh": "爬山的是朋友，她「行けませんでした」。",
+    "en": "Her friends went climbing; she couldn't go."
+   },
+   {
+    "zh": "打算看书，但「一さつも 読みませんでした」。",
+    "en": "She meant to read but didn't read a single book."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n4-ck-240",
+  "type": "point",
+  "scene": "男の人と 女の人が 話しています。",
+  "question": "女の人は 今 週に 何回 プールに 行って いますか。",
+  "lines": [
+   [
+    "M",
+    "小林さん、今も プールに 通って いるんですか。"
+   ],
+   [
+    "F",
+    "ええ。始めた ころは 週に 1回だけでしたけど。"
+   ],
+   [
+    "M",
+    "今は もっと 行って いるんですか。"
+   ],
+   [
+    "F",
+    "ええ。去年は 週に 2回でしたが、今年は 土曜日も 行く ことに して、1回 多く しました。"
+   ],
+   [
+    "M",
+    "すごいですね。ぼくは 月に 4回ぐらい 走るだけですよ。"
+   ],
+   [
+    "F",
+    "それも いいですね。つづける ことが 大切ですから。"
+   ]
+  ],
+  "options": [
+   "週に 1回",
+   "週に 2回",
+   "週に 3回",
+   "週に 4回"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "女人现在每周去几次游泳池？",
+    "lines": [
+     "小林，你现在还去游泳池吗？",
+     "嗯。刚开始的时候每周只去1次。",
+     "现在去得更多了？",
+     "嗯。去年是每周2次，今年决定星期六也去，加了1次。",
+     "真厉害。我只是每个月跑4次左右。",
+     "那也不错。坚持下去最重要。"
+    ],
+    "options": [
+     "每周1次",
+     "每周2次",
+     "每周3次",
+     "每周4次"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "How many times a week does the woman go to the pool now?",
+    "lines": [
+     "Kobayashi-san, are you still going to the pool?",
+     "Yes. When I started, it was only once a week.",
+     "Do you go more often now?",
+     "Yes. Last year it was twice a week, but this year I decided to go on Saturdays too, so I added one.",
+     "That's great. I only go running about four times a month.",
+     "That's good too. What matters is keeping it up."
+    ],
+    "options": [
+     "Once a week",
+     "Twice a week",
+     "Three times a week",
+     "Four times a week"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「去年は 週に 2回でしたが、今年は 土曜日も 行く ことに して、1回 多く しました。」\n推理：去年每周2次，今年加1次，所以现在是每周3次。「3回」没有直接说出来。\n容易错：1次是刚开始的时候，2次是去年；4次是男的每个月跑步的次数。",
+   "en": "Evidence: She says: 「去年は 週に 2回でしたが、今年は 土曜日も 行く ことに して、1回 多く しました。」\nReasoning: Twice a week last year plus one more this year makes three times a week now. 「3回」 is never said outright.\nTrap: once was when she started, twice was last year; four is how often the man runs in a month."
+  },
+  "wrong": [
+   {
+    "zh": "每周1次是刚开始的时候。",
+    "en": "Once a week was when she first started."
+   },
+   {
+    "zh": "每周2次是去年，今年又加了1次。",
+    "en": "Twice a week was last year; she added one this year."
+   },
+   null,
+   {
+    "zh": "4次是男的每个月跑步的次数，而且是「月に」。",
+    "en": "Four is how often the man runs — and per month."
+   }
+  ],
+  "traps": [
+   "number",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n4-ck-241",
+  "type": "point",
+  "scene": "デパートで アナウンスを 聞いて います。",
+  "question": "デパートは きょう 何時に 閉まりますか。",
+  "lines": [
+   [
+    "F",
+    "お客さまに お知らせします。この デパートは いつも 夜 8時まで 開いて いますが、きょうは 大雪の ため、いつもより 2時間 早く 閉まります。"
+   ],
+   [
+    "F",
+    "上の 階の レストランは 5時までです。また、駅へ 行く バスは 7時が さいごです。お帰りの 時間に ご注意ください。"
+   ]
+  ],
+  "options": [
+   "5時",
+   "6時",
+   "7時",
+   "8時"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在百货商店里听广播。",
+    "question": "百货商店今天几点关门？",
+    "lines": [
+     "各位顾客请注意。本店平时营业到晚上8点，今天因为大雪，比平时早2个小时关门。",
+     "楼上的餐厅营业到5点。另外，开往车站的巴士末班是7点。请注意回家的时间。"
+    ],
+    "options": [
+     "5点",
+     "6点",
+     "7点",
+     "8点"
+    ]
+   },
+   "en": {
+    "scene": "You are listening to an announcement in a department store.",
+    "question": "What time does the department store close today?",
+    "lines": [
+     "Attention, customers. This department store is usually open until eight in the evening, but today, because of heavy snow, it will close two hours earlier than usual.",
+     "The restaurants on the upper floor are open until five. Also, the last bus to the station is at seven. Please mind the time when you go home."
+    ],
+    "options": [
+     "5:00",
+     "6:00",
+     "7:00",
+     "8:00"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：广播说：「いつも 夜 8時まで 開いて いますが、きょうは……いつもより 2時間 早く 閉まります。」\n推理：平时8点，今天早2个小时，所以是6点。6点没有直接说出来，要自己算。\n容易错：5点是餐厅关门的时间，7点是末班巴士，8点是平时。",
+   "en": "Evidence: The announcement says: 「いつも 夜 8時まで 開いて いますが、きょうは……いつもより 2時間 早く 閉まります。」\nReasoning: Usually eight, two hours earlier today: six. Six o'clock is never said; you work it out.\nTrap: five is when the restaurants close, seven is the last bus, eight is the usual time."
+  },
+  "wrong": [
+   {
+    "zh": "5点是楼上餐厅关门的时间。",
+    "en": "Five is when the restaurants close."
+   },
+   null,
+   {
+    "zh": "7点是开往车站的末班巴士。",
+    "en": "Seven is the last bus to the station."
+   },
+   {
+    "zh": "8点是平时的关门时间。",
+    "en": "Eight is the usual closing time."
+   }
+  ],
+  "traps": [
+   "number",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n4-ck-242",
+  "type": "point",
+  "scene": "男の人と 女の人が 話しています。",
+  "question": "女の人の 誕生日は 何日ですか。",
+  "lines": [
+   [
+    "M",
+    "上田さんの 誕生日は 来週の 金曜日、15日でしたよね。"
+   ],
+   [
+    "F",
+    "いいえ、ちがいます。15日は 妹の 誕生日です。わたしは その 二日前なんです。"
+   ],
+   [
+    "M",
+    "そうでしたか。じゃあ、誕生日の 日に みんなで 食事を しませんか。"
+   ],
+   [
+    "F",
+    "ありがとうございます。でも、その 日は 仕事で おそく なるんです。次の 日の 14日は どうですか。"
+   ],
+   [
+    "M",
+    "14日は ぼくが 出張なんです。16日の 土曜日は どうですか。"
+   ],
+   [
+    "F",
+    "いいですね。じゃあ、16日に しましょう。"
+   ]
+  ],
+  "options": [
+   "13日",
+   "14日",
+   "15日",
+   "16日"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "女人的生日是几号？",
+    "lines": [
+     "上田，你的生日是下周五，15号对吧。",
+     "不，不对。15号是我妹妹的生日。我是在那两天前。",
+     "是吗。那生日那天大家一起吃个饭吧？",
+     "谢谢。不过那天我工作要到很晚。第二天14号怎么样？",
+     "14号我要出差。16号星期六怎么样？",
+     "好啊。那就定16号吧。"
+    ],
+    "options": [
+     "13号",
+     "14号",
+     "15号",
+     "16号"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "What date is the woman's birthday?",
+    "lines": [
+     "Ueda-san, your birthday is next Friday, the 15th, isn't it?",
+     "No, that's not right. The 15th is my younger sister's birthday. Mine is two days before that.",
+     "Oh, I see. Then shall we all have dinner on your birthday?",
+     "Thank you. But I'll be working late that day. How about the next day, the 14th?",
+     "I'm away on business on the 14th. How about Saturday the 16th?",
+     "Sounds good. Let's make it the 16th."
+    ],
+    "options": [
+     "The 13th",
+     "The 14th",
+     "The 15th",
+     "The 16th"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「15日は 妹の 誕生日です。わたしは その 二日前なんです。」\n推理：15号的两天前是13号。后面她说生日的「次の 日の 14日」，也说明生日是13号。\n容易错：15号是妹妹的生日；14号和16号是商量吃饭的日子，最后定的16号不是生日。",
+   "en": "Evidence: She says: 「15日は 妹の 誕生日です。わたしは その 二日前なんです。」\nReasoning: Two days before the 15th is the 13th. Her later 「次の 日の 14日」 — the day after her birthday — confirms it.\nTrap: the 15th is her sister's birthday; the 14th and 16th are dinner dates, and the 16th they settle on isn't the birthday."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "14号是生日的第二天，是她提的吃饭日子。",
+    "en": "The 14th is the day after her birthday, her suggestion for the dinner."
+   },
+   {
+    "zh": "15号是妹妹的生日。",
+    "en": "The 15th is her sister's birthday."
+   },
+   {
+    "zh": "16号是最后定下来吃饭的日子。",
+    "en": "The 16th is the date they choose for the dinner."
+   }
+  ],
+  "traps": [
+   "number",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n4-ck-243",
+  "type": "point",
+  "scene": "会社で 女の人と 男の人が 話しています。",
+  "question": "あした だれが 空港へ お客さんを むかえに 行きますか。",
+  "lines": [
+   [
+    "F",
+    "あした 空港へ お客さんを むかえに 行くのは、高橋さんでしたね。"
+   ],
+   [
+    "M",
+    "それが、ぼくは 急に 会議に 出なければ ならなく なったんです。"
+   ],
+   [
+    "F",
+    "そうですか。じゃあ、わたしが 行きましょうか。"
+   ],
+   [
+    "M",
+    "松本さんは 午後から 大阪へ 出張でしょう。間に 合いませんよ。"
+   ],
+   [
+    "F",
+    "そうですね。じゃあ、課長に おねがいしますか。"
+   ],
+   [
+    "M",
+    "課長も ぼくと 同じ 会議なんです。さっき 石田さんに 聞いたら、行けると 言って いましたから、たのみました。"
+   ]
+  ],
+  "options": [
+   "高橋さん",
+   "松本さん",
+   "課長",
+   "石田さん"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "公司里，一个女人和一个男人在说话。",
+    "question": "明天谁去机场接客人？",
+    "lines": [
+     "明天去机场接客人的是高桥你吧。",
+     "其实我突然必须参加一个会议了。",
+     "这样啊。那我去吧？",
+     "松本你下午要去大阪出差吧。来不及的。",
+     "也是。那拜托课长吗？",
+     "课长也和我开同一个会。刚才我问了石田，他说能去，就拜托他了。"
+    ],
+    "options": [
+     "高桥",
+     "松本",
+     "课长",
+     "石田"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking at the office.",
+    "question": "Who will go to the airport to meet the client tomorrow?",
+    "lines": [
+     "It was you, Takahashi-san, who's going to the airport to meet the client tomorrow, right?",
+     "Actually, I suddenly have to attend a meeting.",
+     "I see. Then shall I go?",
+     "You're leaving for Osaka on business in the afternoon, Matsumoto-san. You wouldn't make it.",
+     "That's true. Then shall we ask the section chief?",
+     "The section chief is in the same meeting as me. I asked Ishida-san a little while ago, and he said he could go, so I asked him to."
+    ],
+    "options": [
+     "Takahashi-san",
+     "Matsumoto-san",
+     "The section chief",
+     "Ishida-san"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的最后说：「さっき 石田さんに 聞いたら、行けると 言って いましたから、たのみました。」\n推理：原定的高桥（男的）要开会；松本（女的）下午去大阪出差，来不及；课长也开同一个会。石田的名字只在最后出现一次。\n容易错：最先说的高桥是原来的安排，已经变了。",
+   "en": "Evidence: His last line: 「さっき 石田さんに 聞いたら、行けると 言って いましたから、たのみました。」\nReasoning: Takahashi (the man), who was supposed to go, has a meeting; Matsumoto (the woman) leaves for Osaka in the afternoon and wouldn't make it; the section chief is in the same meeting. Ishida's name comes up only once, at the end.\nTrap: Takahashi, named first, was the original plan, which has changed."
+  },
+  "wrong": [
+   {
+    "zh": "高桥原定要去，但突然要开会。",
+    "en": "Takahashi was going to go but now has a meeting."
+   },
+   {
+    "zh": "松本下午去大阪出差，「間に 合いません」。",
+    "en": "Matsumoto leaves for Osaka in the afternoon and wouldn't make it."
+   },
+   {
+    "zh": "课长和高桥开同一个会。",
+    "en": "The section chief is in the same meeting as Takahashi."
+   },
+   null
+  ],
+  "traps": [
+   "denied-guess",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n4-ck-244",
+  "type": "point",
+  "scene": "男の人と 女の人が 話しています。",
+  "question": "二人は いつ 花見に 行きますか。",
+  "lines": [
+   [
+    "M",
+    "花見、今度の 土曜日に 行かない？"
+   ],
+   [
+    "F",
+    "いいね、そう しよう。あ、でも、天気よほうでは 土曜日は 雨だって。"
+   ],
+   [
+    "M",
+    "そうか。じゃあ、次の 日は？"
+   ],
+   [
+    "F",
+    "日曜日は アルバイトが あるの。金曜日の 夜は どう？"
+   ],
+   [
+    "M",
+    "金曜日は 仕事が おそく なりそうなんだ。来週に する？"
+   ],
+   [
+    "F",
+    "来週は もう さくらが 終わって しまうよ。じゃあ、わたし、アルバイトを ほかの 人に かわって もらう。"
+   ],
+   [
+    "M",
+    "悪いね。じゃあ、その 日に しよう。"
+   ]
+  ],
+  "options": [
+   "金曜日",
+   "土曜日",
+   "日曜日",
+   "来週"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "两个人什么时候去赏花？",
+    "lines": [
+     "赏花，这个星期六去怎么样？",
+     "好啊，就这么定。啊，不过天气预报说星期六下雨。",
+     "这样啊。那第二天呢？",
+     "星期天我要打工。星期五晚上怎么样？",
+     "星期五我工作可能会很晚。改到下周？",
+     "下周樱花就谢了。那我请别人替我打工吧。",
+     "不好意思啊。那就定那天吧。"
+    ],
+    "options": [
+     "星期五",
+     "星期六",
+     "星期天",
+     "下周"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "When will the two go cherry-blossom viewing?",
+    "lines": [
+     "Shall we go cherry-blossom viewing this Saturday?",
+     "Sure, let's do that. Oh, but the forecast says rain on Saturday.",
+     "I see. Then how about the next day?",
+     "I have my part-time job on Sunday. How about Friday night?",
+     "It looks like I'll be working late on Friday. Shall we make it next week?",
+     "The blossoms will be gone by next week. OK, I'll get someone to cover my shift.",
+     "Sorry about that. Then let's go that day."
+    ],
+    "options": [
+     "Friday",
+     "Saturday",
+     "Sunday",
+     "Next week"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「日曜日は アルバイトが あるの」，最后说：「アルバイトを ほかの 人に かわって もらう。」男的说：「その 日に しよう。」\n推理：星期六先定了，又因为下雨取消；星期五男的工作晚；下周樱花就谢了。女的请人替班，所以能去的是有打工的那天，星期天。\n容易错：「そう しよう」说的星期六马上被收回；最后没有再说「日曜日」，要靠「アルバイト」对上。",
+   "en": "Evidence: She says 「日曜日は アルバイトが あるの」 and finally 「アルバイトを ほかの 人に かわって もらう。」 He says: 「その 日に しよう。」\nReasoning: Saturday is agreed and then dropped because of rain; he works late on Friday; next week the blossoms will be gone. She gets her shift covered, so the day is the one with the part-time job: Sunday.\nTrap: the Saturday of 「そう しよう」 is withdrawn at once; 「日曜日」 isn't repeated at the end — you match it through 「アルバイト」."
+  },
+  "wrong": [
+   {
+    "zh": "星期五男的「仕事が おそく なりそう」。",
+    "en": "He expects to work late on Friday."
+   },
+   {
+    "zh": "星期六先定了，但天气预报说下雨，取消了。",
+    "en": "Saturday was agreed first, then dropped: rain is forecast."
+   },
+   null,
+   {
+    "zh": "下周「もう さくらが 終わって しまう」。",
+    "en": "By next week the blossoms will be over."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "not-possible"
+  ]
  }
 ]

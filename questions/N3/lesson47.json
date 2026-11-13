@@ -697,5 +697,45 @@
       null
     ],
     "rev": 2
+  },
+  {
+    "id": "n3-l47-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson47#3"
+    ],
+    "difficulty": 2,
+    "stem": "この店の昼の定食は、800円という値段の（　）量が多くて味もいいので、いつも込んでいる。",
+    "options": [
+      "上に",
+      "割に",
+      "ために",
+      "とおりに"
+    ],
+    "answer": 1,
+    "full": "この店の昼の定食は、800円という値段の割に量が多くて味もいいので、いつも込んでいる。",
+    "tr": {
+      "zh": "这家店的午间套餐，就800日元这个价钱来说量又多味道又好，所以总是很挤。",
+      "en": "For a price of 800 yen, this shop's lunch set is generous and tastes good, so the place is always crowded."
+    },
+    "why": {
+      "zh": "线索：前面是便宜的「800円という値段」，后面是「量が多くて味もいい」：结果比从价钱预想的要好。\n规则：「名词＋の＋割に」＝就……来说却……，表示和从前面的事预想的程度不相称。\n辨析：「値段の割に」＝和价钱不相称（比预想的好或差）；「〜上に」＝而且，再加上同方向的事，接名词时要说「〜である上に」，「値段の上に」不能表示这个意思。",
+      "en": "Clue: A low price, 「800円という値段」, then 「量が多くて味もいい」: better than the price would suggest.\nRule: Noun + の + 「割に」 = \"considering …, for …\": the result is out of proportion to what one would expect.\nContrast: 「値段の割に」 = out of proportion to the price (better or worse than expected); 「〜上に」 = \"and on top of that\", adding a point in the same direction; with a noun it is 「〜である上に」, so 「値段の上に」 can't mean this."
+    },
+    "wrong": [
+      {
+        "zh": "「上に」是“而且”，接名词时要用「である上に」；「値段の上に」不表示“而且”。",
+        "en": "「上に」 means \"and what's more\" and takes 「である上に」 after a noun; 「値段の上に」 doesn't mean that."
+      },
+      null,
+      {
+        "zh": "「ために」表示原因或目的，“因为800日元的价钱所以量多”因果不合。",
+        "en": "「ために」 gives a cause or purpose; \"the portions are large because of the 800-yen price\" isn't logical."
+      },
+      {
+        "zh": "「とおりに」是“按照……、正如……”，“按照价钱量多”意思不通。",
+        "en": "「とおりに」 means \"exactly as\"; \"large portions exactly as the price\" makes no sense."
+      }
+    ]
   }
 ]
