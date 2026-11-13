@@ -696,5 +696,126 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l71-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#6",
+      "lesson71#5"
+    ],
+    "difficulty": 2,
+    "stem": "資料の数字の間違いに、会議の直前に後輩が気づいてくれた。あのままだったら、取引先の前で（　）。",
+    "options": [
+      "大恥をかいたところだった",
+      "大恥をかくことはない",
+      "大恥をかくところだった",
+      "大恥をかかずに済んでいた"
+    ],
+    "answer": 2,
+    "full": "資料の数字の間違いに、会議の直前に後輩が気づいてくれた。あのままだったら、取引先の前で大恥をかくところだった。",
+    "tr": {
+      "zh": "开会前，后辈发现了资料里的数字错误。要是就那样拿去，我差点在客户面前出大丑。",
+      "en": "Just before the meeting a junior colleague noticed a wrong figure in the materials. If it had gone as it was, I would have made a fool of myself in front of the client."
+    },
+    "why": {
+      "zh": "线索：「あのままだったら」是和事实相反的假设：实际上错误被发现了，没有出丑。\n规则：「动词辞书形＋ところだった」＝差一点就……（实际没有发生），常和「〜たら」「もう少しで」「危うく」一起用。\n容易错：前面必须是辞书形「かく」。「かいたところだった」是“（那时）刚刚……完”，意思完全不同。\n辨析：「〜ずに済む」是“没……就过去了”，说的是实际避免了的事：「後輩のおかげで恥をかかずに済んだ」。",
+      "en": "Clue: 「あのままだったら」 is a condition contrary to fact: the mistake was in fact caught and there was no embarrassment.\nRule: 「verb dictionary form ＋ ところだった」 = almost … (but it didn't happen), often with 「〜たら」「もう少しで」「危うく」.\nTrap: The dictionary form 「かく」 is required. 「かいたところだった」 means \"had just …ed (at that point)\", something else entirely.\nContrast: 「〜ずに済む」 means \"got by without …\" and states what was actually avoided: 「後輩のおかげで恥をかかずに済んだ」."
+    },
+    "wrong": [
+      {
+        "zh": "「た形＋ところだった」是“那时刚……完”，不表示“差点就……”。",
+        "en": "「ta-form ＋ ところだった」 means \"had just …ed\"; it doesn't mean \"almost\"."
+      },
+      {
+        "zh": "「ことはない」是“用不着……”，是劝对方的话，接在假设「あのままだったら」后面不成立。",
+        "en": "「ことはない」 means \"there's no need to …\", said to reassure someone; it doesn't follow the hypothetical 「あのままだったら」."
+      },
+      null,
+      {
+        "zh": "「ずに済む」是“不用……就过去了”；“要是就那样，就不用出丑了”意思反了。",
+        "en": "「ずに済む」 means \"got by without …\"; \"if it had gone as it was, I'd have avoided embarrassment\" says the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n2-l71-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#5"
+    ],
+    "difficulty": 2,
+    "stem": "人気の展覧会だったが、事前にネットで予約しておいたおかげで、当日は一時間待ちの窓口の列に（　）。",
+    "options": [
+      "並ばずに済んだ",
+      "並ばざるを得なかった",
+      "並ぶどころではなかった",
+      "並ぶことにした"
+    ],
+    "answer": 0,
+    "full": "人気の展覧会だったが、事前にネットで予約しておいたおかげで、当日は一時間待ちの窓口の列に並ばずに済んだ。",
+    "tr": {
+      "zh": "那是个很热门的展览，不过多亏事先在网上预约了，当天没有去排窗口前那条要等一小时的队。",
+      "en": "It was a popular exhibition, but thanks to booking online beforehand, I didn't have to join the one-hour queue at the ticket window on the day."
+    },
+    "why": {
+      "zh": "线索：「おかげで」后面是好结果：因为提前预约，避免了麻烦。\n规则：「动词ない形去掉ない＋ずに済む」（「並ばずに済む」「買わずに済む」）＝本来可能要做的麻烦事，结果不用做就解决了。\n辨析：「〜ざるを得ない」是“不想做也不得不做”，结果是做了；「〜ずに済む」是结果没做，正好相反。两个都有「ず」，不要看混。",
+      "en": "Clue: A good result follows 「おかげで」: booking ahead spared the speaker some trouble.\nRule: 「verb nai-stem ＋ ずに済む」 (「並ばずに済む」「買わずに済む」) = something troublesome that might have been necessary turned out not to be.\nContrast: 「〜ざるを得ない」 means \"have no choice but to\", so the thing gets done; with 「〜ずに済む」 it doesn't. Both contain 「ず」; don't mix them up."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ざるを得なかった」是“不得不排”，是坏结果，和表示好结果的「おかげで」矛盾。",
+        "en": "「ざるを得なかった」 means \"had no choice but to queue\", a bad result that contradicts 「おかげで」."
+      },
+      {
+        "zh": "「どころではなかった」是“根本顾不上……”，表示没有余力做，不是预约带来的好处。",
+        "en": "「どころではなかった」 means \"was in no position to …\"; that isn't a benefit of having booked."
+      },
+      {
+        "zh": "「ことにした」是“（自己）决定……”；“多亏预约了，所以决定去排要等一小时的队”说不通。",
+        "en": "「ことにした」 means \"(I) decided to …\"; \"thanks to booking, I decided to join the one-hour queue\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n2-l71-021",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#3"
+    ],
+    "difficulty": 2,
+    "stem": "彼は上司と何度も衝突を繰り返した（　）、とうとう先月、誰にも相談せずに会社を辞めてしまった。",
+    "options": [
+      "とたんに",
+      "あげくに",
+      "からには",
+      "ついでに"
+    ],
+    "answer": 1,
+    "full": "彼は上司と何度も衝突を繰り返したあげくに、とうとう先月、誰にも相談せずに会社を辞めてしまった。",
+    "tr": {
+      "zh": "他和上司一再发生冲突，最后在上个月，没跟任何人商量就辞职了。",
+      "en": "After clashing with his boss again and again, he finally quit the company last month without consulting anyone."
+    },
+    "why": {
+      "zh": "线索：前面是「何度も…繰り返した」这样拖了很久的过程，后面是「とうとう…辞めてしまった」这个令人遗憾的结局。\n规则：「动词た形／名词の＋あげく（に）」＝经过很长的、费劲的过程，最后落得一个不好的结果，常和「結局」「とうとう」呼应。\n辨析：「〜たとたん（に）」是“刚一……就马上……”，前面是一瞬间的动作（「立ち上がったとたん」）；前面是反复、长时间的过程时用「あげく」。",
+      "en": "Clue: A drawn-out process, 「何度も…繰り返した」, comes before the blank, and a regrettable ending, 「とうとう…辞めてしまった」, after it.\nRule: 「verb ta-form / noun の ＋ あげく（に）」 = after a long, wearing process, things end badly; it often pairs with 「結局」「とうとう」.\nContrast: 「〜たとたん（に）」 means \"the instant …\" and follows a momentary action (「立ち上がったとたん」); after a repeated, long process, use 「あげく」."
+    },
+    "wrong": [
+      {
+        "zh": "「とたんに」是“刚一……就”，前面是一瞬间的动作，和「何度も繰り返した」不合。",
+        "en": "「とたんに」 means \"the instant …\" and follows a momentary action, which doesn't fit 「何度も繰り返した」."
+      },
+      null,
+      {
+        "zh": "「からには」是“既然……就（要）”，后面接决心或义务，不接「辞めてしまった」这样已经发生的结果。",
+        "en": "「からには」 means \"now that …, (one must)\" and leads to resolve or duty, not to something that has already happened like 「辞めてしまった」."
+      },
+      {
+        "zh": "「ついでに」是“顺便”；辞职不是和上司冲突时顺便做的事。",
+        "en": "「ついでに」 means \"while one is at it\"; quitting isn't something done on the side while clashing with a boss."
+      }
+    ]
   }
 ]

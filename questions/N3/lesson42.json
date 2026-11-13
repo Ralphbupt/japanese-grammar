@@ -698,5 +698,45 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n3-l42-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson42#5"
+    ],
+    "difficulty": 1,
+    "stem": "この町では、高校を卒業した若い人が都会へ出ていってしまうので、人口は毎年減る（　）。",
+    "options": [
+      "一方だ",
+      "ところだ",
+      "ためだ",
+      "とおりだ"
+    ],
+    "answer": 0,
+    "full": "この町では、高校を卒業した若い人が都会へ出ていってしまうので、人口は毎年減る一方だ。",
+    "tr": {
+      "zh": "在这个镇上，高中毕业的年轻人都去了大城市，所以人口每年都在不断减少。",
+      "en": "In this town the young people leave for the city after high school, so the population just keeps shrinking every year."
+    },
+    "why": {
+      "zh": "线索：空格前是表示变化的动词「減る」，还有「毎年」：变化一直朝一个方向进行。\n规则：「变化动词辞书形＋一方だ」＝越来越……、不断……，多用于不好的变化（「増える」「減る」「悪くなる」）。\n辨析：「減る一方だ」＝一直在减少，停不下来；「減るところだ」＝正要减少的那一刻，说的是一个时间点，不能和「毎年」一起用。",
+      "en": "Clue: The blank follows a verb of change, 「減る」, and there is 「毎年」: the change keeps going in one direction.\nRule: Dictionary form of a change verb + 「一方だ」 = \"keeps …ing, more and more\", mostly for unwelcome changes (「増える」, 「減る」, 「悪くなる」).\nContrast: 「減る一方だ」 = keeps falling with no sign of stopping; 「減るところだ」 = is just about to fall, a single moment, which can't go with 「毎年」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「辞书形＋ところだ」是“正要……”的那一刻，和表示反复的「毎年」不合。",
+        "en": "Dictionary form + 「ところだ」 is \"just about to\", one moment; it clashes with 「毎年」."
+      },
+      {
+        "zh": "「ためだ」用来说明原因（……是因为……），可是原因已经用「ので」说过了，这里要说的是结果。",
+        "en": "「ためだ」 gives a cause (\"it is because …\"), but the cause was already given with 「ので」; what belongs here is the result."
+      },
+      {
+        "zh": "「とおりだ」是“正如……”，前面要有预想或说明的内容，「減るとおりだ」不成句。",
+        "en": "「とおりだ」 means \"just as …\" and needs something predicted or stated before it; 「減るとおりだ」 doesn't work."
+      }
+    ]
   }
 ]

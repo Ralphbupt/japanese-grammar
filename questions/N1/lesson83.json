@@ -694,5 +694,45 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n1-l83-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson83#3"
+    ],
+    "difficulty": 2,
+    "stem": "地元住民の根強い反対（　）、大規模な再開発計画は着々と進められ、来春には着工の運びとなった。",
+    "options": [
+      "をもって",
+      "をよそに",
+      "を皮切りに",
+      "をおいて"
+    ],
+    "answer": 1,
+    "full": "地元住民の根強い反対をよそに、大規模な再開発計画は着々と進められ、来春には着工の運びとなった。",
+    "tr": {
+      "zh": "不顾当地居民的强烈反对，大规模的再开发计划仍在稳步推进，明年春天就要动工了。",
+      "en": "In disregard of persistent opposition from local residents, the large-scale redevelopment plan has moved steadily ahead and construction is set to begin next spring."
+    },
+    "why": {
+      "zh": "线索：空格前是「反対」，后面却是「着々と進められ」，完全没受反对的影响。\n规则：「（心配・反対・批判・期待）＋をよそに」＝不顾……、把……当作与己无关，后面是照样进行的事。\n辨析：「〜をもって」表示手段或期限，“凭借……／以……为期”：「書面をもって通知する」。“凭借反对推进计划”说不通。",
+      "en": "Clue: 「反対」 comes before the blank, yet what follows is 「着々と進められ」 — the opposition made no difference.\nRule: (worry / opposition / criticism / hopes) + 「をよそに」 = paying no heed to …, followed by something that goes ahead regardless.\nContrast: 「〜をもって」 marks a means or a cut-off, \"by means of … / as of …\": 「書面をもって通知する」. \"The plan advanced by means of opposition\" makes no sense."
+    },
+    "wrong": [
+      {
+        "zh": "「〜をもって」表示手段或期限，“以反对为手段推进计划”说不通。",
+        "en": "「〜をもって」 marks a means or a deadline; \"advancing the plan by means of opposition\" makes no sense."
+      },
+      null,
+      {
+        "zh": "「〜を皮切りに」是“以……为开端”，后面要接陆续展开的同类活动，反对不是计划的开端。",
+        "en": "「〜を皮切りに」 means \"starting with …\" and needs a series of similar events after it; the opposition is not the start of the plan."
+      },
+      {
+        "zh": "「〜をおいて」要和「ほかにない」呼应，表示“除了……没有别的”，这里没有否定。",
+        "en": "「〜をおいて」 pairs with 「ほかにない」 (\"none but …\"); there is no negative here."
+      }
+    ]
   }
 ]

@@ -698,5 +698,45 @@
       null
     ],
     "rev": 2
+  },
+  {
+    "id": "n3-l46-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson46#6"
+    ],
+    "difficulty": 2,
+    "stem": "インターネットでの買い物の増加（　）、町の小さな店は客が減って、閉める所も多くなっている。",
+    "options": [
+      "に伴って",
+      "について",
+      "にとって",
+      "に基づいて"
+    ],
+    "answer": 0,
+    "full": "インターネットでの買い物の増加に伴って、町の小さな店は客が減って、閉める所も多くなっている。",
+    "tr": {
+      "zh": "随着网上购物的增加，镇上的小店顾客减少，关门的也越来越多。",
+      "en": "As online shopping grows, small shops in town are losing customers and more of them are closing."
+    },
+    "why": {
+      "zh": "线索：前面是表示变化的名词「買い物の増加」，后面也是变化「客が減って…多くなっている」：一个变化带来另一个变化。\n规则：「动词辞书形／名词＋に伴って」＝随着……，前面的变化发生，后面的变化也跟着发生，多用于社会性的话题。\n辨析：「〜に伴って」＝随着变化而变化（人口の増加に伴って）；「〜に基づいて」＝以……为依据（データに基づいて決める），前面是根据，不是变化。",
+      "en": "Clue: A noun of change before the blank, 「買い物の増加」, and another after it, 「客が減って…多くなっている」: one change brings the other.\nRule: Verb dictionary form / noun + 「に伴って」 = \"as …, along with …\": when the first change happens the second follows; common for social topics.\nContrast: 「〜に伴って」 = one change accompanying another (人口の増加に伴って); 「〜に基づいて」 = on the basis of (データに基づいて決める): a basis comes before it, not a change."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「について」是“关于……”，后面接「話す」「調べる」等，不表示一个变化带来另一个变化。",
+        "en": "「について」 means \"about\" and goes with 「話す」, 「調べる」 and the like; it can't say that one change brings another."
+      },
+      {
+        "zh": "「にとって」是“对……来说”，前面一般是人或组织，后面接评价，「増加にとって」意思不通。",
+        "en": "「にとって」 means \"for …\"; it usually follows a person or group and is followed by a judgement, so 「増加にとって」 makes no sense."
+      },
+      {
+        "zh": "「に基づいて」是“根据……”，前面要是数据、规则等依据，后面是有意做的事；小店顾客减少不是“根据”增加而做的。",
+        "en": "「に基づいて」 means \"based on\": data or rules come before it and a deliberate action after it; shops losing customers isn't something done \"on the basis of\" the growth."
+      }
+    ]
   }
 ]

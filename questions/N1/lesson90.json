@@ -694,5 +694,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n1-l90-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson90#4"
+    ],
+    "difficulty": 3,
+    "stem": "長年同じ現場で腕を磨いてきた職人同士であれば、相手が次に何を求めているかぐらいは、（　）わかるものである。",
+    "options": [
+      "言われずとも",
+      "言われようにも",
+      "言われるべく",
+      "言われんがため"
+    ],
+    "answer": 0,
+    "full": "長年同じ現場で腕を磨いてきた職人同士であれば、相手が次に何を求めているかぐらいは、言われずともわかるものである。",
+    "tr": {
+      "zh": "如果是多年在同一个工作现场磨练技艺的工匠，对方接下来需要什么这点事，不用说也自然明白。",
+      "en": "Craftsmen who have honed their skills at the same site for years understand at least what the other wants next without being told."
+    },
+    "why": {
+      "zh": "线索：「長年〜職人同士であれば」说的是彼此非常了解，空格后面是「わかるものである」，应是“不必开口也能明白”。\n规则：「动词ない形（去掉ない）＋ずとも」＝即使不……也……，是「〜なくても」的书面说法，后面常接「わかる」「いい」等：「言わずともわかる」。\n辨析：「〜（よ）うにも」后面必须是同一动词的可能形否定，表示“想……也做不到”：「連絡しようにも連絡できない」。后面是肯定的「わかる」，接不上。",
+      "en": "Clue: 「長年〜職人同士であれば」 says they know each other thoroughly, and 「わかるものである」 follows the blank — \"understands without a word\".\nRule: verb ない-stem + 「ずとも」 = even without …ing, the written form of 「〜なくても」, often followed by 「わかる」「いい」: 「言わずともわかる」.\nContrast: 「〜（よ）うにも」 must be followed by the negative potential of the same verb, \"can't … even if one wants to\": 「連絡しようにも連絡できない」. It can't lead into the affirmative 「わかる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜（よ）うにも」后面要接可能形的否定（「〜ようにも〜ない」），不能接肯定的「わかる」。",
+        "en": "「〜（よ）うにも」 needs a negative potential after it (「〜ようにも〜ない」), not the affirmative 「わかる」."
+      },
+      {
+        "zh": "「〜べく」是“为了……”，后面接为此采取的行动；“为了被告知而明白”说不通。",
+        "en": "「〜べく」 means \"in order to …\" and is followed by the action taken for it; \"understands in order to be told\" makes no sense."
+      },
+      {
+        "zh": "「〜んがため」是“为了（一定要）……”，表示目的，“为了被人说而明白”同样说不通。",
+        "en": "「〜んがため」 means \"for the sake of …\", a purpose; \"understands for the sake of being told\" makes no sense either."
+      }
+    ]
+  },
+  {
+    "id": "n1-l90-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson90#1"
+    ],
+    "difficulty": 2,
+    "stem": "通信網が完全に寸断されていたため、被災地に住む家族の安否を（　）確かめられず、ただ不安な夜を過ごすほかなかった。",
+    "options": [
+      "確かめずとも",
+      "確かめんばかりに",
+      "確かめようにも",
+      "確かめるべく"
+    ],
+    "answer": 2,
+    "full": "通信網が完全に寸断されていたため、被災地に住む家族の安否を確かめようにも確かめられず、ただ不安な夜を過ごすほかなかった。",
+    "tr": {
+      "zh": "由于通信网络完全中断，想确认住在灾区的家人是否平安也无法确认，只能在不安中度过夜晚。",
+      "en": "With the communications network completely cut, there was no way to check on family living in the disaster area however much one wanted to, and nothing to do but spend an anxious night."
+    },
+    "why": {
+      "zh": "线索：空格后面是同一个动词的可能形否定「確かめられず」，前面的原因是「通信網が寸断されていた」。\n规则：「动词意向形＋にも＋同一动词的可能形否定」＝想……也没法……，因为客观情况而做不到：「帰ろうにも帰れない」。\n辨析：「〜ずとも」是“即使不……也（没关系）”：「聞かずともわかる」，后面是不做也行的事，和“想做却做不到”相反。",
+      "en": "Clue: After the blank comes the negative potential of the same verb, 「確かめられず」, and the reason given is 「通信網が寸断されていた」.\nRule: volitional form + 「にも」 + negative potential of the same verb = can't … even though one wants to, because circumstances prevent it: 「帰ろうにも帰れない」.\nContrast: 「〜ずとも」 means \"even without …ing (it's fine)\": 「聞かずともわかる」 — what follows is fine without the action, the opposite of wanting to and being unable."
+    },
+    "wrong": [
+      {
+        "zh": "「〜ずとも」是“即使不确认也……”，后面应接「わかる」「いい」等，不接「確かめられず」。",
+        "en": "「〜ずとも」 means \"even without checking\" and should be followed by 「わかる」「いい」 and the like, not 「確かめられず」."
+      },
+      {
+        "zh": "「〜んばかりに」是“几乎要……似的”，描写样子，不能和后面的可能形否定呼应。",
+        "en": "「〜んばかりに」 means \"as if about to …\", describing a manner; it doesn't pair with the negative potential that follows."
+      },
+      null,
+      {
+        "zh": "「〜べく」是“为了……”，后面要接为此采取的行动，不能直接接「確かめられず」。",
+        "en": "「〜べく」 means \"in order to …\" and is followed by the action taken for that purpose, not directly by 「確かめられず」."
+      }
+    ]
   }
 ]

@@ -1267,5 +1267,126 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l75-033",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#1",
+      "lesson59#1"
+    ],
+    "difficulty": 2,
+    "stem": "海外に長く住んでいるからといって、誰でもその国の言葉が（　）。結局は本人の努力次第だ。",
+    "options": [
+      "話せるようになるわけがない",
+      "話せるようになるに決まっている",
+      "話せるようになるほかはない",
+      "話せるようになるわけではない"
+    ],
+    "answer": 3,
+    "full": "海外に長く住んでいるからといって、誰でもその国の言葉が話せるようになるわけではない。結局は本人の努力次第だ。",
+    "tr": {
+      "zh": "并不是说在国外住久了，谁都能学会那个国家的语言。归根结底要看本人的努力。",
+      "en": "Just because someone has lived abroad for a long time doesn't mean they will all become able to speak the language. In the end it depends on the person's own effort."
+    },
+    "why": {
+      "zh": "线索：前面有「からといって」，后一句又说「本人の努力次第だ」（有人能学会，有人不能）。\n规则：「〜からといって」后面要接部分否定：「〜わけではない」「〜とは限らない」＝不能因为A就说一定B。\n辨析：「わけではない」是“并非都……”（部分否定，有的能有的不能）；「わけがない」是“绝不可能……”（全部否定）。只差一个助词，这里说的是“看努力”，所以不是全部否定。",
+      "en": "Clue: 「からといって」 comes first, and the next sentence says 「本人の努力次第だ」 (some manage it, some don't).\nRule: 「〜からといって」 is completed by a partial negation, 「〜わけではない」 or 「〜とは限らない」 = A alone doesn't make B certain.\nContrast: 「わけではない」 means \"it's not necessarily the case\" (partial: some do, some don't); 「わけがない」 means \"there's no way\" (total). One particle apart; since it \"depends on effort\", the denial here is not total."
+    },
+    "wrong": [
+      {
+        "zh": "「わけがない」是“绝不可能”；后一句说“看本人努力”，也就是有人能学会，不是完全不可能。",
+        "en": "「わけがない」 means \"there's no way\"; the next sentence says it depends on effort, so some people do learn it."
+      },
+      {
+        "zh": "「に決まっている」是“肯定会……”，和「からといって」（不能因此就说……）的方向相反。",
+        "en": "「に決まっている」 means \"is bound to\", the opposite direction from 「からといって」 (\"just because … doesn't mean\")."
+      },
+      {
+        "zh": "「ほかはない」是“只好……”，表示没有别的选择，接不上「からといって」。",
+        "en": "「ほかはない」 means \"have no choice but to\"; it doesn't complete 「からといって」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l75-034",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#6"
+    ],
+    "difficulty": 2,
+    "stem": "このまま人手不足が続けば、長年地域の人々に親しまれてきたこの店も、近いうちに（　）。",
+    "options": [
+      "閉店することになりかねない",
+      "閉店することになりかねる",
+      "閉店することになりようがない",
+      "閉店することになるまでもない"
+    ],
+    "answer": 0,
+    "full": "このまま人手不足が続けば、長年地域の人々に親しまれてきたこの店も、近いうちに閉店することになりかねない。",
+    "tr": {
+      "zh": "人手不足的情况照这样持续下去，这家多年来深受当地人喜爱的店，说不定不久也要关门。",
+      "en": "If the staff shortage goes on like this, even this shop, loved by local people for many years, could end up closing before long."
+    },
+    "why": {
+      "zh": "线索：「このまま…続けば」是不好的条件，后面说的是让人担心的可能性。\n规则：「动词ます形去掉ます＋かねない」（「なりかねない」「起こりかねない」）＝有可能出现不好的结果，表示担心。\n辨析：「かねない」形式是否定，意思却是“有可能会”；「かねる」形式是肯定，意思却是“难以……、不便……”（「お答えしかねます」），而且前面是说话人自己有意识的动作。两个容易看反。",
+      "en": "Clue: 「このまま…続けば」 is a bad condition, and what follows is a worrying possibility.\nRule: 「verb masu-stem ＋ かねない」 (「なりかねない」「起こりかねない」) = a bad outcome may well happen; it expresses worry.\nContrast: 「かねない」 is negative in form but means \"might well\"; 「かねる」 is positive in form but means \"find it hard to / am unable to\" (「お答えしかねます」), and it follows the speaker's own deliberate action. They are easy to read the wrong way round."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「かねる」是“（说话人）难以……”，前面是自己有意识的动作；「閉店することになる」不是这种动作。",
+        "en": "「かねる」 means \"(the speaker) can't bring oneself to\" and follows one's own deliberate action; 「閉店することになる」 isn't one."
+      },
+      {
+        "zh": "「ようがない」是“没办法……”；“人手不足持续下去，就没办法关门”逻辑相反。",
+        "en": "「ようがない」 means \"there's no way to\"; \"if the shortage continues, it has no way of closing\" runs the wrong way."
+      },
+      {
+        "zh": "「までもない」是“用不着……”，和“持续下去会怎样”的担心接不上。",
+        "en": "「までもない」 means \"there's no need to\"; it doesn't follow a worry about what will happen if this continues."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-035",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#2"
+    ],
+    "difficulty": 2,
+    "stem": "A「今度のマラソン大会に出るんだって？」\nB「うん。出ると（　）、最後まで歩かずに走りきりたいんだ。」",
+    "options": [
+      "決めたばかりに",
+      "決めたところで",
+      "決めたからには",
+      "決めたあまりに"
+    ],
+    "answer": 2,
+    "full": "A「今度のマラソン大会に出るんだって？」\nB「うん。出ると決めたからには、最後まで歩かずに走りきりたいんだ。」",
+    "tr": {
+      "zh": "A“听说你要参加这次的马拉松大赛？” B“嗯。既然决定参加了，我就想不走一步、一直跑到终点。”",
+      "en": "A: \"I hear you're running in the next marathon?\" B: \"Yeah. Now that I've decided to enter, I want to run the whole way to the finish without walking.\""
+    },
+    "why": {
+      "zh": "线索：后面是表示决心的「走りきりたい」。\n规则：「普通形＋からには」＝既然A，就理所当然要B；后面接决心、愿望、义务（「〜たい」「〜つもりだ」「〜べきだ」）。\n辨析：「〜たばかりに」是“就因为……（才落得坏结果）”，后面是后悔的事（「出ると言ったばかりに、毎朝走ることになった」）；「からには」后面是自己积极的决心。",
+      "en": "Clue: What follows is a statement of resolve, 「走りきりたい」.\nRule: 「plain form ＋ からには」 = now that A, B naturally has to follow; resolve, a wish or a duty comes after it (「〜たい」「〜つもりだ」「〜べきだ」).\nContrast: 「〜たばかりに」 means \"simply because … (something bad resulted)\" and leads to regret (「出ると言ったばかりに、毎朝走ることになった」); 「からには」 leads to the speaker's own positive resolve."
+    },
+    "wrong": [
+      {
+        "zh": "「たばかりに」后面是不好的结果、后悔的事，不能接「走りきりたい」这样的愿望。",
+        "en": "「たばかりに」 leads to a bad result or regret, not to a wish such as 「走りきりたい」."
+      },
+      {
+        "zh": "「たところで」是“就算……也（没用）”，后面接否定的判断，不接积极的愿望。",
+        "en": "「たところで」 means \"even if … (it's no use)\" and leads to a negative judgement, not to a positive wish."
+      },
+      null,
+      {
+        "zh": "「あまり（に）」是“过于……以致”，前面是感情或程度的词；「決めた」不是，后面也不接愿望。",
+        "en": "「あまり（に）」 means \"so … that\" and follows a word of feeling or degree; 「決めた」 isn't one, and a wish can't follow."
+      }
+    ]
   }
 ]

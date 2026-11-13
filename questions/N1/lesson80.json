@@ -811,5 +811,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n1-l80-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#6"
+    ],
+    "difficulty": 3,
+    "stem": "取引先や社内の役員からどれほど強く反対されようと、社長は一度決めた事業再編の方針を（　）。",
+    "options": [
+      "曲げようとはしなかった",
+      "曲げざるを得なかった",
+      "曲げるよりほかなかった",
+      "曲げないでもなかった"
+    ],
+    "answer": 0,
+    "full": "取引先や社内の役員からどれほど強く反対されようと、社長は一度決めた事業再編の方針を曲げようとはしなかった。",
+    "tr": {
+      "zh": "无论客户和公司内部的董事怎样强烈反对，社长都不肯改变已经定下的业务重组方针。",
+      "en": "However strongly clients and the company's own directors objected, the president would not budge from the restructuring policy once it had been decided."
+    },
+    "why": {
+      "zh": "线索：前半句是「どれほど〜反対されようと」，疑问词＋意向形＋と。\n规则：「疑问词＋〜（よ）うと／（よ）うが」＝无论怎样……都……，后面的事不受前面影响。反对再强烈也不受影响，所以是“不肯改变”：「〜ようとしない」＝不打算……、不肯……。\n辨析：「曲げざるを得なかった」（不得不改变）是反对带来的结果，要用表示原因的说法：「強く反対されたため、曲げざるを得なかった」。",
+      "en": "Clue: The first half is 「どれほど〜反対されようと」: question word + volitional + と.\nRule: question word + 「〜（よ）うと／（よ）うが」 = no matter how …; what follows is unaffected. However strong the opposition, nothing changed, so \"would not bend\": 「〜ようとしない」 = makes no move to ….\nContrast: 「曲げざるを得なかった」 (had no choice but to bend) is a result of the opposition and needs a cause: 「強く反対されたため、曲げざるを得なかった」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜ざるを得なかった」是“不得不改变”，这是反对造成的结果，和“无论怎样反对都……”的让步接不上。",
+        "en": "「〜ざるを得なかった」 means \"had to bend\" — a result of the opposition, which doesn't follow a concessive \"no matter how much they objected\"."
+      },
+      {
+        "zh": "「〜よりほかなかった」也是“只好改变”，同样是顺着反对的结果，和「〜ようと」矛盾。",
+        "en": "「〜よりほかなかった」 also means \"could only bend\", going along with the opposition and clashing with 「〜ようと」."
+      },
+      {
+        "zh": "「〜ないでもなかった」是“也不是不改变”，表示有些动摇，和“无论怎样反对”不相称。",
+        "en": "「〜ないでもなかった」 means \"was not wholly unwilling to bend\", a wavering that doesn't fit \"no matter how strongly\"."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-023",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#2"
+    ],
+    "difficulty": 2,
+    "stem": "いかに経験を積んだ専門家（　）、未知の感染症がどこまで広がるかを正確に予測することは不可能に近い。",
+    "options": [
+      "ともなると",
+      "とあれば",
+      "といえども",
+      "にしては"
+    ],
+    "answer": 2,
+    "full": "いかに経験を積んだ専門家といえども、未知の感染症がどこまで広がるかを正確に予測することは不可能に近い。",
+    "tr": {
+      "zh": "即使是经验再丰富的专家，要准确预测未知的传染病会扩散到什么程度也几乎不可能。",
+      "en": "Even for the most experienced expert, accurately predicting how far an unknown infectious disease will spread is close to impossible."
+    },
+    "why": {
+      "zh": "线索：句首的「いかに」（无论多么）要和让步的形式呼应；后面是和“专家”的印象相反的「不可能に近い」。\n规则：「（いかに／たとえ）名词＋といえども」＝即使是……也……，举出一个本来应该能做到的人或情况，说连他也不例外。\n辨析：「〜ともなると」是顺接，“到了专家这个级别，自然就……”：「専門家ともなると、一目で原因がわかる」。后面是能做到的事才用它。",
+      "en": "Clue: 「いかに」 (however …) at the start needs a concessive form, and 「不可能に近い」 runs against what one expects of an expert.\nRule: 「（いかに／たとえ）noun + といえども」 = even …; it names someone you would expect to manage and says even they are no exception.\nContrast: 「〜ともなると」 is not concessive: \"once you are an expert, naturally …\": 「専門家ともなると、一目で原因がわかる」. Use it when what follows is something they can do."
+    },
+    "wrong": [
+      {
+        "zh": "「〜ともなると」是“到了……的程度自然就……”，不和「いかに」呼应，后面也不该是“做不到”。",
+        "en": "「〜ともなると」 means \"at the level of …, naturally …\"; it doesn't answer 「いかに」, and shouldn't lead to \"impossible\"."
+      },
+      {
+        "zh": "「〜とあれば」是“如果是（为了）……的话就……”，表示条件，不表示让步。",
+        "en": "「〜とあれば」 means \"if it is (for) …, then …\" — a condition, not a concession."
+      },
+      null,
+      {
+        "zh": "「〜にしては」是“就……来说（出乎意料）”，不能和「いかに」一起用。",
+        "en": "「〜にしては」 means \"for a … (surprisingly)\" and can't be used with 「いかに」."
+      }
+    ]
   }
 ]

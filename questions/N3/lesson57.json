@@ -700,5 +700,85 @@
       null
     ],
     "rev": 2
+  },
+  {
+    "id": "n3-l57-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson57#4"
+    ],
+    "difficulty": 1,
+    "stem": "A「この書類は今日中に出さなければなりませんか。」\nB「いいえ、急ぎませんから、来週（　）。」",
+    "options": [
+      "出すわけにはいきません",
+      "出してもかまいません",
+      "出すおそれがあります",
+      "出したことがあります"
+    ],
+    "answer": 1,
+    "full": "A「この書類は今日中に出さなければなりませんか。」\nB「いいえ、急ぎませんから、来週出してもかまいません。」",
+    "tr": {
+      "zh": "A：“这份文件必须今天之内交吗？” B：“不，不着急，下周交也没关系。”",
+      "en": "A: \"Does this document have to be handed in today?\" B: \"No, there's no hurry, so you may hand it in next week.\""
+    },
+    "why": {
+      "zh": "线索：B先说「いいえ」，理由是「急ぎませんから」：不必今天交，晚一点也可以。\n规则：「动词て形＋もかまわない」＝……也没关系，表示许可或让步，比「てもいい」稍微郑重一些。\n辨析：「出してもかまいません」＝下周交也可以（许可）；「出すわけにはいきません」＝不能交，和「急ぎませんから」的理由相反。",
+      "en": "Clue: B says 「いいえ」 and gives the reason 「急ぎませんから」: it needn't be today, later is fine.\nRule: Verb て-form + 「もかまわない」 = \"it's all right to …\": permission or concession, a little more formal than 「てもいい」.\nContrast: 「出してもかまいません」 = handing it in next week is fine (permission); 「出すわけにはいきません」 = can't hand it in, which goes against 「急ぎませんから」."
+    },
+    "wrong": [
+      {
+        "zh": "「わけにはいかない」是“（情理上）不能……”，不着急却说下周不能交，前后矛盾。",
+        "en": "「わけにはいかない」 means \"can't (it wouldn't be right)\"; saying it can't be handed in next week contradicts there being no hurry."
+      },
+      null,
+      {
+        "zh": "「おそれがある」是“恐怕会发生（坏事）”，不能用来回答对方的询问、表示许可。",
+        "en": "「おそれがある」 warns of something bad that may happen; it can't answer the question with permission."
+      },
+      {
+        "zh": "「たことがある」表示过去的经历，和「来週」这个将来的时间不合。",
+        "en": "「たことがある」 is past experience; it clashes with the future time 「来週」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l57-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson57#2"
+    ],
+    "difficulty": 1,
+    "stem": "隣の部屋で工事をしていて、その音が毎日朝から夕方まで（　）。早く終わってほしい。",
+    "options": [
+      "うるさくてもかまわない",
+      "うるさいとは限らない",
+      "うるさくてたまらない",
+      "うるさくなるはずがない"
+    ],
+    "answer": 2,
+    "full": "隣の部屋で工事をしていて、その音が毎日朝から夕方までうるさくてたまらない。早く終わってほしい。",
+    "tr": {
+      "zh": "隔壁房间在施工，那声音每天从早到傍晚吵得受不了。真希望快点结束。",
+      "en": "They are doing building work next door, and every day the noise is unbearable from morning till evening. I wish it would end soon."
+    },
+    "why": {
+      "zh": "线索：后一句是「早く終わってほしい」：说话人已经受不了这个声音了；「毎日朝から夕方まで」也在强调程度。\n规则：「形容词て形＋たまらない」＝……得受不了，表示说话人自己的感觉、心情强烈到无法忍受（「うるさい」→「うるさくて」）。\n辨析：「うるさくてたまらない」＝吵得受不了；「うるさくてもかまわない」＝吵也没关系（让步），只多了一个「も」，意思却相反，和「早く終わってほしい」矛盾。",
+      "en": "Clue: The next sentence is 「早く終わってほしい」: the speaker can't stand the noise any longer; 「毎日朝から夕方まで」 stresses how bad it is.\nRule: Adjective て-form + 「たまらない」 = \"unbearably …\": the speaker's own feeling or sensation at its strongest (「うるさい」 → 「うるさくて」).\nContrast: 「うるさくてたまらない」 = unbearably noisy; 「うるさくてもかまわない」 = I don't mind if it's noisy (concession). Only 「も」 is added, yet the meaning is the opposite and contradicts 「早く終わってほしい」."
+    },
+    "wrong": [
+      {
+        "zh": "「てもかまわない」是“……也没关系”，既然没关系，就不会说「早く終わってほしい」。",
+        "en": "「てもかまわない」 means \"I don't mind if …\"; someone who didn't mind wouldn't say 「早く終わってほしい」."
+      },
+      {
+        "zh": "「とは限らない」是“不一定……”，可是这里说的是每天从早到晚实际听到的声音，而且希望它快点结束。",
+        "en": "「とは限らない」 means \"not necessarily\", but this is noise the speaker actually hears all day, every day, and wants to end."
+      },
+      null,
+      {
+        "zh": "「はずがない」是“不可能……”，“不可能变吵”和希望工程快点结束矛盾。",
+        "en": "「はずがない」 means \"can't possibly\"; \"it can't possibly get noisy\" contradicts wanting the work to end soon."
+      }
+    ]
   }
 ]

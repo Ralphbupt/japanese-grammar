@@ -347,5 +347,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l63-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson63#2"
+    ],
+    "difficulty": 2,
+    "stem": "新作映画の一般公開（　）、監督や出演者が出席する試写会が都内の劇場で行われ、多くのファンが集まった。",
+    "options": [
+      "につれて",
+      "に反して",
+      "に先立って",
+      "にしたがって"
+    ],
+    "answer": 2,
+    "full": "新作映画の一般公開に先立って、監督や出演者が出席する試写会が都内の劇場で行われ、多くのファンが集まった。",
+    "tr": {
+      "zh": "在新片正式公映之前，导演和演员出席的试映会在东京都内的剧场举行，聚集了很多影迷。",
+      "en": "Ahead of the new film's general release, a preview screening attended by the director and cast was held at a theatre in Tokyo and drew many fans."
+    },
+    "why": {
+      "zh": "线索：「一般公開」是正式的大事，「試写会」是在它之前办的活动。\n规则：「名词＋に先立って」＝在……之前（先做准备性的事），用于正式的活动、仪式。\n辨析：「〜につれて」「〜にしたがって」都是“随着……（变化）”，前面要接表示逐渐变化的词（「時間がたつにつれて」）；「一般公開」是一次性的事，不是变化。",
+      "en": "Clue: 「一般公開」 is the formal main event and 「試写会」 is something held before it.\nRule: noun ＋ 「に先立って」 = prior to, ahead of (doing something in preparation), used for formal events.\nContrast: 「〜につれて」 and 「〜にしたがって」 both mean \"as … changes\" and need a word of gradual change (「時間がたつにつれて」); 「一般公開」 is a single event, not a change."
+    },
+    "wrong": [
+      {
+        "zh": "「〜につれて」是“随着……”，前面要接逐渐变化的事，「一般公開」不是变化。",
+        "en": "「〜につれて」 (as…) needs a gradual change before it; 「一般公開」 is not one."
+      },
+      {
+        "zh": "「〜に反して」是“与……相反”，前面接预想、期待，试映会并不和公映相反。",
+        "en": "「〜に反して」 (contrary to) follows an expectation or forecast; the preview isn't contrary to the release."
+      },
+      null,
+      {
+        "zh": "「〜にしたがって」是“随着……/按照……”，前面接变化或规则、指示，不合这里。",
+        "en": "「〜にしたがって」 (as… / in accordance with) follows a change or a rule, neither of which fits."
+      }
+    ]
+  },
+  {
+    "id": "n2-l63-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson63#3"
+    ],
+    "difficulty": 2,
+    "stem": "子どもが生まれたの（　）、それまで住んでいた都心のマンションを売って、自然の多い郊外に引っ越すことにした。",
+    "options": [
+      "を機に",
+      "をもとに",
+      "を通じて",
+      "をめぐって"
+    ],
+    "answer": 0,
+    "full": "子どもが生まれたのを機に、それまで住んでいた都心のマンションを売って、自然の多い郊外に引っ越すことにした。",
+    "tr": {
+      "zh": "以孩子出生为契机，我们卖掉了之前住的市中心公寓，决定搬到自然环境好的郊外。",
+      "en": "With the birth of our child as the occasion, we sold the flat in the city centre where we had been living and decided to move to the greener suburbs."
+    },
+    "why": {
+      "zh": "线索：「子どもが生まれた」是人生中的一个转折点，后面是由此开始的新行动「引っ越すことにした」。\n规则：「名词／动词た形＋の＋を機に」＝以……为契机（开始新的事）。\n辨析：「〜をもとに」＝以……为素材、依据（「事実をもとに書かれた小説」），后面是制作、判断；这里说的是开始行动的时机，不是依据。",
+      "en": "Clue: 「子どもが生まれた」 is a turning point in life, and what follows is a new step taken from it: 「引っ越すことにした」.\nRule: noun, or た-form ＋ 「の」, ＋ 「を機に」 = taking … as the occasion (to start something new).\nContrast: 「〜をもとに」 = based on, using as material (「事実をもとに書かれた小説」), followed by making or judging something; here it's the occasion for acting, not the basis."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜をもとに」是“以……为素材、依据”，后面接制作、判断，孩子出生不是搬家的“素材”。",
+        "en": "「〜をもとに」 (based on) is followed by making or judging something; a birth isn't material for moving."
+      },
+      {
+        "zh": "「〜を通じて」是“通过……（手段、媒介）/整个期间”，孩子出生不是手段。",
+        "en": "「〜を通じて」 (through, by way of) marks a means or a whole period; a birth is neither."
+      },
+      {
+        "zh": "「〜をめぐって」是“围绕……（争论、对立）”，后面接议论，不接搬家的决定。",
+        "en": "「〜をめぐって」 (over) is followed by debate or conflict, not a decision to move."
+      }
+    ]
   }
 ]

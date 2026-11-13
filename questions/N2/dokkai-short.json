@@ -580,5 +580,251 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n2-dk-215",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "マニュアルどおりにしか動けない人間になるな、とよく言われる。確かに、書かれたことだけをこなしていれば、自分で考える力は育たないように思える。しかし、私は新人のころ、マニュアルに助けられた。基本の手順を迷わずにこなせたからこそ、目の前の客の様子に気を配る余裕が生まれたのだ。手順を自分で考えていたら、そんな余裕はなかっただろう。マニュアルは考えることを奪うものではない。考えなくてもよい部分を引き受けて、本当に考えるべきことに頭を使わせてくれるものなのである。",
+    "tr": {
+      "zh": "人们常说，不要成为只会照着操作手册行动的人。的确，如果只是完成写好的事情，似乎培养不出自己思考的能力。但是，我在新人时期得到过手册的帮助。正因为基本的步骤可以毫不犹豫地完成，才有了留意眼前客人情况的余力。如果步骤都要自己去想，就不会有那样的余力了吧。手册并不是夺走思考的东西。它替我们承担了不必思考的部分，让我们把头脑用在真正应该思考的事情上。",
+      "en": "We are often told not to become people who can only act by the manual. Certainly, if you just carry out what is written, it seems your ability to think for yourself won't grow. But when I was new, the manual helped me. Precisely because I could get through the basic steps without hesitating, I had room to pay attention to the customer in front of me. Had I been working out the steps myself, I would have had no such room. A manual does not take thinking away. It takes over the parts that need no thought and lets us use our heads on what really needs thinking about."
+    },
+    "questions": [
+      {
+        "q": "マニュアルについて、筆者はどのように考えているか。",
+        "options": [
+          "決まった手順を任せられるので、大事なことを考える余裕ができる",
+          "書かれたとおりに動くだけになり、自分で考える力が育たなくなる",
+          "新人のうちは役に立つが、経験を積んだ人には必要のないものだ",
+          "客への気配りのしかたまで、細かく書いておくことが大切である"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「考えなくてもよい部分を引き受けて、本当に考えるべきことに頭を使わせてくれるものなのである」。\n推理：前半「確かに…ように思える」是一般的看法，「しかし」之后才是作者的意见：基本步骤交给手册，才有余力去想真正重要的事。「引き受けて」＝选项的「任せられる」。\n容易错：把「しかし」前面的一般看法当成作者的想法。",
+          "en": "Evidence: 「考えなくてもよい部分を引き受けて、本当に考えるべきことに頭を使わせてくれるものなのである」.\nReasoning: The first half (「確かに…ように思える」) is the common view; the writer's own comes after 「しかし」: with the basic steps left to the manual, there is room to think about what matters. 「引き受けて」 = the option's 「任せられる」.\nTrap: Taking the common view before 「しかし」 for the writer's."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "这是开头介绍的一般看法，作者用「マニュアルは考えることを奪うものではない」否定了它。",
+            "en": "This is the common view from the opening, which the writer denies: 「マニュアルは考えることを奪うものではない」."
+          },
+          {
+            "zh": "作者只说自己新人时受过帮助，没有说有经验的人就不需要手册。",
+            "en": "The writer only says it helped as a newcomer, not that experienced people don't need it."
+          },
+          {
+            "zh": "留意客人是靠手册腾出来的余力去做的事，文中没有说要把它写进手册。",
+            "en": "Attending to customers is what the manual frees you to do; nothing says it should be written into the manual."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-216",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "翻訳アプリの性能が上がり、外国語を学ぶ必要はもうないと言う人が増えた。旅行や買い物なら、確かにアプリで十分に用が足りる。だが、私は外国語を学ぶ意味がなくなったとは思わない。たとえば、日本語では兄と弟を別の言葉で呼び分けるが、一語で済ませる言語も多い。別の言語を学ぶと、自分が当たり前だと思っていた世界の見方が、数ある見方の一つにすぎないと気づかされる。外国語の学習は、用を足す手段である以上に、自分の考え方の枠を知る機会なのだ。それは機械に任せられない。",
+    "tr": {
+      "zh": "翻译软件的性能提高了，说“已经没有必要学外语了”的人多了起来。如果是旅行或购物，用软件确实足够办事了。但是，我不认为学外语已经失去了意义。比如，日语里哥哥和弟弟用不同的词来称呼，但用一个词就说完的语言也很多。学了另一种语言，就会意识到自己以为理所当然的看世界的方式，只不过是众多方式中的一种。学习外语，与其说是办事的手段，不如说是了解自己思维框架的机会。这是无法交给机器的。",
+      "en": "As translation apps have improved, more people say there is no longer any need to learn foreign languages. For travel or shopping, an app is indeed quite enough. But I don't think learning a foreign language has lost its meaning. For example, Japanese has separate words for an older and a younger brother, while many languages make do with one. Learning another language makes you realise that the way of seeing the world you took for granted is just one of many. More than a means of getting things done, studying a foreign language is a chance to learn the frame of your own thinking. That cannot be left to a machine."
+    },
+    "questions": [
+      {
+        "q": "筆者が最も言いたいことは何か。",
+        "options": [
+          "翻訳アプリが発達した今では、外国語を学ぶ必要はなくなってきた",
+          "外国語を学ぶことには、自分のものの見方に気づけるという価値がある",
+          "翻訳アプリは間違いが多いので、旅行でも頼りすぎないほうがよい",
+          "兄と弟を区別しない言語のほうが、日本語よりも学びやすいと言える"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「外国語の学習は、用を足す手段である以上に、自分の考え方の枠を知る機会なのだ」。\n推理：「だが、私は…とは思わない」之后是作者的主张；兄和弟的例子只是用来说明“学别的语言能发现自己看世界的方式只是其中一种”。「考え方の枠を知る」＝选项的「自分のものの見方に気づける」。\n容易错：把例子或开头别人的说法当成结论。",
+          "en": "Evidence: 「外国語の学習は、用を足す手段である以上に、自分の考え方の枠を知る機会なのだ」.\nReasoning: The writer's claim follows 「だが、私は…とは思わない」; the brother example only illustrates that another language shows your own way of seeing the world to be one among many. 「考え方の枠を知る」 = the option's 「自分のものの見方に気づける」.\nTrap: Taking the example, or other people's opening claim, for the conclusion."
+        },
+        "wrong": [
+          {
+            "zh": "这是开头「…と言う人が増えた」的说法，作者说「意味がなくなったとは思わない」。",
+            "en": "This is what 「…と言う人」 say in the opening; the writer says 「意味がなくなったとは思わない」."
+          },
+          null,
+          {
+            "zh": "正好相反：文中说旅行和购物「アプリで十分に用が足りる」，没有提到错误多。",
+            "en": "The opposite: for travel and shopping 「アプリで十分に用が足りる」; errors are never mentioned."
+          },
+          {
+            "zh": "兄弟的区分只是说明语言之间看法不同的例子，文中没有比较哪种语言好学。",
+            "en": "The brother distinction is only an example of languages seeing things differently; ease of learning isn't compared."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-217",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "レジ袋が有料になってから、買い物用の袋を持ち歩く人が増えた。環境のためにはよいことだと言われる。ところが、わが家を見回すと、もらった物や買った物を合わせて、そうした袋が十枚以上もある。丈夫な袋を一枚作るには、レジ袋よりずっと多くの資源が必要で、何十回も使ってやっと環境への負担が小さくなるそうだ。使わない袋を何枚も持っているなら、かえって資源の無駄になる。大切なのは、環境によさそうな物を手に入れることではなく、一つの物を長く使い続けることだと思う。",
+    "tr": {
+      "zh": "自从塑料袋收费以后，随身带购物袋的人多了起来。人们说这对环境是好事。可是环顾我家，别人送的加上自己买的，这样的袋子竟有十个以上。据说做一个结实的袋子，需要的资源比塑料袋多得多，要用上几十次，对环境的负担才会变小。如果手里有好几个不用的袋子，反而是浪费资源。我认为重要的不是得到看起来对环境好的东西，而是把一件东西长久地用下去。",
+      "en": "Since plastic shopping bags began to cost money, more people carry their own bag. This is said to be good for the environment. Yet when I look around my home, counting those I was given and those I bought, there are more than ten such bags. Making one sturdy bag apparently takes far more resources than a plastic one, and only after dozens of uses does its burden on the environment become smaller. If you own several bags you don't use, it is a waste of resources instead. What matters, I think, is not getting hold of things that seem good for the environment but going on using one thing for a long time."
+    },
+    "questions": [
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "options": [
+          "買い物用の袋を持っていれば、それだけで環境を守ることになる",
+          "丈夫な袋は資源を多く使うので、レジ袋を使うほうが環境によい",
+          "環境のためには、同じ物を何度も長く使っていくことが重要である",
+          "レジ袋の有料化をやめれば、袋を作るための資源を節約できる"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「大切なのは、環境によさそうな物を手に入れることではなく、一つの物を長く使い続けることだと思う」。\n推理：「AではなくB」的句型里，B才是作者的主张。前面家里有十多个袋子、要用几十次负担才变小，都是为了引出这个结论。「一つの物を長く使い続ける」＝选项的「同じ物を何度も長く使っていく」。\n容易错：从“结实的袋子费资源”推到“塑料袋更好”，作者没有这么说。",
+          "en": "Evidence: 「大切なのは、環境によさそうな物を手に入れることではなく、一つの物を長く使い続けることだと思う」.\nReasoning: In 「AではなくB」, B is the writer's claim. The ten-odd bags at home and the dozens of uses needed all lead up to it. 「一つの物を長く使い続ける」 = the option's 「同じ物を何度も長く使っていく」.\nTrap: Going from 'a sturdy bag uses more resources' to 'plastic bags are better', which the writer never says."
+        },
+        "wrong": [
+          {
+            "zh": "作者说重要的不是「環境によさそうな物を手に入れること」，不用的袋子反而是浪费。",
+            "en": "The writer says the point is not 「環境によさそうな物を手に入れること」; unused bags are a waste."
+          },
+          {
+            "zh": "文中说结实的袋子用几十次后负担会变小，并没有说用塑料袋更好。",
+            "en": "A sturdy bag's burden becomes smaller after dozens of uses; the text doesn't say plastic bags are better."
+          },
+          null,
+          {
+            "zh": "文中没有主张取消塑料袋收费。",
+            "en": "Nothing in the text argues for ending the charge on plastic bags."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-218",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "会話の途中で相手が黙ると、私たちは不安になる。何かまずいことを言ったのではないかと考え、あわてて別の話題を探してしまう。沈黙は会話の失敗だと思われているのだ。しかし、相手が黙るのは、こちらの言葉を受け止めて、どう答えるかを真剣に考えているからかもしれない。そこへ急いで言葉を重ねれば、相手の考えを途中で切ってしまうことになる。沈黙を埋めようとせず、相手の言葉が出てくるのを待つ。それも、話を聞くという行為の大事な一部ではないだろうか。",
+    "tr": {
+      "zh": "谈话中对方一沉默，我们就会不安。心想是不是说了什么不该说的话，慌忙去找别的话题。人们认为沉默就是谈话的失败。但是，对方沉默，也许是因为接住了我们的话，正在认真思考怎么回答。这时急着再添上话，就会把对方的思考中途打断。不去填补沉默，而是等待对方的话说出来。这不也是“听人说话”这一行为中重要的一部分吗？",
+      "en": "When the other person falls silent in the middle of a conversation, we grow uneasy. We wonder whether we said something wrong and hurriedly look for another topic. Silence is thought of as a failure of conversation. But the other person may be silent because they have taken in our words and are seriously thinking about how to answer. If we rush to pile on more words, we cut their thinking off midway. Not trying to fill the silence, but waiting for their words to come — isn't that, too, an important part of listening?"
+    },
+    "questions": [
+      {
+        "q": "会話の中の沈黙について、筆者はどのように考えているか。",
+        "options": [
+          "会話がうまくいっていないしるしなので、早く話題を変えるべきだ",
+          "相手が話に関心を持っていない証拠なので、質問を変えたほうがよい",
+          "自分がまずいことを言ったせいなので、理由を相手に確かめるとよい",
+          "相手が答えを考えている時間かもしれないので、急がずに待つとよい"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「相手が黙るのは、…どう答えるかを真剣に考えているからかもしれない」；「沈黙を埋めようとせず、相手の言葉が出てくるのを待つ」。\n推理：「しかし」之前是一般人的反应（不安、找别的话题），之后是作者的看法：沉默可能是对方在思考，所以不要急着说话，要等。句末「ではないだろうか」是委婉地提出主张。\n容易错：把「沈黙は会話の失敗だと思われている」当成作者的意见，「思われている」说的是一般人。",
+          "en": "Evidence: 「相手が黙るのは、…どう答えるかを真剣に考えているからかもしれない」; 「沈黙を埋めようとせず、相手の言葉が出てくるのを待つ」.\nReasoning: Before 「しかし」 is how people usually react (unease, a new topic); after it, the writer's view: the silence may be the other person thinking, so wait instead of hurrying to speak. The closing 「ではないだろうか」 is a soft way of asserting.\nTrap: Reading 「沈黙は会話の失敗だと思われている」 as the writer's opinion; 「思われている」 is about people in general."
+        },
+        "wrong": [
+          {
+            "zh": "这是「思われている」的一般看法；作者认为急着换话题会打断对方的思考。",
+            "en": "This is the general view (「思われている」); the writer says hurrying to a new topic cuts off the other's thinking."
+          },
+          {
+            "zh": "正好相反：作者认为对方可能正在「真剣に考えている」。",
+            "en": "The opposite: the writer thinks the other person may be 「真剣に考えている」."
+          },
+          {
+            "zh": "“说错了话”只是我们不安时的猜想，作者的建议是等待，不是追问。",
+            "en": "Having said something wrong is only our anxious guess; the writer's advice is to wait, not to ask."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-219",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "忙しい人は、ニュースを見出しだけで済ませることが多い。見出しは記事の要約だから、それで内容は分かるというわけだ。しかし、見出しは要約である前に、読者の目を引くための言葉である。特にインターネットでは、クリックされるかどうかが重視されるため、記事の中の最も刺激的な部分だけが強調されやすい。本文を読むと、印象がまるで違うことも珍しくない。時間がないときに見出しだけを見るのは構わない。ただ、それだけで分かったつもりになり、人に意見を言うのは避けたい。",
+    "tr": {
+      "zh": "忙碌的人看新闻常常只看标题就算了。他们的想法是：标题是文章的概括，看了就知道内容。但是，标题在成为概括之前，首先是用来吸引读者目光的语言。尤其在网上，因为重视的是会不会被点击，文章里最刺激的部分往往被单独强调出来。读了正文，印象完全不同的情况也不少见。没有时间的时候只看标题是可以的。只是，仅凭这个就自以为懂了，还对别人发表意见，这是应该避免的。",
+      "en": "Busy people often make do with just the headlines of the news. The idea is that a headline is a summary of the article, so it tells you the content. But before it is a summary, a headline is wording meant to catch the reader's eye. On the internet in particular, because what counts is whether it gets clicked, only the most sensational part of an article tends to be stressed. It is not unusual for the impression to be completely different once you read the body. Looking only at headlines when you have no time is fine. But I would avoid thinking I have understood from that alone and giving my opinion to others."
+    },
+    "questions": [
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "options": [
+          "見出しを見ただけで内容を理解したと思い、意見を述べるべきではない",
+          "見出しは記事を短くまとめたものなので、読めば内容は十分に分かる",
+          "インターネットのニュースは信用できないので、読まないほうがよい",
+          "どんなに忙しいときでも、ニュースは本文を最後まで読むべきである"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「ただ、それだけで分かったつもりになり、人に意見を言うのは避けたい」。\n推理：作者先让步「見出しだけを見るのは構わない」，再用「ただ」提出真正想说的：不要只凭标题就自以为懂了去发表意见。「分かったつもりになり」＝选项的「理解したと思い」，「避けたい」＝「べきではない」。\n容易错：看到作者批评标题，就选“必须读完正文”，但作者明说只看标题「構わない」。",
+          "en": "Evidence: 「ただ、それだけで分かったつもりになり、人に意見を言うのは避けたい」.\nReasoning: The writer first concedes 「見出しだけを見るのは構わない」, then makes the real point after 「ただ」: don't assume you have understood from the headline alone and voice opinions. 「分かったつもりになり」 = the option's 「理解したと思い」; 「避けたい」 = 「べきではない」.\nTrap: Seeing the criticism of headlines and choosing 'always read the body', although the writer says headlines alone are 「構わない」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "这是忙碌的人的想法（「…というわけだ」），作者用「しかし」指出标题首先是为了吸引目光。",
+            "en": "This is the busy reader's reasoning (「…というわけだ」); after 「しかし」 the writer says a headline is first of all meant to catch the eye."
+          },
+          {
+            "zh": "作者只说网上的标题容易强调刺激的部分，没有说网上的新闻不可信、不该读。",
+            "en": "The writer only says online headlines tend to stress the sensational part, not that online news is untrustworthy or shouldn't be read."
+          },
+          {
+            "zh": "与「時間がないときに見出しだけを見るのは構わない」相反。",
+            "en": "This contradicts 「時間がないときに見出しだけを見るのは構わない」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-220",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "長い休みを取ると同僚に迷惑がかかる、と考えて休暇をためらう人は多い。自分にしかできない仕事を抱えている人ほど、そうだろう。だが、私はむしろ、ある人が休むと仕事が止まってしまう状態のほうが問題だと思う。その人が急に病気になったら、職場はどうなるのか。誰かが休むたびに、仕事の進め方を書き残し、他の人が代わりを務める。それを繰り返すうちに、仕事は個人のものから職場全体のものになっていく。休暇は迷惑どころか、職場を強くする機会だと言える。",
+    "tr": {
+      "zh": "很多人认为休长假会给同事添麻烦，因而对休假犹豫不决。越是手里有只有自己才能做的工作的人，大概越是如此。但是，我反而认为，某个人一休息工作就停下来，这种状态才是问题。那个人要是突然生病了，职场会怎么样呢？每当有人休假，就把工作的做法写下来，由别人来代替。这样反复下去，工作就会从个人的东西变成整个职场的东西。休假哪里是添麻烦，可以说是让职场变强的机会。",
+      "en": "Many people hesitate to take leave, thinking a long holiday will cause trouble for their colleagues. This is probably truer the more someone holds work that only they can do. But I think, rather, that the real problem is a state in which work stops when a certain person is off. What would happen to the workplace if that person suddenly fell ill? Each time someone takes leave, they write down how the work is done and someone else fills in. As this is repeated, work turns from an individual's into the whole workplace's. Far from being a nuisance, leave can be called a chance to make the workplace stronger."
+    },
+    "questions": [
+      {
+        "q": "筆者が最も言いたいことは何か。",
+        "options": [
+          "同僚に迷惑をかけないように、長い休暇はできるだけ避けるべきだ",
+          "自分にしかできない仕事を持っている人ほど、職場で必要とされる",
+          "休暇を取ることは、仕事を職場全体のものにしていくきっかけになる",
+          "急な病気で休まないように、普段から体調に気をつけるべきである"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「それを繰り返すうちに、仕事は個人のものから職場全体のものになっていく。休暇は迷惑どころか、職場を強くする機会だと言える」。\n推理：「だが、私はむしろ」之后是作者的看法：问题在于一个人休息工作就停。每次休假都留下做法、由别人代替，工作就成为大家的，所以休假是「機会」。「機会」＝选项的「きっかけ」。\n容易错：「迷惑どころか」是否定“添麻烦”的说法，不是肯定。",
+          "en": "Evidence: 「それを繰り返すうちに、仕事は個人のものから職場全体のものになっていく。休暇は迷惑どころか、職場を強くする機会だと言える」.\nReasoning: The writer's view follows 「だが、私はむしろ」: the problem is work that stops when one person is away. Each leave means writing the work down and someone else covering, so it becomes everyone's; hence leave is a 「機会」, the option's 「きっかけ」.\nTrap: 「迷惑どころか」 rejects the idea of a nuisance; it does not affirm it."
+        },
+        "wrong": [
+          {
+            "zh": "这是开头许多人的想法，作者用「休暇は迷惑どころか」否定了它。",
+            "en": "This is what many people think in the opening; the writer rejects it with 「休暇は迷惑どころか」."
+          },
+          {
+            "zh": "作者认为一个人休息工作就停的状态「のほうが問題だ」，并没有肯定这种人。",
+            "en": "The writer calls work that stops when one person is off the real problem, and doesn't praise such people."
+          },
+          null,
+          {
+            "zh": "突然生病只是用来说明工作只靠一个人有多危险的假设，文中没有谈健康管理。",
+            "en": "Sudden illness is only a supposition showing the risk of relying on one person; health care isn't discussed."
+          }
+        ]
+      }
+    ]
   }
 ]

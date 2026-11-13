@@ -694,5 +694,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n1-l87-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson87#1"
+    ],
+    "difficulty": 2,
+    "stem": "卒業生諸君が本学での学びを糧にそれぞれの分野で存分に力を発揮し、社会の発展に貢献されることを（　）。",
+    "options": [
+      "心から願うに堪えません",
+      "心から願うまでもありません",
+      "心から願ってやみません",
+      "心から願うにはあたりません"
+    ],
+    "answer": 2,
+    "full": "卒業生諸君が本学での学びを糧にそれぞれの分野で存分に力を発揮し、社会の発展に貢献されることを心から願ってやみません。",
+    "tr": {
+      "zh": "衷心祝愿各位毕业生以在本校所学为基础，在各自的领域充分发挥才能，为社会的发展作出贡献。",
+      "en": "I sincerely hope that each of you graduates will build on what you learned here, make full use of your abilities in your own fields and contribute to the progress of society."
+    },
+    "why": {
+      "zh": "线索：这是对「卒業生諸君」的致辞，「〜ことを」后面要接说话人的祝愿。\n规则：「願う／祈る／期待する＋てやまない」＝衷心……、……不已，表示这种心情一直持续，多用于致辞、书信等郑重场合。\n辨析：「〜に堪えない」表示感情时接名词：「感謝の念に堪えない」「遺憾に堪えない」；接动词时是“不忍……”：「見るに堪えない」。「願うに堪えない」不成立。",
+      "en": "Clue: This is an address to 「卒業生諸君」; after 「〜ことを」 comes the speaker's wish.\nRule: 「願う／祈る／期待する + てやまない」 = sincerely …, never cease to …; the feeling is lasting, and the form belongs to speeches and formal letters.\nContrast: For feelings, 「〜に堪えない」 follows a noun: 「感謝の念に堪えない」「遺憾に堪えない」; after a verb it means \"cannot bear to …\": 「見るに堪えない」. 「願うに堪えない」 doesn't work."
+    },
+    "wrong": [
+      {
+        "zh": "「动词＋に堪えない」是“不忍……、不值得……”，如「見るに堪えない」，不能表示“衷心祝愿”。",
+        "en": "Verb + 「に堪えない」 means \"cannot bear to … / not worth …\", as in 「見るに堪えない」; it can't express a heartfelt wish."
+      },
+      {
+        "zh": "「〜までもない」是“用不着祝愿”，在致辞里意思不通。",
+        "en": "「〜までもない」 means \"there is no need to wish\", which makes no sense in a speech of good wishes."
+      },
+      null,
+      {
+        "zh": "「〜にはあたらない」是“不值得、犯不着……”，如「驚くにはあたらない」，同样和祝愿相反。",
+        "en": "「〜にはあたらない」 means \"there is no call to …\", as in 「驚くにはあたらない」 — again the opposite of a wish."
+      }
+    ]
+  },
+  {
+    "id": "n1-l87-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson87#2"
+    ],
+    "difficulty": 2,
+    "stem": "飲酒運転で事故を起こしておきながら被害者を放置して逃げるとは、無責任（　）行為と言わざるを得ない。",
+    "options": [
+      "ずくめの",
+      "ならではの",
+      "あっての",
+      "極まりない"
+    ],
+    "answer": 3,
+    "full": "飲酒運転で事故を起こしておきながら被害者を放置して逃げるとは、無責任極まりない行為と言わざるを得ない。",
+    "tr": {
+      "zh": "酒后驾车肇事，竟然还丢下受害人逃走，不得不说是极其不负责任的行为。",
+      "en": "To cause an accident while driving drunk and then flee, leaving the victim behind — that can only be called an utterly irresponsible act."
+    },
+    "why": {
+      "zh": "线索：空格前是表示负面评价的な形容词词干「無責任」，后面是「行為」，全句是强烈的谴责。\n规则：「な形容词词干＋極まりない／極まる」＝……至极，多用于「失礼」「危険」「不愉快」「無責任」等负面的词，可以直接修饰名词。\n辨析：「〜ずくめ」接名词，表示“清一色、全是……”：「黒ずくめの服」「いいことずくめ」，说的是从头到尾都是同一种东西，不表示程度。",
+      "en": "Clue: Before the blank is the stem of a negative な-adjective, 「無責任」, and after it 「行為」; the sentence is a strong condemnation.\nRule: な-adjective stem + 「極まりない／極まる」 = extremely, utterly …; mostly with negative words such as 「失礼」「危険」「不愉快」「無責任」, and it can modify a noun directly.\nContrast: 「〜ずくめ」 follows a noun and means \"nothing but …\": 「黒ずくめの服」「いいことずくめ」 — everything being of one kind, not a degree."
+    },
+    "wrong": [
+      {
+        "zh": "「〜ずくめ」接名词，表示“全是……”，如「黒ずくめ」，不接「無責任」来表示程度。",
+        "en": "「〜ずくめ」 follows a noun and means \"all …\", as in 「黒ずくめ」; it doesn't attach to 「無責任」 to express degree."
+      },
+      {
+        "zh": "「〜ならではの」是“只有……才有的”，用来称赞，不用于谴责。",
+        "en": "「〜ならではの」 (\"only … could\") is praise, not condemnation."
+      },
+      {
+        "zh": "「〜あっての」是“有了……才有……”，如「お客様あっての商売」，“有了不负责任才有的行为”说不通。",
+        "en": "「〜あっての」 means \"exists only thanks to …\", as in 「お客様あっての商売」; \"an act that exists thanks to irresponsibility\" makes no sense."
+      },
+      null
+    ]
   }
 ]

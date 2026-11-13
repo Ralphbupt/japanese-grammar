@@ -582,5 +582,85 @@
       null
     ],
     "rev": 2
+  },
+  {
+    "id": "n3-l44-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson44#3"
+    ],
+    "difficulty": 2,
+    "stem": "楽しみにしていた旅行だったが、出発の前の日に子どもが高い熱を出したので、（　）。",
+    "options": [
+      "中止しようとしなかった",
+      "中止せざるを得なかった",
+      "中止するはずがなかった",
+      "中止しないことになった"
+    ],
+    "answer": 1,
+    "full": "楽しみにしていた旅行だったが、出発の前の日に子どもが高い熱を出したので、中止せざるを得なかった。",
+    "tr": {
+      "zh": "本来很期待这次旅行，但出发前一天孩子发了高烧，只好取消了。",
+      "en": "We had been looking forward to the trip, but our child came down with a high fever the day before we were to leave, so we had no choice but to cancel."
+    },
+    "why": {
+      "zh": "线索：「楽しみにしていた」说明不想取消，可是「子どもが高い熱を出したので」：没有别的办法。\n规则：「动词ない形＋ざるを得ない」＝不得不……，表示不愿意但只能这样做。「する」要变成「せざるを得ない」。\n辨析：「中止せざるを得なかった」＝不想取消但只好取消；「中止しようとしなかった」＝没打算取消，和「熱を出したので」的因果关系相反。",
+      "en": "Clue: 「楽しみにしていた」 shows they didn't want to cancel, but 「子どもが高い熱を出したので」: there was no other way.\nRule: Verb ない-stem + 「ざるを得ない」 = \"have no choice but to\", doing something against one's wishes. 「する」 becomes 「せざるを得ない」.\nContrast: 「中止せざるを得なかった」 = cancelled unwillingly; 「中止しようとしなかった」 = made no move to cancel, which goes against the reason 「熱を出したので」."
+    },
+    "wrong": [
+      {
+        "zh": "「ようとしなかった」是“不肯……、没打算……”，孩子发烧了却不肯取消，和「ので」的因果不合。",
+        "en": "「ようとしなかった」 means \"made no attempt to\"; refusing to cancel doesn't follow from the child's fever."
+      },
+      null,
+      {
+        "zh": "「はずがなかった」是“不可能……”，孩子发高烧，反而应该取消。",
+        "en": "「はずがなかった」 means \"there was no way … would\"; a child's high fever is a reason to cancel, not the opposite."
+      },
+      {
+        "zh": "「しないことになった」是“决定不取消”，和孩子发高烧这个原因接不上。",
+        "en": "「しないことになった」 means \"it was decided not to cancel\", which doesn't follow from the fever."
+      }
+    ]
+  },
+  {
+    "id": "n3-l44-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson44#2"
+    ],
+    "difficulty": 2,
+    "stem": "A「どうしてこうなったのか、説明してください。」\nB「すみません。原因が分からないので、今は（　）。」",
+    "options": [
+      "説明するしかありません",
+      "説明せずにはいられません",
+      "説明しようがありません",
+      "説明するおそれがあります"
+    ],
+    "answer": 2,
+    "full": "A「どうしてこうなったのか、説明してください。」\nB「すみません。原因が分からないので、今は説明しようがありません。」",
+    "tr": {
+      "zh": "A：“为什么会变成这样，请说明一下。” B：“对不起。原因不清楚，现在没办法说明。”",
+      "en": "A: \"Please explain why it turned out like this.\" B: \"I'm sorry. We don't know the cause, so there's no way I can explain it now.\""
+    },
+    "why": {
+      "zh": "线索：B先道歉，理由是「原因が分からない」：想说明也没有办法。\n规则：「动词ます形＋ようがない」＝没办法……，表示没有手段、方法，想做也做不了。「説明する」→「説明しようがない」。\n辨析：「説明しようがない」＝没有办法说明；「説明するしかない」＝只能说明（没有别的选择），意思相反。原因都不知道，是“无从说明”。",
+      "en": "Clue: B apologises, and the reason is 「原因が分からない」: even wanting to, B has no means of explaining.\nRule: Verb ます-stem + 「ようがない」 = \"there is no way to …\": the means are lacking. 「説明する」 → 「説明しようがない」.\nContrast: 「説明しようがない」 = there's no way to explain; 「説明するしかない」 = explaining is the only option, the opposite. Without knowing the cause, B simply can't explain."
+    },
+    "wrong": [
+      {
+        "zh": "「するしかない」是“只能说明”，可是原因还不知道，无法说明，也和道歉不合。",
+        "en": "「するしかない」 means \"can only explain\", but without the cause B can't, and it doesn't fit the apology."
+      },
+      {
+        "zh": "「せずにはいられない」是“忍不住要……”，表示控制不住的心情，和「原因が分からないので」接不上。",
+        "en": "「せずにはいられない」 means \"can't help …ing\", an urge; it doesn't follow from 「原因が分からないので」."
+      },
+      null,
+      {
+        "zh": "「おそれがある」是“恐怕会发生（坏事）”，不用来说自己现在能不能做。",
+        "en": "「おそれがある」 warns that something bad may happen; it doesn't say whether one can do something now."
+      }
+    ]
   }
 ]

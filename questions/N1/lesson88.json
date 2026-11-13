@@ -695,5 +695,45 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n1-l88-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson88#6"
+    ],
+    "difficulty": 2,
+    "stem": "通信技術の飛躍的な発達により、今や自宅に（　）世界各地の大学の講義を受けられる時代となった。",
+    "options": [
+      "いながらにして",
+      "いるかたわらで",
+      "いるともなしに",
+      "いるそばから"
+    ],
+    "answer": 0,
+    "full": "通信技術の飛躍的な発達により、今や自宅にいながらにして世界各地の大学の講義を受けられる時代となった。",
+    "tr": {
+      "zh": "随着通信技术的飞速发展，如今已是足不出户就能听到世界各地大学课程的时代。",
+      "en": "Thanks to dramatic advances in communications technology, we now live in an age when one can take lectures from universities around the world without leaving home."
+    },
+    "why": {
+      "zh": "线索：前面是「自宅に」，后面是本来要去现场才能做的事「世界各地の大学の講義を受けられる」。\n规则：「いながらにして」＝人就在原地不动（却能……），是「〜ながらに（して）」（保持……的状态）的固定用法：「家にいながらにして買い物ができる」。\n辨析：「〜かたわら」是“在主业之余兼做……”：「教師をするかたわら、絵を描く」。前面要是长期从事的工作，“待在家里”不是工作。",
+      "en": "Clue: 「自宅に」 comes before the blank and, after it, something you would normally have to travel for: 「世界各地の大学の講義を受けられる」.\nRule: 「いながらにして」 = while staying right where one is (and yet able to …), a set use of 「〜ながらに（して）」 (remaining in a state): 「家にいながらにして買い物ができる」.\nContrast: 「〜かたわら」 means \"alongside one's main work\": 「教師をするかたわら、絵を描く」. It needs a long-term occupation before it, and being at home isn't one."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜かたわら」表示在主业之外兼做别的事，前面要接长期从事的工作，不接「自宅にいる」。",
+        "en": "「〜かたわら」 describes doing something beside one's main work and needs an occupation before it, not 「自宅にいる」."
+      },
+      {
+        "zh": "「〜ともなしに」是“无意中……”，接「見る」「聞く」等有意识的动作，不接「いる」。",
+        "en": "「〜ともなしに」 (\"without really meaning to\") follows deliberate actions like 「見る」「聞く」, not 「いる」."
+      },
+      {
+        "zh": "「〜そばから」是“刚……就又……”，表示反复白费功夫，和这里的意思无关。",
+        "en": "「〜そばから」 means \"no sooner … than … again\", about effort repeatedly undone — unrelated to the meaning here."
+      }
+    ]
   }
 ]

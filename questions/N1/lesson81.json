@@ -696,5 +696,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n1-l81-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#1"
+    ],
+    "difficulty": 3,
+    "stem": "住民一人ひとりの理解と協力なくしては、自治体がいかに立派な防災計画を掲げたところで、到底（　）。",
+    "options": [
+      "実現せずにはおかない",
+      "実現するまでもあるまい",
+      "実現しないものでもない",
+      "実現し得ないであろう"
+    ],
+    "answer": 3,
+    "full": "住民一人ひとりの理解と協力なくしては、自治体がいかに立派な防災計画を掲げたところで、到底実現し得ないであろう。",
+    "tr": {
+      "zh": "没有每一位居民的理解与配合，地方政府提出的防灾计划再漂亮，也终究无法实现吧。",
+      "en": "Without the understanding and cooperation of each resident, however fine a disaster-prevention plan the local government may announce, it can never be realised."
+    },
+    "why": {
+      "zh": "线索：「〜なくしては」后面要接“做不到、不成立”；空格前的「到底」也只和否定搭配。\n规则：「名词＋なくして（は）〜ない」＝没有……就不可能……；「到底〜ない」＝无论如何也不……；「〜得ない」＝不可能……。\n辨析：「〜ないものでもない」形式是否定，意思却是“也不是不能……”：「条件次第では、引き受けないものでもない」。表示有可能，和「なくしては」「到底」都不合。",
+      "en": "Clue: 「〜なくしては」 must lead to \"cannot / does not hold\", and 「到底」 before the blank goes only with a negative.\nRule: noun + 「なくして（は）〜ない」 = without …, … is impossible; 「到底〜ない」 = not by any means; 「〜得ない」 = cannot possibly ….\nContrast: 「〜ないものでもない」 looks negative but means \"it is not impossible that …\": 「条件次第では、引き受けないものでもない」. It expresses possibility, which fits neither 「なくしては」 nor 「到底」."
+    },
+    "wrong": [
+      {
+        "zh": "「〜ずにはおかない」是“必然会实现”，意思是肯定的，和「なくしては」「到底」矛盾。",
+        "en": "「〜ずにはおかない」 means \"is bound to be realised\" — positive in meaning, clashing with 「なくしては」 and 「到底」."
+      },
+      {
+        "zh": "「〜までもない」是“用不着去实现”，说的是没有必要，不是“做不到”。",
+        "en": "「〜までもない」 means \"there is no need to realise it\" — about necessity, not impossibility."
+      },
+      {
+        "zh": "「〜ないものでもない」是“也不是不能实现”，表示有可能，和“没有协助就不行”相反。",
+        "en": "「〜ないものでもない」 means \"it could conceivably be realised\" — the opposite of \"impossible without cooperation\"."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l81-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#6"
+    ],
+    "difficulty": 3,
+    "stem": "限られた予算と人員の中では、（　）、せめて利用者が不安を抱かずに済む水準の安全性は確保しておきたい。",
+    "options": [
+      "万全とは言えないことには",
+      "万全とは言えないまでも",
+      "万全とは言わんばかりに",
+      "万全とは言えないようでは"
+    ],
+    "answer": 1,
+    "full": "限られた予算と人員の中では、万全とは言えないまでも、せめて利用者が不安を抱かずに済む水準の安全性は確保しておきたい。",
+    "tr": {
+      "zh": "在有限的预算和人手下，即使说不上万无一失，至少也想确保能让使用者不必担心的安全水平。",
+      "en": "With a limited budget and staff, even if it can't be called perfect, we want at least to secure a level of safety at which users need not feel uneasy."
+    },
+    "why": {
+      "zh": "线索：后半句有「せめて」（至少），说的是退一步的要求。\n规则：「〜ないまでも、せめて／少なくとも〜」＝即使达不到……，至少也……。前面是较高的程度（万全），后面是退而求其次的程度。\n辨析：「〜ないようでは」是“要是连……都不……的话（就不行）”，后面接否定的评价：「基本もわからないようでは、合格は難しい」，不接「〜ておきたい」这样的愿望。",
+      "en": "Clue: The second half has 「せめて」 (at least) — a fallback demand.\nRule: 「〜ないまでも、せめて／少なくとも〜」 = even if not …, at least …. The higher level (perfect) comes first, the level one settles for after.\nContrast: 「〜ないようでは」 means \"if one can't even …, (that won't do)\" and leads to a negative verdict: 「基本もわからないようでは、合格は難しい」 — not to a wish like 「〜ておきたい」."
+    },
+    "wrong": [
+      {
+        "zh": "「〜ないことには」是“不……的话就（不能）……”，后面要接否定的结果，不和「せめて〜たい」搭配。",
+        "en": "「〜ないことには」 means \"unless …, (cannot) …\" and needs a negative result; it doesn't go with 「せめて〜たい」."
+      },
+      null,
+      {
+        "zh": "「〜と言わんばかりに」是“几乎要说……似的”，描写别人的态度，这里是说话人自己的打算。",
+        "en": "「〜と言わんばかりに」 (\"as if to say …\") describes someone else's attitude; here the speaker is stating their own aim."
+      },
+      {
+        "zh": "「〜ないようでは」后面要接“不行、令人担心”之类的否定评价，不接“至少想确保”。",
+        "en": "「〜ないようでは」 leads to a negative verdict (\"that won't do\"), not to \"we want at least to secure\"."
+      }
+    ]
   }
 ]

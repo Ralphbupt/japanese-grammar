@@ -694,5 +694,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n1-l78-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson78#6"
+    ],
+    "difficulty": 2,
+    "stem": "その成果が世間に評価されようが（　）、研究者は自らの信じる仮説を地道に検証し続けるほかないのである。",
+    "options": [
+      "されるなり",
+      "されまいが",
+      "されるだの",
+      "されずとも"
+    ],
+    "answer": 1,
+    "full": "その成果が世間に評価されようがされまいが、研究者は自らの信じる仮説を地道に検証し続けるほかないのである。",
+    "tr": {
+      "zh": "不管成果是否得到社会的认可，研究者都只能踏踏实实地继续验证自己相信的假说。",
+      "en": "Whether or not the results win public recognition, a researcher can only go on patiently testing the hypothesis he or she believes in."
+    },
+    "why": {
+      "zh": "线索：空格前是意向形＋が的「評価されようが」，后面说“只能继续做”，结果不受前面影响。\n规则：「〜（よ）うが〜まいが」＝不管……还是不……，同一个动词的意向形和「まい」成对出现；后一半也用「が」：「されようがされまいが」。\n辨析：「〜なり〜なり」是“或者……或者……，总之选一个去做”，用于建议：「電話するなりメールするなり、連絡してください」。",
+      "en": "Clue: Before the blank is a volitional form + が, 「評価されようが」, and what follows (\"can only keep going\") is unaffected by it.\nRule: 「〜（よ）うが〜まいが」 = whether … or not; the volitional form and 「まい」 of the same verb come as a pair, the second half also ending in 「が」: 「されようがされまいが」.\nContrast: 「〜なり〜なり」 means \"either … or …, just do one of them\" and is used for suggestions: 「電話するなりメールするなり、連絡してください」."
+    },
+    "wrong": [
+      {
+        "zh": "「〜なり〜なり」前后都接辞书形，不能和「評価されようが」配对，意思也是让人二选一。",
+        "en": "「〜なり〜なり」 takes the dictionary form on both sides, so it can't pair with 「評価されようが」; it also means \"choose one\"."
+      },
+      null,
+      {
+        "zh": "「〜だの〜だの」用来不满地列举别人说的话，同样不能和「〜ようが」配对。",
+        "en": "「〜だの〜だの」 lists things (usually what someone says) with annoyance, and likewise can't pair with 「〜ようが」."
+      },
+      {
+        "zh": "「〜ずとも」是“即使不……也”，单独使用，不能接在「〜ようが」后面组成“不管是否”。",
+        "en": "「〜ずとも」 (even without …) stands alone; it can't follow 「〜ようが」 to make \"whether or not\"."
+      }
+    ]
+  },
+  {
+    "id": "n1-l78-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson78#4"
+    ],
+    "difficulty": 2,
+    "stem": "たとえ善意から出た行為（　）、当事者の同意を得ずに個人情報を第三者に提供することは許されない。",
+    "options": [
+      "であれ",
+      "とあって",
+      "なりに",
+      "ともなると"
+    ],
+    "answer": 0,
+    "full": "たとえ善意から出た行為であれ、当事者の同意を得ずに個人情報を第三者に提供することは許されない。",
+    "tr": {
+      "zh": "即使是出于善意的行为，未经当事人同意就把个人信息提供给第三方也是不允许的。",
+      "en": "Even if it is done with good intentions, providing personal information to a third party without the consent of the person concerned is not permitted."
+    },
+    "why": {
+      "zh": "线索：句首的「たとえ」要和表示让步的形式呼应，后面的结论是「許されない」。\n规则：「（たとえ）名词＋であれ」＝即使是……也……，书面语，相当于「〜であっても」，后面的判断不因前项而改变。\n辨析：「〜とあって」表示原因，“因为是……这种特殊情况，所以……”：「連休とあって、道路が混んでいる」。它不和「たとえ」搭配。",
+      "en": "Clue: 「たとえ」 at the start needs a concessive form to answer it, and the conclusion is 「許されない」.\nRule: 「（たとえ）noun + であれ」 = even if it is …, a written equivalent of 「〜であっても」; the judgement that follows holds regardless.\nContrast: 「〜とあって」 gives a cause, \"because it is such a special situation\": 「連休とあって、道路が混んでいる」. It doesn't go with 「たとえ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜とあって」表示原因，不能和「たとえ」呼应，“因为是善意的行为所以不允许”也说不通。",
+        "en": "「〜とあって」 gives a cause and can't answer 「たとえ」; \"because it is well-meant, it is not permitted\" makes no sense."
+      },
+      {
+        "zh": "「〜なりに」是“以……相应的方式、尽其所能地”，如「子どもなりに考える」，不表示让步，也不和「たとえ」搭配。",
+        "en": "「〜なりに」 means \"in a way befitting …\", as in 「子どもなりに考える」; it isn't concessive and doesn't go with 「たとえ」."
+      },
+      {
+        "zh": "「〜ともなると」是“到了……这种程度自然就……”，不表示让步，也不和「たとえ」搭配。",
+        "en": "「〜ともなると」 means \"once it gets to the level of …, naturally …\"; it isn't concessive and doesn't go with 「たとえ」."
+      }
+    ]
   }
 ]

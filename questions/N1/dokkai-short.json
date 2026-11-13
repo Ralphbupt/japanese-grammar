@@ -329,5 +329,251 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n1-dk-209",
+    "type": "short",
+    "difficulty": 3,
+    "passage": "科学者が「現時点では断定できない」と述べると、頼りないと受け取る人が少なくない。確かに、白か黒かをはっきり示してほしいという気持ちは理解できる。しかし、科学の知見とは、得られた証拠の範囲内でどこまで言えるかを示したものにすぎず、新たな事実が見つかれば書き換えられることを前提としている。だとすれば、分からないことを分からないと明言する態度は、無責任どころか、むしろ誠実さの表れであろう。警戒すべきは、不確かさを語る者ではなく、不確かなことを確実であるかのように語る者のほうである。",
+    "tr": {
+      "zh": "科学家一说“现阶段无法断定”，不少人就觉得靠不住。的确，希望对方把是非黑白说清楚的心情可以理解。但是，科学上的见解，不过是表明在已获得的证据范围内能说到什么程度，并且以一旦发现新的事实就会被改写为前提。既然如此，把不知道的事明说为不知道的态度，非但不是不负责任，反而是诚实的表现吧。应当警惕的，不是谈论不确定性的人，而是把不确定的事说得好像确凿无疑的人。",
+      "en": "When a scientist says \"at this point we cannot say for certain\", quite a few people take it as unreliable. Certainly, the wish to be shown clearly whether something is black or white is understandable. But a scientific finding is no more than a statement of how much can be said within the evidence obtained, and it presupposes being rewritten once new facts are found. If so, the attitude of stating plainly that one does not know what one does not know is far from irresponsible; it is surely rather a mark of honesty. The ones to be wary of are not those who speak of uncertainty, but those who speak of uncertain things as if they were certain."
+    },
+    "questions": [
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "options": [
+          "科学者は、人々の不安を除くために白黒をはっきり示すよう努めるべきだ。",
+          "不確かさを率直に認める姿勢は誠実であり、根拠なく断言する者こそ疑わしい。",
+          "科学の知見はいずれ書き換えられるので、現時点の説明は信用に値しない。",
+          "不確かさを認める科学者は誠実だが、その発言は断言する者ほどには頼りにならない。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「分からないことを分からないと明言する態度は、無責任どころか、むしろ誠実さの表れであろう」；「警戒すべきは…不確かなことを確実であるかのように語る者のほうである」\n推理：「確かに」后是让步，「しかし」以后才是笔者的看法。「AどころかむしろB」否定“不负责任”、肯定“诚实”；末句「AではなくBのほう」指出该警惕的是把不确定说成确定的人，即选项的「根拠なく断言する者」。\n容易错：把「確かに…理解できる」的让步当成主张。理解那种心情，不等于赞成科学家应当说得黑白分明。",
+          "en": "Evidence: 「分からないことを分からないと明言する態度は、無責任どころか、むしろ誠実さの表れであろう」; 「警戒すべきは…不確かなことを確実であるかのように語る者のほうである」.\nReasoning: What follows 「確かに」 is a concession; the writer's own view starts at 「しかし」. 「AどころかむしろB」 denies \"irresponsible\" and affirms \"honest\"; the last sentence, 「AではなくBのほう」, says the people to distrust are those who present the uncertain as certain, the option's 「根拠なく断言する者」.\nTrap: Taking the concession 「確かに…理解できる」 as the claim. Understanding the wish is not agreeing that scientists should give black-and-white answers."
+        },
+        "wrong": [
+          {
+            "zh": "想要黑白分明的心情，笔者只说「理解できる」；笔者认为明说“不知道”才是诚实，并不主张科学家应当给出明确结论。",
+            "en": "The writer only calls the wish for a clear answer 「理解できる」; stating that one doesn't know is what the writer calls honest, not giving black-and-white answers."
+          },
+          null,
+          {
+            "zh": "文中说见解以「書き換えられることを前提としている」，这是科学的性质，并没有由此说现在的说明不可信。",
+            "en": "Findings 「書き換えられることを前提としている」 describes how science works; the text never concludes that present explanations can't be trusted."
+          },
+          {
+            "zh": "前半符合原文，后半不符：觉得这样的科学家「頼りない」是一般人的反应，笔者认为该警惕的反而是把不确定说成确定的人。",
+            "en": "The first half fits, the second does not: finding such scientists 「頼りない」 is the public's reaction, and for the writer the ones to be wary of are those who present the uncertain as certain."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-210",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "「全然大丈夫」のような言い方を耳にして、言葉の乱れを嘆く人は後を絶たない。確かに、慣れ親しんだ用法から外れた表現に違和感を覚えるのは自然なことだ。だが、今日われわれが正しいと信じて疑わない語法の中にも、かつては誤用として非難されたものが少なくない。言葉は、使う人々の間で通じ合うかぎり、形を変えながら生き続けていくものだ。変化を乱れと断じる前に、なぜその言い方が広まったのか、従来の表現では言い表せなかった何を担っているのかを問うほうが、はるかに実りがあるのではないか。",
+    "tr": {
+      "zh": "听到“全然大丈夫”这类说法而感叹语言混乱的人，一直没有断过。的确，对偏离了自己用惯的用法的表达感到别扭，是很自然的事。但是，在今天我们深信不疑地认为正确的用法当中，也有不少曾被当作误用而受到指责。语言只要在使用者之间还能相互沟通，就会一边改变形态一边存续下去。在把变化断定为混乱之前，先去问一问那种说法为什么会流行开来、它承担着原有表达无法表达的什么东西，不是要有收获得多吗？",
+      "en": "There is no end of people who hear expressions like 「全然大丈夫」 and lament the decay of the language. Certainly, it is natural to feel uneasy about an expression that departs from the usage one is used to. But among the usages we now believe correct without a second thought, not a few were once condemned as mistakes. As long as its users can still understand one another, a language lives on, changing its shape as it goes. Before judging a change to be decay, would it not be far more fruitful to ask why that way of speaking spread, and what it carries that the older expressions could not express?"
+    },
+    "questions": [
+      {
+        "q": "言葉の変化について、筆者はどのように述べているか。",
+        "options": [
+          "慣れた用法から外れた表現への違和感は、言葉を守るうえで大切にすべきだ。",
+          "かつて誤用とされた語法も定着した以上、言葉に正誤の区別を設けるべきではない。",
+          "かつて誤用とされた語法は、今日でも多くの人に違和感を与え続けている。",
+          "乱れと決めつけるより、新しい表現が広まった理由や役割を考えるほうが有益だ。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「変化を乱れと断じる前に、なぜその言い方が広まったのか、従来の表現では言い表せなかった何を担っているのかを問うほうが、はるかに実りがあるのではないか」\n推理：句末「〜のではないか」是委婉的主张。「乱れと断じる」＝断定为混乱，「なぜ広まったのか」＝流行的理由，「何を担っているのか」＝承担的作用，「実りがある」＝有益，选项逐项换了说法。\n容易错：「確かに…自然なことだ」只是承认感到别扭很自然，「だが」以后话锋一转，那不是笔者要说的重点。",
+          "en": "Evidence: 「変化を乱れと断じる前に、なぜその言い方が広まったのか、従来の表現では言い表せなかった何を担っているのかを問うほうが、はるかに実りがあるのではないか」.\nReasoning: The ending 「〜のではないか」 is a softened claim. 「乱れと断じる」 = write it off as decay, 「なぜ広まったのか」 = the reason it spread, 「何を担っているのか」 = the role it plays, 「実りがある」 = worthwhile; the option rewords each part.\nTrap: 「確かに…自然なことだ」 only grants that the unease is natural; after 「だが」 the argument turns, so that is not the writer's point."
+        },
+        "wrong": [
+          {
+            "zh": "笔者只承认感到别扭是「自然なこと」，没有说应当珍视它；接下来的「だが」反而主张不要急着断定为混乱。",
+            "en": "The writer only grants that the unease is 「自然なこと」, not that it should be valued; after 「だが」 the argument is against hastily calling change decay."
+          },
+          {
+            "zh": "笔者举曾被指为误用的用法，是为了说明不要急于断定「乱れ」，并没有说到取消正误之分这一步。",
+            "en": "The once-condemned usages are cited to warn against hastily crying 「乱れ」; the text never goes as far as abolishing right and wrong."
+          },
+          {
+            "zh": "文中说这些用法如今被「正しいと信じて疑わない」，早已不让人觉得别扭；让人别扭的是「全然大丈夫」这类新出现的说法。",
+            "en": "The text says those usages are now ones we 「正しいと信じて疑わない」, so they no longer jar; what jars is a newer expression like 「全然大丈夫」."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-211",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "再開発で生まれ変わった街は、どこも清潔で機能的である。段差はなくなり、案内表示は整い、迷う余地がない。安全や利便性の面で、これが進歩であることは疑いない。しかし、そうした街を歩いていて、ふと物足りなさを覚えるのは私だけではあるまい。曲がりくねった路地や使い道の定まらない空き地は、効率の面では無駄でしかないが、人が足を止め、誰かと言葉を交わすのは、えてしてそういう場所である。無駄を削ぎ落とすことに熱心なあまり、街が人を引き留める力まで削いではいないか、立ち止まって考えたい。",
+    "tr": {
+      "zh": "经过再开发而焕然一新的街区，无论哪里都干净而且功能齐全。台阶高差没有了，指示牌整齐完备，没有迷路的余地。在安全和便利方面，这无疑是进步。但是，走在这样的街上忽然觉得少了点什么的，恐怕不只是我一个人吧。弯弯曲曲的小巷、用途不明的空地，从效率的角度看只是浪费，可人们停下脚步、和谁聊上几句的，往往正是这样的地方。我们是不是因为太热衷于削去无用之物，连街区留住人的力量也一并削掉了？我想停下来想一想。",
+      "en": "Districts reborn through redevelopment are all clean and functional. The steps are gone, the signs are in order, and there is no room to get lost. In terms of safety and convenience this is beyond doubt progress. Yet I am surely not the only one who, walking through such a district, suddenly feels something is missing. Winding alleys and vacant lots with no clear use are nothing but waste from the standpoint of efficiency, but it tends to be in just such places that people stop and exchange a few words with someone. In our eagerness to strip away waste, are we not also stripping away the town's power to make people linger? I want to pause and think about it."
+    },
+    "questions": [
+      {
+        "q": "「物足りなさを覚える」とあるが、筆者がそう感じるのはなぜか。",
+        "options": [
+          "無駄が削られた街には、人が足を止め、言葉を交わすような場所が乏しいから",
+          "段差をなくし案内表示を整えても、安全や利便性はまだ十分とは言えないから",
+          "路地や空き地があちこちに残り、効率の面でなお無駄が多いと感じられるから",
+          "案内表示ばかりが目につくようになり、街の景観がかえって損なわれているから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「人が足を止め、誰かと言葉を交わすのは、えてしてそういう場所である」；「街が人を引き留める力まで削いではいないか」\n推理：理由不在「物足りなさ」那一句里，而在后面。弯曲的小巷、用途不定的空地从效率看是「無駄」，却正是人们停步交谈的地方；再开发把这些削掉了，街区留不住人，所以觉得少了点什么。\n容易错：「しかし」前面列举的台阶、指示牌、安全便利，是笔者承认的进步，不是觉得不足的原因。",
+          "en": "Evidence: 「人が足を止め、誰かと言葉を交わすのは、えてしてそういう場所である」; 「街が人を引き留める力まで削いではいないか」.\nReasoning: The reason is not in the 「物足りなさ」 sentence but after it. Winding alleys and lots with no fixed use are 「無駄」 in terms of efficiency, yet they are where people stop and talk; redevelopment has cut them away, the town no longer holds people, and so something feels missing.\nTrap: The steps, signs, safety and convenience listed before 「しかし」 are progress the writer accepts, not the cause of the feeling."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "笔者说在安全和便利方面「これが進歩であることは疑いない」，并不觉得这方面不够。",
+            "en": "On safety and convenience the writer says 「これが進歩であることは疑いない」; nothing is found lacking there."
+          },
+          {
+            "zh": "正相反：小巷和空地是再开发后的街区里被削掉的东西，笔者看重的正是这些「無駄」。",
+            "en": "The reverse: alleys and empty lots are what the redeveloped town has lost, and the writer values exactly that 「無駄」."
+          },
+          {
+            "zh": "文中只说指示牌「整い」、不会迷路，属于进步的一面，没有说它破坏景观。",
+            "en": "The text says only that the signs are 「整い」 and nobody gets lost, which is on the progress side; spoiling the townscape is never mentioned."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-212",
+    "type": "short",
+    "difficulty": 3,
+    "passage": "熟練者の判断は、勘や直感と呼ばれ、根拠の乏しいものと見なされがちである。手順を明文化し、誰が行っても同じ結果が出ることが重んじられる昨今では、なおさらだ。確かに、標準化は品質のばらつきを抑えるうえで有効である。しかし、熟練者の直感とは、膨大な経験の中で培われた判断が、本人にも説明しきれないほど凝縮されたものにほかならない。言葉にできないからといって、根拠がないわけではないのだ。手順書に書き込めるものだけを技能と見なすなら、我々は仕事の最も肝心な部分を取りこぼすことになろう。",
+    "tr": {
+      "zh": "熟练者的判断被称为“感觉”或“直觉”，容易被看作缺乏根据的东西。在重视把步骤写成明文、让谁来做都能得到同样结果的今天，就更是如此。的确，标准化在抑制质量参差不齐方面是有效的。但是，熟练者的直觉，正是在大量经验中培养出来的判断，浓缩到了连本人也说明不尽的程度。不能因为无法用语言表达，就说它没有根据。如果只把能写进操作手册的东西看作技能，我们就会漏掉工作中最关键的部分吧。",
+      "en": "The judgement of a seasoned worker is called a hunch or intuition and tends to be regarded as poorly grounded. All the more so these days, when what is valued is writing procedures down so that the same result is obtained whoever does the job. Certainly, standardisation is effective in keeping variation in quality down. But a seasoned worker's intuition is nothing other than judgement cultivated through vast experience, condensed to the point where even the person cannot fully explain it. That it cannot be put into words does not mean it has no basis. If we regard as skill only what can be written into a manual, we will end up letting the most essential part of the work slip through our fingers."
+    },
+    "questions": [
+      {
+        "q": "「仕事の最も肝心な部分を取りこぼす」とあるが、何を取りこぼすというのか。",
+        "options": [
+          "誰が行っても同じ結果が出るように、文章の形で定められた作業の手順",
+          "標準化を進めることによって抑えられてきた、仕事の品質のばらつき",
+          "長年の経験を通じて培われ、本人にも言葉では説明しきれない判断の力",
+          "熟練者が自らの判断の根拠を言葉にして、周囲の人々に伝えていく機会"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「手順書に書き込めるものだけを技能と見なすなら」；「熟練者の直感とは、膨大な経験の中で培われた判断が、本人にも説明しきれないほど凝縮されたものにほかならない」\n推理：只把写得进手册的算作技能，漏掉的自然是写不进手册的东西。前文说无法用语言表达的，正是熟练者的直觉，也就是在经验中培养出来的判断；笔者把它看作工作中最关键的部分。\n容易错：写成明文的步骤恰恰是手册里已有的东西，不会被漏掉。",
+          "en": "Evidence: 「手順書に書き込めるものだけを技能と見なすなら」; 「熟練者の直感とは、膨大な経験の中で培われた判断が、本人にも説明しきれないほど凝縮されたものにほかならない」.\nReasoning: If only what fits in a manual counts as skill, what slips through is what cannot be written there. The text has just said that what cannot be put into words is the expert's intuition, i.e. judgement built up through experience; the writer treats it as the most essential part of the work.\nTrap: Written-down procedures are exactly what the manual already holds, so they are not what gets lost."
+        },
+        "wrong": [
+          {
+            "zh": "写成明文的步骤正是「手順書に書き込めるもの」，是被保留下来的一方，不是被漏掉的。",
+            "en": "Written procedures are precisely 「手順書に書き込めるもの」, the part that is kept, not the part that is lost."
+          },
+          {
+            "zh": "质量的参差是标准化要抑制的对象（「品質のばらつきを抑える」），不是工作中关键的部分。",
+            "en": "Variation in quality is what standardisation suppresses (「品質のばらつきを抑える」), not an essential part of the work."
+          },
+          null,
+          {
+            "zh": "文中说直觉是「本人にも説明しきれない」的，没有提到把根据说出来传达给别人的机会。",
+            "en": "Intuition is 「本人にも説明しきれない」; an occasion for experts to put their grounds into words for others is not in the text."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-213",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "美術館では、作品よりも先に解説文を読む人をよく見かける。作者の経歴や制作の背景を知れば、理解が深まることは否定しない。けれども、知識を得たうえで眺めるとき、私たちは往々にして、解説に書かれていたことを作品の中に確認しているだけではないだろうか。予備知識を持たずに絵の前に立ち、なぜか目が離せない、あるいは落ち着かないといった、言葉になる以前の反応にまず身を委ねてみる。解説を読むのはそれからでも遅くはない。鑑賞の出発点は、知ることではなく、自分が何を感じたかにあると私は考える。",
+    "tr": {
+      "zh": "在美术馆里，常常能看到先读解说文字、后看作品的人。我不否认，了解了作者的经历和创作背景，理解会加深。可是，带着知识去看的时候，我们往往不过是在作品里确认解说上写过的内容吧。不带预备知识站到画前，不知为什么移不开眼睛，或者静不下心来——先试着把自己交给这种尚未成为语言的反应。读解说，在那之后也不迟。我认为，鉴赏的出发点不在于知道什么，而在于自己感受到了什么。",
+      "en": "In art museums one often sees people reading the caption before looking at the work. I do not deny that knowing the artist's career and the background to the work deepens understanding. But when we look after acquiring that knowledge, are we not, more often than not, merely confirming in the work what the caption said? Stand before a painting with no prior knowledge and first give yourself over to the reactions that come before words: for some reason you cannot look away, or you feel uneasy. It is not too late to read the caption after that. The starting point of appreciation, I believe, lies not in knowing but in what you yourself felt."
+    },
+    "questions": [
+      {
+        "q": "美術作品の鑑賞について、筆者はどのように述べているか。",
+        "options": [
+          "まず自分の感覚で作品と向き合い、知識を得るのはその後にするのがよい。",
+          "作者や制作背景の知識は先入観を生むだけなので、解説文は読むべきではない。",
+          "解説を読んで背景を理解してから作品を見て、初めて本当の鑑賞ができる。",
+          "作品を見て感じたことを言葉にして確かめることが、鑑賞の出発点になる。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「言葉になる以前の反応にまず身を委ねてみる。解説を読むのはそれからでも遅くはない」；「鑑賞の出発点は、知ることではなく、自分が何を感じたかにある」\n推理：「理解が深まることは否定しない」是让步，「けれども」以后是主张。「まず…それからでも遅くはない」给出了先后顺序：先感受，后读解说；末句「AではなくB」再次强调出发点是感受。\n容易错：笔者只是把读解说往后放，并没有否定知识；把“往后放”读成“不要读”，就说过头了。",
+          "en": "Evidence: 「言葉になる以前の反応にまず身を委ねてみる。解説を読むのはそれからでも遅くはない」; 「鑑賞の出発点は、知ることではなく、自分が何を感じたかにある」.\nReasoning: 「理解が深まることは否定しない」 is a concession; the claim follows 「けれども」. 「まず…それからでも遅くはない」 sets an order: feel first, read the caption afterwards; the last sentence's 「AではなくB」 stresses again that feeling is the starting point.\nTrap: The writer only moves the caption later and does not reject knowledge; reading \"later\" as \"don't read\" overstates it."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "笔者说了解背景「理解が深まることは否定しない」，还说读解说「それからでも遅くはない」，并不反对读。",
+            "en": "The writer says 「理解が深まることは否定しない」 and that reading the caption 「それからでも遅くはない」, so reading it is not rejected."
+          },
+          {
+            "zh": "顺序相反：笔者认为先读解说再看，往往只是在作品里确认解说的内容，主张先不带知识去看。",
+            "en": "The order is reversed: looking after reading tends to be mere confirmation of the caption, and the writer wants us to look without knowledge first."
+          },
+          {
+            "zh": "笔者说的是先把自己交给「言葉になる以前の反応」，不是把感受说成语言来确认。",
+            "en": "The writer speaks of giving oneself over to 「言葉になる以前の反応」, not of putting feelings into words to check them."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-214",
+    "type": "short",
+    "difficulty": 3,
+    "passage": "歴史とは過去の事実の記録である、と一般には考えられている。しかし、過去の出来事は無数にあり、そのすべてを書き留めることなど到底できない。何を記し、何を省くかを決めるのは、常に後世の人間であり、そこにはその時代の関心や価値観が否応なく入り込む。とはいえ、これは歴史が恣意的な作り話にすぎないということではない。史料という動かしがたい制約がある以上、好き勝手に語ることは許されないからだ。歴史とは、史料に縛られつつ、各時代が自らの問いに応じて過去を描き直していく作業なのである。",
+    "tr": {
+      "zh": "一般认为，历史就是对过去事实的记录。但是，过去发生的事情不计其数，根本不可能全部记下来。决定记什么、略去什么的，永远是后世的人，其中不可避免地会掺入那个时代的关注点和价值观。话虽如此，这并不是说历史只不过是随意编造的故事。因为既然有史料这一不可动摇的制约，就不允许随心所欲地讲述。历史，是在史料的约束之下，每个时代按照自己的问题不断重新描绘过去的工作。",
+      "en": "History, it is generally thought, is a record of the facts of the past. But the events that happened in the past are countless, and writing all of them down is simply impossible. It is always people of a later age who decide what to record and what to leave out, and the concerns and values of that age inevitably enter into the choice. That said, this does not mean history is merely an arbitrary fabrication. As long as there is the immovable constraint of the sources, one is not free to tell it however one pleases. History is the work in which each age, bound by the sources, keeps redrawing the past in response to its own questions."
+    },
+    "questions": [
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "options": [
+          "歴史は、過去に起きた出来事を余すところなく書き留めた事実の記録である。",
+          "歴史は、後世の価値観で選ばれた記述である以上、作り話と本質的に変わらない。",
+          "歴史は、史料に反しない範囲で、時代ごとの関心に沿って書き改められていく。",
+          "史料さえ十分に残っていれば、時代の価値観に左右されない歴史が書ける。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「史料という動かしがたい制約がある以上、好き勝手に語ることは許されない」；「歴史とは、史料に縛られつつ、各時代が自らの問いに応じて過去を描き直していく作業なのである」\n推理：文章有两次转折：「しかし」否定“历史＝事实的记录”，「とはいえ」又否定“历史＝编造”。结论同时保留两面：「史料に縛られつつ」＝不能违背史料，「各時代が自らの問いに応じて」＝按各时代的关注，「描き直していく」＝不断被改写。\n容易错：只读到「その時代の関心や価値観が否応なく入り込む」就下结论，漏掉「とはいえ」之后的限定。",
+          "en": "Evidence: 「史料という動かしがたい制約がある以上、好き勝手に語ることは許されない」; 「歴史とは、史料に縛られつつ、各時代が自らの問いに応じて過去を描き直していく作業なのである」.\nReasoning: The text turns twice: 「しかし」 rejects \"history = a record of facts\", and 「とはいえ」 rejects \"history = fabrication\". The conclusion keeps both sides: 「史料に縛られつつ」 = it cannot go against the sources, 「各時代が自らの問いに応じて」 = following each age's concerns, 「描き直していく」 = it keeps being rewritten.\nTrap: Stopping at 「その時代の関心や価値観が否応なく入り込む」 and missing the limit set after 「とはいえ」."
+        },
+        "wrong": [
+          {
+            "zh": "这是开头「一般には考えられている」的看法；笔者随即说全部记下来「到底できない」。",
+            "en": "This is the view that 「一般には考えられている」; the writer at once says writing everything down is 「到底できない」."
+          },
+          {
+            "zh": "笔者明确否定：「歴史が恣意的な作り話にすぎないということではない」。",
+            "en": "The writer explicitly denies it: 「歴史が恣意的な作り話にすぎないということではない」."
+          },
+          null,
+          {
+            "zh": "文中说时代的价值观「否応なく入り込む」，史料只是防止随意讲述的制约，不能排除价值观的影响。",
+            "en": "The values of the age 「否応なく入り込む」; sources only prevent arbitrary telling and cannot remove that influence."
+          }
+        ]
+      }
+    ]
   }
 ]

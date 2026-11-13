@@ -619,5 +619,125 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l64-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson64#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「今度の土曜日も出勤なんだって？」\nB「うん。本当は休みたいんだけど、担当している取引先の式典だから、（　）んだ。」",
+    "options": [
+      "出席せずにはいられない",
+      "出席しなくてもかまわない",
+      "出席しないわけにはいかない",
+      "出席するわけにはいかない"
+    ],
+    "answer": 2,
+    "full": "A「今度の土曜日も出勤なんだって？」\nB「うん。本当は休みたいんだけど、担当している取引先の式典だから、出席しないわけにはいかないんだ。」",
+    "tr": {
+      "zh": "A：“听说你这周六也要上班？”\nB：“嗯。其实很想休息，可那是我负责的客户的典礼，不能不出席啊。”",
+      "en": "A: \"I hear you're working this Saturday too?\"\nB: \"Yeah. I'd really like the day off, but it's a ceremony for a client I'm in charge of, so I can't very well not attend.\""
+    },
+    "why": {
+      "zh": "线索：「本当は休みたいんだけど」说明心里不想去；「担当している取引先…だから」是从立场上非去不可的理由。\n规则：「ない形（出席し）＋ないわけにはいかない」＝出于责任、情理，不能不做。\n辨析：「〜ずにはいられない」也译成“不能不”，但那是感情上忍不住（「泣かずにはいられない」），是自己想做；这里是不想做却有义务。",
+      "en": "Clue: 「本当は休みたいんだけど」 shows he doesn't want to go; 「担当している取引先…だから」 is why his position obliges him to.\nRule: ない-form ＋ 「ないわけにはいかない」 = can't not do it, out of duty or social sense.\nContrast: 「〜ずにはいられない」 is also \"can't help but\", but from feeling (「泣かずにはいられない」), something one is drawn to do; here he doesn't want to and is obliged."
+    },
+    "wrong": [
+      {
+        "zh": "「〜ずにはいられない」是感情上“忍不住要……”，和「本当は休みたい」矛盾。",
+        "en": "「〜ずにはいられない」 is an urge one can't hold back, which contradicts 「本当は休みたい」."
+      },
+      {
+        "zh": "「〜なくてもかまわない」是“不……也行”，那就不必周六上班了，和对话不合。",
+        "en": "「〜なくてもかまわない」 (it's fine not to) would mean no need to work on Saturday, against the dialogue."
+      },
+      null,
+      {
+        "zh": "「出席するわけにはいかない」是“不能出席”，意思反了：他是不能不去。",
+        "en": "「出席するわけにはいかない」 means \"I can't attend\", the reverse: he can't stay away."
+      }
+    ]
+  },
+  {
+    "id": "n2-l64-018",
+    "type": "bunpou",
+    "refs": [
+      "lesson64#5"
+    ],
+    "difficulty": 2,
+    "stem": "終電に乗り遅れたうえに、タクシー乗り場にも長い列ができていたので、家まで一時間かけて（　）。",
+    "options": [
+      "歩いて帰るわけがなかった",
+      "歩いて帰るよりほかなかった",
+      "歩いて帰ることはなかった",
+      "歩いて帰るどころではなかった"
+    ],
+    "answer": 1,
+    "full": "終電に乗り遅れたうえに、タクシー乗り場にも長い列ができていたので、家まで一時間かけて歩いて帰るよりほかなかった。",
+    "tr": {
+      "zh": "没赶上末班电车，出租车站又排着长队，只好花一个小时走回家。",
+      "en": "I missed the last train, and on top of that there was a long queue at the taxi stand, so I had no choice but to walk home, which took an hour."
+    },
+    "why": {
+      "zh": "线索：「終電に乗り遅れた」「タクシー乗り場にも長い列」，别的办法一个个都没了，「ので」后面是剩下的唯一办法。\n规则：「辞书形（帰る）＋（より）ほかない」＝没有别的办法，只好……。\n辨析：「〜どころではない」＝根本谈不上做……，是连做的余地都没有；「〜ほかない」是别的都不行，只能做这个。两者一个不做，一个只好做。",
+      "en": "Clue: 「終電に乗り遅れた」 and 「タクシー乗り場にも長い列」: the other ways are gone one by one, and after 「ので」 comes the only one left.\nRule: dictionary form (「帰る」) ＋ 「（より）ほかない」 = there is nothing for it but to…\nContrast: 「〜どころではない」 = in no position to do… at all; 「〜ほかない」 = nothing else works, so one does this. One ends in not doing, the other in having to do."
+    },
+    "wrong": [
+      {
+        "zh": "「〜わけがない」是“不可能……”的判断，不能用来讲自己实际做了的事。",
+        "en": "「〜わけがない」 judges that something is impossible; it can't describe what one actually did."
+      },
+      null,
+      {
+        "zh": "「〜ことはない」是“没必要……”，没有电车也坐不上出租车，却说没必要走，前后不通。",
+        "en": "「〜ことはない」 means \"no need to\"; with no train and no taxi, \"no need to walk\" doesn't follow."
+      },
+      {
+        "zh": "「〜どころではない」是“哪谈得上……”，前面的理由说的正是只能走路，意思相反。",
+        "en": "「〜どころではない」 (no situation for…) says the opposite of what the reasons lead to: walking was all that was left."
+      }
+    ]
+  },
+  {
+    "id": "n2-l64-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson64#4"
+    ],
+    "difficulty": 2,
+    "stem": "この書類は昨日、私が自分の手で金庫に入れて鍵をかけたのだから、ほかの社員が勝手に（　）。",
+    "options": [
+      "持ち出せるはずがない",
+      "持ち出さないはずがない",
+      "持ち出すよりほかない",
+      "持ち出すわけにはいかない"
+    ],
+    "answer": 0,
+    "full": "この書類は昨日、私が自分の手で金庫に入れて鍵をかけたのだから、ほかの社員が勝手に持ち出せるはずがない。",
+    "tr": {
+      "zh": "这份文件是昨天我亲手放进保险柜上了锁的，别的员工不可能擅自拿出去。",
+      "en": "I put this document in the safe and locked it with my own hands yesterday, so there is no way another employee could have taken it out without permission."
+    },
+    "why": {
+      "zh": "线索：「鍵をかけたのだから」是说话人有把握的根据，后面是由此得出的判断。\n规则：「普通形＋はずがない」＝按道理不可能……；这里接可能形「持ち出せる」＝不可能拿得出去。\n辨析：「〜わけにはいかない」＝（我）出于情理不能做……，说的是自己该不该做，不是推断别人的事有没有可能：「大事な会議だから、休むわけにはいかない」。",
+      "en": "Clue: 「鍵をかけたのだから」 is firm ground the speaker has, and a judgement drawn from it follows.\nRule: plain form ＋ 「はずがない」 = by all reason it can't be that…; here on the potential 「持ち出せる」 = couldn't possibly take it out.\nContrast: 「〜わけにはいかない」 = (I) can't do it for social or moral reasons; it's about what one ought to do oneself, not a deduction about what's possible for others: 「大事な会議だから、休むわけにはいかない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「持ち出さないはずがない」是双重否定“肯定会拿出去”，和上了锁的根据相反。",
+        "en": "「持ち出さないはずがない」 is a double negative, \"they surely would take it out\", against the fact that it was locked."
+      },
+      {
+        "zh": "「〜よりほかない」是“只好……”，上了锁并不会让别人“只好拿出去”。",
+        "en": "「〜よりほかない」 (no choice but to) makes no sense: locking it doesn't force anyone to take it out."
+      },
+      {
+        "zh": "「〜わけにはいかない」说的是说话人自己出于情理不能做，不用于推断别人做不做得到。",
+        "en": "「〜わけにはいかない」 is about what the speaker can't do for social reasons, not a deduction about whether others could."
+      }
+    ]
   }
 ]

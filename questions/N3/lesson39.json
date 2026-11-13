@@ -463,5 +463,45 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n3-l39-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson39#4"
+    ],
+    "difficulty": 2,
+    "stem": "薬を飲めば少しは楽になると思っていたのに、よくなる（　）、熱が前より高くなってしまった。",
+    "options": [
+      "どころか",
+      "ばかりか",
+      "ものの",
+      "としても"
+    ],
+    "answer": 0,
+    "full": "薬を飲めば少しは楽になると思っていたのに、よくなるどころか、熱が前より高くなってしまった。",
+    "tr": {
+      "zh": "本以为吃了药会好受一点，结果不但没好，烧得比之前还高了。",
+      "en": "I thought the medicine would make me feel a little better, but far from improving, my fever went even higher."
+    },
+    "why": {
+      "zh": "线索：前面期待「よくなる」，后面的事实是「熱が高くなってしまった」，方向完全相反。\n规则：「动词辞书形＋どころか」＝别说……了，反而……。先否定前面的期待，再说出相反或更严重的事实。\n辨析：「AどころかB」＝A不成立，实际是相反的B；「AばかりかB」＝不仅A，而且B，A和B方向相同（熱が出たばかりか、せきも出た）。",
+      "en": "Clue: The hope was 「よくなる」, but what happened is 「熱が高くなってしまった」, the exact opposite.\nRule: Verb dictionary form + 「どころか」 = \"far from …, on the contrary …\": it rejects the expectation and gives the opposite or a worse fact.\nContrast: 「AどころかB」 = A isn't true, the reality is the opposite B; 「AばかりかB」 = not only A but also B, both pointing the same way (熱が出たばかりか、せきも出た)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ばかりか」是“不仅……而且……”，前后方向要一致；“不仅好了，烧还更高了”前后矛盾。",
+        "en": "「ばかりか」 means \"not only … but also\" and both sides must point the same way; \"not only did I get better, my fever also rose\" contradicts itself."
+      },
+      {
+        "zh": "「ものの」前面是已经成立的事实（虽然好了），可是实际上并没有好。",
+        "en": "「ものの」 follows something that is actually true (\"although I got better\"), but the speaker didn't get better."
+      },
+      {
+        "zh": "「としても」是假设“就算……也”，后面不接「高くなってしまった」这样已经发生的事实。",
+        "en": "「としても」 is a supposition (\"even if\"); it isn't followed by something that has already happened like 「高くなってしまった」."
+      }
+    ]
   }
 ]

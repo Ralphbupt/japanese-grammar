@@ -2900,5 +2900,708 @@
    "denied-guess",
    "twisted"
   ]
+ },
+ {
+  "id": "n1-ck-229",
+  "type": "point",
+  "scene": "商店街の事務所で、女の人と理事の男の人が、毎月の朝市について話しています。",
+  "question": "今年度から、朝市の何が変わりましたか。",
+  "lines": [
+   [
+    "F",
+    "今月の朝市、ずいぶんにぎわってましたね。場所を駅前の広場に移したんでしたっけ。"
+   ],
+   [
+    "M",
+    "いや、その話は出たけど、広場の使用料が高くて見送ったんだ。今までどおり、通りを歩行者天国にしてやってるよ。"
+   ],
+   [
+    "F",
+    "じゃあ、開く回数を増やしたとか。"
+   ],
+   [
+    "M",
+    "月に一度なのも変わらない。今年度から変えたのは店の決め方でね。これまでは商店街の加盟店しか出られなかったのを、近隣の農家や学生の団体にも開放したんだ。"
+   ],
+   [
+    "F",
+    "へえ。それで見慣れない店が多かったんですね。始まる時間も早くなった気がしましたけど。"
+   ],
+   [
+    "M",
+    "農家の人たちが自主的に早く来て品物を並べてるだけで、公式には九時のまま。来年は時間も見直そうかって声はあるけどね。"
+   ]
+  ],
+  "options": [
+   "朝市を開く場所",
+   "朝市を開く回数",
+   "店を出せる人の範囲",
+   "朝市が始まる時刻"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "商店街的办公室里，女人和男理事在谈每月的早市。",
+    "question": "从今年度起，早市的什么变了？",
+    "lines": [
+     "这个月的早市相当热闹啊。是把地点搬到车站前的广场了吗？",
+     "没有，倒是提过，但广场的使用费太高，就搁下了。还是和以前一样，把街道设成步行街来办。",
+     "那是增加了举办的次数？",
+     "一个月一次也没变。今年度起变的是摊位的决定方式。以前只有商店街的加盟店才能出摊，现在也向附近的农户和学生团体开放了。",
+     "哦，怪不得有很多没见过的摊位。我还觉得开始的时间也提早了。",
+     "那只是农户们自己早来摆货，正式的还是九点。倒是有人说明年把时间也重新考虑一下。"
+    ],
+    "options": [
+     "办早市的地点",
+     "办早市的次数",
+     "可以出摊的人的范围",
+     "早市开始的时间"
+    ]
+   },
+   "en": {
+    "scene": "In a shopping street's office, a woman and a male board member are talking about the monthly morning market.",
+    "question": "What about the morning market has changed since this fiscal year?",
+    "lines": [
+     "This month's morning market was really lively. Did you move it to the square in front of the station?",
+     "No — that came up, but the fee for the square was too high, so we shelved it. We still close the street to traffic and hold it there, as before.",
+     "Then did you increase how often it's held?",
+     "It's still once a month. What we changed this fiscal year is how stalls are decided. Until now only member shops of the street could take part; we've opened it to nearby farmers and student groups.",
+     "Ah, so that's why there were so many unfamiliar stalls. I also had the feeling it started earlier.",
+     "That's just the farmers coming early of their own accord to lay out their goods; officially it's still nine o'clock. Some people do say we should rethink the hours next year."
+    ],
+    "options": [
+     "Where the market is held",
+     "How often the market is held",
+     "Who is allowed to set up a stall",
+     "What time the market starts"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：理事说：「今年度から変えたのは店の決め方でね。これまでは商店街の加盟店しか出られなかったのを、近隣の農家や学生の団体にも開放したんだ。」\n推理：女的猜了三样：地点（「見送った」）、次数（「変わらない」）、开始时间（「公式には九時のまま」），都被否定。真正变的是谁可以出摊，选项把「加盟店しか→農家や学生にも開放」概括成“可以出摊的人的范围”。\n容易错：时间的调整只是明年的设想。",
+   "en": "Evidence: The board member says 「今年度から変えたのは店の決め方でね。これまでは商店街の加盟店しか出られなかったのを、近隣の農家や学生の団体にも開放したんだ。」\nReasoning: She guesses three things — place (「見送った」), frequency (「変わらない」), starting time (「公式には九時のまま」) — and each is denied. What changed is who may run a stall; the option sums up 'members only → opened to farmers and students' as the range of people allowed.\nTrap: changing the hours is only an idea for next year."
+  },
+  "wrong": [
+   {
+    "zh": "搬到广场的事因使用费高「見送った」，地点没变。",
+    "en": "The move to the square was shelved (「見送った」); the place is unchanged."
+   },
+   {
+    "zh": "理事说「月に一度なのも変わらない」。",
+    "en": "He says 「月に一度なのも変わらない」."
+   },
+   null,
+   {
+    "zh": "只是农户自己早来，「公式には九時のまま」。",
+    "en": "The farmers just come early; 「公式には九時のまま」."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-ck-230",
+  "type": "point",
+  "scene": "ラジオで、山岳ガイドの女の人がインタビューに答えています。",
+  "question": "女の人は、ガイドにとって何が最も重要だと言っていますか。",
+  "lines": [
+   [
+    "F",
+    "ガイドに必要なものと言うと、皆さん、まず体力や登る技術を思い浮かべるようです。もちろん、それがなければ話になりません。天気を読む知識も、身につけていて当たり前のものです。"
+   ],
+   [
+    "F",
+    "ただ、二十年やってきて痛感するのは、事故は、技術の足りない人ではなく、引き返す決断ができなかった人が起こすということです。"
+   ],
+   [
+    "F",
+    "頂上まであと三十分という所で、雲の動きがおかしい。お客さんは、この日のために何か月も準備してきている。そこで「今日はここまでです」と言えるかどうか。"
+   ],
+   [
+    "F",
+    "恨まれることもありますし、結局、天気が崩れなかったこともあります。それでも、迷ったら下りる。その判断を、人の期待に流されずにくだせることが、何より問われる仕事だと思っています。お客さんとの信頼関係は、そういう積み重ねのあとから付いてくるものでしょうね。"
+   ]
+  ],
+  "options": [
+   "登るための体力と技術を磨き続けること",
+   "天気の変化を正確に読み取ること",
+   "客との信頼関係を早いうちに築くこと",
+   "期待に流されず引き返す判断をすること"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "广播里，一位女登山向导在回答采访。",
+    "question": "女人说对向导来说什么最重要？",
+    "lines": [
+     "说到向导需要什么，大家好像首先会想到体力和登山技术。当然，没有这些就无从谈起。看天气的知识也是理所当然要具备的。",
+     "不过，干了二十年，我痛切感到的是：出事故的不是技术不够的人，而是下不了决心折返的人。",
+     "离山顶只剩三十分钟的地方，云的动向不对劲。客人为了这一天准备了好几个月。这时候能不能说出“今天就到这里”。",
+     "有时会被客人埋怨，也有时结果天气并没有变坏。即便如此，犹豫了就下山。能不被别人的期待左右、做出这个判断，我认为是这份工作最看重的。和客人的信任关系，大概是这样一次次积累之后才跟着来的吧。"
+    ],
+    "options": [
+     "不断磨炼登山的体力和技术",
+     "准确地看出天气的变化",
+     "尽早和客人建立信任关系",
+     "不被期待左右，做出折返的判断"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, a female mountain guide is answering an interviewer.",
+    "question": "What does the woman say matters most for a guide?",
+    "lines": [
+     "When people think of what a guide needs, they seem to picture stamina and climbing technique first. Of course, without those you can't even begin. Knowing how to read the weather, too, is something you're simply expected to have.",
+     "But what twenty years have driven home to me is that accidents are caused not by people short on technique but by people who couldn't make the decision to turn back.",
+     "You're thirty minutes from the summit and the clouds are moving strangely. The client has spent months preparing for this day. Can you say, 'This is as far as we go today'?",
+     "Sometimes they resent you, and sometimes the weather never did break. Even so, when in doubt, go down. Being able to make that call without being swayed by people's expectations is, I think, what this job demands above all. Trust with clients is something that follows later, from doing that again and again."
+    ],
+    "options": [
+     "Keeping up the stamina and technique to climb",
+     "Reading changes in the weather accurately",
+     "Building trust with clients early on",
+     "Deciding to turn back without being swayed by expectations"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「その判断を、人の期待に流されずにくだせることが、何より問われる仕事だと思っています。」\n推理：「何より問われる」＝最重要。「その判断」指前面的「迷ったら下りる」，也就是折返的决断。体力、技术、看天气用「もちろん」「当たり前」带过，是前提而不是重点；「ただ」之后才是她的主张。\n容易错：信任关系是「あとから付いてくるもの」，是结果，不是最重要的事。",
+   "en": "Evidence: 「その判断を、人の期待に流されずにくだせることが、何より問われる仕事だと思っています。」\nReasoning: 「何より問われる」 means 'matters above all'. 「その判断」 points back to 「迷ったら下りる」 — the decision to turn back. Stamina, technique and weather knowledge are waved through with 「もちろん」 and 「当たり前」: prerequisites, not the point; her claim comes after 「ただ」.\nTrap: trust is 「あとから付いてくるもの」 — a result, not the priority."
+  },
+  "wrong": [
+   {
+    "zh": "她说这是「なければ話になりません」的前提，但事故并非出在技术不足的人身上。",
+    "en": "She calls it a prerequisite, but says accidents aren't caused by those lacking technique."
+   },
+   {
+    "zh": "看天气的知识是「身につけていて当たり前」，不是她最强调的。",
+    "en": "Reading the weather is 「身につけていて当たり前」, not what she stresses most."
+   },
+   {
+    "zh": "信任关系是「あとから付いてくるもの」，不是先去建立的。",
+    "en": "Trust 「あとから付いてくる」; it isn't something to build first."
+   },
+   null
+  ],
+  "traps": [
+   "half-right",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-ck-231",
+  "type": "point",
+  "scene": "会社で、女の人と男の人が、空き家になっている男の人の実家について話しています。",
+  "question": "男の人は、実家をどうすることにしましたか。",
+  "lines": [
+   [
+    "F",
+    "ご実家、空き家のままだって言ってたけど、どうなった？"
+   ],
+   [
+    "M",
+    "やっと方向が決まったよ。最初は売るつもりで不動産屋に見てもらったんだけど、道が狭くて車が入れないから、買い手はまずつかないって言われて。"
+   ],
+   [
+    "F",
+    "じゃあ、貸すとか。"
+   ],
+   [
+    "M",
+    "それも考えた。でも、人に貸せる状態にするには水回りを全部直さなきゃならなくて、家賃で元を取るのに十年以上かかる計算でね。取り壊すにしても、更地にすると税金が跳ね上がるし。"
+   ],
+   [
+    "F",
+    "八方ふさがりじゃない。"
+   ],
+   [
+    "M",
+    "それがね、町が、移住を考えている人に空き家で短い間暮らしてみてもらう事業をやってるんだ。家は今の状態のままでよくて、管理も町がしてくれる。入ってくるお金はわずかだけど、人が出入りすれば家も傷まないし、それに申し込んだよ。"
+   ],
+   [
+    "F",
+    "弟さんは、定年後に住むかもしれないから手をつけるなって言ってたんでしょう。"
+   ],
+   [
+    "M",
+    "これならいつでも元に戻せるからって言ったら、納得してくれた。"
+   ]
+  ],
+  "options": [
+   "移住を考える人に試しに住んでもらう",
+   "水回りを直したうえで人に貸し出す",
+   "建物を取り壊して土地だけにしておく",
+   "弟が住むときまで手をつけずにおく"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "公司里，女人和男人在谈男人那栋空着的老家房子。",
+    "question": "男人决定怎么处理老家的房子？",
+    "lines": [
+     "你说过老家一直空着，后来怎么样了？",
+     "总算定下方向了。一开始打算卖掉，请房产中介看过，可人家说路太窄车进不去，基本不会有人买。",
+     "那就租出去？",
+     "那也考虑过。可是要弄到能租给人的状态，得把厨卫水路全部修一遍，算下来靠房租回本要十年以上。就算拆掉，变成空地税金又会猛涨。",
+     "这不是走投无路了吗。",
+     "可是呢，镇上在搞一个项目，让考虑移居的人在空房子里短期住住看。房子保持现状就行，管理也由镇上负责。进来的钱很少，不过有人进出房子也不容易坏，我就申请了那个。",
+     "你弟弟不是说退休后可能回去住，叫你别动它吗。",
+     "我说这样的话随时都能恢复原样，他就同意了。"
+    ],
+    "options": [
+     "让考虑移居的人试着住住看",
+     "修好厨卫水路后租给别人",
+     "拆掉房子只留下土地",
+     "在弟弟回去住之前原样放着"
+    ]
+   },
+   "en": {
+    "scene": "At the office, a woman and a man are talking about the man's family home, which is standing empty.",
+    "question": "What has the man decided to do with his family home?",
+    "lines": [
+     "You said your family home was still standing empty. What happened with it?",
+     "We've finally settled on a direction. At first I meant to sell and had an estate agent look at it, but the road is too narrow for cars, and he told me there'd be practically no buyers.",
+     "So you'll rent it out, then?",
+     "I thought about that too. But to get it fit to let, all the plumbing would have to be redone, and by my sums it would take over ten years to earn that back in rent. And if we knocked it down, the tax on a vacant lot shoots up.",
+     "You're boxed in on every side.",
+     "Well, it turns out the town runs a scheme where people thinking of moving there try living in an empty house for a short while. The house can stay exactly as it is, and the town manages it. Very little money comes in, but a house with people coming and going doesn't decay, so I've signed up for that.",
+     "Didn't your brother say not to touch it, because he might live there after he retires?",
+     "When I told him this way we can undo it any time, he came round."
+    ],
+    "options": [
+     "Let people considering a move try living in it",
+     "Fix the plumbing and then rent it out",
+     "Demolish the building and keep just the land",
+     "Leave it untouched until his brother lives there"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说镇上有让考虑移居的人「空き家で短い間暮らしてみてもらう事業」，然后说：「それに申し込んだよ。」\n推理：卖——「買い手はまずつかない」；租——修水路要十年以上才回本；拆——税金「跳ね上がる」。最后申请了镇上的试住项目，选项把「短い間暮らしてみてもらう」换成了「試しに住んでもらう」。\n容易错：弟弟原来主张不动它，但已经被说服，房子并不是原样放着。",
+   "en": "Evidence: He describes the town's scheme for would-be newcomers 「空き家で短い間暮らしてみてもらう事業」 and says 「それに申し込んだよ。」\nReasoning: Selling — 「買い手はまずつかない」; letting — over ten years to recoup the plumbing; demolishing — the tax 「跳ね上がる」. He signed up for the town's trial-stay scheme; the option rephrases 「短い間暮らしてみてもらう」 as 「試しに住んでもらう」.\nTrap: the brother wanted it left alone, but he was persuaded — the house is not being left as it is."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "修水路后靠房租回本要十年以上，他放弃了这个方案。",
+    "en": "Recouping the plumbing through rent would take over ten years, so he dropped that."
+   },
+   {
+    "zh": "变成空地税金会猛涨，所以没有拆。",
+    "en": "The tax jumps on a vacant lot, so he isn't demolishing."
+   },
+   {
+    "zh": "那是弟弟原来的意见，后来弟弟同意了试住项目。",
+    "en": "That was his brother's earlier wish; the brother has agreed to the scheme."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-ck-232",
+  "type": "point",
+  "scene": "ラジオの番組で、文芸評論家の男の人が、新人作家の小説について話しています。",
+  "question": "評論家は、この小説をどう評価していますか。",
+  "lines": [
+   [
+    "M",
+    "今月取り上げるのは、新人作家の長編小説です。発売前から結末の意外さが話題になっていまして、帯にも「最後の一ぎょうで世界が反転する」とあります。"
+   ],
+   [
+    "M",
+    "ただ、正直に申しますと、その仕掛け自体は、推理小説を読み慣れた人なら、半分ほど読んだところで見当がついてしまうでしょう。筋の運びも、中盤はやや間延びしています。"
+   ],
+   [
+    "M",
+    "それでもこの作品を推したいのは、文章の力ゆえです。舞台は漁港の町なんですが、朝のいちばの湿った空気、網を繕う老人の手つき、そういうものが、長い説明ではなく、ごく短い描写で目の前に立ち上がってくる。登場人物も、交わす言葉だけで人柄が伝わります。"
+   ],
+   [
+    "M",
+    "宣伝の文句に引かれて読むと、肩透かしを食うかもしれません。しかし、この書き手が次に何を書くのか、私は楽しみでなりません。"
+   ]
+  ],
+  "options": [
+   "結末は見事だが、文章にはまだ粗さがある",
+   "仕掛けは平凡だが、描写の力は優れている",
+   "筋も文章も、新人とは思えない完成度だ",
+   "宣伝ばかりが目立ち、読む価値に乏しい"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "广播节目里，一位男文艺评论家在谈一位新人作家的小说。",
+    "question": "评论家怎么评价这部小说？",
+    "lines": [
+     "这个月要介绍的是一位新人作家的长篇小说。出版前，结局的出人意料就成了话题，腰封上也写着“最后一行让世界反转”。",
+     "不过，老实说，那个机关本身，读惯推理小说的人大概读到一半左右就能猜到。情节的推进，中段也略显拖沓。",
+     "即便如此我还是想推荐这部作品，是因为它文字的力量。故事发生在一个渔港小镇，早晨市场潮湿的空气、老人补渔网的手势，这些东西不是靠长长的说明，而是用极短的描写就浮现在眼前。登场人物也是，光凭交谈的话语就能传达出为人。",
+     "被宣传语吸引来读的话，也许会觉得扑了个空。但是，这位作者下一部会写什么，我期待得不得了。"
+    ],
+    "options": [
+     "结局很精彩，但文字还比较粗糙",
+     "机关很平常，但描写的功力很出色",
+     "情节和文字都有不像新人的完成度",
+     "只有宣传显眼，没什么阅读价值"
+    ]
+   },
+   "en": {
+    "scene": "On a radio programme, a male literary critic is talking about a novel by a new writer.",
+    "question": "How does the critic rate this novel?",
+    "lines": [
+     "This month's book is a full-length novel by a new writer. The surprise of its ending was being talked about even before publication, and the wrapper says, 'In the last line, the world turns upside down.'",
+     "To be frank, though, anyone used to reading mysteries will probably see that device coming about halfway through. The plot also drags somewhat in the middle.",
+     "The reason I still want to recommend the book is the power of its prose. It is set in a fishing-port town, and the damp air of the morning market, the hands of an old man mending a net — such things rise before your eyes not through long explanation but in the briefest description. The characters, too, reveal who they are through nothing but the words they exchange.",
+     "If you pick it up because of the advertising, you may feel let down. But I can hardly wait to see what this writer does next."
+    ],
+    "options": [
+     "The ending is superb, but the prose is still rough",
+     "The device is ordinary, but the descriptive power is outstanding",
+     "Both plot and prose are remarkably polished for a newcomer",
+     "It is all advertising and hardly worth reading"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「その仕掛け自体は……半分ほど読んだところで見当がついてしまうでしょう。」「それでもこの作品を推したいのは、文章の力ゆえです。」\n推理：对结局的机关和情节是负面评价（猜得到、中段拖沓），对文字和描写是正面评价（短短的描写就让景象浮现）。所以是“机关平常，描写出色”。\n容易错：把褒贬的对象调换；「肩透かしを食うかもしれません」只针对冲着宣传语来的读者，他整体上是推荐的。",
+   "en": "Evidence: 「その仕掛け自体は……半分ほど読んだところで見当がついてしまうでしょう。」 and 「それでもこの作品を推したいのは、文章の力ゆえです。」\nReasoning: He is negative about the twist and the plot (guessable, slow in the middle) and positive about the prose and description (a scene conjured in a few words). So: ordinary device, outstanding description.\nTrap: swapping what is praised and what is criticised; 「肩透かしを食うかもしれません」 applies only to readers drawn by the advertising — overall he recommends it."
+  },
+  "wrong": [
+   {
+    "zh": "正好说反了：他批评的是结局的机关，称赞的是文字。",
+    "en": "The reverse: he criticises the twist and praises the prose."
+   },
+   null,
+   {
+    "zh": "他说情节中段「やや間延びしています」，并非都好。",
+    "en": "He says the plot 「やや間延びしています」 in the middle, so not everything is polished."
+   },
+   {
+    "zh": "他说「この作品を推したい」，还期待作者的下一部。",
+    "en": "He says 「この作品を推したい」 and looks forward to the writer's next book."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "half-right",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-ck-233",
+  "type": "point",
+  "scene": "銀行で、融資の担当の女の人と、旅館を経営している男の人が話しています。",
+  "question": "女の人は、融資の審査に進むには何が必要だと言っていますか。",
+  "lines": [
+   [
+    "M",
+    "先日お願いした、客室の改装の融資の件ですが。"
+   ],
+   [
+    "F",
+    "はい。審査の部署とも話しまして、前向きに検討できそうです。売り上げがここ二年落ち込んでいる点は気にしておりましたが、周辺の旅館も同様ですので、それ自体は問題にしないということになりました。"
+   ],
+   [
+    "M",
+    "ありがたい。担保は、前にも申し上げたとおり、土地と建物で。"
+   ],
+   [
+    "F",
+    "担保の評価額も十分です。ただ、一点だけ。改装のあと、どのくらいのお客様が見込めるのかという部分が、今の資料ですと「増加が期待できる」とあるだけでして。"
+   ],
+   [
+    "M",
+    "根拠を示せ、ということですか。"
+   ],
+   [
+    "F",
+    "ええ。月ごとの客数と単価の見通しを、裏づけと一緒に出していただければ、審査に回します。"
+   ],
+   [
+    "M",
+    "保証人は、息子を立てるつもりでいましたが。"
+   ],
+   [
+    "F",
+    "今回の額でしたら、保証人は立てていただかなくて結構です。"
+   ]
+  ],
+  "options": [
+   "改装後の客数の見通しを数字で示すこと",
+   "売り上げを二年前の水準まで戻すこと",
+   "担保にする土地や建物を追加すること",
+   "経営者の息子を保証人に立てること"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "银行里，负责贷款的女人和经营旅馆的男人在谈话。",
+    "question": "女人说要进入贷款审查，需要什么？",
+    "lines": [
+     "前几天拜托的客房装修贷款的事……",
+     "是的。我和审查部门也谈过了，看来可以积极考虑。营业额这两年下滑这一点我们原来有些在意，不过周边的旅馆也一样，所以决定这一点本身不算问题。",
+     "太感谢了。担保就像之前说的，用土地和建筑物。",
+     "担保的评估额也够了。只是有一点。装修以后预计能有多少客人，这部分在现在的资料里只写着“可望增加”。",
+     "意思是要拿出依据吗？",
+     "是的。如果您能把每个月的客人数和客单价的预测连同依据一起提交，我就送去审查。",
+     "保证人我本来打算让儿子来当。",
+     "这次的金额，不需要保证人。"
+    ],
+    "options": [
+     "用数字说明装修后客人数的预测",
+     "把营业额恢复到两年前的水平",
+     "追加用作担保的土地或建筑物",
+     "让经营者的儿子当保证人"
+    ]
+   },
+   "en": {
+    "scene": "At a bank, a female loan officer and a man who runs an inn are talking.",
+    "question": "What does the woman say is needed for the loan to go forward to screening?",
+    "lines": [
+     "About the loan I asked for the other day, to renovate the guest rooms.",
+     "Yes. I've spoken with the screening department, and it looks as if we can consider it favourably. We were concerned that your sales have been down these two years, but the same is true of the inns around you, so we've agreed not to treat that in itself as a problem.",
+     "I'm grateful. For collateral, as I said before, the land and the building.",
+     "The valuation of the collateral is sufficient as well. Just one thing. On how many guests you can expect after the renovation, your present papers say only that 'an increase can be expected'.",
+     "You mean I should show the grounds for it?",
+     "Yes. If you could give us month-by-month projections of guest numbers and spending per guest, with supporting evidence, I'll pass it on for screening.",
+     "I was planning to put my son forward as guarantor.",
+     "For this amount, we don't need a guarantor."
+    ],
+    "options": [
+     "Showing in figures the expected guest numbers after the renovation",
+     "Bringing sales back to the level of two years ago",
+     "Adding more land or buildings as collateral",
+     "Naming the owner's son as guarantor"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「月ごとの客数と単価の見通しを、裏づけと一緒に出していただければ、審査に回します。」\n推理：「〜ていただければ、審査に回します」就是条件。现在的资料只写「増加が期待できる」，缺的是带依据的具体数字。营业额下滑「問題にしない」，担保「十分です」，保证人「立てていただかなくて結構です」。\n容易错：其余三项都是谈到了但已经没有问题的事项。",
+   "en": "Evidence: She says 「月ごとの客数と単価の見通しを、裏づけと一緒に出していただければ、審査に回します。」\nReasoning: 「〜ていただければ、審査に回します」 states the condition. The papers say only 「増加が期待できる」; what's missing is concrete, supported figures. The fall in sales will not be treated as a problem, the collateral is 「十分です」, and a guarantor is not needed.\nTrap: the other three are all raised, and all already settled."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "营业额下滑和周边旅馆一样，「それ自体は問題にしない」。",
+    "en": "The drop in sales matches nearby inns, so 「それ自体は問題にしない」."
+   },
+   {
+    "zh": "女的说「担保の評価額も十分です」。",
+    "en": "She says 「担保の評価額も十分です」."
+   },
+   {
+    "zh": "这次的金额「保証人は立てていただかなくて結構です」。",
+    "en": "For this amount, 「保証人は立てていただかなくて結構です」."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n1-ck-234",
+  "type": "point",
+  "scene": "農業の賞の授賞式で、賞を受けた男の人が話しています。",
+  "question": "男の人が、農薬に頼らない米作りを始めたのはどうしてですか。",
+  "lines": [
+   [
+    "M",
+    "このたびは、このような賞をいただき、ありがとうございます。農薬に頼らない米作りを始めて、十五年になります。"
+   ],
+   [
+    "M",
+    "よく、環境のためですかとか、高く売れるからですかと聞かれます。結果としてそうなった面はありますが、始めた頃は、そんな立派な考えはありませんでした。"
+   ],
+   [
+    "M",
+    "きっかけは、田んぼの脇の水路です。私が子どもの頃は、メダカやドジョウがいくらでもいて、日が暮れるまで遊んだものです。それが、自分の子どもを連れていったら、何もいない。この子は、私の知っている田んぼを知らずに育つのかと思うと、たまらなくなりましてね。"
+   ],
+   [
+    "M",
+    "最初の数年は収穫が三割も減り、父には、道楽でやるなと叱られました。今、孫が同じ水路で網を振り回しているのを見ると、あのとき踏み切ってよかったと、つくづく思います。"
+   ]
+  ],
+  "options": [
+   "環境を守る農業を世の中に広めたかったから",
+   "米をより高い値段で売りたかったから",
+   "父に栽培の方法を改めるように言われたから",
+   "生き物のいる田んぼを子に残したかったから"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "农业奖的颁奖典礼上，获奖的男人在讲话。",
+    "question": "男人为什么开始了不依赖农药的水稻种植？",
+    "lines": [
+     "这次能获得这样的奖，非常感谢。我开始不依赖农药种稻，已经十五年了。",
+     "常有人问我，是为了环境吗，是因为能卖高价吗。从结果上看确实有这样的一面，但刚开始的时候，我并没有那么了不起的想法。",
+     "起因是稻田边的水渠。我小时候，那里青鳉、泥鳅多得是，常常玩到天黑。可是带自己的孩子去一看，什么都没有。一想到这孩子要在不知道我所熟悉的稻田的情况下长大，我就受不了了。",
+     "最初几年，收成减了足足三成，父亲骂我别拿种田当消遣。现在看到孙子在同一条水渠里挥着网兜，我深深觉得，那时候下决心真是太好了。"
+    ],
+    "options": [
+     "因为想推广保护环境的农业",
+     "因为想把米卖得更贵",
+     "因为父亲叫他改变种植方法",
+     "因为想给孩子留下有生物的稻田"
+    ]
+   },
+   "en": {
+    "scene": "At the award ceremony for a farming prize, the man who won it is speaking.",
+    "question": "Why did the man start growing rice without relying on pesticides?",
+    "lines": [
+     "Thank you very much for this award. It is fifteen years since I began growing rice without relying on pesticides.",
+     "People often ask whether it was for the environment, or because the rice sells for more. In the end there has been something of that, but when I started I had no such fine ideas.",
+     "What set me off was the ditch beside the paddy. When I was a boy it was full of killifish and loaches, and I would play there till dark. Then I took my own child there, and there was nothing. The thought that this child would grow up never knowing the paddy I had known was more than I could bear.",
+     "For the first few years the harvest fell by as much as thirty per cent, and my father scolded me for farming as a hobby. Now, when I see my grandchild swinging a net in that same ditch, I feel deeply glad I took the plunge."
+    ],
+    "options": [
+     "He wanted to spread environmentally friendly farming",
+     "He wanted to sell his rice at a higher price",
+     "His father told him to change how he farmed",
+     "He wanted to leave his child a paddy with living things in it"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「きっかけは、田んぼの脇の水路です。」「この子は、私の知っている田んぼを知らずに育つのかと思うと、たまらなくなりましてね。」\n推理：小时候水渠里有很多鱼，带孩子去时却什么都没有。他不忍心孩子不知道那样的稻田，才开始不用农药——选项把这份心情概括成“想给孩子留下有生物的稻田”。环境、高价是别人的猜测，他说开始时「そんな立派な考えはありませんでした」。\n容易错：父亲不是劝他改，而是骂他「道楽でやるな」。",
+   "en": "Evidence: 「きっかけは、田んぼの脇の水路です。」 and 「この子は、私の知っている田んぼを知らずに育つのかと思うと、たまらなくなりましてね。」\nReasoning: The ditch teemed with fish in his boyhood, but was empty when he took his child. He couldn't bear his child not knowing such a paddy — which the option sums up as wanting to leave the child a paddy with living things. The environment and higher prices are other people's guesses; at the start, he says, 「そんな立派な考えはありませんでした」.\nTrap: his father didn't urge the change — he scolded him (「道楽でやるな」)."
+  },
+  "wrong": [
+   {
+    "zh": "这是别人的猜测，他说开始时「そんな立派な考えはありませんでした」。",
+    "en": "That is what others guess; at the start he had 「そんな立派な考え」 not at all."
+   },
+   {
+    "zh": "卖高价只是「結果としてそうなった面」，不是开始的理由。",
+    "en": "Higher prices are only 「結果としてそうなった面」, not why he began."
+   },
+   {
+    "zh": "父亲反而骂他「道楽でやるな」，是反对的。",
+    "en": "His father scolded him — 「道楽でやるな」 — and was against it."
+   },
+   null
+  ],
+  "traps": [
+   "denied-guess",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-ck-235",
+  "type": "point",
+  "scene": "鉄道会社で、男の人と上司の女の人が、駅に試しに設置した乗り換えの案内表示について話しています。",
+  "question": "女の人は、案内表示の何が最も問題だと言っていますか。",
+  "lines": [
+   [
+    "M",
+    "乗り換え案内の新しい表示、一週間試してみましたが、いかがでしたか。"
+   ],
+   [
+    "F",
+    "色づかいは良くなったと思う。路線ごとの色がはっきりして、遠くからでも見分けられるし。"
+   ],
+   [
+    "M",
+    "文字はどうでしょう。以前より小さくなったという声もありましたが。"
+   ],
+   [
+    "F",
+    "確かに少し小さいけど、外国語を三つ併記するんだから、ある程度はやむを得ないわね。それより、現場に立ってみて気になったのは、表示の付いている位置。階段を上がり切った真正面にあるでしょう。"
+   ],
+   [
+    "M",
+    "はい、いちばん目につく所に、と考えまして。"
+   ],
+   [
+    "F",
+    "だから、みんなそこで立ち止まって見上げるのよ。後ろから人が次々に上がってくるのに。朝の混雑のときは、ぶつかりそうになっている人を何人も見たわ。"
+   ],
+   [
+    "M",
+    "なるほど……。載せている情報が多すぎるという指摘もありましたが。"
+   ],
+   [
+    "F",
+    "それは立ち止まる時間を長くしている一因ではあるけど、根っこは場所よ。数歩先の、流れを妨げない所に移せない？"
+   ]
+  ],
+  "options": [
+   "文字が以前より小さくなったこと",
+   "人の流れが滞る場所に付いていること",
+   "載せている情報の量が多すぎること",
+   "路線ごとの色が見分けにくいこと"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "铁路公司里，男人和女上司在谈车站里试装的换乘指示牌。",
+    "question": "女人说指示牌最大的问题是什么？",
+    "lines": [
+     "新的换乘指示牌试用了一个星期，您觉得怎么样？",
+     "我觉得配色变好了。每条线路的颜色很分明，从远处也能分辨。",
+     "文字怎么样？也有人说比以前小了。",
+     "确实小了一点，不过要并排写三种外语，某种程度上也是不得已。比起那个，我到现场站了站，在意的是指示牌装的位置。就在上完楼梯的正对面吧。",
+     "是的，我们考虑的是装在最显眼的地方。",
+     "所以大家都在那儿停下来抬头看啊。后面明明不断有人上来。早上拥挤的时候，我看到好几个人差点撞上。",
+     "原来如此……。也有人指出登载的信息太多了。",
+     "那的确是让人停留时间变长的一个原因，但根子在位置。不能移到往前几步、不妨碍人流的地方吗？"
+    ],
+    "options": [
+     "文字比以前小了",
+     "装在会让人流停滞的地方",
+     "登载的信息量太多",
+     "各线路的颜色不容易分辨"
+    ]
+   },
+   "en": {
+    "scene": "At a railway company, a man and his female boss are talking about transfer signs installed in a station on a trial basis.",
+    "question": "What does the woman say is the biggest problem with the signs?",
+    "lines": [
+     "We've tried the new transfer signs for a week. What did you think?",
+     "I think the colours are better. Each line's colour is distinct, and you can tell them apart even from a distance.",
+     "How about the lettering? Some people said it's smaller than before.",
+     "It is a little small, but with three foreign languages alongside, that can't be helped up to a point. What struck me more when I stood there is where the sign is fixed. It's straight ahead at the very top of the stairs, isn't it?",
+     "Yes — we wanted it where people would see it first.",
+     "Which is why everyone stops right there and looks up, with people coming up behind them one after another. In the morning rush I saw several people nearly collide.",
+     "I see… There was also the comment that it carries too much information.",
+     "That's one reason people stand there longer, but the root of it is the place. Can't it be moved a few steps on, where it won't block the flow?"
+    ],
+    "options": [
+     "The lettering is smaller than before",
+     "They are fixed where the flow of people gets blocked",
+     "They carry too much information",
+     "The colours of the lines are hard to tell apart"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「それより、現場に立ってみて気になったのは、表示の付いている位置。」最后说：「根っこは場所よ。」\n推理：指示牌在楼梯尽头的正对面，大家停下来抬头看，后面的人不断上来，差点相撞——也就是装在了会堵住人流的地方。字小「やむを得ない」；信息多只是「一因」；配色是她称赞的地方。\n容易错：信息量被承认是原因之一，但用「根っこは」明确了主次。",
+   "en": "Evidence: She says 「それより、現場に立ってみて気になったのは、表示の付いている位置。」 and finally 「根っこは場所よ。」\nReasoning: The sign faces the top of the stairs, so people stop and look up while others keep coming up behind and nearly collide — it sits where it blocks the flow. Small lettering 「やむを得ない」; too much information is only 「一因」; the colours are what she praises.\nTrap: the amount of information is granted as one cause, but 「根っこは」 sets the priority."
+  },
+  "wrong": [
+   {
+    "zh": "她说并排三种外语，字小「ある程度はやむを得ない」。",
+    "en": "With three languages, small lettering is 「ある程度はやむを得ない」."
+   },
+   null,
+   {
+    "zh": "信息多只是「一因」，她说「根っこは場所よ」。",
+    "en": "Too much information is only 「一因」; she says 「根っこは場所よ」."
+   },
+   {
+    "zh": "正相反，她说颜色分明，从远处也能分辨。",
+    "en": "The opposite: she says the colours are distinct even from afar."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "mentioned-not-asked",
+   "contradiction"
+  ]
  }
 ]

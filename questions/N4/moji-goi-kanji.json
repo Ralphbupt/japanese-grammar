@@ -1565,5 +1565,260 @@
         "en": "The second sound is ら, not わ."
       }
     ]
+  },
+  {
+    "id": "n4-mg-141",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "<<夕方>>から あめが ふるそうです。",
+    "options": ["ゆうがた", "ゆうはん", "ゆうべ", "ゆうひ"],
+    "kj": "夕方から雨が降るそうです。",
+    "answer": 0,
+    "tr": { "zh": "听说傍晚开始下雨。", "en": "I hear it will rain from the evening." },
+    "why": { "zh": "「夕（ゆう）」+「方（がた）」：「ゆうがた」（傍晚），「方」浊化。", "en": "「夕」 is ゆう and 「方」 is the voiced がた: ゆうがた (early evening)." },
+    "wrong": [
+      null,
+      { "zh": "「ゆうはん」是「夕飯」（晚饭）。", "en": "ゆうはん is 「夕飯」 (dinner)." },
+      { "zh": "「ゆうべ」是「夕べ」（昨晚）。", "en": "ゆうべ is 「夕べ」 (last night)." },
+      { "zh": "「ゆうひ」是「夕日」（夕阳）。", "en": "ゆうひ is 「夕日」 (the setting sun)." }
+    ]
+  },
+  {
+    "id": "n4-mg-142",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "<<妹>>は らいねん こうこうに はいります。",
+    "options": ["いもうと", "おとうと", "むすめ", "むすこ"],
+    "kj": "妹は来年高校に入ります。",
+    "answer": 0,
+    "tr": { "zh": "我妹妹明年上高中。", "en": "My younger sister starts high school next year." },
+    "why": { "zh": "「妹」读「いもうと」（妹妹），女字旁。", "en": "「妹」 is いもうと (younger sister) — note the 女 radical." },
+    "wrong": [
+      null,
+      { "zh": "「おとうと」是「弟」（弟弟）。", "en": "おとうと is 「弟」 (younger brother)." },
+      { "zh": "「むすめ」是「娘」（女儿）。", "en": "むすめ is 「娘」 (daughter)." },
+      { "zh": "「むすこ」是「息子」（儿子）。", "en": "むすこ is 「息子」 (son)." }
+    ]
+  },
+  {
+    "id": "n4-mg-143",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "<<春>>に なると、こうえんの さくらが さきます。",
+    "options": ["はる", "なつ", "あき", "ふゆ"],
+    "kj": "春になると、公園の桜が咲きます。",
+    "answer": 0,
+    "tr": { "zh": "一到春天，公园的樱花就开了。", "en": "When spring comes, the cherry trees in the park bloom." },
+    "why": { "zh": "「春」读「はる」（春天）。四季：春（はる）・夏（なつ）・秋（あき）・冬（ふゆ）。", "en": "「春」 is はる (spring). The seasons: 春 はる, 夏 なつ, 秋 あき, 冬 ふゆ." },
+    "wrong": [
+      null,
+      { "zh": "「なつ」是「夏」（夏天）。", "en": "なつ is 「夏」 (summer)." },
+      { "zh": "「あき」是「秋」（秋天）。", "en": "あき is 「秋」 (autumn)." },
+      { "zh": "「ふゆ」是「冬」（冬天）。", "en": "ふゆ is 「冬」 (winter)." }
+    ]
+  },
+  {
+    "id": "n4-mg-144",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "えきの まえに あたらしい <<映画館>>が できました。",
+    "options": ["えいがかん", "としょかん", "びじゅつかん", "たいしかん"],
+    "kj": "駅の前に新しい映画館ができました。",
+    "answer": 0,
+    "tr": { "zh": "车站前面新开了一家电影院。", "en": "A new cinema has opened in front of the station." },
+    "why": { "zh": "「映画（えいが）」+「館（かん）」：「えいがかん」（电影院）。", "en": "「映画」 is えいが and 「館」 is かん: えいがかん (cinema)." },
+    "wrong": [
+      null,
+      { "zh": "「としょかん」是「図書館」（图书馆）。", "en": "としょかん is 「図書館」 (library)." },
+      { "zh": "「びじゅつかん」是「美術館」（美术馆）。", "en": "びじゅつかん is 「美術館」 (art museum)." },
+      { "zh": "「たいしかん」是「大使館」（大使馆）。", "en": "たいしかん is 「大使館」 (embassy)." }
+    ]
+  },
+  {
+    "id": "n4-mg-145",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "きょうは <<青い>> シャツを きて いきます。",
+    "options": ["あおい", "あかい", "くろい", "しろい"],
+    "kj": "今日は青いシャツを着て行きます。",
+    "answer": 0,
+    "tr": { "zh": "今天穿蓝衬衫去。", "en": "I'll wear a blue shirt today." },
+    "why": { "zh": "「青い」读「あおい」（蓝）。", "en": "「青い」 is あおい (blue)." },
+    "wrong": [
+      null,
+      { "zh": "「あかい」是「赤い」（红）。", "en": "あかい is 「赤い」 (red)." },
+      { "zh": "「くろい」是「黒い」（黑）。", "en": "くろい is 「黒い」 (black)." },
+      { "zh": "「しろい」是「白い」（白）。", "en": "しろい is 「白い」 (white)." }
+    ]
+  },
+  {
+    "id": "n4-mg-146",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "てんきが いいので、えきまで <<歩いて>> いきました。",
+    "options": ["あるいて", "はしって", "およいで", "とおって"],
+    "kj": "天気がいいので、駅まで歩いて行きました。",
+    "answer": 0,
+    "tr": { "zh": "天气好，所以走着去了车站。", "en": "The weather was nice, so I walked to the station." },
+    "why": { "zh": "「歩く」读「あるく」（走），て形「あるいて」。", "en": "「歩く」 is あるく (to walk); te-form あるいて." },
+    "wrong": [
+      null,
+      { "zh": "「はしって」是「走って」（跑）。", "en": "はしって is 「走って」 (running)." },
+      { "zh": "「およいで」是「泳いで」（游泳）。", "en": "およいで is 「泳いで」 (swimming)." },
+      { "zh": "「とおって」是「通って」（通过）。", "en": "とおって is 「通って」 (passing through)." }
+    ]
+  },
+  {
+    "id": "n4-mg-147",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "この <<問題>>は むずかしくて、わかりません。",
+    "options": ["もんだい", "しつもん", "しゅくだい", "れんしゅう"],
+    "kj": "この問題は難しくて、分かりません。",
+    "answer": 0,
+    "tr": { "zh": "这道题太难，我不会。", "en": "This problem is so hard that I can't work it out." },
+    "why": { "zh": "「問（もん）」+「題（だい）」：「もんだい」（问题、题目）。", "en": "「問」 is もん and 「題」 is だい: もんだい (problem, question)." },
+    "wrong": [
+      null,
+      { "zh": "「しつもん」是「質問」（提问），「問」在后面。", "en": "しつもん is 「質問」 (a question you ask) — 「問」 comes second." },
+      { "zh": "「しゅくだい」是「宿題」（作业）。", "en": "しゅくだい is 「宿題」 (homework)." },
+      { "zh": "「れんしゅう」是「練習」（练习）。", "en": "れんしゅう is 「練習」 (practice)." }
+    ]
+  },
+  {
+    "id": "n4-mg-148",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "スーパーで <<牛肉>>を かって きて ください。",
+    "options": ["ぎゅうにく", "とりにく", "ぶたにく", "やきにく"],
+    "kj": "スーパーで牛肉を買ってきてください。",
+    "answer": 0,
+    "tr": { "zh": "请去超市买点牛肉回来。", "en": "Please pick up some beef at the supermarket." },
+    "why": { "zh": "「牛（ぎゅう）」+「肉（にく）」：「ぎゅうにく」（牛肉）。", "en": "「牛」 is ぎゅう and 「肉」 is にく: ぎゅうにく (beef)." },
+    "wrong": [
+      null,
+      { "zh": "「とりにく」是「鶏肉」（鸡肉）。", "en": "とりにく is 「鶏肉」 (chicken)." },
+      { "zh": "「ぶたにく」是「豚肉」（猪肉）。", "en": "ぶたにく is 「豚肉」 (pork)." },
+      { "zh": "「やきにく」是「焼肉」（烤肉）。", "en": "やきにく is 「焼肉」 (grilled meat)." }
+    ]
+  },
+  {
+    "id": "n4-mg-149",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "うりばが わからなかったので、<<店員>>に ききました。",
+    "options": ["てんいん", "えきいん", "しゃいん", "かいいん"],
+    "kj": "売り場が分からなかったので、店員に聞きました。",
+    "answer": 0,
+    "tr": { "zh": "我不知道柜台在哪儿，就问了店员。", "en": "I didn't know where the section was, so I asked a shop assistant." },
+    "why": { "zh": "「店（てん）」+「員（いん）」：「てんいん」（店员）。", "en": "「店」 is てん and 「員」 is いん: てんいん (shop assistant)." },
+    "wrong": [
+      null,
+      { "zh": "「えきいん」是「駅員」（车站工作人员）。", "en": "えきいん is 「駅員」 (station staff)." },
+      { "zh": "「しゃいん」是「社員」（公司职员）。", "en": "しゃいん is 「社員」 (company employee)." },
+      { "zh": "「かいいん」是「会員」（会员）。", "en": "かいいん is 「会員」 (member)." }
+    ]
+  },
+  {
+    "id": "n4-mg-150",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "あついので、まどを <<開けて>> ください。",
+    "options": ["あけて", "しめて", "つけて", "けして"],
+    "kj": "暑いので、窓を開けてください。",
+    "answer": 0,
+    "tr": { "zh": "太热了，请把窗户打开。", "en": "It's hot, so please open the window." },
+    "why": { "zh": "「開ける」读「あける」（打开），て形「あけて」。反义词：閉める（しめる）。", "en": "「開ける」 is あける (to open); te-form あけて. Opposite: 閉める (しめる)." },
+    "wrong": [
+      null,
+      { "zh": "「しめて」是「閉めて」（关上）。", "en": "しめて is 「閉めて」 (closing)." },
+      { "zh": "「つけて」是「点けて」（打开电器），一般写假名。", "en": "つけて means switching something on; it's usually written in kana." },
+      { "zh": "「けして」是「消して」（关掉）。", "en": "けして is 「消して」 (switching off)." }
+    ]
+  },
+  {
+    "id": "n4-mg-151",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "きょうは はやく うちへ <<帰ります>>。",
+    "options": ["かえります", "かわります", "もどります", "かいります"],
+    "kj": "今日は早くうちへ帰ります。",
+    "answer": 0,
+    "tr": { "zh": "今天早点回家。", "en": "I'm going home early today." },
+    "why": { "zh": "「帰る」读「かえる」（回去），ます形「かえります」。", "en": "「帰る」 is かえる (to go home): かえります." },
+    "wrong": [
+      null,
+      { "zh": "「かわります」是「変わります」（变化）。", "en": "かわります is 「変わります」 (to change)." },
+      { "zh": "「もどります」是「戻ります」（返回），是另一个词。", "en": "もどります is 「戻ります」 (to return) — a different word." },
+      { "zh": "第二个音是「え」，不是「い」。", "en": "The second sound is え, not い." }
+    ]
+  },
+  {
+    "id": "n4-mg-152",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "きのうの パーティーは とても <<楽しかった>>です。",
+    "options": ["たのしかった", "うれしかった", "らくしかった", "たのじかった"],
+    "kj": "昨日のパーティーはとても楽しかったです。",
+    "answer": 0,
+    "tr": { "zh": "昨天的聚会很开心。", "en": "Yesterday's party was a lot of fun." },
+    "why": { "zh": "「楽しい」读「たのしい」（开心、有意思），过去形「たのしかった」。", "en": "「楽しい」 is たのしい (fun); past たのしかった." },
+    "wrong": [
+      null,
+      { "zh": "「うれしかった」是「嬉しかった」（高兴），是另一个词。", "en": "うれしかった is 「嬉しかった」 (was glad) — a different word." },
+      { "zh": "「らく」是「楽」的音读（「楽な」＝轻松），「楽しい」不这样读。", "en": "らく is the reading in 「楽な」 (easy); 「楽しい」 isn't read that way." },
+      { "zh": "「し」不浊化。", "en": "The し isn't voiced." }
+    ]
+  },
+  {
+    "id": "n4-mg-153",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "ここに なまえと <<住所>>を かいて ください。",
+    "options": ["じゅうしょ", "じゅしょ", "ばしょ", "じゅうしょう"],
+    "kj": "ここに名前と住所を書いてください。",
+    "answer": 0,
+    "tr": { "zh": "请在这里写上姓名和地址。", "en": "Please write your name and address here." },
+    "why": { "zh": "「住（じゅう）」+「所（しょ）」：「じゅうしょ」（地址），前长后短。", "en": "「住」 is the long じゅう and 「所」 is the short しょ: じゅうしょ (address)." },
+    "wrong": [
+      null,
+      { "zh": "「住」是长音「じゅう」，少了「う」。", "en": "「住」 is the long じゅう; the う is missing." },
+      { "zh": "「ばしょ」是「場所」（地方）。", "en": "ばしょ is 「場所」 (place)." },
+      { "zh": "「所」是短音「しょ」，不拉长。", "en": "「所」 is the short しょ, not しょう." }
+    ]
+  },
+  {
+    "id": "n4-mg-154",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "りょこうの あいだ、となりの ひとが いぬの <<世話>>を して くれました。",
+    "options": ["せわ", "せいわ", "かいわ", "せはなし"],
+    "kj": "旅行の間、隣の人が犬の世話をしてくれました。",
+    "answer": 0,
+    "tr": { "zh": "旅行期间，邻居帮我照顾了狗。", "en": "While I was travelling, my neighbour looked after my dog." },
+    "why": { "zh": "「世（せ）」+「話（わ）」：「せわ」（照顾）。常用「世話を する」。", "en": "「世」 is せ and 「話」 is わ: せわ (care). Usually 「世話を する」." },
+    "wrong": [
+      null,
+      { "zh": "「世」在这里读短音「せ」，不是「せい」。", "en": "「世」 is the short せ here, not せい." },
+      { "zh": "「かいわ」是「会話」（会话）。", "en": "かいわ is 「会話」 (conversation)." },
+      { "zh": "「話」在这里用音读「わ」，不读「はなし」。", "en": "「話」 is read わ here, not はなし." }
+    ]
+  },
+  {
+    "id": "n4-mg-155",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "あの みせでは めずらしい くだものを <<売って>> います。",
+    "options": ["うって", "かって", "うりって", "うて"],
+    "kj": "あの店では珍しい果物を売っています。",
+    "answer": 0,
+    "tr": { "zh": "那家店卖少见的水果。", "en": "That shop sells unusual fruit." },
+    "why": { "zh": "「売る」读「うる」（卖），て形「うって」。反义词：買う（かう）。", "en": "「売る」 is うる (to sell); te-form うって. Opposite: 買う (かう)." },
+    "wrong": [
+      null,
+      { "zh": "「かって」是「買って」（买）。", "en": "かって is 「買って」 (buying)." },
+      { "zh": "て形是「うって」，没有「り」。", "en": "The te-form is うって — there's no り." },
+      { "zh": "少了促音「っ」。", "en": "Missing the small っ." }
+    ]
   }
 ]

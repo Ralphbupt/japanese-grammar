@@ -581,5 +581,45 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n3-l41-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson41#4"
+    ],
+    "difficulty": 2,
+    "stem": "時間があるときは何もないのに、急いでいるとき（　）信号が赤だったり電車が遅れたりする。",
+    "options": [
+      "に限らず",
+      "に比べて",
+      "に限って",
+      "にとって"
+    ],
+    "answer": 2,
+    "full": "時間があるときは何もないのに、急いでいるときに限って信号が赤だったり電車が遅れたりする。",
+    "tr": {
+      "zh": "有时间的时候什么事都没有，偏偏赶时间的时候不是红灯就是电车晚点。",
+      "en": "Nothing happens when I have time, but it's precisely when I'm in a hurry that the lights are red or the train is late."
+    },
+    "why": {
+      "zh": "线索：「時間があるときは何もないのに」和「急いでいるとき」形成对比，后面是不巧的事。\n规则：「名词＋に限って」＝偏偏在……的时候，表示“不巧，只有这种时候才发生不希望的事”。\n辨析：「〜に限って」＝偏偏只有……（急いでいるときに限って）；「〜に限らず」＝不只是……，其他也一样，和前半句「時間があるときは何もない」矛盾。",
+      "en": "Clue: 「時間があるときは何もないのに」 is set against 「急いでいるとき」, and what follows is bad luck.\nRule: Noun + 「に限って」 = \"precisely when …, of all times\": the unwelcome thing happens only on that occasion.\nContrast: 「〜に限って」 = only on that occasion (急いでいるときに限って); 「〜に限らず」 = not only then but at other times too, which contradicts 「時間があるときは何もない」."
+    },
+    "wrong": [
+      {
+        "zh": "「に限らず」是“不只是……”，可是前半句说有时间的时候什么事都没有，前后矛盾。",
+        "en": "「に限らず」 means \"not only …\", but the first half says nothing happens when there is time, so it contradicts itself."
+      },
+      {
+        "zh": "「に比べて」是“和……相比”，后面要有比较的内容（多い、高い等），这里没有。",
+        "en": "「に比べて」 means \"compared with\" and needs a comparison after it (多い, 高い …); there is none here."
+      },
+      null,
+      {
+        "zh": "「にとって」是“对……来说”，前面一般是人或组织，后面接评价。",
+        "en": "「にとって」 means \"for …\"; it usually follows a person or group and is followed by a judgement."
+      }
+    ]
   }
 ]

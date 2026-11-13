@@ -1132,5 +1132,175 @@
         "en": "There's a long ー after the first ス."
       }
     ]
+  },
+  {
+    "id": "n4-mg-231",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "ははの たんじょうびに ケーキを <<つくりました>>。",
+    "options": ["作りました", "昨りました", "使りました", "作くりました"],
+    "kj": "母の誕生日にケーキを作りました。",
+    "answer": 0,
+    "tr": { "zh": "妈妈生日那天我做了蛋糕。", "en": "I made a cake for my mother's birthday." },
+    "why": { "zh": "「つくります」（做）写作「作ります」：单人旁加「乍」，假名从「り」开始。", "en": "つくります (to make) is 「作ります」: the person radical plus 「乍」, with kana from り." },
+    "wrong": [
+      null,
+      { "zh": "「昨」是「昨日」（昨天）的字，日字旁。", "en": "「昨」 is the kanji in 「昨日」 (yesterday) — it has the 日 radical." },
+      { "zh": "「使」是「つかいます」（使用）的字。", "en": "「使」 is the kanji of つかいます (to use)." },
+      { "zh": "多了「く」：「作」已经读「つく」。", "en": "The く is extra: 「作」 already reads つく." }
+    ]
+  },
+  {
+    "id": "n4-mg-232",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "えきの まえで ともだちを 30ぷん <<まちました>>。",
+    "options": ["待ちました", "持ちました", "特ちました", "時ちました"],
+    "kj": "駅の前で友だちを30分待ちました。",
+    "answer": 0,
+    "tr": { "zh": "我在车站前等了朋友三十分钟。", "en": "I waited thirty minutes for my friend in front of the station." },
+    "why": { "zh": "「まちます」（等）写作「待ちます」，双人旁「彳」。", "en": "まちます (to wait) is 「待ちます」, with the 彳 radical." },
+    "wrong": [
+      null,
+      { "zh": "「持ちました」读「もちました」（拿），提手旁。", "en": "「持ちました」 reads もちました (held) — it has the hand radical." },
+      { "zh": "「特」读「とく」（特别），牛字旁。", "en": "「特」 is とく (special), with the 牛 radical." },
+      { "zh": "「時」读「とき」「じ」（时间），日字旁。", "en": "「時」 is とき / じ (time), with the 日 radical." }
+    ]
+  },
+  {
+    "id": "n4-mg-233",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "この かいぎしつを <<つかって>>も いいですか。",
+    "options": ["使って", "便って", "仕って", "使かって"],
+    "kj": "この会議室を使ってもいいですか。",
+    "answer": 0,
+    "tr": { "zh": "可以用这间会议室吗？", "en": "May I use this meeting room?" },
+    "why": { "zh": "「つかいます」（使用）写作「使います」，て形「使って」。", "en": "つかいます (to use) is 「使います」; te-form 「使って」." },
+    "wrong": [
+      null,
+      { "zh": "「便」是「便利」（方便）的字，右边不一样。", "en": "「便」 is the kanji in 「便利」 (convenient); its right side is different." },
+      { "zh": "「仕」是「仕事」（工作）的字，右边是「士」。", "en": "「仕」 is the kanji in 「仕事」 (work), with 「士」 on the right." },
+      { "zh": "多了「か」：「使」已经读「つか」。", "en": "The か is extra: 「使」 already reads つか." }
+    ]
+  },
+  {
+    "id": "n4-mg-234",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "もう いちど よく <<かんがえて>> ください。",
+    "options": ["考えて", "考がえて", "老えて", "孝えて"],
+    "kj": "もう一度よく考えてください。",
+    "answer": 0,
+    "tr": { "zh": "请再好好想一想。", "en": "Please think it over carefully once more." },
+    "why": { "zh": "「かんがえます」（思考）写作「考えます」，假名从「え」开始。", "en": "かんがえます (to think) is 「考えます」, with kana from え." },
+    "wrong": [
+      null,
+      { "zh": "多了「が」：「考」已经读「かんが」。", "en": "The が is extra: 「考」 already reads かんが." },
+      { "zh": "「老」读「ろう」（老），下面是「匕」。", "en": "「老」 is ろう (old age), with 「匕」 at the bottom." },
+      { "zh": "「孝」读「こう」（孝），下面是「子」。", "en": "「孝」 is こう (filial duty), with 「子」 at the bottom." }
+    ]
+  },
+  {
+    "id": "n4-mg-235",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "まいあさ 6じに <<おきて>>、さんぽを します。",
+    "options": ["起きて", "起て", "走きて", "越きて"],
+    "kj": "毎朝6時に起きて、散歩をします。",
+    "answer": 0,
+    "tr": { "zh": "我每天早上六点起床，然后去散步。", "en": "I get up at six every morning and go for a walk." },
+    "why": { "zh": "「おきます」（起床）写作「起きます」：「走」加「己」，假名从「き」开始。", "en": "おきます (to get up) is 「起きます」: 「走」 plus 「己」, with kana from き." },
+    "wrong": [
+      null,
+      { "zh": "少了「き」：假名要写「きて」。", "en": "The き is missing: the kana part is きて." },
+      { "zh": "「走」是「はしります」（跑）的字，没有右边的「己」。", "en": "「走」 is the kanji of はしります (to run) — it lacks 「己」." },
+      { "zh": "「越」读「こえる」（越过），右边不是「己」。", "en": "「越」 is こえる (to cross over); its right side isn't 「己」." }
+    ]
+  },
+  {
+    "id": "n4-mg-236",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "この へやは まどが おおきくて <<あかるい>>です。",
+    "options": ["明るい", "明い", "明かるい", "朋るい"],
+    "kj": "この部屋は窓が大きくて明るいです。",
+    "answer": 0,
+    "tr": { "zh": "这个房间窗户大，很明亮。", "en": "This room has big windows and is bright." },
+    "why": { "zh": "「あかるい」（明亮）写作「明るい」：「日」+「月」，假名是「るい」。", "en": "あかるい (bright) is 「明るい」: 「日」 + 「月」, with るい in kana." },
+    "wrong": [
+      null,
+      { "zh": "少了「る」：假名要写「るい」。", "en": "The る is missing: the kana part is るい." },
+      { "zh": "多了「か」：「明」已经读「あか」。", "en": "The か is extra: 「明」 already reads あか." },
+      { "zh": "「朋」是两个「月」，读「ほう」。", "en": "「朋」 is two 「月」 and reads ほう." }
+    ]
+  },
+  {
+    "id": "n4-mg-237",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "きょうは てんきが <<わるい>>ので、でかけません。",
+    "options": ["悪い", "悪るい", "思い", "亜い"],
+    "kj": "今日は天気が悪いので、出かけません。",
+    "answer": 0,
+    "tr": { "zh": "今天天气不好，所以不出门。", "en": "The weather is bad today, so I'm not going out." },
+    "why": { "zh": "「わるい」（坏、不好）写作「悪い」：「亜」下面加「心」，假名只有「い」。", "en": "わるい (bad) is 「悪い」: 「亜」 with 「心」 underneath, and only い in kana." },
+    "wrong": [
+      null,
+      { "zh": "多了「る」：「悪」已经读「わる」。", "en": "The る is extra: 「悪」 already reads わる." },
+      { "zh": "「思」是「おもいます」（想）的字，上面是「田」。", "en": "「思」 is the kanji of おもいます (to think), with 「田」 on top." },
+      { "zh": "「亜」读「あ」，下面少了「心」。", "en": "「亜」 is あ — the 「心」 underneath is missing." }
+    ]
+  },
+  {
+    "id": "n4-mg-238",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "きょうは かぜが <<つよい>>です。",
+    "options": ["強い", "弱い", "強よい", "引い"],
+    "kj": "今日は風が強いです。",
+    "answer": 0,
+    "tr": { "zh": "今天风很大。", "en": "The wind is strong today." },
+    "why": { "zh": "「つよい」（强）写作「強い」，假名只有「い」。反义词：弱い（よわい）。", "en": "つよい (strong) is 「強い」, with only い in kana. Opposite: 弱い (よわい)." },
+    "wrong": [
+      null,
+      { "zh": "「弱い」读「よわい」（弱），意思相反。", "en": "「弱い」 reads よわい (weak) — the opposite." },
+      { "zh": "多了「よ」：「強」已经读「つよ」。", "en": "The よ is extra: 「強」 already reads つよ." },
+      { "zh": "「引」是「ひきます」（拉）的字，只有弓字旁和一竖。", "en": "「引」 is the kanji of ひきます (to pull) — just the bow radical and a line." }
+    ]
+  },
+  {
+    "id": "n4-mg-239",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "たんじょうびに ともだちから <<ぷれぜんと>>を もらいました。",
+    "options": ["プレゼント", "プレセント", "プレザント", "プレゼソト"],
+    "kj": "誕生日に友だちからプレゼントをもらいました。",
+    "answer": 0,
+    "tr": { "zh": "生日那天朋友送了我礼物。", "en": "I got a present from a friend on my birthday." },
+    "why": { "zh": "「ぷれぜんと」（礼物）写作「プレゼント」。", "en": "ぷれぜんと (present) is 「プレゼント」." },
+    "wrong": [
+      null,
+      { "zh": "「ぜ」是浊音「ゼ」，不是「セ」。", "en": "ぜ is voiced: ゼ, not セ." },
+      { "zh": "「ぜ」是「ゼ」，「ザ」是「ざ」。", "en": "ぜ is ゼ; ザ is ざ." },
+      { "zh": "「ン」（n）写成了「ソ」（so），两个字很像。", "en": "ン (n) has been written as ソ (so) — they look alike." }
+    ]
+  },
+  {
+    "id": "n4-mg-240",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "この りょうりは へんな <<あじ>>が します。",
+    "options": ["味", "妹", "未", "呼"],
+    "kj": "この料理は変な味がします。",
+    "answer": 0,
+    "tr": { "zh": "这道菜有股怪味。", "en": "This dish tastes strange." },
+    "why": { "zh": "「あじ」（味道）写作「味」：口字旁加「未」。", "en": "あじ (taste) is 「味」: the mouth radical plus 「未」." },
+    "wrong": [
+      null,
+      { "zh": "「妹」读「いもうと」（妹妹），女字旁。", "en": "「妹」 is いもうと (younger sister), with the 女 radical." },
+      { "zh": "「未」读「み」，少了口字旁。", "en": "「未」 is み — the mouth radical is missing." },
+      { "zh": "「呼」是「よびます」（叫）的字，右边不一样。", "en": "「呼」 is the kanji of よびます (to call); its right side is different." }
+    ]
   }
 ]

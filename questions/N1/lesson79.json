@@ -694,5 +694,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n1-l79-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#1"
+    ],
+    "difficulty": 3,
+    "stem": "国や自治体の公共事業の予算は納税者から預かった貴重な財源である以上、一円たりとも（　）。",
+    "options": [
+      "無駄にしないとも限らない",
+      "無駄にしないわけにはいかない",
+      "無駄にするわけにはいかない",
+      "無駄にしないではおかない"
+    ],
+    "answer": 2,
+    "full": "国や自治体の公共事業の予算は納税者から預かった貴重な財源である以上、一円たりとも無駄にするわけにはいかない。",
+    "tr": {
+      "zh": "国家和地方政府的公共事业预算既然是纳税人托付的宝贵财源，哪怕一日元也不能浪费。",
+      "en": "Since the budgets of national and local public works are precious money entrusted by taxpayers, not even a single yen may be wasted."
+    },
+    "why": {
+      "zh": "线索：「一円たりとも」后面必须是否定意思的谓语；前面的「〜以上」（既然）引出的是义务。\n规则：「一＋量词＋たりとも〜ない」＝哪怕一……也不……；「〜わけにはいかない」＝（从道理、立场上）不能……。合起来是“一日元也不能浪费”。\n辨析：「〜ないではおかない」形式上有「ない」，意思却是肯定的“一定会……”：「この事件は社会に衝撃を与えないではおかない」。",
+      "en": "Clue: 「一円たりとも」 must be followed by a predicate that is negative in meaning, and 「〜以上」 (since) leads to an obligation.\nRule: 「一 + counter + たりとも〜ない」 = not even one …; 「〜わけにはいかない」 = cannot (given one's position). Together: not one yen may be wasted.\nContrast: 「〜ないではおかない」 contains 「ない」 but is positive in meaning, \"will certainly …\": 「この事件は社会に衝撃を与えないではおかない」."
+    },
+    "wrong": [
+      {
+        "zh": "「〜ないとも限らない」是“说不定会浪费”，是肯定方向的推测，接不了「たりとも」，也不是「以上」要引出的义务。",
+        "en": "「〜ないとも限らない」 means \"might well waste it\" — positive in meaning, so it can't follow 「たりとも」, nor is it the obligation 「以上」 calls for."
+      },
+      {
+        "zh": "「〜ないわけにはいかない」是“不能不……”，变成“不能不浪费”，意思反了。",
+        "en": "「〜ないわけにはいかない」 means \"cannot not …\", giving \"it has to be wasted\" — the reverse of what is meant."
+      },
+      null,
+      {
+        "zh": "「〜ないではおかない」是“一定会……”，变成“一定会浪费掉”，意思反了。",
+        "en": "「〜ないではおかない」 means \"will certainly …\", giving \"will certainly waste it\" — the reverse."
+      }
+    ]
+  },
+  {
+    "id": "n1-l79-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#3"
+    ],
+    "difficulty": 2,
+    "stem": "三十年に及ぶ地道な観測の末、彼は七十歳（　）ようやく長年の仮説を裏づける証拠を手にすることができた。",
+    "options": [
+      "として",
+      "にあって",
+      "をもって",
+      "にして"
+    ],
+    "answer": 3,
+    "full": "三十年に及ぶ地道な観測の末、彼は七十歳にしてようやく長年の仮説を裏づける証拠を手にすることができた。",
+    "tr": {
+      "zh": "经过长达三十年踏实的观测，他到了七十岁才终于拿到了能证实多年假说的证据。",
+      "en": "After thirty years of patient observation, it was only at seventy that he finally obtained evidence supporting his long-held hypothesis."
+    },
+    "why": {
+      "zh": "线索：空格前是年龄「七十歳」，后面有「ようやく」（终于）。\n规则：「年龄・次数・阶段＋にして＋ようやく／初めて」＝到了……才……，强调花了很长时间才达到：「三度目にしてようやく合格した」。\n辨析：「〜をもって」接时间时是正式宣布“以……为期（结束）”：「本日をもって閉店いたします」，不表示“到了这个年纪才”。",
+      "en": "Clue: An age, 「七十歳」, comes before the blank and 「ようやく」 (at last) after it.\nRule: age / number of tries / stage + 「にして」 + 「ようやく／初めて」 = only at …, stressing how long it took: 「三度目にしてようやく合格した」.\nContrast: With a time, 「〜をもって」 formally announces \"as of … (something ends)\": 「本日をもって閉店いたします」; it doesn't mean \"not until that age\"."
+    },
+    "wrong": [
+      {
+        "zh": "「〜として」表示身份、立场，“作为七十岁”说不通。",
+        "en": "「〜として」 marks a role or capacity; \"as seventy years old\" makes no sense."
+      },
+      {
+        "zh": "「〜にあって」是“处在……（状况、时代）之中”，前面接状况、场所，不接年龄来表示“才”。",
+        "en": "「〜にあって」 means \"in (a situation, an era)\"; it follows situations or places, not an age in the sense of \"only at\"."
+      },
+      {
+        "zh": "「〜をもって」接时间表示“以……为期结束”，后面不接「ようやく〜できた」。",
+        "en": "「〜をもって」 with a time means \"ending as of …\" and isn't followed by 「ようやく〜できた」."
+      },
+      null
+    ]
   }
 ]

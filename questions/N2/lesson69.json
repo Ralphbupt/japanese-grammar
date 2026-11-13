@@ -701,5 +701,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l69-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson69#5"
+    ],
+    "difficulty": 2,
+    "stem": "引っ越し先は急いで決めず、家賃や通勤時間などの条件をいくつかの物件で（　）と思っている。",
+    "options": [
+      "比較した上で決めよう",
+      "比較したとたん決めよう",
+      "比較したあげく決めよう",
+      "比較しつつも決めよう"
+    ],
+    "answer": 0,
+    "full": "引っ越し先は急いで決めず、家賃や通勤時間などの条件をいくつかの物件で比較した上で決めようと思っている。",
+    "tr": {
+      "zh": "搬去哪里我不打算急着定，想先把几处房子的房租、通勤时间等条件比较一下再决定。",
+      "en": "I'm not going to rush the choice of where to move; I plan to compare the rent, commuting time and other conditions of several places and then decide."
+    },
+    "why": {
+      "zh": "线索：「急いで決めず」＋句尾的意志「決めよう」：先比较，再在此基础上决定。\n规则：「动词た形＋上で」＝先做好A，以A的结果为前提再做B；后面常接有意识的行动（「決める」「返事する」「申し込む」）。\n辨析：「〜たあげく」是“折腾了很久，结果（多为不好的事）”，只用来说已经发生的结果（「迷ったあげく、買わなかった」）；说今后打算怎么做用「〜た上で」。",
+      "en": "Clue: 「急いで決めず」 plus the volitional ending 「決めよう」: compare first, then decide on that basis.\nRule: 「verb ta-form ＋ 上で」 = do A properly first, then do B based on its result; a deliberate action usually follows (「決める」「返事する」「申し込む」).\nContrast: 「〜たあげく」 means \"after a long struggle, (usually something bad) resulted\" and only reports what has already happened (「迷ったあげく、買わなかった」); for what you intend to do, use 「〜た上で」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たとたん」是“刚一……就（突然发生）”，后面是没料到的事，不能接意志「決めよう」，也和「急いで決めず」矛盾。",
+        "en": "「たとたん」 means \"the moment … (something suddenly happened)\"; it can't be followed by the volitional 「決めよう」, and it contradicts 「急いで決めず」."
+      },
+      {
+        "zh": "「たあげく」叙述折腾很久之后已经出现的（多为不好的）结果，后面不能接表示打算的「決めよう」。",
+        "en": "「たあげく」 reports a (usually bad) outcome that has already come after a long struggle; the intention 「決めよう」 can't follow it."
+      },
+      {
+        "zh": "「つつも」是“虽然……却”，表示转折；比较条件和做决定之间没有转折关系。",
+        "en": "「つつも」 means \"although … yet\", a concession; there is no such contrast between comparing the conditions and deciding."
+      }
+    ]
+  },
+  {
+    "id": "n2-l69-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson69#1"
+    ],
+    "difficulty": 2,
+    "stem": "駅前の再開発工事は当初の計画（　）進められており、予定どおり来年三月には完成する見込みだという。",
+    "options": [
+      "に際して",
+      "にわたって",
+      "に先立って",
+      "に沿って"
+    ],
+    "answer": 3,
+    "full": "駅前の再開発工事は当初の計画に沿って進められており、予定どおり来年三月には完成する見込みだという。",
+    "tr": {
+      "zh": "据说站前的再开发工程正按照最初的计划推进，预计将如期在明年三月完工。",
+      "en": "The redevelopment work in front of the station is reportedly proceeding in line with the original plan and is expected to be finished next March as scheduled."
+    },
+    "why": {
+      "zh": "线索：「計画」＋「進められており」，后面又说「予定どおり」：工程是照着计划走的。\n规则：「名词＋に沿って」＝不偏离某个方针、计划、要求来做事（「方針に沿って」「計画に沿って」「ご希望に沿って」）。\n辨析：「に先立って」是“在……之前（先做准备）”，前面是将要进行的大事（「工事に先立って説明会を開く」），表示时间先后；「に沿って」表示依据的基准。",
+      "en": "Clue: 「計画」 with 「進められており」, and then 「予定どおり」: the work is following the plan.\nRule: 「noun ＋ に沿って」 = doing something without departing from a policy, plan or request (「方針に沿って」「計画に沿って」「ご希望に沿って」).\nContrast: 「に先立って」 means \"ahead of … (as preparation)\" and follows a coming event (「工事に先立って説明会を開く」); it is about order in time, while 「に沿って」 gives the standard being followed."
+    },
+    "wrong": [
+      {
+        "zh": "「に際して」是“在……之际”，前面是开始、出发等时刻或事件，不表示“按照计划”。",
+        "en": "「に際して」 means \"on the occasion of\" and follows a moment or event such as a start or departure; it doesn't mean \"according to the plan\"."
+      },
+      {
+        "zh": "「にわたって」前面是时间、范围的长度（「三年にわたって」），「計画」不是范围。",
+        "en": "「にわたって」 follows a span of time or area (「三年にわたって」); 「計画」 is not a span."
+      },
+      {
+        "zh": "「に先立って」是“在……之前”；“在计划之前推进工程”说不通。",
+        "en": "「に先立って」 means \"prior to\"; \"the work is proceeding prior to the plan\" makes no sense."
+      },
+      null
+    ]
   }
 ]

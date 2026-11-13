@@ -696,5 +696,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n1-l85-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson85#1"
+    ],
+    "difficulty": 2,
+    "stem": "環境問題への取り組みが現代の企業に課せられた社会的責任であることは、今さら改めて（　）。",
+    "options": [
+      "指摘するにかたくない",
+      "指摘するまでのことだ",
+      "指摘するまでもあるまい",
+      "指摘するに足るであろう"
+    ],
+    "answer": 2,
+    "full": "環境問題への取り組みが現代の企業に課せられた社会的責任であることは、今さら改めて指摘するまでもあるまい。",
+    "tr": {
+      "zh": "致力于环境问题是现代企业肩负的社会责任，这一点如今已无需再提了吧。",
+      "en": "That tackling environmental problems is a social responsibility placed on today's companies hardly needs pointing out again at this stage."
+    },
+    "why": {
+      "zh": "线索：空格前有「今さら改めて」（事到如今再特意……），说的是大家都已经知道的事。\n规则：「动词辞书形＋までもない」＝用不着……；「あるまい」是书面的「ないだろう」。「今さら〜までもない」是固定的搭配。\n辨析：「〜までのことだ」是“大不了……就是了／只不过……而已”：「断られたら、別の方法を探すまでのことだ」，说的是打算或解释，和「今さら」的“没必要”相反。",
+      "en": "Clue: 「今さら改めて」 (again, at this late stage) comes before the blank — the point is already common knowledge.\nRule: dictionary form + 「までもない」 = there is no need to …; 「あるまい」 is written-style 「ないだろう」. 「今さら〜までもない」 is a set combination.\nContrast: 「〜までのことだ」 means \"I'll simply … / it is merely that …\": 「断られたら、別の方法を探すまでのことだ」 — an intention or explanation, the opposite of the \"no need\" that 「今さら」 signals."
+    },
+    "wrong": [
+      {
+        "zh": "「〜にかたくない」只接「想像する」「察する」等少数词，表示“不难……”，不接「指摘する」。",
+        "en": "「〜にかたくない」 (\"not hard to …\") follows only a few words such as 「想像する」「察する」, not 「指摘する」."
+      },
+      {
+        "zh": "「〜までのことだ」是“只要……就是了”，表示打算，和「今さら」的“没有必要”矛盾。",
+        "en": "「〜までのことだ」 (\"I'll just …\") states an intention and clashes with the \"no need now\" of 「今さら」."
+      },
+      null,
+      {
+        "zh": "「〜に足る」是“值得……”，“事到如今值得再指出”和「今さら」不搭。",
+        "en": "「〜に足る」 means \"worth …\"; \"worth pointing out again at this stage\" doesn't go with 「今さら」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l85-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson85#6"
+    ],
+    "difficulty": 2,
+    "stem": "戦後の混乱期に幼くして両親を亡くした彼が、どれほど心細い思いで少年時代を過ごしたかは（　）。",
+    "options": [
+      "想像するにかたくない",
+      "想像するに足りないのだ",
+      "想像してやまないのだ",
+      "想像の極みなのである"
+    ],
+    "answer": 0,
+    "full": "戦後の混乱期に幼くして両親を亡くした彼が、どれほど心細い思いで少年時代を過ごしたかは想像するにかたくない。",
+    "tr": {
+      "zh": "在战后的混乱时期年幼丧失双亲的他，是怀着多么无助的心情度过少年时代的，不难想象。",
+      "en": "It is not hard to imagine how forlorn he must have felt through his boyhood, having lost both parents as a small child in the chaos after the war."
+    },
+    "why": {
+      "zh": "线索：主题是「どれほど〜過ごしたかは」（有多么……），说的是别人的处境，一想就能明白。\n规则：「想像（する）／察する＋にかたくない」＝不难想象、不难体会，书面语，只和这几个词搭配。\n辨析：「〜に足りない」是“不值得……”：「取るに足りない問題」。用在这里变成“他的痛苦不值得去想”，和同情的语气相反。",
+      "en": "Clue: The topic is 「どれほど〜過ごしたかは」 (how very …) — someone else's plight, easy to picture.\nRule: 「想像（する）／察する + にかたくない」 = it is not hard to imagine / to appreciate; written style, used only with these few words.\nContrast: 「〜に足りない」 means \"not worth …\": 「取るに足りない問題」. Here it would say his suffering isn't worth thinking about — the opposite of sympathy."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜に足りない」是“不值得想象”，和对他的同情相反。",
+        "en": "「〜に足りない」 would mean \"not worth imagining\", the opposite of the sympathy intended."
+      },
+      {
+        "zh": "「〜てやまない」接「願う」「祈る」「愛する」等，表示一直怀着某种感情，不接「想像する」。",
+        "en": "「〜てやまない」 follows verbs like 「願う」「祈る」「愛する」 for a feeling one never ceases to hold; it doesn't take 「想像する」."
+      },
+      {
+        "zh": "「〜の極み」接「感激」「痛恨」等表示感情到了极点，“想象的极点”说不通。",
+        "en": "「〜の極み」 follows words like 「感激」「痛恨」 for an emotion at its height; \"the height of imagination\" makes no sense here."
+      }
+    ]
   }
 ]

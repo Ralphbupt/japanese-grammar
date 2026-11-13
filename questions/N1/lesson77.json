@@ -811,5 +811,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n1-l77-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson77#6"
+    ],
+    "difficulty": 3,
+    "stem": "統計によれば中高年の読書量も年々減っており、本を読まなくなったのは何も若い世代（　）。",
+    "options": [
+      "をおいてほかにあるまい",
+      "に限った話ではあるまい",
+      "ならではのことであろう",
+      "にとどまるものであろう"
+    ],
+    "answer": 1,
+    "full": "統計によれば中高年の読書量も年々減っており、本を読まなくなったのは何も若い世代に限った話ではあるまい。",
+    "tr": {
+      "zh": "据统计，中老年人的阅读量也在逐年减少，不读书的恐怕并不只是年轻一代。",
+      "en": "According to the statistics, middle-aged and older people are also reading less every year; it is surely not only the younger generation that has stopped reading."
+    },
+    "why": {
+      "zh": "线索：前半句说「中高年の読書量も」减少，空格前又有「何も」（并不是……）。\n规则：「何も〜に限ったことではない／に限った話ではない」＝并不只是……才这样，别处也一样；「あるまい」是书面的「ないだろう」。\n辨析：「〜をおいてほかにない」正好相反，是“除了……没有别的”：「この仕事を任せられるのは彼をおいてほかにいない」。前面既然说中老年人也一样，就不能再说只有年轻人。",
+      "en": "Clue: The first half says 「中高年の読書量も」 is falling, and 「何も」 (not particularly …) stands before the blank.\nRule: 「何も〜に限ったことではない／に限った話ではない」 = it isn't only … — the same is true elsewhere; 「あるまい」 is written-style 「ないだろう」.\nContrast: 「〜をおいてほかにない」 says the opposite, \"none other than …\": 「この仕事を任せられるのは彼をおいてほかにいない」. Having just said older people do it too, the sentence can't single out the young."
+    },
+    "wrong": [
+      {
+        "zh": "「〜をおいてほかにあるまい」是“除了年轻一代没有别人”，和前面“中老年人也在减少”矛盾。",
+        "en": "「〜をおいてほかにあるまい」 would mean \"none other than the young\", contradicting the first half about older people."
+      },
+      null,
+      {
+        "zh": "「〜ならではのこと」是“只有年轻一代才有的事”，带褒义，也和前半句矛盾。",
+        "en": "「〜ならではのこと」 means \"something only the young could do\", usually as praise, and also contradicts the first half."
+      },
+      {
+        "zh": "「〜にとどまる」是“只限于年轻一代”，和「中高年も」矛盾，前面的「何も」也没有着落。",
+        "en": "「〜にとどまる」 means \"is confined to the young\", contradicting 「中高年も」 and leaving 「何も」 with nothing to attach to."
+      }
+    ]
+  },
+  {
+    "id": "n1-l77-023",
+    "type": "bunpou",
+    "refs": [
+      "lesson77#7"
+    ],
+    "difficulty": 2,
+    "stem": "創業以来百年にわたり地域の人々に親しまれてきたこの書店も、今月末（　）その歴史に幕を下ろすことになった。",
+    "options": [
+      "を皮切りに",
+      "をおいて",
+      "をよそに",
+      "を限りに"
+    ],
+    "answer": 3,
+    "full": "創業以来百年にわたり地域の人々に親しまれてきたこの書店も、今月末を限りにその歴史に幕を下ろすことになった。",
+    "tr": {
+      "zh": "这家创业百年来一直受到当地人喜爱的书店，也将在本月底结束它的历史。",
+      "en": "This bookshop, loved by local people for a hundred years since its founding, will also bring its history to a close at the end of this month."
+    },
+    "why": {
+      "zh": "线索：空格前是时间「今月末」，后面是「歴史に幕を下ろす」（落幕、结束）。\n规则：「时间＋を限りに」＝以……为最后，此后不再继续：「今日を限りに」「今年度を限りに」。\n辨析：「〜を皮切りに」方向相反，是“以……为开端，接下来陆续……”：「東京公演を皮切りに、全国を回る」。看后面是结束还是开始。",
+      "en": "Clue: A time, 「今月末」, comes before the blank, and 「歴史に幕を下ろす」 (bring down the curtain) after it.\nRule: time + 「を限りに」 = with … as the last, never again afterwards: 「今日を限りに」「今年度を限りに」.\nContrast: 「〜を皮切りに」 points the other way — \"starting with …, more follow\": 「東京公演を皮切りに、全国を回る」. Check whether what follows is an end or a beginning."
+    },
+    "wrong": [
+      {
+        "zh": "「〜を皮切りに」表示开端，后面要接陆续展开的事，和“落幕”相反。",
+        "en": "「〜を皮切りに」 marks a beginning followed by more of the same — the opposite of closing down."
+      },
+      {
+        "zh": "「〜をおいて」要和「ほかにない」呼应，表示“除了……没有别的”，这里后面没有否定。",
+        "en": "「〜をおいて」 pairs with 「ほかにない」 (\"none but …\"); there is no negative here."
+      },
+      {
+        "zh": "「〜をよそに」是“不顾（别人的担心、反对）”，前面接担心、批评等，不接时间。",
+        "en": "「〜をよそに」 means \"ignoring (worries, opposition)\"; it follows words like concern or criticism, not a date."
+      },
+      null
+    ]
   }
 ]

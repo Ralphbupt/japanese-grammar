@@ -695,5 +695,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n3-l55-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson55#5"
+    ],
+    "difficulty": 2,
+    "stem": "日本に長く住んでいる外国人が、みんな日本語の新聞を（　）。話せても読めない人は多いです。",
+    "options": [
+      "読めるに決まっています",
+      "読んだことがあります",
+      "読めるとは限りません",
+      "読めることになっています"
+    ],
+    "answer": 2,
+    "full": "日本に長く住んでいる外国人が、みんな日本語の新聞を読めるとは限りません。話せても読めない人は多いです。",
+    "tr": {
+      "zh": "长期住在日本的外国人，未必都能看懂日语报纸。会说却不会读的人很多。",
+      "en": "Not every foreigner who has lived in Japan for a long time can read a Japanese newspaper. Many can speak but not read."
+    },
+    "why": {
+      "zh": "线索：后一句「話せても読めない人は多いです」举出了例外，所以前一句不能说“都能读”。\n规则：「普通形＋とは限らない」＝未必……、不一定……，否定“一般都认为是这样”的想法，常和「みんな」「いつも」「必ず」一起用。\n辨析：「読めるとは限らない」＝不一定能读（有例外）；「読めるに決まっている」＝肯定能读（没有例外），和后一句正好矛盾。",
+      "en": "Clue: The second sentence, 「話せても読めない人は多いです」, gives exceptions, so the first can't say that all of them can read.\nRule: Plain form + 「とは限らない」 = \"not necessarily, not always\": it denies a general assumption, often with 「みんな」, 「いつも」, 「必ず」.\nContrast: 「読めるとは限らない」 = can't always read (there are exceptions); 「読めるに決まっている」 = can certainly read (no exceptions), which the second sentence contradicts."
+    },
+    "wrong": [
+      {
+        "zh": "「に決まっている」是“肯定……”，和后一句“会说却不会读的人很多”矛盾。",
+        "en": "「に決まっている」 means \"certainly\", which the second sentence (many can speak but not read) contradicts."
+      },
+      {
+        "zh": "「たことがある」表示经历，“大家都读过”和后一句“不会读的人很多”矛盾。",
+        "en": "「たことがある」 is experience; \"they have all read one\" contradicts \"many can't read\"."
+      },
+      null,
+      {
+        "zh": "「ことになっている」表示规定或约定，能不能读报不是规定出来的。",
+        "en": "「ことになっている」 states a rule or arrangement; being able to read a newspaper isn't set by a rule."
+      }
+    ]
+  },
+  {
+    "id": "n3-l55-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson55#3"
+    ],
+    "difficulty": 1,
+    "stem": "このマンションでは、燃えるごみは月曜と木曜の朝8時までに（　）。必ず守ってください。",
+    "options": [
+      "出すことになっています",
+      "出すわけにはいきません",
+      "出すおそれがあります",
+      "出したことがあります"
+    ],
+    "answer": 0,
+    "full": "このマンションでは、燃えるごみは月曜と木曜の朝8時までに出すことになっています。必ず守ってください。",
+    "tr": {
+      "zh": "这栋公寓规定，可燃垃圾要在周一和周四早上8点前拿出去。请务必遵守。",
+      "en": "In this building, burnable rubbish is to be put out by 8 a.m. on Mondays and Thursdays. Please be sure to follow this."
+    },
+    "why": {
+      "zh": "线索：「このマンションでは」「必ず守ってください」：在说这里的规定。\n规则：「动词辞书形＋ことになっている」＝规定是……、按惯例……，表示不是个人决定的，而是团体、社会定下的规则。\n辨析：「出すことになっている」＝规定要这样拿出去；「出すわけにはいかない」＝（情理上）不能拿出去，那就没有要「守る」的内容了。",
+      "en": "Clue: 「このマンションでは」 and 「必ず守ってください」: this is a rule of the building.\nRule: Verb dictionary form + 「ことになっている」 = \"it is the rule / custom that …\": not a personal decision but something set by a group or society.\nContrast: 「出すことになっている」 = the rule says to put it out then; 「出すわけにはいかない」 = can't put it out (it wouldn't be right), which leaves nothing to \"follow\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「わけにはいかない」是“（情理上）不能……”，不是公寓的规定，也和「守ってください」接不上。",
+        "en": "「わけにはいかない」 means \"can't (it wouldn't be right)\"; it isn't a building rule and doesn't lead to 「守ってください」."
+      },
+      {
+        "zh": "「おそれがある」是“恐怕会发生（坏事）”，不能用来说明规定。",
+        "en": "「おそれがある」 warns of something bad that may happen; it can't state a rule."
+      },
+      {
+        "zh": "「たことがある」表示过去的经历，不是要大家遵守的规定。",
+        "en": "「たことがある」 is past experience, not a rule to be followed."
+      }
+    ]
   }
 ]

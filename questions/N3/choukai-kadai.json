@@ -3217,5 +3217,358 @@
       "not-possible",
       "order"
     ]
+  },
+  {
+    "id": "n3-ck-130",
+    "type": "kadai",
+    "scene": "中学校の美術の時間に、女の先生が生徒に話しています。",
+    "question": "生徒はこのあとまず何をしますか。",
+    "lines": [
+      [
+        "F",
+        "はい、みなさん、今日は外に出て、校庭で絵をかきます。かく場所は自由ですが、ほかのクラスは授業中ですから、建物の近くでは静かにしてください。"
+      ],
+      [
+        "F",
+        "絵の具と筆は、もう外の机に並べてあります。水を入れるバケツは、係の人があとで配りますから、取りに行かなくてもいいです。"
+      ],
+      [
+        "F",
+        "外に出る前に、後ろの棚から画用紙を一枚ずつ取ってください。あ、名前を先に書いたほうが……いえ、名前は絵がかけてからでいいです。裏にえんぴつで書いてくださいね。"
+      ],
+      [
+        "F",
+        "では、取った人から外に出ましょう。"
+      ]
+    ],
+    "options": [
+      "絵の具と筆を並べる",
+      "バケツに水を入れる",
+      "棚から画用紙を取る",
+      "紙の裏に名前を書く"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": {
+        "scene": "初中的美术课上，女老师在对学生讲话。",
+        "question": "学生接下来首先要做什么？",
+        "lines": [
+          "好，同学们，今天我们到外面去，在操场上画画。在哪儿画都可以，不过别的班在上课，在教学楼附近请保持安静。",
+          "颜料和画笔已经摆在外面的桌子上了。装水的水桶，过一会儿由值日的同学发，不用自己去拿。",
+          "出去之前，请从后面的架子上每人拿一张画纸。啊，名字还是先写比较……不，名字等画完了再写就行。请用铅笔写在背面。",
+          "那么，拿好纸的同学就出去吧。"
+        ],
+        "options": [
+          "摆好颜料和画笔",
+          "往水桶里装水",
+          "从架子上拿画纸",
+          "在纸的背面写名字"
+        ]
+      },
+      "en": {
+        "scene": "In an art class at a junior high school, a teacher is talking to her students.",
+        "question": "What will the students do first?",
+        "lines": [
+          "Right, everyone, today we're going outside to paint in the schoolyard. You can paint wherever you like, but other classes are having lessons, so please be quiet near the building.",
+          "The paints and brushes are already laid out on the tables outside. The buckets for water will be handed out later by the students in charge, so you don't need to go and get them.",
+          "Before you go out, take one sheet of drawing paper each from the shelf at the back. Oh, maybe you should write your name first... no, your name can wait until the painting is done. Write it on the back in pencil, please.",
+          "All right, once you have your paper, let's go outside."
+        ],
+        "options": [
+          "Lay out the paints and brushes",
+          "Fill the buckets with water",
+          "Take drawing paper from the shelf",
+          "Write their names on the back of the paper"
+        ]
+      }
+    },
+    "why": {
+      "zh": "依据：老师说「外に出る前に、後ろの棚から画用紙を一枚ずつ取ってください」，最后又说「取った人から外に出ましょう」。\n推理：出去之前要做的只有拿画纸。颜料和笔「もう外の机に並べてあります」，水桶「係の人があとで配ります」；名字刚说要先写，马上用「いえ」改成「絵がかけてからでいいです」。\n容易错：听到「名前を先に」就选写名字，没听到后面的更正。",
+      "en": "Evidence: The teacher says 「外に出る前に、後ろの棚から画用紙を一枚ずつ取ってください」 and ends with 「取った人から外に出ましょう」.\nReasoning: The only thing to do before going out is to take the paper. The paints and brushes are 「もう外の机に並べてあります」, the buckets 「係の人があとで配ります」, and the name, which she starts to put first, is corrected with 「いえ」 to 「絵がかけてからでいいです」.\nTrap: choosing the name on hearing 「名前を先に」 and missing the correction."
+    },
+    "wrong": [
+      {
+        "zh": "颜料和笔「もう外の机に並べてあります」，已经摆好了。",
+        "en": "The paints and brushes are 「もう外の机に並べてあります」 — already done."
+      },
+      {
+        "zh": "水桶「係の人があとで配ります」，不用学生自己去拿。",
+        "en": "The buckets: 「係の人があとで配ります」 — the students don't fetch them."
+      },
+      null,
+      {
+        "zh": "老师改口说「名前は絵がかけてからでいいです」，是画完以后的事。",
+        "en": "She corrects herself: 「名前は絵がかけてからでいいです」 — that comes after painting."
+      }
+    ],
+    "traps": [
+      "done-already",
+      "someone-else",
+      "later"
+    ]
+  },
+  {
+    "id": "n3-ck-131",
+    "type": "kadai",
+    "scene": "会社で課長が社員に話しています。",
+    "question": "社員は今日帰る前に何をしなければなりませんか。",
+    "lines": [
+      [
+        "M",
+        "みなさん、ちょっと聞いてください。あしたの朝、掃除の会社の人が来て、この部屋のゆかをきれいにしてくれます。"
+      ],
+      [
+        "M",
+        "それで、今日帰る前に、机の下に置いてある箱やかばんを、全部机の上に上げておいてください。いすは、掃除の会社の人が廊下に出してくれるので、そのままでかまいません。"
+      ],
+      [
+        "M",
+        "パソコンですが、最初はコードも抜いてもらうつもりだったんですが、時間がかかるので、やめることにしました。いつものように電源を切るだけでいいです。"
+      ],
+      [
+        "M",
+        "それから、ごみ箱は、あしたの朝、私が廊下に出しておきます。では、よろしくお願いします。"
+      ]
+    ],
+    "options": [
+      "机の下の物を机の上に置く",
+      "いすを廊下に出しておく",
+      "パソコンのコードを抜く",
+      "ごみ箱を廊下に出しておく"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": {
+        "scene": "公司里，科长在对员工讲话。",
+        "question": "员工今天回家之前必须做什么？",
+        "lines": [
+          "各位，请听我说一下。明天早上，清洁公司的人会来，把这个房间的地板打扫干净。",
+          "所以，今天回家之前，请把放在桌子下面的箱子和包全部放到桌子上。椅子由清洁公司的人搬到走廊，放着不动就行。",
+          "至于电脑，一开始本来打算请大家把电源线也拔掉，但是太花时间，所以决定不拔了。像平时一样关掉电源就可以。",
+          "另外，垃圾桶明天早上我来搬到走廊。那么，拜托大家了。"
+        ],
+        "options": [
+          "把桌子下面的东西放到桌子上",
+          "把椅子搬到走廊",
+          "拔掉电脑的电源线",
+          "把垃圾桶搬到走廊"
+        ]
+      },
+      "en": {
+        "scene": "At a company, a section manager is talking to the staff.",
+        "question": "What must the staff do before going home today?",
+        "lines": [
+          "Everyone, could I have your attention for a moment? Tomorrow morning, people from a cleaning company are coming to clean the floor of this room.",
+          "So before you go home today, please put all the boxes and bags that are under your desks up on top of your desks. The cleaners will move the chairs out into the corridor, so you can leave them as they are.",
+          "As for the computers, at first I was going to ask you to unplug the cables as well, but that takes time, so I've decided against it. Just switch them off as usual.",
+          "And I'll put the rubbish bins out in the corridor myself tomorrow morning. Thank you for your help."
+        ],
+        "options": [
+          "Put the things under their desks on top of the desks",
+          "Put the chairs out in the corridor",
+          "Unplug the computer cables",
+          "Put the rubbish bins out in the corridor"
+        ]
+      }
+    },
+    "why": {
+      "zh": "依据：课长说「今日帰る前に、机の下に置いてある箱やかばんを、全部机の上に上げておいてください」。\n推理：「箱やかばん」就是选项里的「机の下の物」，「上げておく」换成了「置く」。椅子「掃除の会社の人が廊下に出してくれる」；电源线原来打算拔，后来「やめることにしました」；垃圾桶「私が廊下に出しておきます」。\n容易错：听到「コードも抜いてもらうつもりだった」就选，没听到后面取消了。",
+      "en": "Evidence: The manager says 「今日帰る前に、机の下に置いてある箱やかばんを、全部机の上に上げておいてください」.\nReasoning: 「箱やかばん」 is the option's 「机の下の物」, and 「上げておく」 becomes 「置く」. The chairs: 「掃除の会社の人が廊下に出してくれる」; the cables were the first plan, but 「やめることにしました」; the bins: 「私が廊下に出しておきます」.\nTrap: picking the cables on 「コードも抜いてもらうつもりだった」 without hearing that the plan was dropped."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "椅子「掃除の会社の人が廊下に出してくれる」，员工「そのままでかまいません」。",
+        "en": "The chairs: 「掃除の会社の人が廊下に出してくれる」 — the staff leave them 「そのまま」."
+      },
+      {
+        "zh": "拔电源线是最初的打算，后来「やめることにしました」，只要关电源。",
+        "en": "Unplugging was the first plan, but 「やめることにしました」 — just switch off."
+      },
+      {
+        "zh": "垃圾桶是课长自己「あしたの朝、私が廊下に出しておきます」。",
+        "en": "The bins are the manager's job: 「あしたの朝、私が廊下に出しておきます」."
+      }
+    ],
+    "traps": [
+      "someone-else",
+      "mentioned-not-asked"
+    ]
+  },
+  {
+    "id": "n3-ck-132",
+    "type": "kadai",
+    "scene": "観光バスの中で、ガイドの女の人が話しています。",
+    "question": "客は、お城を見たあと、どこに集まりますか。",
+    "lines": [
+      [
+        "F",
+        "みなさま、まもなくお城に着きます。バスを降りましたら、入り口の前でチケットをお渡ししますので、中をご自由にごらんください。見学の時間は1時間です。"
+      ],
+      [
+        "F",
+        "お戻りの場所ですが、バスは降りる所に長く止めておけませんので、そこではなく、お城の裏にある売店の前でお待ちしています。"
+      ],
+      [
+        "F",
+        "入り口の横にも売店がありますが、そちらではありませんので、ご注意ください。裏の売店は、池のそばにあります。"
+      ],
+      [
+        "F",
+        "時間になりましたら、そちらにお集まりください。"
+      ]
+    ],
+    "options": [
+      "バスを降りた所",
+      "お城の入り口の前",
+      "入り口の横の売店",
+      "池のそばの売店"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": {
+        "scene": "观光巴士上，女导游在讲话。",
+        "question": "游客参观完城堡以后，在哪里集合？",
+        "lines": [
+          "各位，马上就要到城堡了。下车以后，我会在入口前把门票发给大家，请自由参观里面。参观时间是1小时。",
+          "关于回来的地点，巴士不能在下车的地方停太久，所以不是在那里，我会在城堡后面的小卖部前面等大家。",
+          "入口旁边也有一家小卖部，但不是那一家，请注意。后面的小卖部在水池旁边。",
+          "时间到了，请到那里集合。"
+        ],
+        "options": [
+          "下车的地方",
+          "城堡入口前",
+          "入口旁边的小卖部",
+          "水池旁边的小卖部"
+        ]
+      },
+      "en": {
+        "scene": "On a sightseeing bus, the guide is speaking.",
+        "question": "Where will the passengers meet after seeing the castle?",
+        "lines": [
+          "Ladies and gentlemen, we will soon arrive at the castle. When you get off the bus, I'll hand you your tickets in front of the entrance, so please look round inside as you like. You have one hour.",
+          "As for where to come back to: the bus can't stay parked for long where you get off, so I'll be waiting not there but in front of the shop behind the castle.",
+          "There is also a shop beside the entrance, but that is not the one, so please be careful. The shop at the back is next to the pond.",
+          "When the time comes, please gather there."
+        ],
+        "options": [
+          "Where they got off the bus",
+          "In front of the castle entrance",
+          "The shop beside the entrance",
+          "The shop next to the pond"
+        ]
+      }
+    },
+    "why": {
+      "zh": "依据：导游说「そこではなく、お城の裏にある売店の前でお待ちしています」，又说「裏の売店は、池のそばにあります」。\n推理：集合地点是城堡后面的小卖部，它在水池旁边，所以是「池のそばの売店」。下车的地方巴士「長く止めておけません」；入口前只是发门票的地方；入口旁边的小卖部「そちらではありません」。\n容易错：有两家小卖部，只听到「売店」就选了入口旁边那家。",
+      "en": "Evidence: The guide says 「そこではなく、お城の裏にある売店の前でお待ちしています」 and then 「裏の売店は、池のそばにあります」.\nReasoning: The meeting place is the shop behind the castle, which is by the pond — 「池のそばの売店」. The bus 「長く止めておけません」 where they get off; the entrance is only where tickets are handed out; the shop beside the entrance is ruled out with 「そちらではありません」.\nTrap: there are two shops; hearing only 「売店」 leads to the one by the entrance."
+    },
+    "wrong": [
+      {
+        "zh": "巴士在那里「長く止めておけません」，导游明说「そこではなく」。",
+        "en": "The bus 「長く止めておけません」 there; she says 「そこではなく」."
+      },
+      {
+        "zh": "入口前是下车后发门票的地方，不是集合地点。",
+        "en": "The entrance is where tickets are handed out on arrival, not the meeting place."
+      },
+      {
+        "zh": "入口旁边的小卖部「そちらではありません」，集合是在后面那家。",
+        "en": "The shop beside the entrance: 「そちらではありません」 — it's the one at the back."
+      },
+      null
+    ],
+    "traps": [
+      "not-possible",
+      "other-option-attribute"
+    ]
+  },
+  {
+    "id": "n3-ck-133",
+    "type": "kadai",
+    "scene": "市民センターで、係の男の人が、海岸の掃除に参加する人たちに話しています。",
+    "question": "参加する人は、あした何を持ってこなければなりませんか。",
+    "lines": [
+      [
+        "M",
+        "あしたの海岸の掃除に参加してくださるみなさん、ありがとうございます。持ち物について説明します。"
+      ],
+      [
+        "M",
+        "ごみ袋と手袋は、こちらで用意しますので、いりません。飲み物も、去年はみなさんに持ってきてもらいましたが、今年は近くの店がお茶を出してくださることになりました。"
+      ],
+      [
+        "M",
+        "ただ、あしたはよく晴れて暑くなりそうですから、帽子がないと大変です。帽子もこちらで貸せればいいんですが、数が足りませんので、ご自分でお持ちください。"
+      ],
+      [
+        "M",
+        "タオルは、終わったあとで、記念に一枚ずつさしあげます。それでは、あしたの朝8時に、海岸の入り口でお待ちしています。"
+      ]
+    ],
+    "options": [
+      "手袋",
+      "帽子",
+      "飲み物",
+      "タオル"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": {
+        "scene": "市民中心里，男工作人员在对参加海岸清扫的人讲话。",
+        "question": "参加的人明天必须带什么来？",
+        "lines": [
+          "感谢各位参加明天的海岸清扫。下面说明一下要带的东西。",
+          "垃圾袋和手套由我们准备，不用带。饮料去年是请大家自己带的，不过今年附近的商店会为我们提供茶水。",
+          "只是，明天看来会是大晴天，很热，没有帽子会很难受。帽子要是也能由我们借给大家就好了，可是数量不够，所以请自己带来。",
+          "毛巾在活动结束后，作为纪念每人送一条。那么，明天早上8点，我在海岸入口等大家。"
+        ],
+        "options": [
+          "手套",
+          "帽子",
+          "饮料",
+          "毛巾"
+        ]
+      },
+      "en": {
+        "scene": "At a community centre, a staff member is talking to people who will take part in a beach clean-up.",
+        "question": "What must the participants bring tomorrow?",
+        "lines": [
+          "Thank you all for joining tomorrow's beach clean-up. Let me explain what to bring.",
+          "We will provide the rubbish bags and gloves, so you don't need those. As for drinks, last year we asked you to bring your own, but this year a nearby shop has kindly agreed to serve tea.",
+          "However, tomorrow looks like being sunny and hot, so it will be hard without a hat. I wish we could lend you hats as well, but we don't have enough, so please bring your own.",
+          "Towels will be given out, one each, as a souvenir after we finish. So, I'll be waiting for you at the entrance to the beach at eight tomorrow morning."
+        ],
+        "options": [
+          "Gloves",
+          "A hat",
+          "A drink",
+          "A towel"
+        ]
+      }
+    },
+    "why": {
+      "zh": "依据：工作人员说「帽子もこちらで貸せればいいんですが、数が足りませんので、ご自分でお持ちください」。\n推理：「貸せればいいんですが」是想借却借不了，所以帽子要自己带，「ただ」后面只有这一样。垃圾袋和手套「こちらで用意します」；饮料是「去年は」自己带，今年商店提供茶水；毛巾是结束后「さしあげます」，是送给大家的。\n容易错：听到「飲み物も…持ってきてもらいました」就选，那说的是去年。",
+      "en": "Evidence: The staff member says 「帽子もこちらで貸せればいいんですが、数が足りませんので、ご自分でお持ちください」.\nReasoning: 「貸せればいいんですが」 means they would like to lend hats but can't, so the hat is the one thing to bring, after 「ただ」. Bags and gloves are 「こちらで用意します」; drinks were brought 「去年は」, but this year a shop serves tea; towels are given out afterwards (「さしあげます」).\nTrap: 「飲み物も…持ってきてもらいました」 is about last year."
+    },
+    "wrong": [
+      {
+        "zh": "手套和垃圾袋「こちらで用意しますので、いりません」。",
+        "en": "Gloves and bags: 「こちらで用意しますので、いりません」."
+      },
+      null,
+      {
+        "zh": "自己带饮料是「去年は」的事，今年附近的商店提供茶水。",
+        "en": "Bringing drinks was 「去年は」; this year a nearby shop serves tea."
+      },
+      {
+        "zh": "毛巾是结束后「記念に一枚ずつさしあげます」，不用带。",
+        "en": "Towels are handed out afterwards: 「記念に一枚ずつさしあげます」."
+      }
+    ],
+    "traps": [
+      "someone-else",
+      "tense"
+    ]
   }
 ]

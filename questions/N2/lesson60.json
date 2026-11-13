@@ -854,5 +854,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l60-023",
+    "type": "bunpou",
+    "refs": [
+      "lesson60#6"
+    ],
+    "difficulty": 2,
+    "stem": "契約書の内容をよく確認せずにサインをしてしまったばかりに、後になって高額の解約料を（　）。",
+    "options": [
+      "払わされることになった",
+      "払わずに済むことになった",
+      "払ってもらうことができた",
+      "払うわけにはいかなくなった"
+    ],
+    "answer": 0,
+    "full": "契約書の内容をよく確認せずにサインをしてしまったばかりに、後になって高額の解約料を払わされることになった。",
+    "tr": {
+      "zh": "就因为没仔细确认合同内容就签了字，后来被迫付了一大笔解约金。",
+      "en": "Just because I signed without checking the contract properly, I later ended up being made to pay a large cancellation fee."
+    },
+    "why": {
+      "zh": "线索：「サインをしてしまったばかりに」。「ばかりに」后面一定是说话人不希望的坏结果。\n规则：「た形＋ばかりに」＝就因为……（才落得……）；后项是已经发生的、带后悔语气的坏事。使役被动「払わされる」＝被迫付。\n辨析：「〜ずに済む」＝不用……就过去了，是好结果，和「ばかりに」的方向相反。",
+      "en": "Clue: 「サインをしてしまったばかりに」. After 「ばかりに」 comes a result the speaker did not want.\nRule: た-form ＋ 「ばかりに」 = just because… (I ended up…); the second half is a bad thing that happened, said with regret. The causative-passive 「払わされる」 = be made to pay.\nContrast: 「〜ずに済む」 = get by without…, a good outcome, the opposite of what 「ばかりに」 leads to."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「払わずに済む」是“不用付”，是好结果，和表示坏结果的「ばかりに」矛盾。",
+        "en": "「払わずに済む」 (get away without paying) is a good result, which clashes with 「ばかりに」."
+      },
+      {
+        "zh": "「払ってもらうことができた」是“让别人替我付了”，也是好结果，接不上「ばかりに」。",
+        "en": "「払ってもらうことができた」 (got someone to pay it) is also a good result and can't follow 「ばかりに」."
+      },
+      {
+        "zh": "「〜わけにはいかない」是出于情理“不能……”，没看合同并不会导致“不能付”，意思不通。",
+        "en": "「〜わけにはいかない」 means one can't do something for social or moral reasons; not reading the contract doesn't lead to \"can't pay\"."
+      }
+    ]
+  },
+  {
+    "id": "n2-l60-024",
+    "type": "bunpou",
+    "refs": [
+      "lesson60#7"
+    ],
+    "difficulty": 2,
+    "stem": "いつも約束の時間の十分前には来ているまじめな山田さんの（　）、今日の遅刻には何か特別な事情があるに違いない。",
+    "options": [
+      "ものだから",
+      "ことだから",
+      "わけだから",
+      "ことには"
+    ],
+    "answer": 1,
+    "full": "いつも約束の時間の十分前には来ているまじめな山田さんのことだから、今日の遅刻には何か特別な事情があるに違いない。",
+    "tr": {
+      "zh": "山田一向认真，总是比约定时间早到十分钟，所以他今天迟到一定有什么特别的原因。",
+      "en": "Knowing Yamada, a conscientious person who always arrives ten minutes early, there must be some special reason for today's lateness."
+    },
+    "why": {
+      "zh": "线索：空格前是「人＋の」（山田さんの），前面讲他平时的习惯；句末是推测「に違いない」。\n规则：「人＋のことだから」＝根据对这个人性格、习惯的了解来推测，后面常接「だろう」「に違いない」。\n辨析：「〜ものだから」是为自己找理由、辩解（「道が込んでいたものだから」），接在普通形后面，不接「名词＋の」，后面也不接推测。",
+      "en": "Clue: The blank follows person ＋ 「の」 (「山田さんの」), after a description of his usual habit; the sentence ends in the guess 「に違いない」.\nRule: person ＋ 「のことだから」 = judging from what we know of that person's character or habits; it is followed by 「だろう」 or 「に違いない」.\nContrast: 「〜ものだから」 gives an excuse (「道が込んでいたものだから」); it attaches to a plain form, not to noun ＋ 「の」, and isn't followed by a guess."
+    },
+    "wrong": [
+      {
+        "zh": "「ものだから」表示辩解的理由，接普通形；「山田さんのものだから」会变成“因为是山田的东西”。",
+        "en": "「ものだから」 gives an excuse after a plain form; 「山田さんのものだから」 would mean \"because it belongs to Yamada\"."
+      },
+      null,
+      {
+        "zh": "「わけだから」接在句子的普通形后面，不能接「名词＋の」。",
+        "en": "「わけだから」 follows a plain-form clause, not noun ＋ 「の」."
+      },
+      {
+        "zh": "「〜ことには」是“令人……的是”（「驚いたことには」），接表示感情的词，不接人名。",
+        "en": "「〜ことには」 (to my …) follows a word of feeling, as in 「驚いたことには」, not a person."
+      }
+    ]
   }
 ]

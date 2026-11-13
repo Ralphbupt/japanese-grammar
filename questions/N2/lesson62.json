@@ -623,5 +623,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l62-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson62#2"
+    ],
+    "difficulty": 2,
+    "stem": "今回の事故は一つの企業（　）、業界全体の信頼にかかわる問題であり、早急に対策を取る必要がある。",
+    "options": [
+      "のみならず",
+      "に限って",
+      "をめぐって",
+      "にかかわらず"
+    ],
+    "answer": 0,
+    "full": "今回の事故は一つの企業のみならず、業界全体の信頼にかかわる問題であり、早急に対策を取る必要がある。",
+    "tr": {
+      "zh": "这次事故不仅是一家企业的问题，还关系到整个行业的信誉，必须尽快采取对策。",
+      "en": "This accident is a matter affecting the credibility not only of one company but of the whole industry, and measures must be taken quickly."
+    },
+    "why": {
+      "zh": "线索：前面是范围小的「一つの企業」，后面是范围大的「業界全体」；文体是「であり」这样的书面语。\n规则：「名词＋のみならず」＝不仅……（连……也），书面语，后面追加范围更大的内容。\n辨析：「〜に限って」＝偏偏……/只限……（「急ぐときに限って電車が遅れる」），是把范围缩小；要表示“不限于”得用否定的「に限らず」。",
+      "en": "Clue: The small scope 「一つの企業」 comes first and the large one, 「業界全体」, after it; the style is written (「であり」).\nRule: noun ＋ 「のみならず」 = not only… (but also), written style, with something wider added after it.\nContrast: 「〜に限って」 = only / of all times (「急ぐときに限って電車が遅れる」), which narrows the scope; \"not limited to\" would need the negative 「に限らず」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜に限って」是“偏偏……/只有……”，把范围缩小，和后面的「業界全体」矛盾。",
+        "en": "「〜に限って」 narrows things to \"only\", which contradicts 「業界全体」."
+      },
+      {
+        "zh": "「〜をめぐって」是“围绕……（争论）”，后面接议论、对立，不接「業界全体の信頼にかかわる」。",
+        "en": "「〜をめぐって」 (over, concerning) is followed by debate or conflict, not by this."
+      },
+      {
+        "zh": "「〜にかかわらず」是“不论……”，前面接有多种情况的词（年齢、晴雨），「一つの企業」不是。",
+        "en": "「〜にかかわらず」 (regardless of) follows a word covering various cases (age, weather); 「一つの企業」 isn't one."
+      }
+    ]
+  },
+  {
+    "id": "n2-l62-018",
+    "type": "bunpou",
+    "refs": [
+      "lesson62#4"
+    ],
+    "difficulty": 2,
+    "stem": "A「来週の出張の準備は進んでいますか。」\nB「ええ。資料はそろったので、あとは（　）、いつでも出発できます。」",
+    "options": [
+      "切符を買ったからには",
+      "切符を買うくらいなら",
+      "切符を買うにあたって",
+      "切符を買いさえすれば"
+    ],
+    "answer": 3,
+    "full": "A「来週の出張の準備は進んでいますか。」\nB「ええ。資料はそろったので、あとは切符を買いさえすれば、いつでも出発できます。」",
+    "tr": {
+      "zh": "A：“下周出差的准备还顺利吗？”\nB：“嗯。资料都齐了，接下来只要把票买了，随时都能出发。”",
+      "en": "A: \"Is the preparation for next week's business trip coming along?\"\nB: \"Yes. The materials are all ready, so once I've bought the ticket I can leave any time.\""
+    },
+    "why": {
+      "zh": "线索：「あとは」＝剩下的只有……，后面是「いつでも出発できます」，说的是唯一还缺的条件。\n规则：「ます形（買い）＋さえすれば」＝只要……就……，表示满足这一个条件就够了。\n辨析：「〜くらいなら」＝与其……不如……（「途中でやめるくらいなら、始めないほうがいい」），前项是说话人不愿做的事，后面接更好的选择，不是条件。",
+      "en": "Clue: 「あとは」 = all that's left is…, followed by 「いつでも出発できます」: the one condition still missing.\nRule: ます-stem (「買い」) ＋ 「さえすれば」 = if only / as long as…, the single condition that is enough.\nContrast: 「〜くらいなら」 = rather than… (「途中でやめるくらいなら、始めないほうがいい」); it takes something the speaker doesn't want to do and is followed by a better choice, not a condition."
+    },
+    "wrong": [
+      {
+        "zh": "「〜たからには」是“既然……就……”，后面接决心、义务；票还没买，也接不上「あとは」。",
+        "en": "「〜たからには」 (now that…) leads to resolve or duty; the ticket isn't bought yet and it doesn't follow 「あとは」."
+      },
+      {
+        "zh": "「〜くらいなら」是“与其……不如……”，后面要接更好的选择，这里不是比较。",
+        "en": "「〜くらいなら」 (rather than…) needs a better alternative after it; nothing is being compared here."
+      },
+      {
+        "zh": "「〜にあたって」是“在……之际”，后面接为此所做的准备或郑重的行为，不接「いつでも出発できます」。",
+        "en": "「〜にあたって」 (on the occasion of) is followed by what one does for that occasion, not by 「いつでも出発できます」."
+      },
+      null
+    ]
   }
 ]

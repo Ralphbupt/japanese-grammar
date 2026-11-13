@@ -2973,5 +2973,1456 @@
    "half-right",
    "denied-guess"
   ]
+ },
+ {
+  "id": "n5-ck-231",
+  "type": "point",
+  "scene": "月曜日の あさ、会社で 女の人と 男の人が 話しています。",
+  "question": "男の人は 日曜日に 何を しましたか。",
+  "lines": [
+   [
+    "F",
+    "山川さん、日曜日は 何を しましたか。"
+   ],
+   [
+    "M",
+    "海で およぎたかったですが、雨でしたから、行きませんでした。"
+   ],
+   [
+    "F",
+    "じゃ、うちで テレビを 見ましたか。"
+   ],
+   [
+    "M",
+    "いいえ。いちにち へやの そうじを しました。"
+   ],
+   [
+    "F",
+    "そうですか。わたしは 友だちと えいがを 見ました。"
+   ]
+  ],
+  "options": [
+   "およぎました",
+   "テレビを 見ました",
+   "そうじを しました",
+   "えいがを 見ました"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "星期一早上，在公司，一个女人和一个男人在说话。",
+    "question": "男人星期天做了什么？",
+    "lines": [
+     "山川先生，星期天做了什么？",
+     "本来想去海边游泳，可是下雨了，就没去。",
+     "那在家看电视了吗？",
+     "没有。打扫了一整天房间。",
+     "是吗。我和朋友看了电影。"
+    ],
+    "options": [
+     "游泳了",
+     "看电视了",
+     "打扫了",
+     "看电影了"
+    ]
+   },
+   "en": {
+    "scene": "On Monday morning at the office, a woman and a man are talking.",
+    "question": "What did the man do on Sunday?",
+    "lines": [
+     "Yamakawa-san, what did you do on Sunday?",
+     "I wanted to swim in the sea, but it rained, so I didn't go.",
+     "Then did you watch TV at home?",
+     "No. I cleaned my room all day.",
+     "I see. I saw a film with a friend."
+    ],
+    "options": [
+     "He swam",
+     "He watched TV",
+     "He cleaned",
+     "He saw a film"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「いいえ。いちにち へやの そうじを しました。」\n推理：游泳只是「およぎたかった」，因为下雨「行きませんでした」；看电视是女的猜的，他回答「いいえ」；看电影的是女的。\n容易错：「〜たかったですが」说的是想做而没做成的事。",
+   "en": "Evidence: He says: 「いいえ。いちにち へやの そうじを しました。」\nReasoning: Swimming is only 「およぎたかった」 — it rained and he 「行きませんでした」; watching TV is her guess, and he answers 「いいえ」; the film is what she did.\nTrap: 「〜たかったですが」 is about something wanted that didn't happen."
+  },
+  "wrong": [
+   {
+    "zh": "只是想游泳，下雨没去。",
+    "en": "He only wanted to swim; it rained and he didn't go."
+   },
+   {
+    "zh": "看电视是女的猜的，男的说「いいえ」。",
+    "en": "Watching TV is her guess; he says 「いいえ」."
+   },
+   null,
+   {
+    "zh": "看电影的是女的。",
+    "en": "The woman is the one who saw a film."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "denied-guess",
+   "other-option-attribute"
+  ]
+ },
+ {
+  "id": "n5-ck-232",
+  "type": "point",
+  "scene": "男の人と 女の人が しゃしんを 見て います。",
+  "question": "女の人は どこで この しゃしんを とりましたか。",
+  "lines": [
+   [
+    "M",
+    "きれいな しゃしんですね。水が たくさん ありますね。海ですか。"
+   ],
+   [
+    "F",
+    "いいえ、海じゃ ありません。"
+   ],
+   [
+    "M",
+    "じゃ、大きい 川ですか。"
+   ],
+   [
+    "F",
+    "いいえ。うちの ちかくの こうえんです。こうえんの 中に 大きい いけが あります。"
+   ],
+   [
+    "M",
+    "へえ。うしろに 山も ありますね。"
+   ],
+   [
+    "F",
+    "ええ。あの 山には らいしゅう 友だちと のぼります。"
+   ]
+  ],
+  "options": [
+   "うみ",
+   "かわ",
+   "やま",
+   "こうえん"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在看照片。",
+    "question": "女人是在哪里拍的这张照片？",
+    "lines": [
+     "照片真漂亮啊。水好多啊。是海吗？",
+     "不，不是海。",
+     "那是大河吗？",
+     "不是。是我家附近的公园。公园里有一个大池塘。",
+     "是吗。后面还有山呢。",
+     "嗯。那座山我下星期和朋友去爬。"
+    ],
+    "options": [
+     "海",
+     "河",
+     "山",
+     "公园"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are looking at a photo.",
+    "question": "Where did the woman take this photo?",
+    "lines": [
+     "What a lovely photo. There's a lot of water. Is it the sea?",
+     "No, it isn't the sea.",
+     "Then is it a big river?",
+     "No. It's the park near my home. There's a big pond in the park.",
+     "Really. There's a mountain behind it too.",
+     "Yes. I'm going to climb that mountain with a friend next week."
+    ],
+    "options": [
+     "The sea",
+     "A river",
+     "A mountain",
+     "A park"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「いいえ。うちの ちかくの こうえんです。こうえんの 中に 大きい いけが あります。」\n推理：男的看到水很多，猜了两次（海、大河），她两次都说「いいえ」；照片里的水是公园里的池塘。山只是照片后面的，她下星期才去爬。\n容易错：两次被否定的猜测；「山」是下星期要去的地方，不是拍照的地方。",
+   "en": "Evidence: She says: 「いいえ。うちの ちかくの こうえんです。こうえんの 中に 大きい いけが あります。」\nReasoning: Seeing all the water, he guesses twice (the sea, a big river) and she says 「いいえ」 both times; the water is a pond in the park. The mountain is only in the background, and she'll climb it next week.\nTrap: two denied guesses; 「山」 is where she's going next week, not where the photo was taken."
+  },
+  "wrong": [
+   {
+    "zh": "男的猜是海，女的说「海じゃ ありません」。",
+    "en": "He guesses the sea; she says 「海じゃ ありません」."
+   },
+   {
+    "zh": "男的猜是大河，女的说「いいえ」。",
+    "en": "He guesses a big river; she says 「いいえ」."
+   },
+   {
+    "zh": "山在照片后面，是她下星期要去爬的。",
+    "en": "The mountain is in the background; she'll climb it next week."
+   },
+   null
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-ck-233",
+  "type": "point",
+  "scene": "教室で 女の 学生が 話しています。",
+  "question": "女の 学生は 今 だれと すんで いますか。",
+  "lines": [
+   [
+    "F",
+    "みなさん、こんにちは。リンです。わたしの かぞくは、父と 母と あねと 弟です。"
+   ],
+   [
+    "F",
+    "きょねんまで、わたしは 日本で あねと 二人で すんで いました。でも、あねは ことしの はるに 国へ かえりました。"
+   ],
+   [
+    "F",
+    "今は、弟が 日本に 来て、いっしょに すんで います。父と 母は 国に います。"
+   ]
+  ],
+  "options": [
+   "おとうと",
+   "あね",
+   "ちち",
+   "はは"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在教室里，一个女学生在说话。",
+    "question": "女学生现在和谁一起住？",
+    "lines": [
+     "大家好。我姓林。我家有爸爸、妈妈、姐姐和弟弟。",
+     "到去年为止，我在日本和姐姐两个人住。不过，姐姐今年春天回国了。",
+     "现在弟弟来了日本，和我一起住。爸爸和妈妈在国内。"
+    ],
+    "options": [
+     "弟弟",
+     "姐姐",
+     "爸爸",
+     "妈妈"
+    ]
+   },
+   "en": {
+    "scene": "In a classroom, a female student is talking.",
+    "question": "Who does the female student live with now?",
+    "lines": [
+     "Hello, everyone. I'm Lin. My family is my father, my mother, my older sister and my younger brother.",
+     "Until last year I lived in Japan with my sister, just the two of us. But my sister went back to our country this spring.",
+     "Now my brother has come to Japan and we live together. My father and mother are in our country."
+    ],
+    "options": [
+     "Her younger brother",
+     "Her older sister",
+     "Her father",
+     "Her mother"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：她说：「今は、弟が 日本に 来て、いっしょに すんで います。」\n推理：和姐姐住是「きょねんまで」的事，姐姐今年春天回国了；爸爸妈妈在国内。现在一起住的是弟弟。\n容易错：「きょねんまで」和「今は」；先听到的「あねと 二人で」是以前的事。",
+   "en": "Evidence: She says: 「今は、弟が 日本に 来て、いっしょに すんで います。」\nReasoning: Living with her sister was 「きょねんまで」; the sister went home this spring, and her parents are in their country. The one she lives with now is her brother.\nTrap: 「きょねんまで」 versus 「今は」 — the 「あねと 二人で」 you hear first is the past."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "和姐姐住是到去年为止，姐姐今年春天回国了。",
+    "en": "She lived with her sister until last year; the sister went home this spring."
+   },
+   {
+    "zh": "爸爸在国内。",
+    "en": "Her father is in their home country."
+   },
+   {
+    "zh": "妈妈也在国内。",
+    "en": "Her mother is in their home country too."
+   }
+  ],
+  "traps": [
+   "tense",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-ck-234",
+  "type": "point",
+  "scene": "えいがかんで 男の人と 女の人が 話しています。",
+  "question": "二人が 見る えいがは 何時に はじまりますか。",
+  "lines": [
+   [
+    "M",
+    "えいがは 3時からですね。"
+   ],
+   [
+    "F",
+    "ええと……あ、ちがいます。3時からのは 日本の えいがです。わたしたちが 見る アメリカの えいがは 3時半からですよ。"
+   ],
+   [
+    "M",
+    "そうですか。今 2時ですから、まだ 時間が ありますね。"
+   ],
+   [
+    "F",
+    "ええ。えいがは 5時に おわりますから、今 何か 食べませんか。"
+   ]
+  ],
+  "options": [
+   "2時",
+   "3時",
+   "3時半",
+   "5時"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在电影院，一个男人和一个女人在说话。",
+    "question": "两个人要看的电影几点开始？",
+    "lines": [
+     "电影是三点开始吧。",
+     "嗯……啊，不对。三点开始的是日本电影。我们要看的美国电影是三点半开始。",
+     "是吗。现在两点，还有时间呢。",
+     "嗯。电影五点结束，现在吃点什么吧？"
+    ],
+    "options": [
+     "两点",
+     "三点",
+     "三点半",
+     "五点"
+    ]
+   },
+   "en": {
+    "scene": "At a cinema, a man and a woman are talking.",
+    "question": "What time does the film the two will see start?",
+    "lines": [
+     "The film starts at three, doesn't it?",
+     "Let me see… oh, no. The one from three is the Japanese film. The American film we're seeing starts at half past three.",
+     "I see. It's two now, so we still have time.",
+     "Yes. The film ends at five, so shall we eat something now?"
+    ],
+    "options": [
+     "2:00",
+     "3:00",
+     "3:30",
+     "5:00"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「わたしたちが 見る アメリカの えいがは 3時半からですよ。」\n推理：男的说三点，女的更正：三点开始的是另一部（日本电影），两个人看的是三点半开始的。两点是现在，五点是电影结束的时间。\n容易错：先说的「3時」被「ちがいます」更正了。",
+   "en": "Evidence: She says: 「わたしたちが 見る アメリカの えいがは 3時半からですよ。」\nReasoning: He says three and she corrects him: the one at three is a different film (the Japanese one); theirs starts at half past three. Two is the time now and five is when the film ends.\nTrap: the 「3時」 said first is corrected with 「ちがいます」."
+  },
+  "wrong": [
+   {
+    "zh": "两点是现在的时间。",
+    "en": "Two is the time now."
+   },
+   {
+    "zh": "三点开始的是日本电影，不是两个人要看的。",
+    "en": "The film at three is the Japanese one, not theirs."
+   },
+   null,
+   {
+    "zh": "五点是电影结束的时间。",
+    "en": "Five is when the film ends."
+   }
+  ],
+  "traps": [
+   "number",
+   "other-option-attribute",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-ck-235",
+  "type": "point",
+  "scene": "きっさてんで 男の人と 女の人が 話しています。",
+  "question": "女の人は 日本で あさ 何を 食べますか。",
+  "lines": [
+   [
+    "M",
+    "ぼくは あさは いつも パンです。リンさんは？"
+   ],
+   [
+    "F",
+    "わたしは 国では まいあさ ごはんを 食べましたが、日本に 来てからは あさ 時間が ありません。ですから、今は くだものだけです。"
+   ],
+   [
+    "M",
+    "そうですか。ぼくの 兄は あさは たまごだけですよ。"
+   ],
+   [
+    "F",
+    "へえ、たまごだけですか。"
+   ]
+  ],
+  "options": [
+   "ごはん",
+   "くだもの",
+   "パン",
+   "たまご"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在咖啡店，一个男人和一个女人在说话。",
+    "question": "女人在日本早上吃什么？",
+    "lines": [
+     "我早上总是吃面包。小林呢？",
+     "我在国内每天早上吃米饭，不过来日本以后早上没有时间。所以现在只吃水果。",
+     "是吗。我哥哥早上只吃鸡蛋。",
+     "啊，只吃鸡蛋吗？"
+    ],
+    "options": [
+     "米饭",
+     "水果",
+     "面包",
+     "鸡蛋"
+    ]
+   },
+   "en": {
+    "scene": "At a café, a man and a woman are talking.",
+    "question": "What does the woman eat in the morning in Japan?",
+    "lines": [
+     "I always have bread in the morning. How about you, Lin-san?",
+     "Back home I ate rice every morning, but since coming to Japan I have no time in the morning. So now it's only fruit.",
+     "I see. My older brother has only eggs in the morning.",
+     "Really, only eggs?"
+    ],
+    "options": [
+     "Rice",
+     "Fruit",
+     "Bread",
+     "Eggs"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「日本に 来てからは あさ 時間が ありません。ですから、今は くだものだけです。」\n推理：米饭是「国では」吃的，是来日本以前的事；面包是男的吃的；只吃鸡蛋的是男的哥哥。问的是女的在日本吃什么。\n容易错：对方和对方家人的习惯；「国では〜ましたが」是以前。",
+   "en": "Evidence: She says: 「日本に 来てからは あさ 時間が ありません。ですから、今は くだものだけです。」\nReasoning: Rice is what she ate 「国では」 — before she came to Japan; bread is what the man has; eggs only is the man's brother. The question asks what the woman eats in Japan.\nTrap: the other speaker's habits and his brother's; 「国では〜ましたが」 is the past."
+  },
+  "wrong": [
+   {
+    "zh": "米饭是她在国内时吃的，来日本以后没时间。",
+    "en": "Rice is what she ate back home; in Japan she has no time."
+   },
+   null,
+   {
+    "zh": "吃面包的是男的。",
+    "en": "The man is the one who has bread."
+   },
+   {
+    "zh": "只吃鸡蛋的是男的哥哥。",
+    "en": "Eggs only is the man's older brother."
+   }
+  ],
+  "traps": [
+   "tense",
+   "other-option-attribute"
+  ]
+ },
+ {
+  "id": "n5-ck-236",
+  "type": "point",
+  "scene": "大学で 男の 学生と 女の 学生が 話しています。",
+  "question": "女の 学生は なつ休みに どこへ 行きましたか。",
+  "lines": [
+   [
+    "M",
+    "木下さん、なつ休みは ほっかいどうへ 行きましたか。"
+   ],
+   [
+    "F",
+    "行きたかったですが、ひこうきの きっぷが 高くて、行きませんでした。"
+   ],
+   [
+    "M",
+    "じゃ、どこへも 行きませんでしたか。"
+   ],
+   [
+    "F",
+    "いいえ、きょうとの 友だちの うちへ 行きました。"
+   ],
+   [
+    "M",
+    "いいですね。ぼくは おきなわの 海で およぎました。"
+   ]
+  ],
+  "options": [
+   "きょうと",
+   "ほっかいどう",
+   "おきなわ",
+   "どこへも 行きませんでした"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在大学，一个男学生和一个女学生在说话。",
+    "question": "女学生暑假去了哪里？",
+    "lines": [
+     "木下同学，暑假去北海道了吗？",
+     "本来想去，可是机票太贵，没去。",
+     "那哪儿也没去吗？",
+     "不是，我去了京都的朋友家。",
+     "真好啊。我在冲绳的海里游泳了。"
+    ],
+    "options": [
+     "京都",
+     "北海道",
+     "冲绳",
+     "哪儿也没去"
+    ]
+   },
+   "en": {
+    "scene": "At a university, a male student and a female student are talking.",
+    "question": "Where did the female student go in the summer holidays?",
+    "lines": [
+     "Kinoshita-san, did you go to Hokkaido in the summer holidays?",
+     "I wanted to, but the plane ticket was expensive, so I didn't go.",
+     "So you didn't go anywhere?",
+     "No, I went to a friend's house in Kyoto.",
+     "That's nice. I swam in the sea in Okinawa."
+    ],
+    "options": [
+     "Kyoto",
+     "Hokkaido",
+     "Okinawa",
+     "She didn't go anywhere"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「いいえ、きょうとの 友だちの うちへ 行きました。」\n推理：北海道只是「行きたかった」，机票贵，没去；男的问「どこへも 行きませんでしたか」，她回答「いいえ」，说去了京都。冲绳是男的去的。\n容易错：对否定问句回答「いいえ」，意思是「不是没去」。",
+   "en": "Evidence: She says: 「いいえ、きょうとの 友だちの うちへ 行きました。」\nReasoning: Hokkaido is only 「行きたかった」 — the ticket was expensive and she didn't go; when he asks 「どこへも 行きませんでしたか」 she says 「いいえ」 and names Kyoto. Okinawa is where the man went.\nTrap: 「いいえ」 to a negative question means \"that's not so — I did go somewhere\"."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "北海道只是想去，机票贵，没去。",
+    "en": "She only wanted to go to Hokkaido; the ticket was too expensive."
+   },
+   {
+    "zh": "去冲绳的是男学生。",
+    "en": "Okinawa is where the male student went."
+   },
+   {
+    "zh": "男的这样问，她回答「いいえ」。",
+    "en": "He asks this, and she answers 「いいえ」."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "denied-guess",
+   "other-option-attribute"
+  ]
+ },
+ {
+  "id": "n5-ck-237",
+  "type": "point",
+  "scene": "駅で 男の人と 女の人が 話しています。",
+  "question": "今 何時ですか。",
+  "lines": [
+   [
+    "M",
+    "つぎの 電車は 何時ですか。"
+   ],
+   [
+    "F",
+    "10時15分です。9時45分の 電車は もう 出ました。"
+   ],
+   [
+    "M",
+    "10時15分ですか。じゃ、まだ 10分 ありますね。"
+   ],
+   [
+    "F",
+    "ええ。森さんと 10時半に 会いますが、だいじょうぶですか。"
+   ],
+   [
+    "M",
+    "だいじょうぶです。東京駅まで 10分ですから。"
+   ]
+  ],
+  "options": [
+   "9時45分",
+   "10時5分",
+   "10時15分",
+   "10時半"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在车站，一个男人和一个女人在说话。",
+    "question": "现在几点？",
+    "lines": [
+     "下一班电车是几点？",
+     "十点十五分。九点四十五分的电车已经开走了。",
+     "十点十五分啊。那还有十分钟呢。",
+     "嗯。我们十点半和森先生见面，来得及吗？",
+     "来得及。到东京站只要十分钟。"
+    ],
+    "options": [
+     "九点四十五分",
+     "十点五分",
+     "十点十五分",
+     "十点半"
+    ]
+   },
+   "en": {
+    "scene": "At a station, a man and a woman are talking.",
+    "question": "What time is it now?",
+    "lines": [
+     "What time is the next train?",
+     "10:15. The 9:45 train has already left.",
+     "10:15? Then we still have ten minutes.",
+     "Yes. We're meeting Mori-san at half past ten — will that be all right?",
+     "It'll be fine. It's ten minutes to Tokyo Station."
+    ],
+    "options": [
+     "9:45",
+     "10:05",
+     "10:15",
+     "10:30"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说下一班电车是「10時15分です」，男的说：「じゃ、まだ 10分 ありますね。」\n推理：离十点十五分的电车还有十分钟，所以现在是十点五分。「10時5分」没有说出来，要自己算。\n容易错：对话里说出来的三个时间（9時45分、10時15分、10時半）都不是现在。",
+   "en": "Evidence: She says the next train is 「10時15分です」 and he says: 「じゃ、まだ 10分 ありますね。」\nReasoning: Ten minutes before the 10:15 train means it is 10:05 now. 「10時5分」 is never said — you work it out.\nTrap: the three times actually spoken (9:45, 10:15, 10:30) are none of them the time now."
+  },
+  "wrong": [
+   {
+    "zh": "九点四十五分是已经开走的那班电车。",
+    "en": "9:45 is the train that has already left."
+   },
+   null,
+   {
+    "zh": "十点十五分是下一班电车的时间，离现在还有十分钟。",
+    "en": "10:15 is the next train, ten minutes from now."
+   },
+   {
+    "zh": "十点半是和森先生见面的时间。",
+    "en": "Half past ten is when they meet Mori-san."
+   }
+  ],
+  "traps": [
+   "number",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-ck-238",
+  "type": "point",
+  "scene": "女の人の うちで 男の人と 女の人が 話しています。",
+  "question": "だれが ケーキを つくりましたか。",
+  "lines": [
+   [
+    "M",
+    "この ケーキ、おいしいですね。山田さんが つくりましたか。"
+   ],
+   [
+    "F",
+    "いいえ、わたしじゃ ありません。"
+   ],
+   [
+    "M",
+    "じゃ、お母さんですか。"
+   ],
+   [
+    "F",
+    "いいえ。母は りょうりは じょうずですが、ケーキは つくりません。兄です。兄は ケーキの 店で はたらいて います。"
+   ],
+   [
+    "M",
+    "へえ。ぼくの 妹も よく ケーキを つくりますよ。"
+   ]
+  ],
+  "options": [
+   "女の人",
+   "女の人の お母さん",
+   "女の人の お兄さん",
+   "男の人の 妹"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在女人的家里，一个男人和一个女人在说话。",
+    "question": "蛋糕是谁做的？",
+    "lines": [
+     "这个蛋糕真好吃啊。是山田小姐做的吗？",
+     "不，不是我。",
+     "那是您母亲吗？",
+     "不是。我妈妈做菜很拿手，但是不做蛋糕。是我哥哥。我哥哥在蛋糕店工作。",
+     "是吗。我妹妹也常做蛋糕哦。"
+    ],
+    "options": [
+     "女人",
+     "女人的母亲",
+     "女人的哥哥",
+     "男人的妹妹"
+    ]
+   },
+   "en": {
+    "scene": "At the woman's home, a man and a woman are talking.",
+    "question": "Who made the cake?",
+    "lines": [
+     "This cake is delicious. Did you make it, Yamada-san?",
+     "No, not me.",
+     "Then your mother?",
+     "No. My mother is good at cooking, but she doesn't make cakes. It was my older brother. He works at a cake shop.",
+     "Really? My younger sister often makes cakes too."
+    ],
+    "options": [
+     "The woman",
+     "The woman's mother",
+     "The woman's older brother",
+     "The man's younger sister"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「兄です。兄は ケーキの 店で はたらいて います。」\n推理：男的猜是她本人，她说「わたしじゃ ありません」；再猜是母亲，她说「いいえ」，母亲不做蛋糕。做的是她哥哥。男的妹妹只是也常做蛋糕，和这个蛋糕没关系。\n容易错：两次被否定的猜测；最后提到的「妹」是男的家人。",
+   "en": "Evidence: She says: 「兄です。兄は ケーキの 店で はたらいて います。」\nReasoning: He guesses her, and she says 「わたしじゃ ありません」; he guesses her mother, and she says 「いいえ」 — her mother doesn't make cakes. It was her brother. The man's sister merely makes cakes often too; she has nothing to do with this one.\nTrap: two denied guesses; the 「妹」 mentioned last is the man's family."
+  },
+  "wrong": [
+   {
+    "zh": "女的说「わたしじゃ ありません」。",
+    "en": "The woman says 「わたしじゃ ありません」."
+   },
+   {
+    "zh": "母亲做菜拿手，但不做蛋糕。",
+    "en": "Her mother cooks well but doesn't make cakes."
+   },
+   null,
+   {
+    "zh": "男的妹妹也常做蛋糕，但这个蛋糕不是她做的。",
+    "en": "The man's sister often makes cakes too, but not this one."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "other-option-attribute"
+  ]
+ },
+ {
+  "id": "n5-ck-239",
+  "type": "point",
+  "scene": "教室で 男の 先生が 話しています。",
+  "question": "先生は きのう どこで ばんごはんを 食べましたか。",
+  "lines": [
+   [
+    "M",
+    "みなさん、おはようございます。きのうは わたしの たんじょうびでした。"
+   ],
+   [
+    "M",
+    "駅の 前の レストランで ばんごはんを 食べたかったですが、学校の しごとが 9時まで ありました。レストランは 9時までですから、行きませんでした。"
+   ],
+   [
+    "M",
+    "コンビニで おべんとうを 買って、うちで 一人で 食べました。"
+   ]
+  ],
+  "options": [
+   "学校",
+   "レストラン",
+   "コンビニ",
+   "うち"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "在教室里，一位男老师在说话。",
+    "question": "老师昨天在哪里吃的晚饭？",
+    "lines": [
+     "各位早上好。昨天是我的生日。",
+     "本来想在车站前面的餐厅吃晚饭，可是学校的工作一直到九点。餐厅只开到九点，所以没去。",
+     "在便利店买了盒饭，在家一个人吃的。"
+    ],
+    "options": [
+     "学校",
+     "餐厅",
+     "便利店",
+     "家"
+    ]
+   },
+   "en": {
+    "scene": "In a classroom, a male teacher is talking.",
+    "question": "Where did the teacher eat dinner yesterday?",
+    "lines": [
+     "Good morning, everyone. Yesterday was my birthday.",
+     "I wanted to have dinner at the restaurant in front of the station, but I had work at school until nine. The restaurant is only open until nine, so I didn't go.",
+     "I bought a boxed meal at a convenience store and ate it at home by myself."
+    ],
+    "options": [
+     "At school",
+     "At a restaurant",
+     "At a convenience store",
+     "At home"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：老师说：「コンビニで おべんとうを 買って、うちで 一人で 食べました。」\n推理：餐厅只是「食べたかった」，工作到九点，餐厅也九点关门，「行きませんでした」；便利店是买盒饭的地方；吃是在家里。学校是工作的地方。\n容易错：「買った ところ」（コンビニ）和「食べた ところ」（うち）不一样。",
+   "en": "Evidence: The teacher says: 「コンビニで おべんとうを 買って、うちで 一人で 食べました。」\nReasoning: The restaurant is only 「食べたかった」 — work ran until nine, the restaurant closes at nine, and he 「行きませんでした」; the convenience store is where he bought the meal; he ate it at home. School is where he worked.\nTrap: where he bought it (コンビニ) is not where he ate it (うち)."
+  },
+  "wrong": [
+   {
+    "zh": "学校是工作到九点的地方。",
+    "en": "School is where he worked until nine."
+   },
+   {
+    "zh": "餐厅只是想去，九点关门，没去。",
+    "en": "He only wanted to go to the restaurant; it closes at nine and he didn't go."
+   },
+   {
+    "zh": "便利店是买盒饭的地方，不是吃的地方。",
+    "en": "The convenience store is where he bought the meal, not where he ate it."
+   },
+   null
+  ],
+  "traps": [
+   "not-possible",
+   "half-right",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-ck-240",
+  "type": "point",
+  "scene": "女の人と 男の人が 話しています。",
+  "question": "男の人は 今 何曜日に プールへ 行きますか。",
+  "lines": [
+   [
+    "F",
+    "石川さんは よく プールへ 行きますね。何曜日に 行きますか。"
+   ],
+   [
+    "M",
+    "金曜日です。……あ、金曜日は 先月まででした。今月から 金曜日は しごとが おそくまで ありますから、土曜日に 行きます。"
+   ],
+   [
+    "F",
+    "そうですか。わたしは 日曜日に 行きます。"
+   ],
+   [
+    "M",
+    "日曜日は 人が 多いでしょう。"
+   ],
+   [
+    "F",
+    "ええ、多いです。わたしは 水曜日が 休みですが、水曜日は プールも 休みです。"
+   ]
+  ],
+  "options": [
+   "水曜日",
+   "金曜日",
+   "土曜日",
+   "日曜日"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在说话。",
+    "question": "男人现在星期几去游泳池？",
+    "lines": [
+     "石川先生常去游泳池啊。星期几去？",
+     "星期五。……啊，星期五是到上个月为止。从这个月起星期五工作到很晚，所以星期六去。",
+     "是吗。我是星期天去。",
+     "星期天人很多吧。",
+     "嗯，很多。我星期三休息，可是星期三游泳池也休息。"
+    ],
+    "options": [
+     "星期三",
+     "星期五",
+     "星期六",
+     "星期天"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking.",
+    "question": "On which day does the man go to the pool now?",
+    "lines": [
+     "You go to the pool a lot, Ishikawa-san. Which day do you go?",
+     "Friday. …Oh, Friday was until last month. From this month I work late on Fridays, so I go on Saturday.",
+     "I see. I go on Sunday.",
+     "It must be crowded on Sunday.",
+     "Yes, it is. Wednesday is my day off, but the pool is closed on Wednesdays too."
+    ],
+    "options": [
+     "Wednesday",
+     "Friday",
+     "Saturday",
+     "Sunday"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「金曜日は 先月まででした。今月から……土曜日に 行きます。」\n推理：他先说星期五，马上更正：星期五是到上个月为止，这个月起星期五工作到很晚，改成星期六。星期天去的是女的；星期三游泳池休息。\n容易错：先说的「金曜日」是以前的；问的是「今」。",
+   "en": "Evidence: He says: 「金曜日は 先月まででした。今月から……土曜日に 行きます。」\nReasoning: He says Friday first and corrects himself at once: Friday was until last month; from this month he works late on Fridays, so it's Saturday. Sunday is when the woman goes; on Wednesday the pool is closed.\nTrap: the 「金曜日」 said first is the past; the question asks about 「今」."
+  },
+  "wrong": [
+   {
+    "zh": "星期三是女的休息日，游泳池也休息。",
+    "en": "Wednesday is the woman's day off, and the pool is closed then."
+   },
+   {
+    "zh": "星期五是到上个月为止。",
+    "en": "Friday was until last month."
+   },
+   null,
+   {
+    "zh": "星期天去的是女的。",
+    "en": "Sunday is when the woman goes."
+   }
+  ],
+  "traps": [
+   "tense",
+   "other-option-attribute"
+  ]
+ },
+ {
+  "id": "n5-ck-241",
+  "type": "point",
+  "scene": "くつの 店で 男の人と 店の 人が 話しています。",
+  "question": "白い くつは いくらですか。",
+  "lines": [
+   [
+    "M",
+    "すみません、この 白い くつは いくらですか。"
+   ],
+   [
+    "F",
+    "6000円です。……あ、すみません。6000円は となりの くろい くつでした。その 白い くつは 4500円です。"
+   ],
+   [
+    "M",
+    "やすいですね。あの 赤いのは いくらですか。"
+   ],
+   [
+    "F",
+    "8000円です。"
+   ],
+   [
+    "M",
+    "そうですか。じゃ、この 白いのを ください。1万円で おねがいします。"
+   ]
+  ],
+  "options": [
+   "4500円",
+   "6000円",
+   "8000円",
+   "1万円"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在鞋店，一个男人和店员在说话。",
+    "question": "白色的鞋多少钱？",
+    "lines": [
+     "请问，这双白色的鞋多少钱？",
+     "六千日元。……啊，对不起。六千日元是旁边那双黑色的鞋。那双白色的是四千五百日元。",
+     "真便宜啊。那双红色的多少钱？",
+     "八千日元。",
+     "是吗。那请给我这双白色的。给您一万日元。"
+    ],
+    "options": [
+     "4500日元",
+     "6000日元",
+     "8000日元",
+     "一万日元"
+    ]
+   },
+   "en": {
+    "scene": "At a shoe shop, a man is talking with a shop assistant.",
+    "question": "How much are the white shoes?",
+    "lines": [
+     "Excuse me, how much are these white shoes?",
+     "6,000 yen. …Oh, I'm sorry. 6,000 yen was the black shoes next to them. Those white ones are 4,500 yen.",
+     "That's cheap. How much are those red ones?",
+     "8,000 yen.",
+     "I see. Then I'll take these white ones. Here's 10,000 yen."
+    ],
+    "options": [
+     "4,500 yen",
+     "6,000 yen",
+     "8,000 yen",
+     "10,000 yen"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：店员说：「6000円は となりの くろい くつでした。その 白い くつは 4500円です。」\n推理：店员先说六千日元，马上道歉更正：那是旁边黑色鞋的价钱，白色的是四千五百日元。八千日元是红色的；一万日元是男的付的钱。\n容易错：先说的价钱被更正了；付的钱不是价钱。",
+   "en": "Evidence: The assistant says: 「6000円は となりの くろい くつでした。その 白い くつは 4500円です。」\nReasoning: She says 6,000 yen first, then apologises and corrects it: that was the black pair next to them; the white ones are 4,500 yen. 8,000 yen is the red pair, and 10,000 yen is the note he pays with.\nTrap: the first price is corrected; what he hands over is not the price."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "六千日元是旁边黑色鞋的价钱，店员更正了。",
+    "en": "6,000 yen is the black pair next to them; the assistant corrects herself."
+   },
+   {
+    "zh": "八千日元是红色鞋的价钱。",
+    "en": "8,000 yen is the price of the red pair."
+   },
+   {
+    "zh": "一万日元是男的付的钱，不是价钱。",
+    "en": "10,000 yen is what he pays with, not the price."
+   }
+  ],
+  "traps": [
+   "number",
+   "other-option-attribute"
+  ]
+ },
+ {
+  "id": "n5-ck-242",
+  "type": "point",
+  "scene": "あさ、会社で 女の人と 男の人が 話しています。",
+  "question": "男の人は きょう どうやって 会社へ 来ましたか。",
+  "lines": [
+   [
+    "F",
+    "おはようございます。あれ、きょうは 車じゃ ありませんね。"
+   ],
+   [
+    "M",
+    "ええ。車は きのうから 弟が つかって います。"
+   ],
+   [
+    "F",
+    "じゃ、バスで 来ましたか。"
+   ],
+   [
+    "M",
+    "いいえ。あさの バスは 人が 多いですから……。てんきが いいですから、あるいて 来ました。40分 かかりました。"
+   ],
+   [
+    "F",
+    "すごいですね。わたしは いつも じてんしゃです。"
+   ]
+  ],
+  "options": [
+   "車",
+   "バス",
+   "じてんしゃ",
+   "あるいて"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "早上，在公司，一个女人和一个男人在说话。",
+    "question": "男人今天是怎么来公司的？",
+    "lines": [
+     "早上好。咦，今天没开车啊。",
+     "嗯。车从昨天起我弟弟在用。",
+     "那是坐巴士来的吗？",
+     "不是。早上的巴士人太多……天气好，我走着来的。花了四十分钟。",
+     "真厉害啊。我总是骑自行车。"
+    ],
+    "options": [
+     "开车",
+     "坐巴士",
+     "骑自行车",
+     "走路"
+    ]
+   },
+   "en": {
+    "scene": "In the morning at the office, a woman and a man are talking.",
+    "question": "How did the man come to the office today?",
+    "lines": [
+     "Good morning. Oh, no car today?",
+     "No. My younger brother has been using the car since yesterday.",
+     "Then did you come by bus?",
+     "No. The morning buses are so crowded… The weather's nice, so I walked. It took forty minutes.",
+     "That's impressive. I always come by bicycle."
+    ],
+    "options": [
+     "By car",
+     "By bus",
+     "By bicycle",
+     "On foot"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「てんきが いいですから、あるいて 来ました。」\n推理：车弟弟在用，今天「車じゃ ありません」；女的猜巴士，他说「いいえ」，早上的巴士人多；骑自行车的是女的。\n容易错：被否定的猜测（バス）；对方的习惯（じてんしゃ）。",
+   "en": "Evidence: He says: 「てんきが いいですから、あるいて 来ました。」\nReasoning: His brother is using the car, so today it's 「車じゃ ありません」; she guesses the bus and he says 「いいえ」 — morning buses are crowded; the bicycle is how the woman comes.\nTrap: the denied guess (バス); the other speaker's habit (じてんしゃ)."
+  },
+  "wrong": [
+   {
+    "zh": "车从昨天起弟弟在用。",
+    "en": "His brother has been using the car since yesterday."
+   },
+   {
+    "zh": "女的猜是巴士，男的说「いいえ」。",
+    "en": "She guesses the bus; he says 「いいえ」."
+   },
+   {
+    "zh": "骑自行车的是女的。",
+    "en": "The bicycle is how the woman comes."
+   },
+   null
+  ],
+  "traps": [
+   "denied-guess",
+   "other-option-attribute"
+  ]
+ },
+ {
+  "id": "n5-ck-243",
+  "type": "point",
+  "scene": "学校で 男の 学生と 女の 学生が 話しています。",
+  "question": "女の 学生は なつ休みに 本を 何さつ 読みましたか。",
+  "lines": [
+   [
+    "M",
+    "ぼくは なつ休みに 本を 5さつ 読みました。"
+   ],
+   [
+    "F",
+    "すごいですね。わたしは 3さつ 買いましたが、1さつだけ 読みました。"
+   ],
+   [
+    "M",
+    "そうですか。"
+   ],
+   [
+    "F",
+    "あとの 2さつは ふゆ休みに 読みます。"
+   ]
+  ],
+  "options": [
+   "1さつ",
+   "2さつ",
+   "3さつ",
+   "5さつ"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在学校，一个男学生和一个女学生在说话。",
+    "question": "女学生暑假读了几本书？",
+    "lines": [
+     "我暑假读了五本书。",
+     "真厉害啊。我买了三本，但只读了一本。",
+     "是吗。",
+     "剩下的两本寒假读。"
+    ],
+    "options": [
+     "一本",
+     "两本",
+     "三本",
+     "五本"
+    ]
+   },
+   "en": {
+    "scene": "At school, a male student and a female student are talking.",
+    "question": "How many books did the female student read in the summer holidays?",
+    "lines": [
+     "I read five books in the summer holidays.",
+     "That's great. I bought three, but I read only one.",
+     "I see.",
+     "I'll read the other two in the winter holidays."
+    ],
+    "options": [
+     "1",
+     "2",
+     "3",
+     "5"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「わたしは 3さつ 買いましたが、1さつだけ 読みました。」\n推理：五本是男的读的；三本是她买的数量；剩下的两本要到寒假才读。她读了的只有一本。\n容易错：对方的数字；「買いました」和「読みました」不一样。",
+   "en": "Evidence: She says: 「わたしは 3さつ 買いましたが、1さつだけ 読みました。」\nReasoning: Five is what the man read; three is how many she bought; the other two she'll read in the winter holidays. She has read only one.\nTrap: the other speaker's number; 「買いました」 is not 「読みました」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "两本是还没读、寒假要读的。",
+    "en": "Two is the number still unread, for the winter holidays."
+   },
+   {
+    "zh": "三本是买的数量，不是读了的。",
+    "en": "Three is how many she bought, not how many she read."
+   },
+   {
+    "zh": "读了五本的是男学生。",
+    "en": "The male student is the one who read five."
+   }
+  ],
+  "traps": [
+   "number",
+   "other-option-attribute",
+   "later"
+  ]
+ },
+ {
+  "id": "n5-ck-244",
+  "type": "point",
+  "scene": "男の人と 女の人が 話しています。",
+  "question": "男の人は きのう デパートで 何を 買いましたか。",
+  "lines": [
+   [
+    "M",
+    "きのう デパートへ 行きました。"
+   ],
+   [
+    "F",
+    "何か 買いましたか。"
+   ],
+   [
+    "M",
+    "くつが ほしかったですが、いいのが ありませんでした。ぼうしも 見ましたが、高かったです。ネクタイを 1本 買いました。"
+   ],
+   [
+    "F",
+    "そうですか。わたしは 先週 あの デパートで かばんを 買いましたよ。"
+   ]
+  ],
+  "options": [
+   "くつ",
+   "ネクタイ",
+   "ぼうし",
+   "かばん"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "男人昨天在百货商店买了什么？",
+    "lines": [
+     "昨天我去了百货商店。",
+     "买了什么吗？",
+     "本来想买鞋，可是没有好的。帽子也看了，太贵。买了一条领带。",
+     "是吗。我上星期在那家百货商店买了包。"
+    ],
+    "options": [
+     "鞋",
+     "领带",
+     "帽子",
+     "包"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "What did the man buy at the department store yesterday?",
+    "lines": [
+     "I went to the department store yesterday.",
+     "Did you buy anything?",
+     "I wanted shoes, but there weren't any good ones. I looked at hats too, but they were expensive. I bought a tie.",
+     "I see. I bought a bag at that department store last week."
+    ],
+    "options": [
+     "Shoes",
+     "A tie",
+     "A hat",
+     "A bag"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「ネクタイを 1本 買いました。」\n推理：鞋只是「ほしかった」，没有好的；帽子只是「見ました」，太贵；包是女的上星期买的。他实际买的是领带。\n容易错：「ほしかったですが」「見ましたが」后面都是没买。",
+   "en": "Evidence: He says: 「ネクタイを 1本 買いました。」\nReasoning: Shoes are only 「ほしかった」 — there were no good ones; the hat he only 「見ました」 — too expensive; the bag is what the woman bought last week. What he actually bought is a tie.\nTrap: after 「ほしかったですが」 and 「見ましたが」 comes something he didn't buy."
+  },
+  "wrong": [
+   {
+    "zh": "鞋只是想买，没有好的。",
+    "en": "He only wanted shoes; there were no good ones."
+   },
+   null,
+   {
+    "zh": "帽子只是看了，太贵。",
+    "en": "He only looked at hats; they were expensive."
+   },
+   {
+    "zh": "包是女的上星期买的。",
+    "en": "The bag is what the woman bought last week."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "other-option-attribute",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-ck-245",
+  "type": "point",
+  "scene": "教室で 男の 学生が 話しています。",
+  "question": "東京から 男の 学生の うちまで、今 どのぐらい かかりますか。",
+  "lines": [
+   [
+    "M",
+    "わたしの まちは 東京の 北に あります。山が 多くて、しずかな まちです。"
+   ],
+   [
+    "M",
+    "前は 東京から 電車で 2時間 かかりましたが、今は 新しい 電車が ありますから、1時間です。それから、まちの 駅から わたしの うちまで バスで 30分です。"
+   ],
+   [
+    "M",
+    "みなさん、あそびに 来て ください。"
+   ]
+  ],
+  "options": [
+   "30分",
+   "1時間",
+   "1時間半",
+   "2時間"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在教室里，一个男学生在说话。",
+    "question": "从东京到男学生的家，现在要多长时间？",
+    "lines": [
+     "我的家乡在东京的北边。山很多，是个安静的小城。",
+     "以前从东京坐电车要两个小时，现在有了新的电车，只要一个小时。然后，从城里的车站到我家，坐巴士三十分钟。",
+     "欢迎大家来玩。"
+    ],
+    "options": [
+     "三十分钟",
+     "一个小时",
+     "一个半小时",
+     "两个小时"
+    ]
+   },
+   "en": {
+    "scene": "In a classroom, a male student is talking.",
+    "question": "How long does it take now from Tokyo to the male student's home?",
+    "lines": [
+     "My town is north of Tokyo. It's a quiet town with a lot of mountains.",
+     "It used to take two hours by train from Tokyo, but now there's a new train, so it's one hour. After that, it's thirty minutes by bus from the town's station to my home.",
+     "Please come and visit, everyone."
+    ],
+    "options": [
+     "30 minutes",
+     "1 hour",
+     "1 hour and a half",
+     "2 hours"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：他说「今は 新しい 電車が ありますから、1時間です」，又说「それから、まちの 駅から わたしの うちまで バスで 30分です」。\n推理：现在电车一个小时，再坐巴士三十分钟，到家一共一个半小时。「1時間半」没有说出来，要自己加。两个小时是「前は」的电车时间。\n容易错：只听电车（1時間）或只听巴士（30分）；问的是到「うち」。",
+   "en": "Evidence: He says 「今は 新しい 電車が ありますから、1時間です」 and 「それから、まちの 駅から わたしの うちまで バスで 30分です」.\nReasoning: One hour by train now, then thirty minutes by bus: an hour and a half to his home. 「1時間半」 is never said — you add it up. Two hours is the train 「前は」.\nTrap: taking only the train (1時間) or only the bus (30分); the question says to his home."
+  },
+  "wrong": [
+   {
+    "zh": "三十分钟只是从车站到家的巴士。",
+    "en": "Thirty minutes is only the bus from the station to his home."
+   },
+   {
+    "zh": "一个小时只是到车站的电车，还要坐巴士。",
+    "en": "One hour is only the train to the station; there's still the bus."
+   },
+   null,
+   {
+    "zh": "两个小时是以前的电车时间。",
+    "en": "Two hours is how long the train used to take."
+   }
+  ],
+  "traps": [
+   "number",
+   "half-right",
+   "tense"
+  ]
+ },
+ {
+  "id": "n5-ck-246",
+  "type": "point",
+  "scene": "会社で 女の人と 男の人が 話しています。",
+  "question": "男の人は 今 どんな スポーツを しますか。",
+  "lines": [
+   [
+    "F",
+    "小林さんは スポーツを しますか。"
+   ],
+   [
+    "M",
+    "ええ。学生の ときは まいにち サッカーを しましたが、今は 時間が ありませんから、しません。今は 日曜日に テニスを します。"
+   ],
+   [
+    "F",
+    "そうですか。わたしは ふゆに よく スキーに 行きます。"
+   ],
+   [
+    "M",
+    "いいですね。ぼくの 父は ゴルフが すきですが、ぼくは しません。"
+   ]
+  ],
+  "options": [
+   "サッカー",
+   "テニス",
+   "スキー",
+   "ゴルフ"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在公司，一个女人和一个男人在说话。",
+    "question": "男人现在做什么运动？",
+    "lines": [
+     "小林先生做运动吗？",
+     "嗯。学生的时候每天踢足球，现在没有时间，不踢了。现在星期天打网球。",
+     "是吗。我冬天常去滑雪。",
+     "真好啊。我父亲喜欢高尔夫，不过我不打。"
+    ],
+    "options": [
+     "足球",
+     "网球",
+     "滑雪",
+     "高尔夫"
+    ]
+   },
+   "en": {
+    "scene": "At the office, a woman and a man are talking.",
+    "question": "What sport does the man play now?",
+    "lines": [
+     "Kobayashi-san, do you play any sports?",
+     "Yes. As a student I played football every day, but now I have no time, so I don't. Now I play tennis on Sundays.",
+     "I see. I often go skiing in winter.",
+     "That's nice. My father likes golf, but I don't play."
+    ],
+    "options": [
+     "Football",
+     "Tennis",
+     "Skiing",
+     "Golf"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「今は 日曜日に テニスを します。」\n推理：足球是「学生の とき」踢的，现在「しません」；滑雪是女的；高尔夫是他父亲喜欢的，他说「ぼくは しません」。\n容易错：「学生の ときは〜が、今は〜」，问的是「今」。",
+   "en": "Evidence: He says: 「今は 日曜日に テニスを します。」\nReasoning: Football is from 「学生の とき」 and now he 「しません」; skiing is the woman's; golf is what his father likes, and he says 「ぼくは しません」.\nTrap: 「学生の ときは〜が、今は〜」 — the question asks about 「今」."
+  },
+  "wrong": [
+   {
+    "zh": "足球是学生时代踢的，现在不踢了。",
+    "en": "Football was in his student days; he doesn't play now."
+   },
+   null,
+   {
+    "zh": "滑雪的是女的。",
+    "en": "Skiing is what the woman does."
+   },
+   {
+    "zh": "高尔夫是他父亲喜欢的，他自己不打。",
+    "en": "Golf is his father's sport; he doesn't play."
+   }
+  ],
+  "traps": [
+   "tense",
+   "other-option-attribute"
+  ]
  }
 ]

@@ -579,5 +579,45 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n3-l49-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson49#3"
+    ],
+    "difficulty": 2,
+    "stem": "夏は暑いからといって、一階の窓を（　）で出かけると、どろぼうに入られるおそれがある。",
+    "options": [
+      "開けるつもり",
+      "開けっぱなし",
+      "開けたとおり",
+      "開けるかわり"
+    ],
+    "answer": 1,
+    "full": "夏は暑いからといって、一階の窓を開けっぱなしで出かけると、どろぼうに入られるおそれがある。",
+    "tr": {
+      "zh": "夏天虽说热，但要是开着一楼的窗户就出门，有可能被小偷进来。",
+      "en": "Hot as summer is, if you go out with a ground-floor window left open, a burglar may get in."
+    },
+    "why": {
+      "zh": "线索：「窓を〜で出かける」，结果是「どろぼうに入られる」：窗户开着没关就出门了。\n规则：「动词ます形＋っぱなし」＝……了就那样放着不管，带有“本来应该收拾、关上”的责备语气（「つけっぱなし」「出しっぱなし」）。\n辨析：「開けっぱなし」＝开了以后一直没关；「開けるつもり」＝打算开，只是心里的计划，窗户还没开，小偷也进不来。",
+      "en": "Clue: 「窓を〜で出かける」 leads to 「どろぼうに入られる」: the window was open and left that way.\nRule: Verb ます-stem + 「っぱなし」 = \"leave …ed\", with a note of blame: it should have been put away or closed (「つけっぱなし」, 「出しっぱなし」).\nContrast: 「開けっぱなし」 = opened and never closed; 「開けるつもり」 = intending to open, only a plan, so the window isn't open and no burglar can get in."
+    },
+    "wrong": [
+      {
+        "zh": "「つもり」是打算，“打算开窗就出门”窗户并没有开，和小偷进来接不上。",
+        "en": "「つもり」 is an intention; \"going out intending to open the window\" leaves it closed, so no burglar follows."
+      },
+      null,
+      {
+        "zh": "「とおり」是“按照……那样”，前面要有指示或预想的内容，「開けたとおりで出かける」不成句。",
+        "en": "「とおり」 means \"just as\" and needs an instruction or expectation before it; 「開けたとおりで出かける」 doesn't work."
+      },
+      {
+        "zh": "「かわり」是“代替……”，「開けるかわりで」不成句，意思也不通。",
+        "en": "「かわり」 means \"instead of\"; 「開けるかわりで」 is not a possible form and makes no sense."
+      }
+    ]
   }
 ]

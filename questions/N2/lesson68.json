@@ -464,5 +464,125 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l68-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson68#2"
+    ],
+    "difficulty": 2,
+    "stem": "取引先から今日中に必ず返事がほしいと言われた以上、部長が来週出張から戻るのを（　）。",
+    "options": [
+      "のんびり待つに越したことはない",
+      "のんびり待ってはいられない",
+      "のんびり待たずにはいられない",
+      "のんびり待っても差し支えない"
+    ],
+    "answer": 1,
+    "full": "取引先から今日中に必ず返事がほしいと言われた以上、部長が来週出張から戻るのをのんびり待ってはいられない。",
+    "tr": {
+      "zh": "既然客户说今天之内一定要答复，就不能悠闲地等部长下周出差回来了。",
+      "en": "Since the client has said they must have an answer today, we can't just sit and wait for the manager to get back from the trip next week."
+    },
+    "why": {
+      "zh": "线索：前半「今日中に必ず返事がほしいと言われた以上」说明时间很紧，后面应该是“不能慢慢等”。\n规则：「动词て形＋はいられない」＝情况紧迫，不能再继续某种状态（「待ってはいられない」「のんびりしてはいられない」）。\n辨析：「〜ずにはいられない」样子很像，意思相反：是“忍不住要做”（「笑わずにはいられない」）；「〜てはいられない」是“不能再这样下去”。",
+      "en": "Clue: 「今日中に必ず返事がほしいと言われた以上」 says time is short, so what follows must mean \"we can't wait around\".\nRule: 「verb te-form ＋ はいられない」 = the situation is pressing, so one can't stay in that state (「待ってはいられない」「のんびりしてはいられない」).\nContrast: 「〜ずにはいられない」 looks similar but means the opposite kind of thing, \"can't help doing\" (「笑わずにはいられない」); 「〜てはいられない」 is \"can't go on like this\"."
+    },
+    "wrong": [
+      {
+        "zh": "「に越したことはない」是“最好……”；对方要求今天答复，“最好悠闲地等”说不通。",
+        "en": "「に越したことはない」 means \"it's best to\"; with an answer due today, \"it's best to wait at leisure\" makes no sense."
+      },
+      null,
+      {
+        "zh": "「待たずにはいられない」是“忍不住要等”，和“今天之内必须答复”的紧迫情况不合。",
+        "en": "「待たずにはいられない」 means \"can't help waiting\", which doesn't fit the urgency of an answer due today."
+      },
+      {
+        "zh": "「ても差し支えない」是“……也没关系”；既然今天要答复，慢慢等就有关系了。",
+        "en": "「ても差し支えない」 means \"it's no problem to\"; with the answer due today, waiting around is a problem."
+      }
+    ]
+  },
+  {
+    "id": "n2-l68-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson68#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「新しいシステムに何か問題はありそうですか。」\nB「実際に現場で（　）、どこに問題があるかは何とも言えませんね。」",
+    "options": [
+      "動かしてみるにしたがって",
+      "動かしてみたからには",
+      "動かしてみているうちに",
+      "動かしてみないことには"
+    ],
+    "answer": 3,
+    "full": "A「新しいシステムに何か問題はありそうですか。」\nB「実際に現場で動かしてみないことには、どこに問題があるかは何とも言えませんね。」",
+    "tr": {
+      "zh": "A“新系统看起来会有什么问题吗？” B“不在现场实际运行一下，哪里有问题还说不好。”",
+      "en": "A: \"Does the new system look like it has any problems?\" B: \"Until we actually run it on site, there's no telling where the problems are.\""
+    },
+    "why": {
+      "zh": "线索：句尾是否定的「何とも言えません」（还说不好），前面要的是“不……的话”这个条件。\n规则：「动词ない形＋ことには」＝不先做A，B就无法成立，后面一定接否定或消极的内容（「わからない」「何とも言えない」「始まらない」）。\n辨析：「〜うちに」「〜にしたがって」后面接的是“渐渐发生的变化”（「使っているうちに慣れてきた」），不能接「何とも言えない」这种“无法判断”的结论。",
+      "en": "Clue: The sentence ends in the negative 「何とも言えません」 (can't say), so the blank must give the condition \"unless we …\".\nRule: 「verb nai-form ＋ ことには」 = without A first, B can't happen; a negative or unfavourable statement always follows (「わからない」「何とも言えない」「始まらない」).\nContrast: 「〜うちに」 and 「〜にしたがって」 lead to a gradual change (「使っているうちに慣れてきた」); they can't lead to a verdict like 「何とも言えない」."
+    },
+    "wrong": [
+      {
+        "zh": "「にしたがって」是“随着……（逐渐变化）”，后面要接变化，不能接「何とも言えません」。",
+        "en": "「にしたがって」 means \"as … (things gradually change)\"; a change must follow, not 「何とも言えません」."
+      },
+      {
+        "zh": "「からには」是“既然……就（应该／要）”，后面接决心或义务；“既然运行过了就说不好”逻辑不通。",
+        "en": "「からには」 means \"now that …, (one must)\" and leads to resolve or duty; \"now that we've run it, we can't say\" is illogical."
+      },
+      {
+        "zh": "「うちに」是“在……的过程中（不知不觉变成）”，后面应是出现的变化，如「問題が見えてくる」。",
+        "en": "「うちに」 means \"while … (something comes about)\"; a change such as 「問題が見えてくる」 should follow."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l68-015",
+    "type": "bunpou",
+    "refs": [
+      "lesson68#1"
+    ],
+    "difficulty": 2,
+    "stem": "昨日の面接でうまく答えられなかった質問のことが（　）。今朝から何度も思い出しては、ため息をついている。",
+    "options": [
+      "気になるわけではない",
+      "気になるというほどでもない",
+      "気になってしかたがない",
+      "気になるとは限らない"
+    ],
+    "answer": 2,
+    "full": "昨日の面接でうまく答えられなかった質問のことが気になってしかたがない。今朝から何度も思い出しては、ため息をついている。",
+    "tr": {
+      "zh": "昨天面试时没答好的那个问题，让我在意得不得了。从今天早上起一次次想起来，不停地叹气。",
+      "en": "I can't stop thinking about the question I answered badly in yesterday's interview. Since this morning I keep remembering it and sighing."
+    },
+    "why": {
+      "zh": "线索：后一句「何度も思い出しては、ため息をついている」说明这种心情压不住。\n规则：「て形＋しかたがない／しょうがない」＝某种感情或感觉强烈到自己控制不了（「気になってしかたがない」「眠くてしかたがない」）。前面多是表示感情、感觉的词。\n辨析：「〜わけではない」是“并不是……”，把前面的内容否定掉一部分（「嫌いなわけではない」）；「〜てしかたがない」正相反，是说这种感觉强得止不住。看后一句是“在意”还是“不在意”就能分清。",
+      "en": "Clue: The next sentence, 「何度も思い出しては、ため息をついている」, shows a feeling the speaker can't shake off.\nRule: 「te-form ＋ しかたがない／しょうがない」 = a feeling or sensation so strong one can't control it (「気になってしかたがない」「眠くてしかたがない」). A word of feeling or sensation comes before it.\nContrast: 「〜わけではない」 means \"it's not that …\" and partly denies what comes before it (「嫌いなわけではない」); 「〜てしかたがない」 does the opposite and says the feeling is too strong to stop. The next sentence tells you whether the speaker is bothered or not."
+    },
+    "wrong": [
+      {
+        "zh": "「わけではない」是“并不是……”；说“并不在意”，就和后面反复想起、叹气矛盾了。",
+        "en": "「わけではない」 means \"it's not that …\"; \"it's not that it bothers me\" contradicts the remembering and sighing that follow."
+      },
+      {
+        "zh": "「というほどでもない」是“还谈不上……”；谈不上在意的人不会一上午都在叹气。",
+        "en": "「というほどでもない」 means \"not really enough to call it …\"; someone it hardly bothers wouldn't be sighing all morning."
+      },
+      null,
+      {
+        "zh": "「とは限らない」是“不一定……”，是对一般情况的判断，不能用来说自己此刻的心情，也和后一句矛盾。",
+        "en": "「とは限らない」 means \"not necessarily\", a judgement about things in general; it can't describe one's own feeling right now, and it contradicts the next sentence."
+      }
+    ]
   }
 ]

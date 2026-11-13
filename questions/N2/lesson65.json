@@ -502,5 +502,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l65-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson65#4"
+    ],
+    "difficulty": 2,
+    "stem": "健康を保つために運動は欠かせないが、自分の体調や年齢を考えずに、ただ長い時間（　）。",
+    "options": [
+      "続ければいいに決まっている",
+      "続ければいいということになる",
+      "続けないわけにはいかないだろう",
+      "続ければいいというものではない"
+    ],
+    "answer": 3,
+    "full": "健康を保つために運動は欠かせないが、自分の体調や年齢を考えずに、ただ長い時間続ければいいというものではない。",
+    "tr": {
+      "zh": "要保持健康，运动必不可少，但并不是不考虑自己的身体状况和年龄，只要长时间坚持就行。",
+      "en": "Exercise is essential for staying healthy, but it is not simply a matter of keeping at it for a long time without regard to your condition or age."
+    },
+    "why": {
+      "zh": "线索：「欠かせないが」的「が」是转折；后面有「考えずに」「ただ」，是在否定一种简单的想法。\n规则：「〜ばいいというものではない」＝并不是只要……就行，否定“理所当然”的看法。\n辨析：「〜というものだ」是肯定的“这才叫……”（「困ったときに助け合うのが友達というものだ」）；加上「ではない」才是“并非如此”。「〜ということになる」只是说“结论就是……”。",
+      "en": "Clue: The 「が」 in 「欠かせないが」 turns the sentence; 「考えずに」 and 「ただ」 show a simplistic idea is being rejected.\nRule: 「〜ばいいというものではない」 = it isn't true that just doing… is enough; it denies what might seem obvious.\nContrast: 「〜というものだ」 is the affirmative \"that is what … is\" (「困ったときに助け合うのが友達というものだ」); only with 「ではない」 does it become \"it doesn't follow\". 「〜ということになる」 just states \"that means…\"."
+    },
+    "wrong": [
+      {
+        "zh": "「〜に決まっている」是“肯定……”，和转折的「が」以及「考えずに」「ただ」的否定语气矛盾。",
+        "en": "「〜に決まっている」 (surely) contradicts the turn made by 「が」 and the dismissive 「考えずに」「ただ」."
+      },
+      {
+        "zh": "「〜ということになる」是“也就是说……”，顺着前面得出结论，接不上转折。",
+        "en": "「〜ということになる」 (that means…) draws a conclusion in line with what precedes; it can't follow the turn."
+      },
+      {
+        "zh": "「〜ないわけにはいかない」是“不能不……”，不顾身体也不能不坚持，和前面的转折不通。",
+        "en": "「〜ないわけにはいかない」 (cannot not) would say one must keep going regardless of one's body, which the turn rules out."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l65-015",
+    "type": "bunpou",
+    "refs": [
+      "lesson65#2"
+    ],
+    "difficulty": 2,
+    "stem": "この駅前の道路は朝夕いつも渋滞していて、バスが時間通りに来たことがない。もう少し何とか（　）。",
+    "options": [
+      "なるというものだろうか",
+      "ならないものだろうか",
+      "ならないわけだろうか",
+      "なったということだろうか"
+    ],
+    "answer": 1,
+    "full": "この駅前の道路は朝夕いつも渋滞していて、バスが時間通りに来たことがない。もう少し何とかならないものだろうか。",
+    "tr": {
+      "zh": "这条站前的路早晚总是堵车，公交车从来没有准点来过。难道就不能想点办法改善一下吗？",
+      "en": "The road in front of this station is jammed every morning and evening, and the bus has never once come on time. Can't something be done about it?"
+    },
+    "why": {
+      "zh": "线索：前一句是抱怨（いつも渋滞・来たことがない），后一句有「もう少し何とか」，是盼望情况改善。\n规则：「动词ない形＋ないもの（だろう）か」＝难道不能……吗，表示强烈的愿望；「何とかならないものか」是固定说法。\n辨析：「〜ということだろうか」是对听到、看到的事作解释（是不是说……），不表示愿望。",
+      "en": "Clue: The first sentence complains (「いつも渋滞」「来たことがない」), and 「もう少し何とか」 in the second shows a wish for things to improve.\nRule: ない-form ＋ 「ないもの（だろう）か」 = can't … somehow?, a strong wish; 「何とかならないものか」 is a set phrase.\nContrast: 「〜ということだろうか」 interprets something heard or seen (does that mean…?); it expresses no wish."
+    },
+    "wrong": [
+      {
+        "zh": "「〜というものだ」是“这才叫……”的评价，没有「〜というものだろうか」这种表示愿望的说法。",
+        "en": "「〜というものだ」 is an evaluation (that's what … is); 「〜というものだろうか」 doesn't express a wish."
+      },
+      null,
+      {
+        "zh": "「〜わけだ」是“怪不得/也就是说……”，表示理解了原因，不表示愿望。",
+        "en": "「〜わけだ」 (no wonder / that means) shows one has grasped a reason, not a wish."
+      },
+      {
+        "zh": "「なったということだろうか」是“是说已经解决了吗”，和还在抱怨的前文矛盾。",
+        "en": "「なったということだろうか」 (does that mean it got sorted out?) contradicts the complaint before it."
+      }
+    ]
   }
 ]

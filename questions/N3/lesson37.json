@@ -816,5 +816,45 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n3-l37-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson37#6"
+    ],
+    "difficulty": 2,
+    "stem": "自分からやると言って引き受けたからには、どんなに大変でも、この仕事は最後まで（　）。",
+    "options": [
+      "やらなければならない",
+      "やるわけにはいかない",
+      "やらなくてもかまわない",
+      "やらないことにしている"
+    ],
+    "answer": 0,
+    "full": "自分からやると言って引き受けたからには、どんなに大変でも、この仕事は最後までやらなければならない。",
+    "tr": {
+      "zh": "既然是自己说要做才接下来的，不管多辛苦，这份工作都必须做到最后。",
+      "en": "Since I took this job on by saying I would do it myself, I have to see it through to the end however hard it gets."
+    },
+    "why": {
+      "zh": "线索：前半句是「引き受けたからには」，后面还有「どんなに大変でも」「最後まで」。\n规则：「〜からには」＝既然……，后面一定是义务、决心、要求等（「〜なければならない」「〜つもりだ」「〜べきだ」），表示“就理所当然要……”。\n辨析：「やらなければならない」＝必须做；「やるわけにはいかない」＝（因为情理上的原因）不能做，意思正好相反，和「引き受けたからには」矛盾。",
+      "en": "Clue: The first half ends in 「引き受けたからには」, followed by 「どんなに大変でも」 and 「最後まで」.\nRule: 「〜からには」 = \"now that / since …\", and what follows is a duty, a resolve or a demand (「〜なければならない」, 「〜つもりだ」, 「〜べきだ」): \"then naturally one must …\".\nContrast: 「やらなければならない」 = must do it; 「やるわけにはいかない」 = can't do it (for reasons of duty or circumstances), the opposite, which contradicts 「引き受けたからには」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「わけにはいかない」是“不能做”，既然接下来了却说不能做，前后矛盾。",
+        "en": "「わけにはいかない」 means \"can't (it wouldn't be right)\"; saying you can't do a job you took on contradicts the first half."
+      },
+      {
+        "zh": "「なくてもかまわない」是“不做也行”，和「からには」后面要接的义务、决心相反。",
+        "en": "「なくてもかまわない」 means \"it's fine not to\", the opposite of the duty or resolve that 「からには」 calls for."
+      },
+      {
+        "zh": "「ないことにしている」是“一直坚持不做”的个人习惯，和「どんなに大変でも最後まで」接不上。",
+        "en": "「ないことにしている」 is a personal habit of not doing something; it doesn't fit 「どんなに大変でも最後まで」."
+      }
+    ]
   }
 ]

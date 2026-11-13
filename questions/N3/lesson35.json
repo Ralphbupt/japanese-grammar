@@ -737,5 +737,45 @@
       null
     ],
     "rev": 2
+  },
+  {
+    "id": "n3-l35-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson35#4"
+    ],
+    "difficulty": 2,
+    "stem": "同じ言葉でも、使う場面や話す相手（　）意味が大きく変わることがあるので、注意が必要だ。",
+    "options": [
+      "について",
+      "によって",
+      "にとって",
+      "に対して"
+    ],
+    "answer": 1,
+    "full": "同じ言葉でも、使う場面や話す相手によって意味が大きく変わることがあるので、注意が必要だ。",
+    "tr": {
+      "zh": "同一个词，根据使用的场合和说话的对象，意思有时会有很大变化，需要注意。",
+      "en": "Even the same word can change a great deal in meaning depending on the situation and the person you are talking to, so you need to be careful."
+    },
+    "why": {
+      "zh": "线索：空格前是「場面や相手」，后面是「意味が変わる」：场合、对象不同，意思就不同。\n规则：「名词＋によって」后接「違う」「変わる」「さまざまだ」时，表示“根据……而不同”。\n辨析：「〜によって」＝因……而异（人によって考え方が違う）；「〜にとって」＝对……来说，后面是评价（私にとって大切だ），不能接「変わる」表示差异。",
+      "en": "Clue: 「場面や相手」 comes before the blank and 「意味が変わる」 after it: a different situation or listener, a different meaning.\nRule: Noun + 「によって」 followed by 「違う」, 「変わる」 or 「さまざまだ」 means \"depending on …\".\nContrast: 「〜によって」 = varies with … (人によって考え方が違う); 「〜にとって」 = \"for …\", followed by a judgement (私にとって大切だ), not by a change that depends on something."
+    },
+    "wrong": [
+      {
+        "zh": "「について」是“关于……”，后面接「話す」「調べる」等，不能表示“因……而变化”。",
+        "en": "「について」 means \"about\" and goes with verbs like 「話す」 or 「調べる」; it can't say what the change depends on."
+      },
+      null,
+      {
+        "zh": "「にとって」是“对……来说”，后面要接评价，而这里说的是意思随场合变化。",
+        "en": "「にとって」 means \"for …\" and needs a judgement after it; here the meaning changes with the situation."
+      },
+      {
+        "zh": "「に対して」表示动作、态度的对象或对比，“对场合和对象，意思变化”讲不通。",
+        "en": "「に対して」 marks the target of an action or attitude, or a contrast; it doesn't express \"depending on\"."
+      }
+    ]
   }
 ]

@@ -695,5 +695,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n1-l89-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson89#3"
+    ],
+    "difficulty": 2,
+    "stem": "彼は大学で教鞭をとる（　）、地域の子どもたちに無償で科学の面白さを伝える活動を二十年近く続けている。",
+    "options": [
+      "がてら",
+      "かたがた",
+      "かたわら",
+      "そばから"
+    ],
+    "answer": 2,
+    "full": "彼は大学で教鞭をとるかたわら、地域の子どもたちに無償で科学の面白さを伝える活動を二十年近く続けている。",
+    "tr": {
+      "zh": "他在大学任教之余，近二十年来一直坚持免费向当地的孩子们传授科学的乐趣。",
+      "en": "Alongside teaching at a university, he has for nearly twenty years kept up his work of showing local children, free of charge, how fascinating science is."
+    },
+    "why": {
+      "zh": "线索：前面是本职工作「大学で教鞭をとる」，后面是长期坚持的另一项活动（「二十年近く続けている」）。\n规则：「动词辞书形／名词の＋かたわら」＝在从事主业的同时，还长期做另一件事。\n辨析：「〜がてら」是一次外出顺便做另一件事，接名词或动词ます形（去掉ます）：「散歩がてら、買い物に行く」。它不接辞书形，也不用于持续多年的两种活动。",
+      "en": "Clue: First comes his main job, 「大学で教鞭をとる」; then another activity kept up for years (「二十年近く続けている」).\nRule: dictionary form / noun の + 「かたわら」 = alongside one's main occupation, also doing something else over the long term.\nContrast: 「〜がてら」 is doing a second thing on a single outing, after a noun or ます-stem: 「散歩がてら、買い物に行く」. It doesn't follow the dictionary form or describe two activities sustained for years."
+    },
+    "wrong": [
+      {
+        "zh": "「〜がてら」接名词或动词ます形（去掉ます），表示一次行动中顺便做别的事，不接「とる」，也不表示长期并行。",
+        "en": "「〜がてら」 follows a noun or ます-stem and means doing something else on the same occasion; it doesn't follow 「とる」 or describe long-term parallel work."
+      },
+      {
+        "zh": "「〜かたがた」接名词，如「お礼かたがた」，用于拜访、问候等场合，不接动词辞书形。",
+        "en": "「〜かたがた」 follows a noun, as in 「お礼かたがた」, in contexts like visits and greetings; it doesn't follow a dictionary form."
+      },
+      null,
+      {
+        "zh": "「〜そばから」是“刚……就又……”，表示反复白费功夫，和并行的两项活动无关。",
+        "en": "「〜そばから」 means \"no sooner … than … again\", about effort undone, not two parallel activities."
+      }
+    ]
+  },
+  {
+    "id": "n1-l89-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson89#6"
+    ],
+    "difficulty": 3,
+    "stem": "記者会見で不祥事に関する厳しい質問が相次ぐと、大臣は「もう話すことはない」（　）、無言のまま足早に会場を後にした。",
+    "options": [
+      "とはいえ",
+      "とばかりに",
+      "ともなると",
+      "といえども"
+    ],
+    "answer": 1,
+    "full": "記者会見で不祥事に関する厳しい質問が相次ぐと、大臣は「もう話すことはない」とばかりに、無言のまま足早に会場を後にした。",
+    "tr": {
+      "zh": "记者会上有关丑闻的尖锐提问接连不断，大臣一副“已经没什么可说的了”的样子，一言不发地快步离开了会场。",
+      "en": "When tough questions about the scandal kept coming at the press conference, the minister, as if to say he had nothing more to add, walked briskly out of the hall without a word."
+    },
+    "why": {
+      "zh": "线索：大臣实际上是「無言のまま」，没有开口；「もう話すことはない」是从他的态度看出来的。\n规则：「句子＋とばかりに」＝几乎就要说……似的，嘴上没说，但态度、动作明显是那个意思，用于描写别人。\n辨析：「〜とはいえ」是转折，“虽说……但是……”：「春とはいえ、まだ寒い」。“虽说没什么可说的，却一言不发地离开”前后并不相反，接不上。",
+      "en": "Clue: The minister in fact stays 「無言のまま」; 「もう話すことはない」 is what his manner conveys.\nRule: sentence + 「とばかりに」 = as if to say …; nothing is said, but the attitude or action plainly means it. Used to describe someone else.\nContrast: 「〜とはいえ」 is adversative, \"although …\": 「春とはいえ、まだ寒い」. \"Although he had nothing more to say, he left without a word\" sets up no contrast, so it doesn't fit."
+    },
+    "wrong": [
+      {
+        "zh": "「〜とはいえ」是“虽说……但是……”，后面要接与前项相反的内容；“没什么可说”和“一言不发地离开”并不相反。",
+        "en": "「〜とはいえ」 means \"although …\" and needs something contrary after it; \"nothing more to say\" and \"left without a word\" aren't contrary."
+      },
+      null,
+      {
+        "zh": "「〜ともなると」接名词等，表示“到了……的程度自然就……”，不能接在一句想说的话后面。",
+        "en": "「〜ともなると」 follows a noun and means \"once it gets to the level of …\"; it can't follow a remark someone might make."
+      },
+      {
+        "zh": "「〜といえども」是“即使是……也……”，表示让步，“即使没什么可说也一言不发地离开”逻辑不通。",
+        "en": "「〜といえども」 means \"even though …\", a concession; \"even though he had nothing to say, he left without a word\" is illogical."
+      }
+    ]
   }
 ]

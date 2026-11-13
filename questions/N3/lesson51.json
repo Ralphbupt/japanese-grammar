@@ -466,5 +466,45 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n3-l51-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson51#1"
+    ],
+    "difficulty": 2,
+    "stem": "兄の部屋は、本や服をいつも床に置いたままにしていて、部屋（　）、まるで物置のようだ。",
+    "options": [
+      "といえば",
+      "というより",
+      "にとっては",
+      "にしては"
+    ],
+    "answer": 1,
+    "full": "兄の部屋は、本や服をいつも床に置いたままにしていて、部屋というより、まるで物置のようだ。",
+    "tr": {
+      "zh": "哥哥的房间里书和衣服总是堆在地上，与其说是房间，不如说简直像个储藏室。",
+      "en": "My brother's room always has books and clothes left on the floor; it's less a room than a storeroom."
+    },
+    "why": {
+      "zh": "线索：前面是「部屋」，后面是「まるで物置のようだ」：换一个更合适的说法。\n规则：「AというよりB」＝与其说是A，不如说是B，表示B这个说法更贴切。B常带「まるで〜のようだ」「むしろ」。\n辨析：「AというよりB」＝B比A更贴切；「Aといえば」＝说到A，用来提起话题，后面是关于A的联想（部屋といえば、最近引っ越したそうだね），不是换说法。",
+      "en": "Clue: 「部屋」 before the blank, 「まるで物置のようだ」 after it: a more fitting word is being offered.\nRule: 「AというよりB」 = \"B rather than A\": B describes it better. B often comes with 「まるで〜のようだ」 or 「むしろ」.\nContrast: 「AというよりB」 = B is the better word; 「Aといえば」 = \"speaking of A\", raising a topic and adding something A brings to mind (部屋といえば、最近引っ越したそうだね), not a rewording."
+    },
+    "wrong": [
+      {
+        "zh": "「といえば」是“说到……”，用来提起话题，后面不是给前面的词换一个说法。",
+        "en": "「といえば」 means \"speaking of …\" and raises a topic; it doesn't replace the word with a better one."
+      },
+      null,
+      {
+        "zh": "「にとっては」是“对……来说”，前面一般是人或组织，后面接评价，「部屋にとっては」意思不通。",
+        "en": "「にとっては」 means \"for …\"; it usually follows a person or group and is followed by a judgement, so 「部屋にとっては」 makes no sense."
+      },
+      {
+        "zh": "「にしては」是“就……来说（和预想不符）”，如「学生にしては」，这里不是和标准比较。",
+        "en": "「にしては」 means \"for a …\" (against expectations), as in 「学生にしては」; nothing is being measured against a standard here."
+      }
+    ]
   }
 ]

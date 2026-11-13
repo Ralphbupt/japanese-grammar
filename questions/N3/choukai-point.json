@@ -3044,5 +3044,357 @@
       "mentioned-not-asked",
       "denied-guess"
     ]
+  },
+  {
+    "id": "n3-ck-230",
+    "type": "point",
+    "scene": "講演会で、野菜を作っている男の人が話しています。",
+    "question": "男の人は何がいちばん大変だったと言っていますか。",
+    "lines": [
+      [
+        "M",
+        "私は三年前に会社をやめて、このまちで野菜を作り始めました。"
+      ],
+      [
+        "M",
+        "始める前は、朝早く起きることや、体を使う仕事が大変だろうと思っていました。でも、それは一か月もすると慣れました。お金のことも心配でしたが、役所が畑を安く貸してくれたので、思ったほど困りませんでした。"
+      ],
+      [
+        "M",
+        "実は、いちばん苦労したのは、作った野菜を買ってくれる人を見つけることです。最初の年は、店に何度お願いしても置いてもらえなくて、たくさん捨てることになってしまいました。"
+      ],
+      [
+        "M",
+        "今は、近くのレストランが毎週使ってくれています。"
+      ]
+    ],
+    "options": [
+      "朝早く起きること",
+      "野菜を買う人を探すこと",
+      "畑を借りるお金のこと",
+      "体を使う仕事に慣れること"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": {
+        "scene": "演讲会上，一个种蔬菜的男人在讲话。",
+        "question": "男人说什么最辛苦？",
+        "lines": [
+          "我三年前辞掉了公司的工作，在这个镇上开始种蔬菜。",
+          "开始之前，我以为早起和体力活会很辛苦。可是，这些过了一个月左右就习惯了。钱的事也担心过，不过镇公所把田地便宜地租给了我，所以没有想象的那么为难。",
+          "其实，最费劲的是找到愿意买我种的菜的人。第一年，不管去店里拜托多少次，都不肯让我摆出来卖，结果扔掉了很多。",
+          "现在，附近的餐厅每个星期都在用我的菜。"
+        ],
+        "options": [
+          "早起",
+          "找买蔬菜的人",
+          "租田地的钱",
+          "习惯体力活"
+        ]
+      },
+      "en": {
+        "scene": "At a public talk, a man who grows vegetables is speaking.",
+        "question": "What does the man say was the hardest thing?",
+        "lines": [
+          "Three years ago I left my company and started growing vegetables in this town.",
+          "Before I started, I thought getting up early and the physical work would be hard. But I got used to those within a month or so. I was worried about money too, but the town office rented me a field cheaply, so that was less of a problem than I'd expected.",
+          "Actually, what I struggled with most was finding people to buy the vegetables I'd grown. In the first year, however many times I asked the shops, they wouldn't stock them, and I ended up throwing a lot away.",
+          "Now a restaurant nearby uses them every week."
+        ],
+        "options": [
+          "Getting up early",
+          "Finding people to buy the vegetables",
+          "The money to rent a field",
+          "Getting used to physical work"
+        ]
+      }
+    },
+    "why": {
+      "zh": "依据：男人说「実は、いちばん苦労したのは、作った野菜を買ってくれる人を見つけることです」。\n推理：「いちばん苦労した」就是问题里的「いちばん大変だった」，「見つける」换成了「探す」。早起和体力活是开始前的担心，「一か月もすると慣れました」；钱的事因为田地租得便宜，「思ったほど困りませんでした」。\n容易错：前面说的都是「大変だろうと思っていました」，是预想，不是实际。",
+      "en": "Evidence: The man says 「実は、いちばん苦労したのは、作った野菜を買ってくれる人を見つけることです」.\nReasoning: 「いちばん苦労した」 is the question's 「いちばん大変だった」, and 「見つける」 becomes 「探す」. Early mornings and physical work were worries beforehand — 「一か月もすると慣れました」; money, thanks to the cheap field, 「思ったほど困りませんでした」.\nTrap: the first things are what he 「大変だろうと思っていました」 — expectation, not what happened."
+    },
+    "wrong": [
+      {
+        "zh": "早起是开始前以为会辛苦的事，「一か月もすると慣れました」。",
+        "en": "Early mornings were what he expected to be hard; 「一か月もすると慣れました」."
+      },
+      null,
+      {
+        "zh": "镇公所把田地便宜地租给他，钱的事「思ったほど困りませんでした」。",
+        "en": "The town office rented him a field cheaply; money 「思ったほど困りませんでした」."
+      },
+      {
+        "zh": "体力活也是「一か月もすると慣れました」，不是最辛苦的。",
+        "en": "He got used to the physical work too within a month — not the hardest."
+      }
+    ],
+    "traps": [
+      "denied-guess",
+      "mentioned-not-asked"
+    ]
+  },
+  {
+    "id": "n3-ck-231",
+    "type": "point",
+    "scene": "ラジオで、番組の司会の女の人が話しています。",
+    "question": "来月から、この番組は何が変わりますか。",
+    "lines": [
+      [
+        "F",
+        "いつも聞いてくださって、ありがとうございます。今日はみなさんにお知らせがあります。来月から、この番組が少し変わります。"
+      ],
+      [
+        "F",
+        "放送する曜日は、今までどおり毎週土曜日です。番組をもっと長くしてほしいというおたよりもたくさんいただきましたが、残念ながら、これも今のまま、1時間です。"
+      ],
+      [
+        "F",
+        "変わるのは始まる時間です。今までは朝の9時からでしたが、来月からは夕方の5時からになります。仕事で朝は聞けないという方が多かったからです。"
+      ],
+      [
+        "F",
+        "みなさんの好きな音楽を紹介するコーナーも、もちろん続けます。これからも、どうぞよろしくお願いします。"
+      ]
+    ],
+    "options": [
+      "放送する曜日",
+      "番組の長さ",
+      "音楽のコーナー",
+      "始まる時間"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": {
+        "scene": "广播里，节目的女主持人在讲话。",
+        "question": "从下个月起，这个节目什么会改变？",
+        "lines": [
+          "感谢大家一直收听。今天有一件事要通知大家。从下个月起，这个节目会有一点变化。",
+          "播出的日子和以前一样，是每周六。我们也收到了很多希望把节目延长的来信，但很遗憾，这一点也保持不变，还是1小时。",
+          "改变的是开始的时间。以前是早上9点开始，从下个月起改为傍晚5点开始。因为很多听众说早上要工作，听不了。",
+          "介绍大家喜欢的音乐的环节，当然也会继续。今后也请多多关照。"
+        ],
+        "options": [
+          "播出的星期",
+          "节目的长度",
+          "音乐环节",
+          "开始的时间"
+        ]
+      },
+      "en": {
+        "scene": "On the radio, the host of a programme is speaking.",
+        "question": "What will change about this programme from next month?",
+        "lines": [
+          "Thank you for always listening. Today I have an announcement for you. From next month, this programme will change a little.",
+          "The day it goes out stays the same: every Saturday. We also received many letters asking us to make the programme longer, but I'm sorry to say that stays as it is too, at one hour.",
+          "What changes is the starting time. Until now it has started at nine in the morning, but from next month it will start at five in the evening. That's because many of you said you can't listen in the morning because of work.",
+          "And of course we'll keep the corner where we play your favourite music. Thank you for your continued support."
+        ],
+        "options": [
+          "The day it is broadcast",
+          "The length of the programme",
+          "The music corner",
+          "The starting time"
+        ]
+      }
+    },
+    "why": {
+      "zh": "依据：主持人说「変わるのは始まる時間です。今までは朝の9時からでしたが、来月からは夕方の5時からになります」。\n推理：先说了两样不变的：星期「今までどおり毎週土曜日」，长度虽然有人希望延长，但「これも今のまま、1時間です」。然后才说「変わるのは」开始时间。音乐环节「もちろん続けます」。\n容易错：听到「もっと長くしてほしい」就以为节目变长，那只是听众的希望。",
+      "en": "Evidence: The host says 「変わるのは始まる時間です。今までは朝の9時からでしたが、来月からは夕方の5時からになります」.\nReasoning: Two things are first said not to change: the day is 「今までどおり毎週土曜日」, and the length, though listeners asked for more, is 「これも今のまま、1時間です」. Only then comes 「変わるのは」 — the starting time. The music corner 「もちろん続けます」.\nTrap: 「もっと長くしてほしい」 is the listeners' wish, not what will happen."
+    },
+    "wrong": [
+      {
+        "zh": "星期「今までどおり毎週土曜日です」，没有变。",
+        "en": "The day is 「今までどおり毎週土曜日です」 — unchanged."
+      },
+      {
+        "zh": "延长只是听众的希望，「残念ながら、これも今のまま、1時間です」。",
+        "en": "Longer was only the listeners' wish: 「残念ながら、これも今のまま、1時間です」."
+      },
+      {
+        "zh": "音乐环节「もちろん続けます」，照旧。",
+        "en": "The music corner 「もちろん続けます」 — it stays."
+      },
+      null
+    ],
+    "traps": [
+      "mentioned-not-asked",
+      "denied-guess"
+    ]
+  },
+  {
+    "id": "n3-ck-232",
+    "type": "point",
+    "scene": "デパートで、店の男の人が放送で話しています。",
+    "question": "この店は、今日どうして早く閉まりますか。",
+    "lines": [
+      [
+        "M",
+        "本日もご来店くださいまして、ありがとうございます。お客様に閉店時間のお知らせをいたします。本日、当店は、いつもより2時間早く、午後6時に閉店いたします。"
+      ],
+      [
+        "M",
+        "先週は大雪のため早く閉店いたしましたが、本日は、夜の間に店内の電気の工事を行うためでございます。7階のレストランも、本日は5時半までとなります。"
+      ],
+      [
+        "M",
+        "工事はこんやじゅうに終わりますので、あしたは朝10時から、いつもどおり営業いたします。"
+      ],
+      [
+        "M",
+        "なお、あしたからふゆもののセールを行いますので、ぜひお越しください。"
+      ]
+    ],
+    "options": [
+      "電気の工事をするから",
+      "大雪が降っているから",
+      "セールの準備をするから",
+      "レストランが休みだから"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": {
+        "scene": "百货商店里，男店员在广播。",
+        "question": "这家店今天为什么提前关门？",
+        "lines": [
+          "感谢各位今天光临本店。现在通知各位顾客关门时间。今天本店比平时早2小时，在下午6点关门。",
+          "上周是因为大雪提前关门，而今天是因为夜间要在店内进行电气施工。7楼的餐厅今天也只营业到5点半。",
+          "施工今晚就会结束，所以明天从早上10点起照常营业。",
+          "另外，从明天起将举行冬季商品的特卖，欢迎光临。"
+        ],
+        "options": [
+          "因为要做电气施工",
+          "因为在下大雪",
+          "因为要准备特卖",
+          "因为餐厅休息"
+        ]
+      },
+      "en": {
+        "scene": "In a department store, a staff member is making an announcement.",
+        "question": "Why is the store closing early today?",
+        "lines": [
+          "Thank you for visiting us today. We have an announcement about closing time. Today the store will close at 6 p.m., two hours earlier than usual.",
+          "Last week we closed early because of heavy snow, but today it is because electrical work will be carried out in the store during the night. The restaurants on the seventh floor will also be open only until 5:30 today.",
+          "The work will be finished tonight, so tomorrow we will be open as usual from 10 a.m.",
+          "Our winter sale also starts tomorrow, so please do come."
+        ],
+        "options": [
+          "Because of electrical work",
+          "Because it is snowing heavily",
+          "Because they are preparing for a sale",
+          "Because the restaurants are closed"
+        ]
+      }
+    },
+    "why": {
+      "zh": "依据：店员说「先週は大雪のため早く閉店いたしましたが、本日は、夜の間に店内の電気の工事を行うためでございます」。\n推理：「〜ため」表示原因。大雪是「先週は」的原因，「が」后面的「本日は」才是今天的：夜里做电气施工。餐厅只是同样提前到5点半；特卖是「なお」后面的补充，从明天开始，没说要准备。\n容易错：听到「大雪のため早く閉店」就选，没注意前面的「先週は」。",
+      "en": "Evidence: The announcer says 「先週は大雪のため早く閉店いたしましたが、本日は、夜の間に店内の電気の工事を行うためでございます」.\nReasoning: 「〜ため」 gives a reason. The snow was the reason 「先週は」; after 「が」, 「本日は」 gives today's — electrical work overnight. The restaurants simply close early too, at 5:30; the sale comes after 「なお」 as an aside, starts tomorrow, and no preparation is mentioned.\nTrap: choosing snow on 「大雪のため早く閉店」 and missing 「先週は」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "大雪是「先週は」提前关门的原因，不是今天的。",
+        "en": "The snow was why they closed early 「先週は」, not today."
+      },
+      {
+        "zh": "特卖是「なお」后面的通知，从明天开始，没说为了准备而关门。",
+        "en": "The sale is an aside after 「なお」, starting tomorrow; nothing says they close to prepare."
+      },
+      {
+        "zh": "餐厅不是休息，是「本日は5時半まで」，也不是关门的原因。",
+        "en": "The restaurants aren't closed — 「本日は5時半まで」 — and that isn't the reason."
+      }
+    ],
+    "traps": [
+      "tense",
+      "mentioned-not-asked"
+    ]
+  },
+  {
+    "id": "n3-ck-233",
+    "type": "point",
+    "scene": "女の人が、友だちの留守番電話にメッセージを入れています。",
+    "question": "女の人はどうして土曜日に行けなくなりましたか。",
+    "lines": [
+      [
+        "F",
+        "もしもし、さやかだけど。今度の土曜日の映画のことで電話したの。ごめん、土曜日、行けなくなっちゃった。"
+      ],
+      [
+        "F",
+        "仕事が忙しいのは先週で終わったから、それは大丈夫なんだけど、実は、ガス会社の人が部屋のガスを調べに来るのがその日になっちゃって、私が家にいなきゃいけないの。"
+      ],
+      [
+        "F",
+        "かぜのほうは、もうすっかりよくなったから、心配しないでね。"
+      ],
+      [
+        "F",
+        "日曜日なら行けるんだけど、どうかな。チケットはまだ買ってないよね。また夜に電話するね。"
+      ]
+    ],
+    "options": [
+      "仕事が忙しいから",
+      "かぜをひいているから",
+      "ガス会社の人が来るから",
+      "チケットが買えなかったから"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": {
+        "scene": "一个女人在朋友的电话答录机上留言。",
+        "question": "女人为什么星期六去不了了？",
+        "lines": [
+          "喂，我是沙也加。我打电话是想说这个星期六看电影的事。对不起，星期六我去不了了。",
+          "工作忙到上周就结束了，那个倒没问题，其实是燃气公司的人来检查房间燃气的日子定在了那天，我得在家。",
+          "感冒已经完全好了，别担心。",
+          "星期天的话我能去，你看怎么样？票还没买吧。晚上我再给你打电话。"
+        ],
+        "options": [
+          "因为工作忙",
+          "因为感冒了",
+          "因为燃气公司的人要来",
+          "因为没买到票"
+        ]
+      },
+      "en": {
+        "scene": "A woman is leaving a message on her friend's answering machine.",
+        "question": "Why can't the woman go on Saturday any more?",
+        "lines": [
+          "Hi, it's Sayaka. I'm calling about the film this Saturday. Sorry, I can't make it on Saturday after all.",
+          "The busy spell at work ended last week, so that's fine, but actually the gas company's visit to check the gas in my flat has ended up on that day, and I have to be at home.",
+          "My cold is completely better now, so don't worry about that.",
+          "I could go on Sunday, though — how about that? You haven't bought the tickets yet, have you? I'll call you again tonight."
+        ],
+        "options": [
+          "Because she is busy at work",
+          "Because she has a cold",
+          "Because someone from the gas company is coming",
+          "Because she couldn't buy tickets"
+        ]
+      }
+    },
+    "why": {
+      "zh": "依据：女的说「実は、ガス会社の人が部屋のガスを調べに来るのがその日になっちゃって、私が家にいなきゃいけないの」。\n推理：「実は」后面是真正的理由：燃气公司的人那天来检查，她必须在家。工作忙「先週で終わったから、それは大丈夫」；感冒「もうすっかりよくなった」；票只是确认「まだ買ってないよね」，不是买不到。\n容易错：工作和感冒都提到了，但都被她自己否定了。",
+      "en": "Evidence: She says 「実は、ガス会社の人が部屋のガスを調べに来るのがその日になっちゃって、私が家にいなきゃいけないの」.\nReasoning: 「実は」 introduces the real reason: the gas company is coming that day and she has to be in. Work was busy but 「先週で終わったから、それは大丈夫」; her cold is 「もうすっかりよくなった」; the tickets are only a check — 「まだ買ってないよね」 — not something she failed to buy.\nTrap: work and the cold are both mentioned, and both set aside by the speaker herself."
+    },
+    "wrong": [
+      {
+        "zh": "工作忙「先週で終わったから、それは大丈夫」。",
+        "en": "Work was busy, but 「先週で終わったから、それは大丈夫」."
+      },
+      {
+        "zh": "感冒「もうすっかりよくなった」，已经好了。",
+        "en": "Her cold is 「もうすっかりよくなった」."
+      },
+      null,
+      {
+        "zh": "她只是确认「チケットはまだ買ってないよね」，没说买不到。",
+        "en": "She only checks 「チケットはまだ買ってないよね」 — nothing about failing to buy them."
+      }
+    ],
+    "traps": [
+      "denied-guess",
+      "mentioned-not-asked"
+    ]
   }
 ]

@@ -2978,5 +2978,774 @@
    "later",
    "order"
   ]
+ },
+ {
+  "id": "n1-ck-126",
+  "type": "kadai",
+  "scene": "市民ホールの事務室で、職員の女の人と、合唱団の代表の男の人が、ホールの利用料について話しています。",
+  "question": "男の人は、全部でいくら払いますか。",
+  "lines": [
+   [
+    "M",
+    "来月の三日、祝日の午後に大ホールをお借りする件で、利用料を確かめておきたいんですが。"
+   ],
+   [
+    "F",
+    "はい。午後の区分ですと、基本の料金が六万円です。ただ、入場料をお取りになる場合は五割増しになりますので、九万円ですね。"
+   ],
+   [
+    "M",
+    "市内の団体は半額になると伺ったんですが。"
+   ],
+   [
+    "F",
+    "申し訳ありません。その割引は、平日のご利用に限らせていただいておりまして。"
+   ],
+   [
+    "M",
+    "そうですか。それと、入場料のことなんですが、うちは入場は無料で、帰りに出口で活動への寄付をお願いするだけなんです。"
+   ],
+   [
+    "F",
+    "寄付でしたら入場料には当たりませんので、割増はかかりません。"
+   ],
+   [
+    "M",
+    "よかった。あと、舞台のピアノは使わせてもらえますよね。"
+   ],
+   [
+    "F",
+    "はい。ピアノは別に一万円いただいております。調律をご希望でしたら、さらに一万五千円かかりますが。"
+   ],
+   [
+    "M",
+    "調律は、先月そちらでなさったばかりだと聞いていますので、要りません。"
+   ],
+   [
+    "F",
+    "承知しました。では、合わせた金額を前日までにお振り込みください。"
+   ]
+  ],
+  "options": [
+   "六万円",
+   "七万円",
+   "八万五千円",
+   "十万円"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "市民会馆的办公室里，女职员和合唱团的男代表在谈会馆的使用费。",
+    "question": "男人一共要付多少钱？",
+    "lines": [
+     "下个月三号，节假日的下午要借大厅，我想先确认一下使用费。",
+     "好的。下午这个时段，基本费用是六万日元。不过，收门票的话要加收五成，所以是九万日元。",
+     "我听说市内的团体可以半价。",
+     "非常抱歉。那个优惠只限平日使用。",
+     "是吗。另外，关于门票，我们是免费入场，只是散场时在出口请大家为我们的活动捐款。",
+     "捐款的话不算门票，所以不加收。",
+     "太好了。还有，舞台上的钢琴可以用吧。",
+     "可以。钢琴另收一万日元。如果需要调音，还要再加一万五千日元。",
+     "听说上个月你们刚调过音，调音就不需要了。",
+     "明白了。那么，请在前一天之前把合计金额汇过来。"
+    ],
+    "options": [
+     "六万日元",
+     "七万日元",
+     "八万五千日元",
+     "十万日元"
+    ]
+   },
+   "en": {
+    "scene": "In the office of a civic hall, a female staff member and the male representative of a choir are talking about the fee for the hall.",
+    "question": "How much will the man pay in all?",
+    "lines": [
+     "We're booking the main hall for the afternoon of the 3rd next month, a public holiday, and I'd like to confirm the fee.",
+     "Certainly. For the afternoon slot the basic fee is 60,000 yen. But if you charge admission, it's fifty per cent more, so that's 90,000 yen.",
+     "I heard groups from the city get half price.",
+     "I'm sorry. That discount applies to weekday use only.",
+     "I see. About admission, though — entry is free with us; we just ask for donations to our activities at the exit afterwards.",
+     "Donations don't count as an admission charge, so the surcharge doesn't apply.",
+     "Good. And we can use the piano on stage, can't we?",
+     "Yes. The piano is an extra 10,000 yen. If you'd like it tuned, that's a further 15,000 yen.",
+     "I'm told you had it tuned only last month, so we don't need that.",
+     "Understood. Then please transfer the total by the day before."
+    ],
+    "options": [
+     "60,000 yen",
+     "70,000 yen",
+     "85,000 yen",
+     "100,000 yen"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：职员说「基本の料金が六万円です」；听说只收捐款后说「割増はかかりません」；又说「ピアノは別に一万円いただいております」。\n推理：九万是按收门票算的，但只募捐不算门票，回到六万；半价「平日のご利用に限らせて」，当天是节假日，不适用；钢琴加一万；调音男的说「要りません」。六万＋一万＝七万。\n容易错：最先听到的九万后来被更正；调音费是被拒绝的项目。",
+   "en": "Evidence: The clerk says 「基本の料金が六万円です」; on hearing they only collect donations, 「割増はかかりません」; and 「ピアノは別に一万円いただいております」.\nReasoning: The 90,000 assumed an admission charge, but donations don't count, so it's back to 60,000. The half-price discount is 「平日のご利用に限らせて」 and the day is a holiday. The piano adds 10,000; he declines tuning (「要りません」). 60,000 + 10,000 = 70,000.\nTrap: the 90,000 heard first is corrected later; the tuning fee is for something he turns down."
+  },
+  "wrong": [
+   {
+    "zh": "这只是基本费用，还要加钢琴的一万日元。",
+    "en": "That is only the basic fee; the piano adds 10,000 yen."
+   },
+   null,
+   {
+    "zh": "这是再加上调音费的金额，但男的说调音「要りません」。",
+    "en": "That includes tuning, which he says they don't need (「要りません」)."
+   },
+   {
+    "zh": "这是按加收五成的九万再加钢琴算的，但募捐不算门票，「割増はかかりません」。",
+    "en": "That is the surcharged 90,000 plus the piano, but donations aren't admission — 「割増はかかりません」."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "number"
+  ]
+ },
+ {
+  "id": "n1-ck-127",
+  "type": "kadai",
+  "scene": "印刷会社で、営業の男の人と、町の歴史の本を作っている女の人が話しています。",
+  "question": "女の人が払う印刷の費用は、いくらになりますか。",
+  "lines": [
+   [
+    "F",
+    "先日、三百部で三十万円というお見積もりをいただきましたが、配る先が増えましたので、五百部にしたいんです。"
+   ],
+   [
+    "M",
+    "五百部ですと、一部あたりは割安になりまして、全部で四十万円です。"
+   ],
+   [
+    "F",
+    "それから、表紙だけカラーにすると、どのくらい上がりますか。"
+   ],
+   [
+    "M",
+    "表紙のカラーは、五万円の追加になります。今月中に原稿をいただければ、全体から一割お引きできるんですが。"
+   ],
+   [
+    "F",
+    "今月中は難しいですね。載せる写真の許可が、まだそろっていなくて。"
+   ],
+   [
+    "M",
+    "そうですか。でしたら、原稿を印刷用のデータの形でご用意いただければ、こちらの作業が省けますので、三万円お引きします。"
+   ],
+   [
+    "F",
+    "それなら、娘が仕事でやっているので頼めます。表紙もカラーでお願いします。"
+   ],
+   [
+    "M",
+    "かしこまりました。あ、失礼しました。先ほどの五万円は三百部の場合の金額で、五百部ですと六万円になります。"
+   ],
+   [
+    "F",
+    "わかりました。それで結構です。"
+   ]
+  ],
+  "options": [
+   "四十万円",
+   "四十二万円",
+   "四十三万円",
+   "四十六万円"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "印刷公司里，男业务员和正在编写镇史书的女人在谈话。",
+    "question": "女人要付的印刷费是多少？",
+    "lines": [
+     "前几天您给的报价是三百本三十万日元，不过要发的地方多了，我想改成五百本。",
+     "五百本的话，每本单价会便宜一些，一共四十万日元。",
+     "另外，只把封面做成彩色的话，要贵多少？",
+     "封面彩印要加五万日元。如果这个月内能交稿，可以从总额里减一成。",
+     "这个月内有点难。要登的照片的许可还没拿齐。",
+     "是吗。那么，如果您能把稿子做成印刷用的数据文件，我们这边可以省去一道工序，给您减三万日元。",
+     "那个我女儿工作上就在做，可以请她帮忙。封面也请做成彩色的。",
+     "好的。啊，对不起。刚才说的五万日元是三百本时的价格，五百本的话是六万日元。",
+     "知道了。就这样吧。"
+    ],
+    "options": [
+     "四十万日元",
+     "四十二万日元",
+     "四十三万日元",
+     "四十六万日元"
+    ]
+   },
+   "en": {
+    "scene": "At a printing company, a male sales rep and a woman who is producing a book on her town's history are talking.",
+    "question": "How much will the woman pay for the printing?",
+    "lines": [
+     "The other day you quoted 300,000 yen for 300 copies, but we now have more places to send it, so I'd like 500.",
+     "For 500 copies the price per copy comes down, and the total is 400,000 yen.",
+     "And how much more would it be to have just the cover in colour?",
+     "A colour cover adds 50,000 yen. If we could have the manuscript within this month, I could take ten per cent off the whole.",
+     "This month would be difficult. We don't have all the permissions for the photos yet.",
+     "I see. In that case, if you can supply the manuscript as print-ready data, it saves us work, so I'll take 30,000 yen off.",
+     "My daughter does that for a living, so I can ask her. And please make the cover colour.",
+     "Certainly. Oh, I beg your pardon. The 50,000 yen I mentioned is the price for 300 copies; for 500 it's 60,000 yen.",
+     "I see. That's fine."
+    ],
+    "options": [
+     "400,000 yen",
+     "420,000 yen",
+     "430,000 yen",
+     "460,000 yen"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说五百本「全部で四十万円」；数据交稿「三万円お引きします」；最后更正：「五百部ですと六万円になります。」\n推理：五百本四十万，加彩色封面六万（不是最初说的五万），再减去数据交稿的三万：40＋6−3＝43 万。减一成要「今月中に原稿」，女的说「今月中は難しい」，不适用。\n容易错：封面的价格在最后才被更正，按五万算就成了四十二万。",
+   "en": "Evidence: He says 500 copies are 「全部で四十万円」; for print-ready data 「三万円お引きします」; and finally corrects himself: 「五百部ですと六万円になります。」\nReasoning: 400,000 for 500 copies, plus 60,000 for the colour cover (not the 50,000 first quoted), minus 30,000 for supplying data: 40 + 6 − 3 = 43. The ten per cent off needs the manuscript this month, which she says is 「難しい」.\nTrap: the cover price is corrected only at the end; using 50,000 gives 420,000."
+  },
+  "wrong": [
+   {
+    "zh": "这只是五百本的基本价格，没算彩色封面和减价。",
+    "en": "That is only the base price for 500 copies, without the cover or the discount."
+   },
+   {
+    "zh": "这是按封面五万算的，但五百本时封面是六万。",
+    "en": "That uses 50,000 for the cover, but for 500 copies it is 60,000."
+   },
+   null,
+   {
+    "zh": "这是没减去数据交稿的三万日元的金额。",
+    "en": "That leaves out the 30,000 yen taken off for print-ready data."
+   }
+  ],
+  "traps": [
+   "number",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n1-ck-128",
+  "type": "kadai",
+  "scene": "市の公園課で、課長の女の人と男の職員が、古くなった公園の遊具について話しています。",
+  "question": "二人は、どの案で進めることにしましたか。",
+  "lines": [
+   [
+    "M",
+    "課長、中央公園の遊具の件ですが、点検の結果、ブランコと鉄棒は柱の根元の腐食が進んでいて、このままでは使わせられないそうです。"
+   ],
+   [
+    "F",
+    "修理でしのげないの？"
+   ],
+   [
+    "M",
+    "業者によると、補強しても二、三年しかもたず、かえって割高になるとのことでした。"
+   ],
+   [
+    "F",
+    "そう。いっそ全部新しくできればいいんだけど、今年度の予算ではとても無理ね。"
+   ],
+   [
+    "M",
+    "はい。それで、遊具をすべてなくして芝生の広場にする案も出ています。維持費もかかりませんし。"
+   ],
+   [
+    "F",
+    "でも、あそこは隣の保育園が毎日のように使っているでしょう。滑り台まで取り払ったら、苦情が出るわよ。滑り台は去年替えたばかりだし。"
+   ],
+   [
+    "M",
+    "では、ブランコと鉄棒だけ取り外して、滑り台は残すということで。"
+   ],
+   [
+    "F",
+    "ええ。空いた場所は当面囲っておいて、新しいのは来年度の予算で要求しましょう。保育園には私から説明しておくから。"
+   ]
+  ],
+  "options": [
+   "すべての遊具を今年度中に新しくする",
+   "傷んだ遊具を補強して使い続ける",
+   "遊具をすべて撤去して広場にする",
+   "傷んだ遊具だけ外し、新設は来年度に回す"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "市公园科里，女科长和男职员在谈公园里老化的游乐设施。",
+    "question": "两人决定按哪个方案办？",
+    "lines": [
+     "科长，中央公园游乐设施的事，检查结果说秋千和单杠的柱子根部腐蚀得厉害，这样下去不能让人用了。",
+     "修一修撑不过去吗？",
+     "据施工方说，就算加固也只能撑两三年，反而更不划算。",
+     "这样啊。干脆全部换新的就好了，可今年的预算根本不够。",
+     "是的。所以也有人提出把游乐设施全部拆掉、改成草坪广场的方案。还不用维护费。",
+     "可是那里隔壁的保育园几乎每天都在用吧。连滑梯都拆掉的话，会有人投诉的。再说滑梯去年才换过。",
+     "那么，就只拆秋千和单杠，滑梯留着。",
+     "嗯。空出来的地方暂时围起来，新的就列入明年的预算申请吧。保育园那边我去说明。"
+    ],
+    "options": [
+     "今年之内把所有游乐设施换新",
+     "把损坏的设施加固后继续使用",
+     "把游乐设施全部拆掉改成广场",
+     "只拆掉损坏的设施，新装的推到明年"
+    ]
+   },
+   "en": {
+    "scene": "In a city's parks section, the female section head and a male staff member are talking about ageing playground equipment in a park.",
+    "question": "Which plan have the two decided to go with?",
+    "lines": [
+     "About the equipment in Central Park: the inspection found the posts of the swings and the horizontal bars badly corroded at the base, and they say we can't let people use them as they are.",
+     "Can't we get by with repairs?",
+     "According to the contractor, even reinforced they'd last only two or three years, and it would end up costing more.",
+     "I see. It'd be best to replace the lot, but this year's budget won't stretch anywhere near that.",
+     "No. So there's also a proposal to remove all the equipment and turn it into a lawn. There'd be no upkeep, either.",
+     "But the nursery next door uses that park almost every day. If we took away even the slide, we'd get complaints. And the slide was only replaced last year.",
+     "Then we take out just the swings and the bars and leave the slide.",
+     "Yes. We'll fence off the empty spots for now and ask for new ones in next year's budget. I'll explain it to the nursery myself."
+    ],
+    "options": [
+     "Replace all the equipment within this fiscal year",
+     "Reinforce the damaged equipment and keep using it",
+     "Remove all the equipment and make it an open space",
+     "Remove only the damaged equipment and put off new installation until next year"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「ブランコと鉄棒だけ取り外して、滑り台は残すということで。」课长回答：「ええ。……新しいのは来年度の予算で要求しましょう。」\n推理：加固「かえって割高」；全部换新「今年度の予算ではとても無理」；全部拆掉会让保育园投诉，而且滑梯去年才换。所以只拆腐蚀的秋千和单杠，新的等明年的预算。\n容易错：三个被否定的方案都有具体理由，要听到最后两句才知道结论。",
+   "en": "Evidence: He says 「ブランコと鉄棒だけ取り外して、滑り台は残すということで。」 and she answers 「ええ。……新しいのは来年度の予算で要求しましょう。」\nReasoning: Reinforcing is 「かえって割高」; replacing everything is 「今年度の予算ではとても無理」; removing everything would bring complaints from the nursery, and the slide is only a year old. So only the corroded swings and bars come out, and new ones wait for next year's budget.\nTrap: each rejected plan gets a concrete reason; the conclusion comes only in the last two lines."
+  },
+  "wrong": [
+   {
+    "zh": "课长说全部换新「今年度の予算ではとても無理」。",
+    "en": "She says replacing everything is 「今年度の予算ではとても無理」."
+   },
+   {
+    "zh": "施工方说加固只能撑两三年，「かえって割高になる」。",
+    "en": "The contractor says reinforcing lasts two or three years and is 「かえって割高」."
+   },
+   {
+    "zh": "保育园每天在用，滑梯去年才换，所以滑梯要留下。",
+    "en": "The nursery uses the park daily and the slide is new, so the slide stays."
+   },
+   null
+  ],
+  "traps": [
+   "not-possible",
+   "condition-conflict",
+   "later"
+  ]
+ },
+ {
+  "id": "n1-ck-129",
+  "type": "kadai",
+  "scene": "研究所で、女の研究員と先輩の男の人が、学会で使う発表の資料について話しています。",
+  "question": "女の人は、資料の何を修正しますか。",
+  "lines": [
+   [
+    "M",
+    "全体としてはよくまとまってるよ。題が少し長い気もするけどね。"
+   ],
+   [
+    "F",
+    "申し込みのときに登録した題なので、もう変えられないんです。"
+   ],
+   [
+    "M",
+    "じゃあ、仕方ないな。三枚目の実験の手順、文字ばかりで読みにくいから図にしたら、と思ったんだけど……。"
+   ],
+   [
+    "F",
+    "そこは口頭で簡単に触れるだけにして、詳しくは配る要旨を見てもらうつもりです。"
+   ],
+   [
+    "M",
+    "それなら今のままでいいか。気になるのは五枚目のグラフ。新しい方法の結果だけ載っていて、従来の方法の数値がないから、どれだけ良くなったのかが伝わらないよ。"
+   ],
+   [
+    "F",
+    "あ、それは話の中で言うつもりでしたが、並べて見せたほうがいいですね。"
+   ],
+   [
+    "M",
+    "うん、そこが一番の売りなんだから。最後のまとめは、字が小さいかと思ったけど、会場のスクリーンは大きいから問題ないだろう。"
+   ],
+   [
+    "F",
+    "わかりました。では、五枚目だけ手を入れておきます。"
+   ]
+  ],
+  "options": [
+   "グラフに従来の方法の数値を加える",
+   "発表の題をもっと短いものにする",
+   "実験の手順を文字から図に改める",
+   "まとめの文字をもっと大きくする"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "研究所里，女研究员和男前辈在谈学会上用的发表资料。",
+    "question": "女人要修改资料的什么地方？",
+    "lines": [
+     "整体上整理得不错。就是觉得题目有点长。",
+     "那是报名时登记的题目，已经不能改了。",
+     "那就没办法了。第三页的实验步骤全是文字，不好读，我本来想说改成图的……",
+     "那里我打算口头简单带过，详细的请大家看发下去的摘要。",
+     "那就保持现在这样吧。我在意的是第五页的图表。只放了新方法的结果，没有原来方法的数值，看不出到底改善了多少。",
+     "啊，那个我本来打算讲的时候说，不过还是并排给大家看更好。",
+     "嗯，那可是最大的卖点。最后的总结，我本来觉得字小了点，不过会场的屏幕很大，应该没问题。",
+     "明白了。那我只改第五页。"
+    ],
+    "options": [
+     "在图表里加上原来方法的数值",
+     "把发表的题目改短",
+     "把实验步骤从文字改成图",
+     "把总结的字放大"
+    ]
+   },
+   "en": {
+    "scene": "At a research institute, a female researcher and a senior male colleague are talking about her slides for an academic conference.",
+    "question": "What will the woman correct in her slides?",
+    "lines": [
+     "On the whole it hangs together well. The title does feel a bit long, though.",
+     "It's the title I registered when I applied, so it can't be changed now.",
+     "Then it can't be helped. The procedure on slide three is all text and hard to read, so I was going to suggest turning it into a diagram…",
+     "I'll only touch on that briefly when I speak and refer people to the abstract we hand out for the details.",
+     "Then it can stay as it is. What bothers me is the graph on slide five. It shows only the results of the new method, with no figures for the conventional one, so nobody can tell how much better it is.",
+     "Oh — I was going to say that as I talked, but it would be better to show them side by side.",
+     "Yes, that's your main selling point. I wondered if the text on the final summary was too small, but the screen in the hall is big, so it should be fine.",
+     "All right. Then I'll rework just slide five."
+    ],
+    "options": [
+     "Add the conventional method's figures to the graph",
+     "Make the title of the talk shorter",
+     "Change the procedure from text to a diagram",
+     "Make the text of the summary larger"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说第五页的图表「従来の方法の数値がないから、どれだけ良くなったのかが伝わらない」，女的说：「並べて見せたほうがいいですね。」最后说：「五枚目だけ手を入れておきます。」\n推理：要改的只有第五页的图表，把原来方法的数值也放上去对比。题目「もう変えられない」；实验步骤口头带过，男的说「今のままでいいか」；总结的字因为屏幕大「問題ないだろう」。\n容易错：四处都被提到，其中三处是男的自己收回了意见。",
+   "en": "Evidence: He says the graph on slide five has 「従来の方法の数値がないから、どれだけ良くなったのかが伝わらない」; she agrees 「並べて見せたほうがいいですね。」 and ends with 「五枚目だけ手を入れておきます。」\nReasoning: Only the graph on slide five changes: the conventional method's figures go in for comparison. The title 「もう変えられない」; the procedure will be covered orally and he says 「今のままでいいか」; the summary text is fine on a big screen (「問題ないだろう」).\nTrap: all four points come up, but he withdraws three of them himself."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "题目是报名时登记的，「もう変えられない」。",
+    "en": "The title was registered with the application — 「もう変えられない」."
+   },
+   {
+    "zh": "实验步骤口头带过、看摘要，男的说「今のままでいいか」。",
+    "en": "The procedure will be handled orally and in the abstract; he says 「今のままでいいか」."
+   },
+   {
+    "zh": "会场屏幕大，男的说「問題ないだろう」。",
+    "en": "The hall's screen is big, so he says 「問題ないだろう」."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-ck-130",
+  "type": "kadai",
+  "scene": "商工会議所で、職員の女の人と、パン屋を経営している男の人が、設備の補助金について話しています。",
+  "question": "男の人は、申請書をいつまでに商工会議所に出しますか。",
+  "lines": [
+   [
+    "M",
+    "オーブンを入れ替えるのに補助金を申請したいんですが、締め切りはいつでしょうか。"
+   ],
+   [
+    "F",
+    "県への締め切りは今月の三十日です。ただ、その前にこちらで申請書と事業計画書の内容を確認して、推薦の書類をつけることになっていまして、それに一週間いただいています。"
+   ],
+   [
+    "M",
+    "ということは、二十三日までにこちらに持ってくればいいんですね。"
+   ],
+   [
+    "F",
+    "ええ、通常は。ただ、今回は二十三日が祝日でこちらが休みですので、その前の日までにお願いします。"
+   ],
+   [
+    "M",
+    "困ったな。機械の見積書が業者から届くのが二十五日なんですよ。全部そろえてから、まとめて持ってきてはいけませんか。"
+   ],
+   [
+    "F",
+    "見積書でしたら、あとから追加で出していただいて構いません。二十九日の朝までにこちらに届けば間に合います。ですが、申請書と計画書は確認に日数がかかりますので、先ほど申し上げた日は動かせません。"
+   ],
+   [
+    "M",
+    "わかりました。じゃあ、見積書だけ後から届けます。"
+   ]
+  ],
+  "options": [
+   "二十二日",
+   "二十三日",
+   "二十五日",
+   "二十九日"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "商工会议所里，女职员和经营面包店的男人在谈设备补助金的事。",
+    "question": "男人要在哪天之前把申请书交到商工会议所？",
+    "lines": [
+     "我想为更换烤箱申请补助金，截止日期是哪天？",
+     "交到县里的截止日期是这个月三十号。不过在那之前，要先由我们确认申请书和事业计划书的内容，再附上推荐文件，这需要一周时间。",
+     "也就是说，二十三号之前拿到这里来就行了吧。",
+     "是的，一般是这样。不过这次二十三号是节假日，我们休息，所以请在前一天之前交来。",
+     "这可麻烦了。机器的报价单要二十五号才能从厂家那边拿到。等全部齐了再一起拿来不行吗？",
+     "报价单的话，之后再补交也可以。二十九号早上之前送到我们这里就来得及。但是申请书和计划书确认需要时间，刚才说的日期不能改。",
+     "明白了。那报价单我之后再送来。"
+    ],
+    "options": [
+     "二十二号",
+     "二十三号",
+     "二十五号",
+     "二十九号"
+    ]
+   },
+   "en": {
+    "scene": "At a chamber of commerce, a female staff member and a man who runs a bakery are talking about a subsidy for equipment.",
+    "question": "By when will the man hand in the application form to the chamber of commerce?",
+    "lines": [
+     "I'd like to apply for the subsidy to replace my oven. When is the deadline?",
+     "The deadline at the prefecture is the 30th of this month. Before that, though, we check the application form and the business plan here and attach a letter of recommendation, and we ask for a week for that.",
+     "So I should bring them here by the 23rd, then.",
+     "Normally, yes. But this time the 23rd is a public holiday and we're closed, so please make it the day before.",
+     "That's a problem. The estimate for the machine won't reach me from the supplier until the 25th. Couldn't I bring everything together once I have it all?",
+     "The estimate can be added afterwards. As long as it reaches us by the morning of the 29th, it will be in time. But the application form and the plan take days to check, so the date I just gave you can't be moved.",
+     "I see. Then I'll bring just the estimate later."
+    ],
+    "options": [
+     "The 22nd",
+     "The 23rd",
+     "The 25th",
+     "The 29th"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：职员说：「今回は二十三日が祝日でこちらが休みですので、その前の日までにお願いします。」又说申请书和计划书「先ほど申し上げた日は動かせません」。\n推理：三十号截止，确认要一周，本来是二十三号；但二十三号是节假日，要提前一天，即二十二号。可以晚交的只有报价单（二十九号早上之前）。\n容易错：二十二号没有直接说出来，要从「その前の日」推出；二十五号、二十九号都是报价单的日期。",
+   "en": "Evidence: The clerk says 「今回は二十三日が祝日でこちらが休みですので、その前の日までにお願いします。」 and that for the form and plan 「先ほど申し上げた日は動かせません」.\nReasoning: The deadline is the 30th and checking takes a week, which would give the 23rd; but the 23rd is a holiday, so it must be the day before — the 22nd. Only the estimate may come later (by the morning of the 29th).\nTrap: the 22nd is never said outright; it follows from 「その前の日」. The 25th and 29th both concern the estimate."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "二十三号是节假日，商工会议所休息，要在前一天交。",
+    "en": "The 23rd is a holiday and the chamber is closed, so it must be the day before."
+   },
+   {
+    "zh": "二十五号是报价单从厂家送到的日子。",
+    "en": "The 25th is when the estimate arrives from the supplier."
+   },
+   {
+    "zh": "二十九号早上是报价单的期限，不是申请书的。",
+    "en": "The morning of the 29th is the limit for the estimate, not the application form."
+   }
+  ],
+  "traps": [
+   "number",
+   "condition-conflict",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-ck-131",
+  "type": "kadai",
+  "scene": "旅行会社で、男の人と課長の女の人が、新しいツアーのパンフレットについて話しています。",
+  "question": "男の人は、このあとだれに確認を取りますか。",
+  "lines": [
+   [
+    "M",
+    "課長、冬の温泉ツアーのパンフレット、試し刷りが上がりました。"
+   ],
+   [
+    "F",
+    "ご苦労さま。この露天風呂の写真、いいわね。使う許可は取ってある？"
+   ],
+   [
+    "M",
+    "カメラマンとは、契約で自由に使えることになっています。旅館のおかみさんにも、先月、掲載の了解をいただきました。"
+   ],
+   [
+    "F",
+    "この「地元の牛肉を味わう夕食」という文句は、法務に見せた？表示にはうるさいから。"
+   ],
+   [
+    "M",
+    "はい、先週見てもらって、産地が事実なら差し支えないとのことでした。"
+   ],
+   [
+    "F",
+    "その「事実なら」が気になるのよ。これ、夏に撮った料理でしょう。冬も同じ肉を出してくれるのかしら。"
+   ],
+   [
+    "M",
+    "あ……献立は季節ごとに料理長が決めると、おかみさんがおっしゃっていました。"
+   ],
+   [
+    "F",
+    "だったら、おかみさんに聞いてもらちが明かないわね。決める本人に冬の献立を確かめてちょうだい。印刷に回すのはそれからよ。"
+   ]
+  ],
+  "options": [
+   "写真を撮ったカメラマン",
+   "旅館のおかみ",
+   "旅館の料理長",
+   "法務の担当者"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "旅行社里，男人和女科长在谈新旅游团的宣传册。",
+    "question": "男人接下来要向谁确认？",
+    "lines": [
+     "科长，冬季温泉旅游团的宣传册，打样出来了。",
+     "辛苦了。这张露天温泉的照片不错。使用许可拿到了吗？",
+     "和摄影师有合同，可以自由使用。旅馆的老板娘上个月也同意刊登了。",
+     "这句“品尝本地牛肉的晚餐”，给法务看过了吗？他们对标示可是很严格的。",
+     "看过了，上周请他们看的，说只要产地属实就没有问题。",
+     "我在意的就是那个“只要属实”。这是夏天拍的菜吧。冬天也会上同样的肉吗？",
+     "啊……老板娘说过，菜单是每个季节由厨师长定的。",
+     "那问老板娘也问不出结果。去向定菜单的本人确认一下冬天的菜单。之后才能送去印刷。"
+    ],
+    "options": [
+     "拍照片的摄影师",
+     "旅馆的老板娘",
+     "旅馆的厨师长",
+     "法务的负责人"
+    ]
+   },
+   "en": {
+    "scene": "At a travel company, a man and his female section head are talking about the brochure for a new tour.",
+    "question": "Whom will the man check with next?",
+    "lines": [
+     "The proof of the brochure for the winter hot-spring tour has come in.",
+     "Thank you. This photo of the open-air bath is lovely. Do we have permission to use it?",
+     "Under the contract with the photographer we're free to use it. And the proprietress of the inn agreed last month to its being published.",
+     "This line, 'A dinner of local beef' — did you show it to Legal? They're strict about labelling.",
+     "Yes, they looked at it last week and said there's no objection as long as the origin is true.",
+     "It's that 'as long as it's true' that worries me. These dishes were photographed in summer, weren't they? Will they serve the same meat in winter?",
+     "Ah… the proprietress did say the head chef decides the menu each season.",
+     "Then asking the proprietress will get us nowhere. Check the winter menu with the person who decides it. It doesn't go to the printer until then."
+    ],
+    "options": [
+     "The photographer who took the pictures",
+     "The proprietress of the inn",
+     "The head chef of the inn",
+     "The person in charge at Legal"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「献立は季節ごとに料理長が決める」。课长说：「決める本人に冬の献立を確かめてちょうだい。」\n推理：法务说产地属实就行，但照片是夏天的菜，冬天是否还用本地牛肉不清楚。定菜单的是厨师长，所以「決める本人」＝厨师长。摄影师有合同，老板娘上个月已同意，法务上周已看过。\n容易错：答案没有直接说出职位，用「決める本人」指代；老板娘被明确排除（「らちが明かない」）。",
+   "en": "Evidence: He says 「献立は季節ごとに料理長が決める」, and she says 「決める本人に冬の献立を確かめてちょうだい。」\nReasoning: Legal approved the wording only if the origin is true, but the photo shows a summer menu and nobody knows whether winter uses local beef. The head chef sets the menu, so 「決める本人」 is the head chef. The photographer is covered by contract, the proprietress agreed last month, Legal looked last week.\nTrap: the answer is named only as 「決める本人」; the proprietress is explicitly ruled out (「らちが明かない」)."
+  },
+  "wrong": [
+   {
+    "zh": "和摄影师有合同，照片可以自由使用，不用再确认。",
+    "en": "The contract with the photographer already allows free use."
+   },
+   {
+    "zh": "课长说问老板娘「らちが明かない」，定菜单的不是她。",
+    "en": "She says asking the proprietress is 「らちが明かない」; she doesn't decide the menu."
+   },
+   null,
+   {
+    "zh": "法务上周已经看过，条件是产地属实，现在要查的正是这一点。",
+    "en": "Legal already looked last week; what remains is the fact they made it conditional on."
+   }
+  ],
+  "traps": [
+   "done-already",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n1-ck-132",
+  "type": "kadai",
+  "scene": "遺跡の発掘現場で、調査員の女の人が、アルバイトの人たちに話しています。",
+  "question": "アルバイトの人たちは、このあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "皆さん、おはようございます。今日から二週間、発掘の作業を手伝っていただきます。"
+   ],
+   [
+    "F",
+    "道具は、あちらのテントに人数分そろえてあります。ただ、取りに行くのは少し待ってください。その前に、作業していただく区画を班ごとに割り当てますので、名簿で自分の班を確かめて、班長のところに集まってください。区画がわからないまま道具を持って歩き回ると、すでに掘った所を踏み荒らしてしまうおそれがあります。"
+   ],
+   [
+    "F",
+    "それから、安全についての映像は、昨日のうちに見ていただいていますね。帽子と手袋も、受付でお渡ししたとおりです。出土品の洗い方は、昼の休憩のあとで、別の者がお教えします。"
+   ]
+  ],
+  "options": [
+   "テントへ道具を取りに行く",
+   "名簿を見て班長のもとに集まる",
+   "安全についての映像を見る",
+   "出土品の洗い方を教わる"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "遗址发掘现场，女调查员在对打工的人们讲话。",
+    "question": "打工的人们接下来首先要做什么？",
+    "lines": [
+     "各位早上好。从今天起的两周，请大家协助发掘工作。",
+     "工具已经按人数准备在那边的帐篷里了。不过，请先不要去拿。在那之前，要按小组分配各位作业的区域，所以请在名单上确认自己的组，到组长那里集合。不知道区域就拿着工具到处走，有可能把已经挖过的地方踩坏。",
+     "另外，安全说明的录像，各位昨天已经看过了吧。帽子和手套也已经在接待处发给大家了。出土品的清洗方法，午休以后由别的人来教。"
+    ],
+    "options": [
+     "去帐篷拿工具",
+     "看名单，到组长那里集合",
+     "看安全说明的录像",
+     "学习出土品的清洗方法"
+    ]
+   },
+   "en": {
+    "scene": "At an archaeological dig, a female researcher is speaking to the part-time workers.",
+    "question": "What will the part-time workers do first?",
+    "lines": [
+     "Good morning, everyone. For two weeks from today you'll be helping with the excavation.",
+     "The tools are laid out for all of you in the tent over there. But please wait a moment before going to fetch them. First we'll assign each group the section it will work in, so check the list for your group and gather around your group leader. If you walk around with tools without knowing your section, you may trample areas that have already been dug.",
+     "Also, you all watched the safety video yesterday, didn't you. And you have the hats and gloves we handed out at reception. How to wash the finds will be taught by someone else after the lunch break."
+    ],
+    "options": [
+     "Go to the tent to fetch tools",
+     "Check the list and gather around their group leader",
+     "Watch the safety video",
+     "Learn how to wash the finds"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：调查员说：「取りに行くのは少し待ってください。その前に……名簿で自分の班を確かめて、班長のところに集まってください。」\n推理：工具虽然已经准备好，但要先分区域，所以第一步是看名单、到组长那里集合，然后才去拿工具。安全录像「昨日のうちに」看过了；清洗方法是「昼の休憩のあとで」。\n容易错：工具最先被提到，却被「その前に」推到后面。",
+   "en": "Evidence: The researcher says 「取りに行くのは少し待ってください。その前に……名簿で自分の班を確かめて、班長のところに集まってください。」\nReasoning: The tools are ready, but sections are assigned first, so step one is checking the list and gathering by the group leader; tools come after. The safety video was watched 「昨日のうちに」; washing finds comes 「昼の休憩のあとで」.\nTrap: the tools are mentioned first but pushed back by 「その前に」."
+  },
+  "wrong": [
+   {
+    "zh": "调查员说拿工具「少し待ってください」，要先分区域。",
+    "en": "She says to wait before fetching tools; sections are assigned first."
+   },
+   null,
+   {
+    "zh": "安全录像昨天已经看过了。",
+    "en": "The safety video was already watched yesterday."
+   },
+   {
+    "zh": "清洗方法是午休以后才教的。",
+    "en": "Washing the finds is taught after the lunch break."
+   }
+  ],
+  "traps": [
+   "order",
+   "done-already",
+   "later"
+  ]
  }
 ]

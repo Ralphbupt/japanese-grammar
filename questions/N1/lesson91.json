@@ -695,5 +695,85 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n1-l91-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson91#3"
+    ],
+    "difficulty": 3,
+    "stem": "報道に携わる者たるもの、いかなる圧力を受けようとも、事実を曲げて伝えることだけは（　）。",
+    "options": [
+      "あっても差し支えあるまい",
+      "あるに越したことはない",
+      "ないとも限らないだろう",
+      "あってはならないのである"
+    ],
+    "answer": 3,
+    "full": "報道に携わる者たるもの、いかなる圧力を受けようとも、事実を曲げて伝えることだけはあってはならないのである。",
+    "tr": {
+      "zh": "作为从事新闻报道的人，无论受到怎样的压力，唯有歪曲事实进行报道是绝对不可以的。",
+      "en": "Anyone engaged in journalism, whatever pressure they come under, must never be found distorting the facts in their reporting."
+    },
+    "why": {
+      "zh": "线索：「〜たるもの」（作为……的人）后面要接这种身份应有的态度或义务；「〜だけは」又强调唯独这一点。\n规则：「名词＋たるもの（は）」＝身为……就应该……，后面常是「〜べきだ」「〜てはならない」「〜なければならない」。\n辨析：「〜に越したことはない」是“最好……”：「用心するに越したことはない」。说“歪曲事实最好不过”，和新闻工作者的本分相反。",
+      "en": "Clue: 「〜たるもの」 (anyone who is a …) must lead to the attitude or duty that goes with the role, and 「〜だけは」 stresses this one thing above all.\nRule: noun + 「たるもの（は）」 = one who is a … should …; typically followed by 「〜べきだ」「〜てはならない」「〜なければならない」.\nContrast: 「〜に越したことはない」 means \"nothing is better than …\": 「用心するに越したことはない」. \"Nothing is better than distorting the facts\" is the opposite of a journalist's duty."
+    },
+    "wrong": [
+      {
+        "zh": "「あっても差し支えあるまい」是“有也无妨吧”，和「たるもの」要求的职业操守相反。",
+        "en": "「あっても差し支えあるまい」 means \"it would probably do no harm\", the reverse of the professional duty 「たるもの」 calls for."
+      },
+      {
+        "zh": "「〜に越したことはない」是“最好……”，变成“歪曲事实最好”，意思反了。",
+        "en": "「〜に越したことはない」 means \"it is best to …\", giving \"it is best to distort the facts\" — the reverse."
+      },
+      {
+        "zh": "「〜ないとも限らない」是“说不定会……”，只是推测可能性，不是「たるもの」后面该有的义务，也和「だけは」不搭。",
+        "en": "「〜ないとも限らない」 means \"it may well …\", a guess about possibility, not the obligation that follows 「たるもの」; it also clashes with 「だけは」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l91-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson91#5"
+    ],
+    "difficulty": 2,
+    "stem": "急速な円安の進行は、原材料価格の世界的な高騰（　）、中小企業の経営を一段と圧迫している。",
+    "options": [
+      "と相まって",
+      "にひきかえ",
+      "に則って",
+      "をよそに"
+    ],
+    "answer": 0,
+    "full": "急速な円安の進行は、原材料価格の世界的な高騰と相まって、中小企業の経営を一段と圧迫している。",
+    "tr": {
+      "zh": "日元急速贬值的加剧，加上原材料价格在全球范围内的上涨，使中小企业的经营进一步受到挤压。",
+      "en": "The yen's rapid slide, combined with the worldwide surge in raw-material prices, is squeezing small and medium-sized businesses still harder."
+    },
+    "why": {
+      "zh": "线索：「円安の進行」和「原材料価格の高騰」是两个同方向的因素，后面的「一段と圧迫している」是它们共同造成的结果。\n规则：「名词＋と相まって」＝与……相结合、再加上……，两个因素互相作用，使结果更加明显。\n辨析：「〜にひきかえ」是对比，“和……相反”：「兄にひきかえ、弟は勉強が嫌いだ」。日元贬值和原材料涨价都在加重负担，不是相反的两件事。",
+      "en": "Clue: 「円安の進行」 and 「原材料価格の高騰」 are two factors pulling the same way, and 「一段と圧迫している」 is their joint result.\nRule: noun + 「と相まって」 = combined with …; two factors work together to make the result stronger.\nContrast: 「〜にひきかえ」 is a contrast, \"unlike …\": 「兄にひきかえ、弟は勉強が嫌いだ」. A weak yen and dearer materials both add to the burden; they are not opposites."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜にひきかえ」表示两者正好相反，而日元贬值和原材料涨价是同一方向的因素。",
+        "en": "「〜にひきかえ」 sets two opposite things against each other, whereas a weak yen and dearer materials pull the same way."
+      },
+      {
+        "zh": "「〜に則って」是“遵照（规则、惯例）”，前面接「法律」「規則」「伝統」等，不接「高騰」。",
+        "en": "「〜に則って」 means \"in accordance with (rules, custom)\" and follows words like 「法律」「規則」「伝統」, not 「高騰」."
+      },
+      {
+        "zh": "「〜をよそに」是“不顾（担心、反对）”，“日元贬值不顾涨价”说不通，两者是叠加关系。",
+        "en": "「〜をよそに」 means \"ignoring (worries, opposition)\"; \"the weak yen ignores the price surge\" makes no sense — the two add up."
+      }
+    ]
   }
 ]
