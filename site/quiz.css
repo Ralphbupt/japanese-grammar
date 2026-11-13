@@ -381,3 +381,6 @@ body.quiz-busy .quiz-about { display: none; }
 
 /* One line, signed out, where progress is on the reader's mind */
 .q-sync-hint { margin: .9rem 0 0; font-size: .88rem; color: var(--text-muted); }
+
+.q-fav { margin-left: .6rem; padding: .2em .7em; font-size: .8em; font-weight: 400; color: var(--text-muted); vertical-align: middle; }
+.q-fav[aria-pressed="true"] { color: var(--ui); border-color: var(--ui); }
