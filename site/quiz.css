@@ -2,9 +2,9 @@
  * right/wrong colours are new, with their own dark values. */
 #quiz-app { --q-ok: #1a7f4b; --q-ok-bg: rgba(26,127,75,.10); --q-bad: #c0263e; --q-bad-bg: rgba(192,38,62,.08); }
 @media (prefers-color-scheme: dark) {
-  :root:not(.theme-light) #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --q-bad: #ff6b81; --q-bad-bg: rgba(255,107,129,.12); }
+  :root:not(.theme-light) #quiz-app { --q-ok: #74c296; --q-ok-bg: rgba(116,194,150,.14); --q-bad: #f0786b; --q-bad-bg: rgba(240,120,107,.12); }
 }
-html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --q-bad: #ff6b81; --q-bad-bg: rgba(255,107,129,.12); }
+html.theme-dark #quiz-app { --q-ok: #74c296; --q-ok-bg: rgba(116,194,150,.14); --q-bad: #f0786b; --q-bad-bg: rgba(240,120,107,.12); }
 
 #quiz-app { margin: 1.5rem 0 2rem; }
 #quiz-app h2 { font-size: var(--text-lg); margin: 0 0 .6rem; border: 0; padding: 0; }
@@ -26,24 +26,46 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-prev { margin-left: .9rem; }
 .q-link { background: none; border: 0; color: var(--link); font: inherit; cursor: pointer; padding: 0; }
 
-.q-today { margin-bottom: 1.6rem; }
+.q-today { margin-bottom: 1.2rem; }
 .q-today .q-muted { text-align: center; margin: .5rem 0 0; }
-.q-resume { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; padding: .8rem 1rem; margin-bottom: 1rem; border: 1px solid var(--ui); border-radius: var(--radius); }
+.q-today-line { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .3rem 1rem; margin-top: .55rem; font-size: .88rem; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.q-due { color: var(--link); font-weight: 600; }
+.q-due:hover { text-decoration: underline; text-underline-offset: 3px; }
+/* Review list + saved: compact rows, or one quiet line while both are empty */
+.q-lists-empty { margin: 0 0 1.4rem; font-size: .9rem; }
+.q-lists { list-style: none; margin: 0 0 1.4rem; padding: 0; border-top: 1px solid var(--border); }
+.q-lists li { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem .7rem; min-height: 48px; box-sizing: border-box; padding: .4rem 0; border-bottom: 1px solid var(--border); }
+.q-list-name { font-weight: 600; }
+.q-list-n { color: var(--text-muted); font-size: .9em; font-variant-numeric: tabular-nums; }
+.q-list-n b { color: var(--text); font-weight: 600; }
+.q-list-acts { margin-left: auto; display: inline-flex; gap: .4rem; }
+.q-list-empty .q-muted { font-size: .88rem; }
+.q-list-more { flex-basis: 100%; font-size: .85rem; color: var(--link); }
+.q-resume { display: flex; align-items: center; gap: .6rem; padding: .5rem .5rem .5rem .9rem; margin-bottom: 1rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); font-size: .92rem; }
+.q-resume-t { flex: 1 1 auto; min-width: 0; }
+.q-resume-acts { flex: none; display: inline-flex; gap: .4rem; }
+.q-btn-xs { padding: .3em .75em; font-size: .88rem; }
 .q-sec { margin: 0 0 1.6rem; }
 .q-rows { list-style: none; margin: 0; padding: 0; }
 .q-rows li { margin: 0 0 .4rem; }
-.q-row { display: grid; grid-template-columns: 1fr auto 7.5rem; align-items: center; gap: .8rem; width: 100%; padding: .7rem .9rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); color: var(--text); font: inherit; text-align: left; cursor: pointer; }
+.q-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: .8rem; width: 100%; min-height: 48px; padding: .55rem .9rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); color: var(--text); font: inherit; text-align: left; cursor: pointer; }
 .q-row:hover { border-color: var(--ui); }
 .q-row small { color: var(--text-muted); font-weight: 400; }
+.q-rows:not(.q-an-types) .q-row-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.q-row-n { font-variant-numeric: tabular-nums; white-space: nowrap; }
 .q-acc { display: flex; align-items: center; gap: .4rem; justify-content: flex-end; font-size: .88em; font-variant-numeric: tabular-nums; }
 .q-acc-low { color: var(--q-bad); }
 .q-acc-n { color: var(--text-muted); font-size: .85em; white-space: nowrap; }
+.q-pct { min-width: 2.6em; text-align: right; }
+.q-acc-none .q-pct { color: var(--text-muted); }
 .q-bar { display: inline-block; width: 3.5rem; height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; }
 .q-bar span { display: block; height: 100%; background: var(--q-ok); }
 .q-acc-low .q-bar span { background: var(--q-bad); }
 .q-settings summary { cursor: pointer; color: var(--text-muted); }
 .q-settings label { display: inline-flex; gap: .5rem; align-items: center; margin: .8rem 0 .4rem; }
 .q-settings select { font: inherit; padding: .2em .4em; }
+.q-btn-sm { padding: .3em .7em; font-size: .85rem; color: var(--text-muted); }
+.q-btn-sm:hover:not(:disabled) { color: var(--text); }
 
 .q-top { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: .5rem; font-variant-numeric: tabular-nums; }
 .q-progress { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; margin-bottom: 1rem; }
@@ -59,11 +81,14 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-opt { display: flex; align-items: center; gap: .8rem; width: 100%; min-height: 52px; padding: .6rem .9rem; border: 1.5px solid var(--border); border-radius: var(--radius); background: var(--bg); color: var(--text); font: inherit; font-size: 1.08rem; text-align: left; cursor: pointer; }
 .q-opt:hover:not(:disabled) { border-color: var(--ui); }
 .q-opt:disabled { cursor: default; }
+/* The option text is one flex item (quiz.js wraps it in .q-otext). Bare, a <ruby> and
+   the kana after it were separate flex items and the .8rem gap split 聞|けます. */
+.q-otext { min-width: 0; }
 .q-num { flex: none; display: inline-grid; place-items: center; width: 1.6em; height: 1.6em; border-radius: 50%; border: 1px solid var(--border); color: var(--text-muted); font-size: .85em; font-family: system-ui, sans-serif; }
 .q-opt.q-ok { border-color: var(--q-ok); background: var(--q-ok-bg); }
-.q-opt.q-ok .q-num { background: var(--q-ok); border-color: var(--q-ok); color: #fff; }
+.q-opt.q-ok .q-num { background: var(--q-ok); border-color: var(--q-ok); color: var(--card-bg); }
 .q-opt.q-bad { border-color: var(--q-bad); background: var(--q-bad-bg); }
-.q-opt.q-bad .q-num { background: var(--q-bad); border-color: var(--q-bad); color: #fff; }
+.q-opt.q-bad .q-num { background: var(--q-bad); border-color: var(--q-bad); color: var(--card-bg); }
 .q-opt.q-ok::after { content: "✓"; margin-left: auto; color: var(--q-ok); font-weight: 700; }
 .q-opt.q-bad::after { content: "✗"; margin-left: auto; color: var(--q-bad); font-weight: 700; }
 
@@ -81,7 +106,9 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-guess { display: inline-flex; align-items: center; gap: .4rem; color: var(--text-muted); cursor: pointer; user-select: none; }
 .q-guess input { width: 1.1em; height: 1.1em; }
 
-.q-verdict { font-weight: 700; font-size: 1.05rem; margin: 1.2rem 0 .6rem; }
+.q-verdict { display: flex; align-items: baseline; gap: .4rem .6rem; font-weight: 700; font-size: 1.05rem; margin: 1.2rem 0 .6rem; }
+.q-vtext { flex: 1 1 auto; min-width: 0; }
+.q-vtools { flex: none; display: inline-flex; align-items: baseline; gap: .4rem; margin-left: auto; }
 .q-verdict small { font-weight: 400; color: var(--text-muted); }
 .q-v-ok { color: var(--q-ok); }
 .q-v-bad { color: var(--q-bad); }
@@ -115,7 +142,9 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-wrong .q-mine b { color: inherit; }
 .q-full { font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif; font-size: 1.08rem; line-height: 2.1; margin: .8rem 0 0 !important; }
 .q-refs a { color: var(--link); }
-.q-ai { margin: .8rem 0; display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
+.q-ai { margin: 1.1rem 0 .3rem; display: flex; align-items: center; gap: .4rem .5rem; flex-wrap: wrap; }
+.q-ai .ico { width: 1em; height: 1em; }
+.q-ai-hint { font-size: .82rem; }
 .q-report { margin-top: .8rem; font-size: .9em; }
 .q-report summary { cursor: pointer; color: var(--text-muted); }
 .q-report .q-btn { margin: .4rem .2rem 0 0; padding: .3em .7em; font-size: .9em; }
@@ -128,9 +157,8 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-sumstem { font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif; line-height: 2; }
 
 @media (max-width: 600px) {
-  .q-card { padding: 1.1rem .9rem; border-radius: var(--radius); }
-  .q-row { grid-template-columns: 1fr auto; }
-  .q-row .q-acc { grid-column: 1 / -1; justify-content: flex-start; }
+  .q-an-types .q-row { grid-template-columns: 1fr auto; }
+  .q-an-types .q-row .q-acc { grid-column: 1 / -1; justify-content: flex-start; }
   .q-stem { font-size: 1.12rem; }
 }
 
@@ -148,9 +176,12 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-row-name + .q-muted, h2 .q-muted { font-weight: 400; }
 
 /* Mock test */
-.q-set h2 { margin-bottom: .3rem; }
+.q-card.q-set { padding: 1rem 1.2rem; }
+.q-set h2 { margin-bottom: .1rem; }
 .q-set p { margin: .3rem 0; }
-.q-set + .q-set { margin-top: 1rem; }
+.q-set p.q-set-what { margin: 0 0 .4rem; font-size: .88rem; }
+.q-set .q-actions { margin-top: .6rem; }
+.q-set + .q-set { margin-top: .8rem; }
 .q-tag { font-size: .7em; font-weight: 600; padding: .1em .5em; border-radius: 999px; border: 1px solid var(--ui); color: var(--ui); vertical-align: middle; }
 .q-tag-new { border-color: var(--border); color: var(--text-muted); }
 .q-plan { width: 100%; margin: .6rem 0 1rem; }
@@ -172,7 +203,7 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-prob { display: flex; align-items: baseline; gap: .5rem; margin: 0 0 .8rem; }
 .q-qno { margin-left: auto; font-variant-numeric: tabular-nums; color: var(--text-muted); }
 .q-opt.q-picked { border-color: var(--link); box-shadow: inset 0 0 0 1px var(--link); }
-.q-opt.q-picked .q-num { background: var(--link); border-color: var(--link); color: #fff; }
+.q-opt.q-picked .q-num { background: var(--link); border-color: var(--link); color: var(--card-bg); }
 .q-flagged { border-color: var(--ui); color: var(--ui); }
 .q-nav { margin-top: 1.2rem; }
 .q-break { text-align: center; }
@@ -285,7 +316,6 @@ body.quiz-busy .quiz-about { display: none; }
   .q-opt:has(.q-okj) { display: grid; grid-template-columns: auto 1fr auto; align-items: center; column-gap: .8rem; row-gap: .1rem; text-align: left; }
   .q-opt:has(.q-okj) .q-okj { grid-column: 2; grid-row: 2; margin: 0; }
   .q-opt:has(.q-okj)::after { grid-column: 3; grid-row: 1; margin: 0; }
-  .q-row { padding: .6rem .8rem; }
 }
 .q-kj-label { display: block; font-size: .78rem; color: var(--text-muted); margin-bottom: .1rem; font-family: var(--font-sans, inherit); }
 .q-sub { border-top: 1px solid var(--border); margin-top: 1.2rem; padding-top: 1rem; }
@@ -293,9 +323,9 @@ body.quiz-busy .quiz-about { display: none; }
 .q-idk { color: var(--text-muted); }
 .q-idk.q-on { color: var(--ui); border-color: var(--ui); box-shadow: inset 0 0 0 1px var(--ui); }
 .q-group-go { border-top: 1px solid var(--border); padding-top: 1rem; }
-.q-was-guess { margin-left: .6rem; padding: .2em .7em; font-size: .8em; font-weight: 400; color: var(--text-muted); vertical-align: middle; }
-.q-size { display: block; text-align: center; margin-top: .4rem; font-size: .88rem; color: var(--text-muted); }
-.q-size select { font: inherit; margin: 0 .2rem; padding: .1rem .3rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); color: var(--text); }
+.q-was-guess { padding: .2em .7em; font-size: .8em; font-weight: 400; color: var(--text-muted); vertical-align: middle; }
+.q-size { display: inline-flex; align-items: center; gap: .25rem; margin-left: auto; font-size: .85rem; color: var(--text-muted); white-space: nowrap; }
+.q-size select { font: inherit; margin: 0; padding: 0 .2rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); color: var(--text); }
 @media (max-width: 600px) {
   .hub-table, .hub-table tbody, .hub-table tr, .hub-table th, .hub-table td { display: block; width: auto; }
   .hub-table thead { display: none; }
@@ -308,7 +338,6 @@ body.quiz-busy .quiz-about { display: none; }
 .q-total-line b { color: var(--text); margin-right: .3rem; }
 .q-total-bar { height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; }
 .q-total-bar span { display: block; height: 100%; background: var(--ui); }
-.q-ai-more { padding: .35em .8em; font-size: .85em; margin-left: .4rem; }
 .q-listen { margin: .8rem 0 0; }
 .q-rl-more { margin-top: .35rem; }
 .q-rl-more summary { cursor: pointer; color: var(--link); font-size: .9em; }
@@ -393,5 +422,36 @@ body.quiz-busy .quiz-about { display: none; }
 /* One line, signed out, where progress is on the reader's mind */
 .q-sync-hint { margin: .9rem 0 0; font-size: .88rem; color: var(--text-muted); }
 
-.q-fav { margin-left: .6rem; padding: .2em .7em; font-size: .8em; font-weight: 400; color: var(--text-muted); vertical-align: middle; }
+.q-fav { padding: .2em .7em; font-size: .8em; font-weight: 400; color: var(--text-muted); vertical-align: middle; gap: .3em; }
 .q-fav[aria-pressed="true"] { color: var(--ui); border-color: var(--ui); }
+
+/* ≤480px: the save button is the star alone (its name stays in aria-label / title). */
+@media (max-width: 480px) {
+  .q-fav-l { display: none; }
+  .q-fav { padding: .2em .55em; }
+}
+
+/* Phones: no box inside a box. The question card goes edge to edge, so the page's
+   16px gutter is the only one and the text gets the full width; the boxes inside
+   it keep their tint with tighter padding. */
+@media (max-width: 768px) {
+  .q-card { border: 0; border-radius: 0; background: none; padding: .3rem 0 .6rem; }
+  .q-opt, .q-piece { background: var(--card-bg); }
+  .q-next { background: linear-gradient(transparent, var(--bg) 30%); }
+  .q-sent { padding: .45rem .7rem .4rem; }
+  .q-minebox { padding: .45rem .7rem .55rem; }
+  .q-point { padding: .55rem .7rem; }
+  .q-ck-script { padding: .55rem .7rem; }
+  .q-passage { padding: .7rem .8rem; }
+  .q-whole .q-tr summary { padding: .5rem .7rem; }
+  .q-tr .q-passage, .q-tr .q-trtext { padding: .7rem .8rem .5rem; }
+  /* Cards that are items of a list keep a hairline between them. */
+  .q-card.q-set, .q-card.q-revcard { padding: 1rem 0 .6rem; border-top: 1px solid var(--border); }
+  .q-set + .q-set { margin-top: 0; }
+  /* The pause overlay is a dialog: it keeps its box. */
+  .q-paused .q-card { border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); padding: 1.2rem 1rem; }
+  /* Practice home: one-line rows, ~48px */
+  .q-rows:not(.q-an-types) .q-acc-n { display: none; }
+  .q-row { gap: .6rem; padding: .5rem .75rem; }
+  .q-bar { width: 2.8rem; }
+}

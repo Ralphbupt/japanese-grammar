@@ -617,19 +617,19 @@ ${JSON.stringify({
 <style>
 :root {
   --bg: #f6f4ef; --text: #2b2a27; --accent: #b8283f; --ui: #1f3d63; --ui-on: #fff;
-  --card-bg: #fbfaf7; --border: #e3dfd5; --muted: #605c55;
+  --card-bg: #fbfaf7; --border: #e3dfd5; --muted: #605c55; --link: var(--ui);
 }
 @media (prefers-color-scheme: dark) {
-  :root:not(.theme-light) { --bg: #14141e; --text: #d4d4dc; --card-bg: #1f1f2e; --border: #2d2d44; --muted: #a8a8b8; --accent: #e94560; --ui: #a9c7ee; --ui-on: #10131c; }
+  :root:not(.theme-light) { --bg: #171614; --text: #d9d4c7; --card-bg: #1f1e1b; --border: #35322c; --muted: #a59f90; --accent: #ec5f52; --ui: #e8e1cf; --ui-on: #1b1a17; --link: #b3c3d9; }
 }
-html.theme-dark { --bg: #14141e; --text: #d4d4dc; --card-bg: #1f1f2e; --border: #2d2d44; --muted: #a8a8b8; --accent: #e94560; --ui: #a9c7ee; --ui-on: #10131c; }
+html.theme-dark { --bg: #171614; --text: #d9d4c7; --card-bg: #1f1e1b; --border: #35322c; --muted: #a59f90; --accent: #ec5f52; --ui: #e8e1cf; --ui-on: #1b1a17; --link: #b3c3d9; }
 * { box-sizing: border-box; }
 body { font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "PingFang SC", sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 2.5rem 1.5rem; line-height: 1.75; }
 .container { max-width: 760px; margin: 0 auto; }
 h1 { font-size: 1.8rem; margin: 0 0 .5rem; }
 .subtitle { color: var(--muted); margin-bottom: 2rem; }
 .breadcrumb { font-size: .85rem; color: var(--muted); margin-bottom: 1rem; }
-.breadcrumb a { color: var(--ui); text-decoration: none; }
+.breadcrumb a { color: var(--link); text-decoration: none; }
 /* Theme + language pills, top right (injected by settings-modal.js). */
 #top-controls { position: fixed; top: .8rem; right: 1.2rem; display: flex; align-items: center; gap: .5rem; z-index: 200; }
 .tc-pill { background: var(--card-bg); color: inherit; font: inherit; font-size: .8rem; padding: .4rem .8rem; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 2px 10px rgba(0,0,0,.12); cursor: pointer; line-height: 1.2; }
@@ -643,22 +643,22 @@ h2 { font-size: 1.3rem; margin: 2rem 0 1rem; }
 .anki-level { display: inline-block; padding: .22rem .42rem .2rem; border: 1.5px solid var(--accent); color: var(--accent); line-height: 1; font-size: .82rem; font-weight: 700; border-radius: 3px; align-self: flex-start; margin-bottom: .8rem; }
 .anki-title { font-size: 1.1rem; font-weight: 600; margin-bottom: .3rem; }
 .anki-count { color: var(--muted); font-size: .9rem; margin-bottom: .6rem; }
-.anki-dl { color: var(--ui); font-size: .85rem; font-weight: 600; text-decoration: none; display: block; margin-top: .4rem; }
+.anki-dl { color: var(--link); font-size: .85rem; font-weight: 600; text-decoration: none; display: block; margin-top: .4rem; }
 .anki-dl-primary { background: var(--ui); color: var(--ui-on); padding: .5rem .8rem; border-radius: 6px; text-align: center; }
-.anki-dl-primary:hover { background: #c2304a; }
+.anki-dl-primary:hover { opacity: .9; }
 .anki-dl-en { background: transparent; color: var(--ui); border: 1.5px solid var(--ui); }
-.anki-dl-en:hover { background: rgba(214,53,76,.08); }
+.anki-dl-en:hover { background: color-mix(in srgb, var(--ui) 10%, transparent); }
 .anki-dl-alt-row { font-size: .8rem; color: var(--muted); margin-top: .4rem; }
 .anki-dl-alt-row .anki-dl-alt { display: inline; }
 .anki-copy { border: 1px dashed var(--border); background: var(--card-bg); color: var(--muted); padding: .4rem .8rem; border-radius: 6px; cursor: pointer; font-size: .8rem; text-align: center; }
 .anki-copy:hover { border-color: var(--ui); color: var(--ui); }
 .anki-copy.copied { border-color: #4caf50; color: #4caf50; }
 .anki-dl-alt { color: var(--muted); font-weight: 400; font-size: .8rem; }
-.anki-dl-alt:hover { color: var(--ui); }
+.anki-dl-alt:hover { color: var(--link); }
 ol, ul { padding-left: 1.4rem; }
 ol li, ul li { margin: .5rem 0; }
 code { background: var(--card-bg); border: 1px solid var(--border); padding: .1rem .35rem; border-radius: 3px; font-size: .9em; }
-a { color: var(--ui); }
+a { color: var(--link); }
 .note { background: var(--card-bg); border-left: 3px solid var(--border); padding: .8rem 1.1rem; margin: 1.2rem 0; border-radius: 0 6px 6px 0; }
 /* Bilingual visibility: same rules as the rest of jpnotes.dev.
    :not(body) is load-bearing — the toggle puts .lang-en on <body> itself,
