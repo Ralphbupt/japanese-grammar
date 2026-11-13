@@ -82,7 +82,7 @@
         "en": "The て-form 「よくて」 can't take 「から」."
       },
       {
-        "zh": "「天气不好」所以去公园散步，前后因果说不通。",
+        "zh": "“天气不好”所以去公园散步，因果说不通。",
         "en": "\"The weather was bad, so I went for a walk in the park\" doesn't make sense."
       }
     ]
@@ -207,8 +207,8 @@
         "en": "「あまり」 needs a negative, and 「前は」 needs the past."
       },
       {
-        "zh": "「あまり」后面要接否定；而且「が」表示转折，前后要对比。",
-        "en": "「あまり」 needs a negative, and 「が」 sets up a contrast with \"clean now\"."
+        "zh": "「あまり」后面要接否定；而且「今は きれいですが」是转折，说明以前并不干净。",
+        "en": "「あまり」 needs a negative, and 「今は きれいですが」 sets up a contrast: it wasn't clean before."
       }
     ]
   },
@@ -277,8 +277,8 @@
       "en": "Tokyo is bigger than Osaka."
     },
     "why": {
-      "zh": "线索：拿东京和大阪比，句尾是肯定的「大きいです」。\n规则：“A 比 B 更……”是「A は B より〜」，「より」接在被比较的那一方后面。「ほど」也能比较，但后面要接否定。",
-      "en": "Clue: Tokyo is compared with Osaka, and the sentence ends in the affirmative 「大きいです」.\nRule: \"A is more … than B\" is 「A は B より〜」, with 「より」 after the thing being compared against. 「ほど」 compares too, but needs a negative after it."
+      "zh": "线索：拿东京和大阪比，句尾是肯定的「大きいです」。\n规则：“A 比 B 更……”是「A は B より〜」，「より」接在被比较的那一方后面。",
+      "en": "Clue: Tokyo is compared with Osaka, and the sentence ends in the affirmative 「大きいです」.\nRule: \"A is more … than B\" is 「A は B より〜」, with 「より」 after the thing being compared against."
     },
     "wrong": [
       null,
@@ -365,8 +365,8 @@
       "en": "Today isn't as hot as yesterday."
     },
     "why": {
-      "zh": "线索：空格前面是「きのうほど」。\n规则：「A は B ほど〜ない」是“A 没有 B 那么……”，「ほど」后面一定接否定：「あつくない」。\n技巧：比较句先看比较用的助词：「より」配肯定，「ほど」配否定，选项一下就能去掉一半。",
-      "en": "Clue: 「きのうほど」 comes right before the blank.\nRule: 「A は B ほど〜ない」 means \"A isn't as … as B\"; this 「ほど」 always needs a negative: 「あつくない」.\nTip: In comparisons, check the particle first: 「より」 goes with an affirmative, 「ほど」 with a negative. That rules out half the options at once."
+      "zh": "线索：空格前面是「きのうほど」。\n规则：「A は B ほど〜ない」是“A 没有 B 那么……”，「ほど」后面一定接否定：「あつくない」。",
+      "en": "Clue: 「きのうほど」 comes right before the blank.\nRule: 「A は B ほど〜ない」 means \"A isn't as … as B\"; this 「ほど」 always needs a negative: 「あつくない」."
     },
     "wrong": [
       null,
@@ -490,8 +490,8 @@
     "wrong": [
       null,
       {
-        "zh": "辞书形不能直接接「する」，要变成副词「小さく」。",
-        "en": "The plain adjective can't go before 「する」; use the adverb 「小さく」."
+        "zh": "形容词原形「小さい」不能直接接「する」，要变成「小さく」。",
+        "en": "The plain adjective 「小さい」 can't go before 「する」; it has to become 「小さく」."
       },
       {
         "zh": "「小さな」只能放在名词前面（小さな 声），不能接「して ください」。",

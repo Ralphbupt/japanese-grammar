@@ -20,8 +20,8 @@
       "en": "This path runs along the river, so it's perfect for a walk."
     },
     "why": {
-      "zh": "线索：「川」是一条线，「道」顺着它「続いている」。\n规则：「名词＋に沿って」＝沿着一条路线（河、铁路）或按照方针、计划。\n辨析：「に沿って」是顺着一条线走；「にわたって」是覆盖一段时间或范围，前面接数量或期间：「川に沿って続く道」／「10キロにわたって続く渋滞」。",
-      "en": "Clue: 「川」 is a line, and the 「道」 「続いている」 follows it.\nRule: 「Noun ＋ に沿って」 = along a line (a river, a railway) or in line with a policy or plan.\nContrast: 「に沿って」 follows a line; 「にわたって」 covers a span of time or distance and takes an amount or period: 「川に沿って続く道」 vs 「10キロにわたって続く渋滞」."
+      "zh": "线索：「川」是一条线，「道」顺着它「続いている」。\n规则：「名词＋に沿って」＝沿着一条路线（河、铁路）或按照方针、计划。",
+      "en": "Clue: 「川」 is a line, and the 「道」 「続いている」 follows it.\nRule: 「Noun ＋ に沿って」 = along a line (a river, a railway) or in line with a policy or plan."
     },
     "wrong": [
       {
@@ -60,8 +60,8 @@
       "en": "What we're proposing this time is a plan in line with your requests."
     },
     "why": {
-      "zh": "线索：空格后紧跟名词「プラン」，前面是「ご要望」。\n规则：「に沿って」修饰动词；要修饰名词，改成「に沿った＋名词」（或「に沿う＋名词」），意思是“符合……的”。\n容易错：只认得「に沿って」就选它，没看到后面是名词。\n辨析：「要望に沿ったプラン」＝方向和要求一致的方案；「要望をめぐる議論」＝围绕要求展开的争论，「をめぐる」多用于争议、话题。",
-      "en": "Clue: The blank is followed directly by the noun 「プラン」, with 「ご要望」 before it.\nRule: 「に沿って」 modifies a verb; before a noun it becomes 「に沿った ＋ noun」 (or 「に沿う ＋ noun」), \"in line with\".\nTrap: Picking 「に沿って」 because it's the familiar form, without noticing the noun after the blank.\nContrast: 「要望に沿ったプラン」 is a plan that matches the requests; 「要望をめぐる議論」 is a debate centred on them — 「をめぐる」 is mostly for disputes and topics."
+      "zh": "线索：空格后紧跟名词「プラン」，前面是「ご要望」。\n规则：「に沿って」修饰动词；要修饰名词，改成「に沿った＋名词」（或「に沿う＋名词」），意思是“符合……的”。",
+      "en": "Clue: The blank is followed directly by the noun 「プラン」, with 「ご要望」 before it.\nRule: 「に沿って」 modifies a verb; before a noun it becomes 「に沿った ＋ noun」 (or 「に沿う ＋ noun」), \"in line with\"."
     },
     "wrong": [
       {
@@ -137,14 +137,14 @@
       "en": "Building on last year's failure, we decided to allow a longer preparation period this year."
     },
     "why": {
-      "zh": "线索：「昨年の失敗」是已经发生的经验，后半句是据此作出的新决定「準備期間を長めに取る」。\n规则：「名词＋を踏まえて」＝把前面的经验、事实、意见当作前提，在此基础上行动或判断，书面语。\n容易错：觉得“和去年的失败相反，今年……”而选「に反して」。「に反して」前面是预想、规定（「予想に反して」「規則に反して」），失败不是这类东西。",
-      "en": "Clue: 「昨年の失敗」 is a past experience, and the second half is the new decision based on it, 「準備期間を長めに取る」.\nRule: 「Noun ＋ を踏まえて」 = taking prior experience, facts or opinions as the premise for an action or judgment; formal.\nTrap: Choosing 「に反して」 for \"unlike last year's failure\". 「に反して」 follows an expectation or rule (「予想に反して」, 「規則に反して」), and a failure is neither."
+      "zh": "线索：「昨年の失敗」是已经发生的经验，后半句是据此作出的新决定「準備期間を長めに取る」。\n规则：「名词＋を踏まえて」＝把前面的经验、事实、意见当作前提，在此基础上行动或判断，书面语。",
+      "en": "Clue: 「昨年の失敗」 is a past experience, and the second half is the new decision based on it, 「準備期間を長めに取る」.\nRule: 「Noun ＋ を踏まえて」 = taking prior experience, facts or opinions as the premise for an action or judgment; formal."
     },
     "wrong": [
       null,
       {
-        "zh": "「に反して」是“与……相反”，失败不是预期，“与失败相反”说不通。",
-        "en": "「に反して」 means 'contrary to'; a failure isn't an expectation to go against."
+        "zh": "「に反して」是“与……相反”，前面接预想、规定（「予想に反して」「規則に反して」）；去年的失败不是这类东西。",
+        "en": "「に反して」 means \"contrary to\" and follows an expectation or rule (「予想に反して」「規則に反して」); last year's failure is neither."
       },
       {
         "zh": "「に加えて」是“除了去年的失败还……”，后句并不是追加的同类事。",
@@ -179,13 +179,13 @@
       "en": "Taking the survey results into account, we'll make the final decision at next month's meeting."
     },
     "why": {
-      "zh": "线索：前半句「結果を踏まえ…」是先做的事，后半句「来月の会議で最終決定をします」是之后的行动。\n规则：表示“先做A，在此基础上再做B”，用动词た形＋「上で」（「踏まえた上で」「相談した上で」）。\n辨析：「た上で」和「る上で」意思不同：「よく考えた上で決める」＝先考虑好再决定；「仕事をする上で大切だ」＝在工作这方面很重要。",
-      "en": "Clue: The first half (taking the results into account) comes first; the second, 「来月の会議で最終決定をします」, is the next step.\nRule: \"Do A first, then B on that basis\" is the verb's ta-form ＋ 「上で」 (「踏まえた上で」, 「相談した上で」).\nContrast: 「た上で」 and 「る上で」 mean different things: 「よく考えた上で決める」 = decide after thinking it through; 「仕事をする上で大切だ」 = important when it comes to working."
+      "zh": "线索：前半句「結果を踏まえ…」是先做的事，后半句「来月の会議で最終決定をします」是之后的行动。\n规则：表示“先做A，在此基础上再做B”，用动词た形＋「上で」（「踏まえた上で」「相談した上で」）。",
+      "en": "Clue: The first half (taking the results into account) comes first; the second, 「来月の会議で最終決定をします」, is the next step.\nRule: \"Do A first, then B on that basis\" is the verb's ta-form ＋ 「上で」 (「踏まえた上で」, 「相談した上で」)."
     },
     "wrong": [
       {
-        "zh": "「辞書形＋上で」是“在……过程中/为了……”，这里是“先参考结果，然后再决定”，要用「た形＋上で」。",
-        "en": "「dictionary form ＋ 上で」 means 'in the process of'; 'first consider, then decide' needs 「た形 ＋ 上で」."
+        "zh": "辞书形＋「上で」是“在……方面／为了……”；这里是先参考结果再决定，要用た形＋「上で」。",
+        "en": "Dictionary form ＋ 「上で」 means \"in / for doing…\"; here the results come first and the decision after, so it takes ta-form ＋ 「上で」."
       },
       null,
       {
@@ -255,8 +255,8 @@
       "en": "This library is open every day except Monday."
     },
     "why": {
-      "zh": "线索：后面是「毎日開いています」，「月曜日」是从“每天”里拿掉的那一天。\n规则：「名词＋を除いて」＝除了……以外，从整体中排除一部分，后面是其余部分的情况，书面语。\n辨析：「を除いて」从整体里去掉一个；「に限って」把范围缩到只有这一个：「月曜日を除いて開いている」＝周一以外都开；「月曜日に限り無料」＝只有周一免费。",
-      "en": "Clue: The sentence goes on 「毎日開いています」, and 「月曜日」 is the day taken out of \"every day\".\nRule: 「Noun ＋ を除いて」 = except for; it removes one part from a whole and describes the rest; formal.\nContrast: 「を除いて」 takes one out of the whole; 「に限って」 narrows it down to just that one: 「月曜日を除いて開いている」 = open every day but Monday; 「月曜日に限り無料」 = free on Mondays only."
+      "zh": "线索：后面是「毎日開いています」，「月曜日」是从“每天”里拿掉的那一天。\n规则：「名词＋を除いて」＝除了……以外，从整体中排除一部分，后面是其余部分的情况，书面语。",
+      "en": "Clue: The sentence goes on 「毎日開いています」, and 「月曜日」 is the day taken out of \"every day\".\nRule: 「Noun ＋ を除いて」 = except for; it removes one part from a whole and describes the rest; formal."
     },
     "wrong": [
       {
@@ -296,8 +296,8 @@
       "en": "Everyone attended this meeting except Mr. Tanaka, who is away on business."
     },
     "why": {
-      "zh": "线索：「出張中の」说明田中不在场，后面却是「全員が出席した」。\n规则：「を除いて」把一个人从“全员”里排除；后面说的是剩下的人。\n辨析：「田中さんをはじめ、全員が出席した」＝以田中为代表，田中也在其中；「田中さんを除いて、全員が出席した」＝田中不在其中。两者结构一样，田中算不算进去正好相反。",
-      "en": "Clue: 「出張中の」 tells us Tanaka isn't there, yet the sentence says 「全員が出席した」.\nRule: 「を除いて」 removes one person from \"everyone\"; the rest of the sentence is about the others.\nContrast: 「田中さんをはじめ、全員が出席した」 = everyone, Tanaka first among them, attended; 「田中さんを除いて、全員が出席した」 = everyone but Tanaka. Same shape, opposite on whether Tanaka is included."
+      "zh": "线索：「出張中の」说明田中不在场，后面却是「全員が出席した」。\n规则：「を除いて」把一个人从“全员”里排除；后面说的是剩下的人。",
+      "en": "Clue: 「出張中の」 tells us Tanaka isn't there, yet the sentence says 「全員が出席した」.\nRule: 「を除いて」 removes one person from \"everyone\"; the rest of the sentence is about the others."
     },
     "wrong": [
       {
@@ -372,8 +372,8 @@
       "en": "This job requires computer skills in addition to Japanese ability."
     },
     "why": {
-      "zh": "线索：后面是「パソコンのスキルも」，「も」说明前面的日语能力也要。\n规则：「名词＋に加えて」＝在A之上再加B，后面常用「も」呼应，书面语。\n辨析：「に加えて」是两个都要；「にかわって」是用后者代替前者：「日本語に加えて英語も使う」＝两种都用；「日本語にかわって英語を使う」＝不用日语，改用英语。",
-      "en": "Clue: The second half has 「パソコンのスキルも」; the 「も」 means Japanese is still required.\nRule: 「Noun ＋ に加えて」 = B on top of A, often answered by 「も」 later; formal.\nContrast: 「に加えて」 keeps both; 「にかわって」 replaces the first with the second: 「日本語に加えて英語も使う」 = use both; 「日本語にかわって英語を使う」 = use English instead of Japanese."
+      "zh": "线索：后面是「パソコンのスキルも」，「も」说明前面的日语能力也要。\n规则：「名词＋に加えて」＝在A之上再加B，后面常用「も」呼应，书面语。",
+      "en": "Clue: The second half has 「パソコンのスキルも」; the 「も」 means Japanese is still required.\nRule: 「Noun ＋ に加えて」 = B on top of A, often answered by 「も」 later; formal."
     },
     "wrong": [
       {
@@ -490,8 +490,8 @@
       "en": "Please read the contract carefully before you sign it."
     },
     "why": {
-      "zh": "线索：「よく」读合同和「サインしてください」是先后两步，而且强调先读仔细。\n规则：动词た形＋「上で」＝先认真做完A，在此基础上再做B；后面可以接请求「てください」。\n辨析：「てから」只是一般的先后；「てからでないと」后面要接“不能／不行”：「読んでからでないとサインできない」＝不先读就不能签；「よく読んだ上でサインしてください」＝请仔细读过再签。",
-      "en": "Clue: Reading 「よく」 and 「サインしてください」 are two steps in order, with weight on reading carefully first.\nRule: Verb ta-form ＋ 「上で」 = do A properly first, then B on that basis; a request like 「てください」 can follow.\nContrast: 「てから」 is plain sequence; 「てからでないと」 must lead to \"can't / no good\": 「読んでからでないとサインできない」 = you can't sign without reading first; 「よく読んだ上でサインしてください」 = please read carefully, then sign."
+      "zh": "线索：「よく」读合同和「サインしてください」是先后两步，而且强调先读仔细。\n规则：动词た形＋「上で」＝先认真做完A，在此基础上再做B；后面可以接请求「てください」。",
+      "en": "Clue: Reading 「よく」 and 「サインしてください」 are two steps in order, with weight on reading carefully first.\nRule: Verb ta-form ＋ 「上で」 = do A properly first, then B on that basis; a request like 「てください」 can follow."
     },
     "wrong": [
       {
@@ -530,8 +530,8 @@
       "en": "When living abroad, the local language is indispensable."
     },
     "why": {
-      "zh": "线索：「生活する」是辞书形，后面「その国の言葉は欠かせない」是对这件事的评价，不是下一步动作。\n规则：动词辞书形＋「上で」＝在做……这件事上／为了做好……，后面常接「大切だ」「欠かせない」「必要だ」。\n辨析：「生活する上で」＝在生活这方面；「生活した上で」＝先生活过之后再……。同样是「上で」，辞书形和た形意思完全不同。",
-      "en": "Clue: 「生活する」 is the dictionary form, and 「その国の言葉は欠かせない」 is a judgment about that activity, not a next step.\nRule: Dictionary form ＋ 「上で」 = in doing…, for doing… well; it is often followed by 「大切だ」, 「欠かせない」 or 「必要だ」.\nContrast: 「生活する上で」 = when it comes to living (there); 「生活した上で」 = after having lived (there). Same 「上で」, but dictionary form and ta-form give quite different meanings."
+      "zh": "线索：「生活する」是辞书形，后面「その国の言葉は欠かせない」是对这件事的评价，不是下一步动作。\n规则：动词辞书形＋「上で」＝在做……这件事上／为了做好……，后面常接「大切だ」「欠かせない」「必要だ」。",
+      "en": "Clue: 「生活する」 is the dictionary form, and 「その国の言葉は欠かせない」 is a judgment about that activity, not a next step.\nRule: Dictionary form ＋ 「上で」 = in doing…, for doing… well; it is often followed by 「大切だ」, 「欠かせない」 or 「必要だ」."
     },
     "wrong": [
       {
@@ -544,7 +544,7 @@
         "en": "「ついでに」 means 'while doing'; it doesn't introduce a requirement."
       },
       {
-        "zh": "「ことなく」是“不……就”，“不在国外生活，语言不可缺少”说不通。",
+        "zh": "「ことなく」是“不……（而……）”，“不在国外生活，语言不可缺少”说不通。",
         "en": "「ことなく」 (without ~ing) gives \"without living abroad, the language is essential\" — nonsense."
       }
     ]
@@ -606,8 +606,8 @@
       "en": "After six months of negotiations, the contract was finally agreed."
     },
     "why": {
-      "zh": "线索：「半年にわたる」说过程长，「ようやく」说终于有了结果。\n规则：「名词＋の末に」「动词た形＋末に」＝经过漫长、辛苦的过程最后……，结果好坏都可以。\n技巧：看到「長い」「いろいろ」「ようやく」「ついに」这类写过程长、终于有结果的词，先考虑「末に」。\n辨析：「末に」重在过程长，结果中性；「あげく」多是折腾后的坏结果：「交渉の末に契約がまとまった」／「さんざん迷ったあげく、何も買わなかった」。",
-      "en": "Clue: 「半年にわたる」 says the process was long, and 「ようやく」 says a result finally came.\nRule: 「Noun ＋ の末に」 / 「verb ta-form ＋ 末に」 = after a long, hard process, finally…; the result can be good or bad.\nTip: Words for a long process and a final result — 「長い」, 「いろいろ」, 「ようやく」, 「ついに」 — point to 「末に」 first.\nContrast: 「末に」 stresses the long process and is neutral about the result; 「あげく」 usually ends badly: 「交渉の末に契約がまとまった」 vs 「さんざん迷ったあげく、何も買わなかった」."
+      "zh": "线索：「半年にわたる」说过程长，「ようやく」说终于有了结果。\n规则：「名词＋の末に」「动词た形＋末に」＝经过漫长、辛苦的过程最后……，结果好坏都可以。",
+      "en": "Clue: 「半年にわたる」 says the process was long, and 「ようやく」 says a result finally came.\nRule: 「Noun ＋ の末に」 / 「verb ta-form ＋ 末に」 = after a long, hard process, finally…; the result can be good or bad."
     },
     "wrong": [
       {
@@ -647,8 +647,8 @@
       "en": "After much agonizing, I decided to quit my job and study abroad."
     },
     "why": {
-      "zh": "线索：「いろいろ悩んだ」是一段长时间的纠结，后面「留学することにした」是纠结后的决定。\n规则：动词た形＋「末（に）」＝经过一番……最后……；「に」可以省略。\n辨析：「末」重在过程久、纠结多；「た上で」重在先慎重做好一步再行动，不强调时间长：「悩んだ末、辞めることにした」／「よく考えた上で返事します」。",
-      "en": "Clue: 「いろいろ悩んだ」 is a long struggle, and 「留学することにした」 is the decision it led to.\nRule: Verb ta-form ＋ 「末（に）」 = after a long stretch of…, finally; the 「に」 can be dropped.\nContrast: 「末」 stresses a long, troubled process; 「た上で」 stresses doing one step carefully before acting, not how long it took: 「悩んだ末、辞めることにした」 vs 「よく考えた上で返事します」."
+      "zh": "线索：「いろいろ悩んだ」是一段长时间的纠结，后面「留学することにした」是纠结后的决定。\n规则：动词た形＋「末（に）」＝经过一番……最后……；「に」可以省略。",
+      "en": "Clue: 「いろいろ悩んだ」 is a long struggle, and 「留学することにした」 is the decision it led to.\nRule: Verb ta-form ＋ 「末（に）」 = after a long stretch of…, finally; the 「に」 can be dropped."
     },
     "wrong": [
       {
@@ -723,8 +723,8 @@
       "en": "I'm not going to rush the choice of where to move; I plan to compare the rent, commuting time and other conditions of several places and then decide."
     },
     "why": {
-      "zh": "线索：「急いで決めず」＋句尾的意志「決めよう」：先比较，再在此基础上决定。\n规则：「动词た形＋上で」＝先做好A，以A的结果为前提再做B；后面常接有意识的行动（「決める」「返事する」「申し込む」）。\n辨析：「〜たあげく」是“折腾了很久，结果（多为不好的事）”，只用来说已经发生的结果（「迷ったあげく、買わなかった」）；说今后打算怎么做用「〜た上で」。",
-      "en": "Clue: 「急いで決めず」 plus the volitional ending 「決めよう」: compare first, then decide on that basis.\nRule: 「verb ta-form ＋ 上で」 = do A properly first, then do B based on its result; a deliberate action usually follows (「決める」「返事する」「申し込む」).\nContrast: 「〜たあげく」 means \"after a long struggle, (usually something bad) resulted\" and only reports what has already happened (「迷ったあげく、買わなかった」); for what you intend to do, use 「〜た上で」."
+      "zh": "线索：「急いで決めず」＋句尾的意志「決めよう」：先比较，再在此基础上决定。\n规则：「动词た形＋上で」＝先做好A，以A的结果为前提再做B；后面常接有意识的行动（「決める」「返事する」「申し込む」）。",
+      "en": "Clue: 「急いで決めず」 plus the volitional ending 「決めよう」: compare first, then decide on that basis.\nRule: 「verb ta-form ＋ 上で」 = do A properly first, then do B based on its result; a deliberate action usually follows (「決める」「返事する」「申し込む」)."
     },
     "wrong": [
       null,
@@ -763,8 +763,8 @@
       "en": "The redevelopment work in front of the station is reportedly proceeding in line with the original plan and is expected to be finished next March as scheduled."
     },
     "why": {
-      "zh": "线索：「計画」＋「進められており」，后面又说「予定どおり」：工程是照着计划走的。\n规则：「名词＋に沿って」＝不偏离某个方针、计划、要求来做事（「方針に沿って」「計画に沿って」「ご希望に沿って」）。\n辨析：「に先立って」是“在……之前（先做准备）”，前面是将要进行的大事（「工事に先立って説明会を開く」），表示时间先后；「に沿って」表示依据的基准。",
-      "en": "Clue: 「計画」 with 「進められており」, and then 「予定どおり」: the work is following the plan.\nRule: 「noun ＋ に沿って」 = doing something without departing from a policy, plan or request (「方針に沿って」「計画に沿って」「ご希望に沿って」).\nContrast: 「に先立って」 means \"ahead of … (as preparation)\" and follows a coming event (「工事に先立って説明会を開く」); it is about order in time, while 「に沿って」 gives the standard being followed."
+      "zh": "线索：「計画」＋「進められており」，后面又说「予定どおり」：工程是照着计划走的。\n规则：「名词＋に沿って」＝不偏离某个方针、计划、要求来做事（「方針に沿って」「計画に沿って」「ご希望に沿って」）。",
+      "en": "Clue: 「計画」 with 「進められており」, and then 「予定どおり」: the work is following the plan.\nRule: 「noun ＋ に沿って」 = doing something without departing from a policy, plan or request (「方針に沿って」「計画に沿って」「ご希望に沿って」)."
     },
     "wrong": [
       {
@@ -776,8 +776,8 @@
         "en": "「にわたって」 follows a span of time or area (「三年にわたって」); 「計画」 is not a span."
       },
       {
-        "zh": "「に先立って」是“在……之前”；“在计划之前推进工程”说不通。",
-        "en": "「に先立って」 means \"prior to\"; \"the work is proceeding prior to the plan\" makes no sense."
+        "zh": "「に先立って」是“在……之前（先做准备）”，前面是将要进行的大事；“在计划之前推进工程”说不通。",
+        "en": "「に先立って」 means \"ahead of\", after a coming event; \"carrying out the work ahead of the plan\" makes no sense."
       },
       null
     ]

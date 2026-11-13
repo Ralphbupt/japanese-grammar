@@ -373,7 +373,18 @@ body.quiz-busy .quiz-about { display: none; }
 .q-point-h a { font-size: .9em; white-space: nowrap; }
 .q-point-row { display: grid; grid-template-columns: 2.6em 1fr; gap: .6rem; margin-top: .3rem; line-height: 1.7; }
 .q-point-k { color: var(--text-muted); font-size: .88em; padding-top: .1em; }
-.q-why { white-space: pre-line; }
+.q-why { display: grid; grid-template-columns: max-content 1fr; gap: .5rem .9rem; margin: .3rem 0 .9rem; }
+.q-why-k { color: var(--text-muted); font-size: .85em; padding-top: .12em; white-space: nowrap; }
+.q-why-all { grid-column: 1 / -1; }
+.q-sent { margin: .7rem 0 1rem; padding: .6rem .9rem .5rem; border-radius: 8px; background: var(--surface-2); border: 1px solid var(--border); }
+.q-sent p { margin: .15rem 0; }
+.q-box-k { margin: 1rem 0 .25rem; font-size: .85em; color: var(--text-muted); }
+.q-box-k b { font-size: 1.1em; color: var(--text); margin-left: .15em; }
+.q-box-ok b { color: var(--q-ok); }
+.q-minebox { margin: .9rem 0; padding: .55rem .9rem .65rem; border-radius: 8px; border: 1px solid color-mix(in srgb, var(--q-bad) 40%, transparent); background: color-mix(in srgb, var(--q-bad) 7%, transparent); }
+.q-minebox .q-box-k { margin-top: 0; }
+.q-minebox .q-box-k b { color: var(--q-bad); }
+.q-wrong li b { font-weight: 600; }
 
 /* After a set with listening: one quiet line pointing at the podcast */
 .q-podcast { margin: .9rem .2rem 0; font-size: .92rem; color: var(--text-muted); }

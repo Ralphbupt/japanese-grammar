@@ -20,13 +20,13 @@
       "en": "My phone battery died, so I couldn't contact my family even though I wanted to."
     },
     "why": {
-      "zh": "线索：空格后面又出现同一个动词的可能否定「連絡できなかった」，前面的「電池が切れてしまい」是原因。\n规则：意向形（「連絡しよう」「行こう」）＋「にも」＋（多为同一动词的）可能否定＝想做也做不到，原因来自客观情况（这里是手机没电）。\n辨析：「ようが」也接意向形，意思却是“不管……都……”：「何を言われようが気にしない」；「ようにも〜ない」说的是想做的事被客观情况挡住了。",
-      "en": "Clue: After the blank the same verb comes back in the negative potential, 「連絡できなかった」, and 「電池が切れてしまい」 gives the cause.\nRule: Volitional form (「連絡しよう」「行こう」) ＋ 「にも」 ＋ a negative potential (usually of the same verb) = you want to but can't, for an outside reason (here, the dead battery).\nContrast: 「ようが」 also follows the volitional, but means \"no matter whether…\": 「何を言われようが気にしない」. 「ようにも〜ない」 is about an intention blocked by circumstances."
+      "zh": "线索：空格后面又出现同一个动词的可能否定「連絡できなかった」，前面的「電池が切れてしまい」是原因。\n规则：意向形（「連絡しよう」「行こう」）＋「にも」＋（多为同一动词的）可能否定＝想做也做不到，原因来自客观情况（这里是手机没电）。",
+      "en": "Clue: After the blank the same verb comes back in the negative potential, 「連絡できなかった」, and 「電池が切れてしまい」 gives the cause.\nRule: Volitional form (「連絡しよう」「行こう」) ＋ 「にも」 ＋ a negative potential (usually of the same verb) = you want to but can't, for an outside reason (here, the dead battery)."
     },
     "wrong": [
       {
-        "zh": "「ようが」是“不管……都……”，「連絡しようが連絡できなかった」意思不通。",
-        "en": "「ようが」 is \"no matter whether …\", which makes no sense here."
+        "zh": "「ようが」是“不管……都……”（「何を言われようが気にしない」），「連絡しようが連絡できなかった」意思不通。",
+        "en": "「ようが」 is \"no matter whether …\" (「何を言われようが気にしない」), which makes no sense here."
       },
       {
         "zh": "「ようでは」是“要是……这样的话（就不行）”，接动词普通形，「連絡しようでは」不成立。",
@@ -60,18 +60,18 @@
       "en": "I'd forgotten my password, so I couldn't log in to the site even though I tried."
     },
     "why": {
-      "zh": "线索：前面已有「ログインしようにも」，忘了密码是客观的阻碍。\n规则：「〜ようにも」后面多接同一动词的可能否定；「ログインする」的可能否定是「ログインできない」，省去重复的「ログイン」就是「できなかった」。后项是客观上做不到，不是“不想”。\n辨析：「しなかった」只说没做，可能是自己不想做；「できなかった」是想做而做不到：「行かなかった」＝没去，「行けなかった」＝去不了。",
-      "en": "Clue: 「ログインしようにも」 is already there, and the forgotten password is an outside obstacle.\nRule: 「〜ようにも」 is usually followed by the same verb's negative potential. For 「ログインする」 that is 「ログインできない」; drop the repeated 「ログイン」 and 「できなかった」 is left. The second half is \"couldn't\", not \"didn't want to\".\nContrast: 「しなかった」 only says it didn't happen, possibly by choice; 「できなかった」 is wanting to but being unable: 「行かなかった」 = didn't go, 「行けなかった」 = couldn't go."
+      "zh": "线索：前面已有「ログインしようにも」，忘了密码是客观的阻碍。\n规则：「〜ようにも」后面多接同一动词的可能否定；「ログインする」的可能否定是「ログインできない」，省去重复的「ログイン」就是「できなかった」。后项是客观上做不到，不是“不想”。",
+      "en": "Clue: 「ログインしようにも」 is already there, and the forgotten password is an outside obstacle.\nRule: 「〜ようにも」 is usually followed by the same verb's negative potential. For 「ログインする」 that is 「ログインできない」; drop the repeated 「ログイン」 and 「できなかった」 is left. The second half is \"couldn't\", not \"didn't want to\"."
     },
     "wrong": [
       null,
       {
-        "zh": "后项必须是客观上的“做不到”，不能是主观的“不想做”：❌「行こうにも行きたくない」。",
-        "en": "The second half must be an objective \"couldn't\", not \"didn't want to\": ❌「行こうにも行きたくない」."
+        "zh": "「したくなかった」是“不想做”；后项必须是客观上的“做不到”：❌「行こうにも行きたくない」。",
+        "en": "「したくなかった」 is \"didn't want to\"; the second half must be an objective \"couldn't\": ❌「行こうにも行きたくない」."
       },
       {
         "zh": "「しなかった」只是“没做”，不表示“做不到”，和「ようにも」不呼应。",
-        "en": "「しなかった」 just says \"didn't\"; 「うにも」 needs \"couldn't\"."
+        "en": "「しなかった」 just says \"didn't\"; 「ようにも」 needs \"couldn't\"."
       },
       {
         "zh": "「するしかなかった」是“只好做”，与「ようにも〜ない」的“想做做不到”相反。",
@@ -136,14 +136,14 @@
       "en": "At the start of the mountain path stood an old sign saying \"No dumping of rubbish here\"."
     },
     "why": {
-      "zh": "线索：空格是告示牌上那句话的结尾，后面直接是「と書かれた」，没有名词。\n规则：辞书形（「捨てる」「入る」）＋「べからず」＝不得……，用于告示、规则、格言，放在句末结束句子：「芝生に入るべからず」。\n辨析：「べからざる」是同一个词的连体形，后面要接名词（「欠くべからざるもの」）；结句用「べからず」，修饰名词用「べからざる」。",
-      "en": "Clue: The blank ends the words on the sign: right after it comes 「と書かれた」, with no noun.\nRule: Dictionary form (「捨てる」「入る」) ＋ 「べからず」 = must not…, used on signs, in rules and sayings, and it ends the sentence: 「芝生に入るべからず」.\nContrast: 「べからざる」 is the attributive form of the same word and needs a noun after it (「欠くべからざるもの」). To end a sentence: 「べからず」; before a noun: 「べからざる」."
+      "zh": "线索：空格是告示牌上那句话的结尾，后面直接是「と書かれた」，没有名词。\n规则：辞书形（「捨てる」「入る」）＋「べからず」＝不得……，用于告示、规则、格言，放在句末结束句子：「芝生に入るべからず」。",
+      "en": "Clue: The blank ends the words on the sign: right after it comes 「と書かれた」, with no noun.\nRule: Dictionary form (「捨てる」「入る」) ＋ 「べからず」 = must not…, used on signs, in rules and sayings, and it ends the sentence: 「芝生に入るべからず」."
     },
     "wrong": [
       null,
       {
-        "zh": "「べからざる」只修饰名词，不能结句：❌「捨てるべからざる」+ 引号结束。",
-        "en": "「べからざる」 only modifies a noun; it can't end the sentence on a sign."
+        "zh": "「べからざる」是连体形，后面要接名词（如「欠くべからざるもの」），不能放在告示句末。",
+        "en": "「べからざる」 is attributive and needs a noun after it (「欠くべからざるもの」); it can't end the words on a sign."
       },
       {
         "zh": "「べくもない」是“根本无法……”，不是告示上的禁止。",
@@ -176,8 +176,8 @@
       "en": "Terrorism that involves innocent citizens is an outrage that can never be forgiven."
     },
     "why": {
-      "zh": "线索：空格后面是名词「暴挙」，前面有「決して」，说的是绝不可饶恕。\n规则：修饰名词用「辞书形＋べからざる＋名词」＝不可……的；常见的固定说法有「許すべからざる」「欠くべからざる」「侵すべからざる」。\n辨析：「べき」也能接名词，意思却相反：「許すべき行為」＝应该原谅的行为，「許すべからざる行為」＝不可饶恕的行为。「決して」要求否定，所以用「べからざる」。",
-      "en": "Clue: The blank is followed by the noun 「暴挙」, and 「決して」 earlier says it can never be forgiven.\nRule: Before a noun, use dictionary form ＋ 「べからざる」 ＋ noun = not to be…; the common set phrases are 「許すべからざる」「欠くべからざる」「侵すべからざる」.\nContrast: 「べき」 can also come before a noun, but means the opposite: 「許すべき行為」 = an act that should be forgiven, 「許すべからざる行為」 = an unforgivable act. 「決して」 calls for the negative, so 「べからざる」."
+      "zh": "线索：空格后面是名词「暴挙」，前面有「決して」，说的是绝不可饶恕。\n规则：修饰名词用「辞书形＋べからざる＋名词」＝不可……的；常见的固定说法有「許すべからざる」「欠くべからざる」「侵すべからざる」。",
+      "en": "Clue: The blank is followed by the noun 「暴挙」, and 「決して」 earlier says it can never be forgiven.\nRule: Before a noun, use dictionary form ＋ 「べからざる」 ＋ noun = not to be…; the common set phrases are 「許すべからざる」「欠くべからざる」「侵すべからざる」."
     },
     "wrong": [
       {
@@ -252,13 +252,13 @@
       "en": "If you lose to a rookie like that, you won't keep your place in the starting line-up."
     },
     "why": {
-      "zh": "线索：空格前是「あんな新人」，语气带轻视；后面是「負ける」，对象要用助词「に」。\n规则：「名词＋ごとき」不加「の」＝……之流、……这种人，说别人带轻视（说自己是谦虚：「私ごとき」）；后面可以直接接助词：「新人ごときに負ける」。\n辨析：「ともあろう者」也评价身份，方向却相反：「教師ともあろう者が」是抬高身份再批评；「新人ごとき」是看低对方：「お前ごときに負けるものか」。",
-      "en": "Clue: Before the blank is 「あんな新人」, said with contempt, and 「負ける」 after it takes 「に」 for the opponent.\nRule: Noun ＋ 「ごとき」 without 「の」 = the likes of…, contemptuous about others (modest about oneself: 「私ごとき」); a particle can follow directly: 「新人ごときに負ける」.\nContrast: 「ともあろう者」 also comments on status, but in the opposite direction: 「教師ともあろう者が」 raises the status and then criticises; 「新人ごとき」 looks down on the person: 「お前ごときに負けるものか」."
+      "zh": "线索：空格前是「あんな新人」，语气带轻视；后面是「負ける」，对象要用助词「に」。\n规则：「名词＋ごとき」不加「の」＝……之流、……这种人，说别人带轻视（说自己是谦虚：「私ごとき」）；后面可以直接接助词：「新人ごときに負ける」。",
+      "en": "Clue: Before the blank is 「あんな新人」, said with contempt, and 「負ける」 after it takes 「に」 for the opponent.\nRule: Noun ＋ 「ごとき」 without 「の」 = the likes of…, contemptuous about others (modest about oneself: 「私ごとき」); a particle can follow directly: 「新人ごときに負ける」."
     },
     "wrong": [
       {
-        "zh": "「ごとく」修饰动词或句子，表示“像……那样”，「新人ごとくに」接续不对，也没有轻视的意思。",
-        "en": "「ごとく」 (like) modifies verbs and needs 「の」 after a noun; it doesn't carry contempt."
+        "zh": "「ごとく」是“像……那样”，接名词时要加「の」，也没有轻视的意思。",
+        "en": "「ごとく」 (like) needs 「の」 after a noun and doesn't carry contempt."
       },
       null,
       {
@@ -292,8 +292,8 @@
       "en": "As history shows, concentrated power eventually breeds corruption."
     },
     "why": {
-      "zh": "线索：空格后面是逗号和一整句「権力の集中はやがて腐敗を生む」，不是名词，也不在句末。\n规则：「辞书形・た形＋ごとく」＝如……那样（＝「ように」），修饰后面的动词或整个句子：「前に述べたごとく」。\n技巧：「ごとし／ごとき／ごとく」对应「ようだ／ような／ように」。先看空格后面：句末→「ごとし」，名词→「ごとき」，动词或句子→「ごとく」。",
-      "en": "Clue: After the blank come a comma and a whole clause, 「権力の集中はやがて腐敗を生む」: no noun, and not the end of the sentence.\nRule: Dictionary form or た-form ＋ 「ごとく」 = as… (= 「ように」), modifying the verb or clause that follows: 「前に述べたごとく」.\nTip: 「ごとし／ごとき／ごとく」 match 「ようだ／ような／ように」. Look at what follows the blank: end of sentence → 「ごとし」, a noun → 「ごとき」, a verb or clause → 「ごとく」."
+      "zh": "线索：空格后面是逗号和一整句「権力の集中はやがて腐敗を生む」，不是名词，也不在句末。\n规则：「辞书形・た形＋ごとく」＝如……那样（＝「ように」），修饰后面的动词或整个句子：「前に述べたごとく」。「ごとし／ごとき」则对应「ようだ／ような」。",
+      "en": "Clue: After the blank come a comma and a whole clause, 「権力の集中はやがて腐敗を生む」: no noun, and not the end of the sentence.\nRule: Dictionary form or た-form ＋ 「ごとく」 = as… (= 「ように」), modifying the verb or clause that follows: 「前に述べたごとく」. 「ごとし／ごとき」 correspond to 「ようだ／ような」."
     },
     "wrong": [
       {
@@ -368,8 +368,8 @@
       "en": "It isn't urgent, so you needn't reply today."
     },
     "why": {
-      "zh": "线索：空格后是「よい」，前面「急ぎの用件ではない」说明今天回复并非必要。\n规则：ない形去掉「ない」（「行か」）＋「ずとも」＝即使不……也；「〜ずともよい」＝「〜なくてもいい」。「する」变成「せずとも」（❌「しずとも」）。\n辨析：「ずに」接法相同，表示的却是方式“不……就（做）”：「説明せずに帰った」＝没解释就回去了；后面是「よい」、意思是“不做也行”时用「ずとも」。",
-      "en": "Clue: The blank is followed by 「よい」, and 「急ぎの用件ではない」 says a reply today isn't needed.\nRule: ない-form minus 「ない」 (「行か」) ＋ 「ずとも」 = even without…; 「〜ずともよい」 = 「〜なくてもいい」. 「する」 becomes 「せずとも」 (not 「しずとも」).\nContrast: 「ずに」 attaches the same way but shows manner, \"without doing\": 「説明せずに帰った」 = left without explaining. Before 「よい」, meaning \"it's fine not to\", use 「ずとも」."
+      "zh": "线索：空格后是「よい」，前面「急ぎの用件ではない」说明今天回复并非必要。\n规则：ない形去掉「ない」（「行か」）＋「ずとも」＝即使不……也；「〜ずともよい」＝「〜なくてもいい」。「する」变成「せずとも」（❌「しずとも」）。",
+      "en": "Clue: The blank is followed by 「よい」, and 「急ぎの用件ではない」 says a reply today isn't needed.\nRule: ない-form minus 「ない」 (「行か」) ＋ 「ずとも」 = even without…; 「〜ずともよい」 = 「〜なくてもいい」. 「する」 becomes 「せずとも」 (not 「しずとも」)."
     },
     "wrong": [
       {
@@ -408,13 +408,13 @@
       "en": "With ability like his, he'll surely pass even without any special preparation."
     },
     "why": {
-      "zh": "线索：后半句是「合格は間違いないだろう」：凭他的实力，不做特别准备也能考上，是让步。\n规则：「〜ずとも」＝即使不……也（＝「なくても」）；「対策をする」变成「対策をせずとも」，后面接一般性的判断或推测。\n辨析：「をせずには」接法一样，后面却要接「いられない」「おかない」（「心配せずにはいられない」＝不禁担心）；后面是“肯定能考上”，说得通的是「ずとも」的“不做也……”。",
-      "en": "Clue: The second half is 「合格は間違いないだろう」: with his ability he'll pass even without special preparation, a concession.\nRule: 「〜ずとも」 = even without… (= 「なくても」); 「対策をする」 becomes 「対策をせずとも」, followed by a general judgement or guess.\nContrast: 「をせずには」 attaches the same way but needs 「いられない」 or 「おかない」 after it (「心配せずにはいられない」 = can't help worrying). Before \"he'll surely pass\", what makes sense is 「ずとも」, \"even without\"."
+      "zh": "线索：后半句是「合格は間違いないだろう」：凭他的实力，不做特别准备也能考上，是让步。\n规则：「〜ずとも」＝即使不……也（＝「なくても」）；「対策をする」变成「対策をせずとも」，后面接一般性的判断或推测。",
+      "en": "Clue: The second half is 「合格は間違いないだろう」: with his ability he'll pass even without special preparation, a concession.\nRule: 「〜ずとも」 = even without… (= 「なくても」); 「対策をする」 becomes 「対策をせずとも」, followed by a general judgement or guess."
     },
     "wrong": [
       null,
       {
-        "zh": "「んがため」是“为了……”，「为了做特别的对策，合格没问题」意思不通。",
+        "zh": "「んがため」是“为了……”，“为了做特别的准备，合格没问题”意思不通。",
         "en": "「んがため」 is \"in order to\"; \"in order to do special prep, passing is certain\" doesn't make sense."
       },
       {
@@ -484,8 +484,8 @@
       "en": "On the day he finally opened the shop he'd dreamed of for years, he says he felt as if he could float up to heaven."
     },
     "why": {
-      "zh": "线索：空格前是「昇ら」（「昇る」的ない形去掉ない），后面是名词「気持ち」；「天にも昇る」是对高兴的夸张描写。\n规则：「ない形去掉ない＋んばかり」＝几乎要……，夸张地描写当时的样子；修饰名词用「んばかりの」：「割れんばかりの拍手」。\n辨析：「んがため」接法完全一样（「勝たんがため」），意思却是“为了……”；这里说的是高兴的程度，不是目的，所以用“几乎要……”的「んばかり」。",
-      "en": "Clue: Before the blank is 「昇ら」 (「昇る」's ない-form minus 「ない」), after it the noun 「気持ち」; 「天にも昇る」 is an exaggerated picture of joy.\nRule: ない-form minus 「ない」 ＋ 「んばかり」 = almost…, an exaggerated description of how things looked; before a noun it is 「んばかりの」: 「割れんばかりの拍手」.\nContrast: 「んがため」 attaches in exactly the same way (「勝たんがため」) but means \"in order to\". The sentence is about how happy he was, not a purpose, so 「んばかり」 (almost…) fits."
+      "zh": "线索：空格前是「昇ら」（「昇る」的ない形去掉ない），后面是名词「気持ち」；「天にも昇る」是对高兴的夸张描写。\n规则：「ない形去掉ない＋んばかり」＝几乎要……，夸张地描写当时的样子；修饰名词用「んばかりの」：「割れんばかりの拍手」。",
+      "en": "Clue: Before the blank is 「昇ら」 (「昇る」's ない-form minus 「ない」), after it the noun 「気持ち」; 「天にも昇る」 is an exaggerated picture of joy.\nRule: ない-form minus 「ない」 ＋ 「んばかり」 = almost…, an exaggerated description of how things looked; before a noun it is 「んばかりの」: 「割れんばかりの拍手」."
     },
     "wrong": [
       null,
@@ -494,8 +494,8 @@
         "en": "「とばかり」 follows a quoted thought; 「昇らとばかり」 is the wrong connection."
       },
       {
-        "zh": "「んがための」是“为了……的”，「天にも昇らんがための気持ち」意思不通。",
-        "en": "「んがための」 is \"for the purpose of\"; \"a feeling for the purpose of rising to heaven\" makes no sense."
+        "zh": "「んがための」接法相同，但意思是“为了……的”，「天にも昇らんがための気持ち」意思不通。",
+        "en": "「んがための」 attaches the same way but means \"for the purpose of\"; \"a feeling for the purpose of rising to heaven\" makes no sense."
       },
       {
         "zh": "「ずじまい」是“最终没能……”，和喜悦的心情不符。",
@@ -524,8 +524,8 @@
       "en": "Facing the loss of the contract, the sales rep bowed to the client as if about to get down on his knees."
     },
     "why": {
-      "zh": "线索：空格前是「する」动词的名词部分「土下座」，后面是「勢い」：低头的样子几乎像要下跪。\n规则：「んばかり」接ない形去掉ない；「する」在这里用文语形「せ」，所以是「土下座せんばかりの勢い」（几乎要下跪的架势）。\n技巧：下面这些文语句型里，「する」都变成「せ」：「せずとも」「せんばかり」「せんがため」「せざるを得ない」。这类句型前面出现「し／さ／せ」三选一时，选「せ」。",
-      "en": "Clue: Before the blank is 「土下座」, the noun part of a する verb, and after it 「勢い」: he bowed almost as if about to kneel.\nRule: 「んばかり」 follows the ない-form minus 「ない」; here 「する」 takes the literary form 「せ」, giving 「土下座せんばかりの勢い」.\nTip: In these literary patterns 「する」 turns into 「せ」: 「せずとも」「せんばかり」「せんがため」「せざるを得ない」. When the options offer 「し／さ／せ」 in front of such a pattern, pick 「せ」."
+      "zh": "线索：空格前是「する」动词的名词部分「土下座」，后面是「勢い」：低头的样子几乎像要下跪。\n规则：「んばかり」接ない形去掉ない；「する」在这里用文语形「せ」，所以是「土下座せんばかりの勢い」（几乎要下跪的架势）。",
+      "en": "Clue: Before the blank is 「土下座」, the noun part of a する verb, and after it 「勢い」: he bowed almost as if about to kneel.\nRule: 「んばかり」 follows the ない-form minus 「ない」; here 「する」 takes the literary form 「せ」, giving 「土下座せんばかりの勢い」."
     },
     "wrong": [
       {
@@ -600,8 +600,8 @@
       "en": "We regret to announce that this shop will close as of the end of March this year."
     },
     "why": {
-      "zh": "线索：空格前是日期「本年三月末日」，后面是「閉店いたします」，是郑重的告示。\n规则：「名词＋をもって」可以表示时间的界限，“于……（结束）、截至……”，多和「閉店」「終了」「退職」这类表示结束的词连用：「本日をもって終了いたします」。\n辨析：「にあたって」也接表示时机的词，意思却是“在……之际”，后面多是开始某事时的准备或致辞（「開店にあたって」）；表示“到这一天为止”用「をもって」。",
-      "en": "Clue: Before the blank is a date, 「本年三月末日」, and after it 「閉店いたします」: a formal notice.\nRule: Noun ＋ 「をもって」 can mark a time limit, \"as of / at the close of\", usually with words for ending such as 「閉店」「終了」「退職」: 「本日をもって終了いたします」.\nContrast: 「にあたって」 also follows a word for an occasion, but means \"on the occasion of\", usually before preparations or a speech when something starts (「開店にあたって」). For \"up to and ending on this day\", use 「をもって」."
+      "zh": "线索：空格前是日期「本年三月末日」，后面是「閉店いたします」，是郑重的告示。\n规则：「名词＋をもって」可以表示时间的界限，“于……（结束）、截至……”，多和「閉店」「終了」「退職」这类表示结束的词连用：「本日をもって終了いたします」。",
+      "en": "Clue: Before the blank is a date, 「本年三月末日」, and after it 「閉店いたします」: a formal notice.\nRule: Noun ＋ 「をもって」 can mark a time limit, \"as of / at the close of\", usually with words for ending such as 「閉店」「終了」「退職」: 「本日をもって終了いたします」."
     },
     "wrong": [
       {
@@ -640,8 +640,8 @@
       "en": "Even with the latest medical technology, a complete cure for this disease is still difficult."
     },
     "why": {
-      "zh": "线索：后半句是「まだ難しい」：连“最新医疗技术”这么强的手段也做不到。\n规则：「名词＋をもってしても」＝即使凭借……也（不行），后项是做不到或困难的事；前面多是很强的手段、能力。\n辨析：「をもってすれば」方向相反：「彼の実力をもってすれば、優勝も夢ではない」＝凭他的实力就能做到。后项是“能”用「すれば」，是“还是不行”用「しても」。",
-      "en": "Clue: The second half is 「まだ難しい」: even a means as strong as the latest medical technology isn't enough.\nRule: Noun ＋ 「をもってしても」 = even with… (it still won't work); the second half is something impossible or difficult, and the noun is usually a powerful means or ability.\nContrast: 「をもってすれば」 points the other way: 「彼の実力をもってすれば、優勝も夢ではない」 = with his ability, it can be done. \"Can\" → 「すれば」; \"still can't\" → 「しても」."
+      "zh": "线索：后半句是「まだ難しい」：连“最新医疗技术”这么强的手段也做不到。\n规则：「名词＋をもってしても」＝即使凭借……也（不行），后项是做不到或困难的事；前面多是很强的手段、能力。",
+      "en": "Clue: The second half is 「まだ難しい」: even a means as strong as the latest medical technology isn't enough.\nRule: Noun ＋ 「をもってしても」 = even with… (it still won't work); the second half is something impossible or difficult, and the noun is usually a powerful means or ability."
     },
     "wrong": [
       {
@@ -716,14 +716,14 @@
       "en": "Craftsmen who have honed their skills at the same site for years understand at least what the other wants next without being told."
     },
     "why": {
-      "zh": "线索：「長年〜職人同士であれば」说的是彼此非常了解，空格后面是「わかるものである」，应是“不必开口也能明白”。\n规则：「动词ない形（去掉ない）＋ずとも」＝即使不……也……，是「〜なくても」的书面说法，后面常接「わかる」「いい」等：「言わずともわかる」。\n辨析：「〜（よ）うにも」后面必须是同一动词的可能形否定，表示“想……也做不到”：「連絡しようにも連絡できない」。后面是肯定的「わかる」，接不上。",
-      "en": "Clue: 「長年〜職人同士であれば」 says they know each other thoroughly, and 「わかるものである」 follows the blank — \"understands without a word\".\nRule: verb ない-stem + 「ずとも」 = even without …ing, the written form of 「〜なくても」, often followed by 「わかる」「いい」: 「言わずともわかる」.\nContrast: 「〜（よ）うにも」 must be followed by the negative potential of the same verb, \"can't … even if one wants to\": 「連絡しようにも連絡できない」. It can't lead into the affirmative 「わかる」."
+      "zh": "线索：「長年〜職人同士であれば」说的是彼此非常了解，空格后面是「わかるものである」，应是“不必开口也能明白”。\n规则：「动词ない形（去掉ない）＋ずとも」＝即使不……也……，是「〜なくても」的书面说法，后面常接「わかる」「いい」等：「言わずともわかる」。",
+      "en": "Clue: 「長年〜職人同士であれば」 says they know each other thoroughly, and 「わかるものである」 follows the blank — \"understands without a word\".\nRule: verb ない-stem + 「ずとも」 = even without …ing, the written form of 「〜なくても」, often followed by 「わかる」「いい」: 「言わずともわかる」."
     },
     "wrong": [
       null,
       {
-        "zh": "「〜（よ）うにも」后面要接可能形的否定（「〜ようにも〜ない」），不能接肯定的「わかる」。",
-        "en": "「〜（よ）うにも」 needs a negative potential after it (「〜ようにも〜ない」), not the affirmative 「わかる」."
+        "zh": "「〜（よ）うにも」是“想……也做不到”，后面要接否定（「〜ようにも〜ない」），不能接肯定的「わかる」。",
+        "en": "「〜（よ）うにも」 means \"can't … even if one wants to\" and needs a negative after it (「〜ようにも〜ない」), not the affirmative 「わかる」."
       },
       {
         "zh": "「〜べく」是“为了……”，后面接为此采取的行动；“为了被告知而明白”说不通。",
@@ -756,8 +756,8 @@
       "en": "With the communications network completely cut, there was no way to check on family living in the disaster area however much one wanted to, and nothing to do but spend an anxious night."
     },
     "why": {
-      "zh": "线索：空格后面是同一个动词的可能形否定「確かめられず」，前面的原因是「通信網が寸断されていた」。\n规则：「动词意向形＋にも＋同一动词的可能形否定」＝想……也没法……，因为客观情况而做不到：「帰ろうにも帰れない」。\n辨析：「〜ずとも」是“即使不……也（没关系）”：「聞かずともわかる」，后面是不做也行的事，和“想做却做不到”相反。",
-      "en": "Clue: After the blank comes the negative potential of the same verb, 「確かめられず」, and the reason given is 「通信網が寸断されていた」.\nRule: volitional form + 「にも」 + negative potential of the same verb = can't … even though one wants to, because circumstances prevent it: 「帰ろうにも帰れない」.\nContrast: 「〜ずとも」 means \"even without …ing (it's fine)\": 「聞かずともわかる」 — what follows is fine without the action, the opposite of wanting to and being unable."
+      "zh": "线索：空格后面是同一个动词的可能形否定「確かめられず」，前面的原因是「通信網が寸断されていた」。\n规则：「动词意向形＋にも」＋可能形否定（多为同一动词）＝想……也没法……，因为客观情况而做不到：「帰ろうにも帰れない」。",
+      "en": "Clue: After the blank comes the negative potential of the same verb, 「確かめられず」, and the reason given is 「通信網が寸断されていた」.\nRule: volitional form + 「にも」 + a negative potential (usually of the same verb) = can't … even though one wants to, because circumstances prevent it: 「帰ろうにも帰れない」."
     },
     "wrong": [
       {

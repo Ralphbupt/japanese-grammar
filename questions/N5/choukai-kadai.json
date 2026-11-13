@@ -76,8 +76,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的改口说：「きょうは 22ページの 2ばんです。」男的确认「22ページの 2ばんですね」。\n推理：女的先说「21ページの 1ばん」，男的提醒「それは きのう しましたよ」后她道歉更正，以更正后的为准；第3题「あした」才做。\n容易错：先说的答案被更正；被推到明天的事。",
-   "en": "Evidence: The woman corrects herself: 「きょうは 22ページの 2ばんです。」, and the man confirms 「22ページの 2ばんですね」.\nReasoning: She first says 「21ページの 1ばん」, but after he points out 「それは きのう しましたよ」 she apologises and corrects it; the corrected one counts. Exercise 3 is for 「あした」.\nTrap: the first answer is corrected; a task postponed to tomorrow."
+   "zh": "依据：女的改口说：「きょうは 22ページの 2ばんです。」男的确认「22ページの 2ばんですね」。\n推理：女的先说「21ページの 1ばん」，男的提醒「それは きのう しましたよ」后她道歉更正，以更正后的为准；第3题「あした」才做。",
+   "en": "Evidence: The woman corrects herself: 「きょうは 22ページの 2ばんです。」, and the man confirms 「22ページの 2ばんですね」.\nReasoning: She first says 「21ページの 1ばん」, but after he points out 「それは きのう しましたよ」 she apologises and corrects it; the corrected one counts. Exercise 3 is for 「あした」."
   },
   "wrong": [
    {
@@ -85,8 +85,8 @@
     "en": "Page 21 exercise 1 was yesterday's homework; it's already done."
    },
    {
-    "zh": "对话里没有说第21页的第2题，是把两个页码和题号混在一起了。",
-    "en": "Page 21 exercise 2 is never mentioned — it mixes up the page and the number."
+    "zh": "对话里没有提到第21页的第2题，这是把页码和题号拼错了。",
+    "en": "Page 21 exercise 2 is never mentioned; it mixes up the page and the number."
    },
    null,
    {
@@ -171,8 +171,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的改了时间：「じゃあ、すこし はやく 行きましょう。2時は どうですか。」女的确认「2時ですね。わかりました。」\n推理：男的先提「2時半に 駅で 会いませんか」，女的提醒「チケットは まだ 買って いません」「人が 多いですよ」，他就用「じゃあ」改早到2点。3点是电影开始的时间。\n容易错：先说的时间被改掉；电影时间不是见面时间。",
-   "en": "Evidence: The man changes the time: 「じゃあ、すこし はやく 行きましょう。2時は どうですか。」 The woman confirms 「2時ですね。わかりました。」\nReasoning: He first suggests 「2時半に 駅で 会いませんか」, but she points out 「チケットは まだ 買って いません」 and 「人が 多いですよ」, so with 「じゃあ」 he moves it earlier, to 2:00. 3:00 is when the film starts.\nTrap: the first time is replaced; the film's start time is not the meeting time."
+   "zh": "依据：男的改了时间：「じゃあ、すこし はやく 行きましょう。2時は どうですか。」女的确认「2時ですね。わかりました。」\n推理：男的先提「2時半に 駅で 会いませんか」，女的提醒「チケットは まだ 買って いません」「人が 多いですよ」，他就用「じゃあ」改早到2点。3点是电影开始的时间。",
+   "en": "Evidence: The man changes the time: 「じゃあ、すこし はやく 行きましょう。2時は どうですか。」 The woman confirms 「2時ですね。わかりました。」\nReasoning: He first suggests 「2時半に 駅で 会いませんか」, but she points out 「チケットは まだ 買って いません」 and 「人が 多いですよ」, so with 「じゃあ」 he moves it earlier, to 2:00. 3:00 is when the film starts."
   },
   "wrong": [
    null,
@@ -185,8 +185,8 @@
     "en": "3:00 is when the film starts, not when they meet."
    },
    {
-    "zh": "三点半是女人记错的电影时间。",
-    "en": "3:30 is the film time she got wrong."
+    "zh": "三点半是女人以为的电影开始时间，其实电影三点开始。",
+    "en": "3:30 is when she thought the film started; it actually starts at 3:00."
    }
   ],
   "traps": [
@@ -271,8 +271,8 @@
    }
   },
   "why": {
-   "zh": "依据：妈妈改口：「あ、そうね。じゃあ、五つ 買って きて。」男孩最后确认「じゃあ、五つだね。」\n推理：妈妈先说「三つ」，男孩提醒明天叔叔阿姨也来，她用「じゃあ」改成五个。男孩说家里还有一个，妈妈回答「あれは もう ないの」，所以不用减，还是五个。\n容易错：先说的数量被改掉；以为要减去家里那一个。",
-   "en": "Evidence: The mother changes it: 「あ、そうね。じゃあ、五つ 買って きて。」 The boy confirms at the end: 「じゃあ、五つだね。」\nReasoning: She first says 「三つ」; when the boy reminds her that his uncle and aunt are coming tomorrow, she changes it to five with 「じゃあ」. He says there is one at home, but she answers 「あれは もう ないの」, so nothing is subtracted: still five.\nTrap: the first number is changed; subtracting the one at home."
+   "zh": "依据：妈妈改口：「あ、そうね。じゃあ、五つ 買って きて。」男孩最后确认「じゃあ、五つだね。」\n推理：妈妈先说「三つ」，男孩提醒明天叔叔阿姨也来，她用「じゃあ」改成五个。男孩说家里还有一个，妈妈回答「あれは もう ないの」，所以不用减，还是五个。",
+   "en": "Evidence: The mother changes it: 「あ、そうね。じゃあ、五つ 買って きて。」 The boy confirms at the end: 「じゃあ、五つだね。」\nReasoning: She first says 「三つ」; when the boy reminds her that his uncle and aunt are coming tomorrow, she changes it to five with 「じゃあ」. He says there is one at home, but she answers 「あれは もう ないの」, so nothing is subtracted: still five."
   },
   "wrong": [
    {
@@ -371,13 +371,13 @@
    }
   },
   "why": {
-   "zh": "依据：男的最后说：「じゃあ、木曜日の 午前に おねがいします。」\n推理：星期二下午医院「休みです」，星期三男的「しごとが ありますから」，星期四下午「もう いっぱいです」；前台说「午前は まだ だいじょうぶですよ」，于是定在星期四上午。\n容易错：一个个被排除的方案；同一天要分清上午和下午。",
-   "en": "Evidence: The man says at the end: 「じゃあ、木曜日の 午前に おねがいします。」\nReasoning: Tuesday afternoon the hospital is 「休みです」, on Wednesday he says 「しごとが ありますから」, Thursday afternoon is 「もう いっぱいです」; the receptionist adds 「午前は まだ だいじょうぶですよ」, so it is Thursday morning.\nTrap: options ruled out one by one; on the same day, keep morning and afternoon apart."
+   "zh": "依据：男的最后说：「じゃあ、木曜日の 午前に おねがいします。」\n推理：星期二下午医院「休みです」，星期三男的「しごとが ありますから」，星期四下午「もう いっぱいです」；前台说「午前は まだ だいじょうぶですよ」，于是定在星期四上午。",
+   "en": "Evidence: The man says at the end: 「じゃあ、木曜日の 午前に おねがいします。」\nReasoning: Tuesday afternoon the hospital is 「休みです」, on Wednesday he says 「しごとが ありますから」, Thursday afternoon is 「もう いっぱいです」; the receptionist adds 「午前は まだ だいじょうぶですよ」, so it is Thursday morning."
   },
   "wrong": [
    {
-    "zh": "星期三男人「しごとが あります」，不去。",
-    "en": "He has work on Wednesday."
+    "zh": "星期三男人「しごとが あります」，去不了。",
+    "en": "He has work on Wednesday: 「しごとが あります」."
    },
    null,
    {
@@ -386,7 +386,7 @@
    },
    {
     "zh": "星期四下午「もう いっぱい」，已经约满了。",
-    "en": "Thursday afternoon is already full."
+    "en": "Thursday afternoon is already full: 「もう いっぱい」."
    }
   ],
   "traps": [
@@ -477,8 +477,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的最后说：「じゃあ、5ばんに のります。」\n推理：男的先说3路，但用「でも」补充「3ばんは 今 出ましたよ」，下一班要等30分钟；接着说「5ばんも 大学の 前に とまりますよ」，10分钟就来。6路和8路「大学の 前には 行きません」。\n容易错：先说的答案被「でも」推翻；眼前来的车不一定到。",
-   "en": "Evidence: The woman says at the end: 「じゃあ、5ばんに のります。」\nReasoning: The man first names the 3, but adds with 「でも」: 「3ばんは 今 出ましたよ」, and the next is 30 minutes away. Then he says 「5ばんも 大学の 前に とまりますよ」, coming in 10 minutes. The 6 and the 8: 「大学の 前には 行きません」.\nTrap: the first answer overturned by 「でも」; the buses that arrive don't go there."
+   "zh": "依据：女的最后说：「じゃあ、5ばんに のります。」\n推理：男的先说3路，但用「でも」补充「3ばんは 今 出ましたよ」，下一班要等30分钟；接着说「5ばんも 大学の 前に とまりますよ」，10分钟就来。6路和8路「大学の 前には 行きません」。",
+   "en": "Evidence: The woman says at the end: 「じゃあ、5ばんに のります。」\nReasoning: The man first names the 3, but adds with 「でも」: 「3ばんは 今 出ましたよ」, and the next is 30 minutes away. Then he says 「5ばんも 大学の 前に とまりますよ」, coming in 10 minutes. The 6 and the 8: 「大学の 前には 行きません」."
   },
   "wrong": [
    {
@@ -578,8 +578,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的更正：「あしたは 30人 来ますから、30まい おねがいします。」男的最后说「じゃあ、30まい コピーします。」\n推理：先说的「20まい」被「あ、すみません」更正为30张。男的问要不要加印自己和田中的2张，女的说「もう ありますから、いいです」，所以不加，就是30张。\n容易错：先说的数量被更正；把已经有的2张加进去变成32张。",
-   "en": "Evidence: The woman corrects it: 「あしたは 30人 来ますから、30まい おねがいします。」 The man ends with 「じゃあ、30まい コピーします。」\nReasoning: The first 「20まい」 is corrected to 30 after 「あ、すみません」. He asks about two more for himself and Tanaka, but she says 「もう ありますから、いいです」, so nothing is added: 30.\nTrap: the first number is corrected; adding the 2 they already have to make 32."
+   "zh": "依据：女的更正：「あしたは 30人 来ますから、30まい おねがいします。」男的最后说「じゃあ、30まい コピーします。」\n推理：先说的「20まい」被「あ、すみません」更正为30张。男的问要不要加印自己和田中的2张，女的说「もう ありますから、いいです」，所以不加，就是30张。",
+   "en": "Evidence: The woman corrects it: 「あしたは 30人 来ますから、30まい おねがいします。」 The man ends with 「じゃあ、30まい コピーします。」\nReasoning: The first 「20まい」 is corrected to 30 after 「あ、すみません」. He asks about two more for himself and Tanaka, but she says 「もう ありますから、いいです」, so nothing is added: 30."
   },
   "wrong": [
    {
@@ -667,8 +667,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的最后说：「じゃあ、8時に 出ます。」\n推理：他平时「8時半に 出ます」；女的说下雨天公交车会晚，建议「7時半に 出ませんか」；男的觉得「ちょっと はやいですよ」，用「じゃあ」折中定在8点。\n容易错：对方的建议被否定，最后是折中的时间；10点是会议时间。",
-   "en": "Evidence: The man says at the end: 「じゃあ、8時に 出ます。」\nReasoning: He first says he'll leave at 8:30 as usual, 「いつもと おなじ 8時半に 出ます」; she says buses are slow on rainy days and suggests 「7時半に 出ませんか」; he finds it 「ちょっと はやいですよ」 and with 「じゃあ」 settles in between, on 8:00.\nTrap: her suggestion is turned down and the final time is a compromise; 10:00 is the meeting."
+   "zh": "依据：男的最后说：「じゃあ、8時に 出ます。」\n推理：他平时「8時半に 出ます」；女的说下雨天公交车会晚，建议「7時半に 出ませんか」；男的觉得「ちょっと はやいですよ」，用「じゃあ」折中定在8点。",
+   "en": "Evidence: The man says at the end: 「じゃあ、8時に 出ます。」\nReasoning: He first says he'll leave at 8:30 as usual, 「いつもと おなじ 8時半に 出ます」; she says buses are slow on rainy days and suggests 「7時半に 出ませんか」; he finds it 「ちょっと はやいですよ」 and with 「じゃあ」 settles in between, on 8:00."
   },
   "wrong": [
    {
@@ -774,8 +774,8 @@
    }
   },
   "why": {
-   "zh": "依据：老师说：「どうぶつえんと ひるごはんの お金を もって きて ください。」\n推理：老师最后点明只带两样：门票「500円」加午饭「800円」，共1300日元。公交车费200日元虽然也提到了，但「学校が 出しますから、いりません」，由学校出，学生不用带。\n容易错：把别人出的钱也算进去。",
-   "en": "Evidence: The teacher says: 「どうぶつえんと ひるごはんの お金を もって きて ください。」\nReasoning: At the end she names just two things: the zoo, 「500円」, plus lunch, 「800円」, makes 1,300 yen. The 200-yen bus fare is mentioned too, but 「学校が 出しますから、いりません」: the school pays, so students don't bring it.\nTrap: counting money someone else pays."
+   "zh": "依据：老师说：「どうぶつえんと ひるごはんの お金を もって きて ください。」\n推理：老师最后点明只带两样：门票「500円」加午饭「800円」，共1300日元。公交车费200日元虽然也提到了，但「学校が 出しますから、いりません」，由学校出，学生不用带。",
+   "en": "Evidence: The teacher says: 「どうぶつえんと ひるごはんの お金を もって きて ください。」\nReasoning: At the end she names just two things: the zoo, 「500円」, plus lunch, 「800円」, makes 1,300 yen. The 200-yen bus fare is mentioned too, but 「学校が 出しますから、いりません」: the school pays, so students don't bring it."
   },
   "wrong": [
    {
@@ -880,13 +880,13 @@
    }
   },
   "why": {
-   "zh": "依据：男的最后说：「じゃあ、8日に 行きましょう。」前面女的说了「8日は だいじょうぶです」。\n推理：3号女的要上班；10号男的可以，但女的用「でも」指出「あの えいがは 9日までですよ」；6号有朋友从国内来。剩下的是8号。\n容易错：两人都方便的日子被「でも」推翻（电影已经不放了）。",
-   "en": "Evidence: The man says at the end: 「じゃあ、8日に 行きましょう。」, after the woman's 「8日は だいじょうぶです」.\nReasoning: She works on the 3rd; the 10th suits him, but she points out with 「でも」: 「あの えいがは 9日までですよ」; on the 6th a friend comes from her home country. That leaves the 8th.\nTrap: a day that suits both is overturned by 「でも」 (the film has ended by then)."
+   "zh": "依据：男的最后说：「じゃあ、8日に 行きましょう。」前面女的说了「8日は だいじょうぶです」。\n推理：3号女的要上班；10号男的可以，但女的用「でも」指出「あの えいがは 9日までですよ」；6号有朋友从国内来。剩下的是8号。",
+   "en": "Evidence: The man says at the end: 「じゃあ、8日に 行きましょう。」, after the woman's 「8日は だいじょうぶです」.\nReasoning: She works on the 3rd; the 10th suits him, but she points out with 「でも」: 「あの えいがは 9日までですよ」; on the 6th a friend comes from her home country. That leaves the 8th."
   },
   "wrong": [
    {
-    "zh": "3号女人有「しごと」。",
-    "en": "She has work on the 3rd."
+    "zh": "3号女人有「しごと」，要上班。",
+    "en": "She has work on the 3rd: 「しごと」."
    },
    {
     "zh": "6号有朋友从国内来。",
@@ -894,8 +894,8 @@
    },
    null,
    {
-    "zh": "电影「9日まで」，10号已经看不到了。",
-    "en": "The film runs only until the 9th."
+    "zh": "电影只放到「9日まで」，10号已经看不到了。",
+    "en": "The film runs only 「9日まで」, so it's gone by the 10th."
    }
   ],
   "traps": [
@@ -981,8 +981,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「じゃあ、3がいへ 行きます。」\n推理：店员先说「6かいです」，马上更正「先月から 3がいに なりました」。雨伞在5楼和8楼，但女的说「かさは あした 母と 来て 買います」，今天不去。\n容易错：先说的楼层被更正；推到明天的事。",
-   "en": "Evidence: The woman says: 「じゃあ、3がいへ 行きます。」\nReasoning: The clerk first says 「6かいです」, then corrects it at once: 「先月から 3がいに なりました」. Umbrellas are on 5 and 8, but she says 「かさは あした 母と 来て 買います」, so not today.\nTrap: the first floor is corrected; something put off until tomorrow."
+   "zh": "依据：女的说：「じゃあ、3がいへ 行きます。」\n推理：店员先说「6かいです」，马上更正「先月から 3がいに なりました」。雨伞在5楼和8楼，但女的说「かさは あした 母と 来て 買います」，今天不去。",
+   "en": "Evidence: The woman says: 「じゃあ、3がいへ 行きます。」\nReasoning: The clerk first says 「6かいです」, then corrects it at once: 「先月から 3がいに なりました」. Umbrellas are on 5 and 8, but she says 「かさは あした 母と 来て 買います」, so not today."
   },
   "wrong": [
    null,
@@ -1081,8 +1081,8 @@
    }
   },
   "why": {
-   "zh": "依据：老师更正：「ボールペンは いりません。えんぴつと けしゴムを もって きて ください。」\n推理：老师先说带铅笔和圆珠笔，学生一问，她用「あ、すみません」改口，把圆珠笔换成橡皮。词典「つかいません」，笔记本也「いりません」。\n容易错：先说的东西被更正。",
-   "en": "Evidence: The teacher corrects herself: 「ボールペンは いりません。えんぴつと けしゴムを もって きて ください。」\nReasoning: She first says a pencil and a ballpoint pen; when the student asks, she says 「あ、すみません」 and swaps the pen for an eraser. Dictionaries: 「つかいません」; notebooks: 「いりません」 too.\nTrap: the first item is corrected."
+   "zh": "依据：老师更正：「ボールペンは いりません。えんぴつと けしゴムを もって きて ください。」\n推理：老师先说带铅笔和圆珠笔，学生一问，她用「あ、すみません」改口，把圆珠笔换成橡皮。词典「つかいません」，笔记本也「いりません」。",
+   "en": "Evidence: The teacher corrects herself: 「ボールペンは いりません。えんぴつと けしゴムを もって きて ください。」\nReasoning: She first says a pencil and a ballpoint pen; when the student asks, she says 「あ、すみません」 and swaps the pen for an eraser. Dictionaries: 「つかいません」; notebooks: 「いりません」 too."
   },
   "wrong": [
    {
@@ -1091,12 +1091,12 @@
    },
    null,
    {
-    "zh": "词典「つかいません」。",
-    "en": "Dictionaries won't be used."
+    "zh": "老师说词典「つかいません」，不用带。",
+    "en": "She says dictionaries won't be used: 「つかいません」."
    },
    {
-    "zh": "笔记本「いりません」。",
-    "en": "A notebook isn't needed."
+    "zh": "老师说笔记本也「いりません」。",
+    "en": "She says notebooks aren't needed either: 「いりません」."
    }
   ],
   "traps": [
@@ -1186,8 +1186,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的最后确认：「じゃあ、ぎゅうにゅうと バナナだね。」\n推理：面包「まだ あるよ」，是男的早上买的，女的就说「パンは いいわ」；鸡蛋是「あした わたしが 買うから いいの」；接着女的又追加「バナナも おねがい」。\n容易错：已经有的东西；别人明天买的东西；最后才追加的东西。",
-   "en": "Evidence: The man confirms at the end: 「じゃあ、ぎゅうにゅうと バナナだね。」\nReasoning: There is bread — 「まだ あるよ」, he bought it this morning — so she says 「パンは いいわ」; eggs: 「あした わたしが 買うから いいの」; then she adds 「バナナも おねがい」.\nTrap: something already there; something she'll buy tomorrow; an item added at the end."
+   "zh": "依据：男的最后确认：「じゃあ、ぎゅうにゅうと バナナだね。」\n推理：面包「まだ あるよ」，是男的早上买的，女的就说「パンは いいわ」；鸡蛋是「あした わたしが 買うから いいの」；接着女的又追加「バナナも おねがい」。",
+   "en": "Evidence: The man confirms at the end: 「じゃあ、ぎゅうにゅうと バナナだね。」\nReasoning: There is bread — 「まだ あるよ」, he bought it this morning — so she says 「パンは いいわ」; eggs: 「あした わたしが 買うから いいの」; then she adds 「バナナも おねがい」."
   },
   "wrong": [
    {
@@ -1287,8 +1287,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「じゃあ、セーターで いいですよ。」\n推理：男的先让她带大衣，她说「大きくて おもいですから」，男的就改成毛衣，「〜で いい」表示这样也可以。雨伞「いりません」，帽子是「わたしが もって いきます」，男的带。\n容易错：先说的东西被换掉；别人带的东西。",
-   "en": "Evidence: The man says: 「じゃあ、セーターで いいですよ。」\nReasoning: He first tells her to bring a coat; she says 「大きくて おもいですから」, so he changes it to a sweater — 「〜で いい」 means that will do. The umbrella: 「いりません」; the hats: 「わたしが もって いきます」, he brings them.\nTrap: the first item is replaced; something another person brings."
+   "zh": "依据：男的说：「じゃあ、セーターで いいですよ。」\n推理：男的先让她带大衣，她说「大きくて おもいですから」，男的就改成毛衣，「〜で いい」表示这样也可以。雨伞「いりません」，帽子是「わたしが もって いきます」，男的带。",
+   "en": "Evidence: The man says: 「じゃあ、セーターで いいですよ。」\nReasoning: He first tells her to bring a coat; she says 「大きくて おもいですから」, so he changes it to a sweater — 「〜で いい」 means that will do. The umbrella: 「いりません」; the hats: 「わたしが もって いきます」, he brings them."
   },
   "wrong": [
    null,
@@ -1393,17 +1393,17 @@
    }
   },
   "why": {
-   "zh": "依据：男的最后说：「おちゃを 二つ おねがいします。」\n推理：寄信因为下雨「あとで いいです」；窗户「さっき 田中さんが しめましたよ」；复印刚说出口又改成「コピーは わたしが します」。最后剩下的是泡两杯茶。\n容易错：推后的事；别人已经做了的事；对方自己做的事。",
-   "en": "Evidence: The man says at the end: 「おちゃを 二つ おねがいします。」\nReasoning: The letter, because of the rain: 「あとで いいです」; the window: 「さっき 田中さんが しめましたよ」; the copying he takes back at once: 「コピーは わたしが します」. What's left is making two cups of tea.\nTrap: a task put off; one someone else already did; one he does himself."
+   "zh": "依据：男的最后说：「おちゃを 二つ おねがいします。」\n推理：寄信因为下雨「あとで いいです」；窗户「さっき 田中さんが しめましたよ」；复印刚说出口又改成「コピーは わたしが します」。最后剩下的是泡两杯茶。",
+   "en": "Evidence: The man says at the end: 「おちゃを 二つ おねがいします。」\nReasoning: The letter, because of the rain: 「あとで いいです」; the window: 「さっき 田中さんが しめましたよ」; the copying he takes back at once: 「コピーは わたしが します」. What's left is making two cups of tea."
   },
   "wrong": [
    {
-    "zh": "下雨，信「あとで いい」。",
-    "en": "Because of the rain, the letter can wait."
+    "zh": "因为下雨，男的说信「あとで いいです」，晚点再寄。",
+    "en": "Because of the rain, he says the letter can wait: 「あとで いいです」."
    },
    {
-    "zh": "窗户「田中さんが しめました」。",
-    "en": "Tanaka-san already closed the windows."
+    "zh": "窗户刚才「田中さんが しめました」，已经关好了。",
+    "en": "The windows are already closed: 「田中さんが しめました」."
    },
    null,
    {
@@ -1500,8 +1500,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的最后说：「じゃあ、デパートの 前へ 行きます。」\n推理：男的本想在旁边的书店等，女的说「その 本やは きょう 休みですよ」，并提议「デパートの 前で 会いませんか」，男的同意。咖啡馆是他现在在的地方，公司是女的现在在的地方。\n容易错：现在所在的地方；被否定的方案。",
-   "en": "Evidence: The man says at the end: 「じゃあ、デパートの 前へ 行きます。」\nReasoning: He planned to wait in the bookshop next door, but she says 「その 本やは きょう 休みですよ」 and suggests 「デパートの 前で 会いませんか」; he agrees. The café is where he is now, the office is where she is now.\nTrap: where they are now; a plan that is ruled out."
+   "zh": "依据：男的最后说：「じゃあ、デパートの 前へ 行きます。」\n推理：男的本想在旁边的书店等，女的说「その 本やは きょう 休みですよ」，并提议「デパートの 前で 会いませんか」，男的同意。咖啡馆是他现在在的地方，公司是女的现在在的地方。",
+   "en": "Evidence: The man says at the end: 「じゃあ、デパートの 前へ 行きます。」\nReasoning: He planned to wait in the bookshop next door, but she says 「その 本やは きょう 休みですよ」 and suggests 「デパートの 前で 会いませんか」; he agrees. The café is where he is now, the office is where she is now."
   },
   "wrong": [
    {
@@ -1509,8 +1509,8 @@
     "en": "The café is where he is now."
    },
    {
-    "zh": "书店「きょう 休み」。",
-    "en": "The bookshop is closed today."
+    "zh": "旁边的书店「きょう 休み」，今天不开门。",
+    "en": "The bookshop is closed today: 「きょう 休み」."
    },
    {
     "zh": "公司是女人现在在的地方。",
@@ -1606,13 +1606,13 @@
    }
   },
   "why": {
-   "zh": "依据：女的最后说：「じゃあ、ベッドの 左に おねがいします。」男的确认「はい、ベッドの 左ですね。」\n推理：电视上面「せまいですよ」，桌上「本が たくさん ありますから」，床的右边是「ドアですよ」，三个都被否定，最后用「じゃあ」定在床的左边。\n容易错：一个个被否定的方案；左右听反。",
-   "en": "Evidence: The woman says at the end: 「じゃあ、ベッドの 左に おねがいします。」 The man confirms 「はい、ベッドの 左ですね。」\nReasoning: On the TV it's 「せまいですよ」, the desk has 「本が たくさん ありますから」, the bed's right side is 「ドアですよ」; all three are ruled out, and with 「じゃあ」 it ends up on the left of the bed.\nTrap: places ruled out one by one; mixing up left and right."
+   "zh": "依据：女的最后说：「じゃあ、ベッドの 左に おねがいします。」男的确认「はい、ベッドの 左ですね。」\n推理：电视上面「せまいですよ」，桌上「本が たくさん ありますから」，床的右边是「ドアですよ」，三个都被否定，最后用「じゃあ」定在床的左边。\n容易错：「左」和「右」要听清楚。",
+   "en": "Evidence: The woman says at the end: 「じゃあ、ベッドの 左に おねがいします。」 The man confirms 「はい、ベッドの 左ですね。」\nReasoning: On the TV it's 「せまいですよ」, the desk has 「本が たくさん ありますから」, the bed's right side is 「ドアですよ」; all three are ruled out, and with 「じゃあ」 it ends up on the left of the bed.\nTrap: listen carefully for 「左」 and 「右」."
   },
   "wrong": [
    {
-    "zh": "电视上面「せまい」。",
-    "en": "The top of the TV is too narrow."
+    "zh": "电视上面「せまい」，放不下。",
+    "en": "The top of the TV is too narrow: 「せまい」."
    },
    null,
    {
@@ -1620,8 +1620,8 @@
     "en": "There's a door on the right of the bed."
    },
    {
-    "zh": "桌子上「本が たくさん あります」。",
-    "en": "The desk has lots of books on it."
+    "zh": "桌子上「本が たくさん あります」，没有地方。",
+    "en": "The desk has 「本が たくさん あります」, so there's no room."
    }
   ],
   "traps": [
@@ -1706,8 +1706,8 @@
    }
   },
   "why": {
-   "zh": "依据：店员说「ポケットが 一つのは、みじかい そでのだけです。」，男的回答「じゃあ、みじかい そでので いいです。」\n推理：男的先要长袖，但他的条件是「ポケットは 一つが いいです」；一个口袋的只有短袖，他就在袖子上让步，口袋条件不变：短袖、一个口袋。\n容易错：最先说的长袖被放弃；只对一半的选项。",
-   "en": "Evidence: The clerk says 「ポケットが 一つのは、みじかい そでのだけです。」, and the man answers 「じゃあ、みじかい そでので いいです。」\nReasoning: He first asks for long sleeves, but his condition is 「ポケットは 一つが いいです」; one-pocket shirts only come with short sleeves, so he gives way on the sleeves and keeps the pocket: short sleeves, one pocket.\nTrap: the long sleeves he first asked for are dropped; options that are only half right."
+   "zh": "依据：店员说「ポケットが 一つのは、みじかい そでのだけです。」，男的回答「じゃあ、みじかい そでので いいです。」\n推理：男的先要长袖，但他的条件是「ポケットは 一つが いいです」；一个口袋的只有短袖，他就在袖子上让步，口袋条件不变：短袖、一个口袋。",
+   "en": "Evidence: The clerk says 「ポケットが 一つのは、みじかい そでのだけです。」, and the man answers 「じゃあ、みじかい そでので いいです。」\nReasoning: He first asks for long sleeves, but his condition is 「ポケットは 一つが いいです」; one-pocket shirts only come with short sleeves, so he gives way on the sleeves and keeps the pocket: short sleeves, one pocket."
   },
   "wrong": [
    null,
@@ -1818,22 +1818,22 @@
    }
   },
   "why": {
-   "zh": "依据：爸爸最后说：「じゃあ、テレビ 見ても いいよ。」\n推理：作业「もう したよ」；打扫房间「きのう そうじしたよ」；遛狗「さっき おにいちゃんが 行ったよ」。爸爸提的事都已经做完了，所以同意她看电视。\n容易错：已经做过的事；别人做了的事。",
-   "en": "Evidence: The father says at the end: 「じゃあ、テレビ 見ても いいよ。」\nReasoning: Homework: 「もう したよ」; cleaning her room: 「きのう そうじしたよ」; walking the dog: 「さっき おにいちゃんが 行ったよ」. Every task he names is already done, so he lets her watch TV.\nTrap: things already done; something another person did."
+   "zh": "依据：爸爸最后说：「じゃあ、テレビ 見ても いいよ。」\n推理：作业「もう したよ」；打扫房间「きのう そうじしたよ」；遛狗「さっき おにいちゃんが 行ったよ」。爸爸提的事都已经做完了，所以同意她看电视。",
+   "en": "Evidence: The father says at the end: 「じゃあ、テレビ 見ても いいよ。」\nReasoning: Homework: 「もう したよ」; cleaning her room: 「きのう そうじしたよ」; walking the dog: 「さっき おにいちゃんが 行ったよ」. Every task he names is already done, so he lets her watch TV."
   },
   "wrong": [
    {
-    "zh": "作业「もう したよ」。",
-    "en": "She's already done her homework."
+    "zh": "作业她已经「もう したよ」做完了。",
+    "en": "She's already done her homework: 「もう したよ」."
    },
    {
-    "zh": "房间「きのう そうじした」。",
-    "en": "She cleaned her room yesterday."
+    "zh": "房间她「きのう そうじした」，昨天打扫过了。",
+    "en": "She cleaned her room yesterday: 「きのう そうじした」."
    },
    null,
    {
-    "zh": "遛狗「おにいちゃんが 行った」。",
-    "en": "Her brother already walked the dog."
+    "zh": "遛狗刚才「おにいちゃんが 行った」，哥哥已经去了。",
+    "en": "Her brother already walked the dog: 「おにいちゃんが 行った」."
    }
   ],
   "traps": [
@@ -1924,8 +1924,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「きっては 駅の 前の 店でも うって いますよ。」女的回答「じゃあ、そこへ 行きます。」\n推理：邮局在银行左边，但男的用「でも」补充「きょうは 土曜日ですから、ゆうびんきょくは 休みですよ」。车站前的店「土曜日も あいて います」，所以她去那里。\n容易错：先说的地点被「でも」推翻；问路用的银行只是参照物。",
-   "en": "Evidence: The man says: 「きっては 駅の 前の 店でも うって いますよ。」 The woman answers 「じゃあ、そこへ 行きます。」\nReasoning: The post office is left of the bank, but he adds with 「でも」: 「きょうは 土曜日ですから、ゆうびんきょくは 休みですよ」. The shop by the station is 「土曜日も あいて います」, so she goes there.\nTrap: the first place overturned by 「でも」; the bank is only a landmark for directions."
+   "zh": "依据：男的说：「きっては 駅の 前の 店でも うって いますよ。」女的回答「じゃあ、そこへ 行きます。」\n推理：邮局在银行左边，但男的用「でも」补充「きょうは 土曜日ですから、ゆうびんきょくは 休みですよ」。车站前的店「土曜日も あいて います」，所以她去那里。",
+   "en": "Evidence: The man says: 「きっては 駅の 前の 店でも うって いますよ。」 The woman answers 「じゃあ、そこへ 行きます。」\nReasoning: The post office is left of the bank, but he adds with 「でも」: 「きょうは 土曜日ですから、ゆうびんきょくは 休みですよ」. The shop by the station is 「土曜日も あいて います」, so she goes there."
   },
   "wrong": [
    {
@@ -2036,21 +2036,21 @@
    }
   },
   "why": {
-   "zh": "依据：前台说：「あちらの いすで まって ください。」\n推理：表男的「もう 書きました」；付钱是「あとで いいですから」；喝水要「先生と 話してから」。所以现在要做的是在椅子上等。\n容易错：已经做完的事；之后才做的事。",
-   "en": "Evidence: The receptionist says: 「あちらの いすで まって ください。」\nReasoning: The form: he says 「もう 書きました」; paying: 「あとで いいですから」; water: only 「先生と 話してから」. So what he does now is wait on the chairs.\nTrap: something already done; things that come later."
+   "zh": "依据：前台说：「あちらの いすで まって ください。」\n推理：表男的「もう 書きました」；付钱是「あとで いいですから」；喝水要「先生と 話してから」。所以现在要做的是在椅子上等。",
+   "en": "Evidence: The receptionist says: 「あちらの いすで まって ください。」\nReasoning: The form: he says 「もう 書きました」; paying: 「あとで いいですから」; water: only 「先生と 話してから」. So what he does now is wait on the chairs."
   },
   "wrong": [
    {
-    "zh": "表「もう 書きました」。",
-    "en": "He's already filled in the form."
+    "zh": "表他已经填好了：「もう 書きました」。",
+    "en": "He has already filled in the form: 「もう 書きました」."
    },
    {
-    "zh": "钱「あとで いい」。",
-    "en": "He can pay later."
+    "zh": "付钱「あとで いい」，现在不用付。",
+    "en": "Paying can wait: 「あとで いい」."
    },
    {
-    "zh": "水要「先生と 話してから」。",
-    "en": "Water has to wait until after he sees the doctor."
+    "zh": "喝水要等「先生と 話してから」，现在还不能喝。",
+    "en": "Water has to wait until 「先生と 話してから」."
    },
    null
   ],
@@ -2130,7 +2130,7 @@
    }
   },
   "why": {
-   "zh": "依据：女的最后说：「じゃあ、はやい ほうに のります。」\n推理：10点05分的车「今 出ました」；10点20分的车「さくら駅へは 行きません」；去樱站的只有10点35分和10点50分，「はやい ほう」是10点35分。\n容易错：女的没有直接说出时间，要从「はやい ほう」推出来。",
+   "zh": "依据：女的最后说：「じゃあ、はやい ほうに のります。」\n推理：10点05分的车「今 出ました」；10点20分的车「さくら駅へは 行きません」；去樱站的只有10点35分和10点50分，「はやい ほう」是10点35分。\n容易错：女的没有直接说时间，要从「はやい ほう」推出来。",
    "en": "Evidence: The woman says at the end: 「じゃあ、はやい ほうに のります。」\nReasoning: The 10:05 「今 出ました」; the 10:20 「さくら駅へは 行きません」. Only the 10:35 and 10:50 go there, and 「はやい ほう」 — the earlier one — is the 10:35.\nTrap: she never says the time; you work it out from 「はやい ほう」."
   },
   "wrong": [
@@ -2237,8 +2237,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的最后说：「じゃあ、はじめの 時間に かけます。」\n推理：男的一开始说「1時に また 電話します」；一点半到三点田中「しごとで 出かけます」，三点回来又马上出去、「きょうは もう 会社に いません」，四点也不行。所以还是一开始说的一点。\n容易错：中间换过的时间最后又被推翻，答案回到第一个。",
-   "en": "Evidence: The man says at the end: 「じゃあ、はじめの 時間に かけます。」\nReasoning: He first said 「1時に また 電話します」. Tanaka is out on business 1:30–3:00 and goes straight out again after three — 「きょうは もう 会社に いません」 — so four doesn't work either. He goes back to his first time, one o'clock.\nTrap: the times suggested in between are dropped; the answer is the first one."
+   "zh": "依据：男的最后说：「じゃあ、はじめの 時間に かけます。」\n推理：男的一开始说「1時に また 電話します」；一点半到三点田中「しごとで 出かけます」，三点回来又马上出去、「きょうは もう 会社に いません」，四点也不行。所以还是一开始说的一点。",
+   "en": "Evidence: The man says at the end: 「じゃあ、はじめの 時間に かけます。」\nReasoning: He first said 「1時に また 電話します」. Tanaka is out on business 1:30–3:00 and goes straight out again after three — 「きょうは もう 会社に いません」 — so four doesn't work either. He goes back to his first time, one o'clock."
   },
   "wrong": [
    null,
@@ -2344,8 +2344,8 @@
    }
   },
   "why": {
-   "zh": "依据：店员说「赤い 花は 3本だけです」，男的说「赤いのは 3本で いいです」「白いのは 5本 ください」。\n推理：本来想买白5枝＋红5枝＝10枝；红花只有3枝，白花不变，还是5枝，一共3＋5＝8枝。\n容易错：问题问的是「ぜんぶで」，要把两种花加起来；店员问白花是不是也改成3枝，被男的否定了。",
-   "en": "Evidence: The assistant says 「赤い 花は 3本だけです」; he answers 「赤いのは 3本で いいです」 and 「白いのは 5本 ください」.\nReasoning: He wanted 5 white + 5 red = 10. Only 3 red are left and the white stays at 5: 3 + 5 = 8.\nTrap: the question asks 「ぜんぶで」 — add the two colours together; her offer to make the white ones three too is turned down."
+   "zh": "依据：店员说「赤い 花は 3本だけです」，男的说「赤いのは 3本で いいです」「白いのは 5本 ください」。\n推理：本来想买白5枝＋红5枝＝10枝；红花只有3枝，白花不变，还是5枝，一共3＋5＝8枝。\n容易错：问题问的是「ぜんぶで」，要把两种花加起来。",
+   "en": "Evidence: The assistant says 「赤い 花は 3本だけです」; he answers 「赤いのは 3本で いいです」 and 「白いのは 5本 ください」.\nReasoning: He wanted 5 white + 5 red = 10. Only 3 red are left and the white stays at 5: 3 + 5 = 8.\nTrap: the question asks 「ぜんぶで」, so add the two colours together."
   },
   "wrong": [
    {
@@ -2445,8 +2445,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「じゃあ、駅に 近い ほうで おねがいします。」\n推理：司机提出在「こうえんの 入口か ぎんこうの 前」下车；公园入口走到车站要10分钟，银行前面只要2分钟，离车站近的是银行前面。\n容易错：在医院前面只是停一下让朋友上车，女的不在那里下车。",
-   "en": "Evidence: The woman says: 「じゃあ、駅に 近い ほうで おねがいします。」\nReasoning: The driver offers 「こうえんの 入口か ぎんこうの 前」. From the park entrance it's ten minutes to the station, from the bank only two, so the closer one is the bank.\nTrap: the stop at the hospital is only to pick up a friend; she doesn't get out there."
+   "zh": "依据：女的说：「じゃあ、駅に 近い ほうで おねがいします。」\n推理：司机提出在「こうえんの 入口か ぎんこうの 前」下车；公园入口走到车站要10分钟，银行前面只要2分钟，离车站近的是银行前面。",
+   "en": "Evidence: The woman says: 「じゃあ、駅に 近い ほうで おねがいします。」\nReasoning: The driver offers 「こうえんの 入口か ぎんこうの 前」. From the park entrance it's ten minutes to the station, from the bank only two, so the closer one is the bank."
   },
   "wrong": [
    {
@@ -2539,8 +2539,8 @@
    }
   },
   "why": {
-   "zh": "依据：工作人员最后说：「じゃあ、ぜんぶ だいじょうぶですよ。」\n推理：男的一开始说要借「この 4さつ」；每人最多5本，他手上有2本，所以本来只能借3本；他说那2本「かえします」，还了以后「ぜんぶ」——他想借的4本都能借。\n容易错：3本是还书之前的算法；5本是上限，不是他借的数量。",
-   "en": "Evidence: The librarian finally says: 「じゃあ、ぜんぶ だいじょうぶですよ。」\nReasoning: He asked for 「この 4さつ」. The limit is five and he has two out, so at first he could only take three. He returns those two — 「かえします」 — so 「ぜんぶ」, all four he wanted, is fine.\nTrap: three is the count before he returns the books; five is the limit, not what he borrows."
+   "zh": "依据：工作人员最后说：「じゃあ、ぜんぶ だいじょうぶですよ。」\n推理：男的一开始说要借「この 4さつ」；每人最多5本，他手上有2本，所以本来只能借3本；他说那2本「かえします」，还了以后「ぜんぶ」——他想借的4本都能借。",
+   "en": "Evidence: The librarian finally says: 「じゃあ、ぜんぶ だいじょうぶですよ。」\nReasoning: He asked for 「この 4さつ」. The limit is five and he has two out, so at first he could only take three. He returns those two — 「かえします」 — so 「ぜんぶ」, all four he wanted, is fine."
   },
   "wrong": [
    {
@@ -2652,8 +2652,8 @@
    }
   },
   "why": {
-   "zh": "依据：妈妈说「ばんごはんまで まだ 1時間 あるわよ」，男孩回答「じゃあ、テレビは あとで 見る」。\n推理：晚饭后要洗澡，洗澡后就要睡觉，明天早上又「いそがしい」，都没有时间；离晚饭还有一个小时，男孩把电视往后放，就是现在、晚饭前写作业。\n容易错：男孩没说「しゅくだいを する」，要从「テレビは あとで」推出现在写作业。",
-   "en": "Evidence: The mother says 「ばんごはんまで まだ 1時間 あるわよ」 and the boy answers 「じゃあ、テレビは あとで 見る」.\nReasoning: After dinner is bath time, after the bath is bedtime, and mornings are 「いそがしい」, so none of those work. There's an hour before dinner; putting TV off means he does the homework now, before dinner.\nTrap: he never says 「しゅくだいを する」 — you infer it from 「テレビは あとで」."
+   "zh": "依据：妈妈说「ばんごはんまで まだ 1時間 あるわよ」，男孩回答「じゃあ、テレビは あとで 見る」。\n推理：晚饭后要洗澡，洗澡后就要睡觉，明天早上又「いそがしい」，都没有时间；离晚饭还有一个小时，男孩把电视往后放，就是现在、晚饭前写作业。",
+   "en": "Evidence: The mother says 「ばんごはんまで まだ 1時間 あるわよ」 and the boy answers 「じゃあ、テレビは あとで 見る」.\nReasoning: After dinner is bath time, after the bath is bedtime, and mornings are 「いそがしい」, so none of those work. There's an hour before dinner; putting TV off means he does the homework now, before dinner."
   },
   "wrong": [
    null,
@@ -2752,8 +2752,8 @@
    }
   },
   "why": {
-   "zh": "依据：店员说「カウンターの せきなら、10分ぐらいですよ」，男的说「じゃあ、カウンターで おねがいします」。\n推理：桌子要等30分钟，男的嫌长；选了吧台，所以等10分钟左右。\n容易错：一个小时是男的猜的，被店员否定；20分钟只是男的说能等的时间。",
-   "en": "Evidence: The waitress says 「カウンターの せきなら、10分ぐらいですよ」 and he answers 「じゃあ、カウンターで おねがいします」.\nReasoning: A table means thirty minutes, which he finds long; he takes the counter, so he waits about ten.\nTrap: an hour is his guess, which she denies; twenty is only how long he'd be willing to wait."
+   "zh": "依据：店员说「カウンターの せきなら、10分ぐらいですよ」，男的说「じゃあ、カウンターで おねがいします」。\n推理：桌子要等30分钟，男的嫌长；选了吧台，所以等10分钟左右。",
+   "en": "Evidence: The waitress says 「カウンターの せきなら、10分ぐらいですよ」 and he answers 「じゃあ、カウンターで おねがいします」.\nReasoning: A table means thirty minutes, which he finds long; he takes the counter, so he waits about ten."
   },
   "wrong": [
    null,
@@ -2865,8 +2865,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「じゃあ、ぼくは おにぎりを つくります。」\n推理：三明治和水果是林先生带；蛋糕是女的去店里买，男的说要做，被「いいえ、だいじょうぶです」拒绝了。男的自己做的只有饭团。\n容易错：后面提到的蛋糕和水果都不是男的做。",
-   "en": "Evidence: The man says: 「じゃあ、ぼくは おにぎりを つくります。」\nReasoning: Sandwiches and fruit come from Hayashi-san; the woman buys the cake, and his offer to make it gets 「いいえ、だいじょうぶです」. The only thing he makes is rice balls.\nTrap: the cake and fruit talked about later are not his."
+   "zh": "依据：男的说：「じゃあ、ぼくは おにぎりを つくります。」\n推理：三明治和水果是林先生带；蛋糕是女的去店里买，男的说要做，被「いいえ、だいじょうぶです」拒绝了。男的自己做的只有饭团。",
+   "en": "Evidence: The man says: 「じゃあ、ぼくは おにぎりを つくります。」\nReasoning: Sandwiches and fruit come from Hayashi-san; the woman buys the cake, and his offer to make it gets 「いいえ、だいじょうぶです」. The only thing he makes is rice balls."
   },
   "wrong": [
    {
@@ -2976,8 +2976,8 @@
    }
   },
   "why": {
-   "zh": "依据：妈妈提议「ハンカチか くつしたは どう？」，男孩说「くつしたは きょねん あげたから、ことしは ちがうのが いい」。\n推理：领带太贵，800日元不够；雨伞是妈妈买；手帕和袜子两个里面，袜子去年送过了，剩下的是手帕。\n容易错：男孩没说「ハンカチ」，要从两个候选里去掉袜子。",
-   "en": "Evidence: She suggests 「ハンカチか くつしたは どう？」; he says 「くつしたは きょねん あげたから、ことしは ちがうのが いい」.\nReasoning: A tie costs too much for 800 yen; the umbrella is Mum's present. Of the handkerchief and socks, he gave socks last year, which leaves the handkerchief.\nTrap: he never says 「ハンカチ」 — you remove the socks from the two choices."
+   "zh": "依据：妈妈提议「ハンカチか くつしたは どう？」，男孩说「くつしたは きょねん あげたから、ことしは ちがうのが いい」。\n推理：领带太贵，800日元不够；雨伞是妈妈买；手帕和袜子两个里面，袜子去年送过了，剩下的是手帕。",
+   "en": "Evidence: She suggests 「ハンカチか くつしたは どう？」; he says 「くつしたは きょねん あげたから、ことしは ちがうのが いい」.\nReasoning: A tie costs too much for 800 yen; the umbrella is Mum's present. Of the handkerchief and socks, he gave socks last year, which leaves the handkerchief."
   },
   "wrong": [
    {
@@ -3089,8 +3089,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说「それから トイレにも 行きたいです」，最后说「じゃあ、ちょっと 行って きますね」。\n推理：便当男的「もう 二つ 買いました」，车票「もう ありますよ」，都不用了；女的想做的事只剩去厕所，「ちょっと 行って きます」指的就是去厕所。\n容易错：看报纸的是男的。",
-   "en": "Evidence: She says 「それから トイレにも 行きたいです」 and at the end 「じゃあ、ちょっと 行って きますね」.\nReasoning: He 「もう 二つ 買いました」 the lunch boxes and the tickets 「もう ありますよ」, so neither is needed. Only the toilet is left, and 「ちょっと 行って きます」 means going there.\nTrap: the man is the one reading the paper."
+   "zh": "依据：女的说「それから トイレにも 行きたいです」，最后说「じゃあ、ちょっと 行って きますね」。\n推理：便当男的「もう 二つ 買いました」，车票「もう ありますよ」，都不用了；女的想做的事只剩去厕所，「ちょっと 行って きます」指的就是去厕所。",
+   "en": "Evidence: She says 「それから トイレにも 行きたいです」 and at the end 「じゃあ、ちょっと 行って きますね」.\nReasoning: He 「もう 二つ 買いました」 the lunch boxes and the tickets 「もう ありますよ」, so neither is needed. Only the toilet is left, and 「ちょっと 行って きます」 means going there."
   },
   "wrong": [
    {
@@ -3189,8 +3189,8 @@
    }
   },
   "why": {
-   "zh": "依据：男孩一开始说「うちの いぬを かきたいです」，最后说「じゃあ、やっぱり うちの いぬを かきます」。\n推理：男孩担心没有狗的照片，只有猫的照片；老师说「しゃしんは いりませんよ」，所以他还是画一开始想画的狗。\n容易错：鸟是昨天画过的；鱼是山田画的；猫只是有照片。",
-   "en": "Evidence: The boy first says 「うちの いぬを かきたいです」 and finally 「じゃあ、やっぱり うちの いぬを かきます」.\nReasoning: He worries he has no photo of the dog, only of a cat; the teacher says 「しゃしんは いりませんよ」, so he keeps his first idea, the dog.\nTrap: birds were yesterday; the fish is Yamada's; the cat is only in his photo."
+   "zh": "依据：男孩一开始说「うちの いぬを かきたいです」，最后说「じゃあ、やっぱり うちの いぬを かきます」。\n推理：男孩担心没有狗的照片，只有猫的照片；老师说「しゃしんは いりませんよ」，所以他还是画一开始想画的狗。",
+   "en": "Evidence: The boy first says 「うちの いぬを かきたいです」 and finally 「じゃあ、やっぱり うちの いぬを かきます」.\nReasoning: He worries he has no photo of the dog, only of a cat; the teacher says 「しゃしんは いりませんよ」, so he keeps his first idea, the dog."
   },
   "wrong": [
    null,
@@ -3296,8 +3296,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说「じゃあ、三つ」，最后说「じゃあ、パンだけですね」。\n推理：本来算四个人四个面包，林今天休息，减为三个；牛奶公司里「まだ たくさん あります」，不用买。所以只买三个面包。\n容易错：四个是林休息前的算法；牛奶是男的提了又被否定的。",
-   "en": "Evidence: He says 「じゃあ、三つ」 and finally 「じゃあ、パンだけですね」.\nReasoning: He counted four people, four rolls, but Hayashi is off, so three. The office 「まだ たくさん あります」 milk, so no milk. Just three rolls.\nTrap: four is the count before Hayashi is left out; milk is suggested and then dropped."
+   "zh": "依据：男的说「じゃあ、三つ」，最后说「じゃあ、パンだけですね」。\n推理：本来算四个人四个面包，林今天休息，减为三个；牛奶公司里「まだ たくさん あります」，不用买。所以只买三个面包。",
+   "en": "Evidence: He says 「じゃあ、三つ」 and finally 「じゃあ、パンだけですね」.\nReasoning: He counted four people, four rolls, but Hayashi is off, so three. The office 「まだ たくさん あります」 milk, so no milk. Just three rolls."
   },
   "wrong": [
    null,
@@ -3397,8 +3397,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说「今は あたたかい ものが いいですね」，女的点「ビールを 一つと、あたたかい おちゃを 一つ ください」。\n推理：啤酒是女的喝，男的开车不能喝；果汁太甜；咖啡要饭后再喝。现在喝的是热茶。\n容易错：咖啡也是热的，但男的说「ごはんの あとで」。",
-   "en": "Evidence: He says 「今は あたたかい ものが いいですね」, and she orders 「ビールを 一つと、あたたかい おちゃを 一つ ください」.\nReasoning: The beer is hers — he's driving; juice is too sweet; coffee is for after the meal. What he drinks now is hot tea.\nTrap: coffee is hot too, but he wants it 「ごはんの あとで」."
+   "zh": "依据：男的说「今は あたたかい ものが いいですね」，女的点「ビールを 一つと、あたたかい おちゃを 一つ ください」。\n推理：啤酒是女的喝，男的开车不能喝；果汁太甜；咖啡要饭后再喝。现在喝的是热茶。",
+   "en": "Evidence: He says 「今は あたたかい ものが いいですね」, and she orders 「ビールを 一つと、あたたかい おちゃを 一つ ください」.\nReasoning: The beer is hers — he's driving; juice is too sweet; coffee is for after the meal. What he drinks now is hot tea."
   },
   "wrong": [
    {
@@ -3411,8 +3411,8 @@
    },
    null,
    {
-    "zh": "咖啡男的想饭后再喝。",
-    "en": "He wants coffee after the meal."
+    "zh": "咖啡也是热的，但男的想饭后再喝。",
+    "en": "Coffee is hot too, but he wants it after the meal."
    }
   ],
   "traps": [
@@ -3504,8 +3504,8 @@
    }
   },
   "why": {
-   "zh": "依据：女孩说「あそこに ぞうが いるよ」，爸爸说「じゃあ、まず あそこへ 行こう」。\n推理：熊猫11点才开始，现在才10点；狮子太远，放到午饭后；「まず」去的是大象那边，猴子是「その つぎ」。\n容易错：最后提到的猴子是第二个，不是第一个。",
-   "en": "Evidence: The girl says 「あそこに ぞうが いるよ」 and her father answers 「じゃあ、まず あそこへ 行こう」.\nReasoning: The pandas start at eleven and it's ten; the lions are far, so after lunch. 「まず」 — first — they go to the elephant; the monkeys are 「その つぎ」.\nTrap: the monkeys, mentioned last, come second, not first."
+   "zh": "依据：女孩说「あそこに ぞうが いるよ」，爸爸说「じゃあ、まず あそこへ 行こう」。\n推理：熊猫11点才开始，现在才10点；狮子太远，放到午饭后；「まず」去的是大象那边，猴子是「その つぎ」。",
+   "en": "Evidence: The girl says 「あそこに ぞうが いるよ」 and her father answers 「じゃあ、まず あそこへ 行こう」.\nReasoning: The pandas start at eleven and it's ten; the lions are far, so after lunch. 「まず」 — first — they go to the elephant; the monkeys are 「その つぎ」."
   },
   "wrong": [
    {
@@ -3611,8 +3611,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说「じゃあ、先に あらって きて ください」，男的最后说「じゃあ、すぐ あらって きます」。\n推理：早饭做好了，但男的「まだ かおを あらって いません」，所以先洗脸；报纸要「ごはんの あとで」看；衣服「もう 着て います」。\n容易错：早饭已经做好，但要洗完脸再吃。",
-   "en": "Evidence: She says 「じゃあ、先に あらって きて ください」 and he ends with 「じゃあ、すぐ あらって きます」.\nReasoning: Breakfast is ready, but he 「まだ かおを あらって いません」, so washing comes first; the paper is for 「ごはんの あとで」; he is 「もう 着て います」.\nTrap: breakfast is ready, but he eats after washing."
+   "zh": "依据：女的说「じゃあ、先に あらって きて ください」，男的最后说「じゃあ、すぐ あらって きます」。\n推理：早饭做好了，但男的「まだ かおを あらって いません」，所以先洗脸；报纸要「ごはんの あとで」看；衣服「もう 着て います」。",
+   "en": "Evidence: She says 「じゃあ、先に あらって きて ください」 and he ends with 「じゃあ、すぐ あらって きます」.\nReasoning: Breakfast is ready, but he 「まだ かおを あらって いません」, so washing comes first; the paper is for 「ごはんの あとで」; he is 「もう 着て います」."
   },
   "wrong": [
    {
@@ -3712,8 +3712,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说「きっては いりません」，邮局的人确认：「じゃ、はがきだけですね。」男的回答「はい」。\n推理：信封邮局没有（「ここには ありません」）；邮票刚要买就想起家里有很多，收回了；笔是借用桌上的，不是买。剩下的只有明信片。\n容易错：说出口又收回的东西（きって）不算。",
-   "en": "Evidence: The man says 「きっては いりません」, the clerk checks 「じゃ、はがきだけですね。」 and he answers 「はい」.\nReasoning: The post office has no envelopes (「ここには ありません」); he starts to ask for stamps, remembers he has plenty at home and takes it back; the pen is one he borrows from the desk. Only the postcards are left.\nTrap: something asked for and then withdrawn (きって) doesn't count."
+   "zh": "依据：男的说「きっては いりません」，邮局的人确认：「じゃ、はがきだけですね。」男的回答「はい」。\n推理：信封邮局没有（「ここには ありません」）；邮票刚要买就想起家里有很多，收回了；笔是借用桌上的，不是买。剩下的只有明信片。",
+   "en": "Evidence: The man says 「きっては いりません」, the clerk checks 「じゃ、はがきだけですね。」 and he answers 「はい」.\nReasoning: The post office has no envelopes (「ここには ありません」); he starts to ask for stamps, remembers he has plenty at home and takes it back; the pen is one he borrows from the desk. Only the postcards are left."
   },
   "wrong": [
    {
@@ -3813,8 +3813,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「4時から 本やで しごとが ありますから、もう 行きます。」\n推理：去图书馆的是男的；银行三点关门，现在三点半，她改成「あした 行きます」；回家是九点的事。现在要去的是书店。\n容易错：图书馆是对方的打算，不是她的。",
-   "en": "Evidence: She says: 「4時から 本やで しごとが ありますから、もう 行きます。」\nReasoning: The library is where the man is going; the bank closes at three and it's half past, so she changes it to 「あした 行きます」; going home is at nine. Where she goes now is the bookshop.\nTrap: the library is the other speaker's plan, not hers."
+   "zh": "依据：女的说：「4時から 本やで しごとが ありますから、もう 行きます。」\n推理：去图书馆的是男的；银行三点关门，现在三点半，她改成「あした 行きます」；回家是九点的事。现在要去的是书店。",
+   "en": "Evidence: She says: 「4時から 本やで しごとが ありますから、もう 行きます。」\nReasoning: The library is where the man is going; the bank closes at three and it's half past, so she changes it to 「あした 行きます」; going home is at nine. Where she goes now is the bookshop."
   },
   "wrong": [
    {
@@ -4060,8 +4060,8 @@
    }
   },
   "why": {
-   "zh": "依据：店员说：「いちにちに 3かい……1かいに 二つです。」\n推理：一天三次，每次两粒，3 × 2 = 6，一天一共六粒。「六つ」没有直接说出来，要自己算。\n容易错：「二つ」只是一次的量；「3かい」是次数；「一週間」是吃多久。",
-   "en": "Evidence: The pharmacist says: 「いちにちに 3かい……1かいに 二つです。」\nReasoning: Three times a day, two each time: 3 × 2 = 6 a day. 「六つ」 is never said — you work it out.\nTrap: 「二つ」 is one dose, 「3かい」 is how many times, and 「一週間」 is how long."
+   "zh": "依据：店员说：「いちにちに 3かい……1かいに 二つです。」\n推理：一天三次，每次两粒，3 × 2 = 6，一天一共六粒。「六つ」没有直接说出来，要自己算。",
+   "en": "Evidence: The pharmacist says: 「いちにちに 3かい……1かいに 二つです。」\nReasoning: Three times a day, two each time: 3 × 2 = 6 a day. 「六つ」 is never said — you work it out."
   },
   "wrong": [
    {
@@ -4154,8 +4154,8 @@
    }
   },
   "why": {
-   "zh": "依据：老师说：「川田先生は きょう 休みですよ。となりの へやの 木村さんに わたして ください。」\n推理：学生以为交给眼前的老师，老师说「わたしじゃ ありません」；看作文的是川田老师，但他今天休息，所以交给隔壁的木村。小李是还没交作文的同学。\n容易错：「読む人」（川田先生）和「わたす人」（木村さん）不是同一个人。",
-   "en": "Evidence: The teacher says: 「川田先生は きょう 休みですよ。となりの へやの 木村さんに わたして ください。」\nReasoning: He assumes he hands it to her; she says 「わたしじゃ ありません」. Kawada-sensei reads the compositions but is off today, so it goes to Kimura-san next door. Lee-san is a classmate who hasn't handed his in yet.\nTrap: the person who reads it (川田先生) is not the person he hands it to (木村さん)."
+   "zh": "依据：老师说：「川田先生は きょう 休みですよ。となりの へやの 木村さんに わたして ください。」\n推理：学生以为交给眼前的老师，老师说「わたしじゃ ありません」；看作文的是川田老师，但他今天休息，所以交给隔壁的木村。小李是还没交作文的同学。",
+   "en": "Evidence: The teacher says: 「川田先生は きょう 休みですよ。となりの へやの 木村さんに わたして ください。」\nReasoning: He assumes he hands it to her; she says 「わたしじゃ ありません」. Kawada-sensei reads the compositions but is off today, so it goes to Kimura-san next door. Lee-san is a classmate who hasn't handed his in yet."
   },
   "wrong": [
    {
@@ -4255,8 +4255,8 @@
    }
   },
   "why": {
-   "zh": "依据：老师说「きょうは 火曜日ですね」，又说：「あさっての 午後は どうですか。」学生回答「はい、だいじょうぶです」。\n推理：今天星期二，明天星期三，「あさって」就是星期四。「木曜日」没有说出来，要自己推。今天老师要出去，星期三一整天有课，星期五老师不来学校。\n容易错：对话里说出来的三个星期（火・水・金）都是不行的日子。",
-   "en": "Evidence: The teacher says 「きょうは 火曜日ですね」 and then 「あさっての 午後は どうですか。」; she answers 「はい、だいじょうぶです」.\nReasoning: Today is Tuesday, tomorrow Wednesday, so 「あさって」 is Thursday. 「木曜日」 is never said — you work it out. Today he's going out, Wednesday is full of classes, and on Friday he isn't at school.\nTrap: the three days actually named (Tuesday, Wednesday, Friday) are all days that don't work."
+   "zh": "依据：老师说「きょうは 火曜日ですね」，又说：「あさっての 午後は どうですか。」学生回答「はい、だいじょうぶです」。\n推理：今天星期二，明天星期三，「あさって」就是星期四。「木曜日」没有说出来，要自己推。今天老师要出去，星期三一整天有课，星期五老师不来学校。",
+   "en": "Evidence: The teacher says 「きょうは 火曜日ですね」 and then 「あさっての 午後は どうですか。」; she answers 「はい、だいじょうぶです」.\nReasoning: Today is Tuesday, tomorrow Wednesday, so 「あさって」 is Thursday. 「木曜日」 is never said — you work it out. Today he's going out, Wednesday is full of classes, and on Friday he isn't at school."
   },
   "wrong": [
    {
@@ -4349,8 +4349,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「あした テストが ありますから、きょうは としょかんで べんきょうします。」\n推理：网球是「いつも」打的，今天下雨不打；看电影他先说「いいですね」，但接着用「でも」拒绝了；回家的是女的。\n容易错：「いいですね。でも……」是拒绝，不是答应。",
-   "en": "Evidence: He says: 「あした テストが ありますから、きょうは としょかんで べんきょうします。」\nReasoning: Tennis is what he does 「いつも」, but not today in the rain; to the film he says 「いいですね」 and then turns it down with 「でも」; the one going home is the woman.\nTrap: 「いいですね。でも……」 is a refusal, not a yes."
+   "zh": "依据：男的说：「あした テストが ありますから、きょうは としょかんで べんきょうします。」\n推理：网球是「いつも」打的，今天下雨不打；看电影他先说「いいですね」，但接着用「でも」拒绝了；回家的是女的。",
+   "en": "Evidence: He says: 「あした テストが ありますから、きょうは としょかんで べんきょうします。」\nReasoning: Tennis is what he does 「いつも」, but not today in the rain; to the film he says 「いいですね」 and then turns it down with 「でも」; the one going home is the woman."
   },
   "wrong": [
    null,
@@ -4443,8 +4443,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说「ゆうたは まだ 4さいですから、きっぷは いりませんよ」，又说「わたしの きっぷは もう あります」。\n推理：本来是五张；悠太四岁不用票，减一张；女的已经有票，再减一张：5 − 1 − 1 = 3。\n容易错：「二人」是大人的人数，「4さい」是年龄，都不是票数；只减一次会选四张。",
-   "en": "Evidence: The woman says 「ゆうたは まだ 4さいですから、きっぷは いりませんよ」 and then 「わたしの きっぷは もう あります」.\nReasoning: It starts at five; Yuta, aged four, needs none, so one less; she already has hers, so one less again: 5 − 1 − 1 = 3.\nTrap: 「二人」 is the number of adults and 「4さい」 is an age, not tickets; subtracting only once gives four."
+   "zh": "依据：女的说「ゆうたは まだ 4さいですから、きっぷは いりませんよ」，又说「わたしの きっぷは もう あります」。\n推理：本来是五张；悠太四岁不用票，减一张；女的已经有票，再减一张：5 − 1 − 1 = 3。",
+   "en": "Evidence: The woman says 「ゆうたは まだ 4さいですから、きっぷは いりませんよ」 and then 「わたしの きっぷは もう あります」.\nReasoning: It starts at five; Yuta, aged four, needs none, so one less; she already has hers, so one less again: 5 − 1 − 1 = 3."
   },
   "wrong": [
    {
@@ -4531,8 +4531,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的最后说：「高いですが、きょうは さかなに します。」\n推理：肉和蔬菜是男的做咖喱要买的；鸡蛋男的推荐了，但她家里有。鱼虽然贵，她还是决定买。\n容易错：问的是女的；「高いですね」听起来像要放弃，但最后一句才是决定。",
-   "en": "Evidence: At the end she says: 「高いですが、きょうは さかなに します。」\nReasoning: Meat and vegetables are what the man buys for his curry; he suggests eggs, but she has some at home. The fish is expensive, yet she decides on it.\nTrap: the question is about the woman; 「高いですね」 sounds like giving up, but the last line is the decision."
+   "zh": "依据：女的最后说：「高いですが、きょうは さかなに します。」\n推理：肉和蔬菜是男的做咖喱要买的；鸡蛋男的推荐了，但她家里有。鱼虽然贵，她还是决定买。\n容易错：「高いですね」听起来像要放弃，但最后一句才是她的决定。",
+   "en": "Evidence: At the end she says: 「高いですが、きょうは さかなに します。」\nReasoning: Meat and vegetables are what the man buys for his curry; he suggests eggs, but she has some at home. The fish is expensive, yet she decides on it.\nTrap: 「高いですね」 sounds like giving up, but the last line is her decision."
   },
   "wrong": [
    null,

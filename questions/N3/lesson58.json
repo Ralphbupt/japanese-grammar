@@ -20,8 +20,8 @@
       "en": "This book is very useful for foreigners studying Japanese."
     },
     "why": {
-      "zh": "线索：空格后是评价「とても役に立つ」（很有用），前面的「外国人」是觉得有用的那个人。\n规则：「にとって」接名词，表示“从某人的立场来看”，后面接评价、判断，如「役に立つ」「大切だ」「難しい」。\n辨析：「にとって」＝站在谁的角度评价（「私にとって大切」）；「について／に関して」＝话题是什么（「日本文化について調べる」），后面多接「話す」「調べる」这类动作。",
-      "en": "Clue: After the blank comes a judgement, 「とても役に立つ」 (very useful), and 「外国人」 are the people it is useful to.\nRule: 「にとって」 after a noun means \"from X's standpoint\" and is followed by an evaluation such as 「役に立つ」, 「大切だ」 or 「難しい」.\nContrast: 「にとって」 = whose point of view the judgement is from (私にとって大切); 「について／に関して」 = what the topic is (日本文化について調べる), usually followed by verbs like 「話す」 or 「調べる」."
+      "zh": "线索：空格后是评价「とても役に立つ」（很有用），前面的「外国人」是觉得有用的那个人。\n规则：「にとって」接名词，表示“从某人的立场来看”，后面接评价、判断，如「役に立つ」「大切だ」「難しい」。\n辨析：「について／に関して」表示话题是什么，后面多接「話す」「調べる」这类动作，不接评价。",
+      "en": "Clue: After the blank comes a judgement, 「とても役に立つ」 (very useful), and 「外国人」 are the people it is useful to.\nRule: 「にとって」 after a noun means \"from X's standpoint\" and is followed by an evaluation such as 「役に立つ」, 「大切だ」 or 「難しい」.\nContrast: 「について／に関して」 mark the topic and are usually followed by verbs like 「話す」 or 「調べる」, not by a judgement."
     },
     "wrong": [
       null,
@@ -60,8 +60,8 @@
       "en": "Mr Tanaka always explains things carefully to every student."
     },
     "why": {
-      "zh": "线索：空格后有「も」，再接「丁寧に説明してくれる」；「学生」是老师讲解时态度所针对的人。\n规则：「に対して」接名词，表示动作、态度指向的对象（对……）；「どの〜に対しても」＝对哪个……都。\n辨析：「に対して」＝动作、态度朝向谁（「学生に対して丁寧だ」）；「にとって」＝从谁的立场评价（「学生にとって難しい」）。说的是对人的态度，一般用「に対して」。",
-      "en": "Clue: The blank is followed by 「も」 and then 「丁寧に説明してくれる」; the students are who the teacher's manner is directed at.\nRule: 「に対して」 after a noun marks the target of an action or attitude (towards…); 「どの〜に対しても」 = towards every….\nContrast: 「に対して」 = who an action or attitude is aimed at (学生に対して丁寧だ); 「にとって」 = whose standpoint a judgement is from (学生にとって難しい). When what follows is how someone treats people, it's usually 「に対して」."
+      "zh": "线索：空格后有「も」，再接「丁寧に説明してくれる」；「学生」是老师讲解时态度所针对的人。\n规则：「に対して」接名词，表示动作、态度指向的对象（对……）；「どの〜に対しても」＝对哪个……都。",
+      "en": "Clue: The blank is followed by 「も」 and then 「丁寧に説明してくれる」; the students are who the teacher's manner is directed at.\nRule: 「に対して」 after a noun marks the target of an action or attitude (towards…); 「どの〜に対しても」 = towards every…."
     },
     "wrong": [
       null,
@@ -136,8 +136,8 @@
       "en": "Thanks to my senior teaching me so carefully, I picked up the job quickly."
     },
     "why": {
-      "zh": "线索：前面是「先輩が丁寧に教えてくれた」，「てくれる」表示受了恩惠；后面是好结果「早く覚えることができた」。\n规则：「た形／名词の＋おかげで」表示某个原因带来了好结果，带着感谢的心情。\n辨析：「おかげで」＝好结果、感谢（「先生のおかげで合格した」）；「せいで」＝坏结果、怪罪（「雨のせいで中止になった」）。原因一样，要看结果是好是坏。",
-      "en": "Clue: Before the blank, 「先輩が丁寧に教えてくれた」 — 「てくれる」 shows a favour received — and after it a good result, 「早く覚えることができた」.\nRule: 「た-form / noun＋の＋おかげで」 gives a cause that led to a good result, with a sense of gratitude.\nContrast: 「おかげで」 = good result, thanks (先生のおかげで合格した); 「せいで」 = bad result, blame (雨のせいで中止になった). The cause slot is the same; decide by whether the result is good or bad."
+      "zh": "线索：前面是「先輩が丁寧に教えてくれた」，「てくれる」表示受了恩惠；后面是好结果「早く覚えることができた」。\n规则：「た形／名词の＋おかげで」表示某个原因带来了好结果，带着感谢的心情。",
+      "en": "Clue: Before the blank, 「先輩が丁寧に教えてくれた」 — 「てくれる」 shows a favour received — and after it a good result, 「早く覚えることができた」.\nRule: 「た-form / noun＋の＋おかげで」 gives a cause that led to a good result, with a sense of gratitude."
     },
     "wrong": [
       null,
@@ -176,8 +176,8 @@
       "en": "Just because I forgot to set my alarm, I was late for an important exam."
     },
     "why": {
-      "zh": "线索：前面是一个小失误「かけ忘れた」，后面是坏结果「遅刻してしまった」，「てしまった」带后悔。\n规则：「た形＋ばかりに」＝只因为……这一点，才落得不好的结果，带懊悔、遗憾的语气（「嘘をついたばかりに信用を失った」）。\n容易错：看到前后都是不好的事，就选转折的「にもかかわらず」「ものの」。忘了定闹钟正是迟到的原因，前后是因果，不是“虽然……但是”。",
-      "en": "Clue: Before the blank is a small slip, 「かけ忘れた」, and after it a bad result, 「遅刻してしまった」, with the regretful 「てしまった」.\nRule: 「た-form＋ばかりに」 = just because of this one thing, something bad happened — with regret (嘘をついたばかりに信用を失った).\nTrap: Seeing two bad things and reaching for 「にもかかわらず」 or 「ものの」 (although). Forgetting the alarm is what caused the lateness: this is cause and effect, not a contrast."
+      "zh": "线索：前面是一个小失误「かけ忘れた」，后面是坏结果「遅刻してしまった」，「てしまった」带后悔。\n规则：「た形＋ばかりに」＝只因为……这一点，才落得不好的结果，带懊悔、遗憾的语气（「嘘をついたばかりに信用を失った」）。",
+      "en": "Clue: Before the blank is a small slip, 「かけ忘れた」, and after it a bad result, 「遅刻してしまった」, with the regretful 「てしまった」.\nRule: 「た-form＋ばかりに」 = just because of this one thing, something bad happened — with regret (嘘をついたばかりに信用を失った)."
     },
     "wrong": [
       null,
@@ -252,8 +252,8 @@
       "en": "He does nothing himself, yet he's always complaining about how others do things."
     },
     "why": {
-      "zh": "线索：前面「自分では何もしない」，后面「人のやり方には文句ばかり言う」，两件事互相矛盾，说话人在批评“他”。\n规则：「简体／名词の＋くせに」＝明明……却……，带不满、责备，多用来说别人。\n辨析：「くせに」＝转折加责备（「何もしないくせに文句を言う」）；「ばかりに」＝因果，只因为……才出了坏事（「嘘をついたばかりに信用を失った」）。“不做事”和“挑毛病”是相反的两面，不是因果。",
-      "en": "Clue: 「自分では何もしない」 and 「人のやり方には文句ばかり言う」 clash with each other, and the speaker is criticising him.\nRule: 「plain form / noun＋の＋くせに」 = even though…, still… — with irritation or blame, mostly about other people.\nContrast: 「くせに」 = contrast plus blame (何もしないくせに文句を言う); 「ばかりに」 = cause and effect, just because… something bad happened (嘘をついたばかりに信用を失った). Doing nothing and complaining are opposites here, not cause and effect."
+      "zh": "线索：前面「自分では何もしない」，后面「人のやり方には文句ばかり言う」，两件事互相矛盾，说话人在批评“他”。\n规则：「简体／名词の＋くせに」＝明明……却……，带不满、责备，多用来说别人。",
+      "en": "Clue: 「自分では何もしない」 and 「人のやり方には文句ばかり言う」 clash with each other, and the speaker is criticising him.\nRule: 「plain form / noun＋の＋くせに」 = even though…, still… — with irritation or blame, mostly about other people."
     },
     "wrong": [
       null,
@@ -292,8 +292,8 @@
       "en": "I signed up for a cookery class, but work's been so busy I haven't been once."
     },
     "why": {
-      "zh": "线索：主语是「私」；前面「申し込んだ」，后面「まだ一度も行っていない」，前后转折，语气平静，是在说自己。\n规则：「た形＋ものの」＝虽然……但是……，先承认做了某事，后面是没按预期发展的结果，语气客观，偏书面。\n辨析：「ものの」＝客观的转折（「買ったものの使っていない」）；「くせに」＝带不满的转折，一般用来批评别人（「知っているくせに教えてくれない」）。说自己的事，又没有责备，用「ものの」。",
-      "en": "Clue: The subject is 「私」; 「申し込んだ」 is followed by 「まだ一度も行っていない」 — a contrast, told calmly, about the speaker.\nRule: 「た-form＋ものの」 = although…, but… — it grants that something was done, then gives an outcome that didn't follow through. Neutral and slightly formal.\nContrast: 「ものの」 = a neutral contrast (買ったものの使っていない); 「くせに」 = a contrast with irritation, normally aimed at someone else (知っているくせに教えてくれない). About yourself, with no blame, it's 「ものの」."
+      "zh": "线索：主语是「私」；前面「申し込んだ」，后面「まだ一度も行っていない」，前后转折，语气平静，是在说自己。\n规则：「た形＋ものの」＝虽然……但是……，先承认做了某事，后面是没按预期发展的结果，语气客观，偏书面。",
+      "en": "Clue: The subject is 「私」; 「申し込んだ」 is followed by 「まだ一度も行っていない」 — a contrast, told calmly, about the speaker.\nRule: 「た-form＋ものの」 = although…, but… — it grants that something was done, then gives an outcome that didn't follow through. Neutral and slightly formal."
     },
     "wrong": [
       null,
@@ -369,14 +369,14 @@
       "en": "Just take this medicine and you'll be better in no time."
     },
     "why": {
-      "zh": "线索：空格后是「飲めば」，带条件「〜ば」，再接结果「すぐ治ります」。\n规则：「名词＋さえ〜ば」＝只要……就……，表示只要满足这一个条件，结果就会实现，别的都不需要。\n辨析：「さえ〜ば」＝只要这一个条件（「薬さえ飲めば治る」）；「ばかりか」＝不仅……而且，后面要接追加的内容（「英語ばかりか中国語も話せる」）。后面跟的是「〜ば」条件，就想到「さえ」。",
-      "en": "Clue: The blank is followed by 「飲めば」, a 「〜ば」 condition, and then the result 「すぐ治ります」.\nRule: 「noun＋さえ〜ば」 = as long as…, just… — meeting this one condition is enough for the result; nothing else is needed.\nContrast: 「さえ〜ば」 = this one condition is all it takes (薬さえ飲めば治る); 「ばかりか」 = not only… but also, followed by an added point (英語ばかりか中国語も話せる). A 「〜ば」 condition after the blank points to 「さえ」."
+      "zh": "线索：空格后是「飲めば」，带条件「〜ば」，再接结果「すぐ治ります」。\n规则：「名词＋さえ〜ば」＝只要……就……，表示只要满足这一个条件，结果就会实现，别的都不需要。",
+      "en": "Clue: The blank is followed by 「飲めば」, a 「〜ば」 condition, and then the result 「すぐ治ります」.\nRule: 「noun＋さえ〜ば」 = as long as…, just… — meeting this one condition is enough for the result; nothing else is needed."
     },
     "wrong": [
       null,
       {
-        "zh": "「ほど」表示程度，「薬ほど飲めば」不成立。",
-        "en": "「ほど」 marks degree; 「薬ほど飲めば」 isn't a phrase."
+        "zh": "「ほど」表示程度（“像……那样”），「薬ほど飲めば」说不通，也表达不出“只要”。",
+        "en": "「ほど」 marks degree (\"as much as…\"); 「薬ほど飲めば」 makes no sense and can't mean \"as long as\"."
       },
       {
         "zh": "「ばかりか」是“不仅……而且”，后面要接追加的内容，不接「〜ば」。",
@@ -409,22 +409,22 @@
       "en": "This anime is popular not just with children but with adults too."
     },
     "why": {
-      "zh": "线索：后半句是「大人にも人気がある」，「にも」说明范围从孩子扩大到了大人。\n规则：「名词＋に限らず」＝不限于……，后面常用「〜も」把范围扩大到别的人或事（「日本に限らず世界中で人気だ」）。\n辨析：「に限らず」＝不只是……，范围更大；「に限って」＝偏偏在……的时候（「急いでいる時に限って電車が遅れる」），多用于不巧的事。两者长得像，意思方向相反。",
-      "en": "Clue: The second half is 「大人にも人気がある」; 「にも」 shows the range widening from children to adults.\nRule: 「noun＋に限らず」 = not limited to…, often followed by 「〜も」 to extend to others (日本に限らず世界中で人気だ).\nContrast: 「に限らず」 = not only…, the range is wider; 「に限って」 = of all times… (急いでいる時に限って電車が遅れる), mostly for bad luck. They look alike but point in opposite directions."
+      "zh": "线索：后半句是「大人にも人気がある」，「にも」说明范围从孩子扩大到了大人。\n规则：「名词＋に限らず」＝不限于……，后面常用「〜も」把范围扩大到别的人或事（「日本に限らず世界中で人気だ」）。",
+      "en": "Clue: The second half is 「大人にも人気がある」; 「にも」 shows the range widening from children to adults.\nRule: 「noun＋に限らず」 = not limited to…, often followed by 「〜も」 to extend to others (日本に限らず世界中で人気だ)."
     },
     "wrong": [
       null,
       {
-        "zh": "「に限って」是“偏偏”，多用于坏事，后面不能接「大人にも」。",
-        "en": "「に限って」 (of all…) is for an unlucky exception and can't lead into 「大人にも」."
+        "zh": "「に限って」是“偏偏在……”，只挑出一个情况，多用于不巧的事，接不上表示范围扩大的「大人にも」。",
+        "en": "「に限って」 (of all…) singles out one case, usually an unlucky one, so it can't lead into the widening 「大人にも」."
       },
       {
         "zh": "「さえ」是“连……都”，“连孩子都，大人也受欢迎”说不通。",
         "en": "「さえ」 (even) makes no sense: \"even children, adults too\"."
       },
       {
-        "zh": "「ほど」表示程度，「子供ほど、大人にも」不成立。",
-        "en": "「ほど」 marks degree; 「子供ほど、大人にも」 doesn't work."
+        "zh": "「ほど」用来比较程度，后面接不上表示范围扩大的「大人にも」。",
+        "en": "「ほど」 compares degree and can't lead into the widening 「大人にも」."
       }
     ]
   },
@@ -485,14 +485,14 @@
       "en": "In winter it's cold and I don't go out, so I tend to get too little exercise."
     },
     "why": {
-      "zh": "线索：空格前是ます形词干「なり」（「なる」），后面接「だ」；「冬は寒くて外に出ないので」是在说容易出现的情况。\n规则：「ます形词干／名词＋がちだ」＝容易……、动不动就……，多指不好的情况反复出现（「休みがち」「忘れがち」）。\n辨析：「がちだ」＝某种情况容易发生（「忘れがちだ」＝老是忘）；「っぽい」＝像……、有……的性质（「忘れっぽい」＝健忘），多说人或物的特点。这里说的是容易出现的情况。",
-      "en": "Clue: Before the blank is the ます-stem 「なり」 (from 「なる」), and 「だ」 follows; 「冬は寒くて外に出ないので」 describes something that tends to happen in winter.\nRule: 「ます-stem / noun＋がちだ」 = tend to…, be prone to… — usually something undesirable that keeps happening (休みがち, 忘れがち).\nContrast: 「がちだ」 = a situation that easily happens (忘れがちだ = keep forgetting); 「っぽい」 = -ish, having that quality (忘れっぽい = forgetful), usually describing a person or thing. Here it's what tends to happen in winter, so 「がち」."
+      "zh": "线索：空格前是ます形词干「なり」（「なる」），后面接「だ」；「冬は寒くて外に出ないので」是在说容易出现的情况。\n规则：「ます形词干／名词＋がちだ」＝容易……、动不动就……，多指不好的情况反复出现（「休みがち」「忘れがち」）。",
+      "en": "Clue: Before the blank is the ます-stem 「なり」 (from 「なる」), and 「だ」 follows; 「冬は寒くて外に出ないので」 describes something that tends to happen in winter.\nRule: 「ます-stem / noun＋がちだ」 = tend to…, be prone to… — usually something undesirable that keeps happening (休みがち, 忘れがち)."
     },
     "wrong": [
       null,
       {
-        "zh": "「っぽい」表示“像……/ 容易……”，虽然也接部分ます形词干（忘れっぽい、怒りっぽい），但没有「なりっぽい」这种说法；它说的是人或物的性质，不是某种情况容易发生。",
-        "en": "「っぽい」 means \"-ish / prone to\" as a trait; it does follow some ます-stems (忘れっぽい, 怒りっぽい), but 「なりっぽい」 isn't a word, and っぽい describes a person or thing's character, not a situation that tends to happen."
+        "zh": "「っぽい」说人或物的性质（「忘れっぽい」＝健忘），没有「なりっぽい」这种说法，也不表示某种情况容易发生。",
+        "en": "「っぽい」 describes a trait of a person or thing (忘れっぽい = forgetful); 「なりっぽい」 isn't a word, and it doesn't mean a situation tends to happen."
       },
       {
         "zh": "「だらけ」接名词，表示“满是……”，不接「なり」这样的ます形词干。",
@@ -525,8 +525,8 @@
       "en": "I'm usually fine, but I've had a slight temperature since yesterday and feel like I'm coming down with a cold, so I'm leaving early today."
     },
     "why": {
-      "zh": "线索：「昨日から少し熱があって」是刚出现的轻微症状，前面还说「普段は元気なのに」。\n规则：「名词／ます形词干＋気味」＝有点……、带点……的感觉，表示轻微的、多为不好的状态，常说「風邪気味」「疲れ気味」。\n辨析：「気味」＝现在有点这种症状（「風邪気味」＝有点感冒）；「がち」＝平时容易反复出现（「病気がち」＝常生病）。「少し」「昨日から」是这一次的轻微症状，「普段は元気」又排除了“经常”。",
-      "en": "Clue: 「昨日から少し熱があって」 is a mild symptom that has just appeared, and the sentence also says 「普段は元気なのに」.\nRule: 「noun / ます-stem＋気味」 = a touch of…, slightly… — a mild state, usually an unwelcome one, as in 「風邪気味」 or 「疲れ気味」.\nContrast: 「気味」 = showing a slight sign of it now (風邪気味 = coming down with a cold); 「がち」 = prone to it, again and again (病気がち = often ill). 「少し」 and 「昨日から」 describe one mild bout, and 「普段は元気」 rules out \"often\"."
+      "zh": "线索：「昨日から少し熱があって」是刚出现的轻微症状，前面还说「普段は元気なのに」。\n规则：「名词／ます形词干＋気味」＝有点……、带点……的感觉，表示轻微的、多为不好的状态，常说「風邪気味」「疲れ気味」。",
+      "en": "Clue: 「昨日から少し熱があって」 is a mild symptom that has just appeared, and the sentence also says 「普段は元気なのに」.\nRule: 「noun / ます-stem＋気味」 = a touch of…, slightly… — a mild state, usually an unwelcome one, as in 「風邪気味」 or 「疲れ気味」."
     },
     "wrong": [
       null,
@@ -601,8 +601,8 @@
       "en": "The light's on and his shoes are here. He must be at home."
     },
     "why": {
-      "zh": "线索：前面列出两条证据「電気がついているし、靴もある」，「〜し」用来列举理由，推出结论“他在家”。\n规则：「简体＋に違いない」＝一定是……，根据证据做出很有把握的推测（「彼が犯人に違いない」）。\n容易错：看到「ない」就以为是否定。「に違いない」字面是“没有错”，意思是肯定的“一定是”；「はずがない」「わけがない」才是“不可能”，和证据方向相反。",
-      "en": "Clue: Two pieces of evidence are listed, 「電気がついているし、靴もある」 — 「〜し」 lists reasons — leading to the conclusion that he's home.\nRule: 「plain form＋に違いない」 = must be… — a confident guess based on evidence (彼が犯人に違いない).\nTrap: Reading the 「ない」 as a negative. 「に違いない」 literally means \"there's no mistake\", i.e. a positive \"must be\"; 「はずがない」 and 「わけがない」 are the ones meaning \"can't be\", which goes against the evidence."
+      "zh": "线索：前面列出两条证据「電気がついているし、靴もある」，「〜し」用来列举理由，推出结论“他在家”。\n规则：「简体＋に違いない」＝一定是……，根据证据做出很有把握的推测（「彼が犯人に違いない」）。\n容易错：「に違いない」虽然带「ない」，意思却是肯定的“一定是”（字面是“没有错”）。",
+      "en": "Clue: Two pieces of evidence are listed, 「電気がついているし、靴もある」 — 「〜し」 lists reasons — leading to the conclusion that he's home.\nRule: 「plain form＋に違いない」 = must be… — a confident guess based on evidence (彼が犯人に違いない).\nTrap: Despite the 「ない」, 「に違いない」 is positive — \"must be\" (literally \"there's no mistake\")."
     },
     "wrong": [
       null,
@@ -718,8 +718,8 @@
       "en": "Every flight's been cancelled because of the typhoon, so I'll have to call off tomorrow's business trip."
     },
     "why": {
-      "zh": "线索：前面是外部原因「台風で飛行機が全部欠航になったので」，自己已经没有别的选择。\n规则：「ない形去掉ない＋ざるを得ない」＝不得不……，被情况所迫只好这样做；「する」要变成「せざるを得ない」（不说「しざる」）。\n辨析：「ざるを得ない」＝被外部情况逼得只能这样做（「中止せざるを得ない」）；「かねる」＝心里难以接受、不便去做（「賛成しかねる」）。航班全取消，是只能取消，不是难以取消。",
-      "en": "Clue: The cause is external, 「台風で飛行機が全部欠航になったので」 — there's no other choice left.\nRule: 「ない-form minus ない＋ざるを得ない」 = have no choice but to… — forced by the situation; 「する」 becomes 「せざるを得ない」 (not 「しざる」).\nContrast: 「ざるを得ない」 = circumstances leave only this option (中止せざるを得ない); 「かねる」 = can't bring oneself to, find it awkward to (賛成しかねる). With every flight cancelled, cancelling is unavoidable, not hard to do."
+      "zh": "线索：前面是外部原因「台風で飛行機が全部欠航になったので」，自己已经没有别的选择。\n规则：「ない形去掉ない＋ざるを得ない」＝不得不……，被情况所迫只好这样做；「する」要变成「せざるを得ない」（不说「しざる」）。",
+      "en": "Clue: The cause is external, 「台風で飛行機が全部欠航になったので」 — there's no other choice left.\nRule: 「ない-form minus ない＋ざるを得ない」 = have no choice but to… — forced by the situation; 「する」 becomes 「せざるを得ない」 (not 「しざる」)."
     },
     "wrong": [
       null,
@@ -758,14 +758,14 @@
       "en": "The ramen here comes in such huge portions that you can't finish it on your own."
     },
     "why": {
-      "zh": "线索：「量が多すぎて」说的是量太大，「一人では」说的是一个人的能力。\n规则：「ます形词干＋きれない」＝没办法全部做完，常说「食べきれない」「数えきれない」。\n辨析：「きれない」＝量太多，做不完（「食べきれない」）；「得ない」＝不可能，日常多见于「あり得ない」等少数说法，不用来说“吃不完”。",
-      "en": "Clue: 「量が多すぎて」 says the portion is too big, and 「一人では」 is about what one person can manage.\nRule: 「ます-stem＋きれない」 = can't do all of it, can't get through it — as in 「食べきれない」 or 「数えきれない」.\nContrast: 「きれない」 = too much to finish (食べきれない); 「得ない」 = impossible, in everyday use mostly in a few set words like 「あり得ない」, and not used for \"can't finish eating\"."
+      "zh": "线索：「量が多すぎて」说的是量太大，「一人では」说的是一个人的能力。\n规则：「ます形词干＋きれない」＝没办法全部做完，常说「食べきれない」「数えきれない」。",
+      "en": "Clue: 「量が多すぎて」 says the portion is too big, and 「一人では」 is about what one person can manage.\nRule: 「ます-stem＋きれない」 = can't do all of it, can't get through it — as in 「食べきれない」 or 「数えきれない」."
     },
     "wrong": [
       null,
       {
-        "zh": "「得ない」是“不可能”，几乎只用于「あり得ない」等，「食べ得ない」不自然。",
-        "en": "「得ない」 (impossible) is used in words like 「あり得ない」; 「食べ得ない」 isn't natural."
+        "zh": "「得ない」是“不可能……”，日常多见于「あり得ない」等少数说法，「食べ得ない」不自然，也不表示“太多吃不完”。",
+        "en": "「得ない」 (impossible) appears in everyday speech mostly in set words like 「あり得ない」; 「食べ得ない」 isn't natural and doesn't mean \"too much to finish\"."
       },
       {
         "zh": "「かねない」是“可能会（坏事）”，“可能会吃”意思不通。",
@@ -835,8 +835,8 @@
       "en": "As soon as the documents arrive, I'll let you know by email."
     },
     "why": {
-      "zh": "线索：空格前是ます形词干「届き」，后面是说话人要做的事「お知らせします」。\n规则：「ます形词干＋次第」＝一……就立刻去做，后面接自己的打算或请求，多用于工作联络。\n辨析：「届き次第」＝一到就立刻（接自己的打算）；「届きながら」＝一边……一边（同时进行）；「届きかけて」＝快要到了。只有「次第」表示“一……就”。",
-      "en": "Clue: Before the blank is the ます-stem 「届き」, and after it what the speaker will do, 「お知らせします」.\nRule: 「ます-stem＋次第」 = as soon as…, (I'll) immediately… — followed by the speaker's plan or a request, common in work messages.\nContrast: 「届き次第」 = as soon as it arrives (followed by what you'll do); 「届きながら」 = while arriving; 「届きかけて」 = about to arrive. Only 「次第」 means \"as soon as\"."
+      "zh": "线索：空格前是ます形词干「届き」，后面是说话人要做的事「お知らせします」。\n规则：「ます形词干＋次第」＝一……就立刻去做，后面接自己的打算或请求，多用于工作联络。",
+      "en": "Clue: Before the blank is the ます-stem 「届き」, and after it what the speaker will do, 「お知らせします」.\nRule: 「ます-stem＋次第」 = as soon as…, (I'll) immediately… — followed by the speaker's plan or a request, common in work messages."
     },
     "wrong": [
       null,
@@ -875,8 +875,8 @@
       "en": "Eat it quickly, before the soup gets cold."
     },
     "why": {
-      "zh": "线索：空格前是ない形「冷めない」，后面是请求「早く食べてください」。\n规则：「ない形＋うちに」＝趁还没……的时候，在状态改变之前抓紧做（「冷めないうちに」＝趁还没凉）。\n辨析：「冷めないうちに」＝趁还没凉（在变化之前抓紧做）；「冷めないのに」＝明明不凉却……（转折），后面接不了「食べてください」这样的请求。",
-      "en": "Clue: Before the blank is the ない-form 「冷めない」, and after it a request, 「早く食べてください」.\nRule: 「ない-form＋うちに」 = before… happens, while it still hasn't — act before the state changes (冷めないうちに = before it gets cold).\nContrast: 「冷めないうちに」 = before it gets cold (act before the change); 「冷めないのに」 = even though it isn't cold (contrast), which can't be followed by a request like 「食べてください」."
+      "zh": "线索：空格前是ない形「冷めない」，后面是请求「早く食べてください」。\n规则：「ない形＋うちに」＝趁还没……的时候，在状态改变之前抓紧做（「冷めないうちに」＝趁还没凉）。",
+      "en": "Clue: Before the blank is the ない-form 「冷めない」, and after it a request, 「早く食べてください」.\nRule: 「ない-form＋うちに」 = before… happens, while it still hasn't — act before the state changes (冷めないうちに = before it gets cold)."
     },
     "wrong": [
       null,
@@ -952,8 +952,8 @@
       "en": "I was so tired last night that I fell asleep with the TV on."
     },
     "why": {
-      "zh": "线索：空格前是た形「つけた」，后面是另一个动作「寝てしまった」：电视开着的状态没变，人就睡着了。\n规则：「た形／ない形／名词の＋まま」＝保持……的状态（做下一件事），常指本该改变的状态没有变（「窓を開けたまま寝た」）。\n辨析：「まま」接た形（「つけたまま」），只说状态没变；「っぱなし」意思接近，带“放着不管”的语气，但接ます形词干（「つけっぱなし」）。空格前是「つけた」，所以用「まま」。",
-      "en": "Clue: Before the blank is the た-form 「つけた」, and after it another action, 「寝てしまった」: the TV stayed on as I fell asleep.\nRule: 「た-form / ない-form / noun＋の＋まま」 = with … left as it is (while doing something else), often a state that should have changed (窓を開けたまま寝た).\nContrast: 「まま」 takes the た-form (つけたまま) and simply says the state didn't change; 「っぱなし」 means much the same with a \"left unattended\" feel, but takes the ます-stem (つけっぱなし). The blank follows 「つけた」, so 「まま」."
+      "zh": "线索：空格前是た形「つけた」，后面是另一个动作「寝てしまった」：电视开着的状态没变，人就睡着了。\n规则：「た形／ない形／名词の＋まま」＝保持……的状态（做下一件事），常指本该改变的状态没有变（「窓を開けたまま寝た」）。",
+      "en": "Clue: Before the blank is the た-form 「つけた」, and after it another action, 「寝てしまった」: the TV stayed on as I fell asleep.\nRule: 「た-form / ない-form / noun＋の＋まま」 = with … left as it is (while doing something else), often a state that should have changed (窓を開けたまま寝た)."
     },
     "wrong": [
       null,
@@ -967,7 +967,7 @@
       },
       {
         "zh": "「ほど」表示程度，“开了电视的程度睡着”说不通。",
-        "en": "「ほど」 marks degree; it makes no sense here."
+        "en": "「ほど」 marks degree; \"fell asleep to the extent of turning on the TV\" makes no sense."
       }
     ]
   },
@@ -992,8 +992,8 @@
       "en": "I ran through the rain, and my shoes got covered in mud."
     },
     "why": {
-      "zh": "线索：空格前是名词「泥」，后面接「になった」；在雨里跑，鞋上沾满了泥。\n规则：「名词＋だらけ」＝满是……、到处都是……，多用于不好的东西（「泥だらけ」「ゴミだらけ」「間違いだらけ」）。\n辨析：「だらけ」＝到处都是（「泥だらけ」）；「まま」＝保持原样（「靴のまま入る」＝穿着鞋进去），名词后要加「の」。这里说鞋上全是泥，不是状态没变。",
-      "en": "Clue: Before the blank is the noun 「泥」, and 「になった」 follows; running through the rain left the shoes muddy.\nRule: 「noun＋だらけ」 = covered in…, full of… — mostly for unwelcome things (泥だらけ, ゴミだらけ, 間違いだらけ).\nContrast: 「だらけ」 = all over, full of (泥だらけ); 「まま」 = left as it was (靴のまま入る = go in with your shoes on), and a noun needs 「の」 before it. The point is mud everywhere, not an unchanged state."
+      "zh": "线索：空格前是名词「泥」，后面接「になった」；在雨里跑，鞋上沾满了泥。\n规则：「名词＋だらけ」＝满是……、到处都是……，多用于不好的东西（「泥だらけ」「ゴミだらけ」「間違いだらけ」）。",
+      "en": "Clue: Before the blank is the noun 「泥」, and 「になった」 follows; running through the rain left the shoes muddy.\nRule: 「noun＋だらけ」 = covered in…, full of… — mostly for unwelcome things (泥だらけ, ゴミだらけ, 間違いだらけ)."
     },
     "wrong": [
       null,
@@ -1069,8 +1069,8 @@
       "en": "I cook at home every day, so I rarely eat out."
     },
     "why": {
-      "zh": "线索：句尾是否定「しない」，前面「毎日家で料理をするので」说明在外面吃饭的机会少。\n规则：「めったに〜ない」＝很少……、难得……，表示频率很低，「めったに」后面要接否定（「めったに遅刻しない」）。\n技巧：句尾是否定时，先想通常和否定呼应的副词：「めったに」（很少）、「決して」（绝不）、「少しも」（一点也不）、「別に」（并不）；「必ず」「ぜひ」一般接肯定。",
-      "en": "Clue: The sentence ends in the negative 「しない」, and 「毎日家で料理をするので」 explains why eating out is rare.\nRule: 「めったに〜ない」 = rarely, seldom — low frequency; 「めったに」 needs a negative after it (めったに遅刻しない).\nTip: When the sentence ends in a negative, think of the adverbs that normally pair with one: 「めったに」 (rarely), 「決して」 (never), 「少しも」 (not at all), 「別に」 (not particularly); 「必ず」 and 「ぜひ」 normally go with a positive."
+      "zh": "线索：句尾是否定「しない」，前面「毎日家で料理をするので」说明在外面吃饭的机会少。\n规则：「めったに〜ない」＝很少……、难得……，表示频率很低，「めったに」后面要接否定（「めったに遅刻しない」）。",
+      "en": "Clue: The sentence ends in the negative 「しない」, and 「毎日家で料理をするので」 explains why eating out is rare.\nRule: 「めったに〜ない」 = rarely, seldom — low frequency; 「めったに」 needs a negative after it (めったに遅刻しない)."
     },
     "wrong": [
       null,
@@ -1109,8 +1109,8 @@
       "en": "The film was so sad I couldn't help crying in the final scene."
     },
     "why": {
-      "zh": "线索：「悲しすぎて」说的是自己的感情，空格前是「泣か」（「泣く」的ない形去掉ない）。\n规则：「ない形去掉ない＋ずにはいられない」＝忍不住……，表示内心的感情或冲动控制不住（「泣かずにはいられない」）。\n辨析：区别在推动力：「ずにはいられない」＝内心忍不住；「ざるを得ない」＝外部情况所迫（「残業せざるを得ない」）；「ないわけにはいかない」＝道义、责任上不能不做。哭是感情，属于前者。",
-      "en": "Clue: 「悲しすぎて」 is about the speaker's own feelings, and before the blank is 「泣か」 (the ない-form of 「泣く」 minus ない).\nRule: 「ない-form minus ない＋ずにはいられない」 = can't help…ing — a feeling or urge you can't hold back (泣かずにはいられない).\nContrast: All three look like \"have to\"; the difference is what drives it: 「ずにはいられない」 = an inner urge; 「ざるを得ない」 = outside circumstances (残業せざるを得ない); 「ないわけにはいかない」 = duty or social obligation. Crying is a feeling, so 「ずにはいられない」."
+      "zh": "线索：「悲しすぎて」说的是自己的感情，空格前是「泣か」（「泣く」的ない形去掉ない）。\n规则：「ない形去掉ない＋ずにはいられない」＝忍不住……，表示内心的感情或冲动控制不住（「泣かずにはいられない」）。",
+      "en": "Clue: 「悲しすぎて」 is about the speaker's own feelings, and before the blank is 「泣か」 (the ない-form of 「泣く」 minus ない).\nRule: 「ない-form minus ない＋ずにはいられない」 = can't help…ing — a feeling or urge you can't hold back (泣かずにはいられない)."
     },
     "wrong": [
       null,
@@ -1186,8 +1186,8 @@
       "en": "This place is cheap, and on top of that the food is good."
     },
     "why": {
-      "zh": "线索：前面是优点「値段が安い」，后面「味もいい」里有「も」，又加了一个优点。\n规则：「简体＋上に」（名词加「の」，な形容词加「な」）＝不仅……而且……，在同一方向上再追加一点（好上加好，或坏上加坏）。\n辨析：「上に」＝同方向再加一点（「安い上においしい」）；「代わりに」＝作为交换，前后多是一好一坏（「安い代わりに品質はよくない」）。后面是「味もいい」，两个都是优点，所以用「上に」。",
-      "en": "Clue: First a plus, 「値段が安い」, then 「味もいい」 — with 「も」, another plus.\nRule: 「plain form (noun＋の / na-adjective＋な)＋上に」 = not only… but also… — adds another point in the same direction (good on good, or bad on bad).\nContrast: 「上に」 = one more point the same way (安い上においしい); 「代わりに」 = a trade-off, usually one good and one bad (安い代わりに品質はよくない). 「味もいい」 is a second plus, so 「上に」."
+      "zh": "线索：前面是优点「値段が安い」，后面「味もいい」里有「も」，又加了一个优点。\n规则：「简体＋上に」（名词加「の」，な形容词加「な」）＝不仅……而且……，在同一方向上再追加一点（好上加好，或坏上加坏）。",
+      "en": "Clue: First a plus, 「値段が安い」, then 「味もいい」 — with 「も」, another plus.\nRule: 「plain form (noun＋の / na-adjective＋な)＋上に」 = not only… but also… — adds another point in the same direction (good on good, or bad on bad)."
     },
     "wrong": [
       null,
@@ -1226,8 +1226,8 @@
       "en": "Every time I look at this photo, I remember my childhood."
     },
     "why": {
-      "zh": "线索：空格前是辞书形「見る」，后面「子供のころを思い出す」是每次都会出现的结果。\n规则：「辞书形／名词の＋たびに」＝每次……都……，表示每逢做 A，都会发生 B（「会うたびに」）。\n辨析：「たびに」＝每逢……都（「見るたびに思い出す」）；「上に」＝而且，再加一个同方向的特点（「安い上においしい」），不表示“每做 A 就 B”的重复关系。",
-      "en": "Clue: Before the blank is the dictionary form 「見る」, and 「子供のころを思い出す」 is what happens each time.\nRule: 「dictionary form / noun＋の＋たびに」 = every time…, whenever… — each time A happens, B follows (会うたびに).\nContrast: 「たびに」 = every time (見るたびに思い出す); 「上に」 = on top of that, adding another trait in the same direction (安い上においしい); it doesn't express \"whenever A, B\"."
+      "zh": "线索：空格前是辞书形「見る」，后面「子供のころを思い出す」是每次都会出现的结果。\n规则：「辞书形／名词の＋たびに」＝每次……都……，表示每逢做 A，都会发生 B（「会うたびに」）。",
+      "en": "Clue: Before the blank is the dictionary form 「見る」, and 「子供のころを思い出す」 is what happens each time.\nRule: 「dictionary form / noun＋の＋たびに」 = every time…, whenever… — each time A happens, B follows (会うたびに)."
     },
     "wrong": [
       null,
@@ -1236,8 +1236,8 @@
         "en": "「代わりに」 (instead of / in exchange) makes no sense here."
       },
       {
-        "zh": "「上に」是“而且”，“看照片而且想起小时候”不能这样连接。",
-        "en": "「上に」 (on top of) doesn't link these two actions."
+        "zh": "「上に」是“而且”，追加同方向的特点，不表示“每次看到就想起”这种反复关系。",
+        "en": "「上に」 (on top of that) adds another point in the same direction; it doesn't mean \"every time I see it, I remember\"."
       },
       {
         "zh": "「というより」是“与其说……不如说”，用于换一种说法，这里不是。",

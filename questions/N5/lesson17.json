@@ -403,8 +403,8 @@
       "en": "I study Japanese for about two hours every day."
     },
     "why": {
-      "zh": "线索：「2時間」是一段时间的长度（两个小时），不是时刻（两点）。\n规则：时长、数量后面表示“大约”用「ぐらい／くらい」；「ごろ」接时间点（「2時ごろ」「5月ごろ」），不接时长。\n技巧：看是「時」还是「時間」：「2時」是时刻，配「ごろ」；「2時間」是长度，配「ぐらい」。",
-      "en": "Clue: 「2時間」 is a length of time (two hours), not a point in time (two o'clock).\nRule: \"About\" after a length or amount is 「ぐらい／くらい」; 「ごろ」 follows a point in time (「2時ごろ」, 「5月ごろ」), not a length.\nTip: Check whether it says 「時」 or 「時間」: 「2時」 is a time on the clock and takes 「ごろ」; 「2時間」 is a duration and takes 「ぐらい」."
+      "zh": "线索：「2時間」是一段时间的长度（两个小时），不是时刻（两点）。\n规则：时长、数量后面表示“大约”用「ぐらい／くらい」；「ごろ」接时间点（「2時ごろ」「5月ごろ」），不接时长。",
+      "en": "Clue: 「2時間」 is a length of time (two hours), not a point in time (two o'clock).\nRule: \"About\" after a length or amount is 「ぐらい／くらい」; 「ごろ」 follows a point in time (「2時ごろ」, 「5月ごろ」), not a length."
     },
     "wrong": [
       null,
@@ -569,8 +569,8 @@
       "en": "In the bag there's a book and a pen. Nothing else."
     },
     "why": {
-      "zh": "线索：后一句「ほかの ものは ありません」（没有别的东西），说明已经全部列出来了。\n规则：全部列举用「AとB」；「や」表示只是举例、还有别的，和后一句矛盾。\n技巧：「と」「や」二选一时，找“就这些”还是“还有别的”的提示：有「ほかに〜ない」选「と」，有「など」「いろいろ」选「や」。",
-      "en": "Clue: The next sentence, 「ほかの ものは ありません」 (there's nothing else), means the list is complete.\nRule: A complete list uses 「A と B」; 「や」 means these are just examples with more besides, which the next sentence rules out.\nTip: Choosing between 「と」 and 「や」, look for a hint of \"that's all\" or \"and more\": nothing else → 「と」; 「など」 or 「いろいろ」 → 「や」."
+      "zh": "线索：后一句「ほかの ものは ありません」（没有别的东西），说明已经全部列出来了。\n规则：全部列举用「AとB」；「や」表示只是举例、还有别的，和后一句矛盾。",
+      "en": "Clue: The next sentence, 「ほかの ものは ありません」 (there's nothing else), means the list is complete.\nRule: A complete list uses 「A と B」; 「や」 means these are just examples with more besides, which the next sentence rules out."
     },
     "wrong": [
       null,
@@ -648,8 +648,8 @@
       "en": "A: Did you eat a lot? B: No, I only ate a little."
     },
     "why": {
-      "zh": "线索：A 问「たくさん」，B 说「いいえ」，句尾却是肯定「食べました」。\n规则：“只……”后面是肯定时用「だけ」：「少しだけ 食べました」。「しか」也是“只”，但后面必须接否定（「少ししか 食べませんでした」）。\n技巧：「だけ」「しか」二选一时只看句尾：肯定选「だけ」，否定选「しか」。",
-      "en": "Clue: A asks about 「たくさん」, B says 「いいえ」, yet the sentence ends in the positive 「食べました」.\nRule: \"Only\" with a positive verb is 「だけ」: 「少しだけ 食べました」. 「しか」 also means \"only\", but must take a negative (「少ししか 食べませんでした」).\nTip: To choose between 「だけ」 and 「しか」, just look at the end of the sentence: positive → 「だけ」, negative → 「しか」."
+      "zh": "线索：A 问「たくさん」，B 说「いいえ」，句尾却是肯定「食べました」。\n规则：“只……”后面是肯定时用「だけ」：「少しだけ 食べました」。「しか」也是“只”，但后面必须接否定（「少ししか 食べませんでした」）。",
+      "en": "Clue: A asks about 「たくさん」, B says 「いいえ」, yet the sentence ends in the positive 「食べました」.\nRule: \"Only\" with a positive verb is 「だけ」: 「少しだけ 食べました」. 「しか」 also means \"only\", but must take a negative (「少ししか 食べませんでした」)."
     },
     "wrong": [
       null,
@@ -695,8 +695,8 @@
     "wrong": [
       null,
       {
-        "zh": "「だけ」接肯定（100円だけあります），后面是否定「ありません」就变成“只有100日元不在”，意思不通。",
-        "en": "「だけ」 goes with a positive (100円だけあります); with 「ありません」 the meaning falls apart."
+        "zh": "「だけ」后面接肯定（100円だけあります）；接「ありません」就成了“唯独100日元没有”，不是嫌钱少的意思。",
+        "en": "「だけ」 takes a positive (100円だけあります); with 「ありません」 it would mean \"only the 100 yen is missing\", not \"too little money\"."
       },
       {
         "zh": "「や」用于列举名词（AやB），后面没有别的名词。",
@@ -741,8 +741,8 @@
       "en": "I only do my part-time job on weekends."
     },
     "why": {
-      "zh": "线索：「して」「います」能连成「して います」（一直在做）；「だけ」要接在它限定的词后面。\n怎么排：「だけ」紧接在「しゅうまつ」后面，成“只在周末”；「して＋います」放句尾。顺序：しゅうまつ → だけ → して → います，★ 是「して」。\n容易错：把「だけ」放到「して」后面。「だけ」要紧跟在它限定的词后面：只限周末就是「しゅうまつだけ」。",
-      "en": "Clue: 「して」 and 「います」 make 「して います」 (does regularly), and 「だけ」 must follow whatever it limits.\nOrder: 「だけ」 goes right after 「しゅうまつ」 — \"only on weekends\"; 「して」 ＋ 「います」 ends the sentence: しゅうまつ → だけ → して → います. The ★ is 「して」.\nTrap: Putting 「だけ」 after 「して」. It sits right after what it limits, here the weekends: 「しゅうまつだけ」."
+      "zh": "线索：「して」「います」能连成「して います」（一直在做）；「だけ」要接在它限定的词后面。\n怎么排：「だけ」紧接在「しゅうまつ」后面，成“只在周末”；「して＋います」放句尾。顺序：しゅうまつ → だけ → して → います，★ 是「して」。\n容易错：把「だけ」放到「して」后面；限定的是周末，所以是「しゅうまつだけ」。",
+      "en": "Clue: 「して」 and 「います」 make 「して います」 (does regularly), and 「だけ」 must follow whatever it limits.\nOrder: 「だけ」 goes right after 「しゅうまつ」 — \"only on weekends\"; 「して」 ＋ 「います」 ends the sentence: しゅうまつ → だけ → して → います. The ★ is 「して」.\nTrap: Putting 「だけ」 after 「して」; what it limits is the weekends, so it is 「しゅうまつだけ」."
     },
     "wrong": [
       null,

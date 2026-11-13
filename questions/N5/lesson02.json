@@ -147,8 +147,8 @@
       "en": "I get up at six every morning."
     },
     "why": {
-      "zh": "线索：「6時」是带数字的具体时刻，后面是动作「おきます」。\n规则：动作发生的具体时间点用「に」：「6時に おきる」「3月に 行く」。\n技巧：带数字的时间（6時、3月）和星期加「に」；「きのう」「今日」「毎日」这种相对的时间词不加：「毎日 6時に」。",
-      "en": "Clue: 「6時」 is a specific clock time, followed by the action 「おきます」.\nRule: The exact time an action happens takes 「に」: 「6時に おきる」, 「3月に 行く」.\nTip: Times with numbers (6時, 3月) and days of the week take 「に」; relative words like 「きのう」「今日」「毎日」 don't: 「毎日 6時に」."
+      "zh": "线索：「6時」是带数字的具体时刻，后面是动作「おきます」。\n规则：动作发生的具体时间点用「に」：「6時に おきる」。「まいあさ」这种词不加「に」，所以是「まいあさ 6時に」。",
+      "en": "Clue: 「6時」 is a specific clock time, followed by the action 「おきます」.\nRule: The exact time an action happens takes 「に」: 「6時に おきる」. A word like 「まいあさ」 takes no 「に」, hence 「まいあさ 6時に」."
     },
     "wrong": [
       {
@@ -189,8 +189,8 @@
       "en": "Yesterday I ran into a friend at the station."
     },
     "why": {
-      "zh": "线索：动词是「会いました」（见到），空格前是见到的人；见面的地点已经由「駅で」说了。\n规则：「会う」的对象用「に」：「友だちに 会う」，不说「友だちを 会う」。\n技巧：记动词时把它的助词一起记：「友だちに 会う」「いえを 出る」「はしを わたる」，做题时就不用临场推。",
-      "en": "Clue: The verb is 「会いました」 (met), and the blank follows the person met; the place is already given by 「駅で」.\nRule: The person you meet takes 「に」: 「友だちに 会う」, never 「友だちを 会う」.\nTip: Learn verbs together with their particle — 「友だちに 会う」「いえを 出る」「はしを わたる」 — so you don't have to work it out under time pressure."
+      "zh": "线索：动词是「会いました」（见到），空格前是见到的人；见面的地点已经由「駅で」说了。\n规则：「会う」的对象用「に」：「友だちに 会う」，不说「友だちを 会う」。",
+      "en": "Clue: The verb is 「会いました」 (met), and the blank follows the person met; the place is already given by 「駅で」.\nRule: The person you meet takes 「に」: 「友だちに 会う」, never 「友だちを 会う」."
     },
     "wrong": [
       null,
@@ -565,8 +565,8 @@
       "en": "I waited for my friend at the station for a whole two hours. It was freezing."
     },
     "why": {
-      "zh": "线索：空格前是时长「2時間」，后面又说「とても さむかったです」，说话人觉得等得太久了。\n规则：数量＋「も」强调“多、久”：「2時間も 待った」（足足等了两个小时）。「に」只接时间点（「2時に」），不接时长。",
-      "en": "Clue: The blank follows a length of time, 「2時間」, and then 「とても さむかったです」 — the speaker felt it was too long.\nRule: Amount ＋ 「も」 stresses \"that much / that long\": 「2時間も 待った」 (waited a whole two hours). 「に」 goes with a point in time (「2時に」), not a length."
+      "zh": "线索：空格前是时长「2時間」，后面又说「とても さむかったです」，说话人觉得等得太久了。\n规则：数量＋「も」强调“多、久”：「2時間も 待った」（足足等了两个小时）。",
+      "en": "Clue: The blank follows a length of time, 「2時間」, and then 「とても さむかったです」 — the speaker felt it was too long.\nRule: Amount ＋ 「も」 stresses \"that much / that long\": 「2時間も 待った」 (waited a whole two hours)."
     },
     "wrong": [
       {
@@ -645,8 +645,8 @@
       "en": "Sorry, please wait here from now until five."
     },
     "why": {
-      "zh": "线索：动词是「まって」（等），等是一直持续的动作；前面还有起点「今から」。\n规则：一直持续到某个时间为止用「まで」：「今から 5時まで 待つ」。「までに」是截止时间，配一次就完成的动作：「5時までに 来て ください」。",
-      "en": "Clue: The verb is 「まって」 (wait), an action that goes on, and there's a starting point 「今から」.\nRule: Going on until a time takes 「まで」: 「今から 5時まで 待つ」. 「までに」 is a deadline, for something done once: 「5時までに 来て ください」."
+      "zh": "线索：动词是「まって」（等），等是一直持续的动作；前面还有起点「今から」。\n规则：一直持续到某个时间为止用「まで」：「今から 5時まで 待つ」。",
+      "en": "Clue: The verb is 「まって」 (wait), an action that goes on, and there's a starting point 「今から」.\nRule: Going on until a time takes 「まで」: 「今から 5時まで 待つ」."
     },
     "wrong": [
       {
@@ -659,8 +659,8 @@
         "en": "「5時に」 is the single moment five o'clock; it doesn't pair with 「今から」 or show duration."
       },
       {
-        "zh": "「5時で」不表示时间的终点，这里意思不通。",
-        "en": "「5時で」 doesn't mark an endpoint in time; it makes no sense here."
+        "zh": "「5時で」可以说某件事到5点结束，但说不出“一直等到5点”，持续到某时为止要用「まで」。",
+        "en": "「5時で」 can say something ends at five, but not \"wait until five\"; lasting until a time takes 「まで」."
       }
     ]
   },
@@ -686,8 +686,8 @@
       "en": "A: Where did you come from, Lin? B: I came from China."
     },
     "why": {
-      "zh": "线索：B 回答「中国から 来ました」，说的是从哪里出发。\n规则：动作的起点用「から」：「中国から 来る」；问起点就是「どこから」。「まで」是终点，「を」是经过的路线。",
-      "en": "Clue: B answers 「中国から 来ました」 — where Lin set out from.\nRule: A starting point takes 「から」 (「中国から 来る」), so the question is 「どこから」. 「まで」 is the end point and 「を」 the route passed through."
+      "zh": "线索：B 回答「中国から 来ました」，说的是从哪里出发。\n规则：动作的起点用「から」：「中国から 来る」；问起点就是「どこから」。",
+      "en": "Clue: B answers 「中国から 来ました」 — where Lin set out from.\nRule: A starting point takes 「から」 (「中国から 来る」), so the question is 「どこから」."
     },
     "wrong": [
       {
@@ -771,8 +771,8 @@
       "en": "Next week is my mother's birthday. This is a present for her."
     },
     "why": {
-      "zh": "线索：空格后面是名词「プレゼント」，意思是“给妈妈的”礼物。\n规则：带助词的词去修饰名词时，要在助词后面加「の」；表示方向就是「への」：「母への プレゼント」「日本への りょこう」。「に」后面不能接「の」，没有「にの」。",
-      "en": "Clue: The blank is followed by the noun 「プレゼント」 — a present for Mom.\nRule: A particle phrase that describes a noun needs 「の」 added after the particle; for direction that's 「への」: 「母への プレゼント」, 「日本への りょこう」. 「に」 can't take 「の」, so 「にの」 doesn't exist."
+      "zh": "线索：空格后面是名词「プレゼント」，意思是“给妈妈的”礼物。\n规则：带助词的词去修饰名词时，要在助词后面加「の」；表示方向就是「への」：「母への プレゼント」「日本への りょこう」。",
+      "en": "Clue: The blank is followed by the noun 「プレゼント」 — a present for Mom.\nRule: A particle phrase that describes a noun needs 「の」 added after the particle; for direction that's 「への」: 「母への プレゼント」, 「日本への りょこう」."
     },
     "wrong": [
       {
@@ -896,8 +896,8 @@
       "en": "On the weekend I watched a movie together with a friend."
     },
     "why": {
-      "zh": "线索：空格后面是「いっしょに」（一起）。\n规则：和谁一起做事，用「〜と いっしょに」：「友だちと いっしょに 見る」。「に」是动作指向的人（「友だちに 会う」），不表示“一起”。",
-      "en": "Clue: The blank is followed by 「いっしょに」 (together).\nRule: Doing something with someone is 「〜と いっしょに」: 「友だちと いっしょに 見る」. 「に」 marks the person an action is aimed at (「友だちに 会う」), not \"together with\"."
+      "zh": "线索：空格后面是「いっしょに」（一起）。\n规则：和谁一起做事，用「〜と いっしょに」：「友だちと いっしょに 見る」。",
+      "en": "Clue: The blank is followed by 「いっしょに」 (together).\nRule: Doing something with someone is 「〜と いっしょに」: 「友だちと いっしょに 見る」."
     },
     "wrong": [
       {
@@ -1015,8 +1015,8 @@
       "en": "A: Is this book interesting? B: Yes, it's really interesting. You should definitely read it."
     },
     "why": {
-      "zh": "线索：A 问「おもしろいですか」，说明 A 还没读过；B 接着推荐「ぜひ 読んで ください」。\n规则：把对方不知道的事告诉他，句末用「よ」。对方也知道、想让他同意时才用「ね」。",
-      "en": "Clue: A asks 「おもしろいですか」, so A hasn't read it; B goes on to recommend it (「ぜひ 読んで ください」).\nRule: Telling someone something they don't know ends in 「よ」. 「ね」 is for things the other person knows too, when you want them to agree."
+      "zh": "线索：A 问「おもしろいですか」，说明 A 还没读过；B 接着推荐「ぜひ 読んで ください」。\n规则：把对方不知道的事告诉他，句末用「よ」。",
+      "en": "Clue: A asks 「おもしろいですか」, so A hasn't read it; B goes on to recommend it (「ぜひ 読んで ください」).\nRule: Telling someone something they don't know ends in 「よ」."
     },
     "wrong": [
       {
@@ -1104,8 +1104,8 @@
       "en": "A: What time does tomorrow's test start? B: From nine."
     },
     "why": {
-      "zh": "线索：A 问「何時からですか」，B 回答开始的时间，四块是「9時」「から」「です」「よ」。\n怎么排：「9時」＋「から」组成起点，接「です」；告诉对方信息的「よ」放最后。顺序：9時 → から → です → よ，★ 是「9時」。\n技巧：句末的「よ」「ね」「か」只放在句子最后，排序时先把它们放进最后一格。",
-      "en": "Clue: A asks 「何時からですか」, so B gives the start time; the pieces are 「9時」「から」「です」「よ」.\nOrder: 「9時」 ＋ 「から」 make the start, followed by 「です」; the informing 「よ」 goes last: 9時 → から → です → よ. The ★ is 「9時」.\nTip: Sentence-final 「よ」「ね」「か」 go only at the very end — put them in the last slot first."
+      "zh": "线索：A 问「何時からですか」，B 回答开始的时间，四块是「9時」「から」「です」「よ」。\n怎么排：「9時」＋「から」组成起点，接「です」；告诉对方信息的「よ」放最后。顺序：9時 → から → です → よ，★ 是「9時」。",
+      "en": "Clue: A asks 「何時からですか」, so B gives the start time; the pieces are 「9時」「から」「です」「よ」.\nOrder: 「9時」 ＋ 「から」 make the start, followed by 「です」; the informing 「よ」 goes last: 9時 → から → です → よ. The ★ is 「9時」."
     },
     "wrong": [
       null,

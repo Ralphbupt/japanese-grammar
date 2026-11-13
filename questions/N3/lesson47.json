@@ -20,8 +20,8 @@
       "en": "Mr. Tanaka is going to attend next week's international conference as the company's representative."
     },
     "why": {
-      "zh": "线索：空格前是身份「会社の 代表」，后面只是陈述“出席会议”这件事，没有任何评价。\n规则：「名词＋として」＝以某种身份、资格、立场做事：「代表として出席する」。\n辨析：「にしては」也接名词，但后面要跟出乎意料的评价（「代表にしては頼りない」＝作为代表来说太靠不住）；这里只说身份，没有评价。",
-      "en": "Clue: Before the blank is a role, 「会社の 代表」, and the rest just states that he'll attend — no judgement at all.\nRule: Noun ＋ 「として」 = in the capacity of, as: 「代表として出席する」.\nContrast: 「にしては」 also follows a noun, but a surprising judgement has to come after it (「代表にしては頼りない」 = unreliable for a representative). Here there's only a role, no judgement."
+      "zh": "线索：空格前是身份「会社の 代表」，后面只是陈述“出席会议”这件事，没有任何评价。\n规则：「名词＋として」＝以某种身份、资格、立场做事：「代表として出席する」。",
+      "en": "Clue: Before the blank is a role, 「会社の 代表」, and the rest just states that he'll attend — no judgement at all.\nRule: Noun ＋ 「として」 = in the capacity of, as: 「代表として出席する」."
     },
     "wrong": [
       null,
@@ -61,8 +61,8 @@
       "en": "A: What do you think about this plan? B: Personally, I think we should take a bit more time to consider it."
     },
     "why": {
-      "zh": "线索：A问「どう 思いますか」，B用「〜と 思います」回答，是在说自己的意见。\n规则：「名词＋としては」＝从某人的立场来说；「私としては」是表达个人看法时常用的开头，语气委婉。\n辨析：「私にしては」＝以我平时的水平来说出乎意料（「私にしては早く起きた」＝对我来说算起得早了），后面要接意外的结果；说自己的意见用「としては」。",
-      "en": "Clue: A asks 「どう 思いますか」 and B answers with 「〜と 思います」: B is giving an opinion.\nRule: Noun ＋ 「としては」 = from someone's standpoint; 「私としては」 is a common, soft way to open a personal view.\nContrast: 「私にしては」 = surprising by my usual standard (「私にしては早く起きた」 = early, for me), so a surprising result must follow. For stating your view, 「としては」."
+      "zh": "线索：A问「どう 思いますか」，B用「〜と 思います」回答，是在说自己的意见。\n规则：「名词＋としては」＝从某人的立场来说；「私としては」是表达个人看法时常用的开头，语气委婉。",
+      "en": "Clue: A asks 「どう 思いますか」 and B answers with 「〜と 思います」: B is giving an opinion.\nRule: Noun ＋ 「としては」 = from someone's standpoint; 「私としては」 is a common, soft way to open a personal view."
     },
     "wrong": [
       null,
@@ -75,8 +75,8 @@
         "en": "「向けには」 marks who something is made for; it can't introduce one's own opinion."
       },
       {
-        "zh": "「の割には」表示程度不相称，“和我不相称地”在这里讲不通。",
-        "en": "「の割には」 points out a mismatch in degree, which makes no sense here."
+        "zh": "「の割には」后面要接和预想不相称的结果，B是在说自己的意见，接不上。",
+        "en": "「の割には」 needs a result out of line with expectations; B is giving an opinion, so it doesn't fit."
       }
     ]
   },
@@ -137,8 +137,8 @@
       "en": "For someone who's been in Japan only half a year, Mr. Tanaka's Japanese is very good."
     },
     "why": {
-      "zh": "线索：「まだ 半年」说时间很短，后面却是「とても 上手だ」：结果超出了“才半年”应有的水平。\n规则：「名词＋にしては」＝按A的一般标准来看，结果出乎意料；名词直接接：「半年にしては」。\n辨析：「割に」意思相近，也表示不相称，但接名词要加「の」（「半年の割に」）；这里空格紧跟「半年」，没有「の」，所以选「にしては」。",
-      "en": "Clue: 「まだ 半年」 stresses how short the time is, yet 「とても 上手だ」 follows: better than \"only six months\" would lead you to expect.\nRule: Noun ＋ 「にしては」 = judged by the usual standard for A, the result is surprising; the noun attaches directly: 「半年にしては」.\nContrast: 「割に」 is close in meaning (out of proportion), but after a noun it needs 「の」 (「半年の割に」). The blank comes straight after 「半年」 with no 「の」, so 「にしては」."
+      "zh": "线索：「まだ 半年」说时间很短，后面却是「とても 上手だ」：结果超出了“才半年”应有的水平。\n规则：「名词＋にしては」＝按A的一般标准来看，结果出乎意料；名词直接接：「半年にしては」。",
+      "en": "Clue: 「まだ 半年」 stresses how short the time is, yet 「とても 上手だ」 follows: better than \"only six months\" would lead you to expect.\nRule: Noun ＋ 「にしては」 = judged by the usual standard for A, the result is surprising; the noun attaches directly: 「半年にしては」."
     },
     "wrong": [
       null,
@@ -177,14 +177,14 @@
       "en": "For an essay written in an hour, this is very well done."
     },
     "why": {
-      "zh": "线索：「一時間で 書いた」说写得很快，后面「とても よく できて いる」却说质量很高，和预期不一致。\n规则：动词简体（「書いた」「行く」）＋「にしては」＝从A的情况来看，结果出乎意料。\n辨析：「としては」只表示立场“作为……来说”（「私としては賛成だ」），前面接名词，不接「書いた」，也没有“意外”的语气。",
-      "en": "Clue: 「一時間で 書いた」 says it was written quickly, but 「とても よく できて いる」 says it's very good — not what you'd expect.\nRule: Plain-form verb (「書いた」「行く」) ＋ 「にしては」 = considering A, the result is surprising.\nContrast: 「としては」 only states a standpoint, \"speaking as\" (「私としては賛成だ」); it follows a noun, not 「書いた」, and carries no surprise."
+      "zh": "线索：「一時間で 書いた」说写得很快，后面「とても よく できて いる」却说质量很高，和预期不一致。\n规则：动词简体（「書いた」「行く」）＋「にしては」＝从A的情况来看，结果出乎意料。",
+      "en": "Clue: 「一時間で 書いた」 says it was written quickly, but 「とても よく できて いる」 says it's very good — not what you'd expect.\nRule: Plain-form verb (「書いた」「行く」) ＋ 「にしては」 = considering A, the result is surprising."
     },
     "wrong": [
       null,
       {
-        "zh": "「としては」表示立场“作为……来说”，「書いたとしては」不成立。",
-        "en": "「としては」 gives a standpoint; 「書いたとしては」 doesn't work."
+        "zh": "「としては」只表示立场（「私としては賛成だ」），前面接名词，不接「書いた」，也没有意外的语气。",
+        "en": "「としては」 only gives a standpoint (「私としては賛成だ」); it follows a noun, not 「書いた」, and carries no surprise."
       },
       {
         "zh": "「せいで」用于坏结果的原因，“写得很好”是好结果。",
@@ -253,8 +253,8 @@
       "en": "This dish is very tasty for how easy it is to make."
     },
     "why": {
-      "zh": "线索：空格前是带「な」的な形容词「簡単な」；做法简单，后面却「とても おいしい」，好吃的程度和做法的简单不相称。\n规则：「〜割に」＝A和B的程度不成正比；な形容词接「な割に」，い形容词、动词也能接。\n辨析：「にしては」意思接近，但它接名词或动词，不接形容词，「簡単なにしては」不成立；接在形容词后面的是「割に」。",
-      "en": "Clue: Before the blank is 「簡単な」, a な-adjective with its 「な」. The dish is easy to make, yet 「とても おいしい」: the taste is out of proportion to the effort.\nRule: 「〜割に」 = A and B don't match in degree; a な-adjective takes 「な割に」, and い-adjectives and verbs attach too.\nContrast: 「にしては」 is close in meaning, but it follows a noun or a verb, not an adjective — 「簡単なにしては」 doesn't work. After an adjective, use 「割に」."
+      "zh": "线索：空格前是带「な」的な形容词「簡単な」；做法简单，后面却「とても おいしい」，好吃的程度和做法的简单不相称。\n规则：「〜割に」＝A和B的程度不成正比；な形容词接「な割に」，い形容词、动词也能接。",
+      "en": "Clue: Before the blank is 「簡単な」, a な-adjective with its 「な」. The dish is easy to make, yet 「とても おいしい」: the taste is out of proportion to the effort.\nRule: 「〜割に」 = A and B don't match in degree; a な-adjective takes 「な割に」, and い-adjectives and verbs attach too."
     },
     "wrong": [
       null,
@@ -293,8 +293,8 @@
       "en": "This bag broke quickly considering how expensive it was."
     },
     "why": {
-      "zh": "线索：「値段が 高い」本该意味着质量好，后面却是「すぐに 壊れて しまった」，质量和价格不相称。\n规则：「〜割に」＝从A的程度来看，B不相称；い形容词直接接：「高い割に」。\n辨析：「代わりに」＝有得有失、互相抵消（「高い代わりに丈夫だ」＝贵是贵，但很结实），后面是抵消缺点的好处；“贵却很快坏了”是预期落空，用「割に」。",
-      "en": "Clue: 「値段が 高い」 should mean good quality, but 「すぐに 壊れて しまった」 follows: the quality doesn't match the price.\nRule: 「〜割に」 = given the degree of A, B is out of proportion; an い-adjective attaches directly: 「高い割に」.\nContrast: 「代わりに」 = a trade-off where one side offsets the other (「高い代わりに丈夫だ」 = it's pricey, but sturdy), so a plus that makes up for the minus follows. \"Expensive yet broke quickly\" is an expectation let down: 「割に」."
+      "zh": "线索：「値段が 高い」本该意味着质量好，后面却是「すぐに 壊れて しまった」，质量和价格不相称。\n规则：「〜割に」＝从A的程度来看，B不相称；い形容词直接接：「高い割に」。",
+      "en": "Clue: 「値段が 高い」 should mean good quality, but 「すぐに 壊れて しまった」 follows: the quality doesn't match the price.\nRule: 「〜割に」 = given the degree of A, B is out of proportion; an い-adjective attaches directly: 「高い割に」."
     },
     "wrong": [
       null,
@@ -303,8 +303,8 @@
         "en": "「にしては」 doesn't follow い-adjectives; 「高いにしては」 is wrong."
       },
       {
-        "zh": "「代わりに」表示交换，“贵”换来的应是好处，“很快坏了”接不上。",
-        "en": "「代わりに」 is a trade-off; being expensive would be balanced by something good, not by breaking quickly."
+        "zh": "「代わりに」表示有得有失（「高い代わりに丈夫だ」），“贵”换来的应是好处，“很快坏了”接不上。",
+        "en": "「代わりに」 is a trade-off (「高い代わりに丈夫だ」); being expensive would be balanced by something good, not by breaking quickly."
       },
       {
         "zh": "「うちに」是“趁……”，“趁贵的时候坏了”意思不通。",
@@ -369,8 +369,8 @@
       "en": "This magazine is made for women in their twenties, with many articles on fashion and work."
     },
     "why": {
-      "zh": "线索：空格后是「作られて いて」（被制作），后面又说杂志里多是时尚和工作的文章——说的是这本杂志为谁而做。\n规则：「名词＋向け」＝以A为对象专门制作、设计；后接动词用「向けに」，修饰名词用「向けの」。\n辨析：「として」表示主语本身的身份或资格（「代表として出席する」），「女性として作られる」成了“杂志以女性的身份被制作”；表示读者对象用「向けに」。",
-      "en": "Clue: After the blank comes 「作られて いて」 (is made), and the magazine is full of fashion and work articles: the sentence is about who it's made for.\nRule: Noun ＋ 「向け」 = made or designed with A as the target; before a verb it's 「向けに」, before a noun 「向けの」.\nContrast: 「として」 gives the subject's own role (「代表として出席する」), so 「女性として作られる」 would mean the magazine is made in the role of a woman. For the target readers, 「向けに」."
+      "zh": "线索：空格后是「作られて いて」（被制作），后面又说杂志里多是时尚和工作的文章——说的是这本杂志为谁而做。\n规则：「名词＋向け」＝以A为对象专门制作、设计；后接动词用「向けに」，修饰名词用「向けの」。",
+      "en": "Clue: After the blank comes 「作られて いて」 (is made), and the magazine is full of fashion and work articles: the sentence is about who it's made for.\nRule: Noun ＋ 「向け」 = made or designed with A as the target; before a verb it's 「向けに」, before a noun 「向けの」."
     },
     "wrong": [
       null,
@@ -409,8 +409,8 @@
       "en": "I hear Japanese classes for international students start next month."
     },
     "why": {
-      "zh": "线索：空格后面紧跟名词「日本語の 授業」，空格要修饰这个名词。\n规则：「向け」修饰名词时用「向けの＋名词」（「留学生向けの授業」）；后面接动词时才用「向けに」（「留学生向けに作る」）。\n辨析：「としての」也修饰名词，但表示自身的身份（「教師としての責任」），“作为留学生的课”说不通；表示课的对象用「向けの」。",
-      "en": "Clue: Right after the blank comes the noun phrase 「日本語の 授業」, so the blank has to modify it.\nRule: Before a noun, 「向け」 becomes 「向けの」 (「留学生向けの授業」); 「向けに」 is for when a verb follows (「留学生向けに作る」).\nContrast: 「としての」 also modifies a noun, but it names a role (「教師としての責任」); \"a class in the role of exchange students\" makes no sense. For who the class is for, 「向けの」."
+      "zh": "线索：空格后面紧跟名词「日本語の 授業」，空格要修饰这个名词。\n规则：「向け」修饰名词时用「向けの＋名词」（「留学生向けの授業」）；后面接动词时才用「向けに」（「留学生向けに作る」）。",
+      "en": "Clue: Right after the blank comes the noun phrase 「日本語の 授業」, so the blank has to modify it.\nRule: Before a noun, 「向け」 becomes 「向けの」 (「留学生向けの授業」); 「向けに」 is for when a verb follows (「留学生向けに作る」)."
     },
     "wrong": [
       null,
@@ -485,8 +485,8 @@
       "en": "With a big parking lot and children's chairs, this is a family-friendly restaurant."
     },
     "why": {
-      "zh": "线索：前面列出「駐車場が 広くて」「子ども用の いすも ある」，这些条件让这家店很适合带家人去；空格后面紧接名词「レストラン」。\n规则：「名词＋向き」＝（从条件看）适合A；修饰名词用「向きの＋名词」：「家族向きのレストラン」。\n辨析：「としての」也能接在名词后修饰名词，但表示身份（「家族としての責任」＝作为家人的责任），说不出“适合家庭”的意思。",
-      "en": "Clue: The sentence lists 「駐車場が 広くて」 and 「子ども用の いすも ある」 — features that make the place good for families — and the noun 「レストラン」 follows the blank.\nRule: Noun ＋ 「向き」 = suited to A (judging by its features); before a noun it's 「向きの」: 「家族向きのレストラン」.\nContrast: 「としての」 can also sit between two nouns, but it names a role (「家族としての責任」 = one's responsibility as a family member); it can't say \"suited to families\"."
+      "zh": "线索：前面列出「駐車場が 広くて」「子ども用の いすも ある」，这些条件让这家店很适合带家人去；空格后面紧接名词「レストラン」。\n规则：「名词＋向き」＝（从条件看）适合A；修饰名词用「向きの＋名词」：「家族向きのレストラン」。",
+      "en": "Clue: The sentence lists 「駐車場が 広くて」 and 「子ども用の いすも ある」 — features that make the place good for families — and the noun 「レストラン」 follows the blank.\nRule: Noun ＋ 「向き」 = suited to A (judging by its features); before a noun it's 「向きの」: 「家族向きのレストラン」."
     },
     "wrong": [
       null,
@@ -526,8 +526,8 @@
       "en": "This game wasn't made for children, but its simple rules make it suitable for them."
     },
     "why": {
-      "zh": "线索：前半句明说「子ども用に 作られた ものでは ない」（不是为孩子做的），理由是「ルールが 簡単なので」。\n规则：「名词＋向き」＝从性质上看适合A，不管原本是不是为A做的。\n辨析：「向け」＝专门以A为对象制作（「子ども向けの番組」＝给孩子做的节目）；「向き」＝客观上适合A。这里已经否定了“为孩子做”，所以用「向き」。",
-      "en": "Clue: The first half says outright 「子ども用に 作られた ものでは ない」 (it wasn't made for kids), and the reason given is 「ルールが 簡単なので」.\nRule: Noun ＋ 「向き」 = suited to A by its nature, whether or not it was made for A.\nContrast: 「向け」 = made specifically for A (「子ども向けの番組」 = a programme made for children); 「向き」 = happens to suit A. \"Made for kids\" has just been denied, so 「向き」."
+      "zh": "线索：前半句明说「子ども用に 作られた ものでは ない」（不是为孩子做的），理由是「ルールが 簡単なので」。\n规则：「名词＋向き」＝从性质上看适合A，不管原本是不是为A做的。",
+      "en": "Clue: The first half says outright 「子ども用に 作られた ものでは ない」 (it wasn't made for kids), and the reason given is 「ルールが 簡単なので」.\nRule: Noun ＋ 「向き」 = suited to A by its nature, whether or not it was made for A."
     },
     "wrong": [
       null,
@@ -602,8 +602,8 @@
       "en": "To think that serious Mr. Tanaka would skip work to go out and have fun — I can't believe it."
     },
     "why": {
-      "zh": "线索：空格前是动词「行く」，后面是「信じられない」（不敢相信）；「あの まじめな」更说明这件事出乎意料。\n规则：动词简体（「行く」「休んだ」）＋「なんて」＝居然……，表示惊讶、意外，后面常接「信じられない」「ひどい」这类评价。\n辨析：「なんか」和「なんて」都能带轻视的语气，但「なんか」多接名词（「お酒なんか飲みたくない」）；接在动词句后面表示“居然……”，用「なんて」。",
-      "en": "Clue: Before the blank is the verb 「行く」 and after it 「信じられない」 (unbelievable); 「あの まじめな」 makes it all the more surprising.\nRule: Plain-form verb (「行く」「休んだ」) ＋ 「なんて」 = \"to think that …\", showing surprise, usually followed by a reaction like 「信じられない」 or 「ひどい」.\nContrast: 「なんか」 and 「なんて」 can both sound dismissive, but 「なんか」 mostly follows nouns (「お酒なんか飲みたくない」). After a verb clause, for \"to think that …\", use 「なんて」."
+      "zh": "线索：空格前是动词「行く」，后面是「信じられない」（不敢相信）；「あの まじめな」更说明这件事出乎意料。\n规则：动词简体（「行く」「休んだ」）＋「なんて」＝居然……，表示惊讶、意外，后面常接「信じられない」「ひどい」这类评价。",
+      "en": "Clue: Before the blank is the verb 「行く」 and after it 「信じられない」 (unbelievable); 「あの まじめな」 makes it all the more surprising.\nRule: Plain-form verb (「行く」「休んだ」) ＋ 「なんて」 = \"to think that …\", showing surprise, usually followed by a reaction like 「信じられない」 or 「ひどい」."
     },
     "wrong": [
       null,
@@ -642,14 +642,14 @@
       "en": "A: Manager, could you lead this project? B: No, someone like me couldn't do it. Ask someone younger."
     },
     "why": {
-      "zh": "线索：空格后面还有助词「には」；B在推辞，自谦地说“我这种人”。\n规则：「名词＋なんか」＝……之类，口语里用来轻视或自谦；后面还可以再接「に」「が」等助词：「私なんかには」。\n辨析：「なんて」也能接名词表示轻视（「私なんて」＝像我这样的），但一般不再接助词「に」，「私なんてには」不自然；要接「には」时用「なんか」。",
-      "en": "Clue: The blank is followed by the particle 「には」, and B is turning the job down, modestly calling himself \"someone like me\".\nRule: Noun ＋ 「なんか」 = the likes of …, casual, dismissive or self-deprecating; a particle like 「に」 or 「が」 can still follow: 「私なんかには」.\nContrast: 「なんて」 can also follow a noun dismissively (「私なんて」 = someone like me), but it doesn't normally take 「に」 after it; 「私なんてには」 sounds wrong. Before 「には」, use 「なんか」."
+      "zh": "线索：空格后面还有助词「には」；B在推辞，自谦地说“我这种人”。\n规则：「名词＋なんか」＝……之类，口语里用来轻视或自谦；后面还可以再接「に」「が」等助词：「私なんかには」。",
+      "en": "Clue: The blank is followed by the particle 「には」, and B is turning the job down, modestly calling himself \"someone like me\".\nRule: Noun ＋ 「なんか」 = the likes of …, casual, dismissive or self-deprecating; a particle like 「に」 or 「が」 can still follow: 「私なんかには」."
     },
     "wrong": [
       null,
       {
-        "zh": "「なんて」后面一般不接「に」，「私なんてには」不成立。",
-        "en": "「なんて」 isn't followed by 「に」; 「私なんてには」 is wrong."
+        "zh": "「なんて」后面一般不接「に」，「私なんてには」不自然。",
+        "en": "「なんて」 isn't normally followed by 「に」; 「私なんてには」 sounds wrong."
       },
       {
         "zh": "「私としてには」不成立；「として」是身份，后面不能接「には」。",
@@ -719,13 +719,13 @@
       "en": "For a price of 800 yen, this shop's lunch set is generous and tastes good, so the place is always crowded."
     },
     "why": {
-      "zh": "线索：前面是便宜的「800円という値段」，后面是「量が多くて味もいい」：结果比从价钱预想的要好。\n规则：「名词＋の＋割に」＝就……来说却……，表示和从前面的事预想的程度不相称。\n辨析：「値段の割に」＝和价钱不相称（比预想的好或差）；「〜上に」＝而且，再加上同方向的事，接名词时要说「〜である上に」，「値段の上に」不能表示这个意思。",
-      "en": "Clue: A low price, 「800円という値段」, then 「量が多くて味もいい」: better than the price would suggest.\nRule: Noun + の + 「割に」 = \"considering …, for …\": the result is out of proportion to what one would expect.\nContrast: 「値段の割に」 = out of proportion to the price (better or worse than expected); 「〜上に」 = \"and on top of that\", adding a point in the same direction; with a noun it is 「〜である上に」, so 「値段の上に」 can't mean this."
+      "zh": "线索：前面是便宜的「800円という値段」，后面是「量が多くて味もいい」：结果比从价钱预想的要好。\n规则：「名词＋の＋割に」＝就……来说却……，表示和从前面的事预想的程度不相称。",
+      "en": "Clue: A low price, 「800円という値段」, then 「量が多くて味もいい」: better than the price would suggest.\nRule: Noun + の + 「割に」 = \"considering …, for …\": the result is out of proportion to what one would expect."
     },
     "wrong": [
       {
-        "zh": "「上に」是“而且”，接名词时要用「である上に」；「値段の上に」不表示“而且”。",
-        "en": "「上に」 means \"and what's more\" and takes 「である上に」 after a noun; 「値段の上に」 doesn't mean that."
+        "zh": "「上に」是“而且、再加上”，叠加同方向的事；「値段の上に」表达不出“和价钱不相称”。",
+        "en": "「上に」 means \"and what's more\", adding something in the same direction; 「値段の上に」 can't say the portions are out of line with the price."
       },
       null,
       {

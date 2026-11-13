@@ -21,13 +21,13 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "依据：「毎週 水曜日 19:00〜21:00」；「野菜の カレー」；「2,500円」。\n推理：条件有三个：平日下班（18点）以后开始、不吃肉、每次3,000日元以内。A是3,200日元，超了；C有「ぶた肉」；D周五17:00开始，还在上班。B周三19:00开始、蔬菜、2,500日元，三个都符合。\n容易错：D最便宜又是蔬菜，但只看钱和菜，忘了时间条件。",
-          "en": "Evidence: 「毎週 水曜日 19:00〜21:00」; 「野菜の カレー」; 「2,500円」.\nReasoning: Three conditions: on weekdays it must start after work (6 p.m.), no meat, at most 3,000 yen a session. A costs 3,200 yen, too much; C has 「ぶた肉」; D starts at 17:00 on Friday, while he is still at work. B, Wednesday at 19:00, vegetables, 2,500 yen, meets all three.\nTrap: D is the cheapest and meat-free, but checking only price and food forgets the time."
+          "zh": "依据：「毎週 水曜日 19:00〜21:00」；「野菜の カレー」；「2,500円」。\n推理：条件有三个：平日下班（18点）以后开始、不吃肉、每次3,000日元以内。A是3,200日元，超了；C有「ぶた肉」；D周五17:00开始，还在上班。B周三19:00开始、蔬菜、2,500日元，三个都符合。",
+          "en": "Evidence: 「毎週 水曜日 19:00〜21:00」; 「野菜の カレー」; 「2,500円」.\nReasoning: Three conditions: on weekdays it must start after work (6 p.m.), no meat, at most 3,000 yen a session. A costs 3,200 yen, too much; C has 「ぶた肉」; D starts at 17:00 on Friday, while he is still at work. B, Wednesday at 19:00, vegetables, 2,500 yen, meets all three."
         },
         "wrong": [
           {
             "zh": "A的时间（18:30）和鱼都可以，但每次3,200日元，超过了3,000日元。",
-            "en": "A's time (18:30) and fish are fine, but ¥3,200 is over her ¥3,000 limit."
+            "en": "A's time (18:30) and fish are fine, but ¥3,200 is over Lee's ¥3,000 limit."
           },
           null,
           {
@@ -56,8 +56,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "依据：「申し込みは、教室が 始まる 前の 月の 20日までに、電話か センターの 受付で して ください」。\n推理：李先生想「来月から」上课，「始まる 前の 月」＝开始的前一个月，也就是这个月，所以是这个月20日之前；方式是电话或前台。钱是「教室の 日に」付，报名时不用付。\n容易错：把「前の 月」当成课程开始的那个月（下个月）。",
-          "en": "Evidence: 「申し込みは、教室が 始まる 前の 月の 20日までに、電話か センターの 受付で して ください」.\nReasoning: Li wants to start 「来月から」, so 「始まる 前の 月」, the month before it starts, is this month: by the 20th of this month, by phone or at the desk. Payment is 「教室の 日に」, not when applying.\nTrap: Reading 「前の 月」 as the month the class starts (next month)."
+          "zh": "依据：「申し込みは、教室が 始まる 前の 月の 20日までに、電話か センターの 受付で して ください」。\n推理：李先生想「来月から」上课，「始まる 前の 月」＝开始的前一个月，也就是这个月，所以是这个月20日之前；方式是电话或前台。钱是「教室の 日に」付，报名时不用付。",
+          "en": "Evidence: 「申し込みは、教室が 始まる 前の 月の 20日までに、電話か センターの 受付で して ください」.\nReasoning: Li wants to start 「来月から」, so 「始まる 前の 月」, the month before it starts, is this month: by the 20th of this month, by phone or at the desk. Payment is 「教室の 日に」, not when applying."
         },
         "wrong": [
           null,
@@ -99,8 +99,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "依据：「大学前から 駅前まで 30分 かかります」；「11月の 土曜日は、道の 工事の ため、9時25分の バスは 走りません」。\n推理：7日是星期六，看「土」那一列。车程30分钟，10点前到就要9:30以前发车。星期六9点有10、25、40分：9:25这班11月星期六停运，9:40发车要10:10才到。所以最晚是9:10（9:40到）。\n容易错：选了表上有、但被＊注释停掉的9:25。",
-          "en": "Evidence: 「大学前から 駅前まで 30分 かかります」; 「11月の 土曜日は、道の 工事の ため、9時25分の バスは 走りません」.\nReasoning: The 7th is a Saturday, so use the 「土」 column. The ride takes 30 minutes, so to arrive by 10 she must leave by 9:30. Saturday's 9 o'clock buses are :10, :25 and :40; the 9:25 doesn't run on Saturdays in November, and the 9:40 arrives at 10:10. So the latest is 9:10 (arriving 9:40).\nTrap: Choosing the 9:25, which is in the table but cancelled by the ＊ note."
+          "zh": "依据：「大学前から 駅前まで 30分 かかります」；「11月の 土曜日は、道の 工事の ため、9時25分の バスは 走りません」。\n推理：7日是星期六，看「土」那一列。车程30分钟，10点前到就要9:30以前发车。星期六9点有10、25、40分：9:25这班11月星期六停运，9:40发车要10:10才到。所以最晚是9:10（9:40到）。",
+          "en": "Evidence: 「大学前から 駅前まで 30分 かかります」; 「11月の 土曜日は、道の 工事の ため、9時25分の バスは 走りません」.\nReasoning: The 7th is a Saturday, so use the 「土」 column. The ride takes 30 minutes, so to arrive by 10 she must leave by 9:30. Saturday's 9 o'clock buses are :10, :25 and :40; the 9:25 doesn't run on Saturdays in November, and the 9:40 arrives at 10:10. So the latest is 9:10 (arriving 9:40)."
         },
         "wrong": [
           {
@@ -128,8 +128,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "依据：「大学前から 駅前まで 30分 かかります」；「10　40」。\n推理：还是星期六，11点前到就要10:30以前发车。星期六10点的车是10分和40分：10:40发车11:10才到，迟到；10:10发车10:40到，是最晚又不迟到的一班。\n容易错：10:30是别的列的时间，星期六没有这班车。",
-          "en": "Evidence: 「大学前から 駅前まで 30分 かかります」; 「10　40」.\nReasoning: Still Saturday: to arrive by 11 she must leave by 10:30. Saturday's 10 o'clock buses are :10 and :40. The 10:40 arrives at 11:10, late; the 10:10 arrives at 10:40, the latest one that is on time.\nTrap: 10:30 comes from another column; there is no such bus on Saturday."
+          "zh": "依据：「大学前から 駅前まで 30分 かかります」；「10　40」。\n推理：还是星期六，11点前到就要10:30以前发车。星期六10点的车是10分和40分：10:40发车11:10才到，迟到；10:10发车10:40到，是最晚又不迟到的一班。",
+          "en": "Evidence: 「大学前から 駅前まで 30分 かかります」; 「10　40」.\nReasoning: Still Saturday: to arrive by 11 she must leave by 10:30. Saturday's 10 o'clock buses are :10 and :40. The 10:40 arrives at 11:10, late; the 10:10 arrives at 10:40, the latest one that is on time."
         },
         "wrong": [
           {
@@ -171,8 +171,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "依据：「この 市に 住んで いる 大人は、住所が 分かる カードを 見せると、100円 安く なります」；「250円」。\n推理：星期日看「土・日・祝日」列：大人500日元，两人都住本市、都有卡，各减100日元：400×2＝800日元。女儿上小学二年级，儿童250日元，卡只对大人有效。合计800＋250＝1,050日元。\n容易错：只给约翰一人减100日元（1,150日元），忘了妻子也有卡。",
-          "en": "Evidence: 「この 市に 住んで いる 大人は、住所が 分かる カードを 見せると、100円 安く なります」; 「250円」.\nReasoning: Sunday uses the 「土・日・祝日」 column: adults 500 yen, and both live in the city and have a card, so each pays 100 less: 400 × 2 = 800. Their daughter is in year 2, a child at 250 yen; the card is for adults only. Total 800 + 250 = 1,050 yen.\nTrap: Taking 100 yen off for John only (1,150 yen) and forgetting his wife has a card too."
+          "zh": "依据：「この 市に 住んで いる 大人は、住所が 分かる カードを 見せると、100円 安く なります」；「250円」。\n推理：星期日看「土・日・祝日」列：大人500日元，两人都住本市、都有卡，各减100日元：400×2＝800日元。女儿上小学二年级，儿童250日元，卡只对大人有效。合计800＋250＝1,050日元。",
+          "en": "Evidence: 「この 市に 住んで いる 大人は、住所が 分かる カードを 見せると、100円 安く なります」; 「250円」.\nReasoning: Sunday uses the 「土・日・祝日」 column: adults 500 yen, and both live in the city and have a card, so each pays 100 less: 400 × 2 = 800. Their daughter is in year 2, a child at 250 yen; the card is for adults only. Total 800 + 250 = 1,050 yen."
         },
         "wrong": [
           {
@@ -200,8 +200,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "依据：「月〜金の 午後 五時からは、大人は だれでも 250円です（カードで 安く なりません）」。\n推理：星期三是平日，晚上六点在「午後 五時から」以后，所以大人一律250日元。括号里说用卡也不再便宜，所以不能再减100日元。\n容易错：再用卡减100日元，算成150日元；或按白天的价格算。",
-          "en": "Evidence: 「月〜金の 午後 五時からは、大人は だれでも 250円です（カードで 安く なりません）」.\nReasoning: Wednesday is a weekday and 6 p.m. is after 「午後 五時から」, so every adult pays 250 yen. The brackets say the card gives no further discount, so no 100 yen off.\nTrap: Taking another 100 yen off with the card (150 yen), or using the daytime price."
+          "zh": "依据：「月〜金の 午後 五時からは、大人は だれでも 250円です（カードで 安く なりません）」。\n推理：星期三是平日，晚上六点在「午後 五時から」以后，所以大人一律250日元。括号里说用卡也不再便宜，所以不能再减100日元。",
+          "en": "Evidence: 「月〜金の 午後 五時からは、大人は だれでも 250円です（カードで 安く なりません）」.\nReasoning: Wednesday is a weekday and 6 p.m. is after 「午後 五時から」, so every adult pays 250 yen. The brackets say the card gives no further discount, so no 100 yen off."
         },
         "wrong": [
           {
@@ -243,8 +243,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "依据：「水 16:00〜17:30」；「スピーチの 練習を します」；「自分の レベルと 合わない クラスには 入れません」。\n推理：三个条件：不在周二、周四下午；水平要有N4；内容是说话练习。A在周二；B是汉字读写；C要「N2 以上」，按＊注释不能上。D周三、N4・N3、练演讲，演讲也是说话练习。\n容易错：A「二人で 話す 練習」最像说话练习，但时间和打工冲突。",
-          "en": "Evidence: 「水 16:00〜17:30」; 「スピーチの 練習を します」; 「自分の レベルと 合わない クラスには 入れません」.\nReasoning: Three conditions: not Tuesday or Thursday afternoon, open to N4, and speaking practice. A is on Tuesday; B is kanji reading and writing; C needs 「N2 以上」, so the ＊ note rules it out. D, Wednesday, N4・N3, speech practice, fits, and a speech is speaking practice.\nTrap: A's 「二人で 話す 練習」 looks most like speaking practice, but it clashes with the part-time job."
+          "zh": "依据：「水 16:00〜17:30」；「スピーチの 練習を します」；「自分の レベルと 合わない クラスには 入れません」。\n推理：三个条件：不在周二、周四下午；水平要有N4；内容是说话练习。A在周二；B是汉字读写；C要「N2 以上」，按＊注释不能上。D周三、N4・N3、练演讲，演讲也是说话练习。",
+          "en": "Evidence: 「水 16:00〜17:30」; 「スピーチの 練習を します」; 「自分の レベルと 合わない クラスには 入れません」.\nReasoning: Three conditions: not Tuesday or Thursday afternoon, open to N4, and speaking practice. A is on Tuesday; B is kanji reading and writing; C needs 「N2 以上」, so the ＊ note rules it out. D, Wednesday, N4・N3, speech practice, fits, and a speech is speaking practice."
         },
         "wrong": [
           {
@@ -272,8 +272,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "依据：「金 16:00〜17:30」；「やさしい 新聞を 読みます」。\n推理：卢卡：N3、周一和周三下午不行、想练习读。B和D在周三；C要N2以上；E在周五，N4・N3都能上，内容是读报纸，全部符合。\n容易错：B也有“读”，但在周三，而且只有N4。",
-          "en": "Evidence: 「金 16:00〜17:30」; 「やさしい 新聞を 読みます」.\nReasoning: Luca: N3, busy Monday and Wednesday afternoons, wants reading practice. B and D are on Wednesday; C needs N2 or above; E is on Friday, open to N4・N3, and is reading newspapers: it fits everything.\nTrap: B also involves reading, but it is on Wednesday and for N4 only."
+          "zh": "依据：「金 16:00〜17:30」；「やさしい 新聞を 読みます」。\n推理：卢卡：N3、周一和周三下午不行、想练习读。B和D在周三；C要N2以上；E在周五，N4・N3都能上，内容是读报纸，全部符合。",
+          "en": "Evidence: 「金 16:00〜17:30」; 「やさしい 新聞を 読みます」.\nReasoning: Luca: N3, busy Monday and Wednesday afternoons, wants reading practice. B and D are on Wednesday; C needs N2 or above; E is on Friday, open to N4・N3, and is reading newspapers: it fits everything."
         },
         "wrong": [
           {
@@ -350,8 +350,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "依据：「予約は 見学の 三日前までに、電話で して ください」；「必要」。\n推理：他们去的是星期六14点的「見る＋作る コース」，表上预约一栏是「必要」。按＊注释，要在三天前之前打电话预约；钱是当天在前台付，不用提前付。\n容易错：把付钱的时间和预约的时间混在一起。",
-          "en": "Evidence: 「予約は 見学の 三日前までに、電話で して ください」; 「必要」.\nReasoning: They are going on Saturday's 14:00 「見る＋作る コース」, whose booking column says 「必要」. The ＊ note says to book by phone at least three days ahead; payment is at the desk on the day, not in advance.\nTrap: Mixing up when to pay with when to book."
+          "zh": "依据：「予約は 見学の 三日前までに、電話で して ください」；「必要」。\n推理：他们去的是星期六14点的「見る＋作る コース」，表上预约一栏是「必要」。按＊注释，要在三天前之前打电话预约；钱是当天在前台付，不用提前付。",
+          "en": "Evidence: 「予約は 見学の 三日前までに、電話で して ください」; 「必要」.\nReasoning: They are going on Saturday's 14:00 「見る＋作る コース」, whose booking column says 「必要」. The ＊ note says to book by phone at least three days ahead; payment is at the desk on the day, not in advance."
         },
         "wrong": [
           null,
