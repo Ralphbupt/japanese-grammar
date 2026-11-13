@@ -620,9 +620,9 @@ ${JSON.stringify({
   --card-bg: #fbfaf7; --border: #e3dfd5; --muted: #605c55; --link: var(--ui);
 }
 @media (prefers-color-scheme: dark) {
-  :root:not(.theme-light) { --bg: #171614; --text: #d9d4c7; --card-bg: #1f1e1b; --border: #35322c; --muted: #a59f90; --accent: #ec5f52; --ui: #e8e1cf; --ui-on: #1b1a17; --link: #b3c3d9; }
+  :root:not(.theme-light) { --bg: #14141e; --text: #d4d4dc; --card-bg: #1f1f2e; --border: #2d2d44; --muted: #a8a8b8; --accent: #e94560; --ui: #a9c7ee; --ui-on: #10131c; --link: #a9c7ee; }
 }
-html.theme-dark { --bg: #171614; --text: #d9d4c7; --card-bg: #1f1e1b; --border: #35322c; --muted: #a59f90; --accent: #ec5f52; --ui: #e8e1cf; --ui-on: #1b1a17; --link: #b3c3d9; }
+html.theme-dark { --bg: #14141e; --text: #d4d4dc; --card-bg: #1f1f2e; --border: #2d2d44; --muted: #a8a8b8; --accent: #e94560; --ui: #a9c7ee; --ui-on: #10131c; --link: #a9c7ee; }
 * { box-sizing: border-box; }
 body { font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "PingFang SC", sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 2.5rem 1.5rem; line-height: 1.75; }
 .container { max-width: 760px; margin: 0 auto; }

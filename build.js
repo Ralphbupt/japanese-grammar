@@ -2973,7 +2973,7 @@ ${SETTINGS_SCRIPT}`;
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#171614" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#14141e" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="jpnotes">
@@ -5032,13 +5032,13 @@ Each \`/lessonNN/\` page contains:
 </script>
 <style>
   body { font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 0 16px; background: #f6f4ef; color: #2b2a27; }
-  @media (prefers-color-scheme: dark) { body { background: #171614; color: #d9d4c7; } }
+  @media (prefers-color-scheme: dark) { body { background: #14141e; color: #d4d4dc; } }
   .box { text-align: center; max-width: 30rem; }
   h1 { font-size: 3.5rem; margin: 0; }
   p { font-size: 1.1rem; margin: .8rem 0; }
   ul { list-style: none; padding: 0; margin: 1.2rem 0 0; line-height: 2; }
   a { color: #1f3d63; text-decoration: none; }
-  @media (prefers-color-scheme: dark) { a { color: #b3c3d9; } }
+  @media (prefers-color-scheme: dark) { a { color: #a9c7ee; } }
 </style>
 </head>
 <body>
@@ -5196,33 +5196,33 @@ Each \`/lessonNN/\` page contains:
 // Dark theme tokens ("sumi": warm ink black, paper text, vermilion pen).
 // Contrast on --bg / --card-bg: text ≥ 11:1, muted ≥ 6:1, accent ≥ 4.9:1.
 const DARK_VARS = `
-  --bg: #171614;
-  --sidebar-bg: #100f0e;
-  --sidebar-text: #b9b3a4;
-  --sidebar-heading: #f1ecdf;
-  --sidebar-border: rgba(232,225,207,.08);
-  --sidebar-hover-bg: rgba(232,225,207,.06);
-  --sidebar-hover-text: #f1ecdf;
-  --card-bg: #1f1e1b;
-  --border: #35322c;
-  --text: #d9d4c7;
-  --text-strong: #f1ecdf;
-  --text-muted: #a59f90;
-  --text-subtle: #8a8475;
-  --word-bg: #282622;
-  --surface-2: #282622;
-  --row-alt: rgba(232,225,207,.025);
-  --panel-bg: #1f1e1b;
-  --chip-bg: #2c2a25;
-  --chip-text: var(--text-strong);
-  --word-border: #46423a;
-  --code-bg: #1f1e1b;
-  --ruby-color: #a59f90;
-  --accent: #ec5f52;
-  --accent-soft: rgba(236,95,82,.14);
-  --ui: #e8e1cf; --ui-on: #1b1a17; --ui-soft: rgba(232,225,207,.12);
-  --link: #b3c3d9;
-  --selection-bg: #5a4a2a;
+  --bg: #14141e;
+  --sidebar-bg: #0a0a14;
+  --sidebar-text: #b8b8c4;
+  --sidebar-heading: #f0f0f5;
+  --sidebar-border: rgba(255,255,255,.08);
+  --sidebar-hover-bg: rgba(255,255,255,.06);
+  --sidebar-hover-text: #fff;
+  --card-bg: #1f1f2e;
+  --border: #2d2d44;
+  --text: #d4d4dc;
+  --text-strong: #f0f0f5;
+  --text-muted: #a8a8b8;
+  --text-subtle: #888;
+  --word-bg: #25253a;
+  --surface-2: #25253a;
+  --row-alt: rgba(255,255,255,.025);
+  --panel-bg: #1b1b28;
+  --chip-bg: #25253a;
+  --chip-text: #e4e4ec;
+  --word-border: #3a3a55;
+  --code-bg: #1f1f2e;
+  --ruby-color: #a8a8b8;
+  --accent: #e94560;
+  --accent-soft: rgba(233,69,96,.14);
+  --ui: #a9c7ee; --ui-on: #10131c; --ui-soft: rgba(169,199,238,.14);
+  --link: #a9c7ee;
+  --selection-bg: #3b6fd6;
   --selection-fg: #fff;
   --shadow-sm: 0 1px 3px rgba(0,0,0,.3);
   --shadow-md: 0 2px 12px rgba(0,0,0,.35);
@@ -5232,8 +5232,7 @@ const DARK_VARS = `
 function darkRules(p) {
   return `
 ${p} .breadcrumb { color: var(--text-muted) !important; }
-/* A note in the margin: a quiet warm surface, ruled in a muted vermilion. */
-${p} blockquote { background: var(--card-bg); border-left-color: color-mix(in srgb, var(--accent) 65%, var(--bg)); }
+${p} blockquote { background: rgba(233, 69, 96, 0.08); }
 `;
 }
 const CSS = minifyCss(`
@@ -6004,11 +6003,11 @@ ${darkRules('html.theme-dark')}
 .theme-choice:hover { border-color: var(--ui); }
 .theme-choice[aria-checked="true"] { border-color: var(--ui); box-shadow: 0 0 0 1px var(--ui); }
 .theme-swatch { width: 1.05rem; height: 1.05rem; border-radius: 50%; border: 1px solid rgba(0,0,0,.25); flex: none; }
-.sw-auto { background: linear-gradient(135deg, #f6f4ef 50%, #171614 50%); }
+.sw-auto { background: linear-gradient(135deg, #f6f4ef 50%, #14141e 50%); }
 .sw-white { background: #ffffff; }
 .sw-light { background: #f6f4ef; }
 .sw-sepia { background: #ece3cf; }
-.sw-dark { background: #171614; }
+.sw-dark { background: #14141e; }
 #theme-menu {
   position: absolute; top: calc(100% + .4rem); right: 0;
   background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-lg);

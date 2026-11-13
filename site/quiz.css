@@ -2,9 +2,9 @@
  * right/wrong colours are new, with their own dark values. */
 #quiz-app { --q-ok: #1a7f4b; --q-ok-bg: rgba(26,127,75,.10); --q-bad: #c0263e; --q-bad-bg: rgba(192,38,62,.08); }
 @media (prefers-color-scheme: dark) {
-  :root:not(.theme-light) #quiz-app { --q-ok: #74c296; --q-ok-bg: rgba(116,194,150,.14); --q-bad: #f0786b; --q-bad-bg: rgba(240,120,107,.12); }
+  :root:not(.theme-light) #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --q-bad: #ff6b81; --q-bad-bg: rgba(255,107,129,.12); }
 }
-html.theme-dark #quiz-app { --q-ok: #74c296; --q-ok-bg: rgba(116,194,150,.14); --q-bad: #f0786b; --q-bad-bg: rgba(240,120,107,.12); }
+html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --q-bad: #ff6b81; --q-bad-bg: rgba(255,107,129,.12); }
 
 #quiz-app { margin: 1.5rem 0 2rem; }
 #quiz-app h2 { font-size: var(--text-lg); margin: 0 0 .6rem; border: 0; padding: 0; }
