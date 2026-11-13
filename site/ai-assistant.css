@@ -42,7 +42,6 @@ body.ai-open #ai-panel { transform: none; visibility: visible; transition: trans
 .ai-effort { flex: 1; text-align: center; font: inherit; font-size: .8rem; font-weight: 400; padding: .35rem .4rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); color: inherit; cursor: pointer; }
 .ai-effort:hover { border-color: var(--ui); }
 .ai-effort.sel { background: var(--ui); border-color: var(--ui); color: var(--ui-on); font-weight: 600; }
-html.theme-dark .ai-model-menu { background: #1f1f2e; }
 .ai-head-btns { display: flex; gap: .1rem; flex-shrink: 0; }
 .ai-head-btns button {
   background: none; border: none; color: var(--text-muted); cursor: pointer;
@@ -106,18 +105,16 @@ html.theme-dark .ai-model-menu { background: #1f1f2e; }
 }
 li:hover .ai-ex-btn { color: var(--text); }
 html .ai-ex-btn.ai-ex-btn:hover { border-color: var(--ui); color: var(--ui); }
-html.theme-dark .ai-ex-btn { border-color: #3a3a55; }
-@media (prefers-color-scheme: dark) { :root:not(.theme-light) .ai-ex-btn { border-color: #3a3a55; } }
 
 /* Floating chip shown over a text selection inside the lesson */
 #ai-sel-chip {
   position: absolute; z-index: 940;
-  background: var(--sidebar-bg); color: #fff; border: none; border-radius: var(--radius-pill);
+  background: var(--ui); color: var(--ui-on); border: none; border-radius: var(--radius-pill);
   padding: .3rem .7rem; font: inherit; font-size: .8rem; cursor: pointer; box-shadow: var(--shadow-md);
   white-space: nowrap;
 }
 #ai-sel-chip[hidden] { display: none; }
-#ai-sel-chip:hover { background: var(--ui); }
+#ai-sel-chip:hover { opacity: .9; }
 
 /* While the panel is open the lesson column is centred in the space that is
    left between the sidebar and the panel (it is normally centred in the whole
@@ -145,8 +142,7 @@ html.theme-dark .ai-ex-btn { border-color: #3a3a55; }
 body.ai-resizing { cursor: col-resize; user-select: none; }
 body.ai-resizing #ai-panel, body.ai-resizing #content { transition: none !important; }
 @media (max-width: 1099px) { .ai-resize { display: none; } }
-html.theme-dark #ai-panel { background: #1f1f2e; }
-html.theme-dark .ai-assistant, html.theme-dark .ai-quick, html.theme-dark .ai-input textarea { background: #17172a; }
+
 
 /* ─── context scope row, message actions ─── */
 .ai-ctx { display: flex; align-items: center; gap: .4rem; font-size: .76rem; color: var(--text-muted); min-width: 0; }

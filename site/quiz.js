@@ -144,7 +144,8 @@
   // Mock-test questions (saved in a test's review) are not in the practice bank:
   // they are listed on the mock-test page, per test.
   function mockFavs(prefix) { return Object.keys(S.fav || {}).filter(function (id) { return S.fav[id] > 0 && id.indexOf(prefix) === 0; }); }
-  function favBtn(q) { var on = isFav(q.id); return '<button class="q-btn q-fav" data-act="fav" data-k="' + q.id + '" aria-pressed="' + on + '">' + (on ? '★ ' + t('已收藏', 'Saved') : '☆ ' + t('收藏', 'Save')) + '</button>'; }
+  // Icon + label; on narrow phones the label hides (CSS), so the name is also in aria-label/title.
+  function favBtn(q) { var on = isFav(q.id), l = on ? t('已收藏', 'Saved') : t('收藏', 'Save'); return '<button class="q-btn q-fav" data-act="fav" data-k="' + q.id + '" aria-pressed="' + on + '" aria-label="' + t('收藏', 'Save') + '" title="' + l + '"><span aria-hidden="true">' + (on ? '★' : '☆') + '</span><span class="q-fav-l">' + l + '</span></button>'; }
 
   // Accuracy over the last RECENT answers to questions matching `pick`.
   function accuracy(pick) {
@@ -266,16 +267,18 @@
     }
   }
   function bar(a) {
-    if (!a) return '<span class="q-acc q-muted">—</span>';
+    // Nothing answered yet: an empty bar on the same line, so rows stay one line and aligned.
+    if (!a) return '<span class="q-acc q-acc-none"><span class="q-bar"></span><span class="q-pct">—</span></span>';
     // The % is the last RECENT answers, not all of them — say so, or it reads as overall accuracy.
-    return '<span class="q-acc' + (a.pct < 60 ? ' q-acc-low' : '') + '" title="' + t('最近 ' + a.n + ' 次作答的正确率', 'Accuracy over the last ' + a.n + ' answers') + '"><small class="q-acc-n">' + t('近 ' + a.n + ' 题', 'last ' + a.n) + '</small><span class="q-bar"><span style="width:' + a.pct + '%"></span></span>' + a.pct + '%</span>';
+    return '<span class="q-acc' + (a.pct < 60 ? ' q-acc-low' : '') + '" title="' + t('最近 ' + a.n + ' 次作答的正确率', 'Accuracy over the last ' + a.n + ' answers') + '"><small class="q-acc-n">' + t('近 ' + a.n + ' 题', 'last ' + a.n) + '</small><span class="q-bar"><span style="width:' + a.pct + '%"></span></span><span class="q-pct">' + a.pct + '%</span></span>';
   }
-  // Phones: the sticky 下一题 sits over whatever follows the options, which after
-  // a wrong answer is the AI button. Scroll just far enough to clear it.
+  // Phones: the sticky 下一题 sits over whatever follows the options, which is
+  // the verdict (the right answer). Scroll just far enough to clear it. (The AI
+  // row now sits near the end of the feedback, so it is not what we keep in view.)
   function keepAiInView() {
     if (window.innerWidth > 760) return;
     var fb = root().querySelector('.q-feedback'), next = fb && fb.querySelector('.q-next');
-    var last = fb && (fb.querySelector('.q-ai') || fb.querySelector('.q-verdict'));
+    var last = fb && fb.querySelector('.q-verdict');
     if (!next || !last) return;
     var gap = last.getBoundingClientRect().bottom + 12 - next.getBoundingClientRect().top;
     if (gap > 0) window.scrollBy({ top: gap, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
@@ -290,8 +293,8 @@
     var h = '';
     // A set belongs to the page it was started on (ids can be on two levels' pages).
     if (S.session && (S.session.level || LEVEL) === LEVEL && S.session.ids.every(function (id) { return Q[id]; }) && S.session.i < S.session.ids.length) {
-      h += '<div class="q-resume">' + t('上一组还剩 ', 'You have ') + (S.session.ids.length - S.session.i) + t(' 题', ' questions left in your last set') +
-        ' <button class="q-btn q-btn-primary" data-act="resume">' + t('继续', 'Continue') + '</button> <button class="q-btn" data-act="drop">' + t('放弃', 'Discard') + '</button></div>';
+      h += '<div class="q-resume"><span class="q-resume-t">' + t('上一组还剩 ', 'You have ') + (S.session.ids.length - S.session.i) + t(' 题', ' questions left in your last set') + '</span>' +
+        '<span class="q-resume-acts"><button class="q-btn q-btn-primary q-btn-xs" data-act="resume">' + t('继续', 'Continue') + '</button><button class="q-btn q-btn-xs" data-act="drop">' + t('放弃', 'Discard') + '</button></span></div>';
     }
     // Overall progress: questions seen at least once, and recent accuracy (same window as the per-type bars).
     var LV = ALL.filter(onLevel), done = LV.filter(function (q) { return seen(q.id); }).length, all = accuracy(function () { return true; });
@@ -305,21 +308,32 @@
       reading: [t('今日阅读练习', 'Today’s reading'), t('这一页只有阅读题。词汇、语法、阅读、听力混合练：', 'Reading questions only on this page. Everything mixed: ')],
       vocabulary: [t('今日词汇练习', 'Today’s vocabulary'), t('这一页只有词汇题。词汇、语法、阅读、听力混合练：', 'Vocabulary questions only on this page. Everything mixed: ')],
     };
+    // Today: the set button, then one line with what matters — due reviews (tap to
+    // start them), today's count and streak — and the set size as a small control.
+    var td = S.days[today()] || 0, sk = streak(), bits = [];
+    if (d) bits.push('<button class="q-link q-due" data-act="review">' + t(d + ' 道错题到期', d + ' due for review') + '</button>');
+    if (td || sk) bits.push(t('今天 ' + td + ' 题', 'Today ' + td) + ' · ' + t('连续 ' + sk + ' 天', 'streak ' + sk + (sk === 1 ? ' day' : ' days')));
+    else if (!d) bits.push(only ? (onlyCk ? t('答完马上看原文和解析', 'Transcript and explanations right after each answer') : t('答完马上看解析', 'Explanations right after each answer'))
+      : ALL.some(isCk) ? t('词汇、语法、阅读、听力混合，答完马上看解析', 'Vocabulary, grammar, reading and listening mixed — explanations right after each answer') : t('词汇、语法、阅读混合，答完马上看解析', 'Vocabulary, grammar and reading mixed — explanations right after each answer'));
     h += '<div class="q-today">' +
       '<button class="q-btn q-btn-primary q-btn-big" data-act="daily">' + (only ? ONLY[only][0] : t('今日练习', 'Today’s practice')) + ' · ' + size + t(' 题', ' questions') + '</button>' +
-      (only ? '<p class="q-muted">' + ONLY[only][1] + '<a href="' + location.pathname.replace(/-(listening|reading|vocabulary)/, '-practice') + '">' + t('练习题', 'practice questions') + '</a></p>' : '') +
-      // Today's count and streak once there is one; a first visit says what a set is.
-      '<p class="q-muted">' + (only && !(S.days[today()] || streak()) ? (onlyCk ? t('答完马上看原文和解析', 'Transcript and explanations right after each answer') : t('答完马上看解析', 'Explanations right after each answer')) : S.days[today()] || streak() ? t('今天做了 ', 'Today: ') + (S.days[today()] || 0) + t(' 题', ' answered') + ' · ' + t('连续 ', 'streak ') + streak() + t(' 天', ' days') :
-        (ALL.some(isCk) ? t('词汇、语法、阅读、听力混在一起，答完马上看解析', 'Vocabulary, grammar, reading and listening mixed — explanations right after each answer') : t('词汇、语法、阅读混在一起，答完马上看解析', 'Vocabulary, grammar and reading mixed — explanations right after each answer'))) + '</p>' +
-      '<label class="q-size">' + t('每组 ', 'Sets of ') + '<select data-act="size">' + [5, 10, 20, 50].map(function (n) { return '<option' + (n === size ? ' selected' : '') + '>' + n + '</option>'; }).join('') + '</select>' + t(' 题（今日练习和按题型练都按这个数）', ' questions (daily sets and practice by type)') + '</label>' + '</div>';
-    h += '<section class="q-sec"><h2>' + t('错题本', 'Review list') + '</h2><p>' +
-      (r ? t('共 ', '') + r + t(' 题，今天到期 ', ' questions, ') + d + t(' 题', ' due today') : t('还没有错题。答错、点了“不会”或“其实是猜的”的题会出现在这里，隔几天再考你一次。', 'Nothing here yet. Questions you miss, mark “I don’t know”, or flag as a guess show up here and come back a few days later.')) + '</p>' +
-      (r ? '<button class="q-btn" data-act="review"' + (d ? '' : ' data-early="1"') + '>' + (d ? t('复习到期的错题', 'Review due questions') : t('提前复习', 'Review early')) + '</button> <button class="q-btn" data-act="review-list">' + t('查看错题', 'See the list') + '</button>' : '') + '</section>';
+      '<div class="q-today-line"><span class="q-today-info">' + bits.join(' · ') + '</span>' +
+      '<label class="q-size" title="' + t('今日练习和按题型练都按这个数', 'For daily sets and practice by type') + '">' + t('每组', 'Set') + ' <select data-act="size" aria-label="' + t('每组题数', 'Questions per set') + '">' + [5, 10, 20, 50].map(function (n) { return '<option' + (n === size ? ' selected' : '') + '>' + n + '</option>'; }).join('') + '</select>' + t(' 题', '') + '</label></div>' +
+      (only ? '<p class="q-muted q-only">' + ONLY[only][1] + '<a href="' + location.pathname.replace(/-(listening|reading|vocabulary)/, '-practice') + '">' + t('练习题', 'practice questions') + '</a></p>' : '') + '</div>';
+    // Review list and saved questions: one quiet line while both are empty, else a compact row each.
     var fv = favs().length, mfv = mockFavs(LEVEL.toLowerCase() + '-m').length;
-    h += '<section class="q-sec"><h2>' + t('我的收藏', 'Saved questions') + '</h2><p>' +
-      (fv ? t('共 ', '') + fv + t(' 题', fv === 1 ? ' question' : ' questions') : mfv ? '' : t('还没有收藏。答完一道题后点 ☆ 收藏，想再看的题就留在这里。', 'Nothing saved yet. After answering a question, tap ☆ Save to keep it here.')) + '</p>' +
-      (fv ? '<button class="q-btn" data-act="fav-start">' + t('练收藏的题', 'Practise saved questions') + '</button> <button class="q-btn" data-act="fav-list">' + t('查看收藏', 'See the list') + '</button>' : '') +
-      (mfv ? '<p class="q-muted">' + t('模拟题里收藏了 ' + mfv + ' 题，', mfv + ' saved from mock tests — ') + '<a href="' + location.pathname.replace(/-(practice|listening|reading|vocabulary)\/$/, '-mock-test/') + '">' + t('在模拟题页查看', 'see them on the mock test page') + '</a></p>' : '') + '</section>';
+    var mockLink = mfv ? '<a class="q-list-more" href="' + location.pathname.replace(/-(practice|listening|reading|vocabulary)\/$/, '-mock-test/') + '">' + t('模拟题里收藏了 ' + mfv + ' 题 ›', mfv + ' saved in mock tests ›') + '</a>' : '';
+    if (!r && !fv && !mfv) h += '<p class="q-muted q-lists-empty">' + t('错题本、收藏都还是空的：答错的题和点 ☆ 的题会出现在这里', 'Your review list and saved questions are empty: questions you miss and ones you save with ☆ show up here') + '</p>';
+    else {
+      h += '<ul class="q-lists">';
+      h += r ? '<li><span class="q-list-name">' + t('错题本', 'Review list') + '</span><span class="q-list-n">' + r + (d ? ' · <b>' + t(d + ' 到期', d + ' due') + '</b>' : '') + '</span><span class="q-list-acts">' +
+          '<button class="q-btn q-btn-sm" data-act="review"' + (d ? '' : ' data-early="1"') + '>' + (d ? t('复习', 'Review') : t('提前复习', 'Review early')) + '</button><button class="q-btn q-btn-sm" data-act="review-list">' + t('查看', 'See list') + '</button></span></li>'
+        : '<li class="q-list-empty"><span class="q-list-name">' + t('错题本', 'Review list') + '</span><span class="q-muted">' + t('还是空的：答错、不会、猜的题会出现在这里', 'empty: questions you miss, skip or guess show up here') + '</span></li>';
+      h += fv ? '<li><span class="q-list-name">' + t('我的收藏', 'Saved') + '</span><span class="q-list-n">' + fv + '</span><span class="q-list-acts">' +
+          '<button class="q-btn q-btn-sm" data-act="fav-start">' + t('练习', 'Practise') + '</button><button class="q-btn q-btn-sm" data-act="fav-list">' + t('查看', 'See list') + '</button></span>' + mockLink + '</li>'
+        : '<li class="q-list-empty"><span class="q-list-name">' + t('我的收藏', 'Saved') + '</span><span class="q-muted">' + (mfv ? '' : t('还是空的：答完点 ☆ 收藏', 'empty: tap ☆ after answering')) + '</span>' + mockLink + '</li>';
+      h += '</ul>';
+    }
     Object.keys(D.groups).forEach(function (g) {
       var keys = Object.keys(D.types).filter(function (k) { return D.types[k].g === g; });
       if (!keys.length) return;
@@ -329,7 +343,7 @@
         if (!list.length) return;
         var done = list.filter(function (q) { return seen(q.id); }).length;
         h += '<li><button class="q-row" data-act="type" data-k="' + k + '"><span class="q-row-name">' + esc(bi(D.types[k])) + ' <small>' + esc(D.types[k].ja) + '</small></span>' +
-          '<span class="q-muted">' + done + '/' + list.length + '</span>' + bar(accuracy(function (q) { return q.type === k; })) + '</button></li>';
+          '<span class="q-muted q-row-n">' + done + '/' + list.length + '</span>' + bar(accuracy(function (q) { return q.type === k; })) + '</button></li>';
       });
       h += '</ul></section>';
     });
@@ -478,7 +492,7 @@
       h += '<p class="q-muted q-hint">' + t('按顺序点选项填进空格，点空格可以撤回。选出 ★ 处的词。', 'Tap the pieces in order to fill the blanks; tap a blank to undo. The answer is what goes in ★.') + '</p>' +
         '<div class="q-pieces" lang="ja">' + q.options.map(function (o, i) { return '<button class="q-piece" data-act="piece" data-i="' + i + '">' + o + '</button>'; }).join('') + '</div>';
     } else {
-      h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><button class="q-opt" data-act="opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</button></li>'; }).join('') + '</ol>';
+      h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><button class="q-opt" data-act="opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span><span class="q-otext">' + o + '</span></button></li>'; }).join('') + '</ol>';
     }
     h += '<div class="q-actions">' + (q.type === 'narabe' ? '<button class="q-btn q-btn-primary" data-act="submit" disabled>' + t('提交', 'Submit') + '</button>' : '') +
       '<button class="q-btn q-idk" data-act="idk">' + t('不会', 'I don’t know') + '</button></div>' +
@@ -538,7 +552,7 @@
       '<div class="q-card">' + (ck ? ckIntro(q) : passageHtml({ passage: q.passage, blank: null }));
     group.forEach(function (g, k) {
       h += '<div class="q-sub" data-q="' + g.id + '">' + (ck ? ckSubNo(g) + ckOpts(g) : '<p class="q-subno">' + t('问题 ', 'Question ') + (k + 1) + '</p><div class="q-stem" lang="ja">' + stemHtml(g) + '</div>' +
-        '<ol class="q-opts" lang="ja">' + g.options.map(function (o, i) { return '<li><button class="q-opt" data-act="opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</button></li>'; }).join('') + '</ol>') +
+        '<ol class="q-opts" lang="ja">' + g.options.map(function (o, i) { return '<li><button class="q-opt" data-act="opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span><span class="q-otext">' + o + '</span></button></li>'; }).join('') + '</ol>') +
         '<div class="q-actions">' + '<button class="q-btn q-idk" data-act="idk">' + t('不会', 'I don’t know') + '</button>' + '</div>' +
         '<div class="q-feedback" aria-live="polite"></div></div>';
     });
@@ -672,12 +686,14 @@
    * the reader's choice, the fixed explanation and the linked lesson section
    * (fetched from the lesson page). Nothing time- or reader-specific goes in,
    * so the same question + choice is the same request and can come from cache. */
-  function aiBtn(primary, act) {
+  // A quiet row near the end of the feedback (AI is used on ~2% of answers):
+  // two small secondary buttons and a short hint.
+  function aiBtn(act) {
     if (!window.jpAI) return '';
     act = act || 'ai';
-    return '<p class="q-ai"><button class="q-btn' + (primary ? ' q-btn-primary' : '') + '" data-act="' + act + '">' + ICO_BOT + ' ' + t('AI 讲解', 'Explain with AI') + '</button>' +
-      '<button class="q-btn q-ai-more" data-act="' + act + '" data-mode="parse">' + t('拆解句子', 'Break down the sentence') + '</button>' +
-      (primary ? ' <span class="q-muted">' + t('针对你选的选项讲，可以追问', 'about the option you picked; ask follow-ups') + '</span>' : '') + '</p>';
+    return '<p class="q-ai"><button class="q-btn q-btn-sm" data-act="' + act + '">' + ICO_BOT + ' ' + t('AI 讲解', 'Explain with AI') + '</button>' +
+      '<button class="q-btn q-btn-sm" data-act="' + act + '" data-mode="parse">' + t('拆解句子', 'Break down the sentence') + '</button>' +
+      '<span class="q-muted q-ai-hint">' + t('针对你选的选项讲，可以追问', 'about the option you picked; ask follow-ups') + '</span></p>';
   }
   function plainJa(html) {
     var d = document.createElement('div');
@@ -797,12 +813,11 @@
 
     cur.choice = choice;
     // 不会 before answering; 其实是猜的 after a right answer (both go on the review list).
-    var h = '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (ok ? '✓ ' + t('正确', 'Correct') : '✗ ' + (choice == null ? t('不会 · ', 'Didn’t know · ') : '') + t('正确答案是 ', 'The answer is ') + (q.answer + 1) + ' <span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span>') +
-      (ok ? ' <button class="q-btn q-was-guess" data-act="was-guess">' + t('其实是猜的', 'I guessed') + '</button>' : '') + ' ' + favBtn(q) + '</p>';
+    // The verdict line: the verdict on the left, 其实是猜的 / ☆ on the right of the same line.
+    var h = '<div class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '"><span class="q-vtext">' + (ok ? '✓ ' + t('正确', 'Correct') : '✗ ' + (choice == null ? t('不会 · ', 'Didn’t know · ') : '') + t('正确答案是 ', 'The answer is ') + (q.answer + 1) + ' <span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span>') + '</span>' +
+      '<span class="q-vtools">' + (ok ? '<button class="q-btn q-was-guess" data-act="was-guess">' + t('其实是猜的', 'I guessed') + '</button>' : '') + favBtn(q) + '</span></div>';
     if (q.type === 'narabe' && !ok) h += '<p class="q-order" lang="ja">' + t('正确顺序：', 'Right order: ') + q.order.map(function (i) { return q.options[i]; }).join(' → ') + '</p>';
     var left = curs ? Object.keys(curs).filter(function (id) { return !curs[id].done; }) : [];
-    var aiFirst = !ok || cur.guess;
-    if (aiFirst) h += aiBtn(true);
     // A recording with several questions: the transcript (it has every question
     // and its answer) once all of them are answered, under the last one.
     if (isCk(q) && !left.length) h += ckScript(q);
@@ -821,7 +836,7 @@
     if (rows.length) h += '<div class="q-box-k">' + (mineRow ? t('另外两个选项', 'The other options') : t('其他选项为什么不对', 'Why the others don’t work')).replace('另外两个', rows.length === 2 ? '另外两个' : '其他') + '</div><ul class="q-wrong">' + rows.map(function (r) { return '<li>' + optB(r.i) + ' — ' + ex(r.w) + '</li>'; }).join('') + '</ul>';
     if (!left.length) h += wholeHtml(q, D.passages);
     h += pointsHtml(q);
-    if (!aiFirst) h += aiBtn(false);
+    h += aiBtn();
     h += '<details class="q-report"><summary>' + t('这题有问题？', 'Something wrong with this question?') + '</summary>' +
       [['answer', '答案不对', 'The answer is wrong'], ['two', '有两个对的', 'Two options work'], ['stem', '题目不通顺', 'The question reads badly'], ['other', '其他', 'Something else']]
         .map(function (r) { return '<button class="q-btn" data-act="report" data-k="' + r[0] + '">' + t(r[1], r[2]) + '</button>'; }).join(' ') +
@@ -1020,7 +1035,8 @@
       var st = mstate(set.id), cur = st.current, att = st.attempts;
       var best = att.filter(function (a) { return a.mode === 'full' && !a.flags.length; }).sort(function (a, b) { return b.total - a.total; })[0];
       var last = att[att.length - 1];
-      h += '<div class="q-card q-set"><h2>' + t('第 ' + set.n + ' 套', 'Test ' + set.n) + (cur ? ' <small class="q-tag">' + t('进行中', 'In progress') + '</small>' : !att.length ? ' <small class="q-tag q-tag-new">' + t('未做', 'Not taken') + '</small>' : '') + '</h2>';
+      h += '<div class="q-card q-set"><h2>' + t('第 ' + set.n + ' 套', 'Test ' + set.n) + (cur ? ' <small class="q-tag">' + t('进行中', 'In progress') + '</small>' : !att.length ? ' <small class="q-tag q-tag-new">' + t('未做', 'Not taken') + '</small>' : '') + '</h2>' +
+        '<p class="q-muted q-set-what">' + setWhat(set) + '</p>';
       if (best) h += '<p>' + t('最好成绩 ', 'Best: ') + best.score.map(function (x) { return x.score + '/' + x.max; }).join(' · ') + t('（估算）', ' (estimate)') + '</p>';
       if (last) h += '<p class="q-muted">' + t('上次 ', 'Last: ') + new Date(last.end).toLocaleDateString() + ' · ' + Math.round(last.used / 60000) + t(' 分钟', ' min') + (last.flags.length ? ' · ' + last.flags.map(flagName).join('、') : '') + '</p>';
       h += '<div class="q-actions">';
@@ -1039,6 +1055,17 @@
           'Test ' + nx + (nx < 3 ? ' and 3 are' : ' is') + ' being written and reviewed and will appear here when ready. Meanwhile, drill your weak question types in ' + '<a href="' + pr + '">practice</a>' + ', or retake test 1 in a week or two to see how far you’ve come.') + '</p></div>';
     }
     app.innerHTML = h;
+  }
+  // What a test is, in one line. The page's data-sets carries only id / n / src /
+  // key; if the build adds `sections` ([{ ja, zh, en, minutes, n }]) the line names
+  // them with minutes and question counts, else it says what every set is.
+  function setWhat(set) {
+    var secs = set.sections;
+    if (secs && secs.length) {
+      var min = secs.reduce(function (a, x) { return a + (+x.minutes || 0); }, 0), n = secs.reduce(function (a, x) { return a + (+x.n || 0); }, 0);
+      return secs.map(function (x) { return esc(EN ? x.en || x.ja : x.zh || x.ja); }).join(' · ') + ' — ' + (n ? n + t(' 题，', ' questions, ') : '') + min + t(' 分钟', ' min');
+    }
+    return t('按真考的结构和时间计时，交卷后估分', 'Timed like the real test, estimated score after you submit');
   }
   function flagName(f) { return { informal: t('非正式（暂停过）', 'informal (paused)'), partial: t('只做了一节', 'one section only'), retake: t('重做', 'retake') }[f] || f; }
   function setById(id) { return SETS.filter(function (s) { return s.id === id; })[0]; }
@@ -1107,7 +1134,7 @@
       for (var gi = g0; gi <= g1; gi++) {
         var gq = Q[ids[gi]], ga = c.answers[gq.id] || {};
         h += '<div class="q-sub" data-q="' + gq.id + '"><p class="q-subno">' + (gi + 1) + '</p><div class="q-stem" lang="ja">' + stemHtml(gq) + '</div>' +
-          '<ol class="q-opts" lang="ja">' + gq.options.map(function (o, i) { return '<li><button class="q-opt' + (ga.c === i ? ' q-picked' : '') + '" data-act="m-opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</button></li>'; }).join('') + '</ol>' +
+          '<ol class="q-opts" lang="ja">' + gq.options.map(function (o, i) { return '<li><button class="q-opt' + (ga.c === i ? ' q-picked' : '') + '" data-act="m-opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span><span class="q-otext">' + o + '</span></button></li>'; }).join('') + '</ol>' +
           '<div class="q-actions"><label class="q-guess"><input type="checkbox" data-act="m-guess"' + (ga.g ? ' checked' : '') + '> ' + t('猜的', 'Guessing') + '</label>' +
           '<button class="q-btn' + (c.flagsQ[gq.id] ? ' q-flagged' : '') + '" data-act="m-flag">⚑ ' + t('标记', 'Flag') + '</button></div></div>';
       }
@@ -1116,7 +1143,7 @@
         h += '<p class="q-muted q-hint">' + t('按顺序点选项填进空格，点空格可以撤回。', 'Tap the pieces in order; tap a blank to undo.') + '</p><div class="q-pieces" lang="ja">' +
           q.options.map(function (o, i) { return '<button class="q-piece" data-act="m-piece" data-i="' + i + '">' + o + '</button>'; }).join('') + '</div>';
       } else {
-        h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><button class="q-opt' + (a.c === i ? ' q-picked' : '') + '" data-act="m-opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</button></li>'; }).join('') + '</ol>';
+        h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><button class="q-opt' + (a.c === i ? ' q-picked' : '') + '" data-act="m-opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span><span class="q-otext">' + o + '</span></button></li>'; }).join('') + '</ol>';
       }
       h += '<div class="q-actions"><label class="q-guess"><input type="checkbox" data-act="m-guess"' + (a.g ? ' checked' : '') + '> ' + t('猜的', 'Guessing') + '</label>' +
         '<button class="q-btn' + (c.flagsQ[id] ? ' q-flagged' : '') + '" data-act="m-flag">⚑ ' + t('标记', 'Flag') + '</button></div>';
@@ -1282,18 +1309,18 @@
           var qq = {}; for (var x in q) qq[x] = q[x]; for (var y in kq) qq[y] = kq[y];
           if (isCk(q)) {
             var again = q.passage && shownP[q.passage]; if (q.passage) shownP[q.passage] = 1;
-            h += '<div class="q-card q-revcard"><p class="q-prob"><b>' + (si + 1) + '-' + p.no + '</b> ' + esc(test.types[p.type].ja) + '<span class="q-qno">' + ckNo(p, id) + '番</span></p>' + ckReview(qq, a, again) + '<p>' + favBtn(q) + '</p>' + aiBtn(false, 'm-ai').replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
+            h += '<div class="q-card q-revcard"><p class="q-prob"><b>' + (si + 1) + '-' + p.no + '</b> ' + esc(test.types[p.type].ja) + '<span class="q-qno">' + ckNo(p, id) + '番</span></p>' + ckReview(qq, a, again) + '<p>' + favBtn(q) + '</p>' + aiBtn('m-ai').replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
             return;
           }
           h += '<div class="q-card q-revcard">';
           if (q.passage && !shownP[q.passage]) { shownP[q.passage] = 1; h += '<details class="q-revpass"><summary>' + t('原文', 'Text') + '</summary>' + passageHtml(qq) + (key.passages[q.passage].au ? listenBtn(key.passages[q.passage].au) : '') + trHtml(key.passages[q.passage].tr) + '</details>'; }
           h += '<p class="q-prob"><b>' + (si + 1) + '-' + p.no + '</b> ' + esc(test.types[p.type].ja) + '</p><div class="q-stem" lang="ja">' + stemHtml(qq).replace(/<button[^>]*>(★)?<\/button>/g, function (m, st) { return st ? '＿★＿' : '＿＿'; }) + '</div>';
           if (q.type === 'narabe') h += '<p lang="ja">' + t('正确顺序：', 'Order: ') + kq.order.map(function (i) { return q.options[i]; }).join(' / ') + '</p>';
-          h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + (i === kq.answer ? ' q-ok' : i === a.c ? ' q-bad' : '') + '"><span class="q-num">' + (i + 1) + '</span>' + o + okjOf(qq, i) + '</div></li>'; }).join('') + '</ol>';
-          h += '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 猜对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + ' ' + favBtn(q) + '</p>';
+          h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + (i === kq.answer ? ' q-ok' : i === a.c ? ' q-bad' : '') + '"><span class="q-num">' + (i + 1) + '</span><span class="q-otext">' + o + '</span>' + okjOf(qq, i) + '</div></li>'; }).join('') + '</ol>';
+          h += '<div class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '"><span class="q-vtext">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 猜对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</span><span class="q-vtools">' + favBtn(q) + '</span></div>';
           h += '<div class="q-explain">' + whyHtml(kq.why) + (q.type !== 'narabe' ? '<ul class="q-wrong">' + kq.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + q.options[i] + okjOf(qq, i) + '</b> — ' + ex(w) + '</li>' : ''; }).join('') + '</ul>' : '') +
             kjHtml(qq) + (kq.tr ? '<p class="q-muted">' + esc(bi(kq.tr)) + '</p>' : '') + (lastOfP ? wholeHtml(qq, key.passages, false) : '') + '</div>' +
-            aiBtn(false, 'm-ai').replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
+            aiBtn('m-ai').replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
         });
       });
     });
@@ -1507,7 +1534,7 @@
       return '<li><button class="' + cls(i) + ' q-ck-pic" data-act="' + act + '" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span><img src="' + CK_IMG + f + '" alt="' + esc(plainJa(q.options[i])) + '" width="304" height="343"></button></li>';
     }).join('') + '</ol>';
     else if (q.spoken) h += '<ol class="q-ck-nums">' + q.options.map(function (o, i) { return '<li><button class="' + cls(i) + '" data-act="' + act + '" data-i="' + i + '" aria-label="' + (i + 1) + '"><span class="q-num">' + (i + 1) + '</span></button></li>'; }).join('') + '</ol>';
-    else h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><button class="' + cls(i) + '" data-act="' + act + '" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</button></li>'; }).join('') + '</ol>';
+    else h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><button class="' + cls(i) + '" data-act="' + act + '" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span><span class="q-otext">' + o + '</span></button></li>'; }).join('') + '</ol>';
     return h;
   }
   function ckTr(q) { return (q.ck.tr && q.ck.tr[EN ? 'en' : 'zh']) || {}; }

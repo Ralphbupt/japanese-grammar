@@ -1117,6 +1117,115 @@ const PAGE_LANGS = [
   { code: "zh", dir: "zh/", htmlLang: "zh-CN", hreflang: "zh-Hans", ogLocale: "zh_CN" },
 ];
 
+// ─── Lesson page presentation ───
+// Last pass over a lesson's HTML before it is written: markup for layout only.
+// Every visible character stays where it was (textContent is unchanged), so
+// ids, search, cross-links, the AI panel's section reading and SEO see the
+// same text; earlier passes (search index, cross-link index) already ran.
+
+// Call fn(inner, lang) for each top-level <span class="lang-xx"> in `html`
+// (nested spans inside are kept whole); with none, fn(html, null).
+function mapLangSpans(html, fn) {
+  const open = /<span class="lang-(zh|en)">/g;
+  let out = "", i = 0, m, any = false;
+  while ((m = open.exec(html))) {
+    const tags = /<span\b[^>]*>|<\/span>/g;
+    tags.lastIndex = m.index + m[0].length;
+    let depth = 1, t;
+    while (depth && (t = tags.exec(html))) depth += t[0][1] === "/" ? -1 : 1;
+    if (depth) return any ? out + html.slice(i) : fn(html, null);
+    const inner = html.slice(m.index + m[0].length, t.index);
+    out += html.slice(i, m.index) + m[0] + fn(inner, m[1]) + "</span>";
+    i = open.lastIndex = tags.lastIndex;
+    any = true;
+  }
+  return any ? out + html.slice(i) : fn(html, null);
+}
+
+const plainOf = (h) => h.replace(/<(rt|rp)>[\s\S]*?<\/\1>/g, "").replace(/<[^>]+>/g, "");
+const KANA_RE = /[぀-ゟ゠-ヿ]/;
+
+// H1 "Lesson 61 – 程度・限定 — に過ぎない/にほかならない/…": a kicker line
+// (第 61 课 · N2 / Lesson 61 · N2, outside the h1), the topic as the title and
+// the patterns after " — " as chips. "Lesson NN – " and the " — " and "/"
+// separators stay in the h1, visually hidden.
+function presentLessonH1(html, lesson) {
+  const num = (lesson.id.match(/^lesson(\d+)/) || [])[1];
+  if (!num || !/^N[1-5]$/.test(lesson.level || "")) return html;
+  return html.replace(/<h1>([\s\S]*?)<\/h1>/, (whole, content) => {
+    if (!/^\s*(<span class="lang-zh">)?Lesson\s+\d+\s*[–—-]/.test(content)) return whole;
+    const h1 = mapLangSpans(content, (inner) => {
+      const pre = inner.match(/^Lesson\s+\d+\s*[–—-]\s*/);
+      let rest = pre ? inner.slice(pre[0].length) : inner;
+      const head = pre ? `<span class="visually-hidden">${pre[0]}</span>` : "";
+      const sep = rest.indexOf(" — ");
+      if (sep < 0 || !KANA_RE.test(plainOf(rest.slice(sep + 3)))) return `${head}<span class="h1-topic">${rest}</span>`;
+      const topic = rest.slice(0, sep);
+      let pats = rest.slice(sep + 3), sub = "";
+      // "… — patterns — “Even If” in Japanese": the part after a second dash stays text.
+      const sep2 = pats.indexOf(" — ");
+      if (sep2 >= 0) { sub = `<span class="visually-hidden"> — </span><span class="h1-sub">${pats.slice(sep2 + 3)}</span>`; pats = pats.slice(0, sep2); }
+      const chips = pats.split(/(\s*[/／]\s*)/).map((p, k) => (k % 2
+        ? `<span class="visually-hidden">${p}</span>`
+        : `<span class="h1-pat">${p}</span>`)).join("");
+      return `${head}<span class="h1-topic">${topic}</span><span class="visually-hidden"> — </span><span class="h1-pats" lang="ja">${chips}</span>${sub}`;
+    });
+    const n = String(+num);
+    const kicker = `<p class="lesson-kicker"><span class="lang-zh">第 ${n} 课 · ${lesson.level}</span><span class="lang-en">Lesson ${n} · ${lesson.level}</span></p>`;
+    return `${kicker}<h1 class="lesson-h1">${h1}</h1>`;
+  });
+}
+
+// "## N. 〜pattern（gloss）": number, pattern, gloss as separate pieces.
+function presentPointHeadings(html) {
+  return html.replace(/<h2([^>]*)>([\s\S]*?)<\/h2>/g, (whole, attrs, content) => {
+    let hit = false;
+    const out = mapLangSpans(content, (inner) => {
+      const nm = inner.match(/^(\d+[.．、])(\s*)/);
+      if (!nm) return inner;
+      hit = true;
+      let body = inner.slice(nm[0].length), gloss = "";
+      const gm = body.match(/(\s*)(（[^（）]*）|\([^()]*\))\s*$/);
+      if (gm && gm.index > 0) { gloss = body.slice(gm.index + gm[1].length); body = body.slice(0, gm.index + gm[1].length); }
+      // English side: the build's romaji follows the pattern.
+      const ri = body.indexOf('<span class="romaji">');
+      let pat = ri >= 0 ? body.slice(0, ri) : body, tail = ri >= 0 ? body.slice(ri) : "";
+      const ws = pat.match(/\s*$/)[0];
+      pat = pat.slice(0, pat.length - ws.length);
+      const ja = !hasSC(plainOf(pat)) && KANA_RE.test(plainOf(pat)) ? ' lang="ja"' : "";
+      return `<span class="gp-num">${nm[1]}</span>${nm[2]}<span class="gp-pat"${ja}>${pat}</span>${ws}${tail}`
+        + (gloss ? `<span class="gp-gloss">${gloss}</span>` : "");
+    });
+    return hit ? `<h2${attrs.includes("class=") ? attrs.replace(/class="/, 'class="gp-head ') : attrs + ' class="gp-head"'}>${out}</h2>` : whole;
+  });
+}
+
+// The vocabulary table folds away under a one-line summary (closed by
+// default), the heading itself inside the summary so its anchor still works.
+function presentVocab(html) {
+  return html.replace(/<h2([^>]*\bid="[^"]*单词表[^"]*"[^>]*)>([\s\S]*?)<\/h2>\s*(<div class="table-scroll"><table class="word-table">[\s\S]*?<\/table><\/div>)/,
+    (whole, attrs, content, table) => {
+      const n = (table.match(/<tbody>([\s\S]*?)<\/tbody>/) || ["", ""])[1].split("<tr>").length - 1;
+      if (!n) return whole;
+      const count = `<span class="vocab-count"><span class="lang-zh">（${n} 个词）</span><span class="lang-en"> (${n} words)</span></span>`;
+      return `<details class="vocab-fold"><summary><h2${attrs}>${content}</h2>${count}</summary>\n${table}\n</details>`;
+    });
+}
+
+// A short bold pattern in a model sentence (≤ 8 characters) never breaks
+// across lines.
+function presentExamples(html) {
+  return html.replace(/<li data-ja data-ex[^>]*>[\s\S]*?<\/li>/g, (li) =>
+    li.replace(/<strong>([\s\S]*?)<\/strong>/g, (m, inner) => {
+      const len = [...plainOf(inner).trim()].length;
+      return len && len <= 8 ? `<strong class="nobr">${inner}</strong>` : m;
+    }));
+}
+
+function presentLesson(html, lesson) {
+  return presentExamples(presentVocab(presentPointHeadings(presentLessonH1(html, lesson))));
+}
+
 // Turn a rendered multilingual page into its `lang` copy: drop the other
 // languages' blocks inside <main>, and (outside the root language) point
 // links to pages that have a copy in this language at /<dir>… so readers and
@@ -2863,7 +2972,8 @@ ${SETTINGS_SCRIPT}`;
 <link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
 <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#1a1a2e">
+<meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171614" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="jpnotes">
@@ -3156,15 +3266,15 @@ ${CSS}
     margin-left: calc(var(--sidebar-w) + max(0px, (100vw - var(--sidebar-w) - var(--col)) / 2)) !important;
   }
 }
-.back-link { display: block; margin-bottom: 1.5rem; color: var(--ui); text-decoration: none; font-size: 0.9rem; }
+.back-link { display: block; margin-bottom: 1.5rem; color: var(--link); text-decoration: none; font-size: 0.9rem; }
 .back-link:hover { text-decoration: underline; }
 .breadcrumb { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem; }
 .breadcrumb a { color: var(--text-muted); text-decoration: none; }
-.breadcrumb a:hover { color: var(--ui); text-decoration: underline; }
+.breadcrumb a:hover { color: var(--link); text-decoration: underline; }
 .breadcrumb .sep { margin: 0 0.4em; }
 .prev-next { display: flex; justify-content: space-between; align-items: flex-start; margin: 2.5rem 0 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); gap: 1rem; }
 .prev-next-top { margin: 0 0 1.75rem; padding: 0 0 1rem; border-top: none; border-bottom: 1px solid var(--border); }
-.pn-link { font-size: 0.9rem; color: var(--ui); text-decoration: none; max-width: 48%; }
+.pn-link { font-size: 0.9rem; color: var(--link); text-decoration: none; max-width: 48%; }
 .pn-link:hover { text-decoration: underline; }
 .pn-prev { text-align: left; }
 .pn-next { text-align: right; margin-left: auto; }
@@ -3180,7 +3290,7 @@ ${sidebarMarkupHtml}
     ${prevHtml}
     ${nextHtml}
   </nav>
-  <article class="lesson active">${addQuizLinks(lesson.html, lesson.id, lessonLevel)}</article>
+  <article class="lesson active">${presentLesson(addQuizLinks(lesson.html, lesson.id, lessonLevel), lesson)}</article>
   <nav class="prev-next" aria-label="lesson navigation">
     ${prevHtml}
     ${nextHtml}
@@ -3205,6 +3315,14 @@ ${APP_PREFS_JS}
     else if (prev && prev.href && window.gaEvent) window.gaEvent('prev_lesson', { from: location.pathname, to: new URL(prev.href).pathname });
     else if (cross && cross.href && window.gaEvent) window.gaEvent('cross_link_click', { from: location.pathname, to: new URL(cross.href).pathname, term: (cross.querySelector('.cross-link-term') || {}).textContent || '' });
   });
+  // A link to something inside a folded <details> (the vocabulary table) opens it.
+  function openHash() {
+    var id = ''; try { id = decodeURIComponent(location.hash.slice(1)); } catch (e) {}
+    var el = id && document.getElementById(id), d = el && el.closest('details');
+    if (d && !d.open) { d.open = true; el.scrollIntoView(); }
+  }
+  openHash();
+  window.addEventListener('hashchange', openHash);
 })();
 // Checklist persistence — the spaced-repetition / mastery checkboxes are
 // keyed by 'lesson:idx' and stored under CHECK_KEY so a tick survives page
@@ -3323,33 +3441,19 @@ ${APP_PREFS_JS}
 .overview-card { display: block; padding: 1rem 1.2rem; background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-lg); text-decoration: none; color: inherit; transition: all var(--transition); }
 .overview-card:hover { border-color: var(--ui); box-shadow: var(--shadow-hover); transform: translateY(-1px); }
 .overview-card-head { display: flex; align-items: baseline; gap: .6rem; margin-bottom: .5rem; }
-.overview-day { font-size: .75rem; font-weight: 700; color: var(--ui); white-space: nowrap; }
+.overview-day { font-size: .75rem; font-weight: 700; color: var(--link); white-space: nowrap; }
 .overview-title { font-size: .95rem; font-weight: 600; color: var(--text-strong); }
 .overview-points { display: flex; flex-wrap: wrap; gap: .3rem; }
-.grammar-pill { font-size: .75rem; background: #f4f4f4; color: var(--text-muted); padding: .15rem .5rem; border-radius: var(--radius-sm); }
+.grammar-pill { font-size: .75rem; background: var(--chip-bg); color: var(--text-muted); padding: .15rem .5rem; border-radius: var(--radius-sm); }
 .overview-table { width: 100%; border-collapse: collapse; margin: 1rem 0 2rem; font-size: .9rem; }
 .overview-table th { background: var(--word-bg); font-weight: 600; padding: .5rem .8rem; text-align: left; border: 1px solid var(--border); }
 .overview-table td { padding: .4rem .8rem; border: 1px solid var(--border); }
 .overview-table td:first-child { font-weight: 500; }
-.overview-table a { color: var(--ui); text-decoration: none; }
+.overview-table a { color: var(--link); text-decoration: none; }
 .overview-table a:hover { text-decoration: underline; }
 .level-stats { display: flex; gap: 2rem; margin: 1rem 0; padding: 1rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .level-stat strong { display: block; font-size: 1.6rem; color: var(--text-strong); }
 .level-stat span { font-size: .8rem; color: var(--text-muted); }
-@media (prefers-color-scheme: dark) {
-  :root:not(.theme-light) .overview-intro { background: #1f1f2e; color: #c8c8d4; }
-  :root:not(.theme-light) .overview-card { background: #1f1f2e; }
-  :root:not(.theme-light) .overview-day { color: #ff7088; }
-  :root:not(.theme-light) .overview-title { color: #f0f0f5; }
-  :root:not(.theme-light) .grammar-pill { background: #25253a; color: #c8c8d4; }
-}
-
-/* Manual dark override (toggled via JS, mirrors media query rules) */
-html.theme-dark .overview-intro { background: #1f1f2e; color: #c8c8d4; }
-html.theme-dark .overview-card { background: #1f1f2e; }
-html.theme-dark .overview-day { color: #ff7088; }
-html.theme-dark .overview-title { color: #f0f0f5; }
-html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
 `;
   // A lesson's i-th grammar point, one label per language when they differ.
   const pointLabel = (l, i) => {
@@ -3839,20 +3943,10 @@ ${CSS}
 .about-content ul { margin: .6rem 0 .6rem 1.4rem; }
 .about-content li { margin: .3rem 0; }
 .about-content blockquote { background: var(--card-bg); border-left: 3px solid var(--word-border); padding: .7rem 1.1rem; margin: 1rem 0; color: var(--text-muted); }
-.about-content a { color: var(--ui); text-decoration: none; }
+.about-content a { color: var(--link); text-decoration: none; }
 .about-content a:hover { text-decoration: underline; }
 .about-content code { background: var(--code-bg); padding: .1rem .3rem; border-radius: var(--radius-sm); font-size: .9em; }
 .about-content strong { color: var(--text-strong); }
-@media (prefers-color-scheme: dark) {
-  :root:not(.theme-light) .about-content h2 { color: #e4e4ec; }
-  :root:not(.theme-light) .about-content strong { color: #f0f0f5; }
-  :root:not(.theme-light) .about-content blockquote { background: var(--ui-soft); color: #b8b8c4; }
-}
-
-/* Manual dark override (toggled via JS, mirrors media query rules) */
-html.theme-dark .about-content h2 { color: #e4e4ec; }
-html.theme-dark .about-content strong { color: #f0f0f5; }
-html.theme-dark .about-content blockquote { background: var(--ui-soft); color: #b8b8c4; }
 </style>
 </head>
 <body class="sidebar-collapsed">
@@ -3962,8 +4056,15 @@ ${CSS}
 .breadcrumb .sep { margin: 0 .4em; }
 .quiz-head h1 { font-size: var(--text-2xl); margin: 0 0 .6rem; }
 .quiz-head p { color: var(--text-muted); line-height: 1.7; margin: 0; }
-.quiz-head .quiz-nav { margin-top: .6rem; font-size: .92rem; }
-.quiz-head .quiz-nav a { color: var(--link); }
+/* Sibling pages: a row of quiet chips; one scrollable line on phones. */
+.quiz-head .quiz-nav { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .8rem; font-size: .8rem; line-height: 1.3; }
+.quiz-head .quiz-nav a { display: inline-flex; align-items: center; flex: none; padding: .3rem .7rem; border: 1px solid var(--border); border-radius: var(--radius-pill); background: var(--card-bg); color: var(--text); text-decoration: none; white-space: nowrap; }
+.quiz-head .quiz-nav a:hover { border-color: var(--ui); color: var(--link); }
+.quiz-head .quiz-nav .ico { margin-right: .3em; }
+@media (max-width: 768px) {
+  .quiz-head .quiz-nav { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-right: -1rem; padding-right: 1rem; }
+  .quiz-head .quiz-nav::-webkit-scrollbar { display: none; }
+}
 .quiz-about { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); line-height: 1.75; }
 .quiz-about h2 { font-size: var(--text-xl); margin: 1.8rem 0 .6rem; }
 .quiz-about table { border-collapse: collapse; margin: .6rem 0 1rem; font-size: .92rem; }
@@ -4296,14 +4397,14 @@ ${lessonList}</section>`;
     const hasCk = ckLevels.includes(level);
     // The pages link to each other (when the other one exists).
     const navLinks = (here, en) => [
-      here !== practiceId && `✍ <a href="${SITE_PATH}${practiceId}/">${en ? "Practice by question type" : "按题型练习"}</a>`,
-      here !== listeningId && hasCk && `🎧 <a href="${SITE_PATH}${listeningId}/">${en ? `${level} listening practice` : `${level} 听力练习`}</a>`,
+      here !== practiceId && `<a href="${SITE_PATH}${practiceId}/">✍ ${en ? "Practice by question type" : "按题型练习"}</a>`,
+      here !== listeningId && hasCk && `<a href="${SITE_PATH}${listeningId}/">🎧 ${en ? `${level} listening practice` : `${level} 听力练习`}</a>`,
       ...SUBSET_PAGES.filter((p) => p.levels.includes(level) && here !== `${lv}-${p.id}`).map((p) => (p.id === "reading"
-        ? `📖 <a href="${SITE_PATH}${lv}-reading/">${en ? `${level} reading practice` : `${level} 阅读练习`}</a>`
-        : `🔤 <a href="${SITE_PATH}${lv}-vocabulary/">${en ? `${level} vocabulary practice` : `${level} 词汇练习`}</a>`)),
-      here !== mockId && mocks.length && `⏱ <a href="${SITE_PATH}${mockId}/">${en ? `Timed ${level} mock test` : `${level} 模拟题（计时）`}</a>`,
-      here !== cardsId && `🗂 <a href="${SITE_PATH}${cardsId}/">${en ? "Grammar flashcards" : "语法卡片（在线背）"}</a>`,
-    ].filter(Boolean).join(" · ");
+        ? `<a href="${SITE_PATH}${lv}-reading/">📖 ${en ? `${level} reading practice` : `${level} 阅读练习`}</a>`
+        : `<a href="${SITE_PATH}${lv}-vocabulary/">🔤 ${en ? `${level} vocabulary practice` : `${level} 词汇练习`}</a>`)),
+      here !== mockId && mocks.length && `<a href="${SITE_PATH}${mockId}/">⏱ ${en ? `Timed ${level} mock test` : `${level} 模拟题（计时）`}</a>`,
+      here !== cardsId && `<a href="${SITE_PATH}${cardsId}/">🗂 ${en ? "Grammar flashcards" : "语法卡片（在线背）"}</a>`,
+    ].filter(Boolean).join(" ");
     const src = writeQuizDataByLang(`${lv}.json`, practice);
     const count = practice.questions.length;
     const meta = {
@@ -4414,7 +4515,10 @@ ${lessonList}</section>`;
     if (!mocks.length) continue;
     // Mock tests: the test file, and its answer key loaded only after submitting.
     const sets = mocks.map(({ test, key }) => ({ id: test.id, n: test.n, src: writeQuizDataByLang(`${test.id}.json`, test), key: writeQuizDataByLang(`${test.id}.key.json`, key) }));
-    const setsFor = (code) => JSON.stringify(sets.map((x) => ({ ...x, src: x.src[code], key: x.key[code] })));
+    // sections: what each test is, for the mock list's one-line summary (setWhat() in quiz.js).
+    // test.sections are the sittings actually written, so a listening sitting left out for missing audio isn't listed.
+    const secsOf = mocks.map(({ test }) => test.sections.map((sec) => ({ ja: sec.ja, zh: sec.zh, en: sec.en, minutes: sec.minutes, n: sec.problems.reduce((a, p) => a + p.ids.length, 0) })));
+    const setsFor = (code) => JSON.stringify(sets.map((x, i) => ({ ...x, src: x.src[code], key: x.key[code], sections: secsOf[i] }))).replace(/'/g, "\\u0027");
     const mockMeta = {
       en: {
         title: `JLPT ${level} Mock Test — Free Timed Sample Exam with Score`,
@@ -4927,14 +5031,14 @@ Each \`/lessonNN/\` page contains:
 })();
 </script>
 <style>
-  body { font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 0 16px; background: #fafaf8; color: #333; }
-  @media (prefers-color-scheme: dark) { body { background: #16161d; color: #ddd; } }
+  body { font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 0 16px; background: #f6f4ef; color: #2b2a27; }
+  @media (prefers-color-scheme: dark) { body { background: #171614; color: #d9d4c7; } }
   .box { text-align: center; max-width: 30rem; }
   h1 { font-size: 3.5rem; margin: 0; }
   p { font-size: 1.1rem; margin: .8rem 0; }
   ul { list-style: none; padding: 0; margin: 1.2rem 0 0; line-height: 2; }
-  a { color: #c0303f; text-decoration: none; }
-  @media (prefers-color-scheme: dark) { a { color: #e94560; } }
+  a { color: #1f3d63; text-decoration: none; }
+  @media (prefers-color-scheme: dark) { a { color: #b3c3d9; } }
 </style>
 </head>
 <body>
@@ -5089,6 +5193,49 @@ Each \`/lessonNN/\` page contains:
 }
 
 // ─── CSS ───
+// Dark theme tokens ("sumi": warm ink black, paper text, vermilion pen).
+// Contrast on --bg / --card-bg: text ≥ 11:1, muted ≥ 6:1, accent ≥ 4.9:1.
+const DARK_VARS = `
+  --bg: #171614;
+  --sidebar-bg: #100f0e;
+  --sidebar-text: #b9b3a4;
+  --sidebar-heading: #f1ecdf;
+  --sidebar-border: rgba(232,225,207,.08);
+  --sidebar-hover-bg: rgba(232,225,207,.06);
+  --sidebar-hover-text: #f1ecdf;
+  --card-bg: #1f1e1b;
+  --border: #35322c;
+  --text: #d9d4c7;
+  --text-strong: #f1ecdf;
+  --text-muted: #a59f90;
+  --text-subtle: #8a8475;
+  --word-bg: #282622;
+  --surface-2: #282622;
+  --row-alt: rgba(232,225,207,.025);
+  --panel-bg: #1f1e1b;
+  --chip-bg: #2c2a25;
+  --chip-text: var(--text-strong);
+  --word-border: #46423a;
+  --code-bg: #1f1e1b;
+  --ruby-color: #a59f90;
+  --accent: #ec5f52;
+  --accent-soft: rgba(236,95,82,.14);
+  --ui: #e8e1cf; --ui-on: #1b1a17; --ui-soft: rgba(232,225,207,.12);
+  --link: #b3c3d9;
+  --selection-bg: #5a4a2a;
+  --selection-fg: #fff;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.3);
+  --shadow-md: 0 2px 12px rgba(0,0,0,.35);
+  --shadow-hover: 0 4px 18px rgba(0,0,0,.4);
+`;
+// The few dark rules tokens can't express, for one theme selector prefix.
+function darkRules(p) {
+  return `
+${p} .breadcrumb { color: var(--text-muted) !important; }
+/* A note in the margin: a quiet warm surface, ruled in a muted vermilion. */
+${p} blockquote { background: var(--card-bg); border-left-color: color-mix(in srgb, var(--accent) 65%, var(--bg)); }
+`;
+}
 const CSS = minifyCss(`
 :root {
   --sidebar-w: 230px;
@@ -5365,12 +5512,6 @@ body.sidebar-collapsed #content {
 .lesson.active { display: block; content-visibility: visible; }
 .comments-section { margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border); }
 .comments-heading { font-size: var(--text-lg); margin: 0 0 1rem; color: var(--text-muted); font-weight: 600; }
-@media (prefers-color-scheme: dark) {
-  :root:not(.theme-light) .comments-heading { color: #999; }
-}
-
-/* Manual dark override (toggled via JS, mirrors media query rules) */
-html.theme-dark .comments-heading { color: #999; }
 
 /* Bilingual toggle */
 :not(body).lang-en { display: none; }
@@ -5484,7 +5625,7 @@ table.word-table .colloc-ja { font-size: 1.1em; color: var(--text); margin-right
 }
 .checklist-progress .progress-label { white-space: nowrap; }
 .checklist-progress .progress-bar {
-  flex: 1; height: 6px; background: #e3dfd5; border-radius: var(--radius-sm); overflow: hidden;
+  flex: 1; height: 6px; background: var(--border); border-radius: var(--radius-sm); overflow: hidden;
 }
 .checklist-progress .progress-fill {
   height: 100%; background: var(--ui); border-radius: var(--radius-sm); transition: width .3s;
@@ -5545,12 +5686,6 @@ pre code { background: none; padding: 0; }
 }
 .speak-btn:hover { opacity: 1; border-color: var(--ui); }
 .speak-btn.playing { opacity: 1; border-color: var(--ui); }
-@media (prefers-color-scheme: dark) {
-  :root:not(.theme-light) .speak-btn { border-color: #3a3a55; }
-  :root:not(.theme-light) .speak-btn:hover { border-color: var(--ui); }
-}
-html.theme-dark .speak-btn { border-color: #3a3a55; }
-html.theme-dark .speak-btn:hover { border-color: var(--ui); }
 
 /* Cross-links */
 .related-grammar {
@@ -5581,7 +5716,7 @@ html.theme-dark .speak-btn:hover { border-color: var(--ui); }
 }
 .cross-link:hover { background: var(--ui); color: var(--ui-on); }
 .cross-link:hover .cross-link-desc,
-.cross-link:hover .cross-link-level { color: rgba(255,255,255,.9); background: none; border-color: rgba(255,255,255,.5); }
+.cross-link:hover .cross-link-level { color: inherit; opacity: .85; background: none; border-color: currentColor; }
 .cross-link-term { font-weight: 600; }
 .cross-link-desc { font-size: .88em; margin-left: .35em; color: var(--text-muted); font-weight: 400; }
 h2 .romaji { font-weight: 400; font-size: .7em; color: var(--text-muted); letter-spacing: .01em; }
@@ -5593,6 +5728,34 @@ h2 .romaji { font-weight: 400; font-size: .7em; color: var(--text-muted); letter
   padding: 0 .35em; border-radius: var(--radius-sm);
   vertical-align: 1px;
 }
+
+/* Lesson header (presentLessonH1): a small kicker, the topic as the title,
+   the lesson's patterns as a row of chips. */
+.lesson-kicker { margin: 0 0 .3rem; font-size: .78rem; font-weight: 600; letter-spacing: .06em; color: var(--text-muted); }
+.h1-topic { display: block; }
+.h1-pats { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .7rem; font-size: .9rem; font-weight: 500; line-height: 1.4; }
+.h1-sub { display: block; margin-top: .45rem; font-size: .9rem; font-weight: 400; color: var(--text-muted); }
+.h1-pat { display: inline-block; padding: .2rem .65rem; border: 1px solid var(--border); border-radius: var(--radius-pill); background: var(--card-bg); color: var(--text-strong); }
+/* Grammar point headings (presentPointHeadings): number in red pen, the
+   pattern at heading size, its gloss smaller and muted. */
+.gp-num { color: var(--accent); font-variant-numeric: tabular-nums; }
+.gp-pat { font-weight: 700; }
+.gp-gloss { font-size: .66em; font-weight: 400; color: var(--text-muted); margin-left: .25em; letter-spacing: 0; }
+@media (max-width: 768px) {
+  .gp-gloss { display: block; margin: .15rem 0 0; line-height: 1.5; }
+}
+/* Vocabulary folded under one quiet row (presentVocab) */
+details.vocab-fold { background: none; border-radius: 0; padding: 0; margin: 1.4rem 0 1rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+details.vocab-fold > summary { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 .3rem; padding: .55rem .15rem; list-style: none; font-weight: 400; color: var(--text-muted); }
+details.vocab-fold > summary::-webkit-details-marker { display: none; }
+details.vocab-fold > summary::before { content: "›"; display: inline-block; width: .9em; color: var(--text-muted); transition: transform var(--transition); }
+details.vocab-fold[open] > summary::before { transform: rotate(90deg); }
+details.vocab-fold > summary h2 { display: inline; margin: 0; font-size: .95rem; font-weight: 600; color: var(--text-strong); }
+details.vocab-fold > summary:hover h2 { color: var(--link); }
+.vocab-count { font-size: .85rem; }
+details.vocab-fold > .table-scroll { margin-top: 0; }
+/* A short taught pattern in an example never splits across lines */
+li[data-ex] strong.nobr { white-space: nowrap; }
 
 /* Details */
 details {
@@ -5615,7 +5778,7 @@ summary:hover { color: var(--link); }
 }
 .site-footer nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .3rem 1.2rem; }
 .site-footer a { color: inherit; text-decoration: none; white-space: nowrap; }
-.site-footer a:hover { color: var(--ui); }
+.site-footer a:hover { color: var(--link); }
 .site-footer p { margin: .5rem 0 0; }
 
 /* Narrow screens: no right margin on content */
@@ -5708,6 +5871,13 @@ body.sidebar-collapsed #content.home {
   table.word-table td:first-child { font-size: 1rem; }
   table.word-table td:nth-child(2) { white-space: nowrap; font-size: .8rem; }
   table.word-table th, table.word-table td { padding-left: .45rem; padding-right: .45rem; }
+  /* Word tables stack: word + reading on one line, the meaning below it. */
+  table.word-table, table.word-table tbody { display: block; }
+  table.word-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  table.word-table tr { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: .7rem; align-items: baseline; padding: .55rem .15rem; border-bottom: 1px solid var(--border); background: none; }
+  table.word-table td { border: 0; padding: 0; min-width: 0; }
+  table.word-table td:nth-child(2) { white-space: normal; }
+  table.word-table td:nth-child(3) { grid-column: 1 / -1; margin-top: .15rem; }
 }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .home-practice h2 { font-size: 1.35rem; margin: 0 0 .5rem; color: var(--text-strong); }
@@ -5757,142 +5927,23 @@ table.practice-index tbody tr:hover td, table.practice-index tbody tr:hover th {
   margin: .6rem 0;
 }
 .home-howto a {
-  color: var(--ui); text-decoration: underline;
+  color: var(--link); text-decoration: underline;
   text-underline-offset: 2px;
 }
 .home-howto a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
 
-/* ─── Dark mode (follows OS preference) ───
-   The site already uses CSS variables for most colors, so overriding
-   them here flips the palette without touching individual rules. The
-   accent red (#e94560) and ruby furigana color stay — they read well
-   on both light and dark backgrounds. */
+/* ─── Dark mode: "sumi" ───
+   Ink-black paper, paper-coloured text, the same vermilion pen and an ink
+   that turns into paper: primary buttons are paper on ink, links a washed
+   indigo so they still read apart from body text. Everything else follows
+   from the tokens, so the rules below stay few. Written once (DARK_VARS /
+   darkRules) for both the OS preference and the manual choice. */
 @media (prefers-color-scheme: dark) {
-  :root:not(.theme-light) {
-    --bg: #14141e;
-    --sidebar-bg: #0a0a14;
-    --sidebar-text: #b8b8c4;
-    --sidebar-heading: #f0f0f5;
-    --sidebar-border: rgba(255,255,255,.08);
-    --sidebar-hover-bg: rgba(255,255,255,.06);
-    --sidebar-hover-text: #fff;
-    --card-bg: #1f1f2e;
-    --border: #2d2d44;
-    --text: #d4d4dc;
-    --text-strong: #f0f0f5;
-    --text-muted: #a8a8b8;
-    --text-subtle: #888;
-    --word-bg: #25253a;
-    --surface-2: #25253a;
-    --word-border: #3a3a55;
-    --code-bg: #1f1f2e;
-    --ruby-color: #a8a8b8;
-    --accent: #e94560;
-    --ui: #a9c7ee; --ui-on: #10131c; --ui-soft: rgba(169,199,238,.14);
-    --link: #a9c7ee;
-    --selection-bg: #3b6fd6;
-    --selection-fg: #fff;
-  }
-  /* Accent-colored strong text fails 4.5:1 on dark card surfaces; brighten. */
-  :root:not(.theme-light) .seo-lead strong, :root:not(.theme-light) .home-intro strong { color: var(--text-strong); }
-  /* .breadcrumb is defined on each page; override gray contrast for dark. */
-  :root:not(.theme-light) .breadcrumb { color: #999 !important; }
-  /* .related-label gray on the (red-tinted) related-grammar box was 4.46
-     in dark mode (just under AA 4.5). Lighten to clear the bar. */
-  :root:not(.theme-light) .related-label { color: #a8a8b8; }
-  :root:not(.theme-light) body { color: #d4d4dc; }
-  :root:not(.theme-light) h1 { color: #f0f0f5; }
-  :root:not(.theme-light) h2 { color: #e4e4ec; }
-  :root:not(.theme-light) h3, :root:not(.theme-light) h4 { color: #d8d8e0; }
-  :root:not(.theme-light) th { background: #25253a; color: #e4e4ec; }
-  :root:not(.theme-light) tr:nth-child(even) { background: rgba(255, 255, 255, 0.025); }
-  :root:not(.theme-light) blockquote { background: rgba(233, 69, 96, 0.08); }
-  :root:not(.theme-light) details { background: #1f1f2e; }
-  :root:not(.theme-light) ul:has(input[type="checkbox"]) li:hover { background: #1f1f2e; }
-  :root:not(.theme-light) ul:has(input[type="checkbox"]) li.checked { color: #6a6a78; }
-  :root:not(.theme-light) .seo-lead { color: #b4b4c2; }
-  :root:not(.theme-light) .lesson-meta { color: #a8a8b8; }
-  :root:not(.theme-light) .lesson-meta time { color: #b8b8c4; }
-  :root:not(.theme-light) .related-grammar { background: #1b1b28; border-color: var(--border); }
-  :root:not(.theme-light) .cross-link { background: #25253a; color: #e4e4ec; }
-  :root:not(.theme-light) .cross-link:hover { background: var(--ui); color: var(--ui-on); }
-  :root:not(.theme-light) .checklist-progress { background: #1f1f2e; color: #b8b8c4; }
-  :root:not(.theme-light) .checklist-progress .progress-bar { background: #2d2d44; }
-  /* Home page */
-  :root:not(.theme-light) .home-hero h1 { color: #f0f0f5; }
-  :root:not(.theme-light) .home-intro { color: #b8b8c4; }
-  :root:not(.theme-light) .home-levels h2, :root:not(.theme-light) .home-howto h2 { color: #e4e4ec; }
-  :root:not(.theme-light) .level-card { background: #1f1f2e; }
-  :root:not(.theme-light) .level-card h3 { color: #f0f0f5; }
-  :root:not(.theme-light) .level-card p { color: #b8b8c4; }
-  :root:not(.theme-light) .home-howto p { color: #b8b8c4; }
-  /* Code */
-  :root:not(.theme-light) code { color: #f0a0b0; }
-  :root:not(.theme-light) pre code { color: #d4d4dc; }
+  :root:not(.theme-light) {${DARK_VARS}}
+${darkRules(':root:not(.theme-light)')}
 }
-
-/* Manual dark override (toggled via JS, mirrors media query rules) */
-html.theme-dark {
-    --bg: #14141e;
-    --sidebar-bg: #0a0a14;
-    --sidebar-text: #b8b8c4;
-    --sidebar-heading: #f0f0f5;
-    --sidebar-border: rgba(255,255,255,.08);
-    --sidebar-hover-bg: rgba(255,255,255,.06);
-    --sidebar-hover-text: #fff;
-    --card-bg: #1f1f2e;
-    --border: #2d2d44;
-    --text: #d4d4dc;
-    --text-strong: #f0f0f5;
-    --text-muted: #a8a8b8;
-    --text-subtle: #888;
-    --word-bg: #25253a;
-    --surface-2: #25253a;
-    --word-border: #3a3a55;
-    --code-bg: #1f1f2e;
-    --ruby-color: #a8a8b8;
-    --accent: #e94560;
-    --ui: #a9c7ee; --ui-on: #10131c; --ui-soft: rgba(169,199,238,.14);
-    --link: #a9c7ee;
-    --selection-bg: #3b6fd6;
-    --selection-fg: #fff;
-  }
-/* Accent-colored strong text fails 4.5:1 on dark card surfaces; brighten. */
-html.theme-dark .seo-lead strong, html.theme-dark .home-intro strong { color: var(--text-strong); }
-/* .breadcrumb is defined on each page; override gray contrast for dark. */
-html.theme-dark .breadcrumb { color: #999 !important; }
-/* .related-label gray on the (red-tinted) related-grammar box was 4.46
-     in dark mode (just under AA 4.5). Lighten to clear the bar. */
-html.theme-dark .related-label { color: #a8a8b8; }
-html.theme-dark body { color: #d4d4dc; }
-html.theme-dark h1 { color: #f0f0f5; }
-html.theme-dark h2 { color: #e4e4ec; }
-html.theme-dark h3, html.theme-dark h4 { color: #d8d8e0; }
-html.theme-dark th { background: #25253a; color: #e4e4ec; }
-html.theme-dark tr:nth-child(even) { background: rgba(255, 255, 255, 0.025); }
-html.theme-dark blockquote { background: rgba(233, 69, 96, 0.08); }
-html.theme-dark details { background: #1f1f2e; }
-html.theme-dark ul:has(input[type="checkbox"]) li:hover { background: #1f1f2e; }
-html.theme-dark ul:has(input[type="checkbox"]) li.checked { color: #6a6a78; }
-html.theme-dark .seo-lead { color: #b4b4c2; }
-html.theme-dark .lesson-meta { color: #a8a8b8; }
-html.theme-dark .lesson-meta time { color: #b8b8c4; }
-html.theme-dark .related-grammar { background: #1b1b28; border-color: var(--border); }
-html.theme-dark .cross-link { background: #25253a; color: #e4e4ec; }
-html.theme-dark .cross-link:hover { background: var(--ui); color: var(--ui-on); }
-html.theme-dark .checklist-progress { background: #1f1f2e; color: #b8b8c4; }
-html.theme-dark .checklist-progress .progress-bar { background: #2d2d44; }
-/* Home page */
-html.theme-dark .home-hero h1 { color: #f0f0f5; }
-html.theme-dark .home-intro { color: #b8b8c4; }
-html.theme-dark .home-levels h2, html.theme-dark .home-howto h2 { color: #e4e4ec; }
-html.theme-dark .level-card { background: #1f1f2e; }
-html.theme-dark .level-card h3 { color: #f0f0f5; }
-html.theme-dark .level-card p { color: #b8b8c4; }
-html.theme-dark .home-howto p { color: #b8b8c4; }
-/* Code */
-html.theme-dark code { color: #f0a0b0; }
-html.theme-dark pre code { color: #d4d4dc; }
+html.theme-dark {${DARK_VARS}}
+${darkRules('html.theme-dark')}
 
 /* ─── Search (command palette) ─── */
 #search-overlay { position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,.45); display: flex; align-items: flex-start; justify-content: center; padding: 12vh 1rem 1rem; }
@@ -5902,22 +5953,28 @@ html.theme-dark pre code { color: #d4d4dc; }
 #search-results { list-style: none; margin: 0; padding: .4rem; overflow-y: auto; }
 #search-results a { display: flex; align-items: baseline; gap: .6rem; padding: .55rem .7rem; border-radius: var(--radius-lg); text-decoration: none; color: inherit; }
 #search-results a.sel, #search-results a:hover { background: var(--ui); color: var(--ui-on); }
-#search-results a.sel .sr-lvl, #search-results a:hover .sr-lvl { background: rgba(255,255,255,.25); }
+#search-results a.sel .sr-lvl, #search-results a:hover .sr-lvl { background: color-mix(in srgb, var(--ui-on) 25%, transparent); color: var(--ui-on); }
 .sr-lvl { flex-shrink: 0; font-size: .7rem; font-weight: 700; background: var(--ui); color: var(--ui-on); padding: .1rem .4rem; border-radius: var(--radius-sm); }
 .sr-title { font-weight: 600; }
 .sr-pts { font-size: .8rem; opacity: .6; margin-left: auto; text-align: right; }
 .search-empty { padding: 1rem 1.2rem; opacity: .6; }
 #search-hint { font-size: .72rem; opacity: .55; padding: .5rem 1.2rem; border-top: 1px solid var(--border); }
 @media (max-width: 600px) { #search-hint { display: none; } #search-overlay { padding: 6vh .6rem 1rem; } }
-html.theme-dark #search-box { background: #1f1f2e; }
 
 /* Desktop top-right quick controls (injected by settings-modal.js). On
    mobile the sidebar toolbar + settings modal take over, so the bar hides and
    the toolbar's search / AI / settings buttons only show there. */
+/* The cluster sits on its own frosted backing so page text scrolling under
+   it never shows through between the pills. */
 #top-controls {
-  position: fixed; top: .8rem; right: 1.2rem;
-  display: flex; align-items: center; gap: .5rem; z-index: 200;
+  position: fixed; top: .5rem; right: 1rem;
+  display: flex; align-items: center; gap: .4rem; z-index: 200;
+  padding: .3rem; border-radius: var(--radius-xl);
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  border: 1px solid var(--border); box-shadow: var(--shadow-sm);
 }
+#top-controls .tc-pill { box-shadow: none; }
 .tc-pill {
   background: var(--card-bg); color: inherit; font: inherit; font-size: .8rem;
   padding: .4rem .8rem; border-radius: var(--radius);
@@ -5947,11 +6004,11 @@ html.theme-dark #search-box { background: #1f1f2e; }
 .theme-choice:hover { border-color: var(--ui); }
 .theme-choice[aria-checked="true"] { border-color: var(--ui); box-shadow: 0 0 0 1px var(--ui); }
 .theme-swatch { width: 1.05rem; height: 1.05rem; border-radius: 50%; border: 1px solid rgba(0,0,0,.25); flex: none; }
-.sw-auto { background: linear-gradient(135deg, #f6f4ef 50%, #14141e 50%); }
+.sw-auto { background: linear-gradient(135deg, #f6f4ef 50%, #171614 50%); }
 .sw-white { background: #ffffff; }
 .sw-light { background: #f6f4ef; }
 .sw-sepia { background: #ece3cf; }
-.sw-dark { background: #14141e; }
+.sw-dark { background: #171614; }
 #theme-menu {
   position: absolute; top: calc(100% + .4rem); right: 0;
   background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-lg);
@@ -6000,7 +6057,7 @@ body.ai-open #tc-ai { border-color: var(--ui); box-shadow: 0 0 0 2px var(--ui-so
 .settings-switch span { position: absolute; inset: 0; border-radius: 999px; background: var(--border); transition: background .15s; }
 .settings-switch span::after { content: ""; position: absolute; top: 2px; left: 2px; width: calc(1.5rem - 4px); height: calc(1.5rem - 4px); border-radius: 50%; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.3); transition: transform .15s; }
 .settings-switch input:checked + span { background: var(--ui); }
-.settings-switch input:checked + span::after { transform: translateX(1.1rem); }
+.settings-switch input:checked + span::after { transform: translateX(1.1rem); background: var(--ui-on); }
 .settings-switch input:focus-visible + span { outline: 2px solid var(--ui); outline-offset: 2px; }
 .settings-seg { flex: none; display: inline-flex; padding: 2px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); }
 .settings-seg button { border: 0; background: none; color: var(--text-muted); padding: .3rem .8rem; border-radius: calc(var(--radius) - 2px); font: inherit; font-size: .85rem; cursor: pointer; }
@@ -6021,7 +6078,7 @@ body.ai-open #tc-ai { border-color: var(--ui); box-shadow: 0 0 0 2px var(--ui-so
 .acct-err { color: var(--accent); }
 .acct-ok { color: #3fb950; font-weight: 700; }
 .acct a { color: var(--text-muted); text-decoration: underline; text-underline-offset: 2px; }
-.acct a:hover, .acct-link:hover { color: var(--ui); }
+.acct a:hover, .acct-link:hover { color: var(--link); }
 .acct-link { background: none; border: 0; padding: 0; color: var(--text-muted); text-decoration: underline; text-underline-offset: 2px; cursor: pointer; font: inherit; }
 /* Sign in: Google's button, a rule with "or", then one field with its button inside */
 .acct-g { margin-top: .9rem; min-height: 40px; color-scheme: light; }

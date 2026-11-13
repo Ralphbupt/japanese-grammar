@@ -69,6 +69,12 @@
     document.querySelectorAll('.js-ruby-btn').forEach(function (b) { b.setAttribute('aria-pressed', hide ? 'false' : 'true'); });
     document.querySelectorAll('.js-lang-btn').forEach(function (b) { b.textContent = en ? '中文' : 'EN'; });
     document.querySelectorAll('.js-lang-set').forEach(function (b) { b.setAttribute('aria-pressed', (b.getAttribute('data-lang') === 'en') === en ? 'true' : 'false'); });
+    // Browser chrome follows a chosen theme; auto keeps the per-scheme metas.
+    var bg = c === 'auto' ? '' : getComputedStyle(document.documentElement).getPropertyValue('--bg').trim();
+    document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+      if (!m.hasAttribute('data-c')) m.setAttribute('data-c', m.content);
+      m.content = bg || m.getAttribute('data-c');
+    });
   }
 
   function setTheme(next) {
