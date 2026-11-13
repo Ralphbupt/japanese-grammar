@@ -20,8 +20,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "依据：「①②④⑤はパソコンを使います」；「過去に同じ講座を受講したことのある方は、申し込めません」；②「土曜日　10:00〜12:00」。\n推理：先圈出用电脑的①②④⑤，再逐个排除：①去年上过，不能报；②是周六上午，要接送孩子。④对象「どなたでも」，⑤山本在市内上班，符合「在勤」；两者都在周日、时间不冲突。剩下④⑤。\n容易错：①时间赶得上，但「過去に同じ講座」这条一票否决。",
-          "en": "Evidence: 「①②④⑤はパソコンを使います」; 「過去に同じ講座を受講したことのある方は、申し込めません」; ② 「土曜日　10:00〜12:00」.\nReasoning: Take the computer courses ①②④⑤ and strike out: ① he took last year, so he can't apply; ② is Saturday morning, when he drives his child. ④ is open to 「どなたでも」, and ⑤ he qualifies for as someone working in the city; both are on Sunday at different times. That leaves ④ and ⑤.\nTrap: ① fits his evenings, but the 「過去に同じ講座」 rule rules it out."
+          "zh": "依据：「①②④⑤はパソコンを使います」；「過去に同じ講座を受講したことのある方は、申し込めません」；②「土曜日　10:00〜12:00」。\n推理：先圈出用电脑的①②④⑤，再逐个排除：①去年上过，不能报；②是周六上午，要接送孩子。④对象「どなたでも」，⑤山本在市内上班，符合「在勤」；两者都在周日、时间不冲突。剩下④⑤。",
+          "en": "Evidence: 「①②④⑤はパソコンを使います」; 「過去に同じ講座を受講したことのある方は、申し込めません」; ② 「土曜日　10:00〜12:00」.\nReasoning: Take the computer courses ①②④⑤ and strike out: ① he took last year, so he can't apply; ② is Saturday morning, when he drives his child. ④ is open to 「どなたでも」, and ⑤ he qualifies for as someone working in the city; both are on Sunday at different times. That leaves ④ and ⑤."
         },
         "wrong": [
           {
@@ -49,8 +49,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "依据：④「9,000円」、⑤「4,800円」；「お持ちでない方には、1回につき500円で貸し出します」；「市内に在住・在勤・在学していない方が受講する場合は、受講料が2割増しになります」。\n推理：学费9,000＋4,800＝13,800日元。山本在市内上班，④不加两成。他没有笔记本电脑，每次借500日元，每个讲座6次、两个讲座12次：500×12＝6,000日元。合计19,800日元。\n容易错：借用费是「1回につき」，按次数算，不是每个讲座一次500日元。",
-          "en": "Evidence: ④ 「9,000円」, ⑤ 「4,800円」; 「お持ちでない方には、1回につき500円で貸し出します」; 「市内に在住・在勤・在学していない方が受講する場合は、受講料が2割増しになります」.\nReasoning: Fees 9,000 + 4,800 = 13,800 yen. He works in the city, so no 20% surcharge on ④. He has no laptop: 500 yen per session, six sessions each, twelve in all: 6,000 yen. Total 19,800 yen.\nTrap: The rental is 「1回につき」, per session, not 500 yen per course."
+          "zh": "依据：④「9,000円」、⑤「4,800円」；「お持ちでない方には、1回につき500円で貸し出します」；「市内に在住・在勤・在学していない方が受講する場合は、受講料が2割増しになります」。\n推理：学费9,000＋4,800＝13,800日元。山本在市内上班，④不加两成。他没有笔记本电脑，每次借500日元，每个讲座6次、两个讲座12次：500×12＝6,000日元。合计19,800日元。",
+          "en": "Evidence: ④ 「9,000円」, ⑤ 「4,800円」; 「お持ちでない方には、1回につき500円で貸し出します」; 「市内に在住・在勤・在学していない方が受講する場合は、受講料が2割増しになります」.\nReasoning: Fees 9,000 + 4,800 = 13,800 yen. He works in the city, so no 20% surcharge on ④. He has no laptop: 500 yen per session, six sessions each, twelve in all: 6,000 yen. Total 19,800 yen."
         },
         "wrong": [
           {
@@ -91,8 +91,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "依据：「併用「不可」の奨学金を受ける人は、ほかの奨学金（学外の奨学金を含む）を同時に受けることはできません」；B「留学生（1〜4年生）」「前年度のGPAが2.5以上（1年生は入学試験の成績による）」「可」。\n推理：要继续领校外奖学金，先排除「不可」的A和E。B：留学生、GPA 3.2≥2.5、可并用，符合。C只限3·4年级；D要30小时，她只有20小时。所以只有B。\n容易错：A的GPA条件满足，但「学外の奨学金を含む」这条让她不能领A。",
-          "en": "Evidence: 「併用「不可」の奨学金を受ける人は、ほかの奨学金（学外の奨学金を含む）を同時に受けることはできません」; B 「留学生（1〜4年生）」 「前年度のGPAが2.5以上（1年生は入学試験の成績による）」 「可」.\nReasoning: Keeping the outside scholarship rules out A and E (「不可」). B: international student, GPA 3.2 ≥ 2.5, combinable — fits. C is for third and fourth years only; D needs 30 hours and she has 20. Only B.\nTrap: Her GPA meets A's condition, but 「学外の奨学金を含む」 bars it."
+          "zh": "依据：「併用「不可」の奨学金を受ける人は、ほかの奨学金（学外の奨学金を含む）を同時に受けることはできません」；B「留学生（1〜4年生）」「前年度のGPAが2.5以上（1年生は入学試験の成績による）」「可」。\n推理：要继续领校外奖学金，先排除「不可」的A和E。B：留学生、GPA 3.2≥2.5、可并用，符合。C只限3·4年级；D要30小时，她只有20小时。所以只有B。",
+          "en": "Evidence: 「併用「不可」の奨学金を受ける人は、ほかの奨学金（学外の奨学金を含む）を同時に受けることはできません」; B 「留学生（1〜4年生）」 「前年度のGPAが2.5以上（1年生は入学試験の成績による）」 「可」.\nReasoning: Keeping the outside scholarship rules out A and E (「不可」). B: international student, GPA 3.2 ≥ 2.5, combinable — fits. C is for third and fourth years only; D needs 30 hours and she has 20. Only B."
         },
         "wrong": [
           {
@@ -101,8 +101,8 @@
           },
           null,
           {
-            "zh": "A不可并用，所以不行。",
-            "en": "A is ruled out because it can't be combined."
+            "zh": "AとB里的A不能和其他奖学金并用，而林同学要继续领校外奖学金。",
+            "en": "A in 'A and B' can't be held with any other scholarship, and Lin is keeping her outside one."
           },
           {
             "zh": "D要求志愿活动30小时以上，林同学只有20小时。",
@@ -120,8 +120,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "依据：「申し込めるのは、お一人2種類までです」；A「月30,000円（12か月）」「不可」；B「月20,000円（12か月）」；C「200,000円（一括）」；D「100,000円（一括）」。\n推理：新条件下A、B、C、D都符合（E年收入不符）。A不可并用，只能单独领：360,000日元。可并用的两种组合里，B 240,000＋C 200,000＝440,000日元最多；C＋D只有300,000日元。\n容易错：A每月钱最多，但它「不可」，不能和C一起领。",
-          "en": "Evidence: 「申し込めるのは、お一人2種類までです」; A 「月30,000円（12か月）」 「不可」; B 「月20,000円（12か月）」; C 「200,000円（一括）」; D 「100,000円（一括）」.\nReasoning: Under the new situation she qualifies for A, B, C and D (not E: income). A can't be combined, so alone it gives 360,000 yen. Of the combinable pairs, B 240,000 + C 200,000 = 440,000 yen is the most; C + D is only 300,000.\nTrap: A pays most per month, but it is 「不可」 and can't go with C."
+          "zh": "依据：「申し込めるのは、お一人2種類までです」；A「月30,000円（12か月）」「不可」；B「月20,000円（12か月）」；C「200,000円（一括）」；D「100,000円（一括）」。\n推理：新条件下A、B、C、D都符合（E年收入不符）。A不可并用，只能单独领：360,000日元。可并用的两种组合里，B 240,000＋C 200,000＝440,000日元最多；C＋D只有300,000日元。",
+          "en": "Evidence: 「申し込めるのは、お一人2種類までです」; A 「月30,000円（12か月）」 「不可」; B 「月20,000円（12か月）」; C 「200,000円（一括）」; D 「100,000円（一括）」.\nReasoning: Under the new situation she qualifies for A, B, C and D (not E: income). A can't be combined, so alone it gives 360,000 yen. Of the combinable pairs, B 240,000 + C 200,000 = 440,000 yen is the most; C + D is only 300,000."
         },
         "wrong": [
           {
@@ -162,8 +162,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "依据：「一般社員」「10,000円」「2,000円」；「東京23区・大阪市・名古屋市に宿泊する場合は、上限額を2,000円引き上げる」；「上限を超えた分は自己負担とする」。\n推理：住宿上限10,000，住大阪市提高到12,000；房费13,000超出的1,000自付，所以12,000×2晚＝24,000日元。单程500km≥100km，日补贴2,000×3天＝6,000日元。合计30,000日元。\n容易错：按实际房费13,000算，或忘了大阪市的上调，都会算错。",
-          "en": "Evidence: 「一般社員」 「10,000円」 「2,000円」; 「東京23区・大阪市・名古屋市に宿泊する場合は、上限額を2,000円引き上げる」; 「上限を超えた分は自己負担とする」.\nReasoning: The lodging cap of 10,000 rises to 12,000 in Osaka city; the extra 1,000 of the 13,000 room is his own, so 12,000 × 2 nights = 24,000 yen. 500 km one way is over 100 km, so the daily allowance is 2,000 × 3 days = 6,000 yen. Total 30,000 yen.\nTrap: Using the real 13,000 room rate, or forgetting the Osaka increase, gives a wrong sum."
+          "zh": "依据：「一般社員」「10,000円」「2,000円」；「東京23区・大阪市・名古屋市に宿泊する場合は、上限額を2,000円引き上げる」；「上限を超えた分は自己負担とする」。\n推理：住宿上限10,000，住大阪市提高到12,000；房费13,000超出的1,000自付，所以12,000×2晚＝24,000日元。单程500km≥100km，日补贴2,000×3天＝6,000日元。合计30,000日元。",
+          "en": "Evidence: 「一般社員」 「10,000円」 「2,000円」; 「東京23区・大阪市・名古屋市に宿泊する場合は、上限額を2,000円引き上げる」; 「上限を超えた分は自己負担とする」.\nReasoning: The lodging cap of 10,000 rises to 12,000 in Osaka city; the extra 1,000 of the 13,000 room is his own, so 12,000 × 2 nights = 24,000 yen. 500 km one way is over 100 km, so the daily allowance is 2,000 × 3 days = 6,000 yen. Total 30,000 yen."
         },
         "wrong": [
           {
@@ -191,8 +191,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "依据：「100km以上は新幹線の普通車指定席を利用できる。課長以上は、新幹線のグリーン車も利用できる」；「日帰りの出張で、会社を出てから戻るまでが6時間未満の場合は、半額とする」。\n推理：单程150km，可乘新干线；木村是课长，还能坐绿色车厢。课长日补贴2,500日元，10点出发15点半回来，共5个半小时，不足6小时，减半为1,250日元。\n容易错：注意「未満」：5个半小时不满6小时，要减半。",
-          "en": "Evidence: 「100km以上は新幹線の普通車指定席を利用できる。課長以上は、新幹線のグリーン車も利用できる」; 「日帰りの出張で、会社を出てから戻るまでが6時間未満の場合は、半額とする」.\nReasoning: 150 km one way allows the shinkansen, and as a section chief Kimura may use the Green Car. His daily allowance is 2,500 yen, but 10:00 to 15:30 is five and a half hours, under six, so it is halved: 1,250 yen.\nTrap: Mind 「未満」: five and a half hours is under six, so the allowance is halved."
+          "zh": "依据：「100km以上は新幹線の普通車指定席を利用できる。課長以上は、新幹線のグリーン車も利用できる」；「日帰りの出張で、会社を出てから戻るまでが6時間未満の場合は、半額とする」。\n推理：单程150km，可乘新干线；木村是课长，还能坐绿色车厢。课长日补贴2,500日元，10点出发15点半回来，共5个半小时，不足6小时，减半为1,250日元。",
+          "en": "Evidence: 「100km以上は新幹線の普通車指定席を利用できる。課長以上は、新幹線のグリーン車も利用できる」; 「日帰りの出張で、会社を出てから戻るまでが6時間未満の場合は、半額とする」.\nReasoning: 150 km one way allows the shinkansen, and as a section chief Kimura may use the Green Car. His daily allowance is 2,500 yen, but 10:00 to 15:30 is five and a half hours, under six, so it is halved: 1,250 yen."
         },
         "wrong": [
           null,
@@ -233,8 +233,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "依据：「調理室」「24名」「2,500円」「3,300円」；「2つ以上の区分を続けて利用する場合は、各区分の料金を合計します」。\n推理：做菜要用烹饪室，定员24人，18人可以。10点到15点跨上午、下午两个时段：2,500＋3,300＝5,800日元；中间12点到13点连续使用免费。田村住在市内，不乘1.5。\n容易错：只算一个时段；或把市外代表的1.5倍也算进去。",
-          "en": "Evidence: 「調理室」 「24名」 「2,500円」 「3,300円」; 「2つ以上の区分を続けて利用する場合は、各区分の料金を合計します」.\nReasoning: Cooking needs the cooking room, which holds 24, so 18 fit. 10:00–15:00 spans the morning and afternoon slots: 2,500 + 3,300 = 5,800 yen; 12:00–13:00 is free when used straight through. Tamura lives in the city, so no ×1.5.\nTrap: Counting only one slot, or applying the out-of-city ×1.5."
+          "zh": "依据：「調理室」「24名」「2,500円」「3,300円」；「2つ以上の区分を続けて利用する場合は、各区分の料金を合計します」。\n推理：做菜要用烹饪室，定员24人，18人可以。10点到15点跨上午、下午两个时段：2,500＋3,300＝5,800日元；中间12点到13点连续使用免费。田村住在市内，不乘1.5。",
+          "en": "Evidence: 「調理室」 「24名」 「2,500円」 「3,300円」; 「2つ以上の区分を続けて利用する場合は、各区分の料金を合計します」.\nReasoning: Cooking needs the cooking room, which holds 24, so 18 fit. 10:00–15:00 spans the morning and afternoon slots: 2,500 + 3,300 = 5,800 yen; 12:00–13:00 is free when used straight through. Tamura lives in the city, so no ×1.5."
         },
         "wrong": [
           {
@@ -262,8 +262,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "依据：「ホール」「100名」「9,000円」；「代表者が市外にお住まいの団体は、部屋の利用料金が1.5倍になります（設備の使用料は変わりません）」；「ホールでマイク・プロジェクターを使う場合は、1区分につき各500円の使用料がかかります」。\n推理：40人只能用大厅。晚间9,000日元，代表住市外，房费×1.5＝13,500日元；麦克风是设备费，不乘1.5，加500日元，合计14,000日元。\n容易错：会议室B便宜，但定员30人，装不下40人。",
-          "en": "Evidence: 「ホール」 「100名」 「9,000円」; 「代表者が市外にお住まいの団体は、部屋の利用料金が1.5倍になります（設備の使用料は変わりません）」; 「ホールでマイク・プロジェクターを使う場合は、1区分につき各500円の使用料がかかります」.\nReasoning: 40 people fit only in the hall. Evening is 9,000 yen, ×1.5 for an out-of-city leader = 13,500 yen; the microphone is an equipment fee, not multiplied, so add 500: 14,000 yen.\nTrap: Meeting room B is cheaper but holds only 30."
+          "zh": "依据：「ホール」「100名」「9,000円」；「代表者が市外にお住まいの団体は、部屋の利用料金が1.5倍になります（設備の使用料は変わりません）」；「ホールでマイク・プロジェクターを使う場合は、1区分につき各500円の使用料がかかります」。\n推理：40人只能用大厅。晚间9,000日元，代表住市外，房费×1.5＝13,500日元；麦克风是设备费，不乘1.5，加500日元，合计14,000日元。",
+          "en": "Evidence: 「ホール」 「100名」 「9,000円」; 「代表者が市外にお住まいの団体は、部屋の利用料金が1.5倍になります（設備の使用料は変わりません）」; 「ホールでマイク・プロジェクターを使う場合は、1区分につき各500円の使用料がかかります」.\nReasoning: 40 people fit only in the hall. Evening is 9,000 yen, ×1.5 for an out-of-city leader = 13,500 yen; the microphone is an equipment fee, not multiplied, so add 500: 14,000 yen."
         },
         "wrong": [
           {
@@ -304,8 +304,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "依据：第3駐輪場「自転車」「あり」「1,500円」；「3か月分をまとめてお支払いいただくと、合計金額から10％割引いたします」。\n推理：要有顶棚的自行车停车场：第1或第3。学生价第3（1,500）比第1（1,800）便宜。1,500×3＝4,500日元，一次付3个月打九折：4,050日元。\n容易错：第2最便宜，但「屋根」一栏是「なし」，不符合不淋雨的条件。",
-          "en": "Evidence: Lot 3 「自転車」 「あり」 「1,500円」; 「3か月分をまとめてお支払いいただくと、合計金額から10％割引いたします」.\nReasoning: A covered bicycle lot means lot 1 or lot 3; at the student rate lot 3 (1,500) beats lot 1 (1,800). 1,500 × 3 = 4,500 yen, minus 10% for paying three months at once: 4,050 yen.\nTrap: Lot 2 is cheapest, but its roof column says 「なし」."
+          "zh": "依据：第3駐輪場「自転車」「あり」「1,500円」；「3か月分をまとめてお支払いいただくと、合計金額から10％割引いたします」。\n推理：要有顶棚的自行车停车场：第1或第3。学生价第3（1,500）比第1（1,800）便宜。1,500×3＝4,500日元，一次付3个月打九折：4,050日元。",
+          "en": "Evidence: Lot 3 「自転車」 「あり」 「1,500円」; 「3か月分をまとめてお支払いいただくと、合計金額から10％割引いたします」.\nReasoning: A covered bicycle lot means lot 1 or lot 3; at the student rate lot 3 (1,500) beats lot 1 (1,800). 1,500 × 3 = 4,500 yen, minus 10% for paying three months at once: 4,050 yen."
         },
         "wrong": [
           {
@@ -333,8 +333,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "依据：「お申し込みは、利用を開始する月の前の月の20日から末日まで、各駐輪場の管理室で受け付けます」；「第1駐輪場は空きが少ないため、毎月抽選で利用者を決めます」。\n推理：来月开始用，就要在本月20日到月底申请；第1停车场还要抽签，中签才能用。选项两点都对上了。\n容易错：“申请了就一定能用”漏看了抽签这条。",
-          "en": "Evidence: 「お申し込みは、利用を開始する月の前の月の20日から末日まで、各駐輪場の管理室で受け付けます」; 「第1駐輪場は空きが少ないため、毎月抽選で利用者を決めます」.\nReasoning: To start next month, apply between the 20th and the end of this month; lot 1 is also decided by lottery, so you can use it only if you win. The option has both points.\nTrap: \"Apply and you're sure to get a place\" misses the lottery."
+          "zh": "依据：「お申し込みは、利用を開始する月の前の月の20日から末日まで、各駐輪場の管理室で受け付けます」；「第1駐輪場は空きが少ないため、毎月抽選で利用者を決めます」。\n推理：来月开始用，就要在本月20日到月底申请；第1停车场还要抽签，中签才能用。选项两点都对上了。",
+          "en": "Evidence: 「お申し込みは、利用を開始する月の前の月の20日から末日まで、各駐輪場の管理室で受け付けます」; 「第1駐輪場は空きが少ないため、毎月抽選で利用者を決めます」.\nReasoning: To start next month, apply between the 20th and the end of this month; lot 1 is also decided by lottery, so you can use it only if you win. The option has both points."
         },
         "wrong": [
           {
@@ -375,8 +375,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "依据：「留学生は1週間に28時間までしか働くことができない」；B「18:00〜23:00」「週6日」；C「9:00〜15:00」「平日、週2日以上」；E「日本語能力試験N2以上」；D「1,250円」。\n推理：B每天5小时×6天＝30小时，超过28小时；C在工作日白天，她16点才下课；E要N2，她只有N3。剩下A、D、F里时薪最高的是D。\n容易错：只看时薪选B或E，忘了先用条件筛掉。",
-          "en": "Evidence: 「留学生は1週間に28時間までしか働くことができない」; B 「18:00〜23:00」 「週6日」; C 「9:00〜15:00」 「平日、週2日以上」; E 「日本語能力試験N2以上」; D 「1,250円」.\nReasoning: B is 5 hours × 6 days = 30 hours, over 28; C is weekday daytime, but her classes end at 16:00; E needs N2 and she has N3. Of A, D and F, D pays most.\nTrap: Picking B or E for the wage without first filtering by the conditions."
+          "zh": "依据：「留学生は1週間に28時間までしか働くことができない」；B「18:00〜23:00」「週6日」；C「9:00〜15:00」「平日、週2日以上」；E「日本語能力試験N2以上」；D「1,250円」。\n推理：B每天5小时×6天＝30小时，超过28小时；C在工作日白天，她16点才下课；E要N2，她只有N3。剩下A、D、F里时薪最高的是D。",
+          "en": "Evidence: 「留学生は1週間に28時間までしか働くことができない」; B 「18:00〜23:00」 「週6日」; C 「9:00〜15:00」 「平日、週2日以上」; E 「日本語能力試験N2以上」; D 「1,250円」.\nReasoning: B is 5 hours × 6 days = 30 hours, over 28; C is weekday daytime, but her classes end at 16:00; E needs N2 and she has N3. Of A, D and F, D pays most."
         },
         "wrong": [
           {
@@ -404,8 +404,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "依据：「応募は、各勤務先へ電話でお申し込みください」；「面接には、写真付きの履歴書をお持ちください。留学生の方は、在留カードもお持ちください」。\n推理：先打电话申请，面试带照片简历；她是留学生，「も」表示还要加带在留卡。选项把这两步都说到了。\n容易错：「Dは、面接の際に簡単な計算の試験を行います」是面试当场考，不用事先通过。",
-          "en": "Evidence: 「応募は、各勤務先へ電話でお申し込みください」; 「面接には、写真付きの履歴書をお持ちください。留学生の方は、在留カードもお持ちください」.\nReasoning: Apply by phone, and bring a CV with photo to the interview; as an international student she also (「も」) brings her residence card. The option covers both steps.\nTrap: 「Dは、面接の際に簡単な計算の試験を行います」: the test is at the interview, not something to pass beforehand."
+          "zh": "依据：「応募は、各勤務先へ電話でお申し込みください」；「面接には、写真付きの履歴書をお持ちください。留学生の方は、在留カードもお持ちください」。\n推理：先打电话申请，面试带照片简历；她是留学生，「も」表示还要加带在留卡。选项把这两步都说到了。",
+          "en": "Evidence: 「応募は、各勤務先へ電話でお申し込みください」; 「面接には、写真付きの履歴書をお持ちください。留学生の方は、在留カードもお持ちください」.\nReasoning: Apply by phone, and bring a CV with photo to the interview; as an international student she also (「も」) brings her residence card. The option covers both steps."
         },
         "wrong": [
           {

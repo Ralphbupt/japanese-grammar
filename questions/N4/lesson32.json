@@ -21,8 +21,8 @@
       "en": "The sky's getting dark. I think it'll rain this afternoon."
     },
     "why": {
-      "zh": "线索：前一句说天暗下来了，空格要填的是对「雨が」的判断；雨不是人，没有自己的意志。\n规则：说“我觉得会……”，「と思う」前面用普通形，动词就用辞书形（降る、行く）。\n辨析：「降ると思う」＝推测会下；「降ろうと思う」用意向形，是“我打算……”，用于人自己的打算（「行こうと思う」）。",
-      "en": "Clue: The first sentence says the sky is getting dark, so the blank is a guess about 「雨が」. Rain is not a person and has no will.\nRule: For \"I think it will…\", 「と思う」 takes the plain form; for a verb that is the dictionary form (降る, 行く).\nContrast: 「降ると思う」 = I expect it to rain; 「降ろうと思う」 uses the volitional and means \"I intend to\", which is for a person's own plans (「行こうと思う」)."
+      "zh": "线索：前一句说天暗下来了，空格要填的是对「雨が」的判断；雨不是人，没有自己的意志。\n规则：说“我觉得会……”，「と思う」前面用普通形，动词就用辞书形（降る、行く）。",
+      "en": "Clue: The first sentence says the sky is getting dark, so the blank is a guess about 「雨が」. Rain is not a person and has no will.\nRule: For \"I think it will…\", 「と思う」 takes the plain form; for a verb that is the dictionary form (降る, 行く)."
     },
     "wrong": [
       null,
@@ -155,8 +155,8 @@
         "en": "「のに」 (even though) doesn't lead into \"I don't know yet\"."
       },
       {
-        "zh": "「と」不能把「だれが来る」变成“不知道”的内容。",
-        "en": "「と」 can't turn 「だれが来る」 into the thing you don't know."
+        "zh": "「と」用来引用说的话或想的内容，不能把带「だれ」的问题变成“不知道”的对象；这要用「か」。",
+        "en": "「と」 quotes what is said or thought; it can't make a question with 「だれ」 the thing you don't know — that takes 「か」."
       }
     ]
   },
@@ -182,8 +182,8 @@
       "en": "I'll ask the teacher whether this answer is right."
     },
     "why": {
-      "zh": "线索：「この 答えが 正しい」里没有疑问词；后面「先生に 聞いて みます」说明对不对还不知道。\n规则：没有疑问词的“是不是、对不对”放进句子里，用「かどうか」（是否）。\n容易错：选「ので」。“因为答案对，所以去问老师”说不通：已经知道对了，就不用问了。",
-      "en": "Clue: 「この 答えが 正しい」 has no question word, and 「先生に 聞いて みます」 shows the speaker doesn't know yet whether it's right.\nRule: A yes/no question (is it or isn't it) with no question word, embedded in a sentence, takes 「かどうか」 (whether).\nTrap: Choosing 「ので」. \"I'll ask the teacher because it's right\" makes no sense: if you knew it was right, there'd be nothing to ask."
+      "zh": "线索：「この 答えが 正しい」里没有疑问词；后面「先生に 聞いて みます」说明对不对还不知道。\n规则：没有疑问词的“是不是、对不对”放进句子里，用「かどうか」（是否）。",
+      "en": "Clue: 「この 答えが 正しい」 has no question word, and 「先生に 聞いて みます」 shows the speaker doesn't know yet whether it's right.\nRule: A yes/no question (is it or isn't it) with no question word, embedded in a sentence, takes 「かどうか」 (whether)."
     },
     "wrong": [
       {
@@ -192,7 +192,7 @@
       },
       {
         "zh": "「ように」表示目的或比喻，“为了答案正确去问”不自然。",
-        "en": "「ように」 (so that / like) doesn't fit here."
+        "en": "「ように」 marks a purpose or a likeness; \"ask so that the answer is right\" is unnatural."
       },
       {
         "zh": "「ので」表示原因，“因为答案正确所以去问”，既然知道对就不用问了。",
@@ -260,8 +260,8 @@
       "en": "I want to fly freely through the sky like a bird."
     },
     "why": {
-      "zh": "线索：空格前是名词「鳥」，后面是动作「空を 自由に 飛びたい」。\n规则：“像……一样”去修饰动词、形容词，用「名词＋のように」；修饰名词才用「のような」。\n容易错：选「ように」，漏了「の」。名词后面要先加「の」：「鳥のように」。",
-      "en": "Clue: Before the blank is the noun 「鳥」; after it comes an action, 「空を 自由に 飛びたい」.\nRule: \"Like …\" describing a verb or adjective is noun ＋ 「のように」; 「のような」 is for describing a noun.\nTrap: Choosing 「ように」 and dropping 「の」. A noun needs 「の」 first: 「鳥のように」."
+      "zh": "线索：空格前是名词「鳥」，后面是动作「空を 自由に 飛びたい」。\n规则：“像……一样”去修饰动词、形容词，用「名词＋のように」；修饰名词才用「のような」。",
+      "en": "Clue: Before the blank is the noun 「鳥」; after it comes an action, 「空を 自由に 飛びたい」.\nRule: \"Like …\" describing a verb or adjective is noun ＋ 「のように」; 「のような」 is for describing a noun."
     },
     "wrong": [
       null,
@@ -301,8 +301,8 @@
       "en": "I got to meet my favourite singer — yesterday was like a dream."
     },
     "why": {
-      "zh": "线索：空格后面紧接名词「一日」。\n规则：“像……一样的＋名词”，用「名词＋のような＋名词」：「夢のような 一日」。\n容易错：选「みたいに」。「みたい」意思对，但接名词要用「みたいな」；「ような」前面又少了「の」。",
-      "en": "Clue: The blank is followed directly by the noun 「一日」.\nRule: \"A [noun] like …\" is noun ＋ 「のような」 ＋ noun: 「夢のような 一日」.\nTrap: Choosing 「みたいに」. 「みたい」 has the right meaning, but before a noun it must be 「みたいな」; and 「ような」 is missing its 「の」."
+      "zh": "线索：空格后面紧接名词「一日」。\n规则：“像……一样的＋名词”，用「名词＋のような＋名词」：「夢のような 一日」。",
+      "en": "Clue: The blank is followed directly by the noun 「一日」.\nRule: \"A [noun] like …\" is noun ＋ 「のような」 ＋ noun: 「夢のような 一日」."
     },
     "wrong": [
       {
@@ -422,8 +422,8 @@
       "en": "(At a hotel front desk) Staff: Could you write your name here, please?"
     },
     "why": {
-      "zh": "线索：说话人是酒店「係の人」，对象是「お客様」。\n规则：对客人、上级提要求，用礼貌的请求「て形＋ください」（書いて ください）。\n技巧：命令、请求类的选项先看谁对谁说：对客人、上级用「〜てください」；「〜なさい」、命令形「書け」是上对下或很冲的说法。",
-      "en": "Clue: The speaker is hotel staff (「係の人」) and the listener is a guest (「お客様」).\nRule: Asking a guest or a superior to do something takes the polite request, て-form ＋ 「ください」 (書いて ください).\nTip: With command or request options, first ask who is talking to whom: to a guest or superior, 「〜てください」; 「〜なさい」 and the imperative 「書け」 are top-down or blunt."
+      "zh": "线索：说话人是酒店「係の人」，对象是「お客様」。\n规则：对客人、上级提要求，用礼貌的请求「て形＋ください」（書いて ください）。",
+      "en": "Clue: The speaker is hotel staff (「係の人」) and the listener is a guest (「お客様」).\nRule: Asking a guest or a superior to do something takes the polite request, て-form ＋ 「ください」 (書いて ください)."
     },
     "wrong": [
       {
@@ -501,8 +501,8 @@
       "en": "There's a loud noise coming from the next room. Is someone in there?"
     },
     "why": {
-      "zh": "线索：空格前是「音」，后面是「します」，前面还有「部屋から」：声音从隔壁传来。\n规则：听到声音、闻到气味、尝到味道，用「名词＋がする」（音がする、匂いがする），感觉本身是主语，用「が」。\n容易错：看到「します」就想填「を」（像「宿題をする」）。感觉的说法要用「が」。",
-      "en": "Clue: 「音」 comes before the blank and 「します」 after it, with 「部屋から」 before that: a sound is coming from the next room.\nRule: Hearing a sound, smelling a smell or tasting a taste is noun ＋ 「がする」 (音がする, 匂いがする); the sensation is the subject, so it takes 「が」.\nTrap: Seeing 「します」 and reaching for 「を」 (as in 「宿題をする」). Sensations take 「が」."
+      "zh": "线索：空格前是「音」，后面是「します」，前面还有「部屋から」：声音从隔壁传来。\n规则：听到声音、闻到气味、尝到味道，用「名词＋がする」（音がする、匂いがする），感觉本身是主语，用「が」。",
+      "en": "Clue: 「音」 comes before the blank and 「します」 after it, with 「部屋から」 before that: a sound is coming from the next room.\nRule: Hearing a sound, smelling a smell or tasting a taste is noun ＋ 「がする」 (音がする, 匂いがする); the sensation is the subject, so it takes 「が」."
     },
     "wrong": [
       null,
@@ -542,8 +542,8 @@
       "en": "This cake tastes of lemon. It's refreshing and delicious."
     },
     "why": {
-      "zh": "线索：说的是蛋糕吃起来怎么样：「レモンの 味」，后面又说「さっぱりして いて、おいしい」。\n规则：说东西有什么味道，用「〜の味がする」：「レモンの味が します」＝有柠檬味。\n容易错：选「が 見えます」。「見える」是眼睛看到的，味道是尝出来的，用「がする」。",
-      "en": "Clue: The sentence is about how the cake tastes: 「レモンの 味」, followed by 「さっぱりして いて、おいしい」.\nRule: To say what something tastes of, use 「〜の味がする」: 「レモンの味が します」 = it tastes of lemon.\nTrap: Choosing 「が 見えます」. 「見える」 is for what the eyes see; a taste is noticed by tasting, which takes 「がする」."
+      "zh": "线索：说的是蛋糕吃起来怎么样：「レモンの 味」，后面又说「さっぱりして いて、おいしい」。\n规则：说东西有什么味道，用「〜の味がする」：「レモンの味が します」＝有柠檬味。",
+      "en": "Clue: The sentence is about how the cake tastes: 「レモンの 味」, followed by 「さっぱりして いて、おいしい」.\nRule: To say what something tastes of, use 「〜の味がする」: 「レモンの味が します」 = it tastes of lemon."
     },
     "wrong": [
       {
@@ -551,8 +551,8 @@
         "en": "Sensations use 「がする」, not 「をする」."
       },
       {
-        "zh": "味道是尝出来的，不能“看见”。",
-        "en": "A taste can't be \"seen\"."
+        "zh": "「が 見えます」是眼睛看得见，味道是尝出来的，不能“看见”。",
+        "en": "「が 見えます」 is for what the eyes see; a taste is tasted, not seen."
       },
       null,
       {
@@ -662,8 +662,8 @@
       "en": "One person can do this job, so there's no need for everyone to come."
     },
     "why": {
-      "zh": "线索：前半句「一人で できますから」给出理由：一个人就能做。\n规则：“没有必要做……”是「辞书形＋必要はない」；否定时助词常用「は」：「必要は ありません」。\n容易错：选「必要が あります」。那是“有必要全员来”，和“一个人就能做”正好相反。",
-      "en": "Clue: The first half, 「一人で できますから」, gives the reason: one person can do it.\nRule: \"There's no need to …\" is dictionary form ＋ 「必要はない」; in the negative the particle is usually 「は」: 「必要は ありません」.\nTrap: Choosing 「必要が あります」. That means everyone has to come — the opposite of \"one person can do it\"."
+      "zh": "线索：前半句「一人で できますから」给出理由：一个人就能做。\n规则：“没有必要做……”是「辞书形＋必要はない」；否定时助词常用「は」：「必要は ありません」。",
+      "en": "Clue: The first half, 「一人で できますから」, gives the reason: one person can do it.\nRule: \"There's no need to …\" is dictionary form ＋ 「必要はない」; in the negative the particle is usually 「は」: 「必要は ありません」."
     },
     "wrong": [
       {
@@ -741,8 +741,8 @@
       "en": "(At a marathon) Go on! Just one more kilometre. Don't give up!"
     },
     "why": {
-      "zh": "线索：在给跑者加油（「がんばれ！」「あと 1キロだ」），空格前是辞书形「あきらめる」。\n规则：“不许……！”的禁止形是「辞书形＋な」：あきらめる → あきらめるな。加油、紧急时常用。\n容易错：选「ない」。否定形是「あきらめない」，不能接在辞书形「あきらめる」后面。",
-      "en": "Clue: Someone is cheering a runner on (「がんばれ！」「あと 1キロだ」), and the blank follows the dictionary form 「あきらめる」.\nRule: The prohibitive \"Don't …!\" is dictionary form ＋ 「な」: あきらめる → あきらめるな. It's common in cheering and emergencies.\nTrap: Choosing 「ない」. The negative is 「あきらめない」; 「ない」 doesn't attach to the dictionary form 「あきらめる」."
+      "zh": "线索：在给跑者加油（「がんばれ！」「あと 1キロだ」），空格前是辞书形「あきらめる」。\n规则：“不许……！”的禁止形是「辞书形＋な」：あきらめる → あきらめるな。加油、紧急时常用。",
+      "en": "Clue: Someone is cheering a runner on (「がんばれ！」「あと 1キロだ」), and the blank follows the dictionary form 「あきらめる」.\nRule: The prohibitive \"Don't …!\" is dictionary form ＋ 「な」: あきらめる → あきらめるな. It's common in cheering and emergencies."
     },
     "wrong": [
       null,
@@ -782,8 +782,8 @@
       "en": "Dad: It's already half past seven! Get up — you'll be late for school!"
     },
     "why": {
-      "zh": "线索：爸爸用「だぞ」「遅れるぞ」这种很冲的口气催孩子：「早く」起来。\n规则：要用命令形。二类动词（起きる、食べる）去掉「る」加「ろ」：起きる → 起きろ。\n容易错：选「起きさせろ」。那是使役“让（别人）起来”，可要起床的是孩子自己。",
-      "en": "Clue: Dad is hurrying the child with blunt endings like 「だぞ」 and 「遅れるぞ」: get up 「早く」.\nRule: This calls for the imperative. For る-verbs (起きる, 食べる), drop 「る」 and add 「ろ」: 起きる → 起きろ.\nTrap: Choosing 「起きさせろ」. That's the causative (make someone else get up), but it's the child who has to get up."
+      "zh": "线索：爸爸用「だぞ」「遅れるぞ」这种很冲的口气催孩子：「早く」起来。\n规则：要用命令形。二类动词（起きる、食べる）去掉「る」加「ろ」：起きる → 起きろ。",
+      "en": "Clue: Dad is hurrying the child with blunt endings like 「だぞ」 and 「遅れるぞ」: get up 「早く」.\nRule: This calls for the imperative. For る-verbs (起きる, 食べる), drop 「る」 and add 「ろ」: 起きる → 起きろ."
     },
     "wrong": [
       {

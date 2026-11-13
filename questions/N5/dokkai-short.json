@@ -16,7 +16,7 @@
         "options": ["いぬに 水を やります", "ケーキを 食べます", "かいものに 行きます", "六時までに かえります"],
         "okj": ["犬に 水を やります", null, "買い物に 行きます", "六時までに 帰ります"],
         "answer": 0,
-        "why": { "zh": "依据：「五時までに いぬに 水を やって ください」\n推理：「〜て ください」是请对方做事。便条里请真理做的只有这一件：五点前给狗喂水。\n容易错：蛋糕是「食べても いいですよ」，只是“可以吃”，不是必须做的事。", "en": "Evidence: 「五時までに いぬに 水を やって ください」\nReasoning: 「〜て ください」 asks someone to do something. It is the only request to Mari in the note: water the dog before five.\nTrap: The cake is 「食べても いいですよ」, \"you may eat it\": allowed, not required." },
+        "why": { "zh": "依据：「五時までに いぬに 水を やって ください」\n推理：「〜て ください」是请对方做事。便条里请真理做的只有这一件：五点前给狗喂水。", "en": "Evidence: 「五時までに いぬに 水を やって ください」\nReasoning: 「〜て ください」 asks someone to do something. It is the only request to Mari in the note: water the dog before five." },
         "wrong": [
           null,
           { "zh": "蛋糕是「食べても いいです」，可以吃，不是必须吃。", "en": "The cake is 「食べても いいです」 — allowed, not required." },
@@ -43,7 +43,7 @@
         "options": ["来週の 月曜日", "あさっての 金曜日", "あしたの 木曜日", "来週の 金曜日"],
         "okj": [null, null, "明日の木曜日", null],
         "answer": 0,
-        "why": { "zh": "依据：「来週の 月曜日に なりました」；「金曜日は テストは ありません」\n推理：「〜に なりました」表示安排改了：原来说后天星期五考试，现在改到下星期一，星期五没有考试。\n容易错：选了最先提到的「あさっての 金曜日」，没看后面已经改了日子。", "en": "Evidence: 「来週の 月曜日に なりました」; 「金曜日は テストは ありません」\nReasoning: 「〜に なりました」 signals a change of plan: the test first set for Friday (the day after tomorrow) is now next Monday, and there is no test on Friday.\nTrap: Picking 「あさっての 金曜日」, the first date mentioned, without noticing it was changed." },
+        "why": { "zh": "依据：「来週の 月曜日に なりました」；「金曜日は テストは ありません」\n推理：「〜に なりました」表示安排改了：原来说后天星期五考试，现在改到下星期一，星期五没有考试。", "en": "Evidence: 「来週の 月曜日に なりました」; 「金曜日は テストは ありません」\nReasoning: 「〜に なりました」 signals a change of plan: the test first set for Friday (the day after tomorrow) is now next Monday, and there is no test on Friday." },
         "wrong": [
           null,
           { "zh": "后天星期五是原来的日子，已经改了，而且「金曜日は テストは ありません」。", "en": "Friday was the old date; it changed, and 「金曜日は テストは ありません」." },
@@ -70,7 +70,7 @@
         "options": ["二時に 駅の 中の ほんやの 前", "二時に 駅の 前", "二時半に 駅の 中の ほんやの 前", "二時半に えいがかんの 前"],
         "okj": ["二時に 駅の 中の 本屋の 前", null, "二時半に 駅の 中の 本屋の 前", "二時半に 映画館の 前"],
         "answer": 0,
-        "why": { "zh": "依据：「駅の 前じゃなくて、駅の 中の ほんやの 前で 会いましょう」；「時間は おなじです」\n推理：「〜じゃなくて」表示地点改了，改到车站里的书店前；「時間は おなじです」表示时间不变，还是原来约的两点。\n容易错：「二時半」是电影开始的时间，不是见面的时间。", "en": "Evidence: 「駅の 前じゃなくて、駅の 中の ほんやの 前で 会いましょう」; 「時間は おなじです」\nReasoning: 「〜じゃなくて」 shows the place changed, to the front of the bookshop inside the station; 「時間は おなじです」 means the time stays as planned: two o'clock.\nTrap: Half past two is when the film starts, not when they meet." },
+        "why": { "zh": "依据：「駅の 前じゃなくて、駅の 中の ほんやの 前で 会いましょう」；「時間は おなじです」\n推理：「〜じゃなくて」表示地点改了，改到车站里的书店前；「時間は おなじです」表示时间不变，还是原来约的两点。", "en": "Evidence: 「駅の 前じゃなくて、駅の 中の ほんやの 前で 会いましょう」; 「時間は おなじです」\nReasoning: 「〜じゃなくて」 shows the place changed, to the front of the bookshop inside the station; 「時間は おなじです」 means the time stays as planned: two o'clock." },
         "wrong": [
           null,
           { "zh": "车站前是原来的地点，因为下雨改了。", "en": "In front of the station was the old place; it changed because of the rain." },
@@ -97,10 +97,10 @@
         "options": ["テニスを して、ラーメンを 食べました", "あさごはんを 食べて、テニスを しました", "ラーメンを 食べて、テニスを しました", "テニスを して、友だちの うちで しゅくだいを しました"],
         "okj": [null, "朝ご飯を食べて、テニスをしました", null, "テニスをして、友達のうちで宿題をしました"],
         "answer": 0,
-        "why": { "zh": "依据：「テニスの あとで、いっしょに ラーメンを 食べました」\n推理：「〜の あとで」＝“……之后”，所以是先打网球，后吃拉面，和选项的顺序一样。\n容易错：把顺序弄反；另外早饭是「食べませんでした」，作业是在「うちで」做的，不是朋友家。", "en": "Evidence: 「テニスの あとで、いっしょに ラーメンを 食べました」\nReasoning: 「〜の あとで」 = \"after …\", so tennis came first and ramen second, the same order as in the option.\nTrap: Reversing the order; also, breakfast was 「食べませんでした」 and the homework was done 「うちで」, not at a friend's." },
+        "why": { "zh": "依据：「テニスの あとで、いっしょに ラーメンを 食べました」\n推理：「〜の あとで」＝“……之后”，所以是先打网球，后吃拉面，和选项的顺序一样。", "en": "Evidence: 「テニスの あとで、いっしょに ラーメンを 食べました」\nReasoning: 「〜の あとで」 = \"after …\", so tennis came first and ramen second, the same order as in the option." },
         "wrong": [
           null,
-          { "zh": "起得晚，「朝ごはんは 食べませんでした」。", "en": "He got up late and 「朝ごはんは 食べませんでした」." },
+          { "zh": "他起得晚，没吃早饭（「あさごはんは 食べませんでした」）。", "en": "He got up late and had no breakfast (「あさごはんは 食べませんでした」)." },
           { "zh": "顺序反了，拉面是打完网球「あとで」吃的。", "en": "Wrong order — the ramen came 「あとで」, after tennis." },
           { "zh": "作业是晚上「うちで」做的，不是在朋友家。", "en": "He did his homework 「うちで」 (at home), not at a friend's." }
         ]
@@ -124,7 +124,7 @@
         "options": ["午後 三時まで", "よる 八時まで", "あさ 七時まで", "午後 七時まで"],
         "okj": [null, "夜 八時まで", "朝 七時まで", null],
         "answer": 0,
-        "why": { "zh": "依据：「きょうは みせの 中の そうじを しますから、午後 三時までです」\n推理：平时开到晚上八点，但「〜ですが、きょうは」后面说今天要打扫，只开到下午三点，所以今天三点前才能买面包。\n容易错：「よる 八時まで」是平时和明天起的时间，不是今天。", "en": "Evidence: 「きょうは みせの 中の そうじを しますから、午後 三時までです」\nReasoning: Normally the shop is open until 8 p.m., but after 「〜ですが、きょうは」 it says today it closes at 3 p.m. for cleaning, so bread can be bought only until three today.\nTrap: 「よる 八時まで」 is the usual closing time, and the one from tomorrow, not today's." },
+        "why": { "zh": "依据：「きょうは みせの 中の そうじを しますから、午後 三時までです」\n推理：平时开到晚上八点，但「〜ですが、きょうは」后面说今天要打扫，只开到下午三点，所以今天三点前才能买面包。", "en": "Evidence: 「きょうは みせの 中の そうじを しますから、午後 三時までです」\nReasoning: Normally the shop is open until 8 p.m., but after 「〜ですが、きょうは」 it says today it closes at 3 p.m. for cleaning, so bread can be bought only until three today." },
         "wrong": [
           null,
           { "zh": "晚上八点是平时和明天起的关门时间，今天因为打扫提前了。", "en": "8 p.m. is the usual closing time (and from tomorrow); today it closes early for cleaning." },
@@ -151,11 +151,11 @@
         "options": ["お母さんに 電話を します", "エマさんに 電話を します", "エマさんの ばんごはんを つくります", "十一時に 友だちの うちへ 行きます"],
         "okj": [null, null, "エマさんの晩ご飯を作ります", "十一時に友達のうちへ行きます"],
         "answer": 0,
-        "why": { "zh": "依据：「リンさんの お母さんから 電話が ありました」；「あとで 電話して くださいと 言って いました」\n推理：说「あとで 電話して ください」的是林的妈妈，请林回头给她打电话。所以林之后要给妈妈打电话。\n容易错：便条是艾玛写的，就以为要给艾玛打电话。", "en": "Evidence: 「リンさんの お母さんから 電話が ありました」; 「あとで 電話して くださいと 言って いました」\nReasoning: The one who said 「あとで 電話して ください」 was Rin's mother, asking Rin to call her back later. So Rin will call her mother.\nTrap: Because Emma wrote the note, thinking the call is to Emma." },
+        "why": { "zh": "依据：「リンさんの お母さんから 電話が ありました」；「あとで 電話して くださいと 言って いました」\n推理：说「あとで 電話して ください」的是林的妈妈，请林回头给她打电话。所以林之后要给妈妈打电话。", "en": "Evidence: 「リンさんの お母さんから 電話が ありました」; 「あとで 電話して くださいと 言って いました」\nReasoning: The one who said 「あとで 電話して ください」 was Rin's mother, asking Rin to call her back later. So Rin will call her mother." },
         "wrong": [
           null,
-          { "zh": "请她打电话的是妈妈，对象也是妈妈，不是艾玛。", "en": "The call is to her mother, not to Emma." },
-          { "zh": "艾玛在朋友家吃，「わたしの 晩ごはんは いりません」。", "en": "Emma eats at a friend's: 「わたしの 晩ごはんは いりません」." },
+          { "zh": "便条是艾玛写的，但请林打电话的是妈妈，要打给妈妈，不是艾玛。", "en": "Emma wrote the note, but it was her mother who asked Rin to call, so the call is to her mother, not Emma." },
+          { "zh": "艾玛在朋友家吃，「わたしの ばんごはんは いりません」，不用给她做饭。", "en": "Emma eats at a friend's: 「わたしの ばんごはんは いりません」, so no dinner is needed for her." },
           { "zh": "去朋友家的是艾玛，十一点是她回来的时间。", "en": "It's Emma who's at a friend's; eleven is when she comes back." }
         ]
       }
@@ -178,12 +178,12 @@
         "options": ["いろえんぴつ", "かみと えんぴつ", "かさ", "のみもの"],
         "okj": ["色鉛筆", "紙と鉛筆", "傘", "飲み物"],
         "answer": 0,
-        "why": { "zh": "依据：「いろえんぴつは みなさんが もって きて ください」\n推理：「〜て ください」是老师的要求，所以彩色铅笔必须带。纸和铅笔是「もって こなくても いいです」＝不带也可以；饮料「もって きても いいです」＝可以带，不是必须。\n容易错：把「〜ても いいです」（可以）当成“必须”。", "en": "Evidence: 「いろえんぴつは みなさんが もって きて ください」\nReasoning: 「〜て ください」 is a request, so colored pencils are a must. Paper and pencils are 「もって こなくても いいです」 (no need to bring); drinks are 「もって きても いいです」 (allowed, not required).\nTrap: Reading 「〜ても いいです」 (\"may\") as \"must\"." },
+        "why": { "zh": "依据：「いろえんぴつは みなさんが もって きて ください」\n推理：「〜て ください」是老师的要求，所以彩色铅笔必须带。纸和铅笔是「もって こなくても いいです」＝不带也可以；饮料「もって きても いいです」＝可以带，不是必须。", "en": "Evidence: 「いろえんぴつは みなさんが もって きて ください」\nReasoning: 「〜て ください」 is a request, so colored pencils are a must. Paper and pencils are 「もって こなくても いいです」 (no need to bring); drinks are 「もって きても いいです」 (allowed, not required)." },
         "wrong": [
           null,
-          { "zh": "纸和铅笔学校有，「持って こなくても いいです」。", "en": "The school has paper and pencils: 「持って こなくても いいです」." },
+          { "zh": "纸和铅笔学校有，「もって こなくても いいです」。", "en": "The school has paper and pencils: 「もって こなくても いいです」." },
           { "zh": "下雨就在教室画，「かさは いりません」。", "en": "If it rains they draw indoors: 「かさは いりません」." },
-          { "zh": "饮料是「持って きても いいです」，可以带，但不是必须带。", "en": "Drinks are 「持って きても いいです」 — allowed, not required." }
+          { "zh": "饮料是「もって きても いいです」，可以带，但不是必须带。", "en": "Drinks are 「もって きても いいです」: allowed, not required." }
         ]
       }
     ]
@@ -204,12 +204,12 @@
         "q": "今月の 二十三日と 二十四日、としょかんが 休みの 日は どれですか。",
         "options": ["二十四日だけ", "二十三日だけ", "二十三日と 二十四日", "どちらも 休みじゃ ありません"],
         "answer": 0,
-        "why": { "zh": "依据：「二十三日の 月曜日は 休みじゃありません」；「二十四日の 火曜日が 休みです」\n推理：平时星期一闭馆；「でも」后面说这个月23日星期一开馆，休息改到第二天24日星期二。所以只有24日休息。\n容易错：只看第一句「毎週 月曜日が 休みです」，漏看「でも」后面的变化。", "en": "Evidence: 「二十三日の 月曜日は 休みじゃありません」; 「二十四日の 火曜日が 休みです」\nReasoning: The library usually closes on Mondays, but after 「でも」 it says Monday the 23rd is open and the closure moves to the next day, Tuesday the 24th. So only the 24th is closed.\nTrap: Reading only 「毎週 月曜日が 休みです」 and missing the change after 「でも」." },
+        "why": { "zh": "依据：「二十三日の 月曜日は 休みじゃありません」；「二十四日の 火曜日が 休みです」\n推理：平时星期一闭馆；「でも」后面说这个月23日星期一开馆，休息改到第二天24日星期二。所以只有24日休息。", "en": "Evidence: 「二十三日の 月曜日は 休みじゃありません」; 「二十四日の 火曜日が 休みです」\nReasoning: The library usually closes on Mondays, but after 「でも」 it says Monday the 23rd is open and the closure moves to the next day, Tuesday the 24th. So only the 24th is closed." },
         "wrong": [
           null,
           { "zh": "平时星期一闭馆，但这个月23号星期一开馆。", "en": "Mondays are usually closed, but this month Monday the 23rd is open." },
           { "zh": "23号开馆，只有24号闭馆。", "en": "The 23rd is open; only the 24th is closed." },
-          { "zh": "24号星期二闭馆。", "en": "Tuesday the 24th is closed." }
+          { "zh": "24号星期二闭馆，不是两天都开。", "en": "Tuesday the 24th is closed, so it isn't open on both days." }
         ]
       }
     ]
@@ -231,7 +231,7 @@
         "options": ["びょういんへ 行きます", "びょういんへ 行ってから、学校へ 行きます", "学校へ しゅくだいを もって いきます", "あした びょういんへ 行きます"],
         "okj": ["病院へ 行きます", "病院へ 行ってから、学校へ 行きます", "学校へ宿題を持っていきます", "明日病院へ行きます"],
         "answer": 0,
-        "why": { "zh": "依据：「きょうは 学校を 休みます」；「午前中に びょういんへ 行きます」\n推理：今天请假不去学校，上午去医院；作业是「あした」带去学校的。所以今天做的事是去医院。\n容易错：交作业是明天的事；看完病也不去学校，因为今天请假。", "en": "Evidence: 「きょうは 学校を 休みます」; 「午前中に びょういんへ 行きます」\nReasoning: Today he stays home from school and goes to the hospital in the morning; the homework goes to school 「あした」. So today's plan is the hospital.\nTrap: Handing in homework is tomorrow; and he isn't going to school after the hospital, since he is off today." },
+        "why": { "zh": "依据：「きょうは 学校を 休みます」；「午前中に びょういんへ 行きます」\n推理：今天请假不去学校，上午去医院；作业是「あした」带去学校的。所以今天做的事是去医院。", "en": "Evidence: 「きょうは 学校を 休みます」; 「午前中に びょういんへ 行きます」\nReasoning: Today he stays home from school and goes to the hospital in the morning; the homework goes to school 「あした」. So today's plan is the hospital." },
         "wrong": [
           null,
           { "zh": "他今天请假，「学校を 休みます」，看完病也不去学校。", "en": "He's absent today (「学校を 休みます」), so no school after the hospital." },
@@ -257,10 +257,10 @@
         "q": "アリさんは 土曜日 何時に ケンさんの うちの 前へ 行きますか。",
         "options": ["六時半", "六時", "七時", "七時半"],
         "answer": 0,
-        "why": { "zh": "依据：「六時半に わたしの うちの 前で 会いましょう」\n推理：问的是去健家门口的时间。聚会改成七点开始，但他们要在聚会前一起去买饮料，约好六点半在健家门口见。\n容易错：选了聚会的时间（原来的六点或新的七点），没分清“聚会时间”和“见面时间”。", "en": "Evidence: 「六時半に わたしの うちの 前で 会いましょう」\nReasoning: The question is when to be outside Ken's house. The party now starts at seven, but they will first buy drinks together, meeting outside Ken's house at 6:30.\nTrap: Choosing a party time (the old six or the new seven) instead of the meeting time." },
+        "why": { "zh": "依据：「六時半に わたしの うちの 前で 会いましょう」\n推理：问的是去健家门口的时间。聚会改成七点开始，但他们要在聚会前一起去买饮料，约好六点半在健家门口见。", "en": "Evidence: 「六時半に わたしの うちの 前で 会いましょう」\nReasoning: The question is when to be outside Ken's house. The party now starts at seven, but they will first buy drinks together, meeting outside Ken's house at 6:30." },
         "wrong": [
           null,
-          { "zh": "六点是聚会原来的开始时间，已经改了，而且不是见面时间。", "en": "Six was the party's old start time — and it was never the meeting time." },
+          { "zh": "六点是聚会原来的开始时间，已经改了，而且不是见面时间。", "en": "Six was the party's old start time, which has changed, and it isn't the meeting time either." },
           { "zh": "七点是聚会新的开始时间，见面要在那之前。", "en": "Seven is the party's new start; they meet before that." },
           { "zh": "邮件里没有七点半；见面在聚会之前的六点半。", "en": "There's no 7:30 in the email; they meet at 6:30, before the party." }
         ]

@@ -38,14 +38,14 @@
    }
   },
   "why": {
-   "zh": "依据：女的问：「すみません、ここに すわっても いいですか。」\n推理：「〜ても いいですか」是请求许可，被问的男的同意时用「どうぞ」回应，说两遍更显热情。回答的是对方能不能坐，不是自己坐没坐。\n容易错：照搬问句里的动词「すわる」作答。",
-   "en": "Evidence: The woman asks: 「すみません、ここに すわっても いいですか。」\nReasoning: 「〜ても いいですか」 asks for permission; the man, who is being asked, grants it with 「どうぞ」, doubled to sound warm. He answers whether she may sit, not whether he sat.\nTrap: echoing the verb 「すわる」 from the question."
+   "zh": "依据：女的问：「すみません、ここに すわっても いいですか。」\n推理：「〜ても いいですか」是请求许可，被问的男的同意时用「どうぞ」回应，说两遍更显热情。回答的是对方能不能坐，不是自己坐没坐。",
+   "en": "Evidence: The woman asks: 「すみません、ここに すわっても いいですか。」\nReasoning: 「〜ても いいですか」 asks for permission; the man, who is being asked, grants it with 「どうぞ」, doubled to sound warm. He answers whether she may sit, not whether he sat."
   },
   "wrong": [
    null,
    {
-    "zh": "「すわりました」是过去式，说的是自己已经坐了，答非所问。",
-    "en": "「すわりました」 is past tense and about yourself — it doesn't answer the request."
+    "zh": "「すわりました」照搬了问句里的动词，说的是自己已经坐了，没有回答她能不能坐。",
+    "en": "「すわりました」 echoes the verb from the question and says he has already sat; it doesn't say whether she may sit."
    },
    {
     "zh": "先说「いいえ」又说「请坐」，前后矛盾。",
@@ -96,8 +96,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的问：「田中さん、きのう どこかへ 行きましたか。」\n推理：关键是「きのう」和过去式「行きましたか」，问的是昨天的事，所以要用过去式回答；没去就说「どこにも 行きませんでした」。\n容易错：时态不对——「あした」「〜たいです」都不是在说昨天。",
-   "en": "Evidence: The man asks: 「田中さん、きのう どこかへ 行きましたか。」\nReasoning: The key words are 「きのう」 and the past 「行きましたか」: he asks about yesterday, so the reply must be in the past. Not going anywhere is 「どこにも 行きませんでした」.\nTrap: wrong tense — 「あした」 and 「〜たいです」 don't talk about yesterday."
+   "zh": "依据：男的问：「田中さん、きのう どこかへ 行きましたか。」\n推理：关键是「きのう」和过去式「行きましたか」，问的是昨天的事，所以要用过去式回答；没去就说「どこにも 行きませんでした」。",
+   "en": "Evidence: The man asks: 「田中さん、きのう どこかへ 行きましたか。」\nReasoning: The key words are 「きのう」 and the past 「行きましたか」: he asks about yesterday, so the reply must be in the past. Not going anywhere is 「どこにも 行きませんでした」."
   },
   "wrong": [
    {
@@ -153,8 +153,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的问：「どこで 買いましたか。」\n推理：疑问词是「どこで」（在哪儿），男的要回答一个地点，「駅の 前の 店です」正好是地点。\n容易错：抓错疑问词——「きのう」回答的是什么时候；有疑问词的问句不能用「はい」回答。",
-   "en": "Evidence: The woman asks: 「どこで 買いましたか。」\nReasoning: The question word is 「どこで」 (where), so the man must name a place, and 「駅の 前の 店です」 is one.\nTrap: the wrong question word — 「きのう」 answers when; a question-word question can't be answered with 「はい」."
+   "zh": "依据：女的问：「どこで 買いましたか。」\n推理：疑问词是「どこで」（在哪儿），男的要回答一个地点，「駅の 前の 店です」正好是地点。",
+   "en": "Evidence: The woman asks: 「どこで 買いましたか。」\nReasoning: The question word is 「どこで」 (where), so the man must name a place, and 「駅の 前の 店です」 is one."
   },
   "wrong": [
    null,
@@ -210,8 +210,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「いっしょに 昼ごはんを 食べませんか。」\n推理：「いっしょに〜ませんか」是邀请，不是问对方吃没吃。接受邀请时说「ええ、〜ましょう」，所以回答「ええ、食べましょう」。\n容易错：把邀请的「〜ませんか」听成否定疑问。",
-   "en": "Evidence: The man says: 「いっしょに 昼ごはんを 食べませんか。」\nReasoning: 「いっしょに〜ませんか」 is an invitation, not a question about whether she ate. Accepting is 「ええ、〜ましょう」, so 「ええ、食べましょう」.\nTrap: hearing the inviting 「〜ませんか」 as a negative question."
+   "zh": "依据：男的说：「いっしょに 昼ごはんを 食べませんか。」\n推理：「いっしょに〜ませんか」是邀请，不是问对方吃没吃。接受邀请时说「ええ、〜ましょう」，所以回答「ええ、食べましょう」。",
+   "en": "Evidence: The man says: 「いっしょに 昼ごはんを 食べませんか。」\nReasoning: 「いっしょに〜ませんか」 is an invitation, not a question about whether she ate. Accepting is 「ええ、〜ましょう」, so 「ええ、食べましょう」."
   },
   "wrong": [
    {
@@ -268,8 +268,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的问：「あした、何時に 来ますか。」\n推理：「何時」问的是几点，男的要回答一个时刻：「九時ごろ」是九点左右。\n容易错：「九時」（九点）和「九時間」（九个小时）听混；「バスで」回答的是怎么来。",
-   "en": "Evidence: The woman asks: 「あした、何時に 来ますか。」\nReasoning: 「何時」 asks what time, so he gives a clock time: 「九時ごろ」, around nine.\nTrap: mixing up 「九時」 (nine o'clock) and 「九時間」 (nine hours); 「バスで」 answers how."
+   "zh": "依据：女的问：「あした、何時に 来ますか。」\n推理：「何時」问的是几点，男的要回答一个时刻：「九時ごろ」是九点左右。",
+   "en": "Evidence: The woman asks: 「あした、何時に 来ますか。」\nReasoning: 「何時」 asks what time, so he gives a clock time: 「九時ごろ」, around nine."
   },
   "wrong": [
    null,
@@ -326,8 +326,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的问：「この りんご、一つ いくらですか。」\n推理：「いくら」问的是价钱，回答的女的是卖苹果的人，要说价格：「百円です」。\n容易错：抓住「一つ」回答个数；「一つ ください」是买的人说的话。",
-   "en": "Evidence: The man asks: 「この りんご、一つ いくらですか。」\nReasoning: 「いくら」 asks the price, and the woman answering is the seller, so she gives one: 「百円です」.\nTrap: latching onto 「一つ」 and giving a number; 「一つ ください」 is the buyer's line."
+   "zh": "依据：男的问：「この りんご、一つ いくらですか。」\n推理：「いくら」问的是价钱，回答的女的是卖苹果的人，要说价格：「百円です」。",
+   "en": "Evidence: The man asks: 「この りんご、一つ いくらですか。」\nReasoning: 「いくら」 asks the price, and the woman answering is the seller, so she gives one: 「百円です」."
   },
   "wrong": [
    {
@@ -384,8 +384,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「おいしい ケーキが ありますよ。一つ どうですか。」\n推理：「一つ どうですか」是请对方吃一块，不是问味道。接受别人给的吃的，说「じゃあ、いただきます」。\n容易错：把「どうですか」听成问感想；照搬「あります」。",
-   "en": "Evidence: The woman says: 「おいしい ケーキが ありますよ。一つ どうですか。」\nReasoning: 「一つ どうですか」 offers him a piece; it doesn't ask how it tastes. Accepting food you are offered is 「じゃあ、いただきます」.\nTrap: taking 「どうですか」 as asking for an opinion; echoing 「あります」."
+   "zh": "依据：女的说：「おいしい ケーキが ありますよ。一つ どうですか。」\n推理：「一つ どうですか」是请对方吃一块，不是问味道。接受别人给的吃的，说「じゃあ、いただきます」。",
+   "en": "Evidence: The woman says: 「おいしい ケーキが ありますよ。一つ どうですか。」\nReasoning: 「一つ どうですか」 offers him a piece; it doesn't ask how it tastes. Accepting food you are offered is 「じゃあ、いただきます」."
   },
   "wrong": [
    {
@@ -442,8 +442,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的问：「かさ、ありますか。」\n推理：前面的「雨ですね」只是开场，真正的问题是有没有伞。女的回答「いいえ」再说明「わすれました」（忘带了）。\n容易错：照搬前半句的「雨」作答。",
-   "en": "Evidence: The man asks: 「かさ、ありますか。」\nReasoning: 「雨ですね」 is just the lead-in; the real question is whether she has an umbrella. She says 「いいえ」 and explains 「わすれました」 (she forgot it).\nTrap: echoing 「雨」 from the first half."
+   "zh": "依据：男的问：「かさ、ありますか。」\n推理：前面的「雨ですね」只是开场，真正的问题是有没有伞。女的回答「いいえ」再说明「わすれました」（忘带了）。",
+   "en": "Evidence: The man asks: 「かさ、ありますか。」\nReasoning: 「雨ですね」 is just the lead-in; the real question is whether she has an umbrella. She says 「いいえ」 and explains 「わすれました」 (she forgot it)."
   },
   "wrong": [
    {
@@ -499,8 +499,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的问：「この 本、もう 読みましたか。」\n推理：「もう〜ましたか」问“已经……了吗”。还没做的回答固定是「いいえ、まだ〜て いません」，所以说「まだ 読んで いません」。\n容易错：「もう＋否定」是“不再……”，不是“还没……”。",
-   "en": "Evidence: The woman asks: 「この 本、もう 読みましたか。」\nReasoning: 「もう〜ましたか」 asks \"have you … yet?\". The set reply for \"not yet\" is 「いいえ、まだ〜て いません」, so 「まだ 読んで いません」.\nTrap: 「もう」 + negative means \"not any more\", not \"not yet\"."
+   "zh": "依据：女的问：「この 本、もう 読みましたか。」\n推理：「もう〜ましたか」问“已经……了吗”。还没做的回答固定是「いいえ、まだ〜て いません」，所以说「まだ 読んで いません」。",
+   "en": "Evidence: The woman asks: 「この 本、もう 読みましたか。」\nReasoning: 「もう〜ましたか」 asks \"have you … yet?\". The set reply for \"not yet\" is 「いいえ、まだ〜て いません」, so 「まだ 読んで いません」."
   },
   "wrong": [
    {
@@ -557,8 +557,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的问：「山田さん、日曜日、ひまですか。」\n推理：问星期天有没有空，往往是要约人。「日曜日は ちょっと……」话说一半，是日语里委婉表示“不方便”的说法。\n容易错：照搬「日曜日」；「ひまでした」是过去式。",
-   "en": "Evidence: The man asks: 「山田さん、日曜日、ひまですか。」\nReasoning: Asking if someone is free on Sunday usually leads to an invitation. Trailing off with 「日曜日は ちょっと……」 is the soft Japanese way to say it's not convenient.\nTrap: echoing 「日曜日」; 「ひまでした」 is past tense."
+   "zh": "依据：男的问：「山田さん、日曜日、ひまですか。」\n推理：问星期天有没有空，往往是要约人。「日曜日は ちょっと……」话说一半，是日语里委婉表示“不方便”的说法。",
+   "en": "Evidence: The man asks: 「山田さん、日曜日、ひまですか。」\nReasoning: Asking if someone is free on Sunday usually leads to an invitation. Trailing off with 「日曜日は ちょっと……」 is the soft Japanese way to say it's not convenient."
   },
   "wrong": [
    {
@@ -615,8 +615,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「じゃ、いってきます。」\n推理：「いってきます」是出门的人说的，留在家里送他的女的回「いってらっしゃい」。\n容易错：照搬对方的话；「おかえりなさい」是对方回家时说的。",
-   "en": "Evidence: The man says: 「じゃ、いってきます。」\nReasoning: 「いってきます」 is said by the person leaving; the woman staying home answers 「いってらっしゃい」.\nTrap: echoing his line; 「おかえりなさい」 is for when he comes back."
+   "zh": "依据：男的说：「じゃ、いってきます。」\n推理：「いってきます」是出门的人说的，留在家里送他的女的回「いってらっしゃい」。",
+   "en": "Evidence: The man says: 「じゃ、いってきます。」\nReasoning: 「いってきます」 is said by the person leaving; the woman staying home answers 「いってらっしゃい」."
   },
   "wrong": [
    {
@@ -674,8 +674,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「ただいま。」\n推理：「ただいま」是回到家的人说的，家里的男的回「おかえりなさい」。\n容易错：照搬「ただいま」；「いってらっしゃい」是送人出门时说的。",
-   "en": "Evidence: The woman says: 「ただいま。」\nReasoning: 「ただいま」 is said by the one arriving home; the man at home answers 「おかえりなさい」.\nTrap: echoing 「ただいま」; 「いってらっしゃい」 sees someone off."
+   "zh": "依据：女的说：「ただいま。」\n推理：「ただいま」是回到家的人说的，家里的男的回「おかえりなさい」。",
+   "en": "Evidence: The woman says: 「ただいま。」\nReasoning: 「ただいま」 is said by the one arriving home; the man at home answers 「おかえりなさい」."
   },
   "wrong": [
    {
@@ -733,8 +733,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「きのうは かさ、どうも ありがとう ございました。」\n推理：男的在为昨天借伞道谢，说明伞是女的借给他的。回应道谢说「いいえ、どう いたしまして」。\n容易错：照搬「ありがとう」；抓住「かさ」回答有没有伞。",
-   "en": "Evidence: The man says: 「きのうは かさ、どうも ありがとう ございました。」\nReasoning: He is thanking her for yesterday's umbrella, so she was the one who lent it. The reply to thanks is 「いいえ、どう いたしまして」.\nTrap: echoing 「ありがとう」; picking up 「かさ」 and talking about having one."
+   "zh": "依据：男的说：「きのうは かさ、どうも ありがとう ございました。」\n推理：男的在为昨天借伞道谢，说明伞是女的借给他的。回应道谢说「いいえ、どう いたしまして」。",
+   "en": "Evidence: The man says: 「きのうは かさ、どうも ありがとう ございました。」\nReasoning: He is thanking her for yesterday's umbrella, so she was the one who lent it. The reply to thanks is 「いいえ、どう いたしまして」."
   },
   "wrong": [
    {
@@ -791,8 +791,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「おそく なって、すみません。」\n推理：「すみません」在这里是为迟到道歉，男的接受道歉时说「だいじょうぶですよ」（没关系）。\n容易错：「どう いたしまして」回应的是道谢，不是道歉；照搬「おそく」。",
-   "en": "Evidence: The woman says: 「おそく なって、すみません。」\nReasoning: Here 「すみません」 apologises for being late; the man accepts it with 「だいじょうぶですよ」 (that's fine).\nTrap: 「どう いたしまして」 answers thanks, not an apology; echoing 「おそく」."
+   "zh": "依据：女的说：「おそく なって、すみません。」\n推理：「すみません」在这里是为迟到道歉，男的接受道歉时说「だいじょうぶですよ」（没关系）。",
+   "en": "Evidence: The woman says: 「おそく なって、すみません。」\nReasoning: Here 「すみません」 apologises for being late; the man accepts it with 「だいじょうぶですよ」 (that's fine)."
   },
   "wrong": [
    {
@@ -849,8 +849,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「じゃ、おさきに しつれいします。」\n推理：这是下班比别人先走时的招呼，留下的同事回「おつかれさまでした」（辛苦了）。\n容易错：照搬「しつれい」；「いってらっしゃい」是对出去还会回来的人说的。",
-   "en": "Evidence: The man says: 「じゃ、おさきに しつれいします。」\nReasoning: This is what you say leaving work before others; the colleague staying answers 「おつかれさまでした」.\nTrap: echoing 「しつれい」; 「いってらっしゃい」 is for someone who will come back."
+   "zh": "依据：男的说：「じゃ、おさきに しつれいします。」\n推理：这是下班比别人先走时的招呼，留下的同事回「おつかれさまでした」（辛苦了）。",
+   "en": "Evidence: The man says: 「じゃ、おさきに しつれいします。」\nReasoning: This is what you say leaving work before others; the colleague staying answers 「おつかれさまでした」."
   },
   "wrong": [
    null,
@@ -908,8 +908,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「おじゃまします。」\n推理：「おじゃまします」是客人进别人家时说的，回答的男的是主人，要说欢迎的话：「いらっしゃい。どうぞ」。\n容易错：照搬客人的话；「おかえりなさい」是对回家的家人说的。",
-   "en": "Evidence: The woman says: 「おじゃまします。」\nReasoning: 「おじゃまします」 is what a guest says coming into a home; the man answering is the host, so he welcomes her: 「いらっしゃい。どうぞ」.\nTrap: echoing the guest's line; 「おかえりなさい」 greets family coming home."
+   "zh": "依据：女的说：「おじゃまします。」\n推理：「おじゃまします」是客人进别人家时说的，回答的男的是主人，要说欢迎的话：「いらっしゃい。どうぞ」。",
+   "en": "Evidence: The woman says: 「おじゃまします。」\nReasoning: 「おじゃまします」 is what a guest says coming into a home; the man answering is the host, so he welcomes her: 「いらっしゃい。どうぞ」."
   },
   "wrong": [
    {
@@ -967,8 +967,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「さあ、どうぞ。たくさん 食べて ください。」\n推理：「さあ、どうぞ」是请对方开始吃，说明男的还没吃。开始吃之前说「いただきます」。\n容易错：时机不对——「ごちそうさまでした」是吃完后说；照搬「たくさん」。",
-   "en": "Evidence: The woman says: 「さあ、どうぞ。たくさん 食べて ください。」\nReasoning: 「さあ、どうぞ」 invites him to start, so he hasn't eaten yet, and before eating you say 「いただきます」.\nTrap: wrong moment — 「ごちそうさまでした」 comes after the meal; echoing 「たくさん」."
+   "zh": "依据：女的说：「さあ、どうぞ。たくさん 食べて ください。」\n推理：「さあ、どうぞ」是请对方开始吃，说明男的还没吃。开始吃之前说「いただきます」。",
+   "en": "Evidence: The woman says: 「さあ、どうぞ。たくさん 食べて ください。」\nReasoning: 「さあ、どうぞ」 invites him to start, so he hasn't eaten yet, and before eating you say 「いただきます」."
   },
   "wrong": [
    {
@@ -1025,8 +1025,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的问：「新しい 学校は どうですか。」\n推理：「〜は どうですか」问的是感受、印象，女的要说自己觉得怎么样：「とても たのしいです」。\n容易错：回答地点答非所问；照搬「新しい」并用「はい」回答疑问词问句。",
-   "en": "Evidence: The man asks: 「新しい 学校は どうですか。」\nReasoning: 「〜は どうですか」 asks for her impression, so she says how she finds it: 「とても たのしいです」.\nTrap: giving the location instead; echoing 「新しい」 and answering a question-word question with 「はい」."
+   "zh": "依据：男的问：「新しい 学校は どうですか。」\n推理：「〜は どうですか」问的是感受、印象，女的要说自己觉得怎么样：「とても たのしいです」。",
+   "en": "Evidence: The man asks: 「新しい 学校は どうですか。」\nReasoning: 「〜は どうですか」 asks for her impression, so she says how she finds it: 「とても たのしいです」."
   },
   "wrong": [
    null,
@@ -1083,8 +1083,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「すみません、まどを あけて ください。」\n推理：「〜て ください」是在请男的开窗，他答应请求时说「はい、いいですよ」。\n容易错：把请求听成“开了吗”；照搬「あけて ください」反过来请对方做。",
-   "en": "Evidence: The woman says: 「すみません、まどを あけて ください。」\nReasoning: 「〜て ください」 asks the man to open the window; he agrees with 「はい、いいですよ」.\nTrap: hearing the request as \"is it open?\"; echoing 「あけて ください」 back at her."
+   "zh": "依据：女的说：「すみません、まどを あけて ください。」\n推理：「〜て ください」是在请男的开窗，他答应请求时说「はい、いいですよ」。",
+   "en": "Evidence: The woman says: 「すみません、まどを あけて ください。」\nReasoning: 「〜て ください」 asks the man to open the window; he agrees with 「はい、いいですよ」."
   },
   "wrong": [
    {
@@ -1141,8 +1141,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的问：「駅から 学校まで どのぐらい かかりますか。」\n推理：「どのぐらい かかりますか」问的是要花多长时间，回答时长：「二十分ぐらいです」。\n容易错：「八時に」是到达的时刻，不是时长；照搬「かかります」用「はい」回答。",
-   "en": "Evidence: The man asks: 「駅から 学校まで どのぐらい かかりますか。」\nReasoning: 「どのぐらい かかりますか」 asks how long it takes, so the reply is a length of time: 「二十分ぐらいです」.\nTrap: 「八時に」 is an arrival time, not a duration; echoing 「かかります」 with 「はい」."
+   "zh": "依据：男的问：「駅から 学校まで どのぐらい かかりますか。」\n推理：「どのぐらい かかりますか」问的是要花多长时间，回答时长：「二十分ぐらいです」。",
+   "en": "Evidence: The man asks: 「駅から 学校まで どのぐらい かかりますか。」\nReasoning: 「どのぐらい かかりますか」 asks how long it takes, so the reply is a length of time: 「二十分ぐらいです」."
   },
   "wrong": [
    null,
@@ -1199,8 +1199,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的问：「おげんきですか。」\n推理：问现在身体好不好，用现在式回答「はい、げんきです」。\n容易错：「げんきでした」是过去式；「どう いたしまして」是回应道谢的。",
-   "en": "Evidence: The man asks: 「おげんきですか。」\nReasoning: He asks how she is now, so she answers in the present: 「はい、げんきです」.\nTrap: 「げんきでした」 is past tense; 「どう いたしまして」 answers thanks."
+   "zh": "依据：男的问：「おげんきですか。」\n推理：问现在身体好不好，用现在式回答「はい、げんきです」。",
+   "en": "Evidence: The man asks: 「おげんきですか。」\nReasoning: He asks how she is now, so she answers in the present: 「はい、げんきです」."
   },
   "wrong": [
    null,
@@ -1257,8 +1257,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「けっこん、おめでとう ございます。」\n推理：别人祝贺自己，回答「ありがとう ございます」表示感谢。\n容易错：照搬「おめでとう ございます」是祝贺别人的话；对方已经在祝贺结婚，说「还没结婚」前后矛盾。",
-   "en": "Evidence: The woman says: 「けっこん、おめでとう ございます。」\nReasoning: When someone congratulates you, you thank them: 「ありがとう ございます」.\nTrap: echoing 「おめでとう ございます」 congratulates her back; saying he isn't married contradicts what she's congratulating."
+   "zh": "依据：女的说：「けっこん、おめでとう ございます。」\n推理：别人祝贺自己，回答「ありがとう ございます」表示感谢。",
+   "en": "Evidence: The woman says: 「けっこん、おめでとう ございます。」\nReasoning: When someone congratulates you, you thank them: 「ありがとう ございます」."
   },
   "wrong": [
    {
@@ -1316,8 +1316,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「じゃ、また あした。」\n推理：分别时说明天见，同样回一句「また あした」就可以。\n容易错：「休みでした」是过去式，说的是明天却用了过去式；「おかえりなさい」是迎接回家的人。",
-   "en": "Evidence: The woman says: 「じゃ、また あした。」\nReasoning: Parting with \"see you tomorrow\", you simply say 「また あした」 back.\nTrap: 「休みでした」 puts tomorrow in the past tense; 「おかえりなさい」 welcomes someone home."
+   "zh": "依据：女的说：「じゃ、また あした。」\n推理：分别时说明天见，同样回一句「また あした」就可以。",
+   "en": "Evidence: The woman says: 「じゃ、また あした。」\nReasoning: Parting with \"see you tomorrow\", you simply say 「また あした」 back."
   },
   "wrong": [
    null,
@@ -1375,8 +1375,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「この へや、ちょっと さむいですね。」\n推理：说房间冷，其实是希望做点什么，回答「まど、しめましょうか」主动帮忙最自然。\n容易错：「さむかったです」是过去式；「ひろい へや」只接了「へや」这个词。",
-   "en": "Evidence: The woman says: 「この へや、ちょっと さむいですね。」\nReasoning: Saying the room is cold hints that something should be done; offering 「まど、しめましょうか」 is the natural reply.\nTrap: 「さむかったです」 is past tense; 「ひろい へや」 only picks up the word 「へや」."
+   "zh": "依据：女的说：「この へや、ちょっと さむいですね。」\n推理：她说房间有点冷，男的主动提出关窗「まど、しめましょうか」，是最自然的回应。",
+   "en": "Evidence: The woman says: 「この へや、ちょっと さむいですね。」\nReasoning: She says the room is a bit cold; offering to close the window, 「まど、しめましょうか」, is the most natural reply."
   },
   "wrong": [
    null,
@@ -1434,8 +1434,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的问：「この いす、つかって いますか。」\n推理：问椅子有没有人用，其实是想用它。没人用就说「いいえ、どうぞ つかって ください」。\n容易错：「いい いす」只接了「いす」；「いっしょに つかいましょう」把问话听成了邀请。",
-   "en": "Evidence: The man asks: 「この いす、つかって いますか。」\nReasoning: Asking if a chair is in use means he wants it. If not, you say 「いいえ、どうぞ つかって ください」.\nTrap: 「いい いす」 just echoes 「いす」; 「いっしょに つかいましょう」 hears an invitation that isn't there."
+   "zh": "依据：男的问：「この いす、つかって いますか。」\n推理：问椅子有没有人用，其实是想用它。没人用就说「いいえ、どうぞ つかって ください」。",
+   "en": "Evidence: The man asks: 「この いす、つかって いますか。」\nReasoning: Asking if a chair is in use means he wants it. If not, you say 「いいえ、どうぞ つかって ください」."
   },
   "wrong": [
    {
@@ -1492,8 +1492,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的问：「なつ休みは 何を しますか。」\n推理：问这个暑假的打算，用将来的事回答「国へ かえります」。\n容易错：「きょねん」是去年的事，时态不对；「なつは あつい」只接了「なつ」。",
-   "en": "Evidence: The woman asks: 「なつ休みは 何を しますか。」\nReasoning: She asks about this summer's plans, so he answers with what he will do: 「国へ かえります」.\nTrap: 「きょねん」 is about last year — wrong time; 「なつは あつい」 only echoes 「なつ」."
+   "zh": "依据：女的问：「なつ休みは 何を しますか。」\n推理：问这个暑假的打算，用将来的事回答「国へ かえります」。",
+   "en": "Evidence: The woman asks: 「なつ休みは 何を しますか。」\nReasoning: She asks about this summer's plans, so he answers with what he will do: 「国へ かえります」."
   },
   "wrong": [
    {
@@ -1550,8 +1550,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的问：「おいくつですか。」\n推理：说到孩子时「おいくつですか」是问年龄，回答「五さいです」。\n容易错：「二人 います」回答的是有几个孩子；「三つ ください」把「いくつ」当成买东西的个数。",
-   "en": "Evidence: The man asks: 「おいくつですか。」\nReasoning: Said about a child, 「おいくつですか」 asks the age: 「五さいです」.\nTrap: 「二人 います」 answers how many children; 「三つ ください」 takes 「いくつ」 as a number of things to buy."
+   "zh": "依据：男的问：「おいくつですか。」\n推理：说到孩子时「おいくつですか」是问年龄，回答「五さいです」。",
+   "en": "Evidence: The man asks: 「おいくつですか。」\nReasoning: Said about a child, 「おいくつですか」 asks the age: 「五さいです」."
   },
   "wrong": [
    {
@@ -1608,8 +1608,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的问：「何時に おわりますか。」\n推理：问几点结束，回答结束的时刻「3時ごろです」。\n容易错：「1時から」是开始的时间；「2時間ぐらい」是开多长时间，不是几点。",
-   "en": "Evidence: The woman asks: 「何時に おわりますか。」\nReasoning: She asks what time it ends, so he gives the end time: 「3時ごろです」.\nTrap: 「1時から」 is the start time; 「2時間ぐらい」 is how long it lasts, not a time of day."
+   "zh": "依据：女的问：「何時に おわりますか。」\n推理：问几点结束，回答结束的时刻「3時ごろです」。",
+   "en": "Evidence: The woman asks: 「何時に おわりますか。」\nReasoning: She asks what time it ends, so he gives the end time: 「3時ごろです」."
   },
   "wrong": [
    {
@@ -1666,8 +1666,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「にもつ、一つ もちましょうか。」\n推理：「〜ましょうか」是主动提出帮忙，接受时说「すみません。おねがいします」。\n容易错：「いっしょに もちましょう」把帮忙听成了邀请；「一つ もちます」是说自己来拿，立场反了。",
-   "en": "Evidence: The man says: 「にもつ、一つ もちましょうか。」\nReasoning: 「〜ましょうか」 offers help; to accept you say 「すみません。おねがいします」.\nTrap: 「いっしょに もちましょう」 hears an invitation instead of an offer; 「一つ もちます」 says she will carry it — the wrong side."
+   "zh": "依据：男的说：「にもつ、一つ もちましょうか。」\n推理：「〜ましょうか」是主动提出帮忙，接受时说「すみません。おねがいします」。",
+   "en": "Evidence: The man says: 「にもつ、一つ もちましょうか。」\nReasoning: 「〜ましょうか」 offers help; to accept you say 「すみません。おねがいします」."
   },
   "wrong": [
    {
@@ -1725,8 +1725,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「きのうの よる、電話しましたが、いませんでしたね。」\n推理：对方说昨晚打电话你不在，解释当时的情况「出かけて いました」最自然。\n容易错：打电话的是女的，不是男的；「今 うちに います」说的是现在，问的是昨晚。",
-   "en": "Evidence: The woman says: 「きのうの よる、電話しましたが、いませんでしたね。」\nReasoning: She called last night and he wasn't there; explaining 「出かけて いました」 is the natural reply.\nTrap: she made the call, not him; 「今 うちに います」 is about now, not last night."
+   "zh": "依据：女的说：「きのうの よる、電話しましたが、いませんでしたね。」\n推理：对方说昨晚打电话你不在，解释当时的情况「出かけて いました」最自然。",
+   "en": "Evidence: The woman says: 「きのうの よる、電話しましたが、いませんでしたね。」\nReasoning: She called last night and he wasn't there; explaining 「出かけて いました」 is the natural reply."
   },
   "wrong": [
    null,

@@ -205,7 +205,7 @@
     "why": { "zh": "「あたらしい」写作「新しい」，送假名从「しい」开始。", "en": "あたらしい is 「新しい」 — the kana start at しい." },
     "wrong": [
       null,
-      { "zh": "「親しい」读「したしい」（亲密），右边多了「見」。", "en": "「親しい」 is したしい (close, friendly) — it has 「見」 on the right." },
+      { "zh": "「親しい」读「したしい」（亲密），右边是「見」。", "en": "「親しい」 is したしい (close, friendly) — its right side is 「見」." },
       { "zh": "送假名错了：正确写法是「新しい」，不写「ら」。", "en": "Wrong okurigana: it's 「新しい」, without ら." },
       { "zh": "「薪」读「たきぎ」（柴），上面多了草字头。", "en": "「薪」 is たきぎ (firewood), with a grass radical on top." }
     ]
@@ -568,7 +568,7 @@
     "why": { "zh": "「いいます」（说）写作「言います」，汉字后面要有一个「い」。", "en": "いいます (to say) is 「言います」, with one い after the kanji." },
     "wrong": [
       null,
-      { "zh": "少了「い」：「言」只读「い」，后面还要写「いました」。", "en": "An い is missing: 「言」 covers only the first い." },
+      { "zh": "少了一个「い」：「言」只读第一个「い」，后面还要写「いました」。", "en": "An い is missing: 「言」 covers only the first い." },
       { "zh": "「話」是「はなします」（说话）的字。", "en": "「話」 is the kanji of はなします (to talk)." },
       { "zh": "「語」读「ご」（语言），如「日本語」。", "en": "「語」 is ご (language), as in 「日本語」." }
     ]
@@ -687,7 +687,7 @@
     "why": { "zh": "「みぎ」（右）写作「右」，下面是「口」。", "en": "みぎ (right) is 「右」, with 「口」 underneath." },
     "wrong": [
       null,
-      { "zh": "「石」读「いし」（石头），上面的横不出头。", "en": "「石」 is いし (stone); its top stroke doesn't cross." },
+      { "zh": "「石」读「いし」（石头），撇不穿过上面的横。", "en": "「石」 is いし (stone); its slanting stroke doesn't cross the top line." },
       { "zh": "「左」读「ひだり」（左），下面是「工」。", "en": "「左」 is ひだり (left), with 「工」 underneath." },
       { "zh": "「古」读「ふるい」（旧），上面是「十」。", "en": "「古」 is ふるい (old), with 「十」 on top." }
     ]

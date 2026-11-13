@@ -32,7 +32,7 @@
     "options": ["It has private rooms and is cheaper than last year's place", "The food is stylish", "They can talk without worrying about others, and the cost isn't a burden", "It's the same place as last year"]
    }
   },
-  "why": { "zh": "依据：后辈中村先提议：「個室があるので、ゆっくり話せますよ。」价格的顾虑被他一句话打消：「今年は会社から一人二千円の補助が出るって、総務から聞きました。」\n推理：居酒屋太吵没法和新人聊天，意大利餐厅太远，都被女同事否定。日料店有包间能慢慢聊；前辈嫌一人五千日元贵，但有补贴后只比去年「五百円高いぐらい」，负担不重，于是定下。\n容易错：做决定的关键是第三个人的话；「料理もおしゃれ」是意大利餐厅的特点；补贴后仍比去年贵一点，不是更便宜。", "en": "Evidence: The junior, Nakamura, suggests: 「個室があるので、ゆっくり話せますよ。」 Then he removes the price worry: 「今年は会社から一人二千円の補助が出るって、総務から聞きました。」\nReasoning: The woman rules out the izakaya (too loud to talk to the newcomers) and the Italian place (too far). The Japanese restaurant has private rooms for a quiet talk; the senior thinks 5,000 yen each is too much, but with the subsidy it's only about 「五百円高いぐらい」 more than last year — a light burden — so they choose it.\nTrap: the deciding point comes from the third speaker; 「料理もおしゃれ」 describes the Italian place; even with the subsidy it's a bit more than last year, not cheaper." },
+  "why": { "zh": "依据：后辈中村先提议：「個室があるので、ゆっくり話せますよ。」价格的顾虑被他一句话打消：「今年は会社から一人二千円の補助が出るって、総務から聞きました。」\n推理：居酒屋太吵没法和新人聊天，意大利餐厅太远，都被女同事否定。日料店有包间能慢慢聊；前辈嫌一人五千日元贵，但有补贴后只比去年「五百円高いぐらい」，负担不重，于是定下。", "en": "Evidence: The junior, Nakamura, suggests: 「個室があるので、ゆっくり話せますよ。」 Then he removes the price worry: 「今年は会社から一人二千円の補助が出るって、総務から聞きました。」\nReasoning: The woman rules out the izakaya (too loud to talk to the newcomers) and the Italian place (too far). The Japanese restaurant has private rooms for a quiet talk; the senior thinks 5,000 yen each is too much, but with the subsidy it's only about 「五百円高いぐらい」 more than last year — a light burden — so they choose it." },
   "wrong": [
    { "zh": "有包间没错，但补贴后仍比去年的居酒屋「五百円高い」，不是更便宜。", "en": "It does have private rooms, but even with the subsidy it's about 500 yen more than last year's izakaya, not cheaper." },
    { "zh": "「料理がおしゃれ」说的是意大利餐厅。", "en": "\"Stylish food\" was the Italian place." },
@@ -58,14 +58,14 @@
   "options": ["写真教室", "料理教室", "英会話", "ヨガ"],
   "questions": [
    { "question": "質問1：男の人はどの講座に申し込みますか。", "answer": 2,
-     "why": { "zh": "依据：男的说：「ただ、平日はいつも帰りが八時過ぎるんだよね。」后来又说：「話す練習をしとこうかな。」\n推理：他身体僵，本想去瑜伽，但瑜伽「平日の夜七時半から」，他平日八点以后才回来，赶不上。明年夏天要出国旅行，想练习说话，对应介绍里以旅行表达为主的英语会话。\n容易错：先说的瑜伽因时间对不上被放弃；摄影和烹饪是女的在犹豫的。", "en": "Evidence: The man says: 「ただ、平日はいつも帰りが八時過ぎるんだよね。」 Later: 「話す練習をしとこうかな。」\nReasoning: He's stiff and yoga was suggested, but yoga starts 「平日の夜七時半から」 and he's never home before eight, so he can't make it. With a trip abroad next summer he wants to practise speaking — the English conversation course built around travel phrases.\nTrap: yoga, the first idea, is dropped because of the time; photography and cooking are the woman's choices." },
+     "why": { "zh": "依据：男的说：「ただ、平日はいつも帰りが八時過ぎるんだよね。」后来又说：「話す練習をしとこうかな。」\n推理：他身体僵，本想去瑜伽，但瑜伽「平日の夜七時半から」，他平日八点以后才回来，赶不上。明年夏天要出国旅行，想练习说话，对应介绍里以旅行表达为主的英语会话。", "en": "Evidence: The man says: 「ただ、平日はいつも帰りが八時過ぎるんだよね。」 Later: 「話す練習をしとこうかな。」\nReasoning: He's stiff and yoga was suggested, but yoga starts 「平日の夜七時半から」 and he's never home before eight, so he can't make it. With a trip abroad next summer he wants to practise speaking — the English conversation course built around travel phrases." },
      "wrong": [
       { "zh": "想学拍照的是女人。", "en": "It's the woman who wants to learn photography." },
       { "zh": "男人没提烹饪。", "en": "He never mentions cooking." },
       null,
-      { "zh": "瑜伽七点半开始，他平日八点以后才下班，来不及。", "en": "Yoga starts at 7:30 and he's never out before 8." }] },
+      { "zh": "瑜伽七点半开始，他平日八点以后才到家，来不及。", "en": "Yoga starts at 7:30 and on weekdays he never gets home before 8." }] },
    { "question": "質問2：女の人はどの講座に申し込みますか。", "answer": 0,
-     "why": { "zh": "依据：女的说：「最近節約してるから、あとから毎回お金がかかるのはいやなの。だから、そうじゃないほうにする。」介绍里说烹饪班：「材料費が別にかかりますので、ご注意ください。」\n推理：她在摄影和烹饪之间犹豫。烹饪班每次要另付材料费，她不想每次花钱，所以选“不是那样的”摄影班。她没有相机，但摄影班「カメラをお持ちでない方も」欢迎，所以没关系。\n容易错：「そうじゃないほう」要和介绍里的条件对照才知道指哪个；瑜伽是她推荐给男的的。", "en": "Evidence: The woman says: 「最近節約してるから、あとから毎回お金がかかるのはいやなの。だから、そうじゃないほうにする。」 The announcer said of cooking: 「材料費が別にかかりますので、ご注意ください。」\nReasoning: She's torn between photography and cooking. Cooking charges for ingredients each time, which she doesn't want, so she takes the other one — photography. She has no camera, but the course welcomes 「カメラをお持ちでない方も」, so that's fine.\nTrap: 「そうじゃないほう」 only makes sense when matched against the announcement; yoga is what she suggested for the man." },
+     "why": { "zh": "依据：女的说：「最近節約してるから、あとから毎回お金がかかるのはいやなの。だから、そうじゃないほうにする。」介绍里说烹饪班：「材料費が別にかかりますので、ご注意ください。」\n推理：她在摄影和烹饪之间犹豫。烹饪班每次要另付材料费，她不想每次花钱，所以选“不是那样的”摄影班。她没有相机，但摄影班「カメラをお持ちでない方も」欢迎，所以没关系。\n容易错：「そうじゃないほう」没说是哪个，要和介绍里的条件对照才知道。", "en": "Evidence: The woman says: 「最近節約してるから、あとから毎回お金がかかるのはいやなの。だから、そうじゃないほうにする。」 The announcer said of cooking: 「材料費が別にかかりますので、ご注意ください。」\nReasoning: She's torn between photography and cooking. Cooking charges for ingredients each time, which she doesn't want, so she takes the other one — photography. She has no camera, but the course welcomes 「カメラをお持ちでない方も」, so that's fine.\nTrap: 「そうじゃないほう」 doesn't name the course; match it against the announcement to see which one." },
      "wrong": [null,
       { "zh": "烹饪班要另付材料费，她想省钱，所以放弃了。", "en": "Cooking costs extra for ingredients, so she drops it to save money." },
       { "zh": "英语会话是男人要报的。", "en": "English conversation is the man's choice." },
@@ -122,10 +122,10 @@
     "options": ["Book the shinkansen cheaply and go", "Leave early and go by car", "Fly when it's cheap", "Take the night bus for half the price"]
    }
   },
-  "why": { "zh": "依据：妈妈说：「最初のお父さんの案に戻らない？」又说：「一か月前までに買えば、けっこう安くなるのよ。」\n推理：新干线最初因为贵、行李多被否定；行李用爸爸说的快递先寄，票提前一个月买就便宜，两个问题都解决了，爸爸说「じゃあ、そうしよう」。夜行大巴爸爸睡不着，飞机下机后还要坐两小时大巴，开车妈妈担心儿子刚拿驾照遇雪。\n容易错：「最初のお父さんの案」要回到开头才知道是新干线；儿子说的「早めに出ちゃえば」是开车方案，被否定了。", "en": "Evidence: The mother says: 「最初のお父さんの案に戻らない？」 and 「一か月前までに買えば、けっこう安くなるのよ。」\nReasoning: The shinkansen was first rejected as expensive and luggage-heavy; sending the luggage ahead (Dad's idea) and buying tickets a month early solves both, and Dad agrees: 「じゃあ、そうしよう」. Dad can't sleep on the night bus, the plane still needs two hours by bus, and Mom worries about her newly licensed son driving in snow.\nTrap: 「最初のお父さんの案」 points back to the very first idea, the shinkansen; the son's 「早めに出ちゃえば」 belongs to the driving plan, which was rejected." },
+  "why": { "zh": "依据：妈妈说：「最初のお父さんの案に戻らない？」又说：「一か月前までに買えば、けっこう安くなるのよ。」\n推理：新干线最初因为贵、行李多被否定；行李用爸爸说的快递先寄，票提前一个月买就便宜，两个问题都解决了，爸爸说「じゃあ、そうしよう」。\n容易错：「最初のお父さんの案」要回到对话开头，才知道是新干线。", "en": "Evidence: The mother says: 「最初のお父さんの案に戻らない？」 and 「一か月前までに買えば、けっこう安くなるのよ。」\nReasoning: The shinkansen was first rejected as expensive and luggage-heavy; sending the luggage ahead (Dad's idea) and buying tickets a month early solves both, and Dad agrees: 「じゃあ、そうしよう」.\nTrap: 「最初のお父さんの案」 points back to the very first idea, the shinkansen." },
   "wrong": [
    null,
-   { "zh": "儿子提议早点出发、轮流开车，但妈妈担心他刚拿驾照，冬天高速可能下雪，没有采用。最后定下的方案里的「早めに」是早点买新干线票（「切符は早めに取るの」），不是早点出发。", "en": "The son suggests leaving early and taking turns driving, but Mom worries about his brand-new licence and snow on the winter expressway, so it's dropped. In the final plan 「早めに」 is about buying the shinkansen tickets early (「切符は早めに取るの」), not leaving early." },
+   { "zh": "儿子提议早点出发、轮流开车，但妈妈担心他刚拿驾照、冬天高速可能下雪，没有采用；最后方案里的「早めに」是早点买票（「切符は早めに取るの」）。", "en": "The son suggests leaving early and sharing the driving, but Mom worries about his new licence and snow on the expressway, so it's dropped; the 「早めに」 in the final plan is about buying tickets early (「切符は早めに取るの」)." },
    { "zh": "飞机打折便宜，但机场到奶奶家还要坐两小时大巴，时间差不多，被否定了。", "en": "Flights are cheap in a sale, but it's two more hours by bus from the airport, so it was rejected." },
    { "zh": "夜行大巴便宜一半，但爸爸在车上睡不着，被否定了。", "en": "The night bus costs half, but Dad can't sleep on buses, so it was rejected." }],
   "traps": ["condition-conflict", "half-right", "not-possible"]
@@ -163,7 +163,7 @@
     "options": ["Look up books and materials at the library", "Do an online survey", "Ask the office and interview shop owners", "Ask customers directly after getting the OK"]
    }
   },
-  "why": { "zh": "依据：女学生说：「それより、その事務所にちゃんとお願いして、許可をもらえばいいんじゃない？」另一位女学生接受：「先輩たちが注意されたのは、勝手にやったからだもんね。」\n推理：题目是顾客怎么看商店街，所以要直接问顾客。学长被提醒是因为「勝手に」做，只要先通过办事处拿到许可（先打招呼）就能问顾客。男学生说「まず事務所に行って」只是去拿许可。\n容易错：去办事处是为了拿许可，不是请他们介绍店员——问店里的人的方案被否定了；图书馆和网上问卷也都被否定。", "en": "Evidence: One female student says: 「それより、その事務所にちゃんとお願いして、許可をもらえばいいんじゃない？」 The other agrees: 「先輩たちが注意されたのは、勝手にやったからだもんね。」\nReasoning: The theme is how customers see the shopping street, so they must ask customers. The seniors were told off only for doing it 「勝手に」; with the office's permission first, they can ask customers. The man's 「まず事務所に行って」 is to get that permission.\nTrap: they go to the office for permission, not for introductions to shop staff — interviewing shop staff was rejected; the library and online survey were rejected too." },
+  "why": { "zh": "依据：女学生说：「それより、その事務所にちゃんとお願いして、許可をもらえばいいんじゃない？」另一位女学生接受：「先輩たちが注意されたのは、勝手にやったからだもんね。」\n推理：题目是顾客怎么看商店街，所以要直接问顾客。学长被提醒是因为「勝手に」做，只要先通过办事处拿到许可（先打招呼）就能问顾客。男学生说「まず事務所に行って」只是去拿许可。", "en": "Evidence: One female student says: 「それより、その事務所にちゃんとお願いして、許可をもらえばいいんじゃない？」 The other agrees: 「先輩たちが注意されたのは、勝手にやったからだもんね。」\nReasoning: The theme is how customers see the shopping street, so they must ask customers. The seniors were told off only for doing it 「勝手に」; with the office's permission first, they can ask customers. The man's 「まず事務所に行って」 is to get that permission." },
   "wrong": [
    { "zh": "老师要求放进自己收集的数据，光查书不行。", "en": "The professor requires data they collect themselves, so books alone won't do." },
    { "zh": "顾客多是老年人，网上问卷回答的会偏向年轻人。", "en": "The customers are mostly elderly, so an online survey would mostly get young people." },
@@ -204,7 +204,7 @@
     "options": ["The flat three minutes' walk from the station", "The flat with a single train to work", "The big flat with a bus to the station", "The new flat with an auto-lock"]
    }
   },
-  "why": { "zh": "依据：店员推荐：「最寄りの駅から、お勤め先の駅まで、乗り換えなしで行けます。」父亲说：「毎朝の満員電車で乗り換えがないっていうのは、ずいぶん楽だぞ。」\n推理：离车站三分钟的太小放不下东西，大房子要坐公交，新公寓房租快到工资一半，都被否定。店员最后推荐的这套不用换乘，面积和大房子差不多，房租她也「払える」，所以定了这套，就是上班一趟电车能到的房子。\n容易错：决定的是店员后来补充的选项；每套被否定的理由分别对应各自的选项。", "en": "Evidence: The agent suggests: 「最寄りの駅から、お勤め先の駅まで、乗り換えなしで行けます。」 Her father says: 「毎朝の満員電車で乗り換えがないっていうのは、ずいぶん楽だぞ。」\nReasoning: The flat three minutes from the station is too small, the big one needs a bus, and the new building's rent is nearly half her salary — all ruled out. The agent's last flat needs no change of trains, is about as big as the large one, and the rent is something she can pay (「払える」), so she takes it: one train to work.\nTrap: the winner is the option the agent adds at the end; each rejected flat matches one of the other options." },
+  "why": { "zh": "依据：店员推荐：「最寄りの駅から、お勤め先の駅まで、乗り換えなしで行けます。」父亲说：「毎朝の満員電車で乗り換えがないっていうのは、ずいぶん楽だぞ。」\n推理：离车站三分钟的太小放不下东西，大房子要坐公交，新公寓房租快到工资一半，都被否定。店员最后推荐的这套不用换乘，面积和大房子差不多，房租她也「払える」，所以定了这套，就是上班一趟电车能到的房子。", "en": "Evidence: The agent suggests: 「最寄りの駅から、お勤め先の駅まで、乗り換えなしで行けます。」 Her father says: 「毎朝の満員電車で乗り換えがないっていうのは、ずいぶん楽だぞ。」\nReasoning: The flat three minutes from the station is too small, the big one needs a bus, and the new building's rent is nearly half her salary — all ruled out. The agent's last flat needs no change of trains, is about as big as the large one, and the rent is something she can pay (「払える」), so she takes it: one train to work." },
   "wrong": [
    { "zh": "离车站三分钟的房子太小，东西放不下。", "en": "The flat three minutes from the station is too small for her things." },
    null,
@@ -244,7 +244,7 @@
     "options": ["A spicy curry bun", "A cream bun eaten chilled", "A smaller-than-usual loaf of sliced bread", "A sandwich made with fruit"]
    }
   },
-  "why": { "zh": "依据：打工的学生说：「小さいサイズの食パンがあったら、みんな買うと思います。」店长说：「それなら今の機械で焼けるし、冷やす場所もいらないな。」\n推理：辣味咖喱面包被女店员否定（天热油炸的不好卖）；冰奶油面包和水果三明治都要冷藏，但冷藏柜已满。小尺寸吐司不用冷藏、现有机器能烤，附近学生多，店长说「よし、それでいこう」。\n容易错：前三个方案都是店长自己提的，最后定的是第三个人的建议；冷藏柜的问题同时排除了两个选项。", "en": "Evidence: The part-time student says: 「小さいサイズの食パンがあったら、みんな買うと思います。」 The manager replies: 「それなら今の機械で焼けるし、冷やす場所もいらないな。」\nReasoning: The employee rules out spicy curry bread (fried food doesn't sell in the heat); chilled cream buns and fruit sandwiches both need refrigeration, but the fridge case is full. Small loaves need no cold space, can be baked on the current machines, and suit the many students nearby, so the manager says 「よし、それでいこう」.\nTrap: the manager proposes the first three ideas, but the decision is the third person's suggestion; the full fridge rules out two options at once." },
+  "why": { "zh": "依据：打工的学生说：「小さいサイズの食パンがあったら、みんな買うと思います。」店长说：「それなら今の機械で焼けるし、冷やす場所もいらないな。」\n推理：辣味咖喱面包被女店员否定（天热油炸的不好卖）；冰奶油面包和水果三明治都要冷藏，但冷藏柜已满。小尺寸吐司不用冷藏、现有机器能烤，附近学生多，店长说「よし、それでいこう」。", "en": "Evidence: The part-time student says: 「小さいサイズの食パンがあったら、みんな買うと思います。」 The manager replies: 「それなら今の機械で焼けるし、冷やす場所もいらないな。」\nReasoning: The employee rules out spicy curry bread (fried food doesn't sell in the heat); chilled cream buns and fruit sandwiches both need refrigeration, but the fridge case is full. Small loaves need no cold space, can be baked on the current machines, and suit the many students nearby, so the manager says 「よし、それでいこう」." },
   "wrong": [
    { "zh": "店员说天热时油炸的不好卖，去年夏天咖喱面包剩得最多。", "en": "The employee says fried food doesn't sell in the heat; curry buns were left over most last summer." },
    { "zh": "冷藏柜满了，没地方放，买新柜子又很贵。", "en": "The fridge case is full and a new one would be expensive." },
@@ -270,14 +270,14 @@
   "options": ["朝プラン", "夜プラン", "週末プラン", "フルプラン"],
   "questions": [
    { "question": "質問1：男の人は、どのプランにしますか。", "answer": 1,
-     "why": { "zh": "依据：男的说：「平日の帰りに寄るほうが続くと思う。プールとかも使わないし。」介绍里说夜间方案：「平日の夜六時から、閉館の十一時までです。」\n推理：他七点左右离开公司，想下班顺路跑步、练肌肉；周末常带孩子出去，来不了；也不用游泳池，不需要全天方案。平日晚上六点到十一点的夜间方案正合适。\n容易错：周末方案是女的建议的；早间方案是女的自己考虑的。", "en": "Evidence: The man says: 「平日の帰りに寄るほうが続くと思う。プールとかも使わないし。」 The staff described the evening plan: 「平日の夜六時から、閉館の十一時までです。」\nReasoning: He leaves work around seven and wants to run and lift on the way home; at weekends he's usually out with the kids, and he won't use the pool, so he doesn't need the full plan. The weekday 6–11 pm evening plan fits.\nTrap: the weekend plan is the woman's suggestion; the morning plan is what she first considered for herself." },
+     "why": { "zh": "依据：男的说：「平日の帰りに寄るほうが続くと思う。プールとかも使わないし。」介绍里说夜间方案：「平日の夜六時から、閉館の十一時までです。」\n推理：他七点左右离开公司，想下班顺路跑步、练肌肉；周末常带孩子出去，来不了；也不用游泳池，不需要全天方案。平日晚上六点到十一点的夜间方案正合适。", "en": "Evidence: The man says: 「平日の帰りに寄るほうが続くと思う。プールとかも使わないし。」 The staff described the evening plan: 「平日の夜六時から、閉館の十一時までです。」\nReasoning: He leaves work around seven and wants to run and lift on the way home; at weekends he's usually out with the kids, and he won't use the pool, so he doesn't need the full plan. The weekday 6–11 pm evening plan fits." },
      "wrong": [
       { "zh": "早上的方案是女人原本考虑的，男人是下班后去。", "en": "The morning plan is what the woman first considered; he goes after work." },
       null,
       { "zh": "周末方案是女人建议的，但他周末常和孩子出门，来不了。", "en": "The woman suggests weekends, but he's usually out with the kids then." },
       { "zh": "全天方案包含游泳池和课程，但他说不用游泳池，只要平日晚上能来就行。", "en": "The full plan adds the pool and classes, but he won't use the pool and only needs weekday evenings." }] },
    { "question": "質問2：女の人は、どのプランにしますか。", "answer": 3,
-     "why": { "zh": "依据：女的说：「私がジムに通いたいのは、ヨガをやりたいからなんだよね。」介绍里说：「プールとレッスンは、フルプランの方だけのご利用となります」。\n推理：早间方案便宜又方便，她本来想选，但用「でもね」一转：她来是为了瑜伽，瑜伽是工作室的课程，只有全天方案能上。虽然贵一点，和另外去瑜伽教室差不多，所以选全天方案。\n容易错：先想选的早间方案被「でもね」推翻；要把她的目的和介绍里的限制条件对上。", "en": "Evidence: The woman says: 「私がジムに通いたいのは、ヨガをやりたいからなんだよね。」 The staff said: 「プールとレッスンは、フルプランの方だけのご利用となります」.\nReasoning: The cheap, convenient morning plan was her first idea, but 「でもね」 turns it around: she wants yoga, which is a studio class, and only the full plan includes classes. It costs more, but about the same as a separate yoga school, so she takes the full plan.\nTrap: the morning plan she first liked is overturned by 「でもね」; her goal has to be matched with the restriction in the announcement." },
+     "why": { "zh": "依据：女的说：「私がジムに通いたいのは、ヨガをやりたいからなんだよね。」介绍里说：「プールとレッスンは、フルプランの方だけのご利用となります」。\n推理：早间方案便宜又方便，她本来想选，但用「でもね」一转：她来是为了瑜伽，瑜伽是工作室的课程，只有全天方案能上。虽然贵一点，和另外去瑜伽教室差不多，所以选全天方案。", "en": "Evidence: The woman says: 「私がジムに通いたいのは、ヨガをやりたいからなんだよね。」 The staff said: 「プールとレッスンは、フルプランの方だけのご利用となります」.\nReasoning: The cheap, convenient morning plan was her first idea, but 「でもね」 turns it around: she wants yoga, which is a studio class, and only the full plan includes classes. It costs more, but about the same as a separate yoga school, so she takes the full plan." },
      "wrong": [
       { "zh": "早上的方案便宜又方便，但上不了瑜伽课，所以放弃了。", "en": "The morning plan is cheap and convenient, but it doesn't include yoga, so she drops it." },
       { "zh": "夜间方案是男人选的。", "en": "The evening plan is the man's choice." },
@@ -315,13 +315,13 @@
   "options": ["推理小説", "エッセイ集", "写真の本", "手帳の本"],
   "questions": [
    { "question": "質問1：男の人は、どの本を読みますか。", "answer": 0,
-     "why": { "zh": "依据：男的说：「せっかくだし、長いのを一気に読みたいな。」介绍里说推理小说：「五百ページを超える長い作品ですが、読み始めたら止まらないと評判です。」\n推理：女的推荐手帐的书，但他说「この前、課長に借りて読んだばかり」，已经读过这类书了。下周放一周暑假没安排，想一口气读长的，对应五百多页的推理小说。\n容易错：别人推荐的书他已经读过；随笔集是女的选的。", "en": "Evidence: The man says: 「せっかくだし、長いのを一気に読みたいな。」 The announcer said of the mystery: 「五百ページを超える長い作品ですが、読み始めたら止まらないと評判です。」\nReasoning: The woman suggests the planner book, but he says 「この前、課長に借りて読んだばかり」 — he's just read that kind of book. With a free week of summer holiday, he wants something long to read in one go: the 500-page mystery.\nTrap: the book suggested to him is one he has already read; the essay collection is the woman's pick." },
+     "why": { "zh": "依据：男的说：「せっかくだし、長いのを一気に読みたいな。」介绍里说推理小说：「五百ページを超える長い作品ですが、読み始めたら止まらないと評判です。」\n推理：女的推荐手帐的书，但他说「この前、課長に借りて読んだばかり」，已经读过这类书了。下周放一周暑假没安排，想一口气读长的，对应五百多页的推理小说。", "en": "Evidence: The man says: 「せっかくだし、長いのを一気に読みたいな。」 The announcer said of the mystery: 「五百ページを超える長い作品ですが、読み始めたら止まらないと評判です。」\nReasoning: The woman suggests the planner book, but he says 「この前、課長に借りて読んだばかり」 — he's just read that kind of book. With a free week of summer holiday, he wants something long to read in one go: the 500-page mystery." },
      "wrong": [null,
       { "zh": "短篇的随笔集是女人选的。", "en": "The essay collection with short pieces is the woman's choice." },
       { "zh": "老照片的书是女人提到的，男人没提。", "en": "The old-photos book is mentioned by the woman, not him." },
       { "zh": "女人推荐了手帐的书，但他刚向科长借来读过类似的书。", "en": "The woman suggests the planner book, but he's just read a similar one borrowed from his boss." }] },
    { "question": "質問2：女の人は、どの本を読みますか。", "answer": 1,
-     "why": { "zh": "依据：女的说：「でも、乗ってるの、十五分ぐらいなんだよね。」又说：「料理も好きだし、そっちにする。」介绍里说随笔集：「一つ一つの話が三ページほどと短いので」。\n推理：她只在十五分钟左右的通勤电车上读，男的建议选收了很多短篇的书。照片书在挤的电车上没法慢慢看，她又喜欢做菜，所以选料理研究家写、每篇三页左右的随笔集。\n容易错：照片书她也感兴趣，但条件不合；手帐的书是她推荐给男的的。", "en": "Evidence: The woman says: 「でも、乗ってるの、十五分ぐらいなんだよね。」 and 「料理も好きだし、そっちにする。」 The announcer said of the essays: 「一つ一つの話が三ページほどと短いので」.\nReasoning: She'll only read on a 15-minute commute, and the man suggests a book of many short pieces. The photo book is hard to enjoy on a crowded train, and she likes cooking, so she picks the cooking writer's essays, about three pages each.\nTrap: she's interested in the photo book, but it doesn't fit her conditions; the planner book is what she suggests to the man." },
+     "why": { "zh": "依据：女的说：「でも、乗ってるの、十五分ぐらいなんだよね。」又说：「料理も好きだし、そっちにする。」介绍里说随笔集：「一つ一つの話が三ページほどと短いので」。\n推理：她只在十五分钟左右的通勤电车上读，男的建议选收了很多短篇的书。照片书在挤的电车上没法慢慢看，她又喜欢做菜，所以选料理研究家写、每篇三页左右的随笔集。", "en": "Evidence: The woman says: 「でも、乗ってるの、十五分ぐらいなんだよね。」 and 「料理も好きだし、そっちにする。」 The announcer said of the essays: 「一つ一つの話が三ページほどと短いので」.\nReasoning: She'll only read on a 15-minute commute, and the man suggests a book of many short pieces. The photo book is hard to enjoy on a crowded train, and she likes cooking, so she picks the cooking writer's essays, about three pages each." },
      "wrong": [
       { "zh": "推理小说五百多页很长，是男人想放假时一口气读的。", "en": "The long mystery is what the man wants for his holiday." },
       null,
@@ -440,8 +440,8 @@
    }
   },
   "why": {
-   "zh": "依据：课长最后说：「種目もチーム分けも今までどおりにして、時間のほうを削ろう。平日の午後だけなら……何とかなるだろう。」\n推理：取消被女的否定（混部门的交流很宝贵）；保龄球被女的否定（会按部门扎堆）。课长采纳了两个人的观点：保留打散部门组队的形式（女的），放到工作日（年轻人的想法），但只用下午。工作日下午就是上班时间内。\n容易错：工作日“一整天”被课长否定，最后是半天；保龄球是被否定的提议。",
-   "en": "Evidence: The chief ends: 「種目もチーム分けも今までどおりにして、時間のほうを削ろう。平日の午後だけなら……何とかなるだろう。」\nReasoning: The woman rejects dropping it (mixing departments is valuable) and rejects bowling (people would cluster by department). The chief combines both: keep the mixed teams (her point) and move it to a weekday (the young man's idea) but only the afternoon — i.e. during working hours.\nTrap: a whole weekday was ruled out; bowling was rejected."
+   "zh": "依据：课长最后说：「種目もチーム分けも今までどおりにして、時間のほうを削ろう。平日の午後だけなら……何とかなるだろう。」\n推理：取消被女的否定（混部门的交流很宝贵）；保龄球被女的否定（会按部门扎堆）。课长采纳了两个人的观点：保留打散部门组队的形式（女的），放到工作日（年轻人的想法），但只用下午。工作日下午就是上班时间内。",
+   "en": "Evidence: The chief ends: 「種目もチーム分けも今までどおりにして、時間のほうを削ろう。平日の午後だけなら……何とかなるだろう。」\nReasoning: The woman rejects dropping it (mixing departments is valuable) and rejects bowling (people would cluster by department). The chief combines both: keep the mixed teams (her point) and move it to a weekday (the young man's idea) but only the afternoon — i.e. during working hours."
   },
   "wrong": [
    {
@@ -578,13 +578,13 @@
    }
   },
   "why": {
-   "zh": "依据：女的听到音乐节后说：「人前で演奏できる機会なんて、なかなかないもんね。それなら、バイトの日をずらしてでも行きたいな。」\n推理：隔音好、便宜她都已经听到了，但仍犹豫：「安いのはいいけど、平日の夜だけじゃねえ」。直到听说用音乐室的团体能上音乐节的舞台，她才同意。让她改变主意的是演出机会。\n容易错：便宜、隔音是公民馆的优点，但不是她赞成的原因；她要调开打工，不是不用改。",
-   "en": "Evidence: After hearing about the festival she says: 「人前で演奏できる機会なんて、なかなかないもんね。それなら、バイトの日をずらしてでも行きたいな。」\nReasoning: She had already heard about the soundproofing and the low price and still hesitated: 「安いのはいいけど、平日の夜だけじゃねえ」. Only the chance to play on the festival stage changes her mind.\nTrap: cheapness and soundproofing are real advantages but not what won her over; she will move her shifts, not keep them."
+   "zh": "依据：女的听到音乐节后说：「人前で演奏できる機会なんて、なかなかないもんね。それなら、バイトの日をずらしてでも行きたいな。」\n推理：隔音好、便宜她都已经听到了，但仍犹豫：「安いのはいいけど、平日の夜だけじゃねえ」。直到听说用音乐室的团体能上音乐节的舞台，她才同意。让她改变主意的是演出机会。",
+   "en": "Evidence: After hearing about the festival she says: 「人前で演奏できる機会なんて、なかなかないもんね。それなら、バイトの日をずらしてでも行きたいな。」\nReasoning: She had already heard about the soundproofing and the low price and still hesitated: 「安いのはいいけど、平日の夜だけじゃねえ」. Only the chance to play on the festival stage changes her mind."
   },
   "wrong": [
    {
-    "zh": "隔音好是男生1先说的，她听了之后仍然犹豫，可见不是她赞成的原因。",
-    "en": "M1 mentions soundproofing first, and she still hesitates afterwards, so it isn't what persuaded her."
+    "zh": "隔音好是一个男生先说的，她听了之后仍然犹豫，可见不是她赞成的原因。",
+    "en": "One of the men mentions the soundproofing first, and she still hesitates afterwards, so it isn't what persuaded her."
    },
    {
     "zh": "她说「安いのはいいけど」，接着仍在犹豫，便宜没有打动她。",
@@ -710,8 +710,8 @@
    }
   },
   "why": {
-   "zh": "依据：母亲说：「長い柄のついたはさみで、下から枝を切ってたわよ。あれなら、はしごはいらないんじゃない？」儿子说：「じゃあ同じのを買って、俺がやるよ。」父亲说：「ホームセンターで見てくるか。」\n推理：儿子最早提出自己剪树枝，但因为爬梯子危险被父亲否定；请园艺师傅每年太贵；砍树母亲不同意。长柄剪刀解决了“危险”这个问题，于是回到儿子最初的方案：自己从下面剪。\n容易错：儿子提议请佐藤帮忙剪，被母亲以「迷惑かけてるのはこっちなのに」否定了；最后一句只说去店里看，要从前面的对话推出是买剪刀自己剪。",
-   "en": "Evidence: The mother says: 「長い柄のついたはさみで、下から枝を切ってたわよ。あれなら、はしごはいらないんじゃない？」 The son: 「じゃあ同じのを買って、俺がやるよ。」 The father: 「ホームセンターで見てくるか。」\nReasoning: The son first offered to cut the branches himself, but the father ruled it out as dangerous on a ladder; a gardener every year is too expensive; the mother won't cut the tree down. Long-handled shears remove the danger, so they return to the son's first idea: cut from the ground themselves.\nTrap: the son suggests asking Mr Sato, but the mother rules it out — 「迷惑かけてるのはこっちなのに」; the last line only mentions the shop, so the plan has to be inferred."
+   "zh": "依据：母亲说：「長い柄のついたはさみで、下から枝を切ってたわよ。あれなら、はしごはいらないんじゃない？」儿子说：「じゃあ同じのを買って、俺がやるよ。」父亲说：「ホームセンターで見てくるか。」\n推理：儿子最早提出自己剪树枝，但因为爬梯子危险被父亲否定；请园艺师傅每年太贵；砍树母亲不同意。长柄剪刀解决了“危险”这个问题，于是回到儿子最初的方案：自己从下面剪。\n容易错：最后一句只说去店里看看，要从前面的对话推出是买长柄剪刀、自己剪。",
+   "en": "Evidence: The mother says: 「長い柄のついたはさみで、下から枝を切ってたわよ。あれなら、はしごはいらないんじゃない？」 The son: 「じゃあ同じのを買って、俺がやるよ。」 The father: 「ホームセンターで見てくるか。」\nReasoning: The son first offered to cut the branches himself, but the father ruled it out as dangerous on a ladder; a gardener every year is too expensive; the mother won't cut the tree down. Long-handled shears remove the danger, so they return to the son's first idea: cut from the ground themselves.\nTrap: the last line only mentions the shop, so the plan — buy the shears and cut themselves — has to be inferred from what came before."
   },
   "wrong": [
    null,
@@ -830,8 +830,8 @@
    }
   },
   "why": {
-   "zh": "依据：打工的女生说：「絵でよければ、私、描けますよ。」老板娘说：「まずお風呂と朝ごはんの分から、お願いしようかしら。」\n推理：英文说明因客人来自多国被否定；图画卡片老板娘一开始就说好，只担心没人画、请公司太贵；翻译机太贵、不会用。后来女生说自己能画，阻碍消失，于是采用了中途提出的图画卡片。\n容易错：图画卡片的方案在中途一度搁置，不是最后一个提议；“请公司”是老板娘担心的花费，并没有采用。",
-   "en": "Evidence: The part-timer says: 「絵でよければ、私、描けますよ。」 The proprietress: 「まずお風呂と朝ごはんの分から、お願いしようかしら。」\nReasoning: The English guide is dropped because guests come from many countries; the picture cards appealed at once, the only worry being who would draw them (a company is costly); the translation device is too expensive and hard to use. When the part-timer offers to draw, the obstacle goes and they adopt the picture cards proposed midway.\nTrap: the picture-card idea was set aside for a while, not the last proposal; using a company was only the cost worry, never adopted."
+   "zh": "依据：打工的女生说：「絵でよければ、私、描けますよ。」老板娘说：「まずお風呂と朝ごはんの分から、お願いしようかしら。」\n推理：英文说明因客人来自多国被否定；图画卡片老板娘一开始就说好，只担心没人画、请公司太贵；翻译机太贵、不会用。后来女生说自己能画，阻碍消失，于是采用了中途提出的图画卡片。\n容易错：图画卡片的方案中途一度搁置，不是最后提出的。",
+   "en": "Evidence: The part-timer says: 「絵でよければ、私、描けますよ。」 The proprietress: 「まずお風呂と朝ごはんの分から、お願いしようかしら。」\nReasoning: The English guide is dropped because guests come from many countries; the picture cards appealed at once, the only worry being who would draw them (a company is costly); the translation device is too expensive and hard to use. When the part-timer offers to draw, the obstacle goes and they adopt the picture cards proposed midway.\nTrap: the picture-card idea was set aside for a while; it isn't the last proposal."
   },
   "wrong": [
    {
@@ -950,8 +950,8 @@
    }
   },
   "why": {
-   "zh": "依据：理事长最后说：「外壁の工事が終わるまでは、滑り台にはロープを張って、使えないようにしておきましょう。そのあとで、新しいのを入れるかどうか、また皆さんで話し合う」。\n推理：换新的钱不够（公积金要用于外墙）；刷漆没意义（里面的铁可能不行）；拆掉放长椅被男的反对。理事长没有选任何一个提议，而是先拉绳子禁止使用，等外墙工程结束再商量。\n容易错：三个提议都被否定，决定的是“暂缓”；她说之后再商量要不要换新的，并没有决定换。",
-   "en": "Evidence: The chair ends: 「外壁の工事が終わるまでは、滑り台にはロープを張って、使えないようにしておきましょう。そのあとで、新しいのを入れるかどうか、また皆さんで話し合う」.\nReasoning: A new slide is unaffordable (the fund is for the walls); repainting is pointless (the steel may be weak); a bench is opposed by the man. The chair picks none of these: rope it off now and discuss after the wall work.\nTrap: all three proposals are rejected and the decision is to wait; replacing it is only to be discussed later, not decided."
+   "zh": "依据：理事长最后说：「外壁の工事が終わるまでは、滑り台にはロープを張って、使えないようにしておきましょう。そのあとで、新しいのを入れるかどうか、また皆さんで話し合う」。\n推理：换新的钱不够（公积金要用于外墙）；刷漆没意义（里面的铁可能不行）；拆掉放长椅被男的反对。理事长没有选任何一个提议，而是先拉绳子禁止使用，等外墙工程结束再商量。",
+   "en": "Evidence: The chair ends: 「外壁の工事が終わるまでは、滑り台にはロープを張って、使えないようにしておきましょう。そのあとで、新しいのを入れるかどうか、また皆さんで話し合う」.\nReasoning: A new slide is unaffordable (the fund is for the walls); repainting is pointless (the steel may be weak); a bench is opposed by the man. The chair picks none of these: rope it off now and discuss after the wall work."
   },
   "wrong": [
    {
@@ -1027,8 +1027,8 @@
     "question": "質問1：男の学生は、どのパソコンを買いますか。",
     "answer": 3,
     "why": {
-     "zh": "依据：男生说：「前のパソコン、落として壊しちゃってさ。修理代がすごくかかったんだよ。」又说「値段も手ごろだし、それにする」。\n推理：他吃过修理费的亏，「スタンダード」有四年免费修理，而且四款中最便宜，正对上「値段も手ごろ」。\n容易错：大屏幕的「ワイド」是女生推荐的，他说「そこまではいらない」。",
-     "en": "Evidence: The man says: 「前のパソコン、落として壊しちゃってさ。修理代がすごくかかったんだよ。」 and 「値段も手ごろだし、それにする」.\nReasoning: He paid dearly for repairs before; 「スタンダード」 comes with four years of free repairs and is the cheapest of the four — matching 「値段も手ごろ」.\nTrap: the big-screen 「ワイド」 was the woman's suggestion; he says 「そこまではいらない」."
+     "zh": "依据：男生说：「前のパソコン、落として壊しちゃってさ。修理代がすごくかかったんだよ。」又说「値段も手ごろだし、それにする」。\n推理：他吃过修理费的亏，「スタンダード」有四年免费修理，而且四款中最便宜，正对上「値段も手ごろ」。",
+     "en": "Evidence: The man says: 「前のパソコン、落として壊しちゃってさ。修理代がすごくかかったんだよ。」 and 「値段も手ごろだし、それにする」.\nReasoning: He paid dearly for repairs before; 「スタンダード」 comes with four years of free repairs and is the cheapest of the four — matching 「値段も手ごろ」."
     },
     "wrong": [
      {
@@ -1050,8 +1050,8 @@
     "question": "質問2：女の学生は、どのパソコンを買いますか。",
     "answer": 1,
     "why": {
-     "zh": "依据：女生说：「教室にコンセントがあるとは限らないでしょ。」「途中で電池が切れちゃったら、ノートも取れないし。少しぐらい重くても、そっちのほうが安心かな。」\n推理：她每天带着跑，一天常有四节课，又不一定能充电，所以选电池耐用、不充电也能用一整天的「スタミナ」。\n容易错：男生推荐轻的「ライト」，她说有吸引力，但担心电池，「少しぐらい重くても」选另一款。",
-     "en": "Evidence: The woman says: 「教室にコンセントがあるとは限らないでしょ。」 and 「途中で電池が切れちゃったら、ノートも取れないし。少しぐらい重くても、そっちのほうが安心かな。」\nReasoning: She'll carry it daily, often has four classes a day and may not be able to charge, so she picks 「スタミナ」, which runs all day without charging.\nTrap: the man suggests the light 「ライト」; she finds it attractive but worries about the battery and chooses the other 「少しぐらい重くても」."
+     "zh": "依据：女生说：「教室にコンセントがあるとは限らないでしょ。」「途中で電池が切れちゃったら、ノートも取れないし。少しぐらい重くても、そっちのほうが安心かな。」\n推理：她每天带着跑，一天常有四节课，又不一定能充电，所以选电池耐用、不充电也能用一整天的「スタミナ」。",
+     "en": "Evidence: The woman says: 「教室にコンセントがあるとは限らないでしょ。」 and 「途中で電池が切れちゃったら、ノートも取れないし。少しぐらい重くても、そっちのほうが安心かな。」\nReasoning: She'll carry it daily, often has four classes a day and may not be able to charge, so she picks 「スタミナ」, which runs all day without charging."
     },
     "wrong": [
      {
@@ -1179,8 +1179,8 @@
     "question": "質問1：男の人は、どの活動に参加しますか。",
     "answer": 0,
     "why": {
-     "zh": "依据：男的说：「平日なら、いつでも大丈夫なんだ。若いころ、塾で数学を教えてたこともあるし、子どもの相手なら何とかなるかな。」\n推理：周六下午要看孙子比赛，「日本語カフェ」不行。平日都有空，又教过数学，看小学生作业的「学習サポート」（每周三傍晚）正合适。\n容易错：「日本語カフェ」是女的推荐的，因时间冲突被放弃；「訪問サロン」虽然也在平日，但他说的是“陪孩子”。",
-     "en": "Evidence: The man says: 「平日なら、いつでも大丈夫なんだ。若いころ、塾で数学を教えてたこともあるし、子どもの相手なら何とかなるかな。」\nReasoning: Saturday afternoons he watches his grandchild's games, so 「日本語カフェ」 is out. He's free on weekdays and once taught maths, so 「学習サポート」 (Wednesday evenings, helping children with homework) fits.\nTrap: 「日本語カフェ」 was the woman's suggestion, dropped over timing; 「訪問サロン」 is also on weekdays, but he talks about looking after children."
+     "zh": "依据：男的说：「平日なら、いつでも大丈夫なんだ。若いころ、塾で数学を教えてたこともあるし、子どもの相手なら何とかなるかな。」\n推理：周六下午要看孙子比赛，「日本語カフェ」不行。平日都有空，又教过数学，看小学生作业的「学習サポート」（每周三傍晚）正合适。",
+     "en": "Evidence: The man says: 「平日なら、いつでも大丈夫なんだ。若いころ、塾で数学を教えてたこともあるし、子どもの相手なら何とかなるかな。」\nReasoning: Saturday afternoons he watches his grandchild's games, so 「日本語カフェ」 is out. He's free on weekdays and once taught maths, so 「学習サポート」 (Wednesday evenings, helping children with homework) fits."
     },
     "wrong": [
      null,
@@ -1202,8 +1202,8 @@
     "question": "質問2：女の人は、どの活動に参加しますか。",
     "answer": 2,
     "why": {
-     "zh": "依据：女的说：「平日は無理なのよ。」「外で体を動かすのも好きだし、月に一回なら、無理なく続けられそう。」\n推理：她平日要上班。拜访老人要配合对方时间，多半在平日白天，所以放弃。说明里每月一次、周日早上、在户外种花除草的是「公園の花の手入れ」。\n容易错：她说拜访老人「いいなと思った」，但因时间放弃；「月に一回」「外で体を動かす」要和说明对照才知道指哪个。",
-     "en": "Evidence: The woman says: 「平日は無理なのよ。」 and 「外で体を動かすのも好きだし、月に一回なら、無理なく続けられそう。」\nReasoning: She works on weekdays. Home visits depend on the elderly person's schedule — probably weekday daytime — so she drops them. Once a month, Sunday mornings, outdoors planting and weeding is 「公園の花の手入れ」.\nTrap: she thought home visits 「いいなと思った」 but drops them over timing; 「月に一回」 and 「外で体を動かす」 must be matched against the announcement."
+     "zh": "依据：女的说：「平日は無理なのよ。」「外で体を動かすのも好きだし、月に一回なら、無理なく続けられそう。」\n推理：她平日要上班。拜访老人要配合对方时间，多半在平日白天，所以放弃。说明里每月一次、周日早上、在户外种花除草的是「公園の花の手入れ」。\n容易错：「月に一回」「外で体を動かす」没说是哪个活动，要和说明对照才知道。",
+     "en": "Evidence: The woman says: 「平日は無理なのよ。」 and 「外で体を動かすのも好きだし、月に一回なら、無理なく続けられそう。」\nReasoning: She works on weekdays. Home visits depend on the elderly person's schedule — probably weekday daytime — so she drops them. Once a month, Sunday mornings, outdoors planting and weeding is 「公園の花の手入れ」.\nTrap: 「月に一回」 and 「外で体を動かす」 don't name the activity; match them against the announcement."
     },
     "wrong": [
      {

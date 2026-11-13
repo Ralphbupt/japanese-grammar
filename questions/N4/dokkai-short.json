@@ -20,7 +20,7 @@
           "本は 15日 から カウンターで 返して、CDは ポストに 入れる"
         ],
         "answer": 0,
-        "why": { "zh": "依据：「この 間に 本を 返したい 人は、入口の 横に ある 返却ポストに 入れて ください」；「ただし、CDと DVDは こわれやすいので、ポストには 入れないで ください」。\n推理：10日在闭馆期间（1日～14日）。书可以投还书箱；「ただし」后面是例外：CD不能投，要等15日起到柜台还，所以书和CD分开处理。\n容易错：漏看「ただし」引出的例外，以为什么都能投进还书箱。", "en": "Evidence: 「この 間に 本を 返したい 人は、入口の 横に ある 返却ポストに 入れて ください」; 「ただし、CDと DVDは こわれやすいので、ポストには 入れないで ください」.\nReasoning: The 10th falls in the closure (1st–14th). Books can go in the return box; 「ただし」 brings in the exception: CDs may not, and go back at the counter from the 15th. So the books and the CD are handled separately.\nTrap: Missing the exception after 「ただし」 and putting everything in the box." },
+        "why": { "zh": "依据：「この 間に 本を 返したい 人は、入口の 横に ある 返却ポストに 入れて ください」；「ただし、CDと DVDは こわれやすいので、ポストには 入れないで ください」。\n推理：10日在闭馆期间（1日～14日）。书可以投还书箱；「ただし」后面是例外：CD不能投，要等15日起到柜台还，所以书和CD分开处理。", "en": "Evidence: 「この 間に 本を 返したい 人は、入口の 横に ある 返却ポストに 入れて ください」; 「ただし、CDと DVDは こわれやすいので、ポストには 入れないで ください」.\nReasoning: The 10th falls in the closure (1st–14th). Books can go in the return box; 「ただし」 brings in the exception: CDs may not, and go back at the counter from the 15th. So the books and the CD are handled separately." },
         "wrong": [
           null,
           { "zh": "CD容易坏，通知说「ポストには 入れないで ください」。", "en": "CDs break easily — the notice says not to put them in the box." },
@@ -51,7 +51,7 @@
           "部長に 時間を 聞く"
         ],
         "answer": 0,
-        "why": { "zh": "依据：「会議で 使う 資料は もう コピーして あるので、田中さんは コピーしなくても いいです」；「会議の 前に 一度 読んで おいて ください」。\n推理：「〜て おいて ください」是请他事先做好的事，也就是会前把资料读一遍。复印已经有人做好了（「もう 〜て ある」），「コピーしなくても いい」＝不用做。\n容易错：看到「コピー」就选复印，没注意它是已经做完、不用他做的事。", "en": "Evidence: 「会議で 使う 資料は もう コピーして あるので、田中さんは コピーしなくても いいです」; 「会議の 前に 一度 読んで おいて ください」.\nReasoning: 「〜て おいて ください」 asks him to do something in advance: read the papers once before the meeting. The copying is already done (「もう 〜て ある」), and 「コピーしなくても いい」 = he needn't do it.\nTrap: Seeing 「コピー」 and picking copying, though it is the job already done for him." },
+        "why": { "zh": "依据：「会議で 使う 資料は もう コピーして あるので、田中さんは コピーしなくても いいです」；「会議の 前に 一度 読んで おいて ください」。\n推理：「〜て おいて ください」是请他事先做好的事，也就是会前把资料读一遍。", "en": "Evidence: 「会議で 使う 資料は もう コピーして あるので、田中さんは コピーしなくても いいです」; 「会議の 前に 一度 読んで おいて ください」.\nReasoning: 「〜て おいて ください」 asks him to do something in advance: read the papers once before the meeting." },
         "wrong": [
           null,
           { "zh": "资料「もう コピーして ある」，田中「コピーしなくても いい」。", "en": "The handouts are already copied; he 「コピーしなくても いい」." },
@@ -82,7 +82,7 @@
           "紙の 番号に 電話して、すぐ 持って 来て もらう"
         ],
         "answer": 0,
-        "why": { "zh": "依据：「その 紙に 書いて ある 番号に 電話して、夜 7時より あとに もう一度 持って 来て もらって」。\n推理：信箱里有纸条，说明包裹来时家里没人。便条让他打纸条上的号码，请对方「7時より あとに」＝晚上7点以后再送一次。姐姐3点去打工，爸爸也晚回，早送没人收。\n容易错：只记住“打电话”，漏看时间条件，选了“马上送来”。", "en": "Evidence: 「その 紙に 書いて ある 番号に 電話して、夜 7時より あとに もう一度 持って 来て もらって」.\nReasoning: A slip in the mailbox means nobody was home when the parcel came. The note tells him to call the number on the slip and have it brought again 「7時より あとに」 = after 7 p.m. His sister works from 3 and his father is late, so an earlier delivery would find no one.\nTrap: Remembering only \"call\" and missing the time condition, so choosing \"bring it right away\"." },
+        "why": { "zh": "依据：「その 紙に 書いて ある 番号に 電話して、夜 7時より あとに もう一度 持って 来て もらって」。\n推理：信箱里有纸条，说明包裹来时家里没人。便条让他打纸条上的号码，请对方「7時より あとに」＝晚上7点以后再送一次。姐姐3点去打工，爸爸也晚回，早送没人收。", "en": "Evidence: 「その 紙に 書いて ある 番号に 電話して、夜 7時より あとに もう一度 持って 来て もらって」.\nReasoning: A slip in the mailbox means nobody was home when the parcel came. The note tells him to call the number on the slip and have it brought again 「7時より あとに」 = after 7 p.m. His sister works from 3 and his father is late, so an earlier delivery would find no one." },
         "wrong": [
           null,
           { "zh": "要打的是「紙に 書いて ある 番号」，不是给妈妈打电话。", "en": "He should call the number on the slip, not his mother." },
@@ -112,7 +112,7 @@
           "犬が 朝 早く 起こして くれるから"
         ],
         "answer": 0,
-        "why": { "zh": "依据：「犬は 朝 早く 散歩に 行きたがるので、わたしも 起きなければ なりません」。\n推理：「〜ので」前面是原因：狗早上很早就想去散步，所以“我”也必须起床。选项的「連れて 行かなければ ならない」就是这句话的换说法。\n容易错：「今は 朝の 静かな 町を 歩くのが 好きに なりました」是早起以后才有的变化，是结果，不是原因。", "en": "Evidence: 「犬は 朝 早く 散歩に 行きたがるので、わたしも 起きなければ なりません」.\nReasoning: What comes before 「〜ので」 is the cause: the dog wants its walk early, so the writer has to get up too. The option's 「連れて 行かなければ ならない」 says the same thing in other words.\nTrap: 「今は 朝の 静かな 町を 歩くのが 好きに なりました」 is a change that came after getting up early: a result, not the reason." },
+        "why": { "zh": "依据：「犬は 朝 早く 散歩に 行きたがるので、わたしも 起きなければ なりません」。\n推理：「〜ので」前面是原因：狗早上很早就想去散步，所以“我”也必须起床。选项的「連れて 行かなければ ならない」就是这句话的换说法。", "en": "Evidence: 「犬は 朝 早く 散歩に 行きたがるので、わたしも 起きなければ なりません」.\nReasoning: What comes before 「〜ので」 is the cause: the dog wants its walk early, so the writer has to get up too. The option's 「連れて 行かなければ ならない」 says the same thing in other words." },
         "wrong": [
           null,
           { "zh": "喜欢清晨散步是早起以后才「好きに なりました」的，不是原因。", "en": "She only came to like the morning walks later (「好きに なりました」); it isn't the reason." },
@@ -143,7 +143,7 @@
           "水曜日の 朝 8時までに"
         ],
         "answer": 0,
-        "why": { "zh": "依据：「燃える ごみ： 月曜日と 木曜日（今までは 火曜日と 金曜日）」；「ごみは その 日の 朝 8時までに 出して ください」。\n推理：下周起可燃垃圾是周一和周四；括号里「今までは」是以前的日子，已经不用了。时间是当天早上8点之前，前一天晚上扔不行。\n容易错：把括号里旧的「火曜日と 金曜日」当成新的日子。", "en": "Evidence: 「燃える ごみ： 月曜日と 木曜日（今までは 火曜日と 金曜日）」; 「ごみは その 日の 朝 8時までに 出して ください」.\nReasoning: From next week burnable rubbish goes out on Monday and Thursday; the days in brackets after 「今までは」 are the old ones. The time is by 8 a.m. on the day itself, not the night before.\nTrap: Taking the old days in brackets, 「火曜日と 金曜日」, for the new ones." },
+        "why": { "zh": "依据：「燃える ごみ： 月曜日と 木曜日（今までは 火曜日と 金曜日）」；「ごみは その 日の 朝 8時までに 出して ください」。\n推理：下周起可燃垃圾是周一和周四；括号里「今までは」是以前的日子，已经不用了。时间是当天早上8点之前，前一天晚上扔不行。", "en": "Evidence: 「燃える ごみ： 月曜日と 木曜日（今までは 火曜日と 金曜日）」; 「ごみは その 日の 朝 8時までに 出して ください」.\nReasoning: From next week burnable rubbish goes out on Monday and Thursday; the days in brackets after 「今までは」 are the old ones. The time is by 8 a.m. on the day itself, not the night before." },
         "wrong": [
           null,
           { "zh": "周二和周五是「今まで」的日子，下周起改了。", "en": "Tuesday and Friday were the old days (「今まで」); they're changing." },
@@ -241,7 +241,7 @@
           null
         ],
         "answer": 0,
-        "why": { "zh": "依据：「来られない 人は、金曜日までに わたしに 言って ください」。\n推理：写便条的是店长，所以「わたしに」＝告诉店长。期限是星期五之前，方式只是“说”，没有要求打电话，也没有要求另找时间打扫。\n容易错：把10点（来店时间）、2点（可以回去的时间）当成不能来的人要做的事。", "en": "Evidence: 「来られない 人は、金曜日までに わたしに 言って ください」.\nReasoning: The note is from the manager, so 「わたしに」 = tell the manager. The deadline is Friday and all that is asked is to say so: no phone call, no cleaning on another day.\nTrap: Taking 10 o'clock (when to arrive) or 2 o'clock (when you may leave) as what absent staff must do." },
+        "why": { "zh": "依据：「来られない 人は、金曜日までに わたしに 言って ください」。\n推理：写便条的是店长，所以「わたしに」＝告诉店长，期限是星期五之前。", "en": "Evidence: 「来られない 人は、金曜日までに わたしに 言って ください」.\nReasoning: The note is from the manager, so 「わたしに」 = tell the manager, and the deadline is Friday." },
         "wrong": [
           null,
           { "zh": "期限是星期五之前，不是星期一当天早上。", "en": "The deadline is Friday, not Monday morning." },
@@ -271,7 +271,7 @@
           "スマホの 使い方を 人に 教える ように なった"
         ],
         "answer": 0,
-        "why": { "zh": "依据：「去年 わたしが スマホの 使い方を 教えてから、毎日 写真を 送って くれる ように なりました」。\n推理：「〜ように なりました」表示变化：以前写信，去年起每天发照片。教用法的是“我”，奶奶是学的一方；信反而「あまり 来なく なりました」。\n容易错：“教别人用手机”把教和学的人弄反了。", "en": "Evidence: 「去年 わたしが スマホの 使い方を 教えてから、毎日 写真を 送って くれる ように なりました」.\nReasoning: 「〜ように なりました」 marks a change: she used to write letters, and since last year she sends photos every day. The writer did the teaching; grandmother learned. Letters in fact 「あまり 来なく なりました」.\nTrap: \"Teaching others to use a smartphone\" swaps who taught whom." },
+        "why": { "zh": "依据：「去年 わたしが スマホの 使い方を 教えてから、毎日 写真を 送って くれる ように なりました」。\n推理：「〜ように なりました」表示变化：以前写信，去年起每天发照片。", "en": "Evidence: 「去年 わたしが スマホの 使い方を 教えてから、毎日 写真を 送って くれる ように なりました」.\nReasoning: 「〜ように なりました」 marks a change: she used to write letters, and since last year she sends photos every day." },
         "wrong": [
           null,
           { "zh": "文中说「手紙は あまり 来なく なりました」，信变少了。", "en": "「手紙は あまり 来なく なりました」 — the letters decreased." },
@@ -308,7 +308,7 @@
           null
         ],
         "answer": 0,
-        "why": { "zh": "依据：「その 日も 雨の 場合は、遠足は 中止です。ふつうの 授業を します」。\n推理：20日下雨就改到27日；「その 日」＝27日。那天也下雨，郊游就取消，照常上课。通知里没有再延期，也没有说放假。\n容易错：以为下雨就放假，或以为还会再改一次日子。", "en": "Evidence: 「その 日も 雨の 場合は、遠足は 中止です。ふつうの 授業を します」.\nReasoning: Rain on the 20th moves the trip to the 27th; 「その 日」 = the 27th. Rain that day too means the trip is cancelled and normal lessons are held. There is no second postponement and no day off.\nTrap: Assuming rain means a day off, or that the trip moves again." },
+        "why": { "zh": "依据：「その 日も 雨の 場合は、遠足は 中止です。ふつうの 授業を します」。\n推理：20日下雨就改到27日；「その 日」＝27日。那天也下雨，郊游就取消，照常上课。", "en": "Evidence: 「その 日も 雨の 場合は、遠足は 中止です。ふつうの 授業を します」.\nReasoning: Rain on the 20th moves the trip to the 27th; 「その 日」 = the 27th. Rain that day too means the trip is cancelled and normal lessons are held." },
         "wrong": [
           null,
           { "zh": "27日也下雨，郊游就取消了，不去动物园。", "en": "Rain on the 27th cancels the trip; nobody goes to the zoo." },

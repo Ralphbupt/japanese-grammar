@@ -27,13 +27,13 @@
       "en": "Yesterday I swam in the pool with a friend."
     },
     "why": {
-      "zh": "线索：「きのう」说的是过去，句子到空格就结束，没有「です／ます」，是简体。\n规则：简体的过去用た形（「行く」→「行った」）。「泳ぐ」是「ぐ」结尾：て形「泳いで」，た形同样变成「泳いだ」。\n技巧：た形和て形变法完全一样，想不起た形时，先说出て形，再把「て／で」换成「た／だ」。",
-      "en": "Clue: 「きのう」 puts it in the past, and the sentence ends at the blank with no です / ます — plain style.\nRule: Plain past is the た-form (「行く」 → 「行った」). 「泳ぐ」 ends in ぐ: its て-form is 「泳いで」, so the た-form is 「泳いだ」.\nTip: The た-form is built exactly like the て-form. If you can't recall it, say the て-form and swap て / で for た / だ."
+      "zh": "线索：「きのう」说的是过去，句子到空格就结束，没有「です／ます」，是简体。\n规则：简体的过去用た形（「行く」→「行った」）。「泳ぐ」是「ぐ」结尾：て形「泳いで」，た形同样变成「泳いだ」。",
+      "en": "Clue: 「きのう」 puts it in the past, and the sentence ends at the blank with no です / ます — plain style.\nRule: Plain past is the た-form (「行く」 → 「行った」). 「泳ぐ」 ends in ぐ: its て-form is 「泳いで」, so the た-form is 「泳いだ」."
     },
     "wrong": [
       null,
       {
-        "zh": "原形「泳ぐ」是现在/将来，和「きのう」不符。",
+        "zh": "辞书形「泳ぐ」是现在/将来，和「きのう」不符。",
         "en": "The dictionary form 「泳ぐ」 is non-past; 「きのう」 needs the past."
       },
       {
@@ -41,8 +41,8 @@
         "en": "「泳いで」 is the て-form; it can't end a sentence about yesterday."
       },
       {
-        "zh": "「泳がない」是现在的否定“不游”，和「きのう」不符，也和“和朋友在泳池”的语境不合。",
-        "en": "「泳がない」 is non-past negative; it doesn't fit 「きのう」 or the pool outing."
+        "zh": "「泳がない」是现在的否定“不游”，和「きのう」不符。",
+        "en": "「泳がない」 is non-past negative and doesn't fit 「きのう」."
       }
     ]
   },
@@ -152,8 +152,8 @@
       "en": "A: Have you ever climbed Mt. Fuji? B: Yes, once."
     },
     "why": {
-      "zh": "线索：B 用「はい、いちど あります」回答，说的是做过几次，是经验。\n规则：问“有没有做过”用「た形＋ことが ありますか」（「のぼる」→「のぼった ことが ある」）。「こと」是事，不是人或动物，所以用「ある」不用「いる」。",
-      "en": "Clue: B answers 「はい、いちど あります」 — a number of times, so the question is about experience.\nRule: \"Have you ever…?\" is た-form ＋ 「ことが ありますか」 (「のぼる」 → 「のぼった ことが ある」). 「こと」 is a thing, not a person or animal, so it takes 「ある」, never 「いる」."
+      "zh": "线索：B 用「はい、いちど あります」回答，“有过一次”，可见问的是经验。\n规则：问“有没有做过”用「た形＋ことが ありますか」（「のぼる」→「のぼった ことが ある」）。「こと」是事，不是人或动物，所以用「ある」不用「いる」。",
+      "en": "Clue: B answers 「はい、いちど あります」 (\"yes, once\"), so the question is about experience.\nRule: \"Have you ever…?\" is た-form ＋ 「ことが ありますか」 (「のぼる」 → 「のぼった ことが ある」). 「こと」 is a thing, not a person or animal, so it takes 「ある」, never 「いる」."
     },
     "wrong": [
       null,
@@ -207,8 +207,8 @@
         "en": "「〜たばかり」 (just did) contradicts 「まだ一度も」."
       },
       {
-        "zh": "「〜たことです」不表示经验，句子也不成立。",
-        "en": "「〜たことです」 doesn't express experience and doesn't work here."
+        "zh": "「〜たことです」不成立；说经验要用「ことが ありません」或「ことが あります」。",
+        "en": "「〜たことです」 doesn't work; experience takes 「ことが ありません」 or 「ことが あります」."
       }
     ]
   },

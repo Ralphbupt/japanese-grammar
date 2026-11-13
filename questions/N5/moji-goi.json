@@ -44,10 +44,10 @@
     "kj": "寒いですから、窓を閉めてください。",
     "answer": 0,
     "tr": { "zh": "因为很冷，请把窗户关上。", "en": "It's cold, so please close the window." },
-    "why": { "zh": "线索：「さむい」，冷了要挡住外面的风，所以把窗户关上。\n词义：「しめる」（閉める）＝关（门、窗）：「まどを しめる」「ドアを しめる」；打开是「あける」。\n辨析：中文都说“关”，但灯、电器关掉用「けす」（「でんきを けす」），门窗用「しめる」。", "en": "Clue: 「さむい」 — it's cold, so you keep the outside air out by closing the window.\nMeaning: 「しめる」 (閉める) is to close a door or window: 「まどを しめる」, 「ドアを しめる」. Opening is 「あける」.\nContrast: don't mix up the two verbs: lights and machines are switched off with 「けす」 (「でんきを けす」); doors and windows are closed with 「しめる」." },
+    "why": { "zh": "线索：「さむい」，冷了要挡住外面的风，所以把窗户关上。\n词义：「しめる」（閉める）＝关（门、窗）：「まどを しめる」「ドアを しめる」；打开是「あける」。\n辨析：中文都说“关”，但灯、电器用「けす」（「でんきを けす」），门窗用「しめる」。", "en": "Clue: 「さむい」 — it's cold, so you keep the outside air out by closing the window.\nMeaning: 「しめる」 (閉める) is to close a door or window: 「まどを しめる」, 「ドアを しめる」. Opening is 「あける」.\nContrast: Chinese says 关 for both, but lights and machines take 「けす」 (「でんきを けす」); doors and windows take 「しめる」." },
     "wrong": [
       null,
-      { "zh": "「あけて」是“打开”，冷的时候开窗和原因说反了。", "en": "「あけて」 (open) is the opposite of what the cold calls for." },
+      { "zh": "「あけて」是“打开”，天冷不会去开窗。", "en": "「あけて」 means open; you don't open a window because it's cold." },
       { "zh": "「つける」用于开灯、开电器，不说「まどを つける」。", "en": "「つける」 is for lights and appliances, not windows." },
       { "zh": "「けす」用于关灯、关电器，窗户不用「けす」。", "en": "「けす」 is for switching things off, not for windows." }
     ]

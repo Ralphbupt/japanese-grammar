@@ -88,8 +88,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「ただ、それだけなら、大学の臨海実験所を使えば済む話で。」又说：「そういう知恵は、年に何度か聞き取りに行くぐらいでは、とても教えてもらえないんですよ。」\n推理：观察活鱼「それもあります」，但「ただ」一转：只为这个，用大学的临海实验站就够了。真正的理由是渔民身体里知道、论文里没写的知识，偶尔去访谈学不到，只能住过去学。经费和设备是大学更好；一起想新渔法是现在的结果。\n容易错：「それもあります」承认的次要理由；把现在的结果当成理由。",
-   "en": "Evidence: The man says: 「ただ、それだけなら、大学の臨海実験所を使えば済む話で。」 and 「そういう知恵は、年に何度か聞き取りに行くぐらいでは、とても教えてもらえないんですよ。」\nReasoning: Watching live fish — 「それもあります」 — but 「ただ」 turns it: for that alone a university marine station would do. The real reason is the fishermen's bodily knowledge that papers lack, which occasional interviews can't teach, so he had to live there. Funding and equipment are better at the university; working on new fishing methods is how things turned out.\nTrap: the minor reason granted with 「それもあります」; taking the present outcome as the reason."
+   "zh": "依据：男的说：「ただ、それだけなら、大学の臨海実験所を使えば済む話で。」又说：「そういう知恵は、年に何度か聞き取りに行くぐらいでは、とても教えてもらえないんですよ。」\n推理：观察活鱼「それもあります」，但「ただ」一转：只为这个，用大学的临海实验站就够了。真正的理由是渔民身体里知道、论文里没写的知识，偶尔去访谈学不到，只能住过去学。经费和设备是大学更好；一起想新渔法是现在的结果。",
+   "en": "Evidence: The man says: 「ただ、それだけなら、大学の臨海実験所を使えば済む話で。」 and 「そういう知恵は、年に何度か聞き取りに行くぐらいでは、とても教えてもらえないんですよ。」\nReasoning: Watching live fish — 「それもあります」 — but 「ただ」 turns it: for that alone a university marine station would do. The real reason is the fishermen's bodily knowledge that papers lack, which occasional interviews can't teach, so he had to live there. Funding and equipment are better at the university; working on new fishing methods is how things turned out."
   },
   "wrong": [
    {
@@ -200,17 +200,17 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「パンフレットもテレビのコマーシャルも、広いリビングを走ってる写真ばかりなので。」\n推理：卖点是「狭い部屋でも、家具の下まで入り込める」，可宣传全是宽敞客厅，所以客人看了宣传册说「うちには大きすぎるな」就放回去了——广告没传达出长处。其他可能的原因她一一否定：价格「ほぼ同じ」，吸力弱只限部分地板，展示问题则用「ちゃんと手に取って見てくれてた」驳回。\n容易错：男的提出的原因都被她否定。",
-   "en": "Evidence: The woman says: 「パンフレットもテレビのコマーシャルも、広いリビングを走ってる写真ばかりなので。」\nReasoning: The selling point is 「狭い部屋でも、家具の下まで入り込める」, yet the ads show only big living rooms, so the shopper read the brochure, said 「うちには大きすぎるな」 and put it back: the ads hide its strength. She dismisses the other possible causes one by one: the price is 「ほぼ同じ」, weak suction is limited to some floors, and the display point is answered with 「ちゃんと手に取って見てくれてた」.\nTrap: every cause the man suggests is rejected by her."
+   "zh": "依据：女的说：「パンフレットもテレビのコマーシャルも、広いリビングを走ってる写真ばかりなので。」\n推理：卖点是「狭い部屋でも、家具の下まで入り込める」，可宣传全是宽敞客厅，所以客人看了宣传册说「うちには大きすぎるな」就放回去了——广告没传达出长处。其他可能的原因她一一否定：价格「ほぼ同じ」，吸力弱只限部分地板，展示问题则用「ちゃんと手に取って見てくれてた」驳回。",
+   "en": "Evidence: The woman says: 「パンフレットもテレビのコマーシャルも、広いリビングを走ってる写真ばかりなので。」\nReasoning: The selling point is 「狭い部屋でも、家具の下まで入り込める」, yet the ads show only big living rooms, so the shopper read the brochure, said 「うちには大きすぎるな」 and put it back: the ads hide its strength. She dismisses the other possible causes one by one: the price is 「ほぼ同じ」, weak suction is limited to some floors, and the display point is answered with 「ちゃんと手に取って見てくれてた」."
   },
   "wrong": [
    {
-    "zh": "价格和别家「ほぼ同じ」。",
-    "en": "It's priced about the same as competitors'."
+    "zh": "价格和别家「ほぼ同じ」，不是原因。",
+    "en": "It's priced about the same as competitors', so that isn't the cause."
    },
    {
-    "zh": "吸力弱的评价只限于部分地板。",
-    "en": "Weak suction is limited to some floors."
+    "zh": "吸力弱的评价只限于部分地板，不是主要原因。",
+    "en": "Weak suction is limited to some floors, so it isn't the main cause."
    },
    null,
    {
@@ -306,18 +306,18 @@
    }
   },
   "why": {
-   "zh": "依据：上司说：「この案だと、出荷場の手前で、フォークリフトが通る道を、作業する人が毎回横切ることになるでしょう。」\n推理：货架重算后「足りてました」，照明「問題ないでしょう」；「ただね」之后才是问题：她提起去年叉车和人差点相撞，指出新方案里人每次都要横穿叉车通道，也就是人车动线交叉。出货区「あそこしかない」，不是要改的地方。\n容易错：先提到但已经没问题的点。",
-   "en": "Evidence: The manager says: 「この案だと、出荷場の手前で、フォークリフトが通る道を、作業する人が毎回横切ることになるでしょう。」\nReasoning: Recalculated, the shelving was 「足りてました」 and the lighting is 「問題ないでしょう」; the problem comes after 「ただね」: recalling last year's near-collision, she points out workers would cross the forklift route every time, so people and vehicles cross paths. The shipping area 「あそこしかない」, so it isn't what needs changing.\nTrap: points mentioned first that turn out fine."
+   "zh": "依据：上司说：「この案だと、出荷場の手前で、フォークリフトが通る道を、作業する人が毎回横切ることになるでしょう。」\n推理：货架重算后「足りてました」，照明「問題ないでしょう」；「ただね」之后才是问题：她提起去年叉车和人差点相撞，指出新方案里人每次都要横穿叉车通道，也就是人车动线交叉。出货区「あそこしかない」，不是要改的地方。",
+   "en": "Evidence: The manager says: 「この案だと、出荷場の手前で、フォークリフトが通る道を、作業する人が毎回横切ることになるでしょう。」\nReasoning: Recalculated, the shelving was 「足りてました」 and the lighting is 「問題ないでしょう」; the problem comes after 「ただね」: recalling last year's near-collision, she points out workers would cross the forklift route every time, so people and vehicles cross paths. The shipping area 「あそこしかない」, so it isn't what needs changing."
   },
   "wrong": [
    {
-    "zh": "货架重新算过「足りてました」。",
-    "en": "Recalculated, the shelving is enough."
+    "zh": "货架重新算过，「足りてました」，没有问题。",
+    "en": "Recalculated, the shelving is enough, so it isn't a problem."
    },
    null,
    {
-    "zh": "照明「問題ないでしょう」。",
-    "en": "The lighting is fine."
+    "zh": "照明她说「問題ないでしょう」。",
+    "en": "She says the lighting is 「問題ないでしょう」."
    },
    {
     "zh": "出货区「あそこしかない」，不是问题所在。",
@@ -418,21 +418,21 @@
    }
   },
   "why": {
-   "zh": "依据：工匠说：「ただ、裏の山の木なら、何十年たっても同じものが手に入りますから。」\n推理：契机是修二十年前的桌子时，同样的进口木材已经买不到，只能用颜色不同的木头接；他的家具要用到「お孫さんの代まで」。质量上进口木材也有好的，价格本地「むしろ高い」，「ただ」之后才是理由：几十年后还能买到同样的木头，以后也能修。支持林业只是「結果として」。\n容易错：把结果当原因；与他的话相反的选项（质量、价格）。",
-   "en": "Evidence: The craftsman says: 「ただ、裏の山の木なら、何十年たっても同じものが手に入りますから。」\nReasoning: It began when the imported wood for a twenty-year-old table could no longer be bought and he had to patch it with wood of another colour; his furniture is meant to last 「お孫さんの代まで」. Imported wood can be good and local wood is 「むしろ高い」; after 「ただ」 comes the reason: the same wood will be available decades later, so it can still be repaired. Helping local forestry is only 「結果として」.\nTrap: taking a result as the cause; options that contradict what he says (quality, price)."
+   "zh": "依据：工匠说：「ただ、裏の山の木なら、何十年たっても同じものが手に入りますから。」\n推理：契机是修二十年前的桌子时，同样的进口木材已经买不到，只能用颜色不同的木头接；他的家具要用到「お孫さんの代まで」。质量上进口木材也有好的，价格本地「むしろ高い」，「ただ」之后才是理由：几十年后还能买到同样的木头，以后也能修。支持林业只是「結果として」。",
+   "en": "Evidence: The craftsman says: 「ただ、裏の山の木なら、何十年たっても同じものが手に入りますから。」\nReasoning: It began when the imported wood for a twenty-year-old table could no longer be bought and he had to patch it with wood of another colour; his furniture is meant to last 「お孫さんの代まで」. Imported wood can be good and local wood is 「むしろ高い」; after 「ただ」 comes the reason: the same wood will be available decades later, so it can still be repaired. Helping local forestry is only 「結果として」."
   },
   "wrong": [
    {
-    "zh": "支持本地只是「結果として、そうなりました」。",
-    "en": "Supporting local forestry is only how it turned out."
+    "zh": "支持本地林业只是「結果として、そうなりました」，不是理由。",
+    "en": "Supporting local forestry is only how it turned out, not the reason."
    },
    {
-    "zh": "他说进口木材里好的也很多。",
-    "en": "He says plenty of imported wood is good."
+    "zh": "他说进口木材里好的也很多，质量不是理由。",
+    "en": "He says plenty of imported wood is good, so quality isn't the reason."
    },
    {
-    "zh": "本地木材「むしろ高い」。",
-    "en": "Local wood is actually more expensive."
+    "zh": "本地木材「むしろ高い」，并不便宜。",
+    "en": "Local wood is actually more expensive, not cheaper."
    },
    null
   ],
@@ -530,17 +530,17 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「あれで人の流れががらっと変わるはずなんです。」又说：「移転したあとの実態を見てからでないと、また一から作り直すことになりかねない」\n推理：男的猜「予算がつかなかったの？」，她说预算「一応認められた」，和运营公司的协调也「ほぼ済んで」。真正卡住的是：大医院搬来会改变人流，现方案基于去年的调查，要等看了搬迁后的实际情况再定。居民反对只是「一部の地区だけ」。\n容易错：被否定的猜测。",
-   "en": "Evidence: The woman says: 「あれで人の流れががらっと変わるはずなんです。」 and 「移転したあとの実態を見てからでないと、また一から作り直すことになりかねない」\nReasoning: He guesses 「予算がつかなかったの？」; she says the budget was 「一応認められた」 and talks with the operator are 「ほぼ済んで」. The real snag: the hospital's move will change travel patterns, and the plan is based on last year's survey, so they must see the situation after the move. Opposition is 「一部の地区だけ」.\nTrap: guesses that are denied."
+   "zh": "依据：女的说：「あれで人の流れががらっと変わるはずなんです。」又说：「移転したあとの実態を見てからでないと、また一から作り直すことになりかねない」\n推理：男的猜「予算がつかなかったの？」，她说预算「一応認められた」，和运营公司的协调也「ほぼ済んで」。真正卡住的是：大医院搬来会改变人流，现方案基于去年的调查，要等看了搬迁后的实际情况再定。居民反对只是「一部の地区だけ」。",
+   "en": "Evidence: The woman says: 「あれで人の流れががらっと変わるはずなんです。」 and 「移転したあとの実態を見てからでないと、また一から作り直すことになりかねない」\nReasoning: He guesses 「予算がつかなかったの？」; she says the budget was 「一応認められた」 and talks with the operator are 「ほぼ済んで」. The real snag: the hospital's move will change travel patterns, and the plan is based on last year's survey, so they must see the situation after the move. Opposition is 「一部の地区だけ」."
   },
   "wrong": [
    {
-    "zh": "预算「一応認められた」。",
-    "en": "The budget was approved."
+    "zh": "预算「一応認められた」，不是原因。",
+    "en": "The budget was approved, so that isn't the cause."
    },
    {
-    "zh": "和运营公司的协调「ほぼ済んで」いる。",
-    "en": "Talks with the operator are mostly done."
+    "zh": "和运营公司的协调已经基本完成（「ほぼ済んで」）。",
+    "en": "Talks with the operator are mostly done (「ほぼ済んで」)."
    },
    null,
    {
@@ -642,8 +642,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「若い人でいっぱいになって、あの雰囲気がなくなってしまったら、足が遠のくんじゃないかと。」\n推理：钱是「最初は」的担心，有补贴「なんとかなりそう」；停业一个月和每年检修合并就「構いません」。「ただ……」之后她提起每天来的老人，怕氛围没了他们就不来——这才是最担心的，顾问提出分楼层后她才松口。年轻人能否懂澡堂的好，只是最后「気にはなります」的附带一提。\n容易错：已经解决的担心；附带一提的担心。",
-   "en": "Evidence: The woman says: 「若い人でいっぱいになって、あの雰囲気がなくなってしまったら、足が遠のくんじゃないかと。」\nReasoning: Money was her 「最初は」 worry, and with the subsidy it seems 「なんとかなりそう」; a month's closure fits the annual maintenance, so 「構いません」. After 「ただ……」 she brings up the elderly daily regulars and fears they'll stop coming if the atmosphere goes — her main worry, and she only warms up once the floors are split. Whether young people will appreciate the bathhouse is a passing 「気にはなります」 at the end.\nTrap: worries already resolved; a worry mentioned in passing."
+   "zh": "依据：女的说：「若い人でいっぱいになって、あの雰囲気がなくなってしまったら、足が遠のくんじゃないかと。」\n推理：钱是「最初は」的担心，有补贴「なんとかなりそう」；停业一个月和每年检修合并就「構いません」。「ただ……」之后她提起每天来的老人，怕氛围没了他们就不来——这才是最担心的，顾问提出分楼层后她才松口。年轻人能否懂澡堂的好，只是最后「気にはなります」的附带一提。",
+   "en": "Evidence: The woman says: 「若い人でいっぱいになって、あの雰囲気がなくなってしまったら、足が遠のくんじゃないかと。」\nReasoning: Money was her 「最初は」 worry, and with the subsidy it seems 「なんとかなりそう」; a month's closure fits the annual maintenance, so 「構いません」. After 「ただ……」 she brings up the elderly daily regulars and fears they'll stop coming if the atmosphere goes — her main worry, and she only warms up once the floors are split. Whether young people will appreciate the bathhouse is a passing 「気にはなります」 at the end."
   },
   "wrong": [
    null,
@@ -742,8 +742,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「それより気になったのは、開いたときに真ん中が盛り上がって、平らにならないことなんです。」又说：「毎日書き込むものですから、そこはぜひ直していただきたいです。」\n推理：厚度她「最初は」觉得是缺点，后来说「このままのほうがいい」；颜色「何とも」；「それより」引出真正在意的：摊不平，左页边上写不了。男的说是装订问题，她要求一定要改。价格她觉得「妥当」。\n容易错：先说后改口的缺点；提到但不打算改的点。",
-   "en": "Evidence: The woman says: 「それより気になったのは、開いたときに真ん中が盛り上がって、平らにならないことなんです。」 and 「毎日書き込むものですから、そこはぜひ直していただきたいです。」\nReasoning: The thickness bothered her 「最初は」, but she says 「このままのほうがいい」; on colour, 「何とも」; 「それより」 introduces her real concern: it won't lie flat, so the left page edge is hard to write on. He calls it a binding problem and she wants it fixed. The price is 「妥当」.\nTrap: a flaw she took back; points mentioned but not to be changed."
+   "zh": "依据：女的说：「それより気になったのは、開いたときに真ん中が盛り上がって、平らにならないことなんです。」又说：「毎日書き込むものですから、そこはぜひ直していただきたいです。」\n推理：厚度她「最初は」觉得是缺点，后来说「このままのほうがいい」；颜色「何とも」；「それより」引出真正在意的：摊不平，左页边上写不了。男的说是装订问题，她要求一定要改。价格她觉得「妥当」。",
+   "en": "Evidence: The woman says: 「それより気になったのは、開いたときに真ん中が盛り上がって、平らにならないことなんです。」 and 「毎日書き込むものですから、そこはぜひ直していただきたいです。」\nReasoning: The thickness bothered her 「最初は」, but she says 「このままのほうがいい」; on colour, 「何とも」; 「それより」 introduces her real concern: it won't lie flat, so the left page edge is hard to write on. He calls it a binding problem and she wants it fixed. The price is 「妥当」."
   },
   "wrong": [
    {
@@ -751,8 +751,8 @@
     "en": "She changed her mind: the thickness should stay."
    },
    {
-    "zh": "颜色她说见仁见智，「何とも」。",
-    "en": "Colour is a matter of taste for her."
+    "zh": "颜色她说因人而异，「何とも」说不好，没要求改。",
+    "en": "She says colour is a matter of taste and doesn't ask for a change."
    },
    {
     "zh": "价格她说「妥当」。",
@@ -812,8 +812,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「件数がはっきり減り始めたのは、四年前に、ある決まりを作ってからでした。」「自分のミスや、ミスになりかけたことを報告した人を、決して責めない。」\n推理：加厚手册、增加确认栏是以前的做法，结果确认「かえって形だけのもの」了；新仪器「もちろん」也防住了一些失误，但「ただ」之后才是「はっきり」减少的原因：不责备报告的人，报告多了才看清陷阱在哪里。\n容易错：「もちろん」承认的次要因素；以前失败的做法。",
-   "en": "Evidence: The man says: 「件数がはっきり減り始めたのは、四年前に、ある決まりを作ってからでした。」 and 「自分のミスや、ミスになりかけたことを報告した人を、決して責めない。」\nReasoning: Thicker manuals and more check boxes were the old way, and checks became 「かえって形だけのもの」; new equipment 「もちろん」 prevented some errors, but after 「ただ」 comes what made them fall 「はっきり」: never blaming those who report, so reports came in and the pitfalls became visible.\nTrap: the minor factor granted with 「もちろん」; the old approach that failed."
+   "zh": "依据：男的说：「件数がはっきり減り始めたのは、四年前に、ある決まりを作ってからでした。」「自分のミスや、ミスになりかけたことを報告した人を、決して責めない。」\n推理：加厚手册、增加确认栏是以前的做法，结果确认「かえって形だけのもの」了；新仪器「もちろん」也防住了一些失误，但「ただ」之后才是「はっきり」减少的原因：不责备报告的人，报告多了才看清陷阱在哪里。",
+   "en": "Evidence: The man says: 「件数がはっきり減り始めたのは、四年前に、ある決まりを作ってからでした。」 and 「自分のミスや、ミスになりかけたことを報告した人を、決して責めない。」\nReasoning: Thicker manuals and more check boxes were the old way, and checks became 「かえって形だけのもの」; new equipment 「もちろん」 prevented some errors, but after 「ただ」 comes what made them fall 「はっきり」: never blaming those who report, so reports came in and the pitfalls became visible."
   },
   "wrong": [
    {
@@ -912,8 +912,8 @@
    }
   },
   "why": {
-   "zh": "依据：社长说：「実は、量を追いかけていた時期に、どうしても、仕込みの一つ一つにまで目が届かなくなっていたんです。」\n推理：播音员的两个猜测都被否定：订单「むしろ逆」，在增加；酿酒师人数「ほとんど変わっておりません」。「実は」引出真正的理由：追产量时顾不到每一批酿造，味道和父亲那一代不同了。涨价是减产之后帮销售恢复的事。\n容易错：被否定的猜测；之后才发生的事。",
-   "en": "Evidence: The owner says: 「実は、量を追いかけていた時期に、どうしても、仕込みの一つ一つにまで目が届かなくなっていたんです。」\nReasoning: Both of the presenter's guesses are denied: orders were 「むしろ逆」, rising; the number of brewers has 「ほとんど変わっておりません」. 「実は」 introduces the real reason: chasing volume, he couldn't watch every batch and the taste drifted from his father's. The price rise came after the cut and helped sales recover.\nTrap: guesses that are denied; something that happened later."
+   "zh": "依据：社长说：「実は、量を追いかけていた時期に、どうしても、仕込みの一つ一つにまで目が届かなくなっていたんです。」\n推理：播音员的两个猜测都被否定：订单「むしろ逆」，在增加；酿酒师人数「ほとんど変わっておりません」。「実は」引出真正的理由：追产量时顾不到每一批酿造，味道和父亲那一代不同了。涨价是减产之后帮销售恢复的事。",
+   "en": "Evidence: The owner says: 「実は、量を追いかけていた時期に、どうしても、仕込みの一つ一つにまで目が届かなくなっていたんです。」\nReasoning: Both of the presenter's guesses are denied: orders were 「むしろ逆」, rising; the number of brewers has 「ほとんど変わっておりません」. 「実は」 introduces the real reason: chasing volume, he couldn't watch every batch and the taste drifted from his father's. The price rise came after the cut and helped sales recover."
   },
   "wrong": [
    null,
@@ -1024,8 +1024,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「地域の経済とか、もっと広い目で物事を見られないと、この先も同じことを繰り返すなと。」\n推理：契机是董事会上被问对当地就业的影响，他答不上来；他意识到「経理の知識だけで判断できる話じゃなかった」，需要更宽的视野，所以进了地区经济的研讨班。女的以为是考证，他说毕业也拿不到资格，公司也「補助も出ない」。\n容易错：别人的猜测（资格证）；照搬「経理」这个词。",
-   "en": "Evidence: The man says: 「地域の経済とか、もっと広い目で物事を見られないと、この先も同じことを繰り返すなと。」\nReasoning: It started when the board asked about the effect on local jobs and he had no answer; he realised it was 「経理の知識だけで判断できる話じゃなかった」 and he needed a wider view, so he joined a regional-economics seminar. She assumed it was for a qualification; he says there's none, and there's 「補助も出ない」 from the company either.\nTrap: someone else's guess (a qualification); echoing the word 「経理」."
+   "zh": "依据：男的说：「地域の経済とか、もっと広い目で物事を見られないと、この先も同じことを繰り返すなと。」\n推理：契机是董事会上被问对当地就业的影响，他答不上来；他意识到「経理の知識だけで判断できる話じゃなかった」，需要更宽的视野，所以进了地区经济的研讨班。女的以为是考证，他说毕业也拿不到资格，公司也「補助も出ない」。",
+   "en": "Evidence: The man says: 「地域の経済とか、もっと広い目で物事を見られないと、この先も同じことを繰り返すなと。」\nReasoning: It started when the board asked about the effect on local jobs and he had no answer; he realised it was 「経理の知識だけで判断できる話じゃなかった」 and he needed a wider view, so he joined a regional-economics seminar. She assumed it was for a qualification; he says there's none, and there's 「補助も出ない」 from the company either."
   },
   "wrong": [
    {
@@ -1034,8 +1034,8 @@
    },
    null,
    {
-    "zh": "「会社の補助も出ない」。",
-    "en": "The company doesn't subsidize it."
+    "zh": "他说「会社の補助も出ない」，不是为了用补贴。",
+    "en": "He says 「会社の補助も出ない」, so it isn't about the subsidy."
    },
    {
     "zh": "他说光靠会计知识判断不了，要学的是更广的视角，不是更深的会计。",
@@ -1124,8 +1124,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「文章は、書き直しが二十回を超えました。」又说：「正直、何度も投げ出しかけました。」\n推理：要比较几件事辛苦的程度：画画虽然花了三个月，却是「楽しい時間でした」；页数之争只是「疲れましたね」；只有删减文字改了二十多遍、几次差点放弃，这才是最难的。孩子们的反应让他「ほっとしました」。\n容易错：花时间不等于难；“累”和“差点放弃”程度不同。",
-   "en": "Evidence: The man says: 「文章は、書き直しが二十回を超えました。」 and 「正直、何度も投げ出しかけました。」\nReasoning: Compare how hard each part was: the pictures took three months but were 「楽しい時間でした」; the page-count arguments were only 「疲れましたね」; only cutting the text took twenty-plus rewrites and nearly made him quit, so that was hardest. The children's reaction let him feel 「ほっとしました」.\nTrap: taking long is not the same as hard; 'tiring' is weaker than 'nearly gave up'."
+   "zh": "依据：男的说：「文章は、書き直しが二十回を超えました。」又说：「正直、何度も投げ出しかけました。」\n推理：要比较几件事辛苦的程度：画画虽然花了三个月，却是「楽しい時間でした」；页数之争只是「疲れましたね」；只有删减文字改了二十多遍、几次差点放弃，这才是最难的。孩子们的反应让他「ほっとしました」。",
+   "en": "Evidence: The man says: 「文章は、書き直しが二十回を超えました。」 and 「正直、何度も投げ出しかけました。」\nReasoning: Compare how hard each part was: the pictures took three months but were 「楽しい時間でした」; the page-count arguments were only 「疲れましたね」; only cutting the text took twenty-plus rewrites and nearly made him quit, so that was hardest. The children's reaction let him feel 「ほっとしました」."
   },
   "wrong": [
    null,
@@ -1224,8 +1224,8 @@
    }
   },
   "why": {
-   "zh": "依据：修复师说：「ですから、私は、絵の具も接着剤も、後から取り除けるものしか使いません。」\n推理：接近原貌「もちろん目指します」、不着急「も大切」，都是一般性的；「ただ」之后讲刚入行时百年前好心涂上的颜料怎么也去不掉，又说今天的最佳做法五十年后可能是错的。「ですから」只用以后能去除的材料，就是为了让后人能重来。为了好看而改变作品，她说「意味がありません」。\n容易错：「もちろん」「も」带出的次要点。",
-   "en": "Evidence: The restorer says: 「ですから、私は、絵の具も接着剤も、後から取り除けるものしか使いません。」\nReasoning: Getting close to the original 「もちろん目指します」 and not rushing is 「も大切」 — general points. After 「ただ」 she tells of century-old, well-meant paint she could never remove, and says today's best may prove wrong in fifty years. 「ですから」 she uses only removable materials, so later restorers can redo the work. Changing the work to look beautiful, she says, has 「意味がありません」.\nTrap: secondary points brought in with 「もちろん」 and 「も」."
+   "zh": "依据：修复师说：「ですから、私は、絵の具も接着剤も、後から取り除けるものしか使いません。」\n推理：接近原貌「もちろん目指します」、不着急「も大切」，都是一般性的；「ただ」之后讲刚入行时百年前好心涂上的颜料怎么也去不掉，又说今天的最佳做法五十年后可能是错的。「ですから」只用以后能去除的材料，就是为了让后人能重来。为了好看而改变作品，她说「意味がありません」。",
+   "en": "Evidence: The restorer says: 「ですから、私は、絵の具も接着剤も、後から取り除けるものしか使いません。」\nReasoning: Getting close to the original 「もちろん目指します」 and not rushing is 「も大切」 — general points. After 「ただ」 she tells of century-old, well-meant paint she could never remove, and says today's best may prove wrong in fifty years. 「ですから」 she uses only removable materials, so later restorers can redo the work. Changing the work to look beautiful, she says, has 「意味がありません」."
   },
   "wrong": [
    {
@@ -1324,8 +1324,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「ただ、何度も聞かれたのが、今の五人のうち、一人でも抜けたらどうなるのか、ということで。」又说：「最後に、開発の体制を厚くしてから、またいらしてくださいって。」\n推理：原因没有直接说，要推断：对方「何度も」问走一个人会怎样，男的说开发几乎靠木下一个人，最后对方要他们充实开发团队再来。销售额对方说「この段階なら気にしない」，技术评价很高，竞争问题讲了专利后「納得してくださった」。\n容易错：被否定的猜测（销售额）；已经解决的问题（竞争）。",
-   "en": "Evidence: The woman says: 「ただ、何度も聞かれたのが、今の五人のうち、一人でも抜けたらどうなるのか、ということで。」 and 「最後に、開発の体制を厚くしてから、またいらしてくださいって。」\nReasoning: The reason isn't stated outright and must be inferred: they asked 「何度も」 what happens if one person leaves, the man notes development rests almost entirely on Kinoshita, and they ended by saying to come back with a stronger development team. On sales they said 「この段階なら気にしない」, they rated the technology highly, and on rivals they were 「納得してくださった」 after hearing about the patents.\nTrap: a denied guess (sales); an issue already settled (competition)."
+   "zh": "依据：女的说：「ただ、何度も聞かれたのが、今の五人のうち、一人でも抜けたらどうなるのか、ということで。」又说：「最後に、開発の体制を厚くしてから、またいらしてくださいって。」\n推理：原因没有直接说，要推断：对方「何度も」问走一个人会怎样，男的说开发几乎靠木下一个人，最后对方要他们充实开发团队再来。销售额对方说「この段階なら気にしない」，技术评价很高，竞争问题讲了专利后「納得してくださった」。",
+   "en": "Evidence: The woman says: 「ただ、何度も聞かれたのが、今の五人のうち、一人でも抜けたらどうなるのか、ということで。」 and 「最後に、開発の体制を厚くしてから、またいらしてくださいって。」\nReasoning: The reason isn't stated outright and must be inferred: they asked 「何度も」 what happens if one person leaves, the man notes development rests almost entirely on Kinoshita, and they ended by saying to come back with a stronger development team. On sales they said 「この段階なら気にしない」, they rated the technology highly, and on rivals they were 「納得してくださった」 after hearing about the patents."
   },
   "wrong": [
    {
@@ -1334,8 +1334,8 @@
    },
    null,
    {
-    "zh": "技术他们「すごく評価して」。",
-    "en": "They rated the technology very highly."
+    "zh": "技术方面对方评价很高（「すごく評価して」），不是原因。",
+    "en": "They rated the technology very highly, so that isn't the reason."
    },
    {
     "zh": "竞争的问题讲了专利以后对方「納得してくださった」。",
@@ -1430,8 +1430,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「センサーを沈めた場所が、岸近くの浅いところだったんですよ。」「午後になると、ちょうど日が当たる。」\n推理：男的的两个猜测依次被排除：并排放了另一个传感器，「どちらも同じ値」，仪器正常；附近也没有会排水进来的设施。剩下的是位置：靠岸的浅水处下午被太阳晒，所以下个月要换到河中央——是安装位置不当。\n容易错：被否定的猜测（故障、排水）；和事实相反（两个传感器数值不同）。",
-   "en": "Evidence: The woman says: 「センサーを沈めた場所が、岸近くの浅いところだったんですよ。」 and 「午後になると、ちょうど日が当たる。」\nReasoning: The man's two guesses are ruled out in turn: a second sensor placed alongside gave 「どちらも同じ値」, so the equipment works, and nothing nearby discharges into the river. What's left is the location: shallow water near the bank gets the afternoon sun, so it will be moved mid-stream next month — the sensor was badly placed.\nTrap: denied guesses (a fault, wastewater); an option that contradicts the facts (the two sensors differ)."
+   "zh": "依据：女的说：「センサーを沈めた場所が、岸近くの浅いところだったんですよ。」「午後になると、ちょうど日が当たる。」\n推理：男的的两个猜测依次被排除：并排放了另一个传感器，「どちらも同じ値」，仪器正常；附近也没有会排水进来的设施。剩下的是位置：靠岸的浅水处下午被太阳晒，所以下个月要换到河中央——是安装位置不当。",
+   "en": "Evidence: The woman says: 「センサーを沈めた場所が、岸近くの浅いところだったんですよ。」 and 「午後になると、ちょうど日が当たる。」\nReasoning: The man's two guesses are ruled out in turn: a second sensor placed alongside gave 「どちらも同じ値」, so the equipment works, and nothing nearby discharges into the river. What's left is the location: shallow water near the bank gets the afternoon sun, so it will be moved mid-stream next month — the sensor was badly placed."
   },
   "wrong": [
    {
@@ -1542,8 +1542,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「ある小学校の先生が、授業で使ってみたら子どもたちが夢中になったって、ネットに書いてたんです。」「それが、教育関係の人たちの間で広まったみたいで。」\n推理：降价不是原因：「値下げの前の週から、もう伸び始めてた」。老师的帖子在教育界传开，买家多是三四十岁的家长。女的猜是怀旧，他用「それなら、二十代の後半が増えるはずなんですけどね」否定。续作还在「様子見」。\n容易错：被否定的猜测（降价、怀旧）。",
-   "en": "Evidence: The man says: 「ある小学校の先生が、授業で使ってみたら子どもたちが夢中になったって、ネットに書いてたんです。」 and 「それが、教育関係の人たちの間で広まったみたいで。」\nReasoning: The price cut isn't it: 「値下げの前の週から、もう伸び始めてた」. The teacher's post spread among educators, and buyers are mostly parents in their thirties and forties. She guesses nostalgia, and he rules it out with 「それなら、二十代の後半が増えるはずなんですけどね」. A sequel is still 「様子見」.\nTrap: denied guesses (the price cut, nostalgia)."
+   "zh": "依据：男的说：「ある小学校の先生が、授業で使ってみたら子どもたちが夢中になったって、ネットに書いてたんです。」「それが、教育関係の人たちの間で広まったみたいで。」\n推理：降价不是原因：「値下げの前の週から、もう伸び始めてた」。老师的帖子在教育界传开，买家多是三四十岁的家长。女的猜是怀旧，他用「それなら、二十代の後半が増えるはずなんですけどね」否定。续作还在「様子見」。",
+   "en": "Evidence: The man says: 「ある小学校の先生が、授業で使ってみたら子どもたちが夢中になったって、ネットに書いてたんです。」 and 「それが、教育関係の人たちの間で広まったみたいで。」\nReasoning: The price cut isn't it: 「値下げの前の週から、もう伸び始めてた」. The teacher's post spread among educators, and buyers are mostly parents in their thirties and forties. She guesses nostalgia, and he rules it out with 「それなら、二十代の後半が増えるはずなんですけどね」. A sequel is still 「様子見」."
   },
   "wrong": [
    {
@@ -1642,8 +1642,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的转述住客的话：「夕食のあとは、何もすることがなかった」，又说：「町の飲食店も、ほとんどが六時には閉まってしまいますし。」\n推理：白天游客够多，问题是傍晚都去邻市住。男的猜住宿少，她说旅馆平日也「半分以上空いている」；住客说晚饭后没事做，饭店六点关门——晚上没有可消遣的地方。交通和宣传她也一一否定：八成开车来，白天的人流说明镇子已经够有名。\n容易错：被否定的猜测（住宿、交通、宣传）。",
-   "en": "Evidence: The woman reports a guest saying 「夕食のあとは、何もすることがなかった」, and adds 「町の飲食店も、ほとんどが六時には閉まってしまいますし。」\nReasoning: Daytime visitors are plentiful; the problem is they leave for the next city's hotels by evening. He guesses too few inns, but she says they are 「半分以上空いている」 even on weekdays; guests have nothing to do after dinner and restaurants close at six — there's nothing for the evening. She also dismisses transport and publicity: 80% come by car, and the daytime crowds show the town is well known.\nTrap: denied guesses (lodging, transport, publicity)."
+   "zh": "依据：女的转述住客的话：「夕食のあとは、何もすることがなかった」，又说：「町の飲食店も、ほとんどが六時には閉まってしまいますし。」\n推理：白天游客够多，问题是傍晚都去邻市住。男的猜住宿少，她说旅馆平日也「半分以上空いている」；住客说晚饭后没事做，饭店六点关门——晚上没有可消遣的地方。交通和宣传她也一一否定：八成开车来，白天的人流说明镇子已经够有名。",
+   "en": "Evidence: The woman reports a guest saying 「夕食のあとは、何もすることがなかった」, and adds 「町の飲食店も、ほとんどが六時には閉まってしまいますし。」\nReasoning: Daytime visitors are plentiful; the problem is they leave for the next city's hotels by evening. He guesses too few inns, but she says they are 「半分以上空いている」 even on weekdays; guests have nothing to do after dinner and restaurants close at six — there's nothing for the evening. She also dismisses transport and publicity: 80% come by car, and the daytime crowds show the town is well known."
   },
   "wrong": [
    null,
@@ -1742,8 +1742,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的一开始就说：「毎年発表の前になると、チームの中で手柄の取り合いみたいになってたらしいの。」最后说公司改成看「チーム全体の成果」。\n推理：钱的事「出なかった」；偏向销售「選び方を変えれば済む」。真正的原因是奖项让大家抢功劳，幕后的人被埋没——团队合作被破坏了，得奖者团队里的人辞职也是这个结果。\n容易错：后面讲的辞职最抢耳，但辞职的是得奖者周围的人，不是得奖者本人，而且那是结果。",
-   "en": "Evidence: She says at the start 「毎年発表の前になると、チームの中で手柄の取り合いみたいになってたらしいの。」 and ends with the switch to 「チーム全体の成果」.\nReasoning: Money 「出なかった」, and the sales bias 「選び方を変えれば済む」. The real reason is that the award made people grab credit and buried the behind-the-scenes staff — teamwork broke down; people quitting from winners' teams is a result of that.\nTrap: the quitting is the most striking detail, but it was the people around the winners, not the winners themselves, and it is a consequence."
+   "zh": "依据：女的一开始就说：「毎年発表の前になると、チームの中で手柄の取り合いみたいになってたらしいの。」最后说公司改成看「チーム全体の成果」。\n推理：钱的事「出なかった」；偏向销售「選び方を変えれば済む」。真正的原因是奖项让大家抢功劳，幕后的人被埋没——团队合作被破坏了，得奖者团队里的人辞职也是这个结果。",
+   "en": "Evidence: She says at the start 「毎年発表の前になると、チームの中で手柄の取り合いみたいになってたらしいの。」 and ends with the switch to 「チーム全体の成果」.\nReasoning: Money 「出なかった」, and the sales bias 「選び方を変えれば済む」. The real reason is that the award made people grab credit and buried the behind-the-scenes staff — teamwork broke down; people quitting from winners' teams is a result of that."
   },
   "wrong": [
    {
@@ -1842,8 +1842,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「ある常連の方に、こう言われたんです。『解説を聞いていると、つい名前を覚えようとしてしまって、星を見ている気がしない』って。」\n推理：主持人猜人手不够，她否定了。常客觉得听解说就想记名字，没在看星星；她也反省夺走了客人静静看天的时间。下班族来得多是开始以后「意外にも」出现的结果，不是理由。\n容易错：把结果当理由；把常客的话听成「想记名字的人少了」。",
-   "en": "Evidence: She says 「ある常連の方に、こう言われたんです。『解説を聞いていると、つい名前を覚えようとしてしまって、星を見ている気がしない』って。」\nReasoning: She denies the announcer's guess about staff. A regular felt the commentary made him memorise names instead of looking at the stars, and she reflects that they'd been taking away quiet gazing time. The after-work crowd came 「意外にも」 afterwards — a result, not the reason.\nTrap: taking the result for the reason; mishearing the regular's remark as fewer people wanting names."
+   "zh": "依据：女的说：「ある常連の方に、こう言われたんです。『解説を聞いていると、つい名前を覚えようとしてしまって、星を見ている気がしない』って。」\n推理：主持人猜人手不够，她否定了。常客觉得听解说就想记名字，没在看星星；她也反省夺走了客人静静看天的时间。下班族来得多是开始以后「意外にも」出现的结果，不是理由。",
+   "en": "Evidence: She says 「ある常連の方に、こう言われたんです。『解説を聞いていると、つい名前を覚えようとしてしまって、星を見ている気がしない』って。」\nReasoning: She denies the announcer's guess about staff. A regular felt the commentary made him memorise names instead of looking at the stars, and she reflects that they'd been taking away quiet gazing time. The after-work crowd came 「意外にも」 afterwards — a result, not the reason."
   },
   "wrong": [
    null,
@@ -1942,8 +1942,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「ただ、笑いのほうは、そうはいかなくてね。」「お客さんは、私が言い終わる前にオチを先に読んで笑っちゃう。」\n推理：翻译「ほとんど心配いりませんでした」，和服和长屋「すっと受け入れてもらえる」。问题是字幕整句先出，观众提前读到包袱，笑声和他留的停顿错开。最后靠手动打包袱的字幕解决。\n容易错：字幕负责人是解决办法里出现的人，不是难题。",
-   "en": "Evidence: He says 「ただ、笑いのほうは、そうはいかなくてね。」 and 「お客さんは、私が言い終わる前にオチを先に読んで笑っちゃう。」\nReasoning: Translation was 「ほとんど心配いりませんでした」 and kimonos and tenements were 「すっと受け入れてもらえる」. The trouble was whole-sentence subtitles letting people read the punchline early, so the laughs missed his pause. Hand-timed punchline subtitles fixed it.\nTrap: the subtitle operator appears in the solution, not as the problem."
+   "zh": "依据：男的说：「ただ、笑いのほうは、そうはいかなくてね。」「お客さんは、私が言い終わる前にオチを先に読んで笑っちゃう。」\n推理：翻译「ほとんど心配いりませんでした」，和服和长屋「すっと受け入れてもらえる」。问题是字幕整句先出，观众提前读到包袱，笑声和他留的停顿错开。最后靠手动打包袱的字幕解决。",
+   "en": "Evidence: He says 「ただ、笑いのほうは、そうはいかなくてね。」 and 「お客さんは、私が言い終わる前にオチを先に読んで笑っちゃう。」\nReasoning: Translation was 「ほとんど心配いりませんでした」 and kimonos and tenements were 「すっと受け入れてもらえる」. The trouble was whole-sentence subtitles letting people read the punchline early, so the laughs missed his pause. Hand-timed punchline subtitles fixed it."
   },
   "wrong": [
    {
@@ -2054,8 +2054,8 @@
    }
   },
   "why": {
-   "zh": "依据：店长说：「売れ始めたのって、置き場所を野菜のコーナーから精肉の棚の隣に移してからじゃない？」又说买肉的人顺手把炒菜用的蔬菜放进篮子。\n推理：独居的人「前から」就多，解释不了突然增长；降价只有十日元，隔壁更便宜。销量开始涨的时间和挪到鲜肉旁边的时间一致，客人和猪肉一起买。\n容易错：火锅蔬菜是接下来才打算做的事。",
-   "en": "Evidence: The manager says 「売れ始めたのって、置き場所を野菜のコーナーから精肉の棚の隣に移してからじゃない？」 and that people pick up stir-fry vegetables with the meat.\nReasoning: Single households were common 「前から」, so they can't explain a sudden rise; the cut was only ten yen and the shop next door is cheaper. The rise lines up with the move next to the meat, and people buy them with pork.\nTrap: hotpot vegetables are only a plan for the future."
+   "zh": "依据：店长说：「売れ始めたのって、置き場所を野菜のコーナーから精肉の棚の隣に移してからじゃない？」又说买肉的人顺手把炒菜用的蔬菜放进篮子。\n推理：独居的人「前から」就多，解释不了突然增长；降价只有十日元，隔壁更便宜。销量开始涨的时间和挪到鲜肉旁边的时间一致，客人和猪肉一起买。",
+   "en": "Evidence: The manager says 「売れ始めたのって、置き場所を野菜のコーナーから精肉の棚の隣に移してからじゃない？」 and that people pick up stir-fry vegetables with the meat.\nReasoning: Single households were common 「前から」, so they can't explain a sudden rise; the cut was only ten yen and the shop next door is cheaper. The rise lines up with the move next to the meat, and people buy them with pork."
   },
   "wrong": [
    {
@@ -2154,13 +2154,13 @@
    }
   },
   "why": {
-   "zh": "依据：建筑师说：「予定していなかった本につい手が伸びる、そういう寄り道を、建物で起こしたかったんです。」\n推理：显得宽敞她明确说「狙いはそこではない」；职员容易管理是「ありがたいおまけ」；回响靠天花板材料解决，跟不设墙无关。真正的目的是让人路过别的书架，遇到原本没打算借的书。\n容易错：「おまけ」＝附带的好处，不是理由。",
-   "en": "Evidence: The architect says 「予定していなかった本につい手が伸びる、そういう寄り道を、建物で起こしたかったんです。」\nReasoning: She says plainly that spaciousness is 「狙いはそこではない」; easier supervision was 「ありがたいおまけ」; echo is handled by the ceiling, not by the open plan. The aim was for people to pass other shelves and find books they hadn't planned on.\nTrap: 「おまけ」 = a side benefit, not the reason."
+   "zh": "依据：建筑师说：「予定していなかった本につい手が伸びる、そういう寄り道を、建物で起こしたかったんです。」\n推理：显得宽敞她明确说「狙いはそこではない」；职员容易管理是「ありがたいおまけ」；回响靠天花板材料解决，跟不设墙无关。真正的目的是让人路过别的书架，遇到原本没打算借的书。",
+   "en": "Evidence: The architect says 「予定していなかった本につい手が伸びる、そういう寄り道を、建物で起こしたかったんです。」\nReasoning: She says plainly that spaciousness is 「狙いはそこではない」; easier supervision was 「ありがたいおまけ」; echo is handled by the ceiling, not by the open plan. The aim was for people to pass other shelves and find books they hadn't planned on."
   },
   "wrong": [
    {
-    "zh": "她说「狙いはそこではないんです」。",
-    "en": "She says 「狙いはそこではないんです」."
+    "zh": "显得宽敞她很高兴，但说「狙いはそこではないんです」。",
+    "en": "She is glad it feels spacious but says 「狙いはそこではないんです」."
    },
    null,
    {
@@ -2254,8 +2254,8 @@
    }
   },
   "why": {
-   "zh": "依据：指挥说：「隣の人の息づかいや、向こうのチェロの弓の動きを感じていれば、棒なんかなくても合うんです。」最后说放下指挥棒后大家「ほかのパートに耳を澄ませ始める。あれを、いつもやってほしいんです」。\n推理：准确是各自在家练的事；平衡「は、結果なんですよ」；「私の棒を見ろ」是不顺利的乐团的做法。他要的是一边感受、倾听周围的人一边演奏。\n容易错：把「棒を見ろ」当成他的要求，其实他是在批评。",
-   "en": "Evidence: He says 「隣の人の息づかいや、向こうのチェロの弓の動きを感じていれば、棒なんかなくても合うんです。」 and, after lowering the baton, that players 「ほかのパートに耳を澄ませ始める。あれを、いつもやってほしいんです」.\nReasoning: Accuracy is home practice; balance 「は、結果なんですよ」; 'watch my baton' is what failing orchestras do. He wants them to play while sensing and listening to those around them.\nTrap: taking 「棒を見ろ」 as his demand — he's criticising it."
+   "zh": "依据：指挥说：「隣の人の息づかいや、向こうのチェロの弓の動きを感じていれば、棒なんかなくても合うんです。」最后说放下指挥棒后大家「ほかのパートに耳を澄ませ始める。あれを、いつもやってほしいんです」。\n推理：准确是各自在家练的事；平衡「は、結果なんですよ」；「私の棒を見ろ」是不顺利的乐团的做法。他要的是一边感受、倾听周围的人一边演奏。",
+   "en": "Evidence: He says 「隣の人の息づかいや、向こうのチェロの弓の動きを感じていれば、棒なんかなくても合うんです。」 and, after lowering the baton, that players 「ほかのパートに耳を澄ませ始める。あれを、いつもやってほしいんです」.\nReasoning: Accuracy is home practice; balance 「は、結果なんですよ」; 'watch my baton' is what failing orchestras do. He wants them to play while sensing and listening to those around them."
   },
   "wrong": [
    {
@@ -2354,8 +2354,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的一开始就说住公寓「夜に弾くと下の階から苦情が来るし、昼間は仕事でしょう」，现在的房子「一番近い家まで五十メートルくらいある」。\n推理：她重新开始拉大提琴，白天上班只能晚上练，公寓会被投诉，所以选了离邻居远的房子，还跟房东确认过能拉琴。房租「ほとんど変わらない」；院子「草取りが大変なだけ」。\n容易错：「夜の静けさ」是住进去后「びっくりした」的发现，不是搬家的理由；离邻居远是为了不打扰别人。",
-   "en": "Evidence: She says right away that in the flat 「夜に弾くと下の階から苦情が来るし、昼間は仕事でしょう」, while the house is 「一番近い家まで五十メートルくらいある」.\nReasoning: She has taken up the cello again, can only practise at night, and got complaints in the flat — hence a house far from neighbours, with the landlord's OK to play. The rent is 「ほとんど変わらない」; the garden is 「草取りが大変なだけ」.\nTrap: 「夜の静けさ」 is something that surprised her after moving in, not why she moved; the distance is about not disturbing others."
+   "zh": "依据：女的一开始就说住公寓「夜に弾くと下の階から苦情が来るし、昼間は仕事でしょう」，现在的房子「一番近い家まで五十メートルくらいある」。\n推理：她重新开始拉大提琴，白天上班只能晚上练，公寓会被投诉，所以选了离邻居远的房子，还跟房东确认过能拉琴。房租「ほとんど変わらない」；院子「草取りが大変なだけ」。",
+   "en": "Evidence: She says right away that in the flat 「夜に弾くと下の階から苦情が来るし、昼間は仕事でしょう」, while the house is 「一番近い家まで五十メートルくらいある」.\nReasoning: She has taken up the cello again, can only practise at night, and got complaints in the flat — hence a house far from neighbours, with the landlord's OK to play. The rent is 「ほとんど変わらない」; the garden is 「草取りが大変なだけ」."
   },
   "wrong": [
    null,
@@ -2454,8 +2454,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的一开始就说：「始めたときからずっと神経を使っているのは、ハチそのものより、むしろ周りの方々のほうなんです。」最后说「一度でも嫌だと思われたら、ここでは続けられませんから」。\n推理：蜜去年比预想的还多；生病「まず大丈夫」。他一直在意的是邻居一听有蜂就紧张，所以平时请邻居来参观、分蜜。被蜇的骚动其实是胡蜂，这件事反而说明让邻居安心的努力起了作用。\n容易错：被蜇的骚动最抢耳，但那是胡蜂，蜜蜂「まず刺しません」。",
-   "en": "Evidence: He says at the outset 「始めたときからずっと神経を使っているのは、ハチそのものより、むしろ周りの方々のほうなんです。」 and ends with 「一度でも嫌だと思われたら、ここでは続けられませんから」.\nReasoning: Honey beat expectations last year; illness is 「まず大丈夫」. What he has always minded is neighbours tensing up at the thought of bees, so he invites them up and hands out honey. The stinging fuss was a hornet, and it shows his efforts to reassure neighbours paid off.\nTrap: the stinging incident is the most striking detail, but it was a hornet; honeybees 「まず刺しません」."
+   "zh": "依据：男的一开始就说：「始めたときからずっと神経を使っているのは、ハチそのものより、むしろ周りの方々のほうなんです。」最后说「一度でも嫌だと思われたら、ここでは続けられませんから」。\n推理：蜜去年比预想的还多；生病「まず大丈夫」。他一直在意的是邻居一听有蜂就紧张，所以平时请邻居来参观、分蜜。被蜇的骚动其实是胡蜂，这件事反而说明让邻居安心的努力起了作用。",
+   "en": "Evidence: He says at the outset 「始めたときからずっと神経を使っているのは、ハチそのものより、むしろ周りの方々のほうなんです。」 and ends with 「一度でも嫌だと思われたら、ここでは続けられませんから」.\nReasoning: Honey beat expectations last year; illness is 「まず大丈夫」. What he has always minded is neighbours tensing up at the thought of bees, so he invites them up and hands out honey. The stinging fuss was a hornet, and it shows his efforts to reassure neighbours paid off."
   },
   "wrong": [
    {
@@ -2566,8 +2566,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「部長が相変わらず、大事な指示は全部メールで送ってくるでしょう。」「上の人が使い始めない限り、変わらないと思うな。」\n推理：用法大家「すぐ覚えた」；通知「自分で切れる」。部长还用邮件发重要指示，大家只好一整天开着邮件，两边看太麻烦就退回邮件。根源是上面的人不换联络方式。\n容易错：「若い人」只是用来说明大家都会用，不是原因。",
-   "en": "Evidence: He says 「部長が相変わらず、大事な指示は全部メールで送ってくるでしょう。」 and 「上の人が使い始めない限り、変わらないと思うな。」\nReasoning: Everyone 「すぐ覚えた」 how to use it, and notifications 「自分で切れる」. Because the manager still sends key instructions by email, people keep email open all day and drift back to it. The root is that those at the top haven't switched.\nTrap: 「若い人」 is mentioned only to show people can use it, not as the cause."
+   "zh": "依据：男的说：「部長が相変わらず、大事な指示は全部メールで送ってくるでしょう。」「上の人が使い始めない限り、変わらないと思うな。」\n推理：用法大家「すぐ覚えた」；通知「自分で切れる」。部长还用邮件发重要指示，大家只好一整天开着邮件，两边看太麻烦就退回邮件。根源是上面的人不换联络方式。",
+   "en": "Evidence: He says 「部長が相変わらず、大事な指示は全部メールで送ってくるでしょう。」 and 「上の人が使い始めない限り、変わらないと思うな。」\nReasoning: Everyone 「すぐ覚えた」 how to use it, and notifications 「自分で切れる」. Because the manager still sends key instructions by email, people keep email open all day and drift back to it. The root is that those at the top haven't switched."
   },
   "wrong": [
    {
@@ -2678,8 +2678,8 @@
    }
   },
   "why": {
-   "zh": "依据：老师说：「その三十人、全員あなたのサークルの仲間でしょう。それなのに、結論で『今の大学生は』と書いている。」「調べた範囲から言えることと、あなたが言いたいことが、ずれているの。」\n推理：引用量「必要ですよ」；三十人「十分です」；表格「見やすかった」。问题是只调查了社团伙伴，却把结论推到所有大学生。\n容易错：「多くはないけど」只是先承认，后面马上说足够。",
-   "en": "Evidence: She says 「その三十人、全員あなたのサークルの仲間でしょう。それなのに、結論で『今の大学生は』と書いている。」 and 「調べた範囲から言えることと、あなたが言いたいことが、ずれているの。」\nReasoning: The quotations are 「必要ですよ」, thirty is 「十分です」, and the tables were 「見やすかった」. The problem is surveying only club friends but concluding about all students.\nTrap: 「多くはないけど」 is just a concession before she says it's enough."
+   "zh": "依据：老师说：「その三十人、全員あなたのサークルの仲間でしょう。それなのに、結論で『今の大学生は』と書いている。」「調べた範囲から言えることと、あなたが言いたいことが、ずれているの。」\n推理：引用量「必要ですよ」；三十人「十分です」；表格「見やすかった」。问题是只调查了社团伙伴，却把结论推到所有大学生。",
+   "en": "Evidence: She says 「その三十人、全員あなたのサークルの仲間でしょう。それなのに、結論で『今の大学生は』と書いている。」 and 「調べた範囲から言えることと、あなたが言いたいことが、ずれているの。」\nReasoning: The quotations are 「必要ですよ」, thirty is 「十分です」, and the tables were 「見やすかった」. The problem is surveying only club friends but concluding about all students."
   },
   "wrong": [
    null,
@@ -2688,8 +2688,8 @@
     "en": "That many quotations 「必要ですよ」, and sources were cited."
    },
    {
-    "zh": "三十人「学部のレポートとしては十分です」。",
-    "en": "Thirty is 「学部のレポートとしては十分です」."
+    "zh": "老师虽说三十人「多くはないけど」，接着就说「学部のレポートとしては十分です」。",
+    "en": "She grants thirty is 「多くはないけど」, then says it is 「学部のレポートとしては十分です」."
    },
    {
     "zh": "表格「見やすかった」，正好相反。",
@@ -2778,8 +2778,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「だから一枚一枚が惜しくて、撮る前にその方とじっくり話すようになったんです。」「写真が変わったのは、そこからですね。」\n推理：色调数码「かなり近いものが出せる」；她是数码一代，「懐かしいという感覚はない」。胶片张数少，舍不得浪费，所以拍前和对方好好聊、等对方表情放松，这才是她用胶片的原因。\n容易错：胶片「お金もかかる」，比数码贵，不是省钱。",
-   "en": "Evidence: She says 「だから一枚一枚が惜しくて、撮る前にその方とじっくり話すようになったんです。」 and 「写真が変わったのは、そこからですね。」\nReasoning: Digital 「かなり近いものが出せる」 colour-wise, and as a digital-native she has 「懐かしいという感覚はない」. With few frames, she won't waste them, so she talks with her subjects and waits for them to relax — that's why she uses film.\nTrap: film 「お金もかかる」 — it costs more, not less."
+   "zh": "依据：女的说：「だから一枚一枚が惜しくて、撮る前にその方とじっくり話すようになったんです。」「写真が変わったのは、そこからですね。」\n推理：色调数码「かなり近いものが出せる」；她是数码一代，「懐かしいという感覚はない」。胶片张数少，舍不得浪费，所以拍前和对方好好聊、等对方表情放松，这才是她用胶片的原因。",
+   "en": "Evidence: She says 「だから一枚一枚が惜しくて、撮る前にその方とじっくり話すようになったんです。」 and 「写真が変わったのは、そこからですね。」\nReasoning: Digital 「かなり近いものが出せる」 colour-wise, and as a digital-native she has 「懐かしいという感覚はない」. With few frames, she won't waste them, so she talks with her subjects and waits for them to relax — that's why she uses film."
   },
   "wrong": [
    {
@@ -2878,8 +2878,8 @@
    }
   },
   "why": {
-   "zh": "依据：馆长说：「名簿を見るとね、去年来た人がまた来てるんだよ。」又说今年按机型分五人小组、配志愿者，「置いていかれる人がいなくなったから」很多人要带朋友来。\n推理：看了传单来的人「案外少ない」；增加次数「それもあるかもしれない」，但他接着讲的是老学员回来了。以前一个人卡住全班等，有人中途回去；现在分成小组，没人掉队，老学员回头还带朋友。\n容易错：带朋友来是学员自己说的，不是馆方请求的。",
-   "en": "Evidence: The director says 「名簿を見るとね、去年来た人がまた来てるんだよ。」 and that with same-model groups of five and a volunteer each, 「置いていかれる人がいなくなったから」 many plan to bring friends.\nReasoning: Few came via the flyer (「案外少ない」); more sessions 「それもあるかもしれない」, but he goes on to returning participants. Before, one person stuck meant the whole class waited and some left; now, in small groups, no one falls behind, so people return and bring friends.\nTrap: bringing friends is the participants' own idea, not something the centre asked for."
+   "zh": "依据：馆长说：「名簿を見るとね、去年来た人がまた来てるんだよ。」又说今年按机型分五人小组、配志愿者，「置いていかれる人がいなくなったから」很多人要带朋友来。\n推理：看了传单来的人「案外少ない」；增加次数「それもあるかもしれない」，但他接着讲的是老学员回来了。以前一个人卡住全班等，有人中途回去；现在分成小组，没人掉队，老学员回头还带朋友。",
+   "en": "Evidence: The director says 「名簿を見るとね、去年来た人がまた来てるんだよ。」 and that with same-model groups of five and a volunteer each, 「置いていかれる人がいなくなったから」 many plan to bring friends.\nReasoning: Few came via the flyer (「案外少ない」); more sessions 「それもあるかもしれない」, but he goes on to returning participants. Before, one person stuck meant the whole class waited and some left; now, in small groups, no one falls behind, so people return and bring friends."
   },
   "wrong": [
    {
@@ -2978,8 +2978,8 @@
    }
   },
   "why": {
-   "zh": "依据：理事说：「今年度から変えたのは店の決め方でね。これまでは商店街の加盟店しか出られなかったのを、近隣の農家や学生の団体にも開放したんだ。」\n推理：女的猜了三样：地点（「見送った」）、次数（「変わらない」）、开始时间（「公式には九時のまま」），都被否定。真正变的是谁可以出摊，选项把「加盟店しか→農家や学生にも開放」概括成“可以出摊的人的范围”。\n容易错：时间的调整只是明年的设想。",
-   "en": "Evidence: The board member says 「今年度から変えたのは店の決め方でね。これまでは商店街の加盟店しか出られなかったのを、近隣の農家や学生の団体にも開放したんだ。」\nReasoning: She guesses three things — place (「見送った」), frequency (「変わらない」), starting time (「公式には九時のまま」) — and each is denied. What changed is who may run a stall; the option sums up 'members only → opened to farmers and students' as the range of people allowed.\nTrap: changing the hours is only an idea for next year."
+   "zh": "依据：理事说：「今年度から変えたのは店の決め方でね。これまでは商店街の加盟店しか出られなかったのを、近隣の農家や学生の団体にも開放したんだ。」\n推理：女的猜了三样：地点（「見送った」）、次数（「変わらない」）、开始时间（「公式には九時のまま」），都被否定。真正变的是谁可以出摊，选项把「加盟店しか→農家や学生にも開放」概括成“可以出摊的人的范围”。",
+   "en": "Evidence: The board member says 「今年度から変えたのは店の決め方でね。これまでは商店街の加盟店しか出られなかったのを、近隣の農家や学生の団体にも開放したんだ。」\nReasoning: She guesses three things — place (「見送った」), frequency (「変わらない」), starting time (「公式には九時のまま」) — and each is denied. What changed is who may run a stall; the option sums up 'members only → opened to farmers and students' as the range of people allowed."
   },
   "wrong": [
    {
@@ -2992,8 +2992,8 @@
    },
    null,
    {
-    "zh": "只是农户自己早来，「公式には九時のまま」。",
-    "en": "The farmers just come early; 「公式には九時のまま」."
+    "zh": "只是农户自己早来，「公式には九時のまま」；调整时间只是明年的设想。",
+    "en": "The farmers just come early; 「公式には九時のまま」, and changing the hours is only an idea for next year."
    }
   ],
   "traps": [
@@ -3066,8 +3066,8 @@
    }
   },
   "why": {
-   "zh": "依据：「その判断を、人の期待に流されずにくだせることが、何より問われる仕事だと思っています。」\n推理：「何より問われる」＝最重要。「その判断」指前面的「迷ったら下りる」，也就是折返的决断。体力、技术、看天气用「もちろん」「当たり前」带过，是前提而不是重点；「ただ」之后才是她的主张。\n容易错：信任关系是「あとから付いてくるもの」，是结果，不是最重要的事。",
-   "en": "Evidence: 「その判断を、人の期待に流されずにくだせることが、何より問われる仕事だと思っています。」\nReasoning: 「何より問われる」 means 'matters above all'. 「その判断」 points back to 「迷ったら下りる」 — the decision to turn back. Stamina, technique and weather knowledge are waved through with 「もちろん」 and 「当たり前」: prerequisites, not the point; her claim comes after 「ただ」.\nTrap: trust is 「あとから付いてくるもの」 — a result, not the priority."
+   "zh": "依据：「その判断を、人の期待に流されずにくだせることが、何より問われる仕事だと思っています。」\n推理：「何より問われる」＝最重要。「その判断」指前面的「迷ったら下りる」，也就是折返的决断。体力、技术、看天气用「もちろん」「当たり前」带过，是前提而不是重点；「ただ」之后才是她的主张。",
+   "en": "Evidence: 「その判断を、人の期待に流されずにくだせることが、何より問われる仕事だと思っています。」\nReasoning: 「何より問われる」 means 'matters above all'. 「その判断」 points back to 「迷ったら下りる」 — the decision to turn back. Stamina, technique and weather knowledge are waved through with 「もちろん」 and 「当たり前」: prerequisites, not the point; her claim comes after 「ただ」."
   },
   "wrong": [
    {
@@ -3178,8 +3178,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说镇上有让考虑移居的人「空き家で短い間暮らしてみてもらう事業」，然后说：「それに申し込んだよ。」\n推理：卖——「買い手はまずつかない」；租——修水路要十年以上才回本；拆——税金「跳ね上がる」。最后申请了镇上的试住项目，选项把「短い間暮らしてみてもらう」换成了「試しに住んでもらう」。\n容易错：弟弟原来主张不动它，但已经被说服，房子并不是原样放着。",
-   "en": "Evidence: He describes the town's scheme for would-be newcomers 「空き家で短い間暮らしてみてもらう事業」 and says 「それに申し込んだよ。」\nReasoning: Selling — 「買い手はまずつかない」; letting — over ten years to recoup the plumbing; demolishing — the tax 「跳ね上がる」. He signed up for the town's trial-stay scheme; the option rephrases 「短い間暮らしてみてもらう」 as 「試しに住んでもらう」.\nTrap: the brother wanted it left alone, but he was persuaded — the house is not being left as it is."
+   "zh": "依据：男的说镇上有让考虑移居的人「空き家で短い間暮らしてみてもらう事業」，然后说：「それに申し込んだよ。」\n推理：卖——「買い手はまずつかない」；租——修水路要十年以上才回本；拆——税金「跳ね上がる」。最后申请了镇上的试住项目，选项把「短い間暮らしてみてもらう」换成了「試しに住んでもらう」。",
+   "en": "Evidence: He describes the town's scheme for would-be newcomers 「空き家で短い間暮らしてみてもらう事業」 and says 「それに申し込んだよ。」\nReasoning: Selling — 「買い手はまずつかない」; letting — over ten years to recoup the plumbing; demolishing — the tax 「跳ね上がる」. He signed up for the town's trial-stay scheme; the option rephrases 「短い間暮らしてみてもらう」 as 「試しに住んでもらう」."
   },
   "wrong": [
    null,
@@ -3267,8 +3267,8 @@
    }
   },
   "why": {
-   "zh": "依据：「その仕掛け自体は……半分ほど読んだところで見当がついてしまうでしょう。」「それでもこの作品を推したいのは、文章の力ゆえです。」\n推理：对结局的机关和情节是负面评价（猜得到、中段拖沓），对文字和描写是正面评价（短短的描写就让景象浮现）。所以是“机关平常，描写出色”。\n容易错：把褒贬的对象调换；「肩透かしを食うかもしれません」只针对冲着宣传语来的读者，他整体上是推荐的。",
-   "en": "Evidence: 「その仕掛け自体は……半分ほど読んだところで見当がついてしまうでしょう。」 and 「それでもこの作品を推したいのは、文章の力ゆえです。」\nReasoning: He is negative about the twist and the plot (guessable, slow in the middle) and positive about the prose and description (a scene conjured in a few words). So: ordinary device, outstanding description.\nTrap: swapping what is praised and what is criticised; 「肩透かしを食うかもしれません」 applies only to readers drawn by the advertising — overall he recommends it."
+   "zh": "依据：「その仕掛け自体は……半分ほど読んだところで見当がついてしまうでしょう。」「それでもこの作品を推したいのは、文章の力ゆえです。」\n推理：对结局的机关和情节是负面评价（猜得到、中段拖沓），对文字和描写是正面评价（短短的描写就让景象浮现）。所以是“机关平常，描写出色”。",
+   "en": "Evidence: 「その仕掛け自体は……半分ほど読んだところで見当がついてしまうでしょう。」 and 「それでもこの作品を推したいのは、文章の力ゆえです。」\nReasoning: He is negative about the twist and the plot (guessable, slow in the middle) and positive about the prose and description (a scene conjured in a few words). So: ordinary device, outstanding description."
   },
   "wrong": [
    {
@@ -3281,8 +3281,8 @@
     "en": "He says the plot 「やや間延びしています」 in the middle, so not everything is polished."
    },
    {
-    "zh": "他说「この作品を推したい」，还期待作者的下一部。",
-    "en": "He says 「この作品を推したい」 and looks forward to the writer's next book."
+    "zh": "他说「この作品を推したい」，还期待作者的下一部；「肩透かしを食うかもしれません」只是对冲着宣传语来读的人说的。",
+    "en": "He says 「この作品を推したい」 and looks forward to the next book; 「肩透かしを食うかもしれません」 is only for readers drawn by the advertising."
    }
   ],
   "traps": [
@@ -3380,8 +3380,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「月ごとの客数と単価の見通しを、裏づけと一緒に出していただければ、審査に回します。」\n推理：「〜ていただければ、審査に回します」就是条件。现在的资料只写「増加が期待できる」，缺的是带依据的具体数字。营业额下滑「問題にしない」，担保「十分です」，保证人「立てていただかなくて結構です」。\n容易错：其余三项都是谈到了但已经没有问题的事项。",
-   "en": "Evidence: She says 「月ごとの客数と単価の見通しを、裏づけと一緒に出していただければ、審査に回します。」\nReasoning: 「〜ていただければ、審査に回します」 states the condition. The papers say only 「増加が期待できる」; what's missing is concrete, supported figures. The fall in sales will not be treated as a problem, the collateral is 「十分です」, and a guarantor is not needed.\nTrap: the other three are all raised, and all already settled."
+   "zh": "依据：女的说：「月ごとの客数と単価の見通しを、裏づけと一緒に出していただければ、審査に回します。」\n推理：「〜ていただければ、審査に回します」就是条件。现在的资料只写「増加が期待できる」，缺的是带依据的具体数字。营业额下滑「問題にしない」，担保「十分です」，保证人「立てていただかなくて結構です」。",
+   "en": "Evidence: She says 「月ごとの客数と単価の見通しを、裏づけと一緒に出していただければ、審査に回します。」\nReasoning: 「〜ていただければ、審査に回します」 states the condition. The papers say only 「増加が期待できる」; what's missing is concrete, supported figures. The fall in sales will not be treated as a problem, the collateral is 「十分です」, and a guarantor is not needed."
   },
   "wrong": [
    null,
@@ -3468,8 +3468,8 @@
    }
   },
   "why": {
-   "zh": "依据：「きっかけは、田んぼの脇の水路です。」「この子は、私の知っている田んぼを知らずに育つのかと思うと、たまらなくなりましてね。」\n推理：小时候水渠里有很多鱼，带孩子去时却什么都没有。他不忍心孩子不知道那样的稻田，才开始不用农药——选项把这份心情概括成“想给孩子留下有生物的稻田”。环境、高价是别人的猜测，他说开始时「そんな立派な考えはありませんでした」。\n容易错：父亲不是劝他改，而是骂他「道楽でやるな」。",
-   "en": "Evidence: 「きっかけは、田んぼの脇の水路です。」 and 「この子は、私の知っている田んぼを知らずに育つのかと思うと、たまらなくなりましてね。」\nReasoning: The ditch teemed with fish in his boyhood, but was empty when he took his child. He couldn't bear his child not knowing such a paddy — which the option sums up as wanting to leave the child a paddy with living things. The environment and higher prices are other people's guesses; at the start, he says, 「そんな立派な考えはありませんでした」.\nTrap: his father didn't urge the change — he scolded him (「道楽でやるな」)."
+   "zh": "依据：「きっかけは、田んぼの脇の水路です。」「この子は、私の知っている田んぼを知らずに育つのかと思うと、たまらなくなりましてね。」\n推理：小时候水渠里有很多鱼，带孩子去时却什么都没有。他不忍心孩子不知道那样的稻田，才开始不用农药——选项把这份心情概括成“想给孩子留下有生物的稻田”。环境、高价是别人的猜测，他说开始时「そんな立派な考えはありませんでした」。",
+   "en": "Evidence: 「きっかけは、田んぼの脇の水路です。」 and 「この子は、私の知っている田んぼを知らずに育つのかと思うと、たまらなくなりましてね。」\nReasoning: The ditch teemed with fish in his boyhood, but was empty when he took his child. He couldn't bear his child not knowing such a paddy — which the option sums up as wanting to leave the child a paddy with living things. The environment and higher prices are other people's guesses; at the start, he says, 「そんな立派な考えはありませんでした」."
   },
   "wrong": [
    {
@@ -3580,8 +3580,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「それより、現場に立ってみて気になったのは、表示の付いている位置。」最后说：「根っこは場所よ。」\n推理：指示牌在楼梯尽头的正对面，大家停下来抬头看，后面的人不断上来，差点相撞——也就是装在了会堵住人流的地方。字小「やむを得ない」；信息多只是「一因」；配色是她称赞的地方。\n容易错：信息量被承认是原因之一，但用「根っこは」明确了主次。",
-   "en": "Evidence: She says 「それより、現場に立ってみて気になったのは、表示の付いている位置。」 and finally 「根っこは場所よ。」\nReasoning: The sign faces the top of the stairs, so people stop and look up while others keep coming up behind and nearly collide — it sits where it blocks the flow. Small lettering 「やむを得ない」; too much information is only 「一因」; the colours are what she praises.\nTrap: the amount of information is granted as one cause, but 「根っこは」 sets the priority."
+   "zh": "依据：女的说：「それより、現場に立ってみて気になったのは、表示の付いている位置。」最后说：「根っこは場所よ。」\n推理：指示牌在楼梯尽头的正对面，大家停下来抬头看，后面的人不断上来，差点相撞——也就是装在了会堵住人流的地方。字小「やむを得ない」；信息多只是「一因」；配色是她称赞的地方。",
+   "en": "Evidence: She says 「それより、現場に立ってみて気になったのは、表示の付いている位置。」 and finally 「根っこは場所よ。」\nReasoning: The sign faces the top of the stairs, so people stop and look up while others keep coming up behind and nearly collide — it sits where it blocks the flow. Small lettering 「やむを得ない」; too much information is only 「一因」; the colours are what she praises."
   },
   "wrong": [
    {

@@ -36,7 +36,15 @@
   function today() { var d = new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
   // Explanation text: escaped, with each 「…」 quote marked as Japanese so a
   // Chinese page can set the prose in a Chinese font and the quotes in a Japanese one.
-  function ex(o) { return esc(bi(o)).replace(/「[^「」\n]*」/g, function (m) { return '<span lang="ja">' + m + '</span>'; }); }
+  function ex(o) { return esc(typeof o === 'string' ? o : bi(o)).replace(/「[^「」\n]*」/g, function (m) { return '<span lang="ja">' + m + '</span>'; }); }
+  // An explanation is a few labelled lines ("线索：…" / "Clue: …"): the label
+  // goes in its own muted column so the eye finds each part; other lines stay whole.
+  function whyHtml(o) {
+    return '<div class="q-why">' + String(bi(o) || '').split('\n').filter(function (l) { return l.trim(); }).map(function (l) {
+      var m = l.match(EN ? /^([A-Za-z][A-Za-z ]{1,13}):\s*(.+)$/ : /^([^：:「」，。\s]{1,6})[：:]\s*(.+)$/);
+      return m ? '<span class="q-why-k">' + esc(m[1]) + '</span><span>' + ex(m[2]) + '</span>' : '<span class="q-why-all">' + ex(l) + '</span>';
+    }).join('') + '</div>';
+  }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function track(name, p) { try { if (window.gaEvent) window.gaEvent(name, p); } catch (e) {} }
 
@@ -800,14 +808,17 @@
     if (isCk(q) && !left.length) h += ckScript(q);
     // The finished sentence and its translation first: understand the sentence,
     // then read why the answer fits it.
-    h += '<div class="q-explain">' + kjHtml(q);
-    if (q.tr) h += '<p class="q-muted">' + esc(bi(q.tr)) + '</p>';
-    h += '<p class="q-why">' + ex(q.why) + '</p>';
-    if (q.type !== 'narabe') {
-      var rows = q.wrong.map(function (w, i) { return w ? { i: i, w: w } : null; }).filter(Boolean);
-      rows.sort(function (a, b) { return (b.i === choice) - (a.i === choice); });
-      h += '<ul class="q-wrong">' + rows.map(function (r) { return '<li' + (r.i === choice ? ' class="q-mine"' : '') + '><b lang="ja">' + (r.i + 1) + ' ' + q.options[r.i] + okjOf(q, r.i) + '</b> — ' + ex(r.w) + '</li>'; }).join('') + '</ul>';
-    }
+    // Order: the sentence, then why the reader's own pick fails (what they want
+    // to know first), then why the answer is right, then the other options.
+    var sent = kjHtml(q) + (q.tr ? '<p class="q-muted">' + esc(bi(q.tr)) + '</p>' : '');
+    h += '<div class="q-explain">' + (sent ? '<div class="q-sent">' + sent + '</div>' : '');
+    var rows = q.type === 'narabe' ? [] : q.wrong.map(function (w, i) { return w ? { i: i, w: w } : null; }).filter(Boolean);
+    var mineRow = rows.filter(function (r) { return r.i === choice; })[0];
+    var optB = function (i) { return '<b lang="ja">' + (i + 1) + ' ' + q.options[i] + okjOf(q, i) + '</b>'; };
+    if (mineRow) h += '<div class="q-minebox"><div class="q-box-k">' + t('你选的 ', 'Your pick: ') + optB(mineRow.i) + '</div><div>' + ex(mineRow.w) + '</div></div>';
+    h += '<div class="q-box-k q-box-ok">' + (q.type === 'narabe' ? t('为什么这样排', 'Why this order') : t('为什么是 ', 'Why it’s ') + optB(q.answer)) + '</div>' + whyHtml(q.why);
+    rows = rows.filter(function (r) { return r !== mineRow; });
+    if (rows.length) h += '<div class="q-box-k">' + (mineRow ? t('另外两个选项', 'The other options') : t('其他选项为什么不对', 'Why the others don’t work')).replace('另外两个', rows.length === 2 ? '另外两个' : '其他') + '</div><ul class="q-wrong">' + rows.map(function (r) { return '<li>' + optB(r.i) + ' — ' + ex(r.w) + '</li>'; }).join('') + '</ul>';
     if (!left.length) h += wholeHtml(q, D.passages);
     h += pointsHtml(q);
     if (!aiFirst) h += aiBtn(false);
@@ -856,7 +867,7 @@
       return '<li><div lang="ja" class="q-sumstem">' + sumLabel(q) + '</div>' +
         '<div class="q-muted">' + (mine ? mine + ' · ' : '') + t('答案 ', 'Answer: ') + '<span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span> · ' +
         (days <= 0 ? t('今天复习', 'due today') : days + t(' 天后复习', days === 1 ? ' day to go' : ' days to go')) + '</div>' +
-        '<details class="q-rl-more"><summary>' + t('解析', 'Explanation') + '</summary>' + (isCk(q) ? ckPlayer(q) + ckScript(q) : '') + '<p>' + ex(q.why) + '</p>' + kjHtml(q) + (q.tr ? '<p class="q-muted">' + esc(bi(q.tr)) + '</p>' : '') + wholeHtml(q, D.passages) +
+        '<details class="q-rl-more"><summary>' + t('解析', 'Explanation') + '</summary>' + (isCk(q) ? ckPlayer(q) + ckScript(q) : '') + whyHtml(q.why) + kjHtml(q) + (q.tr ? '<p class="q-muted">' + esc(bi(q.tr)) + '</p>' : '') + wholeHtml(q, D.passages) +
         pointsHtml(q) + '<button class="q-btn" data-act="unreview" data-k="' + q.id + '">' + t('已经会了，移出错题本', 'I’ve got it — remove') + '</button></details></li>';
     }).join('') + '</ul>';
     app.innerHTML = h + '</div>';
@@ -882,7 +893,7 @@
       var mine = !last ? '' : last.ok ? (last.g ? t('上次猜对', 'Last time: guessed right') : t('上次答对', 'Last time: right')) : last.c == null ? t('上次不会', 'Last time: didn’t know') : t('上次选 ', 'Last time: ') + '<span lang="ja">' + q.options[last.c] + '</span>';
       return '<li><div lang="ja" class="q-sumstem">' + sumLabel(q) + '</div>' +
         '<div class="q-muted">' + (mine ? mine + ' · ' : '') + t('答案 ', 'Answer: ') + '<span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span></div>' +
-        '<details class="q-rl-more"><summary>' + t('解析', 'Explanation') + '</summary>' + (isCk(q) ? ckPlayer(q) + ckScript(q) : '') + '<p>' + ex(q.why) + '</p>' + kjHtml(q) + (q.tr ? '<p class="q-muted">' + esc(bi(q.tr)) + '</p>' : '') + wholeHtml(q, D.passages) +
+        '<details class="q-rl-more"><summary>' + t('解析', 'Explanation') + '</summary>' + (isCk(q) ? ckPlayer(q) + ckScript(q) : '') + whyHtml(q.why) + kjHtml(q) + (q.tr ? '<p class="q-muted">' + esc(bi(q.tr)) + '</p>' : '') + wholeHtml(q, D.passages) +
         pointsHtml(q) + '<button class="q-btn" data-act="unfav" data-k="' + q.id + '">' + t('取消收藏', 'Remove from saved') + '</button></details></li>';
     }).join('') + '</ul>';
     app.innerHTML = h + '</div>';
@@ -1280,7 +1291,7 @@
           if (q.type === 'narabe') h += '<p lang="ja">' + t('正确顺序：', 'Order: ') + kq.order.map(function (i) { return q.options[i]; }).join(' / ') + '</p>';
           h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + (i === kq.answer ? ' q-ok' : i === a.c ? ' q-bad' : '') + '"><span class="q-num">' + (i + 1) + '</span>' + o + okjOf(qq, i) + '</div></li>'; }).join('') + '</ol>';
           h += '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 猜对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + ' ' + favBtn(q) + '</p>';
-          h += '<div class="q-explain"><p>' + ex(kq.why) + '</p>' + (q.type !== 'narabe' ? '<ul class="q-wrong">' + kq.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + q.options[i] + okjOf(qq, i) + '</b> — ' + ex(w) + '</li>' : ''; }).join('') + '</ul>' : '') +
+          h += '<div class="q-explain">' + whyHtml(kq.why) + (q.type !== 'narabe' ? '<ul class="q-wrong">' + kq.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + q.options[i] + okjOf(qq, i) + '</b> — ' + ex(w) + '</li>' : ''; }).join('') + '</ul>' : '') +
             kjHtml(qq) + (kq.tr ? '<p class="q-muted">' + esc(bi(kq.tr)) + '</p>' : '') + (lastOfP ? wholeHtml(qq, key.passages, false) : '') + '</div>' +
             aiBtn(false, 'm-ai').replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
         });
@@ -1544,7 +1555,7 @@
     if (q.pic && q.pic.opts) h += '<ol class="q-ck-pics">' + q.pic.opts.map(function (f, i) { return '<li><div class="q-opt q-ck-pic' + mark(i) + '"><span class="q-num">' + (i + 1) + '</span><img src="' + CK_IMG + f + '" alt="' + esc(plainJa(q.options[i])) + '" width="304" height="343" loading="lazy"></div></li>'; }).join('') + '</ol>';
     else h += '<ol class="q-opts' + (q.spoken ? ' q-ck-nums q-ck-shown' : '') + '" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + mark(i) + '"><span class="q-num">' + (i + 1) + '</span>' + (q.spoken ? ckOptText(q, i) : o) + '</div></li>'; }).join('') + '</ol>';
     h += '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 猜对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</p>';
-    return h + (again ? '' : ckScript(q)) + '<div class="q-explain"><p>' + ex(q.why) + '</p><ul class="q-wrong">' + q.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + (q.pic && q.pic.opts ? '' : q.options[i]) + '</b> — ' + ex(w) + '</li>' : ''; }).join('') + '</ul></div>';
+    return h + (again ? '' : ckScript(q)) + '<div class="q-explain">' + whyHtml(q.why) + '<ul class="q-wrong">' + q.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + (q.pic && q.pic.opts ? '' : q.options[i]) + '</b> — ' + ex(w) + '</li>' : ''; }).join('') + '</ul></div>';
   }
 
   // The mock test's listening sitting, like the real one: one tap starts it,

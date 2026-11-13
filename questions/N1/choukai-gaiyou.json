@@ -47,13 +47,13 @@
    }
   },
   "why": {
-   "zh": "依据：馆长说：「まずは自分の手で動かしてみて、不思議だと感じてから知識に触れていただきたいと考えたからです。」\n推理：前半是问题：详细的展板让人「分かった気になってしまう」，几乎不碰装置。「そこで」之后才是主旨：解说压到最少，原理放进体验后才读的小册子，目的都是让观众先动手。全篇讲的是为此做的展示安排。\n容易错：开头提出的问题、小册子这样的细节，都只是全篇的一部分。",
-   "en": "Evidence: The director says: 「まずは自分の手で動かしてみて、不思議だと感じてから知識に触れていただきたいと考えたからです。」\nReasoning: The first half is the problem: detailed panels make people 「分かった気になってしまう」 and they hardly touch the devices. The point comes after 「そこで」: minimal panels, and the workings put in a booklet to read after trying, all so that visitors try first. The talk is about the way the exhibits were arranged for that.\nTrap: the problem raised at the start and details like the booklet are only parts of the talk."
+   "zh": "依据：馆长说：「まずは自分の手で動かしてみて、不思議だと感じてから知識に触れていただきたいと考えたからです。」\n推理：前半是问题：详细的展板让人「分かった気になってしまう」，几乎不碰装置。「そこで」之后才是主旨：解说压到最少，原理放进体验后才读的小册子，目的都是让观众先动手。全篇讲的是为此做的展示安排。",
+   "en": "Evidence: The director says: 「まずは自分の手で動かしてみて、不思議だと感じてから知識に触れていただきたいと考えたからです。」\nReasoning: The first half is the problem: detailed panels make people 「分かった気になってしまう」 and they hardly touch the devices. The point comes after 「そこで」: minimal panels, and the workings put in a booklet to read after trying, all so that visitors try first. The talk is about the way the exhibits were arranged for that."
   },
   "wrong": [
    {
-    "zh": "观众只看展板不动手是开头提出的问题，后面讲的是因此改变了展示方式，这只是一部分。",
-    "en": "Visitors not touching the devices is only the problem raised at the start; the talk goes on to how the exhibits were changed."
+    "zh": "观众不碰装置只是开头提出的问题，全篇讲的是为此怎样改了展示。",
+    "en": "Visitors not touching the devices is only the problem raised at the start; the talk is about how the exhibits were changed because of it."
    },
    {
     "zh": "她没有说写说明难，而是说详细的说明反而让人不动手。",
@@ -118,8 +118,8 @@
    }
   },
   "why": {
-   "zh": "依据：心理学者说：「新しい経験は記憶に残りやすく、後で振り返ったとき、その時間を長く感じさせるんです。」\n推理：他先引出常见的“五十分之一”说法，接着用「私はそれだけでは足りないと考えています」表示不满足于它。他自己的解释是：新经历让时间显长，每天重复让一个月缩成一段记忆，所以建议用「小さな新しさ」找回时间。全篇讲新经历和时间感的关系。\n容易错：被他判为不够的常见说法当成主旨；重复是他讲的反面。",
-   "en": "Evidence: The psychologist says: 「新しい経験は記憶に残りやすく、後で振り返ったとき、その時間を長く感じさせるんです。」\nReasoning: He first cites the familiar 'one fiftieth of a life' idea, then says 「私はそれだけでは足りないと考えています」. His own explanation: new experiences make time feel long, daily repetition shrinks a month into one memory, so he recommends 「小さな新しさ」 to win time back. The talk is about new experience and the sense of time.\nTrap: taking the common theory he finds insufficient as the topic; repetition is the opposite case he describes."
+   "zh": "依据：心理学者说：「新しい経験は記憶に残りやすく、後で振り返ったとき、その時間を長く感じさせるんです。」\n推理：他先引出常见的“五十分之一”说法，接着用「私はそれだけでは足りないと考えています」表示不满足于它。他自己的解释是：新经历让时间显长，每天重复让一个月缩成一段记忆，所以建议用「小さな新しさ」找回时间。全篇讲新经历和时间感的关系。",
+   "en": "Evidence: The psychologist says: 「新しい経験は記憶に残りやすく、後で振り返ったとき、その時間を長く感じさせるんです。」\nReasoning: He first cites the familiar 'one fiftieth of a life' idea, then says 「私はそれだけでは足りないと考えています」. His own explanation: new experiences make time feel long, daily repetition shrinks a month into one memory, so he recommends 「小さな新しさ」 to win time back. The talk is about new experience and the sense of time."
   },
   "wrong": [
    {
@@ -132,8 +132,8 @@
    },
    null,
    {
-    "zh": "他说每天重复会让一个月归成一段记忆，正好相反。",
-    "en": "He says daily repetition lumps a month into one memory — the opposite."
+    "zh": "他说每天重复会让一个月缩成一段记忆，讲的是重复的坏处，不是它的重要。",
+    "en": "He says daily repetition lumps a month into one memory — a drawback, not something important."
    }
   ],
   "traps": [
@@ -195,8 +195,8 @@
    }
   },
   "why": {
-   "zh": "依据：教练说：「理由はできるだけ言葉で説明するようにしています。」又说：「そこばかりは、自分で何度も失敗しながら、身につけてもらうしかないんです。」\n推理：「とはいえ」是转折：练习的理由用语言讲清楚，但比赛中一瞬间的判断「教えようがない」，只能靠自己失败着学。他的想法由这两半组成：能用语言教的和只能靠经验学的要分开。\n容易错：只抓住一半（全部用语言教，或不讲理由）；开头的忍耐力只是对过去做法的让步。",
-   "en": "Evidence: The coach says: 「理由はできるだけ言葉で説明するようにしています。」 and 「そこばかりは、自分で何度も失敗しながら、身につけてもらうしかないんです。」\nReasoning: 「とはいえ」 marks the turn: the reasons for drills are explained in words, but split-second match decisions 「教えようがない」 and can only be learned by failing. His view is both halves together: what words can teach and what only experience can teach are kept apart.\nTrap: taking only one half (teach everything in words, or explain nothing); the endurance he mentions at the start is only a concession about the old way."
+   "zh": "依据：教练说：「理由はできるだけ言葉で説明するようにしています。」又说：「そこばかりは、自分で何度も失敗しながら、身につけてもらうしかないんです。」\n推理：「とはいえ」是转折：练习的理由用语言讲清楚，但比赛中一瞬间的判断「教えようがない」，只能靠自己失败着学。他的想法由这两半组成：能用语言教的和只能靠经验学的要分开。",
+   "en": "Evidence: The coach says: 「理由はできるだけ言葉で説明するようにしています。」 and 「そこばかりは、自分で何度も失敗しながら、身につけてもらうしかないんです。」\nReasoning: 「とはいえ」 marks the turn: the reasons for drills are explained in words, but split-second match decisions 「教えようがない」 and can only be learned by failing. His view is both halves together: what words can teach and what only experience can teach are kept apart."
   },
   "wrong": [
    {
@@ -266,8 +266,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「考えるべきなのは、道具を使うことの是非ではないと思うんです。」「空いた頭を何に使うのか。」\n推理：她先用「ある意味ではその通りなのでしょう」承认工具会让能力退化，再用「けれども」转折：交给工具的部分让头脑空了出来。结论是问题不在用不用工具，而在空出来的头脑怎么用。地图、计算器都只是例子。\n容易错：把「ある意味では」的让步当成结论；把例子当成主张。",
-   "en": "Evidence: The woman says: 「考えるべきなのは、道具を使うことの是非ではないと思うんです。」 and 「空いた頭を何に使うのか。」\nReasoning: She first grants, with 「ある意味ではその通りなのでしょう」, that tools weaken abilities, then turns with 「けれども」: what we hand to tools frees the mind. Her conclusion: the issue is not whether to use tools but what to do with the freed mind. The map and the calculator are just examples.\nTrap: taking the 「ある意味では」 concession as her conclusion; taking an example as her claim."
+   "zh": "依据：女的说：「考えるべきなのは、道具を使うことの是非ではないと思うんです。」「空いた頭を何に使うのか。」\n推理：她先用「ある意味ではその通りなのでしょう」承认工具会让能力退化，再用「けれども」转折：交给工具的部分让头脑空了出来。结论是问题不在用不用工具，而在空出来的头脑怎么用。地图、计算器都只是例子。",
+   "en": "Evidence: The woman says: 「考えるべきなのは、道具を使うことの是非ではないと思うんです。」 and 「空いた頭を何に使うのか。」\nReasoning: She first grants, with 「ある意味ではその通りなのでしょう」, that tools weaken abilities, then turns with 「けれども」: what we hand to tools frees the mind. Her conclusion: the issue is not whether to use tools but what to do with the freed mind. The map and the calculator are just examples."
   },
   "wrong": [
    {
@@ -337,14 +337,14 @@
    }
   },
   "why": {
-   "zh": "依据：评委说大奖是「技術的にはまだ粗さの残る一枚でした。」又说：「撮った方がその瞬間に何に心を動かされたのかが、見る側にまっすぐ伝わってくる。」\n推理：相机性能提高、作品「どれも似通っている」都是铺垫；「そうした中で」引出大奖：技术还粗糙，「それでも」能把拍摄者的感动直接传给观众，评委意见一致的正是这一点。全篇讲的是评选看重什么。\n容易错：开头的细节和前半的印象不是主题。",
-   "en": "Evidence: The judge says the winner was 「技術的にはまだ粗さの残る一枚でした。」 and that 「撮った方がその瞬間に何に心を動かされたのかが、見る側にまっすぐ伝わってくる。」\nReasoning: Better cameras and entries that 「どれも似通っている」 are the build-up; 「そうした中で」 introduces the grand prize: technically rough, 「それでも」 it conveys straight to the viewer what moved the photographer, and that is what all judges agreed on. The talk is about what the judging valued.\nTrap: a detail from the opening or the first-half impression is not the topic."
+   "zh": "依据：评委说大奖是「技術的にはまだ粗さの残る一枚でした。」又说：「撮った方がその瞬間に何に心を動かされたのかが、見る側にまっすぐ伝わってくる。」\n推理：相机性能提高、作品「どれも似通っている」都是铺垫；「そうした中で」引出大奖：技术还粗糙，「それでも」能把拍摄者的感动直接传给观众，评委意见一致的正是这一点。全篇讲的是评选看重什么。",
+   "en": "Evidence: The judge says the winner was 「技術的にはまだ粗さの残る一枚でした。」 and that 「撮った方がその瞬間に何に心を動かされたのかが、見る側にまっすぐ伝わってくる。」\nReasoning: Better cameras and entries that 「どれも似通っている」 are the build-up; 「そうした中で」 introduces the grand prize: technically rough, 「それでも」 it conveys straight to the viewer what moved the photographer, and that is what all judges agreed on. The talk is about what the judging valued."
   },
   "wrong": [
    null,
    {
     "zh": "作品相似只是前半的印象，后半讲大奖为什么选那一张；而且原因他只是顺带提了一句。",
-    "en": "Entries looking alike is only the first-half impression; the talk goes on to why the winner was chosen."
+    "en": "Entries looking alike is only the first-half impression; the talk goes on to why the winner was chosen, and he mentions the cause only in passing."
    },
    {
     "zh": "这是开头的一个细节，不是讲话的主题。",
@@ -408,8 +408,8 @@
    }
   },
   "why": {
-   "zh": "依据：旅行作家说：「予定にない出来事というのは、計画を詰め込みすぎると、起きる余地がなくなってしまう。」「ですから私は、一日のうち半分ぐらいは、あえて何も決めずにおくことにしているんです。」\n推理：「お気持ちはよく分かります」是对排满日程的人的让步，「ただ」后转到他的观点。错过公交、在饭馆和当地人聊天是他举的经历，说明计划外的事最难忘。「ですから」引出结论：别排太满，给偶遇留余地。\n容易错：把举的经历（和当地人聊天）当成主题。",
-   "en": "Evidence: The travel writer says: 「予定にない出来事というのは、計画を詰め込みすぎると、起きる余地がなくなってしまう。」 and 「ですから私は、一日のうち半分ぐらいは、あえて何も決めずにおくことにしているんです。」\nReasoning: 「お気持ちはよく分かります」 is a concession to over-planners; after 「ただ」 comes his view. Missing the bus and chatting with locals in a diner is his anecdote, showing that unplanned things are what you remember. 「ですから」 brings the conclusion: don't overfill the schedule, leave room for chance.\nTrap: taking the anecdote (talking with locals) as the topic."
+   "zh": "依据：旅行作家说：「予定にない出来事というのは、計画を詰め込みすぎると、起きる余地がなくなってしまう。」「ですから私は、一日のうち半分ぐらいは、あえて何も決めずにおくことにしているんです。」\n推理：「お気持ちはよく分かります」是对排满日程的人的让步，「ただ」后转到他的观点。错过公交、在饭馆和当地人聊天是他举的经历，说明计划外的事最难忘。「ですから」引出结论：别排太满，给偶遇留余地。",
+   "en": "Evidence: The travel writer says: 「予定にない出来事というのは、計画を詰め込みすぎると、起きる余地がなくなってしまう。」 and 「ですから私は、一日のうち半分ぐらいは、あえて何も決めずにおくことにしているんです。」\nReasoning: 「お気持ちはよく分かります」 is a concession to over-planners; after 「ただ」 comes his view. Missing the bus and chatting with locals in a diner is his anecdote, showing that unplanned things are what you remember. 「ですから」 brings the conclusion: don't overfill the schedule, leave room for chance."
   },
   "wrong": [
    {
@@ -422,8 +422,8 @@
     "en": "Talking with locals is just the anecdote he tells, not the topic."
    },
    {
-    "zh": "他说的是“和照片一样的风景”只是去确认，没讲两者的不同。",
-    "en": "He says people only confirm scenery 'as in the photos' — he doesn't compare the two."
+    "zh": "他只说很多人只是去确认和照片里一样的风景，没讲照片和实景的区别。",
+    "en": "He only says many people just confirm the scenery they saw in photos; he doesn't compare photos with the real thing."
    }
   ],
   "traps": [
@@ -479,8 +479,8 @@
    }
   },
   "why": {
-   "zh": "依据：钢琴家说她追求的是：「その曲が初めて演奏されたときに聴き手が味わった驚きや喜びを、今の聴き手にも味わってもらうこと。」\n推理：她对「その二つのどちらかを選ぶ」这种想法本身有「違和感」：照谱弹可能弹不出作曲家要的音响，「かといって」随意改又成了「別の曲」。两边都否定后，她给出目标，为此「ある所では楽譜どおりに、ある所では思い切った工夫を選ぶ」。\n容易错：只取一边（照谱或自由）；乐器差异只是例子。",
-   "en": "Evidence: The pianist says what she aims for is 「その曲が初めて演奏されたときに聴き手が味わった驚きや喜びを、今の聴き手にも味わってもらうこと。」\nReasoning: She feels 「違和感」 about the very idea of 「その二つのどちらかを選ぶ」: playing as written may miss the composer's sound, but 「かといって」 changing it to taste makes it 「別の曲」. Having rejected both sides, she states her aim, and for it she chooses 「ある所では楽譜どおりに、ある所では思い切った工夫を選ぶ」.\nTrap: picking one side (as written, or free); the instrument difference is only an example."
+   "zh": "依据：钢琴家说她追求的是：「その曲が初めて演奏されたときに聴き手が味わった驚きや喜びを、今の聴き手にも味わってもらうこと。」\n推理：她对「その二つのどちらかを選ぶ」这种想法本身有「違和感」：照谱弹可能弹不出作曲家要的音响，「かといって」随意改又成了「別の曲」。两边都否定后，她给出目标，为此「ある所では楽譜どおりに、ある所では思い切った工夫を選ぶ」。",
+   "en": "Evidence: The pianist says what she aims for is 「その曲が初めて演奏されたときに聴き手が味わった驚きや喜びを、今の聴き手にも味わってもらうこと。」\nReasoning: She feels 「違和感」 about the very idea of 「その二つのどちらかを選ぶ」: playing as written may miss the composer's sound, but 「かといって」 changing it to taste makes it 「別の曲」. Having rejected both sides, she states her aim, and for it she chooses 「ある所では楽譜どおりに、ある所では思い切った工夫を選ぶ」."
   },
   "wrong": [
    {
@@ -550,8 +550,8 @@
    }
   },
   "why": {
-   "zh": "依据：老师的结论：「つまり、史料が黙っている部分こそ、時には書かれた言葉以上に、多くを語ってくれるのです。」\n推理：记录中断，他「最初は」以为是「単なる書き漏らし」，「ところが」和周围村子的资料一对照，发现那段时期村里生活的结构大变。这个例子是为了引出「つまり」后的结论：没写下来的部分也能读出东西。\n容易错：被推翻的最初猜测；讲解用的例子当成主题。",
-   "en": "Evidence: The teacher concludes: 「つまり、史料が黙っている部分こそ、時には書かれた言葉以上に、多くを語ってくれるのです。」\nReasoning: When the entries stopped, he 「最初は」 thought it was 「単なる書き漏らし」; 「ところが」 comparing nearby villages' records showed the village's way of life changed in that period. The example leads to the conclusion after 「つまり」: what is not written can also be read.\nTrap: his first guess, which was overturned; taking the illustrating example as the topic."
+   "zh": "依据：老师的结论：「つまり、史料が黙っている部分こそ、時には書かれた言葉以上に、多くを語ってくれるのです。」\n推理：记录中断，他「最初は」以为是「単なる書き漏らし」，「ところが」和周围村子的资料一对照，发现那段时期村里生活的结构大变。这个例子是为了引出「つまり」后的结论：没写下来的部分也能读出东西。",
+   "en": "Evidence: The teacher concludes: 「つまり、史料が黙っている部分こそ、時には書かれた言葉以上に、多くを語ってくれるのです。」\nReasoning: When the entries stopped, he 「最初は」 thought it was 「単なる書き漏らし」; 「ところが」 comparing nearby villages' records showed the village's way of life changed in that period. The example leads to the conclusion after 「つまり」: what is not written can also be read."
   },
   "wrong": [
    {
@@ -651,8 +651,8 @@
    }
   },
   "why": {
-   "zh": "依据：丈夫说：「まずはそれをやり遂げさせて、それでもやめたいって言うなら、そのときは本人の気持ちを尊重してやったらどうかな。」\n推理：对妻子怕养成逃避习惯的担心，他说「その心配も分かるけどね」，又用「でも」指出硬逼会让她连钢琴都讨厌。被问「じゃあ、やめさせるの？」时，他答「いや、すぐにってわけじゃないよ」。所以是先完成下月的汇报演出（选项的「区切り」），之后尊重本人的意愿。\n容易错：把妻子的意见当成丈夫的；只听到一半（马上放弃）。",
-   "en": "Evidence: The husband says: 「まずはそれをやり遂げさせて、それでもやめたいって言うなら、そのときは本人の気持ちを尊重してやったらどうかな。」\nReasoning: To his wife's fear of an escape habit he says 「その心配も分かるけどね」, then with 「でも」 warns that forcing her could make her hate the piano. Asked 「じゃあ、やめさせるの？」, he answers 「いや、すぐにってわけじゃないよ」. So: first finish next month's recital (the option's 「区切り」), then respect her own wish.\nTrap: taking the wife's view as his; hearing only half (quit right away)."
+   "zh": "依据：丈夫说：「まずはそれをやり遂げさせて、それでもやめたいって言うなら、そのときは本人の気持ちを尊重してやったらどうかな。」\n推理：对妻子怕养成逃避习惯的担心，他说「その心配も分かるけどね」，又用「でも」指出硬逼会让她连钢琴都讨厌。被问「じゃあ、やめさせるの？」时，他答「いや、すぐにってわけじゃないよ」。所以是先完成下月的汇报演出（选项的「区切り」），之后尊重本人的意愿。",
+   "en": "Evidence: The husband says: 「まずはそれをやり遂げさせて、それでもやめたいって言うなら、そのときは本人の気持ちを尊重してやったらどうかな。」\nReasoning: To his wife's fear of an escape habit he says 「その心配も分かるけどね」, then with 「でも」 warns that forcing her could make her hate the piano. Asked 「じゃあ、やめさせるの？」, he answers 「いや、すぐにってわけじゃないよ」. So: first finish next month's recital (the option's 「区切り」), then respect her own wish."
   },
   "wrong": [
    {
@@ -728,8 +728,8 @@
    }
   },
   "why": {
-   "zh": "依据：研究者说：「まるで昔からの知り合いのように、気軽に話しかけてくださるようになったんです。」「人に受け入れられるかどうかは、どれだけ人に近いかでは決まらない。」\n推理：以前追求和人一模一样，「ところが」越像越让人觉得「気味が悪い」；改成「目は丸い光だけ」、声音一听就是机器以后，老人们反而像对老熟人一样搭话。结论否定了“越像人越好”，也就是保留机器感反而更受亲近。\n容易错：听到「気味が悪い」以为要把表情做得更自然——方向反了。",
-   "en": "Evidence: The researcher says: 「まるで昔からの知り合いのように、気軽に話しかけてくださるようになったんです。」 and 「人に受け入れられるかどうかは、どれだけ人に近いかでは決まらない。」\nReasoning: They used to aim for perfect likeness, but 「ところが」 the more lifelike, the more 「気味が悪い」. Once they went to 「目は丸い光だけ」 and an obviously machine voice, the residents chatted to it like an old friend. His conclusion rejects 'the more human, the better': keeping it machine-like makes it easier to warm to.\nTrap: hearing 「気味が悪い」 and thinking the face should be made more natural — the reverse of his point."
+   "zh": "依据：研究者说：「まるで昔からの知り合いのように、気軽に話しかけてくださるようになったんです。」「人に受け入れられるかどうかは、どれだけ人に近いかでは決まらない。」\n推理：以前追求和人一模一样，「ところが」越像越让人觉得「気味が悪い」；改成「目は丸い光だけ」、声音一听就是机器以后，老人们反而像对老熟人一样搭话。结论否定了“越像人越好”，也就是保留机器感反而更受亲近。",
+   "en": "Evidence: The researcher says: 「まるで昔からの知り合いのように、気軽に話しかけてくださるようになったんです。」 and 「人に受け入れられるかどうかは、どれだけ人に近いかでは決まらない。」\nReasoning: They used to aim for perfect likeness, but 「ところが」 the more lifelike, the more 「気味が悪い」. Once they went to 「目は丸い光だけ」 and an obviously machine voice, the residents chatted to it like an old friend. His conclusion rejects 'the more human, the better': keeping it machine-like makes it easier to warm to."
   },
   "wrong": [
    null,
@@ -742,8 +742,8 @@
     "en": "The care home is just where they were used; he says nothing about ease of operation."
    },
    {
-    "zh": "他正相反，把表情去掉，只留圆形的光点。",
-    "en": "The opposite: he removed the expressions, leaving just round lights."
+    "zh": "他听到「気味が悪い」后不是把表情做得更自然，而是去掉表情，只留圆形的光点。",
+    "en": "After hearing 「気味が悪い」 he didn't make the face more natural — he removed the expressions, leaving just round lights."
    }
   ],
   "traps": [
@@ -799,8 +799,8 @@
    }
   },
   "why": {
-   "zh": "依据：专家说：「削るのはそこなんです。」又说：「自分を本当に満たしてくれる出費は、堂々と続けていいんですよ。」\n推理：她先讲常见的失败：从小乐趣削起，省得少、日子「味気なく」，最后反弹买大件。她推荐写下钱花在哪、当时「うれしかったかどうか」，找出「なくても困らないもの」去削，真正让自己满足的照花。核心是分辨对自己必要的开销。\n容易错：削减小开销正是她批评的做法；大件只是反弹的例子。",
-   "en": "Evidence: The expert says: 「削るのはそこなんです。」 and 「自分を本当に満たしてくれる出費は、堂々と続けていいんですよ。」\nReasoning: She first describes the usual failure: cutting small pleasures saves little, makes life 「味気なく」, and ends in a rebound purchase. She recommends writing down each expense and whether you were 「うれしかったかどうか」, cutting the 「なくても困らないもの」 and keeping what truly satisfies you. The core is telling which spending you really need.\nTrap: cutting small expenses is exactly what she criticises; the big purchase is only an example of the rebound."
+   "zh": "依据：专家说：「削るのはそこなんです。」又说：「自分を本当に満たしてくれる出費は、堂々と続けていいんですよ。」\n推理：她先讲常见的失败：从小乐趣削起，省得少、日子「味気なく」，最后反弹买大件。她推荐写下钱花在哪、当时「うれしかったかどうか」，找出「なくても困らないもの」去削，真正让自己满足的照花。核心是分辨对自己必要的开销。",
+   "en": "Evidence: The expert says: 「削るのはそこなんです。」 and 「自分を本当に満たしてくれる出費は、堂々と続けていいんですよ。」\nReasoning: She first describes the usual failure: cutting small pleasures saves little, makes life 「味気なく」, and ends in a rebound purchase. She recommends writing down each expense and whether you were 「うれしかったかどうか」, cutting the 「なくても困らないもの」 and keeping what truly satisfies you. The core is telling which spending you really need."
   },
   "wrong": [
    {
@@ -900,8 +900,8 @@
    }
   },
   "why": {
-   "zh": "依据：经理说：「安全とか料金とか、絶対に守ってほしいことは、きちんと書く。」「それ以外のことは、お客様のためになるかどうかで、自分で判断してかまわない」\n推理：女的提议写得更细，经理用「でも」反对：一个个写「きりがない」，还怕让人以为没写的就不能做。被问「では、マニュアルは今のままで？」时，他给出两部分：必须守的写清楚，「そのうえで」其余交给员工判断。\n容易错：把女的的提议当成经理的；把「きりがない」听成要取消手册。",
-   "en": "Evidence: The manager says: 「安全とか料金とか、絶対に守ってほしいことは、きちんと書く。」 and 「それ以外のことは、お客様のためになるかどうかで、自分で判断してかまわない」\nReasoning: The woman suggests more detail; with 「でも」 he objects that listing every case has 「きりがない」 and might make staff think anything unwritten is forbidden. Asked 「では、マニュアルは今のままで？」, he gives two parts: write the must-follow rules clearly, and 「そのうえで」 leave the rest to staff judgement.\nTrap: taking the woman's suggestion as his; hearing 「きりがない」 as scrapping the manual."
+   "zh": "依据：经理说：「安全とか料金とか、絶対に守ってほしいことは、きちんと書く。」「それ以外のことは、お客様のためになるかどうかで、自分で判断してかまわない」\n推理：女的提议写得更细，经理用「でも」反对：一个个写「きりがない」，还怕让人以为没写的就不能做。被问「では、マニュアルは今のままで？」时，他给出两部分：必须守的写清楚，「そのうえで」其余交给员工判断。",
+   "en": "Evidence: The manager says: 「安全とか料金とか、絶対に守ってほしいことは、きちんと書く。」 and 「それ以外のことは、お客様のためになるかどうかで、自分で判断してかまわない」\nReasoning: The woman suggests more detail; with 「でも」 he objects that listing every case has 「きりがない」 and might make staff think anything unwritten is forbidden. Asked 「では、マニュアルは今のままで？」, he gives two parts: write the must-follow rules clearly, and 「そのうえで」 leave the rest to staff judgement."
   },
   "wrong": [
    {
@@ -971,8 +971,8 @@
    }
   },
   "why": {
-   "zh": "依据：烹饪研究家说：「少し入れては味を見て、また足す。」「その繰り返しの中で、ご自分の舌を育てていただきたいんです。」\n推理：前面是只写「適量」的理由：蔬菜因季节、产地不同，好吃的咸淡也因人而异；写了克数，大家就「味見をなさらなくなる」。「ですから」引出主旨：边尝边加，了解自己喜欢的味道。\n容易错：季节差异只是理由中的一个细节；她讲的不是准确称量。",
-   "en": "Evidence: The cooking expert says: 「少し入れては味を見て、また足す。」 and 「その繰り返しの中で、ご自分の舌を育てていただきたいんです。」\nReasoning: What comes before is why she writes only 「適量」: vegetables differ by season and soil, and the right saltiness differs by person; given grams, people 「味見をなさらなくなる」. 「ですから」 brings the point: taste as you add and learn the flavour you like.\nTrap: the seasons are just one detail among her reasons; she is not talking about measuring accurately."
+   "zh": "依据：烹饪研究家说：「少し入れては味を見て、また足す。」「その繰り返しの中で、ご自分の舌を育てていただきたいんです。」\n推理：前面是只写「適量」的理由：蔬菜因季节、产地不同，好吃的咸淡也因人而异；写了克数，大家就「味見をなさらなくなる」。「ですから」引出主旨：边尝边加，了解自己喜欢的味道。",
+   "en": "Evidence: The cooking expert says: 「少し入れては味を見て、また足す。」 and 「その繰り返しの中で、ご自分の舌を育てていただきたいんです。」\nReasoning: What comes before is why she writes only 「適量」: vegetables differ by season and soil, and the right saltiness differs by person; given grams, people 「味見をなさらなくなる」. 「ですから」 brings the point: taste as you add and learn the flavour you like."
   },
   "wrong": [
    null,
@@ -1072,8 +1072,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「習慣だからって誰にでも出すのはやめて、本当に気持ちを伝えたい人にだけ、ちゃんと書こうかなって。」\n推理：她先附和男的，承认每年写那么多「しんどい」；「でもね」后讲老师寄来手写附言的贺卡，让她觉得还连着，所以全部停掉「もったいない」。结论有两半：不再出于习惯谁都寄，只给想传达心意的人用心写。\n容易错：前面的附和（写着累）被「でもね」推翻；老师的卡只是契机。",
-   "en": "Evidence: The woman says: 「習慣だからって誰にでも出すのはやめて、本当に気持ちを伝えたい人にだけ、ちゃんと書こうかなって。」\nReasoning: She first agrees with him that writing so many is 「しんどい」; after 「でもね」 she tells of her old teacher's card with a handwritten note that made her feel still connected, so stopping entirely seems 「もったいない」. Her plan has two halves: stop sending to everyone out of habit, and write with care only to those she really wants to reach.\nTrap: her earlier agreement (it's tiring) is overturned by 「でもね」; the teacher's card is only what prompted her."
+   "zh": "依据：女的说：「習慣だからって誰にでも出すのはやめて、本当に気持ちを伝えたい人にだけ、ちゃんと書こうかなって。」\n推理：她先附和男的，承认每年写那么多「しんどい」；「でもね」后讲老师寄来手写附言的贺卡，让她觉得还连着，所以全部停掉「もったいない」。结论有两半：不再出于习惯谁都寄，只给想传达心意的人用心写。",
+   "en": "Evidence: The woman says: 「習慣だからって誰にでも出すのはやめて、本当に気持ちを伝えたい人にだけ、ちゃんと書こうかなって。」\nReasoning: She first agrees with him that writing so many is 「しんどい」; after 「でもね」 she tells of her old teacher's card with a handwritten note that made her feel still connected, so stopping entirely seems 「もったいない」. Her plan has two halves: stop sending to everyone out of habit, and write with care only to those she really wants to reach."
   },
   "wrong": [
    {
@@ -1167,13 +1167,13 @@
    }
   },
   "why": {
-   "zh": "依据：「敬語というのは、話す人と相手との関係を言葉で表す仕組みです。」「表したい関係そのものが違います。」最后又要大家看“我们想和对方建立怎样的关系”。\n推理：她先承认有误用的例子，又用旧报纸说明“敬语乱了”的感叹每个时代都有；接着说敬语是表示人际关系的机制，时代不同，要表达的关系也不同；「させていただく」普及也是因为符合现在的距离感。主旨是敬语随时代的人际关系而变。\n容易错：旧报纸上登的是感叹，不是错误；「させていただく」只是例子。",
-   "en": "Evidence: 「敬語というのは、話す人と相手との関係を言葉で表す仕組みです。」 and 「表したい関係そのものが違います。」; she ends by asking what relationship we are trying to build.\nReasoning: She grants that misuse exists, then shows from old newspapers that every era lamented 'disordered' honorifics; honorifics express relationships, which differ by era; even 'sasete itadaku' spread because it fits today's sense of distance. Her point: honorifics change with the relationships of the age.\nTrap: the old papers carried laments, not mistakes; 'sasete itadaku' is only an example."
+   "zh": "依据：「敬語というのは、話す人と相手との関係を言葉で表す仕組みです。」「表したい関係そのものが違います。」最后又要大家看“我们想和对方建立怎样的关系”。\n推理：她先承认有误用的例子，又用旧报纸说明“敬语乱了”的感叹每个时代都有；接着说敬语是表示人际关系的机制，时代不同，要表达的关系也不同；「させていただく」普及也是因为符合现在的距离感。主旨是敬语随时代的人际关系而变。",
+   "en": "Evidence: 「敬語というのは、話す人と相手との関係を言葉で表す仕組みです。」 and 「表したい関係そのものが違います。」; she ends by asking what relationship we are trying to build.\nReasoning: She grants that misuse exists, then shows from old newspapers that every era lamented 'disordered' honorifics; honorifics express relationships, which differ by era; even 「させていただく」 spread because it fits today's sense of distance. Her point: honorifics change with the relationships of the age."
   },
   "wrong": [
    null,
    {
-    "zh": "她没有讲怎么教，反而不认为是“乱了”。",
+    "zh": "她没讲怎么教，反而对“敬语乱了”这种说法提出疑问。",
     "en": "She doesn't discuss teaching; she questions the idea of decline itself."
    },
    {
@@ -1182,7 +1182,7 @@
    },
    {
     "zh": "「させていただく」只是说明距离感的例子，没讲用法。",
-    "en": "'Sasete itadaku' is an example of the sense of distance; its usage isn't taught."
+    "en": "「させていただく」 is an example of the sense of distance; its usage isn't taught."
    }
   ],
   "traps": [
@@ -1262,8 +1262,8 @@
    }
   },
   "why": {
-   "zh": "依据：「違いは手の入れ方なんですね。」「今の家は、完成したときが一番いい状態で、あとは古くなる一方、という考え方で建てられています。それなら、三十年で寿命が来るのも当然でしょう。」\n推理：他说老房子的柱梁结实，但「木そのものが弱いわけではない」，区别在于「手の入れ方」：以前是一边修一边住，现在是建成时最好、之后只会变旧，所以三十年就到头。最后说和房子相处的方式要向以前的人学。可见他认为房子能用多久取决于住进去后的打理。\n容易错：老房子结实只是论据，他没说一律不该重建；新技术他只是说不否定。",
-   "en": "Evidence: 「違いは手の入れ方なんですね。」 and 「今の家は、完成したときが一番いい状態で、あとは古くなる一方、という考え方で建てられています。それなら、三十年で寿命が来るのも当然でしょう。」\nReasoning: Old beams are sturdy, but 「木そのものが弱いわけではない」; the difference is 「手の入れ方」 — old houses were lived in while being repaired, new ones peak at completion and only age, so they last thirty years. He ends by saying we can learn from the past in how we relate to houses. So a house's life depends on upkeep after moving in.\nTrap: the sturdy old houses are evidence, not a call never to rebuild; he merely doesn't reject new technology."
+   "zh": "依据：「違いは手の入れ方なんですね。」「今の家は、完成したときが一番いい状態で、あとは古くなる一方、という考え方で建てられています。それなら、三十年で寿命が来るのも当然でしょう。」\n推理：他说老房子的柱梁结实，但「木そのものが弱いわけではない」，区别在于「手の入れ方」：以前是一边修一边住，现在是建成时最好、之后只会变旧，所以三十年就到头。最后说和房子相处的方式要向以前的人学。可见他认为房子能用多久取决于住进去后的打理。",
+   "en": "Evidence: 「違いは手の入れ方なんですね。」 and 「今の家は、完成したときが一番いい状態で、あとは古くなる一方、という考え方で建てられています。それなら、三十年で寿命が来るのも当然でしょう。」\nReasoning: Old beams are sturdy, but 「木そのものが弱いわけではない」; the difference is 「手の入れ方」 — old houses were lived in while being repaired, new ones peak at completion and only age, so they last thirty years. He ends by saying we can learn from the past in how we relate to houses. So a house's life depends on upkeep after moving in."
   },
   "wrong": [
    {
@@ -1357,8 +1357,8 @@
    }
   },
   "why": {
-   "zh": "依据：「それを見ないまま平均だけで判断すると、町の実態とはかけ離れた結論になりかねません。」最后要学生先看整体分布。\n推理：镇子存款只是例子，说明少数人会拉高平均；平均值方便、常用于报道是让步；主旨是平均值掩盖离散程度，只看它判断有危险。\n容易错：把例子（存款、有钱人）或让步部分（报道常用）当主题。",
-   "en": "Evidence: 「それを見ないまま平均だけで判断すると、町の実態とはかけ離れた結論になりかねません。」 and he tells students to look at the distribution first.\nReasoning: The savings are just an example of a few people skewing an average; the convenience of averages in the news is a concession. The point: averages hide the spread, so judging by them alone is risky.\nTrap: mistaking the example (savings, rich residents) or the concession (media use) for the topic."
+   "zh": "依据：「それを見ないまま平均だけで判断すると、町の実態とはかけ離れた結論になりかねません。」最后要学生先看整体分布。\n推理：镇子存款只是例子，说明少数人会拉高平均；平均值方便、常用于报道是让步；主旨是平均值掩盖离散程度，只看它判断有危险。",
+   "en": "Evidence: 「それを見ないまま平均だけで判断すると、町の実態とはかけ離れた結論になりかねません。」 and he tells students to look at the distribution first.\nReasoning: The savings are just an example of a few people skewing an average; the convenience of averages in the news is a concession. The point: averages hide the spread, so judging by them alone is risky."
   },
   "wrong": [
    {
@@ -1458,8 +1458,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「制度ができること自体は歓迎だよ。」又说：「僕自身は見送るかな。」\n推理：他对制度本身持肯定态度（「〜に越したことはない」），但工作量不变，四天干完必然加班，还可能让别人替休息的人扛活。只有公司重新分配工作才「話は別」。所以是“赞成制度，但现状下自己不用”。\n容易错：「休んだ人の分を誰かがかぶる」是他不用的理由，不是反对制度；「仕事の割り振り」不等于工作减少。",
-   "en": "Evidence: He says 「制度ができること自体は歓迎だよ。」 and 「僕自身は見送るかな。」\nReasoning: He approves of the scheme itself (「〜に越したことはない」), but the workload stays the same, so four days means unavoidable overtime and others covering for whoever is off. Only reallocated work would be 「話は別」. So: for the scheme, but not using it now.\nTrap: others covering for those off is why he won't use it, not a reason to oppose the scheme; reallocating work isn't the same as less work."
+   "zh": "依据：男的说：「制度ができること自体は歓迎だよ。」又说：「僕自身は見送るかな。」\n推理：他对制度本身持肯定态度（「〜に越したことはない」），但工作量不变，四天干完必然加班，还可能让别人替休息的人扛活。只有公司重新分配工作才「話は別」。所以是“赞成制度，但现状下自己不用”。",
+   "en": "Evidence: He says 「制度ができること自体は歓迎だよ。」 and 「僕自身は見送るかな。」\nReasoning: He approves of the scheme itself (「〜に越したことはない」), but the workload stays the same, so four days means unavoidable overtime and others covering for whoever is off. Only reallocated work would be 「話は別」. So: for the scheme, but not using it now."
   },
   "wrong": [
    {
@@ -1553,8 +1553,8 @@
    }
   },
   "why": {
-   "zh": "依据：「植えたばかりの木は、そこから根を張り、枝を伸ばします。」「十年後に、木々がちょうどいい具合に枝を交わす。その姿から逆算して、今の配置を決めているんです。」\n推理：他理解客人想完工当天就好看，但故意留空隙、苔藓也不铺满，因为树会扎根长枝；种太密五年后就得砍。他是从十年后的样子倒推来布局，所以主张造园要预见完工后的生长。\n容易错：「お気持ちはよくわかります」只是理解，不是赞同照客人意思做；「切らなければならなくなる」是要避免的结果。",
-   "en": "Evidence: 「植えたばかりの木は、そこから根を張り、枝を伸ばします。」 and 「十年後に、木々がちょうどいい具合に枝を交わす。その姿から逆算して、今の配置を決めているんです。」\nReasoning: He understands clients want it beautiful on day one, but leaves gaps and patchy moss because trees will root and spread; packed planting must be cut back in five years. He works back from the garden ten years on, so a garden should be made anticipating its growth.\nTrap: 「お気持ちはよくわかります」 is sympathy, not agreement; cutting back is the outcome he avoids."
+   "zh": "依据：「植えたばかりの木は、そこから根を張り、枝を伸ばします。」「十年後に、木々がちょうどいい具合に枝を交わす。その姿から逆算して、今の配置を決めているんです。」\n推理：他理解客人想完工当天就好看，但故意留空隙、苔藓也不铺满，因为树会扎根长枝；种太密五年后就得砍。他是从十年后的样子倒推来布局，所以主张造园要预见完工后的生长。",
+   "en": "Evidence: 「植えたばかりの木は、そこから根を張り、枝を伸ばします。」 and 「十年後に、木々がちょうどいい具合に枝を交わす。その姿から逆算して、今の配置を決めているんです。」\nReasoning: He understands clients want it beautiful on day one, but leaves gaps and patchy moss because trees will root and spread; packed planting must be cut back in five years. He works back from the garden ten years on, so a garden should be made anticipating its growth."
   },
   "wrong": [
    {
@@ -1648,8 +1648,8 @@
    }
   },
   "why": {
-   "zh": "依据：「使う人が何をしたいのかによって、残すものと消すものが変わるんです。」「よい地図とは、全部を載せた地図ではなく、使う人にとって要らないものを思い切って省いた地図だ。」\n推理：她先否定“什么都画上”的印象，说最花时间的是决定不画什么；观光图、登山图都是例子。主旨是按用途取舍信息。\n容易错：两种地图只是例子；她讲的是每张图里删什么，不是增加种类。",
-   "en": "Evidence: 「使う人が何をしたいのかによって、残すものと消すものが変わるんです。」 and 「よい地図とは、全部を載せた地図ではなく、使う人にとって要らないものを思い切って省いた地図だ。」\nReasoning: She rejects the image of drawing everything; the most time goes on deciding what to leave out, with tourist and hiking maps as examples. Her point is selecting information for the purpose.\nTrap: the two maps are examples; she's talking about what to omit on a map, not producing more kinds."
+   "zh": "依据：「使う人が何をしたいのかによって、残すものと消すものが変わるんです。」「よい地図とは、全部を載せた地図ではなく、使う人にとって要らないものを思い切って省いた地図だ。」\n推理：她先否定“什么都画上”的印象，说最花时间的是决定不画什么；观光图、登山图都是例子。主旨是按用途取舍信息。",
+   "en": "Evidence: 「使う人が何をしたいのかによって、残すものと消すものが変わるんです。」 and 「よい地図とは、全部を載せた地図ではなく、使う人にとって要らないものを思い切って省いた地図だ。」\nReasoning: She rejects the image of drawing everything; the most time goes on deciding what to leave out, with tourist and hiking maps as examples. Her point is selecting information for the purpose."
   },
   "wrong": [
    null,
@@ -1743,8 +1743,8 @@
    }
   },
   "why": {
-   "zh": "依据：「植えることと同じくらい、植えた森を誰がどう世話していくのか。そこにも目を向けていただきたいと思います。」\n推理：他先赞成种树，「ただ」转到种下以后的事：林子没人间伐，变暗、土壤流失、树倒下，种的树反而让山变弱。主旨是种下的林子要持续打理。\n容易错：种树的好处是开头的让步；大雨倒树是说明不打理的后果。",
-   "en": "Evidence: 「植えることと同じくらい、植えた森を誰がどう世話していくのか。そこにも目を向けていただきたいと思います。」\nReasoning: He agrees with planting, then 「ただ」 turns to what follows: untended plantations go dark, the soil washes away and trees fall, so planted trees weaken the mountains. The point is that planted forests need continued care.\nTrap: the benefits of planting are an opening concession; trees falling in rain illustrate neglect."
+   "zh": "依据：「植えることと同じくらい、植えた森を誰がどう世話していくのか。そこにも目を向けていただきたいと思います。」\n推理：他先赞成种树，「ただ」转到种下以后的事：林子没人间伐，变暗、土壤流失、树倒下，种的树反而让山变弱。主旨是种下的林子要持续打理。",
+   "en": "Evidence: 「植えることと同じくらい、植えた森を誰がどう世話していくのか。そこにも目を向けていただきたいと思います。」\nReasoning: He agrees with planting, then 「ただ」 turns to what follows: untended plantations go dark, the soil washes away and trees fall, so planted trees weaken the mountains. The point is that planted forests need continued care."
   },
   "wrong": [
    {
@@ -1757,8 +1757,8 @@
    },
    null,
    {
-    "zh": "大雨倒树是不打理的后果之一，是细节。",
-    "en": "Trees falling in rain is one consequence of neglect — a detail."
+    "zh": "大雨倒树只是不打理带来的后果之一，是细节，不是主题。",
+    "en": "Trees falling in heavy rain is one consequence of neglect — a detail, not the topic."
    }
   ],
   "traps": [
@@ -1844,8 +1844,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「画面を見てる人が多いのは、私も気になってた。」后面又说：「それより、議題ごとに必要な人だけ呼ぶようにすれば、パソコンを開く暇なんてなくなるんじゃないかな。」\n推理：她承认看屏幕的人多是问题，但认为原因是会上有很多和自己无关的议题，收走电脑只会让人发呆。她的主张是按议题只叫需要的人，即改变开会方式。\n容易错：「必要な人だけ」说的是叫谁来开会，不是谁能带电脑；她不是为了自己的工作反对。",
-   "en": "Evidence: She says 「画面を見てる人が多いのは、私も気になってた。」 and then 「それより、議題ごとに必要な人だけ呼ぶようにすれば、パソコンを開く暇なんてなくなるんじゃないかな。」\nReasoning: She accepts that screen-staring is a problem but thinks it comes from sitting through irrelevant items; removing laptops would just leave people idle. Her proposal is inviting only those needed for each item — changing how meetings are run.\nTrap: 「必要な人だけ」 is about who attends, not who may bring a laptop; she isn't objecting for the sake of her own work."
+   "zh": "依据：女的说：「画面を見てる人が多いのは、私も気になってた。」后面又说：「それより、議題ごとに必要な人だけ呼ぶようにすれば、パソコンを開く暇なんてなくなるんじゃないかな。」\n推理：她承认看屏幕的人多是问题，但认为原因是会上有很多和自己无关的议题，收走电脑只会让人发呆。她的主张是按议题只叫需要的人，即改变开会方式。",
+   "en": "Evidence: She says 「画面を見てる人が多いのは、私も気になってた。」 and then 「それより、議題ごとに必要な人だけ呼ぶようにすれば、パソコンを開く暇なんてなくなるんじゃないかな。」\nReasoning: She accepts that screen-staring is a problem but thinks it comes from sitting through irrelevant items; removing laptops would just leave people idle. Her proposal is inviting only those needed for each item — changing how meetings are run."
   },
   "wrong": [
    {
@@ -1939,8 +1939,8 @@
    }
   },
   "why": {
-   "zh": "依据：「日付だけを頼りにするのではなく、においや見た目を自分で確かめる習慣を持ってほしいんです。」\n推理：她说明赏味期限不是安全期限，而且设得偏短；但保存不好期限内也会坏。所以不能只看日期，也要用气味和外观自己判断，否则会一直扔掉还能吃的东西。\n容易错：消费期限只是用来说明两种期限的区别，她没说只要注意那类食品；厂家留余地她只是说明原因，没要求改。",
-   "en": "Evidence: 「日付だけを頼りにするのではなく、においや見た目を自分で確かめる習慣を持ってほしいんです。」\nReasoning: She explains best-before isn't a safety date and is set short, yet food can spoil within it if stored badly. So don't rely on the date alone — check smell and look yourself, or you'll keep discarding good food.\nTrap: use-by dates only explain the difference, not the only foods to watch; the makers' margin is explained, not criticised."
+   "zh": "依据：「日付だけを頼りにするのではなく、においや見た目を自分で確かめる習慣を持ってほしいんです。」\n推理：她说明赏味期限不是安全期限，而且设得偏短；但保存不好期限内也会坏。所以不能只看日期，也要用气味和外观自己判断，否则会一直扔掉还能吃的东西。",
+   "en": "Evidence: 「日付だけを頼りにするのではなく、においや見た目を自分で確かめる習慣を持ってほしいんです。」\nReasoning: She explains best-before isn't a safety date and is set short, yet food can spoil within it if stored badly. So don't rely on the date alone — check smell and look yourself, or you'll keep discarding good food."
   },
   "wrong": [
    {
@@ -2034,8 +2034,8 @@
    }
   },
   "why": {
-   "zh": "依据：「これからは、AIのおかげで見えるようになった人間の迷いや粘りを、どう伝えていくか。それが私たちの仕事だと思っています。」\n推理：他先说 AI 比人强、研究方式变了，自己也不甘心；棋迷的话让他意识到，AI 的评估数字让观众看清人走坏棋后苦撑扳回的过程，这才最有意思。所以他认为 AI 反而让人下棋的魅力更容易被看见。\n容易错：「悔しい」只是过去的心情；AI 评估的数字正是让魅力看得见的东西，不是要取消。",
-   "en": "Evidence: 「これからは、AIのおかげで見えるようになった人間の迷いや粘りを、どう伝えていくか。それが私たちの仕事だと思っています。」\nReasoning: He grants AI is stronger and has changed study, which galled him; a fan's remark showed him that the AI's number lets viewers see a player struggle back after a bad move — the best part. So AI has made the appeal of human play easier to see.\nTrap: 「悔しい」 was a past feeling; the on-screen number is what makes the drama visible, not something to remove."
+   "zh": "依据：「これからは、AIのおかげで見えるようになった人間の迷いや粘りを、どう伝えていくか。それが私たちの仕事だと思っています。」\n推理：他先说 AI 比人强、研究方式变了，自己也不甘心；棋迷的话让他意识到，AI 的评估数字让观众看清人走坏棋后苦撑扳回的过程，这才最有意思。所以他认为 AI 反而让人下棋的魅力更容易被看见。",
+   "en": "Evidence: 「これからは、AIのおかげで見えるようになった人間の迷いや粘りを、どう伝えていくか。それが私たちの仕事だと思っています。」\nReasoning: He grants AI is stronger and has changed study, which galled him; a fan's remark showed him that the AI's number lets viewers see a player struggle back after a bad move — the best part. So AI has made the appeal of human play easier to see."
   },
   "wrong": [
    null,
@@ -2135,8 +2135,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「不便は不便だよ。」最后说：「だから、当分はこのままでいいかな。」\n推理：他承认买东西不方便，但邻居老爷爷带他进城、他帮修电脑，和邻居熟了，觉得有车反而不会这样。所以是“有不便，但满意现状”。\n容易错：和邻居熟起来是他满意的理由，他没说还是需要车；公交车少是女的说的。",
-   "en": "Evidence: He says 「不便は不便だよ。」 and ends with 「だから、当分はこのままでいいかな。」\nReasoning: He admits shopping is inconvenient, but the old man gives him lifts, he fixes the man's computer, and he's got to know the neighbours — which he thinks a car would have prevented. So: inconvenient, but content.\nTrap: getting to know the neighbours is why he is content, not a lead-in to needing a car; the few buses are the woman's remark."
+   "zh": "依据：男的说：「不便は不便だよ。」最后说：「だから、当分はこのままでいいかな。」\n推理：他承认买东西不方便，但邻居老爷爷带他进城、他帮修电脑，和邻居熟了，觉得有车反而不会这样。所以是“有不便，但满意现状”。",
+   "en": "Evidence: He says 「不便は不便だよ。」 and ends with 「だから、当分はこのままでいいかな。」\nReasoning: He admits shopping is inconvenient, but the old man gives him lifts, he fixes the man's computer, and he's got to know the neighbours — which he thinks a car would have prevented. So: inconvenient, but content."
   },
   "wrong": [
    {
@@ -2224,8 +2224,8 @@
    }
   },
   "why": {
-   "zh": "依据：最后一句：「明かりは単に暗がりを照らしただけではなく、人々の一日の使い方そのものを組み替えたのです。」\n推理：先讲照明普及以前日落而息，再举商店和娱乐、工厂夜班、家庭里晚饭后的时间这三个例子，最后用「つまり」归纳：灯光改变了人们一天的用法。贯穿全篇的是“照明普及→生活时间的变化”。\n容易错：其他三项都只是其中一个例子或开头的铺垫；工人的健康还明说「来週扱います」。",
-   "en": "Evidence: The last sentence: 「明かりは単に暗がりを照らしただけではなく、人々の一日の使い方そのものを組み替えたのです。」\nReasoning: He starts with life before lighting (to bed at sunset), gives three examples — shops and entertainment, factory night shifts, evenings at home — and sums up with 「つまり」: light changed how people use their day. The thread is 'lighting spread → daily hours changed'.\nTrap: each other option is just one example or the opening set-up; workers' health is explicitly left for 「来週」."
+   "zh": "依据：最后一句：「明かりは単に暗がりを照らしただけではなく、人々の一日の使い方そのものを組み替えたのです。」\n推理：先讲照明普及以前日落而息，再举商店和娱乐、工厂夜班、家庭里晚饭后的时间这三个例子，最后用「つまり」归纳：灯光改变了人们一天的用法。贯穿全篇的是“照明普及→生活时间的变化”。",
+   "en": "Evidence: The last sentence: 「明かりは単に暗がりを照らしただけではなく、人々の一日の使い方そのものを組み替えたのです。」\nReasoning: He starts with life before lighting (to bed at sunset), gives three examples — shops and entertainment, factory night shifts, evenings at home — and sums up with 「つまり」: light changed how people use their day. The thread is 'lighting spread → daily hours changed'."
   },
   "wrong": [
    null,
@@ -2313,8 +2313,8 @@
    }
   },
   "why": {
-   "zh": "依据：「足りないのは運転手です。」之后依次讲了驾照的负担、工资低、年轻人不来，以及休息时间延长后需要更多人。\n推理：开头先否定“乘客减少”这个常见看法，然后整段都在说明为什么司机不够，最后也说「運転手不足そのものに手を打たないかぎり」效果有限。所以主题是司机不足的背景。\n容易错：休息时间只是原因之一，而且她讲的是延长带来的结果，不是论证其必要性；自动驾驶只在最后提了一句。",
-   "en": "Evidence: 「足りないのは運転手です。」 — followed by the burden of the licence, low pay, no young recruits, and longer rest periods requiring more staff.\nReasoning: She first sets aside the usual view (fewer passengers), then spends the whole talk on why drivers are short; she ends by saying little will work 「運転手不足そのものに手を打たないかぎり」. So the topic is the background to the driver shortage.\nTrap: rest periods are just one cause — and she describes the effect of lengthening them, not the case for it; self-driving gets a single mention at the end."
+   "zh": "依据：「足りないのは運転手です。」之后依次讲了驾照的负担、工资低、年轻人不来，以及休息时间延长后需要更多人。\n推理：开头先否定“乘客减少”这个常见看法，然后整段都在说明为什么司机不够，最后也说「運転手不足そのものに手を打たないかぎり」效果有限。所以主题是司机不足的背景。",
+   "en": "Evidence: 「足りないのは運転手です。」 — followed by the burden of the licence, low pay, no young recruits, and longer rest periods requiring more staff.\nReasoning: She first sets aside the usual view (fewer passengers), then spends the whole talk on why drivers are short; she ends by saying little will work 「運転手不足そのものに手を打たないかぎり」. So the topic is the background to the driver shortage."
   },
   "wrong": [
    {
@@ -2327,8 +2327,8 @@
    },
    null,
    {
-    "zh": "休息时间的延长只是司机不足的原因之一，不是整段的主题。",
-    "en": "Longer rest periods are one cause of the shortage, not the topic of the whole talk."
+    "zh": "休息时间延长只是司机不足的原因之一；她只说了一句「必要な改正」，讲的是它让所需人手变多。",
+    "en": "Longer rest periods are one cause of the shortage; she calls it 「必要な改正」 in passing and talks about it requiring more staff."
    }
   ],
   "traps": [
@@ -2403,8 +2403,8 @@
    }
   },
   "why": {
-   "zh": "依据：最后一句：「失われて初めて、私たちはその働きの大きさに気づいたのです。」\n推理：解说依次讲了滩涂的三种作用：生物分解污物（相当于污水处理厂）、候鸟的中转站、减弱波浪保护陆地，最后用「その働きの大きさ」收束。所以主题是滩涂的各种作用。\n容易错：生物、候鸟、填埋都出现了，但各自只是一种作用的例子或结尾的一句；保护滩涂的措施则完全没讲。",
-   "en": "Evidence: The last sentence: 「失われて初めて、私たちはその働きの大きさに気づいたのです。」\nReasoning: The narration goes through three things a tidal flat does — its creatures break down dirt (like a sewage plant), it is a staging post for migratory birds, it weakens waves and shields the land — and closes on 「その働きの大きさ」. So the theme is the flat's various roles.\nTrap: the creatures, the birds and the land-filling all appear, but each is one example of a role or a single closing remark; efforts to protect the flats are never described."
+   "zh": "依据：最后一句：「失われて初めて、私たちはその働きの大きさに気づいたのです。」\n推理：解说依次讲了滩涂的三种作用：生物分解污物（相当于污水处理厂）、候鸟的中转站、减弱波浪保护陆地，最后用「その働きの大きさ」收束。所以主题是滩涂的各种作用。",
+   "en": "Evidence: The last sentence: 「失われて初めて、私たちはその働きの大きさに気づいたのです。」\nReasoning: The narration goes through three things a tidal flat does — its creatures break down dirt (like a sewage plant), it is a staging post for migratory birds, it weakens waves and shields the land — and closes on 「その働きの大きさ」. So the theme is the flat's various roles."
   },
   "wrong": [
    {
@@ -2492,8 +2492,8 @@
    }
   },
   "why": {
-   "zh": "依据：开头：「当初は十月の発売を予定しておりましたが、……来年の二月にずれ込む見通しです。」之后讲零件漏蒸汽、要修改设计和重新试验。\n推理：先说结论（推迟上市），再说原因（零件的缺陷）、对策和所需时间，最后请大家理解。整段都是在交代为什么要推迟，「ずれ込む」＝推迟。\n容易错：更换供应商是考虑过但没采用的方案；样机性能「目標を満たしております」；其他公司的产品只是带过。",
-   "en": "Evidence: The opening: 「当初は十月の発売を予定しておりましたが、……来年の二月にずれ込む見通しです。」 — followed by the leaking part, the redesign and the renewed testing.\nReasoning: She gives the conclusion (the launch slips), then the cause (a faulty part), the remedy and the time it needs, and asks for understanding. The whole talk accounts for the delay; 「ずれ込む」 means to slip later.\nTrap: changing supplier was considered and not adopted; the prototype's performance already 「目標を満たしております」; the competitor is a passing remark."
+   "zh": "依据：开头：「当初は十月の発売を予定しておりましたが、……来年の二月にずれ込む見通しです。」之后讲零件漏蒸汽、要修改设计和重新试验。\n推理：先说结论（推迟上市），再说原因（零件的缺陷）、对策和所需时间，最后请大家理解。整段都是在交代为什么要推迟，「ずれ込む」＝推迟。",
+   "en": "Evidence: The opening: 「当初は十月の発売を予定しておりましたが、……来年の二月にずれ込む見通しです。」 — followed by the leaking part, the redesign and the renewed testing.\nReasoning: She gives the conclusion (the launch slips), then the cause (a faulty part), the remedy and the time it needs, and asks for understanding. The whole talk accounts for the delay; 「ずれ込む」 means to slip later."
   },
   "wrong": [
    {
@@ -2582,8 +2582,8 @@
    }
   },
   "why": {
-   "zh": "依据：最后一句：「一枚の布が、その時々の暮らしの求めに応じて役割を変えてきたことがわかります。」\n推理：按时间顺序讲了四个阶段：澡堂里用的布→搬运东西的工具→战后只剩礼仪用途→近年作为环保包装被重新重视。「役割を変えてきた」就是用法的变迁。\n容易错：名字的由来只是开头的引子；系法和塑料袋只是最后一个阶段里的细节。",
-   "en": "Evidence: The last sentence: 「一枚の布が、その時々の暮らしの求めに応じて役割を変えてきたことがわかります。」\nReasoning: He goes through four stages in order: a cloth for the bath → a means of carrying things → after the war, ceremonial use only → rediscovered recently as reusable wrapping. 「役割を変えてきた」 is the change in how it is used.\nTrap: the origin of the name is only the way in; tying methods and plastic bags are details of the last stage."
+   "zh": "依据：最后一句：「一枚の布が、その時々の暮らしの求めに応じて役割を変えてきたことがわかります。」\n推理：按时间顺序讲了四个阶段：澡堂里用的布→搬运东西的工具→战后只剩礼仪用途→近年作为环保包装被重新重视。「役割を変えてきた」就是用法的变迁。",
+   "en": "Evidence: The last sentence: 「一枚の布が、その時々の暮らしの求めに応じて役割を変えてきたことがわかります。」\nReasoning: He goes through four stages in order: a cloth for the bath → a means of carrying things → after the war, ceremonial use only → rediscovered recently as reusable wrapping. 「役割を変えてきた」 is the change in how it is used."
   },
   "wrong": [
    null,
@@ -2671,8 +2671,8 @@
    }
   },
   "why": {
-   "zh": "依据：最后一句：「こうして各国は、国全体で一つの時刻を使うという決まりを、法律で定めるに至ったのです。」\n推理：从各城镇时刻不同讲起，经过铁路（时刻表）、电报的普及，一步步讲到用法律统一全国的时刻。「こうして……に至った」表示前面都是到达这一结果的过程，所以主题是统一时刻确立的经过。\n容易错：正午的偏差是出发点；铁路的时刻表和电报各是过程中的一个因素。",
-   "en": "Evidence: The last sentence: 「こうして各国は、国全体で一つの時刻を使うという決まりを、法律で定めるに至ったのです。」\nReasoning: Starting from towns each having their own time, she moves through the railway (timetables) and the telegraph to a single national time fixed by law. 「こうして……に至った」 marks everything before it as the path to that result, so the theme is how unified time came about.\nTrap: the shifting noon is the starting point; railway timetables and the telegraph are each one factor along the way."
+   "zh": "依据：最后一句：「こうして各国は、国全体で一つの時刻を使うという決まりを、法律で定めるに至ったのです。」\n推理：从各城镇时刻不同讲起，经过铁路（时刻表）、电报的普及，一步步讲到用法律统一全国的时刻。「こうして……に至った」表示前面都是到达这一结果的过程，所以主题是统一时刻确立的经过。",
+   "en": "Evidence: The last sentence: 「こうして各国は、国全体で一つの時刻を使うという決まりを、法律で定めるに至ったのです。」\nReasoning: Starting from towns each having their own time, she moves through the railway (timetables) and the telegraph to a single national time fixed by law. 「こうして……に至った」 marks everything before it as the path to that result, so the theme is how unified time came about."
   },
   "wrong": [
    {
