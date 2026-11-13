@@ -41,7 +41,7 @@
   function track(name, p) { try { if (window.gaEvent) window.gaEvent(name, p); } catch (e) {} }
 
   // ─── Storage ───
-  function fresh() { return { v: 1, answers: {}, review: {}, reported: [], session: null, days: {}, prefs: {}, mock: {}, cards: {}, cardDays: {} }; }
+  function fresh() { return { v: 1, answers: {}, review: {}, reported: [], session: null, days: {}, prefs: {}, mock: {}, cards: {}, cardDays: {}, fav: {} }; }
   function load() {
     try {
       var s = JSON.parse(localStorage.getItem(KEY));
@@ -129,6 +129,14 @@
   function lastT(id) { var a = S.answers[id] || []; return a.length ? a[a.length - 1].t : 0; }
   function due() { var n = now(); return ALL.filter(function (q) { var r = S.review[q.id]; return r && r.due <= n; }); }
   function inReview() { return ALL.filter(function (q) { return S.review[q.id]; }); }
+  // Saved questions: S.fav[id] = when it was saved (ms); negative = when it was
+  // taken off again, kept so the removal reaches the reader's other devices.
+  function isFav(id) { return (S.fav || {})[id] > 0; }
+  function favs() { return ALL.filter(function (q) { return isFav(q.id); }).sort(function (a, b) { return S.fav[b.id] - S.fav[a.id]; }); }
+  // Mock-test questions (saved in a test's review) are not in the practice bank:
+  // they are listed on the mock-test page, per test.
+  function mockFavs(prefix) { return Object.keys(S.fav || {}).filter(function (id) { return S.fav[id] > 0 && id.indexOf(prefix) === 0; }); }
+  function favBtn(q) { var on = isFav(q.id); return '<button class="q-btn q-fav" data-act="fav" data-k="' + q.id + '" aria-pressed="' + on + '">' + (on ? '★ ' + t('已收藏', 'Saved') : '☆ ' + t('收藏', 'Save')) + '</button>'; }
 
   // Accuracy over the last RECENT answers to questions matching `pick`.
   function accuracy(pick) {
@@ -299,6 +307,11 @@
     h += '<section class="q-sec"><h2>' + t('错题本', 'Review list') + '</h2><p>' +
       (r ? t('共 ', '') + r + t(' 题，今天到期 ', ' questions, ') + d + t(' 题', ' due today') : t('还没有错题。答错、点了“不会”或“其实是猜的”的题会出现在这里，隔几天再考你一次。', 'Nothing here yet. Questions you miss, mark “I don’t know”, or flag as a guess show up here and come back a few days later.')) + '</p>' +
       (r ? '<button class="q-btn" data-act="review"' + (d ? '' : ' data-early="1"') + '>' + (d ? t('复习到期的错题', 'Review due questions') : t('提前复习', 'Review early')) + '</button> <button class="q-btn" data-act="review-list">' + t('查看错题', 'See the list') + '</button>' : '') + '</section>';
+    var fv = favs().length, mfv = mockFavs(LEVEL.toLowerCase() + '-m').length;
+    h += '<section class="q-sec"><h2>' + t('我的收藏', 'Saved questions') + '</h2><p>' +
+      (fv ? t('共 ', '') + fv + t(' 题', fv === 1 ? ' question' : ' questions') : mfv ? '' : t('还没有收藏。答完一道题后点 ☆ 收藏，想再看的题就留在这里。', 'Nothing saved yet. After answering a question, tap ☆ Save to keep it here.')) + '</p>' +
+      (fv ? '<button class="q-btn" data-act="fav-start">' + t('练收藏的题', 'Practise saved questions') + '</button> <button class="q-btn" data-act="fav-list">' + t('查看收藏', 'See the list') + '</button>' : '') +
+      (mfv ? '<p class="q-muted">' + t('模拟题里收藏了 ' + mfv + ' 题，', mfv + ' saved from mock tests — ') + '<a href="' + location.pathname.replace(/-(practice|listening|reading|vocabulary)\/$/, '-mock-test/') + '">' + t('在模拟题页查看', 'see them on the mock test page') + '</a></p>' : '') + '</section>';
     Object.keys(D.groups).forEach(function (g) {
       var keys = Object.keys(D.types).filter(function (k) { return D.types[k].g === g; });
       if (!keys.length) return;
@@ -777,7 +790,7 @@
     cur.choice = choice;
     // 不会 before answering; 其实是猜的 after a right answer (both go on the review list).
     var h = '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (ok ? '✓ ' + t('正确', 'Correct') : '✗ ' + (choice == null ? t('不会 · ', 'Didn’t know · ') : '') + t('正确答案是 ', 'The answer is ') + (q.answer + 1) + ' <span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span>') +
-      (ok ? ' <button class="q-btn q-was-guess" data-act="was-guess">' + t('其实是猜的', 'I guessed') + '</button>' : '') + '</p>';
+      (ok ? ' <button class="q-btn q-was-guess" data-act="was-guess">' + t('其实是猜的', 'I guessed') + '</button>' : '') + ' ' + favBtn(q) + '</p>';
     if (q.type === 'narabe' && !ok) h += '<p class="q-order" lang="ja">' + t('正确顺序：', 'Right order: ') + q.order.map(function (i) { return q.options[i]; }).join(' → ') + '</p>';
     var left = curs ? Object.keys(curs).filter(function (id) { return !curs[id].done; }) : [];
     var aiFirst = !ok || cur.guess;
@@ -845,6 +858,32 @@
         (days <= 0 ? t('今天复习', 'due today') : days + t(' 天后复习', days === 1 ? ' day to go' : ' days to go')) + '</div>' +
         '<details class="q-rl-more"><summary>' + t('解析', 'Explanation') + '</summary>' + (isCk(q) ? ckPlayer(q) + ckScript(q) : '') + '<p>' + ex(q.why) + '</p>' + kjHtml(q) + (q.tr ? '<p class="q-muted">' + esc(bi(q.tr)) + '</p>' : '') + wholeHtml(q, D.passages) +
         pointsHtml(q) + '<button class="q-btn" data-act="unreview" data-k="' + q.id + '">' + t('已经会了，移出错题本', 'I’ve got it — remove') + '</button></details></li>';
+    }).join('') + '</ul>';
+    app.innerHTML = h + '</div>';
+    toTop();
+  }
+
+  // Saved questions, newest first; the same filter by part as the review list.
+  var favGroup = '';
+  function favList() {
+    view(false);
+    var every = favs();
+    var groups = Object.keys(D.groups).filter(function (g) { return every.some(function (q) { return grpOf(q) === g; }); });
+    if (groups.indexOf(favGroup) < 0) favGroup = '';
+    var list = favGroup ? every.filter(function (q) { return grpOf(q) === favGroup; }) : every;
+    var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button><span>' + t('我的收藏 · ', 'Saved · ') + every.length + t(' 题', '') + '</span><span></span></div><div class="q-card q-summary">';
+    if (groups.length > 1) h += '<div class="q-filter" role="group" aria-label="' + t('按部分筛选', 'Filter by part') + '">' + [''].concat(groups).map(function (g) {
+      var n = g ? every.filter(function (q) { return grpOf(q) === g; }).length : every.length;
+      return '<button class="q-btn q-filter-btn" data-act="fav-group" data-k="' + g + '" aria-pressed="' + (g === favGroup) + '">' + (g ? esc(bi(D.groups[g])) : t('全部', 'All')) + ' <span class="q-muted">' + n + '</span></button>';
+    }).join('') + '</div>';
+    if (!every.length) h += '<p>' + t('还没有收藏。答完一道题后点 ☆ 收藏。', 'Nothing saved yet. After answering a question, tap ☆ Save.') + '</p>';
+    else h += '<p><button class="q-btn q-btn-primary" data-act="fav-start" data-k="' + favGroup + '">' + (favGroup ? t('练收藏的' + bi(D.groups[favGroup]), 'Practise saved ' + bi(D.groups[favGroup])) : t('练收藏的题', 'Practise saved questions')) + '</button></p><ul class="q-sumlist">' + list.map(function (q) {
+      var a = S.answers[q.id] || [], last = a[a.length - 1];
+      var mine = !last ? '' : last.ok ? (last.g ? t('上次猜对', 'Last time: guessed right') : t('上次答对', 'Last time: right')) : last.c == null ? t('上次不会', 'Last time: didn’t know') : t('上次选 ', 'Last time: ') + '<span lang="ja">' + q.options[last.c] + '</span>';
+      return '<li><div lang="ja" class="q-sumstem">' + sumLabel(q) + '</div>' +
+        '<div class="q-muted">' + (mine ? mine + ' · ' : '') + t('答案 ', 'Answer: ') + '<span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span></div>' +
+        '<details class="q-rl-more"><summary>' + t('解析', 'Explanation') + '</summary>' + (isCk(q) ? ckPlayer(q) + ckScript(q) : '') + '<p>' + ex(q.why) + '</p>' + kjHtml(q) + (q.tr ? '<p class="q-muted">' + esc(bi(q.tr)) + '</p>' : '') + wholeHtml(q, D.passages) +
+        pointsHtml(q) + '<button class="q-btn" data-act="unfav" data-k="' + q.id + '">' + t('取消收藏', 'Remove from saved') + '</button></details></li>';
     }).join('') + '</ul>';
     app.innerHTML = h + '</div>';
     toTop();
@@ -937,6 +976,11 @@
       if (!list.length) list = inReview().filter(mine).sort(function (a, b) { return S.review[a.id].due - S.review[b.id].due; });
       start('review', arrange(list.slice(0, n)), k || '');   // the label carries the part into 再来一组
     }
+    else if (kind === 'fav') {
+      // Seen longest ago first, so a long list comes round set by set.
+      var fl = favs().filter(function (q) { return !k || grpOf(q) === k; }).sort(function (a, b) { return lastT(a.id) - lastT(b.id); });
+      start('fav', arrange(fl.slice(0, n)), k || '');
+    }
   }
 
 
@@ -972,6 +1016,8 @@
       if (cur) h += '<button class="q-btn q-btn-primary" data-act="m-resume" data-k="' + set.id + '">' + t('继续', 'Continue') + '</button><button class="q-btn" data-act="m-drop" data-k="' + set.id + '">' + t('放弃这次', 'Discard') + '</button>';
       else h += '<button class="q-btn q-btn-primary" data-act="m-intro" data-k="' + set.id + '">' + (att.length ? t('再做一次', 'Take again') : t('开始', 'Start')) + '</button>';
       if (last) h += '<button class="q-btn" data-act="m-result" data-k="' + set.id + '">' + t('看上次结果', 'Last result') + '</button>';
+      var nf = mockFavs(set.id.replace('mock-', 'm') + '-').length;
+      if (nf) h += '<button class="q-btn" data-act="m-fav" data-k="' + set.id + '">★ ' + t('收藏的题 ' + nf, 'Saved (' + nf + ')') + '</button>';
       h += '</div></div>';
     });
     // More sets are on the way: say so, so a reader who finished set 1 knows to come back.
@@ -1210,11 +1256,12 @@
 
   function mockReview(which) {
     view(false);
-    var test = M.test, key = M.key, att = M.att, h = '<div class="q-top"><button class="q-link" data-act="m-back-result">‹ ' + t('回到结果', 'Back to results') + '</button></div>';
+    // which: 'wrong' | 'all' | 'fav' (the saved questions of this test, opened from the list of tests)
+    var test = M.test, key = M.key, att = M.att, FAV = which === 'fav', h = '<div class="q-top"><button class="q-link" data-act="' + (FAV ? 'm-list' : 'm-back-result') + '">‹ ' + (FAV ? t('返回', 'Back') : t('回到结果', 'Back to results')) + '</button>' + (FAV ? '<span>' + t('第 ' + M.set.n + ' 套 · 收藏的题', 'Test ' + M.set.n + ' · saved') + '</span><span></span>' : '') + '</div>';
     var shownP = {};
-    function listed(id) { var aa = att.answers[id] || {}; return !(which === 'wrong' && aa.c === key.questions[id].answer && !aa.g); }
+    function listed(id) { var aa = att.answers[id] || {}; return FAV ? isFav(id) : !(which === 'wrong' && aa.c === key.questions[id].answer && !aa.g); }
     test.sections.forEach(function (sec, si) {
-      if (att.mode !== 'full' && +att.mode !== si) return;
+      if (!FAV && att.mode !== 'full' && +att.mode !== si) return;
       sec.problems.forEach(function (p) {
         p.ids.forEach(function (id, k) {
           var q = Q[id], kq = key.questions[id], a = att.answers[id] || {}, ok = a.c === kq.answer;
@@ -1224,7 +1271,7 @@
           var qq = {}; for (var x in q) qq[x] = q[x]; for (var y in kq) qq[y] = kq[y];
           if (isCk(q)) {
             var again = q.passage && shownP[q.passage]; if (q.passage) shownP[q.passage] = 1;
-            h += '<div class="q-card q-revcard"><p class="q-prob"><b>' + (si + 1) + '-' + p.no + '</b> ' + esc(test.types[p.type].ja) + '<span class="q-qno">' + ckNo(p, id) + '番</span></p>' + ckReview(qq, a, again) + aiBtn(false, 'm-ai').replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
+            h += '<div class="q-card q-revcard"><p class="q-prob"><b>' + (si + 1) + '-' + p.no + '</b> ' + esc(test.types[p.type].ja) + '<span class="q-qno">' + ckNo(p, id) + '番</span></p>' + ckReview(qq, a, again) + '<p>' + favBtn(q) + '</p>' + aiBtn(false, 'm-ai').replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
             return;
           }
           h += '<div class="q-card q-revcard">';
@@ -1232,7 +1279,7 @@
           h += '<p class="q-prob"><b>' + (si + 1) + '-' + p.no + '</b> ' + esc(test.types[p.type].ja) + '</p><div class="q-stem" lang="ja">' + stemHtml(qq).replace(/<button[^>]*>(★)?<\/button>/g, function (m, st) { return st ? '＿★＿' : '＿＿'; }) + '</div>';
           if (q.type === 'narabe') h += '<p lang="ja">' + t('正确顺序：', 'Order: ') + kq.order.map(function (i) { return q.options[i]; }).join(' / ') + '</p>';
           h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + (i === kq.answer ? ' q-ok' : i === a.c ? ' q-bad' : '') + '"><span class="q-num">' + (i + 1) + '</span>' + o + okjOf(qq, i) + '</div></li>'; }).join('') + '</ol>';
-          h += '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 猜对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</p>';
+          h += '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 猜对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + ' ' + favBtn(q) + '</p>';
           h += '<div class="q-explain"><p>' + ex(kq.why) + '</p>' + (q.type !== 'narabe' ? '<ul class="q-wrong">' + kq.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + q.options[i] + okjOf(qq, i) + '</b> — ' + ex(w) + '</li>' : ''; }).join('') + '</ul>' : '') +
             kjHtml(qq) + (kq.tr ? '<p class="q-muted">' + esc(bi(kq.tr)) + '</p>' : '') + (lastOfP ? wholeHtml(qq, key.passages, false) : '') + '</div>' +
             aiBtn(false, 'm-ai').replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
@@ -1280,6 +1327,12 @@
     else if (act === 'm-resume') { var set = setById(k); loadTest(set).then(function (test) { M = { set: set, test: test }; var c = cur2(); if (!c.secStart) { c.secStart = Date.now(); save(); } if (c.pauseAt) { mockSection(); pause(false); } else mockSection(); }).catch(loadFail); }
     else if (act === 'm-drop') { if (window.confirm(t('放弃这次作答？', 'Discard this attempt?'))) { mstate(k).current = null; save(); mockList(); } }
     else if (act === 'm-result') lastResult(setById(k));
+    else if (act === 'm-fav') {
+      var fs = setById(k), fa = mstate(k).attempts.slice(-1)[0] || { mode: 'full', answers: {} };
+      loadTest(fs).then(function (test) {
+        return fetch(fs.key).then(function (r) { return r.json(); }).then(function (key) { M = { set: fs, test: test, att: fa, key: key }; mockReview('fav'); });
+      }).catch(loadFail);
+    }
     else if (act === 'm-sheet') { var sh = app.querySelector('.q-sheet'); sh.hidden = !sh.hidden; if (!sh.hidden) sh.scrollIntoView({ block: 'nearest' }); }
     else if (act === 'm-go') { cur2().at = +k; save(); mockSection(); }
     else if (act === 'm-opt') { mockAnswer(+el.getAttribute('data-i')); root().querySelectorAll('.q-opt').forEach(function (b, i) { b.classList.toggle('q-picked', i === +el.getAttribute('data-i')); }); }
@@ -1798,6 +1851,18 @@
     else if (act === 'analysis') analysis();
     else if (act === 'share') shareScore(el);
     else if (act === 'weak') startKind('weak');
+    else if (act === 'fav-list') favList();
+    else if (act === 'fav-group') { favGroup = el.getAttribute('data-k') || ''; favList(); }
+    else if (act === 'fav-start') startKind('fav', el.getAttribute('data-k') || '');
+    else if (act === 'fav') {
+      var fid = el.getAttribute('data-k'), on = !isFav(fid);
+      if (!S.fav) S.fav = {};
+      S.fav[fid] = on ? Date.now() : -Date.now();
+      save();
+      track('quiz_fav', { on: on ? 1 : 0, type: Q[fid] ? Q[fid].type : '' });
+      el.outerHTML = favBtn(Q[fid]);
+    }
+    else if (act === 'unfav') { S.fav[el.getAttribute('data-k')] = -Date.now(); save(); var fy = window.scrollY; favList(); window.scrollTo(0, fy); }
     else if (act === 'unreview') { delete S.review[el.getAttribute('data-k')]; save(); var y = window.scrollY; reviewList(); window.scrollTo(0, y); }
     else if (act === 'drop') { S.session = null; save(); home(); }
     else if (act === 'home') home();

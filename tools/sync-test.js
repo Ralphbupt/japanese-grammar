@@ -85,6 +85,14 @@ test("cards: the copy graded most recently", () => {
   assert.deepStrictEqual(m.cardDays.d, { n: 3, r: 5 });
 });
 
+test("saved questions: saving on either device is kept; the later of saving and removing wins", () => {
+  const a = base({ fav: { q1: 1000, q2: 2000, q3: -5000 }, at: 1 });
+  const b = base({ fav: { q2: -3000, q3: 4000, q4: 6000 }, at: 2 });
+  const m = merge(a, b);
+  assert.deepStrictEqual(m.fav, { q1: 1000, q2: -3000, q3: -5000, q4: 6000 });
+  assert.deepStrictEqual(merge(base({ at: 1 }), b).fav, b.fav);
+});
+
 test("session stays this browser's; reported is the union; prefs from the newer side", () => {
   const a = base({ session: { ids: ["q1"] }, reported: ["q1"], prefs: { rate: 1, size: 10 }, at: 1000 });
   const b = base({ session: { ids: ["q9"] }, reported: ["q1", "q2"], prefs: { rate: 1.25 }, at: 2000 });

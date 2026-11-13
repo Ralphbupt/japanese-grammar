@@ -41,6 +41,7 @@
   //   mock      every submitted attempt (by start time); the unfinished one that
   //             started later, unless it has been submitted since
   //   cards     per card the copy graded most recently
+  //   fav       saved questions: per question whichever happened later, saving or removing
   //   session   this browser's unfinished practice set, never the other device's
   // `local` wins ties where there is no time to compare and it changed last.
   //
@@ -73,6 +74,12 @@
       if ((src.review || {})[q]) out.review[q] = src.review[q];
     });
     out.reported = keys.apply(null, [a.reported, b.reported].map(function (l) { var o = {}; (l || []).forEach(function (id) { o[id] = 1; }); return o; }));
+    // Saved questions: per question the later of saving (+ms) and removing (−ms).
+    out.fav = {};
+    keys(a.fav, b.fav).forEach(function (q) {
+      var x = (a.fav || {})[q] || 0, y = (b.fav || {})[q] || 0;
+      out.fav[q] = Math.abs(x) >= Math.abs(y) ? x : y;
+    });
     out.session = a.session || null;
     out.days = {};
     // … and at least the answers the merged history holds for that date, which
