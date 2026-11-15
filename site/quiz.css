@@ -455,3 +455,9 @@ body.quiz-busy .quiz-about { display: none; }
   .q-row { gap: .6rem; padding: .5rem .75rem; }
   .q-bar { width: 2.8rem; }
 }
+
+.q-ck-fold { margin: .8rem 0; padding: 0; background: none; border-radius: 0; }
+.q-ck-fold > summary { cursor: pointer; padding: .55rem .9rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface-2); font-weight: 600; }
+.q-ck-fold > summary .q-muted { font-weight: 400; font-size: .88em; margin-left: .4em; }
+.q-ck-fold[open] > summary { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+.q-ck-fold .q-ck-script { margin-top: 0; border-top: 0; border-top-left-radius: 0; border-top-right-radius: 0; }
