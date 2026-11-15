@@ -115,8 +115,14 @@
     ALL = D.questions.filter(function (q) { return S.reported.indexOf(q.id) < 0; });
     home();
     // Deep links from other pages: #type=kanji, #lesson=lesson05, #ref=lesson05.3
-    var m = location.hash.match(/^#(type|lesson|ref)=([\w.]+)$/);
-    if (m) { history.replaceState(null, '', location.pathname); startKind(m[1], m[1] === 'ref' ? m[2].replace('.', '#') : m[2]); }
+    // #start=daily (the home page's try-one card): straight into today's set,
+    // unless a set is already under way.
+    var m = location.hash.match(/^#(type|lesson|ref|start)=([\w.]+)$/);
+    if (m) {
+      history.replaceState(null, '', location.pathname);
+      if (m[1] === 'start') { if (m[2] === 'daily' && !S.session) startKind('daily'); }
+      else startKind(m[1], m[1] === 'ref' ? m[2].replace('.', '#') : m[2]);
+    }
   }).catch(loadFail);
   }
 
@@ -820,7 +826,9 @@
     var left = curs ? Object.keys(curs).filter(function (id) { return !curs[id].done; }) : [];
     // A recording with several questions: the transcript (it has every question
     // and its answer) once all of them are answered, under the last one.
-    if (isCk(q) && !left.length) h += ckScript(q);
+    // After a miss the transcript stays folded: listen once more first, then read.
+    var ckMiss = !ok || (curs && S.session.res.some(function (r) { return curs[r.id] && !r.ok; }));
+    if (isCk(q) && !left.length) h += ckScript(q, ckMiss);
     // The finished sentence and its translation first: understand the sentence,
     // then read why the answer fits it.
     // Order: the sentence, then why the reader's own pick fails (what they want
@@ -882,7 +890,7 @@
       return '<li><div lang="ja" class="q-sumstem">' + sumLabel(q) + '</div>' +
         '<div class="q-muted">' + (mine ? mine + ' · ' : '') + t('答案 ', 'Answer: ') + '<span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span> · ' +
         (days <= 0 ? t('今天复习', 'due today') : days + t(' 天后复习', days === 1 ? ' day to go' : ' days to go')) + '</div>' +
-        '<details class="q-rl-more"><summary>' + t('解析', 'Explanation') + '</summary>' + (isCk(q) ? ckPlayer(q) + ckScript(q) : '') + whyHtml(q.why) + kjHtml(q) + (q.tr ? '<p class="q-muted">' + esc(bi(q.tr)) + '</p>' : '') + wholeHtml(q, D.passages) +
+        '<details class="q-rl-more"><summary>' + t('解析', 'Explanation') + '</summary>' + (isCk(q) ? ckPlayer(q) + ckScript(q, true) : '') + whyHtml(q.why) + kjHtml(q) + (q.tr ? '<p class="q-muted">' + esc(bi(q.tr)) + '</p>' : '') + wholeHtml(q, D.passages) +
         pointsHtml(q) + '<button class="q-btn" data-act="unreview" data-k="' + q.id + '">' + t('已经会了，移出错题本', 'I’ve got it — remove') + '</button></details></li>';
     }).join('') + '</ul>';
     app.innerHTML = h + '</div>';
@@ -1548,14 +1556,16 @@
   // The transcript in the order it is heard (the segments of `au`): narrator's
   // scene and question(s), each line with its speaker, the spoken options; a ▶
   // per segment and the translation under each.
-  function ckScript(q) {
+  // `fold`: behind 显示原文 (after a miss, so the reader listens again before reading).
+  function ckScript(q, fold) {
     var segs = (q.au && q.au.segs) || [];
     var row = function (who, ja, sub, btn, cls, sg) { return '<li' + (cls ? ' class="' + cls + '"' : '') + (sg ? ' data-k="' + q.au.f + '" data-t="' + sg.t + '" data-d="' + sg.d + '"' : '') + '>' + (who ? '<b class="q-ck-who">' + esc(who) + '</b>' : '') + '<span><span lang="ja">' + ja + '</span>' + btn + (sub ? '<small>' + esc(sub) + '</small>' : '') + '</span></li>'; };
-    return '<div class="q-ck-script"><p class="q-ck-head">' + t('听力原文', 'Transcript') +
+    var open = fold ? '<details class="q-ck-fold"><summary>' + t('显示原文', 'Show the transcript') + ' <span class="q-muted">' + t('先再听一遍，看能不能听出来', 'listen once more first') + '</span></summary>' : '';
+    return open + '<div class="q-ck-script"><p class="q-ck-head">' + t('听力原文', 'Transcript') +
       (segs.length ? ' <button class="q-ck-tool q-ck-loop' + (ck.loop ? ' q-on' : '') + '" data-act="ck-loop" aria-pressed="' + ck.loop + '" title="' + t('点 ▶ 听一句时反复播放，适合跟读', 'Repeat a line played with ▶, for shadowing') + '">🔁 ' + t('单句循环', 'Repeat line') + '</button>' : '') +
       '</p><ol>' + ckParts(q).map(function (p) {
       return row(p.who, p.ja, p.tr, ckSegBtn(q, p.k, p.i), p.who ? '' : 'q-ck-nar', segs.filter(function (x) { return x.k === p.k && x.i === p.i; })[0]);
-    }).join('') + '</ol></div>';
+    }).join('') + '</ol></div>' + (fold ? '</details>' : '');
   }
   // Plain text of the transcript for the AI context.
   function ckPlain(q) {
@@ -1582,7 +1592,7 @@
     if (q.pic && q.pic.opts) h += '<ol class="q-ck-pics">' + q.pic.opts.map(function (f, i) { return '<li><div class="q-opt q-ck-pic' + mark(i) + '"><span class="q-num">' + (i + 1) + '</span><img src="' + CK_IMG + f + '" alt="' + esc(plainJa(q.options[i])) + '" width="304" height="343" loading="lazy"></div></li>'; }).join('') + '</ol>';
     else h += '<ol class="q-opts' + (q.spoken ? ' q-ck-nums q-ck-shown' : '') + '" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + mark(i) + '"><span class="q-num">' + (i + 1) + '</span>' + (q.spoken ? ckOptText(q, i) : o) + '</div></li>'; }).join('') + '</ol>';
     h += '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 猜对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</p>';
-    return h + (again ? '' : ckScript(q)) + '<div class="q-explain">' + whyHtml(q.why) + '<ul class="q-wrong">' + q.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + (q.pic && q.pic.opts ? '' : q.options[i]) + '</b> — ' + ex(w) + '</li>' : ''; }).join('') + '</ul></div>';
+    return h + (again ? '' : ckScript(q, !ok)) + '<div class="q-explain">' + whyHtml(q.why) + '<ul class="q-wrong">' + q.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + (q.pic && q.pic.opts ? '' : q.options[i]) + '</b> — ' + ex(w) + '</li>' : ''; }).join('') + '</ul></div>';
   }
 
   // The mock test's listening sitting, like the real one: one tap starts it,

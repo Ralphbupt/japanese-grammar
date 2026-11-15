@@ -291,6 +291,114 @@ const PROGRESS_JS = `(function(){
   el.innerHTML = h;
   el.hidden = false;
 })();`;
+// Home page, first screen: a reader with no practice history gets one real
+// question to answer in place (GA 2026-11: half of the new readers landing on
+// the home page left without opening anything, while 41% of those landing on a
+// practice page answered a question). One short grammar question per level,
+// taken from the built bank so options and furigana match the practice page;
+// filled in after buildQuiz() (HOME_TRY_SLOT → homeTryHtml()). Not recorded
+// as progress. A reader with history keeps the example sentence, and
+// 开始做题 takes them straight to their last level.
+const HOME_TRY_SLOT = "<!--home-try-->";
+const HOME_TRY_IDS = { N5: "n5-l08-007", N4: "n4-l31-016", N3: "n3-l58-023", N2: "n2-l59-001", N1: "n1-l83-011" };
+const HOME_TRY_JS = `(function(){
+  var box = document.getElementById('home-try'), note = document.getElementById('hero-note'), go = document.getElementById('home-start');
+  if (!box) return;
+  var S = null, last = null, lt = 0;
+  try { S = JSON.parse(localStorage.getItem('jp_quiz_v1')); } catch (e) {}
+  var A = (S && S.answers) || {};
+  for (var id in A) { var a = A[id], x = a && a[a.length - 1], m = /^n([1-5])-/.exec(id); if (m && x && x.t > lt) { lt = x.t; last = 'n' + m[1]; } }
+  if (last) { if (go) go.href = last + '-practice/'; return; }
+  var Q = JSON.parse(document.getElementById('home-try-data').textContent), lv = null, done = false;
+  try { lv = localStorage.getItem('jp_home_lv'); } catch (e) {}
+  if (!Q[lv]) lv = Q.N5 ? 'N5' : Object.keys(Q)[0];
+  var b = function (zh, en) { return '<span class="lang-zh">' + zh + '</span><span class="lang-en">' + en + '</span>'; };
+  var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+  var ev = function (n, p) { try { if (window.gaEvent) window.gaEvent(n, p); } catch (e) {} };
+  var lines = function (s) { return String(s).split('\\n').filter(function (l) { return l.trim(); }); };
+  var why = function (q) {
+    var z = lines(q.why.zh), e = lines(q.why.en), h = '';
+    var row = function (l, cls, re) { var m = l.match(re); return m ? '<span class="try-k ' + cls + '">' + esc(m[1]) + '</span><span class="' + cls + '">' + esc(m[2]) + '</span>' : '<span class="try-all ' + cls + '">' + esc(l) + '</span>'; };
+    z.forEach(function (l) { h += row(l, 'lang-zh', /^([^：:「」，。\\s]{1,6})[：:]\\s*(.+)$/); });
+    e.forEach(function (l) { h += row(l, 'lang-en', /^([A-Za-z][A-Za-z ]{1,13}):\\s*(.+)$/); });
+    return '<div class="try-why">' + h + '</div>';
+  };
+  function draw(pick) {
+    var q = Q[lv], lo = lv.toLowerCase(), h = '<div class="try-top"><span class="try-lead">' + b('先试一道', 'Try one') + '</span><span class="try-lvs">';
+    for (var k in Q) h += '<button type="button" class="try-lv" data-lv="' + k + '" aria-pressed="' + (k === lv) + '">' + k + '</button>';
+    h += '</span></div>';
+    h += '<p class="try-stem" lang="ja">' + (pick == null ? q.stem.replace('（　）', '<span class="try-blank">（　　）</span>') : q.full) + '</p>';
+    if (pick != null) h += '<p class="try-tr">' + b(esc(q.tr.zh), esc(q.tr.en)) + '</p>';
+    var long = q.options.some(function (o) { return o.replace(/<rt>.*?<\\/rt>|<rp>.*?<\\/rp>|<[^>]+>/g, '').length > 5; });
+    h += '<div class="try-opts' + (long ? ' try-opts-1' : '') + '">';
+    q.options.forEach(function (o, i) {
+      var c = pick == null ? '' : i === q.answer ? ' try-ok' : i === pick ? ' try-bad' : ' try-off';
+      h += '<button type="button" class="try-opt' + c + '" data-i="' + i + '"' + (pick == null ? '' : ' disabled') + '><span class="try-num">' + (i + 1) + '</span><span lang="ja">' + o + '</span></button>';
+    });
+    h += '</div>';
+    if (pick != null) {
+      var ok = pick === q.answer;
+      h += '<div class="try-res" aria-live="polite"><p class="try-verdict ' + (ok ? 'ok' : 'bad') + '">' + (ok ? b('答对了', 'Correct') : b('不对，答案是 ' + (q.answer + 1), 'Not quite — it’s ' + (q.answer + 1))) + '</p>';
+      if (!ok && q.wrong[pick]) h += '<p class="try-mine"><b>' + b('你选的 ' + (pick + 1), 'Your pick, ' + (pick + 1)) + '</b>' + b(esc(q.wrong[pick].zh), esc(q.wrong[pick].en)) + '</p>';
+      h += why(q);
+      h += '<p class="try-next"><a class="btn-primary" id="try-go" href="' + lo + '-practice/#start=daily">' + b('再做一组 ' + lv + ' 题 →', 'Do a set of ' + lv + ' questions →') + '</a>' +
+        (q.lesson ? '<a class="try-lesson" href="' + q.lesson + '/">' + b('第 ' + q.n + ' 课讲解', 'Lesson ' + q.n + ' explains it') + '</a>' : '') + '</p></div>';
+    }
+    box.innerHTML = h;
+    if (go) go.href = lo + '-practice/';
+  }
+  box.addEventListener('click', function (e) {
+    var t = e.target.closest ? e.target.closest('button,a') : null;
+    if (!t) return;
+    if (t.className.indexOf('try-lv') === 0) {
+      if (t.getAttribute('data-lv') === lv) return;
+      lv = t.getAttribute('data-lv'); done = false;
+      try { localStorage.setItem('jp_home_lv', lv); } catch (e2) {}
+      ev('home_try_level', { level: lv });
+      draw(null);
+    } else if (t.className.indexOf('try-opt') === 0 && !done) {
+      done = true;
+      var i = +t.getAttribute('data-i');
+      ev('home_try', { level: lv, id: Q[lv].id, ok: i === Q[lv].answer });
+      draw(i);
+    } else if (t.id === 'try-go') ev('home_try_next', { level: lv });
+  });
+  draw(null);
+  if (note) note.hidden = true;
+  box.hidden = false;
+})();`;
+// bundles = buildQuiz()'s result
+function homeTryHtml(bundles) {
+  const data = {};
+  for (const [lv, id] of Object.entries(HOME_TRY_IDS)) {
+    const q = bundles[lv] && bundles[lv].practice.questions.find((x) => x.id === id);
+    if (!q) { console.warn(`  ⚠ Home page: question ${id} is not in the ${lv} bank; that level is left out of the try-one card.`); continue; }
+    const m = /^lesson(\d+)/.exec((q.refs || [])[0] || "");
+    // The finished sentence with the filled-in part marked. The stem and the
+    // sentence carry different furigana, so the blank is located in the text
+    // without ruby and mapped back to a position in the HTML.
+    const plain = (h) => h.replace(/<rp>.*?<\/rp>|<rt>.*?<\/rt>|<[^>]+>/g, "");
+    const [pre, post = ""] = q.stem.split("（　）").map((x) => plain(x).trim()), text = plain(q.full);
+    let full = q.full;
+    if (text.startsWith(pre) && text.endsWith(post) && text.length > pre.length + post.length) {
+      const at = [];   // HTML index of each character of `text`, and whether it sits inside a <ruby>
+      for (let i = 0, inRuby = false; i < q.full.length;) {
+        const m = /^(<rp>.*?<\/rp>|<rt>.*?<\/rt>|<[^>]+>)/.exec(q.full.slice(i));
+        if (m) { if (m[0] === "<ruby>") inRuby = true; else if (m[0] === "</ruby>") inRuby = false; i += m[0].length; }
+        else { at.push([i, inRuby]); i++; }
+      }
+      let from = pre.length, to = text.length - post.length;
+      while (text[from] === " ") from++;
+      while (text[to - 1] === " ") to--;
+      const rubyStart = (k) => q.full.lastIndexOf("<ruby>", at[k][0]), rubyEnd = (k) => q.full.indexOf("</ruby>", at[k][0]) + 7;
+      const i0 = at[from][1] ? rubyStart(from) : at[from][0], i1 = at[to - 1][1] ? rubyEnd(to - 1) : at[to - 1][0] + 1;
+      full = `${q.full.slice(0, i0)}<strong class="try-fill">${q.full.slice(i0, i1)}</strong>${q.full.slice(i1)}`;
+    }
+    data[lv] = { id, stem: q.stem, options: q.options, answer: q.answer, full, tr: q.tr, why: q.why, wrong: q.wrong, lesson: m ? m[0] : "", n: m ? +m[1] : 0 };
+  }
+  if (!Object.keys(data).length) return "";
+  return `<section class="home-try" id="home-try" hidden></section><script type="application/json" id="home-try-data">${JSON.stringify(data).replace(/</g, "\\u003c")}</script><script>${HOME_TRY_JS}</script>`;
+}
 const progressCardHtml = (level, pageIds) => `<div id="jp-progress" class="jp-progress" hidden${level ? ` data-level="${level}"` : ""} data-pages="${pageIds.join(" ")}"></div><script>${PROGRESS_JS}</script>`;
 
 // <head> of single-language pages: a reader whose language is another one
@@ -2815,27 +2923,28 @@ ${SETTINGS_SCRIPT}`;
       </tbody>
     </table></div>
   </section>`;
+  const homeQuestionCount = (Math.floor(QUIZ_LEVELS.reduce((n, lv) => n + loadQuizLevel(lv).qs.length, 0) / 100) * 100).toLocaleString("en-US") + "+";
   // The hero shows what the site is by being it: one sentence, marked the way
   // a teacher marks a notebook (the grammar point in red, a note beside it).
   const homeMainHtml = `<header class="home-hero">
     <div class="hero-copy">
       <h1><span class="lang-zh">jpnotes — JLPT N5 到 N1 语法讲解与题库</span><span class="lang-en">jpnotes — JLPT N5 to N1 grammar and practice</span></h1>
       <p class="home-intro">
-        <span class="lang-zh">免费的 JLPT 语法笔记和题库：<strong>${totalLessons} 课、${totalPoints}+ 语法点</strong>，每个都有接续、例句和易混辨析；学完就做题，听力、阅读、模拟考都有。</span>
-        <span class="lang-en">Free JLPT grammar notes and a question bank: <strong>${totalLessons} lessons, ${totalPoints}+ grammar points</strong>, each with its conjugation, example sentences and the patterns it gets confused with. Then practise: listening, reading and mock tests included.</span>
+        <span class="lang-zh">免费 · <strong>${homeQuestionCount} 道题</strong>，每题都有解析 · 听力、阅读、模拟考 · <strong>${totalLessons} 课</strong>语法讲解</span>
+        <span class="lang-en">Free · <strong>${homeQuestionCount} questions</strong>, each one explained · listening, reading, mock tests · <strong>${totalLessons} grammar lessons</strong></span>
       </p>
-      <div class="home-actions">${quizPages("N5").length ? `
-        <a class="btn-primary" href="practice/"><span class="lang-zh">开始做题</span><span class="lang-en">Start practising</span></a>
+    </div>
+    <div class="home-actions">${quizPages("N5").length ? `
+        <a class="btn-primary" id="home-start" href="practice/"><span class="lang-zh">开始做题</span><span class="lang-en">Start practising</span></a>
         <a class="btn-secondary" href="lesson01/"><span class="lang-zh">从第 1 课学语法</span><span class="lang-en">Learn from lesson 1</span></a>` : `
         <a class="btn-primary" href="lesson01/"><span class="lang-zh">从第 1 课开始</span><span class="lang-en">Start with lesson 1</span></a>`}
         <a class="btn-quiet" href="anki/"><span class="lang-zh">Anki 卡组</span><span class="lang-en">Anki decks</span></a>
-      </div>
     </div>
-    <figure class="hero-note">
+    <figure class="hero-note" id="hero-note">
       <p class="hero-ja" lang="ja"><ruby>薬<rp>(</rp><rt>くすり</rt><rp>)</rp></ruby>を<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>んだ<strong>のに</strong>、まだ<ruby>痛<rp>(</rp><rt>いた</rt><rp>)</rp></ruby>い。</p>
       <p class="hero-tr"><span class="lang-zh">明明吃了药，还是疼。</span><span class="lang-en">I took the medicine, and it still hurts.</span></p>
       <figcaption><b lang="ja">〜のに</b><span class="lang-zh">明明……却……：结果和预想的相反，带着意外或不满。</span><span class="lang-en">even though …: the result goes against what you expected, with surprise or complaint.</span> <a href="lesson15/"><span class="lang-zh">第 15 课</span><span class="lang-en">Lesson 15</span></a></figcaption>
-    </figure>
+    </figure>${HOME_TRY_SLOT}
   </header>${quizPages("N5").length ? progressCardHtml("", QUIZ_LEVELS.flatMap((lv) => quizPages(lv).map((q) => q.href.replace(SITE_PATH, "").replace(/\/$/, "")))) : ""}${homePracticeHtml}
   <section class="home-levels">
     <h2><span class="lang-zh">按级别学习</span><span class="lang-en">Browse by JLPT level</span></h2>
@@ -3973,6 +4082,10 @@ ${AI_SCRIPT}
 
   // ─── Practice question pages (build-quiz.js → dist/quiz/*.json, site/quiz.js) ───
   const quizBundles = await buildQuiz(async (text) => fixReadings(await furiganaText(kuro, text)));
+  {
+    const homePath = path.join(__dirname, "dist", "index.html");
+    fs.writeFileSync(homePath, fs.readFileSync(homePath, "utf-8").replace(HOME_TRY_SLOT, () => homeTryHtml(quizBundles)), "utf-8");
+  }
   // Reading passages' read-aloud audio goes in the same request list as the examples.
   {
     const reqPath = path.join(__dirname, "dist", ".audio-requests.json");
@@ -5827,13 +5940,54 @@ body.sidebar-collapsed #content.home {
   margin-right: auto;
 }
 .home-hero {
-  display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 2.6rem; align-items: center;
+  display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); grid-template-areas: "copy note" "actions note"; grid-template-rows: auto 1fr; gap: 0 2.6rem; align-items: start;
   padding: 2.2rem 0 2.4rem; border-bottom: 1px solid var(--border); margin-bottom: 2.2rem;
 }
 .home-hero h1 { font-size: 1.75rem; line-height: 1.35; margin: 0 0 .9rem; border: none; padding: 0; color: var(--text-strong); }
 .home-intro { font-size: .98rem; color: var(--text-muted); margin: 0 0 1.4rem; line-height: 1.75; }
 .home-intro strong { color: var(--text-strong); font-weight: 600; }
-.home-actions { display: flex; align-items: center; gap: .7rem; flex-wrap: wrap; }
+.hero-copy { grid-area: copy; }
+.hero-note, .home-try { grid-area: note; }
+.hero-note[hidden], .home-try[hidden] { display: none; }
+.home-try { --try-ok: #1a7f4b; --try-ok-bg: rgba(26,127,75,.10); --try-bad: #c0263e; --try-bad-bg: rgba(192,38,62,.08); padding: 1rem 1.2rem 1.1rem; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--card-bg); }
+html.theme-dark .home-try { --try-ok: #4cc98a; --try-ok-bg: rgba(76,201,138,.14); --try-bad: #ff6b81; --try-bad-bg: rgba(255,107,129,.12); }
+@media (prefers-color-scheme: dark) { :root:not(.theme-light) .home-try { --try-ok: #4cc98a; --try-ok-bg: rgba(76,201,138,.14); --try-bad: #ff6b81; --try-bad-bg: rgba(255,107,129,.12); } }
+.try-top { display: flex; align-items: center; justify-content: space-between; gap: .8rem; margin-bottom: .7rem; }
+.try-lead { font-size: .85rem; color: var(--text-muted); white-space: nowrap; }
+.try-fill { color: var(--accent); font-weight: 700; }
+.try-lvs { display: flex; gap: .25rem; }
+.try-lv { min-width: 2.3rem; min-height: 2rem; padding: 0 .4rem; border: 1px solid transparent; border-radius: var(--radius); background: none; color: var(--text-muted); font: inherit; font-size: .82rem; font-weight: 600; cursor: pointer; }
+.try-lv:hover { color: var(--ui); }
+.try-lv[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+.try-stem { margin: 0 0 .2rem; font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, "Noto Serif JP", "Noto Serif CJK JP", "Source Han Serif JP", serif; font-size: 1.3rem; line-height: 2.5rem; color: var(--text-strong); }
+.try-stem rt { font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; font-size: .45em; }
+.try-blank { color: var(--accent); white-space: nowrap; }
+.try-tr { margin: 0 0 .5rem; font-size: .92rem; color: var(--text-muted); }
+.try-opts { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; margin-top: .6rem; }
+.try-opts-1 { grid-template-columns: 1fr; }
+.try-opt { display: flex; align-items: center; gap: .6rem; min-height: 46px; padding: .4rem .7rem; border: 1.5px solid var(--border); border-radius: var(--radius); background: var(--bg); color: var(--text); font: inherit; font-size: 1.02rem; text-align: left; cursor: pointer; }
+.try-opt:hover:not(:disabled) { border-color: var(--ui); }
+.try-opt:disabled { cursor: default; }
+.try-num { flex: none; width: 1.5rem; height: 1.5rem; border: 1px solid var(--border); border-radius: 50%; font-size: .78rem; line-height: 1.45rem; text-align: center; color: var(--text-muted); }
+.try-opt.try-ok { border-color: var(--try-ok); background: var(--try-ok-bg); }
+.try-opt.try-ok .try-num { background: var(--try-ok); border-color: var(--try-ok); color: var(--card-bg); }
+.try-opt.try-bad { border-color: var(--try-bad); background: var(--try-bad-bg); }
+.try-opt.try-bad .try-num { background: var(--try-bad); border-color: var(--try-bad); color: var(--card-bg); }
+.try-opt.try-off { opacity: .6; }
+.try-res { margin-top: .9rem; font-size: .92rem; line-height: 1.7; }
+.try-verdict { margin: 0 0 .4rem; font-weight: 700; }
+.try-verdict.ok { color: var(--try-ok); }
+.try-verdict.bad { color: var(--try-bad); }
+.try-mine { margin: 0 0 .6rem; padding: .5rem .7rem; border-left: 3px solid var(--try-bad); background: var(--try-bad-bg); border-radius: 0 var(--radius) var(--radius) 0; }
+.try-mine b { margin-right: .6em; font-weight: 600; }
+.try-why { display: grid; grid-template-columns: max-content 1fr; gap: .35rem .8rem; margin: 0 0 .9rem; }
+.try-k { color: var(--text-muted); font-size: .85em; padding-top: .12em; white-space: nowrap; }
+.try-all { grid-column: 1 / -1; }
+.try-next { display: flex; align-items: center; flex-wrap: wrap; gap: .6rem 1rem; margin: 0; }
+.try-next .btn-primary { display: inline-block; padding: .55rem 1.1rem; border-radius: var(--radius); background: var(--ui); color: var(--ui-on); font-weight: 600; text-decoration: none; }
+.try-next .btn-primary:hover { opacity: .9; }
+.try-lesson { color: var(--link); text-underline-offset: 3px; }
+.home-actions { grid-area: actions; display: flex; align-items: center; gap: .7rem; flex-wrap: wrap; }
 .home-actions a { display: inline-block; padding: .55rem 1.25rem; border-radius: var(--radius); font-size: .95rem; font-weight: 600; text-decoration: none; border: 1px solid transparent; }
 .home-actions .btn-primary { background: var(--ui); border-color: var(--ui); color: var(--ui-on); }
 .home-actions .btn-primary:hover { opacity: .9; }
@@ -5850,9 +6004,12 @@ body.sidebar-collapsed #content.home {
 .hero-note figcaption { margin-top: .9rem; font-size: .88rem; line-height: 1.65; color: var(--text); }
 .hero-note figcaption b { color: var(--accent); margin-right: .5em; font-size: 1.05em; }
 @media (max-width: 860px) {
-  .home-hero { grid-template-columns: 1fr; gap: 1.4rem; padding: 1rem 0 1.6rem; margin-bottom: 1.6rem; }
+  .home-hero { grid-template-columns: 1fr; grid-template-areas: "copy" "note" "actions"; gap: 1rem; padding: .6rem 0 1.6rem; margin-bottom: 1.6rem; }
+  .home-hero h1 { margin-bottom: .5rem; }
+  .home-try { padding: .8rem .9rem 1rem; }
+  .try-stem { font-size: 1.18rem; line-height: 2.3rem; }
   .home-hero h1 { font-size: 1.4rem; }
-  .home-intro { font-size: .92rem; margin-bottom: 1.1rem; }
+  .home-intro { font-size: .9rem; margin-bottom: 0; }
   .hero-note { padding: .8rem 1.1rem 1rem; }
   .hero-ja { font-size: 1.18rem; line-height: 2.7rem; background-size: 100% 2.7rem; }
   table.practice-index { font-size: .86rem; table-layout: fixed; width: 100%; }
