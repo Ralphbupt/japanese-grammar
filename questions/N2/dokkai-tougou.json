@@ -424,5 +424,431 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n2-dk-607",
+    "type": "tougou",
+    "difficulty": 2,
+    "intro": "次のAとBは、「在宅勤務」について書かれた新聞のコラムである。",
+    "passage": "A\n在宅勤務が広がって数年がたつ。通勤の時間がなくなった分、朝の時間を家事や運動に使えるようになったという声は多い。電話や話しかけられることで作業が中断されないため、資料作りなど一人で集中する仕事は、むしろ会社にいるときよりはかどるという人もいる。また、住む場所を職場の近くに限らなくてよくなり、家賃の安い郊外や地方に引っ越す人も出てきた。もちろん、全員が毎日家で働く必要はない。しかし、出社するかどうかを社員が仕事の内容に応じて選べるようにすることは、これからの会社に欠かせない条件になるだろう。\nB\n在宅勤務を取りやめ、再び毎日の出社を求める会社が増えている。在宅勤務では、決められた作業を進めることはできても、ちょっとした雑談から新しいアイデアが生まれるような機会は少ない。特に、入社したばかりの社員にとっては、先輩の仕事ぶりを近くで見たり、気軽に質問したりできないことが大きな問題だ。一方で、家で集中したほうが効率が上がる仕事があるのも確かだ。大切なのは、在宅か出社かのどちらか一方に決めてしまうことではなく、それぞれの良さを生かせる組み合わせ方を、職場ごとに考えることだろう。",
+    "tr": {
+      "zh": "下面的A和B是关于“居家办公”的报纸专栏。\nA：\n居家办公普及已经好几年了。很多人说，省下了通勤时间，早上的时间可以用来做家务或运动。由于不会被电话或别人搭话打断工作，有人说做资料这类需要一个人专心的工作，反而比在公司时进展得更顺利。另外，住处不必限于公司附近，也出现了搬到房租便宜的郊区或地方的人。当然，没有必要让所有人每天都在家工作。但是，让员工根据工作内容选择是否去公司，将成为今后公司不可缺少的条件吧。\nB：\n取消居家办公、重新要求每天到公司上班的公司越来越多。居家办公虽然能推进规定的工作，但从闲聊中产生新想法的机会很少。特别是对刚进公司的员工来说，不能在近处看前辈怎么工作、不能随意提问，是很大的问题。另一方面，确实也有在家专心效率更高的工作。重要的不是在居家和到岗中只选其一，而是每个职场都要考虑能发挥各自优点的组合方式。",
+      "en": "A and B are newspaper columns on working from home.\nA:\nSeveral years have passed since working from home spread. Many say that, with no commute, they can use their mornings for housework or exercise. Because work isn't interrupted by phone calls or people talking to you, some find that tasks needing solitary concentration, like preparing documents, actually go better than at the office. And as where you live need no longer be near your workplace, some people have moved to suburbs or regions with cheaper rent. Of course, not everyone needs to work from home every day. But letting employees choose whether to come in according to the nature of their work will become an essential condition for companies from now on.\nB:\nMore companies are ending working from home and once again requiring staff to come in every day. At home you can get set tasks done, but there are few chances for new ideas to arise from casual chat. Especially for new employees, not being able to watch seniors work up close or ask questions casually is a big problem. On the other hand, it's true that some work is more efficient when done with concentration at home. What matters is not settling on one or the other, home or office, but working out, workplace by workplace, a combination that makes use of the strengths of each."
+    },
+    "questions": [
+      {
+        "q": "在宅勤務の良い点として、AとBが共通して述べていることは何か。",
+        "options": [
+          "通勤がなくなって、朝の時間を自由に使えること",
+          "一人で集中する仕事の効率が上がること",
+          "雑談から新しいアイデアが生まれやすいこと",
+          "家賃の安い地域に住めるようになること"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：A「資料作りなど一人で集中する仕事は、むしろ会社にいるときよりはかどる」；B「家で集中したほうが効率が上がる仕事があるのも確かだ」。\n推理：A说独自专心的工作进展更顺，B也用「確かだ」承认在家专心效率更高。两篇都提到的优点只有这一点。",
+          "en": "Evidence: A 「資料作りなど一人で集中する仕事は、むしろ会社にいるときよりはかどる」; B 「家で集中したほうが効率が上がる仕事があるのも確かだ」.\nReasoning: A says solitary work goes better; B concedes with 「確かだ」 that focused work at home is more efficient. That's the only advantage both mention."
+        },
+        "wrong": [
+          {
+            "zh": "早上时间的事只有A提到。",
+            "en": "Only A mentions morning time."
+          },
+          null,
+          {
+            "zh": "B说居家办公时这种机会「少ない」，是缺点。",
+            "en": "B says such chances are 「少ない」 at home: a drawback."
+          },
+          {
+            "zh": "搬到房租便宜的地方只有A提到。",
+            "en": "Only A mentions moving somewhere cheaper."
+          }
+        ]
+      },
+      {
+        "q": "これからの働き方について、AとBはどのように考えているか。",
+        "options": [
+          "Aは全員が毎日家で働くべきだと考え、Bは全員が毎日出社するべきだと考えている。",
+          "AもBも、入社したばかりの社員だけは毎日出社して先輩から学ぶべきだと考えている。",
+          "Aは出社することに意味はないと考え、Bは在宅勤務を全面的にやめるべきだと考えている。",
+          "Aは出社するかを社員が選べるようにすべきで、Bは職場ごとに組み合わせを考えるべきだとしている。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：A「出社するかどうかを社員が仕事の内容に応じて選べるようにすることは、これからの会社に欠かせない条件になるだろう」；B「それぞれの良さを生かせる組み合わせ方を、職場ごとに考えることだろう」。\n推理：两篇结尾各自给出主张：A让员工选择，B按职场考虑组合。选项分别对应。",
+          "en": "Evidence: A 「出社するかどうかを社員が仕事の内容に応じて選べるようにすることは、これからの会社に欠かせない条件になるだろう」; B 「それぞれの良さを生かせる組み合わせ方を、職場ごとに考えることだろう」.\nReasoning: Each text ends with its view: A lets employees choose; B works out a mix per workplace."
+        },
+        "wrong": [
+          {
+            "zh": "A说「全員が毎日家で働く必要はない」；B说不应只选其一。",
+            "en": "A says 「全員が毎日家で働く必要はない」; B rejects choosing only one."
+          },
+          {
+            "zh": "新员工的问题只有B提到，A没有谈。",
+            "en": "Only B raises new employees; A doesn't."
+          },
+          {
+            "zh": "A承认不必人人每天在家；B也承认在家效率高的工作，不主张全面取消。",
+            "en": "A doesn't dismiss the office; B grants home has merits and doesn't call for scrapping it."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-608",
+    "type": "tougou",
+    "difficulty": 2,
+    "intro": "新聞の相談欄に、「小学五年生の娘が、友達はみんな持っているからと言って、スマートフォンを欲しがっている。持たせるべきか迷っている」という相談が寄せられた。次のAとBは、それに対する回答である。",
+    "passage": "A\n持たせてもよいと思います。友達との連絡がスマートフォン中心になっている今、娘さんだけ持っていないと、仲間外れにされたと感じるかもしれません。また、塾の帰りが遅くなったときなどに、すぐ連絡が取れるのは親にとっても安心です。ただし、渡す前に、使う時間や場所について親子でルールを決めておくことが大切です。夜九時以降は使わない、食事中は触らない、といった具体的な約束を一緒に作り、守れなかったときにどうするかも話し合っておきましょう。\nB\n「みんな持っている」という言葉が本当なのか、一度確かめてみるといいでしょう。実際には、クラスの半分ほどということも多いものです。小学生のうちは、インターネット上のトラブルに巻き込まれても、自分で判断して対処するのは難しいでしょう。帰りが遅い日にすぐ連絡が取れれば安心だというのは分かりますが、連絡を取るためだけなら、通話と居場所の確認しかできない子ども用の携帯電話もあります。まずはそうしたものから始め、娘さんの様子を見ながら、中学生になってから改めて考えても遅くはないと思います。",
+    "tr": {
+      "zh": "报纸的咨询栏收到这样一个咨询：“上小学五年级的女儿说朋友们都有，想要智能手机。我在犹豫该不该给她。”下面的A和B是对此的回答。\nA：\n我认为可以给她。现在和朋友联系以智能手机为主，只有您女儿没有的话，她可能会觉得被排挤。另外，补习班放学晚的时候等，能马上联系上，对父母来说也安心。不过，交给她之前，父母和孩子先就使用时间和场所定好规则很重要。一起定下具体的约定，比如晚上九点以后不用、吃饭时不碰，并且也要商量好没遵守时怎么办。\nB：\n最好先确认一下“大家都有”这句话是不是真的。实际上，很多时候只有班里一半左右。小学生如果卷入网络上的纠纷，很难自己判断并应对吧。晚归的日子能马上联系上会比较安心，这一点可以理解，但如果只是为了联系，也有只能通话和确认位置的儿童手机。先从这类手机开始，一边观察女儿的情况，等上了初中再重新考虑也不迟。",
+      "en": "A newspaper advice column received this letter: 'My daughter, in fifth grade, wants a smartphone because all her friends have one. I can't decide whether to let her have one.' A and B are replies to it.\nA:\nI think it's fine to let her have one. Now that contact among friends centres on smartphones, if your daughter alone doesn't have one, she may feel left out. Being able to reach her at once, for example when she's late coming home from cram school, is also reassuring for parents. Before handing it over, though, it's important for parent and child to set rules about when and where it's used. Make concrete promises together — no use after 9 p.m., no touching it during meals — and also discuss what will happen if they're broken.\nB:\nIt would be good to check once whether 'everyone has one' is really true. In fact it's often only about half the class. While children are in primary school, if they get caught up in trouble online, it will be hard for them to judge and deal with it themselves. I understand that being able to reach her right away on late days is reassuring, but if it's only for keeping in touch, there are children's phones that can only make calls and show their location. Start with something like that, and it won't be too late to think again once she's in junior high, watching how she gets on."
+    },
+    "questions": [
+      {
+        "q": "AとBのどちらの回答でも触れられている点はどれか。",
+        "options": [
+          "子どもと連絡が取れることの必要性",
+          "使う時間についてのルールの作り方",
+          "インターネット上のトラブルの危険",
+          "クラスで持っている子どもの割合"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：A「すぐ連絡が取れるのは親にとっても安心です」；B「すぐ連絡が取れれば安心だというのは分かりますが」。\n推理：A把能联系上当作给手机的理由；B虽然反对智能手机，也明确说能马上联系上会安心，所以推荐只能通话的儿童手机。两篇都涉及“能联系上”。",
+          "en": "Evidence: A 「すぐ連絡が取れるのは親にとっても安心です」; B 「すぐ連絡が取れれば安心だというのは分かりますが」.\nReasoning: A gives contact as a reason to allow a phone; B, though against a smartphone, says outright that being able to reach her is reassuring, and suggests a children's phone for that. Both touch on it."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "定规则只有A提到。",
+            "en": "Only A talks about rules."
+          },
+          {
+            "zh": "网络纠纷只有B提到。",
+            "en": "Only B mentions online trouble."
+          },
+          {
+            "zh": "班里有多少人有手机只有B提到。",
+            "en": "Only B mentions how many classmates have one."
+          }
+        ]
+      },
+      {
+        "q": "相談者の娘にスマートフォンを持たせることについて、AとBはどのように答えているか。",
+        "options": [
+          "Aは中学生になるまで待つよう勧め、Bはすぐに持たせるよう勧めている。",
+          "AもBも、ルールを決めたうえで、今すぐ持たせるよう勧めている。",
+          "Aは友達に合わせる必要はないと考え、Bは仲間外れを心配して持たせるよう勧めている。",
+          "Aは約束を決めて持たせるよう勧め、Bは機能の限られた物から始めるよう勧めている。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：A「持たせてもよいと思います」「具体的な約束を一緒に作り」；B「通話と居場所の確認しかできない子ども用の携帯電話もあります。まずはそうしたものから始め」。\n推理：A赞成给，但要先定约定；B建议先用只能通话和定位的儿童手机，即「機能の限られた物」。",
+          "en": "Evidence: A 「持たせてもよいと思います」 「具体的な約束を一緒に作り」; B 「通話と居場所の確認しかできない子ども用の携帯電話もあります。まずはそうしたものから始め」.\nReasoning: A agrees, with promises set first; B suggests starting with a calls-and-location children's phone, i.e. 「機能の限られた物」."
+        },
+        "wrong": [
+          {
+            "zh": "反过来了：是B说等到初中再考虑，A赞成给。",
+            "en": "Reversed: B suggests waiting until junior high; A agrees now."
+          },
+          {
+            "zh": "B不赞成现在就给智能手机。",
+            "en": "B doesn't recommend a smartphone now."
+          },
+          {
+            "zh": "担心被排挤的是A；B反而建议确认「みんな持っている」是否属实。",
+            "en": "A is the one worried about her being left out; B questions 「みんな持っている」."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-609",
+    "type": "tougou",
+    "difficulty": 2,
+    "intro": "次のAとBは、「夏休みの読書感想文」について新聞に寄せられた投書である。",
+    "passage": "A\n毎年夏休みの終わりになると、読書感想文が書けないと泣く息子に付き合わされる。本を読むのは好きな子なのに、感想文のために読むとなると、とたんにページが進まなくなる。「面白かった」以外に何を書けばいいのか分からないのだ。書き方を教わらないまま、原稿用紙三枚を埋めろと言われても無理がある。感想文がきっかけで本が嫌いになってしまっては、元も子もない。宿題にするのなら、まず学校で書き方を丁寧に指導してほしい。\nB\n私は長年小学校で教えてきたが、読書感想文は続けるべき宿題だと思う。一冊の本を読んで、どこに心を動かされたのか、それはなぜかを考えて言葉にする経験は、大人になってからも役に立つ。ただ、書けずに苦しむ子どもが多いのも事実だ。原稿用紙の枚数を決めずに、短くてもいいから自分の言葉で書かせる、好きな場面の絵と一言でもよいことにする、といった工夫があってよい。大切なのは長さではなく、自分の考えを持つことである。",
+    "tr": {
+      "zh": "下面的A和B是以“暑假读后感”为主题投给报纸的读者来信。\nA：\n每年暑假快结束时，我都得陪着因为写不出读后感而哭的儿子。他本来是个喜欢看书的孩子，可一说是为了写读后感而读，书页马上就翻不动了。他不知道除了“很有意思”以外还能写什么。没教过写法，就要求写满三页稿纸，实在是强人所难。如果因为读后感而讨厌上了书，那就得不偿失了。如果要作为作业，希望学校先认真指导写法。\nB：\n我在小学教了很多年书，我认为读后感是应该继续保留的作业。读一本书，思考在哪里被打动、为什么，并用语言表达出来，这种经验长大以后也有用。不过，写不出来而苦恼的孩子很多，这也是事实。可以想些办法，比如不规定稿纸页数，短一点也行，让孩子用自己的话写；或者画一幅喜欢的场景再配一句话也可以。重要的不是长度，而是有自己的想法。",
+      "en": "A and B are readers' letters to a newspaper on 'summer-holiday book reports'.\nA:\nEvery year at the end of the summer holidays I end up sitting with my son as he cries that he can't write his book report. He likes reading, yet as soon as he's reading for a report, the pages stop turning. He doesn't know what to write apart from 'it was interesting'. Telling a child to fill three sheets of manuscript paper without ever teaching him how is unreasonable. If the report makes him hate books, it defeats the whole purpose. If it's going to be homework, I'd like the school first to teach carefully how to write it.\nB:\nI taught at primary school for many years, and I think the book report is homework worth keeping. The experience of reading a book, thinking about where it moved you and why, and putting that into words is useful in adult life too. Still, it's a fact that many children suffer because they can't write it. There's room for adjustments: not setting a number of pages and letting children write in their own words even if it's short, or accepting a picture of a favourite scene with a single line. What matters is not length but having thoughts of your own."
+    },
+    "questions": [
+      {
+        "q": "AとBが共通して述べていることは何か。",
+        "options": [
+          "読書感想文の宿題は、なくしたほうがよい。",
+          "子どもに本を読ませても、あまり意味がない。",
+          "読書感想文は、大人になってから役に立つ。",
+          "感想文が書けずに苦労する子どもがいる。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：A「読書感想文が書けないと泣く息子に付き合わされる」；B「書けずに苦しむ子どもが多いのも事実だ」。\n推理：A讲自己儿子写不出来哭，B也承认很多孩子写不出来而苦恼。两篇都说到写不出来的孩子。",
+          "en": "Evidence: A 「読書感想文が書けないと泣く息子に付き合わされる」; B 「書けずに苦しむ子どもが多いのも事実だ」.\nReasoning: A's son cries over it; B admits many children struggle. Both mention children who can't write it."
+        },
+        "wrong": [
+          {
+            "zh": "A说「宿題にするのなら」希望先教写法，没有要求取消；B主张继续。",
+            "en": "A says 「宿題にするのなら」 teach it first, not abolish it; B wants to keep it."
+          },
+          {
+            "zh": "A说儿子本来喜欢读书，担心的是因此讨厌书；两篇都没有否定读书的意义。",
+            "en": "A's son likes reading and A fears he'll come to hate books; neither text denies reading's value."
+          },
+          {
+            "zh": "长大后有用只有B说。",
+            "en": "Only B says it helps in adult life."
+          },
+          null
+        ]
+      },
+      {
+        "q": "読書感想文について、AとBはどのような意見を述べているか。",
+        "options": [
+          "Aは本の選び方を指導すべきだと述べ、Bは長い文章を書かせるべきだと述べている。",
+          "Aは学校で書き方を教えてほしいと述べ、Bは書く量を決めないなどの工夫を勧めている。",
+          "Aは原稿用紙の枚数を増やすべきだと述べ、Bは絵だけで提出させるべきだと述べている。",
+          "Aは宿題にするのはやめるべきだと述べ、Bは今のやり方のまま続けるべきだと述べている。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：A「まず学校で書き方を丁寧に指導してほしい」；B「原稿用紙の枚数を決めずに、短くてもいいから自分の言葉で書かせる…といった工夫があってよい」。\n推理：A希望学校先教写法；B主张继续，但可以不规定页数等。选项两半分别对应。",
+          "en": "Evidence: A 「まず学校で書き方を丁寧に指導してほしい」; B 「原稿用紙の枚数を決めずに、短くてもいいから自分の言葉で書かせる…といった工夫があってよい」.\nReasoning: A wants the school to teach how to write; B would keep it with adjustments such as no page count."
+        },
+        "wrong": [
+          {
+            "zh": "A要求指导的是「書き方」，不是选书；B说「大切なのは長さではなく」。",
+            "en": "A asks for teaching 「書き方」, not book choice; B says 「大切なのは長さではなく」."
+          },
+          null,
+          {
+            "zh": "A认为要求写三页已经「無理がある」；B说画加「一言」也可以，不是只交画。",
+            "en": "A finds three sheets already 「無理がある」; B allows a picture with 「一言」, not a picture alone."
+          },
+          {
+            "zh": "A只说「宿題にするのなら」先教，没有说取消；B建议改变方法，不是维持现状。",
+            "en": "A doesn't call for abolishing it; B suggests changes rather than keeping things as they are."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-610",
+    "type": "tougou",
+    "difficulty": 2,
+    "intro": "次のAとBは、「電子書籍と紙の本」について書かれた文章である。",
+    "passage": "A\n電子書籍を使うようになって、本を読む量が増えた。何百冊もの本を小さな端末一台に入れて持ち歩けるので、通勤電車の中でも、旅行先でも、読みたい本をすぐに開ける。夜中に読みたくなった本を、店に行かずにその場で買えるのもありがたい。文字の大きさを変えられるため、目が疲れやすくなった年配の人にも読みやすい。本棚が足りなくなる心配もない。紙の本にも良さはあるだろうが、読書を身近なものにしてくれたという点で、電子書籍の果たす役割は大きいと思う。\nB\n電子書籍は確かに便利で、私も旅行には端末を持っていく。しかし、じっくり考えながら読みたい本は、今も紙で買うことにしている。紙の本なら、ページをめくって前の部分に戻ったり、余白に気づいたことを書き込んだりするのが簡単で、内容が頭に入りやすい。本棚に並んだ背表紙を見て、昔読んだ本の内容を思い出すこともある。どちらか一方を選ぶ必要はない。本の種類や読む目的に合わせて、使い分ければよいのではないだろうか。",
+    "tr": {
+      "zh": "下面的A和B是关于“电子书和纸质书”的文章。\nA：\n开始用电子书以后，我读书的量增加了。几百本书都能装进一台小小的设备随身携带，所以在通勤电车上也好，在旅行地也好，想读的书马上就能打开。半夜突然想读的书，不用去书店当场就能买，这也很难得。因为可以调整字体大小，对眼睛容易疲劳的老年人来说也容易读。也不用担心书架不够。纸质书也有它的好处吧，但就让读书变得更贴近生活这一点来说，我认为电子书发挥的作用很大。\nB：\n电子书确实方便，我旅行时也带着阅读器。但是，想一边慢慢思考一边读的书，我现在仍然买纸质的。纸质书翻回前面的部分、在空白处写下自己想到的东西都很容易，内容也容易记进脑子里。看着书架上排列的书脊，有时还会想起以前读过的书的内容。没有必要只选一种。根据书的种类和读书的目的分开使用不就好了吗？",
+      "en": "A and B are pieces on 'e-books and paper books'.\nA:\nSince I started using e-books, I read more. Because I can carry hundreds of books on one small device, I can open the book I want at once, on the commuter train or while travelling. Being able to buy a book I suddenly want to read in the middle of the night, right there without going to a shop, is also a blessing. As the text size can be changed, they're easy to read even for older people whose eyes tire easily. Nor is there any worry about running out of shelf space. Paper books surely have their merits, but in making reading part of everyday life, I think e-books play a large role.\nB:\nE-books are certainly convenient, and I take my device on trips too. But books I want to read slowly, thinking as I go, I still buy on paper. With a paper book it's easy to flip back to an earlier part or jot what I notice in the margin, and the content sinks in more easily. Seeing the spines lined up on my shelves sometimes reminds me of books I read long ago. There's no need to pick one or the other. Why not use each according to the kind of book and the purpose of reading?"
+    },
+    "questions": [
+      {
+        "q": "AとBのどちらにも述べられていることは何か。",
+        "options": [
+          "電子書籍は、文字の大きさを変えることができる。",
+          "紙の本は、電子書籍より内容が頭に入りやすい。",
+          "電子書籍は、出かける先に持っていくのに便利だ。",
+          "紙の本は、本棚に並べておく楽しみがある。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：A「通勤電車の中でも、旅行先でも、読みたい本をすぐに開ける」；B「電子書籍は確かに便利で、私も旅行には端末を持っていく」。\n推理：A说通勤和旅行时都能马上打开，B也说旅行时带阅读器。两篇都提到外出时携带方便。",
+          "en": "Evidence: A 「通勤電車の中でも、旅行先でも、読みたい本をすぐに開ける」; B 「電子書籍は確かに便利で、私も旅行には端末を持っていく」.\nReasoning: A reads on trains and trips; B takes the device travelling. Both note e-books are handy when out."
+        },
+        "wrong": [
+          {
+            "zh": "调整字体大小只有A提到。",
+            "en": "Only A mentions text size."
+          },
+          {
+            "zh": "内容容易记住只有B提到。",
+            "en": "Only B says content sinks in."
+          },
+          null,
+          {
+            "zh": "书架上的书脊只有B提到；A说的是「本棚が足りなくなる心配もない」。",
+            "en": "Only B mentions spines on shelves; A just says 「本棚が足りなくなる心配もない」."
+          }
+        ]
+      },
+      {
+        "q": "電子書籍と紙の本について、AとBはどのような立場をとっているか。",
+        "options": [
+          "Aは電子書籍が読書を身近にしたと評価し、Bは目的に合わせて使い分ければよいと考えている。",
+          "Aは紙の本はもう必要ないと考え、Bは電子書籍より紙の本のほうが優れていると考えている。",
+          "AもBも、本の内容によって、電子書籍と紙の本を使い分けるのがよいと考えている。",
+          "Aは年配の人には紙の本が向いていると考え、Bは旅行には紙の本を持っていくべきだと考えている。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：A「読書を身近なものにしてくれたという点で、電子書籍の果たす役割は大きい」；B「本の種類や読む目的に合わせて、使い分ければよいのではないだろうか」。\n推理：A的结论是电子书让读书更贴近生活；B的结论是不必只选一种、按目的分开用。",
+          "en": "Evidence: A 「読書を身近なものにしてくれたという点で、電子書籍の果たす役割は大きい」; B 「本の種類や読む目的に合わせて、使い分ければよいのではないだろうか」.\nReasoning: A concludes e-books brought reading closer; B concludes use each by purpose."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "A说「紙の本にも良さはあるだろう」；B说「どちらか一方を選ぶ必要はない」。",
+            "en": "A grants 「紙の本にも良さはあるだろう」; B says 「どちらか一方を選ぶ必要はない」."
+          },
+          {
+            "zh": "分开用是B的主张，A没有这样说。",
+            "en": "Using both by purpose is B's view, not A's."
+          },
+          {
+            "zh": "A说能调字体的电子书对老人好读；B旅行时带的是阅读器。",
+            "en": "A says e-books suit older readers; B takes the device on trips."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-611",
+    "type": "tougou",
+    "difficulty": 3,
+    "intro": "次のAとBは、「小学校での英語教育」について書かれた新聞のコラムである。",
+    "passage": "A\n小学校で英語の授業が始まる学年が早くなった。子どもは耳がよく、聞いた音をそのまま真似るのが得意だ。中学生になってから初めて英語に触れるより、小さいうちから英語の音やリズムに慣れておけば、発音や聞き取りの力が自然に身につく。また、外国の文化に早くから触れることで、自分と違う考え方を受け入れる柔軟さも育つだろう。ただし、そのためには、英語を教えることに慣れた先生が必要だ。担任の先生にすべてを任せるのではなく、専門の教員を増やすことが急がれる。\nB\n英語を早く始めれば、それだけ身につくと考える人は多い。しかし、外国語を学ぶ土台となるのは、母語で考え、表現する力である。自分の意見を日本語でまとめられない子どもが、英語でそれを言えるようになるとは思えない。また、現場の先生の多くは英語を教える訓練を受けておらず、忙しい中で授業の準備に苦労していると聞く。早く始めることそのものより、誰がどのように教えるのかを、まず考えるべきではないだろうか。",
+    "tr": {
+      "zh": "下面的A和B是关于“小学英语教育”的报纸专栏。\nA：\n小学开始上英语课的年级提前了。孩子耳朵灵，擅长原样模仿听到的声音。与其上了初中才第一次接触英语，不如从小就熟悉英语的发音和节奏，这样发音和听力自然就会掌握。另外，早早接触外国文化，也能培养接受与自己不同的想法的灵活性吧。不过，为此需要习惯教英语的老师。不应全部交给班主任，增加专职教师是当务之急。\nB：\n很多人认为英语开始得越早，就越能掌握。但是，学习外语的基础是用母语思考和表达的能力。我不认为连用日语都整理不好自己意见的孩子，能用英语把它说出来。另外，听说一线的老师大多没有受过教英语的训练，在忙碌中为备课而苦恼。比起提早开始这件事本身，不是更应该先考虑由谁、怎样来教吗？",
+      "en": "A and B are newspaper columns on 'English education in primary schools'.\nA:\nThe grade at which English lessons begin in primary school has been moved earlier. Children have good ears and are good at copying the sounds they hear exactly. Rather than meeting English for the first time in junior high, getting used to its sounds and rhythm while young lets them pick up pronunciation and listening skills naturally. Early contact with foreign cultures should also nurture the flexibility to accept ways of thinking different from their own. For that, however, teachers used to teaching English are needed. Rather than leaving everything to class teachers, increasing specialist teachers is an urgent task.\nB:\nMany people think that the earlier English starts, the better it is learned. But the foundation for learning a foreign language is the ability to think and express oneself in one's mother tongue. I can't imagine a child who can't put their opinion together in Japanese being able to say it in English. I also hear that many teachers on the ground have had no training in teaching English and struggle to prepare lessons amid their busy work. Shouldn't we first think about who teaches and how, rather than about starting early as such?"
+    },
+    "questions": [
+      {
+        "q": "AとBが共通して述べていることは何か。",
+        "options": [
+          "英語は、小さいうちに始めるほど身につく。",
+          "英語を教える先生について、課題がある。",
+          "母語の力が、外国語を学ぶ土台になる。",
+          "外国の文化に触れると、柔軟さが育つ。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：A「英語を教えることに慣れた先生が必要だ。…専門の教員を増やすことが急がれる」；B「現場の先生の多くは英語を教える訓練を受けておらず」。\n推理：A说需要会教英语的老师、要增加专职教师；B说很多老师没受过训练。两篇都指出教师方面的问题。",
+          "en": "Evidence: A 「英語を教えることに慣れた先生が必要だ。…専門の教員を増やすことが急がれる」; B 「現場の先生の多くは英語を教える訓練を受けておらず」.\nReasoning: A calls for teachers used to English and more specialists; B notes most teachers lack training. Both see a problem with teachers."
+        },
+        "wrong": [
+          {
+            "zh": "这是A的观点；B开头说「…と考える人は多い。しかし」，对此持怀疑态度。",
+            "en": "That's A's view; B introduces it with 「と考える人は多い。しかし」 and doubts it."
+          },
+          null,
+          {
+            "zh": "母语是基础只有B说。",
+            "en": "Only B says the mother tongue is the foundation."
+          },
+          {
+            "zh": "接触外国文化培养灵活性只有A说。",
+            "en": "Only A mentions foreign cultures and flexibility."
+          }
+        ]
+      },
+      {
+        "q": "英語を早く始めることについて、AとBはどのように考えているか。",
+        "options": [
+          "Aは早く始めることに反対し、Bは早く始めるほど発音がよくなると考えている。",
+          "AもBも、英語より日本語の授業を増やしたほうがよいと考えている。",
+          "Aは早く始める効果を認め、Bは早く始めることだけに期待するのは疑問だと考えている。",
+          "Aは担任の先生がすべて教えるべきだと考え、Bは専門の先生は必要ないと考えている。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：A「小さいうちから英語の音やリズムに慣れておけば、発音や聞き取りの力が自然に身につく」；B「早く始めることそのものより、誰がどのように教えるのかを、まず考えるべきではないだろうか」。\n推理：A列举提早开始的好处；B用「〜より、まず〜べきではないだろうか」表示不能只看早开始。",
+          "en": "Evidence: A 「小さいうちから英語の音やリズムに慣れておけば、発音や聞き取りの力が自然に身につく」; B 「早く始めることそのものより、誰がどのように教えるのかを、まず考えるべきではないだろうか」.\nReasoning: A lists benefits of starting early; B's 「〜より、まず〜べきではないだろうか」 says early start alone isn't enough."
+        },
+        "wrong": [
+          {
+            "zh": "反过来了：A赞成提早，发音变好是A说的。",
+            "en": "Reversed: A favours an early start and makes the pronunciation point."
+          },
+          {
+            "zh": "两篇都没有提出增加日语课。B只说母语能力是基础。",
+            "en": "Neither proposes more Japanese lessons; B only says the mother tongue is the base."
+          },
+          null,
+          {
+            "zh": "A说「担任の先生にすべてを任せるのではなく」；B也没有说不需要专职老师。",
+            "en": "A says 「担任の先生にすべてを任せるのではなく」; B never says specialists are unnecessary."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-612",
+    "type": "tougou",
+    "difficulty": 2,
+    "intro": "次のAとBは、「年賀状をやめること」について新聞に寄せられた投書である。",
+    "passage": "A\n今年の年末、長年続けてきた年賀状をやめることにした。毎年百枚近くを書くのは、仕事をしながらでは大きな負担だった。それに、ほとんどの相手とは、ふだんからメールやSNSでやりとりしている。印刷された決まり文句だけの年賀状を送り合うことに、どれほど意味があるのだろうか。最後の年賀状には、「これからはメールでご挨拶させてください」と一言添えた。何人かからは、「実は私も迷っていた」という返事が届いた。形だけの習慣なら、思い切ってやめてよいと思う。\nB\n年賀状を出す人が年々減っているという。手間がかかるのは確かで、やめたいという気持ちも分かる。しかし私は、年に一度しか連絡を取らない相手にこそ、年賀状を出し続けたい。学生時代の恩師や、遠くに引っ越した昔の同僚とは、年賀状がなければとっくに縁が切れていただろう。印刷だけで済ませず、一言でも手書きで近況を添えれば、受け取った相手は喜んでくれる。枚数は減らしても、大切な人とのつながりを保つ手段として、年賀状は残しておきたい。",
+    "tr": {
+      "zh": "下面的A和B是以“不再寄贺年卡”为主题投给报纸的读者来信。\nA：\n今年年底，我决定不再寄多年来一直寄的贺年卡了。每年写近一百张，一边工作一边写，负担很大。而且，和大多数人平时就在用邮件或社交媒体联系。互相寄只有印刷好的套话的贺年卡，到底有多大意义呢？在最后一批贺年卡上，我附了一句：“今后请允许我用邮件向您问候。”有几个人回信说：“其实我也在犹豫。”如果只是走形式的习惯，我认为可以下决心不再继续。\nB：\n据说寄贺年卡的人逐年减少。确实费工夫，想不再寄的心情我也理解。但是我恰恰想继续给一年只联系一次的人寄贺年卡。学生时代的恩师、搬到远方的老同事，如果没有贺年卡，早就断了联系吧。不只用印刷的，哪怕亲手写一句近况，收到的人也会高兴。即使减少张数，我也想把贺年卡作为维系和重要的人之间联系的方式保留下来。",
+      "en": "A and B are readers' letters to a newspaper on 'giving up New Year cards'.\nA:\nAt the end of this year I decided to stop the New Year cards I had sent for many years. Writing nearly a hundred every year while working was a heavy burden. Besides, I exchange emails or social-media messages with most of the people anyway. How much meaning is there in sending each other cards with nothing but printed set phrases? On my last cards I added a line: 'From now on, please allow me to send my greetings by email.' Several people replied, 'Actually, I was wondering about it too.' If it's a custom kept only for form's sake, I think it's fine to take the plunge and stop.\nB:\nThe number of people sending New Year cards is said to fall every year. It certainly takes effort, and I understand the wish to stop. But it is precisely to people I contact only once a year that I want to keep sending cards. With my old teacher from student days and former colleagues who moved far away, I'd have lost touch long ago without them. If, instead of just printing, you add even one handwritten line about how you are, the recipient will be pleased. Even if I send fewer, I want to keep New Year cards as a way of staying connected with people who matter to me."
+    },
+    "questions": [
+      {
+        "q": "AとBが共通して述べていることは何か。",
+        "options": [
+          "年賀状は、すべて手書きで書くべきだ。",
+          "年賀状は、メールで送るほうが便利だ。",
+          "年賀状を出す人は、年々増えている。",
+          "年賀状を書くのには、手間がかかる。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：A「毎年百枚近くを書くのは、仕事をしながらでは大きな負担だった」；B「手間がかかるのは確かで、やめたいという気持ちも分かる」。\n推理：A说写贺年卡负担大，B也用「確かで」承认费工夫。两篇都说写贺年卡费事。",
+          "en": "Evidence: A 「毎年百枚近くを書くのは、仕事をしながらでは大きな負担だった」; B 「手間がかかるのは確かで、やめたいという気持ちも分かる」.\nReasoning: A found it a burden; B concedes with 「確かで」 that it takes effort. Both say writing cards is work."
+        },
+        "wrong": [
+          {
+            "zh": "B只说加「一言でも手書き」，没说全部手写；A不再寄了。",
+            "en": "B asks only for 「一言でも手書き」, not all by hand; A has stopped."
+          },
+          {
+            "zh": "改用邮件是A的做法，B想继续寄贺年卡。",
+            "en": "Switching to email is A's choice; B wants to keep cards."
+          },
+          {
+            "zh": "B说寄的人「年々減っている」。",
+            "en": "B says senders are 「年々減っている」."
+          },
+          null
+        ]
+      },
+      {
+        "q": "年賀状について、AとBはどのように考えているか。",
+        "options": [
+          "Aはふだん連絡を取らない人にだけ出すべきだと考え、Bは年賀状は形だけの習慣だと考えている。",
+          "AもBも、枚数を減らしたうえで、手書きの一言を添えて続けるべきだと考えている。",
+          "Aは印刷した年賀状なら続けてよいと考え、Bは年賀状をやめてメールにするべきだと考えている。",
+          "Aは形だけならやめてよいと考え、Bは疎遠になりがちな人とのつながりのために続けたいと考えている。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：A「形だけの習慣なら、思い切ってやめてよいと思う」；B「年に一度しか連絡を取らない相手にこそ、年賀状を出し続けたい」「大切な人とのつながりを保つ手段として、年賀状は残しておきたい」。\n推理：A主张走形式就可以不寄；B想给一年只联系一次、容易断联的人继续寄。",
+          "en": "Evidence: A 「形だけの習慣なら、思い切ってやめてよいと思う」; B 「年に一度しか連絡を取らない相手にこそ、年賀状を出し続けたい」 「大切な人とのつながりを保つ手段として、年賀状は残しておきたい」.\nReasoning: A: stop if it's mere form; B: keep sending to people contacted once a year, to stay connected."
+        },
+        "wrong": [
+          {
+            "zh": "给不常联系的人寄是B的主张；说「形だけの習慣」的是A。",
+            "en": "Sending to rarely contacted people is B's view; 「形だけの習慣」 is A's phrase."
+          },
+          {
+            "zh": "减少张数、手写一句是B的想法，A已经决定不寄了。",
+            "en": "Fewer cards with a handwritten line is B's idea; A has stopped."
+          },
+          {
+            "zh": "A质疑只有印刷套话的贺年卡；改用邮件的是A，不是B。",
+            "en": "A questions printed set-phrase cards; it's A, not B, who switches to email."
+          },
+          null
+        ]
+      }
+    ]
   }
 ]

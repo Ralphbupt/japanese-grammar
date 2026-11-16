@@ -370,5 +370,299 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n4-dk-406",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "ケイトさんは 今度の 日曜日に、友だちと 二人で 自転車を 借りて、町を 回りたいです。朝 10時から 午後 3時まで 使う つもりです。坂が 多い 町なので、電動自転車が いいです。お金は 一人 1,500円までに したいです。",
+    "passage": "みどり町 レンタサイクル　料金の 案内\n| 自転車 | 3時間まで | 1日（9:00〜18:00） | 台数 |\n| A ふつうの 自転車 | 500円 | 1,000円 | 30台 |\n| B 電動自転車 | 800円 | 1,500円 | 10台 |\n| C 電動自転車（子どもを 乗せる いす つき） | 1,000円 | 2,000円 | 3台 |\n| D スポーツ自転車 | 1,000円 | 1,800円 | 5台 |\n＊3時間を 過ぎたら、1日の 料金に なります。\n＊土曜日・日曜日に 借りる 場合は、前の 日の 17時までに 電話で 予約して ください。\n＊借りる ときに、パスポートか 在留カードを 見せて ください。",
+    "kj": "みどり町 レンタサイクル　料金の案内\n| 自転車 | 3時間まで | 1日（9:00〜18:00） | 台数 |\n| A 普通の自転車 | 500円 | 1,000円 | 30台 |\n| B 電動自転車 | 800円 | 1,500円 | 10台 |\n| C 電動自転車（子どもを乗せる椅子付き） | 1,000円 | 2,000円 | 3台 |\n| D スポーツ自転車 | 1,000円 | 1,800円 | 5台 |\n＊3時間を過ぎたら、1日の料金になります。\n＊土曜日・日曜日に借りる場合は、前の日の17時までに電話で予約してください。\n＊借りるときに、パスポートか在留カードを見せてください。",
+    "tr": {
+      "zh": "绿町 租赁自行车 收费说明。\nA 普通自行车：3小时以内500日元，1天（9:00–18:00）1,000日元，30辆。\nB 电动自行车：3小时以内800日元，1天1,500日元，10辆。\nC 电动自行车（带儿童座椅）：3小时以内1,000日元，1天2,000日元，3辆。\nD 运动自行车：3小时以内1,000日元，1天1,800日元，5辆。\n＊超过3小时，按1天的价格收费。\n＊周六、周日租车的，请在前一天17点之前打电话预约。\n＊租车时请出示护照或在留卡。",
+      "en": "Midori Town bicycle rental — prices.\nA Ordinary bicycle: up to 3 hours ¥500, 1 day (9:00–18:00) ¥1,000, 30 bikes.\nB Electric bicycle: up to 3 hours ¥800, 1 day ¥1,500, 10 bikes.\nC Electric bicycle (with a child seat): up to 3 hours ¥1,000, 1 day ¥2,000, 3 bikes.\nD Sports bicycle: up to 3 hours ¥1,000, 1 day ¥1,800, 5 bikes.\n* After 3 hours, the 1-day price applies.\n* To rent on a Saturday or Sunday, please book by phone by 17:00 the day before.\n* Please show your passport or residence card when you rent."
+    },
+    "questions": [
+      {
+        "q": "ケイトさんたちは どの 自転車を 借りますか。",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「3時間を 過ぎたら、1日の 料金に なります」；「B 電動自転車 | 800円 | 1,500円」。\n推理：10点到3点是5小时，超过3小时，按1天的价格算。条件是电动、每人1,500日元以内：B一天1,500日元，正好；C一天2,000日元，超了；A和D不是电动的。",
+          "en": "Evidence: 「3時間を 過ぎたら、1日の 料金に なります」; 「B 電動自転車 | 800円 | 1,500円」.\nReasoning: 10 to 3 is five hours, over 3, so the day price applies. She wants electric and at most 1,500 yen each: B is exactly 1,500 yen a day; C is 2,000; A and D aren't electric."
+        },
+        "wrong": [
+          {
+            "zh": "A便宜，但不是电动自行车，城里坡多，凯特想要电动的。",
+            "en": "A is cheap but not electric, and Kate wants electric for the hills."
+          },
+          null,
+          {
+            "zh": "C是电动的，但用5小时按1天算是2,000日元，超过了1,500日元。",
+            "en": "C is electric, but five hours means the day price, 2,000 yen — over 1,500."
+          },
+          {
+            "zh": "D是运动自行车，不是电动的，一天1,800日元也超了。",
+            "en": "D is a sports bike, not electric, and 1,800 yen a day is over budget too."
+          }
+        ]
+      },
+      {
+        "q": "ケイトさんは 自転車を 借りる 前に、何を しなければ なりませんか。",
+        "options": [
+          "土曜日の 17時までに 電話で 予約する",
+          "金曜日の 17時までに 電話で 予約する",
+          "日曜日の 朝 9時に 店で 予約する",
+          "土曜日の 17時までに お金を はらう"
+        ],
+        "okj": [
+          null,
+          null,
+          null,
+          "土曜日の17時までにお金を払う"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「土曜日・日曜日に 借りる 場合は、前の 日の 17時までに 電話で 予約して ください」。\n推理：凯特星期天借车，「前の 日」是星期六，所以要在星期六17点前打电话预约。护照是借车时出示，钱也没说要提前付。",
+          "en": "Evidence: 「土曜日・日曜日に 借りる 場合は、前の 日の 17時までに 電話で 予約して ください」.\nReasoning: She rents on Sunday, so 「前の 日」 is Saturday: phone by 17:00 on Saturday. The passport is shown when renting, and no advance payment is mentioned."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "星期天借车，「前の 日」是星期六，不是星期五。",
+            "en": "For Sunday, 「前の 日」 is Saturday, not Friday."
+          },
+          {
+            "zh": "周末要在前一天打电话预约，当天去店里预约不行。",
+            "en": "Weekend rentals must be booked by phone the day before, not at the shop on the day."
+          },
+          {
+            "zh": "前一天要做的是「電話で 予約」，没有说要先付钱。",
+            "en": "The day before you 「電話で 予約」; nothing about paying in advance."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-407",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "ハンさんは 来月から 一人で 住む 部屋を さがして います。駅から 歩いて 10分 以内の 部屋が いいです。猫を 一匹 飼って います。家賃と 管理費を 合わせて、一か月 6万円までに したいです。",
+    "passage": "さくら不動産　おすすめの 部屋\n| 部屋 | 家賃（一か月） | 駅まで | 広さ | ペット |\n| A | 56,000円 | 歩いて 15分 | 25㎡ | 猫・犬 OK |\n| B | 59,000円 | 歩いて 5分 | 30㎡ | 猫 OK |\n| C | 55,000円 | 歩いて 8分 | 22㎡ | 猫 OK |\n| D | 50,000円 | 歩いて 3分 | 20㎡ | ペット だめ |\n＊家賃の ほかに、毎月 管理費が かかります。A・B・Dは 3,000円、Cは 4,000円です。\n＊部屋に 入る ときに、家賃の 一か月分の お金（敷金）を はらいます。ペットを 飼う 人は、二か月分 はらって ください。\n＊部屋を 見たい 人は、前の 日までに 電話で 予約して ください。",
+    "kj": "さくら不動産　おすすめの部屋\n| 部屋 | 家賃（一か月） | 駅まで | 広さ | ペット |\n| A | 56,000円 | 歩いて15分 | 25㎡ | 猫・犬OK |\n| B | 59,000円 | 歩いて5分 | 30㎡ | 猫OK |\n| C | 55,000円 | 歩いて8分 | 22㎡ | 猫OK |\n| D | 50,000円 | 歩いて3分 | 20㎡ | ペット駄目 |\n＊家賃のほかに、毎月管理費がかかります。A・B・Dは3,000円、Cは4,000円です。\n＊部屋に入るときに、家賃の一か月分のお金（敷金）を払います。ペットを飼う人は、二か月分払ってください。\n＊部屋を見たい人は、前の日までに電話で予約してください。",
+    "tr": {
+      "zh": "樱花房产 推荐房间。\nA：房租每月56,000日元，步行到车站15分钟，25平方米，可养猫、狗。\nB：房租59,000日元，步行5分钟，30平方米，可养猫。\nC：房租55,000日元，步行8分钟，22平方米，可养猫。\nD：房租50,000日元，步行3分钟，20平方米，不可养宠物。\n＊除房租外，每月还要交管理费：A、B、D为3,000日元，C为4,000日元。\n＊入住时要交相当于一个月房租的押金。养宠物的人请交两个月的。\n＊想看房的人，请在前一天之前打电话预约。",
+      "en": "Sakura Real Estate — recommended rooms.\nA: rent ¥56,000 a month, 15 minutes' walk to the station, 25 m², cats and dogs OK.\nB: rent ¥59,000, 5 minutes' walk, 30 m², cats OK.\nC: rent ¥55,000, 8 minutes' walk, 22 m², cats OK.\nD: rent ¥50,000, 3 minutes' walk, 20 m², no pets.\n* Besides the rent there is a monthly maintenance fee: ¥3,000 for A, B and D, ¥4,000 for C.\n* When you move in you pay a deposit of one month's rent. If you keep a pet, please pay two months' rent.\n* If you want to see a room, please book by phone by the day before."
+    },
+    "questions": [
+      {
+        "q": "ハンさんに 合う 部屋は どれですか。",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「C | 55,000円 | 歩いて 8分 | 22㎡ | 猫 OK」；「Cは 4,000円です」。\n推理：条件：步行10分钟以内、能养猫、房租加管理费6万以内。C是55,000＋4,000＝59,000日元，步行8分钟，可养猫，全部符合。B是59,000＋3,000＝62,000日元，超了。",
+          "en": "Evidence: 「C | 55,000円 | 歩いて 8分 | 22㎡ | 猫 OK」; 「Cは 4,000円です」.\nReasoning: Within 10 minutes' walk, cats allowed, rent plus fee at most 60,000. C: 55,000 + 4,000 = 59,000, 8 minutes, cats OK — all met. B: 59,000 + 3,000 = 62,000, too much."
+        },
+        "wrong": [
+          {
+            "zh": "A可以养猫，钱也够（59,000日元），但步行15分钟，超过10分钟。",
+            "en": "A allows cats and costs 59,000 in total, but it's 15 minutes' walk."
+          },
+          {
+            "zh": "B房租59,000日元，加管理费3,000日元是62,000日元，超过6万。",
+            "en": "B's rent 59,000 plus the 3,000 fee is 62,000, over 60,000."
+          },
+          null,
+          {
+            "zh": "D又近又便宜，但「ペット だめ」，不能养猫。",
+            "en": "D is close and cheap, but 「ペット だめ」 — no cat."
+          }
+        ]
+      },
+      {
+        "q": "ハンさんが その 部屋に 入る とき、敷金は いくら はらいますか。",
+        "options": [
+          "55,000円",
+          "59,000円",
+          "110,000円",
+          "118,000円"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「家賃の 一か月分の お金（敷金）を はらいます。ペットを 飼う 人は、二か月分 はらって ください」。\n推理：韩先生养猫，要交两个月的房租。C的房租是55,000日元，55,000×2＝110,000日元。押金按「家賃」算，不包括管理费。",
+          "en": "Evidence: 「家賃の 一か月分の お金（敷金）を はらいます。ペットを 飼う 人は、二か月分 はらって ください」.\nReasoning: Han has a cat, so two months' rent: C's rent is 55,000, × 2 = 110,000. The deposit is based on 「家賃」 only, not the maintenance fee."
+        },
+        "wrong": [
+          {
+            "zh": "这是一个月的房租；养宠物的人要交「二か月分」。",
+            "en": "That's one month's rent; pet owners pay 「二か月分」."
+          },
+          {
+            "zh": "这是房租加管理费一个月的钱，押金只按房租算，而且要两个月。",
+            "en": "That's one month's rent plus fee; the deposit is rent only, and two months of it."
+          },
+          null,
+          {
+            "zh": "把管理费也算进去了（59,000×2），押金只按「家賃」算。",
+            "en": "This counts the fee too (59,000 × 2); the deposit is based on 「家賃」 only."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-408",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "ソンさんは 東京に 住んで います。大阪に 住んで いる 友だちに、荷物を 一つ 送りたいです。荷物の 三つの 辺を 合わせると 75cmで、重さは 8kgです。友だちは 昼は 仕事なので、あさっての 夜 6時より あとに 届けて ほしいです。",
+    "passage": "はやて宅配便　料金表（東京から 送る 場合）\n| サイズ（三つの 辺の 合計） | 重さ | 大阪まで | 北海道まで |\n| 60cmまで | 2kgまで | 900円 | 1,300円 |\n| 80cmまで | 5kgまで | 1,200円 | 1,600円 |\n| 100cmまで | 10kgまで | 1,500円 | 1,900円 |\n| 120cmまで | 15kgまで | 1,800円 | 2,200円 |\n＊サイズと 重さが 違う 行に なる 場合は、高い ほうの 料金に なります。\n＊大阪へは 送った 次の 日に、北海道へは 二日 後に 届きます。\n＊届ける 時間は 「午前」「14〜16時」「16〜18時」「18〜21時」から 選べます。\n＊コンビニに 持って 行って 送ると、一つ 100円 安く なります。",
+    "kj": "はやて宅配便　料金表（東京から送る場合）\n| サイズ（三つの辺の合計） | 重さ | 大阪まで | 北海道まで |\n| 60cmまで | 2kgまで | 900円 | 1,300円 |\n| 80cmまで | 5kgまで | 1,200円 | 1,600円 |\n| 100cmまで | 10kgまで | 1,500円 | 1,900円 |\n| 120cmまで | 15kgまで | 1,800円 | 2,200円 |\n＊サイズと重さが違う行になる場合は、高い方の料金になります。\n＊大阪へは送った次の日に、北海道へは二日後に届きます。\n＊届ける時間は「午前」「14〜16時」「16〜18時」「18〜21時」から選べます。\n＊コンビニに持って行って送ると、一つ100円安くなります。",
+    "tr": {
+      "zh": "疾风快递 价目表（从东京寄出时）。\n三边合计60厘米以内、2公斤以内：到大阪900日元，到北海道1,300日元。\n80厘米以内、5公斤以内：大阪1,200日元，北海道1,600日元。\n100厘米以内、10公斤以内：大阪1,500日元，北海道1,900日元。\n120厘米以内、15公斤以内：大阪1,800日元，北海道2,200日元。\n＊尺寸和重量落在不同的行时，按较贵的价格收费。\n＊寄到大阪的第二天送达，寄到北海道的两天后送达。\n＊送达时间可以从“上午”“14–16点”“16–18点”“18–21点”中选择。\n＊拿到便利店寄，每件便宜100日元。",
+      "en": "Hayate Delivery — price list (sending from Tokyo).\nUp to 60 cm (sum of three sides), up to 2 kg: to Osaka ¥900, to Hokkaido ¥1,300.\nUp to 80 cm, up to 5 kg: Osaka ¥1,200, Hokkaido ¥1,600.\nUp to 100 cm, up to 10 kg: Osaka ¥1,500, Hokkaido ¥1,900.\nUp to 120 cm, up to 15 kg: Osaka ¥1,800, Hokkaido ¥2,200.\n* If the size and the weight fall in different rows, the higher price applies.\n* Parcels arrive in Osaka the day after sending, in Hokkaido two days after.\n* You can choose the delivery time: morning, 14–16, 16–18 or 18–21.\n* Sending from a convenience store is 100 yen cheaper per parcel."
+    },
+    "questions": [
+      {
+        "q": "ソンさんが コンビニから 荷物を 送ると、いくらですか。",
+        "options": [
+          "1,100円",
+          "1,400円",
+          "1,500円",
+          "1,200円"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「サイズと 重さが 違う 行に なる 場合は、高い ほうの 料金に なります」；「コンビニに 持って 行って 送ると、一つ 100円 安く なります」。\n推理：75厘米属于80厘米那行（1,200日元），但8公斤属于10公斤那行（1,500日元），按贵的算1,500日元；在便利店寄减100日元，是1,400日元。",
+          "en": "Evidence: 「サイズと 重さが 違う 行に なる 場合は、高い ほうの 料金に なります」; 「コンビニに 持って 行って 送ると、一つ 100円 安く なります」.\nReasoning: 75 cm is the 80 cm row (1,200) but 8 kg is the 10 kg row (1,500); the higher, 1,500, applies. Minus 100 at a convenience store: 1,400 yen."
+        },
+        "wrong": [
+          {
+            "zh": "这是只按尺寸（1,200日元）再减100日元算的，忘了重量8公斤要按1,500日元。",
+            "en": "This uses only the size (1,200) minus 100, forgetting that 8 kg puts it at 1,500."
+          },
+          null,
+          {
+            "zh": "1,500日元是普通价格，在便利店寄还能便宜100日元。",
+            "en": "1,500 is the normal price; the convenience store takes off 100."
+          },
+          {
+            "zh": "只看了尺寸那一行；8公斤要按10公斤那行算。",
+            "en": "This only looks at the size row; 8 kg belongs in the 10 kg row."
+          }
+        ]
+      },
+      {
+        "q": "ソンさんは いつ 荷物を 送って、どの 時間を 選びますか。",
+        "options": [
+          "今日 送って、「18〜21時」を 選ぶ",
+          "あした 送って、「16〜18時」を 選ぶ",
+          "あした 送って、「18〜21時」を 選ぶ",
+          "あさって 送って、「18〜21時」を 選ぶ"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「大阪へは 送った 次の 日に…届きます」；「届ける 時間は…『18〜21時』から 選べます」。\n推理：寄到大阪第二天到，要后天到就得明天寄。朋友晚上6点以后才在家，选「18〜21時」。",
+          "en": "Evidence: 「大阪へは 送った 次の 日に…届きます」; 「届ける 時間は…『18〜21時』から 選べます」.\nReasoning: Osaka parcels arrive the next day, so to arrive the day after tomorrow it goes tomorrow. The friend is home after 6 p.m., so 「18〜21時」."
+        },
+        "wrong": [
+          {
+            "zh": "今天寄的话明天就到了，不是后天。",
+            "en": "Sent today, it would arrive tomorrow, not the day after."
+          },
+          {
+            "zh": "寄的日子对，但16〜18点朋友还在上班，要晚上6点以后。",
+            "en": "The day is right, but at 16–18 the friend is at work; it must be after 6 p.m."
+          },
+          null,
+          {
+            "zh": "后天寄的话要大后天才到，太晚了。",
+            "en": "Sent the day after tomorrow, it would arrive a day too late."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-409",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "木村さんは 65歳で、奥さんは 60歳です。今週の 水曜日、二人で 夜 7時から 始まる 映画を 見る つもりです。木村さんは みどりシネマの 会員カードを 持って いますが、奥さんは 持って いません。",
+    "passage": "みどりシネマ　料金の ご案内\n| | ふつうの 日 | 毎週 水曜日 |\n| 大人 | 1,900円 | 1,200円 |\n| 大学生・高校生 | 1,500円 | 1,200円 |\n| シニア（60歳 以上） | 1,300円 | 1,200円 |\n| 子ども（中学生 以下） | 1,000円 | 1,000円 |\n＊夜 8時より あとに 始まる 映画は、水曜日 以外は だれでも 1,300円です。\n＊会員カードを 見せると、カードを 持って いる 人は 300円 安く なります。\n＊シニアの 方は、年が 分かる もの（保険証など）を 見せて ください。",
+    "kj": "みどりシネマ　料金のご案内\n| | 普通の日 | 毎週水曜日 |\n| 大人 | 1,900円 | 1,200円 |\n| 大学生・高校生 | 1,500円 | 1,200円 |\n| シニア（60歳以上） | 1,300円 | 1,200円 |\n| 子ども（中学生以下） | 1,000円 | 1,000円 |\n＊夜8時より後に始まる映画は、水曜日以外は誰でも1,300円です。\n＊会員カードを見せると、カードを持っている人は300円安くなります。\n＊シニアの方は、年が分かるもの（保険証など）を見せてください。",
+    "tr": {
+      "zh": "绿色影院 票价说明。\n成人：平日1,900日元，每周三1,200日元。\n大学生、高中生：平日1,500日元，周三1,200日元。\n老年人（60岁以上）：平日1,300日元，周三1,200日元。\n儿童（初中生及以下）：平日1,000日元，周三1,000日元。\n＊晚上8点以后开始的电影，除周三外，任何人都是1,300日元。\n＊出示会员卡，持卡人本人便宜300日元。\n＊老年人请出示能证明年龄的东西（保险证等）。",
+      "en": "Midori Cinema — prices.\nAdults: ordinary days ¥1,900, every Wednesday ¥1,200.\nUniversity and high-school students: ordinary days ¥1,500, Wednesday ¥1,200.\nSeniors (60 and over): ordinary days ¥1,300, Wednesday ¥1,200.\nChildren (junior-high age and under): ¥1,000 on both.\n* Films starting after 8 p.m. are ¥1,300 for everyone, except on Wednesdays.\n* Showing a membership card takes ¥300 off for the cardholder.\n* Seniors, please show something that proves your age (a health insurance card, etc.)."
+    },
+    "questions": [
+      {
+        "q": "水曜日、二人で いくら はらいますか。",
+        "options": [
+          "2,100円",
+          "2,400円",
+          "2,300円",
+          "2,600円"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「シニア（60歳 以上） | 1,300円 | 1,200円」；「カードを 持って いる 人は 300円 安く なります」。\n推理：两人都60岁以上，周三每人1,200日元。木村先生有会员卡，减300日元是900日元；太太没有卡，1,200日元。合计2,100日元。",
+          "en": "Evidence: 「シニア（60歳 以上） | 1,300円 | 1,200円」; 「カードを 持って いる 人は 300円 安く なります」.\nReasoning: Both are 60+, so Wednesday is 1,200 each. Mr Kimura has a card: 1,200 − 300 = 900; his wife has none: 1,200. Total 2,100 yen."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "这是两人都按1,200日元算的，忘了木村先生的会员卡能减300日元。",
+            "en": "That's 1,200 each, forgetting Mr Kimura's 300-yen card discount."
+          },
+          {
+            "zh": "这是按平日老年票价（1,300日元）算的；周三是1,200日元。",
+            "en": "That uses the ordinary-day senior price (1,300); on Wednesday it's 1,200."
+          },
+          {
+            "zh": "这是平日老年票价两张（1,300×2），周三更便宜，而且还有会员卡折扣。",
+            "en": "That's two ordinary-day senior tickets (1,300 × 2); Wednesday is cheaper, and there's the card discount."
+          }
+        ]
+      },
+      {
+        "q": "次の 週、二人は 土曜日の 夜 8時半から 始まる 映画を 見ます。二人で いくら はらいますか。",
+        "options": [
+          "2,000円",
+          "2,600円",
+          "2,100円",
+          "2,300円"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「夜 8時より あとに 始まる 映画は、水曜日 以外は だれでも 1,300円です」；「カードを 持って いる 人は 300円 安く なります」。\n推理：星期六晚上8点半开始，每人1,300日元。木村先生用会员卡减300日元是1,000日元，太太1,300日元，合计2,300日元。",
+          "en": "Evidence: 「夜 8時より あとに 始まる 映画は、水曜日 以外は だれでも 1,300円です」; 「カードを 持って いる 人は 300円 安く なります」.\nReasoning: Saturday at 8:30 p.m. is 1,300 each. Mr Kimura's card brings his to 1,000; his wife pays 1,300. Total 2,300 yen."
+        },
+        "wrong": [
+          {
+            "zh": "这是两人都减了300日元；只有持卡人木村先生能便宜，太太没有卡。",
+            "en": "That takes 300 off both; only the cardholder, Mr Kimura, gets it."
+          },
+          {
+            "zh": "这是两人都按1,300日元算的，忘了木村先生的会员卡。",
+            "en": "That's 1,300 each, forgetting Mr Kimura's card."
+          },
+          {
+            "zh": "这是周三的算法（1,200日元）；周六晚上8点以后是1,300日元。",
+            "en": "That's the Wednesday calculation (1,200); Saturday after 8 p.m. is 1,300."
+          },
+          null
+        ]
+      }
+    ]
   }
 ]

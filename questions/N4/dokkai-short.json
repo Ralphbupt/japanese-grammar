@@ -317,5 +317,565 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n4-dk-211",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "マイさんの スマートフォンに、歯医者から メッセージが 来ました。",
+    "passage": "マイ様\n\nさくら歯科です。あした 11月18日（水）午後 4時の ご予約の ことで ご連絡しました。先生が 急に 用事で 休む ことに なったので、あしたは 病院を 休みます。申し訳 ありません。\n19日（木）の 午後 4時か、20日（金）の 午前 10時なら、予約が できます。どちらが いいか、今日の 午後 6時までに 電話で 教えて ください。どちらも だめな 場合は、来週の 予約を いっしょに 考えましょう。",
+    "kj": "マイ様\n\nさくら歯科です。明日11月18日（水）午後4時のご予約のことでご連絡しました。先生が急に用事で休むことになったので、明日は病院を休みます。申し訳ありません。\n19日（木）の午後4時か、20日（金）の午前10時なら、予約ができます。どちらがいいか、今日の午後6時までに電話で教えてください。どちらもだめな場合は、来週の予約を一緒に考えましょう。",
+    "tr": {
+      "zh": "麦様：\n\n这里是樱花牙科。关于您明天11月18日（周三）下午4点的预约，特此联系。医生临时有事要休息，所以明天诊所停诊。非常抱歉。\n19日（周四）下午4点或20日（周五）上午10点可以预约。哪个时间合适，请在今天下午6点之前打电话告诉我们。如果两个都不行，我们再一起商量下周的预约。",
+      "en": "Dear Mai,\n\nThis is Sakura Dental. We are contacting you about your appointment tomorrow, Wednesday 18 November, at 4 p.m. The dentist suddenly has something to attend to and will be away, so the clinic will be closed tomorrow. We are very sorry.\nWe can offer Thursday the 19th at 4 p.m. or Friday the 20th at 10 a.m. Please tell us by phone, by 6 p.m. today, which one suits you. If neither works, let's find a time next week together."
+    },
+    "questions": [
+      {
+        "q": "マイさんは まず 何を しなければ なりませんか。",
+        "options": [
+          "あしたの 午後 4時に 歯医者へ 行く",
+          "メッセージで 行ける 日を 歯医者に 知らせる",
+          "今日の 午後 6時までに 歯医者に 電話を かける",
+          "来週の 予約を 電話で とる"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「どちらが いいか、今日の 午後 6時までに 電話で 教えて ください」。\n推理：明天停诊，要从19日和20日里选一个，并在今天6点前打电话告诉诊所。方式是「電話で」，不是回消息；下周的预约只在两个时间都不行时才商量。",
+          "en": "Evidence: 「どちらが いいか、今日の 午後 6時までに 電話で 教えて ください」.\nReasoning: The clinic is closed tomorrow, so Mai must pick the 19th or the 20th and phone by 6 p.m. today. It says 「電話で」, so not a reply by message; next week only comes up if neither time works."
+        },
+        "wrong": [
+          {
+            "zh": "明天诊所停诊（「あしたは 病院を 休みます」），去了也看不了。",
+            "en": "The clinic is closed tomorrow (「あしたは 病院を 休みます」)."
+          },
+          {
+            "zh": "要「電話で 教えて ください」，是打电话，不是发消息。",
+            "en": "It asks 「電話で 教えて ください」 — by phone, not by message."
+          },
+          null,
+          {
+            "zh": "下周的预约是「どちらも だめな 場合」才考虑的，现在还不用。",
+            "en": "Next week is only for 「どちらも だめな 場合」, if neither time works."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-212",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "わたしは 去年まで 毎日 会社の 近くの 店で 昼ごはんを 買って いました。でも、今年の 春から 自分で お弁当を 作って います。お金の ためでは ありません。会社の けんこうしんだんで、医者に 「野菜が 足りませんね」と 言われたからです。\n最初は 朝 早く 起きるのが つらかったです。それで、今は 夜の うちに おかずを 作って おく ように して います。お弁当に したら、お金も 少し 残る ように なりました。",
+    "kj": "私は去年まで毎日会社の近くの店で昼ご飯を買っていました。でも、今年の春から自分でお弁当を作っています。お金のためではありません。会社の健康診断で、医者に「野菜が足りませんね」と言われたからです。\n最初は朝早く起きるのがつらかったです。それで、今は夜のうちにおかずを作っておくようにしています。お弁当にしたら、お金も少し残るようになりました。",
+    "tr": {
+      "zh": "我到去年为止，每天都在公司附近的店里买午饭。但是从今年春天开始，我自己做便当。不是为了省钱，而是因为在公司的体检中，医生对我说：“你蔬菜吃得不够啊。”\n一开始早上早起很痛苦。所以现在我尽量在晚上就把菜做好。改吃便当以后，钱也能剩下一点了。",
+      "en": "Until last year I bought lunch every day at a shop near the office. But since this spring I've been making my own packed lunch. It isn't to save money. It's because at the company health check the doctor told me, \"You're not eating enough vegetables.\"\nAt first, getting up early was hard. So now I make sure to cook the side dishes the night before. Since switching to packed lunches, I've also started to have a little money left over."
+    },
+    "questions": [
+      {
+        "q": "この 人は どうして お弁当を 作り始めましたか。",
+        "options": [
+          "お金を 残したかったから",
+          "医者に 野菜が 足りないと 言われたから",
+          "夜に おかずを 作る 時間が できたから",
+          "朝 早く 起きるのが 好きに なったから"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「お金の ためでは ありません。会社の けんこうしんだんで、医者に 『野菜が 足りませんね』と 言われたからです」。\n推理：「〜からです」直接给出原因：医生说蔬菜不够。前面还特意否定了“为了钱”；钱有剩余只是做便当以后的结果。",
+          "en": "Evidence: 「お金の ためでは ありません。会社の けんこうしんだんで、医者に 『野菜が 足りませんね』と 言われたからです」.\nReasoning: 「〜からです」 gives the reason: the doctor said she lacked vegetables. Money is explicitly ruled out; having some left over is only a result."
+        },
+        "wrong": [
+          {
+            "zh": "文中明确说「お金の ためでは ありません」；钱有剩余是后来的结果。",
+            "en": "The text says 「お金の ためでは ありません」; the savings came later."
+          },
+          null,
+          {
+            "zh": "晚上做菜是因为早起太痛苦才想出的办法，是开始以后的事。",
+            "en": "Cooking at night was a fix for the hard early mornings, after she had started."
+          },
+          {
+            "zh": "正好相反，早起「つらかった」（很痛苦）。",
+            "en": "The opposite: getting up early was 「つらかった」, hard."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-213",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "駅の 前の 自転車置き場に、この お知らせが はって あります。",
+    "passage": "自転車置き場を 使う みなさんへ\n\n12月1日から、この 自転車置き場は 一日 100円に なります。お金は 出口の 機械に 入れて ください。一か月 続けて 使う 人は、駅の 事務所で 2,000円の カードを 買う ことも できます。\nまた、12月から、自転車置き場の 外に 止めて ある 自転車は、市が 持って 行きます。持って 行かれた 自転車を 取りに 行く ときは、1,500円 かかります。",
+    "kj": "自転車置き場を使う皆さんへ\n\n12月1日から、この自転車置き場は一日100円になります。お金は出口の機械に入れてください。一か月続けて使う人は、駅の事務所で2,000円のカードを買うこともできます。\nまた、12月から、自転車置き場の外に止めてある自転車は、市が持って行きます。持って行かれた自転車を取りに行くときは、1,500円かかります。",
+    "tr": {
+      "zh": "致使用自行车停车场的各位：\n\n从12月1日起，本停车场每天收费100日元。请把钱投入出口处的机器。连续使用一个月的人，也可以在车站办公室购买2,000日元的卡。\n另外，从12月起，停在停车场外面的自行车会被市政府拉走。去取被拉走的自行车时，需要付1,500日元。",
+      "en": "To everyone who uses this bicycle parking:\n\nFrom 1 December this bicycle parking will cost 100 yen a day. Please put the money in the machine at the exit. If you use it for a whole month, you can also buy a 2,000-yen card at the station office.\nAlso, from December, bicycles left outside the parking area will be taken away by the city. Collecting a bicycle that has been taken away costs 1,500 yen."
+    },
+    "questions": [
+      {
+        "q": "12月に 毎日 この 自転車置き場を 使う 人は、どう すると いちばん 安いですか。",
+        "options": [
+          "毎日 出口の 機械に 100円を 入れる",
+          "自転車置き場の 外に 自転車を 止める",
+          "市の 事務所で 1,500円の カードを 買う",
+          "駅の 事務所で 2,000円の カードを 買う"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「一日 100円に なります」；「一か月 続けて 使う 人は、駅の 事務所で 2,000円の カードを 買う ことも できます」。\n推理：每天投币，一个月约3,000日元；买卡只要2,000日元，所以买卡最便宜。卡是在「駅の 事務所」买的。",
+          "en": "Evidence: 「一日 100円に なります」; 「一か月 続けて 使う 人は、駅の 事務所で 2,000円の カードを 買う ことも できます」.\nReasoning: Paying daily comes to about 3,000 yen a month; the card is 2,000 yen, so it is cheapest. It is sold at 「駅の 事務所」."
+        },
+        "wrong": [
+          {
+            "zh": "每天100日元，一个月约3,000日元，比2,000日元的卡贵。",
+            "en": "100 yen a day is about 3,000 yen a month, more than the 2,000-yen card."
+          },
+          {
+            "zh": "停在外面的车会被市政府拉走，取回要1,500日元，并不便宜。",
+            "en": "Bikes left outside are taken away, and getting one back costs 1,500 yen."
+          },
+          {
+            "zh": "1,500日元是取回被拉走的车的费用；卡是在车站办公室卖的2,000日元的卡。",
+            "en": "1,500 yen is the fee for a removed bike; the card is 2,000 yen, at the station office."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-214",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "アリさんが 家に 帰ると、ドアに ルームメイトの メモが はって ありました。",
+    "passage": "アリさんへ\n\nせんたくきが こわれて、水が 出なく なりました。大家さんに 電話したら、木曜日の 午後に 修理の 人が 来る ことに なりました。わたしは 木曜日は 夜まで 大学なので、アリさんが 家に いて くれると 助かります。\nそれまでは、駅の 近くの コインランドリーを 使って ください。お金は あとで わたしが 半分 払います。せんたくきの 中の タオルは もう 出して おきました。\n\nゆうた",
+    "kj": "アリさんへ\n\n洗濯機が壊れて、水が出なくなりました。大家さんに電話したら、木曜日の午後に修理の人が来ることになりました。私は木曜日は夜まで大学なので、アリさんが家にいてくれると助かります。\nそれまでは、駅の近くのコインランドリーを使ってください。お金は後で私が半分払います。洗濯機の中のタオルはもう出しておきました。\n\nゆうた",
+    "tr": {
+      "zh": "致阿里：\n\n洗衣机坏了，不出水了。我给房东打了电话，定好星期四下午修理工会来。我星期四在大学待到晚上，如果你能在家就太好了。\n在那之前，请用车站附近的投币洗衣店。钱我之后付一半。洗衣机里的毛巾我已经拿出来了。\n\n勇太",
+      "en": "Ali,\n\nThe washing machine is broken — no water comes out. I phoned the landlord, and a repair person is coming on Thursday afternoon. I'm at the university until evening on Thursday, so it would really help if you could be at home.\nUntil then, please use the coin laundry near the station. I'll pay half of the cost later. I've already taken the towels out of the machine.\n\nYuta"
+    },
+    "questions": [
+      {
+        "q": "アリさんは 木曜日の 午後、何を すると いいですか。",
+        "options": [
+          "家で 修理の 人が 来るのを 待つ",
+          "大家さんに 修理の ことで 電話する",
+          "せんたくきから タオルを 出して おく",
+          "ゆうたさんに コインランドリーの お金を 払う"
+        ],
+        "okj": [
+          "家で修理の人が来るのを待つ",
+          null,
+          "洗濯機からタオルを出しておく",
+          null
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「木曜日の 午後に 修理の 人が 来る ことに なりました」；「アリさんが 家に いて くれると 助かります」。\n推理：勇太星期四要在大学待到晚上，所以希望阿里在家等修理工。「〜て くれると 助かります」是委婉的请求。",
+          "en": "Evidence: 「木曜日の 午後に 修理の 人が 来る ことに なりました」; 「アリさんが 家に いて くれると 助かります」.\nReasoning: Yuta is at university until evening, so he hopes Ali will be home for the repair person. 「〜て くれると 助かります」 is a polite request."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "勇太已经给房东打过电话了（「大家さんに 電話したら」）。",
+            "en": "Yuta has already phoned the landlord (「大家さんに 電話したら」)."
+          },
+          {
+            "zh": "毛巾勇太已经拿出来了（「もう 出して おきました」）。",
+            "en": "Yuta has already taken the towels out (「もう 出して おきました」)."
+          },
+          {
+            "zh": "反了：是勇太之后付一半（「わたしが 半分 払います」），没让阿里付钱给他。",
+            "en": "Backwards: Yuta will pay half (「わたしが 半分 払います」); Ali isn't asked to pay him."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-215",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "わたしは 旅行が 好きで、よく 一人で 出かけます。一人なら、行きたい 所に 好きなだけ いられますし、天気が 悪ければ 予定を すぐ 変える ことも できます。\nでも、一人の 旅行にも 困る ことが あります。それは 食事です。おいしい 料理を 食べても、「おいしいね」と 言う 相手が いません。だから、最近は 旅行の 間に 食べた 物の 写真を 家族に 送る ように して います。",
+    "kj": "私は旅行が好きで、よく一人で出かけます。一人なら、行きたい所に好きなだけいられますし、天気が悪ければ予定をすぐ変えることもできます。\nでも、一人の旅行にも困ることがあります。それは食事です。おいしい料理を食べても、「おいしいね」と言う相手がいません。だから、最近は旅行の間に食べた物の写真を家族に送るようにしています。",
+    "tr": {
+      "zh": "我喜欢旅行，经常一个人出门。一个人的话，想去的地方想待多久就待多久，天气不好时也能马上改变计划。\n不过，一个人旅行也有为难的事，那就是吃饭。就算吃到好吃的菜，也没有可以说一句“真好吃啊”的人。所以最近我会把旅途中吃的东西拍照发给家人。",
+      "en": "I love travelling and often go off on my own. Alone, I can stay as long as I like at the places I want to see, and if the weather is bad I can change my plans straight away.\nBut travelling alone has its problem too: meals. Even when I eat something delicious, there's no one to say \"This is good, isn't it?\" to. So lately I've been sending my family photos of the food I eat on my trips."
+    },
+    "questions": [
+      {
+        "q": "この 人は 一人の 旅行に ついて どう 思って いますか。",
+        "options": [
+          "予定が すぐ 変えられないので、大変だ",
+          "料理が おいしくないので、好きではない",
+          "家族と 行く 旅行の ほうが 楽しい",
+          "自由で いいが、食事の ときは 少し さびしい"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「一人なら、行きたい 所に 好きなだけ いられますし、天気が 悪ければ 予定を すぐ 変える ことも できます」；「『おいしいね』と 言う 相手が いません」。\n推理：前半说一个人很自由，后半「でも」转折，说吃饭时没人分享。选项把“没有说话的对象”换成了“有点寂寞”。",
+          "en": "Evidence: 「一人なら、行きたい 所に 好きなだけ いられますし、天気が 悪ければ 予定を すぐ 変える ことも できます」; 「『おいしいね』と 言う 相手が いません」.\nReasoning: First the freedom, then 「でも」: at meals there is no one to share with. The option restates \"no one to talk to\" as \"a bit lonely\"."
+        },
+        "wrong": [
+          {
+            "zh": "正好相反，一个人时「予定を すぐ 変える ことも できます」。",
+            "en": "The opposite: alone, 「予定を すぐ 変える ことも できます」."
+          },
+          {
+            "zh": "菜是好吃的（「おいしい 料理を 食べても」），问题是没人可以说。",
+            "en": "The food is good (「おいしい 料理を 食べても」); the problem is having no one to tell."
+          },
+          {
+            "zh": "作者喜欢一个人旅行，没有说和家人去更开心，只是给家人发照片。",
+            "en": "The writer likes going alone and never says family trips are better; she only sends them photos."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-216",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "たかしさんに 友だちの ミンさんから メールが 来ました。",
+    "passage": "たかしさん\n\n来週の 旅行の とき、たかしさんの カメラを 貸して もらえませんか。わたしの カメラは 先週 落として、こわれて しまいました。新しいのを 買おうと 思いましたが、高くて まだ 買えません。\n旅行は 金曜日からなので、木曜日の 夜に たかしさんの アパートへ 取りに 行きます。日曜日の 夜に 帰って くるので、月曜日に 学校で 返します。\n\nミン",
+    "kj": "たかしさん\n\n来週の旅行のとき、たかしさんのカメラを貸してもらえませんか。私のカメラは先週落として、壊れてしまいました。新しいのを買おうと思いましたが、高くてまだ買えません。\n旅行は金曜日からなので、木曜日の夜にたかしさんのアパートへ取りに行きます。日曜日の夜に帰ってくるので、月曜日に学校で返します。\n\nミン",
+    "tr": {
+      "zh": "小隆：\n\n下周旅行的时候，能把你的相机借给我吗？我的相机上周掉在地上摔坏了。本来想买新的，但太贵了，还买不起。\n旅行是从星期五开始，所以星期四晚上我去你的公寓拿。我星期天晚上回来，星期一在学校还给你。\n\n敏",
+      "en": "Takashi,\n\nCould you lend me your camera for my trip next week? I dropped mine last week and it broke. I thought about buying a new one, but they're expensive and I can't afford one yet.\nThe trip starts on Friday, so I'll come to your flat to pick it up on Thursday evening. I'll be back on Sunday night, so I'll give it back to you at school on Monday.\n\nMin"
+    },
+    "questions": [
+      {
+        "q": "ミンさんは どうして カメラを 借りたいのですか。",
+        "options": [
+          "たかしさんの カメラの ほうが 使いやすいから",
+          "新しい カメラを 買ったが、まだ 届かないから",
+          "自分の カメラが こわれて、新しいのが 高いから",
+          "旅行の 前に カメラを 買う 時間が ないから"
+        ],
+        "okj": [
+          "たかしさんのカメラの方が使いやすいから",
+          null,
+          "自分のカメラが壊れて、新しいのが高いから",
+          null
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「わたしの カメラは 先週 落として、こわれて しまいました」；「新しいのを 買おうと 思いましたが、高くて まだ 買えません」。\n推理：自己的相机摔坏了，新的又太贵买不起，所以向小隆借。不是没时间买，是因为贵。",
+          "en": "Evidence: 「わたしの カメラは 先週 落として、こわれて しまいました」; 「新しいのを 買おうと 思いましたが、高くて まだ 買えません」.\nReasoning: Her camera broke and a new one is too expensive, so she asks to borrow Takashi's. It's the price, not a lack of time."
+        },
+        "wrong": [
+          {
+            "zh": "邮件里没有比较两台相机，借的原因是自己的坏了。",
+            "en": "The email doesn't compare cameras; hers is broken."
+          },
+          {
+            "zh": "她想买但「高くて まだ 買えません」，并没有买。",
+            "en": "She wanted to, but 「高くて まだ 買えません」 — she hasn't bought one."
+          },
+          null,
+          {
+            "zh": "买不了的原因是「高くて」（太贵），不是没有时间。",
+            "en": "The reason is 「高くて」, the price, not time."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-217",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "スポーツセンターの 受付に、この お知らせが あります。",
+    "passage": "スポーツセンターを ご利用の みなさまへ\n\n2階の シャワー室の 工事の ため、6月10日（月）から 6月23日（日）まで、2階の シャワーは 使えません。この 間は、1階の プールの シャワーを 使って ください。ただし、プールの シャワーは 夜 8時までです。\nまた、工事の 間も、2階の トレーニングルームは いつもと 同じ 朝 9時から 夜 9時まで 使えますが、少し うるさく なります。ご協力 お願いします。",
+    "kj": "スポーツセンターをご利用の皆様へ\n\n2階のシャワー室の工事のため、6月10日（月）から6月23日（日）まで、2階のシャワーは使えません。この間は、1階のプールのシャワーを使ってください。ただし、プールのシャワーは夜8時までです。\nまた、工事の間も、2階のトレーニングルームはいつもと同じ朝9時から夜9時まで使えますが、少しうるさくなります。ご協力お願いします。",
+    "tr": {
+      "zh": "致使用体育中心的各位：\n\n因二楼淋浴室施工，6月10日（周一）至6月23日（周日），二楼的淋浴不能使用。这期间请使用一楼游泳池的淋浴。但是，游泳池的淋浴只开到晚上8点。\n另外，施工期间二楼的健身房照常从早上9点开到晚上9点，但会有点吵。敬请配合。",
+      "en": "To all users of the Sports Centre:\n\nBecause of work on the second-floor shower room, the second-floor showers cannot be used from Monday 10 June to Sunday 23 June. During this time, please use the showers at the pool on the first floor. However, the pool showers are open only until 8 p.m.\nDuring the work, the second-floor training room stays open as usual from 9 a.m. to 9 p.m., but it will be a little noisy. Thank you for your understanding."
+    },
+    "questions": [
+      {
+        "q": "6月15日の 夜 8時半に トレーニングが 終わった 人は、どう なりますか。",
+        "options": [
+          "センターでは シャワーを 浴びる ことが できない",
+          "2階の シャワーを 使う ことが できる",
+          "1階の プールの シャワーを 使う ことが できる",
+          "8時半には もう トレーニングルームが 閉まって いる"
+        ],
+        "okj": [
+          "センターではシャワーを浴びることができない",
+          null,
+          null,
+          null
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「6月23日（日）まで、2階の シャワーは 使えません」；「ただし、プールの シャワーは 夜 8時までです」。\n推理：15日在施工期间，二楼淋浴不能用；能代替的一楼淋浴只到8点，8点半已经过了，所以哪里都洗不了。",
+          "en": "Evidence: 「6月23日（日）まで、2階の シャワーは 使えません」; 「ただし、プールの シャワーは 夜 8時までです」.\nReasoning: The 15th is during the work, so the second-floor showers are closed, and the pool showers close at 8. At 8:30 there is no shower anywhere."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "15日在施工期间（10日～23日），二楼的淋浴不能用。",
+            "en": "The 15th falls in the work period (10th–23rd); the second-floor showers are closed."
+          },
+          {
+            "zh": "一楼淋浴「夜 8時まで」，8点半已经不能用了。",
+            "en": "The pool showers are open 「夜 8時まで」, so not at 8:30."
+          },
+          {
+            "zh": "健身房照常开到晚上9点，8点半还开着。",
+            "en": "The training room is open until 9 p.m. as usual."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-218",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "わたしの アパートの 前で、毎朝 小学生の 男の子に 会います。最初は 何も 言わないで 通って いましたが、ある 朝、その 子が 大きな 声で 「おはようございます」と 言って くれました。わたしは びっくりして、小さい 声で 「おはよう」と 言う ことしか できませんでした。\n次の 日から、わたしも 自分から あいさつする ように しました。それだけで、朝の 気分が ずいぶん 変わりました。",
+    "kj": "私のアパートの前で、毎朝小学生の男の子に会います。最初は何も言わないで通っていましたが、ある朝、その子が大きな声で「おはようございます」と言ってくれました。私はびっくりして、小さい声で「おはよう」と言うことしかできませんでした。\n次の日から、私も自分から挨拶するようにしました。それだけで、朝の気分がずいぶん変わりました。",
+    "tr": {
+      "zh": "每天早上，我都会在公寓前碰到一个小学男孩。一开始我什么都不说就走过去，可是有一天早上，那个孩子大声对我说：“早上好！”我吓了一跳，只能小声说了句“早”。\n从第二天开始，我也尽量主动打招呼。仅仅这样，早上的心情就大不一样了。",
+      "en": "Every morning I meet a primary-school boy in front of my flat. At first I walked past without saying anything, but one morning he said \"Good morning!\" to me in a loud voice. I was so surprised that all I could manage was a quiet \"Morning.\"\nFrom the next day, I made a point of greeting him first. Just that changed how I feel in the mornings a great deal."
+    },
+    "questions": [
+      {
+        "q": "「それだけで」の「それ」は 何ですか。",
+        "options": [
+          "男の子が 大きな 声で あいさつして くれた こと",
+          "自分から 男の子に あいさつする こと",
+          "何も 言わないで 男の子の 前を 通る こと",
+          "小さい 声で 「おはよう」と 言う こと"
+        ],
+        "okj": [
+          "男の子が大きな声で挨拶してくれたこと",
+          "自分から男の子に挨拶すること",
+          null,
+          null
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「次の 日から、わたしも 自分から あいさつする ように しました。それだけで、朝の 気分が ずいぶん 変わりました」。\n推理：「それ」指紧挨在前面的那句话：从第二天起自己主动打招呼。“仅仅这样”心情就变了，说的是作者自己改变的做法。",
+          "en": "Evidence: 「次の 日から、わたしも 自分から あいさつする ように しました。それだけで、朝の 気分が ずいぶん 変わりました」.\nReasoning: 「それ」 points to the sentence right before: from the next day she greeted the boy first. \"Just that\" is the change in her own habit."
+        },
+        "wrong": [
+          {
+            "zh": "男孩打招呼是某一天早上的事；「それ」紧接在“自己主动打招呼”之后，指的是这件事。",
+            "en": "The boy's greeting happened one morning; 「それ」 follows \"I greeted him first\" and points to that."
+          },
+          null,
+          {
+            "zh": "什么都不说走过去是以前的做法，后来改掉了。",
+            "en": "Walking past in silence is what she did before and then stopped."
+          },
+          {
+            "zh": "小声说“早”是第一次被打招呼时的反应，不是让心情变好的事。",
+            "en": "The quiet \"Morning\" was her first surprised reply, not what changed her mornings."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-219",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "グエンさんの スマートフォンに、店から メールが 来ました。",
+    "passage": "グエン様\n\nいつも 「みどりネットショップ」を ご利用 いただき、ありがとう ございます。ご注文の くつですが、店に ない 色だったため、届くのが 一週間 おそく なります。\n待って いただける 場合は、何も しなくても かまいません。くつは 25日ごろ 届きます。注文を やめたい 場合は、14日までに この メールに 返事を して ください。お金は 全部 お返しします。",
+    "kj": "グエン様\n\nいつも「みどりネットショップ」をご利用いただき、ありがとうございます。ご注文の靴ですが、店にない色だったため、届くのが一週間遅くなります。\n待っていただける場合は、何もしなくても構いません。靴は25日ごろ届きます。注文をやめたい場合は、14日までにこのメールに返事をしてください。お金は全部お返しします。",
+    "tr": {
+      "zh": "阮先生/女士：\n\n感谢您一直以来使用“绿色网店”。您订购的鞋子，因为是店里没有的颜色，送达时间会推迟一周。\n如果您愿意等，什么都不用做。鞋子大约25日送到。如果想取消订单，请在14日之前回复这封邮件。我们会全额退款。",
+      "en": "Dear Nguyen,\n\nThank you for shopping with Midori Net Shop. The shoes you ordered are in a colour we don't have in stock, so delivery will be a week late.\nIf you can wait, you don't need to do anything. The shoes will arrive around the 25th. If you want to cancel the order, please reply to this email by the 14th. We will refund the full amount."
+    },
+    "questions": [
+      {
+        "q": "グエンさんは くつを 待つ ことに しました。どう しますか。",
+        "options": [
+          "14日までに メールで 返事を して、待つ",
+          "店に 電話を かけて、ほかの 色に 変える",
+          "返事は しないで、くつが 届くのを 待つ",
+          "注文を やめて、お金を 返して もらう"
+        ],
+        "okj": [
+          null,
+          null,
+          "返事はしないで、靴が届くのを待つ",
+          null
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「待って いただける 場合は、何も しなくても かまいません」。\n推理：愿意等的话什么都不用做，等25日左右鞋子送到就行。「14日までに 返事」是想取消时才要做的事。",
+          "en": "Evidence: 「待って いただける 場合は、何も しなくても かまいません」.\nReasoning: If she waits, she needs to do nothing; the shoes come around the 25th. Replying by the 14th is only for cancelling."
+        },
+        "wrong": [
+          {
+            "zh": "回复邮件是「注文を やめたい 場合」才要做的，等的话不用回。",
+            "en": "Replying is for 「注文を やめたい 場合」; waiting needs no reply."
+          },
+          {
+            "zh": "邮件里没有说可以换颜色，等的话「何も しなくても かまいません」。",
+            "en": "Nothing about changing colour; to wait, 「何も しなくても かまいません」."
+          },
+          null,
+          {
+            "zh": "她决定要等，不是取消订单。",
+            "en": "She has decided to wait, not to cancel."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-220",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "わたしは 子どもの ころから 泳げませんでした。でも、去年 四十歳に なってから、市の プールの 教室に 通い始めました。娘が 「夏休みに 家族で 海へ 行きたい」と 言ったからです。娘と いっしょに 海で 泳げる ように なりたいと 思いました。\n教室の 生徒は ほとんど わたしより 年上ですが、みんな 楽しそうに 練習して います。わたしも 今は 25メートル 泳げる ように なりました。",
+    "kj": "私は子どもの頃から泳げませんでした。でも、去年四十歳になってから、市のプールの教室に通い始めました。娘が「夏休みに家族で海へ行きたい」と言ったからです。娘と一緒に海で泳げるようになりたいと思いました。\n教室の生徒はほとんど私より年上ですが、みんな楽しそうに練習しています。私も今は25メートル泳げるようになりました。",
+    "tr": {
+      "zh": "我从小就不会游泳。但是去年四十岁以后，我开始去市游泳池的游泳班上课。因为女儿说：“暑假想全家一起去海边。”我想能和女儿一起在海里游泳。\n班上的学员几乎都比我年纪大，但大家都练得很开心。我现在也能游25米了。",
+      "en": "I haven't been able to swim since I was a child. But last year, after turning forty, I started going to classes at the city pool. That's because my daughter said, \"I want to go to the sea as a family in the summer holidays.\" I wanted to be able to swim in the sea with her.\nMost of the people in the class are older than me, but they all practise happily. I can now swim 25 metres too."
+    },
+    "questions": [
+      {
+        "q": "この 人は どうして プールの 教室に 通い始めましたか。",
+        "options": [
+          "娘に 泳ぎ方を 教えて あげたかったから",
+          "年上の 人たちと 楽しく 練習したかったから",
+          "25メートル 泳げる ように なったから",
+          "娘と いっしょに 海で 泳ぎたかったから"
+        ],
+        "okj": [
+          "娘に泳ぎ方を教えてあげたかったから",
+          null,
+          null,
+          "娘と一緒に海で泳ぎたかったから"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「娘が 『夏休みに 家族で 海へ 行きたい』と 言ったからです。娘と いっしょに 海で 泳げる ように なりたいと 思いました」。\n推理：「〜からです」说明开始上课的原因：女儿想全家去海边，作者想和女儿一起游。比自己年长的学员、游25米都是上课以后的事。",
+          "en": "Evidence: 「娘が 『夏休みに 家族で 海へ 行きたい』と 言ったからです。娘と いっしょに 海で 泳げる ように なりたいと 思いました」.\nReasoning: 「〜からです」 gives the reason: the daughter wants a family trip to the sea and the writer wants to swim with her. The older classmates and the 25 metres come after starting."
+        },
+        "wrong": [
+          {
+            "zh": "作者自己不会游，想的是「いっしょに」游，没有说要教女儿。",
+            "en": "The writer can't swim and wants to swim 「いっしょに」, not teach her."
+          },
+          {
+            "zh": "学员年纪大是上课以后才知道的情况，不是开始的理由。",
+            "en": "The older classmates are what she found in class, not why she joined."
+          },
+          {
+            "zh": "能游25米是现在的结果，不是开始上课的原因。",
+            "en": "Swimming 25 metres is the result now, not the reason she started."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-221",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "ホテルの 部屋の 机の 上に、この 案内が あります。",
+    "passage": "お客様へ\n\n朝ごはんは 1階の レストランで、朝 6時半から 9時半まで 食べる ことが できます。9時半を 過ぎると 入れませんので、ご注意 ください。\n部屋の そうじは 毎日 午前 10時から 午後 2時の 間に します。そうじが いらない 日は、ドアに 「そうじは いりません」の カードを かけて ください。タオルだけ 新しく したい 場合は、フロントに 電話して ください。",
+    "kj": "お客様へ\n\n朝ご飯は1階のレストランで、朝6時半から9時半まで食べることができます。9時半を過ぎると入れませんので、ご注意ください。\n部屋の掃除は毎日午前10時から午後2時の間にします。掃除がいらない日は、ドアに「掃除はいりません」のカードをかけてください。タオルだけ新しくしたい場合は、フロントに電話してください。",
+    "tr": {
+      "zh": "致各位客人：\n\n早餐在一楼餐厅，早上6点半到9点半供应。过了9点半就不能进入，请注意。\n房间每天上午10点到下午2点之间打扫。不需要打扫的日子，请在门上挂“不需要打扫”的牌子。如果只想换新毛巾，请给前台打电话。",
+      "en": "Dear guest,\n\nBreakfast is served in the restaurant on the first floor from 6:30 to 9:30 a.m. Please note that you cannot enter after 9:30.\nRooms are cleaned every day between 10 a.m. and 2 p.m. On days when you don't need cleaning, please hang the \"No cleaning needed\" card on your door. If you only want fresh towels, please call the front desk."
+    },
+    "questions": [
+      {
+        "q": "あしたは 部屋の そうじは いりませんが、新しい タオルは ほしいです。どう しますか。",
+        "options": [
+          "ドアに カードを かけるだけで いい",
+          "ドアに カードを かけて、フロントに 電話する",
+          "フロントに 電話して、そうじを 午後に して もらう",
+          "朝ごはんの あとで、レストランで タオルを もらう"
+        ],
+        "okj": [
+          null,
+          null,
+          "フロントに電話して、掃除を午後にしてもらう",
+          "朝ご飯の後で、レストランでタオルをもらう"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「そうじが いらない 日は、ドアに 『そうじは いりません』の カードを かけて ください」；「タオルだけ 新しく したい 場合は、フロントに 電話して ください」。\n推理：两个条件对应两个做法：不要打扫→挂牌子；只要毛巾→打电话给前台。两件都要做。",
+          "en": "Evidence: 「そうじが いらない 日は、ドアに 『そうじは いりません』の カードを かけて ください」; 「タオルだけ 新しく したい 場合は、フロントに 電話して ください」.\nReasoning: Two needs, two steps: no cleaning → hang the card; towels only → call the front desk. Both are needed."
+        },
+        "wrong": [
+          {
+            "zh": "只挂牌子就不会打扫，也不会换毛巾；要毛巾还得给前台打电话。",
+            "en": "The card alone means no cleaning and no towels; towels need a call to the desk."
+          },
+          null,
+          {
+            "zh": "客人不需要打扫，没有改打扫时间的必要；通知里也没说可以改时间。",
+            "en": "The guest doesn't want cleaning at all, and the notice says nothing about moving it."
+          },
+          {
+            "zh": "通知只说餐厅吃早餐，毛巾要打电话给前台。",
+            "en": "The restaurant is for breakfast; towels come through the front desk."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-222",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "山田さんに、前の 会社の 先輩だった 小川さんから はがきが 届きました。",
+    "passage": "山田さん\n\nお元気ですか。北海道に 引っ越して、もう 三か月に なります。こちらは 十月でも 朝は とても 寒くて、もう ストーブを つけて います。\n新しい 会社は 家から 近いので、毎朝 歩いて 通って います。東京に いた ときは 電車で 一時間 かかったので、朝が ずいぶん 楽に なりました。\n冬に なったら、ぜひ スキーに 来て ください。うちに とまっても いいですよ。\n\n小川",
+    "kj": "山田さん\n\nお元気ですか。北海道に引っ越して、もう三か月になります。こちらは十月でも朝はとても寒くて、もうストーブをつけています。\n新しい会社は家から近いので、毎朝歩いて通っています。東京にいたときは電車で一時間かかったので、朝がずいぶん楽になりました。\n冬になったら、ぜひスキーに来てください。うちに泊まってもいいですよ。\n\n小川",
+    "tr": {
+      "zh": "山田：\n\n你好吗？我搬到北海道已经三个月了。这里虽然才十月，早上却很冷，我已经开始用暖炉了。\n新公司离家近，我每天早上走路去上班。在东京的时候坐电车要一个小时，所以现在早上轻松多了。\n到了冬天，一定要来滑雪啊。住在我家也可以哦。\n\n小川",
+      "en": "Yamada,\n\nHow are you? It's already three months since I moved to Hokkaido. Even though it's only October, the mornings here are very cold, and I already have the heater on.\nMy new office is close to home, so I walk there every morning. In Tokyo it took an hour by train, so my mornings are much easier now.\nWhen winter comes, do come skiing. You're welcome to stay at my place.\n\nOgawa"
+    },
+    "questions": [
+      {
+        "q": "はがきの 内容と 合って いる ものは どれですか。",
+        "options": [
+          "小川さんは 今、毎朝 歩いて 会社へ 行って いる",
+          "小川さんは 東京でも 歩いて 会社に 通って いた",
+          "北海道は まだ 十月なので、ストーブは いらない",
+          "小川さんは 冬に 山田さんの 家に とまる つもりだ"
+        ],
+        "okj": [
+          null,
+          null,
+          null,
+          "小川さんは冬に山田さんの家に泊まるつもりだ"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「新しい 会社は 家から 近いので、毎朝 歩いて 通って います」。\n推理：「通って います」是现在的习惯：在北海道每天走路上班。在东京时是坐电车一小时；是邀请山田来自己家住。",
+          "en": "Evidence: 「新しい 会社は 家から 近いので、毎朝 歩いて 通って います」.\nReasoning: 「通って います」 is her habit now: she walks to work in Hokkaido. In Tokyo it was an hour by train, and it is Yamada who is invited to stay."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "在东京时「電車で 一時間 かかった」，是坐电车上班。",
+            "en": "In Tokyo it took 「電車で 一時間」 — by train."
+          },
+          {
+            "zh": "十月早上就很冷，已经「ストーブを つけて います」。",
+            "en": "It's already cold and she 「ストーブを つけて います」."
+          },
+          {
+            "zh": "反了：是小川请山田来北海道「うちに とまっても いい」。",
+            "en": "Backwards: Ogawa invites Yamada to stay at her place."
+          }
+        ]
+      }
+    ]
   }
 ]

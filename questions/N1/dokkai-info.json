@@ -286,5 +286,289 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n1-dk-405",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "会社員の山口さん（34歳）は、来月から料理教室に通いたいと考えている。平日は19時まで仕事があり、職場から教室までは30分かかる。土曜日は仕事が入ることがあるので、日曜日か平日の夜に通いたい。和食を基礎から学びたいが、毎月の受講料は1万円以内に抑えたい。",
+    "passage": "さくら料理学院　1月開講コースのご案内\n| コース | 内容 | 曜日・時間 | 回数 | 受講料（月額） |\n| A | 和食の基本（だし・煮物・焼き物） | 土 10:00〜12:30 | 月4回 | 9,000円 |\n| B | 家庭の和食（初心者向け） | 水 19:00〜21:00 | 月2回 | 7,500円 |\n| C | 和食の基本（だし・煮物・焼き物） | 日 14:00〜16:30 | 月4回 | 11,000円 |\n| D | 季節の和食（中級） | 日 10:00〜12:30 | 月2回 | 8,000円 |\n| E | 家庭の和食（初心者向け） | 木 19:45〜21:45 | 月2回 | 8,500円 |\n| F | はじめての洋食 | 火 19:30〜21:30 | 月2回 | 7,000円 |\n＊受講料のほかに、初回のみ入会金5,000円が必要です。\n＊C・Dは、平日のコースを3か月以上受講した方は、受講料が月1,000円割引になります。\n＊Dの受講には、A・Cいずれかの修了、またはそれと同等の経験が必要です。\n＊欠席した回は、同じ月のうちに、同じ内容の他のコースへ振り替えることができます（要予約）。\n＊材料費は受講料に含まれています。",
+    "tr": {
+      "zh": "樱花料理学院 1月开课课程介绍。\nA：日料基础（高汤·炖菜·烤菜），周六10:00至12:30，每月4次，月学费9,000日元。\nB：家常日料（面向初学者），周三19:00至21:00，每月2次，7,500日元。\nC：日料基础（高汤·炖菜·烤菜），周日14:00至16:30，每月4次，11,000日元。\nD：时令日料（中级），周日10:00至12:30，每月2次，8,000日元。\nE：家常日料（面向初学者），周四19:45至21:45，每月2次，8,500日元。\nF：初学西餐，周二19:30至21:30，每月2次，7,000日元。\n＊除学费外，仅第一次需要交入会费5,000日元。\n＊C、D课程：上过3个月以上平日课程者，学费每月优惠1,000日元。\n＊参加D需要修完A或C，或者有同等经验。\n＊缺席的课，可以在同一个月内调到内容相同的其他课程（需预约）。\n＊材料费包含在学费中。",
+      "en": "Sakura Cooking School — courses starting in January.\nA: Japanese basics (stock, simmered and grilled dishes), Sat 10:00–12:30, 4 times a month, ¥9,000 a month.\nB: Home-style Japanese (beginners), Wed 19:00–21:00, twice a month, ¥7,500.\nC: Japanese basics (stock, simmered and grilled dishes), Sun 14:00–16:30, 4 times a month, ¥11,000.\nD: Seasonal Japanese (intermediate), Sun 10:00–12:30, twice a month, ¥8,000.\nE: Home-style Japanese (beginners), Thu 19:45–21:45, twice a month, ¥8,500.\nF: First steps in Western cooking, Tue 19:30–21:30, twice a month, ¥7,000.\n* In addition to fees, a one-off ¥5,000 joining fee is payable at the start.\n* For C and D, those who have taken a weekday course for 3 months or more get ¥1,000 a month off.\n* D requires completion of A or C, or equivalent experience.\n* A missed class can be made up within the same month in another course with the same content (booking required).\n* Ingredients are included in the fee."
+    },
+    "questions": [
+      {
+        "q": "山口さんの希望に合うコースはどれか。",
+        "options": [
+          "B",
+          "E",
+          "C",
+          "D"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「E｜家庭の和食（初心者向け）｜木 19:45〜21:45｜8,500円」\n推理：①19点下班、到教室要30分，平日只能上19:30以后的课；周六可能加班，排除A。②要从基础学日料：F是西餐，D是中级，排除。③B周三19:00开始，赶不上。④C在周日，但月学费11,000日元超预算（优惠只针对上过3个月平日课的人）。⑤E周四19:45开始，面向初学者，8,500日元，全部符合。",
+          "en": "Evidence: 「E｜家庭の和食（初心者向け）｜木 19:45〜21:45｜8,500円」.\nReasoning: (1) He finishes at 19:00 and needs 30 minutes, so weekday classes must start at 19:30 or later; Saturdays may be work, so A is out. (2) Basic Japanese: F is Western, D is intermediate. (3) B starts at 19:00 on Wednesday, too early. (4) C is on Sunday but costs ¥11,000 a month, over budget (the discount needs 3 months of weekday classes). (5) E starts at 19:45 on Thursday, is for beginners and costs ¥8,500."
+        },
+        "wrong": [
+          {
+            "zh": "B在周三19:00开始，他19点下班、路上要30分钟，赶不上。",
+            "en": "B starts at 19:00 on Wednesday; finishing at 19:00 with a 30-minute trip, he can't make it."
+          },
+          null,
+          {
+            "zh": "C在周日、内容也合适，但月学费11,000日元超过1万日元；优惠需要先上3个月平日课。",
+            "en": "C is on Sunday and fits, but ¥11,000 a month is over ¥10,000; the discount requires 3 months of weekday classes first."
+          },
+          {
+            "zh": "D是中级课程，需要修完A或C或有同等经验，不适合从基础学起。",
+            "en": "D is intermediate and needs A or C or equivalent experience, not for learning from basics."
+          }
+        ]
+      },
+      {
+        "q": "山口さんが希望に合うコースを受講する場合について、正しいものはどれか。",
+        "options": [
+          "受講料とは別に、材料費を毎回支払わなければならない。",
+          "3か月以上受講すれば、受講料が月1,000円安くなる。",
+          "欠席した回は、翌月の同じコースに振り替えることができる。",
+          "最初は、受講料のほかに5,000円を支払う必要がある。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「受講料のほかに、初回のみ入会金5,000円が必要です」\n推理：山口要上E课程。入会费适用于所有课程，第一次除了学费还要交5,000日元。",
+          "en": "Evidence: 「受講料のほかに、初回のみ入会金5,000円が必要です」.\nReasoning: Yamaguchi will take E. The joining fee applies to every course, so at the start he pays ¥5,000 on top of the fee."
+        },
+        "wrong": [
+          {
+            "zh": "「材料費は受講料に含まれています」。",
+            "en": "「材料費は受講料に含まれています」."
+          },
+          {
+            "zh": "优惠只适用于「C・D」课程，E不享受。",
+            "en": "The discount is only for 「C・D」, not E."
+          },
+          {
+            "zh": "调课必须在「同じ月のうちに」，并且是内容相同的「他のコース」，不是下个月。",
+            "en": "Make-ups must be 「同じ月のうちに」 in 「他のコース」, not next month."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-406",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "フリーランスで翻訳の仕事をしている森さんは、自宅の近くのシェアオフィスを利用したいと考えている。利用するのは平日の昼間だけで、週に3日ほどのつもりだ。毎回2時間ほどオンライン会議があるため、周りに声が聞こえない場所が必要である。また、仕事の郵便物を受け取れる住所がほしい。条件を満たすなかで、月々の費用はできるだけ安くしたい。",
+    "passage": "シェアオフィス「ひだまり」　料金プラン\n| プラン | 利用できる日時 | 利用できる席 | 月額料金 | 郵便物の受け取り |\n| ①ナイト＆ホリデー | 平日18:00〜23:00、土日祝 終日 | フリー席 | 6,000円 | × |\n| ②デイタイム | 平日9:00〜18:00 | フリー席 | 9,000円 | × |\n| ③レギュラー | 毎日9:00〜23:00 | フリー席 | 13,000円 | ○ |\n| ④デイタイム・プラス | 平日9:00〜18:00 | フリー席＋個室ブース（予約制・1日2時間まで） | 14,000円 | ○ |\n| ⑤個室 | 毎日24時間 | 専用個室 | 38,000円 | ○ |\n＊フリー席エリアでの通話・オンライン会議はご遠慮ください。通話には、館内の個室ブース（1時間500円、会員のみ）をご利用いただけます。\n＊②③のプランには、月1,500円で郵便物受け取りのオプションを追加できます。\n＊1日単位のドロップイン利用（1日1,500円、フリー席のみ）も可能です。\n＊ご入会時に、別途事務手数料3,000円がかかります。",
+    "tr": {
+      "zh": "共享办公室“向阳”收费方案。\n①夜间＆假日：平日18:00至23:00，周末及节假日全天，自由座，月费6,000日元，不可代收邮件。\n②白天：平日9:00至18:00，自由座，9,000日元，不可代收邮件。\n③标准：每天9:00至23:00，自由座，13,000日元，可代收邮件。\n④白天加强：平日9:00至18:00，自由座＋独立隔间（需预约，每天最多2小时），14,000日元，可代收邮件。\n⑤独立办公室：每天24小时，专用独立办公室，38,000日元，可代收邮件。\n＊请勿在自由座区域打电话或开线上会议。通话可使用馆内的独立隔间（每小时500日元，仅限会员）。\n＊②③方案可以每月加1,500日元，增加代收邮件服务。\n＊也可以按天临时使用（每天1,500日元，仅限自由座）。\n＊入会时另收手续费3,000日元。",
+      "en": "Shared office 'Hidamari' — plans.\n(1) Night & Holiday: weekdays 18:00–23:00, weekends and holidays all day, hot desk, ¥6,000 a month, no mail handling.\n(2) Daytime: weekdays 9:00–18:00, hot desk, ¥9,000, no mail handling.\n(3) Regular: every day 9:00–23:00, hot desk, ¥13,000, mail handling.\n(4) Daytime Plus: weekdays 9:00–18:00, hot desk plus private booth (booking required, up to 2 hours a day), ¥14,000, mail handling.\n(5) Private office: every day, 24 hours, own private room, ¥38,000, mail handling.\n* Please do not make calls or hold online meetings in the hot-desk area. Calls can be made in the private booths (¥500 an hour, members only).\n* Plans (2) and (3) can add mail handling for ¥1,500 a month.\n* Day passes are also available (¥1,500 a day, hot desk only).\n* A separate ¥3,000 administration fee is charged on joining."
+    },
+    "questions": [
+      {
+        "q": "森さんの希望に最も合うプランはどれか。",
+        "options": [
+          "④",
+          "②",
+          "③",
+          "⑤"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「④｜平日9:00〜18:00｜フリー席＋個室ブース（予約制・1日2時間まで）｜14,000円｜○」；「通話には、館内の個室ブース（1時間500円、会員のみ）」\n推理：每周3天、每天线上会议约2小时，一个月约12天。②要加收邮件1,500日元，隔间每天1,000日元，一个月约12,000日元，合计约22,500日元。③也要另付隔间费，更贵。④每天2小时隔间和收邮件都包含在14,000日元里，最便宜。⑤38,000日元太贵。",
+          "en": "Evidence: 「④｜平日9:00〜18:00｜フリー席＋個室ブース（予約制・1日2時間まで）｜14,000円｜○」; 「通話には、館内の個室ブース（1時間500円、会員のみ）」.\nReasoning: Three days a week with about two hours of meetings a day is about 12 days a month. Plan (2) plus mail (¥1,500) plus booths (¥1,000 a day, about ¥12,000) comes to about ¥22,500; (3) also needs booth fees and costs more. (4) includes two booth hours a day and mail for ¥14,000, the cheapest. (5) at ¥38,000 is far dearer."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "②本身没有代收邮件和隔间，加上邮件选项和每天2小时隔间费，一个月约22,500日元，比④贵。",
+            "en": "(2) has no mail or booth; with the mail option and two booth hours a day it's about ¥22,500 a month, more than (4)."
+          },
+          {
+            "zh": "③虽能收邮件，但自由座不能开会，隔间要另付费，总额比④高；而且晚上和周末他用不到。",
+            "en": "(3) has mail, but meetings need paid booths, so it costs more than (4), and he doesn't need evenings or weekends."
+          },
+          {
+            "zh": "⑤满足条件，但月费38,000日元，远高于④。",
+            "en": "(5) meets the needs but costs ¥38,000, far more than (4)."
+          }
+        ]
+      },
+      {
+        "q": "森さんが希望に最も合うプランで利用を始める場合、最初の月に支払う金額はいくらか。",
+        "options": [
+          "14,000円",
+          "15,500円",
+          "17,000円",
+          "18,500円"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「④…14,000円」；「ご入会時に、別途事務手数料3,000円がかかります」\n推理：选④，月费14,000日元已包含代收邮件，入会时另加手续费3,000日元：14,000＋3,000＝17,000日元。",
+          "en": "Evidence: 「④…14,000円」; 「ご入会時に、別途事務手数料3,000円がかかります」.\nReasoning: Plan (4) is ¥14,000 with mail included; add the ¥3,000 joining fee: ¥17,000."
+        },
+        "wrong": [
+          {
+            "zh": "漏算了入会时的手续费3,000日元。",
+            "en": "This leaves out the ¥3,000 joining fee."
+          },
+          {
+            "zh": "加了邮件选项1,500日元，但④已包含收邮件，而且漏了手续费。",
+            "en": "This adds the ¥1,500 mail option, which (4) already includes, and leaves out the fee."
+          },
+          null,
+          {
+            "zh": "多加了邮件选项1,500日元；④本来就能代收邮件。",
+            "en": "This adds the ¥1,500 mail option; (4) already handles mail."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-407",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "会社員の石川さん（45歳）は、みなみ市に住んでおり、来年度、市民農園を借りたいと考えている。車は持っていないので、自宅の最寄りのみなみ駅から歩いて行ける農園がいい。家族4人分の野菜を育てたいので、20㎡以上の区画を希望している。農作業は初めてなので、栽培の指導を受けられるところがよい。",
+    "passage": "みなみ市　市民農園　来年度利用者募集\n| 農園 | 区画の広さ | 年間利用料 | 交通 | 駐車場 | 栽培指導 |\n| 東町農園 | 15㎡ | 6,000円 | みなみ駅から徒歩8分 | なし | あり（月1回講習会） |\n| 西が丘農園 | 30㎡ | 10,000円 | みなみ駅からバス15分 | あり | なし |\n| 北川農園 | 20㎡ | 8,000円 | みなみ駅から徒歩10分 | なし | なし |\n| 中央農園 | 25㎡ | 12,000円 | みなみ駅から徒歩12分 | あり | あり（土日は指導員常駐） |\n| 南台農園 | 50㎡ | 15,000円 | みなみ駅から車で20分 | あり | あり（月2回講習会） |\n＊応募できるのは、市内に住んでいるか、市内に勤めている方に限ります。\n＊1世帯につき1区画まで応募できます。応募者の多い農園は抽選となります。\n＊利用期間は4月1日から翌年3月31日までです。\n＊農具は各農園の倉庫にあるものを無料でお使いいただけます。苗や種、肥料は各自でご用意ください。\n＊利用者の方には、年2回（5月・10月）の農園清掃に参加していただきます。\n＊応募の締め切りは2月15日です。結果は3月10日までに郵送でお知らせします。",
+    "tr": {
+      "zh": "南市 市民农园 下一年度招募使用者。\n东町农园：每块15平方米，年费6,000日元，从南站步行8分钟，无停车场，有种植指导（每月1次讲习会）。\n西之丘农园：30平方米，10,000日元，从南站坐公交15分钟，有停车场，无指导。\n北川农园：20平方米，8,000日元，从南站步行10分钟，无停车场，无指导。\n中央农园：25平方米，12,000日元，从南站步行12分钟，有停车场，有指导（周末指导员常驻）。\n南台农园：50平方米，15,000日元，从南站开车20分钟，有停车场，有指导（每月2次讲习会）。\n＊只限住在市内或在市内工作的人申请。\n＊每户限申请1块。申请人多的农园将抽签。\n＊使用期为4月1日至次年3月31日。\n＊农具可以免费使用各农园仓库里的。秧苗、种子、肥料请自备。\n＊使用者须参加每年2次（5月、10月）的农园清扫。\n＊申请截止日期为2月15日。结果将于3月10日前邮寄通知。",
+      "en": "Minami City allotments — applications for next year.\nHigashimachi: 15 m², ¥6,000 a year, 8 min walk from Minami Station, no parking, guidance (monthly class).\nNishigaoka: 30 m², ¥10,000, 15 min by bus from Minami Station, parking, no guidance.\nKitagawa: 20 m², ¥8,000, 10 min walk from Minami Station, no parking, no guidance.\nChuo: 25 m², ¥12,000, 12 min walk from Minami Station, parking, guidance (instructor on site at weekends).\nMinamidai: 50 m², ¥15,000, 20 min by car from Minami Station, parking, guidance (classes twice a month).\n* Open only to people who live or work in the city.\n* One plot per household. Popular allotments will be allocated by lottery.\n* The period of use is 1 April to 31 March the following year.\n* Tools in each allotment's shed may be used free of charge. Please bring your own seedlings, seeds and fertiliser.\n* Users must take part in the allotment clean-up twice a year (May and October).\n* Applications close on 15 February. Results will be posted by 10 March."
+    },
+    "questions": [
+      {
+        "q": "石川さんの希望に合う農園はどれか。",
+        "options": [
+          "東町農園",
+          "北川農園",
+          "西が丘農園",
+          "中央農園"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「中央農園｜25㎡｜…｜みなみ駅から徒歩12分｜…｜あり（土日は指導員常駐）」\n推理：三个条件：从南站步行可到（排除西之丘的公交、南台的开车）；20平方米以上（排除东町15平方米）；有指导（排除北川）。剩下中央农园。",
+          "en": "Evidence: 「中央農園｜25㎡｜…｜みなみ駅から徒歩12分｜…｜あり（土日は指導員常駐）」.\nReasoning: Three conditions: walkable from Minami Station (not Nishigaoka by bus or Minamidai by car); at least 20 m² (not Higashimachi at 15 m²); guidance (not Kitagawa). That leaves Chuo."
+        },
+        "wrong": [
+          {
+            "zh": "东町农园步行可到、有指导，但只有15平方米，不到20平方米。",
+            "en": "Higashimachi is walkable with guidance, but only 15 m², under 20."
+          },
+          {
+            "zh": "北川农园20平方米、步行可到，但栽培指导是「なし」。",
+            "en": "Kitagawa is 20 m² and walkable, but guidance is 「なし」."
+          },
+          {
+            "zh": "西之丘农园要「バス15分」，不能步行去。",
+            "en": "Nishigaoka needs 「バス15分」, not walkable."
+          },
+          null
+        ]
+      },
+      {
+        "q": "石川さんが希望に合う農園を利用する場合について、正しいものはどれか。",
+        "options": [
+          "苗や種は農園で用意されるので、自分で準備する必要はない。",
+          "年に2回、農園の清掃に参加しなければならない。",
+          "農具は、農園の倉庫にあるものを有料で借りられる。",
+          "締め切りまでに応募すれば、必ずその農園を利用できる。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「利用者の方には、年2回（5月・10月）の農園清掃に参加していただきます」\n推理：这条适用于所有使用者，石川使用中央农园时也必须在5月和10月参加清扫。",
+          "en": "Evidence: 「利用者の方には、年2回（5月・10月）の農園清掃に参加していただきます」.\nReasoning: This applies to every user, so Ishikawa must join the clean-ups in May and October."
+        },
+        "wrong": [
+          {
+            "zh": "「苗や種、肥料は各自でご用意ください」，要自备。",
+            "en": "「苗や種、肥料は各自でご用意ください」: he must bring his own."
+          },
+          null,
+          {
+            "zh": "农具是「無料でお使いいただけます」，不收费。",
+            "en": "Tools are 「無料でお使いいただけます」, free."
+          },
+          {
+            "zh": "申请人多的农园要「抽選」，不一定能用上。",
+            "en": "Popular allotments go to a 「抽選」, so it isn't guaranteed."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-408",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "大学1年生の松本さん（19歳）は、来年度から受けられる学内の奨学金を探している。自宅から通学しており、両親の年収の合計は550万円、今年度の成績の平均評点は3.2の見込みである。現在、ある企業の給付型奨学金を受けており、それを続けながら受けられるものがよい。返済の必要がない奨学金を希望している。",
+    "passage": "あおい大学　学内奨学金一覧（来年度）\n| 奨学金 | 種類 | 金額 | 対象学年 | 主な条件 | 他の奨学金との併用 |\n| A　育英奨学金 | 給付 | 年30万円 | 2〜4年 | 平均評点3.0以上、家計の年収600万円以下 | 不可 |\n| B　学業奨励金 | 給付 | 年10万円 | 2〜4年 | 平均評点3.5以上 | 可 |\n| C　地域連携奨学金 | 給付 | 月2万円 | 全学年 | 県外出身で、自宅外から通学する者 | 可 |\n| D　修学支援金 | 給付 | 年20万円 | 2〜4年 | 平均評点3.0以上、家計の年収600万円以下 | 可 |\n| E　貸与奨学金 | 貸与（無利子） | 月3万円 | 全学年 | 家計の年収800万円以下 | 可 |\n＊平均評点は、前年度に履修した全科目の成績を4点満点で計算したものです。\n＊家計の年収は、父母の年収の合計とします。\n＊応募は一人二つまでとします。\n＊申請書類は4月10日までに学生課に提出してください。A・D・Eに応募する場合は、所得を証明する書類を添付してください。\n＊給付の決定後も、毎年度末に成績の確認を行います。平均評点が各奨学金の基準を下回った場合は、翌年度の給付を停止します。",
+    "tr": {
+      "zh": "葵大学 校内奖学金一览（下一年度）。\nA 育英奖学金：给付型，每年30万日元，2至4年级，平均绩点3.0以上、家庭年收入600万日元以下，不可与其他奖学金并用。\nB 学业奖励金：给付型，每年10万日元，2至4年级，平均绩点3.5以上，可并用。\nC 地区合作奖学金：给付型，每月2万日元，所有年级，外县出身、不住家里走读者，可并用。\nD 修学支援金：给付型，每年20万日元，2至4年级，平均绩点3.0以上、家庭年收入600万日元以下，可并用。\nE 贷与奖学金：贷与型（无息），每月3万日元，所有年级，家庭年收入800万日元以下，可并用。\n＊平均绩点按上一年度所修全部科目的成绩、以满分4分计算。\n＊家庭年收入为父母年收入的合计。\n＊每人最多申请两项。\n＊申请材料请于4月10日前提交学生科。申请A、D、E时，请附上收入证明材料。\n＊决定给付后，每年度末也会确认成绩。平均绩点低于各奖学金标准时，停止下一年度的给付。",
+      "en": "Aoi University — internal scholarships (next year).\nA Ikuei Scholarship: grant, ¥300,000 a year, years 2–4, GPA 3.0+, household income ¥6 million or less, cannot be combined.\nB Academic Award: grant, ¥100,000 a year, years 2–4, GPA 3.5+, can be combined.\nC Regional Partnership Scholarship: grant, ¥20,000 a month, all years, from outside the prefecture and not living at home, can be combined.\nD Study Support Grant: grant, ¥200,000 a year, years 2–4, GPA 3.0+, household income ¥6 million or less, can be combined.\nE Loan Scholarship: interest-free loan, ¥30,000 a month, all years, household income ¥8 million or less, can be combined.\n* GPA is calculated on a 4-point scale from all courses taken in the previous year.\n* Household income is the parents' combined income.\n* Each student may apply for up to two.\n* Submit applications to Student Affairs by 10 April. For A, D and E, attach proof of income.\n* After a grant is awarded, grades are checked at the end of every year. If the GPA falls below a scholarship's standard, the next year's payment is stopped."
+    },
+    "questions": [
+      {
+        "q": "松本さんの希望に合う奨学金はどれか。",
+        "options": [
+          "A",
+          "B",
+          "D",
+          "C"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「D　修学支援金｜給付｜年20万円｜2〜4年｜平均評点3.0以上、家計の年収600万円以下｜可」\n推理：①不用还：排除E（贷与）。②要能和企业奖学金并用：排除A（不可）。③绩点3.2：B要3.5以上，排除。④住家里走读：C要「自宅外から通学」，排除。⑤D：下一年度是2年级，3.2≥3.0，550万≤600万，可并用，全部符合。",
+          "en": "Evidence: 「D　修学支援金｜給付｜年20万円｜2〜4年｜平均評点3.0以上、家計の年収600万円以下｜可」.\nReasoning: (1) No repayment: not E (a loan). (2) Must combine with the company grant: not A. (3) GPA 3.2: B needs 3.5. (4) Lives at home: C requires 「自宅外から通学」. (5) D: he'll be in year 2, 3.2 ≥ 3.0, ¥5.5 million ≤ ¥6 million, combinable."
+        },
+        "wrong": [
+          {
+            "zh": "A的条件他都满足，但「他の奨学金との併用」是「不可」，不能和企业奖学金一起领。",
+            "en": "He meets A's conditions, but it is 「不可」 to combine, so not with his company grant."
+          },
+          {
+            "zh": "B要求平均绩点3.5以上，他只有3.2。",
+            "en": "B needs a GPA of 3.5+; he has 3.2."
+          },
+          null,
+          {
+            "zh": "C要求「県外出身で、自宅外から通学する者」，他住家里走读。",
+            "en": "C requires 「県外出身で、自宅外から通学する者」; he lives at home."
+          }
+        ]
+      },
+      {
+        "q": "松本さんが希望に合う奨学金に応募する場合、注意すべきことはどれか。",
+        "options": [
+          "申請書類に、所得を証明する書類を付けて提出しなければならない。",
+          "応募は一人一つまでなので、ほかの学内奨学金には応募できない。",
+          "年度末の確認で平均評点が3.5を下回ると、翌年度の給付が止まる。",
+          "給付は毎月行われるので、月ごとに学生課で手続きをする必要がある。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「A・D・Eに応募する場合は、所得を証明する書類を添付してください」\n推理：松本要申请D，所以提交材料时必须附上收入证明。",
+          "en": "Evidence: 「A・D・Eに応募する場合は、所得を証明する書類を添付してください」.\nReasoning: Matsumoto will apply for D, so proof of income must go with the application."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "规定是「一人二つまで」，还可以再申请一项。",
+            "en": "The rule is 「一人二つまで」, so he can apply for one more."
+          },
+          {
+            "zh": "停止给付看的是「各奨学金の基準」，D的标准是3.0，不是3.5。",
+            "en": "Payment stops below 「各奨学金の基準」; D's standard is 3.0, not 3.5."
+          },
+          {
+            "zh": "D是「年20万円」，文中也没有每月办手续的规定。",
+            "en": "D is 「年20万円」, and no monthly procedure is mentioned."
+          }
+        ]
+      }
+    ]
   }
 ]

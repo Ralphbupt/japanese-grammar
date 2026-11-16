@@ -595,5 +595,481 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n4-dk-306",
+    "type": "mid",
+    "difficulty": 2,
+    "intro": "これは 会社員の 石井さんが 書いた 文章です。",
+    "passage": "川の そうじ\n\nわたしの 家の 近くには 小さな 川が あります。子どもの ころは よく そこで 魚を とって 遊びました。でも、去年 久しぶりに 川の そばを 歩いたら、ペットボトルや ビニールぶくろが たくさん 落ちて いて、とても 悲しく なりました。\nそれで、町の ホームページで さがして、月に 一回、日曜日の 朝に 川の そうじを する グループに 入りました。メンバーは 二十人ぐらいで、大学生から 七十代の 人まで います。初めて 参加した 日は 少し きんちょうしましたが、みんな やさしく 教えて くれました。\n最初の 日は、二時間で 大きい ふくろ 十個分の ごみが 集まりました。ごみの 中には 古い 自転車まで ありました。手も 足も 痛く なりましたが、きれいに なった 川を 見て、気持ちが よかったです。\nそうじの あとは、みんなで お茶を 飲みながら 話します。仕事の 話ではなく、川に いる 鳥や 花の 話を するのが 楽しいです。会社と 家の ほかに、こんな 場所が できて、よかったと 思って います。\n最近は 川で 遊ぶ 子どもを 時々 見る ように なりました。今度は 子どもたちにも そうじに 参加して もらいたいです。",
+    "kj": "川の掃除\n\n私の家の近くには小さな川があります。子どもの頃はよくそこで魚をとって遊びました。でも、去年久しぶりに川のそばを歩いたら、ペットボトルやビニール袋がたくさん落ちていて、とても悲しくなりました。\nそれで、町のホームページで探して、月に一回、日曜日の朝に川の掃除をするグループに入りました。メンバーは二十人ぐらいで、大学生から七十代の人までいます。初めて参加した日は少し緊張しましたが、みんな優しく教えてくれました。\n最初の日は、二時間で大きい袋十個分のごみが集まりました。ごみの中には古い自転車までありました。手も足も痛くなりましたが、きれいになった川を見て、気持ちがよかったです。\n掃除の後は、みんなでお茶を飲みながら話します。仕事の話ではなく、川にいる鳥や花の話をするのが楽しいです。会社と家のほかに、こんな場所ができて、よかったと思っています。\n最近は川で遊ぶ子どもを時々見るようになりました。今度は子どもたちにも掃除に参加してもらいたいです。",
+    "tr": {
+      "zh": "打扫河流\n\n我家附近有一条小河。小时候我常在那里抓鱼玩。可是去年，我隔了很久又沿着河边走，发现到处是塑料瓶和塑料袋，心里非常难过。\n于是我在镇上的网站上找到并加入了一个每月一次、星期天早上打扫河流的小组。成员大约二十人，从大学生到七十多岁的人都有。第一次参加那天我有点紧张，但大家都很亲切地教我。\n第一天，两个小时就收集了足足十大袋垃圾，里面甚至还有一辆旧自行车。手脚都酸痛了，但看到变干净的河，心情很好。\n打扫完以后，大家一边喝茶一边聊天。不聊工作，而是聊河边的鸟和花，这很愉快。在公司和家之外有了这样一个地方，我觉得很好。\n最近，我时常能看到在河边玩的孩子了。下次我希望孩子们也来参加打扫。",
+      "en": "Cleaning the River\n\nThere is a small river near my house. As a child I often played there catching fish. But last year, when I walked along the river for the first time in ages, there were plastic bottles and plastic bags lying everywhere, and it made me very sad.\nSo I searched the town's website and joined a group that cleans the river once a month on Sunday mornings. There are about twenty members, from university students to people in their seventies. I was a little nervous the first time I took part, but everyone kindly showed me what to do.\nOn the first day we collected ten large bags of rubbish in two hours. There was even an old bicycle among it. My hands and legs ached, but seeing the clean river felt good.\nAfter cleaning we all drink tea and chat. Talking not about work but about the birds and flowers along the river is fun. I'm glad I now have a place like this besides work and home.\nRecently I sometimes see children playing in the river. Next time I'd like the children to join the cleaning too."
+    },
+    "questions": [
+      {
+        "q": "石井さんは どうして そうじの グループに 入りましたか。",
+        "options": [
+          "会社の 人に いっしょに 入ろうと さそわれたから",
+          "川に ごみが たくさん 落ちて いて 悲しかったから",
+          "会社と 家の ほかに 友だちが ほしかったから",
+          "川で 遊ぶ 子どもたちを 見たかったから"
+        ],
+        "okj": [
+          "会社の人に一緒に入ろうと誘われたから",
+          null,
+          null,
+          null
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「ペットボトルや ビニールぶくろが たくさん 落ちて いて、とても 悲しく なりました。それで、…グループに 入りました」。\n推理：「それで」连接原因和结果：看到河里很多垃圾很难过，所以加入了小组。有了聊天的地方、看到孩子都是加入以后的事。",
+          "en": "Evidence: 「ペットボトルや ビニールぶくろが たくさん 落ちて いて、とても 悲しく なりました。それで、…グループに 入りました」.\nReasoning: 「それで」 links cause and result: the rubbish made him sad, so he joined. The chats and the children came after joining."
+        },
+        "wrong": [
+          {
+            "zh": "他是自己在镇上的网站上找的（「ホームページで さがして」），没有被同事邀请。",
+            "en": "He found it himself on the town website (「ホームページで さがして」); no colleague invited him."
+          },
+          null,
+          {
+            "zh": "在公司和家之外有了地方，是加入以后觉得「よかった」的事，不是原因。",
+            "en": "Having a place besides work and home is what he was glad about afterwards, not the reason."
+          },
+          {
+            "zh": "看到孩子在河边玩是「最近」的事，是加入以后的变化。",
+            "en": "Seeing children play is 「最近」, a change after he joined."
+          }
+        ]
+      },
+      {
+        "q": "「こんな 場所」とは どんな 場所ですか。",
+        "options": [
+          "子どもの ころに 魚を とって 遊んだ 場所",
+          "仕事の 話を ゆっくり する ことが できる 場所",
+          "大学生だけが 集まって 話す 場所",
+          "仕事に 関係ない 話を 楽しめる 場所"
+        ],
+        "okj": [
+          null,
+          null,
+          null,
+          "仕事に関係ない話を楽しめる場所"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「仕事の 話ではなく、川に いる 鳥や 花の 話を するのが 楽しいです。会社と 家の ほかに、こんな 場所が できて」。\n推理：「こんな」指前一句：打扫后喝茶，聊的不是工作，而是鸟和花。也就是能愉快地聊和工作无关的话题的地方。",
+          "en": "Evidence: 「仕事の 話ではなく、川に いる 鳥や 花の 話を するのが 楽しいです。会社と 家の ほかに、こんな 場所が できて」.\nReasoning: 「こんな」 points back to the tea after cleaning, where they talk not about work but about birds and flowers: a place to enjoy talk that has nothing to do with work."
+        },
+        "wrong": [
+          {
+            "zh": "小时候玩的河是以前就有的地方；「できて」说的是新有的、喝茶聊天的地方。",
+            "en": "The childhood river was always there; 「できて」 is about the new place, the tea-time chats."
+          },
+          {
+            "zh": "正好相反，聊的是「仕事の 話ではなく」。",
+            "en": "The opposite: they talk 「仕事の 話ではなく」."
+          },
+          {
+            "zh": "成员「大学生から 七十代の 人まで」，不只有大学生。",
+            "en": "Members range 「大学生から 七十代の 人まで」, not just students."
+          },
+          null
+        ]
+      },
+      {
+        "q": "石井さんは これから どう したいと 思って いますか。",
+        "options": [
+          "子どもたちにも そうじを して もらいたい",
+          "子どもたちと いっしょに 川で 魚を とりたい",
+          "グループの 人と 毎週 そうじを したい",
+          "川に いる 鳥や 花に ついて 勉強したい"
+        ],
+        "okj": [
+          "子どもたちにも掃除をしてもらいたい",
+          "子どもたちと一緒に川で魚をとりたい",
+          "グループの人と毎週掃除をしたい",
+          null
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「今度は 子どもたちにも そうじに 参加して もらいたいです」。\n推理：「〜て もらいたい」是希望别人做某事：希望孩子们也来参加打扫。选项「そうじを して もらいたい」是同样的意思。",
+          "en": "Evidence: 「今度は 子どもたちにも そうじに 参加して もらいたいです」.\nReasoning: 「〜て もらいたい」 is wanting someone else to do something: he wants the children to join the cleaning, which the option says in other words."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "抓鱼是作者小时候的事，文中没有说现在想和孩子抓鱼。",
+            "en": "Catching fish was his own childhood; he says nothing about doing it with the children."
+          },
+          {
+            "zh": "打扫是「月に 一回」，文中没有说想改成每周。",
+            "en": "Cleaning is 「月に 一回」; he never says he wants it weekly."
+          },
+          {
+            "zh": "聊鸟和花是喝茶时的乐趣，没有说想学习。",
+            "en": "Birds and flowers are tea-time talk; he doesn't say he wants to study them."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-307",
+    "type": "mid",
+    "difficulty": 2,
+    "intro": "これは 日本に 住んで いる 美香さんが、来週 遊びに 来る 友だちの エマさんに 送った メールです。",
+    "passage": "エマさん\n\n来週の 土曜日ですね。とても 楽しみに して います。\n空港から うちまでの 行き方ですが、空港から 電車に 乗って、さくら駅で 降りて ください。駅から うちまでは 歩いて 二十分 かかります。荷物が 多いと 思うので、わたしが 車で 駅まで むかえに 行きます。駅に 着いたら、電話して ください。ただ、土曜日の 午前中は 仕事が あるので、午後 1時より 前に 着く 場合は、駅の 前の きっさてんで 待って いて ください。\n日曜日は 車で 山の ほうへ ドライブに 行く つもりです。こちらは 東京より 寒いので、あたたかい 服を 持って 来て ください。それから、山の 上の 温泉に 入る 予定なので、タオルが 必要です。でも、うちに たくさん あるので、持って 来なくても 大丈夫です。\n月曜日は わたしが 仕事なので、エマさん 一人で 町を 見に 行く ことに なります。駅の 近くに 古い お寺が あるので、ぜひ 行って みて ください。\n何か 食べられない 物が あったら、教えて くださいね。\n\n美香",
+    "kj": "エマさん\n\n来週の土曜日ですね。とても楽しみにしています。\n空港からうちまでの行き方ですが、空港から電車に乗って、さくら駅で降りてください。駅からうちまでは歩いて二十分かかります。荷物が多いと思うので、私が車で駅まで迎えに行きます。駅に着いたら、電話してください。ただ、土曜日の午前中は仕事があるので、午後1時より前に着く場合は、駅の前の喫茶店で待っていてください。\n日曜日は車で山の方へドライブに行くつもりです。こちらは東京より寒いので、暖かい服を持って来てください。それから、山の上の温泉に入る予定なので、タオルが必要です。でも、うちにたくさんあるので、持って来なくても大丈夫です。\n月曜日は私が仕事なので、エマさん一人で町を見に行くことになります。駅の近くに古いお寺があるので、ぜひ行ってみてください。\n何か食べられない物があったら、教えてくださいね。\n\n美香",
+    "tr": {
+      "zh": "艾玛：\n\n下周六就到了呢。我非常期待。\n从机场到我家的路线是：从机场坐电车，在樱花站下车。从车站走到我家要二十分钟。我想你行李会很多，所以我开车去车站接你。到了车站请给我打电话。不过，星期六上午我要上班，如果你下午1点之前到，请在车站前的咖啡馆等我。\n星期天我打算开车去山那边兜风。这里比东京冷，请带暖和的衣服来。另外，我们打算去泡山顶的温泉，需要毛巾。不过我家有很多，不带来也没关系。\n星期一我要上班，所以你要一个人去逛街。车站附近有一座古老的寺庙，一定要去看看。\n如果有什么不能吃的东西，请告诉我哦。\n\n美香",
+      "en": "Emma,\n\nIt's next Saturday! I'm really looking forward to it.\nHere's how to get to my place from the airport: take the train from the airport and get off at Sakura Station. It's a twenty-minute walk from the station to my house. I think you'll have a lot of luggage, so I'll come and pick you up at the station by car. Please call me when you arrive at the station. But I work on Saturday morning, so if you arrive before 1 p.m., please wait in the café in front of the station.\nOn Sunday I'm planning to drive out towards the mountains. It's colder here than in Tokyo, so please bring warm clothes. Also, we're planning to go to a hot spring at the top of the mountain, so you'll need a towel. But I have lots at home, so you don't need to bring one.\nOn Monday I have work, so you'll be exploring the town on your own. There's an old temple near the station — do go and see it.\nIf there's anything you can't eat, please let me know.\n\nMika"
+    },
+    "questions": [
+      {
+        "q": "エマさんが 土曜日の 午前 11時に さくら駅に 着いたら、どう しますか。",
+        "options": [
+          "すぐ 美香さんに 電話して、駅まで 来て もらう",
+          "駅から 二十分 歩いて、美香さんの うちへ 行く",
+          "駅の 前の きっさてんで 美香さんを 待つ",
+          "空港で 1時まで 待って から、電車に 乗る"
+        ],
+        "okj": [
+          null,
+          null,
+          "駅の前の喫茶店で美香さんを待つ",
+          null
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「土曜日の 午前中は 仕事が あるので、午後 1時より 前に 着く 場合は、駅の 前の きっさてんで 待って いて ください」。\n推理：11点在1点之前，美香还在上班，不能马上来接，所以要在车站前的咖啡馆等。「ただ」后面就是这个例外。",
+          "en": "Evidence: 「土曜日の 午前中は 仕事が あるので、午後 1時より 前に 着く 場合は、駅の 前の きっさてんで 待って いて ください」.\nReasoning: 11 a.m. is before 1 p.m., while Mika is still at work, so Emma waits in the café by the station. 「ただ」 introduces exactly this exception."
+        },
+        "wrong": [
+          {
+            "zh": "上午美香在上班，1点前到的话要先在咖啡馆等，不能马上来接。",
+            "en": "Mika works in the morning; before 1 p.m. Emma must wait in the café first."
+          },
+          {
+            "zh": "行李多，美香会开车来接（「むかえに 行きます」），不用走路。",
+            "en": "Mika will pick her up by car (「むかえに 行きます」), so no walking."
+          },
+          null,
+          {
+            "zh": "邮件说的是在车站前的咖啡馆等，不是在机场等。",
+            "en": "The email says to wait at the café by the station, not at the airport."
+          }
+        ]
+      },
+      {
+        "q": "エマさんが 持って 行かなければ ならない 物は 何ですか。",
+        "options": [
+          "あたたかい 服",
+          "温泉で 使う タオル",
+          "あたたかい 服と タオル",
+          "食べられない 物を 書いた 紙"
+        ],
+        "okj": [
+          "暖かい服",
+          null,
+          "暖かい服とタオル",
+          null
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「あたたかい 服を 持って 来て ください」；「(タオルは) うちに たくさん あるので、持って 来なくても 大丈夫です」。\n推理：必须带的只有暖和的衣服。毛巾虽然需要，但美香家里有很多，「持って 来なくても 大丈夫」＝不带也行。",
+          "en": "Evidence: 「あたたかい 服を 持って 来て ください」; towels: 「うちに たくさん あるので、持って 来なくても 大丈夫です」.\nReasoning: Only the warm clothes are a must. A towel is needed, but Mika has plenty, so Emma 「持って 来なくても 大丈夫」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "毛巾美香家有很多，「持って 来なくても 大丈夫です」。",
+            "en": "Mika has lots of towels: 「持って 来なくても 大丈夫です」."
+          },
+          {
+            "zh": "衣服要带，但毛巾不用带，所以“两样都要”不对。",
+            "en": "Clothes yes, but the towel isn't needed, so not both."
+          },
+          {
+            "zh": "不能吃的东西是「教えて ください」，告诉她就行，不用写在纸上带来。",
+            "en": "For food she should just 「教えて ください」 — tell her, not bring a written list."
+          }
+        ]
+      },
+      {
+        "q": "メールの 内容と 合って いる ものは どれですか。",
+        "options": [
+          "美香さんの うちは 駅の すぐ 前に ある",
+          "日曜日は 電車で 山の ほうへ 行く 予定だ",
+          "美香さんは 土曜日は 一日中 仕事を して いる",
+          "美香さんの うちの あたりは 東京より 寒い"
+        ],
+        "okj": [
+          null,
+          null,
+          null,
+          "美香さんのうちの辺りは東京より寒い"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「こちらは 東京より 寒いので、あたたかい 服を 持って 来て ください」。\n推理：「こちら」指美香住的地方，比东京冷。所以选项「うちの あたりは 東京より 寒い」和原文一致。",
+          "en": "Evidence: 「こちらは 東京より 寒いので、あたたかい 服を 持って 来て ください」.\nReasoning: 「こちら」 is where Mika lives, which is colder than Tokyo, as the option says."
+        },
+        "wrong": [
+          {
+            "zh": "从车站到她家「歩いて 二十分」，不在车站正前面。",
+            "en": "Her house is 「歩いて 二十分」 from the station, not right in front of it."
+          },
+          {
+            "zh": "星期天是开车兜风（「車で 山の ほうへ ドライブ」），不是坐电车。",
+            "en": "Sunday is a drive (「車で 山の ほうへ ドライブ」), not a train trip."
+          },
+          {
+            "zh": "只有「午前中」上班，下午可以去接。",
+            "en": "She works only 「午前中」 and can pick Emma up in the afternoon."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-308",
+    "type": "mid",
+    "difficulty": 3,
+    "intro": "これは 留学生の アンさんが 書いた 作文です。",
+    "passage": "なくした さいふ\n\n先月、わたしは 電車の 中で さいふを なくしました。気が ついたのは、家に 帰って からでした。さいふには お金だけではなく、学生証や 銀行の カードも 入って いたので、とても 心配に なりました。\nすぐに 駅に 電話を しましたが、駅員さんに 「まだ 届いて いません」と 言われました。次の 日、近くの 交番へ 行って、さいふの 色や 形を 説明しました。おまわりさんは 「見つかったら 連絡します」と 言って くれましたが、わたしは もう もどって こないと 思って いました。\nところが、三日 後に 交番から 電話が ありました。わたしの さいふを ひろった 人が、別の 駅の 交番に 届けて くれたのです。取りに 行くと、お金も カードも 全部 入って いました。届けて くれた 人は 名前を 言わないで 帰ったそうです。\nわたしの 国では、なくした 物は ほとんど もどって 来ません。だから、とても おどろきました。お礼が 言えなくて 残念ですが、今度は わたしが だれかの 落とし物を 見つけたら、必ず 交番に 届けようと 思います。",
+    "kj": "なくした財布\n\n先月、私は電車の中で財布をなくしました。気がついたのは、家に帰ってからでした。財布にはお金だけではなく、学生証や銀行のカードも入っていたので、とても心配になりました。\nすぐに駅に電話をしましたが、駅員さんに「まだ届いていません」と言われました。次の日、近くの交番へ行って、財布の色や形を説明しました。お巡りさんは「見つかったら連絡します」と言ってくれましたが、私はもう戻ってこないと思っていました。\nところが、三日後に交番から電話がありました。私の財布を拾った人が、別の駅の交番に届けてくれたのです。取りに行くと、お金もカードも全部入っていました。届けてくれた人は名前を言わないで帰ったそうです。\n私の国では、なくした物はほとんど戻って来ません。だから、とても驚きました。お礼が言えなくて残念ですが、今度は私が誰かの落とし物を見つけたら、必ず交番に届けようと思います。",
+    "tr": {
+      "zh": "丢失的钱包\n\n上个月，我在电车上丢了钱包。发现的时候已经回到家了。钱包里不只有钱，还有学生证和银行卡，所以我非常担心。\n我马上给车站打了电话，但站务员说：“还没有人送来。”第二天，我去了附近的派出所，说明了钱包的颜色和样子。警察说：“找到了会联系你。”但我以为钱包再也回不来了。\n没想到三天后，派出所打来了电话。捡到我钱包的人，把它送到了另一个车站的派出所。我去取的时候，钱和卡全都在里面。听说送来的人没有留下名字就走了。\n在我的国家，丢了的东西几乎找不回来。所以我非常吃惊。没能向那个人道谢很遗憾，但下次如果我捡到别人丢的东西，一定会送到派出所。",
+      "en": "The Lost Wallet\n\nLast month I lost my wallet on the train. I only noticed after I got home. It held not just money but also my student ID and bank card, so I was very worried.\nI phoned the station straight away, but the station staff told me, \"It hasn't been handed in yet.\" The next day I went to the nearby police box and described the wallet's colour and shape. The officer said, \"We'll contact you if it turns up,\" but I thought it would never come back.\nBut three days later the police box called. The person who picked up my wallet had taken it to the police box at a different station. When I went to collect it, the money and the cards were all there. I was told the person left without giving their name.\nIn my country, lost things almost never come back, so I was really surprised. It's a pity I couldn't thank them, but next time I find something someone has dropped, I will be sure to take it to a police box."
+    },
+    "questions": [
+      {
+        "q": "アンさんは どうして とても 心配に なりましたか。",
+        "options": [
+          "電車の 中で さいふを とられたと 思ったから",
+          "駅に 電話を かけても つながらなかったから",
+          "さいふに 家の かぎも 入れて いたから",
+          "さいふに 学生証や カードも 入って いたから"
+        ],
+        "okj": [
+          "電車の中で財布をとられたと思ったから",
+          null,
+          "財布に家の鍵も入れていたから",
+          "財布に学生証やカードも入っていたから"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「さいふには お金だけではなく、学生証や 銀行の カードも 入って いたので、とても 心配に なりました」。\n推理：「〜ので」前面就是原因：钱包里除了钱还有学生证和银行卡。",
+          "en": "Evidence: 「さいふには お金だけではなく、学生証や 銀行の カードも 入って いたので、とても 心配に なりました」.\nReasoning: The part before 「〜ので」 is the reason: besides money, the wallet held her student ID and bank card."
+        },
+        "wrong": [
+          {
+            "zh": "文中说的是「なくしました」（弄丢了），没有说被偷。",
+            "en": "She says she 「なくしました」 — lost it; nothing about theft."
+          },
+          {
+            "zh": "电话打通了，站务员回答「まだ 届いて いません」。",
+            "en": "The call went through; the staff said 「まだ 届いて いません」."
+          },
+          {
+            "zh": "钱包里是钱、学生证和银行卡，没有提到钥匙。",
+            "en": "The wallet held money, a student ID and a bank card — no keys."
+          },
+          null
+        ]
+      },
+      {
+        "q": "さいふは どのように して アンさんに もどりましたか。",
+        "options": [
+          "駅員さんが 電車の 中で 見つけて、連絡した",
+          "ひろった 人が 別の 駅の 交番に 届けた",
+          "おまわりさんが ひろって、アンさんの 家に 届けた",
+          "ひろった 人が アンさんに 直接 電話を くれた"
+        ],
+        "okj": [
+          null,
+          "拾った人が別の駅の交番に届けた",
+          "お巡りさんが拾って、アンさんの家に届けた",
+          "拾った人がアンさんに直接電話をくれた"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「わたしの さいふを ひろった 人が、別の 駅の 交番に 届けて くれたのです」。\n推理：捡到的人把钱包送到另一个车站的派出所，派出所再打电话给安，她自己去取。",
+          "en": "Evidence: 「わたしの さいふを ひろった 人が、別の 駅の 交番に 届けて くれたのです」.\nReasoning: Someone who found it took it to the police box at another station; the police called An, and she went to collect it."
+        },
+        "wrong": [
+          {
+            "zh": "站务员说「まだ 届いて いません」，不是车站找到的。",
+            "en": "The station said 「まだ 届いて いません」; they didn't find it."
+          },
+          null,
+          {
+            "zh": "是别人捡到送去派出所，安是自己去取的（「取りに 行くと」）。",
+            "en": "Someone else found it, and An went to collect it (「取りに 行くと」)."
+          },
+          {
+            "zh": "打电话来的是「交番から」，捡到的人没留名字就走了。",
+            "en": "The call came 「交番から」; the finder left without a name."
+          }
+        ]
+      },
+      {
+        "q": "アンさんは これから どう しようと 思って いますか。",
+        "options": [
+          "届けて くれた 人を さがして、お礼を 言う",
+          "さいふには カードを 入れない ように する",
+          "だれかの 落とし物を 見つけたら、交番に 届ける",
+          "国の 友だちに 日本の 交番の ことを 話す"
+        ],
+        "okj": [
+          "届けてくれた人を探して、お礼を言う",
+          "財布にはカードを入れないようにする",
+          "誰かの落とし物を見つけたら、交番に届ける",
+          null
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「今度は わたしが だれかの 落とし物を 見つけたら、必ず 交番に 届けようと 思います」。\n推理：「〜ようと 思います」表示今后的打算：捡到别人的东西就送到派出所。她没能道谢，只是觉得遗憾，没有说要去找那个人。",
+          "en": "Evidence: 「今度は わたしが だれかの 落とし物を 見つけたら、必ず 交番に 届けようと 思います」.\nReasoning: 「〜ようと 思います」 states her plan: hand in anything she finds. She regrets not thanking the finder but doesn't plan to look for them."
+        },
+        "wrong": [
+          {
+            "zh": "对方没留名字，她只说「お礼が 言えなくて 残念です」，没有说要去找。",
+            "en": "The finder left no name; she only says 「お礼が 言えなくて 残念です」, not that she will search."
+          },
+          {
+            "zh": "作文里没有说以后不放卡；她的打算是捡到东西送派出所。",
+            "en": "Nothing about keeping cards out of her wallet; her plan is to hand in found items."
+          },
+          null,
+          {
+            "zh": "她提到自己国家的情况是为了说明吃惊，没有说要告诉朋友。",
+            "en": "Her country is mentioned to explain her surprise, not as something to tell friends."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-309",
+    "type": "mid",
+    "difficulty": 2,
+    "intro": "これは 会社員の 松本さんが 書いた 文章です。",
+    "passage": "物を へらして\n\n去年の 夏、仕事が 変わって、広い 部屋から 小さい 部屋に 引っ越す ことに なりました。新しい 部屋には 前の 部屋の 物が 半分しか 入りません。それで、引っ越しの 前に 物を へらさなければ なりませんでした。\n最初は 何を 捨てたら いいか 分かりませんでした。どれも 「いつか 使うかもしれない」と 思ったからです。そこで、一年 使わなかった 物は 捨てる と 決めました。読まない 本や 着ない 服は、友だちに あげたり、リサイクルの 店に 売ったり しました。特に 服が 多くて、一週間も かかりました。\n小さい 部屋に 住み始めて、思って いなかった ことが ありました。そうじが とても 楽に なったのです。前は 週末に 半日 かかって いましたが、今は 三十分で 終わります。それに、物が 少ないので、何が どこに あるか すぐ 分かります。\nもちろん、捨てて しまってから 「あれが あれば よかった」と 思う ことも 時々 あります。でも、そんな 物は 少ないです。\n今では、何か 買う 前に 「これは 本当に 必要か」と 考える ように なりました。その おかげで、お金も 前より たまる ように なりました。",
+    "kj": "物を減らして\n\n去年の夏、仕事が変わって、広い部屋から小さい部屋に引っ越すことになりました。新しい部屋には前の部屋の物が半分しか入りません。それで、引っ越しの前に物を減らさなければなりませんでした。\n最初は何を捨てたらいいか分かりませんでした。どれも「いつか使うかもしれない」と思ったからです。そこで、一年使わなかった物は捨てると決めました。読まない本や着ない服は、友だちにあげたり、リサイクルの店に売ったりしました。特に服が多くて、一週間もかかりました。\n小さい部屋に住み始めて、思っていなかったことがありました。掃除がとても楽になったのです。前は週末に半日かかっていましたが、今は三十分で終わります。それに、物が少ないので、何がどこにあるかすぐ分かります。\nもちろん、捨ててしまってから「あれがあればよかった」と思うことも時々あります。でも、そんな物は少ないです。\n今では、何か買う前に「これは本当に必要か」と考えるようになりました。そのおかげで、お金も前より貯まるようになりました。",
+    "tr": {
+      "zh": "减少东西以后\n\n去年夏天，我换了工作，要从宽敞的房间搬到小房间。新房间只能放下原来房间一半的东西。所以搬家前我必须减少东西。\n一开始我不知道该扔什么，因为每样东西我都觉得“说不定哪天会用到”。于是我决定：一年没用过的东西就扔掉。不看的书和不穿的衣服，我送给朋友，或者卖给回收店。特别是衣服很多，花了整整一个星期。\n住进小房间以后，发生了一件没想到的事：打扫变得非常轻松。以前周末要花半天，现在三十分钟就做完了。而且东西少，什么东西放在哪里一下子就知道。\n当然，扔掉以后有时也会想“要是那个还在就好了”。不过这样的东西很少。\n现在，买东西之前我会想一想“这真的需要吗”。多亏这样，钱也比以前存得多了。",
+      "en": "After Cutting Down on Things\n\nLast summer I changed jobs and had to move from a large room to a small one. The new room could hold only half the things from the old one, so I had to cut down on my belongings before the move.\nAt first I didn't know what to throw away, because I thought of everything, \"I might use it someday.\" So I decided to get rid of anything I hadn't used for a year. Books I don't read and clothes I don't wear I gave to friends or sold to a second-hand shop. There were especially many clothes, and it took a whole week.\nAfter I started living in the small room, something happened that I hadn't expected: cleaning became very easy. It used to take half a day at the weekend; now it's done in thirty minutes. And because I have few things, I know right away where everything is.\nOf course, sometimes after throwing something away I think, \"I wish I still had that.\" But there are few such things.\nNow, before buying anything, I ask myself, \"Do I really need this?\" Thanks to that, I've also been saving more money than before."
+    },
+    "questions": [
+      {
+        "q": "松本さんは どうして 物を へらさなければ なりませんでしたか。",
+        "options": [
+          "新しい 部屋が 前の 部屋より せまいから",
+          "一年 使わない 物が たくさん あったから",
+          "そうじに 時間が かかって 大変だったから",
+          "お金を ためたいと 思って いたから"
+        ],
+        "okj": [
+          "新しい部屋が前の部屋より狭いから",
+          null,
+          "掃除に時間がかかって大変だったから",
+          "お金を貯めたいと思っていたから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「新しい 部屋には 前の 部屋の 物が 半分しか 入りません。それで、引っ越しの 前に 物を へらさなければ なりませんでした」。\n推理：「それで」前面是原因：新房间小，只放得下一半东西。打扫轻松、存钱都是搬家以后的结果。",
+          "en": "Evidence: 「新しい 部屋には 前の 部屋の 物が 半分しか 入りません。それで、引っ越しの 前に 物を へらさなければ なりませんでした」.\nReasoning: Before 「それで」 is the cause: the new room is smaller and holds only half. Easier cleaning and saving money are results after the move."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "“一年没用的扔掉”是决定扔什么的规则，不是必须减少的原因。",
+            "en": "\"A year unused\" is the rule for choosing, not why he had to cut down."
+          },
+          {
+            "zh": "打扫变轻松是「思って いなかった こと」，搬家前并没有为此烦恼。",
+            "en": "Easier cleaning was 「思って いなかった こと」, unexpected; it wasn't a worry before."
+          },
+          {
+            "zh": "存钱是现在的结果（「その おかげで」），不是当初的原因。",
+            "en": "Saving money is a later result (「その おかげで」), not the cause."
+          }
+        ]
+      },
+      {
+        "q": "松本さんは どのように 捨てる 物を 決めましたか。",
+        "options": [
+          "いつか 使うかもしれない 物から 捨てた",
+          "友だちに いらない 物を 選んで もらった",
+          "一年 使わなかった 物は 捨てる ことに した",
+          "部屋に 入らない 大きい 物から 捨てた"
+        ],
+        "okj": [
+          "いつか使うかもしれない物から捨てた",
+          "友だちに要らない物を選んでもらった",
+          null,
+          "部屋に入らない大きい物から捨てた"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「そこで、一年 使わなかった 物は 捨てる と 決めました」。\n推理：每样东西都觉得“哪天会用到”，所以定了一个规则：一年没用过的就扔。「そこで」引出解决办法。",
+          "en": "Evidence: 「そこで、一年 使わなかった 物は 捨てる と 決めました」.\nReasoning: Everything seemed \"useful someday\", so he set a rule: anything unused for a year goes. 「そこで」 introduces the solution."
+        },
+        "wrong": [
+          {
+            "zh": "“哪天会用到”正是他扔不掉的理由，不是扔的标准。",
+            "en": "\"Might use it someday\" is why he couldn't decide, not the rule."
+          },
+          {
+            "zh": "朋友是接受他送的书和衣服的人，不是帮他选的人。",
+            "en": "Friends received the books and clothes; they didn't choose for him."
+          },
+          null,
+          {
+            "zh": "文中没有按大小来扔，标准是“一年有没有用过”。",
+            "en": "Size isn't mentioned; the rule is whether he used it in the past year."
+          }
+        ]
+      },
+      {
+        "q": "松本さんが 小さい 部屋に 住み始めて、思って いなかった ことは 何ですか。",
+        "options": [
+          "物を 半分 捨てなければ ならなかった こと",
+          "そうじに かかる 時間が 短く なった こと",
+          "週末に 半日 そうじを する ように なった こと",
+          "物を 売って お金が たくさん もらえた こと"
+        ],
+        "okj": [
+          "物を半分捨てなければならなかったこと",
+          "掃除にかかる時間が短くなったこと",
+          "週末に半日掃除をするようになったこと",
+          null
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「思って いなかった ことが ありました。そうじが とても 楽に なったのです。前は 週末に 半日 かかって いましたが、今は 三十分で 終わります」。\n推理：「〜のです」解释前一句的“没想到的事”：打扫从半天缩短到三十分钟。",
+          "en": "Evidence: 「思って いなかった ことが ありました。そうじが とても 楽に なったのです。前は 週末に 半日 かかって いましたが、今は 三十分で 終わります」.\nReasoning: 「〜のです」 explains the unexpected thing: cleaning went from half a day to thirty minutes."
+        },
+        "wrong": [
+          {
+            "zh": "要减少一半东西是搬家前就知道的，不是住进去以后才发现的。",
+            "en": "Halving his things was known before the move, not a surprise afterwards."
+          },
+          null,
+          {
+            "zh": "半天是以前（「前は」）的情况，现在三十分钟就做完了。",
+            "en": "Half a day was before (「前は」); now it takes thirty minutes."
+          },
+          {
+            "zh": "文中只说卖给了回收店，没有说得到很多钱。",
+            "en": "He sold things to a second-hand shop, but nothing says he got a lot of money."
+          }
+        ]
+      }
+    ]
   }
 ]

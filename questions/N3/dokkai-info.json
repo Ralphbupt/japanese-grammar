@@ -282,5 +282,289 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n3-dk-405",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "大学生の林さんは、3月の土曜日に、同じ市内の新しい部屋へ引っ越す。荷物は段ボール15箱と、ベッド・机・冷蔵庫・洗濯機の4点だ。荷物を箱に詰めるのは自分でやるが、運ぶのは全部頼みたい。料金はできるだけ安くしたい。学生証は持っている。",
+    "passage": "みなと引越センター　一人暮らしプランのご案内\n| プラン | 運べる荷物 | 作業 | 料金（平日） |\n| A　ミニプラン | 段ボール10箱まで（家具・家電は運べません） | 運ぶだけ | 15,000円 |\n| B　スタンダードプラン | 段ボール20箱まで＋家具・家電4点まで | 運ぶだけ | 30,000円 |\n| C　らくらくプラン | 段ボール20箱まで＋家具・家電4点まで | 箱詰め・運ぶ・片付け | 50,000円 |\n| D　大型プラン | 段ボール30箱まで＋家具・家電8点まで | 運ぶだけ | 45,000円 |\n| E　おまかせプラン | 段ボール30箱まで＋家具・家電8点まで | 箱詰め・運ぶ・片付け | 70,000円 |\n＊土曜・日曜・祝日は、料金が5,000円高くなります。\n＊3月・4月は引っ越しが多いため、料金に10,000円が加わります。\n＊段ボール箱は、B〜Eのプランでは20箱まで無料で差し上げます。Aのプランでは1箱100円です。\n＊学生の方は、学生証を見せていただくと、料金から3,000円引きます。\n＊エアコンの取り外し・取り付けは、別に1台12,000円かかります。",
+    "tr": {
+      "zh": "港口搬家中心 单身方案介绍。\nA 迷你方案：纸箱10箱以内（不能搬家具、家电），只搬运，15,000日元（平日）。\nB 标准方案：纸箱20箱以内＋家具家电4件以内，只搬运，30,000日元。\nC 轻松方案：纸箱20箱以内＋家具家电4件以内，装箱·搬运·整理，50,000日元。\nD 大型方案：纸箱30箱以内＋家具家电8件以内，只搬运，45,000日元。\nE 全包方案：纸箱30箱以内＋家具家电8件以内，装箱·搬运·整理，70,000日元。\n＊周六、周日、节假日费用高5,000日元。\n＊3月、4月搬家的人多，费用加10,000日元。\n＊B～E方案免费提供纸箱，最多20个。A方案每个100日元。\n＊学生出示学生证，费用减3,000日元。\n＊空调的拆卸和安装另收每台12,000日元。",
+      "en": "Minato Moving Centre — plans for people living alone.\nA Mini: up to 10 boxes (no furniture or appliances), moving only, ¥15,000 (weekdays).\nB Standard: up to 20 boxes + up to 4 items of furniture/appliances, moving only, ¥30,000.\nC Easy: up to 20 boxes + up to 4 items, packing, moving and unpacking, ¥50,000.\nD Large: up to 30 boxes + up to 8 items, moving only, ¥45,000.\nE Full service: up to 30 boxes + up to 8 items, packing, moving and unpacking, ¥70,000.\n* Saturdays, Sundays and public holidays cost ¥5,000 more.\n* March and April are busy moving months, so ¥10,000 is added.\n* Plans B–E include up to 20 boxes free. With Plan A, boxes are ¥100 each.\n* Students who show a student ID get ¥3,000 off.\n* Removing and installing an air conditioner costs an extra ¥12,000 per unit."
+    },
+    "questions": [
+      {
+        "q": "林さんの希望に合うプランはどれか。",
+        "options": [
+          "A　ミニプラン",
+          "B　スタンダードプラン",
+          "C　らくらくプラン",
+          "D　大型プラン"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「段ボール10箱まで（家具・家電は運べません）」；「段ボール20箱まで＋家具・家電4点まで｜運ぶだけ｜30,000円」\n推理：条件有三个：15箱加4件家具家电、只要搬运（装箱自己做）、尽量便宜。A不能搬家具家电；C、E包括装箱，更贵；D能搬但比B贵。都满足的是B。",
+          "en": "Evidence: 「段ボール10箱まで（家具・家電は運べません）」; 「段ボール20箱まで＋家具・家電4点まで｜運ぶだけ｜30,000円」\nReasoning: Three conditions: 15 boxes plus 4 items, moving only (he packs himself), as cheap as possible. A can't take furniture; C and E include packing and cost more; D fits but costs more than B. B meets all three."
+        },
+        "wrong": [
+          {
+            "zh": "A只能搬10箱，而且「家具・家電は運べません」。",
+            "en": "A takes only 10 boxes and 「家具・家電は運べません」."
+          },
+          null,
+          {
+            "zh": "C包括装箱，林先生自己装箱，而且比B贵20,000日元。",
+            "en": "C includes packing, which he'll do himself, and costs ¥20,000 more than B."
+          },
+          {
+            "zh": "D也能搬，但比B贵15,000日元。",
+            "en": "D would work but costs ¥15,000 more than B."
+          }
+        ]
+      },
+      {
+        "q": "林さんが希望に合うプランで引っ越す場合、料金はいくらか。",
+        "options": [
+          "32,000円",
+          "37,000円",
+          "45,000円",
+          "42,000円"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「土曜・日曜・祝日は、料金が5,000円高くなります」；「3月・4月は…料金に10,000円が加わります」；「学生の方は…3,000円引きます」\n推理：①B平日30,000日元。②周六加5,000。③3月加10,000。④他是大学生，减3,000。30,000＋5,000＋10,000−3,000＝42,000日元。纸箱只要15个，B免费；没有空调。",
+          "en": "Evidence: 「土曜・日曜・祝日は、料金が5,000円高くなります」; 「3月・4月は…料金に10,000円が加わります」; 「学生の方は…3,000円引きます」\nReasoning: (1) B is ¥30,000 on weekdays. (2) Saturday adds ¥5,000. (3) March adds ¥10,000. (4) He's a student: minus ¥3,000. 30,000 + 5,000 + 10,000 − 3,000 = ¥42,000. His 15 boxes are free with B, and there's no air conditioner."
+        },
+        "wrong": [
+          {
+            "zh": "这是忘了加3月的10,000日元。",
+            "en": "That leaves out the ¥10,000 March charge."
+          },
+          {
+            "zh": "这是忘了加周六的5,000日元。",
+            "en": "That leaves out the ¥5,000 Saturday charge."
+          },
+          {
+            "zh": "这是没有减学生优惠3,000日元。",
+            "en": "That forgets the ¥3,000 student discount."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-406",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "会社員の森さんは、次の日曜日に、家族4人で車を借りて、9時から18時まで郊外の公園へ出かけたい。走る距離は全部で80kmの予定だ。荷物が多いので、荷物がたくさん入る車がいい。料金はできるだけ安くしたい。森さんがこのカーシェアを使うのは、今回が初めてだ。",
+    "passage": "さくらカーシェア　料金のご案内\n| クラス | 定員 | 荷物 | 15分ごとの料金 | 12時間パック |\n| S　コンパクト | 4人 | 少ない | 200円 | 4,500円 |\n| M　セダン | 5人 | 普通 | 250円 | 5,500円 |\n| L　ワゴン | 7人 | 多い | 350円 | 7,500円 |\n| W　ミニバン | 8人 | 多い | 400円 | 8,500円 |\n| E　電気自動車 | 4人 | 少ない | 300円 | 6,000円 |\n＊上の料金のほかに、走った距離1kmにつき20円がかかります（電気自動車は距離料金がかかりません）。\n＊12時間パックは、12時間以内なら何時間使っても同じ料金です。\n＊土曜・日曜・祝日は、12時間パックの料金が1,000円高くなります。\n＊初めてご利用の方は、1回目に限り、利用料金から1,000円引きます（距離料金は引きません）。\n＊ガソリン代は料金に含まれています。",
+    "tr": {
+      "zh": "樱花共享汽车 收费说明。\nS 小型车：定员4人，行李少，每15分钟200日元，12小时套餐4,500日元。\nM 轿车：5人，行李普通，250日元，5,500日元。\nL 旅行车：7人，行李多，350日元，7,500日元。\nW 小型面包车：8人，行李多，400日元，8,500日元。\nE 电动汽车：4人，行李少，300日元，6,000日元。\n＊除上述费用外，每行驶1公里收20日元（电动汽车不收里程费）。\n＊12小时套餐在12小时以内，不论用几个小时都是同样的费用。\n＊周六、周日、节假日，12小时套餐的费用高1,000日元。\n＊首次使用的客人，仅限第一次，使用费减1,000日元（里程费不减）。\n＊油费包含在费用中。",
+      "en": "Sakura Car Share — prices.\nS Compact: seats 4, little luggage, ¥200 per 15 min, 12-hour pack ¥4,500.\nM Sedan: seats 5, normal luggage, ¥250, ¥5,500.\nL Wagon: seats 7, lots of luggage, ¥350, ¥7,500.\nW Minivan: seats 8, lots of luggage, ¥400, ¥8,500.\nE Electric: seats 4, little luggage, ¥300, ¥6,000.\n* In addition, there is a charge of ¥20 per km driven (no distance charge for electric cars).\n* The 12-hour pack costs the same however long you use the car, up to 12 hours.\n* On Saturdays, Sundays and public holidays the 12-hour pack costs ¥1,000 more.\n* First-time users get ¥1,000 off the usage fee, on the first use only (not off the distance charge).\n* Fuel is included."
+    },
+    "questions": [
+      {
+        "q": "森さんの希望に合うクラスはどれか。",
+        "options": [
+          "M　セダン",
+          "L　ワゴン",
+          "W　ミニバン",
+          "E　電気自動車"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「L　ワゴン｜7人｜多い｜350円｜7,500円」；「W　ミニバン｜8人｜多い｜400円｜8,500円」\n推理：条件：4个人、行李多、尽量便宜。行李「多い」的只有L和W，两者都能坐4人；无论按15分钟算还是用套餐，L都比W便宜。所以选L。",
+          "en": "Evidence: 「L　ワゴン｜7人｜多い｜350円｜7,500円」; 「W　ミニバン｜8人｜多い｜400円｜8,500円」\nReasoning: Conditions: four people, lots of luggage, as cheap as possible. Only L and W take 「多い」 luggage, and both seat four; L is cheaper than W both per 15 minutes and as a pack. So L."
+        },
+        "wrong": [
+          {
+            "zh": "M行李是「普通」，装不了很多行李。",
+            "en": "M's luggage space is only 「普通」."
+          },
+          null,
+          {
+            "zh": "W行李也多，但比L贵。",
+            "en": "W takes lots of luggage too, but costs more than L."
+          },
+          {
+            "zh": "电动汽车不收里程费，但行李「少ない」。",
+            "en": "The electric car has no distance charge, but its luggage space is 「少ない」."
+          }
+        ]
+      },
+      {
+        "q": "森さんが希望に合うクラスを使う場合、料金はいくらになるか。",
+        "options": [
+          "10,100円",
+          "8,100円",
+          "9,100円",
+          "7,500円"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「12時間パックは、12時間以内なら何時間使っても同じ料金です」；「土曜・日曜・祝日は、12時間パックの料金が1,000円高くなります」；「利用料金から1,000円引きます（距離料金は引きません）」\n推理：①9点到18点共9小时，按15分钟算要350×36＝12,600日元，套餐更便宜。②周日套餐7,500＋1,000＝8,500。③首次使用减1,000，得7,500。④里程费80×20＝1,600，不减。合计9,100日元。",
+          "en": "Evidence: 「12時間パックは、12時間以内なら何時間使っても同じ料金です」; 「土曜・日曜・祝日は、12時間パックの料金が1,000円高くなります」; 「利用料金から1,000円引きます（距離料金は引きません）」\nReasoning: (1) 9:00–18:00 is 9 hours; by the quarter-hour that's 350 × 36 = ¥12,600, so the pack is cheaper. (2) Sunday pack: 7,500 + 1,000 = 8,500. (3) First use: −1,000 = 7,500. (4) Distance 80 × 20 = 1,600, not discounted. Total ¥9,100."
+        },
+        "wrong": [
+          {
+            "zh": "这是忘了首次使用减1,000日元。",
+            "en": "That forgets the ¥1,000 first-time discount."
+          },
+          {
+            "zh": "这是忘了周日套餐要多付1,000日元。",
+            "en": "That forgets the ¥1,000 Sunday surcharge on the pack."
+          },
+          null,
+          {
+            "zh": "这是没加里程费80×20＝1,600日元。",
+            "en": "That leaves out the distance charge, 80 × 20 = ¥1,600."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-407",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "山口さんには、小学5年生（10歳）の娘と小学1年生（6歳）の息子がいる。8月の土曜日か日曜日に、子ども二人が一緒に参加できる講座を探している。山口さんは週末も仕事があるので、保護者が一緒に参加しなければならない講座には申し込めない。",
+    "passage": "みどり市　夏休み子ども講座\n| 講座 | 日にち | 対象 | 保護者 | 参加費（1人） |\n| A　科学実験教室 | 8月3日（土） | 小学3〜6年生 | 不要 | 500円 |\n| B　親子料理教室 | 8月4日（日） | 小学1〜6年生 | 一緒に参加 | 800円 |\n| C　自然観察ハイキング | 8月10日（土） | 小学1〜6年生 | 不要 | 300円 |\n| D　水泳教室 | 8月7日（水） | 小学1〜6年生 | 不要 | 400円 |\n| E　工作教室 | 8月18日（日） | 小学1〜6年生 | 1・2年生は一緒に参加 | 600円 |\n＊申し込みは、7月20日までに市のホームページからお願いします。人数が多い場合は抽選になります。\n＊兄弟・姉妹で同じ講座に申し込む場合、2人目の参加費は半額になります。\n＊Cは、雨の場合は次の日に行います。次の日も雨の場合は中止です。\n＊Eで作った作品は、その日に持って帰ることができます。",
+    "tr": {
+      "zh": "绿市 暑假儿童讲座。\nA 科学实验教室：8月3日（周六），小学3～6年级，家长不必参加，每人500日元。\nB 亲子料理教室：8月4日（周日），小学1～6年级，家长一起参加，800日元。\nC 自然观察徒步：8月10日（周六），小学1～6年级，家长不必参加，300日元。\nD 游泳教室：8月7日（周三），小学1～6年级，家长不必参加，400日元。\nE 手工教室：8月18日（周日），小学1～6年级，1、2年级家长要一起参加，600日元。\n＊请在7月20日之前通过市政府网站报名。人数多时抽签。\n＊兄弟姐妹报名同一讲座时，第二个人的参加费减半。\n＊C如遇下雨，改在第二天举行。第二天也下雨则取消。\n＊在E做的作品当天可以带回家。",
+      "en": "Midori City — summer holiday classes for children.\nA Science experiments: 3 Aug (Sat), grades 3–6, no parent needed, ¥500 per child.\nB Parent-and-child cooking: 4 Aug (Sun), grades 1–6, parent takes part, ¥800.\nC Nature-watching hike: 10 Aug (Sat), grades 1–6, no parent needed, ¥300.\nD Swimming: 7 Aug (Wed), grades 1–6, no parent needed, ¥400.\nE Craft class: 18 Aug (Sun), grades 1–6, parents of grades 1–2 take part, ¥600.\n* Apply on the city website by 20 July. If there are many applicants, places will be decided by lottery.\n* When brothers and sisters apply for the same class, the second child pays half.\n* If it rains, C will be held the next day. If it rains the next day too, it is cancelled.\n* Things made in E can be taken home on the day."
+    },
+    "questions": [
+      {
+        "q": "山口さんの子ども二人が一緒に参加できる講座はどれか。",
+        "options": [
+          "A　科学実験教室",
+          "B　親子料理教室",
+          "C　自然観察ハイキング",
+          "E　工作教室"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「C　自然観察ハイキング｜8月10日（土）｜小学1〜6年生｜不要」\n推理：条件：周六或周日、5年级和1年级都能参加、家长不用参加。A只限3～6年级，1年级的儿子不行；B家长要参加；D是周三；E的1、2年级要家长陪同。全部满足的只有C。",
+          "en": "Evidence: 「C　自然観察ハイキング｜8月10日（土）｜小学1〜6年生｜不要」\nReasoning: Conditions: a Saturday or Sunday, open to both a 5th and a 1st grader, no parent needed. A is grades 3–6, so not the son; B needs a parent; D is a Wednesday; E needs a parent for grades 1–2. Only C meets all."
+        },
+        "wrong": [
+          {
+            "zh": "A只限「小学3〜6年生」，1年级的儿子不能参加。",
+            "en": "A is for 「小学3〜6年生」; the 1st-grade son can't join."
+          },
+          {
+            "zh": "B要「一緒に参加」，山口周末要工作。",
+            "en": "B requires a parent 「一緒に参加」, and Yamaguchi works weekends."
+          },
+          null,
+          {
+            "zh": "E的「1・2年生は一緒に参加」，儿子是1年级，需要家长陪同。",
+            "en": "In E, 「1・2年生は一緒に参加」: the 1st-grade son needs a parent."
+          }
+        ]
+      },
+      {
+        "q": "その講座の日に雨が降った場合、講座はいつ行われるか。また、二人分の参加費は合計いくらか。",
+        "options": [
+          "8月10日（土）・600円",
+          "8月11日（日）・450円",
+          "8月11日（日）・600円",
+          "8月17日（土）・450円"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「Cは、雨の場合は次の日に行います」；「兄弟・姉妹で同じ講座に申し込む場合、2人目の参加費は半額になります」\n推理：①C原定8月10日（周六），下雨改到第二天8月11日（周日）。②姐弟报名同一讲座，第一人300日元，第二人半价150日元，合计450日元。",
+          "en": "Evidence: 「Cは、雨の場合は次の日に行います」; 「兄弟・姉妹で同じ講座に申し込む場合、2人目の参加費は半額になります」\nReasoning: (1) C is on Sat 10 Aug; if it rains it moves to the next day, Sun 11 Aug. (2) Siblings in the same class: ¥300 for the first, half (¥150) for the second, ¥450 in all."
+        },
+        "wrong": [
+          {
+            "zh": "下雨时改在「次の日」，而且第二人半价，不是600日元。",
+            "en": "Rain moves it to 「次の日」, and the second child pays half — not ¥600."
+          },
+          null,
+          {
+            "zh": "日期对，但第二人参加费减半，合计是450日元。",
+            "en": "The date is right, but the second child pays half: ¥450 in total."
+          },
+          {
+            "zh": "改期是「次の日」，即8月11日，不是下一周。",
+            "en": "It moves to 「次の日」, 11 Aug, not the following week."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-408",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "大学生のキムさん（20歳）は、友人で会社員の佐藤さん（25歳）と、来週の水曜日の19時から始まる映画を見に行く予定だ。見たい映画は3D映画である。佐藤さんはこの映画館の会員だが、キムさんは会員ではない。",
+    "passage": "シネマみなと　料金のご案内\n| 区分 | 料金 |\n| 一般 | 1,900円 |\n| 大学生・専門学校生 | 1,500円 |\n| 高校生以下 | 1,000円 |\n| 60歳以上 | 1,200円 |\n割引サービス\n| 割引 | 内容 | 料金 |\n| レイトショー | 20時以降に始まる回 | 1,400円（一般・大学生） |\n| 水曜サービスデー | 毎週水曜日、すべての回 | 1,200円（どなたでも） |\n| 会員割引 | 会員ご本人、いつでも | 1,300円 |\n| 会員の同伴者 | 会員と一緒の方1名まで、土日のみ | 1,500円 |\n＊割引は一つしか使えません。\n＊3D映画は、上の料金に400円が加わります。\n＊会員になるには、入会金500円が必要です。入会したその日から会員割引が使えます。\n＊大学生・専門学校生の料金は、学生証を見せた方に限ります。",
+    "tr": {
+      "zh": "港口影城 票价说明。\n普通：1,900日元。大学生·专门学校学生：1,500日元。高中生以下：1,000日元。60岁以上：1,200日元。\n优惠服务：\n夜场：20点以后开始的场次，1,400日元（普通·大学生）。\n周三服务日：每周三所有场次，1,200日元（任何人）。\n会员优惠：会员本人，任何时候，1,300日元。\n会员同伴：与会员同行者限1名，仅周六日，1,500日元。\n＊优惠只能用一种。\n＊3D电影在上述票价基础上加400日元。\n＊成为会员需要入会费500日元。入会当天起即可使用会员优惠。\n＊大学生·专门学校学生票价仅限出示学生证者。",
+      "en": "Cinema Minato — prices.\nGeneral: ¥1,900. University/vocational students: ¥1,500. High school and under: ¥1,000. 60 and over: ¥1,200.\nDiscounts:\nLate show: showings starting at 20:00 or later, ¥1,400 (general and university students).\nWednesday service day: every Wednesday, all showings, ¥1,200 (anyone).\nMember discount: the member, any time, ¥1,300.\nMember's companion: one person with a member, weekends only, ¥1,500.\n* Only one discount can be used.\n* 3D films cost ¥400 on top of the prices above.\n* Membership requires a ¥500 joining fee. The member discount can be used from the day you join.\n* The student price is only for those who show a student ID."
+    },
+    "questions": [
+      {
+        "q": "二人がいちばん安い方法で見る場合、二人分の料金は合計いくらか。",
+        "options": [
+          "3,200円",
+          "2,400円",
+          "3,300円",
+          "3,600円"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「水曜サービスデー｜毎週水曜日、すべての回｜1,200円（どなたでも）」；「3D映画は、上の料金に400円が加わります」\n推理：①星期三谁都是1,200日元，比佐藤的会员价1,300、金的学生价1,500都便宜。②19点开始，不是夜场。③3D每人加400：1,600×2＝3,200日元。",
+          "en": "Evidence: 「水曜サービスデー｜毎週水曜日、すべての回｜1,200円（どなたでも）」; 「3D映画は、上の料金に400円が加わります」\nReasoning: (1) On Wednesdays anyone pays ¥1,200, cheaper than Sato's member price (¥1,300) or Kim's student price (¥1,500). (2) A 19:00 start isn't a late show. (3) 3D adds ¥400 each: 1,600 × 2 = ¥3,200."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "这是忘了3D每人要加400日元。",
+            "en": "That forgets the ¥400 3D charge for each person."
+          },
+          {
+            "zh": "这是佐藤用了会员价1,300日元，但周三1,200日元更便宜。",
+            "en": "That has Sato using the ¥1,300 member price, but Wednesday's ¥1,200 is cheaper."
+          },
+          {
+            "zh": "这是佐藤用会员价、金用学生价的结果，都比周三服务日贵。",
+            "en": "That uses Sato's member price and Kim's student price, both dearer than the Wednesday price."
+          }
+        ]
+      },
+      {
+        "q": "水曜日に行けなくなったので、次の土曜日の20時30分から始まる回（同じ3D映画）を見ることにした。キムさんがいちばん安く見るには、どうすればいいか。",
+        "options": [
+          "会員の同伴者として、佐藤さんと一緒に入る。",
+          "その日に会員になって、会員割引を使う。",
+          "学生証を見せて、大学生の料金で入る。",
+          "20時以降の回なので、レイトショーで入る。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「レイトショー｜20時以降に始まる回｜1,400円（一般・大学生）」；「割引は一つしか使えません」\n推理：20:30开始，属于夜场，金是大学生，1,400日元。比较：同伴价1,500、学生价1,500、当天入会500＋1,300＝1,800。都要加3D的400，夜场1,800日元最便宜。",
+          "en": "Evidence: 「レイトショー｜20時以降に始まる回｜1,400円（一般・大学生）」; 「割引は一つしか使えません」\nReasoning: A 20:30 start is a late show, and Kim is a student: ¥1,400. Compare: companion ¥1,500, student ¥1,500, joining that day 500 + 1,300 = ¥1,800. All add ¥400 for 3D, so the late show (¥1,800) is cheapest."
+        },
+        "wrong": [
+          {
+            "zh": "周六可以用同伴价，但1,500日元比夜场1,400日元贵。",
+            "en": "The companion price works on Saturday, but ¥1,500 is more than the ¥1,400 late show."
+          },
+          {
+            "zh": "入会费500加会员价1,300是1,800日元，比夜场贵。",
+            "en": "Joining fee ¥500 plus member price ¥1,300 is ¥1,800, dearer than the late show."
+          },
+          {
+            "zh": "学生价1,500日元，比夜场1,400日元贵。",
+            "en": "The student price, ¥1,500, is more than the late show's ¥1,400."
+          },
+          null
+        ]
+      }
+    ]
   }
 ]

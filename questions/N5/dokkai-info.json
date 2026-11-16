@@ -297,5 +297,180 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n5-dk-407",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "リーさんは 二十さいの 大学生です。土曜日の 午後 四時から 二時間ぐらい プールで およぎたいです。",
+    "passage": "まちの プール\n| | 月〜金 | 土・日 | 大人 | 学生 |\n| ひがしプール | 9:00〜21:00 | 9:00〜17:00 | 400円 | 300円 |\n| 駅前プール | 10:00〜22:00 | 10:00〜20:00 | 600円 | 500円 |\n| みどりプール | 9:00〜20:00 | 9:00〜19:00 | 500円 | 500円 |\n| 川の プール | 12:00〜21:00 | 休み | 300円 | 200円 |\n＊みどりプールは 毎週 土曜日の 午後、子どもの クラスが ありますから、大人は 入る ことが できません。",
+    "kj": "町のプール\n| | 月〜金 | 土・日 | 大人 | 学生 |\n| ひがしプール | 9:00〜21:00 | 9:00〜17:00 | 400円 | 300円 |\n| 駅前プール | 10:00〜22:00 | 10:00〜20:00 | 600円 | 500円 |\n| みどりプール | 9:00〜20:00 | 9:00〜19:00 | 500円 | 500円 |\n| 川のプール | 12:00〜21:00 | 休み | 300円 | 200円 |\n＊みどりプールは毎週土曜日の午後、子どものクラスがありますから、大人は入ることができません。",
+    "tr": {
+      "zh": "镇上的游泳池\n东泳池：周一至周五 9:00–21:00，周六日 9:00–17:00；大人400日元，学生300日元。\n站前泳池：周一至周五 10:00–22:00，周六日 10:00–20:00；大人600日元，学生500日元。\n绿泳池：周一至周五 9:00–20:00，周六日 9:00–19:00；大人500日元，学生500日元。\n河边泳池：周一至周五 12:00–21:00，周六日休息；大人300日元，学生200日元。\n＊绿泳池每周六下午有儿童课，大人不能进入。",
+      "en": "Pools in town\nHigashi Pool: Mon–Fri 9:00–21:00, Sat–Sun 9:00–17:00; adults ¥400, students ¥300.\nEkimae Pool: Mon–Fri 10:00–22:00, Sat–Sun 10:00–20:00; adults ¥600, students ¥500.\nMidori Pool: Mon–Fri 9:00–20:00, Sat–Sun 9:00–19:00; adults ¥500, students ¥500.\nRiver Pool: Mon–Fri 12:00–21:00, closed Sat–Sun; adults ¥300, students ¥200.\n* Midori Pool has children's classes every Saturday afternoon, so adults can't use it then."
+    },
+    "questions": [
+      {
+        "q": "リーさんは どの プールへ 行きますか。",
+        "options": ["みどりプール", "ひがしプール", "駅前プール", "川の プール"],
+        "answer": 2,
+        "why": {
+          "zh": "依据：站前泳池周六日「10:00〜20:00」；「みどりプールは 毎週 土曜日の 午後…大人は 入る ことが できません」\n推理：李同学要星期六下午四点起游两个小时，到六点左右。东泳池周末17:00关门，河边泳池周末休息，绿泳池周六下午大人不能进，只有站前泳池开到20:00。",
+          "en": "Evidence: Ekimae Pool is open 「10:00〜20:00」 at weekends; 「みどりプールは 毎週 土曜日の 午後…大人は 入る ことが できません」\nReasoning: Lee wants to swim Saturday from 4 to about 6 p.m. Higashi closes at 17:00 at weekends, River Pool is closed at weekends, and adults can't use Midori on Saturday afternoons. Only Ekimae, open to 20:00, works."
+        },
+        "wrong": [
+          { "zh": "绿泳池周六开到19:00，但周六下午有儿童课，「大人は 入る ことが できません」。", "en": "Midori is open to 19:00 on Saturday, but on Saturday afternoons 「大人は 入る ことが できません」." },
+          { "zh": "东泳池周六日只开到17:00，四点开始游不了两个小时。", "en": "Higashi closes at 17:00 at weekends — no two hours from 4 p.m." },
+          null,
+          { "zh": "河边泳池周六日「休み」。", "en": "River Pool is 「休み」 at weekends." }
+        ]
+      },
+      {
+        "q": "リーさんは いくら はらいますか。",
+        "options": ["300円", "600円", "500円", "400円"],
+        "answer": 2,
+        "why": {
+          "zh": "依据：站前泳池「600円 | 500円」（大人｜学生）\n推理：李同学去站前泳池，他是大学生，按学生价付500日元。",
+          "en": "Evidence: Ekimae Pool: 「600円 | 500円」 (adult | student)\nReasoning: Lee goes to Ekimae Pool and is a university student, so he pays the student price, ¥500."
+        },
+        "wrong": [
+          { "zh": "300日元是东泳池的学生价，李同学去的是站前泳池。", "en": "¥300 is Higashi's student price; Lee goes to Ekimae." },
+          { "zh": "600日元是站前泳池的大人价，李同学是学生。", "en": "¥600 is Ekimae's adult price; Lee is a student." },
+          null,
+          { "zh": "400日元是东泳池的大人价，泳池和身份都不对。", "en": "¥400 is Higashi's adult price — wrong pool and wrong rate." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-408",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "マリさんは あしたの ばん、うちで 友だち 六人と パーティーを します。みんなで 食べる ケーキを 一つ 買いたいです。マリさんは チョコレートが すきじゃ ありません。三千円までの ケーキが いいです。",
+    "passage": "ケーキの みせ　ポム\n| ケーキ | 何人で 食べますか | ねだん |\n| いちごケーキ | 4〜5人 | 2,500円 |\n| チョコレートケーキ | 6〜8人 | 2,800円 |\n| チーズケーキ | 6〜8人 | 2,900円 |\n| フルーツケーキ | 8〜10人 | 3,500円 |\n＊いちごケーキは 大きい ケーキ（8〜10人）も あります。3,200円です。\n＊前の 日の 午後 五時までに 電話して ください。",
+    "kj": "ケーキの店　ポム\n| ケーキ | 何人で食べますか | 値段 |\n| いちごケーキ | 4〜5人 | 2,500円 |\n| チョコレートケーキ | 6〜8人 | 2,800円 |\n| チーズケーキ | 6〜8人 | 2,900円 |\n| フルーツケーキ | 8〜10人 | 3,500円 |\n＊いちごケーキは大きいケーキ（8〜10人）もあります。3,200円です。\n＊前の日の午後五時までに電話してください。",
+    "tr": {
+      "zh": "蛋糕店 Pomme\n草莓蛋糕：4–5人份，2,500日元。\n巧克力蛋糕：6–8人份，2,800日元。\n芝士蛋糕：6–8人份，2,900日元。\n水果蛋糕：8–10人份，3,500日元。\n＊草莓蛋糕也有大号（8–10人份），3,200日元。\n＊请在前一天下午五点之前打电话预订。",
+      "en": "Cake shop Pomme\nStrawberry cake: serves 4–5, ¥2,500.\nChocolate cake: serves 6–8, ¥2,800.\nCheesecake: serves 6–8, ¥2,900.\nFruit cake: serves 8–10, ¥3,500.\n* The strawberry cake also comes in a large size (serves 8–10) for ¥3,200.\n* Please phone by 5 p.m. the day before."
+    },
+    "questions": [
+      {
+        "q": "マリさんは どの ケーキを 買いますか。",
+        "options": ["チーズケーキ", "いちごケーキ", "チョコレートケーキ", "フルーツケーキ"],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「チーズケーキ | 6〜8人 | 2,900円」\n推理：朋友六人加上玛丽自己，一共七个人。不要巧克力、三千日元以内、够七个人吃的，只有芝士蛋糕。\n容易错：草莓蛋糕普通的只够4–5人，大号的要3,200日元，超过三千。",
+          "en": "Evidence: 「チーズケーキ | 6〜8人 | 2,900円」\nReasoning: Six friends plus Mari makes seven. No chocolate, ¥3,000 or less, enough for seven: only the cheesecake.\nTrap: The regular strawberry cake serves only 4–5, and the large one is ¥3,200 — over budget."
+        },
+        "wrong": [
+          null,
+          { "zh": "普通草莓蛋糕只够4–5人；够吃的大号要3,200日元，超过三千日元。", "en": "The regular strawberry cake serves 4–5; the large one is ¥3,200, over ¥3,000." },
+          { "zh": "人数和价钱都合适，但玛丽「チョコレートが すきじゃ ありません」。", "en": "Size and price fit, but Mari 「チョコレートが すきじゃ ありません」." },
+          { "zh": "水果蛋糕3,500日元，超过三千日元。", "en": "The fruit cake is ¥3,500 — over ¥3,000." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-409",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "キムさんは かんじを べんきょうしたいです。キムさんは 月曜日から 金曜日まで、午前 九時から 午後 五時まで 会社で はたらいて います。日曜日は 一日中 アルバイトが あります。",
+    "passage": "あおば町の 日本語きょうしつ\n| きょうしつ | 曜日 | 時間 | べんきょうする こと |\n| A | 火 | 10:00〜12:00 | かんじ |\n| B | 木 | 19:00〜20:30 | かんじ |\n| C | 土 | 10:00〜11:30 | かいわ |\n| D | 日 | 14:00〜16:00 | かんじ |\n＊お金は いりません。\n＊はじめて 来る 人は、前の 日までに 電話して ください。",
+    "kj": "あおば町の日本語教室\n| 教室 | 曜日 | 時間 | 勉強すること |\n| A | 火 | 10:00〜12:00 | 漢字 |\n| B | 木 | 19:00〜20:30 | 漢字 |\n| C | 土 | 10:00〜11:30 | 会話 |\n| D | 日 | 14:00〜16:00 | 漢字 |\n＊お金はいりません。\n＊初めて来る人は、前の日までに電話してください。",
+    "tr": {
+      "zh": "青叶町日语教室\nA：周二 10:00–12:00，学汉字。\nB：周四 19:00–20:30，学汉字。\nC：周六 10:00–11:30，学会话。\nD：周日 14:00–16:00，学汉字。\n＊免费。\n＊第一次来的人请在前一天之前打电话。",
+      "en": "Aoba Town Japanese classes\nA: Tue 10:00–12:00, kanji.\nB: Thu 19:00–20:30, kanji.\nC: Sat 10:00–11:30, conversation.\nD: Sun 14:00–16:00, kanji.\n* Free of charge.\n* First-timers, please phone by the day before."
+    },
+    "questions": [
+      {
+        "q": "キムさんは どの きょうしつに 行きますか。",
+        "options": ["B", "A", "C", "D"],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「B | 木 | 19:00〜20:30 | かんじ」\n推理：金先生要学汉字，平日九点到五点上班，星期日整天打工。学汉字的A在星期二上午，D在星期日，都去不了；C在星期六但学的是会话。只有星期四晚上七点的B可以。",
+          "en": "Evidence: 「B | 木 | 19:00〜20:30 | かんじ」\nReasoning: Kim wants kanji, works 9 to 5 on weekdays and has a job all day Sunday. Kanji class A is Tuesday morning and D is Sunday, both impossible; C is Saturday but is conversation. Only B, Thursday at 7 p.m., works."
+        },
+        "wrong": [
+          null,
+          { "zh": "A是星期二上午10点，金先生那时在公司上班。", "en": "A is Tuesday at 10 a.m., when Kim is at work." },
+          { "zh": "C是星期六，时间可以，但学的是「かいわ」，不是汉字。", "en": "C is on Saturday, which fits, but it's 「かいわ」, not kanji." },
+          { "zh": "D是星期日，金先生「日曜日は 一日中 アルバイトが あります」。", "en": "D is on Sunday, and 「日曜日は 一日中 アルバイトが あります」." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-410",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "ソンさんは 日曜日に ふつうの じてんしゃを かりて、午前 十時から 午後 三時まで 町を 見たいです。",
+    "passage": "じてんしゃ かします　駅前 サイクル\n| | 1時間 | 1日（9:00〜18:00） |\n| ふつうの じてんしゃ | 300円 | 1,200円 |\n| でんきの じてんしゃ | 500円 | 2,000円 |\n| 子どもの じてんしゃ | 200円 | 800円 |\n＊土曜日と 日曜日は「1日」は ありません。1時間で かして います。\n＊じてんしゃを かりる とき、お金を はらって ください。",
+    "kj": "自転車貸します　駅前サイクル\n| | 1時間 | 1日（9:00〜18:00） |\n| 普通の自転車 | 300円 | 1,200円 |\n| 電気の自転車 | 500円 | 2,000円 |\n| 子どもの自転車 | 200円 | 800円 |\n＊土曜日と日曜日は「1日」はありません。1時間で貸しています。\n＊自転車を借りる時、お金を払ってください。",
+    "tr": {
+      "zh": "自行车出租　站前单车\n普通自行车：1小时300日元，1天（9:00–18:00）1,200日元。\n电动自行车：1小时500日元，1天2,000日元。\n儿童自行车：1小时200日元，1天800日元。\n＊星期六和星期日没有“1天”的价格，按小时出租。\n＊借车时请付钱。",
+      "en": "Bikes for hire — Ekimae Cycle\nStandard bike: ¥300 per hour, ¥1,200 per day (9:00–18:00).\nElectric bike: ¥500 per hour, ¥2,000 per day.\nChildren's bike: ¥200 per hour, ¥800 per day.\n* No day rate on Saturdays and Sundays; bikes are hired by the hour.\n* Please pay when you hire the bike."
+    },
+    "questions": [
+      {
+        "q": "ソンさんは いくら はらいますか。",
+        "options": ["1,200円", "1,500円", "1,800円", "2,500円"],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「土曜日と 日曜日は「1日」は ありません。1時間で かして います」\n推理：上午十点到下午三点是五个小时。星期日不能按天租，只能按小时：普通自行车300日元×5＝1,500日元。\n容易错：1,200日元是一天的价格，星期日没有。",
+          "en": "Evidence: 「土曜日と 日曜日は「1日」は ありません。1時間で かして います」\nReasoning: 10 a.m. to 3 p.m. is five hours. There's no day rate on Sunday, so it's hourly: ¥300 × 5 = ¥1,500 for a standard bike.\nTrap: ¥1,200 is the day rate, which isn't offered on Sundays."
+        },
+        "wrong": [
+          { "zh": "1,200日元是“1天”的价格，但「日曜日は「1日」は ありません」。", "en": "¥1,200 is the day rate, but on Sundays 「「1日」は ありません」." },
+          null,
+          { "zh": "这是按六个小时算的；十点到三点是五个小时。", "en": "That counts six hours; 10 to 3 is five." },
+          { "zh": "这是电动自行车的价格（500日元×5），孙先生借的是普通自行车。", "en": "That's the electric-bike price (¥500 × 5); Son hires a standard bike." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-411",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "田中さんは 十一月の 土曜日に、おくさんと 二人で りょかんに とまりたいです。へやで ばんごはんを 食べたいです。へやに おふろが ほしいです。",
+    "passage": "やまびこ りょかん　へやの あんない\n| へや | へやの おふろ | ばんごはん | 一人の ねだん |\n| うめ | あります | へやで | 12,000円 |\n| さくら | ありません | へやで | 9,000円 |\n| もみじ | あります | 一かいの レストランで | 10,000円 |\n| ふじ | あります | へやで | 15,000円 |\n＊土曜日は 一人 2,000円 高く なります。\n＊十一月の 土曜日は、うめの へやは もう ありません。",
+    "kj": "やまびこ旅館　部屋の案内\n| 部屋 | 部屋のお風呂 | 晩ご飯 | 一人の値段 |\n| うめ | あります | 部屋で | 12,000円 |\n| さくら | ありません | 部屋で | 9,000円 |\n| もみじ | あります | 一階のレストランで | 10,000円 |\n| ふじ | あります | 部屋で | 15,000円 |\n＊土曜日は一人2,000円高くなります。\n＊十一月の土曜日は、うめの部屋はもうありません。",
+    "tr": {
+      "zh": "山彦旅馆　房间介绍\n梅：房间里有浴室，晚饭在房间吃，每人12,000日元。\n樱：房间里没有浴室，晚饭在房间吃，每人9,000日元。\n红叶：房间里有浴室，晚饭在一楼餐厅吃，每人10,000日元。\n富士：房间里有浴室，晚饭在房间吃，每人15,000日元。\n＊星期六每人贵2,000日元。\n＊十一月的星期六，梅房间已经没有了。",
+      "en": "Yamabiko Inn — rooms\nUme: private bath; dinner in the room; ¥12,000 per person.\nSakura: no private bath; dinner in the room; ¥9,000 per person.\nMomiji: private bath; dinner in the first-floor restaurant; ¥10,000 per person.\nFuji: private bath; dinner in the room; ¥15,000 per person.\n* Saturdays cost ¥2,000 more per person.\n* Ume rooms are already gone for the Saturdays in November."
+    },
+    "questions": [
+      {
+        "q": "田中さんは どの へやに とまりますか。",
+        "options": ["ふじ", "うめ", "さくら", "もみじ"],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「十一月の 土曜日は、うめの へやは もう ありません」；「ふじ | あります | へやで」\n推理：要房间里有浴室、在房间吃晚饭。梅符合，但十一月星期六已经没有了；樱没有浴室；红叶在餐厅吃饭。剩下富士。",
+          "en": "Evidence: 「十一月の 土曜日は、うめの へやは もう ありません」; 「ふじ | あります | へやで」\nReasoning: He wants a private bath and dinner in the room. Ume fits but is gone for November Saturdays; Sakura has no bath; Momiji serves dinner in the restaurant. That leaves Fuji."
+        },
+        "wrong": [
+          null,
+          { "zh": "梅的条件都符合，但「十一月の 土曜日は、うめの へやは もう ありません」。", "en": "Ume fits, but 「十一月の 土曜日は、うめの へやは もう ありません」." },
+          { "zh": "樱房间「へやの おふろ」是「ありません」。", "en": "Sakura's 「へやの おふろ」 is 「ありません」." },
+          { "zh": "红叶的晚饭在「一かいの レストランで」，不是在房间。", "en": "At Momiji dinner is 「一かいの レストランで」, not in the room." }
+        ]
+      },
+      {
+        "q": "田中さんは 二人で いくら はらいますか。",
+        "options": ["34,000円", "30,000円", "32,000円", "17,000円"],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「ふじ…15,000円」；「土曜日は 一人 2,000円 高く なります」\n推理：富士每人15,000日元，星期六每人加2,000日元，是17,000日元。两个人：17,000×2＝34,000日元。",
+          "en": "Evidence: 「ふじ…15,000円」; 「土曜日は 一人 2,000円 高く なります」\nReasoning: Fuji is ¥15,000 per person, plus ¥2,000 each on Saturday = ¥17,000. For two: ¥17,000 × 2 = ¥34,000."
+        },
+        "wrong": [
+          null,
+          { "zh": "30,000日元没有加星期六的2,000日元。", "en": "¥30,000 leaves out the Saturday ¥2,000." },
+          { "zh": "星期六是「一人」加2,000日元，两个人要加4,000日元，不是2,000日元。", "en": "The Saturday extra is per person (「一人」), so ¥4,000 for two, not ¥2,000." },
+          { "zh": "17,000日元只是一个人的钱，要住的是两个人。", "en": "¥17,000 is for one person; two are staying." }
+        ]
+      }
+    ]
   }
 ]

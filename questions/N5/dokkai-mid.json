@@ -499,5 +499,281 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n5-dk-307",
+    "type": "mid",
+    "difficulty": 2,
+    "intro": "これは 日本語学校の 学生の ホアさんが 書いた さくぶんです。",
+    "passage": "町の なつまつり\n\n先週の 土曜日、アパートの となりの へやの 佐藤さんと いっしょに 町の なつまつりへ 行きました。佐藤さんは 七十さいの おばあさんで、いつも わたしに やさしいです。\nまつりの 前に、佐藤さんの うちで ゆかたを きました。はじめて ゆかたを きましたから、とても うれしかったです。\nまつりには 人が たくさん いました。わたしたちは まず やきそばを 食べました。それから、子どもたちの おどりを 見ました。よる 八時から はなびが ありましたが、七時半ごろ 雨が ふりましたから、はなびは 見ないで かえりました。\n来年は 佐藤さんと はなびを 見たいです。",
+    "kj": "町の夏祭り\n\n先週の土曜日、アパートの隣の部屋の佐藤さんと一緒に町の夏祭りへ行きました。佐藤さんは七十歳のおばあさんで、いつも私に優しいです。\n祭りの前に、佐藤さんのうちで浴衣を着ました。初めて浴衣を着ましたから、とてもうれしかったです。\n祭りには人がたくさんいました。私たちはまず焼きそばを食べました。それから、子どもたちの踊りを見ました。夜八時から花火がありましたが、七時半ごろ雨が降りましたから、花火は見ないで帰りました。\n来年は佐藤さんと花火を見たいです。",
+    "tr": {
+      "zh": "镇上的夏日祭\n\n上星期六，我和公寓隔壁的佐藤奶奶一起去了镇上的夏日祭。佐藤奶奶七十岁，一直对我很好。\n去祭典之前，我在佐藤奶奶家穿上了浴衣。第一次穿浴衣，我非常高兴。\n祭典上人很多。我们先吃了炒面，然后看了孩子们跳舞。晚上八点开始有烟花，但是七点半左右下雨了，所以我们没看烟花就回家了。\n明年我想和佐藤奶奶一起看烟花。",
+      "en": "The town's summer festival\n\nLast Saturday I went to the town's summer festival with Mrs Sato from the flat next door. She's a 70-year-old lady and is always kind to me.\nBefore the festival I put on a yukata at her house. It was my first time wearing one, so I was really happy.\nThere were lots of people at the festival. First we ate yakisoba. Then we watched the children dance. There were fireworks from 8 p.m., but it rained around 7:30, so we went home without seeing them.\nNext year I want to see the fireworks with Mrs Sato."
+    },
+    "questions": [
+      {
+        "q": "ホアさんたちは まつりで さいしょに 何を しましたか。",
+        "options": ["子どもたちの おどりを 見ました", "ゆかたを きました", "やきそばを 食べました", "はなびを 見ました"],
+        "okj": ["子どもたちの 踊りを 見ました", "浴衣を 着ました", "焼きそばを 食べました", "花火を 見ました"],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「わたしたちは まず やきそばを 食べました。それから、子どもたちの おどりを 見ました」\n推理：「まず」＝“首先”。到了祭典，她们先吃炒面，然后才看跳舞。\n容易错：穿浴衣是「まつりの 前に」在佐藤家做的，不是在祭典上。",
+          "en": "Evidence: 「わたしたちは まず やきそばを 食べました。それから、子どもたちの おどりを 見ました」\nReasoning: 「まず」 = \"first\". At the festival they ate yakisoba first, then watched the dancing.\nTrap: The yukata was put on 「まつりの 前に」 at Mrs Sato's house, not at the festival."
+        },
+        "wrong": [
+          { "zh": "看跳舞是「それから」，在吃炒面之后。", "en": "The dancing came 「それから」 — after the yakisoba." },
+          { "zh": "穿浴衣是「まつりの 前に」，在佐藤家，不是在祭典上做的。", "en": "The yukata was 「まつりの 前に」, at Mrs Sato's, not at the festival." },
+          null,
+          { "zh": "下雨了，「はなびは 見ないで かえりました」，没看烟花。", "en": "It rained and 「はなびは 見ないで かえりました」 — no fireworks." }
+        ]
+      },
+      {
+        "q": "ホアさんたちは どうして はなびを 見ませんでしたか。",
+        "options": ["はなびが なかったから", "佐藤さんが つかれたから", "雨が ふったから", "人が 多かったから"],
+        "okj": [null, "佐藤さんが 疲れたから", "雨が 降ったから", null],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「七時半ごろ 雨が ふりましたから、はなびは 見ないで かえりました」\n推理：「〜から」前面是原因：七点半左右下雨了，所以八点的烟花没看就回家了。",
+          "en": "Evidence: 「七時半ごろ 雨が ふりましたから、はなびは 見ないで かえりました」\nReasoning: The cause comes before 「〜から」: it rained around 7:30, so they went home before the 8 p.m. fireworks."
+        },
+        "wrong": [
+          { "zh": "烟花是有的：「よる 八時から はなびが ありました」。", "en": "There were fireworks: 「よる 八時から はなびが ありました」." },
+          { "zh": "文中没说佐藤奶奶累了。", "en": "Nothing says Mrs Sato was tired." },
+          null,
+          { "zh": "人多是事实，但回家的原因是下雨。", "en": "It was crowded, but they left because of the rain." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-308",
+    "type": "mid",
+    "difficulty": 2,
+    "intro": "これは 会社員の 木下さんが 書いた ぶんしょうです。",
+    "passage": "わたしの しゅみ\n\nわたしは 三十五さいの 会社員です。去年の 春から ピアノを ならって います。子どもの とき、ピアノを ひきたかったですが、うちに ピアノが ありませんでした。\n今は 毎週 土曜日の 午前、駅の ちかくの きょうしつへ 行きます。先生は わたしより わかい 女の 人ですが、とても 上手で、しんせつです。\nわたしの へやは せまいですが、小さい ピアノが あります。毎日、よる ねる 前に 三十分ぐらい れんしゅうします。会社で つかれた 日も、ピアノを ひく ときは たのしいです。\n来月、きょうしつで 小さい コンサートが あります。わたしも 一きょく ひきます。今は 少し しんぱいですが、がんばります。",
+    "kj": "私の趣味\n\n私は三十五歳の会社員です。去年の春からピアノを習っています。子どもの時、ピアノを弾きたかったですが、うちにピアノがありませんでした。\n今は毎週土曜日の午前、駅の近くの教室へ行きます。先生は私より若い女の人ですが、とても上手で、親切です。\n私の部屋は狭いですが、小さいピアノがあります。毎日、夜寝る前に三十分ぐらい練習します。会社で疲れた日も、ピアノを弾く時は楽しいです。\n来月、教室で小さいコンサートがあります。私も一曲弾きます。今は少し心配ですが、頑張ります。",
+    "tr": {
+      "zh": "我的爱好\n\n我是一名三十五岁的公司职员。从去年春天开始学钢琴。小时候我很想弹钢琴，但是家里没有钢琴。\n现在每周六上午，我去车站附近的教室。老师是比我年轻的女士，弹得非常好，人也很热心。\n我的房间很小，不过有一台小钢琴。每天晚上睡觉前我练三十分钟左右。就算是上班累了的日子，弹钢琴的时候也很开心。\n下个月教室里有一场小音乐会，我也要弹一首。现在有点担心，不过我会加油的。",
+      "en": "My hobby\n\nI'm a 35-year-old office worker. I've been taking piano lessons since last spring. As a child I wanted to play the piano, but we didn't have one at home.\nNow I go to a studio near the station every Saturday morning. My teacher is a woman younger than me, very skilled and kind.\nMy room is small, but I have a small piano. Every night before bed I practise for about thirty minutes. Even on days when work has worn me out, playing the piano is fun.\nNext month there's a small concert at the studio, and I'll play one piece. I'm a little nervous now, but I'll do my best."
+    },
+    "questions": [
+      {
+        "q": "木下さんは どうして 子どもの とき ピアノを ならいませんでしたか。",
+        "options": ["へやが せまかったから", "ピアノが すきじゃなかったから", "ちかくに きょうしつが なかったから", "うちに ピアノが なかったから"],
+        "okj": ["部屋が 狭かったから", "ピアノが 好きじゃなかったから", "近くに 教室が なかったから", null],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「子どもの とき、ピアノを ひきたかったですが、うちに ピアノが ありませんでした」\n推理：小时候想弹，但「が」后面说出了问题：家里没有钢琴。所以那时没学。",
+          "en": "Evidence: 「子どもの とき、ピアノを ひきたかったですが、うちに ピアノが ありませんでした」\nReasoning: He wanted to play, but after 「が」 comes the problem: there was no piano at home. That's why he didn't learn then."
+        },
+        "wrong": [
+          { "zh": "房间小说的是现在的房间，而且现在房间里有钢琴。", "en": "The small room is his room now, and it has a piano." },
+          { "zh": "他小时候「ひきたかった」，是想弹的。", "en": "As a child he 「ひきたかった」 — he wanted to play." },
+          { "zh": "文中没说小时候附近没有教室。", "en": "Nothing says there was no studio nearby back then." },
+          null
+        ]
+      },
+      {
+        "q": "木下さんは うちで いつ ピアノを ひきますか。",
+        "options": ["毎日 あさ 会社へ 行く 前", "毎週 土曜日の 午前", "毎日 よる ねる 前", "会社から かえって すぐ"],
+        "okj": [null, null, "毎日 夜 寝る 前", "会社から 帰って すぐ"],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「毎日、よる ねる 前に 三十分ぐらい れんしゅうします」\n推理：问的是在家里练琴的时间：每天晚上睡觉前。\n容易错：星期六上午是去车站附近的教室上课，不是在家。",
+          "en": "Evidence: 「毎日、よる ねる 前に 三十分ぐらい れんしゅうします」\nReasoning: The question is about practice at home: every night before bed.\nTrap: Saturday morning is the lesson at the studio near the station, not at home."
+        },
+        "wrong": [
+          { "zh": "文中说的是晚上睡觉前，不是早上。", "en": "It's at night before bed, not in the morning." },
+          { "zh": "星期六上午是去「駅の ちかくの きょうしつ」，不是在家。", "en": "Saturday morning is at 「駅の ちかくの きょうしつ」, not at home." },
+          null,
+          { "zh": "文中说的是「ねる 前に」，不是一下班回来就弹。", "en": "It's 「ねる 前に」, not right after getting home." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-309",
+    "type": "mid",
+    "difficulty": 3,
+    "intro": "グエンさんは 日本語学校の 先生に メールを 書きました。",
+    "passage": "高橋先生\n\nおひさしぶりです。グエンです。わたしは 四月から よこはまの 会社で はたらいて います。\n会社は 九時からですが、わたしは 毎朝 七時の 電車に のります。八時の 電車は 人が とても 多いですから。会社には 八時ごろ つきます。みんなが 来る 前に、日本語の しんぶんを 読みます。\nしごとは まだ むずかしいです。電話が いちばん たいへんです。電話の 日本語は はやくて、よく 分かりません。でも、となりの せきの 木村さんに よく 聞きます。木村さんは いつも ゆっくり こたえます。\nなつやすみに 学校へ あそびに 行きたいです。その ときは よろしく おねがいします。\n\nグエン",
+    "kj": "高橋先生\n\nお久しぶりです。グエンです。私は四月から横浜の会社で働いています。\n会社は九時からですが、私は毎朝七時の電車に乗ります。八時の電車は人がとても多いですから。会社には八時ごろ着きます。みんなが来る前に、日本語の新聞を読みます。\n仕事はまだ難しいです。電話が一番大変です。電話の日本語は速くて、よく分かりません。でも、隣の席の木村さんによく聞きます。木村さんはいつもゆっくり答えます。\n夏休みに学校へ遊びに行きたいです。その時はよろしくお願いします。\n\nグエン",
+    "tr": {
+      "zh": "高桥老师：\n\n好久不见，我是阮。我从四月起在横滨的公司工作。\n公司九点上班，不过我每天早上坐七点的电车，因为八点的电车人非常多。我八点左右到公司，在大家来之前看日语报纸。\n工作还是很难，最辛苦的是电话。电话里的日语说得很快，我常常听不太懂。不过我经常问旁边座位的木村先生，他总是慢慢地回答我。\n暑假我想回学校看看，到时候请多关照。\n\n阮",
+      "en": "Dear Ms Takahashi,\n\nIt's been a while — this is Nguyen. Since April I've been working at a company in Yokohama.\nWork starts at nine, but I take the seven o'clock train every morning, because the eight o'clock train is very crowded. I get to the office around eight, and I read a Japanese newspaper before everyone else arrives.\nThe work is still hard. The phone is the hardest part: phone Japanese is fast and I often don't understand it. But I often ask Mr Kimura at the next desk, and he always answers slowly.\nI'd like to visit the school in the summer holidays. I look forward to seeing you then.\n\nNguyen"
+    },
+    "questions": [
+      {
+        "q": "グエンさんは どうして 毎朝 七時の 電車に のりますか。",
+        "options": ["みんなが 来る 前に しんぶんを 読みたいから", "会社が 七時半からだから", "八時の 電車は 人が 多いから", "木村さんと いっしょに 会社へ 行くから"],
+        "okj": ["みんなが 来る 前に 新聞を 読みたいから", null, null, "木村さんと 一緒に 会社へ 行くから"],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「毎朝 七時の 電車に のります。八時の 電車は 人が とても 多いですから」\n推理：后一句句尾的「から」说明前一句的原因：八点的电车人太多，所以坐七点的。\n容易错：看报纸是早到公司以后做的事，文中没有把它当作原因。",
+          "en": "Evidence: 「毎朝 七時の 電車に のります。八時の 電車は 人が とても 多いですから」\nReasoning: The 「から」 ending the second sentence gives the reason for the first: the eight o'clock train is too crowded, so he takes the seven o'clock one.\nTrap: Reading the paper is what he does after arriving early; the text doesn't give it as the reason."
+        },
+        "wrong": [
+          { "zh": "看报纸是早到以后做的事；坐早班车的原因是「八時の 電車は 人が とても 多い」。", "en": "Reading is what he does once there; the stated reason is 「八時の 電車は 人が とても 多い」." },
+          { "zh": "「会社は 九時からです」，不是七点半。", "en": "「会社は 九時からです」 — work starts at nine, not 7:30." },
+          null,
+          { "zh": "木村先生是邻座同事，文中没说一起上班。", "en": "Mr Kimura sits next to him at work; nothing says they commute together." }
+        ]
+      },
+      {
+        "q": "グエンさんは しごとで 何が いちばん たいへんですか。",
+        "options": ["日本語の しんぶんを 読む こと", "電話で 話す こと", "木村さんに 聞く こと", "あさ はやく 会社へ 行く こと"],
+        "okj": ["日本語の 新聞を 読む こと", null, null, "朝 早く 会社へ 行く こと"],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「電話が いちばん たいへんです。電話の 日本語は はやくて、よく 分かりません」\n推理：文中直接说电话最辛苦，因为电话里的日语快，听不懂。",
+          "en": "Evidence: 「電話が いちばん たいへんです。電話の 日本語は はやくて、よく 分かりません」\nReasoning: He says outright that the phone is the hardest part, because phone Japanese is fast and hard to follow."
+        },
+        "wrong": [
+          { "zh": "看报纸是他每天早上自己做的事，没说辛苦。", "en": "Reading the paper is his own morning habit; he doesn't call it hard." },
+          null,
+          { "zh": "问木村先生是解决办法，木村先生总是慢慢回答。", "en": "Asking Mr Kimura is his solution; Kimura always answers slowly." },
+          { "zh": "早去是为了避开人多的电车，文中没说这很辛苦。", "en": "Going early avoids the crowded train; he never says it is hard." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-310",
+    "type": "mid",
+    "difficulty": 2,
+    "intro": "これは りゅうがくせいの サラさんが 書いた さくぶんです。",
+    "passage": "かぜを ひいた 日\n\n先週の 水曜日、わたしは かぜを ひいて、学校を 休みました。あさから 頭が いたくて、ねつも ありました。\nいっしょに すんで いる エレナさんは、学校へ 行く 前に、くすりと 水を わたしの へやに もって きました。\nわたしは 一日中 ねて いました。夕方、エレナさんは 学校から かえって、おかゆを つくりました。エレナさんの 国の りょうりじゃ ありませんが、本を 見て つくりました。とても おいしかったです。\nつぎの 日、ねつは ありませんでしたが、まだ 少し 頭が いたかったですから、もう 一日 休みました。その つぎの 日から 学校へ 行きました。\nエレナさん、ほんとうに ありがとう。",
+    "kj": "風邪をひいた日\n\n先週の水曜日、私は風邪をひいて、学校を休みました。朝から頭が痛くて、熱もありました。\n一緒に住んでいるエレナさんは、学校へ行く前に、薬と水を私の部屋に持ってきました。\n私は一日中寝ていました。夕方、エレナさんは学校から帰って、おかゆを作りました。エレナさんの国の料理じゃありませんが、本を見て作りました。とてもおいしかったです。\n次の日、熱はありませんでしたが、まだ少し頭が痛かったですから、もう一日休みました。その次の日から学校へ行きました。\nエレナさん、本当にありがとう。",
+    "tr": {
+      "zh": "感冒的那天\n\n上星期三我感冒了，向学校请了假。从早上起就头疼，还发烧。\n和我一起住的叶莲娜去上学之前，把药和水拿到了我房间。\n我一整天都在睡觉。傍晚叶莲娜放学回来，给我煮了粥。那不是她家乡的菜，她是看着书做的，非常好吃。\n第二天不发烧了，但头还有点疼，所以又休息了一天。再下一天开始我去上学了。\n叶莲娜，真的谢谢你。",
+      "en": "The day I caught a cold\n\nLast Wednesday I caught a cold and stayed home from school. I'd had a headache since the morning, and a fever too.\nElena, who lives with me, brought medicine and water to my room before she left for school.\nI slept all day. In the evening Elena came home from school and made rice porridge. It isn't a dish from her country, but she made it following a book. It was delicious.\nThe next day I had no fever, but my head still hurt a little, so I rested one more day. I went back to school the day after that.\nElena, thank you so much."
+    },
+    "questions": [
+      {
+        "q": "エレナさんは 何を しましたか。",
+        "options": ["学校を 休んで、一日中 サラさんの へやに いました", "くすりを 買いに 行って、おかゆを つくりました", "くすりと 水を もって きて、おかゆを つくりました", "くすりと 水を もって きて、国の りょうりを つくりました"],
+        "okj": ["学校を 休んで、一日中 サラさんの 部屋に いました", "薬を 買いに 行って、おかゆを 作りました", "薬と 水を 持って きて、おかゆを 作りました", "薬と 水を 持って きて、国の 料理を 作りました"],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「学校へ 行く 前に、くすりと 水を わたしの へやに もって きました」；「夕方…おかゆを つくりました」\n推理：叶莲娜早上上学前送来药和水，傍晚回来煮了粥。粥不是她家乡的菜。",
+          "en": "Evidence: 「学校へ 行く 前に、くすりと 水を わたしの へやに もって きました」; 「夕方…おかゆを つくりました」\nReasoning: Elena brought medicine and water before school and made porridge in the evening. The porridge isn't from her country."
+        },
+        "wrong": [
+          { "zh": "叶莲娜去上学了，傍晚「学校から かえって」。", "en": "Elena went to school and came back in the evening, 「学校から かえって」." },
+          { "zh": "药是她「もって きました」拿来的，文中没说去买药。", "en": "She 「もって きました」 the medicine; no trip to buy it is mentioned." },
+          null,
+          { "zh": "粥「エレナさんの 国の りょうりじゃ ありません」。", "en": "The porridge 「エレナさんの 国の りょうりじゃ ありません」." }
+        ]
+      },
+      {
+        "q": "サラさんは 何曜日から また 学校へ 行きましたか。",
+        "difficulty": 3,
+        "options": ["金曜日", "木曜日", "水曜日", "月曜日"],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「先週の 水曜日…学校を 休みました」；「つぎの 日…もう 一日 休みました。その つぎの 日から 学校へ 行きました」\n推理：星期三感冒请假；第二天星期四又休息一天；再下一天，也就是星期五开始上学。",
+          "en": "Evidence: 「先週の 水曜日…学校を 休みました」; 「つぎの 日…もう 一日 休みました。その つぎの 日から 学校へ 行きました」\nReasoning: Off sick on Wednesday; the next day, Thursday, she rested one more day; she went back the day after that — Friday."
+        },
+        "wrong": [
+          null,
+          { "zh": "星期四不发烧了，但头还疼，「もう 一日 休みました」。", "en": "On Thursday she had no fever but still 「もう 一日 休みました」." },
+          { "zh": "星期三是感冒请假的那天。", "en": "Wednesday is the day she got sick and stayed home." },
+          { "zh": "只休息了星期三、星期四两天，星期五就去了，不用等到星期一。", "en": "She missed only Wednesday and Thursday and went back on Friday, not Monday." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-311",
+    "type": "mid",
+    "difficulty": 3,
+    "intro": "これは 会社員の マリアさんが 書いた さくぶんです。",
+    "passage": "はじめての おんせん\n\n先月、会社の 人たちと はこねの おんせんへ 行きました。わたしの 国には おんせんが ありませんから、早く 行きたかったです。\nでも、日本の おんせんでは、みんな ふくを ぬいで、いっしょに 入ります。はじめは それが 少し いやでした。\nそれから、おんせんに 入る 前に、からだを あらわなければ なりません。タオルを おゆに 入れては いけません。山本さんが ぜんぶ おしえました。\nおんせんの おゆは あつかったですが、外の 山が とても きれいでした。よるは ホテルで 日本の りょうりを 食べて、みんなで たくさん 話しました。\n今は おんせんが だいすきです。こんどは ふゆに 行って、ゆきを 見ながら おゆに 入りたいです。",
+    "kj": "初めての温泉\n\n先月、会社の人たちと箱根の温泉へ行きました。私の国には温泉がありませんから、早く行きたかったです。\nでも、日本の温泉では、みんな服を脱いで、一緒に入ります。初めはそれが少し嫌でした。\nそれから、温泉に入る前に、体を洗わなければなりません。タオルをお湯に入れてはいけません。山本さんが全部教えました。\n温泉のお湯は熱かったですが、外の山がとてもきれいでした。夜はホテルで日本の料理を食べて、みんなでたくさん話しました。\n今は温泉が大好きです。今度は冬に行って、雪を見ながらお湯に入りたいです。",
+    "tr": {
+      "zh": "第一次泡温泉\n\n上个月，我和公司的同事去了箱根的温泉。我的国家没有温泉，所以我很想快点去。\n可是在日本的温泉，大家都脱掉衣服一起泡。一开始我有点不愿意。\n还有，进温泉之前必须洗身体，毛巾不能放进热水里。这些都是山本先生教我的。\n温泉的水很烫，不过外面的山非常美。晚上在酒店吃了日本菜，大家聊了很多。\n现在我非常喜欢温泉。下次我想冬天去，一边看雪一边泡温泉。",
+      "en": "My first hot spring\n\nLast month I went to a hot spring in Hakone with people from work. There are no hot springs in my country, so I couldn't wait to go.\nBut at Japanese hot springs everyone takes off their clothes and bathes together. At first I didn't much like that.\nAlso, you have to wash your body before getting in, and you mustn't put your towel in the water. Mr Yamamoto taught me all this.\nThe water was hot, but the mountains outside were beautiful. In the evening we ate Japanese food at the hotel and talked a lot.\nNow I love hot springs. Next time I want to go in winter and sit in the water watching the snow."
+    },
+    "questions": [
+      {
+        "q": "「それ」は どんな ことですか。",
+        "options": ["みんな ふくを ぬいで、いっしょに おんせんに 入る こと", "おんせんに 入る 前に、からだを あらう こと", "おんせんの あつい おゆに 入る こと", "タオルを おゆに 入れては いけない こと"],
+        "okj": ["みんな 服を 脱いで、一緒に 温泉に 入る こと", "温泉に 入る 前に、体を 洗う こと", "温泉の 熱い お湯に 入る こと", "タオルを お湯に 入れては いけない こと"],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「みんな ふくを ぬいで、いっしょに 入ります。はじめは それが 少し いやでした」\n推理：「それ」指紧挨着的前一句：大家脱掉衣服一起泡温泉。玛丽亚一开始不太愿意的是这件事。",
+          "en": "Evidence: 「みんな ふくを ぬいで、いっしょに 入ります。はじめは それが 少し いやでした」\nReasoning: 「それ」 points to the sentence right before: everyone undressing and bathing together. That is what Maria didn't like at first."
+        },
+        "wrong": [
+          null,
+          { "zh": "洗身体是「それから」后面才说的规矩，在「それ」之后。", "en": "Washing first is a rule given later, after 「それから」." },
+          { "zh": "水烫是后面一段的内容，「それ」指的是前一句。", "en": "The hot water comes in a later paragraph; 「それ」 points back to the sentence before." },
+          { "zh": "毛巾的规矩是山本先生教的另一件事，不是「それ」。", "en": "The towel rule is another thing Mr Yamamoto taught, not 「それ」." }
+        ]
+      },
+      {
+        "q": "マリアさんは こんど どう したいと 言って いますか。",
+        "options": ["国で 友だちと おんせんに 入りたい", "なつに 山を 見ながら おんせんに 入りたい", "ふゆに ゆきを 見ながら おんせんに 入りたい", "会社の 人たちと 日本の りょうりを つくりたい"],
+        "okj": ["国で 友達と 温泉に 入りたい", "夏に 山を 見ながら 温泉に 入りたい", "冬に 雪を 見ながら 温泉に 入りたい", "会社の 人たちと 日本の 料理を 作りたい"],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「こんどは ふゆに 行って、ゆきを 見ながら おゆに 入りたいです」\n推理：「こんどは」＝“下次”。她想ふゆ天去，一边看雪一边泡温泉。",
+          "en": "Evidence: 「こんどは ふゆに 行って、ゆきを 見ながら おゆに 入りたいです」\nReasoning: 「こんどは」 = \"next time\". She wants to go in winter and bathe while watching the snow."
+        },
+        "wrong": [
+          { "zh": "「わたしの 国には おんせんが ありません」，在自己国家泡不了。", "en": "「わたしの 国には おんせんが ありません」 — none back home." },
+          { "zh": "看着山泡温泉是这次的经历；下次想的是ふゆ天看雪。", "en": "Looking at the mountains was this trip; next time she wants winter and snow." },
+          null,
+          { "zh": "日本菜是这次在酒店吃的，没说想自己做。", "en": "Japanese food was eaten at the hotel this time; she says nothing about cooking it." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-312",
+    "type": "mid",
+    "difficulty": 3,
+    "intro": "これは りゅうがくせいの ハンさんが 書いた さくぶんです。",
+    "passage": "としょかんの 先生\n\nわたしは 毎週 日曜日、うちの ちかくの としょかんで 日本語を べんきょうします。半年前、そこで 一人の おじいさんに 会いました。\nその 日、わたしは かんじの しゅくだいが 分かりませんでした。となりの せきの おじいさんが 「どう しましたか」と 聞きました。わたしは しゅくだいを 見せました。おじいさんは かんじの いみを ゆっくり おしえました。\nおじいさんは 前は 高校の 先生でしたが、今は もう はたらいて いません。その 日から、わたしたちは 毎週 日曜日に としょかんで 会って、いっしょに べんきょうして います。わたしは 日本語を、おじいさんは わたしの 国の ことばを べんきょうします。\n先月、おじいさんは かぜで 二かい としょかんへ 来ませんでした。わたしは とても さびしかったです。今は げんきに なって、また 来て います。",
+    "kj": "図書館の先生\n\n私は毎週日曜日、うちの近くの図書館で日本語を勉強します。半年前、そこで一人のおじいさんに会いました。\nその日、私は漢字の宿題が分かりませんでした。隣の席のおじいさんが「どうしましたか」と聞きました。私は宿題を見せました。おじいさんは漢字の意味をゆっくり教えました。\nおじいさんは前は高校の先生でしたが、今はもう働いていません。その日から、私たちは毎週日曜日に図書館で会って、一緒に勉強しています。私は日本語を、おじいさんは私の国の言葉を勉強します。\n先月、おじいさんは風邪で二回図書館へ来ませんでした。私はとても寂しかったです。今は元気になって、また来ています。",
+    "tr": {
+      "zh": "图书馆里的老师\n\n我每周日在家附近的图书馆学日语。半年前，我在那里遇到了一位老爷爷。\n那天我的汉字作业不会做。旁边座位的老爷爷问我：“怎么了？”我把作业给他看，他慢慢地给我讲了汉字的意思。\n老爷爷以前是高中老师，现在已经不工作了。从那天起，我们每周日都在图书馆见面，一起学习。我学日语，老爷爷学我们国家的语言。\n上个月，老爷爷因为感冒有两次没来图书馆。我非常寂寞。现在他身体好了，又来了。",
+      "en": "My teacher at the library\n\nEvery Sunday I study Japanese at the library near my home. Six months ago I met an old man there.\nThat day I couldn't do my kanji homework. The old man in the next seat asked, \"What's the matter?\" I showed him my homework, and he slowly explained what the kanji meant.\nHe used to be a high-school teacher but doesn't work any more. Since that day we've met at the library every Sunday and studied together: I study Japanese, and he studies my country's language.\nLast month he had a cold and didn't come to the library twice. I felt very lonely. Now he's well again and coming back."
+    },
+    "questions": [
+      {
+        "q": "おじいさんは どんな 人ですか。",
+        "options": ["ハンさんに 国の ことばを おしえて いる 人", "今も 高校で 日本語を おしえて いる 人", "としょかんで はたらいて いる 人", "前は 高校の 先生で、今は はたらいて いない 人"],
+        "okj": ["ハンさんに 国の 言葉を 教えて いる 人", "今も 高校で 日本語を 教えて いる 人", "図書館で 働いて いる 人", "前は 高校の 先生で、今は 働いて いない 人"],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「おじいさんは 前は 高校の 先生でしたが、今は もう はたらいて いません」\n推理：「前は…でしたが、今は…」：以前是高中老师，现在已经不工作了。",
+          "en": "Evidence: 「おじいさんは 前は 高校の 先生でしたが、今は もう はたらいて いません」\nReasoning: 「前は…でしたが、今は…」: he used to teach high school and no longer works."
+        },
+        "wrong": [
+          { "zh": "方向反了：是老爷爷「わたしの 国の ことばを べんきょうします」。", "en": "It's the reverse: he 「わたしの 国の ことばを べんきょうします」 — he learns it." },
+          { "zh": "高中老师是「前は」，现在「もう はたらいて いません」。", "en": "Teaching was 「前は」; now he 「もう はたらいて いません」." },
+          { "zh": "他只是来图书馆学习的，文中说他现在不工作。", "en": "He comes to the library to study; the text says he no longer works." },
+          null
+        ]
+      },
+      {
+        "q": "ハンさんは どうして さびしかったですか。",
+        "options": ["おじいさんが 国へ かえったから", "おじいさんが としょかんへ 来なかったから", "ハンさんが かぜで としょかんへ 行かなかったから", "かんじの しゅくだいが 分からなかったから"],
+        "okj": ["おじいさんが 国へ 帰ったから", "おじいさんが 図書館へ 来なかったから", "ハンさんが 風邪で 図書館へ 行かなかったから", "漢字の 宿題が 分からなかったから"],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「おじいさんは かぜで 二かい としょかんへ 来ませんでした。わたしは とても さびしかったです」\n推理：寂寞的原因在前一句：老爷爷感冒了，有两次没来图书馆。",
+          "en": "Evidence: 「おじいさんは かぜで 二かい としょかんへ 来ませんでした。わたしは とても さびしかったです」\nReasoning: The cause is the sentence before: the old man had a cold and missed the library twice."
+        },
+        "wrong": [
+          { "zh": "文中没说老爷爷回国，他是因为感冒没来，现在又来了。", "en": "He didn't go anywhere; he had a cold and is back now." },
+          null,
+          { "zh": "感冒的是老爷爷，不是韩同学。", "en": "It was the old man who had the cold, not Han." },
+          { "zh": "作业不会做是半年前认识老爷爷那天的事，和寂寞无关。", "en": "The homework trouble was the day they met, six months ago — not why he was lonely." }
+        ]
+      }
+    ]
   }
 ]

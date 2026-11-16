@@ -826,5 +826,420 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n2-dk-221",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、マンションの掲示板に貼られたお知らせです。",
+    "passage": "居住者の皆様へ\n\n宅配ボックスのご利用について\n\n最近、宅配ボックスに荷物が長期間入ったままになっているケースが増えております。ボックスの数には限りがあり、他の方が荷物を受け取れなくなりますので、荷物が届いた場合は、48時間以内にお取り出しください。\nなお、旅行などで長く留守にされる場合は、ボックスをご利用にならず、配達業者に再配達の日時をご指定くださいますようお願いいたします。3日以上取り出されていない荷物については、管理人室からご連絡いたします。\n\nさくらハイツ管理組合",
+    "tr": {
+      "zh": "致各位住户：\n\n关于快递柜的使用\n\n最近，包裹长时间放在快递柜里的情况越来越多。快递柜数量有限，会导致其他住户无法收取包裹，因此包裹送到后，请在48小时内取出。\n另外，因旅行等原因长时间不在家时，请不要使用快递柜，而是向快递公司指定再次配送的日期和时间。对于3天以上未取出的包裹，管理员室会与您联系。\n\n樱花公寓管理委员会",
+      "en": "To all residents:\n\nOn using the parcel lockers\n\nRecently there have been more cases of parcels being left in the parcel lockers for long periods. The number of lockers is limited and other residents become unable to receive their parcels, so when a parcel arrives, please take it out within 48 hours.\nAlso, if you will be away for a long time, for example on a trip, please do not use the lockers but specify a redelivery date and time with the delivery company. For parcels not collected for three days or more, the caretaker's office will contact you.\n\nSakura Heights Residents' Association"
+    },
+    "questions": [
+      {
+        "q": "このお知らせによると、一週間ほど旅行で家を空ける人は、荷物についてどうすればよいか。",
+        "options": [
+          "帰宅してから48時間以内に、ボックスから荷物を取り出す。",
+          "出かける前に、管理人室に荷物を預かってくれるよう頼む。",
+          "ボックスは使わずに、再配達してもらう日時を指定する。",
+          "3日以上たった荷物について、管理人室に連絡しておく。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「旅行などで長く留守にされる場合は、ボックスをご利用にならず、配達業者に再配達の日時をご指定くださいますようお願いいたします」。\n推理：题目问的是长时间不在家的人。「なお」后面专门讲这种情况：不用快递柜，而是向快递公司指定再配送时间，与选项一致。\n容易错：48小时的规定是给平时收包裹的人的。",
+          "en": "Evidence: 「旅行などで長く留守にされる場合は、ボックスをご利用にならず、配達業者に再配達の日時をご指定くださいますようお願いいたします」.\nReasoning: The stem is about someone away for a long time. The sentence after 「なお」 covers exactly that case: don't use the locker, set a redelivery time with the courier.\nTrap: The 48-hour rule is for ordinary deliveries."
+        },
+        "wrong": [
+          {
+            "zh": "48小时内取出是包裹送到后的一般规定；长期不在家的人「ボックスをご利用にならず」，根本不该用快递柜。",
+            "en": "The 48-hour rule is the general one; people away for long should not use the locker at all (「ボックスをご利用にならず」)."
+          },
+          {
+            "zh": "通知没有说管理员室代为保管包裹，管理员室只负责联系三天以上没取的人。",
+            "en": "The notice never says the office keeps parcels; it only contacts people whose parcels sit for three days."
+          },
+          null,
+          {
+            "zh": "是「管理人室からご連絡いたします」，由管理员室联系住户，不是住户去联系。",
+            "en": "「管理人室からご連絡いたします」: the office contacts residents, not the other way round."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-222",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "料理の本には、塩小さじ一杯、しょうゆ大さじ二杯などと、調味料の量が細かく書いてある。料理を始めたばかりのころ、私はそれを少しも疑わずに、きっちり量って作っていた。ところが、同じように作っても、おいしくできる日とそうでない日がある。野菜の大きさや水分は毎回違うのだから、考えてみれば当然のことだ。今は、本に書かれた分量はあくまで出発点だと考えている。最後に必ず味見をして、足りなければ足す。料理の腕を上げるのは、正確に量ることより、自分の舌で確かめる習慣なのだと思う。",
+    "tr": {
+      "zh": "菜谱上细致地写着调味料的用量，比如盐一小勺、酱油两大勺。刚开始做饭的时候，我对此毫不怀疑，严格地称量着做。可是，即使用同样的方法做，也有做得好吃的日子和做得不好吃的日子。蔬菜的大小和水分每次都不一样，仔细想想这也是理所当然的。现在我认为，书上写的用量终究只是一个起点。最后一定尝一尝味道，不够就再加。我觉得，让厨艺提高的，与其说是精确称量，不如说是用自己的舌头确认的习惯。",
+      "en": "Cookbooks give the amounts of seasoning in detail: a teaspoon of salt, two tablespoons of soy sauce and so on. When I had just started cooking, I never doubted them and measured everything exactly. Yet even cooking the same way, some days the dish turned out delicious and some days it didn't. Since the size and water content of vegetables differ every time, that is only natural when you think about it. Now I see the amounts in the book as no more than a starting point. At the end I always taste, and if something is lacking, I add it. I think what improves your cooking is not measuring precisely so much as the habit of checking with your own tongue."
+    },
+    "questions": [
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "options": [
+          "本の分量を目安にして、味見をしながら調整するのがよい。",
+          "料理が上達するには、調味料を正確に量ることが大切だ。",
+          "本に書かれた分量は信用できないので、使わないほうがよい。",
+          "野菜の大きさをそろえれば、毎回同じ味に仕上げられる。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「本に書かれた分量はあくまで出発点だと考えている。最後に必ず味見をして、足りなければ足す」。\n推理：作者仍以书上的用量开始做（「出発点」＝选项的「目安」），再靠尝味道来补，所以是“以分量为参考，边尝边调”。",
+          "en": "Evidence: 「本に書かれた分量はあくまで出発点だと考えている。最後に必ず味見をして、足りなければ足す」.\nReasoning: The writer still starts from the book's amounts (「出発点」 = the option's 「目安」) and then adjusts by tasting."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "作者说的是「正確に量ることより、自分の舌で確かめる習慣」，精确称量反而不是关键。",
+            "en": "The writer says 「正確に量ることより、自分の舌で確かめる習慣」: exact measuring is not the key."
+          },
+          {
+            "zh": "作者把书上的用量当作「出発点」，仍然在用，并没有说不能信、不要用。",
+            "en": "The book's amounts are a 「出発点」 the writer still uses, not something to discard."
+          },
+          {
+            "zh": "蔬菜大小不同只是用来解释味道为何每次不同，作者没有提出把蔬菜切成一样大。",
+            "en": "Vegetable size only explains why results vary; the writer never suggests making them uniform."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-223",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、取引先から届いたメールです。",
+    "passage": "株式会社ひかり企画　営業部　中村様\n\nいつもお世話になっております。東和電機の石田です。\n来週15日（木）14時からの打ち合わせについて、ご相談があります。当日は御社に伺う予定でしたが、弊社の別の会議が長引く可能性が出てまいりました。つきましては、時間は変えずに、オンラインでの打ち合わせに切り替えさせていただけないでしょうか。資料は前日までにメールでお送りいたします。\nご了承いただけましたら、こちらから接続先をお知らせいたします。\n\n東和電機　石田",
+    "tr": {
+      "zh": "光企划株式会社 营业部 中村先生：\n\n一直承蒙关照。我是东和电机的石田。\n关于下周15日（周四）14点开始的商谈，想和您商量一下。当天我们原定去贵公司拜访，但我公司另一个会议有可能拖长。因此，时间不变，能否改为线上商谈？资料会在前一天之前通过邮件发送。\n如果您同意，我们这边会告知会议链接。\n\n东和电机 石田",
+      "en": "To Mr Nakamura, Sales, Hikari Planning Co., Ltd.:\n\nThank you as always for your support. This is Ishida from Towa Electric.\nI'd like to consult you about our meeting next Thursday the 15th from 2 p.m. We had planned to visit your office that day, but it now looks possible that another meeting at our company will run over. Would it therefore be possible, keeping the same time, to switch to an online meeting? We will email the materials by the day before.\nIf you agree, we will send you the connection details.\n\nIshida, Towa Electric"
+    },
+    "questions": [
+      {
+        "q": "このメールで、石田さんが中村さんに頼んでいることは何か。",
+        "options": [
+          "打ち合わせを、15日の別の時間に変えてほしい。",
+          "打ち合わせの資料を、前日までに送ってほしい。",
+          "オンラインの接続先を、石田さんに知らせてほしい。",
+          "打ち合わせを、会わずにオンラインで行わせてほしい。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「時間は変えずに、オンラインでの打ち合わせに切り替えさせていただけないでしょうか」。\n推理：原定石田去对方公司（「御社に伺う予定」），现在用「〜させていただけないでしょうか」请求改为线上，也就是不见面、在网上开。",
+          "en": "Evidence: 「時間は変えずに、オンラインでの打ち合わせに切り替えさせていただけないでしょうか」.\nReasoning: Ishida was going to visit (「御社に伺う予定」); now he asks with 「〜させていただけないでしょうか」 to switch to online, i.e. not meeting in person."
+        },
+        "wrong": [
+          {
+            "zh": "邮件明确说「時間は変えずに」，时间不变。",
+            "en": "The email says 「時間は変えずに」: the time stays."
+          },
+          {
+            "zh": "资料是石田「お送りいたします」，由石田发给中村。",
+            "en": "Ishida is the one sending the materials (「お送りいたします」)."
+          },
+          {
+            "zh": "是「こちらから接続先をお知らせいたします」，由石田告知中村。",
+            "en": "「こちらから接続先をお知らせいたします」: Ishida will send the link."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-224",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "観葉植物を枯らしてしまう人の多くは、世話を怠った人ではなく、世話をしすぎた人だという。毎日のように水をやると、土がいつも湿った状態になり、根が呼吸できずに傷んでしまうのだ。土の表面が乾くまで待ち、それから水をやる。それだけで、植物はずっと元気に育つ。部下や子どもに対しても、同じことが言えるのではないだろうか。心配だからと次々に手を出すのは、かえって相手が自分の力で伸びる機会を奪うことになる。見守って待つことも、立派な世話なのである。",
+    "tr": {
+      "zh": "据说，把观叶植物养死的人，大多不是疏于照料的人，而是照料过度的人。几乎每天浇水的话，土总是湿的，根无法呼吸就会受损。等到土的表面干了再浇水，仅仅这样，植物就会长得精神得多。对下属和孩子，不也是同样的道理吗？因为担心就接二连三地插手，反而会夺走对方靠自己的力量成长的机会。守望着等待，也是一种了不起的照料。",
+      "en": "Most people who let their houseplants die, it is said, are not those who neglected them but those who looked after them too much. If you water almost every day, the soil stays damp all the time and the roots can't breathe and are damaged. Wait until the surface of the soil is dry, then water. That alone makes the plant grow far healthier. Couldn't the same be said of subordinates and children? Stepping in again and again out of worry ends up robbing them of the chance to grow by their own efforts. Watching over them and waiting is also a fine kind of care."
+    },
+    "questions": [
+      {
+        "q": "筆者が最も言いたいことは何か。",
+        "options": [
+          "観葉植物を元気に育てるには、毎日の世話を欠かさないことが大切だ。",
+          "相手のためを思うなら、手を出しすぎずに見守ることも必要だ。",
+          "部下や子どもが困っていたら、心配なのですぐに手を貸すべきだ。",
+          "植物を枯らしてしまう人の多くは、世話の時間が足りない人だ。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「心配だからと次々に手を出すのは、かえって相手が自分の力で伸びる機会を奪うことになる。見守って待つことも、立派な世話なのである」。\n推理：浇水的例子是铺垫，「同じことが言えるのではないだろうか」之后才是主张：对下属和孩子也不要过度插手，守望等待也是照料。",
+          "en": "Evidence: 「心配だからと次々に手を出すのは、かえって相手が自分の力で伸びる機会を奪うことになる。見守って待つことも、立派な世話なのである」.\nReasoning: Watering is the lead-in; after 「同じことが言えるのではないだろうか」 comes the point: don't step in too much with staff or children; waiting is care too."
+        },
+        "wrong": [
+          {
+            "zh": "文中说几乎每天浇水反而让根「傷んでしまう」，与“每天不缺照料”相反。",
+            "en": "Daily watering is exactly what 「傷んでしまう」 the roots; the opposite of this option."
+          },
+          null,
+          {
+            "zh": "作者认为因担心而接连插手会「機会を奪う」，与此相反。",
+            "en": "The writer says stepping in out of worry 「機会を奪う」; the opposite."
+          },
+          {
+            "zh": "开头说的是「世話を怠った人ではなく、世話をしすぎた人」，问题在照料过度。",
+            "en": "The opening says 「世話を怠った人ではなく、世話をしすぎた人」: the problem is too much care."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-225",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、会社の社内掲示板に載ったお知らせです。",
+    "passage": "社員各位\n\n会議室の予約について\n\n総務部より、会議室の予約方法の変更についてお知らせします。\n現在、予約されたまま使われない会議室が多く、本当に必要な人が使えないという声が寄せられています。そこで、11月1日から、予約した時刻を15分過ぎても利用の開始が確認されない場合、予約は自動的に取り消されることになりました。利用を始めるときは、会議室の入口にある端末に社員証をかざしてください。\nまた、予定がなくなった場合は、早めにご自分で予約を取り消すようお願いします。\n\n総務部",
+    "tr": {
+      "zh": "各位员工：\n\n关于会议室的预约\n\n总务部通知会议室预约方法的变更。\n目前，有很多会议室被预约了却没有使用，有人反映真正需要的人用不上。因此，从11月1日起，如果过了预约时间15分钟仍未确认开始使用，预约将被自动取消。开始使用时，请把员工证放在会议室入口处的终端上刷一下。\n另外，如果计划取消了，请尽早自行取消预约。\n\n总务部",
+      "en": "To all staff:\n\nOn booking meeting rooms\n\nThe General Affairs Department announces a change in how meeting rooms are booked.\nAt present many rooms are booked but not used, and we have heard that people who really need a room can't get one. So from 1 November, if use has not been confirmed as started 15 minutes after the booked time, the booking will be cancelled automatically. When you start using a room, please hold your staff ID card over the terminal at the room's entrance.\nAlso, if your plans fall through, please cancel the booking yourself as early as possible.\n\nGeneral Affairs Department"
+    },
+    "questions": [
+      {
+        "q": "11月1日から、会議室を予約した人が必ずしなければならないことは何か。",
+        "options": [
+          "会議の15分前までに、総務部に利用することを連絡する。",
+          "会議室を使い始めるときに、入口の端末に社員証をかざす。",
+          "予約した時刻を15分過ぎたら、もう一度予約をし直す。",
+          "会議が終わったら、その予約を自分で取り消しておく。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「予約した時刻を15分過ぎても利用の開始が確認されない場合、予約は自動的に取り消される」；「利用を始めるときは、会議室の入口にある端末に社員証をかざしてください」。\n推理：“开始使用”是靠刷员工证来确认的，不刷就会被自动取消，所以预约的人每次都必须这样做。",
+          "en": "Evidence: 「予約した時刻を15分過ぎても利用の開始が確認されない場合、予約は自動的に取り消される」; 「利用を始めるときは、会議室の入口にある端末に社員証をかざしてください」.\nReasoning: Starting use is confirmed by the ID card at the terminal; without it the booking is cancelled, so everyone who books must do it."
+        },
+        "wrong": [
+          {
+            "zh": "确认使用靠入口的终端，文中没有要求联系总务部。",
+            "en": "Use is confirmed at the terminal; contacting General Affairs isn't required."
+          },
+          null,
+          {
+            "zh": "过了15分钟预约会被自动取消，文中没有要求重新预约。",
+            "en": "After 15 minutes the booking is cancelled automatically; rebooking isn't a requirement."
+          },
+          {
+            "zh": "自行取消是「予定がなくなった場合」的事，不是会议结束后要做的。",
+            "en": "Cancelling yourself is for 「予定がなくなった場合」, not after a meeting."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-226",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "駅から会社までの道を、ある日なんとなく一本変えてみた。いつもより五分ほど遠回りになるが、古い和菓子屋や小さな公園があり、季節の花が咲いている家もあった。三年間毎日通っていた道のすぐ隣に、こんな景色があったとは知らなかった。考えてみれば、決まった道を歩いているとき、私は周りをほとんど見ていなかった。目的地に早く着くことしか考えていなかったのだ。それ以来、時間に余裕のある朝は、わざと違う道を選ぶようにしている。",
+    "tr": {
+      "zh": "有一天，我随意把从车站到公司的路换了一条。比平时绕远五分钟左右，但有老字号的和果子店和小公园，还有开着应季花朵的人家。我从不知道，三年来每天走的路的旁边，竟然有这样的景色。想想看，走在固定的路上时，我几乎没有看过周围。我只想着早点到达目的地。从那以后，在时间充裕的早上，我会故意选择不同的路。",
+      "en": "One day, on a whim, I changed my route from the station to the office by one street. It takes about five minutes longer than usual, but there was an old Japanese sweet shop, a small park, and a house with seasonal flowers in bloom. I had no idea such scenery lay right next to the road I had walked every day for three years. Come to think of it, when I walked my usual route I hardly looked around me. All I thought about was reaching my destination quickly. Since then, on mornings when I have time to spare, I deliberately choose a different route."
+    },
+    "questions": [
+      {
+        "q": "筆者が時間のある朝に違う道を選ぶようになったのはなぜか。",
+        "options": [
+          "違う道のほうが、会社に早く着くことが分かったから。",
+          "いつもの道を毎日歩くことに、飽きてしまっていたから。",
+          "和菓子屋に寄って、朝のうちに買い物がしたかったから。",
+          "よく知っているはずの場所にも、新しい発見があったから。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「三年間毎日通っていた道のすぐ隣に、こんな景色があったとは知らなかった」；「それ以来、…わざと違う道を選ぶようにしている」。\n推理：每天走的路旁边就有从没注意过的和果子店、公园、花，「それ以来」说明正是这次发现让作者开始换路。",
+          "en": "Evidence: 「三年間毎日通っていた道のすぐ隣に、こんな景色があったとは知らなかった」; 「それ以来、…わざと違う道を選ぶようにしている」.\nReasoning: Right beside a route walked daily for years were things never noticed; 「それ以来」 shows this discovery is why the writer now varies the route."
+        },
+        "wrong": [
+          {
+            "zh": "文中说换的路「五分ほど遠回り」，反而更慢。",
+            "en": "The new route is 「五分ほど遠回り」, slower, not faster."
+          },
+          {
+            "zh": "第一次换路只是「なんとなく」，文中没有说对原来的路厌倦了。",
+            "en": "The first change was 「なんとなく」; boredom with the old route isn't mentioned."
+          },
+          {
+            "zh": "和果子店只是路上看到的景色之一，没有说要去买东西。",
+            "en": "The sweet shop is just part of the scenery; shopping isn't mentioned."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-227",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、町内会から配られたお知らせです。",
+    "passage": "町内会の皆様へ\n\nみどり公園　清掃活動のお知らせ\n\n毎年恒例の公園清掃を、下記のとおり行います。\n日時：10月19日（日）9時〜11時\n集合場所：みどり公園の東側入口\nほうき、ごみ袋、軍手は町内会で用意しますので、手ぶらでお越しください。ただし、草刈りを担当していただく方は、鎌をお持ちいただけると助かります。\n雨天の場合は、翌週26日（日）に延期します。延期するかどうかは、当日の朝7時までに町内会のホームページでお知らせします。\n\nみどり町内会",
+    "tr": {
+      "zh": "致各位町内会成员：\n\n绿公园 清扫活动通知\n\n每年例行的公园清扫将按以下安排进行。\n时间：10月19日（周日）9点–11点\n集合地点：绿公园东侧入口\n扫帚、垃圾袋、劳动手套由町内会准备，请空手前来。不过，负责割草的人如果能自带镰刀，会帮上大忙。\n如遇下雨，将延期到下周26日（周日）。是否延期，会在当天早上7点前在町内会主页上通知。\n\n绿町内会",
+      "en": "To all members of the neighbourhood association:\n\nMidori Park clean-up\n\nOur annual park clean-up will be held as follows.\nDate: Sunday 19 October, 9:00–11:00\nMeeting place: east entrance of Midori Park\nBrooms, rubbish bags and work gloves will be provided by the association, so please come empty-handed. However, it would help if those cutting grass could bring a sickle.\nIf it rains, the event will be postponed to the following Sunday, the 26th. Whether it is postponed will be announced on the association's website by 7 a.m. on the day.\n\nMidori Neighbourhood Association"
+    },
+    "questions": [
+      {
+        "q": "このお知らせの内容と合っているものはどれか。",
+        "options": [
+          "清掃が延期になるかどうかは、当日の朝にホームページで分かる。",
+          "参加する人は、ほうきとごみ袋を自分で持ってくる必要がある。",
+          "雨が降った場合、清掃は中止になって翌年に行われることになる。",
+          "草刈りをする人には、町内会が鎌を貸してくれることになっている。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「延期するかどうかは、当日の朝7時までに町内会のホームページでお知らせします」。\n推理：是否因雨延期，当天早上7点前在主页公布，所以当天早上看主页就能知道，与选项相符。",
+          "en": "Evidence: 「延期するかどうかは、当日の朝7時までに町内会のホームページでお知らせします」.\nReasoning: Whether it's postponed is posted on the website by 7 a.m. that day, so you can find out that morning."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "扫帚、垃圾袋「町内会で用意します」，请「手ぶらで」来。",
+            "en": "Brooms and bags are provided (「町内会で用意します」); come 「手ぶらで」."
+          },
+          {
+            "zh": "下雨是「翌週26日（日）に延期」，不是取消到明年。",
+            "en": "Rain means postponement 「翌週26日（日）に延期」, not cancellation until next year."
+          },
+          {
+            "zh": "镰刀是希望割草的人「お持ちいただける」自带，町内会只准备扫帚等。",
+            "en": "Grass cutters are asked to bring their own sickle; the association provides only brooms, bags and gloves."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-228",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "外国語の文章を読んでいて知らない言葉に出会うと、すぐに辞書を引きたくなる。しかし、私はまず前後の文から意味を推測してみることにしている。推測が当たっていれば自信になるし、外れていても、なぜ違ったのかを考えることで、その言葉が記憶に残りやすい。すぐに答えを見てしまうと、そのときは分かった気になるが、翌日にはもう忘れていることが多い。少し頭を使って迷った時間こそが、言葉を自分のものにしてくれるのだ。",
+    "tr": {
+      "zh": "读外语文章时遇到不认识的词，总想马上查字典。但是，我总是先试着从前后文推测意思。推测对了会增加自信，即使错了，通过思考为什么不对，这个词也更容易留在记忆里。马上看答案的话，当时觉得懂了，但第二天往往就已经忘了。正是稍微动脑、犹豫思考的那段时间，让词语变成了自己的东西。",
+      "en": "When I meet an unknown word while reading a text in a foreign language, I'm tempted to look it up at once. But I make a point of first trying to guess its meaning from the sentences around it. If my guess is right it builds confidence, and even if it's wrong, thinking about why makes the word easier to remember. If you look at the answer right away, you feel you understand at the time, but often you've forgotten it by the next day. It is precisely the time spent thinking and hesitating a little that makes a word your own."
+    },
+    "questions": [
+      {
+        "q": "筆者が辞書を引く前に意味を推測するのはなぜか。",
+        "options": [
+          "辞書を引いていると、文章を先に読み進められなくなるから。",
+          "推測が当たっていれば、辞書を引かなくても済むから。",
+          "自分で考えてから確かめるほうが、言葉が記憶に残るから。",
+          "辞書に載っている意味は、文章に合わないことが多いから。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「外れていても、なぜ違ったのかを考えることで、その言葉が記憶に残りやすい」；「少し頭を使って迷った時間こそが、言葉を自分のものにしてくれるのだ」。\n推理：无论猜对猜错，先自己思考都让词更容易记住；马上看答案第二天就忘。理由是为了记住单词。",
+          "en": "Evidence: 「外れていても、なぜ違ったのかを考えることで、その言葉が記憶に残りやすい」; 「少し頭を使って迷った時間こそが、言葉を自分のものにしてくれるのだ」.\nReasoning: Right or wrong, thinking first makes the word stick; looking it up at once means forgetting it the next day. The reason is memory."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有说查字典妨碍阅读进度，作者关心的是能否记住。",
+            "en": "Reading speed isn't mentioned; the writer's concern is remembering."
+          },
+          {
+            "zh": "猜对的好处是「自信になる」，不是省掉查字典；而且猜错时也要想原因。",
+            "en": "A right guess brings 「自信」, not skipping the dictionary; and wrong guesses are reflected on too."
+          },
+          null,
+          {
+            "zh": "文中没有批评字典的释义，问题在于马上看答案容易忘。",
+            "en": "The dictionary's definitions aren't criticised; the problem is that instant answers are forgotten."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-229",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、社内で送られたメールです。",
+    "passage": "営業部の皆さん\n\nお疲れさまです。山下です。\nすでにご存じのとおり、林部長が今月末で退職されます。そこで、30日（金）の19時から、駅前の「和食さくら」で送別会を開きます。会費は4,000円で、当日、受付でお支払いください。\nまた、部長への記念品として花束を贈る予定です。こちらは一人500円ずつ集めますので、送別会の出欠にかかわらず、27日（火）までに私に直接お渡しください。\n送別会の出欠は、23日（金）までにこのメールに返信してお知らせください。\n\n営業部　山下",
+    "tr": {
+      "zh": "营业部的各位：\n\n大家辛苦了。我是山下。\n正如大家已经知道的，林部长将于本月底退休。因此，30日（周五）19点起，在车站前的“和食樱”举行欢送会。会费4,000日元，请当天在接待处支付。\n另外，我们打算送部长一束花作为纪念。花束费用每人收500日元，不论是否参加欢送会，请在27日（周二）之前直接交给我。\n是否参加欢送会，请在23日（周五）之前回复这封邮件告知。\n\n营业部 山下",
+      "en": "Dear all in Sales,\n\nThanks for your hard work. This is Yamashita.\nAs you already know, Mr Hayashi, our department head, is retiring at the end of this month. So we are holding a farewell party from 7 p.m. on Friday the 30th at Washoku Sakura in front of the station. The fee is ¥4,000, payable at reception on the day.\nWe also plan to give him a bouquet as a keepsake. For this we are collecting ¥500 per person, so whether or not you attend the party, please hand it to me directly by Tuesday the 27th.\nPlease let me know whether you will attend by replying to this email by Friday the 23rd.\n\nYamashita, Sales"
+    },
+    "questions": [
+      {
+        "q": "送別会に参加できない人がしなければならないことは何か。",
+        "options": [
+          "23日までに、会費の4,000円を山下さんに渡す。",
+          "30日の受付で、花束の代金500円を支払う。",
+          "欠席することを、林部長に直接伝えておく。",
+          "欠席の返信をし、27日までに500円を渡す。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「送別会の出欠にかかわらず、27日（火）までに私に直接お渡しください」；「送別会の出欠は、23日（金）までにこのメールに返信してお知らせください」。\n推理：「出欠にかかわらず」表示不参加的人也要交500日元花束费；出欠也要回复邮件告知。不参加的人要做的就是这两件事。",
+          "en": "Evidence: 「送別会の出欠にかかわらず、27日（火）までに私に直接お渡しください」; 「送別会の出欠は、23日（金）までにこのメールに返信してお知らせください」.\nReasoning: 「出欠にかかわらず」 means absentees also pay the ¥500 for flowers, and everyone replies with attendance. Those are an absentee's two tasks."
+        },
+        "wrong": [
+          {
+            "zh": "4,000日元是参加者当天在接待处付的会费，不参加的人不用付。",
+            "en": "¥4,000 is the party fee paid at reception by attendees; absentees don't pay it."
+          },
+          {
+            "zh": "500日元要在27日前直接交给山下；不参加的人也不会去30日的接待处。",
+            "en": "The ¥500 goes to Yamashita by the 27th; absentees won't be at reception on the 30th anyway."
+          },
+          {
+            "zh": "出欠是回复这封邮件告诉山下，不是告诉林部长。",
+            "en": "Attendance is reported by replying to Yamashita's email, not to Mr Hayashi."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-230",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "「普通においしい」という言い方を聞くと、年配の人は眉をひそめるかもしれない。「普通」は特別ではないという意味で、ほめ言葉ではないはずだからだ。しかし、若い人の話をよく聞いていると、この言葉は「期待していなかったが、思ったよりずっとおいしい」という意味で使われていることが多い。言葉の意味は、使う人々の間で少しずつ変わっていくものだ。自分の知っている意味と違うからといって、すぐに誤りだと決めつけず、相手が何を伝えようとしているのかに耳を傾けたい。",
+    "tr": {
+      "zh": "听到“普通好吃”这种说法，上了年纪的人也许会皱眉。因为“普通”的意思是不特别，按理说不是夸奖的话。但是，仔细听年轻人说话就会发现，这个词很多时候是在“本来没抱期待，却比想象中好吃得多”的意思上使用的。词语的意思本来就会在使用者之间一点点变化。我希望不要因为和自己知道的意思不同，就马上断定那是错误，而是认真倾听对方想表达什么。",
+      "en": "On hearing the expression 'futsū ni oishii' ('normally tasty'), older people may frown. 'Futsū' means 'nothing special', so it shouldn't be praise. But if you listen carefully to young people, the phrase is often used to mean 'I didn't expect much, but it's much tastier than I thought'. The meanings of words change little by little among the people who use them. I'd like us not to decide at once that something is a mistake just because it differs from the meaning we know, but to listen to what the other person is trying to say."
+    },
+    "questions": [
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "options": [
+          "自分の知る意味と違っても、相手が伝えたいことを理解しようとすべきだ。",
+          "「普通」はほめ言葉ではないので、「おいしい」と一緒に使うべきではない。",
+          "若い人は言葉の本来の意味を知らないので、間違った使い方をしている。",
+          "年配の人は、若い人の言葉の使い方に合わせて話すようにするべきだ。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「自分の知っている意味と違うからといって、すぐに誤りだと決めつけず、相手が何を伝えようとしているのかに耳を傾けたい」。\n推理：最后一句「〜たい」是作者的主张：不要因为意思不同就断定是错的，而要听懂对方想说的。选项是这句话的改写。",
+          "en": "Evidence: 「自分の知っている意味と違うからといって、すぐに誤りだと決めつけず、相手が何を伝えようとしているのかに耳を傾けたい」.\nReasoning: The closing 「〜たい」 states the writer's view: don't call it wrong just because the meaning differs; listen to what is meant. The option paraphrases it."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "这是开头年长者的看法（「はずだ」），作者接着用「しかし」介绍了新的用法。",
+            "en": "That is the older view in the opening (「はずだ」); the writer follows with 「しかし」 and the new usage."
+          },
+          {
+            "zh": "作者说意思「少しずつ変わっていく」，反对「すぐに誤りだと決めつけ」。",
+            "en": "The writer says meanings 「少しずつ変わっていく」 and objects to calling it an error."
+          },
+          {
+            "zh": "作者只说要听懂对方的意思，并没有要求年长者改变自己的说法。",
+            "en": "The writer only asks us to understand; older people aren't told to change how they speak."
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -424,5 +424,289 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n2-dk-407",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "会社員の小林さんは東京に住んでいる。大阪に住む姉に、3辺の合計が75cm、重さが8kgの荷物を1個送りたい。平日は仕事で忙しいので、土曜日の午前中に発送するつもりである。できるだけ安く送りたい。",
+    "passage": "はやて運輸　宅配便料金表（東京から発送する場合・税込）\n| サイズ（3辺の合計／重さ） | 関東 | 関西 | 九州 |\n| 60サイズ（60cmまで／2kgまで） | 940円 | 1,060円 | 1,280円 |\n| 80サイズ（80cmまで／5kgまで） | 1,220円 | 1,340円 | 1,560円 |\n| 100サイズ（100cmまで／10kgまで） | 1,500円 | 1,620円 | 1,840円 |\n| 120サイズ（120cmまで／15kgまで） | 1,790円 | 1,910円 | 2,130円 |\n＊サイズは、3辺の合計と重さのうち、大きいほうのサイズで決まります。\n＊営業所に直接お持ちいただくと、1個につき100円割引になります。コンビニからの発送は割引の対象外です。\n＊同じお届け先に2個以上を同時に送る場合は、2個目から1個につき150円割引になります（持ち込み割引と併用できます）。\n＊クール便（冷蔵・冷凍）は、上記の料金に、60・80サイズは220円、100サイズは330円、120サイズは440円を加えます。\n＊営業所の受付時間は、平日8:00〜20:00、土曜9:00〜17:00です。日曜・祝日は営業所での受付はできません（コンビニからは毎日発送できます）。\n＊お届け日時の指定は、発送日の翌々日以降でお願いします。",
+    "tr": {
+      "zh": "疾风运输 快递价格表（从东京寄出时，含税）\n60尺寸（三边之和60cm以内／2kg以内）：关东940日元，关西1,060日元，九州1,280日元。\n80尺寸（80cm以内／5kg以内）：关东1,220日元，关西1,340日元，九州1,560日元。\n100尺寸（100cm以内／10kg以内）：关东1,500日元，关西1,620日元，九州1,840日元。\n120尺寸（120cm以内／15kg以内）：关东1,790日元，关西1,910日元，九州2,130日元。\n＊尺寸按三边之和与重量中较大的一方决定。\n＊直接拿到营业所寄，每件优惠100日元。从便利店寄不享受优惠。\n＊同时寄两件以上到同一地址时，从第二件起每件优惠150日元（可与自带优惠同时使用）。\n＊冷藏冷冻快递在上述价格基础上，60、80尺寸加220日元，100尺寸加330日元，120尺寸加440日元。\n＊营业所受理时间：工作日8:00–20:00，周六9:00–17:00。周日和节假日营业所不受理（便利店每天都可以寄）。\n＊指定送达日期时间，请指定寄出日的后天以后。",
+      "en": "Hayate Transport — parcel rates (sent from Tokyo, tax included)\n60 size (sides up to 60 cm / up to 2 kg): Kanto ¥940, Kansai ¥1,060, Kyushu ¥1,280.\n80 size (up to 80 cm / 5 kg): Kanto ¥1,220, Kansai ¥1,340, Kyushu ¥1,560.\n100 size (up to 100 cm / 10 kg): Kanto ¥1,500, Kansai ¥1,620, Kyushu ¥1,840.\n120 size (up to 120 cm / 15 kg): Kanto ¥1,790, Kansai ¥1,910, Kyushu ¥2,130.\n* The size is whichever is larger of the size by total of the three sides and the size by weight.\n* Bringing a parcel directly to one of our offices gives ¥100 off per parcel. Sending from a convenience store is not eligible.\n* When sending two or more parcels to the same address at once, the second and each further parcel get ¥150 off (can be combined with the drop-off discount).\n* Cool delivery (chilled/frozen) adds ¥220 for 60 and 80 sizes, ¥330 for 100 size and ¥440 for 120 size to the rates above.\n* Office hours: weekdays 8:00–20:00, Saturdays 9:00–17:00. Offices do not accept parcels on Sundays or public holidays (convenience stores accept them every day).\n* Delivery dates/times can be specified from two days after the day of sending."
+    },
+    "questions": [
+      {
+        "q": "小林さんが姉に荷物を送る場合、料金はいくらになるか。",
+        "options": [
+          "1,340円",
+          "1,240円",
+          "1,520円",
+          "1,620円"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「サイズは、3辺の合計と重さのうち、大きいほうのサイズで決まります」；「100サイズ（100cmまで／10kgまで）」关西「1,620円」；「営業所に直接お持ちいただくと、1個につき100円割引」；「土曜9:00〜17:00」。\n推理：75cm按长度是80尺寸，但8kg超过5kg，按重量是100尺寸，取大的：100尺寸、寄关西1,620日元。周六上午营业所开门，自己拿去减100日元，最便宜是1,520日元。",
+          "en": "Evidence: 「サイズは、3辺の合計と重さのうち、大きいほうのサイズで決まります」; 「100サイズ（100cmまで／10kgまで）」 Kansai 「1,620円」; 「営業所に直接お持ちいただくと、1個につき100円割引」; 「土曜9:00〜17:00」.\nReasoning: 75 cm is 80 size by length, but 8 kg exceeds 5 kg, so by weight it's 100 size; the larger applies: ¥1,620 to Kansai. Offices open Saturday morning, so dropping it off saves ¥100: ¥1,520."
+        },
+        "wrong": [
+          {
+            "zh": "这是只按三边之和算成80尺寸的价格；8kg超过80尺寸的5kg上限。",
+            "en": "That's 80 size by length only; 8 kg is over the 5 kg limit for 80 size."
+          },
+          {
+            "zh": "按80尺寸再减自带优惠的价格，尺寸算错了。",
+            "en": "80 size minus the drop-off discount: wrong size."
+          },
+          null,
+          {
+            "zh": "这是100尺寸不打折的价格；周六上午营业所开门，自己拿去能便宜100日元。",
+            "en": "That's 100 size undiscounted; the office is open Saturday morning, so dropping it off saves ¥100."
+          }
+        ]
+      },
+      {
+        "q": "小林さんは、九州に住む両親に、冷凍の食品を2個同時に送りたい。荷物はどちらも3辺の合計が55cm、重さが3kgで、日曜日に発送する。料金は合わせていくらか。",
+        "options": [
+          "2,850円",
+          "3,410円",
+          "3,260円",
+          "3,560円"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「80サイズ（80cmまで／5kgまで）」九州「1,560円」；「60・80サイズは220円」；「2個目から1個につき150円割引」；「日曜・祝日は営業所での受付はできません」。\n推理：55cm是60尺寸，但3kg超过2kg，按80尺寸：1,560＋冷冻220＝1,780日元。第二件减150日元：1,780＋1,630＝3,410日元。周日营业所不受理，只能从便利店寄，没有自带优惠。",
+          "en": "Evidence: 「80サイズ（80cmまで／5kgまで）」 Kyushu 「1,560円」; 「60・80サイズは220円」; 「2個目から1個につき150円割引」; 「日曜・祝日は営業所での受付はできません」.\nReasoning: 55 cm is 60 size, but 3 kg exceeds 2 kg, so 80 size: ¥1,560 + ¥220 cool = ¥1,780. The second gets ¥150 off: ¥1,780 + ¥1,630 = ¥3,410. On Sunday only convenience stores accept parcels, so no drop-off discount."
+        },
+        "wrong": [
+          {
+            "zh": "这是按60尺寸算的；3kg超过60尺寸的2kg上限。",
+            "en": "That uses 60 size; 3 kg exceeds the 2 kg limit."
+          },
+          null,
+          {
+            "zh": "优惠是「2個目から」，第一件不减150日元。",
+            "en": "The discount is 「2個目から」; the first parcel isn't reduced."
+          },
+          {
+            "zh": "这是两件都不打折的价格，漏了第二件的150日元优惠。",
+            "en": "That ignores the ¥150 off the second parcel."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-408",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "みどり市に住む石川さんは、引っ越しのため、2人掛けのソファ1つ、大人用の自転車1台、電子レンジ1台を粗大ごみとして出したい。平日は仕事があるので、土曜日に処分したいと考えている。",
+    "passage": "みどり市　粗大ごみの出し方\n粗大ごみ（一辺が30cmを超えるもの）を出すには、事前の申し込みが必要です。\n| 品目 | 手数料（1点） | 備考 |\n| ソファ（1人掛け） | 800円 | |\n| ソファ（2人掛け以上） | 1,600円 | |\n| 自転車 | 400円 | 子ども用（16インチ以下）は200円 |\n| 電子レンジ | 400円 | |\n| たんす・本棚 | 800円 | 高さ90cm以上は1,200円 |\n| 布団 | 200円 | 2枚までひもでしばれば1点 |\n＊テレビ・冷蔵庫・洗濯機・エアコンは、市では回収できません。購入した店か、専門の業者にご相談ください。\n＊申し込みは、収集日または持ち込み日の1週間前までに、電話またはインターネットで行ってください。\n＊収集の場合、手数料は、コンビニで「粗大ごみ処理券」を購入して支払います。品物1点ごとに、手数料の金額分の処理券を貼ってください。\n＊収集日は、地域ごとに決まった平日です。収集日の朝8時までに、指定された場所に出してください。\n＊平日に出せない方は、毎月第2・第4土曜日の9:00〜15:00に、市のクリーンセンターへ直接持ち込むことができます。持ち込みの場合、手数料は半額になります。処理券は不要で、窓口で現金でお支払いください。",
+    "tr": {
+      "zh": "绿市 大件垃圾的扔法\n扔大件垃圾（有一边超过30cm的物品）需要事先申请。\n单人沙发：800日元。双人以上沙发：1,600日元。自行车：400日元（儿童用16英寸以下为200日元）。微波炉：400日元。衣柜、书架：800日元（高90cm以上为1,200日元）。被子：200日元（用绳子捆好、两床以内算1件）。\n＊电视、冰箱、洗衣机、空调市里不能回收。请咨询购买的商店或专业公司。\n＊请在收集日或送交日的1周前，通过电话或网络申请。\n＊上门收集时，手续费通过在便利店购买“大件垃圾处理券”支付。每件物品请贴上与手续费金额相应的处理券。\n＊收集日是各地区规定的工作日。请在收集日早上8点前放到指定地点。\n＊工作日无法扔的人，可以在每月第2、第4个周六的9:00–15:00直接送到市清洁中心。自己送去的话，手续费减半。不需要处理券，请在窗口用现金支付。",
+      "en": "Midori City — how to put out oversized rubbish\nTo put out oversized rubbish (items with a side over 30 cm), you must apply in advance.\nSofa (one-seater): ¥800. Sofa (two seats or more): ¥1,600. Bicycle: ¥400 (children's, 16 inches or under: ¥200). Microwave: ¥400. Chest of drawers / bookcase: ¥800 (90 cm tall or more: ¥1,200). Futon: ¥200 (up to two tied together with string count as one item).\n* The city cannot collect TVs, refrigerators, washing machines or air conditioners. Consult the shop where you bought them or a specialist company.\n* Apply by phone or online at least one week before the collection day or drop-off day.\n* For collection, pay the fee by buying 'oversized rubbish tickets' at a convenience store. Attach tickets worth the fee to each item.\n* Collection days are set weekdays for each area. Put items out at the designated place by 8 a.m. on the collection day.\n* Those who can't put items out on weekdays may bring them directly to the city Clean Centre on the second and fourth Saturdays of each month, 9:00–15:00. For drop-offs the fee is halved. No tickets are needed; pay in cash at the counter."
+    },
+    "questions": [
+      {
+        "q": "石川さんが3つの品物を処分する場合、手数料は合わせていくらか。",
+        "options": [
+          "1,200円",
+          "800円",
+          "2,400円",
+          "1,600円"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「ソファ（2人掛け以上）」「1,600円」；「自転車」「400円」；「電子レンジ」「400円」；「持ち込みの場合、手数料は半額になります」。\n推理：三件原价1,600＋400＋400＝2,400日元。她工作日没空，只能周六送到清洁中心，手续费减半，为1,200日元。",
+          "en": "Evidence: 「ソファ（2人掛け以上）」 「1,600円」; 「自転車」 「400円」; 「電子レンジ」 「400円」; 「持ち込みの場合、手数料は半額になります」.\nReasoning: Full price is ¥1,600 + ¥400 + ¥400 = ¥2,400. She can only go on a Saturday drop-off, which halves the fee: ¥1,200."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "这是把沙发按单人800日元算再减半的金额；她的是双人沙发。",
+            "en": "That halves a total with the sofa at the one-seater ¥800; hers is a two-seater."
+          },
+          {
+            "zh": "这是上门收集的原价；周六送去手续费减半。",
+            "en": "That's the collection price; the Saturday drop-off halves it."
+          },
+          {
+            "zh": "这是沙发按单人800日元算的原价，沙发种类和减半都错了。",
+            "en": "That uses the one-seater price and no halving."
+          }
+        ]
+      },
+      {
+        "q": "石川さんがしなければならないことはどれか。",
+        "options": [
+          "収集日の朝8時までに、品物を指定の場所に出しておく。",
+          "コンビニで処理券を買い、品物1点ごとに貼っておく。",
+          "申し込みはせずに、第2か第4土曜日にクリーンセンターへ運ぶ。",
+          "前もって申し込み、第2か第4土曜日にクリーンセンターへ運ぶ。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「申し込みは、収集日または持ち込み日の1週間前までに」；「平日に出せない方は、毎月第2・第4土曜日の9:00〜15:00に、市のクリーンセンターへ直接持ち込むことができます」。\n推理：她只能周六处理，所以要在第2或第4个周六送去清洁中心；自己送去也需要提前一周申请。",
+          "en": "Evidence: 「申し込みは、収集日または持ち込み日の1週間前までに」; 「平日に出せない方は、毎月第2・第4土曜日の9:00〜15:00に、市のクリーンセンターへ直接持ち込むことができます」.\nReasoning: She can only do it on a Saturday, so she takes the items to the Clean Centre on the 2nd or 4th Saturday, and drop-offs also require applying a week ahead."
+        },
+        "wrong": [
+          {
+            "zh": "收集日是「平日」，她工作日没空。",
+            "en": "Collection days are 「平日」, when she works."
+          },
+          {
+            "zh": "处理券是上门收集用的；自己送去「処理券は不要」，在窗口付现金。",
+            "en": "Tickets are for collection; drop-offs need none (「処理券は不要」) and are paid in cash."
+          },
+          {
+            "zh": "申请对「収集日または持ち込み日」都是必须的。",
+            "en": "Applying is required for both 「収集日または持ち込み日」."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-409",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "大学生の西田さんは22歳で、スマートフォンの料金プランを選んでいる。データ通信は毎月15GBほど使い、速度が遅くなるのは困る。電話はアプリで済ませるので、通話料はかからない。家族とは別に、一人で契約する予定である。毎月の料金をできるだけ安くしたい。",
+    "passage": "ソラモバイル　料金プランのご案内（月額・税込）\n| プラン | データ容量 | 月額料金 | 通話料 |\n| ミニ | 3GBまで | 990円 | 30秒ごとに22円 |\n| ライト | 10GBまで | 1,980円 | 30秒ごとに22円 |\n| スタンダード | 20GBまで | 2,970円 | 30秒ごとに22円 |\n| たっぷり | 無制限 | 4,950円 | 国内通話かけ放題 |\n＊データ容量を超えると、通信速度が遅くなります。1GBにつき550円で容量を追加できます。\n＊オプション「5分かけ放題」（月額550円）：1回5分以内の国内通話が何回でも無料になります。5分を超えた分は、30秒ごとに22円かかります。\n＊学割：25歳以下の学生の方は、ライト・スタンダードの月額料金から、毎月500円を割り引きます（お申し込みの際に学生証が必要です）。\n＊家族割：同じ家族で2回線以上ご契約の場合、全プランの月額料金から1回線につき330円を割り引きます（学割との併用はできません）。\n＊プランの変更は毎月1回まで、翌月1日から適用されます。",
+    "tr": {
+      "zh": "天空移动 资费套餐介绍（月费，含税）\n迷你：流量3GB以内，月费990日元，通话费每30秒22日元。\n轻量：10GB以内，1,980日元，每30秒22日元。\n标准：20GB以内，2,970日元，每30秒22日元。\n充足：无限流量，4,950日元，国内通话无限打。\n＊超过流量后网速会变慢。可以按每1GB 550日元追加流量。\n＊附加服务“5分钟无限打”（月费550日元）：每次5分钟以内的国内通话不限次数免费。超过5分钟的部分，每30秒收22日元。\n＊学生优惠：25岁以下的学生，轻量和标准套餐的月费每月减500日元（申请时需要学生证）。\n＊家庭优惠：同一家庭签约2条以上线路时，所有套餐月费每条线路减330日元（不能与学生优惠同时使用）。\n＊套餐变更每月限1次，从下个月1日起生效。",
+      "en": "Sora Mobile — price plans (monthly, tax included)\nMini: up to 3 GB data, ¥990 a month, calls ¥22 per 30 seconds.\nLite: up to 10 GB, ¥1,980, ¥22 per 30 seconds.\nStandard: up to 20 GB, ¥2,970, ¥22 per 30 seconds.\nPlenty: unlimited data, ¥4,950, unlimited domestic calls.\n* Once you exceed your data allowance, speeds slow down. You can add data at ¥550 per GB.\n* Option '5-minute unlimited calls' (¥550 a month): domestic calls of up to 5 minutes each are free, any number of times. Anything over 5 minutes costs ¥22 per 30 seconds.\n* Student discount: students aged 25 or under get ¥500 off the monthly fee of Lite and Standard each month (student ID required when applying).\n* Family discount: when one family has two or more lines, each line gets ¥330 off the monthly fee on all plans (cannot be combined with the student discount).\n* Plans can be changed once a month, taking effect from the 1st of the following month."
+    },
+    "questions": [
+      {
+        "q": "西田さんの条件に合う契約のうち、毎月の料金が最も安いのはいくらか。",
+        "options": [
+          "2,970円",
+          "1,480円",
+          "4,230円",
+          "2,470円"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「スタンダード」「20GBまで」「2,970円」；「学割：25歳以下の学生の方は、ライト・スタンダードの月額料金から、毎月500円を割り引きます」；「1GBにつき550円で容量を追加できます」。\n推理：每月15GB且不能降速。标准套餐20GB够用，学生优惠后2,970－500＝2,470日元。轻量套餐10GB要追加5GB：1,480＋2,750＝4,230日元；充足套餐4,950日元。所以最便宜是2,470日元。",
+          "en": "Evidence: 「スタンダード」 「20GBまで」 「2,970円」; 「学割：25歳以下の学生の方は、ライト・スタンダードの月額料金から、毎月500円を割り引きます」; 「1GBにつき550円で容量を追加できます」.\nReasoning: 15 GB a month with no slowdown. Standard (20 GB) with the student discount is ¥2,970 − ¥500 = ¥2,470. Lite needs 5 GB extra: ¥1,480 + ¥2,750 = ¥4,230; Plenty is ¥4,950. So ¥2,470 is cheapest."
+        },
+        "wrong": [
+          {
+            "zh": "这是标准套餐不用学生优惠的价格；他22岁是学生，可以减500日元。",
+            "en": "That's Standard without the student discount; at 22 and a student he gets ¥500 off."
+          },
+          {
+            "zh": "这是轻量套餐用学生优惠的价格，但只有10GB，用15GB会降速。",
+            "en": "That's Lite with the student discount, but 10 GB isn't enough for 15 GB without slowing down."
+          },
+          {
+            "zh": "轻量套餐加5GB流量也能满足条件，但比标准套餐贵。",
+            "en": "Lite plus 5 GB meets the conditions but costs more than Standard."
+          },
+          null
+        ]
+      },
+      {
+        "q": "西田さんの父親は、データ通信は月に2GBほどしか使わないが、仕事で毎日、10分以上の電話を5回ほどかける。家族割は使わない。父親の料金が最も安くなるのはどれか。",
+        "options": [
+          "たっぷりプランにする。",
+          "ミニプランに「5分かけ放題」をつける。",
+          "ミニプランだけにする。",
+          "ライトプランに「5分かけ放題」をつける。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「たっぷり」「国内通話かけ放題」「4,950円」；「5分を超えた分は、30秒ごとに22円かかります」。\n推理：每天5次、每次10分钟以上。迷你套餐每次至少20个30秒，即440日元，一天2,200日元，一个月远超4,950日元；加“5分钟无限打”，超过5分钟的部分照样收费，一个月也要3万多日元。只有充足套餐通话无限打。",
+          "en": "Evidence: 「たっぷり」 「国内通話かけ放題」 「4,950円」; 「5分を超えた分は、30秒ごとに22円かかります」.\nReasoning: Five calls a day of 10+ minutes. On Mini each call is at least 20 × ¥22 = ¥440, ¥2,200 a day, far over ¥4,950 a month; with the 5-minute option the part beyond 5 minutes is still charged, over ¥30,000 a month. Only Plenty has unlimited calls."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「5分かけ放題」只免5分钟以内，超出部分「30秒ごとに22円」，每天5次10分钟以上的通话，一个月要3万多日元。",
+            "en": "The option covers only up to 5 minutes; the rest is 「30秒ごとに22円」, over ¥30,000 a month for his calls."
+          },
+          {
+            "zh": "迷你套餐通话按「30秒ごとに22円」计，每次至少440日元，一个月远超充足套餐。",
+            "en": "Mini charges 「30秒ごとに22円」, at least ¥440 a call, far more than Plenty per month."
+          },
+          {
+            "zh": "他只用2GB，不需要轻量套餐；而且超过5分钟的部分仍要付通话费。",
+            "en": "He uses only 2 GB, and the time beyond 5 minutes is still charged."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-410",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "今日は9月5日である。田中さん（45歳）は、9月14日（日）に、妻（43歳）と小学4年生の娘の3人で、みなと美術館の特別展を見に行く予定である。学芸員の解説を聞きながら見学したいが、娘は人の多い所が苦手なので、できるだけ参加者の少ないツアーを選びたい。",
+    "passage": "みなと美術館　特別展「海をえがく」のご案内\n会期：9月1日（月）〜10月13日（月・祝）　開館時間：9:30〜17:00（入館は16:30まで）\n| 入館料 | 当日券 | 前売り券 |\n| 一般 | 1,600円 | 1,400円 |\n| 大学生・高校生 | 1,000円 | 800円 |\n| 中学生以下 | 無料 | ― |\n＊前売り券は8月31日まで販売しました。\n＊65歳以上の方は、年齢の分かるものをご提示いただくと、一般料金から300円引きになります。\n＊毎週金曜日は20:00まで開館します。17:00以降に入館される方は、一般料金から200円引きになります。\nギャラリーツアー（学芸員による解説つきの見学、約45分）\n| | 曜日 | 時間 | 定員 | 申し込み |\n| A | 土・日 | 11:00 | 30名 | 不要（当日、受付前に集合） |\n| B | 土・日 | 14:00 | 30名 | 不要（当日、受付前に集合） |\n| C | 水 | 14:00 | 15名 | 必要（前日までにホームページから） |\n| D | 金 | 18:00 | 15名 | 必要（前日までにホームページから） |\n| E | 第2日曜 | 10:00 | 10組 | 必要（小学生とその家族向け。前日までに電話で） |\n＊ツアーへの参加は無料ですが、当日の入館券が必要です。",
+    "tr": {
+      "zh": "港美术馆 特别展“描绘大海”介绍\n展期：9月1日（周一）–10月13日（周一・节日） 开馆时间：9:30–17:00（16:30停止入馆）\n门票：普通 当日票1,600日元，预售票1,400日元；大学生・高中生 当日票1,000日元，预售票800日元；初中生及以下免费。\n＊预售票已于8月31日停止销售。\n＊65岁以上的人出示能证明年龄的证件，在普通票价基础上减300日元。\n＊每周五开馆到20:00。17:00以后入馆的人，在普通票价基础上减200日元。\n展厅导览（由策展人讲解的参观，约45分钟）\nA：周六、周日11:00，定员30人，无需申请（当天在前台前集合）。\nB：周六、周日14:00，定员30人，无需申请（当天在前台前集合）。\nC：周三14:00，定员15人，需要申请（前一天之前通过主页）。\nD：周五18:00，定员15人，需要申请（前一天之前通过主页）。\nE：第2个周日10:00，定员10组，需要申请（面向小学生及其家人，前一天之前打电话）。\n＊参加导览免费，但需要当天的门票。",
+      "en": "Minato Art Museum — special exhibition 'Painting the Sea'\nDates: Monday 1 September – Monday 13 October (public holiday). Hours: 9:30–17:00 (last entry 16:30).\nAdmission: general ¥1,600 on the day, ¥1,400 in advance; university/high-school students ¥1,000 on the day, ¥800 in advance; junior-high pupils and younger free.\n* Advance tickets were sold until 31 August.\n* Visitors aged 65 or over get ¥300 off the general price on showing proof of age.\n* Every Friday the museum is open until 20:00. Visitors entering after 17:00 get ¥200 off the general price.\nGallery tours (with a curator's commentary, about 45 minutes)\nA: Sat & Sun 11:00, 30 people, no booking (meet in front of reception on the day).\nB: Sat & Sun 14:00, 30 people, no booking (meet in front of reception on the day).\nC: Wed 14:00, 15 people, booking needed (via the website by the day before).\nD: Fri 18:00, 15 people, booking needed (via the website by the day before).\nE: second Sunday 10:00, 10 groups, booking needed (for primary-school children and their families; by phone by the day before).\n* Tours are free, but a ticket for that day is required."
+    },
+    "questions": [
+      {
+        "q": "田中さんたちに最も合うツアーと、その申し込み方法はどれか。",
+        "options": [
+          "Aのツアーに、当日受付前に集まって参加する。",
+          "Eのツアーに、前日までに電話で申し込む。",
+          "Cのツアーに、前日までにホームページから申し込む。",
+          "Eのツアーに、前日までにホームページから申し込む。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「E」「第2日曜」「10組」「必要（小学生とその家族向け。前日までに電話で）」；「会期：9月1日（月）」。\n推理：9月1日是周一，所以周日是7日和14日，14日正是第2个周日。E面向小学生和家人、只有10组，人数最少；申请方法是前一天之前打电话。",
+          "en": "Evidence: 「E」 「第2日曜」 「10組」 「必要（小学生とその家族向け。前日までに電話で）」; 「会期：9月1日（月）」.\nReasoning: 1 September is a Monday, so the Sundays are the 7th and 14th; the 14th is the second Sunday. E is for primary pupils and families with only 10 groups, the smallest; booking is by phone by the day before."
+        },
+        "wrong": [
+          {
+            "zh": "A在周日有，但定员30人，不是人数最少的。",
+            "en": "A runs on Sunday but takes 30 people, not the fewest."
+          },
+          null,
+          {
+            "zh": "C在周三举行，他们是周日去。",
+            "en": "C is on Wednesdays; they're going on Sunday."
+          },
+          {
+            "zh": "E的申请方式是「電話で」，主页申请的是C和D。",
+            "en": "E is booked 「電話で」; the website is for C and D."
+          }
+        ]
+      },
+      {
+        "q": "田中さんたち3人の入館料は、合わせていくらか。",
+        "options": [
+          "2,800円",
+          "4,200円",
+          "3,200円",
+          "2,600円"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「一般」「当日券」「1,600円」；「中学生以下」「無料」；「前売り券は8月31日まで販売しました」。\n推理：今天是9月5日，预售票已停售，夫妻两人买当日票1,600×2＝3,200日元；小学生女儿免费。两人都不到65岁，周日也没有周五夜间优惠。",
+          "en": "Evidence: 「一般」 「当日券」 「1,600円」; 「中学生以下」 「無料」; 「前売り券は8月31日まで販売しました」.\nReasoning: It's 5 September, so advance tickets are gone: two adults at ¥1,600 = ¥3,200; the primary-school daughter is free. Neither is 65+, and the Friday evening discount doesn't apply on Sunday."
+        },
+        "wrong": [
+          {
+            "zh": "这是两人用预售票的价格；预售票8月31日就停售了。",
+            "en": "That's two advance tickets; they stopped selling on 31 August."
+          },
+          {
+            "zh": "这是把女儿按大学生、高中生的1,000日元算了；初中生及以下免费。",
+            "en": "That charges the daughter ¥1,000; junior-high and younger are free."
+          },
+          null,
+          {
+            "zh": "这是每人减300日元的价格；那是65岁以上的优惠，夫妻俩是40多岁。",
+            "en": "That takes ¥300 off each, the 65+ discount; the couple are in their forties."
+          }
+        ]
+      }
+    ]
   }
 ]

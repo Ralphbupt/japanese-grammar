@@ -496,5 +496,706 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n3-dk-306",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "去年の春、今のマンションに引っ越してきた。前に住んでいた所では、隣にどんな人が住んでいるのかも知らなかった。都会ではそれが普通だと思っていたし、近所付き合いは面倒だと感じていたからだ。\nところが、引っ越した日に、隣の部屋のおばあさんが「何か困ったことがあったら、いつでも言ってね」と声をかけてくれた。それからは、会えばあいさつをし、時々立ち話もするようになった。\n先月、私が熱を出して三日ほど寝込んでいたときのことだ。おばあさんは私の姿が見えないのを心配して、ドアの前に果物とメモを置いていってくれた。メモには「無理しないでね」と書いてあった。一人暮らしの私には、それが本当にうれしかった。\n近所付き合いには、たしかに面倒なこともある。しかし、普段のちょっとしたあいさつが、困ったときに助け合える関係につながるのだと思う。",
+    "tr": {
+      "zh": "去年春天，我搬进了现在的公寓。以前住的地方，我连隔壁住着什么样的人都不知道。因为我觉得在城市里这很正常，而且觉得和邻居来往很麻烦。\n可是搬家那天，隔壁的老奶奶跟我打招呼说：“有什么为难的事，随时跟我说啊。”从那以后，见面就打招呼，有时还站着聊几句。\n上个月，我发烧卧床了三天左右。老奶奶因为看不到我，担心起来，在我门口放了水果和一张便条。便条上写着“别太勉强自己啊”。对一个人生活的我来说，那真的让我很高兴。\n和邻居来往，确实也有麻烦的地方。但是我认为，平时一句小小的问候，会带来遇到困难时能互相帮助的关系。",
+      "en": "Last spring I moved into my current flat. Where I lived before, I didn't even know who lived next door. I thought that was normal in a city, and I found dealing with neighbours a bother.\nBut on the day I moved in, the elderly woman next door said to me, 'If anything's troubling you, just tell me any time.' Since then we greet each other when we meet, and sometimes stop for a chat.\nLast month I had a fever and was in bed for about three days. Worried because she hadn't seen me, she left some fruit and a note in front of my door. The note said, 'Don't overdo it.' Living alone, I was really glad of it.\nGetting along with neighbours certainly has its bothersome side. But I think a little everyday greeting leads to a relationship in which people can help each other when they're in trouble."
+    },
+    "questions": [
+      {
+        "q": "筆者が前の家で、隣の人のことを知らなかったのはなぜか。",
+        "difficulty": 1,
+        "options": [
+          "都会ではそれが普通だと思い、付き合いを面倒に感じていたから",
+          "隣の人がいつも留守で、顔を合わせる機会がなかったから",
+          "仕事が忙しくて、家にいる時間がほとんどなかったから",
+          "隣の人にあいさつをしたが、返事をしてもらえなかったから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「都会ではそれが普通だと思っていたし、近所付き合いは面倒だと感じていたからだ」\n推理：句尾「〜からだ」说明前一句（不知道隔壁住着谁）的原因：觉得在城市里这很正常，又觉得和邻居来往麻烦。选项把两点都包括了。",
+          "en": "Evidence: 「都会ではそれが普通だと思っていたし、近所付き合いは面倒だと感じていたからだ」\nReasoning: The closing 「〜からだ」 explains the sentence before (not knowing the neighbours): it seemed normal in a city, and neighbourly contact felt like a bother. The option covers both points."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "文中没有说隔壁的人总不在家。",
+            "en": "Nothing says the neighbours were always out."
+          },
+          {
+            "zh": "文中没有提到工作忙、不常在家。",
+            "en": "Being busy at work or rarely home isn't mentioned."
+          },
+          {
+            "zh": "文中没有说作者打过招呼却没人理；原因是作者自己觉得来往麻烦。",
+            "en": "Nothing says he greeted anyone and was ignored; he himself found contact a bother."
+          }
+        ]
+      },
+      {
+        "q": "隣のおばあさんが、ドアの前に果物を置いていったのはなぜか。",
+        "options": [
+          "筆者から、熱が出て寝ていると電話で聞いたから",
+          "筆者が引っ越してきたことを、お祝いしたかったから",
+          "前に筆者に助けてもらったお礼を、したかったから",
+          "しばらく筆者の姿が見えないので、心配したから"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「おばあさんは私の姿が見えないのを心配して、ドアの前に果物とメモを置いていってくれた」\n推理：「〜を心配して」就是原因：好几天看不到作者，所以担心。选项“一段时间看不到作者”＝「私の姿が見えない」。老奶奶并不是听作者说了才知道生病的。",
+          "en": "Evidence: 「おばあさんは私の姿が見えないのを心配して、ドアの前に果物とメモを置いていってくれた」\nReasoning: 「〜を心配して」 is the reason: she hadn't seen him for days and worried. \"Hadn't seen him for a while\" = 「私の姿が見えない」. She didn't learn of the illness from him."
+        },
+        "wrong": [
+          {
+            "zh": "老奶奶是因为看不到作者而担心，文中没有说作者打电话告诉她。",
+            "en": "She worried because she hadn't seen him; nothing says he phoned her."
+          },
+          {
+            "zh": "这是上个月作者生病时的事，不是搬家时的祝贺。",
+            "en": "It happened last month during his illness, not as a moving-in gift."
+          },
+          {
+            "zh": "文中没有说作者以前帮过老奶奶。",
+            "en": "Nothing says he had helped her before."
+          },
+          null
+        ]
+      },
+      {
+        "q": "筆者の考えに合うものはどれか。",
+        "options": [
+          "近所付き合いは面倒なので、無理にしなくてもいい。",
+          "一人暮らしの人は、近所の人に助けを求めるべきだ。",
+          "普段のあいさつが、困ったときに助け合う関係につながる。",
+          "近所の人とは、なるべく長い時間話すようにしたほうがいい。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「普段のちょっとしたあいさつが、困ったときに助け合える関係につながるのだと思う」\n推理：最后一段先用「たしかに」承认来往有麻烦的一面，再用「しかし」说出主张：平时的问候能带来互相帮助的关系。选项就是这句话。",
+          "en": "Evidence: 「普段のちょっとしたあいさつが、困ったときに助け合える関係につながるのだと思う」\nReasoning: The last paragraph grants with 「たしかに」 that it can be a bother, then states the view after 「しかし」: everyday greetings lead to mutual help. The option is that sentence."
+        },
+        "wrong": [
+          {
+            "zh": "作者承认有麻烦的地方，但「しかし」后面肯定了和邻居来往。",
+            "en": "He admits the bother, but after 「しかし」 he values neighbourly contact."
+          },
+          {
+            "zh": "作者是被邻居主动关心的，没有主张独居者要去求助。",
+            "en": "His neighbour helped him unasked; he doesn't say people living alone should seek help."
+          },
+          null,
+          {
+            "zh": "作者说的是「ちょっとしたあいさつ」，没有说要尽量长时间聊天。",
+            "en": "He speaks of 「ちょっとしたあいさつ」, not long conversations."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-307",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "最近、「ソロ活」という言葉をよく耳にする。一人で焼肉を食べに行ったり、一人でカラオケやキャンプを楽しんだりすることだ。以前は、一人で食事をしている人を見ると、「友達がいないのかな」と思う人も少なくなかった。しかし今では、一人用の席を用意する店や、一人客向けのプランを作るホテルも増えている。\nソロ活をする人に理由を聞くと、「相手に合わせなくていいから楽だ」という答えが多いそうだ。行きたいときに行きたい所へ行き、好きなだけそこにいられる。誰かと一緒だと、相手の予定や好みを気にして、自分のしたいことをがまんしてしまうこともある。\nもちろん、友人や家族と過ごす時間が大切なことは変わらない。ただ、一人の時間を楽しめる人は、誰かと過ごす時間も、もっと大切にできるのではないだろうか。",
+    "tr": {
+      "zh": "最近常常听到「ソロ活」（一个人活动）这个词。指的是一个人去吃烤肉，一个人去享受卡拉OK或露营。以前，看到一个人吃饭的人，会想“他是不是没有朋友啊”的人也不少。但是现在，准备单人座位的店、推出单人客人方案的酒店都在增加。\n据说问一个人活动的人为什么，回答“不用配合别人，很轻松”的很多。想去的时候就去想去的地方，想待多久就待多久。和别人在一起时，会在意对方的安排和喜好，有时就忍住了自己想做的事。\n当然，和朋友、家人一起度过的时间依然重要。只是，能享受一个人时间的人，不也更能珍惜和别人一起度过的时间吗？",
+      "en": "Recently we often hear the word 'solo-katsu' — going for yakiniku alone, or enjoying karaoke or camping on your own. In the past, quite a few people seeing someone eating alone would think, 'Doesn't he have any friends?' But now more and more restaurants provide seats for one, and more hotels create plans for solo guests.\nWhen people who do things alone are asked why, many apparently answer, 'It's easy because I don't have to fit in with anyone.' You can go where you want when you want and stay as long as you like. With someone else, you worry about their schedule and tastes and sometimes give up what you want to do.\nOf course, time spent with friends and family is as important as ever. But perhaps people who can enjoy time alone can value the time they spend with others even more."
+    },
+    "questions": [
+      {
+        "q": "ソロ活をする人が多く挙げる理由は何か。",
+        "difficulty": 1,
+        "options": [
+          "一人用の席がある店が、前より増えてきたから",
+          "相手に合わせる必要がなく、気持ちが楽だから",
+          "一緒に出かける友達が、なかなか見つからないから",
+          "一人で行くほうが、お金があまりかからないから"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「『相手に合わせなくていいから楽だ』という答えが多いそうだ」\n推理：问题问的是一个人活动的人自己给出的理由。文中引用的回答就是“不用配合别人，所以轻松”。单人座位增加是社会的变化，不是他们说的理由。",
+          "en": "Evidence: 「『相手に合わせなくていいから楽だ』という答えが多いそうだ」\nReasoning: The question asks for the reason solo-goers themselves give, and the quoted answer is \"it's easy because I needn't fit in with anyone\". More seats for one is a change in society, not their stated reason."
+        },
+        "wrong": [
+          {
+            "zh": "单人座位增加是第一段讲的社会变化，不是本人给出的理由。",
+            "en": "More seats for one is the social change in paragraph one, not the reason they give."
+          },
+          null,
+          {
+            "zh": "“是不是没朋友”是以前旁人的看法，不是本人的理由。",
+            "en": "\"No friends?\" was what onlookers used to think, not the people's own reason."
+          },
+          {
+            "zh": "文中没有提到费用。",
+            "en": "Cost isn't mentioned."
+          }
+        ]
+      },
+      {
+        "q": "最近の店やホテルについて、文章の内容に合うものはどれか。",
+        "options": [
+          "一人で来る客には、席を用意しない店が増えている。",
+          "一人で来る客が多いので、料金を上げる店が増えている。",
+          "一人で来る客のために、席やプランを用意する所が増えている。",
+          "一人で来る客より、家族で来る客を大切にする所が増えている。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「今では、一人用の席を用意する店や、一人客向けのプランを作るホテルも増えている」\n推理：「しかし今では」和以前对比：现在为一个人来的客人准备座位的店、推出单人方案的酒店都在增加。选项把店和酒店合起来换说成“准备座位和方案的地方”。",
+          "en": "Evidence: 「今では、一人用の席を用意する店や、一人客向けのプランを作るホテルも増えている」\nReasoning: 「しかし今では」 contrasts with the past: more shops provide seats for one and more hotels make solo plans. The option merges the two as \"places that provide seats and plans\"."
+        },
+        "wrong": [
+          {
+            "zh": "正相反，准备单人座位的店在增加。",
+            "en": "The opposite: more shops provide seats for one."
+          },
+          {
+            "zh": "文中没有提到涨价。",
+            "en": "Nothing is said about raising prices."
+          },
+          null,
+          {
+            "zh": "文中没有说店家更重视家庭客人。",
+            "en": "Nothing says businesses favour families."
+          }
+        ]
+      },
+      {
+        "q": "筆者の考えに合うものはどれか。",
+        "options": [
+          "一人の時間を楽しめる人は、人と過ごす時間も大切にできる。",
+          "人に合わせるのは疲れるので、できるだけ一人で過ごすほうがいい。",
+          "一人で食事をする人を見て、友達がいないと思うのは正しい。",
+          "友人や家族と過ごす時間は、これからは今ほど大切ではなくなる。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「一人の時間を楽しめる人は、誰かと過ごす時間も、もっと大切にできるのではないだろうか」\n推理：最后一段先用「もちろん」承认和朋友家人的时间依然重要，再用「ただ」说出作者的看法；句末「のではないだろうか」是委婉的主张。选项就是这句话。",
+          "en": "Evidence: 「一人の時間を楽しめる人は、誰かと過ごす時間も、もっと大切にできるのではないだろうか」\nReasoning: The last paragraph grants with 「もちろん」 that time with others still matters, then gives the writer's view after 「ただ」; 「のではないだろうか」 states it softly. The option is that sentence."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "作者说和朋友家人的时间「大切なことは変わらない」，没有主张尽量一个人过。",
+            "en": "He says time with friends and family 「大切なことは変わらない」; he doesn't urge spending as much time alone as possible."
+          },
+          {
+            "zh": "这是以前一些人的看法，作者用「しかし今では」表示情况已经变了。",
+            "en": "That was some people's view in the past; 「しかし今では」 shows things have changed."
+          },
+          {
+            "zh": "作者说那样的时间「大切なことは変わらない」。",
+            "en": "He says such time 「大切なことは変わらない」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-308",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "大学を卒業して、仕事で大阪に住むことになった。東京で生まれ育った私は、最初、大阪の人の話し方に驚いた。声が大きく、初めて会った人にも平気で冗談を言う。店で服を見ていると、店員さんに「それ、よう似合うわ」と気軽に話しかけられる。正直に言うと、少し苦手だった。\nしかし、半年ほどたったころ、仕事でミスをして落ち込んでいた私に、同僚が「そんなん、誰でもやるって」と笑いながら言ってくれた。もし同じことを真面目な顔で丁寧に言われていたら、かえって申し訳ない気持ちになっていたかもしれない。冗談のような軽い言い方だったからこそ、気持ちが楽になったのだ。\nそれ以来、大阪の人の話し方の見方が変わった。今では、あの話し方は、相手との距離を縮めるための工夫なのだと思っている。",
+    "tr": {
+      "zh": "大学毕业后，我因为工作要住在大阪。在东京出生长大的我，一开始对大阪人的说话方式很吃惊。声音大，对初次见面的人也满不在乎地开玩笑。在店里看衣服时，店员会随口搭话：“这件很适合你呀。”说实话，我有点不习惯。\n但是，大约过了半年，我在工作中出了错，正情绪低落时，同事笑着对我说：“那种事，谁都会犯啦。”如果同样的话是板着脸、很客气地说出来，我说不定反而会觉得过意不去。正因为是像开玩笑一样轻松的说法，我心里才轻松了。\n从那以后，我对大阪人说话方式的看法改变了。现在我认为，那种说话方式是为了拉近和对方距离的一种用心。",
+      "en": "After graduating from university, I came to live in Osaka for work. Born and raised in Tokyo, I was at first surprised by how people in Osaka talk. They speak loudly and think nothing of joking with people they've just met. When I looked at clothes in a shop, the assistant would casually say, 'That really suits you.' To be honest, I found it a little hard.\nBut about six months later, when I was down after making a mistake at work, a colleague laughed and said, 'Oh, everybody does that.' If the same thing had been said to me politely with a serious face, I might have felt even more apologetic. It was precisely because it was said lightly, like a joke, that I felt better.\nSince then my view of the Osaka way of talking has changed. Now I think it is a way of closing the distance between people."
+    },
+    "questions": [
+      {
+        "q": "筆者が最初、大阪の人の話し方を少し苦手だと感じたのはなぜか。",
+        "difficulty": 1,
+        "options": [
+          "言葉が東京と違いすぎて、何を言っているか分からなかったから",
+          "店員さんに、似合わない服ばかりすすめられたから",
+          "仕事でミスをしたとき、同僚に笑われてしまったから",
+          "初めて会った人にも、気軽に冗談を言って話しかけてくるから"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「声が大きく、初めて会った人にも平気で冗談を言う」；「店員さんに『それ、よう似合うわ』と気軽に話しかけられる」\n推理：「少し苦手だった」前面列出的就是让作者吃惊的地方：声音大、对初次见面的人也开玩笑、店员随便搭话。选项概括了这些。",
+          "en": "Evidence: 「声が大きく、初めて会った人にも平気で冗談を言う」; 「店員さんに『それ、よう似合うわ』と気軽に話しかけられる」\nReasoning: What comes before 「少し苦手だった」 lists what surprised him: loud voices, joking with strangers, shop staff chatting casually. The option sums these up."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有说听不懂；让他吃惊的是说话的态度。",
+            "en": "He never says he couldn't understand; it was the manner that surprised him."
+          },
+          {
+            "zh": "店员说的是「よう似合う」，是夸他合适，不是推荐不合适的衣服。",
+            "en": "The assistant said 「よう似合う」 — it suits you — not pushing clothes that didn't."
+          },
+          {
+            "zh": "同事笑着安慰他是半年后的事，而且让他心里轻松了，不是“被笑话”。",
+            "en": "The colleague's laughing comfort came six months later and made him feel better — he wasn't laughed at."
+          },
+          null
+        ]
+      },
+      {
+        "q": "「気持ちが楽になった」のはなぜか。",
+        "options": [
+          "同僚が、ミスを代わりに直してくれたから",
+          "同僚に、冗談のように軽い調子で言われたから",
+          "同僚に、真面目な顔で丁寧に謝られたから",
+          "同僚も、同じミスをしたことがあると知ったから"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「冗談のような軽い言い方だったからこそ、気持ちが楽になったのだ」\n推理：「〜からこそ」强调原因：正因为同事说得像开玩笑一样轻松。前一句是假设：如果板着脸客气地说，反而会过意不去。",
+          "en": "Evidence: 「冗談のような軽い言い方だったからこそ、気持ちが楽になったのだ」\nReasoning: 「〜からこそ」 stresses the cause: it was said lightly, like a joke. The sentence before is hypothetical: said seriously and politely, it would have made him feel worse."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有说同事帮他改了错误。",
+            "en": "Nothing says the colleague fixed the mistake for him."
+          },
+          null,
+          {
+            "zh": "板着脸客气地说只是假设，而且作者说那样反而会过意不去。",
+            "en": "Serious politeness is only a hypothetical — one that would have made him feel worse."
+          },
+          {
+            "zh": "同事说的是「誰でもやる」，没有说自己也犯过同样的错。",
+            "en": "The colleague said 「誰でもやる」, not that he had made the same mistake."
+          }
+        ]
+      },
+      {
+        "q": "今、筆者は大阪の人の話し方をどう考えているか。",
+        "options": [
+          "相手との距離を縮めるための、一つの工夫だ。",
+          "初めて会った人には、失礼になることが多い。",
+          "東京の人も、まねをして使ったほうがいい。",
+          "仕事の場面では、あまり使わないほうがいい。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「今では、あの話し方は、相手との距離を縮めるための工夫なのだと思っている」\n推理：「それ以来…見方が変わった」后面就是作者现在的看法：那种说话方式是拉近距离的用心。选项与原句一致。",
+          "en": "Evidence: 「今では、あの話し方は、相手との距離を縮めるための工夫なのだと思っている」\nReasoning: After 「それ以来…見方が変わった」 comes his present view: that way of talking is a means of closing the distance. The option matches it."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "觉得不习惯是作者「最初」的感受，现在看法已经变了。",
+            "en": "Finding it hard was how he felt 「最初」; his view has changed."
+          },
+          {
+            "zh": "作者没有建议东京人模仿。",
+            "en": "He doesn't suggest Tokyo people copy it."
+          },
+          {
+            "zh": "正是在工作中同事的那句话让他轻松了，文中没有说工作中不该用。",
+            "en": "It was a colleague's remark at work that helped him; nothing says to avoid it at work."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-309",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "図書館といえば、静かに本を読んだり勉強したりする場所だと考える人が多いだろう。ところが最近、話をしてもいいスペースを作る図書館が増えている。\n私の町の図書館も、去年建て直したときに、1階をカフェのような場所にした。飲み物を持ち込むことができ、小さな声なら話をしてもいい。高校生がグループで宿題をしたり、お年寄りが新聞を読みながらおしゃべりしたりしている。一方、2階と3階は、これまでどおり静かに過ごす場所として残してある。\n計画の段階では、図書館がうるさくなるのではないかと反対する声もあったそうだ。しかし実際には、利用者は前の二倍に増えた。特に、これまでほとんど来なかった若い人が多く来るようになったという。\n本を借りる場所としてだけでなく、人が集まる場所としての役割も、これからの図書館には求められているのだろう。",
+    "tr": {
+      "zh": "说到图书馆，很多人会认为那是安静地读书、学习的地方吧。可是最近，设置可以说话的空间的图书馆越来越多了。\n我们镇上的图书馆去年重建时，也把1楼改成了像咖啡馆一样的地方。可以带饮料进去，小声的话也可以说话。高中生们成群地做作业，老人们一边看报纸一边聊天。另一方面，2楼和3楼仍然保留为安静度过的地方。\n据说在计划阶段，也有人反对，担心图书馆会变吵。但实际上，利用者增加到了以前的两倍。特别是以前几乎不来的年轻人，现在来了很多。\n今后的图书馆，不仅要作为借书的地方，大概也被要求承担人们聚集场所的作用吧。",
+      "en": "When people think of a library, many probably think of a place to read or study quietly. Recently, however, more and more libraries are creating spaces where talking is allowed.\nWhen my town's library was rebuilt last year, it too turned its 1st floor into a café-like space. You can bring in drinks, and you may talk if you keep your voice down. High-school students do homework in groups, and elderly people chat while reading the paper. The 2nd and 3rd floors, on the other hand, have been kept as quiet places, as before.\nAt the planning stage, apparently, some opposed the idea, fearing the library would become noisy. In fact, though, the number of users doubled. In particular, many young people who had hardly ever come before now visit.\nIt seems that libraries in future are expected to play a role not only as places to borrow books but also as places where people gather."
+    },
+    "questions": [
+      {
+        "q": "新しくなった図書館の1階について、正しいものはどれか。",
+        "difficulty": 1,
+        "options": [
+          "飲み物を持って入れて、小さい声なら話してもいい。",
+          "2階や3階と同じように、静かに過ごす場所である。",
+          "高校生だけが使える、宿題のための場所である。",
+          "本を借りる人は使えず、話をするためだけの場所である。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「飲み物を持ち込むことができ、小さな声なら話をしてもいい」\n推理：选项“可以带饮料进去”＝「飲み物を持ち込むことができ」，“小声可以说话”＝「小さな声なら話をしてもいい」。保持安静的是2楼和3楼。",
+          "en": "Evidence: 「飲み物を持ち込むことができ、小さな声なら話をしてもいい」\nReasoning: \"May bring drinks in\" = 「飲み物を持ち込むことができ」; \"may talk quietly\" = 「小さな声なら話をしてもいい」. The quiet floors are the 2nd and 3rd."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "安静的是2楼和3楼，用「一方」和1楼对比。",
+            "en": "The quiet ones are the 2nd and 3rd floors, contrasted with 「一方」."
+          },
+          {
+            "zh": "老人也在那里看报纸聊天，不只是高中生。",
+            "en": "Elderly people chat there too; it isn't only for high-school students."
+          },
+          {
+            "zh": "文中没有说借书的人不能用1楼。",
+            "en": "Nothing says borrowers can't use the 1st floor."
+          }
+        ]
+      },
+      {
+        "q": "図書館が新しくなって、どうなったか。",
+        "options": [
+          "うるさくなったので、反対する人が増えた。",
+          "静かな場所が減ったので、お年寄りが来なくなった。",
+          "高校生が増えて、本を借りる人が減ってしまった。",
+          "利用者が増え、特に若い人がよく来るようになった。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「実際には、利用者は前の二倍に増えた。特に、これまでほとんど来なかった若い人が多く来るようになった」\n推理：「しかし実際には」和计划阶段的担心对比：结果利用者翻倍，特别是年轻人多了。反对意见是计划阶段的事，不是重建之后。",
+          "en": "Evidence: 「実際には、利用者は前の二倍に増えた。特に、これまでほとんど来なかった若い人が多く来るようになった」\nReasoning: 「しかし実際には」 contrasts with the fears at the planning stage: users doubled, especially young people. The objections came before the rebuild, not after."
+        },
+        "wrong": [
+          {
+            "zh": "反对是「計画の段階」的事，实际结果是利用者增加了。",
+            "en": "The objections were 「計画の段階」; in fact users increased."
+          },
+          {
+            "zh": "老人在1楼看报纸聊天；而且2、3楼仍保持安静。",
+            "en": "Elderly people chat on the 1st floor, and the upper floors stayed quiet."
+          },
+          {
+            "zh": "文中没有说借书的人减少了。",
+            "en": "Nothing says fewer people borrow books."
+          },
+          null
+        ]
+      },
+      {
+        "q": "筆者は、これからの図書館についてどう考えているか。",
+        "options": [
+          "静かに本を読む場所は、もう必要なくなるだろう。",
+          "若い人が来るように、カフェを作るべきだ。",
+          "人が集まる場所としての役割も求められている。",
+          "本を借りる場所としての役割は、終わりつつある。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「本を借りる場所としてだけでなく、人が集まる場所としての役割も、これからの図書館には求められているのだろう」\n推理：「AだけでなくBも」：借书的作用还在，再加上人们聚集的作用。选项抓住了「〜も求められている」。",
+          "en": "Evidence: 「本を借りる場所としてだけでなく、人が集まる場所としての役割も、これからの図書館には求められているのだろう」\nReasoning: 「AだけでなくBも」: borrowing books stays, and a gathering role is added. The option keeps 「〜も求められている」."
+        },
+        "wrong": [
+          {
+            "zh": "2、3楼仍保留为安静的地方，作者没有说不再需要。",
+            "en": "The upper floors are kept quiet; he never says such places are no longer needed."
+          },
+          {
+            "zh": "作者只是介绍了镇上图书馆的例子，没有主张都该开咖啡馆。",
+            "en": "He describes his town's case; he doesn't say every library should open a café."
+          },
+          null,
+          {
+            "zh": "「AだけでなくBも」表示借书的作用依然存在。",
+            "en": "「AだけでなくBも」 means the book-lending role remains."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-310",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "最近、電話をかけるのが苦手だという若い社員が多いらしい。私の会社でも、新入社員の中に、電話が鳴っても取ろうとしない人がいる。理由を聞いてみると、「相手の顔が見えないし、何を聞かれるか分からないので怖い」と言う。\n考えてみれば、今の若い人は、友達との連絡をほとんどメッセージで済ませてきた世代だ。メッセージなら、返事を考える時間があり、送る前に何度でも直せる。電話のように、その場ですぐに答えなければならない状況に慣れていないのは、当然かもしれない。\nただ、仕事では、電話でなければ伝わりにくいこともある。急ぎの用件や、細かい気持ちを伝えたいときだ。そこで私の部署では、新人が最初の一か月、先輩が電話で話すのを横で聞く時間を作ることにした。どんな言葉を使い、どう話を進めるのかを知るだけで、新人たちの電話への不安は、かなり減ったようだ。",
+    "tr": {
+      "zh": "听说最近有很多年轻员工不擅长打电话。我们公司的新员工里，也有人电话响了也不去接。问他原因，他说：“看不到对方的脸，又不知道会被问什么，所以害怕。”\n仔细想想，现在的年轻人，是和朋友联系几乎都用消息解决的一代。如果是消息，就有时间考虑怎么回复，发送之前可以改无数次。对像电话那样必须当场马上回答的情况不习惯，也许是理所当然的。\n不过，在工作中，有些事不用电话就很难传达。比如紧急的事情，或者想传达细微的心情的时候。于是我们部门决定，新人在最初的一个月，安排时间在旁边听前辈打电话。光是了解用什么措辞、怎样推进谈话，新人们对电话的不安似乎就减少了很多。",
+      "en": "Apparently many young employees these days are bad at making phone calls. At my company too, some new employees won't pick up the phone when it rings. When I asked why, one said, 'I can't see the other person's face, and I don't know what they'll ask, so it's scary.'\nCome to think of it, today's young people are a generation that has done nearly all its contact with friends by message. With a message you have time to think about your reply and can fix it as many times as you like before sending. It's perhaps only natural that they aren't used to situations like a phone call, where you must answer on the spot.\nAt work, though, some things are hard to get across except by phone: urgent matters, or when you want to convey subtle feelings. So in my department we decided that for their first month, new staff would spend time sitting beside seniors and listening to them on the phone. Just learning what words to use and how to move a conversation along seems to have reduced their anxiety about the phone considerably."
+    },
+    "questions": [
+      {
+        "q": "新入社員が電話を怖いと感じるのは、なぜか。",
+        "difficulty": 1,
+        "options": [
+          "電話で話した内容を、上司に聞かれるのがいやだから",
+          "相手の顔が見えず、何を聞かれるか分からないから",
+          "電話の相手が、いつも急ぎの用件ばかりだから",
+          "電話の正しい取り方を、まだ教わっていないから"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「相手の顔が見えないし、何を聞かれるか分からないので怖い」\n推理：问题问的是新员工自己说的理由，就在第一段他的回答里：看不到对方的脸，不知道会被问什么。选项几乎原样复述。",
+          "en": "Evidence: 「相手の顔が見えないし、何を聞かれるか分からないので怖い」\nReasoning: The question asks for the new employee's own reason, which is his answer in paragraph one: he can't see the face and doesn't know what he'll be asked. The option restates it."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有提到被上司听见。",
+            "en": "Being overheard by a boss isn't mentioned."
+          },
+          null,
+          {
+            "zh": "紧急的事是作者说明电话在工作中必要的例子，不是新人害怕的理由。",
+            "en": "Urgent matters are the writer's example of why phones matter at work, not the newcomer's fear."
+          },
+          {
+            "zh": "新员工说的理由是看不到脸、不知道会被问什么，不是没人教过。",
+            "en": "The reason he gives is not seeing faces and not knowing the questions, not a lack of training."
+          }
+        ]
+      },
+      {
+        "q": "筆者が「当然かもしれない」と考えるのは、なぜか。",
+        "options": [
+          "電話は、メッセージより相手に失礼になりやすいから",
+          "会社の電話は、友達との電話よりずっと難しいから",
+          "今は、仕事でも電話を使うことがほとんどないから",
+          "メッセージで連絡してきて、すぐ答える場面に慣れていないから"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「今の若い人は、友達との連絡をほとんどメッセージで済ませてきた世代だ」；「その場ですぐに答えなければならない状況に慣れていない」\n推理：年轻人一直用消息联系，有时间想、可以改；所以不习惯电话那样当场回答。选项把这两点合在一起。",
+          "en": "Evidence: 「今の若い人は、友達との連絡をほとんどメッセージで済ませてきた世代だ」; 「その場ですぐに答えなければならない状況に慣れていない」\nReasoning: Young people have always used messages, with time to think and edit, so they aren't used to answering on the spot as on the phone. The option combines both points."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有说电话比消息更容易失礼。",
+            "en": "Nothing says calls are ruder than messages."
+          },
+          {
+            "zh": "文中没有比较公司电话和朋友电话的难度。",
+            "en": "The text doesn't compare work calls with calls to friends."
+          },
+          {
+            "zh": "作者说工作中有些事「電話でなければ伝わりにくい」，电话仍在使用。",
+            "en": "He says some things at work are 「電話でなければ伝わりにくい」; phones are still used."
+          },
+          null
+        ]
+      },
+      {
+        "q": "筆者の部署で始めたことと、その結果について、正しいものはどれか。",
+        "options": [
+          "新人が電話に出る回数を増やしたら、電話に慣れてきた。",
+          "電話の代わりにメッセージを使うようにしたら、不安が減った。",
+          "新人に先輩の電話を横で聞かせたら、不安がかなり減った。",
+          "電話の話し方の本を配ったら、新人が電話に出るようになった。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「新人が最初の一か月、先輩が電話で話すのを横で聞く時間を作ることにした」；「新人たちの電話への不安は、かなり減ったようだ」\n推理：「そこで」引出部门的做法：让新人在旁边听前辈打电话。结果是了解措辞和谈话方式后，对电话的不安减少了很多。",
+          "en": "Evidence: 「新人が最初の一か月、先輩が電話で話すのを横で聞く時間を作ることにした」; 「新人たちの電話への不安は、かなり減ったようだ」\nReasoning: 「そこで」 introduces the department's step: newcomers listen beside seniors on the phone. The result: knowing the wording and flow, their anxiety dropped a lot."
+        },
+        "wrong": [
+          {
+            "zh": "做法是在旁边听前辈打电话，不是让新人多接电话。",
+            "en": "The step was listening beside seniors, not making newcomers take more calls."
+          },
+          {
+            "zh": "作者认为有些事必须打电话，没有改用消息。",
+            "en": "He thinks some things need a call; they didn't switch to messages."
+          },
+          null,
+          {
+            "zh": "文中没有提到发书。",
+            "en": "No book is mentioned."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-311",
+    "type": "mid",
+    "difficulty": 2,
+    "intro": "これは、日本でホームステイをしたマイクさんが、ホストファミリーに書いた手紙です。",
+    "passage": "山田さんご一家へ\n\nご無沙汰しています。マイクです。日本から帰国して、もう一年になります。皆さん、お元気ですか。\n私は今、大学で日本語の勉強を続けながら、週に二回、日本料理の店でアルバイトをしています。店長には、日本人のお客さんと話せるので助かると言われています。\nホームステイを始めたばかりのころ、私は日本語がほとんど話せず、夕食の時間がつらかったです。皆さんの話が分からないので、ただ笑っているだけでした。そんな私に、お母さんは毎晩、その日にあったことを簡単な日本語でゆっくり話してくれましたね。少しずつ分かるようになって、三か月後には、自分からも話せるようになりました。あの夕食の時間がなかったら、今の私はいないと思います。\n来年の夏、また日本へ行く予定です。そのときは、今度は私が国の料理を作って、皆さんにごちそうしたいです。\n\nマイク",
+    "tr": {
+      "zh": "山田先生一家：\n\n好久没联系了。我是迈克。从日本回国已经一年了。大家都好吗？\n我现在一边在大学继续学日语，一边每周两次在一家日本料理店打工。店长说我能和日本客人交流，帮了大忙。\n刚开始寄宿的时候，我几乎不会说日语，晚饭的时间很难熬。因为听不懂大家在说什么，我只能一直笑着。对这样的我，妈妈每天晚上都用简单的日语，慢慢地讲那天发生的事。我一点点能听懂了，三个月后，自己也能主动说话了。我想，如果没有那段晚饭的时光，就不会有现在的我。\n明年夏天我打算再去日本。到时候，这次换我来做我们国家的菜，请大家吃。\n\n迈克",
+      "en": "Dear Yamada family,\n\nIt's been a long time. This is Mike. It's already been a year since I went home from Japan. How are you all?\nI'm now continuing to study Japanese at university and working part-time twice a week at a Japanese restaurant. The manager says it's a big help that I can talk with Japanese customers.\nWhen my homestay had just started, I could hardly speak Japanese, and dinner time was hard for me. I couldn't follow what you were all saying, so I just kept smiling. For me, Mother spoke slowly every evening in simple Japanese about what had happened that day. Little by little I came to understand, and after three months I could start talking myself. I don't think I'd be who I am now without those dinners.\nI plan to go to Japan again next summer. This time I'd like to cook food from my country and treat you all.\n\nMike"
+    },
+    "questions": [
+      {
+        "q": "ホームステイを始めたころ、マイクさんにとって夕食の時間がつらかったのはなぜか。",
+        "difficulty": 1,
+        "options": [
+          "日本語が分からず、家族の話に入れなかったから",
+          "日本の料理が口に合わず、あまり食べられなかったから",
+          "毎晩、その日にあったことを日本語で話させられたから",
+          "家族が忙しくて、一人で食べることが多かったから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「日本語がほとんど話せず、夕食の時間がつらかったです。皆さんの話が分からないので、ただ笑っているだけでした」\n推理：几乎不会日语，听不懂大家的话，只能笑——也就是加入不了家人的谈话。选项是这两句的概括。",
+          "en": "Evidence: 「日本語がほとんど話せず、夕食の時間がつらかったです。皆さんの話が分からないので、ただ笑っているだけでした」\nReasoning: He could barely speak, couldn't follow the talk and could only smile — in other words, he couldn't join the conversation. The option sums this up."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "信中没有说饭菜不合口味。",
+            "en": "The letter never says the food didn't suit him."
+          },
+          {
+            "zh": "每晚讲当天的事的是妈妈，不是让迈克讲。",
+            "en": "It was Mother who talked about the day each evening, not Mike who was made to."
+          },
+          {
+            "zh": "信中说的是和大家一起吃饭时听不懂，并没有一个人吃。",
+            "en": "He ate with the family but couldn't follow; he didn't eat alone."
+          }
+        ]
+      },
+      {
+        "q": "お母さんは、マイクさんのためにどんなことをしたか。",
+        "options": [
+          "夕食の後に、毎晩日本語の文法を教えた。",
+          "マイクさんが分かるまで、同じ話を何度も繰り返した。",
+          "毎晩、その日のできごとを、やさしい日本語でゆっくり話した。",
+          "家族みんなに、マイクさんの国の言葉で話すように言った。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「お母さんは毎晩、その日にあったことを簡単な日本語でゆっくり話してくれましたね」\n推理：选项“当天的事”＝「その日にあったこと」，“简单的日语”＝「簡単な日本語」，“慢慢地”＝「ゆっくり」。信中没有提到教语法或重复同一件事。",
+          "en": "Evidence: 「お母さんは毎晩、その日にあったことを簡単な日本語でゆっくり話してくれましたね」\nReasoning: \"The day's events\" = 「その日にあったこと」, \"easy Japanese\" = 「簡単な日本語」, \"slowly\" = 「ゆっくり」. The letter mentions no grammar lessons or repeating stories."
+        },
+        "wrong": [
+          {
+            "zh": "信中没有说教语法。",
+            "en": "No grammar lessons are mentioned."
+          },
+          {
+            "zh": "妈妈讲的是每天发生的不同的事，信中没有说重复同样的话。",
+            "en": "She talked about each day's events; nothing says she repeated the same story."
+          },
+          null,
+          {
+            "zh": "信中没有说家人用迈克国家的语言说话。",
+            "en": "Nothing says the family spoke Mike's language."
+          }
+        ]
+      },
+      {
+        "q": "マイクさんが来年の夏にしたいことは何か。",
+        "options": [
+          "日本料理の店で、アルバイトを続けること",
+          "山田さんの家族に、自分の国の料理を作ること",
+          "山田さんの家族を、自分の国に招待すること",
+          "山田さんのお母さんに、日本料理を教わること"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「来年の夏、また日本へ行く予定です。そのときは、今度は私が国の料理を作って、皆さんにごちそうしたいです」\n推理：「今度は私が」表示这次换他来做：以前山田家照顾他，明年他想做自己国家的菜请山田一家吃。「皆さん」指山田一家。",
+          "en": "Evidence: 「来年の夏、また日本へ行く予定です。そのときは、今度は私が国の料理を作って、皆さんにごちそうしたいです」\nReasoning: 「今度は私が」 means it's his turn: the Yamadas looked after him, and next year he wants to cook his country's food for them. 「皆さん」 is the Yamada family."
+        },
+        "wrong": [
+          {
+            "zh": "打工是他现在在本国做的事，不是明年夏天想做的事。",
+            "en": "The part-time job is what he does now at home, not his plan for next summer."
+          },
+          null,
+          {
+            "zh": "是迈克自己去日本，不是邀请山田家去他的国家。",
+            "en": "Mike is the one going to Japan; he isn't inviting the family to his country."
+          },
+          {
+            "zh": "他想做的是「国の料理」，不是学日本料理。",
+            "en": "He wants to cook 「国の料理」, not learn Japanese cooking."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-312",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "父は六十五歳で会社を辞めた。四十年以上同じ会社で働き、休みの日も仕事のことばかり考えているような人だった。だから、退職したら何をすればいいか分からず、元気をなくしてしまうのではないかと、家族はみんな心配していた。\n実際、最初の数か月、父は毎日テレビの前に座ってばかりいた。ところがある日、市の広報誌で、観光案内のボランティアを募集しているのを見つけて、申し込んだ。今では週に三日、駅の案内所に立ち、町を訪れた人に道を教えたり、古いお寺の歴史を説明したりしている。\n父は「会社にいたころは、自分の仕事が誰の役に立っているのか、よく分からなかった。今は、ありがとうと直接言ってもらえるのがうれしい」と話す。家で歴史の本を読む時間も増え、以前より楽しそうに見える。",
+    "tr": {
+      "zh": "父亲六十五岁时从公司退休了。他在同一家公司工作了四十多年，是那种休息日也满脑子工作的人。所以家里人都担心，他退休后会不知道该做什么，变得没精神。\n实际上，最初几个月，父亲每天只是坐在电视机前。可是有一天，他在市里的宣传刊物上看到招募观光导游志愿者，就报了名。现在他每周三天站在车站的咨询处，给来镇上的人指路，介绍古寺的历史。\n父亲说：“在公司的时候，我不太清楚自己的工作对谁有帮助。现在能直接听到别人说谢谢，很开心。”他在家读历史书的时间也多了，看起来比以前开心。",
+      "en": "My father left his company at 65. He had worked at the same firm for over forty years and was the kind of person who thought about nothing but work even on his days off. So the whole family worried that once retired he wouldn't know what to do and would lose his spirit.\nIndeed, for the first few months he did nothing but sit in front of the TV every day. But one day he saw in the city newsletter that volunteers were wanted as tourist guides, and he applied. Now, three days a week, he stands at the information desk at the station, showing visitors the way and explaining the history of the old temples.\nHe says, 'When I was at the company, I never really knew who my work was helping. Now I'm glad that people thank me directly.' He also spends more time reading history books at home and seems happier than before."
+    },
+    "questions": [
+      {
+        "q": "家族が心配していたのは、なぜか。",
+        "difficulty": 1,
+        "options": [
+          "父が、退職してもまた別の会社で働こうとしていたから",
+          "父が、体を壊して会社を辞めることになったから",
+          "父が、家で一日中テレビを見ている人だったから",
+          "仕事ばかりだった父が、退職後に元気をなくすと思ったから"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「休みの日も仕事のことばかり考えているような人だった」；「退職したら何をすればいいか分からず、元気をなくしてしまうのではないかと、家族はみんな心配していた」\n推理：「だから」把两句连起来：父亲以前满脑子工作，所以家人担心他退休后无事可做、没精神。看电视是退休之后实际发生的事，不是担心的原因。",
+          "en": "Evidence: 「休みの日も仕事のことばかり考えているような人だった」; 「退職したら何をすればいいか分からず、元気をなくしてしまうのではないかと、家族はみんな心配していた」\nReasoning: 「だから」 links them: he had lived for work, so the family feared he'd have nothing to do and lose heart. The TV came after retirement; it wasn't the reason for worry."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有说他想去别的公司工作。",
+            "en": "Nothing says he wanted to work for another company."
+          },
+          {
+            "zh": "文中没有说他因为身体不好辞职，他是六十五岁退休。",
+            "en": "Nothing says he quit through ill health; he retired at 65."
+          },
+          {
+            "zh": "整天看电视是退休后最初几个月的事，不是家人担心的原因。",
+            "en": "Watching TV all day happened in the first months after retiring; it wasn't why the family worried."
+          },
+          null
+        ]
+      },
+      {
+        "q": "父が観光案内のボランティアを始めたきっかけは何か。",
+        "options": [
+          "駅の案内所の人に、手伝ってほしいと頼まれた。",
+          "市の広報誌で、ボランティアの募集を見つけた。",
+          "家族に、テレビばかり見ないように言われた。",
+          "会社の友人に、一緒にやらないかと誘われた。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「市の広報誌で、観光案内のボランティアを募集しているのを見つけて、申し込んだ」\n推理：「ところがある日」引出转折：他在市里的宣传刊物上看到招募，自己报了名。没有人请他或劝他。",
+          "en": "Evidence: 「市の広報誌で、観光案内のボランティアを募集しているのを見つけて、申し込んだ」\nReasoning: 「ところがある日」 brings the turn: he saw the call for volunteers in the city newsletter and applied himself. Nobody asked or persuaded him."
+        },
+        "wrong": [
+          {
+            "zh": "咨询处是他现在做志愿者的地方，文中没有说那里的人请他帮忙。",
+            "en": "The desk is where he volunteers now; nobody there asked him."
+          },
+          null,
+          {
+            "zh": "文中没有说家人劝他别看电视。",
+            "en": "Nothing says the family told him to stop watching TV."
+          },
+          {
+            "zh": "文中没有提到公司的朋友。",
+            "en": "No friend from work is mentioned."
+          }
+        ]
+      },
+      {
+        "q": "父がボランティアをしていてうれしいと感じているのは、どんなことか。",
+        "options": [
+          "町を訪れた人と、お寺の歴史について話し合えること",
+          "会社にいたころより、自由な時間が多くなったこと",
+          "役に立ったことを、相手から直接感謝されること",
+          "家で歴史の本を読む時間が、以前より増えたこと"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「今は、ありがとうと直接言ってもらえるのがうれしい」\n推理：父亲把现在和在公司时对比：以前不知道工作对谁有用，现在能直接听到“谢谢”。「うれしい」的对象就是被直接感谢。读历史书多了是作者看到的变化，不是父亲说的开心的事。",
+          "en": "Evidence: 「今は、ありがとうと直接言ってもらえるのがうれしい」\nReasoning: He contrasts now with his company days: back then he didn't know whom his work helped; now he hears 'thank you' directly. That is what 「うれしい」 refers to. Reading more history is a change the writer notices, not what the father says makes him glad."
+        },
+        "wrong": [
+          {
+            "zh": "他是给人介绍寺庙历史，父亲说开心的是被直接感谢。",
+            "en": "He explains temple history, but what he says makes him glad is being thanked directly."
+          },
+          {
+            "zh": "文中没有说他因为时间自由而开心。",
+            "en": "Nothing says free time is what pleases him."
+          },
+          null,
+          {
+            "zh": "读书时间增加是作者观察到的变化，不是父亲说的开心的理由。",
+            "en": "More reading time is something the writer observes, not the reason the father gives."
+          }
+        ]
+      }
+    ]
   }
 ]
