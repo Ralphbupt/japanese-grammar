@@ -1090,5 +1090,401 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n2-dk-312",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "入社して二年目、部の会議で議事録を取る係になった。会議の内容を記録して、後で全員に配る仕事である。最初のうちは、発言をできるだけそのまま書き留めようとした。聞き漏らしてはいけないと思い、パソコンの画面から顔を上げる余裕もなかった。ところが、できあがった議事録を読んだ課長に、「これでは何が決まったのか分からない」と言われてしまった。\n確かに、読み返してみると、誰が何を言ったかは細かく書いてあるのに、結論も、次に誰が何をするのかも、どこにも書かれていなかった。私は言葉を記録することに必死で、話し合いの流れを追っていなかったのだ。\nそれからは、書き方を変えた。発言を全部書くのはやめ、議題ごとに、決まったこと、決まらなかったこと、次の会議までに誰が何をするか、の三つだけを書くようにした。そのためには、話がどこに向かっているのかを考えながら聞かなければならない。結論があいまいなまま次の話題に移りそうになると、「今の件は、木村さんが来週までに調べるということでよろしいですか」と確認するようにもなった。\n不思議なことに、そうしているうちに、会議そのものが短くなった。決まったことと決まっていないことがその場ではっきりするので、同じ話を何度も繰り返さずに済むようになったのである。議事録を取る係は、ただ記録するだけの人ではない。会議を前に進める役も担っているのだと、今は思う。",
+    "tr": {
+      "zh": "进公司第二年，我成了部门会议上做会议记录的人。这份工作是记录会议内容，之后发给所有人。一开始，我尽量把发言原样记下来。我怕漏听，连从电脑屏幕上抬起头的空都没有。可是，读了我做好的会议记录的科长对我说：“这样根本看不出决定了什么。”\n的确，重读一遍发现，谁说了什么写得很细，可结论、下一步谁做什么，哪里都没写。我拼命记录话语，却没有跟上讨论的走向。\n从那以后，我改变了写法。不再把发言全部写下来，而是每个议题只写三点：决定了的事、没决定的事、下次会议前谁做什么。为此，必须一边想着话题朝哪里发展一边听。眼看结论还模糊就要转到下一个话题时，我也开始确认：“刚才这件事，就由木村先生在下周之前调查，可以吗？”\n不可思议的是，这样做着做着，会议本身变短了。因为决定了和没决定的事当场就清楚了，同样的话就不用反复说了。做会议记录的人不只是记录的人。现在我认为，他也承担着推动会议前进的角色。",
+      "en": "In my second year at the company, I was made the minute-taker for our department's meetings: the job of recording what is said and later distributing it to everyone. At first I tried to write down every remark as it was said. Afraid of missing something, I couldn't even look up from my computer screen. But my section chief, after reading the finished minutes, told me, 'With this, I can't tell what was decided.'\nIndeed, reading them again, I saw that who said what was written in detail, but neither the conclusions nor who would do what next appeared anywhere. I had been so desperate to record words that I hadn't followed the flow of the discussion.\nAfter that I changed how I wrote. I stopped writing every remark and, for each agenda item, wrote only three things: what was decided, what wasn't, and who would do what by the next meeting. To do that, I had to listen while thinking about where the discussion was heading. When it looked as if we'd move on with a conclusion still vague, I began checking: 'On this point, is it agreed that Mr Kimura will look into it by next week?'\nStrangely, as I did this, the meetings themselves got shorter. Because what was and wasn't decided became clear on the spot, we no longer had to go over the same ground again and again. The minute-taker is not just someone who records. I now think they also play a part in moving the meeting forward."
+    },
+    "questions": [
+      {
+        "q": "課長に「これでは何が決まったのか分からない」と言われたのはなぜか。",
+        "options": [
+          "発言を全部書いたので、議事録が長くなりすぎていたから。",
+          "誰がどの発言をしたのかが、議事録に書かれていなかったから。",
+          "会議が終わってから、議事録を配るまでに時間がかかったから。",
+          "発言は細かく記録してあったが、結論が書かれていなかったから。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「誰が何を言ったかは細かく書いてあるのに、結論も、次に誰が何をするのかも、どこにも書かれていなかった」。\n推理：紧接着科长的话，作者重读后发现了原因：发言记得很细，却没有结论。「〜のに」前后的对比正是选项的两半。",
+          "en": "Evidence: 「誰が何を言ったかは細かく書いてあるのに、結論も、次に誰が何をするのかも、どこにも書かれていなかった」.\nReasoning: Right after the chief's remark, the writer rereads and finds why: remarks in detail, no conclusions. The two sides of 「〜のに」 are the option's two halves."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有说记录太长，问题在于没写结论。",
+            "en": "Length isn't the complaint; the missing conclusions are."
+          },
+          {
+            "zh": "文中说「誰が何を言ったかは細かく書いてある」，恰恰写了。",
+            "en": "「誰が何を言ったかは細かく書いてある」: that part was there."
+          },
+          {
+            "zh": "文中没有提到分发得晚，科长批评的是内容。",
+            "en": "Late distribution isn't mentioned; the chief criticised the content."
+          },
+          null
+        ]
+      },
+      {
+        "q": "書き方を変えてから、筆者は会議をどのように聞くようになったか。",
+        "options": [
+          "話がどこに向かっているのかを考えながら聞くようになった。",
+          "発言を聞き漏らさないように、画面を見ながら聞くようになった。",
+          "自分の意見を言うために、他の人の話をよく聞くようになった。",
+          "課長が何を言うかに、特に注意しながら聞くようになった。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「そのためには、話がどこに向かっているのかを考えながら聞かなければならない」。\n推理：新写法只记「決まったこと、決まらなかったこと、誰が何をするか」三点，「そのためには」说明为此要一边想讨论的方向一边听。",
+          "en": "Evidence: 「そのためには、話がどこに向かっているのかを考えながら聞かなければならない」.\nReasoning: The new method records only the three items; 「そのためには」 says this requires listening while tracking where the talk is going."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "这是改写法以前的做法：「聞き漏らしてはいけないと思い、パソコンの画面から顔を上げる余裕もなかった」。",
+            "en": "That was the old way: 「聞き漏らしてはいけないと思い、パソコンの画面から顔を上げる余裕もなかった」."
+          },
+          {
+            "zh": "作者开口是为了「確認」结论和分工，不是发表自己的意见。",
+            "en": "The writer speaks up to 「確認」 decisions, not to give opinions."
+          },
+          {
+            "zh": "文中没有说特别注意科长的发言，而是关注整个讨论的方向。",
+            "en": "Nothing about focusing on the chief; the writer follows the whole discussion."
+          }
+        ]
+      },
+      {
+        "q": "議事録を取る係について、筆者はどのように考えているか。",
+        "options": [
+          "発言をそのまま記録することが、最も大切な仕事である。",
+          "会議を短くするために、議題の数を減らす役目がある。",
+          "記録するだけでなく、会議を進めることにも関わっている。",
+          "経験のある社員が担当しないと、うまくいかない仕事である。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「議事録を取る係は、ただ記録するだけの人ではない。会議を前に進める役も担っているのだと、今は思う」。\n推理：结尾「ただ〜だけではない」「〜も担っている」就是选项的「記録するだけでなく、…にも関わっている」。",
+          "en": "Evidence: 「議事録を取る係は、ただ記録するだけの人ではない。会議を前に進める役も担っているのだと、今は思う」.\nReasoning: The closing 「ただ〜だけではない」 and 「〜も担っている」 match the option's 「記録するだけでなく、…にも関わっている」."
+        },
+        "wrong": [
+          {
+            "zh": "原样记录发言是作者一开始的做法，正是被科长批评的。",
+            "en": "Recording remarks verbatim was the writer's first approach, the one criticised."
+          },
+          {
+            "zh": "会议变短是因为结论当场明确、「同じ話を何度も繰り返さずに済む」，不是减少议题。",
+            "en": "Meetings got shorter because things were settled on the spot (「同じ話を何度も繰り返さずに済む」), not because items were cut."
+          },
+          null,
+          {
+            "zh": "作者自己入职第二年就担任这个工作，文中没有说必须有经验。",
+            "en": "The writer did it in their second year; experience isn't said to be required."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-313",
+    "type": "mid",
+    "difficulty": 3,
+    "passage": "一人で焼き肉店やカラオケに行く人が増えているという。以前なら、一人で焼き肉を食べている姿は、寂しい人と見られがちだった。ところが最近では、一人用の席や一人前から注文できるメニューを用意する店が増え、「一人で楽しむ」ことが、ごく普通の過ごし方として受け入れられつつある。\nその背景には、働き方や暮らし方の変化があるのだろう。仕事の終わる時間は人によってばらばらで、友人と予定を合わせるのは簡単ではない。また、一人暮らしの人も年々増えている。誰かを誘って断られたらどうしようと気をつかうより、行きたいときに行きたい店へ一人で行くほうが気楽だと感じる人が多いのは、自然なことだ。\n私自身も、最近は一人で映画を見に行くことが多い。見たい作品を選ぶのにも、見た後の感想にも、誰にも遠慮しなくていい。終わった後、一人で静かに余韻にひたる時間も好きだ。\nただ、一人の楽しみに慣れすぎることには、少し不安もある。誰かと一緒に出かけると、自分では選ばない店に連れて行かれたり、思いがけない意見を聞かされたりする。面倒に感じることもあるが、そこから新しい好みが生まれることも多い。一人の気楽さは大切にしながらも、ときには人に合わせてみる。そのくらいのバランスがちょうどいいのではないかと思う。",
+    "tr": {
+      "zh": "据说一个人去烤肉店或卡拉OK的人越来越多。以前，一个人吃烤肉的样子往往会被看作是寂寞的人。可是最近，准备了单人座位和可以点一人份菜单的店越来越多，“一个人享受”正逐渐被接受为一种非常普通的度过时间的方式。\n其背景大概是工作方式和生活方式的变化。下班时间因人而异，和朋友约时间并不容易。另外，独居的人也逐年增加。与其担心约了别人被拒绝怎么办，不如想去的时候一个人去想去的店更轻松——很多人这样觉得，也是很自然的。\n我自己最近也常常一个人去看电影。选想看的片子也好，看完后的感想也好，都不用顾忌任何人。看完后一个人静静地沉浸在余韵中的时间我也喜欢。\n不过，对于过于习惯一个人的乐趣，我也有些不安。和别人一起出去，会被带到自己不会选的店，或者听到意想不到的意见。有时会觉得麻烦，但新的喜好也常常从中产生。在珍惜一个人的轻松的同时，偶尔也试着配合别人。我觉得这样的平衡正好。",
+      "en": "More people, it seems, are going to yakiniku restaurants or karaoke on their own. In the past, someone eating yakiniku alone tended to be seen as lonely. Recently, though, more places offer single seats and menus you can order from in single portions, and 'enjoying things alone' is coming to be accepted as a perfectly ordinary way to spend time.\nBehind this, presumably, are changes in how we work and live. People finish work at all different times, and fitting plans around friends isn't easy. The number of people living alone is also rising year by year. It's natural that many feel it easier to go alone to the place they want when they want than to fret over what to do if someone turns them down.\nI myself often go to films alone these days. Neither in choosing what to see nor in my impressions afterwards do I have to defer to anyone. I also like the time afterwards, quietly savouring the afterglow by myself.\nStill, I feel a little uneasy about getting too used to solitary pleasures. When you go out with someone, you get taken to places you'd never choose yourself and hear opinions you didn't expect. It can feel like a nuisance, but new tastes often come from it. Valuing the ease of being alone while sometimes going along with others — I think that kind of balance is about right."
+    },
+    "questions": [
+      {
+        "q": "一人で楽しむ人が増えている背景として、筆者が述べているのはどれか。",
+        "options": [
+          "一人で食事をするほうが、健康によいと考えられるようになったこと",
+          "友人と予定を合わせにくく、一人で暮らす人も増えていること",
+          "店が、二人以上で来る客をあまり歓迎しなくなってきたこと",
+          "一人で利用するほうが、料金が安く設定されていること"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「仕事の終わる時間は人によってばらばらで、友人と予定を合わせるのは簡単ではない。また、一人暮らしの人も年々増えている」。\n推理：「その背景には」之后列出两点：下班时间不同、难以约朋友；独居者增加。选项把这两点合在一起。",
+          "en": "Evidence: 「仕事の終わる時間は人によってばらばらで、友人と予定を合わせるのは簡単ではない。また、一人暮らしの人も年々増えている」.\nReasoning: After 「その背景には」 come two points: schedules that don't match and more people living alone. The option combines them."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有提到健康，背景是工作方式和生活方式的变化。",
+            "en": "Health isn't mentioned; the background is changes in work and living."
+          },
+          null,
+          {
+            "zh": "店家是增加了单人座位和一人份菜单，并没有不欢迎多人客。",
+            "en": "Shops added single seats and portions; they didn't turn groups away."
+          },
+          {
+            "zh": "文中没有比较价格。",
+            "en": "Prices aren't compared anywhere."
+          }
+        ]
+      },
+      {
+        "q": "筆者が一人で映画を見に行くことが多いのはなぜか。",
+        "options": [
+          "一人用の席は、料金が安くて見やすいから。",
+          "友人を誘っても、いつも断られてしまうから。",
+          "一人で見たほうが、内容がよく理解できるから。",
+          "作品選びや感想で、人に遠慮しなくていいから。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「見たい作品を選ぶのにも、見た後の感想にも、誰にも遠慮しなくていい」。\n推理：作者谈自己一个人看电影的好处：选片和感想都不用顾忌别人。「遠慮しなくていい」与选项一致。",
+          "en": "Evidence: 「見たい作品を選ぶのにも、見た後の感想にも、誰にも遠慮しなくていい」.\nReasoning: The writer's reason: no need to defer to anyone in choosing or reacting. 「遠慮しなくていい」 matches the option."
+        },
+        "wrong": [
+          {
+            "zh": "单人座位是第一段讲餐厅的事，作者没有谈电影票价。",
+            "en": "Single seats are about restaurants in paragraph 1; film prices aren't discussed."
+          },
+          {
+            "zh": "「断られたらどうしよう」是一般人的顾虑，作者没说自己总被拒绝。",
+            "en": "「断られたらどうしよう」 is people's general worry; the writer never says they're always refused."
+          },
+          {
+            "zh": "文中没有说一个人看更能理解内容，作者喜欢的是不用顾忌和余韵。",
+            "en": "Understanding better isn't claimed; the writer likes not deferring and the afterglow."
+          },
+          null
+        ]
+      },
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "options": [
+          "一人の気楽さを大切にしつつ、ときには人と出かけるのがよい。",
+          "一人で楽しむことに慣れると、周りから寂しい人と思われる。",
+          "人と出かけるのは面倒なので、できるだけ一人で過ごしたい。",
+          "新しい好みを見つけるには、一人で色々な店に行くべきだ。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「一人の気楽さは大切にしながらも、ときには人に合わせてみる。そのくらいのバランスがちょうどいいのではないかと思う」。\n推理：最后一段「ただ」转折后给出结论：珍惜一个人的轻松，偶尔也配合别人。选项是这句的改写。",
+          "en": "Evidence: 「一人の気楽さは大切にしながらも、ときには人に合わせてみる。そのくらいのバランスがちょうどいいのではないかと思う」.\nReasoning: After 「ただ」 in the last paragraph comes the conclusion: value solitude but sometimes go along with others."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "被看作寂寞是「以前なら」的看法，现在已经变成普通的方式。",
+            "en": "Being seen as lonely was the view 「以前なら」; it's now ordinary."
+          },
+          {
+            "zh": "作者承认有时麻烦，但认为「新しい好みが生まれることも多い」，主张偶尔和人一起。",
+            "en": "The writer admits it's a nuisance but says 「新しい好みが生まれることも多い」, so recommends going with others sometimes."
+          },
+          {
+            "zh": "新的喜好是在和别人一起出去时产生的，不是一个人去。",
+            "en": "New tastes come from going out with others, not alone."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-314",
+    "type": "mid",
+    "difficulty": 3,
+    "passage": "四十歳を過ぎて、ピアノを習い始めた。子どものころから弾いてみたいと思っていたが、なかなかきっかけがなかったのだ。近所の教室には、私のような大人の生徒も何人かいると聞き、思い切って申し込んだ。\n始めてみて、まず思い知らされたのは、上達の遅さである。右手と左手が別々の動きをするというだけで、頭が混乱する。先生のお手本を聞いて、自分にも弾けそうだと思っても、指が全く思いどおりに動かない。発表会で、私より後に始めた小学生が、すらすらと曲を弾くのを見たときには、正直、落ち込んだ。\nしかし、ある日、先生にこう言われた。「大人の方は、すぐに上手に弾こうとしすぎるんです。子どもは、間違えても気にせずに、何度でも弾いて楽しんでいますよ」。言われてみれば、私は練習のたびに、間違えずに弾けたかどうかばかり気にしていた。うまく弾けない自分にいらいらして、楽しむことを忘れていたのである。\nそれからは、練習の目標を変えることにした。一曲を完璧に弾くことではなく、昨日より一小節でも多く弾けるようになることを目指す。そう決めると、毎日の練習が少しずつ楽しみになってきた。相変わらず上達は遅いが、それでかまわない。誰かと競うために始めたわけではないのだから。",
+    "tr": {
+      "zh": "过了四十岁，我开始学钢琴。从小就想弹弹看，但一直没有契机。听说附近的琴行里也有几个像我这样的成年学生，我便下决心报了名。\n开始以后，首先让我深切体会到的是进步之慢。光是左右手做不同的动作，脑子就乱了。听了老师的示范，觉得自己也能弹，手指却完全不听使唤。在汇报演出上，看到比我晚开始的小学生流畅地弹奏曲子时，说实话，我很沮丧。\n但是有一天，老师对我说：“大人总是太想马上弹好了。孩子们即使弹错了也不在意，弹多少遍都很开心。”经她这么一说，我才发现自己每次练习都只在意有没有弹错。我对弹不好的自己感到烦躁，忘记了享受。\n从那以后，我决定改变练习的目标。不是把一首曲子弹得完美，而是争取比昨天多弹好哪怕一小节。这样决定之后，每天的练习渐渐成了一种乐趣。进步依旧很慢，但这没关系。毕竟我并不是为了和谁比赛才开始的。",
+      "en": "After turning forty, I started learning the piano. I'd wanted to try playing since I was a child but had never found the occasion. Hearing that the school nearby had several adult students like me, I took the plunge and signed up.\nOnce I began, the first thing brought home to me was how slowly I improved. Just having my right and left hands move differently threw my head into confusion. I'd listen to my teacher's demonstration and think I could play it too, but my fingers wouldn't move as I wanted at all. At a recital, when I saw a primary-school child who had started after me play a piece fluently, I honestly felt down.\nBut one day my teacher told me, 'Adults try too hard to play well straight away. Children don't mind mistakes; they play over and over and enjoy it.' Now that she said it, I realised that every time I practised I cared only about whether I'd played without mistakes. Irritated with myself for playing badly, I had forgotten to enjoy it.\nAfter that I decided to change the goal of my practice. Not to play a piece perfectly, but to be able to play even one bar more than yesterday. Once I'd decided that, daily practice gradually became something to look forward to. I still improve slowly, but that's fine. After all, I didn't start in order to compete with anyone."
+    },
+    "questions": [
+      {
+        "q": "筆者が「落ち込んだ」のはなぜか。",
+        "options": [
+          "自分より後に始めた子どもが、上手に弾くのを見たから。",
+          "発表会で、練習した曲を間違えて弾いてしまったから。",
+          "先生から、上達が遅すぎると何度も注意されたから。",
+          "大人の生徒は自分しかいないことが、分かったから。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「発表会で、私より後に始めた小学生が、すらすらと曲を弾くのを見たときには、正直、落ち込んだ」。\n推理：「落ち込んだ」的直接原因就在同一句：比自己晚开始的小学生弹得很流畅。「すらすらと」＝选项的「上手に」。",
+          "en": "Evidence: 「発表会で、私より後に始めた小学生が、すらすらと曲を弾くのを見たときには、正直、落ち込んだ」.\nReasoning: The cause is in the same sentence: a child who started later played fluently. 「すらすらと」 = 「上手に」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "文中没有说作者在汇报演出上弹错，让他沮丧的是看到小学生弹得好。",
+            "en": "The writer doesn't say they made mistakes at the recital; what upset them was the child's playing."
+          },
+          {
+            "zh": "老师说的是大人「すぐに上手に弾こうとしすぎる」，并没有批评进步慢。",
+            "en": "The teacher said adults 「すぐに上手に弾こうとしすぎる」, not that the writer was too slow."
+          },
+          {
+            "zh": "文中说教室里「大人の生徒も何人かいる」。",
+            "en": "The school has 「大人の生徒も何人かいる」."
+          }
+        ]
+      },
+      {
+        "q": "先生の言葉を聞いて、筆者はどのようなことに気づいたか。",
+        "options": [
+          "子どもと同じように、毎日長い時間練習する必要があること",
+          "右手と左手を、別々に練習したほうが早く上達すること",
+          "間違えないことばかり気にして、楽しむのを忘れていたこと",
+          "大人のほうが子どもより、曲を理解する力があること"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「私は練習のたびに、間違えずに弾けたかどうかばかり気にしていた。…楽しむことを忘れていたのである」。\n推理：「言われてみれば」引出老师的话让作者意识到的事：只在意是否弹错，忘了享受。与选项一致。",
+          "en": "Evidence: 「私は練習のたびに、間違えずに弾けたかどうかばかり気にしていた。…楽しむことを忘れていたのである」.\nReasoning: 「言われてみれば」 introduces what the teacher's words made the writer see: obsessing over mistakes and forgetting to enjoy."
+        },
+        "wrong": [
+          {
+            "zh": "老师说孩子「何度でも弾いて楽しんで」，重点是享受，不是练习时间长。",
+            "en": "The teacher's point about children is enjoyment (「楽しんで」), not long hours."
+          },
+          {
+            "zh": "左右手的困难是第二段的事，和老师的话无关。",
+            "en": "Hand coordination is from paragraph 2, unrelated to the teacher's words."
+          },
+          null,
+          {
+            "zh": "文中没有比较大人和孩子理解曲子的能力。",
+            "en": "Adults' and children's understanding of music isn't compared."
+          }
+        ]
+      },
+      {
+        "q": "筆者は今、ピアノの練習についてどう考えているか。",
+        "options": [
+          "一曲を完璧に弾けるようになるまで、同じ曲を続けたい。",
+          "小学生に負けないように、もっと早く上達したい。",
+          "上達が遅いので、教室や先生を変えることも考えたい。",
+          "少しずつでも進歩できれば、上達が遅くてもかまわない。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「昨日より一小節でも多く弾けるようになることを目指す」；「相変わらず上達は遅いが、それでかまわない」。\n推理：作者把目标改为每天多弹好一小节，并接受进步慢。选项「少しずつでも進歩できれば」对应「一小節でも多く」。",
+          "en": "Evidence: 「昨日より一小節でも多く弾けるようになることを目指す」; 「相変わらず上達は遅いが、それでかまわない」.\nReasoning: The goal is now one more bar a day, and slow progress is accepted. 「少しずつでも進歩できれば」 matches 「一小節でも多く」."
+        },
+        "wrong": [
+          {
+            "zh": "作者明确说目标「一曲を完璧に弾くことではなく」。",
+            "en": "The goal is explicitly 「一曲を完璧に弾くことではなく」."
+          },
+          {
+            "zh": "作者说「誰かと競うために始めたわけではない」。",
+            "en": "The writer says 「誰かと競うために始めたわけではない」."
+          },
+          {
+            "zh": "文中没有考虑换老师，反而是老师的话让作者改变了想法。",
+            "en": "Changing teachers isn't considered; the teacher's words helped the writer."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-315",
+    "type": "mid",
+    "difficulty": 3,
+    "passage": "新しくできたパン屋の前に、毎朝長い行列ができている。先日、私も並んでみた。三十分待って買ったパンは確かにおいしかったが、近所の別の店のパンと比べて、それほど違うとは思えなかった。それなのに、私はなぜか満足していた。\n心理学では、人は他の多くの人が選んでいるものを、よいものだと判断しやすいと言われる。自分で一つ一つ比べて選ぶのは手間がかかるので、行列を「この店なら間違いない」という目印として使うのだ。さらに、長い時間待ったという事実そのものが、商品の価値を高く感じさせるという。三十分も並んだのだからおいしいはずだ、いや、おいしくなければ困る、という気持ちが働くのである。私が満足していたのも、そのためかもしれない。\nこうした心理を利用して、わざと行列ができるようにしている店もあると聞く。例えば、注文を受けてから一つずつ作る、店内の席を少なくする、といった方法だ。もちろん、それがすべて悪いわけではない。行列が話題になれば、多くの人が店を知るきっかけにもなる。\nただ、行列を見かけたとき、自分が本当にその店のものを食べたいのか、それとも行列そのものに引きつけられているのかは、一度考えてみてもいいのではないだろうか。待つ時間も、使えるお金も限られている。その使い道は、他人の判断ではなく、自分の舌で決めたいものだ。",
+    "tr": {
+      "zh": "新开的面包店门前，每天早上都排着长队。前几天，我也去排了一下。等了三十分钟买到的面包确实好吃，但和附近另一家店的面包比，我并不觉得有多大差别。尽管如此，我不知为何很满足。\n心理学上说，人容易把其他很多人选择的东西判断为好东西。自己一个个比较着选很费工夫，所以把排队当作“这家店肯定没错”的标志。而且，据说等了很长时间这一事实本身，就会让人觉得商品的价值更高。会产生这样的心理：排了三十分钟队，应该好吃——不，不好吃可就麻烦了。我之所以满足，也许也是因为这个。\n听说也有店利用这种心理，故意让人排队。比如，接到订单后一个个现做，减少店内座位等方法。当然，这并不全是坏事。排队成为话题的话，也会成为很多人知道这家店的契机。\n不过，看到排队时，不妨想一想：自己是真的想吃那家店的东西，还是被排队本身吸引了？等待的时间和能花的钱都是有限的。它们的用途，我希望不是靠别人的判断，而是用自己的舌头来决定。",
+      "en": "Every morning a long queue forms in front of a newly opened bakery. The other day I joined it too. The bread I bought after waiting thirty minutes was certainly good, but compared with bread from another shop nearby, I didn't think it was all that different. Even so, for some reason I was satisfied.\nIn psychology it is said that people readily judge something chosen by many others to be good. Comparing and choosing everything yourself takes effort, so we use a queue as a sign that 'this shop can't go wrong'. What's more, the very fact of having waited a long time reportedly makes a product feel more valuable. The feeling kicks in: I queued for thirty minutes, so it must be good — no, it had better be good. Perhaps that is why I was satisfied.\nI hear some shops exploit this psychology and deliberately create queues, for example by making items one at a time after taking the order, or by having few seats inside. Of course, that isn't all bad. If the queue becomes a talking point, it gives many people a chance to learn about the shop.\nStill, when you see a queue, it might be worth stopping to ask whether you really want to eat that shop's food or whether you are drawn by the queue itself. Our time for waiting and the money we can spend are both limited. I'd like to decide how to use them not by other people's judgement but with my own tongue."
+    },
+    "questions": [
+      {
+        "q": "「そのため」とは、どのようなことか。",
+        "options": [
+          "そのパン屋のパンが、近所の店のパンより特においしかったこと",
+          "長い時間並んだことで、パンの価値を高く感じたこと",
+          "行列に並んでいる間に、他の客と楽しく話ができたこと",
+          "店の人が、注文を受けてから一つずつ作ってくれたこと"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「長い時間待ったという事実そのものが、商品の価値を高く感じさせるという。三十分も並んだのだからおいしいはずだ…という気持ちが働くのである」。\n推理：「そのため」紧接在这段心理说明之后，指的是“等了很久，所以觉得东西更有价值”，解释了作者为什么明明差别不大却很满足。",
+          "en": "Evidence: 「長い時間待ったという事実そのものが、商品の価値を高く感じさせるという。三十分も並んだのだからおいしいはずだ…という気持ちが働くのである」.\nReasoning: 「そのため」 follows this explanation directly: having waited long makes the item feel more valuable, which explains satisfaction despite little real difference."
+        },
+        "wrong": [
+          {
+            "zh": "作者说和附近的店比「それほど違うとは思えなかった」。",
+            "en": "The writer found it 「それほど違うとは思えなかった」 from the nearby shop's."
+          },
+          null,
+          {
+            "zh": "文中没有提到排队时和别人聊天。",
+            "en": "Chatting in the queue isn't mentioned."
+          },
+          {
+            "zh": "现做是第三段介绍的故意制造排队的方法，不是作者满足的原因。",
+            "en": "Made-to-order is a queue-making tactic in paragraph 3, not the reason for the writer's satisfaction."
+          }
+        ]
+      },
+      {
+        "q": "わざと行列ができるようにしている店について、筆者はどのように述べているか。",
+        "options": [
+          "客の心理を利用しているので、なるべく利用しないほうがよい。",
+          "席を増やして、客をあまり待たせないようにするべきだ。",
+          "悪いことばかりではなく、店が知られるきっかけにもなる。",
+          "そのような店のパンは、たいていそれほどおいしくない。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「もちろん、それがすべて悪いわけではない。行列が話題になれば、多くの人が店を知るきっかけにもなる」。\n推理：「すべて悪いわけではない」是部分否定：不全是坏事；后面举出好处——让很多人知道这家店。选项与此一致。",
+          "en": "Evidence: 「もちろん、それがすべて悪いわけではない。行列が話題になれば、多くの人が店を知るきっかけにもなる」.\nReasoning: 「すべて悪いわけではない」 is a partial denial: not all bad; the upside follows — people get to know the shop."
+        },
+        "wrong": [
+          {
+            "zh": "作者说这「すべて悪いわけではない」，没有劝人别去。",
+            "en": "The writer says it's 「すべて悪いわけではない」 and doesn't tell readers to avoid such shops."
+          },
+          {
+            "zh": "减少座位只是举的例子，作者没有要求店家增加座位。",
+            "en": "Few seats is just an example; the writer doesn't demand more seats."
+          },
+          null,
+          {
+            "zh": "作者只说自己买的面包和别家差别不大，没有说这类店的面包大多不好吃。",
+            "en": "The writer only found their bread similar to another shop's; no claim that such shops' bread is usually bad."
+          }
+        ]
+      },
+      {
+        "q": "筆者が最も言いたいことは何か。",
+        "options": [
+          "行列ができる店には、一度は並んでみる価値がある。",
+          "行列に並ぶ前に、本当に自分が食べたいのか考えたい。",
+          "行列ができないように、店は作り方を工夫するべきだ。",
+          "多くの人が選ぶ店を選べば、失敗することは少ない。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「自分が本当にその店のものを食べたいのか、それとも行列そのものに引きつけられているのかは、一度考えてみてもいいのではないだろうか」；「他人の判断ではなく、自分の舌で決めたい」。\n推理：最后一段「ただ」之后是主张：排队前想想自己是否真的想吃，用自己的舌头决定。",
+          "en": "Evidence: 「自分が本当にその店のものを食べたいのか、それとも行列そのものに引きつけられているのかは、一度考えてみてもいいのではないだろうか」; 「他人の判断ではなく、自分の舌で決めたい」.\nReasoning: After 「ただ」 comes the point: before queuing, ask whether you really want it, and decide with your own tongue."
+        },
+        "wrong": [
+          {
+            "zh": "作者自己排过一次，但结论是要想清楚再排，并不是推荐去排。",
+            "en": "The writer queued once, but the conclusion is to think first, not a recommendation to queue."
+          },
+          null,
+          {
+            "zh": "作者没有向店家提要求，话题是顾客自己的判断。",
+            "en": "The writer makes no demand of shops; the point is about customers' own judgement."
+          },
+          {
+            "zh": "“选多数人选的店”正是作者说的心理倾向，结论是要用「自分の舌」而不是「他人の判断」。",
+            "en": "Following the crowd is the tendency described; the conclusion favours 「自分の舌」 over 「他人の判断」."
+          }
+        ]
+      }
+    ]
   }
 ]

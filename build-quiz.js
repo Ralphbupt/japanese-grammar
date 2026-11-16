@@ -520,6 +520,8 @@ function validateChoukai(q, prefix) {
 // answers keep pointing at the same option) and independent of the author.
 function shuffled(q) {
   if (q._kind === "choukai") return q;   // spoken in this order
+  // Options that are only labels (A–D from a table, ①–④) stay in order, as on the real test.
+  if (Array.isArray(q.options) && q.options.every((o) => /^\s*[A-DＡ-Ｄ①-④]\s*$/.test(String(o)))) return q;
   const h = require("crypto").createHash("sha1").update(q.id).digest();
   const p = [0, 1, 2, 3];
   for (let i = 3; i > 0; i--) { const j = h[i] % (i + 1); [p[i], p[j]] = [p[j], p[i]]; }

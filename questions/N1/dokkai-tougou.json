@@ -398,5 +398,405 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n1-dk-605",
+    "type": "tougou",
+    "difficulty": 2,
+    "intro": "次のAとBは、現金を受け付けない店が増えていることについての、二つの意見である。",
+    "passage": "A\n近年、現金を受け付けず、カードやスマートフォンによる支払いだけに対応する店が現れ始めた。私はこの動きを好ましいものと考えている。現金を扱えば、釣り銭の用意や売上の計算、銀行への入金など、店員には目に見えない負担がのしかかる。閉店後に何十分もかけてレジの金額を確かめる作業がなくなれば、その分を接客や商品の工夫に充てられる。人手不足に悩む小さな店にとって、これは決して小さくない利点だ。また、多額の現金を店に置かずに済むので、強盗などの被害に遭う危険も減る。釣り銭の受け渡しがなくなれば、レジの待ち時間も短くなり、客にとっての利点も大きい。もちろん、慣れない人には戸惑いもあるだろう。だが、使い方の講習会を開くなど、移行を支える方法はいくらでもある。社会全体が現金から離れていくのは、もはや避けられない流れではないだろうか。\nB\nキャッシュレス決済が便利であることに異論はない。私自身、日々の買い物の大半はスマートフォンで済ませている。しかし、現金を一切受け付けない店が増えることには、ためらいを覚える。高齢者の中には、カードやスマートフォンを持たない人や、持っていても操作に不安を感じる人が少なくない。そうした人々が、近所の店で買い物さえできなくなるのは問題だろう。店の側から見ればわずかな客かもしれないが、その人たちにとっては暮らしに欠かせない店なのである。さらに心配なのは、災害などで停電や通信の障害が起きた場合である。決済の仕組みが止まれば、現金しか頼るものがない。数年前の大地震の際には、現金を持っていた人だけが水や食料を買えたという話も聞いた。キャッシュレス化を進めること自体には賛成だ。ただ、現金という選択肢を残しておくことは、社会の安全網として欠かせないと思う。",
+    "tr": {
+      "zh": "下面的A和B是关于不收现金的店越来越多的两种意见。\nA：近年，开始出现不收现金、只接受刷卡或手机支付的店。我认为这一动向是可喜的。经手现金的话，准备零钱、计算销售额、存入银行等，店员身上压着看不见的负担。如果打烊后不再需要花几十分钟核对收银机里的金额，就可以把这些时间用于接待顾客和改进商品。对苦于人手不足的小店来说，这绝不是小小的好处。而且，由于不必在店里存放大量现金，遭遇抢劫等的危险也会减少。不用再递找零，收银台的等候时间也会缩短，对顾客来说好处也很大。当然，不习惯的人可能会感到困惑。但是，举办使用方法讲习会等，支持过渡的方法有的是。整个社会逐渐远离现金，难道不已经是无法避免的潮流了吗？\nB：无现金支付很方便，这一点没有异议。我自己日常购物大半也是用手机完成的。但是，对于完全不收现金的店越来越多，我感到犹豫。老年人中，没有银行卡或手机的人、或者虽然有但对操作感到不安的人不在少数。这些人连在附近的店买东西都做不到，是个问题吧。从店家看来或许只是少数顾客，但对这些人来说，那是生活中不可缺少的店。更令人担心的是，因灾害等发生停电或通信故障的情况。支付系统一停，能依靠的就只有现金了。我也听说过，几年前大地震时，只有带着现金的人才买到了水和食物。推进无现金化本身我是赞成的。只是我认为，保留现金这一选项，作为社会的安全网是不可或缺的。",
+      "en": "A and B below are two opinions on the growing number of shops that refuse cash.\nA: Recently, shops have begun to appear that refuse cash and accept only card or smartphone payments. I welcome this trend. Handling cash places an invisible burden on staff: preparing change, totting up takings, paying money into the bank. If they no longer had to spend tens of minutes after closing checking the till, that time could go into serving customers and improving products. For small shops struggling with staff shortages, that is no small benefit. And since they need not keep large sums on the premises, the risk of robbery falls too. Without change being handed back and forth, queues at the till get shorter, which is a big plus for customers as well. Of course, people who aren't used to it may be confused. But there are any number of ways to support the transition, such as classes on how to pay. Isn't society as a whole moving away from cash an unstoppable trend by now?\nB: Nobody disputes that cashless payment is convenient. I myself pay for most of my daily shopping by smartphone. But I feel uneasy about more shops refusing cash altogether. Many elderly people have no card or smartphone, or have one but feel unsure using it. It is a problem if such people cannot even shop at their local store. To the shop they may be only a few customers, but to them it is a shop they cannot do without. More worrying still is what happens when a disaster causes power cuts or network failures. If the payment systems stop, cash is all there is to rely on. I have heard that after the big earthquake a few years ago, only people carrying cash could buy water and food. I support going cashless in itself. But I believe keeping cash as an option is indispensable as a safety net for society."
+    },
+    "questions": [
+      {
+        "q": "AとBのどちらにも述べられていることは何か。",
+        "options": [
+          "キャッシュレス決済に慣れない人のために、講習会を開くべきだ。",
+          "キャッシュレス決済に不慣れで、支払いに戸惑う人もいる。",
+          "現金を店に置かないことで、犯罪の被害を防ぐことができる。",
+          "災害の際には、現金しか頼りになるものがなくなる。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：A「もちろん、慣れない人には戸惑いもあるだろう」；B「持っていても操作に不安を感じる人が少なくない」\n推理：A用「もちろん」承认有人不习惯；B提到老年人对操作感到不安。两篇都承认有人对无现金支付不习惯、困惑。",
+          "en": "Evidence: A 「もちろん、慣れない人には戸惑いもあるだろう」; B 「持っていても操作に不安を感じる人が少なくない」.\nReasoning: A concedes with 「もちろん」 that some are not used to it; B mentions elderly people unsure how to use it. Both admit some people struggle."
+        },
+        "wrong": [
+          {
+            "zh": "办讲习会只有A提到。",
+            "en": "Only A mentions classes."
+          },
+          null,
+          {
+            "zh": "防止抢劫只有A提到。",
+            "en": "Only A mentions robbery."
+          },
+          {
+            "zh": "灾害时只能靠现金只有B提到。",
+            "en": "Only B mentions disasters."
+          }
+        ]
+      },
+      {
+        "q": "現金を受け付けない店について、AとBはどのように考えているか。",
+        "options": [
+          "Aは高齢者への配慮を条件に認め、Bは災害への備えを理由に反対している。",
+          "Aは店の負担を減らせる点を評価し、Bも店の安全のために必要だとしている。",
+          "AもBも、社会全体が現金から離れていく流れは、もはや避けられないとしている。",
+          "Aは店の負担が減ると歓迎し、Bは現金という選択肢を残すべきだとしている。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：A「私はこの動きを好ましいものと考えている」；B「現金という選択肢を残しておくことは、社会の安全網として欠かせない」\n推理：A列举减轻店员负担、减少抢劫危险，表示欢迎；B赞成无现金化，但主张保留现金这一选项。",
+          "en": "Evidence: A 「私はこの動きを好ましいものと考えている」; B 「現金という選択肢を残しておくことは、社会の安全網として欠かせない」.\nReasoning: A welcomes it for lighter staff work and less robbery risk; B supports going cashless but wants cash kept as an option."
+        },
+        "wrong": [
+          {
+            "zh": "A没有以照顾老人为条件，只说可以办讲习会来支持过渡。",
+            "en": "A sets no condition about the elderly; it only suggests classes to help."
+          },
+          {
+            "zh": "B没有说不收现金对店的安全有必要，B担心的是老人和灾害。",
+            "en": "B doesn't call cash-free shops necessary for safety; it worries about the elderly and disasters."
+          },
+          {
+            "zh": "说潮流「避けられない」的只有A，B主张保留现金。",
+            "en": "Only A calls it 「避けられない」; B wants cash kept."
+          },
+          null
+        ]
+      },
+      {
+        "q": "Bが「社会の安全網として欠かせない」と述べているのは、なぜか。",
+        "options": [
+          "カードなどを使えない人や、決済の仕組みが止まったときに、現金が支えになるから",
+          "現金を扱うことで、店員が売上を正確に把握できるようになるから",
+          "現金で支払えば、自分がいくら使ったかを実感でき、使いすぎを防げるから",
+          "大地震の後、多くの店が再び現金だけを受け付けるようになったから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「近所の店で買い物さえできなくなるのは問題だろう」；「決済の仕組みが止まれば、現金しか頼るものがない」\n推理：B举了两种情况：没有卡或手机、不会操作的老人；停电、通信故障使支付系统停止。这两种时候现金都是最后的依靠，所以是“安全网”。",
+          "en": "Evidence: 「近所の店で買い物さえできなくなるのは問題だろう」; 「決済の仕組みが止まれば、現金しか頼るものがない」.\nReasoning: B gives two cases: elderly people without cards or skills, and payment systems down in power or network failures. In both, cash is the fallback, hence a safety net."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "核对销售额是A提到的现金的负担，B没有这样说。",
+            "en": "Counting takings is A's point about cash being a burden; B says nothing like this."
+          },
+          {
+            "zh": "B没有谈防止花钱过多。",
+            "en": "B says nothing about overspending."
+          },
+          {
+            "zh": "B只说地震时有现金的人才买到东西，没有说店改为只收现金。",
+            "en": "B only says people with cash could buy things after the quake, not that shops switched to cash only."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-606",
+    "type": "tougou",
+    "difficulty": 2,
+    "intro": "次のAとBは、中学校の部活動を学校から地域に移すことについての、二つの意見である。",
+    "passage": "A\n中学校の運動部や文化部の活動を、休日を中心に地域のクラブや団体に委ねる取り組みが各地で始まっている。私はこの改革を進めるべきだと考える。これまで部活動は、教員の善意に支えられてきた。平日の夕方はもちろん、土日も練習や大会の引率に追われ、授業の準備に十分な時間を割けない教員は少なくない。しかも、指導する競技の経験がない教員が顧問を務めることも珍しくなかった。顧問を引き受けたばかりに、休日に家族と過ごす時間がほとんどないという声も聞く。地域の専門的な指導者に任せれば、教員は本来の仕事である授業に力を注ぐことができ、生徒もより質の高い指導を受けられる。少子化で一校では部員が集まらない競技も、地域でまとめれば活動を続けられるだろう。\nB\n部活動を地域に移す必要性は理解できる。教員の長時間労働は深刻であり、何らかの手を打たねばならない。しかし、移行を急ぐあまり、見落とされていることがあるのではないか。一つは家庭の負担である。地域のクラブでは会費や交通費がかかり、送り迎えが必要になる場合もある。経済的に余裕のない家庭の子どもが、活動をあきらめることにならないだろうか。もう一つは指導者の確保である。都市部はともかく、地方では専門的な指導者がそもそも足りない。指導者が見つからなければ、地域に移した途端に活動そのものがなくなってしまうおそれもある。部活動は、家庭の事情にかかわらず、誰もが学校で気軽にスポーツや文化活動に親しめる場であった。その役割を地域でどう引き継ぐのかを示さないまま、移行だけを進めるべきではない。",
+    "tr": {
+      "zh": "下面的A和B是关于把初中社团活动从学校转移到社区的两种意见。\nA：把初中运动社团和文化社团的活动以休息日为主委托给社区俱乐部和团体的做法，已经在各地开始了。我认为应该推进这项改革。以往社团活动是靠教师的善意支撑的。平日傍晚自不必说，周末也忙于训练和带队参加比赛，不能为备课留出充分时间的教师不在少数。而且，没有所指导项目经验的教师担任顾问也并不稀奇。也听到有人说，就因为接了顾问的差事，休息日几乎没有和家人相处的时间。如果交给社区的专业指导者，教师就能把精力投入到本职工作——上课上，学生也能得到更高质量的指导。因少子化一所学校凑不齐队员的项目，如果在社区里合并起来，也能继续活动吧。\nB：把社团活动转移到社区的必要性是可以理解的。教师的长时间劳动很严重，必须采取某种措施。但是，因为急于转移，是不是忽视了一些东西呢？一是家庭的负担。在社区俱乐部要交会费、交通费，有时还需要接送。经济不宽裕的家庭的孩子，会不会因此放弃活动呢？另一个是指导者的保障。城市暂且不论，在地方上专业指导者本来就不够。如果找不到指导者，一转移到社区，活动本身就可能消失。社团活动曾是无论家庭情况如何，谁都能在学校轻松地接触体育和文化活动的地方。在没有说明社区如何接过这一作用的情况下，不应该只推进转移。",
+      "en": "A and B below are two opinions on moving junior high school clubs from schools to the community.\nA: Moves are under way across the country to hand junior high school sports and culture clubs, mainly on weekends, over to local clubs and organisations. I think this reform should go ahead. Until now, school clubs have depended on teachers' goodwill. Many teachers are kept busy not only on weekday evenings but also at weekends with practice and taking students to competitions, and cannot find enough time to prepare lessons. What's more, it was common for teachers with no experience of a sport to be put in charge of it. I also hear of teachers who, just because they agreed to run a club, have almost no time with their families on days off. Leave it to specialist coaches in the community, and teachers can concentrate on their real job, teaching, while students get better coaching. Sports for which a single school can no longer find enough members, because of the falling birth rate, could continue if pooled across the area.\nB: I understand the need to move school clubs into the community. Teachers' long working hours are a serious problem, and something must be done. But in the rush to move, aren't some things being overlooked? One is the burden on families. Local clubs charge fees and involve travel costs, and children may need to be driven there and back. Won't children from families without money to spare end up giving up? The other is finding coaches. Cities aside, in rural areas there simply aren't enough specialist coaches. If none can be found, the activity itself may disappear the moment it moves to the community. School clubs were a place where anyone, whatever their family circumstances, could easily take part in sport or cultural activities at school. The move alone should not be pushed ahead without showing how the community will take over that role."
+    },
+    "questions": [
+      {
+        "q": "AとBのどちらにも述べられていることは何か。",
+        "options": [
+          "地域に移せば、生徒がより質の高い指導を受けられる。",
+          "地域のクラブでは、会費などの費用が家庭の負担になる。",
+          "教員が部活動のために、長い時間働かざるを得なくなっている。",
+          "少子化によって、一つの学校では部員が集まらなくなっている。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：A「土日も練習や大会の引率に追われ、授業の準備に十分な時間を割けない教員は少なくない」；B「教員の長時間労働は深刻であり」\n推理：A具体描述教师周末也被社团占用，B直接说教师长时间劳动很严重。两篇都承认这一点。",
+          "en": "Evidence: A 「土日も練習や大会の引率に追われ、授業の準備に十分な時間を割けない教員は少なくない」; B 「教員の長時間労働は深刻であり」.\nReasoning: A describes teachers' weekends taken up by clubs; B says outright that teachers' long hours are serious. Both accept this."
+        },
+        "wrong": [
+          {
+            "zh": "指导质量提高只有A提到；B反而担心地方缺少专业指导者。",
+            "en": "Only A claims better coaching; B worries rural areas lack coaches."
+          },
+          {
+            "zh": "费用负担只有B提到。",
+            "en": "Only B mentions costs to families."
+          },
+          null,
+          {
+            "zh": "少子化凑不齐队员只有A提到。",
+            "en": "Only A mentions too few members."
+          }
+        ]
+      },
+      {
+        "q": "Bが心配していることとして、合っているものはどれか。",
+        "options": [
+          "家庭の経済的な事情によって、活動を続けられない生徒が出ること",
+          "地域の指導者が、生徒の学校での様子を十分に理解していないこと",
+          "教員が部活動から離れることで、生徒との関わりが薄くなること",
+          "都市部の地域クラブに、周辺から生徒が集まりすぎてしまうこと"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「経済的に余裕のない家庭の子どもが、活動をあきらめることにならないだろうか」\n推理：B担心的第一点是家庭负担：会费、交通费、接送，经济不宽裕的孩子可能放弃。第二点是地方缺指导者。",
+          "en": "Evidence: 「経済的に余裕のない家庭の子どもが、活動をあきらめることにならないだろうか」.\nReasoning: B's first worry is cost: fees, travel and lifts may make children from poorer families give up. The second is the lack of rural coaches."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "B担心的是指导者「足りない」，不是不了解学生在校情况。",
+            "en": "B worries coaches are 「足りない」, not that they don't know the students."
+          },
+          {
+            "zh": "B没有谈教师与学生的关系变淡。",
+            "en": "B doesn't mention weaker teacher–student ties."
+          },
+          {
+            "zh": "B说的是地方缺少指导者，没有说城市学生过多。",
+            "en": "B speaks of too few coaches in rural areas, not too many students in cities."
+          }
+        ]
+      },
+      {
+        "q": "部活動を地域に移すことについて、AとBはどのように考えているか。",
+        "options": [
+          "Aは教員の負担を減らすため直ちに全面移行すべきだとし、Bは移行そのものに反対している。",
+          "Aは指導の質を理由に慎重な姿勢を示し、Bは家庭の負担を減らすために推進を求めている。",
+          "AもBも、地方で不足している指導者を確保することが、移行よりも先決だとしている。",
+          "Aは教員と生徒の双方の利点から推進を求め、Bは課題への対応策を先に示すべきだとしている。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：A「私はこの改革を進めるべきだと考える」「教員は…授業に力を注ぐことができ、生徒もより質の高い指導を受けられる」；B「その役割を地域でどう引き継ぐのかを示さないまま、移行だけを進めるべきではない」\n推理：A为了教师和学生两方面的好处主张推进；B理解必要性，但要求先说明如何应对家庭负担和指导者不足。",
+          "en": "Evidence: A 「私はこの改革を進めるべきだと考える」, 「教員は…授業に力を注ぐことができ、生徒もより質の高い指導を受けられる」; B 「その役割を地域でどう引き継ぐのかを示さないまま、移行だけを進めるべきではない」.\nReasoning: A backs the move for benefits to teachers and students; B accepts the need but wants answers on costs and coaches first."
+        },
+        "wrong": [
+          {
+            "zh": "A说的是「休日を中心に」，没有说马上全面转移；B也承认「必要性は理解できる」，并非反对。",
+            "en": "A speaks of 「休日を中心に」, not an immediate full move, and B says 「必要性は理解できる」, so it isn't opposed."
+          },
+          {
+            "zh": "A主张推进，并以指导质量为好处；担心家庭负担的是B，而且B并非要求推进。",
+            "en": "A backs the move, citing better coaching; B is the one worried about family costs, and it doesn't push for the move."
+          },
+          {
+            "zh": "指导者不足只有B提到。",
+            "en": "Only B raises the shortage of coaches."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-607",
+    "type": "tougou",
+    "difficulty": 2,
+    "intro": "次のAとBは、高校の制服についての、二つの意見である。",
+    "passage": "A\n制服を廃止し、服装を生徒の自由に任せる高校が少しずつ増えている。しかし私は、制服には今なお大きな意味があると考える。まず、制服があれば、毎朝何を着ていくか迷う必要がない。服にかかる費用も抑えられる。私服が自由になれば、流行の服やブランド品を持っているかどうかで、生徒の間に差が生まれかねない。家庭の経済状況が服装を通して見えてしまうことを、制服は防いでくれるのである。また、同じ制服に袖を通すことで、学校の一員だという意識が育つ面もあるだろう。卒業後に制服姿の写真を見返して、高校時代を懐かしく思い出す人も多いはずだ。もちろん、時代に合わない決まりは見直すべきだ。性別によってスカートかズボンかを決めるのではなく、本人が選べるようにするなど、制服を残したまま改められることは多い。\nB\n制服は本当に必要なのだろうか。私が勤める高校では、数年前に制服を廃止した。当初は、服装が乱れるのではないか、華美な服を競うようになるのではないかと心配する声もあった。しかし、実際には大きな問題は起きていない。多くの生徒は動きやすく手入れの楽な服を選び、むしろ服装に気を取られることは減ったようだ。夏の暑さや冬の寒さに合わせて自分で調節できるようになったことを喜ぶ生徒も多い。教員の側も、スカートの丈や靴下の色を細かく注意する必要がなくなり、生徒と向き合う時間が増えた。制服は一着数万円もし、成長に合わせて買い替えれば、決して安くはない。何を着るかを自分で考えることも、社会に出るための大切な練習である。一律に同じ服を着せるより、生徒の判断に任せてみる価値はあるはずだ。",
+    "tr": {
+      "zh": "下面的A和B是关于高中校服的两种意见。\nA：废除校服、让学生自由着装的高中正在逐渐增加。但是我认为，校服如今仍有很大的意义。首先，有校服的话，每天早上就不必为穿什么而犹豫。服装的花费也能控制住。如果便服自由了，学生之间可能会因为有没有流行服装或名牌而产生差距。校服能防止家庭经济状况通过服装暴露出来。另外，穿上同样的校服，也有培养自己是学校一员的意识的一面吧。毕业后翻看穿校服的照片、怀念高中时代的人应该也很多。当然，不合时代的规定应该重新审视。不按性别决定穿裙子还是裤子，而是让本人选择等，在保留校服的同时可以改进的地方很多。\nB：校服真的有必要吗？我任职的高中几年前废除了校服。起初也有人担心，服装会不会变得散乱，会不会开始比拼华丽的衣服。但实际上并没有发生大的问题。很多学生选择方便活动、容易打理的衣服，在服装上分心的情况反而好像减少了。也有很多学生高兴于能根据夏天的炎热和冬天的寒冷自己调节了。教师这边也不必再细细纠正裙子长度和袜子颜色，与学生面对面交流的时间增加了。校服一套要几万日元，如果随着成长换新，绝对不便宜。自己思考穿什么，也是走上社会的重要练习。与其一律让学生穿同样的衣服，不如试着交给学生自己判断，这应该是有价值的。",
+      "en": "A and B below are two opinions on high school uniforms.\nA: A growing number of high schools are scrapping uniforms and leaving clothing up to students. I believe, however, that uniforms still mean a great deal. First, with a uniform, there is no need to agonise every morning over what to wear, and spending on clothes is kept down. If casual clothes were allowed, differences could arise between students over who has the latest fashions or brand names. Uniforms prevent a family's finances from showing through clothes. Wearing the same uniform may also foster a sense of belonging to the school. Many people, surely, look back at photos of themselves in uniform after graduating and remember their high school days fondly. Of course, rules that are out of step with the times should be reviewed. Much can be changed while keeping the uniform, such as letting students choose a skirt or trousers rather than deciding by sex.\nB: Are uniforms really necessary? The high school where I work abolished them a few years ago. At first some worried that dress would become sloppy or that students would compete in flashy clothes. In practice, no serious problems have arisen. Most students choose clothes that are easy to move in and to care for, and if anything they seem less distracted by clothes. Many are glad they can now adjust what they wear to summer heat and winter cold. Teachers, too, no longer have to nag about skirt lengths and sock colours, and have more time to engage with students. A uniform costs tens of thousands of yen, and replacing it as students grow is far from cheap. Thinking for yourself about what to wear is also important practice for adult life. Rather than dressing everyone alike, it must be worth trusting students' own judgement."
+    },
+    "questions": [
+      {
+        "q": "服にかかる費用について、AとBの考えはどのように違うか。",
+        "options": [
+          "Aは制服があれば費用を抑えられるとし、Bは制服は決して安くないとしている。",
+          "Aは私服のほうが安く済むとし、Bは制服のほうが経済的だとしている。",
+          "AもBも、私服になると流行の服にお金がかかるようになると心配している。",
+          "Aは費用には触れておらず、Bだけが制服の値段の高さを問題にしている。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：A「服にかかる費用も抑えられる」；B「制服は一着数万円もし、成長に合わせて買い替えれば、決して安くはない」\n推理：A认为有校服能省钱；B认为校服贵、还要随成长换新，并不便宜。看法相反。",
+          "en": "Evidence: A 「服にかかる費用も抑えられる」; B 「制服は一着数万円もし、成長に合わせて買い替えれば、決して安くはない」.\nReasoning: A says uniforms keep costs down; B says they are expensive and must be replaced as students grow. Opposite views."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "方向说反了：A说校服省钱，B说校服不便宜。",
+            "en": "Reversed: A says uniforms save money, B says they aren't cheap."
+          },
+          {
+            "zh": "B说担心的比拼华丽衣服实际上「大きな問題は起きていない」。",
+            "en": "B says the feared competition in flashy clothes caused 「大きな問題は起きていない」."
+          },
+          {
+            "zh": "A明确提到「服にかかる費用も抑えられる」。",
+            "en": "A does say 「服にかかる費用も抑えられる」."
+          }
+        ]
+      },
+      {
+        "q": "Bの高校で、制服を廃止した後の様子として合うものはどれか。",
+        "options": [
+          "華美な服を競う生徒が増えたため、服装の決まりを新たに設けた。",
+          "毎朝何を着るか迷う生徒が多く、制服の復活を望む声が高まった。",
+          "動きやすい服を選ぶ生徒が多く、服装に気を取られることが減った。",
+          "家庭の経済状況が服装に表れ、生徒の間に差が生まれてしまった。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「多くの生徒は動きやすく手入れの楽な服を選び、むしろ服装に気を取られることは減ったようだ」\n推理：B所在学校废除校服后，担心的问题没有发生，学生多选方便的衣服，在服装上分心反而少了。",
+          "en": "Evidence: 「多くの生徒は動きやすく手入れの楽な服を選び、むしろ服装に気を取られることは減ったようだ」.\nReasoning: At B's school the feared problems didn't happen; students chose practical clothes and were, if anything, less distracted by them."
+        },
+        "wrong": [
+          {
+            "zh": "比拼华丽服装只是起初的担心，实际上「大きな問題は起きていない」。",
+            "en": "Competing in flashy clothes was only a fear; in fact 「大きな問題は起きていない」."
+          },
+          {
+            "zh": "为穿什么犹豫是A提出的观点，B的学校没有出现想恢复校服的声音。",
+            "en": "Agonising over clothes is A's point; B reports no calls to bring uniforms back."
+          },
+          null,
+          {
+            "zh": "经济状况通过服装暴露是A的担心，B没有说发生了。",
+            "en": "Finances showing through clothes is A's worry; B doesn't report it."
+          }
+        ]
+      },
+      {
+        "q": "Aは、制服についてどうすべきだと述べているか。",
+        "options": [
+          "制服を廃止して、服装の決まりは生徒が話し合って決めるべきだ。",
+          "制服は残しながら、時代に合わない決まりは改めていくべきだ。",
+          "学校の一員だという意識を育てるため、決まりは変えるべきでない。",
+          "性別にかかわらず、全員がズボンをはくよう決まりを改めるべきだ。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「時代に合わない決まりは見直すべきだ」；「制服を残したまま改められることは多い」\n推理：A主张保留校服，同时用「もちろん」补充：不合时代的规定要改，比如让本人选择裙子还是裤子。",
+          "en": "Evidence: 「時代に合わない決まりは見直すべきだ」; 「制服を残したまま改められることは多い」.\nReasoning: A wants to keep uniforms but adds, with 「もちろん」, that outdated rules should change, e.g. letting students choose skirt or trousers."
+        },
+        "wrong": [
+          {
+            "zh": "A主张保留校服，不是废除。",
+            "en": "A wants to keep uniforms, not scrap them."
+          },
+          null,
+          {
+            "zh": "A虽然提到归属意识，但也说「時代に合わない決まりは見直すべきだ」。",
+            "en": "A mentions belonging but also says 「時代に合わない決まりは見直すべきだ」."
+          },
+          {
+            "zh": "A说的是「本人が選べるようにする」，不是全员穿裤子。",
+            "en": "A says 「本人が選べるようにする」, not trousers for all."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-608",
+    "type": "tougou",
+    "difficulty": 2,
+    "intro": "次のAとBは、コンビニエンスストアの24時間営業についての、二つの意見である。",
+    "passage": "A\n人手不足を理由に、深夜の営業をやめるコンビニエンスストアが出てきた。働く人の負担を考えれば、やむを得ない面もあるだろう。だが、24時間開いている店は、今や地域にとって単なる小売店以上の存在になっている。夜勤明けの看護師や運送業の人々にとって、深夜に食事を買える場所は欠かせない。夜中に急に具合が悪くなった家族のために、飲み物や薬を買いに走る人もいるだろう。夜道で不安を感じた人が駆け込める場所にもなっているし、明かりのついた店があるだけで、周囲の治安が保たれるという面もある。災害時には、物資の供給拠点としての役割も期待されている。深夜営業を一律にやめるのではなく、地域ごとに必要性を見極め、店の負担を行政が支えるといった方法を考えるべきではないか。\nB\n夜中でも買い物ができるのは確かに便利だ。しかし、その便利さは、深夜に働く店員の犠牲の上に成り立っている。加盟店の経営者の中には、アルバイトが集まらず、自ら夜通し店に立ち続けて体を壊した人もいると聞く。深夜の客がわずか数人という店も少なくない。わずかな客のために、照明や冷房を一晩中動かし続けるのは、電力の無駄でもある。売上の見込めない時間帯にまで店を開け続けることが、本当に合理的と言えるだろうか。深夜に買い物ができなくなっても、前もって準備をしておけば、多くの人は困らないはずだ。どうしても必要な地域では、一部の店だけが夜間も開けるといった工夫もできる。24時間営業を当然とする考え方そのものを、そろそろ改めるべき時期に来ている。",
+    "tr": {
+      "zh": "下面的A和B是关于便利店24小时营业的两种意见。\nA：以人手不足为由停止深夜营业的便利店出现了。考虑到员工的负担，这也有不得已的一面吧。但是，24小时营业的店，如今对地区来说已经是超出普通零售店的存在。对于下夜班的护士和运输业的人来说，深夜能买到饭的地方必不可少。也会有人为了半夜突然身体不适的家人，跑去买饮料和药吧。它也成了走夜路感到不安的人可以跑进去的地方，而且光是有一家亮着灯的店，就有维持周边治安的作用。灾害时，人们还期待它发挥物资供应据点的作用。不应一律停止深夜营业，而是应该按地区判断必要性，考虑由行政支持店铺负担之类的办法，不是吗？\nB：半夜也能买东西确实方便。但是，这种方便是建立在深夜工作的店员的牺牲之上的。听说加盟店的经营者中，有人因为招不到兼职，自己通宵站店，累垮了身体。深夜客人只有寥寥几个的店也不少。为了寥寥几个客人整夜开着照明和空调，也是浪费电力。在没有销售额可期的时间段也继续开店，真的能说是合理的吗？即使深夜不能买东西了，只要事先做好准备，大多数人应该不会为难。在确实需要的地区，也可以想办法只让部分店夜间营业。把24小时营业视为理所当然的想法本身，已经到了该改变的时候了。",
+      "en": "A and B below are two opinions on convenience stores opening 24 hours.\nA: Some convenience stores have stopped opening late at night, citing staff shortages. Given the burden on workers, there is something unavoidable about it. But a shop open 24 hours is now more than just a retailer for the local area. For nurses coming off night shifts and people in the transport trade, a place to buy food late at night is essential. Some people will also rush out at night to buy drinks or medicine for a family member suddenly taken ill. It is also somewhere people who feel unsafe on a dark street can run into, and just having a lit shop helps keep the surrounding area safe. In disasters, it is expected to serve as a base for supplies. Rather than ending late-night opening across the board, shouldn't we judge the need area by area and consider ways such as the authorities sharing the burden on stores?\nB: Being able to shop in the middle of the night is certainly convenient. But that convenience rests on the sacrifice of the staff who work through the night. I hear that some franchise owners, unable to find part-timers, have worked through the night themselves and ruined their health. Many stores have only a handful of customers late at night. Running lights and air conditioning all night for so few is also a waste of electricity. Can keeping a shop open even at hours with no prospect of sales really be called rational? Even if people can't shop late at night, most won't be troubled if they plan ahead. In areas where it is truly needed, arrangements could be made for only some stores to stay open at night. It is time to change the very idea that 24-hour opening is a matter of course."
+    },
+    "questions": [
+      {
+        "q": "AとBのどちらにも述べられていることは何か。",
+        "options": [
+          "深夜に開いている店は、災害時に物資を届ける拠点になる。",
+          "深夜の客が少なく、売上が見込めない店が少なくない。",
+          "店の負担を減らすために、行政が支援を行うべきである。",
+          "地域によっては、深夜に開いている店が必要な場合がある。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：A「地域ごとに必要性を見極め」；B「どうしても必要な地域では、一部の店だけが夜間も開けるといった工夫もできる」\n推理：A主张按地区判断必要性，B也承认有「どうしても必要な地域」。两篇都认为有的地区需要深夜营业的店。",
+          "en": "Evidence: A 「地域ごとに必要性を見極め」; B 「どうしても必要な地域では、一部の店だけが夜間も開けるといった工夫もできる」.\nReasoning: A wants need judged area by area; B also grants there are 「どうしても必要な地域」. Both accept some areas need late-night shops."
+        },
+        "wrong": [
+          {
+            "zh": "灾害时的物资据点只有A提到。",
+            "en": "Only A mentions disaster supplies."
+          },
+          {
+            "zh": "深夜客人少只有B提到。",
+            "en": "Only B mentions few late-night customers."
+          },
+          {
+            "zh": "行政支持只有A提到。",
+            "en": "Only A mentions government support."
+          },
+          null
+        ]
+      },
+      {
+        "q": "深夜営業について、AとBはどのように考えているか。",
+        "options": [
+          "Aは店員の負担を考えてやめるべきだとし、Bは地域の治安を守るためにも続けるべきだとしている。",
+          "Aは地域での役割から一律の廃止に反対し、Bは24時間営業が当然という考えを改めるべきだとしている。",
+          "AもBも、人手不足が続く以上は、すべての店で深夜営業をやめるべきだという考えである。",
+          "Aは客の便利さを何よりも重んじ、Bは加盟店の経営者の利益を何よりも重んじている。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：A「深夜営業を一律にやめるのではなく」；B「24時間営業を当然とする考え方そのものを、そろそろ改めるべき時期に来ている」\n推理：A看重深夜店在地区中的作用（夜班工作者、治安、灾害），反对一律停止；B从店员的牺牲和不合理出发，主张改变“24小时理所当然”的观念。",
+          "en": "Evidence: A 「深夜営業を一律にやめるのではなく」; B 「24時間営業を当然とする考え方そのものを、そろそろ改めるべき時期に来ている」.\nReasoning: A values late-night shops' local role (night workers, safety, disasters) and opposes ending it across the board; B, citing staff sacrifice and poor sense, wants to end the assumption of 24-hour opening."
+        },
+        "wrong": [
+          {
+            "zh": "说反了：重视治安的是A，主张从店员负担出发停业的是B。",
+            "en": "Reversed: A stresses safety; B is the one citing staff burden."
+          },
+          null,
+          {
+            "zh": "A反对一律停业，B也认为必要的地区可以让部分店开着。",
+            "en": "A opposes ending it everywhere, and B allows some stores to stay open where needed."
+          },
+          {
+            "zh": "A看重的是地区作用而不只是方便；B看重的是店员和经营者的牺牲，不是利益。",
+            "en": "A stresses the local role, not just convenience; B stresses workers' sacrifice, not profit."
+          }
+        ]
+      },
+      {
+        "q": "Bの「店員の犠牲の上に成り立っている」とは、どのようなことを指しているか。",
+        "options": [
+          "深夜の客が少ないため、店員の給料が低く抑えられていること",
+          "夜道で不安を感じた人が、店員に助けを求めて駆け込んでくること",
+          "人手が集まらず、経営者が自ら夜通し働いて体を壊すことがあること",
+          "災害時に、店員が休みを返上して物資の供給に当たっていること"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「加盟店の経営者の中には、アルバイトが集まらず、自ら夜通し店に立ち続けて体を壊した人もいる」\n推理：「犠牲」的具体例子紧接在后面：招不到人，经营者自己通宵站店，搞坏了身体。",
+          "en": "Evidence: 「加盟店の経営者の中には、アルバイトが集まらず、自ら夜通し店に立ち続けて体を壊した人もいる」.\nReasoning: The 'sacrifice' is illustrated right after: unable to hire, owners work all night themselves and wreck their health."
+        },
+        "wrong": [
+          {
+            "zh": "B没有谈工资。",
+            "en": "B doesn't mention wages."
+          },
+          {
+            "zh": "跑进店里求助是A说的深夜店的作用，不是B说的牺牲。",
+            "en": "Running in for help is A's point about the shops' role, not B's sacrifice."
+          },
+          null,
+          {
+            "zh": "灾害时的物资供应是A提到的，与B说的牺牲无关。",
+            "en": "Disaster supply is A's point, unrelated to B's sacrifice."
+          }
+        ]
+      }
+    ]
   }
 ]

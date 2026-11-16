@@ -383,5 +383,392 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n3-dk-504",
+    "type": "long",
+    "difficulty": 3,
+    "passage": "「普通はこうするでしょう」。子どものころ、母によくそう言われた。友達と違うことをしようとすると、いつも「普通」という言葉で止められたのだ。そのため私は長い間、普通であることが正しいことだと信じていた。\n考えが変わったのは、海外の大学に一年間留学したときだ。寮で一緒に暮らした学生たちは、食事の時間も、勉強のしかたも、休みの過ごし方も、みんなばらばらだった。ある日、私が「普通は夜に勉強するよね」と言うと、ルームメートに「それはあなたの国の普通でしょう？」と笑われた。そのとき初めて、自分が当たり前だと思っていたことが、ある場所、ある時代の習慣にすぎないことに気づいた。\nもちろん、社会で暮らすためには、ある程度共通のルールは必要だ。電車の中で大声で話さない、約束の時間を守る、といったことは、多くの人が気持ちよく暮らすために役に立っている。問題は、「普通」という言葉を、理由を説明しないまま、相手を自分に合わせさせるために使うことだ。「普通はこうする」と言われると、言われた人は、なぜそうするのかを考える前に、自分が間違っているような気持ちになってしまう。\n今、私は自分の子どもに何かを注意するとき、「普通は」と言わないようにしている。その代わりに、なぜそうしてほしいのかを話すようにしている。理由が説明できないなら、それは本当は守らなくてもいいことなのかもしれない。",
+    "tr": {
+      "zh": "“一般都是这样做的吧。”小时候，母亲常这样对我说。我想做和朋友不一样的事时，总是被“一般”这个词拦住。因此，很长一段时间里，我一直相信“普通”就是正确的。\n想法改变，是在我去国外的大学留学一年的时候。在宿舍一起生活的学生们，吃饭时间、学习方法、假日的度过方式，全都各不相同。有一天，我说“一般都是晚上学习的吧”，室友笑着说：“那是你们国家的‘一般’吧？”那时我才第一次意识到，自己认为理所当然的事，只不过是某个地方、某个时代的习惯而已。\n当然，要在社会上生活，一定程度的共同规则是必要的。在电车里不大声说话、遵守约定的时间之类的事，对很多人舒适地生活很有帮助。问题在于，不说明理由，就用“一般”这个词让对方迎合自己。被人说“一般都是这样做的”，被说的人在思考为什么要这样做之前，就会觉得好像是自己错了。\n现在，我在提醒自己的孩子时，尽量不说“一般”。取而代之，我会讲为什么希望他那样做。如果说不出理由，那也许其实是不遵守也没关系的事。",
+      "en": "'Normally you'd do it this way, wouldn't you?' My mother often said that to me when I was a child. Whenever I tried to do something different from my friends, I was stopped with the word 'normal'. So for a long time I believed that being normal was being right.\nMy thinking changed when I studied for a year at a university abroad. The students I lived with in the dormitory all differed — in when they ate, how they studied and how they spent their days off. One day I said, 'Normally you study at night, don't you?' and my roommate laughed: 'That's your country's normal, isn't it?' Only then did I realise that what I'd taken for granted was just the custom of one place and one era.\nOf course, living in society requires some shared rules. Not talking loudly on trains and being on time help many people live comfortably. The problem is using the word 'normal' to make others fit in with you, without explaining why. When told 'normally you do this', people feel they are in the wrong before they even think about why it should be done.\nNow, when I tell my own children off, I try not to say 'normally'. Instead, I tell them why I want them to do it. If I can't explain the reason, perhaps it's something that doesn't really need to be followed."
+    },
+    "questions": [
+      {
+        "q": "筆者が長い間、普通であることが正しいと信じていたのはなぜか。",
+        "difficulty": 1,
+        "options": [
+          "周りの友達が、みんな同じことをしていたから",
+          "学校の先生に、人と違うことをするなと言われたから",
+          "人と違うことをしようとすると、母に止められたから",
+          "人と違うことをして、失敗したことがあったから"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「友達と違うことをしようとすると、いつも『普通』という言葉で止められたのだ。そのため私は長い間、普通であることが正しいことだと信じていた」\n推理：「そのため」直接连接原因和结果：小时候想做和朋友不同的事，总被母亲用“一般”拦住，所以一直相信“普通＝正确”。",
+          "en": "Evidence: 「友達と違うことをしようとすると、いつも『普通』という言葉で止められたのだ。そのため私は長い間、普通であることが正しいことだと信じていた」\nReasoning: 「そのため」 links cause and effect: as a child, whenever she tried something different, her mother stopped her with 'normal', so she believed normal meant right."
+        },
+        "wrong": [
+          {
+            "zh": "文中说的是母亲的话，没有说朋友们都做同样的事。",
+            "en": "The text is about her mother's words, not friends all doing the same."
+          },
+          {
+            "zh": "说「普通は」的是母亲，不是老师。",
+            "en": "It was her mother who said 「普通は」, not a teacher."
+          },
+          null,
+          {
+            "zh": "文中没有提到失败的经历。",
+            "en": "No failure is mentioned."
+          }
+        ]
+      },
+      {
+        "q": "ルームメートに笑われたとき、筆者はどんなことに気づいたか。",
+        "options": [
+          "当たり前だと思っていたことが、ある場所の習慣にすぎないこと",
+          "夜に勉強するのは、どこの国でもよくない習慣だということ",
+          "寮で暮らすには、ほかの学生に合わせる必要があるということ",
+          "留学先の国では、決まった時間に勉強する人がいないということ"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「自分が当たり前だと思っていたことが、ある場所、ある時代の習慣にすぎないことに気づいた」\n推理：室友说「それはあなたの国の普通でしょう？」，让作者第一次意识到：自己的“普通”只是某个地方、某个时代的习惯。「〜にすぎない」＝只不过是。",
+          "en": "Evidence: 「自分が当たり前だと思っていたことが、ある場所、ある時代の習慣にすぎないことに気づいた」\nReasoning: The roommate's 「それはあなたの国の普通でしょう？」 made her see that her 'normal' was only the custom of a place and time. 「〜にすぎない」 = no more than."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "室友并没有说晚上学习不好，只是指出那是“你们国家的一般”。",
+            "en": "The roommate didn't call night study bad, only 'your country's normal'."
+          },
+          {
+            "zh": "作者意识到的是“普通”是相对的，并不是要配合别人。",
+            "en": "Her realisation was that 'normal' is relative, not that she must fit in."
+          },
+          {
+            "zh": "文中只说大家的学习方式「ばらばら」，没有说没人定时学习。",
+            "en": "The text says study habits were 「ばらばら」, not that no one studied at set times."
+          }
+        ]
+      },
+      {
+        "q": "筆者は、「普通」という言葉のどんな使い方が問題だと考えているか。",
+        "options": [
+          "電車の中や約束の時間など、社会のルールを教えるときに使うこと",
+          "外国の人に、自分の国の習慣を説明するときに使うこと",
+          "子どもに注意をするときに、理由と一緒に使うこと",
+          "理由を言わずに、相手を自分に合わせさせるために使うこと"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「問題は、『普通』という言葉を、理由を説明しないまま、相手を自分に合わせさせるために使うことだ」\n推理：「問題は〜ことだ」直接给出答案。前面「もちろん」承认电车上不大声说话等共同规则是必要的，所以问题不在规则本身，而在不说理由就让人迎合。",
+          "en": "Evidence: 「問題は、『普通』という言葉を、理由を説明しないまま、相手を自分に合わせさせるために使うことだ」\nReasoning: 「問題は〜ことだ」 gives the answer directly. Just before, 「もちろん」 grants that shared rules like keeping quiet on trains are needed, so the problem isn't rules but making people conform without reasons."
+        },
+        "wrong": [
+          {
+            "zh": "作者认为这些共同规则「必要だ」，对很多人有帮助。",
+            "en": "She calls such shared rules 「必要だ」 and helpful to many."
+          },
+          {
+            "zh": "文中没有讨论向外国人说明本国习惯。",
+            "en": "Explaining customs to foreigners isn't discussed."
+          },
+          {
+            "zh": "作者现在提醒孩子时会说明理由，而且尽量不说「普通は」；问题是不说理由。",
+            "en": "She now gives reasons and avoids 「普通は」; the problem is the missing reason."
+          },
+          null
+        ]
+      },
+      {
+        "q": "筆者がこの文章で最も言いたいことは何か。",
+        "options": [
+          "社会で暮らすためには、普通のことを守ることが大切だ。",
+          "人に何かを求めるときは、「普通」で済ませず理由を伝えるべきだ。",
+          "子どものうちに外国で暮らして、いろいろな考え方を知るべきだ。",
+          "「普通」は国によって違うので、自分の国の普通を大切にするべきだ。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「その代わりに、なぜそうしてほしいのかを話すようにしている。理由が説明できないなら、それは本当は守らなくてもいいことなのかもしれない」\n推理：全文从“普通＝正确”的旧想法出发，指出问题是不说理由就用“普通”让人迎合，最后说自己改为说明理由。中心是：要求别人时不要用“普通”打发，要讲理由。",
+          "en": "Evidence: 「その代わりに、なぜそうしてほしいのかを話すようにしている。理由が説明できないなら、それは本当は守らなくてもいいことなのかもしれない」\nReasoning: The essay moves from her old belief that normal = right, to the problem of using 'normal' to make people conform without reasons, to her own practice of giving reasons. The core: when asking something of others, give the reason instead of 'normal'."
+        },
+        "wrong": [
+          {
+            "zh": "作者虽然承认共同规则必要，但全文批评的是用“普通”而不说理由。",
+            "en": "She grants shared rules are needed, but the essay criticises using 'normal' without reasons."
+          },
+          null,
+          {
+            "zh": "作者是大学时留学的，文中没有主张小时候去国外生活。",
+            "en": "She studied abroad at university; she doesn't urge living abroad as a child."
+          },
+          {
+            "zh": "作者意识到“普通”只是习惯，没有说要珍惜本国的“普通”。",
+            "en": "She realised 'normal' is just custom; she doesn't urge valuing her own country's normal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-505",
+    "type": "long",
+    "difficulty": 3,
+    "passage": "スマートフォンに話しかけるだけで、その場で外国語に訳してくれるアプリがある。旅行で道を聞いたり、レストランで注文したりするくらいなら、これで十分だ。そのため、「これからは外国語を勉強する必要はない」と言う人もいる。\n確かに、翻訳の技術はここ数年で大きく進歩した。私も仕事で外国の取引先にメールを書くとき、翻訳アプリを使うことがある。文法の間違いはほとんどなく、とても便利だ。\nしかし先日、こんなことがあった。取引先から届いたメールを翻訳アプリで読んだところ、とても失礼な内容に思えた。驚いて、その国の言葉が分かる同僚に見てもらうと、実際には冗談まじりの、親しみのこもった文章だったのだ。翻訳された文は、意味は合っていても、書いた人の気持ちまでは伝えていなかった。\n言葉には、辞書に書いてある意味のほかに、その国の文化や、相手との関係によって変わる部分がある。それを理解するには、やはり自分でその言葉を学ぶしかないのではないか。\n外国語を勉強する目的が変わってきたのだと私は思う。ただ情報を伝えるだけなら、機械に任せればいい。しかし、相手の気持ちを理解し、自分の気持ちを伝えて、人と人との関係を作るためには、これからも外国語を学ぶ意味はあるはずだ。",
+    "tr": {
+      "zh": "有一种应用，只要对着手机说话，就能当场翻译成外语。旅行时问路、在餐厅点菜之类的，用它就足够了。因此，也有人说“今后没有必要学外语了”。\n确实，翻译技术这几年进步很大。我在工作中给外国客户写邮件时，也会用翻译应用。几乎没有语法错误，非常方便。\n但是前几天，发生了这样一件事。我用翻译应用读客户发来的邮件，觉得内容非常失礼。我吃了一惊，请懂那个国家语言的同事看了看，结果实际上是一篇带着玩笑、充满亲切感的文章。翻译出来的句子，意思虽然没错，却没有把写信人的心情传达出来。\n语言除了词典上写的意思之外，还有随那个国家的文化、和对方的关系而变化的部分。要理解这些，恐怕还是只能自己去学那门语言吧。\n我认为学外语的目的已经变了。如果只是传递信息，交给机器就好。但是，为了理解对方的心情、传达自己的心情、建立人与人之间的关系，今后学外语也一定是有意义的。",
+      "en": "There are apps that translate into a foreign language on the spot when you simply speak to your phone. For asking the way on a trip or ordering in a restaurant, that's enough. So some people say, 'From now on there's no need to study foreign languages.'\nCertainly, translation technology has advanced greatly in the last few years. I sometimes use a translation app myself when writing emails to overseas clients for work. There are almost no grammar mistakes, and it's very convenient.\nBut the other day, this happened. When I read an email from a client through a translation app, it seemed very rude. Surprised, I asked a colleague who knows that country's language to look at it, and in fact it was a friendly message, partly joking. The translated text had the meaning right, but it didn't convey the writer's feelings.\nBesides the meanings written in the dictionary, words have parts that change with the country's culture and your relationship with the other person. To understand that, surely the only way is to learn the language yourself.\nI think the purpose of studying foreign languages has changed. If you only need to pass on information, you can leave it to machines. But to understand others' feelings, convey your own and build relationships between people, there must still be a point in learning foreign languages."
+    },
+    "questions": [
+      {
+        "q": "「これからは外国語を勉強する必要はない」と言う人がいるのはなぜか。",
+        "difficulty": 1,
+        "options": [
+          "外国語は難しく、大人になってから学んでも上達しないから",
+          "仕事のメールは、ほとんど日本語で書けば済むようになったから",
+          "外国へ旅行する人が、以前より少なくなってきたから",
+          "道を聞いたり注文したりするくらいなら、アプリで十分だから"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「旅行で道を聞いたり、レストランで注文したりするくらいなら、これで十分だ。そのため、『これからは外国語を勉強する必要はない』と言う人もいる」\n推理：「そのため」前面就是原因：对着手机说话就能翻译，问路、点菜这种程度用应用就够了。",
+          "en": "Evidence: 「旅行で道を聞いたり、レストランで注文したりするくらいなら、これで十分だ。そのため、『これからは外国語を勉強する必要はない』と言う人もいる」\nReasoning: The reason comes right before 「そのため」: apps translate speech on the spot, and for asking the way or ordering that is enough."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有说成年后学外语学不好。",
+            "en": "Nothing says adults can't improve."
+          },
+          {
+            "zh": "作者写邮件用的是翻译应用，没有说用日语写就行。",
+            "en": "He uses a translation app for emails; nothing says Japanese alone will do."
+          },
+          {
+            "zh": "文中没有提到出国旅行的人减少。",
+            "en": "Fewer travellers isn't mentioned."
+          },
+          null
+        ]
+      },
+      {
+        "q": "取引先から届いたメールについて、正しいものはどれか。",
+        "options": [
+          "アプリの訳では失礼に読めたが、実は親しみのこもった文章だった。",
+          "アプリの訳では親しい文章に読めたが、実は失礼な内容だった。",
+          "アプリの訳には文法の間違いが多く、意味がよく分からなかった。",
+          "同僚に訳してもらうと、冗談ばかりで仕事の話がなかった。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「翻訳アプリで読んだところ、とても失礼な内容に思えた」；「実際には冗談まじりの、親しみのこもった文章だったのだ」\n推理：用应用读觉得失礼，请懂那门语言的同事看后，才知道其实是带玩笑的亲切文章。「〜たところ」引出结果，「実際には」引出真实情况。",
+          "en": "Evidence: 「翻訳アプリで読んだところ、とても失礼な内容に思えた」; 「実際には冗談まじりの、親しみのこもった文章だったのだ」\nReasoning: Through the app it seemed rude; a colleague who knew the language showed it was friendly and partly joking. 「〜たところ」 gives the first impression, 「実際には」 the truth."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "正好说反了：应用译文显得失礼，实际是亲切的。",
+            "en": "Reversed: the app made it seem rude; it was actually friendly."
+          },
+          {
+            "zh": "作者说翻译应用「文法の間違いはほとんどなく」，而且意思是对的。",
+            "en": "He says the app has 「文法の間違いはほとんどなく」, and the meaning was right."
+          },
+          {
+            "zh": "「冗談まじり」是带着玩笑，不是全是玩笑；文中没有说没有工作内容。",
+            "en": "「冗談まじり」 means partly joking; nothing says there was no business content."
+          }
+        ]
+      },
+      {
+        "q": "筆者によると、翻訳された文に足りなかったものは何か。",
+        "options": [
+          "文の正しい意味",
+          "正しい文法",
+          "書いた人の気持ち",
+          "仕事に必要な情報"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「翻訳された文は、意味は合っていても、書いた人の気持ちまでは伝えていなかった」\n推理：「意味は合っていても」排除了“意思”；「〜までは伝えていなかった」指出缺少的是写信人的心情。语法前面也说过几乎没有错误。",
+          "en": "Evidence: 「翻訳された文は、意味は合っていても、書いた人の気持ちまでは伝えていなかった」\nReasoning: 「意味は合っていても」 rules out meaning; 「〜までは伝えていなかった」 shows what was missing: the writer's feelings. Grammar was said earlier to be almost flawless."
+        },
+        "wrong": [
+          {
+            "zh": "文中说「意味は合っていても」，意思是对的。",
+            "en": "The text says 「意味は合っていても」 — the meaning was right."
+          },
+          {
+            "zh": "作者说翻译应用「文法の間違いはほとんどなく」。",
+            "en": "He says the app makes 「文法の間違いはほとんどなく」."
+          },
+          null,
+          {
+            "zh": "作者认为传递信息交给机器就可以，缺少的不是信息。",
+            "en": "He thinks machines can handle information; information wasn't what was missing."
+          }
+        ]
+      },
+      {
+        "q": "筆者の考えに合うものはどれか。",
+        "options": [
+          "翻訳アプリは間違いが多いので、仕事では使わないほうがいい。",
+          "これからは、外国語を勉強する必要はほとんどなくなる。",
+          "人と関係を作るためには、これからも外国語を学ぶ意味がある。",
+          "外国語は、辞書に書いてある意味を正確に覚えることが大切だ。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「相手の気持ちを理解し、自分の気持ちを伝えて、人と人との関係を作るためには、これからも外国語を学ぶ意味はあるはずだ」\n推理：作者承认传递信息可以交给机器，再用「しかし」转折：为了理解心情、建立人际关系，学外语依然有意义。这是全文的结论。",
+          "en": "Evidence: 「相手の気持ちを理解し、自分の気持ちを伝えて、人と人との関係を作るためには、これからも外国語を学ぶ意味はあるはずだ」\nReasoning: He grants machines can pass on information, then turns with 「しかし」: to understand feelings and build relationships, learning languages still matters. That is the conclusion."
+        },
+        "wrong": [
+          {
+            "zh": "作者自己工作中也用，并说几乎没有语法错误、很方便。",
+            "en": "He uses it at work himself and calls it accurate and convenient."
+          },
+          {
+            "zh": "这是第一段里「言う人もいる」的看法，作者最后表示反对。",
+            "en": "That is what 「言う人もいる」 in paragraph one; he disagrees in the end."
+          },
+          null,
+          {
+            "zh": "作者强调的是词典意思之外随文化和关系变化的部分。",
+            "en": "He stresses what lies beyond dictionary meanings — culture and relationships."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-506",
+    "type": "long",
+    "difficulty": 3,
+    "passage": "注文した次の日に商品が届く。動画は見たいときにすぐ見られる。分からないことはスマートフォンで調べれば、数秒で答えが出る。私たちの生活から、「待つ」時間はどんどん減っている。\n便利になったのはいいことだ。しかし、その分、私たちは待つことが苦手になってしまったのではないだろうか。電車が二、三分遅れただけでいらいらしたり、メッセージの返事がすぐに来ないと不安になったりする人は多い。\n子どものころ、家の近くに小さな本屋があった。好きな漫画の雑誌は月に一度しか出ず、発売日が近づくと、毎日カレンダーを見て、あと何日かと数えていた。やっと手に入れた日は、家までの道を走って帰ったものだ。今思えば、待っていた時間も含めて、楽しみの一部だったのだと思う。\n待つことには、もう一つよい点がある。考える時間ができることだ。すぐに答えが手に入らないとき、人は自分なりに想像したり、考えたりする。友人に手紙を書いて返事を待っていたころは、相手が今ごろ何をしているか、どんな返事が来るかを、何度も想像したものだ。\nもちろん、昔のような不便な生活に戻るべきだとは思わない。ただ、何でもすぐに手に入る時代だからこそ、ときには待つ時間を楽しむ余裕を持ちたいと思う。",
+    "tr": {
+      "zh": "下单第二天商品就送到。视频想看的时候马上就能看。不懂的事用手机一查，几秒钟就有答案。我们生活中“等待”的时间正在不断减少。\n变得方便是好事。但是，我们是不是也因此变得不擅长等待了呢？电车晚了两三分钟就焦躁不安，消息的回复没有马上来就感到不安，这样的人很多。\n小时候，我家附近有一家小书店。喜欢的漫画杂志一个月只出一期，发售日临近时，我每天看着日历数还有几天。终于买到的那天，我会一路跑回家。现在想来，连等待的时间在内，都是乐趣的一部分。\n等待还有另一个好处，那就是有了思考的时间。得不到马上的答案时，人会按自己的方式去想象、去思考。给朋友写信等回信的那段日子，我会一遍遍地想象对方此刻在做什么、会来怎样的回信。\n当然，我并不认为应该回到从前那种不方便的生活。只是，正因为是什么都能马上得到的时代，我希望有时能有享受等待时间的从容。",
+      "en": "Things you order arrive the next day. You can watch videos the moment you want to. If you don't know something, a search on your phone gives the answer in seconds. 'Waiting' time is steadily disappearing from our lives.\nIt's good that life has become convenient. But haven't we, in exchange, become bad at waiting? Many people get irritated when a train is just two or three minutes late, or anxious when a reply to a message doesn't come at once.\nWhen I was a child, there was a small bookshop near my home. The comic magazine I loved came out only once a month, and as the release day approached I'd look at the calendar every day and count how many days were left. On the day I finally got it, I used to run all the way home. Looking back, I think the time spent waiting was part of the pleasure too.\nWaiting has one more good point: it gives you time to think. When you can't get an answer straight away, you imagine and think things through in your own way. When I wrote letters to friends and waited for replies, I'd imagine again and again what they were doing just then and what kind of reply would come.\nOf course, I don't think we should go back to the inconvenient life of the past. But precisely because this is an age when you can get anything right away, I'd like to have the ease of mind to enjoy waiting now and then."
+    },
+    "questions": [
+      {
+        "q": "筆者によると、待つ時間が減ったことで、私たちはどうなったか。",
+        "difficulty": 1,
+        "options": [
+          "空いた時間で、前よりたくさんのことができるようになった。",
+          "待つことが苦手になり、少し遅れただけでいらいらするようになった。",
+          "すぐに答えが分かるので、自分で考えることが好きになった。",
+          "便利になりすぎて、昔の不便な生活に戻りたいと思うようになった。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「その分、私たちは待つことが苦手になってしまったのではないだろうか。電車が二、三分遅れただけでいらいらしたり」\n推理：「その分」表示代价：变方便的同时，变得不擅长等待。后面举例：电车晚两三分钟就焦躁。选项把这两点合在一起。",
+          "en": "Evidence: 「その分、私たちは待つことが苦手になってしまったのではないだろうか。電車が二、三分遅れただけでいらいらしたり」\nReasoning: 「その分」 marks the cost: with convenience, we've become bad at waiting, as when a train two or three minutes late irritates people. The option combines both points."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有说空出来的时间让人能做更多事。",
+            "en": "Nothing says the freed-up time lets people do more."
+          },
+          null,
+          {
+            "zh": "作者说思考的时间是等待带来的，马上有答案反而少了思考。",
+            "en": "He says waiting gives time to think; instant answers mean less of it."
+          },
+          {
+            "zh": "作者明确说「不便な生活に戻るべきだとは思わない」。",
+            "en": "He says plainly 「不便な生活に戻るべきだとは思わない」."
+          }
+        ]
+      },
+      {
+        "q": "「待っていた時間も含めて、楽しみの一部だった」とは、どういうことか。",
+        "options": [
+          "漫画を待つ間に、ほかの本をたくさん読むことができたということ",
+          "漫画の発売日を、友達と一緒に数えるのが楽しかったということ",
+          "発売日を楽しみに待つ時間も、漫画の楽しさの一つだったということ",
+          "早く漫画が欲しかったので、待つ時間がとてもつらかったということ"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「発売日が近づくと、毎日カレンダーを見て、あと何日かと数えていた」；「待っていた時間も含めて、楽しみの一部だったのだと思う」\n推理：作者每天数日子、买到后跑回家——这些描写说明期待本身就很快乐。「〜も含めて」表示不只是读漫画，连等待的时间也算在乐趣里。",
+          "en": "Evidence: 「発売日が近づくと、毎日カレンダーを見て、あと何日かと数えていた」; 「待っていた時間も含めて、楽しみの一部だったのだと思う」\nReasoning: Counting the days and running home show that the anticipation itself was a joy. 「〜も含めて」 means not just reading the comic but the waiting too was part of the fun."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有说等待期间读了别的书。",
+            "en": "Nothing says he read other books while waiting."
+          },
+          {
+            "zh": "是作者自己每天看日历数日子，没有提到朋友。",
+            "en": "He counted the days himself; no friends are mentioned."
+          },
+          null,
+          {
+            "zh": "作者说等待是「楽しみの一部」，不是痛苦。",
+            "en": "He calls waiting 「楽しみの一部」, not painful."
+          }
+        ]
+      },
+      {
+        "q": "筆者が挙げている、待つことの「もう一つよい点」は何か。",
+        "options": [
+          "相手からの返事を、前より早くもらえるようになること",
+          "手紙を書くことで、字がきれいに書けるようになること",
+          "いらいらしないように、心を落ち着ける練習になること",
+          "答えがすぐに出ないので、想像したり考えたりできること"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「待つことには、もう一つよい点がある。考える時間ができることだ。すぐに答えが手に入らないとき、人は自分なりに想像したり、考えたりする」\n推理：“另一个好处”紧接着就说明了：有思考的时间，得不到马上的答案时会去想象、思考。写信等回信是例子。",
+          "en": "Evidence: 「待つことには、もう一つよい点がある。考える時間ができることだ。すぐに答えが手に入らないとき、人は自分なりに想像したり、考えたりする」\nReasoning: The 'one more good point' is spelled out at once: time to think; without an instant answer, people imagine and reflect. Waiting for letters is the example."
+        },
+        "wrong": [
+          {
+            "zh": "等待不会让回信更快，文中也没有这样说。",
+            "en": "Waiting doesn't make replies faster, and the text doesn't say so."
+          },
+          {
+            "zh": "文中写信的例子是讲想象对方，不是练字。",
+            "en": "The letter example is about imagining the friend, not handwriting."
+          },
+          {
+            "zh": "文中没有说等待是让心平静的练习。",
+            "en": "Nothing calls waiting practice in calming down."
+          },
+          null
+        ]
+      },
+      {
+        "q": "筆者がこの文章で最も言いたいことは何か。",
+        "options": [
+          "何でもすぐ手に入る時代だからこそ、待つ時間を楽しむ余裕を持ちたい。",
+          "便利な生活は人をいらいらさせるので、少し不便なほうがいい。",
+          "子どもには、欲しいものをすぐに与えず、待たせたほうがいい。",
+          "分からないことは、スマートフォンで調べずに自分で考えるべきだ。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「何でもすぐに手に入る時代だからこそ、ときには待つ時間を楽しむ余裕を持ちたいと思う」\n推理：最后一段先用「もちろん」说明不主张回到不便的生活，再用「ただ」给出结论：正因为什么都能马上得到，才希望有享受等待的从容。选项就是这句话。",
+          "en": "Evidence: 「何でもすぐに手に入る時代だからこそ、ときには待つ時間を楽しむ余裕を持ちたいと思う」\nReasoning: The last paragraph first says with 「もちろん」 he isn't calling for an inconvenient life, then concludes after 「ただ」: because everything comes instantly, he wants room to enjoy waiting. The option is that sentence."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "作者说「不便な生活に戻るべきだとは思わない」。",
+            "en": "He says 「不便な生活に戻るべきだとは思わない」."
+          },
+          {
+            "zh": "童年的漫画是作者自己的回忆，没有讲怎样教育孩子。",
+            "en": "The comic is his own childhood memory, not advice on raising children."
+          },
+          {
+            "zh": "作者说「ときには」享受等待，没有说不要用手机查。",
+            "en": "He says enjoy waiting 「ときには」; he doesn't say never to search on your phone."
+          }
+        ]
+      }
+    ]
   }
 ]

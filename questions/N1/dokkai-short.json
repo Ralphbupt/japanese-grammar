@@ -575,5 +575,585 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n1-dk-215",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、ある会社の社員に届いたメールです。",
+    "passage": "件名：会議室の予約方法の変更について\n\n社員各位\n\n12月1日より、会議室の予約方法を変更いたします。これまでは総務部への内線連絡で受け付けておりましたが、今後は社内ポータルの予約画面からのみ受け付けます。\nまた、予約したにもかかわらず使われないまま放置される例が相次いでいることから、開始時刻を15分過ぎても利用の確認が取れない場合、予約は自動的に取り消されます。会議室に備え付けの端末で「利用開始」を押していただければ、確認が取れたものとみなします。\n\n総務部",
+    "tr": {
+      "zh": "主题：关于会议室预约方式变更\n\n致全体员工：\n\n自12月1日起，会议室的预约方式将有所变更。以往通过内线电话向总务部预约，今后只受理通过公司内部门户预约页面提交的预约。\n另外，由于预约后却无人使用、被闲置的情况接连发生，如果超过开始时间15分钟仍未确认使用，预约将被自动取消。只要在会议室配备的终端上按下“开始使用”，即视为已确认。\n\n总务部",
+      "en": "Subject: Change to how meeting rooms are booked\n\nTo all staff:\n\nFrom 1 December the way meeting rooms are booked will change. Bookings used to be taken by internal phone call to General Affairs; from now on they will be accepted only through the booking screen on the intranet portal.\nAlso, because rooms keep being booked and then left unused, a booking will be cancelled automatically if use has not been confirmed 15 minutes after the start time. Pressing 'Start' on the terminal installed in the meeting room counts as confirmation.\n\nGeneral Affairs"
+    },
+    "questions": [
+      {
+        "q": "12月以降、会議室を予約して使う人は、どうしなければならないか。",
+        "options": [
+          "総務部に内線で連絡し、会議が始まる15分前までに予約を確定させる。",
+          "予約した開始時刻の15分前までに、ポータルの画面で利用の確認をする。",
+          "ポータルで予約し、開始から15分以内に会議室の端末で利用開始を押す。",
+          "使わないことになったら、開始時刻の15分前までに自分で予約を取り消す。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「今後は社内ポータルの予約画面からのみ受け付けます」；「開始時刻を15分過ぎても利用の確認が取れない場合、予約は自動的に取り消されます」；「会議室に備え付けの端末で『利用開始』を押していただければ、確認が取れたものとみなします」\n推理：预约只能走门户；使用时要在开始后15分钟内，在会议室终端按「利用開始」完成确认，否则预约被自动取消。",
+          "en": "Evidence: 「今後は社内ポータルの予約画面からのみ受け付けます」; 「開始時刻を15分過ぎても利用の確認が取れない場合、予約は自動的に取り消されます」; 「会議室に備え付けの端末で『利用開始』を押していただければ、確認が取れたものとみなします」.\nReasoning: Bookings go through the portal only, and use is confirmed by pressing 「利用開始」 on the room's terminal within 15 minutes of the start, or the booking is cancelled."
+        },
+        "wrong": [
+          {
+            "zh": "内线电话是「これまでは」的旧方法，12月起只能在门户预约。",
+            "en": "Phoning is the old way (「これまでは」); from December only the portal is accepted."
+          },
+          {
+            "zh": "确认是在会议室的终端上按「利用開始」，时间是开始后15分钟以内，不是开始前在门户上操作。",
+            "en": "Confirmation is done on the room terminal within 15 minutes after the start, not on the portal beforehand."
+          },
+          null,
+          {
+            "zh": "通知没有要求自己取消；没确认使用的预约会被「自動的に」取消。",
+            "en": "Nobody is asked to cancel; unconfirmed bookings are cancelled 「自動的に」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-216",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "「すみません」は便利な言葉である。道を譲ってもらったときも、荷物を持ってもらったときも、私たちはつい「すみません」と口にする。相手に手間をかけたことへの申し訳なさが、感謝の気持ちより先に立つのだろう。だが、言われる側に立ってみるとどうだろうか。親切にしたつもりが謝られてしまうと、かえって相手に負担をかけたような気がして、どこか落ち着かない。「ありがとう」と言われれば、こちらも素直に喜べる。相手を気遣うつもりの謝罪が、相手の好意を受け取り損ねていることもあるのだ。",
+    "tr": {
+      "zh": "“对不起”是个方便的词。别人给我们让路时，帮我们拿东西时，我们总会脱口说出“对不起”。大概是给对方添了麻烦的歉意，抢在了感谢之情的前面吧。但是，站在被这样说的一方来看又如何呢？本想做件好事却被道歉，反而觉得好像给对方造成了负担，总有些不自在。如果被说“谢谢”，自己也能坦然地高兴。本想体贴对方的道歉，有时反而没能接住对方的好意。",
+      "en": "'Sumimasen' is a handy word. When someone lets us pass or carries our bags, we automatically say 'sumimasen'. Probably our regret at having troubled them comes before our gratitude. But how does it feel to be on the receiving end? If you meant to be kind and are apologised to, you feel as if you have burdened the other person, and you are somehow ill at ease. If you are told 'thank you', you can simply be glad. An apology meant to show consideration can sometimes fail to accept the other person's kindness."
+    },
+    "questions": [
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "options": [
+          "親切を受けたときは、謝るより感謝を伝えるほうが相手も喜べる。",
+          "「すみません」は感謝の意味も含むので、言い換える必要はない。",
+          "謝罪の言葉を口にするのは、相手への気遣いが足りないからだ。",
+          "親切にした側は、謝られると自分の親切が報われたと感じる。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「『ありがとう』と言われれば、こちらも素直に喜べる」；「相手を気遣うつもりの謝罪が、相手の好意を受け取り損ねていることもある」\n推理：笔者站在帮忙的一方：被道歉会「落ち着かない」，被感谢才能「素直に喜べる」。所以受到好意时，说谢谢比道歉更让对方高兴。",
+          "en": "Evidence: 「『ありがとう』と言われれば、こちらも素直に喜べる」; 「相手を気遣うつもりの謝罪が、相手の好意を受け取り損ねていることもある」.\nReasoning: From the helper's side, an apology leaves you 「落ち着かない」 while thanks lets you 「素直に喜べる」, so thanking pleases the other person more than apologising."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "笔者恰恰指出「すみません」会让对方不自在，主张说「ありがとう」，并不认为不必换。",
+            "en": "The author shows 「すみません」 makes the helper uneasy and prefers 「ありがとう」; he does think it should change."
+          },
+          {
+            "zh": "文中说道歉是「相手を気遣うつもり」，出发点是体贴，不是缺乏体贴。",
+            "en": "The text calls the apology 「相手を気遣うつもり」: it comes from consideration, not a lack of it."
+          },
+          {
+            "zh": "被道歉的一方会觉得「どこか落ち着かない」，不是觉得好意得到回报。",
+            "en": "The helper feels 「どこか落ち着かない」, not rewarded."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-217",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、ある家電メーカーのホームページに掲載されたお知らせです。",
+    "passage": "石油ファンヒーターをご愛用のお客様へ\n無償点検・修理のお願い\n\n弊社が2019年から2021年にかけて製造した石油ファンヒーターの一部機種において、内部の部品が劣化し、まれに運転中に異臭や発煙が生じるおそれがあることが判明いたしました。\n対象機種をお使いのお客様は、直ちにご使用を中止し、本体背面の製造番号をご確認のうえ、下記窓口までご連絡ください。係員がご自宅に伺い、無償で部品を交換いたします。なお、異臭や発煙が見られない場合でも、必ず点検をお受けくださいますようお願い申し上げます。",
+    "tr": {
+      "zh": "致使用本公司燃油暖风机的顾客：\n关于免费检修的请求\n\n经查明，本公司2019年至2021年间生产的部分型号燃油暖风机，内部零件可能老化，运行中偶尔会产生异味或冒烟。\n使用对象型号的顾客，请立即停止使用，确认机身背面的生产编号后，联系下列窗口。工作人员将上门免费更换零件。另外，即使没有出现异味或冒烟，也请务必接受检查。",
+      "en": "To customers using our kerosene fan heaters:\nRequest for free inspection and repair\n\nWe have found that in some models of kerosene fan heater made by us between 2019 and 2021, an internal part can deteriorate and, in rare cases, cause an odd smell or smoke during operation.\nIf you use an affected model, please stop using it at once, check the serial number on the back of the unit and contact the service desk below. A technician will visit your home and replace the part free of charge. Even if you have noticed no smell or smoke, please be sure to have it inspected."
+    },
+    "questions": [
+      {
+        "q": "対象機種を使っている人は、どうすればよいか。",
+        "options": [
+          "異臭や発煙が生じたときに限って、製品を販売店に持ち込む。",
+          "製造番号を確認し、部品が届くまでは注意しながら使い続ける。",
+          "使用をやめ、本体をメーカーに送って部品を交換してもらう。",
+          "使用をやめ、製造番号を確かめたうえで、窓口に連絡する。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「直ちにご使用を中止し、本体背面の製造番号をご確認のうえ、下記窓口までご連絡ください」\n推理：顺序是三步：立即停用→确认背面的生产编号→联系窗口。之后由「係員がご自宅に伺い」，顾客不用自己送修。",
+          "en": "Evidence: 「直ちにご使用を中止し、本体背面の製造番号をご確認のうえ、下記窓口までご連絡ください」.\nReasoning: Three steps: stop using it, check the serial number, contact the desk. Then 「係員がご自宅に伺い」, so the customer sends nothing."
+        },
+        "wrong": [
+          {
+            "zh": "即使没有异常也要「必ず点検をお受けください」，而且是工作人员上门，不是拿到店里。",
+            "en": "Even without symptoms an inspection is required (「必ず点検をお受けください」), and a technician comes to the home."
+          },
+          {
+            "zh": "通知要求「直ちにご使用を中止し」，不能继续使用。",
+            "en": "The notice says 「直ちにご使用を中止し」, so it must not be used."
+          },
+          {
+            "zh": "零件更换是「係員がご自宅に伺い」进行的，不用把机器寄给厂家。",
+            "en": "The part is replaced when 「係員がご自宅に伺い」; nothing is shipped."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-218",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "子どもが転びそうになると、つい手を伸ばしてしまう。宿題の間違いを見つければ、提出する前に直させたくなる。子を思う親心としては自然なことだろう。しかし、先回りしてあらゆる失敗を取り除いてしまえば、子どもは失敗から立ち直る経験そのものを奪われる。小さなつまずきのうちに痛みを知り、どうすれば次はうまくいくかを自分で考える。その積み重ねがあってこそ、大人になって大きな壁にぶつかったときにも、踏みとどまることができるのではないか。失敗させないことが、必ずしも子どもを守ることにはならないのである。",
+    "tr": {
+      "zh": "孩子快要摔倒时，我们总会忍不住伸出手去。发现作业有错，就想让孩子在交之前改好。作为疼爱孩子的父母之心，这是很自然的吧。但是，如果抢先一步把所有失败都排除掉，孩子就会被剥夺从失败中重新站起来的经验本身。在还是小挫折的时候体会疼痛，自己思考怎样做下次才能顺利。正因为有这样的积累，长大后碰到大的障碍时，才能坚持住不是吗？不让孩子失败，未必就是在保护孩子。",
+      "en": "When a child is about to fall, we instinctively reach out. If we spot a mistake in their homework, we want them to fix it before handing it in. As a parent's love, that is natural. But if we step in ahead of time and remove every failure, the child is robbed of the very experience of recovering from failure. While the stumbles are still small, they learn what it hurts like and think for themselves about how to do better next time. Isn't it only with that accumulated experience that, as adults, they can stand firm when they hit a big wall? Not letting children fail does not necessarily protect them."
+    },
+    "questions": [
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "options": [
+          "子どもが失敗しないよう、親は常にそばで注意して見守るべきだ。",
+          "小さな失敗を経験させることが、後の困難に耐える力につながる。",
+          "大きな失敗を防ぐには、小さな失敗のうちに親が直しておくべきだ。",
+          "親が先回りしてしまうのは、子どもの力を信じていないからだ。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「小さなつまずきのうちに痛みを知り…その積み重ねがあってこそ、大人になって大きな壁にぶつかったときにも、踏みとどまることができる」\n推理：「〜てこそ」强调条件：只有经历过小挫折并自己思考，长大后才能在大障碍前「踏みとどまる」（坚持住）。选项「困難に耐える力」就是这个意思。",
+          "en": "Evidence: 「小さなつまずきのうちに痛みを知り…その積み重ねがあってこそ、大人になって大きな壁にぶつかったときにも、踏みとどまることができる」.\nReasoning: 「〜てこそ」 marks the condition: only after small failures and thinking them through can an adult 「踏みとどまる」 before a big wall, i.e. the strength to bear hardship."
+        },
+        "wrong": [
+          {
+            "zh": "这正是笔者批评的「先回り」做法，结论是「失敗させないことが、必ずしも子どもを守ることにはならない」。",
+            "en": "That is the 「先回り」 the author criticises: 「失敗させないことが、必ずしも子どもを守ることにはならない」."
+          },
+          null,
+          {
+            "zh": "笔者要孩子「自分で考える」，不是父母替孩子改正。",
+            "en": "The author wants the child to 「自分で考える」, not the parent to fix things."
+          },
+          {
+            "zh": "笔者说伸手是「親心としては自然なこと」，没有说是不信任孩子。",
+            "en": "The author calls it 「親心としては自然なこと」, not distrust of the child."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-219",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、取引先の会社から届いた手紙です。",
+    "passage": "拝啓　時下ますますご清栄のこととお慶び申し上げます。平素は格別のお引き立てを賜り、厚く御礼申し上げます。\nさて、弊社では、原材料費の高騰を受け、これまで経費の削減に努めてまいりましたが、自助努力のみでは現行価格を維持することが困難な状況となりました。つきましては、誠に心苦しい限りではございますが、来年2月ご注文分より、全製品の価格を一律5%改定させていただきたく、お願い申し上げます。なお、1月末日までにいただいたご注文につきましては、従来の価格にて承ります。\n何卒事情をご賢察のうえ、ご理解賜りますようお願い申し上げます。\n敬具",
+    "tr": {
+      "zh": "敬启者：时下贵公司日益兴隆，谨致祝贺。平日承蒙格外关照，深表谢意。\n本公司因原材料费用高涨，一直致力于削减经费，但仅靠自身努力已难以维持现行价格。因此，虽深感过意不去，仍恳请允许本公司自明年2月的订单起，将全部产品价格统一调整5%。另外，1月底之前收到的订单，仍按原价格受理。\n恳请体察实情，给予理解。\n敬上",
+      "en": "Dear Sir or Madam,\nWe trust this finds your business flourishing, and thank you for your continued patronage.\nIn response to soaring raw material costs, we have worked to cut our expenses, but our own efforts alone are no longer enough to maintain current prices. We therefore regret to ask your consent to revise the prices of all our products uniformly by 5% from orders placed in February next year. Orders received by the end of January will be accepted at the current prices.\nWe ask for your kind understanding of our circumstances.\nYours faithfully"
+    },
+    "questions": [
+      {
+        "q": "この手紙で最も伝えたいことは何か。",
+        "options": [
+          "原材料費が上がったため、取引先にも経費の削減に協力してほしい。",
+          "来年2月の注文分から製品の価格を上げることを、了承してほしい。",
+          "1月末までに注文すれば、製品の価格を5%引き下げることにした。",
+          "現行価格を維持するため、2月以降は注文の数量を制限させてほしい。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「来年2月ご注文分より、全製品の価格を一律5%改定させていただきたく、お願い申し上げます」\n推理：前面的原材料涨价、削减经费都是理由；「さて」「つきましては」之后才是正题：从2月订单起涨价5%，并请对方「ご理解」。「改定」在这里就是涨价。",
+          "en": "Evidence: 「来年2月ご注文分より、全製品の価格を一律5%改定させていただきたく、お願い申し上げます」.\nReasoning: The rising costs and cost-cutting are the reasons; after 「さて」「つきましては」 comes the point: a 5% rise from February orders, for which they ask 「ご理解」. 「改定」 here means a rise."
+        },
+        "wrong": [
+          {
+            "zh": "削减经费是写信公司自己「努めてまいりました」的事，没有请对方配合。",
+            "en": "The cost-cutting is what the writer's own firm 「努めてまいりました」; nothing is asked of the reader."
+          },
+          null,
+          {
+            "zh": "1月底前的订单只是「従来の価格」，即维持原价，不是降价。",
+            "en": "Orders by end of January stay at 「従来の価格」, the old price, not a discount."
+          },
+          {
+            "zh": "信中没有提到限制订货数量；维持现价已经「困難」，所以才涨价。",
+            "en": "No limit on orders is mentioned; keeping prices is 「困難」, hence the rise."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-220",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "買ったまま読まずに積んである本を「積ん読」と呼ぶ。本好きの間では半ば自嘲を込めて使われる言葉だが、私はこれを恥じる必要はないと思っている。書店で手に取ったとき、その本は確かに私の関心のどこかに触れたのである。すぐには読まなくても、背表紙が目に入るたびに、自分が何に惹かれたのかを思い出させてくれる。何年も経ってから、ふと引き抜いた一冊が、ちょうどその時の自分に必要な本だったということもある。積まれた本は、未来の自分への問いかけのようなものなのだ。",
+    "tr": {
+      "zh": "买来没读就堆在那里的书，被称为“积读”。这个词在爱书人之间半带自嘲地使用，但我认为没有必要为此感到羞愧。在书店拿起那本书时，它确实触动了我兴趣的某个地方。即使不马上读，每当书脊映入眼帘，它就会让我想起自己曾被什么吸引。也有过这样的事：多年以后随手抽出的一本，恰恰是当时的自己需要的书。堆着的书，就像是向未来的自己提出的问题。",
+      "en": "Books bought and piled up unread are called 'tsundoku'. Book lovers use the word half in self-mockery, but I don't think it is anything to be ashamed of. When I picked the book up in the shop, it certainly touched some interest of mine. Even if I don't read it at once, each time I see its spine it reminds me of what drew me. Sometimes a book I pull out on a whim years later turns out to be just what I need at that moment. Piled-up books are like questions put to one's future self."
+    },
+    "questions": [
+      {
+        "q": "筆者は、積ん読をどのようにとらえているか。",
+        "options": [
+          "読まない本を買うのは無駄なので、買う前によく考えるべきものだ。",
+          "読む時間がないことの表れなので、生活を見直すきっかけになるものだ。",
+          "いずれすべて読み終えることで、初めて意味を持つようになるものだ。",
+          "その時々の関心の跡であり、後の自分にとって意味を持ちうるものだ。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「その本は確かに私の関心のどこかに触れたのである」；「積まれた本は、未来の自分への問いかけのようなものなのだ」\n推理：书是当时兴趣的痕迹（看到书脊就想起被什么吸引），多年后还可能正好有用，所以对未来的自己有意义。",
+          "en": "Evidence: 「その本は確かに私の関心のどこかに触れたのである」; 「積まれた本は、未来の自分への問いかけのようなものなのだ」.\nReasoning: Each book marks an interest of the time (its spine reminds the author what drew him) and may prove useful years later, so it matters to the future self."
+        },
+        "wrong": [
+          {
+            "zh": "笔者说「恥じる必要はない」，并不认为买了不读是浪费。",
+            "en": "The author says 「恥じる必要はない」; he doesn't call it waste."
+          },
+          {
+            "zh": "文中完全没有谈到读书时间或生活方式。",
+            "en": "Lack of time or lifestyle is never mentioned."
+          },
+          {
+            "zh": "即使不读，看到书脊也有意义；多年后抽出的也只是「一冊」，并不要求全部读完。",
+            "en": "Even unread, the spine means something, and it's 「一冊」 pulled out later, not finishing them all."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-221",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "人気の飲食店の前に長い行列ができていると、特に空腹でなくても並んでみたくなる。これほど多くの人が待つのだから、きっとおいしいに違いないと考えるのだ。自分で味を確かめたわけでもないのに、他人の選択を品質の証拠とみなしてしまうのである。おもしろいことに、並んだ末に食べた料理が期待ほどでなかったとしても、人はなかなかそれを認めたがらない。一時間も待った自分の判断が誤っていたとは思いたくないからだ。こうして「おいしかった」という評判がさらに広まり、行列はますます長くなっていく。",
+    "tr": {
+      "zh": "看到人气餐馆前排着长队，即使并不特别饿，也会想去排一排。我们会想：这么多人在等，一定好吃。明明没有亲自尝过味道，却把别人的选择当成了品质的证据。有意思的是，即使排了半天吃到的菜不如期待，人们也不太愿意承认。因为不愿认为等了一个小时的自己判断错了。就这样，“很好吃”的评价进一步传开，队伍也越排越长。",
+      "en": "When there is a long queue outside a popular restaurant, we want to join it even if we aren't particularly hungry. So many people are waiting, we think, it must be good. Without tasting it ourselves, we treat other people's choices as proof of quality. Interestingly, even if the food turns out to be less than expected after all that queuing, people are reluctant to admit it. They don't want to think that their judgement in waiting a whole hour was wrong. So the word that it was delicious spreads further, and the queue grows longer and longer."
+    },
+    "questions": [
+      {
+        "q": "筆者によると、行列がますます長くなっていくのはなぜか。",
+        "options": [
+          "長く待った人が、期待外れだったと認めずに評判を広めるから",
+          "空腹な人ほど、待ち時間を気にせずに店に並ぼうとするから",
+          "実際に料理がおいしく、食べた人が満足して何度も店に通うから",
+          "店が行列を宣伝に利用して、評判を意図的に広めているから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「並んだ末に食べた料理が期待ほどでなかったとしても、人はなかなかそれを認めたがらない」；「こうして『おいしかった』という評判がさらに広まり、行列はますます長くなっていく」\n推理：「こうして」承接前文：排了很久的人不愿承认失望，于是说好吃，评价扩散，队伍更长。",
+          "en": "Evidence: 「並んだ末に食べた料理が期待ほどでなかったとしても、人はなかなかそれを認めたがらない」; 「こうして『おいしかった』という評判がさらに広まり、行列はますます長くなっていく」.\nReasoning: 「こうして」 links back: people who waited long won't admit disappointment, so they praise it, the word spreads and the queue grows."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "文中说「特に空腹でなくても」也想排队，与饥饿无关。",
+            "en": "People queue 「特に空腹でなくても」; hunger isn't the point."
+          },
+          {
+            "zh": "笔者说的恰恰是即使「期待ほどでなかった」也会传好评，没说菜真的好吃。",
+            "en": "The point is that praise spreads even when it was 「期待ほどでなかった」, not that it really is good."
+          },
+          {
+            "zh": "文中没有提到店家利用排队做宣传。",
+            "en": "The restaurant using the queue for advertising is never mentioned."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-222",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、あるマンションの掲示板に貼られたお知らせです。",
+    "passage": "居住者の皆様へ\n\n大規模修繕工事に伴うバルコニーの使用制限について\n\n来年1月15日から3月末までの予定で、外壁の補修および塗装工事を行います。工事期間中は、足場の設置や塗装作業のため、バルコニーに物を置くことができません。植木鉢、物干し台、エアコン室外機まわりの私物等は、1月10日までに室内へ移動していただきますようお願いいたします。期日を過ぎても残っている物については、施工業者が一時的に移動させていただきますが、その際の破損等については責任を負いかねますので、ご了承ください。\n\n管理組合",
+    "tr": {
+      "zh": "致各位住户：\n\n关于大规模维修工程期间阳台的使用限制\n\n计划从明年1月15日至3月底，进行外墙修补及涂装工程。工程期间，由于搭建脚手架和涂装作业，阳台上不能放置物品。请于1月10日前把花盆、晾衣架、空调室外机周围的私人物品等移到室内。过了期限仍留在阳台上的物品，将由施工方暂时移走，但移动时如有损坏等，恕不负责，敬请谅解。\n\n管理委员会",
+      "en": "To all residents:\n\nRestrictions on balcony use during major repair work\n\nRepairs and repainting of the outer walls are scheduled from 15 January to the end of March next year. During the work, scaffolding and painting mean nothing may be left on balconies. Please move plant pots, drying stands, personal items around the air-conditioner units and the like indoors by 10 January. Anything still there after that date will be moved temporarily by the contractor, but please note that we cannot accept responsibility for any damage that occurs.\n\nResidents' Association"
+    },
+    "questions": [
+      {
+        "q": "このお知らせによると、居住者がしなければならないことは何か。",
+        "options": [
+          "1月15日までに、バルコニーにある私物を施工業者に預けておく。",
+          "工事が始まる前に、エアコンの室外機を室内に移動させておく。",
+          "1月10日までに、バルコニーに置いてある物を室内に入れておく。",
+          "期日までに動かせない物があれば、管理組合にその旨を申し出る。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「植木鉢、物干し台、エアコン室外機まわりの私物等は、1月10日までに室内へ移動していただきますようお願いいたします」\n推理：期限是1月10日（工程1月15日才开始），要做的是把阳台上的东西搬进室内。",
+          "en": "Evidence: 「植木鉢、物干し台、エアコン室外機まわりの私物等は、1月10日までに室内へ移動していただきますようお願いいたします」.\nReasoning: The deadline is 10 January (work starts on the 15th), and residents must bring balcony items inside."
+        },
+        "wrong": [
+          {
+            "zh": "1月15日是开工日，期限是1月10日；施工方只是移走「期日を過ぎても残っている物」，并非替人保管。",
+            "en": "15 January is when work starts; the deadline is the 10th, and the contractor only moves 「期日を過ぎても残っている物」, it doesn't store them."
+          },
+          {
+            "zh": "要搬的是「室外機まわりの私物」，不是室外机本身。",
+            "en": "What must move is 「室外機まわりの私物」, not the unit itself."
+          },
+          null,
+          {
+            "zh": "通知中没有提出申报的办法；留下的物品由施工方移走，损坏「責任を負いかねます」。",
+            "en": "No way to report is given; leftovers are moved by the contractor, who 「責任を負いかねます」 for damage."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-223",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "メッセージを受け取ったら、すぐに返信しなければならない。そう感じている人は少なくないだろう。読んだことが相手に伝わる仕組みが広まってから、返事が遅れることは、相手を軽んじているしるしのように受け取られかねなくなった。しかし、すぐに返ってくる言葉が、必ずしも誠実な言葉だとは限らない。急いで打った返事は、相手の言葉を十分に受け止めないまま書かれていることも多い。手紙の時代、人は返事を書くまでに何日も相手の言葉を反芻したものだ。待たせる時間は、言葉を熟成させる時間でもあったのである。",
+    "tr": {
+      "zh": "收到消息就必须马上回复。有这种感觉的人恐怕不在少数。自从能让对方知道自己已读的功能普及以后，回复晚了，就可能被看作轻视对方的表现。但是，马上回过来的话，未必就是真诚的话。匆忙打出的回复，很多时候是在没有充分接住对方话语的情况下写的。在书信时代，人们在写回信之前，会花好几天反复琢磨对方的话。让对方等待的时间，也是让语言酝酿成熟的时间。",
+      "en": "When we get a message, we must reply at once — plenty of people feel that. Since systems that show the sender you have read it became common, a late reply risks being taken as a sign that you don't value the other person. But words that come back immediately are not necessarily sincere words. A reply typed in haste is often written without fully taking in what the other person said. In the age of letters, people would mull over the other person's words for days before writing back. The time spent making someone wait was also time for one's words to mature."
+    },
+    "questions": [
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "options": [
+          "読んだことが相手に伝わる以上、すぐに返信するのが礼儀である。",
+          "手紙の時代にならって、返事はわざと何日も待たせるべきである。",
+          "急いで書いた返事は、相手を軽んじていると受け取られやすい。",
+          "返事に時間をかけることは、言葉をよく考えることにもつながる。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「手紙の時代、人は返事を書くまでに何日も相手の言葉を反芻したものだ。待たせる時間は、言葉を熟成させる時間でもあった」\n推理：「反芻」＝反复琢磨，「熟成させる」＝让语言成熟。花时间回复，就是在好好思考要说的话。",
+          "en": "Evidence: 「手紙の時代、人は返事を書くまでに何日も相手の言葉を反芻したものだ。待たせる時間は、言葉を熟成させる時間でもあった」.\nReasoning: 「反芻」 = mulling over, 「熟成させる」 = letting words mature: taking time over a reply means thinking the words through."
+        },
+        "wrong": [
+          {
+            "zh": "这是笔者引出的一般感受，随后用「しかし」表示怀疑。",
+            "en": "That's the common feeling the author sets up and then questions with 「しかし」."
+          },
+          {
+            "zh": "笔者只说等待的时间有价值，没有主张故意拖延好几天。",
+            "en": "The author values the waiting time but doesn't say replies should be deliberately delayed for days."
+          },
+          {
+            "zh": "被看作轻视对方的是「返事が遅れること」，不是匆忙的回复。",
+            "en": "What looks dismissive is 「返事が遅れること」, not a hasty reply."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-224",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "好きなことを仕事にすれば、毎日が楽しいに違いない。若いころの私はそう信じて疑わなかった。ところが、趣味だった写真を仕事にしてみると、事情はまるで違った。撮りたいものではなく、依頼主が求めるものを撮る。納期に追われ、気の乗らない日にもシャッターを切る。いつしか休日にカメラを手に取ることもなくなった。もっとも、後悔しているわけではない。好きなことだからこそ、つらい時期にも辞めずに続けられたのだと思う。好きなことを仕事にするとは、楽しさを得ることではなく、苦労を引き受ける理由を得ることなのかもしれない。",
+    "tr": {
+      "zh": "如果把喜欢的事当作工作，每天一定很快乐。年轻时的我对此深信不疑。然而，把曾是爱好的摄影变成工作之后，情况完全不同了。拍的不是自己想拍的，而是委托人要求的东西。被交期追赶，没有兴致的日子也要按快门。不知不觉间，休息日也不再拿起相机了。不过，我并不后悔。我想，正因为是喜欢的事，在艰难的时期也能不放弃地坚持下来。把喜欢的事当作工作，或许不是获得快乐，而是获得承受辛苦的理由。",
+      "en": "If you make what you love your job, every day must be fun. When I was young I never doubted it. But when I turned my hobby, photography, into my job, things were completely different. I photographed not what I wanted but what clients asked for. Chased by deadlines, I pressed the shutter even on days I didn't feel like it. At some point I stopped picking up a camera on my days off. Still, I have no regrets. I think it was precisely because I loved it that I kept going through the hard times without quitting. Making what you love your job may mean gaining not enjoyment but a reason to take on hardship."
+    },
+    "questions": [
+      {
+        "q": "筆者は、好きなことを仕事にすることについて、どう考えているか。",
+        "options": [
+          "趣味は趣味のまま楽しむべきで、仕事にすれば後悔することになる。",
+          "楽しいとは限らないが、苦しいときにも仕事を続ける支えにはなる。",
+          "依頼主の求めに応じるうちに、かえって趣味の幅が広がっていく。",
+          "若いうちに好きなことを仕事にすれば、毎日を楽しく過ごせる。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「好きなことだからこそ、つらい時期にも辞めずに続けられた」；「楽しさを得ることではなく、苦労を引き受ける理由を得ること」\n推理：前半说工作并不快乐（不再在假日拍照），后半用「もっとも」转折：正因为喜欢，困难时也能坚持。",
+          "en": "Evidence: 「好きなことだからこそ、つらい時期にも辞めずに続けられた」; 「楽しさを得ることではなく、苦労を引き受ける理由を得ること」.\nReasoning: The first half says the work wasn't fun (no more photos on days off); after 「もっとも」 he adds that loving it is what kept him going in hard times."
+        },
+        "wrong": [
+          {
+            "zh": "笔者明确说「後悔しているわけではない」。",
+            "en": "He says plainly 「後悔しているわけではない」."
+          },
+          null,
+          {
+            "zh": "文中说「いつしか休日にカメラを手に取ることもなくなった」，爱好反而被挤掉了。",
+            "en": "He says 「いつしか休日にカメラを手に取ることもなくなった」: the hobby shrank."
+          },
+          {
+            "zh": "这是笔者年轻时的想法，实际做了之后「事情はまるで違った」。",
+            "en": "That was his youthful belief; in practice 「事情はまるで違った」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-225",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、大学の教員が学生に送ったメールです。",
+    "passage": "件名：卒業論文の提出期限について\n\n田中さん\n\n先日相談のあった提出期限の延長の件ですが、学部の規定により、個別の延長は原則として認められないことになっています。ただ、体調を崩していたとのことですので、医師の診断書を添えて学部事務室に申請すれば、審査のうえ、一週間を限度として延長が認められる場合があります。申請の締切は、本来の提出期限の三日前です。審査には時間がかかるので、延長が認められることを前提に執筆の計画を立てるのは避けてください。\n\n山本",
+    "tr": {
+      "zh": "主题：关于毕业论文的提交期限\n\n田中同学：\n\n关于你前几天咨询的延长提交期限一事，根据学院规定，原则上不允许个别延期。不过，你说之前身体不适，如果附上医生的诊断书向学院办公室申请，经审核后，有可能获准延期，最长一周。申请截止日期是原定提交期限的三天前。审核需要时间，所以请不要以获准延期为前提来制定写作计划。\n\n山本",
+      "en": "Subject: Deadline for your graduation thesis\n\nDear Tanaka,\n\nAbout the extension you asked about the other day: under faculty rules, individual extensions are in principle not allowed. However, since you say you were unwell, if you apply to the faculty office with a doctor's certificate, an extension of up to one week may be granted after review. The application deadline is three days before the original submission deadline. Review takes time, so please avoid planning your writing on the assumption that the extension will be granted.\n\nYamamoto"
+    },
+    "questions": [
+      {
+        "q": "田中さんが提出期限の延長を希望する場合、どうしなければならないか。",
+        "options": [
+          "診断書を用意して、本来の期限の三日前までに学部事務室に申請する。",
+          "山本先生に診断書を渡して、延長を認めてもらえるよう頼んでおく。",
+          "延長される一週間後を目標にして、論文執筆の計画を立て直しておく。",
+          "本来の期限までに、書き上げた部分だけを学部事務室に提出しておく。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「医師の診断書を添えて学部事務室に申請すれば…延長が認められる場合があります」；「申請の締切は、本来の提出期限の三日前です」\n推理：申请要满足三点：附诊断书、交到学院办公室、在原定期限前三天截止。",
+          "en": "Evidence: 「医師の診断書を添えて学部事務室に申請すれば…延長が認められる場合があります」; 「申請の締切は、本来の提出期限の三日前です」.\nReasoning: The application needs a doctor's certificate, goes to the faculty office, and is due three days before the original deadline."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "申请对象是「学部事務室」，不是山本老师本人。",
+            "en": "The application goes to the 「学部事務室」, not to Yamamoto."
+          },
+          {
+            "zh": "邮件明确说「延長が認められることを前提に執筆の計画を立てるのは避けてください」。",
+            "en": "The email says 「延長が認められることを前提に執筆の計画を立てるのは避けてください」."
+          },
+          {
+            "zh": "邮件里没有提到先提交写完的部分。",
+            "en": "Handing in a partial thesis is never mentioned."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-226",
+    "type": "short",
+    "difficulty": 3,
+    "passage": "荷物をすべて運び出した部屋は、思っていたよりずっと広かった。十年暮らしたこの部屋で、私は何度も机の位置を変え、本棚を買い足し、そのたびに狭くなったと嘆いてきた。だが、こうして何もなくなってみると、壁に残る日焼けの跡だけが、そこに何があったのかを教えてくれる。カレンダーを掛けていた場所の、四角く白い跡に指を当てた。あの頃は早く広い部屋に移りたいとばかり思っていたのに、いざ出ていくとなると、この狭さこそが自分の暮らしの形だったのだと気づく。明日には、別の誰かがこの部屋の新しい住人になる。",
+    "tr": {
+      "zh": "把行李全部搬出去之后，房间比想象的宽敞得多。在这个住了十年的房间里，我多次调整书桌的位置，添置书架，每次都抱怨房间变窄了。可是，像这样什么都没有了之后，只有墙上留下的晒痕告诉我那里曾经放过什么。我把手指放在曾挂日历的地方那块方方的白色痕迹上。那时一心只想早点搬到宽敞的房间，可真要离开了，才发现正是这份狭窄，才是自己生活的样子。明天，别的什么人就会成为这个房间的新住户。",
+      "en": "With everything carried out, the room was far bigger than I had thought. In the ten years I lived here I moved the desk again and again and bought more bookshelves, each time complaining that the room had got smaller. But now that it is empty, only the sun marks left on the walls tell me what used to be where. I put my finger on the square white patch where the calendar had hung. Back then all I could think of was moving to a bigger place, yet now that I am actually leaving, I realise that this very cramped-ness was the shape of my life. Tomorrow someone else will become the room's new resident."
+    },
+    "questions": [
+      {
+        "q": "「この狭さこそが自分の暮らしの形だった」とは、どういうことか。",
+        "options": [
+          "部屋が狭かったせいで、思うように暮らすことができなかったということ",
+          "荷物を減らしさえすれば、狭い部屋でも十分に暮らせたということ",
+          "物が増えて部屋が狭くなっていったこと自体が、自分の生活の跡だったということ",
+          "広い部屋に移っても、結局はまた同じように狭くしてしまうだろうということ"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「何度も机の位置を変え、本棚を買い足し、そのたびに狭くなったと嘆いてきた」；「壁に残る日焼けの跡だけが、そこに何があったのかを教えてくれる」\n推理：房间是随着十年的生活（加书架、挪桌子）一点点变窄的。搬空后看到晒痕，才明白这份狭窄就是自己生活留下的样子，带着怀念。",
+          "en": "Evidence: 「何度も机の位置を変え、本棚を買い足し、そのたびに狭くなったと嘆いてきた」; 「壁に残る日焼けの跡だけが、そこに何があったのかを教えてくれる」.\nReasoning: The room grew cramped through ten years of living (more shelves, the desk moved). Seeing the marks in the empty room, the narrator realises, fondly, that the cramped-ness was the imprint of that life."
+        },
+        "wrong": [
+          {
+            "zh": "这句话带着怀念，是肯定那份狭窄，不是抱怨生活不便。",
+            "en": "The line is fond; it embraces the cramped room rather than blaming it."
+          },
+          {
+            "zh": "文中没有谈减少行李，重点是狭窄本身就是生活的痕迹。",
+            "en": "Reducing belongings isn't discussed; the point is that the cramped-ness itself is the trace of life."
+          },
+          null,
+          {
+            "zh": "文中没有推测搬家后的生活。",
+            "en": "Nothing is guessed about life after the move."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-227",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "「急がば回れ」と言う一方で、「善は急げ」とも言う。ことわざには、このように正反対のことを言うものが少なくない。そのため、ことわざなど都合よく使い分けられるだけで当てにならない、と言う人もいる。しかし、私はむしろそこにことわざの知恵を見る。人生には、慎重であるべき場面もあれば、迷わず動くべき場面もある。どちらか一方だけを説く格言は、かえって人を誤らせるだろう。相反する言葉を両方手元に置き、今はどちらの場面なのかを見極めること。ことわざが私たちに求めているのは、そうした判断なのではないか。",
+    "tr": {
+      "zh": "一方面说“欲速则不达”，另一方面又说“好事要趁早”。像这样说法截然相反的谚语并不少见。因此，也有人说谚语只不过是随便挑合适的用，靠不住。但是，我反而从中看到了谚语的智慧。人生中，既有应该慎重的场合，也有应该毫不犹豫行动的场合。只讲其中一方面的格言，反而会误导人。把相反的两句话都放在手边，判断现在是哪一种场合。谚语要求我们的，不正是这样的判断吗？",
+      "en": "We say 'more haste, less speed', yet we also say 'strike while the iron is hot'. Many proverbs, like these, say opposite things. So some people say proverbs are unreliable, just picked to suit the occasion. I, however, see the wisdom of proverbs precisely there. Life has moments that call for caution and moments that call for acting without hesitation. A maxim that preached only one of them would lead people astray. Keep both contradictory sayings to hand, and judge which kind of moment this is. Isn't that the judgement proverbs ask of us?"
+    },
+    "questions": [
+      {
+        "q": "筆者は、正反対のことを言うことわざについて、どう考えているか。",
+        "options": [
+          "都合よく使い分けられるので、生き方の手本としては当てにならない。",
+          "どちらか一方を選んで、自分の生き方の方針として守り続けるべきだ。",
+          "慎重さを説くもののほうが、迷わず動けと説くものより役に立つ。",
+          "両方を心得ておき、場面に応じてどちらに従うかを判断すべきだ。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「相反する言葉を両方手元に置き、今はどちらの場面なのかを見極めること」\n推理：「しかし、私はむしろ」之后是笔者的观点：人生两种场合都有，所以两句都要记着，按场合判断用哪一句。",
+          "en": "Evidence: 「相反する言葉を両方手元に置き、今はどちらの場面なのかを見極めること」.\nReasoning: After 「しかし、私はむしろ」 comes the author's view: life has both kinds of moment, so keep both sayings and judge which applies."
+        },
+        "wrong": [
+          {
+            "zh": "这是「と言う人もいる」，是别人的看法，笔者用「しかし」反驳。",
+            "en": "That's what 「と言う人もいる」; the author rebuts it with 「しかし」."
+          },
+          {
+            "zh": "笔者认为「どちらか一方だけを説く格言は、かえって人を誤らせる」。",
+            "en": "The author says 「どちらか一方だけを説く格言は、かえって人を誤らせる」."
+          },
+          {
+            "zh": "笔者没有比较两者优劣，两种场合都存在。",
+            "en": "The author ranks neither; both kinds of moment exist."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-228",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、ある市立図書館のホームページに掲載されたお知らせです。",
+    "passage": "郷土資料のデジタル化に伴う閲覧の一時停止について\n\n当館では、明治期から昭和初期にかけての郷土資料の劣化を防ぐため、来年度より順次デジタル化を進めてまいります。作業中の資料は、原本の閲覧を一時停止いたします。作業の済んだ資料は、館内の専用端末で画像をご覧いただけるようになりますが、原本の閲覧は、研究目的等で特に必要と認められる場合に限らせていただきます。原本の閲覧を希望される方は、閲覧希望日の二週間前までに、所定の申請書をご提出ください。",
+    "tr": {
+      "zh": "关于因乡土资料数字化而暂停阅览的通知\n\n为防止明治时期至昭和初期的乡土资料老化，本馆将从下一年度起逐步推进数字化。处理中的资料，暂停原件阅览。处理完毕的资料，可以在馆内专用终端上查看图像，但原件阅览仅限于因研究目的等被认定确有必要的情况。希望阅览原件者，请在希望阅览日的两周前提交指定的申请书。",
+      "en": "Temporary suspension of access during digitisation of local history materials\n\nTo prevent the deterioration of local history materials from the Meiji to the early Showa period, the library will digitise them in stages from next fiscal year. Originals of materials being processed cannot be viewed during that time. Once processed, materials can be viewed as images on dedicated terminals in the library, but the originals will be made available only where it is judged particularly necessary, for research or similar purposes. Anyone wishing to see an original should submit the designated application form at least two weeks before the desired date."
+    },
+    "questions": [
+      {
+        "q": "このお知らせの内容に合うものはどれか。",
+        "options": [
+          "デジタル化が済んだ資料は、原則として館内の端末で画像を見ることになる。",
+          "デジタル化が済んだ資料は、自宅のパソコンからも画像を見られるようになる。",
+          "原本の閲覧を希望する人は、閲覧する日に窓口で申請書を出せばよい。",
+          "デジタル化が済めば、原本もこれまでと同じように自由に閲覧できる。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「作業の済んだ資料は、館内の専用端末で画像をご覧いただけるようになりますが、原本の閲覧は、研究目的等で特に必要と認められる場合に限らせていただきます」\n推理：数字化完成后，一般读者看的是馆内终端上的图像，原件只在特殊情况下才能看，所以说“原则上”在馆内终端看图像。",
+          "en": "Evidence: 「作業の済んだ資料は、館内の専用端末で画像をご覧いただけるようになりますが、原本の閲覧は、研究目的等で特に必要と認められる場合に限らせていただきます」.\nReasoning: After digitisation, readers normally see images on in-library terminals; originals only in special cases, hence 'as a rule' on the terminals."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "通知只说「館内の専用端末」，没有说可以在家查看。",
+            "en": "Only 「館内の専用端末」 is mentioned, not home access."
+          },
+          {
+            "zh": "申请要在「閲覧希望日の二週間前までに」提交，当天交不行。",
+            "en": "The form is due 「閲覧希望日の二週間前までに」, not on the day."
+          },
+          {
+            "zh": "原件阅览「特に必要と認められる場合に限らせていただきます」，不再自由。",
+            "en": "Originals are limited to cases 「特に必要と認められる場合」, no longer free access."
+          }
+        ]
+      }
+    ]
   }
 ]

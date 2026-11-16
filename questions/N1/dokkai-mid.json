@@ -497,5 +497,698 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n1-dk-306",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "在宅勤務が広がり、通勤の負担がなくなったことを歓迎する声は多い。会議もオンラインで済み、仕事の効率はむしろ上がったという人もいる。ところが、ある調査によれば、在宅勤務を続ける人の間で「新しい発想が生まれにくくなった」と感じる人が増えているという。\nその理由の一つとして挙げられているのが、雑談の減少である。オンラインの会議は議題に沿って進み、終われば即座に画面が閉じられる。かつてなら、会議室を出て廊下を歩きながら、あるいは給湯室で顔を合わせたついでに交わしていた何気ないやり取りが、すっかり姿を消した。だが、思い返してみれば、企画の種や問題解決の糸口は、そうした目的のない会話の中から生まれることが少なくなかった。他部署の人がふと漏らした悩みが、自分の抱える課題とつながる。そんなことは、議題の決まった会議ではまず起こらない。\nもっとも、だからといって全員を職場に戻せばよいというわけではないだろう。大切なのは、雑談を単なる時間の無駄と見なさず、意識してその機会を設けることである。効率だけを追い求めると、効率では測れない価値を見落とすことになる。",
+    "tr": {
+      "zh": "居家办公普及以来，欢迎不用再承受通勤负担的声音很多。会议也在线上就能解决，也有人说工作效率反而提高了。然而据某项调查，在持续居家办公的人当中，觉得“新点子变得难以产生”的人在增加。\n被列为原因之一的，是闲聊的减少。线上会议按议题进行，一结束画面就立刻关闭。过去走出会议室、边在走廊上走边聊，或在茶水间碰面时顺便交谈的那些不经意的对话，已经完全消失了。可是回想起来，策划的种子和解决问题的线索，常常就是从那种没有目的的对话中产生的。其他部门的人随口说出的烦恼，和自己手头的课题联系了起来。这种事在议题已定的会议上几乎不会发生。\n不过，这并不是说只要让所有人都回到办公室就好了。重要的是不把闲聊看作单纯浪费时间，而是有意识地创造闲聊的机会。只追求效率，就会忽视用效率衡量不了的价值。",
+      "en": "With the spread of working from home, many people welcome the end of commuting. Meetings can be held online, and some say they have even become more efficient. Yet according to one survey, more and more people who keep working from home feel that 'new ideas have become harder to come by'.\nOne reason given is the decline of small talk. Online meetings follow the agenda, and the screen closes the moment they end. The casual exchanges we used to have walking down the corridor after a meeting, or when we ran into each other in the kitchenette, have vanished. But looking back, the seeds of projects and clues to solving problems often came out of such aimless conversations. A worry someone from another department let slip connects with a problem you are wrestling with. That almost never happens in a meeting with a fixed agenda.\nThat said, it does not follow that everyone should be brought back to the office. What matters is not to dismiss small talk as a waste of time, and to make chances for it deliberately. Pursue efficiency alone and you overlook value that efficiency cannot measure."
+    },
+    "questions": [
+      {
+        "q": "「そうした目的のない会話」とは、どのようなものか。",
+        "options": [
+          "会議の後や給湯室などで、ついでに交わしていた何気ないやり取り",
+          "オンライン会議の場で、議題に沿って進められる仕事上の話し合い",
+          "他部署の人が自分の悩みを相談するために、わざわざ設けた面談",
+          "在宅勤務の効率を上げるために、画面越しに交わす短い連絡"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「会議室を出て廊下を歩きながら、あるいは給湯室で顔を合わせたついでに交わしていた何気ないやり取り」\n推理：「そうした」指紧接在前面描述的对话：走出会议室时、在茶水间碰面时「ついでに」聊的「何気ないやり取り」，没有特定目的。",
+          "en": "Evidence: 「会議室を出て廊下を歩きながら、あるいは給湯室で顔を合わせたついでに交わしていた何気ないやり取り」.\nReasoning: 「そうした」 points to the talk just described: the 「何気ないやり取り」 had 「ついでに」 in corridors and the kitchenette, with no set purpose."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "按议题进行的线上会议正与「目的のない会話」相对。",
+            "en": "Agenda-driven online meetings are the opposite of 「目的のない会話」."
+          },
+          {
+            "zh": "文中说的是他部门的人「ふと漏らした」烦恼，是随口说出，不是专门安排的面谈。",
+            "en": "The worry was something they 「ふと漏らした」, let slip, not a planned consultation."
+          },
+          {
+            "zh": "文中没有提到这种为提高效率而进行的线上联络。",
+            "en": "No such efficiency-minded online messages are mentioned."
+          }
+        ]
+      },
+      {
+        "q": "筆者によると、新しい発想が生まれにくくなったのはなぜか。",
+        "options": [
+          "通勤がなくなったことで、気分を切り替える時間が減ったから",
+          "オンライン会議では、一つの議題に時間をかけすぎるようになったから",
+          "議題と関係のない会話から、思わぬ手がかりを得る機会が減ったから",
+          "他部署との会議がなくなり、課題を相談できる相手がいなくなったから"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「企画の種や問題解決の糸口は、そうした目的のない会話の中から生まれることが少なくなかった」\n推理：原因是「雑談の減少」。闲聊里常有意外的线索（别部门的烦恼与自己的课题相连），闲聊没了，这种机会也就少了。",
+          "en": "Evidence: 「企画の種や問題解決の糸口は、そうした目的のない会話の中から生まれることが少なくなかった」.\nReasoning: The cause is 「雑談の減少」. Small talk often gave unexpected clues (another department's worry linking to your own problem); with less of it, fewer such chances."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有谈到转换心情的时间；通勤消失是被「歓迎」的事。",
+            "en": "Switching moods isn't mentioned; losing the commute is something people 「歓迎」."
+          },
+          {
+            "zh": "线上会议「議題に沿って進み、終われば即座に画面が閉じられる」，问题不是时间太长。",
+            "en": "Online meetings 「議題に沿って進み、終われば即座に画面が閉じられる」; length isn't the issue."
+          },
+          null,
+          {
+            "zh": "消失的是会议之外的闲聊，不是和别部门的会议；关键是「ふと漏らした」的随口话。",
+            "en": "What vanished is small talk outside meetings, not meetings with other departments; the key is words 「ふと漏らした」."
+          }
+        ]
+      },
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "options": [
+          "新しい発想を生むためには、社員を全員職場に戻すべきだ。",
+          "雑談は仕事の効率を下げるので、勤務時間外に行うべきだ。",
+          "在宅勤務で効率が上がるなら、雑談がなくなっても問題はない。",
+          "雑談の価値を認めて、意図的にその機会をつくるべきだ。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「大切なのは、雑談を単なる時間の無駄と見なさず、意識してその機会を設けることである」\n推理：「意識して」＝有意识地，对应选项「意図的に」；「無駄と見なさず」＝承认闲聊的价值。",
+          "en": "Evidence: 「大切なのは、雑談を単なる時間の無駄と見なさず、意識してその機会を設けることである」.\nReasoning: 「意識して」 = deliberately (the option's 「意図的に」); 「無駄と見なさず」 = recognising its value."
+        },
+        "wrong": [
+          {
+            "zh": "笔者明说「全員を職場に戻せばよいというわけではない」。",
+            "en": "The author says 「全員を職場に戻せばよいというわけではない」."
+          },
+          {
+            "zh": "笔者反对把闲聊看作「時間の無駄」，也没有说放到下班以后。",
+            "en": "The author rejects calling it 「時間の無駄」 and says nothing about after hours."
+          },
+          {
+            "zh": "笔者警告「効率だけを追い求めると…見落とすことになる」，并不认为没问题。",
+            "en": "He warns 「効率だけを追い求めると…見落とすことになる」; it is a problem."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-307",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "店や商品を選ぶとき、インターネット上の評価を参考にする人は多い。星の数が並んでいれば、行ったことのない店でも、おおよその良し悪しがわかる気がする。だが、私はこの星の数を、以前ほど信用しなくなった。\nきっかけは、近所の小さな定食屋である。私が通い続けているその店は、評価サイトでは星二つ半と振るわない。書き込みを読むと、「店が狭い」「メニューが少ない」「店主が無愛想だ」といった不満が並んでいる。どれも事実ではある。しかし、私がその店に通うのは、まさに狭い店内で、無口な店主が一品ずつ丁寧に作る料理を味わえるからなのだ。ある人にとっての欠点が、別の人にとっては魅力そのものだということは、珍しくない。\n星の数は、こうした異なる好みを一つの数字にならしてしまう。その結果、誰にとっても大きな不満のない、無難な店ほど高く評価されやすくなる。点数を気にする店が無難な方向へと流れれば、個性的な店は次第に姿を消していくだろう。評価を見るなとは言わない。ただ、星の数よりも書き込みの中身を読み、その不満が自分にとっても不満なのかを考えてみる。それだけで、店の選び方はずいぶん変わるはずである。",
+    "tr": {
+      "zh": "选择店铺或商品时，参考网上评价的人很多。只要星星数量摆在那里，即使是没去过的店，也觉得大致知道好坏。但是，我已经不像以前那样相信这些星星了。\n起因是附近一家小小的定食店。我一直光顾的这家店，在点评网站上只有两星半，成绩不佳。读了评论，满是“店面窄”“菜单少”“店主冷淡”之类的不满。这些都是事实。可是，我之所以去那家店，正是因为能在狭小的店里，品尝沉默寡言的店主一道一道用心做出的菜。对某人来说是缺点，对另一个人来说却正是魅力所在，这并不稀奇。\n星星数量把这些不同的喜好平均成了一个数字。结果，对谁来说都没有大的不满、四平八稳的店，反而容易得到高评价。如果在意分数的店都往稳妥的方向靠拢，有个性的店就会渐渐消失吧。我并不是说不要看评价。只是，与其看星星数量，不如读评论的内容，想一想那种不满对自己来说是否也是不满。仅仅这样，选店的方式就会大不相同。",
+      "en": "Many people check online ratings when choosing a shop or product. A row of stars makes you feel you know roughly how good a place is, even if you have never been. But I no longer trust those stars as much as I used to.\nIt started with a small set-meal restaurant near me. The place I keep going back to gets a lacklustre two and a half stars on a review site. The comments list complaints: 'cramped', 'small menu', 'the owner is unfriendly'. All true. But the reason I go there is precisely that I can eat, in that cramped room, dishes the taciturn owner makes carefully one at a time. It is not unusual for one person's flaw to be another person's very attraction.\nStars flatten such different tastes into a single number. As a result, safe places that nobody has big complaints about tend to be rated highest. If shops worried about their scores drift towards safety, distinctive shops will gradually disappear. I'm not saying don't look at ratings. But read what the reviews actually say rather than the stars, and ask whether the complaint would be a complaint for you. That alone should change how you choose a place."
+    },
+    "questions": [
+      {
+        "q": "筆者が星の数を以前ほど信用しなくなったのは、なぜか。",
+        "options": [
+          "評価サイトの書き込みに、事実と違う不満が多く含まれていたから",
+          "気に入っている店の評価が低く、その理由が自分には魅力だったから",
+          "近所の定食屋の評価が、店主の努力によって急に上がったから",
+          "評価の高い店に実際に行ってみたところ、期待外れだったから"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「私が通い続けているその店は、評価サイトでは星二つ半と振るわない」；「私がその店に通うのは、まさに狭い店内で…料理を味わえるからなのだ」\n推理：自己常去的店评价低，而差评的理由（店窄、店主话少）恰恰是笔者喜欢它的原因，所以不再信星星。",
+          "en": "Evidence: 「私が通い続けているその店は、評価サイトでは星二つ半と振るわない」; 「私がその店に通うのは、まさに狭い店内で…料理を味わえるからなのだ」.\nReasoning: A place he loves is rated low, and the complaints (cramped, a quiet owner) are exactly why he goes, so he stopped trusting stars."
+        },
+        "wrong": [
+          {
+            "zh": "笔者说这些不满「どれも事実ではある」。",
+            "en": "He says the complaints are 「どれも事実ではある」."
+          },
+          null,
+          {
+            "zh": "那家店评价一直「振るわない」，没有说评价上升。",
+            "en": "The place is rated 「振るわない」; no rise is mentioned."
+          },
+          {
+            "zh": "文中没有提到去了高评价店而失望的经历。",
+            "en": "No disappointing visit to a highly rated place is mentioned."
+          }
+        ]
+      },
+      {
+        "q": "「無難な店ほど高く評価されやすくなる」のは、なぜか。",
+        "options": [
+          "無難な店のほうが客の数が多く、評価サイトへの書き込みも多いから",
+          "個性的な店の多くが、評価サイトに載ることを嫌がっているから",
+          "点数を気にする店主が、客に高い評価をつけるよう頼むから",
+          "異なる好みが一つの数字にまとめられ、不満の少なさが有利になるから"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「星の数は、こうした異なる好みを一つの数字にならしてしまう。その結果、誰にとっても大きな不満のない、無難な店ほど高く評価されやすくなる」\n推理：「その結果」表示因果：不同喜好被平均成一个数字，有个性的店会被一部分人打低分，而谁都不太讨厌的店分数就高。",
+          "en": "Evidence: 「星の数は、こうした異なる好みを一つの数字にならしてしまう。その結果、誰にとっても大きな不満のない、無難な店ほど高く評価されやすくなる」.\nReasoning: 「その結果」 gives cause and effect: averaging tastes into one number punishes places some people dislike and rewards those nobody minds much."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有比较客人数量或评论数量。",
+            "en": "Customer or review numbers aren't compared."
+          },
+          {
+            "zh": "文中没有说有个性的店不愿上点评网站。",
+            "en": "Nothing says distinctive shops avoid review sites."
+          },
+          {
+            "zh": "在意分数的店是「無難な方向へと流れ」，不是请客人打高分。",
+            "en": "Score-conscious shops 「無難な方向へと流れ」; they don't ask for good ratings."
+          },
+          null
+        ]
+      },
+      {
+        "q": "筆者は、店を選ぶときにどうするのがよいと考えているか。",
+        "options": [
+          "書き込まれた不満が、自分にとっても不満なのかを考えてみる。",
+          "評価サイトは当てにならないので、なるべく見ないようにする。",
+          "星の数の少ない店のほうが個性的なので、そちらを選ぶようにする。",
+          "実際に通っている人の話を聞き、星の数と照らし合わせてみる。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「星の数よりも書き込みの中身を読み、その不満が自分にとっても不満なのかを考えてみる」\n推理：笔者不否定看评价，而是建议看评论内容，判断那些不满对自己是否成立。",
+          "en": "Evidence: 「星の数よりも書き込みの中身を読み、その不満が自分にとっても不満なのかを考えてみる」.\nReasoning: He doesn't reject ratings; he suggests reading the content and asking whether each complaint applies to you."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "笔者说「評価を見るなとは言わない」。",
+            "en": "He says 「評価を見るなとは言わない」."
+          },
+          {
+            "zh": "笔者没有说星少的店就好；重点是看不满的内容是否适合自己。",
+            "en": "He doesn't say low-rated places are better; the point is judging the complaints for yourself."
+          },
+          {
+            "zh": "文中没有提到去问常客。",
+            "en": "Asking regulars is never mentioned."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-308",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "お中元やお歳暮を贈る家庭が、年々減っているという。形式的な付き合いを嫌う若い世代が増えたことに加え、職場でも「虚礼廃止」を掲げ、上司への贈り物を控えるよう呼びかける企業が少なくない。義理で品物をやり取りする習慣など、なくなっても構わない。そう考える人が多いのも理解できる。\nしかし私には、この習慣をただの虚礼として片付けてしまうのは惜しいように思える。私の母は毎年、遠方に住む恩師の家に、故郷の名産の梨を送り続けていた。恩師からは決まって、近況を記した葉書が届く。年に二度の品物のやり取りは、それ自体が目的というより、疎遠になりかねない相手との縁をつなぎとめる口実だったのだろう。用もないのに連絡をするのは、案外難しいものだ。季節の贈り物という決まった形があったからこそ、母は気兼ねなく恩師に便りを送ることができたのである。\n習慣が形式だけのものになったのなら、やめればよい。だが、形式には、ためらう気持ちを後押しする働きもある。大切なのは、形を守ることでも捨てることでもなく、その形が何のためにあったのかを考えることではないだろうか。",
+    "tr": {
+      "zh": "据说送中元礼、岁末礼的家庭逐年减少。除了讨厌形式化交往的年轻一代增多之外，在职场上，打出“废除虚礼”的旗号、呼吁不要给上司送礼的企业也不少。出于人情义务互赠物品的习惯，没了也无所谓。很多人这样想，也可以理解。\n但是在我看来，把这个习惯当作单纯的虚礼一笔勾销，是可惜的。我母亲每年都给住在远方的恩师家寄家乡特产的梨。恩师那边总会寄来一张写着近况的明信片。一年两次的互赠，与其说本身是目的，不如说是维系可能变得疏远的缘分的借口吧。没事却去联系，其实意外地难。正因为有季节送礼这一固定的形式，母亲才能毫无顾虑地给恩师写信。\n如果习惯已经只剩形式，那就停止好了。但是，形式也有推动犹豫之心的作用。重要的不是守住形式，也不是丢掉形式，而是思考那个形式原本是为了什么而存在的，不是吗？",
+      "en": "The number of households sending midsummer and year-end gifts is said to fall every year. On top of a growing younger generation that dislikes formal relationships, many companies have declared an end to 'empty courtesies' and urge staff not to give presents to their bosses. A custom of exchanging goods out of obligation could disappear and nobody would mind — it is understandable that many people think so.\nTo me, though, dismissing the custom as mere empty courtesy seems a pity. Every year my mother sent pears, a speciality of her home town, to a former teacher who lived far away. Without fail, a postcard came back telling her his news. The twice-yearly exchange was probably less an end in itself than a pretext to keep a tie that might otherwise have faded. Getting in touch with nothing to say is surprisingly hard. It was precisely because there was the set form of seasonal gifts that my mother could write to her teacher without feeling awkward.\nIf a custom has become nothing but form, by all means drop it. But form can also nudge us past our hesitation. What matters, surely, is neither keeping the form nor throwing it away, but thinking about what it was for."
+    },
+    "questions": [
+      {
+        "q": "筆者は、母と恩師の間の年に二度の品物のやり取りを、どのようなものだったと考えているか。",
+        "options": [
+          "恩師から受けた恩に報いるために欠かせない、義理を果たす務め",
+          "職場で上司に贈り物をする習慣にならった、毎年決まった行事",
+          "離れて暮らす恩師との関係を保ち続けるための、一つのきっかけ",
+          "故郷の名産を恩師に知ってもらうための、ささやかな宣伝"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「それ自体が目的というより、疎遠になりかねない相手との縁をつなぎとめる口実だったのだろう」\n推理：「AというよりB」重点在B：送礼是维系与远方恩师之缘的「口実」（借口、契机）。",
+          "en": "Evidence: 「それ自体が目的というより、疎遠になりかねない相手との縁をつなぎとめる口実だったのだろう」.\nReasoning: In 「AというよりB」 the weight is on B: the gifts were a 「口実」, a pretext, for keeping the tie with a distant teacher."
+        },
+        "wrong": [
+          {
+            "zh": "笔者说的恰恰是「それ自体が目的というより」，不是履行人情义务。",
+            "en": "The author says 「それ自体が目的というより」: not a duty in itself."
+          },
+          {
+            "zh": "给上司送礼是第一段讲的职场情况，与母亲的事无关。",
+            "en": "Gifts to bosses are from paragraph one and unrelated to the mother."
+          },
+          null,
+          {
+            "zh": "梨是家乡特产，但文中没有宣传的意思。",
+            "en": "The pears are a local speciality, but promotion isn't the point."
+          }
+        ]
+      },
+      {
+        "q": "「形式には、ためらう気持ちを後押しする働きもある」とは、どういうことか。",
+        "options": [
+          "決まった形があれば、贈る品物を選ぶ手間が省けるということ",
+          "決まった形があれば、用がなくても相手に連絡しやすいということ",
+          "形式を嫌う若い世代も、決まりがあれば贈り物をするということ",
+          "上司への贈り物も、形式であれば遠慮なく受け取れるということ"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「用もないのに連絡をするのは、案外難しいものだ。季節の贈り物という決まった形があったからこそ、母は気兼ねなく恩師に便りを送ることができた」\n推理：「ためらう気持ち」＝没事联系对方时的犹豫；有了季节送礼这个固定形式，就有理由联系，所以能「気兼ねなく」写信。",
+          "en": "Evidence: 「用もないのに連絡をするのは、案外難しいものだ。季節の贈り物という決まった形があったからこそ、母は気兼ねなく恩師に便りを送ることができた」.\nReasoning: 「ためらう気持ち」 is the hesitation about contacting someone for no reason; the fixed seasonal gift gave a reason, so she could write 「気兼ねなく」."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有谈到挑选礼物的麻烦。",
+            "en": "The trouble of choosing gifts isn't discussed."
+          },
+          null,
+          {
+            "zh": "文中没有说年轻一代有了规矩就会送礼。",
+            "en": "Nothing says the young would give gifts if there were rules."
+          },
+          {
+            "zh": "文中没有谈收礼的一方是否客气。",
+            "en": "Whether bosses accept gifts isn't discussed."
+          }
+        ]
+      },
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "options": [
+          "季節の贈り物の習慣は、人と人との縁をつなぐので守り続けるべきだ。",
+          "義理のやり取りはなくなっても構わないので、若い世代に従うべきだ。",
+          "贈り物よりも葉書のほうが、相手との縁をつなぐのには向いている。",
+          "習慣を続けるかは、その形が何のためにあったかを考えて決めるべきだ。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「大切なのは、形を守ることでも捨てることでもなく、その形が何のためにあったのかを考えることではないだろうか」\n推理：笔者既不主张一律保留，也不主张一律废除（只剩形式就停），关键是想清楚形式的作用。",
+          "en": "Evidence: 「大切なのは、形を守ることでも捨てることでもなく、その形が何のためにあったのかを考えることではないだろうか」.\nReasoning: He argues neither for keeping the custom nor for scrapping it (drop it if it's mere form); what counts is thinking about its purpose."
+        },
+        "wrong": [
+          {
+            "zh": "笔者说重要的不是「形を守ること」，也承认只剩形式的习惯可以停。",
+            "en": "He says it's not about 「形を守ること」, and allows that hollow customs can go."
+          },
+          {
+            "zh": "这是笔者用「しかし」反驳的一般看法。",
+            "en": "That's the common view he rebuts with 「しかし」."
+          },
+          {
+            "zh": "笔者没有比较礼物和明信片哪个更好。",
+            "en": "Gifts and postcards aren't compared."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-309",
+    "type": "mid",
+    "difficulty": 3,
+    "passage": "祖母が亡くなって、台所の引き出しから一冊のノートが出てきた。表紙に「おかず」とだけ書かれたそれは、祖母が五十年以上書きためてきた料理の覚え書きだった。懐かしい煮物の名を見つけ、さっそく作ってみようとしたのだが、すぐに途方に暮れた。「醤油　適当」「砂糖　少し多め」「火は様子を見て」。分量らしい分量が、どこにも書かれていないのである。\nはじめは、祖母にとってはわかりきったことだから書かなかったのだろうと思った。だが、何度か作り直すうちに、考えが変わった。同じ「少し多め」でも、その日の芋の甘さや、食べる人の顔ぶれによって、ちょうどよい量は違ってくる。祖母は手を抜いていたのではない。数字で決めてしまえば、かえって味が狂うことを知っていたのだ。ノートの余白には、ところどころに「父さん、塩辛いと言う」「孫たち、甘い方を喜ぶ」といった書き込みがある。祖母の料理は、分量ではなく、食べる人の反応を手がかりに作られていたのである。\n十数回目にして、ようやく記憶の中の味に近いものができた。あのノートは、料理の作り方というより、誰かのために味を調え続けた祖母の暮らしの記録なのだと思う。",
+    "tr": {
+      "zh": "祖母去世后，厨房的抽屉里找出一本笔记本。封面上只写着“菜”，那是祖母五十多年来积累写下的做菜备忘。我发现了令人怀念的炖菜的名字，想马上做做看，却立刻不知所措。“酱油　适量”“糖　稍多一点”“火候看情况”。哪里都没有写像样的分量。\n起初我以为，对祖母来说这是不言自明的事，所以没写。但是，重做了几次之后，我的想法变了。同样是“稍多一点”，根据当天芋头的甜度和吃饭的人是谁，合适的量也会不同。祖母并不是偷懒。她知道一旦用数字定死，味道反而会走样。笔记本的空白处，到处写着“他爸说太咸”“孙子们喜欢甜的”之类的话。祖母的菜，不是靠分量，而是以吃的人的反应为线索做出来的。\n到了第十几次，终于做出了接近记忆中的味道。我想，那本笔记本与其说是菜谱，不如说是祖母一直为某个人调味的生活记录。",
+      "en": "After my grandmother died, a notebook turned up in a kitchen drawer. With only 'Side dishes' written on the cover, it held the cooking notes she had built up over more than fifty years. I found the name of a simmered dish I remembered fondly and set out to make it, but was soon at a loss. 'Soy sauce — as needed.' 'Sugar — a bit on the generous side.' 'Heat — keep an eye on it.' There was not one real quantity anywhere.\nAt first I thought she hadn't written them down because they were obvious to her. But as I made the dish again and again, I changed my mind. Even 'a bit generous' means a different amount depending on how sweet the potatoes are that day and who will be eating. She hadn't been cutting corners. She knew that fixing things in numbers would actually throw the taste off. Here and there in the margins are notes like 'Dad says too salty' and 'the grandchildren like it sweeter'. Her cooking was guided not by quantities but by how the people eating it reacted.\nOn my tenth-odd attempt I finally made something close to the taste I remembered. I think that notebook is less a set of recipes than a record of her life spent adjusting flavours for someone."
+    },
+    "questions": [
+      {
+        "q": "筆者が「途方に暮れた」のは、なぜか。",
+        "options": [
+          "ノートに書かれた料理の名前が、どれも知らないものだったから",
+          "祖母の字がくずれていて、何が書いてあるのか読めなかったから",
+          "余白に書かれた家族の感想と、作り方とが食い違っていたから",
+          "作り方の手がかりはあっても、具体的な分量が書かれていなかったから"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「『醤油　適当』『砂糖　少し多め』『火は様子を見て』。分量らしい分量が、どこにも書かれていないのである」\n推理：笔者想照着做，可笔记里只有「適当」「少し多め」之类的说法，没有具体分量，所以不知怎么办。",
+          "en": "Evidence: 「『醤油　適当』『砂糖　少し多め』『火は様子を見て』。分量らしい分量が、どこにも書かれていないのである」.\nReasoning: The notes only say 「適当」 or 「少し多め」, with no actual quantities, so the writer didn't know how to follow them."
+        },
+        "wrong": [
+          {
+            "zh": "笔者找到的是「懐かしい煮物の名」，是熟悉的菜。",
+            "en": "The writer found 「懐かしい煮物の名」, a familiar dish."
+          },
+          {
+            "zh": "文中没有说字难认。",
+            "en": "Illegible handwriting isn't mentioned."
+          },
+          {
+            "zh": "空白处的家人感想是后来理解祖母做法的线索，不是让人困惑的原因。",
+            "en": "The family's comments later help explain her cooking; they aren't what confused the writer."
+          },
+          null
+        ]
+      },
+      {
+        "q": "筆者は、祖母が分量を書かなかった理由を、最終的にどう考えるようになったか。",
+        "options": [
+          "材料の状態や食べる人によって、ちょうどよい量が変わると知っていたから",
+          "長年作ってきたので、書かなくてもわかりきったことだったから",
+          "誰かに作り方を教える気がなく、自分だけの覚え書きだったから",
+          "料理に手間をかけるのを嫌い、細かいことにこだわらなかったから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「その日の芋の甘さや、食べる人の顔ぶれによって、ちょうどよい量は違ってくる」；「数字で決めてしまえば、かえって味が狂うことを知っていたのだ」\n推理：「だが…考えが変わった」之后是笔者的新看法：芋头的甜度、吃的人不同，合适的量就不同，所以不写死数字。",
+          "en": "Evidence: 「その日の芋の甘さや、食べる人の顔ぶれによって、ちょうどよい量は違ってくる」; 「数字で決めてしまえば、かえって味が狂うことを知っていたのだ」.\nReasoning: After 「だが…考えが変わった」 comes the new view: the right amount varies with the potatoes and the diners, so she avoided fixed numbers."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "这是笔者「はじめは」的想法，后来「考えが変わった」。",
+            "en": "That was the writer's first thought (「はじめは」), later revised (「考えが変わった」)."
+          },
+          {
+            "zh": "文中没有谈祖母是否打算教人。",
+            "en": "Whether she meant to teach anyone isn't discussed."
+          },
+          {
+            "zh": "文中明说「祖母は手を抜いていたのではない」。",
+            "en": "The text says 「祖母は手を抜いていたのではない」."
+          }
+        ]
+      },
+      {
+        "q": "筆者は、祖母のノートをどのようなものだと考えているか。",
+        "options": [
+          "誰が作っても同じ味になるよう工夫された、料理の手引き",
+          "家族に料理を教えるために書き残された、作り方の記録",
+          "食べる人を思って味を調え続けた、祖母の日々の暮らしの跡",
+          "五十年の間に移り変わった、家族の食卓の流行の記録"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「あのノートは、料理の作り方というより、誰かのために味を調え続けた祖母の暮らしの記録なのだと思う」\n推理：「AというよりB」，笔者看重的是B：为家人不断调味的生活记录，而不是菜谱。",
+          "en": "Evidence: 「あのノートは、料理の作り方というより、誰かのために味を調え続けた祖母の暮らしの記録なのだと思う」.\nReasoning: In 「AというよりB」 the weight is on B: a record of a life spent adjusting flavours for others, not a recipe book."
+        },
+        "wrong": [
+          {
+            "zh": "正相反：笔记故意不写死分量，味道随人而变。",
+            "en": "The opposite: the notes avoid fixed amounts, so the taste varies with who eats."
+          },
+          {
+            "zh": "笔者说它「料理の作り方というより」，重点不在菜谱。",
+            "en": "The writer says 「料理の作り方というより」: it's not mainly recipes."
+          },
+          null,
+          {
+            "zh": "文中没有提到饮食流行的变化。",
+            "en": "Changing food trends aren't mentioned."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-310",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "「子どもはほめて伸ばせ」と言われるようになって久しい。叱られてばかりでは自信を失い、挑戦する意欲もしぼんでしまう。その意味で、ほめることの大切さに異論はない。ただ、何をほめるかについては、もう少し考えてみる必要がありそうだ。\nある心理学の実験では、課題を解いた子どもたちを二つに分け、一方には「頭がいいね」と能力をほめ、もう一方には「よく頑張ったね」と努力をほめた。その後、難しい課題と易しい課題のどちらに取り組むかを選ばせたところ、能力をほめられた子どもの多くが易しい課題を選んだという。「頭がいい」という評価を失うのが怖くなり、失敗しそうな課題を避けるようになったのである。一方、努力をほめられた子どもは、難しい課題にも進んで挑んだ。\nつまり、ほめ言葉は、子どもが自分の何に価値があると考えるかを方向づける。能力をほめれば、子どもは能力を証明し続けなければならないと感じ、努力をほめれば、努力すること自体に意味を見いだす。ほめることが大切なのは言うまでもない。だが、ほめ方次第では、かえって子どもを挑戦から遠ざけることにもなりかねないのである。",
+    "tr": {
+      "zh": "“孩子要靠表扬来培养”这种说法已经流行很久了。总是挨骂，孩子会失去自信，挑战的意愿也会萎缩。从这个意义上说，表扬的重要性没有异议。只是，关于表扬什么，似乎还有必要再想一想。\n在某项心理学实验中，把解完题的孩子们分成两组，对一组说“你真聪明”，表扬能力；对另一组说“你很努力”，表扬努力。之后让他们选择做难题还是简单题，结果据说被表扬能力的孩子大多选了简单题。他们开始害怕失去“聪明”这一评价，于是回避可能失败的题目。另一方面，被表扬努力的孩子，连难题也主动挑战。\n也就是说，表扬的话会引导孩子认为自己身上什么有价值。表扬能力，孩子会觉得必须不断证明自己的能力；表扬努力，孩子会在努力本身中发现意义。表扬很重要，这是不言而喻的。但是，表扬的方式不当，反而可能让孩子远离挑战。",
+      "en": "'Praise children and they will grow' has been the watchword for a long time. Children who are only ever scolded lose confidence, and their will to try things withers. In that sense, nobody disputes that praise matters. But it seems we need to think a little more about what we praise.\nIn one psychology experiment, children who had solved a task were split into two groups: one was praised for ability ('you're so clever'), the other for effort ('you worked hard'). When they were then asked to choose between a hard task and an easy one, most of those praised for ability reportedly chose the easy one. Afraid of losing the label 'clever', they began to avoid tasks they might fail. The children praised for effort, by contrast, willingly took on the hard ones.\nIn other words, praise steers what children think is valuable about themselves. Praise ability and they feel they must keep proving it; praise effort and they find meaning in the effort itself. Praise is important, of course. But depending on how it is given, it can end up steering children away from challenges."
+    },
+    "questions": [
+      {
+        "q": "能力をほめられた子どもの多くが易しい課題を選んだのは、なぜか。",
+        "options": [
+          "前の課題で疲れてしまい、難しい課題に取り組む気力がなくなったから",
+          "失敗すれば、頭がいいという評価を失ってしまうと恐れたから",
+          "自分の能力なら、易しい課題で十分に力を示せると考えたから",
+          "努力をほめられた子どもと比べられることを、避けたかったから"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「『頭がいい』という評価を失うのが怖くなり、失敗しそうな課題を避けるようになったのである」\n推理：被夸聪明的孩子怕做难题失败后不再被认为聪明，所以选了不容易失败的简单题。",
+          "en": "Evidence: 「『頭がいい』という評価を失うのが怖くなり、失敗しそうな課題を避けるようになったのである」.\nReasoning: Children called clever feared that failing a hard task would cost them that label, so they picked the easy one they couldn't fail."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有提到疲劳。",
+            "en": "Tiredness isn't mentioned."
+          },
+          null,
+          {
+            "zh": "原因是怕失去评价，不是认为简单题足以展示能力。",
+            "en": "The cause is fear of losing the label, not a belief that easy tasks show enough."
+          },
+          {
+            "zh": "两组孩子之间的比较是实验者做的，文中没有说孩子怕被比较。",
+            "en": "The comparison is the researchers'; nothing says the children feared it."
+          }
+        ]
+      },
+      {
+        "q": "「ほめ言葉は、子どもが自分の何に価値があると考えるかを方向づける」とは、どういうことか。",
+        "options": [
+          "ほめられた子どもほど、自分の価値を高く見積もるようになるということ",
+          "ほめ言葉が多ければ多いほど、子どもが自信を持つようになるということ",
+          "何をほめられたかによって、子どもが大切だと思うものが変わるということ",
+          "子どもは、大人にほめられることを目的として行動するようになるということ"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「能力をほめれば、子どもは能力を証明し続けなければならないと感じ、努力をほめれば、努力すること自体に意味を見いだす」\n推理：紧接的一句做了解释：夸能力，孩子看重能力；夸努力，孩子看重努力。被夸的内容决定孩子认为什么重要。",
+          "en": "Evidence: 「能力をほめれば、子どもは能力を証明し続けなければならないと感じ、努力をほめれば、努力すること自体に意味を見いだす」.\nReasoning: The next sentence explains it: praise ability and children prize ability; praise effort and they prize effort. What is praised shapes what they value."
+        },
+        "wrong": [
+          {
+            "zh": "问题不在于自我评价的高低，而在于看重哪一方面。",
+            "en": "It's not about how highly they rate themselves but what they value."
+          },
+          {
+            "zh": "文中讲的是表扬的内容，不是表扬的多少。",
+            "en": "The text is about what is praised, not how much."
+          },
+          null,
+          {
+            "zh": "文中没有说孩子为了被表扬而行动。",
+            "en": "Nothing says children act in order to be praised."
+          }
+        ]
+      },
+      {
+        "q": "この文章で筆者が最も言いたいことは何か。",
+        "options": [
+          "ほめることは大切だが、何をほめるかで子どもへの影響が違ってくる。",
+          "能力をほめると子どもが挑戦しなくなるので、ほめるのは控えるべきだ。",
+          "叱ってばかりいると、子どもは自信を失い、挑戦しなくなってしまう。",
+          "子どもには、易しい課題より難しい課題に取り組ませるほうがよい。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「何をほめるかについては、もう少し考えてみる必要がありそうだ」；「ほめ方次第では、かえって子どもを挑戦から遠ざけることにもなりかねない」\n推理：笔者先肯定表扬的重要（「異論はない」「言うまでもない」），再强调表扬什么会带来不同结果。",
+          "en": "Evidence: 「何をほめるかについては、もう少し考えてみる必要がありそうだ」; 「ほめ方次第では、かえって子どもを挑戦から遠ざけることにもなりかねない」.\nReasoning: The author grants that praise matters (「異論はない」, 「言うまでもない」) and stresses that what is praised changes the outcome."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "笔者说「ほめることが大切なのは言うまでもない」，没有主张少表扬。",
+            "en": "He says 「ほめることが大切なのは言うまでもない」; he doesn't urge less praise."
+          },
+          {
+            "zh": "这只是开头的前提，不是主旨。",
+            "en": "That's only the opening premise, not the main point."
+          },
+          {
+            "zh": "文中没有主张该让孩子做哪种题。",
+            "en": "He doesn't say which tasks children should be given."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-311",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "定年を迎えた男性が、家に居場所がないと嘆く話をよく耳にする。会社では肩書きがあり、毎日の予定も決まっていた。ところが退職した途端、名刺も行き先もなくなり、一日をどう過ごせばよいのかわからなくなるという。地域の集まりに顔を出してみても、つい現役時代の調子で場を仕切ろうとして、周囲から敬遠されてしまう人もいるらしい。\n先日、市の講座で知り合った元銀行員の男性は、こう話してくれた。「最初は、自分が何者でもなくなったようで怖かった。でも、公園の花壇の手入れを手伝ううちに、肩書きなしで人と話すのも悪くないと思えるようになった」。彼が通うボランティアの会には、元教師もいれば、元トラック運転手もいる。そこでは前職を尋ねる人はほとんどいない。花の育て方に詳しい人が頼りにされ、力仕事の得意な人が重宝される。それぞれが、今できることで役に立っているのである。\n居場所とは、誰かに与えられるものではなく、自分が役に立てる関係の中に見いだすものなのかもしれない。そのためには、過去の肩書きをいったん脇に置くことが、思いのほか大切なのだろう。",
+    "tr": {
+      "zh": "经常听到退休的男性感叹在家里没有容身之处。在公司时有头衔，每天的日程也是定好的。可是一退休，名片和去处都没了，据说就不知道一天该怎么过了。也有人去参加社区聚会，却不由得用在职时的派头主持局面，结果被周围的人敬而远之。\n前几天在市里的讲座上认识的一位前银行职员这样对我说：“一开始，觉得自己好像什么人都不是了，很害怕。但在帮忙打理公园花坛的过程中，渐渐觉得不带头衔和人聊天也不错。”他参加的志愿者团体里，有前教师，也有前卡车司机。在那里几乎没有人问以前的职业。懂得养花的人受人依赖，擅长力气活的人被看重。每个人都在用自己现在能做的事发挥作用。\n所谓容身之处，或许不是别人给的，而是在自己能发挥作用的关系中找到的。为此，暂且把过去的头衔放在一边，可能比想象的更重要吧。",
+      "en": "We often hear of men who, having retired, complain that they have no place at home. At the company they had a title, and every day was planned. But the moment they retire, the business cards and the places to go disappear, and they don't know how to spend the day. Some, it seems, go along to local gatherings, slip into running the show the way they did at work, and are given a wide berth.\nA former bank employee I met at a city course the other day told me: 'At first I was scared — it felt as if I'd stopped being anybody. But helping look after the flower beds in the park, I came to think talking to people without a title isn't bad at all.' The volunteer group he goes to has former teachers and former truck drivers. Hardly anyone asks what you used to do. People who know about growing flowers are relied on, and those good at heavy work are valued. Each is useful through what they can do now.\nA place to belong may be not something given to us but something found in relationships where we can be of use. And for that, setting past titles aside for a while may matter more than we think."
+    },
+    "questions": [
+      {
+        "q": "地域の集まりで周囲から敬遠されてしまうのは、どのような人か。",
+        "options": [
+          "会社にいた頃と同じように、その場を取りまとめようとする人",
+          "退職後の一日の過ごし方がわからず、何もせずに過ごしている人",
+          "名刺を持たず、自分の前の仕事を名乗らないまま参加する人",
+          "前の仕事を尋ねられても、答えようとしないで黙っている人"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「つい現役時代の調子で場を仕切ろうとして、周囲から敬遠されてしまう人もいる」\n推理：「場を仕切る」＝主持、指挥局面，「現役時代の調子で」＝像在公司时那样。被敬而远之的是这种人。",
+          "en": "Evidence: 「つい現役時代の調子で場を仕切ろうとして、周囲から敬遠されてしまう人もいる」.\nReasoning: 「場を仕切る」 = take charge, 「現役時代の調子で」 = the way they did at work: those are the ones people avoid."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "不知道怎么过日子是退休者的烦恼，但被敬而远之的原因是「場を仕切ろうとして」。",
+            "en": "Not knowing how to spend the day is a worry, but people are avoided for 「場を仕切ろうとして」."
+          },
+          {
+            "zh": "不带头衔反而是文中肯定的做法。",
+            "en": "Going without a title is what the text approves of."
+          },
+          {
+            "zh": "文中说那里「前職を尋ねる人はほとんどいない」，没有这种情况。",
+            "en": "There 「前職を尋ねる人はほとんどいない」, so this doesn't arise."
+          }
+        ]
+      },
+      {
+        "q": "元銀行員の男性について、文章の内容に合うのはどれか。",
+        "options": [
+          "退職してすぐに、肩書きにこだわらず人と話せるようになった。",
+          "銀行で働いた経験を生かして、ボランティアの会の運営を任されている。",
+          "ボランティアの会で、元教師から花の育て方を教わっている。",
+          "花壇の手入れを手伝ううちに、肩書きのない付き合いに慣れていった。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「公園の花壇の手入れを手伝ううちに、肩書きなしで人と話すのも悪くないと思えるようになった」\n推理：「〜うちに」表示在过程中逐渐变化：一开始害怕，帮忙打理花坛的过程中慢慢接受了不带头衔的交往。",
+          "en": "Evidence: 「公園の花壇の手入れを手伝ううちに、肩書きなしで人と話すのも悪くないと思えるようになった」.\nReasoning: 「〜うちに」 marks a gradual change: scared at first, he grew used to title-free company while helping with the flower beds."
+        },
+        "wrong": [
+          {
+            "zh": "他说「最初は…怖かった」，是逐渐改变的，不是马上。",
+            "en": "He says 「最初は…怖かった」; the change was gradual."
+          },
+          {
+            "zh": "文中没有提到他负责运营，那里也不问前职。",
+            "en": "Running the group isn't mentioned, and nobody asks about past jobs there."
+          },
+          {
+            "zh": "文中只说会里有前教师，没有说谁教他养花。",
+            "en": "There are former teachers in the group, but nobody is said to teach him."
+          },
+          null
+        ]
+      },
+      {
+        "q": "筆者は、定年後の居場所について、どう考えているか。",
+        "options": [
+          "地域が退職者のために、活動できる場を用意すべきである。",
+          "前の肩書きにとらわれず、今役に立てる関係の中に見つかるものだ。",
+          "現役時代の経験を生かせる場を、自分から探していくべきである。",
+          "家庭の中で家族の役に立つことによって、自然に得られるものだ。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「居場所とは、誰かに与えられるものではなく、自分が役に立てる関係の中に見いだすものなのかもしれない」；「過去の肩書きをいったん脇に置くことが、思いのほか大切なのだろう」\n推理：两句合起来：不靠别人给，在能发挥作用的关系中找到，并且先放下过去的头衔。",
+          "en": "Evidence: 「居場所とは、誰かに与えられるものではなく、自分が役に立てる関係の中に見いだすものなのかもしれない」; 「過去の肩書きをいったん脇に置くことが、思いのほか大切なのだろう」.\nReasoning: Together: it isn't handed to you; you find it in relationships where you're useful, after setting old titles aside."
+        },
+        "wrong": [
+          {
+            "zh": "笔者说居场所「誰かに与えられるものではなく」。",
+            "en": "The author says it is 「誰かに与えられるものではなく」."
+          },
+          null,
+          {
+            "zh": "笔者主张「過去の肩書きをいったん脇に置く」，会里看重的是「今できること」。",
+            "en": "He urges setting aside 「過去の肩書き」; what counts is 「今できること」."
+          },
+          {
+            "zh": "文中的例子是社区志愿者团体，没有谈在家里发挥作用。",
+            "en": "The example is a volunteer group, not being useful at home."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-312",
+    "type": "mid",
+    "difficulty": 3,
+    "passage": "仕事の成果を数字で示すことが、どの職場でも求められるようになった。売上や件数のように目に見える指標があれば、評価は公平になり、目標も立てやすい。数字で管理することそのものを否定するつもりはない。\n問題は、数字が目的にすり替わってしまうことである。ある病院では、患者の待ち時間を短くするため、受付から診察までの時間を指標にした。数か月後、待ち時間は確かに縮まった。ところが、実際に起きていたのは、診察を急ぐあまり一人ひとりの話を聞く時間が削られ、同じ症状で再び受診する患者が増えるという事態だった。測られている数字だけが改善し、本来の目的である患者の回復は、かえって遠のいたのである。\n数字は、目的が達成できているかを確かめるための手がかりにすぎない。それが評価の基準になった途端、人は数字そのものを良くしようと動き始める。だからといって、数字を手放せというのではない。指標を定めたら、その数字が何を測るためのものだったのかを繰り返し問い直すこと。そして、数字に表れない変化にも目を配ること。それを怠れば、数字は職場を良くするどころか、静かに損なっていくことになりかねない。",
+    "tr": {
+      "zh": "用数字展示工作成果，已经成了每个职场的要求。有了销售额、件数这样看得见的指标，评价就会公平，目标也容易制定。我并不打算否定用数字管理本身。\n问题在于数字被偷换成了目的。某家医院为了缩短患者的等候时间，把从挂号到看诊的时间设为指标。几个月后，等候时间确实缩短了。然而，实际发生的情况是：由于急着看诊，倾听每个患者讲述的时间被压缩，因同样症状再次就诊的患者增加了。只有被测量的数字改善了，本来的目的——患者的康复——反而更远了。\n数字只不过是确认目的是否达成的线索。它一旦成了评价的标准，人们就开始想方设法让数字本身变好。话虽如此，我并不是说要放弃数字。定下指标之后，要反复追问这个数字原本是为了衡量什么。并且，也要留意数字上体现不出来的变化。如果疏忽了这些，数字不但不能改善职场，反而可能在不知不觉中损害它。",
+      "en": "Every workplace now expects results to be shown in numbers. With visible indicators like sales or case counts, evaluation becomes fair and targets are easy to set. I have no intention of rejecting management by numbers as such.\nThe problem is when the number quietly replaces the goal. One hospital, wanting to cut patients' waiting times, made the time from reception to consultation an indicator. A few months later, waiting times had indeed fallen. What had actually happened, though, was that in the rush to see patients, the time spent listening to each one was cut, and more patients came back with the same symptoms. Only the measured number improved; the real goal, patients' recovery, receded instead.\nA number is merely a clue for checking whether a goal is being met. The moment it becomes the basis for evaluation, people start working to improve the number itself. That does not mean we should give up numbers. Once an indicator is set, keep asking what the number was meant to measure, and keep an eye on changes the numbers do not show. Neglect that, and numbers, far from improving a workplace, may quietly damage it."
+    },
+    "questions": [
+      {
+        "q": "ある病院の例で、実際に起きていたのはどのようなことか。",
+        "options": [
+          "待ち時間を短くしようとしたが、患者が増えて結局は長くなった。",
+          "診察に時間をかけたため、受付から診察までの待ち時間が延びた。",
+          "待ち時間は縮まったが、診察が短くなり、再び来る患者が増えた。",
+          "再び受診する患者が減ったため、病院全体の待ち時間が縮まった。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「待ち時間は確かに縮まった。ところが…一人ひとりの話を聞く時間が削られ、同じ症状で再び受診する患者が増える」\n推理：「ところが」前后两面：指标（等候时间）变好了，但看诊被压缩，复诊的人增加了。",
+          "en": "Evidence: 「待ち時間は確かに縮まった。ところが…一人ひとりの話を聞く時間が削られ、同じ症状で再び受診する患者が増える」.\nReasoning: 「ところが」 shows both sides: the indicator (waiting time) improved, but consultations were cut short and more patients returned."
+        },
+        "wrong": [
+          {
+            "zh": "等候时间「確かに縮まった」，没有变长。",
+            "en": "Waiting times 「確かに縮まった」; they didn't grow."
+          },
+          {
+            "zh": "正相反：是急着看诊，倾听时间「削られ」。",
+            "en": "The opposite: consultations were rushed and listening time 「削られ」."
+          },
+          null,
+          {
+            "zh": "复诊的患者是「増える」，不是减少。",
+            "en": "Return visits 「増える」, they didn't fall."
+          }
+        ]
+      },
+      {
+        "q": "筆者によると、数字が評価の基準になると、どうなるか。",
+        "options": [
+          "評価が公平になり、それぞれが自分の目標を立てやすくなる。",
+          "本来の目的よりも、測られている数字を良くすることが優先される。",
+          "数字に表れない変化ばかりが重んじられ、成果が見えにくくなる。",
+          "指標の数が増えすぎて、何を測っているのかがわからなくなる。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「それが評価の基準になった途端、人は数字そのものを良くしようと動き始める」\n推理：数字一成为评价标准，人们就去改善数字本身，忘了本来的目的（如医院例子中的康复）。",
+          "en": "Evidence: 「それが評価の基準になった途端、人は数字そのものを良くしようと動き始める」.\nReasoning: Once a number is the yardstick, people work on the number itself and lose sight of the goal (recovery, in the hospital case)."
+        },
+        "wrong": [
+          {
+            "zh": "这是第一段讲的数字的好处，不是成为评价标准后出现的问题。",
+            "en": "That's the benefit from paragraph one, not what goes wrong."
+          },
+          null,
+          {
+            "zh": "正相反：笔者担心的是数字以外的变化被忽视。",
+            "en": "The opposite: the worry is that changes outside the numbers get ignored."
+          },
+          {
+            "zh": "文中没有谈指标数量过多。",
+            "en": "Too many indicators isn't discussed."
+          }
+        ]
+      },
+      {
+        "q": "筆者の考えに合うのはどれか。",
+        "options": [
+          "数字による管理は職場を損なうので、指標を使うのはやめるべきだ。",
+          "数字は評価を公平にするので、できるだけ多くの指標を設けるべきだ。",
+          "数字を評価の基準とする以上、指標は定期的に入れ替えるべきだ。",
+          "指標が何のためのものかを問い直し、数字以外の変化にも注意すべきだ。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「指標を定めたら、その数字が何を測るためのものだったのかを繰り返し問い直すこと。そして、数字に表れない変化にも目を配ること」\n推理：笔者不放弃数字（「手放せというのではない」），而是提出两点：追问指标的目的，并留意数字以外的变化。",
+          "en": "Evidence: 「指標を定めたら、その数字が何を測るためのものだったのかを繰り返し問い直すこと。そして、数字に表れない変化にも目を配ること」.\nReasoning: He keeps numbers (「手放せというのではない」) and asks for two things: question what each indicator is for, and watch changes the numbers miss."
+        },
+        "wrong": [
+          {
+            "zh": "笔者说「数字を手放せというのではない」。",
+            "en": "He says 「数字を手放せというのではない」."
+          },
+          {
+            "zh": "笔者没有主张增加指标。",
+            "en": "He doesn't argue for more indicators."
+          },
+          {
+            "zh": "笔者说的是反复「問い直す」指标的目的，不是定期更换指标。",
+            "en": "He says to keep 「問い直す」 the indicator's purpose, not to swap indicators."
+          },
+          null
+        ]
+      }
+    ]
   }
 ]

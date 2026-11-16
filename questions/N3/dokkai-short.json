@@ -259,5 +259,669 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n3-dk-209",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、ホテルから届いたメールです。",
+    "passage": "山本様\n\nこのたびは、ホテルみなと屋をご予約いただき、ありがとうございます。\nご予約は、11月8日（土）から一泊、二名様です。チェックインは15時から22時までとなっております。22時を過ぎて到着される場合は、必ず当日の18時までにお電話でご連絡ください。ご連絡がないまま22時を過ぎた場合は、ご予約を取り消させていただくことがあります。\nなお、駐車場は台数に限りがございますので、お車でお越しの方は前日までにお知らせください。\n\nホテルみなと屋",
+    "tr": {
+      "zh": "山本先生/女士：\n\n感谢您这次预订港屋酒店。\n您的预订是11月8日（周六）起住一晚，两位。入住时间为15点到22点。如果到达时间超过22点，请务必在当天18点之前打电话联系我们。如果没有联系而超过了22点，我们可能会取消您的预订。\n另外，停车场车位有限，开车前来的客人请在前一天之前告知。\n\n港屋酒店",
+      "en": "Dear Mr/Ms Yamamoto,\n\nThank you for booking Hotel Minatoya.\nYour booking is for one night from Saturday 8 November, for two people. Check-in is from 15:00 to 22:00. If you will arrive after 22:00, please be sure to telephone us by 18:00 on the day. If it gets past 22:00 without any word from you, we may cancel your booking.\nAlso, parking spaces are limited, so if you are coming by car, please let us know by the day before.\n\nHotel Minatoya"
+    },
+    "questions": [
+      {
+        "q": "山本さんは車でホテルへ行く予定だが、仕事のため、着くのは23時ごろになりそうだ。山本さんがしなければならないことは何か。",
+        "options": [
+          "当日の18時までに電話をして、駐車場のこともそのときに伝える。",
+          "前日までに駐車場のことを伝え、ホテルに着いたらフロントに話す。",
+          "前日までに駐車場のことを伝え、当日の18時までに電話をする。",
+          "22時までに着けないので、予約を取り消して別の日に予約し直す。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「22時を過ぎて到着される場合は、必ず当日の18時までにお電話でご連絡ください」；「お車でお越しの方は前日までにお知らせください」\n推理：山本有两个条件：开车，23点左右到。开车要在前一天之前告知停车场；超过22点到要在当天18点之前打电话。两件事都要做，期限也不同。",
+          "en": "Evidence: 「22時を過ぎて到着される場合は、必ず当日の18時までにお電話でご連絡ください」; 「お車でお越しの方は前日までにお知らせください」\nReasoning: Two facts apply to Yamamoto: he is driving, and he arrives around 23:00. Driving means telling the hotel by the day before; arriving after 22:00 means phoning by 18:00 on the day. Both are needed, with different deadlines."
+        },
+        "wrong": [
+          {
+            "zh": "停车场要「前日までに」告知，当天打电话时再说就晚了。",
+            "en": "Parking must be reported 「前日までに」; mentioning it in the call on the day is too late."
+          },
+          {
+            "zh": "超过22点到达，必须在当天18点之前打电话，到了再说不行。",
+            "en": "Arriving after 22:00 requires a call by 18:00 on the day; telling the front desk on arrival isn't enough."
+          },
+          null,
+          {
+            "zh": "邮件只要求晚到的人打电话联系，并没有说要取消预订。",
+            "en": "The email only asks late arrivals to phone; it doesn't say they should cancel."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-210",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "新人のころ、先輩がよく自分の失敗の話をしてくれた。取引先の名前を間違えたことや、大事な会議に遅れたことなど、聞いていて驚くような話ばかりだった。\n今思うと、あれは私を安心させるためだったのだろう。仕事のできる先輩でも失敗するのだと分かって、私は小さなミスを隠さずに報告できるようになった。\n今度は私が後輩に教える立場になった。うまくいった話より、失敗した話のほうが後輩の役に立つこともあるのだと思う。",
+    "tr": {
+      "zh": "我刚进公司的时候，前辈常常跟我讲他自己失败的事。把客户的名字弄错、重要的会议迟到等等，全是听了让人吃惊的事。\n现在想来，那大概是为了让我安心吧。知道了连能干的前辈也会失败，我就能做到不隐瞒小错误、如实汇报了。\n这次轮到我站在教后辈的位置上了。我觉得，比起顺利的事，失败的经历有时对后辈更有帮助。",
+      "en": "When I was new, a senior colleague often told me about his own failures. Getting a client's name wrong, being late for an important meeting — they were all stories that surprised me.\nLooking back, it was probably to put me at ease. Once I saw that even a capable senior makes mistakes, I was able to report my small mistakes instead of hiding them.\nNow it's my turn to teach juniors. I think stories of failure can sometimes help them more than stories of success."
+    },
+    "questions": [
+      {
+        "q": "先輩が失敗の話をしたのは、なぜだと筆者は考えているか。",
+        "options": [
+          "新人の筆者が、ミスを怖がらずに報告できるようにするため",
+          "新人の筆者に、同じ失敗をしないように注意するため",
+          "先輩自身が、自分の失敗を誰かに聞いてほしかったため",
+          "新人の筆者に、取引先の名前を早く覚えさせるため"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「あれは私を安心させるためだったのだろう」；「私は小さなミスを隠さずに報告できるようになった」\n推理：「あれ」指前辈讲失败经历。作者推测目的是「安心させる」，结果是自己敢于不隐瞒、如实汇报小错误。选项“不怕犯错、能汇报”正是这层意思。",
+          "en": "Evidence: 「あれは私を安心させるためだったのだろう」; 「私は小さなミスを隠さずに報告できるようになった」\nReasoning: 「あれ」 is the senior's habit of telling failure stories. The writer thinks the aim was to reassure him (「安心させる」), and the result was that he reported small mistakes instead of hiding them — the answer."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "作者认为目的是「安心させる」，不是提醒他别犯同样的错。",
+            "en": "The writer thinks the aim was to reassure (「安心させる」), not to warn him against the same mistakes."
+          },
+          {
+            "zh": "文中没有说前辈自己想找人倾诉，作者认为是为了自己。",
+            "en": "Nothing says the senior wanted a listener; the writer thinks it was for his sake."
+          },
+          {
+            "zh": "弄错客户名字只是前辈失败的例子，不是要他记名字。",
+            "en": "Getting a client's name wrong is just one of the senior's failures, not a lesson in learning names."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-211",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、図書館のお知らせです。",
+    "passage": "利用者の皆様へ\n\n12月1日から14日まで、正面入口の工事を行います。この間、正面入口の横にある返却ポストは使えません。\n開館時間中に本を返す場合は、1階のカウンターにお持ちください。閉館後に返す場合は、裏口にある臨時の返却ポストをご利用ください。ただし、CDやDVDは壊れるおそれがありますので、臨時のポストには入れず、開館時間中にカウンターへお返しください。\n\n中央図書館",
+    "tr": {
+      "zh": "致各位读者：\n\n12月1日至14日，将对正门进行施工。在此期间，正门旁边的还书箱不能使用。\n在开馆时间内还书的，请拿到1楼服务台。闭馆后还书的，请使用后门的临时还书箱。但是，CD和DVD有损坏的可能，请不要放入临时还书箱，请在开馆时间内交到服务台。\n\n中央图书馆",
+      "en": "To all library users:\n\nFrom 1 to 14 December, construction work will be carried out on the main entrance. During this time, the return box beside the main entrance cannot be used.\nIf you return books during opening hours, please bring them to the counter on the 1st floor. If you return them after closing, please use the temporary return box at the back entrance. However, CDs and DVDs may be damaged, so please don't put them in the temporary box; return them to the counter during opening hours.\n\nCentral Library"
+    },
+    "questions": [
+      {
+        "q": "12月5日の夜、閉館後に、借りた本2冊とDVD1枚を返しに来た人は、どうすればいいか。",
+        "options": [
+          "本もDVDも、裏口にある臨時の返却ポストに入れる。",
+          "本は裏口の臨時のポストに入れ、DVDは後日カウンターに返す。",
+          "本もDVDも、正面入口の横にある返却ポストに入れる。",
+          "本は正面入口の横のポストに入れ、DVDは後日カウンターに返す。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「閉館後に返す場合は、裏口にある臨時の返却ポストをご利用ください」；「CDやDVDは…臨時のポストには入れず、開館時間中にカウンターへお返しください」\n推理：12月5日在施工期内，正门的还书箱不能用。闭馆后书可以放进后门的临时还书箱；DVD不能放进去，要等开馆时间交到服务台。",
+          "en": "Evidence: 「閉館後に返す場合は、裏口にある臨時の返却ポストをご利用ください」; 「CDやDVDは…臨時のポストには入れず、開館時間中にカウンターへお返しください」\nReasoning: 5 December falls within the works, so the box by the main entrance is out of use. After closing, books go in the temporary box at the back; the DVD may not, and must go to the counter during opening hours."
+        },
+        "wrong": [
+          {
+            "zh": "DVD可能损坏，通知说不要放进临时还书箱。",
+            "en": "DVDs may get damaged, so the notice says not to put them in the temporary box."
+          },
+          null,
+          {
+            "zh": "施工期间正门旁边的还书箱「使えません」。",
+            "en": "During the works the box by the main entrance 「使えません」."
+          },
+          {
+            "zh": "DVD的处理没错，但正门旁边的还书箱在施工期间不能用。",
+            "en": "The DVD part is right, but the main-entrance box can't be used during the works."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-212",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "子どもは「どうして空は青いの？」「どうして魚は水の中で息ができるの？」と、次々に質問してくる。忙しいときは、つい「そういうものなの」と答えてしまいがちだ。\n最近、私は答えを教える前に、「どうしてだと思う？」と聞き返すようにしている。すると子どもは一生懸命考えて、大人には思いつかないような答えを出してくる。正しくなくてもかまわない。大切なのは、正しい答えを知ることより、自分で考えてみることなのだから。",
+    "tr": {
+      "zh": "孩子会接二连三地问：“为什么天空是蓝色的？”“为什么鱼在水里能呼吸？”忙的时候，人往往会随口回答“本来就是这样的”。\n最近，我在告诉孩子答案之前，会先反问一句：“你觉得是为什么呢？”于是孩子会拼命思考，说出大人想不到的答案。答得不对也没关系。因为重要的不是知道正确答案，而是自己试着去思考。",
+      "en": "Children ask one question after another: 'Why is the sky blue?' 'Why can fish breathe in water?' When we're busy, we tend to answer, 'That's just how it is.'\nRecently, before telling the answer, I've made a point of asking back, 'Why do you think?' Then the child thinks hard and comes up with answers an adult would never think of. It doesn't matter if they're wrong. What matters is not knowing the right answer but trying to think for yourself."
+    },
+    "questions": [
+      {
+        "q": "筆者の考えに合うものはどれか。",
+        "options": [
+          "子どもに質問されたら、すぐに正しい答えを教えるべきだ。",
+          "忙しいときは、子どもの質問に答えなくてもかまわない。",
+          "子どもが間違った答えを出したら、すぐに直すことが大切だ。",
+          "子どもには、答えを知るより自分で考える経験をさせたい。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「大切なのは、正しい答えを知ることより、自分で考えてみることなのだから」\n推理：作者在告诉答案之前先反问孩子，让孩子自己想。最后一句用「AよりB」说明理由：比起知道正确答案，自己思考更重要。选项正是这个意思。",
+          "en": "Evidence: 「大切なのは、正しい答えを知ることより、自分で考えてみることなのだから」\nReasoning: The writer asks the child back before giving the answer, so the child thinks first. The last sentence gives the reason with 「AよりB」: thinking for yourself matters more than knowing the right answer — the option."
+        },
+        "wrong": [
+          {
+            "zh": "作者是先反问孩子「どうしてだと思う？」，不是马上告诉答案。",
+            "en": "The writer first asks back 「どうしてだと思う？」 instead of giving the answer at once."
+          },
+          {
+            "zh": "忙时随口回答「そういうものなの」是作者想改变的做法，没有说可以不回答。",
+            "en": "Brushing questions off with 「そういうものなの」 is the habit the writer is moving away from; he never says not answering is fine."
+          },
+          {
+            "zh": "作者说「正しくなくてもかまわない」，答错也没关系。",
+            "en": "The writer says 「正しくなくてもかまわない」 — wrong answers are fine."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-213",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、取引先から届いたメールです。",
+    "passage": "株式会社ミナミ　購買部　小林様\n\nいつもお世話になっております。北山製作所の吉田です。\nご注文いただいた部品500個の納品についてご連絡いたします。工場の機械が故障したため、10日にすべてをお届けすることが難しくなりました。大変申し訳ございません。\n300個は予定どおり10日にお届けし、残りの200個は17日にお届けしたいと考えております。この形でよろしいかどうか、5日までにお返事をいただけますでしょうか。\n\n北山製作所　吉田",
+    "tr": {
+      "zh": "南方股份有限公司 采购部 小林先生/女士：\n\n一直承蒙关照。我是北山制作所的吉田。\n关于您订购的500个零件的交货，特此联系。由于工厂的机器出了故障，10日全部交货有困难了。非常抱歉。\n我们希望300个按原计划在10日交货，剩下的200个在17日交货。这样安排是否可以，能否请您在5日之前回复？\n\n北山制作所 吉田",
+      "en": "Mr/Ms Kobayashi, Purchasing, Minami Co., Ltd.\n\nThank you as always for your business. This is Yoshida from Kitayama Works.\nI am writing about the delivery of the 500 parts you ordered. Because a machine at our factory has broken down, it has become difficult to deliver all of them on the 10th. We are very sorry.\nWe would like to deliver 300 on the 10th as planned and the remaining 200 on the 17th. Could you let us know by the 5th whether this arrangement is acceptable?\n\nYoshida, Kitayama Works"
+    },
+    "questions": [
+      {
+        "q": "このメールを読んで、小林さんがしなければならないことは何か。",
+        "options": [
+          "部品を二回に分けて受け取ってよいかどうか、5日までに返事をする。",
+          "17日にまとめて受け取れるように、10日の納品を取り消す連絡をする。",
+          "機械の修理が終わるのを待って、17日までに吉田さんに返事をする。",
+          "10日に届いた300個を確認してから、吉田さんに結果を連絡する。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「300個は予定どおり10日にお届けし、残りの200個は17日にお届けしたい」；「この形でよろしいかどうか、5日までにお返事をいただけますでしょうか」\n推理：「この形」指分两次交货（10日300个、17日200个）。吉田请小林在5日之前回复是否可以，所以小林要做的就是在5日前答复。",
+          "en": "Evidence: 「300個は予定どおり10日にお届けし、残りの200個は17日にお届けしたい」; 「この形でよろしいかどうか、5日までにお返事をいただけますでしょうか」\nReasoning: 「この形」 is the split delivery (300 on the 10th, 200 on the 17th). Yoshida asks Kobayashi to say by the 5th whether that is acceptable, so replying by the 5th is what he must do."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "邮件没有提出17日一次交货的方案，也没有要求取消10日的交货。",
+            "en": "The email offers no single delivery on the 17th and doesn't ask him to cancel the 10th."
+          },
+          {
+            "zh": "回复期限是「5日まで」，17日是剩下200个的交货日。",
+            "en": "The reply is due 「5日まで」; the 17th is when the last 200 arrive."
+          },
+          {
+            "zh": "邮件要的是在5日前回复能否分批交货，10日之后再联系就太晚了。",
+            "en": "The email wants an answer on the split by the 5th; contacting him after the 10th is too late."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-214",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "駅やコンビニでは、数百円でビニール傘が買える。急に雨が降っても困らないので便利だが、そのせいで傘を大切にしなくなった人も多いのではないか。\n私も以前は、電車に傘を忘れても取りに行かなかった。また買えばいいと思っていたからだ。ところが、誕生日に友人からきれいな傘をもらってからは、一度も忘れたことがない。降りる前に、自分の傘があるか必ず確かめるようになった。物を大切にするかどうかは、その物への気持ちで決まるのだろう。",
+    "tr": {
+      "zh": "在车站和便利店，几百日元就能买到塑料伞。突然下雨也不用发愁，很方便，但也正因为如此，不再爱惜伞的人恐怕也很多吧。\n我以前也是，把伞忘在电车上也不去取，因为觉得再买一把就行了。可是，自从生日时朋友送了我一把漂亮的伞，我一次也没忘过。下车前一定会确认自己的伞还在。会不会爱惜一样东西，大概取决于对那样东西的感情吧。",
+      "en": "At stations and convenience stores you can buy a plastic umbrella for a few hundred yen. It's handy because a sudden shower is no problem, but perhaps that's exactly why many people no longer take care of their umbrellas.\nI used to be the same: if I left an umbrella on the train, I didn't go back for it, because I thought I could just buy another. But since a friend gave me a beautiful umbrella for my birthday, I've never once forgotten it. I now always check that my umbrella is with me before getting off. Whether we take care of something probably depends on how we feel about it."
+    },
+    "questions": [
+      {
+        "q": "筆者が傘を忘れなくなったのは、なぜか。",
+        "options": [
+          "安いビニール傘は、すぐに壊れてしまうと分かったから",
+          "電車に忘れた傘を取りに行くのが、面倒になったから",
+          "友人にもらった傘なので、大切にしたいと思ったから",
+          "急に雨が降ったとき、傘がなくて困ったことがあるから"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「誕生日に友人からきれいな傘をもらってからは、一度も忘れたことがない」；「物を大切にするかどうかは、その物への気持ちで決まるのだろう」\n推理：转折点是收到朋友送的伞；最后一句说爱不爱惜取决于对东西的感情。所以不再忘伞，是因为那是朋友送的、想好好珍惜。",
+          "en": "Evidence: 「誕生日に友人からきれいな傘をもらってからは、一度も忘れたことがない」; 「物を大切にするかどうかは、その物への気持ちで決まるのだろう」\nReasoning: The turning point is the friend's gift, and the last sentence says care depends on feeling for the object. So he stopped forgetting it because it was a gift he wanted to look after."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有说塑料伞容易坏。",
+            "en": "Nothing says plastic umbrellas break easily."
+          },
+          {
+            "zh": "以前他根本不去取伞，并不是觉得取伞麻烦才不忘。",
+            "en": "He used not to fetch umbrellas at all; trouble fetching them isn't why he stopped forgetting."
+          },
+          null,
+          {
+            "zh": "文中说突然下雨也能马上买到塑料伞，「困らない」。",
+            "en": "The text says a sudden shower is no problem (「困らない」) because umbrellas are cheap to buy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-215",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、マンションの掲示板にはってあるお知らせです。",
+    "passage": "住民の皆様へ\n\n水道管の点検のため、下記の時間、水が出なくなります。\n日時：3月12日（水）10:00〜15:00\n点検中は、トイレの水も流れません。必要な水は、前日までにためておいてください。\nまた、点検が終わった直後は、水が少し濁ることがあります。その場合は、透明になるまでしばらく水を出してからお使いください。なお、濁った水で服が汚れるおそれがありますので、当日は洗濯機を使わないことをおすすめします。\n\n管理会社",
+    "tr": {
+      "zh": "致各位住户：\n\n因检查水管，以下时间将停水。\n时间：3月12日（周三）10:00～15:00\n检查期间厕所也不能冲水。需要的水请在前一天之前储存好。\n另外，检查刚结束时，水可能会有些浑浊。这种情况下，请先放一会儿水，等水变清后再使用。还有，浑浊的水可能会弄脏衣服，建议当天不要使用洗衣机。\n\n物业管理公司",
+      "en": "To all residents:\n\nBecause of an inspection of the water pipes, there will be no water during the following time.\nDate: Wednesday 12 March, 10:00–15:00\nToilets won't flush during the inspection. Please store the water you need by the day before.\nAlso, just after the inspection the water may be a little cloudy. If so, let it run for a while until it is clear before using it. Cloudy water may stain clothes, so we recommend not using your washing machine that day.\n\nManagement company"
+    },
+    "questions": [
+      {
+        "q": "3月12日の16時に水道の水を使う場合、お知らせではどうするように言っているか。",
+        "options": [
+          "点検が終わっているので、いつもどおりすぐに使ってよい。",
+          "まだ水が出ないので、前の日にためておいた水を使う。",
+          "水が濁るので、その日は一日、水道を使わないようにする。",
+          "水が濁っていたら、透明になるまで出してから使う。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「点検が終わった直後は、水が少し濁ることがあります。その場合は、透明になるまでしばらく水を出してからお使いください」\n推理：停水到15点，16点已经恢复供水，但刚结束时水可能浑浊。通知要求浑浊时先放水，等变清再用。当天不建议用的只是洗衣机，不是整个自来水。",
+          "en": "Evidence: 「点検が終わった直後は、水が少し濁ることがあります。その場合は、透明になるまでしばらく水を出してからお使いください」\nReasoning: The water is off until 15:00, so at 16:00 it runs again, but it may be cloudy just after. If so, let it run until clear. Only the washing machine is to be avoided that day, not the tap water as a whole."
+        },
+        "wrong": [
+          {
+            "zh": "通知提醒刚检查完水可能浑浊，浑浊时要先放水，不能说一律马上用。",
+            "en": "The notice warns the water may be cloudy just after; if so, run it first — not always use it straight away."
+          },
+          {
+            "zh": "停水只到15点，16点已经有水了。",
+            "en": "The water is off only until 15:00; by 16:00 it's back."
+          },
+          {
+            "zh": "当天建议不用的只是洗衣机，水变清后就可以用。",
+            "en": "Only the washing machine is to be avoided that day; once clear, the water can be used."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-216",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "以前の私は、旅行に行く前に、何時にどこへ行き、どの店で何を食べるかまで、細かく計画を立てていた。時間を無駄にしたくなかったからだ。しかし、計画どおりに動くことに一生懸命で、旅行から帰ると、何を見たのかよく覚えていないことが多かった。\nそこで去年は、泊まるホテルだけを決めて、あとは何も決めずに出かけてみた。道に迷って入った小さな食堂で、店の人と長い時間話したことは、今でもはっきり覚えている。",
+    "tr": {
+      "zh": "以前的我，去旅行之前，连几点去哪里、在哪家店吃什么都要制定详细的计划，因为不想浪费时间。但是，我一心只顾着按计划行动，旅行回来后，常常记不清自己看了什么。\n于是去年，我只定好了住的酒店，其他什么都不定就出发了。迷路时走进一家小饭馆，和店里的人聊了很久，这件事我至今还记得清清楚楚。",
+      "en": "I used to plan my trips in detail before leaving, right down to what time I'd go where and what I'd eat at which restaurant, because I didn't want to waste time. But I was so busy following the plan that after coming home I often couldn't remember much of what I'd seen.\nSo last year I decided only on the hotel and set off with nothing else planned. I still clearly remember the long talk I had with the owner of a little restaurant I wandered into after getting lost."
+    },
+    "questions": [
+      {
+        "q": "筆者は、細かく計画を立てた旅行について、どう思っているか。",
+        "options": [
+          "時間を無駄にしなかったので、多くの場所を見ることができた。",
+          "計画どおりに動くことに必死で、見たものが記憶に残らなかった。",
+          "道に迷うことがなかったので、安心して旅行を楽しめた。",
+          "店を前もって調べておいたので、食事がとても楽しかった。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「計画どおりに動くことに一生懸命で、旅行から帰ると、何を見たのかよく覚えていないことが多かった」\n推理：作者订计划是为了不浪费时间，但「しかし」后面说出结果：只顾按计划走，回来后记不清看过什么。选项“拼命按计划行动、没留下记忆”是这句的换说法。",
+          "en": "Evidence: 「計画どおりに動くことに一生懸命で、旅行から帰ると、何を見たのかよく覚えていないことが多かった」\nReasoning: He planned so as not to waste time, but after 「しかし」 comes the result: busy keeping to the plan, he couldn't remember what he'd seen. The option rephrases that sentence."
+        },
+        "wrong": [
+          {
+            "zh": "不浪费时间只是他订计划的目的，结果是记不清看了什么。",
+            "en": "Not wasting time was only his aim; the result was not remembering what he saw."
+          },
+          null,
+          {
+            "zh": "文中没有说订计划的旅行让他安心；迷路是去年不订计划时的事。",
+            "en": "Nothing says planned trips felt reassuring; getting lost happened on last year's unplanned trip."
+          },
+          {
+            "zh": "文中没有说事先查好的店让他吃得开心，留在记忆里的是迷路时进的小饭馆。",
+            "en": "Nothing says the pre-chosen restaurants were enjoyable; what he remembers is the little place he found when lost."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-217",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、会社の社員に届いたメールです。",
+    "passage": "社員各位\n\n総務部の石井です。\n来週の月曜日から、各階のコピー機が新しくなります。新しいコピー機は、社員証をかざさないと使えません。社員証を忘れた場合は、総務部で一日用のカードを借りてください。\nまた、カラーでコピーする場合は、事前に上司の許可が必要になります。白黒のコピーには許可はいりません。\n使い方の説明会を金曜日の16時から3階で行いますので、時間のある方はご参加ください。\n\n総務部　石井",
+    "tr": {
+      "zh": "各位员工：\n\n我是总务部的石井。\n从下周一开始，各楼层的复印机将换成新的。新复印机不刷员工证就不能使用。忘带员工证的，请到总务部借用一日卡。\n另外，彩色复印需要事先获得上司的许可。黑白复印不需要许可。\n周五16点起在3楼举行使用说明会，有时间的人请参加。\n\n总务部 石井",
+      "en": "To all staff:\n\nThis is Ishii from General Affairs.\nFrom next Monday, the copiers on every floor will be replaced. The new copiers can't be used unless you hold your staff ID card over them. If you forget your ID, please borrow a one-day card from General Affairs.\nAlso, colour copies will need your manager's permission in advance. Black-and-white copies don't need permission.\nThere will be a session on how to use them on Friday from 16:00 on the 3rd floor; please come if you have time.\n\nIshii, General Affairs"
+    },
+    "questions": [
+      {
+        "q": "来週、社員証を家に忘れた人が、カラーでコピーをしたい場合、どうしなければならないか。",
+        "options": [
+          "総務部でカードを借りれば、許可がなくてもカラーでコピーできる。",
+          "上司の許可をもらえば、社員証がなくてもそのままコピーできる。",
+          "総務部でカードを借りて、上司の許可ももらってからコピーする。",
+          "金曜日の説明会に出てから、上司の許可をもらってコピーする。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「社員証を忘れた場合は、総務部で一日用のカードを借りてください」；「カラーでコピーする場合は、事前に上司の許可が必要になります」\n推理：这个人有两个情况：忘了员工证，又要彩色复印。忘带证要去总务部借一日卡；彩色复印要事先得到上司许可。两样都要。",
+          "en": "Evidence: 「社員証を忘れた場合は、総務部で一日用のカードを借りてください」; 「カラーでコピーする場合は、事前に上司の許可が必要になります」\nReasoning: Two things apply: no ID card, and a colour copy. Without the card you borrow a one-day card from General Affairs; colour needs the manager's permission first. Both are required."
+        },
+        "wrong": [
+          {
+            "zh": "彩色复印需要「事前に上司の許可」，借了卡也不能省。",
+            "en": "Colour needs 「事前に上司の許可」 even with a borrowed card."
+          },
+          {
+            "zh": "新复印机「社員証をかざさないと使えません」，没有证就要借卡。",
+            "en": "The new machines 「社員証をかざさないと使えません」; without the ID you must borrow a card."
+          },
+          null,
+          {
+            "zh": "说明会是「時間のある方は」参加，不是必须的；而且还要借卡。",
+            "en": "The session is for 「時間のある方」 — optional — and he still needs a card."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-218",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "「やばい」という言葉は、もともと「危ない」「よくない」という意味で使われていた。ところが最近の若い人は、おいしい料理を食べたときや、きれいな景色を見たときにも「やばい」と言う。\nこれを聞いて「言葉が乱れている」と嘆く人もいる。しかし、言葉の意味が時代とともに変わるのは、珍しいことではない。私たちが普通に使っている言葉にも、昔は違う意味だったものがたくさんある。問題があるとすれば、相手や場面を考えずに使うことのほうだろう。",
+    "tr": {
+      "zh": "「やばい」这个词，原本是用来表示“危险”“不好”的意思。可是最近的年轻人，在吃到美味的菜、看到美丽的风景时也会说「やばい」。\n听到这些，有人感叹“语言乱了”。但是，词语的意思随着时代变化，并不稀奇。我们平常使用的词里，也有很多以前是别的意思。如果说有问题的话，问题倒是在于不考虑对象和场合就使用吧。",
+      "en": "The word 'yabai' was originally used to mean 'dangerous' or 'bad'. But young people today also say 'yabai' when they eat delicious food or see a beautiful view.\nSome people hear this and lament that 'the language is falling apart'. But it is nothing unusual for a word's meaning to change over time. Many words we use every day once meant something different. If there is a problem, it is rather in using words without thinking about who you are talking to and the situation."
+    },
+    "questions": [
+      {
+        "q": "筆者の考えに合うものはどれか。",
+        "options": [
+          "言葉の意味が変わること自体は、特別なことではない。",
+          "「やばい」を良い意味で使うのは、言葉の乱れである。",
+          "若い人の新しい言葉は、大人も使ったほうがいい。",
+          "昔の意味を知らない言葉は、使わないほうがいい。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「言葉の意味が時代とともに変わるのは、珍しいことではない」\n推理：作者用「しかし」反驳“语言乱了”的看法，说词义随时代变化并不稀奇，还举出常用词以前意思不同的情况。选项「特別なことではない」＝「珍しいことではない」。",
+          "en": "Evidence: 「言葉の意味が時代とともに変わるのは、珍しいことではない」\nReasoning: With 「しかし」 the writer answers the complaint that language is decaying: meanings changing over time is nothing unusual, and many everyday words once meant something else. 「特別なことではない」 = 「珍しいことではない」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "这是「嘆く人」的看法，作者用「しかし」反驳了。",
+            "en": "That is the view of those who 「嘆く」; the writer rejects it with 「しかし」."
+          },
+          {
+            "zh": "作者没有建议大人也使用；他说要注意对象和场合。",
+            "en": "He doesn't urge adults to use them; he says to think about who and where."
+          },
+          {
+            "zh": "作者说很多常用词以前意思不同，并没有说不知道旧义就不要用。",
+            "en": "He notes many everyday words once meant something else; he never says to avoid words whose old meaning you don't know."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-219",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、自動車教習所の受付にはってあるお知らせです。",
+    "passage": "教習生の皆様へ\n\n教習の予約を変更・キャンセルする場合は、前日の19時までに、受付またはお電話でご連絡ください。インターネットからの変更は、前日の12時までとなります。\n連絡なしで教習を休んだ場合や、当日にキャンセルした場合は、キャンセル料として2,000円をいただきます。\nまた、教習の開始時間に10分以上遅れた場合は、その時間の教習は受けられません。この場合もキャンセル料がかかりますので、ご注意ください。\n\nみどり自動車学校",
+    "tr": {
+      "zh": "致各位学员：\n\n变更或取消驾驶课程预约时，请在前一天19点之前到前台或打电话联系。通过网上变更的，截止到前一天12点。\n无故缺课或当天取消的，将收取2,000日元取消费。\n另外，比课程开始时间迟到10分钟以上的，不能上该时段的课。这种情况也会收取取消费，请注意。\n\n绿色驾驶学校",
+      "en": "To all students:\n\nTo change or cancel a lesson booking, please contact us at reception or by phone by 19:00 on the day before. Changes online are possible until 12:00 on the day before.\nIf you miss a lesson without notice or cancel on the day, a cancellation fee of ¥2,000 will be charged.\nAlso, if you are 10 or more minutes late for the start of a lesson, you cannot take that lesson. The cancellation fee applies in this case too, so please be careful.\n\nMidori Driving School"
+    },
+    "questions": [
+      {
+        "q": "明日の教習を休みたい人が、今日の15時にこのお知らせを見た。キャンセル料を払わずに予約を変更するには、どうすればいいか。",
+        "options": [
+          "今日のうちに、インターネットから予約を変更する。",
+          "明日の朝、教習所の受付で予約を変更する。",
+          "明日、教習が始まる前に電話で連絡する。",
+          "今日の19時までに、受付か電話で連絡する。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「前日の19時までに、受付またはお電話でご連絡ください。インターネットからの変更は、前日の12時までとなります」\n推理：明天的课，“前一天”就是今天。现在是15点，已经过了网上变更的12点；到前台或打电话的期限是19点，还来得及。等到明天就算当天取消，要付取消费。",
+          "en": "Evidence: 「前日の19時までに、受付またはお電話でご連絡ください。インターネットからの変更は、前日の12時までとなります」\nReasoning: For tomorrow's lesson, \"the day before\" is today. It is 15:00, past the 12:00 online deadline, but reception or phone is open until 19:00. Waiting until tomorrow counts as a same-day cancellation and costs the fee."
+        },
+        "wrong": [
+          {
+            "zh": "网上变更截止到前一天12点，现在已经15点了。",
+            "en": "Online changes close at 12:00 the day before; it's already 15:00."
+          },
+          {
+            "zh": "明天变更属于「当日にキャンセル」，要付2,000日元。",
+            "en": "Changing tomorrow is 「当日にキャンセル」 and costs ¥2,000."
+          },
+          {
+            "zh": "明天打电话也是当天取消，同样要付取消费。",
+            "en": "Phoning tomorrow is still a same-day cancellation, so the fee applies."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-220",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "夜遅くまで仕事をするのが当たり前だった私が、朝五時に起きるようになって半年がたつ。始めたころは眠くてつらかったが、今では朝の一時間が一日でいちばん大切な時間になった。\n朝は電話もメールも来ないので、一つのことに集中できる。夜なら二時間かかる仕事が、朝なら一時間で終わることもある。疲れた頭で無理に頑張るより、よく寝た後の頭を使ったほうが、結局は効率がいいのだ。",
+    "tr": {
+      "zh": "以前把工作到深夜当成理所当然的我，开始早上五点起床已经半年了。刚开始的时候又困又难受，但现在早上的一个小时成了一天中最重要的时间。\n早上既没有电话也没有邮件，可以集中做一件事。晚上要花两个小时的工作，早上有时一个小时就做完了。比起用疲惫的头脑硬撑，用睡足之后的头脑，结果效率更高。",
+      "en": "I used to take it for granted that I'd work late into the night, but it has now been six months since I started getting up at five. At first I was sleepy and it was hard, but now that morning hour has become the most important time of my day.\nIn the morning no calls or emails come in, so I can focus on one thing. Work that would take two hours at night sometimes takes only one in the morning. Rather than forcing a tired brain to keep going, using a well-rested one is more efficient in the end."
+    },
+    "questions": [
+      {
+        "q": "朝の一時間が大切な時間になったのは、なぜか。",
+        "options": [
+          "早く起きると、夜より眠くならずに長い時間働けるから",
+          "じゃまが入らず、夜より短い時間で仕事ができるから",
+          "朝のうちに、電話やメールの返事を全部済ませられるから",
+          "夜遅くまで仕事をしても、朝は疲れが残っていないから"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「朝は電話もメールも来ないので、一つのことに集中できる」；「夜なら二時間かかる仕事が、朝なら一時間で終わることもある」\n推理：早上没有电话和邮件打扰（＝「じゃまが入らず」），能集中，同样的工作用的时间比晚上短。这就是早上一小时变重要的原因。",
+          "en": "Evidence: 「朝は電話もメールも来ないので、一つのことに集中できる」; 「夜なら二時間かかる仕事が、朝なら一時間で終わることもある」\nReasoning: No calls or emails in the morning (= 「じゃまが入らず」), so he can focus and the same work takes less time than at night. That is why the hour matters."
+        },
+        "wrong": [
+          {
+            "zh": "作者说的是同样的工作用时更短，不是能工作更长时间。",
+            "en": "He says the same work takes less time, not that he can work longer."
+          },
+          null,
+          {
+            "zh": "早上是「電話もメールも来ない」，不是用来回复电话邮件的时间。",
+            "en": "In the morning 「電話もメールも来ない」; it isn't time for answering them."
+          },
+          {
+            "zh": "作者已经不再工作到深夜，而是早睡早起。",
+            "en": "He no longer works late; he goes to bed early and gets up early."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-221",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、日本語学校の学生に届いたメールです。",
+    "passage": "学生の皆さん\n\n台風が近づいているため、明日の授業はすべてオンラインで行います。学校には来ないでください。\n授業の時間はいつもと同じです。授業が始まる10分前までに、担任の先生から送られるURLで参加してください。\n明日提出する予定だった作文は、あさって学校に持ってきてください。\nなお、電気が止まるなどしてオンラインで参加できなかった場合は、欠席にはなりません。後で担任の先生に連絡してください。\n\nさくら日本語学校　教務課",
+    "tr": {
+      "zh": "各位同学：\n\n因为台风临近，明天的课全部在线上进行。请不要来学校。\n上课时间和平时一样。请在上课前10分钟之前，通过班主任发来的网址进入课堂。\n原定明天交的作文，请后天带到学校来。\n另外，如果因停电等原因无法在线上课，不算缺席。请事后联系班主任。\n\n樱花日语学校 教务科",
+      "en": "Dear students,\n\nBecause a typhoon is approaching, all of tomorrow's classes will be held online. Please do not come to school.\nClass times are the same as usual. Please join by 10 minutes before class starts, using the URL your homeroom teacher will send.\nThe composition that was due tomorrow should be brought to school the day after tomorrow.\nIf you can't join online because of a power cut or similar, it will not count as an absence. Please contact your homeroom teacher afterwards.\n\nAcademic Affairs, Sakura Japanese Language School"
+    },
+    "questions": [
+      {
+        "q": "明日、家の電気が止まって、オンラインの授業に参加できなかった学生は、どうすればいいか。",
+        "options": [
+          "後で担任の先生に、参加できなかったことを連絡する。",
+          "欠席にならないように、あさって学校で同じ授業を受ける。",
+          "授業に出られなかった代わりに、作文をメールで送る。",
+          "電気が戻ったら、すぐに学校へ行って授業を受ける。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「電気が止まるなどしてオンラインで参加できなかった場合は、欠席にはなりません。後で担任の先生に連絡してください」\n推理：「なお」后面正是停电无法上课的情况：不算缺席，只要事后联系班主任。",
+          "en": "Evidence: 「電気が止まるなどしてオンラインで参加できなかった場合は、欠席にはなりません。後で担任の先生に連絡してください」\nReasoning: The sentence after 「なお」 covers exactly this case: it isn't an absence, and the student just contacts the homeroom teacher afterwards."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "停电的情况本来就「欠席にはなりません」，没有说要后天补课。",
+            "en": "A power cut 「欠席にはなりません」 anyway; no make-up class is mentioned."
+          },
+          {
+            "zh": "作文是后天带到学校，也不是缺课的补偿。",
+            "en": "The composition goes to school the day after tomorrow and has nothing to do with missing class."
+          },
+          {
+            "zh": "邮件说「学校には来ないでください」。",
+            "en": "The email says 「学校には来ないでください」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-222",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "ペットショップで子犬を見ると、つい「かわいい、飼いたい」と思ってしまう。私も十年前、そんな気持ちで犬を飼い始めた。\nしかし実際に飼ってみると、毎日の散歩や病院代、旅行に行けないことなど、大変なことが多かった。そして今、年を取った犬の世話をしながら、ペットを飼うということは、その命が終わるまで責任を持つことなのだと感じている。\n「かわいい」と思う気持ちは大切だ。だが、それだけで決めずに、十年後、十五年後の自分の生活も考えてから決めてほしい。",
+    "tr": {
+      "zh": "在宠物店看到小狗，人总会忍不住想“好可爱，想养”。十年前，我也是怀着这样的心情开始养狗的。\n但是真正养了以后，每天遛狗、看病的费用、不能去旅行等等，辛苦的事很多。现在，一边照顾上了年纪的狗，我一边感到，养宠物就意味着要对它的生命负责到最后。\n觉得“可爱”的心情很重要。但是，希望大家不要只凭这一点就决定，而要把十年后、十五年后自己的生活也考虑进去再决定。",
+      "en": "When you see a puppy in a pet shop, you can't help thinking, 'How cute, I want one.' Ten years ago I too started keeping a dog with that feeling.\nBut once I actually had one, there were many hard things: daily walks, vet bills, not being able to travel. And now, looking after my old dog, I feel that keeping a pet means taking responsibility for it until the end of its life.\nThe feeling that something is cute matters. But I'd like people not to decide on that alone, and to think about their own lives ten or fifteen years from now before deciding."
+    },
+    "questions": [
+      {
+        "q": "筆者が一番言いたいことは何か。",
+        "options": [
+          "犬を飼うと大変なことが多いので、飼わないほうがいい。",
+          "年を取った犬の世話は、若い犬の世話よりずっと大変だ。",
+          "ペットを飼う前に、その先の長い生活のことも考えるべきだ。",
+          "「かわいい」と思えないペットは、飼わないほうがいい。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「それだけで決めずに、十年後、十五年後の自分の生活も考えてから決めてほしい」\n推理：作者先承认「かわいい」的心情很重要，再用「だが」转折：不要只凭这一点，要想想十年、十五年后的生活。「〜てほしい」是作者的主张，选项“考虑以后长远的生活”就是这个意思。",
+          "en": "Evidence: 「それだけで決めずに、十年後、十五年後の自分の生活も考えてから決めてほしい」\nReasoning: The writer grants that feeling 'cute' matters, then turns with 「だが」: don't decide on that alone; think of life ten or fifteen years ahead. 「〜てほしい」 carries the main point, which the option restates."
+        },
+        "wrong": [
+          {
+            "zh": "作者说了辛苦，但只是要大家考虑清楚再决定，没有说不要养。",
+            "en": "He mentions the hard parts but only asks people to think before deciding, not to avoid pets."
+          },
+          {
+            "zh": "文中没有比较老狗和小狗哪个更难照顾。",
+            "en": "The text never compares caring for old and young dogs."
+          },
+          null,
+          {
+            "zh": "作者说「かわいい」的心情「大切だ」，但没有说觉得不可爱就不要养。",
+            "en": "He calls the feeling 「大切だ」 but never says not to keep a pet you don't find cute."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-223",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、商店街のお知らせです。",
+    "passage": "お客様へ\n\nいつもあおば商店街をご利用いただき、ありがとうございます。\n現在のポイントカードは、来年3月31日で使えなくなります。4月1日からは、スマートフォンのアプリでポイントがためられるようになります。\n今のカードに残っているポイントは、3月31日までに各店でお使いください。アプリにポイントを移すことはできませんので、ご注意ください。\nアプリの登録のしかたが分からない方は、商店街の事務所でお手伝いします。\n\nあおば商店街",
+    "tr": {
+      "zh": "致各位顾客：\n\n感谢您一直以来光顾青叶商店街。\n现在的积分卡将于明年3月31日停止使用。从4月1日起，可以用手机应用积累积分。\n现在卡里剩余的积分，请在3月31日之前在各店铺使用。积分不能转移到应用里，请注意。\n不知道如何注册应用的顾客，可以到商店街办事处，我们会帮忙。\n\n青叶商店街",
+      "en": "Dear customers,\n\nThank you for always shopping at Aoba Shopping Street.\nThe current point card can no longer be used after 31 March next year. From 1 April, you will be able to collect points with a smartphone app.\nPlease use any points left on your current card at our shops by 31 March. Points cannot be moved to the app, so please be careful.\nIf you don't know how to register for the app, we'll help you at the shopping street office.\n\nAoba Shopping Street"
+    },
+    "questions": [
+      {
+        "q": "今のポイントカードに500ポイント残っている人は、どうすればいいか。",
+        "options": [
+          "4月1日になったら、アプリにポイントを移してもらう。",
+          "商店街の事務所で、ポイントをアプリに移してもらう。",
+          "4月1日から、カードのポイントをアプリで使う。",
+          "3月31日までに、商店街の店でポイントを使う。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「今のカードに残っているポイントは、3月31日までに各店でお使いください。アプリにポイントを移すことはできません」\n推理：卡里剩的积分不能转到应用里，4月起卡也不能用了，所以只能在3月31日之前在各店用掉。办事处帮忙的只是注册应用。",
+          "en": "Evidence: 「今のカードに残っているポイントは、3月31日までに各店でお使いください。アプリにポイントを移すことはできません」\nReasoning: Leftover points can't go to the app, and the card stops working in April, so the only option is to spend them in the shops by 31 March. The office helps only with registering for the app."
+        },
+        "wrong": [
+          {
+            "zh": "通知说「アプリにポイントを移すことはできません」。",
+            "en": "The notice says 「アプリにポイントを移すことはできません」."
+          },
+          {
+            "zh": "办事处帮忙的是注册应用，积分不能转移。",
+            "en": "The office helps with app registration; points can't be transferred."
+          },
+          {
+            "zh": "卡的积分不能转到应用里，4月以后也就用不了了。",
+            "en": "Card points can't move to the app, so after April they can't be used."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-224",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "子どもがテストで百点を取ったとき、「頭がいいね」とほめる親は多いだろう。しかし、ある研究によると、このようなほめ方をされた子どもは、難しい問題を避けるようになることがあるという。失敗すると、頭がいいと思われなくなるのが怖いからだそうだ。\n一方、「よく頑張ったね」と努力をほめられた子どもは、難しい問題にも挑戦しようとする傾向があるらしい。結果より、そこまでの過程をほめることが大切なのかもしれない。",
+    "tr": {
+      "zh": "孩子考试得了一百分时，很多父母会夸“你真聪明”吧。但是据某项研究，被这样夸奖的孩子，有时会变得回避难题。据说是因为害怕一旦失败，就不再被认为聪明了。\n另一方面，被夸“你真努力”、努力受到称赞的孩子，似乎有挑战难题的倾向。比起结果，称赞取得结果之前的过程，也许更重要。",
+      "en": "When a child gets 100 on a test, many parents probably praise them by saying, 'You're so clever.' But according to one study, children praised this way sometimes start avoiding difficult problems. Apparently it's because they're afraid that if they fail, people will no longer think they're clever.\nOn the other hand, children praised for their effort — 'You worked really hard' — seem to tend to take on difficult problems. Perhaps praising the process rather than the result is what matters."
+    },
+    "questions": [
+      {
+        "q": "「このようなほめ方」をされた子どもが難しい問題を避けるのは、なぜか。",
+        "options": [
+          "簡単な問題で百点を取って、またほめてもらいたいから",
+          "失敗して、頭がいいと思われなくなるのが怖いから",
+          "努力をほめてもらえないので、頑張る気がなくなるから",
+          "親にほめられることに慣れて、勉強が面倒になるから"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「失敗すると、頭がいいと思われなくなるのが怖いからだそうだ」\n推理：「このようなほめ方」指夸「頭がいいね」。紧接着的句子用「〜からだそうだ」给出原因：怕失败后不再被认为聪明。选项几乎原样复述了这句话。",
+          "en": "Evidence: 「失敗すると、頭がいいと思われなくなるのが怖いからだそうだ」\nReasoning: 「このようなほめ方」 is praising with 「頭がいいね」. The next sentence gives the reason with 「〜からだそうだ」: fear that failing will stop people thinking them clever. The option restates it."
+        },
+        "wrong": [
+          {
+            "zh": "文中给出的原因是怕失败，没有说想靠简单题再被夸。",
+            "en": "The reason given is fear of failing, not wanting more praise from easy tests."
+          },
+          null,
+          {
+            "zh": "文中没有说失去干劲；原因是怕被认为不聪明。",
+            "en": "Nothing about losing motivation; the reason is fear of not seeming clever."
+          },
+          {
+            "zh": "文中没有提到习惯了被夸、觉得学习麻烦。",
+            "en": "Nothing is said about getting used to praise or finding study tiresome."
+          }
+        ]
+      }
+    ]
   }
 ]

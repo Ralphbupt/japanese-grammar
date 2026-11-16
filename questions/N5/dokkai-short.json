@@ -3,7 +3,7 @@
     "id": "n5-dk-201",
     "type": "short",
     "difficulty": 1,
-    "intro": "マリさんが 学校から かえると、テーブルの 上に お母さんの メモが ありました。",
+    "intro": "マリさんが 学校から かえった とき、テーブルの 上に お母さんの メモが ありました。",
     "passage": "マリへ\n\nお母さんは かいものに 行きます。六時ごろ かえります。\nれいぞうこに ケーキが あります。食べても いいですよ。\nそれから、五時までに いぬに 水を やって ください。\n\n母",
     "kj": "マリへ\n\nお母さんは買い物に行きます。六時ごろ帰ります。\n冷蔵庫にケーキがあります。食べてもいいですよ。\nそれから、五時までに犬に水をやってください。\n\n母",
     "tr": {
@@ -138,7 +138,7 @@
     "id": "n5-dk-206",
     "type": "short",
     "difficulty": 2,
-    "intro": "リンさんが うちへ かえると、ドアに いっしょに すんで いる エマさんの メモが ありました。",
+    "intro": "リンさんが うちへ かえった とき、ドアに いっしょに すんで いる エマさんの メモが ありました。",
     "passage": "リンさんへ\n\nきょう、わたしは 友だちの うちで ばんごはんを 食べますから、わたしの ばんごはんは いりません。十一時ごろ かえります。\nあ、さっき リンさんの お母さんから 電話が ありました。あとで 電話して くださいと 言って いました。\n\nエマ",
     "kj": "リンさんへ\n\n今日、私は友達のうちで晩ご飯を食べますから、私の晩ご飯はいりません。十一時ごろ帰ります。\nあ、さっきリンさんのお母さんから電話がありました。後で電話してくださいと言っていました。\n\nエマ",
     "tr": {
@@ -263,6 +263,305 @@
           { "zh": "六点是聚会原来的开始时间，已经改了，而且不是见面时间。", "en": "Six was the party's old start time, which has changed, and it isn't the meeting time either." },
           { "zh": "七点是聚会新的开始时间，见面要在那之前。", "en": "Seven is the party's new start; they meet before that." },
           { "zh": "邮件里没有七点半；见面在聚会之前的六点半。", "en": "There's no 7:30 in the email; they meet at 6:30, before the party." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-211",
+    "type": "short",
+    "difficulty": 1,
+    "intro": "アパートの エレベーターの 前に この かみが あります。",
+    "passage": "アパートの みなさんへ\n\n二十日（水）の 午前 十時から 十二時まで、エレベーターの チェックを します。その 時間は エレベーターを つかう ことが できません。かいだんを つかって ください。\n午後は つかっても いいです。\n\n一かい　山田",
+    "kj": "アパートの皆さんへ\n\n二十日（水）の午前十時から十二時まで、エレベーターのチェックをします。その時間はエレベーターを使うことができません。階段を使ってください。\n午後は使ってもいいです。\n\n一階　山田",
+    "tr": {
+      "zh": "致公寓的各位：\n\n20号（星期三）上午十点到十二点检查电梯。这段时间不能用电梯，请走楼梯。\n下午可以用。\n\n一楼　山田",
+      "en": "To all residents:\n\nThe lift will be checked on Wednesday the 20th from 10 a.m. to 12 noon. The lift can't be used during that time; please take the stairs.\nYou can use it in the afternoon.\n\n— Yamada, 1st floor"
+    },
+    "questions": [
+      {
+        "q": "二十日の 午前 十一時に 出かける 人は、どう しますか。",
+        "options": ["かいだんで 下へ 行きます", "エレベーターで 下へ 行きます", "十二時まで まってから 出かけます", "午後まで 出かけません"],
+        "okj": ["階段で 下へ 行きます", null, "十二時まで 待ってから 出かけます", null],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「その 時間は エレベーターを つかう ことが できません。かいだんを つかって ください」\n推理：上午十一点在十点到十二点之间，不能用电梯，告示请大家走楼梯。所以这时出门的人走楼梯下去。",
+          "en": "Evidence: 「その 時間は エレベーターを つかう ことが できません。かいだんを つかって ください」\nReasoning: 11 a.m. falls between 10 and 12, when the lift can't be used, and the notice asks people to take the stairs. So someone going out then walks down."
+        },
+        "wrong": [
+          null,
+          { "zh": "十点到十二点「エレベーターを つかう ことが できません」，十一点不能坐电梯。", "en": "From 10 to 12 「エレベーターを つかう ことが できません」, so not at 11." },
+          { "zh": "告示没有让人等，而是请大家「かいだんを つかって ください」。", "en": "The notice doesn't ask anyone to wait; it says 「かいだんを つかって ください」." },
+          { "zh": "告示没有说不能出门，走楼梯就可以出去。", "en": "Nothing says you can't go out; you just use the stairs." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-212",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは リナさんの にっきです。",
+    "passage": "十二月三日（日）　くもり\n\nあしたは あねの たんじょうびです。あねは 青い セーターが ほしいと 言って いましたが、先週 母が 買って、あねに あげました。\nですから、わたしは きょう デパートで 白い ぼうしを 買いました。あした あねに あげます。",
+    "kj": "十二月三日（日）　曇り\n\n明日は姉の誕生日です。姉は青いセーターが欲しいと言っていましたが、先週母が買って、姉にあげました。\nですから、私は今日デパートで白い帽子を買いました。明日姉にあげます。",
+    "tr": {
+      "zh": "12月3日（星期日）　阴\n\n明天是姐姐的生日。姐姐说过想要一件蓝色的毛衣，不过上星期妈妈已经买来送给她了。\n所以我今天在百货商店买了一顶白色的帽子。明天送给她。",
+      "en": "Sunday, 3 December — cloudy\n\nTomorrow is my sister's birthday. She said she wanted a blue sweater, but Mum bought one and gave it to her last week.\nSo today I bought a white hat at the department store. I'll give it to her tomorrow."
+    },
+    "questions": [
+      {
+        "q": "リナさんは どうして セーターを 買いませんでしたか。",
+        "options": ["お母さんが もう あげたから", "あねが セーターは いらないと 言ったから", "デパートに 青い セーターが なかったから", "セーターより ぼうしが 安かったから"],
+        "okj": ["お母さんが もう あげたから", "姉が セーターは いらないと 言ったから", null, "セーターより 帽子が 安かったから"],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「先週 母が 買って、あねに あげました。ですから、わたしは…白い ぼうしを 買いました」\n推理：姐姐想要的毛衣，妈妈上星期已经送了。「ですから」＝“所以”，因为这个，里娜改买了帽子。",
+          "en": "Evidence: 「先週 母が 買って、あねに あげました。ですから、わたしは…白い ぼうしを 買いました」\nReasoning: Mum already gave the sister the sweater she wanted last week. 「ですから」 = \"so\": that is why Rina bought a hat instead."
+        },
+        "wrong": [
+          null,
+          { "zh": "姐姐说的是「青い セーターが ほしい」，是想要，不是不要。", "en": "The sister said 「青い セーターが ほしい」 — she wanted one." },
+          { "zh": "文中没说百货商店没有蓝毛衣。", "en": "Nothing says the store had no blue sweater." },
+          { "zh": "文中没有提价钱。", "en": "Prices are never mentioned." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-213",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "スミスさんの 会社の つくえの 上に この メモが ありました。",
+    "passage": "スミスさん\n\nわたしは きょう 三時に 出かけます。五時ごろ かえります。\n四時に ABC会社の 田中さんが 来ます。田中さんに この ふうとうを わたして ください。それから、田中さんの 電話ばんごうを 聞いて ください。\n\n中村",
+    "kj": "スミスさん\n\n私は今日三時に出かけます。五時ごろ帰ります。\n四時にABC会社の田中さんが来ます。田中さんにこの封筒を渡してください。それから、田中さんの電話番号を聞いてください。\n\n中村",
+    "tr": {
+      "zh": "史密斯：\n\n我今天三点出门，五点左右回来。\n四点ABC公司的田中先生会来。请把这个信封交给田中先生。另外，请问一下田中先生的电话号码。\n\n中村",
+      "en": "Smith —\n\nI'm going out at three today and will be back around five.\nMr Tanaka from ABC Company is coming at four. Please give him this envelope. Also, please ask him for his phone number.\n\n— Nakamura"
+    },
+    "questions": [
+      {
+        "q": "スミスさんは 四時に 何を しますか。",
+        "options": ["田中さんに ふうとうを わたします", "中村さんに ふうとうを わたします", "中村さんに 電話を かけます", "田中さんと いっしょに 出かけます"],
+        "okj": ["田中さんに 封筒を 渡します", "中村さんに 封筒を 渡します", null, null],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「四時に ABC会社の 田中さんが 来ます。田中さんに この ふうとうを わたして ください」\n推理：四点来的是田中先生，中村请史密斯把信封交给他，还要问他的电话号码。",
+          "en": "Evidence: 「四時に ABC会社の 田中さんが 来ます。田中さんに この ふうとうを わたして ください」\nReasoning: Tanaka is the one coming at four, and Nakamura asks Smith to hand him the envelope (and ask his number)."
+        },
+        "wrong": [
+          null,
+          { "zh": "中村三点出门、五点左右才回来，四点不在；信封是给田中的。", "en": "Nakamura is out from three to about five; the envelope is for Tanaka." },
+          { "zh": "便条是请史密斯问田中的电话号码，没有让他给中村打电话。", "en": "Smith is to ask Tanaka for his number, not to phone Nakamura." },
+          { "zh": "三点出门的是中村，便条没说史密斯要和田中出去。", "en": "It's Nakamura who goes out; nothing says Smith leaves with Tanaka." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-214",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "くだものやの 前に この かみが あります。",
+    "passage": "きょうは りんごが 安いです！\n\nりんご　一つ 百円、五つで 四百円です。\nみかん　一つ 五十円です。\nバナナは きょうは ありません。すみません。",
+    "kj": "今日はりんごが安いです！\n\nりんご　一つ百円、五つで四百円です。\nみかん　一つ五十円です。\nバナナは今日はありません。すみません。",
+    "tr": {
+      "zh": "今天苹果便宜！\n\n苹果：一个100日元，五个400日元。\n橘子：一个50日元。\n今天没有香蕉，抱歉。",
+      "en": "Apples are cheap today!\n\nApples: ¥100 each, or five for ¥400.\nMandarins: ¥50 each.\nSorry, no bananas today."
+    },
+    "questions": [
+      {
+        "q": "りんごを 五つと みかんを 二つ 買います。いくらですか。",
+        "options": ["五百円", "六百円", "四百五十円", "四百円"],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「五つで 四百円です」；「みかん　一つ 五十円です」\n推理：苹果买五个是一起400日元，橘子两个是50×2＝100日元，合计500日元。\n容易错：苹果不是100×5＝500日元，五个有优惠价。",
+          "en": "Evidence: 「五つで 四百円です」; 「みかん　一つ 五十円です」\nReasoning: Five apples together cost ¥400, two mandarins ¥50 × 2 = ¥100, so ¥500 in all.\nTrap: The apples aren't ¥100 × 5 = ¥500; five come at the deal price."
+        },
+        "wrong": [
+          null,
+          { "zh": "这是把苹果按一个100日元算成500日元了，但「五つで 四百円」。", "en": "That counts the apples at ¥100 each (¥500), but 「五つで 四百円」." },
+          { "zh": "这是只算了一个橘子，要买的是两个。", "en": "That counts only one mandarin; there are two." },
+          { "zh": "400日元只是五个苹果的钱，还有两个橘子。", "en": "¥400 is just the apples; the two mandarins are extra." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-215",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "ケイトさんは 友だちの ゆみさんから メールを もらいました。",
+    "passage": "ケイトさん\n\nきのうは ありがとう。とても たのしかったです。\nわたし、ケイトさんの へやに 青い かさを わすれました。それは 父に もらった だいじな かさです。\nすみませんが、あした 学校へ もって きて ください。\n\nゆみ",
+    "kj": "ケイトさん\n\n昨日はありがとう。とても楽しかったです。\n私、ケイトさんの部屋に青い傘を忘れました。それは父にもらった大事な傘です。\nすみませんが、明日学校へ持ってきてください。\n\nゆみ",
+    "tr": {
+      "zh": "凯特：\n\n昨天谢谢你，玩得非常开心。\n我把一把蓝色的伞忘在你房间了。那是爸爸给我的很重要的伞。\n不好意思，明天请帮我带到学校来。\n\n由美",
+      "en": "Kate —\n\nThanks for yesterday, it was great fun.\nI left a blue umbrella in your room. It's a special umbrella my dad gave me.\nSorry, but could you bring it to school tomorrow?\n\n— Yumi"
+    },
+    "questions": [
+      {
+        "q": "「それ」は 何ですか。",
+        "options": ["ゆみさんが ケイトさんの へやに わすれた かさ", "ケイトさんが ゆみさんの へやに わすれた かさ", "ゆみさんが お父さんに あげた かさ", "ケイトさんが お父さんに もらった かさ"],
+        "okj": ["ゆみさんが ケイトさんの 部屋に 忘れた 傘", "ケイトさんが ゆみさんの 部屋に 忘れた 傘", "ゆみさんが お父さんに あげた 傘", "ケイトさんが お父さんに もらった 傘"],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「ケイトさんの へやに 青い かさを わすれました。それは 父に もらった だいじな かさです」\n推理：「それ」指前一句说的东西：由美忘在凯特房间里的蓝伞，是她爸爸给她的。",
+          "en": "Evidence: 「ケイトさんの へやに 青い かさを わすれました。それは 父に もらった だいじな かさです」\nReasoning: 「それ」 points back to the previous sentence: the blue umbrella Yumi left in Kate's room, which her father gave her."
+        },
+        "wrong": [
+          null,
+          { "zh": "忘伞的是由美，忘在凯特的房间里，方向反了。", "en": "Yumi left it, in Kate's room — this reverses it." },
+          { "zh": "「父に もらった」是从爸爸那里得到，不是送给爸爸。", "en": "「父に もらった」 means received from her dad, not given to him." },
+          { "zh": "伞是由美的，是由美的爸爸给的，不是凯特的。", "en": "The umbrella is Yumi's, from Yumi's father, not Kate's." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-216",
+    "type": "short",
+    "difficulty": 1,
+    "intro": "これは 山口さんが 書いた ぶんしょうです。",
+    "passage": "わたしの あさ\n\nわたしは 毎朝 六時に おきて、いぬと さんぽします。\n前は バスで 駅まで 行きましたが、今は あるいて 行きます。三十分 かかりますが、あさの 町は しずかで、とても 気もちが いいです。",
+    "kj": "私の朝\n\n私は毎朝六時に起きて、犬と散歩します。\n前はバスで駅まで行きましたが、今は歩いて行きます。三十分かかりますが、朝の町は静かで、とても気持ちがいいです。",
+    "tr": {
+      "zh": "我的早晨\n\n我每天早上六点起床，和狗一起散步。\n以前我坐公交车去车站，现在走路去。要走三十分钟，不过早上的街道很安静，非常舒服。",
+      "en": "My mornings\n\nI get up at six every morning and take the dog for a walk.\nI used to take the bus to the station, but now I walk. It takes thirty minutes, but the town is quiet in the morning and it feels really good."
+    },
+    "questions": [
+      {
+        "q": "山口さんは 今、どうやって 駅へ 行きますか。",
+        "options": ["バスで 行きます", "あるいて 行きます", "いぬと バスで 行きます", "電車で 行きます"],
+        "okj": [null, "歩いて 行きます", null, null],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「前は バスで 駅まで 行きましたが、今は あるいて 行きます」\n推理：「前は…が、今は…」是以前和现在的对比：以前坐公交车，现在走路去车站。",
+          "en": "Evidence: 「前は バスで 駅まで 行きましたが、今は あるいて 行きます」\nReasoning: 「前は…が、今は…」 contrasts then and now: the bus was before; now Yamaguchi walks to the station."
+        },
+        "wrong": [
+          { "zh": "坐公交车是「前は」，以前的事，现在不坐了。", "en": "The bus was 「前は」 — before, not now." },
+          null,
+          { "zh": "和狗一起的是早上散步，而且现在不坐公交车。", "en": "The dog is for the morning walk, and the bus is no longer used." },
+          { "zh": "文中没有提到电车。", "en": "Trains aren't mentioned." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-217",
+    "type": "short",
+    "difficulty": 3,
+    "intro": "日本語学校の きょうしつに この かみが あります。",
+    "passage": "クラスの パーティー\n\n十二月十日（金）午後 六時から、この きょうしつで パーティーを します。\n一人 一つ、国の りょうりか のみものを もって きて ください。\nパーティーに 来る 人は、五日（日）までに 先生に 言って ください。\nお金は いりません。",
+    "kj": "クラスのパーティー\n\n十二月十日（金）午後六時から、この教室でパーティーをします。\n一人一つ、国の料理か飲み物を持ってきてください。\nパーティーに来る人は、五日（日）までに先生に言ってください。\nお金はいりません。",
+    "tr": {
+      "zh": "班级聚会\n\n12月10日（星期五）下午六点起，在这间教室举行聚会。\n每人请带一样东西：家乡菜或饮料。\n参加的人请在5日（星期日）之前告诉老师。\n不用交钱。",
+      "en": "Class party\n\nWe're having a party in this classroom from 6 p.m. on Friday 10 December.\nPlease bring one thing each: a dish from your country or a drink.\nIf you're coming, tell the teacher by Sunday the 5th.\nIt's free."
+    },
+    "questions": [
+      {
+        "q": "パーティーに 行きたい 人は 何を しなければ なりませんか。",
+        "options": ["五日までに 先生に 言って、りょうりか のみものを もって いきます", "十日までに 先生に 言って、りょうりか のみものを もって いきます", "五日までに 先生に 言って、りょうりと のみものを もって いきます", "五日までに 先生に 言って、パーティーの お金を もって いきます"],
+        "okj": ["五日までに 先生に 言って、料理か 飲み物を 持って いきます", "十日までに 先生に 言って、料理か 飲み物を 持って いきます", "五日までに 先生に 言って、料理と 飲み物を 持って いきます", "五日までに 先生に 言って、パーティーの お金を 持って いきます"],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「一人 一つ、国の りょうりか のみものを もって きて ください」；「五日（日）までに 先生に 言って ください」\n推理：要做两件事：5日之前告诉老师；带家乡菜或饮料中的一样。「か」＝“或者”，带一样就行。",
+          "en": "Evidence: 「一人 一つ、国の りょうりか のみものを もって きて ください」; 「五日（日）までに 先生に 言って ください」\nReasoning: Two things: tell the teacher by the 5th, and bring a dish or a drink. 「か」 = \"or\", so one of them is enough."
+        },
+        "wrong": [
+          null,
+          { "zh": "10日是聚会当天，告诉老师的期限是「五日（日）までに」。", "en": "The 10th is the party itself; the deadline is 「五日（日）までに」." },
+          { "zh": "「一人 一つ」「りょうりか のみもの」，只带一样，不是两样都带。", "en": "「一人 一つ」, 「りょうりか のみもの」 — one item, not both." },
+          { "zh": "告示写着「お金は いりません」，不用带钱。", "en": "The notice says 「お金は いりません」 — no money needed." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-218",
+    "type": "short",
+    "difficulty": 1,
+    "intro": "山田さんは 友だちの ルイさんから はがきを もらいました。",
+    "passage": "山田さん\n\nおげんきですか。わたしは 今 国に かえって います。こちらは まいにち とても あついです。わたしは 毎日 うみで およいで います。\n来月、日本へ 行きます。その とき、国の おかしを もって いきますね。\n\nルイ",
+    "kj": "山田さん\n\nお元気ですか。私は今国に帰っています。こちらは毎日とても暑いです。私は毎日海で泳いでいます。\n来月、日本へ行きます。その時、国のお菓子を持っていきますね。\n\nルイ",
+    "tr": {
+      "zh": "山田：\n\n你好吗？我现在回国了。这边每天都非常热。我每天都在海里游泳。\n下个月我去日本，到时候带家乡的点心给你哦。\n\n路易",
+      "en": "Dear Yamada,\n\nHow are you? I'm back home in my country now. It's very hot here every day, and I go swimming in the sea every day.\nI'm coming to Japan next month. I'll bring you some sweets from home then.\n\n— Louis"
+    },
+    "questions": [
+      {
+        "q": "ルイさんは 来月 何を しますか。",
+        "options": ["国の おかしを 買いに 行きます", "国へ かえって、うみで およぎます", "日本で 山田さんと うみへ 行きます", "日本へ 来て、おかしを わたします"],
+        "okj": ["国の お菓子を 買いに 行きます", "国へ 帰って、海で 泳ぎます", "日本で 山田さんと 海へ 行きます", "日本へ 来て、お菓子を 渡します"],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「来月、日本へ 行きます。その とき、国の おかしを もって いきますね」\n推理：路易下个月来日本，那时把家乡的点心带给山田。站在山田的角度，就是“来日本，交给他点心”。",
+          "en": "Evidence: 「来月、日本へ 行きます。その とき、国の おかしを もって いきますね」\nReasoning: Louis comes to Japan next month and brings sweets from home then. From Yamada's side, that's \"coming to Japan and handing over sweets\"."
+        },
+        "wrong": [
+          { "zh": "点心是从家乡「もって いきます」带去，不是专门去买。", "en": "He 「もって いきます」 brings the sweets; no shopping trip is mentioned." },
+          { "zh": "回国、在海里游泳是现在的事，下个月他要去日本。", "en": "Being home and swimming in the sea is now; next month he goes to Japan." },
+          { "zh": "明信片没说要和山田去海边，游泳是在自己国家。", "en": "Nothing about going to the sea with Yamada; the swimming is back home." },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-219",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "こうえんの 入り口に この かみが あります。",
+    "passage": "ひかりこうえんを つかう みなさんへ\n\n・こうえんの 中で じてんしゃに のらないで ください。\n・いぬと いっしょに 入っても いいです。でも、いぬの ごみは もって かえって ください。\n・よる 九時から あさ 六時までは 入る ことが できません。",
+    "kj": "ひかり公園を使う皆さんへ\n\n・公園の中で自転車に乗らないでください。\n・犬と一緒に入ってもいいです。でも、犬のごみは持って帰ってください。\n・夜九時から朝六時までは入ることができません。",
+    "tr": {
+      "zh": "致使用光公园的各位：\n\n・请不要在公园里骑自行车。\n・可以带狗进来，但是狗的垃圾请带回家。\n・晚上九点到早上六点不能进入。",
+      "en": "To users of Hikari Park:\n\n- Please don't ride bicycles in the park.\n- Dogs are welcome, but please take your dog's waste home.\n- The park is closed from 9 p.m. to 6 a.m."
+    },
+    "questions": [
+      {
+        "q": "この こうえんで して いい ことは どれですか。",
+        "options": ["いぬと いっしょに さんぽします", "こうえんの 中で じてんしゃに のります", "よる 十時に こうえんへ 入ります", "いぬの ごみを こうえんに おいて かえります"],
+        "okj": ["犬と 一緒に 散歩します", "公園の 中で 自転車に 乗ります", "夜 十時に 公園へ 入ります", "犬の ごみを 公園に 置いて 帰ります"],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「いぬと いっしょに 入っても いいです」\n推理：「〜ても いいです」表示允许，可以带狗进公园散步。其他三项都是告示禁止或不允许的。",
+          "en": "Evidence: 「いぬと いっしょに 入っても いいです」\nReasoning: 「〜ても いいです」 gives permission, so walking a dog in the park is fine. The other three are all ruled out by the notice."
+        },
+        "wrong": [
+          null,
+          { "zh": "「じてんしゃに のらないで ください」，公园里不能骑车。", "en": "「じてんしゃに のらないで ください」 — no cycling in the park." },
+          { "zh": "晚上九点到早上六点「入る ことが できません」，十点不能进。", "en": "From 9 p.m. to 6 a.m. 「入る ことが できません」, so not at 10 p.m." },
+          { "zh": "狗的垃圾要「もって かえって ください」，不能留在公园。", "en": "Dog waste must be 「もって かえって」 — taken home, not left." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-220",
+    "type": "short",
+    "difficulty": 3,
+    "intro": "アンさんは 大学の 先生から メールを もらいました。",
+    "passage": "アンさん\n\n先週 かした 本を、来週の 月曜日までに かえして ください。ほかの 学生も その 本を 読みたいと 言って いますから。\n月曜日は、わたしは 午後から 大学に います。午前中に 来る ときは、わたしの へやの ドアの 前の はこに 入れて ください。\n\n大川",
+    "kj": "アンさん\n\n先週貸した本を、来週の月曜日までに返してください。ほかの学生もその本を読みたいと言っていますから。\n月曜日は、私は午後から大学にいます。午前中に来る時は、私の部屋のドアの前の箱に入れてください。\n\n大川",
+    "tr": {
+      "zh": "安：\n\n上星期借给你的书，请在下星期一之前还给我。因为别的学生也说想看那本书。\n星期一我下午才在学校。如果你上午来，请放进我房间门口的箱子里。\n\n大川",
+      "en": "Ann —\n\nPlease return the book I lent you last week by next Monday; another student wants to read it too.\nOn Monday I'm at the university only from the afternoon. If you come in the morning, please put it in the box outside my office door.\n\n— Okawa"
+    },
+    "questions": [
+      {
+        "q": "アンさんは 月曜日の 午前 十時に 本を かえしに 行きます。どう しますか。",
+        "options": ["ドアの 前の はこに 本を 入れます", "先生に 本を わたします", "ほかの 学生に 本を わたします", "午後に もう 一かい 来て、先生に わたします"],
+        "okj": ["ドアの 前の 箱に 本を 入れます", "先生に 本を 渡します", "ほかの 学生に 本を 渡します", "午後に もう 一回 来て、先生に 渡します"],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「わたしは 午後から 大学に います。午前中に 来る ときは…はこに 入れて ください」\n推理：上午十点老师还不在学校。老师交代：上午来的话就把书放进门口的箱子。",
+          "en": "Evidence: 「わたしは 午後から 大学に います。午前中に 来る ときは…はこに 入れて ください」\nReasoning: At 10 a.m. the teacher isn't there yet, and the email says morning visitors should put the book in the box by the door."
+        },
+        "wrong": [
+          null,
+          { "zh": "老师星期一「午後から」才在学校，上午十点见不到。", "en": "The teacher is in only 「午後から」 on Monday, so not at 10 a.m." },
+          { "zh": "别的学生只是想看这本书，老师没让交给他们。", "en": "The other student only wants to read it; Ann isn't told to give it to them." },
+          { "zh": "邮件说上午来就放进箱子，不用下午再来一趟。", "en": "Morning visitors use the box; no need to come back in the afternoon." }
         ]
       }
     ]
