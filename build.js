@@ -4292,6 +4292,17 @@ ${CSS}
 .qs-type { font-size: .85rem; color: var(--text-muted); margin: 0 0 .4rem; }
 .qs-stem { font-size: 1.05rem; margin: .4rem 0; }
 .qs-opts { margin: .4rem 0 .5rem; padding-left: 1.6rem; }
+.qs-opts li { margin: .25rem 0; }
+.qs-opt { font: inherit; color: inherit; text-align: left; background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .3rem .8rem; cursor: pointer; min-width: 9rem; }
+.qs-opt:hover:not(:disabled) { border-color: var(--ui); background: var(--ui-soft); }
+.qs-opt:disabled { cursor: default; opacity: .75; }
+.qs-opt.qs-right { opacity: 1; border-color: #1a7f4b; box-shadow: inset 0 0 0 1px #1a7f4b; }
+.qs-opt.qs-wrong { opacity: 1; border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); text-decoration: line-through; }
+.qs-verdict { font-weight: 700; margin: .3rem 0 .4rem; }
+.qs-v-ok { color: #1a7f4b; } .qs-v-bad { color: var(--accent); }
+@media (prefers-color-scheme: dark) { :root:not(.theme-light) .qs-v-ok { color: #4cc98a; } :root:not(.theme-light) .qs-opt.qs-right { border-color: #4cc98a; box-shadow: inset 0 0 0 1px #4cc98a; } }
+html.theme-dark .qs-v-ok { color: #4cc98a; } html.theme-dark .qs-opt.qs-right { border-color: #4cc98a; box-shadow: inset 0 0 0 1px #4cc98a; }
+.qs-next { margin: .6rem 0 0; font-weight: 600; }
 .qs-slot { display: inline-block; min-width: 2.2em; border-bottom: 1px solid currentColor; text-align: center; margin: 0 .15em; }
 .qs-passage, .qs-ck { font-size: .95rem; padding: .5rem .8rem; background: var(--surface-2); border-radius: var(--radius); margin: .4rem 0 .6rem; }
 .qs-passage p, .qs-ck p { margin: .3rem 0; }
@@ -4556,6 +4567,17 @@ ${lessonList}</section>`;
     flush();
     return out;
   };
+  // Sample questions: pick → right/wrong, explanation opens, a link to a set
+  // of that type. GA: sample_try (id, type, ok, n = which sample), sample_open
+  // (explanation opened without picking), sample_next (went on to the set).
+  const QS_JS = (en) => `<script>(function(){var r=document.currentScript.parentNode;function ev(n,p){try{if(window.gaEvent)window.gaEvent(n,p)}catch(e){}}
+r.addEventListener('click',function(e){var b=e.target.closest('.qs-opt');if(b){var it=b.closest('.qs-item');if(it.classList.contains('qs-done'))return;var i=+b.getAttribute('data-i'),a=+it.getAttribute('data-ans'),ok=i===a;it.classList.add('qs-done');
+it.querySelectorAll('.qs-opt').forEach(function(x){var k=+x.getAttribute('data-i');x.disabled=true;if(k===a)x.classList.add('qs-right');else if(k===i)x.classList.add('qs-wrong');});
+var v=it.querySelector('.qs-verdict');v.hidden=false;v.className='qs-verdict '+(ok?'qs-v-ok':'qs-v-bad');v.textContent=ok?${JSON.stringify(en ? "✓ Right" : "✓ 答对了")}:${JSON.stringify(en ? "✗ The answer is " : "✗ 正确答案是 ")}+(a+1);
+var d=it.querySelector('details');if(d){d.open=true;d.setAttribute('data-auto','1');}var nx=it.querySelector('.qs-next');if(nx)nx.hidden=false;
+ev('sample_try',{id:it.getAttribute('data-id'),type:it.getAttribute('data-type'),ok:ok,n:[].indexOf.call(r.querySelectorAll('.qs-item'),it)+1});return;}
+var l=e.target.closest('.qs-next a');if(l){ev('sample_next',{type:l.getAttribute('data-type')});}});
+r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'||!d.open||d.getAttribute('data-auto'))return;var it=d.closest('.qs-item');if(it&&!it.classList.contains('qs-done'))ev('sample_open',{id:it.getAttribute('data-id'),type:it.getAttribute('data-type')});},true);})();</script>`;
   const quizSamplesHtml = (qs, en, bundle) => {
     if (!qs.length) return "";
     const L = (zh, e) => (en ? e : zh), code = en ? "en" : "zh", pr = bundle.practice;
@@ -4571,7 +4593,8 @@ ${lessonList}</section>`;
         const stem = q.stem ? q.stem.replace(/\n/g, "<br>").replace(/\[★\]/g, '<span class="qs-slot">★</span>').replace(/\[_\]/g, '<span class="qs-slot"></span>') : q.q || "";
         if (stem) body += `<p class="qs-stem" lang="ja">${stem}</p>`;
       }
-      body += `<ol class="qs-opts" lang="ja">${q.options.map((o) => `<li>${o}</li>`).join("")}</ol>`;
+      // Options are buttons: pick one to see right/wrong and the explanation (QS_JS).
+      body += `<ol class="qs-opts" lang="ja">${q.options.map((o, i) => `<li><button type="button" class="qs-opt" data-i="${i}">${o}</button></li>`).join("")}</ol>`;
       const okj = (i) => (q.okj && q.okj[i] ? `（${q.okj[i]}）` : "");
       let ans = q.type === "narabe"
         ? `<p><b>${L("★ 处：", "★ is ")}${q.answer + 1}</b> <span lang="ja">${q.options[q.answer]}</span></p>${q.order ? `<p lang="ja">${L("顺序：", "Order: ")}${q.order.map((i) => q.options[i]).join(" → ")}</p>` : ""}`
@@ -4582,9 +4605,10 @@ ${lessonList}</section>`;
       ans += `<p>${sExpl(sText(q.why, code))}</p>`;
       const wrong = (q.wrong || []).map((w, i) => (w && sText(w, code) ? `<li><b lang="ja">${i + 1} ${q.options[i]}</b> — ${sExpl(sText(w, code))}</li>` : "")).join("");
       if (wrong && q.type !== "narabe") ans += `<ul>${wrong}</ul>`;
-      return `<div class="qs-item"><p class="qs-type">${n + 1}. ${sEsc(en ? ty.en : ty.zh)} · <span lang="ja">${sEsc(ty.ja)}</span></p>${body}<details><summary>${L("看答案和解析", "Answer and explanation")}</summary>${ans}</details></div>`;
+      const next = `<p class="qs-next" hidden><a href="?from=sample#type=${sEsc(q.type)}" data-type="${sEsc(q.type)}">${L(`再做一组「${sEsc(ty.zh || "")}」题 →`, `A set of ${sEsc(ty.en || "")} questions →`)}</a></p>`;
+      return `<div class="qs-item" data-id="${sEsc(q.id)}" data-type="${sEsc(q.type)}" data-ans="${q.answer}"><p class="qs-type">${n + 1}. ${sEsc(en ? ty.en : ty.zh)} · <span lang="ja">${sEsc(ty.ja)}</span></p>${body}<p class="qs-verdict" hidden></p><details><summary>${L("看答案和解析", "Answer and explanation")}</summary>${ans}</details>${next}</div>`;
     }).join("");
-    return `<section class="quiz-about quiz-samples"><h2>${L("例题（附答案和解析）", "Sample questions with answers")}</h2><p>${L("从题库里抽的几道题，答案和解析折叠在下面。完整的练习在上面开始。", "A few questions from the bank, with the answers folded underneath. Start the full practice above.")}</p>${items}</section>`;
+    return `<section class="quiz-about quiz-samples"><h2>${L("例题（附答案和解析）", "Sample questions with answers")}</h2><p>${L("从题库里抽的几道题：点一个选项，马上看对错和解析。完整的练习在上面开始。", "A few questions from the bank: pick an option to see if it's right and why. Start the full practice above.")}</p>${items}${QS_JS(en)}</section>`;
   };
   // schema.org Question for each sample (plain text, no furigana).
   const quizSampleSchema = (qs, en) => qs.map((q) => {
