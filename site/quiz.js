@@ -694,12 +694,15 @@
    * so the same question + choice is the same request and can come from cache. */
   // A quiet row near the end of the feedback (AI is used on ~2% of answers):
   // two small secondary buttons and a short hint.
-  function aiBtn(act) {
+  // Right under the explanation, as a tinted bar: GA after 11/13 showed that a
+  // small row at the bottom of the answer screen was close to never clicked
+  // (13–15 readers a day before, 2 after). ok = the reader answered right.
+  function aiBtn(act, ok) {
     if (!window.jpAI) return '';
     act = act || 'ai';
-    return '<p class="q-ai"><button class="q-btn q-btn-sm" data-act="' + act + '">' + ICO_BOT + ' ' + t('AI 讲解', 'Explain with AI') + '</button>' +
-      '<button class="q-btn q-btn-sm" data-act="' + act + '" data-mode="parse">' + t('拆解句子', 'Break down the sentence') + '</button>' +
-      '<span class="q-muted q-ai-hint">' + t('针对你选的选项讲，可以追问', 'about the option you picked; ask follow-ups') + '</span></p>';
+    return '<div class="q-ai"><span class="q-ai-hint">' + (ok ? t('还有不明白的地方？', 'Still unclear?') : t('还没懂为什么错？AI 针对你选的选项讲，可以追问', 'Not sure why yours is wrong? AI explains your pick; ask follow-ups')) + '</span>' +
+      '<span class="q-ai-btns"><button class="q-btn q-ai-main" data-act="' + act + '">' + ICO_BOT + ' ' + t('AI 讲解', 'Explain with AI') + '</button>' +
+      '<button class="q-btn" data-act="' + act + '" data-mode="parse">' + t('拆解句子', 'Break down the sentence') + '</button></span></div>';
   }
   function plainJa(html) {
     var d = document.createElement('div');
@@ -839,12 +842,11 @@
     var mineRow = rows.filter(function (r) { return r.i === choice; })[0];
     var optB = function (i) { return '<b lang="ja">' + (i + 1) + ' ' + q.options[i] + okjOf(q, i) + '</b>'; };
     if (mineRow) h += '<div class="q-minebox"><div class="q-box-k">' + t('你选的 ', 'Your pick: ') + optB(mineRow.i) + '</div><div>' + ex(mineRow.w) + '</div></div>';
-    h += '<div class="q-box-k q-box-ok">' + (q.type === 'narabe' ? t('为什么这样排', 'Why this order') : t('为什么是 ', 'Why it’s ') + optB(q.answer)) + '</div>' + whyHtml(q.why);
+    h += '<div class="q-box-k q-box-ok">' + (q.type === 'narabe' ? t('为什么这样排', 'Why this order') : t('为什么是 ', 'Why it’s ') + optB(q.answer)) + '</div>' + whyHtml(q.why) + aiBtn('ai', ok);
     rows = rows.filter(function (r) { return r !== mineRow; });
     if (rows.length) h += '<div class="q-box-k">' + (mineRow ? t('另外两个选项', 'The other options') : t('其他选项为什么不对', 'Why the others don’t work')).replace('另外两个', rows.length === 2 ? '另外两个' : '其他') + '</div><ul class="q-wrong">' + rows.map(function (r) { return '<li>' + optB(r.i) + ' — ' + ex(r.w) + '</li>'; }).join('') + '</ul>';
     if (!left.length) h += wholeHtml(q, D.passages);
     h += pointsHtml(q);
-    h += aiBtn();
     h += '<details class="q-report"><summary>' + t('这题有问题？', 'Something wrong with this question?') + '</summary>' +
       [['answer', '答案不对', 'The answer is wrong'], ['two', '有两个对的', 'Two options work'], ['stem', '题目不通顺', 'The question reads badly'], ['other', '其他', 'Something else']]
         .map(function (r) { return '<button class="q-btn" data-act="report" data-k="' + r[0] + '">' + t(r[1], r[2]) + '</button>'; }).join(' ') +
@@ -1317,7 +1319,7 @@
           var qq = {}; for (var x in q) qq[x] = q[x]; for (var y in kq) qq[y] = kq[y];
           if (isCk(q)) {
             var again = q.passage && shownP[q.passage]; if (q.passage) shownP[q.passage] = 1;
-            h += '<div class="q-card q-revcard"><p class="q-prob"><b>' + (si + 1) + '-' + p.no + '</b> ' + esc(test.types[p.type].ja) + '<span class="q-qno">' + ckNo(p, id) + '番</span></p>' + ckReview(qq, a, again) + '<p>' + favBtn(q) + '</p>' + aiBtn('m-ai').replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
+            h += '<div class="q-card q-revcard"><p class="q-prob"><b>' + (si + 1) + '-' + p.no + '</b> ' + esc(test.types[p.type].ja) + '<span class="q-qno">' + ckNo(p, id) + '番</span></p>' + ckReview(qq, a, again) + '<p>' + favBtn(q) + '</p>' + aiBtn('m-ai', ok).replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
             return;
           }
           h += '<div class="q-card q-revcard">';
@@ -1328,7 +1330,7 @@
           h += '<div class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '"><span class="q-vtext">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 猜对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</span><span class="q-vtools">' + favBtn(q) + '</span></div>';
           h += '<div class="q-explain">' + whyHtml(kq.why) + (q.type !== 'narabe' ? '<ul class="q-wrong">' + kq.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + q.options[i] + okjOf(qq, i) + '</b> — ' + ex(w) + '</li>' : ''; }).join('') + '</ul>' : '') +
             kjHtml(qq) + (kq.tr ? '<p class="q-muted">' + esc(bi(kq.tr)) + '</p>' : '') + (lastOfP ? wholeHtml(qq, key.passages, false) : '') + '</div>' +
-            aiBtn('m-ai').replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
+            aiBtn('m-ai', ok).replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
         });
       });
     });
