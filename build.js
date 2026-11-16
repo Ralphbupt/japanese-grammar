@@ -147,7 +147,9 @@ const AUDIO_ORIGIN = /^https?:/.test(AUDIO_BASE) ? " " + new URL(AUDIO_BASE).ori
 // GA (window.jpAB.up()). Loaded deferred, before quiz.js; if it fails to load,
 // every page works as without it. AB_SRC= (empty) builds without it,
 // AB_SRC=http://localhost:8767/ab.js tests a local copy.
-const AB_SRC = process.env.AB_SRC !== undefined ? process.env.AB_SRC : "https://ab.jpnotes.dev/ab.js";
+// ?v= only to step past copies browsers cached before 2026-11-16 18:30, when the zone
+// stretched ab.js's cache to 4 h; the Worker ignores the query.
+const AB_SRC = process.env.AB_SRC !== undefined ? process.env.AB_SRC : "https://ab.jpnotes.dev/ab.js?v=2";
 const AB_ORIGIN = AB_SRC ? " " + new URL(AB_SRC).origin : "";
 const AB_LOADER = AB_SRC ? `<script src="${AB_SRC}" defer></script>` : "";
 // Content-Security-Policy connect-src allowlist: the browser itself refuses
