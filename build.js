@@ -142,6 +142,14 @@ const SETTINGS_SCRIPT = `<script src="${SITE_PATH}settings-modal.js?v=${SETTINGS
 // for audio that isn't uploaded yet.
 const AUDIO_BASE = (process.env.AUDIO_BASE || "https://audio.jpnotes.dev").replace(/\/$/, "");
 const AUDIO_ORIGIN = /^https?:/.test(AUDIO_BASE) ? " " + new URL(AUDIO_BASE).origin : "";
+// Experiments: a small script from ab.jpnotes.dev (its source is not in this
+// repo). It may register hooks (window.jpQuizHooks) and reports its groups to
+// GA (window.jpAB.up()). Loaded deferred, before quiz.js; if it fails to load,
+// every page works as without it. AB_SRC= (empty) builds without it,
+// AB_SRC=http://localhost:8767/ab.js tests a local copy.
+const AB_SRC = process.env.AB_SRC !== undefined ? process.env.AB_SRC : "https://ab.jpnotes.dev/ab.js";
+const AB_ORIGIN = AB_SRC ? " " + new URL(AB_SRC).origin : "";
+const AB_LOADER = AB_SRC ? `<script src="${AB_SRC}" defer></script>` : "";
 // Content-Security-Policy connect-src allowlist: the browser itself refuses
 // fetch/XHR/beacon to any origin not listed here, even if a script on the page
 // were compromised. The AI host is parsed from site/ai-assistant.js (only the
@@ -158,7 +166,7 @@ const AI_PROVIDER_HOSTS = [...new Set(
 // Inline scripts stay allowed — the pages are built with many of them — but a
 // script or image from any other host is refused, so an injected tag can't
 // load code or leak data (an <img> beacon) elsewhere.
-const CSP_META = `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://giscus.app https://accounts.google.com/gsi/client https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://giscus.app https://accounts.google.com/gsi/style; img-src 'self' data: blob:; media-src 'self' blob:${AUDIO_ORIGIN}; font-src 'self' data:; frame-src https://giscus.app https://accounts.google.com/gsi/; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; connect-src 'self' ${ACCOUNT_API} https://cloudflareinsights.com https://accounts.google.com/gsi/ https://*.google-analytics.com https://*.analytics.google.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">`;
+const CSP_META = `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://giscus.app https://accounts.google.com/gsi/client https://static.cloudflareinsights.com${AB_ORIGIN}; style-src 'self' 'unsafe-inline' https://giscus.app https://accounts.google.com/gsi/style; img-src 'self' data: blob:; media-src 'self' blob:${AUDIO_ORIGIN}; font-src 'self' data:; frame-src https://giscus.app https://accounts.google.com/gsi/; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; connect-src 'self' ${ACCOUNT_API} https://cloudflareinsights.com https://accounts.google.com/gsi/ https://*.google-analytics.com https://*.analytics.google.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">`;
 // Copies of the site (someone rebuilding the repo on their own domain): the
 // host is checked against jpnotes.dev itself — not SITE, which a copy changes —
 // and a copy gets a banner pointing to the original, a canonical link back to
@@ -176,6 +184,17 @@ const THEME_INIT_SCRIPT = `<script>
     if (t === 'dark') c.add('theme-dark');
     else if (t === 'light' || t === 'white' || t === 'sepia') c.add('theme-light');
     if (t === 'white' || t === 'sepia') c.add('tone-' + t);
+  } catch (e) {}
+  // Experiments (ab.jpnotes.dev) that change the look keep their classes and
+  // CSS in jp_ab_early, put on here before the first paint. "pending" hides
+  // what the experiment script will still rebuild, for at most 1.5 s.
+  try {
+    var x = JSON.parse(localStorage.getItem('jp_ab_early') || 'null'), h = document.documentElement;
+    if (x && x.cls) {
+      h.className += ' ' + x.cls;
+      if (x.css) { var st = document.createElement('style'); st.id = 'ab-early'; st.textContent = x.css; document.head.appendChild(st); }
+      if (x.wait) { h.classList.add('ab-pending'); setTimeout(function() { h.classList.remove('ab-pending'); }, 1500); }
+    }
   } catch (e) {}
 })();
 </script>`;
@@ -534,7 +553,7 @@ const SUBSET_PAGES = [
   { id: "vocabulary", group: "moji", levels: ["N5", "N4", "N3", "N2", "N1"] },
 ];
 
-const GTAG_DEFERRED = `<script>
+const GTAG_DEFERRED = AB_LOADER + `<script>
 (function() {
   var ua = navigator.userAgent || '';
   // Skip GA for automation / crawlers / SEO tools — they all match here.
@@ -621,6 +640,23 @@ const GTAG_DEFERRED = `<script>
     if (document.referrer && seq === 1) q.dr = document.referrer;
     if (debug) q._dbg = 1;
     if (KEY_EVENTS.indexOf(name) >= 0) q._c = 1;
+    // Which theme the page is actually shown in (auto resolved through the
+    // system setting) and what the reader chose. GA custom dimensions theme / theme_pref.
+    if (name === 'page_view') {
+      var hc = document.documentElement.classList, pref = store('theme') || 'auto';
+      q['ep.theme'] = hc.contains('theme-dark') ? 'dark' : hc.contains('tone-white') ? 'white' : hc.contains('tone-sepia') ? 'sepia' : hc.contains('theme-light') ? 'paper'
+        : (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'paper');
+      q['ep.theme_pref'] = pref === 'light' ? 'paper' : pref;
+    }
+    // Experiment groups the reader has been shown (user property, GA dimension ab).
+    try { var ab = window.jpAB && window.jpAB.up(); if (ab) q['up.ab'] = ab; } catch (e) {}
+    // User properties: signed in, level last practised, streak band (quiz.js writes jp_up).
+    try {
+      q['up.signed_in'] = (JSON.parse(store('jp_acct')) || {}).token ? '1' : '0';
+      var upv = JSON.parse(store('jp_up')) || {};
+      if (upv.lv) q['up.level'] = upv.lv;
+      if (upv.sk) q['up.streak'] = upv.sk;
+    } catch (e) {}
     for (var k in extra) q[k] = extra[k];
     for (var p in params) {
       var v = params[p];
@@ -690,6 +726,72 @@ const GTAG_DEFERRED = `<script>
     if (queue) queue.push([name, params || {}]);
     else send(name, params || {}, { _et: takeEngaged() });
   };
+
+  // ─── Quality signals (2026-11-16) ───
+  var conn = navigator.connection || {}, net = function() { return conn.effectiveType || ''; };
+  // Script errors: the kind and where, never the message (it can quote page text). 3 per page.
+  var errs = 0;
+  function jsErr(type, file, line) {
+    if (++errs > 3) return;
+    window.gaEvent('js_error', { err_type: String(type || 'Error').slice(0, 40), err_file: String(file || '').replace(/[?#].*$/, '').split('/').pop().slice(0, 60) || '(inline)', err_line: line || 0 });
+  }
+  window.addEventListener('error', function(e) {
+    if (e.target && e.target !== window) return;                 // resource errors: audio below
+    jsErr(e.error && e.error.name, e.filename, e.lineno);
+  });
+  window.addEventListener('unhandledrejection', function(e) {
+    var r = e.reason;
+    if (r && r.name === 'NotAllowedError') return;                 // autoplay blocked: not an error
+    jsErr('rejection:' + ((r && r.name) || typeof r), '', 0);
+  });
+  // Audio that didn't load or play: which kind of file (s sentence, q question,
+  // p passage, c listening) and the media error code. 3 per page.
+  var afails = 0, P = HTMLMediaElement.prototype, play0 = P.play;
+  function audioFail(el, code) {
+    if (++afails > 3) return;
+    var f = String(el.currentSrc || el.src || '').split('/').pop();
+    window.gaEvent('audio_fail', { src_kind: f.charAt(0) || '?', code: String(code), net: net() });
+  }
+  P.play = function() {
+    var el = this;
+    if (!el.__jpw) { el.__jpw = 1; el.addEventListener('error', function() { audioFail(el, el.error ? el.error.code : 0); }); }
+    var p = play0.apply(el, arguments);
+    if (p && p.catch) p.catch(function(err) { if (err && err.name === 'NotSupportedError') audioFail(el, 'nosupport'); });
+    return p;
+  };
+  // Web vitals, sent once when the page is hidden: LCP and INP (ms), CLS ×1000.
+  var lcp = 0, cls = 0, inp = 0, vitalsSent = false;
+  function obs(type, fn) { try { new PerformanceObserver(function(l) { l.getEntries().forEach(fn); }).observe({ type: type, buffered: true, durationThreshold: 40 }); } catch (e) {} }
+  obs('largest-contentful-paint', function(en) { lcp = Math.round(en.startTime); });
+  obs('layout-shift', function(en) { if (!en.hadRecentInput) cls += en.value; });
+  obs('event', function(en) { if (en.interactionId && en.duration > inp) inp = Math.round(en.duration); });
+  function vitals() {
+    if (vitalsSent || !lcp) return;
+    vitalsSent = true;
+    var nav = (performance.getEntriesByType && performance.getEntriesByType('navigation')[0]) || {};
+    window.gaEvent('web_vitals', { lcp: lcp, inp: inp, cls: Math.round(cls * 1000), net: net(), nav: nav.type || '' });
+  }
+  document.addEventListener('visibilitychange', function() { if (document.hidden) vitals(); });
+  window.addEventListener('pagehide', vitals);
+  // Sidebar and phone bar: what readers open from the navigation.
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest && e.target.closest('#sidebar a[href], #m-bar a[href]');
+    if (!a) return;
+    var p = a.pathname || '', m;
+    var to = /\\/lesson\\d+\\/$/.test(p) ? 'lesson' : (m = p.match(/\\/n[1-5]-(practice|listening|reading|vocabulary|mock-test|cards)\\/$/)) ? m[1]
+      : /\\/N[1-5]\\/$/.test(p) ? 'overview' : /_grammar_list\\/$/.test(p) ? 'checklist' : /^\\/(zh\\/)?(practice|listening|reading|vocabulary|mock-test|guides)\\/$/.test(p) ? 'hub'
+      : /^\\/(zh\\/)?$/.test(p) ? 'home' : 'other';
+    window.gaEvent('nav_click', { to: to, el: a.getAttribute('data-nav') || (a.classList.contains('nav-item') ? 'item' : 'link') });
+  }, true);
+  // Lessons: how far down the reader got (25 / 50 / 75 / 100 %).
+  if (/\\/lesson\\d+\\/$/.test(location.pathname)) {
+    var marks = [25, 50, 75, 100], hit = 0;
+    window.addEventListener('scroll', function() {
+      var h = document.documentElement.scrollHeight - innerHeight;
+      var d = h > 0 ? (scrollY / h) * 100 : 100;
+      while (hit < marks.length && d >= marks[hit] - 2) window.gaEvent('lesson_read', { depth: marks[hit++] });
+    }, { passive: true });
+  }
 })();
 </script>`;
 

@@ -63,6 +63,7 @@
   function save() {
     S.at = Date.now();
     try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {}
+    upSummary();
     if (window.jpSync) window.jpSync.changed();
   }
   // A question whose answer changed (rev bump) starts over.
@@ -75,7 +76,8 @@
   // For sync.js: the state, and a way to hand back one merged with the copy on
   // the server. The home screen is redrawn; a question on screen is left alone.
   var AT_HOME = false;
-  app.addEventListener('click', function (e) { if (e.target.closest('[data-act]')) AT_HOME = false; }, true);
+  var HOME_CLICK = false;
+  app.addEventListener('click', function (e) { if (e.target.closest('[data-act]')) { HOME_CLICK = AT_HOME; AT_HOME = false; } }, true);
   window.jpQuizState = {
     get: function () { return S; },
     set: function (s) {
@@ -262,6 +264,53 @@
     return ok;
   }
 
+  // GA user properties (read by the sender in build.js): the level last
+  // practised and the current streak, as a band. Nothing else.
+  function upSummary() {
+    if (MOCK || CARDS || !LEVEL) return;
+    try { var k = streak(); localStorage.setItem('jp_up', JSON.stringify({ lv: LEVEL, sk: k === 0 ? '0' : k === 1 ? '1' : k <= 3 ? '2-3' : k <= 7 ? '4-7' : '8+' })); } catch (e) {}
+  }
+  // A set left before its last question: where, and how (back / discard / leave).
+  var quitSent = '';
+  function quit(how) {
+    var s = S.session;
+    if (MOCK || CARDS || !s || !s.ids || s.i >= s.ids.length || (s.level || LEVEL) !== LEVEL) return;
+    var key = s.ids[0] + ':' + s.res.length;
+    if (quitSent === key) return;
+    quitSent = key;
+    var q = Q[s.ids[s.i]];
+    track('quiz_quit', { kind: s.kind, level: LEVEL, pos: s.res.length, size: s.ids.length, type: q ? q.type : '', how: how });
+  }
+  window.addEventListener('pagehide', function () { if (!AT_HOME && !MOCK && !CARDS) quit('leave'); });
+
+  // ─── Hooks for an outside script (experiments; window.jpQuizHooks) ───
+  // hook(name, html) → the hook's html if it returns a string, else html unchanged.
+  var HOOK_API = {
+    level: LEVEL,
+    state: function () { return S; },
+    start: function (kind, k) { startKind(kind, k); },
+    track: function (n, p) { track(n, p); },
+    t: function (zh, en) { return t(zh, en); },
+    streak: function () { return streak(); },
+    setSize: function () { return setSize(); },
+    due: function () { return due().length; },
+    hasListening: function () { return ALL.some(function (q) { return onLevel(q) && isCk(q); }); },
+    // Questions answered today (all, or only listening ones with 'ck').
+    todayAnswers: function (what) {
+      var d0 = new Date(); d0.setHours(0, 0, 0, 0); var from = d0.getTime(), n = 0;
+      Object.keys(S.answers).forEach(function (id) {
+        var q = Q[id]; if (!q || (what === 'ck' && !isCk(q))) return;
+        S.answers[id].forEach(function (a) { if (a.t >= from) n++; });
+      });
+      return n;
+    }
+  };
+  function hook(name, html) {
+    var H = window.jpQuizHooks, f = H && H[name];
+    if (typeof f !== 'function') return html;
+    try { var r = f(html, HOOK_API); return typeof r === 'string' ? r : html; } catch (e) { return html; }
+  }
+
   // ─── Home ───
   function streak() {
     var n = 0, d = new Date();
@@ -362,7 +411,7 @@
         '</p><button class="q-btn" data-act="pre">' + t('练 ' + lv + ' 预习题', 'Practise the ' + lv + ' preview questions') + ' <span class="q-muted">' + pdone + '/' + pre.length + '</span></button></section>';
     }
     // Export / import / clear live in the account dialog (site/sync.js).
-    app.innerHTML = h;
+    app.innerHTML = hook('practiceHome', h);
   }
 
   // ─── Analysis: level, weak types and grammar points (all computed here) ───
@@ -968,6 +1017,7 @@
     var mins = Math.round(res.reduce(function (a, r) { return a + r.ms; }, 0) / 60000);
     var bad = res.filter(function (r) { return !r.ok || r.g; });
     track('quiz_finish', { kind: s.kind, score: ok, size: res.length, level: LEVEL });
+    hook('quizFinish', JSON.stringify({ kind: s.kind, ok: ok, size: res.length, level: LEVEL }));
     var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button></div>' +
       '<div class="q-card q-summary"><p class="q-score">' + ok + ' / ' + res.length + '</p><p class="q-muted">' + t('用时约 ', 'About ') + Math.max(mins, 1) + t(' 分钟', ' min') + '</p>' + (shareBtn() ? '<p class="q-share">' + shareBtn() + '</p>' : '') + syncHint('set');
     if (bad.length) {
@@ -999,6 +1049,8 @@
     if (kind === 'daily') start('daily', daily(n));
     else if (kind === 'type') start('type', subset(function (q) { return onLevel(q) && q.type === k; }, n), k);
     else if (kind === 'pre') start('pre', subset(function (q) { return q.pre; }, n));
+    // Listening only, always 5 (a recording takes far longer than a written question).
+    else if (kind === 'ck') start('ck', subset(function (q) { return onLevel(q) && isCk(q); }, 5));
     else if (kind === 'lesson') start('lesson', subset(function (q) { return lessonOf(q) === k; }, n), k);
     else if (kind === 'weak') {
       var rs = weakRefs().map(function (x) { return x.ref; });
@@ -1892,9 +1944,12 @@
     var el = e.target.closest('[data-act]');
     if (!el || el.disabled) return;
     var act = el.getAttribute('data-act');
+    if (HOME_CLICK && !MOCK && !CARDS && act !== 'size') track('home_click', { act: act, k: String(el.getAttribute('data-k') || '').slice(0, 40), level: LEVEL });
+    HOME_CLICK = false;
+    if (act === 'home') quit('back'); else if (act === 'drop') quit('discard');
     var sub = curs && el.closest('.q-sub');
     if (sub && curs[sub.getAttribute('data-q')]) cur = curs[sub.getAttribute('data-q')];
-    if (act === 'daily' || act === 'type' || act === 'lesson' || act === 'review' || act === 'pre') startKind(act, el.getAttribute('data-k'));
+    if (act === 'daily' || act === 'type' || act === 'lesson' || act === 'review' || act === 'pre' || act === 'ck') startKind(act, el.getAttribute('data-k'));
     else if (act === 'resume') ask();
     else if (act === 'review-list') reviewList();
     else if (act === 'rl-group') { rlGroup = el.getAttribute('data-k') || ''; reviewList(); }
