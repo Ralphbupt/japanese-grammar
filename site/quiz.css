@@ -142,12 +142,17 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-wrong .q-mine b { color: inherit; }
 .q-full { font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif; font-size: 1.08rem; line-height: 2.1; margin: .8rem 0 0 !important; }
 .q-refs a { color: var(--link); }
-.q-ai { margin: .2rem 0 1.1rem; padding: .65rem .8rem; display: flex; align-items: center; justify-content: space-between; gap: .5rem .8rem; flex-wrap: wrap; border-radius: var(--radius); background: var(--ui-soft); }
+.q-ai { margin: .2rem 0 1.1rem; padding: .65rem .8rem; display: flex; align-items: center; justify-content: flex-start; gap: .5rem 1rem; flex-wrap: wrap; border-radius: var(--radius); background: var(--ui-soft); }
 .q-ai-hint { font-size: .88rem; color: var(--text); }
 .q-ai-btns { display: flex; gap: .5rem; flex-wrap: wrap; }
-.q-ai .q-btn { padding: .45em .9em; font-size: .9rem; }
+.q-ai .q-btn { padding: .45em .9em; font-size: .9rem; background: transparent; border-color: var(--border); color: var(--text); }
 .q-ai .q-ai-main { background: var(--ui); border-color: var(--ui); color: var(--ui-on); font-weight: 600; }
 .q-ai .q-ai-main:hover:not(:disabled) { opacity: .9; }
+/* Dark: a pale filled slab would outshine 下一题; ink outline instead. */
+@media (prefers-color-scheme: dark) {
+  :root:not(.theme-light) .q-ai .q-ai-main { background: transparent; border-color: var(--ui); color: var(--ui); }
+}
+html.theme-dark .q-ai .q-ai-main { background: transparent; border-color: var(--ui); color: var(--ui); }
 .q-ai .ico { width: 1.05em; height: 1.05em; }
 .q-report { margin-top: .8rem; font-size: .9em; }
 .q-report summary { cursor: pointer; color: var(--text-muted); }
