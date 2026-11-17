@@ -584,10 +584,13 @@ async function bundleLevel(level, ruby, mock) {
   const refsUsed = {}, lessons = {};
   const out = [];
   // 生词本: the content words a question shows after answering (practice only).
-  const wd = (texts) => {
+  // wd: the words offered, wde: ones met at a lower level (folded), wsp:
+  // [surface, lemma] of every word (easy ones too) in the sentence shown.
+  const wd = (texts, sentence) => {
     if (mock) return {};
-    const w = WORDS.wordsOf(level, texts.filter(Boolean));
-    return w.length ? { wd: w } : {};
+    const w = WORDS.wordsOf(level, texts.filter(Boolean)), hard = w.filter((x) => !WORDS.easy(level, x)), ez = w.filter((x) => WORDS.easy(level, x));
+    const sp = sentence ? WORDS.spansOf(sentence).filter(([, l]) => w.includes(l)) : [];
+    return { ...(hard.length ? { wd: hard } : {}), ...(ez.length ? { wde: ez } : {}), ...(sp.length ? { wsp: sp } : {}) };
   };
   for (const q0 of data.qs) {
     if (q0._kind === "choukai") {
@@ -635,7 +638,7 @@ async function bundleLevel(level, ruby, mock) {
       ...(!mock && aboveLevel(level, q) ? { pre: aboveLevel(level, q) } : {}),
       // Wrong options can be made-up spellings or forms (来遇, かいしい): only
       // the right one, the kanji forms (okj, real words) and 排序's pieces.
-      ...wd([q.passage ? q.q || q.stem : q.kj || q.full || q.stem, ...(q.okj || []), ...(q.type === "narabe" ? q.options : [q.options[q.answer]])]),
+      ...wd([q.passage ? q.q || q.stem : q.kj || q.full || q.stem, ...(q.okj || []), ...(q.type === "narabe" ? q.options : [q.options[q.answer]])], q.passage ? null : q.kj || q.full),
     });
   }
   const passages = {};

@@ -471,19 +471,31 @@ body.quiz-busy .quiz-about { display: none; }
 .q-ck-fold[open] > summary { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
 .q-ck-fold .q-ck-script { margin-top: 0; border-top: 0; border-top-left-radius: 0; border-top-right-radius: 0; }
 
-/* 生词本: word chips after answering, their popup, the list */
+/* 生词本: words marked in the sentence, chips, the word card, the list */
+.q-w { cursor: pointer; text-decoration: underline dotted; text-decoration-color: var(--text-muted); text-underline-offset: .28em; text-decoration-thickness: 1px; border-radius: 3px; }
+.q-w:hover, .q-w.q-wsel { background: var(--ui-soft); text-decoration-color: var(--ui); }
+.q-w.q-won { text-decoration-style: solid; text-decoration-color: var(--ui); }
+.q-whint { margin: .2rem 0 .5rem; font-size: .82rem; }
 .q-words { margin: .6rem 0 .9rem; }
 .q-words > .q-box-k { display: block; margin-bottom: .35rem; }
+.q-wmore > summary, .q-weasy > summary { cursor: pointer; font-size: .85rem; color: var(--text-muted); margin-bottom: .35rem; }
+.q-weasy { margin-top: .45rem; }
 .q-wlist { display: flex; flex-wrap: wrap; gap: .35rem; }
 .q-wchip { font: inherit; font-size: .95rem; line-height: 1.2; padding: .35rem .6rem; min-height: 36px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface-2, transparent); color: var(--text); cursor: pointer; }
-.q-wchip:hover { border-color: var(--ui); }
-.q-wchip.q-wsel { border-color: var(--ui); box-shadow: inset 0 0 0 1px var(--ui); }
+.q-wchip:hover, .q-wchip.q-wsel { border-color: var(--ui); box-shadow: inset 0 0 0 1px var(--ui); }
+.q-wchip.q-won, .q-w.q-won { position: relative; }
 .q-wchip.q-won::after { content: " ✓"; color: var(--ui); font-size: .8em; }
-.q-wpop { margin-top: .5rem; padding: .6rem .75rem; border: 1px solid var(--border); border-radius: 10px; background: var(--panel-bg, var(--surface-2)); }
-.q-wpop-h { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .8rem; justify-content: space-between; }
-.q-wpop-h b { font-size: 1.25rem; }
-.q-wpop-m { margin-top: .3rem; }
-.q-pwords .q-words { margin-top: .4rem; }
+.q-wtip { position: fixed; z-index: 60; padding: .7rem .85rem .8rem; border: 1px solid var(--border); border-radius: 12px; background: var(--card-bg); color: var(--text); box-shadow: 0 8px 28px rgba(0,0,0,.22); }
+.q-wtip-w { font-size: 1.35rem; line-height: 1.7; }
+.q-wtip-m { margin: .15rem 0 .6rem; }
+.q-wtip-add { width: 100%; justify-content: center; }
+.q-wtip-hint { margin-top: .35rem; font-size: .78rem; text-align: center; }
+.q-wsheet { left: 0; right: 0; bottom: 0; border-radius: 16px 16px 0 0; padding: 1rem 1.1rem calc(1rem + env(safe-area-inset-bottom)); max-width: 640px; margin: 0 auto; }
+.q-wsheet .q-wtip-w { font-size: 1.7rem; }
+.q-wsheet .q-wtip-add { min-height: 48px; font-size: 1rem; }
+.q-wtip-x { position: absolute; top: .4rem; right: .5rem; width: 40px; height: 40px; border: 0; background: none; color: var(--text-muted); font-size: 1.5rem; cursor: pointer; }
+.q-btn-sm.q-btn-primary { color: var(--ui-on); }
+
 .q-wordbook { list-style: none; padding: 0; margin: .5rem 0 0; border-top: 1px solid var(--border); }
 .q-wordbook li { display: grid; grid-template-columns: minmax(5.5rem, auto) 1fr auto; gap: .3rem .9rem; align-items: start; padding: .6rem 0; border-bottom: 1px solid var(--border); }
 .q-wb-w { font-size: 1.15rem; }
