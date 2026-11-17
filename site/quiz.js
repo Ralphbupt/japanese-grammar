@@ -49,7 +49,7 @@
   function track(name, p) { try { if (window.gaEvent) window.gaEvent(name, p); } catch (e) {} }
 
   // ─── Storage ───
-  function fresh() { return { v: 1, answers: {}, review: {}, reported: [], session: null, days: {}, prefs: {}, mock: {}, cards: {}, cardDays: {}, fav: {} }; }
+  function fresh() { return { v: 1, answers: {}, review: {}, reported: [], session: null, days: {}, prefs: {}, mock: {}, cards: {}, cardDays: {}, fav: {}, words: {} }; }
   function load() {
     try {
       var s = JSON.parse(localStorage.getItem(KEY));
@@ -152,6 +152,78 @@
   // Mock-test questions (saved in a test's review) are not in the practice bank:
   // they are listed on the mock-test page, per test.
   function mockFavs(prefix) { return Object.keys(S.fav || {}).filter(function (id) { return S.fav[id] > 0 && id.indexOf(prefix) === 0; }); }
+  // ─── 生词本 ───
+  // After answering, a question lists its words (q.wd, build-words.js); a tap
+  // shows reading + meaning from the level's dictionary (D.wsrc, fetched on
+  // the first tap) and adds the word. S.words[word] = { t: added (ms), or
+  // −removed (kept so the removal syncs), q: the question, r, m: reading and
+  // meaning as shown then, so the list works on every level's page }.
+  var WD = null, wdP = null;
+  function loadWords() {
+    var src = D.wsrc && typeof D.wsrc === 'object' ? bi(D.wsrc) : D.wsrc;   // one language's copy after langOnly()
+    if (!wdP) wdP = src ? fetch(src).then(function (r) { return r.json(); }).then(function (d) { WD = d; return d; }) : Promise.resolve(WD = {});
+    return wdP.catch(function () { wdP = null; WD = null; return {}; });
+  }
+  // A kana spelling that is an alias (へや → 部屋) resolves to its entry.
+  function wordOf(w) { var e = WD && WD[w]; return typeof e === 'string' ? e : w; }
+  function hasWord(w) { var x = (S.words || {})[w]; return !!x && x.t > 0; }
+  function myWords() { var W = S.words || {}; return Object.keys(W).filter(function (k) { return W[k].t > 0; }).sort(function (a, b) { return W[b].t - W[a].t; }); }
+  function wordChips(list, qid, label) {
+    if (!list || !list.length) return '';
+    return '<div class="q-words" data-q="' + qid + '"><span class="q-box-k">' + label + '</span><span class="q-wlist">' + list.map(function (w) {
+      return '<button class="q-wchip' + (hasWord(w) ? ' q-won' : '') + '" data-act="word" data-k="' + esc(w) + '" lang="ja">' + esc(w) + '</button>';
+    }).join('') + '</span><div class="q-wpop" hidden></div></div>';
+  }
+  function wordsHtml(q) { return wordChips(q.wd, q.id, t('生词', 'Words') + ' <span class="q-muted">' + t('点词看意思、加入生词本', 'tap for meaning · add to your word list') + '</span>'); }
+  function passageWords(q) {
+    var P = q.passage && D.passages[q.passage];
+    if (!P || !P.wd || !P.wd.length) return '';
+    return '<details class="q-tr q-pwords"><summary>' + t('本文生词', 'Words in the text') + ' <span class="q-muted">' + P.wd.length + '</span></summary>' + wordChips(P.wd, q.id, '') + '</details>';
+  }
+  function wordEntry(w) {
+    var k = wordOf(w), e = WD && WD[k], saved = (S.words || {})[k];
+    var r = e && typeof e === 'object' ? e[0] : saved && saved.r, m = e && typeof e === 'object' && e[1] ? (typeof e[1] === 'object' ? bi(e[1]) : e[1]) : saved && saved.m;
+    return { k: k, r: r && r !== k ? r : '', m: m || '' };
+  }
+  function showWord(chip) {
+    var box = chip.closest('.q-words'), pop = box.querySelector('.q-wpop'), w = chip.getAttribute('data-k');
+    box.querySelectorAll('.q-wchip').forEach(function (c) { c.classList.toggle('q-wsel', c === chip && pop.getAttribute('data-k') !== w); });
+    if (pop.getAttribute('data-k') === w && !pop.hidden) { pop.hidden = true; pop.removeAttribute('data-k'); return; }
+    pop.setAttribute('data-k', w); pop.hidden = false; pop.innerHTML = '<span class="q-muted">…</span>';
+    loadWords().then(function () {
+      if (pop.getAttribute('data-k') !== w) return;
+      var e = wordEntry(w), on = hasWord(e.k);
+      pop.innerHTML = '<div class="q-wpop-h"><b lang="ja">' + (e.r ? '<ruby>' + esc(e.k) + '<rp>(</rp><rt>' + esc(e.r) + '</rt><rp>)</rp></ruby>' : esc(e.k)) + '</b>' +
+        '<button class="q-btn q-btn-sm' + (on ? '' : ' q-btn-primary') + '" data-act="word-add" data-k="' + esc(w) + '">' + (on ? t('✓ 已在生词本 · 移除', '✓ In your list · remove') : t('＋ 加入生词本', '＋ Add to word list')) + '</button></div>' +
+        (e.m ? '<div class="q-wpop-m">' + esc(e.m) + '</div>' : '<div class="q-muted">' + t('释义还在补充中', 'Meaning coming soon') + '</div>');
+    });
+  }
+  function toggleWord(btn) {
+    var box = btn.closest('.q-words'), w = btn.getAttribute('data-k'), e = wordEntry(w), on = hasWord(e.k);
+    S.words = S.words || {};
+    S.words[e.k] = on ? { t: -Date.now(), q: (S.words[e.k] || {}).q } : { t: Date.now(), q: box ? box.getAttribute('data-q') : '', r: e.r, m: e.m };
+    save();
+    track(on ? 'word_remove' : 'word_add', { level: LEVEL });
+    if (box) {
+      app.querySelectorAll('.q-wchip').forEach(function (c) { if (wordOf(c.getAttribute('data-k')) === e.k) c.classList.toggle('q-won', !on); });
+      var pop = box.querySelector('.q-wpop'); pop.removeAttribute('data-k'); var chip = box.querySelector('.q-wchip[data-k="' + w.replace(/"/g, '\\"') + '"]'); if (chip) showWord(chip);
+    }
+  }
+  function wordList() {
+    var list = myWords(), W = S.words;
+    track('word_list', { level: LEVEL, n: list.length });
+    var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button><span>' + t('生词本', 'Word list') + ' · ' + list.length + '</span><span></span></div>';
+    if (!list.length) h += '<p class="q-muted">' + t('还是空的：答完题后，点句子下面的单词，再点“加入生词本”。', 'Empty: after answering, tap a word under the sentence, then “Add to word list”.') + '</p>';
+    else h += '<ul class="q-wordbook">' + list.map(function (k) {
+      var x = W[k], q = x.q && Q[x.q];
+      return '<li><div class="q-wb-w" lang="ja">' + (x.r ? '<ruby>' + esc(k) + '<rp>(</rp><rt>' + esc(x.r) + '</rt><rp>)</rp></ruby>' : esc(k)) + '</div>' +
+        '<div class="q-wb-m">' + esc(x.m || '') + (q && (q.kj || q.full) ? '<div class="q-wb-ctx" lang="ja">' + (q.kj || q.full) + '</div>' : '') + '</div>' +
+        '<button class="q-btn q-btn-sm" data-act="word-del" data-k="' + esc(k) + '" aria-label="' + t('移除', 'Remove') + '">' + t('移除', 'Remove') + '</button></li>';
+    }).join('') + '</ul>';
+    app.innerHTML = '<div class="q-card">' + h + '</div>';
+    toTop();
+  }
+
   // Icon + label; on narrow phones the label hides (CSS), so the name is also in aria-label/title.
   function favBtn(q) { var on = isFav(q.id), l = on ? t('已收藏', 'Saved') : t('收藏', 'Save'); return '<button class="q-btn q-fav" data-act="fav" data-k="' + q.id + '" aria-pressed="' + on + '" aria-label="' + t('收藏', 'Save') + '" title="' + l + '"><span aria-hidden="true">' + (on ? '★' : '☆') + '</span><span class="q-fav-l">' + l + '</span></button>'; }
 
@@ -378,7 +450,10 @@
     // Review list and saved questions: one quiet line while both are empty, else a compact row each.
     var fv = favs().length, mfv = mockFavs(LEVEL.toLowerCase() + '-m').length;
     var mockLink = mfv ? '<a class="q-list-more" href="' + location.pathname.replace(/-(practice|listening|reading|vocabulary)\/$/, '-mock-test/') + '">' + t('模拟题里收藏了 ' + mfv + ' 题 ›', mfv + ' saved in mock tests ›') + '</a>' : '';
-    if (!r && !fv && !mfv) h += '<p class="q-muted q-lists-empty">' + t('错题本、收藏都还是空的：答错的题和点 ☆ 的题会出现在这里', 'Your review list and saved questions are empty: questions you miss and ones you save with ☆ show up here') + '</p>';
+    var wn = myWords().length;
+    var wordRow = '<li' + (wn ? '' : ' class="q-list-empty"') + '><span class="q-list-name">' + t('生词本', 'Word list') + '</span>' + (wn ? '<span class="q-list-n">' + wn + '</span><span class="q-list-acts"><button class="q-btn q-btn-sm" data-act="word-list">' + t('查看', 'See list') + '</button></span>'
+      : '<span class="q-muted">' + t('还是空的：答完点句子下面的单词加入', 'empty: after answering, tap a word under the sentence') + '</span>') + '</li>';
+    if (!r && !fv && !mfv && !wn) h += '<p class="q-muted q-lists-empty">' + t('错题本、收藏、生词本都还是空的：答错的题、点 ☆ 的题、答完点的单词会出现在这里', 'Your review list, saved questions and word list are empty: questions you miss, ones you save with ☆ and words you tap after answering show up here') + '</p>';
     else {
       h += '<ul class="q-lists">';
       h += r ? '<li><span class="q-list-name">' + t('错题本', 'Review list') + '</span><span class="q-list-n">' + r + (d ? ' · <b>' + t(d + ' 到期', d + ' due') + '</b>' : '') + '</span><span class="q-list-acts">' +
@@ -387,7 +462,7 @@
       h += fv ? '<li><span class="q-list-name">' + t('我的收藏', 'Saved') + '</span><span class="q-list-n">' + fv + '</span><span class="q-list-acts">' +
           '<button class="q-btn q-btn-sm" data-act="fav-start">' + t('练习', 'Practise') + '</button><button class="q-btn q-btn-sm" data-act="fav-list">' + t('查看', 'See list') + '</button></span>' + mockLink + '</li>'
         : '<li class="q-list-empty"><span class="q-list-name">' + t('我的收藏', 'Saved') + '</span><span class="q-muted">' + (mfv ? '' : t('还是空的：答完点 ☆ 收藏', 'empty: tap ☆ after answering')) + '</span>' + mockLink + '</li>';
-      h += '</ul>';
+      h += wordRow + '</ul>';
     }
     Object.keys(D.groups).forEach(function (g) {
       var keys = Object.keys(D.types).filter(function (k) { return D.types[k].g === g; });
@@ -886,7 +961,7 @@
     // Order: the sentence, then why the reader's own pick fails (what they want
     // to know first), then why the answer is right, then the other options.
     var sent = kjHtml(q) + (q.tr ? '<p class="q-muted">' + esc(bi(q.tr)) + '</p>' : '');
-    h += '<div class="q-explain">' + (sent ? '<div class="q-sent">' + sent + '</div>' : '');
+    h += '<div class="q-explain">' + (sent ? '<div class="q-sent">' + sent + '</div>' : '') + wordsHtml(q);
     var rows = q.type === 'narabe' ? [] : q.wrong.map(function (w, i) { return w ? { i: i, w: w } : null; }).filter(Boolean);
     var mineRow = rows.filter(function (r) { return r.i === choice; })[0];
     var optB = function (i) { return '<b lang="ja">' + (i + 1) + ' ' + q.options[i] + okjOf(q, i) + '</b>'; };
@@ -894,7 +969,7 @@
     h += '<div class="q-box-k q-box-ok">' + (q.type === 'narabe' ? t('为什么这样排', 'Why this order') : t('为什么是 ', 'Why it’s ') + optB(q.answer)) + '</div>' + whyHtml(q.why) + aiBtn('ai', ok);
     rows = rows.filter(function (r) { return r !== mineRow; });
     if (rows.length) h += '<div class="q-box-k">' + (mineRow ? t('另外两个选项', 'The other options') : t('其他选项为什么不对', 'Why the others don’t work')).replace('另外两个', rows.length === 2 ? '另外两个' : '其他') + '</div><ul class="q-wrong">' + rows.map(function (r) { return '<li>' + optB(r.i) + ' — ' + ex(r.w) + '</li>'; }).join('') + '</ul>';
-    if (!left.length) h += wholeHtml(q, D.passages);
+    if (!left.length) h += wholeHtml(q, D.passages) + passageWords(q);
     h += pointsHtml(q);
     h += '<details class="q-report"><summary>' + t('这题有问题？', 'Something wrong with this question?') + '</summary>' +
       [['answer', '答案不对', 'The answer is wrong'], ['two', '有两个对的', 'Two options work'], ['stem', '题目不通顺', 'The question reads badly'], ['other', '其他', 'Something else']]
@@ -1957,6 +2032,10 @@
     else if (act === 'share') shareScore(el);
     else if (act === 'weak') startKind('weak');
     else if (act === 'fav-list') favList();
+    else if (act === 'word') showWord(el);
+    else if (act === 'word-add') toggleWord(el);
+    else if (act === 'word-list') wordList();
+    else if (act === 'word-del') { var wk = el.getAttribute('data-k'); S.words[wk] = { t: -Date.now(), q: (S.words[wk] || {}).q }; save(); track('word_remove', { level: LEVEL }); wordList(); }
     else if (act === 'fav-group') { favGroup = el.getAttribute('data-k') || ''; favList(); }
     else if (act === 'fav-start') startKind('fav', el.getAttribute('data-k') || '');
     else if (act === 'fav') {

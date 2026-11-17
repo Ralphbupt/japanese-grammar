@@ -43,6 +43,7 @@
  */
 const fs = require("fs");
 const path = require("path");
+const WORDS = require("./build-words.js");
 
 const ROOT = __dirname;
 // The practice / mock test / flashcard pages: until they're public they are
@@ -582,8 +583,18 @@ async function bundleLevel(level, ruby, mock) {
   };
   const refsUsed = {}, lessons = {};
   const out = [];
+  // 生词本: the content words a question shows after answering (practice only).
+  const wd = (texts) => {
+    if (mock) return {};
+    const w = WORDS.wordsOf(level, texts.filter(Boolean));
+    return w.length ? { wd: w } : {};
+  };
   for (const q0 of data.qs) {
-    if (q0._kind === "choukai") { out.push(await choukaiItem(q0, render, rubyMode(level))); continue; }
+    if (q0._kind === "choukai") {
+      const it = await choukaiItem(q0, render, rubyMode(level)), rec = q0._rec;
+      out.push({ ...it, ...wd([q0.scene, q0.question, ...(rec ? rec.questions.map((p) => p.question) : []), ...q0.lines.map((l) => l[1]), ...q0.options]) });
+      continue;
+    }
     const q = shuffled(q0);
     const withRuby = !NO_RUBY.has(q.type) && rubyMode(level);
     const fullRuby = !NO_RUBY.has(q.type);
@@ -622,6 +633,9 @@ async function bundleLevel(level, ruby, mock) {
       why: q.why, wrong: q.wrong,
       rev: q.rev || 1,
       ...(!mock && aboveLevel(level, q) ? { pre: aboveLevel(level, q) } : {}),
+      // Wrong options can be made-up spellings or forms (来遇, かいしい): only
+      // the right one, the kanji forms (okj, real words) and 排序's pieces.
+      ...wd([q.passage ? q.q || q.stem : q.kj || q.full || q.stem, ...(q.okj || []), ...(q.type === "narabe" ? q.options : [q.options[q.answer]])]),
     });
   }
   const passages = {};
@@ -631,7 +645,7 @@ async function bundleLevel(level, ruby, mock) {
   for (const p of data.passages) {
     const pr = rubyMode(level);
     const au = passageAudio(p, blanks[p.id] || {});
-    passages[p.id] = { type: p.type, ...(p.intro ? { intro: await render(p.intro, pr) } : {}), html: await render(p.passage, pr), tr: p.tr, ...(p.kj ? { kj: await render(p.kj, true) } : {}), ...(au ? { au } : {}) };
+    passages[p.id] = { type: p.type, ...(p.intro ? { intro: await render(p.intro, pr) } : {}), html: await render(p.passage, pr), tr: p.tr, ...(p.kj ? { kj: await render(p.kj, true) } : {}), ...(au ? { au } : {}), ...wd([p.intro, p.kj || p.passage]) };
   }
   // The example under a question's explanation: Japanese with furigana, the
   // translation (written in the lesson as a trailing （…）/(…)) apart.
@@ -755,12 +769,14 @@ function withListening(cfg, sections) {
 
 // Every level that has questions → { N5: { practice, mocks: [{ test, key }] }, … }.
 async function buildQuiz(ruby) {
+  await WORDS.init();
   const out = {};
   for (const level of LEVELS) {
     if (!loadLevel(level).qs.length) continue;
     const mocks = [];
     if (MOCK[level]) for (const d of mockSets(level)) mocks.push(await bundleMock(level, ruby, +d.split("-")[1]));
     const practice = await bundleLevel(level, ruby);
+    practice.words = WORDS.dictionary(level);
     // For the analysis page: how the real test is scored, and the pace of the
     // language knowledge and reading sittings.
     if (MOCK[level]) {
