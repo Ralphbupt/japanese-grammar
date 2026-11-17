@@ -170,10 +170,12 @@
   // A kana spelling that is an alias (へや → 部屋) resolves to its entry.
   function wordOf(w) { var e = WD && WD[w]; return typeof e === 'string' ? e : w; }
   function hasWord(w) { var x = (S.words || {})[w]; return !!x && x.t > 0; }
-  // Spaced repetition: x.k = step in WIV (days until the next review), x.due
-  // (ms); 记得 moves a step on, 忘了 goes back to the first; past the last step,
-  // or 太简单, the word is mastered (x.ok). t is the last change, a when added.
-  var WIV = [1, 3, 7, 14, 30, 60], DAY = 864e5;
+  // Spaced repetition: a new word is due at once (study it the same day); x.k =
+  // reviews remembered in a row, each 记得 schedules the next one WIV[k] days
+  // later (当天 → 1 → 3 → 7 → 14 → 30); remembering the 30-day one, or 太简单,
+  // makes it mastered (x.ok). 忘了: k back to 0, due tomorrow. t is the last
+  // change, a when added.
+  var WIV = [1, 3, 7, 14, 30], DAY = 864e5;
   function myWords() { var W = S.words || {}; return Object.keys(W).filter(function (k) { return W[k].t > 0; }).sort(function (a, b) { return (W[b].a || W[b].t) - (W[a].a || W[a].t); }); }
   function learning() { return myWords().filter(function (k) { return !S.words[k].ok; }); }
   function mastered() { return myWords().filter(function (k) { return S.words[k].ok; }); }
@@ -216,7 +218,7 @@
   function toggleWord(btn) {
     var box = btn.closest('.q-words'), w = btn.getAttribute('data-k'), e = wordEntry(w), on = hasWord(e.k);
     S.words = S.words || {};
-    S.words[e.k] = on ? { t: -Date.now(), q: (S.words[e.k] || {}).q } : { t: Date.now(), a: Date.now(), q: box ? box.getAttribute('data-q') : '', r: e.r, m: e.m, k: 0, due: Date.now() + DAY };
+    S.words[e.k] = on ? { t: -Date.now(), q: (S.words[e.k] || {}).q } : { t: Date.now(), a: Date.now(), q: box ? box.getAttribute('data-q') : '', r: e.r, m: e.m, k: 0, due: Date.now() };
     save();
     track(on ? 'word_remove' : 'word_add', { level: LEVEL });
     if (box) {
@@ -272,8 +274,8 @@
   function wordGrade(g) {
     var k = WS.list[WS.i], x = S.words[k], step = x.k || 0;
     if (g === 0) { WS.miss++; if (!WS.seen[k]) WS.list.push(k); WS.seen[k] = 1; setWord(k, { k: 0, due: Date.now() + DAY }); }
-    else if (g === 2 || step + 1 >= WIV.length) { WS.ok++; setWord(k, { ok: 1 }); }
-    else { WS.ok++; setWord(k, { k: step + 1, due: Date.now() + WIV[step + 1] * DAY }); }
+    else if (g === 2 || step >= WIV.length) { WS.ok++; setWord(k, { ok: 1 }); }
+    else { WS.ok++; setWord(k, { k: step + 1, due: Date.now() + WIV[step] * DAY }); }
     track('word_grade', { g: g, level: LEVEL });
     WS.i++; WS.flip = false; wordCard();
   }
@@ -2098,7 +2100,7 @@
     else if (act === 'word-list') wordList();
     else if (act === 'word-del') { var wk = el.getAttribute('data-k'); S.words[wk] = { t: -Date.now(), q: (S.words[wk] || {}).q }; save(); track('word_remove', { level: LEVEL }); wordList(); }
     else if (act === 'word-ok') { setWord(el.getAttribute('data-k'), { ok: 1 }); track('word_mastered', { level: LEVEL }); wordList(); }
-    else if (act === 'word-back') { setWord(el.getAttribute('data-k'), { ok: 0, k: 0, due: Date.now() + DAY }); wordList(); }
+    else if (act === 'word-back') { setWord(el.getAttribute('data-k'), { ok: 0, k: 0, due: Date.now() }); wordList(); }
     else if (act === 'word-study') wordStudy(!!el.getAttribute('data-early'));
     else if (act === 'word-flip') { WS.flip = true; wordCard(); }
     else if (act === 'word-grade') wordGrade(+el.getAttribute('data-k'));
