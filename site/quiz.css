@@ -492,3 +492,13 @@ body.quiz-busy .quiz-about { display: none; }
 @media (max-width: 520px) { .q-wordbook li { grid-template-columns: 1fr auto; } .q-wb-m { grid-column: 1 / -1; grid-row: 2; } }
 .q-revmix { margin-left: 0; }
 .q-revmix input { margin: 0; accent-color: var(--ui); }
+.q-wb-h { font-size: 1rem; margin: 1rem 0 .3rem; }
+.q-wb-done summary { cursor: pointer; }
+.q-wb-due { margin-top: .2rem; font-size: .8rem; color: var(--text-muted); }
+.q-wb-acts { display: inline-flex; flex-wrap: wrap; gap: .35rem; justify-content: flex-end; }
+.q-wcard { text-align: center; padding: 1.6rem .5rem 1rem; }
+.q-wcard-w { font-size: 2.4rem; margin: .4rem 0 1rem; line-height: 1.6; }
+.q-wcard-m { font-size: 1.1rem; margin: 0 0 .6rem; }
+.q-wcard .q-wb-ctx { font-size: .95rem; }
+.q-wcard-acts { display: flex; justify-content: center; flex-wrap: wrap; gap: .6rem; margin-top: 1.2rem; }
+.q-wcard-acts .q-btn { min-width: 6.5rem; min-height: 44px; }
