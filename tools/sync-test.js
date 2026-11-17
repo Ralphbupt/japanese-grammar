@@ -93,6 +93,15 @@ test("saved questions: saving on either device is kept; the later of saving and 
   assert.deepStrictEqual(merge(base({ at: 1 }), b).fav, b.fav);
 });
 
+test("word list: adding on either device is kept; the later of adding and removing wins", () => {
+  const a = base({ words: { 部屋: { t: 1000, q: "a", r: "へや", m: "room" }, 犬: { t: 2000 }, 猫: { t: -5000 } }, at: 1 });
+  const b = base({ words: { 犬: { t: -3000 }, 猫: { t: 4000 }, 机: { t: 6000 } }, at: 2 });
+  const m = merge(a, b);
+  assert.deepStrictEqual(Object.fromEntries(Object.entries(m.words).map(([k, v]) => [k, v.t])), { 部屋: 1000, 犬: -3000, 猫: -5000, 机: 6000 });
+  assert.strictEqual(m.words.部屋.m, "room");
+  assert.deepStrictEqual(merge(base({ at: 1 }), b).words, b.words);
+});
+
 test("session stays this browser's; reported is the union; prefs from the newer side", () => {
   const a = base({ session: { ids: ["q1"] }, reported: ["q1"], prefs: { rate: 1, size: 10 }, at: 1000 });
   const b = base({ session: { ids: ["q9"] }, reported: ["q1", "q2"], prefs: { rate: 1.25 }, at: 2000 });

@@ -4646,6 +4646,9 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
       here !== mockId && mocks.length && `<a href="${SITE_PATH}${mockId}/">⏱ ${en ? `Timed ${level} mock test` : `${level} 模拟题（计时）`}</a>`,
       here !== cardsId && `<a href="${SITE_PATH}${cardsId}/">🗂 ${en ? "Grammar flashcards" : "语法卡片（在线背）"}</a>`,
     ].filter(Boolean).join(" ");
+    // 生词本 dictionary (build-words.js) in its own file, fetched on the first
+    // word tap; each page language's bundle carries its own copy's address.
+    if (practice.words) { practice.wsrc = writeQuizDataByLang(`${lv}-words.json`, practice.words); delete practice.words; }
     const src = writeQuizDataByLang(`${lv}.json`, practice);
     const count = practice.questions.length;
     const meta = {

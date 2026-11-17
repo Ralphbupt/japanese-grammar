@@ -108,6 +108,12 @@
       var x = (a.cardDays || {})[d] || {}, y = (b.cardDays || {})[d] || {};
       out.cardDays[d] = { n: Math.max(x.n || 0, y.n || 0), r: Math.max(x.r || 0, y.r || 0) };
     });
+    // 生词本: per word the later of adding (t > 0) and removing (t < 0).
+    out.words = {};
+    keys(a.words, b.words).forEach(function (w) {
+      var x = (a.words || {})[w], y = (b.words || {})[w];
+      out.words[w] = !x ? y : !y ? x : Math.abs(x.t || 0) >= Math.abs(y.t || 0) ? x : y;
+    });
     var r = rids(a, b); if (r.length) out.fbRids = r;
     out.at = Math.max(a.at || 0, b.at || 0);
     // Fields a newer quiz.js may add: the more recent side's.
