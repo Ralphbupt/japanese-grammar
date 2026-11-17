@@ -490,3 +490,5 @@ body.quiz-busy .quiz-about { display: none; }
 .q-wb-ctx { margin-top: .25rem; font-size: .85rem; color: var(--text-muted); }
 .q-wb-ctx .q-say { display: none; }
 @media (max-width: 520px) { .q-wordbook li { grid-template-columns: 1fr auto; } .q-wb-m { grid-column: 1 / -1; grid-row: 2; } }
+.q-revmix { margin-left: 0; }
+.q-revmix input { margin: 0; accent-color: var(--ui); }

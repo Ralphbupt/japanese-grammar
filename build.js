@@ -6399,7 +6399,7 @@ body.ai-open #tc-ai { border-color: var(--ui); box-shadow: 0 0 0 2px var(--ui-so
 .acct-levels { list-style: none; margin: .6rem 0 0; padding: 0; font-size: .9rem; }
 .acct-levels li { display: flex; align-items: baseline; gap: .8rem; padding: .32rem 0; border-top: 1px solid var(--border); }
 .acct-levels li:first-child { border-top: 0; }
-.acct-levels b { flex: none; width: 2.2em; color: var(--text-strong); }
+.acct-levels b { flex: none; min-width: 2.2em; white-space: nowrap; color: var(--text-strong); }
 .acct-levels span { color: var(--text-muted); }
 /* (#settings-box: the site-wide details and checklist styles must not reach in here) */
 #settings-box .acct-manage { margin: .7rem 0 0; border: 0; border-top: 1px solid var(--border); border-radius: 0; background: none; padding: .6rem 0 0; }
