@@ -119,6 +119,9 @@
     // Deep links from other pages: #type=kanji, #lesson=lesson05, #ref=lesson05.3
     // #start=daily (the home page's try-one card): straight into today's set,
     // unless a set is already under way.
+    // The settings dialog links here; on this same page only the hash changes.
+    window.addEventListener('hashchange', function () { if (location.hash === '#words') { history.replaceState(null, '', location.pathname); wordList(); } });
+    if (location.hash === '#words') { history.replaceState(null, '', location.pathname); return wordList(); }
     var m = location.hash.match(/^#(type|lesson|ref|start)=([\w.]+)$/);
     if (m) {
       history.replaceState(null, '', location.pathname);
@@ -265,6 +268,11 @@
   }
 
   // 今日练习: due reviews, then the weakest types, then new questions.
+  // Whether today's set mixes in due review questions: the reader's choice per
+  // page, by default yes except on reading pages, where a review brings back a
+  // whole passage the reader has already read (feedback 2026-11-17).
+  function revKey() { return 'revMix_' + (D.page || 'all'); }
+  function mixReview() { var p = S.prefs[revKey()]; return p == null ? D.page !== 'reading' : !!p; }
   function daily(n) {
     // A passage brings all of its questions, so it counts as that many, and a
     // set has at most one — the rest stays single questions. A recording with
@@ -286,7 +294,7 @@
       else size++;
       has[q.id] = 1; pick.push(q); perType[q.type] = (perType[q.type] || 0) + 1; return true;
     }
-    due().sort(function (a, b) { return S.review[a.id].due - S.review[b.id].due; }).slice(0, Math.ceil(n * 0.4)).forEach(add);
+    if (mixReview()) due().sort(function (a, b) { return S.review[a.id].due - S.review[b.id].due; }).slice(0, Math.ceil(n * 0.4)).forEach(add);
     var weak = Object.keys(D.types).map(function (k) { return { k: k, a: accuracy(function (q) { return q.type === k; }) }; })
       .filter(function (x) { return x.a; }).sort(function (a, b) { return a.a.pct - b.a.pct; }).slice(0, 2);
     var cap = size + Math.ceil(n * 0.25);
@@ -445,7 +453,8 @@
     h += '<div class="q-today">' +
       '<button class="q-btn q-btn-primary q-btn-big" data-act="daily">' + (only ? ONLY[only][0] : t('今日练习', 'Today’s practice')) + ' · ' + size + t(' 题', ' questions') + '</button>' +
       '<div class="q-today-line"><span class="q-today-info">' + bits.join(' · ') + '</span>' +
-      '<label class="q-size" title="' + t('今日练习和按题型练都按这个数', 'For daily sets and practice by type') + '">' + t('每组', 'Set') + ' <select data-act="size" aria-label="' + t('每组题数', 'Questions per set') + '">' + [5, 10, 20, 50].map(function (n) { return '<option' + (n === size ? ' selected' : '') + '>' + n + '</option>'; }).join('') + '</select>' + t(' 题', '') + '</label></div>' +
+      '<label class="q-size" title="' + t('今日练习和按题型练都按这个数', 'For daily sets and practice by type') + '">' + t('每组', 'Set') + ' <select data-act="size" aria-label="' + t('每组题数', 'Questions per set') + '">' + [5, 10, 20, 50].map(function (n) { return '<option' + (n === size ? ' selected' : '') + '>' + n + '</option>'; }).join('') + '</select>' + t(' 题', '') + '</label>' +
+        '<label class="q-size q-revmix" title="' + t('勾上：到期的错题会混进今日练习；不勾：今日练习只出新题，错题在下面错题本里复习', 'On: due review questions are mixed into today’s set. Off: only new questions; review them from the review list below') + '"><input type="checkbox" data-act="revmix"' + (mixReview() ? ' checked' : '') + '> ' + t('混入错题', 'Mix in reviews') + '</label></div>' +
       (only ? '<p class="q-muted q-only">' + ONLY[only][1] + '<a href="' + location.pathname.replace(/-(listening|reading|vocabulary)/, '-practice') + '">' + t('练习题', 'practice questions') + '</a></p>' : '') + '</div>';
     // Review list and saved questions: one quiet line while both are empty, else a compact row each.
     var fv = favs().length, mfv = mockFavs(LEVEL.toLowerCase() + '-m').length;
@@ -2115,6 +2124,7 @@
     if (sub && curs[sub.getAttribute('data-q')]) cur = curs[sub.getAttribute('data-q')];
     if (act === 'guess') cur.guess = e.target.checked;
     else if (act === 'size') { S.prefs.size = +e.target.value; save(); home(); }
+    else if (act === 'revmix') { S.prefs[revKey()] = e.target.checked; save(); track('review_mix', { on: e.target.checked ? 1 : 0, page: D.page || 'all', level: LEVEL }); }
   });
   document.addEventListener('keydown', function (e) {
     if (!cur || cur.mock || e.target.matches('input, textarea, select') || e.metaKey || e.ctrlKey || e.altKey) return;
