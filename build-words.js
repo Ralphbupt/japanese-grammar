@@ -46,6 +46,34 @@ function clean(text) {
     .replace(/\|/g, " ");
 }
 
+// A token worth a card: its lemma, or null.
+function lemmaOf(w) {
+  if (!KEEP.has(w.pos) || w.word_type !== "KNOWN" || DROP_DETAIL.has(w.pos_detail_1)) return null;
+  const lemma = w.basic_form === "*" ? w.surface_form : w.basic_form;
+  if (!HAS_JA.test(lemma) || /[A-Za-z0-9０-９]/.test(lemma) || STOP.has(lemma) || (glosses()[lemma] || {}).skip) return null;
+  if (/^[぀-ゟ]$/.test(lemma)) return null;   // a lone hiragana is a mis-split
+  if (w.pos === "名詞" && w.pos_detail_1 === "サ変接続" && !/[一-鿿]/.test(lemma) && lemma.length < 2) return null;
+  return lemma;
+}
+
+// Where the words stand in one sentence, in order: [surface, lemma] pairs, so
+// the page can mark them in the sentence it shows (quiz.js linkWords()).
+function spansOf(text) {
+  const out = [];
+  for (const line of clean(text).split(/\n+/)) for (const w of tokenizer.tokenize(line)) {
+    const lemma = lemmaOf(w);
+    if (lemma && w.surface_form.trim()) out.push([w.surface_form, lemma]);
+  }
+  return out;
+}
+
+// A word met at a lower level (in its questions): on this level's pages it
+// goes into a folded "easy words" group. Levels are bundled N5 first.
+function easy(level, lemma) {
+  const order = ["N5", "N4", "N3", "N2", "N1"];
+  return order.slice(0, Math.max(0, order.indexOf(level))).some((lv) => SEEN[lv] && SEEN[lv].has(lemma));
+}
+
 // The content words of some texts, in order, each once. `level` records them
 // for the level's dictionary.
 function wordsOf(level, texts) {
@@ -56,11 +84,8 @@ function wordsOf(level, texts) {
     if (!HAS_JA.test(text)) continue;
     for (const line of text.split(/\n+/)) {
       for (const w of tokenizer.tokenize(line)) {
-        if (!KEEP.has(w.pos) || w.word_type !== "KNOWN" || DROP_DETAIL.has(w.pos_detail_1)) continue;
-        const lemma = w.basic_form === "*" ? w.surface_form : w.basic_form;
-        if (!HAS_JA.test(lemma) || /[A-Za-z0-9０-９]/.test(lemma) || STOP.has(lemma) || (glosses()[lemma] || {}).skip) continue;
-        if (/^[぀-ゟ]$/.test(lemma)) continue;   // a lone hiragana is a mis-split
-        if (w.pos === "名詞" && w.pos_detail_1 === "サ変接続" && !/[一-鿿]/.test(lemma) && lemma.length < 2) continue;
+        const lemma = lemmaOf(w);
+        if (!lemma) continue;
         if (!seen.has(lemma)) { seen.add(lemma); out.push(lemma); }
         if (!map.has(lemma)) map.set(lemma, { r: kata2hira(w.reading && w.reading !== "*" ? (w.basic_form === w.surface_form ? w.reading : readingOfBase(w)) : lemma), ctx: line.trim().slice(0, 80) });
       }
@@ -117,7 +142,7 @@ function dictionary(level) {
   return out;
 }
 
-module.exports = { init, wordsOf, dictionary, glosses, SEEN };
+module.exports = { init, wordsOf, spansOf, easy, dictionary, glosses, SEEN };
 
 // `node build-words.js todo N5 [limit]`: words of a level (first seen at that
 // level, lower levels' words excluded) without a meaning yet, as JSON lines.

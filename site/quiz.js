@@ -185,47 +185,138 @@
     var d = Math.round(((x.due || 0) - Date.now()) / DAY);
     return d <= 0 ? t('今天', 'today') : d === 1 ? t('明天', 'tomorrow') : t(d + ' 天后', 'in ' + d + ' days');
   }
-  function wordChips(list, qid, label) {
-    if (!list || !list.length) return '';
-    return '<div class="q-words" data-q="' + qid + '"><span class="q-box-k">' + label + '</span><span class="q-wlist">' + list.map(function (w) {
-      return '<button class="q-wchip' + (hasWord(w) ? ' q-won' : '') + '" data-act="word" data-k="' + esc(w) + '" lang="ja">' + esc(w) + '</button>';
-    }).join('') + '</span><div class="q-wpop" hidden></div></div>';
+  // Words show two ways: marked in the sentence itself (q.wsp → linkWords(),
+  // a dotted underline) and as chips (the options' words, passages,
+  // transcripts; words met at a lower level, q.wde, folded as 简单词). One
+  // card (.q-wtip) explains a word: on a mouse it follows hover and a click
+  // adds the word; on touch a tap opens it as a sheet at the bottom.
+  var HOVER = !/[?&]touch\b/.test(location.search) && !!window.matchMedia && matchMedia('(hover: hover) and (pointer: fine)').matches;   // ?touch: test the touch sheet with a mouse
+  function chip(w) { return '<button class="q-wchip' + (hasWord(wordOf(w)) ? ' q-won' : '') + '" data-act="word" data-k="' + esc(w) + '" lang="ja">' + esc(w) + '</button>'; }
+  function wordChips(list, easyList, qid, label, folded) {
+    var n = (list || []).length, ne = (easyList || []).length;
+    if (!n && !ne) return '';
+    var main = n ? '<span class="q-wlist">' + list.map(chip).join('') + '</span>' : '';
+    var ez = ne ? '<details class="q-weasy"><summary>' + t('简单词 ', 'Easier words ') + ne + '</summary><span class="q-wlist">' + easyList.map(chip).join('') + '</span></details>' : '';
+    if (folded) return '<details class="q-words q-wmore" data-q="' + qid + '"><summary>' + label + '</summary>' + main + ez + '</details>';
+    return '<div class="q-words" data-q="' + qid + '">' + (label ? '<span class="q-box-k">' + label + '</span>' : '') + main + ez + '</div>';
   }
-  function wordsHtml(q) { return wordChips(q.wd, q.id, t('生词', 'Words') + ' <span class="q-muted">' + t('点词看意思、加入生词本', 'tap for meaning · add to your word list') + '</span>'); }
+  var HINT = function () { return HOVER ? t('鼠标停在带虚线的词上看意思，点一下加入生词本', 'Hover a dotted word for its meaning; click to add it to your word list') : t('点带虚线的词看意思、加入生词本', 'Tap a dotted word for its meaning and to save it'); };
+  function wordsHtml(q) {
+    if (isCk(q) || (!q.wd && !q.wde)) return '';
+    if (q.wsp && q.wsp.length) return '<p class="q-whint q-muted">' + HINT() + '</p>' + wordChips(q.wd, q.wde, q.id, t('本题全部生词（含选项）', 'All words in this question (options too)') + ' <span class="q-muted">' + ((q.wd || []).length + (q.wde || []).length) + '</span>', true);
+    return wordChips(q.wd, q.wde, q.id, t('生词', 'Words') + ' <span class="q-muted">' + (HOVER ? t('鼠标停上去看意思，点一下加入生词本', 'hover for meaning · click to save') : t('点词看意思、加入生词本', 'tap for meaning · save')) + '</span>');
+  }
+  // Listening: the words go inside the transcript, so they show with it.
+  function ckWords(q) { return (q.wd || q.wde) ? wordChips(q.wd, q.wde, q.id, t('原文生词', 'Words in the transcript'), true) : ''; }
   function passageWords(q) {
     var P = q.passage && D.passages[q.passage];
-    if (!P || !P.wd || !P.wd.length) return '';
-    return '<details class="q-tr q-pwords"><summary>' + t('本文生词', 'Words in the text') + ' <span class="q-muted">' + P.wd.length + '</span></summary>' + wordChips(P.wd, q.id, '') + '</details>';
+    if (!P || (!P.wd && !P.wde)) return '';
+    return wordChips(P.wd, P.wde, q.id, (isCk(q) ? t('原文生词', 'Words in the transcript') : t('本文生词', 'Words in the text')) + ' <span class="q-muted">' + ((P.wd || []).length + (P.wde || []).length) + '</span>', true);
+  }
+  // Wrap each [surface, lemma] of q.wsp in the shown sentence, in order; a
+  // boundary inside a <ruby> moves out to the whole ruby.
+  function linkWords(el, q) {
+    if (!el || !q.wsp) return;
+    var from = 0;
+    q.wsp.forEach(function (sp) {
+      var nodes = [], text = '', w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, { acceptNode: function (n) { return n.parentNode.closest('rt, rp, button, .q-kj-label') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT; } });
+      for (var n; (n = w.nextNode());) { nodes.push([n, text.length]); text += n.nodeValue; }
+      var at = text.indexOf(sp[0], from);
+      if (at < 0) return;
+      from = at + sp[0].length;
+      var find = function (pos, end) {
+        for (var i = 0; i < nodes.length; i++) { var a = nodes[i][1], b = a + nodes[i][0].nodeValue.length; if (end ? pos > a && pos <= b : pos >= a && pos < b) return [nodes[i][0], pos - a]; }
+        return null;
+      };
+      var s = find(at, false), e = find(from, true);
+      if (!s || !e || s[0].parentNode.closest('.q-w') || e[0].parentNode.closest('.q-w')) return;
+      var r = document.createRange();
+      var rs = s[0].parentNode.closest('ruby'), re = e[0].parentNode.closest('ruby');
+      if (rs && el.contains(rs)) r.setStartBefore(rs); else r.setStart(s[0], s[1]);
+      if (re && el.contains(re)) r.setEndAfter(re); else r.setEnd(e[0], e[1]);
+      var span = document.createElement('span');
+      span.className = 'q-w' + (hasWord(wordOf(sp[1])) ? ' q-won' : '');
+      span.setAttribute('data-act', 'word'); span.setAttribute('data-k', sp[1]); span.setAttribute('data-q', q.id);
+      span.setAttribute('role', 'button'); span.setAttribute('tabindex', '0');
+      try { span.appendChild(r.extractContents()); r.insertNode(span); } catch (x) {}
+    });
   }
   function wordEntry(w) {
     var k = wordOf(w), e = WD && WD[k], saved = (S.words || {})[k];
     var r = e && typeof e === 'object' ? e[0] : saved && saved.r, m = e && typeof e === 'object' && e[1] ? (typeof e[1] === 'object' ? bi(e[1]) : e[1]) : saved && saved.m;
     return { k: k, r: r && r !== k ? r : '', m: m || '' };
   }
-  function showWord(chip) {
-    var box = chip.closest('.q-words'), pop = box.querySelector('.q-wpop'), w = chip.getAttribute('data-k');
-    box.querySelectorAll('.q-wchip').forEach(function (c) { c.classList.toggle('q-wsel', c === chip && pop.getAttribute('data-k') !== w); });
-    if (pop.getAttribute('data-k') === w && !pop.hidden) { pop.hidden = true; pop.removeAttribute('data-k'); return; }
-    pop.setAttribute('data-k', w); pop.hidden = false; pop.innerHTML = '<span class="q-muted">…</span>';
+  var tip = null, tipFor = null, tipHide = 0;
+  function tipEl() {
+    if (tip && app.contains(tip)) return tip;
+    tip = document.createElement('div'); tip.className = 'q-wtip' + (HOVER ? '' : ' q-wsheet'); tip.hidden = true; tip.setAttribute('role', 'dialog');
+    tip.addEventListener('mouseenter', function () { clearTimeout(tipHide); });
+    tip.addEventListener('mouseleave', function () { hideTipSoon(); });
+    app.appendChild(tip);
+    return tip;
+  }
+  function hideTip() { if (tip) { tip.hidden = true; } if (tipFor) tipFor.classList.remove('q-wsel'); tipFor = null; }
+  function hideTipSoon() { clearTimeout(tipHide); tipHide = setTimeout(hideTip, 250); }
+  function showTip(el) {
+    clearTimeout(tipHide);
+    var w = el.getAttribute('data-k'), box = tipEl();
+    if (tipFor && tipFor !== el) tipFor.classList.remove('q-wsel');
+    tipFor = el; el.classList.add('q-wsel');
+    box.setAttribute('data-k', w); box.setAttribute('data-q', el.getAttribute('data-q') || (el.closest('.q-words') || {}).getAttribute && el.closest('.q-words').getAttribute('data-q') || '');
+    box.hidden = false; box.innerHTML = '<span class="q-muted">…</span>';
+    place(box, el);
     loadWords().then(function () {
-      if (pop.getAttribute('data-k') !== w) return;
+      if (tipFor !== el) return;
       var e = wordEntry(w), on = hasWord(e.k);
-      pop.innerHTML = '<div class="q-wpop-h"><b lang="ja">' + (e.r ? '<ruby>' + esc(e.k) + '<rp>(</rp><rt>' + esc(e.r) + '</rt><rp>)</rp></ruby>' : esc(e.k)) + '</b>' +
-        '<button class="q-btn q-btn-sm' + (on ? '' : ' q-btn-primary') + '" data-act="word-add" data-k="' + esc(w) + '">' + (on ? t('✓ 已在生词本 · 移除', '✓ In your list · remove') : t('＋ 加入生词本', '＋ Add to word list')) + '</button></div>' +
-        (e.m ? '<div class="q-wpop-m">' + esc(e.m) + '</div>' : '<div class="q-muted">' + t('释义还在补充中', 'Meaning coming soon') + '</div>');
+      box.innerHTML = (HOVER ? '' : '<button class="q-wtip-x" data-act="word-close" aria-label="' + t('关闭', 'Close') + '">×</button>') +
+        '<div class="q-wtip-w" lang="ja">' + (e.r ? '<ruby>' + esc(e.k) + '<rp>(</rp><rt>' + esc(e.r) + '</rt><rp>)</rp></ruby>' : esc(e.k)) + '</div>' +
+        (e.m ? '<div class="q-wtip-m">' + esc(e.m) + '</div>' : '<div class="q-muted">' + t('释义还在补充中', 'Meaning coming soon') + '</div>') +
+        '<button class="q-btn' + (on ? '' : ' q-btn-primary') + ' q-wtip-add" data-act="word-add" data-k="' + esc(w) + '">' + (on ? t('✓ 已在生词本（点击移除）', '✓ In your word list (remove)') : t('＋ 加入生词本', '＋ Add to word list')) + '</button>' +
+        (HOVER && !on ? '<div class="q-wtip-hint q-muted">' + t('也可以直接点这个词', 'or just click the word') + '</div>' : '');
+      place(box, el);
     });
   }
-  function toggleWord(btn) {
-    var box = btn.closest('.q-words'), w = btn.getAttribute('data-k'), e = wordEntry(w), on = hasWord(e.k);
-    S.words = S.words || {};
-    S.words[e.k] = on ? { t: -Date.now(), q: (S.words[e.k] || {}).q } : { t: Date.now(), a: Date.now(), q: box ? box.getAttribute('data-q') : '', r: e.r, m: e.m, k: 0, due: Date.now() };
-    save();
-    track(on ? 'word_remove' : 'word_add', { level: LEVEL });
-    if (box) {
-      app.querySelectorAll('.q-wchip').forEach(function (c) { if (wordOf(c.getAttribute('data-k')) === e.k) c.classList.toggle('q-won', !on); });
-      var pop = box.querySelector('.q-wpop'); pop.removeAttribute('data-k'); var chip = box.querySelector('.q-wchip[data-k="' + w.replace(/"/g, '\\"') + '"]'); if (chip) showWord(chip);
-    }
+  // Mouse: a card under (or above) the word. Touch: a sheet at the bottom (CSS).
+  function place(box, el) {
+    if (!HOVER) return;
+    var r = el.getBoundingClientRect(), h = box.offsetHeight || 120, w = Math.min(320, innerWidth - 16);
+    var top = r.bottom + 6 + h > innerHeight ? r.top - h - 6 : r.bottom + 6;
+    box.style.width = w + 'px';
+    box.style.left = Math.max(8, Math.min(r.left, innerWidth - w - 8)) + 'px';
+    box.style.top = Math.max(8, top) + 'px';
   }
+  function toggleWord(w, qid) {
+    var e = wordEntry(w), on = hasWord(e.k);
+    S.words = S.words || {};
+    S.words[e.k] = on ? { t: -Date.now(), q: (S.words[e.k] || {}).q } : { t: Date.now(), a: Date.now(), q: qid || '', r: e.r, m: e.m, k: 0, due: Date.now() };
+    save();
+    track(on ? 'word_remove' : 'word_add', { level: LEVEL, via: HOVER ? 'mouse' : 'touch' });
+    app.querySelectorAll('.q-wchip, .q-w').forEach(function (c) { if (wordOf(c.getAttribute('data-k')) === e.k) c.classList.toggle('q-won', !on); });
+    return !on;
+  }
+  // Clicks: a word (chip or in the sentence) → mouse: add/remove at once,
+  // touch: open the sheet; the card's button adds/removes (the sheet closes
+  // itself a moment after adding).
+  function wordClick(el) {
+    if (!HOVER) { if (tipFor === el && tip && !tip.hidden) hideTip(); else showTip(el); return; }
+    loadWords().then(function () { toggleWord(el.getAttribute('data-k'), el.getAttribute('data-q') || (el.closest('.q-words') && el.closest('.q-words').getAttribute('data-q'))); showTip(el); });
+  }
+  function wordAdd(btn) {
+    var box = btn.closest('.q-wtip'), added = toggleWord(btn.getAttribute('data-k'), box && box.getAttribute('data-q'));
+    if (tipFor) showTip(tipFor);
+    if (added && !HOVER) setTimeout(function () { if (tip && !tip.hidden && tip.getAttribute('data-k') === btn.getAttribute('data-k')) hideTip(); }, 700);
+  }
+  if (HOVER) {
+    app.addEventListener('mouseover', function (e) { var el = e.target.closest && e.target.closest('.q-w, .q-wchip'); if (el) showTip(el); });
+    app.addEventListener('mouseout', function (e) { var el = e.target.closest && e.target.closest('.q-w, .q-wchip'); if (el && !(e.relatedTarget && tip && tip.contains(e.relatedTarget))) hideTipSoon(); });
+  }
+  window.addEventListener('scroll', function () { if (HOVER && tip && !tip.hidden) hideTip(); }, { passive: true });
+  // A tap or click anywhere else closes the card.
+  document.addEventListener('click', function (e) { if (tip && !tip.hidden && !e.target.closest('.q-wtip, .q-w, .q-wchip')) hideTip(); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && tip && !tip.hidden) hideTip();
+    if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && e.target.classList.contains('q-w')) { e.preventDefault(); e.target.click(); }
+  });
   function wordRow(k, done) {
     var x = S.words[k], q = x.q && Q[x.q];
     return '<li><div class="q-wb-w" lang="ja">' + (x.r ? '<ruby>' + esc(k) + '<rp>(</rp><rt>' + esc(x.r) + '</rt><rp>)</rp></ruby>' : esc(k)) + '</div>' +
@@ -1045,6 +1136,7 @@
     if (!left.length) h += '<div class="q-next"><button class="q-btn q-btn-primary q-btn-big" data-act="next"' + (past != null ? ' data-k="' + past + '"' : '') + '>' +
       (past != null && past >= S.session.i ? (S.session.i >= S.session.ids.length ? t('看结果', 'See results') : t('回到当前题', 'Back to where I was')) : S.session.i >= S.session.ids.length && past == null ? t('看结果', 'See results') : t('下一题', 'Next')) + ' →</button></div>';
     root().querySelector('.q-feedback').innerHTML = h;
+    linkWords(root().querySelector('.q-feedback .q-sent .q-full'), q);
     keepAiInView();
     if (left.length) cur = curs[left[0]];   // the keyboard moves on to the next question of the passage
   }
@@ -1757,7 +1849,7 @@
       (segs.length ? ' <button class="q-ck-tool q-ck-loop' + (ck.loop ? ' q-on' : '') + '" data-act="ck-loop" aria-pressed="' + ck.loop + '" title="' + t('点 ▶ 听一句时反复播放，适合跟读', 'Repeat a line played with ▶, for shadowing') + '">🔁 ' + t('单句循环', 'Repeat line') + '</button>' : '') +
       '</p><ol>' + ckParts(q).map(function (p) {
       return row(p.who, p.ja, p.tr, ckSegBtn(q, p.k, p.i), p.who ? '' : 'q-ck-nar', segs.filter(function (x) { return x.k === p.k && x.i === p.i; })[0]);
-    }).join('') + '</ol></div>' + (fold ? '</details>' : '');
+    }).join('') + '</ol>' + ckWords(q) + '</div>' + (fold ? '</details>' : '');
   }
   // Plain text of the transcript for the AI context.
   function ckPlain(q) {
@@ -2095,8 +2187,9 @@
     else if (act === 'share') shareScore(el);
     else if (act === 'weak') startKind('weak');
     else if (act === 'fav-list') favList();
-    else if (act === 'word') showWord(el);
-    else if (act === 'word-add') toggleWord(el);
+    else if (act === 'word') wordClick(el);
+    else if (act === 'word-add') wordAdd(el);
+    else if (act === 'word-close') hideTip();
     else if (act === 'word-list') wordList();
     else if (act === 'word-del') { var wk = el.getAttribute('data-k'); S.words[wk] = { t: -Date.now(), q: (S.words[wk] || {}).q }; save(); track('word_remove', { level: LEVEL }); wordList(); }
     else if (act === 'word-ok') { setWord(el.getAttribute('data-k'), { ok: 1 }); track('word_mastered', { level: LEVEL }); wordList(); }
