@@ -170,7 +170,19 @@
   // A kana spelling that is an alias (へや → 部屋) resolves to its entry.
   function wordOf(w) { var e = WD && WD[w]; return typeof e === 'string' ? e : w; }
   function hasWord(w) { var x = (S.words || {})[w]; return !!x && x.t > 0; }
-  function myWords() { var W = S.words || {}; return Object.keys(W).filter(function (k) { return W[k].t > 0; }).sort(function (a, b) { return W[b].t - W[a].t; }); }
+  // Spaced repetition: x.k = step in WIV (days until the next review), x.due
+  // (ms); 记得 moves a step on, 忘了 goes back to the first; past the last step,
+  // or 太简单, the word is mastered (x.ok). t is the last change, a when added.
+  var WIV = [1, 3, 7, 14, 30, 60], DAY = 864e5;
+  function myWords() { var W = S.words || {}; return Object.keys(W).filter(function (k) { return W[k].t > 0; }).sort(function (a, b) { return (W[b].a || W[b].t) - (W[a].a || W[a].t); }); }
+  function learning() { return myWords().filter(function (k) { return !S.words[k].ok; }); }
+  function mastered() { return myWords().filter(function (k) { return S.words[k].ok; }); }
+  function wordsDue() { var n = Date.now(); return learning().filter(function (k) { return (S.words[k].due || 0) <= n; }).sort(function (a, b) { return (S.words[a].due || 0) - (S.words[b].due || 0); }); }
+  function setWord(k, ch) { var x = {}, o = S.words[k] || {}; for (var f in o) x[f] = o[f]; for (var g in ch) x[g] = ch[g]; x.t = Date.now(); S.words[k] = x; save(); }
+  function whenDue(x) {
+    var d = Math.round(((x.due || 0) - Date.now()) / DAY);
+    return d <= 0 ? t('今天', 'today') : d === 1 ? t('明天', 'tomorrow') : t(d + ' 天后', 'in ' + d + ' days');
+  }
   function wordChips(list, qid, label) {
     if (!list || !list.length) return '';
     return '<div class="q-words" data-q="' + qid + '"><span class="q-box-k">' + label + '</span><span class="q-wlist">' + list.map(function (w) {
@@ -204,7 +216,7 @@
   function toggleWord(btn) {
     var box = btn.closest('.q-words'), w = btn.getAttribute('data-k'), e = wordEntry(w), on = hasWord(e.k);
     S.words = S.words || {};
-    S.words[e.k] = on ? { t: -Date.now(), q: (S.words[e.k] || {}).q } : { t: Date.now(), q: box ? box.getAttribute('data-q') : '', r: e.r, m: e.m };
+    S.words[e.k] = on ? { t: -Date.now(), q: (S.words[e.k] || {}).q } : { t: Date.now(), a: Date.now(), q: box ? box.getAttribute('data-q') : '', r: e.r, m: e.m, k: 0, due: Date.now() + DAY };
     save();
     track(on ? 'word_remove' : 'word_add', { level: LEVEL });
     if (box) {
@@ -212,19 +224,58 @@
       var pop = box.querySelector('.q-wpop'); pop.removeAttribute('data-k'); var chip = box.querySelector('.q-wchip[data-k="' + w.replace(/"/g, '\\"') + '"]'); if (chip) showWord(chip);
     }
   }
+  function wordRow(k, done) {
+    var x = S.words[k], q = x.q && Q[x.q];
+    return '<li><div class="q-wb-w" lang="ja">' + (x.r ? '<ruby>' + esc(k) + '<rp>(</rp><rt>' + esc(x.r) + '</rt><rp>)</rp></ruby>' : esc(k)) + '</div>' +
+      '<div class="q-wb-m">' + esc(x.m || '') + (q && (q.kj || q.full) ? '<div class="q-wb-ctx" lang="ja">' + (q.kj || q.full) + '</div>' : '') +
+      (done ? '' : '<div class="q-wb-due">' + t('下次复习：', 'Next review: ') + whenDue(x) + '</div>') + '</div>' +
+      '<span class="q-wb-acts">' + (done ? '<button class="q-btn q-btn-sm" data-act="word-back" data-k="' + esc(k) + '">' + t('放回在学', 'Learn again') + '</button>'
+        : '<button class="q-btn q-btn-sm" data-act="word-ok" data-k="' + esc(k) + '">' + t('✓ 掌握了', '✓ Know it') + '</button>') +
+      '<button class="q-btn q-btn-sm" data-act="word-del" data-k="' + esc(k) + '">' + t('移除', 'Remove') + '</button></span></li>';
+  }
   function wordList() {
-    var list = myWords(), W = S.words;
-    track('word_list', { level: LEVEL, n: list.length });
-    var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button><span>' + t('生词本', 'Word list') + ' · ' + list.length + '</span><span></span></div>';
-    if (!list.length) h += '<p class="q-muted">' + t('还是空的：答完题后，点句子下面的单词，再点“加入生词本”。', 'Empty: after answering, tap a word under the sentence, then “Add to word list”.') + '</p>';
-    else h += '<ul class="q-wordbook">' + list.map(function (k) {
-      var x = W[k], q = x.q && Q[x.q];
-      return '<li><div class="q-wb-w" lang="ja">' + (x.r ? '<ruby>' + esc(k) + '<rp>(</rp><rt>' + esc(x.r) + '</rt><rp>)</rp></ruby>' : esc(k)) + '</div>' +
-        '<div class="q-wb-m">' + esc(x.m || '') + (q && (q.kj || q.full) ? '<div class="q-wb-ctx" lang="ja">' + (q.kj || q.full) + '</div>' : '') + '</div>' +
-        '<button class="q-btn q-btn-sm" data-act="word-del" data-k="' + esc(k) + '" aria-label="' + t('移除', 'Remove') + '">' + t('移除', 'Remove') + '</button></li>';
-    }).join('') + '</ul>';
+    var L = learning(), M = mastered(), d = wordsDue().length;
+    track('word_list', { level: LEVEL, n: L.length + M.length });
+    var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button><span>' + t('生词本', 'Word list') + '</span><span></span></div>';
+    if (!L.length && !M.length) h += '<p class="q-muted">' + t('还是空的：答完题后，点句子下面的单词，再点“加入生词本”。', 'Empty: after answering, tap a word under the sentence, then “Add to word list”.') + '</p>';
+    else {
+      if (L.length) h += '<p><button class="q-btn q-btn-primary" data-act="word-study"' + (d ? '' : ' data-early="1"') + '>' + (d ? t('背单词 · ' + d + ' 个到期', 'Study · ' + d + ' due') : t('提前背', 'Study early')) + '</button></p>';
+      h += '<h3 class="q-wb-h">' + t('在学 ', 'Learning ') + L.length + '</h3>' + (L.length ? '<ul class="q-wordbook">' + L.map(function (k) { return wordRow(k, false); }).join('') + '</ul>' : '<p class="q-muted">' + t('都掌握了。', 'All learned.') + '</p>');
+      if (M.length) h += '<details class="q-wb-done"><summary class="q-wb-h">' + t('已掌握 ', 'Learned ') + M.length + '</summary><ul class="q-wordbook">' + M.map(function (k) { return wordRow(k, true); }).join('') + '</ul></details>';
+    }
     app.innerHTML = '<div class="q-card">' + h + '</div>';
     toTop();
+  }
+  // 背单词: one card at a time; 忘了 puts the word back at the end of this round.
+  var WS = null;
+  function wordStudy(early) {
+    var list = early ? learning().slice().sort(function (a, b) { return (S.words[a].due || 0) - (S.words[b].due || 0); }) : wordsDue();
+    WS = { list: list.slice(0, 30), i: 0, flip: false, ok: 0, miss: 0, seen: {} };
+    track('word_study', { level: LEVEL, n: WS.list.length, early: early ? 1 : 0 });
+    wordCard();
+  }
+  function wordCard() {
+    var h = '<div class="q-top"><button class="q-link" data-act="word-list">‹ ' + t('生词本', 'Word list') + '</button><span>' + t('背单词', 'Study') + (WS.i < WS.list.length ? ' · ' + (WS.i + 1) + ' / ' + WS.list.length : '') + '</span><span></span></div>';
+    if (WS.i >= WS.list.length) {
+      h += '<div class="q-wcard"><p class="q-wcard-w">' + t('这一轮背完了', 'Round done') + '</p><p class="q-muted">' + t('记得 ' + WS.ok + ' · 忘了 ' + WS.miss, WS.ok + ' remembered · ' + WS.miss + ' forgotten') + '</p>' +
+        '<p><button class="q-btn q-btn-primary" data-act="word-list">' + t('回生词本', 'Back to word list') + '</button></p></div>';
+    } else {
+      var k = WS.list[WS.i], x = S.words[k], q = x.q && Q[x.q];
+      h += '<div class="q-wcard"><p class="q-wcard-w" lang="ja">' + (WS.flip && x.r ? '<ruby>' + esc(k) + '<rp>(</rp><rt>' + esc(x.r) + '</rt><rp>)</rp></ruby>' : esc(k)) + '</p>';
+      if (!WS.flip) h += '<p><button class="q-btn q-btn-primary q-btn-big" data-act="word-flip">' + t('看答案', 'Show answer') + '</button></p><p class="q-muted">' + t('先想想读音和意思', 'Recall the reading and meaning first') + '</p>';
+      else h += '<p class="q-wcard-m">' + esc(x.m || '') + '</p>' + (q && (q.kj || q.full) ? '<p class="q-wb-ctx" lang="ja">' + (q.kj || q.full) + '</p>' : '') +
+        '<div class="q-wcard-acts"><button class="q-btn" data-act="word-grade" data-k="0">' + t('忘了', 'Forgot') + '</button><button class="q-btn q-btn-primary" data-act="word-grade" data-k="1">' + t('记得', 'Remembered') + '</button><button class="q-btn" data-act="word-grade" data-k="2">' + t('太简单', 'Too easy') + '</button></div>';
+      h += '</div>';
+    }
+    app.innerHTML = '<div class="q-card">' + h + '</div>';
+  }
+  function wordGrade(g) {
+    var k = WS.list[WS.i], x = S.words[k], step = x.k || 0;
+    if (g === 0) { WS.miss++; if (!WS.seen[k]) WS.list.push(k); WS.seen[k] = 1; setWord(k, { k: 0, due: Date.now() + DAY }); }
+    else if (g === 2 || step + 1 >= WIV.length) { WS.ok++; setWord(k, { ok: 1 }); }
+    else { WS.ok++; setWord(k, { k: step + 1, due: Date.now() + WIV[step + 1] * DAY }); }
+    track('word_grade', { g: g, level: LEVEL });
+    WS.i++; WS.flip = false; wordCard();
   }
 
   // Icon + label; on narrow phones the label hides (CSS), so the name is also in aria-label/title.
@@ -459,8 +510,9 @@
     // Review list and saved questions: one quiet line while both are empty, else a compact row each.
     var fv = favs().length, mfv = mockFavs(LEVEL.toLowerCase() + '-m').length;
     var mockLink = mfv ? '<a class="q-list-more" href="' + location.pathname.replace(/-(practice|listening|reading|vocabulary)\/$/, '-mock-test/') + '">' + t('模拟题里收藏了 ' + mfv + ' 题 ›', mfv + ' saved in mock tests ›') + '</a>' : '';
-    var wn = myWords().length;
-    var wordRow = '<li' + (wn ? '' : ' class="q-list-empty"') + '><span class="q-list-name">' + t('生词本', 'Word list') + '</span>' + (wn ? '<span class="q-list-n">' + wn + '</span><span class="q-list-acts"><button class="q-btn q-btn-sm" data-act="word-list">' + t('查看', 'See list') + '</button></span>'
+    var wn = myWords().length, wl = learning().length, wd = wordsDue().length;
+    var wRow = '<li' + (wn ? '' : ' class="q-list-empty"') + '><span class="q-list-name">' + t('生词本', 'Word list') + '</span>' + (wn ? '<span class="q-list-n">' + wl + (wn > wl ? t(' · 已掌握 ' + (wn - wl), ' · ' + (wn - wl) + ' learned') : '') + (wd ? ' · <b>' + t(wd + ' 到期', wd + ' due') + '</b>' : '') + '</span><span class="q-list-acts">' +
+        (wl ? '<button class="q-btn q-btn-sm" data-act="word-study"' + (wd ? '' : ' data-early="1"') + '>' + (wd ? t('背单词', 'Study') : t('提前背', 'Study early')) + '</button>' : '') + '<button class="q-btn q-btn-sm" data-act="word-list">' + t('查看', 'See list') + '</button></span>'
       : '<span class="q-muted">' + t('还是空的：答完点句子下面的单词加入', 'empty: after answering, tap a word under the sentence') + '</span>') + '</li>';
     if (!r && !fv && !mfv && !wn) h += '<p class="q-muted q-lists-empty">' + t('错题本、收藏、生词本都还是空的：答错的题、点 ☆ 的题、答完点的单词会出现在这里', 'Your review list, saved questions and word list are empty: questions you miss, ones you save with ☆ and words you tap after answering show up here') + '</p>';
     else {
@@ -471,7 +523,7 @@
       h += fv ? '<li><span class="q-list-name">' + t('我的收藏', 'Saved') + '</span><span class="q-list-n">' + fv + '</span><span class="q-list-acts">' +
           '<button class="q-btn q-btn-sm" data-act="fav-start">' + t('练习', 'Practise') + '</button><button class="q-btn q-btn-sm" data-act="fav-list">' + t('查看', 'See list') + '</button></span>' + mockLink + '</li>'
         : '<li class="q-list-empty"><span class="q-list-name">' + t('我的收藏', 'Saved') + '</span><span class="q-muted">' + (mfv ? '' : t('还是空的：答完点 ☆ 收藏', 'empty: tap ☆ after answering')) + '</span>' + mockLink + '</li>';
-      h += wordRow + '</ul>';
+      h += wRow + '</ul>';
     }
     Object.keys(D.groups).forEach(function (g) {
       var keys = Object.keys(D.types).filter(function (k) { return D.types[k].g === g; });
@@ -2045,6 +2097,11 @@
     else if (act === 'word-add') toggleWord(el);
     else if (act === 'word-list') wordList();
     else if (act === 'word-del') { var wk = el.getAttribute('data-k'); S.words[wk] = { t: -Date.now(), q: (S.words[wk] || {}).q }; save(); track('word_remove', { level: LEVEL }); wordList(); }
+    else if (act === 'word-ok') { setWord(el.getAttribute('data-k'), { ok: 1 }); track('word_mastered', { level: LEVEL }); wordList(); }
+    else if (act === 'word-back') { setWord(el.getAttribute('data-k'), { ok: 0, k: 0, due: Date.now() + DAY }); wordList(); }
+    else if (act === 'word-study') wordStudy(!!el.getAttribute('data-early'));
+    else if (act === 'word-flip') { WS.flip = true; wordCard(); }
+    else if (act === 'word-grade') wordGrade(+el.getAttribute('data-k'));
     else if (act === 'fav-group') { favGroup = el.getAttribute('data-k') || ''; favList(); }
     else if (act === 'fav-start') startKind('fav', el.getAttribute('data-k') || '');
     else if (act === 'fav') {

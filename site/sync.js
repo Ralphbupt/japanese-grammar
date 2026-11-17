@@ -333,10 +333,10 @@
       if (bits.length) rows.push('<li><b>' + l.toUpperCase() + '</b><span>' + bits.join(' · ') + '</span></li>');
     });
     // 生词本 lives on the practice pages: a row linking to the one this reader uses most.
-    var W = state().get().words || {}, wn = Object.keys(W).filter(function (k) { return W[k] && W[k].t > 0; }).length;
+    var W = state().get().words || {}, live = Object.keys(W).filter(function (k) { return W[k] && W[k].t > 0; }), wn = live.length, wok = live.filter(function (k) { return W[k].ok; }).length;
     if (wn) {
       var top = LEVELS.slice().sort(function (a, b) { return ((sum.levels[b] || {}).answers || 0) - ((sum.levels[a] || {}).answers || 0); })[0];
-      rows.push('<li><b>' + t('生词本', 'Words') + '</b><span><a href="' + (EN() ? '/' : '/zh/') + top + '-practice/#words">' + t(wn + ' 个词 · 查看', wn + (wn === 1 ? ' word' : ' words') + ' · open') + '</a></span></li>');
+      rows.push('<li><b>' + t('生词本', 'Words') + '</b><span><a href="' + (EN() ? '/' : '/zh/') + top + '-practice/#words">' + t('在学 ' + (wn - wok) + (wok ? ' · 已掌握 ' + wok : '') + ' · 查看', (wn - wok) + ' learning' + (wok ? ' · ' + wok + ' learned' : '') + ' · open') + '</a></span></li>');
     }
     var has = rows.length > 0;
     var h = '<div class="acct-head"><p class="acct-title">' + t('学习进度', 'Your progress') + '</p>' + (sum.days ? '<span class="acct-muted">' + t('练习过 ' + sum.days + ' 天', sum.days + (sum.days === 1 ? ' day' : ' days') + ' practised') + '</span>' : '') + '</div>' +
