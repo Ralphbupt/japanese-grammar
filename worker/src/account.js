@@ -281,6 +281,8 @@ export default {
       return res;
     } catch (e) {
       if (e instanceof HttpError) return reply({ error: e.message }, e.status, cors);
+      // The error's own text only (no email, no progress), for `wrangler tail`.
+      console.error('500', new URL(req.url).pathname, String((e && e.message) || e).slice(0, 300));
       return reply({ error: 'Something went wrong on our side. Try again.' }, 500, cors);
     }
   },
