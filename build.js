@@ -163,12 +163,17 @@ const AI_PROVIDER_HOSTS = [...new Set(
   [...AI_JS_SRC.matchAll(/(?:base|altBase): '(https?:\/\/[^'/]+)/g)]
     .map(m => m[1]).filter(h => !/localhost|127\.0\.0\.1/.test(h))
 )];
+const ADSENSE_PUB = "ca-pub-3609480297931487";
 // The rest of the policy: scripts, styles, images, audio, frames only from
 // this site (plus giscus for comments); no plugins, no <base> or form tricks.
 // Inline scripts stay allowed — the pages are built with many of them — but a
 // script or image from any other host is refused, so an injected tag can't
 // load code or leak data (an <img> beacon) elsewhere.
-const CSP_META = `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://giscus.app https://accounts.google.com/gsi/client https://static.cloudflareinsights.com${AB_ORIGIN}; style-src 'self' 'unsafe-inline' https://giscus.app https://accounts.google.com/gsi/style; img-src 'self' data: blob:; media-src 'self' blob:${AUDIO_ORIGIN}; font-src 'self' data:; frame-src https://giscus.app https://accounts.google.com/gsi/; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; connect-src 'self' ${ACCOUNT_API}${AB_ORIGIN} https://cloudflareinsights.com https://accounts.google.com/gsi/ https://*.google-analytics.com https://*.analytics.google.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">`;
+const CSP_META = `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://giscus.app https://accounts.google.com/gsi/client https://static.cloudflareinsights.com${AB_ORIGIN}; style-src 'self' 'unsafe-inline' https://giscus.app https://accounts.google.com/gsi/style; img-src 'self' data: blob:; media-src 'self' blob:${AUDIO_ORIGIN}; font-src 'self' data:; frame-src https://giscus.app https://accounts.google.com/gsi/; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; connect-src 'self' ${ACCOUNT_API}${AB_ORIGIN} https://cloudflareinsights.com https://accounts.google.com/gsi/ https://*.google-analytics.com https://*.analytics.google.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">` +
+  // Google AdSense site verification (applied 2026-11-18). Only this tag: no
+  // ad script is loaded, so the CSP above stays as it is. dist/ads.txt names
+  // the same publisher.
+  `\n<meta name="google-adsense-account" content="${ADSENSE_PUB}">`;
 // Copies of the site (someone rebuilding the repo on their own domain): the
 // host is checked against jpnotes.dev itself — not SITE, which a copy changes —
 // and a copy gets a banner pointing to the original, a canonical link back to
@@ -5440,7 +5445,9 @@ Each \`/lessonNN/\` page contains:
     if (rules.length > 2000) throw new Error(`_redirects: ${rules.length} rules, Cloudflare allows 2,000 static ones`);
     fs.writeFileSync(path.join(dist, "_redirects"), rules.join("\n") + "\n", "utf-8");
     fs.writeFileSync(path.join(dist, "_headers"), "/*\n  X-Content-Type-Options: nosniff\n\n/anki/*.apkg\n  Content-Type: application/octet-stream\n  Content-Disposition: attachment\n", "utf-8");
-    console.log(`  Generated dist/_redirects (${rules.length} rules), dist/_headers`);
+    // AdSense: the publisher authorised to sell ads on this site (the head meta tag is the verification).
+    fs.writeFileSync(path.join(dist, "ads.txt"), `google.com, ${ADSENSE_PUB.replace(/^ca-/, "")}, DIRECT, f08c47fec0942fa0\n`, "utf-8");
+    console.log(`  Generated dist/_redirects (${rules.length} rules), dist/_headers, dist/ads.txt`);
   }
   console.log(`Done! Output: ${OUT}, sitemap.xml, robots.txt, feed.xml, llms.txt, manifest.json, 404.html, og-image.png`);
 }
