@@ -114,12 +114,14 @@ function glosses() {
 // A word written in kana (へや, as the N5 test writes it) that has exactly one
 // kanji spelling with the same reading among the words seen so far (部屋) is
 // the same card: lemma → that spelling.
+// Kanji spellings come from the words seen so far and from every level's
+// meanings file, so a kana word on N5 still finds 是非 when only N1 has it
+// (levels are bundled N5 first; 2026-11-18: ぜひ, かばん … showed no meaning).
 function aliasOf() {
   const byReading = new Map();
-  for (const m of Object.values(SEEN)) for (const [lemma, s] of m) {
-    if (!/[一-鿿]/.test(lemma)) continue;
-    const set = byReading.get(s.r) || new Set(); set.add(lemma); byReading.set(s.r, set);
-  }
+  const add = (lemma, r) => { if (!r || !/[一-鿿]/.test(lemma)) return; const set = byReading.get(r) || new Set(); set.add(lemma); byReading.set(r, set); };
+  for (const m of Object.values(SEEN)) for (const [lemma, s] of m) add(lemma, s.r);
+  for (const [lemma, x] of Object.entries(glosses())) if (x && !x.skip && x.zh) add(lemma, kata2hira(x.r || ""));
   return (lemma) => {
     if (/[一-鿿゠-ヿ]/.test(lemma)) return null;
     const set = byReading.get(lemma);
@@ -137,6 +139,7 @@ function dictionary(level) {
     if (to) {
       out[lemma] = to;
       if (!out[to]) for (const m of Object.values(SEEN)) if (m.has(to)) { out[to] = entry(to, m.get(to)); break; }
+      if (!out[to]) out[to] = entry(to, { r: lemma });   // only in a later level's meanings file
     } else if (typeof out[lemma] !== "object") out[lemma] = entry(lemma, s);
   }
   return out;
