@@ -306,9 +306,19 @@
     if (tipFor) showTip(tipFor);
     if (added && !HOVER) setTimeout(function () { if (tip && !tip.hidden && tip.getAttribute('data-k') === btn.getAttribute('data-k')) hideTip(); }, 700);
   }
+  // The card waits until the pointer rests on a word (HOVER_WAIT ms), so
+  // reading with the mouse over the sentence doesn't pop cards up (owner
+  // 11-18). Once one is open, moving to the next word swaps it at once.
+  var HOVER_WAIT = 600, hoverT = null;
   if (HOVER) {
-    app.addEventListener('mouseover', function (e) { var el = e.target.closest && e.target.closest('.q-w, .q-wchip'); if (el) showTip(el); });
-    app.addEventListener('mouseout', function (e) { var el = e.target.closest && e.target.closest('.q-w, .q-wchip'); if (el && !(e.relatedTarget && tip && tip.contains(e.relatedTarget))) hideTipSoon(); });
+    app.addEventListener('mouseover', function (e) {
+      var el = e.target.closest && e.target.closest('.q-w, .q-wchip');
+      if (!el) return;
+      clearTimeout(hoverT);
+      if (tip && !tip.hidden) { showTip(el); return; }
+      hoverT = setTimeout(function () { showTip(el); }, HOVER_WAIT);
+    });
+    app.addEventListener('mouseout', function (e) { var el = e.target.closest && e.target.closest('.q-w, .q-wchip'); if (el && !(e.relatedTarget && tip && tip.contains(e.relatedTarget))) { clearTimeout(hoverT); hideTipSoon(); } });
   }
   window.addEventListener('scroll', function () { if (HOVER && tip && !tip.hidden) hideTip(); }, { passive: true });
   // A tap or click anywhere else closes the card.
