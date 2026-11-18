@@ -74,7 +74,8 @@ const GISCUS_SCRIPT = `<script>
     var dark = c.contains('theme-dark') ||
       (!c.contains('theme-light') && window.matchMedia('(prefers-color-scheme: dark)').matches);
     if (dark) return 'transparent_dark';
-    if (c.contains('tone-white')) return 'light';
+    // Blue-white (tone-blue, and auto on a light system) and white: GitHub's light theme.
+    if (c.contains('tone-white') || c.contains('tone-blue') || !c.contains('theme-light')) return 'light';
     return 'https://jpnotes.dev/giscus-' + (c.contains('tone-sepia') ? 'sepia' : 'paper') + '.css';
   }
   function retheme() {
@@ -189,8 +190,8 @@ const THEME_INIT_SCRIPT = `<script>
     // 'light' is the paper theme; white and sepia are light themes with a tone.
     var t = localStorage.getItem('theme'), c = document.documentElement.classList;
     if (t === 'dark') c.add('theme-dark');
-    else if (t === 'light' || t === 'white' || t === 'sepia') c.add('theme-light');
-    if (t === 'white' || t === 'sepia') c.add('tone-' + t);
+    else if (t === 'light' || t === 'white' || t === 'sepia' || t === 'blue') c.add('theme-light');
+    if (t === 'white' || t === 'sepia' || t === 'blue') c.add('tone-' + t);
   } catch (e) {}
   // Experiments (ab.jpnotes.dev) that change the look keep their classes and
   // CSS in jp_ab_early, put on here before the first paint. "pending" hides
@@ -651,8 +652,8 @@ const GTAG_DEFERRED = AB_LOADER + `<script>
     // system setting) and what the reader chose. GA custom dimensions theme / theme_pref.
     if (name === 'page_view') {
       var hc = document.documentElement.classList, pref = store('theme') || 'auto';
-      q['ep.theme'] = hc.contains('theme-dark') ? 'dark' : hc.contains('tone-white') ? 'white' : hc.contains('tone-sepia') ? 'sepia' : hc.contains('theme-light') ? 'paper'
-        : (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'paper');
+      q['ep.theme'] = hc.contains('theme-dark') ? 'dark' : hc.contains('tone-blue') ? 'blue' : hc.contains('tone-white') ? 'white' : hc.contains('tone-sepia') ? 'sepia' : hc.contains('theme-light') ? 'paper'
+        : (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'blue');
       q['ep.theme_pref'] = pref === 'light' ? 'paper' : pref;
     }
     // Experiment groups the reader has been shown (user property, GA dimension ab).
@@ -3190,7 +3191,7 @@ ${SETTINGS_SCRIPT}`;
 <link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
 <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#14141e" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -5586,6 +5587,23 @@ html.tone-sepia {
   --surface-2: #e3d8c0; --row-alt: #f0e8d7; --panel-bg: #e6dcc6; --chip-bg: #e0d4ba;
   --accent: #a52238;
 }
+/* Blue-white: cool white with blue ink. The auto theme on a light system uses
+   it (A/B "look", launched 2026-11-18), and it can be chosen as a tone. Paper
+   stays available as 纸张. */
+html.tone-blue {
+  --bg: #fff; --card-bg: #fff; --surface-2: #eaf2fe; --word-bg: #f1f6fd; --code-bg: #f1f6fd; --row-alt: #f6f9fe; --panel-bg: #f1f6fd; --chip-bg: #eef4fd;
+  --border: #dfe7f3; --word-border: #cfdbee; --text: #16203a; --text-strong: #16203a; --text-muted: #55607a; --text-subtle: #7a849b; --ruby-color: #55607a;
+  --ui: #2463d6; --ui-on: #fff; --ui-soft: #e6effd; --link: #1f5bc8; --sidebar-bg: #eaf2fe; --sidebar-text: #55607a; --sidebar-heading: #16203a; --sidebar-border: #dfe7f3; --sidebar-hover-bg: #e2ecfc; --sidebar-hover-text: #16203a; --selection-bg: #cfe1ff; --selection-fg: #16203a;
+}
+@media (prefers-color-scheme: light) {
+  html:not(.theme-dark):not(.theme-light) {
+    --bg: #fff; --card-bg: #fff; --surface-2: #eaf2fe; --word-bg: #f1f6fd; --code-bg: #f1f6fd; --row-alt: #f6f9fe; --panel-bg: #f1f6fd; --chip-bg: #eef4fd;
+    --border: #dfe7f3; --word-border: #cfdbee; --text: #16203a; --text-strong: #16203a; --text-muted: #55607a; --text-subtle: #7a849b; --ruby-color: #55607a;
+    --ui: #2463d6; --ui-on: #fff; --ui-soft: #e6effd; --link: #1f5bc8; --sidebar-bg: #eaf2fe; --sidebar-text: #55607a; --sidebar-heading: #16203a; --sidebar-border: #dfe7f3; --sidebar-hover-bg: #e2ecfc; --sidebar-hover-text: #16203a; --selection-bg: #cfe1ff; --selection-fg: #16203a;
+  }
+  html:not(.theme-dark):not(.theme-light) .td-card { background: #f1f6fd; border-color: transparent; }
+}
+html.tone-blue .td-card { background: #f1f6fd; border-color: transparent; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 19px; }
 body {
@@ -6307,7 +6325,8 @@ ${darkRules('html.theme-dark')}
 .theme-choice:hover { border-color: var(--ui); }
 .theme-choice[aria-checked="true"] { border-color: var(--ui); box-shadow: 0 0 0 1px var(--ui); }
 .theme-swatch { width: 1.05rem; height: 1.05rem; border-radius: 50%; border: 1px solid rgba(0,0,0,.25); flex: none; }
-.sw-auto { background: linear-gradient(135deg, #f6f4ef 50%, #14141e 50%); }
+.sw-auto { background: linear-gradient(135deg, #eaf2fe 50%, #14141e 50%); }
+.sw-blue { background: linear-gradient(135deg, #ffffff 50%, #2463d6 50%); }
 .sw-white { background: #ffffff; }
 .sw-light { background: #f6f4ef; }
 .sw-sepia { background: #ece3cf; }

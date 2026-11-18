@@ -24,15 +24,17 @@
     }
   }
 
-  // Themes: auto follows the system (paper by day, dark at night); 'light'
-  // is the stored name for paper. White and sepia are light-theme tones.
+  // Themes: auto follows the system (blue-white by day since 2026-11-18,
+  // dark at night); 'light' is the stored name for paper. Blue, white and
+  // sepia are light-theme tones.
   var THEMES = [
-    ['auto', '自动', 'Auto'], ['white', '白', 'White'], ['light', '纸张', 'Paper'],
+    ['auto', '自动', 'Auto'], ['blue', '蓝白', 'Blue'], ['white', '白', 'White'], ['light', '纸张', 'Paper'],
     ['sepia', '米黄', 'Sepia'], ['dark', '深色', 'Dark']
   ];
   function currentTheme() {
     var c = document.documentElement.classList;
     return c.contains('theme-dark') ? 'dark'
+      : c.contains('tone-blue') ? 'blue'
       : c.contains('tone-white') ? 'white'
       : c.contains('tone-sepia') ? 'sepia'
       : c.contains('theme-light') ? 'light' : 'auto';
@@ -81,10 +83,10 @@
 
   function setTheme(next) {
     var c = document.documentElement.classList;
-    c.remove('theme-dark', 'theme-light', 'tone-white', 'tone-sepia');
+    c.remove('theme-dark', 'theme-light', 'tone-white', 'tone-sepia', 'tone-blue');
     if (next === 'dark') c.add('theme-dark');
     else if (next !== 'auto') c.add('theme-light');
-    if (next === 'white' || next === 'sepia') c.add('tone-' + next);
+    if (next === 'white' || next === 'sepia' || next === 'blue') c.add('tone-' + next);
     try {
       if (next === 'auto') localStorage.removeItem('theme');
       else localStorage.setItem('theme', next);
