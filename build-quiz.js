@@ -109,6 +109,10 @@ const rubyMode = (level) => (RUBY_LEVELS.has(level) ? true : ABOVE_N4_RUBY.has(l
 // review list keep them; daily sets, practice by type and the analysis of
 // the level leave them out. A whole lesson or one grammar point (lessonNN#K);
 // only points every common list puts higher (つもり, 予定, でしょう stay N5).
+// Question types whose wrong options are real words too, so all options feed
+// the word list (kanji / hyouki / bunpou / bunshou options can be made up).
+const REAL_OPTIONS = new Set(["bunmyaku", "iikae", "youhou", "gokeisei", "short", "mid", "long", "info", "tougou", "shuchou"]);
+
 const ABOVE_LEVEL = {
   N5: {
     "lesson07#4": "N4",                                   // たばかり
@@ -636,9 +640,12 @@ async function bundleLevel(level, ruby, mock) {
       why: q.why, wrong: q.wrong,
       rev: q.rev || 1,
       ...(!mock && aboveLevel(level, q) ? { pre: aboveLevel(level, q) } : {}),
-      // Wrong options can be made-up spellings or forms (来遇, かいしい): only
-      // the right one, the kanji forms (okj, real words) and 排序's pieces.
-      ...wd([q.passage ? q.q || q.stem : q.kj || q.full || q.stem, ...(q.okj || []), ...(q.type === "narabe" ? q.options : [q.options[q.answer]])], q.passage ? null : q.kj || q.full),
+      // Wrong options can be made-up spellings or forms (来遇, かいしい) in the
+      // reading / writing / grammar types: there only the right one, the kanji
+      // forms (okj, real words) and 排序's pieces. Elsewhere (文脈規定, 言い換え,
+      // 用法, 語形成, reading questions) every option is real Japanese, and the
+      // words of the wrong ones are often the ones a reader didn't know (owner 11-18).
+      ...wd([q.passage ? q.q || q.stem : q.kj || q.full || q.stem, ...(q.okj || []), ...(q.type === "narabe" || REAL_OPTIONS.has(q.type) ? q.options : [q.options[q.answer]])], q.passage ? null : q.kj || q.full),
     });
   }
   const passages = {};
