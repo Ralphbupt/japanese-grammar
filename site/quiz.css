@@ -84,7 +84,7 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 /* The option text is one flex item (quiz.js wraps it in .q-otext). Bare, a <ruby> and
    the kana after it were separate flex items and the .8rem gap split 聞|けます. */
 .q-otext { min-width: 0; }
-.q-num { flex: none; display: inline-grid; place-items: center; width: 1.6em; height: 1.6em; border-radius: 50%; border: 1px solid var(--border); color: var(--text-muted); font-size: .85em; font-family: system-ui, sans-serif; }
+.q-num { flex: none; display: inline-grid; place-items: center; width: 1.6em; height: 1.6em; border-radius: 50%; border: 1px solid var(--border); color: var(--text-muted); font-size: .85em; font-family: system-ui, sans-serif; line-height: 1; font-variant-numeric: tabular-nums; }   /* line-height 1: the body's 1.9 is taller than the circle and pushed the digit low */
 .q-opt.q-ok { border-color: var(--q-ok); background: var(--q-ok-bg); }
 .q-opt.q-ok .q-num { background: var(--q-ok); border-color: var(--q-ok); color: var(--card-bg); }
 .q-opt.q-bad { border-color: var(--q-bad); background: var(--q-bad-bg); }
