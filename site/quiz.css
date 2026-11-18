@@ -148,11 +148,15 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-ai .q-btn { padding: .45em .9em; font-size: .9rem; background: transparent; border-color: var(--border); color: var(--text); }
 .q-ai .q-ai-main { background: var(--ui); border-color: var(--ui); color: var(--ui-on); font-weight: 600; }
 .q-ai .q-ai-main:hover:not(:disabled) { opacity: .9; }
-/* Dark: a pale filled slab would outshine 下一题; ink outline instead. */
+/* Dark: a pale filled slab would outshine 下一题, a bare outline melted into
+   the bar (owner 11-18): a tinted fill with bright text in between, and the
+   secondary button's border lifted off the bar. */
 @media (prefers-color-scheme: dark) {
-  :root:not(.theme-light) .q-ai .q-ai-main { background: transparent; border-color: var(--ui); color: var(--ui); }
+  :root:not(.theme-light) .q-ai .q-ai-main { background: color-mix(in srgb, var(--ui) 40%, transparent); border-color: var(--ui); color: var(--text-strong); }
+  :root:not(.theme-light) .q-ai .q-btn:not(.q-ai-main) { border-color: color-mix(in srgb, var(--text) 35%, transparent); }
 }
-html.theme-dark .q-ai .q-ai-main { background: transparent; border-color: var(--ui); color: var(--ui); }
+html.theme-dark .q-ai .q-ai-main { background: color-mix(in srgb, var(--ui) 40%, transparent); border-color: var(--ui); color: var(--text-strong); }
+html.theme-dark .q-ai .q-btn:not(.q-ai-main) { border-color: color-mix(in srgb, var(--text) 35%, transparent); }
 .q-ai .ico { width: 1.05em; height: 1.05em; }
 .q-report { margin-top: .8rem; font-size: .9em; }
 .q-report summary { cursor: pointer; color: var(--text-muted); }
