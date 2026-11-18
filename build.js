@@ -164,7 +164,7 @@ const AI_PROVIDER_HOSTS = [...new Set(
   [...AI_JS_SRC.matchAll(/(?:base|altBase): '(https?:\/\/[^'/]+)/g)]
     .map(m => m[1]).filter(h => !/localhost|127\.0\.0\.1/.test(h))
 )];
-const ADSENSE_PUB = "ca-pub-3609480297931487";
+const ADSENSE_PUB = "ca-pub-8454405576477743";
 // The rest of the policy: scripts, styles, images, audio, frames only from
 // this site (plus giscus for comments); no plugins, no <base> or form tricks.
 // Inline scripts stay allowed — the pages are built with many of them — but a
