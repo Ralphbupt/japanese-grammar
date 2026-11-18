@@ -324,6 +324,10 @@ html.theme-dark .q-ai .q-btn:not(.q-ai-main) { border-color: color-mix(in srgb, 
 
 body.quiz-busy .quiz-about { display: none; }
 .q-okj { color: var(--text-muted); font-size: .85em; margin-left: .2em; }
+/* Option read-aloud: 🔊 to the right of the option box, after answering. */
+.q-opts li.q-has-say { display: flex; align-items: center; gap: .4rem; }
+.q-opts li.q-has-say > .q-opt { flex: 1; min-width: 0; }
+.q-osay { flex: none; margin: 0; padding: .35rem .5rem; font-size: .95rem; }
 /* Phones: the kanji gloss goes under the option instead of squeezing beside it */
 @media (max-width: 600px) {
   .q-opt:has(.q-okj) { display: grid; grid-template-columns: auto 1fr auto; align-items: center; column-gap: .8rem; row-gap: .1rem; text-align: left; }

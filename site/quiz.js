@@ -1087,6 +1087,11 @@
       else if (i === choice) opts[i].classList.add('q-bad');
       if (okjOf(q, i)) opts[i].insertAdjacentHTML('beforeend', okjOf(q, i));
       if (q.spoken) opts[i].insertAdjacentHTML('beforeend', ckOptText(q, i));
+      // 🔊 beside the option (not inside: the option button is disabled now).
+      if (q.oa && q.oa[i] && !opts[i].parentNode.querySelector('.q-osay')) {
+        opts[i].parentNode.classList.add('q-has-say');
+        opts[i].insertAdjacentHTML('afterend', '<button class="q-say q-osay" data-act="say" data-k="' + q.oa[i] + '" aria-label="' + t('听这个选项', 'Play this option') + '" title="' + t('听这个选项', 'Play this option') + '">🔊</button>');
+      }
     }
     if (q.spoken && opts.length) opts[0].closest('ol').classList.add('q-ck-shown');
     if (q.type === 'narabe') {

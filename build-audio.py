@@ -85,7 +85,7 @@ def spoken(text):
     return text
 OUT_DIR = os.path.join(os.path.dirname(__file__), "audio")
 REQUESTS_PATH = os.path.join(os.path.dirname(__file__), "dist", ".audio-requests.json")
-MAX_CONCURRENT = 8
+MAX_CONCURRENT = int(os.environ.get("TTS_CONCURRENCY", "8"))   # lower it after a 429 (rate limit)
 
 
 async def generate_one(text, filepath, semaphore):
