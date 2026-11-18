@@ -636,6 +636,7 @@ async function bundleLevel(level, ruby, mock) {
       ...(q.kj ? { kj: await render(q.kj, true) } : {}),
       ...(q.okj && q.okj.some(Boolean) ? { okj: q.okj } : {}),
       ...((sa) => sa ? { sa } : {})(sentenceAudio(q)),
+      ...((oa) => oa ? { oa } : {})(optionAudio(q)),
       ...(q.tr ? { tr: q.tr } : {}),
       why: q.why, wrong: q.wrong,
       rev: q.rev || 1,
@@ -740,6 +741,25 @@ function sentenceAudio(q) {
   const id = "q" + require("crypto").createHash("sha1").update(text).digest("hex").slice(0, 12);
   if (!AUDIO_REQUESTS.some((r) => r.id === id)) AUDIO_REQUESTS.push({ id, text });
   return fs.existsSync(path.join(ROOT, "audio", `${id}.mp3`)) ? id : null;
+}
+
+// Read-aloud audio per option (🔊 beside each option after answering, owner
+// 2026-11-18) for the vocabulary types whose options are all correct Japanese
+// (言い換え, 文脈規定); in 用法 only the right option is used correctly, so only
+// it. The kanji version (okj) is what gets spoken, so 易しい isn't misread.
+const OPTION_AUDIO = new Set(["iikae", "bunmyaku", "youhou"]);
+function optionAudio(q) {
+  if (q.passage || !OPTION_AUDIO.has(q.type)) return null;
+  const ids = q.options.map((o, i) => {
+    if (q.type === "youhou" && i !== q.answer) return null;
+    const text = String((q.okj && q.okj[i]) || o).replace(/<[^>]+>|<<|>>/g, "")
+      .replace(/(?<=[^\x00-\x7f])[ 　]+(?=[^\x00-\x7f])/g, "").trim();
+    if (text.length < 2 || /（\s*）|＿/.test(text)) return null;
+    const id = "o" + require("crypto").createHash("sha1").update(text).digest("hex").slice(0, 12);
+    if (!AUDIO_REQUESTS.some((r) => r.id === id)) AUDIO_REQUESTS.push({ id, text });
+    return fs.existsSync(path.join(ROOT, "audio", `${id}.mp3`)) ? id : null;
+  });
+  return ids.some(Boolean) ? ids : null;
 }
 
 // A mock test: the questions without anything that gives the answer away,
