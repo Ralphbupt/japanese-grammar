@@ -8,7 +8,9 @@
   function savePrefs(patch) {
     var p = loadPrefs();
     for (var k in patch) p[k] = patch[k];
+    p.uiT = Date.now();   // sync.js: the later furigana / language choice wins across devices
     localStorage.setItem(STORE_KEY, JSON.stringify(p));
+    if (window.jpSync) window.jpSync.changed();
   }
   function isEnUi() {
     return document.body.classList.contains('lang-en');
