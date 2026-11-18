@@ -181,4 +181,22 @@ test("feedback reply ids from both devices are kept, also across a replace", () 
   assert.deepStrictEqual(merge(cleared, b).fbRids.sort(), ["a1", "b1"]);
   assert.ok(!("fbRids" in merge(base({}), base({}))));
 });
+test("lesson ticks: per box the later of ticking and unticking", () => {
+  const a = base({ gchecks: { "lesson05:0": 100, "lesson05:1": -300, "lesson06:0": 1 }, at: 1 });
+  const b = base({ gchecks: { "lesson05:0": -200, "lesson05:1": 250, "lesson07:2": 400 }, at: 2 });
+  assert.deepStrictEqual(merge(a, b).gchecks, { "lesson05:0": -200, "lesson05:1": -300, "lesson06:0": 1, "lesson07:2": 400 });
+});
+
+test("furigana / language: the later choice wins; none stays none", () => {
+  const a = base({ ui: { hideRuby: true, isEn: false, t: 500 } }), b = base({ ui: { hideRuby: false, isEn: true, t: 900 } });
+  assert.deepStrictEqual(merge(a, b).ui, b.ui);
+  assert.deepStrictEqual(merge(b, a).ui, b.ui);
+  assert.ok(!("ui" in merge(base(), base())));
+});
+
+test("replacing progress (higher epoch) still merges lesson ticks", () => {
+  const a = base({ epoch: 2, gchecks: { "lesson05:0": 100 } }), b = base({ epoch: 1, gchecks: { "lesson06:0": 200 } });
+  assert.deepStrictEqual(merge(a, b).gchecks, { "lesson05:0": 100, "lesson06:0": 200 });
+});
+
 console.log(n + " tests passed");

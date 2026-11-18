@@ -56,6 +56,7 @@
       o.session = local.session || null;
       o.fbRids = rids(local, remote);   // replacing progress doesn't lose the way replies to feedback come back
       if (!o.fbRids.length) delete o.fbRids;
+      lessonState(o, local, remote);    // nor the lesson ticks and display prefs, which live outside jp_quiz_v1
       return o;
     }
     var a = local, b = remote, prim = (a.at || 0) >= (b.at || 0) ? a : b, sec = prim === a ? b : a;
@@ -115,10 +116,27 @@
       out.words[w] = !x ? y : !y ? x : Math.abs(x.t || 0) >= Math.abs(y.t || 0) ? x : y;
     });
     var r = rids(a, b); if (r.length) out.fbRids = r;
+    lessonState(out, a, b);
     out.at = Math.max(a.at || 0, b.at || 0);
     // Fields a newer quiz.js may add: the more recent side's.
     keys(prim, sec).forEach(function (k) { if (!(k in out)) out[k] = k in prim ? prim[k] : sec[k]; });
     return out;
+  }
+
+  // Lesson review ticks (gchecks: 'lesson05:2' → +ms ticked / −ms unticked,
+  // per box the later) and the furigana / language choice (ui: { hideRuby,
+  // isEn, t }, the one chosen later). They live in their own localStorage keys
+  // (jp_grammar_checks, jp_grammar_prefs); withLesson() / putLesson() carry
+  // them in and out of the synced copy.
+  function lessonState(out, a, b) {
+    var g = {};
+    keys(a.gchecks, b.gchecks).forEach(function (k) {
+      var x = (a.gchecks || {})[k] || 0, y = (b.gchecks || {})[k] || 0;
+      g[k] = Math.abs(x) >= Math.abs(y) ? x : y;
+    });
+    if (Object.keys(g).length) out.gchecks = g; else delete out.gchecks;
+    var ua = a.ui, ub = b.ui, u = !ua ? ub : !ub ? ua : (ub.t || 0) > (ua.t || 0) ? ub : ua;
+    if (u) out.ui = u; else delete out.ui;
   }
 
   // The ids feedback.js gave the notes sent from each device (a reply to any
@@ -221,6 +239,29 @@
     set: function (s) { ls.set(QUIZ_KEY, JSON.stringify(s)); }
   };
   function state() { return root.jpQuizState || stored; }
+  function lsJson(k) { try { return JSON.parse(ls.get(k)) || {}; } catch (e) { return {}; } }
+  // The synced copy = jp_quiz_v1 + the lesson ticks and display prefs (lessonState()).
+  function withLesson(s) {
+    var o = {}; for (var k in s) o[k] = s[k];
+    var c = lsJson('jp_grammar_checks'), p = lsJson('jp_grammar_prefs');
+    if (Object.keys(c).length) o.gchecks = c; else delete o.gchecks;
+    if ('isEn' in p || 'hideRuby' in p) o.ui = { hideRuby: !!p.hideRuby, isEn: 'isEn' in p ? !!p.isEn : null, t: p.uiT || 0 }; else delete o.ui;
+    return o;
+  }
+  function putLesson(s) {
+    var o = {}; for (var k in s) if (k !== 'gchecks' && k !== 'ui') o[k] = s[k];
+    if (s.gchecks && canon(s.gchecks) !== canon(lsJson('jp_grammar_checks'))) {
+      ls.set('jp_grammar_checks', JSON.stringify(s.gchecks));
+      document.dispatchEvent(new CustomEvent('jp-checks'));     // an open lesson page re-ticks its boxes
+    }
+    var p = lsJson('jp_grammar_prefs'), u = s.ui;
+    if (u && u.t > (p.uiT || 0)) {
+      p.hideRuby = !!u.hideRuby; if (u.isEn != null) p.isEn = !!u.isEn; p.uiT = u.t;
+      ls.set('jp_grammar_prefs', JSON.stringify(p));
+      document.body.classList.toggle('hide-ruby', !!u.hideRuby);   // the language takes effect on the next page
+    }
+    return o;
+  }
   var remote = null;                            // { version, data } as last seen on the server
   var busy = false, again = false, timer = null, status = { kind: 'idle' };
   function setStatus(kind, msg) {
@@ -239,15 +280,15 @@
     setStatus('busy');
     var tries = 0, st = state(), moved = false;      // moved: something actually came down or went up
     function step() {
-      var mine = st.get(), merged = merge(mine, remote.data && clone(remote.data));   // a copy: quiz.js will change what it is given
+      var mine = withLesson(st.get()), merged = merge(mine, remote.data && clone(remote.data));   // a copy: quiz.js will change what it is given
       if (remote.data && !same(merged, mine)) {
         var a = acct();
         if (!a.backup) { ls.set('jp_quiz_v1_backup', JSON.stringify({ at: Date.now(), data: mine })); a.backup = 1; setAcct(a); }
-        st.set(merged); moved = true;
+        st.set(putLesson(merged)); moved = true;
         // Progress from another device arrived here: the thing accounts are for.
         track('account_merge', { answers: Object.keys(merged.answers || {}).length - Object.keys(mine.answers || {}).length });
       }
-      var cur = st.get();
+      var cur = withLesson(st.get());
       if (remote.data && same(cur, remote.data)) return;
       var send = strip(cur); send.at = cur.at || Date.now();
       return api('PUT', '/sync', { version: remote.version, data: send }).then(function (r) {
@@ -526,6 +567,11 @@
 
   // Signed in: a practice page fetches the server's copy once its scripts have
   // run. Other pages change nothing and don't ask; opening the panel does.
-  function start() { if (acct().token && root.jpQuizState) pull(); }
+  // Practice pages, and pages with review ticks (lessons, checklists) unless
+  // checked in the last 10 minutes, fetch the latest copy on load.
+  function start() {
+    if (!acct().token) return;
+    if (root.jpQuizState || (document.querySelector('input[type="checkbox"][data-lesson]') && Date.now() - (acct().at || 0) > 600000)) pull();
+  }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else setTimeout(start, 0);
 })(typeof window !== 'undefined' ? window : this);

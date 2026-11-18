@@ -241,7 +241,7 @@ const LANG_PREF_JS = `(function(){
   var langBtn = document.getElementById('lang-btn');
   var STORE_KEY = 'jp_grammar_prefs';
   function loadPrefs() { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch(e) { return {}; } }
-  function savePrefs(patch) { var p = loadPrefs(); for (var k in patch) p[k] = patch[k]; localStorage.setItem(STORE_KEY, JSON.stringify(p)); }
+  function savePrefs(patch) { var p = loadPrefs(); for (var k in patch) p[k] = patch[k]; p.uiT = Date.now(); localStorage.setItem(STORE_KEY, JSON.stringify(p)); if (window.jpSync) window.jpSync.changed(); }
   var prefs = loadPrefs();
   var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
   if (isEn) document.body.classList.add('lang-en');
@@ -442,7 +442,7 @@ const RUBY_PREF_JS = `(function(){
   if (!rubyToggle) return;
   var STORE_KEY = 'jp_grammar_prefs';
   function loadPrefs() { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch(e) { return {}; } }
-  function savePrefs(patch) { var p = loadPrefs(); for (var k in patch) p[k] = patch[k]; localStorage.setItem(STORE_KEY, JSON.stringify(p)); }
+  function savePrefs(patch) { var p = loadPrefs(); for (var k in patch) p[k] = patch[k]; p.uiT = Date.now(); localStorage.setItem(STORE_KEY, JSON.stringify(p)); if (window.jpSync) window.jpSync.changed(); }
   var prefs = loadPrefs();
   if (prefs.hideRuby) { rubyToggle.checked = false; document.body.classList.add('hide-ruby'); }
   rubyToggle.addEventListener('change', function(){
@@ -3556,19 +3556,28 @@ ${APP_PREFS_JS}
     bar.style.width = pct + '%';
     text.textContent = done + ' / ' + boxes.length + ' (' + pct + '%)';
   }
-  var checks = loadChecks();
+  // A value is the time of the tick (ms; 1 before 2026-11-18), negative once
+  // unticked, so sync.js can merge two devices' boxes by whichever was later.
+  function applyChecks() {
+    var checks = loadChecks();
+    boxes.forEach(function(cb){
+      var on = (checks[cb.getAttribute('data-lesson') + ':' + cb.getAttribute('data-idx')] || 0) > 0;
+      cb.checked = on; cb.closest('li').classList.toggle('checked', on);
+    });
+    updateProgress();
+  }
   boxes.forEach(function(cb){
-    var key = cb.getAttribute('data-lesson') + ':' + cb.getAttribute('data-idx');
-    if (checks[key]) { cb.checked = true; cb.closest('li').classList.add('checked'); }
     cb.addEventListener('change', function(){
       var c = loadChecks();
       var k = this.getAttribute('data-lesson') + ':' + this.getAttribute('data-idx');
-      if (this.checked) { c[k] = 1; this.closest('li').classList.add('checked'); }
-      else { delete c[k]; this.closest('li').classList.remove('checked'); }
+      c[k] = this.checked ? Date.now() : -Date.now();
+      this.closest('li').classList.toggle('checked', this.checked);
       saveChecks(c);
       updateProgress();
+      if (window.jpSync) window.jpSync.changed();
     });
   });
+  document.addEventListener('jp-checks', applyChecks);   // ticks from another device arrived
   // Lessons: the boxes are the review schedule at the bottom, so the bar sits
   // just above that list. Checklist pages: it tracks the whole page, under the H1.
   var lesson = /^lesson\\d/.test(boxes[0].getAttribute('data-lesson'));
@@ -3582,7 +3591,7 @@ ${APP_PREFS_JS}
       '</span><div class="progress-bar"><div class="progress-fill"></div></div><span class="progress-text">0 / 0</span>';
     if (lesson) anchor.before(div); else anchor.after(div);
   }
-  updateProgress();
+  applyChecks();
 })();
 </script>
 </body>
