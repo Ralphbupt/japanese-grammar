@@ -813,7 +813,10 @@
     var ids = Object.keys(curs);
     if (ids.some(function (id) { return !curs[id].hasPend; })) return;
     var go = app.querySelector('.q-group-go'); if (go) go.remove();
-    ids.forEach(function (id) { cur = curs[id]; submit(cur.pend); });
+    // The sub-questions share one stretch of time: split it, or a passage with
+    // three questions counts its reading time three times in 用时.
+    var now = Date.now(), share = (now - Math.min.apply(null, ids.map(function (id) { return curs[id].start; }))) / ids.length;
+    ids.forEach(function (id) { cur = curs[id]; cur.start = now - share; submit(cur.pend); });
     var first = app.querySelector('.q-sub'); if (first) first.scrollIntoView({ block: 'start', behavior: 'smooth' });
   }
   // Back link, previous-question link, position, type, progress bar.
