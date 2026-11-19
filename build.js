@@ -5445,7 +5445,12 @@ Each \`/lessonNN/\` page contains:
     rules.push("/zh / 302", "/zh/ / 302");
     if (rules.length > 2000) throw new Error(`_redirects: ${rules.length} rules, Cloudflare allows 2,000 static ones`);
     fs.writeFileSync(path.join(dist, "_redirects"), rules.join("\n") + "\n", "utf-8");
-    fs.writeFileSync(path.join(dist, "_headers"), "/*\n  X-Content-Type-Options: nosniff\n\n/anki/*.apkg\n  Content-Type: application/octet-stream\n  Content-Disposition: attachment\n", "utf-8");
+    // Pages say UTF-8 in the header too: Cloudflare sends a bare "text/html", and
+    // crawlers that don't read <meta charset> (OER Commons' tag import, ad
+    // previews) then decode as Latin-1 — 日本語 and emoji came out as mojibake / "??".
+    // Pages live at /, /x/ and /x/y/; a placeholder never matches a file with an extension.
+    const HTML_UTF8 = ["/", "/:a/", "/:a/:b/"].map((p) => `${p}\n  Content-Type: text/html; charset=utf-8\n`).join("\n");
+    fs.writeFileSync(path.join(dist, "_headers"), "/*\n  X-Content-Type-Options: nosniff\n\n" + HTML_UTF8 + "\n/anki/*.apkg\n  Content-Type: application/octet-stream\n  Content-Disposition: attachment\n", "utf-8");
     // AdSense: the publisher authorised to sell ads on this site (the head meta tag is the verification).
     fs.writeFileSync(path.join(dist, "ads.txt"), `google.com, ${ADSENSE_PUB.replace(/^ca-/, "")}, DIRECT, f08c47fec0942fa0\n`, "utf-8");
     console.log(`  Generated dist/_redirects (${rules.length} rules), dist/_headers, dist/ads.txt`);
