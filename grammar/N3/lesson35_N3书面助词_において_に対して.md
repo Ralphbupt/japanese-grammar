@@ -1,6 +1,14 @@
 # Lesson 35 – N3 书面助词 — において/に対して/について/によって/を通じて/をもとに||N3 Written-Language Particles — において/に対して/について/によって/を通じて/をもとに
 
 :::zh
+**一句话答案：**において＝「在（某场所、时间、领域）」，相当于书面的「で」（会議は東京において行われる：会议在东京举行）；について＝「关于（某个话题）」（日本の歴史について話す：谈论日本历史）；における和において意思相同，但放在名词前面修饰名词（日本における教育：日本的教育）。
+:::
+
+:::en
+**Quick answer:** において (ni oite) means “in / at” a place, time or field — a formal 「で」: 会議は東京において行われる “The meeting will be held in Tokyo.” について (ni tsuite) means “about / concerning” a topic: 日本の歴史について話す “talk about Japanese history.” における (ni okeru) means the same as において but comes before a noun: 日本における教育 “education in Japan.”
+:::
+
+:::zh
 这些语法是书面正式表达，本质上是助词「で」「に」的升级版。口语中用简单助词就够了，但阅读和考试中大量出现。
 :::
 

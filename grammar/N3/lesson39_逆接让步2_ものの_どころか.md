@@ -1,6 +1,14 @@
 # Lesson 39 – 逆接让步 2 — にしても/ものの/とはいえ/どころか||Concession & Contrast 2 — にしても/ものの/とはいえ/どころか — “Even If” / “Even So” in Japanese
 
 :::zh
+**一句话答案：**口语里「尽管如此」说「それでも」，「即使……也」用「〜ても」（雨が降っても行く：即使下雨也去）。本课讲书面说法：とはいえ（话虽如此）、ものの（虽然……但）、にしても（就算……也）。例如：春とはいえ、まだ寒い（虽说是春天，还是很冷）。
+:::
+
+:::en
+**Quick answer:** In everyday Japanese, “even so” is それでも (sore demo) and “even if” is 〜ても: 雨が降っても行く “I'll go even if it rains.” This lesson covers the written versions — とはいえ “even so / that said”, ものの “although”, にしても “even if / granted that”: 春とはいえ、まだ寒い “It's spring, but even so it's still cold.”
+:::
+
+:::zh
 这一课继续学习"逆接/让步"类语法，这四个表达比上一课更加书面化和微妙。掌握它们能大幅提升阅读理解能力和写作的表达深度。
 :::
 

@@ -1,6 +1,14 @@
 # Lesson 53 – 否定関連 — ないことはない/ずにはいられない/そうもない/決して〜ない/別に〜ない/めったに〜ない||Negation-Related — ないことはない/ずにはいられない/そうもない/決して〜ない/別に〜ない/めったに〜ない — “Never” / “Rarely” in Japanese
 
 :::zh
+**一句话答案：**「绝不／从不」用決して〜ない（決して嘘をつかない：我绝不说谎）；「很少」用めったに〜ない（彼はめったに怒らない：他很少生气）。两者句尾都要接否定形。決して语气强、偏书面，口语常说「絶対に〜ない」；「从来没做过」用「〜たことがない」（日本に行ったことがない：没去过日本）。
+:::
+
+:::en
+**Quick answer:** “Never” is 決して〜ない (kesshite … nai): 決して嘘をつかない “I never lie.” “Rarely” is めったに〜ない (metta ni … nai): 彼はめったに怒らない “He rarely gets angry.” Both end in a negative verb. 決して is strong and a little formal — in conversation people often say 絶対に〜ない. For “have never done”, use 〜たことがない: 日本に行ったことがない “I've never been to Japan.”
+:::
+
+:::zh
 这一课集中学习N3中和"否定"相关的语法。「ないことはない」是双重否定表示委婉肯定，「ずにはいられない」表示忍不住，「そうもない」表示看起来不会发生，「決して〜ない」表示绝对否定，「別に〜ない」表示并不特别怎样，「めったに〜ない」表示很少发生。这些否定表达在N3的语法选择题和阅读理解中经常出现。
 :::
 

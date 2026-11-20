@@ -1207,6 +1207,9 @@ function extractFirstMeaningEn(md) {
 function leadToPlainText(text, maxLen = 160) {
   let s = text;
   s = s.replace(/^\s*接[续続][:：][^\n]*\n+/, "");
+  // A lesson may open with a direct answer for searchers (see lesson53); its
+  // label is for the page, not for the search snippet.
+  s = s.replace(/^\s*\*\*(Quick answer:|一句话答案：)\*\*\s*/, "");
   s = s
     .replace(/\*\*([^*]+)\*\*/g, "$1")
     .replace(/[*_`]/g, "")
@@ -3298,7 +3301,7 @@ ${AI_SCRIPT}
     // At the end of the lesson, a card after the last point (the owner chose
     // the end over a button under the title, 2026-10-30); each point also gets
     // its own link. data-ql says which one was clicked (GA quiz_link).
-    const lessonLink = total ? `<div class="quiz-cta"><p><span class="lang-zh">${hasEx ? "课里的练习做完了？" : "学完这一课？"}再做 ${total} 道 JLPT 题型的在线题${withVocab ? "（语法 + 词汇）" : ""}：点了就判分、每题有解析，错题会自动记下来。</span><span class="lang-en">${hasEx ? "Done with the exercises above?" : "Finished the lesson?"} Try ${total} JLPT-style questions online${withVocab ? " (grammar + vocabulary)" : ""}: marked as you go, each explained, and the ones you miss are saved for review.</span></p><a href="${lessonHref}" data-ql="end">✍ <span class="lang-zh">在线做题</span><span class="lang-en">Practise online</span> →</a></div>\n` : "";
+    const lessonLink = total ? `<div class="quiz-cta"><p><span class="lang-zh">${hasEx ? "课里的练习做完了？" : "学完这一课？"}再做 ${total} 道 JLPT 题型的在线题${withVocab ? "（语法 + 词汇）" : ""}：点了就判分、每题有解析，错题会自动记下来。</span><span class="lang-en">${hasEx ? "Done with the exercises above?" : "Finished the lesson?"} Try ${total} JLPT-style questions online${withVocab ? " (grammar + vocabulary)" : ""}: marked as you go, each explained, and the ones you miss are saved for review.</span></p><a href="${lessonHref}" data-ql="end">✍ <span class="lang-zh">JLPT ${level} 在线练习题</span><span class="lang-en">JLPT ${level} practice questions</span> →</a></div>\n` : "";
     // Lessons that teach a higher level's grammar early (ABOVE_LEVEL in
     // build-quiz.js) say so, and point to that level's practice, which has
     // these questions as ordinary ones.
