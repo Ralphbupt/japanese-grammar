@@ -2232,6 +2232,22 @@ async function main() {
       fs.existsSync(path.join(__dirname, "questions", "grammar-audio", `${lv}.json`)) && { href: `${SITE_PATH}${lv}-grammar-audio/`, zh: "🎧 语法听读", en: "🎧 Grammar audio" },
     ].filter(Boolean);
   };
+  // Grammar audio: lesson id → { level page, points } (questions/grammar-audio/{lv}.json).
+  let gaLessonMap = null;
+  const gaLesson = (id) => {
+    if (!gaLessonMap) {
+      gaLessonMap = {};
+      for (const lv of ["n5", "n4", "n3", "n2", "n1"]) {
+        const f = path.join(__dirname, "questions", "grammar-audio", `${lv}.json`);
+        if (!fs.existsSync(f)) continue;
+        for (const it of JSON.parse(fs.readFileSync(f, "utf-8")).items) {
+          const e = gaLessonMap[it.lesson] = gaLessonMap[it.lesson] || { lv, n: 0 };
+          e.n++;
+        }
+      }
+    }
+    return gaLessonMap[id];
+  };
   const articlesHtml = [];
   const audioRequests = [];
   const audioSeen = new Set();
@@ -2550,6 +2566,7 @@ async function main() {
       <a class="nav-item nav-overview" href="${SITE_PATH}reading/"><span class="lang-zh">阅读总览</span><span class="lang-en">Reading</span></a>
       <a class="nav-item nav-overview" href="${SITE_PATH}vocabulary/"><span class="lang-zh">词汇总览</span><span class="lang-en">Vocabulary</span></a>
       <a class="nav-item nav-overview" href="${SITE_PATH}mock-test/"><span class="lang-zh">模拟题总览</span><span class="lang-en">Mock tests</span></a>
+      ${practiceItems.some((q) => q.href.endsWith("-grammar-audio/")) ? `<a class="nav-item nav-overview" href="${SITE_PATH}grammar-audio/"><span class="lang-zh">语法听读</span><span class="lang-en">Grammar audio</span></a>` : ""}
     </div>
   </div>`);
 
@@ -3267,7 +3284,7 @@ ${AI_SCRIPT}
   // ─── Generate individual lesson pages ───
   // Pages published once per language (PAGE_LANGS); links to them on a
   // non-root copy point at that language's copy.
-  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "practice", "listening", "reading", "vocabulary", "mock-test", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`, `${l}-grammar-audio`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
+  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "practice", "listening", "reading", "vocabulary", "mock-test", "grammar-audio", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`, `${l}-grammar-audio`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
   // "Practice this point" at the end of every grammar point that has practice
   // questions (questions/N*/lessonNN.json refs), linking to the practice page.
   const quizRefCount = {};
@@ -3307,7 +3324,9 @@ ${AI_SCRIPT}
     // At the end of the lesson, a card after the last point (the owner chose
     // the end over a button under the title, 2026-10-30); each point also gets
     // its own link. data-ql says which one was clicked (GA quiz_link).
-    const lessonLink = total ? `<div class="quiz-cta"><p><span class="lang-zh">${hasEx ? "课里的练习做完了？" : "学完这一课？"}再做 ${total} 道 JLPT 题型的在线题${withVocab ? "（语法 + 词汇）" : ""}：点了就判分、每题有解析，错题会自动记下来。</span><span class="lang-en">${hasEx ? "Done with the exercises above?" : "Finished the lesson?"} Try ${total} JLPT-style questions online${withVocab ? " (grammar + vocabulary)" : ""}: marked as you go, each explained, and the ones you miss are saved for review.</span></p><a href="${lessonHref}" data-ql="end">✍ <span class="lang-zh">JLPT ${level} 在线练习题</span><span class="lang-en">JLPT ${level} practice questions</span> →</a></div>\n` : "";
+    const gl = gaLesson(id);
+    const audioLink = gl ? `<p class="quiz-link"><a href="${SITE_PATH}${gl.lv}-grammar-audio/#ga-${id}" data-ql="audio">🎧 <span class="lang-zh">听本课语法（${gl.n} 个语法点，带例句朗读）</span><span class="lang-en">Listen to this lesson's grammar (${gl.n} point${gl.n > 1 ? "s" : ""}, examples read aloud)</span></a></p>\n` : "";
+    const lessonLink = audioLink + (!total ? "" : `<div class="quiz-cta"><p><span class="lang-zh">${hasEx ? "课里的练习做完了？" : "学完这一课？"}再做 ${total} 道 JLPT 题型的在线题${withVocab ? "（语法 + 词汇）" : ""}：点了就判分、每题有解析，错题会自动记下来。</span><span class="lang-en">${hasEx ? "Done with the exercises above?" : "Finished the lesson?"} Try ${total} JLPT-style questions online${withVocab ? " (grammar + vocabulary)" : ""}: marked as you go, each explained, and the ones you miss are saved for review.</span></p><a href="${lessonHref}" data-ql="end">✍ <span class="lang-zh">JLPT ${level} 在线练习题</span><span class="lang-en">JLPT ${level} practice questions</span> →</a></div>\n`);
     // Lessons that teach a higher level's grammar early (ABOVE_LEVEL in
     // build-quiz.js) say so, and point to that level's practice, which has
     // these questions as ordinary ones.
@@ -4897,8 +4916,22 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
         },
       };
       for (const lang of PAGE_LANGS) {
-        const body = grammarAudioBody(ga, lang.code === "zh" ? "zh" : "en", gaId);
-        writeLangPage(gaId, lang, localizePage(renderQuiz(lang, { ...gaMeta[lang.code], body }, langVariant(gaId, lang), level, null), lang, localizedPageIds));
+        const code = lang.code === "zh" ? "zh" : "en", en = code === "en", m = gaMeta[lang.code], v = langVariant(gaId, lang), tr = ga.tracks[code];
+        const body = grammarAudioBody(ga, code, gaId);
+        const dur = Math.round(tr.duration), iso = `PT${Math.floor(dur / 60)}M${dur % 60}S`;
+        const schema = JSON.stringify([
+          { "@context": "https://schema.org", "@type": "LearningResource", name: m.h1, description: m.desc, url: v.url, inLanguage: en ? "en" : "zh-Hans",
+            educationalLevel: `JLPT ${level}`, isAccessibleForFree: true, learningResourceType: "Audio", timeRequired: iso,
+            teaches: ga.items.slice(0, 30).map((it) => it.term).join(", "),
+            about: { "@type": "Thing", name: "Japanese grammar" }, provider: { "@type": "Organization", name: "jpnotes.dev", url: SITE },
+            audio: { "@type": "AudioObject", name: m.h1, contentUrl: /^https?:/.test(AUDIO_BASE) ? `${AUDIO_BASE}/${tr.src}` : `${SITE}${AUDIO_BASE.replace(/^\//, "")}/${tr.src}`, encodingFormat: "audio/mpeg", duration: iso, inLanguage: ["ja", en ? "en" : "zh-Hans"] } },
+          { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+            { "@type": "ListItem", position: 1, name: en ? "Japanese Grammar Notes" : "日语语法笔记", item: SITE },
+            { "@type": "ListItem", position: 2, name: level, item: `${SITE}${level}/` },
+            { "@type": "ListItem", position: 3, name: m.crumb, item: v.url }] },
+        ]).replace(/</g, "\\u003c");
+        const nav = `${m.nav} <a href="${SITE_PATH}grammar-audio/">🎧 ${en ? "Grammar audio for every level" : "各级别语法听读"}</a>`;
+        writeLangPage(gaId, lang, localizePage(renderQuiz(lang, { ...m, nav, body, schema }, v, level, null), lang, localizedPageIds));
       }
       quizPageIds.push(gaId);
       console.log(`  Generated dist/${gaId}/ (${n} grammar points)`);
@@ -5004,7 +5037,7 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
       <td><a class="hub-go" href="${SITE_PATH}${lv}-listening/"><b>${L("听力练习", "Listening practice")}</b><span>${L(`${x.recs} 段录音 · ${x.types.length} 种题型`, `${x.recs} recordings · ${x.types.length} item types`)}</span></a></td>
       <td>${x.mock ? `<a class="hub-go" href="${SITE_PATH}${lv}-mock-test/"><b>${L("模拟题", "Mock test")}</b><span>${L("听力在最后一场", "Listening is the last sitting")}</span></a>` : ""}</td></tr>`;
     };
-    const about = (L) => `${tipsLink("jlpt-listening-tips", L, "听力做题技巧：每种题型先看什么、听什么，常见陷阱", "Listening tips: what to read first and listen for in each item type, and the usual traps")}<section class="quiz-about">
+    const about = (L) => `${tipsLink("jlpt-listening-tips", L, "听力做题技巧：每种题型先看什么、听什么，常见陷阱", "Listening tips: what to read first and listen for in each item type, and the usual traps")}<p class="hub-listen">🎧 <b><a href="${SITE_PATH}grammar-audio/">${L("语法听读：N5–N1 每个语法点带例句朗读，可以当播客连播", "Grammar audio: every N5–N1 grammar point read aloud with examples, playable like a podcast")}</a></b></p><section class="quiz-about">
 <h2>${L("这里能练什么", "What you get")}</h2>
 <ul>
 <li>${L(`${total} 段原创录音，覆盖 N5 到 N1 的全部听力题型。`, `${total} original recordings, covering every listening item type from N5 to N1.`)}</li>
@@ -5165,6 +5198,50 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
 <dt>${L("估分准吗？", "How accurate is the score?")}</dt><dd>${L("只是粗略估计。真考用等化计分，不是按答对题数直接换算。", "It's a rough estimate. The real test uses scaled scoring, not a straight count of correct answers.")}</dd>
 </dl>
 </section>`, "Practice test");
+  }
+
+  // /grammar-audio/: the level-less page for "japanese grammar audio" searches;
+  // the level pages (questions/grammar-audio/{lv}.json) hold the player.
+  {
+    const gaStats = Object.fromEntries(ORDER5.map((l) => {
+      const f = path.join(__dirname, "questions", "grammar-audio", `${l.toLowerCase()}.json`);
+      if (!fs.existsSync(f)) return [l, null];
+      const ga = JSON.parse(fs.readFileSync(f, "utf-8"));
+      return [l, { n: ga.items.length, lessons: new Set(ga.items.map((it) => it.lesson)).size, exam: ga.items.filter((it) => (it.exam || []).length).length, min: { en: Math.round(ga.tracks.en.duration / 60), zh: Math.round(ga.tracks.zh.duration / 60) } }];
+    }));
+    const gaLevels = ORDER5.filter((l) => gaStats[l]);
+    const total = gaLevels.reduce((a, l) => a + gaStats[l].n, 0);
+    if (gaLevels.length) hubPage("grammar-audio", {
+      en: { title: "JLPT Grammar Audio — Free N5 to N1 Grammar Read Aloud with Examples", desc: `Listen to all ${total} JLPT grammar points from N5 to N1: each pattern, its meaning in English and two example sentences with translations, read aloud. Free, no sign-up, works on your phone.`, h1: "JLPT Grammar Audio", crumb: "Grammar audio", lead: "Choose your level. Every grammar point is read as pattern → meaning → example → translation; play a whole level like a podcast, or one lesson or one line at a time." },
+      zh: { title: "JLPT 语法听读 - N5 到 N1 语法朗读，带例句和翻译，免费", desc: `免费 JLPT 语法朗读：N5 到 N1 共 ${total} 个语法点，每个都按「语法 → 中文意思 → 例句 → 翻译」读出来，可以像播客一样连播，也能单句循环，无需注册。`, h1: "JLPT 语法听读", crumb: "语法听读", lead: "选择你的级别。每个语法点按「语法 → 意思 → 例句 → 翻译」朗读；可以整级连播，也可以只听一课、一句。" },
+    }, (level, L) => { const x = gaStats[level], lv = level.toLowerCase();
+      if (!x) return "";
+      return `<tr><th scope="row"><span class="level-tag">${level}</span></th>
+      <td><a class="hub-go" href="${SITE_PATH}${lv}-grammar-audio/"><b>${L("语法听读", "Grammar audio")}</b><span>${L(`${x.n} 个语法点 · ${x.lessons} 课 · 约 ${x.min.zh} 分钟`, `${x.n} grammar points · ${x.lessons} lessons · about ${x.min.en} min`)}</span></a></td>
+      <td class="hub-types"><a href="${SITE_PATH}${lv}-cards/">${L("语法卡片", "Flashcards")}</a> · <a href="${SITE_PATH}${lv}-practice/">${L("练习题", "Practice")}</a></td></tr>`; },
+    (L) => `<section class="quiz-about">
+<h2>${L("每个语法点读什么", "What each grammar point sounds like")}</h2>
+<ol>
+<li>${L("语法本身（日语）", "The pattern, in Japanese")}</li>
+<li>${L("意思：一句话说清楚，中文页用中文，英文页用英文", "Its meaning in one sentence, in the page's language")}</li>
+<li>${L("两个例句（日语），每句后面跟它的翻译", "Two example sentences in Japanese, each followed by its translation")}</li>
+</ol>
+<p>${L("页面上同时列出接续方式和易混语法，还有课程里的更多例句。每个语法点都链接到详细讲解的课。", "The page also shows how each pattern attaches and what it gets confused with, plus more examples from the lessons. Every point links to the lesson that explains it.")}</p>
+<h2>${L("怎么用", "How to use it")}</h2>
+<ul>
+<li>${L("通勤、散步时整级连播，当播客听，熟悉每个语法的声音。", "On the commute or a walk, play a whole level like a podcast to get used to how each pattern sounds.")}</li>
+<li>${L("关掉「念翻译」只听日语，检查自己能不能马上听懂。", "Turn off the translations and listen to the Japanese alone, to check you understand it straight away.")}</li>
+<li>${L("「遮住意思」后先自己说出意思，再点开核对。", "Hide the meanings, say each one yourself, then reveal it to check.")}</li>
+<li>${L("听不熟的那一句用单句循环，跟着读几遍。", "Loop a line you don't know yet and shadow it a few times.")}</li>
+</ul>
+${gaLevels.includes("N2") && gaStats.N2.exam ? `<p>${L(`N2 页面标出了往年真题考过的语法（${gaStats.N2.exam} 个），考前可以优先听。`, `The N2 page marks the ${gaStats.N2.exam} patterns that have appeared on past tests, worth hearing first before the exam.`)}</p>` : ""}
+<h2>${L("常见问题", "Questions")}</h2>
+<dl>
+<dt>${L("免费吗？要注册吗？", "Is it free? Do I need an account?")}</dt><dd>${L("完全免费，没有广告，不用注册，用手机浏览器打开就能听。", "It's free, with no ads and no sign-up. Open it in your phone's browser.")}</dd>
+<dt>${L("是谁读的？", "Who is reading?")}</dt><dd>${L("AI 语音合成（Google Gemini）。每个日语例句都转写回文字核对过读音。", "AI speech (Google Gemini). Every Japanese example was transcribed back to text to check its reading.")}</dd>
+<dt>${L("可以下载吗？", "Can I download it?")}</dt><dd>${L("目前只能在线播放。想离线复习可以用 <a href=\"" + SITE_PATH + "anki/\">Anki 卡组</a>。", "Not for now; it plays online. To review offline, use the <a href=\"" + SITE_PATH + "anki/\">Anki decks</a>.")}</dd>
+</dl>
+</section>`, "Audio");
   }
 
   // Settings used to be a standalone page; it is now a modal on every page.
@@ -5358,6 +5435,7 @@ License: content CC BY-NC 4.0 (attribution, non-commercial); code MIT
 - [JLPT reading practice](${SITE}reading/): Free N5 to N1 reading passages with translations and explanations.
 - [JLPT vocabulary practice](${SITE}vocabulary/): Free N5 to N1 kanji and vocabulary questions with explanations.
 - [JLPT mock tests](${SITE}mock-test/): Free timed N5 to N1 mock tests with estimated scores.
+- [JLPT grammar audio](${SITE}grammar-audio/): Every N5 to N1 grammar point read aloud: pattern, meaning, two examples with translations.
 ${Object.entries(quizBundles).map(([l, b]) => { const v = l.toLowerCase(); return `- [JLPT ${l} practice questions](${SITE}${v}-practice/): ${b.practice.questions.length} questions by item type, with explanations.${SUBSET_PAGES.filter((p) => p.levels.includes(l)).map((p) => `\n- [JLPT ${l} ${p.id} practice](${SITE}${v}-${p.id}/): ${p.id} questions only, with explanations.`).join("")}${ckLevels.includes(l) ? `\n- [JLPT ${l} listening practice](${SITE}${v}-listening/): listening questions with audio, transcripts and explanations.` : ""}${b.mocks.length ? `\n- [JLPT ${l} mock test](${SITE}${v}-mock-test/): timed, real format, estimated score.` : ""}\n- [JLPT ${l} grammar flashcards](${SITE}${v}-cards/): one card per grammar point, spaced repetition.`; }).join("\n")}
 
 ## Guides (comparisons and exam prep)
@@ -5521,6 +5599,7 @@ Each \`/lessonNN/\` page contains:
     { slug: "reading", topLabel: "JLPT Reading · 阅读", mainTitle: "JLPT 読解練習", sub: "N5 → N1 · Every format · Translations", accent: "#b8283f" },
     { slug: "vocabulary", topLabel: "JLPT Vocabulary · 词汇", mainTitle: "JLPT 文字・語彙", sub: "N5 → N1 · Kanji · Words · Usage", accent: "#b8283f" },
     { slug: "mock-test", topLabel: "JLPT Mock Tests · 模拟题", mainTitle: "JLPT 模擬試験", sub: "N5 → N1 · Timed · Estimated score", accent: "#b8283f" },
+    { slug: "grammar-audio", topLabel: "JLPT Grammar Audio · 语法听读", mainTitle: "JLPT 文法 音声", sub: "N5 → N1 · Every pattern read aloud · Free", accent: "#b8283f" },
     { slug: "guides", topLabel: "Guides · 专题", mainTitle: "易混語法 対比", sub: "は vs が · から vs ので · JLPT 12月", accent: "#b8283f" },
   ];
   for (const p of indexOgPages) {
