@@ -372,14 +372,14 @@ Double negative → "It's not that I can't…" or "not impossible" — expresses
 ### 例句||Example Sentences
 :::zh
 1. 彼は**めったに**遅刻し**ない**。（他很少迟到。）
-2. この店は**めったに**空いて**ない**。（这家店很少不忙。）
+2. この店は**めったに**空いて**ない**。（这家店几乎没有不忙的时候。）
 3. **めったに**外食し**ない**。（很少在外面吃。）
 4. こんなチャンスは**めったに**ない。（这样的机会很难得。）
 5. 彼女は**めったに**怒ら**ない**から、怒ると怖い。（她很少生气，所以一生气很可怕。）
 :::
 :::en
 1. 彼は**めったに**遅刻し**ない**。(He rarely arrives late.)
-2. この店は**めったに**空いて**ない**。(This shop is rarely not busy.)
+2. この店は**めったに**空いて**ない**。(This shop is almost never quiet — there's nearly always a crowd.)
 3. **めったに**外食し**ない**。(I seldom eat out.)
 4. こんなチャンスは**めったに**ない。(An opportunity like this is rare.)
 5. 彼女は**めったに**怒ら**ない**から、怒ると怖い。(She rarely gets angry, so it's scary when she does.)
