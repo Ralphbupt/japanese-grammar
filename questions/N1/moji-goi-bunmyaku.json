@@ -110,38 +110,38 @@
   },
   {
     "id": "n1-mg-304",
-    "rev": 3,
+    "rev": 4,
     "type": "bunmyaku",
-    "difficulty": 2,
-    "stem": "謝罪のつもりだった彼の発言は、かえって火に（　）を注ぐ結果となり、批判はさらに強まった。",
+    "difficulty": 3,
+    "stem": "彼は実力がありながら（　）なところが少しもなく、新人にも丁寧に接する。",
     "options": [
-      "油",
-      "水",
-      "炭",
-      "薪"
+      "傲慢",
+      "軽率",
+      "貧弱",
+      "陰気"
     ],
     "answer": 0,
     "tr": {
-      "zh": "他本想道歉的发言反而火上浇油，批评声更强烈了。",
-      "en": "Meant as an apology, his remarks only added fuel to the fire, and the criticism grew even louder."
+      "zh": "他明明有实力，却一点也不傲慢，对新人也很礼貌。",
+      "en": "Despite his ability, he is not at all arrogant and treats even newcomers politely."
     },
     "why": {
-      "zh": "线索：「かえって」「批判はさらに強まった」——让事态更加恶化。\n词义：「火に油を注ぐ」＝火上浇油，使已经激烈的情况更加激烈，是固定惯用句。",
-      "en": "Clue: 「かえって」 and 「批判はさらに強まった」 — the remarks made things worse.\nMeaning: 「火に油を注ぐ」 is to add fuel to the fire, inflaming a situation that is already heated; a fixed idiom."
+      "zh": "线索：「実力がありながら」「新人にも丁寧に接する」——有本事的人容易摆架子，他却不这样。\n词义：「傲慢」（ごうまん）＝高傲、自大，看不起别人，常说「傲慢な態度」「傲慢な人」。",
+      "en": "Clue: 「実力がありながら」 and 「新人にも丁寧に接する」 — a capable person might be expected to look down on others, but he does not.\nMeaning: 「傲慢」 (ごうまん) is arrogant, looking down on others: 「傲慢な態度」, 「傲慢な人」."
     },
     "wrong": [
       null,
       {
-        "zh": "「火に水を注ぐ」不是惯用句，而且字面意思是灭火，和「批判はさらに強まった」矛盾。",
-        "en": "「火に水を注ぐ」 isn't an idiom, and pouring water would calm things, which contradicts 「批判はさらに強まった」."
+        "zh": "「軽率」是草率、考虑不周，与「実力がありながら」「新人にも丁寧」的转折不搭。",
+        "en": "「軽率」 is rash, thoughtless; it doesn't fit the contrast of 「実力がありながら」 and politeness to newcomers."
       },
       {
-        "zh": "「炭」不能“注”，日语没有「火に炭を注ぐ」这种说法。",
-        "en": "Charcoal can't be poured; 「火に炭を注ぐ」 isn't said."
+        "zh": "「貧弱」是贫乏、单薄，与有实力矛盾。",
+        "en": "「貧弱」 is meagre, poor; it contradicts having ability."
       },
       {
-        "zh": "「薪」是“添”（「薪をくべる」），不说「注ぐ」，也不是这个惯用句。",
-        "en": "Firewood is added (「薪をくべる」), not poured, and it isn't this idiom."
+        "zh": "「陰気」是阴郁，与“对新人也礼貌”没有逻辑关联。",
+        "en": "「陰気」 is gloomy, with no link to being polite to newcomers."
       }
     ]
   },
@@ -880,37 +880,38 @@
   },
   {
     "id": "n1-mg-325",
+    "rev": 2,
     "type": "bunmyaku",
     "difficulty": 3,
-    "stem": "難しい問題だからこそ、（　）な結論に飛びつくべきではない。",
+    "stem": "首相は不用意な発言をした閣僚を（　）したが、かえって世論の反発を招いた。",
     "options": [
-      "安易",
-      "平易",
-      "安静",
-      "容易"
+      "擁護",
+      "保護",
+      "防護",
+      "養護"
     ],
     "answer": 0,
     "tr": {
-      "zh": "正因为是难题，才不应该轻率地下结论。",
-      "en": "Precisely because it's a hard problem, we shouldn't jump at an easy conclusion."
+      "zh": "首相袒护了说话不慎的阁僚，反而招致了舆论的反感。",
+      "en": "The prime minister defended the minister who made the careless remark, which only provoked public backlash."
     },
     "why": {
-      "zh": "线索：「難しい問題だからこそ」「結論に飛びつく」，难题不该图省事地草率下结论。\n词义：「安易」（あんい）＝图省事、不深思，带批评意味，常说「安易な考え」「安易に決める」。",
-      "en": "Clue: 「難しい問題だからこそ」, 「結論に飛びつく」 — a hard problem shouldn't get a lazy, quick conclusion.\nMeaning: 「安易」 (あんい) is facile, taking the easy way without thought, a critical word: 「安易な考え」, 「安易に決める」."
+      "zh": "线索：「閣僚」说了不当的话，首相站在他一边，却「かえって世論の反発」。\n词义：「擁護」（ようご）＝为人或主张辩护、袒护，常说「政策を擁護する」「擁護論」。",
+      "en": "Clue: the minister made a careless remark; the PM sided with him, yet 「かえって世論の反発」.\nMeaning: 「擁護」 (ようご) is to defend or stand up for a person or view: 「政策を擁護する」, 「擁護論」."
     },
     "wrong": [
       null,
       {
-        "zh": "「平易」是浅显易懂（文章等），与“轻率下结论”不符。",
-        "en": "「平易」 is plain and easy to understand (of writing); not \"facile\"."
+        "zh": "「保護」是保护弱者、文物等免受伤害，不用于为人的言行辩护。",
+        "en": "「保護」 is protecting the vulnerable or heritage from harm, not defending someone's conduct."
       },
       {
-        "zh": "「安静」是静养（病人），不能修饰结论。",
-        "en": "「安静」 is rest (for a patient); it can't describe a conclusion."
+        "zh": "「防護」是防备危害（防護服），不指辩护。",
+        "en": "「防護」 is guarding against harm (「防護服」), not defending."
       },
       {
-        "zh": "「容易」是容易做到，不说「容易な結論に飛びつく」。",
-        "en": "「容易」 is easy to do; 「容易な結論に飛びつく」 isn't said."
+        "zh": "「養護」是照料、养育（养护教师等），不指辩护。",
+        "en": "「養護」 is care and upbringing (「養護教諭」), not defending."
       }
     ]
   },
@@ -1283,6 +1284,1626 @@
       {
         "zh": "「血も涙もない」是冷酷无情，不符。",
         "en": "「血も涙もない」 is heartless; it doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-336",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "環境保護と経済成長の（　）に挟まれ、政府は方針を決めかねている。",
+    "options": [
+      "ジレンマ",
+      "スランプ",
+      "トラウマ",
+      "ハンデ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "夹在环境保护与经济增长的两难之间，政府迟迟定不下方针。",
+      "en": "Caught in the dilemma between environmental protection and economic growth, the government cannot settle on a policy."
+    },
+    "why": {
+      "zh": "线索：「AとBの（　）に挟まれ」「決めかねている」，两头都顾不上、难以取舍。\n词义：「ジレンマ」＝两难（dilemma），常说「ジレンマに陥る／挟まれる」。",
+      "en": "Clue: 「AとBの（　）に挟まれ」 and 「決めかねている」: stuck between two goals.\nMeaning: 「ジレンマ」 is a dilemma: 「ジレンマに陥る／挟まれる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「スランプ」是（工作、运动的）低迷期，不用于两项目标之间。",
+        "en": "「スランプ」 is a slump in performance."
+      },
+      {
+        "zh": "「トラウマ」是心理创伤。",
+        "en": "「トラウマ」 is a psychological trauma."
+      },
+      {
+        "zh": "「ハンデ」是让步、不利条件，不说「挟まれる」。",
+        "en": "「ハンデ」 is a handicap, not something one is 挟まれ by."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-337",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "目撃者の証言が警察の発表と（　）いるため、再調査が行われることになった。",
+    "options": [
+      "食い違って",
+      "食い下がって",
+      "食い込んで",
+      "食いつないで"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "目击者的证词与警方的发表有出入，因此决定重新调查。",
+      "en": "The eyewitness's testimony conflicts with the police announcement, so a re-investigation will be carried out."
+    },
+    "why": {
+      "zh": "线索：「証言が警察の発表と」「再調査」，两方说法对不上。\n词义：「食い違う」（くいちがう）＝（意见、说法）不一致、有出入，「AとBが食い違う」。",
+      "en": "Clue: 「証言が警察の発表と」 and 「再調査」: two accounts that do not match.\nMeaning: 「食い違う」 means to conflict or fail to match: 「AとBが食い違う」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「食い下がる」是紧追不舍地纠缠、坚持（对方）。",
+        "en": "「食い下がる」 is to hang on doggedly against someone."
+      },
+      {
+        "zh": "「食い込む」是嵌入、侵入（市场、预算等）。",
+        "en": "「食い込む」 is to cut into (a market, a budget)."
+      },
+      {
+        "zh": "「食いつなぐ」是勉强维持生计。",
+        "en": "「食いつなぐ」 is to scrape by."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-338",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "遺産をめぐり、兄弟の間に長年の（　）が続いている。",
+    "options": [
+      "確執",
+      "執着",
+      "固執",
+      "執念"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "围绕遗产，兄弟之间长年不和的积怨一直持续着。",
+      "en": "Over the inheritance, a long-standing feud has persisted between the brothers."
+    },
+    "why": {
+      "zh": "线索：「兄弟の間に」「長年の」，说的是人与人之间的对立。\n词义：「確執」（かくしつ）＝彼此坚持己见而造成的不和、积怨，常说「確執が生じる」。",
+      "en": "Clue: 「兄弟の間に」 and 「長年の」: a rift between people.\nMeaning: 「確執」 is a feud born of each side holding its ground: 「確執が生じる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「執着」是对事物的执着，不指人与人之间的不和。",
+        "en": "「執着」 is attachment to a thing, not a rift between people."
+      },
+      {
+        "zh": "「固執」是固执己见，是一个人的态度，不能「兄弟の間に」。",
+        "en": "「固執」 is one person's stubbornness, not something 「between」 brothers."
+      },
+      {
+        "zh": "「執念」是执念，是一个人的念头。",
+        "en": "「執念」 is one person's obsession."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-339",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "不況の影響で、同社は工場の閉鎖を（　）なくされた。",
+    "options": [
+      "余儀",
+      "余念",
+      "余白",
+      "余剰"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "受不景气影响，该公司不得不关闭工厂。",
+      "en": "The recession forced the company to close its factory."
+    },
+    "why": {
+      "zh": "线索：「不況の影響で」「閉鎖を…なくされた」——被迫做出的选择。\n词义：「余儀なくされる」＝不得不、被迫（做某事），是固定说法；「余儀」只出现在「余儀ない／余儀なく」中。",
+      "en": "Clue: 「不況の影響で」 and 「閉鎖を…なくされた」 — a choice forced on the company.\nMeaning: 「余儀なくされる」 means to be forced to do something, a fixed phrase; 「余儀」 occurs only in 「余儀ない／余儀なく」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「余念なく」是专心致志（「余念なく働く」），没有「余念なくされる」。",
+        "en": "「余念なく」 means absorbed (「余念なく働く」); there is no 「余念なくされる」."
+      },
+      {
+        "zh": "「余白」是空白处，不能构成「〜なくされる」。",
+        "en": "「余白」 is a margin; it can't form 「〜なくされる」."
+      },
+      {
+        "zh": "「余剰」是剩余，不能构成「〜なくされる」。",
+        "en": "「余剰」 is surplus; it can't form 「〜なくされる」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-340",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "経営再建を任された新社長の（　）に、業界の注目が集まっている。",
+    "options": [
+      "手腕",
+      "手順",
+      "手段",
+      "手本"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "业界都关注着受命重整经营的新社长的能力。",
+      "en": "The industry is watching how the new president, tasked with turning the company around, will show his skill."
+    },
+    "why": {
+      "zh": "线索：「経営再建を任された」，人们关注的是社长的本事。\n词义：「手腕」＝处理事务的能力、本事，常说「手腕を発揮する」「手腕が問われる」。",
+      "en": "Clue: The new president was 「任された」 the rebuild, so attention is on his ability.\nMeaning: 「手腕」 is skill in getting things done: 「手腕を発揮する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「手順」是步骤、程序，不是个人能力。",
+        "en": "「手順」 is a procedure."
+      },
+      {
+        "zh": "「手段」是方法，不是人的能力。",
+        "en": "「手段」 is a means or method, not a person's ability."
+      },
+      {
+        "zh": "「手本」是榜样、范本。",
+        "en": "「手本」 is a model to copy."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-341",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "申請手続きの（　）が高く、制度を利用できる人が限られている。",
+    "options": [
+      "ハードル",
+      "ブレーキ",
+      "スペース",
+      "キャリア"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "申请手续的门槛很高，能利用这项制度的人有限。",
+      "en": "The bar for applying is high, so only a limited number of people can use the system."
+    },
+    "why": {
+      "zh": "线索：「（　）が高く」「利用できる人が限られている」，是难以跨过的门槛。\n词义：「ハードル」＝门槛、障碍（hurdle），固定说「ハードルが高い／低い」「ハードルを越える」。",
+      "en": "Clue: 「（　）が高く」 and 「利用できる人が限られている」: a barrier to entry.\nMeaning: 「ハードル」 is a hurdle: 「ハードルが高い／低い」, 「ハードルを越える」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ブレーキ」搭配「かける」「がかかる」，不说「高い」。",
+        "en": "「ブレーキ」 goes with 「かける」, not 「高い」."
+      },
+      {
+        "zh": "「スペース」是空间，不说「高い」。",
+        "en": "「スペース」 is space, not 「高い」."
+      },
+      {
+        "zh": "「キャリア」是职业经历，不指手续上的门槛。",
+        "en": "「キャリア」 is a career, not a procedural barrier."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-342",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "感染拡大を受け、不要不急の外出を（　）よう要請された。",
+    "options": [
+      "差し控える",
+      "差し引く",
+      "差し押さえる",
+      "差し替える"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "鉴于疫情扩大，被要求不要进行非必要、非紧急的外出。",
+      "en": "In view of the spread of infection, people were asked to refrain from non-essential outings."
+    },
+    "why": {
+      "zh": "线索：「不要不急の外出を」「よう要請された」，是请人克制不做。\n词义：「差し控える」（さしひかえる）＝节制、暂不做（多为郑重说法），「外出を差し控える」。",
+      "en": "Clue: 「不要不急の外出を」 and 「よう要請された」: a request to hold back.\nMeaning: 「差し控える」 is to refrain from (formal): 「外出を差し控える」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「差し引く」是扣除。",
+        "en": "「差し引く」 is to deduct."
+      },
+      {
+        "zh": "「差し押さえる」是（法律上）查封。",
+        "en": "「差し押さえる」 is to seize legally."
+      },
+      {
+        "zh": "「差し替える」是替换。",
+        "en": "「差し替える」 is to swap out."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-343",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "やりがいは感じなくなったが、（　）で今の仕事を続けている。",
+    "options": [
+      "惰性",
+      "習性",
+      "慣性",
+      "本性"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "虽然已经感觉不到干劲，但仍凭惯性继续着现在的工作。",
+      "en": "I no longer find it rewarding, but I keep doing my job out of sheer inertia."
+    },
+    "why": {
+      "zh": "线索：「やりがいは感じなくなった」却「続けている」，是不带热情的延续。\n词义：「惰性」（だせい）＝因习惯而无意识地继续，常说「惰性で続ける」。",
+      "en": "Clue: No fulfilment, yet 「続けている」: carrying on without enthusiasm.\nMeaning: 「惰性」 is continuing out of habit: 「惰性で続ける」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「習性」是动物等的习性，不说「習性で続ける」。",
+        "en": "「習性」 is a creature's habitual behaviour."
+      },
+      {
+        "zh": "「慣性」是物理上的惯性。",
+        "en": "「慣性」 is physical inertia."
+      },
+      {
+        "zh": "「本性」是本性，不能「で続ける」。",
+        "en": "「本性」 is one's true nature."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-344",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "何でも金で解決しようとする（　）が、社会に広がっている。",
+    "options": [
+      "風潮",
+      "風習",
+      "風情",
+      "風格"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "凡事都想用钱解决的风气，正在社会上蔓延。",
+      "en": "A tendency to try to settle everything with money is spreading through society."
+    },
+    "why": {
+      "zh": "线索：「社会に広がっている」，指一时的社会倾向。\n词义：「風潮」＝时代、社会的趋势、风气（多带批评），「〜という風潮」。",
+      "en": "Clue: 「社会に広がっている」: a trend in society.\nMeaning: 「風潮」 is a prevailing trend, often a criticised one."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「風習」是传统习俗，不是对金钱的态度。",
+        "en": "「風習」 is a traditional custom."
+      },
+      {
+        "zh": "「風情」是情趣、韵味。",
+        "en": "「風情」 is charm or atmosphere."
+      },
+      {
+        "zh": "「風格」是人或作品的风格气度。",
+        "en": "「風格」 is dignity or style."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-345",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "この会の（　）に賛同してくださる方に、寄付をお願いしております。",
+    "options": [
+      "趣旨",
+      "趣向",
+      "趣味",
+      "要旨"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我们恳请赞同本会宗旨的人士捐款。",
+      "en": "We ask for donations from those who support the purpose of this association."
+    },
+    "why": {
+      "zh": "线索：「賛同してくださる」的对象是会成立的目的和意义。\n词义：「趣旨」＝宗旨、主旨（目的与用意），「趣旨に賛同する」。",
+      "en": "Clue: What people 「賛同」 is the aim of the group.\nMeaning: 「趣旨」 is the purpose or point: 「趣旨に賛同する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「趣向」是设计的巧思、花样。",
+        "en": "「趣向」 is a creative twist."
+      },
+      {
+        "zh": "「趣味」是爱好。",
+        "en": "「趣味」 is a hobby."
+      },
+      {
+        "zh": "「要旨」是文章、发言的摘要，不是成立目的。",
+        "en": "「要旨」 is the gist of a text or speech, not an aim."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-346",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "前回の大敗という（　）を返上するため、チームは猛練習を重ねた。",
+    "options": [
+      "汚名",
+      "悪名",
+      "異名",
+      "汚点"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "为了洗刷上一次惨败的污名，球队进行了刻苦训练。",
+      "en": "To clear the stain of their heavy defeat last time, the team trained relentlessly."
+    },
+    "why": {
+      "zh": "线索：「返上する」是固定搭配，与「汚名」成组，「汚名返上」。\n词义：「汚名」＝坏名声、耻辱的名声；「汚名を返上する／そそぐ」。",
+      "en": "Clue: 「返上」 pairs with 「汚名」 as in 「汚名返上」.\nMeaning: 「汚名」 is a disgrace or bad name: 「汚名を返上する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「悪名」是恶名，多用于「悪名高い」，不与「返上」搭配。",
+        "en": "「悪名」 is notoriety, used as 「悪名高い」, not with 「返上」."
+      },
+      {
+        "zh": "「異名」是别名、绰号。",
+        "en": "「異名」 is a nickname."
+      },
+      {
+        "zh": "「汚点」是污点，搭配「残す」，不说「返上」。",
+        "en": "「汚点」 is a stain, used with 「残す」, not 「返上」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-347",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "資金繰りが苦しく、支払いの（　）を取引先に願い出た。",
+    "options": [
+      "猶予",
+      "余裕",
+      "余暇",
+      "余白"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "因资金周转困难，向客户请求宽限付款期限。",
+      "en": "Cash flow was tight, so we asked our client for a grace period on the payment."
+    },
+    "why": {
+      "zh": "线索：「資金繰りが苦しく」「支払いの」，希望对方宽限期限。\n词义：「猶予」（ゆうよ）＝宽限、延缓，「支払いの猶予」「執行猶予」。",
+      "en": "Clue: Money was tight, so we asked for more time to pay.\nMeaning: 「猶予」 is a grace period: 「支払いの猶予」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「余裕」是宽裕，苦于资金时不会向对方请求「余裕」。",
+        "en": "「余裕」 is leeway; you don't ask a client for it."
+      },
+      {
+        "zh": "「余暇」是闲暇时间。",
+        "en": "「余暇」 is spare time."
+      },
+      {
+        "zh": "「余白」是留白。",
+        "en": "「余白」 is blank space."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-348",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "ふざけて失礼な冗談を言った後輩を、先輩が穏やかに（　）。",
+    "options": [
+      "たしなめた",
+      "ねぎらった",
+      "見くびった",
+      "あざむいた"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "学长温和地告诫了开了失礼玩笑的学弟。",
+      "en": "The senior gently reproved the junior who had made a rude joke."
+    },
+    "why": {
+      "zh": "线索：「失礼な冗談を言った後輩を」「穏やかに」，对失礼的言行轻声提醒。\n词义：「たしなめる」＝（委婉地）告诫、劝止，常说「軽くたしなめる」「失言をたしなめる」。\n辨析：「叱る」更严厉，「たしなめる」语气温和克制。",
+      "en": "Clue: 「失礼な冗談を言った後輩を」 and 「穏やかに」: a mild warning for rude behaviour.\nMeaning: 「たしなめる」 is to reprove gently: 「軽くたしなめる」, 「失言をたしなめる」.\nContrast: 「叱る」 is harsher; 「たしなめる」 is mild and restrained."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ねぎらう」是慰劳、感谢辛苦，对失礼的玩笑不合逻辑。",
+        "en": "「ねぎらう」 is to thank for effort; it makes no sense for a rude joke."
+      },
+      {
+        "zh": "「見くびる」是小看，先辈不会「穏やかに」小看后辈，也与「冗談」的反应不搭。",
+        "en": "「見くびる」 is to underestimate; it doesn't fit as a reaction to the joke."
+      },
+      {
+        "zh": "「あざむく」是欺骗，与「冗談を言った」的反应无关。",
+        "en": "「あざむく」 is to deceive; unrelated to reacting to a joke."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-349",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "不祥事の（　）にある議員が、ようやく記者会見を開いた。",
+    "options": [
+      "渦中",
+      "最中",
+      "途中",
+      "中枢"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "身处丑闻漩涡中的议员终于召开了记者会。",
+      "en": "The lawmaker at the center of the scandal finally held a press conference."
+    },
+    "why": {
+      "zh": "线索：「不祥事の」「にある議員」，处于事件的中心。\n词义：「渦中」（かちゅう）＝漩涡之中，指卷入事件，「渦中の人物」「渦中にある」。",
+      "en": "Clue: 「不祥事の」 and 「にある」: caught up in the affair.\nMeaning: 「渦中」 is the thick of a controversy: 「渦中の人物」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「最中」表示某动作正在进行，不说「事件の最中にある」。",
+        "en": "「最中」 means in the middle of an action, not 「にある」."
+      },
+      {
+        "zh": "「途中」是途中。",
+        "en": "「途中」 is halfway."
+      },
+      {
+        "zh": "「中枢」是中枢、核心机构。",
+        "en": "「中枢」 is the central organ of an organization."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-350",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "法律の（　）を探して、税金を安くしようとする企業もある。",
+    "options": [
+      "抜け道",
+      "裏道",
+      "近道",
+      "回り道"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "也有企业寻找法律的漏洞来少缴税。",
+      "en": "Some companies look for loopholes in the law to lower their taxes."
+    },
+    "why": {
+      "zh": "线索：「法律の」「税金を安くしよう」，钻法律空子。\n词义：「抜け道」＝（规则等的）漏洞、规避的办法，「法の抜け道」。",
+      "en": "Clue: 「法律の」 and cutting tax: a way around the rules.\nMeaning: 「抜け道」 is a loophole: 「法の抜け道」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「裏道」是小路，不用于法律。",
+        "en": "「裏道」 is a back road."
+      },
+      {
+        "zh": "「近道」是捷径，不含钻空子之义。",
+        "en": "「近道」 is a shortcut, with no sense of exploiting a gap."
+      },
+      {
+        "zh": "「回り道」是绕远路。",
+        "en": "「回り道」 is a detour."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-351",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "赤字が続く事業に（　）をつけ、思い切って撤退することを決めた。",
+    "options": [
+      "見切り",
+      "見限り",
+      "見送り",
+      "見込み"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "对持续亏损的业务断然放弃，决定果断撤出。",
+      "en": "We gave up on the business that kept running at a loss and decided to pull out."
+    },
+    "why": {
+      "zh": "线索：「（　）をつけ」「撤退する」，放弃没有前途的事业。\n词义：「見切りをつける」＝认定没有希望而放弃，固定搭配。",
+      "en": "Clue: 「（　）をつけ」 plus 「撤退」: writing the business off.\nMeaning: 「見切りをつける」 means to give up as hopeless; fixed phrase."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「見限り」不与「つける」搭配，动词形为「見限る」。",
+        "en": "「見限り」 isn't used with 「つける」; the verb is 「見限る」."
+      },
+      {
+        "zh": "「見送り」是送行或搁置，不说「見送りをつける」。",
+        "en": "「見送り」 is seeing off or deferring."
+      },
+      {
+        "zh": "「見込み」搭配「がある」「が立つ」。",
+        "en": "「見込み」 goes with 「がある」/「が立つ」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-352",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "コンサートが終わっても、観客はしばらく感動の（　）に浸っていた。",
+    "options": [
+      "余韻",
+      "余波",
+      "余白",
+      "余暇"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "音乐会结束后，观众仍久久沉浸在感动的余味中。",
+      "en": "Even after the concert ended, the audience stayed immersed in the afterglow for a while."
+    },
+    "why": {
+      "zh": "线索：「終わっても」「浸っていた」，结束后留下的感觉。\n词义：「余韻」（よいん）＝事后留下的回味，「余韻に浸る」。",
+      "en": "Clue: After it ended, they were 「浸っていた」 in what remained.\nMeaning: 「余韻」 is a lingering feeling: 「余韻に浸る」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「余波」是事件之后的影响，不搭配「浸る」。",
+        "en": "「余波」 is the aftermath, not something you 「浸る」 in."
+      },
+      {
+        "zh": "「余白」是留白。",
+        "en": "「余白」 is blank space."
+      },
+      {
+        "zh": "「余暇」是闲暇。",
+        "en": "「余暇」 is leisure."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-353",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "あの男は、どこの誰なのか（　）が全く分からない。",
+    "options": [
+      "素性",
+      "素質",
+      "素養",
+      "素行"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那个男人是什么人，来历完全不清楚。",
+      "en": "Nobody knows anything about that man's background — who he even is."
+    },
+    "why": {
+      "zh": "线索：「どこの誰なのか」，问的是来历、出身。\n词义：「素性」（すじょう）＝出身、来历，「素性が知れない／不明」。",
+      "en": "Clue: 「どこの誰なのか」 asks about origins.\nMeaning: 「素性」 is a person's background: 「素性が知れない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「素質」是天赋资质。",
+        "en": "「素質」 is natural aptitude."
+      },
+      {
+        "zh": "「素養」是平时积累的修养、知识。",
+        "en": "「素養」 is cultivated knowledge."
+      },
+      {
+        "zh": "「素行」是平日的品行，不是来历。",
+        "en": "「素行」 is everyday conduct, not origin."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-354",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "周囲の猛反対を（　）、彼は会社を辞めて留学することを決めた。",
+    "options": [
+      "押し切って",
+      "押し寄せて",
+      "押し込んで",
+      "押し上げて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他顶住周围的强烈反对，决定辞职去留学。",
+      "en": "Overriding strong opposition from those around him, he decided to quit his job and study abroad."
+    },
+    "why": {
+      "zh": "线索：「周囲の猛反対を」「決めた」，不顾反对坚持己见。\n词义：「押し切る」（おしきる）＝不顾阻力强行做成，「反対を押し切る」。",
+      "en": "Clue: 「周囲の猛反対を」 and 「決めた」: going ahead despite opposition.\nMeaning: 「押し切る」 is to override resistance: 「反対を押し切る」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「押し寄せる」是涌来，不带「を」。",
+        "en": "「押し寄せる」 is to surge in and takes no 「を」 here."
+      },
+      {
+        "zh": "「押し込む」是塞进去。",
+        "en": "「押し込む」 is to cram in."
+      },
+      {
+        "zh": "「押し上げる」是向上推、抬高。",
+        "en": "「押し上げる」 is to push up."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-355",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "売り上げ不振の原因を（　）考えると、結局は人材育成の遅れに行き着く。",
+    "options": [
+      "突き詰めて",
+      "突き破って",
+      "突き飛ばして",
+      "突き出して"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "把销售不振的原因追根究底地想下去，最终归结到人才培养的滞后。",
+      "en": "If you trace the cause of the sales slump to its root, it comes down to lagging staff development."
+    },
+    "why": {
+      "zh": "线索：「原因を」「考えると」「結局は…に行き着く」，一路追究到底。\n词义：「突き詰める」（つきつめる）＝追究到底，「突き詰めて考えると」是常用说法。",
+      "en": "Clue: 「原因を」, 「考えると」 and 「結局は…に行き着く」: pursuing a question to its end.\nMeaning: 「突き詰める」 is to probe to the bottom: 「突き詰めて考えると」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「突き破る」是捅破、冲破。",
+        "en": "「突き破る」 is to break through."
+      },
+      {
+        "zh": "「突き飛ばす」是撞开、推倒。",
+        "en": "「突き飛ばす」 is to knock aside."
+      },
+      {
+        "zh": "「突き出す」是伸出、交给警方。",
+        "en": "「突き出す」 is to thrust out or hand over to the police."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-356",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "先輩は私に、新しい事業を共同で始めないかと（　）きた。",
+    "options": [
+      "持ちかけて",
+      "持ち寄って",
+      "持ち直して",
+      "持ち越して"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "前辈向我提议，要不要一起开始一项新事业。",
+      "en": "My senior colleague proposed that we start a new business together."
+    },
+    "why": {
+      "zh": "线索：「始めないかと」，是向对方提出一个建议。\n词义：「持ちかける」（もちかける）＝主动向对方提出（商量、提议），「相談を持ちかける」。",
+      "en": "Clue: 「始めないかと」: putting a proposal to someone.\nMeaning: 「持ちかける」 is to approach someone with a proposal: 「相談を持ちかける」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「持ち寄る」是各自带东西来集合。",
+        "en": "「持ち寄る」 is to bring and pool things."
+      },
+      {
+        "zh": "「持ち直す」是（病情、行情）好转。",
+        "en": "「持ち直す」 is to recover (health, the market)."
+      },
+      {
+        "zh": "「持ち越す」是留到下次。",
+        "en": "「持ち越す」 is to carry over."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-357",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "定年後、有り余る時間を（　）いる人も少なくない。",
+    "options": [
+      "持て余して",
+      "持ち寄って",
+      "持ちこたえて",
+      "持て成して"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "退休后，为多得用不完的时间发愁的人也不少。",
+      "en": "Not a few people after retirement find they have more time than they know what to do with."
+    },
+    "why": {
+      "zh": "线索：「有り余る時間を」，多得不知怎么打发。\n词义：「持て余す」（もてあます）＝处理不了、不知如何是好，「時間を持て余す」。",
+      "en": "Clue: 「有り余る時間を」: time too plentiful to handle.\nMeaning: 「持て余す」 is to not know what to do with: 「時間を持て余す」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「持ち寄る」是各自带来。",
+        "en": "「持ち寄る」 is to bring and pool."
+      },
+      {
+        "zh": "「持ちこたえる」是撑住。",
+        "en": "「持ちこたえる」 is to hold out."
+      },
+      {
+        "zh": "「持て成す」是款待。",
+        "en": "「持て成す」 is to entertain."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-358",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "政府は感染の拡大を（　）ため、国境の封鎖に踏み切った。",
+    "options": [
+      "食い止める",
+      "突き止める",
+      "取り締まる",
+      "締め出す"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "政府为遏制疫情扩散，决定封锁国境。",
+      "en": "The government went ahead with closing the borders to stop the infection from spreading."
+    },
+    "why": {
+      "zh": "线索：「拡大を」「ため」，目的是阻止蔓延。\n词义：「食い止める」＝阻止（扩大）、挡住，「被害の拡大を食い止める」。",
+      "en": "Clue: The aim of closing borders: halting the spread.\nMeaning: 「食い止める」 is to hold back: 「拡大を食い止める」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「突き止める」是查明。",
+        "en": "「突き止める」 is to track down."
+      },
+      {
+        "zh": "「取り締まる」是管制违法者。",
+        "en": "「取り締まる」 is to crack down on offenders."
+      },
+      {
+        "zh": "「締め出す」是把人拒之门外，不接「拡大を」。",
+        "en": "「締め出す」 is to shut people out."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-359",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "警察は、火災の原因を（　）ため、焼け跡の調査を続けている。",
+    "options": [
+      "突き止める",
+      "食い止める",
+      "取り止める",
+      "問い詰める"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "警方为查明火灾原因，持续调查火灾现场。",
+      "en": "Police are continuing to examine the burnt site to pin down the cause of the fire."
+    },
+    "why": {
+      "zh": "线索：「原因を」「調査を続けている」，目的是查清。\n词义：「突き止める」＝追查到底、查明，「原因を突き止める」。",
+      "en": "Clue: Investigating to find the cause.\nMeaning: 「突き止める」 is to trace to the end: 「原因を突き止める」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「食い止める」是阻止。",
+        "en": "「食い止める」 is to stop."
+      },
+      {
+        "zh": "「取り止める」是取消。",
+        "en": "「取り止める」 is to call off."
+      },
+      {
+        "zh": "「問い詰める」是追问人，不接「原因を」。",
+        "en": "「問い詰める」 is to grill a person."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-360",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "新人だからと相手を（　）、思わぬ苦戦を強いられた。",
+    "options": [
+      "見くびって",
+      "見落として",
+      "見送って",
+      "見下ろして"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "因为是新人就小看对手，结果被迫陷入意想不到的苦战。",
+      "en": "Because he was a rookie, we underestimated our opponent and were forced into an unexpectedly hard fight."
+    },
+    "why": {
+      "zh": "线索：「新人だからと」，轻视对手后才「苦戦」。\n词义：「見くびる」＝小看、轻视，「相手を見くびる」。",
+      "en": "Clue: 「新人だからと」: looking down on the opponent led to trouble.\nMeaning: 「見くびる」 is to underestimate: 「相手を見くびる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「見落とす」是漏看。",
+        "en": "「見落とす」 is to overlook."
+      },
+      {
+        "zh": "「見送る」是送行或放过。",
+        "en": "「見送る」 is to see off or let pass."
+      },
+      {
+        "zh": "「見下ろす」是从高处往下看。",
+        "en": "「見下ろす」 is to look down physically."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-361",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "彼の前に、資金不足という大きな壁が（　）。",
+    "options": [
+      "立ちはだかった",
+      "立ち向かった",
+      "立ち寄った",
+      "立ち直った"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "资金不足这一大难关横在了他面前。",
+      "en": "A big wall called a lack of funds stood in his way."
+    },
+    "why": {
+      "zh": "线索：主语是「壁」（无生命的障碍），「彼の前に」。\n词义：「立ちはだかる」＝挡在前面、成为障碍，「壁が立ちはだかる」。",
+      "en": "Clue: The subject is 「壁」, an obstacle in front of him.\nMeaning: 「立ちはだかる」 is to loom as an obstacle: 「壁が立ちはだかる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「立ち向かう」主语是人，不能是「壁」。",
+        "en": "「立ち向かう」 takes a person as subject."
+      },
+      {
+        "zh": "「立ち寄る」是顺道去。",
+        "en": "「立ち寄る」 is to drop by."
+      },
+      {
+        "zh": "「立ち直る」是恢复。",
+        "en": "「立ち直る」 is to recover."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-362",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "理由を知っているはずなのに、彼は何を聞かれても言葉を濁して（　）いる。",
+    "options": [
+      "言い渋って",
+      "言い張って",
+      "言い残して",
+      "言い触らして"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "明明知道理由，他无论被问什么都含糊其辞，不肯明说。",
+      "en": "He must know the reason, yet whatever he is asked he fudges and is reluctant to say."
+    },
+    "why": {
+      "zh": "线索：「言葉を濁して」，不愿把话说明白。\n词义：「言い渋る」（いいしぶる）＝不愿说出口、支支吾吾，「理由を言い渋る」。",
+      "en": "Clue: 「言葉を濁して」: unwilling to say it plainly.\nMeaning: 「言い渋る」 is to be reluctant to say: 「理由を言い渋る」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「言い張る」是坚持说，与含糊其辞相反。",
+        "en": "「言い張る」 is to insist, the opposite of fudging."
+      },
+      {
+        "zh": "「言い残す」是临走留话。",
+        "en": "「言い残す」 is to leave word behind."
+      },
+      {
+        "zh": "「言い触らす」是到处散布。",
+        "en": "「言い触らす」 is to spread around."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-363",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "カーテンを閉めて、強い日差しを（　）。",
+    "options": [
+      "遮った",
+      "阻んだ",
+      "隔てた",
+      "妨げた"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "拉上窗帘，遮住了强烈的阳光。",
+      "en": "I closed the curtains to block out the strong sunlight."
+    },
+    "why": {
+      "zh": "线索：「カーテンを閉めて」，挡住光线。\n词义：「遮る」（さえぎる）＝挡住（光、视线），「日差しを遮る」。",
+      "en": "Clue: Curtains shut: blocking the light.\nMeaning: 「遮る」 is to block (light, view): 「日差しを遮る」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「阻む」是阻止前进，不接「日差し」。",
+        "en": "「阻む」 is to obstruct advance."
+      },
+      {
+        "zh": "「隔てる」是隔开两处。",
+        "en": "「隔てる」 is to separate two places."
+      },
+      {
+        "zh": "「妨げる」是妨碍行为，不接「日差し」。",
+        "en": "「妨げる」 is to hinder an action."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-364",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "その話題は、一族の間では長年の（　）とされてきた。",
+    "options": [
+      "タブー",
+      "マナー",
+      "モラル",
+      "ルール"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那个话题在家族里长年被视为禁忌。",
+      "en": "That subject has long been treated as taboo within the family."
+    },
+    "why": {
+      "zh": "线索：「話題」「とされてきた」，谁都不碰的话题。\n词义：「タブー」＝禁忌，「タブーとされる」「タブーを破る」。",
+      "en": "Clue: A topic nobody mentions.\nMeaning: 「タブー」 is a taboo: 「タブーとされる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「マナー」是礼仪。",
+        "en": "「マナー」 is etiquette."
+      },
+      {
+        "zh": "「モラル」是道德。",
+        "en": "「モラル」 is morals."
+      },
+      {
+        "zh": "「ルール」是明文规则，不用来指不能谈的话题。",
+        "en": "「ルール」 is a rule, not a forbidden topic."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-365",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "同じ「大丈夫」でも、言い方によって微妙に（　）が変わる。",
+    "options": [
+      "ニュアンス",
+      "ジャンル",
+      "カテゴリー",
+      "ポイント"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "同样是「大丈夫」，说法不同，语感也会微妙地变化。",
+      "en": "Even the same 「大丈夫」 shifts subtly in tone depending on how it's said."
+    },
+    "why": {
+      "zh": "线索：「言い方によって」「微妙に」变化的是语气色彩。\n词义：「ニュアンス」＝（语言的）细微语感、含义差别。",
+      "en": "Clue: What shifts subtly with delivery is shade of meaning.\nMeaning: 「ニュアンス」 is a nuance of meaning."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ジャンル」是类别。",
+        "en": "「ジャンル」 is a genre."
+      },
+      {
+        "zh": "「カテゴリー」是范畴。",
+        "en": "「カテゴリー」 is a category."
+      },
+      {
+        "zh": "「ポイント」是要点。",
+        "en": "「ポイント」 is a key point."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-366",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "応募者が会場の（　）を大きく超えたため、抽選を行うことになった。",
+    "options": [
+      "キャパシティ",
+      "ポテンシャル",
+      "ボーダー",
+      "モチベーション"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "报名人数大大超过会场容量，只好抽签。",
+      "en": "Applicants far exceeded the venue's capacity, so a lottery was held."
+    },
+    "why": {
+      "zh": "线索：「会場の」「超えた」「抽選」，超过容纳量。\n词义：「キャパシティ」（キャパ）＝容量、容纳能力。",
+      "en": "Clue: Venue plus 「超えた」 and a lottery: its capacity.\nMeaning: 「キャパシティ」 is capacity."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ポテンシャル」是潜力。",
+        "en": "「ポテンシャル」 is potential."
+      },
+      {
+        "zh": "「ボーダー」是界线。",
+        "en": "「ボーダー」 is a border line."
+      },
+      {
+        "zh": "「モチベーション」是干劲。",
+        "en": "「モチベーション」 is motivation."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-367",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "この仕事は納期も予算も（　）で、受けるかどうか迷っている。",
+    "options": [
+      "シビア",
+      "ルーズ",
+      "ナーバス",
+      "スマート"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这项工作交期和预算都很苛刻，我在犹豫要不要接。",
+      "en": "The deadline and budget on this job are both tough, and I can't decide whether to take it."
+    },
+    "why": {
+      "zh": "线索：「受けるかどうか迷っている」，说明条件严苛。\n词义：「シビア」＝严苛、严酷，「シビアな条件」。",
+      "en": "Clue: Hesitation implies harsh terms.\nMeaning: 「シビア」 is severe or exacting."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ルーズ」是松散，与犹豫相反。",
+        "en": "「ルーズ」 is lax, the opposite."
+      },
+      {
+        "zh": "「ナーバス」形容人紧张，不形容条件。",
+        "en": "「ナーバス」 describes a nervous person."
+      },
+      {
+        "zh": "「スマート」是时尚、苗条。",
+        "en": "「スマート」 is smart or slim."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-368",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "この交渉では、相手に（　）を握られたまま、不利な条件をのまされた。",
+    "options": [
+      "イニシアチブ",
+      "ロイヤリティ",
+      "プライオリティ",
+      "ボーダーライン"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这次谈判中主导权一直被对方掌握，被迫接受不利条件。",
+      "en": "In this negotiation, the other side held the initiative and we were made to accept unfavorable terms."
+    },
+    "why": {
+      "zh": "线索：「（　）を握られた」，被对方占了上风。\n词义：「イニシアチブ」＝主导权，「イニシアチブを握る／取る」。",
+      "en": "Clue: 「握られた」 plus unfavorable terms: they led.\nMeaning: 「イニシアチブ」 is the initiative: 「イニシアチブを握る」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ロイヤリティ」是专利使用费。",
+        "en": "「ロイヤリティ」 is a royalty."
+      },
+      {
+        "zh": "「プライオリティ」是优先顺序。",
+        "en": "「プライオリティ」 is priority."
+      },
+      {
+        "zh": "「ボーダーライン」是边界线。",
+        "en": "「ボーダーライン」 is a borderline."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-369",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "この地方の人は、（　）口数が少なく、控えめだと言われる。",
+    "options": [
+      "概して",
+      "ひとえに",
+      "あいにく",
+      "いたずらに"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "据说这一地区的人大体上话少、内敛。",
+      "en": "People in this region are said, on the whole, to be of few words and reserved."
+    },
+    "why": {
+      "zh": "线索：「人は」「と言われる」，说的是整体倾向。\n词义：「概して」＝大体上、总的来说。",
+      "en": "Clue: A general statement about people.\nMeaning: 「概して」 means generally."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ひとえに」是全靠、完全是。",
+        "en": "「ひとえに」 means entirely due to."
+      },
+      {
+        "zh": "「あいにく」是不凑巧。",
+        "en": "「あいにく」 means unfortunately."
+      },
+      {
+        "zh": "「いたずらに」是白白地。",
+        "en": "「いたずらに」 means needlessly."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-370",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "今日の成功は、（　）皆様のご支援のおかげと感謝しております。",
+    "options": [
+      "ひとえに",
+      "ひそかに",
+      "ひときわ",
+      "ひとまず"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "今天的成功全靠各位的支持，深表感谢。",
+      "en": "Today's success is entirely thanks to everyone's support, and we are grateful."
+    },
+    "why": {
+      "zh": "线索：「おかげ」，把成功归功于对方。\n词义：「ひとえに」＝完全是、全靠，常见「ひとえに〜のおかげ」。",
+      "en": "Clue: Crediting everything to 「おかげ」.\nMeaning: 「ひとえに」 means solely: 「ひとえに〜のおかげ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ひそかに」是暗中。",
+        "en": "「ひそかに」 is secretly."
+      },
+      {
+        "zh": "「ひときわ」是格外。",
+        "en": "「ひときわ」 is especially."
+      },
+      {
+        "zh": "「ひとまず」是暂且。",
+        "en": "「ひとまず」 is for now."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-371",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "上司に努力を認めてもらえなかったことで、仕事への（　）が一気に失われた。",
+    "options": [
+      "モチベーション",
+      "ノルマ",
+      "プライド",
+      "テンション"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "因为努力没有得到上司的认可，对工作的干劲一下子消失了。",
+      "en": "Because his boss did not recognize his efforts, his motivation for work vanished all at once."
+    },
+    "why": {
+      "zh": "线索：「努力を認めてもらえなかった」「仕事への（　）」，失去的是做事的劲头。\n词义：「モチベーション」＝干劲、动机（motivation），「モチベーションが上がる／下がる／失われる」。",
+      "en": "Clue: 「努力を認めてもらえなかった」 and 「仕事への（　）」: what is lost is the drive to work.\nMeaning: 「モチベーション」 is motivation: 「モチベーションが上がる／下がる／失われる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ノルマ」是定额任务，努力被否定后消失的不是任务本身。",
+        "en": "「ノルマ」 is a quota; what vanished is not an assignment."
+      },
+      {
+        "zh": "「プライド」是自尊心，会受伤，但「仕事への」后接的是做事的劲头。",
+        "en": "「プライド」 is pride, which gets hurt; 「仕事への」 here needs drive."
+      },
+      {
+        "zh": "「テンション」是情绪的亢奋程度，通常不说「仕事へのテンション」。",
+        "en": "「テンション」 is excitement level; not said as 「仕事へのテンション」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-372",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "今年は猛暑の影響で、野菜の価格が（　）上昇した。",
+    "options": [
+      "軒並み",
+      "ひとしきり",
+      "むやみに",
+      "おもむろに"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "今年受酷暑影响，蔬菜价格普遍上涨。",
+      "en": "This year, because of the intense heat, vegetable prices rose across the board."
+    },
+    "why": {
+      "zh": "线索：「野菜の価格」多种商品同时涨。\n词义：「軒並み」＝一律、普遍，「軒並み上昇」。",
+      "en": "Clue: Many items all rising together.\nMeaning: 「軒並み」 means across the board."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ひとしきり」是一阵子。",
+        "en": "「ひとしきり」 is for a spell."
+      },
+      {
+        "zh": "「むやみに」是胡乱。",
+        "en": "「むやみに」 is recklessly."
+      },
+      {
+        "zh": "「おもむろに」是缓缓地。",
+        "en": "「おもむろに」 is slowly."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-373",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "彼女の失敗は誰にでもあることなので、（　）問題にするつもりはない。",
+    "options": [
+      "ことさら",
+      "おおむね",
+      "やみくもに",
+      "あらかじめ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "她的失误谁都会有，我不打算特意拿来说事。",
+      "en": "Her mistake could happen to anyone, so I have no intention of making a particular issue of it."
+    },
+    "why": {
+      "zh": "线索：后接「つもりはない」，「特意去做」的否定。\n词义：「ことさら」＝特意、故意，多接否定。",
+      "en": "Clue: Followed by a negative: no intention to single it out.\nMeaning: 「ことさら」 means deliberately; often with a negative."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「おおむね」是大致。",
+        "en": "「おおむね」 is mostly."
+      },
+      {
+        "zh": "「やみくもに」是盲目地。",
+        "en": "「やみくもに」 is blindly."
+      },
+      {
+        "zh": "「あらかじめ」是事先。",
+        "en": "「あらかじめ」 is beforehand."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-374",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "薬を飲み始めて一週間になるが、症状は（　）よくならない。",
+    "options": [
+      "一向に",
+      "一斉に",
+      "一律に",
+      "一概に"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "开始吃药已经一周了，症状却丝毫不见好转。",
+      "en": "It's been a week since I started the medicine, but my symptoms are not getting better at all."
+    },
+    "why": {
+      "zh": "线索：后接「よくならない」，否定表示完全没有。\n词义：「一向に」＋否定＝完全（不）、丝毫（不）。",
+      "en": "Clue: A negative follows: no improvement at all.\nMeaning: 「一向に」 plus negative means not at all."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「一斉に」是一起。",
+        "en": "「一斉に」 is all at once."
+      },
+      {
+        "zh": "「一律に」是一律。",
+        "en": "「一律に」 is uniformly."
+      },
+      {
+        "zh": "「一概に」是一概，接「～とは言えない」。",
+        "en": "「一概に」 goes with 「～とは言えない」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-375",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "別れを決めかねて、（　）と関係を続けてしまった。",
+    "options": [
+      "ずるずる",
+      "ぞろぞろ",
+      "ぎりぎり",
+      "のびのび"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "下不了分手的决心，就这样拖拖拉拉地维持了关系。",
+      "en": "Unable to decide to break up, we just let the relationship drag on."
+    },
+    "why": {
+      "zh": "线索：「決めかねて」，拖着不结束。\n词义：「ずるずる（と）」＝拖拖拉拉地继续，「ずるずると続ける」。",
+      "en": "Clue: Indecision: dragging on.\nMeaning: 「ずるずる」 is dragging on without resolve."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ぞろぞろ」是成群结队。",
+        "en": "「ぞろぞろ」 is in a stream."
+      },
+      {
+        "zh": "「ぎりぎり」是勉强。",
+        "en": "「ぎりぎり」 is barely."
+      },
+      {
+        "zh": "「のびのび」是舒展自在。",
+        "en": "「のびのび」 is freely."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-376",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "メールで相談したが、返ってきたのは（　）返事だけだった。",
+    "options": [
+      "そっけない",
+      "あっけない",
+      "あどけない",
+      "ぎこちない"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我发邮件咨询，收到的只有冷淡的回复。",
+      "en": "I wrote in for advice, but all I got back was a curt reply."
+    },
+    "why": {
+      "zh": "线索：「返事だけだった」，没有诚意的冷淡回复。\n词义：「そっけない」＝冷淡、不热情。",
+      "en": "Clue: Just a bare reply: cold.\nMeaning: 「そっけない」 is curt or cold."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「あっけない」是出乎意料地简单。",
+        "en": "「あっけない」 is over too quickly."
+      },
+      {
+        "zh": "「あどけない」是天真无邪。",
+        "en": "「あどけない」 is innocent."
+      },
+      {
+        "zh": "「ぎこちない」是生硬。",
+        "en": "「ぎこちない」 is awkward."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-377",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "彼女の論文は、停滞していた学界の議論に新たな視点という（　）を投じた。",
+    "options": [
+      "一石",
+      "一票",
+      "一矢",
+      "一計"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "她的论文为停滞不前的学界讨论投下了新视角这一石。",
+      "en": "Her paper cast a stone into the stalled academic debate in the form of a fresh viewpoint."
+    },
+    "why": {
+      "zh": "线索：「議論に」「新たな視点という（　）を投じた」，是给停滞的局面引入新刺激。\n词义：「一石を投じる」＝（向平静的水面投石般）对问题提出新见解、引起反响。",
+      "en": "Clue: 「議論に」 and 「新たな視点という（　）を投じた」: stirring a stalled debate.\nMeaning: 「一石を投じる」 is to raise a new point that sends ripples through a debate."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「一票を投じる」是投一张票，与议论无关。",
+        "en": "「一票を投じる」 is to cast a vote."
+      },
+      {
+        "zh": "「一矢を報いる」是反击一下，不说「投じる」。",
+        "en": "「一矢を報いる」 is to strike back; it does not go with 「投じる」."
+      },
+      {
+        "zh": "「一計を案じる」是想出一计，不说「投じる」。",
+        "en": "「一計を案じる」 is to devise a plan; not 「投じる」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-378",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "新作映画は、批評家から（　）評価を受けた。",
+    "options": [
+      "手厳しい",
+      "手ぬるい",
+      "手堅い",
+      "手早い"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "新片受到了评论家们严厉的批评。",
+      "en": "The new film got a harsh review from the critics."
+    },
+    "why": {
+      "zh": "线索：「批評家から」，评价不留情面。\n词义：「手厳しい」＝严厉、毫不留情。",
+      "en": "Clue: Critics: unsparing.\nMeaning: 「手厳しい」 is severe."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「手ぬるい」是不够严。",
+        "en": "「手ぬるい」 is lenient."
+      },
+      {
+        "zh": "「手堅い」是稳妥。",
+        "en": "「手堅い」 is steady."
+      },
+      {
+        "zh": "「手早い」是动作快。",
+        "en": "「手早い」 is quick."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-379",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "試験でずるをして合格したことが、今でも（　）。",
+    "options": [
+      "後ろめたい",
+      "頼もしい",
+      "いじらしい",
+      "勇ましい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "考试作弊合格的事，至今仍让我心虚。",
+      "en": "I still feel guilty about having passed the exam by cheating."
+    },
+    "why": {
+      "zh": "线索：「ずるをして」，对过去的不当行为心里发虚。\n词义：「後ろめたい」＝心虚、内疚。",
+      "en": "Clue: Cheating left a guilty conscience.\nMeaning: 「後ろめたい」 is feeling guilty."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「頼もしい」是可靠。",
+        "en": "「頼もしい」 is reliable."
+      },
+      {
+        "zh": "「いじらしい」是惹人怜爱。",
+        "en": "「いじらしい」 is touchingly sweet."
+      },
+      {
+        "zh": "「勇ましい」是勇敢。",
+        "en": "「勇ましい」 is brave."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-380",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "経験豊富な看護師たちから（　）看護を受け、予定より早く回復した。",
+    "options": [
+      "手厚い",
+      "手荒い",
+      "手狭な",
+      "手ぬるい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "得到经验丰富的护士们的周到护理，比预期更早康复了。",
+      "en": "Receiving attentive care from experienced nurses, he recovered earlier than expected."
+    },
+    "why": {
+      "zh": "线索：「経験豊富な看護師たち」「予定より早く回復した」，照顾得周到、尽心。\n词义：「手厚い」（てあつい）＝周到而丰厚、照料得无微不至，常说「手厚い看護」「手厚いもてなし」「手厚い保護」。",
+      "en": "Clue: 「経験豊富な看護師たち」 and 「予定より早く回復した」: the care was thorough.\nMeaning: 「手厚い」 (てあつい) is generous, thorough in treatment: 「手厚い看護」, 「手厚いもてなし」, 「手厚い保護」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「手荒い」是粗暴，护理粗暴不可能提早康复。",
+        "en": "「手荒い」 is rough; rough care would not speed recovery."
+      },
+      {
+        "zh": "「手狭」是（场所）窄小，不修饰「看護」。",
+        "en": "「手狭」 is cramped (of space); it can't modify 「看護」."
+      },
+      {
+        "zh": "「手ぬるい」是处理太宽松、不够严，与「早く回復した」不符。",
+        "en": "「手ぬるい」 is too lenient; it conflicts with a quick recovery."
       }
     ]
   }

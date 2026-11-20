@@ -226,38 +226,38 @@
   },
   {
     "id": "n1-mg-407",
-    "rev": 2,
+    "rev": 3,
     "type": "iikae",
-    "difficulty": 1,
-    "stem": "先輩は私の頼みを<<快く>>引き受けてくれた。",
+    "difficulty": 2,
+    "stem": "ただでさえ混む駅前の道が、雨の日は<<なおさら>>混雑する。",
     "options": [
-      "喜んで",
-      "即座に",
-      "黙って",
-      "条件付きで"
+      "いっそう",
+      "少しずつ",
+      "意外にも",
+      "一時的に"
     ],
     "answer": 0,
     "tr": {
-      "zh": "前辈爽快地答应了我的请求。",
-      "en": "My senior gladly agreed to help me."
+      "zh": "本来就拥挤的站前道路，下雨天就更拥挤了。",
+      "en": "The road in front of the station, crowded enough already, becomes even more congested on rainy days."
     },
     "why": {
-      "zh": "线索：划线的「快く」修饰「引き受けてくれた」，前辈是乐意答应的，对应「喜んで」。\n词义：「快く」（こころよく）＝爽快地、欣然地（答应请求），常说「快く引き受ける」「快く応じる」。",
-      "en": "Clue: the underlined 「快く」 modifies 「引き受けてくれた」 — he agreed willingly: 「喜んで」.\nMeaning: 「快く」 (こころよく) is gladly, readily (agreeing to a request): 「快く引き受ける」, 「快く応じる」."
+      "zh": "线索：「ただでさえ混む」＋「雨の日は」，在已经拥挤的基础上程度更甚。\n词义：「なおさら」＝更加、越发（在原有程度上再加深），常说「雨だとなおさら」「知っていればなおさら」。",
+      "en": "Clue: 「ただでさえ混む」 plus 「雨の日は」: worse on top of an already bad state.\nMeaning: 「なおさら」 is all the more, even more: 「雨だとなおさら」, 「知っていればなおさら」."
     },
     "wrong": [
       null,
       {
-        "zh": "「即座に」是马上，说的是速度，不是是否乐意。",
-        "en": "「即座に」 is about speed, not willingness."
+        "zh": "「少しずつ」是逐渐，说的是变化的过程，不是程度更甚。",
+        "en": "「少しずつ」 is gradually: about the process, not intensity."
       },
       {
-        "zh": "「黙って」是一声不吭，看不出是否乐意。",
-        "en": "「黙って」 is without a word; it says nothing about being glad to."
+        "zh": "「意外にも」是出乎意料，原文并无意外之意。",
+        "en": "「意外にも」 is unexpectedly; nothing here is unexpected."
       },
       {
-        "zh": "「条件付きで」是附带条件，和「快く」的爽快意思不符。",
-        "en": "「条件付きで」 means with conditions attached, not gladly."
+        "zh": "「一時的に」是暂时，与程度无关。",
+        "en": "「一時的に」 is temporarily; unrelated to degree."
       }
     ]
   },
@@ -744,41 +744,38 @@
   },
   {
     "id": "n1-mg-421",
-    "rev": 2,
+    "rev": 3,
     "type": "iikae",
-    "refs": [
-      "lesson86#vocab"
-    ],
     "difficulty": 2,
-    "stem": "部長は自分の案を<<強引に>>通した。",
+    "stem": "住民は新しい条例の制定に<<こぞって>>反対した。",
     "options": [
-      "無理やり",
-      "巧みに",
-      "早々に",
-      "ひそかに"
+      "みな一緒になって",
+      "順番に",
+      "いやいや",
+      "こっそり"
     ],
     "answer": 0,
     "tr": {
-      "zh": "部长强行让自己的方案通过了。",
-      "en": "The manager forced his own plan through."
+      "zh": "居民全体一起反对制定新条例。",
+      "en": "The residents all opposed the new ordinance together."
     },
     "why": {
-      "zh": "线索：划线的「強引に」修饰「通した」，不顾别人的意见硬让方案通过，对应「無理やり」。\n词义：「強引」（ごういん）＝强行、硬来，常说「強引に進める」「強引なやり方」。",
-      "en": "Clue: the underlined 「強引に」 modifies 「通した」 — pushing the plan through over others' views — matching 「無理やり」.\nMeaning: 「強引」 (ごういん) is forcible, pushy: 「強引に進める」, 「強引なやり方」."
+      "zh": "线索：划线的「こぞって」修饰「反対した」，说的是大家一起行动，对应「みな一緒になって」。\n词义：「こぞって」＝全体一起、都（一同行动），常说「こぞって賛成する」「国民こぞって」。",
+      "en": "Clue: the underlined 「こぞって」 modifies 「反対した」 — everyone acting together — matching 「みな一緒になって」.\nMeaning: 「こぞって」 is all together, to a person: 「こぞって賛成する」, 「国民こぞって」."
     },
     "wrong": [
       null,
       {
-        "zh": "「巧みに」是巧妙地，靠技巧而不是硬来。",
-        "en": "「巧みに」 is skilfully — by craft, not force."
+        "zh": "「順番に」是一个接一个，不是同时一起。",
+        "en": "「順番に」 is one after another, not all together."
       },
       {
-        "zh": "「早々に」是很快地，说的是时间。",
-        "en": "「早々に」 is early, quickly — timing, not force."
+        "zh": "「いやいや」是勉强，说的是态度，不是“一起”。",
+        "en": "「いやいや」 is reluctantly — attitude, not togetherness."
       },
       {
-        "zh": "「ひそかに」是偷偷地，「強引に」是公开硬推。",
-        "en": "「ひそかに」 is secretly; 「強引に」 is pushing it through openly."
+        "zh": "「こっそり」是偷偷地，「こぞって」是公开地一起。",
+        "en": "「こっそり」 is secretly; 「こぞって」 is openly and together."
       }
     ]
   },
@@ -927,6 +924,1626 @@
       {
         "zh": "「心細い」是心里没底、不安，不是闲得无聊。",
         "en": "「心細い」 is feeling uneasy or forlorn, not idle."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-426",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "あの店員は初対面の客にも<<なれなれしい>>。",
+    "options": [
+      "親しくもないのに親しげに振る舞う",
+      "丁寧すぎて近寄りがたい",
+      "話し方が速くて聞き取りにくい",
+      "客のことを少しも気にかけない"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那个店员对初次见面的客人也过分亲昵随便。",
+      "en": "That clerk is overly familiar even with customers he has just met."
+    },
+    "why": {
+      "zh": "线索：「初対面の客にも」，关系并不熟却很随便。\n词义：「なれなれしい」（馴れ馴れしい）＝没那么熟却表现得过分亲昵、不见外，常说「なれなれしい態度」「なれなれしく話しかける」。",
+      "en": "Clue: 「初対面の客にも」: not close, yet acting close.\nMeaning: 「なれなれしい」 means over-familiar toward someone you don't know well: 「なれなれしい態度」, 「なれなれしく話しかける」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「丁寧すぎて近寄りがたい」与「なれなれしい」相反。",
+        "en": "Too polite to approach is the opposite."
+      },
+      {
+        "zh": "说话速度与亲昵与否无关。",
+        "en": "Speech speed has nothing to do with familiarity."
+      },
+      {
+        "zh": "不在意客人是冷淡，不是过分亲昵。",
+        "en": "Not caring about customers is indifference, not familiarity."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-427",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "長期の研究課題には、<<腰を据えて>>取り組む必要がある。",
+    "options": [
+      "じっくり落ち着いて",
+      "手当たり次第に",
+      "一時的に",
+      "大急ぎで"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "对长期的研究课题，必须沉下心来认真攻关。",
+      "en": "A long-term research topic has to be tackled with steady commitment."
+    },
+    "why": {
+      "zh": "线索：「長期の研究課題」，需要不急不躁地做。\n词义：「腰を据える」（こしをすえる）＝安下心来，专心长期做，常说「腰を据えて取り組む」。",
+      "en": "Clue: 「長期の研究課題」 calls for a settled, unhurried approach.\nMeaning: 「腰を据える」 is to settle down to a job: 「腰を据えて取り組む」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「手当たり次第に」是不加选择地乱来。",
+        "en": "「手当たり次第に」 is at random."
+      },
+      {
+        "zh": "「一時的に」是暂时，与长期相反。",
+        "en": "「一時的に」 is temporarily, the opposite of long-term."
+      },
+      {
+        "zh": "「大急ぎで」是匆忙，与沉下心相反。",
+        "en": "「大急ぎで」 is in a great hurry, the opposite of settling in."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-428",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<まぎらわしい>>表示のせいで、客が入口を間違えた。",
+    "options": [
+      "区別しにくい",
+      "見苦しい",
+      "目立たない",
+      "古めかしい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "因为标识容易混淆，客人走错了入口。",
+      "en": "Because of the confusing sign, customers took the wrong entrance."
+    },
+    "why": {
+      "zh": "线索：因为标识，客人走错入口，说明难以分辨。\n词义：「紛らわしい」（まぎらわしい）＝容易混淆，常说「紛らわしい名前」「紛らわしい表現」。",
+      "en": "Clue: customers chose the wrong entrance because of the sign — it was hard to tell which was which.\nMeaning: 「紛らわしい」 (まぎらわしい) is confusingly similar: 「紛らわしい名前」, 「紛らわしい表現」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「見苦しい」是难看，不是难分辨。",
+        "en": "「見苦しい」 is unsightly, not confusing."
+      },
+      {
+        "zh": "「目立たない」是不显眼，不显眼不等于容易混淆。",
+        "en": "「目立たない」 is inconspicuous, which is not the same as confusable."
+      },
+      {
+        "zh": "「古めかしい」是老旧，和辨认无关。",
+        "en": "「古めかしい」 is old-fashioned, unrelated to confusion."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-429",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "工事は<<おおむね>>予定どおりに進んでいる。",
+    "options": [
+      "だいたい",
+      "すべて",
+      "少しだけ",
+      "いつも"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "工程大体上按计划进行。",
+      "en": "The construction is proceeding mostly as planned."
+    },
+    "why": {
+      "zh": "线索：「予定どおりに進んでいる」前面加「おおむね」，说的是整体上大致如此。\n词义：「おおむね」（概ね）＝大体、大致，常说「おおむね良好」「おおむね賛成」。",
+      "en": "Clue: 「おおむね」 before 「予定どおりに進んでいる」 means broadly so.\nMeaning: 「おおむね」 (概ね) is mostly, by and large: 「おおむね良好」, 「おおむね賛成」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「すべて」是全部，比「おおむね」说得更绝对。",
+        "en": "「すべて」 is all, absolute; 「おおむね」 allows exceptions."
+      },
+      {
+        "zh": "「少しだけ」是一点点，程度相反。",
+        "en": "「少しだけ」 is only a little, the opposite degree."
+      },
+      {
+        "zh": "「いつも」是总是，说的是频率不是程度。",
+        "en": "「いつも」 is always: frequency, not degree."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-430",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<かねてから>>噂されていた合併が正式に発表された。",
+    "options": [
+      "以前から",
+      "突然",
+      "一時的に",
+      "ひそかに"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "早有传闻的合并正式公布了。",
+      "en": "The merger long rumored was formally announced."
+    },
+    "why": {
+      "zh": "线索：「噂されていた」，说明传闻持续了很久，对应「以前から」。\n词义：「かねてから」＝很早以前就，常说「かねてからの念願」「かねてより計画していた」。",
+      "en": "Clue: it had been rumored — the rumor goes back a long way.\nMeaning: 「かねてから」 is since some time ago: 「かねてからの念願」, 「かねてより計画していた」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「突然」是突如其来，与长期流传矛盾。",
+        "en": "「突然」 is suddenly, contradicting a long-standing rumor."
+      },
+      {
+        "zh": "「一時的に」是暂时，不是从很久以前。",
+        "en": "「一時的に」 is temporarily, not from long ago."
+      },
+      {
+        "zh": "「ひそかに」是暗中，说的是方式，不是时间。",
+        "en": "「ひそかに」 is secretly — manner, not time."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-431",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "彼女は<<ひたすら>>練習を重ねた。",
+    "options": [
+      "ただ一心に",
+      "気楽に",
+      "時折",
+      "ほどほどに"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "她一心一意地反复练习。",
+      "en": "She practiced single-mindedly, again and again."
+    },
+    "why": {
+      "zh": "线索：「練習を重ねた」前的副词，表示全神贯注于一件事。\n词义：「ひたすら」＝一个劲儿地、只顾，常说「ひたすら謝る」「ひたすら待つ」。",
+      "en": "Clue: the adverb describes how she kept practicing — with total focus.\nMeaning: 「ひたすら」 is doing nothing but one thing: 「ひたすら謝る」, 「ひたすら待つ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「気楽に」是轻松随意，与专注相反。",
+        "en": "「気楽に」 is casually, the opposite of intense focus."
+      },
+      {
+        "zh": "「時折」是偶尔，与不停地练习矛盾。",
+        "en": "「時折」 is occasionally, at odds with repeated practice."
+      },
+      {
+        "zh": "「ほどほどに」是适可而止，与拼命相反。",
+        "en": "「ほどほどに」 is in moderation, the opposite of single-minded."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-432",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "電話を切って<<ほどなく>>、彼が訪ねてきた。",
+    "options": [
+      "まもなく",
+      "突然",
+      "何時間かたって",
+      "前もって"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "挂了电话没过多久，他就来拜访了。",
+      "en": "Soon after I hung up, he came to see me."
+    },
+    "why": {
+      "zh": "线索：「電話を切って」「訪ねてきた」，隔得很短。\n词义：「ほどなく」＝不久、过不了多久，常说「ほどなく到着する」「ほどなくして」。",
+      "en": "Clue: 「電話を切って」 and 「訪ねてきた」: a short gap.\nMeaning: 「ほどなく」 is before long: 「ほどなく到着する」, 「ほどなくして」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「突然」是出乎意料，不是时间的长短。",
+        "en": "「突然」 is suddenly, not about elapsed time."
+      },
+      {
+        "zh": "「何時間かたって」是隔了很久。",
+        "en": "「何時間かたって」 is after hours, a long gap."
+      },
+      {
+        "zh": "「前もって」是事先。",
+        "en": "「前もって」 is in advance."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-433",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "彼の熱意に<<ほだされて>>、計画に協力することにした。",
+    "options": [
+      "心を動かされて",
+      "腹を立てて",
+      "あきれて",
+      "気後れして"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "被他的热情打动，我决定协助这个计划。",
+      "en": "Won over by his enthusiasm, I decided to help with the plan."
+    },
+    "why": {
+      "zh": "线索：「彼の熱意に」「協力することにした」，因为被感动而改变态度。\n词义：「ほだされる」＝被情义、热情所打动而无法拒绝，常说「情にほだされる」。",
+      "en": "Clue: 「彼の熱意に」 and 「協力することにした」: his zeal changed my attitude.\nMeaning: 「ほだされる」 is to be swayed by feeling: 「情にほだされる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「腹を立てる」是生气，与协助不合。",
+        "en": "「腹を立てる」 is to get angry, which clashes with agreeing to help."
+      },
+      {
+        "zh": "「あきれる」是惊讶、无语。",
+        "en": "「あきれる」 is to be appalled."
+      },
+      {
+        "zh": "「気後れする」是怯场。",
+        "en": "「気後れする」 is to lose nerve."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-434",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "彼が犯人であるという<<紛れもない>>証拠が見つかった。",
+    "options": [
+      "疑いようのない",
+      "思いがけない",
+      "疑わしい",
+      "不十分な"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "找到了他就是犯人的确凿证据。",
+      "en": "Unmistakable proof that he is the culprit was found."
+    },
+    "why": {
+      "zh": "线索：划线的「紛れもない」修饰「証拠」，是毫无疑问的证据，对应「疑いようのない」。\n词义：「紛れもない」＝确凿无疑的、不会弄错的，常说「紛れもない事実」「紛れもなく」。",
+      "en": "Clue: the underlined 「紛れもない」 modifies 「証拠」 — proof beyond doubt — matching 「疑いようのない」.\nMeaning: 「紛れもない」 is unmistakable, beyond question: 「紛れもない事実」, 「紛れもなく」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「思いがけない」是出乎意料的，说的是意外，不是确凿。",
+        "en": "「思いがけない」 is unexpected — surprise, not certainty."
+      },
+      {
+        "zh": "「疑わしい」是可疑的，与「紛れもない」相反。",
+        "en": "「疑わしい」 is doubtful — the opposite."
+      },
+      {
+        "zh": "「不十分な」是不充分的，说的是量，不是确凿程度。",
+        "en": "「不十分な」 is insufficient — amount, not certainty."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-435",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "部下の苦労を<<ねぎらった>>。",
+    "options": [
+      "感謝して慰めた",
+      "厳しく責めた",
+      "大いに驚いた",
+      "公平に評価した"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "慰劳了下属的辛苦。",
+      "en": "I thanked my subordinates for their hard work."
+    },
+    "why": {
+      "zh": "线索：对象是「苦労」，对辛苦的人表示感谢和体贴。\n词义：「ねぎらう」＝慰劳、犒劳，常说「労をねぎらう」「選手をねぎらう」。",
+      "en": "Clue: the object is the staff's hard work — acknowledging it kindly.\nMeaning: 「ねぎらう」 is to thank someone for their effort: 「労をねぎらう」, 「選手をねぎらう」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「責める」是责备，感情相反。",
+        "en": "「責める」 is to blame, the opposite feeling."
+      },
+      {
+        "zh": "「驚く」是吃惊，和慰劳无关。",
+        "en": "「驚く」 is to be surprised, unrelated."
+      },
+      {
+        "zh": "「評価する」是评判，没有体贴辛苦的意思。",
+        "en": "「評価する」 is to evaluate, with no sense of comforting."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-436",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "彼は自分の軽率な行動を<<とがめられた>>。",
+    "options": [
+      "責められた",
+      "疑われた",
+      "見逃された",
+      "かばわれた"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他的轻率行为受到了责备。",
+      "en": "He was reproached for his rash behavior."
+    },
+    "why": {
+      "zh": "线索：「軽率な行動」成了被指摘的对象，对应「責められた」。\n词义：「咎める」（とがめる）＝责备，常说「過ちを咎める」「良心が咎める」。",
+      "en": "Clue: his rash behavior was the target — someone held it against him.\nMeaning: 「咎める」 (とがめる) is to blame: 「過ちを咎める」, 「良心が咎める」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「疑われた」是被怀疑，不是被责备。",
+        "en": "「疑われた」 is being suspected, not blamed."
+      },
+      {
+        "zh": "「見逃された」是被放过，与责备相反。",
+        "en": "「見逃された」 is being overlooked, the opposite."
+      },
+      {
+        "zh": "「かばわれた」是被袒护，与责备相反。",
+        "en": "「かばわれた」 is being protected, the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-437",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "相手を<<あなどって>>いると痛い目に遭う。",
+    "options": [
+      "軽く見て",
+      "恐れて",
+      "避けて",
+      "信じて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "小看对手的话会吃苦头。",
+      "en": "If you underestimate your opponent, you will get hurt."
+    },
+    "why": {
+      "zh": "线索：后面是「痛い目に遭う」，说明低估对方才会吃亏。\n词义：「侮る」（あなどる）＝轻视、小看，常说「相手を侮る」「侮れない存在」。",
+      "en": "Clue: the result is getting hurt — the mistake is underrating the opponent.\nMeaning: 「侮る」 (あなどる) is to look down on: 「相手を侮る」, 「侮れない存在」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「恐れる」是害怕，与轻视相反。",
+        "en": "「恐れる」 is to fear, the opposite."
+      },
+      {
+        "zh": "「避ける」是躲开，不是轻视。",
+        "en": "「避ける」 is to avoid, not to look down on."
+      },
+      {
+        "zh": "「信じる」是相信，不是轻视。",
+        "en": "「信じる」 is to trust, not to underrate."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-438",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "彼女は失敗した後輩を<<かばった>>。",
+    "options": [
+      "守ってやった",
+      "責め立てた",
+      "見下した",
+      "手本を示した"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "她袒护了失败的后辈。",
+      "en": "She stood up for the junior who had failed."
+    },
+    "why": {
+      "zh": "线索：后辈失败了，她对后辈采取的是保护的态度。\n词义：「庇う」（かばう）＝袒护、保护，常说「子どもをかばう」「失敗をかばう」。",
+      "en": "Clue: the junior failed, and her stance toward the junior is protective.\nMeaning: 「庇う」 (かばう) is to shield someone: 「子どもをかばう」, 「失敗をかばう」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「責め立てる」是严厉指责，相反。",
+        "en": "「責め立てる」 is to harshly blame, the opposite."
+      },
+      {
+        "zh": "「見下す」是瞧不起，相反。",
+        "en": "「見下す」 is to look down on, the opposite."
+      },
+      {
+        "zh": "「手本を示す」是做示范，与保护无关。",
+        "en": "「手本を示す」 is to set an example, not to protect."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-439",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "基本を<<おろそかにする>>と、後で苦労する。",
+    "options": [
+      "いい加減にする",
+      "十分に理解する",
+      "繰り返し確認する",
+      "人に教える"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "忽视基础的话，之后会吃苦头。",
+      "en": "If you neglect the basics, you will struggle later."
+    },
+    "why": {
+      "zh": "线索：后半句「後で苦労する」，说明对基础不认真。\n词义：「疎かにする」（おろそかにする）＝马虎对待、忽视，常说「勉強をおろそかにする」「健康をおろそかにする」。",
+      "en": "Clue: you will struggle later — because the basics were treated carelessly.\nMeaning: 「疎かにする」 (おろそかにする) is to neglect: 「勉強をおろそかにする」, 「健康をおろそかにする」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「十分に理解する」是充分理解，与忽视相反。",
+        "en": "「十分に理解する」 is to understand fully, the opposite."
+      },
+      {
+        "zh": "「繰り返し確認する」是反复确认，与忽视相反。",
+        "en": "「繰り返し確認する」 is to check repeatedly, the opposite."
+      },
+      {
+        "zh": "「人に教える」是教别人，不是忽视。",
+        "en": "「人に教える」 is to teach, not to neglect."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-440",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "医療費が年々<<かさんで>>いる。",
+    "options": [
+      "増えて",
+      "減って",
+      "偏って",
+      "変わって"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "医疗费逐年增加。",
+      "en": "Medical costs are piling up year by year."
+    },
+    "why": {
+      "zh": "线索：「年々」配合费用，指数额逐渐增加。\n词义：「かさむ」＝（费用、数量）增多，常说「出費がかさむ」「経費がかさむ」。",
+      "en": "Clue: 「年々」 with costs — the amount keeps growing.\nMeaning: 「かさむ」 is for expenses or amounts to mount up: 「出費がかさむ」, 「経費がかさむ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「減る」是减少，与增加相反。",
+        "en": "「減る」 is to decrease, the opposite."
+      },
+      {
+        "zh": "「偏る」是不均衡，说的不是数量增加。",
+        "en": "「偏る」 is to be lopsided, not growth."
+      },
+      {
+        "zh": "「変わる」是变化，没有增加的含义。",
+        "en": "「変わる」 is to change, with no sense of increase."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-441",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "首相は記者の鋭い質問を<<はぐらかした>>。",
+    "options": [
+      "話をそらして答えなかった",
+      "正直に詳しく答えた",
+      "怒って席を立った",
+      "聞き返して確認した"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "首相对记者尖锐的提问避而不答。",
+      "en": "The prime minister dodged the reporter's sharp question."
+    },
+    "why": {
+      "zh": "线索：划线的「はぐらかした」说对尖锐的问题不正面回答，对应「話をそらして答えなかった」。\n词义：「はぐらかす」＝岔开话题、含糊过去，常说「質問をはぐらかす」「話をはぐらかす」。",
+      "en": "Clue: the underlined 「はぐらかした」 — not answering a sharp question head-on — matches 「話をそらして答えなかった」.\nMeaning: 「はぐらかす」 is to evade by changing the subject: 「質問をはぐらかす」, 「話をはぐらかす」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「正直に詳しく答えた」是正面回答，与「はぐらかす」相反。",
+        "en": "Answering honestly and in detail is the opposite of 「はぐらかす」."
+      },
+      {
+        "zh": "「怒って席を立った」是生气离席，不是岔开话题。",
+        "en": "Storming out is not changing the subject."
+      },
+      {
+        "zh": "「聞き返して確認した」是为了弄清问题，不是躲避。",
+        "en": "Asking back to confirm is clarifying, not evading."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-442",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "周囲は彼の説明を<<いぶかった>>。",
+    "options": [
+      "怪しんだ",
+      "受け入れた",
+      "聞き流した",
+      "称賛した"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "周围的人对他的说明感到怀疑。",
+      "en": "Those around him doubted his explanation."
+    },
+    "why": {
+      "zh": "线索：周围的人对他的说明持怀疑态度。\n词义：「訝る」（いぶかる）＝觉得可疑、纳闷，常说「いぶかしげな顔」「不審をいぶかる」。",
+      "en": "Clue: how people reacted to the explanation — with suspicion.\nMeaning: 「訝る」 (いぶかる) is to find something suspicious or odd: 「いぶかしげな顔」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「受け入れる」是接受，与怀疑相反。",
+        "en": "「受け入れる」 is to accept, the opposite."
+      },
+      {
+        "zh": "「聞き流す」是不在意地听过，没有怀疑。",
+        "en": "「聞き流す」 is to let pass, no suspicion."
+      },
+      {
+        "zh": "「称賛する」是称赞，与怀疑相反。",
+        "en": "「称賛する」 is to praise, the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-443",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<のどかな>>田園風景が広がっている。",
+    "options": [
+      "のんびりして穏やかな",
+      "荒涼とした",
+      "華やかな",
+      "殺風景な"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "悠闲宁静的田园风景铺展开来。",
+      "en": "A peaceful, tranquil rural landscape stretches out."
+    },
+    "why": {
+      "zh": "线索：「田園風景」配的形容词，表示悠闲、平静。\n词义：「のどか」＝悠闲宁静，常说「のどかな春の日」「のどかな村」。",
+      "en": "Clue: the adjective for a rural landscape — calm and relaxed.\nMeaning: 「のどか」 is peaceful and relaxed: 「のどかな春の日」, 「のどかな村」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「荒涼」是荒芜凄凉，与宁静温和不同。",
+        "en": "「荒涼」 is bleak and desolate, not gentle."
+      },
+      {
+        "zh": "「華やか」是华丽热闹，与悠闲相反。",
+        "en": "「華やか」 is gorgeous and lively, the opposite."
+      },
+      {
+        "zh": "「殺風景」是单调乏味，没有悠闲的意思。",
+        "en": "「殺風景」 is dreary, with no sense of ease."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-444",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "彼の<<おおらかな>>性格に皆救われている。",
+    "options": [
+      "細かいことを気にしない",
+      "何事にも慎重な",
+      "意志が非常に強い",
+      "感情をよく表す"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "大家都靠他豁达的性格得到了宽慰。",
+      "en": "Everyone is helped by his easygoing nature."
+    },
+    "why": {
+      "zh": "线索：性格让大家感到轻松，意味着不拘小节。\n词义：「おおらか」＝胸襟开阔、不拘小节，常说「おおらかな人」「おおらかに育てる」。",
+      "en": "Clue: his temperament lifts others — he does not fuss.\nMeaning: 「おおらか」 is broad-minded and easygoing: 「おおらかな人」, 「おおらかに育てる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「慎重」是谨慎，与不拘小节相反。",
+        "en": "「慎重」 is cautious, the opposite."
+      },
+      {
+        "zh": "「意志が強い」是意志坚强，说的不是气度。",
+        "en": "「意志が強い」 is strong-willed, not about tolerance."
+      },
+      {
+        "zh": "「感情を表す」是表露感情，与度量无关。",
+        "en": "「感情を表す」 is expressive, unrelated."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-445",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "彼の発言は<<きわどい>>内容だった。",
+    "options": [
+      "問題になりかねない",
+      "論理的すぎる",
+      "意味の曖昧な",
+      "退屈な"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他的发言内容很露骨、很危险。",
+      "en": "What he said was borderline and risky."
+    },
+    "why": {
+      "zh": "线索：发言「きわどい」，是指再进一步就可能出问题。\n词义：「際どい」（きわどい）＝险些越界、擦边，常说「際どい冗談」「際どい勝負」。",
+      "en": "Clue: the remarks verge on trouble — one step more and it is a problem.\nMeaning: 「際どい」 (きわどい) is on the edge: 「際どい冗談」, 「際どい勝負」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「論理的すぎる」是过于讲逻辑，与危险无关。",
+        "en": "「論理的すぎる」 is overly logical, unrelated."
+      },
+      {
+        "zh": "「意味が曖昧」是意思模糊，不是擦边。",
+        "en": "「意味が曖昧」 is vague, not borderline."
+      },
+      {
+        "zh": "「退屈」是无聊，与危险相反。",
+        "en": "「退屈」 is boring, the opposite of risky."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-446",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<ささいな>>ことで口論になった。",
+    "options": [
+      "取るに足りない",
+      "思いがけない",
+      "根深い",
+      "唐突な"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "为一点小事吵了起来。",
+      "en": "We got into an argument over a trivial matter."
+    },
+    "why": {
+      "zh": "线索：因为微不足道的原因吵架。\n词义：「些細」（ささい）＝细小、微不足道，常说「些細なこと」「些細な違い」。",
+      "en": "Clue: the cause of the quarrel was small.\nMeaning: 「些細」 (ささい) is trivial: 「些細なこと」, 「些細な違い」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「思いがけない」是意想不到，不是小。",
+        "en": "「思いがけない」 is unexpected, not small."
+      },
+      {
+        "zh": "「根深い」是根深蒂固，与琐碎相反。",
+        "en": "「根深い」 is deep-rooted, the opposite of trivial."
+      },
+      {
+        "zh": "「唐突」是突兀，不是小事。",
+        "en": "「唐突」 is abrupt, not small."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-447",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "彼は不満を<<あからさまに>>表した。",
+    "options": [
+      "隠さずに",
+      "控えめに",
+      "遠回しに",
+      "繰り返し"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他毫不掩饰地表露了不满。",
+      "en": "He expressed his dissatisfaction openly."
+    },
+    "why": {
+      "zh": "线索：表达不满的方式，没有任何掩饰。\n词义：「あからさま」＝露骨、毫不掩饰，常说「あからさまな敵意」「あからさまに嫌な顔をする」。",
+      "en": "Clue: how he showed his dissatisfaction — with nothing hidden.\nMeaning: 「あからさま」 is blatant: 「あからさまな敵意」, 「あからさまに嫌な顔をする」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「控えめに」是克制，相反。",
+        "en": "「控えめに」 is restrained, the opposite."
+      },
+      {
+        "zh": "「遠回しに」是拐弯抹角，相反。",
+        "en": "「遠回しに」 is indirectly, the opposite."
+      },
+      {
+        "zh": "「繰り返し」是反复，说的是次数。",
+        "en": "「繰り返し」 is repeatedly — count, not openness."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-448",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "病み上がりの彼は、まだ足取りが<<おぼつかない>>。",
+    "options": [
+      "頼りない",
+      "力強い",
+      "軽快だ",
+      "規則正しい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "刚病愈的他，脚步还不稳。",
+      "en": "Just recovered from illness, he still walks unsteadily."
+    },
+    "why": {
+      "zh": "线索：划线的「おぼつかない」说「病み上がり」的脚步不稳当，对应「頼りない」。\n词义：「おぼつかない」＝不稳、靠不住，常说「足取りがおぼつかない」「成功はおぼつかない」。",
+      "en": "Clue: the underlined 「おぼつかない」 describes the steps of someone just up from illness — unsteady — matching 「頼りない」.\nMeaning: 「おぼつかない」 is shaky, unreliable: 「足取りがおぼつかない」, 「成功はおぼつかない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「力強い」是有力，与不稳相反。",
+        "en": "「力強い」 is strong — the opposite of unsteady."
+      },
+      {
+        "zh": "「軽快だ」是轻快，与病后脚步不稳不符。",
+        "en": "「軽快だ」 is light and brisk, not unsteady."
+      },
+      {
+        "zh": "「規則正しい」是有规律，说的是节奏，不是稳不稳。",
+        "en": "「規則正しい」 is regular — rhythm, not steadiness."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-449",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "子どもが道に飛び出し、<<とっさに>>手をつかんだ。",
+    "options": [
+      "即座に",
+      "慎重に",
+      "必死に",
+      "遠慮がちに"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "孩子冲到马路上，我立刻抓住了他的手。",
+      "en": "The child ran into the road, and I grabbed his hand on the spur of the moment."
+    },
+    "why": {
+      "zh": "线索：孩子突然冲出，来不及思考就伸手。\n词义：「咄嗟に」（とっさに）＝一瞬间、立刻，常说「とっさに身をかわす」「とっさの判断」。",
+      "en": "Clue: the child ran out; there was no time to think.\nMeaning: 「咄嗟に」 (とっさに) is in an instant: 「とっさに身をかわす」, 「とっさの判断」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「慎重に」是小心，与来不及考虑相反。",
+        "en": "「慎重に」 is carefully, the opposite of instant."
+      },
+      {
+        "zh": "「必死に」是拼命，说的是努力程度，不是反应速度。",
+        "en": "「必死に」 is desperately — effort, not speed."
+      },
+      {
+        "zh": "「遠慮がちに」是客气，不合紧急情境。",
+        "en": "「遠慮がちに」 is hesitantly, not in an emergency."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-450",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "彼は<<ひそかに>>転職の準備を進めていた。",
+    "options": [
+      "人に知られないように",
+      "思い切って",
+      "少しずつ",
+      "計画的に"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他一直在暗中准备跳槽。",
+      "en": "He had been quietly preparing to change jobs."
+    },
+    "why": {
+      "zh": "线索：「転職の準備」这类事通常不想让周围的人知道。\n词义：「ひそかに」（密かに）＝暗中、悄悄地，常说「ひそかに計画する」「ひそかに思いを寄せる」。",
+      "en": "Clue: preparing to change jobs is something one keeps from others.\nMeaning: 「ひそかに」 (密かに) is secretly, quietly: 「ひそかに計画する」, 「ひそかに思いを寄せる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「思い切って」是下决心、毅然，不含隐瞒的意思。",
+        "en": "「思い切って」 is boldly; no sense of hiding."
+      },
+      {
+        "zh": "「少しずつ」说的是进度，不是是否让人知道。",
+        "en": "「少しずつ」 is little by little: pace, not secrecy."
+      },
+      {
+        "zh": "「計画的に」是有计划地，不含隐瞒的意思。",
+        "en": "「計画的に」 is systematically; no sense of secrecy."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-451",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "返事が来ないので、彼女は<<しびれを切らして>>電話をかけた。",
+    "options": [
+      "待ちきれなくなって",
+      "気を取り直して",
+      "諦めきって",
+      "ほっとして"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "因为迟迟没有回信，她等得不耐烦，打了电话。",
+      "en": "With no reply coming, she lost patience and phoned."
+    },
+    "why": {
+      "zh": "线索：「返事が来ないので」，等得太久才行动。\n词义：「しびれを切らす」＝（等得）失去耐心，常说「しびれを切らして催促する」。",
+      "en": "Clue: 「返事が来ないので」: she acted after waiting too long.\nMeaning: 「しびれを切らす」 is to lose patience waiting: 「しびれを切らして催促する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「気を取り直す」是重新振作。",
+        "en": "「気を取り直す」 is to pull oneself together."
+      },
+      {
+        "zh": "「諦めきる」是彻底放弃，与打电话矛盾。",
+        "en": "「諦めきる」 is to give up completely, contradicting the call."
+      },
+      {
+        "zh": "「ほっとする」是放心，与等不及相反。",
+        "en": "「ほっとする」 is to feel relieved, the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-452",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "今回は<<あえて>>厳しい言い方をした。",
+    "options": [
+      "好ましくないと知りつつ思い切って",
+      "つい口が滑って",
+      "相手に合わせて自然に",
+      "何の考えもなく"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这次我明知不妥，还是特意用了严厉的说法。",
+      "en": "This time I chose to put it harshly, knowing it was not ideal."
+    },
+    "why": {
+      "zh": "线索：「今回は」「厳しい言い方をした」，是有意选择了不太好的做法。\n词义：「あえて」＝明知不妥或有难处，仍特意去做，常说「あえて言えば」「あえて反対する」。",
+      "en": "Clue: 「今回は」 and 「厳しい言い方をした」: a deliberate choice of the less comfortable way.\nMeaning: 「あえて」 is doing something though knowing it is awkward or risky: 「あえて言えば」, 「あえて反対する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「つい口が滑る」是无意中说出，与有意相反。",
+        "en": "「つい口が滑る」 is a slip of the tongue, the opposite of deliberate."
+      },
+      {
+        "zh": "「相手に合わせて自然に」是顺着对方，不含有意冒险之意。",
+        "en": "「相手に合わせて自然に」 is going along with the other person; no deliberate risk."
+      },
+      {
+        "zh": "「何の考えもなく」是没有考虑，与有意相反。",
+        "en": "「何の考えもなく」 is without thought, the opposite of deliberate."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-453",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<むやみに>>薬を飲んではいけない。",
+    "options": [
+      "見境なく",
+      "空腹で",
+      "一度に",
+      "長期間"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "不可随便乱吃药。",
+      "en": "You must not take medicine indiscriminately."
+    },
+    "why": {
+      "zh": "线索：不可随意服药，禁止的是没有节制地吃。\n词义：「むやみに」＝不分青红皂白、随便，常说「むやみに触る」「むやみに信じる」。",
+      "en": "Clue: it is forbidden to take medicine without any judgment.\nMeaning: 「むやみに」 is recklessly or without discrimination: 「むやみに触る」, 「むやみに信じる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「空腹で」说的是状态，不是无节制。",
+        "en": "「空腹で」 is on an empty stomach — a condition."
+      },
+      {
+        "zh": "「一度に」是一次性，不是随便。",
+        "en": "「一度に」 is all at once, not indiscriminate."
+      },
+      {
+        "zh": "「長期間」是长时间，不是随便。",
+        "en": "「長期間」 is for a long time, not indiscriminate."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-454",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "<<生半可な>>知識で専門家に口を出すべきではない。",
+    "options": [
+      "中途半端な",
+      "十分すぎる",
+      "最新の",
+      "人から聞いた"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "不该用一知半解的知识对专家指手画脚。",
+      "en": "You shouldn't lecture experts on the strength of half-baked knowledge."
+    },
+    "why": {
+      "zh": "线索：划线的「生半可な」修饰「知識」，说的是不彻底、半吊子的知识，对应「中途半端な」。\n词义：「生半可」（なまはんか）＝一知半解、不彻底，常说「生半可な知識」「生半可な気持ち」。",
+      "en": "Clue: the underlined 「生半可な」 modifies 「知識」 — incomplete, superficial knowledge — matching 「中途半端な」.\nMeaning: 「生半可」 (なまはんか) is half-baked, superficial: 「生半可な知識」, 「生半可な気持ち」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「十分すぎる」是过于充分，与不彻底相反。",
+        "en": "「十分すぎる」 is more than enough — the opposite."
+      },
+      {
+        "zh": "「最新の」是最新的，说的是新旧，不是深浅。",
+        "en": "「最新の」 is newest — recency, not depth."
+      },
+      {
+        "zh": "「人から聞いた」是来源，不是程度。",
+        "en": "「人から聞いた」 is a source, not a degree."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-455",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "彼は負けを<<いさぎよく>>認めた。",
+    "options": [
+      "未練を見せずに",
+      "悔しそうに",
+      "恐る恐る",
+      "遠慮がちに"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他干脆地承认了失败。",
+      "en": "He admitted defeat cleanly."
+    },
+    "why": {
+      "zh": "线索：承认失败的态度，不拖泥带水。\n词义：「潔い」（いさぎよい）＝干脆、不留恋，常说「潔く諦める」「潔い態度」。",
+      "en": "Clue: his attitude in admitting defeat — no lingering regret.\nMeaning: 「潔い」 (いさぎよい) is clean and without regret: 「潔く諦める」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「悔しそうに」是显出不甘，相反。",
+        "en": "「悔しそうに」 is looking frustrated, the opposite."
+      },
+      {
+        "zh": "「恐る恐る」是战战兢兢，不是干脆。",
+        "en": "「恐る恐る」 is fearfully, not clean."
+      },
+      {
+        "zh": "「遠慮がちに」是客气，与干脆无关。",
+        "en": "「遠慮がちに」 is reservedly, unrelated."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-456",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "作業が予定より<<はかどって>>いる。",
+    "options": [
+      "順調に進んで",
+      "後戻りして",
+      "複雑になって",
+      "中断して"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "工作比预定进展得更顺利。",
+      "en": "The work is making better progress than planned."
+    },
+    "why": {
+      "zh": "线索：「予定より」，进度比计划快。\n词义：「捗る」（はかどる）＝进展顺利，常说「仕事が捗る」「勉強が捗らない」。",
+      "en": "Clue: 「予定より」 — faster than planned.\nMeaning: 「捗る」 (はかどる) is to make good progress: 「仕事が捗る」, 「勉強が捗らない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「後戻り」是倒退，相反。",
+        "en": "「後戻り」 is going backward, the opposite."
+      },
+      {
+        "zh": "「複雑になる」是变复杂，与顺利无关。",
+        "en": "「複雑になる」 is getting complicated, unrelated."
+      },
+      {
+        "zh": "「中断」是停下，相反。",
+        "en": "「中断」 is stopping, the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-457",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "この地域は水資源に<<とぼしい>>。",
+    "options": [
+      "不足している",
+      "恵まれている",
+      "左右されている",
+      "依存している"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个地区缺乏水资源。",
+      "en": "This region is poor in water resources."
+    },
+    "why": {
+      "zh": "线索：「水資源に」与形容词连用，表示不足。\n词义：「乏しい」（とぼしい）＝缺乏，常说「資源に乏しい」「経験に乏しい」。",
+      "en": "Clue: 「水資源に」 with this adjective — a lack.\nMeaning: 「乏しい」 (とぼしい) is scarce: 「資源に乏しい」, 「経験に乏しい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「恵まれている」是富足，相反。",
+        "en": "「恵まれている」 is blessed with, the opposite."
+      },
+      {
+        "zh": "「左右されている」是受影响，不是缺乏。",
+        "en": "「左右されている」 is influenced by, not lacking."
+      },
+      {
+        "zh": "「依存している」是依赖，不等于缺乏。",
+        "en": "「依存している」 is dependent on, not lacking."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-458",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "折りたたみ式の携帯は<<すたれて>>しまった。",
+    "options": [
+      "使われなくなって",
+      "値下がりして",
+      "改良されて",
+      "話題になって"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "翻盖手机已经没人用了。",
+      "en": "Flip phones have fallen out of use."
+    },
+    "why": {
+      "zh": "线索：折叠式手机，被取代而不再使用。\n词义：「廃れる」（すたれる）＝衰落、不再流行，常说「流行が廃れる」「習慣が廃れる」。",
+      "en": "Clue: flip phones — superseded and no longer used.\nMeaning: 「廃れる」 (すたれる) is to go out of use: 「流行が廃れる」, 「習慣が廃れる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「値下がり」是降价，不是不用。",
+        "en": "「値下がり」 is a price drop, not disuse."
+      },
+      {
+        "zh": "「改良される」是被改进，与衰退无关。",
+        "en": "「改良される」 is improved, unrelated."
+      },
+      {
+        "zh": "「話題になる」是成为话题，相反。",
+        "en": "「話題になる」 is becoming a talking point, the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-459",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "相手の剣幕に<<ひるんで>>後ずさりした。",
+    "options": [
+      "おじけづいて",
+      "あきれて",
+      "見とれて",
+      "逆上して"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "被对方的气势吓住，往后退了几步。",
+      "en": "Daunted by the other person's fury, I stepped back."
+    },
+    "why": {
+      "zh": "线索：被对方的气势压倒，因而后退。\n词义：「怯む」（ひるむ）＝畏缩、退缩，常说「ひるまずに立ち向かう」「相手の勢いにひるむ」。",
+      "en": "Clue: overwhelmed by the other's anger, he backed off.\nMeaning: 「怯む」 (ひるむ) is to shrink back: 「ひるまずに立ち向かう」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「あきれる」是无语，不是怕。",
+        "en": "「あきれる」 is being appalled, not afraid."
+      },
+      {
+        "zh": "「見とれる」是看得入迷，与后退无关。",
+        "en": "「見とれる」 is being entranced, unrelated."
+      },
+      {
+        "zh": "「逆上する」是怒火上冲，与畏缩相反。",
+        "en": "「逆上する」 is flying into a rage, the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-460",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "泣く子を母親が<<なだめた>>。",
+    "options": [
+      "落ち着かせた",
+      "無視した",
+      "笑わせた",
+      "叱りつけた"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "母亲哄住了哭泣的孩子。",
+      "en": "The mother soothed the crying child."
+    },
+    "why": {
+      "zh": "线索：孩子哭，母亲使他平静下来。\n词义：「宥める」（なだめる）＝安抚、劝慰，常说「怒りをなだめる」「子どもをなだめる」。",
+      "en": "Clue: the child cries; the mother calms him.\nMeaning: 「宥める」 (なだめる) is to soothe: 「怒りをなだめる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「無視する」是不理睬，不是安抚。",
+        "en": "「無視する」 is to ignore, not soothe."
+      },
+      {
+        "zh": "「笑わせる」是逗笑，不一定是安抚。",
+        "en": "「笑わせる」 is to make someone laugh, not necessarily to calm."
+      },
+      {
+        "zh": "「叱りつける」是训斥，相反。",
+        "en": "「叱りつける」 is to scold, the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-461",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "缶詰で飢えを<<しのいだ>>。",
+    "options": [
+      "何とかやり過ごした",
+      "完全に解消した",
+      "見て見ぬふりをした",
+      "備蓄した"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "靠罐头勉强度过了饥饿。",
+      "en": "We got through the hunger on canned food."
+    },
+    "why": {
+      "zh": "线索：靠罐头暂时撑过饥饿，不是彻底解决。\n词义：「凌ぐ」（しのぐ）＝挨过、熬过（困境），常说「寒さをしのぐ」「急場をしのぐ」。",
+      "en": "Clue: canned food got them through — an interim fix, not a cure.\nMeaning: 「凌ぐ」 (しのぐ) is to endure or tide over: 「寒さをしのぐ」, 「急場をしのぐ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「完全に解消」是彻底解决，不含勉强熬过之意。",
+        "en": "「完全に解消」 is complete resolution, not just tiding over."
+      },
+      {
+        "zh": "「見て見ぬふり」是装作没看见，不是应对。",
+        "en": "「見て見ぬふり」 is turning a blind eye, not coping."
+      },
+      {
+        "zh": "「備蓄する」是储备，与熬过无关。",
+        "en": "「備蓄する」 is to stockpile, not to get through."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-462",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "彼の日本語はまだ<<ぎこちない>>。",
+    "options": [
+      "なめらかでない",
+      "聞き苦しい",
+      "幼稚だ",
+      "大げさだ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他的日语还不流畅，有点生硬。",
+      "en": "His Japanese is still awkward."
+    },
+    "why": {
+      "zh": "线索：说「まだ」，说明还不熟练，表达不自然。\n词义：「ぎこちない」＝生硬、不自然，常说「ぎこちない動き」「ぎこちない笑顔」。",
+      "en": "Clue: 「まだ」 — not yet fluent, stiff.\nMeaning: 「ぎこちない」 is awkward or stiff: 「ぎこちない動き」, 「ぎこちない笑顔」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「聞き苦しい」是听着刺耳，说的是令人不快。",
+        "en": "「聞き苦しい」 is unpleasant to hear, a different point."
+      },
+      {
+        "zh": "「幼稚」是幼稚，说的是内容或心智。",
+        "en": "「幼稚」 is childish, about content or maturity."
+      },
+      {
+        "zh": "「大げさ」是夸张，与生硬无关。",
+        "en": "「大げさ」 is exaggerated, unrelated."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-463",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<かろうじて>>終電に間に合った。",
+    "options": [
+      "やっとのことで",
+      "予想通り",
+      "余裕を持って",
+      "無理やり"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "勉勉强强赶上了末班车。",
+      "en": "I just barely made the last train."
+    },
+    "why": {
+      "zh": "线索：赶上末班车，差一点就赶不上。\n词义：「辛うじて」（かろうじて）＝好不容易、勉强，常说「かろうじて勝つ」「かろうじて間に合う」。",
+      "en": "Clue: the last train — it was a near thing.\nMeaning: 「辛うじて」 (かろうじて) is barely: 「かろうじて勝つ」, 「かろうじて間に合う」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「予想通り」是不出所料，没有险的意思。",
+        "en": "「予想通り」 is as expected, no sense of a near miss."
+      },
+      {
+        "zh": "「余裕を持って」是从容，相反。",
+        "en": "「余裕を持って」 is with time to spare, the opposite."
+      },
+      {
+        "zh": "「無理やり」是强行，不是侥幸赶上。",
+        "en": "「無理やり」 is forcibly, not a narrow squeak."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-464",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "犯人への処分が<<手ぬるい>>という批判が出た。",
+    "options": [
+      "厳しさが足りない",
+      "時間がかかりすぎる",
+      "内容が分かりにくい",
+      "費用が高すぎる"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "有批评说对犯人的处分过于宽松。",
+      "en": "Criticism arose that the punishment of the offender was too lenient."
+    },
+    "why": {
+      "zh": "线索：「犯人への処分」「批判」，批评的是处理不够严厉。\n词义：「手ぬるい」＝（处理、对策）不够严厉、不彻底，常说「手ぬるい対応」「手ぬるいやり方」。",
+      "en": "Clue: 「犯人への処分」 and 「批判」: the complaint is that it is not strict enough.\nMeaning: 「手ぬるい」 is lax, half-hearted: 「手ぬるい対応」, 「手ぬるいやり方」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「時間がかかりすぎる」说的是拖延，不是宽严。",
+        "en": "Taking too long is about delay, not leniency."
+      },
+      {
+        "zh": "「分かりにくい」说的是难懂，与宽严无关。",
+        "en": "Hard to understand has nothing to do with strictness."
+      },
+      {
+        "zh": "「費用が高すぎる」说的是花费，与宽严无关。",
+        "en": "Too expensive is about cost, not strictness."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-465",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "彼は人の頼みを<<ぞんざいに>>扱った。",
+    "options": [
+      "雑に",
+      "丁重に",
+      "素早く",
+      "厳密に"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他对别人的请求草率对待。",
+      "en": "He handled people's requests carelessly."
+    },
+    "why": {
+      "zh": "线索：对待别人请求的态度，不认真。\n词义：「ぞんざい」＝草率、粗糙，常说「ぞんざいな扱い」「ぞんざいな口のきき方」。",
+      "en": "Clue: his attitude toward requests — not serious.\nMeaning: 「ぞんざい」 is slapdash: 「ぞんざいな扱い」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「丁重に」是郑重，相反。",
+        "en": "「丁重に」 is courteously, the opposite."
+      },
+      {
+        "zh": "「素早く」是迅速，说的是速度。",
+        "en": "「素早く」 is quickly — speed."
+      },
+      {
+        "zh": "「厳密に」是严格，相反。",
+        "en": "「厳密に」 is strictly, the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-466",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "彼とは<<気が置けない>>仲だ。",
+    "options": [
+      "遠慮のいらない",
+      "油断できない",
+      "長続きしない",
+      "古くからの"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我和他是可以无拘无束的关系。",
+      "en": "He and I are on easy, informal terms."
+    },
+    "why": {
+      "zh": "线索：说的是朋友关系，用于亲近、无须顾虑的人。\n词义：「気が置けない」＝不用客气、可以放心，常说「気が置けない友人」。\n辨析：常被误用为「油断できない」，那是错误理解。",
+      "en": "Clue: describes a relationship of close friends.\nMeaning: 「気が置けない」 is easy and relaxed: 「気が置けない友人」.\nContrast: Many wrongly take it as 'cannot let your guard down'."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「油断できない」是不可大意，正好是常见误解，真义相反。",
+        "en": "「油断できない」 is the common misreading; the real sense is the opposite."
+      },
+      {
+        "zh": "「長続きしない」是不持久，与词义无关。",
+        "en": "「長続きしない」 is short-lived, unrelated."
+      },
+      {
+        "zh": "「古くからの」是老交情，不等于不用客气。",
+        "en": "「古くからの」 is long-standing, not the same as informal."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-467",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "かつての名門校は今や<<見る影もない>>。",
+    "options": [
+      "昔の面影もない",
+      "誰も見向きもしない",
+      "評価が定まらない",
+      "知る人が少ない"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "曾经的名校如今已面目全非。",
+      "en": "The once-famous school is now a shadow of its former self."
+    },
+    "why": {
+      "zh": "线索：「かつての」与「今や」对照，今昔相差悬殊。\n词义：「見る影もない」＝一点没有昔日的样子，常说「見る影もなく衰えた」。",
+      "en": "Clue: 「かつての」 against 「今や」 — a stark change.\nMeaning: 「見る影もない」 is no trace of former glory: 「見る影もなく衰えた」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「見向きもしない」是没人理睬，说的是别人的态度。",
+        "en": "「見向きもしない」 is ignored by everyone, others' attitude."
+      },
+      {
+        "zh": "「評価が定まらない」是评价未定，不是衰落。",
+        "en": "「評価が定まらない」 is an undecided reputation."
+      },
+      {
+        "zh": "「知る人が少ない」是知名度低，不等于面目全非。",
+        "en": "「知る人が少ない」 is little known, not decayed."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-468",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "飲酒運転による事故は<<後を絶たない>>。",
+    "options": [
+      "次々と起こる",
+      "少しずつ減る",
+      "全く起きない",
+      "時々起こる"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "酒驾引发的事故接连不断。",
+      "en": "Accidents caused by drunk driving keep happening."
+    },
+    "why": {
+      "zh": "线索：事故问题，指一直不断。\n词义：「後を絶たない」＝接连不断、层出不穷，常说「被害が後を絶たない」「不祥事が後を絶たない」。",
+      "en": "Clue: about accidents — they never stop.\nMeaning: 「後を絶たない」 is without end: 「被害が後を絶たない」, 「不祥事が後を絶たない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「少しずつ減る」是减少，相反。",
+        "en": "「少しずつ減る」 is gradually decreasing, the opposite."
+      },
+      {
+        "zh": "「全く起きない」是不发生，相反。",
+        "en": "「全く起きない」 is never happening, the opposite."
+      },
+      {
+        "zh": "「時々起こる」是偶尔，没有接连不断之意。",
+        "en": "「時々起こる」 is occasional, not unending."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-469",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "あまりの美しさに<<息を呑んだ>>。",
+    "options": [
+      "驚いて一瞬息を止めた",
+      "ため息をついた",
+      "深呼吸をした",
+      "目をそらした"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "美得让人屏住了呼吸。",
+      "en": "I held my breath at the sheer beauty."
+    },
+    "why": {
+      "zh": "线索：因为太美而反应，惊讶得一时说不出话。\n词义：「息を呑む」＝因惊讶或感动而屏住呼吸，常说「息を呑む美しさ」。",
+      "en": "Clue: the beauty is overwhelming — a gasp of astonishment.\nMeaning: 「息を呑む」 is to catch one's breath in surprise: 「息を呑む美しさ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ため息をつく」是叹气，吸气与呼气相反。",
+        "en": "「ため息をつく」 is sighing, the opposite of catching a breath."
+      },
+      {
+        "zh": "「深呼吸」是深呼吸，不是被惊到。",
+        "en": "「深呼吸」 is breathing deeply, not astonishment."
+      },
+      {
+        "zh": "「目をそらす」是移开视线，与惊叹无关。",
+        "en": "「目をそらす」 is looking away, unrelated."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-470",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "彼の演奏に審査員も<<舌を巻いた>>。",
+    "options": [
+      "ひどく感心した",
+      "あきれ返った",
+      "言葉に詰まった",
+      "退屈した"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他的演奏连评委也赞叹不已。",
+      "en": "Even the judges were amazed by his performance."
+    },
+    "why": {
+      "zh": "线索：评委对演奏的反应，是被其高超技艺折服。\n词义：「舌を巻く」＝佩服得说不出话，常说「その腕前には舌を巻く」。",
+      "en": "Clue: the judges reacted to the playing — impressed by skill.\nMeaning: 「舌を巻く」 is to be amazed: 「その腕前には舌を巻く」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「あきれ返る」是无语，是负面的。",
+        "en": "「あきれ返る」 is being appalled, negative."
+      },
+      {
+        "zh": "「言葉に詰まる」是说不出话，不一定是佩服。",
+        "en": "「言葉に詰まる」 is being at a loss for words, not necessarily admiration."
+      },
+      {
+        "zh": "「退屈する」是无聊，相反。",
+        "en": "「退屈する」 is getting bored, the opposite."
       }
     ]
   }
