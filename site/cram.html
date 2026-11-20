@@ -7,64 +7,65 @@
 <meta name="referrer" content="no-referrer">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>N2 真题语法突击</title>
+<!-- Private page (invited Google accounts only): an empty shell; the content comes from
+     api.jpnotes.dev/cram/data (worker/src/account.js, "Private extras"). -->
 <style>
-:root{--bg:#f7f5f0;--card:#fff;--ink:#1f2a37;--mute:#6b7280;--line:#e5e1d8;--hi:#fff4d6;--ui:#24324a;--red:#b4232a}
-@media (prefers-color-scheme:dark){:root{--bg:#14171c;--card:#1c2027;--ink:#e6e8eb;--mute:#9aa3ad;--line:#2b313a;--hi:#3a3220;--ui:#9db4d8;--red:#e94560}}
+:root{--bg:#f6f8fb;--card:#fff;--ink:#1f2733;--mute:#6b7380;--line:#e3e7ee;--ui:#24324a;--ui-on:#fff;--ui-soft:#e9eef6;--red:#b4232a;--hl:#fff3c4;--chip:#eef1f6}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--card:#1c2027;--ink:#e6e8eb;--mute:#9aa3ad;--line:#2b313a;--ui:#9db4d8;--ui-on:#14171c;--ui-soft:#243045;--red:#e94560;--hl:#3a3220;--chip:#232a35}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,"PingFang SC","Hiragino Sans",sans-serif}
-header{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);padding:10px 16px}
-.wrap{max-width:760px;margin:0 auto}
-h1{font-size:17px;margin:0 0 6px}
-.bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-button,select{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:5px 10px;cursor:pointer}
-button.on{background:var(--ui);color:var(--card);border-color:var(--ui)}
-#play{width:44px;height:36px;font-size:18px;background:var(--ui);color:var(--card);border:0}
-#seek{flex:1;min-width:120px;accent-color:var(--ui)}
-#time{font-size:13px;color:var(--mute);font-variant-numeric:tabular-nums}
-main{padding:12px 16px 80px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,"PingFang SC","Hiragino Sans",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+h1{font-size:22px;margin:16px 0 4px}.lead{color:var(--mute);font-size:14px;margin:0 0 6px}
+#bar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 0}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.row+.row{margin-top:8px}
+#play{width:44px;height:36px;border-radius:8px;border:0;background:var(--ui);color:var(--ui-on);font-size:16px;cursor:pointer}
+#seek{flex:1;min-width:120px;accent-color:var(--ui)}#time{font-size:12px;color:var(--mute);font-variant-numeric:tabular-nums}
+.row button,.row select,#q{font:inherit;font-size:13px;padding:4px 10px;border-radius:7px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+#q{width:120px;cursor:text}
+.row button[aria-pressed=true]{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}
+.toc{font-size:13px;gap:6px}.toc span{color:var(--mute)}.toc a{padding:1px 8px;border:1px solid var(--line);border-radius:6px;text-decoration:none;color:var(--ui);background:var(--card)}.toc a.on{background:var(--ui);color:var(--ui-on)}
+main{padding-bottom:80px}
 .msg{text-align:center;color:var(--mute);margin:40px 0}.msg a{color:var(--ui)}
-.it{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:10px 0}
-.hd{display:flex;gap:10px;align-items:baseline}
-.no{color:var(--mute);font-size:13px;min-width:2.2em}
-.ln{cursor:pointer;border-radius:6px;padding:1px 4px;margin:0 -4px}
-.ln:hover{background:var(--line)}
-.ln.cur{background:var(--hi)}
-.g{font-size:19px;font-weight:600;color:var(--red)}
-.zh{color:var(--mute);margin-left:2.6em}
-.ex{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:17px;margin:4px 0 0 2.6em;display:block}
-.yr{font-size:12px;color:var(--mute);margin-left:2.6em}
-body.hidezh .zh{filter:blur(5px)}
-body.hidezh .zh:hover{filter:none}
-#q{font:inherit;font-size:14px;padding:5px 8px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);width:120px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:10px 0;scroll-margin-top:150px}
+.hd{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.no{color:var(--mute);font-size:13px}
+.g{font-size:21px;font-weight:700;font-family:"Hiragino Mincho ProN","Yu Mincho",serif}
+.yr{margin-left:auto;font-size:12px;color:var(--mute)}
+.badge{font-size:12px;border-radius:10px;padding:1px 8px;background:var(--red);color:#fff;white-space:nowrap}
+.badge.soft{background:var(--chip);color:var(--mute)}
+.form{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 2px}.form code{font:inherit;font-size:14px;background:var(--chip);border-radius:6px;padding:1px 8px}
+.mean{margin:6px 0 2px}
+.ex{margin:10px 0 0;padding-left:10px;border-left:3px solid var(--line)}.ex p{margin:0}
+.ja{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:17px}.ja b{color:var(--red)}
+.tr{color:var(--mute);font-size:14px}
+.vs{font-size:14px;background:var(--chip);border-radius:8px;padding:6px 10px;margin:10px 0 0}.vs span{color:var(--mute);margin-right:6px}
+.fix{font-size:12px;color:var(--red);margin-top:6px}
+.ln{cursor:pointer;border-radius:6px;padding:1px 4px;margin:0 -4px}.ln:hover{background:var(--ui-soft)}.ln.cur{background:var(--hl);box-shadow:inset 3px 0 0 var(--ui)}
+.notr .tr{opacity:.55}
+.hide .mean,.hide .tr{filter:blur(5px)}.hide .mean:hover,.hide .tr:hover{filter:none}
+.foot{color:var(--mute);font-size:13px;margin-top:20px}
 </style>
 </head>
 <body>
-<header><div class="wrap">
-  <h1>N2 历年真题语法突击 · <span id="cnt"></span></h1>
-  <div class="bar">
-    <button id="play" title="空格">▶</button>
-    <input id="seek" type="range" min="0" max="1000" value="0">
-    <span id="time">0:00</span>
-  </div>
-  <div class="bar" style="margin-top:6px">
-    <button data-mode="all" class="on">整体连播</button>
-    <button data-mode="one">一句一停</button>
-    <button data-mode="loop">单句循环</button>
+<div class="wrap"><h1>N2 历年真题语法突击 · <span id="cnt"></span></h1>
+<p class="lead">按「语法 → 意思 → 真题例句 → 翻译」朗读。点任意一行从那里开始听。</p></div>
+<div id="bar"><div class="wrap">
+  <div class="row"><button id="play" aria-label="播放">▶</button><input id="seek" type="range" min="0" max="1000" value="0"><span id="time">0:00</span></div>
+  <div class="row"><button data-mode="all" aria-pressed="true">整体连播</button><button data-mode="one" aria-pressed="false">一句一停</button><button data-mode="loop" aria-pressed="false">单句循环</button><button data-mode="part" aria-pressed="false">本段连播</button>
     <select id="rate"><option>0.8</option><option selected>1</option><option>1.2</option><option>1.5</option></select>
-    <button id="hz">遮释义</button>
-    <input id="q" placeholder="搜语法/序号">
-  </div>
-</div></header>
+    <button id="trs" aria-pressed="true">念翻译</button><button id="hz" aria-pressed="false">遮住意思</button><input id="q" placeholder="搜语法/序号"></div>
+  <div class="row toc" id="toc"></div>
+</div></div>
 <main class="wrap" id="list"></main>
 <audio id="a" crossorigin="anonymous" preload="metadata"></audio>
 <script>
 (async function () {
-  // Private page: the content comes from the account API, only for invited Google accounts.
   const list = document.getElementById('list'), a = document.getElementById('a');
   const say = (h) => { list.innerHTML = '<p class="msg">' + h + '</p>'; };
   const local = new URLSearchParams(location.search).get('acct') === 'local' && /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
   const API = local ? 'http://localhost:8788' : 'https://api.jpnotes.dev';
-  let tok = ''; try { tok = (JSON.parse(localStorage.getItem('jp_acct')) || {}).token || ''; } catch (e) {}
+  const ls = { get: (k) => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} } };
+  let tok = ''; try { tok = (JSON.parse(ls.get('jp_acct')) || {}).token || ''; } catch (e) {}
   if (!tok) return say('这一页只对受邀的 Google 账号开放。请先在 <a href="/">jpnotes.dev</a> 右上角的账号按钮里用 Google 登录。');
   let d;
   try {
@@ -73,62 +74,80 @@ body.hidezh .zh:hover{filter:none}
     if (r.status === 401) return say('登录已过期，请回 <a href="/">jpnotes.dev</a> 重新登录。');
     if (!r.ok) return say(r.status === 403 ? '这个账号不在受邀名单里。' : '加载失败：' + (d.error || r.status));
   } catch (e) { return say('网络错误，刷新再试。'); }
-  const items = d.items, tm = d.timing;
+  const items = d.items, T = d.timing.lines;
   a.src = API + d.audio;
-  const T = tm.lines, byKey = {};
-  T.forEach((l, i) => { l.i = i; byKey[l.n + l.k] = l; });
   document.getElementById('cnt').textContent = items.length + ' 条';
-  const esc = s => String(s).replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
-  const ln = (it, k, cls, txt) => byKey[it.n + k] ? `<span class="ln ${cls}" data-i="${byKey[it.n + k].i}">${txt}</span>` : `<span class="${cls}">${txt}</span>`;
-  list.innerHTML = items.map(it => `<div class="it" id="n${it.n}" data-s="${esc(it.n + ' ' + it.g + ' ' + it.zh)}">
-    <div class="hd"><span class="no">${it.n}</span>${ln(it, 'g', 'g', esc(it.g))}</div>
-    <div class="zh">${ln(it, 'zh', '', esc(it.zh))}</div>
-    ${ln(it, 'ex', 'ex', esc(it.ex))}
-    <div class="yr">${it.fixed ? '<b>原文有误，已更正</b> · ' : ''}${it.real === false ? '例句（非真题）' : esc([it.year, it.other && '其余：' + it.other].filter(Boolean).join(' · '))}</div></div>`).join('');
-  const els = [...list.querySelectorAll('.ln')], elOf = {};
-  els.forEach(e => elOf[e.dataset.i] = e);
-  let mode = 'all', cur = -1, stopAt = null;
-  const fmt = s => Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0');
-  function lineAt(t) { let lo = 0, hi = T.length - 1, r = -1; while (lo <= hi) { const m = (lo + hi) >> 1; if (T[m].s <= t + 0.05) { r = m; lo = m + 1; } else hi = m - 1; } return r; }
-  function mark(i) {
-    if (i === cur) return; if (elOf[cur]) elOf[cur].classList.remove('cur');
-    cur = i; const e = elOf[i]; if (!e) return; e.classList.add('cur');
-    const r = e.getBoundingClientRect(), top = document.querySelector('header').offsetHeight;
-    if (r.top < top + 10 || r.bottom > innerHeight - 40) window.scrollBy({ top: r.top - top - innerHeight * 0.3, behavior: 'smooth' });
+  const esc = (s) => String(s || '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const idx = {}; T.forEach((l, i) => { idx[l.n + l.k] = i; });
+  const ln = (n, k, cls, html) => `<p class="ln ${cls}" data-i="${idx[n + k]}">${html}</p>`;
+  const mark = (ex, hl) => { let h = esc(ex); (hl || []).forEach((s) => { const e = esc(s); if (e) h = h.split(e).join('<b>' + e + '</b>'); }); return h; };
+  const PART = 25, parts = [];
+  list.innerHTML = items.map((it, k) => {
+    if (k % PART === 0) parts.push(it.n);
+    const yrs = it.real === false ? '<span class="badge soft">例句（非真题）</span>' : it.year ? '<span class="badge">真题 ' + esc(it.year) + '</span>' : '';
+    return `<section class="card" id="n${it.n}" data-s="${esc(it.n + ' ' + it.g + ' ' + it.zh + ' ' + it.mean)}">
+      <div class="hd"><span class="no">${it.n}</span><span class="ln g" data-i="${idx[it.n + 'g']}">${esc(it.g)}</span>${yrs}${it.other ? '<span class="yr">其余：' + esc(it.other) + '</span>' : ''}</div>
+      ${it.form && it.form.length ? '<div class="form">' + it.form.map((f) => '<code>' + esc(f) + '</code>').join('') + '</div>' : ''}
+      ${ln(it.n, 'm', 'mean', esc(it.mean))}
+      <div class="ex">${ln(it.n, 'e', 'ja', mark(it.ex, it.hl))}${ln(it.n, 't', 'tr', esc(it.tr))}</div>
+      ${it.vs ? '<p class="vs"><span>易混</span>' + esc(it.vs) + '</p>' : ''}
+      ${it.fixed ? '<p class="fix">原文有误，已更正</p>' : ''}</section>`;
+  }).join('') + '<p class="foot">空格键播放 / 暂停，← → 上一句 / 下一句。「念翻译」关掉后只听日语。</p>';
+  const toc = document.getElementById('toc');
+  toc.innerHTML = '<span>段：</span>' + parts.map((n, k) => `<a href="#n${n}" data-part="${k}">${n}–${Math.min(n + PART - 1, items[items.length - 1].n)}</a>`).join('');
+  const chips = toc.querySelectorAll('a');
+  const partStart = parts.map((n) => idx[n + 'g']);
+  const els = {}; list.querySelectorAll('[data-i]').forEach((e) => { els[e.dataset.i] = e; });
+  let mode = 'all', cur = -1, stopAt = null, readTr = ls.get('jp_cram_tr') !== '0', lastPart = -1;
+  const fmt = (s) => Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0');
+  const lineAt = (t) => { let lo = 0, hi = T.length - 1, r = -1; while (lo <= hi) { const m = (lo + hi) >> 1; if (T[m].s <= t + 0.05) { r = m; lo = m + 1; } else hi = m - 1; } return r; };
+  const partOf = (i) => { let r = 0; partStart.forEach((s, k) => { if (s <= i) r = k; }); return r; };
+  const partEnd = (i) => { const k = partOf(i); return k + 1 < partStart.length ? partStart[k + 1] - 1 : T.length - 1; };
+  function mark1(i, scroll) {
+    if (i === cur) return;
+    if (els[cur]) els[cur].classList.remove('cur');
+    cur = i;
+    const p = i >= 0 ? partOf(i) : -1;
+    if (p !== lastPart) { if (chips[lastPart]) chips[lastPart].classList.remove('on'); if (chips[p]) chips[p].classList.add('on'); lastPart = p; }
+    const e = els[i]; if (!e) return; e.classList.add('cur');
+    if (!scroll) return;
+    const r = e.getBoundingClientRect(), top = document.getElementById('bar').getBoundingClientRect().bottom;
+    if (r.top < top + 8 || r.bottom > innerHeight - 40) window.scrollBy({ top: r.top - top - innerHeight * 0.25, behavior: 'smooth' });
   }
-  function playLine(i) { const l = T[i]; a.currentTime = l.s; stopAt = mode === 'all' ? null : i; a.play(); mark(i); }
-  list.addEventListener('click', e => { const t = e.target.closest('.ln'); if (t) playLine(+t.dataset.i); });
+  const go = () => { const p = a.play(); if (p && p.catch) p.catch(() => {}); };
+  function playLine(i) { if (!T[i]) return; a.currentTime = T[i].s; stopAt = mode === 'one' || mode === 'loop' ? i : mode === 'part' ? partEnd(i) : null; mark1(i, true); go(); }
+  list.addEventListener('click', (e) => { const t = e.target.closest('[data-i]'); if (t) playLine(+t.dataset.i); });
+  toc.addEventListener('click', (e) => { const c = e.target.closest('a'); if (!c) return; e.preventDefault(); document.querySelector(c.getAttribute('href')).scrollIntoView({ behavior: 'smooth' }); playLine(partStart[+c.dataset.part]); });
   a.addEventListener('timeupdate', () => {
-    const t = a.currentTime;
-    if (stopAt != null && t >= T[stopAt].e) {
-      if (mode === 'loop') { a.currentTime = T[stopAt].s; return; }
-      a.pause(); a.currentTime = T[stopAt].e; stopAt = null; return;
-    }
-    mark(lineAt(t));
-    document.getElementById('seek').value = Math.round(t / a.duration * 1000) || 0;
-    document.getElementById('time').textContent = fmt(t) + ' / ' + fmt(a.duration || tm.duration);
+    let t = a.currentTime, i = lineAt(t);
+    if (stopAt != null && t >= T[stopAt].e) { if (mode === 'loop') { a.currentTime = T[stopAt].s; return; } a.pause(); stopAt = null; return; }
+    if (!readTr && i >= 0 && T[i].k === 't' && t < T[i].e - 0.15 && mode !== 'one' && mode !== 'loop' && T[i + 1]) { a.currentTime = T[i + 1].s; i++; }
+    mark1(i, !a.paused);
+    if (a.duration) document.getElementById('seek').value = Math.round(t / a.duration * 1000);
+    document.getElementById('time').textContent = fmt(t) + ' / ' + fmt(a.duration || d.timing.duration);
   });
   const pb = document.getElementById('play');
-  a.addEventListener('play', () => pb.textContent = '❚❚'); a.addEventListener('pause', () => pb.textContent = '▶');
-  pb.onclick = () => { if (a.paused) { if (mode !== 'all' && cur >= 0) playLine(cur); else a.play(); } else a.pause(); };
-  document.getElementById('seek').oninput = e => { a.currentTime = e.target.value / 1000 * a.duration; stopAt = null; };
-  document.querySelectorAll('[data-mode]').forEach(b => b.onclick = () => {
-    document.querySelectorAll('[data-mode]').forEach(x => x.classList.toggle('on', x === b)); mode = b.dataset.mode;
-    stopAt = mode === 'all' ? null : (cur >= 0 ? cur : null);
+  a.addEventListener('play', () => { pb.textContent = '❚❚'; }); a.addEventListener('pause', () => { pb.textContent = '▶'; ls.set('n2cramT', a.currentTime); });
+  pb.onclick = () => { if (!a.paused) return a.pause(); if (mode !== 'all' && cur >= 0) return playLine(cur); go(); };
+  document.getElementById('seek').oninput = (e) => { if (a.duration) { a.currentTime = e.target.value / 1000 * a.duration; stopAt = null; } };
+  document.querySelectorAll('[data-mode]').forEach((b) => b.onclick = () => {
+    mode = b.dataset.mode; document.querySelectorAll('[data-mode]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    stopAt = a.paused || cur < 0 ? null : mode === 'one' || mode === 'loop' ? cur : mode === 'part' ? partEnd(cur) : null;
   });
-  document.getElementById('rate').onchange = e => a.playbackRate = +e.target.value;
-  document.getElementById('hz').onclick = e => e.target.classList.toggle('on', document.body.classList.toggle('hidezh'));
-  document.getElementById('q').oninput = e => {
-    const q = e.target.value.trim(); list.querySelectorAll('.it').forEach(d => d.style.display = !q || d.dataset.s.includes(q) ? '' : 'none');
-  };
-  addEventListener('keydown', e => {
-    if (e.target.tagName === 'INPUT') return;
+  document.getElementById('rate').onchange = (e) => { a.playbackRate = +e.target.value; };
+  const trb = document.getElementById('trs');
+  const showTr = () => { trb.setAttribute('aria-pressed', String(readTr)); list.classList.toggle('notr', !readTr); };
+  trb.onclick = () => { readTr = !readTr; ls.set('jp_cram_tr', readTr ? '1' : '0'); showTr(); }; showTr();
+  document.getElementById('hz').onclick = (e) => { e.currentTarget.setAttribute('aria-pressed', String(list.classList.toggle('hide'))); };
+  document.getElementById('q').oninput = (e) => { const q = e.target.value.trim(); list.querySelectorAll('.card').forEach((c) => { c.style.display = !q || c.dataset.s.includes(q) ? '' : 'none'; }); };
+  addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
     if (e.code === 'Space') { e.preventDefault(); pb.click(); }
     if (e.key === 'ArrowRight' && cur < T.length - 1) playLine(cur + 1);
     if (e.key === 'ArrowLeft' && cur > 0) playLine(cur - 1);
   });
-  try { const s = +localStorage.n2cramT; if (s) a.currentTime = s; } catch (e) {}
-  setInterval(() => { try { localStorage.n2cramT = a.currentTime; } catch (e) {} }, 3000);
+  const s0 = +ls.get('n2cramT');
+  if (s0 > 1) { const i0 = lineAt(s0); a.addEventListener('loadedmetadata', function once() { a.removeEventListener('loadedmetadata', once); if (a.currentTime < 1 && T[i0]) a.currentTime = T[i0].s; }); mark1(i0, false); }
 })();
 </script>
 </body>

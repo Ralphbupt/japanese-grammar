@@ -1825,5 +1825,833 @@
         "en": "「どうでもいい」 is trivial — the opposite."
       }
     ]
+  },
+  {
+    "id": "n2-mg-451",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "試験の前だからといって<<油断して>>はいけない。",
+    "options": [
+      "気を緩めて",
+      "無理をして",
+      "遠慮して",
+      "心配して"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "不能因为临近考试就大意松懈。",
+      "en": "You must not let your guard down just because the exam is coming up."
+    },
+    "why": {
+      "zh": "线索：划线的「油断して」是放松警惕、掉以轻心，对应「気を緩めて」。\n词义：「油断」（ゆだん）＝疏忽大意、不加防备，常说「油断する」「油断は禁物」。",
+      "en": "Clue: the underlined 「油断して」 is relaxing one's attention, which matches 「気を緩めて」.\nMeaning: 「油断」 (ゆだん) is carelessness, lowering one's guard: 「油断する」, 「油断は禁物」 (never let your guard down)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「無理をして」是勉强自己，方向相反。",
+        "en": "「無理をして」 is pushing oneself too hard, the opposite direction."
+      },
+      {
+        "zh": "「遠慮して」是客气、有所保留，与大意无关。",
+        "en": "「遠慮して」 is holding back politely, unrelated to carelessness."
+      },
+      {
+        "zh": "「心配して」是担心，而「油断」是不担心、不戒备。",
+        "en": "「心配して」 is worrying, whereas 「油断」 is not being on guard."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-452",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "この地方で雪が降るのは<<稀だ>>。",
+    "options": [
+      "めったにない",
+      "毎年のことだ",
+      "予想どおりだ",
+      "避けられない"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个地方很少下雪。",
+      "en": "It is rare for snow to fall in this region."
+    },
+    "why": {
+      "zh": "线索：划线的「稀だ」说的是下雪这件事难得发生，对应「めったにない」。\n词义：「稀」（まれ）＝很少有、罕见，常说「稀な例」「稀に見る」。",
+      "en": "Clue: the underlined 「稀だ」 says snow hardly ever falls, matching 「めったにない」.\nMeaning: 「稀」 (まれ) is rare, seldom happening: 「稀な例」, 「稀に見る」 (rarely seen)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「毎年のことだ」是每年都发生，意思相反。",
+        "en": "「毎年のことだ」 means it happens every year, the opposite."
+      },
+      {
+        "zh": "「予想どおりだ」说的是和预想一致，与频率无关。",
+        "en": "「予想どおりだ」 is about matching expectations, not frequency."
+      },
+      {
+        "zh": "「避けられない」是无法避免，不是少见。",
+        "en": "「避けられない」 is unavoidable, not rare."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-453",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "彼は<<真剣な>>顔で先生の話を聞いていた。",
+    "options": [
+      "まじめな",
+      "退屈そうな",
+      "不安な",
+      "うれしそうな"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他一脸认真地听着老师讲话。",
+      "en": "He was listening to the teacher with a serious face."
+    },
+    "why": {
+      "zh": "线索：划线的「真剣な」形容听讲的表情，是认认真真、一本正经，对应「まじめな」。\n词义：「真剣」（しんけん）＝认真、不是闹着玩，常说「真剣に考える」「真剣な顔」。",
+      "en": "Clue: the underlined 「真剣な」 describes the face of someone listening attentively, matching 「まじめな」.\nMeaning: 「真剣」 (しんけん) is earnest, in real earnest: 「真剣に考える」, 「真剣な顔」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「退屈そうな」是无聊的样子，与认真相反。",
+        "en": "「退屈そうな」 looks bored, the opposite of earnest."
+      },
+      {
+        "zh": "「不安な」是担心，表情不一定认真。",
+        "en": "「不安な」 is anxious, not the same as earnest."
+      },
+      {
+        "zh": "「うれしそうな」是高兴的样子，和认真无关。",
+        "en": "「うれしそうな」 looks happy, unrelated."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-454",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "正月に<<帰省する>>人で、新幹線が混む。",
+    "options": [
+      "故郷に帰る",
+      "旅行に出かける",
+      "家で過ごす",
+      "都会へ引っ越す"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "过年回老家的人多，新干线很拥挤。",
+      "en": "The Shinkansen gets crowded with people who go back to their hometowns for New Year."
+    },
+    "why": {
+      "zh": "线索：划线的「帰省する」是新年时回去，对应「故郷に帰る」。\n词义：「帰省」（きせい）＝回老家探亲，常说「帰省ラッシュ」「年末に帰省する」。",
+      "en": "Clue: the underlined 「帰省する」 is going home at New Year, matching 「故郷に帰る」.\nMeaning: 「帰省」 (きせい) is returning to one's home town or family: 「帰省ラッシュ」 (the holiday rush), 「年末に帰省する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「旅行に出かける」是去旅游，不是回老家。",
+        "en": "「旅行に出かける」 is going on a trip, not going home."
+      },
+      {
+        "zh": "「家で過ごす」是待在家里，不涉及回乡。",
+        "en": "「家で過ごす」 is staying at home, with no trip back."
+      },
+      {
+        "zh": "「都会へ引っ越す」是搬去城市，方向相反。",
+        "en": "「都会へ引っ越す」 is moving to a city, the other direction."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-455",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "薬の<<過剰な>>摂取は、体に悪い影響を与える。",
+    "options": [
+      "必要以上の",
+      "ごく少量の",
+      "定期的な",
+      "自己流の"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "过量服药会对身体产生不良影响。",
+      "en": "Taking too much medicine has a bad effect on the body."
+    },
+    "why": {
+      "zh": "线索：划线的「過剰な」修饰「摂取」，表示超出需要的量，对应「必要以上の」。\n词义：「過剰」（かじょう）＝超过需要、过多，常说「過剰な反応」「在庫が過剰だ」。",
+      "en": "Clue: the underlined 「過剰な」 modifies intake: more than is needed, matching 「必要以上の」.\nMeaning: 「過剰」 (かじょう) is excess, more than needed: 「過剰な反応」 (overreaction), 「在庫が過剰だ」 (surplus stock)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ごく少量の」是极少，意思相反。",
+        "en": "「ごく少量の」 is a very small amount, the opposite."
+      },
+      {
+        "zh": "「定期的な」说的是有规律，不是量多。",
+        "en": "「定期的な」 is regular, not excessive."
+      },
+      {
+        "zh": "「自己流の」是按自己的方式，与量无关。",
+        "en": "「自己流の」 is in one's own way, unrelated to quantity."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-456",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "彼女の苦労話を聞いて、思わず<<同情した>>。",
+    "options": [
+      "気の毒に思った",
+      "感心した",
+      "腹が立った",
+      "うらやましく思った"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "听了她吃苦的经历，不由得产生了同情。",
+      "en": "Hearing her story of hardship, I couldn't help feeling sympathy."
+    },
+    "why": {
+      "zh": "线索：划线的「同情した」是听到苦楚后的心情，对应「気の毒に思った」。\n词义：「同情」（どうじょう）＝同情、觉得对方可怜，常说「同情を集める」「同情の余地がある」。",
+      "en": "Clue: the underlined 「同情した」 is the feeling on hearing of someone's hardship, matching 「気の毒に思った」.\nMeaning: 「同情」 (どうじょう) is sympathy, feeling sorry for someone: 「同情を集める」, 「同情の余地がある」 (there is room for sympathy)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「感心した」是佩服，侧重赞赏而非怜悯。",
+        "en": "「感心した」 is admiration, not pity."
+      },
+      {
+        "zh": "「腹が立った」是生气，不是怜悯。",
+        "en": "「腹が立った」 is anger, not pity."
+      },
+      {
+        "zh": "「うらやましく思った」是羡慕，对象过得好才会这样。",
+        "en": "「うらやましく思った」 is envy, felt toward someone better off."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-457",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "隣の部屋のテレビが<<やかましくて>>眠れない。",
+    "options": [
+      "うるさくて",
+      "まぶしくて",
+      "暑くて",
+      "臭くて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "隔壁房间的电视太吵，睡不着。",
+      "en": "The TV in the next room is so noisy that I can't sleep."
+    },
+    "why": {
+      "zh": "线索：划线的「やかましくて」说的是电视的声音让人睡不着，对应「うるさくて」。\n词义：「やかましい」＝吵闹、嘈杂（也可指爱挑剔、要求严），常说「やかましい音」「やかましく言う」。",
+      "en": "Clue: the underlined 「やかましくて」 is about the TV's sound keeping someone awake, matching 「うるさくて」.\nMeaning: 「やかましい」 is noisy, loud (also strict or fussy): 「やかましい音」, 「やかましく言う」 (to nag)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まぶしくて」是光太强，不是声音。",
+        "en": "「まぶしくて」 is too bright, about light, not sound."
+      },
+      {
+        "zh": "「暑くて」是热，和声音无关。",
+        "en": "「暑くて」 is hot, unrelated to sound."
+      },
+      {
+        "zh": "「臭くて」是有臭味，不是声音。",
+        "en": "「臭くて」 is smelly, not about sound."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-458",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "彼は質問に<<曖昧な>>返事をした。",
+    "options": [
+      "はっきりしない",
+      "丁寧な",
+      "冷たい",
+      "素早い"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他对问题给了含糊的回答。",
+      "en": "He gave a vague answer to the question."
+    },
+    "why": {
+      "zh": "线索：划线的「曖昧な」形容返事，意思是不明确，对应「はっきりしない」。\n词义：「曖昧」（あいまい）＝含糊、不明确，常说「曖昧な態度」「曖昧にする」。",
+      "en": "Clue: the underlined 「曖昧な」 describes the reply as unclear, matching 「はっきりしない」.\nMeaning: 「曖昧」 (あいまい) is vague, unclear: 「曖昧な態度」, 「曖昧にする」 (to leave vague)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「丁寧な」是有礼貌，与是否清楚无关。",
+        "en": "「丁寧な」 is polite, not about clarity."
+      },
+      {
+        "zh": "「冷たい」是冷淡，说的是态度而非含糊。",
+        "en": "「冷たい」 is cold in attitude, not vague."
+      },
+      {
+        "zh": "「素早い」是迅速，说的是速度。",
+        "en": "「素早い」 is quick, about speed."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-459",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "彼の言うことは全部<<でたらめだ>>。",
+    "options": [
+      "根拠がない",
+      "もっともだ",
+      "難しすぎる",
+      "古くさい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他说的话全是胡说八道。",
+      "en": "Everything he says is nonsense."
+    },
+    "why": {
+      "zh": "线索：划线的「でたらめだ」说的是话没有根据、不可信，对应「根拠がない」。\n词义：「でたらめ」＝胡说、不负责任没根据，常说「でたらめを言う」「でたらめな答え」。",
+      "en": "Clue: the underlined 「でたらめだ」 says his words are baseless and unreliable, matching 「根拠がない」.\nMeaning: 「でたらめ」 is nonsense, groundless and irresponsible: 「でたらめを言う」, 「でたらめな答え」 (a random answer)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「もっともだ」是很有道理，意思相反。",
+        "en": "「もっともだ」 is reasonable, the opposite."
+      },
+      {
+        "zh": "「難しすぎる」是太难，不是没有根据。",
+        "en": "「難しすぎる」 is too difficult, not baseless."
+      },
+      {
+        "zh": "「古くさい」是陈旧，和真假无关。",
+        "en": "「古くさい」 is old-fashioned, not about truth."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-460",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "駅で<<たまたま>>昔の友人に会った。",
+    "options": [
+      "偶然",
+      "久しぶりに",
+      "約束どおり",
+      "急に"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "在车站碰巧遇到了老朋友。",
+      "en": "I happened to run into an old friend at the station."
+    },
+    "why": {
+      "zh": "线索：划线的「たまたま」表示事先没有安排而遇上，对应「偶然」。\n词义：「たまたま」＝碰巧、偶然，常说「たまたま通りかかる」「たまたま知っていた」。",
+      "en": "Clue: the underlined 「たまたま」 means it happened without any plan, matching 「偶然」.\nMeaning: 「たまたま」 is by chance: 「たまたま通りかかる」 (happen to pass by), 「たまたま知っていた」 (happened to know)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「久しぶりに」说的是隔了很久，不是碰巧。",
+        "en": "「久しぶりに」 is after a long gap, not by chance."
+      },
+      {
+        "zh": "「約束どおり」是按约定，意思相反。",
+        "en": "「約束どおり」 is as arranged, the opposite."
+      },
+      {
+        "zh": "「急に」是突然，说的是变化的快，不是碰巧。",
+        "en": "「急に」 is suddenly, about speed of change, not chance."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-461",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "その仕事なら、彼はもう<<とっくに>>終わらせたよ。",
+    "options": [
+      "ずっと前に",
+      "たった今",
+      "まもなく",
+      "ようやく"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那件工作的话，他早就做完了。",
+      "en": "As for that job, he finished it long ago."
+    },
+    "why": {
+      "zh": "线索：划线的「とっくに」配合「もう……終わらせた」，表示早就完成，对应「ずっと前に」。\n词义：「とっくに」＝早就、很久以前，常说「とっくに知っている」「とっくに終わった」。",
+      "en": "Clue: the underlined 「とっくに」 with 「もう……終わらせた」 means done long ago, matching 「ずっと前に」.\nMeaning: 「とっくに」 is long ago, long since: 「とっくに知っている」, 「とっくに終わった」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たった今」是刚刚，时间点相反。",
+        "en": "「たった今」 is just now, the opposite timing."
+      },
+      {
+        "zh": "「まもなく」是马上就要，指将来。",
+        "en": "「まもなく」 is soon, about the future."
+      },
+      {
+        "zh": "「ようやく」是好不容易才，强调费时，不是早就。",
+        "en": "「ようやく」 is finally, after effort, not long since."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-462",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "試合の結果に<<失望した>>。",
+    "options": [
+      "がっかりした",
+      "安心した",
+      "驚いた",
+      "納得した"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "对比赛结果感到失望。",
+      "en": "I was disappointed by the result of the match."
+    },
+    "why": {
+      "zh": "线索：划线的「失望した」是对结果感到期望落空，对应「がっかりした」。\n词义：「失望」（しつぼう）＝失望，期待落空，常说「失望を味わう」「期待外れで失望した」。",
+      "en": "Clue: the underlined 「失望した」 is hopes dashed by the result, matching 「がっかりした」.\nMeaning: 「失望」 (しつぼう) is disappointment, hopes let down: 「失望を味わう」, 「期待外れで失望した」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「安心した」是放心，心情相反。",
+        "en": "「安心した」 is relieved, the opposite mood."
+      },
+      {
+        "zh": "「驚いた」是吃惊，不一定失望。",
+        "en": "「驚いた」 is surprised, not necessarily let down."
+      },
+      {
+        "zh": "「納得した」是接受、想通了，不是失望。",
+        "en": "「納得した」 is accepting it, not disappointed."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-463",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "工事のため、教室の中が<<騒々しい>>。",
+    "options": [
+      "うるさくて落ち着かない",
+      "静かで寂しい",
+      "暑くて息苦しい",
+      "混んで歩きにくい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "因为施工，教室里吵吵闹闹。",
+      "en": "Because of the construction work, the classroom is noisy."
+    },
+    "why": {
+      "zh": "线索：划线的「騒々しい」说的是因施工噪音而吵闹，对应「うるさくて落ち着かない」。\n词义：「騒々しい」（そうぞうしい）＝吵闹、不安静，常说「騒々しい街」「騒々しい音」。",
+      "en": "Clue: the underlined 「騒々しい」 is a noisy, unsettled place because of construction, matching 「うるさくて落ち着かない」.\nMeaning: 「騒々しい」 (そうぞうしい) is noisy, clamorous: 「騒々しい街」, 「騒々しい音」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「静かで寂しい」是安静，意思相反。",
+        "en": "「静かで寂しい」 is quiet, the opposite."
+      },
+      {
+        "zh": "「暑くて息苦しい」说的是闷热，不是声音。",
+        "en": "「暑くて息苦しい」 is stuffy heat, not sound."
+      },
+      {
+        "zh": "「混んで歩きにくい」说的是拥挤，不是吵。",
+        "en": "「混んで歩きにくい」 is crowding, not noise."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-464",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "最近、世間が<<騒がしい>>。",
+    "options": [
+      "事件で落ち着かない",
+      "話題が乏しい",
+      "景気が回復している",
+      "争いが少ない"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "最近社会上不太平静。",
+      "en": "Things have been unsettled in society lately."
+    },
+    "why": {
+      "zh": "线索：划线的「騒がしい」说的是社会上出了事、人心浮动，对应「事件で落ち着かない」。\n词义：「騒がしい」（さわがしい）＝吵闹，也指社会上因事件而动荡不安，常说「世間を騒がせる」「騒がしい世の中」。\n辨析：「騒々しい」多指声音吵；「騒がしい」还能指社会动荡不安。",
+      "en": "Clue: the underlined 「騒がしい」 says society is stirred up by events, matching 「事件で落ち着かない」.\nMeaning: 「騒がしい」 (さわがしい) is noisy, and also stirred up by events: 「世間を騒がせる」 (to cause a stir), 「騒がしい世の中」.\nContrast: 「騒々しい」 is mostly about noise; 「騒がしい」 can also mean a society in turmoil."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「話題が乏しい」是没什么话题，和骚动相反。",
+        "en": "「話題が乏しい」 is little to talk about, the opposite of a stir."
+      },
+      {
+        "zh": "「景気が回復している」是经济好转，与不平静无关。",
+        "en": "「景気が回復している」 is an economic recovery, unrelated."
+      },
+      {
+        "zh": "「争いが少ない」是纷争少，意思相反。",
+        "en": "「争いが少ない」 is few conflicts, the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-465",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "彼女は料理の<<テクニック>>がすばらしい。",
+    "options": [
+      "技術",
+      "知識",
+      "道具",
+      "材料"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "她的烹饪技巧非常出色。",
+      "en": "Her cooking technique is superb."
+    },
+    "why": {
+      "zh": "线索：划线的「テクニック」说的是做菜的手法、本事，对应「技術」。\n词义：「テクニック」（technique）＝技巧、技术，常说「高度なテクニック」「テクニックを磨く」。",
+      "en": "Clue: the underlined 「テクニック」 is skill in how she cooks, matching 「技術」.\nMeaning: 「テクニック」 (technique) is skill or technique: 「高度なテクニック」, 「テクニックを磨く」 (hone one's technique)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「知識」是知道的内容，不是操作的手法。",
+        "en": "「知識」 is what one knows, not how one does it."
+      },
+      {
+        "zh": "「道具」是工具，不是技巧。",
+        "en": "「道具」 is a tool, not a skill."
+      },
+      {
+        "zh": "「材料」是原料，不是技巧。",
+        "en": "「材料」 is ingredients, not skill."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-466",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "部屋の中から<<妙な>>音がした。",
+    "options": [
+      "変な",
+      "大きな",
+      "小さな",
+      "楽しい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "房间里传出一种奇怪的声音。",
+      "en": "A strange noise came from inside the room."
+    },
+    "why": {
+      "zh": "线索：划线的「妙な」修饰「音」，指不寻常、令人觉得怪，对应「変な」。\n词义：「妙」（みょう）＝奇怪、不寻常，常说「妙な音」「妙な気がする」「妙な話」。",
+      "en": "Clue: the underlined 「妙な」 modifies the sound as odd and unusual, matching 「変な」.\nMeaning: 「妙」 (みょう) is strange, odd: 「妙な音」, 「妙な気がする」 (to have a funny feeling), 「妙な話」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「大きな」说的是音量大，没有奇怪的意思。",
+        "en": "「大きな」 is about loudness, not oddness."
+      },
+      {
+        "zh": "「小さな」说的是音量小，不等于奇怪。",
+        "en": "「小さな」 is about low volume, not oddness."
+      },
+      {
+        "zh": "「楽しい」是愉快，和奇怪无关。",
+        "en": "「楽しい」 is pleasant, unrelated to oddness."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-467",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "この曲は<<テンポ>>が速くて、踊りやすい。",
+    "options": [
+      "進む速さ",
+      "音の大きさ",
+      "音の高さ",
+      "曲の長さ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这首曲子节奏快，很好跳舞。",
+      "en": "This piece has a fast tempo and is easy to dance to."
+    },
+    "why": {
+      "zh": "线索：划线的「テンポ」后面接「が速い」，指曲子进行的速度，对应「進む速さ」。\n词义：「テンポ」（tempo）＝音乐的速度，也可指事情进行的节奏，常说「テンポがいい」「テンポよく進む」。",
+      "en": "Clue: the underlined 「テンポ」 followed by 「が速い」 is the speed at which the music proceeds, matching 「進む速さ」.\nMeaning: 「テンポ」 (tempo) is the speed of music, also the pace of things: 「テンポがいい」, 「テンポよく進む」 (to move along briskly)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「音の大きさ」是音量，不是速度。",
+        "en": "「音の大きさ」 is volume, not speed."
+      },
+      {
+        "zh": "「音の高さ」是音高，不是速度。",
+        "en": "「音の高さ」 is pitch, not speed."
+      },
+      {
+        "zh": "「曲の長さ」是曲子的时长，不是速度。",
+        "en": "「曲の長さ」 is length, not speed."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-468",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "彼は給料について<<不平を言った>>。",
+    "options": [
+      "文句を言った",
+      "質問した",
+      "感謝した",
+      "説明した"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他对工资发了牢骚。",
+      "en": "He complained about his pay."
+    },
+    "why": {
+      "zh": "线索：划线的「不平を言った」是对工资不满而说出来，对应「文句を言った」。\n词义：「不平」（ふへい）＝不满、牢骚，常说「不平を言う」「不平不満」。",
+      "en": "Clue: the underlined 「不平を言った」 is voicing dissatisfaction about pay, matching 「文句を言った」.\nMeaning: 「不平」 (ふへい) is discontent, a grievance: 「不平を言う」, 「不平不満」 (complaints)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「質問した」是提问，不含不满。",
+        "en": "「質問した」 is asking a question, with no complaint."
+      },
+      {
+        "zh": "「感謝した」是感谢，意思相反。",
+        "en": "「感謝した」 is giving thanks, the opposite."
+      },
+      {
+        "zh": "「説明した」是解释，不含不满。",
+        "en": "「説明した」 is explaining, with no grievance."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-469",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "彼女は恥ずかしそうに<<俯いた>>。",
+    "options": [
+      "下を向いた",
+      "横を向いた",
+      "目を閉じた",
+      "立ち止まった"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "她害羞地低下了头。",
+      "en": "She lowered her head shyly."
+    },
+    "why": {
+      "zh": "线索：划线的「俯いた」是害羞时头朝下，对应「下を向いた」。\n词义：「俯く」（うつむく）＝低头，常说「俯いて歩く」「恥ずかしくて俯く」。",
+      "en": "Clue: the underlined 「俯いた」 is dropping the face downward out of shyness, matching 「下を向いた」.\nMeaning: 「俯く」 (うつむく) is to hang one's head: 「俯いて歩く」, 「恥ずかしくて俯く」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「横を向いた」是把脸转向旁边，方向不同。",
+        "en": "「横を向いた」 is turning to the side, a different direction."
+      },
+      {
+        "zh": "「目を閉じた」是闭眼，不一定低头。",
+        "en": "「目を閉じた」 is closing the eyes, not lowering the head."
+      },
+      {
+        "zh": "「立ち止まった」是停下脚步，与头的动作无关。",
+        "en": "「立ち止まった」 is stopping in one's tracks, not a head movement."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-470",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "工事は終わったが、道路の状況は<<依然として>>厳しい。",
+    "options": [
+      "相変わらず",
+      "次第に",
+      "一時的に",
+      "少しずつ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "工程结束了，但道路状况依然严峻。",
+      "en": "The construction is over, but road conditions are still tough."
+    },
+    "why": {
+      "zh": "线索：划线的「依然として」承接「工事は終わったが」，表示状况没变，对应「相変わらず」。\n词义：「依然」（いぜん）＝依旧、仍然，常说「依然として」「旧態依然」。",
+      "en": "Clue: the underlined 「依然として」 after 「工事は終わったが」 means the situation hasn't changed, matching 「相変わらず」.\nMeaning: 「依然」 (いぜん) is as before, still: 「依然として」, 「旧態依然」 (unchanged old ways)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「次第に」是逐渐变化，说的是在变，不是没变。",
+        "en": "「次第に」 is gradually, which implies change."
+      },
+      {
+        "zh": "「一時的に」是暂时，意思不同。",
+        "en": "「一時的に」 is temporarily, a different meaning."
+      },
+      {
+        "zh": "「少しずつ」也是逐渐变化，不是依旧。",
+        "en": "「少しずつ」 is little by little, again change."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-471",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "押し入れに冬の布団を<<収納した>>。",
+    "options": [
+      "しまった",
+      "干した",
+      "並べた",
+      "捨てた"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "把冬天的被子收进了壁橱。",
+      "en": "I stored the winter futon in the closet."
+    },
+    "why": {
+      "zh": "线索：划线的「収納した」＋「押し入れに」，是把东西放进去收好，对应「しまった」。\n词义：「収納」（しゅうのう）＝收纳、收进去，常说「収納スペース」「収納棚」。",
+      "en": "Clue: the underlined 「収納した」 with 「押し入れに」 is putting things away, matching 「しまった」.\nMeaning: 「収納」 (しゅうのう) is storage, putting away: 「収納スペース」 (storage space), 「収納棚」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「干した」是晒，不是收起来。",
+        "en": "「干した」 is airing out, not putting away."
+      },
+      {
+        "zh": "「並べた」是摆开，不是收起。",
+        "en": "「並べた」 is laying out, not putting away."
+      },
+      {
+        "zh": "「捨てた」是扔掉，不是收纳。",
+        "en": "「捨てた」 is throwing away, not storing."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-472",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "その噂は<<忽ち>>町中に広まった。",
+    "options": [
+      "あっという間に",
+      "ゆっくりと",
+      "密かに",
+      "何度も"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那个传闻转眼间传遍了全城。",
+      "en": "The rumor spread across the whole town in no time."
+    },
+    "why": {
+      "zh": "线索：划线的「忽ち」修饰「広まった」，表示极短时间内，对应「あっという間に」。\n词义：「忽ち」（たちまち）＝转眼之间、立刻，常说「たちまち売り切れる」「たちまち有名になる」。",
+      "en": "Clue: the underlined 「忽ち」 modifies 「広まった」 and means in a very short time, matching 「あっという間に」.\nMeaning: 「忽ち」 (たちまち) is in an instant: 「たちまち売り切れる」 (sells out at once), 「たちまち有名になる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ゆっくりと」是慢慢地，意思相反。",
+        "en": "「ゆっくりと」 is slowly, the opposite."
+      },
+      {
+        "zh": "「密かに」是悄悄地，不是速度。",
+        "en": "「密かに」 is secretly, not about speed."
+      },
+      {
+        "zh": "「何度も」是多次，说的是次数。",
+        "en": "「何度も」 is many times, about frequency."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-473",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "雨は夜になって<<一層>>強くなった。",
+    "options": [
+      "さらに",
+      "やがて",
+      "ようやく",
+      "少し"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "到了夜里，雨下得更大了。",
+      "en": "The rain grew even heavier at night."
+    },
+    "why": {
+      "zh": "线索：划线的「一層」修饰「強くなった」，在原有基础上更进一步，对应「さらに」。\n词义：「一層」（いっそう）＝更加、越发，常说「一層努力する」「一層寒くなる」。",
+      "en": "Clue: the underlined 「一層」 modifies 「強くなった」 as a step further on top of what was already so, matching 「さらに」.\nMeaning: 「一層」 (いっそう) is all the more, even more: 「一層努力する」 (try even harder), 「一層寒くなる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「やがて」是不久之后，说的是时间。",
+        "en": "「やがて」 is before long, about time."
+      },
+      {
+        "zh": "「ようやく」是好不容易才，不是程度更甚。",
+        "en": "「ようやく」 is at last, not a greater degree."
+      },
+      {
+        "zh": "「少し」是一点点，程度与「更加」不同。",
+        "en": "「少し」 is a little, not a further increase."
+      }
+    ]
   }
 ]

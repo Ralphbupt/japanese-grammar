@@ -1460,5 +1460,1085 @@
         "en": "Changing a note is 「両替して」 or 「くずして」."
       }
     ]
+  },
+  {
+    "id": "n2-mg-542",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<廃止>>",
+    "options": [
+      "利用者が減ったため、この路線バスは来月で廃止される。",
+      "古くなった家具を廃止して、新しいものを買った。",
+      "彼は会社を廃止して、故郷で農業を始めた。",
+      "宿題を廃止して、友達と遊びに出かけた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "廃止：把已有的制度、设施、服务等取消不再实行。正确句：因为乘客减少，这条公交线路下个月起停运。",
+      "en": "廃止: ending an existing system, facility or service. Correct: Because ridership fell, this bus route will be discontinued next month."
+    },
+    "why": {
+      "zh": "线索：正确句里被「廃止される」的是整条路线，是制度、服务一类的东西。\n词义：「廃止」（はいし）＝取消、废除已有的制度或服务，常说「制度を廃止する」「死刑廃止」「路線の廃止」。",
+      "en": "Clue: in the right sentence what is 「廃止される」 is a whole route, a service.\nMeaning: 「廃止」 (はいし) is abolishing an existing system or service: 「制度を廃止する」, 「死刑廃止」, 「路線の廃止」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "扔旧家具是「処分して」「捨てて」。",
+        "en": "Getting rid of old furniture is 「処分して」 or 「捨てて」."
+      },
+      {
+        "zh": "辞掉公司是「辞めて」，关闭公司才用「閉鎖」。",
+        "en": "Leaving a company is 「辞めて」; closing one is 「閉鎖」."
+      },
+      {
+        "zh": "不做作业是「しないで」「サボって」。",
+        "en": "Skipping homework is 「せずに」 or 「サボって」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-543",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<和やか>>",
+    "options": [
+      "親戚が集まり、食事会は和やかな雰囲気で進んだ。",
+      "今日は和やかな天気で、海もとても静かだ。",
+      "この道は和やかな坂が続いていて、自転車でも楽だ。",
+      "彼は和やかな足取りで、駅に向かって歩いていった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "和やか：气氛、表情等温和融洽。正确句：亲戚们聚在一起，聚餐在融洽的气氛中进行。",
+      "en": "和やか: gentle and harmonious in mood or expression. Correct: The relatives got together and the meal went on in a warm atmosphere."
+    },
+    "why": {
+      "zh": "线索：正确句里「和やかな」修饰「雰囲気」，是人们相处融洽的气氛。\n词义：「和やか」（なごやか）＝气氛、表情温和融洽，常说「和やかな雰囲気」「和やかに話す」。",
+      "en": "Clue: in the right sentence 「和やかな」 modifies 「雰囲気」, a harmonious mood among people.\nMeaning: 「和やか」 (なごやか) is harmonious and relaxed: 「和やかな雰囲気」, 「和やかに話す」 (to talk amiably)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "天气、海面平静是「穏やか」。",
+        "en": "Calm weather or a calm sea is 「穏やか」."
+      },
+      {
+        "zh": "坡度缓是「緩やか」。",
+        "en": "A gentle slope is 「緩やか」."
+      },
+      {
+        "zh": "脚步悠闲是「ゆったりした」，「和やか」不修饰动作。",
+        "en": "A leisurely gait is 「ゆったりした」; 「和やか」 does not describe movement."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-544",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<素材>>",
+    "options": [
+      "この椅子は天然の木という素材でできている。",
+      "会議の素材を人数分コピーして、机に配った。",
+      "犬の散歩の素材をバッグに入れて、家を出た。",
+      "旅行から帰って、部屋の素材を片づけた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "素材：制作物品的原料、材质。正确句：这把椅子是用天然木材这种材质做的。",
+      "en": "素材: the raw material something is made of. Correct: This chair is made of natural wood."
+    },
+    "why": {
+      "zh": "线索：正确句里「木という素材」说明椅子是用什么做的。\n词义：「素材」（そざい）＝制作东西的原料、材质，也指创作用的素材，常说「天然素材」「素材を生かす」。",
+      "en": "Clue: in the right sentence 「木という素材」 says what the chair is made of.\nMeaning: 「素材」 (そざい) is the material something is made from, or source material for creation: 「天然素材」, 「素材を生かす」 (to bring out the ingredient's qualities)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "会议用的纸张是「資料」。",
+        "en": "Paper for a meeting is 「資料」."
+      },
+      {
+        "zh": "遛狗要带的东西是「道具」「用具」。",
+        "en": "What you take to walk a dog is 「道具」 or 「用具」."
+      },
+      {
+        "zh": "收拾房间里的行李是「荷物」。",
+        "en": "Unpacking luggage is 「荷物」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-545",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<破れる>>",
+    "options": [
+      "引っ張ったら、ズボンのポケットが破れた。",
+      "強風で、ビルの窓ガラスが破れた。",
+      "机から落として、コップが破れてしまった。",
+      "地震で、駅前の道路が破れた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "破れる：纸、布等薄的东西被撕开、破损。正确句：一拉，裤子的口袋就破了。",
+      "en": "破れる: thin things like paper or cloth tearing. Correct: When I pulled it, the pocket of my trousers tore."
+    },
+    "why": {
+      "zh": "线索：正确句里破的是布做的「ポケット」，薄而软的东西才用「破れる」。\n词义：「破れる」（やぶれる）＝纸、布、袋子等被扯破，常说「紙が破れる」「服が破れる」「夢が破れる」。",
+      "en": "Clue: in the right sentence what tears is a fabric 「ポケット」; 「破れる」 is for thin, soft things.\nMeaning: 「破れる」 (やぶれる) is to tear, of paper, cloth, bags: 「紙が破れる」, 「服が破れる」, 「夢が破れる」 (a dream is shattered)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "玻璃是「割れる」。",
+        "en": "Glass is 「割れる」."
+      },
+      {
+        "zh": "杯子是「割れる」。",
+        "en": "A cup is 「割れる」."
+      },
+      {
+        "zh": "道路出现裂缝是「ひびが入る」「割れる」，不用「破れる」。",
+        "en": "A cracked road is 「ひびが入る」 or 「割れる」, not 「破れる」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-546",
+    "type": "youhou",
+    "difficulty": 3,
+    "stem": "<<快い>>",
+    "options": [
+      "窓を開けると、快い風が入ってきた。",
+      "けがの具合が快くなって、来週から出社できる。",
+      "この辞書は快くて、どんな言葉でもすぐ見つかる。",
+      "昨日のテストは快くて、全員が満点だった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "快い：感觉舒服、愉快。正确句：一打开窗，舒服的风吹了进来。",
+      "en": "快い: pleasant, comfortable. Correct: When I opened the window, a pleasant breeze came in."
+    },
+    "why": {
+      "zh": "线索：正确句里「快い」修饰「風」，指吹着让人舒服。\n词义：「快い」（こころよい）＝舒服、愉快，也用于「快く引き受ける」（爽快地答应），常说「快い風」「快い音楽」。",
+      "en": "Clue: in the right sentence 「快い」 modifies 「風」, a breeze that feels good.\nMeaning: 「快い」 (こころよい) is pleasant; also 「快く引き受ける」 (to agree willingly): 「快い風」, 「快い音楽」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "伤势好转是「よくなって」。",
+        "en": "Injury getting better is 「よくなって」."
+      },
+      {
+        "zh": "方便好用是「便利で」。",
+        "en": "Handy to use is 「便利で」."
+      },
+      {
+        "zh": "考题简单是「簡単で」「易しくて」。",
+        "en": "An easy test is 「簡単で」 or 「易しくて」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-547",
+    "type": "youhou",
+    "difficulty": 3,
+    "stem": "<<鮮明>>",
+    "options": [
+      "この新しいカメラは、暗い場所でも鮮明な写真が撮れる。",
+      "市場の魚は鮮明で、そのまま刺身で食べられる。",
+      "彼女は鮮明な性格で、誰とでもすぐ仲良くなる。",
+      "この果物は鮮明な甘さがあって、とてもおいしい。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "鮮明：清晰分明。正确句：这台新相机在暗处也能拍出清晰的照片。",
+      "en": "鮮明: clear and distinct. Correct: This new camera takes sharp photos even in the dark."
+    },
+    "why": {
+      "zh": "线索：正确句里「鮮明な」修饰「写真」，指画面清晰、轮廓分明。\n词义：「鮮明」（せんめい）＝清晰分明，常说「鮮明な画像」「鮮明に覚えている」「旗幟鮮明」。",
+      "en": "Clue: in the right sentence 「鮮明な」 modifies 「写真」: a photo with clear detail.\nMeaning: 「鮮明」 (せんめい) is clear and vivid: 「鮮明な画像」, 「鮮明に覚えている」 (to remember vividly)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "鱼新鲜是「新鮮」。",
+        "en": "Fresh fish is 「新鮮」."
+      },
+      {
+        "zh": "开朗的性格是「明るい」。",
+        "en": "A cheerful personality is 「明るい」."
+      },
+      {
+        "zh": "清爽的甜味是「さわやかな」。",
+        "en": "A refreshing sweetness is 「さわやかな」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-548",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<支持>>",
+    "options": [
+      "市民の多くが、この新しい計画を支持している。",
+      "重い荷物を一人で支持して、階段を上った。",
+      "母が体を支持してくれたので、ベッドから起き上がれた。",
+      "毎月、遠くに住む両親を経済的に支持している。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "支持：赞同并支援某人、某主张。正确句：许多市民支持这个新计划。",
+      "en": "支持: backing a person or an idea. Correct: Many citizens support this new plan."
+    },
+    "why": {
+      "zh": "线索：正确句里「支持」的对象是「計画」，表示赞成并拥护。\n词义：「支持」（しじ）＝赞成并支援（人、主张、政党），常说「支持を得る」「支持率」。",
+      "en": "Clue: in the right sentence the object of 「支持」 is a 「計画」: approving and backing it.\nMeaning: 「支持」 (しじ) is backing a person, idea or party: 「支持を得る」 (win support), 「支持率」 (approval rating)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "拿着重物是「持って」「運んで」。",
+        "en": "Carrying a heavy load is 「持って」 or 「運んで」."
+      },
+      {
+        "zh": "扶着身体是「支えて」。",
+        "en": "Holding someone up is 「支えて」."
+      },
+      {
+        "zh": "在经济上供养父母是「援助して」「仕送りして」。",
+        "en": "Supporting parents financially is 「援助して」 or 「仕送りして」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-549",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<温厚>>",
+    "options": [
+      "部長は温厚な人で、部下を怒鳴ることはまずない。",
+      "寒い日は、温厚なお茶を飲むと体が温まる。",
+      "今年の冬は温厚で、雪はほとんど降らなかった。",
+      "寒かったので、温厚なコートを着て出かけた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "温厚：性格温和敦厚。正确句：部长是个温厚的人，几乎不会对下属大声吼叫。",
+      "en": "温厚: gentle and good-natured in character. Correct: The manager is a mild-mannered man who hardly ever shouts at his staff."
+    },
+    "why": {
+      "zh": "线索：正确句里「温厚な」修饰「人」，指性格温和、不爱发火。\n词义：「温厚」（おんこう）＝性格温和、厚道，常说「温厚な人柄」「温厚な性格」。",
+      "en": "Clue: in the right sentence 「温厚な」 modifies 「人」, a gentle, even-tempered person.\nMeaning: 「温厚」 (おんこう) is mild and kind in nature: 「温厚な人柄」, 「温厚な性格」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "热茶是「温かい」「熱い」。",
+        "en": "Hot tea is 「温かい」 or 「熱い」."
+      },
+      {
+        "zh": "冬天不冷是「暖かい」。",
+        "en": "A mild winter is 「暖かい」."
+      },
+      {
+        "zh": "保暖的外套是「暖かい」「厚手の」。",
+        "en": "A warm coat is 「暖かい」 or 「厚手の」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-550",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<引用>>",
+    "options": [
+      "論文に他人の文章を引用するときは、出典を書く。",
+      "銀行で、貯金から十万円を引用した。",
+      "友達から小説を引用して、一晩で読み終えた。",
+      "辞書で言葉の意味を引用してから、作文を書いた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "引用：在文章中引用别人的话、文字。正确句：论文里引用别人的文字时，要写明出处。",
+      "en": "引用: quoting someone else's words in one's own writing. Correct: When quoting another person's text in a paper, state the source."
+    },
+    "why": {
+      "zh": "线索：正确句里被「引用」的是「他人の文章」，并要「出典を書く」。\n词义：「引用」（いんよう）＝引用他人的话或文章，常说「文章を引用する」「引用元」。",
+      "en": "Clue: in the right sentence what is 「引用」ed is 「他人の文章」, with a 「出典」 to cite.\nMeaning: 「引用」 (いんよう) is quoting another's words or text: 「文章を引用する」, 「引用元」 (the source quoted)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "从银行取钱是「引き出した」「下ろした」。",
+        "en": "Taking money out of a bank is 「引き出した」 or 「下ろした」."
+      },
+      {
+        "zh": "向朋友借书是「借りて」。",
+        "en": "Getting a book from a friend is 「借りて」."
+      },
+      {
+        "zh": "查词典是「引いて」。",
+        "en": "Looking up a dictionary is 「引いて」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-551",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<解約>>",
+    "options": [
+      "使わなくなった携帯電話の契約を、店で解約した。",
+      "友達との旅行の約束を、急用ができて解約した。",
+      "むずかしい数学の問題を、一時間かけて解約した。",
+      "きつく結んであった荷物のひもを、はさみで解約した。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "解約：取消、终止已经签订的合同。正确句：把不用的手机合约在店里解约了。",
+      "en": "解約: terminating a contract already in force. Correct: I cancelled the contract for a phone I no longer used, at the shop."
+    },
+    "why": {
+      "zh": "线索：正确句里被解约的是「契約」，合同是可以解除的东西。\n词义：「解約」（かいやく）＝解除合同，常说「契約を解約する」「保険を解約する」「解約手数料」。",
+      "en": "Clue: in the right sentence what is cancelled is a 「契約」, something that can be terminated.\nMeaning: 「解約」 (かいやく) is cancelling a contract: 「契約を解約する」, 「保険を解約する」, 「解約手数料」 (cancellation fee)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "取消口头约定是「キャンセルした」「断った」。",
+        "en": "Calling off an arrangement is 「キャンセルした」 or 「断った」."
+      },
+      {
+        "zh": "解数学题是「解いた」。",
+        "en": "Solving a math problem is 「解いた」."
+      },
+      {
+        "zh": "解开绳子是「ほどいた」「切った」。",
+        "en": "Undoing a cord is 「ほどいた」 or 「切った」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-552",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<濁る>>",
+    "options": [
+      "大雨のあと、川の水が茶色く濁っている。",
+      "寒い部屋から出たら、眼鏡が濁って前が見えなかった。",
+      "夕方から空が濁ってきたので、傘を持って出かけた。",
+      "きれいに洗った窓ガラスを、もう一度濁った。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "濁る：液体、空气等变得不清澈。正确句：大雨之后，河水浑成了茶色。",
+      "en": "濁る: liquid or air becoming cloudy and impure. Correct: After the heavy rain the river water is muddy brown."
+    },
+    "why": {
+      "zh": "线索：正确句里变浑的是「川の水」，液体混进杂质变得不清。\n词义：「濁る」（にごる）＝液体等变浑浊、不清澈，常说「水が濁る」「濁った空気」「濁った目」。",
+      "en": "Clue: in the right sentence what turns murky is 「川の水」, a liquid mixed with impurities.\nMeaning: 「濁る」 (にごる) is to become cloudy or murky: 「水が濁る」, 「濁った空気」 (foul air), 「濁った目」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "眼镜起雾是「曇る」。",
+        "en": "Fogged-up glasses are 「曇る」."
+      },
+      {
+        "zh": "天空阴了是「曇る」。",
+        "en": "A clouding sky is 「曇る」."
+      },
+      {
+        "zh": "擦窗玻璃是「拭く」「磨く」；「濁る」是不及物动词。",
+        "en": "Wiping a window is 「拭く」 or 「磨く」; 「濁る」 is intransitive."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-553",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<縮む>>",
+    "options": [
+      "お気に入りのセーターを洗濯機で洗ったら、縮んでしまった。",
+      "歩きすぎて足が縮んでしまい、動けなかった。",
+      "風邪をひいたようで、喉が縮んで声が出ない。",
+      "靴を買う前に、店で足のサイズを縮んでもらった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "縮む：东西变小、变短。正确句：把最喜欢的毛衣放进洗衣机洗，缩水了。",
+      "en": "縮む: becoming smaller or shorter. Correct: I washed my favorite sweater in the machine and it shrank."
+    },
+    "why": {
+      "zh": "线索：正确句里变小的是毛衣，洗了以后尺寸变小。\n词义：「縮む」（ちぢむ）＝物体变小、变短，常说「服が縮む」「寿命が縮む」「縮み上がる」。",
+      "en": "Clue: in the right sentence what shrinks is a sweater, getting smaller after washing.\nMeaning: 「縮む」 (ちぢむ) is to shrink: 「服が縮む」, 「寿命が縮む」 (to shorten one's life), 「縮み上がる」 (to cower)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "走累了脚酸是「痛くなる」「棒になる」。",
+        "en": "Sore feet from walking are 「痛くなる」 or 「棒になる」."
+      },
+      {
+        "zh": "嗓子不舒服是「痛い」「かれる」。",
+        "en": "A bad throat is 「痛い」 or 「かれる」."
+      },
+      {
+        "zh": "量尺寸是「測る」。",
+        "en": "Taking a size is 「測る」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-554",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<保存>>",
+    "options": [
+      "作った資料は、念のためUSBメモリにも保存しておいた。",
+      "夏休みの予定は、前もって家族で保存しておいた。",
+      "電車の中で、友達のために席を保存しておいた。",
+      "毎月の給料から、三万円ずつ旅行のために保存している。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "保存：保持原样存放、存档。正确句：做好的资料为保险起见也存进了U盘。",
+      "en": "保存: keeping something intact, saving it. Correct: Just in case, I also saved the document I made on a USB stick."
+    },
+    "why": {
+      "zh": "线索：正确句里「保存」的是做好的「資料」，目的是原样留存。\n词义：「保存」（ほぞん）＝保持原样、存储，常说「データを保存する」「冷蔵庫で保存する」「保存食」。",
+      "en": "Clue: in the right sentence what is 「保存」d is the finished 「資料」, kept as it is.\nMeaning: 「保存」 (ほぞん) is keeping something in its present state, saving: 「データを保存する」, 「冷蔵庫で保存する」, 「保存食」 (preserved food)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "安排计划是「立てて」「決めて」。",
+        "en": "Making plans is 「立てて」 or 「決めて」."
+      },
+      {
+        "zh": "占座位是「取っておいた」「確保した」。",
+        "en": "Holding a seat is 「取っておいた」 or 「確保した」."
+      },
+      {
+        "zh": "存钱是「貯金して」「貯めて」。",
+        "en": "Saving money is 「貯金して」 or 「貯めて」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-555",
+    "type": "youhou",
+    "difficulty": 3,
+    "stem": "<<荒れる>>",
+    "options": [
+      "台風の影響で、海が荒れていて船が出なかった。",
+      "彼は運転が荒れていて、同乗するのが怖い。",
+      "字が荒れていて、読むのに時間がかかった。",
+      "彼は気が荒れていて、すぐ人と喧嘩をする。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "荒れる：天气、海面、场所等变得粗暴、失控。正确句：因为台风，海上风浪大，船没有出港。",
+      "en": "荒れる: weather, sea or a place turning rough. Correct: Because of the typhoon the sea was rough and the ship didn't sail."
+    },
+    "why": {
+      "zh": "线索：正确句里「海が荒れて」是因台风而风浪汹涌。\n词义：「荒れる」（あれる）＝变得粗暴、不稳定，或荒废、皮肤粗糙，常说「海が荒れる」「肌が荒れる」「荒れた生活」。",
+      "en": "Clue: in the right sentence 「海が荒れて」 is a stormy sea caused by the typhoon.\nMeaning: 「荒れる」 (あれる) is to turn rough or run wild; also neglected, chapped: 「海が荒れる」, 「肌が荒れる」, 「荒れた生活」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "开车粗暴是「荒い」「乱暴だ」。",
+        "en": "Rough driving is 「荒い」 or 「乱暴だ」."
+      },
+      {
+        "zh": "字潦草是「雑だ」「乱雑だ」。",
+        "en": "Sloppy writing is 「雑だ」 or 「乱雑だ」."
+      },
+      {
+        "zh": "脾气暴躁是「気が荒い」。",
+        "en": "A hot temper is 「気が荒い」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-556",
+    "type": "youhou",
+    "difficulty": 1,
+    "stem": "<<作成>>",
+    "options": [
+      "会議で使う資料を作成して、部長にメールで送った。",
+      "母は朝から台所で、今夜の夕食を作成している。",
+      "庭に小さな花壇を作成して、花を植えた。",
+      "子どもの誕生日に、手作りのケーキを作成した。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "作成：制作文件、资料、计划等。正确句：做好开会用的资料，用邮件发给了部长。",
+      "en": "作成: drawing up documents, materials or plans. Correct: I prepared the materials for the meeting and emailed them to the manager."
+    },
+    "why": {
+      "zh": "线索：正确句里「作成」的对象是「資料」，是文件类的东西。\n词义：「作成」（さくせい）＝制作文件、表格、计划等，常说「書類を作成する」「報告書を作成する」「計画を作成する」。",
+      "en": "Clue: in the right sentence the object of 「作成」 is 「資料」, a document.\nMeaning: 「作成」 (さくせい) is drawing up documents, forms or plans: 「書類を作成する」, 「報告書を作成する」, 「計画を作成する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "做饭是「作って」「用意して」。",
+        "en": "Cooking is 「作って」 or 「用意して」."
+      },
+      {
+        "zh": "造花坛是「作って」。",
+        "en": "Building a flower bed is 「作って」."
+      },
+      {
+        "zh": "做蛋糕是「作った」「焼いた」。",
+        "en": "Making a cake is 「作った」 or 「焼いた」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-557",
+    "type": "youhou",
+    "difficulty": 3,
+    "stem": "<<充満>>",
+    "options": [
+      "部屋にガスが充満していたので、すぐに窓を開けた。",
+      "ご飯をたくさん食べて、おなかが充満した。",
+      "このカップには、お茶が充満している。",
+      "ガソリンが充満になったので、そのまま出発した。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "充満：气体、气味等充满某个空间。正确句：房间里充满了煤气，我立刻打开了窗。",
+      "en": "充満: gas, smell or the like filling a space. Correct: The room was filled with gas, so I opened the window at once."
+    },
+    "why": {
+      "zh": "线索：正确句里「充満」的是「ガス」，在「部屋」这个空间里弥漫。\n词义：「充満」（じゅうまん）＝气体、气味等充满空间，常说「煙が充満する」「ガスが充満する」。",
+      "en": "Clue: in the right sentence what 「充満」es is 「ガス」, spreading through the space of a 「部屋」.\nMeaning: 「充満」 (じゅうまん) is gas, smoke or a smell filling a space: 「煙が充満する」, 「ガスが充満する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "吃饱是「いっぱいになった」。",
+        "en": "Being full is 「いっぱいになった」."
+      },
+      {
+        "zh": "杯里装满是「いっぱい入っている」。",
+        "en": "A cup full of tea is 「いっぱい入っている」."
+      },
+      {
+        "zh": "油箱加满是「満タン」。",
+        "en": "A full tank is 「満タン」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-558",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<続出>>",
+    "options": [
+      "新商品の発売後、不具合の報告が続出した。",
+      "連日の雨で、川の水が続出して橋が流された。",
+      "彼は三年続出で、全国大会に優勝した。",
+      "夜遅くまで、風が続出して眠れなかった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "続出：同类事情接连不断地出现。正确句：新产品上市后，故障的报告接连不断。",
+      "en": "続出: similar things appearing one after another. Correct: After the new product went on sale, reports of defects came in one after another."
+    },
+    "why": {
+      "zh": "线索：正确句里「報告が続出した」是同类的报告一个接一个出现。\n词义：「続出」（ぞくしゅつ）＝接连不断地出现，常说「不満が続出する」「被害者が続出する」。",
+      "en": "Clue: in the right sentence 「報告が続出した」 means reports kept appearing one after another.\nMeaning: 「続出」 (ぞくしゅつ) is appearing in succession: 「不満が続出する」 (complaints pile up), 「被害者が続出する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "水位上涨是「増えて」「あふれて」。",
+        "en": "Rising water is 「増えて」 or 「あふれて」."
+      },
+      {
+        "zh": "连续三年是「三年連続で」。",
+        "en": "Three years in a row is 「三年連続で」."
+      },
+      {
+        "zh": "风一直刮是「吹き続けて」。",
+        "en": "Wind blowing on is 「吹き続けて」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-559",
+    "type": "youhou",
+    "difficulty": 3,
+    "stem": "<<鈍い>>",
+    "options": [
+      "刃が鈍くなったので、包丁を研いでもらった。",
+      "母は背が鈍いので、高い棚に手が届かない。",
+      "この店のカレーは味が鈍くて、水のようだった。",
+      "今日は湿度が高く、空気が鈍くて息苦しい。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "鈍い：刀刃不锋利、反应迟钝。正确句：刀刃钝了，请人把菜刀磨一磨。",
+      "en": "鈍い: dull, as a blade, or slow to react. Correct: The blade had gone dull, so I had the kitchen knife sharpened."
+    },
+    "why": {
+      "zh": "线索：正确句里「刃が鈍くなった」，所以要「研いで」，刀不快才用「鈍い」。\n词义：「鈍い」（にぶい）＝刀刃不锋利，或动作、感觉、头脑反应慢，常说「動きが鈍い」「鈍い音」「頭が鈍い」。",
+      "en": "Clue: in the right sentence 「刃が鈍くなった」 is why it needs sharpening: a blade that no longer cuts.\nMeaning: 「鈍い」 (にぶい) is dull, as a blade, or slow in movement, senses or wits: 「動きが鈍い」, 「鈍い音」 (a dull thud), 「頭が鈍い」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "个子矮是「低い」。",
+        "en": "Being short is 「低い」."
+      },
+      {
+        "zh": "味道淡是「薄い」。",
+        "en": "A weak, watery taste is 「薄い」."
+      },
+      {
+        "zh": "空气闷是「重い」「よどんで」。",
+        "en": "Heavy, stuffy air is 「重い」 or 「よどんで」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-560",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<栽培>>",
+    "options": [
+      "この地域は冬でも暖かいので、トマトの栽培がさかんだ。",
+      "わたしの家では、庭で犬を栽培している。",
+      "子どもを栽培するのは大変だが、やりがいがある。",
+      "毎朝、庭の木に水を栽培してから出勤している。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "栽培：种植、培育植物。正确句：这个地区冬天也暖和，所以番茄种植很兴盛。",
+      "en": "栽培: growing plants or crops. Correct: This area is warm even in winter, so tomato growing flourishes."
+    },
+    "why": {
+      "zh": "线索：正确句里「栽培」的对象是「トマト」，是植物。\n词义：「栽培」（さいばい）＝种植、培育植物，常说「野菜を栽培する」「有機栽培」「栽培面積」。",
+      "en": "Clue: in the right sentence the object of 「栽培」 is 「トマト」, a plant.\nMeaning: 「栽培」 (さいばい) is growing plants: 「野菜を栽培する」, 「有機栽培」 (organic farming), 「栽培面積」 (cultivated area)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "养狗是「飼って」。",
+        "en": "Keeping a dog is 「飼って」."
+      },
+      {
+        "zh": "养育孩子是「育てる」。",
+        "en": "Bringing up a child is 「育てる」."
+      },
+      {
+        "zh": "给树浇水是「水をやる」。",
+        "en": "Watering a tree is 「水をやる」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-561",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<偉大>>",
+    "options": [
+      "彼は偉大な科学者として、今も世界中で尊敬されている。",
+      "この荷物は偉大で、一人では持ち上げられない。",
+      "偉大な声で歌ったので、会場の後ろまで聞こえた。",
+      "母は背が偉大なので、遠くからでもすぐ分かる。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "偉大：（人物、功绩）伟大、杰出。正确句：他作为伟大的科学家，至今仍受到全世界尊敬。",
+      "en": "偉大: great, as of a person or an achievement. Correct: He is still respected around the world as a great scientist."
+    },
+    "why": {
+      "zh": "线索：正确句里「偉大な」修饰「科学者」，指人物的成就卓越。\n词义：「偉大」（いだい）＝人物、业绩伟大，常说「偉大な業績」「偉大な指導者」。",
+      "en": "Clue: in the right sentence 「偉大な」 modifies 「科学者」, a person of outstanding achievement.\nMeaning: 「偉大」 (いだい) is great, of persons and achievements: 「偉大な業績」, 「偉大な指導者」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "东西体积大是「大きい」。",
+        "en": "A big item is 「大きい」."
+      },
+      {
+        "zh": "声音大是「大きな声」。",
+        "en": "A loud voice is 「大きな声」."
+      },
+      {
+        "zh": "个子高是「背が高い」。",
+        "en": "Being tall is 「背が高い」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-562",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<さっさと>>",
+    "options": [
+      "宿題は遊びに行く前に、さっさと済ませてしまおう。",
+      "夜中から、雨がさっさと降って、道が川のようになった。",
+      "赤ちゃんは、ミルクを飲んでさっさと眠っている。",
+      "寒くて、指がさっさと動かず、字が書けなかった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "さっさと：毫不拖拉、迅速地做。正确句：作业在出去玩之前赶快做完吧。",
+      "en": "さっさと: promptly, without dawdling. Correct: Let's get the homework out of the way quickly before going out to play."
+    },
+    "why": {
+      "zh": "线索：正确句里「さっさと済ませてしまおう」是不拖延、赶紧做完。\n词义：「さっさと」＝不磨蹭、迅速地（做事），常说「さっさと帰る」「さっさと食べなさい」，多含催促。",
+      "en": "Clue: in the right sentence 「さっさと済ませてしまおう」 means finish it fast without dragging it out.\nMeaning: 「さっさと」 is briskly, without dawdling, often a bit of a push: 「さっさと帰る」, 「さっさと食べなさい」 (hurry up and eat)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "雨下得猛是「ざあざあ」。",
+        "en": "Pouring rain is 「ざあざあ」."
+      },
+      {
+        "zh": "睡得香是「ぐっすり」。",
+        "en": "Sleeping soundly is 「ぐっすり」."
+      },
+      {
+        "zh": "手指不灵活是「うまく」「思うように」。",
+        "en": "Fingers not obeying is 「うまく」 or 「思うように」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-563",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<大げさ>>",
+    "options": [
+      "小さなけがなのに、大げさに騒がないでほしい。",
+      "大げさな荷物を持って、旅行に出かけた。",
+      "広い部屋を借りたので、家賃が大げさだ。",
+      "この料理は大げさなので、全部は食べられない。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "大げさ：把事情说得、做得比实际夸张。正确句：只是点小伤，希望别小题大做地嚷嚷。",
+      "en": "大げさ: exaggerated, making more of something than it is. Correct: It's only a small injury; I wish you wouldn't make such a fuss."
+    },
+    "why": {
+      "zh": "线索：正确句里「小さなけが」与「大げさに騒ぐ」形成对比，反应超出实际。\n词义：「大げさ」（おおげさ）＝言行比实际夸张，常说「大げさに言う」「大げさな表現」。",
+      "en": "Clue: in the right sentence 「小さなけが」 contrasts with 「大げさに騒ぐ」: a reaction out of proportion.\nMeaning: 「大げさ」 (おおげさ) is exaggerated in word or deed: 「大げさに言う」, 「大げさな表現」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "行李多、体积大是「大きな」。",
+        "en": "A big load is 「大きな」."
+      },
+      {
+        "zh": "房租高是「高い」。",
+        "en": "High rent is 「高い」."
+      },
+      {
+        "zh": "量太多是「量が多い」。",
+        "en": "Too much to eat is 「量が多い」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-564",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<振り向く>>",
+    "options": [
+      "名前を呼ばれて、思わず後ろを振り向いた。",
+      "窓の外を振り向くと、雪が降り始めていた。",
+      "財布を落としたと思って、かばんの中を振り向いた。",
+      "疲れていたので、ベッドに振り向いて眠った。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "振り向く：转头向后看。正确句：被人叫了名字，不由得回过头去。",
+      "en": "振り向く: turning one's head to look behind. Correct: When my name was called, I turned around without thinking."
+    },
+    "why": {
+      "zh": "线索：正确句里被叫名字后「後ろを振り向いた」，是向后转头的动作。\n词义：「振り向く」（ふりむく）＝向后或向声音的方向转过头、身子，常说「振り向いて笑う」「後ろを振り向く」。",
+      "en": "Clue: in the right sentence, after being called, 「後ろを振り向いた」 is the act of turning to look back.\nMeaning: 「振り向く」 (ふりむく) is turning one's head or body round: 「振り向いて笑う」, 「後ろを振り向く」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "看窗外是「眺める」「見る」。",
+        "en": "Looking outside is 「眺める」 or 「見る」."
+      },
+      {
+        "zh": "翻找包里是「探す」。",
+        "en": "Searching a bag is 「探す」."
+      },
+      {
+        "zh": "扑到床上是「倒れ込む」。",
+        "en": "Flopping onto a bed is 「倒れ込む」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-565",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<役目>>",
+    "options": [
+      "新入社員の私の役目は、来客にお茶を出すことだった。",
+      "このバッグは役目が高くて、とても買えない。",
+      "地震のあと、橋の役目を調べに技術者が来た。",
+      "毎日練習したので、英語の役目が上手になった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "役目：分内应做的工作、职责。正确句：作为新员工，我的职责是给来客上茶。",
+      "en": "役目: one's assigned duty or role. Correct: As a new employee, my job was to serve tea to visitors."
+    },
+    "why": {
+      "zh": "线索：正确句里「役目は……ことだ」说明被分派去做的事，是一份职责。\n词义：「役目」（やくめ）＝应尽的职责、任务，常说「役目を果たす」「役目を務める」「重要な役目」。",
+      "en": "Clue: in the right sentence 「役目は……ことだ」 states a duty one has been assigned.\nMeaning: 「役目」 (やくめ) is a duty or part one must play: 「役目を果たす」 (fulfill one's duty), 「役目を務める」, 「重要な役目」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "价格高是「値段が高い」。",
+        "en": "A high price is 「値段が高い」."
+      },
+      {
+        "zh": "桥的状态是「様子」「状態」。",
+        "en": "The condition of a bridge is 「様子」 or 「状態」."
+      },
+      {
+        "zh": "英语水平是「力」「語学力」。",
+        "en": "Skill in English is 「力」 or 「語学力」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-566",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<急激>>",
+    "options": [
+      "去年から、この町の人口は急激に増えている。",
+      "急激に電車に乗り遅れそうだったので、走って駅へ向かった。",
+      "彼は急激な足取りで、会議室へ入っていった。",
+      "急激な用事ができて、会議を早退した。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "急激：变化来得又快又猛。正确句：从去年起，这个镇的人口急剧增加。",
+      "en": "急激: rapid and sharp, of a change. Correct: Since last year this town's population has been rising rapidly."
+    },
+    "why": {
+      "zh": "线索：正确句里「急激に増えている」是数量变化又快又大。\n词义：「急激」（きゅうげき）＝变化又快又猛，常说「急激な変化」「急激に悪化する」。",
+      "en": "Clue: in the right sentence 「急激に増えている」 is a change in number that is both fast and large.\nMeaning: 「急激」 (きゅうげき) is sudden and drastic change: 「急激な変化」, 「急激に悪化する」 (to worsen sharply)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "差点赶不上电车是「急いで」「慌てて」。",
+        "en": "Nearly missing a train is 「急いで」 or 「慌てて」."
+      },
+      {
+        "zh": "步伐匆忙是「急ぎ足」。",
+        "en": "A hurried pace is 「急ぎ足」."
+      },
+      {
+        "zh": "突然有事是「急な用事」。",
+        "en": "A sudden errand is 「急な用事」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-567",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<生き生き>>",
+    "options": [
+      "趣味の話をするとき、彼はいつも生き生きとしている。",
+      "冷蔵庫の魚が生き生きしているうちに、早く食べた。",
+      "焼きたてのパンは生き生きとしていて、とてもおいしい。",
+      "疲れ切っていて、その夜は生き生きと眠ってしまった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "生き生き：充满活力、精神饱满。正确句：说起兴趣爱好时，他总是神采奕奕。",
+      "en": "生き生き: full of life and energy. Correct: When he talks about his hobby, he always lights up."
+    },
+    "why": {
+      "zh": "线索：正确句里「生き生きとしている」写的是人说起爱好时精神饱满的样子。\n词义：「生き生き」（いきいき）＝充满活力，常说「生き生きとした表情」「生き生きと働く」。",
+      "en": "Clue: in the right sentence 「生き生きとしている」 describes a person full of energy when talking about a hobby.\nMeaning: 「生き生き」 (いきいき) is lively and vivid: 「生き生きとした表情」, 「生き生きと働く」 (to work with zest)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "鱼新鲜是「新鮮」。",
+        "en": "Fresh fish is 「新鮮」."
+      },
+      {
+        "zh": "面包松软是「ふわふわ」。",
+        "en": "Soft bread is 「ふわふわ」."
+      },
+      {
+        "zh": "睡得沉是「ぐっすり」。",
+        "en": "Deep sleep is 「ぐっすり」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-568",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<潰す>>",
+    "options": [
+      "電車で荷物の下になって、買った卵を潰してしまった。",
+      "大きな石を手で潰して、遠くへ投げた。",
+      "ごみ箱のふたを潰して、ごみを入れた。",
+      "シャツのボタンを潰して、前を留めた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "潰す：用力压坏、压扁。正确句：在电车里被行李压着，把买来的鸡蛋压碎了。",
+      "en": "潰す: crushing something so it loses its shape. Correct: In the train the luggage was on top and I squashed the eggs I had bought."
+    },
+    "why": {
+      "zh": "线索：正确句里「卵を潰して」是东西被压得变形、破碎。\n词义：「潰す」（つぶす）＝压坏、压扁，也指使破产、打发时间，常说「箱を潰す」「顔をつぶす」「時間を潰す」。",
+      "en": "Clue: in the right sentence 「卵を潰して」 is something pressed out of shape or broken.\nMeaning: 「潰す」 (つぶす) is to crush or flatten; also to ruin or kill time: 「箱を潰す」, 「顔をつぶす」 (to disgrace), 「時間を潰す」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "扔石头前要先「持ち上げて」。",
+        "en": "Before throwing a stone you 「持ち上げて」 it."
+      },
+      {
+        "zh": "放垃圾要「開けて」盖子。",
+        "en": "To put rubbish in, 「開けて」 the lid."
+      },
+      {
+        "zh": "扣扣子是「掛けて」「留めて」。",
+        "en": "Fastening a button is 「掛けて」 or 「留めて」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-569",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<最寄り>>",
+    "options": [
+      "最寄りの駅から歩いて十分ほどの所に、新しい店ができた。",
+      "彼は会社でいちばん最寄りの上司で、何でも相談できる。",
+      "最寄りの日曜日に、町内の掃除をすることになった。",
+      "兄は最寄りの成績で、大学を卒業した。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "最寄り：离某处最近。正确句：在离最近的车站步行十分钟左右的地方，开了一家新店。",
+      "en": "最寄り: nearest to a place. Correct: A new shop opened about ten minutes' walk from the nearest station."
+    },
+    "why": {
+      "zh": "线索：正确句里「最寄りの駅」是距离所在地最近的车站。\n词义：「最寄り」（もより）＝离得最近，只用于距离，常说「最寄りの駅」「最寄りのコンビニ」。",
+      "en": "Clue: in the right sentence 「最寄りの駅」 is the station closest to the spot.\nMeaning: 「最寄り」 (もより) is nearest, used only for distance: 「最寄りの駅」, 「最寄りのコンビニ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "最亲近的上司是「いちばん親しい」。",
+        "en": "The closest boss is 「いちばん親しい」."
+      },
+      {
+        "zh": "最近的星期日是「今度の」「次の」。",
+        "en": "The coming Sunday is 「今度の」 or 「次の」."
+      },
+      {
+        "zh": "最好的成绩是「最高の」「最も良い」。",
+        "en": "The best grades are 「最高の」 or 「最も良い」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-570",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<ふもと>>",
+    "options": [
+      "山のふもとにある小さな村で、毎年祭りが開かれる。",
+      "その木のふもとに、古いベンチが一つ置いてあった。",
+      "川のふもとで、子どもたちが魚を釣っていた。",
+      "机のふもとに、ペンが一本落ちていた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "ふもと：山脚下。正确句：在山脚下的小村里，每年都举办庙会。",
+      "en": "ふもと: the foot of a mountain. Correct: A festival is held every year in a small village at the foot of the mountain."
+    },
+    "why": {
+      "zh": "线索：正确句里「山のふもと」，指山下靠近平地的地方。\n词义：「ふもと」（麓）＝山脚，常说「山のふもと」「富士山のふもと」，只用于山。",
+      "en": "Clue: in the right sentence 「山のふもと」 is the lower part of a mountain where it meets the plain.\nMeaning: 「ふもと」 (麓) is the foot of a mountain: 「山のふもと」, 「富士山のふもと」; it is used only for mountains."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "树下是「根元」。",
+        "en": "The base of a tree is 「根元」."
+      },
+      {
+        "zh": "河边是「ほとり」「岸」。",
+        "en": "A riverside is 「ほとり」 or 「岸」."
+      },
+      {
+        "zh": "桌脚边是「足もと」。",
+        "en": "By the foot of a desk is 「足もと」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-571",
+    "type": "youhou",
+    "difficulty": 3,
+    "stem": "<<妥当>>",
+    "options": [
+      "経験を考えれば、この給料は妥当だと思う。",
+      "彼は妥当な人なので、約束を破ることはない。",
+      "今日は妥当な風が吹いて、散歩にちょうどいい。",
+      "昨日の試験は妥当で、全員が百点を取った。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "妥当：合情合理、恰当。正确句：考虑到经验，我认为这个工资是合理的。",
+      "en": "妥当: reasonable, appropriate. Correct: Considering the experience, I think this salary is fair."
+    },
+    "why": {
+      "zh": "线索：正确句里以「経験を考えれば」为依据，判断工资合不合理。\n词义：「妥当」（だとう）＝合理、恰当，常说「妥当な判断」「妥当な値段」「妥当性」。",
+      "en": "Clue: in the right sentence 「経験を考えれば」 is the ground for judging the pay reasonable.\nMeaning: 「妥当」 (だとう) is proper and reasonable: 「妥当な判断」, 「妥当な値段」, 「妥当性」 (validity)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "守信用的人是「誠実な」。",
+        "en": "A person who keeps promises is 「誠実な」."
+      },
+      {
+        "zh": "舒服的风是「心地よい」。",
+        "en": "A pleasant breeze is 「心地よい」."
+      },
+      {
+        "zh": "考试简单是「簡単な」。",
+        "en": "An easy exam is 「簡単な」."
+      }
+    ]
   }
 ]

@@ -2586,5 +2586,833 @@
         "en": "「知」 is unvoiced ち; しょうじ is 「障子」 (a paper screen)."
       }
     ]
+  },
+  {
+    "id": "n2-mg-173",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "この二つの図形は面積が<<等しい>>。",
+    "options": [
+      "ひとしい",
+      "ひどしい",
+      "ひさしい",
+      "とうしい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这两个图形的面积相等。",
+      "en": "These two figures are equal in area."
+    },
+    "why": {
+      "zh": "「等（ひと）しい」：相等、一样。训读，送假名「しい」。",
+      "en": "「等しい」 is ひとしい: equal, the same. A kun reading with the ending しい."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "第二个音是清音「と」，不是「ど」。",
+        "en": "The second sound is unvoiced と, not ど."
+      },
+      {
+        "zh": "「ひさしい」是「久しい」（很久），形近但不同词。",
+        "en": "ひさしい is 「久しい」 (long-standing), a different word."
+      },
+      {
+        "zh": "「等」的音读是「とう」，但这里是训读的形容词，读「ひとしい」。",
+        "en": "「等」 has the on reading とう, but this adjective is read ひとしい."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-174",
+    "type": "kanji",
+    "difficulty": 3,
+    "stem": "図書館は来年、蔵書を<<拡充>>する計画だ。",
+    "options": [
+      "かくじゅう",
+      "かくちゅう",
+      "かくじゅ",
+      "こくじゅう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "图书馆计划明年扩充藏书。",
+      "en": "The library plans to expand its collection next year."
+    },
+    "why": {
+      "zh": "「拡（かく）」+「充（じゅう）」：「かくじゅう」，扩大充实。",
+      "en": "「拡」 is かく and 「充」 is じゅう: かくじゅう, to expand and enrich."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「充」读「じゅう」（如「充実」），不是「ちゅう」。",
+        "en": "「充」 is じゅう (as in 「充実」), not ちゅう."
+      },
+      {
+        "zh": "「充」是长音「じゅう」，不能缩短。",
+        "en": "「充」 is the long じゅう — don't shorten it."
+      },
+      {
+        "zh": "「拡」读「かく」（如「拡大」），不是「こく」。",
+        "en": "「拡」 is かく (as in 「拡大」), not こく."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-175",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "彼は<<腕>>を組んで、じっと考え込んでいた。",
+    "options": [
+      "うで",
+      "わん",
+      "うて",
+      "ふで"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他抱着胳膊，一动不动地沉思。",
+      "en": "He sat with his arms folded, lost in thought."
+    },
+    "why": {
+      "zh": "「腕」单独作名词读训读「うで」（胳膊）。",
+      "en": "On its own, 「腕」 is read うで (arm)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「わん」是音读，只出现在「腕力」「手腕」等复合词里，单独的「腕」不读「わん」。",
+        "en": "わん is the on reading, found in compounds like 「腕力」 and 「手腕」, not in the bare word."
+      },
+      {
+        "zh": "第二个音是浊音「で」，不是「て」。",
+        "en": "The second sound is voiced で, not て."
+      },
+      {
+        "zh": "「ふで」是「筆」（毛笔）。",
+        "en": "ふで is 「筆」 (brush)."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-176",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "今朝は<<濃い>>霧が出て、前がよく見えなかった。",
+    "options": [
+      "こい",
+      "ごい",
+      "こうい",
+      "のい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "今天早上起了浓雾，前面看不清。",
+      "en": "There was thick fog this morning and I couldn't see ahead."
+    },
+    "why": {
+      "zh": "「濃（こ）い」：浓、深（颜色、味道、雾）。「濃厚」的「濃」读「のう」，单独的形容词读「こい」。",
+      "en": "「濃い」 is こい: thick, dark, strong (colour, taste, fog). In 「濃厚」 it is のう, but the bare adjective is こい."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "第一个音是清音「こ」，不是「ご」。",
+        "en": "The first sound is unvoiced こ, not ご."
+      },
+      {
+        "zh": "「濃」没有「こうい」这种读法。",
+        "en": "「濃」 has no reading こうい."
+      },
+      {
+        "zh": "「のい」只取了音读「のう」的一部分，形容词读「こい」。",
+        "en": "のい is a fragment of the on reading のう; the adjective is こい."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-177",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "彼女は大きな不安を<<抱えて>>、面接に臨んだ。",
+    "options": [
+      "かかえて",
+      "かたえて",
+      "かがえて",
+      "だかえて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "她怀着很大的不安去参加面试。",
+      "en": "She went into the interview carrying a great deal of anxiety."
+    },
+    "why": {
+      "zh": "「抱える（かかえる）」：抱、怀着（问题、不安）。",
+      "en": "「抱える」 is かかえる: to hold in the arms, to carry (a problem, worry)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「抱」的训读是「かか」，没有「かた」。",
+        "en": "The kun reading of 「抱」 here is かか, not かた."
+      },
+      {
+        "zh": "第二个音是清音「か」，不是「が」。",
+        "en": "The second sound is unvoiced か, not が."
+      },
+      {
+        "zh": "「だく」「いだく」才是「抱」的其他读法，「だかえる」不存在。",
+        "en": "「だく」 and 「いだく」 are the other readings; 「だかえる」 doesn't exist."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-178",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "地震で、古い家が少し<<傾いて>>しまった。",
+    "options": [
+      "かたむいて",
+      "かたまいて",
+      "かたよいて",
+      "かだむいて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "地震把老房子震得有点倾斜了。",
+      "en": "The earthquake left the old house leaning a little."
+    },
+    "why": {
+      "zh": "「傾く（かたむく）」：倾斜。",
+      "en": "「傾く」 is かたむく: to tilt, lean."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「かたまる」是「固まる」（变硬），不是「傾く」。",
+        "en": "かたまる is 「固まる」 (to harden), not 「傾く」."
+      },
+      {
+        "zh": "「かたよる」是「偏る」（偏向），读音和「傾く」不同。",
+        "en": "かたよる is 「偏る」 (to be biased), a different word."
+      },
+      {
+        "zh": "第二个音是清音「た」，不是「だ」。",
+        "en": "The second sound is unvoiced た, not だ."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-179",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "二つの会社が市場のシェアを<<争って>>いる。",
+    "options": [
+      "あらそって",
+      "あらがって",
+      "あそらって",
+      "あらぞって"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "两家公司在争夺市场份额。",
+      "en": "Two companies are fighting over market share."
+    },
+    "why": {
+      "zh": "「争う（あらそう）」：争夺、竞争。",
+      "en": "「争う」 is あらそう: to compete, to contend."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「あらがう」是「抗う」（抵抗），不是「争う」。",
+        "en": "あらがう is 「抗う」 (to resist), not 「争う」."
+      },
+      {
+        "zh": "音的顺序是「あ・ら・そ・う」，不是「あそら」。",
+        "en": "The order is あ・ら・そ・う, not あそら."
+      },
+      {
+        "zh": "第三个音是清音「そ」，不是「ぞ」。",
+        "en": "The third sound is unvoiced そ, not ぞ."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-180",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "釣り糸が木の枝に<<絡まって>>、なかなか取れない。",
+    "options": [
+      "からまって",
+      "はさまって",
+      "つかまって",
+      "こまって"
+    ],
+    "tr": {
+      "zh": "钓鱼线缠在树枝上，怎么也弄不下来。",
+      "en": "The fishing line got tangled in a branch and won't come loose."
+    },
+    "why": {
+      "zh": "「絡まる（からまる）」：缠绕、缠住。他动词是「絡める」，近义「絡む（からむ）」。",
+      "en": "「絡まる」 is からまる: to get tangled. Related: 「絡む」 (からむ), transitive 「絡める」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「はさまる」是「挟まる」（夹住）。",
+        "en": "はさまる is 「挟まる」, to get caught between."
+      },
+      {
+        "zh": "「つかまる」是「捕まる・掴まる」（被抓住；抓住）。",
+        "en": "つかまる is 「捕まる／掴まる」, to be caught / to hold on."
+      },
+      {
+        "zh": "「こまる」是「困る」（为难），「絡」不读「こ」。",
+        "en": "こまる is 「困る」, to be troubled; 「絡」 isn't read こ."
+      }
+    ],
+    "answer": 0
+  },
+  {
+    "id": "n2-mg-181",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "<<幼い>>ころに両親を亡くし、祖母に育てられた。",
+    "options": [
+      "おさない",
+      "おざない",
+      "ようない",
+      "おそない"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他年幼时失去了父母，由祖母养大。",
+      "en": "He lost his parents when he was very young and was raised by his grandmother."
+    },
+    "why": {
+      "zh": "「幼（おさな）い」：年幼的。音读「よう」（「幼児」）。",
+      "en": "「幼い」 is おさない: very young. The on reading is よう (「幼児」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "第二个音是清音「さ」，不是「ざ」。",
+        "en": "The second sound is unvoiced さ, not ざ."
+      },
+      {
+        "zh": "「よう」是音读（「幼児」），形容词「幼い」不读「ようない」。",
+        "en": "よう is the on reading (「幼児」); the adjective is not ようない."
+      },
+      {
+        "zh": "第二个音是「さ」，不是「そ」。",
+        "en": "The second sound is さ, not そ."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-182",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "電車の遅れでダイヤが大きく<<乱れた>>。",
+    "options": [
+      "みだれた",
+      "みたれた",
+      "まだれた",
+      "みだえた"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "电车晚点，运行时刻表大乱。",
+      "en": "Train delays threw the timetable into disarray."
+    },
+    "why": {
+      "zh": "「乱れる（みだれる）」：乱、紊乱。音读「らん」（「混乱」）。",
+      "en": "「乱れる」 is みだれる: to be disordered. The on reading is らん (「混乱」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "第二个音是浊音「だ」，不是「た」。",
+        "en": "The second sound is voiced だ, not た."
+      },
+      {
+        "zh": "第一个音是「み」，不是「ま」。",
+        "en": "The first sound is み, not ま."
+      },
+      {
+        "zh": "词尾是「れる」，不是「える」。",
+        "en": "The ending is れる, not える."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-183",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "駅前で、新しい会員になるよう<<勧誘>>された。",
+    "options": [
+      "かんゆう",
+      "かんゆ",
+      "かんにゅう",
+      "げんゆう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "在车站前被劝诱加入成为新会员。",
+      "en": "I was solicited to become a new member in front of the station."
+    },
+    "why": {
+      "zh": "「勧（かん）」+「誘（ゆう）」：「かんゆう」，劝说拉人加入。",
+      "en": "「勧」 is かん and 「誘」 is ゆう: かんゆう, soliciting someone to join."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「誘」是长音「ゆう」，不能缩短。",
+        "en": "「誘」 is the long ゆう — don't shorten it."
+      },
+      {
+        "zh": "「かんにゅう」像「加入（かにゅう）」，但「誘」读「ゆう」。",
+        "en": "かんにゅう resembles 「加入」 (かにゅう), but 「誘」 is ゆう."
+      },
+      {
+        "zh": "「勧」读「かん」，不是「げん」。",
+        "en": "「勧」 is かん, not げん."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-184",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "二つのチームは優勝を<<競って>>、最後まで一歩も譲らなかった。",
+    "options": [
+      "きそって",
+      "ぎそって",
+      "きおって",
+      "きょうって"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "两支队伍争夺冠军，到最后一步也不让。",
+      "en": "The two teams vied for the title and didn't give an inch until the end."
+    },
+    "why": {
+      "zh": "「競う（きそう）」：竞争、争着做。音读「きょう」（「競争」）。",
+      "en": "「競う」 is きそう: to compete. The on reading is きょう (「競争」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "第一个音是清音「き」，不是「ぎ」。",
+        "en": "The first sound is unvoiced き, not ぎ."
+      },
+      {
+        "zh": "「きおう」是「気負う」，不是「競う」。",
+        "en": "きおう is 「気負う」, not 「競う」."
+      },
+      {
+        "zh": "「きょう」是音读（「競争」），动词读训读「きそう」。",
+        "en": "きょう is the on reading (「競争」); the verb is きそう."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-185",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "強い光の<<刺激>>で、目が痛くなった。",
+    "options": [
+      "しげき",
+      "じげき",
+      "しげっき",
+      "しげぎ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "受到强光的刺激，眼睛疼起来。",
+      "en": "The stimulation of the strong light made my eyes hurt."
+    },
+    "why": {
+      "zh": "「刺（し）」+「激（げき）」：「しげき」。",
+      "en": "「刺」 is し and 「激」 is げき: しげき, stimulation."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "第一个音是清音「し」，不是「じ」。",
+        "en": "The first sound is unvoiced し, not じ."
+      },
+      {
+        "zh": "「激」读「げき」，中间没有小「っ」。",
+        "en": "「激」 is げき; there is no small っ."
+      },
+      {
+        "zh": "「激」是清音「き」，不是「ぎ」。",
+        "en": "The last sound is unvoiced き, not ぎ."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-186",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "このカレーは<<辛い>>ので、水ばかり飲んでしまった。",
+    "options": [
+      "からい",
+      "しんい",
+      "かるい",
+      "がらい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这咖喱太辣，我光顾着喝水了。",
+      "en": "This curry is so spicy that I kept drinking water."
+    },
+    "why": {
+      "zh": "「辛い」指味道时读「からい」（辣）；指痛苦时读「つらい」。这里说咖喱和喝水，是辣。",
+      "en": "「辛い」 is からい for taste (spicy) and つらい for suffering. Curry and water point to spicy."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「辛」的音读是「しん」（辛苦、香辛料），但「辛い」没有「しんい」这种读法。",
+        "en": "「辛」 has the on-reading しん (as in 「香辛料」), but 「辛い」 is never read しんい."
+      },
+      {
+        "zh": "「かるい」是「軽い」（轻）。",
+        "en": "かるい is 「軽い」 (light)."
+      },
+      {
+        "zh": "第一个音是清音「か」，不是「が」。",
+        "en": "The first sound is unvoiced か, not が."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-187",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "環境問題をめぐって、学生たちが活発に<<討論>>した。",
+    "options": [
+      "とうろん",
+      "とうろう",
+      "どうろん",
+      "とろん"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "学生们围绕环境问题展开了热烈的讨论。",
+      "en": "Students held a lively debate on environmental issues."
+    },
+    "why": {
+      "zh": "「討（とう）」+「論（ろん）」：「とうろん」，辩论、讨论。",
+      "en": "「討」 is とう and 「論」 is ろん: とうろん, debate."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「論」读「ろん」，不是「ろう」。",
+        "en": "「論」 is ろん, not ろう."
+      },
+      {
+        "zh": "第一个音是清音「と」，不是「ど」。",
+        "en": "The first sound is unvoiced と, not ど."
+      },
+      {
+        "zh": "「討」是长音「とう」，不能缩短。",
+        "en": "「討」 is the long とう — don't shorten it."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-188",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "祖母の<<介護>>のために、仕事を減らすことにした。",
+    "options": [
+      "かいご",
+      "かいこ",
+      "かいごう",
+      "がいご"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "为了护理祖母，我决定减少工作。",
+      "en": "I decided to cut back on work to care for my grandmother."
+    },
+    "why": {
+      "zh": "「介（かい）」+「護（ご）」：「かいご」，护理、照护。",
+      "en": "「介」 is かい and 「護」 is ご: かいご, nursing care."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「護」是浊音「ご」，不是「こ」。",
+        "en": "「護」 is voiced ご, not こ."
+      },
+      {
+        "zh": "「護」是短音「ご」，没有长音。",
+        "en": "「護」 is the short ご — no long vowel."
+      },
+      {
+        "zh": "第一个音是清音「か」，不是「が」。",
+        "en": "The first sound is unvoiced か, not が."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-189",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "会社は三つの部署を一つに<<統一>>することにした。",
+    "options": [
+      "とういつ",
+      "とういち",
+      "どういつ",
+      "とうえつ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "公司决定把三个部门合并统一为一个。",
+      "en": "The company decided to unify the three departments into one."
+    },
+    "why": {
+      "zh": "「統（とう）」+「一（いつ）」：「とういつ」。「一」在这里读「いつ」（如「唯一」「均一」）。",
+      "en": "「統」 is とう and 「一」 is いつ here (as in 「唯一」, 「均一」): とういつ."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「一」在这个词里读「いつ」，不是「いち」。",
+        "en": "In this word 「一」 is いつ, not いち."
+      },
+      {
+        "zh": "「どういつ」是「同一」，「統」读清音「とう」。",
+        "en": "どういつ is 「同一」; 「統」 is the unvoiced とう."
+      },
+      {
+        "zh": "「一」读「いち」或「いつ」，没有「えつ」。",
+        "en": "「一」 is いち or いつ, never えつ."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-190",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "雨に降られて、靴の中まで<<湿って>>しまった。",
+    "options": [
+      "しめって",
+      "しじって",
+      "しずって",
+      "じめって"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "被雨淋了，连鞋里面都湿了。",
+      "en": "I got rained on and even the inside of my shoes got damp."
+    },
+    "why": {
+      "zh": "「湿る（しめる）」：潮湿、受潮。音读「しつ」（「湿度」）。",
+      "en": "「湿る」 is しめる: to become damp. The on reading is しつ (「湿度」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「湿る」没有「しじる」这种读法。",
+        "en": "There is no reading しじる for 「湿る」."
+      },
+      {
+        "zh": "「しずる」不是这个词；「湿る」读「しめる」。",
+        "en": "しずる is not this word; 「湿る」 is しめる."
+      },
+      {
+        "zh": "第一个音是清音「し」，不是「じ」。",
+        "en": "The first sound is unvoiced し, not じ."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-191",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "学んだ知識を実際の仕事で<<実践>>することが大切だ。",
+    "options": [
+      "じっせん",
+      "じっぜん",
+      "じつせん",
+      "じっさん"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "重要的是把学到的知识在实际工作中付诸实践。",
+      "en": "It is important to put what you've learned into practice in real work."
+    },
+    "why": {
+      "zh": "「実（じつ）」+「践（せん）」：「実践」读「じっせん」，「実」后接「せ」行时促音化。",
+      "en": "「実」+「践」 is じっせん: じつ becomes じっ before the せ sound."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「践」读清音「せん」，不是「ぜん」。",
+        "en": "「践」 is unvoiced せん, not ぜん."
+      },
+      {
+        "zh": "「実」在这里要促音化为「じっ」，不读「じつ」。",
+        "en": "「実」 turns into じっ here, not じつ."
+      },
+      {
+        "zh": "「践」读「せん」，不是「さん」。",
+        "en": "「践」 is せん, not さん."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-192",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "棒を地面に<<垂直>>に立てて、高さを測った。",
+    "options": [
+      "すいちょく",
+      "ずいちょく",
+      "すいじょく",
+      "すいちょ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "把棍子垂直立在地上，测量高度。",
+      "en": "I stood the pole vertically on the ground and measured its height."
+    },
+    "why": {
+      "zh": "「垂（すい）」+「直（ちょく）」：「すいちょく」，垂直。",
+      "en": "「垂」 is すい and 「直」 is ちょく: すいちょく, perpendicular."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "第一个音是清音「す」，不是「ず」。",
+        "en": "The first sound is unvoiced す, not ず."
+      },
+      {
+        "zh": "「直」读「ちょく」，不是「じょく」。",
+        "en": "「直」 is ちょく, not じょく."
+      },
+      {
+        "zh": "「直」读「ちょく」，不能缺少「く」。",
+        "en": "「直」 is ちょく; the final く can't be dropped."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-193",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "その会社は新しい営業担当者の<<求人>>を出している。",
+    "options": [
+      "きゅうじん",
+      "きゅうにん",
+      "ぐうじん",
+      "きゅじん"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那家公司正在招聘新的销售人员。",
+      "en": "The company is advertising for new sales staff."
+    },
+    "why": {
+      "zh": "「求（きゅう）」+「人（じん）」：「きゅうじん」，招聘人才。",
+      "en": "「求」 is きゅう and 「人」 is じん: きゅうじん, a job opening."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「人」在这个词里读「じん」，不是「にん」。",
+        "en": "In this word 「人」 is じん, not にん."
+      },
+      {
+        "zh": "第一个音是「きゅう」，不是「ぐう」。",
+        "en": "The first sound is きゅう, not ぐう."
+      },
+      {
+        "zh": "「求」是长音「きゅう」，不能缩短。",
+        "en": "「求」 is the long きゅう — don't shorten it."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-194",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "床にガラスの<<破片>>が散らばっていた。",
+    "options": [
+      "はへん",
+      "はぺん",
+      "ばへん",
+      "はっぺん"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "地板上散落着玻璃碎片。",
+      "en": "Shards of glass were scattered over the floor."
+    },
+    "why": {
+      "zh": "「破（は）」+「片（へん）」：「はへん」，碎片。",
+      "en": "「破」 is は and 「片」 is へん: はへん, a fragment."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「片」读「へん」，不是「ぺん」。",
+        "en": "「片」 is へん, not ぺん."
+      },
+      {
+        "zh": "第一个音是清音「は」，不是「ば」。",
+        "en": "The first sound is unvoiced は, not ば."
+      },
+      {
+        "zh": "「破」后面不促音化，读「はへん」。",
+        "en": "There is no small っ after 「破」 in this word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-195",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "消防士たちは<<勇ましい>>姿で火の中へ入っていった。",
+    "options": [
+      "いさましい",
+      "ゆうましい",
+      "いざましい",
+      "いさまじい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "消防员们以英勇的身姿冲进了火场。",
+      "en": "The firefighters walked into the flames, looking brave and gallant."
+    },
+    "why": {
+      "zh": "「勇（いさ）ましい」：勇敢的。音读「ゆう」（「勇気」）。",
+      "en": "「勇ましい」 is いさましい: brave. The on reading is ゆう (「勇気」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「勇」在形容词里读训读「いさ」，不是音读「ゆう」。",
+        "en": "In the adjective 「勇」 is the kun いさ, not the on ゆう."
+      },
+      {
+        "zh": "第二个音是清音「さ」，不是「ざ」。",
+        "en": "The second sound is unvoiced さ, not ざ."
+      },
+      {
+        "zh": "词尾是「ましい」，不是「まじい」。",
+        "en": "The ending is ましい, not まじい."
+      }
+    ]
   }
 ]

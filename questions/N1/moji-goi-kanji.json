@@ -1300,5 +1300,1625 @@
         "en": "「漏」 has a long vowel: ろう, not ろ."
       }
     ]
+  },
+  {
+    "id": "n1-mg-136",
+    "type": "kanji",
+    "difficulty": 3,
+    "stem": "彼は人の気持ちを<<弄んで>>は、簡単に捨てる男だった。",
+    "options": [
+      "もてあそんで",
+      "もてあまして",
+      "もてなして",
+      "もてはやして"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他是个玩弄别人感情、又轻易抛弃的男人。",
+      "en": "He was the kind of man who toyed with people's feelings and then threw them away."
+    },
+    "why": {
+      "zh": "「弄ぶ（もてあそぶ）」：玩弄、戏弄。",
+      "en": "「弄ぶ」 is もてあそんで: to toy with, play with."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「もてあます」是「持て余す」（不知如何处理）。",
+        "en": "もてあます is 「持て余す」, to not know what to do with."
+      },
+      {
+        "zh": "「もてなす」是「持て成す」（款待）。",
+        "en": "もてなす is 「持て成す」, to entertain."
+      },
+      {
+        "zh": "「もてはやす」是「持て囃す」（追捧）。",
+        "en": "もてはやす is 「持て囃す」, to make much of."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-137",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "彼は身分を<<偽って>>会社に入社した。",
+    "options": [
+      "いつわって",
+      "あざむいて",
+      "いつわらって",
+      "よそおって"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他谎报身份进了公司。",
+      "en": "He joined the company under a false identity."
+    },
+    "why": {
+      "zh": "「偽る（いつわる）」：谎称、欺骗。",
+      "en": "「偽る」 is いつわって: to lie about, falsify."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「あざむく」是「欺く」（欺骗）。",
+        "en": "あざむく is 「欺く」, to deceive."
+      },
+      {
+        "zh": "动词是「いつわる」，没有多余的「ら」。",
+        "en": "The verb is いつわる; there is no extra ら."
+      },
+      {
+        "zh": "「よそおう」是「装う」（假装、打扮）。",
+        "en": "よそおう is 「装う」, to pretend, dress up."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-138",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "高齢の母を<<労る>>気持ちを忘れてはならない。",
+    "options": [
+      "いたわる",
+      "ねぎらう",
+      "ろうする",
+      "いたぶる"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "不能忘记体恤年迈母亲的心意。",
+      "en": "We must not forget to be considerate of our elderly mother."
+    },
+    "why": {
+      "zh": "「労る（いたわる）」：体恤、关怀。",
+      "en": "「労る」 is いたわる: to be kind to, look after."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ねぎらう」是「労う」（慰劳）。",
+        "en": "ねぎらう is 「労う」, to thank for effort."
+      },
+      {
+        "zh": "「労する」才读「ろうする」，「労る」是训读动词。",
+        "en": "「労する」 is ろうする; 「労る」 is a kun-reading verb."
+      },
+      {
+        "zh": "「いたぶる」是「甚振る」（欺负、折磨）。",
+        "en": "いたぶる is 「甚振る」, to torment."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-139",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "被害者に対して損害を<<償う>>責任がある。",
+    "options": [
+      "つぐなう",
+      "まかなう",
+      "つぐのう",
+      "しょうなう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "有责任向受害者赔偿损失。",
+      "en": "He is responsible for compensating the victim for the damage."
+    },
+    "why": {
+      "zh": "「償う（つぐなう）」：赔偿、补偿。",
+      "en": "「償う」 is つぐなう: to compensate, atone for."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まかなう」是「賄う」（供给）。",
+        "en": "まかなう is 「賄う」, to provide for."
+      },
+      {
+        "zh": "送假名是「なう」，不是「のう」。",
+        "en": "The ending is なう, not のう."
+      },
+      {
+        "zh": "「償」的音读「しょう」不用于这个动词。",
+        "en": "The on reading しょう is not used in this verb."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-140",
+    "type": "kanji",
+    "difficulty": 3,
+    "stem": "ストレスは、知らず知らずのうちに心身を<<蝕んで>>いく。",
+    "options": [
+      "むしばんで",
+      "ほろんで",
+      "むしんで",
+      "しょくんで"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "压力会在不知不觉中侵蚀身心。",
+      "en": "Stress eats away at body and mind without our noticing."
+    },
+    "why": {
+      "zh": "「蝕む（むしばむ）」：侵蚀、腐蚀。",
+      "en": "「蝕む」 is むしばんで: to eat away at, undermine."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ほろぶ」是「滅ぶ」（灭亡）。",
+        "en": "ほろぶ is 「滅ぶ」, to perish."
+      },
+      {
+        "zh": "「むし」后面要接「ば」，读「むしばむ」。",
+        "en": "It is むしばむ; the ば cannot be dropped."
+      },
+      {
+        "zh": "「しょく」是「蝕」的音读（如「日蝕」），此处读训读。",
+        "en": "しょく is the on reading (as in 「日蝕」); here it is the kun reading."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-141",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "悪しき習慣が組織の中に<<蔓延って>>いる。",
+    "options": [
+      "はびこって",
+      "はばかって",
+      "はぐくんで",
+      "はぐらかして"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "恶习在组织内部蔓延滋长。",
+      "en": "Bad habits have taken root throughout the organization."
+    },
+    "why": {
+      "zh": "「蔓延る（はびこる）」：（坏事）蔓延、猖獗。",
+      "en": "「蔓延る」 is はびこって: to run rampant, spread unchecked."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「はばかる」是「憚る」（顾忌）。",
+        "en": "はばかる is 「憚る」, to hold back out of consideration."
+      },
+      {
+        "zh": "「はぐくむ」是「育む」（培育）。",
+        "en": "はぐくむ is 「育む」, to nurture."
+      },
+      {
+        "zh": "「はぐらかす」是岔开话题，没有对应汉字。",
+        "en": "はぐらかす is to dodge a question; it has no kanji here."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-142",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "若い世代が将来の社会を<<担う>>。",
+    "options": [
+      "になう",
+      "かつぐ",
+      "たんなう",
+      "ささえる"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "年轻一代将肩负起未来的社会。",
+      "en": "The younger generation will shoulder the society of the future."
+    },
+    "why": {
+      "zh": "「担う（になう）」：担负、承担。",
+      "en": "「担う」 is になう: to shoulder, bear."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「かつぐ」是「担ぐ」（扛）。",
+        "en": "かつぐ is 「担ぐ」, to carry on one's shoulder."
+      },
+      {
+        "zh": "「担」的音读是「たん」，但这个动词读训读「になう」。",
+        "en": "The on reading is たん, but this verb is になう."
+      },
+      {
+        "zh": "「ささえる」是「支える」（支撑）。",
+        "en": "ささえる is 「支える」, to support."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-143",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "彼女は子どものころから兄を<<慕って>>いた。",
+    "options": [
+      "したって",
+      "したがって",
+      "したしんで",
+      "したたって"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "她从小就仰慕哥哥。",
+      "en": "She had looked up to her older brother since childhood."
+    },
+    "why": {
+      "zh": "「慕う（したう）」：仰慕、依恋。",
+      "en": "「慕う」 is したって: to adore, be attached to."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「したがう」是「従う」（服从）。",
+        "en": "したがう is 「従う」, to obey."
+      },
+      {
+        "zh": "「したしむ」是「親しむ」（亲近）。",
+        "en": "したしむ is 「親しむ」, to become familiar with."
+      },
+      {
+        "zh": "「したたる」是「滴る」（滴落）。",
+        "en": "したたる is 「滴る」, to drip."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-144",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "国民は偉業を成し遂げた選手を<<称えた>>。",
+    "options": [
+      "たたえた",
+      "ほめた",
+      "となえた",
+      "しょうえた"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "国民称颂完成伟业的选手。",
+      "en": "The nation praised the athlete who achieved the great feat."
+    },
+    "why": {
+      "zh": "「称える（たたえる）」：称赞、赞颂。",
+      "en": "「称える」 is たたえた: to praise, extol."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ほめる」是「褒める」（夸奖）。",
+        "en": "ほめる is 「褒める」, to praise."
+      },
+      {
+        "zh": "「となえる」是「唱える」（倡导）。",
+        "en": "となえる is 「唱える」, to advocate."
+      },
+      {
+        "zh": "「称」的音读「しょう」不用于这个动词。",
+        "en": "The on reading しょう is not used here."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-145",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "汗が<<滲んだ>>シャツを着替えた。",
+    "options": [
+      "にじんだ",
+      "しみた",
+      "かすんだ",
+      "しんだ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "换掉了被汗水浸湿的衬衫。",
+      "en": "I changed out of the shirt that was stained with sweat."
+    },
+    "why": {
+      "zh": "「滲む（にじむ）」：渗出、洇开。",
+      "en": "「滲む」 is にじんだ: to seep, blur, bleed through."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しみる」是「染みる」（渗入）。",
+        "en": "しみる is 「染みる」, to soak in."
+      },
+      {
+        "zh": "「かすむ」是「霞む」（模糊）。",
+        "en": "かすむ is 「霞む」, to become hazy."
+      },
+      {
+        "zh": "「しんだ」是「死んだ」，不是这个词的读法。",
+        "en": "しんだ is 「死んだ」, not this word."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-146",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "彼は少数の部下を<<率いて>>敵陣に向かった。",
+    "options": [
+      "ひきいて",
+      "ひいて",
+      "そっして",
+      "ひっぱって"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他带领少数部下奔向敌阵。",
+      "en": "He led a handful of men toward the enemy lines."
+    },
+    "why": {
+      "zh": "「率いる（ひきいる）」：率领。",
+      "en": "「率いる」 is ひきいて: to lead, command."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ひく」是「引く」（拉）。",
+        "en": "ひく is 「引く」, to pull."
+      },
+      {
+        "zh": "「率」的音读是「そつ」，动词不读「そっして」。",
+        "en": "The on reading is そつ; the verb is not そっして."
+      },
+      {
+        "zh": "「ひっぱる」是「引っ張る」（拉扯）。",
+        "en": "ひっぱる is 「引っ張る」, to tug."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-147",
+    "type": "kanji",
+    "difficulty": 3,
+    "stem": "脳の一部は、人間の言語を<<司って>>いる。",
+    "options": [
+      "つかさどって",
+      "しどって",
+      "つかさって",
+      "つかどって"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "大脑的一部分掌管着人类的语言。",
+      "en": "One part of the brain governs human language."
+    },
+    "why": {
+      "zh": "「司る（つかさどる）」：掌管、主管。",
+      "en": "「司る」 is つかさどって: to govern, be in charge of."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「し」是「司」的音读，此处读训读。",
+        "en": "し is the on reading of 「司」; here it is kun."
+      },
+      {
+        "zh": "漏掉了「ど」，应读「つかさどる」。",
+        "en": "The ど is missing: つかさどる."
+      },
+      {
+        "zh": "顺序错了，应是「つかさ」+「どる」。",
+        "en": "Wrong order of kana: it is つかさ+どる."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-148",
+    "type": "kanji",
+    "difficulty": 3,
+    "stem": "社会人として、場を<<弁えた>>発言を心がけたい。",
+    "options": [
+      "わきまえた",
+      "べんじた",
+      "わきばえた",
+      "わけまえた"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "作为社会人，我想注意说话要分清场合。",
+      "en": "As a working adult, I want to make remarks suited to the occasion."
+    },
+    "why": {
+      "zh": "「弁える（わきまえる）」：懂得、辨别。",
+      "en": "「弁える」 is わきまえた: to know one's place, discern."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「べんじる」是「弁じる」（陈述）。",
+        "en": "べんじる is 「弁じる」, to speak."
+      },
+      {
+        "zh": "「わき」后接「まえる」，不是「ばえる」。",
+        "en": "It is わき+まえる, not ばえる."
+      },
+      {
+        "zh": "「わけまえ」是名词「分け前」（份额）。",
+        "en": "わけまえ is the noun 「分け前」 (share)."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-149",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "この計画には、思わぬ危険が<<潜む>>おそれがある。",
+    "options": [
+      "ひそむ",
+      "もぐる",
+      "ふくむ",
+      "ひそめる"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个计划恐怕潜藏着意想不到的危险。",
+      "en": "This plan may harbour unexpected dangers."
+    },
+    "why": {
+      "zh": "「潜む（ひそむ）」：潜藏、隐藏在里面。",
+      "en": "「潜む」 is ひそむ: to lurk, lie hidden."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「もぐる」是「潜る」（潜入水中），不是「潜む」的读法。",
+        "en": "もぐる is 「潜る」 (to dive), a different word."
+      },
+      {
+        "zh": "「ふくむ」是「含む」（包含）。",
+        "en": "ふくむ is 「含む」, to contain."
+      },
+      {
+        "zh": "「ひそめる」是「潜める」（把声音、身子藏起来），是他动词，不是「潜む」。",
+        "en": "ひそめる is 「潜める」, a transitive verb (to hide, lower), not 「潜む」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-150",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "政府は二〇五〇年までの目標を<<掲げた>>。",
+    "options": [
+      "かかげた",
+      "かざした",
+      "ひっさげた",
+      "かたげた"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "政府提出了到2050年的目标。",
+      "en": "The government put forward its goals through 2050."
+    },
+    "why": {
+      "zh": "「掲げる（かかげる）」：提出、高举。",
+      "en": "「掲げる」 is かかげた: to put up, raise, announce."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「かざす」是「翳す」（举在上方）。",
+        "en": "かざす is 「翳す」, to hold up over."
+      },
+      {
+        "zh": "「ひっさげる」是「引っ提げる」（提着）。",
+        "en": "ひっさげる is 「引っ提げる」, to carry."
+      },
+      {
+        "zh": "「かたげる」是「傾げる」（歪着）。",
+        "en": "かたげる is 「傾げる」, to tilt."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-151",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "彼は世界記録に<<挑む>>ため、毎日練習している。",
+    "options": [
+      "いどむ",
+      "のぞむ",
+      "ちょうむ",
+      "はさむ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他为了挑战世界纪录，每天练习。",
+      "en": "He practices every day to challenge the world record."
+    },
+    "why": {
+      "zh": "「挑む（いどむ）」：挑战。",
+      "en": "「挑む」 is いどむ: to challenge, take on."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「のぞむ」是「臨む」（面临）。",
+        "en": "のぞむ is 「臨む」, to face."
+      },
+      {
+        "zh": "「ちょう」是音读（如「挑戦」），动词读训读。",
+        "en": "ちょう is the on reading (as in 「挑戦」); the verb is kun."
+      },
+      {
+        "zh": "「はさむ」是「挟む」（夹）。",
+        "en": "はさむ is 「挟む」, to put between."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-152",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "彼は申し出を頑なに<<拒んだ>>。",
+    "options": [
+      "こばんだ",
+      "はばんだ",
+      "ことわった",
+      "こもった"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他顽固地拒绝了提议。",
+      "en": "He stubbornly refused the offer."
+    },
+    "why": {
+      "zh": "「拒む（こばむ）」：拒绝。",
+      "en": "「拒む」 is こばんだ: to refuse, reject."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「はばむ」是「阻む」（阻挡）。",
+        "en": "はばむ is 「阻む」, to obstruct."
+      },
+      {
+        "zh": "「ことわる」是「断る」（拒绝），「拒む」不读成这个。",
+        "en": "ことわる is 「断る」, to refuse; 「拒む」 is not read that way."
+      },
+      {
+        "zh": "「こもる」是「籠もる」（闭门不出）。",
+        "en": "こもる is 「籠もる」, to shut oneself in."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-153",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "会社は深刻な経営危機に<<陥った>>。",
+    "options": [
+      "おちいった",
+      "おとった",
+      "かんった",
+      "おちった"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "公司陷入了严重的经营危机。",
+      "en": "The company fell into a serious management crisis."
+    },
+    "why": {
+      "zh": "「陥る（おちいる）」：陷入。",
+      "en": "「陥る」 is おちいった: to fall into, sink into."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「おとる」是「劣る」（差）。",
+        "en": "おとる is 「劣る」, to be inferior."
+      },
+      {
+        "zh": "「かん」是「陥」的音读（如「欠陥」），动词读训读。",
+        "en": "かん is the on reading (as in 「欠陥」); the verb is kun."
+      },
+      {
+        "zh": "「おちる」是「落ちる」；「陥る」读「おちいる」。",
+        "en": "おちる is 「落ちる」; 「陥る」 is おちいる."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-154",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "人の失敗を<<嘲る>>ような態度は、慎むべきだ。",
+    "options": [
+      "あざける",
+      "あざむく",
+      "あさける",
+      "ちょうする"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "嘲笑别人失败的态度应该戒除。",
+      "en": "One should avoid an attitude of mocking other people's failures."
+    },
+    "why": {
+      "zh": "「嘲る（あざける）」：嘲笑、讥讽。",
+      "en": "「嘲る」 is あざける: to mock, ridicule."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「あざむく」是「欺く」（欺骗）。",
+        "en": "あざむく is 「欺く」, to deceive."
+      },
+      {
+        "zh": "第二个音节是「ざ」，应读「あざける」。",
+        "en": "The second syllable is ざ: あざける."
+      },
+      {
+        "zh": "动词读训读，没有「ちょうする」这个读法。",
+        "en": "The verb takes the kun reading; there is no ちょうする."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-155",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "彼は自分の不運を<<嘆いて>>ばかりいる。",
+    "options": [
+      "なげいて",
+      "なやんで",
+      "たんいて",
+      "なげうって"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他总是为自己的不幸叹息。",
+      "en": "He does nothing but lament his bad luck."
+    },
+    "why": {
+      "zh": "「嘆く（なげく）」：叹息、悲叹。",
+      "en": "「嘆く」 is なげいて: to lament, grieve."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「なやむ」是「悩む」（烦恼）。",
+        "en": "なやむ is 「悩む」, to be troubled."
+      },
+      {
+        "zh": "「たん」是音读（如「嘆息」），动词读训读。",
+        "en": "たん is the on reading (as in 「嘆息」); the verb is kun."
+      },
+      {
+        "zh": "「なげうつ」是「擲つ」（抛弃）。",
+        "en": "なげうつ is 「擲つ」, to throw away."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-156",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "政府は外国人観光客を増やすため、ビザの発給条件を<<緩和>>した。",
+    "options": [
+      "かんわ",
+      "かんか",
+      "がんわ",
+      "げんわ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "政府为了增加外国游客，放宽了签证发放条件。",
+      "en": "To attract more foreign tourists, the government relaxed the visa requirements."
+    },
+    "why": {
+      "zh": "「緩和（かんわ）」：缓和、放宽。",
+      "en": "「緩和」 is かんわ: easing, relaxing."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「緩」读「かん」，不浊化。",
+        "en": "緩 is かん, not voiced."
+      },
+      {
+        "zh": "「和」读「わ」，不是「か」。",
+        "en": "和 is わ here, not か."
+      },
+      {
+        "zh": "「緩」是「かん」，不读「げん」。",
+        "en": "緩 is not read げん."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-157",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "政府は物価の上昇を<<抑制>>する政策を発表した。",
+    "options": [
+      "よくせい",
+      "よくさい",
+      "よくぜい",
+      "やくせい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "政府公布了抑制物价上涨的政策。",
+      "en": "The government announced a policy to curb rising prices."
+    },
+    "why": {
+      "zh": "「抑制（よくせい）」：抑制。",
+      "en": "「抑制」 is よくせい: restraint, curbing."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「制」读「せい」，不是「さい」。",
+        "en": "制 is せい, not さい."
+      },
+      {
+        "zh": "「制」不浊化。",
+        "en": "制 is not voiced."
+      },
+      {
+        "zh": "「抑」读「よく」。",
+        "en": "抑 is よく."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-158",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "双方が<<妥協>>点を見いだせず、交渉は決裂した。",
+    "options": [
+      "だきょう",
+      "だこう",
+      "たきょう",
+      "だっきょう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "双方找不到妥协点，谈判破裂了。",
+      "en": "Neither side could find a point of compromise, and the talks broke down."
+    },
+    "why": {
+      "zh": "「妥協（だきょう）」：妥协。",
+      "en": "「妥協」 is だきょう: compromise."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「協」读「きょう」，不是「こう」。",
+        "en": "協 is きょう, not こう."
+      },
+      {
+        "zh": "「妥」读「だ」，是浊音。",
+        "en": "妥 is voiced だ."
+      },
+      {
+        "zh": "「妥」后面没有促音。",
+        "en": "There is no small っ after 妥."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-159",
+    "type": "kanji",
+    "difficulty": 3,
+    "stem": "彼は新薬の効果に<<懐疑>>的な見方を示した。",
+    "options": [
+      "かいぎ",
+      "かいき",
+      "かんぎ",
+      "かいぎゃく"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他对新药的效果持怀疑态度。",
+      "en": "He took a skeptical view of the new drug's effect."
+    },
+    "why": {
+      "zh": "「懐疑（かいぎ）」：怀疑。",
+      "en": "「懐疑」 is かいぎ: doubt, skepticism."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「疑」读「ぎ」，浊音。",
+        "en": "疑 is voiced ぎ."
+      },
+      {
+        "zh": "「懐」读「かい」，不是「かん」。",
+        "en": "懐 is かい, not かん."
+      },
+      {
+        "zh": "「かいぎゃく」是「諧謔」（诙谐），「疑」读「ぎ」。",
+        "en": "かいぎゃく is 「諧謔」, wit; 「疑」 is ぎ."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-160",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "彼の勇気ある行動は国内外で<<称賛>>された。",
+    "options": [
+      "しょうさん",
+      "しょうざん",
+      "せいさん",
+      "しょうさい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他勇敢的行为在国内外受到称赞。",
+      "en": "His courageous act was praised at home and abroad."
+    },
+    "why": {
+      "zh": "「称賛（しょうさん）」：称赞。",
+      "en": "「称賛」 is しょうさん: praise."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「賛」读「さん」，不浊化。",
+        "en": "賛 is さん, not voiced."
+      },
+      {
+        "zh": "「称」读「しょう」，不是「せい」。",
+        "en": "称 is しょう, not せい."
+      },
+      {
+        "zh": "「賛」读「さん」，不是「さい」。",
+        "en": "賛 is さん, not さい."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-161",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "新たな感染症は人類にとって大きな<<脅威>>だ。",
+    "options": [
+      "きょうい",
+      "きょい",
+      "けいい",
+      "きょうじ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "新的传染病对人类是巨大的威胁。",
+      "en": "The new infectious disease is a great threat to humankind."
+    },
+    "why": {
+      "zh": "「脅威（きょうい）」：威胁。",
+      "en": "「脅威」 is きょうい: threat."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「脅」是长音「きょう」，不能缩短。",
+        "en": "脅 is long きょう, not short."
+      },
+      {
+        "zh": "「脅」读「きょう」，不是「けい」。",
+        "en": "脅 is きょう, not けい."
+      },
+      {
+        "zh": "「威」读「い」，不是「じ」。",
+        "en": "威 is い, not じ."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-162",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "無理な計画のせいで、会社の経営が<<破綻>>した。",
+    "options": [
+      "はたん",
+      "はじょう",
+      "はてん",
+      "はたい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "由于勉强的计划，公司经营破产了。",
+      "en": "Because of the overreaching plan, the company's management collapsed."
+    },
+    "why": {
+      "zh": "「破綻（はたん）」：破裂、破产。",
+      "en": "「破綻」 is はたん: collapse, failure."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「綻」读「たん」，不是「じょう」。",
+        "en": "綻 is たん, not じょう."
+      },
+      {
+        "zh": "「綻」读「たん」，不是「てん」。",
+        "en": "綻 is たん, not てん."
+      },
+      {
+        "zh": "「綻」不读「たい」。",
+        "en": "綻 is not read たい."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-163",
+    "type": "kanji",
+    "difficulty": 3,
+    "stem": "その行為は著作権法に<<抵触>>するおそれがある。",
+    "options": [
+      "ていしょく",
+      "ていそく",
+      "ていぞく",
+      "ていしょう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那种行为有可能违反著作权法。",
+      "en": "That act may conflict with copyright law."
+    },
+    "why": {
+      "zh": "「抵触（ていしょく）」：抵触、违反。",
+      "en": "「抵触」 is ていしょく: conflict, infringement."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「触」读「しょく」，不是「そく」。",
+        "en": "触 is しょく, not そく."
+      },
+      {
+        "zh": "「触」不读「ぞく」。",
+        "en": "触 is not read ぞく."
+      },
+      {
+        "zh": "「触」不读「しょう」。",
+        "en": "触 is not read しょう."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-164",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "労働者を<<搾取>>する企業は厳しく批判された。",
+    "options": [
+      "さくしゅ",
+      "さくじゅ",
+      "さくしゅう",
+      "ざくしゅ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "剥削劳动者的企业受到了严厉批评。",
+      "en": "Companies that exploit their workers were sharply criticized."
+    },
+    "why": {
+      "zh": "「搾取（さくしゅ）」：剥削。",
+      "en": "「搾取」 is さくしゅ: exploitation."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「取」读「しゅ」（如「取得」），不浊化。",
+        "en": "取 is しゅ (as in 「取得」), not voiced."
+      },
+      {
+        "zh": "「取」读「しゅ」，不是长音「しゅう」。",
+        "en": "取 is short しゅ, not しゅう."
+      },
+      {
+        "zh": "「搾」读「さく」，不浊化。",
+        "en": "搾 is さく, not voiced."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-165",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "長引く<<紛争>>で、多くの住民が避難を余儀なくされた。",
+    "options": [
+      "ふんそう",
+      "ふんそ",
+      "ぶんそう",
+      "ふんじょう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "由于长期的纷争，许多居民被迫避难。",
+      "en": "Because of the prolonged conflict, many residents were forced to evacuate."
+    },
+    "why": {
+      "zh": "「紛争（ふんそう）」：纷争、冲突。",
+      "en": "「紛争」 is ふんそう: conflict, dispute."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「争」是长音「そう」。",
+        "en": "争 is long そう."
+      },
+      {
+        "zh": "「紛」读「ふん」，不浊化。",
+        "en": "紛 is ふん, not voiced."
+      },
+      {
+        "zh": "「争」读「そう」，不是「じょう」。",
+        "en": "争 is そう, not じょう."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-166",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "一年間の研究成果をこの一冊に<<凝縮>>した。",
+    "options": [
+      "ぎょうしゅく",
+      "ぎゅうしゅく",
+      "こうしゅく",
+      "ぎょうじゅく"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "把一年的研究成果浓缩进了这一本书。",
+      "en": "I condensed a year of research results into this one volume."
+    },
+    "why": {
+      "zh": "「凝縮（ぎょうしゅく）」：凝缩、浓缩。",
+      "en": "「凝縮」 is ぎょうしゅく: condensation, concentration."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「凝」读「ぎょう」，不是「ぎゅう」。",
+        "en": "凝 is ぎょう, not ぎゅう."
+      },
+      {
+        "zh": "「凝」读「ぎょう」，不是「こう」。",
+        "en": "凝 is ぎょう, not こう."
+      },
+      {
+        "zh": "「縮」读「しゅく」，不浊化。",
+        "en": "縮 is しゅく, not voiced."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-167",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "彼は最新の技術を<<駆使>>して、新しい作品を作り上げた。",
+    "options": [
+      "くし",
+      "くしゅ",
+      "くじ",
+      "ぐし"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他运用最新技术完成了新作品。",
+      "en": "He made full use of the latest technology to create a new work."
+    },
+    "why": {
+      "zh": "「駆使（くし）」：驱使、运用。",
+      "en": "「駆使」 is くし: command, making full use."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「使」读「し」，不是「しゅ」。",
+        "en": "使 is し, not しゅ."
+      },
+      {
+        "zh": "「使」不浊化。",
+        "en": "使 is not voiced."
+      },
+      {
+        "zh": "「駆」读「く」，不浊化。",
+        "en": "駆 is く, not voiced."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-168",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "彼は私財を投じて<<慈善>>事業を続けている。",
+    "options": [
+      "じぜん",
+      "じせん",
+      "ちぜん",
+      "じぜい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他投入私人财产，持续进行慈善事业。",
+      "en": "He keeps up charity work with his own funds."
+    },
+    "why": {
+      "zh": "「慈善（じぜん）」：慈善。",
+      "en": "「慈善」 is じぜん: charity."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「善」读「ぜん」，是浊音。",
+        "en": "善 is voiced ぜん."
+      },
+      {
+        "zh": "「慈」读「じ」，不是「ち」。",
+        "en": "慈 is じ, not ち."
+      },
+      {
+        "zh": "「善」读「ぜん」，不是「ぜい」。",
+        "en": "善 is ぜん, not ぜい."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-169",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "不正を働いた社員は<<懲戒>>処分を受けた。",
+    "options": [
+      "ちょうかい",
+      "ちょうがい",
+      "ちょうけい",
+      "じょうかい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "做了不正当行为的员工受到了惩戒处分。",
+      "en": "The employee who acted improperly received disciplinary action."
+    },
+    "why": {
+      "zh": "「懲戒（ちょうかい）」：惩戒。",
+      "en": "「懲戒」 is ちょうかい: disciplinary action."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「戒」读「かい」，不浊化。",
+        "en": "戒 is かい, not voiced."
+      },
+      {
+        "zh": "「戒」读「かい」，不是「けい」。",
+        "en": "戒 is かい, not けい."
+      },
+      {
+        "zh": "「懲」读「ちょう」，不是「じょう」。",
+        "en": "懲 is ちょう, not じょう."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-170",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "彼は他人の争いを<<傍観>>するだけで、助けようとしなかった。",
+    "options": [
+      "ぼうかん",
+      "ほうかん",
+      "ぼうがん",
+      "ぼうけん"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他只是旁观别人的争吵，不想帮忙。",
+      "en": "He merely looked on at others' quarrel and did not try to help."
+    },
+    "why": {
+      "zh": "「傍観（ぼうかん）」：旁观。",
+      "en": "「傍観」 is ぼうかん: looking on, standing by."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「傍」读「ぼう」，是浊音。",
+        "en": "傍 is voiced ぼう."
+      },
+      {
+        "zh": "「観」读「かん」，不浊化。",
+        "en": "観 is かん, not voiced."
+      },
+      {
+        "zh": "「観」读「かん」，不是「けん」。",
+        "en": "観 is かん, not けん."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-171",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "政府は再生可能エネルギーの利用を<<奨励>>している。",
+    "options": [
+      "しょうれい",
+      "そうれい",
+      "しょうりょう",
+      "しょうれ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "政府在奖励使用可再生能源。",
+      "en": "The government encourages the use of renewable energy."
+    },
+    "why": {
+      "zh": "「奨励（しょうれい）」：奖励、鼓励。",
+      "en": "「奨励」 is しょうれい: encouragement, promotion."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「奨」读「しょう」，不是「そう」。",
+        "en": "奨 is しょう, not そう."
+      },
+      {
+        "zh": "「励」读「れい」，不是「りょう」。",
+        "en": "励 is れい, not りょう."
+      },
+      {
+        "zh": "「励」是长音「れい」。",
+        "en": "励 is long れい."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-172",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "詐欺の手口は年々<<巧妙>>になっている。",
+    "options": [
+      "こうみょう",
+      "こうめい",
+      "こうびょう",
+      "ごうみょう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "诈骗的手法一年比一年巧妙。",
+      "en": "Fraud methods are getting more sophisticated every year."
+    },
+    "why": {
+      "zh": "「巧妙（こうみょう）」：巧妙、精巧。",
+      "en": "「巧妙」 is こうみょう: clever, sophisticated."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「妙」读「みょう」，不是「めい」。",
+        "en": "妙 is みょう, not めい."
+      },
+      {
+        "zh": "「妙」读「みょう」，不是「びょう」。",
+        "en": "妙 is みょう, not びょう."
+      },
+      {
+        "zh": "「巧」读「こう」，不浊化。",
+        "en": "巧 is こう, not voiced."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-173",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "彼は不正を行う人間を極度に<<嫌悪>>している。",
+    "options": [
+      "けんお",
+      "けんあく",
+      "げんお",
+      "けいお"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他极度厌恶做不正当事的人。",
+      "en": "He has an intense loathing for people who act dishonestly."
+    },
+    "why": {
+      "zh": "「嫌悪（けんお）」：厌恶、憎恶。",
+      "en": "「嫌悪」 is けんお: aversion, loathing."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「けんあく」是「険悪」（气氛险恶），字形不同。",
+        "en": "けんあく is 「険悪」 (hostile, tense), a different word."
+      },
+      {
+        "zh": "「嫌」读「けん」，不浊化为「げん」。",
+        "en": "嫌 is けん, not げん."
+      },
+      {
+        "zh": "「嫌」读「けん」，不是「けい」。",
+        "en": "嫌 is けん, not けい."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-174",
+    "type": "kanji",
+    "difficulty": 3,
+    "stem": "若者が政治に無関心だとは、<<嘆かわしい>>ことだ。",
+    "options": [
+      "なげかわしい",
+      "なげきわしい",
+      "たんかわしい",
+      "なげわしい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "年轻人对政治漠不关心，真让人痛心。",
+      "en": "It is deplorable that young people are indifferent to politics."
+    },
+    "why": {
+      "zh": "「嘆かわしい（なげかわしい）」：令人叹息的、可悲的。",
+      "en": "「嘆かわしい」 is なげかわしい: deplorable, lamentable."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "动词「嘆く」的词干是「なげ」，不是「なげき」。",
+        "en": "The stem of 「嘆く」 is なげ, not なげき."
+      },
+      {
+        "zh": "这里用训读「なげ」，不读音读「たん」。",
+        "en": "The kun reading なげ is used here, not the on reading たん."
+      },
+      {
+        "zh": "漏掉了「か」，应读「なげかわしい」。",
+        "en": "The か is missing: なげかわしい."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-175",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "彼は若いころから茶道を<<嗜んで>>いる。",
+    "options": [
+      "たしなんで",
+      "たしなめて",
+      "たくらんで",
+      "たしかめて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他从年轻时起就喜好并修习茶道。",
+      "en": "He has dabbled in the tea ceremony since he was young."
+    },
+    "why": {
+      "zh": "「嗜む（たしなむ）」：爱好、修习（技艺）。",
+      "en": "「嗜む」 is たしなんで: to be fond of, practise as an accomplishment."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たしなめる」是「窘める」（婉言规劝）。",
+        "en": "たしなめる is 「窘める」, to gently scold."
+      },
+      {
+        "zh": "「たくらむ」是「企む」（策划坏事）。",
+        "en": "たくらむ is 「企む」, to scheme."
+      },
+      {
+        "zh": "「たしかめる」是「確かめる」（确认）。",
+        "en": "たしかめる is 「確かめる」, to confirm."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-176",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "ときには自分の行動を<<顧みる>>ことも大切だ。",
+    "options": [
+      "かえりみる",
+      "かえみる",
+      "こりみる",
+      "かんがみる"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "有时回顾、反省自己的行为也很重要。",
+      "en": "Sometimes it is important to reflect on your own conduct."
+    },
+    "why": {
+      "zh": "「顧みる（かえりみる）」：回顾、反省。",
+      "en": "「顧みる」 is かえりみる: to look back on, reflect on."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "送假名「りみる」不能省略成「みる」，读「かえりみる」。",
+        "en": "The okurigana make it かえりみる, not かえみる."
+      },
+      {
+        "zh": "「顧」是训读「かえり（みる）」，不读「こり」。",
+        "en": "顧 is read かえり(みる), not こり."
+      },
+      {
+        "zh": "「かんがみる」是「鑑みる」，是另一个词。",
+        "en": "「かんがみる」 is 「鑑みる」, a different word."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-177",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "この橋は、見た目より<<脆い>>構造になっている。",
+    "options": [
+      "もろい",
+      "あやうい",
+      "はかない",
+      "よわい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这座桥的结构比外表看起来更脆弱。",
+      "en": "This bridge has a more fragile structure than it looks."
+    },
+    "why": {
+      "zh": "「脆い（もろい）」：脆弱、易碎。",
+      "en": "「脆い」 is もろい: brittle, fragile."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「あやうい」是「危うい」（危险）。",
+        "en": "あやうい is 「危うい」, dangerous."
+      },
+      {
+        "zh": "「はかない」是「儚い」（虚幻）。",
+        "en": "はかない is 「儚い」, fleeting."
+      },
+      {
+        "zh": "「よわい」是「弱い」（弱）。",
+        "en": "よわい is 「弱い」, weak."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-178",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "事故が起きた場合は、<<速やか>>に報告してください。",
+    "options": [
+      "すみやか",
+      "すばやか",
+      "はやか",
+      "はやみやか"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "发生事故时请迅速报告。",
+      "en": "If an accident occurs, please report it promptly."
+    },
+    "why": {
+      "zh": "「速やか（すみやか）」：迅速。",
+      "en": "「速やか」 is すみやか: prompt, swift."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「すばやい」是「素早い」（敏捷）。",
+        "en": "すばやい is 「素早い」, quick."
+      },
+      {
+        "zh": "「速」的训读是「はや（い）」，但这个词读「すみやか」。",
+        "en": "速 is はや(い), but this word is すみやか."
+      },
+      {
+        "zh": "「はやみ」是「速み」，没有这个词。",
+        "en": "はやみやか is not a word."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-179",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "週末の商店街は買い物客で<<賑わう>>。",
+    "options": [
+      "にぎわう",
+      "にきわう",
+      "にぎあう",
+      "にぎやう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "周末的商店街挤满了购物的人，非常热闹。",
+      "en": "On weekends the shopping street bustles with shoppers."
+    },
+    "why": {
+      "zh": "「賑わう（にぎわう）」：热闹、繁华。",
+      "en": "「賑わう」 is にぎわう: to be lively, bustling."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ぎ」要浊化，读「にぎ」。",
+        "en": "The second syllable is voiced: にぎ."
+      },
+      {
+        "zh": "送假名「わう」读「わう」，不是「あう」。",
+        "en": "The okurigana read わう, not あう."
+      },
+      {
+        "zh": "送假名读「わう」，没有「やう」这种读法。",
+        "en": "The ending is わう; there is no 「やう」 reading."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-180",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "卒業生が集まり、亡き恩師を<<偲んで>>献杯した。",
+    "options": [
+      "しのんで",
+      "しのいで",
+      "とむらって",
+      "たたえて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "毕业生们聚在一起，缅怀已故的恩师并举杯致意。",
+      "en": "The graduates gathered and raised a glass in memory of their late teacher."
+    },
+    "why": {
+      "zh": "「偲ぶ（しのぶ）」：追思、缅怀。",
+      "en": "「偲ぶ」 is しのんで: to remember fondly, think back on."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しのぐ」是「凌ぐ」（超过、忍受）。",
+        "en": "しのぐ is 「凌ぐ」, to surpass or endure."
+      },
+      {
+        "zh": "「とむらう」是「弔う」（吊唁），意思相近但不是读法。",
+        "en": "とむらう is 「弔う」, to mourn: close in sense but not the reading."
+      },
+      {
+        "zh": "「たたえる」是「称える」（称赞）。",
+        "en": "たたえる is 「称える」, to praise."
+      }
+    ]
   }
 ]
