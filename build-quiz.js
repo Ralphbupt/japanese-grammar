@@ -653,10 +653,32 @@ async function bundleLevel(level, ruby, mock) {
   // Each passage's right answer per blank, for the read-aloud text.
   const blanks = {};
   for (const q of data.qs) if (q.type === "bunshou") (blanks[q.passage] = blanks[q.passage] || {})[q._blank] = q.options[q.answer];
+  // A question about a phrase quotes it (「X」とあるが / 「X」とは / 筆者が「X」と
+  // 述べるのは …); on the real test that phrase is underlined in the passage, so
+  // mark it with <<…>> (the source passage stays plain). Only the stem's first
+  // quote, at least 4 characters and found exactly once — a short or repeated
+  // one (「旬」, 「すみません」) is a term the passage keeps using, not a line to find.
+  // A 「X」とあるが quote that isn't in the passage verbatim is a build warning.
+  const quoted = {};
+  for (const q of data.qs) {
+    if (!q.passage || q._kind === "choukai") continue;
+    const st = String(q.q || q.stem || ""), m = st.match(/「([^」]+)」/);
+    if (m && m[1].length >= 4) (quoted[q.passage] = quoted[q.passage] || []).push([m[1], q.id, st.includes(m[0] + "とあるが")]);
+  }
+  const underline = (text, pid) => {
+    let t = String(text || "");
+    for (const [x, qid, must] of quoted[pid] || []) {
+      const i = t.indexOf(x);
+      if (i >= 0 && t.indexOf(x, i + 1) >= 0) continue;
+      if (i < 0) { if (text && must) console.warn(`  warning: ${qid}: 「${x}」 not found verbatim in passage ${pid}, so it can't be underlined`); continue; }
+      t = t.slice(0, i) + "<<" + x + ">>" + t.slice(i + x.length);
+    }
+    return t;
+  };
   for (const p of data.passages) {
     const pr = rubyMode(level);
     const au = passageAudio(p, blanks[p.id] || {});
-    passages[p.id] = { type: p.type, ...(p.intro ? { intro: await render(p.intro, pr) } : {}), html: await render(p.passage, pr), tr: p.tr, ...(p.kj ? { kj: await render(p.kj, true) } : {}), ...(au ? { au } : {}), ...wd([p.intro, p.kj || p.passage]) };
+    passages[p.id] = { type: p.type, ...(p.intro ? { intro: await render(p.intro, pr) } : {}), html: await render(underline(p.passage, p.id), pr), tr: p.tr, ...(p.kj ? { kj: await render(underline(p.kj, p.id), true) } : {}), ...(au ? { au } : {}), ...wd([p.intro, p.kj || p.passage]) };
   }
   // The example under a question's explanation: Japanese with furigana, the
   // translation (written in the lesson as a trailing （…）/(…)) apart.
