@@ -1,6 +1,14 @@
 # Lesson 50 – 附加对比 — 代わりに/ついでに/に比べて/によると/たびに/て初めて||Addition & Contrast — 代わりに/ついでに/に比べて/によると/たびに/て初めて — “Instead Of” in Japanese
 
 :::zh
+**一句话答案：**「代替……／不……而……」用代わりに：名词＋の代わりに（肉の代わりに豆腐を使う：用豆腐代替肉），动词原形＋代わりに（電話する代わりにメールを送った：没打电话，而是发了邮件）。放在句首说「その代わりに」，意思是「作为替代／作为交换」。
+:::
+
+:::en
+**Quick answer:** “Instead of” is 代わりに (kawari ni): noun + の代わりに — 肉の代わりに豆腐を使う “use tofu instead of meat”; plain verb + 代わりに — 電話する代わりにメールを送った “I sent an email instead of calling.” At the start of a sentence, その代わりに means “instead” or “in return.”
+:::
+
+:::zh
 这组语法涉及替代、附带动作、比较、信息来源、反复出现和首次体验。它们在日常对话和阅读中都频繁出现。
 :::
 

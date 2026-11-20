@@ -1,6 +1,14 @@
 # Lesson 41 – 程度・範囲② — だけ/しか〜ない/ばかりか/に限って/に限らず||Degree & Extent ② — だけ/しか〜ない/ばかりか/に限って/に限らず — “Only” in Japanese
 
 :::zh
+**一句话答案：**「只」用だけ或しか〜ない。だけ是中性的陈述（100円だけある：有100日元）；しか后面必须接否定，强调「只有这么点、不够」（100円しかない：只有100日元）。数量一样，しか带着嫌少的语气。
+:::
+
+:::en
+**Quick answer:** “Only” is だけ (dake) or しか〜ない (shika … nai). だけ is neutral: 100円だけある “I have just 100 yen.” しか always takes a negative verb and stresses “no more than that”: 100円しかない “I only have 100 yen.” Same amount, but しか sounds like it isn't enough.
+:::
+
+:::zh
 这一课学习表示"限定范围"和"超出范围"的语法。「だけ」「しか〜ない」限定范围，「ばかりか」「に限らず」表示范围比预想的更广。这些语法在N3阅读中经常以干扰项出现，需要准确区分。
 :::
 

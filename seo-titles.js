@@ -161,8 +161,8 @@ module.exports = {
     zh: "JLPT N4 语法清单 — 全部 N4 语法点一览（可打勾）",
   },
   lesson35: {
-    en: "において vs における (ni oite / ni okeru) Meaning & Difference | N3",
-    zh: "において和における的区别・に対して・について・によって | JLPT N3",
+    en: "において vs について vs における (ni oite / ni tsuite / ni okeru) Difference | N3",
+    zh: "において、について、における的区别・に対して・によって | JLPT N3",
   },
   lesson36: {
     en: "に関して, にとって, に基づいて, にわたって | JLPT N3 Grammar",
