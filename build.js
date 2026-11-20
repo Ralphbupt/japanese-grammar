@@ -2229,6 +2229,7 @@ async function main() {
       fs.existsSync(path.join(__dirname, "questions", level, "mock-1")) && { href: `${SITE_PATH}${lv}-mock-test/`, zh: "⏱ 模拟题", en: "⏱ Mock test" },
       ...SUBSET_PAGES.filter((p) => p.levels.includes(level)).map((p) => ({ href: `${SITE_PATH}${lv}-${p.id}/`, zh: p.id === "reading" ? "📖 阅读练习" : "🔤 词汇练习", en: p.id === "reading" ? "📖 Reading practice" : "🔤 Vocabulary practice" })),
       { href: `${SITE_PATH}${lv}-cards/`, zh: "🗂 语法卡片", en: "🗂 Grammar flashcards" },
+      fs.existsSync(path.join(__dirname, "questions", "grammar-audio", `${lv}.json`)) && { href: `${SITE_PATH}${lv}-grammar-audio/`, zh: "🎧 语法听读", en: "🎧 Grammar audio" },
     ].filter(Boolean);
   };
   const articlesHtml = [];
@@ -3266,7 +3267,7 @@ ${AI_SCRIPT}
   // ─── Generate individual lesson pages ───
   // Pages published once per language (PAGE_LANGS); links to them on a
   // non-root copy point at that language's copy.
-  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "practice", "listening", "reading", "vocabulary", "mock-test", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
+  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "practice", "listening", "reading", "vocabulary", "mock-test", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`, `${l}-grammar-audio`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
   // "Practice this point" at the end of every grammar point that has practice
   // questions (questions/N*/lessonNN.json refs), linking to the practice page.
   const quizRefCount = {};
@@ -4235,6 +4236,98 @@ ${AI_SCRIPT}
     if (files.size) console.log(`  Copied ${files.size} listening pictures.`);
   }
   const quizPageIds = [];
+  // Grammar audio pages (see "Grammar audio" in the level loop): the list is in the
+  // HTML (readable without JS, and by search engines); each line carries data-l,
+  // its index in the track's timing, which is the same order for both languages.
+  const GA_JS = fs.readFileSync(path.join(__dirname, "site", "grammar-audio.js"), "utf-8");
+  const GA_JS_HASH = require("crypto").createHash("md5").update(GA_JS).digest("hex").slice(0, 8);
+  const gaEsc = (s) => String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  const grammarAudioBody = (ga, code, page) => {
+    const zh = code === "zh", t = (a, b) => (zh ? a : b), tr = ga.tracks[code];
+    // Grouped by lesson, with a row of lesson chips on top (tap = jump there and play).
+    const lessonTitle = (id) => {
+      for (const lvl of ["N5", "N4", "N3", "N2", "N1"]) {
+        const dir = path.join(__dirname, "grammar", lvl), f = fs.existsSync(dir) && fs.readdirSync(dir).find((x) => x.startsWith(id + "_"));
+        if (!f) continue;
+        const h = fs.readFileSync(path.join(dir, f), "utf-8").split("\n")[0].replace(/^#\s*Lesson\s*\d+\s*[–-]\s*/, "").split("||");
+        return (zh ? h[0] : h[1] || h[0]).split(/\s+—\s+/)[0].trim();
+      }
+      return "";
+    };
+    // Per point: pattern (+ N2 exam years), connection, meaning, the examples read
+    // in the track (`read`, each with its translation as a line of its own), a
+    // confusables line, and the lesson's other examples folded (own lesson mp3s).
+    // Line order = the track's: g, m, then e, t per read example.
+    let l = 0, lastLesson = "", no = 0;
+    const toc = [];
+    const exHtml = (e, ja, tr) => `<div class="ga-ex"><p${ja}><span lang="ja">${e.ja}</span></p><p class="ga-tr"${tr}>${gaEsc(e[code])}</p></div>`;
+    const rows = ga.items.map((it) => {
+      const g = l++, m = l++;
+      let head = "";
+      if (it.lesson !== lastLesson) {
+        lastLesson = it.lesson;
+        const num = +it.lesson.replace(/\D/g, ""), title = lessonTitle(it.lesson);
+        toc.push(`<a href="#ga-${it.lesson}" data-go="${g}">${num}</a>`);
+        head = `<h2 class="ga-lh" id="ga-${it.lesson}" data-go="${g}">${t(`第 ${num} 课`, `Lesson ${num}`)}<small>${gaEsc(title)}</small><span class="ga-pl" data-go="${g}" data-lesson="1">▶ ${t("播放本课", "Play lesson")}</span></h2>`;
+      }
+      const more = it.ex.slice(it.read), vs = it.vs[code], exam = it.exam || [];
+      const examTag = exam.length ? `<span class="ga-exam" title="${gaEsc(exam.join(", "))}">${t(`真题考过 ${exam.length} 次`, `On the real test ${exam.length}×`)}</span>` : "";
+      return head + `<section class="ga-it"><p class="ga-hd"><span class="ga-no">${++no}</span><span class="ga-ln ga-g" data-l="${g}" lang="ja">${gaEsc(it.term.replace(/^〜/, ""))}</span>${examTag}<a class="ga-ls" href="${SITE_PATH}${it.lesson}/">${t("讲解", "Lesson")} →</a></p>` +
+        (it.form[code] && it.form[code].length ? `<p class="ga-form">${it.form[code].map((f) => `<code>${gaEsc(f)}</code>`).join("")}</p>` : "") +
+        `<p class="ga-ln ga-m" data-l="${m}">${gaEsc(it.mean[code])}</p>` +
+        it.ex.slice(0, it.read).map((e) => { const a = l++, b = l++; return exHtml(e, ` class="ga-ln" data-l="${a}"`, ` data-l="${b}" data-k="t"`).replace('class="ga-tr" data-l', 'class="ga-tr ga-ln" data-l'); }).join("") +
+        (vs ? `<p class="ga-vs"><span>${t("易混", "Don't confuse")}</span>${gaEsc(vs)}</p>` : "") +
+        (more.length ? `<details class="ga-more"><summary>${t(`更多例句（${more.length}）`, `More examples (${more.length})`)}</summary>` +
+          more.map((e) => exHtml(e, e.audio && fs.existsSync(path.join(__dirname, "audio", e.audio)) ? ` data-mp3="${AUDIO_BASE}/${e.audio}"` : "", "")).join("") + `</details>` : "") +
+        `</section>`;
+    });
+    if (l !== tr.lines.length) throw new Error(`grammar audio ${page}: ${l} lines on the page, ${tr.lines.length} in the ${code} track — rerun tools/grammar-audio.py`);
+    return `<style>
+#ga-ctl{padding:.2rem 0 .6rem;border-bottom:1px solid var(--border,#ddd);margin-bottom:.4rem}
+#ga-bar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--bg);border-top:1px solid var(--border,#ddd);box-shadow:0 -4px 16px rgba(0,0,0,.06);padding:.5rem max(1rem,calc((100vw - 760px) / 2)) calc(.5rem + env(safe-area-inset-bottom))}
+#ga{padding-bottom:5rem}.ga-it,.ga-lh{scroll-margin-top:4rem}
+.ga-row{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}.ga-row+.ga-row{margin-top:.45rem}
+#ga-play{width:2.6rem;height:2.2rem;border-radius:8px;border:0;background:var(--ui);color:var(--ui-on);font-size:1rem;cursor:pointer}
+#ga-play::before{content:"▶"}#ga-play.on::before{content:"❚❚"}
+#ga-seek{flex:1;min-width:8rem;accent-color:var(--ui)}#ga-time{font-size:.8rem;color:var(--text-muted);font-variant-numeric:tabular-nums}
+.ga-row button,.ga-row select{font:inherit;font-size:.82rem;padding:.25rem .6rem;border-radius:7px;border:1px solid var(--border,#ccc);background:var(--surface-2,transparent);color:inherit;cursor:pointer}
+.ga-row button[aria-pressed=true]{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}
+.ga-it{background:var(--surface-2,transparent);border:1px solid var(--border,#e5e5e5);border-radius:12px;padding:.8rem 1rem;margin:.6rem 0}
+.ga-hd{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap;margin:0}
+.ga-no{color:var(--text-muted);font-size:.8rem}
+.ga-ln{cursor:pointer;border-radius:6px;padding:.1rem .3rem;margin-left:-.3rem;margin-right:-.3rem}
+.ga-ln:hover{background:var(--ui-soft)}.ga-ln.ga-cur{background:var(--chip-bg,#fff3c4);box-shadow:inset 3px 0 0 var(--ui)}
+.ga-g{font-size:1.35rem;font-weight:700}.ga-ls{margin-left:auto;font-size:.8rem;white-space:nowrap}
+.ga-exam{font-size:.72rem;border-radius:10px;padding:.05rem .5rem;background:var(--accent);color:#fff;white-space:nowrap}
+.ga-form{display:flex;flex-wrap:wrap;gap:.35rem;margin:.35rem 0 .1rem}.ga-form code{font:inherit;font-size:.85rem;background:var(--chip-bg);border-radius:6px;padding:.05rem .5rem}
+.ga-m{margin:.4rem 0 .2rem}
+.ga-ex{margin:.55rem 0 0;padding-left:.6rem;border-left:3px solid var(--border,#ddd)}.ga-ex p{margin:0}
+.ga-ex span[lang]{font-size:1.08rem}#ga b.cl{color:var(--accent);font-weight:700}
+.ga-tr{font-size:.88rem;color:var(--text-muted)}
+.ga-vs{font-size:.86rem;background:var(--chip-bg);border-radius:8px;padding:.4rem .6rem;margin:.7rem 0 0}.ga-vs span{color:var(--text-muted);margin-right:.5rem}
+.ga-toc{display:flex;flex-wrap:wrap;gap:.3rem;margin:.45rem 0 0;font-size:.8rem;align-items:center}.ga-toc>span{color:var(--text-muted);margin-right:.2rem}
+.ga-toc a{padding:.05rem .45rem;border:1px solid var(--border,#ccc);border-radius:6px;text-decoration:none;color:var(--ui)}.ga-toc a.on{background:var(--ui);color:var(--ui-on)}
+.ga-lh{display:flex;align-items:baseline;gap:.6rem;font-size:1.1rem;margin:1.6rem 0 .3rem;scroll-margin-top:10rem}.ga-lh small{font-weight:400;color:var(--text-muted);font-size:.88rem}
+.ga-pl{margin-left:auto;font-size:.8rem;font-weight:400;color:var(--ui);cursor:pointer;border:1px solid var(--border,#ccc);border-radius:14px;padding:.05rem .7rem;white-space:nowrap}
+.ga-more{margin-top:.5rem}.ga-more summary{font-size:.82rem;color:var(--text-muted);cursor:pointer}
+.ga-more .ga-ex{border-color:transparent}.ga-more p[data-mp3]{cursor:pointer;border-radius:6px}.ga-more p[data-mp3]:hover{background:var(--ui-soft)}.ga-more p.ga-cur{background:var(--chip-bg,#fff3c4)}
+#ga.ga-notr .ga-tr[data-k]{opacity:.55}
+#ga.ga-hidden .ga-m,#ga.ga-hidden .ga-tr{filter:blur(5px)}#ga.ga-hidden .ga-m:hover,#ga.ga-hidden .ga-tr:hover{filter:none}
+.ga-note{color:var(--text-muted);font-size:.82rem;margin-top:1.2rem}
+</style>
+<div id="ga-ctl"><div class="ga-row"><button type="button" data-ga-mode="all" aria-pressed="true">${t("整体连播", "Play all")}</button><button type="button" data-ga-mode="one" aria-pressed="false">${t("一句一停", "One line")}</button><button type="button" data-ga-mode="loop" aria-pressed="false">${t("单句循环", "Loop line")}</button><button type="button" data-ga-mode="lesson" aria-pressed="false">${t("本课连播", "This lesson")}</button>
+<button type="button" id="ga-trs" aria-pressed="true">${t("念翻译", "Read translations")}</button><button type="button" id="ga-hide" aria-pressed="false">${t("遮住意思", "Hide meanings")}</button></div>
+<nav class="ga-toc" aria-label="${t("按课跳转", "Jump to a lesson")}"><span>${t("课：", "Lesson:")}</span>${toc.join("")}</nav></div>
+<div id="ga-bar"><div class="ga-row"><button type="button" id="ga-play" aria-label="${t("播放", "Play")}" data-play="${t("播放", "Play")}" data-pause="${t("暂停", "Pause")}"></button>
+<input id="ga-seek" type="range" min="0" max="1000" value="0" aria-label="${t("进度", "Position")}"><span id="ga-time">0:00 / ${Math.floor(tr.duration / 60)}:${String(Math.floor(tr.duration % 60)).padStart(2, "0")}</span>
+<select id="ga-rate" aria-label="${t("语速", "Speed")}"><option value="0.8">0.8×</option><option value="1" selected>1×</option><option value="1.2">1.2×</option><option value="1.5">1.5×</option></select></div></div>
+<audio id="ga-a" preload="none" src="${AUDIO_BASE}/${tr.src}"></audio>
+<div id="ga" data-page="${page}" data-dur="${tr.duration}">${rows.join("\n")}</div>
+<p class="ga-note">${t("点任意一行从那里开始听。空格键播放 / 暂停，← → 上一句 / 下一句。「念翻译」关掉后只听日语。朗读：Gemini TTS；「更多例句」是课程里的发音。", "Tap any line to start there. Space plays / pauses, ← → go to the previous / next line. Turn off “Read translations” to hear only the Japanese. Voices: Gemini TTS; “More examples” use the lessons’ audio.")}</p>
+<script type="application/json" id="ga-t">${JSON.stringify(tr.lines.map((x) => [x[1], x[2], x[0]]))}</script>
+<script src="${SITE_PATH}grammar-audio.js?v=${GA_JS_HASH}" defer></script>`;
+  };
+  fs.writeFileSync(path.join(__dirname, "dist", "grammar-audio.js"), GA_JS, "utf-8");
   fs.mkdirSync(path.join(__dirname, "dist", "quiz"), { recursive: true });
   fs.writeFileSync(path.join(__dirname, "dist", "quiz.js"), QUIZ_JS_SRC, "utf-8");
   fs.writeFileSync(path.join(__dirname, "dist", "sync.js"), SYNC_JS_SRC, "utf-8");
@@ -4659,6 +4752,7 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
     const lv = level.toLowerCase();
     const practiceId = `${lv}-practice`, mockId = `${lv}-mock-test`, cardsId = `${lv}-cards`, listeningId = `${lv}-listening`;
     const hasCk = ckLevels.includes(level);
+    const gaId = `${lv}-grammar-audio`, gaFile = path.join(__dirname, "questions", "grammar-audio", `${lv}.json`), hasGa = fs.existsSync(gaFile);
     // The pages link to each other (when the other one exists).
     const navLinks = (here, en) => [
       here !== practiceId && `<a href="${SITE_PATH}${practiceId}/">✍ ${en ? "Practice by question type" : "按题型练习"}</a>`,
@@ -4668,6 +4762,7 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
         : `<a href="${SITE_PATH}${lv}-vocabulary/">🔤 ${en ? `${level} vocabulary practice` : `${level} 词汇练习`}</a>`)),
       here !== mockId && mocks.length && `<a href="${SITE_PATH}${mockId}/">⏱ ${en ? `Timed ${level} mock test` : `${level} 模拟题（计时）`}</a>`,
       here !== cardsId && `<a href="${SITE_PATH}${cardsId}/">🗂 ${en ? "Grammar flashcards" : "语法卡片（在线背）"}</a>`,
+      here !== gaId && hasGa && `<a href="${SITE_PATH}${gaId}/">🎧 ${en ? `${level} grammar audio` : `${level} 语法听读`}</a>`,
     ].filter(Boolean).join(" ");
     // 生词本 dictionary (build-words.js) in its own file, fetched on the first
     // word tap; each page language's bundle carries its own copy's address.
@@ -4779,6 +4874,35 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
       writeLangPage(cardsId, lang, localizePage(renderQuiz(lang, withAbout(cardsMeta[lang.code], level, "cards", lang.code === "en", quizBundles[level], langVariant(cardsId, lang).url), langVariant(cardsId, lang), level, `data-mode="cards" data-src="${SITE_PATH}quiz/${lv}-cards.json"`), lang, localizedPageIds));
     }
     quizPageIds.push(cardsId);
+    // Grammar audio: every grammar point of the lessons read aloud — pattern,
+    // meaning (in the page's language), two examples — as one mp3 per language on
+    // the audio host. Text + timing: questions/grammar-audio/{lv}.json, written by
+    // tools/grammar-audio.py from the flashcard data; player: site/grammar-audio.js.
+    if (hasGa) {
+      const ga = JSON.parse(fs.readFileSync(gaFile, "utf-8")), n = ga.items.length;
+      const gaMeta = {
+        en: {
+          title: `JLPT ${level} Grammar Audio — All ${n} Patterns with Example Sentences, Free`,
+          desc: `Listen to every JLPT ${level} grammar point: the pattern, its meaning in English and two example sentences with translations, read aloud. Play it all like a podcast, or one sentence at a time.`,
+          h1: `JLPT ${level} Grammar Audio`, crumb: `${level} Grammar audio`,
+          lead: `All ${n} grammar points of the ${level} lessons, read aloud: pattern → meaning → example → translation, two examples each, with how it attaches and what it's confused with. Play it all on the way to work, or tap any line to hear just that one.`,
+          nav: navLinks(gaId, true),
+        },
+        zh: {
+          title: `JLPT ${level} 语法听读 - ${n} 个语法点带例句朗读，可整体播放`,
+          desc: `JLPT ${level} 全部 ${n} 个语法点的朗读：语法、中文意思、两个例句和翻译，像播客一样整体连播，也可以一句一句听、单句循环。免费，无需注册。`,
+          h1: `JLPT ${level} 语法听读`, crumb: `${level} 语法听读`,
+          lead: `${level} 课程里的全部 ${n} 个语法点，按「语法 → 意思 → 例句 → 翻译」朗读，每个语法点两个例句，附接续和易混语法。通勤时整体连播，或者点任意一句只听那一句。`,
+          nav: navLinks(gaId, false),
+        },
+      };
+      for (const lang of PAGE_LANGS) {
+        const body = grammarAudioBody(ga, lang.code === "zh" ? "zh" : "en", gaId);
+        writeLangPage(gaId, lang, localizePage(renderQuiz(lang, { ...gaMeta[lang.code], body }, langVariant(gaId, lang), level, null), lang, localizedPageIds));
+      }
+      quizPageIds.push(gaId);
+      console.log(`  Generated dist/${gaId}/ (${n} grammar points)`);
+    }
     if (!mocks.length) continue;
     // Mock tests: the test file, and its answer key loaded only after submitting.
     const sets = mocks.map(({ test, key }) => ({ id: test.id, n: test.n, src: writeQuizDataByLang(`${test.id}.json`, test), key: writeQuizDataByLang(`${test.id}.key.json`, key) }));

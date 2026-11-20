@@ -40,3 +40,5 @@ tools/ai-eval/results/
 # Private agent notes, kept in the jpnotes-ops repo (symlinks)
 /CLAUDE.md
 /AGENTS.md
+.cache/
+audio/grammar/

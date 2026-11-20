@@ -1,0 +1,1814 @@
+[
+ {
+  "key": "lesson01:〜です / 〜ではありません",
+  "form": {
+   "zh": [
+    "N ＋ です",
+    "なA ＋ です"
+   ],
+   "en": [
+    "N + です",
+    "na-adj + です"
+   ]
+  },
+  "mean": {
+   "zh": "说明某人或某物是什么，否定说法表示不是，这是礼貌的说法。",
+   "en": "Says what someone or something is, or with the negative, is not, in polite speech."
+  },
+  "vs": {
+   "zh": "だ：です的简体（学生だ）；いA＋です：い形容词直接加です，不能说おいしいだ",
+   "en": "だ: plain form of です (学生だ); i-adj + です: an i-adjective takes です directly, never おいしいだ"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson01:は",
+  "form": {
+   "zh": [
+    "N ＋ は"
+   ],
+   "en": [
+    "N + は"
+   ]
+  },
+  "mean": {
+   "zh": "提出话题，表示接下来要说的是关于它的事，也可以用来表示对比。",
+   "en": "Marks the topic, what the sentence is about, and can also set up a contrast."
+  },
+  "vs": {
+   "zh": "が：标新信息、疑问词主语、从句主语；は：标已知话题或对比",
+   "en": "が: new information, question-word subjects, subjects inside clauses; は: a known topic or a contrast"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson01:が",
+  "form": {
+   "zh": [
+    "N ＋ が"
+   ],
+   "en": [
+    "N + が"
+   ]
+  },
+  "mean": {
+   "zh": "标出动作或状态的主体，用于新出现的事物、疑问词做主语，以及喜欢、会、想要的对象。",
+   "en": "Marks the subject, especially new information or a question word, and the object of liking, ability and wanting."
+  },
+  "vs": {
+   "zh": "は：已知话题或对比；を：动作对象，但好き・わかる・できる的对象用が",
+   "en": "は: a known topic or contrast; を: object of an action, but 好き・わかる・できる take が"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson02:を",
+  "form": {
+   "zh": [
+    "N ＋ を"
+   ],
+   "en": [
+    "N + を"
+   ]
+  },
+  "mean": {
+   "zh": "标出动作的直接对象，和移动动词连用时表示经过或离开的地方。",
+   "en": "Marks the direct object of an action, and with movement verbs the place you pass through or leave."
+  },
+  "vs": {
+   "zh": "に：会う的对象用に（友達に会う）；で：动作场所（公園で遊ぶ），公園を走る是经过",
+   "en": "に: 会う takes に (友達に会う); で: where an action happens (公園で遊ぶ), while 公園を走る is a path"
+  },
+  "pick": [
+   1,
+   4
+  ],
+  "tr": {
+   "4": {
+    "zh": "大学毕业。",
+    "en": "Graduate from university."
+   }
+  }
+ },
+ {
+  "key": "lesson02:に",
+  "form": {
+   "zh": [
+    "N ＋ に"
+   ],
+   "en": [
+    "N + に"
+   ]
+  },
+  "mean": {
+   "zh": "指向一个点，表示时间点、目的地、存在的地方、动作的对象和变化的结果。",
+   "en": "Points to a spot: a time, a destination, where something exists, who an action is aimed at, or what something becomes."
+  },
+  "vs": {
+   "zh": "で：做事的场所（図書館で勉強する）；へ：强调方向，に强调到达点",
+   "en": "で: where an action is done (図書館で勉強する); へ: stresses direction, に stresses arrival"
+  },
+  "pick": [
+   1,
+   2
+  ],
+  "tr": {
+   "1": {
+    "zh": "7点起床。",
+    "en": "Wake up at 7."
+   },
+   "2": {
+    "zh": "去学校。",
+    "en": "Go to school."
+   }
+  }
+ },
+ {
+  "key": "lesson02:で",
+  "form": {
+   "zh": [
+    "N ＋ で"
+   ],
+   "en": [
+    "N + で"
+   ]
+  },
+  "mean": {
+   "zh": "表示动作发生的场所和使用的手段或工具，也可以表示原因和范围。",
+   "en": "Marks where an action happens or the means used, and also a cause or a range."
+  },
+  "vs": {
+   "zh": "に：存在或到达的点（図書館に本がある）；で：做事的场所（図書館で勉強する）",
+   "en": "に: a point of existence or arrival (図書館に本がある); で: where you do something (図書館で勉強する)"
+  },
+  "pick": [
+   0,
+   1
+  ],
+  "tr": {
+   "0": {
+    "zh": "在图书馆学习。",
+    "en": "Study at the library."
+   },
+   "1": {
+    "zh": "用筷子吃。",
+    "en": "Eat with chopsticks."
+   }
+  }
+ },
+ {
+  "key": "lesson02:の",
+  "form": {
+   "zh": [
+    "N ＋ の ＋ N"
+   ],
+   "en": [
+    "N + の + N"
+   ]
+  },
+  "mean": {
+   "zh": "连接两个名词，表示所属、类别或材料，也能代替前面说过的东西。",
+   "en": "Links two nouns to show possession, type or material, and can also stand for a thing already mentioned."
+  },
+  "vs": {
+   "zh": "いA直接修饰名词：大きい家（不说大きいの家）；なA加な：静かな部屋",
+   "en": "i-adj modifies a noun directly: 大きい家 (not 大きいの家); na-adj takes な: 静かな部屋"
+  },
+  "pick": [
+   0,
+   4
+  ],
+  "tr": {
+   "0": {
+    "zh": "我的书。",
+    "en": "my book."
+   },
+   "4": {
+    "zh": "想要红色的。",
+    "en": "I want the red one."
+   }
+  }
+ },
+ {
+  "key": "lesson02:も",
+  "form": {
+   "zh": [
+    "N ＋ も",
+    "疑问词 ＋ も ＋ 否定"
+   ],
+   "en": [
+    "N + も",
+    "question word + も + negative"
+   ]
+  },
+  "mean": {
+   "zh": "表示也；接在疑问词后再加否定表示全都不；接在数量后强调多。",
+   "en": "Means also; after a question word with a negative it means none at all, and after a number it stresses how much."
+  },
+  "vs": {
+   "zh": "は：提出话题（私は学生です）；でも：疑问词＋でも＝都可以（誰でもできる）",
+   "en": "は: sets the topic (私は学生です); でも: question word + でも = any at all (誰でもできる)"
+  },
+  "pick": [
+   0,
+   3
+  ],
+  "tr": {
+   "0": {
+    "zh": "我也是学生。",
+    "en": "I am also a student."
+   },
+   "3": {
+    "zh": "谁都没来。",
+    "en": "Nobody came."
+   }
+  }
+ },
+ {
+  "key": "lesson02:から・まで",
+  "form": {
+   "zh": [
+    "N ＋ から",
+    "N ＋ まで"
+   ],
+   "en": [
+    "N + から",
+    "N + まで"
+   ]
+  },
+  "mean": {
+   "zh": "分别表示时间或地点的起点和终点，合起来就是从哪里到哪里。",
+   "en": "Marks the starting point and the end point of a time or place; together they mean from one to the other."
+  },
+  "vs": {
+   "zh": "まで：持续到（5時まで待つ）；までに：在此之前完成（5時までに来る）",
+   "en": "まで: continuing until (5時まで待つ); までに: by, a deadline (5時までに来る)"
+  },
+  "pick": [
+   4,
+   1
+  ],
+  "tr": {
+   "1": {
+    "zh": "从东京来的。",
+    "en": "Came from Tokyo."
+   }
+  }
+ },
+ {
+  "key": "lesson02:へ",
+  "form": {
+   "zh": [
+    "N ＋ へ"
+   ],
+   "en": [
+    "N + へ"
+   ]
+  },
+  "mean": {
+   "zh": "表示移动的方向，和表示到达点的用法很接近，日常基本可以互换。",
+   "en": "Marks the direction of movement; in everyday speech it is close to, and usually interchangeable with, the destination particle."
+  },
+  "vs": {
+   "zh": "に：强调到达点（学校に行く）；へ：强调方向，名词修饰只能用への（日本への旅行）",
+   "en": "に: stresses arrival (学校に行く); へ: stresses direction, and only への can modify a noun (日本への旅行)"
+  },
+  "pick": [
+   0,
+   1
+  ],
+  "tr": {
+   "0": {
+    "zh": "去学校。",
+    "en": "Go toward school."
+   }
+  }
+ },
+ {
+  "key": "lesson02:と",
+  "form": {
+   "zh": [
+    "N ＋ と",
+    "普通形 ＋ と ＋ 言う／思う"
+   ],
+   "en": [
+    "N + と",
+    "plain form + と + 言う／思う"
+   ]
+  },
+  "mean": {
+   "zh": "表示和谁一起，或把名词全部列举出来，也用来引用说的话和想法。",
+   "en": "Means with, or and when listing every item, and also quotes what someone says or thinks."
+  },
+  "vs": {
+   "zh": "や：部分列举，还有别的（りんごやみかん）；と：全部列举，就这些",
+   "en": "や: partial list, there's more (りんごやみかん); と: complete list, that's all"
+  },
+  "pick": [
+   0,
+   4
+  ],
+  "tr": {
+   "0": {
+    "zh": "和朋友看了电影。",
+    "en": "Watched a movie with a friend."
+   },
+   "4": {
+    "zh": "我觉得明天下雨。",
+    "en": "I think it will rain tomorrow."
+   }
+  }
+ },
+ {
+  "key": "lesson02:语气助词",
+  "form": {
+   "zh": [],
+   "en": []
+  },
+  "mean": {
+   "zh": "放在句末表示说话人的态度，比如提醒对方、寻求共鸣，或者自言自语的感叹。",
+   "en": "Sentence endings that show your attitude, such as telling someone something new, seeking agreement, or musing to yourself."
+  },
+  "vs": {
+   "zh": "よ：告诉对方不知道的事；ね：寻求共鸣或确认；よね：告知加确认",
+   "en": "よ: telling the listener something they don't know; ね: seeking agreement or confirming; よね: both"
+  },
+  "pick": [
+   0,
+   1
+  ],
+  "tr": {
+   "0": {
+    "zh": "明天要下雨哦。",
+    "en": "It's going to rain tomorrow, you know."
+   },
+   "1": {
+    "zh": "天气真好呢。",
+    "en": "Nice weather, isn't it."
+   }
+  }
+ },
+ {
+  "key": "lesson02:敬体与简体的切换规则",
+  "form": {
+   "zh": [],
+   "en": []
+  },
+  "mean": {
+   "zh": "对上级、陌生人和正式场合用礼貌体，对朋友家人和文章叙述用简体，从句里一般用简体。",
+   "en": "Use polite forms with superiors, strangers and formal settings, plain forms with friends, family and in writing, and plain forms inside clauses."
+  },
+  "vs": {
+   "zh": "",
+   "en": ""
+  },
+  "pick": [
+   0,
+   2
+  ],
+  "tr": {
+   "0": {
+    "zh": "我觉得明天会下雨。",
+    "en": "I think it will rain tomorrow."
+   },
+   "2": {
+    "zh": "他可能不来。",
+    "en": "He might not come."
+   }
+  }
+ },
+ {
+  "key": "lesson03:ます形",
+  "form": {
+   "zh": [
+    "一类：う段 → い段 ＋ ます",
+    "二类：去る ＋ ます",
+    "する → します、来る → 来ます"
+   ],
+   "en": [
+    "Group 1: u-row → i-row + ます",
+    "Group 2: drop る + ます",
+    "する → します, 来る → 来ます"
+   ]
+  },
+  "mean": {
+   "zh": "动词的礼貌说法，表示习惯或将来要做的事，对长辈和陌生人使用。",
+   "en": "The polite form of a verb, for habits and future actions, used with strangers and people above you."
+  },
+  "vs": {
+   "zh": "辞書形：简体，用于朋友之间；ます形：敬体，意思相同只是更礼貌",
+   "en": "dictionary form: plain, among friends; ます form: polite, same meaning"
+  },
+  "pick": [
+   0,
+   8
+  ],
+  "tr": {
+   "0": {
+    "zh": "每天喝咖啡。",
+    "en": "I drink coffee every day."
+   },
+   "8": {
+    "zh": "明天去东京。",
+    "en": "I'm going to Tokyo tomorrow."
+   }
+  }
+ },
+ {
+  "key": "lesson04:て形的基本用法",
+  "form": {
+   "zh": [
+    "Vて形",
+    "いA：い → くて",
+    "なA／N ＋ で"
+   ],
+   "en": [
+    "V-te",
+    "i-adj: い → くて",
+    "na-adj／N + で"
+   ]
+  },
+  "mean": {
+   "zh": "把动作按顺序串起来，或并列描述性质，也可以表示轻微的原因和做事的方式。",
+   "en": "Links actions in order or lists qualities, and can also give a mild reason or the way something is done."
+  },
+  "vs": {
+   "zh": "てから：强调做完前一个再做后一个；から・ので：明确说明理由，主观理由不用て形",
+   "en": "てから: stresses finishing the first before the second; から・ので: state a reason outright, and a personal reason doesn't use the て form"
+  },
+  "pick": [
+   1,
+   5
+  ],
+  "tr": {
+   "1": {
+    "zh": "去了图书馆，借了书。",
+    "en": "I went to the library and borrowed a book."
+   },
+   "5": {
+    "zh": "这个蛋糕又甜又好吃。",
+    "en": "This cake is sweet and delicious."
+   }
+  }
+ },
+ {
+  "key": "lesson05:〜ている",
+  "form": {
+   "zh": [
+    "Vて形 ＋ いる"
+   ],
+   "en": [
+    "V-te + いる"
+   ]
+  },
+  "mean": {
+   "zh": "表示动作正在进行；用于瞬间动词时表示动作完成后的状态，也可以表示习惯。",
+   "en": "Shows an action in progress, or with instant-change verbs the resulting state, and also habits."
+  },
+  "vs": {
+   "zh": "た：做了，焦点在事件（結婚した）；ている：现在的状态（結婚している＝已婚）",
+   "en": "た: did it, focus on the event (結婚した); ている: the present state (結婚している = is married)"
+  },
+  "pick": [
+   1,
+   6
+  ],
+  "tr": {
+   "6": {
+    "zh": "田中已经结婚了。",
+    "en": "Tanaka is married."
+   }
+  }
+ },
+ {
+  "key": "lesson05:〜てください / 〜ないでください",
+  "form": {
+   "zh": [
+    "Vて形 ＋ ください",
+    "Vない形 ＋ でください"
+   ],
+   "en": [
+    "V-te + ください",
+    "V-nai + でください"
+   ]
+  },
+  "mean": {
+   "zh": "礼貌地请对方做某事；否定说法是请对方不要做。",
+   "en": "Politely asks someone to do something, or with the negative, not to do it."
+  },
+  "vs": {
+   "zh": "ましょうか：提议自己来做（窓を開けましょうか）；てはいけない：规则上的禁止",
+   "en": "ましょうか: offering to do it yourself (窓を開けましょうか); てはいけない: a rule forbidding it"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson05:〜てもいい",
+  "form": {
+   "zh": [
+    "Vて形 ＋ もいい"
+   ],
+   "en": [
+    "V-te + もいい"
+   ]
+  },
+  "mean": {
+   "zh": "表示可以做某事，用来给出许可，或者询问能不能做。",
+   "en": "Gives permission, or asks whether it is all right to do something."
+  },
+  "vs": {
+   "zh": "てはいけない：不可以，禁止；なくてもいい：不做也可以",
+   "en": "てはいけない: must not; なくてもいい: don't have to"
+  },
+  "pick": [
+   2,
+   4
+  ]
+ },
+ {
+  "key": "lesson05:〜てはいけない",
+  "form": {
+   "zh": [
+    "Vて形 ＋ はいけない"
+   ],
+   "en": [
+    "V-te + はいけない"
+   ]
+  },
+  "mean": {
+   "zh": "表示不可以做某事，多用于规则、规定或长辈对孩子的禁止。",
+   "en": "Says something is not allowed, often for rules or a parent telling a child."
+  },
+  "vs": {
+   "zh": "ないでください：请求对方不要做；なくてもいい：不必做",
+   "en": "ないでください: asking someone not to; なくてもいい: no need to"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson05:〜てから",
+  "form": {
+   "zh": [
+    "Vて形 ＋ から"
+   ],
+   "en": [
+    "V-te + から"
+   ]
+  },
+  "mean": {
+   "zh": "先做完一件事，再做下一件，强调先后顺序。",
+   "en": "Do one thing first and then the next, stressing the order."
+  },
+  "vs": {
+   "zh": "て：只是叙述先后；後で：时间上的之后（食べた後で）",
+   "en": "て: just tells the sequence; 後で: simply later in time (食べた後で)"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson06:〜なければならない / 〜なければいけない",
+  "form": {
+   "zh": [
+    "Vない形（去い）＋ ければならない／いけない"
+   ],
+   "en": [
+    "V-nai (drop い) + ければならない／いけない"
+   ]
+  },
+  "mean": {
+   "zh": "表示必须做某事，字面意思是不做的话就不行。",
+   "en": "Means you must do something; literally, not doing it won't do."
+  },
+  "vs": {
+   "zh": "なくてもいい：不必做；なきゃ：口语缩略形",
+   "en": "なくてもいい: don't have to; なきゃ: the casual contraction"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson06:〜なくてもいい",
+  "form": {
+   "zh": [
+    "Vない形（去い）＋ くてもいい"
+   ],
+   "en": [
+    "V-nai (drop い) + くてもいい"
+   ]
+  },
+  "mean": {
+   "zh": "表示不做也可以，没有必要做某事。",
+   "en": "Means you don't have to do something; it is fine not to."
+  },
+  "vs": {
+   "zh": "なければならない：必须做；てはいけない：不可以做",
+   "en": "なければならない: must do; てはいけない: must not do"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson07:た形",
+  "form": {
+   "zh": [
+    "Vて形：て → た、で → だ"
+   ],
+   "en": [
+    "V-te: て → た, で → だ"
+   ]
+  },
+  "mean": {
+   "zh": "动词的简体过去式，表示做了某事，变形规则和连接形完全相同。",
+   "en": "The plain past form of a verb, meaning did; it is formed exactly like the te form."
+  },
+  "vs": {
+   "zh": "ました：敬体过去（見ました）；た：简体过去（見た）",
+   "en": "ました: polite past (見ました); た: plain past (見た)"
+  },
+  "pick": [
+   0,
+   2
+  ],
+  "ex": [
+   {
+    "ja": "朝ごはんを食べ**た**。",
+    "zh": "吃了早饭。",
+    "en": "I ate breakfast."
+   },
+   {
+    "ja": "昨日、友達に会っ**た**。",
+    "zh": "昨天见了朋友。",
+    "en": "I met a friend yesterday."
+   },
+   {
+    "ja": "母が作っ**た**料理はおいしかった。",
+    "zh": "妈妈做的菜很好吃。",
+    "en": "The food my mother made was delicious."
+   }
+  ]
+ },
+ {
+  "key": "lesson07:〜たことがある",
+  "form": {
+   "zh": [
+    "Vた形 ＋ ことがある"
+   ],
+   "en": [
+    "V-ta + ことがある"
+   ]
+  },
+  "mean": {
+   "zh": "表示曾经做过某事，是人生中的经历；否定说法表示从来没做过。",
+   "en": "Says you have done something before, as a life experience; the negative means you never have."
+  },
+  "vs": {
+   "zh": "V辞書形＋ことがある：有时会（遅れることがある）；た：只是过去做了",
+   "en": "V-dict + ことがある: sometimes happens (遅れることがある); た: simply did"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson07:〜たり〜たりする",
+  "form": {
+   "zh": [
+    "Vた形 ＋ り、Vた形 ＋ り ＋ する"
+   ],
+   "en": [
+    "V-ta + り, V-ta + り + する"
+   ]
+  },
+  "mean": {
+   "zh": "从几个动作中举出一两个例子，意思是做做这个做做那个，也可以表示交替出现。",
+   "en": "Gives a couple of examples from several actions, like doing this and that, or things that alternate."
+  },
+  "vs": {
+   "zh": "て：按顺序列出全部动作；や：部分列举名词",
+   "en": "て: lists all the actions in order; や: partial list of nouns"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson07:〜たばかり",
+  "form": {
+   "zh": [
+    "Vた形 ＋ ばかり"
+   ],
+   "en": [
+    "V-ta + ばかり"
+   ]
+  },
+  "mean": {
+   "zh": "表示刚刚做完不久，说话人觉得时间上还很近。",
+   "en": "Says something has only just happened, at least in the speaker's mind."
+  },
+  "vs": {
+   "zh": "たところ：真正刚才那一刻完成；たばかり：主观觉得刚发生，可以隔一段时间",
+   "en": "たところ: finished this very moment; たばかり: feels recent to the speaker, even if some time has passed"
+  },
+  "pick": [
+   2,
+   6
+  ]
+ },
+ {
+  "key": "lesson08:い形容词 完整活用表",
+  "form": {
+   "zh": [
+    "否定：い → くない",
+    "过去：い → かった",
+    "て形：い → くて"
+   ],
+   "en": [
+    "negative: い → くない",
+    "past: い → かった",
+    "te: い → くて"
+   ]
+  },
+  "mean": {
+   "zh": "去掉最后一个假名再加后缀，就变成否定、过去和连接的形式；表示好的那个词是例外。",
+   "en": "Drop the final sound and add endings for negative, past and linking forms; the word for good is irregular."
+  },
+  "vs": {
+   "zh": "なA：用だ活用（静かじゃない）；いい：变形用よ（よくない・よかった）",
+   "en": "na-adj: conjugates with だ (静かじゃない); いい: changes to よ (よくない・よかった)"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson08:な形容词 完整活用表",
+  "form": {
+   "zh": [
+    "なA ＋ だ／じゃない／だった",
+    "なA ＋ な ＋ N",
+    "なA ＋ に ＋ V"
+   ],
+   "en": [
+    "na-adj + だ／じゃない／だった",
+    "na-adj + な + N",
+    "na-adj + に + V"
+   ]
+  },
+  "mean": {
+   "zh": "变形方式和名词判断句一样，修饰名词时要加连接音，修饰动词时变成副词形式。",
+   "en": "Conjugates like a noun with the copula, takes a linking sound before a noun, and becomes an adverb before a verb."
+  },
+  "vs": {
+   "zh": "きれい・嫌い：以い结尾却是なA（きれいじゃない）；いA：去い加くない",
+   "en": "きれい・嫌い: end in い but are na-adjectives (きれいじゃない); i-adj: drop い, add くない"
+  },
+  "pick": [
+   0,
+   5
+  ]
+ },
+ {
+  "key": "lesson09:〜と",
+  "form": {
+   "zh": [
+    "V辞書形／Vない形 ＋ と",
+    "いA ＋ と",
+    "なA／N ＋ だと"
+   ],
+   "en": [
+    "V-dict／V-nai + と",
+    "i-adj + と",
+    "na-adj／N + だと"
+   ]
+  },
+  "mean": {
+   "zh": "一出现前面的情况，后面的结果就必然发生，后句不能是请求或意志。",
+   "en": "Whenever the first thing happens, the second follows naturally; the result can't be a request or your own intention."
+  },
+  "vs": {
+   "zh": "たら：后句可接请求和意志（雨が降ったら傘を持っていって）；ば：一般条件",
+   "en": "たら: can be followed by requests and intentions (雨が降ったら傘を持っていって); ば: general condition"
+  },
+  "pick": [
+   0,
+   9
+  ]
+ },
+ {
+  "key": "lesson09:〜ば",
+  "form": {
+   "zh": [
+    "V：う段 → え段 ＋ ば",
+    "いA：い → ければ",
+    "なA／N ＋ なら"
+   ],
+   "en": [
+    "V: u-row → e-row + ば",
+    "i-adj: い → ければ",
+    "na-adj／N + なら"
+   ]
+  },
+  "mean": {
+   "zh": "表示如果满足前面的条件，后面就成立，适合说一般道理和假设。",
+   "en": "If the first condition is met, the second holds; good for general truths and hypotheses."
+  },
+  "vs": {
+   "zh": "たら：最万能，后句可接意志请求；と：自然必然的结果；なら：接过对方话题给建议",
+   "en": "たら: most flexible, takes intentions and requests; と: a natural, inevitable result; なら: picks up a topic to give advice"
+  },
+  "pick": [
+   3,
+   2
+  ]
+ },
+ {
+  "key": "lesson09:〜たら",
+  "form": {
+   "zh": [
+    "Vた形 ＋ ら",
+    "いA：かった ＋ ら",
+    "なA／N ＋ だったら"
+   ],
+   "en": [
+    "V-ta + ら",
+    "i-adj: かった + ら",
+    "na-adj／N + だったら"
+   ]
+  },
+  "mean": {
+   "zh": "表示前面的事完成以后，或者万一发生的话，后面会怎样，后句可以接请求和意志。",
+   "en": "After or if the first thing happens, then the second; it can be followed by requests and intentions."
+  },
+  "vs": {
+   "zh": "と：自然必然，后句不能接请求；ば：一般条件；なら：接对方话题",
+   "en": "と: natural result, no requests after it; ば: general condition; なら: picks up the other person's topic"
+  },
+  "pick": [
+   0,
+   5
+  ]
+ },
+ {
+  "key": "lesson10:〜たら",
+  "form": {
+   "zh": [
+    "Vた形 ＋ ら",
+    "いA：かった ＋ ら",
+    "なA／N ＋ だったら"
+   ],
+   "en": [
+    "V-ta + ら",
+    "i-adj: かった + ら",
+    "na-adj／N + だったら"
+   ]
+  },
+  "mean": {
+   "zh": "最万能的条件说法，表示做完之后、万一的话，或者过去做了之后才发现。",
+   "en": "The most all-purpose conditional: once something is done, if it happens, or in the past, what you found when you did it."
+  },
+  "vs": {
+   "zh": "なら：接过对方话题给建议，后句可以先发生；と：自然必然，后句不能接请求",
+   "en": "なら: picks up a topic to advise, and the second part can happen first; と: natural result, no requests after it"
+  },
+  "pick": [
+   3,
+   5
+  ]
+ },
+ {
+  "key": "lesson10:〜なら",
+  "form": {
+   "zh": [
+    "N／なA ＋ なら",
+    "V／いA普通形 ＋ なら"
+   ],
+   "en": [
+    "N／na-adj + なら",
+    "V／i-adj plain form + なら"
+   ]
+  },
+  "mean": {
+   "zh": "接过对方提到的话题，表示如果是这样的话，然后给出建议或判断。",
+   "en": "Picks up what the other person mentioned, meaning if that's the case, then gives advice or a judgment."
+  },
+  "vs": {
+   "zh": "たら：前面完成后再做后面；なら：后面可以先发生（東京に行くなら、お土産を買ってきて）",
+   "en": "たら: the second follows once the first is done; なら: the second can come first (東京に行くなら、お土産を買ってきて)"
+  },
+  "pick": [
+   2,
+   3
+  ]
+ },
+ {
+  "key": "lesson11:可能形",
+  "form": {
+   "zh": [
+    "一类：う段 → え段 ＋ る",
+    "二类：去る ＋ られる",
+    "する → できる、来る → 来られる"
+   ],
+   "en": [
+    "Group 1: u-row → e-row + る",
+    "Group 2: drop る + られる",
+    "する → できる, 来る → 来られる"
+   ]
+  },
+  "mean": {
+   "zh": "表示有能力做某事，或者在条件上可以做到。",
+   "en": "Says you are able to do something, or that circumstances make it possible."
+  },
+  "vs": {
+   "zh": "見える・聞こえる：自然看到听到；見られる・聞ける：有条件主动去看去听；ことができる：更正式",
+   "en": "見える・聞こえる: comes to you naturally; 見られる・聞ける: you can choose to see or hear it; ことができる: more formal"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson11:受身形",
+  "form": {
+   "zh": [
+    "一类：う段 → あ段 ＋ れる",
+    "二类：去る ＋ られる",
+    "する → される、来る → 来られる"
+   ],
+   "en": [
+    "Group 1: u-row → a-row + れる",
+    "Group 2: drop る + られる",
+    "する → される, 来る → 来られる"
+   ]
+  },
+  "mean": {
+   "zh": "表示主语承受了别人的动作，也常用来表达因为别人的行为而感到困扰。",
+   "en": "Shows the subject receiving someone else's action, and often that the subject was troubled by it."
+  },
+  "vs": {
+   "zh": "可能形：二类动词形式相同（食べられる），靠语境区分；迷惑の受身：雨に降られた（被雨淋了）",
+   "en": "potential form: same shape for Group 2 verbs (食べられる), tell them apart by context; suffering passive: 雨に降られた (got rained on)"
+  },
+  "pick": [
+   0,
+   12
+  ],
+  "tr": {
+   "12": {
+    "zh": "钱包被偷了。",
+    "en": "My wallet was stolen."
+   }
+  }
+ },
+ {
+  "key": "lesson12:意向形",
+  "form": {
+   "zh": [
+    "一类：う段 → お段 ＋ う",
+    "二类：去る ＋ よう",
+    "する → しよう、来る → 来よう"
+   ],
+   "en": [
+    "Group 1: u-row → o-row + う",
+    "Group 2: drop る + よう",
+    "する → しよう, 来る → 来よう"
+   ]
+  },
+  "mean": {
+   "zh": "简体说法，表示自己决定要做某事，或者邀请别人一起做。",
+   "en": "The plain way to say you've decided to do something, or to invite someone to do it with you."
+  },
+  "vs": {
+   "zh": "ましょう：意向形的敬体；ようと思う：表示打算",
+   "en": "ましょう: the polite version; ようと思う: I'm thinking of doing"
+  },
+  "pick": [
+   1,
+   6
+  ]
+ },
+ {
+  "key": "lesson12:〜つもりだ",
+  "form": {
+   "zh": [
+    "V辞書形 ＋ つもりだ",
+    "Vない形 ＋ つもりだ"
+   ],
+   "en": [
+    "V-dict + つもりだ",
+    "V-nai + つもりだ"
+   ]
+  },
+  "mean": {
+   "zh": "表示自己已经打算好要做或不做某事，比一时的想法更确定。",
+   "en": "Says you have made up your mind to do, or not to do, something."
+  },
+  "vs": {
+   "zh": "ようと思う：刚有的想法，不如つもり确定；予定だ：客观安排好的日程",
+   "en": "ようと思う: a fresh idea, less firm; 予定だ: an objective schedule"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson12:〜予定だ",
+  "form": {
+   "zh": [
+    "V辞書形 ＋ 予定だ",
+    "N ＋ の予定だ"
+   ],
+   "en": [
+    "V-dict + 予定だ",
+    "N + の予定だ"
+   ]
+  },
+  "mean": {
+   "zh": "表示按计划或日程已经安排好的事，比个人打算更客观，多用于工作场合。",
+   "en": "Says something is scheduled or arranged, more objective than a personal plan, and common at work."
+  },
+  "vs": {
+   "zh": "つもりだ：个人的打算；予定だ：客观的日程安排",
+   "en": "つもりだ: a personal intention; 予定だ: an objective schedule"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson12:〜ましょう / 〜ましょうか",
+  "form": {
+   "zh": [
+    "Vます形 ＋ ましょう",
+    "Vます形 ＋ ましょうか"
+   ],
+   "en": [
+    "V-masu stem + ましょう",
+    "V-masu stem + ましょうか"
+   ]
+  },
+  "mean": {
+   "zh": "礼貌地号召对方一起做某事；变成疑问时，是主动提出帮对方做。",
+   "en": "Politely suggests doing something together; as a question, offers to do something for the other person."
+  },
+  "vs": {
+   "zh": "ませんか：委婉邀请，给对方选择；てください：请对方做",
+   "en": "ませんか: a softer invitation that leaves the choice open; てください: asking the other person to do it"
+  },
+  "pick": [
+   0,
+   6
+  ]
+ },
+ {
+  "key": "lesson12:〜たい / 〜たがる / 〜ほしい",
+  "form": {
+   "zh": [
+    "Vます形 ＋ たい",
+    "Vます形 ＋ たがる",
+    "N ＋ がほしい"
+   ],
+   "en": [
+    "V-masu stem + たい",
+    "V-masu stem + たがる",
+    "N + がほしい"
+   ]
+  },
+  "mean": {
+   "zh": "表达自己想做某事或想要某物；描述别人想做什么时，要用第三人称的说法。",
+   "en": "Says you want to do something or want something; a separate form describes what someone else wants to do."
+  },
+  "vs": {
+   "zh": "たい：想做某个动作（飲みたい）；ほしい：想得到某个东西（コーヒーがほしい）；たがる：别人想做",
+   "en": "たい: want to do (飲みたい); ほしい: want a thing (コーヒーがほしい); たがる: someone else wants to"
+  },
+  "pick": [
+   0,
+   10
+  ]
+ },
+ {
+  "key": "lesson13:〜でしょう / 〜だろう",
+  "form": {
+   "zh": [
+    "V／いA普通形 ＋ でしょう",
+    "なA／N ＋ でしょう"
+   ],
+   "en": [
+    "V／i-adj plain form + でしょう",
+    "na-adj／N + でしょう"
+   ]
+  },
+  "mean": {
+   "zh": "表示说话人有一定把握的推测，意思是大概是这样吧；简体说法用于随意的场合。",
+   "en": "A fairly confident guess meaning probably; the plain version is used in casual speech."
+  },
+  "vs": {
+   "zh": "かもしれない：也许，把握更低；でしょう？（升调）：确认，对吧",
+   "en": "かもしれない: maybe, less certain; でしょう? (rising): checking, right?"
+  },
+  "pick": [
+   1,
+   2
+  ]
+ },
+ {
+  "key": "lesson13:〜かもしれない",
+  "form": {
+   "zh": [
+    "V／いA普通形 ＋ かもしれない",
+    "なA／N ＋ かもしれない"
+   ],
+   "en": [
+    "V／i-adj plain form + かもしれない",
+    "na-adj／N + かもしれない"
+   ]
+  },
+  "mean": {
+   "zh": "表示也许或说不定，说话人觉得有这种可能，但并不确定。",
+   "en": "Means maybe or might; the speaker thinks it's possible but isn't sure."
+  },
+  "vs": {
+   "zh": "でしょう：大概，把握较大；かもしれない：也许，把握较小",
+   "en": "でしょう: probably, fairly sure; かもしれない: maybe, less sure"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson13:〜そうだ",
+  "form": {
+   "zh": [
+    "Vます形 ＋ そうだ",
+    "いA（去い）＋ そうだ",
+    "なA ＋ そうだ"
+   ],
+   "en": [
+    "V-masu stem + そうだ",
+    "i-adj (drop い) + そうだ",
+    "na-adj + そうだ"
+   ]
+  },
+  "mean": {
+   "zh": "根据眼前看到的样子做判断，意思是看起来好像，或者马上就要发生。",
+   "en": "A judgment from how something looks right now: it looks like, or it is about to happen."
+  },
+  "vs": {
+   "zh": "传闻そうだ：接普通形，听说（降るそうだ）；ようだ：综合迹象推断",
+   "en": "hearsay そうだ: after the plain form, I heard (降るそうだ); ようだ: inference from evidence"
+  },
+  "pick": [
+   0,
+   1
+  ],
+  "tr": {
+   "0": {
+    "zh": "看起来要下雨了。",
+    "en": "It looks like it's going to rain."
+   }
+  }
+ },
+ {
+  "key": "lesson13:〜そうだ",
+  "form": {
+   "zh": [
+    "普通形 ＋ そうだ",
+    "N ＋ だそうだ"
+   ],
+   "en": [
+    "plain form + そうだ",
+    "N + だそうだ"
+   ]
+  },
+  "mean": {
+   "zh": "表示听说，转述从别人或新闻那里得到的信息。",
+   "en": "Means I heard that, passing on information from someone else or the news."
+  },
+  "vs": {
+   "zh": "样态そうだ：接ます形或去い，看起来（降りそうだ）；らしい：好像，来源模糊",
+   "en": "looks-like そうだ: after the masu stem or i-adj minus い (降りそうだ); らしい: apparently, source vague"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson14:〜ようだ / 〜ように",
+  "form": {
+   "zh": [
+    "普通形 ＋ ようだ",
+    "なA ＋ な ＋ ようだ",
+    "N ＋ の ＋ ようだ"
+   ],
+   "en": [
+    "plain form + ようだ",
+    "na-adj + な + ようだ",
+    "N + の + ようだ"
+   ]
+  },
+  "mean": {
+   "zh": "根据观察到的间接证据或自己的感觉做推断，意思是好像。",
+   "en": "An inference from indirect evidence or your own impression, meaning it seems."
+  },
+  "vs": {
+   "zh": "そうだ：根据外观直接判断；みたいだ：口语版；らしい：多凭听来的信息",
+   "en": "そうだ: judged straight from appearance; みたいだ: the casual version; らしい: mostly from what you've heard"
+  },
+  "pick": [
+   1,
+   5
+  ]
+ },
+ {
+  "key": "lesson14:〜みたいだ",
+  "form": {
+   "zh": [
+    "普通形 ＋ みたいだ",
+    "なA／N ＋ みたいだ"
+   ],
+   "en": [
+    "plain form + みたいだ",
+    "na-adj／N + みたいだ"
+   ]
+  },
+  "mean": {
+   "zh": "口语里表示好像，是推断的随意说法，也能表示像什么一样的比喻。",
+   "en": "A casual way to say it seems, and also to say something is like something else."
+  },
+  "vs": {
+   "zh": "ようだ：书面版，名词加の、なA加な；みたいだ：直接接名词和なA",
+   "en": "ようだ: the formal version, N + の, na-adj + な; みたいだ: attaches directly to N and na-adj"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson14:〜らしい",
+  "form": {
+   "zh": [
+    "普通形 ＋ らしい",
+    "なA／N ＋ らしい"
+   ],
+   "en": [
+    "plain form + らしい",
+    "na-adj／N + らしい"
+   ]
+  },
+  "mean": {
+   "zh": "根据听到的信息或迹象推断，意思是好像、听说；接名词时也可以表示很有那种样子。",
+   "en": "Means apparently, based on what you've heard or seen; after a noun it can also mean typical of it."
+  },
+  "vs": {
+   "zh": "そうだ（传闻）：来源明确；ようだ：自己观察判断；っぽい：给人那种感觉",
+   "en": "そうだ (hearsay): a clear source; ようだ: your own observation; っぽい: just gives that feel"
+  },
+  "pick": [
+   0,
+   8
+  ]
+ },
+ {
+  "key": "lesson14:〜っぽい",
+  "form": {
+   "zh": [
+    "N ＋ っぽい",
+    "Vます形 ＋ っぽい",
+    "いA（去い）＋ っぽい"
+   ],
+   "en": [
+    "N + っぽい",
+    "V-masu stem + っぽい",
+    "i-adj (drop い) + っぽい"
+   ]
+  },
+  "mean": {
+   "zh": "口语说法，表示给人某种感觉，有点像；接动词时表示容易那样。",
+   "en": "Casual; means something gives off that feel, and after a verb, that someone tends to do it easily."
+  },
+  "vs": {
+   "zh": "らしい：确实具备该特质（男らしい，褒义）；っぽい：给人感觉像（女っぽい男，多贬义）",
+   "en": "らしい: truly has the quality (男らしい, praise); っぽい: just seems like it (女っぽい男, often negative)"
+  },
+  "pick": [
+   6,
+   3
+  ]
+ },
+ {
+  "key": "lesson15:〜ことができる",
+  "form": {
+   "zh": [
+    "V辞書形 ＋ ことができる"
+   ],
+   "en": [
+    "V-dict + ことができる"
+   ]
+  },
+  "mean": {
+   "zh": "表示能够做某事，和可能形意思一样，但更正式，多用于书面和规定说明。",
+   "en": "Means can do something, like the potential form but more formal, common in writing and rules."
+  },
+  "vs": {
+   "zh": "可能形：口语日常（話せる）；ことができる：书面正式（話すことができる）",
+   "en": "potential form: everyday speech (話せる); ことができる: formal writing (話すことができる)"
+  },
+  "pick": [
+   0,
+   4
+  ]
+ },
+ {
+  "key": "lesson15:〜ことがある / 〜ことはない",
+  "form": {
+   "zh": [
+    "V辞書形 ＋ ことがある",
+    "V辞書形 ＋ ことはない"
+   ],
+   "en": [
+    "V-dict + ことがある",
+    "V-dict + ことはない"
+   ]
+  },
+  "mean": {
+   "zh": "表示有时会发生某事；否定说法则表示没有必要那样做。",
+   "en": "Means something sometimes happens; the negative version means there's no need to do it."
+  },
+  "vs": {
+   "zh": "Vた形＋ことがある：曾经做过（行ったことがある）；V辞書形＋ことがある：有时会",
+   "en": "V-ta + ことがある: have done before (行ったことがある); V-dict + ことがある: sometimes"
+  },
+  "pick": [
+   1,
+   0
+  ]
+ },
+ {
+  "key": "lesson15:〜のだ / 〜んだ",
+  "form": {
+   "zh": [
+    "普通形 ＋ のだ／んだ",
+    "なA／N ＋ な ＋ のだ"
+   ],
+   "en": [
+    "plain form + のだ／んだ",
+    "na-adj／N + な + のだ"
+   ]
+  },
+  "mean": {
+   "zh": "用来解释原因或背景，也表示恍然发现，或者追问对方原因。",
+   "en": "Explains a reason or background, shows a sudden realization, or asks what's behind something."
+  },
+  "vs": {
+   "zh": "です：单纯陈述；んです：带解释或追问的语气",
+   "en": "です: a plain statement; んです: explaining or asking for the story behind it"
+  },
+  "pick": [
+   0,
+   9
+  ],
+  "tr": {
+   "0": {
+    "zh": "今天早点回去。明天有考试。",
+    "en": "I'm leaving early today. I have an exam tomorrow."
+   },
+   "9": {
+    "zh": "怎么了？",
+    "en": "What's the matter?"
+   }
+  }
+ },
+ {
+  "key": "lesson15:〜のに",
+  "form": {
+   "zh": [
+    "普通形 ＋ のに",
+    "なA／N ＋ な ＋ のに"
+   ],
+   "en": [
+    "plain form + のに",
+    "na-adj／N + な + のに"
+   ]
+  },
+  "mean": {
+   "zh": "意思是明明怎样却怎样，带有不满、遗憾或意外的语气。",
+   "en": "Means even though, with a tone of frustration, regret or surprise that things turned out otherwise."
+  },
+  "vs": {
+   "zh": "けど・が：单纯转折，后面可以接请求；のに：带不满，后面不能接请求",
+   "en": "けど・が: a plain but, can be followed by a request; のに: frustrated, no request after it"
+  },
+  "pick": [
+   0,
+   1
+  ],
+  "tr": {
+   "0": {
+    "zh": "明明约好了，却没来。",
+    "en": "Even though we made a promise, they didn't come."
+   },
+   "1": {
+    "zh": "明明学了很多，却没考过。",
+    "en": "Even though I studied so much, I failed the exam."
+   }
+  }
+ },
+ {
+  "key": "lesson15:〜ので / 〜から",
+  "form": {
+   "zh": [
+    "普通形／丁寧形 ＋ から",
+    "普通形 ＋ ので",
+    "なA／N ＋ なので"
+   ],
+   "en": [
+    "plain／polite form + から",
+    "plain form + ので",
+    "na-adj／N + なので"
+   ]
+  },
+  "mean": {
+   "zh": "都表示原因。前者语气主观直接，后者更客观礼貌，请求或道歉时更得体。",
+   "en": "Both give a reason. The first sounds personal and direct; the second is softer and better for requests and apologies."
+  },
+  "vs": {
+   "zh": "から：主观理由，可接命令和意志；ので：客观理由，更礼貌；て形：轻描淡写的原因",
+   "en": "から: a personal reason, can lead to orders and intentions; ので: objective and polite; て form: a mild cause"
+  },
+  "pick": [
+   0,
+   6
+  ]
+ },
+ {
+  "key": "lesson15:〜し",
+  "form": {
+   "zh": [
+    "普通形 ＋ し"
+   ],
+   "en": [
+    "plain form + し"
+   ]
+  },
+  "mean": {
+   "zh": "列举几个理由或特点，意思是又这样又那样；只说一个时，暗示还有别的理由。",
+   "en": "Lists several reasons or features, and with just one it hints there are other reasons too."
+  },
+  "vs": {
+   "zh": "から：给出一个明确原因；し：列举多个理由",
+   "en": "から: one clear reason; し: lists several reasons"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson15:〜前に / 〜後で",
+  "form": {
+   "zh": [
+    "V辞書形 ＋ 前に",
+    "Vた形 ＋ 後で",
+    "N ＋ の ＋ 前に／後で"
+   ],
+   "en": [
+    "V-dict + 前に",
+    "V-ta + 後で",
+    "N + の + 前に／後で"
+   ]
+  },
+  "mean": {
+   "zh": "表示在某件事之前或之后做另一件事，之前用辞书形，之后用过去形。",
+   "en": "Says one thing happens before or after another; use the dictionary form for before and the ta form for after."
+  },
+  "vs": {
+   "zh": "てから：强调先做完前一个才做后一个；前に接辞書形，後で接た形",
+   "en": "てから: stresses finishing the first before the second; 前に takes the dictionary form, 後で the た form"
+  },
+  "pick": [
+   0,
+   4
+  ]
+ },
+ {
+  "key": "lesson15:〜ために",
+  "form": {
+   "zh": [
+    "V辞書形 ＋ ために",
+    "N ＋ の ＋ ために"
+   ],
+   "en": [
+    "V-dict + ために",
+    "N + の + ために"
+   ]
+  },
+  "mean": {
+   "zh": "表示为了达到某个目的，前面要接自己能控制的动作。",
+   "en": "Means in order to; the verb before it must be something you can control."
+  },
+  "vs": {
+   "zh": "ように：前面是能力、状态，或前后主语不同（できるように）；ために：意志动作",
+   "en": "ように: for abilities, states, or a different subject (できるように); ために: deliberate actions"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson15:〜とき",
+  "form": {
+   "zh": [
+    "普通形 ＋ とき",
+    "なA ＋ な ＋ とき",
+    "N ＋ の ＋ とき"
+   ],
+   "en": [
+    "plain form + とき",
+    "na-adj + な + とき",
+    "N + の + とき"
+   ]
+  },
+  "mean": {
+   "zh": "表示某事发生的时候；前面用辞书形是动作之前，用过去形是动作之后。",
+   "en": "Means when something happens; the dictionary form before it means before the action, the ta form means after."
+  },
+  "vs": {
+   "zh": "行くとき：去之前，还没到；行ったとき：到了之后",
+   "en": "行くとき: before going, not there yet; 行ったとき: after arriving"
+  },
+  "pick": [
+   0,
+   3
+  ]
+ },
+ {
+  "key": "lesson16:〜すぎる",
+  "form": {
+   "zh": [
+    "Vます形 ＋ すぎる",
+    "いA（去い）＋ すぎる",
+    "なA ＋ すぎる"
+   ],
+   "en": [
+    "V-masu stem + すぎる",
+    "i-adj (drop い) + すぎる",
+    "na-adj + すぎる"
+   ]
+  },
+  "mean": {
+   "zh": "表示程度过了头，通常带有负面评价。",
+   "en": "Means too much or overly, usually with a negative judgment."
+  },
+  "vs": {
+   "zh": "とても：只是很，没有过度的意思；すぎる：太过，超出合适程度",
+   "en": "とても: just very, not excessive; すぎる: too, beyond what's right"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson16:〜やすい / 〜にくい",
+  "form": {
+   "zh": [
+    "Vます形 ＋ やすい／にくい"
+   ],
+   "en": [
+    "V-masu stem + やすい／にくい"
+   ]
+  },
+  "mean": {
+   "zh": "表示做某事很容易或很难，常说东西的性质，也可以说人的倾向。",
+   "en": "Means easy or hard to do, usually about a thing's nature, sometimes a person's tendency."
+  },
+  "vs": {
+   "zh": "がたい：心理上难以做到（N2，信じがたい）；にくい：做起来困难",
+   "en": "がたい: hard to bring yourself to (N2, 信じがたい); にくい: physically hard to do"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson16:〜ながら",
+  "form": {
+   "zh": [
+    "Vます形 ＋ ながら"
+   ],
+   "en": [
+    "V-masu stem + ながら"
+   ]
+  },
+  "mean": {
+   "zh": "表示一边做一件事一边做另一件事，后面的动作是主要的，主语必须相同。",
+   "en": "Means doing one thing while doing another; the second action is the main one and the subject must be the same."
+  },
+  "vs": {
+   "zh": "て：先后顺序（食べて寝る）；ながら：同一个人同时做两件事",
+   "en": "て: one after the other (食べて寝る); ながら: one person doing two things at once"
+  },
+  "pick": [
+   2,
+   4
+  ]
+ },
+ {
+  "key": "lesson16:〜方",
+  "form": {
+   "zh": [
+    "Vます形 ＋ 方"
+   ],
+   "en": [
+    "V-masu stem + 方"
+   ]
+  },
+  "mean": {
+   "zh": "表示做某事的方法，变成名词后可以接各种助词。",
+   "en": "Turns a verb into a noun meaning the way or method of doing it."
+  },
+  "vs": {
+   "zh": "方法：一般的方法、手段；方：某个动作的具体做法（読み方）；する动词用仕方",
+   "en": "方法: a method in general; 方: the way of doing one action (読み方); する verbs use 仕方"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson17:〜がある / 〜がいる",
+  "form": {
+   "zh": [
+    "N ＋ に ＋ N ＋ が ＋ ある／いる"
+   ],
+   "en": [
+    "N + に + N + が + ある／いる"
+   ]
+  },
+  "mean": {
+   "zh": "表示某个地方有某物或某人，无生命的东西和有生命的人或动物用不同的动词。",
+   "en": "Says something or someone is in a place; one verb is for things, the other for people and animals."
+  },
+  "vs": {
+   "zh": "ある：无生命，植物也用ある；いる：人和动物；NはNにある：说已知的东西在哪里",
+   "en": "ある: things, plants too; いる: people and animals; NはNにある: where a known thing is"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson17:〜に行く / 〜に来る / 〜に帰る",
+  "form": {
+   "zh": [
+    "Vます形 ＋ に ＋ 行く／来る／帰る"
+   ],
+   "en": [
+    "V-masu stem + に + 行く／来る／帰る"
+   ]
+  },
+  "mean": {
+   "zh": "表示为了做某事而去、来或回去，前面是移动的目的。",
+   "en": "Means going, coming or returning in order to do something."
+  },
+  "vs": {
+   "zh": "ために行く：较正式，强调目的；N＋に行く：買い物に行く",
+   "en": "ために行く: more formal, stresses purpose; N + に行く: 買い物に行く"
+  },
+  "pick": [
+   0,
+   5
+  ]
+ },
+ {
+  "key": "lesson17:〜のが好き / 上手 / 下手 / 得意 / 苦手",
+  "form": {
+   "zh": [
+    "V辞書形 ＋ のが ＋ 好き／上手／下手／得意／苦手"
+   ],
+   "en": [
+    "V-dict + のが + 好き／上手／下手／得意／苦手"
+   ]
+  },
+  "mean": {
+   "zh": "把动作变成名词，表示喜欢、擅长或不擅长做某事。",
+   "en": "Turns an action into a noun to say you like, are good at, or are bad at doing it."
+  },
+  "vs": {
+   "zh": "上手：评价别人做得好；得意：说自己擅长；苦手：委婉地说不擅长",
+   "en": "上手: praising someone else's skill; 得意: what you yourself are good at; 苦手: a softer not good at"
+  },
+  "pick": [
+   0,
+   4
+  ]
+ },
+ {
+  "key": "lesson17:〜くらい / 〜ぐらい",
+  "form": {
+   "zh": [
+    "数量／N ＋ くらい／ぐらい"
+   ],
+   "en": [
+    "number／N + くらい／ぐらい"
+   ]
+  },
+  "mean": {
+   "zh": "表示大约多少，也可以表示某种程度。",
+   "en": "Means about or around an amount, and can also show a degree."
+  },
+  "vs": {
+   "zh": "ごろ：时间点左右（3時ごろ）；くらい：时长或数量大约（3時間ぐらい）",
+   "en": "ごろ: around a point in time (3時ごろ); くらい: about a length or amount (3時間ぐらい)"
+  },
+  "pick": [
+   0,
+   3
+  ]
+ },
+ {
+  "key": "lesson17:〜や〜",
+  "form": {
+   "zh": [
+    "N ＋ や ＋ N ＋（など）"
+   ],
+   "en": [
+    "N + や + N + (など)"
+   ]
+  },
+  "mean": {
+   "zh": "举出几个例子，暗示还有别的，意思是什么什么之类的。",
+   "en": "Lists a few examples and implies there are others, like saying and so on."
+  },
+  "vs": {
+   "zh": "と：全部列举，只有这些；や：部分列举，还有别的",
+   "en": "と: complete list, only these; や: partial list, there are more"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson17:〜だけ",
+  "form": {
+   "zh": [
+    "N ＋ だけ",
+    "V／いA普通形 ＋ だけ",
+    "なA ＋ な ＋ だけ"
+   ],
+   "en": [
+    "N + だけ",
+    "V／i-adj plain form + だけ",
+    "na-adj + な + だけ"
+   ]
+  },
+  "mean": {
+   "zh": "表示只有、仅仅，限定范围，除此之外没有别的。",
+   "en": "Means only or just, limiting it to that and nothing else."
+  },
+  "vs": {
+   "zh": "しか：后接否定，带不够的语气（水しか飲まなかった）；ばかり：尽是，光做",
+   "en": "しか: needs a negative, feels like not enough (水しか飲まなかった); ばかり: nothing but"
+  },
+  "pick": [
+   0,
+   3
+  ]
+ }
+]
