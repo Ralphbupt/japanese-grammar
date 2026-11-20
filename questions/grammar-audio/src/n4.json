@@ -1,0 +1,1618 @@
+[
+ {
+  "key": "lesson18:使役形",
+  "form": {
+   "zh": [
+    "五段：Vない形 ＋ せる（書かせる）",
+    "一段：V（去る）＋ させる（食べさせる）",
+    "する → させる，来る → 来させる"
+   ],
+   "en": [
+    "Group 1: V-nai + せる (書かせる)",
+    "Group 2: drop る + させる (食べさせる)",
+    "する → させる, 来る → 来させる"
+   ]
+  },
+  "mean": {
+   "zh": "让别人做某事，可以是强迫对方做，也可以是允许对方做。",
+   "en": "Making or letting someone do something; it can mean forcing them or allowing them."
+  },
+  "vs": {
+   "zh": "てもらう：请别人帮我做（求助）；させられる：自己被迫做（使役被动）",
+   "en": "てもらう: have someone do it for me (asking a favor); させられる: be made to do it (causative-passive)"
+  },
+  "pick": [
+   0,
+   3
+  ],
+  "tr": {
+   "0": {
+    "zh": "部长让下属加班了。",
+    "en": "The manager made the subordinate work overtime."
+   },
+   "3": {
+    "zh": "让孩子自由玩耍。",
+    "en": "I let the children play freely."
+   }
+  }
+ },
+ {
+  "key": "lesson18:使役形",
+  "form": {
+   "zh": [
+    "使役て形 ＋ あげる／もらう／くれる"
+   ],
+   "en": [
+    "causative te-form + あげる / もらう / くれる"
+   ]
+  },
+  "mean": {
+   "zh": "让别人做某事是给对方的恩惠，或者感谢别人允许自己做某事。",
+   "en": "Letting someone do something as a favor to them, or being grateful that someone let you do something."
+  },
+  "vs": {
+   "zh": "させてもらう：我得到允许（我是主语）；させてくれる：对方允许我（对方是主语）",
+   "en": "させてもらう: I get permission (I am the subject); させてくれる: they let me (they are the subject)"
+  },
+  "pick": [
+   3,
+   5
+  ],
+  "tr": {
+   "3": {
+    "zh": "父母让我去留学了，我很感激。",
+    "en": "My parents let me study abroad, and I'm grateful."
+   },
+   "5": {
+    "zh": "朋友让我开了他的车。",
+    "en": "My friend let me drive their car."
+   }
+  }
+ },
+ {
+  "key": "lesson19:使役受身形",
+  "form": {
+   "zh": [
+    "五段：Vない形 ＋ せられる／される",
+    "一段：V（去る）＋ させられる",
+    "する → させられる"
+   ],
+   "en": [
+    "Group 1: V-nai + せられる / される",
+    "Group 2: drop る + させられる",
+    "する → させられる"
+   ]
+  },
+  "mean": {
+   "zh": "被别人逼着做自己不想做的事，带有不满或无奈。",
+   "en": "Being made to do something you didn't want to do, often with a sense of complaint."
+  },
+  "vs": {
+   "zh": "させる：让别人做（使役）；られる：被别人做了某事（被动）",
+   "en": "させる: make someone do it (causative); られる: have something done to you (passive)"
+  },
+  "pick": [
+   1,
+   6
+  ]
+ },
+ {
+  "key": "lesson20:物的授受",
+  "form": {
+   "zh": [
+    "人に ＋ Nを ＋ あげる／くれる",
+    "人に／から ＋ Nを ＋ もらう"
+   ],
+   "en": [
+    "person に + N を + あげる / くれる",
+    "person に / から + N を + もらう"
+   ]
+  },
+  "mean": {
+   "zh": "表示给予和接受东西，用哪个动词取决于东西从谁流向谁。",
+   "en": "Giving and receiving things; which verb you use depends on who gives to whom."
+  },
+  "vs": {
+   "zh": "あげる：我或别人给别人；くれる：别人给我或我方；もらう：从别人那里得到",
+   "en": "あげる: I or someone gives to another; くれる: someone gives to me or my side; もらう: receive from someone"
+  },
+  "pick": [
+   0,
+   2
+  ],
+  "tr": {
+   "2": {
+    "zh": "田中给了山田花。",
+    "en": "Tanaka gave Yamada flowers."
+   }
+  }
+ },
+ {
+  "key": "lesson20:动作的授受",
+  "form": {
+   "zh": [
+    "Vて形 ＋ あげる／もらう／くれる"
+   ],
+   "en": [
+    "V-te + あげる / もらう / くれる"
+   ]
+  },
+  "mean": {
+   "zh": "为别人做事，请别人为自己做事，或者别人为自己做事，常带感谢。",
+   "en": "Doing something for someone, having someone do something for you, or someone doing something for you, often with thanks."
+  },
+  "vs": {
+   "zh": "てもらう：我请对方做（我是主语，对方用に）；てくれる：对方为我做（对方是主语）",
+   "en": "てもらう: I have them do it (I am the subject, they take に); てくれる: they do it for me (they are the subject)"
+  },
+  "pick": [
+   6,
+   9
+  ],
+  "tr": {
+   "9": {
+    "zh": "朋友教了我日语。",
+    "en": "My friend taught me Japanese."
+   }
+  }
+ },
+ {
+  "key": "lesson21:〜ようにする",
+  "form": {
+   "zh": [
+    "V辞書形 ＋ ようにする",
+    "Vない形 ＋ ようにする"
+   ],
+   "en": [
+    "V-dict + ようにする",
+    "V-nai + ようにする"
+   ]
+  },
+  "mean": {
+   "zh": "努力做到某事，或者注意不做某事，常用来说自己在养成的习惯。",
+   "en": "Making an effort to do, or to avoid doing, something; often a habit you are building."
+  },
+  "vs": {
+   "zh": "ようになる：自然变成的结果（变得能……）；ことにする：做出一次决定",
+   "en": "ようになる: a change that comes about (come to be able to); ことにする: make a decision"
+  },
+  "pick": [
+   0,
+   4
+  ],
+  "tr": {
+   "0": {
+    "zh": "注意每天吃蔬菜。",
+    "en": "I make a point of eating vegetables every day."
+   }
+  }
+ },
+ {
+  "key": "lesson21:〜ようになる",
+  "form": {
+   "zh": [
+    "V辞書形 ＋ ようになる",
+    "可能形 ＋ ようになる",
+    "Vない形 ＋ ようになる"
+   ],
+   "en": [
+    "V-dict + ようになる",
+    "potential form + ようになる",
+    "V-nai + ようになる"
+   ]
+  },
+  "mean": {
+   "zh": "表示能力或习惯发生了变化，以前不会或不做，现在会了或开始做了。",
+   "en": "Shows a change over time: you've come to be able to do something, or started doing it."
+  },
+  "vs": {
+   "zh": "ようにする：主动努力去做；なくなる：变得不再……（比ないようになる更常用）",
+   "en": "ようにする: make an effort to do; なくなる: stop doing (more common than ないようになる)"
+  },
+  "pick": [
+   0,
+   3
+  ],
+  "tr": {
+   "0": {
+    "zh": "变得会说日语了。",
+    "en": "I've come to be able to speak Japanese."
+   }
+  }
+ },
+ {
+  "key": "lesson21:〜ように",
+  "form": {
+   "zh": [
+    "V辞書形 ＋ ように",
+    "Vない形 ＋ ように",
+    "可能形 ＋ ように"
+   ],
+   "en": [
+    "V-dict + ように",
+    "V-nai + ように",
+    "potential form + ように"
+   ]
+  },
+  "mean": {
+   "zh": "为了达到某种状态而做某事，前面多是可能形、否定或不受意志控制的动作。",
+   "en": "So that some state comes about; used with potential forms, negatives or verbs you can't control."
+  },
+  "vs": {
+   "zh": "ために：前接意志动词，前后主语相同；ように：前接可能形、ない形或无意志动词",
+   "en": "ために: after volitional verbs, same subject in both halves; ように: after potential, ない or non-volitional verbs"
+  },
+  "pick": [
+   1,
+   4
+  ]
+ },
+ {
+  "key": "lesson21:〜ように言う / 〜ように頼む",
+  "form": {
+   "zh": [
+    "V辞書形 ＋ ように言う／頼む",
+    "Vない形 ＋ ように言う／頼む"
+   ],
+   "en": [
+    "V-dict + ように言う / 頼む",
+    "V-nai + ように言う / 頼む"
+   ]
+  },
+  "mean": {
+   "zh": "间接转述别人的要求或命令，表示叫某人做或不要做某事。",
+   "en": "Reports a request or order indirectly: telling or asking someone to do, or not do, something."
+  },
+  "vs": {
+   "zh": "てくださいと言う：直接引用原话；ように言う：间接转述要求",
+   "en": "てくださいと言う: quotes the words directly; ように言う: reports the request indirectly"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson22:〜ことにする",
+  "form": {
+   "zh": [
+    "V辞書形 ＋ ことにする",
+    "Vない形 ＋ ことにする"
+   ],
+   "en": [
+    "V-dict + ことにする",
+    "V-nai + ことにする"
+   ]
+  },
+  "mean": {
+   "zh": "说话人自己决定做或者不做某事。",
+   "en": "You yourself decide to do, or not to do, something."
+  },
+  "vs": {
+   "zh": "ことになる：不是自己定的，由别人或情况决定；ことにしている：自己定下的习惯",
+   "en": "ことになる: decided by others or by circumstances, not by you; ことにしている: a rule you've set for yourself"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson22:〜ことになる",
+  "form": {
+   "zh": [
+    "V辞書形 ＋ ことになる",
+    "Vない形 ＋ ことになる"
+   ],
+   "en": [
+    "V-dict + ことになる",
+    "V-nai + ことになる"
+   ]
+  },
+  "mean": {
+   "zh": "事情被决定了，或者结果变成这样，决定权不在自己。",
+   "en": "Something has been decided, or turned out this way, not by your own choice."
+  },
+  "vs": {
+   "zh": "ことにする：自己做的决定；ことになっている：规定、惯例",
+   "en": "ことにする: your own decision; ことになっている: a rule or custom"
+  },
+  "pick": [
+   0,
+   3
+  ],
+  "tr": {
+   "0": {
+    "zh": "从下个月起要调去大阪了。",
+    "en": "It's been decided I'll transfer to Osaka from next month."
+   }
+  }
+ },
+ {
+  "key": "lesson22:〜はずだ",
+  "form": {
+   "zh": [
+    "普通形 ＋ はずだ",
+    "なAな ＋ はずだ",
+    "Nの ＋ はずだ"
+   ],
+   "en": [
+    "plain form + はずだ",
+    "na-adj + な + はずだ",
+    "N + の + はずだ"
+   ]
+  },
+  "mean": {
+   "zh": "根据某个理由或依据，说话人有把握地推断应该是这样。",
+   "en": "A confident conclusion drawn from some reason or evidence: it should be so."
+  },
+  "vs": {
+   "zh": "だろう：一般的推测，没有明确依据；はずがない：不可能",
+   "en": "だろう: a general guess without clear grounds; はずがない: it can't be"
+  },
+  "pick": [
+   1,
+   3
+  ]
+ },
+ {
+  "key": "lesson23:〜ばかり",
+  "form": {
+   "zh": [
+    "N ＋ ばかり",
+    "Vて形 ＋ ばかりいる",
+    "Vた形 ＋ ばかり（刚刚）"
+   ],
+   "en": [
+    "N + ばかり",
+    "V-te + ばかりいる",
+    "V-ta + ばかり (just did)"
+   ]
+  },
+  "mean": {
+   "zh": "光是、净是某一样，常带不满；接在过去式后面表示刚刚做完。",
+   "en": "Nothing but one thing, often with a critical tone; after the past form it means just did."
+  },
+  "vs": {
+   "zh": "だけ：只（客观限定）；しか＋否定：只有（嫌不够）",
+   "en": "だけ: only (neutral limit); しか + negative: only (not enough)"
+  },
+  "pick": [
+   0,
+   3
+  ],
+  "tr": {
+   "0": {
+    "zh": "净吃甜的。",
+    "en": "You eat nothing but sweets."
+   },
+   "3": {
+    "zh": "他净学日语。",
+    "en": "He studies nothing but Japanese."
+   }
+  }
+ },
+ {
+  "key": "lesson23:〜ところだ",
+  "form": {
+   "zh": [
+    "V辞書形 ＋ ところだ（正要）",
+    "Vている ＋ ところだ（正在）",
+    "Vた形 ＋ ところだ（刚刚）"
+   ],
+   "en": [
+    "V-dict + ところだ (about to)",
+    "V-te いる + ところだ (in the middle of)",
+    "V-ta + ところだ (just did)"
+   ]
+  },
+  "mean": {
+   "zh": "表示动作所处的阶段，正要做、正在做或者刚做完。",
+   "en": "Shows what stage an action is at: about to happen, in progress, or just finished."
+  },
+  "vs": {
+   "zh": "たところ：就在此刻刚刚做完；たばかり：刚……不久（主观感觉，可以是一段时间前）",
+   "en": "たところ: just this moment; たばかり: not long ago (subjective, can be a while back)"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson23:〜てしまう",
+  "form": {
+   "zh": [
+    "Vて形 ＋ しまう",
+    "口语：〜ちゃう／〜じゃう"
+   ],
+   "en": [
+    "V-te + しまう",
+    "casual: 〜ちゃう / 〜じゃう"
+   ]
+  },
+  "mean": {
+   "zh": "表示动作彻底做完，或者发生了让人遗憾、后悔或意外的事。",
+   "en": "Shows an action is completely done, or that something regrettable or unintended happened."
+  },
+  "vs": {
+   "zh": "ておく：事先做好（有准备）；てしまう：做完了或出了岔子（常带遗憾）",
+   "en": "ておく: do in advance (prepared); てしまう: done, or gone wrong (often regret)"
+  },
+  "pick": [
+   4,
+   7
+  ]
+ },
+ {
+  "key": "lesson24:〜ておく",
+  "form": {
+   "zh": [
+    "Vて形 ＋ おく",
+    "口语：〜とく"
+   ],
+   "en": [
+    "V-te + おく",
+    "casual: 〜とく"
+   ]
+  },
+  "mean": {
+   "zh": "为了以后方便而事先做好准备，或者保持现在的状态不动。",
+   "en": "Doing something in advance to be ready, or leaving things as they are."
+  },
+  "vs": {
+   "zh": "てある：准备好的结果状态（Nが〜てある）；てしまう：做完了，常带遗憾",
+   "en": "てある: the resulting state of a preparation (N が … てある); てしまう: done, often with regret"
+  },
+  "pick": [
+   0,
+   3
+  ]
+ },
+ {
+  "key": "lesson24:〜てある",
+  "form": {
+   "zh": [
+    "他动词 Vて形 ＋ ある（Nが〜てある）"
+   ],
+   "en": [
+    "transitive V-te + ある (N が … てある)"
+   ]
+  },
+  "mean": {
+   "zh": "有人有意做了某事，那个结果一直保持着。",
+   "en": "Someone did something on purpose, and the result is still there."
+  },
+  "vs": {
+   "zh": "ている：自动词的状态（ドアが開いている）；ておく：强调事先做的动作",
+   "en": "ている: a state with intransitive verbs (ドアが開いている); ておく: stresses doing it in advance"
+  },
+  "pick": [
+   0,
+   5
+  ],
+  "tr": {
+   "0": {
+    "zh": "墙上贴着海报。",
+    "en": "A poster has been put up on the wall."
+   },
+   "5": {
+    "zh": "黑板上写着明天的安排。",
+    "en": "Tomorrow's schedule is written on the blackboard."
+   }
+  }
+ },
+ {
+  "key": "lesson24:〜て以来",
+  "form": {
+   "zh": [
+    "Vて形 ＋ 以来"
+   ],
+   "en": [
+    "V-te + 以来"
+   ]
+  },
+  "mean": {
+   "zh": "从过去某件事发生以后，某种状态一直持续到现在。",
+   "en": "Ever since something happened in the past, a state has continued up to now."
+  },
+  "vs": {
+   "zh": "てから：做完……之后（单纯先后顺序）；たばかり：刚刚……",
+   "en": "てから: after doing (simple order of events); たばかり: just did"
+  },
+  "pick": [
+   0,
+   3
+  ]
+ },
+ {
+  "key": "lesson25:〜という",
+  "form": {
+   "zh": [
+    "N ＋ という ＋ N",
+    "普通形 ＋ という ＋ N"
+   ],
+   "en": [
+    "N + という + N",
+    "plain form + という + N"
+   ]
+  },
+  "mean": {
+   "zh": "介绍一个名称，说叫做什么，或者说明某个名词的具体内容。",
+   "en": "Gives a name, something called this, or spells out what a noun contains."
+  },
+  "vs": {
+   "zh": "って：という的口语说法；ということ：把一句话变成名词（这件事）",
+   "en": "って: casual form of という; ということ: turns a sentence into a noun (the fact that)"
+  },
+  "pick": [
+   1,
+   5
+  ]
+ },
+ {
+  "key": "lesson25:〜ということ",
+  "form": {
+   "zh": [
+    "普通形 ＋ ということ"
+   ],
+   "en": [
+    "plain form + ということ"
+   ]
+  },
+  "mean": {
+   "zh": "把一句话当成名词，表示这件事；放在句尾还能表示听说或者意思是。",
+   "en": "Turns a sentence into a noun, the fact that; at the end of a sentence it can mean I hear, or that means."
+  },
+  "vs": {
+   "zh": "という＋N：说明某个名词的内容；というのは：所谓……（下定义）",
+   "en": "という + N: describes what a noun contains; というのは: what we call (a definition)"
+  },
+  "pick": [
+   1,
+   2
+  ]
+ },
+ {
+  "key": "lesson25:〜というのは〜ことだ",
+  "form": {
+   "zh": [
+    "N／句子 ＋ というのは 〜 ことだ"
+   ],
+   "en": [
+    "N / clause + というのは … ことだ"
+   ]
+  },
+  "mean": {
+   "zh": "给一个词下定义或者解释它的意思，所谓什么就是什么。",
+   "en": "Defines or explains a word: what we call this means that."
+  },
+  "vs": {
+   "zh": "といえば：说到……（引出联想）；ということだ：意思是、听说",
+   "en": "といえば: speaking of (brings up an association); ということだ: that means, or I hear"
+  },
+  "pick": [
+   0,
+   3
+  ]
+ },
+ {
+  "key": "lesson25:〜といえば",
+  "form": {
+   "zh": [
+    "N ＋ といえば"
+   ],
+   "en": [
+    "N + といえば"
+   ]
+  },
+  "mean": {
+   "zh": "提起一个话题，说出由它马上联想到的事物。",
+   "en": "Brings up a topic and names what first comes to mind about it."
+  },
+  "vs": {
+   "zh": "というのは：所谓……就是（下定义）；といえば：说到……（联想）",
+   "en": "というのは: what we call (a definition); といえば: speaking of (an association)"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson26:〜わけだ",
+  "form": {
+   "zh": [
+    "普通形 ＋ わけだ",
+    "なAな ＋ わけだ",
+    "Nな／Nの ＋ わけだ"
+   ],
+   "en": [
+    "plain form + わけだ",
+    "na-adj + な + わけだ",
+    "N + な / の + わけだ"
+   ]
+  },
+  "mean": {
+   "zh": "知道原因后恍然大悟，难怪如此；也表示按道理推出的结论。",
+   "en": "No wonder: a conclusion that follows once you know the reason, or in other words."
+  },
+  "vs": {
+   "zh": "はずだ：推测应该是（还没确认）；わけだ：知道原因后觉得理所当然",
+   "en": "はずだ: it should be (not yet confirmed); わけだ: of course it is, now that I know why"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson26:〜わけがない / わけではない / わけにはいかない",
+  "form": {
+   "zh": [
+    "普通形 ＋ わけがない／わけではない",
+    "V辞書形／Vない形 ＋ わけにはいかない"
+   ],
+   "en": [
+    "plain form + わけがない / わけではない",
+    "V-dict / V-nai + わけにはいかない"
+   ]
+  },
+  "mean": {
+   "zh": "三个否定说法，分别表示绝不可能，并不是这样，碍于情理不能这样做。",
+   "en": "Three negatives: there's no way, it's not that, and you can't do it given the situation."
+  },
+  "vs": {
+   "zh": "わけがない：不可能（强烈否定）；わけではない：并不是（部分否定）；わけにはいかない：不能（碍于情理）",
+   "en": "わけがない: no way (strong denial); わけではない: it's not that (partial denial); わけにはいかない: can't (because of circumstances)"
+  },
+  "pick": [
+   0,
+   5
+  ]
+ },
+ {
+  "key": "lesson26:〜ものだ",
+  "form": {
+   "zh": [
+    "普通形 ＋ ものだ",
+    "Vた形 ＋ ものだ（回忆）"
+   ],
+   "en": [
+    "plain form + ものだ",
+    "V-ta + ものだ (memories)"
+   ]
+  },
+  "mean": {
+   "zh": "感叹事物本来的性质，回忆过去常做的事，或者说本来就应该这样。",
+   "en": "Remarks on how things naturally are, recalls what you used to do, or says what one should do."
+  },
+  "vs": {
+   "zh": "わけだ：知道原因后的理所当然；ものだ：感叹本性、回忆、社会常理",
+   "en": "わけだ: no wonder, given the reason; ものだ: how things are, memories, social norms"
+  },
+  "pick": [
+   0,
+   5
+  ]
+ },
+ {
+  "key": "lesson27:尊敬語特殊动词",
+  "form": {
+   "zh": [
+    "行く・来る・いる → いらっしゃる",
+    "食べる・飲む → 召し上がる，言う → おっしゃる",
+    "見る → ご覧になる，する → なさる"
+   ],
+   "en": [
+    "行く・来る・いる → いらっしゃる",
+    "食べる・飲む → 召し上がる, 言う → おっしゃる",
+    "見る → ご覧になる, する → なさる"
+   ]
+  },
+  "mean": {
+   "zh": "抬高对方动作的专用敬语动词，用来说上级或客人的行为。",
+   "en": "Special respectful verbs that raise the other person; used for what superiors or customers do."
+  },
+  "vs": {
+   "zh": "謙譲語：降低自己的动作（参る、申す）；尊敬語：抬高对方的动作（いらっしゃる、おっしゃる）",
+   "en": "謙譲語: lowers your own actions (参る, 申す); 尊敬語: raises the other person's (いらっしゃる, おっしゃる)"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson27:通用尊敬語模板",
+  "form": {
+   "zh": [
+    "お ＋ Vます形 ＋ になる",
+    "ご ＋ 漢語 ＋ になる"
+   ],
+   "en": [
+    "お + V-masu stem + になる",
+    "ご + kango noun + になる"
+   ]
+  },
+  "mean": {
+   "zh": "没有专用敬语动词的时候，用这个模板抬高对方的动作。",
+   "en": "The general way to raise someone else's action when no special honorific verb exists."
+  },
+  "vs": {
+   "zh": "お〜します：谦让语，用于自己的动作；お〜になる：尊敬语，用于对方的动作",
+   "en": "お〜します: humble, for your own action; お〜になる: respectful, for the other person's"
+  },
+  "pick": [
+   0,
+   3
+  ]
+ },
+ {
+  "key": "lesson27:简化尊敬語",
+  "form": {
+   "zh": [
+    "五段：Vない形 ＋ れる",
+    "一段：V（去る）＋ られる",
+    "する → される，来る → 来られる"
+   ],
+   "en": [
+    "Group 1: V-nai + れる",
+    "Group 2: drop る + られる",
+    "する → される, 来る → 来られる"
+   ]
+  },
+  "mean": {
+   "zh": "用被动的形式表示轻度尊敬，比专用敬语随意，常用在公司内部。",
+   "en": "Uses the passive form for light respect; less formal than the special verbs, common inside a company."
+  },
+  "vs": {
+   "zh": "お〜になる：更郑重；被动句：形式相同，靠上下文区分",
+   "en": "お〜になる: more formal; the passive: same form, told apart by context"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson28:謙譲語特殊動詞",
+  "form": {
+   "zh": [
+    "行く・来る → 参る／伺う，いる → おる",
+    "言う → 申す，見る → 拝見する",
+    "する → いたす，食べる・もらう → いただく"
+   ],
+   "en": [
+    "行く・来る → 参る / 伺う, いる → おる",
+    "言う → 申す, 見る → 拝見する",
+    "する → いたす, 食べる・もらう → いただく"
+   ]
+  },
+  "mean": {
+   "zh": "降低自己动作的专用动词，用来对上级或客人表示谦虚。",
+   "en": "Special humble verbs that lower your own actions to show respect to superiors or customers."
+  },
+  "vs": {
+   "zh": "尊敬語：抬高对方（いらっしゃる、おっしゃる）；謙譲語：主语是自己（参る、申す）",
+   "en": "尊敬語: raises the other person (いらっしゃる, おっしゃる); 謙譲語: the subject is you (参る, 申す)"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson28:通用謙譲語模板",
+  "form": {
+   "zh": [
+    "お ＋ Vます形 ＋ する",
+    "ご ＋ 漢語 ＋ する",
+    "更郑重：〜いたす"
+   ],
+   "en": [
+    "お + V-masu stem + する",
+    "ご + kango noun + する",
+    "more formal: 〜いたす"
+   ]
+  },
+  "mean": {
+   "zh": "自己为对方做某事时用的谦让模板，主语一定是自己。",
+   "en": "The humble pattern for something you do for the other person; the subject is always you."
+  },
+  "vs": {
+   "zh": "お〜になる：尊敬语，主语是对方；させていただく：请对方允许自己做",
+   "en": "お〜になる: respectful, the subject is the other person; させていただく: doing it with their permission"
+  },
+  "pick": [
+   1,
+   3
+  ]
+ },
+ {
+  "key": "lesson28:〜せていただきます",
+  "form": {
+   "zh": [
+    "使役て形 ＋ いただく（〜させていただく）"
+   ],
+   "en": [
+    "causative te-form + いただく (〜させていただく)"
+   ]
+  },
+  "mean": {
+   "zh": "把自己要做的事说成得到了对方的允许，是最郑重的说法。",
+   "en": "Presents your own action as done with the other person's permission; a very formal way to say you will do it."
+  },
+  "vs": {
+   "zh": "させてください：请求允许（还没得到同意）；させていただきます：郑重地宣布要做",
+   "en": "させてください: asks for permission (not yet given); させていただきます: formally announces you will do it"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson29:自我介绍",
+  "form": {
+   "zh": [],
+   "en": []
+  },
+  "mean": {
+   "zh": "商务场合自我介绍和寒暄的固定说法，开口先说承蒙关照。",
+   "en": "Set phrases for introducing yourself and greeting in business, usually opening with thanks for continued support."
+  },
+  "vs": {
+   "zh": "申します：自我介绍用（谦让）；言います：日常说法，商务场合不用",
+   "en": "申します: for introducing yourself (humble); 言います: everyday word, not used in business"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson29:電話对话模板",
+  "form": {
+   "zh": [],
+   "en": []
+  },
+  "mean": {
+   "zh": "商务电话的固定说法，包括接听、找人、说明对方不在和帮忙留言。",
+   "en": "Set phrases for business calls: answering, asking for someone, saying they're out, and taking a message."
+  },
+  "vs": {
+   "zh": "でございます：です的郑重说法；对外提到自己公司的人不加さん，也不用尊敬語",
+   "en": "でございます: formal です; when speaking to outsiders, your own colleagues get no さん and no 尊敬語"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson29:商务邮件模板",
+  "form": {
+   "zh": [],
+   "en": []
+  },
+  "mean": {
+   "zh": "商务邮件的固定开头、请求和结尾说法。",
+   "en": "Set phrases for opening, making requests in, and closing business emails."
+  },
+  "vs": {
+   "zh": "ご確認ください：请确认（较直接）；ご確認いただけますでしょうか：能否请您确认（更委婉）",
+   "en": "ご確認ください: please check (more direct); ご確認いただけますでしょうか: could you kindly check (softer)"
+  },
+  "pick": [
+   1,
+   2
+  ]
+ },
+ {
+  "key": "lesson29:拒绝 / 道歉 / 询问",
+  "form": {
+   "zh": [],
+   "en": []
+  },
+  "mean": {
+   "zh": "在拒绝、请求或询问之前先加一句缓冲的话，让语气更委婉。",
+   "en": "Cushion phrases placed before a refusal, request or question to soften it."
+  },
+  "vs": {
+   "zh": "恐れ入りますが：麻烦对方、请求时；申し訳ございませんが：道歉、拒绝时",
+   "en": "恐れ入りますが: when troubling someone with a request; 申し訳ございませんが: when apologizing or refusing"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson30:〜ても",
+  "form": {
+   "zh": [
+    "Vて形 ＋ も",
+    "いA（去い）＋ くても",
+    "なA／N ＋ でも"
+   ],
+   "en": [
+    "V-te + も",
+    "i-adj (drop い) + くても",
+    "na-adj / N + でも"
+   ]
+  },
+  "mean": {
+   "zh": "即使出现前面的情况，后面的结果也不会改变。",
+   "en": "Even if the first thing happens, the result stays the same."
+  },
+  "vs": {
+   "zh": "のに：明明……却（已成事实，带不满）；けど：虽然……但是（单纯转折）",
+   "en": "のに: even though (an actual fact, with frustration); けど: but (simple contrast)"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson30:〜てほしい",
+  "form": {
+   "zh": [
+    "人に ＋ Vて形 ＋ ほしい",
+    "人に ＋ Vないで ＋ ほしい"
+   ],
+   "en": [
+    "person に + V-te + ほしい",
+    "person に + V-nai で + ほしい"
+   ]
+  },
+  "mean": {
+   "zh": "希望别人做或者不要做某事，不用于自己想做的事。",
+   "en": "Wanting someone else to do, or not do, something; not used for what you want to do yourself."
+  },
+  "vs": {
+   "zh": "たい：自己想做；てください：直接请求对方做",
+   "en": "たい: you want to do it yourself; てください: a direct request"
+  },
+  "pick": [
+   1,
+   2
+  ]
+ },
+ {
+  "key": "lesson30:〜ていく / 〜てくる",
+  "form": {
+   "zh": [
+    "Vて形 ＋ いく",
+    "Vて形 ＋ くる"
+   ],
+   "en": [
+    "V-te + いく",
+    "V-te + くる"
+   ]
+  },
+  "mean": {
+   "zh": "表示离开或靠近说话人，也表示变化从现在持续到将来，或者从过去一直到现在。",
+   "en": "Moving away from or toward the speaker, or a change that goes on into the future or has built up until now."
+  },
+  "vs": {
+   "zh": "ていく：从现在向将来、远离；てくる：从过去到现在、靠近",
+   "en": "ていく: from now into the future, moving away; てくる: from the past up to now, coming closer"
+  },
+  "pick": [
+   2,
+   3
+  ],
+  "tr": {
+   "2": {
+    "zh": "今后气温会渐渐上升吧。",
+    "en": "The temperature will probably keep rising from now on."
+   },
+   "3": {
+    "zh": "日语渐渐懂了。",
+    "en": "I've gradually come to understand Japanese."
+   }
+  }
+ },
+ {
+  "key": "lesson30:〜がる",
+  "form": {
+   "zh": [
+    "いA 語幹 ＋ がる",
+    "Vたい → Vたがる"
+   ],
+   "en": [
+    "i-adj stem + がる",
+    "V-たい → V-たがる"
+   ]
+  },
+  "mean": {
+   "zh": "描述别人表现在外的感情或愿望，一般不用于自己。",
+   "en": "Describes the feelings or wishes another person shows outwardly; not normally used about yourself."
+  },
+  "vs": {
+   "zh": "たい：自己想做（第一人称）；たがる：别人表现出想做（第三人称）",
+   "en": "たい: I want to (first person); たがる: someone shows they want to (third person)"
+  },
+  "pick": [
+   0,
+   4
+  ],
+  "tr": {
+   "4": {
+    "zh": "她想去海外旅行。",
+    "en": "She wants to go on a trip abroad."
+   }
+  }
+ },
+ {
+  "key": "lesson30:〜てみる",
+  "form": {
+   "zh": [
+    "Vて形 ＋ みる"
+   ],
+   "en": [
+    "V-te + みる"
+   ]
+  },
+  "mean": {
+   "zh": "试着做一下某事，看看结果怎么样。",
+   "en": "Trying something out to see what it's like."
+  },
+  "vs": {
+   "zh": "ようとする：正要做、试图做（N3）；てみる：实际做了看看",
+   "en": "ようとする: about to, attempt to (N3); てみる: actually try it and see"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson31:〜すぎる",
+  "form": {
+   "zh": [
+    "Vます形 ＋ すぎる",
+    "いA（去い）／なA ＋ すぎる",
+    "いい → よすぎる，ない → なさすぎる"
+   ],
+   "en": [
+    "V-masu stem + すぎる",
+    "i-adj (drop い) / na-adj + すぎる",
+    "いい → よすぎる, ない → なさすぎる"
+   ]
+  },
+  "mean": {
+   "zh": "程度超过了合适的范围，太过头了，多带负面意思。",
+   "en": "Too much, beyond the right amount; usually negative."
+  },
+  "vs": {
+   "zh": "とても：很（只是程度高）；すぎる：太……（超过限度，常带问题）",
+   "en": "とても: very (just a high degree); すぎる: too (past the limit, usually a problem)"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson31:〜やすい",
+  "form": {
+   "zh": [
+    "Vます形 ＋ やすい／にくい"
+   ],
+   "en": [
+    "V-masu stem + やすい / にくい"
+   ]
+  },
+  "mean": {
+   "zh": "表示某个动作容易做或者难做，也可以表示容易发生。",
+   "en": "Says an action is easy or hard to do, or that something tends to happen."
+  },
+  "vs": {
+   "zh": "にくい：难以……（客观上不好做）；づらい：做起来吃力、心理上为难（N3）",
+   "en": "にくい: hard to (objectively difficult); づらい: hard to, physically or emotionally taxing (N3)"
+  },
+  "pick": [
+   0,
+   5
+  ]
+ },
+ {
+  "key": "lesson31:〜ことはない",
+  "form": {
+   "zh": [
+    "V辞書形 ＋ ことはない"
+   ],
+   "en": [
+    "V-dict + ことはない"
+   ]
+  },
+  "mean": {
+   "zh": "没有必要这样做，常用来安慰或者劝对方。",
+   "en": "There's no need to do it; often used to reassure or advise someone."
+  },
+  "vs": {
+   "zh": "なくてもいい：不做也可以（中性）；必要はない：没有必要（较客观）",
+   "en": "なくてもいい: you don't have to (neutral); 必要はない: it isn't necessary (more objective)"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson31:〜方",
+  "form": {
+   "zh": [
+    "Vます形 ＋ 方（かた）",
+    "する → し方（仕方）"
+   ],
+   "en": [
+    "V-masu stem + 方 (かた)",
+    "する → し方 (仕方)"
+   ]
+  },
+  "mean": {
+   "zh": "做某件事的方法或方式，也就是怎么做。",
+   "en": "The way or method of doing something, how to do it."
+  },
+  "vs": {
+   "zh": "方法：一般的方法（名词）；Vます形＋方：某个具体动作的做法",
+   "en": "方法: method in general (noun); V-masu + 方: how to do a specific action"
+  },
+  "pick": [
+   0,
+   3
+  ]
+ },
+ {
+  "key": "lesson31:复合动词",
+  "form": {
+   "zh": [
+    "Vます形 ＋ 出す／始める／続ける"
+   ],
+   "en": [
+    "V-masu stem + 出す / 始める / 続ける"
+   ]
+  },
+  "mean": {
+   "zh": "接在动词后面，表示突然开始、开始或者一直持续某个动作。",
+   "en": "Added to a verb to mean suddenly start, start, or keep on doing."
+  },
+  "vs": {
+   "zh": "出す：突然开始（不用于有意志的动作）；始める：一般的开始（可以有意志）",
+   "en": "出す: suddenly start (not for deliberate actions); 始める: start (can be deliberate)"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson31:〜さ",
+  "form": {
+   "zh": [
+    "いA（去い）＋ さ",
+    "なA 語幹 ＋ さ"
+   ],
+   "en": [
+    "i-adj (drop い) + さ",
+    "na-adj stem + さ"
+   ]
+  },
+  "mean": {
+   "zh": "把形容词变成名词，表示程度或性质。",
+   "en": "Turns an adjective into a noun for its degree or quality, like the English ness."
+  },
+  "vs": {
+   "zh": "み：表示感受到的性质（甘み、楽しみ），能接的词有限",
+   "en": "み: a felt quality (甘み, 楽しみ), works with only some adjectives"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson32:〜と思う / 〜と思っている",
+  "form": {
+   "zh": [
+    "普通形 ＋ と思う",
+    "なA／N ＋ だ ＋ と思う",
+    "意向形 ＋ と思う（打算）"
+   ],
+   "en": [
+    "plain form + と思う",
+    "na-adj / N + だ + と思う",
+    "volitional form + と思う (intention)"
+   ]
+  },
+  "mean": {
+   "zh": "说出自己此刻的想法或判断；用进行时表示一直这样认为，也可以说别人。",
+   "en": "States your opinion or judgment; the continuous form means a lasting belief and can describe others."
+  },
+  "vs": {
+   "zh": "と思う：我此刻的判断（第一人称）；と思っている：一直这么认为（可用于第三人称）",
+   "en": "と思う: my judgment right now (first person); と思っている: a lasting belief (can be third person)"
+  },
+  "pick": [
+   0,
+   5
+  ],
+  "tr": {
+   "0": {
+    "zh": "我觉得明天会下雨。",
+    "en": "I think it will rain tomorrow."
+   },
+   "5": {
+    "zh": "妈妈一直觉得我还是小孩。",
+    "en": "My mom still thinks I'm a child."
+   }
+  }
+ },
+ {
+  "key": "lesson32:〜かどうか",
+  "form": {
+   "zh": [
+    "普通形 ＋ かどうか",
+    "なA／N（去だ）＋ かどうか"
+   ],
+   "en": [
+    "plain form + かどうか",
+    "na-adj / N (no だ) + かどうか"
+   ]
+  },
+  "mean": {
+   "zh": "是不是、是否，把一个是非疑问放进句子里。",
+   "en": "Whether or not; puts a yes or no question inside a sentence."
+  },
+  "vs": {
+   "zh": "疑问词＋か：带疑问词的疑问（何時に来るか）；かどうか：是不是的疑问",
+   "en": "question word + か: questions with a question word (何時に来るか); かどうか: yes or no questions"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson32:〜のように / 〜のような",
+  "form": {
+   "zh": [
+    "N ＋ のように ＋ V／A",
+    "N ＋ のような ＋ N",
+    "口语：みたいに／みたいな"
+   ],
+   "en": [
+    "N + のように + verb / adjective",
+    "N + のような + N",
+    "casual: みたいに / みたいな"
+   ]
+  },
+  "mean": {
+   "zh": "像某个东西一样，用来打比方或者举例子。",
+   "en": "Like something; used to make a comparison or give an example."
+  },
+  "vs": {
+   "zh": "のように：修饰动词、形容词；のような：修饰名词；みたい：口语说法",
+   "en": "のように: modifies verbs and adjectives; のような: modifies nouns; みたい: casual version"
+  },
+  "pick": [
+   1,
+   3
+  ]
+ },
+ {
+  "key": "lesson32:〜なさい",
+  "form": {
+   "zh": [
+    "Vます形 ＋ なさい"
+   ],
+   "en": [
+    "V-masu stem + なさい"
+   ]
+  },
+  "mean": {
+   "zh": "上级对下级的命令，比如父母对孩子、老师对学生。",
+   "en": "A command from above, like a parent to a child or a teacher to a student."
+  },
+  "vs": {
+   "zh": "てください：礼貌的请求；命令形：生硬粗鲁的命令",
+   "en": "てください: a polite request; imperative form: a blunt, rough order"
+  },
+  "pick": [
+   0,
+   4
+  ],
+  "tr": {
+   "0": {
+    "zh": "快起床！",
+    "en": "Get up already!"
+   },
+   "4": {
+    "zh": "多吃点蔬菜！",
+    "en": "Eat more vegetables!"
+   }
+  }
+ },
+ {
+  "key": "lesson32:〜がする",
+  "form": {
+   "zh": [
+    "感覚名詞 ＋ がする"
+   ],
+   "en": [
+    "sense noun + がする"
+   ]
+  },
+  "mean": {
+   "zh": "通过感官感觉到声音、气味、味道，或者有某种感觉。",
+   "en": "Sensing a sound, smell or taste, or having a feeling about something."
+  },
+  "vs": {
+   "zh": "が聞こえる：听得见（自然入耳）；音がする：有声音（发出声音的现象）",
+   "en": "が聞こえる: can hear (it reaches your ears); 音がする: there is a sound (the sound occurs)"
+  },
+  "pick": [
+   0,
+   3
+  ]
+ },
+ {
+  "key": "lesson32:〜必要がある / 〜必要はない",
+  "form": {
+   "zh": [
+    "V辞書形 ＋ 必要がある／必要はない"
+   ],
+   "en": [
+    "V-dict + 必要がある / 必要はない"
+   ]
+  },
+  "mean": {
+   "zh": "有必要做或者没有必要做某事，语气比较客观。",
+   "en": "It is, or isn't, necessary to do something; a fairly objective way to say it."
+  },
+  "vs": {
+   "zh": "なければならない：必须（义务更强）；ことはない：没必要（劝慰语气）",
+   "en": "なければならない: must (stronger obligation); ことはない: no need (reassuring)"
+  },
+  "pick": [
+   0,
+   3
+  ]
+ },
+ {
+  "key": "lesson32:命令形 / 禁止形",
+  "form": {
+   "zh": [
+    "五段：う段 → え段（飲め）",
+    "一段：る → ろ（食べろ），来る → 来い，する → しろ",
+    "禁止：V辞書形 ＋ な"
+   ],
+   "en": [
+    "Group 1: u-row → e-row (飲め)",
+    "Group 2: る → ろ (食べろ), 来る → 来い, する → しろ",
+    "prohibition: V-dict + な"
+   ]
+  },
+  "mean": {
+   "zh": "直接、生硬地命令或禁止，多用在男性口语、紧急情况和加油的时候。",
+   "en": "Blunt orders or bans, used in rough speech, emergencies and cheering."
+  },
+  "vs": {
+   "zh": "なさい：上对下，较温和；てください：礼貌的请求",
+   "en": "なさい: from above, but milder; てください: a polite request"
+  },
+  "pick": [
+   1,
+   2
+  ],
+  "tr": {
+   "2": {
+    "zh": "加油！",
+    "en": "Go for it!"
+   }
+  }
+ },
+ {
+  "key": "lesson33:〜あいだ / 〜あいだに",
+  "form": {
+   "zh": [
+    "Vている／V辞書形 ＋ あいだ（に）",
+    "なAな／Nの ＋ あいだ（に）"
+   ],
+   "en": [
+    "V-te いる / V-dict + あいだ (に)",
+    "na-adj + な / N + の + あいだ (に)"
+   ]
+  },
+  "mean": {
+   "zh": "表示某段时间。单独用时后面是持续整段时间的动作，加上助词则表示在这段时间内做了一件事。",
+   "en": "During a period: on its own the action lasts the whole time; with the particle ni it happens once within it."
+  },
+  "vs": {
+   "zh": "あいだ：整段时间一直（后接持续动作）；あいだに：期间内的某个时候（后接一次性动作）",
+   "en": "あいだ: the whole time (continuous action follows); あいだに: at some point within (a one-off action follows)"
+  },
+  "pick": [
+   0,
+   1
+  ],
+  "tr": {
+   "0": {
+    "zh": "婴儿睡觉的整段时间里，我在看书。",
+    "en": "While the baby was sleeping, I was reading a book."
+   },
+   "1": {
+    "zh": "趁婴儿睡觉的时候，去买了东西。",
+    "en": "While the baby was sleeping, I went shopping."
+   }
+  }
+ },
+ {
+  "key": "lesson33:〜までに",
+  "form": {
+   "zh": [
+    "時間名詞 ＋ までに",
+    "V辞書形 ＋ までに"
+   ],
+   "en": [
+    "time noun + までに",
+    "V-dict + までに"
+   ]
+  },
+  "mean": {
+   "zh": "在某个期限之前完成某件事，表示截止时间。",
+   "en": "By a deadline; something gets done before that point."
+  },
+  "vs": {
+   "zh": "まで：一直到（动作持续到那时）；までに：在那之前（一次性完成）",
+   "en": "まで: until (the action continues up to then); までに: by (done once, before then)"
+  },
+  "pick": [
+   0,
+   2
+  ],
+  "tr": {
+   "0": {
+    "zh": "请在5点之前交报告。",
+    "en": "Please submit the report by 5 o'clock."
+   }
+  }
+ },
+ {
+  "key": "lesson33:〜おきに",
+  "form": {
+   "zh": [
+    "数量词 ＋ おきに"
+   ],
+   "en": [
+    "number + counter + おきに"
+   ]
+  },
+  "mean": {
+   "zh": "每隔一定的时间或距离，重复做一次。",
+   "en": "At regular intervals of time or distance."
+  },
+  "vs": {
+   "zh": "ごとに：每……（一日ごとに＝每天）；おきに：隔……（一日おきに＝隔一天）",
+   "en": "ごとに: every (一日ごとに = every day); おきに: at intervals (一日おきに = every other day)"
+  },
+  "pick": [
+   0,
+   3
+  ]
+ },
+ {
+  "key": "lesson33:〜場合は",
+  "form": {
+   "zh": [
+    "普通形 ＋ 場合は",
+    "なAな／Nの ＋ 場合は"
+   ],
+   "en": [
+    "plain form + 場合は",
+    "na-adj + な / N + の + 場合は"
+   ]
+  },
+  "mean": {
+   "zh": "假设出现某种情况时该怎么做，常用在说明和规定里。",
+   "en": "In case a situation arises, here's what to do; common in instructions and rules."
+  },
+  "vs": {
+   "zh": "たら：如果……（日常口语的假设）；と：一……就……（必然结果）",
+   "en": "たら: if (everyday conditional); と: whenever (a natural result)"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson33:〜たらどう",
+  "form": {
+   "zh": [
+    "Vた形 ＋ らどう（ですか）"
+   ],
+   "en": [
+    "V-ta + らどう (ですか)"
+   ]
+  },
+  "mean": {
+   "zh": "向对方提建议，做某事怎么样，语气比较随意。",
+   "en": "Suggests something to the listener, how about doing it; fairly casual."
+  },
+  "vs": {
+   "zh": "たほうがいい：最好……（劝告更强）；ませんか：要不要一起……（邀请）",
+   "en": "たほうがいい: you'd better (stronger advice); ませんか: won't you (an invitation)"
+  },
+  "pick": [
+   0,
+   2
+  ],
+  "tr": {
+   "0": {
+    "zh": "累了的话，休息一下怎么样？",
+    "en": "If you're tired, how about resting a bit?"
+   }
+  }
+ },
+ {
+  "key": "lesson33:〜てよかった / 〜なくてよかった",
+  "form": {
+   "zh": [
+    "Vて形 ＋ よかった",
+    "Vなくて ＋ よかった"
+   ],
+   "en": [
+    "V-te + よかった",
+    "V-nai (なくて) + よかった"
+   ]
+  },
+  "mean": {
+   "zh": "庆幸自己做了或者没做某事，结果很好。",
+   "en": "Being glad you did, or didn't do, something because it turned out well."
+  },
+  "vs": {
+   "zh": "ばよかった：要是做了就好了（后悔）；てよかった：做了真好（庆幸）",
+   "en": "ばよかった: I wish I had (regret); てよかった: I'm glad I did (relief)"
+  },
+  "pick": [
+   0,
+   4
+  ],
+  "tr": {
+   "0": {
+    "zh": "带了伞来真好。",
+    "en": "I'm glad I brought an umbrella."
+   }
+  }
+ },
+ {
+  "key": "lesson33:〜てすみません / 〜なくてすみません",
+  "form": {
+   "zh": [
+    "Vて形 ＋ すみません",
+    "Vなくて ＋ すみません"
+   ],
+   "en": [
+    "V-te + すみません",
+    "V-nai (なくて) + すみません"
+   ]
+  },
+  "mean": {
+   "zh": "为自己做了或者没做某事向对方道歉。",
+   "en": "Apologizing for something you did, or failed to do."
+  },
+  "vs": {
+   "zh": "てごめん：朋友之间（随意）；て申し訳ありません：最郑重",
+   "en": "てごめん: between friends (casual); て申し訳ありません: most formal"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ }
+]
