@@ -2876,42 +2876,6 @@
     "answer": 0
   },
   {
-    "id": "n2-mg-181",
-    "type": "kanji",
-    "difficulty": 2,
-    "stem": "<<幼い>>ころに両親を亡くし、祖母に育てられた。",
-    "options": [
-      "おさない",
-      "おざない",
-      "ようない",
-      "おそない"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "他年幼时失去了父母，由祖母养大。",
-      "en": "He lost his parents when he was very young and was raised by his grandmother."
-    },
-    "why": {
-      "zh": "「幼（おさな）い」：年幼的。音读「よう」（「幼児」）。",
-      "en": "「幼い」 is おさない: very young. The on reading is よう (「幼児」)."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "第二个音是清音「さ」，不是「ざ」。",
-        "en": "The second sound is unvoiced さ, not ざ."
-      },
-      {
-        "zh": "「よう」是音读（「幼児」），形容词「幼い」不读「ようない」。",
-        "en": "よう is the on reading (「幼児」); the adjective is not ようない."
-      },
-      {
-        "zh": "第二个音是「さ」，不是「そ」。",
-        "en": "The second sound is さ, not そ."
-      }
-    ]
-  },
-  {
     "id": "n2-mg-182",
     "type": "kanji",
     "difficulty": 2,
@@ -3020,78 +2984,6 @@
     ]
   },
   {
-    "id": "n2-mg-185",
-    "type": "kanji",
-    "difficulty": 2,
-    "stem": "強い光の<<刺激>>で、目が痛くなった。",
-    "options": [
-      "しげき",
-      "じげき",
-      "しげっき",
-      "しげぎ"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "受到强光的刺激，眼睛疼起来。",
-      "en": "The stimulation of the strong light made my eyes hurt."
-    },
-    "why": {
-      "zh": "「刺（し）」+「激（げき）」：「しげき」。",
-      "en": "「刺」 is し and 「激」 is げき: しげき, stimulation."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "第一个音是清音「し」，不是「じ」。",
-        "en": "The first sound is unvoiced し, not じ."
-      },
-      {
-        "zh": "「激」读「げき」，中间没有小「っ」。",
-        "en": "「激」 is げき; there is no small っ."
-      },
-      {
-        "zh": "「激」是清音「き」，不是「ぎ」。",
-        "en": "The last sound is unvoiced き, not ぎ."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-186",
-    "type": "kanji",
-    "difficulty": 1,
-    "stem": "このカレーは<<辛い>>ので、水ばかり飲んでしまった。",
-    "options": [
-      "からい",
-      "しんい",
-      "かるい",
-      "がらい"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "这咖喱太辣，我光顾着喝水了。",
-      "en": "This curry is so spicy that I kept drinking water."
-    },
-    "why": {
-      "zh": "「辛い」指味道时读「からい」（辣）；指痛苦时读「つらい」。这里说咖喱和喝水，是辣。",
-      "en": "「辛い」 is からい for taste (spicy) and つらい for suffering. Curry and water point to spicy."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「辛」的音读是「しん」（辛苦、香辛料），但「辛い」没有「しんい」这种读法。",
-        "en": "「辛」 has the on-reading しん (as in 「香辛料」), but 「辛い」 is never read しんい."
-      },
-      {
-        "zh": "「かるい」是「軽い」（轻）。",
-        "en": "かるい is 「軽い」 (light)."
-      },
-      {
-        "zh": "第一个音是清音「か」，不是「が」。",
-        "en": "The first sound is unvoiced か, not が."
-      }
-    ]
-  },
-  {
     "id": "n2-mg-187",
     "type": "kanji",
     "difficulty": 2,
@@ -3196,42 +3088,6 @@
       {
         "zh": "「一」读「いち」或「いつ」，没有「えつ」。",
         "en": "「一」 is いち or いつ, never えつ."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-190",
-    "type": "kanji",
-    "difficulty": 2,
-    "stem": "雨に降られて、靴の中まで<<湿って>>しまった。",
-    "options": [
-      "しめって",
-      "しじって",
-      "しずって",
-      "じめって"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "被雨淋了，连鞋里面都湿了。",
-      "en": "I got rained on and even the inside of my shoes got damp."
-    },
-    "why": {
-      "zh": "「湿る（しめる）」：潮湿、受潮。音读「しつ」（「湿度」）。",
-      "en": "「湿る」 is しめる: to become damp. The on reading is しつ (「湿度」)."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「湿る」没有「しじる」这种读法。",
-        "en": "There is no reading しじる for 「湿る」."
-      },
-      {
-        "zh": "「しずる」不是这个词；「湿る」读「しめる」。",
-        "en": "しずる is not this word; 「湿る」 is しめる."
-      },
-      {
-        "zh": "第一个音是清音「し」，不是「じ」。",
-        "en": "The first sound is unvoiced し, not じ."
       }
     ]
   },
