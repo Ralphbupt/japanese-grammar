@@ -180,6 +180,8 @@ html.theme-dark .q-ai .q-btn:not(.q-ai-main) { border-color: color-mix(in srgb, 
 .q-intro { margin: 0 0 .6rem; line-height: 2.1; font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif; }
 .q-passage { border: 1px solid var(--border); border-radius: var(--radius); padding: .9rem 1.1rem; margin-bottom: 1.1rem; background: var(--bg); font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif; font-size: 1.05rem; line-height: 2.2; max-height: 55vh; overflow-y: auto; }
 .q-passage p { margin: 0 0 .4rem; }
+/* The phrase a question asks about (「X」とあるが), underlined as on the real test: heavier than a link so it can be found in a long passage. */
+.q-passage u { text-decoration: underline solid var(--text); text-decoration-thickness: 2px; text-underline-offset: .32em; text-decoration-skip-ink: none; }
 .q-pblank { display: inline-grid; place-items: center; min-width: 1.8em; padding: 0 .35em; border: 1.5px solid var(--text-muted); font-family: system-ui, sans-serif; font-weight: 700; font-size: .9em; line-height: 1.5; }
 .q-pblank-on { border-color: var(--ui); color: var(--ui); }
 .q-pblank.q-filled { border-color: var(--q-ok); }
