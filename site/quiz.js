@@ -527,6 +527,9 @@
     t: function (zh, en) { return t(zh, en); },
     streak: function () { return streak(); },
     setSize: function () { return setSize(); },
+    // What an outside script may know about a question: type, section group
+    // (moji / bunpou / dokkai / choukai), passage id, listening or not.
+    question: function (id) { var q = Q[id]; return q ? { type: q.type, group: groupOf(q), passage: q.passage || null, ck: isCk(q) } : null; },
     due: function () { return due().length; },
     hasListening: function () { return ALL.some(function (q) { return onLevel(q) && isCk(q); }); },
     // Questions answered today (all, or only listening ones with 'ck').
@@ -539,6 +542,20 @@
       return n;
     }
   };
+  // jpQuizHooks.setOrder(kind, ids, api) → the same ids in another order, for a
+  // new set (experiments). Anything else — a missing, extra or repeated id — is
+  // ignored and the set keeps its own order.
+  function orderHook(kind, list) {
+    var H = window.jpQuizHooks, f = H && H.setOrder;
+    if (typeof f !== 'function') return list;
+    try {
+      var ids = f(kind, list.map(function (q) { return q.id; }), HOOK_API), by = {}, out = [];
+      if (!ids || ids.length !== list.length) return list;
+      list.forEach(function (q) { by[q.id] = q; });
+      for (var i = 0; i < ids.length; i++) { if (!by[ids[i]]) return list; out.push(by[ids[i]]); delete by[ids[i]]; }
+      return out;
+    } catch (e) { return list; }
+  }
   function hook(name, html) {
     var H = window.jpQuizHooks, f = H && H[name];
     if (typeof f !== 'function') return html;
@@ -759,6 +776,7 @@
   function root() { return (cur && cur.root) || app; }
   function start(kind, list, label) {
     if (!list.length) return;
+    list = orderHook(kind, list);
     S.session = { kind: kind, label: label || '', level: LEVEL, ids: list.map(function (q) { return q.id; }), i: 0, res: [] };
     save();
     track('quiz_start', { kind: kind, size: list.length, level: LEVEL });
