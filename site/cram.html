@@ -16,7 +16,8 @@
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,"PingFang SC","Hiragino Sans",sans-serif}
 .wrap{max-width:760px;margin:0 auto;padding:0 16px}
 h1{font-size:22px;margin:16px 0 4px}.lead{color:var(--mute);font-size:14px;margin:0 0 6px}
-#bar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 0}
+#ctl{padding:4px 0 6px;border-bottom:1px solid var(--line)}
+#bar{position:fixed;left:0;right:0;bottom:0;z-index:5;background:var(--card);border-top:1px solid var(--line);padding:8px 0 calc(8px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px rgba(0,0,0,.06)}
 .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.row+.row{margin-top:8px}
 #play{width:44px;height:36px;border-radius:8px;border:0;background:var(--ui);color:var(--ui-on);font-size:16px;cursor:pointer}
 #seek{flex:1;min-width:120px;accent-color:var(--ui)}#time{font-size:12px;color:var(--mute);font-variant-numeric:tabular-nums}
@@ -24,9 +25,9 @@ h1{font-size:22px;margin:16px 0 4px}.lead{color:var(--mute);font-size:14px;margi
 #q{width:120px;cursor:text}
 .row button[aria-pressed=true]{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}
 .toc{font-size:13px;gap:6px}.toc span{color:var(--mute)}.toc a{padding:1px 8px;border:1px solid var(--line);border-radius:6px;text-decoration:none;color:var(--ui);background:var(--card)}.toc a.on{background:var(--ui);color:var(--ui-on)}
-main{padding-bottom:80px}
+main{padding-bottom:110px}
 .msg{text-align:center;color:var(--mute);margin:40px 0}.msg a{color:var(--ui)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:10px 0;scroll-margin-top:150px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:10px 0;scroll-margin-top:16px}
 .hd{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
 .no{color:var(--mute);font-size:13px}
 .g{font-size:21px;font-weight:700;font-family:"Hiragino Mincho ProN","Yu Mincho",serif}
@@ -42,6 +43,7 @@ main{padding-bottom:80px}
 .fix{font-size:12px;color:var(--red);margin-top:6px}
 .ln{cursor:pointer;border-radius:6px;padding:1px 4px;margin:0 -4px}.ln:hover{background:var(--ui-soft)}.ln.cur{background:var(--hl);box-shadow:inset 3px 0 0 var(--ui)}
 .notr .tr{opacity:.55}
+.onlyreal .card.fake{display:none}
 .hide .mean,.hide .tr{filter:blur(5px)}.hide .mean:hover,.hide .tr:hover{filter:none}
 .foot{color:var(--mute);font-size:13px;margin-top:20px}
 </style>
@@ -49,13 +51,13 @@ main{padding-bottom:80px}
 <body>
 <div class="wrap"><h1>N2 历年真题语法突击 · <span id="cnt"></span></h1>
 <p class="lead">按「语法 → 意思 → 真题例句 → 翻译」朗读。点任意一行从那里开始听。</p></div>
-<div id="bar"><div class="wrap">
-  <div class="row"><button id="play" aria-label="播放">▶</button><input id="seek" type="range" min="0" max="1000" value="0"><span id="time">0:00</span></div>
+<div class="wrap" id="ctl">
   <div class="row"><button data-mode="all" aria-pressed="true">整体连播</button><button data-mode="one" aria-pressed="false">一句一停</button><button data-mode="loop" aria-pressed="false">单句循环</button><button data-mode="part" aria-pressed="false">本段连播</button>
-    <select id="rate"><option>0.8</option><option selected>1</option><option>1.2</option><option>1.5</option></select>
-    <button id="trs" aria-pressed="true">念翻译</button><button id="hz" aria-pressed="false">遮住意思</button><input id="q" placeholder="搜语法/序号"></div>
+    <button id="trs" aria-pressed="true">念翻译</button><button id="hz" aria-pressed="false">遮住意思</button><button id="real" aria-pressed="false">只看真题</button><input id="q" placeholder="搜语法/序号"></div>
   <div class="row toc" id="toc"></div>
-</div></div>
+</div>
+<div id="bar"><div class="wrap"><div class="row"><button id="play" aria-label="播放">▶</button><input id="seek" type="range" min="0" max="1000" value="0"><span id="time">0:00</span>
+  <select id="rate" aria-label="语速"><option value="0.8">0.8×</option><option value="1" selected>1×</option><option value="1.2">1.2×</option><option value="1.5">1.5×</option></select></div></div></div>
 <main class="wrap" id="list"></main>
 <audio id="a" crossorigin="anonymous" preload="metadata"></audio>
 <script>
@@ -85,7 +87,7 @@ main{padding-bottom:80px}
   list.innerHTML = items.map((it, k) => {
     if (k % PART === 0) parts.push(it.n);
     const yrs = it.real === false ? '<span class="badge soft">例句（非真题）</span>' : it.year ? '<span class="badge">真题 ' + esc(it.year) + '</span>' : '';
-    return `<section class="card" id="n${it.n}" data-s="${esc(it.n + ' ' + it.g + ' ' + it.zh + ' ' + it.mean)}">
+    return `<section class="card${it.real === false ? ' fake' : ''}" id="n${it.n}" data-s="${esc(it.n + ' ' + it.g + ' ' + it.zh + ' ' + it.mean)}">
       <div class="hd"><span class="no">${it.n}</span><span class="ln g" data-i="${idx[it.n + 'g']}">${esc(it.g)}</span>${yrs}${it.other ? '<span class="yr">其余：' + esc(it.other) + '</span>' : ''}</div>
       ${it.form && it.form.length ? '<div class="form">' + it.form.map((f) => '<code>' + esc(f) + '</code>').join('') + '</div>' : ''}
       ${ln(it.n, 'm', 'mean', esc(it.mean))}
@@ -110,10 +112,11 @@ main{padding-bottom:80px}
     const p = i >= 0 ? partOf(i) : -1;
     if (p !== lastPart) { if (chips[lastPart]) chips[lastPart].classList.remove('on'); if (chips[p]) chips[p].classList.add('on'); lastPart = p; }
     const e = els[i]; if (!e) return; e.classList.add('cur');
-    if (!scroll) return;
-    const r = e.getBoundingClientRect(), top = document.getElementById('bar').getBoundingClientRect().bottom;
-    if (r.top < top + 8 || r.bottom > innerHeight - 40) window.scrollBy({ top: r.top - top - innerHeight * 0.25, behavior: 'smooth' });
+    if (scroll && Date.now() - userScroll > 4000) e.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
+  // Follow the reading like the podcast pages, but not while the reader is scrolling.
+  let userScroll = 0;
+  ['wheel', 'touchmove', 'keydown'].forEach((ev) => addEventListener(ev, (e) => { if (ev !== 'keydown' || /^(Page|Arrow(Up|Down)|Home|End)/.test(e.key)) userScroll = Date.now(); }, { passive: true }));
   const go = () => { const p = a.play(); if (p && p.catch) p.catch(() => {}); };
   function playLine(i) { if (!T[i]) return; a.currentTime = T[i].s; stopAt = mode === 'one' || mode === 'loop' ? i : mode === 'part' ? partEnd(i) : null; mark1(i, true); go(); }
   list.addEventListener('click', (e) => { const t = e.target.closest('[data-i]'); if (t) playLine(+t.dataset.i); });
@@ -121,7 +124,12 @@ main{padding-bottom:80px}
   a.addEventListener('timeupdate', () => {
     let t = a.currentTime, i = lineAt(t);
     if (stopAt != null && t >= T[stopAt].e) { if (mode === 'loop') { a.currentTime = T[stopAt].s; return; } a.pause(); stopAt = null; return; }
-    if (!readTr && i >= 0 && T[i].k === 't' && t < T[i].e - 0.15 && mode !== 'one' && mode !== 'loop' && T[i + 1]) { a.currentTime = T[i + 1].s; i++; }
+    // Skipped while playing on: translations when 念翻译 is off, non-exam items when 只看真题 is on.
+    const skip = (j) => T[j] && ((!readTr && T[j].k === 't') || (onlyReal && fake.has(T[j].n)));
+    if (i >= 0 && skip(i) && t < T[i].e - 0.15 && mode !== 'one' && mode !== 'loop') {
+      let j = i; while (skip(j)) j++;
+      if (T[j]) { a.currentTime = T[j].s; i = j; } else { a.pause(); return; }
+    }
     mark1(i, !a.paused);
     if (a.duration) document.getElementById('seek').value = Math.round(t / a.duration * 1000);
     document.getElementById('time').textContent = fmt(t) + ' / ' + fmt(a.duration || d.timing.duration);
@@ -135,6 +143,11 @@ main{padding-bottom:80px}
     stopAt = a.paused || cur < 0 ? null : mode === 'one' || mode === 'loop' ? cur : mode === 'part' ? partEnd(cur) : null;
   });
   document.getElementById('rate').onchange = (e) => { a.playbackRate = +e.target.value; };
+  const fake = new Set(items.filter((it) => it.real === false).map((it) => it.n));
+  let onlyReal = ls.get('jp_cram_real') === '1';
+  const rb = document.getElementById('real');
+  const showReal = () => { rb.setAttribute('aria-pressed', String(onlyReal)); list.classList.toggle('onlyreal', onlyReal); };
+  rb.onclick = () => { onlyReal = !onlyReal; ls.set('jp_cram_real', onlyReal ? '1' : '0'); showReal(); }; showReal();
   const trb = document.getElementById('trs');
   const showTr = () => { trb.setAttribute('aria-pressed', String(readTr)); list.classList.toggle('notr', !readTr); };
   trb.onclick = () => { readTr = !readTr; ls.set('jp_cram_tr', readTr ? '1' : '0'); showTr(); }; showTr();
