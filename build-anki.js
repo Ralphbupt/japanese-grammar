@@ -166,6 +166,7 @@ function parseGrammarSections(md) {
     let meaningEn = null;
     let examples = null;
     let examplesEn = null;
+    let looseExamples = false;
     for (let i = 1; i < subSections.length; i++) {
       const sub = subSections[i];
       const headerLine = sub.split("\n")[0];
@@ -175,9 +176,12 @@ function parseGrammarSections(md) {
       if (!meaning && /含义|含意|用法|核心|意味|Meaning|Usage|Nuance/i.test(headerLine)) {
         meaning = bilingual.zh || bilingual.en;
         meaningEn = bilingual.en;
-      } else if (!examples && /例句|例文|Example/i.test(headerLine)) {
+      } else if (/例句|例文|Example/i.test(headerLine) && (!examples || (looseExamples && /例句|例文|Example sentence/i.test(headerLine)))) {
+        // A real 例句 / "Example sentences" header wins over an earlier
+        // "完整示例||Complete examples" conjugation table (lesson07 た形).
         examples = bilingual.zh || bilingual.en;
         examplesEn = bilingual.en;
+        looseExamples = !/例句|例文|Example sentence/i.test(headerLine);
       }
     }
     if (!meaning) {
@@ -203,9 +207,12 @@ function parseGrammarSections(md) {
       const headingText = h2[2].trim();
       // Include 〜 in the body character class so terms like
       // "〜です / 〜ではありません" don't get truncated at the second 〜.
-      const termMatch = headingText.match(/^([〜～]?[〜～぀-ゟ゠-ヿー一-鿿/・\s,，、]+)/);
+      // A one- or two-kana optional part followed by more kana stays in the
+      // term: "〜（よ）うが" (else the term was just "〜"); "〜つつ（も）（…）" keeps "〜つつ".
+      const termMatch = headingText.match(/^((?:[〜～぀-ゟ゠-ヿー一-鿿/・\s,，、]|[（(][぀-ゟ]{1,2}[）)](?=[぀-ゟ]))+)/);
       const term = termMatch ? termMatch[1].trim() : headingText;
-      const descMatch = headingText.match(/[（(]([^）)]+)[）)]/);
+      // The gloss: the first bracket after the term that isn't a kana tail like "（も）".
+      const descMatch = [...headingText.slice(termMatch ? termMatch[1].length : 0).matchAll(/[（(]([^）)]+)[）)]/g)].find((m) => !/^[぀-ゟ]{1,2}$/.test(m[1]));
       const description = descMatch ? descMatch[1].trim() : null;
       // English description from the English heading half. Two formats exist:
       //   "…||1. 〜はもとより (Not to mention…)"   → trailing parenthetical
