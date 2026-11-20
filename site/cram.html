@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src https://api.jpnotes.dev http://localhost:8788; media-src https://api.jpnotes.dev http://localhost:8788; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>N2 真题语法突击</title>
+<style>
+:root{--bg:#f7f5f0;--card:#fff;--ink:#1f2a37;--mute:#6b7280;--line:#e5e1d8;--hi:#fff4d6;--ui:#24324a;--red:#b4232a}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--card:#1c2027;--ink:#e6e8eb;--mute:#9aa3ad;--line:#2b313a;--hi:#3a3220;--ui:#9db4d8;--red:#e94560}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,"PingFang SC","Hiragino Sans",sans-serif}
+header{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);padding:10px 16px}
+.wrap{max-width:760px;margin:0 auto}
+h1{font-size:17px;margin:0 0 6px}
+.bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+button,select{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:5px 10px;cursor:pointer}
+button.on{background:var(--ui);color:var(--card);border-color:var(--ui)}
+#play{width:44px;height:36px;font-size:18px;background:var(--ui);color:var(--card);border:0}
+#seek{flex:1;min-width:120px;accent-color:var(--ui)}
+#time{font-size:13px;color:var(--mute);font-variant-numeric:tabular-nums}
+main{padding:12px 16px 80px}
+.msg{text-align:center;color:var(--mute);margin:40px 0}.msg a{color:var(--ui)}
+.it{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:10px 0}
+.hd{display:flex;gap:10px;align-items:baseline}
+.no{color:var(--mute);font-size:13px;min-width:2.2em}
+.ln{cursor:pointer;border-radius:6px;padding:1px 4px;margin:0 -4px}
+.ln:hover{background:var(--line)}
+.ln.cur{background:var(--hi)}
+.g{font-size:19px;font-weight:600;color:var(--red)}
+.zh{color:var(--mute);margin-left:2.6em}
+.ex{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:17px;margin:4px 0 0 2.6em;display:block}
+.yr{font-size:12px;color:var(--mute);margin-left:2.6em}
+body.hidezh .zh{filter:blur(5px)}
+body.hidezh .zh:hover{filter:none}
+#q{font:inherit;font-size:14px;padding:5px 8px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);width:120px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>N2 历年真题语法突击 · <span id="cnt"></span></h1>
+  <div class="bar">
+    <button id="play" title="空格">▶</button>
+    <input id="seek" type="range" min="0" max="1000" value="0">
+    <span id="time">0:00</span>
+  </div>
+  <div class="bar" style="margin-top:6px">
+    <button data-mode="all" class="on">整体连播</button>
+    <button data-mode="one">一句一停</button>
+    <button data-mode="loop">单句循环</button>
+    <select id="rate"><option>0.8</option><option selected>1</option><option>1.2</option><option>1.5</option></select>
+    <button id="hz">遮释义</button>
+    <input id="q" placeholder="搜语法/序号">
+  </div>
+</div></header>
+<main class="wrap" id="list"></main>
+<audio id="a" crossorigin="anonymous" preload="metadata"></audio>
+<script>
+(async function () {
+  // Private page: the content comes from the account API, only for invited Google accounts.
+  const list = document.getElementById('list'), a = document.getElementById('a');
+  const say = (h) => { list.innerHTML = '<p class="msg">' + h + '</p>'; };
+  const local = new URLSearchParams(location.search).get('acct') === 'local' && /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+  const API = local ? 'http://localhost:8788' : 'https://api.jpnotes.dev';
+  let tok = ''; try { tok = (JSON.parse(localStorage.getItem('jp_acct')) || {}).token || ''; } catch (e) {}
+  if (!tok) return say('这一页只对受邀的 Google 账号开放。请先在 <a href="/">jpnotes.dev</a> 右上角的账号按钮里用 Google 登录。');
+  let d;
+  try {
+    const r = await fetch(API + '/cram/data', { headers: { Authorization: 'Bearer ' + tok } });
+    d = await r.json();
+    if (r.status === 401) return say('登录已过期，请回 <a href="/">jpnotes.dev</a> 重新登录。');
+    if (!r.ok) return say(r.status === 403 ? '这个账号不在受邀名单里。' : '加载失败：' + (d.error || r.status));
+  } catch (e) { return say('网络错误，刷新再试。'); }
+  const items = d.items, tm = d.timing;
+  a.src = API + d.audio;
+  const T = tm.lines, byKey = {};
+  T.forEach((l, i) => { l.i = i; byKey[l.n + l.k] = l; });
+  document.getElementById('cnt').textContent = items.length + ' 条';
+  const esc = s => String(s).replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+  const ln = (it, k, cls, txt) => byKey[it.n + k] ? `<span class="ln ${cls}" data-i="${byKey[it.n + k].i}">${txt}</span>` : `<span class="${cls}">${txt}</span>`;
+  list.innerHTML = items.map(it => `<div class="it" id="n${it.n}" data-s="${esc(it.n + ' ' + it.g + ' ' + it.zh)}">
+    <div class="hd"><span class="no">${it.n}</span>${ln(it, 'g', 'g', esc(it.g))}</div>
+    <div class="zh">${ln(it, 'zh', '', esc(it.zh))}</div>
+    ${ln(it, 'ex', 'ex', esc(it.ex))}
+    <div class="yr">${it.fixed ? '<b>原文有误，已更正</b> · ' : ''}${it.real === false ? '例句（非真题）' : esc([it.year, it.other && '其余：' + it.other].filter(Boolean).join(' · '))}</div></div>`).join('');
+  const els = [...list.querySelectorAll('.ln')], elOf = {};
+  els.forEach(e => elOf[e.dataset.i] = e);
+  let mode = 'all', cur = -1, stopAt = null;
+  const fmt = s => Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0');
+  function lineAt(t) { let lo = 0, hi = T.length - 1, r = -1; while (lo <= hi) { const m = (lo + hi) >> 1; if (T[m].s <= t + 0.05) { r = m; lo = m + 1; } else hi = m - 1; } return r; }
+  function mark(i) {
+    if (i === cur) return; if (elOf[cur]) elOf[cur].classList.remove('cur');
+    cur = i; const e = elOf[i]; if (!e) return; e.classList.add('cur');
+    const r = e.getBoundingClientRect(), top = document.querySelector('header').offsetHeight;
+    if (r.top < top + 10 || r.bottom > innerHeight - 40) window.scrollBy({ top: r.top - top - innerHeight * 0.3, behavior: 'smooth' });
+  }
+  function playLine(i) { const l = T[i]; a.currentTime = l.s; stopAt = mode === 'all' ? null : i; a.play(); mark(i); }
+  list.addEventListener('click', e => { const t = e.target.closest('.ln'); if (t) playLine(+t.dataset.i); });
+  a.addEventListener('timeupdate', () => {
+    const t = a.currentTime;
+    if (stopAt != null && t >= T[stopAt].e) {
+      if (mode === 'loop') { a.currentTime = T[stopAt].s; return; }
+      a.pause(); a.currentTime = T[stopAt].e; stopAt = null; return;
+    }
+    mark(lineAt(t));
+    document.getElementById('seek').value = Math.round(t / a.duration * 1000) || 0;
+    document.getElementById('time').textContent = fmt(t) + ' / ' + fmt(a.duration || tm.duration);
+  });
+  const pb = document.getElementById('play');
+  a.addEventListener('play', () => pb.textContent = '❚❚'); a.addEventListener('pause', () => pb.textContent = '▶');
+  pb.onclick = () => { if (a.paused) { if (mode !== 'all' && cur >= 0) playLine(cur); else a.play(); } else a.pause(); };
+  document.getElementById('seek').oninput = e => { a.currentTime = e.target.value / 1000 * a.duration; stopAt = null; };
+  document.querySelectorAll('[data-mode]').forEach(b => b.onclick = () => {
+    document.querySelectorAll('[data-mode]').forEach(x => x.classList.toggle('on', x === b)); mode = b.dataset.mode;
+    stopAt = mode === 'all' ? null : (cur >= 0 ? cur : null);
+  });
+  document.getElementById('rate').onchange = e => a.playbackRate = +e.target.value;
+  document.getElementById('hz').onclick = e => e.target.classList.toggle('on', document.body.classList.toggle('hidezh'));
+  document.getElementById('q').oninput = e => {
+    const q = e.target.value.trim(); list.querySelectorAll('.it').forEach(d => d.style.display = !q || d.dataset.s.includes(q) ? '' : 'none');
+  };
+  addEventListener('keydown', e => {
+    if (e.target.tagName === 'INPUT') return;
+    if (e.code === 'Space') { e.preventDefault(); pb.click(); }
+    if (e.key === 'ArrowRight' && cur < T.length - 1) playLine(cur + 1);
+    if (e.key === 'ArrowLeft' && cur > 0) playLine(cur - 1);
+  });
+  try { const s = +localStorage.n2cramT; if (s) a.currentTime = s; } catch (e) {}
+  setInterval(() => { try { localStorage.n2cramT = a.currentTime; } catch (e) {} }, 3000);
+})();
+</script>
+</body>
+</html>

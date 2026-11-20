@@ -427,8 +427,29 @@
       a.at ? '<span class="acct-ok">✓</span> ' + t('进度已是最新', 'Progress is up to date') + (a.moved ? t(' · 上次更新 ', ' · last change ') + time(a.moved) : '') : '';
     box.innerHTML = '<section class="acct-card"><div class="acct-id"><span class="acct-avatar" aria-hidden="true">' + esc((a.email || '?').charAt(0).toUpperCase()) + '</span>' +
       '<div><p class="acct-title">' + esc(a.email) + '</p><p class="acct-muted">' + line + '</p></div></div>' +
+      extrasHtml(a) +
       '<div class="acct-actions"><button type="button" class="acct-btn" data-acct="sync">' + t('立即同步', 'Sync now') + '</button><button type="button" class="acct-btn" data-acct="out">' + t('退出登录', 'Sign out') + '</button></div>' +
       '<p class="acct-fine">' + about() + ' · <button type="button" class="acct-link" data-acct="delete">' + t('删除账号和云端数据', 'Delete account and synced data') + '</button></p></section>' + progressHtml();
+  }
+  // Pages open only to invited Google accounts (account Worker, "Private extras").
+  // Asked once a day per sign-in; the answer is kept in jp_acct.x and dies with it.
+  var EXTRAS = { cram: ['/cram/', 'N2 真题语法突击（受邀）', 'N2 grammar cram (invited)'] }, extrasBusy = false;
+  function extrasHtml(a) {
+    var x = a.x;
+    if (!x || !(Date.now() - x.t < 864e5)) {
+      if (!extrasBusy) {
+        extrasBusy = true;
+        api('GET', '/extras').then(function (r) {
+          var b = acct();
+          if (b.token === a.token) { b.x = { t: Date.now(), l: (r.data && r.data.extras) || [] }; setAcct(b); render(); }
+        }).catch(function () {}).then(function () { extrasBusy = false; });
+      }
+      return '';
+    }
+    return (x.l || []).filter(function (k) { return EXTRAS[k]; }).map(function (k) {
+      var e = EXTRAS[k];
+      return '<p class="acct-muted"><a href="' + e[0] + '">' + esc(t(e[1], e[2])) + ' →</a></p>';
+    }).join('');
   }
   // The other way in, for readers who can't reach Google: a 6-digit code by email.
   function mailHtml() {

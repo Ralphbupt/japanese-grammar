@@ -227,6 +227,50 @@ async function putSync(env, me, input) {
   return { version: base + 1 };
 }
 
+// ─── Private extras ───
+// Pages only some readers may open: their accounts must have signed in with Google
+// and have an address on the CRAM_ALLOW secret (comma-separated). The content lives
+// in the private R2 bucket (binding PRIVATE), never in this public repo; the page
+// itself (/cram/) is an empty shell. The mp3 goes to an <audio> element, which can't
+// send the token, so it gets a short-lived signed address instead (secret CRAM_KEY).
+const CRAM_TTL = 12 * 3600;
+async function extras(env, me) {
+  const allow = String(env.CRAM_ALLOW || '').toLowerCase().split(',').map((s) => s.trim()).filter(Boolean);
+  if (!env.PRIVATE || !env.CRAM_KEY || !allow.includes(String(me.email).toLowerCase())) return [];
+  const g = await env.DB.prepare("SELECT 1 FROM identities WHERE user_id = ? AND provider = 'google'").bind(me.userId).first();
+  return g ? ['cram'] : [];
+}
+async function cramSig(env, exp) {
+  const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(env.CRAM_KEY), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
+  const sig = await crypto.subtle.sign('HMAC', key, new TextEncoder().encode('cram-audio|' + exp));
+  return [...new Uint8Array(sig)].map((b) => b.toString(16).padStart(2, '0')).join('').slice(0, 32);
+}
+async function cramData(env, me) {
+  if (!(await extras(env, me)).includes('cram')) throw new HttpError(403, 'Not on the list.');
+  const [items, timing] = await Promise.all(['cram/items.json', 'cram/timing.json'].map(async (k) => {
+    const o = await env.PRIVATE.get(k);
+    if (!o) throw new HttpError(404, 'Not found.');
+    return o.json();
+  }));
+  const exp = Math.floor(Date.now() / 1000) + CRAM_TTL;
+  return { items, timing, audio: '/cram/audio?e=' + exp + '&s=' + (await cramSig(env, exp)) };
+}
+async function cramAudio(req, env, url) {
+  const exp = +url.searchParams.get('e') || 0, s = url.searchParams.get('s') || '';
+  if (!env.PRIVATE || !env.CRAM_KEY || exp < Date.now() / 1000 || s !== (await cramSig(env, exp))) throw new HttpError(403, 'Link expired. Reload the page.');
+  const obj = await env.PRIVATE.get('cram/n2-grammar.mp3', { range: req.headers });
+  if (!obj) throw new HttpError(404, 'Not found.');
+  const h = new Headers({ 'Content-Type': 'audio/mpeg', 'Accept-Ranges': 'bytes', 'Cache-Control': 'private, max-age=43200', ETag: obj.httpEtag });
+  if (obj.range && req.headers.has('Range')) {
+    const off = obj.range.offset || 0, len = obj.range.length != null ? obj.range.length : obj.size - off;
+    h.set('Content-Range', 'bytes ' + off + '-' + (off + len - 1) + '/' + obj.size);
+    h.set('Content-Length', String(len));
+    return new Response(obj.body, { status: 206, headers: h });
+  }
+  h.set('Content-Length', String(obj.size));
+  return new Response(obj.body, { headers: h });
+}
+
 async function route(req, env, url, local) {
   const path = url.pathname.replace(/\/+$/, '') || '/', method = req.method;
   if (method === 'POST' && path === '/auth/google') {
@@ -239,7 +283,10 @@ async function route(req, env, url, local) {
   }
   if (method === 'POST' && path === '/auth/email/start') return reply(await emailStart(req, env, await body(req, 2000), local));
   if (method === 'POST' && path === '/auth/email/verify') return reply(await emailVerify(req, env, await body(req, 2000)));
+  if (method === 'GET' && path === '/cram/audio') return cramAudio(req, env, url);
   const me = await session(req, env);
+  if (method === 'GET' && path === '/extras') return reply({ extras: await extras(env, me) });
+  if (method === 'GET' && path === '/cram/data') return reply(await cramData(env, me));
   if (method === 'GET' && path === '/me') return reply({ email: me.email });
   if (method === 'POST' && path === '/auth/logout') {
     await env.DB.prepare('DELETE FROM sessions WHERE hash = ?').bind(me.hash).run();
