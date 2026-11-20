@@ -3250,6 +3250,11 @@ ${AI_SCRIPT}
   // QR codes for the share menu's 微信扫一扫 (loaded only when it's opened).
   fs.copyFileSync(require.resolve("qrcode-generator/qrcode.js"), path.join(__dirname, "dist", "qrcode.js"));
   fs.copyFileSync(path.join(__dirname, "site", "sw.js"), path.join(__dirname, "dist", "sw.js"));
+  // /cram/: a private page for invited Google accounts (noindex, not in the sitemap,
+  // linked only from their account card). An empty shell; the content comes from
+  // api.jpnotes.dev (worker/src/account.js, "Private extras").
+  fs.mkdirSync(path.join(__dirname, "dist", "cram"), { recursive: true });
+  fs.copyFileSync(path.join(__dirname, "site", "cram.html"), path.join(__dirname, "dist", "cram", "index.html"));
   for (const f of ["giscus-paper.css", "giscus-sepia.css"]) {
     fs.copyFileSync(path.join(__dirname, "site", f), path.join(__dirname, "dist", f));
   }
@@ -5453,7 +5458,7 @@ Each \`/lessonNN/\` page contains:
     // previews) then decode as Latin-1 — 日本語 and emoji came out as mojibake / "??".
     // Pages live at /, /x/ and /x/y/; a placeholder never matches a file with an extension.
     const HTML_UTF8 = ["/", "/:a/", "/:a/:b/"].map((p) => `${p}\n  Content-Type: text/html; charset=utf-8\n`).join("\n");
-    fs.writeFileSync(path.join(dist, "_headers"), "/*\n  X-Content-Type-Options: nosniff\n\n" + HTML_UTF8 + "\n/anki/*.apkg\n  Content-Type: application/octet-stream\n  Content-Disposition: attachment\n", "utf-8");
+    fs.writeFileSync(path.join(dist, "_headers"), "/*\n  X-Content-Type-Options: nosniff\n\n" + HTML_UTF8 + "\n/anki/*.apkg\n  Content-Type: application/octet-stream\n  Content-Disposition: attachment\n\n/cram/*\n  X-Robots-Tag: noindex, nofollow\n", "utf-8");
     // AdSense: the publisher authorised to sell ads on this site (the head meta tag is the verification).
     fs.writeFileSync(path.join(dist, "ads.txt"), `google.com, ${ADSENSE_PUB.replace(/^ca-/, "")}, DIRECT, f08c47fec0942fa0\n`, "utf-8");
     console.log(`  Generated dist/_redirects (${rules.length} rules), dist/_headers, dist/ads.txt`);
