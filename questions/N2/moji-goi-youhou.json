@@ -1570,42 +1570,6 @@
     ]
   },
   {
-    "id": "n2-mg-545",
-    "type": "youhou",
-    "difficulty": 2,
-    "stem": "<<破れる>>",
-    "options": [
-      "引っ張ったら、ズボンのポケットが破れた。",
-      "強風で、ビルの窓ガラスが破れた。",
-      "机から落として、コップが破れてしまった。",
-      "地震で、駅前の道路が破れた。"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "破れる：纸、布等薄的东西被撕开、破损。正确句：一拉，裤子的口袋就破了。",
-      "en": "破れる: thin things like paper or cloth tearing. Correct: When I pulled it, the pocket of my trousers tore."
-    },
-    "why": {
-      "zh": "线索：正确句里破的是布做的「ポケット」，薄而软的东西才用「破れる」。\n词义：「破れる」（やぶれる）＝纸、布、袋子等被扯破，常说「紙が破れる」「服が破れる」「夢が破れる」。",
-      "en": "Clue: in the right sentence what tears is a fabric 「ポケット」; 「破れる」 is for thin, soft things.\nMeaning: 「破れる」 (やぶれる) is to tear, of paper, cloth, bags: 「紙が破れる」, 「服が破れる」, 「夢が破れる」 (a dream is shattered)."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "玻璃是「割れる」。",
-        "en": "Glass is 「割れる」."
-      },
-      {
-        "zh": "杯子是「割れる」。",
-        "en": "A cup is 「割れる」."
-      },
-      {
-        "zh": "道路出现裂缝是「ひびが入る」「割れる」，不用「破れる」。",
-        "en": "A cracked road is 「ひびが入る」 or 「割れる」, not 「破れる」."
-      }
-    ]
-  },
-  {
     "id": "n2-mg-546",
     "type": "youhou",
     "difficulty": 3,
@@ -1750,42 +1714,6 @@
     ]
   },
   {
-    "id": "n2-mg-550",
-    "type": "youhou",
-    "difficulty": 2,
-    "stem": "<<引用>>",
-    "options": [
-      "論文に他人の文章を引用するときは、出典を書く。",
-      "銀行で、貯金から十万円を引用した。",
-      "友達から小説を引用して、一晩で読み終えた。",
-      "辞書で言葉の意味を引用してから、作文を書いた。"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "引用：在文章中引用别人的话、文字。正确句：论文里引用别人的文字时，要写明出处。",
-      "en": "引用: quoting someone else's words in one's own writing. Correct: When quoting another person's text in a paper, state the source."
-    },
-    "why": {
-      "zh": "线索：正确句里被「引用」的是「他人の文章」，并要「出典を書く」。\n词义：「引用」（いんよう）＝引用他人的话或文章，常说「文章を引用する」「引用元」。",
-      "en": "Clue: in the right sentence what is 「引用」ed is 「他人の文章」, with a 「出典」 to cite.\nMeaning: 「引用」 (いんよう) is quoting another's words or text: 「文章を引用する」, 「引用元」 (the source quoted)."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "从银行取钱是「引き出した」「下ろした」。",
-        "en": "Taking money out of a bank is 「引き出した」 or 「下ろした」."
-      },
-      {
-        "zh": "向朋友借书是「借りて」。",
-        "en": "Getting a book from a friend is 「借りて」."
-      },
-      {
-        "zh": "查词典是「引いて」。",
-        "en": "Looking up a dictionary is 「引いて」."
-      }
-    ]
-  },
-  {
     "id": "n2-mg-551",
     "type": "youhou",
     "difficulty": 2,
@@ -1890,42 +1818,6 @@
       {
         "zh": "量尺寸是「測る」。",
         "en": "Taking a size is 「測る」."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-554",
-    "type": "youhou",
-    "difficulty": 2,
-    "stem": "<<保存>>",
-    "options": [
-      "作った資料は、念のためUSBメモリにも保存しておいた。",
-      "夏休みの予定は、前もって家族で保存しておいた。",
-      "電車の中で、友達のために席を保存しておいた。",
-      "毎月の給料から、三万円ずつ旅行のために保存している。"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "保存：保持原样存放、存档。正确句：做好的资料为保险起见也存进了U盘。",
-      "en": "保存: keeping something intact, saving it. Correct: Just in case, I also saved the document I made on a USB stick."
-    },
-    "why": {
-      "zh": "线索：正确句里「保存」的是做好的「資料」，目的是原样留存。\n词义：「保存」（ほぞん）＝保持原样、存储，常说「データを保存する」「冷蔵庫で保存する」「保存食」。",
-      "en": "Clue: in the right sentence what is 「保存」d is the finished 「資料」, kept as it is.\nMeaning: 「保存」 (ほぞん) is keeping something in its present state, saving: 「データを保存する」, 「冷蔵庫で保存する」, 「保存食」 (preserved food)."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "安排计划是「立てて」「決めて」。",
-        "en": "Making plans is 「立てて」 or 「決めて」."
-      },
-      {
-        "zh": "占座位是「取っておいた」「確保した」。",
-        "en": "Holding a seat is 「取っておいた」 or 「確保した」."
-      },
-      {
-        "zh": "存钱是「貯金して」「貯めて」。",
-        "en": "Saving money is 「貯金して」 or 「貯めて」."
       }
     ]
   },
@@ -2146,42 +2038,6 @@
     ]
   },
   {
-    "id": "n2-mg-561",
-    "type": "youhou",
-    "difficulty": 2,
-    "stem": "<<偉大>>",
-    "options": [
-      "彼は偉大な科学者として、今も世界中で尊敬されている。",
-      "この荷物は偉大で、一人では持ち上げられない。",
-      "偉大な声で歌ったので、会場の後ろまで聞こえた。",
-      "母は背が偉大なので、遠くからでもすぐ分かる。"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "偉大：（人物、功绩）伟大、杰出。正确句：他作为伟大的科学家，至今仍受到全世界尊敬。",
-      "en": "偉大: great, as of a person or an achievement. Correct: He is still respected around the world as a great scientist."
-    },
-    "why": {
-      "zh": "线索：正确句里「偉大な」修饰「科学者」，指人物的成就卓越。\n词义：「偉大」（いだい）＝人物、业绩伟大，常说「偉大な業績」「偉大な指導者」。",
-      "en": "Clue: in the right sentence 「偉大な」 modifies 「科学者」, a person of outstanding achievement.\nMeaning: 「偉大」 (いだい) is great, of persons and achievements: 「偉大な業績」, 「偉大な指導者」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "东西体积大是「大きい」。",
-        "en": "A big item is 「大きい」."
-      },
-      {
-        "zh": "声音大是「大きな声」。",
-        "en": "A loud voice is 「大きな声」."
-      },
-      {
-        "zh": "个子高是「背が高い」。",
-        "en": "Being tall is 「背が高い」."
-      }
-    ]
-  },
-  {
     "id": "n2-mg-562",
     "type": "youhou",
     "difficulty": 2,
@@ -2322,42 +2178,6 @@
       {
         "zh": "英语水平是「力」「語学力」。",
         "en": "Skill in English is 「力」 or 「語学力」."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-566",
-    "type": "youhou",
-    "difficulty": 2,
-    "stem": "<<急激>>",
-    "options": [
-      "去年から、この町の人口は急激に増えている。",
-      "急激に電車に乗り遅れそうだったので、走って駅へ向かった。",
-      "彼は急激な足取りで、会議室へ入っていった。",
-      "急激な用事ができて、会議を早退した。"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "急激：变化来得又快又猛。正确句：从去年起，这个镇的人口急剧增加。",
-      "en": "急激: rapid and sharp, of a change. Correct: Since last year this town's population has been rising rapidly."
-    },
-    "why": {
-      "zh": "线索：正确句里「急激に増えている」是数量变化又快又大。\n词义：「急激」（きゅうげき）＝变化又快又猛，常说「急激な変化」「急激に悪化する」。",
-      "en": "Clue: in the right sentence 「急激に増えている」 is a change in number that is both fast and large.\nMeaning: 「急激」 (きゅうげき) is sudden and drastic change: 「急激な変化」, 「急激に悪化する」 (to worsen sharply)."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "差点赶不上电车是「急いで」「慌てて」。",
-        "en": "Nearly missing a train is 「急いで」 or 「慌てて」."
-      },
-      {
-        "zh": "步伐匆忙是「急ぎ足」。",
-        "en": "A hurried pace is 「急ぎ足」."
-      },
-      {
-        "zh": "突然有事是「急な用事」。",
-        "en": "A sudden errand is 「急な用事」."
       }
     ]
   },

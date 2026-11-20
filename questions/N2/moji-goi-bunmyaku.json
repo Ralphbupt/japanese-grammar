@@ -3456,42 +3456,6 @@
     ]
   },
   {
-    "id": "n2-mg-395",
-    "type": "bunmyaku",
-    "difficulty": 1,
-    "stem": "栄養の（　）を考えて、毎日の食事のメニューを決めている。",
-    "options": [
-      "バランス",
-      "ボリューム",
-      "スタイル",
-      "レベル"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "考虑营养均衡来决定每天的菜单。",
-      "en": "I decide my daily menu with the balance of nutrients in mind."
-    },
-    "why": {
-      "zh": "线索：「栄養の（　）を考えて」——营养搭配是否均衡。\n词义：「バランス」＝平衡、均衡，常说「栄養のバランス」「バランスを取る」。",
-      "en": "Clue: 「栄養の（　）を考えて」 — whether nutrients are well proportioned.\nMeaning: 「バランス」 is balance: 「栄養のバランス」, 「バランスを取る」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「ボリューム」是分量、音量，不是搭配均衡。",
-        "en": "「ボリューム」 is volume or portion size, not proportion."
-      },
-      {
-        "zh": "「スタイル」是样式、身材，不说「栄養のスタイル」。",
-        "en": "「スタイル」 is style or figure; 「栄養のスタイル」 isn't said."
-      },
-      {
-        "zh": "「レベル」是水平，不说「栄養のレベルを考えて決める」来表示搭配。",
-        "en": "「レベル」 is a level; it doesn't mean proportion."
-      }
-    ]
-  },
-  {
     "id": "n2-mg-396",
     "type": "bunmyaku",
     "difficulty": 2,
@@ -3632,78 +3596,6 @@
       {
         "zh": "「コメント」是评论，不能「感じる」。",
         "en": "「コメント」 is a comment; one doesn't 'feel' it."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-701",
-    "type": "bunmyaku",
-    "difficulty": 2,
-    "stem": "彼の研究は国内だけでなく海外でも高く（　）されている。",
-    "options": [
-      "評価",
-      "評判",
-      "批評",
-      "評論"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "他的研究不仅在国内，在国外也得到很高的评价。",
-      "en": "His research is highly regarded not only in Japan but also overseas."
-    },
-    "why": {
-      "zh": "线索：「高く」「されている」——被给予高度的评价。\n词义：「評価」＝评价、认可，常说「高く評価する」「評価が分かれる」。",
-      "en": "Clue: 「高く」 and 「されている」 — being given high marks.\nMeaning: 「評価」 is evaluation or appreciation: 「高く評価する」, 「評価が分かれる」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「評判」是名声、口碑，说「評判がいい」，不说「高く評判される」。",
-        "en": "「評判」 is reputation: 「評判がいい」, not 「高く評判される」."
-      },
-      {
-        "zh": "「批評」是评论、批评，不与「高く」搭配。",
-        "en": "「批評」 is critique; it doesn't take 「高く」."
-      },
-      {
-        "zh": "「評論」是评论文章，不能表示被认可。",
-        "en": "「評論」 is commentary, not recognition."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-702",
-    "type": "bunmyaku",
-    "difficulty": 2,
-    "stem": "データの入力がすべて（　）したら、確認ボタンを押してください。",
-    "options": [
-      "完了",
-      "完成",
-      "完全",
-      "完結"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "数据全部输入完毕后，请按确认键。",
-      "en": "When all the data has been entered, please press the confirm button."
-    },
-    "why": {
-      "zh": "线索：「入力が」「したら、ボタンを押して」——操作做完。\n词义：「完了」＝（手续、操作）完毕，常说「作業が完了する」「準備完了」。",
-      "en": "Clue: 「入力が」 and 「したら、ボタンを押して」 — a procedure being finished.\nMeaning: 「完了」 is completion of a procedure: 「作業が完了する」, 「準備完了」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「完成」是作品、建筑做成，「入力が完成」不自然。",
-        "en": "「完成」 is for a finished work or building; 「入力が完成」 is unnatural."
-      },
-      {
-        "zh": "「完全」是完整无缺，不作「する」动词。",
-        "en": "「完全」 is complete or perfect, not a する-verb."
-      },
-      {
-        "zh": "「完結」是故事、连载结束，不用于输入操作。",
-        "en": "「完結」 is the end of a story or series, not a task."
       }
     ]
   },
@@ -3888,42 +3780,6 @@
     ]
   },
   {
-    "id": "n2-mg-708",
-    "type": "bunmyaku",
-    "difficulty": 2,
-    "stem": "この椅子は、座り心地がいいだけでなく（　）も優れていて、インテリアにもなる。",
-    "options": [
-      "デザイン",
-      "サイズ",
-      "タイプ",
-      "ナンバー"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "这把椅子不仅坐着舒服，设计也出色，还能当室内装饰。",
-      "en": "This chair is not only comfortable to sit in but also well designed, and works as interior decor."
-    },
-    "why": {
-      "zh": "线索：「インテリアにもなる」——外观设计出色。\n词义：「デザイン」＝设计、外形，常说「デザインがいい」「デザインを手がける」。",
-      "en": "Clue: 「インテリアにもなる」 — an excellent look.\nMeaning: 「デザイン」 is design or look: 「デザインがいい」, 「デザインを手がける」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「サイズ」是大小，说“尺寸出色”不能成为“能当装饰”的理由。",
-        "en": "「サイズ」 is size, not a reason it works as decor."
-      },
-      {
-        "zh": "「タイプ」是类型，不说「タイプが優れている」。",
-        "en": "「タイプ」 is type; 「タイプが優れている」 isn't said."
-      },
-      {
-        "zh": "「ナンバー」是号码，不能“优秀”。",
-        "en": "「ナンバー」 is a number; it can't be 'excellent'."
-      }
-    ]
-  },
-  {
     "id": "n2-mg-709",
     "type": "bunmyaku",
     "difficulty": 2,
@@ -4032,42 +3888,6 @@
     ]
   },
   {
-    "id": "n2-mg-712",
-    "type": "bunmyaku",
-    "difficulty": 2,
-    "stem": "何度説明を聞いても、この機械の使い方が（　）分からない。",
-    "options": [
-      "さっぱり",
-      "ぎっしり",
-      "うっかり",
-      "しっかり"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "听了好几遍说明，这台机器的用法还是完全不懂。",
-      "en": "No matter how often I hear the explanation, I still have no idea how to use this machine."
-    },
-    "why": {
-      "zh": "线索：「何度説明を聞いても」＋「分からない」——怎么听都完全不明白。\n词义：「さっぱり」（～ない）＝完全不……，常说「さっぱり分からない」「さっぱり売れない」。",
-      "en": "Clue: 「何度説明を聞いても」 plus 「分からない」 — still understood nothing at all.\nMeaning: 「さっぱり」 with a negative means not at all: 「さっぱり分からない」, 「さっぱり売れない」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「ぎっしり」是塞得满满的，不能修饰“不懂”。",
-        "en": "「ぎっしり」 means packed tight; it can’t modify \"don’t understand\"."
-      },
-      {
-        "zh": "「うっかり」是不小心，不表示程度。",
-        "en": "「うっかり」 is carelessly; it doesn’t express \"not at all\"."
-      },
-      {
-        "zh": "「しっかり」是牢固、扎实，与否定的「分からない」意思相反。",
-        "en": "「しっかり」 means firmly or properly; it clashes with the negative 「分からない」."
-      }
-    ]
-  },
-  {
     "id": "n2-mg-713",
     "type": "bunmyaku",
     "difficulty": 2,
@@ -4172,42 +3992,6 @@
       {
         "zh": "「ふらふら」是头晕站不稳，不能形容电影院。",
         "en": "「ふらふら」 means unsteady or dizzy; it can’t describe a cinema."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-716",
-    "type": "bunmyaku",
-    "difficulty": 1,
-    "stem": "このバンドは、他のどのバンドにもまねできない（　）の世界観を持っている。",
-    "options": [
-      "独特",
-      "特定",
-      "一般",
-      "共通"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "这支乐队拥有任何其他乐队都模仿不了的独特世界观。",
-      "en": "This band has a distinctive worldview that no other band can imitate."
-    },
-    "why": {
-      "zh": "线索：「他のどのバンドにもまねできない」——只有它才有的。\n词义：「独特」（どくとく）＝独有的、与众不同，常说「独特の雰囲気」「独特な味」。",
-      "en": "Clue: 「他のどのバンドにもまねできない」 — something only this band has.\nMeaning: 「独特」 (どくとく) means unique, distinctive: 「独特の雰囲気」, 「独特な味」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「特定」是特别指定的，不表示“独有、无法模仿”。",
-        "en": "「特定」 means specified or particular, not \"unique and inimitable\"."
-      },
-      {
-        "zh": "「一般」是普通，与「まねできない」矛盾。",
-        "en": "「一般」 means ordinary, contradicting 「まねできない」."
-      },
-      {
-        "zh": "「共通」是共有，与“别人学不来”相反。",
-        "en": "「共通」 means shared in common, the opposite of \"no one else can copy\"."
       }
     ]
   },
@@ -4392,114 +4176,6 @@
     ]
   },
   {
-    "id": "n2-mg-722",
-    "type": "bunmyaku",
-    "difficulty": 2,
-    "stem": "船は嵐の中、あっという間に海に（　）しまった。",
-    "options": [
-      "沈んで",
-      "潜って",
-      "溺れて",
-      "漂って"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "船在暴风雨中转眼间就沉入了海里。",
-      "en": "The ship sank into the sea in no time during the storm."
-    },
-    "why": {
-      "zh": "线索：「船」「嵐」「あっという間に」——整个没入水中而去。\n词义：「沈む」＝沉入水中、（太阳）落下、情绪低落，常说「船が沈む」「夕日が沈む」。",
-      "en": "Clue: 「船」, 「嵐」 and 「あっという間に」 — it went down beneath the water.\nMeaning: 「沈む」 means to sink, or (a sun) to set, or feel down: 「船が沈む」, 「夕日が沈む」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「潜る」是人主动潜入水中，船不会“潜って”（除潜水艇）。",
-        "en": "「潜る」 is to dive on purpose; an ordinary ship doesn’t do that."
-      },
-      {
-        "zh": "「溺れる」是人在水里喘不上气，主语不能是船。",
-        "en": "「溺れる」 is for people drowning; a ship can’t be the subject."
-      },
-      {
-        "zh": "「漂う」是飘浮，与「あっという間に」下沉矛盾。",
-        "en": "「漂う」 means drifting on the surface, contradicting a quick sinking."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-723",
-    "type": "bunmyaku",
-    "difficulty": 1,
-    "stem": "彼は手先が（　）で、壊れた家具も自分で直してしまう。",
-    "options": [
-      "器用",
-      "正直",
-      "丈夫",
-      "柔軟"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "他手很巧，坏了的家具也自己修好。",
-      "en": "He’s good with his hands and repairs broken furniture himself."
-    },
-    "why": {
-      "zh": "线索：「手先が」「自分で直してしまう」——手上的活做得灵巧。\n词义：「器用」（きよう）＝手巧、能干，常说「手先が器用」「器用に立ち回る」。",
-      "en": "Clue: 「手先が」 and 「自分で直してしまう」 — skilful handwork.\nMeaning: 「器用」 (きよう) means dexterous, handy: 「手先が器用」, 「器用に立ち回る」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「正直」是诚实，不说「手先が正直」。",
-        "en": "「正直」 is honest; 「手先が正直」 isn’t said."
-      },
-      {
-        "zh": "「丈夫」是结实，手先不说「丈夫」，也不能让他会修家具。",
-        "en": "「丈夫」 means sturdy; it isn’t said of fingertips and doesn’t explain the repairs."
-      },
-      {
-        "zh": "「柔軟」是柔软、灵活（身体、想法），不是手巧。",
-        "en": "「柔軟」 means flexible (body, thinking), not manual skill."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-724",
-    "type": "bunmyaku",
-    "difficulty": 1,
-    "stem": "大学時代から（　）友人が、来月結婚することになった。",
-    "options": [
-      "親しい",
-      "珍しい",
-      "恋しい",
-      "怪しい"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "从大学时代起就很亲密的朋友，下个月要结婚了。",
-      "en": "A close friend of mine since university is getting married next month."
-    },
-    "why": {
-      "zh": "线索：「友人」＋「大学時代から」——长期来往、关系好。\n词义：「親しい」（したしい）＝亲密、关系好，常说「親しい友人」「親しくなる」。",
-      "en": "Clue: 「友人」 plus 「大学時代から」 — a long, good relationship.\nMeaning: 「親しい」 (したしい) means close, on good terms: 「親しい友人」, 「親しくなる」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「珍しい」是稀奇，与“从大学时代起”的交往无关。",
-        "en": "「珍しい」 means rare; it doesn’t suit a long-time friend."
-      },
-      {
-        "zh": "「恋しい」是思念、眷恋，通常不修饰友人。",
-        "en": "「恋しい」 means longing for something; it doesn’t modify a friend this way."
-      },
-      {
-        "zh": "「怪しい」是可疑，不会这样形容朋友。",
-        "en": "「怪しい」 means suspicious; it isn’t how you’d describe a friend."
-      }
-    ]
-  },
-  {
     "id": "n2-mg-725",
     "type": "bunmyaku",
     "difficulty": 2,
@@ -4680,42 +4356,6 @@
     ]
   },
   {
-    "id": "n2-mg-730",
-    "type": "bunmyaku",
-    "difficulty": 2,
-    "stem": "長引く不況が、多くの若者から将来への希望を（　）しまった。",
-    "options": [
-      "奪って",
-      "盗んで",
-      "削って",
-      "抜いて"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "长期的不景气夺走了许多年轻人对未来的希望。",
-      "en": "The prolonged recession has robbed many young people of their hope for the future."
-    },
-    "why": {
-      "zh": "线索：「若者から」「希望を」——从对方那里强行拿走（抽象的东西）。\n词义：「奪う」（うばう）＝夺走、剥夺，常说「命を奪う」「自由を奪う」「目を奪われる」。",
-      "en": "Clue: 「若者から」 and 「希望を」 — forcibly taking something (abstract) from them.\nMeaning: 「奪う」 (うばう) means to take away or deprive: 「命を奪う」, 「自由を奪う」, 「目を奪われる」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「盗む」是偷东西，不说“偷走希望”。",
-        "en": "「盗む」 is stealing an object; you don’t steal hope."
-      },
-      {
-        "zh": "「削る」是削减、削去，不是夺走希望。",
-        "en": "「削る」 is shaving or cutting down, not depriving of hope."
-      },
-      {
-        "zh": "「抜く」是拔出、超过，不搭「希望を」。",
-        "en": "「抜く」 is pulling out or surpassing; it doesn’t take 「希望を」."
-      }
-    ]
-  },
-  {
     "id": "n2-mg-731",
     "type": "bunmyaku",
     "difficulty": 1,
@@ -4748,78 +4388,6 @@
       {
         "zh": "「ぴかぴか」是闪闪发亮，与湿度无关。",
         "en": "「ぴかぴか」 is shiny, unrelated to humidity."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-732",
-    "type": "bunmyaku",
-    "difficulty": 2,
-    "stem": "会議で、全員の都合を（　）日程を決めるのは意外と難しい。",
-    "options": [
-      "合わせて",
-      "重ねて",
-      "揃えて",
-      "寄せて"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "要配合所有人的时间来定日程，意外地难。",
-      "en": "Fixing a schedule that fits everyone’s availability is surprisingly hard."
-    },
-    "why": {
-      "zh": "线索：「全員の都合」「日程を決める」——使日程与大家的时间相吻合。\n词义：「合わせる」＝使一致、配合，常说「都合を合わせる」「時間を合わせる」「力を合わせる」。",
-      "en": "Clue: 「全員の都合」 and 「日程を決める」 — making the schedule match everyone’s availability.\nMeaning: 「合わせる」 means to match or adjust to: 「都合を合わせる」, 「時間を合わせる」, 「力を合わせる」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「重ねる」是叠放、反复，不说「都合を重ねる」。",
-        "en": "「重ねる」 is piling up or repeating; 「都合を重ねる」 isn’t said."
-      },
-      {
-        "zh": "「揃える」是使齐全、整齐（数量、种类），不搭「都合」。",
-        "en": "「揃える」 means to gather or line up items; it doesn’t go with 「都合」."
-      },
-      {
-        "zh": "「寄せる」是靠近、聚拢，不用于配合时间。",
-        "en": "「寄せる」 means to bring close; it isn’t used for adjusting times."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-733",
-    "type": "bunmyaku",
-    "difficulty": 2,
-    "stem": "この二つの草は見た目がそっくりで、素人には（　）がつかない。",
-    "options": [
-      "区別",
-      "差別",
-      "分別",
-      "分類"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "这两种草外观一模一样，外行人分辨不出来。",
-      "en": "These two plants look identical, and amateurs can’t tell them apart."
-    },
-    "why": {
-      "zh": "线索：「そっくり」「素人には」「がつかない」——分辨不出不同。\n词义：「区別」（くべつ）＝区分、分辨，常说「区別がつかない」「区別する」。",
-      "en": "Clue: 「そっくり」, 「素人には」 and 「がつかない」 — unable to tell them apart.\nMeaning: 「区別」 (くべつ) is distinguishing: 「区別がつかない」, 「区別する」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「差別」是歧视（或差别待遇），不是分辨外观。",
-        "en": "「差別」 is discrimination, not telling things apart by looks."
-      },
-      {
-        "zh": "「分別」（ふんべつ）是明辨是非的判断力，说「分別がつかない」指不懂事理，意思不同。",
-        "en": "「分別」 (ふんべつ) is discretion or sense; 「分別がつかない」 means lacking judgment, a different meaning."
-      },
-      {
-        "zh": "「分類」是把东西归类，不说「分類がつかない」。",
-        "en": "「分類」 is sorting into categories; 「分類がつかない」 isn’t the phrase."
       }
     ]
   },
@@ -4896,42 +4464,6 @@
     ]
   },
   {
-    "id": "n2-mg-736",
-    "type": "bunmyaku",
-    "difficulty": 1,
-    "stem": "一人暮らしを始めた息子がどうしているか、（　）を見に行った。",
-    "options": [
-      "様子",
-      "状態",
-      "姿",
-      "態度"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "去看看开始独居的儿子过得怎么样。",
-      "en": "I went to see how my son, who had just started living alone, was doing."
-    },
-    "why": {
-      "zh": "线索：「どうしているか」「見に行った」——去看看情况。\n词义：「様子」（ようす）＝情况、模样，常说「様子を見る」「様子を見に行く」。",
-      "en": "Clue: 「どうしているか」 and 「見に行った」 — going to see how things are.\nMeaning: 「様子」 (ようす) means how things are: 「様子を見る」, 「様子を見に行く」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「状態」是物或身体的状况，说「状態を見に行く」不自然，也不用于了解近况。",
-        "en": "「状態」 is a condition of things or health; 「状態を見に行く」 sounds odd."
-      },
-      {
-        "zh": "「姿」是外形、身影，不指“过得怎么样”。",
-        "en": "「姿」 is a figure or appearance, not \"how he is getting on\"."
-      },
-      {
-        "zh": "「態度」是待人处事的表现，不能「見に行く」。",
-        "en": "「態度」 is one’s attitude; you don’t go to see it."
-      }
-    ]
-  },
-  {
     "id": "n2-mg-737",
     "type": "bunmyaku",
     "difficulty": 2,
@@ -4964,42 +4496,6 @@
       {
         "zh": "「明らか」是明显，不用来形容估价的粗略。",
         "en": "「明らか」 means obvious; it doesn’t describe a rough estimate."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-738",
-    "type": "bunmyaku",
-    "difficulty": 1,
-    "stem": "あの子は何でも自分の思いどおりにしたがる（　）な性格で、友達とよくけんかになる。",
-    "options": [
-      "わがまま",
-      "几帳面",
-      "おおらか",
-      "内気"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "那孩子什么都想按自己的意思来，性格任性，常和朋友吵架。",
-      "en": "That child is selfish by nature, wanting everything their own way, and often fights with friends."
-    },
-    "why": {
-      "zh": "线索：「自分の思いどおりにしたがる」「けんかになる」——任性、只顾自己。\n词义：「わがまま」＝任性、只顾自己，常说「わがままな性格」「わがままを言う」。",
-      "en": "Clue: 「自分の思いどおりにしたがる」 and 「けんかになる」 — self-willed, thinking only of themselves.\nMeaning: 「わがまま」 means selfish, wilful: 「わがままな性格」, 「わがままを言う」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「几帳面」是一丝不苟、守规矩，与“任性”相反。",
-        "en": "「几帳面」 means meticulous; it is not selfish."
-      },
-      {
-        "zh": "「おおらか」是心胸开阔、不拘小节，不会因此常吵架。",
-        "en": "「おおらか」 means easy-going and broad-minded, which wouldn’t cause fights."
-      },
-      {
-        "zh": "「内気」是腼腆，不会“什么都想按自己意思来”。",
-        "en": "「内気」 means shy, not wanting everything one’s own way."
       }
     ]
   },
@@ -5148,42 +4644,6 @@
     ]
   },
   {
-    "id": "n2-mg-743",
-    "type": "bunmyaku",
-    "difficulty": 2,
-    "stem": "寝不足で、会議中もずっと（　）していて、課長の話をほとんど聞いていなかった。",
-    "options": [
-      "ぼんやり",
-      "しっかり",
-      "のんびり",
-      "ぴったり"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "睡眠不足，开会时一直恍恍惚惚，课长的话几乎没听进去。",
-      "en": "Short on sleep, I spaced out throughout the meeting and hardly heard what the section chief said."
-    },
-    "why": {
-      "zh": "线索：「寝不足」「話をほとんど聞いていなかった」——精神恍惚。\n词义：「ぼんやり」＝发呆、精神不集中，常说「ぼんやりしている」「ぼんやりと外を眺める」。",
-      "en": "Clue: 「寝不足」 and 「話をほとんど聞いていなかった」 — mind in a haze.\nMeaning: 「ぼんやり」 means spacing out, vague: 「ぼんやりしている」, 「ぼんやりと外を眺める」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「しっかり」是认真牢靠，与“没听进去”相反。",
-        "en": "「しっかり」 means firmly or attentively, the opposite of not listening."
-      },
-      {
-        "zh": "「のんびり」是悠闲放松，不是精神恍惚，开会时也不合适。",
-        "en": "「のんびり」 is leisurely and relaxed, not dazed, and odd in a meeting."
-      },
-      {
-        "zh": "「ぴったり」是正合适，不能与「していて」这样搭配。",
-        "en": "「ぴったり」 means a perfect fit and doesn’t suit 「していて」 here."
-      }
-    ]
-  },
-  {
     "id": "n2-mg-744",
     "type": "bunmyaku",
     "difficulty": 2,
@@ -5216,42 +4676,6 @@
       {
         "zh": "「ゆったり」是宽松舒适，不是杂乱。",
         "en": "「ゆったり」 is roomy and relaxed, not cluttered."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-745",
-    "type": "bunmyaku",
-    "difficulty": 1,
-    "stem": "彼は何度も約束を（　）ので、もう誰も信用しなくなった。",
-    "options": [
-      "破った",
-      "壊した",
-      "割った",
-      "切った"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "他多次违背约定，所以已经没人信任他了。",
-      "en": "He broke his promises so many times that nobody trusts him any more."
-    },
-    "why": {
-      "zh": "线索：「約束を」「誰も信用しなくなった」——不遵守约定。\n词义：「破る」＝违反、撕破，常说「約束を破る」「ルールを破る」「紙を破る」。",
-      "en": "Clue: 「約束を」 and 「誰も信用しなくなった」 — not keeping promises.\nMeaning: 「破る」 means to break (a promise, rule) or tear: 「約束を破る」, 「ルールを破る」, 「紙を破る」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「壊す」是弄坏有形的东西，不搭「約束」。",
-        "en": "「壊す」 is breaking a physical object; it doesn’t go with 「約束」."
-      },
-      {
-        "zh": "「割る」是打碎、分割，不说「約束を割る」。",
-        "en": "「割る」 is smashing or dividing; 「約束を割る」 isn’t said."
-      },
-      {
-        "zh": "「切る」是切断，不说「約束を切る」。",
-        "en": "「切る」 is cutting; 「約束を切る」 isn’t said."
       }
     ]
   },

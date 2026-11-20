@@ -1899,42 +1899,6 @@
     ]
   },
   {
-    "id": "n2-mg-453",
-    "type": "iikae",
-    "difficulty": 1,
-    "stem": "彼は<<真剣な>>顔で先生の話を聞いていた。",
-    "options": [
-      "まじめな",
-      "退屈そうな",
-      "不安な",
-      "うれしそうな"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "他一脸认真地听着老师讲话。",
-      "en": "He was listening to the teacher with a serious face."
-    },
-    "why": {
-      "zh": "线索：划线的「真剣な」形容听讲的表情，是认认真真、一本正经，对应「まじめな」。\n词义：「真剣」（しんけん）＝认真、不是闹着玩，常说「真剣に考える」「真剣な顔」。",
-      "en": "Clue: the underlined 「真剣な」 describes the face of someone listening attentively, matching 「まじめな」.\nMeaning: 「真剣」 (しんけん) is earnest, in real earnest: 「真剣に考える」, 「真剣な顔」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「退屈そうな」是无聊的样子，与认真相反。",
-        "en": "「退屈そうな」 looks bored, the opposite of earnest."
-      },
-      {
-        "zh": "「不安な」是担心，表情不一定认真。",
-        "en": "「不安な」 is anxious, not the same as earnest."
-      },
-      {
-        "zh": "「うれしそうな」是高兴的样子，和认真无关。",
-        "en": "「うれしそうな」 looks happy, unrelated."
-      }
-    ]
-  },
-  {
     "id": "n2-mg-454",
     "type": "iikae",
     "difficulty": 1,
@@ -2223,42 +2187,6 @@
     ]
   },
   {
-    "id": "n2-mg-462",
-    "type": "iikae",
-    "difficulty": 1,
-    "stem": "試合の結果に<<失望した>>。",
-    "options": [
-      "がっかりした",
-      "安心した",
-      "驚いた",
-      "納得した"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "对比赛结果感到失望。",
-      "en": "I was disappointed by the result of the match."
-    },
-    "why": {
-      "zh": "线索：划线的「失望した」是对结果感到期望落空，对应「がっかりした」。\n词义：「失望」（しつぼう）＝失望，期待落空，常说「失望を味わう」「期待外れで失望した」。",
-      "en": "Clue: the underlined 「失望した」 is hopes dashed by the result, matching 「がっかりした」.\nMeaning: 「失望」 (しつぼう) is disappointment, hopes let down: 「失望を味わう」, 「期待外れで失望した」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「安心した」是放心，心情相反。",
-        "en": "「安心した」 is relieved, the opposite mood."
-      },
-      {
-        "zh": "「驚いた」是吃惊，不一定失望。",
-        "en": "「驚いた」 is surprised, not necessarily let down."
-      },
-      {
-        "zh": "「納得した」是接受、想通了，不是失望。",
-        "en": "「納得した」 is accepting it, not disappointed."
-      }
-    ]
-  },
-  {
     "id": "n2-mg-463",
     "type": "iikae",
     "difficulty": 2,
@@ -2367,42 +2295,6 @@
     ]
   },
   {
-    "id": "n2-mg-466",
-    "type": "iikae",
-    "difficulty": 2,
-    "stem": "部屋の中から<<妙な>>音がした。",
-    "options": [
-      "変な",
-      "大きな",
-      "小さな",
-      "楽しい"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "房间里传出一种奇怪的声音。",
-      "en": "A strange noise came from inside the room."
-    },
-    "why": {
-      "zh": "线索：划线的「妙な」修饰「音」，指不寻常、令人觉得怪，对应「変な」。\n词义：「妙」（みょう）＝奇怪、不寻常，常说「妙な音」「妙な気がする」「妙な話」。",
-      "en": "Clue: the underlined 「妙な」 modifies the sound as odd and unusual, matching 「変な」.\nMeaning: 「妙」 (みょう) is strange, odd: 「妙な音」, 「妙な気がする」 (to have a funny feeling), 「妙な話」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「大きな」说的是音量大，没有奇怪的意思。",
-        "en": "「大きな」 is about loudness, not oddness."
-      },
-      {
-        "zh": "「小さな」说的是音量小，不等于奇怪。",
-        "en": "「小さな」 is about low volume, not oddness."
-      },
-      {
-        "zh": "「楽しい」是愉快，和奇怪无关。",
-        "en": "「楽しい」 is pleasant, unrelated to oddness."
-      }
-    ]
-  },
-  {
     "id": "n2-mg-467",
     "type": "iikae",
     "difficulty": 2,
@@ -2439,42 +2331,6 @@
     ]
   },
   {
-    "id": "n2-mg-468",
-    "type": "iikae",
-    "difficulty": 2,
-    "stem": "彼は給料について<<不平を言った>>。",
-    "options": [
-      "文句を言った",
-      "質問した",
-      "感謝した",
-      "説明した"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "他对工资发了牢骚。",
-      "en": "He complained about his pay."
-    },
-    "why": {
-      "zh": "线索：划线的「不平を言った」是对工资不满而说出来，对应「文句を言った」。\n词义：「不平」（ふへい）＝不满、牢骚，常说「不平を言う」「不平不満」。",
-      "en": "Clue: the underlined 「不平を言った」 is voicing dissatisfaction about pay, matching 「文句を言った」.\nMeaning: 「不平」 (ふへい) is discontent, a grievance: 「不平を言う」, 「不平不満」 (complaints)."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「質問した」是提问，不含不满。",
-        "en": "「質問した」 is asking a question, with no complaint."
-      },
-      {
-        "zh": "「感謝した」是感谢，意思相反。",
-        "en": "「感謝した」 is giving thanks, the opposite."
-      },
-      {
-        "zh": "「説明した」是解释，不含不满。",
-        "en": "「説明した」 is explaining, with no grievance."
-      }
-    ]
-  },
-  {
     "id": "n2-mg-469",
     "type": "iikae",
     "difficulty": 1,
@@ -2507,42 +2363,6 @@
       {
         "zh": "「立ち止まった」是停下脚步，与头的动作无关。",
         "en": "「立ち止まった」 is stopping in one's tracks, not a head movement."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-470",
-    "type": "iikae",
-    "difficulty": 2,
-    "stem": "工事は終わったが、道路の状況は<<依然として>>厳しい。",
-    "options": [
-      "相変わらず",
-      "次第に",
-      "一時的に",
-      "少しずつ"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "工程结束了，但道路状况依然严峻。",
-      "en": "The construction is over, but road conditions are still tough."
-    },
-    "why": {
-      "zh": "线索：划线的「依然として」承接「工事は終わったが」，表示状况没变，对应「相変わらず」。\n词义：「依然」（いぜん）＝依旧、仍然，常说「依然として」「旧態依然」。",
-      "en": "Clue: the underlined 「依然として」 after 「工事は終わったが」 means the situation hasn't changed, matching 「相変わらず」.\nMeaning: 「依然」 (いぜん) is as before, still: 「依然として」, 「旧態依然」 (unchanged old ways)."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「次第に」是逐渐变化，说的是在变，不是没变。",
-        "en": "「次第に」 is gradually, which implies change."
-      },
-      {
-        "zh": "「一時的に」是暂时，意思不同。",
-        "en": "「一時的に」 is temporarily, a different meaning."
-      },
-      {
-        "zh": "「少しずつ」也是逐渐变化，不是依旧。",
-        "en": "「少しずつ」 is little by little, again change."
       }
     ]
   },
@@ -2615,42 +2435,6 @@
       {
         "zh": "「何度も」是多次，说的是次数。",
         "en": "「何度も」 is many times, about frequency."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-473",
-    "type": "iikae",
-    "difficulty": 2,
-    "stem": "雨は夜になって<<一層>>強くなった。",
-    "options": [
-      "さらに",
-      "やがて",
-      "ようやく",
-      "少し"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "到了夜里，雨下得更大了。",
-      "en": "The rain grew even heavier at night."
-    },
-    "why": {
-      "zh": "线索：划线的「一層」修饰「強くなった」，在原有基础上更进一步，对应「さらに」。\n词义：「一層」（いっそう）＝更加、越发，常说「一層努力する」「一層寒くなる」。",
-      "en": "Clue: the underlined 「一層」 modifies 「強くなった」 as a step further on top of what was already so, matching 「さらに」.\nMeaning: 「一層」 (いっそう) is all the more, even more: 「一層努力する」 (try even harder), 「一層寒くなる」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「やがて」是不久之后，说的是时间。",
-        "en": "「やがて」 is before long, about time."
-      },
-      {
-        "zh": "「ようやく」是好不容易才，不是程度更甚。",
-        "en": "「ようやく」 is at last, not a greater degree."
-      },
-      {
-        "zh": "「少し」是一点点，程度与「更加」不同。",
-        "en": "「少し」 is a little, not a further increase."
       }
     ]
   }

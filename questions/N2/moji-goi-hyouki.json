@@ -2347,42 +2347,6 @@
     ]
   },
   {
-    "id": "n2-mg-265",
-    "type": "hyouki",
-    "difficulty": 2,
-    "stem": "この地域の歴史に<<くわしい>>人を探している。",
-    "options": [
-      "詳しい",
-      "評しい",
-      "祥しい",
-      "洋しい"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "我正在找熟悉这个地区历史的人。",
-      "en": "I'm looking for someone who knows this region's history well."
-    },
-    "why": {
-      "zh": "熟悉、详细是「詳しい」：「詳」（详细的详）。",
-      "en": "Being well versed or detailed is 「詳しい」: 「詳」 (detailed)."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「評」是评价的「評」，「評しい」不是词。",
-        "en": "「評」 is 'evaluate'; 「評しい」 isn't a word."
-      },
-      {
-        "zh": "「祥」是吉祥的「祥」，「祥しい」不是词。",
-        "en": "「祥」 is 'auspicious'; 「祥しい」 isn't a word."
-      },
-      {
-        "zh": "「洋」是西洋的「洋」，「洋しい」不是词。",
-        "en": "「洋」 is 'ocean/Western'; 「洋しい」 isn't a word."
-      }
-    ]
-  },
-  {
     "id": "n2-mg-266",
     "type": "hyouki",
     "difficulty": 2,
@@ -2415,114 +2379,6 @@
       {
         "zh": "「管」是管理的「管」，「管潔」不是词。",
         "en": "「管」 is 'manage'; 「管潔」 isn't a word."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-267",
-    "type": "hyouki",
-    "difficulty": 2,
-    "stem": "その発言は、国民の不信を<<まねく>>結果となった。",
-    "options": [
-      "招く",
-      "紹く",
-      "昭く",
-      "照く"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "那番发言招致了国民的不信任。",
-      "en": "That statement ended up inviting public distrust."
-    },
-    "why": {
-      "zh": "引来（多为不好的）结果是「招く」：「招」（招待的招）。",
-      "en": "Bringing about a result (often a bad one) is 「招く」: 「招」 (invite)."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「紹」是介绍的「紹」，「紹く」不是词。",
-        "en": "「紹」 is 'introduce'; 「紹く」 isn't a word."
-      },
-      {
-        "zh": "「昭」是昭和的「昭」，「昭く」不是词。",
-        "en": "「昭」 is from 「昭和」; 「昭く」 isn't a word."
-      },
-      {
-        "zh": "「照」是照明的「照」，「照く」不是词。",
-        "en": "「照」 is 'illuminate'; 「照く」 isn't a word."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-268",
-    "type": "hyouki",
-    "difficulty": 2,
-    "stem": "この町は自然が<<ゆたか>>で、子育てに向いている。",
-    "options": [
-      "豊か",
-      "農か",
-      "曲か",
-      "豚か"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "这座城市自然资源丰富，适合养育孩子。",
-      "en": "This town is rich in nature and well suited to raising children."
-    },
-    "why": {
-      "zh": "丰富、充裕是「豊か」：「豊」（丰富的丰）。",
-      "en": "Abundant or rich is 「豊か」: 「豊」 (abundant)."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「農」是农业的「農」，「農か」不是词。",
-        "en": "「農」 is 'farming'; 「農か」 isn't a word."
-      },
-      {
-        "zh": "「曲」是弯曲的「曲」，「曲か」不是词。",
-        "en": "「曲」 is 'bend'; 「曲か」 isn't a word."
-      },
-      {
-        "zh": "「豚」是猪，「豚か」不是词。",
-        "en": "「豚」 is 'pig'; 「豚か」 isn't a word."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-269",
-    "type": "hyouki",
-    "difficulty": 2,
-    "stem": "駐車<<いはん>>で、警察に注意を受けた。",
-    "options": [
-      "違反",
-      "遠反",
-      "偉反",
-      "違返"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "因违章停车，被警察警告了。",
-      "en": "I was warned by the police for a parking violation."
-    },
-    "why": {
-      "zh": "违反规则、法律是「違反」：「違」（不同的违）+「反」（反对的反）。",
-      "en": "Breaking a rule or law is 「違反」: 「違」 (differ) + 「反」 (oppose)."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「遠」是远近的「遠」，「遠反」不是词。",
-        "en": "「遠」 is 'far'; 「遠反」 isn't a word."
-      },
-      {
-        "zh": "「偉」是伟大的「偉」，「偉反」不是词。",
-        "en": "「偉」 is 'great'; 「偉反」 isn't a word."
-      },
-      {
-        "zh": "「返」是返还的「返」，「違返」不是词。",
-        "en": "「返」 is 'return'; 「違返」 isn't a word."
       }
     ]
   },
@@ -2599,78 +2455,6 @@
     ]
   },
   {
-    "id": "n2-mg-272",
-    "type": "hyouki",
-    "difficulty": 2,
-    "stem": "被災地のために、毎月少しずつ<<きふ>>を続けている。",
-    "options": [
-      "寄付",
-      "奇付",
-      "寄府",
-      "寄村"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "我每个月都为灾区捐一点钱。",
-      "en": "I keep donating a little every month for the disaster area."
-    },
-    "why": {
-      "zh": "捐款是「寄付」：「寄」（寄信的寄）+「付」（付钱的付）。",
-      "en": "A donation is 「寄付」: 「寄」 (send) + 「付」 (attach)."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「奇」是奇怪的「奇」，「奇付」不是词。",
-        "en": "「奇」 is 'strange'; 「奇付」 isn't a word."
-      },
-      {
-        "zh": "「府」是政府的「府」，「寄府」不是词。",
-        "en": "「府」 is 'government'; 「寄府」 isn't a word."
-      },
-      {
-        "zh": "「村」是村庄的「村」，「寄村」不是词。",
-        "en": "「村」 is 'village'; 「寄村」 isn't a word."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-273",
-    "type": "hyouki",
-    "difficulty": 2,
-    "stem": "強い風で、庭の花が一晩のうちに<<ちって>>しまった。",
-    "options": [
-      "散って",
-      "敢って",
-      "撤って",
-      "徹って"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "一阵大风，院子里的花一夜之间就谢光了。",
-      "en": "A strong wind scattered all the flowers in the garden overnight."
-    },
-    "why": {
-      "zh": "花瓣落下、四散是「散る」：「散」（散步的散）。",
-      "en": "Petals falling or things scattering is 「散る」: 「散」 (scatter)."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「敢」是勇敢的「敢」，「敢って」不是词。",
-        "en": "「敢」 is 'dare'; 「敢って」 isn't a word."
-      },
-      {
-        "zh": "「撤」是撤退的「撤」，「撤って」不是词。",
-        "en": "「撤」 is 'withdraw'; 「撤って」 isn't a word."
-      },
-      {
-        "zh": "「徹」是彻底的「徹」，「徹って」不是词（「徹する」才是）。",
-        "en": "「徹」 is 'thorough'; 「徹って」 isn't a word (the verb is 「徹する」)."
-      }
-    ]
-  },
-  {
     "id": "n2-mg-274",
     "type": "hyouki",
     "difficulty": 2,
@@ -2703,42 +2487,6 @@
       {
         "zh": "「週」是星期的「週」，「好週」不是词。",
         "en": "「週」 is 'week'; 「好週」 isn't a word."
-      }
-    ]
-  },
-  {
-    "id": "n2-mg-275",
-    "type": "hyouki",
-    "difficulty": 2,
-    "stem": "彼はいつも<<そん>>な役回りを引き受けてしまう。",
-    "options": [
-      "損",
-      "員",
-      "捨",
-      "指"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "他总是接下吃亏的角色。",
-      "en": "He always ends up taking the roles that cost him."
-    },
-    "why": {
-      "zh": "吃亏、不划算是「損」：「損」（损失的损）。「損な役回り」是吃亏的角色。",
-      "en": "Losing out is 「損」 (loss), as in 「損な役回り」, a thankless role."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「員」是人员的「員」，读「いん」，不读「そん」。",
-        "en": "「員」 is 'member', read いん, not そん."
-      },
-      {
-        "zh": "「捨」读「しゃ」或「すてる」，与「損」形近但不读「そん」。",
-        "en": "「捨」 is read しゃ / す(てる); it looks like 「損」 but isn't そん."
-      },
-      {
-        "zh": "「指」读「し」或「ゆび」，也与「損」形近，但不读「そん」。",
-        "en": "「指」 is read し / ゆび; it looks similar but isn't そん."
       }
     ]
   },
@@ -2777,42 +2525,6 @@
       }
     ],
     "answer": 0
-  },
-  {
-    "id": "n2-mg-277",
-    "type": "hyouki",
-    "difficulty": 2,
-    "stem": "この条約は<<えいきゅう>>に有効ではなく、十年で見直される。",
-    "options": [
-      "永久",
-      "永人",
-      "氷久",
-      "永文"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "这项条约并非永久有效，十年后将重新审议。",
-      "en": "This treaty is not valid forever; it will be reviewed in ten years."
-    },
-    "why": {
-      "zh": "永远不变是「永久」：「永」（永远的永）+「久」（长久的久）。",
-      "en": "Lasting forever is 「永久」: 「永」 (eternal) + 「久」 (long)."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「人」是人，「永人」不是词。",
-        "en": "「人」 is 'person'; 「永人」 isn't a word."
-      },
-      {
-        "zh": "「氷」是冰（比「永」多一点），「氷久」不是词。",
-        "en": "「氷」 is 'ice'; 「永」 has no extra stroke; 「氷久」 isn't a word."
-      },
-      {
-        "zh": "「文」是文章的「文」，「永文」不是词。",
-        "en": "「文」 is 'writing'; 「永文」 isn't a word."
-      }
-    ]
   },
   {
     "id": "n2-mg-278",
