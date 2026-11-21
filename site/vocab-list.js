@@ -21,7 +21,7 @@
     try { var s = JSON.parse(localStorage.getItem(K)); if (s && s.v === 1) { s.words = s.words || {}; return s; } } catch (e) {}
     return { v: 1, answers: {}, review: {}, reported: [], session: null, days: {}, prefs: {}, mock: {}, cards: {}, cardDays: {}, fav: {}, words: {} };
   }
-  function sv(s) { s.at = Date.now(); try { localStorage.setItem(K, JSON.stringify(s)); } catch (e) {} if (window.jpSync) window.jpSync.changed(); }
+  function sv(s) { s.at = Date.now(); try { localStorage.setItem(K, JSON.stringify(s)); } catch (e) {} if (window.jpSync) window.jpSync.changed(); try { dispatchEvent(new Event('jp-words')); } catch (x) {} }
   function st(s, w) { var x = s.words[w]; return !x ? '' : x.t > 0 ? 'in' : x.kn ? 'kn' : 'out'; }
   function ev(n, p) { if (window.gaEvent) { p = p || {}; p.level = LV; p.via = 'vocab_list'; window.gaEvent(n, p); } }
   function setW(s, i, to) {
@@ -140,6 +140,8 @@
   hr.addEventListener('click', function () { var on = ga.classList.toggle('vl-hr'); hr.setAttribute('aria-pressed', String(on)); });
   function alertMsg(m) { var p = document.getElementById('vl-msg'); p.textContent = m; p.hidden = false; setTimeout(function () { p.hidden = true; }, 5000); }
   addEventListener('storage', paint);
+  addEventListener('jp-words', function () { if (!painting) { painting = true; paint(); painting = false; } });
+  var painting = false;
   paint();
 
   // ---- quick sort: one card per unsorted word; 不认识 → word list, 认识 → known

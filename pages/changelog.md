@@ -11,13 +11,13 @@ Notable updates to the site, newest first. Small fixes and design tweaks aren't 
 ## 2026-11-21 · N2 高频词汇表||2026-11-21 · N2 vocabulary list
 
 :::zh
-新页面 [N2 高频词汇](/n2-vocabulary-list/)：2010 年以来 N2 文字词汇部分考过的约 700 个词，按考过的次数分组，每个词有读音、意思、例句和翻译，全部朗读成一条音轨。先用「快速筛词」一张卡一张卡过：不认识的自动进生词本，认识的不再出现；再打开「只听我的生词」，连播时只念你不会的词。还可以遮住意思或读音自测，搜索或按 50 个一段跳转、播放。打开「日语释义」，意思换成简单的日语解释，朗读也变成全日语。
+新页面 [N2 高频词汇](/n2-vocabulary-list/)：2010 年以来 N2 文字词汇部分考过的约 700 个词，按考过的次数分组，每个词有读音、意思、例句和翻译，全部朗读成一条音轨。先用「快速筛词」一张卡一张卡过：不认识的自动进生词本，认识的不再出现；再打开「只听我的生词」，连播时只念你不会的词。还可以遮住意思或读音自测，搜索或按 50 个一段跳转、播放。打开「日语释义」，意思换成简单的日语解释，朗读也变成全日语。例句里的词（语法听读页也一样）点一下就能看读音和意思、加入生词本。
 
 同时修正了[语法音频](/grammar-audio/)里 39 个单独念时读错的短句型（如「つつ」「たまま」）。
 :::
 
 :::en
-New page: the [N2 vocabulary list](/n2-vocabulary-list/) — the ~700 words the N2 vocabulary section has tested since 2010, grouped by how often they came up, each with reading, meaning, an example and its translation, all read aloud as one track. Start with “Quick sort”, one card per word: the ones you don’t know go into your word list, the ones you know drop out. Then turn on “Only my words” and the player reads just those. Hide meanings or readings to test yourself, search, or jump to and play a part of 50 words. “Japanese definitions” swaps the meanings for simple Japanese ones and the track for an all-Japanese one.
+New page: the [N2 vocabulary list](/n2-vocabulary-list/) — the ~700 words the N2 vocabulary section has tested since 2010, grouped by how often they came up, each with reading, meaning, an example and its translation, all read aloud as one track. Start with “Quick sort”, one card per word: the ones you don’t know go into your word list, the ones you know drop out. Then turn on “Only my words” and the player reads just those. Hide meanings or readings to test yourself, search, or jump to and play a part of 50 words. “Japanese definitions” swaps the meanings for simple Japanese ones and the track for an all-Japanese one. Tap any word in an example (on the grammar audio pages too) for its reading and meaning, and to save it.
 
 Also fixed in the [grammar audio](/grammar-audio/): 39 short patterns that were misread when said on their own (つつ, たまま …).
 :::
