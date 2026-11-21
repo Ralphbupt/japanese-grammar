@@ -5038,6 +5038,7 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
       };
       const vlCss = `<style>.vl-r{color:var(--text-muted);font-size:.95rem}.vl-add{margin-left:auto;font:inherit;font-size:.8rem;padding:.15rem .65rem;border-radius:14px;border:1px solid var(--border,#ccc);background:transparent;color:var(--ui);cursor:pointer;white-space:nowrap}.vl-add[aria-pressed=true]{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}
 .vl-wl{font-size:.85rem;margin:.55rem 0 0;color:var(--text-muted)}#vl .ga-row{margin-top:.55rem}#vl-sort{background:var(--ui)!important;color:var(--ui-on)!important;border-color:var(--ui)!important;font-weight:600}
+#vl-q-in{flex:1;min-width:10rem;font:inherit;font-size:.85rem;padding:.3rem .6rem;border-radius:7px;border:1px solid var(--border,#ccc);background:var(--surface-2,transparent);color:inherit}.ga-it.vl-hit{box-shadow:0 0 0 2px var(--ui)}.ga-lh small{white-space:nowrap}
 #vl-msg{font-size:.85rem;background:var(--chip-bg);border-radius:8px;padding:.4rem .6rem;margin:.5rem 0 0}#vl-empty{color:var(--text-muted);text-align:center;padding:2rem 0}
 .ga-it.vl-kn{opacity:.6}.ga-it.vl-kn .ga-hd::after{content:"${"✓"}";color:var(--text-muted);font-size:.8rem;order:9}
 #ga.vl-hr .vl-r,#ga.vl-hr .ga-ex rt{filter:blur(4px)}#ga.vl-hr .vl-r:hover,#ga.vl-hr .ga-ex:hover rt{filter:none}
@@ -5054,14 +5055,18 @@ html.vl-open{overflow:hidden}#vl-q{position:fixed;inset:0;z-index:90;background:
         if (!tr) continue;
         const t2 = (z, e) => (en ? e : z);
         const ctlExtra = `<div id="vl" data-lv="${lv}" data-en="${en ? 1 : 0}"><div class="ga-row"><button type="button" id="vl-sort">${t2("⚡ 快速筛词", "⚡ Quick sort")} <small>${t2("（未筛 ", "(")}<span id="vl-todo">${n}</span>${t2("）", " unsorted)")}</small></button>` +
-          `<button type="button" id="vl-mine" aria-pressed="false">${t2("只听我的生词", "Only my words")}</button><button type="button" id="vl-hr" aria-pressed="false">${t2("遮住读音", "Hide readings")}</button>` +
+          `<button type="button" id="vl-mine" aria-pressed="false">${t2("只听我的生词", "Only my words")}</button><button type="button" id="ga-ms" aria-pressed="true">${t2("念意思", "Read meanings")}</button>${ga.tracks.ja ? `<button type="button" id="vl-jam" aria-pressed="false" title="${t2("意思换成日语解释，朗读也换成全日语（不念翻译）", "Meanings in Japanese, and an all-Japanese track (no translations)")}">${t2("日语释义", "Japanese definitions")}</button>` : ""}<button type="button" id="vl-hr" aria-pressed="false">${t2("遮住读音", "Hide readings")}</button>` +
           `<select id="vl-f" aria-label="${t2("筛选", "Filter")}"><option value="all">${t2("全部词", "All words")}</option><option value="todo">${t2("只看没筛过的", "Not sorted yet")}</option><option value="in">${t2("只看生词本里的", "In my word list")}</option><option value="n2">${t2("只看考过 2 次以上", "Tested 2+ times")}</option></select></div>` +
+          `<div class="ga-row"><input id="vl-q-in" type="search" placeholder="${t2("搜词、读音、意思或序号", "Word, reading, meaning or #")}" aria-label="${t2("搜索", "Search")}">` +
+          `<select id="vl-jump" aria-label="${t2("跳到", "Jump to")}"><option value="">${t2("跳到…", "Jump to…")}</option>${Array.from({ length: Math.ceil(n / 50) }, (_, k) => `<option value="${k * 50 + 1}">${t2(`第 ${k * 50 + 1}–${Math.min(n, k * 50 + 50)} 个`, `${k * 50 + 1}–${Math.min(n, k * 50 + 50)}`)}</option>`).join("")}</select>` +
+          `<button type="button" id="vl-seg">${t2("▶ 播放本段", "▶ Play this part")}</button></div>` +
           `<p id="vl-msg" hidden></p><p class="vl-wl">${t2("生词本里：", "In your word list: ")}<b id="vl-n">0</b> · <a href="${SITE_PATH}${practiceId}/#words">${t2("去背单词 →", "Review them with flashcards →")}</a></p></div>`;
         const dialog = `<p id="vl-empty" hidden>${t2("没有符合筛选的词。", "No words match this filter.")}</p>
 <div id="vl-q" hidden role="dialog" aria-modal="true" aria-label="${t2("快速筛词", "Quick sort")}"><div id="vl-qbox"><div class="vl-qtop"><span id="vl-qp"></span><button type="button" id="vl-qsay" aria-label="${t2("再听一遍", "Play again")}">🔊</button><button type="button" id="vl-qx" aria-label="${t2("关闭", "Close")}">✕</button></div>
 <button type="button" id="vl-qcard"><div id="vl-qw" lang="ja"></div><div class="vl-qhint">${t2("先想想读音和意思，点一下看答案", "Think of the reading and meaning, then tap to check")}</div><div id="vl-qb"></div></button>
 <div class="vl-qbtn"><button type="button" id="vl-qundo" aria-label="${t2("撤销", "Undo")}">↶</button><button type="button" id="vl-qno">${t2("不认识 → 生词本", "Don’t know → list")}</button><button type="button" id="vl-qyes">${t2("认识", "Know it")}</button></div>
 <p class="vl-qkeys">${t2("键盘：空格翻面 · ← 不认识 · → 认识 · Backspace 撤销", "Keys: space flips · ← don’t know · → know · Backspace undo")}</p></div></div>
+${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ src: `${AUDIO_BASE}/${ga.tracks.ja.src}`, dur: ga.tracks.ja.duration, lines: ga.tracks.ja.lines.map((x) => [x[1], x[2], x[0]]), mean: items.map((it) => it.mean.ja || "") }).replace(/</g, "\\u003c")}</script>` : ""}
 <script src="${SITE_PATH}vocab-list.js?v=${VL_JS_HASH}" defer></script>`;
         const body = vlCss +
           grammarAudioBody(ga, code, vlId, { group: groupOf(en), itemHead: head(en), tocLabel: en ? "Tested:" : "考过：", groupMode: en ? "This group" : "本组连播", ctlExtra,

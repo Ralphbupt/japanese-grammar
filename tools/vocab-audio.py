@@ -35,7 +35,7 @@ def items_of(level):
             continue
         g = next(k for n, k in GROUPS if x["n"] >= n)
         out.append({"w": x["w"], "r": x["r"], "n": x["n"], "years": x.get("years", []), "group": g,
-                    "mean": {"zh": x["zh"], "en": x["en"]}, "ex": x["ex"]})
+                    "mean": {"zh": x["zh"], "en": x["en"], **({"ja": x["ja"]} if x.get("ja") else {})}, "ex": x["ex"], **({"say": x["say"]} if x.get("say") else {})})
     return out
 
 
@@ -43,14 +43,20 @@ def lines_of(items, lang):
     """Line kinds as in grammar audio: g word, m meaning, e example, t its translation."""
     out = []
     for i, it in enumerate(items):
-        out.append((i, "g", ga.VOICE["ja"], it["r"] + "。"))
+        # `say`: the form checked by tools/vocab-audio-check.py (kanji / katakana / hiragana)
+        out.append((i, "g", ga.VOICE["ja"], it.get("say") or it["r"] + "。"))
+        if lang == "ja":   # Japanese-only track: monolingual definition, no translation (empty t line)
+            out.append((i, "m", ga.VOICE["ja"], it["mean"]["ja"]))
+            out.append((i, "e", ga.VOICE["ja"], ga.say_example(it["ex"]["ja"].replace("**", ""))))
+            out.append((i, "t", None, ""))
+            continue
         out.append((i, "m", ga.VOICE[lang], ga.say_text(it["mean"][lang], lang)))
         out.append((i, "e", ga.VOICE["ja"], ga.say_example(it["ex"]["ja"].replace("**", ""))))
         out.append((i, "t", ga.VOICE[lang], ga.say_text(it["ex"][lang], lang)))
     return out
 
 
-def build(level, langs=("zh", "en")):
+def build(level, langs=("zh", "en", "ja")):
     items = items_of(level)
     data = {"level": level.upper(), "items": items, "tracks": {}}
     old = os.path.join(OUT_DATA, f"{level}.json")
@@ -62,14 +68,14 @@ def build(level, langs=("zh", "en")):
     for lang in langs:
         lines = lines_of(items, lang)
         with cf.ThreadPoolExecutor(6) as ex:
-            pcms = list(ex.map(lambda l: ga.speak(l[2], l[3]), lines))
+            pcms = list(ex.map(lambda l: ga.speak(l[2], l[3]) if l[3] else b"", lines))
         buf, t, timing = bytearray(b"\0\0" * (ga.RATE // 2)), 0.5, []
         for n, ((i, k, _, _), pcm) in enumerate(zip(lines, pcms)):
             d = len(pcm) / 2 / ga.RATE
             timing.append([k, round(t, 2), round(t + d, 2)])
             buf += pcm
             last = n + 1 == len(lines) or lines[n + 1][0] != i
-            gap = GAP["end"] if last else GAP[k]
+            gap = GAP["end"] if last else 0 if not lines[n + 1][3] else GAP[k]   # no pause before an empty line
             buf += b"\0\0" * (ga.RATE * gap // 1000)
             t += d + gap / 1000
         wav = os.path.join(ga.CACHE, f"vocab-{level}-{lang}.wav")
@@ -85,7 +91,7 @@ def build(level, langs=("zh", "en")):
         json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
 
 
-def upload(level, langs=("zh", "en")):
+def upload(level, langs=("zh", "en", "ja")):
     for lang in langs:
         subprocess.run(["npx", "wrangler", "r2", "object", "put", f"jpnotes-audio/vocab/{level}-{lang}.mp3",
                         "--file", os.path.join(OUT_AUDIO, f"{level}-{lang}.mp3"), "--content-type", "audio/mpeg",
@@ -96,7 +102,7 @@ if __name__ == "__main__":
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     for d in (ga.CACHE, OUT_AUDIO, OUT_DATA):
         os.makedirs(d, exist_ok=True)
-    langs = next((a.split("=", 1)[1].split(",") for a in sys.argv if a.startswith("--lang=")), ["zh", "en"])
+    langs = next((a.split("=", 1)[1].split(",") for a in sys.argv if a.startswith("--lang=")), ["zh", "en", "ja"])
     for lv in args or ["n2"]:
         build(lv, langs)
         if "--upload" in sys.argv:
