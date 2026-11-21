@@ -153,11 +153,18 @@ def items_of(level):
     return out
 
 
+# Short kana patterns said alone get misread (つつ → "chichi", たまま → "tamago"); src/say.json
+# maps the spoken pattern to a form a listening check (Gemini) heard right — katakana or in 「」.
+_say = os.path.join(OUT_DATA, "src", "say.json")
+SAY = json.load(open(_say, encoding="utf-8")) if os.path.exists(_say) else {}
+
+
 def lines_of(items, lang):
     """Line kinds: g pattern, m meaning, e example, t its translation."""
     out = []
     for i, it in enumerate(items):
-        out.append((i, "g", VOICE["ja"], say_pattern(it["term"])))
+        p = say_pattern(it["term"])
+        out.append((i, "g", VOICE["ja"], SAY.get(p, p)))
         out.append((i, "m", VOICE[lang], say_text(it["mean"][lang], lang)))
         for e in it["ex"][:it["read"]]:
             out.append((i, "e", VOICE["ja"], say_example(plain(e["ja"]))))
