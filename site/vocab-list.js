@@ -59,12 +59,15 @@
     document.getElementById('vl-todo').textContent = todo;
     var empty = document.getElementById('vl-empty');
     empty.hidden = shown.some(Boolean);
-    document.getElementById('vl-mine').setAttribute('aria-pressed', String(mine));
+    document.getElementById('vl-mine').setAttribute('aria-pressed', String(mine && c > 0));
   }
+  function listCount() { return W.filter(function (w) { return st(S, w) === 'in'; }).length; }
+  // "Only my words" with nothing of this list in the word list would skip every
+  // line (play stopped at once), so it only counts once there is a word to play.
   window.jpGaSkip = function (line, from) {
     var i = line >> 2;
     if (from >= 0 && i === from >> 2) return false;
-    return !shown[i] || (mine && st(S, W[i]) !== 'in');
+    return !shown[i] || (mine && st(S, W[i]) !== 'in' && listCount() > 0);
   };
   document.addEventListener('click', function (e) {
     var b = e.target.closest && e.target.closest('.vl-add');
@@ -78,8 +81,9 @@
   sel.value = filter;
   sel.addEventListener('change', function () { filter = sel.value; ls.set('jp_vl_f', filter); paint(); });
   document.getElementById('vl-mine').addEventListener('click', function () {
+    S = ld();
+    if (!mine && !listCount()) { alertMsg(t('生词本里还没有这一级的词。先用「快速筛词」挑出不认识的，再打开这个开关。', 'No words from this list in your word list yet. Sort them first with “Quick sort”, then turn this on.')); return; }
     mine = !mine; ls.set('jp_vl_mine', mine ? '1' : '0'); paint();
-    if (mine && !its.some(function (s, i) { return st(S, W[i]) === 'in'; })) alertMsg(t('生词本里还没有这一级的词。先用「快速筛词」挑出不认识的。', 'No words from this list in your word list yet. Sort them first with “Quick sort”.'));
   });
   var hr = document.getElementById('vl-hr');
   hr.addEventListener('click', function () { var on = ga.classList.toggle('vl-hr'); hr.setAttribute('aria-pressed', String(on)); });
@@ -89,10 +93,12 @@
 
   // ---- quick sort: one card per unsorted word; 不认识 → word list, 认识 → known
   var dlg = document.getElementById('vl-q'), Q = [], qi = 0, hist = [], flipped = false;
+  document.getElementById('vl-qsay').addEventListener('click', function (e) { e.stopPropagation(); say(); });
   var qw = document.getElementById('vl-qw'), qb = document.getElementById('vl-qb'), qp = document.getElementById('vl-qp');
   function plain(el) { return el ? el.innerHTML : ''; }
   function show() {
     flipped = false;
+    if (window.jpGaPause) window.jpGaPause();
     dlg.classList.remove('vl-flip');
     var left = Q.length - qi;
     qp.textContent = t('还剩 ' + left + ' 个', left + ' left');
@@ -109,7 +115,13 @@
     qb.innerHTML = '<p class="vl-qr" lang="ja">' + s.querySelector('.vl-r').textContent + '</p><p class="vl-qm">' + plain(s.querySelector('.ga-m')) +
       '</p><div class="ga-ex"><p><span lang="ja">' + plain(s.querySelector('.ga-ex span[lang]')) + '</span></p><p class="ga-tr">' + plain(s.querySelector('.ga-ex .ga-tr')) + '</p></div>';
   }
-  function flip() { if (qi < Q.length) { flipped = !flipped; dlg.classList.toggle('vl-flip', flipped); } }
+  // Turning the card reads the word and its meaning (track lines 4i, 4i+1); 🔊 again.
+  function say() { if (qi < Q.length && window.jpGaPlay) window.jpGaPlay(Q[qi] * 4, Q[qi] * 4 + 1); }
+  function flip() {
+    if (qi >= Q.length) return;
+    flipped = !flipped; dlg.classList.toggle('vl-flip', flipped);
+    if (flipped) say(); else if (window.jpGaPause) window.jpGaPause();
+  }
   function grade(to) {
     if (qi >= Q.length) return;
     var s = ld(), i = Q[qi];
@@ -133,7 +145,7 @@
     show(); ev('word_sort_open', { left: Q.length });
     document.getElementById('vl-qcard').focus();
   }
-  function close() { dlg.hidden = true; document.documentElement.classList.remove('vl-open'); paint(); }
+  function close() { if (window.jpGaPause) window.jpGaPause(); dlg.hidden = true; document.documentElement.classList.remove('vl-open'); paint(); }
   document.getElementById('vl-sort').addEventListener('click', open);
   document.getElementById('vl-qx').addEventListener('click', close);
   document.getElementById('vl-qcard').addEventListener('click', flip);

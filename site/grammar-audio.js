@@ -63,6 +63,10 @@
     seekTo(i); go();
   }
 
+  // For other scripts on the page (vocabulary quick sort): play lines i…j once.
+  window.jpGaPlay = function (i, j) { if (!T[i]) return; from = i; seekTo(i); stopAt = Math.min(j, T.length - 1); go(); };
+  window.jpGaPause = function () { a.pause(); stopAt = null; };
+
   a.addEventListener('timeupdate', function () {
     var t = a.currentTime, i = lineAt(t);
     if (stopAt != null && t >= T[stopAt][1]) {
