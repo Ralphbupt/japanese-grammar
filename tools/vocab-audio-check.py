@@ -16,7 +16,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 spec = importlib.util.spec_from_file_location("ga", os.path.join(HERE, "grammar-audio.py"))
 ga = importlib.util.module_from_spec(spec); spec.loader.exec_module(ga)
 LISTEN = os.environ.get("LISTEN_MODEL", "gemini-3.8-flash")
-ASK = "This clip is one Japanese word read aloud. Write exactly how it is pronounced, in hiragana only (long vowels as written in standard kana spelling, no punctuation, no explanation)."
+# Said alone, an all-kanji word (討論, 破片, 違反) is often read as Chinese, and asked
+# for "the hiragana" a listener transliterates that too — so ask the language first.
+ASK = "One word is read aloud in this clip. Is it spoken in Japanese or in Chinese (Mandarin)? Answer with exactly one line: 'ja <hiragana>' if Japanese (its pronunciation in hiragana, standard kana spelling), or 'zh <pinyin>' if Chinese."
 
 
 def hira(s):
@@ -32,7 +34,7 @@ def loose(s):
 
 def heard(text):
     key = hashlib.md5(f"{ga.TTS_MODEL}|{ga.VOICE['ja']}|{text}".encode()).hexdigest()[:16]
-    out = os.path.join(ga.CACHE, key + ".word")
+    out = os.path.join(ga.CACHE, key + ".word2")
     if os.path.exists(out):
         return open(out, encoding="utf-8").read()
     pcm = ga.speak(ga.VOICE["ja"], text)
@@ -50,9 +52,11 @@ def heard(text):
 
 def options(x):
     kata = "".join(chr(ord(c) + 0x60) if "ぁ" <= c <= "ゖ" else c for c in x["r"])
+    w = x["w"] + "。"
+    # all kanji: katakana first (no Chinese reading, no は read as "wa"); with kana: the written form first
+    order = [kata + "。", x["r"] + "。", w] if re.fullmatch(r"[一-龯々ヶ]+", x["w"]) else [w, kata + "。", x["r"] + "。"]
     out = []
-    out.append(x["w"] + "。")   # the written form first (kana-only words: their own spelling)
-    for o in (kata + "。", x["r"] + "。"):
+    for o in order:
         if o not in out:
             out.append(o)
     return out
@@ -60,7 +64,10 @@ def options(x):
 
 def pick(x):
     for o in options(x):
-        h = heard(o)
+        h = heard(o).strip()
+        if not h.startswith("ja"):
+            continue
+        h = h[2:]
         if hira(h) == hira(x["r"]) or loose(h) == loose(x["r"]):
             return o, h
     return None, heard(options(x)[0])
