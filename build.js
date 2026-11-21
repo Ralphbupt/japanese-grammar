@@ -4928,11 +4928,11 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
         en: { title: `JLPT ${level} Vocabulary Practice — Free Kanji & Word Questions`,
           desc: `Free JLPT ${level} vocabulary practice: ${subQs.length} exam-style questions on kanji readings, writing and word use, with every option explained. No sign-up.`,
           h1: `JLPT ${level} Vocabulary Practice`, crumb: `${level} Vocabulary`,
-          lead: `Every vocabulary item type of the ${level}: kanji readings, writing, word choice and more. Answer, then see why each option is right or wrong.`, nav: navLinks(pageId, true) },
+          lead: `Every vocabulary item type of the ${level}: kanji readings, writing, word choice and more. Answer, then see why each option is right or wrong.${vlLangs.includes("en") ? ` Want the words themselves? The <a href="${SITE_PATH}${vlId}/">${level} vocabulary list</a> has every word the real ${level} tests asked, read aloud.` : ""}`, nav: navLinks(pageId, true) },
         zh: { title: `JLPT ${level} 词汇练习 - 文字词汇在线做题，附详细解析`,
           desc: `免费 JLPT ${level} 文字词汇在线练习：${subQs.length} 道仿真题，覆盖汉字读音、汉字写法和词语运用，每个选项都有解析。`,
           h1: `JLPT ${level} 词汇练习`, crumb: `${level} 词汇`,
-          lead: `${level} 文字词汇的全部题型：汉字读音、汉字写法、选词填空等。答完马上看每个选项为什么对、为什么错。`, nav: navLinks(pageId, false) },
+          lead: `${level} 文字词汇的全部题型：汉字读音、汉字写法、选词填空等。答完马上看每个选项为什么对、为什么错。${vlLangs.includes("zh") ? `想先背词：<a href="${SITE_PATH}${vlId}/">${level} 高频词汇</a>收了历年真题考过的全部词，带朗读。` : ""}`, nav: navLinks(pageId, false) },
       };
       for (const lang of PAGE_LANGS) {
         writeLangPage(pageId, lang, localizePage(renderQuiz(lang, withAbout(pageMeta[lang.code], level, p.id, lang.code === "en", quizBundles[level], langVariant(pageId, lang).url), langVariant(pageId, lang), level, `data-src="${subSrc[lang.code]}"`, subSrc[lang.code]), lang, localizedPageIds));
@@ -5342,7 +5342,12 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
       zh: { title: "JLPT 词汇练习 - N5 到 N1 文字词汇在线做题，附解析", desc: `免费 JLPT 文字词汇在线练习：N5 到 N1 共 ${total} 道仿真题，覆盖汉字读音、汉字写法、选词和用法，每个选项都有解析，无需注册。`, h1: "JLPT 词汇练习", crumb: "词汇", lead: "选择你的级别。汉字读音、写法、选词、用法，每个选项都有解析。" },
     }, (level, L) => { const x = st[level], lv = level.toLowerCase(); return `<tr><th scope="row"><span class="level-tag">${level}</span></th>
       <td><a class="hub-go" href="${SITE_PATH}${lv}-vocabulary/"><b>${L("词汇练习", "Vocabulary practice")}</b><span>${L(`${x.qs} 题 · ${x.types.length} 种题型`, `${x.qs} questions · ${x.types.length} types`)}</span></a></td>
-      <td><a class="hub-go" href="${SITE_PATH}${lv}-cards/"><b>${L("语法卡片", "Grammar flashcards")}</b><span>${L("每个语法点一张", "one per grammar point")}</span></a></td></tr>`; },
+      ${(() => {   // the level's vocabulary list (words the real tests asked) when its track in this language exists
+        const f = path.join(__dirname, "questions", "vocab-list", `${lv}.json`), vl = fs.existsSync(f) && JSON.parse(fs.readFileSync(f, "utf-8"));
+        return vl && vl.tracks[L("zh", "en")]
+          ? `<td><a class="hub-go" href="${SITE_PATH}${lv}-vocabulary-list/"><b>${L("📚 高频词汇", "📚 Vocabulary list")}</b><span>${L(`真题考过的 ${vl.items.length} 个词 · 朗读`, `${vl.items.length} words from real tests · audio`)}</span></a></td>`
+          : `<td><a class="hub-go" href="${SITE_PATH}${lv}-cards/"><b>${L("语法卡片", "Grammar flashcards")}</b><span>${L("每个语法点一张", "one per grammar point")}</span></a></td>`;
+      })()}</tr>`; },
     (L) => `${tipsLink("jlpt-vocabulary-grammar-tips", L, "文字词汇与语法做题技巧：读音陷阱、用法题、排序题★", "Vocabulary & grammar tips: reading traps, usage items, sentence order ★")}<section class="quiz-about">
 <h2>${L("这里能练什么", "What you get")}</h2>
 <ul>
