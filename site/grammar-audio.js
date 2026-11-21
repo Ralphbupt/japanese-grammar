@@ -4,14 +4,17 @@
  * t translation). Modes: play all, one line and stop, loop one line, play one
  * lesson. "Read translations" off = the player jumps over the t lines. Lesson
  * headings / chips (data-go) start a lesson; folded extra examples (data-mp3)
- * play their own lesson mp3. Position is remembered per page. */
+ * play their own lesson mp3. Position is remembered per page.
+ * A page may set window.jpGaSkip(i, from) → true to jump over line i while
+ * playing on (vocabulary list: words not in the word list, filtered-out words);
+ * `from` is the line the reader last started by hand, so that one still plays. */
 (function () {
   var root = document.getElementById('ga'), a = document.getElementById('ga-a'), T;
   if (!root || !a) return;
   try { T = JSON.parse(document.getElementById('ga-t').textContent); } catch (e) { return; }
   var ls = { get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} } };
   var page = root.getAttribute('data-page'), KEY = 'jp_ga_' + page;
-  var els = {}, cur = -1, stopAt = null, mode = 'all', played = false, readTr = ls.get('jp_ga_tr') !== '0';
+  var els = {}, cur = -1, from = -1, stopAt = null, mode = 'all', played = false, readTr = ls.get('jp_ga_tr') !== '0';
   [].forEach.call(root.querySelectorAll('[data-l]'), function (e) { els[e.getAttribute('data-l')] = e; });
   // Lesson starts (line indices), for "this lesson" and the chip that lights up.
   var starts = [].map.call(root.querySelectorAll('h2[data-go]'), function (h) { return +h.getAttribute('data-go'); });
@@ -48,11 +51,13 @@
   function seekTo(i) { a.currentTime = T[i][0]; mark(i, true); }
   function playLine(i) {
     if (!T[i]) return;
+    from = i;
     stopAt = mode === 'one' || mode === 'loop' ? i : mode === 'lesson' ? lessonEnd(i) : null;
     seekTo(i); go();
   }
   function playFrom(i, lesson) {
     if (!T[i]) return;
+    from = i;
     if (lesson) setMode('lesson');
     stopAt = mode === 'lesson' ? lessonEnd(i) : null;
     seekTo(i); go();
@@ -67,6 +72,11 @@
     // Translations off: jump from the start of a t line to the next line.
     if (!readTr && i >= 0 && T[i][2] === 't' && t < T[i][1] - 0.15 && mode !== 'one' && mode !== 'loop') {
       if (T[i + 1]) { a.currentTime = T[i + 1][0]; i = i + 1; }
+    }
+    if (window.jpGaSkip && !a.paused && mode !== 'one' && mode !== 'loop' && i >= 0 && window.jpGaSkip(i, from)) {
+      var j = i + 1; while (T[j] && window.jpGaSkip(j, from)) j++;
+      if (!T[j] || (stopAt != null && j > stopAt)) { a.pause(); stopAt = null; return; }
+      a.currentTime = T[j][0]; i = j;
     }
     mark(i, !a.paused);
     if (a.duration) seek.value = Math.round(t / a.duration * 1000);
