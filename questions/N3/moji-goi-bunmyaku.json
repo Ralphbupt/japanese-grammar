@@ -39,485 +39,470 @@
     ]
   },
   {
-    "id": "n3-mg-302",
+    "id": "n3-mg-354",
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "旅行の（　）は 一人 五万円までなので、高い ホテルには 泊まれない。",
+    "stem": "台風の（　）で、今日は 午後から 電車が 止まる かもしれない。",
     "options": [
-      "予算",
-      "収入",
-      "給料",
-      "物価"
+      "影響",
+      "効果",
+      "原因",
+      "印象"
     ],
     "answer": 0,
     "tr": {
-      "zh": "旅行预算每人最多五万日元，所以住不了贵的酒店。",
-      "en": "The travel budget is up to 50,000 yen per person, so we can't stay at an expensive hotel."
+      "zh": "受台风影响，今天下午起电车可能会停运。",
+      "en": "Because of the typhoon, trains may stop running from this afternoon."
     },
     "why": {
-      "zh": "线索：「一人 五万円まで」是事先定好的花钱上限，所以「高い ホテルには 泊まれない」。\n词义：「予算」（よさん）＝预先计划好可以花的钱，常说「予算が 足りない」「予算を 立てる」。",
-      "en": "Clue: 「一人 五万円まで」 is a spending limit fixed in advance, which is why 「高い ホテルには 泊まれない」.\nMeaning: 「予算」 (よさん) is the money you plan to spend, a budget: 「予算が 足りない」 (the budget is short), 「予算を 立てる」 (draw up a budget)."
+      "zh": "线索：「台風の（　）で」，结果是「電車が 止まる かもしれない」——台风带来的作用、后果。\n词义：「影響」（えいきょう）＝影响，常说「台風の 影響で」「〜に 影響を 与える」「〜の 影響を 受ける」。\n辨析：「原因」要说「台風が 原因で」，不说「台風の 原因で」（那是“台风形成的原因”）。",
+      "en": "Clue: 「台風の（　）で」, with the result 「電車が 止まる かもしれない」 — an effect the typhoon has.\nMeaning: 「影響」 (えいきょう) is influence or effect: 「台風の 影響で」 (because of the typhoon), 「〜に 影響を 与える」 (affect …), 「〜の 影響を 受ける」 (be affected by …).\nContrast: with 「原因」 you say 「台風が 原因で」; 「台風の 原因」 is what causes a typhoon."
     },
     "wrong": [
       null,
       {
-        "zh": "「収入」是收入，是赚来的钱，不说“旅行的收入”。",
-        "en": "「収入」 is income — money you earn, not money set aside for a trip."
+        "zh": "「効果」是好的效果、功效，台风让电车停运不是「効果」。",
+        "en": "「効果」 is a (desired) effect or benefit; trains stopping isn't a typhoon's 「効果」."
       },
       {
-        "zh": "「給料」是工资，旅行没有工资。",
-        "en": "「給料」 is a salary; a trip doesn't have one."
+        "zh": "「台風の 原因」是“台风产生的原因”，表示原因要说「台風が 原因で」。",
+        "en": "「台風の 原因」 is what causes a typhoon; for a cause you'd say 「台風が 原因で」."
       },
       {
-        "zh": "「物価」是物价水平，不是“每人五万日元”这样的金额。",
-        "en": "「物価」 is the general price level, not a set sum per person."
+        "zh": "「印象」是印象、感觉，和电车停运无关。",
+        "en": "「印象」 is an impression — unrelated to trains stopping."
       }
     ]
   },
   {
-    "id": "n3-mg-303",
+    "id": "n3-mg-341",
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "引っ越したら、市役所で 住所を 変える（　）を しなければ ならない。",
+    "stem": "病院では 病気が うつらない ように、部屋や 道具を いつも（　）に 保って いる。",
     "options": [
-      "注文",
-      "手続き",
-      "招待",
-      "案内"
+      "新鮮",
+      "清潔",
+      "正確",
+      "豊か"
     ],
     "answer": 1,
     "tr": {
-      "zh": "搬家后必须在市政府办理更改地址的手续。",
-      "en": "After moving, you have to go through the procedure for changing your address at city hall."
+      "zh": "医院里为了不让疾病传染，总是让房间和器具保持清洁。",
+      "en": "In a hospital, rooms and equipment are always kept clean so that illnesses don't spread."
     },
     "why": {
-      "zh": "线索：在「市役所」办「住所を 変える」这种事，是要按规定填表、办理的公事。\n词义：「手続き」（てつづき）＝按规定办理的手续，常说「手続きを する」「入学の 手続き」。",
-      "en": "Clue: 「住所を 変える」 at the 「市役所」 is official business done by filling in forms.\nMeaning: 「手続き」 (てつづき) is an official procedure, paperwork: 「手続きを する」 (go through the procedure), 「入学の 手続き」 (enrolment procedures)."
+      "zh": "线索：为了「病気が うつらない ように」，让「部屋や 道具」一直保持干净、没有细菌的状态。\n词义：「清潔」（せいけつ）＝清洁、卫生，常说「清潔に 保つ」「清潔な タオル」。\n辨析：「新鮮」说食物、空气新鲜；「清潔」说干净卫生。",
+      "en": "Clue: so that 「病気が うつらない」, the 「部屋や 道具」 are kept free of dirt and germs.\nMeaning: 「清潔」 (せいけつ) is clean and hygienic: 「清潔に 保つ」 (keep clean), 「清潔な タオル」 (a clean towel).\nContrast: 「新鮮」 is fresh (food, air); 「清潔」 is clean and hygienic."
     },
     "wrong": [
       {
-        "zh": "「注文」是点餐、订购，不在市政府“订购”地址变更。",
-        "en": "「注文」 is ordering goods or food, not something done at city hall."
+        "zh": "「新鮮」是食物、空气新鲜，不说把房间和器具“保持新鲜”。",
+        "en": "「新鮮」 is fresh, of food or air; rooms and tools aren't kept \"fresh\"."
       },
       null,
       {
-        "zh": "「招待」是邀请，和更改地址无关。",
-        "en": "「招待」 is an invitation — unrelated to changing an address."
+        "zh": "「正確」是准确无误，和防止传染无关。",
+        "en": "「正確」 is accurate — nothing to do with stopping infection."
       },
       {
-        "zh": "「案内を する」是给人带路、介绍，不是自己办的事。",
-        "en": "「案内を する」 is guiding or showing someone around, not paperwork you do yourself."
+        "zh": "「豊か」是丰富、富裕，不能形容房间和器具的卫生状态。",
+        "en": "「豊か」 is rich or plentiful; it doesn't describe how hygienic a room is."
       }
     ]
   },
   {
-    "id": "n3-mg-304",
+    "id": "n3-mg-342",
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "前の 車が（　）止まったので、ぶつかりそうに なった。",
+    "stem": "熱が 39度も あって、立ち上がると 体が（　）して まっすぐ 歩けない。",
     "options": [
-      "ようやく",
-      "いきなり",
-      "ゆっくり",
-      "そろそろ"
+      "いらいら",
+      "ふらふら",
+      "ぺらぺら",
+      "のんびり"
     ],
     "answer": 1,
     "tr": {
-      "zh": "前面的车突然停下，差点撞上。",
-      "en": "The car in front stopped without warning, and I nearly hit it."
+      "zh": "发烧到39度，一站起来身子就摇摇晃晃，走不了直线。",
+      "en": "I have a fever of 39 degrees, and when I stand up I'm so unsteady I can't walk straight."
     },
     "why": {
-      "zh": "线索：前车一停，后面就「ぶつかりそうに なった」，说明停得毫无预兆。\n词义：「いきなり」＝突然、冷不防，事先没有任何征兆，常说「いきなり 止まる」「いきなり 雨が 降り出す」。",
-      "en": "Clue: the car stopping made me 「ぶつかりそうに なった」, so it gave no warning.\nMeaning: 「いきなり」 is suddenly, without any warning: 「いきなり 止まる」 (stop dead), 「いきなり 雨が 降り出す」 (it suddenly starts raining)."
+      "zh": "线索：发高烧，一「立ち上がる」身体就站不稳，「まっすぐ 歩けない」。\n词义：「ふらふら」＝（因生病、疲劳）身体摇晃、站不稳，常说「体が ふらふらする」「ふらふら 歩く」；也指漫无目的地闲逛。",
+      "en": "Clue: with a high fever, 「立ち上がる」 makes the body unsteady, so 「まっすぐ 歩けない」.\nMeaning: 「ふらふら」 is unsteady, swaying (from illness or fatigue): 「体が ふらふらする」 (feel unsteady), 「ふらふら 歩く」 (totter along); it can also mean wandering about aimlessly."
     },
     "wrong": [
       {
-        "zh": "「ようやく」是“终于”，用于等待已久的事，停车不会让人差点撞上。",
-        "en": "「ようやく」 means \"at last\", for something long awaited — it doesn't explain the near-crash."
+        "zh": "「いらいら」是焦躁、着急，是心情，不会让人走不了直线。",
+        "en": "「いらいら」 is irritation, a mood; it doesn't stop you walking straight."
       },
       null,
       {
-        "zh": "慢慢停下的话不会差点撞上。",
-        "en": "If it had stopped slowly, you wouldn't nearly have hit it."
+        "zh": "「ぺらぺら」是说外语流利，和发烧站不稳无关。",
+        "en": "「ぺらぺら」 is speaking fluently — nothing to do with a feverish body."
       },
       {
-        "zh": "「そろそろ」是“差不多该……了”，不用来描述已经发生的停车。",
-        "en": "「そろそろ」 means \"it's about time to…\", not how something happened."
+        "zh": "「のんびり」是悠闲自在，悠闲不会让人走不了直线。",
+        "en": "「のんびり」 is relaxed and unhurried; that doesn't stop you walking straight."
       }
     ]
   },
   {
-    "id": "n3-mg-305",
+    "id": "n3-mg-343",
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "（　）早く 起きたのに、雨で ピクニックが 中止に なった。",
+    "stem": "ロンドンへの 直行便が なかったので、ソウル（　）で 行く ことに した。",
     "options": [
-      "ちっとも",
-      "めったに",
-      "せっかく",
-      "まさか"
+      "方面",
+      "経由",
+      "行き",
+      "付近"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "因为没有去伦敦的直飞航班，决定经首尔去。",
+      "en": "There was no direct flight to London, so I decided to go via Seoul."
+    },
+    "why": {
+      "zh": "线索：没有「直行便」，只能在中途某地转一下再去伦敦；「〜で 行く」表示走哪条路线。\n词义：「経由」（けいゆ）＝经过、途经某地，常说「ソウル経由で 行く」「大阪経由の バス」。",
+      "en": "Clue: no 「直行便」, so the trip passes through somewhere on the way; 「〜で 行く」 names the route.\nMeaning: 「経由」 (けいゆ) is going via a place: 「ソウル経由で 行く」 (go via Seoul), 「大阪経由の バス」 (a bus via Osaka)."
+    },
+    "wrong": [
+      {
+        "zh": "「方面」是“……方向”，「ソウル方面」是往首尔那边，不能接「で 行く」表示路线。",
+        "en": "「方面」 is \"in the direction of\"; 「ソウル方面で 行く」 doesn't name a route."
+      },
+      null,
+      {
+        "zh": "「行き」是目的地，「ソウル行き」是开往首尔，而目的地是伦敦。",
+        "en": "「行き」 marks the destination — 「ソウル行き」 is bound for Seoul, but the goal is London."
+      },
+      {
+        "zh": "「付近」是附近，「ソウル付近で 行く」说不通。",
+        "en": "「付近」 is the vicinity; 「ソウル付近で 行く」 makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-344",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "知らない 男が 家の 前を 何度も（　）して いたので、少し 怖く なった。",
+    "options": [
+      "ごろごろ",
+      "そわそわ",
+      "うろうろ",
+      "ぺらぺら"
     ],
     "answer": 2,
     "tr": {
-      "zh": "特意早起了，却因为下雨野餐取消了。",
-      "en": "I went to the trouble of getting up early, but the picnic was called off because of rain."
+      "zh": "一个陌生男人在家门前来回转悠了好几次，我有点害怕了。",
+      "en": "A man I didn't know kept hanging around in front of the house, and I got a bit scared."
     },
     "why": {
-      "zh": "线索：「早く 起きたのに」——特意早起了，结果因为下雨野餐取消，白费了。\n词义：「せっかく」＝特意、好不容易（做了却可惜），常和「のに」呼应：「せっかく 作ったのに」；也说「せっかくの 休み」（难得的假日）。",
-      "en": "Clue: 「早く 起きたのに」 — I made the effort to get up early, and the rain wasted it.\nMeaning: 「せっかく」 is \"having gone to the trouble\", often paired with 「のに」: 「せっかく 作ったのに」 (after I went to the trouble of making it). 「せっかくの 休み」 is a precious day off."
+      "zh": "线索：「家の 前を 何度も」——「を」表示经过的地方，人在门前来回走动，让人「怖く なった」。\n词义：「うろうろ」＝没有目的地来回走动、徘徊，常说「駅の 前を うろうろする」「道が 分からなくて うろうろする」。\n辨析：「そわそわ」是心神不定坐不住，是状态，不说在某处来回走。",
+      "en": "Clue: 「家の 前を 何度も」 — 「を」 marks the ground covered; the man walks back and forth there, which is scary.\nMeaning: 「うろうろ」 is wandering back and forth, hanging around: 「駅の 前を うろうろする」 (loiter in front of the station), 「道が 分からなくて うろうろする」 (wander about, lost).\nContrast: 「そわそわ」 is being restless or fidgety, a state, not walking up and down a place."
     },
     "wrong": [
       {
-        "zh": "「ちっとも」后面接否定，“一点也不”，这里是肯定句。",
-        "en": "「ちっとも」 goes with a negative (\"not at all\"); this sentence is affirmative."
+        "zh": "「ごろごろ」是躺着无所事事或东西滚动，不能在门前“来回走”。",
+        "en": "「ごろごろ」 is lazing about or rolling; it isn't moving back and forth in front of a house."
       },
       {
-        "zh": "「めったに」后面要接否定，“很少”，这里是肯定句。",
-        "en": "「めったに」 needs a negative (\"rarely\"); this sentence is affirmative."
+        "zh": "「そわそわ」是坐立不安的心情，不和「家の 前を」这种经过的地点连用。",
+        "en": "「そわそわ」 is restlessness; it doesn't take a place you move through like 「家の 前を」."
       },
       null,
       {
-        "zh": "「まさか」是“难道、万万没想到”，和早起不搭。",
-        "en": "「まさか」 is \"surely not\" — it doesn't go with getting up early."
+        "zh": "「ぺらぺら」是说话流利，和在门口徘徊无关。",
+        "en": "「ぺらぺら」 is speaking fluently — unrelated to hanging around a door."
       }
     ]
   },
   {
-    "id": "n3-mg-306",
+    "id": "n3-mg-345",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "この 道路は 時速 40キロの 速度（　）が あるので、それ以上 出しては いけない。",
+    "options": [
+      "制限",
+      "限界",
+      "範囲",
+      "禁止"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这条路限速每小时40公里，不能开得比这更快。",
+      "en": "This road has a speed limit of 40 km/h, so you mustn't go any faster."
+    },
+    "why": {
+      "zh": "线索：规定了「時速 40キロ」，「それ以上 出しては いけない」——是规则定下的上限。\n词义：「制限」（せいげん）＝规定的限度、限制，常说「速度制限」「年齢制限」「制限時間」。\n辨析：「限界」是能力、体力的极限，不是规则定的。",
+      "en": "Clue: a set figure, 「時速 40キロ」, and 「それ以上 出しては いけない」 — an upper limit fixed by a rule.\nMeaning: 「制限」 (せいげん) is a limit or restriction set by rules: 「速度制限」 (speed limit), 「年齢制限」 (age limit), 「制限時間」 (time limit).\nContrast: 「限界」 is the limit of what someone or something can do, not one set by rules."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「限界」是能力、体力的极限，交通规则定的速度不叫「限界」。",
+        "en": "「限界」 is the limit of one's ability or strength, not a speed set by traffic rules."
+      },
+      {
+        "zh": "「範囲」是范围，不说「速度範囲が ある」来表示限速。",
+        "en": "「範囲」 is a range; 「速度範囲が ある」 isn't how a speed limit is said."
+      },
+      {
+        "zh": "「禁止」是禁止，「40キロの 速度禁止」意思不通——40公里本身并不被禁止。",
+        "en": "「禁止」 is a ban; \"a 40 km/h speed ban\" makes no sense — 40 itself isn't banned."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-346",
     "type": "bunmyaku",
     "difficulty": 1,
-    "stem": "三年間 練習して、（　）試合に 勝つ ことが できた。",
+    "stem": "先週 買った 靴は サイズが（　）で、一日中 歩いても 足が 痛く ならない。",
     "options": [
-      "いきなり",
-      "さっそく",
-      "しばらく",
-      "とうとう"
+      "すっきり",
+      "しっかり",
+      "ぎりぎり",
+      "ぴったり"
     ],
     "answer": 3,
     "tr": {
-      "zh": "练了三年，终于赢了比赛。",
-      "en": "After three years of practice, I finally won a match."
+      "zh": "上周买的鞋尺码正合适，走一整天脚也不疼。",
+      "en": "The shoes I bought last week are exactly my size, so my feet don't hurt even after walking all day."
     },
     "why": {
-      "zh": "线索：「三年間 練習して」，经过很长时间的努力，最后「勝つ ことが できた」。\n词义：「とうとう」＝终于，经过很长时间最后出现某个结果，好坏结果都能用：「とうとう 完成した」「とうとう 来なかった」。",
-      "en": "Clue: 「三年間 練習して」 — a long effort that ends in 「勝つ ことが できた」.\nMeaning: 「とうとう」 is \"finally\", a result reached after a long time; it works for good or bad results: 「とうとう 完成した」 (it was finally finished), 「とうとう 来なかった」 (in the end they didn't come)."
+      "zh": "线索：「サイズが（　）で」，结果「一日中 歩いても 足が 痛く ならない」，说明尺码正好。\n词义：「ぴったり」＝正合适、严丝合缝，常说「サイズが ぴったりだ」「ぴったり 合う」；也指时间、数量正好：「ぴったり 千円」。\n辨析：「ぎりぎり」是勉强刚够，鞋子勉强穿得进，走一天脚会疼。",
+      "en": "Clue: 「サイズが（　）で」, and as a result 「一日中 歩いても 足が 痛く ならない」 — the size is just right.\nMeaning: 「ぴったり」 is a perfect fit, exactly right: 「サイズが ぴったりだ」 (it's exactly my size), 「ぴったり 合う」 (fit perfectly); also exact amounts: 「ぴったり 千円」 (exactly 1,000 yen).\nContrast: 「ぎりぎり」 is only just enough — shoes that barely fit would hurt after a day."
     },
     "wrong": [
       {
-        "zh": "「いきなり」是“突然”，和“练了三年”不符。",
-        "en": "「いきなり」 is \"suddenly\" — it clashes with three years of practice."
+        "zh": "「すっきり」是清爽、舒畅，不形容尺码。",
+        "en": "「すっきり」 is refreshed or neat; it doesn't describe a size."
       },
       {
-        "zh": "「さっそく」是“马上（着手）”，不表示长期努力后的结果。",
-        "en": "「さっそく」 is \"straight away\", not the result of long effort."
+        "zh": "「しっかり」是牢固、扎实，不说「サイズが しっかりだ」。",
+        "en": "「しっかり」 is firm or solid; 「サイズが しっかりだ」 isn't said."
       },
       {
-        "zh": "「しばらく」是“暂时、一段时间”，不能修饰“能赢了”。",
-        "en": "「しばらく」 is \"for a while\" and can't describe finally winning."
+        "zh": "「ぎりぎり」是勉强刚够，勉强穿得下的鞋走一天会疼，和后文矛盾。",
+        "en": "「ぎりぎり」 is barely enough; shoes that only just fit would hurt, contradicting the rest."
       },
       null
     ]
   },
   {
-    "id": "n3-mg-307",
-    "type": "bunmyaku",
-    "difficulty": 2,
-    "stem": "スタートの ベルが 鳴ると、選手たちは（　）走り出した。",
-    "options": [
-      "いっせいに",
-      "たまに",
-      "めったに",
-      "互いに"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "起跑铃一响，选手们一齐跑了出去。",
-      "en": "When the starting bell rang, the runners all started running at once."
-    },
-    "why": {
-      "zh": "线索：「ベルが 鳴ると」，很多「選手たち」在同一时刻开始跑。\n词义：「いっせいに」（一斉に）＝许多人或物同时一起做，常说「いっせいに 走り出す」「いっせいに 立ち上がる」。",
-      "en": "Clue: 「ベルが 鳴ると」 — many 「選手たち」 start running at the same moment.\nMeaning: 「いっせいに」 (一斉に) is many people or things doing something all at once: 「いっせいに 走り出す」 (all start running), 「いっせいに 立ち上がる」 (all stand up together)."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「たまに」是“偶尔”，描述的是一次具体的起跑，不合。",
-        "en": "「たまに」 is \"occasionally\"; this is one particular start."
-      },
-      {
-        "zh": "「めったに」后面要接否定，“很少”。",
-        "en": "「めったに」 needs a negative after it (\"rarely\")."
-      },
-      {
-        "zh": "「互いに」是“互相”，跑步不是互相做的动作。",
-        "en": "「互いに」 is \"each other\" — running isn't done to one another."
-      }
-    ]
-  },
-  {
-    "id": "n3-mg-308",
+    "id": "n3-mg-355",
     "type": "bunmyaku",
     "difficulty": 1,
-    "stem": "会議で 使う 資料を 二十部（　）して ください。",
+    "stem": "駅で 別れる とき、友達は 電車が 見えなく なるまで 手を（　）くれた。",
     "options": [
-      "メモ",
-      "チェック",
-      "サイン",
-      "コピー"
-    ],
-    "answer": 3,
-    "tr": {
-      "zh": "请把开会用的资料复印二十份。",
-      "en": "Please make twenty copies of the handout for the meeting."
-    },
-    "why": {
-      "zh": "线索：「資料を 二十部」——「部」是份数，要把资料变成二十份。\n词义：「コピー」＝复印、复制，常说「資料を コピーする」「コピーを 取る」。",
-      "en": "Clue: 「資料を 二十部」 — 「部」 counts copies, so the handout has to become twenty copies.\nMeaning: 「コピー」 is a photocopy or copy: 「資料を コピーする」 (copy the handout), 「コピーを 取る」 (make a copy)."
-    },
-    "wrong": [
-      {
-        "zh": "「メモする」是记笔记，不会“记二十份资料”。",
-        "en": "「メモする」 is jotting down notes, not making twenty of a handout."
-      },
-      {
-        "zh": "「チェックする」是检查，检查不按“份数”。",
-        "en": "「チェックする」 is checking; you don't check something \"twenty copies\"."
-      },
-      {
-        "zh": "「サインする」是签名，资料不需要签二十份。",
-        "en": "「サインする」 is signing; a meeting handout isn't signed twenty times."
-      },
-      null
-    ]
-  },
-  {
-    "id": "n3-mg-309",
-    "type": "bunmyaku",
-    "difficulty": 1,
-    "stem": "新しい スマホは、（　）を 読まなくても 使い方が すぐ 分かった。",
-    "options": [
-      "メニュー",
-      "マニュアル",
-      "カタログ",
-      "ポスター"
+      "打って",
+      "振って",
+      "回して",
+      "押して"
     ],
     "answer": 1,
     "tr": {
-      "zh": "新手机即使不看说明书，也马上就会用了。",
-      "en": "With the new smartphone, I understood how to use it right away without reading the manual."
+      "zh": "在车站分别时，朋友一直挥手，直到电车看不见为止。",
+      "en": "When we parted at the station, my friend kept waving until the train was out of sight."
     },
     "why": {
-      "zh": "线索：「読まなくても 使い方が すぐ 分かった」，读了就能知道使用方法的东西是说明书。\n词义：「マニュアル」＝使用说明书、操作手册，常说「マニュアルを 読む」「仕事の マニュアル」；也可以说「説明書」（せつめいしょ）。",
-      "en": "Clue: 「読まなくても 使い方が すぐ 分かった」 — what you read to learn how to use something is the manual.\nMeaning: 「マニュアル」 is a manual or instructions: 「マニュアルを 読む」 (read the manual), 「仕事の マニュアル」 (a work manual). 「説明書」 (せつめいしょ) also means instructions."
+      "zh": "线索：「別れる とき」，一直到「電車が 見えなく なるまで」——是送别时挥手。\n词义：「振る」（ふる）＝挥动、摇动，常说「手を 振る」「首を 横に 振る」（摇头）；也指甩掉恋人：「彼女に 振られた」。",
+      "en": "Clue: 「別れる とき」, all the way 「電車が 見えなく なるまで」 — waving goodbye.\nMeaning: 「振る」 (ふる) is to wave or shake: 「手を 振る」 (wave), 「首を 横に 振る」 (shake one's head); also to dump someone: 「彼女に 振られた」 (she dumped me)."
     },
     "wrong": [
       {
-        "zh": "「メニュー」是菜单，不讲手机的用法。",
-        "en": "「メニュー」 is a menu; it doesn't explain how to use a phone."
+        "zh": "「手を 打つ」是采取措施或拍手成交，不是送别的动作。",
+        "en": "「手を 打つ」 is taking measures (or clapping on a deal), not a goodbye."
       },
       null,
       {
-        "zh": "「カタログ」是商品目录，介绍商品，不教使用方法。",
-        "en": "「カタログ」 is a catalogue for choosing products, not instructions."
+        "zh": "「手を 回す」是暗中安排、疏通，不是挥手告别。",
+        "en": "「手を 回す」 is pulling strings, not waving goodbye."
       },
       {
-        "zh": "「ポスター」是海报，不是看了学用法的东西。",
-        "en": "「ポスター」 is a poster, not something you read to learn how to use a device."
+        "zh": "「手を 押す」意思不通；送别时不“推手”。",
+        "en": "「手を 押す」 doesn't mean anything here; you don't push your hand goodbye."
       }
     ]
   },
   {
-    "id": "n3-mg-310",
+    "id": "n3-mg-356",
     "type": "bunmyaku",
-    "refs": [
-      "lesson37#vocab"
-    ],
     "difficulty": 2,
-    "stem": "部長が 出張中なので、会議での 説明は 私が（　）。",
+    "stem": "毎日 自分で 料理を するのは（　）ので、つい コンビニの お弁当を 買って しまう。",
     "options": [
-      "引き受けた",
-      "申し込んだ",
-      "受け取った",
-      "貸した"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "部长出差了，会上的说明由我来承担了。",
-      "en": "The manager is away on business, so I took on the explanation at the meeting."
-    },
-    "why": {
-      "zh": "线索：「部長が 出張中」，本该部长做的「会議での 説明」，由「私」接过来做。\n词义：「引き受ける」（ひきうける）＝答应承担别人托付的工作或责任，常说「仕事を 引き受ける」「頼みを 引き受ける」。",
-      "en": "Clue: 「部長が 出張中」 — the explanation the manager would give is taken over by 「私」.\nMeaning: 「引き受ける」 (ひきうける) is agreeing to take on a job or responsibility: 「仕事を 引き受ける」 (take on a job), 「頼みを 引き受ける」 (agree to a request)."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「申し込む」是报名、申请，不能“申请说明”。",
-        "en": "「申し込む」 is applying or signing up; you don't apply for an explanation."
-      },
-      {
-        "zh": "「受け取る」是收下东西，说明不是能收下的物品。",
-        "en": "「受け取る」 is receiving a thing; an explanation isn't an object you receive."
-      },
-      {
-        "zh": "「貸す」是借给别人东西，说明不能“借出”。",
-        "en": "「貸す」 is lending a thing; you can't lend an explanation."
-      }
-    ]
-  },
-  {
-    "id": "n3-mg-311",
-    "type": "bunmyaku",
-    "refs": [
-      "lesson44#vocab"
-    ],
-    "difficulty": 1,
-    "stem": "けがを して、プロの 選手に なる 夢を（　）。",
-    "options": [
-      "我慢した",
-      "諦めた",
-      "断った",
-      "許した"
+      "恥ずかしい",
+      "面倒くさい",
+      "もったいない",
+      "懐かしい"
     ],
     "answer": 1,
     "tr": {
-      "zh": "因为受伤，放弃了成为职业选手的梦想。",
-      "en": "Because of an injury, I gave up my dream of becoming a professional athlete."
+      "zh": "每天自己做饭太麻烦了，所以总是忍不住买便利店的盒饭。",
+      "en": "Cooking for myself every day is such a hassle that I end up buying convenience-store bentos."
     },
     "why": {
-      "zh": "线索：「けがを して」，成为职业选手的「夢」实现不了了，只好放下。\n词义：「諦める」（あきらめる）＝认为不可能而放弃（愿望、计划），常说「夢を 諦める」「進学を 諦める」。",
-      "en": "Clue: 「けがを して」 — the injury makes the 「夢」 impossible, so it is given up.\nMeaning: 「諦める」 (あきらめる) is giving up a hope or plan because you think it can't happen: 「夢を 諦める」 (give up a dream), 「進学を 諦める」 (give up going on to further study)."
+      "zh": "线索：觉得「料理を する」是负担，所以「つい」去买现成的「お弁当」。\n词义：「面倒くさい」（めんどうくさい）＝嫌麻烦、懒得做，常说「〜のは 面倒くさい」「面倒くさい 手続き」。口语也说「めんどくさい」。",
+      "en": "Clue: cooking 「料理を する」 feels like a chore, so I 「つい」 buy a ready-made 「お弁当」.\nMeaning: 「面倒くさい」 (めんどうくさい) is too much bother, a hassle: 「〜のは 面倒くさい」 (… is a pain), 「面倒くさい 手続き」 (tiresome paperwork). Casually also 「めんどくさい」."
     },
     "wrong": [
       {
-        "zh": "「我慢する」是忍耐，“忍耐梦想”说不通。",
-        "en": "「我慢する」 is putting up with something; you don't \"put up with\" a dream."
+        "zh": "「恥ずかしい」是害羞、丢脸，自己做饭并不丢脸，也推不出去买盒饭。",
+        "en": "「恥ずかしい」 is embarrassing; cooking for yourself isn't, and it doesn't lead to buying bentos."
       },
       null,
       {
-        "zh": "「断る」是拒绝别人的请求或邀请，梦想不是别人的请求。",
-        "en": "「断る」 is turning down a request or invitation; a dream isn't one."
+        "zh": "「もったいない」是浪费、可惜，自己做饭不浪费，反而是买盒饭更花钱。",
+        "en": "「もったいない」 is wasteful; cooking isn't — buying bentos costs more."
       },
       {
-        "zh": "「許す」是原谅、允许，和放弃梦想无关。",
-        "en": "「許す」 is forgiving or permitting — unrelated to giving up a dream."
+        "zh": "「懐かしい」是怀念，和做饭麻烦、去买盒饭的因果不合。",
+        "en": "「懐かしい」 is nostalgic; it doesn't explain buying bentos."
       }
     ]
   },
   {
-    "id": "n3-mg-312",
+    "id": "n3-mg-357",
     "type": "bunmyaku",
-    "refs": [
-      "lesson42#vocab"
-    ],
-    "difficulty": 2,
-    "stem": "電車の 中では、携帯電話で 話すのは（　）して ください。",
+    "difficulty": 1,
+    "stem": "ゆうべ 遅くまで 起きて いて 眠かったので、授業中に 何度も 大きな（　）を して しまった。",
     "options": [
-      "安心",
-      "用心",
-      "遠慮",
-      "反省"
+      "くしゃみ",
+      "いびき",
+      "あくび",
+      "しゃっくり"
     ],
     "answer": 2,
     "tr": {
-      "zh": "在电车里请不要打电话。",
-      "en": "Please refrain from talking on your phone on the train."
+      "zh": "昨晚熬到很晚，困得很，上课时打了好几个大哈欠。",
+      "en": "I stayed up late last night and was so sleepy that I kept giving big yawns in class."
     },
     "why": {
-      "zh": "线索：「携帯電話で 話すのは（　）して ください」，是车内那种礼貌地请人不要做某事的说法。\n词义：「遠慮」（えんりょ）＝客气、克制着不做，「〜は ご遠慮 ください」是礼貌的禁止；也说「遠慮しないで 食べて」（别客气，吃吧）。",
-      "en": "Clue: 「携帯電話で 話すのは（　）して ください」 is the polite way, as in train announcements, of asking people not to do something.\nMeaning: 「遠慮」 (えんりょ) is holding back out of consideration; 「〜は ご遠慮 ください」 is a polite \"please don't\". 「遠慮しないで 食べて」 means \"help yourself, don't be shy\"."
+      "zh": "线索：「遅くまで 起きて いて 眠かった」——困了才会打的东西，后面接「を して」。\n词义：「あくび」＝哈欠，常说「あくびを する」「あくびが 出る」。\n辨析：「いびき」是打鼾，搭配「いびきを かく」，而且是睡着时才有。",
+      "en": "Clue: 「遅くまで 起きて いて 眠かった」 — what sleepiness brings on, followed by 「を して」.\nMeaning: 「あくび」 is a yawn: 「あくびを する」 (yawn), 「あくびが 出る」 (a yawn comes out).\nContrast: 「いびき」 is snoring, used as 「いびきを かく」, and only while asleep."
     },
     "wrong": [
       {
-        "zh": "「安心する」是放心，不能请人“放心打电话”。",
-        "en": "「安心する」 is feeling relieved; it makes no sense here."
+        "zh": "「くしゃみ」是喷嚏，由感冒、花粉等引起，不是因为困。",
+        "en": "「くしゃみ」 is a sneeze, caused by colds or pollen, not sleepiness."
       },
       {
-        "zh": "「用心する」是提防、小心危险，打电话不是危险。",
-        "en": "「用心する」 is being on guard against danger; a phone call isn't a danger."
+        "zh": "「いびき」是打鼾，要说「いびきを かく」，而且是睡着以后的事。",
+        "en": "「いびき」 is snoring — 「いびきを かく」, and only once asleep."
       },
       null,
       {
-        "zh": "「反省する」是反省过错，不是请别人不做某事。",
-        "en": "「反省する」 is reflecting on a mistake, not refraining from something."
+        "zh": "「しゃっくり」是打嗝，和困不困没有关系。",
+        "en": "「しゃっくり」 is hiccups, which have nothing to do with being sleepy."
       }
     ]
   },
   {
-    "id": "n3-mg-313",
+    "id": "n3-mg-347",
     "type": "bunmyaku",
-    "refs": [
-      "lesson39#vocab"
-    ],
     "difficulty": 2,
-    "stem": "試合は 最後まで 何が 起こるか 分からないから、勝っていても（　）しては いけない。",
+    "stem": "この 映画は、有名な 歌手が 主人公の 父親の 役で（　）する ことで 話題に なった。",
     "options": [
-      "緊張",
-      "油断",
-      "応援",
-      "感謝"
-    ],
-    "answer": 1,
-    "tr": {
-      "zh": "比赛到最后都不知道会发生什么，所以即使领先也不能大意。",
-      "en": "Anything can happen until the end of a match, so even when you're ahead you mustn't let your guard down."
-    },
-    "why": {
-      "zh": "线索：「最後まで 何が 起こるか 分からない」，所以「勝っていても」不能放松警惕。\n词义：「油断」（ゆだん）＝该小心时大意、放松警惕，常说「油断する」「油断しては いけない」；成语「油断大敵」（ゆだんたいてき）＝大意是大敌。",
-      "en": "Clue: 「最後まで 何が 起こるか 分からない」, so even 「勝っていても」 you can't relax your guard.\nMeaning: 「油断」 (ゆだん) is getting careless when you should stay alert: 「油断する」, 「油断しては いけない」 (don't let your guard down). The saying 「油断大敵」 (ゆだんたいてき) means carelessness is your worst enemy."
-    },
-    "wrong": [
-      {
-        "zh": "「緊張」是紧张，领先时“不能紧张”和前半句“不知道会发生什么”不连贯。",
-        "en": "「緊張」 is nerves; \"anything can happen\" is a reason to stay alert, not a reason not to be nervous."
-      },
-      null,
-      {
-        "zh": "「応援」是加油、声援，没有理由禁止。",
-        "en": "「応援」 is cheering someone on; there's no reason to forbid it."
-      },
-      {
-        "zh": "「感謝」是感谢，和“不知道会发生什么”无关。",
-        "en": "「感謝」 is gratitude — unrelated to anything happening before the end."
-      }
-    ]
-  },
-  {
-    "id": "n3-mg-314",
-    "type": "bunmyaku",
-    "refs": [
-      "lesson41#vocab"
-    ],
-    "difficulty": 2,
-    "stem": "夜 遅くに 洗濯機を 使うと、となりの 人に（　）が かかる。",
-    "options": [
-      "注意",
-      "感動",
-      "迷惑",
-      "責任"
+      "出場",
+      "出席",
+      "登場",
+      "出発"
     ],
     "answer": 2,
     "tr": {
-      "zh": "深夜用洗衣机会给邻居添麻烦。",
-      "en": "Using the washing machine late at night causes trouble for the neighbours."
+      "zh": "这部电影因为有名的歌手以主人公父亲的角色登场而成为话题。",
+      "en": "This film got people talking because a famous singer appears in it as the hero's father."
     },
     "why": {
-      "zh": "线索：「夜 遅くに 洗濯機を 使う」会吵到「となりの 人」，空格后接「が かかる」。\n词义：「迷惑」（めいわく）＝给别人添的麻烦，常说「人に 迷惑を かける」「迷惑が かかる」；也作形容动词：「近所に 迷惑だ」。",
-      "en": "Clue: 「夜 遅くに 洗濯機を 使う」 disturbs 「となりの 人」, and the blank is followed by 「が かかる」.\nMeaning: 「迷惑」 (めいわく) is trouble or nuisance caused to others: 「人に 迷惑を かける」 (cause someone trouble), 「迷惑が かかる」 (trouble falls on someone). It also works as an adjective: 「近所に 迷惑だ」 (a nuisance to the neighbours)."
+      "zh": "线索：在「映画」里以「父親の 役で」出现——是角色在作品中出场。\n词义：「登場」（とうじょう）＝（人物）在舞台、作品中出场，（新产品）问世，常说「主人公が 登場する」「新しい 商品が 登場する」。\n辨析：「出場」是参加比赛：「大会に 出場する」。",
+      "en": "Clue: appearing in a 「映画」 「父親の 役で」 — a character coming on in a work.\nMeaning: 「登場」 (とうじょう) is (a character) appearing on stage or in a story, or (a product) coming out: 「主人公が 登場する」 (the hero appears), 「新しい 商品が 登場する」 (a new product appears).\nContrast: 「出場」 is taking part in a competition: 「大会に 出場する」."
     },
     "wrong": [
       {
-        "zh": "「注意」不和「かかる」搭配，也不是给邻居造成的东西。",
-        "en": "「注意」 doesn't go with 「かかる」 and isn't something you cause your neighbours."
+        "zh": "「出場」是参加比赛、大会，电影里演角色不说「出場」。",
+        "en": "「出場」 is competing in a contest; playing a role in a film isn't 「出場」."
       },
       {
-        "zh": "「感動」是感动，深夜的噪音不会让人感动。",
-        "en": "「感動」 is being moved; late-night noise doesn't move anyone."
+        "zh": "「出席」是出席会议、课程，不用于在电影里演角色。",
+        "en": "「出席」 is attending a meeting or class, not playing a role in a film."
       },
       null,
       {
-        "zh": "「責任」是责任，用洗衣机不会让邻居“承担责任”。",
-        "en": "「責任」 is responsibility; your washing machine doesn't put responsibility on the neighbours."
+        "zh": "「出発」是出发，和演角色无关。",
+        "en": "「出発」 is setting off — unrelated to playing a part."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-348",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "初めて 大勢の 前で スピーチを した とき、胸が（　）して 声が ふるえた。",
+    "options": [
+      "ぺこぺこ",
+      "からから",
+      "どきどき",
+      "ぶらぶら"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "第一次在很多人面前演讲时，心怦怦直跳，声音都发抖了。",
+      "en": "The first time I gave a speech in front of a lot of people, my heart was pounding and my voice shook."
+    },
+    "why": {
+      "zh": "线索：「初めて 大勢の 前で」演讲，紧张得「声が ふるえた」，主语是「胸」。\n词义：「どきどき」＝（因紧张、兴奋、害怕）心怦怦跳，常说「胸が どきどきする」「どきどきしながら 待つ」。",
+      "en": "Clue: speaking 「初めて 大勢の 前で」, so nervous that 「声が ふるえた」, with 「胸」 as the subject.\nMeaning: 「どきどき」 is the heart pounding (from nerves, excitement or fear): 「胸が どきどきする」 (one's heart pounds), 「どきどきしながら 待つ」 (wait nervously)."
+    },
+    "wrong": [
+      {
+        "zh": "「ぺこぺこ」是肚子饿或点头哈腰，不说「胸が ぺこぺこ」。",
+        "en": "「ぺこぺこ」 is being hungry or bowing; 「胸が ぺこぺこ」 isn't said."
+      },
+      {
+        "zh": "「からから」是干巴巴，如「のどが からから」，不形容紧张的心跳。",
+        "en": "「からから」 is bone dry, as in 「のどが からから」, not a nervous heartbeat."
+      },
+      null,
+      {
+        "zh": "「ぶらぶら」是闲逛或晃来晃去，和紧张无关。",
+        "en": "「ぶらぶら」 is strolling or dangling — nothing to do with nerves."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-349",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "朝ご飯を 食べる 時間が なかったので、昼前には もう おなかが（　）だった。",
+    "options": [
+      "ぺらぺら",
+      "ぴかぴか",
+      "ぺこぺこ",
+      "ばらばら"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "没时间吃早饭，还没到中午肚子就已经饿扁了。",
+      "en": "I had no time for breakfast, so I was already starving before noon."
+    },
+    "why": {
+      "zh": "线索：「朝ご飯を 食べる 時間が なかった」，到「昼前」主语「おなか」已经空了。\n词义：「ぺこぺこ」＝肚子很饿，常说「おなかが ぺこぺこだ」；也指不停点头哈腰：「ぺこぺこ 頭を 下げる」。",
+      "en": "Clue: 「朝ご飯を 食べる 時間が なかった」, so by 「昼前」 the 「おなか」 is empty.\nMeaning: 「ぺこぺこ」 is starving: 「おなかが ぺこぺこだ」 (I'm starving); it also means bowing again and again: 「ぺこぺこ 頭を 下げる」."
+    },
+    "wrong": [
+      {
+        "zh": "「ぺらぺら」是说外语流利，不形容肚子。",
+        "en": "「ぺらぺら」 is fluent (in a language), not a stomach."
+      },
+      {
+        "zh": "「ぴかぴか」是闪闪发亮，不形容肚子饿。",
+        "en": "「ぴかぴか」 is shiny — not hunger."
+      },
+      null,
+      {
+        "zh": "「ばらばら」是七零八落、分散，不形容肚子。",
+        "en": "「ばらばら」 is scattered or in pieces, not a stomach."
       }
     ]
   },
@@ -678,41 +663,38 @@
     ]
   },
   {
-    "id": "n3-mg-319",
+    "id": "n3-mg-350",
     "type": "bunmyaku",
-    "refs": [
-      "lesson43#vocab"
-    ],
     "difficulty": 1,
-    "stem": "景気が 悪くて、父の 会社が（　）して しまった。",
+    "stem": "今の 成績なら、来年の 試験に 合格するのは ほぼ（　）だと 先生に 言われた。",
     "options": [
-      "成功",
-      "出勤",
-      "倒産",
-      "発展"
+      "正確",
+      "丁寧",
+      "確実",
+      "正直"
     ],
     "answer": 2,
     "tr": {
-      "zh": "因为不景气，父亲的公司倒闭了。",
-      "en": "Business was bad, and my father's company went bankrupt."
+      "zh": "老师说按现在的成绩，明年考试几乎肯定能通过。",
+      "en": "My teacher told me that with my current grades, passing next year's exam is almost certain."
     },
     "why": {
-      "zh": "线索：「景気が 悪くて」，加上表示遗憾的「〜して しまった」，说明公司经营不下去了。\n词义：「倒産」（とうさん）＝公司、企业破产倒闭，常说「会社が 倒産する」「倒産しそうだ」。",
-      "en": "Clue: 「景気が 悪くて」 plus the regretful 「〜して しまった」 — the company couldn't keep going.\nMeaning: 「倒産」 (とうさん) is a company going bankrupt: 「会社が 倒産する」 (a company goes under), 「倒産しそうだ」 (it looks about to go under)."
+      "zh": "线索：根据「今の 成績」判断「合格するのは ほぼ（　）だ」，说的是这件事有多大把握。\n词义：「確実」（かくじつ）＝确实、肯定会那样，常说「合格は 確実だ」「確実な 方法」。\n辨析：「正確」是准确无误（「正確な 時間」），不表示“一定会发生”。",
+      "en": "Clue: judging from 「今の 成績」 that 「合格するのは ほぼ（　）だ」 — how sure the outcome is.\nMeaning: 「確実」 (かくじつ) is certain, sure to happen: 「合格は 確実だ」 (passing is certain), 「確実な 方法」 (a sure method).\nContrast: 「正確」 is accurate (「正確な 時間」), not \"sure to happen\"."
     },
     "wrong": [
       {
-        "zh": "“不景气”和“成功”相反，也不会用遗憾的「しまった」。",
-        "en": "A bad economy doesn't lead to success, and 「しまった」 signals something unfortunate."
+        "zh": "「正確」是准确，不能说“合格这件事很准确”。",
+        "en": "「正確」 is accurate; passing an exam can't be \"accurate\"."
       },
       {
-        "zh": "「出勤」是人去上班，公司不会“出勤”。",
-        "en": "「出勤」 is a person going to work; a company doesn't do that."
+        "zh": "「丁寧」是礼貌、仔细，不形容会不会合格。",
+        "en": "「丁寧」 is polite or careful, not how likely passing is."
       },
       null,
       {
-        "zh": "「発展」是发展，和“不景气”“遗憾”矛盾。",
-        "en": "「発展」 is growth — it contradicts the bad economy and the regret."
+        "zh": "「正直」是诚实，不形容合格的可能性。",
+        "en": "「正直」 is honest; it doesn't describe a chance of passing."
       }
     ]
   },
@@ -873,80 +855,74 @@
     ]
   },
   {
-    "id": "n3-mg-324",
+    "id": "n3-mg-351",
     "type": "bunmyaku",
-    "refs": [
-      "lesson54#vocab"
-    ],
     "difficulty": 2,
-    "stem": "若い ときに もっと 勉強して おけば よかったと（　）して いる。",
+    "stem": "やせたので、去年 買った ズボンが（　）なって、ベルトが ないと 落ちて しまう。",
     "options": [
-      "満足",
-      "後悔",
-      "感動",
-      "安心"
+      "浅く",
+      "薄く",
+      "緩く",
+      "軽く"
     ],
-    "answer": 1,
+    "answer": 2,
     "tr": {
-      "zh": "后悔年轻时没有多学习一些。",
-      "en": "I regret not studying more when I was young."
+      "zh": "因为瘦了，去年买的裤子变松了，不系皮带就会掉下来。",
+      "en": "I've lost weight, so the trousers I bought last year have got loose and fall down without a belt."
     },
     "why": {
-      "zh": "线索：「もっと 勉強して おけば よかった」，是对过去没做的事感到遗憾。\n词义：「後悔」（こうかい）＝后悔，常说「〜を 後悔する」「後悔して いる」；常和「〜ば よかった」一起出现。",
-      "en": "Clue: 「もっと 勉強して おけば よかった」 is regret over something not done in the past.\nMeaning: 「後悔」 (こうかい) is regret: 「〜を 後悔する」 (regret …), 「後悔して いる」 (be sorry). It often appears with 「〜ば よかった」."
+      "zh": "线索：「やせたので」，裤子不系「ベルト」就「落ちて しまう」——腰围变大了。\n词义：「緩い」（ゆるい）＝松、不紧；坡度平缓；规定宽松，常说「ズボンが 緩い」「緩い 坂」「規則が 緩い」。反义词「きつい」。",
+      "en": "Clue: 「やせたので」, the trousers 「落ちて しまう」 without a 「ベルト」 — they're too big at the waist now.\nMeaning: 「緩い」 (ゆるい) is loose; also gentle (slope) or lax (rules): 「ズボンが 緩い」 (the trousers are loose), 「緩い 坂」 (a gentle slope), 「規則が 緩い」 (the rules are lax). Opposite: 「きつい」."
     },
     "wrong": [
       {
-        "zh": "“要是……就好了”是遗憾，不是满足。",
-        "en": "\"I wish I had…\" is regret, not satisfaction."
+        "zh": "「浅い」是浅，形容水、盘子等的深度，不形容裤子松。",
+        "en": "「浅い」 is shallow (water, dishes), not loose trousers."
+      },
+      {
+        "zh": "「薄い」是布料薄，人瘦了布料不会变薄，也不会因此掉下来。",
+        "en": "「薄い」 is thin (fabric); losing weight doesn't make cloth thinner or make it fall down."
       },
       null,
       {
-        "zh": "「感動」是被感动，和对过去的遗憾无关。",
-        "en": "「感動」 is being moved — not regret about the past."
-      },
-      {
-        "zh": "遗憾当初没学习，不会“放心”。",
-        "en": "Wishing you'd studied doesn't make you 「安心」 (relieved)."
+        "zh": "「軽い」是重量轻，裤子变轻不是往下掉的原因。",
+        "en": "「軽い」 is light in weight; lighter trousers don't fall down because of it."
       }
     ]
   },
   {
-    "id": "n3-mg-325",
+    "id": "n3-mg-352",
     "type": "bunmyaku",
-    "refs": [
-      "lesson54#vocab"
-    ],
     "difficulty": 1,
-    "stem": "彼女は（　）な 性格で、人の アドバイスを よく 聞く。",
+    "stem": "となりの 部屋の 大きな 音で、夜中に 目が（　）、それから 眠れなかった。",
     "options": [
-      "わがまま",
-      "素直",
-      "意地悪",
-      "複雑"
+      "冷めて",
+      "覚めて",
+      "覚えて",
+      "起こして"
     ],
     "answer": 1,
     "tr": {
-      "zh": "她性格坦率听话，很听得进别人的建议。",
-      "en": "She has an open, receptive nature and listens to other people's advice."
+      "zh": "因为隔壁房间的巨大声响，半夜醒了，之后就再也睡不着了。",
+      "en": "A loud noise from the next room woke me in the middle of the night, and I couldn't get back to sleep."
     },
     "why": {
-      "zh": "线索：「人の アドバイスを よく 聞く」，是不固执、肯接受别人意见的性格。\n词义：「素直」（すなお）＝坦率、听话、不别扭，常说「素直な 子」「素直に 謝る」。",
-      "en": "Clue: 「人の アドバイスを よく 聞く」 — a nature that isn't stubborn and takes advice.\nMeaning: 「素直」 (すなお) is open, frank, not contrary: 「素直な 子」 (a good-natured, obedient child), 「素直に 謝る」 (apologize honestly)."
+      "zh": "线索：被「大きな 音」吵到，「目が（　）」，之后「眠れなかった」——是从睡眠中醒来。\n词义：「覚める」（さめる）＝醒来，常说「目が 覚める」「夢から 覚める」。\n辨析：同音的「冷める」是变凉：「スープが 冷める」。",
+      "en": "Clue: woken by a 「大きな 音」, 「目が（　）」, and then 「眠れなかった」 — coming out of sleep.\nMeaning: 「覚める」 (さめる) is to wake up: 「目が 覚める」 (wake up), 「夢から 覚める」 (wake from a dream).\nContrast: its homophone 「冷める」 is to cool down: 「スープが 冷める」."
     },
     "wrong": [
       {
-        "zh": "「わがまま」是任性，任性的人不听建议。",
-        "en": "「わがまま」 is selfish; such a person doesn't listen to advice."
+        "zh": "「冷める」读音相同，意思是变凉，如「料理が 冷める」，不说「目が 冷める」。",
+        "en": "「冷める」 sounds the same but means to cool, as in 「料理が 冷める」; not 「目が 冷める」."
       },
       null,
       {
-        "zh": "「意地悪」是坏心眼，和“听建议”没有关系。",
-        "en": "「意地悪」 is mean-spirited — unrelated to listening to advice."
+        "zh": "「覚える」是记住，「目が 覚えて」意思不通。",
+        "en": "「覚える」 is to memorize; 「目が 覚えて」 makes no sense."
       },
       {
-        "zh": "「複雑な 性格」是性格复杂，不能解释“很听建议”。",
-        "en": "「複雑な 性格」 is a complicated personality; it doesn't explain taking advice."
+        "zh": "「起こす」是他动词“叫醒（别人）”，前面要用「を」，不说「目が 起こして」。",
+        "en": "「起こす」 is transitive (wake someone), taking 「を」; 「目が 起こして」 is wrong."
       }
     ]
   },
@@ -1068,80 +1044,77 @@
     ]
   },
   {
-    "id": "n3-mg-329",
+    "id": "n3-mg-358",
     "type": "bunmyaku",
-    "refs": [
-      "lesson55#vocab"
-    ],
     "difficulty": 2,
-    "stem": "新しい 工場の 工事は（　）に 進んで いて、予定通り 完成しそうだ。",
+    "stem": "祖父は 年を とって、立ったり 座ったり する（　）が ゆっくりに なった。",
     "options": [
-      "複雑",
-      "困難",
-      "順調",
-      "不安"
+      "態度",
+      "性格",
+      "動作",
+      "姿勢"
     ],
     "answer": 2,
     "tr": {
-      "zh": "新工厂的施工进展顺利，看来能按计划完工。",
-      "en": "Construction of the new factory is going smoothly and looks set to finish on schedule."
+      "zh": "爷爷上了年纪，站起来坐下去的动作都变慢了。",
+      "en": "My grandfather has got old, and his movements when standing up and sitting down have become slow."
     },
     "why": {
-      "zh": "线索：「予定通り 完成しそうだ」，说明工程没有问题、进展顺利。\n词义：「順調」（じゅんちょう）＝顺利、没有阻碍，常说「順調に 進む」「仕事は 順調だ」。",
-      "en": "Clue: 「予定通り 完成しそうだ」 — the work is going without problems.\nMeaning: 「順調」 (じゅんちょう) is going smoothly, without hitches: 「順調に 進む」 (progress smoothly), 「仕事は 順調だ」 (work is going well)."
+      "zh": "线索：「立ったり 座ったり する」是身体的一个个动作，「ゆっくりに なった」说的是动作的速度。\n词义：「動作」（どうさ）＝身体的动作，常说「動作が 遅い」「動作が ゆっくりだ」；机器“运行”也说「動作」。\n辨析：「姿勢」是身体的姿势、架子（「姿勢が いい」），不说快慢。",
+      "en": "Clue: 「立ったり 座ったり する」 are bodily movements, and 「ゆっくりに なった」 is about their speed.\nMeaning: 「動作」 (どうさ) is a movement or motion of the body: 「動作が 遅い」 (slow in one's movements), 「動作が ゆっくりだ」; also a machine's operation.\nContrast: 「姿勢」 is posture (「姿勢が いい」), which isn't fast or slow."
     },
     "wrong": [
       {
-        "zh": "“复杂地进行”和“按计划完成”不连贯。",
-        "en": "Progressing \"in a complicated way\" doesn't lead to finishing on schedule."
+        "zh": "「態度」是对人对事的态度，不能“站起坐下的态度变慢”。",
+        "en": "「態度」 is attitude; an attitude doesn't get slower."
       },
       {
-        "zh": "进行困难的话，一般不能按计划完成。",
-        "en": "If it were going with difficulty, it wouldn't be on schedule."
+        "zh": "「性格」是性格，不说快慢，也不是“站和坐”。",
+        "en": "「性格」 is personality — not something that stands, sits or slows down."
       },
       null,
       {
-        "zh": "「不安に 進む」不是自然说法，也和“按计划”矛盾。",
-        "en": "「不安に 進む」 isn't said, and it contradicts \"on schedule\"."
+        "zh": "「姿勢」是姿势，只有好坏、端正与否，不说“变慢”。",
+        "en": "「姿勢」 is posture; it can be good or bad, not slow."
       }
     ]
   },
   {
-    "id": "n3-mg-330",
+    "id": "n3-mg-359",
     "type": "bunmyaku",
     "refs": [
-      "lesson47#vocab"
+      "lesson57#vocab"
     ],
     "difficulty": 1,
-    "stem": "息子は 大学を 出て、（　）な 医者に なった。",
+    "stem": "暑い 中を 一時間も 歩いたので、のどが（　）、水を 二本も 飲んだ。",
     "options": [
-      "立派",
-      "簡単",
-      "意外",
-      "退屈"
+      "空いて",
+      "冷えて",
+      "渇いて",
+      "疲れて"
     ],
-    "answer": 0,
+    "answer": 2,
     "tr": {
-      "zh": "儿子大学毕业后，成了一名出色的医生。",
-      "en": "My son graduated from university and became a fine doctor."
+      "zh": "在大热天里走了一个小时，渴得喝了两瓶水。",
+      "en": "I walked for a whole hour in the heat, so I was thirsty and drank two bottles of water."
     },
     "why": {
-      "zh": "线索：儿子「大学を 出て」当上了医生，这是称赞，空格修饰「医者」。\n词义：「立派」（りっぱ）＝出色、了不起，也指（建筑等）气派，常说「立派な 人」「立派な 建物」。",
-      "en": "Clue: the son 「大学を 出て」 and became a doctor — praise, with the blank describing 「医者」.\nMeaning: 「立派」 (りっぱ) is fine, admirable, impressive: 「立派な 人」 (an admirable person), 「立派な 建物」 (an imposing building)."
+      "zh": "线索：「暑い 中を 一時間も 歩いた」，结果「水を 二本も 飲んだ」——是口渴。\n词义：「渇く」（かわく）＝口渴，固定说「のどが 渇く」。\n辨析：「おなかが 空く」是肚子饿，喉咙不说「空く」。",
+      "en": "Clue: 「暑い 中を 一時間も 歩いた」, and then 「水を 二本も 飲んだ」 — thirst.\nMeaning: 「渇く」 (かわく) is to be thirsty, in the set phrase 「のどが 渇く」.\nContrast: 「空く」 goes with the stomach, 「おなかが 空く」 (be hungry), not the throat."
     },
     "wrong": [
+      {
+        "zh": "「空く」用于「おなかが 空く」（饿），不说「のどが 空く」。",
+        "en": "「空く」 goes in 「おなかが 空く」 (hungry), not 「のどが 空く」."
+      },
+      {
+        "zh": "「冷える」是变冷，大热天走路喉咙不会变冷。",
+        "en": "「冷える」 is getting cold; walking in the heat doesn't chill your throat."
+      },
       null,
       {
-        "zh": "「簡単な 医者」说不通，「簡単」形容事情容易。",
-        "en": "「簡単」 describes easy tasks; 「簡単な 医者」 makes no sense."
-      },
-      {
-        "zh": "「意外な 医者」说不通，「意外」形容出乎意料的事。",
-        "en": "「意外」 describes unexpected events; 「意外な 医者」 isn't said."
-      },
-      {
-        "zh": "「退屈」是无聊，父母不会这样说儿子的成就。",
-        "en": "「退屈」 is boring — not how a parent describes this achievement."
+        "zh": "「のどが 疲れる」是说话、唱歌太多嗓子累，走路不会这样，喝水也不是因为这个。",
+        "en": "「のどが 疲れる」 is a strained voice from talking or singing, not from walking."
       }
     ]
   },
@@ -1182,39 +1155,39 @@
     ]
   },
   {
-    "id": "n3-mg-332",
+    "id": "n3-mg-360",
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "長い 間 会って いなかったので、彼の 名前を（　）忘れて しまった。",
+    "stem": "日本は 石油などの（　）が 少ないので、多くを 外国から 輸入して いる。",
     "options": [
-      "しっかり",
-      "はっきり",
-      "すっかり",
-      "ぐっすり"
+      "資料",
+      "資格",
+      "資金",
+      "資源"
     ],
-    "answer": 2,
+    "answer": 3,
     "tr": {
-      "zh": "很久没见，把他的名字忘得一干二净。",
-      "en": "I hadn't seen him for so long that I'd completely forgotten his name."
+      "zh": "日本石油等资源很少，大部分从国外进口。",
+      "en": "Japan has few natural resources such as oil, so it imports most of them from abroad."
     },
     "why": {
-      "zh": "线索：「長い 間 会って いなかった」，空格修饰「忘れて しまった」，忘得一干二净。\n词义：「すっかり」＝完全、彻底，多用于状态彻底变化，常说「すっかり 忘れる」「すっかり 元気に なる」。",
-      "en": "Clue: 「長い 間 会って いなかった」, and the blank describes 「忘れて しまった」 — forgotten entirely.\nMeaning: 「すっかり」 is completely, usually of a complete change of state: 「すっかり 忘れる」 (forget completely), 「すっかり 元気に なる」 (be fully recovered)."
+      "zh": "线索：「石油などの」是自然界里能开采利用的东西，少了只能「外国から 輸入して いる」。\n词义：「資源」（しげん）＝资源（石油、煤、水等），常说「資源が 少ない」「天然資源」「資源ごみ」（可回收垃圾）。",
+      "en": "Clue: 「石油などの」 points to things taken from nature for use; having few of them means 「外国から 輸入して いる」.\nMeaning: 「資源」 (しげん) is resources (oil, coal, water …): 「資源が 少ない」 (resource-poor), 「天然資源」 (natural resources), 「資源ごみ」 (recyclable waste)."
     },
     "wrong": [
       {
-        "zh": "「しっかり」是“牢牢地”，和“忘记”意思相反。",
-        "en": "「しっかり」 is \"firmly\", the opposite of forgetting."
+        "zh": "「資料」是资料、材料文件，石油不是「資料」。",
+        "en": "「資料」 is documents or data; oil isn't 「資料」."
       },
       {
-        "zh": "「はっきり」是清楚地，“清楚地忘了”说不通。",
-        "en": "「はっきり」 is \"clearly\"; \"clearly forgot\" doesn't work."
+        "zh": "「資格」是资格、证书，和石油无关。",
+        "en": "「資格」 is a qualification — unrelated to oil."
       },
-      null,
       {
-        "zh": "「ぐっすり」只用于睡觉。",
-        "en": "「ぐっすり」 is only for sleeping."
-      }
+        "zh": "「資金」是资金、钱，石油不是钱。",
+        "en": "「資金」 is funds, money; oil isn't money."
+      },
+      null
     ]
   },
   {
@@ -1326,74 +1299,74 @@
     ]
   },
   {
-    "id": "n3-mg-336",
+    "id": "n3-mg-353",
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "遠い ところを（　）来て くださって、ありがとうございます。",
+    "stem": "弟は テストの 点が 悪かったので、答案を 母に 見つからない ように ベッドの 下に（　）。",
     "options": [
-      "とうとう",
-      "いきなり",
-      "わざわざ",
-      "たまたま"
+      "拾った",
+      "閉めた",
+      "隠した",
+      "渡した"
     ],
     "answer": 2,
     "tr": {
-      "zh": "您远道特地赶来，非常感谢。",
-      "en": "Thank you for taking the trouble to come all this way."
+      "zh": "弟弟考试分数很差，就把卷子藏到了床底下，免得被妈妈发现。",
+      "en": "My little brother got a bad mark, so he hid the test paper under his bed so that Mum wouldn't find it."
     },
     "why": {
-      "zh": "线索：「遠い ところを」「来て くださって、ありがとう」，是感谢对方费事前来。\n词义：「わざわざ」＝特地、专门（费工夫去做本可以不做的事），常说「わざわざ 来て くれる」「わざわざ 電話を する」。",
-      "en": "Clue: 「遠い ところを」 … 「来て くださって、ありがとう」 — thanking someone for the trouble of coming.\nMeaning: 「わざわざ」 is going out of one's way to do something one needn't: 「わざわざ 来て くれる」 (come all the way for me), 「わざわざ 電話を する」 (take the trouble to phone)."
+      "zh": "线索：「母に 見つからない ように」放到「ベッドの 下に」——不想让人看到。\n词义：「隠す」（かくす）＝藏起来、隐瞒，常说「お金を 隠す」「本当の 気持ちを 隠す」。自动词是「隠れる」（躲起来）。",
+      "en": "Clue: putting it 「ベッドの 下に」 「母に 見つからない ように」 — so no one sees it.\nMeaning: 「隠す」 (かくす) is to hide or conceal: 「お金を 隠す」 (hide money), 「本当の 気持ちを 隠す」 (hide one's true feelings). The intransitive is 「隠れる」 (to hide oneself)."
     },
     "wrong": [
       {
-        "zh": "「とうとう」是“终于”，用来感谢对方来访不自然。",
-        "en": "「とうとう」 is \"at last\" — not how you thank a visitor."
+        "zh": "「拾う」是捡起来，不能“捡到床底下”，也和不想被发现无关。",
+        "en": "「拾う」 is picking up; you can't pick something up \"under the bed\", and it isn't about not being found."
       },
       {
-        "zh": "「いきなり」是突然，感谢“突然来”说不通。",
-        "en": "「いきなり」 is \"without warning\"; you wouldn't thank someone for that."
+        "zh": "「閉める」是关门、关窗，卷子不能“关”。",
+        "en": "「閉める」 is shutting a door or window; you can't shut a test paper."
       },
       null,
       {
-        "zh": "「たまたま」是偶然，偶然路过就谈不上远道来的感谢。",
-        "en": "「たまたま」 is \"by chance\"; it doesn't fit thanking someone for coming a long way."
+        "zh": "「渡す」是交给某人，床底下不是人，也和怕被发现矛盾。",
+        "en": "「渡す」 is handing to someone; under the bed isn't a person, and it clashes with hiding."
       }
     ]
   },
   {
-    "id": "n3-mg-337",
+    "id": "n3-mg-361",
     "type": "bunmyaku",
     "difficulty": 1,
-    "stem": "駅で（　）高校の ときの 友だちに 会った。",
+    "stem": "かぜを（　）ために、外から 帰ったら 必ず 手を 洗う ように して いる。",
     "options": [
-      "たまたま",
-      "わざわざ",
-      "いっせいに",
-      "しっかり"
+      "守る",
+      "防ぐ",
+      "治す",
+      "止める"
     ],
-    "answer": 0,
+    "answer": 1,
     "tr": {
-      "zh": "在车站偶然遇到了高中时的朋友。",
-      "en": "I happened to run into a friend from high school at the station."
+      "zh": "为了预防感冒，从外面回来一定洗手。",
+      "en": "To keep from catching colds, I always wash my hands when I come home."
     },
     "why": {
-      "zh": "线索：「駅で」「友だちに 会った」，并没有约好，是碰巧遇见。\n词义：「たまたま」＝碰巧、偶然，常说「たまたま 会う」「たまたま 近くに いた」。",
-      "en": "Clue: 「駅で」 … 「友だちに 会った」 with no plan to meet — it just happened.\nMeaning: 「たまたま」 is by chance: 「たまたま 会う」 (happen to meet), 「たまたま 近くに いた」 (happened to be nearby)."
+      "zh": "线索：「外から 帰ったら 必ず 手を 洗う」是事先做的，目的是不让「かぜ」找上门。\n词义：「防ぐ」（ふせぐ）＝防止、预防（坏事发生），常说「かぜを 防ぐ」「事故を 防ぐ」。\n辨析：「守る」的对象是要保护的东西（「約束を 守る」「子どもを 守る」），不能“守感冒”。",
+      "en": "Clue: 「外から 帰ったら 必ず 手を 洗う」 is done in advance, to keep 「かぜ」 away.\nMeaning: 「防ぐ」 (ふせぐ) is to prevent (something bad): 「かぜを 防ぐ」 (prevent colds), 「事故を 防ぐ」 (prevent accidents).\nContrast: 「守る」 takes what you protect or keep (「約束を 守る」, 「子どもを 守る」), so not a cold."
     },
     "wrong": [
+      {
+        "zh": "「守る」是保护、遵守，宾语是要保护的东西，「かぜを 守る」意思反了。",
+        "en": "「守る」 is to protect or keep; 「かぜを 守る」 would mean protecting the cold."
+      },
       null,
       {
-        "zh": "「わざわざ」是特地，这里是没约好、碰巧遇见，和“特地”不合。",
-        "en": "「わざわざ」 is \"going out of one's way\", which doesn't fit running into someone."
+        "zh": "「治す」是治好已经得的病，洗手是预防，不是治疗。",
+        "en": "「治す」 is curing an illness you have; washing hands prevents, it doesn't cure."
       },
       {
-        "zh": "「いっせいに」是一齐，一个人见一个朋友谈不上“一齐”。",
-        "en": "「いっせいに」 is \"all at once\"; one person meeting one friend isn't."
-      },
-      {
-        "zh": "「しっかり」是牢牢地、认真地，不能修饰“碰见”。",
-        "en": "「しっかり」 is \"firmly, properly\" and can't describe running into someone."
+        "zh": "「止める」是停下、阻止进行中的事，不说「かぜを 止める」。",
+        "en": "「止める」 is stopping something in motion; 「かぜを 止める」 isn't said."
       }
     ]
   },

@@ -17,6 +17,7 @@ Notable updates to the site, newest first. Small fixes and design tweaks aren't 
 - **阅读文章加长到真题长度**：本站的阅读文章原来普遍比真题短 15–20%。这次把明显偏短的 47 篇（N5–N1 的中文、文章の文法、統合理解等）加长到真题的长度，题目和答案不变。
 - **补上真题常考、课程里没单独讲的语法**：N2 新增 〜に欠かせない、〜たところ（～了一下，结果…）、〜そうになる、〜がたい、〜を込めて、〜に次いで、〜と思うと、〜とされている、〜というように，并在已有语法点里补充 〜とのことだ、〜でしかない；N4 敬语课补充 お越しくださる / おいでくださる / お見えになる、お〜です、お〜いただく / ご覧いただく、承る。
   其他级别同样补齐：N1 新增 15 个（いっさい／なんら〜ない、〜かというと〜ない、〜ない限り、〜かと思いきや、〜てこそ、〜てまで、〜にあって、〜にもほどがある 等），N3 新增 10 个（〜てもおかしくない、〜のほかに、少しも〜ない、〜という点で、〜てみると、〜直す 等），N4 新增 〜ずつ、〜たまま、〜なくなる、〜中、〜と同じ、〜のに（用途），N5 补充 人数・方式的「で」和频率的「に」。每个点都配了练习题，[语法音频](/grammar-audio/)也已收录。
+- **词汇题换成真题常考词**：约 190 道词汇练习题换了考点——原来考的是低于本级或重复的词，现在换成真题反复出现、而题库里还没有的词（如 N2 略す・湿る・違反・尽きる，N1 承諾・満喫・ことごとく）。生词本释义同步补齐。
 - **新专题：[日语接续词（N5–N1）](/japanese-conjunctions/)**：だから・それで・そこで・すると・実は……按级别整理，文章の文法常考。
 :::
 
@@ -27,6 +28,7 @@ We worked through the 2010–2026 JLPT papers (over 100 sittings, N1–N5) quest
 - **Reading passages at real length.** Our passages ran 15–20% shorter than the real test. The 47 clearly short ones (mid-length reading, text grammar, integrated comprehension at N5–N1) are now as long as the real thing; questions and answers are unchanged.
 - **Grammar the test asks but our lessons didn't teach.** New N2 points: 〜に欠かせない, 〜たところ (did X and found…), 〜そうになる, 〜がたい, 〜を込めて, 〜に次いで, 〜と思うと, 〜とされている, 〜というように; 〜とのことだ and 〜でしかない added to existing points. The N4 keigo lessons now cover お越しくださる / おいでくださる / お見えになる, お〜です, お〜いただく / ご覧いただく and 承る.
   The other levels got the same treatment: 15 new N1 points (いっさい／なんら〜ない, 〜かというと〜ない, 〜ない限り, 〜かと思いきや, 〜てこそ, 〜てまで, 〜にあって, 〜にもほどがある …), 10 new N3 points (〜てもおかしくない, 〜のほかに, 少しも〜ない, 〜という点で, 〜てみると, 〜直す …), N4 〜ずつ, 〜たまま, 〜なくなる, 〜中, 〜と同じ and 〜のに (purpose), and at N5 で for "by oneself / together" and に for frequency. Each comes with practice questions and is in the [grammar audio](/grammar-audio/).
+- **Vocabulary questions on the words the test keeps asking.** About 190 vocabulary practice questions now test a different word: ones that tested a word below the level or a duplicate were rewritten around words the real papers use again and again that our bank didn't have yet (N2 略す, 湿る, 違反, 尽きる; N1 承諾, 満喫, ことごとく …). The word list has meanings for them.
 - **New guide: [Japanese conjunctions, N5–N1](/japanese-conjunctions/)** — だから, それで, そこで, すると, 実は … by level, the words text-grammar questions hinge on.
 :::
 

@@ -1,75 +1,73 @@
 [
   {
-    "id": "n2-mg-401",
-    "rev": 2,
+    "id": "n2-mg-473",
     "type": "iikae",
     "difficulty": 1,
-    "stem": "彼はいつも話を<<おおげさに>>する。",
+    "stem": "会議の途中で、部長が<<いきなり>>席を立った。",
     "options": [
-      "大きく",
-      "複雑に",
-      "長く",
-      "面白く"
+      "突然に",
+      "静かに",
+      "黙って",
+      "そっと"
     ],
     "answer": 0,
     "tr": {
-      "zh": "他总是把话说得很夸张。",
-      "en": "He always exaggerates when he tells a story."
+      "zh": "开会途中，部长突然站了起来。",
+      "en": "Halfway through the meeting, the manager suddenly got up from his seat."
     },
     "why": {
-      "zh": "线索：划线的「話をおおげさにする」＝把事情说得比实际更大，换个说法就是「話を大きくする」。\n词义：「おおげさ」（大げさ）＝夸张、言过其实，常说「おおげさに言う」「おおげさな表現」。",
-      "en": "Clue: the underlined 「話をおおげさにする」 — telling a story as bigger than it was — is 「話を大きくする」.\nMeaning: 「おおげさ」 (大げさ) is exaggerated, overblown: 「おおげさに言う」, 「おおげさな表現」."
+      "zh": "线索：划线的「いきなり」说部长没有任何预兆就站起来，对应「突然に」。\n词义：「いきなり」＝突然、冷不防，常说「いきなり怒り出す」「いきなり質問される」。\n辨析：「いきなり」还可指省掉前面的步骤直接做，如「いきなり本番」。",
+      "en": "Clue: the underlined 「いきなり」 says he stood up without any warning, which is 「突然に」.\nMeaning: 「いきなり」 is suddenly, out of the blue: 「いきなり怒り出す」, 「いきなり質問される」.\nContrast: it can also mean skipping the usual steps, as in 「いきなり本番」 (straight into the real thing)."
     },
     "wrong": [
       null,
       {
-        "zh": "「話を複雑にする」是把事情弄复杂，不是夸张。",
-        "en": "「話を複雑にする」 is complicating things, not exaggerating."
+        "zh": "「静かに」是安静地，没有突然的意思。",
+        "en": "「静かに」 is quietly, not suddenly."
       },
       {
-        "zh": "「話を長くする」是说得冗长，和夸张无关。",
-        "en": "「話を長くする」 is dragging it out, not exaggerating."
+        "zh": "「黙って」是不说话，不表示突然。",
+        "en": "「黙って」 is without a word; it says nothing about suddenness."
       },
       {
-        "zh": "「話を面白くする」是加料让人爱听，不一定夸大。",
-        "en": "「話を面白くする」 is making it entertaining, not necessarily bigger."
+        "zh": "「そっと」是轻轻地、悄悄地，和突然正相反。",
+        "en": "「そっと」 is gently, softly — nearly the opposite."
       }
     ]
   },
   {
-    "id": "n2-mg-402",
-    "rev": 2,
+    "id": "n2-mg-474",
     "type": "iikae",
     "difficulty": 2,
-    "stem": "雨のため、試合の開始を<<見合わせた>>。",
+    "stem": "旅行先の駅前の店で、自転車を<<レンタルした>>。",
     "options": [
-      "延期した",
-      "決定した",
-      "確認した",
-      "知らせた"
+      "借りた",
+      "貸した",
+      "買った",
+      "予約した"
     ],
     "answer": 0,
     "tr": {
-      "zh": "因为下雨，比赛暂缓开始。",
-      "en": "Because of the rain, the start of the match was put on hold."
+      "zh": "在旅游地车站前的店里租了辆自行车。",
+      "en": "I rented a bicycle from a shop by the station where I was travelling."
     },
     "why": {
-      "zh": "线索：划线的「見合わせた」＝因为下雨，比赛先不开始，对应「延期した」。\n词义：「見合わせる」（みあわせる）＝看情况暂缓、先不做，常说「運転を見合わせる」「出発を見合わせる」。另有「顔を見合わせる」＝互相对视。",
-      "en": "Clue: the underlined 「見合わせた」 — because of the rain, the start is held back for now — matches 「延期した」.\nMeaning: 「見合わせる」 (みあわせる) is holding off on something for the time being: 「運転を見合わせる」 (trains suspended), 「出発を見合わせる」. 「顔を見合わせる」 is another sense: to look at each other."
+      "zh": "线索：划线的「レンタルした」——在店里付钱使用自行车，自己是用的一方，对应「借りた」。\n词义：「レンタル」＝（付费）租用，常说「レンタカー」「DVDをレンタルする」。\n辨析：「貸す」是借出，方向相反；客人租用是「借りる」。",
+      "en": "Clue: the underlined 「レンタルした」 — paying a shop to use a bike, you're the one using it — matches 「借りた」.\nMeaning: 「レンタル」 is renting (for a fee): 「レンタカー」, 「DVDをレンタルする」.\nContrast: 「貸す」 is lending out — the other direction; a customer renting is 「借りる」."
     },
     "wrong": [
       null,
       {
-        "zh": "「決定した」是决定了开始，意思不同。",
-        "en": "「決定した」 means the start was decided."
+        "zh": "「貸した」是借给别人，方向反了；在店里租车的人是借入的一方。",
+        "en": "「貸した」 is lending it out — the wrong direction; the customer is the one borrowing."
       },
       {
-        "zh": "「確認した」只是确认时间，没有推迟。",
-        "en": "「確認した」 is just checking it."
+        "zh": "「買った」是买下归自己，不是租。",
+        "en": "「買った」 is buying it outright, not renting."
       },
       {
-        "zh": "「知らせた」是通知，没有推迟的意思。",
-        "en": "「知らせた」 is announcing it, not postponing."
+        "zh": "「予約した」只是预订，还没用上车。",
+        "en": "「予約した」 is only booking it."
       }
     ]
   },
@@ -148,150 +146,146 @@
     ]
   },
   {
-    "id": "n2-mg-405",
-    "rev": 2,
+    "id": "n2-mg-475",
     "type": "iikae",
     "difficulty": 2,
-    "stem": "彼女は<<しきりに>>時計を見ていた。",
+    "stem": "<<このパソコンのメーカー>>に修理を頼んだ。",
     "options": [
-      "何度も",
-      "じっと",
-      "こっそり",
-      "ぼんやり"
+      "このパソコンを作った会社",
+      "このパソコンを売った店",
+      "このパソコンを買った人",
+      "このパソコンを使う会社"
     ],
     "answer": 0,
     "tr": {
-      "zh": "她频频看表。",
-      "en": "She kept looking at her watch."
+      "zh": "我请这台电脑的生产厂家修理了。",
+      "en": "I asked the manufacturer of this computer to repair it."
     },
     "why": {
-      "zh": "线索：划线的「しきりに」修饰「時計を見ていた」，一次又一次地看，对应「何度も」。\n词义：「しきりに」＝频频、再三，带“一个劲儿地”的语感，常说「しきりにうなずく」「しきりに勧める」。",
-      "en": "Clue: the underlined 「しきりに」 goes with 「時計を見ていた」 — looking again and again — which is 「何度も」.\nMeaning: 「しきりに」 is repeatedly, insistently: 「しきりにうなずく」 (keep nodding), 「しきりに勧める」 (keep urging)."
+      "zh": "线索：划线的「メーカー」是制造这台电脑的公司，对应「作った会社」。\n词义：「メーカー」＝制造商、厂家，常说「自動車メーカー」「メーカーに問い合わせる」。\n辨析：卖东西的是「販売店」，不是「メーカー」。",
+      "en": "Clue: the underlined 「メーカー」 is the company that made the computer — 「作った会社」.\nMeaning: 「メーカー」 is a manufacturer: 「自動車メーカー」, 「メーカーに問い合わせる」.\nContrast: the shop that sells it is a 「販売店」, not the 「メーカー」."
     },
     "wrong": [
       null,
       {
-        "zh": "「じっと」是一直盯着看，不是反复看。",
-        "en": "「じっと」 is staring steadily, not glancing again and again."
+        "zh": "「売った店」是零售商，不是制造商。",
+        "en": "「売った店」 is the retailer, not the maker."
       },
       {
-        "zh": "「こっそり」是偷偷地，和次数无关。",
-        "en": "「こっそり」 is secretly; it says nothing about how often."
+        "zh": "「買った人」是用户，不是厂家。",
+        "en": "「買った人」 is the buyer, not the maker."
       },
       {
-        "zh": "「ぼんやり」是心不在焉地，不是频繁。",
-        "en": "「ぼんやり」 is absent-mindedly, not repeatedly."
+        "zh": "「使う会社」是使用方，不是生产方。",
+        "en": "「使う会社」 is a company using it, not the one that made it."
       }
     ]
   },
   {
-    "id": "n2-mg-406",
-    "rev": 2,
+    "id": "n2-mg-476",
     "type": "iikae",
     "difficulty": 2,
-    "stem": "参加者の意見は<<まちまちだった>>。",
+    "stem": "今、学校でかぜが<<はやっている>>。",
     "options": [
-      "さまざまだった",
-      "少なかった",
-      "厳しかった",
-      "前向きだった"
+      "かぜをひく人が増えている",
+      "かぜが治りにくくなっている",
+      "かぜの薬が足りなくなっている",
+      "かぜの症状が軽くなっている"
     ],
     "answer": 0,
     "tr": {
-      "zh": "参加者的意见各不相同。",
-      "en": "The participants' opinions varied."
+      "zh": "现在学校里正流行感冒。",
+      "en": "There's a cold going around the school at the moment."
     },
     "why": {
-      "zh": "线索：划线的「まちまちだった」说的是参加者的意见，各人各样，对应「さまざまだった」。\n词义：「まちまち」＝各不相同、不统一，常说「意見がまちまちだ」「サイズがまちまちだ」。",
-      "en": "Clue: the underlined 「まちまちだった」 describes the participants' opinions as all different, which is 「さまざまだった」.\nMeaning: 「まちまち」 is varying, not uniform: 「意見がまちまちだ」, 「サイズがまちまちだ」."
+      "zh": "线索：划线的「はやっている」说感冒在学校里传开，也就是得感冒的人越来越多，对应「かぜをひく人が増えている」。\n词义：「はやる」（流行る）＝流行；用于疾病时指传染开，常说「インフルエンザがはやる」「若者の間ではやる」。",
+      "en": "Clue: the underlined 「はやっている」 says a cold is spreading through the school — more and more people are catching it.\nMeaning: 「はやる」 (流行る) is to be popular; of an illness, to go around: 「インフルエンザがはやる」, 「若者の間ではやる」."
     },
     "wrong": [
       null,
       {
-        "zh": "「少なかった」说的是数量少，不是各不相同。",
-        "en": "「少なかった」 is about there being few opinions."
+        "zh": "「はやる」说的是传开，不是难治好。",
+        "en": "「はやる」 is about spreading, not being hard to cure."
       },
       {
-        "zh": "「厳しかった」是意见严厉，不是不一致。",
-        "en": "「厳しかった」 means the opinions were harsh."
+        "zh": "「はやる」和药够不够无关。",
+        "en": "「はやる」 has nothing to do with running out of medicine."
       },
       {
-        "zh": "「前向きだった」是态度积极，不是各不相同。",
-        "en": "「前向きだった」 means positive, not varied."
+        "zh": "「症状が軽くなる」说的是病情轻重，不是传播。",
+        "en": "「症状が軽くなる」 is about how bad it is, not how widely it's spread."
       }
     ]
   },
   {
-    "id": "n2-mg-407",
-    "rev": 2,
+    "id": "n2-mg-477",
     "type": "iikae",
     "difficulty": 1,
-    "stem": "彼の説明は<<あいまいだった>>。",
+    "stem": "古い自転車のペンキが<<はげて>>きた。",
     "options": [
-      "はっきりしなかった",
-      "長すぎた",
-      "間違っていた",
-      "早口だった"
+      "取れて",
+      "汚れて",
+      "乾いて",
+      "割れて"
     ],
     "answer": 0,
     "tr": {
-      "zh": "他的说明含糊不清。",
-      "en": "His explanation was vague."
+      "zh": "旧自行车的漆开始剥落了。",
+      "en": "The paint on my old bicycle has started to peel off."
     },
     "why": {
-      "zh": "线索：划线的「あいまいだった」说的是他的说明，意思说不清楚，对应「はっきりしなかった」。\n词义：「あいまい」（曖昧）＝含糊、模棱两可，常说「あいまいな返事」「記憶があいまいだ」。",
-      "en": "Clue: the underlined 「あいまいだった」 says his explanation wasn't clear, which is 「はっきりしなかった」.\nMeaning: 「あいまい」 (曖昧) is vague, ambiguous: 「あいまいな返事」, 「記憶があいまいだ」 (my memory is hazy)."
+      "zh": "线索：划线的「はげて」说的是油漆一点点脱落，对应「取れて」。\n词义：「はげる」（剥げる）＝（涂层、颜色）剥落，常说「ペンキがはげる」「メッキがはげる」；写作「禿げる」时指头发秃。",
+      "en": "Clue: the underlined 「はげて」 is the paint coming off bit by bit — 「取れて」.\nMeaning: 「はげる」 (剥げる) is a coating peeling off: 「ペンキがはげる」, 「メッキがはげる」; written 「禿げる」 it means going bald."
     },
     "wrong": [
       null,
       {
-        "zh": "「長すぎた」是太长，长不等于含糊。",
-        "en": "「長すぎた」 is too long, which isn't the same as vague."
+        "zh": "「汚れて」是变脏，漆并没有掉。",
+        "en": "「汚れて」 is getting dirty; the paint isn't coming off."
       },
       {
-        "zh": "「間違っていた」是错误；含糊的说明不一定错。",
-        "en": "「間違っていた」 is wrong; a vague explanation isn't necessarily wrong."
+        "zh": "「乾いて」是变干，不是剥落。",
+        "en": "「乾いて」 is drying, not peeling."
       },
       {
-        "zh": "「早口だった」是说得快，不是不明确。",
-        "en": "「早口だった」 is speaking fast, not vague."
+        "zh": "「割れて」是裂开、碎掉，不是一层层剥落。",
+        "en": "「割れて」 is cracking or breaking, not peeling."
       }
     ]
   },
   {
-    "id": "n2-mg-408",
-    "rev": 2,
+    "id": "n2-mg-478",
     "type": "iikae",
-    "difficulty": 3,
-    "stem": "今月は出費が<<かさんだ>>。",
+    "difficulty": 2,
+    "stem": "その子のちょっとした<<しぐさ>>が、父親にそっくりだ。",
     "options": [
-      "増えた",
-      "続いた",
-      "遅れた",
-      "決まった"
+      "動作",
+      "口調",
+      "性格",
+      "服装"
     ],
     "answer": 0,
     "tr": {
-      "zh": "这个月开销越来越大。",
-      "en": "My expenses piled up this month."
+      "zh": "那孩子的一些小动作和他父亲一模一样。",
+      "en": "The child's little mannerisms are just like his father's."
     },
     "why": {
-      "zh": "线索：划线的「かさんだ」的主语是「出費」，开销越积越多，对应「増えた」。\n词义：「かさむ」＝费用、数量越积越多，多用于让人头疼的东西，常说「費用がかさむ」「借金がかさむ」。",
-      "en": "Clue: the subject of the underlined 「かさんだ」 is 「出費」 — spending piling up — which is 「増えた」.\nMeaning: 「かさむ」 is (costs or amounts) mounting up, usually unwelcome ones: 「費用がかさむ」, 「借金がかさむ」."
+      "zh": "线索：划线的「しぐさ」前有「ちょっとした」，指孩子做事时的小动作，对应「動作」。\n词义：「しぐさ」（仕草）＝举止、动作，常说「かわいいしぐさ」「何気ないしぐさ」。",
+      "en": "Clue: the underlined 「しぐさ」, with 「ちょっとした」 before it, is the little movements the child makes — 「動作」.\nMeaning: 「しぐさ」 (仕草) is a gesture or mannerism: 「かわいいしぐさ」, 「何気ないしぐさ」."
     },
     "wrong": [
       null,
       {
-        "zh": "「続いた」是持续，不是增多。",
-        "en": "「続いた」 is continuing, not growing."
+        "zh": "「口調」是说话的语气，不是动作。",
+        "en": "「口調」 is tone of voice, not movement."
       },
       {
-        "zh": "「遅れた」是延迟，与金额多少无关。",
-        "en": "「遅れた」 is being late, unrelated to the amount."
+        "zh": "「性格」是内在的性情，看不见动作。",
+        "en": "「性格」 is personality, not something you do with your body."
       },
       {
-        "zh": "「決まった」是定下来了，没有增加的意思。",
-        "en": "「決まった」 means it was settled, not that it grew."
+        "zh": "「服装」是穿着，和动作无关。",
+        "en": "「服装」 is clothing, not movement."
       }
     ]
   },

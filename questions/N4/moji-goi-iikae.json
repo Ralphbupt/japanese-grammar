@@ -1,323 +1,302 @@
 [
   {
-    "id": "n4-mg-401",
+    "id": "n4-mg-426",
     "type": "iikae",
-    "refs": [
-      "lesson18#vocab"
-    ],
     "difficulty": 2,
-    "stem": "<<あには いま りゅうがくして います。>>",
+    "stem": "<<となりの 子は いつも にこにこして います。>>",
     "options": [
-      "あには いま がいこくで べんきょうして います。",
-      "あには いま がいこくで はたらいて います。",
-      "あには いま がいこくを りょこうして います。",
-      "あには いま くにの 大学で べんきょうして います。"
+      "となりの 子は いつも わらって います。",
+      "となりの 子は いつも ないて います。",
+      "となりの 子は いつも おこって います。",
+      "となりの 子は いつも ねむって います。"
     ],
     "okj": [
-      "兄は今外国で勉強しています。",
-      "兄は今外国で働いています。",
-      "兄は今外国を旅行しています。",
-      "兄は今国の大学で勉強しています。"
+      "隣の子はいつも笑っています。",
+      "隣の子はいつも泣いています。",
+      "隣の子はいつも怒っています。",
+      "隣の子はいつも眠っています。"
     ],
-    "kj": "兄は今留学しています。",
+    "kj": "隣の子はいつもにこにこしています。",
     "answer": 0,
     "tr": {
-      "zh": "我哥哥现在在留学。",
-      "en": "My older brother is studying abroad now."
+      "zh": "邻居家的孩子总是笑眯眯的。",
+      "en": "The child next door is always smiling."
     },
     "why": {
-      "zh": "线索：划线的「りゅうがくして います」＝人在外国读书，对应「がいこくで べんきょうして います」。\n词义：「りゅうがく」（留学）＝出国留学，常说「アメリカに りゅうがくする」「りゅうがくせい」（留学生）。",
-      "en": "Clue: the underlined 「りゅうがくして います」 — he is studying in another country — matches 「がいこくで べんきょうして います」.\nMeaning: 「りゅうがく」 (留学) is studying abroad: 「アメリカに りゅうがくする」, 「りゅうがくせい」 (an international student)."
+      "zh": "线索：划线的「にこにこして います」＝脸上带着笑，对应「わらって います」。\n词义：「にこにこ」＝笑眯眯、微笑的样子，用「にこにこする」「にこにこ わらう」。",
+      "en": "Clue: the underlined 「にこにこして います」 — wearing a smile — matches 「わらって います」.\nMeaning: 「にこにこ」 describes smiling happily: 「にこにこする」, 「にこにこ わらう」."
     },
     "wrong": [
       null,
       {
-        "zh": "在外国“工作”不是留学。",
-        "en": "Working abroad isn't studying abroad."
+        "zh": "「なく」是哭，和笑相反。",
+        "en": "「なく」 is crying — the opposite of smiling."
       },
       {
-        "zh": "在外国“旅行”不是留学。",
-        "en": "Travelling abroad isn't studying abroad."
+        "zh": "「おこる」是生气，不是笑。",
+        "en": "「おこる」 is being angry, not smiling."
       },
       {
-        "zh": "在本国大学学习不是留学。",
-        "en": "Studying at a university at home isn't studying abroad."
+        "zh": "「ねむる」是睡觉，和笑无关。",
+        "en": "「ねむる」 is sleeping; nothing to do with smiling."
       }
     ]
   },
   {
-    "id": "n4-mg-402",
+    "id": "n4-mg-427",
     "type": "iikae",
-    "refs": [
-      "lesson30#vocab"
-    ],
     "difficulty": 2,
-    "stem": "<<この 町は じんこうが へりました。>>",
+    "stem": "<<この 工場では 車を せいさんして います。>>",
     "options": [
-      "この 町に すむ 人が すくなく なりました。",
-      "この 町に すむ 人が おおく なりました。",
-      "この 町の 店が すくなく なりました。",
-      "この 町に 来る 人が すくなく なりました。"
+      "この 工場では 車を つくって います。",
+      "この 工場では 車を うって います。",
+      "この 工場では 車を なおして います。",
+      "この 工場では 車を あらって います。"
     ],
     "okj": [
-      "この町に住む人が少なくなりました。",
-      "この町に住む人が多くなりました。",
-      "この町の店が少なくなりました。",
-      "この町に来る人が少なくなりました。"
+      "この工場では車を作っています。",
+      "この工場では車を売っています。",
+      "この工場では車を直しています。",
+      "この工場では車を洗っています。"
     ],
-    "kj": "この町は人口が減りました。",
+    "kj": "この工場では車を生産しています。",
     "answer": 0,
     "tr": {
-      "zh": "这个镇的人口减少了。",
-      "en": "This town's population has fallen."
+      "zh": "这家工厂生产汽车。",
+      "en": "This factory produces cars."
     },
     "why": {
-      "zh": "线索：划线的「じんこうが へりました」＝住在这里的人变少了，对应「すむ 人が すくなく なりました」。\n词义：「じんこう」（人口）＝住在某地的人数；「へる」（減る）＝减少，反义是「ふえる」：「じんこうが ふえる」「たいじゅうが へる」。",
-      "en": "Clue: the underlined 「じんこうが へりました」 — fewer people live here — matches 「すむ 人が すくなく なりました」.\nMeaning: 「じんこう」 (人口) is the number of people living in a place; 「へる」 (減る) is to decrease, opposite 「ふえる」: 「じんこうが ふえる」, 「たいじゅうが へる」 (lose weight)."
+      "zh": "线索：划线的「せいさんして います」＝在工厂里大量制造，对应「つくって います」。\n词义：「せいさん」（生産）＝生产：「車を せいさんする」「せいさんが ふえる」。",
+      "en": "Clue: the underlined 「せいさんして います」 — making them in a factory — matches 「つくって います」.\nMeaning: 「せいさん」 (生産) is production: 「車を せいさんする」, 「せいさんが ふえる」."
     },
     "wrong": [
       null,
       {
-        "zh": "“变多”是「ふえる」，和「へる」相反。",
-        "en": "\"Grew\" is 「ふえる」, the opposite of 「へる」."
+        "zh": "「うる」是卖，不是生产。",
+        "en": "「うる」 is selling, not producing."
       },
       {
-        "zh": "说的是商店变少，不是人口。",
-        "en": "This is about shops, not population."
+        "zh": "「なおす」是修理，不是生产。",
+        "en": "「なおす」 is repairing, not producing."
       },
       {
-        "zh": "“来的人”是游客、访客，不是居住人口。",
-        "en": "People who come are visitors, not residents."
+        "zh": "「あらう」是洗，不是生产。",
+        "en": "「あらう」 is washing, not producing."
       }
     ]
   },
   {
-    "id": "n4-mg-403",
+    "id": "n4-mg-428",
     "type": "iikae",
-    "refs": [
-      "lesson25#vocab"
-    ],
     "difficulty": 2,
-    "stem": "<<来月から この 店の ラーメンが ねあげに なります。>>",
+    "stem": "<<この 本は じが こまかくて よく 見えません。>>",
     "options": [
-      "来月から この 店の ラーメンが たかく なります。",
-      "来月から この 店の ラーメンが やすく なります。",
-      "来月から この 店の ラーメンが おいしく なります。",
-      "来月から この 店の ラーメンが なく なります。"
+      "この 本は じが ちいさくて よく 見えません。",
+      "この 本は じが おおきくて よく 見えません。",
+      "この 本は じが きたなくて よく 見えません。",
+      "この 本は じが すくなくて よく 見えません。"
     ],
     "okj": [
-      "来月からこの店のラーメンが高くなります。",
-      "来月からこの店のラーメンが安くなります。",
-      null,
-      null
+      "この本は字が小さくてよく見えません。",
+      "この本は字が大きくてよく見えません。",
+      "この本は字が汚くてよく見えません。",
+      "この本は字が少なくてよく見えません。"
     ],
-    "kj": "来月からこの店のラーメンが値上げになります。",
+    "kj": "この本は字が細かくてよく見えません。",
     "answer": 0,
     "tr": {
-      "zh": "从下个月起这家店的拉面要涨价。",
-      "en": "From next month, the ramen at this shop is going up in price."
+      "zh": "这本书字太小，看不清楚。",
+      "en": "The print in this book is so small I can't read it well."
     },
     "why": {
-      "zh": "线索：划线的「ねあげに なります」＝价钱要上调，对应「たかく なります」。\n词义：「ねあげ」（値上げ）＝涨价，常说「ねあげに なる」「ねあげする」；反义是「ねさげ」（降价）。",
-      "en": "Clue: the underlined 「ねあげに なります」 — the price is going up — matches 「たかく なります」.\nMeaning: 「ねあげ」 (値上げ) is a price rise: 「ねあげに なる」, 「ねあげする」; the opposite is 「ねさげ」 (a price cut)."
+      "zh": "线索：划线的「じが こまかくて」＝字又小又密，对应「じが ちいさくて」。\n词义：「こまかい」（細かい）＝细小、琐碎：「こまかい じ」「こまかい おかね」（零钱）；也指细致：「こまかく せつめいする」。",
+      "en": "Clue: the underlined 「じが こまかくて」 — the letters are tiny — matches 「じが ちいさくて」.\nMeaning: 「こまかい」 (細かい) is small and fine: 「こまかい じ」, 「こまかい おかね」 (small change); also detailed: 「こまかく せつめいする」."
     },
     "wrong": [
       null,
       {
-        "zh": "“变便宜”是降价，和涨价相反。",
-        "en": "Getting cheaper is the opposite of a price rise."
+        "zh": "「おおきい」是大，和「こまかい」相反。",
+        "en": "「おおきい」 (big) is the opposite of 「こまかい」."
       },
       {
-        "zh": "“变好吃”是味道，不是价格。",
-        "en": "Tasting better is about flavour, not price."
+        "zh": "「きたない」是脏、潦草，不是字小。",
+        "en": "「きたない」 is messy, not small."
       },
       {
-        "zh": "“没有了”是不卖了，不是涨价。",
-        "en": "Disappearing from the menu isn't a price rise."
+        "zh": "「すくない」是数量少，不是字小。",
+        "en": "「すくない」 is few, not small."
       }
     ]
   },
   {
-    "id": "n4-mg-404",
+    "id": "n4-mg-429",
     "type": "iikae",
-    "refs": [
-      "lesson25#vocab"
-    ],
     "difficulty": 2,
-    "stem": "<<田中さんは しょうじきな 人です。>>",
+    "stem": "<<山田さんは どくしんです。>>",
     "options": [
-      "田中さんは うそを つかない 人です。",
-      "田中さんは よく うそを つく 人です。",
-      "田中さんは よく はたらく 人です。",
-      "田中さんは だれにでも やさしい 人です。"
+      "山田さんは けっこんして いません。",
+      "山田さんは きょうだいが いません。",
+      "山田さんは しごとを して いません。",
+      "山田さんは ともだちが いません。"
     ],
     "okj": [
-      null,
-      null,
-      "田中さんはよく働く人です。",
-      "田中さんは誰にでも優しい人です。"
+      "山田さんは結婚していません。",
+      "山田さんは兄弟がいません。",
+      "山田さんは仕事をしていません。",
+      "山田さんは友達がいません。"
     ],
-    "kj": "田中さんは正直な人です。",
+    "kj": "山田さんは独身です。",
     "answer": 0,
     "tr": {
-      "zh": "田中先生是个诚实的人。",
-      "en": "Tanaka is an honest person."
+      "zh": "山田先生是单身。",
+      "en": "Mr Yamada is single."
     },
     "why": {
-      "zh": "线索：划线的「しょうじきな 人」＝说实话、不骗人的人，对应「うそを つかない 人」。\n词义：「しょうじき」（正直）＝诚实、老实，常说「しょうじきに 話す」「しょうじきに 言うと」（说实话）。",
-      "en": "Clue: the underlined 「しょうじきな 人」 — someone who tells the truth — matches 「うそを つかない 人」.\nMeaning: 「しょうじき」 (正直) is honest: 「しょうじきに 話す」, 「しょうじきに 言うと」 (to be honest)."
+      "zh": "线索：划线的「どくしん」＝没有结婚，对应「けっこんして いません」。\n词义：「どくしん」（独身）＝单身、未婚：「どくしんの 男性」「まだ どくしんです」。",
+      "en": "Clue: the underlined 「どくしん」 — not married — matches 「けっこんして いません」.\nMeaning: 「どくしん」 (独身) is single, unmarried: 「どくしんの 男性」, 「まだ どくしんです」."
     },
     "wrong": [
       null,
       {
-        "zh": "经常说谎和诚实正好相反。",
-        "en": "Lying often is the opposite of honest."
+        "zh": "没有兄弟姐妹是「ひとりっこ」，不是单身。",
+        "en": "Having no siblings is 「ひとりっこ」, not being single."
       },
       {
-        "zh": "“很能干活”是勤劳，不是诚实。",
-        "en": "Working hard is diligence, not honesty."
+        "zh": "没有工作和单身无关。",
+        "en": "Having no job has nothing to do with being single."
       },
       {
-        "zh": "“对谁都温柔”是善良，不是诚实。",
-        "en": "Being kind to everyone is kindness, not honesty."
+        "zh": "没有朋友和单身无关。",
+        "en": "Having no friends has nothing to do with being single."
       }
     ]
   },
   {
-    "id": "n4-mg-405",
+    "id": "n4-mg-430",
     "type": "iikae",
-    "refs": [
-      "lesson18#vocab"
-    ],
     "difficulty": 1,
-    "stem": "<<きのう、さいふを ぬすまれました。>>",
+    "stem": "<<この こうえんの さくらは うつくしいです。>>",
     "options": [
-      "きのう、だれかが わたしの さいふを とって 行きました。",
-      "きのう、わたしは さいふを おとしました。",
-      "きのう、わたしは さいふを わすれました。",
-      "きのう、わたしは あたらしい さいふを 買いました。"
+      "この こうえんの さくらは きれいです。",
+      "この こうえんの さくらは めずらしいです。",
+      "この こうえんの さくらは すくないです。",
+      "この こうえんの さくらは ふるいです。"
     ],
     "okj": [
-      "昨日、誰かが私の財布を取って行きました。",
-      "昨日、私は財布を落としました。",
-      "昨日、私は財布を忘れました。",
-      "昨日、私は新しい財布を買いました。"
+      "この公園の桜はきれいです。",
+      "この公園の桜は珍しいです。",
+      "この公園の桜は少ないです。",
+      "この公園の桜は古いです。"
     ],
-    "kj": "昨日、財布を盗まれました。",
+    "kj": "この公園の桜は美しいです。",
     "answer": 0,
     "tr": {
-      "zh": "昨天钱包被偷了。",
-      "en": "My wallet was stolen yesterday."
+      "zh": "这个公园的樱花很美。",
+      "en": "The cherry blossoms in this park are beautiful."
     },
     "why": {
-      "zh": "线索：划线的被动「ぬすまれました」＝别人把我的钱包拿走了，对应「だれかが…とって 行きました」。\n词义：「ぬすむ」（盗む）＝偷，常用被动「〜を ぬすまれる」：「さいふを ぬすまれる」「じてんしゃを ぬすまれた」。",
-      "en": "Clue: the underlined passive 「ぬすまれました」 — someone took my wallet — matches 「だれかが…とって 行きました」.\nMeaning: 「ぬすむ」 (盗む) is to steal, often in the passive 「〜を ぬすまれる」: 「さいふを ぬすまれる」, 「じてんしゃを ぬすまれた」."
+      "zh": "线索：划线的「うつくしい」＝美丽，就是「きれい」。\n词义：「うつくしい」（美しい）＝美丽，比「きれい」更书面：「うつくしい けしき」「うつくしい 声」。",
+      "en": "Clue: the underlined 「うつくしい」 (beautiful) is 「きれい」.\nMeaning: 「うつくしい」 (美しい) is beautiful, more formal than 「きれい」: 「うつくしい けしき」, 「うつくしい 声」."
     },
     "wrong": [
       null,
       {
-        "zh": "「おとす」是自己弄丢，不是被别人偷。",
-        "en": "「おとす」 is dropping it yourself, not theft."
+        "zh": "「めずらしい」是少见、稀奇，不是美。",
+        "en": "「めずらしい」 is rare or unusual, not beautiful."
       },
       {
-        "zh": "「わすれる」是忘带，不是被偷。",
-        "en": "「わすれる」 is forgetting it, not theft."
+        "zh": "「すくない」是数量少，不是美。",
+        "en": "「すくない」 is few, not beautiful."
       },
       {
-        "zh": "买新钱包和被偷无关。",
-        "en": "Buying a new wallet isn't being robbed."
+        "zh": "「ふるい」是老、旧，不是美。",
+        "en": "「ふるい」 is old, not beautiful."
       }
     ]
   },
   {
-    "id": "n4-mg-406",
+    "id": "n4-mg-431",
     "type": "iikae",
-    "refs": [
-      "lesson33#vocab"
-    ],
     "difficulty": 2,
-    "stem": "<<あしたは いえを るすに します。>>",
+    "stem": "<<山田さんは えが うまいです。>>",
     "options": [
-      "あしたは いえに いません。",
-      "あしたは ずっと いえに います。",
-      "あしたは いえで ゆっくり 休みます。",
-      "あしたは いえに だれも 来ません。"
+      "山田さんは えが じょうずです。",
+      "山田さんは えが へたです。",
+      "山田さんは えが すきです。",
+      "山田さんは えが きらいです。"
     ],
     "okj": [
-      "明日は家にいません。",
-      "明日はずっと家にいます。",
-      "明日は家でゆっくり休みます。",
-      "明日は家に誰も来ません。"
+      "山田さんは絵が上手です。",
+      "山田さんは絵が下手です。",
+      "山田さんは絵が好きです。",
+      "山田さんは絵が嫌いです。"
     ],
-    "kj": "明日は家を留守にします。",
+    "kj": "山田さんは絵がうまいです。",
     "answer": 0,
     "tr": {
-      "zh": "明天我不在家。",
-      "en": "I'll be away from home tomorrow."
+      "zh": "山田画画很好。",
+      "en": "Yamada is good at drawing."
     },
     "why": {
-      "zh": "线索：划线的「いえを るすに します」＝人出门，家里没人，对应「いえに いません」。\n词义：「るす」（留守）＝外出不在家，常说「いえを るすに する」「るすの あいだに」（不在家的时候）。",
-      "en": "Clue: the underlined 「いえを るすに します」 — I'll be out, nobody home — matches 「いえに いません」.\nMeaning: 「るす」 (留守) is being away from home: 「いえを るすに する」, 「るすの あいだに」 (while someone is out)."
+      "zh": "线索：划线的「えが うまい」＝画得好，就是「えが じょうず」。\n词义：「うまい」＝（技术）好、高明：「うたが うまい」；也指好吃：「この ラーメンは うまい」（口语，多为男性用）。",
+      "en": "Clue: the underlined 「えが うまい」 — draws well — is 「えが じょうず」.\nMeaning: 「うまい」 is skilful: 「うたが うまい」; also tasty in casual speech: 「この ラーメンは うまい」."
     },
     "wrong": [
       null,
       {
-        "zh": "“一直在家”和不在家相反。",
-        "en": "Being home all day is the opposite."
+        "zh": "「へた」是不擅长，和「うまい」相反。",
+        "en": "「へた」 (poor at) is the opposite of 「うまい」."
       },
       {
-        "zh": "“在家休息”还是在家。",
-        "en": "Resting at home still means being home."
+        "zh": "“喜欢画画”不等于“画得好”。",
+        "en": "Liking drawing isn't the same as being good at it."
       },
       {
-        "zh": "“没人来”说的是客人，不是我在不在家。",
-        "en": "\"No one will come\" is about visitors, not whether I'm home."
+        "zh": "「きらい」是讨厌，意思不同。",
+        "en": "「きらい」 (dislike) means something else."
       }
     ]
   },
   {
-    "id": "n4-mg-407",
+    "id": "n4-mg-432",
     "type": "iikae",
-    "refs": [
-      "lesson22#vocab"
-    ],
     "difficulty": 2,
-    "stem": "<<この しごとは わたしが ひきうけます。>>",
+    "stem": "<<花子さんは この いえの ちょうじょです。>>",
     "options": [
-      "この しごとは わたしが やります。",
-      "この しごとは わたしは やりません。",
-      "この しごとは ほかの 人に たのみます。",
-      "この しごとは もう おわりました。"
+      "花子さんは この いえの いちばん うえの むすめです。",
+      "花子さんは この いえの いちばん したの むすめです。",
+      "花子さんは この いえの いちばん うえの むすこです。",
+      "花子さんは この いえの いちばん したの むすこです。"
     ],
     "okj": [
-      "この仕事は私がやります。",
-      "この仕事は私はやりません。",
-      "この仕事はほかの人に頼みます。",
-      "この仕事はもう終わりました。"
+      "花子さんはこの家の一番上の娘です。",
+      "花子さんはこの家の一番下の娘です。",
+      "花子さんはこの家の一番上の息子です。",
+      "花子さんはこの家の一番下の息子です。"
     ],
-    "kj": "この仕事は私が引き受けます。",
+    "kj": "花子さんはこの家の長女です。",
     "answer": 0,
     "tr": {
-      "zh": "这项工作由我来接。",
-      "en": "I'll take on this job."
+      "zh": "花子是这家的长女。",
+      "en": "Hanako is the eldest daughter of this family."
     },
     "why": {
-      "zh": "线索：划线的「わたしが ひきうけます」＝这份工作我接下来自己做，对应「わたしが やります」。\n词义：「ひきうける」（引き受ける）＝接受、承担别人托付的工作或请求，常说「しごとを ひきうける」「たのみを ひきうける」。",
-      "en": "Clue: the underlined 「わたしが ひきうけます」 — I'll take the job on and do it myself — matches 「わたしが やります」.\nMeaning: 「ひきうける」 (引き受ける) is to take on a job or request someone gives you: 「しごとを ひきうける」, 「たのみを ひきうける」."
+      "zh": "线索：划线的「ちょうじょ」＝家里最大的女儿，对应「いちばん うえの むすめ」。\n词义：「ちょうじょ」（長女）＝长女；「ちょうなん」（長男）＝长子，「じなん」（次男）＝次子。",
+      "en": "Clue: the underlined 「ちょうじょ」 — the eldest daughter — matches 「いちばん うえの むすめ」.\nMeaning: 「ちょうじょ」 (長女) is the eldest daughter; 「ちょうなん」 (長男) the eldest son, 「じなん」 (次男) the second son."
     },
     "wrong": [
       null,
       {
-        "zh": "“我不做”和承担正好相反。",
-        "en": "\"I won't do it\" is the opposite of taking it on."
+        "zh": "「いちばん したの むすめ」是最小的女儿，正好相反。",
+        "en": "「いちばん したの むすめ」 is the youngest daughter — the opposite."
       },
       {
-        "zh": "“交给别人”是推给别人，不是自己承担。",
-        "en": "Asking someone else is handing it off, not taking it on."
+        "zh": "「むすこ」是儿子，「ちょうじょ」是女儿。",
+        "en": "「むすこ」 is a son; 「ちょうじょ」 is a daughter."
       },
       {
-        "zh": "“已经做完了”说的是结果，不是接下工作。",
-        "en": "\"It's already done\" is about the result, not accepting the job."
+        "zh": "最小的儿子既不是女儿，也不是最大的。",
+        "en": "The youngest son is neither a daughter nor the eldest."
       }
     ]
   },

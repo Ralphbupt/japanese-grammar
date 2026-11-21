@@ -1,337 +1,253 @@
 [
   {
-    "id": "n1-mg-401",
-    "rev": 2,
+    "id": "n1-mg-471",
     "type": "iikae",
     "difficulty": 1,
-    "stem": "彼の指摘は<<的を射ていた>>。",
+    "stem": "応募者の数は、昨年より<<若干>>増えた。",
     "options": [
-      "要点をついていた",
-      "手厳しかった",
-      "遠回しだった",
-      "当たり障りがなかった"
+      "わずかに",
+      "大幅に",
+      "ようやく",
+      "徐々に"
     ],
     "answer": 0,
     "tr": {
-      "zh": "他的指正切中要害。",
-      "en": "His point was right on target."
+      "zh": "应征人数比去年略有增加。",
+      "en": "The number of applicants rose slightly from last year."
     },
     "why": {
-      "zh": "线索：划线的「的を射ていた」说他的指正说中了关键，对应「要点をついていた」。\n词义：「的を射る」（まとをいる）＝射中靶心，比喻切中要害，常说「的を射た意見」「的を射た指摘」。",
-      "en": "Clue: the underlined 「的を射ていた」 — his point hit the key issue — matches 「要点をついていた」.\nMeaning: 「的を射る」 (まとをいる) is to hit the target, i.e. to be spot on: 「的を射た意見」, 「的を射た指摘」."
+      "zh": "线索：「昨年より」「増えた」，划线词说的是增加的幅度。\n词义：「若干」（じゃっかん）＝少许、稍微，可作副词也可作名词，常说「若干の変更」「若干名」。\n辨析：中文“若干”多指“一些、几个”，日语「若干」重在“量少、程度轻”。",
+      "en": "Clue: 「昨年より」 and 「増えた」 — the underlined word tells how much it rose.\nMeaning: 「若干」 (じゃっかん) is a little, slightly; adverb or noun: 「若干の変更」, 「若干名」.\nContrast: Chinese 若干 means \"some, several\"; Japanese 「若干」 stresses a small amount."
     },
     "wrong": [
       null,
       {
-        "zh": "「手厳しい」是严厉，「的を射る」说的是准确，不是语气严厉。",
-        "en": "「手厳しい」 is harsh; 「的を射る」 is about accuracy, not severity."
+        "zh": "「大幅に」是大幅度地，与“略微”正好相反。",
+        "en": "「大幅に」 is by a large margin — the opposite of slightly."
       },
       {
-        "zh": "「遠回し」是说话绕弯子，和是否说中要点无关。",
-        "en": "「遠回し」 is indirect phrasing, which says nothing about hitting the point."
+        "zh": "「ようやく」是“终于”，说的是等了很久才实现，不是增加多少。",
+        "en": "「ようやく」 is at last — about waiting, not about how much."
       },
       {
-        "zh": "「当たり障りがない」是说得四平八稳、不得罪人，并不是切中要害。",
-        "en": "「当たり障りがない」 is inoffensive and safe — not incisive."
+        "zh": "「徐々に」是逐渐地，说的是变化的快慢，不是幅度大小。",
+        "en": "「徐々に」 is gradually — the pace of change, not its size."
       }
     ]
   },
   {
-    "id": "n1-mg-402",
-    "rev": 2,
+    "id": "n1-mg-472",
     "type": "iikae",
     "difficulty": 2,
-    "stem": "財布もスマホもなくして、<<途方に暮れた>>。",
+    "stem": "こんなに複雑な故障は、町の修理屋では<<お手上げだ>>そうだ。",
     "options": [
-      "困り果てた",
-      "腹を立てた",
-      "気落ちした",
-      "慌てふためいた"
+      "どうしようもない",
+      "引き受けたくない",
+      "費用がかかる",
+      "時間がかかる"
     ],
     "answer": 0,
     "tr": {
-      "zh": "钱包和手机都丢了，我不知所措。",
-      "en": "I'd lost my wallet and my phone and didn't know what to do."
+      "zh": "据说这么复杂的故障，街上的修理店也束手无策。",
+      "en": "Apparently a fault this complicated is more than a local repair shop can deal with."
     },
     "why": {
-      "zh": "线索：划线的「途方に暮れた」，钱包手机都丢了，想不出任何办法，对应「困り果てた」。\n词义：「途方に暮れる」（とほうにくれる）＝不知如何是好、一筹莫展，常说「道に迷って途方に暮れる」。",
-      "en": "Clue: the underlined 「途方に暮れた」 — wallet and phone gone, no idea what to do — matches 「困り果てた」.\nMeaning: 「途方に暮れる」 (とほうにくれる) is to be at a complete loss: 「道に迷って途方に暮れる」."
+      "zh": "线索：「こんなに複雑な故障」，小修理店根本修不了。\n词义：「お手上げ」（おてあげ）＝举手投降，比喻毫无办法、束手无策，常说「もうお手上げだ」「専門家もお手上げの難問」。",
+      "en": "Clue: 「こんなに複雑な故障」 — a small shop simply can't fix it.\nMeaning: 「お手上げ」 (おてあげ) is throwing up one's hands, having no way out: 「もうお手上げだ」, 「専門家もお手上げの難問」."
     },
     "wrong": [
       null,
       {
-        "zh": "「腹を立てる」是生气，不是不知所措。",
-        "en": "「腹を立てる」 is getting angry, not being at a loss."
+        "zh": "「引き受けたくない」是不愿意接；「お手上げ」是想修也没有办法。",
+        "en": "「引き受けたくない」 is not wanting the job; 「お手上げ」 is being unable to do it at all."
       },
       {
-        "zh": "「気落ちする」是灰心、沮丧，重点在情绪低落，不在“不知道怎么办”。",
-        "en": "「気落ちする」 is feeling dejected; it says nothing about not knowing what to do."
+        "zh": "「費用がかかる」是要花钱，但还能修；「お手上げ」是修不了。",
+        "en": "「費用がかかる」 means it's costly but fixable; 「お手上げ」 means it can't be done."
       },
       {
-        "zh": "「慌てふためく」是惊慌失措、手忙脚乱，「途方に暮れる」是呆住、想不出办法。",
-        "en": "「慌てふためく」 is panicking and rushing around; 「途方に暮れる」 is being stuck for any idea."
+        "zh": "「時間がかかる」是费时间，但还能修；「お手上げ」是无计可施。",
+        "en": "「時間がかかる」 means slow but fixable; 「お手上げ」 means there's nothing to be done."
       }
     ]
   },
   {
-    "id": "n1-mg-403",
-    "rev": 2,
+    "id": "n1-mg-473",
     "type": "iikae",
     "difficulty": 2,
-    "stem": "部長の提案に<<異を唱える>>者はいなかった。",
+    "stem": "今回のイベントは、去年とは<<スケール>>が違う。",
     "options": [
-      "反対する",
-      "質問する",
-      "補足する",
-      "口を挟む"
+      "規模",
+      "評判",
+      "内容",
+      "雰囲気"
     ],
     "answer": 0,
     "tr": {
-      "zh": "没有人对部长的提案提出异议。",
-      "en": "No one objected to the manager's proposal."
+      "zh": "这次的活动和去年规模完全不同。",
+      "en": "This year's event is on a completely different scale from last year's."
     },
     "why": {
-      "zh": "线索：划线的「異を唱える」＝对提案明确表示不同意见，即「反対する」。\n词义：「異を唱える」（いをとなえる）＝提出异议、表示反对，语气较正式，常说「〜に異を唱える」「定説に異を唱える」。",
-      "en": "Clue: the underlined 「異を唱える」 — openly voicing a different view of the proposal — is 「反対する」.\nMeaning: 「異を唱える」 (いをとなえる) is to raise an objection, a fairly formal phrase: 「〜に異を唱える」, 「定説に異を唱える」."
+      "zh": "线索：「去年とは〜が違う」，比较的是活动的大小。\n词义：「スケール」＝规模、尺度，也指人的气度，常说「スケールが大きい」「スケールの大きな人物」。",
+      "en": "Clue: 「去年とは〜が違う」 compares how big the event is.\nMeaning: 「スケール」 is scale, size, and also a person's breadth of character: 「スケールが大きい」, 「スケールの大きな人物」."
     },
     "wrong": [
       null,
       {
-        "zh": "「質問する」只是提问，不等于反对。",
-        "en": "Asking a question is not objecting."
+        "zh": "「評判」是口碑、名声，不是大小。",
+        "en": "「評判」 is reputation, not size."
       },
       {
-        "zh": "「補足する」是补充说明，是在支持原提案的基础上加内容。",
-        "en": "「補足する」 is adding to the proposal, not opposing it."
+        "zh": "「内容」是活动的具体内容，「スケール」说的是规模。",
+        "en": "「内容」 is what the event contains; 「スケール」 is how big it is."
       },
       {
-        "zh": "「口を挟む」是插嘴、打断别人说话，不一定是反对。",
-        "en": "「口を挟む」 is butting in, not necessarily objecting."
+        "zh": "「雰囲気」是气氛，与规模无关。",
+        "en": "「雰囲気」 is atmosphere, which has nothing to do with size."
       }
     ]
   },
   {
-    "id": "n1-mg-404",
-    "rev": 2,
+    "id": "n1-mg-474",
     "type": "iikae",
     "difficulty": 2,
-    "stem": "老人は<<おもむろに>>口を開いた。",
+    "stem": "商品の発送が遅れ、客から<<クレーム>>が相次いだ。",
     "options": [
-      "ゆっくりと",
-      "不意に",
-      "小声で",
-      "ためらいがちに"
+      "苦情",
+      "問い合わせ",
+      "注文",
+      "返品"
     ],
     "answer": 0,
     "tr": {
-      "zh": "老人缓缓开了口。",
-      "en": "The old man slowly began to speak."
+      "zh": "商品发货延误，顾客的投诉接连不断。",
+      "en": "Shipping was delayed, and complaints from customers poured in."
     },
     "why": {
-      "zh": "线索：划线的「おもむろに」修饰「口を開いた」，老人是不慌不忙、慢慢开口的，对应「ゆっくりと」。\n词义：「おもむろに」＝从容地、缓缓地（开始某动作），常说「おもむろに口を開く」「おもむろに立ち上がる」；常被误当成“突然”，要注意。",
-      "en": "Clue: the underlined 「おもむろに」 modifies 「口を開いた」 — he began to speak slowly and calmly: 「ゆっくりと」.\nMeaning: 「おもむろに」 is slowly, deliberately (starting an action): 「おもむろに口を開く」, 「おもむろに立ち上がる」. It is often misread as \"suddenly\"."
+      "zh": "线索：「発送が遅れ」，顾客因此不满。\n词义：「クレーム」＝（对商品、服务的）投诉、抱怨，常说「クレームをつける」「クレーム対応」。",
+      "en": "Clue: 「発送が遅れ」 — customers are unhappy about it.\nMeaning: 「クレーム」 is a complaint about goods or service: 「クレームをつける」, 「クレーム対応」."
     },
     "wrong": [
       null,
       {
-        "zh": "「不意に」是突然，正是「おもむろに」常见的误解。",
-        "en": "「不意に」 is \"suddenly\" — the common misreading of 「おもむろに」."
+        "zh": "「問い合わせ」是询问，不一定带有不满。",
+        "en": "「問い合わせ」 is an inquiry, not necessarily a complaint."
       },
       {
-        "zh": "「小声で」说的是音量，「おもむろに」说的是动作的节奏。",
-        "en": "「小声で」 is about volume; 「おもむろに」 is about pace."
+        "zh": "「注文」是订货，与投诉无关。",
+        "en": "「注文」 is an order, not a complaint."
       },
       {
-        "zh": "「ためらいがちに」是犹犹豫豫，「おもむろに」是从容、沉稳，并不犹豫。",
-        "en": "「ためらいがちに」 is hesitantly; 「おもむろに」 is calm and unhurried, not hesitant."
+        "zh": "「返品」是退货，是一种行为，不等于投诉本身。",
+        "en": "「返品」 is returning goods — an action, not the complaint itself."
       }
     ]
   },
   {
-    "id": "n1-mg-405",
-    "rev": 2,
-    "type": "iikae",
-    "refs": [
-      "lesson91#vocab"
-    ],
-    "difficulty": 1,
-    "stem": "この村では<<過疎化>>が進んでいる。",
-    "options": [
-      "人口の減少",
-      "高齢化",
-      "都市化",
-      "産業の衰退"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "这个村子人口越来越稀少。",
-      "en": "This village is steadily losing its population."
-    },
-    "why": {
-      "zh": "线索：划线的「過疎化が進んでいる」说村里人口越来越少，对应「人口の減少」。\n词义：「過疎化」（かそか）＝（农村、山区）人口外流、变得稀少，常说「過疎化が進む」「過疎地域」；人口过于集中则是「過密」（かみつ）。",
-      "en": "Clue: the underlined 「過疎化が進んでいる」 — the village keeps losing people — matches 「人口の減少」.\nMeaning: 「過疎化」 (かそか) is depopulation, people leaving rural areas: 「過疎化が進む」, 「過疎地域」. Overcrowding is 「過密」 (かみつ)."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「高齢化」是老人比例上升，常与过疎化同时出现，但不是同一回事。",
-        "en": "「高齢化」 is ageing; it often goes with depopulation but is a different thing."
-      },
-      {
-        "zh": "「都市化」是变得城市化，与人口流失的村子方向不同。",
-        "en": "「都市化」 is urbanisation — not what happens to a village losing people."
-      },
-      {
-        "zh": "「産業の衰退」是产业衰落，可能是过疎化的原因，但不是它的意思。",
-        "en": "Industrial decline may cause depopulation, but it isn't what 「過疎化」 means."
-      }
-    ]
-  },
-  {
-    "id": "n1-mg-406",
-    "rev": 2,
-    "type": "iikae",
-    "difficulty": 2,
-    "stem": "あの店員の態度はいかにも<<横柄>>だった。",
-    "options": [
-      "偉そう",
-      "無愛想",
-      "冷淡",
-      "いい加減"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "那个店员的态度十分傲慢。",
-      "en": "That shop assistant was really arrogant."
-    },
-    "why": {
-      "zh": "线索：划线的「横柄」形容店员的态度傲慢、摆架子，对应「偉そう」。\n词义：「横柄」（おうへい）＝傲慢无礼、居高临下，常说「横柄な態度」「横柄な口のきき方」。",
-      "en": "Clue: the underlined 「横柄」 — the assistant acting superior and rude — matches 「偉そう」.\nMeaning: 「横柄」 (おうへい) is arrogant, high-handed: 「横柄な態度」, 「横柄な口のきき方」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「無愛想」是冷淡、不和气，不一定摆架子。",
-        "en": "「無愛想」 is curt and unfriendly, not necessarily overbearing."
-      },
-      {
-        "zh": "「冷淡」是冷漠、不热心，「横柄」的重点是居高临下。",
-        "en": "「冷淡」 is cold and uninterested; 「横柄」 is about looking down on people."
-      },
-      {
-        "zh": "「いい加減」是马虎、不认真，与傲慢无关。",
-        "en": "「いい加減」 is sloppy, not arrogant."
-      }
-    ]
-  },
-  {
-    "id": "n1-mg-407",
-    "rev": 3,
-    "type": "iikae",
-    "difficulty": 2,
-    "stem": "ただでさえ混む駅前の道が、雨の日は<<なおさら>>混雑する。",
-    "options": [
-      "いっそう",
-      "少しずつ",
-      "意外にも",
-      "一時的に"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "本来就拥挤的站前道路，下雨天就更拥挤了。",
-      "en": "The road in front of the station, crowded enough already, becomes even more congested on rainy days."
-    },
-    "why": {
-      "zh": "线索：「ただでさえ混む」＋「雨の日は」，在已经拥挤的基础上程度更甚。\n词义：「なおさら」＝更加、越发（在原有程度上再加深），常说「雨だとなおさら」「知っていればなおさら」。",
-      "en": "Clue: 「ただでさえ混む」 plus 「雨の日は」: worse on top of an already bad state.\nMeaning: 「なおさら」 is all the more, even more: 「雨だとなおさら」, 「知っていればなおさら」."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「少しずつ」是逐渐，说的是变化的过程，不是程度更甚。",
-        "en": "「少しずつ」 is gradually: about the process, not intensity."
-      },
-      {
-        "zh": "「意外にも」是出乎意料，原文并无意外之意。",
-        "en": "「意外にも」 is unexpectedly; nothing here is unexpected."
-      },
-      {
-        "zh": "「一時的に」是暂时，与程度无关。",
-        "en": "「一時的に」 is temporarily; unrelated to degree."
-      }
-    ]
-  },
-  {
-    "id": "n1-mg-408",
-    "rev": 2,
+    "id": "n1-mg-475",
     "type": "iikae",
     "difficulty": 1,
-    "stem": "この制度には、まだ改善の<<余地>>がある。",
+    "stem": "お噂は<<かねがね>>伺っております。",
     "options": [
-      "可能性",
-      "結果",
-      "予定",
-      "計画"
+      "以前から",
+      "ときどき",
+      "人づてに",
+      "さきほど"
     ],
     "answer": 0,
     "tr": {
-      "zh": "这个制度还有改进的余地。",
-      "en": "There's still room for improvement in this system."
+      "zh": "久仰大名。",
+      "en": "I've heard a great deal about you for some time."
     },
     "why": {
-      "zh": "线索：划线的「改善の余地がある」＝还有可以改进的空间，即还有改进的「可能性」。\n词义：「余地」（よち）＝还能容纳某事的空间、可能，常说「改善の余地がある」「選択の余地がない」。",
-      "en": "Clue: the underlined 「余地」 in 「改善の余地がある」 — there's still room to improve — amounts to 「可能性」.\nMeaning: 「余地」 (よち) is room or scope for something: 「改善の余地がある」, 「選択の余地がない」."
+      "zh": "线索：「お噂は〜伺っております」是初次见面时的寒暄，表示早就听说过对方。\n词义：「かねがね」＝早就、以前就，多用于郑重的寒暄，常说「かねがねお噂は伺っております」「かねがね思っていたことですが」。",
+      "en": "Clue: 「お噂は〜伺っております」 is a greeting on first meeting — I've heard of you for a long time.\nMeaning: 「かねがね」 is for a long time now, used in polite speech: 「かねがねお噂は伺っております」, 「かねがね思っていたことですが」."
     },
     "wrong": [
       null,
       {
-        "zh": "「結果」是事情的结果，「余地」是还留有的空间、可能。",
-        "en": "「結果」 is an outcome; 「余地」 is room still left for something."
+        "zh": "「ときどき」是有时，没有“早就”的意思。",
+        "en": "「ときどき」 is sometimes, not for a long time."
       },
       {
-        "zh": "「予定」是已经安排好要做，「余地」只是可能性。",
-        "en": "「予定」 is a plan already fixed; 「余地」 is only possibility."
+        "zh": "「人づてに」是通过别人转告，说的是途径，不是时间。",
+        "en": "「人づてに」 is through others — the route, not the time."
       },
       {
-        "zh": "「計画」是具体的计划，与“空间、余地”的意思不同。",
-        "en": "「計画」 is a concrete plan, not room for something."
+        "zh": "「さきほど」是刚才，与“早就”相反。",
+        "en": "「さきほど」 is a moment ago — the opposite of for a long time."
       }
     ]
   },
   {
-    "id": "n1-mg-409",
-    "rev": 2,
+    "id": "n1-mg-476",
     "type": "iikae",
     "difficulty": 2,
-    "stem": "彼の話はどうも<<つじつまが合わない>>。",
+    "stem": "式は親族だけで<<簡素に>>行われた。",
     "options": [
-      "筋が通らない",
-      "要領を得ない",
-      "話がかみ合わない",
-      "歯切れが悪い"
+      "シンプルに",
+      "厳かに",
+      "慌ただしく",
+      "和やかに"
     ],
     "answer": 0,
     "tr": {
-      "zh": "他的话怎么也说不通。",
-      "en": "His story just doesn't add up."
+      "zh": "仪式只有亲属参加，办得很简朴。",
+      "en": "The ceremony was held simply, with only the family."
     },
     "why": {
-      "zh": "线索：划线的「つじつまが合わない」指他的话前后矛盾、说不通，对应「筋が通らない」。\n词义：「つじつま」（辻褄）＝事情的条理、前后的一致，常说「つじつまが合わない」「話のつじつまを合わせる」。",
-      "en": "Clue: the underlined 「つじつまが合わない」 — his story contradicts itself — matches 「筋が通らない」.\nMeaning: 「つじつま」 (辻褄) is consistency, how the parts fit together: 「つじつまが合わない」, 「話のつじつまを合わせる」."
+      "zh": "线索：「親族だけで」，规模小、不铺张。\n词义：「簡素」（かんそ）＝简单朴素、不加多余装饰，常说「簡素な式」「手続きを簡素化する」。\n辨析：「厳かに」＝庄严，说的是气氛；「簡素」说的是形式简单。",
+      "en": "Clue: 「親族だけで」 — small, without fuss.\nMeaning: 「簡素」 (かんそ) is simple, without frills: 「簡素な式」, 「手続きを簡素化する」.\nContrast: 「厳かに」 is solemnly — the mood; 「簡素」 is about plain form."
     },
     "wrong": [
       null,
       {
-        "zh": "「要領を得ない」是抓不住要点、说不清楚，不一定前后矛盾。",
-        "en": "「要領を得ない」 is rambling and unclear, not necessarily contradictory."
+        "zh": "「厳かに」是庄严地，说气氛，不说形式简单。",
+        "en": "「厳かに」 is solemnly — about mood, not simplicity."
       },
       {
-        "zh": "「話がかみ合わない」是两个人说话对不上茬，说的是对话双方。",
-        "en": "「話がかみ合わない」 is two people talking past each other."
+        "zh": "「慌ただしく」是匆匆忙忙，与简朴无关。",
+        "en": "「慌ただしく」 is in a rush, unrelated to simplicity."
       },
       {
-        "zh": "「歯切れが悪い」是说话含糊、吞吞吐吐，不是前后矛盾。",
-        "en": "「歯切れが悪い」 is speaking evasively or haltingly, not contradicting yourself."
+        "zh": "「和やかに」是气氛融洽，不是形式简单。",
+        "en": "「和やかに」 is in a friendly mood, not simply."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-477",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "夜間の外出は<<極力>>控えるようにしてください。",
+    "options": [
+      "なるべく",
+      "しばらく",
+      "念のため",
+      "必ず"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "请尽量避免夜间外出。",
+      "en": "Please avoid going out at night as much as you can."
+    },
+    "why": {
+      "zh": "线索：「控えるようにしてください」，要求尽最大努力去做。\n词义：「極力」（きょくりょく）＝尽量、尽最大努力，常说「極力避ける」「極力抑える」。\n辨析：「必ず」＝一定、不留余地；「極力」＝尽可能，允许有做不到的时候。",
+      "en": "Clue: 「控えるようにしてください」 asks for one's best effort.\nMeaning: 「極力」 (きょくりょく) is as far as possible: 「極力避ける」, 「極力抑える」.\nContrast: 「必ず」 is without exception; 「極力」 is as much as you can, allowing for exceptions."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しばらく」是暂时，说的是时间，不是努力的程度。",
+        "en": "「しばらく」 is for a while — time, not effort."
+      },
+      {
+        "zh": "「念のため」是以防万一，不是“尽量”。",
+        "en": "「念のため」 is just in case, not as far as possible."
+      },
+      {
+        "zh": "「必ず」是一定，语气比「極力」绝对，意思不同。",
+        "en": "「必ず」 is without fail — absolute, unlike 「極力」."
       }
     ]
   },
@@ -373,76 +289,74 @@
     ]
   },
   {
-    "id": "n1-mg-411",
-    "rev": 2,
+    "id": "n1-mg-478",
     "type": "iikae",
     "difficulty": 2,
-    "stem": "その計画は<<白紙に戻された>>。",
+    "stem": "定年後は、時間にも気持ちにも<<ゆとり>>のある生活を送りたい。",
     "options": [
-      "なかったことにされた",
-      "延期された",
-      "縮小された",
-      "保留された"
+      "余裕",
+      "変化",
+      "張り",
+      "刺激"
     ],
     "answer": 0,
     "tr": {
-      "zh": "那个计划被推倒重来了。",
-      "en": "The plan was scrapped and taken back to square one."
+      "zh": "退休后，我想过一种时间和心情都宽裕的生活。",
+      "en": "After I retire, I want a life with time and peace of mind to spare."
     },
     "why": {
-      "zh": "线索：划线的「白紙に戻された」指计划被一笔勾销、回到原点，对应「なかったことにされた」。\n词义：「白紙に戻す」（はくしにもどす）＝撤销已定的事、回到什么都没定的状态，常说「計画を白紙に戻す」。",
-      "en": "Clue: the underlined 「白紙に戻された」 — the plan was wiped out and taken back to zero — matches 「なかったことにされた」.\nMeaning: 「白紙に戻す」 (はくしにもどす) is to scrap what was decided and start from a clean slate: 「計画を白紙に戻す」."
+      "zh": "线索：「時間にも気持ちにも」，时间和心情都不紧张、有富余。\n词义：「ゆとり」＝宽裕、富余，常说「ゆとりを持つ」「生活にゆとりがある」。",
+      "en": "Clue: 「時間にも気持ちにも」 — room to spare in time and in mind.\nMeaning: 「ゆとり」 is leeway, room to spare: 「ゆとりを持つ」, 「生活にゆとりがある」."
     },
     "wrong": [
       null,
       {
-        "zh": "「延期」是推迟，计划本身还在。",
-        "en": "「延期」 is postponing; the plan still stands."
+        "zh": "「変化」是变化，不是宽裕。",
+        "en": "「変化」 is change, not leeway."
       },
       {
-        "zh": "「縮小」是缩小规模，计划还在。",
-        "en": "「縮小」 is scaling down; the plan still exists."
+        "zh": "「張り」是干劲、紧张感（「張りのある生活」＝有奔头的生活），不是宽裕。",
+        "en": "「張り」 is drive, tension (「張りのある生活」 is a life with purpose), not room to spare."
       },
       {
-        "zh": "「保留」是暂时搁置，等以后再定，并没有一笔勾销。",
-        "en": "「保留」 is putting on hold, not wiping the slate clean."
+        "zh": "「刺激」是刺激，与悠闲宽裕相反。",
+        "en": "「刺激」 is stimulation — almost the opposite of ease."
       }
     ]
   },
   {
-    "id": "n1-mg-412",
-    "rev": 2,
+    "id": "n1-mg-479",
     "type": "iikae",
     "difficulty": 2,
-    "stem": "社長は新規出店に<<難色を示した>>。",
+    "stem": "二人は入社以来、営業成績で<<張り合って>>いる。",
     "options": [
-      "渋った",
-      "戸惑った",
-      "驚いた",
-      "黙り込んだ"
+      "競い合って",
+      "助け合って",
+      "話し合って",
+      "比べられて"
     ],
     "answer": 0,
     "tr": {
-      "zh": "社长对开新店面露难色。",
-      "en": "The president showed reluctance about opening a new store."
+      "zh": "两人自进公司以来，一直在销售业绩上较劲。",
+      "en": "Ever since they joined the company, the two have been vying with each other in sales."
     },
     "why": {
-      "zh": "线索：划线的「難色を示した」＝社长对开新店表现出不赞成、不情愿，对应「渋った」。\n词义：「難色を示す」（なんしょくをしめす）＝面露难色、表示不同意，常说「〜に難色を示す」；「渋る」（しぶる）＝不情愿、迟迟不肯，常说「返事を渋る」。",
-      "en": "Clue: the underlined 「難色を示した」 — the president showed he didn't like the idea — matches 「渋った」.\nMeaning: 「難色を示す」 (なんしょくをしめす) is to show disapproval: 「〜に難色を示す」. 「渋る」 (しぶる) is to be reluctant, hold back: 「返事を渋る」."
+      "zh": "线索：「二人は」「営業成績で」，在同一方面互争高下。\n词义：「張り合う」（はりあう）＝互相竞争、较劲，常说「〜と張り合う」「意地を張り合う」。\n辨析：「比べられる」是被别人拿来比较；「張り合う」是两人自己主动争胜。",
+      "en": "Clue: 「二人は」 and 「営業成績で」 — trying to beat each other in one area.\nMeaning: 「張り合う」 (はりあう) is to compete, vie: 「〜と張り合う」, 「意地を張り合う」.\nContrast: 「比べられる」 is being compared by others; 「張り合う」 is the two competing on their own."
     },
     "wrong": [
       null,
       {
-        "zh": "「戸惑う」是不知所措，不是不同意。",
-        "en": "「戸惑う」 is being bewildered, not disapproving."
+        "zh": "「助け合う」是互相帮助，与较劲相反。",
+        "en": "「助け合う」 is helping each other — the opposite."
       },
       {
-        "zh": "「驚く」只是吃惊，看不出赞成还是反对。",
-        "en": "「驚く」 is surprise; it shows no stance."
+        "zh": "「話し合う」是商量、讨论，没有竞争的意思。",
+        "en": "「話し合う」 is discussing, with no rivalry."
       },
       {
-        "zh": "「黙り込む」是沉默不语，没有表示不同意。",
-        "en": "「黙り込む」 is falling silent, not showing disapproval."
+        "zh": "「比べられる」是被动地被人比较，不是自己主动争胜。",
+        "en": "「比べられる」 is passive — being compared, not competing."
       }
     ]
   },
@@ -1108,38 +1022,38 @@
     ]
   },
   {
-    "id": "n1-mg-431",
+    "id": "n1-mg-480",
     "type": "iikae",
-    "difficulty": 1,
-    "stem": "彼女は<<ひたすら>>練習を重ねた。",
+    "difficulty": 2,
+    "stem": "試合に負けた選手たちは、<<うなだれて>>控え室に戻ってきた。",
     "options": [
-      "ただ一心に",
-      "気楽に",
-      "時折",
-      "ほどほどに"
+      "下を向いて",
+      "肩を組んで",
+      "涙を流して",
+      "黙り込んで"
     ],
     "answer": 0,
     "tr": {
-      "zh": "她一心一意地反复练习。",
-      "en": "She practiced single-mindedly, again and again."
+      "zh": "输了比赛的选手们垂头丧气地回到了休息室。",
+      "en": "The players who lost the match came back to the locker room with their heads hanging."
     },
     "why": {
-      "zh": "线索：「練習を重ねた」前的副词，表示全神贯注于一件事。\n词义：「ひたすら」＝一个劲儿地、只顾，常说「ひたすら謝る」「ひたすら待つ」。",
-      "en": "Clue: the adverb describes how she kept practicing — with total focus.\nMeaning: 「ひたすら」 is doing nothing but one thing: 「ひたすら謝る」, 「ひたすら待つ」."
+      "zh": "线索：「試合に負けた」，失望得抬不起头。\n词义：「うなだれる」＝（因失望、羞愧）垂下头，常说「がっくりとうなだれる」「うなだれたまま」。",
+      "en": "Clue: 「試合に負けた」 — too disappointed to hold their heads up.\nMeaning: 「うなだれる」 is to hang one's head (in disappointment or shame): 「がっくりとうなだれる」, 「うなだれたまま」."
     },
     "wrong": [
       null,
       {
-        "zh": "「気楽に」是轻松随意，与专注相反。",
-        "en": "「気楽に」 is casually, the opposite of intense focus."
+        "zh": "「肩を組む」是互相搭着肩，多表示团结，不是低头。",
+        "en": "「肩を組む」 is putting arms round each other's shoulders, not hanging one's head."
       },
       {
-        "zh": "「時折」是偶尔，与不停地练习矛盾。",
-        "en": "「時折」 is occasionally, at odds with repeated practice."
+        "zh": "「涙を流す」是流泪；「うなだれる」说的是低头的姿势。",
+        "en": "「涙を流す」 is crying; 「うなだれる」 is the posture of a lowered head."
       },
       {
-        "zh": "「ほどほどに」是适可而止，与拼命相反。",
-        "en": "「ほどほどに」 is in moderation, the opposite of single-minded."
+        "zh": "「黙り込む」是沉默不语，说的是不说话，不是低头。",
+        "en": "「黙り込む」 is falling silent — not speaking, not lowering one's head."
       }
     ]
   },
@@ -1864,38 +1778,38 @@
     ]
   },
   {
-    "id": "n1-mg-452",
+    "id": "n1-mg-481",
     "type": "iikae",
     "difficulty": 3,
-    "stem": "今回は<<あえて>>厳しい言い方をした。",
+    "stem": "留学から戻った友人に<<触発されて>>、私も英語の勉強を始めた。",
     "options": [
-      "好ましくないと知りつつ思い切って",
-      "つい口が滑って",
-      "相手に合わせて自然に",
-      "何の考えもなく"
+      "刺激されて",
+      "勧められて",
+      "助言されて",
+      "誘われて"
     ],
     "answer": 0,
     "tr": {
-      "zh": "这次我明知不妥，还是特意用了严厉的说法。",
-      "en": "This time I chose to put it harshly, knowing it was not ideal."
+      "zh": "受到留学归来的朋友的激励，我也开始学英语了。",
+      "en": "Inspired by a friend who had come back from studying abroad, I started studying English too."
     },
     "why": {
-      "zh": "线索：「今回は」「厳しい言い方をした」，是有意选择了不太好的做法。\n词义：「あえて」＝明知不妥或有难处，仍特意去做，常说「あえて言えば」「あえて反対する」。",
-      "en": "Clue: 「今回は」 and 「厳しい言い方をした」: a deliberate choice of the less comfortable way.\nMeaning: 「あえて」 is doing something though knowing it is awkward or risky: 「あえて言えば」, 「あえて反対する」."
+      "zh": "线索：「友人に〜て、私も」，因朋友的影响自己也行动起来。\n词义：「触発」（しょくはつ）＝受到刺激而引发想法或行动，常说「〜に触発される」「作品に触発されて描く」。\n辨析：「勧められる」「誘われる」是对方主动劝、邀；「触発される」是受影响后自己产生动力。",
+      "en": "Clue: 「友人に〜て、私も」 — the friend's example set me going.\nMeaning: 「触発」 (しょくはつ) is being stirred into an idea or action: 「〜に触発される」, 「作品に触発されて描く」.\nContrast: 「勧められる」 and 「誘われる」 mean the other person urged or invited; 「触発される」 means you were moved by their example."
     },
     "wrong": [
       null,
       {
-        "zh": "「つい口が滑る」是无意中说出，与有意相反。",
-        "en": "「つい口が滑る」 is a slip of the tongue, the opposite of deliberate."
+        "zh": "「勧められる」是被人劝说，是对方主动；「触発」是自己受到感染。",
+        "en": "「勧められる」 is being urged by someone; 「触発」 is being inspired."
       },
       {
-        "zh": "「相手に合わせて自然に」是顺着对方，不含有意冒险之意。",
-        "en": "「相手に合わせて自然に」 is going along with the other person; no deliberate risk."
+        "zh": "「助言される」是得到建议，不是受到激励。",
+        "en": "「助言される」 is being advised, not inspired."
       },
       {
-        "zh": "「何の考えもなく」是没有考虑，与有意相反。",
-        "en": "「何の考えもなく」 is without thought, the opposite of deliberate."
+        "zh": "「誘われる」是被邀请一起做，不是受刺激而自发行动。",
+        "en": "「誘われる」 is being invited, not stirred to act on one's own."
       }
     ]
   },
