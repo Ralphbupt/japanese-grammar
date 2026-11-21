@@ -39,80 +39,74 @@
     ]
   },
   {
-    "id": "n2-mg-503",
+    "id": "n2-mg-572",
     "type": "youhou",
-    "refs": [
-      "lesson67#vocab"
-    ],
     "difficulty": 2,
-    "stem": "<<採用>>",
+    "stem": "<<経過>>",
     "options": [
-      "会議で、彼女の出した案が採用された。",
-      "駅までの通勤には、毎日自転車を採用している。",
-      "かぜをひいたので、病院でもらった薬を採用した。",
-      "図書館の本を何冊か採用して、レポートを書いた。"
+      "手術から一週間が経過して、ようやく自分で歩けるようになった。",
+      "彼女は留学の経過を生かして、今は通訳の仕事をしている。",
+      "この細い道を経過すると、駅まで五分ほど早く着ける。",
+      "ケーキを作るとき、経過を一つ間違えて、うまくふくらまなかった。"
     ],
     "answer": 0,
     "tr": {
-      "zh": "採用：采纳（意见、方案）；录用（人）。正确句：在会议上，她提出的方案被采纳了。",
-      "en": "採用: adopting (an idea, a plan) or hiring (a person). Correct: Her proposal was adopted at the meeting."
+      "zh": "経過：（时间）经过、流逝；事情的进展。正确句：手术过了一周，终于能自己走路了。",
+      "en": "経過: time passing; the course of events. Correct: A week after the operation, I could finally walk on my own."
     },
     "why": {
-      "zh": "线索：正确句里被「採用された」的是她在会上提出的「案」，即方案被采纳。\n词义：「採用」（さいよう）＝采纳方案、意见，或录用人员，常说「意見を採用する」「新入社員を採用する」「採用試験」。",
-      "en": "Clue: in the right sentence what was 「採用された」 is her 「案」 put forward at the meeting — a proposal taken up.\nMeaning: 「採用」 (さいよう) is adopting a plan or idea, or hiring people: 「意見を採用する」, 「新入社員を採用する」, 「採用試験」 (recruitment exam)."
+      "zh": "线索：正确句里是「一週間が経過して」——时间过去了。\n词义：「経過」（けいか）＝时间的流逝或事情的进展，常说「時間が経過する」「〜年が経過した」「経過を見る」「経過報告」。",
+      "en": "Clue: the right sentence has 「一週間が経過して」 — a span of time going by.\nMeaning: 「経過」 (けいか) is time elapsing or how something progresses: 「時間が経過する」, 「〜年が経過した」, 「経過を見る」, 「経過報告」."
     },
     "wrong": [
       null,
       {
-        "zh": "这里是「利用」（使用交通工具）的位置；「採用」用于采纳意见、录用人员。",
-        "en": "This is a slot for 「利用」 (using transport); 「採用」 is for adopting ideas or hiring."
+        "zh": "留学获得的是「経験」，应说「留学の経験を生かして」。",
+        "en": "What study abroad gives you is 「経験」: 「留学の経験を生かして」."
       },
       {
-        "zh": "吃药是「服用」，不说「採用」。",
-        "en": "Taking medicine is 「服用」, not 「採用」."
+        "zh": "走某条路应说「通る」或「通って行く」，「経過」不用于走道路。",
+        "en": "Taking a road is 「通る」; 「経過」 isn't used for going along a road."
       },
       {
-        "zh": "参考书籍写报告是「利用」或「参考に」，不是「採用」。",
-        "en": "Using library books for a report is 「利用」/「参考にする」, not 「採用」."
+        "zh": "做蛋糕的步骤是「手順」，应说「手順を一つ間違えて」。",
+        "en": "The steps of a recipe are 「手順」: 「手順を一つ間違えて」."
       }
     ]
   },
   {
-    "id": "n2-mg-504",
+    "id": "n2-mg-573",
     "type": "youhou",
-    "refs": [
-      "lesson67#vocab"
-    ],
     "difficulty": 2,
-    "stem": "<<検討>>",
+    "stem": "<<区切り>>",
     "options": [
-      "ご提案の件は、社内でよく検討してからお返事します。",
-      "毎朝、体重を検討してノートに書いている。",
-      "落とした財布を一日中検討したが、見つからなかった。",
-      "工場では、完成した製品を一つずつ検討している。"
+      "仕事がひと区切りついたら、少しコーヒーでも飲みに行こう。",
+      "申し込みの区切りは今月末なので、早めに書類を出してください。",
+      "彼とは小学校からの区切りで、今でも月に一度は会っている。",
+      "この薬は一日三回、食事の区切りに水で飲んでください。"
     ],
     "answer": 0,
     "tr": {
-      "zh": "検討：仔细研究、考虑是否可行。正确句：您的提案我们会在公司内部仔细研究后再答复。",
-      "en": "検討: examining a matter carefully before deciding. Correct: We'll consider your proposal carefully in-house and then get back to you."
+      "zh": "区切り：段落、告一段落的地方。正确句：等工作告一段落，去喝杯咖啡吧。",
+      "en": "区切り: a break, a natural stopping point. Correct: Once I've got to a stopping point in my work, let's go for a coffee."
     },
     "why": {
-      "zh": "线索：正确句的对象是对方的「ご提案」，要在公司内部研究后再答复。\n词义：「検討」（けんとう）＝对方案、问题仔细研究，考虑是否可行，常说「前向きに検討します」「検討の余地がある」。",
-      "en": "Clue: the right sentence is about the other side's 「ご提案」, to be looked into in-house before replying.\nMeaning: 「検討」 (けんとう) is examining a plan or issue to decide on it: 「前向きに検討します」 (we'll consider it favourably), 「検討の余地がある」 (there's room to reconsider)."
+      "zh": "线索：正确句里是「ひと区切りつく」——事情做到一个可以停下来的段落。\n词义：「区切り」（くぎり）＝段落、分界，常说「ひと区切りつく」「区切りをつける」「区切りのいいところで」。",
+      "en": "Clue: the right sentence has 「ひと区切りつく」 — reaching a point where one can pause.\nMeaning: 「区切り」 (くぎり) is a break or dividing point: 「ひと区切りつく」, 「区切りをつける」, 「区切りのいいところで」 (at a good place to stop)."
     },
     "wrong": [
       null,
       {
-        "zh": "称体重是「量って」。",
-        "en": "Weighing yourself is 「量って」."
+        "zh": "报名的截止日期是「締め切り」，应说「申し込みの締め切り」。",
+        "en": "A deadline is 「締め切り」: 「申し込みの締め切り」."
       },
       {
-        "zh": "找钱包是「探した」。",
-        "en": "Looking for a wallet is 「探した」."
+        "zh": "从小学就认识是「付き合い」，应说「小学校からの付き合い」。",
+        "en": "A long friendship is 「付き合い」: 「小学校からの付き合い」."
       },
       {
-        "zh": "逐个检查产品是「検査」；「検討」是对方案、问题进行研究考虑。",
-        "en": "Checking products one by one is 「検査」; 「検討」 is deliberating over a plan or issue."
+        "zh": "吃药的时间应说「食後に」或「食事の間に」，没有「食事の区切り」。",
+        "en": "Medicine timing is 「食後に」 or 「食間に」; 「食事の区切り」 isn't said."
       }
     ]
   },
@@ -264,38 +258,38 @@
     ]
   },
   {
-    "id": "n2-mg-509",
+    "id": "n2-mg-574",
     "type": "youhou",
     "difficulty": 3,
-    "stem": "<<目安>>",
+    "stem": "<<薄める>>",
     "options": [
-      "一日に飲む水の量は、二リットルを目安にするといい。",
-      "駅前の大きな時計を目安にして、友達と待ち合わせた。",
-      "彼は将来の目安を持って、毎日努力している。",
-      "本を買う前に、目安を見て内容を確かめた。"
+      "このジュースは濃いので、水で薄めてから飲んでください。",
+      "ダイエットのために、毎日の食事の量を少しずつ薄めている。",
+      "テレビの音がうるさいと言われたので、音量を薄めた。",
+      "かばんが重かったので、中身を半分ほど薄めてから出かけた。"
     ],
     "answer": 0,
     "tr": {
-      "zh": "目安：大致的标准、参考值。正确句：一天喝的水量，以两升为标准比较好。",
-      "en": "目安: a rough guide or standard. Correct: As a rough guide, aim for two litres of water a day."
+      "zh": "薄める：（加水等）稀释，把浓度调淡。正确句：这果汁很浓，请兑水冲淡后再喝。",
+      "en": "薄める: to dilute, make weaker (with water etc.). Correct: This juice is strong, so dilute it with water before drinking."
     },
     "why": {
-      "zh": "线索：正确句说一天喝水的量，以「二リットル」这个数字作为大致的标准。\n词义：「目安」（めやす）＝数量、时间等的大致标准、参考，常说「〜を目安にする」「一つの目安になる」。",
-      "en": "Clue: the right sentence takes the figure 「二リットル」 as a rough guide for daily water.\nMeaning: 「目安」 (めやす) is a rough standard for an amount or time: 「〜を目安にする」, 「一つの目安になる」 (serve as a guide)."
+      "zh": "线索：正确句里是「濃いので、水で薄めて」——加水把浓的东西冲淡。\n词义：「薄める」（うすめる）＝稀释、冲淡（浓度、味道），常说「水で薄める」「味を薄める」；只用于液体的浓度，不表示量的减少。\n辨析：减少数量、降低音量都不用「薄める」，而用「減らす」「下げる」。",
+      "en": "Clue: the right sentence has 「濃いので、水で薄めて」 — adding water to weaken something strong.\nMeaning: 「薄める」 (うすめる) is to dilute, weaken (a concentration, a flavour): 「水で薄める」, 「味を薄める」; it's about strength, not reducing an amount.\nContrast: cutting an amount or the volume is 「減らす」 or 「下げる」, not 「薄める」."
     },
     "wrong": [
       null,
       {
-        "zh": "会合时作为标志的东西是「目印」。",
-        "en": "Something you meet by is a 「目印」 (landmark)."
+        "zh": "减少饭量应说「量を減らしている」。",
+        "en": "Cutting down how much you eat is 「量を減らしている」."
       },
       {
-        "zh": "将来的目标是「目標」。",
-        "en": "A goal for the future is a 「目標」."
+        "zh": "调低音量应说「音量を下げた」或「小さくした」。",
+        "en": "Turning the volume down is 「音量を下げた」 or 「小さくした」."
       },
       {
-        "zh": "书的目录是「目次」；「目安」是大致的标准。",
-        "en": "A book's table of contents is 「目次」; 「目安」 is a rough guide or standard."
+        "zh": "减少包里的东西应说「中身を減らしてから」。",
+        "en": "Taking things out of a bag is 「中身を減らしてから」."
       }
     ]
   },
@@ -771,80 +765,74 @@
     ]
   },
   {
-    "id": "n2-mg-523",
+    "id": "n2-mg-575",
     "type": "youhou",
-    "refs": [
-      "lesson64#vocab"
-    ],
     "difficulty": 2,
-    "stem": "<<証拠>>",
+    "stem": "<<熱中>>",
     "options": [
-      "警察は、彼が犯人だという証拠を見つけた。",
-      "引っ越しのときに、大学の卒業証拠をなくしてしまった。",
-      "先生の証拠どおりにやったら、うまくできた。",
-      "合格の証拠が届いて、家族みんなで喜んだ。"
+      "子どもたちはゲームに熱中して、夕飯の時間になったのにも気づかなかった。",
+      "暑い日は熱中で倒れないように、こまめに水を飲んでください。",
+      "彼女は熱中な先生で、放課後も生徒の質問に丁寧に答えている。",
+      "スープが冷めてしまったので、電子レンジで少し熱中した。"
     ],
     "answer": 0,
     "tr": {
-      "zh": "証拠：证明事实的根据。正确句：警察找到了证明他是犯人的证据。",
-      "en": "証拠: proof of a fact. Correct: The police found evidence that he was the culprit."
+      "zh": "熱中：热衷、入迷。正确句：孩子们玩游戏入了迷，到了晚饭时间都没发觉。",
+      "en": "熱中: being absorbed in, crazy about. Correct: The children were so absorbed in their game they didn't notice it was dinnertime."
     },
     "why": {
-      "zh": "线索：正确句里警察找到的是能证明「彼が犯人だ」的东西，用「〜という証拠」。\n词义：「証拠」（しょうこ）＝证明事实的东西或事实，常说「証拠を見つける」「証拠がない」「動かぬ証拠」（铁证）。",
-      "en": "Clue: in the right sentence the police find something proving 「彼が犯人だ」, in 「〜という証拠」.\nMeaning: 「証拠」 (しょうこ) is evidence, proof: 「証拠を見つける」, 「証拠がない」, 「動かぬ証拠」 (hard evidence)."
+      "zh": "线索：正确句里是「ゲームに熱中して」「気づかなかった」——全神贯注、入迷。\n词义：「熱中」（ねっちゅう）＝热衷于、专心投入，用「〜に熱中する」，常说「趣味に熱中する」「研究に熱中する」。",
+      "en": "Clue: the right sentence has 「ゲームに熱中して」 and 「気づかなかった」 — wholly absorbed.\nMeaning: 「熱中」 (ねっちゅう) is being absorbed in or crazy about, 「〜に熱中する」: 「趣味に熱中する」, 「研究に熱中する」."
     },
     "wrong": [
       null,
       {
-        "zh": "毕业证书是「卒業証書」。",
-        "en": "A diploma is a 「卒業証書」."
+        "zh": "中暑是「熱中症」，应说「熱中症で倒れないように」。",
+        "en": "Heatstroke is 「熱中症」: 「熱中症で倒れないように」."
       },
       {
-        "zh": "照老师说的做是「指示」「説明」。",
-        "en": "Doing as the teacher said is following their 「指示」 or 「説明」."
+        "zh": "「熱中」不是な形容词；认真负责的老师应说「熱心な先生」。",
+        "en": "「熱中」 isn't a な-adjective; a dedicated teacher is 「熱心な先生」."
       },
       {
-        "zh": "合格的通知是「通知」「知らせ」。",
-        "en": "News of passing is a 「通知」 or 「知らせ」."
+        "zh": "加热食物应说「温めた」。",
+        "en": "Heating food up is 「温めた」."
       }
     ]
   },
   {
-    "id": "n2-mg-524",
+    "id": "n2-mg-576",
     "type": "youhou",
-    "refs": [
-      "lesson74#vocab"
-    ],
     "difficulty": 2,
-    "stem": "<<事情>>",
+    "stem": "<<愛着>>",
     "options": [
-      "家庭の事情で、来月から仕事をしばらく休むことになった。",
-      "毎朝の事情として、起きたらまずコーヒーを一杯飲んでいる。",
-      "今朝は事情が悪くて、学校を休んだ。",
-      "彼は事情が明るくて、だれとでもすぐ仲よくなる。"
+      "十年以上使ってきたこの机には愛着があって、なかなか捨てられない。",
+      "母は毎朝、愛着をこめて家族の弁当を作ってくれる。",
+      "その犬は人に愛着で、だれにでもしっぽを振って近づいていく。",
+      "二人は大学時代に愛着して、来年の春に結婚することになった。"
     ],
     "answer": 0,
     "tr": {
-      "zh": "事情：（不便明说的）情况、缘由。正确句：因家里的原因，下个月起要暂时请假。",
-      "en": "事情: circumstances, reasons (often private). Correct: For family reasons, I'm going to take some time off work from next month."
+      "zh": "愛着：（对用惯的东西、住惯的地方）依恋、舍不得。正确句：这张书桌用了十多年，很有感情，怎么也舍不得扔。",
+      "en": "愛着: attachment (to things or places one has long known). Correct: I've used this desk for over ten years and I'm attached to it — I can't bring myself to throw it out."
     },
     "why": {
-      "zh": "线索：正确句是「家庭の事情で」请假，说的是背后不便细说的原因。\n词义：「事情」（じじょう）＝某事背后的情况、缘由，常说「事情を説明する」「やむを得ない事情」；中文“事情”在日语多说「こと」。",
-      "en": "Clue: the right sentence has 「家庭の事情で」 — a private reason behind taking leave.\nMeaning: 「事情」 (じじょう) is the circumstances or reasons behind something: 「事情を説明する」, 「やむを得ない事情」 (unavoidable circumstances). It doesn't mean 'a thing', which is 「こと」."
+      "zh": "线索：正确句里是「使ってきたこの机には愛着があって」「捨てられない」——对长期用的东西产生感情。\n词义：「愛着」（あいちゃく）＝对东西、地方的依恋，常说「〜に愛着がある」「愛着がわく」「愛着を持つ」。\n辨析：对人的爱是「愛情」（「愛情をこめて」），不是「愛着」。",
+      "en": "Clue: the right sentence has 「使ってきたこの机には愛着があって」 and 「捨てられない」 — feeling for something long used.\nMeaning: 「愛着」 (あいちゃく) is attachment to things or places: 「〜に愛着がある」, 「愛着がわく」, 「愛着を持つ」.\nContrast: love for people is 「愛情」 (「愛情をこめて」), not 「愛着」."
     },
     "wrong": [
       null,
       {
-        "zh": "每天的习惯是「習慣」。",
-        "en": "A daily habit is a 「習慣」."
+        "zh": "对家人的爱应说「愛情をこめて」。",
+        "en": "Love put into cooking for family is 「愛情をこめて」."
       },
       {
-        "zh": "身体不舒服是「具合が悪くて」「体調が悪くて」。",
-        "en": "Feeling unwell is 「具合が悪くて」 or 「体調が悪くて」."
+        "zh": "对人亲近的狗应说「人なつっこくて」。",
+        "en": "A dog that's friendly with everyone is 「人なつっこくて」."
       },
       {
-        "zh": "性格开朗是「性格が明るくて」。",
-        "en": "A cheerful personality is 「性格が明るくて」."
+        "zh": "两人相爱应说「付き合って」或「愛し合って」。",
+        "en": "A couple falling in love is 「付き合って」 or 「愛し合って」."
       }
     ]
   },

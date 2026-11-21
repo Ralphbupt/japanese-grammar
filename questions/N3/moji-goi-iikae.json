@@ -1,229 +1,217 @@
 [
   {
-    "id": "n3-mg-401",
-    "rev": 2,
+    "id": "n3-mg-427",
     "type": "iikae",
     "difficulty": 1,
-    "stem": "<<至急>> 連絡して ください。",
+    "stem": "毎日 新しい 単語を 十個 <<暗記する>> ことに して いる。",
     "options": [
-      "必ず",
-      "すぐに",
-      "直接",
-      "一度"
+      "調べる",
+      "覚える",
+      "書き写す",
+      "復習する"
     ],
     "answer": 1,
     "tr": {
-      "zh": "请火速联系。",
-      "en": "Please get in touch urgently."
+      "zh": "我规定自己每天背十个新单词。",
+      "en": "I make a point of memorising ten new words every day."
     },
     "why": {
-      "zh": "线索：划线的「至急」修饰「連絡して ください」，意思是情况紧急、要马上做，对应「すぐに」。\n词义：「至急」（しきゅう）＝非常紧急、火速，多用于请求和工作场合，常说「至急 来て ください」「至急の 用事」。",
-      "en": "Clue: the underlined 「至急」 describes 「連絡して ください」 — it's urgent and has to be done right away, which is 「すぐに」.\nMeaning: 「至急」 (しきゅう) is urgently, as a matter of urgency, mostly in requests and at work: 「至急 来て ください」 (please come at once), 「至急の 用事」 (urgent business)."
+      "zh": "线索：划线的「暗記する」的对象是「新しい 単語」，意思是背下来，对应「覚える」。\n词义：「暗記」（あんき）＝背诵、记住，常说「単語を 暗記する」「丸暗記」。\n辨析：「復習」是温习学过的内容，不一定背下来；「暗記」是记到不看也能说出来。",
+      "en": "Clue: what the underlined 「暗記する」 acts on is 「新しい 単語」 — learning them by heart, which is 「覚える」.\nMeaning: 「暗記」 (あんき) is memorising: 「単語を 暗記する」 (memorise words), 「丸暗記」 (rote learning).\nContrast: 「復習」 is going over what you've studied, not necessarily learning it by heart; 「暗記」 means you can say it without looking."
     },
     "wrong": [
       {
-        "zh": "「必ず」是“一定”，强调不能不做，不表示“马上”。",
-        "en": "「必ず」 is \"without fail\"; it doesn't mean \"right away\"."
+        "zh": "「調べる」是查，查了不一定记住。",
+        "en": "「調べる」 is to look up; looking up isn't memorising."
       },
       null,
       {
-        "zh": "「直接」是“直接（不通过别人）”，说的是方式，不是快慢。",
-        "en": "「直接」 is \"directly\" (not through someone else), about how, not how soon."
+        "zh": "「書き写す」是抄写，说的是动作，不是记住。",
+        "en": "「書き写す」 is to copy out — an action, not memorising."
       },
       {
-        "zh": "「一度」是“一次／先……一下”，没有“急”的意思。",
-        "en": "「一度」 is \"once\"; it has no sense of urgency."
+        "zh": "「復習する」是复习学过的东西，而这里是「新しい」单词。",
+        "en": "「復習する」 is reviewing what you've learned, but these words are 「新しい」."
       }
     ]
   },
   {
-    "id": "n3-mg-402",
-    "rev": 2,
+    "id": "n3-mg-428",
     "type": "iikae",
-    "refs": [
-      "lesson39#vocab"
-    ],
     "difficulty": 2,
-    "stem": "彼は 今の 給料に <<不満が ある>>。",
+    "stem": "窓から 入る 日の 光が <<まぶしい>>。",
     "options": [
-      "興味が ある",
-      "自信が ある",
-      "文句が ある",
-      "責任が ある"
+      "暖かくて 気持ちいい",
+      "暑くて 汗が 出る",
+      "暗くて 見えにくい",
+      "明るすぎて 見にくい"
     ],
-    "answer": 2,
+    "answer": 3,
     "tr": {
-      "zh": "他对现在的工资不满。",
-      "en": "He's unhappy with his current pay."
+      "zh": "从窗户照进来的阳光很刺眼。",
+      "en": "The sunlight coming through the window is dazzling."
     },
     "why": {
-      "zh": "线索：划线的「不満が ある」＝对工资不满意，对应「文句が ある」。\n词义：「不満」（ふまん）＝不满意，常说「〜に 不満が ある」「不満を 言う」。\n辨析：「不満」偏指心里的不满；「文句」（もんく）多指说出口的抱怨（「文句を 言う」），但「文句が ある」也可指有意见，所以这里相当。",
-      "en": "Clue: the underlined 「不満が ある」 — being unhappy with the pay and wanting to complain — matches 「文句が ある」.\nMeaning: 「不満」 (ふまん) is dissatisfaction: 「〜に 不満が ある」 (be unhappy with …), 「不満を 言う」 (voice complaints).\nContrast: 「不満」 is mainly the feeling; 「文句」 (もんく) is mostly the complaint said aloud, as in 「文句を 言う」. But 「文句が ある」 can also mean having objections, so here they match."
+      "zh": "线索：划线的「まぶしい」形容「日の 光」，是光太强、睁不开眼，对应「明るすぎて 見にくい」。\n词义：「まぶしい」＝耀眼、刺眼，常说「太陽が まぶしい」「まぶしくて 目を 閉じる」。",
+      "en": "Clue: the underlined 「まぶしい」 describes 「日の 光」 — light so strong you can hardly look, which is 「明るすぎて 見にくい」.\nMeaning: 「まぶしい」 is dazzling, glaring: 「太陽が まぶしい」 (the sun is blinding), 「まぶしくて 目を 閉じる」 (close your eyes against the glare)."
     },
     "wrong": [
       {
-        "zh": "「興味が ある」是感兴趣，不是不满意。",
-        "en": "「興味が ある」 is being interested, not being unhappy."
+        "zh": "「暖かくて 気持ちいい」说的是温度舒服，「まぶしい」说的是光太亮。",
+        "en": "「暖かくて 気持ちいい」 is about pleasant warmth; 「まぶしい」 is about light that's too bright."
       },
       {
-        "zh": "「自信が ある」是有自信，和对工资的不满无关。",
-        "en": "「自信が ある」 is being confident, nothing to do with complaints about pay."
+        "zh": "「暑くて 汗が 出る」说的是热，不是光刺眼。",
+        "en": "「暑くて 汗が 出る」 is about heat, not glare."
+      },
+      {
+        "zh": "「暗くて 見えにくい」是太暗，和「まぶしい」正好相反。",
+        "en": "「暗くて 見えにくい」 is too dark — the opposite of 「まぶしい」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n3-mg-429",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "新しい 部屋は <<キッチン>>が 広くて 使いやすい。",
+    "options": [
+      "玄関",
+      "台所",
+      "お風呂",
+      "寝室"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "新房间的厨房宽敞好用。",
+      "en": "The new flat has a big kitchen that's easy to use."
+    },
+    "why": {
+      "zh": "线索：划线的「キッチン」是房间里做饭的地方，对应「台所」。\n词义：「キッチン」（kitchen）＝厨房，和「台所」（だいどころ）同义，常说「キッチンで 料理する」「システムキッチン」。",
+      "en": "Clue: the underlined 「キッチン」 is the room where you cook, which is 「台所」.\nMeaning: 「キッチン」 (kitchen) means the same as 「台所」 (だいどころ): 「キッチンで 料理する」 (cook in the kitchen), 「システムキッチン」 (fitted kitchen)."
+    },
+    "wrong": [
+      {
+        "zh": "「玄関」是门口（进门脱鞋的地方），不是厨房。",
+        "en": "「玄関」 is the entrance hall, not the kitchen."
       },
       null,
       {
-        "zh": "「責任が ある」是有责任，不是有意见。",
-        "en": "「責任が ある」 is being responsible, not having complaints."
+        "zh": "「お風呂」是浴室，不是做饭的地方。",
+        "en": "「お風呂」 is the bathroom, not where you cook."
+      },
+      {
+        "zh": "「寝室」是卧室，不是厨房。",
+        "en": "「寝室」 is the bedroom, not the kitchen."
       }
     ]
   },
   {
-    "id": "n3-mg-404",
-    "rev": 2,
+    "id": "n3-mg-430",
     "type": "iikae",
     "difficulty": 2,
-    "stem": "仕事は <<ほぼ>> 終わった。",
+    "stem": "今日の 授業は これで <<おしまい>>です。",
     "options": [
-      "全部",
-      "だいたい",
+      "始まり",
       "半分",
-      "すでに"
+      "休み",
+      "終わり"
     ],
-    "answer": 1,
+    "answer": 3,
     "tr": {
-      "zh": "工作基本上做完了。",
-      "en": "The work is almost done."
+      "zh": "今天的课就到这里。",
+      "en": "That's the end of today's class."
     },
     "why": {
-      "zh": "线索：划线的「ほぼ」修饰「終わった」，是差不多都做完了、只剩一点，对应「だいたい」。\n词义：「ほぼ」＝几乎、差不多，常说「ほぼ 同じ」「ほぼ 毎日」。",
-      "en": "Clue: the underlined 「ほぼ」 describes 「終わった」 — nearly all done, with a little left — which is 「だいたい」.\nMeaning: 「ほぼ」 is almost, nearly: 「ほぼ 同じ」 (almost the same), 「ほぼ 毎日」 (nearly every day)."
+      "zh": "线索：「これで」+ 划线的「おしまい」，是到这里结束，对应「終わり」。\n词义：「おしまい」＝结束、完了，口语，常说「今日は これで おしまい」「もう おしまいだ」。",
+      "en": "Clue: 「これで」 + the underlined 「おしまい」 — it ends here, which is 「終わり」.\nMeaning: 「おしまい」 is the end, finished (casual): 「今日は これで おしまい」 (that's it for today), 「もう おしまいだ」 (it's all over)."
     },
     "wrong": [
       {
-        "zh": "「全部」是全部，「ほぼ」是“差不多全部”，还剩一点。",
-        "en": "「全部」 is \"all of it\"; 「ほぼ」 is \"almost all\", with a little left."
-      },
-      null,
-      {
-        "zh": "「半分」是一半，和“几乎”差得远。",
-        "en": "「半分」 is \"half\", far from \"almost\"."
+        "zh": "「始まり」是开始，和「おしまい」相反。",
+        "en": "「始まり」 is the beginning, the opposite of 「おしまい」."
       },
       {
-        "zh": "「すでに」是“已经”，说的是时间，不表示“差不多”。",
-        "en": "「すでに」 is \"already\", about time, not \"almost\"."
-      }
+        "zh": "「半分」是一半，「おしまい」是全部结束。",
+        "en": "「半分」 is half; 「おしまい」 is completely over."
+      },
+      {
+        "zh": "「休み」是休息、放假，课之后还可能继续；「おしまい」是结束。",
+        "en": "「休み」 is a break — the class could continue after it; 「おしまい」 is the end."
+      },
+      null
     ]
   },
   {
-    "id": "n3-mg-405",
-    "rev": 2,
-    "type": "iikae",
-    "difficulty": 2,
-    "stem": "一日中 歩いて、<<くたくただ>>。",
-    "options": [
-      "わくわくして いる",
-      "おなかが すいて いる",
-      "とても 疲れて いる",
-      "のどが かわいて いる"
-    ],
-    "answer": 2,
-    "tr": {
-      "zh": "走了一整天，累得筋疲力尽。",
-      "en": "I walked all day and I'm worn out."
-    },
-    "why": {
-      "zh": "线索：「一日中 歩いて」，划线的「くたくただ」是累得筋疲力尽，对应「とても 疲れて いる」。\n词义：「くたくた」＝累得精疲力尽、浑身没劲，常说「くたくたに 疲れる」「仕事で くたくただ」。",
-      "en": "Clue: 「一日中 歩いて」, and the underlined 「くたくただ」 is being worn out, which is 「とても 疲れて いる」.\nMeaning: 「くたくた」 is exhausted, dead tired: 「くたくたに 疲れる」 (get completely worn out), 「仕事で くたくただ」 (be shattered from work)."
-    },
-    "wrong": [
-      {
-        "zh": "「わくわく」是兴奋、期待，不是累。",
-        "en": "「わくわく」 is excited, not tired."
-      },
-      {
-        "zh": "“肚子饿”是「おなかが すく」，「くたくた」说的是累。",
-        "en": "Being hungry is 「おなかが すく」; 「くたくた」 is about being tired."
-      },
-      null,
-      {
-        "zh": "“口渴”是「のどが かわく」，「くたくた」说的是累。",
-        "en": "Being thirsty is 「のどが かわく」; 「くたくた」 is about being tired."
-      }
-    ]
-  },
-  {
-    "id": "n3-mg-407",
-    "rev": 2,
+    "id": "n3-mg-431",
     "type": "iikae",
     "difficulty": 1,
-    "stem": "田中さんは 今日の 授業を <<欠席した>>。",
+    "stem": "兄は 少し <<短気>>だ。",
     "options": [
-      "予約した",
-      "休んだ",
-      "録音した",
-      "見学した"
+      "すぐ 泣く",
+      "すぐ 疲れる",
+      "すぐ 怒る",
+      "すぐ あきる"
     ],
-    "answer": 1,
+    "answer": 2,
     "tr": {
-      "zh": "田中今天的课缺席了。",
-      "en": "Tanaka was absent from today's class."
+      "zh": "哥哥脾气有点急。",
+      "en": "My brother is a bit short-tempered."
     },
     "why": {
-      "zh": "线索：划线的「欠席した」，对象是「今日の 授業」，就是没去上课，对应「休んだ」。\n词义：「欠席」（けっせき）＝缺席（课、会议等），常说「会議を 欠席する」「欠席の 連絡」；反义是「出席」（しゅっせき）。",
-      "en": "Clue: the underlined 「欠席した」 refers to 「今日の 授業」 — he didn't go to class, which is 「休んだ」.\nMeaning: 「欠席」 (けっせき) is being absent from a class or meeting: 「会議を 欠席する」 (miss a meeting), 「欠席の 連絡」 (notice of absence). The opposite is 「出席」 (しゅっせき)."
+      "zh": "线索：划线的「短気」是一个人的性格：没耐心、一点小事就发火，对应「すぐ 怒る」。\n词义：「短気」（たんき）＝性子急、脾气暴，常说「短気な 人」「短気を 起こす」，也说「気が 短い」。\n辨析：「すぐ あきる」是容易腻（「あきっぽい」），不是爱发火。",
+      "en": "Clue: the underlined 「短気」 is a personality trait — impatient, flaring up over little things — which is 「すぐ 怒る」.\nMeaning: 「短気」 (たんき) is short-tempered: 「短気な 人」 (a hot-tempered person), 「短気を 起こす」 (lose your temper); also 「気が 短い」.\nContrast: 「すぐ あきる」 is getting bored quickly (「あきっぽい」), not losing your temper."
     },
     "wrong": [
       {
-        "zh": "「予約した」是预约，和缺席无关。",
-        "en": "「予約した」 is booking, nothing to do with being absent."
+        "zh": "「すぐ 泣く」是爱哭，和脾气急不同。",
+        "en": "「すぐ 泣く」 is crying easily, not being short-tempered."
+      },
+      {
+        "zh": "「すぐ 疲れる」是容易累，说的是体力。",
+        "en": "「すぐ 疲れる」 is tiring easily — about stamina."
       },
       null,
       {
-        "zh": "「録音した」是把课录了下来，不表示没去上课。",
-        "en": "「録音した」 is recording the class, not missing it."
-      },
-      {
-        "zh": "「見学した」是去旁听、参观，人是去了的。",
-        "en": "「見学した」 is sitting in to observe — he was there."
+        "zh": "「すぐ あきる」是三分钟热度，不是爱发火。",
+        "en": "「すぐ あきる」 is losing interest quickly, not losing your temper."
       }
     ]
   },
   {
-    "id": "n3-mg-408",
-    "rev": 2,
+    "id": "n3-mg-432",
     "type": "iikae",
-    "refs": [
-      "lesson55#vocab"
-    ],
     "difficulty": 2,
-    "stem": "私は 人の 前で 話すのが <<苦手だ>>。",
+    "stem": "先生に 理由を 聞かれたが、彼は <<黙って いた>>。",
     "options": [
-      "習慣だ",
-      "初めてだ",
-      "上手では ない",
-      "楽しみだ"
+      "何も 言わなかった",
+      "大きな 声で 答えた",
+      "下を 向いて 泣いた",
+      "笑って ごまかした"
     ],
-    "answer": 2,
+    "answer": 0,
     "tr": {
-      "zh": "我不擅长在别人面前讲话。",
-      "en": "I'm not good at speaking in front of people."
+      "zh": "老师问他原因，他却一言不发。",
+      "en": "The teacher asked him why, but he said nothing."
     },
     "why": {
-      "zh": "线索：划线的「苦手だ」说的是「人の 前で 話す」这件事做不好，对应「上手では ない」。\n词义：「苦手」（にがて）＝不擅长；也可指不喜欢、怕（某人某物），常说「数学が 苦手だ」「辛い ものが 苦手だ」；反义是「得意」（とくい）。",
-      "en": "Clue: the underlined 「苦手だ」 says 「人の 前で 話す」 is something I'm bad at, which is 「上手では ない」.\nMeaning: 「苦手」 (にがて) is being poor at something, or disliking it: 「数学が 苦手だ」 (be bad at maths), 「辛い ものが 苦手だ」 (can't handle spicy food). The opposite is 「得意」 (とくい)."
+      "zh": "线索：「聞かれたが」后面是划线的「黙って いた」，被问了却不出声，对应「何も 言わなかった」。\n词义：「黙る」（だまる）＝沉默、不说话，常说「黙って 聞く」「急に 黙り込む」。",
+      "en": "Clue: after 「聞かれたが」 comes the underlined 「黙って いた」 — asked, but silent — which is 「何も 言わなかった」.\nMeaning: 「黙る」 (だまる) is to fall silent: 「黙って 聞く」 (listen in silence), 「急に 黙り込む」 (suddenly go quiet)."
     },
     "wrong": [
-      {
-        "zh": "「習慣だ」是“是习惯”，说的是经常做，不是擅不擅长。",
-        "en": "「習慣だ」 is \"it's a habit\", about doing it often, not skill."
-      },
-      {
-        "zh": "「初めてだ」是“第一次”，不表示不擅长。",
-        "en": "「初めてだ」 is \"it's my first time\", not \"I'm bad at it\"."
-      },
       null,
       {
-        "zh": "「楽しみだ」是期待，不是不擅长。",
-        "en": "「楽しみだ」 is looking forward to it, not being bad at it."
+        "zh": "「大きな 声で 答えた」是回答了，和不说话相反。",
+        "en": "「大きな 声で 答えた」 means he answered — the opposite of keeping quiet."
+      },
+      {
+        "zh": "「黙る」只是不说话，不包含哭。",
+        "en": "「黙る」 is just not speaking; it says nothing about crying."
+      },
+      {
+        "zh": "「笑って ごまかした」是笑着搪塞，不是沉默。",
+        "en": "「笑って ごまかした」 is laughing it off, not silence."
       }
     ]
   },
@@ -265,158 +253,145 @@
     ]
   },
   {
-    "id": "n3-mg-410",
-    "rev": 2,
+    "id": "n3-mg-433",
     "type": "iikae",
     "difficulty": 2,
-    "stem": "寝坊して、<<あわてて>> 家を 出た。",
+    "stem": "一日中 立って 仕事を して、<<くたびれた>>。",
     "options": [
-      "こっそり",
-      "黙って",
-      "急いで",
-      "一人で"
-    ],
-    "answer": 2,
-    "tr": {
-      "zh": "睡过头了，慌慌张张地出了门。",
-      "en": "I overslept and rushed out of the house."
-    },
-    "why": {
-      "zh": "线索：「寝坊して」，划线的「あわてて」是慌慌张张、急急忙忙地出门，对应「急いで」。\n词义：「慌てる」（あわてる）＝（因意外、着急）慌张，「慌てて 〜する」＝急忙去做，常说「慌てて 電話を かける」「慌てないで ください」。「急ぐ」是加快动作，「慌てる」还带着慌乱。",
-      "en": "Clue: 「寝坊して」, and the underlined 「あわてて」 is leaving in a flustered rush, which is 「急いで」.\nMeaning: 「慌てる」 (あわてる) is getting flustered from surprise or hurry; 「慌てて 〜する」 is doing it in a rush: 「慌てて 電話を かける」 (hurriedly phone), 「慌てないで ください」 (don't panic). 「急ぐ」 is just going faster; 「慌てる」 adds being flustered."
-    },
-    "wrong": [
-      {
-        "zh": "「こっそり」是悄悄地，不让人发现，不是匆忙。",
-        "en": "「こっそり」 is secretly, without being noticed — not in a hurry."
-      },
-      {
-        "zh": "「黙って」是不说话、不打招呼，不是匆忙。",
-        "en": "「黙って」 is without a word, not in a hurry."
-      },
-      null,
-      {
-        "zh": "「一人で」是一个人，说的是和谁，不是快慢。",
-        "en": "「一人で」 is \"alone\", about who with, not how fast."
-      }
-    ]
-  },
-  {
-    "id": "n3-mg-411",
-    "rev": 2,
-    "type": "iikae",
-    "refs": [
-      "lesson42#vocab"
-    ],
-    "difficulty": 2,
-    "stem": "祖父の 病気が <<回復した>>。",
-    "options": [
-      "見つかった",
-      "よく なった",
-      "変わった",
-      "分かった"
-    ],
-    "answer": 1,
-    "tr": {
-      "zh": "祖父的病好了。",
-      "en": "My grandfather has recovered from his illness."
-    },
-    "why": {
-      "zh": "线索：划线的「回復した」，主语是「祖父の 病気」，就是病情好转了，对应「よく なった」。\n词义：「回復」（かいふく）＝（健康、状态）恢复，常说「体力が 回復する」「景気が 回復する」。",
-      "en": "Clue: the underlined 「回復した」 has 「祖父の 病気」 as subject — the illness got better, which is 「よく なった」.\nMeaning: 「回復」 (かいふく) is recovering, returning to a good state: 「体力が 回復する」 (get your strength back), 「景気が 回復する」 (the economy recovers)."
-    },
-    "wrong": [
-      {
-        "zh": "「見つかった」是（病）被查出来了，不是好了。",
-        "en": "「見つかった」 is that the illness was found, not that it got better."
-      },
-      null,
-      {
-        "zh": "「変わった」只是变了，不一定是变好。",
-        "en": "「変わった」 just means it changed, not necessarily for the better."
-      },
-      {
-        "zh": "「分かった」是知道了（是什么病），不是好了。",
-        "en": "「分かった」 is that they found out what it was, not that it got better."
-      }
-    ]
-  },
-  {
-    "id": "n3-mg-412",
-    "rev": 2,
-    "type": "iikae",
-    "refs": [
-      "lesson45#vocab"
-    ],
-    "difficulty": 2,
-    "stem": "試験は <<予想より>> 簡単だった。",
-    "options": [
-      "思って いたより",
-      "去年の 試験より",
-      "先生の 話より",
-      "教科書の 問題より"
+      "疲れた",
+      "困った",
+      "飽きた",
+      "慣れた"
     ],
     "answer": 0,
     "tr": {
-      "zh": "考试比预想的简单。",
-      "en": "The exam was easier than I expected."
+      "zh": "站着工作了一整天，累坏了。",
+      "en": "I worked on my feet all day and I'm worn out."
     },
     "why": {
-      "zh": "线索：划线的「予想より」是拿考试和自己事先的想法比较，对应「思って いたより」。\n词义：「予想」（よそう）＝事先的推测、预想，常说「予想が 当たる」「予想が 外れる」。",
-      "en": "Clue: the underlined 「予想より」 compares the exam with what I'd thought beforehand, which is 「思って いたより」.\nMeaning: 「予想」 (よそう) is an expectation or prediction: 「予想が 当たる」 (a prediction comes true), 「予想が 外れる」 (it turns out wrong)."
+      "zh": "线索：「一日中 立って 仕事を して」之后划线的「くたびれた」，是身体累了，对应「疲れた」。\n词义：「くたびれる」＝疲劳、累，也可指东西用旧（「くたびれた 靴」），常说「歩き くたびれる」。\n辨析：「飽きる」是腻了、没兴趣，不是身体累。",
+      "en": "Clue: after 「一日中 立って 仕事を して」 comes the underlined 「くたびれた」 — physically tired, which is 「疲れた」.\nMeaning: 「くたびれる」 is to get tired, also to get worn (「くたびれた 靴」 worn-out shoes): 「歩き くたびれる」 (be tired from walking).\nContrast: 「飽きる」 is to get bored, not to get physically tired."
     },
     "wrong": [
       null,
       {
-        "zh": "「去年の試験より」是和去年的考试比，不是和自己的预想比。",
-        "en": "「去年の 試験より」 compares with last year's exam, not with what you expected."
+        "zh": "「困った」是为难，不是累。",
+        "en": "「困った」 is being in trouble, not tired."
       },
       {
-        "zh": "「先生の話より」是和老师说的比，「予想」是自己事先的想法。",
-        "en": "「先生の 話より」 compares with what the teacher said; 「予想」 is your own expectation."
+        "zh": "「飽きた」是腻了，说的是兴趣，不是体力。",
+        "en": "「飽きた」 is bored — about interest, not stamina."
       },
       {
-        "zh": "「教科書の問題より」是和课本题比，不是和预想比。",
-        "en": "「教科書の 問題より」 compares with textbook questions, not with your expectation."
+        "zh": "「慣れた」是习惯了，和累意思相反。",
+        "en": "「慣れた」 is having got used to it, almost the opposite."
       }
     ]
   },
   {
-    "id": "n3-mg-413",
-    "rev": 2,
+    "id": "n3-mg-434",
     "type": "iikae",
-    "refs": [
-      "lesson41#vocab"
-    ],
     "difficulty": 2,
-    "stem": "この 店では、学生は <<割引に なる>>。",
+    "stem": "人気の パンは 昼前に <<売り切れた>>。",
     "options": [
-      "予約が いる",
-      "早く 入れる",
-      "ポイントが もらえる",
-      "安く 買える"
+      "安く なった",
+      "新しく 並んだ",
+      "全部 売れた",
+      "焼き上がった"
     ],
-    "answer": 3,
+    "answer": 2,
     "tr": {
-      "zh": "这家店学生可以打折。",
-      "en": "At this shop, students get a discount."
+      "zh": "受欢迎的面包中午前就卖光了。",
+      "en": "The popular bread sold out before noon."
     },
     "why": {
-      "zh": "线索：划线的「割引に なる」，说的是「学生」买东西能打折，价格便宜，对应「安く 買える」。\n词义：「割引」（わりびき）＝打折、减价，常说「学生割引」「二割引」（打八折）。",
-      "en": "Clue: the underlined 「割引に なる」 says 「学生」 get a discount, so they pay less, which is 「安く 買える」.\nMeaning: 「割引」 (わりびき) is a discount: 「学生割引」 (student discount), 「二割引」 (20% off)."
+      "zh": "线索：划线的「売り切れた」=「売る」+「切れる」（完、尽），卖到一个不剩，对应「全部 売れた」。\n词义：「売り切れる」（うりきれる）＝卖光，常说「チケットが 売り切れる」，名词「売り切れ」。",
+      "en": "Clue: the underlined 「売り切れた」 is 「売る」 + 「切れる」 (run out) — sold until none were left, which is 「全部 売れた」.\nMeaning: 「売り切れる」 (うりきれる) is to sell out: 「チケットが 売り切れる」 (tickets sell out); noun 「売り切れ」."
     },
     "wrong": [
       {
-        "zh": "「予約が いる」是需要预约，和价格无关。",
-        "en": "「予約が いる」 is needing a booking, nothing to do with price."
+        "zh": "「安く なった」是降价，不是卖光。",
+        "en": "「安く なった」 is getting cheaper, not selling out."
       },
       {
-        "zh": "「早く 入れる」是能早点进店，和价格无关。",
-        "en": "「早く 入れる」 is getting in early, nothing to do with price."
+        "zh": "「新しく 並んだ」是新摆上架，和卖光相反。",
+        "en": "「新しく 並んだ」 is newly put out — the opposite of selling out."
+      },
+      null,
+      {
+        "zh": "「焼き上がった」是烤好了，没说卖掉。",
+        "en": "「焼き上がった」 is finished baking; nothing about being sold."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-435",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "この 先は 道が <<カーブして いる>>ので、気を つけて ください。",
+    "options": [
+      "狭く なって いる",
+      "曲がって いる",
+      "坂に なって いる",
+      "込んで いる"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "前面道路有弯，请小心。",
+      "en": "The road bends ahead, so please be careful."
+    },
+    "why": {
+      "zh": "线索：划线的「カーブして いる」说的是道路的形状：路是弯的，对应「曲がって いる」。\n词义：「カーブ」（curve）＝弯道、弯曲，常说「急な カーブ」「道が カーブする」。",
+      "en": "Clue: the underlined 「カーブして いる」 is about the road's shape — it bends, which is 「曲がって いる」.\nMeaning: 「カーブ」 (curve) is a bend: 「急な カーブ」 (a sharp bend), 「道が カーブする」 (the road curves)."
+    },
+    "wrong": [
+      {
+        "zh": "「狭く なって いる」是路变窄，不是拐弯。",
+        "en": "「狭く なって いる」 is the road narrowing, not bending."
+      },
+      null,
+      {
+        "zh": "「坂に なって いる」是有坡，说的是上下，不是左右弯。",
+        "en": "「坂に なって いる」 is a slope — up and down, not a bend."
       },
       {
-        "zh": "「ポイントが もらえる」是能积分，价格本身没有变便宜。",
-        "en": "「ポイントが もらえる」 is earning points; the price itself doesn't go down."
+        "zh": "「込んで いる」是拥堵，说的是车多，不是路的形状。",
+        "en": "「込んで いる」 is congested — about traffic, not the road's shape."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-436",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "この 店では、注文した 料理を <<配達して もらえる>>。",
+    "options": [
+      "温めて もらえる",
+      "安く して もらえる",
+      "選んで もらえる",
+      "届けて もらえる"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "这家店可以把点的菜送上门。",
+      "en": "This restaurant will deliver the food you order."
+    },
+    "why": {
+      "zh": "线索：划线的「配達して もらえる」是店里把东西送到客人那里，对应「届けて もらえる」。\n词义：「配達」（はいたつ）＝投递、送货，常说「新聞を 配達する」「配達料」。",
+      "en": "Clue: the underlined 「配達して もらえる」 is the shop bringing the order to you, which is 「届けて もらえる」.\nMeaning: 「配達」 (はいたつ) is delivery: 「新聞を 配達する」 (deliver newspapers), 「配達料」 (delivery charge)."
+    },
+    "wrong": [
+      {
+        "zh": "「温めて もらえる」是帮忙加热，不是送过来。",
+        "en": "「温めて もらえる」 is having it heated up, not delivered."
+      },
+      {
+        "zh": "「安く して もらえる」是打折，和送货无关。",
+        "en": "「安く して もらえる」 is getting a discount, nothing to do with delivery."
+      },
+      {
+        "zh": "「選んで もらえる」是帮忙挑选，不是送货。",
+        "en": "「選んで もらえる」 is having it chosen for you, not delivered."
       },
       null
     ]
@@ -613,39 +588,38 @@
     ]
   },
   {
-    "id": "n3-mg-420",
-    "rev": 2,
+    "id": "n3-mg-426",
     "type": "iikae",
     "difficulty": 1,
-    "stem": "子どもたちは <<いっせいに>> 手を 上げた。",
+    "stem": "この 車の <<欠点>>は、ガソリンを たくさん 使う ことだ。",
     "options": [
-      "まっすぐ",
-      "同時に",
-      "元気よく",
-      "静かに"
+      "便利な ところ",
+      "新しい ところ",
+      "悪い ところ",
+      "珍しい ところ"
     ],
-    "answer": 1,
+    "answer": 2,
     "tr": {
-      "zh": "孩子们一齐举起了手。",
-      "en": "The children all raised their hands at once."
+      "zh": "这辆车的缺点是很费油。",
+      "en": "This car's weak point is that it uses a lot of petrol."
     },
     "why": {
-      "zh": "线索：划线的「いっせいに」，主语是「子どもたち」，大家同一时间「手を 上げた」，对应「同時に」。\n词义：「いっせいに」（一斉に）＝许多人或物同时一起，常说「いっせいに 立ち上がる」「いっせいに 走り出す」。",
-      "en": "Clue: the underlined 「いっせいに」 has 「子どもたち」 raising their hands at the same moment, which is 「同時に」.\nMeaning: 「いっせいに」 (一斉に) is many people or things all at once: 「いっせいに 立ち上がる」 (all stand up together), 「いっせいに 走り出す」 (all start running)."
+      "zh": "线索：划线的「欠点」说的是「ガソリンを たくさん 使う」这种不好的地方，对应「悪い ところ」。\n词义：「欠点」（けってん）＝缺点、不足之处，常说「欠点が ある」「欠点を 直す」。\n辨析：反义词是「長所」（優点）；「短所」和「欠点」意思相近。",
+      "en": "Clue: the underlined 「欠点」 is the bad side — using a lot of petrol — which is 「悪い ところ」.\nMeaning: 「欠点」 (けってん) is a fault, weak point: 「欠点が ある」 (have a flaw), 「欠点を 直す」 (fix a flaw).\nContrast: its opposite is 「長所」 (strong point); 「短所」 is close to 「欠点」."
     },
     "wrong": [
       {
-        "zh": "「まっすぐ」是笔直地，说的是举手的样子，不是同时。",
-        "en": "「まっすぐ」 is \"straight up\", how the hands went up, not all at once."
+        "zh": "「便利な ところ」是方便之处，是优点，正好相反。",
+        "en": "「便利な ところ」 is a convenient point — a strength, the opposite."
+      },
+      {
+        "zh": "「新しい ところ」是新的地方，和好坏无关。",
+        "en": "「新しい ところ」 is what's new about it, nothing to do with good or bad."
       },
       null,
       {
-        "zh": "「元気よく」是有精神地，不表示同时。",
-        "en": "「元気よく」 is \"energetically\", not \"all at once\"."
-      },
-      {
-        "zh": "「静かに」是安静地，不表示同时。",
-        "en": "「静かに」 is \"quietly\", not \"all at once\"."
+        "zh": "「珍しい ところ」是少见的地方，不是缺点。",
+        "en": "「珍しい ところ」 is what's unusual, not a flaw."
       }
     ]
   },

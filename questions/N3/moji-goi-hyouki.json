@@ -39,38 +39,38 @@
     ]
   },
   {
-    "id": "n3-mg-202",
+    "id": "n3-mg-234",
     "type": "hyouki",
     "difficulty": 2,
-    "stem": "早起きの<<しゅうかん>>をつけたい。",
+    "stem": "犯人は警察官を見ると、すぐに<<にげた>>。",
     "options": [
-      "習慣",
-      "習貫",
-      "集慣",
-      "集貫"
+      "逃げた",
+      "兆げた",
+      "挑げた",
+      "跳げた"
     ],
     "answer": 0,
     "tr": {
-      "zh": "我想养成早起的习惯。",
-      "en": "I want to get into the habit of getting up early."
+      "zh": "犯人一看到警察，马上就逃跑了。",
+      "en": "The moment the criminal saw the police officer, he ran away."
     },
     "why": {
-      "zh": "「しゅうかん」（习惯）写作「習慣」，「慣」是竖心旁（「慣れる」的字）。",
-      "en": "しゅうかん (habit) is 「習慣」; 「慣」 has the heart radical, as in 「慣れる」."
+      "zh": "「にげる」（逃跑）写作「逃げる」，「兆」外面有走之旁。",
+      "en": "にげる (to run away) is 「逃げる」: 「兆」 inside the 辶 radical."
     },
     "wrong": [
       null,
       {
-        "zh": "「貫」少了竖心旁，是「貫く」（贯穿）的字。",
-        "en": "「貫」 lacks the heart radical; it's the kanji of 「貫く」 (pierce)."
+        "zh": "「兆」少了走之旁，是「兆し」（征兆）的字。",
+        "en": "「兆」 lacks the 辶 radical; it's the kanji of 「兆し」 (sign)."
       },
       {
-        "zh": "「集」是「集める」（收集）的字，不是学习的「習」。",
-        "en": "「集」 is the kanji of 「集める」 (gather), not 「習」 (learn)."
+        "zh": "「挑」是提手旁，是「挑戦」的字。",
+        "en": "「挑」 has the hand radical; it's the kanji of 「挑戦」."
       },
       {
-        "zh": "两个字都错：应是「習」和「慣」。",
-        "en": "Both kanji are wrong: it should be 「習」 and 「慣」."
+        "zh": "「跳」是足字旁，是「跳ぶ」（跳）的字。",
+        "en": "「跳」 has the foot radical; it's the kanji of 「跳ぶ」 (to jump)."
       }
     ]
   },
@@ -154,120 +154,110 @@
     ]
   },
   {
-    "id": "n3-mg-205",
+    "id": "n3-mg-235",
     "type": "hyouki",
-    "refs": [
-      "lesson41#vocab"
-    ],
     "difficulty": 2,
-    "stem": "ここで十分<<きゅうけい>>しましょう。",
+    "stem": "双子なので、顔だけでは兄と弟の<<くべつ>>がつかない。",
     "options": [
-      "休憩",
-      "体憩",
-      "休恵",
-      "休継"
+      "区別",
+      "区則",
+      "匹別",
+      "区列"
     ],
     "answer": 0,
     "tr": {
-      "zh": "在这里休息十分钟吧。",
-      "en": "Let's take a ten-minute break here."
+      "zh": "因为是双胞胎，光看脸分不出哥哥和弟弟。",
+      "en": "They're twins, so you can't tell the older from the younger by face alone."
     },
     "why": {
-      "zh": "「きゅうけい」（休息）写作「休憩」。",
-      "en": "きゅうけい (a break) is 「休憩」."
+      "zh": "「くべつ」（区别）写作「区別」：「区」+「別れる」的「別」。",
+      "en": "くべつ (distinction) is 「区別」: 「区」 + 「別」 of 「別れる」."
     },
     "wrong": [
       null,
       {
-        "zh": "「体」是「からだ」（身体），和「休」只差一横。",
-        "en": "「体」 is からだ (body) — one stroke different from 「休」."
+        "zh": "「則」左边是「貝」，是「規則」的字。",
+        "en": "「則」 has 貝 on the left; it's the kanji of 「規則」."
       },
       {
-        "zh": "「恵」读「けい／めぐむ」（恩惠），不是「憩」。",
-        "en": "「恵」 (けい, blessing) isn't 「憩」."
+        "zh": "「匹」是数动物的「匹」，和「区」形近。",
+        "en": "「匹」 is the counter for animals; it looks like 「区」."
       },
       {
-        "zh": "「継」读「けい」（继承），不是「憩」。",
-        "en": "「継」 (けい, succeed/inherit) isn't 「憩」."
+        "zh": "「列」是「行列」的字，和「別」形近但不是。",
+        "en": "「列」 is the kanji of 「行列」; it looks like 「別」 but isn't it."
       }
     ]
   },
   {
-    "id": "n3-mg-206",
+    "id": "n3-mg-236",
     "type": "hyouki",
-    "refs": [
-      "lesson46#vocab",
-      "lesson52#vocab"
-    ],
     "difficulty": 2,
-    "stem": "日本の<<ぎじゅつ>>は世界で注目されている。",
+    "stem": "次の交差点を<<うせつ>>すると、駅が見えます。",
     "options": [
-      "技術",
-      "枝術",
-      "技述",
-      "技衛"
+      "右折",
+      "左折",
+      "右析",
+      "石折"
     ],
     "answer": 0,
     "tr": {
-      "zh": "日本的技术受到世界关注。",
-      "en": "Japanese technology draws attention around the world."
+      "zh": "在下一个路口右转，就能看到车站。",
+      "en": "Turn right at the next intersection and you'll see the station."
     },
     "why": {
-      "zh": "「ぎじゅつ」（技术）写作「技術」：提手旁的「技」+「術」。",
-      "en": "ぎじゅつ (technology) is 「技術」: 「技」 with the hand radical + 「術」."
+      "zh": "「うせつ」（右转）写作「右折」：「右」+「折れる」的「折」。",
+      "en": "うせつ (right turn) is 「右折」: 「右」 + 「折」 of 「折れる」."
     },
     "wrong": [
       null,
       {
-        "zh": "「枝」是木字旁，读「えだ」（树枝）。",
-        "en": "「枝」 has the 木 radical: えだ (branch)."
+        "zh": "「左折」读「させつ」，是左转。",
+        "en": "「左折」 is させつ, a left turn."
       },
       {
-        "zh": "「述」读「じゅつ」但意思是叙述（「述べる」）。",
-        "en": "「述」 is also じゅつ but means 'state' (「述べる」)."
+        "zh": "「析」是木字旁，是「分析」的字。",
+        "en": "「析」 has the tree radical; it's the kanji of 「分析」."
       },
       {
-        "zh": "「衛」读「えい」（「衛生」），不是「術」。",
-        "en": "「衛」 is えい (「衛生」), not 「術」."
+        "zh": "「石」是石头的「石」，和「右」形近但不是这个字。",
+        "en": "「石」 is stone; it only looks like 「右」."
       }
     ]
   },
   {
-    "id": "n3-mg-207",
+    "id": "n3-mg-237",
     "type": "hyouki",
-    "refs": [
-      "lesson46#vocab"
-    ],
     "difficulty": 2,
-    "stem": "国の<<けいざい>>がよくなってきた。",
+    "stem": "兄は大学を出てから、ずっと銀行に<<つとめて>>いる。",
     "options": [
-      "経済",
-      "経剤",
-      "軽済",
-      "径済"
+      "勤めて",
+      "努めて",
+      "勧めて",
+      "動めて"
     ],
     "answer": 0,
     "tr": {
-      "zh": "国家经济好起来了。",
-      "en": "The country's economy has been improving."
+      "zh": "哥哥大学毕业后一直在银行工作。",
+      "en": "My brother has worked at a bank ever since he left university."
     },
     "why": {
-      "zh": "「けいざい」（经济）写作「経済」：绞丝旁的「経」+三点水的「済」。",
-      "en": "けいざい (economy) is 「経済」: 「経」 with the thread radical + 「済」 with water."
+      "zh": "在单位上班的「つとめる」写作「勤める」（「〜に 勤める」）。",
+      "en": "つとめる meaning to work for a company is 「勤める」 (「〜に 勤める」)."
     },
     "wrong": [
       null,
       {
-        "zh": "「剤」读「ざい」（药剂），是立刀旁，不是「済」。",
-        "en": "「剤」 (ざい, medicine) has the knife radical, not 「済」."
+        "zh": "「努める」也读「つとめる」，但意思是努力（「解決に 努める」），不是在银行上班。",
+        "en": "「努める」 is also つとめる but means to strive (「解決に 努める」), not to work at a bank."
       },
       {
-        "zh": "「軽」是车字旁，读「かるい」（轻）。",
-        "en": "「軽」 has the 車 radical: かるい (light)."
+        "zh": "「勧める」读「すすめる」，是劝、推荐。",
+        "en": "「勧める」 is すすめる, to recommend."
       },
       {
-        "zh": "「径」是双人旁，读「けい」（直径），不是「経」。",
-        "en": "「径」 (けい, diameter) has the 彳 radical, not 「経」."
+        "zh": "「動」是「動く」（うごく）的字，没有「動める」这个词。",
+        "en": "「動」 is the kanji of 「動く」; 「動める」 isn't a word."
       }
     ]
   },
@@ -350,159 +340,146 @@
     ]
   },
   {
-    "id": "n3-mg-210",
+    "id": "n3-mg-238",
     "type": "hyouki",
-    "refs": [
-      "lesson44#vocab"
-    ],
     "difficulty": 2,
-    "stem": "会議で新しい<<ていあん>>をした。",
+    "stem": "重い荷物を持ち上げたら、<<こし>>が痛くなった。",
     "options": [
-      "提案",
-      "堤案",
-      "提安",
-      "程案"
+      "腰",
+      "要",
+      "膝",
+      "腹"
     ],
     "answer": 0,
     "tr": {
-      "zh": "我在会上提出了新的方案。",
-      "en": "I made a new proposal at the meeting."
+      "zh": "搬起重行李后，腰疼了起来。",
+      "en": "After I lifted the heavy luggage, my lower back started to hurt."
     },
     "why": {
-      "zh": "「ていあん」（提案）写作「提案」：提手旁的「提」+「案」。",
-      "en": "ていあん (proposal) is 「提案」: 「提」 with the hand radical + 「案」."
+      "zh": "「こし」（腰）写作「腰」：月字旁 +「要」。",
+      "en": "こし (lower back) is 「腰」: the 月 radical + 「要」."
     },
     "wrong": [
       null,
       {
-        "zh": "「堤」是土字旁，读「つつみ」（堤坝）。",
-        "en": "「堤」 has the earth radical: つつみ (embankment)."
+        "zh": "「要」少了月字旁，是「必要」的字。",
+        "en": "「要」 lacks the 月 radical; it's the kanji of 「必要」."
       },
       {
-        "zh": "「安」少了下面的「木」，意思是便宜、安心。",
-        "en": "「安」 lacks the 木 at the bottom; it means cheap/calm."
+        "zh": "「膝」读「ひざ」，是膝盖。",
+        "en": "「膝」 is ひざ, the knee."
       },
       {
-        "zh": "「程」是禾字旁，读「てい」（程度），不是「提」。",
-        "en": "「程」 (てい, degree) has the 禾 radical, not 「提」."
+        "zh": "「腹」读「はら」，是肚子。",
+        "en": "「腹」 is はら, the belly."
       }
     ]
   },
   {
-    "id": "n3-mg-211",
+    "id": "n3-mg-239",
     "type": "hyouki",
-    "refs": [
-      "lesson44#vocab"
-    ],
     "difficulty": 1,
-    "stem": "どちらがいいか、自分で<<はんだん>>してください。",
+    "stem": "庭で肉や野菜を<<やいて>>食べた。",
     "options": [
-      "判断",
-      "判段",
-      "半断",
-      "判継"
+      "焼いて",
+      "暁いて",
+      "燃いて",
+      "焦いて"
     ],
     "answer": 0,
     "tr": {
-      "zh": "哪个好，请你自己判断。",
-      "en": "Please decide for yourself which is better."
+      "zh": "在院子里烤肉和蔬菜吃了。",
+      "en": "We grilled meat and vegetables in the garden and ate them."
     },
     "why": {
-      "zh": "「はんだん」（判断）写作「判断」。",
-      "en": "はんだん (judgement) is 「判断」."
+      "zh": "「やく」（烤、烧）写作「焼く」，火字旁。",
+      "en": "やく (to grill, burn) is 「焼く」, with the fire radical."
     },
     "wrong": [
       null,
       {
-        "zh": "「段」读「だん」（台阶、段落），不是「断」。",
-        "en": "「段」 (だん, step) isn't 「断」."
+        "zh": "「暁」是日字旁，是「暁」（拂晓）的字。",
+        "en": "「暁」 has the sun radical; it means dawn."
       },
       {
-        "zh": "「半」读「はん」（一半），少了立刀旁。",
-        "en": "「半」 (はん, half) lacks the knife radical."
+        "zh": "「燃」读「もえる」（「燃える」），没有「燃く」。",
+        "en": "「燃」 is read もえる (「燃える」); there is no 「燃く」."
       },
       {
-        "zh": "「継」读「けい」（继承），和「断」字形相近。",
-        "en": "「継」 (けい, inherit) only looks like 「断」."
+        "zh": "「焦」读「こげる」（「焦げる」，烧焦），不是「やく」。",
+        "en": "「焦」 is こげる (「焦げる」, to burn), not やく."
       }
     ]
   },
   {
-    "id": "n3-mg-212",
+    "id": "n3-mg-240",
     "type": "hyouki",
-    "refs": [
-      "lesson52#vocab",
-      "lesson56#vocab"
-    ],
     "difficulty": 1,
-    "stem": "<<しんごう>>が赤に変わった。",
+    "stem": "かぜをひいたので、駅前の<<やっきょく>>でマスクを買った。",
     "options": [
-      "信号",
-      "信合",
-      "伸号",
-      "信考"
+      "薬局",
+      "楽局",
+      "薬届",
+      "楽届"
     ],
     "answer": 0,
     "tr": {
-      "zh": "信号灯变红了。",
-      "en": "The traffic light turned red."
+      "zh": "感冒了，所以在车站前的药店买了口罩。",
+      "en": "I'd caught a cold, so I bought masks at the pharmacy in front of the station."
     },
     "why": {
-      "zh": "「しんごう」（信号）写作「信号」。",
-      "en": "しんごう (traffic light) is 「信号」."
+      "zh": "「やっきょく」（药店）写作「薬局」：草字头的「薬」+「局」。",
+      "en": "やっきょく (pharmacy) is 「薬局」: 「薬」 with the grass radical + 「局」."
     },
     "wrong": [
       null,
       {
-        "zh": "「合」读「ごう／あう」，不是「号」。",
-        "en": "「合」 (ごう / あう) isn't 「号」."
+        "zh": "「楽」少了草字头，是「楽しい」的字。",
+        "en": "「楽」 lacks the grass radical; it's the kanji of 「楽しい」."
       },
       {
-        "zh": "「伸」读「しん／のびる」（伸长），不是「信」。",
-        "en": "「伸」 (しん, stretch) isn't 「信」."
+        "zh": "「届」是「届く」的字，和「局」形近但不是。",
+        "en": "「届」 is the kanji of 「届く」; it looks like 「局」 but isn't it."
       },
       {
-        "zh": "「考」读「こう」（思考），不是「号」。",
-        "en": "「考」 (こう, think) isn't 「号」."
+        "zh": "两个字都错：应是「薬」和「局」。",
+        "en": "Both kanji are wrong: it should be 「薬」 and 「局」."
       }
     ]
   },
   {
-    "id": "n3-mg-213",
+    "id": "n3-mg-241",
     "type": "hyouki",
-    "refs": [
-      "lesson39#vocab"
-    ],
     "difficulty": 2,
-    "stem": "この仕事の<<じょうけん>>はとてもいい。",
+    "stem": "残った料理を<<ようき>>に入れて、冷蔵庫にしまった。",
     "options": [
-      "条件",
-      "条建",
-      "条健",
-      "案件"
+      "容器",
+      "溶器",
+      "容機",
+      "用器"
     ],
     "answer": 0,
     "tr": {
-      "zh": "这份工作的条件非常好。",
-      "en": "This job has very good conditions."
+      "zh": "把剩菜装进容器，放进了冰箱。",
+      "en": "I put the leftovers in a container and put it in the fridge."
     },
     "why": {
-      "zh": "「じょうけん」（条件）写作「条件」，「件」是单人旁加「牛」。",
-      "en": "じょうけん (conditions) is 「条件」; 「件」 is the person radical + 牛."
+      "zh": "「ようき」（容器）写作「容器」：「内容」的「容」+「食器」的「器」。",
+      "en": "ようき (container) is 「容器」: 「容」 of 「内容」 + 「器」 of 「食器」."
     },
     "wrong": [
       null,
       {
-        "zh": "「建」读「けん」（建造），不是「件」。",
-        "en": "「建」 (けん, build) isn't 「件」."
+        "zh": "「溶」也读「よう」，是「溶ける」（溶化）的字。",
+        "en": "「溶」 is also よう, the kanji of 「溶ける」 (to melt)."
       },
       {
-        "zh": "「健」读「けん」（健康），不是「件」。",
-        "en": "「健」 (けん, health) isn't 「件」."
+        "zh": "「機」也读「き」，是「機械」的字，装东西的器物用「器」。",
+        "en": "「機」 is also き, as in 「機械」; a vessel is 「器」."
       },
       {
-        "zh": "「案件」读「あんけん」（案子），不是「じょうけん」。",
-        "en": "「案件」 is あんけん (a matter), not じょうけん."
+        "zh": "「用」也读「よう」，但「用器」不是表示容器的词。",
+        "en": "「用」 is also よう, but 「用器」 isn't the word for container."
       }
     ]
   },
@@ -585,80 +562,74 @@
     ]
   },
   {
-    "id": "n3-mg-216",
+    "id": "n3-mg-231",
     "type": "hyouki",
-    "refs": [
-      "lesson51#vocab"
-    ],
     "difficulty": 1,
-    "stem": "私の<<しゅみ>>は写真を撮ることです。",
+    "stem": "父は毎晩九時ごろ<<きたく>>する。",
     "options": [
-      "趣味",
-      "趣未",
-      "起味",
-      "趣妹"
+      "帰宅",
+      "帰宇",
+      "掃宅",
+      "帰託"
     ],
     "answer": 0,
     "tr": {
-      "zh": "我的爱好是拍照。",
-      "en": "My hobby is taking photos."
+      "zh": "父亲每天晚上九点左右回家。",
+      "en": "My father gets home around nine every evening."
     },
     "why": {
-      "zh": "「しゅみ」（爱好）写作「趣味」，「味」是口字旁。",
-      "en": "しゅみ (hobby) is 「趣味」; 「味」 has the 口 radical."
+      "zh": "「きたく」（回家）写作「帰宅」：「帰る」的「帰」+「住宅」的「宅」。",
+      "en": "きたく (getting home) is 「帰宅」: 「帰」 of 「帰る」 + 「宅」 of 「住宅」."
     },
     "wrong": [
       null,
       {
-        "zh": "「未」少了口字旁，读「み」（未来）。",
-        "en": "「未」 lacks the 口 radical: み (not yet)."
+        "zh": "「宇」是「宇宙」的字，和「宅」形近但不同。",
+        "en": "「宇」 is the kanji of 「宇宙」; it looks like 「宅」 but isn't it."
       },
       {
-        "zh": "「起」读「き／おきる」（起床），不是「趣」。",
-        "en": "「起」 (き, get up) isn't 「趣」."
+        "zh": "「掃」是提手旁，是「掃除」的字。",
+        "en": "「掃」 has the hand radical; it's the kanji of 「掃除」."
       },
       {
-        "zh": "「妹」是女字旁，读「いもうと」（妹妹）。",
-        "en": "「妹」 has the 女 radical: いもうと (younger sister)."
+        "zh": "「託」也读「たく」，但是委托的意思（「託す」），不是住宅的「宅」。",
+        "en": "「託」 is also read たく but means entrust (「託す」), not 「宅」 (home)."
       }
     ]
   },
   {
-    "id": "n3-mg-217",
+    "id": "n3-mg-242",
     "type": "hyouki",
-    "refs": [
-      "lesson51#vocab"
-    ],
     "difficulty": 2,
-    "stem": "<<こうきゅう>>なレストランで食事をした。",
+    "stem": "夜になると、急に<<ひえて>>きた。",
     "options": [
-      "高級",
-      "高急",
-      "高吸",
-      "高組"
+      "冷えて",
+      "令えて",
+      "寒えて",
+      "氷えて"
     ],
     "answer": 0,
     "tr": {
-      "zh": "在高级餐厅吃了饭。",
-      "en": "We ate at an upscale restaurant."
+      "zh": "一到晚上，天气突然变冷了。",
+      "en": "Once night fell, it suddenly turned cold."
     },
     "why": {
-      "zh": "「こうきゅう」（高级）写作「高級」，「級」是绞丝旁（「上級」的字）。",
-      "en": "こうきゅう (high-class) is 「高級」; 「級」 has the thread radical, as in 「上級」."
+      "zh": "「ひえる」（变凉、变冷）写作「冷える」，两点水旁的「冷」，也是「冷たい」的字。",
+      "en": "ひえる (to get cold) is 「冷える」 — 「冷」 with the ice radical, as in 「冷たい」."
     },
     "wrong": [
       null,
       {
-        "zh": "「急」读「きゅう」（急），不是「級」。",
-        "en": "「急」 (きゅう, hurry) isn't 「級」."
+        "zh": "「令」少了两点水，是「命令」的字。",
+        "en": "「令」 lacks the ice radical; it's the kanji of 「命令」."
       },
       {
-        "zh": "「吸」是口字旁，读「すう」（吸）。",
-        "en": "「吸」 has the 口 radical: すう (breathe in)."
+        "zh": "「寒」读「さむい」（「寒い」），没有「寒える」。",
+        "en": "「寒」 is read さむい (「寒い」); there is no 「寒える」."
       },
       {
-        "zh": "「組」也是绞丝旁，读「くみ」（組む），不是「級」。",
-        "en": "「組」 also has the thread radical but is くみ (組む), not 「級」."
+        "zh": "「氷」读「こおり」（冰），不是「ひえる」。",
+        "en": "「氷」 is こおり (ice), not ひえる."
       }
     ]
   },
@@ -1053,76 +1024,74 @@
     ]
   },
   {
-    "id": "n3-mg-228",
-    "rev": 2,
+    "id": "n3-mg-232",
     "type": "hyouki",
     "difficulty": 1,
-    "stem": "この川は流れが速くて<<きけん>>なので、泳がないでください。",
+    "stem": "日本では、家の中で靴を脱ぐのが<<いっぱんてき>>だ。",
     "options": [
-      "危険",
-      "危検",
-      "危験",
-      "気険"
+      "一般的",
+      "一船的",
+      "一版的",
+      "一般敵"
     ],
     "answer": 0,
     "tr": {
-      "zh": "这条河水流很急，很危险，请不要游泳。",
-      "en": "The current in this river is fast and dangerous, so please don't swim."
+      "zh": "在日本，进屋脱鞋是很普遍的。",
+      "en": "In Japan it's normal to take your shoes off indoors."
     },
     "why": {
-      "zh": "「きけん」（危险）写作「危険」：「険」是左耳旁（阝），“险”的意思。",
-      "en": "きけん (danger) is 「危険」: 「険」 has the 阝 radical on the left and means 'steep, risky'."
+      "zh": "「いっぱんてき」（一般、普遍的）写作「一般的」，「般」是舟字旁。",
+      "en": "いっぱんてき (general, common) is 「一般的」; 「般」 has the 舟 radical."
     },
     "wrong": [
       null,
       {
-        "zh": "「検」是木字旁，是「検査」（检查）的检，读音相同但意思不同。",
-        "en": "「検」 has the tree radical; it's the 'check' of 「検査」 — same sound, different meaning."
+        "zh": "「船」是「ふね」（船），和「般」形近，但不是这个字。",
+        "en": "「船」 is ship; it looks like 「般」 but isn't it."
       },
       {
-        "zh": "「験」是马字旁，是「試験」「経験」的验，读音相同但意思不同。",
-        "en": "「験」 has the horse radical; it's the 「験」 of 「試験」「経験」 — same sound, different meaning."
+        "zh": "「版」也读「はん」，是「出版」的字，不是「般」。",
+        "en": "「版」 is also read はん, as in 「出版」, but it isn't 「般」."
       },
       {
-        "zh": "「気」读「き」，但“危险”的「き」是「危」。",
-        "en": "「気」 is read き, but the き of 'danger' is 「危」."
+        "zh": "「敵」也读「てき」，是敌人的意思；后缀「〜的」用「的」。",
+        "en": "「敵」 is also read てき but means enemy; the suffix 〜てき is 「的」."
       }
     ]
   },
   {
-    "id": "n3-mg-229",
-    "rev": 2,
+    "id": "n3-mg-233",
     "type": "hyouki",
     "difficulty": 1,
-    "stem": "電気代を<<せつやく>>するために、エアコンの温度を一度上げた。",
+    "stem": "使い終わったお皿は、ここに<<かさねて>>置いてください。",
     "options": [
-      "節約",
-      "節訳",
-      "説約",
-      "説訳"
+      "重ねて",
+      "量ねて",
+      "種ねて",
+      "童ねて"
     ],
     "answer": 0,
     "tr": {
-      "zh": "为了节省电费，把空调温度调高了一度。",
-      "en": "To save on electricity, I turned the air conditioner up by one degree."
+      "zh": "用完的盘子请叠起来放在这里。",
+      "en": "Please stack the plates here when you've finished with them."
     },
     "why": {
-      "zh": "「せつやく」（节约）写作「節約」：「節」是竹字头，「約」是绞丝旁。",
-      "en": "せつやく (saving) is 「節約」: 「節」 has the bamboo radical and 「約」 the thread radical."
+      "zh": "「かさねる」（叠放、重复）写作「重ねる」，就是「重い」的「重」。",
+      "en": "かさねる (to stack, pile up) is 「重ねる」, the 「重」 of 「重い」."
     },
     "wrong": [
       null,
       {
-        "zh": "「訳」是言字旁，读「やく」（翻訳），但“节约”的「やく」是「約」。",
-        "en": "「訳」 has the speech radical (翻訳); the やく of 'saving' is 「約」."
+        "zh": "「量」上面多了「日」，是「量る」（称量）的字。",
+        "en": "「量」 has an extra 日 on top; it's the kanji of 「量る」 (to weigh)."
       },
       {
-        "zh": "「説」是言字旁，读「せつ」（説明），但“节约”的「せつ」是「節」。",
-        "en": "「説」 has the speech radical (説明); the せつ of 'saving' is 「節」."
+        "zh": "「種」多了禾字旁，是「種類」的字。",
+        "en": "「種」 has the grain radical; it's the kanji of 「種類」."
       },
       {
-        "zh": "两个字都错：应是「節」和「約」。",
-        "en": "Both kanji are wrong: it should be 「節」 and 「約」."
+        "zh": "「童」上面是「立」，是「童話」的字。",
+        "en": "「童」 has 立 on top; it's the kanji of 「童話」."
       }
     ]
   },
@@ -1160,6 +1129,78 @@
       {
         "zh": "「置」读「おく」（置く），只是含有「直」。",
         "en": "「置」 is read おく (置く); it only contains 「直」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-243",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "割れやすいので、新聞紙で<<つつんで>>箱に入れた。",
+    "options": [
+      "包んで",
+      "抱んで",
+      "泡んで",
+      "砲んで"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "因为容易碎，所以用报纸包好放进了箱子。",
+      "en": "It breaks easily, so I wrapped it in newspaper and put it in the box."
+    },
+    "why": {
+      "zh": "「つつむ」（包、裹）写作「包む」，就是「包」本身，没有偏旁。",
+      "en": "つつむ (to wrap) is 「包む」 — 「包」 on its own, with no radical."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「抱」是提手旁，读「だく」（「抱く」，抱）。",
+        "en": "「抱」 has the hand radical; it's だく (「抱く」, to hug)."
+      },
+      {
+        "zh": "「泡」是三点水，是「泡」（泡沫）的字。",
+        "en": "「泡」 has the water radical; it means bubble."
+      },
+      {
+        "zh": "「砲」是石字旁，是「大砲」的字。",
+        "en": "「砲」 has the stone radical; it's the kanji of 「大砲」 (cannon)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-244",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "信号が青になってから、道路を<<おうだん>>してください。",
+    "options": [
+      "横断",
+      "黄断",
+      "横段",
+      "構断"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "请等信号灯变绿以后再过马路。",
+      "en": "Please wait until the light turns green before crossing the road."
+    },
+    "why": {
+      "zh": "「おうだん」（横穿）写作「横断」：木字旁的「横」+「断る」的「断」。",
+      "en": "おうだん (crossing) is 「横断」: 「横」 with the tree radical + 「断」 of 「断る」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「黄」少了木字旁，是「黄色」的字。",
+        "en": "「黄」 lacks the tree radical; it's the kanji of 「黄色」."
+      },
+      {
+        "zh": "「段」也读「だん」，是「階段」的字，不是「断」。",
+        "en": "「段」 is also だん, as in 「階段」, but it isn't 「断」."
+      },
+      {
+        "zh": "「構」也是木字旁，但右边不同，是「構う」的字。",
+        "en": "「構」 also has the tree radical but a different right side; it's the kanji of 「構う」."
       }
     ]
   }

@@ -1,47 +1,44 @@
 [
   {
-    "id": "n4-mg-301",
+    "id": "n4-mg-348",
     "type": "bunmyaku",
-    "refs": [
-      "lesson23#vocab"
-    ],
     "difficulty": 1,
-    "stem": "らいしゅう きょうとへ りょこうに 行くので、ホテルの（　）を しました。",
+    "stem": "わたしが かいた さくぶんが きのうの しんぶんに （　）。",
     "options": [
-      "よやく",
-      "へんじ",
-      "そうだん",
-      "はっぴょう"
+      "のりました",
+      "つきました",
+      "とまりました",
+      "すみました"
     ],
     "okj": [
-      "予約",
-      "返事",
-      "相談",
-      "発表"
+      "載りました",
+      "着きました",
+      "止まりました",
+      "済みました"
     ],
-    "kj": "来週京都へ旅行に行くので、ホテルの予約をしました。",
+    "kj": "私が書いた作文が昨日の新聞に載りました。",
     "answer": 0,
     "tr": {
-      "zh": "下周要去京都旅行，所以预订了酒店。",
-      "en": "I'm going on a trip to Kyoto next week, so I booked a hotel."
+      "zh": "我写的作文登在了昨天的报纸上。",
+      "en": "An essay I wrote appeared in yesterday's newspaper."
     },
     "why": {
-      "zh": "线索：「りょこうに 行くので、ホテルの」，旅行前先把酒店定下来。\n词义：「よやく」（予約）＝预订、预约，常说「ホテルを よやくする」「レストランの よやくを する」。和人约好见面是「やくそく」。",
-      "en": "Clue: 「りょこうに 行くので、ホテルの」 — before a trip you secure a hotel room.\nMeaning: 「よやく」 (予約) is booking or reserving: 「ホテルを よやくする」, 「レストランの よやくを する」. Arranging to meet a person is 「やくそく」."
+      "zh": "线索：「さくぶんが しんぶんに」，文章出现在报纸上。\n词义：「のる」（載る）＝（文章、照片）登在报纸、杂志上：「しんぶんに のる」「ざっしに しゃしんが のる」；和坐车的「乗る」同音。",
+      "en": "Clue: 「さくぶんが しんぶんに」 — writing appearing in a paper.\nMeaning: 「のる」 (載る) is for an article or photo to appear in a newspaper or magazine: 「しんぶんに のる」, 「ざっしに しゃしんが のる」. It sounds the same as 「乗る」 (ride)."
     },
     "wrong": [
       null,
       {
-        "zh": "「へんじ」是回复，“做酒店的回复”说不通。",
-        "en": "「へんじ」 is a reply; \"doing the hotel's reply\" makes no sense."
+        "zh": "「つく」是到达，作文不能“到达报纸”。",
+        "en": "「つく」 is arriving; an essay doesn't arrive at a newspaper."
       },
       {
-        "zh": "「そうだん」是商量，不说「ホテルの そうだん」。",
-        "en": "「そうだん」 is talking something over; 「ホテルの そうだん」 isn't said."
+        "zh": "「とまる」是停下，不能用于登报。",
+        "en": "「とまる」 (stop) can't mean appearing in print."
       },
       {
-        "zh": "「はっぴょう」是发表、公布，和订酒店无关。",
-        "en": "「はっぴょう」 is an announcement or presentation — nothing to do with booking."
+        "zh": "「すむ」是事情办完，和登报无关。",
+        "en": "「すむ」 is finishing something, not appearing in print."
       }
     ]
   },
@@ -166,39 +163,45 @@
     ]
   },
   {
-    "id": "n4-mg-305",
+    "id": "n4-mg-341",
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "田中さんは まじめな 人ですから、（　）やくそくの 時間に 来ますよ。",
+    "stem": "この みちを まっすぐ 100メートルぐらい （　）と、みぎに ぎんこうが あります。",
     "options": [
-      "きっと",
-      "やっと",
-      "なるべく",
-      "はじめて"
+      "すすむ",
+      "まがる",
+      "わたる",
+      "とまる"
     ],
-    "kj": "田中さんはまじめな人ですから、きっと約束の時間に来ますよ。",
+    "okj": [
+      "進む",
+      "曲がる",
+      "渡る",
+      "止まる"
+    ],
+    "kj": "この道をまっすぐ100メートルぐらい進むと、右に銀行があります。",
     "answer": 0,
     "tr": {
-      "zh": "田中是个认真的人，一定会在约好的时间来的。",
-      "en": "Tanaka is a conscientious person, so he'll surely come at the agreed time."
+      "zh": "沿这条路一直往前走大约100米，右边就有一家银行。",
+      "en": "Go straight along this road for about 100 metres and there's a bank on the right."
     },
     "why": {
-      "zh": "线索：「まじめな 人ですから」，根据他的性格，有把握地推测他会准时来。\n词义：「きっと」＝肯定、准会，是说话人有把握的推测，常说「きっと 来ますよ」「あしたは きっと はれるでしょう」。",
-      "en": "Clue: 「まじめな 人ですから」 — from his character the speaker confidently predicts he'll be on time.\nMeaning: 「きっと」 means \"surely, I'm sure\", a confident guess: 「きっと 来ますよ」, 「あしたは きっと はれるでしょう」."
+      "zh": "线索：「まっすぐ 100メートルぐらい」，沿着路一直往前走一段距离。\n词义：「すすむ」（進む）＝向前走、前进：「まえへ すすむ」「まっすぐ すすむ」；也说工作进展：「しごとが すすむ」。",
+      "en": "Clue: 「まっすぐ 100メートルぐらい」 — going straight ahead for some distance.\nMeaning: 「すすむ」 (進む) is to move forward: 「まえへ すすむ」, 「まっすぐ すすむ」; also of work progressing: 「しごとが すすむ」."
     },
     "wrong": [
       null,
       {
-        "zh": "「やっと」是“终于”，用于等了很久才实现的事，和“因为他很认真”的推测不合。",
-        "en": "「やっと」 (at last) is for something long awaited; it doesn't fit a guess based on him being reliable."
+        "zh": "「まがる」是拐弯，和「まっすぐ」（一直）矛盾。",
+        "en": "「まがる」 (turn) contradicts 「まっすぐ」 (straight)."
       },
       {
-        "zh": "「なるべく」是“尽量”，用于说自己的努力或请求，不能推测别人会不会来。",
-        "en": "「なるべく」 (as far as possible) is for your own effort or a request, not a guess about someone else."
+        "zh": "「わたる」是横穿马路，不会“过马路100米”。",
+        "en": "「わたる」 is crossing a road, not going 100 metres along it."
       },
       {
-        "zh": "「はじめて」是“第一次”，“他很认真所以第一次准时来”说不通。",
-        "en": "「はじめて」 (for the first time) makes no sense with \"he's reliable, so…\"."
+        "zh": "「とまる」是停下，不能“停100米”。",
+        "en": "「とまる」 (stop) can't go with \"for 100 metres\"."
       }
     ]
   },
@@ -314,39 +317,45 @@
     ]
   },
   {
-    "id": "n4-mg-309",
+    "id": "n4-mg-342",
     "type": "bunmyaku",
     "difficulty": 1,
-    "stem": "ながい ドライブの 前に、車に（　）を 入れて おきました。",
+    "stem": "うちの いぬは とても （　）ので、しらない 人が 来ても ほえません。",
     "options": [
-      "ガソリン",
-      "ガラス",
-      "タイヤ",
-      "エンジン"
+      "おとなしい",
+      "うるさい",
+      "あぶない",
+      "いそがしい"
     ],
-    "kj": "長いドライブの前に、車にガソリンを入れておきました。",
+    "okj": [
+      null,
+      null,
+      "危ない",
+      "忙しい"
+    ],
+    "kj": "うちの犬はとてもおとなしいので、知らない人が来ても吠えません。",
     "answer": 0,
     "tr": {
-      "zh": "长途开车之前，先给车加好了油。",
-      "en": "Before the long drive, I filled the car up with petrol."
+      "zh": "我家的狗很乖，陌生人来了也不叫。",
+      "en": "Our dog is very quiet, so it doesn't bark even when strangers come."
     },
     "why": {
-      "zh": "线索：「ながい ドライブの 前に」「車に（　）を 入れて」，开远路前给车加的东西。\n词义：「ガソリン」＝汽油，加油说「ガソリンを 入れる」，加油站是「ガソリンスタンド」。",
-      "en": "Clue: 「ながい ドライブの 前に」 and 「車に（　）を 入れて」 — what you put in a car before a long drive.\nMeaning: 「ガソリン」 is petrol (gasoline); filling up is 「ガソリンを 入れる」, and a petrol station is a 「ガソリンスタンド」."
+      "zh": "线索：「しらない 人が 来ても ほえません」，说明狗性格安静、不吵闹。\n词义：「おとなしい」＝老实、安静、乖：「おとなしい いぬ」「おとなしい 子ども」；反义是「うるさい」。",
+      "en": "Clue: 「しらない 人が 来ても ほえません」 — the dog is calm and doesn't make a fuss.\nMeaning: 「おとなしい」 is quiet, gentle, well-behaved: 「おとなしい いぬ」, 「おとなしい 子ども」. The opposite is 「うるさい」."
     },
     "wrong": [
       null,
       {
-        "zh": "「ガラス」是玻璃，不能往车里“加”。",
-        "en": "「ガラス」 is glass — not something you put into a car."
+        "zh": "「うるさい」是吵，吵的狗会叫，和「ほえません」矛盾。",
+        "en": "「うるさい」 (noisy) contradicts 「ほえません」."
       },
       {
-        "zh": "「タイヤ」是装在车上的，说「タイヤを かえる」，不说“加进车里”。",
-        "en": "Tyres are fitted or changed (「タイヤを かえる」), not put into the car."
+        "zh": "「あぶない」（危险）的狗不是不叫的理由。",
+        "en": "A dangerous dog (「あぶない」) isn't a reason for it not to bark."
       },
       {
-        "zh": "「エンジン」是发动机，出发前不会往车里“加”发动机。",
-        "en": "「エンジン」 is the engine; you don't put one in before a drive."
+        "zh": "「いそがしい」（忙）不用来说狗的性格。",
+        "en": "「いそがしい」 (busy) doesn't describe a dog's nature."
       }
     ]
   },
@@ -388,39 +397,45 @@
     ]
   },
   {
-    "id": "n4-mg-311",
+    "id": "n4-mg-343",
     "type": "bunmyaku",
     "difficulty": 1,
-    "stem": "大学の じゅぎょうで、来週までに（　）を 書かなければ なりません。",
+    "stem": "めがねを なくして しまったので、いま へやの 中を （　） います。",
     "options": [
-      "レポート",
-      "テキスト",
-      "テスト",
-      "クラス"
+      "さがして",
+      "しらべて",
+      "ひろって",
+      "あつめて"
     ],
-    "kj": "大学の授業で、来週までにレポートを書かなければなりません。",
+    "okj": [
+      "探して",
+      "調べて",
+      "拾って",
+      "集めて"
+    ],
+    "kj": "眼鏡をなくしてしまったので、今部屋の中を探しています。",
     "answer": 0,
     "tr": {
-      "zh": "大学的课要求我下周之前写一份报告。",
-      "en": "For a university class, I have to write a report by next week."
+      "zh": "眼镜丢了，我正在房间里找。",
+      "en": "I've lost my glasses, so I'm searching the room."
     },
     "why": {
-      "zh": "线索：「大学の じゅぎょうで」「来週までに」「書かなければ」，课上布置、要按期写好交上的东西。\n词义：「レポート」＝报告、课程论文，常说「レポートを 書く」「レポートを 出す」（交报告）。",
-      "en": "Clue: 「大学の じゅぎょうで」, 「来週までに」, 「書かなければ」 — something a class sets that you write and hand in by a date.\nMeaning: 「レポート」 is a report or term paper: 「レポートを 書く」, 「レポートを 出す」 (hand it in)."
+      "zh": "线索：「めがねを なくして しまった」，丢了东西就要找。\n词义：「さがす」（探す）＝寻找（丢的东西或想要的东西）：「さいふを さがす」「へやを さがす」；“调查、查”是「しらべる」。",
+      "en": "Clue: 「めがねを なくして しまった」 — when you've lost something you look for it.\nMeaning: 「さがす」 (探す) is to look for something lost or wanted: 「さいふを さがす」, 「へやを さがす」. Looking something up is 「しらべる」."
     },
     "wrong": [
       null,
       {
-        "zh": "「テキスト」是课本，学生的作业不是写一本课本。",
-        "en": "「テキスト」 is a textbook; students don't write one as homework."
+        "zh": "「しらべる」是查资料、调查原因，不是找丢失的东西。",
+        "en": "「しらべる」 is to look up or investigate, not to search for a lost thing."
       },
       {
-        "zh": "「テスト」是考试，说“参加考试”（テストを うける），不说“写一份考试”交上去。",
-        "en": "A 「テスト」 is taken (テストを うける), not written by next week."
+        "zh": "「ひろう」是捡起地上的东西，眼镜还没找到，捡不了。",
+        "en": "「ひろう」 is picking something up — you haven't found the glasses yet."
       },
       {
-        "zh": "「クラス」是班级、课，不能“写”。",
-        "en": "「クラス」 is a class; you can't write one."
+        "zh": "「あつめる」是收集很多东西，和丢了眼镜不合。",
+        "en": "「あつめる」 is collecting many things; it doesn't fit lost glasses."
       }
     ]
   },
@@ -689,48 +704,45 @@
     ]
   },
   {
-    "id": "n4-mg-320",
+    "id": "n4-mg-344",
     "type": "bunmyaku",
-    "refs": [
-      "lesson33#vocab"
-    ],
     "difficulty": 2,
-    "stem": "ともだちが 来た とき、わたしは 出かけて いて（　）でした。",
+    "stem": "きょうは 天気が よくて かぜも あるので、せんたくものが すぐ （　）でしょう。",
     "options": [
-      "るす",
-      "ひま",
-      "じゆう",
-      "むり"
+      "かわく",
+      "ぬれる",
+      "よごれる",
+      "こわれる"
     ],
     "okj": [
-      "留守",
-      "暇",
-      "自由",
-      "無理"
+      "乾く",
+      "濡れる",
+      "汚れる",
+      "壊れる"
     ],
-    "kj": "友達が来たとき、私は出かけていて留守でした。",
+    "kj": "今日は天気が良くて風もあるので、洗濯物がすぐ乾くでしょう。",
     "answer": 0,
     "tr": {
-      "zh": "朋友来的时候，我出门了，不在家。",
-      "en": "When my friend came, I'd gone out and wasn't home."
+      "zh": "今天天气好又有风，洗的衣服很快就会干吧。",
+      "en": "It's sunny and windy today, so the washing will dry quickly."
     },
     "why": {
-      "zh": "线索：「ともだちが 来た とき」「出かけて いて」，朋友来时我出门了，不在家。\n词义：「るす」（留守）＝外出、不在家，常说「いえを るすに する」，电话答录机叫「るすばんでんわ」。",
-      "en": "Clue: 「ともだちが 来た とき」 and 「出かけて いて」 — when my friend came I was out.\nMeaning: 「るす」 (留守) is being away from home: 「いえを るすに する」; an answering machine is a 「るすばんでんわ」."
+      "zh": "线索：「天気が よくて かぜも ある」，晾的衣服很快会干。\n词义：「かわく」（乾く）＝变干：「せんたくものが かわく」；“口渴”也说「のどが かわく」。他动词是「かわかす」。",
+      "en": "Clue: 「天気が よくて かぜも ある」 — good drying weather.\nMeaning: 「かわく」 (乾く) is to dry: 「せんたくものが かわく」; also being thirsty: 「のどが かわく」. The transitive is 「かわかす」."
     },
     "wrong": [
       null,
       {
-        "zh": "「ひま」是闲着，和“出门了”的说明对不上。",
-        "en": "「ひま」 (free, idle) doesn't follow from \"I'd gone out\"."
+        "zh": "「ぬれる」是淋湿，天气好时不会。",
+        "en": "「ぬれる」 (get wet) doesn't happen in sunny weather."
       },
       {
-        "zh": "「じゆう」是自由，出门不在家不等于“自由”。",
-        "en": "「じゆう」 (free to do as one likes) isn't what going out means here."
+        "zh": "「よごれる」是变脏，和天气好、有风无关。",
+        "en": "「よごれる」 (get dirty) has nothing to do with sun and wind."
       },
       {
-        "zh": "「むり」是不可能、勉强，“我是不可能的”说不通。",
-        "en": "「むり」 (impossible) makes \"I was impossible\", which doesn't fit."
+        "zh": "「こわれる」是东西坏了，衣服不说「こわれる」。",
+        "en": "「こわれる」 is for things breaking, not laundry."
       }
     ]
   },
@@ -965,45 +977,39 @@
     ]
   },
   {
-    "id": "n4-mg-326",
+    "id": "n4-mg-345",
     "type": "bunmyaku",
     "difficulty": 1,
-    "stem": "この カレーは とうがらしが たくさん 入って いて、とても（　）です。",
+    "stem": "しゅくだいを 出す まえに、まちがいが ないか もう いちど （　）しましょう。",
     "options": [
-      "からい",
-      "あまい",
-      "にがい",
-      "すっぱい"
+      "チェック",
+      "コピー",
+      "サイン",
+      "メモ"
     ],
-    "okj": [
-      "辛い",
-      "甘い",
-      "苦い",
-      "酸っぱい"
-    ],
-    "kj": "このカレーは唐辛子がたくさん入っていて、とても辛いです。",
+    "kj": "宿題を出す前に、間違いがないかもう一度チェックしましょう。",
     "answer": 0,
     "tr": {
-      "zh": "这个咖喱放了很多辣椒，非常辣。",
-      "en": "This curry has lots of chilli in it, so it's very hot."
+      "zh": "交作业之前，再检查一遍有没有错吧。",
+      "en": "Before handing in your homework, check it once more for mistakes."
     },
     "why": {
-      "zh": "线索：「とうがらしが たくさん 入って いて」，放了很多辣椒。\n词义：「からい」（辛い）＝辣，常说「からい カレー」「からい ものが 好きです」。",
-      "en": "Clue: 「とうがらしが たくさん 入って いて」 — lots of chilli has gone in.\nMeaning: 「からい」 (辛い) is hot, spicy: 「からい カレー」, 「からい ものが 好きです」."
+      "zh": "线索：「まちがいが ないか」，确认有没有错误。\n词义：「チェック」＝检查、核对，用「チェックする」：「しゅくだいを チェックする」「メールを チェックする」。",
+      "en": "Clue: 「まちがいが ないか」 — making sure there are no mistakes.\nMeaning: 「チェック」 is checking, used as 「チェックする」: 「しゅくだいを チェックする」, 「メールを チェックする」."
     },
     "wrong": [
       null,
       {
-        "zh": "「あまい」是甜，辣椒不会让咖喱变甜。",
-        "en": "「あまい」 is sweet; chilli doesn't make curry sweet."
+        "zh": "「コピー」是复印，复印不能找出错误。",
+        "en": "「コピー」 (copy) doesn't find mistakes."
       },
       {
-        "zh": "「にがい」是苦，辣椒的味道不是苦。",
-        "en": "「にがい」 is bitter; chilli isn't bitter."
+        "zh": "「サイン」是签名，和看有没有错无关。",
+        "en": "「サイン」 (sign) has nothing to do with looking for mistakes."
       },
       {
-        "zh": "「すっぱい」是酸，辣椒的味道不是酸。",
-        "en": "「すっぱい」 is sour; chilli isn't sour."
+        "zh": "「メモ」是做笔记，不是确认有没有错。",
+        "en": "「メモ」 (note) isn't checking for mistakes."
       }
     ]
   },
@@ -1330,48 +1336,45 @@
     ]
   },
   {
-    "id": "n4-mg-335",
+    "id": "n4-mg-346",
     "type": "bunmyaku",
-    "refs": [
-      "lesson25#vocab"
-    ],
     "difficulty": 2,
-    "stem": "いそがしくて、ともだちの メールに まだ（　）を して いません。",
+    "stem": "子どもの ときから、ねる まえに はを みがく （　）が あります。",
     "options": [
-      "へんじ",
-      "しつもん",
-      "あいさつ",
-      "はんたい"
+      "しゅうかん",
+      "しゅみ",
+      "よてい",
+      "けいかく"
     ],
     "okj": [
-      "返事",
-      "質問",
-      "挨拶",
-      "反対"
+      "習慣",
+      "趣味",
+      "予定",
+      "計画"
     ],
-    "kj": "忙しくて、友達のメールにまだ返事をしていません。",
+    "kj": "子どもの時から、寝る前に歯を磨く習慣があります。",
     "answer": 0,
     "tr": {
-      "zh": "太忙了，朋友的邮件还没回复。",
-      "en": "I've been so busy I still haven't replied to my friend's email."
+      "zh": "我从小就有睡前刷牙的习惯。",
+      "en": "Since I was a child I've had the habit of brushing my teeth before bed."
     },
     "why": {
-      "zh": "线索：「ともだちの メールに」「まだ」，收到了邮件还没回。\n词义：「へんじ」（返事）＝回复、答复，常说「メールに へんじを する」「へんじを 書く」；被叫到名字时答应一声也是「へんじを する」。",
-      "en": "Clue: 「ともだちの メールに」 and 「まだ」 — I got the email and haven't answered.\nMeaning: 「へんじ」 (返事) is a reply or answer: 「メールに へんじを する」, 「へんじを 書く」; answering when your name is called is also 「へんじを する」."
+      "zh": "线索：「子どもの ときから」＋每天「ねる まえに」做的事，是长期养成的习惯。\n词义：「しゅうかん」（習慣）＝习惯：「〜する しゅうかんが ある」「よい しゅうかん」。",
+      "en": "Clue: 「子どもの ときから」 plus something done every night 「ねる まえに」 — a long-standing habit.\nMeaning: 「しゅうかん」 (習慣) is a habit: 「〜する しゅうかんが ある」, 「よい しゅうかん」."
     },
     "wrong": [
       null,
       {
-        "zh": "「しつもん」是提问，不说「メールに しつもんを する」。",
-        "en": "「しつもん」 is asking a question; 「メールに しつもんを する」 isn't said."
+        "zh": "「しゅみ」是爱好，刷牙不是爱好。",
+        "en": "「しゅみ」 is a hobby; brushing your teeth isn't one."
       },
       {
-        "zh": "「あいさつ」是寒暄、打招呼，不对邮件“打招呼”。",
-        "en": "「あいさつ」 is greeting; you don't greet an email."
+        "zh": "「よてい」是将来的安排，和「子どもの ときから」不合。",
+        "en": "「よてい」 is a future plan; it clashes with 「子どもの ときから」."
       },
       {
-        "zh": "「はんたい」是反对，“还没反对邮件”说不通。",
-        "en": "「はんたい」 is opposing; \"haven't opposed the email yet\" makes no sense."
+        "zh": "「けいかく」是计划，也是将来的事。",
+        "en": "「けいかく」 is a plan, also about the future."
       }
     ]
   },
@@ -1542,48 +1545,125 @@
     ]
   },
   {
-    "id": "n4-mg-340",
+    "id": "n4-mg-347",
     "type": "bunmyaku",
-    "refs": [
-      "lesson23#vocab"
-    ],
     "difficulty": 1,
-    "stem": "きのう よる おそくまで おきて いたので、けさ（　）して、学校に おくれました。",
+    "stem": "ゆうめいな せんしゅに あえる （　）は あまり ないので、ぜったい 行きたいです。",
     "options": [
-      "ねぼう",
-      "ひっこし",
-      "よやく",
-      "るす"
+      "チャンス",
+      "ニュース",
+      "サービス",
+      "ルール"
     ],
-    "okj": [
-      "寝坊",
-      "引っ越し",
-      "予約",
-      "留守"
-    ],
-    "kj": "昨日夜遅くまで起きていたので、今朝寝坊して、学校に遅れました。",
+    "kj": "有名な選手に会えるチャンスはあまりないので、絶対行きたいです。",
     "answer": 0,
     "tr": {
-      "zh": "昨天熬夜到很晚，今天早上睡过头，上学迟到了。",
-      "en": "I stayed up late last night, so this morning I overslept and was late for school."
+      "zh": "能见到有名选手的机会不多，所以我一定要去。",
+      "en": "Chances to meet a famous athlete don't come often, so I really want to go."
     },
     "why": {
-      "zh": "线索：「よる おそくまで おきて いた」「学校に おくれました」，熬夜后早上起不来，结果迟到。\n词义：「ねぼう」（寝坊）＝睡过头、睡懒觉，常说「ねぼうする」「ねぼうして ちこくする」。",
-      "en": "Clue: 「よる おそくまで おきて いた」 and 「学校に おくれました」 — up late, so I didn't wake in time and was late.\nMeaning: 「ねぼう」 (寝坊) is oversleeping: 「ねぼうする」, 「ねぼうして ちこくする」 (oversleep and be late)."
+      "zh": "线索：「あえる」「あまり ない」「ぜったい 行きたい」，难得的好时机。\n词义：「チャンス」＝机会：「チャンスが ある」「チャンスを のがす」（错过机会）。",
+      "en": "Clue: 「あえる」, 「あまり ない」, 「ぜったい 行きたい」 — a rare opportunity.\nMeaning: 「チャンス」 is a chance: 「チャンスが ある」, 「チャンスを のがす」 (miss a chance)."
     },
     "wrong": [
       null,
       {
-        "zh": "「ひっこし」是搬家，和熬夜、迟到没有因果关系。",
-        "en": "「ひっこし」 (moving house) isn't caused by staying up late."
+        "zh": "「ニュース」是新闻，和“能见到选手”连不上。",
+        "en": "「ニュース」 (news) doesn't connect with getting to meet an athlete."
       },
       {
-        "zh": "「よやく」是预订，不会让人迟到。",
-        "en": "「よやく」 (booking) doesn't make you late for school."
+        "zh": "「サービス」是服务，意思不合。",
+        "en": "「サービス」 (service) doesn't fit."
       },
       {
-        "zh": "「るす」是不在家，“早上不在家所以迟到”说不通。",
-        "en": "「るす」 (being out) doesn't explain being late for school."
+        "zh": "「ルール」是规则，“能见到选手的规则不多”说不通。",
+        "en": "「ルール」 (rule) makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-349",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "じしんで 本だなが （　）、本が ぜんぶ ゆかに おちました。",
+    "options": [
+      "たおれて",
+      "ならんで",
+      "ひえて",
+      "すいて"
+    ],
+    "okj": [
+      "倒れて",
+      "並んで",
+      "冷えて",
+      "空いて"
+    ],
+    "kj": "地震で本棚が倒れて、本が全部床に落ちました。",
+    "answer": 0,
+    "tr": {
+      "zh": "地震把书架震倒了，书全掉在了地上。",
+      "en": "The bookcase fell over in the earthquake and all the books ended up on the floor."
+    },
+    "why": {
+      "zh": "线索：「じしんで」＋「本が ぜんぶ ゆかに おちました」，书架倒了，书才会全掉下来。\n词义：「たおれる」（倒れる）＝（立着的东西）倒下：「木が たおれる」「本だなが たおれる」；人病倒也说「たおれる」。",
+      "en": "Clue: 「じしんで」 plus 「本が ぜんぶ ゆかに おちました」 — the bookcase fell, so every book landed on the floor.\nMeaning: 「たおれる」 (倒れる) is for something standing to fall over: 「木が たおれる」, 「本だなが たおれる」; also a person collapsing."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ならぶ」是排成一排，不会让书全掉下来。",
+        "en": "「ならぶ」 (stand in a row) wouldn't make the books fall."
+      },
+      {
+        "zh": "「ひえる」是变凉，和地震、书掉下来无关。",
+        "en": "「ひえる」 (get cold) has nothing to do with an earthquake."
+      },
+      {
+        "zh": "「すく」是变空，书架空了就没有书可掉。",
+        "en": "「すく」 (become empty) — an empty shelf has no books to drop."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-350",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "その ぼうしの いろ、あなたに よく （　） いますね。",
+    "options": [
+      "にあって",
+      "まにあって",
+      "ひかって",
+      "ならんで"
+    ],
+    "okj": [
+      "似合って",
+      "間に合って",
+      "光って",
+      "並んで"
+    ],
+    "kj": "その帽子の色、あなたによく似合っていますね。",
+    "answer": 0,
+    "tr": {
+      "zh": "那顶帽子的颜色很适合你呢。",
+      "en": "The colour of that hat really suits you."
+    },
+    "why": {
+      "zh": "线索：「あなたに よく」，在夸帽子的颜色和对方很相配。\n词义：「にあう」（似合う）＝（衣服、颜色等）适合某人：「〜に にあう」「よく にあう」；长得像是「にて いる」。",
+      "en": "Clue: 「あなたに よく」 — complimenting how the hat's colour looks on the person.\nMeaning: 「にあう」 (似合う) is for clothes or a colour to suit someone: 「〜に にあう」, 「よく にあう」. Looking alike is 「にて いる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まにあう」是赶得上（时间），和帽子颜色无关。",
+        "en": "「まにあう」 is being in time, nothing to do with a hat's colour."
+      },
+      {
+        "zh": "「ひかる」是发光，“颜色在你身上发光”说不通。",
+        "en": "「ひかる」 (shine) makes no sense with 「あなたに」."
+      },
+      {
+        "zh": "「ならぶ」是排成一排，不能用于颜色。",
+        "en": "「ならぶ」 (line up) can't describe a colour."
       }
     ]
   }

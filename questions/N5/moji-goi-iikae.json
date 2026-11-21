@@ -1,136 +1,130 @@
 [
   {
-    "id": "n5-mg-401",
+    "id": "n5-mg-421",
     "type": "iikae",
-    "refs": [
-      "lesson05#vocab"
-    ],
     "difficulty": 2,
-    "stem": "<<ちちは ぎんこうに つとめて います。>>",
+    "stem": "<<あには だいがくで にほんごを ならって います。>>",
     "options": [
-      "ちちは ぎんこうで しごとを して います。",
-      "ちちは ぎんこうへ よく いきます。",
-      "ちちは ぎんこうで おかねを かりました。",
-      "ちちは ぎんこうの ちかくに すんで います。"
+      "あには だいがくで にほんごを べんきょうして います。",
+      "あには だいがくで にほんごを おしえて います。",
+      "あには だいがくで にほんごの ほんを うって います。",
+      "あには だいがくで にほんごの しごとを して います。"
     ],
     "okj": [
-      "父は銀行で仕事をしています。",
-      "父は銀行へよく行きます。",
-      "父は銀行でお金を借りました。",
-      "父は銀行の近くに住んでいます。"
+      "兄は大学で日本語を勉強しています。",
+      "兄は大学で日本語を教えています。",
+      "兄は大学で日本語の本を売っています。",
+      "兄は大学で日本語の仕事をしています。"
     ],
-    "kj": "父は銀行に勤めています。",
+    "kj": "兄は大学で日本語を習っています。",
     "answer": 0,
     "tr": {
-      "zh": "我父亲在银行工作。",
-      "en": "My father works at a bank."
+      "zh": "我哥哥在大学学日语。",
+      "en": "My older brother is learning Japanese at university."
     },
     "why": {
-      "zh": "线索：划线的「ぎんこうに つとめて います」＝在银行上班，对应「ぎんこうで しごとを して います」。\n词义：「つとめる」（勤める）＝在公司等单位工作：「かいしゃに つとめて います」；注意它用「に」，「しごとを する」用「で」。",
-      "en": "Clue: the underlined 「ぎんこうに つとめて います」 — he works at a bank — matches 「ぎんこうで しごとを して います」.\nMeaning: 「つとめる」 (勤める) is to be employed at a company or office: 「かいしゃに つとめて います」. It takes 「に」, while 「しごとを する」 takes 「で」."
+      "zh": "线索：划线的「にほんごを ならって います」＝在学日语，对应「べんきょうして います」。\n词义：「ならう」（習う）＝跟老师学：「ピアノを ならう」「せんせいに ならう」；反义是「おしえる」（教）。",
+      "en": "Clue: the underlined 「にほんごを ならって います」 — he is learning Japanese — matches 「べんきょうして います」.\nMeaning: 「ならう」 (習う) is to learn from a teacher: 「ピアノを ならう」, 「せんせいに ならう」. Its opposite is 「おしえる」 (teach)."
     },
     "wrong": [
       null,
       {
-        "zh": "“常去银行”不等于在银行工作。",
-        "en": "Going to the bank often isn't the same as working there."
+        "zh": "「おしえる」是“教”，和「ならう」（学）正好相反。",
+        "en": "「おしえる」 is to teach — the opposite of 「ならう」."
       },
       {
-        "zh": "“在银行借了钱”是一次的事，不是在那里工作。",
-        "en": "Borrowing money there is a one-off, not a job."
+        "zh": "“卖日语书”不是学日语。",
+        "en": "Selling Japanese books isn't learning Japanese."
       },
       {
-        "zh": "“住在银行附近”和工作无关。",
-        "en": "Living near the bank has nothing to do with working there."
+        "zh": "“做和日语有关的工作”不是在学。",
+        "en": "Doing a job involving Japanese isn't learning it."
       }
     ]
   },
   {
-    "id": "n5-mg-402",
+    "id": "n5-mg-422",
     "type": "iikae",
-    "refs": [
-      "lesson07#vocab"
-    ],
     "difficulty": 1,
-    "stem": "<<あには せが ひくいです。>>",
+    "stem": "<<えきの まえに たかい たてものが あります。>>",
     "options": [
-      "あには せが たかくないです。",
-      "あには せが たかいです。",
-      "おとうとは せが たかくないです。",
-      "あには あしが みじかいです。"
+      "えきの まえに たかい ビルが あります。",
+      "えきの まえに たかい きが あります。",
+      "えきの まえに たかい やまが あります。",
+      "えきの まえに たかい みせが あります。"
     ],
     "okj": [
-      "兄は背が高くないです。",
-      "兄は背が高いです。",
-      "弟は背が高くないです。",
-      "兄は足が短いです。"
+      "駅の前に高いビルがあります。",
+      "駅の前に高い木があります。",
+      "駅の前に高い山があります。",
+      "駅の前に高い店があります。"
     ],
-    "kj": "兄は背が低いです。",
+    "kj": "駅の前に高い建物があります。",
     "answer": 0,
     "tr": {
-      "zh": "我哥哥个子矮。",
-      "en": "My older brother is short."
+      "zh": "车站前面有一栋很高的建筑。",
+      "en": "There's a tall building in front of the station."
     },
     "why": {
-      "zh": "线索：划线的「せが ひくい」＝个子不高，对应「せが たかくない」。\n词义：「せ」＝个子，「せが たかい」「せが ひくい」；「ひくい」（低い）也说东西：「ひくい やま」，反义是「たかい」。",
-      "en": "Clue: the underlined 「せが ひくい」 — not tall — matches 「せが たかくない」.\nMeaning: 「せ」 is height: 「せが たかい」, 「せが ひくい」. 「ひくい」 (低い) is also used for things: 「ひくい やま」. The opposite is 「たかい」."
+      "zh": "线索：「たかい たてもの」＝很高的建筑，就是「たかい ビル」。\n词义：「たてもの」（建物）＝建筑物、房子：「ふるい たてもの」「あの たてもの」；高楼说「ビル」。",
+      "en": "Clue: 「たかい たてもの」, a tall building, is 「たかい ビル」.\nMeaning: 「たてもの」 (建物) is a building: 「ふるい たてもの」, 「あの たてもの」. A tall office block is 「ビル」."
     },
     "wrong": [
       null,
       {
-        "zh": "「たかい」（高）和「ひくい」意思相反。",
-        "en": "「たかい」 (tall) is the opposite of 「ひくい」."
+        "zh": "「き」是树，不是建筑。",
+        "en": "「き」 is a tree, not a building."
       },
       {
-        "zh": "人物变了：说的是「おとうと」（弟弟），不是「あに」（哥哥）。",
-        "en": "Wrong person: 「おとうと」 (younger brother), not 「あに」."
+        "zh": "「やま」是山，不是建筑。",
+        "en": "「やま」 is a mountain, not a building."
       },
       {
-        "zh": "“腿短”和“个子矮”不是一回事。",
-        "en": "Short legs isn't the same as being short."
+        "zh": "「たかい みせ」是“贵的店”，意思变了。",
+        "en": "「たかい みせ」 means an expensive shop — a different meaning."
       }
     ]
   },
   {
-    "id": "n5-mg-403",
+    "id": "n5-mg-423",
     "type": "iikae",
     "difficulty": 2,
-    "stem": "<<おととい デパートへ いきました。>>",
+    "stem": "<<きのうの パーティーは おもしろくなかったです。>>",
     "options": [
-      "ふつかまえに デパートへ いきました。",
-      "きのう デパートへ いきました。",
-      "みっかまえに デパートへ いきました。",
-      "あさって デパートへ いきます。"
+      "きのうの パーティーは つまらなかったです。",
+      "きのうの パーティーは たのしかったです。",
+      "きのうの パーティーは いそがしかったです。",
+      "きのうの パーティーは にぎやかでした。"
     ],
     "okj": [
-      "二日前にデパートへ行きました。",
-      "昨日デパートへ行きました。",
-      "三日前にデパートへ行きました。",
-      "あさってデパートへ行きます。"
+      "昨日のパーティーはつまらなかったです。",
+      "昨日のパーティーは楽しかったです。",
+      "昨日のパーティーは忙しかったです。",
+      "昨日のパーティーは賑やかでした。"
     ],
-    "kj": "おとといデパートへ行きました。",
+    "kj": "昨日のパーティーは面白くなかったです。",
     "answer": 0,
     "tr": {
-      "zh": "前天去了百货商店。",
-      "en": "I went to the department store the day before yesterday."
+      "zh": "昨天的派对没意思。",
+      "en": "Yesterday's party wasn't fun."
     },
     "why": {
-      "zh": "线索：划线的「おととい」＝两天前，对应「ふつかまえ」。\n词义：「おととい」＝前天；「〜まえ」＝……之前：「ふつかまえ」「みっかまえ」「いっしゅうかんまえ」。",
-      "en": "Clue: the underlined 「おととい」 is two days ago, which is 「ふつかまえ」.\nMeaning: 「おととい」 is the day before yesterday. 「〜まえ」 means … ago: 「ふつかまえ」, 「みっかまえ」, 「いっしゅうかんまえ」."
+      "zh": "线索：划线的「おもしろくなかった」＝没意思，换成一个词就是「つまらなかった」。\n词义：「つまらない」＝无聊、没意思：「つまらない えいが」「じゅぎょうが つまらない」；反义是「おもしろい」「たのしい」。",
+      "en": "Clue: the underlined 「おもしろくなかった」 — it wasn't fun — is one word: 「つまらなかった」.\nMeaning: 「つまらない」 is boring: 「つまらない えいが」, 「じゅぎょうが つまらない」. Its opposites are 「おもしろい」 and 「たのしい」."
     },
     "wrong": [
       null,
       {
-        "zh": "「きのう」是昨天，只早一天。",
-        "en": "「きのう」 is yesterday — only one day ago."
+        "zh": "「たのしかった」是“很开心”，正好相反。",
+        "en": "「たのしかった」 (it was fun) is the opposite."
       },
       {
-        "zh": "「みっかまえ」是三天前，多了一天。",
-        "en": "「みっかまえ」 is three days ago — one day too many."
+        "zh": "「いそがしかった」是忙，和有没有意思无关。",
+        "en": "「いそがしかった」 (busy) isn't about whether it was fun."
       },
       {
-        "zh": "「あさって」是后天，是将来不是过去。",
-        "en": "「あさって」 is the day after tomorrow — future, not past."
+        "zh": "「にぎやか」是热闹，不等于没意思。",
+        "en": "「にぎやか」 (lively) doesn't mean boring."
       }
     ]
   },

@@ -18,21 +18,20 @@
     ]
   },
   {
-    "id": "n5-mg-102",
+    "id": "n5-mg-157",
     "type": "kanji",
-    "refs": ["lesson01#vocab"],
     "difficulty": 1,
-    "stem": "<<先生>>に しつもんを しました。",
-    "options": ["せんせい", "せんせ", "せいせい", "ぜんせい"],
-    "kj": "先生に質問をしました。",
+    "stem": "コンビニで ペンを <<六本>> かいました。",
+    "options": ["ろっぽん", "ろくほん", "ろっほん", "ろくぽん"],
+    "kj": "コンビニでペンを六本買いました。",
     "answer": 0,
-    "tr": { "zh": "我向老师提了问题。", "en": "I asked the teacher a question." },
-    "why": { "zh": "「先」读「せん」，「生」读长音「せい」：「せんせい」。", "en": "「先」 is せん and 「生」 is the long せい: せんせい." },
+    "tr": { "zh": "我在便利店买了六支笔。", "en": "I bought six pens at the convenience store." },
+    "why": { "zh": "「六」＋「本」读「ろっぽん」：「ろく」变成促音「ろっ」，「ほん」变成半浊音「ぽん」。", "en": "「六本」 is ろっぽん: ろく becomes ろっ, and ほん becomes ぽん." },
     "wrong": [
       null,
-      { "zh": "少了长音：「生」读「せい」。", "en": "Missing the long vowel: 「生」 is せい." },
-      { "zh": "「先」读「せん」，不是「せい」。", "en": "「先」 is せん, not せい." },
-      { "zh": "「先」开头是清音「せ」，不浊。", "en": "「先」 starts unvoiced: せ, not ぜ." }
+      { "zh": "「六本」要变音，不读「ろくほん」。", "en": "「六本」 changes its sounds; it isn't ろくほん." },
+      { "zh": "有了促音「っ」，后面的「ほん」要变成「ぽん」。", "en": "After the small っ, ほん becomes ぽん." },
+      { "zh": "「ぽん」前面的「ろく」要变成促音「ろっ」。", "en": "Before ぽん, ろく shortens to ろっ." }
     ]
   },
   {
@@ -347,20 +346,20 @@
     ]
   },
   {
-    "id": "n5-mg-121",
+    "id": "n5-mg-156",
     "type": "kanji",
     "difficulty": 1,
-    "stem": "つぎの かどを <<右>>へ まがって ください。",
-    "options": ["みぎ", "ひだり", "みき", "ゆう"],
-    "kj": "次の角を右へ曲がってください。",
+    "stem": "この がっこうには がくせいが <<百人>> います。",
+    "options": ["ひゃくにん", "ひゃくじん", "びゃくにん", "ひやくにん"],
+    "kj": "この学校には学生が百人います。",
     "answer": 0,
-    "tr": { "zh": "请在下一个拐角向右转。", "en": "Please turn right at the next corner." },
-    "why": { "zh": "「右」单独用读「みぎ」（右）。", "en": "「右」 on its own is みぎ (right)." },
+    "tr": { "zh": "这所学校有一百个学生。", "en": "This school has a hundred students." },
+    "why": { "zh": "「百」读「ひゃく」，数人数的「人」读「にん」：「ひゃくにん」。", "en": "「百」 is ひゃく and 「人」 counting people is にん: ひゃくにん." },
     "wrong": [
       null,
-      { "zh": "「ひだり」是「左」（左）。", "en": "ひだり is 「左」 (left)." },
-      { "zh": "「ぎ」是浊音。", "en": "The ぎ is voiced." },
-      { "zh": "「ゆう」是音读，只出现在「左右（さゆう）」这类词里。", "en": "ゆう is the on-reading, used only in words like 「左右」 (さゆう)." }
+      { "zh": "数人数用「にん」；「じん」用在「にほんじん」这类国籍词里。", "en": "People are counted with にん; じん is for nationalities like にほんじん." },
+      { "zh": "「百」读清音「ひゃく」，不浊（「さんびゃく」才浊）。", "en": "「百」 is unvoiced ひゃく here (it voices only in words like さんびゃく)." },
+      { "zh": "「ひゃ」是小写的「ゃ」，不是大写的「や」。", "en": "ひゃ has a small ゃ, not a full-size や." }
     ]
   },
   {

@@ -37,76 +37,76 @@
     ]
   },
   {
-    "id": "n4-mg-202",
+    "id": "n4-mg-241",
     "type": "hyouki",
     "difficulty": 1,
-    "stem": "<<としょかん>>で ほんを かりました。",
+    "stem": "なつやすみに うみで たくさん <<およぎました>>。",
     "options": [
-      "図書館",
-      "図書官",
-      "図書会",
-      "国書館"
+      "泳ぎました",
+      "永ぎました",
+      "氷ぎました",
+      "洋ぎました"
     ],
-    "kj": "図書館で本を借りました。",
+    "kj": "夏休みに海でたくさん泳ぎました。",
     "answer": 0,
     "tr": {
-      "zh": "我在图书馆借了书。",
-      "en": "I borrowed a book from the library."
+      "zh": "暑假在海里游了很多次泳。",
+      "en": "I swam a lot in the sea over the summer holidays."
     },
     "why": {
-      "zh": "「としょかん」（图书馆）写作「図書館」，「館」有食字旁。",
-      "en": "としょかん (library) is 「図書館」; 「館」 has the 食 radical."
+      "zh": "「およぐ」（游泳）写作「泳ぐ」：三点水＋「永」。",
+      "en": "およぐ (swim) is 「泳ぐ」: the water radical plus 「永」."
     },
     "wrong": [
       null,
       {
-        "zh": "「官」读「かん」（官员），没有食字旁，不是建筑物的「館」。",
-        "en": "「官」 is also かん but means an official; the building is 「館」."
+        "zh": "「永」读「えい」（永远），少了三点水。",
+        "en": "「永」 is えい (eternal), without the water radical."
       },
       {
-        "zh": "「会」读「かい」（会面），不是「かん」。",
-        "en": "「会」 is かい (meet), not かん."
+        "zh": "「氷」读「こおり」（冰），不是游泳。",
+        "en": "「氷」 is こおり (ice), not swimming."
       },
       {
-        "zh": "「国」读「こく」（国家）；「と」是「図」。",
-        "en": "「国」 is こく (country); と is 「図」."
+        "zh": "「洋」读「よう」（海洋、西洋），右边是「羊」。",
+        "en": "「洋」 is よう (ocean, Western), with 「羊」 on the right."
       }
     ]
   },
   {
-    "id": "n4-mg-203",
+    "id": "n4-mg-242",
     "type": "hyouki",
     "difficulty": 1,
-    "stem": "りょこうで たくさん <<しゃしん>>を とりました。",
+    "stem": "この まちは <<こうつう>>が べんりです。",
     "options": [
-      "写真",
-      "写直",
-      "字真",
-      "与真"
+      "交通",
+      "交道",
+      "校通",
+      "効通"
     ],
-    "kj": "旅行でたくさん写真を撮りました。",
+    "kj": "この町は交通が便利です。",
     "answer": 0,
     "tr": {
-      "zh": "旅行时拍了很多照片。",
-      "en": "I took a lot of photos on the trip."
+      "zh": "这个城市交通很方便。",
+      "en": "This town has good transport links."
     },
     "why": {
-      "zh": "「しゃしん」（照片）写作「写真」。",
-      "en": "しゃしん (photo) is 「写真」."
+      "zh": "「こうつう」（交通）写作「交通」：「交」+「通（つう）」。",
+      "en": "こうつう (traffic, transport) is 「交通」: 「交」 + 「通」 (つう)."
     },
     "wrong": [
       null,
       {
-        "zh": "「直」读「なおす」（修改）；「真」上面是「十」，下面有两点。",
-        "en": "「直」 is なおす (fix); 「真」 has 十 on top and two dots at the bottom."
+        "zh": "「道」读「どう／みち」（道路），不是「つう」。",
+        "en": "「道」 is どう / みち (road), not つう."
       },
       {
-        "zh": "「字」读「じ」（文字），宝盖头，不是「写」的秃宝盖。",
-        "en": "「字」 is じ (letter); it has a different top than 「写」."
+        "zh": "「校」读「こう」（学校），但「こうつう」的「こう」是「交」。",
+        "en": "「校」 is also こう (school), but the こう of こうつう is 「交」."
       },
       {
-        "zh": "「与」读「あたえる」（给予），上面少了「冖」。",
-        "en": "「与」 is あたえる (to give); it lacks the 冖 top of 「写」."
+        "zh": "「効」读「こう」（效果），也不是「交」。",
+        "en": "「効」 is also こう (effect), but it isn't 「交」."
       }
     ]
   },

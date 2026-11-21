@@ -1,140 +1,124 @@
 [
   {
-    "id": "n5-mg-301",
+    "id": "n5-mg-341",
     "type": "bunmyaku",
-    "refs": [
-      "lesson05#vocab"
-    ],
     "difficulty": 1,
-    "stem": "あめが ふって いますから、（　）を さして ください。",
+    "stem": "いすを みっつ よこに （　） ください。",
     "options": [
-      "かさ",
-      "くつ",
-      "かばん",
-      "ぼうし"
+      "ならべて",
+      "あけて",
+      "きって",
+      "はいて"
     ],
     "okj": [
-      "傘",
-      "靴",
-      null,
-      "帽子"
+      "並べて",
+      "開けて",
+      "切って",
+      null
     ],
-    "kj": "雨が降っていますから、傘を差してください。",
+    "kj": "椅子を三つ横に並べてください。",
     "answer": 0,
     "tr": {
-      "zh": "正在下雨，请打伞。",
-      "en": "It's raining, so please put up your umbrella."
+      "zh": "请把三把椅子横着排成一排。",
+      "en": "Please line up three chairs side by side."
     },
     "why": {
-      "zh": "线索：「あめが ふって います」，后面的动词是「さす」，下雨时打的是伞。\n词义：「かさ」（傘）＝雨伞，打伞说「かさを さす」，带伞出门说「かさを もって いく」。",
-      "en": "Clue: 「あめが ふって います」 and the verb 「さす」 — in the rain you put up an umbrella.\nMeaning: 「かさ」 (傘) is an umbrella: 「かさを さす」 (put it up), 「かさを もって いく」 (take one along)."
+      "zh": "线索：「いすを みっつ よこに」，把几把椅子横着放成一排。\n词义：「ならべる」（並べる）＝把几个东西排好：「いすを ならべる」「おさらを ならべる」。",
+      "en": "Clue: 「いすを みっつ よこに」 — three chairs set side by side.\nMeaning: 「ならべる」 (並べる) is to line up several things: 「いすを ならべる」, 「おさらを ならべる」."
     },
     "wrong": [
       null,
       {
-        "zh": "「くつ」（鞋）用「はく」，不能「さす」。",
-        "en": "Shoes (「くつ」) are worn with 「はく」, not 「さす」."
+        "zh": "「あける」（开）用于门、窗，不能“开椅子”。",
+        "en": "「あける」 (open) is for doors and windows, not chairs."
       },
       {
-        "zh": "「かばん」（包）用「もつ」，不能「さす」。",
-        "en": "A bag (「かばん」) is carried (「もつ」), not 「さす」."
+        "zh": "「きる」（切）是用刀剪切开，和“横着三把”不合。",
+        "en": "「きる」 (cut) doesn't fit setting three chairs side by side."
       },
       {
-        "zh": "「ぼうし」（帽子）用「かぶる」，不能「さす」。",
-        "en": "A hat (「ぼうし」) takes 「かぶる」, not 「さす」."
+        "zh": "「はく」是穿鞋、裤子，不能用于椅子。",
+        "en": "「はく」 is for shoes and trousers, not chairs."
       }
     ]
   },
   {
-    "id": "n5-mg-302",
+    "id": "n5-mg-342",
     "type": "bunmyaku",
-    "refs": [
-      "lesson05#vocab",
-      "lesson13#vocab"
-    ],
     "difficulty": 1,
-    "stem": "へやが くらいですね。でんきを（　）ください。",
+    "stem": "この プールは ながさが 25（　）です。",
     "options": [
-      "つけて",
-      "けして",
-      "しめて",
-      "あけて"
+      "メートル",
+      "グラム",
+      "ページ",
+      "ドル"
     ],
-    "okj": [
-      null,
-      "消して",
-      "閉めて",
-      "開けて"
-    ],
-    "kj": "部屋が暗いですね。電気をつけてください。",
+    "kj": "このプールは長さが25メートルです。",
     "answer": 0,
     "tr": {
-      "zh": "房间好暗啊。请把灯打开。",
-      "en": "The room is dark, isn't it? Please turn on the light."
+      "zh": "这个泳池长25米。",
+      "en": "This pool is 25 metres long."
     },
     "why": {
-      "zh": "线索：「へやが くらい」，房间暗，要让灯亮起来。\n词义：「つける」＝打开灯或电器：「でんきを つける」「テレビを つける」；关掉是「けす」：「でんきを けす」。\n辨析：中文都说“开”，但门窗打开用「あける」（「まどを あける」），灯和电器用「つける」。",
-      "en": "Clue: 「へやが くらい」 — the room is dark, so the light has to come on.\nMeaning: 「つける」 turns on a light or a machine: 「でんきを つける」, 「テレビを つける」. Turning it off is 「けす」 (「でんきを けす」).\nContrast: don't mix up the two verbs: doors and windows are opened with 「あける」 (「まどを あける」); lights and machines are switched on with 「つける」."
+      "zh": "线索：「ながさが」（长度）后面要接长度单位。\n词义：「メートル」＝米：「100メートル はしる」；重量用「グラム」「キロ」。",
+      "en": "Clue: 「ながさが」 (length) needs a unit of length.\nMeaning: 「メートル」 is a metre: 「100メートル はしる」. Weight takes 「グラム」 or 「キロ」."
     },
     "wrong": [
       null,
       {
-        "zh": "「けす」是关灯，房间暗时关灯说反了。",
-        "en": "「けす」 turns the light off — the opposite of what a dark room needs."
+        "zh": "「グラム」（克）是重量单位，不能说长度。",
+        "en": "「グラム」 (gram) measures weight, not length."
       },
       {
-        "zh": "「しめる」用于门窗，不说「でんきを しめる」。",
-        "en": "「しめる」 is for doors and windows, not lights."
+        "zh": "「ページ」（页）用于书，不能说泳池的长度。",
+        "en": "「ページ」 (page) is for books, not a pool's length."
       },
       {
-        "zh": "「あける」用于门窗，不说「でんきを あける」。",
-        "en": "「あける」 is for doors and windows, not lights."
+        "zh": "「ドル」（美元）是钱的单位。",
+        "en": "「ドル」 (dollar) is money."
       }
     ]
   },
   {
-    "id": "n5-mg-303",
+    "id": "n5-mg-343",
     "type": "bunmyaku",
-    "refs": [
-      "lesson05#vocab"
-    ],
     "difficulty": 2,
-    "stem": "まいばん シャワーを（　）から、ねます。",
+    "stem": "へやに だれも いませんね。でんきを （　） ください。",
     "options": [
-      "あびて",
-      "のって",
-      "きて",
-      "ぬいで"
+      "けして",
+      "つけて",
+      "あけて",
+      "しめて"
     ],
     "okj": [
-      "浴びて",
-      "乗って",
-      "着て",
-      "脱いで"
+      "消して",
+      null,
+      "開けて",
+      "閉めて"
     ],
-    "kj": "毎晩シャワーを浴びてから、寝ます。",
+    "kj": "部屋に誰もいませんね。電気を消してください。",
     "answer": 0,
     "tr": {
-      "zh": "每天晚上冲完澡再睡觉。",
-      "en": "Every night I take a shower and then go to bed."
+      "zh": "房间里没人呢。请把灯关掉。",
+      "en": "There's nobody in the room. Please turn off the light."
     },
     "why": {
-      "zh": "线索：「シャワーを」后面要接表示冲澡的动词，是每天晚上「ねます」之前做的事。\n词义：「あびる」（浴びる）＝淋、冲（水），「シャワーを あびる」＝冲澡；泡澡说「おふろに はいる」。",
-      "en": "Clue: 「シャワーを」 needs the verb for taking a shower, something done each night before 「ねます」.\nMeaning: 「あびる」 (浴びる) is to have water pour over you: 「シャワーを あびる」 is taking a shower. A bath is 「おふろに はいる」."
+      "zh": "线索：「だれも いません」，没人的房间要把灯关掉。\n词义：「けす」（消す）＝关（灯、电视）：「でんきを けす」「テレビを けす」；反义是「つける」。",
+      "en": "Clue: 「だれも いません」 — nobody's in the room, so the light goes off.\nMeaning: 「けす」 (消す) is to turn off a light or TV: 「でんきを けす」, 「テレビを けす」. The opposite is 「つける」."
     },
     "wrong": [
       null,
       {
-        "zh": "「のる」用于乘车、坐船等，不说「シャワーを のる」。",
-        "en": "「のる」 is for riding vehicles, not showers."
+        "zh": "「つける」是开灯，房间没人时不会特意开灯。",
+        "en": "「つける」 turns the light on — not what you do when nobody's there."
       },
       {
-        "zh": "「きる」是穿上衣，不能用于淋浴。",
-        "en": "「きる」 is putting on clothes, not showers."
+        "zh": "「あける」用于门窗，灯不说「あける」。",
+        "en": "「あける」 is for doors and windows, not lights."
       },
       {
-        "zh": "「ぬぐ」是脱衣服、脱鞋，不能用于淋浴。",
-        "en": "「ぬぐ」 is taking off clothes or shoes, not showers."
+        "zh": "「しめる」也是门窗，灯要说「けす」。",
+        "en": "「しめる」 is for doors and windows too; a light is 「けす」."
       }
     ]
   },

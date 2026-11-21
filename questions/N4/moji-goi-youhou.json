@@ -1,46 +1,43 @@
 [
   {
-    "id": "n4-mg-501",
+    "id": "n4-mg-529",
     "type": "youhou",
-    "refs": [
-      "lesson29#vocab"
-    ],
     "difficulty": 2,
-    "stem": "<<つごう>>",
+    "stem": "<<やむ>>",
     "options": [
-      "あしたは つごうが わるいので、ほかの ひに しませんか。",
-      "この りょうりは つごうが いいので、よく たべます。",
-      "この とけいは つごうが わるくて、よく とまります。",
-      "いそがしくて、ひるごはんを たべる つごうが ありませんでした。"
+      "あめが やんだら、さんぽに 行きましょう。",
+      "あかしんごうなので、くるまが やみました。",
+      "からだに わるいので、たばこを やみました。",
+      "でんちが なくなって、とけいが やんで います。"
     ],
     "okj": [
-      "明日は都合が悪いので、ほかの日にしませんか。",
-      "この料理は都合がいいので、よく食べます。",
-      "この時計は都合が悪くて、よく止まります。",
-      "忙しくて、昼ご飯を食べる都合がありませんでした。"
+      "雨が止んだら、散歩に行きましょう。",
+      "赤信号なので、車が止みました。",
+      "体に悪いので、たばこを止みました。",
+      "電池がなくなって、時計が止んでいます。"
     ],
     "answer": 0,
     "tr": {
-      "zh": "つごう（都合）：方便与否、（时间上的）安排。正确句：明天我不方便，改天怎么样？",
-      "en": "つごう: whether something suits you, your schedule. Correct: Tomorrow doesn't suit me — how about another day?"
+      "zh": "やむ（止む）：（雨、风、声音等）停止。正确句：雨停了我们就去散步吧。",
+      "en": "やむ: (rain, wind, a sound) to stop. Correct: Let's go for a walk when the rain stops."
     },
     "why": {
-      "zh": "线索：正确句说的是「あしたは」自己的时间安排不方便，所以提议「ほかの ひに」。\n词义：「つごう」（都合）＝时间、安排上方便与否，常说「つごうが いい／わるい」「つごうの いい ひ」；客气地问对方：「ごつごうは いかがですか」。",
-      "en": "Clue: the right sentence is about the speaker's own schedule 「あしたは」 — it doesn't suit, so another day is suggested.\nMeaning: 「つごう」 (都合) is whether a time or arrangement suits you: 「つごうが いい／わるい」, 「つごうの いい ひ」; politely asking, 「ごつごうは いかがですか」."
+      "zh": "线索：正确句的主语是「あめ」，雨停了。\n词义：「やむ」（止む）＝雨、雪、风、声音等自然停止：「あめが やむ」「かぜが やむ」；车、钟停是「とまる」，戒烟是「やめる」。",
+      "en": "Clue: the right sentence is about 「あめ」 stopping.\nMeaning: 「やむ」 (止む) is for rain, snow, wind or a sound to stop by itself: 「あめが やむ」, 「かぜが やむ」. A car or clock stopping is 「とまる」; quitting smoking is 「やめる」."
     },
     "wrong": [
       null,
       {
-        "zh": "说菜好吃要用「あじが いい」或「おいしい」。",
-        "en": "For food tasting good, use 「あじが いい」 or 「おいしい」."
+        "zh": "车停下是「とまりました」。",
+        "en": "A car stopping is 「とまりました」."
       },
       {
-        "zh": "钟表等机器运转不正常是「ちょうしが わるい」。",
-        "en": "A clock that keeps stopping has a bad 「ちょうし」 (condition), not 「つごう」."
+        "zh": "戒烟是「やめました」；「やむ」不带「を」。",
+        "en": "Quitting smoking is 「やめました」; 「やむ」 takes no 「を」."
       },
       {
-        "zh": "忙得没空吃午饭是「じかんが ありませんでした」。",
-        "en": "Having no time for lunch is 「じかんが ありませんでした」."
+        "zh": "钟停了是「とまって います」。",
+        "en": "A stopped clock is 「とまって います」."
       }
     ]
   },
@@ -90,137 +87,128 @@
     ]
   },
   {
-    "id": "n4-mg-503",
+    "id": "n4-mg-527",
     "type": "youhou",
-    "refs": [
-      "lesson33#vocab"
-    ],
     "difficulty": 1,
-    "stem": "<<るす>>",
+    "stem": "<<きんじょ>>",
     "options": [
-      "ともだちの いえに いきましたが、るすでした。",
-      "この せきは るすですか。",
-      "この みせは きょう るすなので、あした また きます。",
-      "こうえんは ひとが いなくて、とても るすでした。"
+      "きんじょに あたらしい パンやが できました。",
+      "えきは ここから とても きんじょです。",
+      "テストの ひが だんだん きんじょに なりました。",
+      "わたしと あねは かおが きんじょです。"
     ],
     "okj": [
-      "友達の家に行きましたが、留守でした。",
-      "この席は留守ですか。",
-      "この店は今日留守なので、明日また来ます。",
-      "公園は人がいなくて、とても留守でした。"
+      "近所に新しいパン屋ができました。",
+      "駅はここからとても近所です。",
+      "テストの日がだんだん近所になりました。",
+      "私と姉は顔が近所です。"
     ],
     "answer": 0,
     "tr": {
-      "zh": "るす（留守）：家里没人、外出不在家。正确句：我去了朋友家，可是他不在家。",
-      "en": "るす: nobody being at home. Correct: I went to my friend's house, but nobody was home."
+      "zh": "きんじょ（近所）：附近、邻近一带。正确句：附近新开了一家面包店。",
+      "en": "きんじょ: the neighbourhood. Correct: A new bakery has opened in the neighbourhood."
     },
     "why": {
-      "zh": "线索：正确句是去了「ともだちの いえ」，家里的人出去了、没人在。\n词义：「るす」（留守）＝住在家里的人外出、不在家：「るすでした」「いえを るすに する」；替人看家是「るすばん」。",
-      "en": "Clue: in the right sentence the speaker goes to 「ともだちの いえ」 and the people there are out.\nMeaning: 「るす」 (留守) is the people who live in a home being out: 「るすでした」, 「いえを るすに する」; minding the house is 「るすばん」."
+      "zh": "线索：正确句说自己住的地方附近开了新店。\n词义：「きんじょ」（近所）＝住处附近一带，是名词：「きんじょの 人」「きんじょに すむ」；说“近”要用形容词「ちかい」。",
+      "en": "Clue: the right sentence is about a new shop near where you live.\nMeaning: 「きんじょ」 (近所) is the area around your home, a noun: 「きんじょの 人」, 「きんじょに すむ」. \"Close\" as an adjective is 「ちかい」."
     },
     "wrong": [
       null,
       {
-        "zh": "问座位有没有人用「あいて いますか」。",
-        "en": "To ask if a seat is free, say 「あいて いますか」."
+        "zh": "“离这里很近”要说「ちかいです」；「きんじょ」是名词，不能受「とても」修饰。",
+        "en": "\"Very close\" is 「ちかいです」; 「きんじょ」 is a noun, not an adjective."
       },
       {
-        "zh": "店铺不营业是「やすみ」；「るす」说的是家里的人外出。",
-        "en": "A shop being closed is 「やすみ」; 「るす」 is about the people of a home being out."
+        "zh": "日子临近是「ちかく なりました」「ちかづきました」。",
+        "en": "A date drawing near is 「ちかく なりました」 or 「ちかづきました」."
       },
       {
-        "zh": "公园里没人、很安静是「しずか」；公园不是谁的家，没人也不说「るす」。",
-        "en": "A deserted park is 「しずか」; a park isn't anyone's home, so an empty one isn't 「るす」."
+        "zh": "长得像是「にて います」。",
+        "en": "Looking alike is 「にて います」."
       }
     ]
   },
   {
-    "id": "n4-mg-504",
+    "id": "n4-mg-530",
     "type": "youhou",
-    "refs": [
-      "lesson31#vocab"
-    ],
     "difficulty": 1,
-    "stem": "<<しんぱい>>",
+    "stem": "<<こむ>>",
     "options": [
-      "むすこが まだ かえらないので、しんぱいです。",
-      "くるまに しんぱいして、みちを わたって ください。",
-      "かぎを かけたので、もう しんぱいです。",
-      "りょこうの しんぱいは もう できましたか。"
+      "あさの でんしゃは こんで いて、すわれませんでした。",
+      "コーヒーに ミルクを こんで のみます。",
+      "りょこうの にもつを かばんに こみました。",
+      "しゅくだいが たくさん こんで いて、いそがしいです。"
     ],
     "okj": [
-      "息子がまだ帰らないので、心配です。",
-      "車に心配して、道を渡ってください。",
-      "鍵をかけたので、もう心配です。",
-      "旅行の心配はもうできましたか。"
+      "朝の電車は混んでいて、座れませんでした。",
+      "コーヒーにミルクを混んで飲みます。",
+      "旅行の荷物をかばんに混みました。",
+      "宿題がたくさん混んでいて、忙しいです。"
     ],
     "answer": 0,
     "tr": {
-      "zh": "しんぱい（心配）：担心。正确句：儿子还没回来，我很担心。",
-      "en": "しんぱい: worry. Correct: My son isn't home yet, so I'm worried."
+      "zh": "こむ（混む）：拥挤。正确句：早上的电车很挤，没有座位。",
+      "en": "こむ: to be crowded. Correct: The morning train was crowded and I couldn't get a seat."
     },
     "why": {
-      "zh": "线索：正确句是「むすこが まだ かえらない」，担心会不会出了什么事。\n词义：「しんぱい」（心配）＝担心、挂念，常说「〜が しんぱいだ」「〜を しんぱいする」「しんぱいを かける」（让人担心）；放心是「あんしん」。",
-      "en": "Clue: the right sentence has 「むすこが まだ かえらない」 — fearing something may have happened.\nMeaning: 「しんぱい」 (心配) is worry: 「〜が しんぱいだ」, 「〜を しんぱいする」, 「しんぱいを かける」 (make someone worry). Feeling at ease is 「あんしん」."
+      "zh": "线索：正确句里电车人多到「すわれませんでした」。\n词义：「こむ」（混む）＝（地方、交通工具）人多拥挤，常用「こんで いる」：「でんしゃが こんで いる」「みちが こむ」；反义是「すいて いる」。",
+      "en": "Clue: the right sentence has a train so full you 「すわれませんでした」.\nMeaning: 「こむ」 (混む) is for a place or vehicle to be crowded, usually 「こんで いる」: 「でんしゃが こんで いる」, 「みちが こむ」. The opposite is 「すいて いる」."
     },
     "wrong": [
       null,
       {
-        "zh": "过马路时留意车辆是「くるまに ちゅういして」或「きを つけて」。",
-        "en": "Watching out for cars is 「くるまに ちゅういして」 or 「きを つけて」."
+        "zh": "往咖啡里加牛奶是「いれて」或「まぜて」。",
+        "en": "Adding milk to coffee is 「いれて」 or 「まぜて」."
       },
       {
-        "zh": "锁好门后放心了是「あんしんです」，「しんぱい」意思正好相反。",
-        "en": "Feeling safe after locking up is 「あんしんです」; 「しんぱい」 is the opposite."
+        "zh": "把行李装进包里是「つめました」「いれました」。",
+        "en": "Packing luggage into a bag is 「つめました」 or 「いれました」."
       },
       {
-        "zh": "问旅行准备好了没有是「じゅんび（ようい）は できましたか」。",
-        "en": "\"Are you ready for the trip?\" is 「じゅんび（ようい）は できましたか」."
+        "zh": "作业积了很多是「たまって」。",
+        "en": "Homework piling up is 「たまって」."
       }
     ]
   },
   {
-    "id": "n4-mg-505",
+    "id": "n4-mg-531",
     "type": "youhou",
-    "refs": [
-      "lesson31#vocab"
-    ],
     "difficulty": 1,
-    "stem": "<<なれる>>",
+    "stem": "<<わる>>",
     "options": [
-      "にほんの せいかつに やっと なれました。",
-      "ながい あいだ あるいたので、あしが なれました。",
-      "でんしゃが なれたので、タクシーで いきました。",
-      "この くすりを のんだら、ねつが なれました。"
+      "さらを あらって いる とき、1まい わって しまいました。",
+      "かみを はさみで 2まいに わりました。",
+      "ともだちとの やくそくを わって しまいました。",
+      "こどもが あそんで いて、ズボンを わりました。"
     ],
     "okj": [
-      "日本の生活にやっと慣れました。",
-      "長い間歩いたので、足が慣れました。",
-      "電車が慣れたので、タクシーで行きました。",
-      "この薬を飲んだら、熱が慣れました。"
+      "皿を洗っているとき、1枚割ってしまいました。",
+      "紙をはさみで2枚に割りました。",
+      "友達との約束を割ってしまいました。",
+      "子供が遊んでいて、ズボンを割りました。"
     ],
     "answer": 0,
     "tr": {
-      "zh": "なれる（慣れる）：习惯。正确句：我终于习惯日本的生活了。",
-      "en": "なれる: to get used to. Correct: I've finally got used to life in Japan."
+      "zh": "わる（割る）：打碎、打破。正确句：洗盘子的时候打碎了一个。",
+      "en": "わる: to break (something brittle). Correct: I broke a plate while washing up."
     },
     "why": {
-      "zh": "线索：正确句的对象是「にほんの せいかつ」这种新环境，过了一段时间「やっと」适应了。\n词义：「なれる」（慣れる）＝习惯、适应，用「〜に なれる」：「しごとに なれる」「あたらしい がっこうに なれる」；「なれて いる」＝已经习惯了。",
-      "en": "Clue: in the right sentence the object is a new environment, 「にほんの せいかつ」, adapted to 「やっと」 after a while.\nMeaning: 「なれる」 (慣れる) is getting used to something, with 「に」: 「しごとに なれる」, 「あたらしい がっこうに なれる」; 「なれて いる」 means already used to it."
+      "zh": "线索：正确句里碎的是「さら」，盘子、玻璃这类硬而脆的东西。\n词义：「わる」（割る）＝打碎、劈开：「さらを わる」「たまごを わる」；自动词是「われる」：「コップが われる」。",
+      "en": "Clue: in the right sentence it's a 「さら」 — something hard and brittle — that breaks.\nMeaning: 「わる」 (割る) is to break or split: 「さらを わる」, 「たまごを わる」. The intransitive is 「われる」: 「コップが われる」."
     },
     "wrong": [
       null,
       {
-        "zh": "走久了脚累是「つかれました」。",
-        "en": "Tired feet after a long walk are 「つかれました」."
+        "zh": "用剪刀剪纸是「きりました」。",
+        "en": "Cutting paper with scissors is 「きりました」."
       },
       {
-        "zh": "电车晚点是「おくれた」。",
-        "en": "A late train is 「おくれた」."
+        "zh": "失约是「やくそくを やぶって」。",
+        "en": "Breaking a promise is 「やくそくを やぶって」."
       },
       {
-        "zh": "退烧是「ねつが さがりました」。",
-        "en": "A fever going down is 「ねつが さがりました」."
+        "zh": "裤子撕破是「やぶりました」（或「やぶれました」）。",
+        "en": "Tearing trousers is 「やぶりました」 (or 「やぶれました」)."
       }
     ]
   },
@@ -855,47 +843,44 @@
     ]
   },
   {
-    "id": "n4-mg-520",
+    "id": "n4-mg-528",
     "type": "youhou",
-    "refs": [
-      "lesson25#vocab"
-    ],
     "difficulty": 1,
-    "stem": "<<へんじ>>",
+    "stem": "<<わかす>>",
     "options": [
-      "メールを おくりましたが、まだ へんじが きません。",
-      "としょかんで かりた ほんを へんじしました。",
-      "テストの へんじを ノートに かきました。",
-      "わからない ことは せんせいに へんじして ください。"
+      "おゆを わかして、おちゃを いれました。",
+      "あらった シャツを そとで わかしました。",
+      "みずを わかして、こおりを つくりました。",
+      "れいぞうこの ごはんを わかして たべました。"
     ],
     "okj": [
-      "メールを送りましたが、まだ返事が来ません。",
-      "図書館で借りた本を返事しました。",
-      "テストの返事をノートに書きました。",
-      "分からないことは先生に返事してください。"
+      "お湯を沸かして、お茶を入れました。",
+      "洗ったシャツを外で沸かしました。",
+      "水を沸かして、氷を作りました。",
+      "冷蔵庫のご飯を沸かして食べました。"
     ],
     "answer": 0,
     "tr": {
-      "zh": "へんじ（返事）：回复、答复。正确句：我发了邮件，但还没有回复。",
-      "en": "へんじ: a reply. Correct: I sent an email, but I haven't had a reply yet."
+      "zh": "わかす（沸かす）：烧开、烧热（水）。正确句：我烧了开水泡茶。",
+      "en": "わかす: to boil (water). Correct: I boiled water and made tea."
     },
     "why": {
-      "zh": "线索：正确句是「メールを おくりました」，在等对方回信。\n词义：「へんじ」（返事）＝回复、答复，是对信、邮件、问话的回答，常说「へんじが くる」「へんじを する」「へんじを まつ」。",
-      "en": "Clue: in the right sentence 「メールを おくりました」 — waiting for the other person to answer.\nMeaning: 「へんじ」 (返事) is a reply to a letter, email or question: 「へんじが くる」, 「へんじを する」, 「へんじを まつ」."
+      "zh": "线索：正确句是把水烧开后「おちゃを いれました」。\n词义：「わかす」（沸かす）＝把水烧开、把洗澡水烧热：「おゆを わかす」「おふろを わかす」；自动词是「わく」：「おゆが わく」。",
+      "en": "Clue: in the right sentence the water is boiled and then 「おちゃを いれました」.\nMeaning: 「わかす」 (沸かす) is to boil water or heat a bath: 「おゆを わかす」, 「おふろを わかす」. The intransitive is 「わく」: 「おゆが わく」."
     },
     "wrong": [
       null,
       {
-        "zh": "还书是「かえしました」。",
-        "en": "Returning a library book is 「かえしました」."
+        "zh": "晾干衣服是「かわかしました」，只差一个字。",
+        "en": "Drying a shirt is 「かわかしました」 — one kana off."
       },
       {
-        "zh": "考试题的答案是「こたえ」。",
-        "en": "The answers to a test are 「こたえ」."
+        "zh": "做冰要把水冻上（「こおらせて」），烧开正好相反。",
+        "en": "Ice means freezing water (「こおらせて」), the opposite of boiling."
       },
       {
-        "zh": "不懂的事去问老师是「しつもんして」。",
-        "en": "Asking the teacher about what you don't understand is 「しつもんして」."
+        "zh": "热剩饭是「あたためて」；「わかす」只用于水、汤、洗澡水。",
+        "en": "Warming up rice is 「あたためて」; 「わかす」 is for water, soup and baths."
       }
     ]
   },

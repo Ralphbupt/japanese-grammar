@@ -1,76 +1,73 @@
 [
   {
-    "id": "n1-mg-101",
+    "id": "n1-mg-183",
     "type": "kanji",
-    "refs": [
-      "lesson82#vocab"
-    ],
     "difficulty": 2,
-    "stem": "被災地の状況を確かめるため、市長は自ら現地に<<赴いた>>。",
+    "stem": "この町は、観光による地域<<振興>>に力を入れている。",
     "options": [
-      "おもむいた",
-      "そむいた",
-      "うつむいた",
-      "ふりむいた"
+      "しんこう",
+      "しんきょう",
+      "しんごう",
+      "じんこう"
     ],
     "answer": 0,
     "tr": {
-      "zh": "为了确认灾区的情况，市长亲自前往了当地。",
-      "en": "To see the situation in the disaster area for himself, the mayor went there in person."
+      "zh": "这个镇正致力于通过旅游来振兴地方。",
+      "en": "This town is putting its effort into reviving the area through tourism."
     },
     "why": {
-      "zh": "「赴く（おもむく）」：前往、奔赴（郑重的说法）。",
-      "en": "「赴く」 is おもむく: to go to, proceed to (formal)."
+      "zh": "「振興（しんこう）」：振兴，常说「地域振興」「産業の振興」。「興」在这里读「こう」（如「復興」）。",
+      "en": "「振興」 is しんこう: promotion, revitalization (「地域振興」, 「産業の振興」). 興 is こう here, as in 「復興」."
     },
     "wrong": [
       null,
       {
-        "zh": "「そむく」是「背く」（违背）。",
-        "en": "そむく is 「背く」, to disobey."
+        "zh": "「興」读「きょう」只在「興味」「興奮」等词里，「振興」读「こう」。",
+        "en": "興 is きょう only in words like 「興味」, 「興奮」; in 「振興」 it's こう."
       },
       {
-        "zh": "「うつむく」是「俯く」（低头）。",
-        "en": "うつむく is 「俯く」, to look down."
+        "zh": "「こう」是清音；「しんごう」是「信号」（信号灯）。",
+        "en": "こう is unvoiced; しんごう is 「信号」 (traffic light)."
       },
       {
-        "zh": "「ふりむく」是「振り向く」（回头）。",
-        "en": "ふりむく is 「振り向く」, to turn round."
+        "zh": "「振」是清音「しん」；「じんこう」是「人口」或「人工」。",
+        "en": "振 is unvoiced しん; じんこう is 「人口」 or 「人工」."
       }
     ]
   },
   {
-    "id": "n1-mg-102",
+    "id": "n1-mg-184",
     "type": "kanji",
     "difficulty": 2,
-    "stem": "彼女は語学に<<秀でて>>おり、五か国語を自由に操る。",
+    "stem": "経済が成長する一方で、<<貧富>>の差はかえって広がった。",
     "options": [
-      "ひいでて",
-      "しゅうでて",
-      "ひでて",
-      "すぐでて"
+      "ひんぷ",
+      "ひんふ",
+      "びんぷ",
+      "ひんぶ"
     ],
     "answer": 0,
     "tr": {
-      "zh": "她在语言方面出类拔萃，能自如地运用五种语言。",
-      "en": "She excels at languages and handles five of them with ease."
+      "zh": "经济增长的同时，贫富差距反而扩大了。",
+      "en": "While the economy grew, the gap between rich and poor actually widened."
     },
     "why": {
-      "zh": "「秀でる（ひいでる）」：优秀、出众，常说「〜に秀でる」。",
-      "en": "「秀でる」 is ひいでる: to excel (「〜に秀でる」)."
+      "zh": "「貧富（ひんぷ）」：贫富，常说「貧富の差」「貧富の格差」。「富」接在「ん」后变成半浊音「ぷ」。",
+      "en": "「貧富」 is ひんぷ: rich and poor (「貧富の差」). After ん, 富 becomes ぷ."
     },
     "wrong": [
       null,
       {
-        "zh": "「しゅう」是「秀」的音读（如「優秀」），这个动词用训读。",
-        "en": "しゅう is the on reading (as in 「優秀」); the verb uses the kun reading."
+        "zh": "「富」接在「ん」后面要变成半浊音「ぷ」。",
+        "en": "After ん, 富 changes to ぷ."
       },
       {
-        "zh": "是长音「ひい」，不能缩短成「ひ」。",
-        "en": "It's ひい with a long vowel, not ひ."
+        "zh": "「貧」读「びん」只在「貧乏（びんぼう）」里，「貧富」读「ひん」。",
+        "en": "貧 is びん only in 「貧乏」; in 「貧富」 it's ひん."
       },
       {
-        "zh": "「すぐれる」写作「優れる」；「秀でる」读「ひいでる」。",
-        "en": "すぐれる is 「優れる」; 「秀でる」 is ひいでる."
+        "zh": "是半浊音「ぷ」，不是浊音「ぶ」。",
+        "en": "It's ぷ (half-voiced), not ぶ."
       }
     ]
   },
@@ -517,38 +514,38 @@
     ]
   },
   {
-    "id": "n1-mg-115",
+    "id": "n1-mg-181",
     "type": "kanji",
     "difficulty": 2,
-    "stem": "公の場では、誤解を招くような発言は<<慎む>>べきだ。",
+    "stem": "家主の<<承諾>>を得ずに、部屋で猫を飼ってはいけない。",
     "options": [
-      "つつしむ",
-      "つつむ",
-      "いつくしむ",
-      "おしむ"
+      "しょうだく",
+      "じょうだく",
+      "しょうたく",
+      "しょだく"
     ],
     "answer": 0,
     "tr": {
-      "zh": "在公开场合，应当谨慎避免容易引起误解的言论。",
-      "en": "In public you should refrain from remarks that could be misunderstood."
+      "zh": "未经房东同意，不能在房间里养猫。",
+      "en": "You mustn't keep a cat in the flat without the landlord's consent."
     },
     "why": {
-      "zh": "「慎む（つつしむ）」：谨慎、节制（言行）。",
-      "en": "「慎む」 is つつしむ: to refrain from, be careful about (speech, conduct)."
+      "zh": "「承諾（しょうだく）」：同意、应允，常说「承諾を得る」「承諾する」。「承」读清音「しょう」，「諾」读浊音「だく」。",
+      "en": "「承諾」 is しょうだく: consent (「承諾を得る」). 承 is unvoiced しょう, 諾 is voiced だく."
     },
     "wrong": [
       null,
       {
-        "zh": "「つつむ」是「包む」（包）。",
-        "en": "つつむ is 「包む」 (to wrap)."
+        "zh": "「承」是清音「しょう」（如「承認」），不浊化成「じょう」。",
+        "en": "承 is unvoiced しょう (as in 「承認」), not じょう."
       },
       {
-        "zh": "「いつくしむ」是「慈しむ」（疼爱）。",
-        "en": "いつくしむ is 「慈しむ」 (to cherish)."
+        "zh": "「諾」读浊音「だく」（如「受諾」），不是「たく」。",
+        "en": "諾 is voiced だく (as in 「受諾」), not たく."
       },
       {
-        "zh": "「おしむ」是「惜しむ」（珍惜、吝惜）。",
-        "en": "おしむ is 「惜しむ」, to begrudge or value."
+        "zh": "「承」是长音「しょう」，不能缩短成「しょ」。",
+        "en": "承 has a long vowel: しょう, not しょ."
       }
     ]
   },
@@ -1597,7 +1594,7 @@
     "options": [
       "たたえた",
       "ほめた",
-      "となえた",
+      "そなえた",
       "しょうえた"
     ],
     "answer": 0,
@@ -1616,8 +1613,8 @@
         "en": "ほめる is 「褒める」, to praise."
       },
       {
-        "zh": "「となえる」是「唱える」（倡导）。",
-        "en": "となえる is 「唱える」, to advocate."
+        "zh": "「そなえる」是「備える／供える」（准备；供奉），不是「称」的读音。",
+        "en": "そなえる is 「備える／供える」 (prepare; offer), not a reading of 称."
       },
       {
         "zh": "「称」的音读「しょう」不用于这个动词。",
@@ -2562,38 +2559,38 @@
     ]
   },
   {
-    "id": "n1-mg-171",
+    "id": "n1-mg-182",
     "type": "kanji",
     "difficulty": 2,
-    "stem": "政府は再生可能エネルギーの利用を<<奨励>>している。",
+    "stem": "新年の<<抱負>>を聞かれ、毎朝三十分走ることだと答えた。",
     "options": [
-      "しょうれい",
-      "そうれい",
-      "しょうりょう",
-      "しょうれ"
+      "ほうふ",
+      "ほうぶ",
+      "ぼうふ",
+      "ほふ"
     ],
     "answer": 0,
     "tr": {
-      "zh": "政府在奖励使用可再生能源。",
-      "en": "The government encourages the use of renewable energy."
+      "zh": "被问到新年的抱负时，我回答说是每天早上跑三十分钟。",
+      "en": "Asked for my New Year's resolution, I said it was to run for thirty minutes every morning."
     },
     "why": {
-      "zh": "「奨励（しょうれい）」：奖励、鼓励。",
-      "en": "「奨励」 is しょうれい: encouragement, promotion."
+      "zh": "「抱負（ほうふ）」：抱负、打算，常说「新年の抱負」「抱負を語る」。「抱」读「ほう」，「負」读清音「ふ」。",
+      "en": "「抱負」 is ほうふ: aspiration, resolution (「新年の抱負」, 「抱負を語る」). 抱 is ほう, 負 is unvoiced ふ."
     },
     "wrong": [
       null,
       {
-        "zh": "「奨」读「しょう」，不是「そう」。",
-        "en": "奨 is しょう, not そう."
+        "zh": "「負」在这里读清音「ふ」（如「負担」），不浊化成「ぶ」。",
+        "en": "負 stays unvoiced ふ here; it doesn't become ぶ in this word."
       },
       {
-        "zh": "「励」读「れい」，不是「りょう」。",
-        "en": "励 is れい, not りょう."
+        "zh": "「抱」读清音「ほう」；「ぼうふ」是「防腐」（防腐）。",
+        "en": "抱 is unvoiced ほう; ぼうふ is 「防腐」 (preserving against decay)."
       },
       {
-        "zh": "「励」是长音「れい」。",
-        "en": "励 is long れい."
+        "zh": "「抱」是长音「ほう」，不能缩短成「ほ」。",
+        "en": "抱 has a long vowel: ほう, not ほ."
       }
     ]
   },

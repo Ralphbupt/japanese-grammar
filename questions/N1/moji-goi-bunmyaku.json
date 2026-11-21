@@ -36,257 +36,254 @@
     ]
   },
   {
-    "id": "n1-mg-302",
-    "rev": 3,
+    "id": "n1-mg-384",
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "社長の不祥事が明るみに出て、会社の信用は一気に（　）。",
+    "stem": "朝から空が（　）と曇っていて、今にも雨が降り出しそうだ。",
     "options": [
-      "失墜した",
-      "転落した",
-      "衰退した",
-      "低迷した"
+      "どんより",
+      "ひっそり",
+      "げっそり",
+      "うっとり"
     ],
     "answer": 0,
     "tr": {
-      "zh": "社长的丑闻曝光后，公司的信誉一下子扫地。",
-      "en": "When the president's scandal came to light, the company's credibility collapsed overnight."
+      "zh": "从早上起天就阴沉沉的，眼看就要下雨了。",
+      "en": "The sky has been heavy and grey since morning; it looks like it could rain any minute."
     },
     "why": {
-      "zh": "线索：主语是「会社の信用」，丑闻曝光后「一気に」——信誉一下子丧失。\n词义：「失墜」（しっつい）＝（信用、权威）丧失、扫地，固定搭配「信用が失墜する」「権威を失墜させる」。",
-      "en": "Clue: the subject is 「会社の信用」, lost 「一気に」 once the scandal broke.\nMeaning: 「失墜」 (しっつい) is the collapse of trust or authority: 「信用が失墜する」, 「権威を失墜させる」."
+      "zh": "线索：「空が（　）と曇っていて」「今にも雨が降り出しそう」，修饰阴天的样子。\n词义：「どんより」＝（天空）阴沉沉、（眼神、空气）浑浊，常说「どんより曇る」「どんよりした空」「どんよりした目」。",
+      "en": "Clue: 「空が（　）と曇っていて」, 「今にも雨が降り出しそう」 — it describes how the sky is overcast.\nMeaning: 「どんより」 is heavy and dull (sky), clouded (eyes, air): 「どんより曇る」, 「どんよりした空」, 「どんよりした目」."
     },
     "wrong": [
       null,
       {
-        "zh": "「転落」是从高处或地位上跌落（「最下位に転落」），不说「信用が転落する」。",
-        "en": "「転落」 is falling from a height or rank (「最下位に転落」); 「信用が転落する」 isn't said."
+        "zh": "「ひっそり」是静悄悄、冷清（「ひっそりと静まり返る」），不形容天空阴沉。",
+        "en": "「ひっそり」 is hushed, deserted (「ひっそりと静まり返る」), not an overcast sky."
       },
       {
-        "zh": "「衰退」是产业、国家等慢慢衰落，和「一気に」矛盾，也不接「信用」。",
-        "en": "「衰退」 is a slow decline of an industry or nation; it clashes with 「一気に」 and doesn't take 「信用」."
+        "zh": "「げっそり」是人突然消瘦、或泄气（「げっそりやせる」），不用于天气。",
+        "en": "「げっそり」 is suddenly gaunt or dispirited (「げっそりやせる」), not weather."
       },
       {
-        "zh": "「低迷」是业绩、景气长期不振，不用于信用的丧失。",
-        "en": "「低迷」 is a long slump in sales or the economy, not a loss of trust."
+        "zh": "「うっとり」是陶醉、入迷（「音楽にうっとりする」），与阴天无关。",
+        "en": "「うっとり」 is enraptured (「音楽にうっとりする」), nothing to do with clouds."
       }
     ]
   },
   {
-    "id": "n1-mg-303",
+    "id": "n1-mg-385",
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "住民の（　）を得ないまま、市はごみ処理場の建設を決めてしまった。",
+    "stem": "子どもたちは有り余るエネルギーを（　）させるように、公園を思い切り走り回っていた。",
     "options": [
-      "コンセンサス",
-      "ニュアンス",
-      "メカニズム",
-      "ジンクス"
+      "発散",
+      "分散",
+      "解散",
+      "退散"
     ],
     "answer": 0,
     "tr": {
-      "zh": "在没有取得居民共识的情况下，市里就决定了修建垃圾处理厂。",
-      "en": "The city decided to build the waste plant without getting the residents' agreement."
+      "zh": "孩子们像是要把用不完的精力释放出来似的，在公园里尽情地跑来跑去。",
+      "en": "The children were tearing round the park as if to burn off all their surplus energy."
     },
     "why": {
-      "zh": "线索：「住民の（　）を得ないまま」「決めてしまった」，修建前本该先取得居民的一致同意。\n词义：「コンセンサス」＝（相关各方的）共识、一致同意，常说「コンセンサスを得る」「コンセンサスを形成する」；意思相近的汉语词是「合意」（ごうい）。",
-      "en": "Clue: 「住民の（　）を得ないまま」, 「決めてしまった」 — what should have come first is the residents' agreement.\nMeaning: 「コンセンサス」 is consensus, the agreement of everyone concerned: 「コンセンサスを得る」, 「コンセンサスを形成する」. A close native word is 「合意」 (ごうい)."
+      "zh": "线索：「有り余るエネルギー」「思い切り走り回って」，把过剩的精力往外释放掉。\n词义：「発散」（はっさん）＝（精力、压力、热、气味等）散发、发泄，常说「ストレスを発散する」「エネルギーを発散させる」。",
+      "en": "Clue: 「有り余るエネルギー」, 「思い切り走り回って」 — letting surplus energy out.\nMeaning: 「発散」 (はっさん) is giving off or letting out (energy, stress, heat, smells): 「ストレスを発散する」, 「エネルギーを発散させる」."
     },
     "wrong": [
       null,
       {
-        "zh": "「ニュアンス」是细微差别，不能“取得”。",
-        "en": "「ニュアンス」 is a nuance; you can't obtain it from residents."
+        "zh": "「分散」是分开、分摊（「リスクを分散する」），尽情奔跑是把精力释放掉，不是分开。",
+        "en": "「分散」 is spreading or splitting (「リスクを分散する」); running wild lets the energy out, it doesn't divide it."
       },
       {
-        "zh": "「メカニズム」是机制、构造，不说「住民のメカニズムを得る」。",
-        "en": "「メカニズム」 is a mechanism; 「住民のメカニズムを得る」 makes no sense."
+        "zh": "「解散」是集会、团体解散（「グループが解散する」），宾语不能是精力。",
+        "en": "「解散」 is a group breaking up (「グループが解散する」); energy can't be its object."
       },
       {
-        "zh": "「ジンクス」是吉凶的说法，与取得同意无关。",
-        "en": "「ジンクス」 is a jinx or superstition, unrelated to agreement."
+        "zh": "「退散」是撤走、逃散（「敵が退散する」），不接「エネルギーを」。",
+        "en": "「退散」 is withdrawing or scattering in retreat (「敵が退散する」); it doesn't take 「エネルギーを」."
       }
     ]
   },
   {
-    "id": "n1-mg-304",
-    "rev": 4,
+    "id": "n1-mg-386",
     "type": "bunmyaku",
     "difficulty": 3,
-    "stem": "彼は実力がありながら（　）なところが少しもなく、新人にも丁寧に接する。",
+    "stem": "その俳優の人気は（　）で、彼が出演するだけで映画の興行成績が大きく変わる。",
     "options": [
-      "傲慢",
-      "軽率",
-      "貧弱",
-      "陰気"
+      "絶大",
+      "膨大",
+      "莫大",
+      "甚大"
     ],
     "answer": 0,
     "tr": {
-      "zh": "他明明有实力，却一点也不傲慢，对新人也很礼貌。",
-      "en": "Despite his ability, he is not at all arrogant and treats even newcomers politely."
+      "zh": "那位演员的人气极高，只要他出演，电影的票房就会大不一样。",
+      "en": "That actor's popularity is enormous: his appearing in a film is enough to change its box office."
     },
     "why": {
-      "zh": "线索：「実力がありながら」「新人にも丁寧に接する」——有本事的人容易摆架子，他却不这样。\n词义：「傲慢」（ごうまん）＝高傲、自大，看不起别人，常说「傲慢な態度」「傲慢な人」。",
-      "en": "Clue: 「実力がありながら」 and 「新人にも丁寧に接する」 — a capable person might be expected to look down on others, but he does not.\nMeaning: 「傲慢」 (ごうまん) is arrogant, looking down on others: 「傲慢な態度」, 「傲慢な人」."
+      "zh": "线索：主语是「人気」，只要出演就能左右票房，说明人气极高。\n词义：「絶大」（ぜつだい）＝（人气、信赖、效果、权力）极大，常说「絶大な人気」「絶大な信頼を得る」「効果は絶大だ」。\n辨析：「膨大・莫大」形容数量、金额多，不形容人气。",
+      "en": "Clue: the subject is 「人気」, so strong that one appearance moves the box office.\nMeaning: 「絶大」 (ぜつだい) is tremendous (popularity, trust, effect, power): 「絶大な人気」, 「絶大な信頼を得る」, 「効果は絶大だ」.\nContrast: 「膨大」 and 「莫大」 describe large quantities or sums, not popularity."
     },
     "wrong": [
       null,
       {
-        "zh": "「軽率」是草率、考虑不周，与「実力がありながら」「新人にも丁寧」的转折不搭。",
-        "en": "「軽率」 is rash, thoughtless; it doesn't fit the contrast of 「実力がありながら」 and politeness to newcomers."
+        "zh": "「膨大」是数量庞大（「膨大なデータ」「膨大な資料」），不说「人気が膨大」。",
+        "en": "「膨大」 is a vast quantity (「膨大なデータ」); 「人気が膨大」 isn't said."
       },
       {
-        "zh": "「貧弱」是贫乏、单薄，与有实力矛盾。",
-        "en": "「貧弱」 is meagre, poor; it contradicts having ability."
+        "zh": "「莫大」是金额、财产巨大（「莫大な費用」「莫大な遺産」），不形容人气。",
+        "en": "「莫大」 is a huge sum (「莫大な費用」, 「莫大な遺産」), not popularity."
       },
       {
-        "zh": "「陰気」是阴郁，与“对新人也礼貌”没有逻辑关联。",
-        "en": "「陰気」 is gloomy, with no link to being polite to newcomers."
+        "zh": "「甚大」只用于损害、影响严重（「被害は甚大だ」），用在人气上不对。",
+        "en": "「甚大」 is only for serious damage (「被害は甚大だ」); it can't describe popularity."
       }
     ]
   },
   {
-    "id": "n1-mg-305",
-    "rev": 3,
+    "id": "n1-mg-387",
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "新しい制度を実施するまでに、解決しなければならない課題が（　）している。",
+    "stem": "この発見は、感染症の新しい治療法の確立に大きく（　）した。",
     "options": [
-      "山積",
-      "充満",
-      "密集",
-      "殺到"
+      "寄与",
+      "付与",
+      "授与",
+      "贈与"
     ],
     "answer": 0,
     "tr": {
-      "zh": "在实施新制度之前，有待解决的课题堆积如山。",
-      "en": "There's a mountain of issues to resolve before the new system can be put in place."
+      "zh": "这一发现为确立传染病的新疗法做出了巨大贡献。",
+      "en": "This discovery contributed greatly to establishing a new treatment for infectious diseases."
     },
     "why": {
-      "zh": "线索：主语是「課題」，「解決しなければならない課題が（　）している」——要处理的事情堆得很多。\n词义：「山積」（さんせき）＝（问题、工作）堆积如山，固定搭配「課題が山積する」「問題が山積している」。",
-      "en": "Clue: the subject is 「課題」 that still have to be solved — a pile of things waiting.\nMeaning: 「山積」 (さんせき) is (problems, work) piling up: 「課題が山積する」, 「問題が山積している」."
+      "zh": "线索：「治療法の確立に大きく（　）した」，「〜に」表示贡献的方向，发现促成了疗法的确立。\n词义：「寄与」（きよ）＝贡献、有助于，常说「〜に寄与する」「社会の発展に寄与する」。",
+      "en": "Clue: 「治療法の確立に大きく（　）した」 — 「〜に」 marks what the discovery helped bring about.\nMeaning: 「寄与」 (きよ) is contributing to: 「〜に寄与する」, 「社会の発展に寄与する」."
     },
     "wrong": [
       null,
       {
-        "zh": "「充満」是气体、气味充满空间（「煙が充満する」），不接「課題」。",
-        "en": "「充満」 is gas or a smell filling a space (「煙が充満する」); it doesn't take 「課題」."
+        "zh": "「付与」是授予权限、资格等（「権限を付与する」），要用「〜を付与する」，不表示贡献。",
+        "en": "「付与」 is granting rights or status (「権限を付与する」); it needs 「〜を」 and doesn't mean contribute."
       },
       {
-        "zh": "「密集」是房屋、人等密集在一处（「住宅が密集する」），不说课题密集。",
-        "en": "「密集」 is houses or people packed together (「住宅が密集する」), not issues."
+        "zh": "「授与」是授予奖状、学位（「学位を授与する」），主语是授予方，不是发现。",
+        "en": "「授与」 is awarding a prize or degree (「学位を授与する」); a discovery doesn't award anything."
       },
       {
-        "zh": "「殺到」是蜂拥而至（「注文が殺到する」），不表示问题堆积未解决。",
-        "en": "「殺到」 is rushing in (「注文が殺到する」), not issues piling up unsolved."
+        "zh": "「贈与」是赠与财产（「財産を贈与する」），是法律用语，与贡献无关。",
+        "en": "「贈与」 is giving property as a gift (「財産を贈与する」), a legal term, not contributing."
       }
     ]
   },
   {
-    "id": "n1-mg-306",
+    "id": "n1-mg-388",
     "type": "bunmyaku",
     "difficulty": 3,
-    "stem": "両社の主張は平行線をたどり、合併交渉は（　）に乗り上げた。",
+    "stem": "主力選手のけがが相次ぎ、チームの決勝進出が（　）いる。",
     "options": [
-      "暗礁",
-      "瀬戸際",
-      "土壇場",
-      "袋小路"
+      "危ぶまれて",
+      "惜しまれて",
+      "悔やまれて",
+      "尊ばれて"
     ],
     "answer": 0,
     "tr": {
-      "zh": "两家公司的主张互不相让，合并谈判触礁了。",
-      "en": "The two companies' positions never met, and the merger talks ran aground."
+      "zh": "主力球员接连受伤，球队能否进入决赛令人担忧。",
+      "en": "With injuries to key players piling up, the team's chances of reaching the final are in doubt."
     },
     "why": {
-      "zh": "线索：「平行線をたどり」「（　）に乗り上げた」，谈判卡住了，能“搁浅”上去的是暗礁。\n词义：「暗礁」（あんしょう）＝水下的礁石，比喻意想不到的障碍，常说「交渉が暗礁に乗り上げる」。",
-      "en": "Clue: 「平行線をたどり」 shows the talks stuck, and what you 「乗り上げる」 (run aground) on is a reef.\nMeaning: 「暗礁」 (あんしょう) is a hidden reef, figuratively an unexpected obstacle: 「交渉が暗礁に乗り上げる」."
+      "zh": "线索：「主力選手のけがが相次ぎ」，主力接连受伤，进决赛这件事变得令人担心。\n词义：「危ぶむ」（あやぶむ）＝担心、怀疑（能否实现），多用被动「〜が危ぶまれる」，如「開催が危ぶまれる」「存続が危ぶまれる」。",
+      "en": "Clue: 「主力選手のけがが相次ぎ」 — with key players injured, reaching the final looks doubtful.\nMeaning: 「危ぶむ」 (あやぶむ) is to fear for, doubt (whether something will happen), mostly passive: 「開催が危ぶまれる」, 「存続が危ぶまれる」."
     },
     "wrong": [
       null,
       {
-        "zh": "「瀬戸際」说「瀬戸際に立つ」（处于紧要关头），不与「乗り上げる」搭配。",
-        "en": "「瀬戸際」 is used as 「瀬戸際に立つ」 (on the brink), not with 「乗り上げる」."
+        "zh": "「惜しまれる」是令人惋惜（「引退が惜しまれる」），用于已经失去的东西，决赛还没开始。",
+        "en": "「惜しまれる」 is to be regretted (「引退が惜しまれる」), for something lost; the final hasn't happened yet."
       },
       {
-        "zh": "「土壇場」是最后关头，说「土壇場で」，不说「土壇場に乗り上げる」。",
-        "en": "「土壇場」 is the last moment (「土壇場で」); it doesn't go with 「乗り上げる」."
+        "zh": "「悔やまれる」是令人后悔（「あの判断が悔やまれる」），对象是过去的事。",
+        "en": "「悔やまれる」 is to be rued (「あの判断が悔やまれる」), about the past."
       },
       {
-        "zh": "「袋小路」也比喻走投无路，但说「袋小路に入り込む・陥る」，不说「乗り上げる」。",
-        "en": "「袋小路」 is also a dead end, but it is 「袋小路に入り込む・陥る」, not 「乗り上げる」."
+        "zh": "「尊ばれる」是受到尊重（「伝統が尊ばれる」），与伤病导致的担心无关。",
+        "en": "「尊ばれる」 is to be revered (「伝統が尊ばれる」), unrelated to worry over injuries."
       }
     ]
   },
   {
-    "id": "n1-mg-307",
+    "id": "n1-mg-389",
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "規制を厳しくしすぎると、かえって経済活動に（　）をもたらすことになる。",
+    "stem": "宇宙の誕生から現在までの百三十八億年を描いた、実に（　）な物語だ。",
     "options": [
-      "弊害",
-      "恩恵",
-      "余地",
-      "活気"
+      "壮大",
+      "盛大",
+      "強大",
+      "偉大"
     ],
     "answer": 0,
     "tr": {
-      "zh": "规定过严的话，反而会给经济活动带来弊端。",
-      "en": "Making regulations too strict ends up harming economic activity instead."
+      "zh": "这是一个描写了宇宙从诞生到现在一百三十八亿年的、规模宏大的故事。",
+      "en": "It's a truly epic story, covering the 13.8 billion years from the birth of the universe to now."
     },
     "why": {
-      "zh": "线索：「厳しくしすぎると」「かえって」，规定过严，反而带来坏处。\n词义：「弊害」（へいがい）＝某种做法带来的害处、弊端，常说「弊害をもたらす」「弊害が生じる」；带来好处则是「恩恵」（おんけい）。",
-      "en": "Clue: 「厳しくしすぎると」, 「かえって」 — rules that are too strict end up doing harm.\nMeaning: 「弊害」 (へいがい) is a harmful side effect of a practice: 「弊害をもたらす」, 「弊害が生じる」. The benefit side is 「恩恵」 (おんけい)."
+      "zh": "线索：「宇宙の誕生から現在までの百三十八億年」，故事的规模和时间跨度极大。\n词义：「壮大」（そうだい）＝宏大、雄伟（规模、构想），常说「壮大な計画」「壮大なスケール」「壮大な物語」。",
+      "en": "Clue: 「宇宙の誕生から現在までの百三十八億年」 — a story on a vast scale.\nMeaning: 「壮大」 (そうだい) is grand, magnificent in scale or vision: 「壮大な計画」, 「壮大なスケール」, 「壮大な物語」."
     },
     "wrong": [
       null,
       {
-        "zh": "「恩恵」是好处，与「かえって」（反而）以及“规定过严”的负面语气不符。",
-        "en": "「恩恵」 is a benefit; it clashes with 「かえって」 and \"too strict\"."
+        "zh": "「盛大」是仪式、活动隆重热闹（「盛大なパーティー」），不形容故事的规模。",
+        "en": "「盛大」 is a lavish event (「盛大なパーティー」), not the scale of a story."
       },
       {
-        "zh": "「余地」说「〜の余地がある」，不说「余地をもたらす」。",
-        "en": "「余地」 is 「〜の余地がある」, not 「余地をもたらす」."
+        "zh": "「強大」是力量、势力强大（「強大な軍事力」），不说「強大な物語」。",
+        "en": "「強大」 is mighty power (「強大な軍事力」); 「強大な物語」 isn't said."
       },
       {
-        "zh": "「活気をもたらす」是带来活力，是好结果，与「かえって」和“规定过严”矛盾。",
-        "en": "「活気をもたらす」 is bringing life — a good result, which clashes with 「かえって」."
+        "zh": "「偉大」是人物、成就伟大（「偉大な科学者」），这里强调的是规模，不是伟大。",
+        "en": "「偉大」 is a great person or achievement (「偉大な科学者」); the point here is scale."
       }
     ]
   },
   {
-    "id": "n1-mg-308",
+    "id": "n1-mg-381",
     "type": "bunmyaku",
     "difficulty": 1,
-    "stem": "これだけ証拠がそろっている以上、彼が犯人であることに疑いの（　）はない。",
+    "stem": "上司は口にこそ出さなかったが、私が転職を考えていることに（　）気づいていたらしい。",
     "options": [
-      "余地",
-      "余白",
-      "余波",
-      "余興"
+      "うすうす",
+      "まざまざ",
+      "ひしひし",
+      "しみじみ"
     ],
     "answer": 0,
     "tr": {
-      "zh": "既然证据这么齐全，他是犯人这一点毫无怀疑的余地。",
-      "en": "With this much evidence, there's no room for doubt that he did it."
+      "zh": "上司虽然嘴上没说，但似乎早已隐约察觉到我在考虑跳槽。",
+      "en": "My boss never said anything, but it seems he'd vaguely sensed I was thinking of changing jobs."
     },
     "why": {
-      "zh": "线索：「証拠がそろっている以上」「疑いの（　）はない」，证据齐全，没有可以怀疑的空间。\n词义：「余地」（よち）＝还能容纳某事的空间、可能，常说「疑いの余地はない」「選択の余地がない」「議論の余地がある」。",
-      "en": "Clue: 「証拠がそろっている以上」, 「疑いの（　）はない」 — with that much evidence there's no room left for doubt.\nMeaning: 「余地」 (よち) is room or scope for something: 「疑いの余地はない」, 「選択の余地がない」, 「議論の余地がある」."
+      "zh": "线索：「口にこそ出さなかったが」「気づいていたらしい」，没人明说，上司是自己隐约察觉的。\n词义：「うすうす」（薄々）＝隐约、模模糊糊地（知道、感觉到），常说「うすうす気づく」「うすうす感じる」。",
+      "en": "Clue: 「口にこそ出さなかったが」, 「気づいていたらしい」 — nobody told him; he picked it up vaguely.\nMeaning: 「うすうす」 (薄々) is vaguely, dimly (knowing or sensing): 「うすうす気づく」, 「うすうす感じる」."
     },
     "wrong": [
       null,
       {
-        "zh": "「余白」是纸面的空白处，不说「疑いの余白」。",
-        "en": "「余白」 is blank space on a page; 「疑いの余白」 isn't said."
+        "zh": "「まざまざ」是清清楚楚地（看见、想起），说「まざまざと見せつけられる」，与隐约察觉相反。",
+        "en": "「まざまざ」 is vividly (「まざまざと見せつけられる」) — the opposite of a vague hunch."
       },
       {
-        "zh": "「余波」是余波、影响，与怀疑无关。",
-        "en": "「余波」 is aftermath, unrelated to doubt."
+        "zh": "「ひしひし」是强烈地感到（「ひしひしと感じる」），不接「気づく」。",
+        "en": "「ひしひし」 is feeling something keenly (「ひしひしと感じる」); it doesn't go with 「気づく」."
       },
       {
-        "zh": "「余興」是余兴节目，与怀疑无关。",
-        "en": "「余興」 is entertainment at a party, unrelated to doubt."
+        "zh": "「しみじみ」是深切地感受、回味（「しみじみ思う」），不用于察觉别人的打算。",
+        "en": "「しみじみ」 is feeling deeply (「しみじみ思う」), not catching on to someone's plans."
       }
     ]
   },
@@ -327,74 +324,74 @@
     ]
   },
   {
-    "id": "n1-mg-310",
+    "id": "n1-mg-390",
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "会議で反対意見が出ないよう、事前に関係者への（　）を済ませておいた。",
+    "stem": "二つのチームの実力の差は（　）としていて、試合は前半でほぼ決まってしまった。",
     "options": [
-      "根回し",
-      "下見",
-      "手分け",
-      "下心"
+      "歴然",
+      "漠然",
+      "毅然",
+      "平然"
     ],
     "answer": 0,
     "tr": {
-      "zh": "为了不在会上出现反对意见，事先和相关人员疏通好了。",
-      "en": "So that no one would object at the meeting, I'd squared it with everyone involved beforehand."
+      "zh": "两支队伍的实力差距一目了然，比赛在上半场就基本分出了胜负。",
+      "en": "The gap between the two teams was obvious; the game was all but decided in the first half."
     },
     "why": {
-      "zh": "线索：「会議で反対意見が出ないよう」「事前に関係者への」，开会前先向相关的人打招呼、取得理解。\n词义：「根回し」（ねまわし）＝正式决定前私下疏通、事先取得同意，常说「根回しをする」「関係者に根回しする」。",
-      "en": "Clue: 「会議で反対意見が出ないよう」, 「事前に関係者への」 — talking the people involved round before the meeting.\nMeaning: 「根回し」 (ねまわし) is laying the groundwork, quietly getting people's agreement before a formal decision: 「根回しをする」, 「関係者に根回しする」."
+      "zh": "线索：「実力の差は（　）としていて」「前半でほぼ決まってしまった」，差距明显到上半场就定了胜负。\n词义：「歴然」（れきぜん）＝清清楚楚、一目了然，常说「差は歴然としている」「歴然とした証拠」。",
+      "en": "Clue: 「実力の差は（　）としていて」, 「前半でほぼ決まってしまった」 — the gap was so plain the first half settled it.\nMeaning: 「歴然」 (れきぜん) is obvious, unmistakable: 「差は歴然としている」, 「歴然とした証拠」."
     },
     "wrong": [
       null,
       {
-        "zh": "「下見」是事先察看场地，不是对“人”做的。",
-        "en": "「下見」 is checking out a place in advance, not people."
+        "zh": "「漠然」是模糊、笼统（「漠然とした不安」），与差距明显到上半场就定胜负矛盾。",
+        "en": "「漠然」 is vague (「漠然とした不安」), which contradicts a game decided in the first half."
       },
       {
-        "zh": "「手分け」是分工合作，不能“对相关人员”做。",
-        "en": "「手分け」 is splitting up work; it isn't done \"to\" people."
+        "zh": "「毅然」是态度坚决（「毅然とした態度」），形容人，不形容差距。",
+        "en": "「毅然」 is resolute (「毅然とした態度」), describing people, not a gap."
       },
       {
-        "zh": "「下心」是不良的企图，不能“办完”。",
-        "en": "「下心」 is an ulterior motive; you can't \"get it done\"."
+        "zh": "「平然」是若无其事、满不在乎（「平然とうそをつく」），形容人的态度。",
+        "en": "「平然」 is unruffled (「平然とうそをつく」), describing a person's manner."
       }
     ]
   },
   {
-    "id": "n1-mg-311",
+    "id": "n1-mg-391",
     "type": "bunmyaku",
     "difficulty": 3,
-    "stem": "ずっと迷っていたが、ようやく会社を辞める（　）がついた。",
+    "stem": "同じ質問をしても、人によって答えは（　）で、一つの結論にまとめるのは難しかった。",
     "options": [
-      "踏ん切り",
-      "見切り",
-      "決まり",
-      "歯止め"
+      "まちまち",
+      "まばら",
+      "うやむや",
+      "なおざり"
     ],
     "answer": 0,
     "tr": {
-      "zh": "一直犹豫不决，终于下定决心辞职了。",
-      "en": "I'd been torn for ages, but I've finally made up my mind to quit."
+      "zh": "即使问同样的问题，每个人的回答也各不相同，很难归纳成一个结论。",
+      "en": "Even with the same question, the answers varied from person to person, so it was hard to boil them down to one conclusion."
     },
     "why": {
-      "zh": "线索：「ずっと迷っていた」「ようやく」「（　）がついた」，犹豫很久后终于下了决心。\n词义：「踏ん切り」（ふんぎり）＝下定决心、断然决定，常说「踏ん切りがつく」「踏ん切りがつかない」。",
-      "en": "Clue: 「ずっと迷っていた」, 「ようやく」, 「（　）がついた」 — after long hesitation, the mind is finally made up.\nMeaning: 「踏ん切り」 (ふんぎり) is resolve, making up your mind: 「踏ん切りがつく」, 「踏ん切りがつかない」."
+      "zh": "线索：「人によって答えは（　）」「一つの結論にまとめるのは難しかった」，每人回答都不一样。\n词义：「まちまち」＝各不相同、形形色色，常说「意見がまちまちだ」「人によってまちまちだ」。",
+      "en": "Clue: 「人によって答えは（　）」, 「一つの結論にまとめるのは難しかった」 — everyone answered differently.\nMeaning: 「まちまち」 is varied, differing from one to the next: 「意見がまちまちだ」, 「人によってまちまちだ」."
     },
     "wrong": [
       null,
       {
-        "zh": "「見切り」说「見切りをつける」（放弃、看透），不说「辞める見切りがつく」。",
-        "en": "「見切り」 is 「見切りをつける」 (give up on); 「辞める見切りがつく」 isn't said."
+        "zh": "「まばら」是稀稀落落（「客がまばらだ」），说的是数量少、分布稀，不是内容不同。",
+        "en": "「まばら」 is sparse (「客がまばらだ」) — few and scattered, not different from each other."
       },
       {
-        "zh": "「決まりがつく」是事情得到解决，不用于自己下决心。",
-        "en": "「決まりがつく」 is a matter being settled, not making up your mind."
+        "zh": "「うやむや」是含糊、不了了之（「問題がうやむやになる」），不表示人人不同。",
+        "en": "「うやむや」 is left vague or unresolved (「問題がうやむやになる」), not differing between people."
       },
       {
-        "zh": "「歯止めがかかる」是被制止，意思相反。",
-        "en": "「歯止め」 is a brake on something — the wrong idea."
+        "zh": "「なおざり」是敷衍、马虎（「勉強をなおざりにする」），与“各不相同”无关。",
+        "en": "「なおざり」 is neglectful (「勉強をなおざりにする」), unrelated to answers differing."
       }
     ]
   },
@@ -435,41 +432,38 @@
     ]
   },
   {
-    "id": "n1-mg-313",
+    "id": "n1-mg-392",
     "type": "bunmyaku",
-    "refs": [
-      "lesson91#vocab"
-    ],
     "difficulty": 2,
-    "stem": "少子化に（　）をかけるため、政府はさまざまな対策を打ち出している。",
+    "stem": "新商品の発売まであまり時間がないので、販売戦略を一からじっくり（　）必要がある。",
     "options": [
-      "歯止め",
-      "拍車",
-      "磨き",
-      "王手"
+      "練る",
+      "図る",
+      "諮る",
+      "募る"
     ],
     "answer": 0,
     "tr": {
-      "zh": "为了遏制少子化，政府推出了各种对策。",
-      "en": "To put a brake on the falling birth rate, the government is rolling out all sorts of measures."
+      "zh": "离新产品发售没多少时间了，需要从头仔细推敲销售战略。",
+      "en": "There isn't much time before the new product launches, so we need to work out the sales strategy carefully from scratch."
     },
     "why": {
-      "zh": "线索：「少子化に（　）をかける」「対策」，政府的对策是为了阻止少子化继续发展。\n词义：「歯止め」（はどめ）＝刹车、制止，常说「〜に歯止めをかける」「歯止めがかからない」。",
-      "en": "Clue: 「少子化に（　）をかける」, 「対策」 — the measures are meant to stop the decline.\nMeaning: 「歯止め」 (はどめ) is a brake, a check: 「〜に歯止めをかける」, 「歯止めがかからない」."
+      "zh": "线索：宾语是「販売戦略を」，再加「一からじっくり」，是从头反复推敲方案。\n词义：「練る」（ねる）＝推敲、仔细琢磨（计划、文章），常说「計画を練る」「作戦を練る」「構想を練る」。",
+      "en": "Clue: the object 「販売戦略を」 plus 「一からじっくり」 — going over a plan carefully from scratch.\nMeaning: 「練る」 (ねる) is to work out, polish (a plan, a text): 「計画を練る」, 「作戦を練る」, 「構想を練る」."
     },
     "wrong": [
       null,
       {
-        "zh": "「拍車をかける」句型相同，意思却是加速，政府不会想加速少子化。",
-        "en": "「拍車をかける」 fits the same frame but means speeding something up — the opposite of what the measures want."
+        "zh": "「図る」是谋求某种结果（「解決を図る」「向上を図る」），宾语是目标，不是战略本身。",
+        "en": "「図る」 is aiming at a result (「解決を図る」, 「向上を図る」); its object is a goal, not the strategy itself."
       },
       {
-        "zh": "「磨きをかける」是磨炼（技术），对象不能是少子化。",
-        "en": "「磨きをかける」 is to polish (a skill); it can't apply to the birth rate."
+        "zh": "「諮る」是向会议、专家咨询（「審議会に諮る」），要有「〜に」，不表示自己琢磨。",
+        "en": "「諮る」 is referring a matter to a committee (「審議会に諮る」); it needs 「〜に」 and isn't working something out yourself."
       },
       {
-        "zh": "「王手をかける」是将军、离胜利只差一步，与此无关。",
-        "en": "「王手をかける」 is to be one step from victory (check in shogi); it doesn't fit."
+        "zh": "「募る」是募集（「参加者を募る」），不说「戦略を募る」。",
+        "en": "「募る」 is to invite or recruit (「参加者を募る」); 「戦略を募る」 isn't said."
       }
     ]
   },
@@ -1133,40 +1127,38 @@
     ]
   },
   {
-    "id": "n1-mg-332",
-    "rev": 2,
+    "id": "n1-mg-382",
     "type": "bunmyaku",
-    "refs": [],
     "difficulty": 2,
-    "stem": "試験前の一夜（　）の勉強では、本当の実力はつかない。",
+    "stem": "朝から晩まで引っ越しの荷物を運び続けたので、夜にはもう（　）になって、夕飯も食べずに寝てしまった。",
     "options": [
-      "漬け",
-      "詰め",
-      "掛け",
-      "込み"
+      "へとへと",
+      "ひりひり",
+      "うずうず",
+      "がらがら"
     ],
     "answer": 0,
     "tr": {
-      "zh": "考试前临时抱佛脚式的学习，是长不了真本事的。",
-      "en": "Cramming the night before an exam won't build real ability."
+      "zh": "从早到晚一直在搬家搬东西，到了晚上已经精疲力尽，连晚饭都没吃就睡了。",
+      "en": "I carried boxes for the move from morning till night, and by evening I was so worn out I went to bed without dinner."
     },
     "why": {
-      "zh": "线索：「試験前の一夜（　）の勉強」，考试前一晚临时突击。\n词义：「〜漬け」（づけ）＝腌渍；「一夜漬け」（いちやづけ）原是只腌一夜的咸菜，比喻考前临时抱佛脚。接名词还可表示整天泡在某事里：「勉強漬け」「仕事漬け」。",
-      "en": "Clue: 「試験前の一夜（　）の勉強」 — studying crammed into the night before.\nMeaning: 「〜漬け」 (づけ) is pickling; 「一夜漬け」 (いちやづけ), originally pickles made overnight, means last-minute cramming. After a noun it can also mean steeped in something: 「勉強漬け」, 「仕事漬け」."
+      "zh": "线索：「朝から晩まで…運び続けた」「夕飯も食べずに寝てしまった」，干了一整天体力活，累得不行。\n词义：「へとへと」＝精疲力尽，常说「へとへとになる」「へとへとに疲れる」。",
+      "en": "Clue: 「朝から晩まで…運び続けた」, 「夕飯も食べずに寝てしまった」 — a full day of hauling leaves you exhausted.\nMeaning: 「へとへと」 is dead tired: 「へとへとになる」, 「へとへとに疲れる」."
     },
     "wrong": [
       null,
       {
-        "zh": "「〜詰め」是塞满、一直（缶詰・立ち詰め），没有「一夜詰め」。",
-        "en": "「〜詰め」 is packed or nonstop (缶詰・立ち詰め); there's no 「一夜詰め」."
+        "zh": "「ひりひり」是皮肤、伤口火辣辣地疼（「日焼けでひりひりする」），不是疲劳。",
+        "en": "「ひりひり」 is a stinging pain (「日焼けでひりひりする」), not tiredness."
       },
       {
-        "zh": "「〜掛け」是做到一半（読み掛け），没有「一夜掛け」。",
-        "en": "「〜掛け」 is half-done (読み掛け); there's no 「一夜掛け」."
+        "zh": "「うずうず」是跃跃欲试、心痒（「早く遊びたくてうずうずする」），与累得睡着相反。",
+        "en": "「うずうず」 is itching to do something — the opposite of collapsing into bed."
       },
       {
-        "zh": "「〜込み」是包含在内（税込み），没有「一夜込み」。",
-        "en": "「〜込み」 is included (税込み); there's no 「一夜込み」."
+        "zh": "「がらがら」是空荡荡或嗓子沙哑（「電車ががらがらだ」），不表示疲劳。",
+        "en": "「がらがら」 is empty or hoarse (「電車ががらがらだ」), not exhausted."
       }
     ]
   },
@@ -1864,38 +1856,38 @@
     ]
   },
   {
-    "id": "n1-mg-352",
+    "id": "n1-mg-383",
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "コンサートが終わっても、観客はしばらく感動の（　）に浸っていた。",
+    "stem": "二十年ぶりに故郷の駅に降り立つと、懐かしさと寂しさが（　）して、しばらく言葉が出なかった。",
     "options": [
-      "余韻",
-      "余波",
-      "余白",
-      "余暇"
+      "交錯",
+      "交代",
+      "混同",
+      "両立"
     ],
     "answer": 0,
     "tr": {
-      "zh": "音乐会结束后，观众仍久久沉浸在感动的余味中。",
-      "en": "Even after the concert ended, the audience stayed immersed in the afterglow for a while."
+      "zh": "时隔二十年在故乡的车站下车，怀念和寂寞交织在一起，一时说不出话来。",
+      "en": "Stepping off at my hometown station for the first time in twenty years, nostalgia and loneliness mingled, and for a while I couldn't speak."
     },
     "why": {
-      "zh": "线索：「終わっても」「浸っていた」，结束后留下的感觉。\n词义：「余韻」（よいん）＝事后留下的回味，「余韻に浸る」。",
-      "en": "Clue: After it ended, they were 「浸っていた」 in what remained.\nMeaning: 「余韻」 is a lingering feeling: 「余韻に浸る」."
+      "zh": "线索：「懐かしさと寂しさが（　）して」，两种感情同时涌上来、交织在一起。\n词义：「交錯」（こうさく）＝（感情、思绪、光线等）交错、交织，常说「期待と不安が交錯する」「思いが交錯する」。",
+      "en": "Clue: 「懐かしさと寂しさが（　）して」 — two feelings rising at once, tangled together.\nMeaning: 「交錯」 (こうさく) is mingling or intertwining of feelings, thoughts, lights: 「期待と不安が交錯する」, 「思いが交錯する」."
     },
     "wrong": [
       null,
       {
-        "zh": "「余波」是事件之后的影响，不搭配「浸る」。",
-        "en": "「余波」 is the aftermath, not something you 「浸る」 in."
+        "zh": "「交代」是轮流、换班（「運転を交代する」），两种感情是同时存在，不是轮换。",
+        "en": "「交代」 is taking turns (「運転を交代する」); the feelings come at once, not in shifts."
       },
       {
-        "zh": "「余白」是留白。",
-        "en": "「余白」 is blank space."
+        "zh": "「混同」是把两样东西弄混（「公私を混同する」），主语是人，不是感情自身。",
+        "en": "「混同」 is confusing two things (「公私を混同する」); a person does it, feelings don't."
       },
       {
-        "zh": "「余暇」是闲暇。",
-        "en": "「余暇」 is leisure."
+        "zh": "「両立」是兼顾（「仕事と育児を両立する」），说的是两件事都做好，与感情无关。",
+        "en": "「両立」 is managing both (「仕事と育児を両立する」), not feelings mixing."
       }
     ]
   },

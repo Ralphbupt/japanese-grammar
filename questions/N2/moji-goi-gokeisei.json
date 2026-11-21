@@ -545,41 +545,38 @@
     ]
   },
   {
-    "id": "n2-mg-616",
+    "id": "n2-mg-577",
     "type": "gokeisei",
-    "refs": [
-      "lesson62#vocab"
-    ],
     "difficulty": 1,
-    "stem": "けがのことは、専門（　）に相談したほうがいい。",
+    "stem": "この靴は少しきつくて、長い時間は歩き（　）。",
     "options": [
-      "家",
-      "手",
-      "屋",
-      "師"
+      "づらい",
+      "がちだ",
+      "ぎみだ",
+      "っぽい"
     ],
     "answer": 0,
     "tr": {
-      "zh": "受伤的事最好找专家商量。",
-      "en": "You should consult a specialist about the injury."
+      "zh": "这双鞋有点紧，长时间走路很难受。",
+      "en": "These shoes are a bit tight, so they're uncomfortable to walk in for long."
     },
     "why": {
-      "zh": "线索：「専門（　）に相談」——某个领域的专业人员。\n词义：「〜家」（か）＝在某领域有专长或以此为业的人，常见「専門家」「作家」「政治家」。",
-      "en": "Clue: 「専門（　）に相談」 — a person with expertise in a field.\nMeaning: 「〜家」 (か) is a person skilled in or working in a field: 「専門家」, 「作家」, 「政治家」."
+      "zh": "线索：「靴は少しきつくて」「歩き（　）」——因为不舒服，走起来吃力。\n词义：「〜づらい」接ます形词干，表示（身体、心理上）做起来难受、费劲，常见「歩きづらい」「言いづらい」「読みづらい」。",
+      "en": "Clue: 「靴は少しきつくて」 and 「歩き（　）」 — uncomfortable, so walking is hard going.\nMeaning: 「〜づらい」 after the ます stem means hard or unpleasant to do (physically or emotionally): 「歩きづらい」, 「言いづらい」, 「読みづらい」."
     },
     "wrong": [
       null,
       {
-        "zh": "「専門手」不是词。「〜手」用在「運転手」「歌手」等。",
-        "en": "「専門手」 isn't a word. 〜手 is in words like 「運転手」."
+        "zh": "「〜がちだ」是“容易（变得）……、常常……”，「歩きがちだ」和鞋紧不搭。",
+        "en": "「〜がちだ」 is \"tends to …\"; 「歩きがちだ」 doesn't follow from tight shoes."
       },
       {
-        "zh": "「専門屋」不是词。「〜屋」多用于店铺（「八百屋」）。",
-        "en": "「専門屋」 isn't a word. 〜屋 is mostly for shops (「八百屋」)."
+        "zh": "「〜ぎみだ」是“有点……的倾向”，多接名词（「風邪ぎみ」「疲れぎみ」），「歩きぎみ」不说。",
+        "en": "「〜ぎみだ」 is \"a touch of …\", mostly after nouns (「風邪ぎみ」, 「疲れぎみ」); 「歩きぎみ」 isn't said."
       },
       {
-        "zh": "「専門師」不是词。",
-        "en": "「専門師」 isn't a word."
+        "zh": "「〜っぽい」是“像……、有……感觉”（「子どもっぽい」），「歩きっぽい」不成立。",
+        "en": "「〜っぽい」 is \"-ish, like …\" (「子どもっぽい」); 「歩きっぽい」 doesn't work."
       }
     ]
   },
@@ -732,114 +729,110 @@
     ]
   },
   {
-    "id": "n2-mg-621",
-    "rev": 2,
+    "id": "n2-mg-578",
     "type": "gokeisei",
     "difficulty": 2,
-    "stem": "困ったときは、家族で助け（　）ことが大切だ。",
+    "stem": "彼は引退した今でも、多くのファンに語り継がれている（　）選手だ。",
     "options": [
-      "合う",
-      "込む",
-      "切る",
-      "出す"
+      "名",
+      "良",
+      "上",
+      "極"
     ],
     "answer": 0,
     "tr": {
-      "zh": "遇到困难时，家人之间互相帮助很重要。",
-      "en": "When things are hard, it's important for a family to help each other."
+      "zh": "他虽然已经退役，至今仍是被众多球迷津津乐道的名将。",
+      "en": "Even now that he has retired, he's a great player whom fans still talk about."
     },
     "why": {
-      "zh": "线索：「家族で」「助け（　）」——家人之间彼此帮助。\n词义：「〜合う」（あう）接在动词后，表示互相做，常见「助け合う」「話し合う」「譲り合う」。",
-      "en": "Clue: 「家族で」 with 「助け（　）」 — family members helping one another.\nMeaning: 「〜合う」 (あう) after a verb means doing it to each other: 「助け合う」, 「話し合う」, 「譲り合う」."
+      "zh": "线索：「引退した今でも」「語り継がれている」——出色、有名的选手。\n词义：「名〜」（めい）接名词前，表示“优秀、有名的”，常见「名選手」「名作」「名曲」「名医」。",
+      "en": "Clue: 「引退した今でも」 and 「語り継がれている」 — an outstanding, famous player.\nMeaning: 「名〜」 (めい) before a noun means excellent, renowned: 「名選手」, 「名作」, 「名曲」, 「名医」."
     },
     "wrong": [
       null,
       {
-        "zh": "没有「助け込む」这个说法。",
-        "en": "「助け込む」 isn't used."
+        "zh": "「良選手」不是词。「良」构成「良品」「良心」等。",
+        "en": "「良選手」 isn't a word. 良 is in words like 「良品」."
       },
       {
-        "zh": "没有「助け切る」这个说法。",
-        "en": "「助け切る」 isn't used."
+        "zh": "「高選手」不是词。「高」构成「高性能」「高収入」等。",
+        "en": "「高選手」 isn't a word. 高 is in words like 「高性能」."
       },
       {
-        "zh": "「助け出す」是\"救出（某人）\"，如「火事の家から子どもを助け出す」，需要宾语，和\"家人互相\"不合。",
-        "en": "「助け出す」 is to rescue someone out of danger (「子どもを助け出す」); it needs an object and isn't mutual."
+        "zh": "「極選手」不是词。「極」构成「極秘」「極上」等。",
+        "en": "「極選手」 isn't a word. 極 is in words like 「極秘」."
       }
     ]
   },
   {
-    "id": "n2-mg-622",
+    "id": "n2-mg-579",
     "type": "gokeisei",
-    "refs": [
-      "lesson65#vocab"
-    ],
     "difficulty": 1,
-    "stem": "この料理教室は、初心（　）向けです。",
+    "stem": "台風は今夜遅く、関東地方に（　）接近する見込みです。",
     "options": [
-      "者",
-      "家",
-      "人",
-      "手"
+      "最",
+      "全",
+      "真",
+      "高"
     ],
     "answer": 0,
     "tr": {
-      "zh": "这个烹饪班面向初学者。",
-      "en": "This cooking class is for beginners."
+      "zh": "台风预计今天深夜最接近关东地区。",
+      "en": "The typhoon is expected to come closest to the Kanto region late tonight."
     },
     "why": {
-      "zh": "线索：「初心（　）向け」「料理教室」——刚开始学的人。\n词义：「〜者」（しゃ）＝做某事或处于某种状态的人，常见「初心者」「経験者」「参加者」。",
-      "en": "Clue: 「初心（　）向け」 with 「料理教室」 — people just starting out.\nMeaning: 「〜者」 (しゃ) is a person who does or is something: 「初心者」, 「経験者」, 「参加者」."
+      "zh": "线索：「台風は今夜遅く」「（　）接近する見込み」——天气预报说台风离得最近的时候。\n词义：「最〜」（さい）＝最……，常见「最接近」「最先端」「最優秀」「最新」。",
+      "en": "Clue: 「台風は今夜遅く」 and 「（　）接近する見込み」 — the forecast of when the typhoon will be nearest.\nMeaning: 「最〜」 (さい) is \"most\": 「最接近」, 「最先端」, 「最優秀」, 「最新」."
     },
     "wrong": [
       null,
       {
-        "zh": "「初心家」不是词。",
-        "en": "「初心家」 isn't a word."
+        "zh": "「全接近」不是词。「全」构成「全国」「全世界」等。",
+        "en": "「全接近」 isn't a word. 全 is in words like 「全国」."
       },
       {
-        "zh": "「初心人」不是词。",
-        "en": "「初心人」 isn't a word."
+        "zh": "「真接近」不是词。「真」构成「真正面」「真夜中」等。",
+        "en": "「真接近」 isn't a word. 真 is in words like 「真夜中」."
       },
       {
-        "zh": "「初心手」不是词。",
-        "en": "「初心手」 isn't a word."
+        "zh": "「高接近」不是词。",
+        "en": "「高接近」 isn't a word."
       }
     ]
   },
   {
-    "id": "n2-mg-623",
+    "id": "n2-mg-580",
     "type": "gokeisei",
     "difficulty": 2,
-    "stem": "社員を守るのは、経営（　）としての責任だ。",
+    "stem": "このパンの（　）原料は、地元の農家でとれた米の粉だ。",
     "options": [
-      "者",
-      "員",
-      "師",
-      "官"
+      "主",
+      "本",
+      "元",
+      "要"
     ],
     "answer": 0,
     "tr": {
-      "zh": "保护员工是作为经营者的责任。",
-      "en": "Protecting employees is a manager's responsibility."
+      "zh": "这种面包的主要原料是本地农户产的米粉。",
+      "en": "The main ingredient of this bread is rice flour from local farms."
     },
     "why": {
-      "zh": "线索：「経営（　）としての責任」「社員を守る」——经营公司、对员工负责的人。\n词义：「〜者」（しゃ）＝做某事的人，常见「経営者」「責任者」「消費者」。",
-      "en": "Clue: 「経営（　）としての責任」 with 「社員を守る」 — the one who runs the business.\nMeaning: 「〜者」 (しゃ) is the person who does something: 「経営者」, 「責任者」, 「消費者」."
+      "zh": "线索：「パンの（　）原料は」「米の粉だ」——最主要的那种原料。\n词义：「主〜」（しゅ）＝主要的，常见「主原料」「主成分」「主食」「主目的」。",
+      "en": "Clue: 「パンの（　）原料は」 and 「米の粉だ」 — the principal ingredient.\nMeaning: 「主〜」 (しゅ) is \"main, chief\": 「主原料」, 「主成分」, 「主食」, 「主目的」."
     },
     "wrong": [
       null,
       {
-        "zh": "「〜員」接在组织、职务后（会社員・係員），没有「経営員」。",
-        "en": "〜員 follows an organisation or job (会社員, 係員); 「経営員」 isn't a word."
+        "zh": "「本原料」不是词。「本」构成「本社」「本番」等。",
+        "en": "「本原料」 isn't a word. 本 is in words like 「本社」."
       },
       {
-        "zh": "「〜師」用于有专门技术的职业（医師・美容師），没有「経営師」。",
-        "en": "〜師 is for skilled professions (医師, 美容師); 「経営師」 isn't a word."
+        "zh": "「元原料」不是词。「元」构成「元社長」「元気」等。",
+        "en": "「元原料」 isn't a word. 元 is in words like 「元社長」."
       },
       {
-        "zh": "「〜官」用于公务员职位（警察官・外交官），没有「経営官」。",
-        "en": "〜官 is for government posts (警察官, 外交官); 「経営官」 isn't a word."
+        "zh": "「要原料」不是词。「要」构成「要注意」「要確認」等。",
+        "en": "「要原料」 isn't a word. 要 is in words like 「要注意」."
       }
     ]
   },
@@ -1638,38 +1631,38 @@
     ]
   },
   {
-    "id": "n2-mg-646",
+    "id": "n2-mg-581",
     "type": "gokeisei",
     "difficulty": 2,
-    "stem": "彼はプロを目指して、（　）格的にピアノを習い始めた。",
+    "stem": "若い人の読書（　）が進み、町の本屋が次々と閉店している。",
     "options": [
-      "本",
-      "正",
-      "真",
-      "実"
+      "離れ",
+      "外れ",
+      "漏れ",
+      "崩れ"
     ],
     "answer": 0,
     "tr": {
-      "zh": "他以成为专业演奏者为目标，开始认真地学钢琴。",
-      "en": "Aiming to turn professional, he began learning the piano in earnest."
+      "zh": "年轻人越来越不读书，街上的书店接连关门。",
+      "en": "Young people are turning away from reading, and the town's bookshops are closing one after another."
     },
     "why": {
-      "zh": "线索：「プロを目指して」「習い始めた」——正式、认真地。\n词义：「本格的」（ほんかくてき）＝正式的、地道的，「本」表示\"真正的\"，另有「本物」「本気」。",
-      "en": "Clue: 「プロを目指して」「習い始めた」 — seriously, the real thing.\nMeaning: 「本格的」 (ほんかくてき) is \"full-scale, the real thing\"; 「本」 means \"genuine\": 「本物」, 「本気」."
+      "zh": "线索：「若い人の読書（　）が進み」「本屋が閉店」——人们对某事越来越不感兴趣、疏远。\n词义：「〜離れ」（ばなれ）接名词后，表示对……失去兴趣、远离，常见「読書離れ」「活字離れ」「若者の車離れ」。",
+      "en": "Clue: 「若い人の読書（　）が進み」 and 「本屋が閉店」 — people drifting away from something.\nMeaning: 「〜離れ」 (ばなれ) after a noun means losing interest in, turning away from: 「読書離れ」, 「活字離れ」, 「若者の車離れ」."
     },
     "wrong": [
       null,
       {
-        "zh": "「正格的」不是词。",
-        "en": "「正格的」 isn't a word."
+        "zh": "「〜外れ」是“偏离、落空”（「期待外れ」「季節外れ」），「読書外れ」不说。",
+        "en": "「〜外れ」 is \"off, missing\" (「期待外れ」, 「季節外れ」); 「読書外れ」 isn't said."
       },
       {
-        "zh": "「真格的」不是词。",
-        "en": "「真格的」 isn't a word."
+        "zh": "「〜漏れ」是“遗漏、泄漏”（「記入漏れ」「情報漏れ」），「読書漏れ」不说。",
+        "en": "「〜漏れ」 is \"omission, leak\" (「記入漏れ」, 「情報漏れ」); 「読書漏れ」 isn't said."
       },
       {
-        "zh": "「実格的」不是词。",
-        "en": "「実格的」 isn't a word."
+        "zh": "「〜崩れ」是“走样、垮掉”（「型崩れ」「荷崩れ」），「読書崩れ」不成立。",
+        "en": "「〜崩れ」 is \"losing shape, collapsing\" (「型崩れ」, 「荷崩れ」); 「読書崩れ」 doesn't work."
       }
     ]
   },
@@ -1854,38 +1847,38 @@
     ]
   },
   {
-    "id": "n2-mg-652",
+    "id": "n2-mg-582",
     "type": "gokeisei",
     "difficulty": 2,
-    "stem": "（　）世代のエネルギーとして、水素が注目されている。",
+    "stem": "この件の最終的な決定（　）は社長にあるので、私一人では返事ができません。",
     "options": [
-      "次",
-      "後",
-      "来",
-      "先"
+      "権",
+      "制",
+      "率",
+      "式"
     ],
     "answer": 0,
     "tr": {
-      "zh": "作为下一代能源，氢受到关注。",
-      "en": "Hydrogen is attracting attention as an energy source for the next generation."
+      "zh": "这件事的最终决定权在社长手里，我一个人没法答复。",
+      "en": "The final say on this lies with the president, so I can't give you an answer on my own."
     },
     "why": {
-      "zh": "线索：「（　）世代のエネルギー」——下一个时代的。\n词义：「次」（じ）＝下一个，常见「次世代」「次回」「次期」。",
-      "en": "Clue: 「（　）世代のエネルギー」 — of the next generation.\nMeaning: 「次」 (じ) is \"next\": 「次世代」, 「次回」, 「次期」."
+      "zh": "线索：「決定（　）は社長にある」「私一人では返事ができません」——做决定的权力属于某人。\n词义：「〜権」（けん）＝权利、权力，常见「決定権」「選挙権」「著作権」「主導権」。",
+      "en": "Clue: 「決定（　）は社長にある」 and 「私一人では返事ができません」 — the power to decide belongs to someone.\nMeaning: 「〜権」 (けん) is a right or power: 「決定権」, 「選挙権」, 「著作権」, 「主導権」."
     },
     "wrong": [
       null,
       {
-        "zh": "「後世代」不是词。",
-        "en": "「後世代」 isn't a word."
+        "zh": "「決定制」不是词。「〜制」表示制度（「会員制」「予約制」）。",
+        "en": "「決定制」 isn't a word. 〜制 is a system (「会員制」, 「予約制」)."
       },
       {
-        "zh": "「来世代」不是词。",
-        "en": "「来世代」 isn't a word."
+        "zh": "「決定率」不是常用词。「〜率」表示比率（「合格率」）。",
+        "en": "「決定率」 isn't a normal word. 〜率 is a rate (「合格率」)."
       },
       {
-        "zh": "「先世代」不是词。",
-        "en": "「先世代」 isn't a word."
+        "zh": "「決定式」不是词。「〜式」表示仪式、方式（「入学式」「日本式」）。",
+        "en": "「決定式」 isn't a word. 〜式 is a ceremony or style (「入学式」, 「日本式」)."
       }
     ]
   },

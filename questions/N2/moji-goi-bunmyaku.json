@@ -1,145 +1,145 @@
 [
   {
-    "id": "n2-mg-301",
+    "id": "n2-mg-300",
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "計画の（　）が甘かったため、予定より大幅に費用がかかってしまった。",
+    "stem": "祖母は、遠くから訪ねてきた客を手作りの料理で（　）。",
     "options": [
-      "見通し",
-      "手入れ",
-      "見本",
-      "目印"
+      "もてなした",
+      "ととのえた",
+      "やしなった",
+      "まかなった"
     ],
     "answer": 0,
     "tr": {
-      "zh": "计划的预估太乐观，结果花的钱大大超出了预期。",
-      "en": "The plan's projections were too optimistic, so it cost far more than expected."
+      "zh": "奶奶用亲手做的菜招待了远道而来的客人。",
+      "en": "My grandmother entertained the guests who had come from far away with home-cooked food."
     },
     "why": {
-      "zh": "线索：「甘かった」「費用がかかってしまった」——对今后情况估计得太乐观，结果超支。\n词义：「見通し」（みとおし）＝对今后发展的预测、前景，常说「見通しが甘い」「見通しが立つ」。",
-      "en": "Clue: 「甘かった」 and 「費用がかかってしまった」 — the forecast was too rosy, so costs overran.\nMeaning: 「見通し」 (みとおし) is the outlook, a forecast of how things will go: 「見通しが甘い」, 「見通しが立つ」."
+      "zh": "线索：「訪ねてきた客を」「手作りの料理で」——热情地接待客人。\n词义：「もてなす」＝款待、招待，常说「客をもてなす」「心を込めてもてなす」，名词「おもてなし」。",
+      "en": "Clue: 「訪ねてきた客を」 and 「手作りの料理で」 — welcoming guests warmly.\nMeaning: 「もてなす」 is to entertain, treat guests: 「客をもてなす」, 「心を込めてもてなす」; noun 「おもてなし」."
     },
     "wrong": [
       null,
       {
-        "zh": "「手入れ」是保养、修整（庭院、皮肤等），计划没有“保养”。",
-        "en": "「手入れ」 is upkeep or care (of a garden, skin); a plan doesn't have upkeep."
+        "zh": "「ととのえる」是整理、准备好（「準備をととのえる」），宾语不能是客人。",
+        "en": "「ととのえる」 is to put in order or get ready (「準備をととのえる」); its object can't be guests."
       },
       {
-        "zh": "「見本」是样品、榜样，与花费超出预期无关。",
-        "en": "「見本」 is a sample or model — nothing to do with costs overrunning."
+        "zh": "「やしなう」是抚养、供养（「家族を養う」），不用于招待客人。",
+        "en": "「やしなう」 is supporting or raising (「家族を養う」), not treating guests."
       },
       {
-        "zh": "「目印」是醒目的标记，不能说“标记太乐观”。",
-        "en": "「目印」 is a landmark or marker; it can't be \"too optimistic\"."
+        "zh": "「まかなう」是供应、筹措（「食事をまかなう」「費用をまかなう」），宾语不能是人。",
+        "en": "「まかなう」 is providing or covering (「食事をまかなう」, 「費用をまかなう」); its object isn't a person."
       }
     ]
   },
   {
-    "id": "n2-mg-302",
+    "id": "n2-mg-583",
     "type": "bunmyaku",
     "difficulty": 1,
-    "stem": "この料理は材料を一晩つけておくなど（　）がかかるが、その分とてもおいしい。",
+    "stem": "高速道路でスピード（　）をして、罰金を払うことになった。",
     "options": [
-      "手間",
-      "手段",
-      "手元",
-      "手順"
+      "違反",
+      "違法",
+      "反抗",
+      "故障"
     ],
     "answer": 0,
     "tr": {
-      "zh": "这道菜要把材料腌一晚上之类的，很费工夫，但也因此非常好吃。",
-      "en": "This dish takes a lot of work, like marinating the ingredients overnight, but it's all the more delicious for it."
+      "zh": "在高速公路上超速，结果被罚了款。",
+      "en": "I was caught speeding on the expressway and had to pay a fine."
     },
     "why": {
-      "zh": "线索：「一晩つけておく」和「（　）がかかる」——腌一晚上是费工夫的事。\n词义：「手間」（てま）＝做一件事所花的工夫和时间，常说「手間がかかる」「手間を省く」。",
-      "en": "Clue: 「一晩つけておく」 with 「（　）がかかる」 — marinating overnight is the kind of thing that takes effort.\nMeaning: 「手間」 (てま) is the time and trouble a task takes: 「手間がかかる」, 「手間を省く」 (save trouble)."
+      "zh": "线索：「スピード（　）をして」「罰金を払う」——没遵守限速规定。\n词义：「違反」（いはん）＝违反规则、法令、约定，常说「交通違反」「スピード違反」「ルールに違反する」。\n辨析：「違法」是形容“不合法”的性质（「違法な駐車」），不能像「違反」那样接在名词后说「スピード違法」。",
+      "en": "Clue: 「スピード（　）をして」 and 「罰金を払う」 — breaking the speed limit.\nMeaning: 「違反」 (いはん) is breaking a rule, law or agreement: 「交通違反」, 「スピード違反」, 「ルールに違反する」.\nContrast: 「違法」 describes something as illegal (「違法な駐車」); it doesn't form 「スピード違法」 the way 「違反」 does."
     },
     "wrong": [
       null,
       {
-        "zh": "「手段」是手段、方法，不说「手段がかかる」。",
-        "en": "「手段」 is a means or method; 「手段がかかる」 isn't said."
+        "zh": "「違法」是“非法的”，用作「違法な〜」「違法だ」，没有「スピード違法をする」的说法。",
+        "en": "「違法」 means illegal (「違法な〜」); 「スピード違法をする」 isn't said."
       },
       {
-        "zh": "「手元」是手边，不能“花费”。",
-        "en": "「手元」 is what's at hand; it can't be \"taken\" like effort."
+        "zh": "「反抗」是反抗父母、上级等，和超速无关。",
+        "en": "「反抗」 is defying parents or superiors — nothing to do with speeding."
       },
       {
-        "zh": "「手順」是步骤，说「手順を踏む」，不说「手順がかかる」。",
-        "en": "「手順」 is the steps; you say 「手順を踏む」, not 「手順がかかる」."
+        "zh": "「故障」是机器出毛病，「スピード故障」不成立，也不会被罚款。",
+        "en": "「故障」 is a machine breaking down; 「スピード故障」 isn't a thing, and nobody is fined for it."
       }
     ]
   },
   {
-    "id": "n2-mg-303",
+    "id": "n2-mg-597",
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "双方が少しずつ（　）して、ようやく契約がまとまった。",
+    "stem": "この電車は急行なので、小さな駅には止まらずに（　）する。",
     "options": [
-      "妥協",
-      "反省",
-      "納得",
-      "指摘"
+      "通過",
+      "経過",
+      "通行",
+      "通学"
     ],
     "answer": 0,
     "tr": {
-      "zh": "双方各让一步，合同终于谈成了。",
-      "en": "Both sides gave a little ground, and the contract was finally agreed."
+      "zh": "这趟电车是快车，小站不停，直接通过。",
+      "en": "This is an express train, so it passes through the small stations without stopping."
     },
     "why": {
-      "zh": "线索：「双方が少しずつ」「契約がまとまった」——双方各退一步，协议才谈成。\n词义：「妥協」（だきょう）＝互相让步以达成一致，常说「妥協点を見つける」「妥協を許さない」（不肯让步、毫不马虎）。",
-      "en": "Clue: 「双方が少しずつ」 and 「契約がまとまった」 — each side gave ground, and that is how the deal got done.\nMeaning: 「妥協」 (だきょう) is compromise, both sides giving way to reach agreement: 「妥協点を見つける」, 「妥協を許さない」 (allow no compromise)."
+      "zh": "线索：「急行なので」「止まらずに」——经过车站但不停车。\n词义：「通過」（つうか）＝通过、经过（不停留），常说「駅を通過する」「台風が通過する」；也指考试、法案「通過」。",
+      "en": "Clue: 「急行なので」 and 「止まらずに」 — going through a station without stopping.\nMeaning: 「通過」 (つうか) is passing through (without stopping): 「駅を通過する」, 「台風が通過する」; also passing an exam or a bill."
     },
     "wrong": [
       null,
       {
-        "zh": "「反省」是反省自己的错误，不是谈判中的让步。",
-        "en": "「反省」 is reflecting on your own mistakes, not giving ground in a negotiation."
+        "zh": "「経過」是时间流逝、事情的进展，不用于电车经过车站。",
+        "en": "「経過」 is time passing or how things progress, not a train going through a station."
       },
       {
-        "zh": "「納得」是理解并接受，不能“各自一点点地”做来达成协议。",
-        "en": "「納得」 is being convinced; it isn't something two sides do \"a little each\" to reach a deal."
+        "zh": "「通行」是行人车辆在道路上通行（「通行止め」），不说电车「通行する」站。",
+        "en": "「通行」 is traffic using a road (「通行止め」); not a train passing stations."
       },
       {
-        "zh": "「指摘」是指出问题，指出问题不会让合同谈成。",
-        "en": "「指摘」 is pointing out a problem — that doesn't get a contract agreed."
+        "zh": "「通学」是上学，主语不能是电车。",
+        "en": "「通学」 is going to school; a train can't do it."
       }
     ]
   },
   {
-    "id": "n2-mg-304",
+    "id": "n2-mg-598",
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "犯人がだれなのか、まったく見当が（　）。",
+    "stem": "このたびは、お客様に（　）ご迷惑をおかけしましたことを、深くおわび申し上げます。",
     "options": [
-      "つかない",
-      "決まらない",
-      "出ない",
-      "届かない"
+      "多大な",
+      "盛大な",
+      "偉大な",
+      "広大な"
     ],
     "answer": 0,
     "tr": {
-      "zh": "犯人是谁，完全猜不出来。",
-      "en": "I have no idea at all who the culprit is."
+      "zh": "此次给顾客造成了极大的麻烦，我们深表歉意。",
+      "en": "We sincerely apologize for the great inconvenience we have caused our customers."
     },
     "why": {
-      "zh": "线索：「見当が」和「まったく」——前面是名词「見当」，问的是它的固定搭配，意思是完全猜不出。\n词义：「見当」（けんとう）＝大致的推测、估计，固定说「見当がつく」「見当をつける」；「見当がつかない」＝毫无头绪。",
-      "en": "Clue: 「見当が」 with 「まったく」 — the noun 「見当」 needs its set verb, meaning \"have no idea at all\".\nMeaning: 「見当」 (けんとう) is a rough guess or estimate. It goes with 「見当がつく」 (have an idea) and 「見当をつける」 (make a guess); 「見当がつかない」 is having no clue."
+      "zh": "线索：「ご迷惑をおかけしました」「おわび申し上げます」——道歉时形容给人添的麻烦之大。\n词义：「多大」（ただい）＝（数量、程度）非常大，常说「多大なご迷惑」「多大な影響」「多大な貢献」。",
+      "en": "Clue: 「ご迷惑をおかけしました」 and 「おわび申し上げます」 — an apology stressing how much trouble was caused.\nMeaning: 「多大」 (ただい) is very great in amount or degree: 「多大なご迷惑」, 「多大な影響」, 「多大な貢献」."
     },
     "wrong": [
       null,
       {
-        "zh": "「決まらない」用于“定不下来”，不和「見当」搭配。",
-        "en": "「決まらない」 is \"not decided\"; it doesn't go with 「見当」."
+        "zh": "「盛大な」是隆重、盛大（「盛大な拍手」「盛大なパーティー」），不形容麻烦。",
+        "en": "「盛大な」 is grand or lavish (「盛大な拍手」, 「盛大なパーティー」); not for trouble caused."
       },
       {
-        "zh": "「出ない」可说「答えが出ない」，但不说「見当が出ない」。",
-        "en": "You can say 「答えが出ない」, but not 「見当が出ない」."
+        "zh": "「偉大な」是伟大，用于人物、成就，是褒义。",
+        "en": "「偉大な」 is great in the sense of noble, for people or achievements — praise."
       },
       {
-        "zh": "「届かない」是够不着、送不到，和「見当」不搭配。",
-        "en": "「届かない」 is \"doesn't reach / arrive\"; it doesn't go with 「見当」."
+        "zh": "「広大な」是面积辽阔（「広大な土地」），不形容麻烦。",
+        "en": "「広大な」 is vast in area (「広大な土地」); not for inconvenience."
       }
     ]
   },
@@ -180,38 +180,38 @@
     ]
   },
   {
-    "id": "n2-mg-306",
+    "id": "n2-mg-599",
     "type": "bunmyaku",
     "difficulty": 1,
-    "stem": "難しいと思っていた試験だったが、（　）簡単だった。",
+    "stem": "転校してきた彼女は明るい性格で、すぐにクラスに（　）。",
     "options": [
-      "案外",
-      "当然",
-      "相変わらず",
-      "あいにく"
+      "溶け込んだ",
+      "割り込んだ",
+      "落ち込んだ",
+      "追い込んだ"
     ],
     "answer": 0,
     "tr": {
-      "zh": "本以为考试很难，没想到挺简单的。",
-      "en": "I'd thought the exam would be hard, but it was surprisingly easy."
+      "zh": "转学过来的她性格开朗，很快就融入了班级。",
+      "en": "The girl who transferred here was cheerful and quickly fitted in with the class."
     },
     "why": {
-      "zh": "线索：「難しいと思っていた」「が」——结果和原来的预想不一样。\n词义：「案外」（あんがい）＝出乎意料地、没想到，结果比预想好或差都可以用，常说「案外簡単だ」「案外おいしい」。",
-      "en": "Clue: 「難しいと思っていた」 followed by 「が」 — the result differed from what you'd expected.\nMeaning: 「案外」 (あんがい) is unexpectedly, contrary to what you'd thought — for a better or a worse result alike: 「案外簡単だ」, 「案外おいしい」."
+      "zh": "线索：「転校してきた」「明るい性格で」「すぐにクラスに」——很快成为集体的一员。\n词义：「溶け込む」（とけこむ）＝融入（环境、集体），常说「地域に溶け込む」「職場に溶け込む」。",
+      "en": "Clue: 「転校してきた」, 「明るい性格で」 and 「すぐにクラスに」 — quickly becoming part of the group.\nMeaning: 「溶け込む」 (とけこむ) is to blend in, fit into (a place, a group): 「地域に溶け込む」, 「職場に溶け込む」."
     },
     "wrong": [
       null,
       {
-        "zh": "「当然」是理所当然，但前面说“以为很难”，简单并不是当然的。",
-        "en": "「当然」 is \"naturally\", but you'd expected it to be hard, so easy wasn't natural."
+        "zh": "「割り込む」是插队、插嘴，带负面意思，和开朗性格不合。",
+        "en": "「割り込む」 is cutting in or butting in — negative, not what a cheerful nature leads to."
       },
       {
-        "zh": "「相変わらず」是“照旧”，用于和以前一样的情况，这里说的是和预想不同。",
-        "en": "「相変わらず」 is \"as always\"; here the point is that it differed from what you expected."
+        "zh": "「落ち込む」是情绪低落，「クラスに落ち込む」不成立。",
+        "en": "「落ち込む」 is feeling down; 「クラスに落ち込む」 doesn't work."
       },
       {
-        "zh": "「あいにく」是“不巧”，用于不如意的事，考试简单不是坏事。",
-        "en": "「あいにく」 is \"unfortunately\"; an easy exam isn't bad luck."
+        "zh": "「追い込む」是逼入困境，需要宾语，意思也不合。",
+        "en": "「追い込む」 is driving someone into a corner; it needs an object and the meaning is wrong."
       }
     ]
   },
@@ -364,41 +364,38 @@
     ]
   },
   {
-    "id": "n2-mg-311",
+    "id": "n2-mg-584",
     "type": "bunmyaku",
-    "refs": [
-      "lesson61#vocab"
-    ],
     "difficulty": 2,
-    "stem": "彼女は長年の病気を（　）して、再び舞台に立った。",
+    "stem": "久しぶりに会った友人とは話が（　）、気がつくと朝の四時になっていた。",
     "options": [
-      "克服",
-      "解消",
-      "解散",
-      "削除"
+      "尽きず",
+      "崩れず",
+      "欠けず",
+      "枯れず"
     ],
     "answer": 0,
     "tr": {
-      "zh": "她战胜了多年的疾病，重新站上了舞台。",
-      "en": "She overcame her long illness and went back on stage."
+      "zh": "和好久不见的朋友聊个没完，回过神来已经凌晨四点了。",
+      "en": "My friend and I, meeting after so long, never ran out of things to say, and before I knew it it was 4 a.m."
     },
     "why": {
-      "zh": "线索：「長年の病気を」「再び舞台に立った」——战胜了疾病才重回舞台。\n词义：「克服」（こくふく）＝战胜困难、疾病、弱点，常说「病気を克服する」「困難を克服する」。",
-      "en": "Clue: 「長年の病気を」 and 「再び舞台に立った」 — she beat the illness and went back on stage.\nMeaning: 「克服」 (こくふく) is overcoming a difficulty, illness or weakness: 「病気を克服する」, 「困難を克服する」."
+      "zh": "线索：「話が（　）」「気がつくと朝の四時」——话总也说不完，一直聊到天亮。\n词义：「尽きる」（つきる）＝用尽、到头，常说「話が尽きない」「体力が尽きる」「〜に尽きる」（归根结底就是……）。",
+      "en": "Clue: 「話が（　）」 and 「気がつくと朝の四時」 — the talk never ran dry, all through the night.\nMeaning: 「尽きる」 (つきる) is to run out, come to an end: 「話が尽きない」, 「体力が尽きる」, 「〜に尽きる」 (comes down to …)."
     },
     "wrong": [
       null,
       {
-        "zh": "「解消」用于「ストレス」「不安」「契約」等的消除，不说「病気を解消」。",
-        "en": "「解消」 clears away stress, worries or contracts; 「病気を解消」 isn't said."
+        "zh": "「崩れる」是倒塌、（天气、队形）变坏，不说「話が崩れる」。",
+        "en": "「崩れる」 is to collapse or (weather, a line) break down; 「話が崩れる」 isn't said."
       },
       {
-        "zh": "「解散」是团体解散，疾病不能“解散”。",
-        "en": "「解散」 is a group disbanding; an illness can't disband."
+        "zh": "「欠ける」是缺一块、不足，「話が欠ける」不成立。",
+        "en": "「欠ける」 is to be chipped or lacking; 「話が欠ける」 doesn't work."
       },
       {
-        "zh": "「削除」是删除（数据、文字），不用于疾病。",
-        "en": "「削除」 is deleting data or text, not an illness."
+        "zh": "「枯れる」是草木枯萎，不用于谈话。",
+        "en": "「枯れる」 is plants withering; not used of talk."
       }
     ]
   },
@@ -559,80 +556,74 @@
     ]
   },
   {
-    "id": "n2-mg-316",
+    "id": "n2-mg-585",
     "type": "bunmyaku",
-    "refs": [
-      "lesson67#vocab"
-    ],
     "difficulty": 2,
-    "stem": "夏になると、エアコンの（　）が増えて、工場は忙しくなる。",
+    "stem": "緊張しやすい彼は、本番で実力を十分に（　）できなかった。",
     "options": [
-      "需要",
-      "要求",
-      "必要",
-      "要望"
+      "発揮",
+      "発表",
+      "発達",
+      "発生"
     ],
     "answer": 0,
     "tr": {
-      "zh": "一到夏天，空调的需求增加，工厂就忙起来了。",
-      "en": "In summer demand for air conditioners rises and the factories get busy."
+      "zh": "他容易紧张，正式上场时没能充分发挥出实力。",
+      "en": "He gets nervous easily and couldn't show his true ability when it counted."
     },
     "why": {
-      "zh": "线索：「エアコンの」「工場は忙しくなる」——买的人多了，工厂才忙。\n词义：「需要」（じゅよう）＝（市场的）需求，反义「供給」，常说「需要が増える」「需要と供給」。\n辨析：「必要」（ひつよう）是“必要、需要做”，像中文的“需要”；表示商品的市场需求用「需要」。",
-      "en": "Clue: 「エアコンの」 and 「工場は忙しくなる」 — more people buying, so the factories are busy.\nMeaning: 「需要」 (じゅよう) is (market) demand, opposite 「供給」: 「需要が増える」, 「需要と供給」.\nContrast: 「必要」 (ひつよう) is necessity, \"needing to\"; demand for a product is 「需要」."
+      "zh": "线索：「実力を」「本番で」——把本来具备的能力拿出来。\n词义：「発揮」（はっき）＝发挥（能力、作用），常说「実力を発揮する」「効果を発揮する」「リーダーシップを発揮する」。",
+      "en": "Clue: 「実力を」 and 「本番で」 — bringing out the ability one has.\nMeaning: 「発揮」 (はっき) is displaying or bringing out (ability, an effect): 「実力を発揮する」, 「効果を発揮する」, 「リーダーシップを発揮する」."
     },
     "wrong": [
       null,
       {
-        "zh": "「要求」是对别人提出的要求，不说“空调的要求增加”。",
-        "en": "「要求」 is a demand made of someone; it isn't the market for a product."
+        "zh": "「発表」是公布、发表（结果、论文），不说「実力を発表する」。",
+        "en": "「発表」 is announcing or presenting (results, a paper); 「実力を発表する」 isn't said."
       },
       {
-        "zh": "「必要」是必要性，不说「エアコンの必要が増える」。",
-        "en": "「必要」 is necessity; 「エアコンの必要が増える」 isn't said."
+        "zh": "「発達」是身心、技术逐渐发展，不能带宾语「実力を」。",
+        "en": "「発達」 is gradual development (of the body, technology); it takes no object like 「実力を」."
       },
       {
-        "zh": "「要望」是希望、意见（对服务等），不表示商品的销量需求。",
-        "en": "「要望」 is a request or wish about a service, not demand for goods."
+        "zh": "「発生」是事件、问题发生，是自动词，不说「実力を発生する」。",
+        "en": "「発生」 is something occurring (an accident, a problem); intransitive, so 「実力を発生する」 is wrong."
       }
     ]
   },
   {
-    "id": "n2-mg-317",
+    "id": "n2-mg-586",
     "type": "bunmyaku",
-    "refs": [
-      "lesson67#vocab"
-    ],
     "difficulty": 2,
-    "stem": "給料や休みなどの（　）がいい会社に転職したい。",
+    "stem": "売り上げが大きく落ち込み、会社は三年連続の（　）となった。",
     "options": [
-      "待遇",
-      "状態",
-      "態度",
-      "姿勢"
+      "赤字",
+      "黒字",
+      "不況",
+      "欠陥"
     ],
     "answer": 0,
     "tr": {
-      "zh": "想跳槽到工资、休假等待遇好的公司。",
-      "en": "I want to move to a company with good pay and holidays — good working conditions."
+      "zh": "销售额大幅下滑，公司连续三年亏损。",
+      "en": "With sales slumping badly, the company ran a loss for the third year running."
     },
     "why": {
-      "zh": "线索：「給料や休みなどの」「いい会社」——工资、休假是公司给员工的条件。\n词义：「待遇」（たいぐう）＝（工作上的）待遇、工资和条件，也指对人的接待，常说「待遇がいい」「待遇を改善する」。",
-      "en": "Clue: 「給料や休みなどの」 with 「いい会社」 — pay and time off are what a company offers its staff.\nMeaning: 「待遇」 (たいぐう) is pay and conditions at work, also how someone is treated: 「待遇がいい」, 「待遇を改善する」."
+      "zh": "线索：「売り上げが大きく落ち込み」「会社は」——公司的收支出现亏损。\n词义：「赤字」（あかじ）＝亏损、入不敷出，常说「赤字になる」「赤字経営」「〜年連続の赤字」；反义词「黒字」（盈利）。",
+      "en": "Clue: 「売り上げが大きく落ち込み」 and 「会社は」 — the company's books went into the red.\nMeaning: 「赤字」 (あかじ) is a deficit, a loss: 「赤字になる」, 「赤字経営」, 「〜年連続の赤字」; the opposite is 「黒字」 (a profit)."
     },
     "wrong": [
       null,
       {
-        "zh": "「状態」是状态，不能用来概括工资和休假。",
-        "en": "「状態」 is a condition or state; it doesn't cover pay and holidays."
+        "zh": "「黒字」是盈利，和「売り上げが落ち込み」相矛盾。",
+        "en": "「黒字」 is a profit, which contradicts 「売り上げが落ち込み」."
       },
       {
-        "zh": "「態度」是态度，工资和休假不是态度。",
-        "en": "「態度」 is an attitude; pay and holidays aren't attitudes."
+        "zh": "「不況」是整个社会的经济不景气，不能说“公司成了不景气”。",
+        "en": "「不況」 is an economy-wide recession; a single company can't \"become\" one."
       },
       {
-        "zh": "「姿勢」是姿势、姿态，和工资、休假无关。",
-        "en": "「姿勢」 is posture or stance — unrelated to pay and holidays."
+        "zh": "「欠陥」是产品、制度的缺陷，和销售下滑的结果不搭。",
+        "en": "「欠陥」 is a defect in a product or system; it isn't the result of falling sales."
       }
     ]
   },
@@ -712,41 +703,38 @@
     ]
   },
   {
-    "id": "n2-mg-320",
+    "id": "n2-mg-587",
     "type": "bunmyaku",
-    "refs": [
-      "lesson70#vocab"
-    ],
     "difficulty": 1,
-    "stem": "地震に（　）、水や食料を用意しておく。",
+    "stem": "兄は性格が（　）で、料理をするときも調味料を量らずに、目分量で入れてしまう。",
     "options": [
-      "備えて",
-      "構えて",
-      "抑えて",
-      "整えて"
+      "おおざっぱ",
+      "おおげさ",
+      "なだらか",
+      "にぎやか"
     ],
     "answer": 0,
     "tr": {
-      "zh": "为防备地震，事先准备好水和食物。",
-      "en": "We keep water and food ready in case of an earthquake."
+      "zh": "哥哥性格粗枝大叶，做饭时也不称调料，凭眼睛估摸着就放了。",
+      "en": "My brother is a rough-and-ready sort; even when cooking he doesn't measure the seasoning, just tips it in by eye."
     },
     "why": {
-      "zh": "线索：「地震に」「水や食料を用意しておく」——为可能发生的地震事先准备。\n词义：「備える」（そなえる）＝防备、为将来做准备，用「〜に備える」，常说「地震に備える」「試験に備える」。",
-      "en": "Clue: 「地震に」 with 「水や食料を用意しておく」 — getting ready for an earthquake that may come.\nMeaning: 「備える」 (そなえる) is preparing for something ahead, as 「〜に備える」: 「地震に備える」, 「試験に備える」."
+      "zh": "线索：「調味料を量らずに」「目分量で」——不讲究细节、大致差不多就行。\n词义：「おおざっぱ」（大雑把）＝粗略、粗枝大叶，常说「おおざっぱな性格」「おおざっぱに計算する」；反义是「几帳面」。",
+      "en": "Clue: 「調味料を量らずに」 and 「目分量で」 — not bothering with details, near enough is fine.\nMeaning: 「おおざっぱ」 (大雑把) is rough, careless about detail: 「おおざっぱな性格」, 「おおざっぱに計算する」; the opposite is 「几帳面」."
     },
     "wrong": [
       null,
       {
-        "zh": "「構える」是摆架势、建（店），不说「地震に構える」。",
-        "en": "「構える」 is to take a stance or set up a shop; 「地震に構える」 isn't said."
+        "zh": "「おおげさ」是夸张、小题大做，和不称调料无关。",
+        "en": "「おおげさ」 is exaggerated, making a fuss — nothing to do with not measuring."
       },
       {
-        "zh": "「抑える」是压住、控制，地震无法控制，也不用「に」。",
-        "en": "「抑える」 is to hold down or control; it takes を, and you can't control an earthquake."
+        "zh": "「なだらか」形容坡度平缓，不形容性格。",
+        "en": "「なだらか」 describes a gentle slope, not a personality."
       },
       {
-        "zh": "「整える」是整理好（を），不说「地震に整える」。",
-        "en": "「整える」 is to put in order and takes を; 「地震に整える」 isn't said."
+        "zh": "「にぎやか」是热闹、爱说笑，和做饭不称量没有因果关系。",
+        "en": "「にぎやか」 is lively or chatty; it doesn't explain cooking without measuring."
       }
     ]
   },
@@ -985,41 +973,38 @@
     ]
   },
   {
-    "id": "n2-mg-327",
+    "id": "n2-mg-588",
     "type": "bunmyaku",
-    "refs": [
-      "lesson74#vocab"
-    ],
     "difficulty": 2,
-    "stem": "事故が起きるまでの（　）を、担当者が詳しく説明した。",
+    "stem": "台風の進路が東に（　）、この地域への影響は思ったより小さかった。",
     "options": [
-      "経緯",
-      "由来",
-      "予定",
-      "結論"
+      "それて",
+      "こぼれて",
+      "はがれて",
+      "ほどけて"
     ],
     "answer": 0,
     "tr": {
-      "zh": "负责人详细说明了事故发生前的来龙去脉。",
-      "en": "The person in charge explained in detail how things unfolded up to the accident."
+      "zh": "台风的路径向东偏了，对这一带的影响比预想的小。",
+      "en": "The typhoon veered off to the east, so its impact on this area was smaller than expected."
     },
     "why": {
-      "zh": "线索：「事故が起きるまでの」「詳しく説明した」——讲的是到事故发生为止的经过。\n词义：「経緯」（けいい，也读いきさつ）＝事情的来龙去脉，常说「経緯を説明する」「事件の経緯」。",
-      "en": "Clue: 「事故が起きるまでの」 with 「詳しく説明した」 — what was explained is how things got to the accident.\nMeaning: 「経緯」 (けいい, also いきさつ) is how a matter came about, the sequence of events: 「経緯を説明する」, 「事件の経緯」."
+      "zh": "线索：「台風の進路が」「東に」「影響は小さかった」——路线偏离了原来的方向。\n词义：「それる」（逸れる）＝偏离方向、目标，常说「台風がそれる」「話がそれる」「矢が的からそれる」。",
+      "en": "Clue: 「台風の進路が」, 「東に」 and 「影響は小さかった」 — the path swung away from its course.\nMeaning: 「それる」 (逸れる) is to veer off a course or target: 「台風がそれる」, 「話がそれる」 (digress), 「矢が的からそれる」."
     },
     "wrong": [
       null,
       {
-        "zh": "「由来」是名称、习俗的由来，不用于事故的经过。",
-        "en": "「由来」 is the origin of a name or custom, not how an accident came about."
+        "zh": "「こぼれる」是液体、东西洒出来，不用于台风的路径。",
+        "en": "「こぼれる」 is liquid or things spilling; not for a typhoon's path."
       },
       {
-        "zh": "「予定」是计划，事故不是预先计划的。",
-        "en": "「予定」 is a plan; an accident isn't planned."
+        "zh": "「はがれる」是贴着的东西剥落（「ポスターがはがれる」），和路径无关。",
+        "en": "「はがれる」 is something stuck on peeling off (「ポスターがはがれる」)."
       },
       {
-        "zh": "「結論」是结论，和「起きるまでの」（之前的过程）不搭。",
-        "en": "「結論」 is a conclusion; it doesn't fit 「起きるまでの」 (leading up to)."
+        "zh": "「ほどける」是绳结、鞋带松开，不用于台风。",
+        "en": "「ほどける」 is a knot or shoelace coming undone; not for a typhoon."
       }
     ]
   },
@@ -1063,41 +1048,38 @@
     ]
   },
   {
-    "id": "n2-mg-329",
+    "id": "n2-mg-589",
     "type": "bunmyaku",
-    "refs": [
-      "lesson63#vocab"
-    ],
-    "difficulty": 1,
-    "stem": "費用がかかりすぎるので、計画を一から（　）ことにした。",
+    "difficulty": 2,
+    "stem": "新しく見つかった古い手紙が、その説の正しさを（　）ことになった。",
     "options": [
-      "見直す",
-      "見逃す",
-      "見送る",
-      "見かける"
+      "裏づける",
+      "見積もる",
+      "書き留める",
+      "申し込む"
     ],
     "answer": 0,
     "tr": {
-      "zh": "因为花费太多，决定从头重新审视计划。",
-      "en": "It was costing far too much, so we decided to rethink the plan from scratch."
+      "zh": "新发现的旧信件证实了那个学说是正确的。",
+      "en": "A newly discovered old letter ended up confirming that the theory was right."
     },
     "why": {
-      "zh": "线索：「費用がかかりすぎる」「一から」——从头重新检查、修改计划。\n词义：「見直す」（みなおす）＝重新审视并改进，常说「計画を見直す」「制度を見直す」；也有“对人刮目相看”的意思。",
-      "en": "Clue: 「費用がかかりすぎる」 with 「一から」 — going back over the plan from the start to fix it.\nMeaning: 「見直す」 (みなおす) is to review and revise: 「計画を見直す」, 「制度を見直す」. It can also mean to see someone in a better light."
+      "zh": "线索：「新しく見つかった古い手紙が」「説の正しさを」——用新的证据证明说法可靠。\n词义：「裏づける」（うらづける）＝用证据证实，常说「証拠が事実を裏づける」「データで裏づける」，名词「裏づけ」。",
+      "en": "Clue: 「新しく見つかった古い手紙が」 and 「説の正しさを」 — new evidence backing up a claim.\nMeaning: 「裏づける」 (うらづける) is to back up with evidence: 「証拠が事実を裏づける」, 「データで裏づける」; noun 「裏づけ」."
     },
     "wrong": [
       null,
       {
-        "zh": "「見逃す」是看漏、放过，“从头看漏计划”说不通。",
-        "en": "「見逃す」 is to miss or overlook; you don't overlook a plan from scratch."
+        "zh": "「見積もる」是估算费用、数量，不说「正しさを見積もる」。",
+        "en": "「見積もる」 is estimating costs or amounts; 「正しさを見積もる」 isn't said."
       },
       {
-        "zh": "「見送る」是暂缓、放弃，和「一から」（从头来）矛盾。",
-        "en": "「見送る」 is to shelve; that clashes with 「一から」 (from scratch)."
+        "zh": "「書き留める」是把事情记下来，主语「手紙」做不了这个动作。",
+        "en": "「書き留める」 is jotting something down; a letter can't do that."
       },
       {
-        "zh": "「見かける」是偶然看到（人、物），计划不是偶然看到的。",
-        "en": "「見かける」 is to happen to see someone or something — not a plan."
+        "zh": "「申し込む」是报名、申请，和证明学说无关。",
+        "en": "「申し込む」 is applying or signing up — nothing to do with proving a theory."
       }
     ]
   },
@@ -1141,41 +1123,38 @@
     ]
   },
   {
-    "id": "n2-mg-331",
+    "id": "n2-mg-590",
     "type": "bunmyaku",
-    "refs": [
-      "lesson65#vocab"
-    ],
     "difficulty": 2,
-    "stem": "作業の順番を変えたら、（　）が上がって早く終わるようになった。",
+    "stem": "彼は、二度と遅刻はしないと上司の前で（　）。",
     "options": [
-      "効率",
-      "評価",
-      "価値",
-      "品質"
+      "誓った",
+      "祈った",
+      "誘った",
+      "迷った"
     ],
     "answer": 0,
     "tr": {
-      "zh": "改变了工作顺序后，效率提高了，能早点做完了。",
-      "en": "When we changed the order of the tasks, efficiency went up and we started finishing earlier."
+      "zh": "他在上司面前发誓再也不迟到了。",
+      "en": "He swore in front of his boss that he would never be late again."
     },
     "why": {
-      "zh": "线索：「早く終わるようになった」「（　）が上がって」——同样的工作花的时间少了。\n词义：「効率」（こうりつ）＝效率，常说「効率が上がる」「効率がいい」「効率的に進める」。",
-      "en": "Clue: 「早く終わるようになった」 with 「（　）が上がって」 — the same work in less time.\nMeaning: 「効率」 (こうりつ) is efficiency: 「効率が上がる」, 「効率がいい」, 「効率的に進める」."
+      "zh": "线索：「二度と〜しないと」「上司の前で」——郑重地对人保证自己今后的行为。\n词义：「誓う」（ちかう）＝发誓、立誓，常说「〜と誓う」「神に誓う」「勝利を誓う」。\n辨析：「祈る」是向神或心中期盼某事实现（「合格を祈る」），不是对人保证自己的行为。",
+      "en": "Clue: 「二度と〜しないと」 and 「上司の前で」 — solemnly promising someone how one will act.\nMeaning: 「誓う」 (ちかう) is to swear, vow: 「〜と誓う」, 「神に誓う」, 「勝利を誓う」.\nContrast: 「祈る」 is praying or hoping something comes true (「合格を祈る」), not pledging one's own conduct to a person."
     },
     "wrong": [
       null,
       {
-        "zh": "「評価」提高不会让工作更快做完。",
-        "en": "A better 「評価」 (evaluation) doesn't make the work finish sooner."
+        "zh": "「祈る」是祈祷、祝愿，不能在上司面前“祈祷”自己不迟到。",
+        "en": "「祈る」 is to pray or wish; you don't pray to your boss about not being late."
       },
       {
-        "zh": "「価値」是价值，价值提高与做得快无关。",
-        "en": "「価値」 is value; higher value doesn't mean finishing sooner."
+        "zh": "「誘う」是邀请别人，「〜しないと誘った」不成立。",
+        "en": "「誘う」 is inviting someone; 「〜しないと誘った」 doesn't work."
       },
       {
-        "zh": "「品質」是质量，质量提高不等于更快完成。",
-        "en": "「品質」 is quality; better quality isn't faster work."
+        "zh": "「迷う」是犹豫、迷路，和保证不迟到无关。",
+        "en": "「迷う」 is to hesitate or get lost — not a promise."
       }
     ]
   },
@@ -1762,39 +1741,38 @@
     ]
   },
   {
-    "id": "n2-mg-348",
-    "rev": 2,
+    "id": "n2-mg-591",
     "type": "bunmyaku",
     "difficulty": 1,
-    "stem": "早く治そうと薬を多めに飲んだら、（　）具合が悪くなってしまった。",
+    "stem": "この薬は痛みを（　）抑えるだけで、病気そのものを治すわけではない。",
     "options": [
-      "じっくり",
-      "かえって",
-      "ぐっすり",
-      "すっきり"
+      "一時的に",
+      "本格的に",
+      "積極的に",
+      "徹底的に"
     ],
-    "answer": 1,
+    "answer": 0,
     "tr": {
-      "zh": "想快点好，就多吃了些药，结果反而更难受了。",
-      "en": "I took extra medicine to get better faster, and it only made me feel worse."
+      "zh": "这药只是暂时止痛，并不能治好病本身。",
+      "en": "This medicine only relieves the pain for a while; it doesn't cure the illness itself."
     },
     "why": {
-      "zh": "线索：本想「早く治そう」，结果却「具合が悪くなって」，结果和期待相反。\n词义：「かえって」＝反而，结果与预期相反，常说「かえって逆効果だ」「かえって迷惑をかける」。",
-      "en": "Clue: the aim was 「早く治そう」, but the result was 「具合が悪くなって」 — the opposite of what was expected.\nMeaning: 「かえって」 is on the contrary, instead: 「かえって逆効果だ」, 「かえって迷惑をかける」."
+      "zh": "线索：「抑えるだけで」「治すわけではない」——只管一阵子，不是根本解决。\n词义：「一時的」（いちじてき）＝暂时的、一时的，常说「一時的に止まる」「一時的な現象」；反义是「恒久的」「根本的」。",
+      "en": "Clue: 「抑えるだけで」 and 「治すわけではない」 — it only helps for a while, not at the root.\nMeaning: 「一時的」 (いちじてき) is temporary: 「一時的に止まる」, 「一時的な現象」; the opposite is 「根本的」 (fundamental)."
     },
     "wrong": [
-      {
-        "zh": "「じっくり」是仔细、慢慢地，不表示结果相反。",
-        "en": "「じっくり」 is carefully, taking time; it doesn't mark an opposite result."
-      },
       null,
       {
-        "zh": "「ぐっすり」是睡得很熟。",
-        "en": "「ぐっすり」 is sleeping soundly."
+        "zh": "「本格的に」是正式、全面地，和「だけ」「治すわけではない」相矛盾。",
+        "en": "「本格的に」 is in earnest, full-scale — it clashes with 「だけ」 and 「治すわけではない」."
       },
       {
-        "zh": "「すっきり」是清爽、舒畅，和「具合が悪くなる」意思相反。",
-        "en": "「すっきり」 is feeling refreshed, the opposite of feeling worse."
+        "zh": "「積極的に」是主动地，用于人的态度，不形容药止痛。",
+        "en": "「積極的に」 is actively, about a person's attitude; not how a drug relieves pain."
+      },
+      {
+        "zh": "「徹底的に」是彻底地，和“只是压一压、治不了”矛盾。",
+        "en": "「徹底的に」 is thoroughly, which contradicts \"only suppresses, doesn't cure\"."
       }
     ]
   },
@@ -2628,38 +2606,38 @@
     ]
   },
   {
-    "id": "n2-mg-372",
+    "id": "n2-mg-592",
     "type": "bunmyaku",
     "difficulty": 1,
-    "stem": "大事な書類を電車の中に（　）忘れてきてしまい、駅まで取りに戻らなければならなくなった。",
+    "stem": "警察は、その社員が会社の不正に（　）していたかどうかを調べている。",
     "options": [
-      "うっかり",
-      "こっそり",
-      "ぐったり",
-      "はっきり"
+      "関与",
+      "干渉",
+      "交流",
+      "貢献"
     ],
     "answer": 0,
     "tr": {
-      "zh": "一不留神把重要文件忘在了电车里，不得不回车站去取。",
-      "en": "I absentmindedly left an important document on the train and had to go back to the station to get it."
+      "zh": "警方正在调查那名员工是否参与了公司的违规行为。",
+      "en": "The police are investigating whether the employee was involved in the company's wrongdoing."
     },
     "why": {
-      "zh": "线索：「忘れてきてしまい」——不是故意的疏忽，要用表示“不留神”的副词。\n词义：「うっかり」＝不留神、疏忽，常说「うっかり忘れる」「うっかりミス」。",
-      "en": "Clue: 「忘れてきてしまい」 — an unintended lapse calls for an adverb meaning 'carelessly'.\nMeaning: 「うっかり」 means carelessly or absentmindedly: 「うっかり忘れる」, 「うっかりミス」."
+      "zh": "线索：「不正に」「警察は〜調べている」——是否牵涉进违规的事情。\n词义：「関与」（かんよ）＝参与、牵涉（多指事件、决策），常说「事件に関与する」「経営に関与する」。\n辨析：「干渉」是对别人的事多管闲事（「人の生活に干渉する」），不是参与坏事。",
+      "en": "Clue: 「不正に」 and 「警察は〜調べている」 — whether he was mixed up in the wrongdoing.\nMeaning: 「関与」 (かんよ) is involvement, having a hand in (an affair, a decision): 「事件に関与する」, 「経営に関与する」.\nContrast: 「干渉」 is meddling in someone else's affairs (「人の生活に干渉する」), not taking part in a misdeed."
     },
     "wrong": [
       null,
       {
-        "zh": "「こっそり」是偷偷地，带有“不想被发现”的意图，忘记东西不是这样。",
-        "en": "「こっそり」 is 'stealthily', with intent not to be noticed; forgetting isn't like that."
+        "zh": "「干渉」是干涉、多管闲事，「不正に干渉する」说不通。",
+        "en": "「干渉」 is meddling; 「不正に干渉する」 makes no sense."
       },
       {
-        "zh": "「ぐったり」是累得没力气，不修饰“忘记”。",
-        "en": "「ぐったり」 is limp with exhaustion; it doesn't modify 'forget'."
+        "zh": "「交流」是交往、交流，对象是人或文化，不是「不正」。",
+        "en": "「交流」 is interaction or exchange with people or cultures, not with 「不正」."
       },
       {
-        "zh": "「はっきり」是清楚地，和“忘记”意思矛盾。",
-        "en": "「はっきり」 is 'clearly', which clashes with forgetting."
+        "zh": "「貢献」是做出贡献，用在好事上，和警察调查的违规不合。",
+        "en": "「貢献」 is contributing to something good; it doesn't fit wrongdoing under police investigation."
       }
     ]
   },
@@ -2988,38 +2966,38 @@
     ]
   },
   {
-    "id": "n2-mg-382",
+    "id": "n2-mg-593",
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "（　）の休みなのに、朝から雨で、一日中家で過ごすことになった。",
+    "stem": "相手の選手のユニフォームを引っ張る（　）をして、イエローカードを出された。",
     "options": [
-      "せっかく",
-      "あいにく",
-      "ひたすら",
-      "いちいち"
+      "反則",
+      "反省",
+      "反対",
+      "反抗"
     ],
     "answer": 0,
     "tr": {
-      "zh": "难得的休息日，却从早下雨，只好在家待了一整天。",
-      "en": "On what was a rare day off, it rained from morning and I ended up staying in all day."
+      "zh": "拉扯对方球员的球衣犯了规，被出示了黄牌。",
+      "en": "He committed a foul by pulling an opponent's shirt and was shown a yellow card."
     },
     "why": {
-      "zh": "线索：「（　）の休みなのに」「雨で」——期待落空，「の」接在后面。\n词义：「せっかく」＝难得、好不容易，常说「せっかくの休み」「せっかく来たのに」，后面常接「のに」表示可惜。\n辨析：「せっかくの休み」是休息日本身珍贵；「あいにくの雨」是雨来得不凑巧。",
-      "en": "Clue: 「（　）の休みなのに」 and 「雨で」 — hopes dashed; the word takes 「の」.\nMeaning: 「せっかく」 is 'rare chance, going to the trouble': 「せっかくの休み」, 「せっかく来たのに」; it often leads into 「のに」.\nContrast: 「せっかくの休み」 values the day off; 「あいにくの雨」 laments the rain's bad timing."
+      "zh": "线索：「ユニフォームを引っ張る」「イエローカード」——比赛中违反规则的动作。\n词义：「反則」（はんそく）＝（比赛中）犯规，常说「反則をする」「反則負け」「反則を取られる」。\n辨析：「違反」用于法律、规章（「交通違反」）；比赛中的犯规一般说「反則」。",
+      "en": "Clue: 「ユニフォームを引っ張る」 and 「イエローカード」 — an action against the rules of the game.\nMeaning: 「反則」 (はんそく) is a foul, breaking the rules in a game: 「反則をする」, 「反則負け」 (lose by disqualification), 「反則を取られる」.\nContrast: 「違反」 is for laws and regulations (「交通違反」); a foul in a match is 「反則」."
     },
     "wrong": [
       null,
       {
-        "zh": "「あいにく」是不凑巧，多修饰「あいにくの雨」，不修饰“休息日”。",
-        "en": "「あいにく」 is 'unfortunately', used as in 「あいにくの雨」, not for 'day off'."
+        "zh": "「反省」是反省自己，不会因此拿黄牌。",
+        "en": "「反省」 is reflecting on one's faults; nobody gets a yellow card for it."
       },
       {
-        "zh": "「ひたすら」是一个劲儿地，不能放在「の休み」前。",
-        "en": "「ひたすら」 is 'single-mindedly' and can't precede 「の休み」."
+        "zh": "「反対」是反对意见，和拉球衣的动作无关。",
+        "en": "「反対」 is opposing something — not an action like pulling a shirt."
       },
       {
-        "zh": "「いちいち」是逐一，与“难得的休息日”不搭。",
-        "en": "「いちいち」 is 'one by one', which doesn't fit."
+        "zh": "「反抗」是反抗父母、上级，比赛里拉人球衣不叫「反抗」。",
+        "en": "「反抗」 is defying parents or superiors; pulling a shirt in a match isn't that."
       }
     ]
   },
@@ -3240,38 +3218,38 @@
     ]
   },
   {
-    "id": "n2-mg-389",
+    "id": "n2-mg-594",
     "type": "bunmyaku",
     "difficulty": 1,
-    "stem": "昨日は一日歩き回って疲れたので、夜は（　）眠れた。",
+    "stem": "台所に入ってきたハエを、丸めた新聞紙を振って外へ（　）。",
     "options": [
-      "ぐっすり",
-      "ぼんやり",
-      "ぎっしり",
-      "さっぱり"
+      "追い払った",
+      "追いついた",
+      "追い越した",
+      "追い求めた"
     ],
     "answer": 0,
     "tr": {
-      "zh": "昨天走了一整天累了，晚上睡得很香。",
-      "en": "I was tired from walking around all day yesterday, so I slept soundly at night."
+      "zh": "挥着卷起来的报纸，把飞进厨房的苍蝇赶了出去。",
+      "en": "I waved a rolled-up newspaper and shooed the fly that had got into the kitchen back outside."
     },
     "why": {
-      "zh": "线索：「疲れたので」「眠れた」——累了所以睡得沉。\n词义：「ぐっすり」＝睡得很熟，常说「ぐっすり眠る」。",
-      "en": "Clue: 「疲れたので」 and 「眠れた」 — tired, so deep sleep.\nMeaning: 「ぐっすり」 describes sound sleep: 「ぐっすり眠る」."
+      "zh": "线索：「ハエを」「新聞紙を振って」「外へ」——把讨厌的东西赶走。\n词义：「追い払う」（おいはらう）＝赶走、驱赶，常说「虫を追い払う」「眠気を追い払う」。",
+      "en": "Clue: 「ハエを」, 「新聞紙を振って」 and 「外へ」 — driving something unwanted away.\nMeaning: 「追い払う」 (おいはらう) is to drive away, shoo off: 「虫を追い払う」, 「眠気を追い払う」 (shake off sleepiness)."
     },
     "wrong": [
       null,
       {
-        "zh": "「ぼんやり」是发呆、模糊，与熟睡不同。",
-        "en": "「ぼんやり」 is vacant or hazy, not deep sleep."
+        "zh": "「追いつく」是追上（「先頭に追いつく」），不能接「ハエを〜外へ」。",
+        "en": "「追いつく」 is catching up with (「先頭に追いつく」); it can't take 「ハエを〜外へ」."
       },
       {
-        "zh": "「ぎっしり」是塞得满满的，不修饰睡眠。",
-        "en": "「ぎっしり」 is packed tight; it doesn't modify sleep."
+        "zh": "「追い越す」是超过前面的人或车，不是赶走。",
+        "en": "「追い越す」 is overtaking a person or car ahead, not driving away."
       },
       {
-        "zh": "「さっぱり」是爽快或（后接否定）完全不……，这里不通。",
-        "en": "「さっぱり」 is refreshed or 'not at all' (with negatives); neither fits."
+        "zh": "「追い求める」是追求理想、梦想，和赶苍蝇不合。",
+        "en": "「追い求める」 is pursuing a dream or ideal — not shooing a fly."
       }
     ]
   },
@@ -3744,38 +3722,38 @@
     ]
   },
   {
-    "id": "n2-mg-707",
+    "id": "n2-mg-595",
     "type": "bunmyaku",
     "difficulty": 1,
-    "stem": "急な出張が入ったので、予約していたホテルを（　）した。",
+    "stem": "父は本気で怒ると、急に丁寧な（　）で話し始めるので、かえって怖い。",
     "options": [
-      "キャンセル",
-      "チェック",
-      "エントリー",
-      "リセット"
+      "口調",
+      "口実",
+      "口数",
+      "口先"
     ],
     "answer": 0,
     "tr": {
-      "zh": "突然要出差，所以取消了预订的酒店。",
-      "en": "A sudden business trip came up, so I cancelled the hotel I had booked."
+      "zh": "爸爸真生气的时候，会突然用很客气的语气说话，反而更吓人。",
+      "en": "When my father is really angry he suddenly starts speaking in a polite tone, which is even scarier."
     },
     "why": {
-      "zh": "线索：「出張が入った」「予約していた」——取消预约。\n词义：「キャンセル」＝取消，常说「予約をキャンセルする」「キャンセル待ち」。",
-      "en": "Clue: 「出張が入った」 and 「予約していた」 — cancelling a booking.\nMeaning: 「キャンセル」 is cancelling: 「予約をキャンセルする」, 「キャンセル待ち」."
+      "zh": "线索：「丁寧な（　）で話し始める」——说话时的语气、腔调。\n词义：「口調」（くちょう）＝说话的语气、腔调，常说「強い口調」「丁寧な口調」「口調が変わる」。",
+      "en": "Clue: 「丁寧な（　）で話し始める」 — the tone in which someone speaks.\nMeaning: 「口調」 (くちょう) is a tone of voice, manner of speaking: 「強い口調」, 「丁寧な口調」, 「口調が変わる」."
     },
     "wrong": [
       null,
       {
-        "zh": "「チェック」是检查，不是取消。",
-        "en": "「チェック」 is to check."
+        "zh": "「口実」是借口（「口実を作る」），不能「用借口说话」。",
+        "en": "「口実」 is an excuse (「口実を作る」); you don't \"speak in a polite excuse\"."
       },
       {
-        "zh": "「エントリー」是报名，与取消相反。",
-        "en": "「エントリー」 is to enter or sign up, the opposite."
+        "zh": "「口数」是话的多少（「口数が少ない」），不说「丁寧な口数」。",
+        "en": "「口数」 is how much someone talks (「口数が少ない」); 「丁寧な口数」 isn't said."
       },
       {
-        "zh": "「リセット」是重置，不用于预约。",
-        "en": "「リセット」 is to reset; not for bookings."
+        "zh": "「口先」是嘴上说说（「口先だけ」），没有「丁寧な口先で話す」的说法。",
+        "en": "「口先」 is mere words (「口先だけ」); 「丁寧な口先で話す」 isn't said."
       }
     ]
   },
@@ -3852,38 +3830,38 @@
     ]
   },
   {
-    "id": "n2-mg-711",
+    "id": "n2-mg-596",
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "この映画の（　）には五年かかり、監督は何度も脚本を書き直した。",
+    "stem": "自分の仕事を全部後輩に押しつけて、一人だけ先に帰るなんて、本当に（　）人だ。",
     "options": [
-      "制作",
-      "製造",
-      "作成",
-      "生産"
+      "ずうずうしい",
+      "そうぞうしい",
+      "たのもしい",
+      "つつましい"
     ],
     "answer": 0,
     "tr": {
-      "zh": "这部电影的制作花了五年，导演多次重写剧本。",
-      "en": "The film took five years to make, and the director rewrote the script many times."
+      "zh": "把自己的工作全推给后辈，自己一个人先回家，真是厚脸皮。",
+      "en": "Dumping all his own work on his juniors and going home first by himself — he really has a nerve."
     },
     "why": {
-      "zh": "线索：「映画」「監督」「脚本」——做电影、电视剧、广告这类作品。\n词义：「制作」（せいさく）＝制作电影、节目、艺术作品，常说「番組を制作する」「制作費」。",
-      "en": "Clue: 「映画」「監督」「脚本」 — this is making a creative work such as a film.\nMeaning: 「制作」 (せいさく) is producing a creative work: 「番組を制作する」, 「制作費」."
+      "zh": "线索：「仕事を全部後輩に押しつけて」「一人だけ先に帰る」——不顾别人、只图自己方便。\n词义：「ずうずうしい」（図々しい）＝厚脸皮、不知分寸，常说「ずうずうしい頼み」「ずうずうしい態度」。",
+      "en": "Clue: 「仕事を全部後輩に押しつけて」 and 「一人だけ先に帰る」 — ignoring others for one's own convenience.\nMeaning: 「ずうずうしい」 (図々しい) is shameless, cheeky: 「ずうずうしい頼み」, 「ずうずうしい態度」."
     },
     "wrong": [
       null,
       {
-        "zh": "「製造」是工厂大量生产产品，不用于电影。",
-        "en": "「製造」 is factory manufacturing of products, not films."
+        "zh": "「そうぞうしい」（騒々しい）是吵闹，和推卸工作无关。",
+        "en": "「そうぞうしい」 (騒々しい) is noisy — nothing to do with dumping work."
       },
       {
-        "zh": "「作成」是写文件、计划、表格等，不用于作品。",
-        "en": "「作成」 is drawing up documents, plans or tables, not creative works."
+        "zh": "「たのもしい」是靠得住，是褒义，和句意相反。",
+        "en": "「たのもしい」 is dependable — praise, the opposite of the point."
       },
       {
-        "zh": "「生産」是生产农产品、工业品，不说“生产电影”。",
-        "en": "「生産」 is producing crops or goods, not films."
+        "zh": "「つつましい」是谦恭、俭朴，是褒义，不合。",
+        "en": "「つつましい」 is modest or frugal — praise, which doesn't fit."
       }
     ]
   },

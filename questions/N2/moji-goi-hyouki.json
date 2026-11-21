@@ -72,146 +72,146 @@
     ]
   },
   {
-    "id": "n2-mg-203",
+    "id": "n2-mg-279",
     "type": "hyouki",
     "difficulty": 2,
-    "stem": "この調査は、二十代の若者を<<たいしょう>>に行われた。",
+    "stem": "「国際連合」は、<<りゃくして>>「国連」と呼ばれる。",
     "options": [
-      "対象",
-      "対照",
-      "対称",
-      "大将"
+      "略して",
+      "絡して",
+      "格して",
+      "路して"
     ],
     "answer": 0,
     "tr": {
-      "zh": "这项调查以二十多岁的年轻人为对象进行。",
-      "en": "This survey was carried out among people in their twenties."
+      "zh": "「国際連合」简称「国連」。",
+      "en": "「国際連合」 (the United Nations) is called 「国連」 for short."
     },
     "why": {
-      "zh": "调查、研究针对的人或物是「対象」。",
-      "en": "The people or things a survey targets are its 「対象」."
+      "zh": "省略、简称是「略す」：「略」是「省略」「略語」的「略」。",
+      "en": "To abbreviate is 「略す」: 「略」 as in 「省略」, 「略語」."
     },
     "wrong": [
       null,
       {
-        "zh": "「対照」是对照、对比（「AとBを対照する」）。",
-        "en": "「対照」 is contrast or comparison (「AとBを対照する」)."
+        "zh": "「絡」是「連絡」的「絡」，没有「絡す」这个词。",
+        "en": "「絡」 is 'connect' (「連絡」); 「絡す」 isn't a word."
       },
       {
-        "zh": "「対称」是对称（「左右対称」）。",
-        "en": "「対称」 is symmetry (「左右対称」)."
+        "zh": "「格」是「資格」的「格」，没有「格す」这个词。",
+        "en": "「格」 is 'status' (「資格」); 「格す」 isn't a word."
       },
       {
-        "zh": "「大将」是将军、头领，意思不符。",
-        "en": "「大将」 is a general or boss — wrong meaning."
+        "zh": "「路」是「道路」的「路」，没有「路す」这个词。",
+        "en": "「路」 is 'road' (「道路」); 「路す」 isn't a word."
       }
     ]
   },
   {
-    "id": "n2-mg-204",
+    "id": "n2-mg-280",
     "type": "hyouki",
     "difficulty": 1,
-    "stem": "あの静かな彼がスピーチで笑いを取るとは<<いがい>>だった。",
+    "stem": "昨日の雨で、洗濯物がまだ<<しめって>>いる。",
     "options": [
-      "意外",
-      "以外",
-      "意害",
-      "異外"
+      "湿って",
+      "温って",
+      "混って",
+      "渇って"
     ],
     "answer": 0,
     "tr": {
-      "zh": "没想到那么安静的他会在演讲里逗笑大家，真意外。",
-      "en": "It was a surprise that someone as quiet as him got laughs in his speech."
+      "zh": "因为昨天下雨，洗的衣服还是潮的。",
+      "en": "Because of yesterday's rain, the laundry is still damp."
     },
     "why": {
-      "zh": "「没想到」是「意外」：出乎意料。",
-      "en": "'Unexpected' is 「意外」."
+      "zh": "潮湿是「湿る」：「湿」是「湿度」的「湿」。",
+      "en": "Being damp is 「湿る」: 「湿」 as in 「湿度」."
     },
     "wrong": [
       null,
       {
-        "zh": "「以外」是「除……以外」，不能单独作谓语表示意外。",
-        "en": "「以外」 means 'other than' and can't stand as 'surprising'."
+        "zh": "「温」是「温かい」的「温」，没有「温る」这个词。",
+        "en": "「温」 is 'warm' (「温かい」); 「温る」 isn't a word."
       },
       {
-        "zh": "「害」是伤害的「害」，「意害」不是词。",
-        "en": "「害」 is 'harm'; 「意害」 isn't a word."
+        "zh": "「混」读「まざる」「こむ」（「混ざる」「混む」），不读「しめる」。",
+        "en": "「混」 is まざる or こむ (「混ざる」, 「混む」), not しめる."
       },
       {
-        "zh": "「異外」不是词。",
-        "en": "「異外」 isn't a word."
+        "zh": "「渇」是「渇く（かわく）」的「渇」，意思正好相反。",
+        "en": "「渇」 is the 「渇」 of 「渇く」 (かわく, to be thirsty) — the opposite idea."
       }
     ]
   },
   {
-    "id": "n2-mg-205",
+    "id": "n2-mg-281",
     "type": "hyouki",
     "difficulty": 2,
-    "stem": "ご協力いただける方は、このアンケートに<<かいとう>>してください。",
+    "stem": "お気に入りの靴下が<<やぶれて>>、穴が開いてしまった。",
     "options": [
-      "回答",
-      "解答",
-      "回当",
-      "会答"
+      "破れて",
+      "敗れて",
+      "被れて",
+      "波れて"
     ],
     "answer": 0,
     "tr": {
-      "zh": "愿意协助的人请回答这份问卷。",
-      "en": "If you're willing to help, please fill in this questionnaire."
+      "zh": "我喜欢的袜子破了，开了个洞。",
+      "en": "My favourite socks have torn and got a hole in them."
     },
     "why": {
-      "zh": "回复问卷、询问是「回答」。",
-      "en": "Answering a questionnaire or an enquiry is 「回答」."
+      "zh": "布、纸等破掉是「破れる」（「紙が破れる」「服が破れる」）。",
+      "en": "Cloth or paper tearing is 「破れる」 (「紙が破れる」, 「服が破れる」)."
     },
     "wrong": [
       null,
       {
-        "zh": "「解答」用于解答问题、考试题，问卷没有「正确答案」。",
-        "en": "「解答」 is for solving problems or exam questions; a questionnaire has no right answer."
+        "zh": "「敗れる」也读「やぶれる」，但意思是比赛输掉（「決勝で敗れる」），不能用于袜子。",
+        "en": "「敗れる」 is also やぶれる, but it means losing a match (「決勝で敗れる」) — not socks."
       },
       {
-        "zh": "「回当」不是词，「当」不对。",
-        "en": "「回当」 isn't a word; 「当」 is wrong."
+        "zh": "「被」读「かぶる」「こうむる」（「被る」），不读「やぶれる」。",
+        "en": "「被」 is かぶる or こうむる (「被る」), not やぶれる."
       },
       {
-        "zh": "「会答」不是词，「会」不对。",
-        "en": "「会答」 isn't a word; 「会」 is wrong."
+        "zh": "「波」是波浪的「波」（なみ），没有「波れる」这个词。",
+        "en": "「波」 is 'wave' (なみ); 「波れる」 isn't a word."
       }
     ]
   },
   {
-    "id": "n2-mg-206",
+    "id": "n2-mg-282",
     "type": "hyouki",
     "difficulty": 1,
-    "stem": "忙しくて、留学の<<きかい>>を逃してしまった。",
+    "stem": "遅くまで遊んでいたら、父に一時間も<<せっきょう>>された。",
     "options": [
-      "機会",
-      "機械",
-      "器械",
-      "期会"
+      "説教",
+      "説孝",
+      "節教",
+      "設教"
     ],
     "answer": 0,
     "tr": {
-      "zh": "太忙了，错过了留学的机会。",
-      "en": "I was so busy that I missed my chance to study abroad."
+      "zh": "玩到很晚，被爸爸训了足足一个小时。",
+      "en": "I stayed out late and got an hour-long lecture from my father."
     },
     "why": {
-      "zh": "机会、时机是「機会」。",
-      "en": "A chance or opportunity is 「機会」."
+      "zh": "训诫、数落是「説教」：「説」（说明的说）+「教」（教育的教）。",
+      "en": "A telling-off is 「説教」: 「説」 (explain) + 「教」 (teach)."
     },
     "wrong": [
       null,
       {
-        "zh": "「機械」是机器。",
-        "en": "「機械」 is a machine."
+        "zh": "「孝」是孝顺的「孝」，和「教」字形相近，「説孝」不是词。",
+        "en": "「孝」 (filial piety) looks like 「教」; 「説孝」 isn't a word."
       },
       {
-        "zh": "「器械」是器具、器械（「医療器械」）。",
-        "en": "「器械」 is apparatus (「医療器械」)."
+        "zh": "「節」也读「せつ」（「季節」），但「説教」用的是「説」。",
+        "en": "「節」 is せつ too (「季節」), but 「説教」 uses 「説」."
       },
       {
-        "zh": "「期会」不是词。",
-        "en": "「期会」 isn't a word."
+        "zh": "「設」也读「せつ」（「設備」），「設教」不是词。",
+        "en": "「設」 is せつ too (「設備」); 「設教」 isn't a word."
       }
     ]
   },
@@ -252,38 +252,38 @@
     ]
   },
   {
-    "id": "n2-mg-208",
+    "id": "n2-mg-283",
     "type": "hyouki",
     "difficulty": 1,
-    "stem": "十年後の自分の姿を<<そうぞう>>してみてください。",
+    "stem": "暑かったので、木の下でしばらく<<すずんで>>から帰った。",
     "options": [
-      "想像",
-      "創造",
-      "相像",
-      "想象"
+      "涼んで",
+      "冷んで",
+      "凍んで",
+      "液んで"
     ],
     "answer": 0,
     "tr": {
-      "zh": "请试着想象一下十年后的自己。",
-      "en": "Try to imagine yourself ten years from now."
+      "zh": "因为太热，在树下乘了会儿凉才回家。",
+      "en": "It was hot, so I cooled off under a tree for a while before going home."
     },
     "why": {
-      "zh": "在脑中想象是「想像」（日语写「像」）。",
-      "en": "Picturing something in your mind is 「想像」 (with 「像」 in Japanese)."
+      "zh": "乘凉是「涼む」：「涼」是「涼しい」的「涼」。",
+      "en": "Cooling off in the shade is 「涼む」: 「涼」 as in 「涼しい」."
     },
     "wrong": [
       null,
       {
-        "zh": "「創造」是创造（「新しい文化を創造する」），不是想象。",
-        "en": "「創造」 is creation (「新しい文化を創造する」), not imagining."
+        "zh": "「冷」读「ひえる」「さめる」（「冷える」「冷める」），没有「冷む」这个词。",
+        "en": "「冷」 is ひえる or さめる (「冷える」, 「冷める」); 「冷む」 isn't a word."
       },
       {
-        "zh": "「相像」不是日语词。",
-        "en": "「相像」 isn't a Japanese word."
+        "zh": "「凍」读「こおる」（「凍る」），不读「すずむ」。",
+        "en": "「凍」 is こおる (「凍る」), not すずむ."
       },
       {
-        "zh": "「想象」是中文写法，日语写「想像」。",
-        "en": "「想象」 is the Chinese spelling; Japanese writes 「想像」."
+        "zh": "「液」是液体的「液」，偏旁相同但字不同。",
+        "en": "「液」 is 'liquid' — same water radical, different character."
       }
     ]
   },
@@ -324,74 +324,74 @@
     ]
   },
   {
-    "id": "n2-mg-210",
+    "id": "n2-mg-284",
     "type": "hyouki",
     "difficulty": 2,
-    "stem": "勉強は、結果だけでなく、そこに至る<<かてい>>も大切だ。",
+    "stem": "大臣が被災地を<<しさつ>>し、住民から話を聞いた。",
     "options": [
-      "過程",
-      "課程",
-      "家庭",
-      "仮定"
+      "視察",
+      "視祭",
+      "示察",
+      "視擦"
     ],
     "answer": 0,
     "tr": {
-      "zh": "学习不仅结果重要，达到结果的过程也很重要。",
-      "en": "In study, not just the result but the process of getting there matters."
+      "zh": "大臣视察了受灾地区，听取了居民的意见。",
+      "en": "The minister inspected the disaster area and heard from residents."
     },
     "why": {
-      "zh": "「そこに至る」（达到结果的）提示是过程：「過程」。",
-      "en": "「そこに至る」 (leading up to it) points to the process: 「過程」."
+      "zh": "实地考察是「視察」：「視」（视线的视）+「察」（观察的察）。",
+      "en": "An on-site inspection is 「視察」: 「視」 (look) + 「察」 (observe)."
     },
     "wrong": [
       null,
       {
-        "zh": "「課程」是课程（「博士課程」）。",
-        "en": "「課程」 is a course of study (「博士課程」)."
+        "zh": "「祭」是祭祀的「祭」，与「察」形近，「視祭」不是词。",
+        "en": "「祭」 (festival) looks like 「察」; 「視祭」 isn't a word."
       },
       {
-        "zh": "「家庭」是家庭，接不上「そこに至る」。",
-        "en": "「家庭」 is household; it doesn't fit 「そこに至る」."
+        "zh": "「示」也读「し」（「指示」），但「視察」用的是「視」。",
+        "en": "「示」 is し too (「指示」), but 「視察」 uses 「視」."
       },
       {
-        "zh": "「仮定」是假设（「仮定の話」）。",
-        "en": "「仮定」 is a supposition (「仮定の話」)."
+        "zh": "「擦」是摩擦的「擦」，「視擦」不是词。",
+        "en": "「擦」 is 'rub' (「摩擦」); 「視擦」 isn't a word."
       }
     ]
   },
   {
-    "id": "n2-mg-211",
+    "id": "n2-mg-285",
     "type": "hyouki",
     "difficulty": 2,
-    "stem": "この映画の<<せいさく>>には三年かかったそうだ。",
+    "stem": "この作家は、長い小説より<<たんぺん>>のほうが評価が高い。",
     "options": [
-      "制作",
-      "政策",
-      "成策",
-      "精作"
+      "短編",
+      "短遍",
+      "短偏",
+      "単編"
     ],
     "answer": 0,
     "tr": {
-      "zh": "听说这部电影制作花了三年。",
-      "en": "Apparently this film took three years to make."
+      "zh": "这位作家的短篇比长篇小说评价更高。",
+      "en": "This author's short stories are rated more highly than his novels."
     },
     "why": {
-      "zh": "电影、节目等作品的制作写「制作」。",
-      "en": "Making a work such as a film is 「制作」."
+      "zh": "篇幅短的作品是「短編」：「編」是「編集」的「編」，反义词是「長編」。",
+      "en": "A short piece is 「短編」: 「編」 as in 「編集」; the opposite is 「長編」."
     },
     "wrong": [
       null,
       {
-        "zh": "「政策」是政策，读音相同但意思不符。",
-        "en": "「政策」 is policy — same sound, wrong meaning."
+        "zh": "「遍」是「普遍」的「遍」，与「編」形近，「短遍」不是词。",
+        "en": "「遍」 (as in 「普遍」) looks like 「編」; 「短遍」 isn't a word."
       },
       {
-        "zh": "「成策」不是词。",
-        "en": "「成策」 isn't a word."
+        "zh": "「偏」是「偏る」的「偏」，「短偏」不是词。",
+        "en": "「偏」 is 'lean' (「偏る」); 「短偏」 isn't a word."
       },
       {
-        "zh": "「精作」不是词。",
-        "en": "「精作」 isn't a word."
+        "zh": "「単」也读「たん」（「簡単」），但这里的「たん」是短的「短」。",
+        "en": "「単」 is たん too (「簡単」), but this たん is 「短」 (short)."
       }
     ]
   },
@@ -576,41 +576,38 @@
     ]
   },
   {
-    "id": "n2-mg-217",
+    "id": "n2-mg-286",
     "type": "hyouki",
-    "refs": [
-      "lesson65#vocab"
-    ],
     "difficulty": 1,
-    "stem": "新しいソフトを使って、作業の<<こうりつ>>を上げた。",
+    "stem": "このパンは焼きたてで、とても<<やわらかい>>。",
     "options": [
-      "効率",
-      "高率",
-      "効律",
-      "交率"
+      "柔らかい",
+      "条らかい",
+      "矛らかい",
+      "案らかい"
     ],
     "answer": 0,
     "tr": {
-      "zh": "用新软件提高了工作效率。",
-      "en": "We raised our efficiency with new software."
+      "zh": "这面包刚烤好，非常松软。",
+      "en": "This bread is fresh from the oven and very soft."
     },
     "why": {
-      "zh": "效率是「効率」：「効」（效果的效）+「率」。",
-      "en": "Efficiency is 「効率」: 「効」 (effect) + 「率」 (rate)."
+      "zh": "柔软是「柔らかい」：「柔」是「柔道」的「柔」。（「軟らかい」也读やわらかい，多用于土、米饭等。）",
+      "en": "Soft is 「柔らかい」: 「柔」 as in 「柔道」. (「軟らかい」 is also やわらかい, used mostly for soil, rice and the like.)"
     },
     "wrong": [
       null,
       {
-        "zh": "「高率」也读「こうりつ」，但意思是\"高比率\"（高率の税金），不能说\"作业的高比率\"。",
-        "en": "「高率」 is also こうりつ but means a high rate (高率の税金), not efficiency."
+        "zh": "「条」是「条件」的「条」，与「柔」形近，不读「やわら」。",
+        "en": "「条」 (as in 「条件」) looks like 「柔」 but isn't read やわら."
       },
       {
-        "zh": "「律」也读「りつ」（法律），但没有「効律」这个词。",
-        "en": "律 is also read りつ (法律), but 「効律」 isn't a word."
+        "zh": "「矛」是「矛盾」的「矛」，只是「柔」的上半部分。",
+        "en": "「矛」 (as in 「矛盾」) is only the top half of 「柔」."
       },
       {
-        "zh": "「交」也读「こう」，但没有「交率」这个词。",
-        "en": "交 is also こう, but 「交率」 isn't a word."
+        "zh": "「案」是「案内」的「案」，下面同样是「木」，但不是这个字。",
+        "en": "「案」 (as in 「案内」) also has 木 at the bottom, but it's a different character."
       }
     ]
   },

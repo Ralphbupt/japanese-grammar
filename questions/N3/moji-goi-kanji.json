@@ -36,42 +36,6 @@
     ]
   },
   {
-    "id": "n3-mg-102",
-    "type": "kanji",
-    "difficulty": 1,
-    "stem": "この工場では電気<<製品>>を作っている。",
-    "options": [
-      "せいひん",
-      "せいびん",
-      "せいしな",
-      "しょうひん"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "这家工厂生产电器产品。",
-      "en": "This factory makes electrical products."
-    },
-    "why": {
-      "zh": "「製（せい）」+「品（ひん）」：「せいひん」。",
-      "en": "「製」 is せい and 「品」 is ひん: せいひん."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「品」在这里不浊化，是「ひん」。",
-        "en": "「品」 isn't voiced here: ひん."
-      },
-      {
-        "zh": "「しな」是「品」的训读（「品物」），音读词「製品」用「ひん」。",
-        "en": "しな is the kun reading (「品物」); in the on-reading word 「製品」 it's ひん."
-      },
-      {
-        "zh": "「しょうひん」是「商品」（商品），不是「製品」。",
-        "en": "しょうひん is 「商品」 (merchandise), not 「製品」."
-      }
-    ]
-  },
-  {
     "id": "n3-mg-103",
     "type": "kanji",
     "difficulty": 1,
@@ -254,45 +218,6 @@
       {
         "zh": "「滞」不浊化，是「たい」；「じゅうだい」是「重大」。",
         "en": "「滞」 isn't voiced: たい; じゅうだい is 「重大」 (serious)."
-      }
-    ]
-  },
-  {
-    "id": "n3-mg-108",
-    "type": "kanji",
-    "refs": [
-      "lesson37#vocab"
-    ],
-    "difficulty": 1,
-    "stem": "寝坊して、会社に<<遅刻>>した。",
-    "options": [
-      "ちこく",
-      "ちごく",
-      "ちっこく",
-      "じこく"
-    ],
-    "answer": 0,
-    "tr": {
-      "zh": "睡过头，上班迟到了。",
-      "en": "I overslept and was late for work."
-    },
-    "why": {
-      "zh": "「遅（ち）」+「刻（こく）」：「ちこく」。",
-      "en": "「遅」 is ち and 「刻」 is こく: ちこく."
-    },
-    "wrong": [
-      null,
-      {
-        "zh": "「刻」不浊化，是「こく」。",
-        "en": "「刻」 isn't voiced: こく."
-      },
-      {
-        "zh": "中间没有促音「っ」。",
-        "en": "There's no small っ."
-      },
-      {
-        "zh": "「遅」读「ち」；「じこく」是「時刻」（时刻）。",
-        "en": "「遅」 is ち; じこく is 「時刻」 (time)."
       }
     ]
   },
@@ -687,41 +612,38 @@
     ]
   },
   {
-    "id": "n3-mg-119",
+    "id": "n3-mg-157",
     "type": "kanji",
-    "refs": [
-      "lesson42#vocab"
-    ],
     "difficulty": 1,
-    "stem": "<<遠慮>>しないで、たくさん食べてください。",
+    "stem": "一人暮らしを始めてから、母の料理が<<恋しく>>なった。",
     "options": [
-      "えんりょ",
-      "えんりょう",
-      "えんろ",
-      "おんりょ"
+      "こいしく",
+      "こおしく",
+      "こいじく",
+      "れんしく"
     ],
     "answer": 0,
     "tr": {
-      "zh": "别客气，多吃点。",
-      "en": "Don't hold back — please eat plenty."
+      "zh": "开始一个人生活以后，我开始想念妈妈做的菜了。",
+      "en": "Since I started living alone, I've come to miss my mother's cooking."
     },
     "why": {
-      "zh": "「遠（えん）」+「慮（りょ）」：「えんりょ」，「慮」是短音。",
-      "en": "「遠」 is えん and 「慮」 is りょ: えんりょ, a short りょ."
+      "zh": "「恋しい（こいしい）」＝怀念、想念，这里是く形「こいしく」；「恋」训读「こい」。",
+      "en": "「恋しい」 (to miss, long for) is こいしい, here in the く form こいしく; 「恋」 is read こい."
     },
     "wrong": [
       null,
       {
-        "zh": "「慮」是短音「りょ」，没有「う」。",
-        "en": "「慮」 is a short りょ — no う."
+        "zh": "「恋」是「こい」，不是长音「こお」。",
+        "en": "「恋」 is こい, not a long こお."
       },
       {
-        "zh": "「慮」读「りょ」，不是「ろ」。",
-        "en": "「慮」 is りょ, not ろ."
+        "zh": "「しい」不浊化，是「こいしい」。",
+        "en": "しい isn't voiced: こいしい."
       },
       {
-        "zh": "「遠」读「えん」，不是「おん」。",
-        "en": "「遠」 is えん, not おん."
+        "zh": "「れん」是音读（「恋愛」），形容词「恋しい」用训读「こい」。",
+        "en": "れん is the on reading (「恋愛」); the adjective 「恋しい」 uses the kun reading こい."
       }
     ]
   },
@@ -843,41 +765,38 @@
     ]
   },
   {
-    "id": "n3-mg-123",
+    "id": "n3-mg-158",
     "type": "kanji",
-    "refs": [
-      "lesson43#vocab"
-    ],
-    "difficulty": 2,
-    "stem": "不景気で、父の会社が<<倒産>>した。",
+    "difficulty": 1,
+    "stem": "電卓を使わずに、頭の中で<<計算>>した。",
     "options": [
-      "とうさん",
-      "とうざん",
-      "どうさん",
-      "とさん"
+      "けいさん",
+      "けさん",
+      "けいざん",
+      "かいさん"
     ],
     "answer": 0,
     "tr": {
-      "zh": "因为不景气，父亲的公司倒闭了。",
-      "en": "My father's company went bankrupt in the recession."
+      "zh": "没用计算器，在脑子里算了出来。",
+      "en": "I worked it out in my head without a calculator."
     },
     "why": {
-      "zh": "「倒（とう）」+「産（さん）」：「とうさん」。",
-      "en": "「倒」 is とう and 「産」 is さん: とうさん."
+      "zh": "「計（けい）」+「算（さん）」：「けいさん」，「計」是长音，「算」不浊化。",
+      "en": "「計」 is けい and 「算」 is さん: けいさん — long けい, unvoiced さん."
     },
     "wrong": [
       null,
       {
-        "zh": "「産」不浊化，是「さん」。",
-        "en": "「産」 isn't voiced: さん."
+        "zh": "少了长音：「計」是「けい」。",
+        "en": "Missing the long vowel: 「計」 is けい."
       },
       {
-        "zh": "「倒」是清音「とう」。",
-        "en": "「倒」 is unvoiced: とう."
+        "zh": "「算」在这里不浊化，是「さん」。",
+        "en": "「算」 isn't voiced here: さん."
       },
       {
-        "zh": "「倒」是长音「とう」。",
-        "en": "「倒」 is the long とう."
+        "zh": "「かいさん」是「解散」（解散），不是「計算」。",
+        "en": "かいさん is 「解散」 (breaking up), not 「計算」."
       }
     ]
   },
@@ -1234,41 +1153,38 @@
     ]
   },
   {
-    "id": "n3-mg-133",
+    "id": "n3-mg-159",
     "type": "kanji",
-    "refs": [
-      "lesson50#vocab"
-    ],
     "difficulty": 1,
-    "stem": "夏休みは<<田舎>>の祖母の家に行く。",
+    "stem": "飼っていた犬が死んで、とても<<悲しかった>>。",
     "options": [
-      "いなか",
-      "いなが",
-      "いなっか",
-      "いいなか"
+      "かなしかった",
+      "かなじかった",
+      "がなしかった",
+      "くやしかった"
     ],
     "answer": 0,
     "tr": {
-      "zh": "暑假我要去乡下的奶奶家。",
-      "en": "In the summer holidays I go to my grandmother's in the countryside."
+      "zh": "养的狗死了，我非常难过。",
+      "en": "My dog died and I was very sad."
     },
     "why": {
-      "zh": "「田舎」是特殊读法（熟字训），整体读「いなか」。",
-      "en": "「田舎」 has a special whole-word reading: いなか."
+      "zh": "「悲しい（かなしい）」的过去形是「かなしかった」，全是清音。",
+      "en": "「悲しい」 (sad) is かなしい; past form かなしかった, all unvoiced."
     },
     "wrong": [
       null,
       {
-        "zh": "「か」不浊化：「いなか」。",
-        "en": "The か isn't voiced: いなか."
+        "zh": "「しい」不浊化，是「かなしい」。",
+        "en": "しい isn't voiced: かなしい."
       },
       {
-        "zh": "「田舎」读「いなか」，中间没有促音「っ」。",
-        "en": "「田舎」 is いなか, with no small っ."
+        "zh": "第一个音是清音「か」，不是「が」。",
+        "en": "The first sound is unvoiced か, not が."
       },
       {
-        "zh": "是「いなか」，没有多一个「い」。",
-        "en": "It's いなか — no extra い."
+        "zh": "「くやしかった」是「悔しい」（不甘心），不是「悲しい」。",
+        "en": "くやしかった is 「悔しい」 (frustrated), not 「悲しい」."
       }
     ]
   },
@@ -1429,80 +1345,74 @@
     ]
   },
   {
-    "id": "n3-mg-138",
+    "id": "n3-mg-160",
     "type": "kanji",
-    "refs": [
-      "lesson54#vocab"
-    ],
     "difficulty": 1,
-    "stem": "出かける前に、もう一度<<確認>>してください。",
+    "stem": "先生が学生にテストの用紙を<<配った>>。",
     "options": [
-      "かくにん",
-      "かくじん",
-      "かくいん",
-      "がくにん"
+      "くばった",
+      "くはった",
+      "はいった",
+      "くまった"
     ],
     "answer": 0,
     "tr": {
-      "zh": "出门前请再确认一遍。",
-      "en": "Please check once more before you go out."
+      "zh": "老师把试卷发给了学生。",
+      "en": "The teacher handed out the test papers to the students."
     },
     "why": {
-      "zh": "「確（かく）」+「認（にん）」：「かくにん」。",
-      "en": "「確」 is かく and 「認」 is にん: かくにん."
+      "zh": "「配る（くばる）」＝分发，た形是「くばった」，「ば」是浊音。",
+      "en": "「配る」 (to hand out) is くばる; た-form くばった, with voiced ば."
     },
     "wrong": [
       null,
       {
-        "zh": "「認」读「にん」，不是「じん」。",
-        "en": "「認」 is にん, not じん."
+        "zh": "第二个音是浊音「ば」：「くばる」。",
+        "en": "The second sound is voiced: くばる."
       },
       {
-        "zh": "「認」读「にん」，不是「いん」。",
-        "en": "「認」 is にん, not いん."
+        "zh": "「はい」是「配」的音读（「配達」），动词「配る」用训读「くば」。",
+        "en": "はい is the on reading (「配達」); the verb 「配る」 uses the kun reading くば."
       },
       {
-        "zh": "「確」是清音「かく」。",
-        "en": "「確」 is unvoiced: かく."
+        "zh": "「くまる」不是词，「配る」是「くばる」。",
+        "en": "くまる isn't a word; 「配る」 is くばる."
       }
     ]
   },
   {
-    "id": "n3-mg-139",
+    "id": "n3-mg-161",
     "type": "kanji",
-    "refs": [
-      "lesson54#vocab"
-    ],
     "difficulty": 2,
-    "stem": "あのとき留学しなかったことを、今でも<<後悔>>している。",
+    "stem": "手術から二週間たって、やっと父が<<退院>>した。",
     "options": [
-      "こうかい",
-      "ごかい",
-      "こうけい",
-      "ごうかい"
+      "たいいん",
+      "たいん",
+      "だいいん",
+      "ていいん"
     ],
     "answer": 0,
     "tr": {
-      "zh": "那时没去留学，我至今还在后悔。",
-      "en": "I still regret not studying abroad back then."
+      "zh": "手术过了两周，父亲终于出院了。",
+      "en": "Two weeks after the operation, my father was finally discharged from hospital."
     },
     "why": {
-      "zh": "「後（こう）」+「悔（かい）」：「こうかい」，「後」在这里读「こう」。",
-      "en": "「後」 is こう here and 「悔」 is かい: こうかい."
+      "zh": "「退（たい）」+「院（いん）」：「たいいん」，「い」要写两个。",
+      "en": "「退」 is たい and 「院」 is いん: たいいん, with two い."
     },
     "wrong": [
       null,
       {
-        "zh": "「後」在「後悔」里读「こう」；「ごかい」是「誤解」。",
-        "en": "In 「後悔」 「後」 is こう; ごかい is 「誤解」 (misunderstanding)."
+        "zh": "少了一个「い」：「たい」+「いん」。",
+        "en": "One い is missing: たい + いん."
       },
       {
-        "zh": "「悔」读「かい」；「こうけい」是「光景」。",
-        "en": "「悔」 is かい; こうけい is 「光景」 (scene)."
+        "zh": "「退」是清音「たい」，不是「だい」。",
+        "en": "「退」 is unvoiced たい, not だい."
       },
       {
-        "zh": "「後」是清音「こう」；「ごうかい」是「豪快」。",
-        "en": "「後」 is unvoiced こう; ごうかい is 「豪快」 (bold)."
+        "zh": "「ていいん」是「定員」（定员），不是「退院」。",
+        "en": "ていいん is 「定員」 (capacity), not 「退院」."
       }
     ]
   },
@@ -1618,38 +1528,38 @@
     ]
   },
   {
-    "id": "n3-mg-143",
+    "id": "n3-mg-162",
     "type": "kanji",
     "difficulty": 1,
-    "stem": "旅行の<<準備>>は、もうできましたか。",
+    "stem": "このバッグは<<高価>>なので、毎日は使わない。",
     "options": [
-      "じゅんび",
-      "せつび",
-      "よび",
-      "じゅんばん"
+      "こうか",
+      "こうが",
+      "こか",
+      "ごうか"
     ],
     "answer": 0,
     "tr": {
-      "zh": "旅行的准备已经做好了吗？",
-      "en": "Are you ready for the trip yet?"
+      "zh": "这个包很贵，所以不每天用。",
+      "en": "This bag is expensive, so I don't use it every day."
     },
     "why": {
-      "zh": "「準（じゅん）」+「備（び）」：「じゅんび」。「準備を する」「準備が できる」。",
-      "en": "「準」 じゅん + 「備」 び: じゅんび. 「準備を する」, 「準備が できる」."
+      "zh": "「高（こう）」+「価（か）」：「こうか」＝价格高、昂贵；「価」不浊化。",
+      "en": "「高」 is こう and 「価」 is か: こうか (expensive); 「価」 isn't voiced."
     },
     "wrong": [
       null,
       {
-        "zh": "「せつび」是「設備」（设备）。",
-        "en": "せつび is 「設備」 (equipment, facilities)."
+        "zh": "「価」不浊化，是「か」不是「が」。",
+        "en": "「価」 isn't voiced: か, not が."
       },
       {
-        "zh": "「よび」是「予備」（备用）。",
-        "en": "よび is 「予備」 (spare, reserve)."
+        "zh": "少了长音：「高」是「こう」。",
+        "en": "Missing the long vowel: 「高」 is こう."
       },
       {
-        "zh": "「じゅんばん」是「順番」（顺序）。",
-        "en": "じゅんばん is 「順番」 (order, turn)."
+        "zh": "「ごうか」是「豪華」（豪华），意思近但不是这个词；「高」不浊化。",
+        "en": "ごうか is 「豪華」 (luxurious) — close in meaning, but a different word; 「高」 isn't voiced."
       }
     ]
   },
@@ -1798,38 +1708,38 @@
     ]
   },
   {
-    "id": "n3-mg-148",
+    "id": "n3-mg-163",
     "type": "kanji",
-    "difficulty": 2,
-    "stem": "駅前のスーパーは、夜十一時まで<<営業>>している。",
+    "difficulty": 1,
+    "stem": "祖母の家には、木でできた<<丸い>>テーブルがある。",
     "options": [
-      "えいぎょう",
-      "ざんぎょう",
-      "さぎょう",
-      "じゅぎょう"
+      "まるい",
+      "まろい",
+      "がんい",
+      "ほそい"
     ],
     "answer": 0,
     "tr": {
-      "zh": "车站前的超市营业到晚上十一点。",
-      "en": "The supermarket in front of the station is open until eleven at night."
+      "zh": "奶奶家有一张木头做的圆桌。",
+      "en": "My grandmother's house has a round wooden table."
     },
     "why": {
-      "zh": "「営（えい）」+「業（ぎょう）」：「えいぎょう」。「営業時間」「営業中」。",
-      "en": "「営」 えい + 「業」 ぎょう: えいぎょう. 「営業時間」, 「営業中」."
+      "zh": "「丸い（まるい）」＝圆的，训读「まる」+「い」。",
+      "en": "「丸い」 (round) is まるい: kun reading まる + い."
     },
     "wrong": [
       null,
       {
-        "zh": "「ざんぎょう」是「残業」（加班）。",
-        "en": "ざんぎょう is 「残業」 (overtime)."
+        "zh": "是「まる」不是「まろ」。",
+        "en": "It's まる, not まろ."
       },
       {
-        "zh": "「さぎょう」是「作業」（作业、操作）。",
-        "en": "さぎょう is 「作業」 (work, operation)."
+        "zh": "「がん」是「丸」的音读（「弾丸」），形容词「丸い」用训读「まる」。",
+        "en": "がん is the on reading (「弾丸」); the adjective 「丸い」 uses the kun reading まる."
       },
       {
-        "zh": "「じゅぎょう」是「授業」（上课）。",
-        "en": "じゅぎょう is 「授業」 (a class)."
+        "zh": "「ほそい」是「細い」（细），不是「丸い」。",
+        "en": "ほそい is 「細い」 (thin), not 「丸い」."
       }
     ]
   },

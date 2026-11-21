@@ -1,73 +1,73 @@
 [
   {
-    "id": "n2-mg-101",
+    "id": "n2-mg-291",
     "type": "kanji",
     "difficulty": 2,
-    "stem": "食事が肉ばかりに<<偏らない>>ように気をつけている。",
+    "stem": "長い時間同じ姿勢で座っていると、<<背骨>>に負担がかかる。",
     "options": [
-      "かたよらない",
-      "かたまらない",
-      "かたむかない",
-      "かだよらない"
+      "せぼね",
+      "せほね",
+      "はいこつ",
+      "せいこつ"
     ],
     "answer": 0,
     "tr": {
-      "zh": "我注意饮食不要偏重于肉类。",
-      "en": "I make sure my meals don't lean too heavily on meat."
+      "zh": "长时间保持同一个姿势坐着，会给脊柱造成负担。",
+      "en": "Sitting in the same position for a long time puts a strain on your spine."
     },
     "why": {
-      "zh": "「偏る（かたよる）」：偏、偏向一方。",
-      "en": "「偏る」 is かたよる: to lean to one side, be unbalanced."
+      "zh": "训读「背（せ）」+「骨（ほね）」，连在一起浊化成「せぼね」。",
+      "en": "Kun readings 「背」 せ + 「骨」 ほね, voiced in the compound: せぼね."
     },
     "wrong": [
       null,
       {
-        "zh": "「かたまる」是「固まる」（凝固）。",
-        "en": "かたまる is 「固まる」 (to harden)."
+        "zh": "后一个词要浊化，「ほね」变成「ぼね」。",
+        "en": "The second part is voiced: ぼね, not ほね."
       },
       {
-        "zh": "「かたむく」是「傾く」（倾斜），不是「偏る」。",
-        "en": "かたむく is 「傾く」 (to tilt), not 「偏る」."
+        "zh": "这个词用训读，不读音读「はいこつ」。",
+        "en": "This word uses kun readings, not the on reading はいこつ."
       },
       {
-        "zh": "第三个音是清音「た」，不是「だ」。",
-        "en": "The third sound is unvoiced た, not だ."
+        "zh": "「背」读「せ」，不是长音「せい」；「せいこつ」是「整骨」（正骨）。",
+        "en": "「背」 is せ, not せい; せいこつ is 「整骨」 (bone-setting)."
       }
     ]
   },
   {
-    "id": "n2-mg-102",
+    "id": "n2-mg-292",
     "type": "kanji",
     "difficulty": 2,
-    "stem": "彼の説明は<<抽象>>的で、よく分からなかった。",
+    "stem": "この店の野菜は、<<農薬>>をほとんど使わずに育てられている。",
     "options": [
-      "ちゅうしょう",
-      "ちゅうぞう",
-      "ゆうしょう",
-      "ちゅうしょ"
+      "のうやく",
+      "のやく",
+      "のうがく",
+      "のうらく"
     ],
     "answer": 0,
     "tr": {
-      "zh": "他的说明很抽象，没太听懂。",
-      "en": "His explanation was abstract and hard to follow."
+      "zh": "这家店的蔬菜几乎不用农药栽培。",
+      "en": "This shop's vegetables are grown with hardly any pesticides."
     },
     "why": {
-      "zh": "「抽（ちゅう）」+「象（しょう）」：「ちゅうしょう」。「象」在这里读「しょう」（如「印象」）。",
-      "en": "「抽」 is ちゅう and 「象」 is しょう here (as in 「印象」): ちゅうしょう."
+      "zh": "「農（のう）」+「薬（やく）」：「のうやく」。「薬」音读「やく」，如「薬局」。",
+      "en": "「農」 is のう and 「薬」 is やく (as in 「薬局」): のうやく."
     },
     "wrong": [
       null,
       {
-        "zh": "「象」读「しょう」或「ぞう」（大象），这个词里是「しょう」。",
-        "en": "「象」 is しょう or ぞう (elephant); in this word it's しょう."
+        "zh": "「農」是长音「のう」，不能缩短。",
+        "en": "「農」 is the long のう — don't shorten it."
       },
       {
-        "zh": "「抽」读「ちゅう」；「ゆうしょう」是「優勝」（夺冠）。",
-        "en": "「抽」 is ちゅう; ゆうしょう is 「優勝」 (winning)."
+        "zh": "「のうがく」是「農学」（农学）；「薬」读「やく」。",
+        "en": "のうがく is 「農学」 (agricultural science); 「薬」 is やく."
       },
       {
-        "zh": "「象」是长音「しょう」，不能缩短。",
-        "en": "「象」 is the long しょう — don't shorten it."
+        "zh": "「薬」读「やく」，不是「らく」（「楽」才读らく）。",
+        "en": "「薬」 is やく; らく is 「楽」."
       }
     ]
   },
@@ -144,38 +144,38 @@
     ]
   },
   {
-    "id": "n2-mg-105",
+    "id": "n2-mg-293",
     "type": "kanji",
     "difficulty": 1,
-    "stem": "年をとって、体力が<<衰えて>>きた。",
+    "stem": "秋になると、山の木々が<<鮮やかな>>赤や黄色に変わる。",
     "options": [
-      "おとろえて",
-      "おさえて",
-      "おどろえて",
-      "おびえて"
+      "あざやかな",
+      "おだやかな",
+      "さわやかな",
+      "なごやかな"
     ],
     "answer": 0,
     "tr": {
-      "zh": "上了年纪，体力衰退了。",
-      "en": "With age, my stamina has started to decline."
+      "zh": "到了秋天，山上的树木变成鲜艳的红色和黄色。",
+      "en": "In autumn the trees on the hills turn vivid reds and yellows."
     },
     "why": {
-      "zh": "「衰える（おとろえる）」：衰退、衰弱。",
-      "en": "「衰える」 is おとろえる: to weaken, decline."
+      "zh": "「鮮やか（あざやか）」：鲜艳、鲜明（「鮮やかな色」）。",
+      "en": "「鮮やか」 is あざやか: vivid, bright (「鮮やかな色」)."
     },
     "wrong": [
       null,
       {
-        "zh": "「おさえる」是「抑える・押さえる」（压住）。",
-        "en": "おさえる is 「抑える／押さえる」 (to hold down)."
+        "zh": "「おだやか」是「穏やか」（平稳、温和）。",
+        "en": "おだやか is 「穏やか」 (calm, gentle)."
       },
       {
-        "zh": "第二个音是清音「と」，不是「ど」；别和「驚く（おどろく）」混。",
-        "en": "The second sound is と, not ど — don't mix it up with 「驚く」 (おどろく)."
+        "zh": "「さわやか」是「爽やか」（清爽）。",
+        "en": "さわやか is 「爽やか」 (refreshing)."
       },
       {
-        "zh": "「おびえる」是「怯える」（害怕）。",
-        "en": "おびえる is 「怯える」 (to be frightened)."
+        "zh": "「なごやか」是「和やか」（和睦、融洽）。",
+        "en": "なごやか is 「和やか」 (harmonious, friendly)."
       }
     ]
   },
@@ -292,41 +292,38 @@
     ]
   },
   {
-    "id": "n2-mg-109",
+    "id": "n2-mg-196",
     "type": "kanji",
-    "refs": [
-      "lesson61#vocab"
-    ],
     "difficulty": 1,
-    "stem": "彼は努力して苦手な数学を<<克服>>した。",
+    "stem": "毎朝五時に起きるのは、正直<<辛い>>。",
     "options": [
-      "こくふく",
-      "こっぷく",
-      "かつふく",
-      "こくぶく"
+      "つらい",
+      "からい",
+      "くるしい",
+      "にがい"
     ],
     "answer": 0,
     "tr": {
-      "zh": "他通过努力克服了不擅长的数学。",
-      "en": "Through hard work he overcame his weakness in maths."
+      "zh": "每天早上五点起床，说实话很痛苦。",
+      "en": "Honestly, getting up at five every morning is hard."
     },
     "why": {
-      "zh": "「克（こく）」+「服（ふく）」：「こくふく」，不促音化。",
-      "en": "「克」 is こく and 「服」 is ふく: こくふく, with no small っ."
+      "zh": "「辛い」有两个读音：「からい」（辣）和「つらい」（难受、痛苦）。早起说的是难受，读「つらい」。",
+      "en": "「辛い」 has two readings: からい (spicy) and つらい (hard, painful). Getting up early is hard, so it's つらい."
     },
     "wrong": [
       null,
       {
-        "zh": "这个词不促音化，不读「こっぷく」。",
-        "en": "This word doesn't contract: not こっぷく."
+        "zh": "「からい」也写作「辛い」，但意思是辣、咸，不能形容早起。",
+        "en": "からい is also written 「辛い」, but it means spicy or salty — not getting up early."
       },
       {
-        "zh": "「克」读「こく」，不是「かつ」（「勝つ」才是かつ）。",
-        "en": "「克」 is こく, not かつ (that's 「勝つ」)."
+        "zh": "「くるしい」是「苦しい」，汉字不同。",
+        "en": "くるしい is 「苦しい」 — a different kanji."
       },
       {
-        "zh": "「服」不浊化，是「ふく」。",
-        "en": "「服」 isn't voiced: ふく."
+        "zh": "「にがい」是「苦い」（味道苦），汉字不同。",
+        "en": "にがい is 「苦い」 (bitter) — a different kanji."
       }
     ]
   },
@@ -409,41 +406,38 @@
     ]
   },
   {
-    "id": "n2-mg-112",
+    "id": "n2-mg-197",
     "type": "kanji",
-    "refs": [
-      "lesson64#vocab"
-    ],
     "difficulty": 1,
-    "stem": "警察は犯人の<<証拠>>を見つけた。",
+    "stem": "アンケートの結果を<<分析>>して、来月の会議で報告する。",
     "options": [
-      "しょうこ",
-      "しょうきょ",
-      "しょこ",
-      "しょうご"
+      "ぶんせき",
+      "ふんせき",
+      "ぶんぜき",
+      "ぶんさい"
     ],
     "answer": 0,
     "tr": {
-      "zh": "警察找到了犯人的证据。",
-      "en": "The police found evidence against the culprit."
+      "zh": "分析问卷结果，在下个月的会议上汇报。",
+      "en": "I'll analyse the survey results and report on them at next month's meeting."
     },
     "why": {
-      "zh": "「証（しょう）」+「拠（こ）」：「しょうこ」。「拠」在这里读「こ」。",
-      "en": "「証」 is しょう and 「拠」 is こ here: しょうこ."
+      "zh": "「分（ぶん）」+「析（せき）」：「ぶんせき」。",
+      "en": "「分」 is ぶん and 「析」 is せき: ぶんせき."
     },
     "wrong": [
       null,
       {
-        "zh": "「拠」在「根拠（こんきょ）」里读「きょ」，但「証拠」读「こ」。",
-        "en": "「拠」 is きょ in 「根拠」, but こ in 「証拠」."
+        "zh": "「分」在这里读浊音「ぶん」；「ふん」是「〜分」（分钟）的读法。",
+        "en": "「分」 is voiced ぶん here; ふん is its reading for minutes."
       },
       {
-        "zh": "「証」是长音「しょう」，不能缩短。",
-        "en": "「証」 is the long しょう — don't shorten it."
+        "zh": "「析」不浊化，是「せき」。",
+        "en": "「析」 isn't voiced: せき."
       },
       {
-        "zh": "「しょうご」是「正午」的读音；「拠」在这里读「こ」，是清音。",
-        "en": "しょうご is 「正午」; 拠 here is unvoiced こ."
+        "zh": "「析」读「せき」，不是「さい」。",
+        "en": "「析」 is せき, not さい."
       }
     ]
   },
@@ -682,41 +676,38 @@
     ]
   },
   {
-    "id": "n2-mg-120",
+    "id": "n2-mg-198",
     "type": "kanji",
-    "refs": [
-      "lesson74#vocab"
-    ],
     "difficulty": 2,
-    "stem": "事故の<<経緯>>を詳しく説明してください。",
+    "stem": "彼女はオリンピックで水泳の三つの<<競技>>に出場する。",
     "options": [
-      "けいい",
-      "けいえい",
-      "きょうい",
-      "けいいん"
+      "きょうぎ",
+      "きょうき",
+      "けいぎ",
+      "きょぎ"
     ],
     "answer": 0,
     "tr": {
-      "zh": "请详细说明事故的经过。",
-      "en": "Please explain in detail how the accident happened."
+      "zh": "她将在奥运会上参加三个游泳项目。",
+      "en": "She'll compete in three swimming events at the Olympics."
     },
     "why": {
-      "zh": "「経（けい）」+「緯（い）」：「けいい」，经过、来龙去脉。",
-      "en": "「経」 is けい and 「緯」 is い: けいい (the course of events)."
+      "zh": "「競（きょう）」+「技（ぎ）」：「きょうぎ」。「技」读「ぎ」，如「演技」「技術」。",
+      "en": "「競」 is きょう and 「技」 is ぎ (as in 「演技」, 「技術」): きょうぎ."
     },
     "wrong": [
       null,
       {
-        "zh": "「けいえい」是「経営」（经营）。",
-        "en": "けいえい is 「経営」 (management)."
+        "zh": "「技」是浊音「ぎ」；「きょうき」是「狂気」等别的词。",
+        "en": "「技」 is voiced ぎ; きょうき is a different word (「狂気」)."
       },
       {
-        "zh": "「経」在「お経（きょう）」里读「きょう」，这里是「けい」。",
-        "en": "「経」 is きょう in 「お経」, but けい here."
+        "zh": "「競」在「競馬（けいば）」里读「けい」，但「競技」读「きょう」。",
+        "en": "「競」 is けい in 「競馬」, but きょう in 「競技」."
       },
       {
-        "zh": "「緯」读「い」，后面没有「ん」。",
-        "en": "「緯」 is い, with no ん after it."
+        "zh": "「競」是长音「きょう」；「きょぎ」是「虚偽」（虚假）。",
+        "en": "「競」 is the long きょう; きょぎ is 「虚偽」 (falsehood)."
       }
     ]
   },
@@ -760,119 +751,110 @@
     ]
   },
   {
-    "id": "n2-mg-122",
+    "id": "n2-mg-199",
     "type": "kanji",
-    "refs": [
-      "lesson75#vocab"
-    ],
     "difficulty": 1,
-    "stem": "試験の前に、よく出る問題を調べて<<対策>>を立てた。",
+    "stem": "けがをしたところを、水で洗ってから<<消毒>>した。",
     "options": [
-      "たいさく",
-      "たいざく",
-      "だいさく",
-      "たいさつ"
+      "しょうどく",
+      "しょうとく",
+      "しょどく",
+      "しょうどう"
     ],
     "answer": 0,
     "tr": {
-      "zh": "考试前，我研究了常考题目，制定了对策。",
-      "en": "Before the exam I looked at the common questions and worked out a strategy."
+      "zh": "把受伤的地方用水冲洗后消了毒。",
+      "en": "I washed the cut with water and then disinfected it."
     },
     "why": {
-      "zh": "「対（たい）」+「策（さく）」：「たいさく」。",
-      "en": "「対」 is たい and 「策」 is さく: たいさく."
+      "zh": "「消（しょう）」+「毒（どく）」：「しょうどく」。「毒」读浊音「どく」。",
+      "en": "「消」 is しょう and 「毒」 is どく: しょうどく."
     },
     "wrong": [
       null,
       {
-        "zh": "「策」不浊化，是「さく」。",
-        "en": "「策」 isn't voiced: さく."
+        "zh": "「毒」是浊音「どく」，不是「とく」。",
+        "en": "「毒」 is voiced どく, not とく."
       },
       {
-        "zh": "「対」读「たい」，不是「だい」（「だい」是「代・台」等）。",
-        "en": "「対」 is たい, not だい (that's 「代」, 「台」 …)."
+        "zh": "「消」是长音「しょう」，不能缩短。",
+        "en": "「消」 is the long しょう — don't shorten it."
       },
       {
-        "zh": "「策」读「さく」，最后是「く」不是「つ」。",
-        "en": "「策」 is さく — it ends in く, not つ."
+        "zh": "「毒」读「どく」；「しょうどう」是「衝動」（冲动）。",
+        "en": "「毒」 is どく; しょうどう is 「衝動」 (impulse)."
       }
     ]
   },
   {
-    "id": "n2-mg-123",
+    "id": "n2-mg-287",
     "type": "kanji",
-    "refs": [
-      "lesson67#vocab"
-    ],
     "difficulty": 1,
-    "stem": "高齢化で介護サービスの<<需要>>が高まっている。",
+    "stem": "時間はかかっても<<構わない>>ので、丁寧に作業してください。",
     "options": [
-      "じゅよう",
-      "じゅうよう",
-      "しゅよう",
-      "じゅうよ"
+      "かまわない",
+      "かばわない",
+      "かなわない",
+      "かよわない"
     ],
     "answer": 0,
     "tr": {
-      "zh": "由于老龄化，护理服务的需求在增加。",
-      "en": "With the ageing population, demand for care services is rising."
+      "zh": "花点时间也没关系，请仔细作业。",
+      "en": "It doesn't matter if it takes time — please work carefully."
     },
     "why": {
-      "zh": "「需（じゅ）」+「要（よう）」：「じゅよう」，「じゅ」是短音。",
-      "en": "「需」 is じゅ (short) and 「要」 is よう: じゅよう."
+      "zh": "「構う（かまう）」：在意、介意；「〜ても構わない」＝……也没关系。",
+      "en": "「構う」 is かまう: to mind; 「〜ても構わない」 means it's fine even if ~."
     },
     "wrong": [
       null,
       {
-        "zh": "「じゅうよう」是「重要」（重要），「需」是短音。",
-        "en": "じゅうよう is 「重要」 (important); 「需」 is short."
+        "zh": "「かばう」是「庇う」（袒护）。",
+        "en": "かばう is 「庇う」 (to protect, cover for)."
       },
       {
-        "zh": "「需」是浊音「じゅ」；「しゅよう」是「主要」。",
-        "en": "「需」 is voiced じゅ; しゅよう is 「主要」 (main)."
+        "zh": "「かなう」是「叶う」「敵う」（实现、比得上）。",
+        "en": "かなう is 「叶う」 / 「敵う」 (to come true; to match)."
       },
       {
-        "zh": "「需」是短音、「要」是长音，正好反了。",
-        "en": "「需」 is short and 「要」 is long — this has them the wrong way round."
+        "zh": "「かよう」是「通う」（往来、上学）。",
+        "en": "かよう is 「通う」 (to go regularly, commute)."
       }
     ]
   },
   {
-    "id": "n2-mg-124",
+    "id": "n2-mg-288",
     "type": "kanji",
-    "refs": [
-      "lesson67#vocab"
-    ],
     "difficulty": 2,
-    "stem": "給料は少し安いが、この会社は<<待遇>>がいい。",
+    "stem": "地震で家の<<柱>>が少し傾いてしまった。",
     "options": [
-      "たいぐう",
-      "たいぐ",
-      "だいぐう",
-      "たいこう"
+      "はしら",
+      "はしご",
+      "はやし",
+      "はたけ"
     ],
     "answer": 0,
     "tr": {
-      "zh": "工资虽然有点低，但这家公司待遇很好。",
-      "en": "The pay is a bit low, but this company treats its staff well."
+      "zh": "因为地震，房子的柱子有点倾斜了。",
+      "en": "The earthquake left one of the house's pillars slightly tilted."
     },
     "why": {
-      "zh": "「待（たい）」+「遇（ぐう）」：「たいぐう」。",
-      "en": "「待」 is たい and 「遇」 is ぐう: たいぐう."
+      "zh": "「柱（はしら）」：柱子；音读是「ちゅう」（「電柱」）。",
+      "en": "「柱」 is はしら (pillar); its on reading is ちゅう (「電柱」)."
     },
     "wrong": [
       null,
       {
-        "zh": "「遇」是长音「ぐう」，不能缩短。",
-        "en": "「遇」 is the long ぐう — don't shorten it."
+        "zh": "「はしご」是「梯子」（梯子）。",
+        "en": "はしご is 「梯子」 (ladder)."
       },
       {
-        "zh": "「待」不浊化，是「たい」。",
-        "en": "「待」 isn't voiced: たい."
+        "zh": "「はやし」是「林」（树林）。",
+        "en": "はやし is 「林」 (woods)."
       },
       {
-        "zh": "「遇」是浊音「ぐう」；「たいこう」是「対抗」。",
-        "en": "「遇」 is voiced ぐう; たいこう is 「対抗」 (rivalry)."
+        "zh": "「はたけ」是「畑」（旱地）。",
+        "en": "はたけ is 「畑」 (field)."
       }
     ]
   },
@@ -1501,39 +1483,38 @@
     ]
   },
   {
-    "id": "n2-mg-143",
-    "rev": 2,
+    "id": "n2-mg-289",
     "type": "kanji",
     "difficulty": 1,
-    "stem": "この地域では、絶滅のおそれがある鳥を<<保護>>している。",
+    "stem": "犯人を追って、二人の<<刑事>>が駅に向かった。",
     "options": [
-      "ほうご",
-      "ぼご",
-      "ほご",
-      "ほごう"
+      "けいじ",
+      "けいし",
+      "げいじ",
+      "けんじ"
     ],
-    "answer": 2,
+    "answer": 0,
     "tr": {
-      "zh": "这个地区正在保护濒临灭绝的鸟类。",
-      "en": "This area protects birds that are in danger of extinction."
+      "zh": "两名刑警追着犯人赶往车站。",
+      "en": "Two detectives headed for the station in pursuit of the culprit."
     },
     "why": {
-      "zh": "「保（ほ）」+「護（ご）」：两个都是短音，「ほご」。",
-      "en": "「保」 is ほ and 「護」 is ご — both short: ほご."
+      "zh": "「刑（けい）」+「事（じ）」：「けいじ」，刑警。",
+      "en": "「刑」 is けい and 「事」 is じ: けいじ, a police detective."
     },
     "wrong": [
-      {
-        "zh": "「保」是短音「ほ」，不拉长成「ほう」。",
-        "en": "「保」 is the short ほ, not ほう."
-      },
-      {
-        "zh": "「保」不浊化，是「ほ」。",
-        "en": "「保」 isn't voiced: ほ."
-      },
       null,
       {
-        "zh": "「護」是短音「ご」，不拉长成「ごう」。",
-        "en": "「護」 is the short ご, not ごう."
+        "zh": "「事」在这里读浊音「じ」。",
+        "en": "「事」 is voiced じ here."
+      },
+      {
+        "zh": "「刑」是清音「けい」；「げい」是「芸」的读音。",
+        "en": "「刑」 is unvoiced けい; げい is 「芸」."
+      },
+      {
+        "zh": "「けんじ」是「検事」（检察官），读音和意思都不同。",
+        "en": "けんじ is 「検事」 (public prosecutor) — a different word."
       }
     ]
   },
@@ -1755,40 +1736,39 @@
     ]
   },
   {
-    "id": "n2-mg-150",
-    "rev": 2,
+    "id": "n2-mg-290",
     "type": "kanji",
     "difficulty": 1,
-    "stem": "雨の中で無理をしたせいで、かぜが<<悪化>>してしまった。",
+    "stem": "先生が間に入って、二人のけんかはやっと<<収まった>>。",
     "options": [
-      "あくか",
-      "わるか",
-      "おっか",
-      "あっか"
+      "おさまった",
+      "ちぢまった",
+      "かたまった",
+      "しずまった"
     ],
-    "answer": 3,
+    "answer": 0,
     "tr": {
-      "zh": "因为冒雨硬撑，感冒恶化了。",
-      "en": "I pushed myself in the rain, and my cold got worse."
+      "zh": "老师从中调解，两人的争吵终于平息了。",
+      "en": "The teacher stepped in, and the two of them finally stopped quarrelling."
     },
     "why": {
-      "zh": "「悪（あく）」+「化（か）」，「く」变成促音：「あっか」。对比：「悪口」是训读「わるぐち」。",
-      "en": "「悪」 (あく) ＋ 「化」 (か): the く becomes a small っ — あっか. Compare 「悪口」, read with the kun-reading わるぐち."
+      "zh": "「収まる（おさまる）」：平息、收场（「けんかが収まる」）；也指装得下（「箱に収まる」）。",
+      "en": "「収まる」 is おさまる: to settle down (「けんかが収まる」), or to fit inside (「箱に収まる」)."
     },
     "wrong": [
+      null,
       {
-        "zh": "「あく」后接「か」时变成促音，读「あっか」，不读「あくか」。",
-        "en": "あく before か becomes あっ: あっか, not あくか."
+        "zh": "「ちぢまる」是「縮まる」（缩短）。",
+        "en": "ちぢまる is 「縮まる」 (to shrink, narrow)."
       },
       {
-        "zh": "「わる」是「悪い」的训读，「悪化」是音读词。",
-        "en": "わる is the kun-reading in 「悪い」; 悪化 is an on-reading word."
+        "zh": "「かたまる」是「固まる」（凝固）。",
+        "en": "かたまる is 「固まる」 (to harden)."
       },
       {
-        "zh": "「悪」在这里读「あ（っ）」，不读「お」（「嫌悪（けんお）」的读法）。",
-        "en": "「悪」 here is あっ, not お (as in 「嫌悪」)."
-      },
-      null
+        "zh": "意思相近，但那是「静まる」，「収」不读「しず」。",
+        "en": "Close in meaning, but that's 「静まる」; 「収」 is never read しず."
+      }
     ]
   },
   {
