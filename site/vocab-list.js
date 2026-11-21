@@ -35,11 +35,19 @@
   // ---- list: ＋ buttons, counts, filter, hide readings, play only my words
   var filter = ls.get('jp_vl_f') || 'all', mine = ls.get('jp_vl_mine') === '1', S = ld();
   var shown = [], query = '';
+  // Pages of 50 (only while the list isn't filtered or searched: then every match shows)
+  var PER = 50, pages = Math.ceil(its.length / PER), pg = Math.min(pages - 1, +ls.get('jp_vl_pg') || 0);
+  function paged() { return filter === 'all' && !query; }
   // search text per word: the word, its reading, its meaning
   var hay = its.map(function (s, i) { return (W[i] + ' ' + s.querySelector('.vl-r').textContent + ' ' + s.querySelector('.ga-m').textContent).toLowerCase(); });
+  function setPage(k, scroll) {
+    pg = Math.max(0, Math.min(pages - 1, k)); ls.set('jp_vl_pg', pg); paint();
+    if (scroll) (paged() ? its[pg * PER] : ga).scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
   function goTo(i) {
     var s = its[i]; if (!s) return;
-    if (s.hidden) { filter = 'all'; sel.value = 'all'; query = ''; qin.value = ''; paint(); }
+    if (!shown[i]) { filter = 'all'; sel.value = 'all'; query = ''; qin.value = ''; }
+    if (Math.floor(i / PER) !== pg || !shown[i]) setPage(Math.floor(i / PER));
     its.forEach(function (e) { e.classList.remove('vl-hit'); });
     s.classList.add('vl-hit'); s.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
@@ -55,8 +63,16 @@
       s.classList.toggle('vl-kn', k === 'kn');
       var n = +s.getAttribute('data-n');
       shown[i] = (filter === 'todo' ? !k : filter === 'in' ? k === 'in' : filter === 'n2' ? n >= 2 : true) && (!query || hay[i].indexOf(query) >= 0);
-      s.hidden = !shown[i];
+      s.hidden = !shown[i] || (paged() && Math.floor(i / PER) !== pg);
     });
+    var pd = paged();
+    [].forEach.call(document.querySelectorAll('#vl-pages a'), function (a) { a.classList.toggle('on', pd && +a.getAttribute('data-pg') === pg); });
+    document.getElementById('vl-pages').style.opacity = pd ? '' : '.45';
+    var nav = document.getElementById('vl-pnav');
+    nav.hidden = !pd;
+    nav.querySelector('[data-pgo="-1"]').disabled = pg === 0;
+    nav.querySelector('[data-pgo="1"]').disabled = pg === pages - 1;
+    document.getElementById('vl-pinfo').textContent = t('第 ' + (pg + 1) + ' / ' + pages + ' 页', 'Page ' + (pg + 1) + ' of ' + pages);
     // a group heading disappears when the filter leaves nothing under it
     [].forEach.call(ga.querySelectorAll('h2.ga-lh'), function (h) {
       var any = false, e = h.nextElementSibling;
@@ -107,16 +123,33 @@
       if (v) { var f = shown.indexOf(true); if (f >= 0) its[f].scrollIntoView({ behavior: 'smooth', block: 'center' }); }
     }, 250);
   });
-  // parts of 50 words: jump to one, or play it (word, meaning, example … and stop after its last word)
-  var jump = document.getElementById('vl-jump'), seg = +ls.get('jp_vl_seg') || 1;
-  jump.value = String(seg);
-  jump.addEventListener('change', function () { if (jump.value) { seg = +jump.value; ls.set('jp_vl_seg', seg); goTo(seg - 1); } });
-  document.getElementById('vl-seg').addEventListener('click', function () {
-    if (!jump.value) { jump.value = String(seg); }
-    seg = +jump.value; goTo(seg - 1);
-    if (window.jpGaPlay) window.jpGaPlay((seg - 1) * 4, Math.min(its.length, seg + 49) * 4 - 1);
-    ev('vocab_part', { part: seg });
+  // page chips, previous / next, play this page (stops after its last word)
+  var pnav = document.getElementById('vl-pnav'); ga.parentNode.insertBefore(pnav, ga.nextSibling);
+  document.getElementById('vl-pages').addEventListener('click', function (e) {
+    var a = e.target.closest('a[data-pg]'); if (!a) return;
+    e.preventDefault();
+    if (!paged()) { filter = 'all'; sel.value = 'all'; ls.set('jp_vl_f', 'all'); query = ''; qin.value = ''; }
+    setPage(+a.getAttribute('data-pg'), true);
   });
+  pnav.addEventListener('click', function (e) { var b = e.target.closest('[data-pgo]'); if (b) setPage(pg + +b.getAttribute('data-pgo'), true); });
+  document.getElementById('vl-seg').addEventListener('click', function () {
+    var first = paged() ? pg * PER : 0, last = paged() ? Math.min(its.length, first + PER) - 1 : its.length - 1;
+    if (paged()) its[first].scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (window.jpGaPlay) window.jpGaPlay(first * 4, last * 4 + 3);
+    ev('vocab_part', { part: pg + 1 });
+  });
+  // playing on into another page turns to it; a group chip (3+ / 2 / 1) opens its page first
+  document.getElementById('ga-a').addEventListener('timeupdate', function () {
+    if (!paged()) return;
+    var c = ga.querySelector('.ga-cur'), it = c && c.closest('.ga-it');
+    if (!it) return;
+    var i = its.indexOf(it);
+    if (i >= 0 && Math.floor(i / PER) !== pg) { setPage(Math.floor(i / PER)); it.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+  });
+  document.addEventListener('click', function (e) {
+    var g = e.target.closest && e.target.closest('[data-go]');
+    if (g && paged()) { var i = +g.getAttribute('data-go') >> 2; if (Math.floor(i / PER) !== pg) setPage(Math.floor(i / PER)); }
+  }, true);
   // Japanese definitions: meanings shown in Japanese and the all-Japanese track
   // (word → definition → example; its translation lines are empty)
   var jam = document.getElementById('vl-jam'), JA = null;
