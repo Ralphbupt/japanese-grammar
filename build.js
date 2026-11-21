@@ -3286,7 +3286,7 @@ ${AI_SCRIPT}
   // ─── Generate individual lesson pages ───
   // Pages published once per language (PAGE_LANGS); links to them on a
   // non-root copy point at that language's copy.
-  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "changelog", "practice", "listening", "reading", "vocabulary", "mock-test", "grammar-audio", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`, `${l}-grammar-audio`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
+  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "changelog", "practice", "listening", "reading", "vocabulary", "mock-test", "grammar-audio", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`, `${l}-grammar-audio`, `${l}-vocabulary-list`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
   // "Practice this point" at the end of every grammar point that has practice
   // questions (questions/N*/lessonNN.json refs), linking to the practice page.
   const quizRefCount = {};
@@ -4286,8 +4286,14 @@ ${AI_SCRIPT}
   // its index in the track's timing, which is the same order for both languages.
   const GA_JS = fs.readFileSync(path.join(__dirname, "site", "grammar-audio.js"), "utf-8");
   const GA_JS_HASH = require("crypto").createHash("md5").update(GA_JS).digest("hex").slice(0, 8);
+  const VL_JS = fs.readFileSync(path.join(__dirname, "site", "vocab-list.js"), "utf-8");
+  const VL_JS_HASH = require("crypto").createHash("md5").update(VL_JS).digest("hex").slice(0, 8);
+  fs.mkdirSync(path.join(__dirname, "dist"), { recursive: true });
+  fs.writeFileSync(path.join(__dirname, "dist", "vocab-list.js"), VL_JS, "utf-8");
   const gaEsc = (s) => String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-  const grammarAudioBody = (ga, code, page) => {
+  // `o` (vocabulary list pages): group(it) → { id, label, sub } instead of lessons,
+  // itemHead(it, g) for the item's first line, tocLabel / groupMode / note texts.
+  const grammarAudioBody = (ga, code, page, o = {}) => {
     const zh = code === "zh", t = (a, b) => (zh ? a : b), tr = ga.tracks[code];
     // Grouped by lesson, with a row of lesson chips on top (tap = jump there and play).
     const lessonTitle = (id) => {
@@ -4311,14 +4317,15 @@ ${AI_SCRIPT}
       let head = "";
       if (it.lesson !== lastLesson) {
         lastLesson = it.lesson;
-        const num = +it.lesson.replace(/\D/g, ""), title = lessonTitle(it.lesson);
-        toc.push(`<a href="#ga-${it.lesson}" data-go="${g}">${num}</a>`);
-        head = `<h2 class="ga-lh" id="ga-${it.lesson}" data-go="${g}">${t(`第 ${num} 课`, `Lesson ${num}`)}<small>${gaEsc(title)}</small><span class="ga-pl" data-go="${g}" data-lesson="1">▶ ${t("播放本课", "Play lesson")}</span></h2>`;
+        const gr = o.group ? o.group(it) : null;
+        const num = +it.lesson.replace(/\D/g, ""), title = gr ? gr.sub : lessonTitle(it.lesson);
+        toc.push(`<a href="#ga-${it.lesson}" data-go="${g}">${gr ? gr.chip : num}</a>`);
+        head = `<h2 class="ga-lh" id="ga-${it.lesson}" data-go="${g}">${gr ? gr.label : t(`第 ${num} 课`, `Lesson ${num}`)}<small>${gaEsc(title)}</small><span class="ga-pl" data-go="${g}" data-lesson="1">▶ ${gr ? t("播放本组", "Play group") : t("播放本课", "Play lesson")}</span></h2>`;
       }
-      const more = it.ex.slice(it.read), vs = it.vs[code], exam = it.exam || [];
+      const more = it.ex.slice(it.read), vs = it.vs ? it.vs[code] : "", exam = it.exam || [];
       const examTag = exam.length ? `<span class="ga-exam" title="${gaEsc(exam.join(", "))}">${t(`真题考过 ${exam.length} 次`, `On the real test ${exam.length}×`)}</span>` : "";
-      return head + `<section class="ga-it"><p class="ga-hd"><span class="ga-no">${++no}</span><span class="ga-ln ga-g" data-l="${g}" lang="ja">${gaEsc(it.term.replace(/^〜/, ""))}</span>${examTag}<a class="ga-ls" href="${SITE_PATH}${it.lesson}/">${t("讲解", "Lesson")} →</a></p>` +
-        (it.form[code] && it.form[code].length ? `<p class="ga-form">${it.form[code].map((f) => `<code>${gaEsc(f)}</code>`).join("")}</p>` : "") +
+      return head + `<section class="ga-it"${o.itemAttr ? o.itemAttr(it) : ""}>` + (o.itemHead ? o.itemHead(it, g, ++no) : `<p class="ga-hd"><span class="ga-no">${++no}</span><span class="ga-ln ga-g" data-l="${g}" lang="ja">${gaEsc(it.term.replace(/^〜/, ""))}</span>${examTag}<a class="ga-ls" href="${SITE_PATH}${it.lesson}/">${t("讲解", "Lesson")} →</a></p>`) +
+        (it.form && it.form[code] && it.form[code].length ? `<p class="ga-form">${it.form[code].map((f) => `<code>${gaEsc(f)}</code>`).join("")}</p>` : "") +
         `<p class="ga-ln ga-m" data-l="${m}">${gaEsc(it.mean[code])}</p>` +
         it.ex.slice(0, it.read).map((e) => { const a = l++, b = l++; return exHtml(e, ` class="ga-ln" data-l="${a}"`, ` data-l="${b}" data-k="t"`).replace('class="ga-tr" data-l', 'class="ga-tr ga-ln" data-l'); }).join("") +
         (vs ? `<p class="ga-vs"><span>${t("易混", "Don't confuse")}</span>${gaEsc(vs)}</p>` : "") +
@@ -4360,15 +4367,15 @@ ${AI_SCRIPT}
 #ga.ga-hidden .ga-m,#ga.ga-hidden .ga-tr{filter:blur(5px)}#ga.ga-hidden .ga-m:hover,#ga.ga-hidden .ga-tr:hover{filter:none}
 .ga-note{color:var(--text-muted);font-size:.82rem;margin-top:1.2rem}
 </style>
-<div id="ga-ctl"><div class="ga-row"><button type="button" data-ga-mode="all" aria-pressed="true">${t("整体连播", "Play all")}</button><button type="button" data-ga-mode="one" aria-pressed="false">${t("一句一停", "One line")}</button><button type="button" data-ga-mode="loop" aria-pressed="false">${t("单句循环", "Loop line")}</button><button type="button" data-ga-mode="lesson" aria-pressed="false">${t("本课连播", "This lesson")}</button>
+<div id="ga-ctl"><div class="ga-row"><button type="button" data-ga-mode="all" aria-pressed="true">${t("整体连播", "Play all")}</button><button type="button" data-ga-mode="one" aria-pressed="false">${t("一句一停", "One line")}</button><button type="button" data-ga-mode="loop" aria-pressed="false">${t("单句循环", "Loop line")}</button><button type="button" data-ga-mode="lesson" aria-pressed="false">${o.groupMode || t("本课连播", "This lesson")}</button>
 <button type="button" id="ga-trs" aria-pressed="true">${t("念翻译", "Read translations")}</button><button type="button" id="ga-hide" aria-pressed="false">${t("遮住意思", "Hide meanings")}</button></div>
-<nav class="ga-toc" aria-label="${t("按课跳转", "Jump to a lesson")}"><span>${t("课：", "Lesson:")}</span>${toc.join("")}</nav></div>
+<nav class="ga-toc" aria-label="${t("按课跳转", "Jump to a lesson")}"><span>${o.tocLabel || t("课：", "Lesson:")}</span>${toc.join("")}</nav>${o.ctlExtra || ""}</div>
 <div id="ga-bar"><div class="ga-row"><button type="button" id="ga-play" aria-label="${t("播放", "Play")}" data-play="${t("播放", "Play")}" data-pause="${t("暂停", "Pause")}"></button>
 <input id="ga-seek" type="range" min="0" max="1000" value="0" aria-label="${t("进度", "Position")}"><span id="ga-time">0:00 / ${Math.floor(tr.duration / 60)}:${String(Math.floor(tr.duration % 60)).padStart(2, "0")}</span>
 <select id="ga-rate" aria-label="${t("语速", "Speed")}"><option value="0.8">0.8×</option><option value="1" selected>1×</option><option value="1.2">1.2×</option><option value="1.5">1.5×</option></select></div></div>
 <audio id="ga-a" preload="none" src="${AUDIO_BASE}/${tr.src}"></audio>
 <div id="ga" data-page="${page}" data-dur="${tr.duration}">${rows.join("\n")}</div>
-<p class="ga-note">${t("点任意一行从那里开始听。空格键播放 / 暂停，← → 上一句 / 下一句。「念翻译」关掉后只听日语。朗读：Gemini TTS；「更多例句」是课程里的发音。", "Tap any line to start there. Space plays / pauses, ← → go to the previous / next line. Turn off “Read translations” to hear only the Japanese. Voices: Gemini TTS; “More examples” use the lessons’ audio.")}</p>
+<p class="ga-note">${o.note || t("点任意一行从那里开始听。空格键播放 / 暂停，← → 上一句 / 下一句。「念翻译」关掉后只听日语。朗读：Gemini TTS；「更多例句」是课程里的发音。", "Tap any line to start there. Space plays / pauses, ← → go to the previous / next line. Turn off “Read translations” to hear only the Japanese. Voices: Gemini TTS; “More examples” use the lessons’ audio.")}</p>${o.extra || ""}
 <script type="application/json" id="ga-t">${JSON.stringify(tr.lines.map((x) => [x[1], x[2], x[0]]))}</script>
 <script src="${SITE_PATH}grammar-audio.js?v=${GA_JS_HASH}" defer></script>`;
   };
@@ -4798,6 +4805,9 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
     const practiceId = `${lv}-practice`, mockId = `${lv}-mock-test`, cardsId = `${lv}-cards`, listeningId = `${lv}-listening`;
     const hasCk = ckLevels.includes(level);
     const gaId = `${lv}-grammar-audio`, gaFile = path.join(__dirname, "questions", "grammar-audio", `${lv}.json`), hasGa = fs.existsSync(gaFile);
+    const vlId = `${lv}-vocabulary-list`, vlFile = path.join(__dirname, "questions", "vocab-list", `${lv}.json`), hasVl = fs.existsSync(vlFile);
+    // A language whose track isn't made yet (tools/vocab-audio.py --lang=…) gets no page and no link.
+    const vlLangs = hasVl ? Object.keys(JSON.parse(fs.readFileSync(vlFile, "utf-8")).tracks) : [];
     // The pages link to each other (when the other one exists).
     const navLinks = (here, en) => [
       here !== practiceId && `<a href="${SITE_PATH}${practiceId}/">✍ ${en ? "Practice by question type" : "按题型练习"}</a>`,
@@ -4808,6 +4818,7 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
       here !== mockId && mocks.length && `<a href="${SITE_PATH}${mockId}/">⏱ ${en ? `Timed ${level} mock test` : `${level} 模拟题（计时）`}</a>`,
       here !== cardsId && `<a href="${SITE_PATH}${cardsId}/">🗂 ${en ? "Grammar flashcards" : "语法卡片（在线背）"}</a>`,
       here !== gaId && hasGa && `<a href="${SITE_PATH}${gaId}/">🎧 ${en ? `${level} grammar audio` : `${level} 语法听读`}</a>`,
+      here !== vlId && vlLangs.includes(en ? "en" : "zh") && `<a href="${SITE_PATH}${vlId}/">📚 ${en ? `${level} vocabulary list` : `${level} 高频词汇`}</a>`,
     ].filter(Boolean).join(" ");
     // 生词本 dictionary (build-words.js) in its own file, fetched on the first
     // word tap; each page language's bundle carries its own copy's address.
@@ -4961,6 +4972,116 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
       }
       quizPageIds.push(gaId);
       console.log(`  Generated dist/${gaId}/ (${n} grammar points)`);
+    }
+    // Vocabulary list: the words the real JLPT tested at this level, most-tested
+    // first (questions/vocab-list/{lv}.json from tools/vocab-audio.py: meaning,
+    // an original example, timing), read aloud with the grammar-audio player;
+    // ＋ puts a word into the reader's word list (jp_quiz_v1.words, synced).
+    if (hasVl) {
+      const vl = JSON.parse(fs.readFileSync(vlFile, "utf-8")), n = vl.items.length;
+      const items = [];
+      for (const w of vl.items) {
+        const ja = fixReadings(await furiganaText(kuro, w.ex.ja.replace(/\*\*/g, "")));
+        // mark the word: re-insert the bold around its first furigana'd occurrence
+        const word = (w.ex.ja.match(/\*\*(.+?)\*\*/) || [])[1] || "";
+        let html = ja;
+        if (word) {
+          const plainIdx = (h) => h.replace(/<rt>.*?<\/rt>|<rp>.*?<\/rp>|<\/?ruby>/g, "");
+          const start = plainIdx(ja).indexOf(word);
+          if (start >= 0) {   // walk the html, counting only visible base characters
+            let vis = 0, i = 0, a = -1, b = -1;
+            while (i < ja.length && b < 0) {
+              if (ja.startsWith("<rt>", i)) { i = ja.indexOf("</rt>", i) + 5; continue; }
+              if (ja.startsWith("<rp>", i)) { i = ja.indexOf("</rp>", i) + 5; continue; }
+              if (ja[i] === "<") { i = ja.indexOf(">", i) + 1; continue; }
+              if (vis === start && a < 0) a = i;
+              vis++; i++;
+              if (vis === start + word.length) b = i;
+            }
+            if (a >= 0 && b > a) {
+              // widen to whole <ruby> elements so the tag doesn't cut one in half
+              const ra = ja.lastIndexOf("<ruby>", a), rae = ja.lastIndexOf("</ruby>", a);
+              if (ra > rae) a = ra;
+              const rb = ja.indexOf("</ruby>", b - 1), rbs = ja.indexOf("<ruby>", b - 1);
+              if (rb >= 0 && (rbs < 0 || rb < rbs) && ja.lastIndexOf("<ruby>", b - 1) > ja.lastIndexOf("</ruby>", b - 1)) b = rb + 7;
+              html = `${ja.slice(0, a)}<b class="cl">${ja.slice(a, b)}</b>${ja.slice(b)}`;
+            }
+          }
+        }
+        items.push({ lesson: `g${w.group}`.replace("+", "p"), term: w.w, r: w.r, n: w.n, mean: w.mean, read: 1, exam: [],
+          ex: [{ ja: html, zh: w.ex.zh, en: w.ex.en }] });
+      }
+      const ga = { items, tracks: vl.tracks };
+      const groupOf = (en) => (it) => it.lesson === "g3p"
+        ? { chip: en ? "3+×" : "3 次+", label: en ? "Tested 3+ times" : "真题考过 3 次以上", sub: "" }
+        : it.lesson === "g2" ? { chip: en ? "2×" : "2 次", label: en ? "Tested twice" : "真题考过 2 次", sub: "" }
+          : { chip: en ? "1×" : "1 次", label: en ? "Tested once" : "真题考过 1 次", sub: "" };
+      const head = (en) => (it, g, no) => `<p class="ga-hd"><span class="ga-no">${no}</span><span class="ga-ln ga-g" data-l="${g}" lang="ja">${gaEsc(it.term)}</span><span class="vl-r" lang="ja">${gaEsc(it.r)}</span>` +
+        `<span class="ga-exam">${en ? `${it.n}× on the test` : `考过 ${it.n} 次`}</span>` +
+        `<button type="button" class="vl-add" data-w="${gaEsc(it.term)}" data-r="${gaEsc(it.r)}" data-m="${gaEsc(it.mean[en ? "en" : "zh"])}" aria-pressed="false">${en ? "＋ Word list" : "＋ 生词本"}</button></p>`;
+      const vlMeta = {
+        en: {
+          title: `JLPT ${level} Vocabulary List — ${n} Words from Real Past Tests, with Audio`,
+          desc: `The ${n} words real JLPT ${level} tests have asked in the vocabulary section (2010–2026), most-tested first: reading, meaning, an example sentence with translation, all read aloud. Add any word to your word list.`,
+          h1: `JLPT ${level} Vocabulary List`, crumb: `${level} Vocabulary list`,
+          lead: `Every word the ${level} vocabulary section has tested since 2010, ${n} in all, grouped by how often it came up. Each has its reading, meaning and an example sentence, all read aloud. Start with Quick sort: one card per word, the ones you don't know go into your word list. Then play only those, like a podcast, and review them with flashcards.`,
+          nav: navLinks(vlId, true),
+        },
+        zh: {
+          title: `JLPT ${level} 高频词汇表 - 历年真题考过的 ${n} 个词，带例句朗读`,
+          desc: `JLPT ${level} 文字词汇部分 2010–2026 年真题考过的 ${n} 个词，按考过次数排序：读音、中文意思、例句和翻译，全部可以朗读连播，一键加入生词本背诵。`,
+          h1: `JLPT ${level} 高频词汇`, crumb: `${level} 高频词汇`,
+          lead: `2010 年以来 ${level} 文字词汇部分考过的全部 ${n} 个词，按考过的次数分组。每个词有读音、意思和例句，全部朗读。先用「快速筛词」一张卡一张卡过，不认识的自动进生词本；再只连播这些生词，像听播客一样，最后用背单词巩固。`,
+          nav: navLinks(vlId, false),
+        },
+      };
+      const vlCss = `<style>.vl-r{color:var(--text-muted);font-size:.95rem}.vl-add{margin-left:auto;font:inherit;font-size:.8rem;padding:.15rem .65rem;border-radius:14px;border:1px solid var(--border,#ccc);background:transparent;color:var(--ui);cursor:pointer;white-space:nowrap}.vl-add[aria-pressed=true]{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}
+.vl-wl{font-size:.85rem;margin:.55rem 0 0;color:var(--text-muted)}#vl .ga-row{margin-top:.55rem}#vl-sort{background:var(--ui)!important;color:var(--ui-on)!important;border-color:var(--ui)!important;font-weight:600}
+#vl-msg{font-size:.85rem;background:var(--chip-bg);border-radius:8px;padding:.4rem .6rem;margin:.5rem 0 0}#vl-empty{color:var(--text-muted);text-align:center;padding:2rem 0}
+.ga-it.vl-kn{opacity:.6}.ga-it.vl-kn .ga-hd::after{content:"${"✓"}";color:var(--text-muted);font-size:.8rem;order:9}
+#ga.vl-hr .vl-r,#ga.vl-hr .ga-ex rt{filter:blur(4px)}#ga.vl-hr .vl-r:hover,#ga.vl-hr .ga-ex:hover rt{filter:none}
+html.vl-open{overflow:hidden}#vl-q{position:fixed;inset:0;z-index:90;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;padding:1rem}#vl-q[hidden]{display:none}
+#vl-qbox{background:var(--bg);border-radius:16px;width:100%;max-width:460px;padding:1rem 1.1rem 1.1rem;box-shadow:0 10px 40px rgba(0,0,0,.25)}
+.vl-qtop{display:flex;align-items:center;gap:.6rem;font-size:.85rem;color:var(--text-muted)}.vl-qtop button{margin-left:auto;font:inherit;border:0;background:none;color:inherit;font-size:1.2rem;cursor:pointer}
+#vl-qcard{display:block;width:100%;min-height:15rem;margin:.6rem 0 .8rem;border:1px solid var(--border,#ddd);border-radius:12px;background:var(--surface-2,transparent);color:inherit;font:inherit;cursor:pointer;padding:1.2rem 1rem;text-align:center}
+#vl-qcard{font-weight:400}#vl-qb b.cl{color:var(--accent);font-weight:700}#vl-qw{font-size:2.2rem;font-weight:700;margin:.6rem 0}.vl-done #vl-qw{font-size:1.3rem}#vl-qb{display:none;text-align:left}.vl-flip #vl-qb{display:block}.vl-flip .vl-qhint{display:none}
+.vl-qhint{color:var(--text-muted);font-size:.85rem;margin-top:2.5rem}.vl-qr{text-align:center;font-size:1.15rem;margin:.2rem 0}.vl-qm{text-align:center;margin:.3rem 0 .6rem}
+.vl-qbtn{display:flex;gap:.6rem}.vl-qbtn button{flex:1;font:inherit;font-size:1rem;padding:.7rem;border-radius:10px;border:1px solid var(--border,#ccc);background:var(--surface-2,transparent);color:inherit;cursor:pointer}
+#vl-qno{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}.vl-done .vl-qbtn{display:none}#vl-qundo{flex:0 0 auto}.vl-qkeys{font-size:.75rem;color:var(--text-muted);text-align:center;margin:.6rem 0 0}</style>`;
+      for (const lang of PAGE_LANGS) {
+        const code = lang.code === "zh" ? "zh" : "en", en = code === "en", m = vlMeta[lang.code], v = langVariant(vlId, lang), tr = ga.tracks[code];
+        if (!tr) continue;
+        const t2 = (z, e) => (en ? e : z);
+        const ctlExtra = `<div id="vl" data-lv="${lv}" data-en="${en ? 1 : 0}"><div class="ga-row"><button type="button" id="vl-sort">${t2("⚡ 快速筛词", "⚡ Quick sort")} <small>${t2("（未筛 ", "(")}<span id="vl-todo">${n}</span>${t2("）", " unsorted)")}</small></button>` +
+          `<button type="button" id="vl-mine" aria-pressed="false">${t2("只听我的生词", "Only my words")}</button><button type="button" id="vl-hr" aria-pressed="false">${t2("遮住读音", "Hide readings")}</button>` +
+          `<select id="vl-f" aria-label="${t2("筛选", "Filter")}"><option value="all">${t2("全部词", "All words")}</option><option value="todo">${t2("只看没筛过的", "Not sorted yet")}</option><option value="in">${t2("只看生词本里的", "In my word list")}</option><option value="n2">${t2("只看考过 2 次以上", "Tested 2+ times")}</option></select></div>` +
+          `<p id="vl-msg" hidden></p><p class="vl-wl">${t2("生词本里：", "In your word list: ")}<b id="vl-n">0</b> · <a href="${SITE_PATH}${practiceId}/#words">${t2("去背单词 →", "Review them with flashcards →")}</a></p></div>`;
+        const dialog = `<p id="vl-empty" hidden>${t2("没有符合筛选的词。", "No words match this filter.")}</p>
+<div id="vl-q" hidden role="dialog" aria-modal="true" aria-label="${t2("快速筛词", "Quick sort")}"><div id="vl-qbox"><div class="vl-qtop"><span id="vl-qp"></span><button type="button" id="vl-qx" aria-label="${t2("关闭", "Close")}">✕</button></div>
+<button type="button" id="vl-qcard"><div id="vl-qw" lang="ja"></div><div class="vl-qhint">${t2("先想想读音和意思，点一下看答案", "Think of the reading and meaning, then tap to check")}</div><div id="vl-qb"></div></button>
+<div class="vl-qbtn"><button type="button" id="vl-qundo" aria-label="${t2("撤销", "Undo")}">↶</button><button type="button" id="vl-qno">${t2("不认识 → 生词本", "Don’t know → list")}</button><button type="button" id="vl-qyes">${t2("认识", "Know it")}</button></div>
+<p class="vl-qkeys">${t2("键盘：空格翻面 · ← 不认识 · → 认识 · Backspace 撤销", "Keys: space flips · ← don’t know · → know · Backspace undo")}</p></div></div>
+<script src="${SITE_PATH}vocab-list.js?v=${VL_JS_HASH}" defer></script>`;
+        const body = vlCss +
+          grammarAudioBody(ga, code, vlId, { group: groupOf(en), itemHead: head(en), tocLabel: en ? "Tested:" : "考过：", groupMode: en ? "This group" : "本组连播", ctlExtra,
+            itemAttr: (it) => ` data-w="${gaEsc(it.term)}" data-n="${it.n}"`,
+            note: en ? "Tap any line to start there. Space plays / pauses, ← → previous / next line. Start with “Quick sort”: one card per word — the ones you don’t know go into your word list, the ones you know drop out — then turn on “Only my words” and the player skips everything else. “Hide meanings” / “Hide readings” blur them for self-testing. The words come from the vocabulary sections of the 2010–2026 JLPT papers; meanings and example sentences are ours. Voices: Gemini TTS." : "点任意一行从那里开始听。空格键播放 / 暂停，← → 上一句 / 下一句。建议先用「快速筛词」：一张卡一个词，不认识的进生词本，认识的不再出现；再打开「只听我的生词」，播放器会跳过其他词。「遮住意思」「遮住读音」可以自测。词表取自 2010–2026 年 JLPT 真题的文字词汇部分；释义和例句是本站编写的。朗读：Gemini TTS。",
+            extra: dialog });
+        const dur = Math.round(tr.duration), iso = `PT${Math.floor(dur / 60)}M${dur % 60}S`;
+        const schema = JSON.stringify([
+          { "@context": "https://schema.org", "@type": "LearningResource", name: m.h1, description: m.desc, url: v.url, inLanguage: en ? "en" : "zh-Hans",
+            educationalLevel: `JLPT ${level}`, isAccessibleForFree: true, learningResourceType: "Vocabulary list", timeRequired: iso,
+            teaches: items.slice(0, 30).map((it) => it.term).join(", "),
+            about: { "@type": "Thing", name: "Japanese vocabulary" }, provider: { "@type": "Organization", name: "jpnotes.dev", url: SITE } },
+          { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+            { "@type": "ListItem", position: 1, name: en ? "Japanese Grammar Notes" : "日语语法笔记", item: SITE },
+            { "@type": "ListItem", position: 2, name: level, item: `${SITE}${level}/` },
+            { "@type": "ListItem", position: 3, name: m.crumb, item: v.url }] },
+        ]).replace(/</g, "\\u003c");
+        writeLangPage(vlId, lang, localizePage(renderQuiz(lang, { ...m, body, schema }, v, level, null), lang, localizedPageIds));
+      }
+      if (PAGE_LANGS.every((l) => ga.tracks[l.code === "zh" ? "zh" : "en"])) quizPageIds.push(vlId);   // sitemap once every language has its page
+      console.log(`  Generated dist/${vlId}/ (${n} words)`);
     }
     if (!mocks.length) continue;
     // Mock tests: the test file, and its answer key loaded only after submitting.

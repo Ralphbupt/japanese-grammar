@@ -8,6 +8,16 @@
 Notable updates to the site, newest first. Small fixes and design tweaks aren't listed. Questions or ideas: use the 💬 box on any practice page, or write to hello@jpnotes.dev.
 :::
 
+## 2026-11-21 · N2 高频词汇表||2026-11-21 · N2 vocabulary list
+
+:::zh
+新页面 [N2 高频词汇](/n2-vocabulary-list/)：2010 年以来 N2 文字词汇部分考过的约 700 个词，按考过的次数分组，每个词有读音、意思、例句和翻译，全部朗读成一条音轨。先用「快速筛词」一张卡一张卡过：不认识的自动进生词本，认识的不再出现；再打开「只听我的生词」，连播时只念你不会的词。还可以遮住意思或读音自测。
+:::
+
+:::en
+Coming today: an N2 vocabulary list — the ~700 words the N2 vocabulary section has tested since 2010, grouped by how often they came up, each with reading, meaning, an example and its translation, all read aloud as one track. Start with “Quick sort”, one card per word: the ones you don’t know go into your word list, the ones you know drop out. Then turn on “Only my words” and the player reads just those. Hide meanings or readings to test yourself.
+:::
+
 ## 2026-11-21 · 对照历年真题校准题库||2026-11-21 · Question bank checked against past papers
 
 :::zh
