@@ -14,7 +14,7 @@
   try { T = JSON.parse(document.getElementById('ga-t').textContent); } catch (e) { return; }
   var ls = { get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} } };
   var page = root.getAttribute('data-page'), KEY = 'jp_ga_' + page;
-  var els = {}, cur = -1, from = -1, stopAt = null, mode = 'all', played = false, readTr = ls.get('jp_ga_tr') !== '0';
+  var els = {}, cur = -1, from = -1, stopAt = null, mode = 'all', played = false, readTr = ls.get('jp_ga_tr') !== '0', readM = ls.get('jp_ga_m') !== '0';
   [].forEach.call(root.querySelectorAll('[data-l]'), function (e) { els[e.getAttribute('data-l')] = e; });
   // Lesson starts (line indices), for "this lesson" and the chip that lights up.
   var starts = [].map.call(root.querySelectorAll('h2[data-go]'), function (h) { return +h.getAttribute('data-go'); });
@@ -66,6 +66,19 @@
   // For other scripts on the page (vocabulary quick sort): play lines i…j once.
   window.jpGaPlay = function (i, j) { if (!T[i]) return; from = i; seekTo(i); stopAt = Math.min(j, T.length - 1); go(); };
   window.jpGaPause = function () { a.pause(); stopAt = null; };
+  // Swap to another track with the same line layout (vocabulary list: Japanese-only
+  // definitions); keeps the place by line, keeps playing if it was.
+  window.jpGaTrack = function (src, lines, dur) {
+    var at = cur, was = !a.paused;
+    a.pause(); T = lines; root.setAttribute('data-dur', dur); a.src = src;
+    a.addEventListener('loadedmetadata', function once() {
+      a.removeEventListener('loadedmetadata', once);
+      if (T[at]) a.currentTime = T[at][0];
+      if (was) go();
+    });
+    a.load();
+    time.textContent = fmt(at >= 0 && T[at] ? T[at][0] : 0) + ' / ' + fmt(dur);
+  };
 
   a.addEventListener('timeupdate', function () {
     var t = a.currentTime, i = lineAt(t);
@@ -73,8 +86,8 @@
       if (mode === 'loop') { a.currentTime = T[stopAt][0]; return; }
       a.pause(); stopAt = null; return;
     }
-    // Translations off: jump from the start of a t line to the next line.
-    if (!readTr && i >= 0 && T[i][2] === 't' && t < T[i][1] - 0.15 && mode !== 'one' && mode !== 'loop') {
+    // Translations off (or meanings off, #ga-ms, vocabulary list): jump from the start of such a line to the next line.
+    if (i >= 0 && ((!readTr && T[i][2] === 't') || (!readM && T[i][2] === 'm')) && t < T[i][1] - 0.15 && mode !== 'one' && mode !== 'loop') {
       if (T[i + 1]) { a.currentTime = T[i + 1][0]; i = i + 1; }
     }
     if (window.jpGaSkip && !a.paused && mode !== 'one' && mode !== 'loop' && i >= 0 && window.jpGaSkip(i, from)) {
@@ -109,6 +122,11 @@
   document.getElementById('ga-rate').addEventListener('change', function (e) { a.playbackRate = +e.target.value; extra.playbackRate = a.playbackRate; });
   function showTr() { trBtn.setAttribute('aria-pressed', String(readTr)); root.classList.toggle('ga-notr', !readTr); }
   trBtn.addEventListener('click', function () { readTr = !readTr; ls.set('jp_ga_tr', readTr ? '1' : '0'); showTr(); });
+  var mBtn = document.getElementById('ga-ms');
+  if (mBtn) {
+    mBtn.setAttribute('aria-pressed', String(readM));
+    mBtn.addEventListener('click', function () { readM = !readM; ls.set('jp_ga_m', readM ? '1' : '0'); mBtn.setAttribute('aria-pressed', String(readM)); });
+  } else readM = true;
   showTr();
   document.getElementById('ga-hide').addEventListener('click', function (e) {
     var on = root.classList.toggle('ga-hidden'); e.currentTarget.setAttribute('aria-pressed', String(on));

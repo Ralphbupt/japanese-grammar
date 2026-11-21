@@ -34,7 +34,15 @@
 
   // ---- list: ＋ buttons, counts, filter, hide readings, play only my words
   var filter = ls.get('jp_vl_f') || 'all', mine = ls.get('jp_vl_mine') === '1', S = ld();
-  var shown = [];
+  var shown = [], query = '';
+  // search text per word: the word, its reading, its meaning
+  var hay = its.map(function (s, i) { return (W[i] + ' ' + s.querySelector('.vl-r').textContent + ' ' + s.querySelector('.ga-m').textContent).toLowerCase(); });
+  function goTo(i) {
+    var s = its[i]; if (!s) return;
+    if (s.hidden) { filter = 'all'; sel.value = 'all'; query = ''; qin.value = ''; paint(); }
+    its.forEach(function (e) { e.classList.remove('vl-hit'); });
+    s.classList.add('vl-hit'); s.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
   function paint() {
     S = ld();
     var c = 0, todo = 0;
@@ -46,7 +54,7 @@
       b.textContent = k === 'in' ? t('✓ 生词本', '✓ Word list') : t('＋ 生词本', '＋ Word list');
       s.classList.toggle('vl-kn', k === 'kn');
       var n = +s.getAttribute('data-n');
-      shown[i] = filter === 'todo' ? !k : filter === 'in' ? k === 'in' : filter === 'n2' ? n >= 2 : true;
+      shown[i] = (filter === 'todo' ? !k : filter === 'in' ? k === 'in' : filter === 'n2' ? n >= 2 : true) && (!query || hay[i].indexOf(query) >= 0);
       s.hidden = !shown[i];
     });
     // a group heading disappears when the filter leaves nothing under it
@@ -88,6 +96,46 @@
     if (!mine && !listCount()) { alertMsg(t('生词本里还没有这一级的词。先用「快速筛词」挑出不认识的，再打开这个开关。', 'No words from this list in your word list yet. Sort them first with “Quick sort”, then turn this on.')); return; }
     mine = !mine; ls.set('jp_vl_mine', mine ? '1' : '0'); paint();
   });
+  // search: a number jumps to that word; text filters the list
+  var qin = document.getElementById('vl-q-in'), qt = 0;
+  qin.addEventListener('input', function () {
+    clearTimeout(qt);
+    qt = setTimeout(function () {
+      var v = qin.value.trim().toLowerCase();
+      if (/^\d+$/.test(v)) { query = ''; paint(); goTo(+v - 1); return; }
+      query = v; paint();
+      if (v) { var f = shown.indexOf(true); if (f >= 0) its[f].scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+    }, 250);
+  });
+  // parts of 50 words: jump to one, or play it (word, meaning, example … and stop after its last word)
+  var jump = document.getElementById('vl-jump'), seg = +ls.get('jp_vl_seg') || 1;
+  jump.value = String(seg);
+  jump.addEventListener('change', function () { if (jump.value) { seg = +jump.value; ls.set('jp_vl_seg', seg); goTo(seg - 1); } });
+  document.getElementById('vl-seg').addEventListener('click', function () {
+    if (!jump.value) { jump.value = String(seg); }
+    seg = +jump.value; goTo(seg - 1);
+    if (window.jpGaPlay) window.jpGaPlay((seg - 1) * 4, Math.min(its.length, seg + 49) * 4 - 1);
+    ev('vocab_part', { part: seg });
+  });
+  // Japanese definitions: meanings shown in Japanese and the all-Japanese track
+  // (word → definition → example; its translation lines are empty)
+  var jam = document.getElementById('vl-jam'), JA = null;
+  try { JA = JSON.parse(document.getElementById('vl-ja').textContent); } catch (e) {}
+  if (jam && JA) {
+    var orig = { src: document.getElementById('ga-a').getAttribute('src'), dur: +ga.getAttribute('data-dur'), lines: JSON.parse(document.getElementById('ga-t').textContent) };
+    var mEls = its.map(function (s) { return s.querySelector('.ga-m'); }), mTxt = mEls.map(function (e) { return e.textContent; });
+    var setJa = function (on, save) {
+      jam.setAttribute('aria-pressed', String(on));
+      ga.classList.toggle('vl-jam', on);
+      mEls.forEach(function (e, i) { e.textContent = on ? JA.mean[i] || mTxt[i] : mTxt[i]; if (on) e.setAttribute('lang', 'ja'); else e.removeAttribute('lang'); });
+      var t = on ? JA : orig;
+      if (window.jpGaTrack) window.jpGaTrack(t.src, t.lines, t.dur);
+      if (save) { ls.set('jp_vl_ja', on ? '1' : '0'); ev('vocab_ja', { on: on ? 1 : 0 }); }
+    };
+    jam.addEventListener('click', function () { setJa(jam.getAttribute('aria-pressed') !== 'true', true); });
+    // after grammar-audio.js (loaded after this script) has set up the player
+    if (ls.get('jp_vl_ja') === '1') document.addEventListener('DOMContentLoaded', function () { setJa(true, false); });
+  }
   var hr = document.getElementById('vl-hr');
   hr.addEventListener('click', function () { var on = ga.classList.toggle('vl-hr'); hr.setAttribute('aria-pressed', String(on)); });
   function alertMsg(m) { var p = document.getElementById('vl-msg'); p.textContent = m; p.hidden = false; setTimeout(function () { p.hidden = true; }, 5000); }
