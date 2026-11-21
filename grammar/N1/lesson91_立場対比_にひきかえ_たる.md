@@ -526,6 +526,90 @@ Restrictions:
 
 ---
 
+## 7. 〜にあって（处在……这一特殊状况、立场中）||7. 〜にあって (In… / Being in a particular situation or position…)
+
+### 接続||Conjugation
+:::zh
+- 名詞 + にあって
+- 名詞 + にあっても（即使处在……中也……）
+- 名詞 + にあっては（处在……中的话，……）
+
+※ 「ある」表示"身处"，书面语，多见于演讲、评论、传记、新闻。
+:::
+:::en
+- Noun + にあって
+- Noun + にあっても (even in…)
+- Noun + にあっては (when one is in…)
+
+※ 「ある」 here means "to be placed in". Written style, common in speeches, commentary, biographies and news.
+:::
+
+### 含义||Meaning
+:::zh
+"处在……之中""在……（这样的）状况、立场下"。强调A是一种特殊的时代、环境或身份，B是在这种处境下的行为、态度或状况。
+
+- **にあって**：因为处在A中，所以B（顺接）：「経営者という立場にあって、軽率な発言は許されない」。
+- **にあっても**：虽然处在A中，仍然B（逆接）：「どんな逆境にあっても、彼は希望を捨てなかった」。
+
+限制：
+- A不是普通的地点或场合，而是带有特殊意味的状况：非常時、不況、逆境、異国、極限状態、高齢化社会、指導者の地位……
+- ❌「会議室にあって会議をする」（单纯的场所用「で」「において」）。
+- 主语多是人或组织；语气郑重，日常对话很少用。
+:::
+:::en
+"In…" or "being in (such) a situation or position…". It stresses that A is a special era, environment or status, and B is how someone acts, thinks or fares in it.
+
+- **にあって**: being in A, B follows (consequential): 「経営者という立場にあって、軽率な発言は許されない」.
+- **にあっても**: even in A, still B (concessive): 「どんな逆境にあっても、彼は希望を捨てなかった」.
+
+Restrictions:
+- A isn't an ordinary place or occasion but a situation with special weight: 非常時, 不況, 逆境, 異国, 極限状態, 高齢化社会, 指導者の地位…
+- ❌ 「会議室にあって会議をする」 (for a plain location use 「で」 or 「において」).
+- The subject is usually a person or organisation; formal, rare in conversation.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 未曾有の災害という非常時**にあって**、彼は冷静に住民の避難を指揮した。（在前所未有的灾害这一非常时期，他冷静地指挥了居民的疏散。）
+2. 長引く不況**にあって**、同社は過去最高の利益を上げている。（在持续的经济萧条中，该公司创下了历史最高利润。）
+3. 異国の地**にあっても**、祖母は故郷の正月料理を欠かさず作っていたという。（据说即使身在异国，祖母也每年都做家乡的新年菜。）
+4. 人の命を預かる立場**にあって**、確認を怠ることなど許されるはずがない。（身处掌管人命的立场，疏于确认是绝不可能被允许的。）
+:::
+:::en
+1. 未曾有の災害という非常時**にあって**、彼は冷静に住民の避難を指揮した。(In the emergency of an unprecedented disaster, he calmly directed the residents' evacuation.)
+2. 長引く不況**にあって**、同社は過去最高の利益を上げている。(In the midst of a prolonged recession, the company is posting record profits.)
+3. 異国の地**にあっても**、祖母は故郷の正月料理を欠かさず作っていたという。(Even living in a foreign country, my grandmother is said to have made her hometown's New Year dishes without fail.)
+4. 人の命を預かる立場**にあって**、確認を怠ることなど許されるはずがない。(For someone entrusted with people's lives, neglecting to double-check could never be acceptable.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| にあって | 处在……（特殊状况、立场）中 | A带有特殊意味，强调"身处其中"的人如何 |
+| において | 在……（场所、领域、时间） | 中性的书面场所、领域，「会議室において」也行（N3第35课） |
+| とあって | 因为是……（特殊情况），所以…… | 表示原因，后项是由此自然出现的情形（第82课） |
+| たる | 作为……（就应该……） | 强调身份应有的样子，「教師たるもの」（本课第3点） |
+
+> 「国際会議は東京において開かれた」= 国际会议在东京召开（单纯场所，不能用「にあって」）  
+> 「危機的状況にあって、リーダーの判断力が問われる」= 身处危机之中，领导者的判断力受到考验  
+> 「連休とあって、道路は混雑した」= 因为是连休，道路拥堵（原因）；「にあって」不表示原因，而是"处在……中"。
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| にあって | in (a special situation or position) | A has special weight; the focus is on how someone in it acts |
+| において | in / at (a place, field or time) | a neutral written location or field; 「会議室において」 is fine (N3 Lesson 35) |
+| とあって | because it is… (a special occasion) | gives a cause; what follows is what naturally happens (Lesson 82) |
+| たる | as a… (one should…) | stresses how one in a role ought to be — 「教師たるもの」 (point 3 of this lesson) |
+
+> 「国際会議は東京において開かれた」= the international conference was held in Tokyo (a plain location; 「にあって」 won't do)  
+> 「危機的状況にあって、リーダーの判断力が問われる」= in a crisis, a leader's judgment is put to the test  
+> 「連休とあって、道路は混雑した」= with it being a long weekend, the roads were busy (a cause); 「にあって」 doesn't give a cause but means "being in…".
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

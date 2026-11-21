@@ -738,5 +738,165 @@
         "en": "「に基づいて」 means \"based on\": data or rules come before it and a deliberate action after it; shops losing customers isn't something done \"on the basis of\" the growth."
       }
     ]
+  },
+  {
+    "id": "n3-l46-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson46#7"
+    ],
+    "difficulty": 1,
+    "stem": "この会社では、毎月の給料（　）、年に二回ボーナスも出る。",
+    "options": [
+      "以外は",
+      "のほかに",
+      "に比べて",
+      "の代わりに"
+    ],
+    "answer": 1,
+    "full": "この会社では、毎月の給料のほかに、年に二回ボーナスも出る。",
+    "tr": {
+      "zh": "这家公司除了每月的工资，一年还发两次奖金。",
+      "en": "At this company, besides the monthly salary, there's also a bonus twice a year."
+    },
+    "why": {
+      "zh": "线索：后句有「ボーナスも」，「も」说明是在工资之外再加上奖金。\n规则：名词＋「のほかに」＝除了……之外还有……，后面常和「も」呼应。\n辨析：「〜以外は」把前面的东西排除在外，「給料以外は」后面不能接“也有奖金”。",
+      "en": "Clue: The second half has 「ボーナスも」; 「も」 shows the bonus is added on top of the salary.\nRule: Noun + 「のほかに」 = besides…, there is also…; often answered by 「も」.\nContrast: 「〜以外は」 excludes what comes before; 「給料以外は」 can't be followed by \"there's also a bonus\"."
+    },
+    "wrong": [
+      {
+        "zh": "「以外は」是“除……以外（都）”，用于排除，和「ボーナスも」接不上。",
+        "en": "「以外は」 excludes (\"apart from…, all…\"); it doesn't lead into 「ボーナスも」."
+      },
+      null,
+      {
+        "zh": "「に比べて」用于比较，工资和奖金在这里不是比较关系。",
+        "en": "「に比べて」 compares; salary and bonus aren't being compared here."
+      },
+      {
+        "zh": "「の代わりに」是“代替”，用奖金代替工资，和「も」（也）矛盾。",
+        "en": "「の代わりに」 means \"instead of\"; a bonus instead of salary contradicts 「も」 (also)."
+      }
+    ]
+  },
+  {
+    "id": "n3-l46-021",
+    "type": "bunpou",
+    "refs": [
+      "lesson46#7"
+    ],
+    "difficulty": 2,
+    "stem": "最終のバスはもう出てしまった。ここから駅まで、歩いて行く（　）方法がない。",
+    "options": [
+      "ついでに",
+      "うえに",
+      "ほかに",
+      "たびに"
+    ],
+    "answer": 2,
+    "full": "最終のバスはもう出てしまった。ここから駅まで、歩いて行くほかに方法がない。",
+    "tr": {
+      "zh": "末班车已经开走了。从这里到车站，除了走着去没有别的办法。",
+      "en": "The last bus has already left. There's no way to get to the station from here except on foot."
+    },
+    "why": {
+      "zh": "线索：句尾是否定「方法がない」，意思是只剩一个办法。\n规则：动词辞书形＋「ほかに〜ない」＝除了……没有别的……，即只能那样做。\n辨析：「ついでに」是顺便做另一件事，前提是本来就要做前一件事，和“没有办法”连不起来。",
+      "en": "Clue: The sentence ends in a negative, 「方法がない」: only one option is left.\nRule: Verb dictionary form + 「ほかに〜ない」 = there is no… other than…: that is the only way.\nContrast: 「ついでに」 means doing something else while you're at it; it can't lead into \"there's no way\"."
+    },
+    "wrong": [
+      {
+        "zh": "「ついでに」（第50课）是“顺便”，“走着去顺便没有办法”意思不通。",
+        "en": "「ついでに」 (lesson 50) means \"while at it\"; \"no way while walking\" makes no sense."
+      },
+      {
+        "zh": "「うえに」（本课第1点）是“而且”，后面应接同方向的补充，不是「方法がない」。",
+        "en": "「うえに」 (point 1) means \"on top of that\" and adds a similar fact, not 「方法がない」."
+      },
+      null,
+      {
+        "zh": "「たびに」（第50课）是“每次……都”，和「方法がない」接不上。",
+        "en": "「たびに」 (lesson 50) means \"every time\"; it doesn't fit 「方法がない」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l46-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson46#8"
+    ],
+    "difficulty": 1,
+    "stem": "A「週末はいつも何してるの？」\nB「うーん、映画を見る（　）、買い物に行くとか、いろいろだよ。」",
+    "options": [
+      "たり",
+      "や",
+      "とか",
+      "など"
+    ],
+    "answer": 2,
+    "full": "A「週末はいつも何してるの？」\nB「うーん、映画を見るとか、買い物に行くとか、いろいろだよ。」",
+    "tr": {
+      "zh": "A：“周末一般都干什么？”\nB：“嗯……看看电影啦，去买买东西啦，什么都有。”",
+      "en": "A: \"What do you usually do on weekends?\"\nB: \"Hmm, watch a film, go shopping, that kind of thing — it varies.\""
+    },
+    "why": {
+      "zh": "线索：后面是「買い物に行くとか」，前面要用同一个词并列；而且前面是动词辞书形「見る」。\n规则：「〜とか〜とか」口语中举例，名词、动词辞书形都能接。\n辨析：「〜たり〜たり」也列举动作，但要接た形（見たり），而且要成对用「たり」。",
+      "en": "Clue: The pair continues with 「買い物に行くとか」, so the same word is needed, and it follows the dictionary form 「見る」.\nRule: 「〜とか〜とか」 gives examples in speech and takes nouns or verbs in the dictionary form.\nContrast: 「〜たり〜たり」 also lists actions, but needs the ta-form (見たり) and comes in pairs of 「たり」."
+    },
+    "wrong": [
+      {
+        "zh": "「たり」要接た形「見たり」，不能接「見る」，也和后面的「とか」不成对。",
+        "en": "「たり」 needs the ta-form 「見たり」, not 「見る」, and doesn't pair with the later 「とか」."
+      },
+      {
+        "zh": "「や」只接名词（映画や本），不能接动词「見る」。",
+        "en": "「や」 joins nouns only (映画や本), not the verb 「見る」."
+      },
+      null,
+      {
+        "zh": "「など」一般放在列举的最后，和后面的「とか」不成对。",
+        "en": "「など」 normally closes a list; it doesn't pair with the later 「とか」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l46-023",
+    "type": "bunpou",
+    "refs": [
+      "lesson46#8"
+    ],
+    "difficulty": 2,
+    "stem": "彼は、部屋が狭いとか駅から遠い（　）、新しいアパートの文句ばかり言っている。",
+    "options": [
+      "し",
+      "とか",
+      "たり",
+      "や"
+    ],
+    "answer": 1,
+    "full": "彼は、部屋が狭いとか駅から遠いとか、新しいアパートの文句ばかり言っている。",
+    "tr": {
+      "zh": "他老是抱怨新公寓，说什么房间小啦离车站远啦。",
+      "en": "He keeps complaining about his new apartment — the rooms are small, it's far from the station…"
+    },
+    "why": {
+      "zh": "线索：前面已经有「部屋が狭いとか」，后面要成对再用一次。\n规则：「AとかBとか」＝A啦B啦，举出几个例子；还能直接接别人说的话（「狭い」「遠い」）。\n辨析：「〜し」也能列举理由，但不和「とか」配对，「狭いとか遠いし」是混在一起的错误说法。",
+      "en": "Clue: 「部屋が狭いとか」 is already there; the second item needs the same word.\nRule: 「AとかBとか」 = A, B and so on; it can also take the words someone says directly (「狭い」, 「遠い」).\nContrast: 「〜し」 can list reasons too, but it doesn't pair with 「とか」; 「狭いとか遠いし」 mixes the two."
+    },
+    "wrong": [
+      {
+        "zh": "「し」不和前面的「とか」配对，两种列举方式不能混用。",
+        "en": "「し」 doesn't pair with the earlier 「とか」; the two ways of listing can't be mixed."
+      },
+      null,
+      {
+        "zh": "「たり」接动词た形，不能接形容词「遠い」，也不和「とか」配对。",
+        "en": "「たり」 follows a verb's ta-form, not the adjective 「遠い」, and doesn't pair with 「とか」."
+      },
+      {
+        "zh": "「や」只接名词，不能接形容词「遠い」。",
+        "en": "「や」 joins nouns only, not the adjective 「遠い」."
+      }
+    ]
   }
 ]

@@ -352,6 +352,66 @@ E.g.: 大人**向き**の映画, 初心者**向き**の本
 
 ---
 
+## 7. 〜か何か（……什么的 / ……之类的）||7. 〜か何か (…or something / …or the like)
+
+### 接続||Conjugation
+:::zh
+- 名詞 + か何か
+- 同类说法：名詞 + か誰か（人）、名詞 + かどこか（地方）
+:::
+:::en
+- Noun + か何か
+- Same family: Noun + か誰か (people), Noun + かどこか (places)
+:::
+
+### 含义||Meaning
+:::zh
+"A或者类似A的东西"。说话人不确定、或者不想说死，只举出一个大概的例子。常用于：① 轻松地提议（お茶か何か飲まない？）；② 推测原因（風邪か何かで休んでいる）。
+:::
+:::en
+"A or something like it." The speaker isn't sure, or doesn't want to be exact, and names one rough example. Typical uses: ① a light suggestion (お茶か何か飲まない？); ② guessing a cause (風邪か何かで休んでいる).
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 少し休もうか。コーヒー**か何か**飲まない？（休息一下吧。要不要喝点咖啡什么的？）
+2. 田中さんは風邪**か何か**で、今日は休んでいるらしい。（田中好像是感冒还是怎么了，今天请假了。）
+3. 書く物を忘れたので、ペン**か何か**貸してもらえませんか。（我忘带写字的东西了，能借我支笔什么的吗？）
+4. 引っ越しの手伝いは、弟**か誰か**に頼んでみるよ。（搬家帮忙的事，我去找我弟弟或者别人问问。）
+:::
+:::en
+1. 少し休もうか。コーヒー**か何か**飲まない？(Shall we take a break? How about a coffee or something?)
+2. 田中さんは風邪**か何か**で、今日は休んでいるらしい。(Tanaka seems to be off today with a cold or something.)
+3. 書く物を忘れたので、ペン**か何か**貸してもらえませんか。(I forgot something to write with — could you lend me a pen or something?)
+4. 引っ越しの手伝いは、弟**か誰か**に頼んでみるよ。(For help with the move, I'll ask my brother or someone.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| 〜か何か | A或类似的东西 | 只举一个，不确定"是不是A" |
+| 〜でも | 比如A（轻松提议） | 「お茶でも飲まない？」，A只是一个例子，不含"不确定" |
+| 〜とか〜とか（第46课第8点） | A啦B啦 | 举几个例子，暗示还有别的 |
+| 〜など（本课第6点） | A等 | 举例，偏书面 |
+
+> 「風邪か何かで休んでいる」＝不清楚原因，大概是感冒之类  
+> 「風邪で休んでいる」＝确定是感冒
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| 〜か何か | A or something like it | One example; unsure whether it is really A |
+| 〜でも | A, say (light suggestion) | 「お茶でも飲まない？」 — A is just an example, no uncertainty |
+| 〜とか〜とか (lesson 46, point 8) | A, B and so on | Several examples, hints at more |
+| 〜など (point 6) | A etc. | Gives examples; leans written |
+
+> 「風邪か何かで休んでいる」 = not sure why — a cold or something like that  
+> 「風邪で休んでいる」 = definitely a cold
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

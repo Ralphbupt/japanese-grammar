@@ -658,5 +658,85 @@
         "en": "「〜わけがない」 (no way that…) is a strong denial, not advice."
       }
     ]
+  },
+  {
+    "id": "n2-l61-018",
+    "type": "bunpou",
+    "refs": [
+      "lesson61#1"
+    ],
+    "difficulty": 2,
+    "stem": "どんなに優れたアイデアも、形にしなければただの思いつき（　）。",
+    "options": [
+      "に限る",
+      "でしかない",
+      "に越したことはない",
+      "どころではない"
+    ],
+    "answer": 1,
+    "full": "どんなに優れたアイデアも、形にしなければただの思いつきでしかない。",
+    "tr": {
+      "zh": "再好的点子，不把它变成现实，也只不过是一时的念头而已。",
+      "en": "However good an idea is, unless you turn it into something real, it's nothing but a passing thought."
+    },
+    "why": {
+      "zh": "线索：「ただの思いつき」（只是一时的念头）和「形にしなければ」都在贬低这个点子的价值。\n规则：名词＋「でしかない」＝只不过是……，和「に過ぎない」意思相近，语气更重，常带否定、批评。\n辨析：「に限る」＝……最好；「でしかない」＝只不过是……，方向正好相反。",
+      "en": "Clue: 「ただの思いつき」 (a mere passing thought) and 「形にしなければ」 both play down the idea's worth.\nRule: noun ＋ 「でしかない」 = nothing but…, close to 「に過ぎない」 but heavier, often critical.\nContrast: 「に限る」 = … is best; 「でしかない」 = nothing but…, the opposite direction."
+    },
+    "wrong": [
+      {
+        "zh": "「に限る」是“……最好”，推荐某事，和「ただの」贬低的语气矛盾。",
+        "en": "「に限る」 (… is best) recommends something, clashing with the belittling 「ただの」."
+      },
+      null,
+      {
+        "zh": "「に越したことはない」是“最好……”，“最好是一时的念头”说不通。",
+        "en": "「に越したことはない」 (it's best to…) makes no sense with \"a passing thought.\""
+      },
+      {
+        "zh": "「どころではない」是“哪有心思……”，前面要接活动，不接“念头”这种评价。",
+        "en": "「どころではない」 (in no position to…) follows an activity, not a judgment like \"a passing thought.\""
+      }
+    ]
+  },
+  {
+    "id": "n2-l61-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson61#1"
+    ],
+    "difficulty": 2,
+    "stem": "社長は「今回の値下げは一時的な対策（　）。根本的な解決にはならない」と話した。",
+    "options": [
+      "ではいられない",
+      "でならない",
+      "でしかない",
+      "でたまらない"
+    ],
+    "answer": 2,
+    "full": "社長は「今回の値下げは一時的な対策でしかない。根本的な解決にはならない」と話した。",
+    "tr": {
+      "zh": "社长说：“这次降价只不过是权宜之计，解决不了根本问题。”",
+      "en": "The president said, \"This price cut is no more than a stopgap. It won't solve the underlying problem.\""
+    },
+    "why": {
+      "zh": "线索：后一句「根本的な解決にはならない」说明这个对策不够，前一句是在把它的作用往小里说。\n规则：名词＋「でしかない」＝只不过是……，表示仅此而已、没有更多价值。\n辨析：「でならない」「でたまらない」接在な形容词后表示感情强烈（「残念でならない」），不接「対策」这类名词。",
+      "en": "Clue: The next sentence, 「根本的な解決にはならない」, says the measure falls short, so the first sentence is downplaying it.\nRule: noun ＋ 「でしかない」 = nothing more than…, just that and no more.\nContrast: 「でならない」「でたまらない」 follow na-adjectives to show a strong feeling (「残念でならない」), not nouns like 「対策」."
+    },
+    "wrong": [
+      {
+        "zh": "「〜てはいられない」是“不能再……下去”，接动词て形，“对策ではいられない”不成立。",
+        "en": "「〜てはいられない」 (can't keep…) follows a verb's te-form; 「対策ではいられない」 doesn't work."
+      },
+      {
+        "zh": "「でならない」表示感情强烈（「残念でならない」），前面要接感情词，不接「対策」。",
+        "en": "「でならない」 shows a strong feeling (「残念でならない」) and needs a feeling word, not 「対策」."
+      },
+      null,
+      {
+        "zh": "「でたまらない」同样表示感情、感觉强烈，“对策得受不了”说不通。",
+        "en": "「でたまらない」 also shows an intense feeling; it can't follow 「対策」."
+      }
+    ]
   }
 ]

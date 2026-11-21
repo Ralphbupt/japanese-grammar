@@ -477,5 +477,89 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n4-l21-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson21#6",
+      "lesson21#2"
+    ],
+    "difficulty": 1,
+    "stem": "目が 悪く なって、めがねが ないと 小さい 字が（　）なりました。",
+    "options": [
+      "読めるように",
+      "読めなく",
+      "読めて",
+      "読めないで"
+    ],
+    "answer": 1,
+    "full": "目が 悪く なって、めがねが ないと 小さい 字が 読めなく なりました。",
+    "kj": "目が悪くなって、眼鏡がないと小さい字が読めなくなりました。",
+    "tr": {
+      "zh": "眼睛变差了，没有眼镜就看不清小字了。",
+      "en": "My eyes have got worse, and I can't read small print without glasses any more."
+    },
+    "why": {
+      "zh": "线索：「目が 悪く なって」「めがねが ないと」——能力消失了，后面是「なりました」。\n规则：「可能形ない形（去い）＋くなる」表示变得不能：読めない → 読めなく なる。",
+      "en": "Clue: 「目が 悪く なって」 and 「めがねが ないと」 — an ability has been lost, and 「なりました」 follows.\nRule: Potential negative minus い ＋ 「くなる」 means \"can no longer\": 読めない → 読めなく なる."
+    },
+    "wrong": [
+      {
+        "zh": "「読めるようになりました」是“变得能读了”，和眼睛变差的意思相反。",
+        "en": "「読めるようになりました」 means \"became able to read\" — the opposite of worse eyesight."
+      },
+      null,
+      {
+        "zh": "「読めて なりました」不成立，て形不能直接接「なる」表示变化。",
+        "en": "「読めて なりました」 is not Japanese; the て-form can't join 「なる」 to show a change."
+      },
+      {
+        "zh": "「ないで」后面要接动作（読まないで寝る），不能接「なる」表示变化。",
+        "en": "「ないで」 must be followed by an action (読まないで寝る); it can't join 「なる」 for a change."
+      }
+    ]
+  },
+  {
+    "id": "n4-l21-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson21#6",
+      "lesson21#2"
+    ],
+    "difficulty": 2,
+    "stem": "子どもが 生まれてから、毎日 早く 家に 帰るので、夜 友だちと お酒を（　）。",
+    "options": [
+      "飲むように なりました",
+      "飲んで おきました",
+      "飲まなく なりました",
+      "飲みつづけました"
+    ],
+    "answer": 2,
+    "full": "子どもが 生まれてから、毎日 早く 家に 帰るので、夜 友だちと お酒を 飲まなく なりました。",
+    "kj": "子供が生まれてから、毎日早く家に帰るので、夜友達とお酒を飲まなくなりました。",
+    "tr": {
+      "zh": "有了孩子以后，每天都早早回家，所以晚上不再和朋友喝酒了。",
+      "en": "Since our child was born I go home early every day, so I no longer go drinking with friends at night."
+    },
+    "why": {
+      "zh": "线索：「子どもが 生まれてから」是变化的起点，「早く 家に 帰るので」说明晚上不出去了。\n规则：原来有的习惯消失，用「ない形（去い）＋くなる」：飲まない → 飲まなく なる。\n辨析：「〜ように なる」是开始做，「〜なく なる」是不再做。",
+      "en": "Clue: 「子どもが 生まれてから」 marks the change, and 「早く 家に 帰るので」 shows the nights out have stopped.\nRule: A habit that has gone is ない-form minus い ＋ 「くなる」: 飲まない → 飲まなく なる.\nContrast: 「〜ように なる」 = start doing; 「〜なく なる」 = stop doing."
+    },
+    "wrong": [
+      {
+        "zh": "「飲むように なりました」是开始喝了，和“每天早回家”矛盾。",
+        "en": "「飲むように なりました」 means \"started drinking\", which clashes with going home early every day."
+      },
+      {
+        "zh": "「飲んで おきました」是事先喝好，表示准备，和有了孩子后的变化无关。",
+        "en": "「飲んで おきました」 means \"drank in advance\" as preparation — unrelated to the change."
+      },
+      null,
+      {
+        "zh": "「飲みつづけました」是一直在喝，和“早回家”矛盾。",
+        "en": "「飲みつづけました」 means \"kept on drinking\", which clashes with going home early."
+      }
+    ]
   }
 ]

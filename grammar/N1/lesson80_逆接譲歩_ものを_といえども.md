@@ -586,6 +586,242 @@ Restrictions:
 
 ---
 
+## 8. 〜かというと／〜かといえば（要说是不是……，其实也不……）||8. 〜かというと／〜かといえば (Is it really…? Not necessarily)
+
+### 接続||Conjugation
+:::zh
+- 動詞・い形容詞普通形 + かというと／かといえば
+- な形容詞語幹・名詞（+ だ）+ かというと／かといえば
+- 疑问词 + 〜かというと（なぜかというと・どうしてかというと）
+
+※ 后项多为「そうでもない」「そうとは限らない」「必ずしも〜ない」「そうではない」；也常说成「〜かというと、そうでもない」整块使用。  
+※ 「〜かといえば」更书面，意思相同。
+:::
+:::en
+- Verb / i-adjective plain form + かというと／かといえば
+- na-adjective stem / noun (+ だ) + かというと／かといえば
+- Question word + 〜かというと (なぜかというと, どうしてかというと)
+
+※ The second half is usually 「そうでもない」, 「そうとは限らない」, 「必ずしも〜ない」 or 「そうではない」; 「〜かというと、そうでもない」 is often used as one block.  
+※ 「〜かといえば」 is more formal and means the same.
+:::
+
+### 含义||Meaning
+:::zh
+- **否定一般推论**：先提出一个由前文自然推出的想法"那么是不是就……呢"，再加以否定："要说是不是……，其实也不尽然"。常接在「〜からといって」类的上文之后：「値段が高い。では品質がいいかというと、そうでもない」。
+- **疑问词＋かというと**："要说为什么……，那是因为……"，用来引出解释，后面多以「〜からだ」「〜のだ」收尾：「なぜかというと、締め切りが早まったからだ」。
+- **AかというとB**（二选一）："要说是A还是……的话，倒是B"：「好きかというと、むしろ苦手なほうだ」。
+
+限制：
+- 前项是说话人设想别人会推出的结论，后项是说话人的判断，不接命令、请求。
+- 第一种用法考得最多，后项几乎都是部分否定或"其实相反"。
+:::
+:::en
+- **Denying the obvious inference**: raises the conclusion one would naturally draw — "so is it …?" — then rejects it: "not really". Often follows something like a 「〜からといって」 setup: 「値段が高い。では品質がいいかというと、そうでもない」.
+- **Question word + かというと**: "as for why …, it's because …", introducing an explanation that usually ends in 「〜からだ」 or 「〜のだ」: 「なぜかというと、締め切りが早まったからだ」.
+- **AかというとB** (which of two): "if you ask whether it's A — actually it's more B": 「好きかというと、むしろ苦手なほうだ」.
+
+Restrictions:
+- The first part is a conclusion the speaker expects others to draw; the second is the speaker's judgement — no orders or requests.
+- The first use is the one tested most, and its second half is almost always a partial denial or "in fact the opposite".
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 有名な大学を出ていれば仕事ができる**かというと**、必ずしもそうではない。（要说名牌大学毕业就一定能干，那也未必。）
+2. 在宅勤務が増えて通勤は楽になった。では生産性が上がった**かといえば**、そうとも言い切れない。（居家办公多了，通勤轻松了。可要说效率是否提高了，也不能断言。）
+3. 彼の意見に全面的に賛成**かというと**、そうでもない。細かい点では異論がある。（要说我完全赞成他的意见，倒也不是。细节上我有不同看法。）
+4. 計画が一か月延期された。なぜ**かというと**、主要な部品の納入が遅れたからだ。（计划推迟了一个月。要说为什么，是因为主要零件交货晚了。）
+:::
+:::en
+1. 有名な大学を出ていれば仕事ができる**かというと**、必ずしもそうではない。(Does a degree from a famous university mean someone is good at their job? Not necessarily.)
+2. 在宅勤務が増えて通勤は楽になった。では生産性が上がった**かといえば**、そうとも言い切れない。(With more remote work, commuting has got easier. But has productivity gone up? You can't say that for sure.)
+3. 彼の意見に全面的に賛成**かというと**、そうでもない。細かい点では異論がある。(It's not that I agree with him completely; I have objections on the details.)
+4. 計画が一か月延期された。なぜ**かというと**、主要な部品の納入が遅れたからだ。(The plan was pushed back a month. The reason is that delivery of key parts was delayed.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 出处 | 区别 |
+|------|------|------|
+| からといって〜とは限らない | N2第59课 | "不能因为……就……"，否定的是前项到后项的因果 |
+| かというと、そうでもない | 本课 | 先把推论提成问题，再否定它；常单独成句接在上文后面 |
+| とは限らない | N3第55课 | 直接说"未必"，本身就是部分否定的结尾 |
+
+> 「高いからといって品質がいいとは限らない」＝「高い。では品質がいいかというと、そうでもない」，意思几乎一样；后者分两步说，先设问再否定，更像会话和评论文章。  
+> 题目里看到前文是一个"人们通常会以为……"的情况，空格后是「、そうでもない／必ずしも〜ない」，就选「かというと」。
+:::
+:::en
+| Expression | Where | Difference |
+|------|------|------|
+| からといって〜とは限らない | N2 Lesson 59 | "just because … doesn't mean …"; denies the link from cause to result |
+| かというと、そうでもない | this lesson | puts the inference as a question, then denies it; often a sentence of its own after the setup |
+| とは限らない | N3 Lesson 55 | says "not necessarily" outright; it is itself the partial-denial ending |
+
+> 「高いからといって品質がいいとは限らない」 and 「高い。では品質がいいかというと、そうでもない」 mean almost the same; the second says it in two steps, question then denial, which feels more like speech or opinion writing.  
+> On the test: if the setup is "what people would usually assume" and the blank is followed by 「、そうでもない／必ずしも〜ない」, choose 「かというと」.
+:::
+
+---
+
+## 9. 〜はする（が）／〜はしない（……是……了（但）／并不……）||9. 〜はする（が）／〜はしない (Does…, but… / Certainly won't…)
+
+### 接続||Conjugation
+:::zh
+- 動詞ます形語幹 + は + する／した（+ が・けれど）
+- 動詞ます形語幹 + は + しない／しなかった
+- 动词「て形」+ は + いる／いない（「知ってはいるが」）
+- 名词性动词：「反対はしない」「賛成はするが」
+
+※ 「は」把动作单独拿出来：做是做了，但仅此而已；或者"（别的不说）至少……是不会的"。
+:::
+:::en
+- Verb masu-stem + は + する／した (+ が・けれど)
+- Verb masu-stem + は + しない／しなかった
+- Verb te-form + は + いる／いない (「知ってはいるが」)
+- With suru-nouns: 「反対はしない」, 「賛成はするが」
+
+※ 「は」 singles out the action: it is done, but that's all; or "this at least is something one won't do".
+:::
+
+### 含义||Meaning
+:::zh
+- **〜はする（が）**："……是……了，但……"。承认做了这个动作，后项说结果、程度不如预期：「本は買いはしたが、まだ一ページも読んでいない」。和「〜ことは〜が」（N3第55课）相近，但更简洁、书面。
+- **〜はしない**：强调否定"（别的不好说，但）绝不会……""并不……"。常用于反驳对方的担心或推测：「そんなことで怒りはしないよ」；也用于「〜しもしない」（连……都不）：「見もしないで捨てた」。
+
+限制：
+- 「は」前是ます形语幹，不能用辞书形：❌「買うはしたが」→ ⭕「買いはしたが」。
+- 「〜はするが」后项多为"但不够、但没用、但没有下文"的转折。
+- 「〜はしない」多带说话人对推测的否定（「〜はしないだろう」「〜はしないか」），也有「〜はしないかと心配だ」（担心会不会……）这一固定说法。
+:::
+:::en
+- **〜はする（が）**: "does …, but …". Grants that the action happens, then says the result or degree falls short: 「本は買いはしたが、まだ一ページも読んでいない」. Close to 「〜ことは〜が」 (N3 Lesson 55), but terser and more written.
+- **〜はしない**: an emphatic negative — "(whatever else) won't …, certainly doesn't …". Often used to answer a worry or guess: 「そんなことで怒りはしないよ」; also 「〜しもしない」 (doesn't even …): 「見もしないで捨てた」.
+
+Restrictions:
+- The masu-stem goes before 「は」, never the dictionary form: ❌ 「買うはしたが」 → ⭕ 「買いはしたが」.
+- After 「〜はするが」 comes a "but it's not enough / no use / nothing came of it" turn.
+- 「〜はしない」 often denies a guess (「〜はしないだろう」, 「〜はしないか」); there is also the set phrase 「〜はしないかと心配だ」 (worried that … might happen).
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 会議で意見を言い**はした**が、結局誰にも取り上げてもらえなかった。（会上意见是提了，可最后谁都没有采纳。）
+2. 謝罪の言葉を口にし**はする**ものの、彼の態度からは反省の色がまったく見えない。（道歉的话嘴上是说了，但从他的态度上完全看不出反省。）
+3. 少しくらい遅れたって、先生は怒り**はしない**よ。安心して。（就算晚一点，老师也不会生气的。放心吧。）
+4. 一度失った信頼は、謝ったところで簡単に戻り**はしない**。（一旦失去的信任，就算道歉也不会轻易回来。）
+:::
+:::en
+1. 会議で意見を言い**はした**が、結局誰にも取り上げてもらえなかった。(I did speak up at the meeting, but in the end nobody took up what I said.)
+2. 謝罪の言葉を口にし**はする**ものの、彼の態度からは反省の色がまったく見えない。(He says the words of apology, but nothing in his manner shows any remorse.)
+3. 少しくらい遅れたって、先生は怒り**はしない**よ。安心して。(The teacher won't get angry if you're a little late. Don't worry.)
+4. 一度失った信頼は、謝ったところで簡単に戻り**はしない**。(Trust once lost doesn't come back easily, however much you apologise.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 出处 | 区别 |
+|------|------|------|
+| ことは〜が | N3第55课 | 「行くことは行くが」，同一动词重复，口语，"……倒是……" |
+| ます形＋はするが | 本课 | 更简洁书面；后项说"但不充分、没结果" |
+| ながらも | 本课第4点 | 两种相反状态并存，前项多为状态动词；不强调"仅此而已" |
+| ます形＋もしない | — | 「見もしない」"连……都不"，比「はしない」更强、更带责备 |
+
+> 「読みはしたが、よくわからなかった」≈「読むことは読んだが、よくわからなかった」。  
+> 「怒りはしない」是"不会生气的（放心）"；「怒りもしない」是"连生气都不生气（反应太冷淡）"，语气方向不同。
+:::
+:::en
+| Expression | Where | Difference |
+|------|------|------|
+| ことは〜が | N3 Lesson 55 | 「行くことは行くが」, the same verb repeated, conversational: "I do …, but" |
+| masu-stem + はするが | this lesson | terser and more written; the second half says "but not enough / nothing came of it" |
+| ながらも | this lesson, point 4 | two opposite states side by side, usually state verbs; no "and that's all" sense |
+| masu-stem + もしない | — | 「見もしない」 "doesn't even …", stronger than 「はしない」 and more reproachful |
+
+> 「読みはしたが、よくわからなかった」 ≈ 「読むことは読んだが、よくわからなかった」.  
+> 「怒りはしない」 means "won't get angry (don't worry)"; 「怒りもしない」 means "doesn't even get angry (shockingly indifferent)" — the tone points the other way.
+:::
+
+---
+
+## 10. 〜かと思いきや（原以为……，没想到……）||10. 〜かと思いきや (Just when you'd think… / Contrary to expectations…)
+
+### 接続||Conjugation
+:::zh
+- 動詞・い形容詞普通形 + かと思いきや
+- な形容詞語幹・名詞（+ だ）+ かと思いきや
+- 也可省略「か」：「〜と思いきや」
+
+※ 「思いきや」是文语「思ひきや」（谁知道……）的残留，现代用作固定说法，多见于随笔、报道、评论。
+:::
+:::en
+- Verb / i-adjective plain form + かと思いきや
+- na-adjective stem / noun (+ だ) + かと思いきや
+- 「か」 can be dropped: 「〜と思いきや」
+
+※ 「思いきや」 is left over from classical 「思ひきや」 ("who would have thought…"); today it is a set phrase, common in essays, reports and commentary.
+:::
+
+### 含义||Meaning
+:::zh
+"本以为……，结果却……""以为会……，没想到……"。前项是说话人（或一般人）当时的预想，后项是与预想相反的实际结果，带意外的语气。
+
+限制：
+- 后项是已经发生的事实，多为过去形或现状描述，不接意志、命令、请求：❌「雨かと思いきや、傘を持っていこう」。
+- 前后要是"预想→相反结果"的关系；只是时间上的先后用「かと思うと」。
+- 偏书面、略带戏剧性，正式公文中少用。
+:::
+:::en
+"I thought …, but actually …", "you'd expect …, yet …". The first part is what the speaker (or anyone) expected at the time; the second is what actually happened, the opposite, with a note of surprise.
+
+Restrictions:
+- The second half is something that actually happened, usually past tense or a present state — no intention, order or request: ❌ 「雨かと思いきや、傘を持っていこう」.
+- The two halves must be "expectation → the opposite"; for mere succession in time use 「かと思うと」.
+- Written and slightly dramatic; rare in official documents.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 試験は簡単だった**かと思いきや**、結果は散々だった。（本以为考试很简单，结果考得一塌糊涂。）
+2. 長引く**かと思いきや**、交渉は意外にもわずか一時間でまとまった。（原以为谈判会拖很久，没想到仅一个小时就谈妥了。）
+3. 高級レストランだから値段も高い**と思いきや**、ランチは千円以下で食べられる。（以为是高级餐厅价格也贵，没想到午餐一千日元以内就能吃到。）
+4. 引退した**かと思いきや**、彼は翌年あっさり現役に復帰した。（原以为他退役了，谁知第二年他就轻描淡写地复出了。）
+:::
+:::en
+1. 試験は簡単だった**かと思いきや**、結果は散々だった。(I thought the exam had been easy, but my results were dreadful.)
+2. 長引く**かと思いきや**、交渉は意外にもわずか一時間でまとまった。(Everyone expected the talks to drag on, but surprisingly they were settled in just an hour.)
+3. 高級レストランだから値段も高い**と思いきや**、ランチは千円以下で食べられる。(You'd think a high-end restaurant would be expensive, but lunch costs under 1,000 yen.)
+4. 引退した**かと思いきや**、彼は翌年あっさり現役に復帰した。(Just when we thought he had retired, he came straight back to competition the following year.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 出处 | 区别 |
+|------|------|------|
+| かと思うと／かと思ったら | N2第63课 | "刚……就……"：看到一个变化紧接着另一个变化，重点是时间之快；接动词た形 |
+| かと思いきや | 本课 | "本以为……却……"：预想落空，重点是意外；可接各种普通形、名词 |
+| ところが | N3第55课 | 接续词，"然而"，后句与预期相反，单独放句首 |
+| ものの | N3第39课 | 单纯承认前项再转折，没有"原以为"的预想 |
+
+> 「泣き出したかと思うと、すぐに笑い出した」：刚哭又笑（时间上的接连）。  
+> 「泣くかと思いきや、笑い出した」：以为会哭，结果却笑了（预想落空）。  
+> 注意「かと思いきや」前面可以是非过去形（「長引くかと思いきや」），这时一定是"预想"；「かと思うと」的时间用法前面要用た形。
+:::
+:::en
+| Expression | Where | Difference |
+|------|------|------|
+| かと思うと／かと思ったら | N2 Lesson 63 | "no sooner … than …": one change seen right after another, the point is speed; verb ta-form |
+| かと思いきや | this lesson | "I'd thought …, but": an expectation dashed, the point is surprise; takes any plain form or a noun |
+| ところが | N3 Lesson 55 | a conjunction, "however", starting the next sentence with an unexpected turn |
+| ものの | N3 Lesson 39 | simply grants the first part and turns, with no "I had expected" |
+
+> 「泣き出したかと思うと、すぐに笑い出した」: had just started crying when she laughed (succession in time).  
+> 「泣くかと思いきや、笑い出した」: I thought she'd cry, but she laughed (expectation dashed).  
+> Note that 「かと思いきや」 can follow a non-past form (「長引くかと思いきや」), and then it is always an expectation; the time use of 「かと思うと」 needs the ta-form.
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

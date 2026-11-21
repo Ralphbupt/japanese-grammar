@@ -491,6 +491,86 @@ Restrictions:
 
 ---
 
+## 7. 〜を受けて（受……的影响；根据……；接到……之后）||7. 〜を受けて (In response to… / Following…)
+
+### 接続||Conjugation
+:::zh
+- 名詞 + を受けて
+- 名詞 + を受けた + 名詞
+- 名詞 + を受け、〜（更书面的中顿形）
+
+※ 「受ける」本义是"接受、承受"，这里虚化成"接到A这个消息或事态，以此为由做出B"。新闻、公告、报告里非常常见。
+:::
+:::en
+- Noun + を受けて
+- Noun + を受けた + noun
+- Noun + を受け、〜 (the more written continuative)
+
+※ 「受ける」 literally means "to receive", here weakened to "taking A — a piece of news or a development — as the reason to do B". Very common in news, announcements and reports.
+:::
+
+### 含义||Meaning
+:::zh
+"受……（的影响）""根据……""接到……之后（而采取……）"。A是已经发生的事件、结果、决定、要求、报告等，B是针对A做出的反应或措施。
+
+限制：
+- A多为具体的事件或信息：判決、事故、報告、結果、要望、指摘、決定、台風の接近、円安……
+- B是人或组织有意识的应对（発表する、見直す、中止する、対策を取る），或由此引起的社会动向（株価が上がる）。
+- 不用于单纯的时间先后：❌「朝ご飯を受けて、出かけた」。
+- 语气客观、书面，日常会话里多说「〜があったので」「〜を聞いて」。
+:::
+:::en
+"In response to…", "following…" or "in the light of…". A is an event, result, decision, request or report that has already happened; B is the reaction or measure taken because of it.
+
+Restrictions:
+- A is usually a concrete event or piece of information: 判決, 事故, 報告, 結果, 要望, 指摘, 決定, 台風の接近, 円安…
+- B is a deliberate response by a person or organisation (発表する, 見直す, 中止する, 対策を取る), or a social trend it set off (株価が上がる).
+- Not for simple time order: ❌ 「朝ご飯を受けて、出かけた」.
+- Objective and written; in conversation people say 「〜があったので」 or 「〜を聞いて」.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 一連の不祥事**を受けて**、社長は記者会見を開き、辞任を表明した。（受一系列丑闻影响，社长召开记者会，宣布辞职。）
+2. 台風の接近**を受け**、航空各社は明日の便の大半を欠航とすることを決めた。（由于台风逼近，各航空公司决定取消明天的大部分航班。）
+3. 利用者からの要望**を受けて**、図書館の開館時間が夜九時まで延長された。（根据使用者的要求，图书馆的开馆时间延长到了晚上九点。）
+4. 今回の調査結果**を受けた**対策として、市は通学路の安全点検を実施する方針だ。（作为针对此次调查结果的对策，市里打算对上学路线进行安全检查。）
+:::
+:::en
+1. 一連の不祥事**を受けて**、社長は記者会見を開き、辞任を表明した。(In the wake of a series of scandals, the company president held a press conference and announced his resignation.)
+2. 台風の接近**を受け**、航空各社は明日の便の大半を欠航とすることを決めた。(With a typhoon approaching, the airlines decided to cancel most of tomorrow's flights.)
+3. 利用者からの要望**を受けて**、図書館の開館時間が夜九時まで延長された。(In response to requests from users, the library's opening hours were extended to 9 p.m.)
+4. 今回の調査結果**を受けた**対策として、市は通学路の安全点検を実施する方針だ。(As a measure in response to the survey findings, the city plans to carry out safety checks on school routes.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| を受けて | 接到A（的事态）后，针对它做出B | A是消息、结果、要求等，B是有意识的应对，新闻体 |
+| をきっかけに | 以A为契机 | A只是一个开端，引出的变化可以和A没有直接对应关系（N2第63课） |
+| に応じて | 根据A（的不同）而相应变化 | A是会变化的条件或个别的要求，B随之调整（N2第67课） |
+| とあって | 因为是A这种特殊情况 | 描述由特殊情况自然产生的状况，不是"应对措施"（本课第4点） |
+
+> 「判決を受けて、政府は法改正を検討し始めた」= 接到判决后，政府开始研究修法（应对）  
+> 「留学をきっかけに、環境問題に関心を持つようになった」= 以留学为契机开始关注环保（开端）  
+> 「売上に応じてボーナスが変わる」= 奖金随销售额变化（对应）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| を受けて | in response to A, B is done | A is news, a result or a request; B a deliberate response; news style |
+| をきっかけに | A set things off | A is just a starting point; what follows needn't answer A directly (N2 Lesson 63) |
+| に応じて | according to A | A is a changing condition or an individual request, and B adjusts to it (N2 Lesson 67) |
+| とあって | because it is A (a special situation) | Describes what naturally happens in a special situation, not a measure taken (point 4 of this lesson) |
+
+> 「判決を受けて、政府は法改正を検討し始めた」= following the ruling, the government began considering a change in the law (a response)  
+> 「留学をきっかけに、環境問題に関心を持つようになった」= studying abroad got me interested in environmental issues (a starting point)  
+> 「売上に応じてボーナスが変わる」= the bonus varies with sales (corresponding)
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

@@ -506,5 +506,85 @@
         "en": "「にしては」 means \"for a …\" (against expectations), as in 「学生にしては」; nothing is being measured against a standard here."
       }
     ]
+  },
+  {
+    "id": "n3-l51-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson51#5"
+    ],
+    "difficulty": 1,
+    "stem": "この掃除機は値段が少し高いが、音が静かだ（　）、ほかの製品より優れている。",
+    "options": [
+      "というより",
+      "という点で",
+      "にとって",
+      "といっても"
+    ],
+    "answer": 1,
+    "full": "この掃除機は値段が少し高いが、音が静かだという点で、ほかの製品より優れている。",
+    "tr": {
+      "zh": "这款吸尘器价格稍贵，但在声音安静这一点上比其他产品优秀。",
+      "en": "This vacuum cleaner is a little expensive, but it beats other products in that it's quiet."
+    },
+    "why": {
+      "zh": "线索：后面是评价「ほかの製品より優れている」，前面是一个具体特征「音が静かだ」。\n规则：普通形（な形容词加「だ」）＋「という点で」＝在……这一点上，限定评价的方面。\n辨析：「というより」是“与其说A不如说B”，要对同一事物换个说法，这里前后不是这种关系。",
+      "en": "Clue: An evaluation follows, 「ほかの製品より優れている」, and a specific feature comes before, 「音が静かだ」.\nRule: Plain form (な-adjectives with 「だ」) + 「という点で」 = in that…: narrows the evaluation to one aspect.\nContrast: 「というより」 means \"rather than A, B\" and rephrases the same thing; that isn't the relation here."
+    },
+    "wrong": [
+      {
+        "zh": "「というより」（本课第1点）是换个更准确的说法，“与其说安静不如说优秀”不通。",
+        "en": "「というより」 (point 1) rephrases more accurately; \"more superior than quiet\" makes no sense."
+      },
+      null,
+      {
+        "zh": "「にとって」接人或团体（我にとって），不接「静かだ」这种句子。",
+        "en": "「にとって」 follows a person or group (私にとって), not a clause like 「静かだ」."
+      },
+      {
+        "zh": "「といっても」（本课第2点）是“虽说……其实没那么……”，后面应该是降低程度的话，不是「優れている」。",
+        "en": "「といっても」 (point 2) means \"I say…, but not really\", and should be followed by a toning-down, not 「優れている」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l51-015",
+    "type": "bunpou",
+    "refs": [
+      "lesson51#5"
+    ],
+    "difficulty": 2,
+    "stem": "A社とB社の案は、どちらも費用が安い（　）同じだが、完成までの期間はA社のほうが短い。",
+    "options": [
+      "というと",
+      "どころか",
+      "という点では",
+      "に比べて"
+    ],
+    "answer": 2,
+    "full": "A社とB社の案は、どちらも費用が安いという点では同じだが、完成までの期間はA社のほうが短い。",
+    "tr": {
+      "zh": "A公司和B公司的方案在费用低这一点上是一样的，但完成所需的时间A公司更短。",
+      "en": "Company A's and Company B's plans are the same in that both are cheap, but A's would be finished sooner."
+    },
+    "why": {
+      "zh": "线索：「どちらも〜同じだが、期間は…」：先说相同的方面，再说不同的方面。\n规则：「〜という点では」＝在……这一点上；加「は」带对比：这一点相同，别的方面另说。\n辨析：「〜に比べて」要接名词（A社に比べて），而且是比较双方，不能接「安い」。",
+      "en": "Clue: 「どちらも〜同じだが、期間は…」: first the respect in which they're the same, then one where they differ.\nRule: 「〜という点では」 = in that…; 「は」 adds contrast: the same here, other respects are another matter.\nContrast: 「〜に比べて」 follows a noun (A社に比べて) and compares two things; it can't follow 「安い」."
+    },
+    "wrong": [
+      {
+        "zh": "「というと」（本课第3点）是“说到……”，用来引出联想，后面不接「同じだが」。",
+        "en": "「というと」 (point 3) means \"speaking of…\" and brings up an association; it doesn't lead into 「同じだが」."
+      },
+      {
+        "zh": "「どころか」（第39课）是“哪里是……反而……”，和「同じ」意思不通。",
+        "en": "「どころか」 (lesson 39) means \"far from…\"; it makes no sense with 「同じ」."
+      },
+      null,
+      {
+        "zh": "「に比べて」（第50课）接名词，不接形容词「安い」，也不是“在哪一点上相同”。",
+        "en": "「に比べて」 (lesson 50) follows a noun, not the adjective 「安い」, and doesn't say in what respect they're the same."
+      }
+    ]
   }
 ]

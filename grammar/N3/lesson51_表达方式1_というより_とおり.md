@@ -257,6 +257,70 @@ The actual situation matches what was stated. "Just as..." / "According to..."
 
 ---
 
+## 5. 〜という点で（在……这一点上）||5. 〜という点で (In that… / In terms of…)
+
+### 接続||Conjugation
+:::zh
+- 名詞 + という点で（は）
+- 動詞・い形容詞普通形 + という点で（は）
+- な形容詞 + だ／である + という点で（は）
+- 也说「〜点で」「〜という点において」（书面）
+:::
+:::en
+- Noun + という点で（は）
+- Verb / い-adjective plain form + という点で（は）
+- な-adjective + だ／である + という点で（は）
+- Also 「〜点で」 and, in writing, 「〜という点において」
+:::
+
+### 含义||Meaning
+:::zh
+"在……这一点上"：把评价、比较的范围限定在某个方面或特征上。常和"好/差/优秀/不同/相同"等评价词一起用。加「は」（という点では）带对比意味：在这一点上是这样，别的方面另说。
+:::
+:::en
+"In that… / in terms of…": narrows an evaluation or comparison to one aspect or feature. Usually followed by words like good, bad, excellent, different, the same. With 「は」 (という点では) it implies a contrast: true in this respect, but other respects are another matter.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. このアパートは駅から近い**という点で**、とても便利だ。（这套公寓在离车站近这一点上很方便。）
+2. 値段**という点では**A社の製品がいいが、品質ではB社のほうが上だ。（在价格方面A公司的产品好，但质量上B公司更胜一筹。）
+3. 彼の案は費用がほとんどかからない**という点で**優れている。（他的方案优秀在几乎不花钱这一点。）
+4. 二つの事件は、夜中に起きた**という点で**共通している。（两起事件在都发生在半夜这一点上是相同的。）
+:::
+:::en
+1. このアパートは駅から近い**という点で**、とても便利だ。(This apartment is very convenient in that it's close to the station.)
+2. 値段**という点では**A社の製品がいいが、品質ではB社のほうが上だ。(In terms of price Company A's product is better, but on quality Company B comes out ahead.)
+3. 彼の案は費用がほとんどかからない**という点で**優れている。(His plan is excellent in that it costs almost nothing.)
+4. 二つの事件は、夜中に起きた**という点で**共通している。(The two incidents have in common that both happened in the middle of the night.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| 〜という点で | 在……这一点上 | 限定评价的**方面/特征**，后面多是评价 |
+| 〜において（第35课第1点） | 在……（场所、领域） | 书面，表示事情发生的场所或领域 |
+| 〜にとって（第36课第2点） | 对……来说 | 从**某人的立场**评价 |
+| 〜として（第47课第1点） | 作为…… | 表示身份、资格 |
+
+> 「値段という点では安い」＝就价格这一方面来说便宜  
+> 「学生にとっては安い」＝对学生来说便宜（立场）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| 〜という点で | in that… / in terms of… | Narrows the evaluation to one **aspect or feature**; an evaluation usually follows |
+| 〜において (lesson 35, point 1) | in / at (place, field) | Written; where or in what field something happens |
+| 〜にとって (lesson 36, point 2) | for (someone) | Evaluates from **someone's standpoint** |
+| 〜として (lesson 47, point 1) | as… | Role or capacity |
+
+> 「値段という点では安い」 = cheap as far as price goes (an aspect)  
+> 「学生にとっては安い」 = cheap for a student (a standpoint)
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

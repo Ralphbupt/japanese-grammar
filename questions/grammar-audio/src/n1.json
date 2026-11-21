@@ -484,6 +484,33 @@
   ]
  },
  {
+  "key": "lesson78:〜といった",
+  "form": {
+   "zh": [
+    "N1（、N2）＋ といった ＋ N（总称）",
+    "N1 ＋ や ＋ N2 ＋ といった ＋ N",
+    "数量 ＋ といったところだ"
+   ],
+   "en": [
+    "N1 (、N2) + といった + N (category)",
+    "N1 + や + N2 + といった + N",
+    "amount + といったところだ"
+   ]
+  },
+  "mean": {
+   "zh": "先举出一两个例子，再用一个总称把它们归类，暗示还有同类的东西，比较书面。接在数量后面时，表示顶多也就这个程度。",
+   "en": "Gives one or two examples, then a word for the whole group, hinting there are more. After an amount, it means about that much at most."
+  },
+  "vs": {
+   "zh": "など：……等（最通用，可直接接助词）；だの〜だの：又是……又是……（带不满的罗列）",
+   "en": "など: and so on (most general, can take a particle directly); だの〜だの: this and that (listing with annoyance)"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
   "key": "lesson79:〜たりとも〜ない",
   "form": {
    "zh": [
@@ -631,6 +658,88 @@
   "vs": {
    "zh": "極まりない：极其（接な形容词词干，多为负面）；限りだ：真是太……了（接感情形容词）",
    "en": "極まりない: extremely (after na-adj, usually negative); 限りだ: so very (after feeling adjectives)"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson79:いっさい",
+  "term": "いっさい／なんら",
+  "form": {
+   "zh": [
+    "いっさい ＋ V否定形",
+    "いっさい ＋ N ＋ ない",
+    "なんら ＋ V否定形",
+    "なんら ＋ の ＋ N ＋ も ＋ ない"
+   ],
+   "en": [
+    "いっさい + negative verb",
+    "いっさい + N + ない",
+    "なんら + negative verb",
+    "なんら + の + N + も + ない"
+   ]
+  },
+  "mean": {
+   "zh": "和否定一起用，表示完全不、丝毫没有，前者多用于规定和拒绝，后者更书面、生硬。",
+   "en": "Used with a negative to mean not at all. The first is common in rules and refusals; the second is stiffer and more formal."
+  },
+  "vs": {
+   "zh": "たりとも〜ない：哪怕一……也不（接一加量词）；少しも〜ない：一点也不（口语、中性）",
+   "en": "たりとも〜ない: not even one (after one plus a counter); 少しも〜ない: not at all (plain, spoken)"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson79:〜だって",
+  "form": {
+   "zh": [
+    "N ＋ だって",
+    "一 ＋ 量词 ＋ だって ＋ 否定",
+    "疑問詞 ＋ だって"
+   ],
+   "en": [
+    "N + だって",
+    "one + counter + だって + negative",
+    "question word + だって"
+   ]
+  },
+  "mean": {
+   "zh": "表示连这个也一样、这个也不例外，是口语的说法；接在疑问词后面表示无论谁、无论什么时候都。",
+   "en": "Even, or too; a casual way to say it. After a question word it means anyone or anytime at all."
+  },
+  "vs": {
+   "zh": "でも／さえ：连……也（中性）；すら：连……也（书面，语气更强）",
+   "en": "でも／さえ: even (neutral); すら: even (written, stronger)"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson79:〜てまで",
+  "form": {
+   "zh": [
+    "Vて形 ＋ まで",
+    "N ＋ まで ＋ して"
+   ],
+   "en": [
+    "V-te + まで",
+    "N + まで + して"
+   ]
+  },
+  "mean": {
+   "zh": "不惜付出很大的代价或用过分的手段也要达到目的，后面常是批评或否定的评价。",
+   "en": "Going so far as to pay a big price or use extreme means to get something. Usually followed by criticism or a negative judgment."
+  },
+  "vs": {
+   "zh": "すら／さえ：连……也（举极端例子，不表示手段）；までもない：用不着……",
+   "en": "すら／さえ: even (an extreme example, not a means); までもない: there's no need to"
   },
   "pick": [
    0,
@@ -823,6 +932,88 @@
   ]
  },
  {
+  "key": "lesson80:〜かというと",
+  "form": {
+   "zh": [
+    "普通形 ＋ かというと／かといえば",
+    "なA語幹／N（＋ だ）＋ かというと",
+    "疑問詞 ＋ かというと"
+   ],
+   "en": [
+    "plain form + かというと／かといえば",
+    "na-adj stem／N (+ だ) + かというと",
+    "question word + かというと"
+   ]
+  },
+  "mean": {
+   "zh": "先把人们通常会有的推论提成问题，再说其实未必如此；接在疑问词后面则是引出原因。",
+   "en": "Raises the conclusion people would usually draw, then says it isn't necessarily so. After a question word, it introduces the reason."
+  },
+  "vs": {
+   "zh": "からといって〜とは限らない：不能因为……就……；とは限らない：未必……",
+   "en": "からといって〜とは限らない: just because… doesn't mean…; とは限らない: not necessarily"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson80:〜はする",
+  "term": "〜はする／〜はしない",
+  "form": {
+   "zh": [
+    "Vます形 ＋ は ＋ する／した（＋ が）",
+    "Vます形 ＋ は ＋ しない",
+    "Vて形 ＋ は ＋ いる（＋ が）"
+   ],
+   "en": [
+    "V-masu stem + は + する／した (+ が)",
+    "V-masu stem + は + しない",
+    "V-te + は + いる (+ が)"
+   ]
+  },
+  "mean": {
+   "zh": "把动作单独拿出来说：做是做了，但仅此而已，没有结果；否定时表示至少不会那样，常用来安慰对方。",
+   "en": "Singles out the action: it was done, but nothing more came of it. In the negative, it means it certainly won't happen, often to reassure."
+  },
+  "vs": {
+   "zh": "ことは〜が：……倒是……（重复同一动词，口语）；もしない：连……都不（更强，带责备）",
+   "en": "ことは〜が: does, but (repeats the verb, spoken); もしない: doesn't even (stronger, reproachful)"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson80:〜かと思いきや",
+  "form": {
+   "zh": [
+    "普通形 ＋ かと思いきや",
+    "なA語幹／N（＋ だ）＋ かと思いきや",
+    "普通形 ＋ と思いきや"
+   ],
+   "en": [
+    "plain form + かと思いきや",
+    "na-adj stem／N (+ だ) + かと思いきや",
+    "plain form + と思いきや"
+   ]
+  },
+  "mean": {
+   "zh": "原以为会是这样，没想到结果完全相反，重点是预想落空的意外感，多见于随笔和报道。",
+   "en": "You expected one thing, but the opposite happened. The focus is on the surprise; common in essays and news."
+  },
+  "vs": {
+   "zh": "かと思うと：刚……就……（时间上的接连，接た形）；ところが：然而（接续词）",
+   "en": "かと思うと: no sooner… than (one change right after another, after V-ta); ところが: however (a conjunction)"
+  },
+  "pick": [
+   1,
+   2
+  ]
+ },
+ {
   "key": "lesson81:〜なくして",
   "form": {
    "zh": [
@@ -968,6 +1159,81 @@
   "pick": [
    1,
    0
+  ]
+ },
+ {
+  "key": "lesson81:〜ない限り",
+  "form": {
+   "zh": [
+    "Vない形 ＋ 限り",
+    "いAくない ＋ 限り",
+    "なA／N ＋ でない限り"
+   ],
+   "en": [
+    "V-nai + 限り",
+    "i-adj (くない) + 限り",
+    "na-adj／N + でない限り"
+   ]
+  },
+  "mean": {
+   "zh": "只要不出现这个条件，情况就不会改变；后面可以是否定，也可以是肯定的规定或惯例。",
+   "en": "As long as this condition isn't met, things stay as they are. What follows can be negative or a positive rule or routine."
+  },
+  "vs": {
+   "zh": "ないことには：不……的话就不能（后面必定是否定）；限り：只要……就一直（肯定的条件）",
+   "en": "ないことには: unless… can't (always followed by a negative); 限り: as long as (a positive condition)"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson81:〜てこそ",
+  "form": {
+   "zh": [
+    "Vて形 ＋ こそ"
+   ],
+   "en": [
+    "V-te + こそ"
+   ]
+  },
+  "mean": {
+   "zh": "只有真正做了这件事，后面的结果才成立，用来讲道理或下评价。",
+   "en": "Only by actually doing this does the result hold true. Used to state a principle or make a judgment."
+  },
+  "vs": {
+   "zh": "ばこそ：正因为……才（原因，书面）；からこそ：正因为……才（原因，常用）",
+   "en": "ばこそ: precisely because (a reason, formal); からこそ: precisely because (a reason, common)"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson81:〜でもしたら",
+  "form": {
+   "zh": [
+    "Vます形 ＋ でもしたら",
+    "N（する動詞）＋ でもしたら"
+   ],
+   "en": [
+    "V-masu stem + でもしたら",
+    "N (する verb) + でもしたら"
+   ]
+  },
+  "mean": {
+   "zh": "担心万一发生了不希望的事，后果就严重了，带着担心或警告的语气。",
+   "en": "Worries that if something unwanted happened, the result would be serious. Sounds anxious or warning."
+  },
+  "vs": {
+   "zh": "ようものなら：要是胆敢……（假设不该做的行为，更夸张）；たら最後：一旦……就完了",
+   "en": "ようものなら: if you dare (an act you shouldn't do, more dramatic); たら最後: once it happens, that's it"
+  },
+  "pick": [
+   0,
+   2
   ]
  },
  {
@@ -1118,6 +1384,33 @@
   "vs": {
    "zh": "を口実に：以……为借口（更直接）；をきっかけに：以……为契机（真正的原因）",
    "en": "を口実に: on the pretext of (more direct); をきっかけに: triggered by (a real cause)"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson82:〜を受けて",
+  "form": {
+   "zh": [
+    "N ＋ を受けて",
+    "N ＋ を受けた ＋ N",
+    "N ＋ を受け、"
+   ],
+   "en": [
+    "N + を受けて",
+    "N + を受けた + N",
+    "N + を受け、"
+   ]
+  },
+  "mean": {
+   "zh": "接到某个消息、结果或要求之后，针对它做出应对，多用于新闻和公告。",
+   "en": "After receiving news, a result or a request, something is done in response. Common in news and announcements."
+  },
+  "vs": {
+   "zh": "をきっかけに：以……为契机（只是开端）；に応じて：根据……而相应变化",
+   "en": "をきっかけに: triggered by (just a starting point); に応じて: adjusting according to"
   },
   "pick": [
    0,
@@ -1873,6 +2166,60 @@
   ]
  },
  {
+  "key": "lesson87:〜じゃないか",
+  "form": {
+   "zh": [
+    "V意志形 ＋ じゃないか／ではないか（号召）",
+    "N／普通形 ＋ じゃないか（发现、惊讶）",
+    "普通形 ＋ じゃないか（责备、确认）"
+   ],
+   "en": [
+    "V-volitional + じゃないか／ではないか (call to act)",
+    "N／plain form + じゃないか (surprise)",
+    "plain form + じゃないか (reproach)"
+   ]
+  },
+  "mean": {
+   "zh": "接在意志形后面是号召大家一起做；也可以表示发现时的惊讶，或者责备对方，意思是我不是说过了吗。",
+   "en": "After the volitional, it calls on everyone to act together. It can also show surprise at a discovery, or reproach, as in didn't I tell you."
+  },
+  "vs": {
+   "zh": "のではないか：是不是……呢（委婉的推测）；ないか：要不要……（真正的邀请）",
+   "en": "のではないか: isn't it the case that (a soft guess); ないか: won't you (a real invitation)"
+  },
+  "pick": [
+   1,
+   2
+  ]
+ },
+ {
+  "key": "lesson87:〜にもほどがある",
+  "form": {
+   "zh": [
+    "N ＋ にもほどがある",
+    "なA語幹 ＋ にもほどがある",
+    "いA／V辞書形 ＋ にもほどがある"
+   ],
+   "en": [
+    "N + にもほどがある",
+    "na-adj stem + にもほどがある",
+    "i-adj／V-dict + にもほどがある"
+   ]
+  },
+  "mean": {
+   "zh": "批评对方的言行太过分，超出了限度，带着气愤的语气。",
+   "en": "Criticizes someone for going way too far, beyond any limit. Said with anger."
+  },
+  "vs": {
+   "zh": "極まりない：……至极（书面、冷静的评价）；といったらない：……得无法形容（可褒可贬）",
+   "en": "極まりない: extremely (a cool, written judgment); といったらない: beyond words (good or bad)"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
   "key": "lesson88:〜ずくめ",
   "form": {
    "zh": [
@@ -2331,6 +2678,33 @@
   ]
  },
  {
+  "key": "lesson90:〜と思われる",
+  "form": {
+   "zh": [
+    "普通形 ＋ と思われる",
+    "なA／N ＋ だ／である ＋ と思われる",
+    "普通形 ＋ ものと思われる／ように思われる"
+   ],
+   "en": [
+    "plain form + と思われる",
+    "na-adj／N + だ／である + と思われる",
+    "plain form + ものと思われる／ように思われる"
+   ]
+  },
+  "mean": {
+   "zh": "客观、委婉地做出判断，表示一般认为或看来应该是这样，不突出说话人自己，多用于报告和新闻。",
+   "en": "A cautious, objective judgment: it is thought, or it would appear. Keeps the speaker in the background; common in reports and news."
+  },
+  "vs": {
+   "zh": "と思う：我认为（个人意见）；に違いない：一定是（几乎断定）",
+   "en": "と思う: I think (personal opinion); に違いない: must be (near certainty)"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
   "key": "lesson91:〜にひきかえ",
   "form": {
    "zh": [
@@ -2476,6 +2850,33 @@
   "vs": {
    "zh": "に基づいて：以……为依据（数据、事实）；に従って：服从（指示、命令）",
    "en": "に基づいて: based on (data, facts); に従って: following (instructions)"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson91:〜にあって",
+  "form": {
+   "zh": [
+    "N ＋ にあって",
+    "N ＋ にあっても",
+    "N ＋ にあっては"
+   ],
+   "en": [
+    "N + にあって",
+    "N + にあっても",
+    "N + にあっては"
+   ]
+  },
+  "mean": {
+   "zh": "身处某种特殊的状况或立场之中，强调处在其中的人怎样做，书面语。",
+   "en": "Being in a special situation or position, and how someone acts there. Formal written style."
+  },
+  "vs": {
+   "zh": "において：在……（中性的场所、领域）；とあって：因为是……（表示原因）",
+   "en": "において: in, at (a neutral place or field); とあって: because it's (gives a reason)"
   },
   "pick": [
    0,

@@ -477,6 +477,80 @@ Structure: 「A（で）さえ〜」
 
 ---
 
+## 5. 〜に次いで（仅次于…… / 继……之后）||5. 〜に次いで (Next to… / Following…)
+
+### 接続||Conjugation
+:::zh
+- 名詞 + に次いで
+- 名詞 + に次ぐ + 名詞
+
+※ 「次いで」来自动词「次ぐ」（紧接其后）。书面语，新闻、统计、报告常用。  
+※ 常和「二番目に」「第二位」等一起用：「AはBに次いで二番目に〜」。
+:::
+:::en
+- Noun + に次いで
+- Noun + に次ぐ + noun
+
+※ 「次いで」 comes from the verb 「次ぐ」 (to come right after). Written style; common in news, statistics and reports.  
+※ Often with 「二番目に」 or 「第二位」: 「AはBに次いで二番目に〜」.
+:::
+
+### 含义||Meaning
+:::zh
+① **排名、程度**：在顺序、规模、数量上紧排在……之后，"仅次于……"。  
+② **先后发生**：继……之后又发生同类的事，"继……之后"。
+
+两种用法都表示"排在第二个"：A 是第一，说的对象紧跟在后面。
+:::
+:::en
+① **Rank or degree**: comes right after… in order, size or amount — "second only to…, next to…."  
+② **Sequence of events**: a similar thing happens right after… — "following…."
+
+Both mean "comes second": A is first, and the subject follows right behind.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. この町では、農業**に次いで**観光業が大きな収入源になっている。（在这个镇上，旅游业是仅次于农业的重要收入来源。）
+2. 今年の売上は、昨年**に次いで**過去二番目の高さとなった。（今年的销售额创下了仅次于去年的历史第二高。）
+3. 先月の大雨**に次いで**、今月は台風による被害が出た。（继上个月的暴雨之后，这个月又出现了台风造成的灾害。）
+4. 彼女の作品は、優勝作品**に次ぐ**高い評価を受けた。（她的作品获得了仅次于冠军作品的高度评价。）
+:::
+:::en
+1. この町では、農業**に次いで**観光業が大きな収入源になっている。(In this town, tourism is the biggest source of income after farming.)
+2. 今年の売上は、昨年**に次いで**過去二番目の高さとなった。(This year's sales were the second highest on record, after last year's.)
+3. 先月の大雨**に次いで**、今月は台風による被害が出た。(Following last month's heavy rain, this month a typhoon caused damage.)
+4. 彼女の作品は、優勝作品**に次ぐ**高い評価を受けた。(Her work received the highest praise after the winning entry.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| に次いで | 仅次于…… / 继……之后 | 排第二；书面 |
+| に続いて | 接着……之后 | 只说先后顺序，不表示排名高低 |
+| に加えて | 加上……，还…… | 第69课第4点，表示追加，没有先后、排名 |
+| はもとより | ……自不必说 | 本课第1点，前面是"当然的"一方，不是第一名 |
+
+> 「売上は昨年に次いで二番目だ」= 销售额仅次于去年，排第二（排名）  
+> 「社長の挨拶に続いて、乾杯が行われた」= 社长致辞之后接着干杯（顺序）  
+> 「雨に加えて風も強くなった」= 不但下雨，风也大了（追加）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| に次いで | next to… / following… | Ranks second; written style |
+| に続いて | after… / following… | Only order in time, says nothing about rank |
+| に加えて | in addition to… | Lesson 69 point 4; adds something, no order or rank |
+| はもとより | not to mention… | Point 1 of this lesson; the first item is the obvious one, not the top rank |
+
+> 「売上は昨年に次いで二番目だ」 = sales were second only to last year's (rank)  
+> 「社長の挨拶に続いて、乾杯が行われた」 = the toast followed the president's speech (order)  
+> 「雨に加えて風も強くなった」 = on top of the rain, the wind picked up (addition)
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

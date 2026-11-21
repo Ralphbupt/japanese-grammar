@@ -344,6 +344,32 @@ Used with なる/する.
 - コーヒー**に**する。(I'll go with coffee. → deciding on coffee)
 :::
 
+#### 用法⑦：频率 — "多长时间里几次"||Usage ⑦: Frequency — "X times per period"
+
+:::zh
+时间段 + に + 次数：表示"每……几次"。
+- 一週間**に**二回（一周两次）、一日**に**三回（一天三次）、一か月**に**一度（一个月一次）、一年**に**一回（一年一次）
+- 「一日三回」也可以不加に，意思一样。
+:::
+:::en
+Time span + に + number of times: "… times per …".
+- 一週間**に**二回 (twice a week), 一日**に**三回 (three times a day), 一か月**に**一度 (once a month), 一年**に**一回 (once a year)
+- 「一日三回」 without に means the same.
+:::
+
+:::zh
+- 一週間**に**二回、プールで泳ぎます。（一周在游泳池游两次泳。）
+- この薬は一日**に**三回飲んでください。（这个药请一天吃三次。）
+- 母には一か月**に**一度電話をかけます。（每个月给妈妈打一次电话。）
+- 一年**に**一回、国へ帰ります。（一年回一次国。）
+:::
+:::en
+- 一週間**に**二回、プールで泳ぎます。(I swim at the pool twice a week.)
+- この薬は一日**に**三回飲んでください。(Please take this medicine three times a day.)
+- 母には一か月**に**一度電話をかけます。(I call my mother once a month.)
+- 一年**に**一回、国へ帰ります。(I go back to my country once a year.)
+:::
+
 #### に的用法总结||Summary of に Uses
 
 :::zh
@@ -354,6 +380,7 @@ Used with なる/する.
 对象：友達に会う          （对谁）
 目的：見に行く            （去做什么）
 变化：医者になる          （变成什么）
+频率：一週間に二回        （多久几次）
 ```
 :::
 
@@ -365,6 +392,7 @@ Destination:  学校に行く        (to where?)
 Target:       友達に会う        (to whom?)
 Purpose:      見に行く          (to do what?)
 Change:       医者になる        (become what?)
+Frequency:    一週間に二回      (how often?)
 ```
 :::
 
@@ -482,6 +510,32 @@ Key distinction from に: で emphasizes **actively doing something there**.
 - 1000円**で**足りる。(1,000 yen is enough. → within 1,000 yen)
 :::
 
+#### 用法⑥：人数・方式 — "几个人／怎样地做"||Usage ⑥: Number of people / manner — "how many, in what way"
+
+:::zh
+人数或「みんな」「家族」「自分」等接で，表示**以几个人、以什么方式**做这件事（上面用法④的「三人で」也是这个用法）。
+- 一人**で**（一个人）、二人**で**（两个人）、みんな**で**（大家一起）、家族**で**（全家一起）、自分**で**（自己动手）
+- 「一人で」不说「一人と」；「みんなで」= 大家一起做，「みんなと」= 和大家（自己是另一方）。
+:::
+:::en
+A number of people, or words like 「みんな」, 「家族」, 「自分」, take で to say **how many people, or in what way**, something is done (「三人で」 in usage ④ above is this use).
+- 一人**で** (alone), 二人**で** (the two of us), みんな**で** (all together), 家族**で** (as a family), 自分**で** (by yourself)
+- Never 「一人と」 for "alone"; 「みんなで」 = everyone does it together, 「みんなと」 = with everyone (you are the other party).
+:::
+
+:::zh
+- 日曜日は一人**で**映画を見に行きました。（星期天一个人去看了电影。）
+- 夏休みに家族**で**沖縄へ行きます。（暑假全家一起去冲绳。）
+- みんな**で**写真を撮りましょう。（大家一起拍照吧。）
+- 宿題は自分**で**してください。（作业请自己做。）
+:::
+:::en
+- 日曜日は一人**で**映画を見に行きました。(On Sunday I went to see a film on my own.)
+- 夏休みに家族**で**沖縄へ行きます。(We're going to Okinawa as a family in the summer holidays.)
+- みんな**で**写真を撮りましょう。(Let's all take a photo together.)
+- 宿題は自分**で**してください。(Please do your homework yourself.)
+:::
+
 ---
 
 ### に vs で 完整辨析（超重要！）||に vs で — Full Contrast (Very Important!)
@@ -495,6 +549,7 @@ Key distinction from に: で emphasizes **actively doing something there**.
 | 工作 | — | 会社**で**働く（工作） |
 | 目的地 | 学校**に**行く（去） | — |
 | 交通 | — | バス**で**行く（坐巴士去） |
+| 时间段 | 一日**に**三回（一天三次：频率） | 一日**で**読んだ（一天就读完了：限度） |
 :::
 :::en
 | Situation | に | で |
@@ -505,6 +560,7 @@ Key distinction from に: で emphasizes **actively doing something there**.
 | Work | — | 会社**で**働く (work at) |
 | Destination | 学校**に**行く (go to) | — |
 | Transportation | — | バス**で**行く (go by bus) |
+| Time span | 一日**に**三回 (three times a day: frequency) | 一日**で**読んだ (read it in one day: limit) |
 :::
 
 ### 容易搞混的例子||Easy-to-Confuse Examples
@@ -516,6 +572,9 @@ Key distinction from に: で emphasizes **actively doing something there**.
 - 壁**に**絵を描く。（在墙上画画。→ に，画的结果附着在墙上）
 - 紙**で**飛行機を作る。（用纸做飞机。→ で，纸是材料/手段）
 
+- 一人**で**行く。（一个人去。→ で，人数/方式）
+- 友達**と**行く。（和朋友去。→ と，一起做的同伴，见第8点）
+
 > **记忆法**：
 > - **に** = 静态的点（在哪里存在/到达哪个点）
 > - **で** = 动态的场/条件（在哪里做事/用什么做/因为什么）
@@ -526,6 +585,9 @@ Key distinction from に: で emphasizes **actively doing something there**.
 
 - 壁**に**絵を描く。(Draw a picture on the wall. → に, the result of drawing is attached to the wall)
 - 紙**で**飛行機を作る。(Make a paper airplane. → で, paper is the material/means)
+
+- 一人**で**行く。(Go alone. → で, number of people / manner)
+- 友達**と**行く。(Go with a friend. → と, the companion; see point 8)
 
 > **Memory guide**:
 > - **に** = a static point (where something exists / where you arrive)

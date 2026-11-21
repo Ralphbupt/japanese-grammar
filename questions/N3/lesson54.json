@@ -778,5 +778,165 @@
         "en": "「ばよかった」 is regret about the past; the trip is next month, so there is still time to ask."
       }
     ]
+  },
+  {
+    "id": "n3-l54-021",
+    "type": "bunpou",
+    "refs": [
+      "lesson54#7"
+    ],
+    "difficulty": 1,
+    "stem": "難しそうな本だと思ったが、実際に読ん（　）、意外に分かりやすかった。",
+    "options": [
+      "でごらん",
+      "でみたら",
+      "でしまえば",
+      "でみよう"
+    ],
+    "answer": 1,
+    "full": "難しそうな本だと思ったが、実際に読んでみたら、意外に分かりやすかった。",
+    "tr": {
+      "zh": "本以为是本很难的书，实际读了一下，没想到挺好懂的。",
+      "en": "I thought it looked like a difficult book, but when I actually read it, it was surprisingly easy to follow."
+    },
+    "why": {
+      "zh": "线索：前面「〜と思ったが」是预想，后面「意外に分かりやすかった」是实际的发现，过去形。\n规则：动词て形＋「みたら／みると」＋过去形＝试着做了之后才发现……。\n辨析：「〜てごらん」是叫别人“试试看”的命令，不能用来说自己读了以后的发现。",
+      "en": "Clue: 「〜と思ったが」 is what was expected; 「意外に分かりやすかった」 is what was found, in the past.\nRule: Verb te-form + 「みたら／みると」 + past = on actually trying, one found….\nContrast: 「〜てごらん」 tells someone else to try; it can't report what the speaker found."
+    },
+    "wrong": [
+      {
+        "zh": "「てごらん」（本课第4点）是让对方试试的命令，后面不能接自己的发现。",
+        "en": "「てごらん」 (point 4) tells someone to try; it can't be followed by the speaker's own discovery."
+      },
+      null,
+      {
+        "zh": "「てしまえば」是假定“只要……完了的话”，后面不接过去形的发现。",
+        "en": "「てしまえば」 is hypothetical, \"once you've…\", and isn't followed by a past discovery."
+      },
+      {
+        "zh": "「てみよう」是“试试吧”的意志，句子在这里断不开，也接不上过去形。",
+        "en": "「てみよう」 is an intention, \"let's try\"; it can't run on into a past result."
+      }
+    ]
+  },
+  {
+    "id": "n3-l54-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson54#7"
+    ],
+    "difficulty": 2,
+    "stem": "駅前に新しくできたラーメン屋に行っ（　）、店の前に長い列ができていた。",
+    "options": [
+      "てみると",
+      "てみよう",
+      "てごらん",
+      "てみたい"
+    ],
+    "answer": 0,
+    "full": "駅前に新しくできたラーメン屋に行ってみると、店の前に長い列ができていた。",
+    "tr": {
+      "zh": "去了车站前新开的拉面店一看，店门口排着长队。",
+      "en": "When I went to the new ramen shop by the station, there was a long queue outside."
+    },
+    "why": {
+      "zh": "线索：后句「長い列ができていた」是到了以后看到的情况，过去形。\n规则：动词て形＋「みると」＝去做了一下，发现……；后句是发现的事实，不是自己的意志。\n辨析：「〜てみたい」是愿望，后面应接自己的打算，不接看到的情况。",
+      "en": "Clue: The second half, 「長い列ができていた」, is what the speaker found on arrival, in the past.\nRule: Verb te-form + 「みると」 = on doing it, one found…; the second half is a fact found, not an intention.\nContrast: 「〜てみたい」 is a wish and would lead into a plan, not something seen."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「てみよう」是意志“去试试吧”，后面不能直接接看到的情况。",
+        "en": "「てみよう」 is an intention, \"let's go and see\", and can't run straight into what was seen."
+      },
+      {
+        "zh": "「てごらん」是叫别人去试试，和后面自己看到的情况接不上。",
+        "en": "「てごらん」 tells someone else to try; it doesn't connect to what the speaker saw."
+      },
+      {
+        "zh": "「てみたい」是愿望，不能直接接过去的发现。",
+        "en": "「てみたい」 is a wish and can't lead straight into a past discovery."
+      }
+    ]
+  },
+  {
+    "id": "n3-l54-023",
+    "type": "bunpou",
+    "refs": [
+      "lesson54#8"
+    ],
+    "difficulty": 1,
+    "stem": "作文に間違いが多かったので、先生に言われて、最初から書き（　）。",
+    "options": [
+      "込んだ",
+      "合った",
+      "直した",
+      "かけた"
+    ],
+    "answer": 2,
+    "full": "作文に間違いが多かったので、先生に言われて、最初から書き直した。",
+    "tr": {
+      "zh": "作文错误太多，被老师说了以后，从头重写了一遍。",
+      "en": "My essay had a lot of mistakes, so after the teacher told me to, I rewrote it from the beginning."
+    },
+    "why": {
+      "zh": "线索：「間違いが多かったので」「最初から」：因为有错，从头再做。\n规则：动词ます形＋「直す」＝为了改正而重新做一遍：書き直す＝重写。\n辨析：「〜込む」是“写进去、填进去”（書き込む），不表示重写。",
+      "en": "Clue: 「間違いが多かったので」 and 「最初から」: there were mistakes, so start again.\nRule: Verb ます-stem + 「直す」 = do it again to put it right: 書き直す = rewrite.\nContrast: 「〜込む」 means writing something in (書き込む), not rewriting."
+    },
+    "wrong": [
+      {
+        "zh": "「書き込む」（本课第5点）是“写进、填入”，和“错多所以从头”的原因不合。",
+        "en": "「書き込む」 (point 5) means \"write in, fill in\", which doesn't follow from \"lots of mistakes, start over\"."
+      },
+      {
+        "zh": "「〜合う」（本课第6点）是“互相”，一个人写作文不是相互动作。",
+        "en": "「〜合う」 (point 6) means \"mutually\"; writing one's own essay isn't mutual."
+      },
+      null,
+      {
+        "zh": "「書きかけた」（第42课）是“写了一半”，和「最初から」以及老师的要求不合。",
+        "en": "「書きかけた」 (lesson 42) means \"half-wrote\", which doesn't fit 「最初から」 or the teacher's request."
+      }
+    ]
+  },
+  {
+    "id": "n3-l54-024",
+    "type": "bunpou",
+    "refs": [
+      "lesson54#8"
+    ],
+    "difficulty": 2,
+    "stem": "田中はただいま席を外しております。戻りましたら、こちらからお電話をかけ（　）。",
+    "options": [
+      "込みます",
+      "合います",
+      "きります",
+      "直します"
+    ],
+    "answer": 3,
+    "full": "田中はただいま席を外しております。戻りましたら、こちらからお電話をかけ直します。",
+    "tr": {
+      "zh": "田中现在不在座位上。等他回来，我们这边再给您回电话。",
+      "en": "Tanaka is away from his desk at the moment. When he's back, we'll call you back."
+    },
+    "why": {
+      "zh": "线索：对方打来电话，本人不在，「戻りましたら、こちらから」：之后由这边再打一次。\n规则：「かけ直す」＝重新打（电话）、回电话；「〜直す」表示再做一次。\n辨析：「かけきる」不是这个意思，「〜きる」（第45课）表示做到底、做完。",
+      "en": "Clue: The caller can't reach Tanaka, and 「戻りましたら、こちらから」: the office will call again later.\nRule: 「かけ直す」 = call again, call back; 「〜直す」 means doing it once more.\nContrast: 「〜きる」 (lesson 45) means doing something completely; 「かけきる」 isn't \"call back\"."
+    },
+    "wrong": [
+      {
+        "zh": "「〜込む」（本课第5点）是“进入、深入”，「かけ込む」不是回电话。",
+        "en": "「〜込む」 (point 5) means \"into\"; 「かけ込む」 isn't calling back."
+      },
+      {
+        "zh": "「〜合う」（本课第6点）是“互相”，「かけ合う」是交涉的意思，不是回电话。",
+        "en": "「〜合う」 (point 6) means \"mutually\"; 「かけ合う」 means to negotiate, not to call back."
+      },
+      {
+        "zh": "「〜きる」（第45课）是“彻底做完”，不表示再打一次。",
+        "en": "「〜きる」 (lesson 45) means \"do completely\", not \"do again\"."
+      },
+      null
+    ]
   }
 ]

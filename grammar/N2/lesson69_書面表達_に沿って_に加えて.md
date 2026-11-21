@@ -375,6 +375,146 @@ Both meanings convey "moving along a line or direction."
 
 ---
 
+## 7. 〜に欠かせない（对……不可或缺）||7. 〜に欠かせない (Indispensable for…)
+
+### 接続||Conjugation
+:::zh
+- 名詞 + に欠かせない（+ 名詞）
+- 名詞 + に（は）+ 名詞 + が欠かせない
+- 名詞 + にとって欠かせない
+
+※ 「欠かせない」是「欠かす」（缺少）的可能形否定，字面是"缺不得"。  
+※ 「に」表示"对于……（这件事、这个目的）"，不说「生活を欠かせない」。
+:::
+:::en
+- Noun + に欠かせない (+ noun)
+- Noun + に（は）+ noun + が欠かせない
+- Noun + にとって欠かせない
+
+※ 「欠かせない」 is the negative potential of 「欠かす」 (to go without), literally "can't do without."  
+※ 「に」 marks what it is needed for; 「生活を欠かせない」 is wrong.
+:::
+
+### 含义||Meaning
+:::zh
+"对……来说必不可少""……少不了……"。表示某物或某人对某件事、某个目的极其重要，没有它就不行。比「必要だ」语气更强，新闻、说明文、商务场合常用。常见搭配：「生活に欠かせない」「成功に欠かせない」「〜に欠かせない存在」（不可或缺的人物）。
+:::
+:::en
+"Indispensable for…" or "…can't do without…" — something or someone is so important to a matter or goal that it can't go ahead without it. Stronger than 「必要だ」, and common in news, explanatory writing and business. Typical phrases: 「生活に欠かせない」, 「成功に欠かせない」, 「〜に欠かせない存在」 (someone indispensable).
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 水と電気は、現代の生活**に欠かせない**ものだ。（水和电是现代生活中不可或缺的东西。）
+2. メンバー同士の信頼は、プロジェクトの成功**に欠かせない**。（成员之间的信任是项目成功必不可少的。）
+3. 彼女は今や、この店**に欠かせない**存在になっている。（她现在已经成了这家店不可或缺的人。）
+4. 冬の登山**には**、正確な天気の情報**が欠かせない**。（冬季登山，准确的天气信息必不可少。）
+:::
+:::en
+1. 水と電気は、現代の生活**に欠かせない**ものだ。(Water and electricity are indispensable to modern life.)
+2. メンバー同士の信頼は、プロジェクトの成功**に欠かせない**。(Trust between team members is essential to the project's success.)
+3. 彼女は今や、この店**に欠かせない**存在になっている。(She has now become someone this shop can't do without.)
+4. 冬の登山**には**、正確な天気の情報**が欠かせない**。(For winter climbing, accurate weather information is a must.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| に欠かせない | 对……不可或缺 | 强调"少了就不行"，评价重要性 |
+| に必要だ | 对……必要 | 中性，语气较弱 |
+| 上で欠かせない | 在做……方面不可或缺 | 前接动词辞书形（第5点「上で」） |
+| 欠かさず（に） | 一次不落地…… | 副词，修饰动作：「毎日欠かさず運動する」 |
+| に過ぎない | 只不过是…… | 第61课第1点，方向相反：贬低、淡化 |
+
+> 「健康に欠かせない」= 对健康不可或缺（非常重要）  
+> 「健康のために毎日欠かさず歩く」= 为了健康每天坚持走路（一天不落）  
+> 「趣味に過ぎない」= 只不过是爱好（不重要）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| に欠かせない | indispensable for | Stresses "it won't work without it"; judges importance |
+| に必要だ | necessary for | Neutral, weaker |
+| 上で欠かせない | indispensable in doing… | Follows a verb's dictionary form (point 5, 「上で」) |
+| 欠かさず（に） | without missing once | Adverb describing an action: 「毎日欠かさず運動する」 |
+| に過ぎない | nothing more than | Lesson 61 point 1, the opposite direction: downplays |
+
+> 「健康に欠かせない」 = indispensable for health (very important)  
+> 「健康のために毎日欠かさず歩く」 = walk every day without fail for one's health  
+> 「趣味に過ぎない」 = merely a hobby (not important)
+:::
+
+---
+
+## 8. 〜というように（像……这样（举例））||8. 〜というように (Like… / In such a way as…)
+
+### 接続||Conjugation
+:::zh
+- 名詞 / 文（普通形）+ というように + 動詞・説明
+- A は〜、B は〜 + というように
+
+※ 口语里常说「というふうに」，意思相同。
+:::
+:::en
+- Noun / clause (plain form) + というように + verb or explanation
+- A は〜、B は〜 + というように
+
+※ In speech 「というふうに」 is common and means the same.
+:::
+
+### 含义||Meaning
+:::zh
+先举出一两个具体的例子，再用「というように」把它们归纳起来，后面说明整体的做法或情况："像……这样""按……这种方式"。前面常是「AはX、BはY」这样成对的例子。也可以引用某种说法：「『頑張れ』『無理するな』というように」。
+:::
+:::en
+Gives one or two concrete examples, then gathers them up with 「というように」 and states the overall pattern or situation: "like…," "in such a way that…." The examples are often paired, as in 「AはX、BはY」. It can also quote ways of saying something: 「『頑張れ』『無理するな』というように」.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 月曜日は英語、水曜日は中国語**というように**、曜日ごとに勉強する科目を決めている。（周一英语、周三中文，像这样按星期定好要学的科目。）
+2. 夫は料理、私は掃除**というように**、家事を分担している。（丈夫做饭、我打扫，像这样分担家务。）
+3. 東京、大阪、福岡**というように**、その会社は大都市を中心に店を増やしてきた。（东京、大阪、福冈，那家公司就这样以大城市为中心增开门店。）
+4. 「頑張って」「無理しないで」**というように**、相手によってかける言葉を変えている。（“加油”“别勉强”，像这样根据对方换着说不同的话。）
+:::
+:::en
+1. 月曜日は英語、水曜日は中国語**というように**、曜日ごとに勉強する科目を決めている。(English on Mondays, Chinese on Wednesdays — I set the subject to study for each day of the week like that.)
+2. 夫は料理、私は掃除**というように**、家事を分担している。(My husband cooks and I clean — that's how we split the housework.)
+3. 東京、大阪、福岡**というように**、その会社は大都市を中心に店を増やしてきた。(Tokyo, Osaka, Fukuoka — the company has added shops mainly in big cities like these.)
+4. 「頑張って」「無理しないで」**というように**、相手によってかける言葉を変えている。("Hang in there," "Don't overdo it" — I change what I say depending on the person, like that.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| というように | 像……这样（举例后归纳） | 前面是具体例子，后面说整体做法 |
+| 〜たように | 正如……那样 | 「先生が言ったように」：照某人说的、和某事一致 |
+| 〜のように | 像……一样 | 第32课第3点，比喻或举例，直接接名词 |
+| など | ……等 | 第47课第6点，只是列举，不带后面的归纳说明 |
+| というより | 与其说……不如说 | 第51课第1点，是比较，不是举例 |
+
+> 「月曜は英語、水曜は数学というように決めている」= 像这样定好（举例归纳）  
+> 「先生が言ったように、練習が大切だ」= 正如老师所说（一致）  
+> 「趣味というより仕事だ」= 与其说是爱好不如说是工作（比较）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| というように | like… (examples, then the pattern) | Concrete examples first, then the overall way of doing it |
+| 〜たように | just as… | 「先生が言ったように」: matching what someone said |
+| 〜のように | like… | Lesson 32 point 3; simile or example, attaches straight to a noun |
+| など | …and so on | Lesson 47 point 6; just lists, without summing up a pattern |
+| というより | rather than… | Lesson 51 point 1; a comparison, not examples |
+
+> 「月曜は英語、水曜は数学というように決めている」 = I've set it up like that (examples, then the pattern)  
+> 「先生が言ったように、練習が大切だ」 = as the teacher said, practice matters (matching)  
+> 「趣味というより仕事だ」 = more a job than a hobby (comparison)
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

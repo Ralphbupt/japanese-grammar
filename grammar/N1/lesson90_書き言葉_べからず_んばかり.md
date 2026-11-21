@@ -529,6 +529,84 @@ Restrictions:
 
 ---
 
+## 7. 〜と思われる（一般认为……；（看来）应该是……）||7. 〜と思われる (It is thought that… / It would appear that…)
+
+### 接続||Conjugation
+:::zh
+- 普通形 + と思われる（な形容詞・名詞：〜だ／〜である + と思われる）
+- 普通形 + ものと思われる（更郑重，新闻、报告）
+- 普通形 + ように思われる（印象、感觉上似乎……）
+
+※ 「思われる」是「思う」的自发形："自然而然地让人这样认为"。同类的书面说法还有「〜と考えられる」「〜とみられる」。
+:::
+:::en
+- Plain form + と思われる (na-adjectives and nouns: 〜だ / 〜である + と思われる)
+- Plain form + ものと思われる (more formal; news and reports)
+- Plain form + ように思われる (it seems, as an impression)
+
+※ 「思われる」 is the spontaneous form of 「思う」: "one is naturally led to think so". Related written phrases: 「〜と考えられる」, 「〜とみられる」.
+:::
+
+### 含义||Meaning
+:::zh
+"一般认为……""（据推测）应该是……"。把说话人的判断说成"根据情况自然得出的看法"，不突出"我"，语气客观、委婉。论文、报告、新闻、说明文里用来避免断定。
+
+限制：
+- 判断要有一定根据（数据、现场情况、经验），不用于纯粹的个人愿望或喜好：❌「明日は晴れてほしいと思われる」。
+- 主语不能是"我认为"式的个人表态：说自己的意见用「と思う」「と考える」。
+- 注意另一个意思：被动"被人认为"，带「に」表示谁这样想：「周りの人に変だと思われる」（被周围的人当成怪人）。看有没有「〜に」和语境区分。
+:::
+:::en
+"It is thought that…" or "it would appear that…". The writer's judgment is presented as a view the facts naturally lead to, without foregrounding "I" — objective and hedged. Used in papers, reports, news and expository writing to avoid flat assertion.
+
+Restrictions:
+- The judgment needs some basis (data, the situation, experience); not for wishes or tastes: ❌ 「明日は晴れてほしいと思われる」.
+- It isn't a personal statement of opinion: for "I think" use 「と思う」 or 「と考える」.
+- Watch the other meaning, the passive "to be thought (by someone)", where 「に」 marks who thinks it: 「周りの人に変だと思われる」 (people around you think you're odd). Tell them apart by 「〜に」 and the context.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 火災の原因は、電気配線の老朽化による**ものと思われる**。（火灾的原因应该是电线老化所致。）
+2. 現場の状況から、犯人は裏口から侵入した**と思われる**。（从现场情况来看，犯人应该是从后门潜入的。）
+3. 少子化の進行を考えると、この制度を今のまま維持するのは困難だ**と思われる**。（考虑到少子化的发展，维持这个制度现状恐怕是困难的。）
+4. 一見無駄に見える遠回りこそが、人を成長させるもの**のように思われる**。（看似徒劳的弯路，似乎恰恰是让人成长的东西。）
+:::
+:::en
+1. 火災の原因は、電気配線の老朽化による**ものと思われる**。(The fire appears to have been caused by ageing electrical wiring.)
+2. 現場の状況から、犯人は裏口から侵入した**と思われる**。(Judging from the scene, the culprit is thought to have got in through the back door.)
+3. 少子化の進行を考えると、この制度を今のまま維持するのは困難だ**と思われる**。(Given the falling birth rate, it would seem difficult to keep this system as it is.)
+4. 一見無駄に見える遠回りこそが、人を成長させるもの**のように思われる**。(It would seem that the detours which look like wasted effort are precisely what make people grow.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| と思われる | 一般认为……；看来…… | 客观、委婉的判断，书面，不突出"我" |
+| と思う | 我认为…… | 说话人个人的意见，口语书面都用 |
+| ようだ | 好像…… | 根据看到、感到的情况推测，口语也常用（N5第14课） |
+| に違いない | 一定是…… | 确信度高，几乎断定（N3第43课） |
+
+> 「私はこの案に反対だと思う」= 我认为我反对这个方案（个人意见，不能换成「と思われる」）  
+> 「この案には問題があると思われる」= 这个方案看来有问题（报告式的客观判断）  
+> 「彼が犯人に違いない」= 他一定是犯人（断定）；「彼が犯人だと思われる」= 他应该是犯人（留有余地）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| と思われる | it is thought / it would appear that… | an objective, hedged judgment; written; "I" stays in the background |
+| と思う | I think… | the speaker's own opinion; spoken and written |
+| ようだ | it seems… | a guess from what one sees or feels; common in speech too (N5 Lesson 14) |
+| に違いない | it must be… | high certainty, close to asserting (N3 Lesson 43) |
+
+> 「私はこの案に反対だと思う」= I think I'm against this plan (a personal view; 「と思われる」 won't do)  
+> 「この案には問題があると思われる」= this plan appears to have problems (a report-style judgment)  
+> 「彼が犯人に違いない」= he must be the culprit (asserting); 「彼が犯人だと思われる」= he is thought to be the culprit (leaving room for doubt)
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

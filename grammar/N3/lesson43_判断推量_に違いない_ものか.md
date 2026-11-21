@@ -361,6 +361,74 @@ This lesson covers grammar for "judgment," "conjecture," and "rhetorical questio
 
 ---
 
+## 6. 〜てもおかしくない / 〜ても不思議ではない（……也不奇怪 / 随时可能……）||6. 〜てもおかしくない / 〜ても不思議ではない (It wouldn't be strange if… / Could easily…)
+
+### 接続||Conjugation
+:::zh
+- 動詞て形 + も + おかしくない／不思議ではない
+- い形容詞（〜くて）+ も + おかしくない／不思議ではない
+- な形容詞・名詞 + で + も + おかしくない／不思議ではない
+- 常见搭配：いつ〜てもおかしくない（随时可能……）
+
+※「不思議ではない」也说「不思議はない」，比「おかしくない」稍正式。
+:::
+:::en
+- Verb te-form + も + おかしくない／不思議ではない
+- い-adjective (〜くて) + も + おかしくない／不思議ではない
+- な-adjective / Noun + で + も + おかしくない／不思議ではない
+- Common set phrase: いつ〜てもおかしくない (could happen at any moment)
+
+※ 「不思議ではない」 also appears as 「不思議はない」 and is a little more formal than 「おかしくない」.
+:::
+
+### 含义||Meaning
+:::zh
+"就算……也不奇怪"，即根据眼前的情况，说话人判断某事**很有可能发生、在情理之中**。好事坏事都能用。和「いつ」一起用表示"随时都可能……"。
+:::
+:::en
+"It wouldn't be strange if…" — judging from the situation, the speaker thinks something is **quite likely and only to be expected**. Works for good and bad outcomes. With 「いつ」 it means "could happen at any moment."
+:::
+
+### 例句||Example Sentences
+:::zh
+1. この橋はかなり古いので、いつ**壊れてもおかしくない**。（这座桥相当旧了，随时坏掉都不奇怪。）
+2. あれだけ練習してきたのだから、彼が**優勝しても不思議ではない**。（他练了那么多，就算拿冠军也不奇怪。）
+3. 毎晩遅くまで残業しているのだから、いつ**倒れてもおかしくない**よ。（每天加班到那么晚，什么时候累倒都不奇怪啊。）
+4. 彼女ほど経験があれば、課長に**選ばれても不思議ではない**。（像她那么有经验，被选为科长也不奇怪。）
+:::
+:::en
+1. この橋はかなり古いので、いつ**壊れてもおかしくない**。(This bridge is quite old; it could collapse at any moment.)
+2. あれだけ練習してきたのだから、彼が**優勝しても不思議ではない**。(After all that practice, it wouldn't be surprising if he won.)
+3. 毎晩遅くまで残業しているのだから、いつ**倒れてもおかしくない**よ。(You work late every night — you could collapse any day.)
+4. 彼女ほど経験があれば、課長に**選ばれても不思議ではない**。(With experience like hers, it would be no surprise if she were made section chief.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| 〜てもおかしくない | ……也不奇怪 | 说"很有可能、在情理之中"，不断定；好坏都可 |
+| 〜に違いない（本课第1点） | 一定是…… | 说话人确信，是断定 |
+| 〜おそれがある（本课第3点） | 恐怕会…… | 只用于坏事，多见于新闻、通知 |
+
+> 「彼が優勝してもおかしくない」＝他有实力，夺冠在情理之中（还没断定）  
+> 「彼が優勝するに違いない」＝我确信他会夺冠  
+> 注意接续：「〜**ても**おかしくない」用て形，不是「〜**のは**おかしくない」。
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| 〜てもおかしくない | it wouldn't be strange if… | "Quite likely, only to be expected" — not a firm conclusion; good or bad |
+| 〜に違いない (point 1) | must be… | The speaker is sure; a firm conclusion |
+| 〜おそれがある (point 3) | there is a risk of… | Bad outcomes only; news and notices |
+
+> 「彼が優勝してもおかしくない」 = he's good enough that winning would be no surprise (not yet a conclusion)  
+> 「彼が優勝するに違いない」 = I'm sure he'll win  
+> Watch the form: 「〜**ても**おかしくない」 takes the te-form.
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

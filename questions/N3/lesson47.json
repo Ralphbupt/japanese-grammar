@@ -737,5 +737,85 @@
         "en": "「とおりに」 means \"exactly as\"; \"large portions exactly as the price\" makes no sense."
       }
     ]
+  },
+  {
+    "id": "n3-l47-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson47#7"
+    ],
+    "difficulty": 1,
+    "stem": "A「鈴木さん、今日は来ていないね。」\nB「うん、風邪（　）で休んでいるらしいよ。」",
+    "options": [
+      "こそ",
+      "さえ",
+      "か何か",
+      "ばかり"
+    ],
+    "answer": 2,
+    "full": "A「鈴木さん、今日は来ていないね。」\nB「うん、風邪か何かで休んでいるらしいよ。」",
+    "tr": {
+      "zh": "A：“铃木今天没来啊。”\nB：“嗯，好像是感冒还是怎么了请假了。”",
+      "en": "A: \"Suzuki isn't in today.\"\nB: \"No, apparently he's off with a cold or something.\""
+    },
+    "why": {
+      "zh": "线索：「らしい」说明B只是听说、不确定原因。\n规则：名词＋「か何か」＝……或者类似的什么，不确定或不想说死时举一个大概的例子；常见「〜か何かで休む」。\n辨析：「こそ」是强调“正是”，和不确定的「らしい」语气相反。",
+      "en": "Clue: 「らしい」 shows B has only heard it and isn't sure of the cause.\nRule: Noun + 「か何か」 = … or something like it: one rough example when unsure; 「〜か何かで休む」 is common.\nContrast: 「こそ」 stresses \"precisely\", the opposite of the unsure 「らしい」."
+    },
+    "wrong": [
+      {
+        "zh": "「こそ」（第52课）是强调“正是”，和「らしい」的不确定语气矛盾，也不说「風邪こそで」。",
+        "en": "「こそ」 (lesson 52) stresses \"precisely\", clashing with the unsure 「らしい」; 「風邪こそで」 isn't said either."
+      },
+      {
+        "zh": "「さえ」是“连……都”，「風邪さえで」不成立。",
+        "en": "「さえ」 means \"even\"; 「風邪さえで」 doesn't work."
+      },
+      null,
+      {
+        "zh": "「ばかり」是“光是、总是”，“光是感冒请假”和这里的猜测不合。",
+        "en": "「ばかり」 means \"nothing but\"; it doesn't fit a guess about today's absence."
+      }
+    ]
+  },
+  {
+    "id": "n3-l47-021",
+    "type": "bunpou",
+    "refs": [
+      "lesson47#7"
+    ],
+    "difficulty": 2,
+    "stem": "この机は重くて一人では運べないから、山田さん（　）に手伝ってもらおう。",
+    "options": [
+      "か何か",
+      "か誰か",
+      "かどこか",
+      "かいつか"
+    ],
+    "answer": 1,
+    "full": "この机は重くて一人では運べないから、山田さんか誰かに手伝ってもらおう。",
+    "tr": {
+      "zh": "这张桌子太重，一个人搬不动，找山田或者别的谁来帮忙吧。",
+      "en": "This desk is too heavy to carry alone, so let's get Yamada or someone to help."
+    },
+    "why": {
+      "zh": "线索：「山田さん」是人，后面「に手伝ってもらう」也需要一个人。\n规则：人＋「か誰か」，东西＋「か何か」，地方＋「かどこか」：举一个例子，同时表示别的同类也可以。\n辨析：「か何か」用于东西，帮忙的是人，所以要用「か誰か」。",
+      "en": "Clue: 「山田さん」 is a person, and 「に手伝ってもらう」 needs a person too.\nRule: Person + 「か誰か」, thing + 「か何か」, place + 「かどこか」: one example, and others of the same kind would do.\nContrast: 「か何か」 is for things; a helper is a person, so 「か誰か」."
+    },
+    "wrong": [
+      {
+        "zh": "「か何か」用于东西，山田是人。",
+        "en": "「か何か」 is for things, and Yamada is a person."
+      },
+      null,
+      {
+        "zh": "「かどこか」用于地方，山田是人。",
+        "en": "「かどこか」 is for places, and Yamada is a person."
+      },
+      {
+        "zh": "「かいつか」用于时间，和「山田さん」接不上。",
+        "en": "「かいつか」 is for times; it doesn't fit 「山田さん」."
+      }
+    ]
   }
 ]

@@ -282,6 +282,72 @@ Expresses a **natural change of state** — "gradually come to be able to do som
 
 ---
 
+## 6. 〜なくなる（变得不再……/变得不能……）||6. 〜なくなる (No Longer / Can No Longer)
+
+### 接续||Conjugation
+
+:::zh
+- 动词ない形：去掉「い」+ くなる：飲まない → 飲まな**くなる**
+- 可能形ない形：読めない → 読めな**くなる**（变得不能……）
+- い形容词：〜くない → 〜く**なくなる**：痛くない → 痛く**なくなる**
+- な形容词・名词：〜じゃない → 〜じゃ**なくなる**：好きじゃ**なくなる**、学生じゃ**なくなる**
+:::
+
+:::en
+- Verb ない-form: drop 「い」 + くなる: 飲まない → 飲まな**くなる**
+- Potential ない-form: 読めない → 読めな**くなる** (can no longer …)
+- い-adjective: 〜くない → 〜く**なくなる**: 痛くない → 痛く**なくなる**
+- な-adjective / noun: 〜じゃない → 〜じゃ**なくなる**: 好きじゃ**なくなる**, 学生じゃ**なくなる**
+:::
+
+### 含义||Meaning
+
+:::zh
+原来有的习惯、能力或状态**消失了**："变得不再……／变得不能……"。常和「最近」「〜てから」「もう」一起用。它是「〜ようになる」（本课第2点）的反方向：「飲むようになった」（开始喝了）↔「飲まなくなった」（不再喝了）。日常说「〜なくなる」，比「〜ないようになる」自然得多。
+:::
+
+:::en
+A habit, ability or state that used to be there **has gone**: "no longer … / can no longer …". It often comes with 「最近」, 「〜てから」 or 「もう」. It is the reverse of 「〜ようになる」 (point 2 of this lesson): 「飲むようになった」 (started drinking) ↔ 「飲まなくなった」 (stopped drinking). In everyday Japanese 「〜なくなる」 sounds far more natural than 「〜ないようになる」.
+:::
+
+### 例句||Example Sentences
+
+:::zh
+1. 子供が生まれてから、夜はあまり出かけ**なくなった**。（有了孩子以后，晚上不怎么出门了。）
+2. 目が悪くなって、眼鏡がないと小さい字が読め**なくなった**。（眼睛变差了，没有眼镜就看不清小字了。）
+3. 薬を飲んで少し寝たら、頭が痛く**なくなった**。（吃了药睡了一会儿，头就不疼了。）
+4. 年を取って、甘い物が前ほど好きじゃ**なくなった**。（上了年纪，不像以前那么喜欢甜食了。）
+:::
+
+:::en
+1. 子供が生まれてから、夜はあまり出かけ**なくなった**。(Since our child was born, we hardly go out at night any more.)
+2. 目が悪くなって、眼鏡がないと小さい字が読め**なくなった**。(My eyesight has got worse; I can no longer read small print without glasses.)
+3. 薬を飲んで少し寝たら、頭が痛く**なくなった**。(After taking some medicine and sleeping a little, my headache went away.)
+4. 年を取って、甘い物が前ほど好きじゃ**なくなった**。(As I've got older, I don't like sweet things as much as I used to.)
+:::
+
+### なくなる vs ないようになる vs ないようにする||なくなる vs ないようになる vs ないようにする
+
+:::zh
+| | 〜なくなる | 〜ないようになる（第2点） | 〜ないようにする（第1点） |
+|---|---|---|---|
+| 性质 | 自然的变化（最常用） | 自然的变化（较生硬，强调渐变过程） | **有意识的努力** |
+| 例 | お酒を飲まなくなった（不再喝酒了） | お酒を飲まないようになった（渐渐不喝酒了） | お酒を飲まないようにしている（我尽量不喝酒） |
+
+> 「なくなる」本身也是动词「無くなる」（东西没了）：「お金がなくなった」= 钱用光了／丢了。「〜なくなる」就是「ない」＋「なる」，所以形状一样。
+:::
+
+:::en
+| | 〜なくなる | 〜ないようになる (point 2) | 〜ないようにする (point 1) |
+|---|---|---|---|
+| Nature | Natural change (the everyday form) | Natural change (stiffer, stresses the gradual process) | **Conscious effort** |
+| Ex. | お酒を飲まなくなった (I stopped drinking) | お酒を飲まないようになった (I gradually stopped drinking) | お酒を飲まないようにしている (I try not to drink) |
+
+> 「なくなる」 is also a verb on its own, 「無くなる」 (to run out / go missing): 「お金がなくなった」 = the money is gone. 「〜なくなる」 is just 「ない」 + 「なる」, which is why the shapes match.
+:::
+
+---
+
 ## 今日练习||Today's Practice
 
 ### A. 选择ようにする或ようになる||A. Choose ようにする or ようになる

@@ -30,6 +30,7 @@ This group expresses "not only A but also B" or "A and B simultaneously." From s
 | 大臣 | だいじん | 大臣；部长（名）——日本内阁的部长级官员；「外務大臣」外务大臣（外交部长）；「総理大臣」首相//(n) (cabinet) minister — 「外務大臣」 Minister of Foreign Affairs; 「総理大臣」 the Prime Minister |
 | 関係者 | かんけいしゃ | 相关人员（名）——「関係者以外立入禁止」非相关人员禁止入内；「関係者によると」据知情人士称//(n) people involved; parties concerned — 「関係者以外立入禁止」 authorized personnel only; 「関係者によると」 according to sources |
 | 景気 | けいき | 景气；经济形势（名）——「景気がいい」经济景气；「景気が回復する」经济复苏//(n) the economy; business conditions — 「景気がいい」 business is booming; 「景気が回復する」 the economy recovers |
+| 取引先 | とりひきさき | 客户；生意伙伴（名）——指有业务往来的公司或人；「取引先を訪問する」拜访客户；「取引先との会議」和客户的会议//(n) client; business partner — a company or person one does business with; 「取引先を訪問する」 to visit a client; 「取引先との会議」 a meeting with a client |
 
 ---
 
@@ -325,6 +326,142 @@ Before a noun: 〜に伴う + Noun
 - 技術の発展**とともに** → formal "along with"
 - 技術の発展**に伴い** → more formal, emphasizes cause-effect
 - 技術が発展する**につれて** → both spoken and written
+:::
+
+---
+
+## 7. 〜のほかに（除了……之外，还……）||7. 〜のほかに (Besides… / In addition to…)
+
+### 接続||Conjugation
+:::zh
+- 名詞 + のほかに
+- 動詞辞書形 + ほかに
+- 〜のほかに〜ない／〜ほか（に）〜ない：除了……没有别的
+
+※ 也写作「〜の外に」「〜の他に」，一般用假名「ほか」。
+:::
+:::en
+- Noun + のほかに
+- Verb dictionary form + ほかに
+- 〜のほかに〜ない／〜ほか（に）〜ない: there is nothing but…
+
+※ Also written 「〜の外に」 or 「〜の他に」; the kana 「ほか」 is the usual spelling.
+:::
+
+### 含义||Meaning
+:::zh
+① "除了A之外，还有B"：在A的基础上添加B，后句常有「も」。
+② 后接否定「〜のほかに…ない」："除了A就没有别的了"，即只有A。
+:::
+:::en
+① "Besides A, there is also B": adds B on top of A; the second half often has 「も」.
+② With a negative, 「〜のほかに…ない」: "there is nothing besides A", i.e. only A.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 日本語**のほかに**、韓国語も勉強しています。（除了日语，还在学韩语。）
+2. この仕事は給料**のほかに**、交通費も出ます。（这份工作除了工资，还给交通费。）
+3. 会議には社員**のほかに**、取引先の人も何人か参加した。（会议除了员工，还有几位客户方的人参加。）
+4. あの村へ行くには、車で行く**ほかに**方法がない。（去那个村子，除了开车没有别的办法。）
+:::
+:::en
+1. 日本語**のほかに**、韓国語も勉強しています。(Besides Japanese, I'm also studying Korean.)
+2. この仕事は給料**のほかに**、交通費も出ます。(Besides the salary, this job also covers transport costs.)
+3. 会議には社員**のほかに**、取引先の人も何人か参加した。(Besides our staff, several people from client companies attended the meeting.)
+4. あの村へ行くには、車で行く**ほかに**方法がない。(The only way to get to that village is by car.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| 〜のほかに | 除了A，还有B | 中性地添加；后接否定＝只有A |
+| 〜だけでなく〜も（本课第2点） | 不仅A，B也 | 强调"不止一个"，语气比のほかに强 |
+| 〜はもちろん（本课第3点） | A自不必说，B也 | A是理所当然的，重点在B |
+| 〜以外 | A以外 | 常用来排除A：「日本語以外は話せない」 |
+
+> 「給料のほかに交通費も出る」＝除工资外还有交通费（单纯添加）  
+> 「給料はもちろん、交通費も出る」＝工资当然有，连交通费也给（强调B）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| 〜のほかに | besides A, also B | Neutral addition; with a negative = only A |
+| 〜だけでなく〜も (point 2) | not only A but also B | Stresses "more than one"; stronger than のほかに |
+| 〜はもちろん (point 3) | A goes without saying, and B too | A is taken for granted; the focus is B |
+| 〜以外 | other than A | Often used to exclude A: 「日本語以外は話せない」 |
+
+> 「給料のほかに交通費も出る」 = transport costs as well as the salary (plain addition)  
+> 「給料はもちろん、交通費も出る」 = salary of course, and even transport costs (focus on B)
+:::
+
+---
+
+## 8. 〜とか〜とか（……啦……啦 / ……什么的）||8. 〜とか〜とか (…and… and so on / Things like…)
+
+### 接続||Conjugation
+:::zh
+- 名詞 + とか + 名詞 + とか
+- 動詞辞書形 + とか + 動詞辞書形 + とか
+- い形容詞 + とか、な形容詞・名詞（+だ）+ とか（多用于引用别人的话）
+- 也可以只用一个：「〜とか」
+
+※ 句尾「〜とか（言っていた）」表示不太确定的传闻："听说……什么的"。
+:::
+:::en
+- Noun + とか + Noun + とか
+- Verb dictionary form + とか + Verb dictionary form + とか
+- い-adjective + とか; な-adjective / Noun (+だ) + とか (mostly when quoting what someone says)
+- A single 「〜とか」 also works
+
+※ At the end of a sentence, 「〜とか（言っていた）」 passes on something heard, without vouching for it: "apparently…".
+:::
+
+### 含义||Meaning
+:::zh
+口语中举几个例子，暗示还有别的："……啦……啦""比如……什么的"。是「〜や〜など」（名词）和「〜たり〜たり」（动作）的口语说法，但名词、动词都能接。
+:::
+:::en
+Gives a few examples in speech and hints there are others: "things like… and…". It is the conversational counterpart of 「〜や〜など」 (nouns) and 「〜たり〜たり」 (actions), and takes both nouns and verbs.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 休みの日は、掃除**とか**洗濯**とか**で意外に忙しい。（休息日要打扫啦洗衣服啦，意外地忙。）
+2. 野菜を食べる**とか**、早く寝る**とか**、もう少し体に気をつけたほうがいいよ。（吃点蔬菜啦、早点睡啦，多注意点身体比较好。）
+3. 駅前にはコンビニ**とか**銀行**とか**があって便利だ。（车站前有便利店啦银行什么的，很方便。）
+4. 彼は給料が安い**とか**休みが少ない**とか**、文句ばかり言っている。（他老是抱怨"工资低啦""休息少啦"。）
+:::
+:::en
+1. 休みの日は、掃除**とか**洗濯**とか**で意外に忙しい。(On my days off I'm surprisingly busy with things like cleaning and laundry.)
+2. 野菜を食べる**とか**、早く寝る**とか**、もう少し体に気をつけたほうがいいよ。(You should look after yourself a bit more — eat vegetables, go to bed early, that kind of thing.)
+3. 駅前にはコンビニ**とか**銀行**とか**があって便利だ。(There are convenience stores, banks and so on in front of the station, so it's handy.)
+4. 彼は給料が安い**とか**休みが少ない**とか**、文句ばかり言っている。(He's always complaining — the pay is low, there aren't enough days off…)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 能接什么 | 语体 |
+|------|------|------|
+| 〜とか〜とか | 名词、动词、引用的话 | 口语 |
+| 〜や〜など（N5 第17课第5点） | 只接名词 | 口语书面都可 |
+| 〜たり〜たりする（N5 第7课第3点） | 只接动词（た形） | 口语书面都可 |
+| 〜など（第47课第6点） | 名词、动词 | 偏书面 |
+
+> 「掃除とか洗濯とか」＝「掃除や洗濯など」＝「掃除したり洗濯したり」  
+> 正式文章里用「や〜など」「たり〜たり」，「とか」显得太随便。
+:::
+:::en
+| Expression | Takes | Register |
+|------|------|------|
+| 〜とか〜とか | nouns, verbs, quoted words | Spoken |
+| 〜や〜など (N5 lesson 17, point 5) | nouns only | Spoken and written |
+| 〜たり〜たりする (N5 lesson 7, point 3) | verbs only (ta-form) | Spoken and written |
+| 〜など (lesson 47, point 6) | nouns, verbs | Leans written |
+
+> 「掃除とか洗濯とか」 = 「掃除や洗濯など」 = 「掃除したり洗濯したり」  
+> In formal writing use 「や〜など」 or 「たり〜たり」; 「とか」 sounds too casual.
 :::
 
 ---

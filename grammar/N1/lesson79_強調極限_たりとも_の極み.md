@@ -497,6 +497,242 @@ Restrictions:
 
 ---
 
+## 7. いっさい／なんら〜ない（完全不……；丝毫没有……）||7. いっさい／なんら〜ない (Not… at all / Not in the least)
+
+### 接続||Conjugation
+:::zh
+- いっさい + 動詞否定形 ／ いっさい + 名詞 + ない（「いっさい関係ない」「いっさい応じない」）
+- なんら + 動詞否定形 ／ なんら + の + 名詞 + も + ない（「なんらの根拠もない」）
+- なんら + か + の + 名詞（「なんらかの対策」＝某种对策，这时是肯定）
+
+※ 汉字写作「一切」「何ら」。「一切」作名词时也可以说「一切の責任を負う」（承担一切责任），这里是肯定，不算本条。
+:::
+:::en
+- いっさい + negative verb / いっさい + noun + ない (「いっさい関係ない」, 「いっさい応じない」)
+- なんら + negative verb / なんら + の + noun + も + ない (「なんらの根拠もない」)
+- なんら + か + の + noun (「なんらかの対策」 = some kind of measure — this one is affirmative)
+
+※ The kanji are 「一切」 and 「何ら」. As a noun, 「一切」 can also be affirmative — 「一切の責任を負う」 (to take full responsibility) — which isn't this pattern.
+:::
+
+### 含义||Meaning
+:::zh
+都和否定呼应，把否定推到底："完全不……""丝毫没有……"。
+- **いっさい〜ない**：一个例外都没有，范围上的"全部否定"。常用于规定、声明、拒绝：「いっさいお断りします」「いっさい認めない」。口语、书面都用。
+- **なんら〜ない**：书面、生硬，常见于新闻、公文、辩解："没有任何（问题、关系、根据、变化）"。多和「問題」「関係」「変わり」「根拠」「落ち度」等抽象名词搭配。
+
+限制：
+- 必须有否定呼应（「ない」「ません」「ず」，或「無関係だ」这类否定意思的词）。❌「なんら問題がある」。
+- 「なんらか（の）」是"某种、某些"，不再和否定呼应，考试常拿来当陷阱。
+:::
+:::en
+Both pair with a negative and push it all the way: "not… at all", "not in the least".
+- **いっさい〜ない**: no exceptions — a total negation over a whole range. Common in rules, statements and refusals: 「いっさいお断りします」, 「いっさい認めない」. Used in speech and writing.
+- **なんら〜ない**: formal and stiff, typical of the news, official documents and self-defence: "no (problem, connection, grounds, change) whatsoever". Mostly with abstract nouns like 「問題」, 「関係」, 「変わり」, 「根拠」, 「落ち度」.
+
+Restrictions:
+- A negative must follow (「ない」, 「ません」, 「ず」, or a word negative in meaning like 「無関係だ」). ❌ 「なんら問題がある」.
+- 「なんらか（の）」 means "some kind of" and no longer takes a negative — a favourite trap on the test.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 当社は、お客様の個人情報を第三者に提供することは**いっさい**ございません。（本公司绝不会将顾客的个人信息提供给第三方。）
+2. 事故の後、会社側は取材には**いっさい**応じていない。（事故发生后，公司方面一概不接受采访。）
+3. 調査の結果、今回の決定には**なんら**法的な問題もないことが確認された。（调查结果确认，这次的决定没有任何法律上的问题。）
+4. 肩書きが変わったところで、私たちの仕事の中身は**なんら**変わらない。（就算头衔变了，我们工作的内容也丝毫不会改变。）
+:::
+:::en
+1. 当社は、お客様の個人情報を第三者に提供することは**いっさい**ございません。(We never, under any circumstances, pass our customers' personal information to third parties.)
+2. 事故の後、会社側は取材には**いっさい**応じていない。(Since the accident, the company has refused all requests for interviews.)
+3. 調査の結果、今回の決定には**なんら**法的な問題もないことが確認された。(The investigation confirmed that the decision raises no legal problems whatsoever.)
+4. 肩書きが変わったところで、私たちの仕事の中身は**なんら**変わらない。(Whatever our job titles become, what we actually do won't change in the slightest.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| いっさい〜ない | 完全不、一概不 | 范围上全部否定，多用于规定、拒绝 |
+| なんら〜ない | 丝毫没有 | 书面、生硬，多配抽象名词（問題・関係・変わり） |
+| たりとも〜ない | 哪怕一……也不（本课第1条） | 前面必须是「一＋量词」，强调最小单位 |
+| 少しも／全然〜ない | 一点也不（N4） | 口语、中性，没有公文感 |
+| なんらかの | 某种 | 肯定用法，不和否定呼应 |
+
+> 「一円たりとも無駄にしない」强调"连最小的一日元"；「いっさい無駄にしない」强调"所有的都"；「なんら無駄はない」是书面地说"没有任何浪费"。  
+> 看到「なんら（　　）」先看后面有没有否定：有否定就是「なんら〜ない」，后面是「の対策を取る」这种肯定就选「なんらか」。
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| いっさい〜ない | not… at all, none whatsoever | total negation over a range; rules, refusals |
+| なんら〜ない | not in the least | formal, stiff; with abstract nouns (問題, 関係, 変わり) |
+| たりとも〜ない | not even one (point 1 of this lesson) | needs 「一 + counter」; stresses the smallest unit |
+| 少しも／全然〜ない | not at all (N4) | spoken, neutral; no official tone |
+| なんらかの | some kind of | affirmative; no negative follows |
+
+> 「一円たりとも無駄にしない」 stresses "not even the smallest unit, one yen"; 「いっさい無駄にしない」 "none of it at all"; 「なんら無駄はない」 is a formal "there is no waste whatsoever".  
+> When you see 「なんら（　　）」, check what follows: a negative means 「なんら〜ない」; an affirmative like 「の対策を取る」 needs 「なんらか」.
+:::
+
+---
+
+## 8. 〜だって（连……也；即使……也）||8. 〜だって (Even… / …too)
+
+### 接続||Conjugation
+:::zh
+- 名詞 + だって（「子供だって」「私だって」）
+- 一 + 量词 + だって + 否定（「一度だって」「一日だって」「一人だって」）
+- 疑問詞 + だって（「誰だって」「いつだって」「何だって」＝无论谁／什么时候都）
+
+※ 是「でも」「さえ」的口语说法。
+:::
+:::en
+- Noun + だって (「子供だって」, 「私だって」)
+- 一 + counter + だって + negative (「一度だって」, 「一日だって」, 「一人だって」)
+- Question word + だって (「誰だって」, 「いつだって」, 「何だって」 = anyone / any time / anything)
+
+※ A spoken equivalent of 「でも」 and 「さえ」.
+:::
+
+### 含义||Meaning
+:::zh
+口语里的"连……也""……也一样"：
+- **举极端例子**：「子供だってわかる」＝连小孩都懂（更不用说大人）。相当于「でも」「さえ」。
+- **「一＋量词＋だって〜ない」**：哪怕一次／一天也不……，相当于口语版的「たりとも」：「一度だって休んだことがない」。
+- **「私だって」**：我也（和别人一样）……，常带不服气或辩解的语气：「私だって努力しているんです」。
+- **疑問詞＋だって**：全部肯定，"谁都、什么时候都"：「誰だって失敗はある」。
+
+限制：
+- 是口语，正式文章里换成「でも」「さえ」「すら」「たりとも」。
+:::
+:::en
+Spoken "even…" or "…too":
+- **An extreme example**: 「子供だってわかる」 = even a child understands (let alone an adult). Like 「でも」 / 「さえ」.
+- **「一 + counter + だって〜ない」**: not even once / for a single day — a spoken 「たりとも」: 「一度だって休んだことがない」.
+- **「私だって」**: I… too (just like anyone else), often defensive or indignant: 「私だって努力しているんです」.
+- **Question word + だって**: total affirmation, "anyone, any time": 「誰だって失敗はある」.
+
+Restrictions:
+- It is spoken; in formal writing use 「でも」, 「さえ」, 「すら」 or 「たりとも」.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. こんな簡単な理屈、子供**だって**わかるよ。（这么简单的道理，连小孩都懂。）
+2. 彼は入社以来、一日**だって**会社を休んだことがない。（他自从进公司以来，一天都没请过假。）
+3. 私**だって**好きで残業しているわけじゃないんです。（我也不是喜欢才加班的。）
+4. 誰**だって**初めから上手にできるわけではない。失敗を恐れずにやってみよう。（谁都不是一开始就能做好的，别怕失败，试试看吧。）
+:::
+:::en
+1. こんな簡単な理屈、子供**だって**わかるよ。(Even a child could follow logic this simple.)
+2. 彼は入社以来、一日**だって**会社を休んだことがない。(He hasn't missed a single day of work since he joined the company.)
+3. 私**だって**好きで残業しているわけじゃないんです。(It's not as if I enjoy working overtime either.)
+4. 誰**だって**初めから上手にできるわけではない。失敗を恐れずにやってみよう。(Nobody is good at things from the start — don't be afraid of failing, just give it a go.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| 〜だって | 连……也；……也 | 口语，用法最广 |
+| 〜でも／〜さえ | 连……也（N3第40课「さえ」） | 中性，口语书面都可以 |
+| 〜すら／〜ですら | 连……也（本课第2条） | 书面，语气更强 |
+| 一〜たりとも〜ない | 哪怕一……也不（本课第1条） | 书面，只接「一＋量词」 |
+
+> 「一度だって」≈「一度たりとも」：意思相同，前者口语，后者书面。考试中正式文章里的空格一般选「たりとも」「すら」，会话里选「だって」。  
+> 另外，句末的「〜んだって」是传闻（"听说……"：「明日は雨なんだって」），句首的「だって」是辩解理由（"因为……嘛"：「だって、知らなかったんだもん」），和本条的"连……也"不是一回事。
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| 〜だって | even…; …too | spoken; the widest range of uses |
+| 〜でも／〜さえ | even… (N3 Lesson 40 「さえ」) | neutral, speech and writing |
+| 〜すら／〜ですら | even… (point 2 of this lesson) | formal, stronger |
+| 一〜たりとも〜ない | not even one (point 1 of this lesson) | formal; only after 「一 + counter」 |
+
+> 「一度だって」 ≈ 「一度たりとも」: same meaning, the first spoken, the second formal. In a formal passage on the test the blank usually wants 「たりとも」 or 「すら」; in a conversation, 「だって」.  
+> Sentence-final 「〜んだって」 is hearsay ("I hear…": 「明日は雨なんだって」), and sentence-initial 「だって」 gives an excuse ("but…, because…": 「だって、知らなかったんだもん」) — neither is the "even" of this point.
+:::
+
+---
+
+## 9. 〜てまで（不惜……也要；甚至到……的地步）||9. 〜てまで (Even going so far as to…)
+
+### 接続||Conjugation
+:::zh
+- 動詞て形 + まで（「借金してまで」「嘘をついてまで」）
+- 名詞 + まで + して（「借金までして」「徹夜までして」）
+
+※ 后面常接「〜たい」「〜必要はない」「〜（よ）うとは思わない」「〜のか」等，表达说话人的评价。
+:::
+:::en
+- Verb te-form + まで (「借金してまで」, 「嘘をついてまで」)
+- Noun + まで + して (「借金までして」, 「徹夜までして」)
+
+※ Usually followed by 「〜たい」, 「〜必要はない」, 「〜（よ）うとは思わない」, 「〜のか」 and the like — the speaker's judgement.
+:::
+
+### 含义||Meaning
+:::zh
+"不惜做到……的地步也要……"。前项是付出很大代价、或不正当、不寻常的手段，后项是目的。
+常见两种语气：
+- **否定、批评**："用不着做到那个地步""做到那个地步也要……吗"：「体を壊してまで働く必要はない」「人を裏切ってまで出世したいとは思わない」。这是考试最常见的用法。
+- **强调决心**："就算……也要"：「借金してまで留学したのは、それだけの理由があったからだ」。
+
+限制：
+- 前项必须是一般人不愿做的、代价大的事，普通手段不用：❌「電車に乗ってまで会社に行く」。
+:::
+:::en
+"Going so far as to… in order to…". The first part is a costly, improper or unusual means; the second is the goal.
+Two common tones:
+- **Negative, critical**: "there's no need to go that far", "would you really go that far to…?": 「体を壊してまで働く必要はない」, 「人を裏切ってまで出世したいとは思わない」. This is the use the test asks about most.
+- **Stressing resolve**: "even if it means…": 「借金してまで留学したのは、それだけの理由があったからだ」.
+
+Restrictions:
+- The first part must be something people normally wouldn't do, at a real cost; not for ordinary means: ❌ 「電車に乗ってまで会社に行く」.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 睡眠時間を削っ**てまで**働く必要はない。体を壊しては元も子もないのだから。（没必要牺牲睡眠时间去工作，把身体搞垮了就什么都没了。）
+2. 同僚を裏切っ**てまで**出世したいとは思わない。（我不想为了出人头地连同事都出卖。）
+3. 彼は借金をし**てまで**、亡くなった父の店を守り続けた。（他甚至不惜借钱，也一直守着去世父亲留下的店。）
+4. 行列に三時間も並ん**でまで**食べたいほどの味だとは、正直思えなかった。（老实说，我不觉得那味道值得排三个小时的队去吃。）
+:::
+:::en
+1. 睡眠時間を削っ**てまで**働く必要はない。体を壊しては元も子もないのだから。(There's no need to work at the cost of your sleep — ruin your health and it's all for nothing.)
+2. 同僚を裏切っ**てまで**出世したいとは思わない。(I have no wish to get ahead if it means betraying my colleagues.)
+3. 彼は借金をし**てまで**、亡くなった父の店を守り続けた。(He kept his late father's shop going, even taking on debt to do it.)
+4. 行列に三時間も並ん**でまで**食べたいほどの味だとは、正直思えなかった。(Honestly, I didn't think it tasted good enough to be worth queuing three hours for.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| 〜てまで | 不惜……也要 | 前项是付出的代价、手段，后项是目的，多带批评 |
+| 〜すら／〜さえ | 连……也（本课第2条） | 举极端例子，不表示"手段" |
+| 〜までもない | 用不着……（第85课） | 事情简单，没必要做：「説明するまでもない」 |
+| 〜ないまでも | 即使不到……至少……（第81课） | 程度上的退一步 |
+
+> 「借金してまで買う」＝为了买，不惜借钱（借钱是手段）；「借金すらある」＝连债都有（极端例子）。  
+> 「〜てまで」后面常是「〜必要はない／〜たくない／〜とは思わない」，看到这些否定评价就想到它。
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| 〜てまで | even going so far as to | the first part is the cost or means, the second the goal; usually critical |
+| 〜すら／〜さえ | even… (point 2 of this lesson) | an extreme example, not a means |
+| 〜までもない | there's no need to… (Lesson 85) | it's too obvious to bother: 「説明するまでもない」 |
+| 〜ないまでも | even if not…, at least… (Lesson 81) | a step down in degree |
+
+> 「借金してまで買う」 = to buy it, even borrowing money to do so (borrowing is the means); 「借金すらある」 = there's even debt (an extreme example).  
+> 「〜てまで」 is usually followed by 「〜必要はない／〜たくない／〜とは思わない」 — a negative judgement like that points to it.
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

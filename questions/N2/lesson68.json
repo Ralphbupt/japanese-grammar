@@ -584,5 +584,165 @@
         "en": "「とは限らない」 means \"not necessarily\", a judgement about things in general; it can't describe one's own feeling right now, and it contradicts the next sentence."
       }
     ]
+  },
+  {
+    "id": "n2-l68-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson68#5"
+    ],
+    "difficulty": 2,
+    "stem": "長年信頼してきた部下に裏切られたことは、どうしても受け入れ（　）。",
+    "options": [
+      "がちだ",
+      "がたい",
+      "ぎみだ",
+      "っぽい"
+    ],
+    "answer": 1,
+    "full": "長年信頼してきた部下に裏切られたことは、どうしても受け入れがたい。",
+    "tr": {
+      "zh": "被多年来一直信任的下属背叛，无论如何也难以接受。",
+      "en": "Being betrayed by a subordinate I had trusted for years is something I simply can't accept."
+    },
+    "why": {
+      "zh": "线索：「どうしても」后面要接“做不到”的意思；「受け入れる」是心理上接不接受的问题。\n规则：动词ます形＋「がたい」＝难以……，心理、感情上几乎做不到，多接「信じる・許す・受け入れる・理解する」。\n辨析：「がちだ」也接ます形，但意思是“容易（经常）……”，和「どうしても」不搭。",
+      "en": "Clue: 「どうしても」 calls for \"can't,\" and 「受け入れる」 is about accepting something emotionally.\nRule: masu-stem ＋ 「がたい」 = hard to…, almost impossible emotionally; typical with 「信じる・許す・受け入れる・理解する」.\nContrast: 「がちだ」 also takes a masu-stem but means \"tend to…,\" which doesn't go with 「どうしても」."
+    },
+    "wrong": [
+      {
+        "zh": "「がちだ」是“容易……、往往……”，表示倾向，“往往接受”和「どうしても」矛盾。",
+        "en": "「がちだ」 (tend to…) shows a tendency; it contradicts 「どうしても」."
+      },
+      null,
+      {
+        "zh": "「ぎみだ」是“有点……的倾向”（「風邪ぎみ」），不接「受け入れ」。",
+        "en": "「ぎみだ」 (a touch of…, as in 「風邪ぎみ」) doesn't attach to 「受け入れ」."
+      },
+      {
+        "zh": "「っぽい」是“像……、容易……”（「忘れっぽい」），“容易接受”和前文意思相反。",
+        "en": "「っぽい」 (-ish, prone to, as in 「忘れっぽい」) would mean the opposite of the context."
+      }
+    ]
+  },
+  {
+    "id": "n2-l68-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson68#5"
+    ],
+    "difficulty": 2,
+    "stem": "子どもを危険な目にあわせるような大人の行為は、許し（　）ものだ。",
+    "options": [
+      "つつある",
+      "ぬいた",
+      "がたい",
+      "かけた"
+    ],
+    "answer": 2,
+    "full": "子どもを危険な目にあわせるような大人の行為は、許しがたいものだ。",
+    "tr": {
+      "zh": "让孩子遭遇危险的大人的行为，是不可原谅的。",
+      "en": "Adults who put children in danger are doing something unforgivable."
+    },
+    "why": {
+      "zh": "线索：「許し」是ます形，后面接名词「もの」；句子是在谴责大人的行为。\n规则：「ます形＋がたい」按い形容词变化，可以直接修饰名词：「許しがたいもの」＝难以原谅的事。\n辨析：「かけた」是“做到一半／差点……”，“差点原谅的事”和谴责的语气不合。",
+      "en": "Clue: 「許し」 is a masu-stem followed by the noun 「もの」; the sentence condemns adults' behavior.\nRule: 「masu-stem ＋ がたい」 conjugates like an i-adjective and can modify a noun directly: 「許しがたいもの」 = something unforgivable.\nContrast: 「かけた」 (half-done / almost) would mean \"something almost forgiven,\" which doesn't match the condemnation."
+    },
+    "wrong": [
+      {
+        "zh": "「つつある」是“正在逐渐……”，“正在逐渐原谅的事”和谴责的语气不合。",
+        "en": "「つつある」 (in the process of…) would mean \"something being forgiven,\" which clashes with the condemnation."
+      },
+      {
+        "zh": "「ぬいた」是“彻底做完”，“彻底原谅了的事”和句意相反。",
+        "en": "「ぬいた」 (did to the very end) would mean \"thoroughly forgiven,\" the opposite of the sentence."
+      },
+      null,
+      {
+        "zh": "「かけた」是“做到一半、差点”，不能表达“不可原谅”。",
+        "en": "「かけた」 (half-done, almost) can't express \"unforgivable.\""
+      }
+    ]
+  },
+  {
+    "id": "n2-l68-018",
+    "type": "bunpou",
+    "refs": [
+      "lesson68#6"
+    ],
+    "difficulty": 1,
+    "stem": "退職される部長に、部員一同、感謝の気持ち（　）花束を贈った。",
+    "options": [
+      "をめぐって",
+      "を込めて",
+      "を通じて",
+      "を問わず"
+    ],
+    "answer": 1,
+    "full": "退職される部長に、部員一同、感謝の気持ちを込めて花束を贈った。",
+    "tr": {
+      "zh": "全体部员满怀感激之情，向即将退休的部长献上了花束。",
+      "en": "The whole department gave the retiring department head a bouquet, with our heartfelt thanks."
+    },
+    "why": {
+      "zh": "线索：「感謝の気持ち」是一种心意，后面是送花这个行为。\n规则：表示感情的名词＋「を込めて」＝满怀……（地做），把心意放进行为里。\n辨析：「を通じて」是“通过……（手段、途径）”，前面要接媒介，「感謝の気持ち」不是手段。",
+      "en": "Clue: 「感謝の気持ち」 is a feeling, and giving flowers is the action that follows.\nRule: feeling noun ＋ 「を込めて」 = with…, putting the feeling into the action.\nContrast: 「を通じて」 (through…) needs a means or channel before it; 「感謝の気持ち」 isn't one."
+    },
+    "wrong": [
+      {
+        "zh": "「をめぐって」是“围绕……（争论）”，后面要接争议，送花不是。",
+        "en": "「をめぐって」 (over / surrounding) needs a dispute after it; giving flowers isn't one."
+      },
+      null,
+      {
+        "zh": "「を通じて」是“通过……”，前面接手段、媒介，感谢的心情不是手段。",
+        "en": "「を通じて」 (through) needs a means or medium; gratitude isn't one."
+      },
+      {
+        "zh": "「を問わず」是“不论……”，前面接有不同种类的词（年龄、性别），“不论感激之情”说不通。",
+        "en": "「を問わず」 (regardless of) needs something with variants, like age or sex; \"regardless of gratitude\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n2-l68-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson68#6"
+    ],
+    "difficulty": 2,
+    "stem": "祖母が心（　）編んでくれたセーターは、十年たった今でも大切に着ている。",
+    "options": [
+      "のもとで",
+      "に沿って",
+      "をもとに",
+      "を込めて"
+    ],
+    "answer": 3,
+    "full": "祖母が心を込めて編んでくれたセーターは、十年たった今でも大切に着ている。",
+    "tr": {
+      "zh": "奶奶用心为我织的毛衣，十年后的今天我还珍惜地穿着。",
+      "en": "I still wear the sweater my grandmother knitted for me with such care, ten years on."
+    },
+    "why": {
+      "zh": "线索：「心」后面接「編んでくれた」，是奶奶织毛衣时倾注的心意。\n规则：「心を込めて」＝用心地、诚心诚意地，是「名词＋を込めて」最常见的搭配。\n辨析：「をもとに」是“以……为素材、依据”，“以心为素材织”说不通。",
+      "en": "Clue: 「心」 is followed by 「編んでくれた」 — the care Grandma put into knitting it.\nRule: 「心を込めて」 = with care, wholeheartedly, the most common 「noun ＋ を込めて」 phrase.\nContrast: 「をもとに」 (based on, using as material) gives \"knitted based on her heart,\" which makes no sense."
+    },
+    "wrong": [
+      {
+        "zh": "「のもとで」是“在……之下（指导、条件）”，“在心之下织”说不通。",
+        "en": "「のもとで」 (under someone's guidance or conditions) gives \"knitted under her heart,\" which makes no sense."
+      },
+      {
+        "zh": "「に沿って」是“按照、沿着……”，前面接方针、道路，不接「心」。",
+        "en": "「に沿って」 (in line with, along) needs a plan or a road, not 「心」."
+      },
+      {
+        "zh": "「をもとに」是“以……为基础、素材”，「心」不是织毛衣的素材。",
+        "en": "「をもとに」 (based on) needs material or a source; 「心」 isn't what the sweater is made from."
+      },
+      null
+    ]
   }
 ]

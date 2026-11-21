@@ -280,5 +280,130 @@
       "en": "Clue: 「いただきました」 (I ate) at the end needs its object 「料理を」; 「作って くださった」 (kindly made) is the professor's wife's action.\nOrder: 「作って」 ＋ 「くださった」 join first; the whole 「奥様が 作って くださった」 describes 「料理」 and goes before the noun; 「料理を」 leads into 「いただきました」: 奥様が → 作って → くださった → 料理を. The ★ is 「料理を」.\nTrap: Putting 「奥様が」 after 「料理を」. The part describing a noun goes in one block before 「料理」, and 「奥様が」 is the subject inside that block."
     },
     "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n4-l28-013",
+    "type": "bunpou",
+    "refs": ["lesson28#5"],
+    "difficulty": 3,
+    "stem": "（会議で） 「では、お手元の 資料の 3ページを（　）。」",
+    "options": ["ご覧 いただけますか", "拝見して いただけますか", "ご覧に して いただけますか", "拝見なさいますか"],
+    "answer": 0,
+    "full": "（会議で） 「では、お手元の 資料の 3ページを ご覧 いただけますか。」",
+    "kj": "（会議で）「では、お手元の資料の3ページをご覧いただけますか。」",
+    "tr": {
+      "zh": "（会议上）那么，请大家看一下手边资料的第 3 页好吗？",
+      "en": "(In a meeting) Now, could you please look at page 3 of the documents in front of you?"
+    },
+    "why": {
+      "zh": "线索：说话人在会上请与会者翻到第 3 页，看的人是听话人。\n规则：郑重地请对方做事用「お／ご〜いただけますか」。「見る」有专用尊敬形，所以是「ご覧いただく」→「ご覧いただけますか」。\n辨析：「拝見する」是“我看”的谦让语，请对方看不能用。\nN2 考点：这是 N2 真题考过的敬语形式，比 N4 要求略高。",
+      "en": "Clue: The speaker asks the attendees to turn to page 3 — the listeners do the looking.\nRule: A formal request is お／ご〜いただけますか. 「見る」 has a special honorific stem, so it's 「ご覧いただく」 → 「ご覧いただけますか」.\nContrast: 「拝見する」 is humble \"I look\"; it can't ask someone else to look.\nN2 exam form: this keigo has appeared in real N2 papers — a step above N4."
+    },
+    "wrong": [
+      null,
+      { "zh": "「拝見する」是自己看的谦让语，请对方看要用「ご覧」。", "en": "「拝見する」 is humble, for your own looking; asking them to look needs 「ご覧」." },
+      { "zh": "「ご覧に する」不存在；「ご覧」后面接「になる」或直接接「いただく／ください」。", "en": "「ご覧に する」 doesn't exist; 「ご覧」 takes 「になる」 or goes straight into 「いただく／ください」." },
+      { "zh": "「拝見」是谦让语，接尊敬的「なさる」是错误敬语，而且是在问对方要不要看，不是请求。", "en": "「拝見」 is humble; adding the honorific 「なさる」 is wrong keigo, and it asks whether they'll look rather than requesting it." }
+    ]
+  },
+  {
+    "id": "n4-l28-014",
+    "type": "bunpou",
+    "refs": ["lesson28#5"],
+    "difficulty": 3,
+    "stem": "（テレビ番組の 最後に） アナウンサー「皆様、最後まで（　）、ありがとうございました。」",
+    "options": ["ご覧 いただき", "拝見 いただき", "ご覧 して", "拝見して"],
+    "answer": 0,
+    "full": "（テレビ番組の 最後に） アナウンサー「皆様、最後まで ご覧 いただき、ありがとうございました。」",
+    "kj": "（テレビ番組の最後に）アナウンサー「皆様、最後までご覧いただき、ありがとうございました。」",
+    "tr": {
+      "zh": "（电视节目结尾）主持人：感谢各位观看到最后。",
+      "en": "(At the end of a TV show) Announcer: Thank you all for watching to the end."
+    },
+    "why": {
+      "zh": "线索：主持人对「皆様」（观众）致谢，看节目的是观众。\n规则：为对方的动作致谢用「お／ご〜いただき、ありがとうございます」；「見る」→「ご覧いただき」。\n容易错：「拝見いただき」常被误用，但「拝見」是“我看”的谦让语，不能用来说观众看。\nN2 考点：这是 N2 真题考过的敬语形式，比 N4 要求略高。",
+      "en": "Clue: The announcer thanks 「皆様」 (the viewers) — the viewers did the watching.\nRule: Thanking someone for an action is お／ご〜いただき、ありがとうございます; 「見る」 → 「ご覧いただき」.\nTrap: 「拝見いただき」 is a common misuse — 「拝見」 is humble \"I look\" and can't describe the viewers watching.\nN2 exam form: this keigo has appeared in real N2 papers — a step above N4."
+    },
+    "wrong": [
+      null,
+      { "zh": "「拝見」是自己看的谦让语，观众看节目要用「ご覧」。", "en": "「拝見」 is humble, for your own looking; viewers watching needs 「ご覧」." },
+      { "zh": "「ご覧」是尊敬语，不能接谦让的「する」，没有「ご覧する」。", "en": "「ご覧」 is honorific and can't take the humble 「する」 — there's no 「ご覧する」." },
+      { "zh": "「拝見して」变成主持人自己看了，和感谢观众对不上。", "en": "「拝見して」 makes the announcer the one watching, which doesn't fit thanking the viewers." }
+    ]
+  },
+  {
+    "id": "n4-l28-015",
+    "type": "bunpou",
+    "refs": ["lesson28#5"],
+    "difficulty": 3,
+    "stem": "受付「担当の 者が すぐ 参りますので、こちらで 少々（　）。」",
+    "options": ["お待ち いただけますか", "お待ちして いただけますか", "お待ち いたしますか", "待って さしあげますか"],
+    "answer": 0,
+    "full": "受付「担当の 者が すぐ 参りますので、こちらで 少々 お待ち いただけますか。」",
+    "kj": "受付「担当の者がすぐ参りますので、こちらで少々お待ちいただけますか。」",
+    "tr": {
+      "zh": "前台：负责人马上就来，请您在这里稍等一下好吗？",
+      "en": "Reception: The person in charge will be right with you — could you wait here a moment?"
+    },
+    "why": {
+      "zh": "线索：负责人「すぐ 参ります」（马上过来），所以要请客人等一下，等的是客人。\n规则：郑重地请对方做事：「お＋ます形＋いただけますか」→「お待ちいただけますか」。\n容易错：「お待ちして いただけますか」很常见，但「お待ちする」是“我等”的谦让语，请客人等不能用。\nN2 考点：这是 N2 真题考过的敬语形式，比 N4 要求略高。",
+      "en": "Clue: The person in charge 「すぐ 参ります」 (will be right here), so the guest is asked to wait — the guest does the waiting.\nRule: A formal request: お + masu-stem + いただけますか → 「お待ちいただけますか」.\nTrap: 「お待ちして いただけますか」 is common but wrong — 「お待ちする」 is humble \"I wait\" and can't ask the guest to wait.\nN2 exam form: this keigo has appeared in real N2 papers — a step above N4."
+    },
+    "wrong": [
+      null,
+      { "zh": "「お待ちする」是谦让语“我等”，再接「いただく」就成了请客人谦卑地等，是错误敬语。", "en": "「お待ちする」 is humble \"I wait\"; adding 「いただく」 asks the guest to wait humbly — wrong keigo." },
+      { "zh": "「お待ち いたしますか」是问“我要不要等”，主语是自己，不是请客人等。", "en": "「お待ち いたしますか」 asks whether *I* should wait — not a request for the guest to wait." },
+      { "zh": "「〜て さしあげる」是“我为您做”，主语是自己，而且对客人当面用显得居高临下。", "en": "「〜て さしあげる」 is \"I do it for you\" — I am the subject, and said to a guest's face it sounds condescending." }
+    ]
+  },
+  {
+    "id": "n4-l28-016",
+    "type": "bunpou",
+    "refs": ["lesson28#6"],
+    "difficulty": 3,
+    "stem": "（レストランで） 店員「ご注文を（　）。少々 お待ち ください。」",
+    "options": ["承りました", "お受けに なりました", "承られました", "いただかれました"],
+    "answer": 0,
+    "full": "（レストランで） 店員「ご注文を 承りました。少々 お待ち ください。」",
+    "kj": "（レストランで）店員「ご注文を承りました。少々お待ちください。」",
+    "tr": {
+      "zh": "（在餐厅）店员：您的点单收到了，请稍等。",
+      "en": "(At a restaurant) Waiter: I have your order. Please wait a moment."
+    },
+    "why": {
+      "zh": "线索：说话的是店员，接下客人订单的是店员自己。\n规则：我方接受对方的订单、预约、留言，用「受ける・聞く」的谦让语「承る」→「承りました」。\n辨析：「いただく」接的是东西、恩惠；接订单、预约这类“事”用「承る」。\nN2 考点：这是 N2 真题考过的敬语形式，比 N4 要求略高。",
+      "en": "Clue: The speaker is the waiter — the waiter is the one taking the order.\nRule: Your side accepting an order, booking or message takes 「承る」, the humble 「受ける・聞く」 → 「承りました」.\nContrast: 「いただく」 takes things and favors; for orders and bookings it's 「承る」.\nN2 exam form: this keigo has appeared in real N2 papers — a step above N4."
+    },
+    "wrong": [
+      null,
+      { "zh": "「お受けに なる」是尊敬语，用在店员自己身上等于抬高自己。", "en": "「お受けに なる」 is honorific; used of the waiter himself it elevates him." },
+      { "zh": "「承る」是谦让语，再加尊敬的「〜られる」是错误敬语。", "en": "「承る」 is humble; adding the honorific 「〜られる」 is wrong keigo." },
+      { "zh": "「いただく」是谦让语，加「〜かれる」变成尊敬，自相矛盾；而且接订单不用「いただく」。", "en": "「いただく」 is humble; making it 「〜かれる」 turns it honorific — a contradiction, and orders aren't 「いただく」 anyway." }
+    ]
+  },
+  {
+    "id": "n4-l28-017",
+    "type": "bunpou",
+    "refs": ["lesson28#6"],
+    "difficulty": 3,
+    "stem": "（電話で） 「申し訳ございません。田中は ただいま 席を 外して おります。よろしければ、ご伝言を（　）。」",
+    "options": ["承りましょうか", "お受けに なりますか", "申し上げましょうか", "お預かりに なりますか"],
+    "answer": 0,
+    "full": "（電話で） 「申し訳ございません。田中は ただいま 席を 外して おります。よろしければ、ご伝言を 承りましょうか。」",
+    "kj": "（電話で）「申し訳ございません。田中はただいま席を外しております。よろしければ、ご伝言を承りましょうか。」",
+    "tr": {
+      "zh": "（电话里）非常抱歉，田中现在不在座位上。如果可以的话，要我为您转达留言吗？",
+      "en": "(On the phone) I'm very sorry, Tanaka is away from his desk at the moment. Shall I take a message?"
+    },
+    "why": {
+      "zh": "线索：同事不在，接电话的人提出替对方“接留言”，接留言的是自己。\n规则：我方接下对方的留言用谦让语「承る」；主动提议用「〜ましょうか」→「承りましょうか」。\n辨析：「申し上げる」是“我说”，留言是对方要说的话，方向反了。\nN2 考点：这是 N2 真题考过的敬语形式，比 N4 要求略高。",
+      "en": "Clue: The colleague is out, so the person answering offers to take a message — they themselves take it.\nRule: Your side taking someone's message is the humble 「承る」; offering is 「〜ましょうか」 → 「承りましょうか」.\nContrast: 「申し上げる」 is \"I say\"; the message is what the caller wants to say, so the direction is reversed.\nN2 exam form: this keigo has appeared in real N2 papers — a step above N4."
+    },
+    "wrong": [
+      null,
+      { "zh": "「お受けに なる」是尊敬语，问的是“对方要不要接受”，和替对方接留言对不上。", "en": "「お受けに なる」 is honorific — asking whether *they* will accept — which doesn't fit offering to take their message." },
+      { "zh": "「申し上げる」是“我向您说”，留言是对方要说的，不是我要说的。", "en": "「申し上げる」 is \"I tell you\"; the message is the caller's words, not mine." },
+      { "zh": "「お預かりに なる」是尊敬语，主语成了对方；替对方保管留言应是自己的动作。", "en": "「お預かりに なる」 is honorific, making the caller the subject; holding the message is my own action." }
+    ]
   }
 ]

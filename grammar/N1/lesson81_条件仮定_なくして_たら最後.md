@@ -497,6 +497,234 @@ Restrictions:
 
 ---
 
+## 7. 〜ない限り（只要不……就……；除非……否则……）||7. 〜ない限り (Unless… / As long as… not)
+
+### 接続||Conjugation
+:::zh
+- 動詞ない形 + 限り（認めない限り・謝らない限り）
+- い形容詞（〜くない）+ 限り
+- な形容詞・名詞 + でない限り（本人でない限り・健康でない限り）
+
+※ 常见固定说法：「よほどのことがない限り」（只要没有特殊情况）、「特別な事情がない限り」。肯定形「動詞辞書形／ている + 限り」是"只要……就一直……"（「この店がある限り通い続ける」），意思方向相同，只是条件换成了肯定。
+:::
+:::en
+- Verb nai-form + 限り (認めない限り, 謝らない限り)
+- i-adjective (-くない) + 限り
+- na-adjective / noun + でない限り (本人でない限り, 健康でない限り)
+
+※ Common set phrases: 「よほどのことがない限り」 (barring something extraordinary) and 「特別な事情がない限り」. The positive form 「verb dictionary form / ている + 限り」 means "as long as…, (B goes on)" (「この店がある限り通い続ける」) — the same idea with a positive condition.
+:::
+
+### 含义||Meaning
+:::zh
+"只要不A，就（一直）B""除非A，否则B"。A是能改变局面的条件；在A实现之前，B这种状态一直成立。
+
+限制：
+- A是尚未满足的条件，不是已经发生的一次性事实：❌「昨日雨が降らない限り、試合は行われた」。
+- 后项多为否定、困难、不可能（「〜ない」「〜できない」「難しい」「望めない」），但也可以是肯定的规定或惯例：「特別な事情がない限り、会議は毎週月曜に行う」⭕。
+- 后项是持续的状态、规定或判断，不说过去某一次具体发生的事。
+:::
+:::en
+"Unless A, B" or "as long as A doesn't happen, B (stays true)". A is the condition that could change things; until A is met, state B continues.
+
+Restrictions:
+- A is a condition not yet met, not a one-off fact that has already happened: ❌ 「昨日雨が降らない限り、試合は行われた」.
+- The main clause is usually negative, difficult or impossible (「〜ない」, 「〜できない」, 「難しい」, 「望めない」), but it can also be a positive rule or practice: 「特別な事情がない限り、会議は毎週月曜に行う」 ⭕.
+- The main clause is an ongoing state, a rule or a judgement, not a single event in the past.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 本人の同意が**ない限り**、個人情報を第三者に提供することはできません。（只要没有本人的同意，就不能把个人信息提供给第三方。）
+2. よほどのことが**ない限り**、この決定が覆ることはないだろう。（只要不出什么大事，这个决定恐怕不会被推翻。）
+3. 経営陣が抜本的な改革に踏み切ら**ない限り**、業績の回復は望めない。（除非管理层下决心进行彻底的改革，否则业绩不可能恢复。）
+4. 特別な事情が**ない限り**、定例会議は毎週月曜の朝に行うことになっている。（只要没有特殊情况，例会定在每周一早上开。）
+:::
+:::en
+1. 本人の同意が**ない限り**、個人情報を第三者に提供することはできません。(Personal information cannot be passed to third parties without the person's consent.)
+2. よほどのことが**ない限り**、この決定が覆ることはないだろう。(Barring something extraordinary, this decision is unlikely to be overturned.)
+3. 経営陣が抜本的な改革に踏み切ら**ない限り**、業績の回復は望めない。(Unless management commits to sweeping reform, there's no hope of the results recovering.)
+4. 特別な事情が**ない限り**、定例会議は毎週月曜の朝に行うことになっている。(Unless something special comes up, the regular meeting is held every Monday morning.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| ない限り | 只要不……就…… | A是改变局面的条件；后项可以是否定，也可以是肯定的规定、惯例 |
+| ないことには | 不……的话就不能…… | A是先决条件，后项必定是否定或"无从谈起"（N2第68课） |
+| なくして（は） | 没有……就不可能…… | 接名词，书面，强调A的价值（本课第1点） |
+| 〜限り（肯定） | 只要……就一直…… | 条件是肯定的：「体が動く限り働きたい」 |
+
+> 「彼が謝らない限り、許すつもりはない」⭕／「彼が謝らないことには、話が進まない」⭕（两者后项都是否定时意思接近）  
+> 「特別な事情がない限り、会議は月曜に行う」⭕／❌「特別な事情がないことには、会議は月曜に行う」→ 后项是肯定的规定，只能用ない限り。  
+> 看后项：肯定的规定、惯例 → ない限り；"不先做A就没法B" → 两者都行，ないことには更口语。
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| ない限り | unless… / as long as… not | A is what would change things; the main clause can be negative or a positive rule or practice |
+| ないことには | unless…, (can't) | A is a precondition; the main clause is always negative or "can't even start" (N2 Lesson 68) |
+| なくして（は） | without…, impossible | Takes a noun, formal, stresses A's value (point 1 of this lesson) |
+| 〜限り (positive) | as long as… | The condition is positive: 「体が動く限り働きたい」 |
+
+> 「彼が謝らない限り、許すつもりはない」 ⭕ / 「彼が謝らないことには、話が進まない」 ⭕ (with a negative main clause the two are close)  
+> 「特別な事情がない限り、会議は月曜に行う」 ⭕ / ❌ 「特別な事情がないことには、会議は月曜に行う」 → the main clause is a positive rule, so only ない限り works.  
+> Look at the main clause: a positive rule or practice → ない限り; "B can't happen until A" → either, with ないことには more conversational.
+:::
+
+---
+
+## 8. 〜てこそ（只有……才（真正）……）||8. 〜てこそ (Only by… / It's only when… that…)
+
+### 接続||Conjugation
+:::zh
+- 動詞て形 + こそ（経験してこそ・守られてこそ）
+
+※ 后项常带「初めて」「意味がある」「本当の〜だ」「〜と言える」「〜ものだ」，是说道理、下评价的句子。
+:::
+:::en
+- Verb te-form + こそ (経験してこそ, 守られてこそ)
+
+※ The main clause often has 「初めて」, 「意味がある」, 「本当の〜だ」, 「〜と言える」 or 「〜ものだ」 — it states a principle or an evaluation.
+:::
+
+### 含义||Meaning
+:::zh
+"只有做了A，B才成立""做了A才算真正B"。说话人主张：A是让B有意义、有价值、名副其实的必要经历或行为，没有A，B就是空的。
+
+限制：
+- 后项是道理、评价或一般规律（「意味がある」「わかる」「本物だ」「〜と言える」），不描写过去某一次具体的事：❌「駅に着いてこそ、電車に乗った」。
+- 后项一般是正面的价值，不接命令、劝诱：❌「失敗してこそ、原因を報告しなさい」。
+- 「こそ」强调的是"A这个条件"，所以常和「〜だけでは〜ない」「〜のであって」对照使用。
+:::
+:::en
+"Only by doing A does B hold" or "it's only after A that something is truly B". The speaker claims A is the experience or act that gives B its meaning, value or authenticity — without A, B is empty.
+
+Restrictions:
+- The main clause is a principle, evaluation or general truth (「意味がある」, 「わかる」, 「本物だ」, 「〜と言える」), not a particular past event: ❌ 「駅に着いてこそ、電車に乗った」.
+- The main clause is normally a positive value; it doesn't take a command or invitation: ❌ 「失敗してこそ、原因を報告しなさい」.
+- 「こそ」 spotlights condition A, so it often appears alongside a contrast like 「〜だけでは〜ない」 or 「〜のであって」.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 自分で失敗を経験し**てこそ**、人の痛みがわかるようになるものだ。（只有自己经历过失败，才会懂得别人的痛苦。）
+2. 法律は国民に守られ**てこそ**意味があるのであって、作っただけでは何も変わらない。（法律只有被国民遵守才有意义，光是制定出来什么也改变不了。）
+3. どんなに優れた計画も、実行に移し**てこそ**初めて価値が生まれる。（再好的计划，也只有付诸实施才会产生价值。）
+4. 互いに率直に意見をぶつけ合っ**てこそ**、本当の信頼関係が築けるのではないだろうか。（只有互相坦率地交换意见，才能建立真正的信任关系吧。）
+:::
+:::en
+1. 自分で失敗を経験し**てこそ**、人の痛みがわかるようになるものだ。(It's only by failing yourself that you come to understand other people's pain.)
+2. 法律は国民に守られ**てこそ**意味があるのであって、作っただけでは何も変わらない。(Laws mean something only when people obey them; just making them changes nothing.)
+3. どんなに優れた計画も、実行に移し**てこそ**初めて価値が生まれる。(However good a plan is, it only becomes worth anything once it's put into action.)
+4. 互いに率直に意見をぶつけ合っ**てこそ**、本当の信頼関係が築けるのではないだろうか。(Surely real trust can only be built when people put their views to each other frankly.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 接续 | 区别 |
+|------|------|------|
+| てこそ | 動詞て形 | 条件："只有做了A，B才成立"，说道理、评价 |
+| ばこそ | 動詞仮定形 | 原因："正是因为A（这一事实）才B"，书面，常「〜ばこそ〜のだ」（N2第60课） |
+| からこそ | 普通形 | 原因："正因为A才B"，口语书面都用（N3第55课） |
+
+> 「厳しく叱られてこそ、人は成長する」= 只有被严厉批评过，人才会成长（条件，一般道理）  
+> 「子どもを愛すればこそ、親は厳しく叱るのだ」= 正因为爱孩子，父母才严厉批评（原因，说明已有的事实）  
+> 「君を信頼しているからこそ、この仕事を任せるんだ」= 正因为信任你（原因）  
+> 判断方法：能换成"只有……才……"是てこそ；能换成"正因为……"是ばこそ／からこそ。
+:::
+:::en
+| Expression | Attaches to | Difference |
+|------|------|------|
+| てこそ | verb te-form | Condition: "only by doing A does B hold"; states a principle or evaluation |
+| ばこそ | verb conditional form | Reason: "precisely because of (the fact) A, B"; formal, often 「〜ばこそ〜のだ」 (N2 Lesson 60) |
+| からこそ | plain form | Reason: "precisely because A, B"; spoken and written (N3 Lesson 55) |
+
+> 「厳しく叱られてこそ、人は成長する」= people only grow when they've been told off sternly (a condition, a general truth)  
+> 「子どもを愛すればこそ、親は厳しく叱るのだ」= it's precisely because they love their children that parents scold them (a reason explaining an existing fact)  
+> 「君を信頼しているからこそ、この仕事を任せるんだ」= it's because I trust you (a reason)  
+> Test: if "only by / only when" fits, it's てこそ; if "precisely because" fits, it's ばこそ / からこそ.
+:::
+
+---
+
+## 9. 〜でもしたら（万一……的话（可就糟了））||9. 〜でもしたら (If… were to happen, [it'd be a disaster])
+
+### 接続||Conjugation
+:::zh
+- 動詞ます形 + でもしたら（落としでもしたら・倒れでもしたら）
+- 名詞（する動詞）+ でもしたら（けがでもしたら・失敗でもしたら）
+
+※ 也说「〜でもすれば」「〜でもしようものなら」；后项常是「大変だ」「どうするの」「取り返しがつかない」「〜かねない」。
+:::
+:::en
+- Verb masu-stem + でもしたら (落としでもしたら, 倒れでもしたら)
+- Noun (suru-verb) + でもしたら (けがでもしたら, 失敗でもしたら)
+
+※ Also 「〜でもすれば」 and 「〜でもしようものなら」; the main clause is typically 「大変だ」, 「どうするの」, 「取り返しがつかない」 or 「〜かねない」.
+:::
+
+### 含义||Meaning
+:::zh
+"万一A的话（就麻烦了、可怎么办）"。假设一件不希望发生的事，「でも」把A当作"比如这类事"举出来，语气是担心、警告或责备。
+
+限制：
+- A多是说话人不希望发生的事，可以是自己控制不了的（倒れる、漏れる、けがをする）。
+- 后项是担心的后果或责问（「大変だ」「どうするつもりだ」），不说已经发生的事实：❌「財布を落としでもしたら、交番に届けた」。
+- 动词要用ます形接，不能说❌「落とすでもしたら」「落としてでもしたら」。
+:::
+:::en
+"If A were to happen, (it'd be a disaster / what would you do?)". The speaker imagines something unwanted; 「でも」 holds A up as "something like that", and the tone is worry, warning or reproach.
+
+Restrictions:
+- A is usually something the speaker doesn't want, and it can be beyond anyone's control (倒れる, 漏れる, けがをする).
+- The main clause is a feared consequence or a reproach (「大変だ」, 「どうするつもりだ」), not something that has happened: ❌ 「財布を落としでもしたら、交番に届けた」.
+- The verb attaches in its masu-stem: ❌ 「落とすでもしたら」, ❌ 「落としてでもしたら」.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. こんな高価な機材を落とし**でもしたら**、とても弁償しきれない。（万一把这么贵的器材摔了，可赔不起。）
+2. 熱があるのに無理して出勤して、倒れ**でもしたら**かえって周りに迷惑がかかる。（发着烧还硬撑着上班，万一倒下了反而给周围添麻烦。）
+3. 小さい子から目を離して、けが**でもしたら**どうするつもりだったんですか。（你把眼睛从小孩身上移开，万一受了伤你打算怎么办？）
+4. この件が外部に漏れ**でもしたら**、会社の信用は地に落ちかねない。（这件事万一泄露出去，公司的信誉恐怕会一落千丈。）
+:::
+:::en
+1. こんな高価な機材を落とし**でもしたら**、とても弁償しきれない。(If I dropped equipment this expensive, I could never pay for it.)
+2. 熱があるのに無理して出勤して、倒れ**でもしたら**かえって周りに迷惑がかかる。(If you push yourself into work with a fever and collapse, you'll only cause the people around you more trouble.)
+3. 小さい子から目を離して、けが**でもしたら**どうするつもりだったんですか。(You took your eyes off a small child — what were you going to do if they'd got hurt?)
+4. この件が外部に漏れ**でもしたら**、会社の信用は地に落ちかねない。(If this were ever to leak out, the company's reputation could be ruined.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| でもしたら | 万一……的话 | 担心一件不希望的事，常是自己控制不了的；语气是担心、警告 |
+| ようものなら | 要是胆敢…… | 多假设一个"不该做"的行为，后果严重，语气更夸张（N2第70课） |
+| たら最後 | 一旦……就完了 | 强调一旦发生就无法挽回，后项是必然、持续的结果（本课第4点） |
+
+> 「子どもがけがでもしたら大変だ」= 万一孩子受伤可就糟了（担心）  
+> 「あの部長に口答えしようものなら、ただでは済まない」= 要是敢顶嘴，绝不会善罢甘休（警告一个行为）  
+> 「あの人は一度怒ったら最後、手がつけられない」= 一旦发火就没法收拾（必然的结果）  
+> 「でもしたら」接ます形，「ようものなら」接意志形，形式上很好区分。
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| でもしたら | if… were to happen | Worry about something unwanted, often beyond control; tone of concern or warning |
+| ようものなら | if one dared to… | Usually imagines an act one shouldn't do, with serious consequences; more dramatic (N2 Lesson 70) |
+| たら最後 | once…, that's it | Stresses that once it happens there's no going back; the result is certain and lasting (point 4 of this lesson) |
+
+> 「子どもがけがでもしたら大変だ」= it'd be terrible if the child got hurt (worry)  
+> 「あの部長に口答えしようものなら、ただでは済まない」= if you dared talk back to that manager, you'd pay for it (warning about an act)  
+> 「あの人は一度怒ったら最後、手がつけられない」= once he loses his temper, there's no handling him (a certain result)  
+> 「でもしたら」 takes the masu-stem and 「ようものなら」 the volitional form, so the forms are easy to tell apart.
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

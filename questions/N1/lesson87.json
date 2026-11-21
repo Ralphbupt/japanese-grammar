@@ -774,5 +774,165 @@
       },
       null
     ]
+  },
+  {
+    "id": "n1-l87-021",
+    "type": "bunpou",
+    "refs": [
+      "lesson87#7"
+    ],
+    "difficulty": 2,
+    "stem": "環境問題は政府だけの問題ではない。私たち一人一人にできることから始めよう（　）。",
+    "options": [
+      "ではないか",
+      "ことはない",
+      "ものではない",
+      "ではないだろう"
+    ],
+    "answer": 0,
+    "full": "環境問題は政府だけの問題ではない。私たち一人一人にできることから始めようではないか。",
+    "tr": {
+      "zh": "环境问题不只是政府的问题。让我们从每个人力所能及的事做起吧。",
+      "en": "The environment isn't just the government's problem. Let us each start with what we ourselves can do."
+    },
+    "why": {
+      "zh": "线索：空格前是意向形「始めよう」，主语是「私たち一人一人」，是向大家发出号召。\n规则：「動詞意向形＋ではないか」＝让我们……吧，用于演讲、社论里的号召，说话人自己也在内。\n辨析：「ことはない」「ものではない」接辞书形，表示“不必”“不应该”，不接意向形。",
+      "en": "Clue: before the blank is the volitional 「始めよう」, and the subject is 「私たち一人一人」 — a call to everyone.\nRule: verb volitional + 「ではないか」 = let us…!, a call in speeches and editorials that includes the speaker.\nContrast: 「ことはない」 and 「ものではない」 follow the dictionary form and mean \"no need to\" / \"shouldn't\"; they never follow the volitional."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ことはない」接辞书形，表示“没必要……”（「始めることはない」），不能接意向形。",
+        "en": "「ことはない」 follows the dictionary form, \"there's no need to…\" (「始めることはない」); it can't follow the volitional."
+      },
+      {
+        "zh": "「ものではない」接辞书形，表示按常理“不应该……”，不能接意向形。",
+        "en": "「ものではない」 follows the dictionary form, \"one shouldn't…\"; it can't follow the volitional."
+      },
+      {
+        "zh": "「ではないだろう」是对事物的否定推测，不能接在意向形后面。",
+        "en": "「ではないだろう」 is a negative guess about something; it can't come after the volitional."
+      }
+    ]
+  },
+  {
+    "id": "n1-l87-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson87#7"
+    ],
+    "difficulty": 2,
+    "stem": "A「どうしよう、傘を持ってくるのを忘れちゃった。」\nB「だから、出かける前に天気予報を見ておけって言った（　）。」",
+    "options": [
+      "じゃないか",
+      "ではあるまいし",
+      "ものだから",
+      "とは"
+    ],
+    "answer": 0,
+    "full": "A「どうしよう、傘を持ってくるのを忘れちゃった。」\nB「だから、出かける前に天気予報を見ておけって言ったじゃないか。」",
+    "tr": {
+      "zh": "A：怎么办，我忘带伞了。B：所以我不是跟你说了出门前先看看天气预报嘛。",
+      "en": "A: Oh no, I forgot to bring an umbrella. B: Didn't I tell you to check the forecast before you left?"
+    },
+    "why": {
+      "zh": "线索：「だから」＋「言った」，B在提醒A自己之前说过的话，带责怪。\n规则：「普通形＋じゃないか」可以表示责备、提醒：“我不是……了吗”，句末语调下降。\n辨析：「〜とは」放在句末表示“竟然……”的惊讶，说的是意外的事；自己说过的话不是意外。",
+      "en": "Clue: 「だから」 + 「言った」 — B reminds A of what B said earlier, with blame.\nRule: plain form + 「じゃないか」 can reproach or remind: \"didn't I…?\", said with falling intonation.\nContrast: sentence-final 「〜とは」 expresses surprise at something unexpected, and B's own earlier warning isn't a surprise."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ではあるまいし」是“又不是……”，后面必须接说话人的主张，不能结句，意思也不通。",
+        "en": "「ではあるまいし」 (\"it's not as if…\") must be followed by the speaker's point; it can't end the sentence, and the meaning doesn't fit."
+      },
+      {
+        "zh": "「ものだから」说明理由、找借口，后面要有结果，「だから〜言ったものだから」不成句。",
+        "en": "「ものだから」 gives a reason or excuse and needs a result after it; 「だから〜言ったものだから」 isn't a sentence."
+      },
+      {
+        "zh": "句末的「とは」表示“竟然……”的惊讶，B自己说过的话不会让B感到意外。",
+        "en": "Sentence-final 「とは」 means \"to think that…\"; B isn't surprised by B's own words."
+      }
+    ]
+  },
+  {
+    "id": "n1-l87-023",
+    "type": "bunpou",
+    "refs": [
+      "lesson87#8"
+    ],
+    "difficulty": 3,
+    "stem": "何度注意しても同じ言い訳を繰り返すとは、人をばかにする（　）。",
+    "options": [
+      "にもほどがある",
+      "極まりない",
+      "といったらない",
+      "限りだ"
+    ],
+    "answer": 0,
+    "full": "何度注意しても同じ言い訳を繰り返すとは、人をばかにするにもほどがある。",
+    "tr": {
+      "zh": "不管提醒多少次都重复同样的借口，也太把人当傻子了。",
+      "en": "However many times he's warned, he trots out the same excuse — that's taking people for complete fools."
+    },
+    "why": {
+      "zh": "线索：空格前是动词辞书形「人をばかにする」，全句在气愤地批评对方的言行。\n规则：「動詞辞書形／名詞／形容詞＋にもほどがある」＝……也该有个限度，批评对方越界。\n辨析：「極まりない」多接な形容词词干（「無礼極まりない」），不接动词。",
+      "en": "Clue: before the blank is the verb dictionary form 「人をばかにする」, and the sentence angrily criticises someone's behaviour.\nRule: verb dictionary form / noun / adjective + 「にもほどがある」 = there's a limit to…, criticising someone for going too far.\nContrast: 「極まりない」 mostly follows a な-adjective stem (「無礼極まりない」), never a verb."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「極まりない」接な形容词词干（「無礼極まりない」），不能接动词辞书形「する」。",
+        "en": "「極まりない」 follows a な-adjective stem (「無礼極まりない」), not a verb's dictionary form like 「する」."
+      },
+      {
+        "zh": "「といったらない」接形容词或名词，表示程度高得无法形容，不接这种动词短语。",
+        "en": "「といったらない」 follows adjectives or nouns for an indescribable degree, not a verb phrase like this."
+      },
+      {
+        "zh": "「限りだ」接表示感情的形容词，说的是说话人自己的心情（「うれしい限りだ」），不用来批评别人。",
+        "en": "「限りだ」 follows adjectives of feeling and states the speaker's own emotion (「うれしい限りだ」); it isn't for criticising others."
+      }
+    ]
+  },
+  {
+    "id": "n1-l87-024",
+    "type": "bunpou",
+    "refs": [
+      "lesson87#8"
+    ],
+    "difficulty": 2,
+    "stem": "いくら親しい仲でも、借りた金を返さないまま連絡を絶つなんて、勝手（　）。",
+    "options": [
+      "にもほどがある",
+      "ならではだ",
+      "にすぎない",
+      "をものともしない"
+    ],
+    "answer": 0,
+    "full": "いくら親しい仲でも、借りた金を返さないまま連絡を絶つなんて、勝手にもほどがある。",
+    "tr": {
+      "zh": "就算关系再好，借了钱不还就断了联系，也太任性了。",
+      "en": "However close you are, borrowing money and then cutting off contact without paying it back is selfish beyond all limits."
+    },
+    "why": {
+      "zh": "线索：「いくら〜でも」「〜なんて」加上负面的「勝手」，是在强烈批评对方。\n规则：「な形容词词干＋にもほどがある」＝……得太过分了，常和「いくら〜でも」一起用。\n辨析：「にすぎない」是“只不过……”，把事情说小，和这里的愤慨方向相反。",
+      "en": "Clue: 「いくら〜でも」 and 「〜なんて」 plus the negative 「勝手」 — strong criticism.\nRule: な-adjective stem + 「にもほどがある」 = way too…, often with 「いくら〜でも」.\nContrast: 「にすぎない」 means \"merely…\" and plays things down — the opposite of the outrage here."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ならではだ」是“只有……才有的”，用于称赞，不能接「勝手」来批评。",
+        "en": "「ならではだ」 (\"only … could\") is praise; it can't follow 「勝手」 to criticise."
+      },
+      {
+        "zh": "「にすぎない」是“只不过……而已”，把事情说轻，和「いくら〜でも」「なんて」的愤慨不符。",
+        "en": "「にすぎない」 (\"merely…\") plays things down, which clashes with the outrage of 「いくら〜でも」 and 「なんて」."
+      },
+      {
+        "zh": "「をものともしない」是“不把困难放在眼里”，接表示困难的名词，不接「勝手」。",
+        "en": "「をものともしない」 means \"undaunted by\" and follows a noun for a difficulty, not 「勝手」."
+      }
+    ]
   }
 ]

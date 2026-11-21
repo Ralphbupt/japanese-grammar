@@ -176,6 +176,34 @@ Key distinction:
 6. 彼女が学生**かどうか**知りません。(I don't know whether she is a student.)
 :::
 
+### 用法：疑问词 + 〜か（间接疑问）||Usage: Question Word + 〜か (Embedded Questions)
+
+:::zh
+句子里有疑问词（何・いつ・どこ・だれ・どう・どうして・いくら・どのくらい等）时，把这个问题放进大句子里用「**普通形 + か**」，**不加「どうか」**。后面常接「分からない」「知らない」「教えてください」「聞く」「調べる」「決める」。
+- 动词・い形容词普通形 + か：いつ来る**か**、いくらかかる**か**
+- 名词・な形容词：去掉「だ」+ か：何時**か**、どこ**か**
+:::
+
+:::en
+When the question has a question word (何・いつ・どこ・だれ・どう・どうして・いくら・どのくらい etc.), put it inside the bigger sentence as 「**plain form + か**」, **without 「どうか」**. It is usually followed by 「分からない」, 「知らない」, 「教えてください」, 「聞く」, 「調べる」 or 「決める」.
+- Verb / い-adjective plain form + か: いつ来る**か**, いくらかかる**か**
+- Noun / な-adjective: drop 「だ」 + か: 何時**か**, どこ**か**
+:::
+
+:::zh
+1. 送った荷物がいつ着く**か**、まだ分からない。（还不知道寄出的包裹什么时候到。）
+2. 明日の会議が何時に始まる**か**、教えてください。（请告诉我明天的会议几点开始。）
+3. 空港まで電車でどのくらいかかる**か**、調べておきます。（我先查一下坐电车到机场要多久。）
+4. 彼がどうして怒っている**か**、全然分からない。（完全不知道他为什么生气。）
+:::
+
+:::en
+1. 送った荷物がいつ着く**か**、まだ分からない。(I still don't know when the parcel I sent will arrive.)
+2. 明日の会議が何時に始まる**か**、教えてください。(Please tell me what time tomorrow's meeting starts.)
+3. 空港まで電車でどのくらいかかる**か**、調べておきます。(I'll look up how long it takes to the airport by train.)
+4. 彼がどうして怒っている**か**、全然分からない。(I have no idea why he's angry.)
+:::
+
 ### 〜か vs 〜かどうか||〜か vs 〜かどうか
 
 :::zh
@@ -186,6 +214,7 @@ Key distinction:
 | 例 | いつ来る**か**分からない。（不知道什么时候来。）| 来る**かどうか**分からない。（不知道是否来。）|
 
 > **规律**：有疑问词（何・いつ・どこ・だれ等）→ 〜か；没有疑问词（yes/no型）→ 〜かどうか
+> 有疑问词时不能再加「どうか」：❌ いつ来るかどうか分からない → ✅ いつ来るか分からない
 :::
 
 :::en
@@ -196,6 +225,7 @@ Key distinction:
 | Ex. | いつ来る**か**分からない。(I don't know when [they] will come.) | 来る**かどうか**分からない。(I don't know whether [they] will come.) |
 
 > **Rule**: Has a question word (何・いつ・どこ・だれ etc.) → 〜か; No question word (yes/no type) → 〜かどうか
+> With a question word, never add 「どうか」: ❌ いつ来るかどうか分からない → ✅ いつ来るか分からない
 :::
 
 ---
@@ -580,6 +610,74 @@ Prohibitive: Directly orders someone not to do something.
 5. ここに座**れ**。(Sit here.)
 6. 静かにし**ろ**。(Be quiet.)
 7. 触る**な**！危ない！(Don't touch! It's dangerous! → emergency)
+:::
+
+---
+
+## 8. 〜と同じ（和……一样）||8. 〜と同じ (The Same As …)
+
+### 接续||Conjugation
+
+:::zh
+- 名词 + と同じ（だ）：私**と同じ**だ
+- 名词 + と同じ + 名词：兄**と同じ**学校（「同じ」直接接名词，**不加「な」「の」**）
+- 名词 + と同じように + 动词：大人**と同じように**払う
+- 动词普通形 + の + と同じ：歩くの**と同じ**くらい
+:::
+
+:::en
+- Noun + と同じ(だ): 私**と同じ**だ
+- Noun + と同じ + noun: 兄**と同じ**学校 (「同じ」 goes straight onto the noun — **no 「な」 or 「の」**)
+- Noun + と同じように + verb: 大人**と同じように**払う
+- Verb plain form + の + と同じ: 歩くの**と同じ**くらい
+:::
+
+### 含义||Meaning
+
+:::zh
+拿两样东西比较，说它们的内容、种类、程度**相同**："和……一样／和……是同一个"。比较的对象用「と」。反义是「〜と違う」。
+:::
+
+:::en
+Compares two things and says their content, kind or degree is **the same**: "the same as … / the very same …". The thing compared with takes 「と」. The opposite is 「〜と違う」.
+:::
+
+### 例句||Example Sentences
+
+:::zh
+1. 私も田中さん**と同じ**意見です。（我和田中的意见一样。）
+2. 姉は母**と同じ**病院で働いている。（姐姐和妈妈在同一家医院工作。）
+3. 今年の夏も、去年**と同じ**くらい暑かった。（今年夏天也和去年差不多热。）
+4. この美術館では、子供も大人**と同じように**料金を払わなければならない。（这家美术馆小孩也必须和大人一样付费。）
+:::
+
+:::en
+1. 私も田中さん**と同じ**意見です。(I have the same opinion as Mr Tanaka.)
+2. 姉は母**と同じ**病院で働いている。(My sister works at the same hospital as my mother.)
+3. 今年の夏も、去年**と同じ**くらい暑かった。(This summer was just as hot as last year.)
+4. この美術館では、子供も大人**と同じように**料金を払わなければならない。(At this art museum, children have to pay the same as adults.)
+:::
+
+### と同じ vs のように||と同じ vs のように
+
+:::zh
+| | 〜と同じ | 〜のように／のような（本课第3点） |
+|---|---|---|
+| 意思 | **相同**，常常就是同一个 | **相像**，比喻或举例，不是同一个 |
+| 例 | 兄**と同じ**大学に入った（进了和哥哥同一所大学） | 兄**のように**医者になりたい（想像哥哥那样当医生） |
+| 比喻 | ❌ 夢と同じ話 | ✅ 夢**のような**話（像梦一样的事） |
+
+> 「同じ」接名词时不加「な」：❌ 同じな本 → ✅ 同じ本；但接「ように」「だ」时照常：同じように、同じだ。
+:::
+
+:::en
+| | 〜と同じ | 〜のように / のような (point 3 of this lesson) |
+|---|---|---|
+| Meaning | **Identical**, often literally the same one | **Similar**, a simile or example, not the same thing |
+| Ex. | 兄**と同じ**大学に入った (got into the same university as my brother) | 兄**のように**医者になりたい (I want to become a doctor like my brother) |
+| Simile | ❌ 夢と同じ話 | ✅ 夢**のような**話 (a dream-like story) |
+
+> 「同じ」 takes no 「な」 before a noun: ❌ 同じな本 → ✅ 同じ本; before 「ように」 or 「だ」 it behaves normally: 同じように, 同じだ.
 :::
 
 ---
