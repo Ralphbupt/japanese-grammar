@@ -79,6 +79,9 @@
     }
     if (window.jpGaSkip && !a.paused && mode !== 'one' && mode !== 'loop' && i >= 0 && window.jpGaSkip(i, from)) {
       var j = i + 1; while (T[j] && window.jpGaSkip(j, from)) j++;
+      // past the last line that plays: start over from the first one (a loop of
+      // "my words"), unless a lesson/group is playing, which just ends
+      if (!T[j] && stopAt == null) { j = 0; while (j < i && window.jpGaSkip(j, from)) j++; if (j >= i) j = T.length; }
       if (!T[j] || (stopAt != null && j > stopAt)) { a.pause(); stopAt = null; return; }
       a.currentTime = T[j][0]; i = j;
     }
