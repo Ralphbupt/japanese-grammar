@@ -838,5 +838,169 @@
       null
     ],
     "rev": 2
+  },
+  {
+    "id": "n4-l32-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson32#2"
+    ],
+    "difficulty": 1,
+    "stem": "A「あしたの パーティーには だれが 来ますか。」\nB「まだ だれが 来る（　）分かりません。」",
+    "options": [
+      "と",
+      "かどうか",
+      "か",
+      "のに"
+    ],
+    "answer": 2,
+    "full": "A「あしたの パーティーには だれが 来ますか。」 B「まだ だれが 来るか 分かりません。」",
+    "kj": "A「明日のパーティーには誰が来ますか。」B「まだ誰が来るか分かりません。」",
+    "tr": {
+      "zh": "A：明天的派对谁会来？B：还不知道谁会来。",
+      "en": "A: Who's coming to the party tomorrow? B: I don't know yet who's coming."
+    },
+    "why": {
+      "zh": "线索：句中有疑问词「だれが」，后面是「分かりません」。\n规则：带疑问词的问题放进句子里，用「普通形＋か」：「だれが 来るか 分からない」。\n辨析：没有疑问词的是非问题才用「かどうか」（来るかどうか）。",
+      "en": "Clue: The clause has the question word 「だれが」 and is followed by 「分かりません」.\nRule: A question with a question word goes inside a sentence as plain form ＋ 「か」: 「だれが 来るか 分からない」.\nContrast: 「かどうか」 is only for yes/no questions with no question word (来るかどうか)."
+    },
+    "wrong": [
+      {
+        "zh": "「と」用来引用说的话或想法，「だれが来ると分かりません」不成立。",
+        "en": "「と」 quotes words or thoughts; 「だれが来ると分かりません」 is not Japanese."
+      },
+      {
+        "zh": "有疑问词「だれ」时不能再用「かどうか」，「かどうか」只用于是非问题。",
+        "en": "With the question word 「だれ」, 「かどうか」 can't be used; it is only for yes/no questions."
+      },
+      null,
+      {
+        "zh": "「のに」是“明明……却”，不能把问题放进「分かりません」前面。",
+        "en": "「のに」 means \"even though\"; it can't embed a question before 「分かりません」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l32-023",
+    "type": "bunpou",
+    "refs": [
+      "lesson32#2"
+    ],
+    "difficulty": 2,
+    "stem": "会議が 何時に 始まる（　）、田中さんに 聞いて ください。",
+    "options": [
+      "ように",
+      "か",
+      "かどうか",
+      "ことに"
+    ],
+    "answer": 1,
+    "full": "会議が 何時に 始まるか、田中さんに 聞いて ください。",
+    "kj": "会議が何時に始まるか、田中さんに聞いてください。",
+    "tr": {
+      "zh": "请问一下田中会议几点开始。",
+      "en": "Please ask Mr Tanaka what time the meeting starts."
+    },
+    "why": {
+      "zh": "线索：「何時に」是疑问词，后面是「聞いて ください」——要问的内容放进句子里。\n规则：疑问词＋普通形＋「か」表示间接疑问：「何時に始まるか 聞く」。",
+      "en": "Clue: 「何時に」 is a question word, followed by 「聞いて ください」 — the question is being embedded.\nRule: Question word ＋ plain form ＋ 「か」 makes an embedded question: 「何時に始まるか 聞く」."
+    },
+    "wrong": [
+      {
+        "zh": "「ように」可以接「言う」「頼む」表示转述请求，但不能接「聞く」表示问的内容。",
+        "en": "「ように」 goes with 「言う」 or 「頼む」 to relay a request, not with 「聞く」 for what you ask."
+      },
+      null,
+      {
+        "zh": "有疑问词「何時」时不用「かどうか」，「かどうか」只用于是非问题。",
+        "en": "With the question word 「何時」 you don't use 「かどうか」; it is for yes/no questions only."
+      },
+      {
+        "zh": "「ことに」是“决定”等句型的一部分（ことにする），不能把问题放进「聞く」前面。",
+        "en": "「ことに」 belongs to patterns like 「ことにする」; it can't embed a question before 「聞く」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l32-024",
+    "type": "bunpou",
+    "refs": [
+      "lesson32#8"
+    ],
+    "difficulty": 1,
+    "stem": "A「この 計画に ついて、どう 思いますか。」\nB「わたしも 田中さん（　）同じ 考えです。」",
+    "options": [
+      "に",
+      "の",
+      "と",
+      "を"
+    ],
+    "answer": 2,
+    "full": "A「この 計画に ついて、どう 思いますか。」 B「わたしも 田中さんと 同じ 考えです。」",
+    "kj": "A「この計画について、どう思いますか。」B「私も田中さんと同じ考えです。」",
+    "tr": {
+      "zh": "A：关于这个计划，你怎么看？B：我和田中的想法一样。",
+      "en": "A: What do you think about this plan? B: I think the same as Mr Tanaka."
+    },
+    "why": {
+      "zh": "线索：空格后是「同じ」，前面是比较的对象「田中さん」。\n规则：说“和……一样”，比较的对象用「と」：「田中さんと 同じ」。",
+      "en": "Clue: The blank is followed by 「同じ」, and 「田中さん」 is what's being compared with.\nRule: \"The same as …\" marks the thing compared with 「と」: 「田中さんと 同じ」."
+    },
+    "wrong": [
+      {
+        "zh": "「同じ」的比较对象不用「に」，「田中さんに同じ」不自然。",
+        "en": "「同じ」 doesn't take 「に」 for what's compared; 「田中さんに同じ」 is wrong."
+      },
+      {
+        "zh": "「田中さんの同じ考え」不成立；「同じ」前面要用「と」表示和谁一样。",
+        "en": "「田中さんの同じ考え」 is not Japanese; 「同じ」 needs 「と」 for whom it's the same as."
+      },
+      null,
+      {
+        "zh": "「を」标记宾语，「同じ」不是动词，不能接「を」。",
+        "en": "「を」 marks an object; 「同じ」 isn't a verb and can't take 「を」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l32-025",
+    "type": "bunpou",
+    "refs": [
+      "lesson32#8"
+    ],
+    "difficulty": 2,
+    "stem": "姉は 母と（　）病院で はたらいて います。",
+    "options": [
+      "同じな",
+      "同じに",
+      "同じの",
+      "同じ"
+    ],
+    "answer": 3,
+    "full": "姉は 母と 同じ 病院で はたらいて います。",
+    "kj": "姉は母と同じ病院で働いています。",
+    "tr": {
+      "zh": "姐姐和妈妈在同一家医院工作。",
+      "en": "My sister works at the same hospital as my mother."
+    },
+    "why": {
+      "zh": "线索：空格后直接是名词「病院」，前面是「母と」。\n规则：「同じ」修饰名词时直接接，不加「な」也不加「の」：「同じ 病院」。",
+      "en": "Clue: The blank is followed directly by the noun 「病院」, with 「母と」 before it.\nRule: 「同じ」 goes straight onto a noun, with no 「な」 and no 「の」: 「同じ 病院」."
+    },
+    "wrong": [
+      {
+        "zh": "「同じ」虽然像な形容词，但修饰名词时不加「な」，「同じな病院」是常见错误。",
+        "en": "「同じ」 looks like a な-adjective but takes no 「な」 before a noun; 「同じな病院」 is a classic mistake."
+      },
+      {
+        "zh": "「同じに」是副词形，不能修饰名词「病院」。",
+        "en": "「同じに」 is adverbial and can't describe the noun 「病院」."
+      },
+      {
+        "zh": "「同じの病院」不成立，「同じ」后面不加「の」。",
+        "en": "「同じの病院」 is not Japanese; 「同じ」 takes no 「の」."
+      },
+      null
+    ]
   }
 ]

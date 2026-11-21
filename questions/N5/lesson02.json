@@ -1113,5 +1113,170 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n5-l02-028",
+    "type": "bunpou",
+    "refs": [
+      "lesson02#3",
+      "lesson02#8"
+    ],
+    "difficulty": 1,
+    "stem": "日曜日は 友だちが いそがしかったので、（　）えいがを 見に 行きました。",
+    "options": [
+      "ひとりと",
+      "ひとりで",
+      "ひとりに",
+      "ひとりが"
+    ],
+    "answer": 1,
+    "full": "日曜日は 友だちが いそがしかったので、ひとりで えいがを 見に 行きました。",
+    "kj": "日曜日は友達が忙しかったので、一人で映画を見に行きました。",
+    "tr": {
+      "zh": "星期天朋友很忙，所以我一个人去看了电影。",
+      "en": "My friends were busy on Sunday, so I went to see a film on my own."
+    },
+    "why": {
+      "zh": "线索：朋友很忙，没人一起去，所以是自己一个人去的。\n规则：说几个人做某事，人数后面用「で」：「ひとりで 行く」（一个人去）、「みんなで」（大家一起）。",
+      "en": "Clue: The friends were busy, so nobody went along — the speaker went alone.\nRule: How many people do something takes 「で」 after the number: 「ひとりで 行く」 (go alone), 「みんなで」 (all together)."
+    },
+    "wrong": [
+      {
+        "zh": "「と」是“和谁一起”，「ひとりと」不能表示“一个人”。",
+        "en": "「と」 means \"together with someone\"; 「ひとりと」 can't mean \"alone\"."
+      },
+      null,
+      {
+        "zh": "「に」表示对象或时间，「ひとりに」不能说明几个人去。",
+        "en": "「に」 marks a target or a time; 「ひとりに」 can't say how many people went."
+      },
+      {
+        "zh": "「が」标记主语，「ひとりが」放在这里意思不通。",
+        "en": "「が」 marks the subject; 「ひとりが」 here doesn't make sense."
+      }
+    ]
+  },
+  {
+    "id": "n5-l02-029",
+    "type": "bunpou",
+    "refs": [
+      "lesson02#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「週末は 何を しましたか。」\nB「かぞく（　）こうえんへ 行って、おべんとうを 食べました。」",
+    "options": [
+      "へ",
+      "に",
+      "を",
+      "で"
+    ],
+    "answer": 3,
+    "full": "A「週末は 何を しましたか。」 B「かぞくで こうえんへ 行って、おべんとうを 食べました。」",
+    "kj": "A「週末は何をしましたか。」B「家族で公園へ行って、お弁当を食べました。」",
+    "tr": {
+      "zh": "A：周末做了什么？B：全家一起去公园吃了便当。",
+      "en": "A: What did you do at the weekend? B: We went to the park as a family and had a packed lunch."
+    },
+    "why": {
+      "zh": "线索：去公园的是全家人，「かぞく」说的是以什么样的一群人去的。\n规则：「かぞくで」「みんなで」「ふたりで」——表示几个人、以什么方式一起做，用「で」。",
+      "en": "Clue: The whole family went to the park; 「かぞく」 says what group went together.\nRule: 「かぞくで」, 「みんなで」, 「ふたりで」 — who does something together takes 「で」."
+    },
+    "wrong": [
+      {
+        "zh": "「へ」表示移动的方向，去的地方已经是「こうえんへ」，「かぞくへ」意思不通。",
+        "en": "「へ」 marks a direction; the destination is already 「こうえんへ」, so 「かぞくへ」 makes no sense."
+      },
+      {
+        "zh": "「に」表示目的地或对象，「かぞくに こうえんへ 行く」意思不通。",
+        "en": "「に」 marks a destination or target; 「かぞくに こうえんへ 行く」 makes no sense."
+      },
+      {
+        "zh": "「を」标记宾语，「かぞく」不是“去”的宾语。",
+        "en": "「を」 marks an object; 「かぞく」 isn't the object of going."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n5-l02-030",
+    "type": "bunpou",
+    "refs": [
+      "lesson02#2"
+    ],
+    "difficulty": 1,
+    "stem": "わたしは 一週間（　）二回 プールで およぎます。",
+    "options": [
+      "を",
+      "と",
+      "に",
+      "へ"
+    ],
+    "answer": 2,
+    "full": "わたしは 一週間に 二回 プールで およぎます。",
+    "kj": "私は一週間に二回プールで泳ぎます。",
+    "tr": {
+      "zh": "我一周在游泳池游两次泳。",
+      "en": "I swim at the pool twice a week."
+    },
+    "why": {
+      "zh": "线索：「一週間」是一段时间，后面是次数「二回」。\n规则：说频率“多长时间里几次”，用「时间段＋に＋次数」：「一週間に 二回」。",
+      "en": "Clue: 「一週間」 is a span of time, followed by the number of times 「二回」.\nRule: Frequency — \"so many times per period\" — is time span ＋ 「に」 ＋ number: 「一週間に 二回」."
+    },
+    "wrong": [
+      {
+        "zh": "「を」标记宾语，「一週間を二回」意思不通。",
+        "en": "「を」 marks an object; 「一週間を二回」 makes no sense."
+      },
+      {
+        "zh": "「と」是“和”，「一週間と二回」不能表示频率。",
+        "en": "「と」 means \"and\"; 「一週間と二回」 can't express frequency."
+      },
+      null,
+      {
+        "zh": "「へ」表示移动的方向，不能接在时间后面。",
+        "en": "「へ」 marks the direction of movement; it can't follow a time."
+      }
+    ]
+  },
+  {
+    "id": "n5-l02-031",
+    "type": "bunpou",
+    "refs": [
+      "lesson02#2"
+    ],
+    "difficulty": 2,
+    "stem": "A「よく くにへ かえりますか。」\nB「いいえ、とおいので、一年（　）一回だけです。」",
+    "options": [
+      "に",
+      "が",
+      "を",
+      "まで"
+    ],
+    "answer": 0,
+    "full": "A「よく くにへ かえりますか。」 B「いいえ、とおいので、一年に 一回だけです。」",
+    "kj": "A「よく国へ帰りますか。」B「いいえ、遠いので、一年に一回だけです。」",
+    "tr": {
+      "zh": "A：你常回国吗？B：不，因为太远了，一年只回一次。",
+      "en": "A: Do you often go back to your country? B: No, it's far, so only once a year."
+    },
+    "why": {
+      "zh": "线索：A问「よく」（经常），B回答多久回一次：「一年（　）一回」。\n规则：频率用「时间段＋に＋次数」：「一年に 一回」＝一年一次。",
+      "en": "Clue: A asks about 「よく」 (often), and B says how often: 「一年（　）一回」.\nRule: Frequency is time span ＋ 「に」 ＋ number: 「一年に 一回」 = once a year."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「が」标记主语，「一年が一回」意思不通。",
+        "en": "「が」 marks the subject; 「一年が一回」 makes no sense."
+      },
+      {
+        "zh": "「を」标记宾语，「一年を一回」不能表示频率。",
+        "en": "「を」 marks an object; 「一年を一回」 can't express frequency."
+      },
+      {
+        "zh": "「まで」表示终点“到……为止”，「一年まで一回」意思不通。",
+        "en": "「まで」 marks an endpoint (\"until\"); 「一年まで一回」 makes no sense."
+      }
+    ]
   }
 ]

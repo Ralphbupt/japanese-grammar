@@ -391,6 +391,140 @@ This lesson covers N2 grammar for "expertise," "results," and "near-misses." 「
 
 ---
 
+## 7. 〜たところ（……了一下，结果……）||7. 〜たところ (When I did…, it turned out…)
+
+### 接続||Conjugation
+:::zh
+- 動詞た形 + ところ（、）+ 结果（多为过去形）
+
+※ 后句是"做了之后发现的情况 / 得到的结果"，不能是说话人自己的意志、请求。  
+※ 不要和「〜たところで」（第59课第4点，就算……也没用）、「〜たところだ」（第23课第2点，刚刚……）混淆，三者只差一两个假名。
+:::
+:::en
+- Verb ta-form + ところ（、）+ result (usually past tense)
+
+※ The second half is what one found out or what happened as a result — never the speaker's own intention or request.  
+※ Don't confuse it with 「〜たところで」 (Lesson 59 point 4, "even if… it's no use") or 「〜たところだ」 (Lesson 23 point 2, "have just…"); they differ by only a kana or two.
+:::
+
+### 含义||Meaning
+:::zh
+"（试着）做了……，结果……""……一看，发现……"。前句是说话人做的一个动作（问、查、试、联系），后句是由此得知的事实或出现的结果，结果可好可坏，常带意外感。书面、正式，报告、商务邮件里很常见：「確認したところ、〜でした」（经确认，……）。
+:::
+:::en
+"When I (tried and) did…, it turned out…" or "on doing…, I found…." The first half is an action the speaker takes (asking, checking, trying, contacting); the second is the fact learned or the result that followed — good or bad, often unexpected. Formal and written; very common in reports and business email: 「確認したところ、〜でした」 ("Upon checking, …").
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 駅前の店に問い合わせた**ところ**、その商品はもう売り切れだった。（问了一下车站前的店，结果那个商品已经卖完了。）
+2. 医者に相談した**ところ**、しばらく様子を見るように言われた。（去找医生商量，结果医生让我先观察一段时间。）
+3. 先輩に司会をお願いした**ところ**、快く引き受けてくれた。（拜托前辈当主持人，结果他爽快地答应了。）
+4. 売上のデータを調べ直した**ところ**、入力ミスがいくつも見つかった。（重新核对了销售数据，结果发现了好几处输入错误。）
+:::
+:::en
+1. 駅前の店に問い合わせた**ところ**、その商品はもう売り切れだった。(When I asked the shop by the station, that item was already sold out.)
+2. 医者に相談した**ところ**、しばらく様子を見るように言われた。(When I consulted the doctor, I was told to wait and see for a while.)
+3. 先輩に司会をお願いした**ところ**、快く引き受けてくれた。(When I asked my senior colleague to host, he gladly agreed.)
+4. 売上のデータを調べ直した**ところ**、入力ミスがいくつも見つかった。(When I rechecked the sales data, I found several input errors.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| たところ | 做了……，结果…… | 后句是已经发生的发现或结果 |
+| たところで | 就算……也（没用） | 第59课第4点，后句是否定的判断「〜ない」「無駄だ」 |
+| たところだ | 刚刚…… | 第23课第2点，表示时间阶段，句子到此结束 |
+| たら（发现） | ……一看，发现 | 口语，意思相近；「たところ」更正式 |
+| ところだった | 差一点就…… | 本课第6点，前接辞书形，事情没有发生 |
+
+> 「頼んでみたところ、引き受けてくれた」= 试着拜托了一下，结果答应了（结果）  
+> 「頼んでみたところで、引き受けてくれないだろう」= 就算拜托也不会答应吧（没用）  
+> 「今、頼んでみたところだ」= 刚刚拜托过（时间）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| たところ | when I did…, it turned out… | The second half is a finding or result that has happened |
+| たところで | even if… (it's no use) | Lesson 59 point 4; followed by a negative judgment 「〜ない」「無駄だ」 |
+| たところだ | have just… | Lesson 23 point 2; a point in time, and the sentence ends there |
+| たら (discovery) | when I did…, I found | Casual, similar meaning; 「たところ」 is more formal |
+| ところだった | almost… | Point 6 of this lesson; dictionary form, and it didn't happen |
+
+> 「頼んでみたところ、引き受けてくれた」 = I asked, and it turned out they agreed (result)  
+> 「頼んでみたところで、引き受けてくれないだろう」 = even if I ask, they won't agree (no use)  
+> 「今、頼んでみたところだ」 = I've just asked (time)
+:::
+
+---
+
+## 8. 〜そうになる（差点……／眼看就要……）||8. 〜そうになる (Almost… / Be on the verge of…)
+
+### 接続||Conjugation
+:::zh
+- 動詞ます形（去ます）+ そうになる / そうになった
+
+※ 多用过去形「そうになった」，表示"差点……（但没有）"。  
+※ 动词多是不受控制的变化：転ぶ、倒れる、泣く、笑う、忘れる、眠る、ぶつかる。
+:::
+:::en
+- Verb masu-stem + そうになる / そうになった
+
+※ Mostly past tense, 「そうになった」: "almost… (but didn't)."  
+※ The verb is usually something that happens outside one's control: 転ぶ, 倒れる, 泣く, 笑う, 忘れる, 眠る, ぶつかる.
+:::
+
+### 含义||Meaning
+:::zh
+某件（多为不希望发生的）事眼看就要发生："差点……""险些……""快要……了"。描写的是那一刻的状态或险情，常与「思わず」「もう少しで」「危うく」一起用。因为是控制不住的事，前面不用意志动词（不说「行きそうになった」表示"差点去了"）。
+:::
+:::en
+Something (usually unwanted) was just about to happen: "almost…," "nearly…," "on the verge of…." It describes the state or close call at that moment, often with 「思わず」, 「もう少しで」 or 「危うく」. Because it's about things one can't control, deliberate actions don't go in front of it.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 凍った道で滑って、転び**そうになった**。（在结冰的路上一滑，差点摔倒。）
+2. 友人の結婚式のスピーチを聞いて、思わず泣き**そうになった**。（听了朋友婚礼上的致辞，不禁差点哭出来。）
+3. 会議があまりに長くて、何度も眠り**そうになった**。（会议实在太长，好几次差点睡着。）
+4. 大事な書類を、危うく電車に置き忘れ**そうになった**。（重要的文件险些忘在电车上。）
+:::
+:::en
+1. 凍った道で滑って、転び**そうになった**。(I slipped on the icy road and nearly fell.)
+2. 友人の結婚式のスピーチを聞いて、思わず泣き**そうになった**。(Listening to the speech at my friend's wedding, I almost cried in spite of myself.)
+3. 会議があまりに長くて、何度も眠り**そうになった**。(The meeting was so long that I nearly fell asleep several times.)
+4. 大事な書類を、危うく電車に置き忘れ**そうになった**。(I very nearly left important documents on the train.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| ますそうになった | 差点…… | 前接ます形；描写当时快要发生的状态 |
+| 辞書形ところだった | 差一点就…… | 本课第6点，前接辞书形；回头看"差点成了事实"，常带后怕 |
+| ますそうもない／そうにない | 看起来不会…… | 第53课第3点，是推测，不是"差点" |
+| ますかける | 差点……／做到一半 | 也可表示"差点"：「死にかけた」 |
+
+> 「転びそうになった」= 差点摔倒（ます形 + そうになる）  
+> 「もう少しで転ぶところだった」= 差一点就摔了（辞书形 + ところだった）  
+> 「雨はやみそうにない」= 雨看样子停不了（推测）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| masu-stem + そうになった | almost… | Masu-stem; describes the state of being about to happen |
+| dictionary form + ところだった | very nearly… | Point 6 of this lesson; dictionary form; looks back at what almost became real, often with relief |
+| masu-stem + そうもない／そうにない | doesn't look like… | Lesson 53 point 3; a guess, not "almost" |
+| masu-stem + かける | almost… / half-way through | Can also mean "almost": 「死にかけた」 |
+
+> 「転びそうになった」 = I nearly fell (masu-stem + そうになる)  
+> 「もう少しで転ぶところだった」 = I very nearly fell (dictionary form + ところだった)  
+> 「雨はやみそうにない」 = the rain doesn't look like stopping (a guess)
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

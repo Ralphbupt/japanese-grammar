@@ -776,5 +776,245 @@
       },
       null
     ]
+  },
+  {
+    "id": "n3-l53-021",
+    "type": "bunpou",
+    "refs": [
+      "lesson53#7"
+    ],
+    "difficulty": 1,
+    "stem": "楽しみにしていた映画だったが、（　）面白くなかった。途中で帰りたくなったくらいだ。",
+    "options": [
+      "たまに",
+      "少しも",
+      "めったに",
+      "なかなか"
+    ],
+    "answer": 1,
+    "full": "楽しみにしていた映画だったが、少しも面白くなかった。途中で帰りたくなったくらいだ。",
+    "tr": {
+      "zh": "那是我一直很期待的电影，结果一点也不好看，看到一半都想走了。",
+      "en": "I'd been looking forward to the film, but it wasn't interesting at all — I even felt like leaving halfway through."
+    },
+    "why": {
+      "zh": "线索：后面是否定「面白くなかった」，又说「途中で帰りたくなった」，说明程度为零。\n规则：「少しも／ちっとも〜ない」＝一点也不……，把程度否定到零，可以接形容词的否定。\n辨析：「めったに〜ない」说的是频率（很少），一部电影看一次，谈不上频率。",
+      "en": "Clue: The negative 「面白くなかった」, plus 「途中で帰りたくなった」, shows zero degree.\nRule: 「少しも／ちっとも〜ない」 = not… at all: denies the degree down to zero; works with negative adjectives.\nContrast: 「めったに〜ない」 is about frequency (rarely); watching one film once has no frequency."
+    },
+    "wrong": [
+      {
+        "zh": "「たまに」是“偶尔”，说一部电影“偶尔不好看”意思不通。",
+        "en": "「たまに」 means \"occasionally\"; one film being \"occasionally\" dull makes no sense."
+      },
+      null,
+      {
+        "zh": "「めったに〜ない」（本课第6点）表示频率低，不能形容一次看电影的感受。",
+        "en": "「めったに〜ない」 (point 6) is low frequency; it can't describe one viewing."
+      },
+      {
+        "zh": "「なかなか〜ない」（本课第8点）是期待的事迟迟不实现，要接动词，不接「面白くない」。",
+        "en": "「なかなか〜ない」 (point 8) is for something hoped for that won't happen and takes a verb, not 「面白くない」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l53-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson53#7"
+    ],
+    "difficulty": 2,
+    "stem": "このかばんは見た目は大きいが、とても軽いので、一日中持って歩いても（　）。",
+    "options": [
+      "疲れるに違いない",
+      "疲れたことにする",
+      "少しも疲れない",
+      "疲れずにはいられない"
+    ],
+    "answer": 2,
+    "full": "このかばんは見た目は大きいが、とても軽いので、一日中持って歩いても少しも疲れない。",
+    "tr": {
+      "zh": "这个包看着大，但非常轻，就算拎着走一整天也一点都不累。",
+      "en": "This bag looks big, but it's so light that you don't get tired at all even carrying it around all day."
+    },
+    "why": {
+      "zh": "线索：「とても軽いので」是原因，「〜ても」后面要一个和“累”相反的结果。\n规则：「少しも＋否定」＝一点也不……，「少しも」后面一定是否定形。\n辨析：「疲れずにはいられない」是“忍不住会累”，和「とても軽いので」矛盾。",
+      "en": "Clue: 「とても軽いので」 is the reason, so after 「〜ても」 comes the opposite of getting tired.\nRule: 「少しも + negative」 = not… at all; 「少しも」 always takes a negative.\nContrast: 「疲れずにはいられない」 means \"can't help getting tired\", contradicting 「とても軽いので」."
+    },
+    "wrong": [
+      {
+        "zh": "「に違いない」是断定“一定会累”，和「とても軽いので」矛盾。",
+        "en": "「に違いない」 asserts \"you're bound to get tired\", contradicting 「とても軽いので」."
+      },
+      {
+        "zh": "「たことにする」是“就当作……了”，和这里的因果关系无关。",
+        "en": "「たことにする」 means \"treat it as having…\"; it has nothing to do with this cause and effect."
+      },
+      null,
+      {
+        "zh": "「ずにはいられない」（本课第2点）是“忍不住……”，“忍不住累”既不通，也和「軽い」矛盾。",
+        "en": "「ずにはいられない」 (point 2) means \"can't help…\"; it doesn't fit tiredness and contradicts 「軽い」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l53-023",
+    "type": "bunpou",
+    "refs": [
+      "lesson53#8"
+    ],
+    "difficulty": 1,
+    "stem": "引っ越してきたばかりで知り合いもいないので、（　）この町の生活に慣れない。",
+    "options": [
+      "めったに",
+      "なかなか",
+      "ぜひ",
+      "別に"
+    ],
+    "answer": 1,
+    "full": "引っ越してきたばかりで知り合いもいないので、なかなかこの町の生活に慣れない。",
+    "tr": {
+      "zh": "刚搬来，也没有熟人，所以怎么也适应不了这个城市的生活。",
+      "en": "I've only just moved here and don't know anyone, so I'm finding it hard to get used to life in this town."
+    },
+    "why": {
+      "zh": "线索：想适应（慣れる）但因为「引っ越してきたばかり」「知り合いもいない」而做不到。\n规则：「なかなか＋动词否定」＝迟迟不……、怎么也不……，想实现的事很难实现、要花时间。\n辨析：「めったに〜ない」说频率低（很少），“很少适应”不成立；适应是一个过程，不是反复发生的事。",
+      "en": "Clue: The speaker wants to settle in (慣れる) but can't, because 「引っ越してきたばかり」 and 「知り合いもいない」.\nRule: 「なかなか + negative verb」 = just won't…, slow to…: something wanted is hard to achieve and takes time.\nContrast: 「めったに〜ない」 is low frequency; settling in is a process, not something that recurs."
+    },
+    "wrong": [
+      {
+        "zh": "「めったに〜ない」（本课第6点）表示频率低，“很少适应”意思不通。",
+        "en": "「めったに〜ない」 (point 6) is low frequency; \"rarely get used to\" makes no sense."
+      },
+      null,
+      {
+        "zh": "「ぜひ」要接愿望或请求（ぜひ来てください），不接否定。",
+        "en": "「ぜひ」 goes with a wish or request (ぜひ来てください), not a negative."
+      },
+      {
+        "zh": "「別に〜ない」（本课第5点）是“并不特别……”，用来淡化，不说明“适应不了”的原因关系。",
+        "en": "「別に〜ない」 (point 5) means \"not particularly\" and plays things down; it doesn't fit \"can't get used to\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-l53-024",
+    "type": "bunpou",
+    "refs": [
+      "lesson53#8"
+    ],
+    "difficulty": 2,
+    "stem": "もう二十分も待っているのに、バスが（　）来ない。事故でもあったのだろうか。",
+    "options": [
+      "別に",
+      "決して",
+      "なかなか",
+      "めったに"
+    ],
+    "answer": 2,
+    "full": "もう二十分も待っているのに、バスがなかなか来ない。事故でもあったのだろうか。",
+    "tr": {
+      "zh": "已经等了整整二十分钟了，公交车还是迟迟不来。是不是出了什么事故？",
+      "en": "I've been waiting twenty minutes already and the bus still isn't coming. Has there been an accident?"
+    },
+    "why": {
+      "zh": "线索：「二十分も待っているのに」：等的车一直不来。\n规则：「なかなか〜ない」＝期待的事迟迟不发生。\n辨析：「めったに〜ない」说的是平时班次少（バスはめったに来ない＝这里很少有车），而这里是等着的这一班车一直不来。",
+      "en": "Clue: 「二十分も待っているのに」: the bus being waited for keeps not arriving.\nRule: 「なかなか〜ない」 = something expected keeps not happening.\nContrast: 「めったに〜ない」 describes rare services in general (バスはめったに来ない = buses seldom run here); here it's the one bus being waited for."
+    },
+    "wrong": [
+      {
+        "zh": "「別に〜ない」是“并不特别……”，“公交并不特别来”意思不通。",
+        "en": "「別に〜ない」 means \"not particularly\"; it makes no sense with the bus."
+      },
+      {
+        "zh": "「決して〜ない」（本课第4点）表示意志或判断上的“绝不”，不用来说车没来。",
+        "en": "「決して〜ない」 (point 4) is an emphatic \"never\" of will or judgment, not for a late bus."
+      },
+      null,
+      {
+        "zh": "「めったに〜ない」说平时很少，和「二十分も待っているのに」这次等车的情况不合。",
+        "en": "「めったに〜ない」 is \"seldom\" in general and doesn't fit waiting for this one bus."
+      }
+    ]
+  },
+  {
+    "id": "n3-l53-025",
+    "type": "bunpou",
+    "refs": [
+      "lesson53#9"
+    ],
+    "difficulty": 1,
+    "stem": "来週の試験は、来年の就職にも関係があるので、（　）合格しなければならない。",
+    "options": [
+      "なかなか",
+      "少しも",
+      "どうしても",
+      "めったに"
+    ],
+    "answer": 2,
+    "full": "来週の試験は、来年の就職にも関係があるので、どうしても合格しなければならない。",
+    "tr": {
+      "zh": "下周的考试和明年就业也有关系，所以无论如何都必须通过。",
+      "en": "Next week's exam affects my job hunting next year too, so I have to pass it no matter what."
+    },
+    "why": {
+      "zh": "线索：后面是义务「合格しなければならない」，不是否定。\n规则：「どうしても＋〜なければならない／〜たい」＝无论如何都要……；后接否定时是“怎么也……不了”。\n辨析：「なかなか」「少しも」「めったに」后面都要否定，不能接「なければならない」。",
+      "en": "Clue: An obligation follows, 「合格しなければならない」, not a negative.\nRule: 「どうしても + 〜なければならない／〜たい」 = must… no matter what; with a negative it's \"just can't…\".\nContrast: 「なかなか」, 「少しも」 and 「めったに」 all need a negative and can't take 「なければならない」."
+    },
+    "wrong": [
+      {
+        "zh": "「なかなか〜ない」（本课第8点）要接否定，不接义务「なければならない」。",
+        "en": "「なかなか〜ない」 (point 8) needs a negative, not the obligation 「なければならない」."
+      },
+      {
+        "zh": "「少しも」（本课第7点）后面一定是否定，不能接义务。",
+        "en": "「少しも」 (point 7) always takes a negative, not an obligation."
+      },
+      null,
+      {
+        "zh": "「めったに」（本课第6点）表示频率低，要接否定。",
+        "en": "「めったに」 (point 6) is low frequency and needs a negative."
+      }
+    ]
+  },
+  {
+    "id": "n3-l53-026",
+    "type": "bunpou",
+    "refs": [
+      "lesson53#9"
+    ],
+    "difficulty": 2,
+    "stem": "顔はよく覚えているのに、あの人の名前が（　）思い出せない。",
+    "options": [
+      "ぜひ",
+      "どうしても",
+      "めったに",
+      "別に"
+    ],
+    "answer": 1,
+    "full": "顔はよく覚えているのに、あの人の名前がどうしても思い出せない。",
+    "tr": {
+      "zh": "脸记得很清楚，可那个人的名字怎么也想不起来。",
+      "en": "I remember the face clearly, but I just can't recall that person's name."
+    },
+    "why": {
+      "zh": "线索：「覚えているのに」：想记起来却做不到；后面是可能形的否定「思い出せない」。\n规则：「どうしても＋可能形否定」＝想尽办法也……不了。\n辨析：「めったに」说频率（很少），这里说的是现在怎么想都想不起来的一件事。",
+      "en": "Clue: 「覚えているのに」: the speaker tries but fails; the potential negative 「思い出せない」 follows.\nRule: 「どうしても + negative potential」 = just can't…, whatever one tries.\nContrast: 「めったに」 is about frequency (rarely); this is one thing the speaker can't recall right now."
+    },
+    "wrong": [
+      {
+        "zh": "「ぜひ」接愿望或请求，不接否定。",
+        "en": "「ぜひ」 goes with a wish or request, not a negative."
+      },
+      null,
+      {
+        "zh": "「めったに〜ない」（本课第6点）表示很少发生，“很少想不起来”不是这里的意思。",
+        "en": "「めったに〜ない」 (point 6) means \"seldom\"; that's not the point here."
+      },
+      {
+        "zh": "「別に〜ない」（本课第5点）是“并不特别……”，和「のに」表达的着急语气不合。",
+        "en": "「別に〜ない」 (point 5) means \"not particularly\", which doesn't fit the frustration in 「のに」."
+      }
+    ]
   }
 ]

@@ -703,5 +703,85 @@
       },
       null
     ]
+  },
+  {
+    "id": "n2-l62-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson62#5"
+    ],
+    "difficulty": 2,
+    "stem": "この国で自動車（　）二番目に輸出額が多いのは、電子部品だ。",
+    "options": [
+      "に加えて",
+      "に次いで",
+      "をはじめ",
+      "に比べて"
+    ],
+    "answer": 1,
+    "full": "この国で自動車に次いで二番目に輸出額が多いのは、電子部品だ。",
+    "tr": {
+      "zh": "在这个国家，出口额仅次于汽车、排第二的是电子零件。",
+      "en": "In this country, the export with the second-highest value after cars is electronic parts."
+    },
+    "why": {
+      "zh": "线索：后面有「二番目に」，说的是排名。\n规则：名词＋「に次いで」＝仅次于……，表示在排名、规模上紧跟在它后面。\n辨析：「に加えて」只是追加（……之外还有），不能和「二番目に」连用表示排名。",
+      "en": "Clue: 「二番目に」 follows, so this is about ranking.\nRule: noun ＋ 「に次いで」 = next to…, coming right behind it in rank or size.\nContrast: 「に加えて」 only adds (on top of…); it can't combine with 「二番目に」 to show rank."
+    },
+    "wrong": [
+      {
+        "zh": "「に加えて」是“除了……还……”的追加，没有排名的意思，和「二番目に」接不上。",
+        "en": "「に加えて」 (in addition to) adds without ranking, so it doesn't fit 「二番目に」."
+      },
+      null,
+      {
+        "zh": "「をはじめ」是“以……为首”，举出代表后接“等很多”，不能说“以汽车为首第二多”。",
+        "en": "「をはじめ」 (starting with) names a leading example before \"and many others\"; it can't lead into \"second most.\""
+      },
+      {
+        "zh": "「に比べて」是“和……相比”，后面接比较结果（多・少），不接「二番目に」。",
+        "en": "「に比べて」 (compared with) is followed by a comparison like more/less, not 「二番目に」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l62-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson62#5"
+    ],
+    "difficulty": 3,
+    "stem": "今年の夏の平均気温は、観測史上最も暑かった昨年（　）、二番目の高さとなった。",
+    "options": [
+      "に先立って",
+      "をめぐって",
+      "に続いて",
+      "に次いで"
+    ],
+    "answer": 3,
+    "full": "今年の夏の平均気温は、観測史上最も暑かった昨年に次いで、二番目の高さとなった。",
+    "tr": {
+      "zh": "今年夏天的平均气温仅次于观测史上最热的去年，创下第二高。",
+      "en": "This summer's average temperature was the second highest on record, after last year, the hottest ever."
+    },
+    "why": {
+      "zh": "线索：去年是「最も暑かった」（第一），今年是「二番目の高さ」。\n规则：「AはBに次いで二番目」＝A仅次于B，排第二。\n辨析：「に続いて」只表示时间上接着发生（继……之后也……），不表示排名；说“继去年之后”，会变成今年也和去年一样，和“第一、第二”的排名对不上。",
+      "en": "Clue: Last year was 「最も暑かった」 (first) and this year is 「二番目の高さ」.\nRule: 「AはBに次いで二番目」 = A comes second, after B.\nContrast: 「に続いて」 only means \"following on from\" in time and says nothing about rank; \"following last year\" would suggest this year was the same as last year, not ranked below it."
+    },
+    "wrong": [
+      {
+        "zh": "「に先立って」是“在……之前（先做）”，用于准备、仪式，不用于排名。",
+        "en": "「に先立って」 (prior to) is about doing something beforehand, not about rank."
+      },
+      {
+        "zh": "「をめぐって」是“围绕……（争论）”，后面要接议论、对立。",
+        "en": "「をめぐって」 (over / surrounding) needs a dispute or debate after it."
+      },
+      {
+        "zh": "「に続いて」只表示时间上的先后（接着……），不表示“第一、第二”的排名。",
+        "en": "「に続いて」 only shows order in time (following…), not first and second place."
+      },
+      null
+    ]
   }
 ]

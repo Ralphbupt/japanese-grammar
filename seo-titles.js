@@ -566,4 +566,11 @@ module.exports = {
     descZh: "あいだ・あいだに・うちに的区别：整段期间 vs 期间中的某一点 vs 趁状态未变，含ないうちに・ているうちに，附例句和自测题。",
     level: "N4/N3",
   },
+  "japanese-conjunctions": {
+    en: "Japanese Conjunctions List by JLPT Level (N5–N1) — dakara, sorede, sokode",
+    zh: "日语接续词用法与区别 — N5到N1按级别整理（だから・それで・そこで・すると）",
+    desc: "Japanese conjunctions list by JLPT level: dakara vs sorede, sokode, suruto, shikashi vs demo, jitsu wa, kou shite — meanings, example pairs, a summary table and a quiz.",
+    descZh: "日语接续词按 N5–N1 级别整理：だから和それで、そこで、すると、しかし和でも的区别，含义、例句、按功能总表和自测题，对应 JLPT 文章の文法。",
+    level: "N5–N1",
+  },
 };

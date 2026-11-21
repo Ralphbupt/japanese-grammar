@@ -43,11 +43,11 @@ Standard newspaper spellings; words normally written in kana stay kana.
 |---|---|---|---|
 | N5 | kanji 7, hyouki 5, bunmyaku 6, iikae 3 | bunpou 9, narabe 4, bunshou 1×4 | short 2×1, mid 1×2, info 1×1 |
 | N4 | kanji 7, hyouki 5, bunmyaku 8, iikae 4, youhou 4 | bunpou 13, narabe 4, bunshou 1×4 | short 3×1, mid 1×3, info 1×2 |
-| N3 | kanji 8, hyouki 6, bunmyaku 11, iikae 5, youhou 5 | bunpou 13, narabe 5, bunshou 1×5 | short 4×1, mid 2×3, long 1×4, info 1×2 |
-| N2 | kanji 5, hyouki 5, gokeisei 5, bunmyaku 7, iikae 5, youhou 5 | bunpou 12, narabe 5, bunshou 1×5 | short 5×1, mid 3×3, tougou 1×2, shuchou 1×3, info 1×2 |
-| N1 | kanji 6, bunmyaku 7, iikae 6, youhou 6 | bunpou 10, narabe 5, bunshou 1×5 | short 4×1, mid 3×3, long 1×4, tougou 1×3, shuchou 1×4, info 1×2 |
+| N3 | kanji 8, hyouki 6, bunmyaku 11, iikae 5, youhou 5 | bunpou 13, narabe 5, bunshou 1×4 | short 4×1, mid 2×3, long 1×4, info 1×2 |
+| N2 | kanji 5, hyouki 5, gokeisei 3, bunmyaku 7, iikae 5, youhou 5 | bunpou 12, narabe 5, bunshou 1×4 | short 5×1, mid 4×2, tougou 1×2, shuchou 1×3, info 1×2 |
+| N1 | kanji 6, bunmyaku 7, iikae 6, youhou 6 | bunpou 10, narabe 5, bunshou 1×4 | short 4×1, mid 4×2, long 1×3, tougou 1×2, shuchou 1×3, info 1×2 |
 
-(N5/N4 from the JLPT's 2020 revision notice; N3/N2/N1 are the usual published counts — the JLPT no longer lists them and says they vary slightly.) Ids `n5-m1-001…` (passages `n5-m1-p1…`). Mock questions are new — never copied from or into the practice bank — and go through the same blind review (`node tools/quiz-blind.js sheet N5/mock-1 moji-goi`). The test's sittings, times and pass marks come from `MOCK` in `build-quiz.js`.
+(N5/N4 from the JLPT's 2020 revision notice; N3/N2/N1 counted from the 2022–2026 papers, 2026-11-21: N1/N2 lost a 語形成 pair, a 文章の文法 blank and a reading/listening item or two in the 2020s; 中文 is now 4 passages × 2.) Ids `n5-m1-001…` (passages `n5-m1-p1…`). Mock questions are new — never copied from or into the practice bank — and go through the same blind review (`node tools/quiz-blind.js sheet N5/mock-1 moji-goi`). The test's sittings, times and pass marks come from `MOCK` in `build-quiz.js`.
 
 A new set every week per level (since 2026-11-08). Checks per set, in order: `node build-quiz.js` (errors; cue warnings, incl. answers falling in a rhythm — fix with `node tools/quiz-derhythm.js <file>`, never by cycling positions by hand), `node tools/choukai-check.js N…`, a blind solve by a reviewer who hasn't seen the key; then pictures (`tools/choukai-images.py`, look at every set), audio (`tools/choukai-audio.py`), `tools/choukai-audio-check.py` twice (it is nondeterministic), `tools/choukai-pitch.py` and, for what it flags, `tools/choukai-voice-check.py`; `python build-audio.py` for the passages' read-aloud and answer sentences.
 
@@ -75,7 +75,7 @@ Vocabulary ranges: N4 word ids `n4-mg-1xx` kanji, `2xx` hyouki, `3xx` bunmyaku, 
 ## Reading (読解) and 文章の文法
 
 - Passages are original, everyday, at the level (N5: a note, a short diary/essay, a message, a timetable/menu/notice). Use furigana-free text — the build adds it.
-- Lengths scale with the level (N5 numbers first; N4 ≈ ×1.2; N3 short ~150–200, mid ~350, long ~550, info ~600; N2 short ~200, mid ~500, tougou 2×~300, shuchou ~900, info ~700). Grammar and vocabulary at the level; topics adult and varied at N3/N2 (work, society, essays, notices).
+- Lengths follow the real papers (medians of the 2010–2026 tests, measured 2026-11-21; Japanese characters without spaces): N5 short ~90, mid ~300, bunshou ~200; N4 short ~120, mid ~400, bunshou ~300; N3 short ~200, mid ~400, long ~600, bunshou ~430; N2 short ~220, mid ~600, tougou 2×~280, shuchou ~900, bunshou ~550, info ~650; N1 short ~210, mid ~600, long ~1000, tougou 2×~320, shuchou ~1000, bunshou ~620, info ~650. Our older passages run 10–20% shorter than this — write new ones at these lengths. Grammar and vocabulary at the level; topics adult and varied at N3/N2 (work, society, essays, notices).
 - `short`: ~80–150 characters, 1 question. `mid`: ~250–350 characters, 2 questions. `info`: a table (`|` lines) plus a few notes and an `intro` saying who wants what; 1–2 questions that need two conditions combined. `bunshou`: an essay/letter of ~200 characters with 3–4 blanks testing connectors, tense, particles and set phrases in context.
 - Each wrong option must be wrong *because of something in the text* (and `wrong[i]` says what). Avoid questions answerable without reading.
 - `tr` on the passage: a full translation (zh + en), shown after answering.

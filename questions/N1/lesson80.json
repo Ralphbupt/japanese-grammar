@@ -891,5 +891,246 @@
         "en": "「〜にしては」 means \"for a … (surprisingly)\" and can't be used with 「いかに」."
       }
     ]
+  },
+  {
+    "id": "n1-l80-024",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#8"
+    ],
+    "difficulty": 2,
+    "stem": "キャッシュレス決済は確かに便利だ。では、現金がまったく必要なくなる（　）、まだそうとは言えない。",
+    "options": [
+      "かというと",
+      "からといって",
+      "にしては",
+      "かと思いきや"
+    ],
+    "answer": 0,
+    "full": "キャッシュレス決済は確かに便利だ。では、現金がまったく必要なくなるかというと、まだそうとは言えない。",
+    "tr": {
+      "zh": "无现金支付确实很方便。可要说现金就完全不需要了，现在还不能这么说。",
+      "en": "Cashless payment is certainly convenient. But does that mean cash will no longer be needed at all? We can't say so yet."
+    },
+    "why": {
+      "zh": "线索：前面「では」把上文推出的结论提出来，空格后是「、まだそうとは言えない」，否定这个结论。\n规则：「〜かというと、そうでもない／そうとは言えない」＝要说是不是……，其实也不……，先设问再否定一般推论。",
+      "en": "Clue: 「では」 raises the conclusion the first sentence suggests, and after the blank 「、まだそうとは言えない」 denies it.\nRule: 「〜かというと、そうでもない／そうとは言えない」 = is it really …? not really — the inference is put as a question, then rejected."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜からといって」后面要接「〜とは限らない」「〜わけではない」这类结尾，不能单独接「、まだそうとは言えない」，而且「では」引出的是设问。",
+        "en": "「〜からといって」 needs an ending like 「〜とは限らない」 or 「〜わけではない」, not 「、まだそうとは言えない」, and 「では」 introduces a question."
+      },
+      {
+        "zh": "「〜にしては」是“就……来说（出乎意料）”，前面要接一个衡量标准，和这里的设问不符。",
+        "en": "「〜にしては」 means \"for a … (surprisingly)\" and needs a yardstick before it, which doesn't fit this question."
+      },
+      {
+        "zh": "「〜かと思いきや」后项是已经发生的意外结果，不能接「そうとは言えない」这种判断。",
+        "en": "「〜かと思いきや」 is followed by a surprising outcome that already happened, not a judgement like 「そうとは言えない」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-025",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#8"
+    ],
+    "difficulty": 3,
+    "stem": "ベテランの彼がなぜ今回の大会に出場しなかった（　）、直前の練習で足首を痛めていたからだ。",
+    "options": [
+      "かといえば",
+      "かと思いきや",
+      "ものを",
+      "にしたって"
+    ],
+    "answer": 0,
+    "full": "ベテランの彼がなぜ今回の大会に出場しなかったかといえば、直前の練習で足首を痛めていたからだ。",
+    "tr": {
+      "zh": "要说身为老将的他为什么没参加这次比赛，是因为赛前训练时扭伤了脚踝。",
+      "en": "The reason the veteran didn't compete this time is that he hurt his ankle in practice just before."
+    },
+    "why": {
+      "zh": "线索：前面有疑问词「なぜ」，句尾是「〜からだ」。\n规则：「疑问词＋〜かといえば／かというと」＝要说为什么……，引出解释，句尾用「〜からだ」「〜のだ」呼应。",
+      "en": "Clue: There is the question word 「なぜ」, and the sentence ends in 「〜からだ」.\nRule: question word + 「〜かといえば／かというと」 = as for why …, introducing an explanation that ends in 「〜からだ」 or 「〜のだ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜かと思いきや」是“原以为……却……”，不和「なぜ」呼应，句尾也不会是「〜からだ」。",
+        "en": "「〜かと思いきや」 means \"I'd thought …, but\"; it doesn't answer 「なぜ」, and doesn't end in 「〜からだ」."
+      },
+      {
+        "zh": "「〜ものを」是“本来……就好了，却……”，表遗憾，不能接在「なぜ」的问句后面引出理由。",
+        "en": "「〜ものを」 expresses regret (\"if only …\") and can't follow a 「なぜ」 question to bring in a reason."
+      },
+      {
+        "zh": "「〜にしたって」是“就算……也”，是让步，和“要说原因”的结构不符。",
+        "en": "「〜にしたって」 is concessive (\"even if …\") and doesn't fit a \"the reason is …\" frame."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-026",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#9"
+    ],
+    "difficulty": 2,
+    "stem": "先方から届いた契約書の案に一応目を（　）、細かい条件まではまだ確認できていない。",
+    "options": [
+      "通しはしたが",
+      "通すまでもなく",
+      "通そうものなら",
+      "通すどころか"
+    ],
+    "answer": 0,
+    "full": "先方から届いた契約書の案に一応目を通しはしたが、細かい条件まではまだ確認できていない。",
+    "tr": {
+      "zh": "对方发来的合同草案我大致是看过了，但细节条件还没来得及确认。",
+      "en": "I did glance over the draft contract the other side sent, but I haven't checked the detailed terms yet."
+    },
+    "why": {
+      "zh": "线索：「一応」（姑且、大致）和后面的「まだ確認できていない」形成“做是做了，但不充分”的转折。\n规则：「ます形＋はしたが」＝……是……了，但……，承认动作本身，后项说结果不够。接续是ます形語幹＋は。",
+      "en": "Clue: 「一応」 (more or less) and 「まだ確認できていない」 make a \"done, but not properly\" turn.\nRule: masu-stem + 「はしたが」 = did …, but …: grants the action, then says it fell short. Form: masu-stem + は."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜までもなく」是“用不着……”，表示没做这个动作，和“细节还没确认”的转折接不上。",
+        "en": "「〜までもなく」 means \"without even needing to …\" — the action wasn't done, which doesn't lead into \"haven't checked the details\"."
+      },
+      {
+        "zh": "「〜（よ）うものなら」是“万一……的话就糟了”，表示假设，不能描述已经做过的事。",
+        "en": "「〜（よ）うものなら」 means \"if one were to … (it'd be a disaster)\", a hypothesis, not something already done."
+      },
+      {
+        "zh": "「〜どころか」是“别说……，反而／连……都”，意思是没有看，和「一応」矛盾。",
+        "en": "「〜どころか」 means \"far from …\", implying it wasn't looked at at all, which clashes with 「一応」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-027",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#9"
+    ],
+    "difficulty": 3,
+    "stem": "たった一度の失敗で、これまで積み上げてきた君の評価が崩れ（　）。そんなに落ち込むことはないよ。",
+    "options": [
+      "はしない",
+      "ずにはすまない",
+      "かねない",
+      "ないではいられない"
+    ],
+    "answer": 0,
+    "full": "たった一度の失敗で、これまで積み上げてきた君の評価が崩れはしない。そんなに落ち込むことはないよ。",
+    "tr": {
+      "zh": "仅仅一次失败，并不会让你一直以来积累的评价崩塌。用不着那么消沉。",
+      "en": "One failure isn't going to undo the reputation you've built up. There's no need to be so down."
+    },
+    "why": {
+      "zh": "线索：「たった一度の失敗で」和后句「そんなに落ち込むことはないよ」是在安慰对方。\n规则：「ます形＋はしない」＝（别担心）绝不会……，强调否定，用来反驳对方的担心。",
+      "en": "Clue: 「たった一度の失敗で」 and the follow-up 「そんなに落ち込むことはないよ」 are reassurance.\nRule: masu-stem + 「はしない」 = certainly won't … (don't worry), an emphatic negative that answers someone's fear."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜ずにはすまない」是“不……就交代不过去、必然会……”，说评价必然崩塌，和安慰的后句矛盾。",
+        "en": "「〜ずにはすまない」 means \"bound to …, can't get away without …\"; saying the reputation must collapse clashes with the reassurance."
+      },
+      {
+        "zh": "「〜かねない」是“有可能（造成坏结果）”，表示担心，正好和「落ち込むことはない」相反。",
+        "en": "「〜かねない」 means \"could well (lead to something bad)\", a worry — the opposite of 「落ち込むことはない」."
+      },
+      {
+        "zh": "「〜ないではいられない」是“不由得要……”，接说话人的感情或动作，不能用于“评价崩塌”这种事态，意思也不通。",
+        "en": "「〜ないではいられない」 means \"can't help …\" for feelings or actions, not for a reputation collapsing, and makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-028",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#10",
+      "lesson80#5"
+    ],
+    "difficulty": 2,
+    "stem": "今年の夏は記録的な猛暑になる（　）、雨の日が続き、例年より涼しい日が多かった。",
+    "options": [
+      "かと思いきや",
+      "とはいうものの",
+      "かと思うと",
+      "とあって"
+    ],
+    "answer": 0,
+    "full": "今年の夏は記録的な猛暑になるかと思いきや、雨の日が続き、例年より涼しい日が多かった。",
+    "tr": {
+      "zh": "原以为今年夏天会是破纪录的酷暑，没想到阴雨连绵，比往年凉快的日子还多。",
+      "en": "Everyone expected a record-breaking heatwave this summer, but it kept raining and there were more cool days than usual."
+    },
+    "why": {
+      "zh": "线索：前项「猛暑になる」是预想（非过去形），后项「涼しい日が多かった」是与预想相反的实际结果。\n规则：「〜かと思いきや」＝原以为……，没想到……，预想落空，后项是已发生的事实。",
+      "en": "Clue: 「猛暑になる」 (non-past) is an expectation, and 「涼しい日が多かった」 is what actually happened, the opposite.\nRule: 「〜かと思いきや」 = I'd thought …, but actually …: an expectation dashed, followed by a fact."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜とはいうものの」前项要是已成立的事实（话虽这么说），「猛暑になる」只是预想，不是已认定的事实。",
+        "en": "「〜とはいうものの」 needs an accepted fact before it (\"that said\"); 「猛暑になる」 is only an expectation."
+      },
+      {
+        "zh": "「〜かと思うと」表示“刚……就……”的时间接连，前面要用た形，不能表示“预想落空”。",
+        "en": "「〜かと思うと」 is \"no sooner … than …\", needs the ta-form and doesn't express a dashed expectation."
+      },
+      {
+        "zh": "「〜とあって」是“因为是……（特殊情况）所以……”，表示顺接原因，和前后相反的内容不符。",
+        "en": "「〜とあって」 means \"because it is … (a special case)\", a cause leading to an expected result, not a contrast."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-029",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#10"
+    ],
+    "difficulty": 3,
+    "stem": "新しく就任した社長は大胆な改革に乗り出す（　）、最初の一年は前任者の方針をほぼそのまま引き継いだ。",
+    "options": [
+      "と思いきや",
+      "ものを",
+      "とばかりに",
+      "ばこそ"
+    ],
+    "answer": 0,
+    "full": "新しく就任した社長は大胆な改革に乗り出すと思いきや、最初の一年は前任者の方針をほぼそのまま引き継いだ。",
+    "tr": {
+      "zh": "原以为新上任的社长会大刀阔斧地改革，没想到第一年他几乎原封不动地沿用了前任的方针。",
+      "en": "You'd have thought the new president would launch bold reforms, but in his first year he kept his predecessor's policies almost unchanged."
+    },
+    "why": {
+      "zh": "线索：「乗り出す」是非过去形的预想，后项「ほぼそのまま引き継いだ」与“大胆改革”正相反。\n规则：「〜（か）と思いきや」＝原以为……却……，「か」可以省略，后项是已发生的意外结果。",
+      "en": "Clue: 「乗り出す」 is a non-past expectation, and 「ほぼそのまま引き継いだ」 is the exact opposite of bold reform.\nRule: 「〜（か）と思いきや」 = I'd thought …, but …; 「か」 can be dropped, and what follows is a surprising outcome."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜ものを」是“本来……就好了，却……”，表遗憾、责备，前项是本该做的事，不表示“原以为……”。",
+        "en": "「〜ものを」 means \"if only … (but instead)\", regret or reproach about what should have been done, not \"I'd thought …\"."
+      },
+      {
+        "zh": "「〜とばかりに」是“简直像在说……似的”，描述动作时的样子，后项要是表现出这种样子的动作，和“预想落空”不符。",
+        "en": "「〜とばかりに」 means \"as if to say …\", describing the manner of an action, not an expectation that was dashed."
+      },
+      {
+        "zh": "「〜ばこそ」是“正因为……才……”，接假定形，「乗り出すばこそ」接续就不对，意思也是顺接。",
+        "en": "「〜ばこそ」 (\"precisely because\") takes the ba-form, so 「乗り出すばこそ」 is ungrammatical, and it's causal, not contrastive."
+      }
+    ]
   }
 ]

@@ -273,6 +273,35 @@
   ]
  },
  {
+  "key": "lesson21:〜なくなる",
+  "form": {
+   "zh": [
+    "Vない形（去い）＋ くなる（飲まなくなる）",
+    "可能形：読めない → 読めなくなる",
+    "イA：痛くない → 痛くなくなる",
+    "ナA・N：好きじゃない → 好きじゃなくなる"
+   ],
+   "en": [
+    "V-nai minus い + くなる (飲まなくなる)",
+    "potential: 読めない → 読めなくなる",
+    "i-adj: 痛くない → 痛くなくなる",
+    "na-adj / N: 好きじゃない → 好きじゃなくなる"
+   ]
+  },
+  "mean": {
+   "zh": "原来有的习惯、能力或状态消失了，意思是变得不再做或者变得不能做。",
+   "en": "A habit, ability or state that used to be there is gone: no longer doing something, or no longer able to."
+  },
+  "vs": {
+   "zh": "ようになる：反方向，开始做或变得能做；ないようにする：有意识地尽量不做",
+   "en": "ようになる: the opposite, start doing or become able to; ないようにする: making an effort not to"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
   "key": "lesson22:〜ことにする",
   "form": {
    "zh": [
@@ -526,6 +555,33 @@
   ]
  },
  {
+  "key": "lesson24:〜たまま",
+  "form": {
+   "zh": [
+    "Vた形 ＋ まま（つけたまま）",
+    "N ＋ の ＋ まま（昔のまま）",
+    "〜たまま〜する／〜たままだ"
+   ],
+   "en": [
+    "V-ta + まま (つけたまま)",
+    "N + の + まま (昔のまま)",
+    "〜たまま〜する / 〜たままだ"
+   ]
+  },
+  "mean": {
+   "zh": "一个动作完成后的状态没有改变，就接着做了别的事，或者一直保持着，常带本来应该改变的语感。",
+   "en": "The state left by an action stays unchanged while you do something else, or it just stays that way; often it should have changed."
+  },
+  "vs": {
+   "zh": "ている：只描述现在的状态；ながら：两个动作同时进行",
+   "en": "ている: just describes the current state; ながら: two actions at the same time"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
   "key": "lesson25:〜という",
   "form": {
    "zh": [
@@ -776,6 +832,61 @@
   ]
  },
  {
+  "key": "lesson27:迎客的尊敬語",
+  "term": "お越しくださる・おいでくださる・お見えになる",
+  "form": {
+   "zh": [
+    "お越し／おいで ＋ くださる：客人来了，我方致谢",
+    "お越し／おいで ＋ ください：请对方来",
+    "お見え ＋ になる：客人来了、到了"
+   ],
+   "en": [
+    "お越し / おいで + くださる: the guest came, with thanks",
+    "お越し / おいで + ください: asking them to come",
+    "お見え + になる: a guest has arrived"
+   ]
+  },
+  "mean": {
+   "zh": "都是来的尊敬语，主语是客人，比一般的敬语更郑重，多用在迎客、广播、致辞和书信里。",
+   "en": "Respectful ways of saying a guest comes, more formal than the usual honorific; used in welcomes, announcements, speeches and letters."
+  },
+  "vs": {
+   "zh": "お越しになる：只描述对方来，不含感谢；お越しいただく：意思一样，主语是我方",
+   "en": "お越しになる: only says they came, no thanks; お越しいただく: same meaning, with your side as the subject"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson27:お〜です",
+  "form": {
+   "zh": [
+    "お ＋ Vます形 ＋ です（お待ちです）",
+    "ご ＋ 漢語 ＋ です（ご希望です）",
+    "条件：お〜でしたら"
+   ],
+   "en": [
+    "お + V-masu stem + です (お待ちです)",
+    "ご + kango noun + です (ご希望です)",
+    "conditional: お〜でしたら"
+   ]
+  },
+  "mean": {
+   "zh": "用尊敬的方式说对方现在的状态，比如有、在等、着急；加上条件形就是如果您怎样的话。",
+   "en": "A respectful way to describe the other person's current state, such as having, waiting or being in a hurry; in the conditional it means if you are."
+  },
+  "vs": {
+   "zh": "お〜します：谦让语，我为对方做；お〜になっている：意思相同，但更长",
+   "en": "お〜します: humble, I do it for you; お〜になっている: same meaning, but longer"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
   "key": "lesson28:謙譲語特殊動詞",
   "form": {
    "zh": [
@@ -846,6 +957,58 @@
   "vs": {
    "zh": "させてください：请求允许（还没得到同意）；させていただきます：郑重地宣布要做",
    "en": "させてください: asks for permission (not yet given); させていただきます: formally announces you will do it"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson28:お〜いただく・ご覧いただく",
+  "form": {
+   "zh": [
+    "お ＋ Vます形 ＋ いただく",
+    "ご ＋ 漢語 ＋ いただく",
+    "見る → ご覧いただく，来る → お越しいただく"
+   ],
+   "en": [
+    "お + V-masu stem + いただく",
+    "ご + kango noun + いただく",
+    "見る → ご覧いただく, 来る → お越しいただく"
+   ]
+  },
+  "mean": {
+   "zh": "郑重地说承蒙对方为自己做某事，用来请求或者致谢，主语是我方。",
+   "en": "A formal way to say you receive the favor of someone doing something, used for requests and thanks; your side is the subject."
+  },
+  "vs": {
+   "zh": "お〜くださる：意思一样，主语是对方；お〜する：谦让语，是我自己做",
+   "en": "お〜くださる: same meaning, the other person is the subject; お〜する: humble, you do it yourself"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson28:承る",
+  "form": {
+   "zh": [
+    "承る（うけたまわる）：受ける・引き受ける・聞く 的谦让语",
+    "承ります／承りました／承っております"
+   ],
+   "en": [
+    "承る (うけたまわる): humble form of 受ける / 引き受ける / 聞く",
+    "承ります / 承りました / 承っております"
+   ]
+  },
+  "mean": {
+   "zh": "店员或公司郑重地接下对方的订单、预约或留言，主语只能是我方。",
+   "en": "Staff or a company formally taking a customer's order, booking or message; only your side can be the subject."
+  },
+  "vs": {
+   "zh": "伺う：问、听或拜访；かしこまりました：明白了，回应任何指示都行",
+   "en": "伺う: ask, hear or visit; かしこまりました: certainly, a reply to any instruction"
   },
   "pick": [
    0,
@@ -1216,6 +1379,31 @@
   ]
  },
  {
+  "key": "lesson31:〜のに",
+  "form": {
+   "zh": [
+    "V辞書形 ＋ のに ＋ 使う／便利だ／いい／役に立つ／必要だ／かかる",
+    "名词直接用 に：料理に使う"
+   ],
+   "en": [
+    "V-dict + のに + 使う / 便利だ / いい / 役に立つ / 必要だ / かかる",
+    "with a noun, just に: 料理に使う"
+   ]
+  },
+  "mean": {
+   "zh": "说明东西用在什么上，或者做某件事需要多少时间、钱和东西。",
+   "en": "Says what something is used for, or how much time, money or things it takes to do something."
+  },
+  "vs": {
+   "zh": "ために：目的，后面接有意识的行动；转折的のに：明明……却……",
+   "en": "ために: purpose, followed by a deliberate action; concessive のに: even though"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
   "key": "lesson32:〜と思う / 〜と思っている",
   "form": {
    "zh": [
@@ -1417,6 +1605,33 @@
   }
  },
  {
+  "key": "lesson32:〜と同じ",
+  "form": {
+   "zh": [
+    "N ＋ と同じ（だ）",
+    "N ＋ と同じ ＋ N（不加 な／の）",
+    "N ＋ と同じように ＋ V"
+   ],
+   "en": [
+    "N + と同じ (だ)",
+    "N + と同じ + N (no な / の)",
+    "N + と同じように + V"
+   ]
+  },
+  "mean": {
+   "zh": "拿两样东西比较，说它们的内容、种类或程度相同，意思是和什么一样。",
+   "en": "Compares two things and says they are the same in content, kind or degree: the same as."
+  },
+  "vs": {
+   "zh": "のように：相像，是比喻或举例，不是同一个；と違う：不一样",
+   "en": "のように: alike, a comparison or example, not the same thing; と違う: different from"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
   "key": "lesson33:〜あいだ / 〜あいだに",
   "form": {
    "zh": [
@@ -1609,6 +1824,58 @@
   "vs": {
    "zh": "てごめん：朋友之间（随意）；て申し訳ありません：最郑重",
    "en": "てごめん: between friends (casual); て申し訳ありません: most formal"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson33:〜ずつ",
+  "form": {
+   "zh": [
+    "数量词 ＋ ずつ（一つずつ、千円ずつ）",
+    "少し／ちょっと ＋ ずつ"
+   ],
+   "en": [
+    "counter + ずつ (一つずつ, 千円ずつ)",
+    "少し / ちょっと + ずつ"
+   ]
+  },
+  "mean": {
+   "zh": "一是平均分配，每人或每次各多少；二是按同样的量一点一点地进行。",
+   "en": "Either an equal share, so much each or each time, or going forward the same amount at a time, little by little."
+  },
+  "vs": {
+   "zh": "おきに：说两次之间的间隔；ずつ：说每一份的量",
+   "en": "おきに: the gap between times; ずつ: the amount each time"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson33:〜中",
+  "form": {
+   "zh": [
+    "时间・地点名词 ＋ 中（じゅう）：一日中、世界中",
+    "动作名词 ＋ 中（ちゅう）：会議中",
+    "期间名词 ＋ 中（ちゅう）に：今日中に"
+   ],
+   "en": [
+    "time / place noun + 中 (じゅう): 一日中, 世界中",
+    "action noun + 中 (ちゅう): 会議中",
+    "period noun + 中 (ちゅう) に: 今日中に"
+   ]
+  },
+  "mean": {
+   "zh": "读法不同意思不同：可以表示整个时间或范围都，也可以表示正在进行，还可以表示在某段时间之内完成。",
+   "en": "Its meaning follows its reading: all through a time or place, in the middle of an activity, or with a particle after it, within a period."
+  },
+  "vs": {
+   "zh": "までに：在某个时间点之前；一日に：一天几次，表示频率",
+   "en": "までに: before a point in time; 一日に: so many times a day, frequency"
   },
   "pick": [
    0,

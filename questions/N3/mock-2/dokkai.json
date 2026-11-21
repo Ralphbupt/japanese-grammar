@@ -4,7 +4,7 @@
     "type": "bunshou",
     "difficulty": 2,
     "intro": "次の文章は、新聞の投書欄に載っていたものである。",
-    "passage": "去年の春から、会社へ行くときに、一つ手前の駅で電車を降りて歩いている。健康診断で、医者にもう少し体を動かすように言われたのがきっかけだ。\n最初の一週間は、正直に言って[[1]]。駅から会社まで二十分ほどかかるし、雨の日は靴がぬれる。何度もやめようと思った。\n[[2]]、一か月ほど続けると、少しずつ楽しみが見つかるようになった。毎朝同じ時間に店を開けるパン屋の主人と、あいさつをするようになったのだ。季節によって変わる道沿いの木の色にも、電車に乗っていたころは全く気がつかなかった。\n体重は、思っていたほど[[3]]。それでも、朝歩いた日は頭がすっきりして、午前中の仕事が進む気がする。\n毎日同じ道を通っていても、電車の窓から見る景色と、自分の足で歩いて見る景色は違う。忙しい人ほど、たまには一駅分歩いて[[4]]どうだろうか。きっと、いつもの町が少し違って[[5]]はずだ。",
+    "passage": "去年の春から、会社へ行くときに、一つ手前の駅で電車を降りて歩いている。健康診断で、医者にもう少し体を動かすように言われたのがきっかけだ。\n最初の一週間は、正直に言って[[1]]。駅から会社まで二十分ほどかかるし、雨の日は靴がぬれる。何度もやめようと思った。\n[[2]]、一か月ほど続けると、少しずつ楽しみが見つかるようになった。毎朝同じ時間に店を開けるパン屋の主人と、あいさつをするようになったのだ。季節によって変わる道沿いの木の色にも、電車に乗っていたころは全く気がつかなかった。\n体重は、思っていたほど[[3]]。それでも、朝歩いた日は頭がすっきりして、午前中の仕事が進む気がする。\n毎日同じ道を通っていても、電車の窓から見る景色と、自分の足で歩いて見る景色は違う。忙しい人ほど、たまには一駅分歩いて[[4]]どうだろうか。きっと、いつもの町が少し違って見えてくるはずだ。",
     "tr": {
       "zh": "从去年春天开始，我上班时会提前一站下车，走路去公司。起因是体检时医生让我多活动活动身体。\n说实话，最初的一周只觉得辛苦。从车站到公司要走二十分钟左右，下雨天鞋子还会湿。我好几次都想放弃。\n然而，坚持了一个月左右，渐渐找到了乐趣。我和每天早上同一时间开门的面包店老板开始互相打招呼了。路边树木随季节变化的颜色，坐电车的时候我完全没有注意到。\n体重并没有像我想的那样减下来。尽管如此，早上走过路的日子头脑清爽，上午的工作似乎也进展得更顺利。\n即使每天走同一条路，从电车窗户看到的风景和用自己的脚走着看到的风景是不一样的。越是忙碌的人，偶尔走一站路试试怎么样？平时的街道一定会看起来有些不同。",
       "en": "Since last spring I've been getting off the train one stop early on my way to work and walking the rest. It started when a doctor told me at a health check to move my body a bit more.\nTo be honest, the first week was nothing but hard. It's about twenty minutes from the station to the office, and on rainy days my shoes get wet. I thought about giving up many times.\nHowever, after keeping it up for about a month, I gradually began to find things to enjoy. I started exchanging greetings with the owner of a bakery that opens at the same time every morning. And when I rode the train I had never noticed the colours of the roadside trees changing with the seasons.\nI haven't lost as much weight as I'd hoped. Even so, on days I walk in the morning my head feels clear and my morning's work seems to go better.\nEven on the same road every day, the scenery you see from a train window is different from what you see walking on your own feet. The busier you are, the more I'd suggest trying to walk one stop now and then. I'm sure your usual town will start to look a little different."
@@ -119,34 +119,6 @@
           {
             "zh": "「歩いていたら」是“正在走的时候”，和「どうだろうか」组不成建议。",
             "en": "「歩いていたら」 is \"while walking\"; it doesn't make a suggestion with 「どうだろうか」."
-          }
-        ]
-      },
-      {
-        "options": [
-          "見えてきた",
-          "見えてくる",
-          "見てくる",
-          "見せてくる"
-        ],
-        "answer": 1,
-        "why": {
-          "zh": "线索：句子是「きっと、いつもの町が少し違って（　）はずだ」，主语是「町が」，说的是读者今后试着走路以后的事。\n规则：「町が見える」用自动词「見える」；「〜てくる」表示变化逐渐出现；「はずだ」推测将来，用非过去形「見えてくる」。\n辨析：「見えてきた」是过去形，作者在建议读者今后去做，不能用过去；「見てくる」「見せてくる」是有意的动作，主语要是人，和「町が」接不上。",
-          "en": "Clue: The sentence is 「きっと、いつもの町が少し違って（　）はずだ」; the subject is 「町が」 and it's about what will happen once the reader tries walking.\nRule: \"The town looks…\" takes the intransitive 「見える」; 「〜てくる」 shows a change coming about; 「はずだ」 predicting the future takes the non-past 「見えてくる」.\nContrast: 「見えてきた」 is past, but this is advice for the future; 「見てくる」 and 「見せてくる」 are deliberate actions that need a person as subject, not 「町が」."
-        },
-        "wrong": [
-          {
-            "zh": "「見えてきた」是过去形，这里是对读者今后的推测，要用非过去形。",
-            "en": "「見えてきた」 is past; this is a prediction about the reader's future, so non-past is needed."
-          },
-          null,
-          {
-            "zh": "「見てくる」是“去看一下再回来”，主语得是人，和「町が」接不上。",
-            "en": "「見てくる」 means \"go and look\"; it needs a person as subject, not 「町が」."
-          },
-          {
-            "zh": "「見せてくる」是“给别人看”，是他动词，和「町が違って」接不上。",
-            "en": "「見せてくる」 (\"show\") is transitive and doesn't fit 「町が違って」."
           }
         ]
       }

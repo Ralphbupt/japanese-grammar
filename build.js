@@ -876,6 +876,7 @@ const JA_TITLES = {
   "tame-ni-vs-you-ni": "ために vs ように",
   "hazu-vs-wake": "はずだ vs わけだ",
   "aida-ni-vs-uchi-ni": "あいだ vs あいだに vs うちに",
+  "japanese-conjunctions": "接続詞 — だから・それで・そこで",
   lesson00: "五十音図（参考）",
   lesson01: "判断句・は/が・基礎助詞",
   lesson02: "核心助詞 — に・で・へ・と・から・まで",
@@ -2815,6 +2816,7 @@ async function main() {
     <nav aria-label="footer">
       <span class="lang-zh"><a href="${podcastUrl(false, "footer")}" target="_blank">播客</a></span><span class="lang-en"><a href="${podcastUrl(true, "footer")}" target="_blank">Podcast</a></span>
       <a href="${SITE_PATH}about/"><span class="lang-zh">关于</span><span class="lang-en">About</span></a>
+      <a href="${SITE_PATH}changelog/"><span class="lang-zh">更新日志</span><span class="lang-en">What's new</span></a>
       <a href="https://github.com/Ralphbupt" target="_blank">GitHub</a>
       <a href="https://liko.page/" target="_blank" rel="author">liko.page</a>
       <a href="#feedback" class="fb-open"><span class="lang-zh">💬 反馈</span><span class="lang-en">💬 Feedback</span></a>
@@ -3284,7 +3286,7 @@ ${AI_SCRIPT}
   // ─── Generate individual lesson pages ───
   // Pages published once per language (PAGE_LANGS); links to them on a
   // non-root copy point at that language's copy.
-  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "practice", "listening", "reading", "vocabulary", "mock-test", "grammar-audio", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`, `${l}-grammar-audio`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
+  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "changelog", "practice", "listening", "reading", "vocabulary", "mock-test", "grammar-audio", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`, `${l}-grammar-audio`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
   // "Practice this point" at the end of every grammar point that has practice
   // questions (questions/N*/lessonNN.json refs), linking to the practice page.
   const quizRefCount = {};
@@ -4095,22 +4097,25 @@ ${AI_SCRIPT}
     // {{LESSONS}} / {{POINTS}}: the same counts the home page shows.
     const aboutMd = fs.readFileSync(aboutMdPath, "utf-8")
       .replace(/\{\{LESSONS\}\}/g, totalLessons).replace(/\{\{POINTS\}\}/g, totalPoints);
-    // Process :::zh / :::en bilingual blocks (same pattern as lesson md).
-    const aboutMdBilingual = aboutMd.replace(
-      /^:::(zh|en)\s*\n([\s\S]*?)^:::\s*$/gm,
-      (_, lang, content) => `<!--lang:${lang}:start-->\n${content.trim()}\n\n<!--lang:${lang}:end-->`
-    );
-    let aboutHtml = await marked.parse(aboutMdBilingual);
-    aboutHtml = aboutHtml.replace(/<!--lang:(zh|en):start-->/g, (_, lang) =>
-      lang === "zh" ? '<div class="lang-zh" lang="zh-CN">' : '<div class="lang-en" lang="en">'
-    );
-    aboutHtml = aboutHtml.replace(/<!--lang:(zh|en):end-->/g, '</div>');
-    // Bilingual headings: <h2>中文||English</h2>
-    aboutHtml = aboutHtml.replace(
-      /(<h[1-6][^>]*>)(.+?)\|\|(.+?)(<\/h[1-6]>)/g,
-      (_, open, zh, en, close) =>
-        `${open}<span class="lang-zh">${zh.trim()}</span><span class="lang-en">${en.trim()}</span>${close}`
-    );
+    // Process :::zh / :::en bilingual blocks (same pattern as lesson md);
+    // also used for pages/changelog.md below.
+    var bilingualMdHtml = async (md) => {
+      let html = await marked.parse(md.replace(
+        /^:::(zh|en)\s*\n([\s\S]*?)^:::\s*$/gm,
+        (_, lang, content) => `<!--lang:${lang}:start-->\n${content.trim()}\n\n<!--lang:${lang}:end-->`
+      ));
+      html = html.replace(/<!--lang:(zh|en):start-->/g, (_, lang) =>
+        lang === "zh" ? '<div class="lang-zh" lang="zh-CN">' : '<div class="lang-en" lang="en">'
+      );
+      html = html.replace(/<!--lang:(zh|en):end-->/g, '</div>');
+      // Bilingual headings: <h2>中文||English</h2>
+      return html.replace(
+        /(<h[1-6][^>]*>)(.+?)\|\|(.+?)(<\/h[1-6]>)/g,
+        (_, open, zh, en, close) =>
+          `${open}<span class="lang-zh">${zh.trim()}</span><span class="lang-en">${en.trim()}</span>${close}`
+      );
+    };
+    const aboutHtml = await bilingualMdHtml(aboutMd);
     const aboutMeta = {
       en: {
         title: "About jpnotes.dev — Who Makes It, Sources & License",
@@ -4127,7 +4132,9 @@ ${AI_SCRIPT}
     };
     const aboutOgImage = `${SITE}about/og-image.png`;
 
-    const renderAbout = (lang, m, lv) => `<!DOCTYPE html>
+    // `p` lets other markdown pages reuse this shell (changelog): html,
+    // schema type, og image, breadcrumb label; nothing given = the About page.
+    var renderAbout = (lang, m, lv, p = {}) => `<!DOCTYPE html>
 <html lang="${lang.htmlLang}"${lv.htmlAttrs}>
 <head>
 <meta charset="UTF-8">
@@ -4142,29 +4149,29 @@ ${AI_SCRIPT}
 <meta property="og:description" content="${m.desc.replace(/"/g, '&quot;')}">
 <meta property="og:url" content="${lv.url}">
 <meta property="og:locale" content="${lang.ogLocale}">
-<meta property="og:image" content="${aboutOgImage}">
+<meta property="og:image" content="${p.og || aboutOgImage}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${m.title}">
 <meta name="twitter:description" content="${m.desc.replace(/"/g, '&quot;')}">
-<meta name="twitter:image" content="${aboutOgImage}">
+<meta name="twitter:image" content="${p.og || aboutOgImage}">
 <script type="application/ld+json">
 [{
   "@context": "https://schema.org",
-  "@type": "AboutPage",
+  "@type": "${p.type || "AboutPage"}",
   "name": "${m.name}",
   "description": "${m.desc.replace(/"/g, '\\"')}",
   "url": "${lv.url}",
   "inLanguage": "${lang.htmlLang}",
-  "isPartOf": { "@type": "WebSite", "name": "${m.site}", "url": "${SITE}" },
+  "isPartOf": { "@type": "WebSite", "name": "${m.site}", "url": "${SITE}" }${p.type ? "" : `,
   "mainEntity": {
     "@type": "Person",
     "name": "Ralphbupt",
     "url": "https://github.com/Ralphbupt",
     "email": "pengcheng199@gmail.com",
     "sameAs": ["https://github.com/Ralphbupt"]
-  }
+  }`}
 },
 {
   "@context": "https://schema.org",
@@ -4209,9 +4216,9 @@ ${CSS}
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="${SITE}">jpnotes.dev</a><span class="sep">›</span><span><span class="lang-zh">关于本站</span><span class="lang-en">About</span></span>
+    <a href="${SITE}">jpnotes.dev</a><span class="sep">›</span><span><span class="lang-zh">${p.crumbZh || "关于本站"}</span><span class="lang-en">${p.crumbEn || "About"}</span></span>
   </nav>
-  <article class="about-content">${aboutHtml}</article>
+  <article class="about-content">${p.html || aboutHtml}</article>
   ${siteFooterHtml}
 </main>
 <script>
@@ -4225,6 +4232,25 @@ ${AI_SCRIPT}
     }
     aboutPageGenerated = true;
     console.log("  Generated dist/about/index.html");
+  }
+
+  // ─── Changelog (/changelog/, pages/changelog.md): notable updates, newest first ───
+  const changelogMdPath = path.join(__dirname, "pages/changelog.md");
+  let changelogGenerated = false;
+  if (aboutPageGenerated && fs.existsSync(changelogMdPath)) {
+    const html = await bilingualMdHtml(fs.readFileSync(changelogMdPath, "utf-8"));
+    const meta = {
+      en: { title: "What's New on jpnotes.dev — Changelog", desc: "Notable updates to jpnotes.dev, newest first: new lessons and grammar points, practice questions, mock tests, listening and study tools for JLPT N5–N1.",
+        keywords: "jpnotes.dev changelog, what's new, JLPT practice updates", name: "What's New on jpnotes.dev", site: "jpnotes.dev", crumb: "What's New" },
+      zh: { title: "更新日志 | jpnotes.dev 最近更新了什么", desc: "jpnotes.dev 的重要更新记录（最新在前）：新增的语法课与语法点、练习题、模拟考、听力和学习工具，覆盖 JLPT N5–N1。",
+        keywords: "jpnotes.dev 更新日志, 最近更新, JLPT 题库更新", name: "jpnotes.dev 更新日志", site: "jpnotes.dev", crumb: "更新日志" },
+    };
+    for (const lang of PAGE_LANGS) {
+      writeLangPage("changelog", lang, localizePage(renderAbout(lang, meta[lang.code], langVariant("changelog", lang),
+        { html, type: "WebPage", og: `${SITE}og-image.png`, crumbZh: "更新日志", crumbEn: "What's New" }), lang, localizedPageIds));
+    }
+    changelogGenerated = true;
+    console.log("  Generated dist/changelog/index.html");
   }
 
   // ─── Practice question pages (build-quiz.js → dist/quiz/*.json, site/quiz.js) ───
@@ -5316,6 +5342,7 @@ ${gaLevels.includes("N2") && gaStats.N2.exam ? `<p>${L(`N2 页面标出了往年
   };
   // About page (E-E-A-T page, lower priority since not browsed often)
   if (aboutPageGenerated) pushLangUrls("about", gitLastModTime("pages/about.md") || today, "yearly", "0.5");
+  if (changelogGenerated) pushLangUrls("changelog", gitLastModTime("pages/changelog.md") || today, "weekly", "0.4");
   if (QUIZ_PUBLIC) for (const id of quizPageIds) pushLangUrls(id, gitLastModTime("questions") || today, "weekly", "0.8");
   // Anki landing page (downloadable flashcards). Decks are derived from lesson
   // content, so the page effectively changes when any lesson last changed.

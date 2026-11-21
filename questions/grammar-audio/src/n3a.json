@@ -1068,6 +1068,35 @@
   ]
  },
  {
+  "key": "lesson43:〜てもおかしくない / 〜ても不思議ではない",
+  "form": {
+   "zh": [
+    "Vて形 ＋ も ＋ おかしくない／不思議ではない",
+    "イA（〜くて）＋ も ＋ おかしくない",
+    "ナA・N ＋ で ＋ も ＋ おかしくない",
+    "常见：いつ〜てもおかしくない"
+   ],
+   "en": [
+    "V-te + も + おかしくない / 不思議ではない",
+    "i-adj (〜くて) + も + おかしくない",
+    "na-adj / N + で + も + おかしくない",
+    "set phrase: いつ〜てもおかしくない"
+   ]
+  },
+  "mean": {
+   "zh": "根据眼前的情况判断某事很有可能发生，就算发生也不奇怪，好事坏事都能用。",
+   "en": "Judging from the situation, something could easily happen and it would be no surprise if it did; good or bad."
+  },
+  "vs": {
+   "zh": "に違いない：说话人确信，是断定；おそれがある：只用于坏事，多见于新闻",
+   "en": "に違いない: the speaker is sure, a firm conclusion; おそれがある: bad outcomes only, news and notices"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
   "key": "lesson44:〜ようとする",
   "form": {
    "zh": [
@@ -1407,6 +1436,60 @@
   "pick": [
    0,
    1
+  ]
+ },
+ {
+  "key": "lesson46:〜のほかに",
+  "form": {
+   "zh": [
+    "N ＋ のほかに",
+    "V辞書形 ＋ ほかに",
+    "〜ほか（に）〜ない：除了……没有别的"
+   ],
+   "en": [
+    "N + のほかに",
+    "V-dict + ほかに",
+    "〜ほか（に）〜ない: nothing but…"
+   ]
+  },
+  "mean": {
+   "zh": "表示除了某样东西以外还有别的；后面接否定时，意思是只有这一个。",
+   "en": "Means besides or in addition to something; with a negative after it, it means that is the only one."
+  },
+  "vs": {
+   "zh": "だけでなく：不仅……而且，语气更强；以外：常用来排除某样东西",
+   "en": "だけでなく: not only… but also, stronger; 以外: often used to leave something out"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson46:〜とか〜とか",
+  "form": {
+   "zh": [
+    "N ＋ とか ＋ N ＋ とか",
+    "V辞書形 ＋ とか ＋ V辞書形 ＋ とか",
+    "也可以只用一个：〜とか"
+   ],
+   "en": [
+    "N + とか + N + とか",
+    "V-dict + とか + V-dict + とか",
+    "a single 〜とか also works"
+   ]
+  },
+  "mean": {
+   "zh": "口语里举几个例子，暗示还有别的，名词、动词和引用的话都能接。",
+   "en": "Gives a few examples in casual speech and hints there are more; works with nouns, verbs and quoted words."
+  },
+  "vs": {
+   "zh": "や〜など：只接名词，口语书面都可；たり〜たり：只接动词",
+   "en": "や〜など: nouns only, spoken or written; たり〜たり: verbs only"
+  },
+  "pick": [
+   0,
+   2
   ]
  },
  {

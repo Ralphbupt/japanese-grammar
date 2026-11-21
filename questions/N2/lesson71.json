@@ -817,5 +817,165 @@
         "en": "「ついでに」 means \"while one is at it\"; quitting isn't something done on the side while clashing with a boss."
       }
     ]
+  },
+  {
+    "id": "n2-l71-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#7"
+    ],
+    "difficulty": 1,
+    "stem": "駅前の店に電話で在庫を問い合わせた（　）、もう売り切れだと言われた。",
+    "options": [
+      "ところで",
+      "ところ",
+      "ところへ",
+      "ところだった"
+    ],
+    "answer": 1,
+    "full": "駅前の店に電話で在庫を問い合わせたところ、もう売り切れだと言われた。",
+    "tr": {
+      "zh": "打电话向车站前的店询问库存，结果被告知已经卖完了。",
+      "en": "When I phoned the shop by the station to ask if they had it in stock, I was told it was already sold out."
+    },
+    "why": {
+      "zh": "线索：前句是说话人做的动作「問い合わせた」，后句是由此得知的结果「売り切れだと言われた」。\n规则：动词た形＋「ところ」＝做了……，结果……，后句是已经发生的发现或结果。\n辨析：「たところで」＝就算……也（没用），后面要接否定的判断，不接已经发生的事实。",
+      "en": "Clue: The first half is the speaker's action, 「問い合わせた」, and the second is what came of it, 「売り切れだと言われた」.\nRule: verb ta-form ＋ 「ところ」 = when I did…, it turned out…; the second half is a finding or result that has happened.\nContrast: 「たところで」 (even if…, no use) needs a negative judgment after it, not a fact that happened."
+    },
+    "wrong": [
+      {
+        "zh": "「たところで」是“就算……也没用”，后面要接否定判断，不接已经发生的结果。",
+        "en": "「たところで」 (even if… it's no use) needs a negative judgment, not a result that happened."
+      },
+      null,
+      {
+        "zh": "「たところへ」是“正当……时（有人来）”，后面要接有人或事情突然到来，不接询问的结果。",
+        "en": "「たところへ」 (just as… someone came) needs an arrival after it, not the result of an inquiry."
+      },
+      {
+        "zh": "「ところだった」是“差点……”，放在句末，不能接逗号引出后句。",
+        "en": "「ところだった」 (almost…) ends a sentence and can't lead into a second clause."
+      }
+    ]
+  },
+  {
+    "id": "n2-l71-023",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#7"
+    ],
+    "difficulty": 2,
+    "stem": "念のため、もう一度データを確認した（　）、入力ミスが三か所見つかった。",
+    "options": [
+      "あげく",
+      "上で",
+      "ところ",
+      "ところで"
+    ],
+    "answer": 2,
+    "full": "念のため、もう一度データを確認したところ、入力ミスが三か所見つかった。",
+    "tr": {
+      "zh": "为了慎重起见又核对了一遍数据，结果发现了三处输入错误。",
+      "en": "I checked the data once more just to be safe, and found three input errors."
+    },
+    "why": {
+      "zh": "线索：「念のため」确认了一次，后句「見つかった」是确认后发现的情况，不是有意的行为。\n规则：「た形＋ところ」＝做了……，结果发现……，书面、报告中常用。\n辨析：「た上で」＝在做完……之后再（有意地做），后面要接人的意志行为（「決める」「申し込む」），「見つかった」不是。",
+      "en": "Clue: The check was 「念のため」, and 「見つかった」 is what turned up afterwards — not a deliberate act.\nRule: 「ta-form ＋ ところ」 = when I did…, I found…, common in reports.\nContrast: 「た上で」 (after doing…, then) needs a deliberate action next (「決める」「申し込む」); 「見つかった」 isn't one."
+    },
+    "wrong": [
+      {
+        "zh": "「あげく」是“折腾很久之后，最后（坏结果）”，「念のため」确认一次不是长时间的过程。",
+        "en": "「あげく」 (after much…, in the end) needs a long struggle; one check 「念のため」 isn't one."
+      },
+      {
+        "zh": "「上で」后面要接有意的行为，「見つかった」是发现的结果。",
+        "en": "「上で」 needs a deliberate action next; 「見つかった」 is a finding."
+      },
+      null,
+      {
+        "zh": "「ところで」是“就算……也没用”，后面要接否定判断，和发现错误的事实不合。",
+        "en": "「ところで」 (even if… no use) needs a negative judgment, not a discovered fact."
+      }
+    ]
+  },
+  {
+    "id": "n2-l71-024",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#8"
+    ],
+    "difficulty": 2,
+    "stem": "凍った道で滑って、もう少しで転び（　）。",
+    "options": [
+      "ところだった",
+      "そうになった",
+      "ようがなかった",
+      "がちだった"
+    ],
+    "answer": 1,
+    "full": "凍った道で滑って、もう少しで転びそうになった。",
+    "tr": {
+      "zh": "在结冰的路上滑了一下，差点摔倒。",
+      "en": "I slipped on the icy road and very nearly fell."
+    },
+    "why": {
+      "zh": "线索：「転び」是ます形；「もう少しで」表示差一点。\n规则：动词ます形＋「そうになった」＝差点……（但没有），描写当时快要发生的状态。\n辨析：「ところだった」也表示“差点”，但前面接辞书形：「転ぶところだった」，不能接「転び」。",
+      "en": "Clue: 「転び」 is a masu-stem; 「もう少しで」 means \"very nearly.\"\nRule: masu-stem ＋ 「そうになった」 = almost… (but didn't), describing the moment it was about to happen.\nContrast: 「ところだった」 also means \"almost,\" but it follows the dictionary form: 「転ぶところだった」, not 「転び」."
+    },
+    "wrong": [
+      {
+        "zh": "「ところだった」前面要接辞书形「転ぶ」，「転びところだった」接法不对。",
+        "en": "「ところだった」 needs the dictionary form 「転ぶ」; 「転びところだった」 is the wrong form."
+      },
+      null,
+      {
+        "zh": "「ようがなかった」是“没办法……”，“没办法摔倒”和「もう少しで」矛盾。",
+        "en": "「ようがなかった」 (there was no way to…) contradicts 「もう少しで」."
+      },
+      {
+        "zh": "「がちだった」是“往往……”，表示经常的倾向，和一次差点摔倒的情况不合。",
+        "en": "「がちだった」 (tended to…) is a habit, not one near-fall."
+      }
+    ]
+  },
+  {
+    "id": "n2-l71-025",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#8"
+    ],
+    "difficulty": 2,
+    "stem": "映画のラストシーンがあまりに感動的で、思わず涙がこぼれ（　）。",
+    "options": [
+      "ぎみだった",
+      "がちだった",
+      "ようがなかった",
+      "そうになった"
+    ],
+    "answer": 3,
+    "full": "映画のラストシーンがあまりに感動的で、思わず涙がこぼれそうになった。",
+    "tr": {
+      "zh": "电影的最后一幕太感人了，眼泪不由得差点掉下来。",
+      "en": "The last scene of the film was so moving that I almost cried in spite of myself."
+    },
+    "why": {
+      "zh": "线索：「思わず」（不由得）表示控制不住；「こぼれ」是ます形。\n规则：「ます形＋そうになった」＝差点……，用于不受控制的变化（哭、笑、摔、睡着）。\n辨析：「がちだった」也接ます形，但表示“往往、经常”，看一次电影的反应不是习惯。",
+      "en": "Clue: 「思わず」 (in spite of oneself) means it was beyond control, and 「こぼれ」 is a masu-stem.\nRule: 「masu-stem ＋ そうになった」 = almost…, for things one can't control (crying, laughing, falling, dozing off).\nContrast: 「がちだった」 also takes a masu-stem but means \"tended to,\" and a reaction to one film isn't a habit."
+    },
+    "wrong": [
+      {
+        "zh": "「ぎみだった」是“有点……的倾向”（「風邪ぎみ」），不接「こぼれ」表示一瞬间的事。",
+        "en": "「ぎみだった」 (a touch of…, as in 「風邪ぎみ」) doesn't attach to 「こぼれ」 for a single moment."
+      },
+      {
+        "zh": "「がちだった」是“往往……”，表示经常的倾向，和看一次电影的反应不合。",
+        "en": "「がちだった」 (tended to…) is a habit, not the reaction to one film."
+      },
+      {
+        "zh": "「ようがなかった」是“没办法……”，“眼泪没办法掉”和「思わず」矛盾。",
+        "en": "「ようがなかった」 (no way to…) contradicts 「思わず」."
+      },
+      null
+    ]
   }
 ]

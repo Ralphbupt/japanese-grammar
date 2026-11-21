@@ -411,6 +411,192 @@ Double negative → "It's not that I can't…" or "not impossible" — expresses
 
 ---
 
+## 7. 少しも〜ない / ちっとも〜ない（一点也不……）||7. 少しも〜ない / ちっとも〜ない (Not… at all / Not in the least)
+
+### 接続||Conjugation
+:::zh
+- 少しも／ちっとも + 動詞ない形
+- 少しも／ちっとも + い形容詞〜くない、な形容詞〜ではない
+
+※「少しも」口语书面都可；「ちっとも」只用于口语，常带不满或意外的语气。
+:::
+:::en
+- 少しも／ちっとも + Verb nai-form
+- 少しも／ちっとも + い-adjective 〜くない / な-adjective 〜ではない
+
+※ 「少しも」 works in speech and writing; 「ちっとも」 is spoken only and often sounds annoyed or surprised.
+:::
+
+### 含义||Meaning
+:::zh
+"一点也不……""丝毫没有……"，把程度否定到零。「少し」（一点）＋「も」＝连一点都……，所以后面必须是否定。
+:::
+:::en
+"Not… at all / not in the least" — denies the degree down to zero. 「少し」 (a little) + 「も」 = not even a little, so a negative must follow.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 説明を三回聞いたが、**少しも**分から**なかった**。（说明听了三遍，还是一点也没懂。）
+2. 何度注意しても、うちの息子は**ちっとも**部屋を片付け**ない**。（不管说多少次，我儿子都一点也不收拾房间。）
+3. 評判がいいので見に行ったが、**ちっとも**面白く**なかった**。（因为口碑好去看了，结果一点也不好看。）
+4. 一時間も待たされたのに、彼女は**少しも**怒ってい**なかった**。（让她等了整整一个小时，她却一点也没生气。）
+:::
+:::en
+1. 説明を三回聞いたが、**少しも**分から**なかった**。(I listened to the explanation three times and didn't understand it at all.)
+2. 何度注意しても、うちの息子は**ちっとも**部屋を片付け**ない**。(No matter how often I tell him, my son never tidies his room at all.)
+3. 評判がいいので見に行ったが、**ちっとも**面白く**なかった**。(It had good reviews, so I went to see it, but it wasn't the least bit interesting.)
+4. 一時間も待たされたのに、彼女は**少しも**怒ってい**なかった**。(She was kept waiting a whole hour, yet she wasn't the least bit angry.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| 少しも／ちっとも〜ない | 一点也不 | 否定**程度**（量、感觉、状态） |
+| 全然〜ない | 完全不 | 意思接近，最口语，使用范围最广 |
+| 決して〜ない（本课第4点） | 绝对不 | 强调**意志或判断**：决不做、绝不是 |
+| 一度も／一つも〜ない（N5 第2课第5点 用法④） | 一次/一个也没有 | 否定**次数、个数** |
+
+> 「少しも疲れていない」＝一点都不累（程度）  
+> 「決して諦めない」＝绝不放弃（意志），不说「少しも諦めない」  
+> 「一度も行ったことがない」＝一次都没去过（次数）  
+> 例句4的「一時間**も**」是数量＋も，强调"多"（N5 第2课第5点 用法③），和这里的否定不同。
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| 少しも／ちっとも〜ない | not at all | Denies a **degree** (amount, feeling, state) |
+| 全然〜ない | not at all | Close in meaning; the most casual and the most widely used |
+| 決して〜ない (point 4) | never, absolutely not | Stresses **will or judgment**: will never, is by no means |
+| 一度も／一つも〜ない (N5 lesson 2, point 5, usage ④) | not once / not one | Denies a **number of times or things** |
+
+> 「少しも疲れていない」 = not tired at all (degree)  
+> 「決して諦めない」 = I will never give up (will) — not 「少しも諦めない」  
+> 「一度も行ったことがない」 = I've never been, not once (count)  
+> In example 4, 「一時間**も**」 is number + も stressing "that much" (N5 lesson 2, point 5, usage ③) — a different use of も.
+:::
+
+---
+
+## 8. なかなか〜ない（怎么也不…… / 迟迟不……）||8. なかなか〜ない (Just won't… / Not easily…)
+
+### 接続||Conjugation
+:::zh
+- なかなか + 動詞ない形（常用可能形的否定：なかなか眠れない）
+
+※ 后面是肯定时意思不同：「なかなかおいしい」＝相当好吃、挺不错。
+:::
+:::en
+- なかなか + Verb nai-form (often the potential in the negative: なかなか眠れない)
+
+※ With a positive it means something else: 「なかなかおいしい」 = pretty good, better than expected.
+:::
+
+### 含义||Meaning
+:::zh
+期待或想做的事情**很难实现、迟迟不发生**："怎么也不……""总是不……"。重点在过程费劲、花时间，最后也可能实现。
+:::
+:::en
+Something hoped for or tried **is hard to achieve or keeps not happening**: "just won't…", "it takes ages to…". The stress is on the effort and time; it may still happen in the end.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 雨のせいか、バスが**なかなか**来**ない**。（也许是下雨的关系，公交车迟迟不来。）
+2. 転職して三か月になるが、新しい仕事に**なかなか**慣れ**ない**。（换工作三个月了，还是怎么也适应不了新工作。）
+3. 昨夜は暑くて、**なかなか**眠れ**なかった**。（昨晚太热了，好久都睡不着。）
+4. 敬語は、頭で分かっていても**なかなか**うまく使え**ない**。（敬语就算脑子里明白，也很难用得好。）
+:::
+:::en
+1. 雨のせいか、バスが**なかなか**来**ない**。(Maybe it's the rain, but the bus just isn't coming.)
+2. 転職して三か月になるが、新しい仕事に**なかなか**慣れ**ない**。(It's been three months since I changed jobs, and I'm still not used to the new work.)
+3. 昨夜は暑くて、**なかなか**眠れ**なかった**。(It was so hot last night that it took me ages to fall asleep.)
+4. 敬語は、頭で分かっていても**なかなか**うまく使え**ない**。(Even when you understand keigo in your head, it's hard to use it well.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| なかなか〜ない | 迟迟不/很难 | 想实现但费劲、花时间 |
+| めったに〜ない（本课第6点） | 很少 | 说**频率**低，和期待无关 |
+| どうしても〜ない（本课第9点） | 无论如何也不 | 想尽办法也不行，结果是否定 |
+
+> 「バスがなかなか来ない」＝等了很久还不来  
+> 「バスはめったに来ない」＝这条线公交很少（班次少）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| なかなか〜ない | just won't / not easily | Wanted, but slow or hard to achieve |
+| めったに〜ない (point 6) | rarely | About **frequency**; nothing to do with expectation |
+| どうしても〜ない (point 9) | can't no matter what | Every attempt fails; the result is negative |
+
+> 「バスがなかなか来ない」 = I've waited ages and it still isn't here  
+> 「バスはめったに来ない」 = buses rarely run here (few services)
+:::
+
+---
+
+## 9. どうしても〜ない（无论如何也不…… / 怎么都……不了）||9. どうしても〜ない (Can't… no matter what / Just can't…)
+
+### 接続||Conjugation
+:::zh
+- どうしても + 動詞ない形（多为可能形否定：どうしても思い出せない）
+- どうしても + 〜たい／〜なければならない：无论如何都要……（肯定用法）
+:::
+:::en
+- どうしても + Verb nai-form (usually the potential in the negative: どうしても思い出せない)
+- どうしても + 〜たい／〜なければならない: must… no matter what (positive use)
+:::
+
+### 含义||Meaning
+:::zh
+"想尽办法也……不了"：试了各种办法，结果还是做不到；也可表示"不管怎样就是不愿意"。后接愿望、义务时意思反过来，表示"无论如何都要……"。
+:::
+:::en
+"Can't… whatever I try": every attempt has failed; it can also mean "just won't, whatever happens." Followed by a wish or obligation, it turns around: "must… no matter what."
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 何度計算し直しても、この問題は**どうしても**解け**ない**。（不管重算多少次，这道题怎么也解不出来。）
+2. 顔は覚えているのに、彼の名前が**どうしても**思い出せ**ない**。（脸记得，可他的名字怎么也想不起来。）
+3. 子供のころから、納豆だけは**どうしても**食べられ**ない**。（从小只有纳豆怎么都吃不下。）
+4. この書類は、**どうしても**今日中に出さなければならない。（这份文件无论如何今天之内都得交。）
+:::
+:::en
+1. 何度計算し直しても、この問題は**どうしても**解け**ない**。(However many times I redo the calculation, I just can't solve this problem.)
+2. 顔は覚えているのに、彼の名前が**どうしても**思い出せ**ない**。(I remember his face, but I just can't recall his name.)
+3. 子供のころから、納豆だけは**どうしても**食べられ**ない**。(Ever since I was a child, natto is the one thing I just can't eat.)
+4. この書類は、**どうしても**今日中に出さなければならない。(This document has to be submitted today, no matter what.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 重点 | 结果 |
+|------|------|------|
+| なかなか〜ない（本课第8点） | 过程费劲、花时间 | 最后可能实现 |
+| どうしても〜ない | 用尽办法也不行 | 结果就是做不到 |
+
+> 「なかなか眠れなかった」＝过了好久才睡着  
+> 「どうしても眠れなかった」＝怎么都睡不着（基本没睡）  
+> 「どうしても行きたい」＝无论如何都想去（肯定用法，没有「なかなか行きたい」这种说法）
+:::
+:::en
+| Expression | Focus | Outcome |
+|------|------|------|
+| なかなか〜ない (point 8) | slow, hard going | may happen in the end |
+| どうしても〜ない | fails whatever one tries | simply doesn't happen |
+
+> 「なかなか眠れなかった」 = it took ages to fall asleep  
+> 「どうしても眠れなかった」 = I couldn't sleep however hard I tried (hardly slept)  
+> 「どうしても行きたい」 = I want to go no matter what (positive use; there is no 「なかなか行きたい」)
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

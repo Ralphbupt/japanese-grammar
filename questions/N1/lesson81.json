@@ -776,5 +776,245 @@
         "en": "「〜ないようでは」 leads to a negative verdict (\"that won't do\"), not to \"we want at least to secure\"."
       }
     ]
+  },
+  {
+    "id": "n1-l81-021",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#7"
+    ],
+    "difficulty": 3,
+    "stem": "この契約は、契約期間の満了前にいずれかが書面で解約を（　）、自動的に一年ごとに更新される。",
+    "options": [
+      "申し出ないことには",
+      "申し出ない限り",
+      "申し出ないまでも",
+      "申し出たが最後"
+    ],
+    "answer": 1,
+    "full": "この契約は、契約期間の満了前にいずれかが書面で解約を申し出ない限り、自動的に一年ごとに更新される。",
+    "tr": {
+      "zh": "这份合同只要双方都没有在期满前书面提出解约，就会每年自动续签。",
+      "en": "Unless either party gives written notice of termination before the term ends, this contract renews automatically every year."
+    },
+    "why": {
+      "zh": "线索：后项「自動的に更新される」是肯定的规定，说的是“在解约条件满足之前一直如此”。\n规则：「〜ない限り」＝只要不……就（一直）……，后项可以是肯定的规定、惯例。\n辨析：「〜ないことには」后项必须是否定（「〜ない」「できない」），不接肯定的规定。",
+      "en": "Clue: The main clause 「自動的に更新される」 is a positive rule that holds until the cancellation condition is met.\nRule: 「〜ない限り」 = unless… / as long as… not; the main clause can be a positive rule or practice.\nContrast: 「〜ないことには」 needs a negative main clause (「〜ない」, 「できない」) and can't take a positive rule."
+    },
+    "wrong": [
+      {
+        "zh": "「〜ないことには」后面要接否定或“无从谈起”，「自動的に更新される」是肯定的规定，接不上。",
+        "en": "「〜ないことには」 must lead to a negative or \"can't happen\"; 「自動的に更新される」 is a positive rule."
+      },
+      null,
+      {
+        "zh": "「〜ないまでも」是“即使不……至少也……”，后面要有退而求其次的内容，这里没有。",
+        "en": "「〜ないまでも」 (\"even if not…, at least…\") needs a fallback in the main clause, which isn't here."
+      },
+      {
+        "zh": "「〜たが最後」是“一旦做了就完了”，提出解约反而导致自动续签，意思自相矛盾。",
+        "en": "「〜たが最後」 (\"once…, that's it\") would make giving notice cause the renewal, which contradicts itself."
+      }
+    ]
+  },
+  {
+    "id": "n1-l81-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#7"
+    ],
+    "difficulty": 3,
+    "stem": "当社では、本人が強く希望しない限り、（　）。",
+    "options": [
+      "昨年は三人が地方へ転勤になった",
+      "本人の希望どおり転勤が決まった",
+      "会社側から転勤を命じることはない",
+      "せめて転勤の理由は説明すべきだ"
+    ],
+    "answer": 2,
+    "full": "当社では、本人が強く希望しない限り、会社側から転勤を命じることはない。",
+    "tr": {
+      "zh": "在我们公司，只要本人没有强烈希望，公司方面就不会命令调动。",
+      "en": "At our company, the company never orders a transfer unless the employee strongly wishes it."
+    },
+    "why": {
+      "zh": "线索：「当社では」说的是公司的一贯做法，「〜ない限り」后面要接持续的状态、规定。\n规则：「〜ない限り」＝在A满足以前，B一直成立；后项是规定、判断或持续的状态，不说过去某一次的事。",
+      "en": "Clue: 「当社では」 introduces a standing company practice, and 「〜ない限り」 needs an ongoing state or rule after it.\nRule: 「〜ない限り」 = B holds until A is met; the main clause is a rule, judgement or continuing state, not a single past event."
+    },
+    "wrong": [
+      {
+        "zh": "这是过去发生的一次具体事实，「〜ない限り」后面不说一次性的过去事件。",
+        "en": "This is a single past event; 「〜ない限り」 is followed by a rule or ongoing state, not a one-off past fact."
+      },
+      {
+        "zh": "前面说“本人不希望”，后面却说“按本人希望决定调动”，前后矛盾。",
+        "en": "The condition is that the employee does not want it, yet this says the transfer went ahead as they wished — a contradiction."
+      },
+      null,
+      {
+        "zh": "「せめて〜べきだ」是「〜ないまでも」的后项，和「〜ない限り」的“条件满足前一直如此”接不上。",
+        "en": "「せめて〜べきだ」 is the kind of fallback that follows 「〜ないまでも」; it doesn't fit 「〜ない限り」's \"until A, B holds\"."
+      }
+    ]
+  },
+  {
+    "id": "n1-l81-023",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#8"
+    ],
+    "difficulty": 3,
+    "stem": "どんなに立派な理念も、現場で（　）初めて意味を持つのであって、掲げるだけでは何の価値もない。",
+    "options": [
+      "実践されたら最後",
+      "実践されても",
+      "実践されるとあれば",
+      "実践されてこそ"
+    ],
+    "answer": 3,
+    "full": "どんなに立派な理念も、現場で実践されてこそ初めて意味を持つのであって、掲げるだけでは何の価値もない。",
+    "tr": {
+      "zh": "再崇高的理念，也只有在现场被付诸实践才有意义，光是挂在嘴上毫无价值。",
+      "en": "However fine an ideal is, it only means something once it's put into practice on the ground; merely proclaiming it is worth nothing."
+    },
+    "why": {
+      "zh": "线索：「初めて意味を持つ」和「掲げるだけでは何の価値もない」形成对照：只有实践了才有意义。\n规则：「〜てこそ」＝只有做了A，B才成立，常和「初めて」「〜のであって」一起用。\n辨析：「〜てこそ」是条件（只有……才……）；「〜ばこそ／からこそ」是原因（正因为……）。",
+      "en": "Clue: 「初めて意味を持つ」 is set against 「掲げるだけでは何の価値もない」: only when practised does it mean anything.\nRule: 「〜てこそ」 = only by doing A does B hold; it often pairs with 「初めて」 and 「〜のであって」.\nContrast: 「〜てこそ」 is a condition (\"only when\"); 「〜ばこそ／からこそ」 give a reason (\"precisely because\")."
+    },
+    "wrong": [
+      {
+        "zh": "「〜たら最後」是“一旦……就完了”，后接无法挽回的坏结果，不接“才有意义”。",
+        "en": "「〜たら最後」 (\"once…, it's all over\") leads to an irreversible bad result, not \"only then does it mean something\"."
+      },
+      {
+        "zh": "「〜ても」是“即使……也……”，和「初めて意味を持つ」及后面“光挂着没价值”的对照接不上。",
+        "en": "「〜ても」 (\"even if\") clashes with 「初めて意味を持つ」 and the contrast with merely proclaiming it."
+      },
+      {
+        "zh": "「〜とあれば」是“如果是为了……也愿意……”，前面要接目的、理由，后项是说话人的决心，这里不合。",
+        "en": "「〜とあれば」 (\"if it's for…, I'll even…\") takes a purpose and leads to resolve, which doesn't fit here."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l81-024",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#8"
+    ],
+    "difficulty": 3,
+    "stem": "人は自ら失敗を経験してこそ、（　）。",
+    "options": [
+      "昨日の試合で大きなミスをしてしまった",
+      "他人のつまずきにも寛容になれるものだ",
+      "失敗の原因を必ず上司に報告しなさい",
+      "もう一度最初から一緒に挑戦しよう"
+    ],
+    "answer": 1,
+    "full": "人は自ら失敗を経験してこそ、他人のつまずきにも寛容になれるものだ。",
+    "tr": {
+      "zh": "人只有自己经历过失败，才能对别人的失误宽容。",
+      "en": "It's only by experiencing failure yourself that you can be tolerant of other people's slip-ups."
+    },
+    "why": {
+      "zh": "线索：主语是泛指的「人は」，「〜てこそ」后面要接道理或评价。\n规则：「〜てこそ」＝只有做了A，B才成立；后项是一般规律、评价（常带「〜ものだ」「〜と言える」），不接过去的具体事件，也不接命令、劝诱。",
+      "en": "Clue: The subject is the general 「人は」, and 「〜てこそ」 must lead to a principle or evaluation.\nRule: 「〜てこそ」 = only by doing A does B hold; the main clause is a general truth or evaluation (often 「〜ものだ」, 「〜と言える」), never a particular past event, a command or an invitation."
+    },
+    "wrong": [
+      {
+        "zh": "这是过去某一次具体的事，「〜てこそ」后项是一般道理，不描写一次性的事件。",
+        "en": "This is a particular past event; 「〜てこそ」 is followed by a general truth, not a one-off occurrence."
+      },
+      null,
+      {
+        "zh": "「〜てこそ」后项不接命令，而且“只有经历失败才必须报告原因”意思也不通。",
+        "en": "「〜てこそ」 doesn't take a command, and \"only after failing must you report the cause\" makes no sense."
+      },
+      {
+        "zh": "「〜てこそ」后项不接劝诱「〜よう」，它说的是道理、评价。",
+        "en": "「〜てこそ」 doesn't take an invitation like 「〜よう」; it states a principle or evaluation."
+      }
+    ]
+  },
+  {
+    "id": "n1-l81-025",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#9"
+    ],
+    "difficulty": 3,
+    "stem": "これは開発中の一点ものの試作品だ。うっかり（　）、私の給料ではとても弁償しきれない。",
+    "options": [
+      "落としでもしたら",
+      "落としてこそ",
+      "落とさないまでも",
+      "落とすとあれば"
+    ],
+    "answer": 0,
+    "full": "これは開発中の一点ものの試作品だ。うっかり落としでもしたら、私の給料ではとても弁償しきれない。",
+    "tr": {
+      "zh": "这是正在开发、仅此一件的试制品。万一不小心摔了，凭我的工资根本赔不起。",
+      "en": "This is a one-of-a-kind prototype still in development. If I carelessly dropped it, I could never pay for it on my salary."
+    },
+    "why": {
+      "zh": "线索：「うっかり」和「とても弁償しきれない」表明是在担心一件不希望发生的事。\n规则：「動詞ます形＋でもしたら」＝万一……的话（可就糟了），后项是担心的后果。",
+      "en": "Clue: 「うっかり」 and 「とても弁償しきれない」 show the speaker fearing something unwanted.\nRule: 「verb masu-stem + でもしたら」 = if… were to happen (it'd be a disaster); the main clause is the feared consequence."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜てこそ」是“只有……才……”，后面要接正面的道理，不接“赔不起”。",
+        "en": "「〜てこそ」 (\"only by…\") leads to a positive principle, not \"I couldn't pay for it\"."
+      },
+      {
+        "zh": "「〜ないまでも」是“即使不……至少也……”，后面要有退而求其次的内容，意思不通。",
+        "en": "「〜ないまでも」 (\"even if not…, at least…\") needs a fallback in the main clause; the sentence makes no sense."
+      },
+      {
+        "zh": "「〜とあれば」是“如果是为了……就愿意……”，后面接决心，和“万一摔了赔不起”的担心不合。",
+        "en": "「〜とあれば」 (\"if it's for…, I'll…\") leads to resolve, not to the worry of breaking something."
+      }
+    ]
+  },
+  {
+    "id": "n1-l81-026",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#9"
+    ],
+    "difficulty": 3,
+    "stem": "A「熱があるなら、今日は休んだら？」\nB「でも、締め切りが近いし……。」\nA「無理して出てきて、途中で（　）、かえってみんなに迷惑がかかるよ。」",
+    "options": [
+      "倒れてこそ",
+      "倒れないまでも",
+      "倒れでもしたら",
+      "倒れるとあれば"
+    ],
+    "answer": 2,
+    "full": "A「熱があるなら、今日は休んだら？」\nB「でも、締め切りが近いし……。」\nA「無理して出てきて、途中で倒れでもしたら、かえってみんなに迷惑がかかるよ。」",
+    "tr": {
+      "zh": "A：“发烧的话，今天就请假吧？”\nB：“可是截止日期快到了……”\nA：“硬撑着来上班，万一中途倒下了，反而给大家添麻烦。”",
+      "en": "A: \"If you've got a fever, why not take today off?\"\nB: \"But the deadline's coming up…\"\nA: \"If you force yourself in and collapse halfway through, you'll only cause everyone more trouble.\""
+    },
+    "why": {
+      "zh": "线索：A在劝B休息，「かえってみんなに迷惑がかかる」是担心的后果。\n规则：「〜でもしたら」＝万一……的话，假设一件不希望发生的事（这里是自己控制不了的“倒下”），后项是担心、警告。",
+      "en": "Clue: A is urging B to rest, and 「かえってみんなに迷惑がかかる」 is the feared outcome.\nRule: 「〜でもしたら」 = if… were to happen; it imagines something unwanted (here collapsing, which no one controls) and leads to worry or a warning."
+    },
+    "wrong": [
+      {
+        "zh": "「〜てこそ」是“只有……才……”，“只有倒下才添麻烦”不是在说道理，意思不通。",
+        "en": "「〜てこそ」 (\"only by…\") would mean \"only by collapsing do you cause trouble\", which isn't a principle and makes no sense."
+      },
+      {
+        "zh": "「〜ないまでも」是“即使不……至少也……”，“即使不倒下也反而添麻烦”不是A想表达的担心。",
+        "en": "「〜ないまでも」 (\"even if not…, at least…\") gives \"even if you don't collapse, you'll cause trouble\", not A's worry."
+      },
+      null,
+      {
+        "zh": "「〜とあれば」是“如果是为了……就……”，不能表达“万一倒下”这样的担心。",
+        "en": "「〜とあれば」 (\"if it's for…\") can't express the worry \"if you were to collapse\"."
+      }
+    ]
   }
 ]

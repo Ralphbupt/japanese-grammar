@@ -582,5 +582,165 @@
         "en": "「なったということだろうか」 (does that mean it got sorted out?) contradicts the complaint before it."
       }
     ]
+  },
+  {
+    "id": "n2-l65-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson65#1"
+    ],
+    "difficulty": 1,
+    "stem": "先ほど田中さんから電話があり、電車が止まっているので会議に30分ほど遅れる（　）。",
+    "options": [
+      "ことです",
+      "ものです",
+      "わけがありません",
+      "とのことです"
+    ],
+    "answer": 3,
+    "full": "先ほど田中さんから電話があり、電車が止まっているので会議に30分ほど遅れるとのことです。",
+    "tr": {
+      "zh": "刚才田中打来电话，说电车停了，开会要晚到30分钟左右。",
+      "en": "Mr. Tanaka just called — the trains have stopped, so he'll be about thirty minutes late for the meeting."
+    },
+    "why": {
+      "zh": "线索：「田中さんから電話があり」说明后面的内容是田中说的话，由说话人转达。\n规则：普通形＋「とのことです」＝（某人）说……／据说……，用于礼貌地转达别人的话或留言。\n辨析：「ことです」是“应该……”的建议，不是转述。",
+      "en": "Clue: 「田中さんから電話があり」 shows what follows is what Tanaka said, passed on by the speaker.\nRule: plain form ＋ 「とのことです」 = (someone) says… / I'm told…, a polite way to relay someone's words or message.\nContrast: 「ことです」 gives advice (you should…), it doesn't relay anything."
+    },
+    "wrong": [
+      {
+        "zh": "「ことです」是“最好……、应该……”的建议，“应该迟到”不合情理，也不是转述。",
+        "en": "「ことです」 is advice (you should…); \"you should be late\" makes no sense and isn't relaying."
+      },
+      {
+        "zh": "「ものです」表示一般道理或感慨，不能用来转达田中的留言。",
+        "en": "「ものです」 states a general truth or a feeling; it can't pass on Tanaka's message."
+      },
+      {
+        "zh": "「わけがありません」是“不可能……”，和田中打电话说要迟到矛盾。",
+        "en": "「わけがありません」 (there's no way…) contradicts Tanaka calling to say he'll be late."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l65-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson65#1"
+    ],
+    "difficulty": 2,
+    "stem": "取引先の担当者から、見積書を金曜日までに送ってほしい（　）。",
+    "options": [
+      "どころではなかった",
+      "とのことだった",
+      "ことはなかった",
+      "にすぎなかった"
+    ],
+    "answer": 1,
+    "full": "取引先の担当者から、見積書を金曜日までに送ってほしいとのことだった。",
+    "tr": {
+      "zh": "客户的负责人说，希望我们星期五之前把报价单发过去。",
+      "en": "The contact at our client said they'd like the quote sent by Friday."
+    },
+    "why": {
+      "zh": "线索：「担当者から」＋「〜てほしい」，是对方提出的要求，由说话人转述。\n规则：「〜とのことだ」前面可以放原话的内容，包括请求「〜てほしい」，表示“（对方）说……”。\n辨析：「ことはなかった」是“没必要……”，不能接「ほしい」表示转述。",
+      "en": "Clue: 「担当者から」 plus 「〜てほしい」 is the other side's request, reported by the speaker.\nRule: 「〜とのことだ」 can take the content of what was said, including a request (「〜てほしい」), meaning \"(they) said….\"\nContrast: 「ことはなかった」 (there was no need to…) can't follow 「ほしい」 to report a request."
+    },
+    "wrong": [
+      {
+        "zh": "「どころではなかった」是“哪顾得上……”，前面要接活动，不接“希望发过去”。",
+        "en": "「どころではなかった」 (in no position to…) follows an activity, not \"would like it sent.\""
+      },
+      null,
+      {
+        "zh": "「ことはなかった」是“没必要……”，接动词辞书形，不接「ほしい」。",
+        "en": "「ことはなかった」 (there was no need to…) follows a dictionary-form verb, not 「ほしい」."
+      },
+      {
+        "zh": "「にすぎなかった」是“只不过是……”，和转达对方的要求无关。",
+        "en": "「にすぎなかった」 (was merely…) has nothing to do with passing on a request."
+      }
+    ]
+  },
+  {
+    "id": "n2-l65-018",
+    "type": "bunpou",
+    "refs": [
+      "lesson65#5"
+    ],
+    "difficulty": 2,
+    "stem": "専門家の間では、適度な昼寝は午後の仕事の効率を上げるのに効果がある（　）。",
+    "options": [
+      "ばかりだ",
+      "とされている",
+      "までもない",
+      "かねない"
+    ],
+    "answer": 1,
+    "full": "専門家の間では、適度な昼寝は午後の仕事の効率を上げるのに効果があるとされている。",
+    "tr": {
+      "zh": "专家们普遍认为，适度午睡对提高下午的工作效率有效。",
+      "en": "Among experts, a moderate nap is considered effective for boosting work efficiency in the afternoon."
+    },
+    "why": {
+      "zh": "线索：「専門家の間では」说明后面是专家们普遍接受的看法，不是说话人自己的判断。\n规则：普通形＋「とされている」＝一般认为……／被视为……，客观地陈述公认的看法。\n辨析：「かねない」是“有可能（导致坏事）”，接ます形，「効果があるかねない」接法不对，意思也不对。",
+      "en": "Clue: 「専門家の間では」 shows a view widely accepted by experts follows, not the speaker's own judgment.\nRule: plain form ＋ 「とされている」 = is considered / is regarded as, stating an accepted view objectively.\nContrast: 「かねない」 (could lead to something bad) takes a masu-stem; 「効果があるかねない」 is wrong in both form and meaning."
+    },
+    "wrong": [
+      {
+        "zh": "「ばかりだ」是“越来越……”（变化）或“只等……”，“有效果越来越”说不通。",
+        "en": "「ばかりだ」 (keeps getting… / just waiting to…) doesn't work after 「効果がある」."
+      },
+      null,
+      {
+        "zh": "「までもない」是“用不着……”，接动词辞书形表示没必要做，不接「効果がある」。",
+        "en": "「までもない」 (no need to…) follows a verb for an unnecessary action, not 「効果がある」."
+      },
+      {
+        "zh": "「かねない」接ます形，表示“可能导致坏结果”，接法和意思都不对。",
+        "en": "「かねない」 takes a masu-stem and means \"could cause something bad\"; both form and meaning are wrong."
+      }
+    ]
+  },
+  {
+    "id": "n2-l65-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson65#5"
+    ],
+    "difficulty": 2,
+    "stem": "かつては体によくない（　）卵だが、最近の研究では一日に二、三個食べても問題ないと言われている。",
+    "options": [
+      "ことにしていた",
+      "わけだった",
+      "とされていた",
+      "ものだった"
+    ],
+    "answer": 2,
+    "full": "かつては体によくないとされていた卵だが、最近の研究では一日に二、三個食べても問題ないと言われている。",
+    "tr": {
+      "zh": "鸡蛋过去被认为对身体不好，但最近的研究说一天吃两三个也没问题。",
+      "en": "Eggs were once considered bad for you, but recent research says two or three a day are fine."
+    },
+    "why": {
+      "zh": "线索：「かつては」（过去）和「最近の研究では」形成对比：过去的普遍看法被新研究推翻。\n规则：「〜とされていた」＝过去被认为……，常暗示现在看法已经变了；可以修饰后面的名词「卵」。\n辨析：「ことにしていた」是自己决定的习惯（“我一直规定自己……”），不是社会的看法。",
+      "en": "Clue: 「かつては」 (once) contrasts with 「最近の研究では」: an old common view overturned by new research.\nRule: 「〜とされていた」 = was once considered…, often hinting the view has changed; it can modify the noun 「卵」.\nContrast: 「ことにしていた」 is a personal rule one made for oneself, not a common view."
+    },
+    "wrong": [
+      {
+        "zh": "「ことにしていた」是“自己一直坚持……的习惯”，鸡蛋“对身体不好”不是谁的决定。",
+        "en": "「ことにしていた」 is a habit one decided on; eggs being bad for you isn't anyone's decision."
+      },
+      {
+        "zh": "「わけだった」是“原来是……”的理由说明，不能修饰「卵」表示过去的看法。",
+        "en": "「わけだった」 explains a reason (so that's why); it can't modify 「卵」 as a past view."
+      },
+      null,
+      {
+        "zh": "「ものだった」是“过去常常……”的回忆，修饰「卵」也说不通。",
+        "en": "「ものだった」 recalls past habits (used to…), and doesn't fit before 「卵」."
+      }
+    ]
   }
 ]

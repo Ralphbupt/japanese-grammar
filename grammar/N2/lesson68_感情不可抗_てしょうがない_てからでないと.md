@@ -291,6 +291,142 @@ This lesson covers N2 grammar for "uncontrollable emotions" and "necessary preco
 
 ---
 
+## 5. 〜がたい（难以……）||5. 〜がたい (Hard to… / Can hardly…)
+
+### 接続||Conjugation
+:::zh
+- 動詞ます形（去ます）+ がたい
+
+※ 按い形容词变化：がたく、がたかった、がたい + 名詞（「忘れがたい思い出」）。  
+※ 前面多是表示认知、感情、言语的动词：信じる、許す、理解する、想像する、忘れる、受け入れる、言う。
+:::
+:::en
+- Verb masu-stem + がたい
+
+※ Conjugates like an i-adjective: がたく, がたかった, がたい + noun (「忘れがたい思い出」).  
+※ The verb is usually one of thinking, feeling or saying: 信じる, 許す, 理解する, 想像する, 忘れる, 受け入れる, 言う.
+:::
+
+### 含义||Meaning
+:::zh
+"很难……""难以……"，表示从心理、感情上很难做到，几乎不可能，带有说话人的强烈感受。书面、正式。不用于身体上、技术上的困难：鞋不好走说「歩きにくい」，不说「歩きがたい」。固定说法：「得がたい」（难得的）、「動かしがたい事実」（无法动摇的事实）。
+:::
+:::en
+"Hard to…," "can hardly…" — something is almost impossible to do in one's mind or heart, with strong feeling from the speaker. Formal and written. Not for physical or technical difficulty: shoes that are hard to walk in are 「歩きにくい」, not 「歩きがたい」. Set phrases: 「得がたい」 (rare, precious), 「動かしがたい事実」 (an undeniable fact).
+:::
+
+### 例句||Example Sentences
+:::zh
+1. あの誠実な彼がそんな嘘をついたとは、信じ**がたい**。（那么诚实的他居然撒了那样的谎，真令人难以置信。）
+2. 弱い立場の人をだます犯罪は、決して許し**がたい**。（欺骗弱势群体的犯罪，绝对不可原谅。）
+3. 学生時代に参加したボランティア活動は、忘れ**がたい**経験になった。（学生时代参加的志愿活动成了难忘的经历。）
+4. 経営陣の突然の方針転換は、現場の社員には理解し**がたい**ものだった。（管理层突然改变方针，一线员工很难理解。）
+:::
+:::en
+1. あの誠実な彼がそんな嘘をついたとは、信じ**がたい**。(It's hard to believe that someone as honest as him told such a lie.)
+2. 弱い立場の人をだます犯罪は、決して許し**がたい**。(Crimes that cheat vulnerable people are simply unforgivable.)
+3. 学生時代に参加したボランティア活動は、忘れ**がたい**経験になった。(The volunteer work I did as a student became an unforgettable experience.)
+4. 経営陣の突然の方針転換は、現場の社員には理解し**がたい**ものだった。(Management's sudden change of course was hard for frontline staff to understand.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| がたい | 难以……（几乎做不到） | 心理、感情上难以接受；书面 |
+| にくい | 不容易…… | 第31课第2点，客观、物理上的难：「字が小さくて読みにくい」 |
+| づらい | ……起来很难受 | 第31课，主观上的不舒服：「言いづらい」 |
+| かねる | 难以……（委婉拒绝） | 第44课第4点，"按立场不便做"：「お答えしかねます」 |
+
+> 「この靴は歩きにくい」= 这双鞋不好走（物理）  
+> 「上司には言いづらい」= 跟上司不好开口（心里难受）  
+> 「その話は信じがたい」= 那件事令人难以置信（心理上接受不了）  
+> 「その件はお答えしかねます」= 那件事恕难奉告（委婉拒绝）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| がたい | hard to… (almost impossible) | Hard to accept in one's mind or heart; formal |
+| にくい | not easy to… | Lesson 31 point 2; objective or physical difficulty: 「字が小さくて読みにくい」 |
+| づらい | uncomfortable to… | Lesson 31; personal discomfort: 「言いづらい」 |
+| かねる | cannot (politely declining) | Lesson 44 point 4; "not in a position to": 「お答えしかねます」 |
+
+> 「この靴は歩きにくい」 = these shoes are hard to walk in (physical)  
+> 「上司には言いづらい」 = it's awkward to tell my boss (discomfort)  
+> 「その話は信じがたい」 = that story is hard to believe (can't accept it)  
+> 「その件はお答えしかねます」 = I'm afraid I can't answer that (polite refusal)
+:::
+
+---
+
+## 6. 〜を込めて（满怀……／倾注……）||6. 〜を込めて (With… / Filled with…)
+
+### 接続||Conjugation
+:::zh
+- 名詞 + を込めて + 動詞
+- 名詞 + を込めた + 名詞
+
+※ 前面是感情、心意类名词：心、愛、感謝（の気持ち）、願い、祈り、思い、怒り、皮肉。  
+※ 「込める」是他动词（把……装进去）；对应的自动词是「こもる」：「心を込めた料理」＝「心のこもった料理」。
+:::
+:::en
+- Noun + を込めて + verb
+- Noun + を込めた + noun
+
+※ The noun is a feeling or intention: 心, 愛, 感謝（の気持ち）, 願い, 祈り, 思い, 怒り, 皮肉.  
+※ 「込める」 is transitive (to put into); its intransitive pair is 「こもる」: 「心を込めた料理」 = 「心のこもった料理」.
+:::
+
+### 含义||Meaning
+:::zh
+"满怀……（地做）""倾注着……"，表示把某种感情或心意放进某个行为或作品里。「心を込めて」＝用心地、诚心诚意地。常用于写信、送礼、做东西、唱歌、致辞等场面，也可以是负面感情（「怒りを込めて」「皮肉を込めて」）。
+:::
+:::en
+"With…," "filled with…" — putting a feeling or intention into an action or a piece of work. 「心を込めて」 = wholeheartedly, with care. Common with writing letters, giving gifts, making things, singing and speeches; the feeling can also be negative (「怒りを込めて」, 「皮肉を込めて」).
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 母の誕生日に、心**を込めて**手紙を書いた。（妈妈生日时，我用心写了一封信。）
+2. 退職される部長に、感謝の気持ち**を込めて**花束を贈った。（向即将退休的部长献上花束，表达感激之情。）
+3. 被災地の復興への願い**を込めて**、子どもたちが歌を歌った。（孩子们满怀对灾区重建的祝愿唱了歌。）
+4. 彼女は「さすがですね」と、皮肉**を込めて**言った。（她带着讽刺说了句“真不愧是你啊”。）
+:::
+:::en
+1. 母の誕生日に、心**を込めて**手紙を書いた。(For my mother's birthday, I wrote her a letter from the heart.)
+2. 退職される部長に、感謝の気持ち**を込めて**花束を贈った。(We gave the retiring department head a bouquet as a token of our gratitude.)
+3. 被災地の復興への願い**を込めて**、子どもたちが歌を歌った。(The children sang, filled with hope for the disaster area's recovery.)
+4. 彼女は「さすがですね」と、皮肉**を込めて**言った。("Impressive as always," she said, with sarcasm.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| を込めて | 满怀……（地做） | 他动词，人把感情放进行为里 |
+| がこもった／のこもった | 充满……的 | 自动词，描写东西里含有感情：「心のこもったプレゼント」 |
+| を通じて | 通过…… | 第35课第5点，表示手段、途径，不表示感情 |
+| をもとに | 以……为基础 | 第35课第6点，表示素材、依据 |
+
+> 「心を込めて作った」= 用心做的（人的行为）  
+> 「心のこもった料理」= 饱含心意的饭菜（东西的性质）  
+> 「手紙を通じて気持ちを伝えた」= 通过信传达了心意（手段）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| を込めて | with… (feeling) | Transitive; a person puts a feeling into an action |
+| がこもった／のこもった | full of… | Intransitive; describes a thing that holds feeling: 「心のこもったプレゼント」 |
+| を通じて | through… | Lesson 35 point 5; a means or channel, not a feeling |
+| をもとに | based on… | Lesson 35 point 6; material or basis |
+
+> 「心を込めて作った」 = made with care (what the person did)  
+> 「心のこもった料理」 = a meal made with love (what the thing is like)  
+> 「手紙を通じて気持ちを伝えた」 = conveyed one's feelings through a letter (means)
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

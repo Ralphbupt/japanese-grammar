@@ -550,6 +550,31 @@
   ]
  },
  {
+  "key": "lesson62:〜に次いで",
+  "form": {
+   "zh": [
+    "N ＋ に次いで",
+    "N ＋ に次ぐ ＋ N"
+   ],
+   "en": [
+    "N + に次いで",
+    "N + に次ぐ + N"
+   ]
+  },
+  "mean": {
+   "zh": "排在某个之后，仅次于它，是第二位，多用于新闻和统计。",
+   "en": "Coming right after something, second only to it. Common in news and statistics."
+  },
+  "vs": {
+   "zh": "に続いて：接着……之后（只说顺序，不表示排名）；に加えて：加上……（追加）",
+   "en": "に続いて: following (just order, no ranking); に加えて: in addition to"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
   "key": "lesson63:〜にあたって/にあたり",
   "form": {
    "zh": [
@@ -622,6 +647,31 @@
   "pick": [
    1,
    3
+  ]
+ },
+ {
+  "key": "lesson63:〜と思うと",
+  "form": {
+   "zh": [
+    "Vた形 ＋ と思うと／かと思うと",
+    "Vた形 ＋ かと思ったら"
+   ],
+   "en": [
+    "V-ta + と思うと／かと思うと",
+    "V-ta + かと思ったら"
+   ]
+  },
+  "mean": {
+   "zh": "刚看到一个变化，紧接着又发生了另一个变化，只用于描写别人或事物，不用于自己。",
+   "en": "One change is seen, and right after it another follows. Used for other people or things, not your own actions."
+  },
+  "vs": {
+   "zh": "たとたん：刚一……就（也可用于自己）；次第：一……就立刻（后面是意志）",
+   "en": "たとたん: the moment (can be about yourself); 次第: as soon as (followed by your intention)"
+  },
+  "pick": [
+   0,
+   1
   ]
  },
  {
@@ -839,6 +889,31 @@
   "pick": [
    2,
    5
+  ]
+ },
+ {
+  "key": "lesson65:〜とされている",
+  "form": {
+   "zh": [
+    "普通形 ＋ とされている／とされる",
+    "N／なA（だ）＋ とされている"
+   ],
+   "en": [
+    "plain form + とされている／とされる",
+    "N／na-adj (だ) + とされている"
+   ]
+  },
+  "mean": {
+   "zh": "表示社会、专家或规定层面公认的看法，书面而客观。",
+   "en": "A view generally accepted by society, experts or rules. Written and objective."
+  },
+  "vs": {
+   "zh": "と言われている：据说（更口语，传说也行）；とのことだ：据说（转达具体消息）",
+   "en": "と言われている: it is said (more casual, even legends); とのことだ: I hear (passing on a message)"
+  },
+  "pick": [
+   0,
+   1
   ]
  },
  {
@@ -1311,6 +1386,54 @@
   ]
  },
  {
+  "key": "lesson68:〜がたい",
+  "form": {
+   "zh": [
+    "Vます形 ＋ がたい"
+   ],
+   "en": [
+    "V-masu stem + がたい"
+   ]
+  },
+  "mean": {
+   "zh": "心理上、感情上难以做到，几乎做不到，多接相信、原谅、理解这类动词，书面。",
+   "en": "Hard to do emotionally or mentally, almost impossible. Often with verbs like believe, forgive or understand. Written style."
+  },
+  "vs": {
+   "zh": "にくい：不容易（客观、物理上的难）；かねる：难以……（委婉拒绝）",
+   "en": "にくい: hard to (physical or objective); かねる: unable to (a polite refusal)"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson68:〜を込めて",
+  "form": {
+   "zh": [
+    "N ＋ を込めて ＋ V",
+    "N ＋ を込めた ＋ N"
+   ],
+   "en": [
+    "N + を込めて + V",
+    "N + を込めた + N"
+   ]
+  },
+  "mean": {
+   "zh": "把感情或心意倾注到行为中去做某事，前面多是心、感谢、愿望这类名词。",
+   "en": "Doing something with a feeling put into it. Usually after words like heart, gratitude or wishes."
+  },
+  "vs": {
+   "zh": "のこもった：充满……的（描写东西）；を通じて：通过……（手段）",
+   "en": "のこもった: full of (describes the thing); を通じて: through (a means)"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
   "key": "lesson69:〜に沿って",
   "form": {
    "zh": [
@@ -1454,6 +1577,56 @@
   "vs": {
    "zh": "あげく：最终……（多为负面结果）；た上で：在……之后（强调慎重，不强调过程漫长）",
    "en": "あげく: in the end (usually a bad result); た上で: after (stresses care, not a long process)"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson69:〜に欠かせない",
+  "form": {
+   "zh": [
+    "N ＋ に欠かせない（＋ N）",
+    "N ＋ に（は）＋ N ＋ が欠かせない"
+   ],
+   "en": [
+    "N + に欠かせない (+ N)",
+    "N + に(は) + N + が欠かせない"
+   ]
+  },
+  "mean": {
+   "zh": "对某件事来说不可或缺，少了就不行，强调它的重要性。",
+   "en": "Indispensable for something; you can't do without it. Stresses how important it is."
+  },
+  "vs": {
+   "zh": "に必要だ：对……必要（中性，语气较弱）；欠かさず：一次不落地（副词）",
+   "en": "に必要だ: necessary for (neutral, weaker); 欠かさず: without fail (an adverb)"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson69:〜というように",
+  "form": {
+   "zh": [
+    "N／普通形 ＋ というように ＋ V",
+    "Aは〜、Bは〜 ＋ というように"
+   ],
+   "en": [
+    "N／plain form + というように + V",
+    "A は〜、B は〜 + というように"
+   ]
+  },
+  "mean": {
+   "zh": "先举出几个具体的例子，再归纳说明整体的做法或情况。",
+   "en": "Gives a few concrete examples, then sums up the overall way or situation."
+  },
+  "vs": {
+   "zh": "たように：正如……那样（一致）；など：……等（只是列举）",
+   "en": "たように: just as (agreeing with); など: and so on (just a list)"
   },
   "pick": [
    0,
@@ -1727,6 +1900,52 @@
   "pick": [
    0,
    1
+  ]
+ },
+ {
+  "key": "lesson71:〜たところ",
+  "form": {
+   "zh": [
+    "Vた形 ＋ ところ"
+   ],
+   "en": [
+    "V-ta + ところ"
+   ]
+  },
+  "mean": {
+   "zh": "做了某件事之后，发现了某种情况或得到了某个结果，后面是已经发生的事。",
+   "en": "After doing something, you found out something or got a result. What follows has already happened."
+  },
+  "vs": {
+   "zh": "たところで：就算……也没用；たところだ：刚刚……",
+   "en": "たところで: even if, it's no use; たところだ: have just done"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson71:〜そうになる",
+  "form": {
+   "zh": [
+    "Vます形 ＋ そうになる／そうになった"
+   ],
+   "en": [
+    "V-masu stem + そうになる／そうになった"
+   ]
+  },
+  "mean": {
+   "zh": "眼看就要发生某事，差点就那样了，但实际上没有发生，多用于摔倒、哭这类不受控制的事。",
+   "en": "Something was about to happen and almost did, but didn't. Often with things you can't control, like falling or crying."
+  },
+  "vs": {
+   "zh": "ところだった：差一点就……（接辞书形，带后怕）；そうにない：看起来不会……（推测）",
+   "en": "ところだった: nearly (after V-dict, with relief); そうにない: doesn't look likely (a guess)"
+  },
+  "pick": [
+   0,
+   2
   ]
  },
  {

@@ -85,6 +85,31 @@
   }
  },
  {
+  "key": "lesson47:〜か何か",
+  "form": {
+   "zh": [
+    "N ＋ か何か",
+    "同类：N ＋ か誰か（人）、N ＋ かどこか（地方）"
+   ],
+   "en": [
+    "N + か何か",
+    "same family: N + か誰か (people), N + かどこか (places)"
+   ]
+  },
+  "mean": {
+   "zh": "只举一个例子，意思是这个或者类似的东西，说话人并不确定到底是不是它。",
+   "en": "Gives one example, meaning this or something like it, when the speaker isn't sure it is really that."
+  },
+  "vs": {
+   "zh": "でも：轻松提议时举的例子，不含不确定；とか〜とか：举几个例子",
+   "en": "でも: an example in a light suggestion, no uncertainty; とか〜とか: several examples"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
   "key": "lesson48:〜たとたん",
   "form": {
    "zh": [
@@ -623,6 +648,33 @@
   ]
  },
  {
+  "key": "lesson51:〜という点で",
+  "form": {
+   "zh": [
+    "N ＋ という点で（は）",
+    "V・イA普通形 ＋ という点で（は）",
+    "ナA ＋ だ／である ＋ という点で（は）"
+   ],
+   "en": [
+    "N + という点で (は)",
+    "V / i-adj plain form + という点で (は)",
+    "na-adj + だ / である + という点で (は)"
+   ]
+  },
+  "mean": {
+   "zh": "把评价限定在某一个方面或特征上，意思是在这一点上，后面多接评价。",
+   "en": "Narrows an evaluation to one aspect or feature, meaning in that or in terms of; an evaluation usually follows."
+  },
+  "vs": {
+   "zh": "にとって：从某人的立场评价；において：书面，表示场所或领域",
+   "en": "にとって: judged from someone's standpoint; において: written, a place or field"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
   "key": "lesson52:〜ふりをする",
   "form": {
    "zh": [
@@ -904,6 +956,81 @@
   ]
  },
  {
+  "key": "lesson53:少しも〜ない / ちっとも〜ない",
+  "form": {
+   "zh": [
+    "少しも／ちっとも ＋ Vない形",
+    "少しも／ちっとも ＋ イA〜くない、ナA〜ではない"
+   ],
+   "en": [
+    "少しも / ちっとも + V-nai",
+    "少しも / ちっとも + i-adj 〜くない, na-adj 〜ではない"
+   ]
+  },
+  "mean": {
+   "zh": "一点也不，否定的是程度；前一个口语书面都能用，后一个只用于口语，常带不满或意外。",
+   "en": "Not at all, denying a degree; the first works in speech and writing, the second is spoken only and often sounds annoyed or surprised."
+  },
+  "vs": {
+   "zh": "決して〜ない：强调意志或判断，绝不；一度も〜ない：否定次数",
+   "en": "決して〜ない: will or judgment, never; 一度も〜ない: not even once"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson53:なかなか〜ない",
+  "form": {
+   "zh": [
+    "なかなか ＋ Vない形（常用可能形否定：なかなか眠れない）",
+    "※ 后接肯定：なかなかおいしい＝相当好吃"
+   ],
+   "en": [
+    "なかなか + V-nai (often the negative potential: なかなか眠れない)",
+    "※ with a positive: なかなかおいしい = pretty good"
+   ]
+  },
+  "mean": {
+   "zh": "想要实现的事迟迟不发生，或者很费劲、很花时间。",
+   "en": "Something you want just won't happen, or takes a long time and a lot of effort."
+  },
+  "vs": {
+   "zh": "めったに〜ない：说频率低，和期待无关；どうしても〜ない：怎么都不行",
+   "en": "めったに〜ない: low frequency, no expectation involved; どうしても〜ない: fails whatever you try"
+  },
+  "pick": [
+   0,
+   2
+  ]
+ },
+ {
+  "key": "lesson53:どうしても〜ない",
+  "form": {
+   "zh": [
+    "どうしても ＋ Vない形（多为可能形否定：どうしても思い出せない）",
+    "どうしても ＋ 〜たい／〜なければならない：无论如何都要"
+   ],
+   "en": [
+    "どうしても + V-nai (usually the negative potential: どうしても思い出せない)",
+    "どうしても + 〜たい / 〜なければならない: must, no matter what"
+   ]
+  },
+  "mean": {
+   "zh": "想尽办法也做不到；后面接想要或必须的时候，意思是无论如何都要。",
+   "en": "Can't do it however hard you try; followed by want or must, it means no matter what."
+  },
+  "vs": {
+   "zh": "なかなか〜ない：过程费劲，最后可能实现；どうしても〜ない：结果就是做不到",
+   "en": "なかなか〜ない: slow going, may happen in the end; どうしても〜ない: it simply doesn't happen"
+  },
+  "pick": [
+   1,
+   2
+  ]
+ },
+ {
   "key": "lesson54:〜たらいい / 〜といい",
   "form": {
    "zh": [
@@ -1045,6 +1172,54 @@
   "pick": [
    0,
    1
+  ]
+ },
+ {
+  "key": "lesson54:〜てみると / 〜てみたら",
+  "form": {
+   "zh": [
+    "Vて形 ＋ みると／みたら ＋ 发现的事实（多为过去形）"
+   ],
+   "en": [
+    "V-te + みると / みたら + what you found (usually past)"
+   ]
+  },
+  "mean": {
+   "zh": "特意试着做了一下，结果发现了某个事实，后半句说的是发现的情况。",
+   "en": "You deliberately tried something and found out a fact; the second half says what you found."
+  },
+  "vs": {
+   "zh": "てみる：只是试一试，后面没有发现；たら：也表示发现，但没有特意去试",
+   "en": "てみる: just trying, no discovery follows; たら: also a discovery, but without deliberately trying"
+  },
+  "pick": [
+   0,
+   1
+  ]
+ },
+ {
+  "key": "lesson54:〜直す",
+  "form": {
+   "zh": [
+    "Vます形（去ます）＋ 直す（按五段变化）",
+    "名词形：〜直し（やり直し、書き直し）"
+   ],
+   "en": [
+    "V-masu stem + 直す (conjugates as godan)",
+    "noun form: 〜直し (やり直し, 書き直し)"
+   ]
+  },
+  "mean": {
+   "zh": "为了改好而重新做一遍，内容会有改动。",
+   "en": "Doing something over again to fix it; the content changes."
+  },
+  "vs": {
+   "zh": "もう一度：只是重复，不一定改正；込む：同为复合动词，表示进入或彻底",
+   "en": "もう一度: just repeating, not necessarily fixing; 込む: another compound suffix, meaning into or thoroughly"
+  },
+  "pick": [
+   0,
+   2
   ]
  },
  {

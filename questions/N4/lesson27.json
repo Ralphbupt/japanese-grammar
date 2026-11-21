@@ -259,5 +259,180 @@
       "en": "Clue: The sentence ends in hearsay 「そうです」 (I hear), which follows a plain-form verb: 「教えられる」, the light honorific of 「教える」, with Professor Yamada as subject.\nOrder: 「教えられる」 ＋ 「そうです」 go last; 「アメリカの」 modifies the noun 「大学」, and 「アメリカの 大学で」 (where he teaches) comes before the verb: アメリカの → 大学で → 教えられる → そうです. The ★ is 「アメリカの」.\nTrap: Reading 「教えられる」 as passive (be taught). The professor is the subject and he is the one teaching, so 「られる」 here is honorific."
     },
     "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n4-l27-012",
+    "type": "bunpou",
+    "refs": ["lesson27#5"],
+    "difficulty": 3,
+    "stem": "（ホテルの 入り口で） 係の 人「本日は 雨の 中、（　）、ありがとうございます。」",
+    "options": ["お越し くださいまして", "参りまして", "お越し しまして", "伺いまして"],
+    "answer": 0,
+    "full": "（ホテルの 入り口で） 係の 人「本日は 雨の 中、お越し くださいまして、ありがとうございます。」",
+    "kj": "（ホテルの入り口で）係の人「本日は雨の中、お越しくださいまして、ありがとうございます。」",
+    "tr": {
+      "zh": "（在酒店门口）工作人员：今天下着雨还劳您光临，非常感谢。",
+      "en": "(At a hotel entrance) Staff: Thank you for coming in the rain today."
+    },
+    "why": {
+      "zh": "线索：酒店工作人员对客人说「ありがとうございます」，来的是客人。\n规则：客人的动作用尊敬语；为对方的动作致谢要用「〜くださる」。「来る」的郑重尊敬语「お越しになる」＋くださる →「お越しくださいまして」。\n辨析：「参る」「伺う」都是“我去／我来”的谦让语，主语是自己。\nN2 考点：这是 N2 真题考过的敬语形式，比 N4 要求略高。",
+      "en": "Clue: Hotel staff say 「ありがとうございます」 to a guest — the guest is the one who came.\nRule: The guest's action takes 尊敬語, and thanking someone for an action takes 「〜くださる」. The formal honorific 「お越しになる」 + くださる → 「お越しくださいまして」.\nContrast: 「参る」 and 「伺う」 are humble \"I come / I go\" — their subject is yourself.\nN2 exam form: this keigo has appeared in real N2 papers — a step above N4."
+    },
+    "wrong": [
+      null,
+      { "zh": "「参る」是自己“来、去”的谦让语，用在客人身上等于贬低对方。", "en": "「参る」 is the humble \"come / go\" for yourself; used of a guest it lowers them." },
+      { "zh": "「お越し」是尊敬语，不能再套谦让的「お〜する」，没有「お越しする」这种说法。", "en": "「お越し」 is already honorific; it can't take the humble お〜する — 「お越しする」 doesn't exist." },
+      { "zh": "「伺う」是“我去拜访”的谦让语，主语是自己，不是客人。", "en": "「伺う」 is the humble \"I visit\" — about yourself, not the guest." }
+    ]
+  },
+  {
+    "id": "n4-l27-013",
+    "type": "bunpou",
+    "refs": ["lesson27#5"],
+    "difficulty": 3,
+    "stem": "（デパートの 放送） 「お客様の お呼び出しを 申し上げます。田中様、1階の サービスカウンターまで（　）。」",
+    "options": ["お越し ください", "参って ください", "お越し します", "伺って ください"],
+    "answer": 0,
+    "full": "（デパートの 放送） 「お客様の お呼び出しを 申し上げます。田中様、1階の サービスカウンターまで お越し ください。」",
+    "kj": "（デパートの放送）「お客様のお呼び出しを申し上げます。田中様、1階のサービスカウンターまでお越しください。」",
+    "tr": {
+      "zh": "（百货商店广播）广播寻人：田中先生／女士，请到一楼服务台。",
+      "en": "(Department store announcement) A paging call for a customer: would Mr./Ms. Tanaka please come to the service counter on the first floor."
+    },
+    "why": {
+      "zh": "线索：广播在请顾客「田中様」到服务台来，来的人是顾客。\n规则：请对方来，用尊敬语的请求形「お越しください」（＝来てください 的郑重说法）。\n辨析：「〜て ください」接谦让语（参る・伺う）就变成“请您谦卑地来”，自相矛盾。\nN2 考点：这是 N2 真题考过的敬语形式，比 N4 要求略高。",
+      "en": "Clue: The announcement asks the customer 「田中様」 to come to the counter — the customer does the coming.\nRule: Asking someone to come uses the honorific request 「お越しください」 (a formal 来てください).\nContrast: Putting a humble verb (参る・伺う) before 「〜て ください」 asks the customer to come humbly — a contradiction.\nN2 exam form: this keigo has appeared in real N2 papers — a step above N4."
+    },
+    "wrong": [
+      null,
+      { "zh": "「参る」是谦让语，只用于自己这一方，不能用来请顾客来。", "en": "「参る」 is humble, only for your own side; you can't use it to ask a customer to come." },
+      { "zh": "「お越し します」不存在；而且这是在请顾客来，不是说自己的动作。", "en": "「お越し します」 doesn't exist — and this asks the customer to come, it isn't your own action." },
+      { "zh": "「伺う」是自己拜访的谦让语，请顾客来不能用。", "en": "「伺う」 is the humble \"I visit\"; it can't ask a customer to come." }
+    ]
+  },
+  {
+    "id": "n4-l27-014",
+    "type": "bunpou",
+    "refs": ["lesson27#5"],
+    "difficulty": 3,
+    "stem": "（結婚式の スピーチ） 「皆様、本日は 遠い ところを（　）、誠に ありがとうございます。」",
+    "options": ["おいで くださり", "おいで して", "参って くださり", "伺い"],
+    "answer": 0,
+    "full": "（結婚式の スピーチ） 「皆様、本日は 遠い ところを おいで くださり、誠に ありがとうございます。」",
+    "kj": "（結婚式のスピーチ）「皆様、本日は遠いところをおいでくださり、誠にありがとうございます。」",
+    "tr": {
+      "zh": "（婚礼致辞）各位今天远道而来，衷心感谢。",
+      "en": "(Wedding speech) Thank you all so much for coming such a long way today."
+    },
+    "why": {
+      "zh": "线索：致辞对象是「皆様」（来宾），感谢的是来宾远道而来。\n规则：来宾的动作用尊敬语，致谢用「〜くださる」：「おいでになる」（＝来る）→「おいでくださり」。致辞、书信里很常见。\n辨析：「おいでくださる」和「お越しくださる」意思相同，前者稍显老派、更郑重。\nN2 考点：这是 N2 真题考过的敬语形式，比 N4 要求略高。",
+      "en": "Clue: The speech addresses 「皆様」 (the guests) and thanks them for coming a long way.\nRule: Guests' actions take 尊敬語, and thanks take 「〜くださる」: 「おいでになる」 (= 来る) → 「おいでくださり」. Common in speeches and letters.\nContrast: 「おいでくださる」 means the same as 「お越しくださる」, a little more old-fashioned and formal.\nN2 exam form: this keigo has appeared in real N2 papers — a step above N4."
+    },
+    "wrong": [
+      null,
+      { "zh": "「おいで」是尊敬语，不能套谦让的「お〜する」，没有「おいでする」。", "en": "「おいで」 is honorific; it can't take the humble お〜する — there's no 「おいでする」." },
+      { "zh": "「参る」是谦让语，后面接尊敬的「くださる」，一句里谦让和尊敬混在同一个动作上，是错的。", "en": "「参る」 is humble; attaching the honorific 「くださる」 mixes humble and honorific on one action — wrong." },
+      { "zh": "「伺う」是自己去拜访的谦让语；来的是来宾，而且致谢还缺「くださる」。", "en": "「伺う」 is the humble \"I visit\"; the guests came, and thanks would still need 「くださる」." }
+    ]
+  },
+  {
+    "id": "n4-l27-015",
+    "type": "bunpou",
+    "refs": ["lesson27#5"],
+    "difficulty": 3,
+    "stem": "（取引先への 手紙） 「先日は お忙しい 中、わざわざ 弊社まで（　）、ありがとうございました。」",
+    "options": ["おいで くださいまして", "おいで しまして", "参られまして", "お伺いに なりまして"],
+    "answer": 0,
+    "full": "（取引先への 手紙） 「先日は お忙しい 中、わざわざ 弊社まで おいで くださいまして、ありがとうございました。」",
+    "kj": "（取引先への手紙）「先日はお忙しい中、わざわざ弊社までおいでくださいまして、ありがとうございました。」",
+    "tr": {
+      "zh": "（给客户的信）前几天百忙之中特地光临敝公司，非常感谢。",
+      "en": "(Letter to a client) Thank you for taking the trouble to visit our office the other day despite your busy schedule."
+    },
+    "why": {
+      "zh": "线索：「弊社」（敝公司）是写信人自己的公司，来访的是收信的客户。\n规则：客户来我方，用尊敬语并致谢：「おいでになる」＋くださる →「おいでくださいまして」。\n容易错：「参られる」「お伺いになる」看着很恭敬，其实是把谦让语（参る・伺う）硬套成尊敬语，属于错误敬语。\nN2 考点：这是 N2 真题考过的敬语形式，比 N4 要求略高。",
+      "en": "Clue: 「弊社」 (our company) is the writer's own firm; the client is the one who visited.\nRule: The client coming to us takes 尊敬語 plus thanks: 「おいでになる」 + くださる → 「おいでくださいまして」.\nTrap: 「参られる」 and 「お伺いになる」 look very polite but force a humble verb (参る・伺う) into an honorific — wrong keigo.\nN2 exam form: this keigo has appeared in real N2 papers — a step above N4."
+    },
+    "wrong": [
+      null,
+      { "zh": "「おいで」是尊敬语，不能套谦让的「お〜する」。", "en": "「おいで」 is honorific and can't take the humble お〜する." },
+      { "zh": "「参る」是谦让语，再加尊敬的「〜られる」是错误敬语；致谢也缺「くださる」。", "en": "「参る」 is humble; adding the honorific 「〜られる」 is wrong keigo, and the thanks lack 「くださる」." },
+      { "zh": "「伺う」是谦让语，不能套尊敬模板「お〜になる」。", "en": "「伺う」 is humble and can't go into the honorific お〜になる template." }
+    ]
+  },
+  {
+    "id": "n4-l27-016",
+    "type": "bunpou",
+    "refs": ["lesson27#5"],
+    "difficulty": 3,
+    "stem": "受付「部長、ABC商事の 山田様が（　）。会議室に ご案内しました。」",
+    "options": ["お見えに なりました", "お見え しました", "参りました", "お越し いたしました"],
+    "answer": 0,
+    "full": "受付「部長、ABC商事の 山田様が お見えに なりました。会議室に ご案内しました。」",
+    "kj": "受付「部長、ABC商事の山田様がお見えになりました。会議室にご案内しました。」",
+    "tr": {
+      "zh": "前台：部长，ABC 商事的山田先生到了，我已经带他去会议室了。",
+      "en": "Reception: Sir, Mr. Yamada from ABC Trading has arrived. I've shown him to the meeting room."
+    },
+    "why": {
+      "zh": "线索：前台向部长通报“客人「山田様」来了”，来的是公司外的客人。\n规则：客人“来”用尊敬语。「お見えになる」＝「来る」的尊敬语，最常用于这种通报场景。\n辨析：「参りました」是我方的人“来了”的谦让语；用在客人身上等于贬低客人。\nN2 考点：这是 N2 真题考过的敬语形式，比 N4 要求略高。",
+      "en": "Clue: Reception is telling the manager that the visitor 「山田様」 has come — an outside guest.\nRule: A guest's coming takes 尊敬語. 「お見えになる」 = honorific 「来る」, the standard choice for this kind of report.\nContrast: 「参りました」 is the humble \"has come\" for your own side; used of a guest it lowers them.\nN2 exam form: this keigo has appeared in real N2 papers — a step above N4."
+    },
+    "wrong": [
+      null,
+      { "zh": "「お見え」只能接「になる」，没有谦让的「お見えする」。", "en": "「お見え」 only takes 「になる」 — there's no humble 「お見えする」." },
+      { "zh": "「参る」是谦让语，用于自己公司的人；客人来要用尊敬语。", "en": "「参る」 is humble, for people on your own side; a guest's arrival needs an honorific." },
+      { "zh": "「お越し」是尊敬语，不能接谦让的「いたす」，没有「お越しいたす」。", "en": "「お越し」 is honorific and can't take the humble 「いたす」 — 「お越しいたす」 doesn't exist." }
+    ]
+  },
+  {
+    "id": "n4-l27-017",
+    "type": "bunpou",
+    "refs": ["lesson27#6"],
+    "difficulty": 3,
+    "stem": "店員「ポイントカードを（　）、こちらに お出し ください。」",
+    "options": ["お持ちでしたら", "お持ちしたら", "お持ち いたしましたら", "持って おりましたら"],
+    "answer": 0,
+    "full": "店員「ポイントカードを お持ちでしたら、こちらに お出し ください。」",
+    "kj": "店員「ポイントカードをお持ちでしたら、こちらにお出しください。」",
+    "tr": {
+      "zh": "店员：如果您有积分卡，请放在这里。",
+      "en": "Clerk: If you have a points card, please put it here."
+    },
+    "why": {
+      "zh": "线索：后半句「お出し ください」是请顾客拿出来，所以“有卡”的是顾客。\n规则：对方的状态用「お＋ます形＋です」：「持っている」→「お持ちです」；条件形「お持ちでしたら」＝“如果您有的话”。\n辨析：「お持ちする」是谦让语，意思是“我替您拿”，主语是店员。\nN2 考点：这是 N2 真题考过的敬语形式，比 N4 要求略高。",
+      "en": "Clue: 「お出し ください」 asks the customer to take the card out, so the customer is the one who has it.\nRule: The other person's state takes お + masu-stem + です: 「持っている」 → 「お持ちです」; the conditional 「お持ちでしたら」 = \"if you have it\".\nContrast: 「お持ちする」 is humble — \"I'll carry it for you\", with the clerk as subject.\nN2 exam form: this keigo has appeared in real N2 papers — a step above N4."
+    },
+    "wrong": [
+      null,
+      { "zh": "「お持ちする」是谦让语“我替您拿”，和“请您拿出卡”对不上。", "en": "「お持ちする」 is humble \"I'll carry it for you\" — it doesn't fit asking the customer to hand over a card." },
+      { "zh": "「お持ちいたす」也是谦让语，主语是店员自己。", "en": "「お持ちいたす」 is also humble, with the clerk as subject." },
+      { "zh": "「〜て おる」是谦让语，用于自己的状态，不能描述顾客有没有卡。", "en": "「〜て おる」 is humble, for your own state; it can't describe whether the customer has a card." }
+    ]
+  },
+  {
+    "id": "n4-l27-018",
+    "type": "bunpou",
+    "refs": ["lesson27#6"],
+    "difficulty": 3,
+    "stem": "秘書「社長、お客様が 会議室で（　）。」\n社長「わかった。すぐ 行く。」",
+    "options": ["お待ちです", "お待ちします", "待って おります", "お待ち いたします"],
+    "answer": 0,
+    "full": "秘書「社長、お客様が 会議室で お待ちです。」\n社長「わかった。すぐ 行く。」",
+    "kj": "秘書「社長、お客様が会議室でお待ちです。」\n社長「分かった。すぐ行く。」",
+    "tr": {
+      "zh": "秘书：社长，客人在会议室等您。\n社长：知道了，我马上去。",
+      "en": "Secretary: Sir, your visitor is waiting in the meeting room.\nPresident: Got it. I'll be right there."
+    },
+    "why": {
+      "zh": "线索：主语是「お客様が」，在等的是客人。\n规则：客人的状态用尊敬语「お＋ます形＋です」：「待っている」→「お待ちです」（＝お待ちになっています）。\n容易错：「お客様が お待ちして おります」常听到，但「お待ちする」是谦让语，用在客人身上是错的。\nN2 考点：这是 N2 真题考过的敬语形式，比 N4 要求略高。",
+      "en": "Clue: The subject is 「お客様が」 — the guest is the one waiting.\nRule: A guest's state takes the honorific お + masu-stem + です: 「待っている」 → 「お待ちです」 (= お待ちになっています).\nTrap: 「お客様が お待ちして おります」 is often heard, but 「お待ちする」 is humble — wrong for a guest.\nN2 exam form: this keigo has appeared in real N2 papers — a step above N4."
+    },
+    "wrong": [
+      null,
+      { "zh": "「お待ちする」是谦让语“我等您”，主语是客人，不能用。", "en": "「お待ちする」 is humble \"I'll wait for you\"; the subject here is the guest." },
+      { "zh": "「待って おる」是谦让语，用于自己这一方，不能描述客人。", "en": "「待って おる」 is humble, for your own side; it can't describe the guest." },
+      { "zh": "「お待ち いたす」是更郑重的谦让语，同样只能用于自己。", "en": "「お待ち いたす」 is an even more formal humble form — still only for yourself." }
+    ]
   }
 ]

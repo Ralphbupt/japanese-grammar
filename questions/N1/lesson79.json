@@ -774,5 +774,246 @@
       },
       null
     ]
+  },
+  {
+    "id": "n1-l79-021",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#7"
+    ],
+    "difficulty": 2,
+    "stem": "当局は、今回の事故と製品の欠陥との間には（　）因果関係は認められないとの見解を示した。",
+    "options": [
+      "なんらかの",
+      "いかにも",
+      "なんら",
+      "ろくに"
+    ],
+    "answer": 2,
+    "full": "当局は、今回の事故と製品の欠陥との間にはなんら因果関係は認められないとの見解を示した。",
+    "tr": {
+      "zh": "当局表示，这次事故与产品缺陷之间看不出有任何因果关系。",
+      "en": "The authorities stated that no causal link whatsoever could be found between the accident and the product defect."
+    },
+    "why": {
+      "zh": "线索：句末是否定「認められない」，文体是新闻、公文。\n规则：「なんら〜ない」＝丝毫没有、没有任何……，书面语，常配「問題・関係・根拠」等抽象名词。\n辨析：「なんらかの」是“某种”，肯定用法：「なんらかの因果関係がある」；后面是否定时用「なんら」。",
+      "en": "Clue: The sentence ends in the negative 「認められない」, in the style of a news report.\nRule: 「なんら〜ない」 = not… whatsoever; formal, often with abstract nouns like 「問題・関係・根拠」.\nContrast: 「なんらかの」 means \"some kind of\" and is affirmative — 「なんらかの因果関係がある」; with a negative, use 「なんら」."
+    },
+    "wrong": [
+      {
+        "zh": "「なんらかの」是“某种”，用于肯定：「なんらかの因果関係がある」，和句末的否定「認められない」矛盾。",
+        "en": "「なんらかの」 means \"some kind of\" and is used affirmatively (「なんらかの因果関係がある」); it clashes with the negative 「認められない」."
+      },
+      {
+        "zh": "「いかにも」是“的确、确实像……”，表示肯定的判断，不和否定呼应来加强否定。",
+        "en": "「いかにも」 means \"truly, just like\" — an affirmative judgement, not an intensifier for a negative."
+      },
+      null,
+      {
+        "zh": "「ろくに〜ない」修饰动词，表示“几乎没好好……”（「ろくに寝ていない」），不能修饰「因果関係」这种名词。",
+        "en": "「ろくに〜ない」 modifies a verb, \"hardly properly\" (「ろくに寝ていない」); it can't qualify a noun like 「因果関係」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l79-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#7"
+    ],
+    "difficulty": 2,
+    "stem": "社長は、詰めかけた記者たちの質問には（　）答えず、足早に会場を後にした。",
+    "options": [
+      "せめて",
+      "いっさい",
+      "なんらかの",
+      "かろうじて"
+    ],
+    "answer": 1,
+    "full": "社長は、詰めかけた記者たちの質問にはいっさい答えず、足早に会場を後にした。",
+    "tr": {
+      "zh": "社长对蜂拥而至的记者们的提问一概不答，快步离开了会场。",
+      "en": "The president answered none of the questions from the crowd of reporters and hurried out of the venue."
+    },
+    "why": {
+      "zh": "线索：后面是否定「答えず」（＝答えないで）。\n规则：「いっさい〜ない」＝完全不、一概不，范围上的全部否定，常用于拒绝、规定。\n辨析：「なんらかの」是“某种”，后接名词并用于肯定（「なんらかの説明をする」），不能直接修饰动词「答えず」。",
+      "en": "Clue: The negative 「答えず」 (= 答えないで) follows.\nRule: 「いっさい〜ない」 = not… at all, a total negation, typical of refusals and rules.\nContrast: 「なんらかの」 (\"some kind of\") goes before a noun in affirmative sentences (「なんらかの説明をする」); it can't modify the verb 「答えず」."
+    },
+    "wrong": [
+      {
+        "zh": "「せめて」是“至少”，后面接愿望或最低要求（「せめて一言でも答えてほしい」），不和否定呼应。",
+        "en": "「せめて」 means \"at least\" and leads to a wish or minimum (「せめて一言でも答えてほしい」); it doesn't pair with a negative."
+      },
+      null,
+      {
+        "zh": "「なんらかの」后面必须接名词，而且是肯定意思，不能修饰「答えず」。",
+        "en": "「なんらかの」 needs a following noun and is affirmative; it can't modify 「答えず」."
+      },
+      {
+        "zh": "「かろうじて」是“好不容易才……”，修饰实现了的事（「かろうじて間に合った」），和“不回答”接不上。",
+        "en": "「かろうじて」 means \"barely managed to\" and goes with something achieved (「かろうじて間に合った」), not with refusing to answer."
+      }
+    ]
+  },
+  {
+    "id": "n1-l79-023",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#8"
+    ],
+    "difficulty": 2,
+    "stem": "（同僚同士の会話）\nA「先週の報告書、数字の桁が一つずれてたって部長に言われちゃって……。」\nB「えっ、そんな初歩的なミス、入社したばかりの新人（　）しないよ。」",
+    "options": [
+      "こそ",
+      "だって",
+      "だけ",
+      "ほど"
+    ],
+    "answer": 1,
+    "full": "えっ、そんな初歩的なミス、入社したばかりの新人だってしないよ。",
+    "tr": {
+      "zh": "啊？那么低级的错误，连刚进公司的新人都不会犯。",
+      "en": "What? Even someone who joined the company yesterday wouldn't make a basic mistake like that."
+    },
+    "why": {
+      "zh": "线索：会话体；「入社したばかりの新人」是最容易出错的极端例子，后面是否定「しない」。\n规则：「名詞＋だって」＝连……也，是「でも」「さえ」的口语说法：连新人都不会犯，更何况你。\n辨析：「こそ」是强调“正是……”（「新人こそ注意すべきだ」），不表示举极端例子“连……都”。",
+      "en": "Clue: A conversation; 「入社したばかりの新人」 is the extreme case most likely to slip up, followed by the negative 「しない」.\nRule: noun + 「だって」 = even…, the spoken form of 「でも／さえ」: not even a newcomer would, let alone you.\nContrast: 「こそ」 singles out \"precisely…\" (「新人こそ注意すべきだ」); it doesn't give an extreme example meaning \"even\"."
+    },
+    "wrong": [
+      {
+        "zh": "「こそ」强调“正是新人”，变成“正是新人不犯这种错”，不合逻辑。",
+        "en": "「こそ」 stresses \"it is newcomers who…\", giving \"it's precisely newcomers who don't make it\" — illogical here."
+      },
+      null,
+      {
+        "zh": "「だけしない」是“只有新人不犯”，和对同事的吃惊语气对不上。",
+        "en": "「だけしない」 gives \"only newcomers don't make it\", which doesn't fit B's surprise at a colleague."
+      },
+      {
+        "zh": "「ほど」表示程度比较（「新人ほど〜ない」＝不如新人那样），后面要接形容词或程度说法，接「しない」说不通。",
+        "en": "「ほど」 compares degree (「新人ほど〜ない」 = not as … as a newcomer) and needs a degree word; it doesn't work with 「しない」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l79-024",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#8",
+      "lesson79#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「田中さん、今日も遅刻？」\nB「まさか。彼女、入社してから今まで、約束の時間に遅れたことなんて（　）ないよ。」",
+    "options": [
+      "一度に",
+      "一度ぐらい",
+      "一度だって",
+      "一度きり"
+    ],
+    "answer": 2,
+    "full": "まさか。彼女、入社してから今まで、約束の時間に遅れたことなんて一度だってないよ。",
+    "tr": {
+      "zh": "怎么可能。她从进公司到现在，一次都没迟到过。",
+      "en": "No way. Since she joined the company she hasn't once been late for an appointment."
+    },
+    "why": {
+      "zh": "线索：后面是否定「ない」，前面是「〜たことなんて」，会话体。\n规则：「一＋量词＋だって〜ない」＝哪怕一次也没有，是「一度たりとも〜ない」的口语说法。\n辨析：「一度ぐらい」是“至少一次、偶尔一次”，用于肯定（「一度ぐらい遅れてもいい」），不能加强否定。",
+      "en": "Clue: A negative 「ない」 follows 「〜たことなんて」, in casual speech.\nRule: 「一 + counter + だって〜ない」 = not even once, the spoken form of 「一度たりとも〜ない」.\nContrast: 「一度ぐらい」 means \"at least once, once in a while\" and is affirmative (「一度ぐらい遅れてもいい」); it can't strengthen a negative."
+    },
+    "wrong": [
+      {
+        "zh": "「一度に」是“一下子、同时”（「一度に三人来た」），不能表示经历的次数。",
+        "en": "「一度に」 means \"all at once\" (「一度に三人来た」); it doesn't count experiences."
+      },
+      {
+        "zh": "「一度ぐらい」用于肯定，“偶尔一次也好”，和「ない」连用说不通。",
+        "en": "「一度ぐらい」 is affirmative, \"once in a while\", and doesn't work with 「ない」."
+      },
+      null,
+      {
+        "zh": "「一度きり」是“仅此一次”，后面接「だ」或肯定（「チャンスは一度きりだ」），「一度きりない」不成立。",
+        "en": "「一度きり」 means \"just the once\" and takes 「だ」 or an affirmative (「チャンスは一度きりだ」); 「一度きりない」 isn't Japanese."
+      }
+    ]
+  },
+  {
+    "id": "n1-l79-025",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#9"
+    ],
+    "difficulty": 2,
+    "stem": "いくら給料がよくても、体を壊し（　）働きたいとは思わない。",
+    "options": [
+      "てこそ",
+      "てから",
+      "てまで",
+      "てばかり"
+    ],
+    "answer": 2,
+    "full": "いくら給料がよくても、体を壊してまで働きたいとは思わない。",
+    "tr": {
+      "zh": "工资再高，我也不想拼到把身体搞垮的地步去工作。",
+      "en": "However good the pay, I don't want to work if it means ruining my health."
+    },
+    "why": {
+      "zh": "线索：前项「体を壊す」是巨大代价，后面是否定评价「〜たいとは思わない」。\n规则：「動詞て形＋まで」＝不惜做到……的地步也要……；后面常接「〜必要はない／〜とは思わない」表示批评、拒绝。\n辨析：「〜てこそ」是“只有……才”，把前项当成正面条件（「苦労してこそ身につく」），“只有搞垮身体才想工作”说不通。",
+      "en": "Clue: 「体を壊す」 is a heavy price, followed by the negative judgement 「〜たいとは思わない」.\nRule: verb te-form + 「まで」 = going so far as to…; often followed by 「〜必要はない／〜とは思わない」 as criticism or refusal.\nContrast: 「〜てこそ」 means \"only by…\", treating the first part as a positive condition (「苦労してこそ身につく」); \"only by ruining my health do I want to work\" makes no sense."
+    },
+    "wrong": [
+      {
+        "zh": "「〜てこそ」是“只有……才”，把“搞垮身体”当成正面条件，意思不通。",
+        "en": "「〜てこそ」 means \"only by…\", treating ruined health as a positive condition — it doesn't make sense."
+      },
+      {
+        "zh": "「〜てから」只表示先后顺序，“搞垮身体之后不想工作”和「いくら給料がよくても」接不上。",
+        "en": "「〜てから」 only gives sequence; \"I don't want to work after ruining my health\" doesn't follow from 「いくら給料がよくても」."
+      },
+      null,
+      {
+        "zh": "「〜てばかり」是“光是……”，要接「いる」（「遊んでばかりいる」），不能直接连「働きたい」。",
+        "en": "「〜てばかり」 means \"doing nothing but\" and needs 「いる」 (「遊んでばかりいる」); it can't link straight to 「働きたい」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l79-026",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#9"
+    ],
+    "difficulty": 3,
+    "stem": "家族との時間を犠牲に（　）手に入れた地位なのに、今の私には何の意味も感じられない。",
+    "options": [
+      "したところで",
+      "してまで",
+      "するまでもなく",
+      "するどころか"
+    ],
+    "answer": 1,
+    "full": "家族との時間を犠牲にしてまで手に入れた地位なのに、今の私には何の意味も感じられない。",
+    "tr": {
+      "zh": "那是我不惜牺牲和家人相处的时间才得到的地位，可现在我却感觉不到它有任何意义。",
+      "en": "I won this position even at the cost of time with my family, yet now it means nothing to me."
+    },
+    "why": {
+      "zh": "线索：「犠牲にする」是付出的代价，「手に入れた地位」是目的，后面的「なのに」表示后悔。\n规则：「〜てまで」＝不惜……也要，前项是代价或手段，后项是为此得到、做的事。\n辨析：「〜したところで」是“即使……也（没用）”，后面要接否定的结果（「犠牲にしたところで何も得られない」），不能修饰「手に入れた地位」。",
+      "en": "Clue: 「犠牲にする」 is the price paid, 「手に入れた地位」 the goal, and 「なのに」 signals regret.\nRule: 「〜てまで」 = going so far as to…; the first part is the cost or means, the second what it bought.\nContrast: 「〜したところで」 means \"even if… (it's no use)\" and needs a negative outcome (「犠牲にしたところで何も得られない」); it can't modify 「手に入れた地位」."
+    },
+    "wrong": [
+      {
+        "zh": "「〜たところで」是“即使……也没用”，后面应是否定的结果，不能接“得到的地位”。",
+        "en": "「〜たところで」 means \"even if…, it's no use\" and needs a negative outcome, not \"the position I won\"."
+      },
+      null,
+      {
+        "zh": "「〜までもなく」是“用不着……”，变成“用不着牺牲就得到的地位”，和后面的后悔语气矛盾，也和「犠牲に」接不顺。",
+        "en": "「〜までもなく」 means \"without even needing to\", giving \"a position won without needing to sacrifice\" — at odds with the regret that follows."
+      },
+      {
+        "zh": "「〜どころか」是“别说……反而……”，后面要有相反的内容，不能直接修饰「手に入れた地位」。",
+        "en": "「〜どころか」 means \"far from…, on the contrary\" and needs a contrasting clause; it can't modify 「手に入れた地位」."
+      }
+    ]
   }
 ]

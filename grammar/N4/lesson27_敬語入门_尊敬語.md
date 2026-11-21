@@ -29,6 +29,9 @@ Japanese keigo (honorific language) has three systems: **丁寧語** (です／�
 | 会議室 | かいぎしつ | 会议室（名）——「会議室を予約する」预订会议室；「会議室にご案内します」我带您去会议室//(n) meeting room; conference room — 「会議室を予約する」 to book a meeting room; 「会議室にご案内します」 let me show you to the meeting room |
 | 検討 | けんとう | 研究；考虑（名、可作动词）——不是“检讨（反省）”，商务中也常是委婉拒绝；「検討します」我们会考虑；「前向きに検討する」积极考虑//(n, suru-verb) consideration; looking into — in business often a polite no; 「検討します」 we'll consider it; 「前向きに検討する」 to consider favorably |
 | 出張 | しゅっちょう | 出差（名、可作动词）——「大阪に出張する」去大阪出差；「出張中」出差中//(n, suru-verb) business trip — 「大阪に出張する」 to go to Osaka on business; 「出張中」 away on business |
+| お越しになる | おこしになる | 来；去（自动词、尊敬语）——「来る」「行く」的尊敬语，比「いらっしゃる」更郑重，店铺、公司迎客常用；「お越しくださいまして、ありがとうございます」感谢您光临；「またのお越しをお待ちしております」期待您再次光临//(v, intrans., honorific) to come; to go — honorific of 「来る」/「行く」, more formal than 「いらっしゃる」, standard when shops and offices greet guests; 「お越しくださいまして、ありがとうございます」 thank you for coming; 「またのお越しをお待ちしております」 we look forward to your next visit |
+| おいでになる | おいでになる | 来；去；在（自动词、尊敬语）——「来る」「行く」「いる」的尊敬语，多见于致辞、书信，稍显老派；「おいでくださり、ありがとうございます」感谢您光临；「ぜひ一度おいでください」请务必来一次//(v, intrans., honorific) to come; to go; to be — honorific of 「来る」/「行く」/「いる」, mostly in speeches and letters, a little old-fashioned; 「おいでくださり、ありがとうございます」 thank you for coming; 「ぜひ一度おいでください」 please do come and visit |
+| お見えになる | おみえになる | 来；到（自动词、尊敬语）——只是「来る」的尊敬语，多用于通报客人到了；「お客様がお見えになりました」客人到了//(v, intrans., honorific) to come; to arrive — honorific of 「来る」 only, mostly for announcing that a visitor has arrived; 「お客様がお見えになりました」 your visitor has arrived |
 
 ---
 
@@ -101,6 +104,8 @@ Japanese society distinguishes **the listener's status + the formality of the si
 | 死ぬ | **お亡くなりになる** | 去世（婉转） |
 | 着る | **お召しになる** | 穿 |
 
+迎客时「来る」还有更郑重的「お越しになる／おいでになる／お見えになる」，见第 5 点。
+
 ⚠️ **特殊变形注意**：
 
 **いらっしゃる、なさる、くださる、おっしゃる** 这 4 个在变 ます 形时是
@@ -123,6 +128,8 @@ Japanese society distinguishes **the listener's status + the formality of the si
 | 寝る | **お休みになる** | sleep |
 | 死ぬ | **お亡くなりになる** | pass away (euphemism) |
 | 着る | **お召しになる** | wear |
+
+For welcoming guests, 「来る」 also has the more formal 「お越しになる／おいでになる／お見えになる」 — see point 5.
 
 ⚠️ **Conjugation quirk**: いらっしゃる, なさる, くださる, おっしゃる become **いらっしゃいます / なさいます / くださいます / おっしゃいます** in masu-form (irregular). Classic exam trap.
 :::
@@ -342,6 +349,246 @@ Special honorifics ≈ お〜になる > 〜(ら)れる > 丁寧語
 ```
 
 Default interpretation: sonkeigo (99% of cases). Read as passive only when context clearly demands it.
+:::
+
+---
+
+## 5. 迎客的尊敬語：お越しくださる・おいでくださる・お見えになる（客人光临）||5. Welcoming Guests: お越しくださる・おいでくださる・お見えになる (a guest comes)
+
+### 接続||Conjugation
+:::zh
+- 三个都是「来る」的尊敬语，主语是客人／对方；「お越し」「おいで」也可以指「行く」，「おいで」还可以指「いる」
+- お越し／おいで ＋ **になる** → 描述对方来：「社長がお越しになります」
+- お越し／おいで ＋ **くださる** → 对方来了，我方受益并致谢：「お越しくださいました」「お越しくださり、ありがとうございます」
+- お越し／おいで ＋ **ください** → 请对方来：「受付までお越しください」
+- お見え ＋ **になる** → 只说"（客人）来了、到了"，没有「お見えください」
+
+这几个比第 2 点的「いらっしゃる」更郑重，几乎只出现在**迎客、告示、致辞、书信**里：
+
+| 形式 | 用在哪里 | 典型句子 |
+|------|----------|----------|
+| **お越しくださる** | 店铺、酒店、公司迎客；活动开场 | 本日はお越しくださいまして、ありがとうございます。 |
+| **おいでくださる** | 致辞、书信、正式邀请（稍显老派、更郑重） | 遠いところをおいでくださり、ありがとうございます。 |
+| **お越しください／おいでください** | 广播、告示、邀请函 | 2階の受付までお越しください。 |
+| **お見えになる** | 前台向上级、同事通报客人到了 | 山田様がお見えになりました。 |
+
+**「くださる」就是第 2 点的「くれる」的尊敬语**：「お越しくださる」＝"客人给了我们'来'这份恩惠"，所以后面常接「ありがとうございます」。
+:::
+
+:::en
+- All three are honorifics of 「来る」, with the guest / other person as subject; 「お越し」 and 「おいで」 can also mean 「行く」, and 「おいで」 can also mean 「いる」
+- お越し／おいで + **になる** → describes them coming: 「社長がお越しになります」
+- お越し／おいで + **くださる** → they came and you're grateful for it: 「お越しくださいました」「お越しくださり、ありがとうございます」
+- お越し／おいで + **ください** → asks them to come: 「受付までお越しください」
+- お見え + **になる** → only "(a guest) comes / has arrived"; there is no 「お見えください」
+
+These are more formal than 「いらっしゃる」 (point 2) and live almost entirely in **welcomes, announcements, speeches and letters**:
+
+| Form | Where it's used | Typical sentence |
+|------|-----------------|------------------|
+| **お越しくださる** | shops, hotels and offices greeting guests; opening an event | 本日はお越しくださいまして、ありがとうございます。 |
+| **おいでくださる** | speeches, letters, formal invitations (a little old-fashioned, even more formal) | 遠いところをおいでくださり、ありがとうございます。 |
+| **お越しください／おいでください** | PA announcements, notices, invitations | 2階の受付までお越しください。 |
+| **お見えになる** | reception telling a boss or colleague that a visitor has arrived | 山田様がお見えになりました。 |
+
+**「くださる」 is the honorific 「くれる」 from point 2**: 「お越しくださる」 = "the guest did us the favor of coming", which is why 「ありがとうございます」 so often follows.
+:::
+
+### 含义||Meaning
+:::zh
+**和已学过的「来る」的说法排一排**：
+
+```
+来られる（第 4 点） ＜ いらっしゃる（第 2 点）≈ お見えになる ＜ お越しになる ≈ おいでになる
+（轻度尊敬）                                                   （最郑重：店铺、仪式、书信）
+```
+
+- 描述上级来不来，日常用「いらっしゃる」就够了；**店员对顾客、主办方对来宾**才用「お越し」「おいで」
+- 「お見えになる」多是**第三方通报**：前台对部长说"客人到了"；不用来当面问对方
+- 自己去对方那里，要换成谦让语「伺う／参る」（第 28 课第 1 点），绝不能说「私がお越しします」
+:::
+
+:::en
+**Lined up with the ways of saying 「来る」 you already know**:
+
+```
+来られる (pt 4) < いらっしゃる (pt 2) ≈ お見えになる < お越しになる ≈ おいでになる
+(light respect)                                       (most formal: shops, ceremonies, letters)
+```
+
+- For whether your boss is coming, 「いらっしゃる」 is enough; 「お越し」 / 「おいで」 are for **staff speaking to customers and hosts speaking to guests**
+- 「お見えになる」 is mostly **reporting to a third person**: reception telling the manager "your visitor is here" — not for asking the guest directly
+- When *you* go to them, switch to the humble 「伺う／参る」 (lesson 28, point 1) — never 「私がお越しします」
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 本日はお忙しい中、**お越しくださいまして**、ありがとうございます。（今天百忙之中光临，非常感谢。）
+2. 部長、ABC商事の山田様が**お見えになりました**。（部长，ABC 商事的山田先生到了。）
+3. 皆様、遠いところを**おいでくださり**、誠にありがとうございます。（各位远道而来，衷心感谢。）
+4. お客様のお呼び出しを申し上げます。田中様、1階のサービスカウンターまで**お越しください**。（广播寻人：田中先生／女士，请到一楼服务台。）
+:::
+
+:::en
+1. 本日はお忙しい中、お越しくださいまして、ありがとうございます。(Thank you for taking the time to come today.)
+2. 部長、ABC商事の山田様がお見えになりました。(Sir, Mr. Yamada from ABC Trading has arrived.)
+3. 皆様、遠いところをおいでくださり、誠にありがとうございます。(Thank you all so much for coming such a long way.)
+4. お客様のお呼び出しを申し上げます。田中様、1階のサービスカウンターまでお越しください。(A paging announcement: would Mr./Ms. Tanaka please come to the service counter on the first floor.)
+:::
+
+### 辨析||Comparison
+:::zh
+**① くださる vs になる**：致谢一定用「くださる」（或第 28 课第 5 点的「いただく」）
+
+```
+✓ お越しくださいまして、ありがとうございます。
+❌ お越しになりまして、ありがとうございます。   → 只是描述"您来了"，没有"承蒙"的意思
+```
+
+**② 尊敬语 vs 谦让语**：谁来？
+
+```
+✓ 山田様がお見えになりました。        （客人来 → 尊敬）
+❌ 山田様が参りました。               （参る 是自己人"来"的谦让语，用在客人身上是贬低对方）
+✓ 明日、私が御社に伺います。          （我去 → 谦让）
+❌ 明日、私が御社にお越しします。      （没有这种说法）
+```
+
+**③ お越しくださる vs お越しいただく**：意思一样，主语不同
+
+```
+お客様が お越しくださる   → 主语是客人（が）
+（私たちが）お客様に お越しいただく → 主语是我方，客人用「に」（第 28 课第 5 点）
+```
+:::
+
+:::en
+**① くださる vs. になる**: thanks always take 「くださる」 (or 「いただく」, lesson 28 point 5)
+
+```
+✓ お越しくださいまして、ありがとうございます。
+❌ お越しになりまして、ありがとうございます。   → only describes "you came", without the "you did us a favor"
+```
+
+**② Honorific vs. humble**: who is coming?
+
+```
+✓ 山田様がお見えになりました。        (the guest comes → honorific)
+❌ 山田様が参りました。               (参る is the humble "come" for your own side; it lowers the guest)
+✓ 明日、私が御社に伺います。          (I go → humble)
+❌ 明日、私が御社にお越しします。      (no such form)
+```
+
+**③ お越しくださる vs. お越しいただく**: same meaning, different subject
+
+```
+お客様が お越しくださる   → the guest is the subject (が)
+(私たちが) お客様に お越しいただく → we are the subject, the guest takes 「に」 (lesson 28, point 5)
+```
+:::
+
+---
+
+## 6. お〜です／お〜でしたら（您正在…／如果您…）||6. お〜です／お〜でしたら (you are ~ing / if you ~)
+
+### 接続||Conjugation
+:::zh
+- 和語动词：お ＋ ます形（去ます） ＋ です
+- 漢語动词：ご ＋ 漢語 ＋ です
+- 条件：お〜です → **お〜でしたら**（「〜なら」的礼貌说法）
+- 主语是对方；表示对方**现在的状态**（有、在等、着急、困扰、要找……）
+
+| 普通说法 | お〜です | 如果…… |
+|----------|----------|--------|
+| 持っている（有、带着） | **お持ちです** | お持ちでしたら |
+| 待っている（在等） | **お待ちです** | お待ちでしたら |
+| 急いでいる（着急） | **お急ぎです** | お急ぎでしたら |
+| 困っている（有困难） | **お困りです** | お困りでしたら |
+| 探している（在找） | **お探しです** | お探しでしたら |
+| 希望している（希望） | **ご希望です** | ご希望でしたら |
+
+第 2 点的「ご存じです」就是这个形式。
+:::
+
+:::en
+- Native verbs: お + masu-stem (drop ます) + です
+- Sino-Japanese verbs: ご + kanji compound + です
+- Conditional: お〜です → **お〜でしたら** (polite 「〜なら」)
+- The subject is the other person; it describes their **current state** (having, waiting, being in a hurry, having trouble, looking for…)
+
+| Plain | お〜です | If… |
+|-------|----------|-----|
+| 持っている (have, carry) | **お持ちです** | お持ちでしたら |
+| 待っている (be waiting) | **お待ちです** | お待ちでしたら |
+| 急いでいる (be in a hurry) | **お急ぎです** | お急ぎでしたら |
+| 困っている (be in trouble) | **お困りです** | お困りでしたら |
+| 探している (be looking for) | **お探しです** | お探しでしたら |
+| 希望している (wish) | **ご希望です** | ご希望でしたら |
+
+「ご存じです」 from point 2 is this same form.
+:::
+
+### 含义||Meaning
+:::zh
+「お〜です」＝「お〜になっている」的简短说法，**店员、窗口、广播**最爱用："您有……""您在等……"。「お〜でしたら」把它变成条件："如果您有／需要……的话，请……"，后面通常接「お〜ください」。
+
+```
+会員カードをお持ちですか。         （您有会员卡吗？）
+会員カードをお持ちでしたら、……    （如果您有会员卡的话，……）
+```
+:::
+
+:::en
+「お〜です」 is a short form of 「お〜になっている」, a favorite of **shop staff, service counters and announcements**: "you have…", "you are waiting…". 「お〜でしたら」 makes it a condition — "if you have / need…, please…" — usually followed by 「お〜ください」.
+
+```
+会員カードをお持ちですか。         (Do you have a membership card?)
+会員カードをお持ちでしたら、……    (If you have a membership card, …)
+```
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 会員カードを**お持ちでしたら**、レジでお見せください。（如果您有会员卡，请在收银台出示。）
+2. **お急ぎでしたら**、こちらの窓口をご利用ください。（如果您赶时间，请使用这个窗口。）
+3. 社長、お客様が会議室で**お待ちです**。（社长，客人在会议室等您。）
+4. 何か**お困りでしたら**、近くのスタッフにお知らせください。（如果遇到什么困难，请告诉附近的工作人员。）
+:::
+
+:::en
+1. 会員カードをお持ちでしたら、レジでお見せください。(If you have a membership card, please show it at the register.)
+2. お急ぎでしたら、こちらの窓口をご利用ください。(If you're in a hurry, please use this counter.)
+3. 社長、お客様が会議室でお待ちです。(Sir, your visitor is waiting in the meeting room.)
+4. 何かお困りでしたら、近くのスタッフにお知らせください。(If you need any help, please tell a member of staff nearby.)
+:::
+
+### 辨析||Comparison
+:::zh
+**お〜です（尊敬，对方的状态） vs お〜します（谦让，我为对方做，第 28 课第 2 点）**——只差一个「です／します」，主语完全相反：
+
+```
+お客様、お荷物をお持ちですか。   （客人，您带着行李吗？——客人"有"）
+お客様、お荷物をお持ちします。   （客人，我来帮您拿行李。——我"拿"）
+
+お客様が会議室でお待ちです。     （客人在会议室等着。——客人等）
+会議室でお待ちしております。     （我们在会议室恭候。——我们等）
+```
+
+**お〜です vs お〜になっている（第 3 点）**：意思相同，「お待ちです」比「お待ちになっています」短，口语、广播更常用。
+:::
+
+:::en
+**お〜です (honorific, their state) vs. お〜します (humble, I do it for you — lesson 28, point 2)** — only です／します differs, but the subject flips:
+
+```
+お客様、お荷物をお持ちですか。   (Do you have any luggage? — the guest has it)
+お客様、お荷物をお持ちします。   (Let me carry your luggage. — I carry it)
+
+お客様が会議室でお待ちです。     (Your visitor is waiting in the meeting room. — the guest waits)
+会議室でお待ちしております。     (We'll be waiting for you in the meeting room. — we wait)
+```
+
+**お〜です vs. お〜になっている (point 3)**: same meaning; 「お待ちです」 is shorter than 「お待ちになっています」 and more common in speech and announcements.
 :::
 
 ---

@@ -660,5 +660,85 @@
         "en": "「わけにはいかない」 is a person's \"can't (it wouldn't be right)\"; 「川の水」 can't be its subject."
       }
     ]
+  },
+  {
+    "id": "n3-l43-018",
+    "type": "bunpou",
+    "refs": [
+      "lesson43#6"
+    ],
+    "difficulty": 1,
+    "stem": "この橋は六十年も前に造られたもので、いつ（　）と専門家も心配している。",
+    "options": [
+      "壊れるものか",
+      "壊れてもおかしくない",
+      "壊れないことはない",
+      "壊れたに違いない"
+    ],
+    "answer": 1,
+    "full": "この橋は六十年も前に造られたもので、いつ壊れてもおかしくないと専門家も心配している。",
+    "tr": {
+      "zh": "这座桥是六十年前建的，专家也担心它随时坏掉都不奇怪。",
+      "en": "This bridge was built sixty years ago, and experts worry it could collapse at any moment."
+    },
+    "why": {
+      "zh": "线索：前面有「いつ」（什么时候），后面是「心配している」（担心）。\n规则：「いつ＋动词て形＋もおかしくない」＝随时都可能……，根据情况判断某事很可能发生。\n辨析：「〜に違いない」是断定，而且「いつ」和断定的过去形「壊れた」接不上。",
+      "en": "Clue: 「いつ」 (when) comes before, and 「心配している」 (worried) after.\nRule: 「いつ + verb te-form + もおかしくない」 = could happen at any moment: judging from the situation that it is quite likely.\nContrast: 「〜に違いない」 is a firm conclusion, and 「いつ」 can't go with the past 「壊れた」."
+    },
+    "wrong": [
+      {
+        "zh": "「ものか」是“怎么会……”的强烈否定，和“担心”矛盾。",
+        "en": "「ものか」 is a strong denial, \"as if it would…\", which contradicts \"worried\"."
+      },
+      null,
+      {
+        "zh": "「ないことはない」是“也不是不……”，和「いつ」连不成句，也表达不出担心。",
+        "en": "「ないことはない」 means \"it's not that it won't…\"; it doesn't work with 「いつ」 and doesn't express worry."
+      },
+      {
+        "zh": "「たに違いない」是对已发生的事的断定；桥还没坏，而且「いつ」不能和它搭配。",
+        "en": "「たに違いない」 is a firm guess about something that already happened; the bridge hasn't collapsed, and 「いつ」 can't pair with it."
+      }
+    ]
+  },
+  {
+    "id": "n3-l43-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson43#6"
+    ],
+    "difficulty": 2,
+    "stem": "山田さんはこの十年で会社の売り上げを大きく伸ばしてきた人だから、次の社長に（　）。",
+    "options": [
+      "選ばれるおそれがある",
+      "選ばれるはずがない",
+      "選ばれかねない",
+      "選ばれても不思議ではない"
+    ],
+    "answer": 3,
+    "full": "山田さんはこの十年で会社の売り上げを大きく伸ばしてきた人だから、次の社長に選ばれても不思議ではない。",
+    "tr": {
+      "zh": "山田这十年让公司的销售额大幅增长，就算被选为下一任社长也不奇怪。",
+      "en": "Yamada has grown the company's sales enormously over the past ten years, so it would be no surprise if he were chosen as the next president."
+    },
+    "why": {
+      "zh": "线索：前面是好成绩「売り上げを大きく伸ばしてきた」＋「から」，后面是一件好事（当社长）。\n规则：「动词て形＋も不思議ではない」＝……也不奇怪，表示在情理之中；好事坏事都能用。\n辨析：「〜おそれがある」「〜かねない」只用于不希望发生的坏事；当社长对他来说是好事。",
+      "en": "Clue: A strong record, 「売り上げを大きく伸ばしてきた」 + 「から」, leads to good news (becoming president).\nRule: 「verb te-form + も不思議ではない」 = it wouldn't be surprising if…: only to be expected; fine for good or bad things.\nContrast: 「〜おそれがある」 and 「〜かねない」 are only for unwanted outcomes; becoming president is good news for him."
+    },
+    "wrong": [
+      {
+        "zh": "「おそれがある」只用于坏事，不能说好事“恐怕会被选上”。",
+        "en": "「おそれがある」 is only for bad outcomes; being chosen is not something to fear here."
+      },
+      {
+        "zh": "「はずがない」是“不可能”，和前面的好成绩以及「から」矛盾。",
+        "en": "「はずがない」 means \"can't possibly\", which contradicts the strong record and 「から」."
+      },
+      {
+        "zh": "「かねない」（第44课）表示可能出现坏结果，当社长不是坏事。",
+        "en": "「かねない」 (lesson 44) warns of a bad result; becoming president isn't one."
+      },
+      null
+    ]
   }
 ]

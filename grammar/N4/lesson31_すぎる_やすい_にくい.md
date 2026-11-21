@@ -623,6 +623,72 @@ Turns an adjective into a noun meaning "the degree of ~." As a noun, it can serv
 
 ---
 
+## 7. 〜のに（用途——用来……/在……方面）||7. 〜のに (Purpose of Use — For Doing …)
+
+### 接続||Conjugation
+
+:::zh
+- 动词辞书形 + のに + 使う／便利だ／いい／役に立つ／必要だ／（时间・钱）かかる
+- 名词时直接用「に」：料理**に**使う、旅行**に**便利だ
+:::
+
+:::en
+- Verb dictionary form + のに + 使う / 便利だ / いい / 役に立つ / 必要だ / (time, money) かかる
+- With a noun, just use 「に」: 料理**に**使う, 旅行**に**便利だ
+:::
+
+### 含義||Meaning
+
+:::zh
+说明东西**用在什么上**，或者做某件事**需要多少时间、钱、东西**。后面总是「使う」「便利」「いい」「役に立つ」「必要」「かかる」这一类说用途、评价、所需的词。
+
+> 和 N5 学过的转折「のに」（N5第15课第4点，"明明……却……"）形状一样，要靠后半句区分：后面是用途／所需 → 用途；前后意思相反、带不满或意外 → 转折。
+:::
+
+:::en
+Says **what something is used for**, or **how much time, money or what things** doing something takes. It is always followed by words of use, evaluation or need: 「使う」, 「便利」, 「いい」, 「役に立つ」, 「必要」, 「かかる」.
+
+> It looks exactly like the concessive 「のに」 from N5 (N5 Lesson 15, point 4, "even though"); tell them apart by the second half: use or requirement → purpose; a contrary result with surprise or complaint → concessive.
+:::
+
+### 例句||Example Sentences
+
+:::zh
+1. この箱は、古い写真をしまう**のに**使っています。（这个箱子用来收旧照片。）
+2. このアプリは、電車の時間を調べる**のに**便利だ。（这个应用查电车时刻很方便。）
+3. 家から会社まで行く**のに**、一時間半かかる。（从家到公司要花一个半小时。）
+4. 引っ越しする**のに**、だいたいいくらぐらい必要ですか。（搬家大概需要多少钱？）
+:::
+
+:::en
+1. この箱は、古い写真をしまう**のに**使っています。(I use this box for keeping old photos.)
+2. このアプリは、電車の時間を調べる**のに**便利だ。(This app is handy for looking up train times.)
+3. 家から会社まで行く**のに**、一時間半かかる。(It takes an hour and a half to get from home to the office.)
+4. 引っ越しする**のに**、だいたいいくらぐらい必要ですか。(Roughly how much do you need to move house?)
+:::
+
+### のに（用途） vs ために vs のに（转折）||のに (purpose of use) vs ために vs のに (concessive)
+
+:::zh
+| | 〜のに（用途） | 〜ために（目的，N5第15课第8点） | 〜のに（转折，N5第15课第4点） |
+|---|---|---|---|
+| 后面接 | 使う・便利・いい・かかる・必要 | 有意识的行动 | 和预期相反的结果 |
+| 例 | 駅に行く**のに**便利だ（去车站很方便） | 留学する**ために**お金を貯めている（为了留学在存钱） | 勉強した**のに**、試験に落ちた（明明学了却没考过） |
+
+> 「便利」「いい」「役に立つ」前面用「のに」，一般不说「〜ために便利だ」。
+:::
+
+:::en
+| | 〜のに (purpose of use) | 〜ために (purpose, N5 Lesson 15, point 8) | 〜のに (concessive, N5 Lesson 15, point 4) |
+|---|---|---|---|
+| Followed by | 使う・便利・いい・かかる・必要 | A deliberate action | A result against expectations |
+| Ex. | 駅に行く**のに**便利だ (handy for getting to the station) | 留学する**ために**お金を貯めている (saving money in order to study abroad) | 勉強した**のに**、試験に落ちた (I studied, yet I failed the exam) |
+
+> Before 「便利」, 「いい」 and 「役に立つ」 use 「のに」; 「〜ために便利だ」 is generally not said.
+:::
+
+---
+
 ## 今日练习||Today's Practice
 
 ### A. すぎる造句||A. Make sentences with すぎる

@@ -547,6 +547,148 @@ Uses the て-form to express the reason for an apology. "I'm sorry for doing..."
 
 ---
 
+## 8. 〜ずつ（每……各/一点一点地）||8. 〜ずつ (Each / Apiece / A Little at a Time)
+
+### 接续||Conjugation
+
+:::zh
+- 数量词 + ずつ：一つ**ずつ**、二人**ずつ**、千円**ずつ**
+- 少し / ちょっと + ずつ：少し**ずつ**、ちょっと**ずつ**
+- ずつ接在**数量**后面，不接在被分的东西后面：りんごを二つ**ずつ** ✅ / りんご**ずつ** ❌
+:::
+
+:::en
+- Quantity / counter + ずつ: 一つ**ずつ**, 二人**ずつ**, 千円**ずつ**
+- 少し / ちょっと + ずつ: 少し**ずつ**, ちょっと**ずつ**
+- ずつ follows the **quantity**, not the thing being shared: りんごを二つ**ずつ** ✅ / りんご**ずつ** ❌
+:::
+
+### 含义||Meaning
+
+:::zh
+① **平均分配**："每人／每次各……"——同样的数量落到每一个人或每一次上。
+② **按同样的量逐步进行**："一个一个地／一点一点地"——每次只做相同的一小份。
+:::
+
+:::en
+① **Equal shares**: "… each / … apiece" — the same amount goes to every person or every round.
+② **Step by step in equal amounts**: "one at a time / little by little" — doing the same small portion each time.
+:::
+
+### 例句||Example Sentences
+
+:::zh
+1. お土産のお菓子を、会社の人たちに二つ**ずつ**配った。（把伴手礼点心给公司的同事每人分了两个。）
+2. 飲み会の料金は、一人三千円**ずつ**払うことになった。（聚会的费用定为每人各付三千日元。）
+3. 名前を呼ばれたら、一人**ずつ**部屋に入ってください。（叫到名字后，请一个一个地进房间。）
+4. 毎日少し**ずつ**練習して、ピアノが弾けるようになった。（每天一点一点地练，终于会弹钢琴了。）
+:::
+
+:::en
+1. お土産のお菓子を、会社の人たちに二つ**ずつ**配った。(I handed out the souvenir sweets to everyone at work, two each.)
+2. 飲み会の料金は、一人三千円**ずつ**払うことになった。(We decided everyone would pay 3,000 yen each for the drinks party.)
+3. 名前を呼ばれたら、一人**ずつ**部屋に入ってください。(When your name is called, please come into the room one at a time.)
+4. 毎日少し**ずつ**練習して、ピアノが弾けるようになった。(By practising a little every day, I learned to play the piano.)
+:::
+
+### ずつ vs おきに||ずつ vs おきに
+
+:::zh
+| | ずつ | おきに（本课第3点） |
+|---|---|---|
+| 关注 | 每一份／每一次的**量** | 两次之间的**间隔** |
+| 例 | 一人に二枚**ずつ**配る（每人发两张） | 二日**おきに**来る（每隔两天来一次） |
+| 例 | 一ページ**ずつ**読む（一页一页地读） | 一ページ**おきに**読む（隔一页读一页） |
+
+> 「一つずつ」= 一个一个来，一个不落；「一つおきに」= 隔一个，跳着来。
+:::
+
+:::en
+| | ずつ | おきに (point 3 of this lesson) |
+|---|---|---|
+| Focus | The **amount** per share / per round | The **gap** between occurrences |
+| Ex. | 一人に二枚**ずつ**配る (hand out two sheets to each person) | 二日**おきに**来る (come every third day — a two-day gap) |
+| Ex. | 一ページ**ずつ**読む (read page by page) | 一ページ**おきに**読む (read every other page) |
+
+> 「一つずつ」 = one at a time, none skipped; 「一つおきに」 = every other one, skipping.
+:::
+
+---
+
+## 9. 〜中（じゅう）・〜中（ちゅう）・〜中に（整个……/正在……/……之内）||9. 〜中（じゅう）・〜中（ちゅう）(Throughout / In the Middle Of; 〜中に = Within)
+
+### 接续||Conjugation
+
+:::zh
+- 时间・地点名词 + 中（**じゅう**）：一日**中**、一年**中**、世界**中**、町**中**、家**中**
+- 动作名词 + 中（**ちゅう**）：会議**中**、授業**中**、食事**中**、工事**中**、電話**中**
+- 期间名词 + 中（**ちゅう**）に：今日**中に**、今週**中に**、今月**中に**（「午前中」也读ちゅう）
+:::
+
+:::en
+- Time / place noun + 中 (**じゅう**): 一日**中**, 一年**中**, 世界**中**, 町**中**, 家**中**
+- Activity noun + 中 (**ちゅう**): 会議**中**, 授業**中**, 食事**中**, 工事**中**, 電話**中**
+- Period noun + 中 (**ちゅう**) に: 今日**中に**, 今週**中に**, 今月**中に** (「午前中」 is also read ちゅう)
+:::
+
+### 含义||Meaning
+
+:::zh
+① **じゅう**：整个范围都——时间上"从头到尾一直"（一日中＝一整天），空间上"到处、全部"（世界中＝全世界）。
+② **ちゅう**：正在进行某个活动，这段时间里（会議中＝正在开会）。常见于门口、屏幕上的告示：「準備中」「使用中」「営業中」。
+③ **ちゅうに**：期限，"在这段时间结束之前"（今日中に＝今天之内）。
+:::
+
+:::en
+① **じゅう**: the whole span — in time "all through" (一日中 = all day long), in space "all over" (世界中 = all over the world).
+② **ちゅう**: in the middle of an activity (会議中 = in a meeting). Common on signs and screens: 「準備中」 (getting ready), 「使用中」 (in use), 「営業中」 (open).
+③ **ちゅうに**: a deadline — "before this period is over" (今日中に = by the end of today).
+:::
+
+### 例句||Example Sentences
+
+:::zh
+1. 昨日は一日**中**雨が降っていて、どこにも行けなかった。（昨天下了一整天雨，哪儿也去不了。）
+2. この歌は、世界**中**の人に知られている。（这首歌全世界的人都知道。）
+3. 部長は今会議**中**ですので、終わったらお電話させます。（部长现在正在开会，开完后让他给您回电话。）
+4. このレポートは、今週**中に**出してください。（这份报告请在本周之内交。）
+:::
+
+:::en
+1. 昨日は一日**中**雨が降っていて、どこにも行けなかった。(It rained all day yesterday, so I couldn't go anywhere.)
+2. この歌は、世界**中**の人に知られている。(This song is known by people all over the world.)
+3. 部長は今会議**中**ですので、終わったらお電話させます。(The manager is in a meeting right now; I'll have him call you when it's over.)
+4. このレポートは、今週**中に**出してください。(Please hand in this report by the end of this week.)
+:::
+
+### 中 的三种用法 vs あいだ・までに||The three uses of 中 vs あいだ・までに
+
+:::zh
+| | 〜中（じゅう） | 〜中（ちゅう） | 〜中（ちゅう）に |
+|---|---|---|---|
+| 前面接 | 时间・地点名词 | 动作名词 | 期间名词 |
+| 意思 | 整个……都 | 正在……中 | ……之内（期限） |
+| 例 | 一日中寝ていた | ただいま食事中です | 今日中に終わらせる |
+
+> - 「今日中に」和「今日までに」（本课第2点）都表示期限：「今日中に」= 在今天这一天里完成；「金曜日までに」= 在周五这个时间点之前。
+> - 「会議中」≈「会議のあいだ」（本课第1点），但「〜中」只接名词，多用于告示和工作场合。
+> - 「一日中」（一整天都……）≠「一日に」（一天几次，表示频率）。
+:::
+
+:::en
+| | 〜中 (じゅう) | 〜中 (ちゅう) | 〜中 (ちゅう) に |
+|---|---|---|---|
+| Comes after | Time / place noun | Activity noun | Period noun |
+| Meaning | All through / all over | In the middle of | Within (deadline) |
+| Ex. | 一日中寝ていた (slept all day) | ただいま食事中です (I'm eating right now) | 今日中に終わらせる (finish it today) |
+
+> - 「今日中に」 and 「今日までに」 (point 2 of this lesson) both set a deadline: 「今日中に」 = get it done within today; 「金曜日までに」 = before the point Friday.
+> - 「会議中」 ≈ 「会議のあいだ」 (point 1 of this lesson), but 「〜中」 attaches only to nouns and is typical of signs and work talk.
+> - 「一日中」 (all day long) ≠ 「一日に」 (… times a day, frequency).
+:::
+
+---
+
 ## 今日练习||Today's Practice
 
 ### A. あいだ vs あいだに||A. あいだ vs あいだに

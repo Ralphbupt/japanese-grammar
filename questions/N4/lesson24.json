@@ -559,5 +559,88 @@
       null
     ],
     "rev": 2
+  },
+  {
+    "id": "n4-l24-015",
+    "type": "bunpou",
+    "refs": [
+      "lesson24#7"
+    ],
+    "difficulty": 1,
+    "stem": "ゆうべは つかれて いて、電気を（　）まま ねて しまいました。",
+    "options": [
+      "つけ",
+      "つける",
+      "つけた",
+      "つけて"
+    ],
+    "answer": 2,
+    "full": "ゆうべは つかれて いて、電気を つけたまま ねて しまいました。",
+    "kj": "昨夜は疲れていて、電気をつけたまま寝てしまいました。",
+    "tr": {
+      "zh": "昨晚太累了，开着灯就睡着了。",
+      "en": "Last night I was so tired I fell asleep with the light on."
+    },
+    "why": {
+      "zh": "线索：空格后是「まま」，后面是「ねて しまいました」——开灯这个动作做完后状态没变就睡了。\n规则：保持某个动作完成后的状态，用「动词た形＋まま」：「つけたまま」。",
+      "en": "Clue: The blank is followed by 「まま」 and 「ねて しまいました」 — the light was switched on and left that way while sleeping.\nRule: Keeping the state a finished action left is verb た-form ＋ 「まま」: 「つけたまま」."
+    },
+    "wrong": [
+      {
+        "zh": "「まま」前面的动词不用ます形词干，「つけまま」不成立。",
+        "en": "「まま」 doesn't take the bare stem; 「つけまま」 is not Japanese."
+      },
+      {
+        "zh": "「まま」表示已经形成的状态，前面用た形，不用辞书形「つける」。",
+        "en": "「まま」 describes a state already in place, so it takes the た-form, not dictionary 「つける」."
+      },
+      null,
+      {
+        "zh": "て形不能直接接「まま」，「つけてまま」不成立。",
+        "en": "The て-form can't go straight onto 「まま」; 「つけてまま」 is not Japanese."
+      }
+    ]
+  },
+  {
+    "id": "n4-l24-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson24#7",
+      "lesson24#2"
+    ],
+    "difficulty": 2,
+    "stem": "日本の 家では、くつを（　）へやに 入っては いけません。",
+    "options": [
+      "はいたばかり",
+      "はいている",
+      "はいたまま",
+      "はいて おいて"
+    ],
+    "answer": 2,
+    "full": "日本の 家では、くつを はいたまま へやに 入っては いけません。",
+    "kj": "日本の家では、靴を履いたまま部屋に入ってはいけません。",
+    "tr": {
+      "zh": "在日本的家里，不能穿着鞋进房间。",
+      "en": "In a Japanese home you mustn't go into a room with your shoes on."
+    },
+    "why": {
+      "zh": "线索：「くつを（　）へやに 入る」——穿鞋这个状态没变，就进了房间。\n规则：「た形＋まま、〜する」表示保持着前面的状态做另一件事：「はいたまま入る」＝穿着鞋进。\n辨析：「〜ている」只描述现在的状态，不能连接后面的动作。",
+      "en": "Clue: 「くつを（　）へやに 入る」 — the shoes stay on while going into the room.\nRule: 「た-form ＋ まま、〜する」 means doing something with that state unchanged: 「はいたまま入る」 = go in with shoes on.\nContrast: 「〜ている」 only describes a current state; it can't link to the next action."
+    },
+    "wrong": [
+      {
+        "zh": "「はいたばかり」是“刚穿上”，后面要加「で」等才能接动作，而且意思也不是“穿着鞋进屋”。",
+        "en": "「はいたばかり」 means \"just put on\" and would need 「で」 to link on; it doesn't mean \"with shoes on\"."
+      },
+      {
+        "zh": "「はいている」是现在的状态，直接接「へや」就成了修饰名词“穿着鞋的房间”，意思不通。",
+        "en": "「はいている」 right before 「へや」 would describe the room (\"a room wearing shoes\"), which makes no sense."
+      },
+      null,
+      {
+        "zh": "「はいて おいて」是“事先穿好”，表示为以后做准备，和“不能穿着鞋进屋”意思不合。",
+        "en": "「はいて おいて」 means \"put on in advance\" as preparation — not the meaning here."
+      }
+    ]
   }
 ]

@@ -873,5 +873,211 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n4-l33-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#8"
+    ],
+    "difficulty": 1,
+    "stem": "子どもが 五人 いるので、クッキーを 十こ 買って、一人に 二つ（　）あげました。",
+    "options": [
+      "おきに",
+      "ずつ",
+      "め",
+      "しか"
+    ],
+    "answer": 1,
+    "full": "子どもが 五人 いるので、クッキーを 十こ 買って、一人に 二つずつ あげました。",
+    "kj": "子供が五人いるので、クッキーを十個買って、一人に二つずつあげました。",
+    "tr": {
+      "zh": "因为有五个孩子，所以买了十块饼干，每人给了两块。",
+      "en": "There were five children, so I bought ten cookies and gave each of them two."
+    },
+    "why": {
+      "zh": "线索：五个孩子、十块饼干，「一人に 二つ」——同样的数量分给每一个人。\n规则：数量词＋「ずつ」表示“每人／每次各……”：「二つずつ」＝每人两个。\n辨析：「おきに」说的是间隔（隔几个），「ずつ」说的是每一份的量。",
+      "en": "Clue: Five children, ten cookies, 「一人に 二つ」 — the same amount goes to each person.\nRule: Counter ＋ 「ずつ」 means \"… each\": 「二つずつ」 = two apiece.\nContrast: 「おきに」 is about the gap (every other one); 「ずつ」 is about the amount per share."
+    },
+    "wrong": [
+      {
+        "zh": "「二つおきに」是“每隔两个”，说的是间隔，不能表示每人分到的数量。",
+        "en": "「二つおきに」 means \"every third one\" — a gap, not how many each person gets."
+      },
+      null,
+      {
+        "zh": "「二つめ」是“第二个”，不能接在「一人に」后面表示分配。",
+        "en": "「二つめ」 means \"the second one\"; it can't express a share after 「一人に」."
+      },
+      {
+        "zh": "「しか」后面必须是否定形，「あげました」是肯定，接不上。",
+        "en": "「しか」 needs a negative verb after it; 「あげました」 is affirmative."
+      }
+    ]
+  },
+  {
+    "id": "n4-l33-023",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#8"
+    ],
+    "difficulty": 2,
+    "stem": "毎日 新しい 漢字を 三つ（　）おぼえて います。もう 三百 おぼえました。",
+    "options": [
+      "しか",
+      "め",
+      "ずつ",
+      "おきに"
+    ],
+    "answer": 2,
+    "full": "毎日 新しい 漢字を 三つずつ おぼえて います。もう 三百 おぼえました。",
+    "kj": "毎日新しい漢字を三つずつ覚えています。もう三百覚えました。",
+    "tr": {
+      "zh": "我每天记三个新汉字，已经记住三百个了。",
+      "en": "I learn three new kanji every day. I've already learned three hundred."
+    },
+    "why": {
+      "zh": "线索：「毎日」每天都记同样的数量，后一句说已经积累到三百个。\n规则：数量词＋「ずつ」表示每次都是同样的量、一点点推进：「三つずつ」＝每次三个。",
+      "en": "Clue: 「毎日」 — the same number every day, and the next sentence shows it adding up to three hundred.\nRule: Counter ＋ 「ずつ」 means the same amount each time, step by step: 「三つずつ」 = three at a time."
+    },
+    "wrong": [
+      {
+        "zh": "「しか」后面要接否定（三つしか覚えていない），这里是肯定的「おぼえています」。",
+        "en": "「しか」 needs a negative (三つしか覚えていない); here the verb is affirmative 「おぼえています」."
+      },
+      {
+        "zh": "「三つめ」是“第三个”，不能表示每天记的数量。",
+        "en": "「三つめ」 means \"the third one\"; it can't give the daily amount."
+      },
+      null,
+      {
+        "zh": "「三つおきに」是“每隔三个”，说的是间隔，和每天记几个无关。",
+        "en": "「三つおきに」 means \"every fourth one\" — a gap, not how many are learned each day."
+      }
+    ]
+  },
+  {
+    "id": "n4-l33-024",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#9"
+    ],
+    "difficulty": 1,
+    "stem": "きのうは かぜを ひいて、一日（　）ねて いました。",
+    "options": [
+      "あいだに",
+      "中",
+      "までに",
+      "ずつ"
+    ],
+    "answer": 1,
+    "full": "きのうは かぜを ひいて、一日中 ねて いました。",
+    "kj": "昨日は風邪を引いて、一日中寝ていました。",
+    "tr": {
+      "zh": "昨天感冒了，躺了一整天。",
+      "en": "Yesterday I had a cold and stayed in bed all day."
+    },
+    "why": {
+      "zh": "线索：感冒了，「ねて いました」是持续的状态，要说的是“从早到晚一直”。\n规则：时间名词＋「中（じゅう）」表示整段时间都：「一日中」＝一整天。",
+      "en": "Clue: A cold, and 「ねて いました」 is an ongoing state — the meaning needed is \"from morning to night\".\nRule: Time noun ＋ 「中」 (じゅう) means through the whole period: 「一日中」 = all day long."
+    },
+    "wrong": [
+      {
+        "zh": "「あいだに」前面要接「の」或动词（〜のあいだに），而且表示在期间内发生一次的事，不接「一日」后表示一直躺着。",
+        "en": "「あいだに」 needs 「の」 or a verb before it and marks something that happens once within a period, not lying in bed the whole time."
+      },
+      null,
+      {
+        "zh": "「までに」表示期限（在……之前完成），「ねていました」是持续状态，不能用期限。",
+        "en": "「までに」 sets a deadline; 「ねていました」 is an ongoing state, so a deadline doesn't fit."
+      },
+      {
+        "zh": "「ずつ」接数量表示每份的量，「一日ずつ」和“躺了一整天”意思不合。",
+        "en": "「ずつ」 gives an amount per share; 「一日ずつ」 doesn't mean \"in bed all day\"."
+      }
+    ]
+  },
+  {
+    "id": "n4-l33-025",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#9"
+    ],
+    "difficulty": 2,
+    "stem": "A「すみません、田中さんは いらっしゃいますか。」\nB「田中は 今 会議（　）です。三時ごろ もどります。」",
+    "options": [
+      "中に",
+      "中",
+      "あいだ",
+      "まま"
+    ],
+    "answer": 1,
+    "full": "A「すみません、田中さんは いらっしゃいますか。」 B「田中は 今 会議中です。三時ごろ もどります。」",
+    "kj": "A「すみません、田中さんはいらっしゃいますか。」B「田中は今会議中です。三時頃戻ります。」",
+    "tr": {
+      "zh": "A：不好意思，田中先生在吗？B：田中现在正在开会，三点左右回来。",
+      "en": "A: Excuse me, is Mr Tanaka in? B: Tanaka is in a meeting right now. He'll be back around three."
+    },
+    "why": {
+      "zh": "线索：「今」＋「です」结句，后面说三点回来——田中此刻正在做某件事。\n规则：动作名词＋「中（ちゅう）」表示正在……中：「会議中です」＝正在开会。",
+      "en": "Clue: 「今」 and the sentence ending in 「です」, then \"back around three\" — Tanaka is busy with something right now.\nRule: Activity noun ＋ 「中」 (ちゅう) means in the middle of it: 「会議中です」 = in a meeting."
+    },
+    "wrong": [
+      {
+        "zh": "「中に」后面要接动作（会議中に電話が来た），不能直接接「です」结句。",
+        "en": "「中に」 must be followed by an action (会議中に電話が来た); it can't end the sentence with 「です」."
+      },
+      null,
+      {
+        "zh": "「あいだ」前面接名词要加「の」（会議のあいだ），而且不能直接用「あいだです」说正在开会。",
+        "en": "「あいだ」 needs 「の」 after a noun (会議のあいだ), and 「あいだです」 can't mean \"in a meeting\"."
+      },
+      {
+        "zh": "「まま」接名词要加「の」，而且表示状态没变，不能表示正在开会。",
+        "en": "「まま」 needs 「の」 after a noun and means a state left unchanged, not being in a meeting."
+      }
+    ]
+  },
+  {
+    "id": "n4-l33-026",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#9",
+      "lesson33#2"
+    ],
+    "difficulty": 2,
+    "stem": "この しりょうは あしたの 会議で 使うので、今日（　）コピーして おいて ください。",
+    "options": [
+      "のあいだ",
+      "ずつ",
+      "中に",
+      "おきに"
+    ],
+    "answer": 2,
+    "full": "この しりょうは あしたの 会議で 使うので、今日中に コピーして おいて ください。",
+    "kj": "この資料は明日の会議で使うので、今日中にコピーしておいてください。",
+    "tr": {
+      "zh": "这份资料明天开会要用，请在今天之内复印好。",
+      "en": "We'll use these documents at tomorrow's meeting, so please copy them by the end of today."
+    },
+    "why": {
+      "zh": "线索：明天开会要用，「〜て おいて ください」是事先做好——需要一个期限。\n规则：「今日中に」＝在今天之内（今天结束之前）完成。\n辨析：「今日中に」和「までに」都表示期限，「中に」强调在这一天里做完。",
+      "en": "Clue: The papers are needed at tomorrow's meeting and 「〜て おいて ください」 asks for it done in advance — a deadline is needed.\nRule: 「今日中に」 = within today, before the day ends.\nContrast: Both 「今日中に」 and 「までに」 set deadlines; 「中に」 stresses getting it done within this one day."
+    },
+    "wrong": [
+      {
+        "zh": "「今日のあいだ」表示一整段时间里持续做，不能表示“今天之内做完一次”；要说期限得用「中に」。",
+        "en": "「今日のあいだ」 means doing it throughout the day; it can't mean \"get it done once within today\"."
+      },
+      {
+        "zh": "「今日ずつ」不成立，「ずつ」只接数量。",
+        "en": "「今日ずつ」 is not Japanese; 「ずつ」 only follows a quantity."
+      },
+      null,
+      {
+        "zh": "「今日おきに」不成立，「おきに」要接带数字的间隔（一日おきに）。",
+        "en": "「今日おきに」 is not Japanese; 「おきに」 needs a numbered interval (一日おきに)."
+      }
+    ]
   }
 ]

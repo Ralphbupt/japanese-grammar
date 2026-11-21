@@ -427,5 +427,85 @@
         "en": "「〜をめぐって」 (over) is followed by debate or conflict, not a decision to move."
       }
     ]
+  },
+  {
+    "id": "n2-l63-012",
+    "type": "bunpou",
+    "refs": [
+      "lesson63#4"
+    ],
+    "difficulty": 2,
+    "stem": "さっきまで晴れていたのに、西の空に黒い雲が出てきた（　）、あっという間に激しい雨になった。",
+    "options": [
+      "末に",
+      "かと思うと",
+      "上で",
+      "あげく"
+    ],
+    "answer": 1,
+    "full": "さっきまで晴れていたのに、西の空に黒い雲が出てきたかと思うと、あっという間に激しい雨になった。",
+    "tr": {
+      "zh": "刚才还是晴天，西边天空刚出现黑云，转眼间就下起了大雨。",
+      "en": "It had been sunny until a moment ago, but no sooner had black clouds appeared in the western sky than it was pouring."
+    },
+    "why": {
+      "zh": "线索：「出てきた」之后马上「あっという間に」变成大雨，是说话人看到的天气变化，一个紧接一个。\n规则：动词た形＋「かと思うと」＝刚……就……，描写眼前事物接连发生的（常常意外的）变化。\n辨析：「末に」「あげく」都表示经过长时间的过程才有结果，和「あっという間に」的快节奏矛盾。",
+      "en": "Clue: Right after 「出てきた」 it turns to heavy rain 「あっという間に」; it's a change in the weather the speaker watches, one right after another.\nRule: verb ta-form ＋ 「かと思うと」 = no sooner… than…, for quick (often surprising) changes one observes.\nContrast: 「末に」 and 「あげく」 both mean a result after a long process, which clashes with the speed of 「あっという間に」."
+    },
+    "wrong": [
+      {
+        "zh": "「末に」是“经过长时间……最终”，和「あっという間に」（转眼间）矛盾。",
+        "en": "「末に」 (after a long…) contradicts 「あっという間に」 (in an instant)."
+      },
+      null,
+      {
+        "zh": "「上で」是“在……之后再（做）”，后面要接人的有意动作，下雨不是。",
+        "en": "「上で」 (after doing…, then) needs a deliberate action after it; rain isn't one."
+      },
+      {
+        "zh": "「あげく」是“折腾了很久，最后（坏结果）”，云一出现就下雨不是长过程。",
+        "en": "「あげく」 (after much…, in the end) needs a long drawn-out process; clouds turning to rain isn't one."
+      }
+    ]
+  },
+  {
+    "id": "n2-l63-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson63#4"
+    ],
+    "difficulty": 2,
+    "stem": "うちの猫は、ソファで気持ちよさそうに寝ていた（　）、急に起きて窓のほうへ走っていった。",
+    "options": [
+      "次第",
+      "ばかりか",
+      "かと思うと",
+      "あまり"
+    ],
+    "answer": 2,
+    "full": "うちの猫は、ソファで気持ちよさそうに寝ていたかと思うと、急に起きて窓のほうへ走っていった。",
+    "tr": {
+      "zh": "我家的猫刚才还在沙发上睡得正香，突然就起来跑向窗边了。",
+      "en": "Our cat had been sleeping happily on the sofa, when all of a sudden it got up and ran to the window."
+    },
+    "why": {
+      "zh": "线索：前面是「寝ていた」，后面是「急に起きて」，状态一下子变了，是说话人看着猫发生的变化。\n规则：「〜かと思うと」＝刚（还在）……，马上就……，前后往往是对比的两种状态。\n辨析：「次第」表示“一……就立刻去做”，后面接说话人的意志或请求，不能接猫突然的动作，而且接ます形。",
+      "en": "Clue: 「寝ていた」 comes before and 「急に起きて」 after: the state flips suddenly, a change the speaker watches in the cat.\nRule: 「〜かと思うと」 = one moment…, the next…; the two halves are often contrasting states.\nContrast: 「次第」 (as soon as…, I'll…) takes a masu-stem and is followed by the speaker's intention or a request, not a cat's sudden move."
+    },
+    "wrong": [
+      {
+        "zh": "「次第」接ます形（「着き次第」），后面接说话人的意志，不接猫的突然动作。",
+        "en": "「次第」 takes a masu-stem (「着き次第」) and leads to the speaker's intention, not a cat's sudden action."
+      },
+      {
+        "zh": "「ばかりか」是“不仅……而且”，前后要是同方向的叠加，睡觉和突然跑走是相反的变化。",
+        "en": "「ばかりか」 (not only… but also) stacks things in the same direction; sleeping and suddenly running off are opposites."
+      },
+      null,
+      {
+        "zh": "「あまり」是“过于……以致”，前面要接程度过头的事，“睡得太香所以跑了”说不通。",
+        "en": "「あまり」 (so… that) needs something taken too far; \"slept so well it ran off\" makes no sense."
+      }
+    ]
   }
 ]

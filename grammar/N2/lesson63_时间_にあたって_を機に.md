@@ -243,6 +243,74 @@ This lesson covers N2-level expressions for time and occasion. 「にあたっ�
 
 ---
 
+## 4. 〜と思うと／〜かと思うと（刚……就……）||4. 〜と思うと／〜かと思うと (No sooner… than…)
+
+### 接続||Conjugation
+:::zh
+- 動詞た形 + と思うと / かと思うと / かと思ったら
+
+※ 只用来描写说话人看到的别人或事物的变化，不用于说话人自己的动作。  
+※ 后句是已经发生的事实，多为过去形，不能是意志、命令、请求。  
+※ 另有对比用法：「〜かと思うと／かと思えば」＝"有时……，有时又……"：「笑っているかと思えば、急に怒り出す」。
+:::
+:::en
+- Verb ta-form + と思うと / かと思うと / かと思ったら
+
+※ Only for changes the speaker sees in other people or things, never for the speaker's own actions.  
+※ The second half is something that actually happened, usually past tense — not an intention, order or request.  
+※ There is also a contrast use, 「〜かと思うと／かと思えば」 = "one moment…, the next…": 「笑っているかと思えば、急に怒り出す」.
+:::
+
+### 含义||Meaning
+:::zh
+"刚……就……""才……马上又……"。前一个变化刚发生，紧接着就出现了后一个变化，后者往往出乎意料，前后常形成对比（晴→雨、哭→睡）。比「たとたん」更有"旁观者在一旁看着"的感觉，书面和口语都用。
+:::
+:::en
+"No sooner… than…," "just as… , …." One change has barely happened when the next follows, often unexpectedly and often in contrast (sun → rain, crying → sleeping). Compared with 「たとたん」 it has more of an onlooker watching the scene. Used in both speech and writing.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 空が急に暗くなった**かと思うと**、激しい雨が降り出した。（天空刚一下子暗下来，就下起了大雨。）
+2. 赤ちゃんは泣き出した**かと思うと**、すぐにまた眠ってしまった。（婴儿刚哭起来，马上又睡着了。）
+3. 息子は学校から帰ってきた**と思ったら**、かばんを置いてまた出かけていった。（儿子刚从学校回来，放下书包又出去了。）
+4. 部長は会議室に入ってきた**かと思うと**、何も言わずに出ていった。（部长刚走进会议室，一句话没说就出去了。）
+:::
+:::en
+1. 空が急に暗くなった**かと思うと**、激しい雨が降り出した。(No sooner had the sky suddenly darkened than it started pouring.)
+2. 赤ちゃんは泣き出した**かと思うと**、すぐにまた眠ってしまった。(The baby had only just started crying when it fell asleep again.)
+3. 息子は学校から帰ってきた**と思ったら**、かばんを置いてまた出かけていった。(My son had barely got back from school when he dropped his bag and went out again.)
+4. 部長は会議室に入ってきた**かと思うと**、何も言わずに出ていった。(The department head had just come into the meeting room when he left without a word.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| たかと思うと | 刚……就…… | 旁观者看别人、事物的变化；不用于自己 |
+| たとたん（に） | 刚一……就…… | 第48课第1点，也可以用于自己：「立ち上がったとたん、めまいがした」 |
+| ます形＋次第 | 一……就立刻（去做） | 第48课第2点，后面是说话人的意志、请求：「着き次第、連絡します」 |
+| 〜かと思うと（对比） | 有时……有时又…… | 反复出现的对比，不是一次性的先后 |
+
+> 「空が暗くなったかと思うと、雨が降り出した」= 天刚暗下来就下雨了（看到的变化）  
+> 「ドアを開けたとたん、猫が飛び出した」= 我一开门猫就冲出来了（自己的动作也行）  
+> 「資料が届き次第、お送りします」= 资料一到就给您寄（意志）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| たかと思うと | no sooner… than… | An onlooker watching others or things change; not for oneself |
+| たとたん（に） | the moment… | Lesson 48 point 1; also works for oneself: 「立ち上がったとたん、めまいがした」 |
+| masu-stem + 次第 | as soon as… (I'll do) | Lesson 48 point 2; followed by the speaker's intention or a request: 「着き次第、連絡します」 |
+| 〜かと思うと (contrast) | one moment…, the next… | A repeated contrast, not one thing after another |
+
+> 「空が暗くなったかと思うと、雨が降り出した」 = the sky had just darkened when rain began (a change one watches)  
+> 「ドアを開けたとたん、猫が飛び出した」 = the moment I opened the door, the cat shot out (one's own action is fine)  
+> 「資料が届き次第、お送りします」 = I'll send it as soon as the documents arrive (intention)
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

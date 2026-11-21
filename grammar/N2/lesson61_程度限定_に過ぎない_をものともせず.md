@@ -71,6 +71,28 @@ This lesson covers N2-level grammar for degree and limitation. 「に過ぎな�
 5. 成功したのは偶然**に過ぎない**と彼は言った。(He said the success was nothing more than coincidence.)
 :::
 
+### 用法：〜でしかない||Usage: 〜でしかない
+:::zh
+- 名詞 + でしかない
+
+「でしかない」＝「で（だ的连用形）＋しか＋ない」，意思和「に過ぎない」相近："只不过是……""充其量是……"。但语气更重，强调"仅仅是这个，别无其他"，常带说话人的不满、无奈或批评。基本只接名词；动词句一般用「に過ぎない」。
+
+6. どんなに立派な計画も、実行しなければ紙の上の話**でしかない**。（再好的计划，不执行也只是纸上谈兵。）
+7. 彼にとって、私はただの同僚**でしかない**のだろう。（对他来说，我大概只是个普通同事而已吧。）
+8. 今回の値下げは、一時的な対策**でしかない**。（这次降价只不过是权宜之计。）
+9. この数字はあくまで目安**でしかない**。実際の状況を見て判断してほしい。（这个数字终究只是个参考，希望看实际情况再判断。）
+:::
+:::en
+- Noun + でしかない
+
+「でしかない」 = 「で」 (the connective form of だ) + しか + ない, close in meaning to 「に過ぎない」: "nothing but…," "at most…." The tone is heavier, stressing "just this and nothing more," often with the speaker's dissatisfaction, resignation or criticism. It basically follows nouns; with verbs, use 「に過ぎない」.
+
+6. どんなに立派な計画も、実行しなければ紙の上の話**でしかない**。(However fine a plan is, if it isn't carried out it's nothing but words on paper.)
+7. 彼にとって、私はただの同僚**でしかない**のだろう。(To him, I'm probably nothing more than a colleague.)
+8. 今回の値下げは、一時的な対策**でしかない**。(This price cut is no more than a stopgap.)
+9. この数字はあくまで目安**でしかない**。実際の状況を見て判断してほしい。(This figure is only a rough guide. Please judge by the actual situation.)
+:::
+
 ### 辨析||Comparison
 :::zh
 | 表达 | 含义 | 区别 |
@@ -78,6 +100,7 @@ This lesson covers N2-level grammar for degree and limitation. 「に過ぎな�
 | に過ぎない | 只不过是 | 淡化、谦虚 |
 | にほかならない | 正是/不外乎 | 强调、断定 |
 | だけだ | 只是……而已 | 中性限定 |
+| でしかない | 只不过是……而已 | 接名词；比に過ぎない语气更重，常带不满、无奈 |
 
 > 「に過ぎない」和「にほかならない」语气方向正好相反！  
 > 「偶然に過ぎない」= 只不过是偶然（淡化）  
@@ -89,6 +112,7 @@ This lesson covers N2-level grammar for degree and limitation. 「に過ぎな�
 | に過ぎない | merely / nothing more than | Downplays; humble |
 | にほかならない | none other than / precisely | Emphasizes; asserts |
 | だけだ | just / only | Neutral limitation |
+| でしかない | nothing but… | After nouns; heavier than に過ぎない, often dissatisfied or resigned |
 
 > 「に過ぎない」 and 「にほかならない」 have completely opposite nuances!  
 > 「偶然に過ぎない」= nothing more than coincidence (downplaying)  

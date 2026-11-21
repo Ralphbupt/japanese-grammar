@@ -723,5 +723,87 @@
       null
     ],
     "rev": 2
+  },
+  {
+    "id": "n4-l31-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson31#7"
+    ],
+    "difficulty": 1,
+    "stem": "この ナイフは 小さいですが、くだものを 切る（　）べんりです。",
+    "options": [
+      "のに",
+      "ばかり",
+      "ために",
+      "までに"
+    ],
+    "answer": 0,
+    "full": "この ナイフは 小さいですが、くだものを 切るのに べんりです。",
+    "kj": "このナイフは小さいですが、果物を切るのに便利です。",
+    "tr": {
+      "zh": "这把刀虽然小，但切水果很方便。",
+      "en": "This knife is small, but it's handy for cutting fruit."
+    },
+    "why": {
+      "zh": "线索：空格后是「べんりです」，说的是这把刀用在什么上很方便。\n规则：说用途，用「动词辞书形＋のに＋便利・いい・使う」：「切るのに 便利」。\n辨析：「ために」后面接有意识的行动，「便利」前面一般不用「ために」。",
+      "en": "Clue: The blank is followed by 「べんりです」 — what the knife is handy for.\nRule: Purpose of use is dictionary form ＋ 「のに」 ＋ 便利・いい・使う: 「切るのに 便利」.\nContrast: 「ために」 leads into a deliberate action; it isn't used before 「便利」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「切るばかり」是“光是切”，接「べんりです」意思不通。",
+        "en": "「切るばかり」 means \"nothing but cutting\"; it doesn't make sense with 「べんりです」."
+      },
+      {
+        "zh": "「ために」表示目的，后面要接有意识的行动，「便利だ」前面一般不说「ために」。",
+        "en": "「ために」 marks a purpose followed by a deliberate action; 「〜ために便利だ」 isn't said."
+      },
+      {
+        "zh": "「までに」表示期限，和“方便”没有关系。",
+        "en": "「までに」 sets a deadline, which has nothing to do with being handy."
+      }
+    ]
+  },
+  {
+    "id": "n4-l31-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson31#7"
+    ],
+    "difficulty": 2,
+    "stem": "A「その 地図の アプリ、どうですか。」\nB「知らない 町を 歩く（　）とても いいですよ。」",
+    "options": [
+      "ながら",
+      "のに",
+      "ために",
+      "までに"
+    ],
+    "answer": 1,
+    "full": "A「その 地図の アプリ、どうですか。」 B「知らない 町を 歩くのに とても いいですよ。」",
+    "kj": "A「その地図のアプリ、どうですか。」B「知らない町を歩くのにとてもいいですよ。」",
+    "tr": {
+      "zh": "A：那个地图应用怎么样？B：在陌生的城市走路时特别好用。",
+      "en": "A: How's that map app? B: It's really good for walking around a town you don't know."
+    },
+    "why": {
+      "zh": "线索：问的是这个应用怎么样，空格后是评价「とても いいです」。\n规则：说某物用在什么方面好，用「辞书形＋のに＋いい」：「歩くのに いい」。\n辨析：用途的「のに」后面是「いい・便利・使う」；转折的「のに」后面是相反的结果。",
+      "en": "Clue: The question is how the app is, and the blank is followed by the verdict 「とても いいです」.\nRule: What something is good for is dictionary form ＋ 「のに」 ＋ 「いい」: 「歩くのに いい」.\nContrast: Purpose 「のに」 is followed by いい・便利・使う; concessive 「のに」 by a contrary result."
+    },
+    "wrong": [
+      {
+        "zh": "「ながら」要接ます形词干（歩きながら），「歩くながら」不成立。",
+        "en": "「ながら」 takes the stem (歩きながら); 「歩くながら」 is not Japanese."
+      },
+      null,
+      {
+        "zh": "「ために」后面接有意识的行动，「いい」前面一般不用「ために」。",
+        "en": "「ために」 is followed by a deliberate action; it isn't used before 「いい」."
+      },
+      {
+        "zh": "「までに」表示期限，和“好用”没有关系。",
+        "en": "「までに」 sets a deadline, which has nothing to do with being good to use."
+      }
+    ]
   }
 ]

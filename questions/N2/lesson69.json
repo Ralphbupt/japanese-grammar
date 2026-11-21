@@ -781,5 +781,165 @@
       },
       null
     ]
+  },
+  {
+    "id": "n2-l69-021",
+    "type": "bunpou",
+    "refs": [
+      "lesson69#7"
+    ],
+    "difficulty": 1,
+    "stem": "スマートフォンは、今や私たちの生活（　）道具になっている。",
+    "options": [
+      "に欠かせない",
+      "に過ぎない",
+      "に限らない",
+      "に越したことはない"
+    ],
+    "answer": 0,
+    "full": "スマートフォンは、今や私たちの生活に欠かせない道具になっている。",
+    "tr": {
+      "zh": "智能手机现在已经成了我们生活中不可或缺的工具。",
+      "en": "Smartphones have now become an indispensable part of our lives."
+    },
+    "why": {
+      "zh": "线索：「今や」（如今已经）表示地位变得很重要；后面修饰名词「道具」。\n规则：名词＋「に欠かせない」＝对……来说不可或缺，可直接修饰名词：「生活に欠かせない道具」。\n辨析：「に過ぎない」＝只不过是……，是贬低，和「今や」强调重要性的语气相反。",
+      "en": "Clue: 「今や」 (now, by now) signals how important it has become; the blank modifies the noun 「道具」.\nRule: noun ＋ 「に欠かせない」 = indispensable for…, and it can modify a noun directly: 「生活に欠かせない道具」.\nContrast: 「に過ぎない」 (nothing more than) belittles, the opposite of 「今や」's stress on importance."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に過ぎない」是“只不过是……”，“只不过是生活的工具”和「今や」强调重要的语气矛盾。",
+        "en": "「に過ぎない」 (nothing more than) clashes with 「今や」, which stresses importance."
+      },
+      {
+        "zh": "「に限らない」是“不限于……”，“不限于生活的工具”意思不通。",
+        "en": "「に限らない」 (not limited to) gives \"a tool not limited to our lives,\" which doesn't fit."
+      },
+      {
+        "zh": "「に越したことはない」是“最好……”，句末用，不能修饰「道具」。",
+        "en": "「に越したことはない」 (it's best to…) ends a sentence and can't modify 「道具」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l69-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson69#7"
+    ],
+    "difficulty": 2,
+    "stem": "新しい薬の開発（　）のは、長い時間と多額の費用だ。",
+    "options": [
+      "にほかならない",
+      "に当たらない",
+      "に欠かせない",
+      "に限る"
+    ],
+    "answer": 2,
+    "full": "新しい薬の開発に欠かせないのは、長い時間と多額の費用だ。",
+    "tr": {
+      "zh": "开发新药不可或缺的，是漫长的时间和巨额的费用。",
+      "en": "What developing a new drug requires is a long time and a great deal of money."
+    },
+    "why": {
+      "zh": "线索：句子结构是“对新药开发来说（　）的东西，是时间和费用”，说的是必需的条件。\n规则：「Aに欠かせないのはBだ」＝对A来说不可或缺的是B。\n辨析：「にほかならない」＝正是……，要放在句末断定（「Bにほかならない」），不能这样修饰「の」表示必需。",
+      "en": "Clue: The sentence says \"what is ( ) for developing a new drug is time and money\" — the things it needs.\nRule: 「Aに欠かせないのはBだ」 = what A can't do without is B.\nContrast: 「にほかならない」 (is none other than) asserts at the end of a sentence (「Bにほかならない」); it can't describe 「の」 as something needed."
+    },
+    "wrong": [
+      {
+        "zh": "「にほかならない」是“正是……”，用在句末断定，“正是新药开发的东西”意思不通。",
+        "en": "「にほかならない」 (none other than) asserts at the end of a sentence; here it makes no sense."
+      },
+      {
+        "zh": "「に当たらない」是“不值得……”，前面接「驚く」「非難する」等动词，不接「開発」。",
+        "en": "「に当たらない」 (no need to…) follows verbs like 「驚く」「非難する」, not 「開発」."
+      },
+      null,
+      {
+        "zh": "「に限る」是“……最好”，“开发新药最好的是时间和费用”说不通。",
+        "en": "「に限る」 (… is best) gives \"the best thing for drug development is time and money,\" which doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n2-l69-023",
+    "type": "bunpou",
+    "refs": [
+      "lesson69#8"
+    ],
+    "difficulty": 2,
+    "stem": "平日は電車、週末は自転車（　）、曜日によって通勤の方法を変えている。",
+    "options": [
+      "というより",
+      "というように",
+      "といっても",
+      "というと"
+    ],
+    "answer": 1,
+    "full": "平日は電車、週末は自転車というように、曜日によって通勤の方法を変えている。",
+    "tr": {
+      "zh": "工作日坐电车，周末骑自行车，像这样根据星期几改变通勤方式。",
+      "en": "Train on weekdays, bike on weekends — I change how I get to work depending on the day, like that."
+    },
+    "why": {
+      "zh": "线索：前面举了两个成对的例子「平日は電車、週末は自転車」，后面「曜日によって〜変えている」是对它们的归纳。\n规则：「AはX、BはY＋というように」＝像……这样，举例后接整体的说明。\n辨析：「というより」＝与其说……不如说，是比较两种说法，不是举例。",
+      "en": "Clue: Two paired examples, 「平日は電車、週末は自転車」, come first, and 「曜日によって〜変えている」 sums them up.\nRule: 「AはX、BはY ＋ というように」 = like…, giving examples before the overall statement.\nContrast: 「というより」 (rather than) compares two descriptions; it doesn't give examples."
+    },
+    "wrong": [
+      {
+        "zh": "「というより」是“与其说……不如说”，后面要接更贴切的说法，这里不是比较。",
+        "en": "「というより」 (rather than) needs a more fitting description after it; this isn't a comparison."
+      },
+      null,
+      {
+        "zh": "「といっても」是“虽说……但”，后面要接修正或保留，和后文的归纳接不上。",
+        "en": "「といっても」 (although I say…) needs a correction after it, not a summary."
+      },
+      {
+        "zh": "「というと」是“说到……”，用于引出联想的话题，不能归纳前面的例子。",
+        "en": "「というと」 (speaking of) brings up an association; it can't sum up the examples."
+      }
+    ]
+  },
+  {
+    "id": "n2-l69-024",
+    "type": "bunpou",
+    "refs": [
+      "lesson69#8"
+    ],
+    "difficulty": 2,
+    "stem": "「おはよう」「お疲れさま」（　）、毎日のあいさつを大切にしている職場は、雰囲気がいい。",
+    "options": [
+      "というものの",
+      "というわけで",
+      "というように",
+      "というのに"
+    ],
+    "answer": 2,
+    "full": "「おはよう」「お疲れさま」というように、毎日のあいさつを大切にしている職場は、雰囲気がいい。",
+    "tr": {
+      "zh": "“早上好”“辛苦了”，像这样重视每天打招呼的职场，氛围都很好。",
+      "en": "Workplaces that value daily greetings like \"good morning\" and \"thanks for your hard work\" have a good atmosphere."
+    },
+    "why": {
+      "zh": "线索：「おはよう」「お疲れさま」是两个具体的问候语，后面「毎日のあいさつ」把它们归纳起来。\n规则：引用的话＋「というように」＝像……这样，举出具体说法作为例子。\n辨析：「というわけで」＝因此，是由前文得出结论，前面要有理由，而不是两句问候语。",
+      "en": "Clue: 「おはよう」 and 「お疲れさま」 are two specific greetings, and 「毎日のあいさつ」 gathers them up.\nRule: quoted words ＋ 「というように」 = like…, giving actual phrases as examples.\nContrast: 「というわけで」 (and so) draws a conclusion and needs a reason before it, not two greetings."
+    },
+    "wrong": [
+      {
+        "zh": "「というものの」是“虽说……但是”，后面要接和预期相反的内容，这里没有转折。",
+        "en": "「というものの」 (although…) needs an unexpected contrast after it; there's none here."
+      },
+      {
+        "zh": "「というわけで」是“因此”，前面要接理由，两句问候语不是理由。",
+        "en": "「というわけで」 (and so) needs a reason before it; two greetings aren't one."
+      },
+      null,
+      {
+        "zh": "「というのに」是“明明……却”，带不满的转折，和后文正面的评价不合。",
+        "en": "「というのに」 (even though) is a resentful contrast, which doesn't suit the positive comment that follows."
+      }
+    ]
   }
 ]

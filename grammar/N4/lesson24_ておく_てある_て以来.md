@@ -312,6 +312,70 @@ Verb て-form + 以来
 
 ---
 
+## 7. 〜たまま（保持着……的状态）||7. 〜たまま (Leaving Something As It Is / With … Still …)
+
+### 接続||Conjugation
+
+:::zh
+- 动词た形 + まま：つけた**まま**、開けた**まま**、座った**まま**
+- 名词 + の + まま：昔の**まま**、子供の**まま**；指示词：その**まま**、この**まま**
+- 句型：「〜たまま、〜する」（保持那个状态做另一件事）／「〜たままだ」（一直是那个状态）／「〜たままにする」（故意保持不动）
+:::
+
+:::en
+- Verb た-form + まま: つけた**まま**, 開けた**まま**, 座った**まま**
+- Noun + の + まま: 昔の**まま**, 子供の**まま**; demonstratives: その**まま**, この**まま**
+- Patterns: 「〜たまま、〜する」 (do something else with that state unchanged) / 「〜たままだ」 (it has stayed that way) / 「〜たままにする」 (leave it that way on purpose)
+:::
+
+### 含义||Meaning
+
+:::zh
+一个动作完成后留下的状态**没有改变**，就接着做了另一件事，或者一直保持着。常带"本来应该改变却没变"的语感——开着灯就睡了、穿着鞋就进屋了、借了书一直没还。前后两部分通常是同一个人。
+:::
+
+:::en
+The state left by a finished action **stays unchanged** while something else happens, or it simply stays that way. It often implies the state should have changed but didn't — sleeping with the light on, walking in with shoes on, a borrowed book never returned. Both halves usually have the same person.
+:::
+
+### 例句||Example Sentences
+
+:::zh
+1. 疲れていて、電気をつけた**まま**寝てしまった。（太累了，开着灯就睡着了。）
+2. 靴を履いた**まま**、部屋に入らないでください。（请不要穿着鞋进房间。）
+3. 窓を開けた**まま**出かけたので、帰ったら部屋が雨でぬれていた。（窗户开着就出门了，回来时房间被雨淋湿了。）
+4. 半年前に友達に借りた本が、まだ読まないで机の上に置いた**まま**だ。（半年前向朋友借的书，到现在还没读，一直放在桌子上。）
+:::
+
+:::en
+1. 疲れていて、電気をつけた**まま**寝てしまった。(I was so tired I fell asleep with the light on.)
+2. 靴を履いた**まま**、部屋に入らないでください。(Please don't come into the room with your shoes on.)
+3. 窓を開けた**まま**出かけたので、帰ったら部屋が雨でぬれていた。(I went out leaving the window open, and when I got back the room was wet from the rain.)
+4. 半年前に友達に借りた本が、まだ読まないで机の上に置いた**まま**だ。(The book I borrowed from a friend six months ago is still sitting on my desk, unread.)
+:::
+
+### たまま vs ている・てある・ながら||たまま vs ている・てある・ながら
+
+:::zh
+| | 〜たまま | 〜ている／〜てある（本课第2、3点） | 〜ながら（N5第16课第4点） |
+|---|---|---|---|
+| 说的是 | 状态没变，**同时**做另一件事 | 只描述现在的状态 | 两个**动作**同时进行 |
+| 例 | テレビをつけた**まま**寝た（开着电视睡了） | テレビがついている（电视开着） | テレビを見**ながら**食べる（边看电视边吃） |
+
+> 「ながら」前面是正在做的动作；「たまま」前面是已经做完、状态留着的动作。❌ 靴を履きながら部屋に入る（＝一边穿鞋一边进屋）→ ✅ 靴を履いたまま部屋に入る。
+:::
+
+:::en
+| | 〜たまま | 〜ている / 〜てある (points 2, 3 of this lesson) | 〜ながら (N5 Lesson 16, point 4) |
+|---|---|---|---|
+| What it says | A state stays unchanged **while** something else happens | Only describes the current state | Two **actions** at the same time |
+| Ex. | テレビをつけた**まま**寝た (slept with the TV on) | テレビがついている (the TV is on) | テレビを見**ながら**食べる (eat while watching TV) |
+
+> 「ながら」 follows an action in progress; 「たまま」 follows a finished action whose result remains. ❌ 靴を履きながら部屋に入る (= putting your shoes on as you walk in) → ✅ 靴を履いたまま部屋に入る.
+:::
+
+---
+
 ## 今日练习||Today's Practice
 
 ### A. 选择てしまう/ておく/てある||A. Choose てしまう / ておく / てある

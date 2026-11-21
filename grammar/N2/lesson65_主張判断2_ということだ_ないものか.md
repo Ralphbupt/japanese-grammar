@@ -91,12 +91,35 @@ Relays information heard from others or the news. Equivalent to 「〜そうだ 
 6. 来年から消費税が上がる**ということだ**。(They say the consumption tax will go up starting next year.)
 :::
 
+### 用法：〜とのことだ||Usage: 〜とのことだ
+:::zh
+- 普通形 + とのことだ / とのことです
+
+「とのことだ」只有"据说……""（某人）说……"这一个意思，是「ということだ」（传闻）更书面、更礼貌的说法，没有"也就是说"的用法。常用于转达别人的话或留言，尤其是电话、邮件、书信：「〇〇さんから電話があり、〜とのことです」。前面可以直接放原话的意思，包括请求、希望：「〜てほしいとのことだ」。
+
+7. 先ほど部長から連絡があり、会議には少し遅れる**とのことです**。（刚才部长联系说，会议他会稍微晚到一点。）
+8. 天気予報によると、午後から雨が強くなる**とのことだ**。（据天气预报说，下午起雨会变大。）
+9. 先方は、契約内容をもう一度確認したい**とのことでした**。（对方说想再确认一次合同内容。）
+10. 山田さんからの伝言で、資料は来週までに送ってほしい**とのことです**。（山田先生留言说，希望资料下周之前寄过去。）
+:::
+:::en
+- Plain form + とのことだ / とのことです
+
+「とのことだ」 has only the hearsay meaning, "I'm told…," "(someone) says…." It is a more formal, more polite version of hearsay 「ということだ」 and never means "that means." It is typically used to pass on someone's words or message, especially by phone, email or letter: 「〇〇さんから電話があり、〜とのことです」. The content of what was said, including requests and wishes, goes right in front: 「〜てほしいとのことだ」.
+
+7. 先ほど部長から連絡があり、会議には少し遅れる**とのことです**。(The department head just got in touch — he'll be a little late for the meeting.)
+8. 天気予報によると、午後から雨が強くなる**とのことだ**。(According to the forecast, the rain will get heavier from the afternoon.)
+9. 先方は、契約内容をもう一度確認したい**とのことでした**。(The other party said they would like to check the contract terms once more.)
+10. 山田さんからの伝言で、資料は来週までに送ってほしい**とのことです**。(Mr. Yamada left a message asking for the documents to be sent by next week.)
+:::
+
 ### 辨析||Comparison
 :::zh
 | 表达 | 含义 | 区别 |
 |------|------|------|
 | ということだ（结论） | 也就是说 | 换言之、总结 |
 | ということだ（传闻） | 据说 | 转述听来的信息 |
+| とのことだ | 据说 / （某人）说 | 只表传闻；更书面、礼貌，常用于转达留言 |
 | というものだ | 那才叫/本来就 | 表示本质、道理 |
 | というわけだ | 所以才/难怪 | 强调因果关系的结论 |
 
@@ -105,12 +128,14 @@ Relays information heard from others or the news. Equivalent to 「〜そうだ 
 - 前面有「〜によると」「〜の話では」→ **传闻**
 - 前文是推理过程 → **结论**
 - 前文是信息来源 → **传闻**
+- 「とのことだ」只有**传闻**一个意思
 :::
 :::en
 | Expression | Meaning | Difference |
 |------|------|------|
 | ということだ (conclusion) | that means | Paraphrase; summary |
 | ということだ (hearsay) | I heard that | Relaying heard information |
+| とのことだ | I'm told / (someone) says | Hearsay only; more formal and polite, used to pass on messages |
 | というものだ | that's what… is / naturally | Expresses essence or truth |
 | というわけだ | so that's why / no wonder | Emphasizes causal conclusion |
 
@@ -119,6 +144,7 @@ Relays information heard from others or the news. Equivalent to 「〜そうだ 
 - Preceded by 「〜によると」「〜の話では」 → **hearsay**
 - Preceding text is a reasoning process → **conclusion**
 - Preceding text is an information source → **hearsay**
+- 「とのことだ」 is **hearsay** only
 :::
 
 ---
@@ -367,6 +393,76 @@ Relays information heard from others or the news. Equivalent to 「〜そうだ 
 > 「返事が来ないということは、興味がないということだ」 = no reply means no interest (drawing a conclusion)  
 > 「高ければいいというものではない」 = expensive doesn't automatically mean good (rejecting a common belief)  
 > 「高いものが嫌いなわけではない」 = it's not that I dislike expensive things (denying an inference)
+:::
+
+---
+
+## 5. 〜とされている（被认为…… / 被定为……）||5. 〜とされている (Is considered… / Is said to be…)
+
+### 接続||Conjugation
+:::zh
+- 普通形 + とされている / とされる
+- 名詞・な形容詞（だ）+ とされている
+
+※ 「とされる」是「とする」（认为、定为）的被动形。名词和な形容词后的「だ」常省略：「有効とされている」「重要だとされている」都可以。  
+※ 过去式「とされていた」常暗示"以前这么认为，现在看法变了"。
+:::
+:::en
+- Plain form + とされている / とされる
+- Noun / na-adjective（だ）+ とされている
+
+※ 「とされる」 is the passive of 「とする」 (to regard as, to set as). The 「だ」 after a noun or na-adjective is often dropped: both 「有効とされている」 and 「重要だとされている」 work.  
+※ The past 「とされていた」 often hints "that's what was believed — the view has since changed."
+:::
+
+### 含义||Meaning
+:::zh
+"一般认为……""被视为……""被定为……"。表示社会上、专家之间或传统上普遍接受的看法，或者规则上的规定。语气客观，说话人不表态，新闻、论文、说明文中非常常见。
+:::
+:::en
+"Is considered…," "is regarded as…," "is designated as…." It states a view widely held in society, among experts or by tradition, or a rule laid down. Objective — the speaker takes no stance — and very common in news, papers and explanatory writing.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 適度な運動は、ストレスの解消に効果がある**とされている**。（一般认为适度运动对缓解压力有效。）
+2. この寺の本堂は、日本で最も古い木造建築の一つ**とされている**。（这座寺庙的正殿被认为是日本最古老的木结构建筑之一。）
+3. 大きな地震の後は、少なくとも一週間は余震に注意が必要だ**とされている**。（一般认为大地震后至少一周内要注意余震。）
+4. かつては体に悪い**とされていた**食品が、最近では見直されている。（以前被认为对身体不好的食品，最近得到了重新评价。）
+:::
+:::en
+1. 適度な運動は、ストレスの解消に効果がある**とされている**。(Moderate exercise is considered effective for relieving stress.)
+2. この寺の本堂は、日本で最も古い木造建築の一つ**とされている**。(This temple's main hall is regarded as one of the oldest wooden buildings in Japan.)
+3. 大きな地震の後は、少なくとも一週間は余震に注意が必要だ**とされている**。(After a big earthquake, it is held that you need to watch for aftershocks for at least a week.)
+4. かつては体に悪い**とされていた**食品が、最近では見直されている。(Foods once considered bad for you are now being reassessed.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| とされている | 一般认为…… / 被定为…… | 社会、专家、规定层面的公认看法；书面、客观 |
+| と言われている | 据说…… / 人们说…… | 更口语，传说、俗话也可以 |
+| ということだ（传闻） | 据说…… | 本课第1点，转述某一次听到的具体消息 |
+| とのことだ | 据说…… | 本课第1点，转达别人的话、留言 |
+| に違いない | 一定是…… | 说话人自己的断定，不是社会公认 |
+
+> 「運動は健康にいいとされている」= 一般认为运动有益健康（公认看法）  
+> 「この湖には竜がいると言われている」= 传说这个湖里有龙（传说）  
+> 「部長は明日休むとのことだ」= 听说部长明天休息（转达消息）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| とされている | is considered / is designated | A view accepted by society, experts or rules; formal, objective |
+| と言われている | it is said | More spoken; also for legends and sayings |
+| ということだ (hearsay) | I hear that… | Point 1 of this lesson; relays one specific piece of news |
+| とのことだ | I'm told that… | Point 1 of this lesson; passes on someone's words or message |
+| に違いない | must be… | The speaker's own conclusion, not a common view |
+
+> 「運動は健康にいいとされている」 = exercise is considered good for health (accepted view)  
+> 「この湖には竜がいると言われている」 = legend has it there is a dragon in this lake (legend)  
+> 「部長は明日休むとのことだ」 = I'm told the department head is off tomorrow (passing on a message)
 :::
 
 ---

@@ -517,6 +517,172 @@ Restrictions:
 
 ---
 
+## 7. 〜じゃないか／〜ではないか（……吧；这不是……吗）||7. 〜じゃないか／〜ではないか (Let's…! / Why, it's…! / Didn't I…?)
+
+### 接続||Conjugation
+:::zh
+- ① 号召：動詞意向形 + じゃないか／ではないか（「やろうではないか」）
+- ② 发现、惊讶：名詞／普通形 + じゃないか（「なんだ、田中さんじゃないか」）
+- ③ 责备、确认：普通形 + じゃないか（「だから言ったじゃないか」）
+
+※ 「じゃないか」是口语，「ではないか」是书面、演讲的说法；女性口语也常说「じゃない」。な形容词和名词的现在时直接接：「静かじゃないか」「雨じゃないか」。
+:::
+:::en
+- ① Call to action: verb volitional form + じゃないか／ではないか (「やろうではないか」)
+- ② Discovery, surprise: noun / plain form + じゃないか (「なんだ、田中さんじゃないか」)
+- ③ Reproach, reminder: plain form + じゃないか (「だから言ったじゃないか」)
+
+※ 「じゃないか」 is spoken, 「ではないか」 belongs to writing and speeches; in casual speech 「じゃない」 is also common. Non-past な-adjectives and nouns attach directly: 「静かじゃないか」, 「雨じゃないか」.
+:::
+
+### 含义||Meaning
+:::zh
+形式上是否定疑问，实际上是说话人的强烈主张，句末语调下降，不是在提问。
+
+① 号召：「〜（よ）うではないか」＝"让我们……吧"，向听众、全体成员发出号召，多见于演讲、社论、口号：「共に未来を築こうではないか」。
+② 发现、惊讶：突然发现意料之外的事："这不是……吗！""原来……嘛"。
+③ 责备、确认：提醒对方本来知道的事，带责怪："你不是……了吗""……不是挺好的嘛"。
+
+限制：
+- ①的号召对象包括说话人自己，是"我们一起"，不能用于单纯命令对方：❌「（部下に）早く報告しようではないか」。
+- 都不是真正的提问，不能用「はい／いいえ」回答。
+- 正式场合说「〜ではありませんか」：「皆さん、一緒に考えようではありませんか」。
+:::
+:::en
+It looks like a negative question but is really a strong assertion, said with falling intonation — not a question.
+
+① Call to action: 「〜（よ）うではないか」 = "let us…!", urging an audience or a whole group; typical of speeches, editorials and slogans: 「共に未来を築こうではないか」.
+② Discovery, surprise: noticing something unexpected — "why, it's…!", "so it's…!".
+③ Reproach, reminder: pointing out something the listener already knew, with blame — "didn't I tell you…?", "isn't that fine?".
+
+Restrictions:
+- In ① the speaker is part of the group ("let's all…"); it can't be a plain order to someone else: ❌ 「（部下に）早く報告しようではないか」.
+- None of these is a real question; they aren't answered with はい／いいえ.
+- In formal settings it becomes 「〜ではありませんか」: 「皆さん、一緒に考えようではありませんか」.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 豊かな自然を次の世代に残すために、今こそ行動を起こそう**ではないか**。（为了把丰富的自然留给下一代，现在就让我们行动起来吧。）
+2. 失敗を恐れていては何も始まらない。とにかくやってみよう**じゃないか**。（害怕失败的话什么都开始不了。总之先试试看吧。）
+3. 誰かと思えば、高校の同級生の佐藤君**じゃないか**。何年ぶりだろう。（我还以为是谁呢，这不是高中同学佐藤嘛。都多少年没见了。）
+4. 締め切りは今日だと何度も言った**じゃないか**。どうして今になって間に合わないなんて言うんだ。（我不是跟你说了好几次截止日期就是今天吗？怎么到现在才说赶不上？）
+:::
+:::en
+1. 豊かな自然を次の世代に残すために、今こそ行動を起こそう**ではないか**。(To leave our rich natural world to the next generation, let us act — and let us act now.)
+2. 失敗を恐れていては何も始まらない。とにかくやってみよう**じゃないか**。(Nothing ever starts if you're afraid of failing. Come on, let's just give it a try.)
+3. 誰かと思えば、高校の同級生の佐藤君**じゃないか**。何年ぶりだろう。(I wondered who it was — why, it's Sato from high school! How many years has it been?)
+4. 締め切りは今日だと何度も言った**じゃないか**。どうして今になって間に合わないなんて言うんだ。(Didn't I tell you again and again that the deadline was today? Why are you only now saying you won't make it?)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| （よ）うではないか | 让我们……吧 | 向群体号召，书面、演讲（本点①） |
+| （よ）う／ましょう | ……吧 | 普通的邀请、提议，没有演讲口气 |
+| のではないか | 是不是……呢；恐怕…… | 委婉的推测或主张，句中有「の」：「彼は来ないのではないか」 |
+| ないか | 要不要……？ | 真正的邀请提问，接ない形：「一緒に行かないか」 |
+
+> 「一緒に頑張ろうではないか」= 让我们一起努力吧（号召）  
+> 「彼は知っていたのではないか」= 他是不是早就知道了（推测）  
+> 「彼は知っていたじゃないか」= 他明明就知道嘛（责备、提醒）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| （よ）うではないか | let us…! | a call to a group; writing and speeches (use ① here) |
+| （よ）う／ましょう | let's… | an ordinary invitation or suggestion, no rhetorical tone |
+| のではないか | isn't it that…? / probably… | a soft guess or claim, with 「の」: 「彼は来ないのではないか」 |
+| ないか | won't you…? | a real invitation, after the ない form: 「一緒に行かないか」 |
+
+> 「一緒に頑張ろうではないか」= let us work hard together (a call)  
+> 「彼は知っていたのではないか」= perhaps he knew all along (a guess)  
+> 「彼は知っていたじゃないか」= but he knew! (reproach, reminder)
+:::
+
+---
+
+## 8. 〜にもほどがある（……也该有个限度；太过分了）||8. 〜にもほどがある (There's a limit to… / Too… by far)
+
+### 接続||Conjugation
+:::zh
+- 名詞 + にもほどがある（「冗談にもほどがある」）
+- な形容詞語幹 + にもほどがある（「失礼にもほどがある」）
+- い形容詞辞書形 + にもほどがある（「ずうずうしいにもほどがある」）
+- 動詞辞書形 + にもほどがある（「人をばかにするにもほどがある」）
+
+※ 「ほど」写作汉字「程」也可以：「冗談にも程がある」。
+:::
+:::en
+- Noun + にもほどがある (「冗談にもほどがある」)
+- な-adjective stem + にもほどがある (「失礼にもほどがある」)
+- い-adjective dictionary form + にもほどがある (「ずうずうしいにもほどがある」)
+- Verb dictionary form + にもほどがある (「人をばかにするにもほどがある」)
+
+※ 「ほど」 may also be written 「程」: 「冗談にも程がある」.
+:::
+
+### 含义||Meaning
+:::zh
+"……也该有个限度""……得太离谱了"。字面是"……也有个分寸"，意思是对方的言行已经远远超出了常识允许的范围，表达说话人的气愤、震惊或强烈的批评。
+
+限制：
+- 只用于负面、批评，不用于称赞：❌「美しいにもほどがある」（夸张的网络用法除外，考试不算）。
+- 批评的多是别人（或自己）的言行、态度，而不是客观事物的性质：❌「この山は高いにもほどがある」。
+- 常和「いくら〜でも」「あまりに」一起出现：「いくら忙しいといっても、遅刻するにもほどがある」。
+- 几乎只用于句末，口语、书面都可以。
+:::
+:::en
+"There's a limit to…", "that's going way too far". Literally "even … has its limits": what someone says or does has gone far beyond what common sense allows, and the speaker is angry, shocked or sharply critical.
+
+Restrictions:
+- Only for criticism, never praise: ❌ 「美しいにもほどがある」 (jokey internet use aside; it doesn't count in the exam).
+- It criticises someone's (or one's own) words, actions or attitude, not the nature of things: ❌ 「この山は高いにもほどがある」.
+- Often with 「いくら〜でも」 or 「あまりに」: 「いくら忙しいといっても、遅刻するにもほどがある」.
+- Almost always at the end of the sentence; fine in speech and writing.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 約束の時間に二時間も遅れて謝りもしないなんて、失礼**にもほどがある**。（迟到整整两个小时还连句道歉都没有，太失礼了。）
+2. 一度も練習に来ないのに試合に出せだなんて、わがまま**にもほどがある**。（一次都不来练习却要求让他上场比赛，任性也该有个限度。）
+3. 客から預かった書類を電車に置き忘れるとは、不注意**にもほどがある**。（把客户交给的文件忘在电车上，粗心也太离谱了。）
+4. 同じ商品を三倍の値段で売りつけるなんて、人をばかにする**にもほどがある**。（同样的商品卖三倍的价钱，也太把人当傻子了。）
+:::
+:::en
+1. 約束の時間に二時間も遅れて謝りもしないなんて、失礼**にもほどがある**。(Turning up two hours late and not even apologising — that's beyond rude.)
+2. 一度も練習に来ないのに試合に出せだなんて、わがまま**にもほどがある**。(He never once comes to practice and then demands to play in the match — talk about selfish.)
+3. 客から預かった書類を電車に置き忘れるとは、不注意**にもほどがある**。(Leaving a client's documents on the train — that's carelessness beyond all limits.)
+4. 同じ商品を三倍の値段で売りつけるなんて、人をばかにする**にもほどがある**。(Selling the same product at three times the price — that's taking people for complete fools.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| にもほどがある | ……也该有个限度 | 批评对方言行越界，带气愤；接名词、形容词、动词辞书形 |
+| 極まりない | ……至极 | 书面、冷静的严厉评价，多接な形容词：「無責任極まりない」（本课第2点） |
+| といったらない | ……得无法形容 | 程度高，可褒可贬：「うれしいといったらない」（本课第3点） |
+
+> 「失礼にもほどがある」= 太失礼了，也该有个分寸（当面发火的口气）  
+> 「失礼極まりない態度」= 极其失礼的态度（书面评价，可直接修饰名词）  
+> 「悔しいといったらない」= 懊恼得无法形容（说自己的感情）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| にもほどがある | there's a limit to… | criticises someone's words or actions for going too far, with anger; after nouns, adjectives, verb dictionary form |
+| 極まりない | utterly… | a cool, formal, harsh verdict, mostly after な-adjectives: 「無責任極まりない」 (point 2 of this lesson) |
+| といったらない | indescribably… | a high degree, good or bad: 「うれしいといったらない」 (point 3 of this lesson) |
+
+> 「失礼にもほどがある」= that's beyond rude, there are limits (an angry reaction)  
+> 「失礼極まりない態度」= an utterly rude attitude (a written verdict; can modify a noun directly)  
+> 「悔しいといったらない」= more frustrating than words can say (one's own feeling)
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

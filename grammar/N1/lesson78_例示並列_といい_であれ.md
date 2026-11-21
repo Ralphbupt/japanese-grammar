@@ -483,6 +483,88 @@ Restrictions:
 
 ---
 
+## 7. 〜といった（……之类的；……等）||7. 〜といった (Such as… / … and the like)
+
+### 接続||Conjugation
+:::zh
+- 名詞A（、名詞B）+ といった + 名詞（总称）
+- 名詞A + や + 名詞B + といった + 名詞
+- 数量・程度 + といったところだ（"顶多也就……"，见含义②）
+
+※ 后面接的名词是前面例子所属的总称：「京都や奈良といった古都」「寿司、天ぷらといった和食」。
+:::
+:::en
+- Noun A (, noun B) + といった + noun (the category)
+- Noun A + や + noun B + といった + noun
+- Amount / degree + といったところだ ("about…, no more than…", see meaning ②)
+
+※ The noun after it is the category the examples belong to: 「京都や奈良といった古都」, 「寿司、天ぷらといった和食」.
+:::
+
+### 含义||Meaning
+:::zh
+① "……之类的（总称）""像……这样的……"。举出一两个具体例子，后面用总称把它们归类，暗示同类的还有别的。比「など」更书面，新闻、论文、说明文里很常见。
+
+② 「〜といったところだ」："顶多也就……""大致……的程度"。说明数量、程度不算高，或给出一个大概的估计：「参加者は30人といったところだ」。
+
+限制：
+- ①的后面必须有名词（总称），不能像「など」那样直接接助词或句末：❌「京都や奈良といったに行った」→ ⭕「京都や奈良といった町に行った」。
+- 例子和总称要是同一类：「パソコンやスマホといった機器」可以，「パソコンや電車といった機器」不行。
+- ②多接数量、程度的词，带有"不算多、不算好"的语感。
+:::
+:::en
+① "Such as…", "… and the like". One or two concrete examples are named and then grouped under a category noun, implying there are others of the same kind. More formal than 「など」, common in news, papers and explanatory writing.
+
+② 「〜といったところだ」: "about…, no more than…". It says an amount or degree isn't high, or gives a rough estimate: 「参加者は30人といったところだ」.
+
+Restrictions:
+- In ① a category noun must follow; unlike 「など」 it can't go straight into a particle or end the sentence: ❌ 「京都や奈良といったに行った」 → ⭕ 「京都や奈良といった町に行った」.
+- The examples and the category must match: 「パソコンやスマホといった機器」 works, 「パソコンや電車といった機器」 doesn't.
+- ② mostly follows amounts or degrees and implies "not much, not great".
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 地震や台風**といった**自然災害に備えて、各家庭で非常食を用意しておくべきだ。（为了防备地震、台风之类的自然灾害，每个家庭都应该预先准备好应急食品。）
+2. この講座では、敬語やビジネスメール**といった**、社会人に必要な日本語を学ぶことができる。（这个讲座可以学到敬语、商务邮件这类社会人士需要的日语。）
+3. 少子化や高齢化**といった**問題は、一つの省庁だけでは解決できない。（少子化、老龄化之类的问题，单靠一个部门是解决不了的。）
+4. 新しい店の売れ行きは、まだ一日五十個**といったところだ**。（新店的销量目前顶多也就一天五十个。）
+:::
+:::en
+1. 地震や台風**といった**自然災害に備えて、各家庭で非常食を用意しておくべきだ。(Every household should keep emergency food in case of natural disasters such as earthquakes and typhoons.)
+2. この講座では、敬語やビジネスメール**といった**、社会人に必要な日本語を学ぶことができる。(This course teaches the Japanese working adults need, such as keigo and business emails.)
+3. 少子化や高齢化**といった**問題は、一つの省庁だけでは解決できない。(Problems like the falling birth rate and the ageing population can't be solved by a single ministry.)
+4. 新しい店の売れ行きは、まだ一日五十個**といったところだ**。(Sales at the new shop are still only about fifty a day.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| といった | ……之类的（总称） | 书面；后面必须接总称名词 |
+| など | ……等 | 最通用，可以直接接助词或结句：「京都などに行った」（N3第47课） |
+| といい〜といい | 无论是……还是……（都） | 举两个方面后接说话人的评价，不是列举归类（本课第1点） |
+| だの〜だの | 又是……又是…… | 不满地罗列（本课第5点） |
+
+> 「京都や奈良といった古都を訪ねた」= 拜访了京都、奈良这样的古都（列举后归类）  
+> 「京都や奈良などを訪ねた」= 去了京都、奈良等地（可以直接接「を」）  
+> 「味といい値段といい、申し分ない」= 无论味道还是价格都无可挑剔（评价）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| といった | such as… (category) | formal; a category noun must follow |
+| など | … and so on | the most general; can go straight into a particle or end the sentence: 「京都などに行った」 (N3 Lesson 47) |
+| といい〜といい | whether A or B, (both)… | two aspects followed by the speaker's verdict, not listing and grouping (point 1 of this lesson) |
+| だの〜だの | … and … and so on | listing with a complaint (point 5 of this lesson) |
+
+> 「京都や奈良といった古都を訪ねた」= visited old capitals such as Kyoto and Nara (listed, then grouped)  
+> 「京都や奈良などを訪ねた」= visited Kyoto, Nara and so on (「を」 can follow directly)  
+> 「味といい値段といい、申し分ない」= the taste, the price — nothing to complain about (a verdict)
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

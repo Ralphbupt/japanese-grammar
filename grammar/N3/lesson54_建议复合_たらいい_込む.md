@@ -29,6 +29,8 @@ This lesson covers various "suggestion/advice" expressions and two high-frequenc
 | 後悔 | こうかい | 后悔（名、可作动词）——「後悔しても遅い」后悔也晚了；「後悔先に立たず」后悔莫及//(n, suru-verb) regret — 「後悔しても遅い」 it's too late for regrets; 「後悔先に立たず」 no use crying over spilt milk |
 | 締め切り | しめきり | 截止日期（名）——「締め切りに間に合う」赶上截止日期；「締め切りを過ぎる」过了截止日期//(n) deadline — 「締め切りに間に合う」 to meet the deadline; 「締め切りを過ぎる」 to miss the deadline |
 | 落ち着く | おちつく | 冷静；安定下来（自动词）——「気持ちが落ち着く」心情平静下来；「落ち着いた人」沉稳的人//(v, intrans.) to calm down; to settle down — 「気持ちが落ち着く」 to calm down; 「落ち着いた人」 a calm, composed person |
+| 指摘 | してき | 指出（名、可作动词）——多指出错误、问题；「ミスを指摘する」指出错误；「指摘を受ける」被指出//(n, suru-verb) pointing out (a mistake or problem) — 「ミスを指摘する」 to point out a mistake; 「指摘を受ける」 to have something pointed out |
+| ぎっしり | ぎっしり | 满满地；塞得紧紧的（副）——东西或日程塞满没有空隙；「ぎっしり詰まる」塞得满满的；「予定がぎっしりだ」日程排得满满的//(adv) packed tight; crammed — no gaps left; 「ぎっしり詰まる」 to be packed full; 「予定がぎっしりだ」 one's schedule is packed |
 
 ---
 
@@ -336,6 +338,122 @@ A compound verb suffix with two core meanings: ① physically "entering inside" 
 | 〜出す | Start doing / come out | 走り出す、思い出す |
 
 > 「〜込む」「〜合う」「〜出す」 are the three most important N3 compound verb suffixes — master them.
+:::
+
+---
+
+## 7. 〜てみると / 〜てみたら（试着……一看，发现……）||7. 〜てみると / 〜てみたら (When I tried…, I found… / On…ing)
+
+### 接続||Conjugation
+:::zh
+- 動詞て形 + みると／みたら + 发现的事实（多为过去形）
+:::
+:::en
+- Verb te-form + みると／みたら + what one found (usually past tense)
+:::
+
+### 含义||Meaning
+:::zh
+实际做了某事之后，**才发现、才知道**某个情况，常常和预想不一样。「てみる」（试着做）＋表示发现的「と／たら」（N5 第9课）。后句是发现的结果，不能是说话人的意志或请求。
+:::
+:::en
+After actually doing something, one **finds out** how things are — often not what one expected. It is 「てみる」 (try doing) + the discovery use of 「と／たら」 (N5 lesson 9). The second half is what was found, never the speaker's own intention or a request.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 辛そうに見えたが、食べ**てみたら**、思ったより辛くなかった。（看起来很辣，吃了一下，发现没想象的辣。）
+2. 実際に住ん**でみると**、この町は買い物にとても便利だった。（实际住下来才发现，这个小镇买东西非常方便。）
+3. 重い箱を開け**てみたら**、中には古い本がぎっしり入っていた。（打开那个很重的箱子一看，里面塞满了旧书。）
+4. 受付で聞い**てみると**、説明会は来週に変更になっていた。（到前台问了才知道，说明会改到下周了。）
+:::
+:::en
+1. 辛そうに見えたが、食べ**てみたら**、思ったより辛くなかった。(It looked spicy, but when I tried it, it wasn't as hot as I'd thought.)
+2. 実際に住ん**でみると**、この町は買い物にとても便利だった。(Once I actually lived here, I found this town very convenient for shopping.)
+3. 重い箱を開け**てみたら**、中には古い本がぎっしり入っていた。(When I opened the heavy box, I found it packed with old books.)
+4. 受付で聞い**てみると**、説明会は来週に変更になっていた。(When I asked at reception, it turned out the briefing had been moved to next week.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| 〜てみる（N4 第30课第5点） | 试着做 | 只说"试一试"，后面没有发现 |
+| 〜てみると／〜てみたら | 试了一下，发现…… | 后句是发现的事实（多为过去形） |
+| 〜たら（发现，N5 第9课） | ……一看，发现…… | 也表示发现，但没有"特意试一试"的意思 |
+| 〜てごらん（本课第4点） | 你试试看 | 对晚辈的轻松命令 |
+
+> 「ドアを開けたら、猫がいた」＝一开门，有只猫（偶然）  
+> 「箱を開けてみたら、本が入っていた」＝特意打开看看，发现是书（为了确认而试）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| 〜てみる (N4 lesson 30, point 5) | try doing | Just "give it a try"; no discovery follows |
+| 〜てみると／〜てみたら | tried it, and found… | The second half is what was found (usually past) |
+| 〜たら (discovery, N5 lesson 9) | when I…, I found… | Also discovery, but without the idea of deliberately trying |
+| 〜てごらん (point 4) | go on, try it | A soft command to someone younger |
+
+> 「ドアを開けたら、猫がいた」 = I opened the door and there was a cat (by chance)  
+> 「箱を開けてみたら、本が入っていた」 = I opened the box to see, and it held books (tried in order to check)
+:::
+
+---
+
+## 8. 〜直す（重新……/ 再……一遍）||8. 〜直す (Redo / Do… over again)
+
+### 接続||Conjugation
+:::zh
+- 動詞ます形（去掉ます）+ 直す（按五段动词变化：直して、直した）
+- 名词形：〜直し（やり直し、書き直し）
+:::
+:::en
+- Verb ます-stem (drop ます) + 直す (conjugates as a godan verb: 直して, 直した)
+- Noun form: 〜直し (やり直し, 書き直し)
+:::
+
+### 含义||Meaning
+:::zh
+因为第一次做得不好、有错或没成功，**重新再做一遍**，目的是改好。常见：書き直す（重写）、やり直す（重做）、考え直す（重新考虑）、かけ直す（回拨电话）、見直す（重新检查）。
+:::
+:::en
+**Do something again** because the first attempt was poor, wrong or didn't work — in order to put it right. Common ones: 書き直す (rewrite), やり直す (redo), 考え直す (reconsider), かけ直す (call back), 見直す (look over again).
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 部長にミスを指摘されたので、報告書を書き**直した**。（被部长指出了错误，所以重写了报告。）
+2. 計算が合わないから、最初からやり**直そう**。（计算对不上，从头重做吧。）
+3. 今、会議中なので、後でこちらからかけ**直します**。（现在在开会，稍后我这边再打回给您。）
+4. 一度は断られたが、もう一度考え**直して**もらえないか頼んでみた。（虽然被拒绝过一次，还是试着请对方重新考虑一下。）
+:::
+:::en
+1. 部長にミスを指摘されたので、報告書を書き**直した**。(My manager pointed out mistakes, so I rewrote the report.)
+2. 計算が合わないから、最初からやり**直そう**。(The figures don't add up, so let's start again from the beginning.)
+3. 今、会議中なので、後でこちらからかけ**直します**。(I'm in a meeting right now, so I'll call you back later.)
+4. 一度は断られたが、もう一度考え**直して**もらえないか頼んでみた。(I was turned down once, but I asked whether they would reconsider.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| 〜直す | 重新做（为了改好） | 内容会改动：書き直す＝改了再写 |
+| もう一度〜 | 再做一次 | 只是重复，不一定要改正 |
+| 〜込む（本课第5点） | 深入、进入 | 同为复合动词后缀，但表示"进入/彻底"，不表示重做 |
+
+> 「手紙を書き直す」＝（写得不好）重写一封  
+> 「手紙をもう一度読む」＝再读一遍（只是重复）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| 〜直す | do over (to fix it) | The content changes: 書き直す = rewrite with corrections |
+| もう一度〜 | do once more | Just repetition; not necessarily fixing anything |
+| 〜込む (point 5) | into, thoroughly | Also a compound-verb suffix, but means "into / thoroughly," not "redo" |
+
+> 「手紙を書き直す」 = rewrite the letter (the first one wasn't good)  
+> 「手紙をもう一度読む」 = read the letter again (just repeating)
 :::
 
 ---

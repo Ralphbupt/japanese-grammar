@@ -31,10 +31,11 @@
 | 用意 | ようい | 准备（名、可作动词）——多指准备具体东西，「準備」更广；「資料を用意する」准备资料；「用意ができる」准备好了//(n, suru-verb) preparation; getting (something) ready — concrete things like documents or meals; 「準備」 is broader; 「資料を用意する」 to prepare the documents; 「用意ができる」 to be ready |
 | 説明 | せつめい | 说明；解释（名、可作动词）——「詳しく説明する」详细说明；「説明書」说明书//(n, suru-verb) explanation — 「詳しく説明する」 to explain in detail; 「説明書」 an instruction manual |
 | 案内 | あんない | 引导；带路；介绍（名、可作动词）——「ご案内します」我带您去；「案内所」问讯处//(n, suru-verb) guidance; showing around; information — 「ご案内します」 let me show you the way; 「案内所」 an information desk |
+| 承る | うけたまわる | 接受；听取；承办（他动词、谦让语）——「受ける」「引き受ける」「聞く」的谦让语，店铺、窗口接订单、预约、留言时常用；「ご注文を承ります」我来为您点单；「ご予約を承りました」您的预约已受理//(v, trans., humble) to take (an order); to accept; to hear — humble of 「受ける」/「引き受ける」/「聞く」, used by shops and counters taking orders, bookings and messages; 「ご注文を承ります」 may I take your order?; 「ご予約を承りました」 your reservation has been accepted |
 
 ---
 
-## 1. 謙譲語特殊動詞（必背 10 个）||1. Special Humble Verbs (Top 10)
+## 1. 謙譲語特殊動詞（必背 11 个）||1. Special Humble Verbs (Top 11)
 
 ### 接続||Conjugation
 :::zh
@@ -56,6 +57,7 @@
 | 知っている | ご存じだ | **存じている**（ぞんじている） | 知道 |
 | 会う | （無） | **お目にかかる** | 见面 |
 | 借りる | （無） | **拝借する**（はいしゃくする） | 借 |
+| 受ける・聞く（订单、预约） | （無） | **承る**（うけたまわる） | 接下、受理（→第 6 点） |
 
 **注意**：
 
@@ -83,6 +85,7 @@
 | 知っている | ご存じだ | **存じている** (ぞんじている) | know |
 | 会う | (none) | **お目にかかる** | meet |
 | 借りる | (none) | **拝借する** (はいしゃくする) | borrow |
+| 受ける・聞く (orders, bookings) | (none) | **承る** (うけたまわる) | take on, accept (→ point 6) |
 
 **Notes**:
 - いらっしゃる covers "be/come/go" on the sonkeigo side; on the kenjogo side it splits: motion → 参る, location → おる
@@ -379,6 +382,218 @@ My / my-group's action                  → kenjogo
 - See あなた / お客様 / 部長 / 先生 ("you / customer / boss / teacher") → sonkeigo
 
 **Exception**: inside your company, when speaking to outsiders, 「部長」 is part of your in-group → use kenjogo.
+:::
+
+---
+
+## 5. お〜いただく・ご覧いただく（承蒙您…）||5. お〜いただく・ご覧いただく (receive the favor of your ~ing)
+
+### 接続||Conjugation
+:::zh
+- 和語动词：お ＋ ます形（去ます） ＋ いただく
+- 漢語动词：ご ＋ 漢語 ＋ いただく
+- 有专用尊敬形的动词照用专用形：見る → **ご覧いただく**、来る → **お越しいただく／おいでいただく**（不说「お見いただく」「お来いただく」）
+- 主语是我（我方），做动作的对方用「に」
+
+| 普通说法 | 敬语 | 常用形 |
+|----------|------|--------|
+| 待ってもらう | **お待ちいただく** | お待ちいただけますか（请求） |
+| 利用してもらう | **ご利用いただく** | ご利用いただき、ありがとうございます（致谢） |
+| 見てもらう | **ご覧いただく** | ご覧いただけますでしょうか（请求） |
+| 来てもらう | **お越しいただく** | お越しいただき、ありがとうございました（致谢） |
+
+它就是第 1 点「〜ていただく」的更郑重版：「待っていただく」→「お待ちいただく」，「見ていただく」→「ご覧いただく」。
+:::
+
+:::en
+- Native verbs: お + masu-stem (drop ます) + いただく
+- Sino-Japanese verbs: ご + kanji compound + いただく
+- Verbs with a special honorific keep it: 見る → **ご覧いただく**, 来る → **お越しいただく／おいでいただく** (never 「お見いただく」「お来いただく」)
+- The subject is me (my side); the person doing the action takes 「に」
+
+| Plain | Keigo | Common forms |
+|-------|-------|--------------|
+| 待ってもらう | **お待ちいただく** | お待ちいただけますか (request) |
+| 利用してもらう | **ご利用いただく** | ご利用いただき、ありがとうございます (thanks) |
+| 見てもらう | **ご覧いただく** | ご覧いただけますでしょうか (request) |
+| 来てもらう | **お越しいただく** | お越しいただき、ありがとうございました (thanks) |
+
+It is the more formal version of 「〜ていただく」 from point 1: 「待っていただく」 → 「お待ちいただく」, 「見ていただく」 → 「ご覧いただく」.
+:::
+
+### 含义||Meaning
+:::zh
+字面是"我承蒙您做……"。商务、店铺里有三个固定用法：
+
+| 用法 | 句型 | 场景 |
+|------|------|------|
+| **郑重地请求** | お〜いただけますか／いただけますでしょうか | 会议、窗口："请您看一下……""请您稍等……" |
+| **致谢** | お〜いただき、ありがとうございます | 店铺广播、邮件开头："感谢您的使用／光临" |
+| **告知、规定** | お〜いただきます／いただけます | 告示："可以使用……""需要您……" |
+
+「ご覧いただく」是 N2 真题的常客：会议请对方看资料、电视节目结尾感谢观众、商品说明"请看右图"。
+:::
+
+:::en
+Literally "I receive the favor of your doing ~". Business and shops use it in three set ways:
+
+| Use | Pattern | Situation |
+|-----|---------|-----------|
+| **Formal request** | お〜いただけますか／いただけますでしょうか | meetings, counters: "could you take a look…", "could you wait…" |
+| **Thanks** | お〜いただき、ありがとうございます | shop announcements, opening of emails: "thank you for using / visiting" |
+| **Notices, rules** | お〜いただきます／いただけます | signs: "you may use…", "we ask you to…" |
+
+「ご覧いただく」 is a regular in the N2 exam: asking someone to look at documents in a meeting, a TV show thanking its viewers, "please see the figure on the right" in product information.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. お手元の資料の3ページを**ご覧いただけますでしょうか**。（请您看一下手边资料的第 3 页好吗？）
+2. 担当の者が参りますので、こちらで少々**お待ちいただけますか**。（负责人马上过来，请您在这里稍等一下好吗？）
+3. いつも当店を**ご利用いただき**、ありがとうございます。（感谢您一直以来光顾本店。）
+4. 先日はお忙しいところ、弊社まで**お越しいただき**、ありがとうございました。（前几天百忙之中承蒙您光临敝公司，非常感谢。）
+:::
+
+:::en
+1. お手元の資料の3ページをご覧いただけますでしょうか。(Could you please look at page 3 of the documents in front of you?)
+2. 担当の者が参りますので、こちらで少々お待ちいただけますか。(The person in charge will be right with you — could you wait here a moment?)
+3. いつも当店をご利用いただき、ありがとうございます。(Thank you for always shopping with us.)
+4. 先日はお忙しいところ、弊社までお越しいただき、ありがとうございました。(Thank you for taking the time to visit our office the other day.)
+:::
+
+### 辨析||Comparison
+:::zh
+**「見る」的四种敬语——谁看？**
+
+| 说法 | 种类 | 谁看 | 例 |
+|------|------|------|----|
+| ご覧になる | 尊敬（第 27 课第 2 点） | 对方 | 部長はもうご覧になりましたか。 |
+| ご覧ください | 请求 | 对方 | こちらをご覧ください。 |
+| **ご覧いただく** | 谦让（我承蒙） | 对方看，我受益 | 資料をご覧いただけますか。 |
+| 拝見する | 谦让（第 1 点） | 我 | 資料を拝見しました。 |
+
+**お〜いただく vs お〜くださる（第 27 课第 5 点）**：意思一样，主语相反
+
+```
+お客様が お越しくださいました。         → 客人（が）是主语
+（私どもは）お客様に お越しいただきました。 → 我方是主语，客人用「に」
+```
+
+**常见错误**：
+
+```
+❌ 少々お待ちしていただけますか。   → 「お待ちする」是我等；请对方等要用「お待ちいただく」
+❌ 資料を拝見していただけますか。   → 拝見 是我看；请对方看用「ご覧いただく」
+```
+:::
+
+:::en
+**Four keigo ways to say 「見る」 — who is looking?**
+
+| Form | Type | Who looks | Example |
+|------|------|-----------|---------|
+| ご覧になる | honorific (lesson 27, point 2) | them | 部長はもうご覧になりましたか。 |
+| ご覧ください | request | them | こちらをご覧ください。 |
+| **ご覧いただく** | humble (I receive the favor) | they look, I benefit | 資料をご覧いただけますか。 |
+| 拝見する | humble (point 1) | me | 資料を拝見しました。 |
+
+**お〜いただく vs. お〜くださる (lesson 27, point 5)**: same meaning, opposite subject
+
+```
+お客様が お越しくださいました。         → the guest (が) is the subject
+(私どもは) お客様に お越しいただきました。 → we are the subject, the guest takes 「に」
+```
+
+**Common mistakes**:
+
+```
+❌ 少々お待ちしていただけますか。   → 「お待ちする」 is *me* waiting; asking them to wait is 「お待ちいただく」
+❌ 資料を拝見していただけますか。   → 拝見 is *me* looking; asking them to look is 「ご覧いただく」
+```
+:::
+
+---
+
+## 6. 承る（接受订单、预约、留言）||6. 承る (to take an order, booking or message)
+
+### 接続||Conjugation
+:::zh
+- 承る（うけたまわる）＝「受ける」「引き受ける」「聞く」的谦让语，1 类动词
+- 承ります／承りました／承っております
+- 主语是店员、窗口、公司（我方）；对象是对方的「ご注文」「ご予約」「ご伝言」「ご意見」「ご相談」等
+
+| 场景 | 句子 | 意思 |
+|------|------|------|
+| 餐厅、电话点单 | ご注文を**承ります**。 | 我来为您点单 |
+| 确认预约 | ご予約、確かに**承りました**。 | 您的预约已受理 |
+| 替同事接电话 | ご伝言を**承りましょうか**。 | 要我为您转达留言吗 |
+| 告示、业务范围 | 修理のご相談も**承っております**。 | 也受理维修咨询 |
+:::
+
+:::en
+- 承る (うけたまわる) = humble of 「受ける」「引き受ける」「聞く」, a Type 1 verb
+- 承ります / 承りました / 承っております
+- The subject is the staff, counter or company (your side); the object is the other person's 「ご注文」「ご予約」「ご伝言」「ご意見」「ご相談」 and so on
+
+| Situation | Sentence | Meaning |
+|-----------|----------|---------|
+| restaurant, phone order | ご注文を**承ります**。 | may I take your order? |
+| confirming a booking | ご予約、確かに**承りました**。 | your reservation is confirmed |
+| answering for a colleague | ご伝言を**承りましょうか**。 | shall I take a message? |
+| notices, services offered | 修理のご相談も**承っております**。 | we also handle repair enquiries |
+:::
+
+### 含义||Meaning
+:::zh
+"我方郑重地接下对方的要求"。和「いただく」（收到东西）不同，「承る」接的是**订单、预约、请求、话语**这类"事"。店员说「承りました」＝"您的要求我已经收到，会照办"，比「かしこまりました」多了"受理"的意思。
+:::
+
+:::en
+"My side respectfully takes on what you ask." Unlike 「いただく」 (receiving things), 「承る」 takes on **orders, bookings, requests and words**. When staff say 「承りました」 it means "I've received your request and will see to it" — it adds "accepted" to what 「かしこまりました」 says.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. ご注文を**承りました**。少々お待ちください。（您的点单收到了，请稍等。）
+2. 田中はただいま席を外しております。よろしければ、ご伝言を**承ります**。（田中现在不在座位上。如果可以的话，我来为您转达留言。）
+3. 当店では、パソコンの修理のご相談も**承っております**。（本店也受理电脑维修的咨询。）
+4. 7月15日、4名様でのご予約、確かに**承りました**。（7 月 15 日 4 位的预约，已为您确认。）
+:::
+
+:::en
+1. ご注文を承りました。少々お待ちください。(I have your order. Please wait a moment.)
+2. 田中はただいま席を外しております。よろしければ、ご伝言を承ります。(Tanaka is away from his desk right now. If you like, I can take a message.)
+3. 当店では、パソコンの修理のご相談も承っております。(We also take enquiries about computer repairs.)
+4. 7月15日、4名様でのご予約、確かに承りました。(Your reservation for four on July 15 is confirmed.)
+:::
+
+### 辨析||Comparison
+:::zh
+**承る vs 伺う vs いただく**（都是谦让语，接的东西不同）：
+
+| 动词 | 接什么 | 例 |
+|------|--------|----|
+| **承る** | 订单、预约、留言、请求（接下来并照办） | ご注文を承ります。 |
+| 伺う（第 1 点） | 问、听；拜访 | お名前を伺ってもよろしいですか。 |
+| いただく（第 1 点） | 东西、恩惠；吃喝 | 名刺をいただきました。 |
+
+**主语只能是我方**：客人那边下订单说「ご注文なさる」「注文される」，不能说「お客様が承る」。
+
+**承りました vs かしこまりました**：「かしこまりました」＝"明白了"，回应任何指示都行；「承りました」侧重"您的订单／预约已受理"，多用于接单、接预约。
+:::
+
+:::en
+**承る vs. 伺う vs. いただく** (all humble, each takes something different):
+
+| Verb | What it takes | Example |
+|------|---------------|---------|
+| **承る** | orders, bookings, messages, requests (taken on and carried out) | ご注文を承ります。 |
+| 伺う (point 1) | asking, hearing; visiting | お名前を伺ってもよろしいですか。 |
+| いただく (point 1) | things, favors; eating and drinking | 名刺をいただきました。 |
+
+**Only your side can be the subject**: the customer placing an order is 「ご注文なさる」「注文される」, never 「お客様が承る」.
+
+**承りました vs. かしこまりました**: 「かしこまりました」 = "certainly", a reply to any instruction; 「承りました」 stresses "your order / booking has been accepted" and belongs to taking orders and reservations.
 :::
 
 ---

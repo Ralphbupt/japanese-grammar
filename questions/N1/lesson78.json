@@ -774,5 +774,85 @@
         "en": "「〜ともなると」 means \"once it gets to the level of …, naturally …\"; it isn't concessive and doesn't go with 「たとえ」."
       }
     ]
+  },
+  {
+    "id": "n1-l78-021",
+    "type": "bunpou",
+    "refs": [
+      "lesson78#7"
+    ],
+    "difficulty": 2,
+    "stem": "京都や奈良（　）歴史のある町には、毎年多くの外国人観光客が訪れる。",
+    "options": [
+      "といった",
+      "といい",
+      "であれ",
+      "だの"
+    ],
+    "answer": 0,
+    "full": "京都や奈良といった歴史のある町には、毎年多くの外国人観光客が訪れる。",
+    "tr": {
+      "zh": "京都、奈良这类历史悠久的城市，每年都有很多外国游客到访。",
+      "en": "Historic cities such as Kyoto and Nara draw large numbers of foreign tourists every year."
+    },
+    "why": {
+      "zh": "线索：「京都や奈良」是具体例子，空格后面紧跟总称名词「歴史のある町」。\n规则：「名詞Aや名詞B＋といった＋总称名词」＝……之类的……，举例后归类。\n辨析：「といい〜といい」要成对出现，后接评价；「といった」只出现一次，后面接名词。",
+      "en": "Clue: 「京都や奈良」 are concrete examples, and the category noun 「歴史のある町」 comes right after the blank.\nRule: 「noun A や noun B + といった + category noun」 = … such as …, naming examples and then grouping them.\nContrast: 「といい〜といい」 comes in a pair followed by a verdict; 「といった」 appears once and a noun follows."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「といい」要用「AといいBといい」成对的形式，后面接说话人的评价，不能只用一次来修饰名词。",
+        "en": "「といい」 needs the paired form 「AといいBといい」 followed by a verdict; used once it can't modify a noun."
+      },
+      {
+        "zh": "「であれ」是“无论是……”，后面接不受影响的结论，不能直接修饰「町」。",
+        "en": "「であれ」 means \"whatever / whether …\" and leads to an unaffected conclusion; it can't modify 「町」 directly."
+      },
+      {
+        "zh": "「だの」要用「AだのBだの」成对罗列，带不满，也不能直接接名词作修饰语。",
+        "en": "「だの」 lists in a pair, 「AだのBだの」, with a complaint, and can't directly modify a noun."
+      }
+    ]
+  },
+  {
+    "id": "n1-l78-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson78#7"
+    ],
+    "difficulty": 3,
+    "stem": "駅から遠いせいか、週末でもこの店の客はせいぜい二十人（　）。",
+    "options": [
+      "といったところだ",
+      "といったらない",
+      "にほかならない",
+      "というものだ"
+    ],
+    "answer": 0,
+    "full": "駅から遠いせいか、週末でもこの店の客はせいぜい二十人といったところだ。",
+    "tr": {
+      "zh": "也许是因为离车站远，这家店就算周末，客人顶多也就二十个左右。",
+      "en": "Perhaps because it's far from the station, even at weekends this shop gets twenty customers at most."
+    },
+    "why": {
+      "zh": "线索：「せいぜい」＋数量「二十人」，说的是不多的大概数目。\n规则：「数量＋といったところだ」＝顶多也就……、大致……的程度，常和「せいぜい」「まあ」一起用。\n辨析：「といったらない」表示程度高得无法形容，接形容词、名词，不接数量。",
+      "en": "Clue: 「せいぜい」 + the amount 「二十人」 — a rough, modest number.\nRule: amount + 「といったところだ」 = about…, no more than…; often with 「せいぜい」 or 「まあ」.\nContrast: 「といったらない」 means indescribably…, after adjectives or nouns, never after a number."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「といったらない」表示程度高得无法形容（「寂しいといったらない」），不接数量，也和「せいぜい」矛盾。",
+        "en": "「といったらない」 means indescribably… (「寂しいといったらない」); it doesn't follow a number and clashes with 「せいぜい」."
+      },
+      {
+        "zh": "「にほかならない」是“不外乎……、正是……”的断定，不和表示上限的「せいぜい」搭配。",
+        "en": "「にほかならない」 is a firm \"is nothing other than…\"; it doesn't go with 「せいぜい」, which sets an upper limit."
+      },
+      {
+        "zh": "「というものだ」是对事物本质的评论（「それが親心というものだ」），不用来估计数量。",
+        "en": "「というものだ」 comments on what something essentially is (「それが親心というものだ」); it doesn't estimate an amount."
+      }
+    ]
   }
 ]
