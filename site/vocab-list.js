@@ -67,7 +67,10 @@
   window.jpGaSkip = function (line, from) {
     var i = line >> 2;
     if (from >= 0 && i === from >> 2) return false;
-    return !shown[i] || (mine && st(S, W[i]) !== 'in' && listCount() > 0);
+    // Started by hand on a word that isn't in the list: the reader is browsing,
+    // so play on in order; "only my words" applies from a list word or the play button.
+    var onlyMine = mine && listCount() > 0 && !(from >= 0 && st(S, W[from >> 2]) !== 'in');
+    return !shown[i] || (onlyMine && st(S, W[i]) !== 'in');
   };
   document.addEventListener('click', function (e) {
     var b = e.target.closest && e.target.closest('.vl-add');
