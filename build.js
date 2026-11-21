@@ -5012,10 +5012,11 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
           ex: [{ ja: html, zh: w.ex.zh, en: w.ex.en }] });
       }
       const ga = { items, tracks: vl.tracks };
+      const gN = (g) => items.filter((x) => x.lesson === g).length;
       const groupOf = (en) => (it) => it.lesson === "g3p"
-        ? { chip: en ? "3+×" : "3 次+", label: en ? "Tested 3+ times" : "真题考过 3 次以上", sub: "" }
-        : it.lesson === "g2" ? { chip: en ? "2×" : "2 次", label: en ? "Tested twice" : "真题考过 2 次", sub: "" }
-          : { chip: en ? "1×" : "1 次", label: en ? "Tested once" : "真题考过 1 次", sub: "" };
+        ? { chip: en ? "3+×" : "3 次+", label: en ? "Tested 3+ times" : "真题考过 3 次以上", sub: en ? `${gN("g3p")} words` : `${gN("g3p")} 个词` }
+        : it.lesson === "g2" ? { chip: en ? "2×" : "2 次", label: en ? "Tested twice" : "真题考过 2 次", sub: en ? `${gN("g2")} words` : `${gN("g2")} 个词` }
+          : { chip: en ? "1×" : "1 次", label: en ? "Tested once" : "真题考过 1 次", sub: en ? `${gN("g1")} words` : `${gN("g1")} 个词` };
       const head = (en) => (it, g, no) => `<p class="ga-hd"><span class="ga-no">${no}</span><span class="ga-ln ga-g" data-l="${g}" lang="ja">${gaEsc(it.term)}</span><span class="vl-r" lang="ja">${gaEsc(it.r)}</span>` +
         `<span class="ga-exam">${en ? `${it.n}× on the test` : `考过 ${it.n} 次`}</span>` +
         `<button type="button" class="vl-add" data-w="${gaEsc(it.term)}" data-r="${gaEsc(it.r)}" data-m="${gaEsc(it.mean[en ? "en" : "zh"])}" aria-pressed="false">${en ? "＋ Word list" : "＋ 生词本"}</button></p>`;
