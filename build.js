@@ -4286,6 +4286,36 @@ ${AI_SCRIPT}
   // its index in the track's timing, which is the same order for both languages.
   const GA_JS = fs.readFileSync(path.join(__dirname, "site", "grammar-audio.js"), "utf-8");
   const GA_JS_HASH = require("crypto").createHash("md5").update(GA_JS).digest("hex").slice(0, 8);
+  // Tap-a-word on the audio pages' example sentences (site/word-tip.js, the
+  // practice pages' 生词本 card): each example gets its [surface, lemma] pairs
+  // (`wsp`, build-words.js), and the page a small dictionary per language
+  // (lemma → [reading, meaning] or → "部屋" alias), fetched on the first tap.
+  // `extra` = { lemma: { r, zh, en } } that win (a vocabulary list's own words).
+  const WORDS_LIB = require("./build-words.js");
+  const WT_JS = fs.readFileSync(path.join(__dirname, "site", "word-tip.js"), "utf-8");
+  const WT_JS_HASH = require("crypto").createHash("md5").update(WT_JS).digest("hex").slice(0, 8);
+  fs.mkdirSync(path.join(__dirname, "dist"), { recursive: true });
+  fs.writeFileSync(path.join(__dirname, "dist", "word-tip.js"), WT_JS, "utf-8");
+  const pageWords = async (page, items, extra = {}) => {
+    await WORDS_LIB.init();
+    const key = `page:${page}`, plainJa = (h) => h.replace(/<rt>.*?<\/rt>|<rp>.*?<\/rp>/g, "").replace(/<[^>]+>/g, "");
+    for (const it of items) for (const e of it.ex || []) {
+      const t = plainJa(e.ja);
+      WORDS_LIB.wordsOf(key, [t]);
+      const sp = WORDS_LIB.spansOf(t);
+      if (sp.length) e.wsp = sp;
+    }
+    const d = WORDS_LIB.dictionary(key), src = {};
+    for (const code of ["zh", "en"]) {
+      const out = {};
+      for (const [k, v] of Object.entries(d)) out[k] = typeof v === "string" ? v : extra[k] ? [extra[k].r, extra[k][code]] : v[1] ? [v[0], v[1][code]] : [v[0]];
+      const file = `w-${page}.${code}.json`;
+      fs.mkdirSync(path.join(__dirname, "dist", "quiz"), { recursive: true });
+      fs.writeFileSync(path.join(__dirname, "dist", "quiz", file), JSON.stringify(out));
+      src[code] = `${SITE_PATH}quiz/${file}?v=${require("crypto").createHash("md5").update(JSON.stringify(out)).digest("hex").slice(0, 8)}`;
+    }
+    return src;
+  };
   const VL_JS = fs.readFileSync(path.join(__dirname, "site", "vocab-list.js"), "utf-8");
   const VL_JS_HASH = require("crypto").createHash("md5").update(VL_JS).digest("hex").slice(0, 8);
   fs.mkdirSync(path.join(__dirname, "dist"), { recursive: true });
@@ -4311,7 +4341,7 @@ ${AI_SCRIPT}
     // Line order = the track's: g, m, then e, t per read example.
     let l = 0, lastLesson = "", no = 0;
     const toc = [];
-    const exHtml = (e, ja, tr) => `<div class="ga-ex"><p${ja}><span lang="ja">${e.ja}</span></p><p class="ga-tr"${tr}>${gaEsc(e[code])}</p></div>`;
+    const exHtml = (e, ja, tr) => `<div class="ga-ex"><p${ja}><span lang="ja"${e.wsp ? ` data-wsp="${gaEsc(JSON.stringify(e.wsp))}"` : ""}>${e.ja}</span></p><p class="ga-tr"${tr}>${gaEsc(e[code])}</p></div>`;
     const rows = ga.items.map((it) => {
       const g = l++, m = l++;
       let head = "";
@@ -4377,7 +4407,8 @@ ${AI_SCRIPT}
 <div id="ga" data-page="${page}" data-dur="${tr.duration}">${rows.join("\n")}</div>
 <p class="ga-note">${o.note || t("点任意一行从那里开始听。空格键播放 / 暂停，← → 上一句 / 下一句。「念翻译」关掉后只听日语。朗读：Gemini TTS；「更多例句」是课程里的发音。", "Tap any line to start there. Space plays / pauses, ← → go to the previous / next line. Turn off “Read translations” to hear only the Japanese. Voices: Gemini TTS; “More examples” use the lessons’ audio.")}</p>${o.extra || ""}
 <script type="application/json" id="ga-t">${JSON.stringify(tr.lines.map((x) => [x[1], x[2], x[0]]))}</script>
-<script src="${SITE_PATH}grammar-audio.js?v=${GA_JS_HASH}" defer></script>`;
+<script src="${SITE_PATH}grammar-audio.js?v=${GA_JS_HASH}" defer></script>` +
+      (ga.words ? `<div id="wt" hidden data-src="${ga.words[code]}" data-en="${zh ? 0 : 1}" data-lv="${gaEsc(page.split("-")[0])}"></div><script src="${SITE_PATH}word-tip.js?v=${WT_JS_HASH}" defer></script>` : "");
   };
   fs.writeFileSync(path.join(__dirname, "dist", "grammar-audio.js"), GA_JS, "utf-8");
   fs.mkdirSync(path.join(__dirname, "dist", "quiz"), { recursive: true });
@@ -4936,6 +4967,7 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
     // tools/grammar-audio.py from the flashcard data; player: site/grammar-audio.js.
     if (hasGa) {
       const ga = JSON.parse(fs.readFileSync(gaFile, "utf-8")), n = ga.items.length;
+      ga.words = await pageWords(gaId, ga.items);
       const gaMeta = {
         en: {
           title: `JLPT ${level} Grammar Audio — All ${n} Patterns with Example Sentences, Free`,
@@ -5012,6 +5044,7 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
           ex: [{ ja: html, zh: w.ex.zh, en: w.ex.en }] });
       }
       const ga = { items, tracks: vl.tracks };
+      ga.words = await pageWords(vlId, items, Object.fromEntries(vl.items.map((w) => [w.w, { r: w.r, zh: w.mean.zh, en: w.mean.en }])));
       const gN = (g) => items.filter((x) => x.lesson === g).length;
       const groupOf = (en) => (it) => it.lesson === "g3p"
         ? { chip: en ? "3+×" : "3 次+", label: en ? "Tested 3+ times" : "真题考过 3 次以上", sub: en ? `${gN("g3p")} words` : `${gN("g3p")} 个词` }
