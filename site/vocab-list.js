@@ -151,7 +151,7 @@
     var c = ga.querySelector('.ga-cur'), it = c && c.closest('.ga-it');
     if (!it) return;
     var i = its.indexOf(it);
-    if (i >= 0 && Math.floor(i / PER) !== pg) { setPage(Math.floor(i / PER)); it.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+    if (i >= 0 && Math.floor(i / PER) !== pg) { setPage(Math.floor(i / PER)); if (!document.hidden) it.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
   });
   document.addEventListener('click', function (e) {
     var g = e.target.closest && e.target.closest('[data-go]');

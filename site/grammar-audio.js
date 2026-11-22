@@ -37,8 +37,21 @@
     e.classList.add('ga-cur');
     // Follow the reading like the podcast pages: the current line in the middle,
     // except for 4 s after the reader scrolled themselves.
-    if (scroll && Date.now() - userScroll > 4000) e.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (scroll) follow(e);
   }
+  // Not while the page is hidden (screen locked, another tab): iOS can drop or
+  // stall a smooth scroll started then, and the line would never be followed
+  // again until the next one; on coming back, jump to the current line instead.
+  // A far jump is instant too (a long smooth scroll is easy to interrupt).
+  function follow(e) {
+    if (document.hidden || Date.now() - userScroll <= 4000) return;
+    var r = e.getBoundingClientRect(), far = Math.abs(r.top + r.height / 2 - innerHeight / 2) > innerHeight * 1.5;
+    e.scrollIntoView({ behavior: far ? 'auto' : 'smooth', block: 'center' });
+  }
+  document.addEventListener('visibilitychange', function () {
+    if (!document.hidden && !a.paused && els[cur]) setTimeout(function () { if (els[cur]) follow(els[cur]); }, 300);
+  });
+  addEventListener('pageshow', function () { if (!a.paused && els[cur]) follow(els[cur]); });
   var userScroll = 0;
   ['wheel', 'touchmove', 'keydown'].forEach(function (ev) {
     addEventListener(ev, function (e) { if (ev !== 'keydown' || /^(Page|Arrow(Up|Down)|Home|End)/.test(e.key)) userScroll = Date.now(); }, { passive: true });
