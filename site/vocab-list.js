@@ -124,14 +124,21 @@
     }, 250);
   });
   // page chips, previous / next, play this page (stops after its last word)
+  // the player pulls the page back to the word it is reading (below), so a page
+  // picked while it plays moves the playback there too, instead of being undone
+  function turnTo(k) {
+    setPage(k, true);
+    var au = document.getElementById('ga-a');
+    if (au && !au.paused && paged() && window.jpGaFrom) window.jpGaFrom(pg * PER * 4);
+  }
   var pnav = document.getElementById('vl-pnav'); ga.parentNode.insertBefore(pnav, ga.nextSibling);
   document.getElementById('vl-pages').addEventListener('click', function (e) {
     var a = e.target.closest('a[data-pg]'); if (!a) return;
     e.preventDefault();
     if (!paged()) { filter = 'all'; sel.value = 'all'; ls.set('jp_vl_f', 'all'); query = ''; qin.value = ''; }
-    setPage(+a.getAttribute('data-pg'), true);
+    turnTo(+a.getAttribute('data-pg'));
   });
-  pnav.addEventListener('click', function (e) { var b = e.target.closest('[data-pgo]'); if (b) setPage(pg + +b.getAttribute('data-pgo'), true); });
+  pnav.addEventListener('click', function (e) { var b = e.target.closest('[data-pgo]'); if (b) turnTo(pg + +b.getAttribute('data-pgo')); });
   document.getElementById('vl-seg').addEventListener('click', function () {
     var first = paged() ? pg * PER : 0, last = paged() ? Math.min(its.length, first + PER) - 1 : its.length - 1;
     if (paged()) its[first].scrollIntoView({ behavior: 'smooth', block: 'start' });

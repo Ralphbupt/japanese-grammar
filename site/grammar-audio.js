@@ -66,6 +66,8 @@
   // For other scripts on the page (vocabulary quick sort): play lines i…j once.
   window.jpGaPlay = function (i, j) { if (!T[i]) return; from = i; seekTo(i); stopAt = Math.min(j, T.length - 1); go(); };
   window.jpGaPause = function () { a.pause(); stopAt = null; };
+  // …or carry on from line i in the current mode (vocabulary list: a page picked while playing)
+  window.jpGaFrom = function (i) { playFrom(i); };
   // Swap to another track with the same line layout (vocabulary list: Japanese-only
   // definitions); keeps the place by line, keeps playing if it was.
   window.jpGaTrack = function (src, lines, dur) {
