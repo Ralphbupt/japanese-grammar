@@ -46,11 +46,23 @@ main{padding-bottom:110px}
 .onlyreal .card.fake{display:none}
 .hide .mean,.hide .tr{filter:blur(5px)}.hide .mean:hover,.hide .tr:hover{filter:none}
 .foot{color:var(--mute);font-size:13px;margin-top:20px}
+/* tabs: 语法突击 (the audio page) + the extra decks (text only) */
+#tabs{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 4px}#tabs button{font:inherit;font-size:14px;padding:6px 12px;border-radius:9px;border:1px solid var(--line);background:var(--card);color:var(--ui);cursor:pointer}
+#tabs button[aria-pressed=true]{background:var(--ui);color:var(--ui-on);border-color:var(--ui);font-weight:600}#tabs small{opacity:.7;font-size:.8em}
+body.xt #ctl,body.xt #bar,body.xt #list,body.xt .lead{display:none}body:not(.xt) #xt{display:none}
+#xt{padding-bottom:40px}.xrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:8px 0}.xrow input,.xrow select,.xrow button{font:inherit;font-size:13px;padding:4px 10px;border-radius:7px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.xrow button[aria-pressed=true]{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}
+.occ{margin:8px 0 0}.occ summary{cursor:pointer;color:var(--mute);font-size:13px}.occ li{margin:6px 0}.occ .sit{font-size:12px;color:var(--mute);margin-right:6px}
+table.xt{width:100%;border-collapse:collapse;font-size:15px;background:var(--card);border-radius:10px;overflow:hidden}table.xt td,table.xt th{border-bottom:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}table.xt th{font-size:12px;color:var(--mute);font-weight:500}
+.sm{font-size:12px;color:var(--mute)}.opts{margin:6px 0;padding-left:1.4em}.ans{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;background:var(--chip)}.card.show .ans{display:block}
+.xhide .zh,.xhide .rd{filter:blur(5px)}.xhide .zh:hover,.xhide .rd:hover{filter:none}
+.cat{font-size:13px;color:var(--mute);margin:18px 0 4px;font-weight:600}
 </style>
 </head>
 <body>
-<div class="wrap"><h1>N2 历年真题语法突击 · <span id="cnt"></span></h1>
+<div class="wrap"><h1>N2 真题突击 · <span id="cnt"></span></h1><div id="tabs"></div>
 <p class="lead">按「语法 → 意思 → 真题例句 → 翻译」朗读。点任意一行从那里开始听。</p></div>
+<div class="wrap" id="xt"></div>
 <div class="wrap" id="ctl">
   <div class="row"><button data-mode="all" aria-pressed="true">整体连播</button><button data-mode="one" aria-pressed="false">一句一停</button><button data-mode="loop" aria-pressed="false">单句循环</button><button data-mode="part" aria-pressed="false">本段连播</button>
     <button id="trs" aria-pressed="true">念翻译</button><button id="hz" aria-pressed="false">遮住意思</button><button id="real" aria-pressed="false">只看真题</button><input id="q" placeholder="搜语法/序号"></div>
@@ -161,6 +173,59 @@ main{padding-bottom:110px}
   });
   const s0 = +ls.get('n2cramT');
   if (s0 > 1) { const i0 = lineAt(s0); a.addEventListener('loadedmetadata', function once() { a.removeEventListener('loadedmetadata', once); if (a.currentTime < 1 && T[i0]) a.currentTime = T[i0].s; }); mark1(i0, false); }
+
+  // ─── Extra decks (d.extra from cram/extra.json, private R2): text only ───
+  // adverb: [{n,g,zh,count,sets,occ:[{sitting,q,ja}]}]; words: [{n,w,r,zh,kind,sets,count,sittings}];
+  // order: [{cat,group,sitting,q,stem,opts,star,full,note}]; kanji: [{w,r,…}]; affixes: [{type,affix,zh,items:[{w,sitting}]}]; paraphrase: [...]
+  const X = d.extra || {}, xt = document.getElementById('xt'), tabsEl = document.getElementById('tabs');
+  const sit = (s) => s ? esc(String(s).replace('-', '.')) : '';
+  const DECKS = [['main', '语法突击', items.length], ['adverb', '副词语法', (X.adverb || []).length], ['words', '选项高频词', (X.words || []).length],
+    ['order', '排序题', (X.order || []).length], ['kanji', '汉字', (X.kanji || []).length], ['affixes', '接头接尾', (X.affixes || []).length], ['paraphrase', '同义替换', (X.paraphrase || []).length]].filter((k) => k[0] === 'main' || k[2]);
+  let deck = ls.get('jp_cram_deck') || 'main'; if (!DECKS.some((k) => k[0] === deck)) deck = 'main';
+  const bar = (extra) => `<div class="xrow"><input id="xq" placeholder="搜索"><button id="xh" aria-pressed="false">遮住意思</button>${extra || ''}</div>`;
+  const filt = () => { const q = (document.getElementById('xq') || {}).value || ''; xt.querySelectorAll('[data-s]').forEach((c) => { c.style.display = !q || c.dataset.s.includes(q) ? '' : 'none'; }); };
+  const RENDER = {
+    adverb: () => bar() + (X.adverb || []).map((it) => `<section class="card" data-s="${esc(it.n + ' ' + it.g + ' ' + it.zh)}"><div class="hd"><span class="no">${it.n}</span><span class="g">${esc(it.g)}</span><span class="badge">${it.count} 次 / ${it.sets} 套</span></div>
+      <p class="mean zh">${esc(it.zh)}</p>${(it.occ || []).length ? `<details class="occ"><summary>真题出处（${it.occ.length}）</summary><ul>${it.occ.map((o) => `<li><span class="sit">${sit(o.sitting)}${o.q ? ' · ' + esc(o.q) : ''}</span><span class="ja">${esc(o.ja)}</span></li>`).join('')}</ul></details>` : ''}</section>`).join(''),
+    words: () => bar('<select id="xs"><option value="n">按序号</option><option value="c">按次数</option></select>') + `<table class="xt"><thead><tr><th>#</th><th>词 / 语法</th><th>读音</th><th>意思</th><th>次数</th></tr></thead><tbody>${(X.words || []).slice().sort((a2, b2) => ls.get('jp_cram_ws') === 'c' ? (b2.count - a2.count) : (a2.n - b2.n)).map((it) => `<tr data-s="${esc(it.w + ' ' + (it.r || '') + ' ' + it.zh)}"><td class="sm">${it.n}</td><td class="ja">${esc(it.w)}${it.kind ? ' <span class="sm">' + esc(it.kind) + '</span>' : ''}</td><td class="rd">${esc(it.r || '')}</td><td class="zh">${esc(it.zh)}<div class="sm">${(it.sittings || []).map(sit).join('、')}</div></td><td class="sm">${it.count || ''}${it.sets ? ' / ' + it.sets + ' 套' : ''}</td></tr>`).join('')}</tbody></table>`,
+    order: () => { const cats = [...new Set((X.order || []).map((q) => q.cat))]; let last = '';
+      return bar('<select id="xc"><option value="">全部类别</option>' + cats.map((c) => `<option>${esc(c)}</option>`).join('') + '</select>') + (X.order || []).map((q, k) => {
+        const head = q.cat + ' · ' + q.group !== last ? `<p class="cat" data-cat="${esc(q.cat)}">${esc(q.cat)} · ${esc(q.group)}</p>` : ''; last = q.cat + ' · ' + q.group;
+        return head + `<section class="card" data-cat="${esc(q.cat)}" data-s="${esc(q.cat + ' ' + q.group + ' ' + q.stem)}"><div class="hd"><span class="no">${k + 1}</span><span class="sm">${sit(q.sitting)}${q.q ? ' · 第 ' + esc(q.q) + ' 题' : ''}</span></div>
+          <p class="ja">${esc(q.stem)}</p><ol class="opts ja">${(q.opts || []).map((o) => '<li>' + esc(o) + '</li>').join('')}</ol><button class="xa">看答案</button>
+          <div class="ans">★ = <b>${q.star}</b>　${esc((q.opts || [])[q.star - 1] || '')}${q.full ? `<p class="ja">${esc(q.full)}</p>` : ''}${q.note ? `<p class="sm">${esc(q.note)}</p>` : ''}</div></section>`; }).join(''); },
+    // kanji: {n,w,r,zh,count,sittings,kinds,recs:[{text,sitting,q,kind}]}
+    kanji: () => bar('<select id="xk"><option value="">全部题型</option>' + [...new Set((X.kanji || []).flatMap((it) => it.kinds || []))].map((k) => `<option>${esc(k)}</option>`).join('') + '</select>') +
+      `<table class="xt"><thead><tr><th>#</th><th>词</th><th>读音</th><th>意思</th><th>考过</th></tr></thead><tbody>${(X.kanji || []).map((it) => `<tr data-k="${esc((it.kinds || []).join(' '))}" data-s="${esc(it.w + ' ' + (it.r || '') + ' ' + (it.zh || ''))}"><td class="sm">${it.n}</td><td class="ja">${esc(it.w)}</td><td class="rd">${esc(it.r || '')}</td><td class="zh">${esc(it.zh || '')}<div class="sm">${esc((it.kinds || []).join('・'))}</div></td><td class="sm" title="${esc((it.recs || []).map((r) => r.text + ' ' + sit(r.sitting) + ' 第' + r.q + '题').join('\n'))}">${it.count} 次<br>${(it.sittings || []).map(sit).join('、')}</td></tr>`).join('')}</tbody></table>`,
+    // affixes: {type,affix,zh,items:[{w,sittings:[…]}]}
+    affixes: () => bar() + (X.affixes || []).map((g) => `<section class="card" data-s="${esc(g.affix + ' ' + (g.zh || '') + ' ' + (g.items || []).map((x) => x.w).join(' '))}"><div class="hd"><span class="g">${esc(g.affix)}</span><span class="badge soft">${esc(g.type || '')}</span></div><p class="mean zh">${esc(g.zh || '')}</p>
+      <p class="ja">${(g.items || []).map((x) => esc(x.w) + ((x.sittings || (x.sitting ? [x.sitting] : [])).length ? ' <span class="sm">' + (x.sittings || [x.sitting]).map(sit).join('、') + '</span>' : '')).join('　')}</p></section>`).join(''),
+    // paraphrase: {cat,w,to:[…],count}
+    paraphrase: () => { let last = '';
+      return bar() + `<table class="xt"><tbody>${(X.paraphrase || []).map((p) => { const h = p.cat !== last ? `<tr><th colspan="3">${esc(p.cat)}</th></tr>` : ''; last = p.cat;
+        return h + `<tr data-s="${esc(p.w + ' ' + (p.to || []).join(' '))}"><td class="ja">${esc(p.w)}</td><td class="ja zh">＝ ${esc((p.to || []).join('；'))}</td><td class="sm">${p.count > 1 ? p.count + ' 次' : ''}</td></tr>`; }).join('')}</tbody></table>`; },
+  };
+  function showDeck(k) {
+    deck = k; ls.set('jp_cram_deck', k);
+    tabsEl.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.deck === k)));
+    document.body.classList.toggle('xt', k !== 'main');
+    if (k !== 'main') { a.pause(); xt.innerHTML = RENDER[k](); }
+  }
+  if (DECKS.length > 1) {
+    tabsEl.innerHTML = DECKS.map(([k, l, n]) => `<button data-deck="${k}" aria-pressed="false">${l} <small>${n}</small></button>`).join('');
+    tabsEl.onclick = (e) => { const b = e.target.closest('button'); if (b) showDeck(b.dataset.deck); };
+    xt.addEventListener('input', (e) => { if (e.target.id === 'xq') filt(); });
+    xt.addEventListener('change', (e) => {
+      if (e.target.id === 'xs') { ls.set('jp_cram_ws', e.target.value); xt.innerHTML = RENDER.words(); document.getElementById('xs').value = e.target.value; }
+      if (e.target.id === 'xc') { const c = e.target.value; xt.querySelectorAll('[data-cat]').forEach((x) => { x.style.display = !c || x.dataset.cat === c ? '' : 'none'; }); }
+      if (e.target.id === 'xk') { const k = e.target.value; xt.querySelectorAll('tr[data-k]').forEach((x) => { x.style.display = !k || x.dataset.k.split(' ').includes(k) ? '' : 'none'; }); }
+    });
+    xt.addEventListener('click', (e) => {
+      if (e.target.id === 'xh') e.target.setAttribute('aria-pressed', String(xt.classList.toggle('xhide')));
+      if (e.target.classList.contains('xa')) { const c = e.target.closest('.card'); c.classList.toggle('show'); e.target.textContent = c.classList.contains('show') ? '收起答案' : '看答案'; }
+    });
+    showDeck(deck);
+  }
 })();
 </script>
 </body>

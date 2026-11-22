@@ -33,6 +33,16 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-due:hover { text-decoration: underline; text-underline-offset: 3px; }
 /* Review list + saved: compact rows, or one quiet line while both are empty */
 .q-lists-empty { margin: 0 0 1.4rem; font-size: .9rem; }
+/* practice home tidy-up (2026-11-23): one review line, settings behind ⚙ */
+.q-revline { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .6rem; margin: 0 0 1.4rem; padding: .6rem .9rem; border-radius: var(--radius); background: var(--card-bg); border: 1px solid var(--border); font-size: .92rem; }
+.q-revline-k { font-weight: 600; margin-right: .2rem; }
+.q-revline-go { margin-left: auto; font-size: .85rem; }
+.q-set { position: relative; margin-left: auto; font-size: .85rem; }
+.q-set summary { cursor: pointer; list-style: none; color: var(--text-muted); }
+.q-set summary::-webkit-details-marker { display: none; }
+.q-set[open] summary { color: var(--ui); }
+.q-set-box { position: absolute; right: 0; top: 1.6rem; z-index: 5; display: grid; gap: .5rem; padding: .7rem .9rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); box-shadow: 0 6px 20px rgba(0,0,0,.12); white-space: nowrap; }
+.q-set-box .q-size { margin-left: 0; }
 .q-lists { list-style: none; margin: 0 0 1.4rem; padding: 0; border-top: 1px solid var(--border); }
 .q-lists li { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem .7rem; min-height: 48px; box-sizing: border-box; padding: .4rem 0; border-bottom: 1px solid var(--border); }
 .q-list-name { font-weight: 600; }
@@ -76,6 +86,8 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-blank { white-space: nowrap; }
 .q-fill { color: var(--q-ok); font-weight: 600; border-bottom: 2px solid var(--q-ok); padding: 0 .2em; }
 .q-hint { margin: -.4rem 0 .8rem; }
+.q-noaudio { margin: -.4rem 0 .9rem; font-size: .85rem; }
+.q-noaudio .q-link { color: var(--text-muted); text-decoration: underline dotted; text-underline-offset: .2em; }
 
 .q-opts { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
 .q-opt { display: flex; align-items: center; gap: .8rem; width: 100%; min-height: 52px; padding: .6rem .9rem; border: 1.5px solid var(--border); border-radius: var(--radius); background: var(--bg); color: var(--text); font: inherit; font-size: 1.08rem; text-align: left; cursor: pointer; }

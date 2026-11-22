@@ -53,7 +53,7 @@
       var r = QR && QR[id], a = S.answers[id]; if (!r || !a || !a.length) return;
       var x = a[a.length - 1];
       if (x.ok && !x.g) return;
-      var e = by[r] || (by[r] = { wrong: 0, last: 0 }); e.wrong++; e.last = Math.max(e.last, x.t || 0);
+      var e = by[r] || (by[r] = { wrong: 0, last: 0 }); e.wrong++; e.last = Math.max(e.last, (x.t || 0) * 1000);   // answer t: seconds → ms, like the checks
     });
     return by;
   }
@@ -73,6 +73,47 @@
     return out;
   }
   function due(it) { return !it.x || (it.x.due || 0) <= Date.now(); }
+
+  // ─── 按级别学: whole levels, like the word list ───
+  // prefs.mgLv = the levels being learned (synced with the progress), prefs.mgNew
+  // = new points a day. Each day: the cards of those levels that are due (any
+  // studied there or on /nX-cards/), then new ones in lesson order, N5 first,
+  // up to mgNew minus the new cards already started today (cardDays, shared
+  // with the cards pages).
+  function prefs() { var p = ld().prefs || {}; return { lv: (p.mgLv || []).filter(function (l) { return LV.indexOf(l) >= 0; }), n: p.mgNew || 10 }; }
+  function setPrefs(ch) { var S = ld(); S.prefs = S.prefs || {}; for (var k in ch) S.prefs[k] = ch[k]; sv(S); }
+  function todayKey() { var d = new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
+  function plan() {
+    var P = prefs(), S = ld(), now = Date.now(), dueL = [], fresh = [], prog = {};
+    var started = ((S.cardDays || {})[todayKey()] || {}).n || 0, left = Math.max(0, P.n - started);
+    P.lv.forEach(function (l) {
+      var cs = (CARDS && CARDS[l]) || [], seen = 0, ripe = 0;
+      cs.forEach(function (cd) {
+        var x = S.cards[cd.id];
+        if (x) { seen++; if (x.s === 'review' && x.ivl >= 21) ripe++; if ((x.due || 0) <= now) dueL.push({ c: cd, lv: l, st: 'plan', x: x }); }
+        else if (fresh.length < left) fresh.push({ c: cd, lv: l, st: 'new', x: null });
+      });
+      prog[l] = { all: cs.length, seen: seen, ripe: ripe };
+    });
+    return { P: P, due: dueL, fresh: fresh, prog: prog, left: left, started: started };
+  }
+  function planHtml() {
+    var p = plan(), P = p.P, h = '<section class="mg-plan"><h2>' + t('按级别学', 'Learn by level') + '</h2>';
+    h += '<div class="mg-plan-row"><span class="mg-muted">' + t('学哪些级别：', 'Levels:') + '</span>' + LV.map(function (l) {
+      return '<button type="button" class="wb-btn mg-lv' + (P.lv.indexOf(l) >= 0 ? ' on' : '') + '" data-plv="' + l + '" aria-pressed="' + (P.lv.indexOf(l) >= 0) + '">' + l + ' <small>' + (((CARDS && CARDS[l]) || []).length) + '</small></button>';
+    }).join('') + '<label class="mg-muted mg-newsel">' + t('每天新语法', 'New a day') + ' <select data-pnew>' + [5, 10, 15, 20, 30].map(function (n) { return '<option value="' + n + '"' + (n === P.n ? ' selected' : '') + '>' + n + '</option>'; }).join('') + '</select></label></div>';
+    if (!P.lv.length) return h + '<p class="mg-muted">' + t('选一个或几个级别，每天背到期的语法和几条新语法，像背单词一样。', 'Pick one or more levels: each day you review what is due plus a few new points, like the word list.') + '</p></section>';
+    h += '<div class="mg-prog">' + P.lv.map(function (l) {
+      var g = p.prog[l] || { all: 0, seen: 0, ripe: 0 }, pct = g.all ? Math.round(g.seen * 100 / g.all) : 0;
+      return '<div class="mg-prog-r"><span class="wb-lv">' + l + '</span><span class="mg-bar"><span style="width:' + pct + '%"></span></span><span class="mg-muted">' + t('已学 ' + g.seen + ' / ' + g.all + (g.ripe ? ' · 已熟 ' + g.ripe : ''), g.seen + ' / ' + g.all + ' started' + (g.ripe ? ' · ' + g.ripe + ' mature' : '')) + '</span></div>';
+    }).join('') + '</div>';
+    var n = p.due.length + p.fresh.length;
+    // the daily new limit is shared with the cards pages: say how many were started already
+    var used = p.started ? t('（今天已经学了 ' + p.started + ' 条新语法，每天上限 ' + P.n + ' 条，和语法卡片页共用）', ' (' + p.started + ' new started today; the limit of ' + P.n + ' a day is shared with the flashcard pages)') : '';
+    h += '<div class="wb-sum"><span>' + t('今天：复习 <b>' + p.due.length + '</b> · 新语法 <b>' + p.fresh.length + '</b>', 'Today: <b>' + p.due.length + '</b> to review · <b>' + p.fresh.length + '</b> new') + '<span class="mg-muted" style="font-size:.85em">' + used + '</span></span>' +
+      (n ? '<button type="button" class="wb-btn wb-primary" data-act="plan">' + t('开始今天的语法 · ' + n, 'Start today’s grammar · ' + n) + '</button>' : '<span class="mg-muted">' + t('今天的背完了 🎉', 'All done for today 🎉') + '</span>') + '</div></section>';
+    return h;
+  }
   function whenDue(x) {
     if (!x) return t('还没背过', 'not studied yet');
     var d = Math.round(((x.due || 0) - Date.now()) / DAY);
@@ -89,7 +130,7 @@
     var T = ws.filter(function (it) { return it.st === 'todo'; }).sort(function (a, b) { return ((a.x && a.x.due) || 0) - ((b.x && b.x.due) || 0); });
     var M = ws.filter(function (it) { return it.st === 'done'; });
     var d = T.filter(due).length;
-    var h = '<div class="wb-tabs" role="tablist">' + ['all'].concat(LV).map(function (l) {
+    var h = planHtml() + '<h2 class="mg-h">' + t('我加的和做错的', 'Added and missed') + '</h2><div class="wb-tabs" role="tablist">' + ['all'].concat(LV).map(function (l) {
       return '<button type="button" role="tab" data-lv="' + l + '" aria-selected="' + (l === filt) + '">' + (l === 'all' ? t('全部', 'All') : l) + ' <small>' + counts[l] + '</small></button>';
     }).join('') + '</div>';
     if (!ws.length) {
@@ -150,8 +191,21 @@
   function study(early) {
     var T = items().filter(function (it) { return it.st === 'todo' && (filt === 'all' || it.lv === filt) && (early || due(it)); })
       .sort(function (a, b) { return ((a.x && a.x.due) || 0) - ((b.x && b.x.due) || 0); });
-    MS = { list: T.slice(0, 20), i: 0, flip: false, n: 0 };
-    ev('grammar_card_study', { level: filt, n: MS.list.length, early: early ? 1 : 0 });
+    ev('grammar_card_study', { level: filt, n: Math.min(20, T.length), early: early ? 1 : 0 });
+    round(T.slice(0, 20));
+  }
+  // 按级别学: added / missed points that are due first, then the levels' due
+  // cards, then today's new ones (each card once).
+  function studyPlan() {
+    var p = plan(), seen = {}, list = [];
+    items().filter(function (it) { return it.st === 'todo' && due(it); }).concat(p.due, p.fresh).forEach(function (it) {
+      if (seen[it.c.id]) return; seen[it.c.id] = 1; list.push(it);
+    });
+    ev('grammar_plan_study', { levels: p.P.lv.join(','), due: p.due.length, fresh: p.fresh.length });
+    round(list.slice(0, 60));
+  }
+  function round(list) {
+    MS = { list: list, i: 0, flip: false, n: 0 };
     app.innerHTML = '<p class="mg-muted">' + t('加载卡片…', 'Loading cards…') + '</p>';
     var lvs = []; MS.list.forEach(function (it) { if (lvs.indexOf(it.lv) < 0) lvs.push(it.lv); });
     loadFull(lvs).then(function () {
@@ -196,14 +250,25 @@
     if (lv) { filt = lv; pg = { T: 0, M: 0 }; try { localStorage.setItem('jp_mg_lv', lv); } catch (x) {} return render(); }
     var pv = b.getAttribute('data-pg');
     if (pv) { var pp = pv.split(':'); pg[pp[0]] = Math.max(0, +pp[1]); render(); var top = app.querySelector(pp[0] === 'M' ? '.wb-done' : '.wb-sum'); if (top) top.scrollIntoView({ block: 'start' }); return; }
+    var plv = b.getAttribute('data-plv');
+    if (plv) {
+      var P = prefs(), i = P.lv.indexOf(plv);
+      if (i >= 0) P.lv.splice(i, 1); else P.lv.push(plv);
+      P.lv.sort(function (x, y) { return LV.indexOf(x) - LV.indexOf(y); });
+      setPrefs({ mgLv: P.lv }); ev('grammar_plan_levels', { levels: P.lv.join(',') }); return render();
+    }
     var a = b.getAttribute('data-act'), r = b.getAttribute('data-r');
-    if (a === 'study') study(b.hasAttribute('data-early'));
+    if (a === 'plan') studyPlan();
+    else if (a === 'study') study(b.hasAttribute('data-early'));
     else if (a === 'list') render();
     else if (a === 'flip') { MS.flip = true; card(); }
     else if (a === 'grade') grade(+b.getAttribute('data-g'));
     else if (a === 'got') { setCheck('g:' + r, Date.now()); ev('grammar_mastered', { g: r, on: 1, page: location.pathname }); render(); }
     else if (a === 'back') { setCheck('g:' + r, -Date.now()); setCheck('gs:' + r, Date.now()); render(); }
     else if (a === 'drop') { setCheck('gs:' + r, -Date.now()); ev('grammar_card_remove', { g: r }); render(); }
+  });
+  app.addEventListener('change', function (e) {
+    if (e.target.hasAttribute && e.target.hasAttribute('data-pnew')) { setPrefs({ mgNew: +e.target.value }); render(); }
   });
   document.addEventListener('keydown', function (e) {
     if (!MS || MS.i >= MS.list.length || /INPUT|TEXTAREA|SELECT/.test(e.target.tagName) || e.metaKey || e.ctrlKey || e.altKey) return;

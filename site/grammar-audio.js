@@ -42,6 +42,7 @@
     var k = i >= 0 ? lessonOf(i) : -1;
     if (k !== lastChip) { if (chips[lastChip]) chips[lastChip].classList.remove('on'); if (chips[k]) chips[k].classList.add('on'); lastChip = k; }
     var e = els[i]; if (!e) return;
+    if (window.jpGaShowLine) window.jpGaShowLine(i);   // group view: turn to the line's group
     e.classList.add('ga-cur');
     // Follow the reading like the podcast pages: the current line in the middle,
     // except for 4 s after the reader scrolled themselves.
@@ -199,6 +200,52 @@
     else if (e.key === 'ArrowRight' && cur < T.length - 1) { e.preventDefault(); playLine(cur + 1); }
     else if (e.key === 'ArrowLeft' && cur > 0) { e.preventDefault(); playLine(cur - 1); }
   });
+
+  // ─── Ten at a time (grammar audio pages, #ga-groups) ───
+  // Only one group of 10 grammar points is shown; ▶ plays that group and stops;
+  // playing on into the next group turns the page there. Off = the lesson view.
+  var gbox = document.getElementById('ga-groups');
+  if (gbox) (function () {
+    var zh = gbox.getAttribute('data-zh') === '1', G = 10, its = [].slice.call(root.querySelectorAll('section.ga-it'));
+    if (its.length <= G) { gbox.remove(); return; }
+    var ng = Math.ceil(its.length / G), ranges = [], lineGroup = {};
+    for (var g = 0; g < ng; g++) {
+      var lo = Infinity, hi = -1;
+      its.slice(g * G, g * G + G).forEach(function (s) {
+        [].forEach.call(s.querySelectorAll('[data-l]'), function (x) { var l = +x.getAttribute('data-l'); lineGroup[l] = g; if (l < lo) lo = l; if (l > hi) hi = l; });
+      });
+      ranges.push([lo, hi]);
+    }
+    var on = ls.get('jp_ga_grp') !== '0', grp = Math.min(ng - 1, +ls.get(KEY + '_g') || 0), ctl = document.getElementById('ga-ctl');
+    function T2(a, b) { return zh ? a : b; }
+    function draw() {
+      root.classList.toggle('ga-grouped', on); if (ctl) ctl.classList.toggle('ga-grouped', on);
+      its.forEach(function (s, k) { s.hidden = on && Math.floor(k / G) !== grp; });
+      var h = '<button type="button" data-gtog aria-pressed="' + on + '">' + (on ? T2('每组 10 个', '10 at a time') : T2('按课看', 'By lesson')) + '</button>';
+      if (on) {
+        h += '<span class="ga-gl">' + T2('组：', 'Group:') + '</span>';
+        for (var k = 0; k < ng; k++) h += '<button type="button" data-g="' + k + '"' + (k === grp ? ' class="on" aria-current="true"' : '') + '>' + (k * G + 1) + '–' + Math.min(its.length, k * G + G) + '</button>';
+        h += '<button type="button" class="ga-gplay" data-gplay>▶ ' + T2('播放本组', 'Play this group') + '</button>' +
+          (grp < ng - 1 ? '<button type="button" data-gnext>' + T2('下一组 →', 'Next group →') + '</button>' : '');
+      }
+      gbox.innerHTML = h;
+    }
+    function turn(g, scroll) {
+      grp = g; ls.set(KEY + '_g', String(g)); draw();
+      if (scroll) root.scrollIntoView({ block: 'start' });
+    }
+    window.jpGaShowLine = function (i) { if (on && lineGroup[i] != null && lineGroup[i] !== grp) turn(lineGroup[i], false); };
+    gbox.addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      if (b.hasAttribute('data-gtog')) { on = !on; ls.set('jp_ga_grp', on ? '1' : '0'); if (on && cur >= 0 && lineGroup[cur] != null) grp = lineGroup[cur]; draw(); return; }
+      if (b.hasAttribute('data-g')) { a.pause(); return turn(+b.getAttribute('data-g'), true); }
+      if (b.hasAttribute('data-gnext')) { a.pause(); turn(grp + 1, true); }
+      // play the group once: its first line … its last
+      window.jpGaPlay(ranges[grp][0], ranges[grp][1]);
+      if (window.gaEvent) window.gaEvent('grammar_audio_group', { page: page, g: grp + 1 });
+    });
+    draw();
+  })();
 
   var saved = +ls.get(KEY);
   if (saved > 1) {

@@ -13,7 +13,7 @@ Notable updates to the site, newest first. Small fixes and design tweaks aren't 
 :::zh
 新页面「历年真题语法」：我们逐场看了真题的语法题，统计每个语法考过几次、哪几场，按次数排序，写明接续、意思，并链接到讲解。[N1](/jlpt-n1-past-exam-grammar/)（32 场，294 个语法）、[N2](/jlpt-n2-past-exam-grammar/)（32 场，247 个）、[N3](/jlpt-n3-past-exam-grammar/)（31 场，145 个）是 2010–2026 年的全部场次；[N4](/jlpt-n4-past-exam-grammar/)（10 场）和 [N5](/jlpt-n5-past-exam-grammar/)（7 场）只收录了我们找到的场次。每一级都有差不多一半考的是低一级的语法。课文里考过的语法点下面会标出各级真题考过几次，练习题答完、语法听读页上也有同样的标记。
 
-新页面 [我的生词本](/words/)：全站加入的单词都在一页，按 N5–N1 分开，可以只背某一级；顶栏有入口。新页面 [我的语法卡](/my-grammar/)：课文里点「＋ 语法卡」加入的语法点，加上练习里做错的语法点，按级别用卡片背，进度和语法卡片页相通。语法听读页可以选「只读日语」或「只读例句」。
+新页面 [复习](/review/)：各级别练习里的错题一页看完，今天到期几道，一键去做；和生词本、语法卡放在一起，顶栏「复习」进入。新页面 [我的生词本](/words/)：全站加入的单词都在一页，按 N5–N1 分开，可以只背某一级；顶栏有入口。新页面 [我的语法卡](/my-grammar/)：课文里点「＋ 语法卡」加入的语法点，加上练习里做错的语法点，按级别用卡片背，进度和语法卡片页相通。语法听读页可以选「只读日语」或「只读例句」。
 
 课文里的例句和「本课单词表」的词都可以点了：看读音和意思，一键加入生词本，和练习页、语法听读页是同一个生词本。语法听读页的「真题考过」标签现在列出各级别的次数和具体场次。
 
@@ -25,7 +25,7 @@ Notable updates to the site, newest first. Small fixes and design tweaks aren't 
 :::en
 New pages: grammar from past tests. We went through the grammar items of real JLPT papers and counted how often each pattern came up and when, most-tested first, each with its form, meaning and a link to its lesson: [N1](/jlpt-n1-past-exam-grammar/) (32 tests, 294 patterns), [N2](/jlpt-n2-past-exam-grammar/) (32 tests, 247) and [N3](/jlpt-n3-past-exam-grammar/) (31 tests, 145) cover every sitting from 2010 to 2026; [N4](/jlpt-n4-past-exam-grammar/) (10 tests) and [N5](/jlpt-n5-past-exam-grammar/) (7 tests) only the ones we found. At every level about half the patterns are grammar from a lower level. Lessons now mark how often each level's tests asked a point, and so do practice questions (after you answer) and the grammar audio pages.
 
-New page: [My word list](/words/) — every word you saved anywhere on the site, sorted N5 to N1, with flashcards for all of them or one level; it's in the top bar. New page: [My grammar cards](/my-grammar/) — the points you add from the lessons (“＋ Grammar card”) plus the ones you miss in practice, by level, as flashcards that share progress with the flashcard pages. The grammar audio pages can read the Japanese only, or the examples only.
+New page: [Review](/review/) — your practice mistakes from every level in one place, what's due today and a button to do them, next to your word list and grammar cards (“Review” in the top bar). New page: [My word list](/words/) — every word you saved anywhere on the site, sorted N5 to N1, with flashcards for all of them or one level; it's in the top bar. New page: [My grammar cards](/my-grammar/) — the points you add from the lessons (“＋ Grammar card”) plus the ones you miss in practice, by level, as flashcards that share progress with the flashcard pages. The grammar audio pages can read the Japanese only, or the examples only.
 
 Words in the lessons' example sentences and vocabulary tables are tappable now: reading and meaning, and one tap adds a word to your word list — the same list as the practice and grammar audio pages. The grammar audio pages' past-test tags now show every level and the sittings.
 

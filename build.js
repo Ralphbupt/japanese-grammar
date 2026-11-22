@@ -737,20 +737,30 @@ const GTAG_DEFERRED = AB_LOADER + `<script>
 
   // ─── Quality signals (2026-11-16) ───
   var conn = navigator.connection || {}, net = function() { return conn.effectiveType || ''; };
-  // Script errors: the kind and where, never the message (it can quote page text). 3 per page.
+  // Script errors: the kind, where, and the message with any page text taken
+  // out (2026-11-23: Japanese / Chinese runs and long quoted strings → …), so
+  // "Cannot read properties of null (reading 'x')" stays but nothing a reader
+  // saw does. err_file: the script's name, (page) = an inline script of this
+  // page, (none) = no file (another origin's script, an extension). 3 per page.
   var errs = 0;
-  function jsErr(type, file, line) {
+  function clean(m) {
+    // (inside a template string in build.js: backslashes doubled, no backtick)
+    return String(m || '').replace(/https?:\\/\\/[^\\s'")]+/g, function(u) { return u.replace(/[?#].*$/, '').split('/').slice(-1)[0] || 'url'; })
+      .replace(/[\\u3000-\\u30ff\\u3400-\\u9fff\\uff00-\\uffef]+/g, '…').replace(/(["'])[^"']{24,}\\1/g, '"…"').replace(/\\d{5,}/g, '#').slice(0, 90);
+  }
+  function jsErr(type, file, line, msg, col) {
     if (++errs > 3) return;
-    window.gaEvent('js_error', { err_type: String(type || 'Error').slice(0, 40), err_file: String(file || '').replace(/[?#].*$/, '').split('/').pop().slice(0, 60) || '(inline)', err_line: line || 0 });
+    var f = String(file || '').replace(/[?#].*$/, ''), page = location.href.replace(/[?#].*$/, '');
+    window.gaEvent('js_error', { err_type: String(type || 'Error').slice(0, 40), err_file: !f ? '(none)' : f === page ? '(page)' : f.split('/').pop().slice(0, 60) || '(page)', err_line: line || 0, err_col: col || 0, err_msg: clean(msg) });
   }
   window.addEventListener('error', function(e) {
     if (e.target && e.target !== window) return;                 // resource errors: audio below
-    jsErr(e.error && e.error.name, e.filename, e.lineno);
+    jsErr(e.error && e.error.name, e.filename, e.lineno, e.message, e.colno);
   });
   window.addEventListener('unhandledrejection', function(e) {
     var r = e.reason;
     if (r && r.name === 'NotAllowedError') return;                 // autoplay blocked: not an error
-    jsErr('rejection:' + ((r && r.name) || typeof r), '', 0);
+    jsErr('rejection:' + ((r && r.name) || typeof r), '', 0, r && r.message, 0);
   });
   // Audio that didn't load or play: which kind of file (s sentence, q question,
   // p passage, c listening) and the media error code. 3 per page.
@@ -3498,7 +3508,7 @@ ${AI_SCRIPT}
   // ─── Generate individual lesson pages ───
   // Pages published once per language (PAGE_LANGS); links to them on a
   // non-root copy point at that language's copy.
-  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "changelog", "practice", "listening", "reading", "vocabulary", "mock-test", "grammar-audio", "words", "my-grammar", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`, `${l}-grammar-audio`, `${l}-vocabulary-list`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
+  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "changelog", "practice", "listening", "reading", "vocabulary", "mock-test", "grammar-audio", "words", "my-grammar", "review", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`, `${l}-grammar-audio`, `${l}-vocabulary-list`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
   // "Practice this point" at the end of every grammar point that has practice
   // questions (questions/N*/lessonNN.json refs), linking to the practice page.
   const quizRefCount = {};
@@ -4678,6 +4688,8 @@ ${AI_SCRIPT}
 .ga-ln{cursor:pointer;border-radius:6px;padding:.1rem .3rem;margin-left:-.3rem;margin-right:-.3rem}
 .ga-ln:hover{background:var(--ui-soft)}.ga-ln.ga-cur{background:var(--chip-bg,#fff3c4);box-shadow:inset 3px 0 0 var(--ui)}
 .ga-g{font-size:1.35rem;font-weight:700}.ga-ls{margin-left:auto;font-size:.8rem;white-space:nowrap}
+.ga-groups{align-items:center}.ga-groups .ga-gl{font-size:.85rem;color:var(--text-muted)}.ga-groups button.on{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}.ga-groups .ga-gplay{font-weight:600}
+#ga.ga-grouped h2.ga-lh,#ga-ctl.ga-grouped .ga-toc{display:none}#ga .ga-it[hidden]{display:none}
 .ga-exam{font-size:.72rem;border-radius:10px;padding:.05rem .5rem;background:var(--accent);color:#fff;white-space:nowrap;text-decoration:none}.ga-exam:hover{color:#fff;opacity:.88}.ga-exam-y{font-size:.72rem;color:var(--text-muted)}
 .ga-form{display:flex;flex-wrap:wrap;gap:.35rem;margin:.35rem 0 .1rem}.ga-form code{font:inherit;font-size:.85rem;background:var(--chip-bg);border-radius:6px;padding:.05rem .5rem}
 .ga-m{margin:.4rem 0 .2rem}
@@ -4705,7 +4717,10 @@ ${(() => {
   // Japanese (pattern + examples, no meaning / translation), or only the examples
   // (translations still follow 念翻译). site/grammar-audio.js data-ga-say.
   const say = o.itemHead ? "" : `<div class="ga-row ga-say" role="group" aria-label="${t("朗读内容", "What to read")}"><button type="button" data-ga-say="all" aria-pressed="true">${t("全部朗读", "Read everything")}</button><button type="button" data-ga-say="ja" aria-pressed="false">${t("只读日语", "Japanese only")}</button><button type="button" data-ga-say="ex" aria-pressed="false">${t("只读例句", "Examples only")}</button></div>`;
-  return `<div id="ga-ctl"><div class="ga-row">${modes}\n${trs}${hide}</div>\n${say}${tocNav}${o.ctlExtra || ""}</div>`;
+  // Ten points at a time (site/grammar-audio.js fills it): group chips, play
+  // this group, next group, and back to the lesson view.
+  const groups = o.itemHead ? "" : `<div class="ga-row ga-groups" id="ga-groups" data-zh="${zh ? 1 : 0}"></div>`;
+  return `<div id="ga-ctl"><div class="ga-row">${modes}\n${trs}${hide}</div>\n${say}${groups}${tocNav}${o.ctlExtra || ""}</div>`;
 })()}
 <div id="ga-bar"><div class="ga-row"><button type="button" id="ga-play" aria-label="${t("播放", "Play")}" data-play="${t("播放", "Play")}" data-pause="${t("暂停", "Pause")}"></button>
 <input id="ga-seek" type="range" min="0" max="1000" value="0" aria-label="${t("进度", "Position")}"><span id="ga-time">0:00 / ${Math.floor(tr.duration / 60)}:${String(Math.floor(tr.duration % 60)).padStart(2, "0")}</span>
@@ -5635,10 +5650,17 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
       for (const [k, v] of Object.entries(JSON.parse(fs.readFileSync(f, "utf-8")))) if (v && !v.skip && !levels[k]) levels[k] = lv;
     }
     const levelsSrc = writeQuizData("word-levels.json", levels);
+    // The 复习 pages' tab bar: 错题 | 生词本 | 语法卡, the current one filled.
+    const wbSwitch = (cur, en) => `<nav class="wb-switch" aria-label="${en ? "Review" : "复习"}">${[["review", "✍", en ? "Mistakes" : "错题"], ["words", "📖", en ? "Word list" : "生词本"], ["my-grammar", "🗂", en ? "Grammar cards" : "语法卡"]].map(([id, ico, l]) =>
+      id === cur ? `<b aria-current="page"><span aria-hidden="true">${ico}</span>${l}</b>` : `<a href="${SITE_PATH}${en ? "" : "zh/"}${id}/"><span aria-hidden="true">${ico}</span>${l}</a>`).join("")}</nav>`;
     const WB_JS = fs.readFileSync(path.join(__dirname, "site", "words.js"), "utf-8");
     fs.writeFileSync(path.join(__dirname, "dist", "words.js"), WB_JS, "utf-8");
     const wbHash = require("crypto").createHash("md5").update(WB_JS).digest("hex").slice(0, 8);
-    const wbCss = `<style>#wb-app,#mg-app{margin-top:1rem}.wb-switch{margin:1rem 0 0;font-size:.95rem}.wb-switch b{color:var(--text)}.wb-tabs{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 1rem}.wb-tabs button{font:inherit;font-size:.9rem;padding:.3rem .85rem;border-radius:var(--radius-pill,16px);border:1px solid var(--border);background:var(--card-bg);color:var(--ui);cursor:pointer}.wb-tabs button small{color:var(--text-muted)}.wb-tabs button[aria-selected=true]{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}.wb-tabs button[aria-selected=true] small{color:inherit;opacity:.8}
+    const wbCss = `<style>#wb-app,#mg-app{margin-top:1rem}
+.wb-switch{display:inline-flex;gap:4px;margin:1.2rem 0 .2rem;padding:4px;border:1px solid var(--border);border-radius:14px;background:var(--card-bg)}
+.wb-switch a,.wb-switch b{display:inline-flex;align-items:center;gap:.4rem;padding:.55rem 1.5rem;border-radius:10px;font-size:1.05rem;font-weight:600;text-decoration:none;color:var(--ui)}
+.wb-switch b{background:var(--ui);color:var(--ui-on)}.wb-switch a:hover{background:var(--ui-soft)}.wb-switch small{font-weight:400;opacity:.75;font-size:.8em}
+@media (max-width:600px){.wb-switch{display:flex}.wb-switch a,.wb-switch b{flex:1;justify-content:center;padding:.55rem .6rem}}.wb-tabs{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 1rem}.wb-tabs button{font:inherit;font-size:.9rem;padding:.3rem .85rem;border-radius:var(--radius-pill,16px);border:1px solid var(--border);background:var(--card-bg);color:var(--ui);cursor:pointer}.wb-tabs button small{color:var(--text-muted)}.wb-tabs button[aria-selected=true]{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}.wb-tabs button[aria-selected=true] small{color:inherit;opacity:.8}
 .wb-sum{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem;padding:.7rem .9rem;border-radius:var(--radius);background:var(--chip-bg);margin:0 0 1rem}
 .wb-btn{font:inherit;font-size:.88rem;padding:.35rem .8rem;border-radius:8px;border:1px solid var(--border);background:var(--card-bg);color:var(--ui);cursor:pointer;white-space:nowrap}.wb-primary{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}.wb-big{font-size:1.05rem;padding:.6rem 1.6rem}
 .wb-list{list-style:none;padding:0;margin:0}.wb-list li{display:grid;grid-template-columns:minmax(6rem,auto) 1fr auto;gap:.3rem 1rem;align-items:center;padding:.65rem .2rem;border-bottom:1px solid var(--border)}
@@ -5657,7 +5679,7 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
       const en = lang.code === "en", v = langVariant("words", lang), m = meta[lang.code];
       writeLangPage("words", lang, localizePage(renderQuiz(lang, {
         ...m, nav: "", ogImage: "og-image.png",
-        body: `${wbCss}<p class="wb-switch">${en ? `<b>Word list</b> · <a href="${SITE_PATH}my-grammar/">Grammar cards</a>` : `<b>生词本</b> · <a href="${SITE_PATH}zh/my-grammar/">语法卡</a>`}</p><div id="wb-app" data-levels="${levelsSrc}"><p class="wb-muted">${en ? "Loading…" : "加载中…"}</p></div><script src="${SITE_PATH}words.js?v=${wbHash}" defer></script>`,
+        body: `${wbCss}${wbSwitch("words", en)}<div id="wb-app" data-levels="${levelsSrc}"><p class="wb-muted">${en ? "Loading…" : "加载中…"}</p></div><script src="${SITE_PATH}words.js?v=${wbHash}" defer></script>`,
         about: "",
         schema: JSON.stringify([{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: en ? "Japanese Grammar Notes" : "日语语法笔记", item: SITE }, { "@type": "ListItem", position: 2, name: m.crumb, item: v.url }] }]).replace(/</g, "\\u003c"),
       }, v, "", null), lang, localizedPageIds));
@@ -5671,14 +5693,18 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
     const MG_JS = fs.readFileSync(path.join(__dirname, "site", "my-grammar.js"), "utf-8");
     fs.writeFileSync(path.join(__dirname, "dist", "my-grammar.js"), MG_JS, "utf-8");
     const mgHash = require("crypto").createHash("md5").update(MG_JS).digest("hex").slice(0, 8);
-    const mgCss = `<style>.mg-term{font-size:1.1rem}.mg-card-lv{font-size:.8rem;color:var(--text-muted);margin:0}.mg-back{text-align:left;max-width:40rem;margin:0 auto 1.2rem;line-height:1.75}.mg-back table{border-collapse:collapse;font-size:.9rem}.mg-back td,.mg-back th{border:1px solid var(--border);padding:.25rem .5rem}.mg-ex{padding-left:1.2rem}.mg-ex li{margin:.5rem 0}.mg-muted{color:var(--text-muted)}</style>`;
+    const mgCss = `<style>.mg-term{font-size:1.1rem}.mg-card-lv{font-size:.8rem;color:var(--text-muted);margin:0}.mg-back{text-align:left;max-width:40rem;margin:0 auto 1.2rem;line-height:1.75}.mg-back table{border-collapse:collapse;font-size:.9rem}.mg-back td,.mg-back th{border:1px solid var(--border);padding:.25rem .5rem}.mg-ex{padding-left:1.2rem}.mg-ex li{margin:.5rem 0}.mg-muted{color:var(--text-muted)}
+.mg-plan{margin:1rem 0 1.6rem;padding:1rem 1.1rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--card-bg)}.mg-plan h2,.mg-h{font-size:1.15rem;margin:0 0 .7rem}.mg-h{margin-top:1.4rem}
+.mg-plan-row{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .5rem;margin-bottom:.8rem}.mg-lv.on{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}.mg-lv small{opacity:.7}.mg-newsel{margin-left:auto}.mg-newsel select{font:inherit;padding:.2rem .4rem;border-radius:6px;border:1px solid var(--border);background:var(--bg);color:inherit}
+.mg-prog{display:grid;gap:.4rem;margin:0 0 .8rem}.mg-prog-r{display:grid;grid-template-columns:auto 1fr auto;gap:.6rem;align-items:center;font-size:.85rem}.mg-bar{height:8px;border-radius:4px;background:var(--chip-bg);overflow:hidden}.mg-bar span{display:block;height:100%;background:var(--ui)}
+.mg-plan .wb-sum{margin:0}</style>`;
     const mgMeta = {
       en: { title: "My Japanese Grammar Cards — Review the Points You Miss", desc: "The grammar points you saved or keep missing in practice on jpnotes.dev, sorted by JLPT level, with flashcards; the ones you've learned in a list of their own.", h1: "My grammar cards", crumb: "Grammar cards",
         lead: "The grammar points you added from the lessons, plus the ones you keep missing in practice, sorted by JLPT level — study them with flashcards. Points you ticked “Got it” are listed as learned." },
       zh: { title: "我的语法卡 - 收藏和做错的日语语法，按级别背", desc: "你在 jpnotes.dev 课文里加入的语法点、练习里常做错的语法点，按 JLPT 级别分开，用卡片背；标了已掌握的单独列出。", h1: "我的语法卡", crumb: "语法卡",
         lead: "你从课文里加入的语法点，加上练习里做错的语法点，按 JLPT 级别分开，用卡片背。标了「已掌握」的单独列在下面。登录后在各设备同步。" },
     };
-    const switcher = (cur, en) => `<p class="wb-switch">${[["words", en ? "Word list" : "生词本"], ["my-grammar", en ? "Grammar cards" : "语法卡"]].map(([id, l]) => id === cur ? `<b>${l}</b>` : `<a href="${SITE_PATH}${en ? "" : "zh/"}${id}/">${l}</a>`).join(" · ")}</p>`;
+    const switcher = wbSwitch;
     for (const lang of PAGE_LANGS) {
       const en = lang.code === "en", v = langVariant("my-grammar", lang), m = mgMeta[lang.code];
       writeLangPage("my-grammar", lang, localizePage(renderQuiz(lang, {
@@ -5689,6 +5715,29 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
       }, v, "", null), lang, localizedPageIds));
     }
     console.log("  Generated dist/my-grammar/ (grammar cards)");
+
+    // /review/: 复习 › 错题 — every level's review list (site/review.js); the
+    // questions are done on the practice pages (#review / #reviewlist).
+    const RV_JS = fs.readFileSync(path.join(__dirname, "site", "review.js"), "utf-8");
+    fs.writeFileSync(path.join(__dirname, "dist", "review.js"), RV_JS, "utf-8");
+    const rvHash = require("crypto").createHash("md5").update(RV_JS).digest("hex").slice(0, 8);
+    const rvMeta = {
+      en: { title: "Review — Your JLPT Mistakes, Word List and Grammar Cards", desc: "Everything to review on jpnotes.dev in one place: the practice questions you missed, by level and due date, plus your word list and grammar cards.", h1: "Review", crumb: "Review",
+        lead: "The practice questions you missed, by level — each comes back at growing intervals until you have it. Your word list and grammar cards are in the tabs." },
+      zh: { title: "复习 - 错题、生词本、语法卡一页看完", desc: "jpnotes.dev 上所有要复习的东西：各级别练习里做错的题（按到期时间）、生词本和语法卡。", h1: "复习", crumb: "复习",
+        lead: "各级别练习里做错的题，按间隔提醒你再做一遍，直到真的会了。生词本和语法卡在上面的标签里。登录后在各设备同步。" },
+    };
+    const rvCss = `<style>.rv-list li{grid-template-columns:4rem 1fr auto}.rv-lv{font-size:.9rem;padding:.1rem .5rem}.rv-note{font-size:.85rem;margin-top:1rem}a.wb-btn{text-decoration:none;display:inline-block}</style>`;
+    for (const lang of PAGE_LANGS) {
+      const en = lang.code === "en", v = langVariant("review", lang), m = rvMeta[lang.code];
+      writeLangPage("review", lang, localizePage(renderQuiz(lang, {
+        ...m, nav: "", ogImage: "og-image.png",
+        body: `${wbCss}${rvCss}${wbSwitch("review", en)}<div id="rv-app"><p class="wb-muted">${en ? "Loading…" : "加载中…"}</p></div><script src="${SITE_PATH}review.js?v=${rvHash}" defer></script>`,
+        about: "",
+        schema: JSON.stringify([{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: en ? "Japanese Grammar Notes" : "日语语法笔记", item: SITE }, { "@type": "ListItem", position: 2, name: m.crumb, item: v.url }] }]).replace(/</g, "\\u003c"),
+      }, v, "", null), lang, localizedPageIds));
+    }
+    console.log("  Generated dist/review/ (review hub)");
   }
   const faqFree = (L) => `<dt>${L("免费吗？要注册吗？", "Is it free? Do I need an account?")}</dt><dd>${L("完全免费，没有广告，不用注册。进度保存在这个浏览器里。", "It's free, with no ads and no sign-up. Progress stays in this browser.")}</dd>
 <dt>${L("是真题吗？", "Are these past-paper questions?")}</dt><dd>${L("不是。题目全部原创，按各级别真题的题型和难度设计。", "No. Every question is original, written to each level's formats and difficulty.")}</dd>`;

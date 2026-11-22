@@ -268,13 +268,15 @@
   window.jpShare = jpShare;
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeShare(); });
 
-  // The word list entry (top bar + phone bar): /words/ in the page's language.
-  // No count badge (owner, 2026-11-23: no red dot).
+  // The 复习 / Review entry (top bar + phone bar): /words/ in the page's language,
+  // which tabs over to the grammar cards. Named for what both pages are for
+  // (owner, 2026-11-23: not 生词本 any more). No count badge (no red dot).
   var BOOK_ICON = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>';
   function wordsLink(cls) {
     var zh = (document.documentElement.lang || '').indexOf('zh') === 0;
-    return '<a class="' + cls + '" href="' + (zh ? '/zh/' : '/') + 'words/" aria-label="' + (zh ? '生词本' : 'Word list') + '" title="' + (zh ? '生词本' : 'Word list') + '">' + BOOK_ICON +
-      '<span class="tc-words-l">' + (zh ? '生词本' : 'Words') + '</span></a>';
+    var tip = zh ? '复习：错题、生词本和语法卡' : 'Review: mistakes, word list and grammar cards';
+    return '<a class="' + cls + '" href="' + (zh ? '/zh/' : '/') + 'review/" aria-label="' + tip + '" title="' + tip + '">' + BOOK_ICON +
+      '<span class="tc-words-l">' + (zh ? '复习' : 'Review') + '</span></a>';
   }
   function addWordsToPhoneBar() {
     var mb = document.getElementById('m-bar'), st = mb && mb.querySelector('[data-m="settings"]');

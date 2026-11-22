@@ -252,8 +252,10 @@ async function cramData(env, me) {
     if (!o) throw new HttpError(404, 'Not found.');
     return o.json();
   }));
+  // Extra study decks (text, owner's private notes from third-party N2 PDFs), optional.
+  const xo = await env.PRIVATE.get('cram/extra.json'), extra = xo ? await xo.json() : null;
   const exp = Math.floor(Date.now() / 1000) + CRAM_TTL;
-  return { items, timing, audio: '/cram/audio?e=' + exp + '&s=' + (await cramSig(env, exp)) };
+  return { items, timing, extra, audio: '/cram/audio?e=' + exp + '&s=' + (await cramSig(env, exp)) };
 }
 async function cramAudio(req, env, url) {
   const exp = +url.searchParams.get('e') || 0, s = url.searchParams.get('s') || '';

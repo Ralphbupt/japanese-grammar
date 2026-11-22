@@ -122,6 +122,13 @@
     // The settings dialog links here; on this same page only the hash changes.
     window.addEventListener('hashchange', function () { if (location.hash === '#words') { history.replaceState(null, '', location.pathname); wordList(); } });
     if (location.hash === '#words') { history.replaceState(null, '', location.pathname); return wordList(); }
+    // From the 复习 page (/review/): #review = a set of the due review questions
+    // (or early, when none is due), #reviewlist = the review list.
+    if (location.hash === '#review' || location.hash === '#reviewlist') {
+      var rh = location.hash; history.replaceState(null, '', location.pathname);
+      track('review_hub_go', { level: LEVEL, to: rh.slice(1) });
+      return rh === '#review' ? startKind('review') : reviewList();
+    }
     // ?play=chal / ?play=speed (a shared result, the practice home's entries):
     // straight into today's challenge or the sprint — on the level's practice
     // page, the only one with every kind of question.
@@ -477,7 +484,18 @@
       var qu = queues[k % queues.length];
       while (qu.length && !add(qu.shift())) {}
     }
-    return arrange(pick);
+    return lightFirst(arrange(pick));
+  }
+  // A set opens with two short questions, not a recording or a passage: most
+  // sets left unanswered were left on a listening or reading first question
+  // (GA quiz_quit, 2026-11-23: 56% at question 1, half of them listening / reading).
+  // Passage / recording groups stay whole; listening-only and reading-only sets as they are.
+  function lightFirst(list) {
+    var units = [];
+    list.forEach(function (q) { var u = units[units.length - 1]; if (q.passage && u && u[0].passage === q.passage) u.push(q); else units.push([q]); });
+    var light = function (u) { return !u[0].passage && !isCk(u[0]); }, front = [];
+    for (var i = 0; i < units.length && front.length < 2; i++) if (light(units[i])) front.push(units.splice(i--, 1)[0]);
+    return [].concat.apply([], front.concat(units));
   }
   // The last few new questions of a type / lesson make a short set of their
   // own instead of being padded with old ones; once none are new, the oldest.
@@ -607,10 +625,7 @@
     var d = due().length, r = inReview().length;
     var h = '';
     // A set belongs to the page it was started on (ids can be on two levels' pages).
-    if (S.session && (S.session.level || LEVEL) === LEVEL && S.session.ids.every(function (id) { return Q[id]; }) && S.session.i < S.session.ids.length) {
-      h += '<div class="q-resume"><span class="q-resume-t">' + t('上一组还剩 ', 'You have ') + (S.session.ids.length - S.session.i) + t(' 题', ' questions left in your last set') + '</span>' +
-        '<span class="q-resume-acts"><button class="q-btn q-btn-primary q-btn-xs" data-act="resume">' + t('继续', 'Continue') + '</button><button class="q-btn q-btn-xs" data-act="drop">' + t('放弃', 'Discard') + '</button></span></div>';
-    }
+    var resumable = S.session && (S.session.level || LEVEL) === LEVEL && S.session.ids.every(function (id) { return Q[id]; }) && S.session.i < S.session.ids.length;
     // Overall progress: questions seen at least once, and recent accuracy (same window as the per-type bars).
     var LV = ALL.filter(onLevel), done = LV.filter(function (q) { return seen(q.id); }).length, all = accuracy(function () { return true; });
     if (done) h += '<div class="q-total"><div class="q-total-line"><b>' + t('总进度', 'Progress') + '</b> ' + t('已做 ', '') + done + ' / ' + LV.length + t(' 题', ' questions') + '（' + Math.round(done * 100 / LV.length) + '%）' +
@@ -630,30 +645,28 @@
     if (td || sk) bits.push(t('今天 ' + td + ' 题', 'Today ' + td) + ' · ' + t('连续 ' + sk + ' 天', 'streak ' + sk + (sk === 1 ? ' day' : ' days')));
     else if (!d) bits.push(only ? (onlyCk ? t('答完马上看原文和解析', 'Transcript and explanations right after each answer') : t('答完马上看解析', 'Explanations right after each answer'))
       : ALL.some(isCk) ? t('词汇、语法、阅读、听力混合，答完马上看解析', 'Vocabulary, grammar, reading and listening mixed — explanations right after each answer') : t('词汇、语法、阅读混合，答完马上看解析', 'Vocabulary, grammar and reading mixed — explanations right after each answer'));
-    h += '<div class="q-today">' +
-      '<button class="q-btn q-btn-primary q-btn-big" data-act="daily">' + (only ? ONLY[only][0] : t('今日练习', 'Today’s practice')) + ' · ' + size + t(' 题', ' questions') + '</button>' +
-      '<div class="q-today-line"><span class="q-today-info">' + bits.join(' · ') + '</span>' +
+    // One main action (2026-11-23 tidy-up): an unfinished set → "continue" is the
+    // button and a new set is a quiet link; else today's set. Set size and
+    // "mix in reviews" live behind a small ⚙ instead of on the page.
+    var dailyLabel = (only ? ONLY[only][0] : t('今日练习', 'Today’s practice')) + ' · ' + size + t(' 题', ' questions');
+    var settings = '<details class="q-set"><summary aria-label="' + t('设置', 'Settings') + '">⚙ ' + t('设置', 'Settings') + '</summary><div class="q-set-box">' +
       '<label class="q-size" title="' + t('今日练习和按题型练都按这个数', 'For daily sets and practice by type') + '">' + t('每组', 'Set') + ' <select data-act="size" aria-label="' + t('每组题数', 'Questions per set') + '">' + [5, 10, 20, 50].map(function (n) { return '<option' + (n === size ? ' selected' : '') + '>' + n + '</option>'; }).join('') + '</select>' + t(' 题', '') + '</label>' +
-        '<label class="q-size q-revmix" title="' + t('勾上：到期的错题会混进今日练习；不勾：今日练习只出新题，错题在下面错题本里复习', 'On: due review questions are mixed into today’s set. Off: only new questions; review them from the review list below') + '"><input type="checkbox" data-act="revmix"' + (mixReview() ? ' checked' : '') + '> ' + t('混入错题', 'Mix in reviews') + '</label></div>' +
+      '<label class="q-size q-revmix" title="' + t('勾上：到期的错题会混进今日练习；不勾：今日练习只出新题，错题在复习里做', 'On: due review questions are mixed into today’s set. Off: only new questions; do reviews from the review line below') + '"><input type="checkbox" data-act="revmix"' + (mixReview() ? ' checked' : '') + '> ' + t('今日练习混入错题', 'Mix reviews into today’s set') + '</label></div></details>';
+    h += '<div class="q-today">' + (resumable
+      ? '<button class="q-btn q-btn-primary q-btn-big" data-act="resume">' + t('继续上一组 · 还剩 ', 'Continue your set · ') + (S.session.ids.length - S.session.i) + t(' 题', ' left') + '</button>' +
+        '<div class="q-today-line"><span class="q-today-info">' + t('或者 ', 'or ') + '<button class="q-link" data-act="daily">' + t('开始新的', 'start a new one') + '（' + dailyLabel + '）</button> · <button class="q-link" data-act="drop">' + t('放弃上一组', 'discard it') + '</button></span>' + settings + '</div>'
+      : '<button class="q-btn q-btn-primary q-btn-big" data-act="daily">' + dailyLabel + '</button>' +
+        '<div class="q-today-line"><span class="q-today-info">' + bits.filter(function (b) { return b.indexOf('q-due') < 0; }).join(' · ') + '</span>' + settings + '</div>') +
       (only ? '<p class="q-muted q-only">' + ONLY[only][1] + '<a href="' + location.pathname.replace(/-(listening|reading|vocabulary)/, '-practice') + '">' + t('练习题', 'practice questions') + '</a></p>' : '') + '</div>';
-    // Review list and saved questions: one quiet line while both are empty, else a compact row each.
-    var fv = favs().length, mfv = mockFavs(LEVEL.toLowerCase() + '-m').length;
-    var mockLink = mfv ? '<a class="q-list-more" href="' + location.pathname.replace(/-(practice|listening|reading|vocabulary)\/$/, '-mock-test/') + '">' + t('模拟题里收藏了 ' + mfv + ' 题 ›', mfv + ' saved in mock tests ›') + '</a>' : '';
-    var wn = myWords().length, wl = learning().length, wd = wordsDue().length;
-    var wRow = '<li' + (wn ? '' : ' class="q-list-empty"') + '><span class="q-list-name">' + t('生词本', 'Word list') + '</span>' + (wn ? '<span class="q-list-n">' + wl + (wn > wl ? t(' · 已掌握 ' + (wn - wl), ' · ' + (wn - wl) + ' learned') : '') + (wd ? ' · <b>' + t(wd + ' 到期', wd + ' due') + '</b>' : '') + '</span><span class="q-list-acts">' +
-        (wl ? '<button class="q-btn q-btn-sm" data-act="word-study"' + (wd ? '' : ' data-early="1"') + '>' + (wd ? t('背单词', 'Study') : t('提前背', 'Study early')) + '</button>' : '') + '<button class="q-btn q-btn-sm" data-act="word-list">' + t('查看', 'See list') + '</button></span>'
-      : '<span class="q-muted">' + t('还是空的：答完点句子下面的单词加入', 'empty: after answering, tap a word under the sentence') + '</span>') + '</li>';
-    if (!r && !fv && !mfv && !wn) h += '<p class="q-muted q-lists-empty">' + t('错题本、收藏、生词本都还是空的：答错的题、点 ☆ 的题、答完点的单词会出现在这里', 'Your review list, saved questions and word list are empty: questions you miss, ones you save with ☆ and words you tap after answering show up here') + '</p>';
-    else {
-      h += '<ul class="q-lists">';
-      h += r ? '<li><span class="q-list-name">' + t('错题本', 'Review list') + '</span><span class="q-list-n">' + r + (d ? ' · <b>' + t(d + ' 到期', d + ' due') + '</b>' : '') + '</span><span class="q-list-acts">' +
-          '<button class="q-btn q-btn-sm" data-act="review"' + (d ? '' : ' data-early="1"') + '>' + (d ? t('复习', 'Review') : t('提前复习', 'Review early')) + '</button><button class="q-btn q-btn-sm" data-act="review-list">' + t('查看', 'See list') + '</button></span></li>'
-        : '<li class="q-list-empty"><span class="q-list-name">' + t('错题本', 'Review list') + '</span><span class="q-muted">' + t('还是空的：答错、不会、猜的题会出现在这里', 'empty: questions you miss, skip or guess show up here') + '</span></li>';
-      h += fv ? '<li><span class="q-list-name">' + t('我的收藏', 'Saved') + '</span><span class="q-list-n">' + fv + '</span><span class="q-list-acts">' +
-          '<button class="q-btn q-btn-sm" data-act="fav-start">' + t('练习', 'Practise') + '</button><button class="q-btn q-btn-sm" data-act="fav-list">' + t('查看', 'See list') + '</button></span>' + mockLink + '</li>'
-        : '<li class="q-list-empty"><span class="q-list-name">' + t('我的收藏', 'Saved') + '</span><span class="q-muted">' + (mfv ? '' : t('还是空的：答完点 ☆ 收藏', 'empty: tap ☆ after answering')) + '</span>' + mockLink + '</li>';
-      h += wRow + '</ul>';
-    }
+    // Review, words and saved questions: one line (the 复习 page has them all, every level).
+    var fv = favs().length, mfv = mockFavs(LEVEL.toLowerCase() + '-m').length, wn = myWords().length, wd = wordsDue().length, rv = [];
+    if (r) rv.push('<button class="q-link" data-act="review"' + (d ? '' : ' data-early="1"') + '>' + (d ? t('错题 <b>' + d + '</b> 道到期', '<b>' + d + '</b> reviews due') : t('错题 ' + r + ' 道', r + ' in review')) + '</button>');
+    if (wn) rv.push('<button class="q-link" data-act="' + (wd ? 'word-study' : 'word-list') + '">' + (wd ? t('生词 <b>' + wd + '</b> 个到期', '<b>' + wd + '</b> words due') : t('生词 ' + wn + ' 个', wn + ' words')) + '</button>');
+    if (fv) rv.push('<button class="q-link" data-act="fav-list">' + t('收藏 ' + fv + ' 题', fv + ' saved') + '</button>');
+    if (mfv) rv.push('<a href="' + location.pathname.replace(/-(practice|listening|reading|vocabulary)\/$/, '-mock-test/') + '">' + t('模拟题收藏 ' + mfv, mfv + ' saved in mock tests') + '</a>');
+    h += rv.length
+      ? '<p class="q-revline"><span class="q-revline-k">' + t('复习', 'Review') + '</span>' + rv.join(' · ') + ' <a class="q-revline-go" href="/' + (EN ? '' : 'zh/') + 'review/">' + t('全部级别 ›', 'All levels ›') + '</a></p>'
+      : '<p class="q-muted q-lists-empty">' + t('答错的题、收藏的题、答完点的生词会进「复习」，按间隔提醒你再看。', 'Questions you miss or save, and words you tap after answering, go to Review and come back at intervals.') + '</p>';
     Object.keys(D.groups).forEach(function (g) {
       var keys = Object.keys(D.types).filter(function (k) { return D.types[k].g === g; });
       if (!keys.length) return;
@@ -721,7 +734,7 @@
       var r = (q.refs || []).filter(function (x) { return !/#vocab$/.test(x) && D.refs[x]; })[0], since = r && c['g:' + r];
       if (!(since > 0)) return;
       a.forEach(function (x) {
-        if (x.t < since || (x.ok && !x.g)) return;
+        if (x.t * 1000 < since || (x.ok && !x.g)) return;   // answer t is in seconds, the tick in ms
         var e = by[r] || (by[r] = { ref: r, miss: 0, qs: {} });
         e.miss++; e.qs[q.id] = 1;
       });
@@ -1332,7 +1345,7 @@
     var ok = res.filter(function (r) { return r.ok; }).length;
     var mins = Math.round(res.reduce(function (a, r) { return a + r.ms; }, 0) / 60000);
     var bad = res.filter(function (r) { return !r.ok || r.g; });
-    track('quiz_finish', { kind: s.kind, score: ok, size: res.length, level: LEVEL });
+    track('quiz_finish', { kind: s.kind, score: ok, size: res.length, level: LEVEL, resumed: s.resumed ? 1 : 0 });
     var chal = s.kind === 'chal';
     // The result-page experiments (another set, sign-in card) aren't for the daily challenge.
     if (!chal) hook('quizFinish', JSON.stringify({ kind: s.kind, ok: ok, size: res.length, level: LEVEL }));
@@ -2069,7 +2082,31 @@
   // Practice: the player and what to do.
   function ckIntro(q) {
     var how = CK_HOW[q.type !== 'ctougou' ? q.type : q.passage ? 'several' : q.spoken ? 'gaiyou' : 'last'] || CK_HOW.kadai;
-    return ckPlayer(q) + '<p class="q-muted q-hint">' + t(how[0], how[1]) + t('可以重听。', ' Replay as often as you like.') + '</p>';
+    // In a set: "can't listen now" — skip the set's listening questions, or keep a
+    // listening-only set for later (noAudio()).
+    var s = S.session, rest = s && s.ids ? s.ids.slice(s.i) : [], text = rest.some(function (id) { return Q[id] && !isCk(Q[id]); });
+    var na = s && s.ids ? '<p class="q-noaudio"><button class="q-link" data-act="no-audio">' + (text ? t('现在不方便听？跳过这组的听力题', 'Can’t listen now? Skip the listening in this set') : t('现在不方便听？先存着，回头再听', 'Can’t listen now? Keep this set for later')) + '</button></p>' : '';
+    return ckPlayer(q) + '<p class="q-muted q-hint">' + t(how[0], how[1]) + t('可以重听。', ' Replay as often as you like.') + '</p>' + na;
+  }
+  // "Can't listen now": the set's remaining listening questions leave it (the
+  // rest goes on); a set of listening only stays saved and the reader goes home
+  // (继续 brings it back). GA quiz_no_audio.
+  // A saved set taken up again (继续 on the practice home): how far in and how
+  // long the reader was away, and the set remembers it for quiz_finish, so a
+  // quiz_quit that came back later can be told from one that didn't.
+  function resumed() {
+    var s = S.session; if (!s || !s.ids) return;
+    var last = 0; (s.res || []).forEach(function (r) { last = Math.max(last, lastT(r.id || r)); });
+    var h = last ? (Date.now() / 1000 - last) / 3600 : -1;   // answer t is in seconds
+    s.resumed = 1; save();
+    track('quiz_resume', { kind: s.kind, level: LEVEL, pos: (s.res || []).length, size: s.ids.length, away: h < 0 ? 'unknown' : h < 1 ? '<1h' : h < 24 ? '1-24h' : h < 72 ? '1-3d' : '3d+' });
+  }
+  function noAudio() {
+    var s = S.session; if (!s || !s.ids) return home();
+    var rest = s.ids.slice(s.i), keep = rest.filter(function (id) { return !(Q[id] && isCk(Q[id])); });
+    track('quiz_no_audio', { kind: s.kind, level: LEVEL, pos: s.res.length, skipped: rest.length - keep.length, left: keep.length });
+    if (!keep.length) { quit('no_audio'); save(); return home(); }
+    s.ids = s.ids.slice(0, s.i).concat(keep); save(); ask();
   }
   function ckSubNo(q) { return '<p class="q-subno" lang="ja">質問' + (q.part + 1) + '</p>'; }
   function ckOpts(q, mock, picked) {
@@ -2433,7 +2470,8 @@
     var sub = curs && el.closest('.q-sub');
     if (sub && curs[sub.getAttribute('data-q')]) cur = curs[sub.getAttribute('data-q')];
     if (act === 'daily' || act === 'type' || act === 'lesson' || act === 'review' || act === 'pre' || act === 'ck') startKind(act, el.getAttribute('data-k'));
-    else if (act === 'resume') ask();
+    else if (act === 'resume') { resumed(); ask(); }
+    else if (act === 'no-audio') noAudio();
     else if (act === 'review-list') reviewList();
     else if (act === 'rl-group') { rlGroup = el.getAttribute('data-k') || ''; reviewList(); }
     else if (act === 'analysis') analysis();
