@@ -66,7 +66,9 @@
       s.hidden = !shown[i] || (paged() && Math.floor(i / PER) !== pg);
     });
     var pd = paged();
-    [].forEach.call(document.querySelectorAll('#vl-pages a'), function (a) { a.classList.toggle('on', pd && +a.getAttribute('data-pg') === pg); });
+    var ps = document.getElementById('vl-pg'); ps.value = String(pg);
+    document.querySelector('[data-pgt="-1"]').disabled = pd && pg === 0;
+    document.querySelector('[data-pgt="1"]').disabled = pd && pg === pages - 1;
     document.getElementById('vl-pages').style.opacity = pd ? '' : '.45';
     var nav = document.getElementById('vl-pnav');
     nav.hidden = !pd;
@@ -132,12 +134,16 @@
     if (au && !au.paused && paged() && window.jpGaFrom) window.jpGaFrom(pg * PER * 4);
   }
   var pnav = document.getElementById('vl-pnav'); ga.parentNode.insertBefore(pnav, ga.nextSibling);
+  // page row: ‹ [page ▾] ›; picking a page while filtered or searched shows all words again
+  function unfilter() { if (!paged()) { filter = 'all'; sel.value = 'all'; ls.set('jp_vl_f', 'all'); query = ''; qin.value = ''; } }
+  document.getElementById('vl-pg').addEventListener('change', function (e) { unfilter(); turnTo(+e.target.value); });
   document.getElementById('vl-pages').addEventListener('click', function (e) {
-    var a = e.target.closest('a[data-pg]'); if (!a) return;
-    e.preventDefault();
-    if (!paged()) { filter = 'all'; sel.value = 'all'; ls.set('jp_vl_f', 'all'); query = ''; qin.value = ''; }
-    turnTo(+a.getAttribute('data-pg'));
+    var b = e.target.closest('[data-pgt]'); if (!b) return;
+    var was = paged(); unfilter(); turnTo(was ? pg + +b.getAttribute('data-pgt') : pg);
   });
+  // the folded playback & display settings remember being open
+  var set = document.getElementById('vl-set');
+  if (set) { if (ls.get('jp_vl_set') === '1') set.open = true; set.addEventListener('toggle', function () { ls.set('jp_vl_set', set.open ? '1' : '0'); }); }
   pnav.addEventListener('click', function (e) { var b = e.target.closest('[data-pgo]'); if (b) turnTo(pg + +b.getAttribute('data-pgo')); });
   document.getElementById('vl-seg').addEventListener('click', function () {
     var first = paged() ? pg * PER : 0, last = paged() ? Math.min(its.length, first + PER) - 1 : its.length - 1;
