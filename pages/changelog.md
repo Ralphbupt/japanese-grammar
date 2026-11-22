@@ -20,6 +20,8 @@ Notable updates to the site, newest first. Small fixes and design tweaks aren't 
 每个语法点可以标「已掌握」：课文里每个语法点下面、真题语法页每一行都有按钮，和[语法清单](/N5_grammar_list/)的勾是同一个状态，登录后会同步；真题语法页可以只看还没掌握的，做题分析会提醒标了已掌握却又做错的语法点。
 
 新页面 [JLPT 估分器](/jlpt-score-calculator/)：选级别，填每部分大概答对几道，就能看到各科估分、总分，以及有没有过总分线和单科线。[12 月考前指南](/jlpt-december-2026/) 加了最后一周的安排。
+
+课文页底部的 GitHub 评论区去掉了（要 GitHub 账号才能留言，几乎没人用）。有问题或建议，用课文末尾和练习页的 💬 反馈框，不用登录，我们会回复。
 :::
 
 :::en
@@ -32,6 +34,8 @@ Words in the lessons' example sentences and vocabulary tables are tappable now: 
 Every grammar point can be marked "got it": there's a button under each point in the lessons and on each row of the past-test pages, sharing one state with the [grammar checklists](/N5_grammar_list/) and synced when you're signed in. The past-test pages can hide the points you know, and the practice analysis flags points you marked but missed afterwards.
 
 New page: [JLPT score calculator](/jlpt-score-calculator/). Pick a level, enter roughly how many you got right in each part, and see your estimated section scores, total, and whether you clear the pass mark and every section minimum. The [December exam guide](/jlpt-december-2026/) gained a final-week plan.
+
+The GitHub comment box at the bottom of lessons is gone (it needed a GitHub account and was hardly used). Questions or ideas: the 💬 box at the end of each lesson and on the practice pages — no sign-in needed, and we reply.
 :::
 
 ## 2026-11-21 · N2 高频词汇表||2026-11-21 · N2 vocabulary list

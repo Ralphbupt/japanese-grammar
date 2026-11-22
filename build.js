@@ -46,64 +46,10 @@ function minifyCss(css) {
     .trim();
 }
 
-// Giscus comments — backed by this repo's GitHub Discussions. Replaces
-// Disqus: no third-party cookies, no ads, and comments are stored in your own
-// repo. giscus.app/client.js is only fetched once the comments section comes
-// within ~800px of the viewport, so readers who never scroll that far make no
-// third-party connection at all.
-const GISCUS_ATTRS = {
-  repo: "Ralphbupt/japanese-grammar",
-  "repo-id": "R_kgDOR7OzbA",
-  category: "Comments",
-  "category-id": "DIC_kwDOR7OzbM4C9me3",
-  mapping: "pathname",
-  strict: "0",
-  "reactions-enabled": "1",
-  "emit-metadata": "0",
-  "input-position": "top",
-  lang: "zh-CN",
-  loading: "lazy",
-};
-const GISCUS_SCRIPT = `<script>
-(function() {
-  var sec = document.currentScript.parentNode;
-  // Match the site theme (settings → 主题), not just the OS: the paper and
-  // sepia tones have their own giscus themes, served from this site.
-  function giscusTheme() {
-    var c = document.documentElement.classList;
-    var dark = c.contains('theme-dark') ||
-      (!c.contains('theme-light') && window.matchMedia('(prefers-color-scheme: dark)').matches);
-    if (dark) return 'transparent_dark';
-    // Blue-white (tone-blue, and auto on a light system) and white: GitHub's light theme.
-    if (c.contains('tone-white') || c.contains('tone-blue') || !c.contains('theme-light')) return 'light';
-    return 'https://jpnotes.dev/giscus-' + (c.contains('tone-sepia') ? 'sepia' : 'paper') + '.css';
-  }
-  function retheme() {
-    var f = sec.querySelector('iframe.giscus-frame');
-    if (f) f.contentWindow.postMessage({ giscus: { setConfig: { theme: giscusTheme() } } }, 'https://giscus.app');
-  }
-  document.addEventListener('jpnotes:theme', retheme);
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', retheme);
-  function load() {
-    var s = document.createElement('script');
-    s.src = 'https://giscus.app/client.js';
-    s.crossOrigin = 'anonymous';
-    s.async = true;
-    var a = ${JSON.stringify(GISCUS_ATTRS)};
-    a.theme = giscusTheme();
-    // The /zh/ copy of a page joins the thread of the bilingual page
-    // (giscus' pathname term is the path without its leading slash).
-    if (location.pathname.indexOf('/zh/') === 0) { a.mapping = 'specific'; a.term = location.pathname.slice(4); }
-    for (var k in a) s.setAttribute('data-' + k, a[k]);
-    sec.appendChild(s);
-  }
-  if (!('IntersectionObserver' in window)) return load();
-  var io = new IntersectionObserver(function(es) {
-    if (es[0].isIntersecting) { io.disconnect(); load(); }
-  }, { rootMargin: '800px 0px' });
-  io.observe(sec);
-})();
-</script>`;
+// Comments: giscus (GitHub Discussions) was removed on 2026-11-23 — 12 comments
+// from 3 readers in three months, none from the page since 09-18 (it needs a
+// GitHub login). Readers use the 💬 feedback box; the old threads stay in the
+// repo's Discussions.
 
 // AI tutor side panel (问 AI / Ask AI) — reader-supplied API key, browser
 // calls the provider directly. Source lives in site/ai-assistant.{js,css};
@@ -166,11 +112,11 @@ const AI_PROVIDER_HOSTS = [...new Set(
 )];
 const ADSENSE_PUB = "ca-pub-8454405576477743";
 // The rest of the policy: scripts, styles, images, audio, frames only from
-// this site (plus giscus for comments); no plugins, no <base> or form tricks.
+// this site (comments via giscus removed 2026-11-23); no plugins, no <base> or form tricks.
 // Inline scripts stay allowed — the pages are built with many of them — but a
 // script or image from any other host is refused, so an injected tag can't
 // load code or leak data (an <img> beacon) elsewhere.
-const CSP_META = `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://giscus.app https://accounts.google.com/gsi/client https://static.cloudflareinsights.com${AB_ORIGIN}; style-src 'self' 'unsafe-inline' https://giscus.app https://accounts.google.com/gsi/style; img-src 'self' data: blob:; media-src 'self' blob:${AUDIO_ORIGIN}; font-src 'self' data:; frame-src https://giscus.app https://accounts.google.com/gsi/; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; connect-src 'self' ${ACCOUNT_API}${AB_ORIGIN} https://cloudflareinsights.com https://accounts.google.com/gsi/ https://*.google-analytics.com https://*.analytics.google.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">` +
+const CSP_META = `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://accounts.google.com/gsi/client https://static.cloudflareinsights.com${AB_ORIGIN}; style-src 'self' 'unsafe-inline' https://accounts.google.com/gsi/style; img-src 'self' data: blob:; media-src 'self' blob:${AUDIO_ORIGIN}; font-src 'self' data:; frame-src https://accounts.google.com/gsi/; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; connect-src 'self' ${ACCOUNT_API}${AB_ORIGIN} https://cloudflareinsights.com https://accounts.google.com/gsi/ https://*.google-analytics.com https://*.analytics.google.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">` +
   // Google AdSense site verification (applied 2026-11-18). Only this tag: no
   // ad script is loaded, so the CSP above stays as it is. dist/ads.txt names
   // the same publisher.
@@ -3502,9 +3448,6 @@ ${AI_SCRIPT}
   // api.jpnotes.dev (worker/src/account.js, "Private extras").
   fs.mkdirSync(path.join(__dirname, "dist", "cram"), { recursive: true });
   fs.copyFileSync(path.join(__dirname, "site", "cram.html"), path.join(__dirname, "dist", "cram", "index.html"));
-  for (const f of ["giscus-paper.css", "giscus-sepia.css"]) {
-    fs.copyFileSync(path.join(__dirname, "site", f), path.join(__dirname, "dist", f));
-  }
   // Real icon files: Google's result favicon needs a crawlable URL, not a data: URI
   for (const f of fs.readdirSync(path.join(__dirname, "site", "icons"))) {
     fs.copyFileSync(path.join(__dirname, "site", "icons", f), path.join(__dirname, "dist", f));
@@ -3772,10 +3715,6 @@ ${sidebarMarkupHtml}
     ${nextHtml}
   </nav>
   <div id="quiz-feedback" data-fb="lesson"></div>
-  <section class="comments-section" aria-label="评论">
-    <h2 class="comments-heading"><span class="lang-zh">评论</span><span class="lang-en">Comments</span></h2>
-    ${GISCUS_SCRIPT}
-  </section>
   ${siteFooterHtml}
 </main>
 ${AI_SCRIPT}
@@ -6633,8 +6572,6 @@ body.sidebar-collapsed #content {
 }
 .lesson { display: none; content-visibility: auto; contain-intrinsic-size: 0 500px; }
 .lesson.active { display: block; content-visibility: visible; }
-.comments-section { margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border); }
-.comments-heading { font-size: var(--text-lg); margin: 0 0 1rem; color: var(--text-muted); font-weight: 600; }
 
 /* Bilingual toggle */
 :not(body).lang-en { display: none; }

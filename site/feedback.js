@@ -1,7 +1,7 @@
 /* Reader feedback, on every page.
  *
  * A "💬 反馈 / 建议" box: inline wherever the page has #quiz-feedback (the
- * practice / mock / card / hub pages, and above the comments on lessons),
+ * practice / mock / card / hub pages, and at the end of lessons),
  * and opened on demand by any .fb-open link (the footer's 💬 反馈). Also
  * window.jpFeedback.send() for quiz.js's "这题有问题？". Notes go to the
  * Worker behind ai.jpnotes.dev (POST /feedback → D1): the text, the page,

@@ -13,7 +13,7 @@
  *   page navigations     network-first (fresh content after every deploy),
  *                        falling back to the cached copy when offline.
  *
- * Everything else (cross-origin: GA, giscus, AI providers; non-GET) is not
+ * Everything else (cross-origin: GA, AI providers; non-GET) is not
  * touched. Kill switch: replace this file with one that calls
  * self.registration.unregister() and deletes the caches.
  */
