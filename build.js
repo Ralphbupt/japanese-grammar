@@ -791,15 +791,20 @@ const GTAG_DEFERRED = AB_LOADER + `<script>
   }
   document.addEventListener('visibilitychange', function() { if (document.hidden) vitals(); });
   window.addEventListener('pagehide', vitals);
-  // Sidebar and phone bar: what readers open from the navigation.
-  document.addEventListener('click', function(e) {
-    var a = e.target.closest && e.target.closest('#sidebar a[href], #m-bar a[href]');
-    if (!a) return;
-    var p = a.pathname || '', m;
-    var to = /\\/lesson\\d+\\/$/.test(p) ? 'lesson' : (m = p.match(/\\/n[1-5]-(practice|listening|reading|vocabulary|mock-test|cards)\\/$/)) ? m[1]
-      : /\\/N[1-5]\\/$/.test(p) ? 'overview' : /_grammar_list\\/$/.test(p) ? 'checklist' : /^\\/(zh\\/)?(practice|listening|reading|vocabulary|mock-test|guides)\\/$/.test(p) ? 'hub'
+  // Sidebar, phone bar and the chips under a quiz page's title (el: head,
+  // 2026-11-23): what readers open from the navigation, and from what kind of page.
+  function kindOf(p) {
+    var m;
+    return /\\/lesson\\d+\\/$/.test(p) ? 'lesson' : (m = p.match(/\\/n[1-5]-(practice|listening|reading|vocabulary-list|vocabulary|mock-test|cards|grammar-audio)\\/$/)) ? m[1]
+      : /\\/jlpt-n[1-5]-past-exam-grammar\\/$/.test(p) ? 'past-exam-grammar' : /^\\/(zh\\/)?(words|my-grammar|review)\\/$/.test(p) ? p.replace(/^\\/(zh\\/)?|\\/$/g, '')
+      : /\\/N[1-5]\\/$/.test(p) ? 'overview' : /_grammar_list\\/$/.test(p) ? 'checklist' : /^\\/(zh\\/)?(practice|listening|reading|vocabulary|mock-test|guides|grammar-audio)\\/$/.test(p) ? 'hub'
       : /^\\/(zh\\/)?$/.test(p) ? 'home' : 'other';
-    window.gaEvent('nav_click', { to: to, el: a.getAttribute('data-nav') || (a.classList.contains('nav-item') ? 'item' : 'link') });
+  }
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest && e.target.closest('#sidebar a[href], #m-bar a[href], .quiz-nav a[href]');
+    if (!a) return;
+    var el = a.closest('.quiz-nav') ? 'head' : a.getAttribute('data-nav') || (a.classList.contains('nav-item') ? 'item' : 'link');
+    window.gaEvent('nav_click', { to: kindOf(a.pathname || ''), el: el, from: kindOf(location.pathname) });
   }, true);
   // Lessons: how far down the reader got (25 / 50 / 75 / 100 %).
   if (/\\/lesson\\d+\\/$/.test(location.pathname)) {
