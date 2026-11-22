@@ -524,3 +524,15 @@ body.quiz-busy .quiz-about { display: none; }
 .q-wcard .q-wb-ctx { font-size: .95rem; }
 .q-wcard-acts { display: flex; justify-content: center; flex-wrap: wrap; gap: .6rem; margin-top: 1.2rem; }
 .q-wcard-acts .q-btn { min-width: 6.5rem; min-height: 44px; }
+
+/* Daily challenge (?play=chal) and the 60-second sprint (?play=speed) */
+.q-chal-k { margin: 0 0 .3rem; font-weight: 600; color: var(--text-muted); }
+.q-chal-marks { margin: .2rem 0; font-size: 1.9rem; letter-spacing: .15em; line-height: 1.2; }
+.q-sp-intro h2 { margin-top: 0; }
+.q-sp-top { display: flex; align-items: center; gap: .7rem; padding: .55rem 0; }
+.q-sp-left { min-width: 2ch; font-size: 1.5rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.q-sp-bar { flex: 1; height: 8px; border-radius: 4px; background: var(--border); overflow: hidden; }
+.q-sp-bar span { display: block; height: 100%; width: 100%; background: var(--ui); transition: width .1s linear; }
+.q-sp-n { font-weight: 700; font-variant-numeric: tabular-nums; color: var(--text-muted); }
+.q-sp-type { margin: 0 0 .3rem; font-size: .85rem; }
+.q-sp-opts .q-opt { min-height: 48px; }

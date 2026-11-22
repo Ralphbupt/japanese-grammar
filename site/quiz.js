@@ -96,7 +96,7 @@
   // The text under the app (what the level tests, FAQ, lesson links) is for the
   // start screen; while a set, test or card session is on screen it's hidden.
   // A new screen also stops any listening audio.
-  function view(home) { AT_HOME = !!home; document.body.classList.toggle('quiz-busy', !home); ckStop(); }
+  function view(home) { AT_HOME = !!home; document.body.classList.toggle('quiz-busy', !home); ckStop(); spStop(); }
   // Scroll the app to the top of the window — below the desktop quick controls
   // (#top-controls, fixed top right), which would otherwise cover the top bar.
   function toTop() {
@@ -122,6 +122,15 @@
     // The settings dialog links here; on this same page only the hash changes.
     window.addEventListener('hashchange', function () { if (location.hash === '#words') { history.replaceState(null, '', location.pathname); wordList(); } });
     if (location.hash === '#words') { history.replaceState(null, '', location.pathname); return wordList(); }
+    // ?play=chal / ?play=speed (a shared result, the practice home's entries):
+    // straight into today's challenge or the sprint — on the level's practice
+    // page, the only one with every kind of question.
+    var pm = location.search.match(/[?&]play=(chal|speed)\b/);
+    if (pm) {
+      if (!(pm[1] === 'chal' ? chalPick() : spPool()).length && !/-practice\/$/.test(location.pathname)) { location.replace(location.pathname.replace(/-(listening|reading|vocabulary)\/$/, '-practice/') + location.search); return; }
+      history.replaceState(null, '', location.pathname);
+      return pm[1] === 'chal' ? chalOpen() : spIntro();
+    }
     var m = location.hash.match(/^#(type|lesson|ref|start)=([\w.]+)$/);
     if (m) {
       history.replaceState(null, '', location.pathname);
@@ -1273,7 +1282,7 @@
   function shareBtn() { return window.jpShare ? '<button class="q-btn" data-act="share">' + t('分享成绩', 'Share my score') + '</button>' : ''; }
   function shareScore(el) {
     var o = app._share || {};
-    window.jpShare({ text: o.text, src: o.src, anchor: el, url: location.origin + location.pathname });
+    window.jpShare({ text: o.text, src: o.src, anchor: el, url: o.url || location.origin + location.pathname });
   }
 
   function summary() {
@@ -1283,9 +1292,12 @@
     var mins = Math.round(res.reduce(function (a, r) { return a + r.ms; }, 0) / 60000);
     var bad = res.filter(function (r) { return !r.ok || r.g; });
     track('quiz_finish', { kind: s.kind, score: ok, size: res.length, level: LEVEL });
-    hook('quizFinish', JSON.stringify({ kind: s.kind, ok: ok, size: res.length, level: LEVEL }));
+    var chal = s.kind === 'chal';
+    // The result-page experiments (another set, sign-in card) aren't for the daily challenge.
+    if (!chal) hook('quizFinish', JSON.stringify({ kind: s.kind, ok: ok, size: res.length, level: LEVEL }));
+    if (chal) chalSave(s.label, res.map(function (r) { return r.ok && !r.g ? 1 : 0; }));
     var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button></div>' +
-      '<div class="q-card q-summary"><p class="q-score">' + ok + ' / ' + res.length + '</p><p class="q-muted">' + t('用时约 ', 'About ') + Math.max(mins, 1) + t(' 分钟', ' min') + '</p>' + (shareBtn() ? '<p class="q-share">' + shareBtn() + '</p>' : '') + syncHint('set');
+      '<div class="q-card q-summary">' + (chal ? chalResult(s.label) : '<p class="q-score">' + ok + ' / ' + res.length + '</p><p class="q-muted">' + t('用时约 ', 'About ') + Math.max(mins, 1) + t(' 分钟', ' min') + '</p>' + (shareBtn() ? '<p class="q-share">' + shareBtn() + '</p>' : '')) + syncHint('set');
     if (bad.length) {
       h += '<h2>' + t('错题和猜的', 'Missed or guessed') + '</h2><ul class="q-sumlist">' + bad.map(function (r) {
         var q = Q[r.id];
@@ -1300,11 +1312,12 @@
       h += '<p>' + t('全对！', 'All correct!') + '</p>';
     }
     h += '<div class="q-actions">' + (bad.length ? '<button class="q-btn" data-act="retry">' + t('重做错题', 'Redo the misses') + '</button>' : '') +
-      '<button class="q-btn q-btn-primary" data-act="again">' + t('再来一组', 'Another set') + '</button></div></div>';
+      '<button class="q-btn q-btn-primary" data-act="again">' + (chal ? t('接着做今日练习', 'Go on with today’s practice') : t('再来一组', 'Another set')) + '</button>' +
+      (chal && spPool().length >= 8 ? '<button class="q-btn" data-act="sp-intro">⚡ ' + t('60 秒速答', '60-second sprint') + '</button>' : '') + '</div></div>';
     // After a set with listening in it, one quiet line pointing at the podcast's
     // episodes at this level (no pop-up, nothing in the way).
     if (res.some(function (r) { return isCk(Q[r.id]); })) h += podcastLine();
-    app._share = { text: t('我在 jpnotes.dev 做了一组 JLPT ' + LEVEL + ' 练习题，' + res.length + ' 题对了 ' + ok + ' 题。免费题库，每题都有解析：', 'I just did a JLPT ' + LEVEL + ' practice set on jpnotes.dev: ' + ok + '/' + res.length + ' right. Free questions, each with an explanation:'), src: 'quiz_result' };
+    app._share = chal ? chalShare(s.label) : { text: t('我在 jpnotes.dev 做了一组 JLPT ' + LEVEL + ' 练习题，' + res.length + ' 题对了 ' + ok + ' 题。免费题库，每题都有解析：', 'I just did a JLPT ' + LEVEL + ' practice set on jpnotes.dev: ' + ok + '/' + res.length + ' right. Free questions, each with an explanation:'), src: 'quiz_result' };
     S.session = null; save();
     app._last = { kind: s.kind, label: s.label, bad: bad.map(function (r) { return r.id; }) };
     app.innerHTML = h;
@@ -1313,6 +1326,8 @@
   function startKind(kind, k) {
     var n = setSize();
     if (kind === 'daily') start('daily', daily(n));
+    else if (kind === 'chal') chalOpen();
+    else if (kind === 'speed') spIntro();
     else if (kind === 'type') start('type', subset(function (q) { return onLevel(q) && q.type === k; }, n), k);
     else if (kind === 'pre') start('pre', subset(function (q) { return q.pre; }, n));
     // Listening only, always 5 (a recording takes far longer than a written question).
@@ -1337,6 +1352,167 @@
     }
   }
 
+
+  // ─── Daily challenge (?play=chal, 2026-11-22) ───
+  // Five questions a day per level, the same for everyone (seeded by the Tokyo
+  // date): three vocabulary items of different types, then two grammar ones.
+  // Played like any set (answers, explanations, review list); the result is a
+  // line of ⭕/❌ to share, with a link back to the same day's five. One go per
+  // day; the results stay in this browser (localStorage jp_chal, not synced).
+  var CHAL_KEY = 'jp_chal';
+  function jstDay() { return new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10); }
+  function seeded(str) {
+    var h = 2166136261;
+    for (var i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); }
+    return function () { h ^= h << 13; h ^= h >>> 17; h ^= h << 5; return (h >>> 0) / 4294967296; };
+  }
+  function chalPick(day) {
+    if (!D) return [];
+    var rnd = seeded(LEVEL + ':' + (day || jstDay()));
+    var pool = D.questions.filter(function (q) { return !q.pre && !q.passage && D.types[q.type] && !isCk(q); })
+      .sort(function (a, b) { return a.id < b.id ? -1 : 1; });
+    function from(g, n) {
+      var byType = {};
+      pool.forEach(function (q) { if (D.types[q.type].g === g) (byType[q.type] = byType[q.type] || []).push(q); });
+      var types = Object.keys(byType).sort(), out = [];
+      for (var i = types.length - 1; i > 0; i--) { var j = Math.floor(rnd() * (i + 1)), x = types[i]; types[i] = types[j]; types[j] = x; }
+      for (var k = 0; out.length < n && k < n * 4 && types.length; k++) {
+        var list = byType[types[k % types.length]], q = list[Math.floor(rnd() * list.length)];
+        if (out.indexOf(q) < 0) out.push(q);
+      }
+      return out;
+    }
+    var picked = from('moji', 3).concat(from('bunpou', 2));
+    return picked.length >= 4 ? picked : [];
+  }
+  function chalAll() { try { return JSON.parse(localStorage.getItem(CHAL_KEY)) || {}; } catch (e) { return {}; } }
+  function chalGet(day) { var a = chalAll(); return a[LEVEL] && a[LEVEL][day]; }
+  function chalSave(day, marks) {
+    var a = chalAll(), m = a[LEVEL] = a[LEVEL] || {};
+    m[day] = marks;
+    Object.keys(m).sort().slice(0, -90).forEach(function (k) { delete m[k]; });   // keep about three months
+    try { localStorage.setItem(CHAL_KEY, JSON.stringify(a)); } catch (e) {}
+    track('chal_finish', { level: LEVEL, ok: marks.reduce(function (x, y) { return x + y; }, 0), n: marks.length });
+  }
+  function chalDays() { var m = chalAll()[LEVEL] || {}; return Object.keys(m).length; }
+  function chalMarks(day) { return (chalGet(day) || []).map(function (x) { return x ? '⭕' : '❌'; }).join(''); }
+  function chalUrl() { return location.origin + location.pathname.replace(/-(listening|reading|vocabulary)\/$/, '-practice/') + '?play=chal'; }
+  function chalShare(day) {
+    var m = chalGet(day) || [], ok = m.reduce(function (x, y) { return x + y; }, 0), d = day.slice(5).replace('-', '/');
+    return { url: chalUrl(), src: 'chal',
+      text: t('JLPT ' + LEVEL + ' 每日挑战 ' + d + '\n' + chalMarks(day) + ' ' + ok + '/' + m.length + '\n每天 5 题，人人同一组，你能全对吗？',
+        'JLPT ' + LEVEL + ' daily challenge ' + d + '\n' + chalMarks(day) + ' ' + ok + '/' + m.length + '\nFive questions a day, the same for everyone. Can you get them all?') };
+  }
+  function chalResult(day) {
+    var m = chalGet(day) || [], ok = m.reduce(function (x, y) { return x + y; }, 0);
+    return '<p class="q-chal-k">' + t('JLPT ' + LEVEL + ' 每日挑战 · ', 'JLPT ' + LEVEL + ' daily challenge · ') + day.slice(5).replace('-', '/') + '</p>' +
+      '<p class="q-chal-marks" aria-label="' + ok + ' / ' + m.length + '">' + chalMarks(day) + '</p><p class="q-score">' + ok + ' / ' + m.length + '</p>' +
+      '<p class="q-muted">' + (ok === m.length ? t('全对！', 'All right!') + ' ' : '') + t('明天有新的 5 题（东京时间 0 点更新）。已挑战 ' + chalDays() + ' 天。', 'Five new ones tomorrow (midnight Tokyo time). Days played: ' + chalDays() + '.') + '</p>' +
+      (shareBtn() ? '<p class="q-share">' + shareBtn().replace(t('分享成绩', 'Share my score'), t('分享结果', 'Share the result')) + '</p>' : '');
+  }
+  // Today's challenge: start it, or (already played) show the result again.
+  function chalOpen() {
+    var day = jstDay(), s = S.session;
+    if (s && s.kind === 'chal' && s.label === day && s.i < s.ids.length && (s.level || LEVEL) === LEVEL) return ask();
+    if (!chalGet(day)) return chalStart();
+    view(false);
+    app._share = chalShare(day);
+    app._last = { kind: 'chal', label: day, bad: [] };
+    app.innerHTML = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button></div><div class="q-card q-summary">' + chalResult(day) +
+      '<p class="q-muted">' + t('今天的已经做过了。', 'You’ve played today’s.') + '</p><div class="q-actions"><button class="q-btn q-btn-primary" data-act="daily">' + t('做今日练习', 'Today’s practice') + '</button>' +
+      (spPool().length >= 8 ? '<button class="q-btn" data-act="sp-intro">⚡ ' + t('60 秒速答', '60-second sprint') + '</button>' : '') + '</div></div>';
+    toTop();
+  }
+  function chalStart() {
+    var day = jstDay(), list = chalPick(day);
+    if (!list.length) return home();
+    track('chal_start', { level: LEVEL });
+    start('chal', list, day);
+  }
+
+  // ─── 60-second sprint (?play=speed, 2026-11-22) ───
+  // Kanji reading and writing items, one after another, for 60 seconds: tap an
+  // answer, a flash of right / wrong, the next one. Answers count like any
+  // other (progress, review list). Best score per level in localStorage jp_speed.
+  var SP_KEY = 'jp_speed', SP_MS = 60000, SP = null;
+  function spPool() { return D ? D.questions.filter(function (q) { return !q.pre && !q.passage && (q.type === 'kanji' || q.type === 'hyouki') && S.reported.indexOf(q.id) < 0; }) : []; }
+  function spBest() { try { return (JSON.parse(localStorage.getItem(SP_KEY)) || {})[LEVEL] || 0; } catch (e) { return 0; } }
+  function spStop() { if (SP && SP.timer) { clearInterval(SP.timer); SP.timer = null; } }
+  function spIntro() {
+    view(false);
+    var best = spBest();
+    app.innerHTML = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button></div><div class="q-card q-sp-intro">' +
+      '<h2>⚡ ' + t(LEVEL + ' 60 秒速答', LEVEL + ' 60-second sprint') + '</h2>' +
+      '<p>' + t('汉字读音和汉字写法题，60 秒内答对越多越好。点完马上出下一题，最后一起看错题。', 'Kanji reading and writing items: as many right as you can in 60 seconds. Each tap brings the next one; the misses are listed at the end.') + '</p>' +
+      '<p class="q-muted">' + t('真考的文字词汇平均每题不到 1 分钟，这类题要几秒内认出来。', 'On the real test these items need to take seconds, not minutes.') + (best ? ' ' + t('你的最好成绩：' + best + ' 题。', 'Your best: ' + best + '.') : '') + '</p>' +
+      '<p><button class="q-btn q-btn-primary q-btn-big" data-act="sp-go">' + t('开始', 'Start') + '</button></p></div>';
+    toTop();
+  }
+  function spGo() {
+    var pool = spPool();
+    if (pool.length < 8) return home();
+    // Unseen first, at random, then the rest at random: a long run doesn't repeat.
+    var list = shuffle(pool.filter(function (q) { return !seen(q.id); })).concat(shuffle(pool.filter(function (q) { return seen(q.id); })));
+    SP = { list: list, i: 0, ok: 0, res: [], t0: Date.now(), timer: null, lock: false };
+    track('speed_start', { level: LEVEL });
+    view(false);
+    SP.timer = setInterval(spTick, 100);
+    spShow();
+  }
+  function spTick() {
+    if (!SP) return;
+    var left = SP_MS - (Date.now() - SP.t0), bar = app.querySelector('.q-sp-bar span'), num = app.querySelector('.q-sp-left');
+    if (bar) bar.style.width = Math.max(0, left / SP_MS * 100) + '%';
+    if (num) num.textContent = Math.max(0, Math.ceil(left / 1000));
+    if (left <= 0) spEnd();
+  }
+  function spShow() {
+    var q = SP.list[SP.i % SP.list.length];
+    SP.q = q; SP.qt = Date.now(); SP.lock = false;
+    app.innerHTML = '<div class="q-sp-top"><span class="q-sp-left">' + Math.max(0, Math.ceil((SP_MS - (Date.now() - SP.t0)) / 1000)) + '</span><div class="q-sp-bar"><span></span></div><span class="q-sp-n">✓ ' + SP.ok + '</span></div>' +
+      '<div class="q-card q-sp"><p class="q-muted q-sp-type">' + esc(bi(D.types[q.type])) + '</p><div class="q-stem" lang="ja">' + stemHtml(q) + '</div>' +
+      '<ol class="q-opts q-sp-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><button class="q-opt" data-act="sp-opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span><span class="q-otext">' + o + '</span></button></li>'; }).join('') + '</ol></div>';
+    spTick();
+  }
+  function spAnswer(choice) {
+    if (!SP || SP.lock || !SP.timer) return;
+    SP.lock = true;
+    var q = SP.q, ok = record(q, choice, false, Date.now() - SP.qt);
+    save();
+    if (ok) SP.ok++;
+    SP.res.push({ id: q.id, c: choice, ok: ok });
+    var opts = app.querySelectorAll('.q-sp-opts .q-opt');
+    if (opts[q.answer]) opts[q.answer].classList.add('q-ok');
+    if (!ok && opts[choice]) opts[choice].classList.add('q-bad');
+    SP.i++;
+    setTimeout(function () { if (SP && SP.timer) spShow(); }, ok ? 250 : 700);
+  }
+  function spEnd() {
+    if (!SP) return;
+    spStop();
+    var r = SP, best = spBest(), isBest = r.ok > best, bad = r.res.filter(function (x) { return !x.ok; });
+    if (isBest) try { var b = JSON.parse(localStorage.getItem(SP_KEY)) || {}; b[LEVEL] = r.ok; localStorage.setItem(SP_KEY, JSON.stringify(b)); } catch (e) {}
+    track('speed_finish', { level: LEVEL, ok: r.ok, n: r.res.length, best: isBest ? 1 : 0 });
+    var url = location.origin + location.pathname.replace(/-(listening|reading|vocabulary)\/$/, '-practice/') + '?play=speed';
+    app._share = { url: url, src: 'speed', text: t('JLPT ' + LEVEL + ' 60 秒速答：答对 ' + r.ok + ' 题（汉字读音和写法）。你能答对几题？', 'JLPT ' + LEVEL + ' 60-second sprint: ' + r.ok + ' right (kanji reading and writing). How many can you get?') };
+    app._last = { kind: 'speed', label: '', bad: [] };
+    var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button></div><div class="q-card q-summary">' +
+      '<p class="q-chal-k">⚡ ' + t(LEVEL + ' 60 秒速答', LEVEL + ' 60-second sprint') + '</p><p class="q-score">' + r.ok + '</p>' +
+      '<p class="q-muted">' + t('答了 ' + r.res.length + ' 题，对 ' + r.ok + ' 题。', r.res.length + ' answered, ' + r.ok + ' right. ') + (isBest ? t('新纪录！', 'A new best!') : best ? t('最好成绩 ' + best + ' 题。', 'Your best: ' + best + '.') : '') + '</p>' +
+      (shareBtn() ? '<p class="q-share">' + shareBtn() + '</p>' : '');
+    if (bad.length) h += '<h2>' + t('答错的', 'Missed') + '</h2><ul class="q-sumlist">' + bad.map(function (x) {
+      var q = Q[x.id];
+      return '<li><div lang="ja" class="q-sumstem">' + sumLabel(q) + '</div><div class="q-muted">' + t('你选 ', 'You: ') + '<span lang="ja">' + q.options[x.c] + '</span> · ' + t('答案 ', 'Answer: ') + '<span lang="ja">' + q.options[q.answer] + '</span></div></li>';
+    }).join('') + '</ul><p class="q-muted">' + t('答错的已进错题本，过几天再考你。', 'The misses are on your review list and will come back.') + '</p>';
+    h += '<div class="q-actions"><button class="q-btn q-btn-primary" data-act="sp-go">' + t('再来一次', 'Again') + '</button><button class="q-btn" data-act="chal">' + t('今日挑战', 'Daily challenge') + '</button></div></div>';
+    SP = null;
+    app.innerHTML = h;
+    toTop();
+  }
+  document.addEventListener('keydown', function (e) {
+    if (!SP || !SP.timer || e.metaKey || e.ctrlKey || e.altKey || !/^[1-4]$/.test(e.key)) return;
+    if (SP.q && +e.key <= SP.q.options.length) { e.preventDefault(); spAnswer(+e.key - 1); }
+  });
 
   // ─── Mock tests (/n5-mock-test/) ───
   // A set is one or two sittings (sections) with their own time limits, no
@@ -2304,7 +2480,12 @@
       else done(false);
     }
     else if (act === 'retry') start('retry', arrange(app._last.bad.map(function (id) { return Q[id]; })));
-    else if (act === 'again') { if (app._last.kind === 'retry') startKind('daily'); else startKind(app._last.kind, app._last.label); }
+    else if (act === 'again') { if (app._last.kind === 'retry' || app._last.kind === 'chal') startKind('daily'); else startKind(app._last.kind, app._last.label); }
+    else if (act === 'chal') chalOpen();
+    else if (act === 'chal-go') chalStart();
+    else if (act === 'sp-intro') spIntro();
+    else if (act === 'sp-go') spGo();
+    else if (act === 'sp-opt') spAnswer(+el.getAttribute('data-i'));
   });
   app.addEventListener('change', function (e) {
     var act = e.target.getAttribute('data-act');
@@ -2315,7 +2496,7 @@
     else if (act === 'revmix') { S.prefs[revKey()] = e.target.checked; save(); track('review_mix', { on: e.target.checked ? 1 : 0, page: D.page || 'all', level: LEVEL }); }
   });
   document.addEventListener('keydown', function (e) {
-    if (!cur || cur.mock || e.target.matches('input, textarea, select') || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (!cur || cur.mock || (SP && SP.timer) || e.target.matches('input, textarea, select') || e.metaKey || e.ctrlKey || e.altKey) return;
     if (!document.body.contains(app.querySelector('.q-card'))) return;
     var answer = curs ? pickInGroup : submit;
     if (!cur.done && cur.q.type !== 'narabe' && /^[1-4]$/.test(e.key) && +e.key <= cur.q.options.length) answer(+e.key - 1);
