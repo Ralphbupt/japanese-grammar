@@ -3,12 +3,12 @@
 :::zh
 这一页写给离 N1 考试只剩几周、没时间把 100 来个语法点从头再过一遍的人。下面挑出最常在「文法」和「読解」里出现、也最容易和近义句型混淆的 40 个考点，按功能（时间、限定、让步、条件、原因、必然、评价……）分组，每个都给出接续、含义和一个短例句，并链接到讲得最详细的那一课。之后是 10 组最容易混的句型、7 条做题技巧和 10 道自测题。
 
-想看全部语法点，用 [N1 语法清单](/N1_grammar_list/)；想按课复习，看 [N1 总览](/N1/) 和 [Lesson 92 N1 总复习](/lesson92/)；想直接做题，去 [N1 练习题](/n1-practice/)。
+想看全部语法点，用 [N1 语法清单](/N1_grammar_list/)；想按课复习，看 [N1 总览](/N1/) 和 [Lesson 92 N1 总复习](/lesson92/)；想直接做题，去 [N1 练习题](/n1-practice/)。想知道真题实际考过哪些语法、各考过几次，看 [N1 历年真题语法](/jlpt-n1-past-exam-grammar/)。
 :::
 :::en
 This page is for anyone a few weeks out from the N1 exam who doesn't have time to go back through all 100 or so grammar points. It picks the 40 that turn up most in the grammar and reading sections — and that are easiest to mix up with a near-synonym — groups them by function (time, limits, concession, conditions, cause, inevitability, judgement…), and gives each one its connection, meaning and a short example, linked to the lesson that covers it in full. After that come the 10 most confused sets, 7 exam tips and a 10-question self-test.
 
-For every grammar point, see the [N1 grammar list](/N1_grammar_list/); to review lesson by lesson, the [N1 overview](/N1/) and the [Lesson 92 N1 review](/lesson92/); to drill, the [N1 practice questions](/n1-practice/).
+For every grammar point, see the [N1 grammar list](/N1_grammar_list/); to review lesson by lesson, the [N1 overview](/N1/) and the [Lesson 92 N1 review](/lesson92/); to drill, the [N1 practice questions](/n1-practice/). For which patterns real tests actually asked and how often, see [N1 grammar from past tests](/jlpt-n1-past-exam-grammar/).
 :::
 
 ## 高频考点 Top 40||Top 40 Grammar Points

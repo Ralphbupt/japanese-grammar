@@ -5,14 +5,14 @@
 
 标着 **N4 预习** 的几条（〜すぎる、〜かもしれない、〜たら、辞書形 + ことがある、と・ば・たら・なら、两种そうだ）按多数 JLPT 语法清单属于 N4，本站在 N5 课里提前讲了。N5 考试里不一定出现，N4 一定会考；时间紧的话先把其余各条吃透。
 
-想看完整清单，去 [N5 语法清单](/N5_grammar_list/)；按课复习，去 [N5 总览](/N5/)；想直接刷题，去 [N5 练习题](/n5-practice/)。
+想看完整清单，去 [N5 语法清单](/N5_grammar_list/)；按课复习，去 [N5 总览](/N5/)；想直接刷题，去 [N5 练习题](/n5-practice/)。想知道真题实际考过哪些语法、各考过几次，看 [N5 历年真题语法](/jlpt-n5-past-exam-grammar/)。
 :::
 :::en
 A few weeks before the N5 and no time to go through all 70-odd grammar points again? This page picks only the 30 that keep coming up in the test and that learners get wrong most: grouped by function (particles, time and sequence, requests and obligation, wants and invitations, experience, comparison, reasons and conditions), each with its conjugation, meaning and one short example, linked to the lesson that teaches it. After that come the 10 most confused pairs, tips for the N5 grammar questions, and a 10-question self-test.
 
 The points marked **N4 preview** (〜すぎる, 〜かもしれない, 〜たら, dictionary form + ことがある, と・ば・たら・なら, and both kinds of そうだ) are N4 grammar on most JLPT lists; this site teaches them early, in the N5 lessons. The N5 may not test them, the N4 certainly will — if time is short, get the rest solid first.
 
-For the complete list, see the [N5 grammar checklist](/N5_grammar_list/); to review lesson by lesson, the [N5 overview](/N5/); to go straight to questions, the [N5 practice questions](/n5-practice/).
+For the complete list, see the [N5 grammar checklist](/N5_grammar_list/); to review lesson by lesson, the [N5 overview](/N5/); to go straight to questions, the [N5 practice questions](/n5-practice/). For which patterns real tests actually asked and how often, see [N5 grammar from past tests](/jlpt-n5-past-exam-grammar/).
 :::
 
 ## 高频考点 Top 30||Top 30 Grammar Points

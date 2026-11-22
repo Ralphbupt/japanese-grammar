@@ -15,6 +15,14 @@
   var ls = { get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} } };
   var page = root.getAttribute('data-page'), KEY = 'jp_ga_' + page;
   var els = {}, cur = -1, from = -1, stopAt = null, mode = 'all', played = false, readTr = ls.get('jp_ga_tr') !== '0', readM = ls.get('jp_ga_m') !== '0';
+  // What is read (grammar audio pages, data-ga-say): all; ja = pattern + examples
+  // (no meaning, no translation); ex = examples only (translations per readTr).
+  var say = document.querySelector('[data-ga-say]') ? (ls.get('jp_ga_say') || 'all') : 'all';
+  function skipK(k) {
+    if (say === 'ja') return k === 'm' || k === 't';
+    if (say === 'ex') return k === 'g' || k === 'm' || (k === 't' && !readTr);
+    return (k === 't' && !readTr) || (k === 'm' && !readM);
+  }
   [].forEach.call(root.querySelectorAll('[data-l]'), function (e) { els[e.getAttribute('data-l')] = e; });
   // Lesson starts (line indices), for "this lesson" and the chip that lights up.
   var starts = [].map.call(root.querySelectorAll('h2[data-go]'), function (h) { return +h.getAttribute('data-go'); });
@@ -105,11 +113,13 @@
     // gap is ≥ 0.5 s, timeupdate comes every ~0.25 s): waiting for the line itself
     // let its first syllables through.
     if (i >= 0 && T[i + 1] && t >= T[i][1] && !a.paused && mode !== 'one' && mode !== 'loop' &&
-        ((!readTr && T[i + 1][2] === 't') || (!readM && T[i + 1][2] === 'm') || (window.jpGaSkip && window.jpGaSkip(i + 1, from)))) i = i + 1;
-    // Translations off (or meanings off, #ga-ms, vocabulary list): jump from the start of such a line to the next line.
-    if (i >= 0 && ((!readTr && T[i][2] === 't') || (!readM && T[i][2] === 'm')) && t < T[i][1] - 0.15 && mode !== 'one' && mode !== 'loop') {
-      if (stopAt != null && i + 1 > stopAt) { a.pause(); stopAt = null; return; }
-      if (T[i + 1]) { a.currentTime = T[i + 1][0]; i = i + 1; }
+        (skipK(T[i + 1][2]) || (window.jpGaSkip && window.jpGaSkip(i + 1, from)))) i = i + 1;
+    // A line not read (translations / meanings off, Japanese or examples only):
+    // jump from its start past it — and past the ones right after it that are skipped too.
+    if (i >= 0 && skipK(T[i][2]) && t < T[i][1] - 0.15 && mode !== 'one' && mode !== 'loop') {
+      var j = i + 1; while (T[j] && skipK(T[j][2])) j++;
+      if ((stopAt != null && j > stopAt) || !T[j]) { a.pause(); stopAt = null; return; }
+      a.currentTime = T[j][0]; i = j;
     }
     if (window.jpGaSkip && !a.paused && mode !== 'one' && mode !== 'loop' && i >= 0 && window.jpGaSkip(i, from)) {
       var j = i + 1; while (T[j] && window.jpGaSkip(j, from)) j++;
@@ -149,6 +159,11 @@
     mBtn.addEventListener('click', function () { readM = !readM; ls.set('jp_ga_m', readM ? '1' : '0'); mBtn.setAttribute('aria-pressed', String(readM)); });
   } else readM = true;
   showTr();
+  function showSay() { [].forEach.call(document.querySelectorAll('[data-ga-say]'), function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-ga-say') === say)); }); }
+  [].forEach.call(document.querySelectorAll('[data-ga-say]'), function (b) {
+    b.addEventListener('click', function () { say = b.getAttribute('data-ga-say'); ls.set('jp_ga_say', say); showSay(); if (window.gaEvent) window.gaEvent('grammar_audio_say', { say: say, page: page }); });
+  });
+  showSay();
   document.getElementById('ga-hide').addEventListener('click', function (e) {
     var on = root.classList.toggle('ga-hidden'); e.currentTarget.setAttribute('aria-pressed', String(on));
   });

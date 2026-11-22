@@ -8,7 +8,7 @@ Source: the lessons' grammar points and examples (dist/anki/.cards.json from
 build-anki.js; run `npm run build` first) + notes per point written for this
 page (questions/grammar-audio/src/{level}*.json: connection, a meaning written to
 be read aloud, confusables, which two examples to read, optional cleaned
-translations; N2 exam years in src/n2-exam.json). Gemini TTS, one request per
+translations; exam sittings are added by build.js from questions/exam-grammar/). Gemini TTS, one request per
 line, cached by voice + text, so the Japanese clips are shared by both tracks.
 
   python3 tools/grammar-audio.py n2 [n3 …] [--upload]     (no level = all five)
@@ -125,8 +125,8 @@ def items_of(level):
     if len(notes) != len(cards["zh"]):
         raise SystemExit(f"{level}: {len(notes)} notes for {len(cards['zh'])} grammar points — the lessons changed; update src/")
     notes = iter(notes)
-    exam_f = os.path.join(OUT_DATA, "src", f"{level}-exam.json")
-    exam = json.load(open(exam_f, encoding="utf-8")) if os.path.exists(exam_f) else {}
+    # Exam sittings are not stored here: build.js adds them from our own count
+    # of the past papers (questions/exam-grammar/, EXAM_SEEN / gaExam).
     out = []
     for a, b in zip(cards["zh"], cards["en"]):
         key = f"lesson{a['lessonNum']}:{a['term']}"
@@ -148,7 +148,7 @@ def items_of(level):
         ok = lambda i: not plain(ex[i]["ja"]).startswith("【") and ex[i]["zh"] and ex[i]["en"]
         order = pick + [i for i in range(len(ex)) if i not in pick and ok(i)]
         out.append({"key": key, "lesson": "lesson" + a["lessonNum"], "term": n.get("term") or a["term"], "form": n["form"], "mean": n["mean"],
-                    "vs": n.get("vs") or {"zh": "", "en": ""}, "exam": exam.get(key, []),
+                    "vs": n.get("vs") or {"zh": "", "en": ""},
                     "ex": [ex[i] for i in order], "read": len(pick)})
     return out
 

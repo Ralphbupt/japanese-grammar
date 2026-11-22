@@ -3,12 +3,12 @@
 :::zh
 离考试只剩几周，没时间把 N2 的 130 个语法点从头再过一遍？这一页只挑真正常考的：**40 个高频语法点**按功能分组（时间、逆接、原因、程度、判断、对比、话题、条件、评价），每个都有接续、含义和一个短例句，并链接到讲得更细的课；然后是 **10 组最容易混的语法**、几条做语法题的**考试技巧**，最后用 **10 道自测题**检查一下。
 
-想看全部语法点，用 [N2 语法清单](/N2_grammar_list/)（可以打勾）；按课学习从 [N2 总览](/N2/) 开始；学完一组就去 [N2 练习题](/n2-practice/) 做题，考前再做一套 [N2 模拟题](/n2-mock-test/)。考试时间、合格线和最后 6 周的复习安排见 [12 月 JLPT 考前指南](/jlpt-december-2026/)。
+想看全部语法点，用 [N2 语法清单](/N2_grammar_list/)（可以打勾）；按课学习从 [N2 总览](/N2/) 开始；学完一组就去 [N2 练习题](/n2-practice/) 做题，考前再做一套 [N2 模拟题](/n2-mock-test/)。考试时间、合格线和最后 6 周的复习安排见 [12 月 JLPT 考前指南](/jlpt-december-2026/)。想知道真题实际考过哪些语法、各考过几次，看 [N2 历年真题语法](/jlpt-n2-past-exam-grammar/)。
 :::
 :::en
 A few weeks out from the exam, with no time to go back through all 130 N2 grammar points? This page keeps only the ones that keep coming up: **40 high-frequency points** grouped by function (time, concession, cause, degree, judgment, contrast, topic, condition, evaluation), each with its conjugation, meaning and one short example, linked to the lesson that covers it in full. Then come the **10 most confused groups**, some **exam tips** for the grammar questions, and a **10-question self-test** at the end.
 
-For every point, use the [N2 grammar checklist](/N2_grammar_list/) (you can tick items off); to study lesson by lesson, start from the [N2 overview](/N2/); after each group, drill it in the [N2 practice questions](/n2-practice/), and sit the [N2 mock test](/n2-mock-test/) before the exam. Exam times, pass marks and a six-week review plan are in the [December JLPT exam guide](/jlpt-december-2026/).
+For every point, use the [N2 grammar checklist](/N2_grammar_list/) (you can tick items off); to study lesson by lesson, start from the [N2 overview](/N2/); after each group, drill it in the [N2 practice questions](/n2-practice/), and sit the [N2 mock test](/n2-mock-test/) before the exam. Exam times, pass marks and a six-week review plan are in the [December JLPT exam guide](/jlpt-december-2026/). For which patterns real tests actually asked and how often, see [N2 grammar from past tests](/jlpt-n2-past-exam-grammar/).
 :::
 
 ## 高频考点 Top 40||Top 40 Grammar Points

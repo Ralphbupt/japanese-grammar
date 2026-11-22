@@ -7,6 +7,25 @@
 The second JLPT session of 2026 is on **Sunday, December 6, 2026**. This page gathers what you need before the exam: sections and timing for each level, pass marks (including the per-section minimums many people overlook), a six-week final review plan, time allocation inside the test, and an exam-day checklist. The grammar review links straight to the matching lessons and comparison pages on this site.
 :::
 
+## 最后一周怎么过||The Final Week
+
+:::zh
+- **不学新语法**。把语法清单里标过"不会"的条目再过一遍，到对应的课看例句，就够了。
+- **每天 20–30 分钟听力**，保持耳朵的状态。可以做 [听力练习](/listening/)，或者把 [语法听读](/grammar-audio/) 当播客听。
+- **限时做一次阅读**，确认自己的时间分配（N1・N2 见下文"时间分配"）。
+- **前两天**：确认考场路线和入场时间，把准考证、证件、铅笔、橡皮、手表放进包里。
+- **前一天**：早睡，不刷题到深夜。
+- **考完**：用 [JLPT 估分器](/jlpt-score-calculator/) 填上每部分大概答对的题数，看看能不能过。
+:::
+:::en
+- **No new grammar.** Go back over the points you marked on your grammar list and reread their examples in the lessons — that's enough.
+- **20–30 minutes of listening a day** to keep your ear in: [listening practice](/listening/), or play [grammar audio](/grammar-audio/) like a podcast.
+- **One timed reading set** to check your pacing (N1/N2: see "Time allocation" below).
+- **Two days before**: check the route to your test site and the entry time; pack your voucher, ID, pencils, eraser and a watch.
+- **The night before**: sleep early — no late-night cramming.
+- **Afterwards**: put your rough number of correct answers per part into the [JLPT score calculator](/jlpt-score-calculator/) to see whether you're likely to pass.
+:::
+
 ## 考试科目与时长||Test Sections and Timing
 
 :::zh
@@ -45,7 +64,7 @@ For N1 and N2, vocabulary, grammar and reading are **one sitting**: the question
 
 两条都要满足：总分过线，**而且**每个计分科目都不低于单科最低分。总分 100 分但听力只有 18 分，照样不合格。所以复习时不能只盯着最擅长的那一科——最弱的一科先拉到 19 分以上，比强项再多拿 10 分更要紧。
 
-分数是"标准化得分"，不是答对题数直接换算，所以没法精确算出"错几道还能过"。比较稳妥的目标是：每科都按 60 分满分的一半左右准备。
+分数是"标准化得分"，不是答对题数直接换算，所以没法精确算出"错几道还能过"。比较稳妥的目标是：每科都按 60 分满分的一半左右准备。考完想估分，用 [JLPT 估分器](/jlpt-score-calculator/)。
 :::
 :::en
 | Level | Overall pass mark | Scored sections (max) | Section minimum |
@@ -58,7 +77,7 @@ For N1 and N2, vocabulary, grammar and reading are **one sitting**: the question
 
 You need both: the overall pass mark **and** at least the minimum in every scored section. A total of 100 with 18 in listening is still a fail. So don't revise only your strongest section — getting the weakest one safely above 19 matters more than another 10 points where you're already strong.
 
-Scores are scaled, not a direct count of correct answers, so nobody can tell you exactly how many questions you can miss. A safer target is roughly half of 60 in every section.
+Scores are scaled, not a direct count of correct answers, so nobody can tell you exactly how many questions you can miss. A safer target is roughly half of 60 in every section. For an estimate after the test, use the [JLPT score calculator](/jlpt-score-calculator/).
 :::
 
 ## 最后 6 周复习计划||The Last Six Weeks
@@ -179,11 +198,13 @@ Local host institutions announce the exact dates.
 ## 相关页面||Related Pages
 
 :::zh
+- [JLPT 估分器](/jlpt-score-calculator/)：考完按答对题数估分
 - [专题：易混语法对比](/guides/)
 - [JLPT 语法 Anki 卡组下载](/anki/)
 - [N5](/N5/)・[N4](/N4/)・[N3](/N3/)・[N2](/N2/)・[N1](/N1/) 级别总览
 :::
 :::en
+- [JLPT score calculator](/jlpt-score-calculator/): estimate your score after the test
 - [Guides: confusable grammar comparisons](/guides/)
 - [JLPT grammar Anki decks](/anki/)
 - Level overviews: [N5](/N5/), [N4](/N4/), [N3](/N3/), [N2](/N2/), [N1](/N1/)

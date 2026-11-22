@@ -10,7 +10,11 @@
 (function () {
   var cfg = document.getElementById('wt');
   if (!cfg) return;
-  var EN = cfg.getAttribute('data-en') === '1', LV = cfg.getAttribute('data-lv'), K = 'jp_quiz_v1';
+  // Lesson pages: one #wt for both language copies (data-src-zh / data-src-en),
+  // the page's own language picks; the audio pages say data-en / data-src.
+  var EN = cfg.hasAttribute('data-en') ? cfg.getAttribute('data-en') === '1' : (document.documentElement.lang || '').indexOf('zh') !== 0;
+  var SRC = cfg.getAttribute('data-src') || cfg.getAttribute(EN ? 'data-src-en' : 'data-src-zh');
+  var LV = cfg.getAttribute('data-lv'), VIA = cfg.getAttribute('data-via') || 'audio_page', K = 'jp_quiz_v1';
   function t(z, e) { return EN ? e : z; }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   var HOVER = !!window.matchMedia && matchMedia('(hover: hover) and (pointer: fine)').matches;
@@ -21,7 +25,7 @@
     '.q-wtip.q-wsheet{left:0!important;right:0;bottom:0;top:auto!important;width:auto!important;border-radius:16px 16px 0 0;padding:1rem 1.1rem calc(1rem + env(safe-area-inset-bottom))}' +
     '.q-wtip-w{font-size:1.35rem;font-weight:700}.q-wtip-w rt{font-size:.55em;font-weight:400}.q-wtip-m{margin:.3rem 0 .6rem}.q-wtip-muted{color:var(--text-muted,#888);font-size:.85rem}' +
     '.q-wtip-add{font:inherit;font-size:.88rem;padding:.35rem .8rem;border-radius:8px;border:1px solid var(--ui,#334);background:var(--ui,#334);color:var(--ui-on,#fff);cursor:pointer}' +
-    '.q-wtip-add.on{background:transparent;color:var(--ui,#334)}.q-wtip-x{position:absolute;right:.6rem;top:.4rem;border:0;background:none;color:inherit;font-size:1.3rem;cursor:pointer}';
+    '.q-wtip-add.on{background:transparent;color:var(--ui,#334)}.q-wtip-go{color:var(--ui,#334);font-size:.88rem}.q-wtip-x{position:absolute;right:.6rem;top:.4rem;border:0;background:none;color:inherit;font-size:1.3rem;cursor:pointer}';
   document.head.appendChild(css);
 
   function ld() {
@@ -31,7 +35,7 @@
   function sv(s) { s.at = Date.now(); try { localStorage.setItem(K, JSON.stringify(s)); } catch (e) {} if (window.jpSync) window.jpSync.changed(); }
   var WD = null, wdP = null;
   function load() {
-    if (!wdP) wdP = fetch(cfg.getAttribute('data-src')).then(function (r) { return r.json(); }).then(function (d) { WD = d; return d; }).catch(function () { wdP = null; WD = {}; return {}; });
+    if (!wdP) wdP = fetch(SRC).then(function (r) { return r.json(); }).then(function (d) { WD = d; return d; }).catch(function () { wdP = null; WD = {}; return {}; });
     return wdP;
   }
   function wordOf(w) { var e = WD && WD[w]; return typeof e === 'string' ? e : w; }
@@ -115,16 +119,18 @@
         '<div class="q-wtip-w" lang="ja">' + (e.r ? '<ruby>' + esc(e.k) + '<rp>(</rp><rt>' + esc(e.r) + '</rt><rp>)</rp></ruby>' : esc(e.k)) + '</div>' +
         (e.m ? '<div class="q-wtip-m">' + esc(e.m) + '</div>' : '<div class="q-wtip-m q-wtip-muted">' + t('释义还在补充中', 'Meaning coming soon') + '</div>') +
         '<button class="q-wtip-add' + (on ? ' on' : '') + '">' + (on ? t('✓ 已在生词本（点击移除）', '✓ In your word list (remove)') : t('＋ 加入生词本', '＋ Add to word list')) + '</button>' +
-        (HOVER && !on ? '<div class="q-wtip-muted" style="margin-top:.35rem">' + t('也可以直接点这个词', 'or just click the word') + '</div>' : '');
+        (HOVER && !on ? '<div class="q-wtip-muted" style="margin-top:.35rem">' + t('也可以直接点这个词', 'or just click the word') + '</div>' : '') +
+        // where the list is reviewed: the level's practice page, flashcards (#words)
+        (on ? '<div style="margin-top:.45rem"><a class="q-wtip-go" href="/' + (EN ? '' : 'zh/') + 'words/' + (LV ? '#' + LV.toLowerCase() : '') + '">' + t('去生词本背单词 →', 'Study your word list →') + '</a></div>' : '');
       place(box, el);
     });
   }
   function toggle(w) {
     var e = entry(w), s = ld(), on = !!s.words[e.k] && s.words[e.k].t > 0, n = Date.now();
-    s.words[e.k] = on ? { t: -n, q: (s.words[e.k] || {}).q } : { t: n, a: n, q: '', r: e.r, m: e.m, k: 0, due: n };
+    s.words[e.k] = on ? { t: -n, q: (s.words[e.k] || {}).q } : { t: n, a: n, q: '', r: e.r, m: e.m, k: 0, due: n, lv: (LV || '').toUpperCase() };
     sv(s); paint();
     try { dispatchEvent(new Event('jp-words')); } catch (x) {}
-    if (window.gaEvent) window.gaEvent(on ? 'word_remove' : 'word_add', { level: LV, via: 'audio_page' });
+    if (window.gaEvent) window.gaEvent(on ? 'word_remove' : 'word_add', { level: LV, via: VIA });
   }
   // capture: a click on a word never reaches the player's line handler
   document.addEventListener('click', function (e) {

@@ -135,6 +135,45 @@ function aboveLevel(level, q) {
   return ref ? map[ref] || map[ref.split("#")[0]] || null : null;
 }
 
+// Grammar points the real JLPT has asked (questions/exam-grammar/{n1,n2,n3}.json,
+// our own count of the papers: rows with `lesson: { id, no }`, `also`, `years`).
+// A grammar question whose first ref is one of them gets `zt` =
+// [{ lv, n, last }, …], the page's own level first, then higher, then lower:
+// shown after answering ("N3 真题考过 8 次 · N2 考过 3 次").
+const EXAM_POINTS = (() => {
+  const dir = path.join(__dirname, "questions", "exam-grammar"), out = new Map();
+  if (!fs.existsSync(dir)) return out;
+  for (const f of fs.readdirSync(dir).filter((f) => /^n\d\.json$/.test(f))) {
+    const lv = f.slice(0, 2).toUpperCase();
+    for (const r of JSON.parse(fs.readFileSync(path.join(dir, f), "utf-8"))) {
+      if (!r.lesson) continue;
+      for (const key of [`${r.lesson.id}#${r.lesson.no}`, ...(r.also || [])]) {
+        // several rows on one lesson point: count every sitting once
+        const e = out.get(key) || {};
+        (e[lv] = e[lv] || new Set()); r.years.forEach((y) => e[lv].add(y));
+        out.set(key, e);
+      }
+    }
+  }
+  return out;
+})();
+const EXAM_ORDER = ["N5", "N4", "N3", "N2", "N1"];
+function examTag(q, level) {
+  if (!GRAMMAR_TYPES.includes(q.type)) return null;
+  const ref = (q.refs || []).find((r) => !/#vocab$/.test(r)), e = ref && EXAM_POINTS.get(ref);
+  if (!e) return null;
+  const o = EXAM_ORDER.indexOf(level), rank = (lv) => { const i = EXAM_ORDER.indexOf(lv); return i === o ? -1 : i > o ? i : 10 + (o - i); };
+  // of: sittings we have at that level, only when the set is partial (N4 / N5)
+  return Object.keys(e).sort((a, b) => rank(a) - rank(b)).map((lv) => ({ lv, n: e[lv].size, last: [...e[lv]].sort().pop(), ...(EXAM_TOTAL[lv] < 30 ? { of: EXAM_TOTAL[lv] } : {}) }));
+}
+const EXAM_TOTAL = (() => {
+  const dir = path.join(__dirname, "questions", "exam-grammar"), out = {};
+  if (!fs.existsSync(dir)) return out;
+  for (const f of fs.readdirSync(dir).filter((f) => /^n\d\.json$/.test(f)))
+    out[f.slice(0, 2).toUpperCase()] = new Set(JSON.parse(fs.readFileSync(path.join(dir, f), "utf-8")).flatMap((r) => r.years)).size;
+  return out;
+})();
+
 // Mock test layout per level: sittings (minutes, types in order; each type
 // is one もんだい) and scoring (official sections, each a set of types).
 // The listening sitting is used only by a mock that has listening files; its
@@ -641,6 +680,7 @@ async function bundleLevel(level, ruby, mock) {
       why: q.why, wrong: q.wrong,
       rev: q.rev || 1,
       ...(!mock && aboveLevel(level, q) ? { pre: aboveLevel(level, q) } : {}),
+      ...((zt) => zt ? { zt } : {})(examTag(q, level)),
       // Wrong options can be made-up spellings or forms (来遇, かいしい) in the
       // reading / writing / grammar types: there only the right one, the kanji
       // forms (okj, real words) and 排序's pieces. Elsewhere (文脈規定, 言い換え,

@@ -223,7 +223,7 @@ function parseGrammarSections(md) {
       const descEnDash = enHeading.match(/\s[—–-]\s*(.+)$/);
       if (descEnParen) descriptionEn = descEnParen[1].trim();
       else if (descEnDash) descriptionEn = descEnDash[1].trim();
-      current = { term, description, descriptionEn, heading: headingText };
+      current = { term, description, descriptionEn, heading: headingText, no: +h2[1] };
       continue;
     }
     if (line.startsWith("## ") && current) {
@@ -454,7 +454,7 @@ async function main() {
           const ex0 = s.examples || s.examplesEn ? await buildExamples(s.examples, s.examplesEn) : { items: [] };
           onlineCards[level].push({
             id: `${lessonNum}:${vsTerm}`,
-            lesson: `lesson${lessonNum}`,
+            lesson: `lesson${lessonNum}`, ref: `lesson${lessonNum}#${s.no}`,   // the lesson point (/my-grammar/, "got it")
             term: { zh: vsTerm, en: vsTerm },
             desc: { zh: s.description && !/辨析|对照|对比/.test(s.description) ? s.description : "", en: s.descriptionEn || "" },
             meaning: { zh: mdHtml(s.meaning), en: mdHtml(s.meaningEn || s.meaning) },
@@ -473,7 +473,7 @@ async function main() {
           const descEn0 = s.descriptionEn || s.description;
           onlineCards[level].push({
             id: `${lessonNum}:${s.term}`,
-            lesson: `lesson${lessonNum}`,
+            lesson: `lesson${lessonNum}`, ref: `lesson${lessonNum}#${s.no}`,   // the lesson point (/my-grammar/, "got it")
             term: { zh: s.displayTerm, en: s.displayTermEn },
             desc: { zh: s.description || "", en: descEn0 || "" },
             meaning: { zh: mdHtml(s.meaning), en: mdHtml(s.meaningEn || s.meaning) },
@@ -535,7 +535,7 @@ async function main() {
         // The id is lesson + term so progress survives reordering.
         onlineCards[level].push({
           id: `${lessonNum}:${s.term}`,
-          lesson: `lesson${lessonNum}`,
+          lesson: `lesson${lessonNum}`, ref: `lesson${lessonNum}#${s.no}`,
           term: { zh: s.displayTerm, en: s.displayTermEn },
           desc: { zh: s.description || "", en: descEn || "" },
           meaning: { zh: mdHtml(s.meaning), en: mdHtml(meaningEn) },
@@ -836,6 +836,11 @@ function shareApkg(link, filename) {
   for (const [level, cards] of Object.entries(onlineCards)) {
     if (cards.length) fs.writeFileSync(path.join(__dirname, "dist", "quiz", `${level.toLowerCase()}-cards.json`), JSON.stringify(cards), "utf-8");
   }
+  // /my-grammar/ (site/my-grammar.js): every level's cards in one small index —
+  // [id, ref, lesson, term zh, term en, gloss zh, gloss en] — the full card file
+  // is fetched only for the levels being studied.
+  fs.writeFileSync(path.join(__dirname, "dist", "quiz", "grammar-index.json"), JSON.stringify(Object.fromEntries(Object.entries(onlineCards).map(([level, cards]) =>
+    [level, cards.filter((c) => c.ref).map((c) => [c.id, c.ref, c.lesson, c.term.zh, c.term.en, c.desc.zh, c.desc.en])]))), "utf-8");
   fs.writeFileSync(
     path.join(OUT_DIR, ".cards.json"),
     JSON.stringify(cardCache),

@@ -268,7 +268,21 @@
   window.jpShare = jpShare;
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeShare(); });
 
+  // The word list entry (top bar + phone bar): /words/ in the page's language.
+  // No count badge (owner, 2026-11-23: no red dot).
+  var BOOK_ICON = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>';
+  function wordsLink(cls) {
+    var zh = (document.documentElement.lang || '').indexOf('zh') === 0;
+    return '<a class="' + cls + '" href="' + (zh ? '/zh/' : '/') + 'words/" aria-label="' + (zh ? '生词本' : 'Word list') + '" title="' + (zh ? '生词本' : 'Word list') + '">' + BOOK_ICON +
+      '<span class="tc-words-l">' + (zh ? '生词本' : 'Words') + '</span></a>';
+  }
+  function addWordsToPhoneBar() {
+    var mb = document.getElementById('m-bar'), st = mb && mb.querySelector('[data-m="settings"]');
+    if (!st || mb.querySelector('.m-words')) return;
+    st.insertAdjacentHTML('beforebegin', wordsLink('m-btn m-words'));
+  }
   function buildTopBar() {
+    addWordsToPhoneBar();
     if (document.getElementById('top-controls')) return;
     var hasSearch = document.getElementById('search-btn');
     // Any page that loads the AI panel (lessons, practice pages, and a general mode elsewhere).
@@ -285,6 +299,8 @@
       // Theme (2026-11-16): out of the dialog, where 2% of readers ever found it;
       // opens the small menu of the five themes.
       '<button type="button" class="tc-pill tc-icon js-theme-btn" aria-label="主题 / Theme" aria-haspopup="true" aria-expanded="false"></button>' +
+      // 生词本 (2026-11-23): the word list's own page, with today's due count.
+      wordsLink('tc-pill tc-words') +
       // Account, and with it everything set once and left alone: share.
       '<button type="button" class="tc-pill tc-icon" id="tc-acct" data-open-settings aria-label="账号与设置 / Account & settings" title="账号与设置 / Account & settings">' + USER_ICON + '</button>';
     document.body.appendChild(bar);

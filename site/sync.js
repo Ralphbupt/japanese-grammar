@@ -123,7 +123,8 @@
     return out;
   }
 
-  // Lesson review ticks (gchecks: 'lesson05:2' → +ms ticked / −ms unticked,
+  // Lesson review ticks and "got it" per grammar point ('g:lesson48#3'; build.js
+  // gm script) (gchecks: 'lesson05:2' → +ms ticked / −ms unticked,
   // per box the later) and the furigana / language choice (ui: { hideRuby,
   // isEn, t }, the one chosen later). They live in their own localStorage keys
   // (jp_grammar_checks, jp_grammar_prefs); withLesson() / putLesson() carry
@@ -373,11 +374,10 @@
       if (x.cards) bits.push(t('卡片 ' + x.cards, x.cards + ' cards'));
       if (bits.length) rows.push('<li><b>' + l.toUpperCase() + '</b><span>' + bits.join(' · ') + '</span></li>');
     });
-    // 生词本 lives on the practice pages: a row linking to the one this reader uses most.
+    // 生词本: its own page, every level (/words/, site/words.js).
     var W = state().get().words || {}, live = Object.keys(W).filter(function (k) { return W[k] && W[k].t > 0; }), wn = live.length, wok = live.filter(function (k) { return W[k].ok; }).length;
     if (wn) {
-      var top = LEVELS.slice().sort(function (a, b) { return ((sum.levels[b] || {}).answers || 0) - ((sum.levels[a] || {}).answers || 0); })[0];
-      rows.push('<li><b>' + t('生词本', 'Words') + '</b><span><a href="' + (EN() ? '/' : '/zh/') + top + '-practice/#words">' + t('在学 ' + (wn - wok) + (wok ? ' · 已掌握 ' + wok : '') + ' · 查看', (wn - wok) + ' learning' + (wok ? ' · ' + wok + ' learned' : '') + ' · open') + '</a></span></li>');
+      rows.push('<li><b>' + t('生词本', 'Words') + '</b><span><a href="' + (EN() ? '/' : '/zh/') + 'words/">' + t('在学 ' + (wn - wok) + (wok ? ' · 已掌握 ' + wok : '') + ' · 查看', (wn - wok) + ' learning' + (wok ? ' · ' + wok + ' learned' : '') + ' · open') + '</a></span></li>');
     }
     var has = rows.length > 0;
     var h = '<div class="acct-head"><p class="acct-title">' + t('学习进度', 'Your progress') + '</p>' + (sum.days ? '<span class="acct-muted">' + t('练习过 ' + sum.days + ' 天', sum.days + (sum.days === 1 ? ' day' : ' days') + ' practised') + '</span>' : '') + '</div>' +

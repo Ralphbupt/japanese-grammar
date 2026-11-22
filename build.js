@@ -859,6 +859,12 @@ const JA_TITLES = {
   // guides (grammar/guides/)
   "wa-vs-ga": "は vs が",
   "jlpt-december-2026": "JLPT 12月 考前指南",
+  "jlpt-score-calculator": "JLPT 自己採点",
+  "jlpt-n2-past-exam-grammar": "N2 過去問の文法",
+  "jlpt-n3-past-exam-grammar": "N3 過去問の文法",
+  "jlpt-n1-past-exam-grammar": "N1 過去問の文法",
+  "jlpt-n4-past-exam-grammar": "N4 過去問の文法",
+  "jlpt-n5-past-exam-grammar": "N5 過去問の文法",
   "jlpt-listening-tips": "JLPT 聴解のコツ",
   "jlpt-reading-tips": "JLPT 読解のコツ",
   "jlpt-vocabulary-grammar-tips": "JLPT 文字・語彙・文法のコツ",
@@ -2171,6 +2177,156 @@ const AUDIO_FILES = new Set(
 );
 
 // h2/h3 titles of practice/answer sections: their items get no audio.
+// Real-test sittings per lesson grammar point, from our own count of the past
+// papers (questions/exam-grammar/{n1,n2,n3}.json, rows with lesson { id, no },
+// `also` and years). Keyed "lessonNN#K" → { N2: Set(years), N3: … }: one point
+// can be tested at several levels (〜うちに at N3 and N2); several rows on one
+// point (〜ばかりか, 〜ばかりでなく) give the union of their sittings.
+const EXAM_SEEN = (() => {
+  const dir = path.join(__dirname, "questions", "exam-grammar"), out = {};
+  if (!fs.existsSync(dir)) return out;
+  for (const f of fs.readdirSync(dir).filter((f) => /^n\d\.json$/.test(f)).sort()) {
+    const lv = f.slice(0, 2).toUpperCase();
+    for (const r of JSON.parse(fs.readFileSync(path.join(dir, f), "utf-8"))) {
+      if (!r.lesson) continue;
+      for (const k of [`${r.lesson.id}#${r.lesson.no}`, ...(r.also || [])]) {
+        const e = (out[k] = out[k] || {});
+        e[lv] = e[lv] || new Set();
+        r.years.forEach((y) => e[lv].add(y));
+      }
+    }
+  }
+  return out;
+})();
+// Sittings we have per level; under 30 the set is partial (N4 / N5) and the
+// tags say "of the N tests we have".
+const EXAM_TOTAL = (() => {
+  const dir = path.join(__dirname, "questions", "exam-grammar"), out = {};
+  if (!fs.existsSync(dir)) return out;
+  for (const f of fs.readdirSync(dir).filter((f) => /^n\d\.json$/.test(f)))
+    out[f.slice(0, 2).toUpperCase()] = new Set(JSON.parse(fs.readFileSync(path.join(dir, f), "utf-8")).flatMap((r) => r.years)).size;
+  return out;
+})();
+const examOf = (lv, en) => (EXAM_TOTAL[lv] < 30 ? (en ? ` (of the ${EXAM_TOTAL[lv]} tests we have)` : `（收录的 ${EXAM_TOTAL[lv]} 场里）`) : "");
+// The levels a point was tested at, the reader's own level first, then the
+// higher ones (N3 → N2 → N1), then lower: [{ lv, years (sorted) }].
+const EXAM_ORDER = ["N5", "N4", "N3", "N2", "N1"];
+function examLevels(seen, own) {
+  if (!seen) return [];
+  const o = EXAM_ORDER.indexOf(own), rank = (lv) => { const i = EXAM_ORDER.indexOf(lv); return i === o ? -1 : i > o ? i : 10 + (o - i); };
+  return Object.keys(seen).sort((a, b) => rank(a) - rank(b)).map((lv) => ({ lv, years: [...seen[lv]].sort() }));
+}
+// Grammar-audio items carry lesson + term, not the point number: find the
+// numbered heading of that lesson whose zh pattern is the term (or starts
+// with it, "〜からすると／〜からすれば"), then take its EXAM_SEEN entry.
+let LESSON_POINTS = null;
+function examSeenFor(lesson, term) {
+  if (!LESSON_POINTS) {
+    LESSON_POINTS = {};
+    for (const lv of ["N5", "N4", "N3", "N2", "N1"]) {
+      const dir = path.join(__dirname, "grammar", lv);
+      if (!fs.existsSync(dir)) continue;
+      for (const f of fs.readdirSync(dir)) {
+        const id = (f.match(/^(lesson\d+)/) || [])[1];
+        if (!id) continue;
+        LESSON_POINTS[id] = [...fs.readFileSync(path.join(dir, f), "utf-8").matchAll(/^## (\d+)\. (.+?)(?:\|\||$)/gm)]
+          .map((m) => ({ no: m[1], term: m[2].split(/[（(]/)[0].trim() }));
+      }
+    }
+  }
+  const t = (term || "").trim(), pts = LESSON_POINTS[lesson] || [];
+  const p = pts.find((x) => x.term === t) || pts.find((x) => x.term.split(/\s*[／\/]\s*/).includes(t));
+  return p ? EXAM_SEEN[`${lesson}#${p.no}`] || null : null;
+}
+// The tag shows the page's own level when the point was tested there, else
+// the nearest higher one (examLevels order).
+// Tap-a-word on lesson pages (since 2026-11-23): example sentences carry
+// data-wsp (audio pass), the vocabulary table's words are tappable with the
+// table's own reading and meaning, and each lesson gets a dictionary per
+// language (dist/quiz/w-lessonNN.{zh,en}.json) for site/word-tip.js. Words
+// with no meaning yet are listed in dist/.lesson-words-todo.json (write them
+// into questions/words/{level}.json, then rebuild).
+const LESSON_WORDS = (() => {
+  const lib = require("./build-words.js"), crypto = require("crypto"), todo = {};
+  const WT_HASH = crypto.createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "word-tip.js"), "utf-8")).digest("hex").slice(0, 8);
+  const vocab = (md) => {
+    const sec = (md.split(/^## 本课单词表.*$/m)[1] || "").split(/^## /m)[0], out = {};
+    for (const line of sec.split("\n")) {
+      const c = line.split("|").map((x) => x.trim());
+      if (c.length < 5 || !c[1] || /^-+$/.test(c[1]) || c[1] === "单词") continue;
+      const w = c[1].replace(/[*`]/g, ""), [zhRaw, enRaw = ""] = c[3].split("//");
+      if (!/[぀-ヿ一-鿿]/.test(w)) continue;
+      out[w] = { r: c[2].replace(/[*`]/g, ""), zh: zhRaw.split(/（|——/)[0].trim(), en: enRaw.replace(/^\s*\([^)]*\)\s*/, "").split(/\s+—\s+/)[0].trim() };
+    }
+    return out;
+  };
+  const page = (id, level, md, html) => {
+    const extra = vocab(md), key = `page:${id}`;
+    // the table's word cell (no furigana there): a word button
+    html = html.replace(/(<table class="word-table">[\s\S]*?<\/table>)/, (t) => t.replace(/<tr>\n<td>([^<]+)<\/td>/g, (m, w) =>
+      extra[w.trim()] ? `<tr>\n<td><span class="q-w" data-k="${w.trim()}" role="button" tabindex="0">${w}</span></td>` : m));
+    const d = lib.dictionary(key), seen = lib.SEEN[key] || new Map(), src = {};
+    for (const code of ["zh", "en"]) {
+      const out = {};
+      for (const [k, v] of Object.entries(d)) out[k] = typeof v === "string" ? v : extra[k] ? [extra[k].r, extra[k][code]] : v[1] ? [v[0], v[1][code]] : [v[0]];
+      for (const [k, x] of Object.entries(extra)) if (!out[k] || typeof out[k] === "string") out[k] = [x.r, x[code]];
+      const file = `w-${id}.${code}.json`, body = JSON.stringify(out);
+      fs.mkdirSync(path.join(__dirname, "dist", "quiz"), { recursive: true });
+      fs.writeFileSync(path.join(__dirname, "dist", "quiz", file), body);
+      src[code] = `${SITE_PATH}quiz/${file}?v=${crypto.createHash("md5").update(body).digest("hex").slice(0, 8)}`;
+    }
+    for (const [k, v] of Object.entries(d)) if (typeof v !== "string" && !v[1] && !extra[k]) {
+      (todo[level] = todo[level] || {})[k] = todo[level][k] || { w: k, r: v[0], lesson: id, ctx: (seen.get(k) || {}).ctx || "" };
+    }
+    fs.writeFileSync(path.join(__dirname, "dist", ".lesson-words-todo.json"), JSON.stringify(Object.fromEntries(Object.entries(todo).map(([lv, m]) => [lv, Object.values(m)])), null, 1));
+    return html + `\n<div id="wt" hidden data-src-zh="${src.zh}" data-src-en="${src.en}" data-lv="${level}" data-via="lesson"></div><script src="${SITE_PATH}word-tip.js?v=${WT_HASH}" defer></script>`;
+  };
+  return { lib, page };
+})();
+
+// Practice question id → grammar point, filled while the levels' banks are
+// written, saved as quiz/qrefs.json for /my-grammar/.
+const QREFS = {};
+
+// Checklist items → lesson points (questions/grammar-list-map.json:
+// { N5_grammar_list: { "<item zh text>": "lessonNN#K" } }).
+const GL_MAP = (() => {
+  const f = path.join(__dirname, "questions", "grammar-list-map.json");
+  const raw = fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf-8")) : {}, out = {};
+  for (const [page, m] of Object.entries(raw)) out[page] = Object.fromEntries(Object.entries(m).map(([k, v]) => [k.replace(/\s+/g, " ").trim(), v]));
+  return out;
+})();
+// The id build.js gives a lesson h2 (zh side, marked-escaped, spaces → _,
+// [<>"'&] dropped), for links to "lessonNN#K".
+let POINT_SLUGS = null;
+function pointSlug(ref) {
+  if (!POINT_SLUGS) {
+    POINT_SLUGS = {};
+    for (const lv of ["N5", "N4", "N3", "N2", "N1"]) {
+      const dir = path.join(__dirname, "grammar", lv);
+      if (!fs.existsSync(dir)) continue;
+      for (const f of fs.readdirSync(dir)) {
+        const id = (f.match(/^(lesson\d+)/) || [])[1];
+        if (!id) continue;
+        for (const m of fs.readFileSync(path.join(dir, f), "utf-8").matchAll(/^## (\d+)\. (.+?)(?:\|\||$)/gm)) {
+          const zh = `${m[1]}. ${m[2]}`.trim().replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+          POINT_SLUGS[`${id}#${m[1]}`] = zh.replace(/[\s　]+/g, "_").replace(/[<>"'&]/g, "");
+        }
+      }
+    }
+  }
+  return POINT_SLUGS[ref] || "";
+}
+function gaExam(items, level) {
+  for (const it of items) {
+    const s = examSeenFor(it.lesson, it.term) || (it.key ? examSeenFor(it.lesson, it.key.slice(it.key.indexOf(":") + 1)) : null);
+    const lvs = examLevels(s, level), top = lvs[0];
+    it.exam = top ? top.years : [];
+    if (top) { it.examLv = top.lv; it.examAll = lvs; }
+  }
+  return items;
+}
+
 const PRACTICE_HEADING = /练习|練習|Practice|Quiz|测验|改错|Error Correction|填空|Fill in|翻译|Translat|答案|Answers|选择|(?<!How to )Choose/i;
 
 // The text to speak for an example <li>, or "" if it isn't a model Japanese
@@ -2253,6 +2409,7 @@ async function main() {
   const audioRequests = [];
   const audioSeen = new Set();
   const lessonPages = []; // for individual page generation
+  await LESSON_WORDS.lib.init();   // kuromoji for the lessons' tap-a-word spans
   let firstId = null;
 
   for (const group of groups) {
@@ -2383,8 +2540,18 @@ async function main() {
         }
       );
       // Wrap each item in a <label> so the text names its checkbox (a11y) and
-      // clicking the text ticks it.
-      html = html.replace(/<li>(<input type="checkbox" data-lesson[^>]*>)([\s\S]*?)<\/li>/g, "<li><label>$1$2</label></li>");
+      // clicking the text ticks it. Checklist pages (N5_grammar_list …): an item
+      // that a lesson teaches (questions/grammar-list-map.json, keyed by the
+      // item's zh text) ticks that grammar point — data-g, the same 'g:lessonNN#K'
+      // state as the lesson's "got it" — and gets a → link to it.
+      const glMap = GL_MAP[file.id];
+      html = html.replace(/<li>(<input type="checkbox" data-lesson[^>]*>)([\s\S]*?)<\/li>/g, (m, input, body) => {
+        const zh = ((body.match(/<span class="lang-zh">([\s\S]*?)<\/span>/) || [])[1] || body).replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+        const ref = glMap && glMap[zh];
+        if (!ref) return `<li><label>${input}${body}</label></li>`;
+        const slug = pointSlug(ref), [lid] = ref.split("#");
+        return `<li><label>${input.replace("<input ", `<input data-g="${ref}" `)}${body}</label> <a class="gl-go" href="${SITE_PATH}${lid}/${slug ? "#" + encodeURI(slug) : ""}" aria-label="${lid}">→</a></li>`;
+      });
 
       // Extract grammar points from h2 headings — feeds the per-level 速查表,
       // lesson pills, RSS descriptions, and SEO titles/descriptions.
@@ -2492,6 +2659,39 @@ async function main() {
         return `<h2${attrs} id="${slug}">${content}</h2>`;
       });
 
+      // Grammar points the real test has asked (EXAM_SEEN): a line under the
+      // numbered heading with the sittings and a link to the level's list.
+      html = html.replace(/(<h2\b[^>]*>)([\s\S]*?)(<\/h2>)/g, (m, open, content) => {
+        const no = (content.replace(/<[^>]+>/g, "").match(/^\s*(\d+)\./) || [])[1];
+        const lvs = no ? examLevels(EXAM_SEEN[`${file.id}#${no}`], groupLevel) : [];
+        if (!lvs.length) return m;
+        const ZH = (ys) => ys.map((y) => `${y.slice(0, 4)}年${+y.slice(5)}月`).join("、");
+        const EN = (ys) => ys.map((y) => `${+y.slice(5) === 7 ? "Jul" : "Dec"} ${y.slice(0, 4)}`).join(", ");
+        const href = (lv) => `${SITE_PATH}jlpt-${lv.toLowerCase()}-past-exam-grammar/`;
+        if (lvs.length === 1) {
+          const { lv, years } = lvs[0];
+          return `${m}\n<p class="exam-seen"><span class="lang-zh">📝 ${lv} 真题考过 ${years.length} 次${examOf(lv, false)}：${ZH(years)}（<a href="${href(lv)}">${lv} 历年真题语法</a>）</span><span class="lang-en">📝 On past JLPT ${lv} tests ${years.length === 1 ? "once" : `${years.length} times`}${examOf(lv, true)}: ${EN(years)} (<a href="${href(lv)}">${lv} grammar from past tests</a>)</span></p>`;
+        }
+        // tested at several levels: counts per level, the sittings on hover
+        const zh = lvs.map(({ lv, years }) => `<a href="${href(lv)}" title="${ZH(years)}">${lv} 考过 ${years.length} 次${examOf(lv, false)}</a>`).join(" · ");
+        const en = lvs.map(({ lv, years }) => `<a href="${href(lv)}" title="${EN(years)}">${lv} ${years.length}×${examOf(lv, true)}</a>`).join(" · ");
+        return `${m}\n<p class="exam-seen"><span class="lang-zh">📝 真题：${zh}</span><span class="lang-en">📝 On past JLPT tests: ${en}</span></p>`;
+      });
+      // "Got it" on every numbered grammar point (not practice / comparison /
+      // review headings), first in the exam line when there is one. State: the
+      // gm script in the page (jp_grammar_checks 'g:lessonNN#K').
+      if (/^lesson\d/.test(file.id)) {
+        html = html.replace(/(<h2\b[^>]*>([\s\S]*?)<\/h2>)(\n<p class="exam-seen">)?/g, (m, h2, content, exam) => {
+          const text = content.replace(/<[^>]+>/g, "");
+          const no = (text.match(/^\s*(\d+)\./) || [])[1];
+          // comparison tables and reviews are not points; "比较表达" (comparatives) is
+          if (!no || PRACTICE_HEADING.test(text) || /比较表(?!达)|比較表(?!現)|对比表|辨析|复习|总结|\svs\s|Review|Summary/i.test(text)) return m;
+          // + the "add to my grammar cards" toggle (/my-grammar/, 'gs:lessonNN#K')
+          const btn = `<button type="button" class="gotit" data-g="${file.id}#${no}" aria-pressed="false"><span class="lang-zh">已掌握</span><span class="lang-en">Got it</span></button><button type="button" class="gotit gotit-add" data-ga="${file.id}#${no}" aria-pressed="false"><span class="lang-zh">语法卡</span><span class="lang-en">Grammar card</span></button>`;
+          return exam ? `${h2}${exam}${btn}` : `${h2}\n<p class="exam-seen">${btn}</p>`;
+        });
+      }
+
       // Add furigana (kana-based detection)
       console.log(`  Processing ${file.id}...`);
       html = await addRomaji(kuro, html);
@@ -2520,9 +2720,17 @@ async function main() {
         // the brackets stay in the text (copy, AI quote cleaning) but are hidden.
         content = content.replace(/\s*([（(])([^（()）]+)([)）])\s*$/, (m, open, inner, close) =>
           `<span class="ex-tr"><span class="ex-p">${open}</span>${inner}<span class="ex-p">${close}</span></span>`);
+        // Tap-a-word (site/word-tip.js): the sentence's [surface, lemma] pairs,
+        // and the words go into this lesson's dictionary (LESSON_WORDS below).
+        let wsp = "";
+        if (/^lesson\d/.test(file.id)) {
+          LESSON_WORDS.lib.wordsOf(`page:${file.id}`, [plain]);
+          const sp = LESSON_WORDS.lib.spansOf(plain);
+          if (sp.length) wsp = ` data-wsp="${JSON.stringify(sp).replace(/&/g, "&amp;").replace(/"/g, "&quot;")}"`;
+        }
         // Only show 🔊 once the mp3 exists (build-audio.py fills the gaps).
-        if (!AUDIO_FILES.has(audioId)) return `<li data-ja data-ex${attrs}>${content}</li>`;
-        return `<li data-ja data-ex${attrs} data-audio="${audioId}">${content}</li>`;
+        if (!AUDIO_FILES.has(audioId)) return `<li data-ja data-ex${attrs}${wsp}>${content}</li>`;
+        return `<li data-ja data-ex${attrs}${wsp} data-audio="${audioId}">${content}</li>`;
       });
 
       const lessonMatch = file.id.match(/^lesson(\d+)/);
@@ -2539,6 +2747,10 @@ async function main() {
       articlesHtml.push(
         `<article id="${file.id}" class="lesson">${html}</article>`
       );
+      // Lesson pages: the vocabulary table's words are tappable too (their own
+      // reading and meaning win in the dictionary), and the page gets the
+      // word-tip script with this lesson's dictionary (one per language).
+      if (/^lesson\d/.test(file.id)) html = LESSON_WORDS.page(file.id, group.label, md, html);
       lessonPages.push({ id: file.id, title, sidebarTitle, html, jaTitle: jaTitle || shortTitle, filePath: file.path, grammarPoints, cleanPoints, cleanPointsEn, level: group.label, md, topLead, firstMeaningZh, topLeadEn, firstMeaningEn, lastMod: lessonLastMod, firstMod: lessonFirstMod, readingMin });
     }
     // Accordion group: clickable level header toggles its lesson list. The
@@ -3286,7 +3498,7 @@ ${AI_SCRIPT}
   // ─── Generate individual lesson pages ───
   // Pages published once per language (PAGE_LANGS); links to them on a
   // non-root copy point at that language's copy.
-  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "changelog", "practice", "listening", "reading", "vocabulary", "mock-test", "grammar-audio", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`, `${l}-grammar-audio`, `${l}-vocabulary-list`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
+  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "changelog", "practice", "listening", "reading", "vocabulary", "mock-test", "grammar-audio", "words", "my-grammar", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`, `${l}-grammar-audio`, `${l}-vocabulary-list`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
   // "Practice this point" at the end of every grammar point that has practice
   // questions (questions/N*/lessonNN.json refs), linking to the practice page.
   const quizRefCount = {};
@@ -3594,10 +3806,22 @@ ${APP_PREFS_JS}
   }
   // A value is the time of the tick (ms; 1 before 2026-11-18), negative once
   // unticked, so sync.js can merge two devices' boxes by whichever was later.
+  // A checklist item a lesson teaches carries data-g: its state is that grammar
+  // point's 'g:lessonNN#K' (the lessons' "got it"). Ticks saved before 2026-11-23
+  // were by position ('N5_grammar_list:7'); they move to the point once.
+  function keyOf(cb) { var g = cb.getAttribute('data-g'); return g ? 'g:' + g : cb.getAttribute('data-lesson') + ':' + cb.getAttribute('data-idx'); }
+  (function migrate() {
+    var c = loadChecks(), moved = false;
+    boxes.forEach(function(cb){
+      var g = cb.getAttribute('data-g'), old = cb.getAttribute('data-lesson') + ':' + cb.getAttribute('data-idx');
+      if (g && c[old] && c['g:' + g] == null) { c['g:' + g] = c[old]; moved = true; }
+    });
+    if (moved) { saveChecks(c); if (window.jpSync) window.jpSync.changed(); }
+  })();
   function applyChecks() {
     var checks = loadChecks();
     boxes.forEach(function(cb){
-      var on = (checks[cb.getAttribute('data-lesson') + ':' + cb.getAttribute('data-idx')] || 0) > 0;
+      var on = (checks[keyOf(cb)] || 0) > 0;
       cb.checked = on; cb.closest('li').classList.toggle('checked', on);
     });
     updateProgress();
@@ -3605,11 +3829,10 @@ ${APP_PREFS_JS}
   boxes.forEach(function(cb){
     cb.addEventListener('change', function(){
       var c = loadChecks();
-      var k = this.getAttribute('data-lesson') + ':' + this.getAttribute('data-idx');
+      var k = keyOf(this);
       c[k] = this.checked ? Date.now() : -Date.now();
-      this.closest('li').classList.toggle('checked', this.checked);
       saveChecks(c);
-      updateProgress();
+      applyChecks();   // other items on the same grammar point follow
       if (window.jpSync) window.jpSync.changed();
     });
   });
@@ -3628,6 +3851,73 @@ ${APP_PREFS_JS}
     if (lesson) anchor.before(div); else anchor.after(div);
   }
   applyChecks();
+})();
+// "Got it" per grammar point (button.gotit[data-g] under lesson headings and in
+// the past-test grammar tables): the same jp_grammar_checks store as the boxes,
+// key 'g:lessonNN#K' (or 'g:x:N2:pattern' for patterns without a lesson),
+// value ±ms, so sync.js carries and merges it. #gotit-sum (past-test pages) shows
+// how many are done and can hide the done rows.
+(function(){
+  var btns = document.querySelectorAll('button.gotit[data-g]');
+  if (!btns.length) return;
+  var K = 'jp_grammar_checks', zh = (document.documentElement.lang || '').indexOf('zh') === 0;
+  function load() { try { return JSON.parse(localStorage.getItem(K)) || {}; } catch (e) { return {}; } }
+  function save(c) { try { localStorage.setItem(K, JSON.stringify(c)); } catch (e) {} }
+  var sum = document.getElementById('gotit-sum'), hide = false;
+  try { hide = localStorage.getItem('jp_gm_hide') === '1'; } catch (e) {}
+  function summary() {
+    if (!sum) return;
+    var all = 0, done = 0, hi = 0, hiDone = 0;
+    btns.forEach(function (b) {
+      var on = b.getAttribute('aria-pressed') === 'true', n = +b.getAttribute('data-n') || 0;
+      all++; if (on) done++;
+      if (n >= 3) { hi++; if (on) hiDone++; }
+    });
+    sum.innerHTML = '<span class="gotit-sum-t">' + (zh
+        ? '已掌握 <b>' + done + '</b> / ' + all + (hi ? ' · 考过 3 次以上的 <b>' + hiDone + '</b> / ' + hi : '')
+        : 'Got <b>' + done + '</b> of ' + all + (hi ? ' · tested 3+ times: <b>' + hiDone + '</b> of ' + hi : '')) +
+      '</span><button type="button" class="gotit-hide" aria-pressed="' + hide + '">' + (zh ? '只看没掌握的' : 'Hide the ones I know') + '</button>';
+    document.documentElement.classList.toggle('gotit-hiding', hide);
+  }
+  function apply() {
+    var c = load();
+    btns.forEach(function (b) {
+      var on = (c['g:' + b.getAttribute('data-g')] || 0) > 0;
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      b.title = on ? (zh ? '已掌握（再点一下取消）' : 'Got it (tap again to undo)') : (zh ? '标记为已掌握' : 'Mark as learned');
+      var row = b.closest('tr'); if (row) row.classList.toggle('gotit-on', on);
+    });
+    // "＋ 语法卡" (button.gotit-add[data-ga]): in /my-grammar/'s review list ('gs:…' > 0)
+    adds.forEach(function (b) {
+      var on = (c['gs:' + b.getAttribute('data-ga')] || 0) > 0;
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      b.title = on ? (zh ? '已在我的语法卡（再点一下移出）' : 'In my grammar cards (tap again to remove)') : (zh ? '加入我的语法卡，之后在「我的语法卡」页背' : 'Add to my grammar cards, to study on the grammar cards page');
+    });
+    summary();
+  }
+  var adds = document.querySelectorAll('button.gotit-add[data-ga]');
+  document.addEventListener('click', function (e) {
+    var h = e.target.closest && e.target.closest('.gotit-hide');
+    if (h) { hide = !hide; try { localStorage.setItem('jp_gm_hide', hide ? '1' : '0'); } catch (x) {} summary(); return; }
+    var ad = e.target.closest && e.target.closest('button.gotit-add[data-ga]');
+    if (ad) {
+      var c2 = load(), k2 = 'gs:' + ad.getAttribute('data-ga'), on2 = !((c2[k2] || 0) > 0);
+      c2[k2] = on2 ? Date.now() : -Date.now();
+      save(c2); apply();
+      if (window.jpSync) window.jpSync.changed();
+      if (window.gaEvent) window.gaEvent('grammar_card_add', { g: ad.getAttribute('data-ga'), on: on2 ? 1 : 0 });
+      return;
+    }
+    var b = e.target.closest && e.target.closest('button.gotit[data-g]');
+    if (!b) return;
+    var c = load(), k = 'g:' + b.getAttribute('data-g'), on = !((c[k] || 0) > 0);
+    c[k] = on ? Date.now() : -Date.now();
+    save(c); apply();
+    if (window.jpSync) window.jpSync.changed();
+    if (window.gaEvent) window.gaEvent('grammar_mastered', { g: b.getAttribute('data-g'), on: on ? 1 : 0, page: location.pathname });
+  });
+  document.addEventListener('jp-checks', apply);   // ticks from another device arrived
+  apply();
 })();
 </script>
 </body>
@@ -4353,7 +4643,15 @@ ${AI_SCRIPT}
         head = `<h2 class="ga-lh" id="ga-${it.lesson}" data-go="${g}">${gr ? gr.label : t(`第 ${num} 课`, `Lesson ${num}`)}<small>${gaEsc(title)}</small><span class="ga-pl" data-go="${g}" data-lesson="1">▶ ${gr ? t("播放本组", "Play group") : t("播放本课", "Play lesson")}</span></h2>`;
       }
       const more = it.ex.slice(it.read), vs = it.vs ? it.vs[code] : "", exam = it.exam || [];
-      const examTag = exam.length ? `<span class="ga-exam" title="${gaEsc(exam.join(", "))}">${t(`真题考过 ${exam.length} 次`, `On the real test ${exam.length}×`)}</span>` : "";
+      // Every level the point was tested at (the page's own first), the first
+      // level's sittings written out (a tooltip is invisible on phones), and a
+      // link to that level's past-test list. N4 / N5: "of the 7 tests we have".
+      const all = it.examAll || (exam.length ? [{ lv: it.examLv || "", years: exam }] : []);
+      const short = (lv) => (EXAM_TOTAL[lv] < 30 ? t(`（${EXAM_TOTAL[lv]} 场中）`, ` (of ${EXAM_TOTAL[lv]})`) : "");
+      const ys = (y) => y.map((x) => (zh ? `${x.slice(0, 4)}.${+x.slice(5)}` : `${+x.slice(5) === 7 ? "Jul" : "Dec"} ${x.slice(0, 4)}`)).join(zh ? "、" : ", ");
+      const examTag = all.length ? `<a class="ga-exam" href="${SITE_PATH}${zh ? "zh/" : ""}jlpt-${all[0].lv.toLowerCase()}-past-exam-grammar/" title="${gaEsc(all.map((x) => `${x.lv}: ${ys(x.years)}`).join(" / "))}">` +
+        all.map((x, k) => k === 0 ? t(`${x.lv} 真题考过 ${x.years.length} 次${short(x.lv)}`, `On the real ${x.lv} test ${x.years.length}×${short(x.lv)}`) : t(`${x.lv} ${x.years.length} 次`, `${x.lv} ${x.years.length}×`)).join(" · ") +
+        `</a><span class="ga-exam-y">${ys(all[0].years)}</span>` : "";
       return head + `<section class="ga-it"${o.itemAttr ? o.itemAttr(it) : ""}>` + (o.itemHead ? o.itemHead(it, g, ++no) : `<p class="ga-hd"><span class="ga-no">${++no}</span><span class="ga-ln ga-g" data-l="${g}" lang="ja">${gaEsc(it.term.replace(/^〜/, ""))}</span>${examTag}<a class="ga-ls" href="${SITE_PATH}${it.lesson}/">${t("讲解", "Lesson")} →</a></p>`) +
         (it.form && it.form[code] && it.form[code].length ? `<p class="ga-form">${it.form[code].map((f) => `<code>${gaEsc(f)}</code>`).join("")}</p>` : "") +
         `<p class="ga-ln ga-m" data-l="${m}">${gaEsc(it.mean[code])}</p>` +
@@ -4380,7 +4678,7 @@ ${AI_SCRIPT}
 .ga-ln{cursor:pointer;border-radius:6px;padding:.1rem .3rem;margin-left:-.3rem;margin-right:-.3rem}
 .ga-ln:hover{background:var(--ui-soft)}.ga-ln.ga-cur{background:var(--chip-bg,#fff3c4);box-shadow:inset 3px 0 0 var(--ui)}
 .ga-g{font-size:1.35rem;font-weight:700}.ga-ls{margin-left:auto;font-size:.8rem;white-space:nowrap}
-.ga-exam{font-size:.72rem;border-radius:10px;padding:.05rem .5rem;background:var(--accent);color:#fff;white-space:nowrap}
+.ga-exam{font-size:.72rem;border-radius:10px;padding:.05rem .5rem;background:var(--accent);color:#fff;white-space:nowrap;text-decoration:none}.ga-exam:hover{color:#fff;opacity:.88}.ga-exam-y{font-size:.72rem;color:var(--text-muted)}
 .ga-form{display:flex;flex-wrap:wrap;gap:.35rem;margin:.35rem 0 .1rem}.ga-form code{font:inherit;font-size:.85rem;background:var(--chip-bg);border-radius:6px;padding:.05rem .5rem}
 .ga-m{margin:.4rem 0 .2rem}
 .ga-ex{margin:.55rem 0 0;padding-left:.6rem;border-left:3px solid var(--border,#ddd)}.ga-ex p{margin:0}
@@ -4403,7 +4701,11 @@ ${(() => {
   const tocNav = `<nav class="ga-toc" aria-label="${t("按课跳转", "Jump to a lesson")}"${o.settings ? " hidden" : ""}><span>${o.tocLabel || t("课：", "Lesson:")}</span>${toc.join("")}</nav>`;
   // A page with more controls (vocabulary list) keeps its own on top and folds the reading settings away
   if (o.settings) return `<div id="ga-ctl">${o.ctlExtra || ""}${o.settings({ modes, trs, hide })}${tocNav}</div>`;
-  return `<div id="ga-ctl"><div class="ga-row">${modes}\n${trs}${hide}</div>\n${tocNav}${o.ctlExtra || ""}</div>`;
+  // Grammar audio (not the vocabulary list): what is read — everything, only the
+  // Japanese (pattern + examples, no meaning / translation), or only the examples
+  // (translations still follow 念翻译). site/grammar-audio.js data-ga-say.
+  const say = o.itemHead ? "" : `<div class="ga-row ga-say" role="group" aria-label="${t("朗读内容", "What to read")}"><button type="button" data-ga-say="all" aria-pressed="true">${t("全部朗读", "Read everything")}</button><button type="button" data-ga-say="ja" aria-pressed="false">${t("只读日语", "Japanese only")}</button><button type="button" data-ga-say="ex" aria-pressed="false">${t("只读例句", "Examples only")}</button></div>`;
+  return `<div id="ga-ctl"><div class="ga-row">${modes}\n${trs}${hide}</div>\n${say}${tocNav}${o.ctlExtra || ""}</div>`;
 })()}
 <div id="ga-bar"><div class="ga-row"><button type="button" id="ga-play" aria-label="${t("播放", "Play")}" data-play="${t("播放", "Play")}" data-pause="${t("暂停", "Pause")}"></button>
 <input id="ga-seek" type="range" min="0" max="1000" value="0" aria-label="${t("进度", "Position")}"><span id="ga-time">0:00 / ${Math.floor(tr.duration / 60)}:${String(Math.floor(tr.duration % 60)).padStart(2, "0")}</span>
@@ -4860,6 +5162,9 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
     // word tap; each page language's bundle carries its own copy's address.
     if (practice.words) { practice.wsrc = writeQuizDataByLang(`${lv}-words.json`, practice.words); delete practice.words; }
     const src = writeQuizDataByLang(`${lv}.json`, practice);
+    // question id → its grammar point (first non-vocabulary ref), every level in
+    // one small file: /my-grammar/ finds the points a reader keeps missing.
+    for (const q of practice.questions) { const r = (q.refs || []).find((x) => !/#vocab$/.test(x)); if (r) QREFS[q.id] = r; }
     const count = practice.questions.length;
     const meta = {
       en: {
@@ -4972,6 +5277,7 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
     // tools/grammar-audio.py from the flashcard data; player: site/grammar-audio.js.
     if (hasGa) {
       const ga = JSON.parse(fs.readFileSync(gaFile, "utf-8")), n = ga.items.length;
+      gaExam(ga.items, level);
       ga.words = await pageWords(gaId, ga.items);
       const gaMeta = {
         en: {
@@ -5318,6 +5624,72 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
     quizPageIds.push(id);
     console.log(`  Generated dist/${id}/ (hub)`);
   };
+  // /words/: the reader's word list on its own page, all levels (site/words.js;
+  // the same jp_quiz_v1 words every page adds to). word-levels.json: lemma → the
+  // lowest level whose meanings file has it, for words saved without a level.
+  {
+    const order = ["N5", "N4", "N3", "N2", "N1"], levels = {};
+    for (const lv of order) {
+      const f = path.join(__dirname, "questions", "words", `${lv}.json`);
+      if (!fs.existsSync(f)) continue;
+      for (const [k, v] of Object.entries(JSON.parse(fs.readFileSync(f, "utf-8")))) if (v && !v.skip && !levels[k]) levels[k] = lv;
+    }
+    const levelsSrc = writeQuizData("word-levels.json", levels);
+    const WB_JS = fs.readFileSync(path.join(__dirname, "site", "words.js"), "utf-8");
+    fs.writeFileSync(path.join(__dirname, "dist", "words.js"), WB_JS, "utf-8");
+    const wbHash = require("crypto").createHash("md5").update(WB_JS).digest("hex").slice(0, 8);
+    const wbCss = `<style>#wb-app,#mg-app{margin-top:1rem}.wb-switch{margin:1rem 0 0;font-size:.95rem}.wb-switch b{color:var(--text)}.wb-tabs{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 1rem}.wb-tabs button{font:inherit;font-size:.9rem;padding:.3rem .85rem;border-radius:var(--radius-pill,16px);border:1px solid var(--border);background:var(--card-bg);color:var(--ui);cursor:pointer}.wb-tabs button small{color:var(--text-muted)}.wb-tabs button[aria-selected=true]{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}.wb-tabs button[aria-selected=true] small{color:inherit;opacity:.8}
+.wb-sum{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem;padding:.7rem .9rem;border-radius:var(--radius);background:var(--chip-bg);margin:0 0 1rem}
+.wb-btn{font:inherit;font-size:.88rem;padding:.35rem .8rem;border-radius:8px;border:1px solid var(--border);background:var(--card-bg);color:var(--ui);cursor:pointer;white-space:nowrap}.wb-primary{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}.wb-big{font-size:1.05rem;padding:.6rem 1.6rem}
+.wb-list{list-style:none;padding:0;margin:0}.wb-list li{display:grid;grid-template-columns:minmax(6rem,auto) 1fr auto;gap:.3rem 1rem;align-items:center;padding:.65rem .2rem;border-bottom:1px solid var(--border)}
+.wb-w{font-size:1.25rem;font-weight:600}.wb-w rt{font-size:.55em;font-weight:400}.wb-meta{font-size:.8rem;color:var(--text-muted);margin-top:.15rem}.wb-lv{display:inline-block;font-size:.72rem;padding:0 .4rem;margin-right:.45rem;border:1px solid var(--border);border-radius:6px}
+.wb-acts{display:flex;gap:.35rem}.wb-pages{display:flex;flex-wrap:wrap;gap:.35rem;margin:1rem 0}.wb-pages button:disabled{opacity:.4;cursor:default}.wb-pg.on{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}.wb-done{margin-top:1.4rem}.wb-done summary{cursor:pointer;font-weight:600;margin-bottom:.4rem}.wb-muted{color:var(--text-muted)}.wb-empty{padding:1.2rem 1rem;border:1px dashed var(--border);border-radius:var(--radius)}
+.wb-top{display:flex;gap:1rem;align-items:center;margin-bottom:1rem;color:var(--text-muted)}.wb-link{font:inherit;border:0;background:none;color:var(--ui);cursor:pointer;padding:0}
+.wb-card{text-align:center;padding:2rem 1rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--card-bg)}.wb-card-w{font-size:2.4rem;font-weight:700;margin:.4rem 0 1rem}.wb-card-w rt{font-size:.45em;font-weight:400}.wb-card-m{font-size:1.1rem;margin:0 0 1.2rem}.wb-card-acts{display:flex;justify-content:center;gap:.6rem;flex-wrap:wrap}.wb-card kbd{font-size:.7rem;opacity:.6}
+@media (max-width:600px){.wb-list li{grid-template-columns:1fr auto}.wb-acts{grid-column:1/-1}}</style>`;
+    const meta = {
+      en: { title: "My Japanese Word List — Review Saved Words with Flashcards", desc: "Every Japanese word you saved on jpnotes.dev, from lessons, practice questions and audio pages, sorted by JLPT level, with spaced-repetition flashcards.", h1: "My word list", crumb: "Word list",
+        lead: "Every word you added anywhere on the site — lesson examples, practice questions, grammar audio, vocabulary lists — in one place, sorted by JLPT level. Study the ones due today with flashcards; a word you keep remembering moves to “learned”." },
+      zh: { title: "我的生词本 - 全站收藏的日语单词，按级别背", desc: "你在 jpnotes.dev 课文、练习题、语法听读页加入的所有日语单词，按 JLPT 级别分开，用间隔重复的单词卡背。", h1: "我的生词本", crumb: "生词本",
+        lead: "你在全站加入的单词都在这里：课文例句、练习题、语法听读、高频词汇……按 JLPT 级别分开。每天背到期的词，一直记得的会移到「已掌握」。登录后在各设备同步。" },
+    };
+    for (const lang of PAGE_LANGS) {
+      const en = lang.code === "en", v = langVariant("words", lang), m = meta[lang.code];
+      writeLangPage("words", lang, localizePage(renderQuiz(lang, {
+        ...m, nav: "", ogImage: "og-image.png",
+        body: `${wbCss}<p class="wb-switch">${en ? `<b>Word list</b> · <a href="${SITE_PATH}my-grammar/">Grammar cards</a>` : `<b>生词本</b> · <a href="${SITE_PATH}zh/my-grammar/">语法卡</a>`}</p><div id="wb-app" data-levels="${levelsSrc}"><p class="wb-muted">${en ? "Loading…" : "加载中…"}</p></div><script src="${SITE_PATH}words.js?v=${wbHash}" defer></script>`,
+        about: "",
+        schema: JSON.stringify([{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: en ? "Japanese Grammar Notes" : "日语语法笔记", item: SITE }, { "@type": "ListItem", position: 2, name: m.crumb, item: v.url }] }]).replace(/</g, "\\u003c"),
+      }, v, "", null), lang, localizedPageIds));
+    }
+    console.log("  Generated dist/words/ (word list)");
+
+    // /my-grammar/: the reader's grammar cards (site/my-grammar.js): points added
+    // on lesson pages or missed in practice (quiz/qrefs.json), learned = "got it";
+    // the card index and card files come from build-anki.js (run after this in CI).
+    const qrefsSrc = writeQuizData("qrefs.json", QREFS);
+    const MG_JS = fs.readFileSync(path.join(__dirname, "site", "my-grammar.js"), "utf-8");
+    fs.writeFileSync(path.join(__dirname, "dist", "my-grammar.js"), MG_JS, "utf-8");
+    const mgHash = require("crypto").createHash("md5").update(MG_JS).digest("hex").slice(0, 8);
+    const mgCss = `<style>.mg-term{font-size:1.1rem}.mg-card-lv{font-size:.8rem;color:var(--text-muted);margin:0}.mg-back{text-align:left;max-width:40rem;margin:0 auto 1.2rem;line-height:1.75}.mg-back table{border-collapse:collapse;font-size:.9rem}.mg-back td,.mg-back th{border:1px solid var(--border);padding:.25rem .5rem}.mg-ex{padding-left:1.2rem}.mg-ex li{margin:.5rem 0}.mg-muted{color:var(--text-muted)}</style>`;
+    const mgMeta = {
+      en: { title: "My Japanese Grammar Cards — Review the Points You Miss", desc: "The grammar points you saved or keep missing in practice on jpnotes.dev, sorted by JLPT level, with flashcards; the ones you've learned in a list of their own.", h1: "My grammar cards", crumb: "Grammar cards",
+        lead: "The grammar points you added from the lessons, plus the ones you keep missing in practice, sorted by JLPT level — study them with flashcards. Points you ticked “Got it” are listed as learned." },
+      zh: { title: "我的语法卡 - 收藏和做错的日语语法，按级别背", desc: "你在 jpnotes.dev 课文里加入的语法点、练习里常做错的语法点，按 JLPT 级别分开，用卡片背；标了已掌握的单独列出。", h1: "我的语法卡", crumb: "语法卡",
+        lead: "你从课文里加入的语法点，加上练习里做错的语法点，按 JLPT 级别分开，用卡片背。标了「已掌握」的单独列在下面。登录后在各设备同步。" },
+    };
+    const switcher = (cur, en) => `<p class="wb-switch">${[["words", en ? "Word list" : "生词本"], ["my-grammar", en ? "Grammar cards" : "语法卡"]].map(([id, l]) => id === cur ? `<b>${l}</b>` : `<a href="${SITE_PATH}${en ? "" : "zh/"}${id}/">${l}</a>`).join(" · ")}</p>`;
+    for (const lang of PAGE_LANGS) {
+      const en = lang.code === "en", v = langVariant("my-grammar", lang), m = mgMeta[lang.code];
+      writeLangPage("my-grammar", lang, localizePage(renderQuiz(lang, {
+        ...m, nav: "", ogImage: "og-image.png",
+        body: `${wbCss}${mgCss}${switcher("my-grammar", en)}<div id="mg-app" data-index="${SITE_PATH}quiz/grammar-index.json" data-cards="${SITE_PATH}quiz/{lv}-cards.json" data-qrefs="${qrefsSrc}"><p class="mg-muted">${en ? "Loading…" : "加载中…"}</p></div><script src="${SITE_PATH}my-grammar.js?v=${mgHash}" defer></script>`,
+        about: "",
+        schema: JSON.stringify([{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: en ? "Japanese Grammar Notes" : "日语语法笔记", item: SITE }, { "@type": "ListItem", position: 2, name: m.crumb, item: v.url }] }]).replace(/</g, "\\u003c"),
+      }, v, "", null), lang, localizedPageIds));
+    }
+    console.log("  Generated dist/my-grammar/ (grammar cards)");
+  }
   const faqFree = (L) => `<dt>${L("免费吗？要注册吗？", "Is it free? Do I need an account?")}</dt><dd>${L("完全免费，没有广告，不用注册。进度保存在这个浏览器里。", "It's free, with no ads and no sign-up. Progress stays in this browser.")}</dd>
 <dt>${L("是真题吗？", "Are these past-paper questions?")}</dt><dd>${L("不是。题目全部原创，按各级别真题的题型和难度设计。", "No. Every question is original, written to each level's formats and difficulty.")}</dd>`;
 
@@ -5409,6 +5781,7 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
       const f = path.join(__dirname, "questions", "grammar-audio", `${l.toLowerCase()}.json`);
       if (!fs.existsSync(f)) return [l, null];
       const ga = JSON.parse(fs.readFileSync(f, "utf-8"));
+      gaExam(ga.items, l);
       return [l, { n: ga.items.length, lessons: new Set(ga.items.map((it) => it.lesson)).size, exam: ga.items.filter((it) => (it.exam || []).length).length, min: { en: Math.round(ga.tracks.en.duration / 60), zh: Math.round(ga.tracks.zh.duration / 60) } }];
     }));
     const gaLevels = ORDER5.filter((l) => gaStats[l]);
@@ -5436,7 +5809,7 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
 <li>${L("「遮住意思」后先自己说出意思，再点开核对。", "Hide the meanings, say each one yourself, then reveal it to check.")}</li>
 <li>${L("听不熟的那一句用单句循环，跟着读几遍。", "Loop a line you don't know yet and shadow it a few times.")}</li>
 </ul>
-${gaLevels.includes("N2") && gaStats.N2.exam ? `<p>${L(`N2 页面标出了往年真题考过的语法（${gaStats.N2.exam} 个），考前可以优先听。`, `The N2 page marks the ${gaStats.N2.exam} patterns that have appeared on past tests, worth hearing first before the exam.`)}</p>` : ""}
+${((ex) => ex.length ? `<p>${L(`标着「真题考过 N 次」的语法在往年真题里出现过（${ex.map((l) => `${l} ${gaStats[l].exam} 个`).join("、")}），考前可以优先听。`, `Patterns marked "on the real test N×" have appeared on past tests (${ex.map((l) => `${l}: ${gaStats[l].exam}`).join(", ")}) — worth hearing first before the exam.`)}</p>` : "")(gaLevels.filter((l) => gaStats[l] && gaStats[l].exam))}
 <h2>${L("常见问题", "Questions")}</h2>
 <dl>
 <dt>${L("免费吗？要注册吗？", "Is it free? Do I need an account?")}</dt><dd>${L("完全免费，没有广告，不用注册，用手机浏览器打开就能听。", "It's free, with no ads and no sign-up. Open it in your phone's browser.")}</dd>
@@ -6360,6 +6733,23 @@ pre code { background: none; padding: 0; }
 
 /* SEO lead paragraph (keyword-rich summary after h1) */
 .seo-lead { font-size: 1rem; color: var(--text-muted); margin: 0 0 1.6rem; line-height: 1.75; max-width: 42em; }
+.exam-seen { font-size: .88rem; color: var(--text-muted); margin: -.3rem 0 .9rem; }
+.gotit { font: inherit; font-size: .8rem; line-height: 1.4; padding: .1rem .6rem .1rem .45rem; margin-right: .5rem; border-radius: 12px; border: 1px solid var(--border, #ccc); background: transparent; color: var(--ui); cursor: pointer; white-space: nowrap; vertical-align: baseline; }
+.gotit::before { content: "○ "; }
+.gotit-add::before { content: "＋ "; }
+.gotit-add[aria-pressed="true"]::before { content: "✓ "; }
+.gl-go { text-decoration: none; color: var(--text-muted); font-size: .9em; padding: 0 .25rem; }
+.gl-go:hover { color: var(--ui); }
+.gotit[aria-pressed="true"] { background: var(--ui); color: var(--ui-on); border-color: var(--ui); }
+.gotit[aria-pressed="true"]::before { content: "✓ "; }
+td .gotit { margin: 0; padding: .1rem .45rem; }
+td .gotit::before { content: "○"; }
+td .gotit[aria-pressed="true"]::before { content: "✓"; }
+tr.gotit-on td { opacity: .55; }
+html.gotit-hiding tr.gotit-on { display: none; }
+#gotit-sum { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin: .8rem 0 1.2rem; padding: .55rem .8rem; border-radius: 10px; background: var(--chip-bg); font-size: .92rem; }
+.gotit-hide { font: inherit; font-size: .85rem; padding: .2rem .7rem; border-radius: 14px; border: 1px solid var(--border, #ccc); background: transparent; color: var(--ui); cursor: pointer; }
+.gotit-hide[aria-pressed="true"] { background: var(--ui); color: var(--ui-on); border-color: var(--ui); }
 .seo-lead strong { color: var(--text-strong); font-weight: 600; }
 
 /* Lesson meta line (last-updated, reading time) — sits between h1 and seo-lead */
@@ -6722,6 +7112,10 @@ ${darkRules('html.theme-dark')}
   cursor: pointer; line-height: 1.2;
 }
 .tc-pill:hover { border-color: var(--ui); }
+/* 生词本 entry (settings-modal.js wordsLink): icon + label; the phone bar shows the icon only */
+a.tc-words { display: inline-flex; align-items: center; gap: .3rem; text-decoration: none; color: inherit; }
+.m-words { text-decoration: none; }
+.m-words .tc-words-l { display: none; }
 .tc-pill input { margin: 0 .3rem 0 0; vertical-align: -1px; }
 .tc-icon { padding: .38rem .55rem; display: inline-flex; align-items: center; }
 .tc-icon svg, #settings-box .js-theme-btn svg { width: 17px; height: 17px; display: block; }

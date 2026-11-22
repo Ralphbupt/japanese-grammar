@@ -1,10 +1,10 @@
 # JLPT N4 高频语法考点整理||JLPT N4 Key Grammar — The Points That Come Up Most
 
 :::zh
-这一页写给离 N4 考试还有几周、想先抓"真正会考的那部分"的人。N4 全部语法约 74 条（[N4 语法清单](/N4_grammar_list/)），这里只挑出 30 条在 文法 和 読解 里反复出现、又最容易选错的，按功能分组，每条给接续、含义和一个短例句，并链接到讲它的课。后面是最容易混的 10 组、做题技巧和 10 道自测题。想系统复习就看 [N4 总览](/N4/) 和 [Lesson 34 N4 总复习](/lesson34/)，想直接做题就去 [N4 练习题](/n4-practice/)。
+这一页写给离 N4 考试还有几周、想先抓"真正会考的那部分"的人。N4 全部语法约 74 条（[N4 语法清单](/N4_grammar_list/)），这里只挑出 30 条在 文法 和 読解 里反复出现、又最容易选错的，按功能分组，每条给接续、含义和一个短例句，并链接到讲它的课。后面是最容易混的 10 组、做题技巧和 10 道自测题。想系统复习就看 [N4 总览](/N4/) 和 [Lesson 34 N4 总复习](/lesson34/)，想直接做题就去 [N4 练习题](/n4-practice/)。想知道真题实际考过哪些语法、各考过几次，看 [N4 历年真题语法](/jlpt-n4-past-exam-grammar/)。
 :::
 :::en
-This page is for learners a few weeks out from the N4 who want the part that actually gets tested first. N4 has about 74 grammar points in all (see the [N4 grammar checklist](/N4_grammar_list/)); here are the 30 that keep turning up in the grammar and reading sections and that people most often get wrong, grouped by function, each with its conjugation, meaning, one short example and a link to the lesson that teaches it. After that come the 10 most confused groups, exam tips and a 10-question self-test. For a full review see the [N4 overview](/N4/) and the [Lesson 34 N4 review](/lesson34/); to go straight to questions, try the [N4 practice questions](/n4-practice/).
+This page is for learners a few weeks out from the N4 who want the part that actually gets tested first. N4 has about 74 grammar points in all (see the [N4 grammar checklist](/N4_grammar_list/)); here are the 30 that keep turning up in the grammar and reading sections and that people most often get wrong, grouped by function, each with its conjugation, meaning, one short example and a link to the lesson that teaches it. After that come the 10 most confused groups, exam tips and a 10-question self-test. For a full review see the [N4 overview](/N4/) and the [Lesson 34 N4 review](/lesson34/); to go straight to questions, try the [N4 practice questions](/n4-practice/). For which patterns real tests actually asked and how often, see [N4 grammar from past tests](/jlpt-n4-past-exam-grammar/).
 :::
 
 ## 高频考点 Top 30||Top 30 Grammar Points

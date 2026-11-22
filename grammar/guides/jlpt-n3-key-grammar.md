@@ -467,12 +467,14 @@ Choose the best option (a, b or c) for each blank.
 :::zh
 - [N3 语法清单](/N3_grammar_list/)・[N3 总览](/N3/)・[Lesson 58 N3 总复习](/lesson58/)
 - [N3 练习题](/n3-practice/)・[N3 模拟题](/n3-mock-test/)
+- [N3 历年真题语法](/jlpt-n3-past-exam-grammar/)：2010–2026 年真题实际考过的语法和次数
 - 对比页：[はず vs わけ](/hazu-vs-wake/)・[あいだに vs うちに](/aida-ni-vs-uchi-ni/)・全部见 [专题](/guides/)
 - [2026 年 12 月 JLPT 考前指南](/jlpt-december-2026/)
 :::
 :::en
 - [N3 grammar list](/N3_grammar_list/), [N3 overview](/N3/), [Lesson 58 N3 review](/lesson58/)
 - [N3 practice questions](/n3-practice/), [N3 mock test](/n3-mock-test/)
+- [N3 grammar from past tests](/jlpt-n3-past-exam-grammar/): what the 2010–2026 papers actually asked, and how often
 - Comparisons: [はず vs わけ](/hazu-vs-wake/), [あいだに vs うちに](/aida-ni-vs-uchi-ni/); all of them on the [guides](/guides/) page
 - [December 2026 JLPT exam guide](/jlpt-december-2026/)
 :::

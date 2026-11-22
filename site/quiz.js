@@ -297,7 +297,7 @@
   function toggleWord(w, qid) {
     var e = wordEntry(w), on = hasWord(e.k);
     S.words = S.words || {};
-    S.words[e.k] = on ? { t: -Date.now(), q: (S.words[e.k] || {}).q } : { t: Date.now(), a: Date.now(), q: qid || '', r: e.r, m: e.m, k: 0, due: Date.now() };
+    S.words[e.k] = on ? { t: -Date.now(), q: (S.words[e.k] || {}).q } : { t: Date.now(), a: Date.now(), q: qid || '', r: e.r, m: e.m, k: 0, due: Date.now(), lv: LEVEL };
     save();
     track(on ? 'word_remove' : 'word_add', { level: LEVEL, via: HOVER ? 'mouse' : 'touch' });
     app.querySelectorAll('.q-wchip, .q-w').forEach(function (c) { if (wordOf(c.getAttribute('data-k')) === e.k) c.classList.toggle('q-won', !on); });
@@ -709,6 +709,25 @@
     return Object.keys(by).map(function (k) { return by[k]; }).filter(function (x) { return x.miss > 0 && x.n >= 2; })
       .sort(function (a, b) { return b.miss / b.n - a.miss / a.n || b.miss - a.miss; }).slice(0, 10);
   }
+  // Grammar points the reader marked "got it" (lesson pages / past-test lists:
+  // jp_grammar_checks 'g:lessonNN#K' = +ms when ticked) but answered wrong,
+  // "don't know" or by guessing after that moment.
+  function masteredSlips() {
+    var c = {}; try { c = JSON.parse(localStorage.getItem('jp_grammar_checks')) || {}; } catch (e) {}
+    var by = {};
+    ALL.forEach(function (q) {
+      var a = S.answers[q.id];
+      if (!a || !a.length) return;
+      var r = (q.refs || []).filter(function (x) { return !/#vocab$/.test(x) && D.refs[x]; })[0], since = r && c['g:' + r];
+      if (!(since > 0)) return;
+      a.forEach(function (x) {
+        if (x.t < since || (x.ok && !x.g)) return;
+        var e = by[r] || (by[r] = { ref: r, miss: 0, qs: {} });
+        e.miss++; e.qs[q.id] = 1;
+      });
+    });
+    return Object.keys(by).map(function (k) { return by[k]; }).sort(function (a, b) { return b.miss - a.miss; }).slice(0, 10);
+  }
   function analysis() {
     view(false);
     var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button><span>' + t('做题分析', 'Analysis') + ' · JLPT ' + LEVEL + '</span><span></span></div><div class="q-card q-an">';
@@ -765,6 +784,15 @@
     }).join('') + '</ul>';
     if (few.length) h += '<p class="q-muted">' + t('做得太少还看不出：', 'Too few answers to tell: ') + few.map(function (x) { return esc(bi(D.types[x.k])); }).join('、') + '</p>';
     if (X && X.items) h += '<p class="q-muted">' + t('正式考试这部分 ', 'The real test: ') + X.minutes + t(' 分钟 ', ' minutes for about ') + X.items + t(' 题左右，平均每题约 ', ' questions, about ') + Math.round(X.minutes * 60 / X.items) + t(' 秒（阅读题要更久，词汇、语法题要更快）。', ' seconds each on average (reading takes longer, so vocabulary and grammar need to go faster).') + '</p>';
+    // Marked "got it" on a lesson page, but missed since.
+    var slips = masteredSlips();
+    if (slips.length) {
+      h += '<h2>' + t('标了已掌握，但之后做错了', 'Marked “got it”, missed since') + '</h2><p class="q-muted">' +
+        t('这些语法点你在课文或真题语法页上标了已掌握，之后做题还是错了（或者选了“不会”、是猜的）。回课文再看一眼，或者先在课文里取消已掌握。', 'You marked these as learned on a lesson or past-test page, but got a question on them wrong since (or answered “don’t know” or guessed). Have another look at the lesson, or untick it there for now.') + '</p><ul class="q-an-list">' + slips.map(function (x) {
+        var p = D.refs[x.ref];
+        return '<li><a href="' + LESSON_BASE + p.lesson + '/#' + encodeURI(p.slug) + '" target="_blank" rel="noopener">' + esc(EN ? p.en : p.zh) + '</a> <span class="q-muted">— ' + t('之后错了 ', 'missed ') + x.miss + t(' 次', x.miss === 1 ? ' time' : ' times') + '</span></li>';
+      }).join('') + '</ul><p><button class="q-btn" data-act="slip">' + t('重练这些语法点', 'Practise these again') + '</button></p>';
+    }
     // Weakest grammar points.
     var weak = weakRefs();
     h += '<h2>' + t('最该补的语法点', 'Grammar points to work on') + '</h2>';
@@ -933,14 +961,27 @@
   function pointsHtml(q) {
     var refs = (q.refs || []).filter(function (r) { return D.refs[r]; });
     var main = refs.filter(function (r) { var p = D.refs[r]; return !/#vocab$/.test(r) && (p.conj || p.ex); })[0];
-    var h = '';
+    var h = '', zt = '';
+    // N2 真题考过 N 次 (build-quiz.js examTag): which grammar the real test keeps asking
+    // zt: [{ lv, n, last }], the page's level first (older data: one object)
+    var zts = q.zt ? [].concat(q.zt) : [];
+    if (zts.length) {
+      zt = '<div class="q-point-row"><span class="q-point-k">' + t('真题', 'Past tests') + '</span><span>' + zts.map(function (z, i) {
+        var zm = +z.last.slice(5), zy = z.last.slice(0, 4), href = '/' + (EN ? '' : 'zh/') + 'jlpt-' + z.lv.toLowerCase() + '-past-exam-grammar/';
+        var of = z.of ? t('（收录的 ' + z.of + ' 场里）', ' (of the ' + z.of + ' tests we have)') : '';
+        var txt = i === 0
+          ? t(z.lv + ' 真题考过 ' + z.n + ' 次' + of + '，最近一次 ' + zy + ' 年 ' + zm + ' 月', 'On the real ' + z.lv + ' test ' + (z.n === 1 ? 'once' : z.n + ' times') + of + ', most recently ' + (zm === 7 ? 'July' : 'December') + ' ' + zy)
+          : t(z.lv + ' 考过 ' + z.n + ' 次' + of, z.lv + ' ' + (z.n === 1 ? 'once' : z.n + ' times') + of);
+        return '<a href="' + href + '">' + txt + '</a>';
+      }).join(' · ') + '</span></div>';
+    }
     if (main) {
       var p = D.refs[main];
       h += '<div class="q-point"><div class="q-point-h"><b>' + ICO_BOOK + esc(EN ? p.en : p.zh) + '</b>' + pointLink(p, t('回课文看这个语法 →', 'Read it in the lesson →')) + '</div>' +
         (p.conj ? '<div class="q-point-row"><span class="q-point-k">' + t('接续', 'Form') + '</span><span>' + (EN ? p.conj.en : p.conj.zh).map(esc).join('<br>') + '</span></div>' : '') +
         (p.ex ? '<div class="q-point-row"><span class="q-point-k">' + t('例句', 'Example') + '</span><span><span lang="ja">' + p.ex.ja + '</span>' + ((EN ? p.ex.en : p.ex.zh) ? '<br><span class="q-muted">' + esc(EN ? p.ex.en : p.ex.zh) + '</span>' : '') + '</span></div>' : '') +
-        '</div>';
-    }
+        zt + '</div>';
+    } else if (zt) h += '<div class="q-point">' + zt + '</div>';
     var rest = refs.filter(function (r) { return r !== main; });
     if (rest.length) h += '<p class="q-refs">' + rest.map(function (r) { var p = D.refs[r]; return ICO_BOOK + pointLink(p, esc(EN ? p.en : p.zh)); }).join(' · ') + '</p>';
     return h;
@@ -1333,8 +1374,8 @@
     // Listening only, always 5 (a recording takes far longer than a written question).
     else if (kind === 'ck') start('ck', subset(function (q) { return onLevel(q) && isCk(q); }, 5));
     else if (kind === 'lesson') start('lesson', subset(function (q) { return lessonOf(q) === k; }, n), k);
-    else if (kind === 'weak') {
-      var rs = weakRefs().map(function (x) { return x.ref; });
+    else if (kind === 'weak' || kind === 'slip') {
+      var rs = (kind === 'slip' ? masteredSlips() : weakRefs()).map(function (x) { return x.ref; });
       start('weak', arrange(freshFirst(ALL.filter(function (q) { return (q.refs || []).some(function (r) { return rs.indexOf(r) >= 0; }); })).slice(0, n)));
     }
     else if (kind === 'ref') start('ref', subset(function (q) { return (q.refs || []).indexOf(k) >= 0; }, n), k);
@@ -2398,6 +2439,7 @@
     else if (act === 'analysis') analysis();
     else if (act === 'share') shareScore(el);
     else if (act === 'weak') startKind('weak');
+    else if (act === 'slip') startKind('slip');
     else if (act === 'fav-list') favList();
     else if (act === 'word') wordClick(el);
     else if (act === 'word-add') wordAdd(el);
