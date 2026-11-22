@@ -101,8 +101,14 @@
       if (mode === 'loop') { a.currentTime = T[stopAt][0]; return; }
       a.pause(); stopAt = null; return;
     }
+    // Skip a line that won't be played already in the silence before it (every
+    // gap is ≥ 0.5 s, timeupdate comes every ~0.25 s): waiting for the line itself
+    // let its first syllables through.
+    if (i >= 0 && T[i + 1] && t >= T[i][1] && !a.paused && mode !== 'one' && mode !== 'loop' &&
+        ((!readTr && T[i + 1][2] === 't') || (!readM && T[i + 1][2] === 'm') || (window.jpGaSkip && window.jpGaSkip(i + 1, from)))) i = i + 1;
     // Translations off (or meanings off, #ga-ms, vocabulary list): jump from the start of such a line to the next line.
     if (i >= 0 && ((!readTr && T[i][2] === 't') || (!readM && T[i][2] === 'm')) && t < T[i][1] - 0.15 && mode !== 'one' && mode !== 'loop') {
+      if (stopAt != null && i + 1 > stopAt) { a.pause(); stopAt = null; return; }
       if (T[i + 1]) { a.currentTime = T[i + 1][0]; i = i + 1; }
     }
     if (window.jpGaSkip && !a.paused && mode !== 'one' && mode !== 'loop' && i >= 0 && window.jpGaSkip(i, from)) {
