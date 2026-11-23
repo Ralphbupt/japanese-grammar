@@ -175,11 +175,36 @@
     var c = document.querySelector('link[rel="canonical"]');
     return c ? c.href : location.origin + location.pathname;
   }
-  function closeShare() { var m = document.getElementById('share-menu'); if (m) m.remove(); }
+  // Any element with data-jp-share="<src>" opens the share menu: data-url, or
+  // data-hash (a section of this page, e.g. "#2-…"), and data-text optional.
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest && e.target.closest('[data-jp-share]');
+    if (!el) return;
+    e.preventDefault(); e.stopPropagation();
+    var h = el.getAttribute('data-hash');
+    // data-sec: link to the section the button sits in (the nearest heading above it)
+    if (!h && el.hasAttribute('data-sec')) {
+      var n = el.closest('p') || el;
+      while (n && !/^H[23]$/.test(n.tagName)) n = n.previousElementSibling;
+      if (n && n.id) h = '#' + n.id;
+    }
+    jpShare({ src: el.getAttribute('data-jp-share'), anchor: el, text: el.getAttribute('data-text') || '',
+      url: el.getAttribute('data-url') || (h ? pageUrl() + h : undefined) });
+  });
+  // The outside-click closer goes with the menu: a closer left behind (menu
+  // closed by Esc or an item) used to shut the next menu as it opened.
+  var shareOff = null;
+  function closeShare() {
+    var m = document.getElementById('share-menu'); if (m) m.remove();
+    if (shareOff) { document.removeEventListener('click', shareOff); shareOff = null; }
+  }
   function jpShare(o) {
     o = o || {};
     var en = isEnUi(), base = o.url || pageUrl();
-    var url = base + (base.indexOf('?') < 0 ? '?' : '&') + 'utm_source=share';
+    // utm before any #fragment (#q=<id>, a section anchor), or it is lost.
+    var hash = base.indexOf('#') >= 0 ? base.slice(base.indexOf('#')) : '';
+    base = hash ? base.slice(0, base.indexOf('#')) : base;
+    var url = base + (base.indexOf('?') < 0 ? '?' : '&') + 'utm_source=share' + hash;
     var title = o.title || document.title, text = o.text || '';
     var src = o.src || 'page', page = location.pathname;
     var wechat = /MicroMessenger/i.test(navigator.userAgent);
@@ -260,9 +285,9 @@
       else setTimeout(closeShare, 0);
     });
     setTimeout(function () {
-      document.addEventListener('click', function off(ev) {
-        if (!m.contains(ev.target)) { closeShare(); document.removeEventListener('click', off); }
-      });
+      if (!document.body.contains(m)) return;
+      shareOff = function (ev) { if (!m.contains(ev.target)) closeShare(); };
+      document.addEventListener('click', shareOff);
     }, 0);
   }
   window.jpShare = jpShare;
@@ -348,8 +373,8 @@
             '</li>' +
           '</ul>' +
         '</section>' +
-        '<div class="settings-more"><button type="button" class="js-share-row">' + SVG + '<path d="M12 2v13"/><path d="m16 6-4-4-4 4"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/></svg>' +
-          '<span class="lang-zh">分享本页</span><span class="lang-en">Share this page</span></button></div>' +
+        // (分享本页 used to sit here; since 2026-11-24 sharing lives where it's wanted:
+        // lesson title, each grammar point, each question, set results.)
         // What an account does not carry: said here so nobody expects it to follow them.
         '<p class="settings-foot"><span class="lang-zh">显示设置和「问 AI」的对话只保存在这个浏览器里，不随账号同步。</span>' +
           '<span class="lang-en">Display settings and your "Ask AI" conversations stay in this browser; an account does not sync them.</span></p>' +
@@ -360,8 +385,6 @@
     overlay.querySelectorAll('.js-lang-set').forEach(function (b) {
       b.addEventListener('click', function () { if ((b.getAttribute('data-lang') === 'en') !== isEnUi()) toggleLang(); });
     });
-    var sr = overlay.querySelector('.js-share-row');
-    sr.addEventListener('click', function (e) { e.stopPropagation(); jpShare({ src: 'settings', anchor: sr }); });
     wireControls(overlay);
     built = true;
   }

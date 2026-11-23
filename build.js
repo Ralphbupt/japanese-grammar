@@ -2318,7 +2318,9 @@ async function main() {
       const lessonLastMod = gitLastMod(file.path) || today;
       const lessonFirstMod = gitFirstMod(file.path) || lessonLastMod;
       const readingMin = computeReadingTime(html);
-      const lessonMetaHtml = `<div class="lesson-meta"><span class="lang-zh">📅 最后更新 <time datetime="${lessonLastMod}">${lessonLastMod}</time> · ⏱ 阅读约 ${readingMin} 分钟</span><span class="lang-en">📅 Updated <time datetime="${lessonLastMod}">${lessonLastMod}</time> · ⏱ ${readingMin} min read</span></div>`;
+      const lessonMetaHtml = `<div class="lesson-meta"><span class="lang-zh">📅 最后更新 <time datetime="${lessonLastMod}">${lessonLastMod}</time> · ⏱ 阅读约 ${readingMin} 分钟</span><span class="lang-en">📅 Updated <time datetime="${lessonLastMod}">${lessonLastMod}</time> · ⏱ ${readingMin} min read</span>` +
+        // share this lesson (settings-modal.js handles [data-jp-share])
+        ` <button type="button" class="lesson-share" data-jp-share="lesson"><span class="lang-zh">↗ 分享这一课</span><span class="lang-en">↗ Share this lesson</span></button></div>`;
       html = html.replace(/(<\/h1>)/, `$1\n${lessonMetaHtml}`);
 
       // SEO lead paragraph: keyword-rich summary inserted after h1.
@@ -2387,7 +2389,10 @@ async function main() {
           // comparison tables and reviews are not points; "比较表达" (comparatives) is
           if (!no || PRACTICE_HEADING.test(text) || /比较表(?!达)|比較表(?!現)|对比表|辨析|复习|总结|\svs\s|Review|Summary/i.test(text)) return m;
           // + the "add to my grammar cards" toggle (/my-grammar/, 'gs:lessonNN#K')
-          const btn = `<button type="button" class="gotit" data-g="${file.id}#${no}" aria-pressed="false"><span class="lang-zh">已掌握</span><span class="lang-en">Got it</span></button><button type="button" class="gotit gotit-add" data-ga="${file.id}#${no}" aria-pressed="false"><span class="lang-zh">语法卡</span><span class="lang-en">Grammar card</span></button>`;
+          const btn = `<button type="button" class="gotit" data-g="${file.id}#${no}" aria-pressed="false"><span class="lang-zh">已掌握</span><span class="lang-en">Got it</span></button><button type="button" class="gotit gotit-add" data-ga="${file.id}#${no}" aria-pressed="false"><span class="lang-zh">语法卡</span><span class="lang-en">Grammar card</span></button>` +
+            // share this grammar point: the link goes to its section (data-sec: the heading
+            // just above; settings-modal.js reads its id when clicked)
+            `<button type="button" class="gotit gotit-share" data-jp-share="point" data-sec="1" title="分享这个语法点 / Share this grammar point"><span class="lang-zh">↗ 分享</span><span class="lang-en">↗ Share</span></button>`;
           return exam ? `${h2}${exam}${btn}` : `${h2}\n<p class="exam-seen">${btn}</p>`;
         });
       }
@@ -6675,6 +6680,7 @@ pre code { background: none; padding: 0; }
 .gotit { font: inherit; font-size: .8rem; line-height: 1.4; padding: .1rem .6rem .1rem .45rem; margin-right: .5rem; border-radius: 12px; border: 1px solid var(--border, #ccc); background: transparent; color: var(--ui); cursor: pointer; white-space: nowrap; vertical-align: baseline; }
 .gotit::before { content: "○ "; }
 .gotit-add::before { content: "＋ "; }
+.gotit-share::before { content: none; }
 .gotit-add[aria-pressed="true"]::before { content: "✓ "; }
 .gl-go { text-decoration: none; color: var(--text-muted); font-size: .9em; padding: 0 .25rem; }
 .gl-go:hover { color: var(--ui); }
@@ -6690,6 +6696,8 @@ html.gotit-hiding tr.gotit-on { display: none; }
 .gotit-hide[aria-pressed="true"] { background: var(--ui); color: var(--ui-on); border-color: var(--ui); }
 .seo-lead strong { color: var(--text-strong); font-weight: 600; }
 
+.lesson-share { font: inherit; font-size: .8rem; margin-left: .6rem; padding: .1rem .6rem; border-radius: 12px; border: 1px solid var(--border, #ccc); background: transparent; color: var(--ui); cursor: pointer; }
+.lesson-share:hover, .gotit-share:hover { background: var(--ui-soft); }
 /* Lesson meta line (last-updated, reading time) — sits between h1 and seo-lead */
 .lesson-meta {
   font-size: .82rem; color: var(--text-muted);

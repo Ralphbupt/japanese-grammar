@@ -435,6 +435,12 @@
   // explanation got no clicks, so the entry sits where every reader looks. It
   // opens that block's editor (the notes script, notes.jpnotes.dev).
   function noteBtn(q, ok) { return /^[a-z0-9][a-z0-9-]{2,40}$/.test(q.id) ? '<button class="q-btn q-fav q-note" data-act="note" data-k="' + q.id + '" title="' + (ok ? t('记笔记', 'Add a note') : t('记一下为什么错', 'Note why you missed it')) + '"><span aria-hidden="true">✎</span><span class="q-fav-l">' + t('笔记', 'Note') + '</span></button>' : ''; }
+  // 考考朋友: share this one question; the link opens it on its own (#q=<id>).
+  function quizShareBtn(q) {
+    if (!window.jpShare || !/^[a-z0-9][a-z0-9-]{2,40}$/.test(q.id)) return '';
+    var url = location.origin + location.pathname + '#q=' + q.id;
+    return '<button class="q-btn q-fav q-qshare" data-jp-share="question" data-url="' + url + '" data-text="' + esc(t('这道 JLPT ' + LEVEL + ' 题你会吗？', 'Can you get this JLPT ' + LEVEL + ' question?')) + '" title="' + t('把这道题发给朋友', 'Send this question to a friend') + '"><span aria-hidden="true">↗</span><span class="q-fav-l">' + t('考考朋友', 'Quiz a friend') + '</span></button>';
+  }
   function favBtn(q) { var on = isFav(q.id), l = on ? t('已收藏', 'Saved') : t('收藏', 'Save'); return '<button class="q-btn q-fav" data-act="fav" data-k="' + q.id + '" aria-pressed="' + on + '" aria-label="' + t('收藏', 'Save') + '" title="' + l + '"><span aria-hidden="true">' + (on ? '★' : '☆') + '</span><span class="q-fav-l">' + l + '</span></button>'; }
 
   // Accuracy over the last RECENT answers to questions matching `pick`.
@@ -1249,7 +1255,7 @@
     // 不会 before answering; 其实是猜的 after a right answer (both go on the review list).
     // The verdict line: the verdict on the left, 其实是猜的 / ☆ on the right of the same line.
     var h = '<div class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '"><span class="q-vtext">' + (ok ? '✓ ' + t('正确', 'Correct') : '✗ ' + (choice == null ? t('不会 · ', 'Didn’t know · ') : '') + t('正确答案是 ', 'The answer is ') + (q.answer + 1) + ' <span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span>') + '</span>' +
-      '<span class="q-vtools">' + (ok ? '<button class="q-btn q-was-guess" data-act="was-guess">' + t('其实是猜的', 'I guessed') + '</button>' : '') + noteBtn(q, ok) + favBtn(q) + '</span></div>';
+      '<span class="q-vtools">' + (ok ? '<button class="q-btn q-was-guess" data-act="was-guess">' + t('其实是猜的', 'I guessed') + '</button>' : '') + noteBtn(q, ok) + quizShareBtn(q) + favBtn(q) + '</span></div>';
     if (q.type === 'narabe' && !ok) h += '<p class="q-order" lang="ja">' + t('正确顺序：', 'Right order: ') + q.order.map(function (i) { return q.options[i]; }).join(' → ') + '</p>';
     var left = curs ? Object.keys(curs).filter(function (id) { return !curs[id].done; }) : [];
     // A recording with several questions: the transcript (it has every question
