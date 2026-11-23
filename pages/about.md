@@ -219,7 +219,7 @@ The account button (top right) lets you sign in with a Google account or a code 
 ## 笔记的隐私||Notes: who sees what
 
 :::zh
-课文的每个语法点和练习题的解析下面可以记笔记。写笔记需要登录；看别人公开的笔记不用。
+课文的每个语法点和练习题的解析下面可以记笔记。不登录也能写：笔记只存在这台设备的浏览器里，本站服务器收不到；登录后这些笔记会转到你的账号里，在各设备同步，也可以选择公开。看别人公开的笔记不用登录。
 
 - **私有和公开。** 笔记默认私有，只有你自己看得到。勾选「公开」后先经过审核，通过后所有人都能看到，显示的是你的昵称和印章头像，不显示邮箱。随时可以改回私有（已经有人回复的除外）或删除。
 - **审核。** 公开的笔记和回复先过一遍规则（链接、联系方式交给站长看），再交给 Anthropic 的 Claude 判断：明显没问题的直接公开，明显违规的退回并说明理由，拿不准的由站长人工看。AI 的每个决定站长都会复核。只有你选了公开的内容才会发给 Claude，私有笔记不会；Anthropic 按它的 API 条款处理这些内容，不拿来训练模型。
@@ -230,7 +230,7 @@ The account button (top right) lets you sign in with a Google account or a code 
 :::
 
 :::en
-You can keep notes under every grammar point of the lessons and under the explanation of every practice question. Writing a note needs an account; reading other people's public notes doesn't.
+You can keep notes under every grammar point of the lessons and under the explanation of every practice question. Without an account they stay in this browser and this site's server never receives them; sign in and they move to your account, sync across your devices, and can be shared. Reading other people's public notes needs no account.
 
 - **Private or public.** A note is private by default: only you see it. Tick "Public" and it is reviewed first; once approved everyone sees it, under your nickname and seal avatar, never your email. You can make it private again (unless someone has replied) or delete it at any time.
 - **Review.** Public notes and replies first go through a few rules (links and contact details go to the site owner), then to Anthropic's Claude: clearly fine notes go public at once, clear violations come back to you with a reason, and anything uncertain waits for the site owner. The owner also re-checks every decision the AI makes. Only what you chose to make public is sent to Claude, never private notes; Anthropic handles it under its API terms and does not train models on it.
