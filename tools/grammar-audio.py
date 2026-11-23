@@ -155,6 +155,9 @@ def items_of(level):
 
 # Short kana patterns said alone get misread (つつ → "chichi", たまま → "tamago"); src/say.json
 # maps the spoken pattern to a form a listening check (Gemini) heard right — katakana or in 「」.
+# It also holds whole example sentences the voice misread, keyed by the written sentence
+# (明日は雨ですよ。 → あしたは…: Gemini said あす in 8 of 25 明日 lines, 2026-11-24). Per line,
+# so the lines it already read right keep their cached clips.
 _say = os.path.join(OUT_DATA, "src", "say.json")
 SAY = json.load(open(_say, encoding="utf-8")) if os.path.exists(_say) else {}
 
@@ -167,7 +170,8 @@ def lines_of(items, lang):
         out.append((i, "g", VOICE["ja"], SAY.get(p, p)))
         out.append((i, "m", VOICE[lang], say_text(it["mean"][lang], lang)))
         for e in it["ex"][:it["read"]]:
-            out.append((i, "e", VOICE["ja"], say_example(plain(e["ja"]))))
+            s = say_example(plain(e["ja"]))
+            out.append((i, "e", VOICE["ja"], SAY.get(s, s)))
             out.append((i, "t", VOICE[lang], say_text(e.get("say_" + lang) or e[lang], lang)))
     return out
 

@@ -18,6 +18,7 @@ const KuroshiroMod = require("kuroshiro");
 const Kuroshiro = KuroshiroMod.default || KuroshiroMod;
 const KuromojiMod = require("kuroshiro-analyzer-kuromoji");
 const KuromojiAnalyzer = KuromojiMod.default || KuromojiMod;
+const { fixReadings } = require("./lib/ruby-fixes");
 
 const SITE = "https://jpnotes.dev/";
 const SETTINGS_JS_HASH = crypto.createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "settings-modal.js"))).digest("hex").slice(0, 8);
@@ -67,17 +68,46 @@ function hasSC(text) {
   return false;
 }
 
+// The whole sentence goes through kuroshiro (never a fragment: 「この漢字が読」 +
+// 「めない」 loses the verb), then the site's own corrections — RUBY_FIXES,
+// RUBY_MERGES, day counts — so a card reads like its lesson page.
 async function withFurigana(text) {
   if (!text || !HAS_KANJI.test(text)) return text;
   try {
-    // 3階・何階 are さんがい・なんがい; kuroshiro reads the counter alone as かい.
-    return (await kuro.convert(text, { to: "hiragana", mode: "furigana" }))
-      .replace(/([3３三]|<ruby>何<rp>\(<\/rp><rt>なん<\/rt><rp>\)<\/rp><\/ruby>)<ruby>階<rp>\(<\/rp><rt>かい<\/rt>/g, "$1<ruby>階<rp>(</rp><rt>がい</rt>")
-      // 紅葉 in lesson25's examples is もみじ (as in build.js RUBY_FIXES); lesson51 keeps こうよう.
-      .replace(/<ruby>紅葉<rp>\(<\/rp><rt>こうよう<\/rt>(?=<rp>\)<\/rp><\/ruby>(ですね|を<ruby>思))/g, "<ruby>紅葉<rp>(</rp><rt>もみじ</rt>");
+    return fixReadings(await kuro.convert(text, { to: "hiragana", mode: "furigana" }));
   } catch {
     return text;
   }
+}
+
+// The furigana sentence with the characters in `marks` (plain-text offsets of
+// the grammar, from **…**) wrapped in <b class="cl">. A ruby that touches a
+// marked character goes inside whole, like build.js does with <strong>.
+function markCloze(furiganaHtml, marks) {
+  let out = "", src = 0, i = 0, open = false;
+  const set = (on) => { if (on !== open) { out += on ? '<b class="cl">' : "</b>"; open = on; } };
+  while (i < furiganaHtml.length) {
+    const m = furiganaHtml.slice(i).match(/^<ruby>([^<]*)<rp>\(<\/rp><rt>[^<]*<\/rt><rp>\)<\/rp><\/ruby>/);
+    if (m) {
+      let any = false;
+      for (let k = 0; k < m[1].length; k++) if (marks.has(src + k)) any = true;
+      set(any);
+      out += m[0];
+      src += m[1].length;
+      i += m[0].length;
+    } else if (furiganaHtml[i] === "<") {
+      const end = furiganaHtml.indexOf(">", i) + 1;
+      out += furiganaHtml.slice(i, end);
+      i = end;
+    } else {
+      set(marks.has(src));
+      out += furiganaHtml[i];
+      src++;
+      i++;
+    }
+  }
+  set(false);
+  return out;
 }
 
 // ─── Markdown parsing ───
@@ -324,13 +354,13 @@ async function buildExamples(textZh, textEn) {
     // The sentence with its grammar wrapped in <b class="cl"> — the online
     // fill-in-the-blank card hides those parts.
     if (it.marked && it.marked.includes("\uE000")) {
-      let html = "";
+      const marks = new Set();
+      let pos = 0;
       for (const [i, part] of it.marked.split(/[\uE000\uE001]/).entries()) {
-        if (!part) continue;
-        const h = await withFurigana(part);
-        html += i % 2 ? `<b class="cl">${h}</b>` : h;
+        if (i % 2) for (let k = 0; k < part.length; k++) marks.add(pos + k);
+        pos += part.length;
       }
-      it.clozeHtml = html;
+      it.clozeHtml = markCloze(it.jpHtml, marks);
     }
   }
   return { items };
