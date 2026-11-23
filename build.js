@@ -2727,6 +2727,9 @@ async function main() {
       <span class="lang-zh"><a href="${podcastUrl(false, "footer")}" target="_blank">播客</a></span><span class="lang-en"><a href="${podcastUrl(true, "footer")}" target="_blank">Podcast</a></span>
       <a href="${SITE_PATH}about/"><span class="lang-zh">关于</span><span class="lang-en">About</span></a>
       <a href="${SITE_PATH}changelog/"><span class="lang-zh">更新日志</span><span class="lang-en">What's new</span></a>
+      <a href="${SITE_PATH}privacy/"><span class="lang-zh">隐私政策</span><span class="lang-en">Privacy</span></a>
+      <a href="${SITE_PATH}terms/"><span class="lang-zh">使用条款</span><span class="lang-en">Terms</span></a>
+      <a href="${SITE_PATH}contact/"><span class="lang-zh">联系我们</span><span class="lang-en">Contact</span></a>
       <a href="https://github.com/Ralphbupt" target="_blank">GitHub</a>
       <a href="https://liko.page/" target="_blank" rel="author">liko.page</a>
       <a href="#feedback" class="fb-open"><span class="lang-zh">💬 反馈</span><span class="lang-en">💬 Feedback</span></a>
@@ -3193,7 +3196,7 @@ ${AI_SCRIPT}
   // ─── Generate individual lesson pages ───
   // Pages published once per language (PAGE_LANGS); links to them on a
   // non-root copy point at that language's copy.
-  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "changelog", "practice", "listening", "reading", "vocabulary", "mock-test", "grammar-audio", "words", "my-grammar", "my-notes", "review", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`, `${l}-grammar-audio`, `${l}-vocabulary-list`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
+  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "changelog", "privacy", "terms", "contact", "practice", "listening", "reading", "vocabulary", "mock-test", "grammar-audio", "words", "my-grammar", "my-notes", "review", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`, `${l}-grammar-audio`, `${l}-vocabulary-list`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
   // "Practice this point" at the end of every grammar point that has practice
   // questions (questions/N*/lessonNN.json refs), linking to the practice page.
   const quizRefCount = {};
@@ -4150,7 +4153,7 @@ ${AI_SCRIPT}
     "@type": "Person",
     "name": "Ralphbupt",
     "url": "https://github.com/Ralphbupt",
-    "email": "pengcheng199@gmail.com",
+    "email": "hello@jpnotes.dev",
     "sameAs": ["https://github.com/Ralphbupt"]
   }`}
 },
@@ -4232,6 +4235,40 @@ ${AI_SCRIPT}
     }
     changelogGenerated = true;
     console.log("  Generated dist/changelog/index.html");
+  }
+
+  // ─── Privacy policy, terms of use, contact (pages/{id}.md; 2026-11-24, AdSense
+  // trust pages): the same shell as About, linked from every page's footer. ───
+  const policyPages = [];
+  if (aboutPageGenerated) {
+    const POLICY = {
+      privacy: {
+        en: { title: "Privacy Policy — jpnotes.dev", desc: "What jpnotes.dev collects, why, where it is kept and how to delete it: analytics, cookies, accounts and progress sync, notes, Ask AI, feedback and advertising.", keywords: "jpnotes.dev privacy policy, cookies", name: "Privacy Policy", site: "jpnotes.dev", crumb: "Privacy" },
+        zh: { title: "隐私政策 | jpnotes.dev", desc: "jpnotes.dev 收集什么、为什么收集、存在哪里、怎么删除：访问统计、Cookie、登录与同步、笔记、问 AI、反馈和广告。", keywords: "jpnotes.dev 隐私政策, Cookie", name: "隐私政策", site: "jpnotes.dev", crumb: "隐私政策" },
+        crumbZh: "隐私政策", crumbEn: "Privacy",
+      },
+      terms: {
+        en: { title: "Terms of Use — jpnotes.dev", desc: "The terms for using jpnotes.dev: the CC BY-NC content licence, accuracy, accounts and public notes, and the service as is.", keywords: "jpnotes.dev terms of use", name: "Terms of Use", site: "jpnotes.dev", crumb: "Terms" },
+        zh: { title: "使用条款 | jpnotes.dev", desc: "使用 jpnotes.dev 的条款：CC BY-NC 内容授权、内容准确性、账号与公开笔记的规则、服务说明。", keywords: "jpnotes.dev 使用条款", name: "使用条款", site: "jpnotes.dev", crumb: "使用条款" },
+        crumbZh: "使用条款", crumbEn: "Terms",
+      },
+      contact: {
+        en: { title: "Contact jpnotes.dev", desc: "How to reach jpnotes.dev: email hello@jpnotes.dev, the feedback box on every page, or GitHub issues for mistakes in the lessons.", keywords: "contact jpnotes.dev", name: "Contact", site: "jpnotes.dev", crumb: "Contact" },
+        zh: { title: "联系我们 | jpnotes.dev", desc: "联系 jpnotes.dev：邮件 hello@jpnotes.dev、每页底部的反馈框，或在 GitHub 提交错误。", keywords: "jpnotes.dev 联系方式", name: "联系我们", site: "jpnotes.dev", crumb: "联系我们" },
+        crumbZh: "联系我们", crumbEn: "Contact",
+      },
+    };
+    for (const [id, pm] of Object.entries(POLICY)) {
+      const md = path.join(__dirname, "pages", `${id}.md`);
+      if (!fs.existsSync(md)) continue;
+      const html = await bilingualMdHtml(fs.readFileSync(md, "utf-8"));
+      for (const lang of PAGE_LANGS) {
+        writeLangPage(id, lang, localizePage(renderAbout(lang, pm[lang.code], langVariant(id, lang),
+          { html, type: id === "contact" ? "ContactPage" : "WebPage", og: `${SITE}og-image.png`, crumbZh: pm.crumbZh, crumbEn: pm.crumbEn }), lang, localizedPageIds));
+      }
+      policyPages.push(id);
+      console.log(`  Generated dist/${id}/index.html`);
+    }
   }
 
   // ─── Practice question pages (build-quiz.js → dist/quiz/*.json, site/quiz.js) ───
@@ -4452,7 +4489,7 @@ document.addEventListener('DOMContentLoaded',function(){set(on,false)});if(docum
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>${LANG_REDIRECT_JS}</script>
 <title>${m.title}</title>
-<meta name="description" content="${m.desc.replace(/"/g, '&quot;')}">${QUIZ_PUBLIC ? "" : '\n<meta name="robots" content="noindex">'}
+<meta name="description" content="${m.desc.replace(/"/g, '&quot;')}">${QUIZ_PUBLIC && !m.noindex ? "" : '\n<meta name="robots" content="noindex">'}
 <link rel="canonical" href="${lv.url}">${lv.hreflang}
 <meta property="og:type" content="website">
 <meta property="og:title" content="${m.title}">
@@ -5378,7 +5415,7 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
     for (const lang of PAGE_LANGS) {
       const en = lang.code === "en", v = langVariant("words", lang), m = meta[lang.code];
       writeLangPage("words", lang, localizePage(renderQuiz(lang, {
-        ...m, nav: "", ogImage: "og-image.png",
+        ...m, nav: "", ogImage: "og-image.png", noindex: true,   // personal: empty for a crawler (2026-11-24, AdSense thin pages)
         body: `${wbCss}${wbSwitch("words", en)}<div id="wb-app" data-levels="${levelsSrc}"><p class="wb-muted">${en ? "Loading…" : "加载中…"}</p></div><script src="${SITE_PATH}words.js?v=${wbHash}" defer></script>`,
         about: "",
         schema: JSON.stringify([{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: en ? "Japanese Grammar Notes" : "日语语法笔记", item: SITE }, { "@type": "ListItem", position: 2, name: m.crumb, item: v.url }] }]).replace(/</g, "\\u003c"),
@@ -5408,7 +5445,7 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
     for (const lang of PAGE_LANGS) {
       const en = lang.code === "en", v = langVariant("my-grammar", lang), m = mgMeta[lang.code];
       writeLangPage("my-grammar", lang, localizePage(renderQuiz(lang, {
-        ...m, nav: "", ogImage: "og-image.png",
+        ...m, nav: "", ogImage: "og-image.png", noindex: true,   // personal: empty for a crawler (2026-11-24, AdSense thin pages)
         body: `${wbCss}${mgCss}${switcher("my-grammar", en)}<div id="mg-app" data-index="${SITE_PATH}quiz/grammar-index.json" data-cards="${SITE_PATH}quiz/{lv}-cards.json" data-qrefs="${qrefsSrc}"><p class="mg-muted">${en ? "Loading…" : "加载中…"}</p></div><script src="${SITE_PATH}my-grammar.js?v=${mgHash}" defer></script>`,
         about: "",
         schema: JSON.stringify([{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: en ? "Japanese Grammar Notes" : "日语语法笔记", item: SITE }, { "@type": "ListItem", position: 2, name: m.crumb, item: v.url }] }]).replace(/</g, "\\u003c"),
@@ -5430,7 +5467,7 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
       for (const lang of PAGE_LANGS) {
         const en = lang.code === "en", v = langVariant("my-notes", lang), m = mnMeta[lang.code];
         writeLangPage("my-notes", lang, localizePage(renderQuiz(lang, {
-          ...m, nav: "", ogImage: "og-image.png",
+          ...m, nav: "", ogImage: "og-image.png", noindex: true,   // personal: empty for a crawler (2026-11-24, AdSense thin pages)
           body: `${wbCss}${wbSwitch("my-notes", en)}<div id="jp-my-notes" data-index="${SITE_PATH}quiz/grammar-index.json" data-quiz="${SITE_PATH}quiz/{lv}.{lang}.json"><p class="wb-muted">${en ? "Loading…" : "加载中…"}</p></div>`,
           about: "",
           schema: JSON.stringify([{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: en ? "Japanese Grammar Notes" : "日语语法笔记", item: SITE }, { "@type": "ListItem", position: 2, name: m.crumb, item: v.url }] }]).replace(/</g, "\\u003c"),
@@ -5454,7 +5491,7 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
     for (const lang of PAGE_LANGS) {
       const en = lang.code === "en", v = langVariant("review", lang), m = rvMeta[lang.code];
       writeLangPage("review", lang, localizePage(renderQuiz(lang, {
-        ...m, nav: "", ogImage: "og-image.png",
+        ...m, nav: "", ogImage: "og-image.png", noindex: true,   // personal: empty for a crawler (2026-11-24, AdSense thin pages)
         body: `${wbCss}${rvCss}${wbSwitch("review", en)}<div id="rv-app"><p class="wb-muted">${en ? "Loading…" : "加载中…"}</p></div><script src="${SITE_PATH}review.js?v=${rvHash}" defer></script>`,
         about: "",
         schema: JSON.stringify([{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: en ? "Japanese Grammar Notes" : "日语语法笔记", item: SITE }, { "@type": "ListItem", position: 2, name: m.crumb, item: v.url }] }]).replace(/</g, "\\u003c"),
@@ -5664,6 +5701,7 @@ ${((ex) => ex.length ? `<p>${L(`标着「真题考过 N 次」的语法在往年
   // About page (E-E-A-T page, lower priority since not browsed often)
   if (aboutPageGenerated) pushLangUrls("about", gitLastModTime("pages/about.md") || today, "yearly", "0.5");
   if (changelogGenerated) pushLangUrls("changelog", gitLastModTime("pages/changelog.md") || today, "weekly", "0.4");
+  for (const id of policyPages) pushLangUrls(id, gitLastModTime(`pages/${id}.md`) || today, "yearly", "0.2");
   if (QUIZ_PUBLIC) for (const id of quizPageIds) pushLangUrls(id, gitLastModTime("questions") || today, "weekly", "0.8");
   // Anki landing page (downloadable flashcards). Decks are derived from lesson
   // content, so the page effectively changes when any lesson last changed.

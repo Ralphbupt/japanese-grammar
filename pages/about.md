@@ -52,7 +52,7 @@ So I decided to **take notes as I learn** and open-source everything. It started
 
 :::zh
 - GitHub：[Ralphbupt](https://github.com/Ralphbupt)
-- 邮箱：[pengcheng199@gmail.com](mailto:pengcheng199@gmail.com)
+- 邮箱：[hello@jpnotes.dev](mailto:hello@jpnotes.dev)（更多联系方式见[联系我们](/contact/)）
 - 这是**个人项目**，无团队、无商业目的
 - 目前 JLPT 级别：学习中（按本站节奏从 N5 推进到 N2）
 - 反馈渠道首选 [GitHub Issues](https://github.com/Ralphbupt/japanese-grammar/issues)（公开追踪、其他读者也能看到），邮箱用于一对一的隐私沟通
@@ -60,7 +60,7 @@ So I decided to **take notes as I learn** and open-source everything. It started
 
 :::en
 - GitHub: [Ralphbupt](https://github.com/Ralphbupt)
-- Email: [pengcheng199@gmail.com](mailto:pengcheng199@gmail.com)
+- Email: [hello@jpnotes.dev](mailto:hello@jpnotes.dev) (more ways to reach me on the [contact page](/contact/))
 - This is a **personal project** — no team, no commercial intent
 - Current JLPT level: studying (progressing N5 → N2 along with this site)
 - Preferred channel: [GitHub Issues](https://github.com/Ralphbupt/japanese-grammar/issues) for public tracking; email for private discussion
@@ -257,7 +257,7 @@ You can keep notes under every grammar point of the lessons and under the explan
 
 - **GitHub Issues**：[提交 issue](https://github.com/Ralphbupt/japanese-grammar/issues)（推荐，公开追踪）
 - **GitHub PR**：直接提交修复，特别欢迎补充例句和易错点对比
-- **邮箱**：[pengcheng199@gmail.com](mailto:pengcheng199@gmail.com)
+- **邮箱**：[hello@jpnotes.dev](mailto:hello@jpnotes.dev)
 - **页面里直接写**：练习题、模拟题、语法卡片页底部的「💬 反馈 / 建议」，以及每道题解析下的「这题有问题？」。匿名，不用登录。发送的只有：你写的文字、当前页面地址、界面语言；如果是针对某道题，还有题号、你选的选项和你勾的原因。为了防止刷屏，会存一个按日期加盐的 IP 哈希（每天换盐，无法还原 IP，也无法跨天关联），用来限制每人每天最多 20 条。数据存在本站自己的 Cloudflare D1 数据库里，只用来改进题目和网站。
 - **回复怎么回到你这里**：第一次发反馈时，浏览器会生成一个随机编号（存在本机 localStorage），跟反馈一起发出。它不含任何个人信息，只用来把回复送回这个浏览器：之后打开本站时会拿这个编号问一下有没有回复，有就显示出来。登录了的话，编号会跟进度一起同步，换设备也能看到回复。想收到邮件可以留邮箱（选填）：只用来发这一封回复，发完就删除；90 天内没回复也会删除。
 
@@ -269,7 +269,7 @@ Found a typo? Awkward example? Unclear explanation?
 
 - **GitHub Issues**: [open an issue](https://github.com/Ralphbupt/japanese-grammar/issues) — recommended, publicly tracked
 - **GitHub PR**: submit a fix directly; additions to examples and comparison notes especially welcome
-- **Email**: [pengcheng199@gmail.com](mailto:pengcheng199@gmail.com)
+- **Email**: [hello@jpnotes.dev](mailto:hello@jpnotes.dev)
 - **Right on the page**: "💬 Feedback / suggestions" at the bottom of the practice, mock test and flashcard pages, and "Something wrong with this question?" under each explanation. Anonymous, no sign-in. What's sent: the text you write, the page address and the interface language; for a question, also its id, the option you picked and the reason you ticked. To stop flooding, a daily-salted hash of your IP is stored (the salt changes every day, so it can't be turned back into an IP or linked across days) and used to cap each reader at 20 notes a day. It's kept in this site's own Cloudflare D1 database and used only to fix questions and improve the site.
 - **How a reply reaches you**: the first time you send a note, your browser makes a random id (kept in its localStorage) and sends it along. It carries nothing about you; it only lets the reply find its way back to this browser: when you open the site later, it asks whether that id has a reply and shows it if so. If you're signed in, the id syncs with your progress, so replies show on your other devices too. To get an email as well, leave an address (optional): it's used only to send that one reply and deleted right after, or after 90 days if there's no reply.
 

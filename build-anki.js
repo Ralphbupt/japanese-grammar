@@ -771,7 +771,7 @@ ${cardCellsEn}
   <h2><span class="lang-zh">反馈</span><span class="lang-en">Feedback</span></h2>
   <ul>
     <li>GitHub Issues：<a href="https://github.com/Ralphbupt/japanese-grammar/issues">github.com/Ralphbupt/japanese-grammar/issues</a></li>
-    <li><span class="lang-zh">邮箱</span><span class="lang-en">Email</span>：<a href="mailto:pengcheng199@gmail.com">pengcheng199@gmail.com</a></li>
+    <li><span class="lang-zh">邮箱</span><span class="lang-en">Email</span>：<a href="mailto:hello@jpnotes.dev">hello@jpnotes.dev</a></li>
   </ul>
 
   <p style="margin-top:3rem;text-align:center;">
