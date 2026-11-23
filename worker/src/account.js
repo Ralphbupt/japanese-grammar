@@ -155,6 +155,8 @@ async function emailStart(req, env, input, local) {
     method: 'POST', headers: { Authorization: 'Bearer ' + env.RESEND_API_KEY, 'Content-Type': 'application/json' },
     body: JSON.stringify({ from: MAIL_FROM, to: [email], subject: m.subject, text: m.text, html: m.html }),
   });
+  // Counted for the owner's 邮件 page (Resend allows 100 a day); never fails the sign-in.
+  try { await db.prepare(`INSERT INTO mail_counts (day, kind, n, fail) VALUES (?, 'code', ?, ?) ON CONFLICT (day, kind) DO UPDATE SET n = n + excluded.n, fail = fail + excluded.fail`).bind(day, res.ok ? 1 : 0, res.ok ? 0 : 1).run(); } catch (e) {}
   if (!res.ok) throw new HttpError(502, 'The email could not be sent. Try again in a moment.');
   return { ok: true };
 }
