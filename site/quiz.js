@@ -1055,8 +1055,15 @@
   }
   function kjHtml(q, passages) {
     var say = q.sa ? ' <button class="q-say" data-act="say" data-k="' + q.sa + '" aria-label="' + t('听这句', 'Play this sentence') + '" title="' + t('听这句', 'Play this sentence') + '">🔊</button>' : '';
-    var h = q.kj ? '<p class="q-full q-kj" lang="ja"><span class="q-kj-label">' + t('汉字写法', 'In kanji') + '</span>' + q.kj + say + '</p>' : q.full ? '<p class="q-full" lang="ja">' + q.full + say + '</p>' : '';
+    var h = q.kj ? '<p class="q-full q-kj" lang="ja"><span class="q-kj-label">' + t('汉字写法', 'In kanji') + '</span>' + glue(q.kj, say) + '</p>' : q.full ? '<p class="q-full" lang="ja">' + glue(q.full, say) + '</p>' : '';
     return h;
+  }
+  // The 🔊 stays on the line of the sentence's last character (usually 。): a
+  // long sentence used to leave the button alone on a line of its own.
+  function glue(html, say) {
+    if (!say) return html;
+    var m = /(<ruby>(?:(?!<ruby>)[\s\S])*?<\/ruby>|[^<>\s])$/.exec(html);
+    return m ? html.slice(0, m.index) + '<span class="q-nb">' + m[1] + say.replace(/^ /, '\u00a0') + '</span>' : html + say;
   }
   // The whole text in kanji and its translation, folded, after the explanation.
   // Shown once per passage (under its last question); withTr false where the
