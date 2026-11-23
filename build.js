@@ -2874,6 +2874,18 @@ async function main() {
     var a = e.target.closest && e.target.closest('[data-ql]');
     if (a && window.gaEvent) window.gaEvent('quiz_link', { where: a.getAttribute('data-ql'), page: location.pathname });
   });
+  // Lesson 今日练习: which exercise's answers get opened (sec = the A / B / C of
+  // the heading above), to see whether readers do the static exercises.
+  document.addEventListener('toggle', function (e) {
+    var d = e.target;
+    if (!d || d.tagName !== 'DETAILS' || !d.open || location.pathname.indexOf('/lesson') < 0) return;
+    var s = d.querySelector('summary'), st = s ? s.textContent : '';
+    if (st.indexOf('答案') < 0 && st.toLowerCase().indexOf('answer') < 0) return;
+    var h = d.previousElementSibling;
+    while (h && ['H2', 'H3', 'H4'].indexOf(h.tagName) < 0) h = h.previousElementSibling;
+    var t = h ? h.textContent.trim() : '', sec = 'ABCDEFGH'.indexOf(t.charAt(0)) >= 0 && '.．'.indexOf(t.charAt(1)) >= 0 ? t.charAt(0) : '';
+    if (window.gaEvent) window.gaEvent('lesson_answer_open', { sec: sec, page: location.pathname });
+  }, true);
 
   // Phone top bar: where you are (links to the level overview), the tool
   // buttons, and it slides away while scrolling down.
@@ -3266,6 +3278,11 @@ ${AI_SCRIPT}
     let lessonLinkPlaced = !lessonLink;
     const out = html.split(/(?=<h2[\s>])/).map((part) => {
       if (!lessonLinkPlaced && /^<h2[^>]*\bid="复习计划/.test(part)) { lessonLinkPlaced = true; return lessonLink + part; }
+      // 今日练习: at the end of each opened answer, the lesson's online questions
+      // (just checked your answers — here's the next thing to do).
+      if (total && /^<h2[^>]*\bid="(练习|今日练|今日練)/.test(part)) {
+        part = part.replace(/<\/details>/g, `<p class="quiz-link quiz-link-ans"><a href="${lessonHref}" data-ql="answers">✍ <span class="lang-zh">做本课的选择题（${total} 题，自动判分）</span><span class="lang-en">Try this lesson's multiple-choice questions (${total}, marked for you)</span> →</a></p></details>`);
+      }
       const k = (part.match(/^<h2[^>]*\bid="(\d+)\._/) || [])[1];
       const n = k && quizRefCount[`${level}:${id}#${k}`];
       if (!n) return part;
