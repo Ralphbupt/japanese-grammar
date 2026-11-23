@@ -13,6 +13,10 @@
     "questions": [
       {
         "q": "トムさんは どの としょかんへ 行きますか。",
+        "tr": {
+          "zh": "汤姆去哪个图书馆？",
+          "en": "Which library will Tom go to?"
+        },
         "options": [
           "みなみとしょかん",
           "きたとしょかん",
@@ -62,6 +66,10 @@
     "questions": [
       {
         "q": "アンナさんは どの ランチを 食べますか。",
+        "tr": {
+          "zh": "安娜吃哪种午餐？",
+          "en": "Which lunch will Anna have?"
+        },
         "options": [
           "Aランチ",
           "Bランチ",
@@ -105,6 +113,10 @@
     "questions": [
       {
         "q": "ワンさんと むすこが いっしょに 入る ことが できる クラスは どれですか。",
+        "tr": {
+          "zh": "王先生和儿子可以一起参加的课程是哪一个？",
+          "en": "Which class can Mr Wang and his son take together?"
+        },
         "options": [
           "すいえい",
           "テニス",
@@ -140,6 +152,10 @@
       },
       {
         "q": "ワンさんと むすこは 二人で いっかい いくら はらいますか。",
+        "tr": {
+          "zh": "王先生和儿子两个人一次付多少钱？",
+          "en": "How much do Mr Wang and his son pay together for one session?"
+        },
         "options": [
           "500円",
           "600円",
@@ -183,6 +199,10 @@
     "questions": [
       {
         "q": "リサさんは 何時の バスに のりますか。",
+        "tr": {
+          "zh": "丽莎坐几点的巴士？",
+          "en": "Which bus (what time) will Lisa take?"
+        },
         "options": [
           "8:50の バス",
           "9:20の バス",
@@ -226,6 +246,10 @@
     "questions": [
       {
         "q": "三人で いくら はらいますか。",
+        "tr": {
+          "zh": "三个人付多少钱？",
+          "en": "How much do the three of them pay?"
+        },
         "options": [
           "3,100円",
           "3,300円",
@@ -269,6 +293,10 @@
     "questions": [
       {
         "q": "チンさんは 今週 何曜日に もえる ごみを 出しますか。",
+        "tr": {
+          "zh": "陈先生这周星期几倒可燃垃圾？",
+          "en": "On which day this week will Mr Chin put out the burnable rubbish?"
+        },
         "options": [
           "月曜日",
           "水曜日",
@@ -312,6 +340,10 @@
     "questions": [
       {
         "q": "リーさんは どの プールへ 行きますか。",
+        "tr": {
+          "zh": "李同学去哪个游泳池？",
+          "en": "Which pool will Lee go to?"
+        },
         "options": ["みどりプール", "ひがしプール", "駅前プール", "川の プール"],
         "answer": 2,
         "why": {
@@ -327,6 +359,10 @@
       },
       {
         "q": "リーさんは いくら はらいますか。",
+        "tr": {
+          "zh": "李同学付多少钱？",
+          "en": "How much will Lee pay?"
+        },
         "options": ["300円", "600円", "500円", "400円"],
         "answer": 2,
         "why": {
@@ -356,6 +392,10 @@
     "questions": [
       {
         "q": "マリさんは どの ケーキを 買いますか。",
+        "tr": {
+          "zh": "真理买哪个蛋糕？",
+          "en": "Which cake will Mari buy?"
+        },
         "options": ["チーズケーキ", "いちごケーキ", "チョコレートケーキ", "フルーツケーキ"],
         "answer": 0,
         "why": {
@@ -385,6 +425,10 @@
     "questions": [
       {
         "q": "キムさんは どの きょうしつに 行きますか。",
+        "tr": {
+          "zh": "金先生去哪个教室？",
+          "en": "Which class will Mr Kim go to?"
+        },
         "options": ["B", "A", "C", "D"],
         "answer": 0,
         "why": {
@@ -414,6 +458,10 @@
     "questions": [
       {
         "q": "ソンさんは いくら はらいますか。",
+        "tr": {
+          "zh": "孙先生付多少钱？",
+          "en": "How much will Mr Son pay?"
+        },
         "options": ["1,200円", "1,500円", "1,800円", "2,500円"],
         "answer": 1,
         "why": {
@@ -443,6 +491,10 @@
     "questions": [
       {
         "q": "田中さんは どの へやに とまりますか。",
+        "tr": {
+          "zh": "田中先生住哪个房间？",
+          "en": "Which room will Mr Tanaka stay in?"
+        },
         "options": ["ふじ", "うめ", "さくら", "もみじ"],
         "answer": 0,
         "why": {
@@ -458,6 +510,10 @@
       },
       {
         "q": "田中さんは 二人で いくら はらいますか。",
+        "tr": {
+          "zh": "田中先生两个人付多少钱？",
+          "en": "How much will Mr Tanaka pay for the two of them?"
+        },
         "options": ["34,000円", "30,000円", "32,000円", "17,000円"],
         "answer": 0,
         "why": {

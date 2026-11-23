@@ -32,6 +32,14 @@
 
   function t(zh, en) { return EN ? en : zh; }
   function bi(o) { return o ? (EN ? o.en : o.zh) || '' : ''; }
+  // The translation line under an explanation's sentence. A reading question's
+  // tr is the question itself (2026-11-24, reader feedback), so it is labelled.
+  // Listening tr is an object of parts, shown with the transcript instead.
+  function trLine(q, tr) {
+    var s = bi(tr || q.tr);
+    if (!s || typeof s !== 'string') return '';
+    return '<p class="q-muted">' + (q.passage && !isCk(q) ? t('题目：', 'Question: ') : '') + esc(s) + '</p>';
+  }
   function now() { return Math.floor(Date.now() / 1000); }
   function today() { var d = new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
   // Explanation text: escaped, with each 「…」 quote marked as Japanese so a
@@ -997,7 +1005,8 @@
   // and a link straight to that section; other refs stay plain links.
   // Readers' notes on this question: an empty block the notes script from
   // notes.jpnotes.dev fills (build.js NOTES_SRC); without it, nothing shows.
-  function notesMount(q) { return /^[a-z0-9][a-z0-9-]{2,40}$/.test(q.id) ? '<div class="jp-nt" data-nt="q:' + q.id + '"></div>' : ''; }
+  // data-nt-miss: answered wrong (or 不会), so the empty block asks for a note on why.
+  function notesMount(q, ok) { return /^[a-z0-9][a-z0-9-]{2,40}$/.test(q.id) ? '<div class="jp-nt" data-nt="q:' + q.id + '"' + (ok === false ? ' data-nt-miss="1"' : '') + '></div>' : ''; }
   function pointLink(p, label) { return '<a href="' + LESSON_BASE + p.lesson + '/#' + encodeURI(p.slug) + '" target="_blank" rel="noopener">' + label + '</a>'; }
   function pointsHtml(q) {
     var refs = (q.refs || []).filter(function (r) { return D.refs[r]; });
@@ -1241,7 +1250,7 @@
     // then read why the answer fits it.
     // Order: the sentence, then why the reader's own pick fails (what they want
     // to know first), then why the answer is right, then the other options.
-    var sent = kjHtml(q) + (q.tr ? '<p class="q-muted">' + esc(bi(q.tr)) + '</p>' : '');
+    var sent = kjHtml(q) + trLine(q);
     h += '<div class="q-explain">' + (sent ? '<div class="q-sent">' + sent + '</div>' : '') + wordsHtml(q);
     var rows = q.type === 'narabe' ? [] : q.wrong.map(function (w, i) { return w ? { i: i, w: w } : null; }).filter(Boolean);
     var mineRow = rows.filter(function (r) { return r.i === choice; })[0];
@@ -1253,7 +1262,7 @@
     if (!left.length) h += wholeHtml(q, D.passages) + passageWords(q);
     h += pointsHtml(q);
     // The tools under an explanation, one quiet row: notes (list opens below) · 这题有问题？
-    h += '<div class="q-tools">' + notesMount(q);
+    h += '<div class="q-tools">' + notesMount(q, ok);
     h += '<details class="q-report"><summary>⚑ ' + t('这题有问题？', 'Something wrong with this question?') + '</summary>' +
       [['answer', '答案不对', 'The answer is wrong'], ['two', '有两个对的', 'Two options work'], ['stem', '题目不通顺', 'The question reads badly'], ['other', '其他', 'Something else']]
         .map(function (r) { return '<button class="q-btn" data-act="report" data-k="' + r[0] + '">' + t(r[1], r[2]) + '</button>'; }).join(' ') +
@@ -1907,7 +1916,7 @@
           h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + (i === kq.answer ? ' q-ok' : i === a.c ? ' q-bad' : '') + '"><span class="q-num">' + (i + 1) + '</span><span class="q-otext">' + o + '</span>' + okjOf(qq, i) + '</div></li>'; }).join('') + '</ol>';
           h += '<div class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '"><span class="q-vtext">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 猜对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</span><span class="q-vtools">' + favBtn(q) + '</span></div>';
           h += '<div class="q-explain">' + whyHtml(kq.why) + (q.type !== 'narabe' ? '<ul class="q-wrong">' + kq.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + q.options[i] + okjOf(qq, i) + '</b> — ' + ex(w) + '</li>' : ''; }).join('') + '</ul>' : '') +
-            kjHtml(qq) + (kq.tr ? '<p class="q-muted">' + esc(bi(kq.tr)) + '</p>' : '') + (lastOfP ? wholeHtml(qq, key.passages, false) : '') + '</div>' +
+            kjHtml(qq) + trLine(qq, kq.tr) + (lastOfP ? wholeHtml(qq, key.passages, false) : '') + '</div>' +
             aiBtn('m-ai', ok).replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
         });
       });

@@ -13,6 +13,10 @@
     "questions": [
       {
         "q": "リーさんが 入る ことが できる 教室は どれですか。",
+        "tr": {
+          "zh": "小李可以参加的是哪个班？",
+          "en": "Which class can Lee join?"
+        },
         "options": [
           "A",
           "B",
@@ -42,6 +46,10 @@
       },
       {
         "q": "リーさんは どのように 申し込みますか。",
+        "tr": {
+          "zh": "小李怎么报名？",
+          "en": "How does Lee apply?"
+        },
         "options": [
           "今月の 20日までに、電話か 受付で 申し込む。",
           "来月の 20日までに、電話か 受付で 申し込む。",
@@ -91,6 +99,10 @@
     "questions": [
       {
         "q": "約束は 10時です。ゆいさんは 何時の バスに 乗りますか。",
+        "tr": {
+          "zh": "约定的时间是10点。结衣坐几点的公交车？",
+          "en": "The meeting time is 10:00. Which bus does Yui take?"
+        },
         "options": [
           "8時40分",
           "9時10分",
@@ -120,6 +132,10 @@
       },
       {
         "q": "約束の 時間が 11時に 変わったら、ゆいさんは 何時の バスに 乗りますか。",
+        "tr": {
+          "zh": "如果约定的时间改到11点，结衣坐几点的公交车？",
+          "en": "If the meeting time changes to 11:00, which bus does Yui take?"
+        },
         "options": [
           "9時40分",
           "10時10分",
@@ -163,6 +179,10 @@
     "questions": [
       {
         "q": "日曜日、三人で いくら はらいますか。",
+        "tr": {
+          "zh": "星期天，三个人一共付多少钱？",
+          "en": "On Sunday, how much do the three of them pay in total?"
+        },
         "options": [
           "800円",
           "1,050円",
@@ -192,6 +212,10 @@
       },
       {
         "q": "来週の 水曜日、ジョンさんは 一人で いくら はらいますか。",
+        "tr": {
+          "zh": "下周三，约翰一个人付多少钱？",
+          "en": "Next Wednesday, how much does John pay on his own?"
+        },
         "options": [
           "150円",
           "250円",
@@ -235,6 +259,10 @@
     "questions": [
       {
         "q": "チャンさんは どの クラスを とりますか。",
+        "tr": {
+          "zh": "小张选哪个班？",
+          "en": "Which class does Chan take?"
+        },
         "options": [
           "A 会話",
           "B 漢字",
@@ -264,6 +292,10 @@
       },
       {
         "q": "チャンさんの 友だちの ルカさんは N3の クラスに います。月曜日と 水曜日の 午後は アルバイトが あります。読む 練習が したいです。ルカさんは どの クラスを とりますか。",
+        "tr": {
+          "zh": "小张的朋友卢卡在N3的班上。他星期一和星期三下午要打工。他想练习阅读。卢卡选哪个班？",
+          "en": "Chan's friend Luca is in an N3 class. He has a part-time job on Monday and Wednesday afternoons. He wants to practise reading. Which class does Luca take?"
+        },
         "options": [
           "B 漢字",
           "C ビジネス日本語",
@@ -307,6 +339,10 @@
     "questions": [
       {
         "q": "山本さんと 息子は いつの 見学に 行きますか。",
+        "tr": {
+          "zh": "山本和儿子去参加哪个时间的参观？",
+          "en": "Which tour do Yamamoto and his son go on?"
+        },
         "options": [
           "土曜日の 10時",
           "土曜日の 14時",
@@ -336,6 +372,10 @@
       },
       {
         "q": "山本さんは 見学の 前に 何を しなければ なりませんか。",
+        "tr": {
+          "zh": "参观之前，山本必须做什么？",
+          "en": "What does Yamamoto have to do before the tour?"
+        },
         "options": [
           "三日前までに、電話で 予約する。",
           "三日前までに、二人分の 600円を はらう。",
@@ -385,6 +425,10 @@
     "questions": [
       {
         "q": "ケイトさんたちは どの 自転車を 借りますか。",
+        "tr": {
+          "zh": "凯特她们借哪种自行车？",
+          "en": "Which bicycles do Kate and her friend rent?"
+        },
         "options": [
           "A",
           "B",
@@ -414,6 +458,10 @@
       },
       {
         "q": "ケイトさんは 自転車を 借りる 前に、何を しなければ なりませんか。",
+        "tr": {
+          "zh": "借自行车之前，凯特必须做什么？",
+          "en": "What does Kate have to do before renting the bicycles?"
+        },
         "options": [
           "土曜日の 17時までに 電話で 予約する",
           "金曜日の 17時までに 電話で 予約する",
@@ -463,6 +511,10 @@
     "questions": [
       {
         "q": "ハンさんに 合う 部屋は どれですか。",
+        "tr": {
+          "zh": "适合小韩的房间是哪一个？",
+          "en": "Which room suits Han?"
+        },
         "options": [
           "A",
           "B",
@@ -492,6 +544,10 @@
       },
       {
         "q": "ハンさんが その 部屋に 入る とき、敷金は いくら はらいますか。",
+        "tr": {
+          "zh": "小韩住进那个房间时，要交多少押金？",
+          "en": "When Han moves into that room, how much deposit does Han pay?"
+        },
         "options": [
           "55,000円",
           "59,000円",
@@ -535,6 +591,10 @@
     "questions": [
       {
         "q": "ソンさんが コンビニから 荷物を 送ると、いくらですか。",
+        "tr": {
+          "zh": "小宋从便利店寄包裹的话，要多少钱？",
+          "en": "If Song sends the parcel from a convenience store, how much does it cost?"
+        },
         "options": [
           "1,100円",
           "1,400円",
@@ -564,6 +624,10 @@
       },
       {
         "q": "ソンさんは いつ 荷物を 送って、どの 時間を 選びますか。",
+        "tr": {
+          "zh": "小宋什么时候寄包裹？选哪个时间段？",
+          "en": "When does Song send the parcel, and which time slot does Song choose?"
+        },
         "options": [
           "今日 送って、「18〜21時」を 選ぶ",
           "あした 送って、「16〜18時」を 選ぶ",
@@ -607,6 +671,10 @@
     "questions": [
       {
         "q": "水曜日、二人で いくら はらいますか。",
+        "tr": {
+          "zh": "星期三，两个人一共付多少钱？",
+          "en": "On Wednesday, how much do the two of them pay in total?"
+        },
         "options": [
           "2,100円",
           "2,400円",
@@ -636,6 +704,10 @@
       },
       {
         "q": "次の 週、二人は 土曜日の 夜 8時半から 始まる 映画を 見ます。二人で いくら はらいますか。",
+        "tr": {
+          "zh": "下一周，两个人要看星期六晚上8点半开始的电影。两个人一共付多少钱？",
+          "en": "The following week, the two of them will see a film that starts at 8:30 on Saturday evening. How much do they pay in total?"
+        },
         "options": [
           "2,000円",
           "2,600円",

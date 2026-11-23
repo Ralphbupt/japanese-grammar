@@ -61,6 +61,10 @@
     "questions": [
       {
         "q": "学生は あした 何を もって 行きますか。",
+        "tr": {
+          "zh": "学生们明天带什么去？",
+          "en": "What will the students bring tomorrow?"
+        },
         "options": ["おべんとうと 飲みもの", "おべんとうと かさ", "飲みものと かさ", "おべんとうと 飲みものと かさ"],
         "okj": ["お弁当と飲み物", "お弁当と傘", "飲み物と傘", "お弁当と飲み物と傘"],
         "answer": 0,
@@ -88,6 +92,10 @@
     "questions": [
       {
         "q": "マリアさんは 何時から 何時まで プールに 入る ことが できますか。",
+        "tr": {
+          "zh": "玛丽亚可以从几点到几点进游泳池？",
+          "en": "From what time until what time can Maria use the pool?"
+        },
         "options": ["8:00から 11:00まで", "9:00から 12:00まで", "1:00から 6:00まで", "1:00から 5:00まで"],
         "answer": 0,
         "why": { "zh": "依据：表头「土・日」；那一列「午前」一行是「8:00〜11:00」\n推理：她星期日去，要看「土・日」那一列；她想上午去、午饭前回家，所以看「午前」那一行：8:00到11:00。", "en": "Evidence: the column header 「土・日」; its 「午前」 row reads 「8:00〜11:00」\nReasoning: She goes on Sunday, so read the 「土・日」 column; she wants the morning and to be home before lunch, so the 「午前」 row: 8:00 to 11:00." },

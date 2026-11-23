@@ -89,6 +89,10 @@
     "questions": [
       {
         "q": "10日に 重い 荷物が とどく 人は、どう しなければ なりませんか。",
+        "tr": {
+          "zh": "10日有重的包裹送到的人必须怎么做？",
+          "en": "What do people who have a heavy parcel arriving on the 10th have to do?"
+        },
         "options": [
           "9日までに 管理室に 連絡する。",
           "10日の 午前9時までに 管理室に 連絡する。",
@@ -123,6 +127,10 @@
     "questions": [
       {
         "q": "ゆかさんが この メールで いちばん 言いたい ことは 何ですか。",
+        "tr": {
+          "zh": "由香在这封邮件里最想说的是什么？",
+          "en": "What does Yuka most want to say in this email?"
+        },
         "options": [
           "本を 返す 日を 少し おそく したい。",
           "本を 全部 読んだので、土曜日に 返したい。",
@@ -158,6 +166,10 @@
     "questions": [
       {
         "q": "森さんに ついて、正しい ものは どれですか。",
+        "tr": {
+          "zh": "关于森，哪一项是正确的？",
+          "en": "Which is correct about Mori?"
+        },
         "options": [
           "今は、雨が ふらない 日は 駅まで 歩いて いる。",
           "今も 毎朝 バスで 駅まで 行って いる。",
@@ -193,6 +205,10 @@
     "questions": [
       {
         "q": "店長は どうして ハンさんに 注意しましたか。",
+        "tr": {
+          "zh": "店长为什么提醒了小韩？",
+          "en": "Why did the manager correct Han?"
+        },
         "difficulty": 2,
         "options": [
           "お客さんに ていねいな ことばを 使わなかったから",
@@ -215,6 +231,10 @@
       },
       {
         "q": "ハンさんは お客さんと 話すのが こわく なくなる まえに、何を しましたか。",
+        "tr": {
+          "zh": "小韩在和客人说话不再害怕之前，做了什么？",
+          "en": "What did Han do before no longer being afraid of talking to customers?"
+        },
         "difficulty": 2,
         "options": [
           "店で 使う ことばを ノートに 書いて、休み時間に 練習した。",
@@ -237,6 +257,10 @@
       },
       {
         "q": "ハンさんに ついて、正しい ものは どれですか。",
+        "tr": {
+          "zh": "关于小韩，哪一项是正确的？",
+          "en": "Which is correct about Han?"
+        },
         "difficulty": 3,
         "options": [
           "来月から 一人で 電話に 出る ことに なって いる。",
@@ -273,6 +297,10 @@
     "questions": [
       {
         "q": "マリアさんは 料理の 教室に 入りたいです。全部で いくら はらいますか。",
+        "tr": {
+          "zh": "玛丽亚想参加料理班。一共要付多少钱？",
+          "en": "Maria wants to join a cooking class. How much does Maria pay in total?"
+        },
         "difficulty": 2,
         "options": ["8,000円", "5,000円", "7,000円", "10,000円"],
         "answer": 0,
@@ -289,6 +317,10 @@
       },
       {
         "q": "マリアさんの 友だちの 林さんは センターの 会員です。土曜日か 日曜日の 教室で、いちばん 安い ものに 入りたいです。林さんは どの 教室に いくら はらいますか。",
+        "tr": {
+          "zh": "玛丽亚的朋友林是中心的会员。林想参加星期六或星期天的班中最便宜的一个。林参加哪个班？要付多少钱？",
+          "en": "Maria's friend Hayashi is a member of the centre. Hayashi wants to join the cheapest of the Saturday or Sunday classes. Which class does Hayashi join, and how much does Hayashi pay?"
+        },
         "difficulty": 2,
         "options": ["書道に 2,000円", "書道に 3,000円", "ヨガに 3,000円", "生け花に 6,000円"],
         "answer": 0,
