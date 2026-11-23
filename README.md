@@ -22,10 +22,12 @@ Every grammar point covers how it attaches, what it means, example sentences wit
 
 - **93 grammar lessons, 420+ grammar points**: N5 (lessons 0–17), N4 (18–34), N3 (35–58), N2 (59–75), N1 (76–92), plus A-vs-B comparison guides and a JLPT exam guide.
 - **Example sentences** with furigana (can be toggled off), 🔊 audio for every model sentence, and translations.
-- **[Practice](https://jpnotes.dev/practice/)**: 2,500+ exam-style questions covering every non-listening JLPT item type (N5–N1), with an explanation for every option. Also timed mock tests with estimated scores, and grammar flashcards with spaced repetition.
-- **Ask AI**: a side panel on every lesson and after every practice question. It works with no setup (a free relay on Cloudflare Workers AI), or with your own API key, which stays in your browser.
+- **[Practice](https://jpnotes.dev/practice/)**: 4,000+ exam-style questions covering every JLPT item type (N5–N1), [listening](https://jpnotes.dev/listening/) included, with an explanation for every option. Also timed mock tests with estimated scores, a daily challenge, and grammar flashcards with spaced repetition.
+- **Review**: the questions you missed come back at growing intervals; a word list built from the words you tap in explanations; grammar cards; and [grammar audio](https://jpnotes.dev/n5-grammar-audio/) that reads every grammar point with examples.
+- **Notes**: keep your own notes under any grammar point or practice question, and share the ones you like. Shared notes are reviewed before others see them, and others can reply, so a question's notes turn into its Q&A.
+- **Ask AI**: a side panel on every lesson and after every practice question, free and with no setup (a relay on Cloudflare Workers).
 - **[Anki decks](https://jpnotes.dev/anki/)**: `.apkg` and TSV per level, with audio and cloze cards.
-- **No sign-up, no ads.** Your progress stays in your browser, and a service worker keeps pages and audio you've opened available offline.
+- **No ads, account optional.** Without an account your progress stays in your browser; sign in with Google or an email code to sync it across devices and to write notes. A service worker keeps pages and audio you've opened available offline.
 
 ## Getting started
 
@@ -104,7 +106,7 @@ questions/              practice and mock-test question bank (JSON)
 pages/                  About page
 audio/                  pre-generated TTS for example sentences
 site/                   client scripts: quiz, AI panel, settings, feedback, service worker
-worker/                 Cloudflare Worker behind ai.jpnotes.dev (free AI relay, reader feedback)
+worker/                 Cloudflare Workers: ai.jpnotes.dev (free AI relay, reader feedback), api.jpnotes.dev (accounts and sync), the site itself
 tools/                  audits (furigana, readings) and Search Console / analytics reports
 build.js                static site generator (markdown → HTML, furigana, audio tags, SEO)
 build-quiz.js           validates and bundles the question bank
@@ -115,16 +117,15 @@ seo-titles.js           per-page titles and descriptions
 
 ## Deployment
 
-Every push to `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). It runs `npm ci` and `npm run build`, copies `audio/` into `dist/`, builds the `.apkg` decks, and deploys `dist/` to GitHub Pages. Audio is never generated in CI: generate it locally and commit `audio/`.
+Every push to `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). It runs `npm ci` and `npm run build`, builds the `.apkg` decks, and deploys `dist/` to Cloudflare as the static assets of the Worker `jpnotes-site` (`worker/wrangler.site.toml`). Audio is never generated in CI: generate it locally, upload it to the audio bucket with `python3 tools/audio-sync.py`, and commit `audio/`.
 
-The AI relay and the feedback endpoint are a separate Cloudflare Worker (`worker/`). They are deployed with `cd worker && npx wrangler deploy` and are not needed to build or preview the site.
+The AI relay and feedback endpoint (`cd worker && npx wrangler deploy`) and the account service (`npx wrangler deploy -c wrangler.account.toml`) are separate Workers; neither is needed to build or preview the site. The notes service (notes.jpnotes.dev) and the experiments script are not in this repo; `NOTES_SRC=` and `AB_SRC=` build the site without them.
 
 ## Contributing
 
 If you find a wrong rule, an unnatural example or a bad translation, you can:
 
-- use the **💬 Feedback** link at the bottom of any page (anonymous, no account needed);
-- leave a comment under the lesson;
+- use the **💬 Feedback** link at the bottom of any page, or "Something wrong with this question?" under a practice question (no account needed; leave an email if you'd like the reply mailed to you);
 - open an issue or a pull request.
 
 ## License
