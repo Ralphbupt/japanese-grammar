@@ -500,6 +500,7 @@ Gives a few examples in speech and hints there are others: "things like… and�
 10. 随着年龄增长，记忆力下降了。
 
 **答案**
+
 1\. a　2. a　3. b　4. c　5. b　6. b
 
 7. 彼は成績がいい上に、スポーツも得意だ。
@@ -539,6 +540,7 @@ Gives a few examples in speech and hints there are others: "things like… and�
 10. As I get older, my memory has declined.
 
 **Answers**
+
 1\. a　2. a　3. b　4. c　5. b　6. b
 
 7. 彼は成績がいい上に、スポーツも得意だ。

@@ -316,6 +316,7 @@ Indicates degree — "to the extent that…" or "so much that…". Often used in
 10. 这道菜好吃到令人感动。（ほど）
 
 **答案**
+
 1\. ほど／くらい（两个都可以）　2. ば・ほど　3. さえ・ば　4. ほど／くらい（两个都可以）　5. さえ
 
 6. 死ぬほど疲れた。
@@ -342,6 +343,7 @@ Indicates degree — "to the extent that…" or "so much that…". Often used in
 10. The food was so delicious it was moving. (Use ほど)
 
 **Answers**
+
 1\. ほど / くらい (either works)　2. ば, ほど　3. さえ, ば　4. ほど / くらい (either works)　5. さえ
 
 6. 死ぬほど疲れた。

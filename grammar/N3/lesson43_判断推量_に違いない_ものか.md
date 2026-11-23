@@ -449,6 +449,7 @@ This lesson covers grammar for "judgment," "conjecture," and "rhetorical questio
 10. 这么好吃，当然会卖完啊。（に決まっている）
 
 **答案**
+
 1\. に違いない／に決まっている（两个都可以；に決まっている 语气更主观、更口语）　2. おそれがある　3. っけ　4. ものか　5. に違いない（根据证据下判断，用 に違いない 最自然）
 
 6. そんなことができるものか！
@@ -475,6 +476,7 @@ This lesson covers grammar for "judgment," "conjecture," and "rhetorical questio
 10. It's this delicious — of course it'll sell out. (Use に決まっている)
 
 **Answers**
+
 1\. に違いない / に決まっている (both work; に決まっている sounds more subjective and conversational)　2. おそれがある　3. っけ　4. ものか　5. に違いない (a judgment drawn from evidence — に違いない fits best)
 
 6. そんなことができるものか！

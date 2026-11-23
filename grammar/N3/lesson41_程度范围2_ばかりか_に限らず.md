@@ -359,6 +359,7 @@ This lesson covers grammar for "limiting scope" and "exceeding scope." 「だけ
 10. 请尽量用日语回答。（だけ）
 
 **答案**
+
 1\. しか　2. ばかりか　3. に限って（告知里更常说「本日に限り」）　4. に限らず　5. だけ
 
 6. 大事な日に限って、風邪をひいてしまった。
@@ -385,6 +386,7 @@ This lesson covers grammar for "limiting scope" and "exceeding scope." 「だけ
 10. Please answer in Japanese as much as possible. (Use だけ)
 
 **Answers**
+
 1\. しか　2. ばかりか　3. に限って (notices more often say 「本日に限り」)　4. に限らず　5. だけ
 
 6. 大事な日に限って、風邪をひいてしまった。

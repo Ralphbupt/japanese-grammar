@@ -443,6 +443,7 @@ This lesson covers grammar expressing "tendencies" and "states of change." 「�
 10. 桌子上有吃了一半的饭。（かけ）
 
 **答案**
+
 1\. 気味　2. 一方だ　3. かけ　4. っぽい　5. がち　6. つつある
 
 7. 彼はちょっと子供っぽい。
@@ -468,6 +469,7 @@ This lesson covers grammar expressing "tendencies" and "states of change." 「�
 10. There's a half-eaten meal on the table. (Use かけ)
 
 **Answers**
+
 1\. 気味　2. 一方だ　3. かけ　4. っぽい　5. がち　6. つつある
 
 7. 彼はちょっと子供っぽい。

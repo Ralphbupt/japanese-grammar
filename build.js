@@ -3280,6 +3280,13 @@ ${AI_SCRIPT}
       if (!lessonLinkPlaced && /^<h2[^>]*\bid="复习计划/.test(part)) { lessonLinkPlaced = true; return lessonLink + part; }
       // 今日练习: at the end of each opened answer, the lesson's online questions
       // (just checked your answers — here's the next thing to do).
+      if (/^<h2[^>]*\bid="(练习|今日练|今日練)/.test(part)) {
+        // Answers written out under the questions (N3–N1 lessons: a **答案** /
+        // ### 答案 block at the end of each language block) are folded like the
+        // N5/N4 ones, so they don't give the exercise away.
+        part = part.replace(/(?:<p><strong>(答案|Answers)<\/strong><\/p>|<h3[^>]*>(答案|Answers)<\/h3>)\n?([\s\S]*?)(?=<\/div>)/g,
+          (m, a, b, body) => `<details class="ans-fold"><summary>${a || b}</summary>\n${body}</details>\n`);
+      }
       if (total && /^<h2[^>]*\bid="(练习|今日练|今日練)/.test(part)) {
         part = part.replace(/<\/details>/g, `<p class="quiz-link quiz-link-ans"><a href="${lessonHref}" data-ql="answers">✍ <span class="lang-zh">做本课的选择题（${total} 题，自动判分）</span><span class="lang-en">Try this lesson's multiple-choice questions (${total}, marked for you)</span> →</a></p></details>`);
       }
