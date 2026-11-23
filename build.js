@@ -4618,7 +4618,9 @@ ${AI_SCRIPT}
         `</a><span class="ga-exam-y">${ys(all[0].years)}</span>` : "";
       return head + `<section class="ga-it"${o.itemAttr ? o.itemAttr(it) : ""}>` + (o.itemHead ? o.itemHead(it, g, ++no) : `<p class="ga-hd"><span class="ga-no">${++no}</span><span class="ga-ln ga-g" data-l="${g}" lang="ja">${gaEsc(it.term.replace(/^〜/, ""))}</span>${examTag}<a class="ga-ls" href="${SITE_PATH}${it.lesson}/">${t("讲解", "Lesson")} →</a></p>`) +
         (it.form && it.form[code] && it.form[code].length ? `<p class="ga-form">${it.form[code].map((f) => `<code>${gaEsc(f)}</code>`).join("")}</p>` : "") +
-        `<p class="ga-ln ga-m" data-l="${m}">${gaEsc(it.mean[code])}</p>` +
+        // it.meanJa: a Japanese explanation with furigana (questions/grammar-audio/src/ja.json),
+        // shown instead of the meaning when the reader picks 日本語 (#ga.ga-ja); not read aloud.
+        `<p class="ga-ln ga-m${it.meanJa ? " ga-hasja" : ""}" data-l="${m}"><span class="ga-mn">${gaEsc(it.mean[code])}</span>${it.meanJa ? `<span class="ga-mj" lang="ja">${it.meanJa}</span>` : ""}</p>` +
         it.ex.slice(0, it.read).map((e) => { const a = l++, b = l++; return exHtml(e, ` class="ga-ln" data-l="${a}"`, ` data-l="${b}" data-k="t"`).replace('class="ga-tr" data-l', 'class="ga-tr ga-ln" data-l'); }).join("") +
         (vs ? `<p class="ga-vs"><span>${t("易混", "Don't confuse")}</span>${gaEsc(vs)}</p>` : "") +
         (more.length ? `<details class="ga-more"><summary>${t(`更多例句（${more.length}）`, `More examples (${more.length})`)}</summary>` +
@@ -4646,7 +4648,7 @@ ${AI_SCRIPT}
 #ga.ga-grouped h2.ga-lh,#ga-ctl.ga-grouped .ga-toc{display:none}#ga .ga-it[hidden]{display:none}
 .ga-exam{font-size:.72rem;border-radius:10px;padding:.05rem .5rem;background:var(--accent);color:#fff;white-space:nowrap;text-decoration:none}.ga-exam:hover{color:#fff;opacity:.88}.ga-exam-y{font-size:.72rem;color:var(--text-muted)}
 .ga-form{display:flex;flex-wrap:wrap;gap:.35rem;margin:.35rem 0 .1rem}.ga-form code{font:inherit;font-size:.85rem;background:var(--chip-bg);border-radius:6px;padding:.05rem .5rem}
-.ga-m{margin:.4rem 0 .2rem}
+.ga-m{margin:.4rem 0 .2rem}.ga-mj{display:none}#ga.ga-ja .ga-hasja .ga-mj{display:inline}#ga.ga-ja .ga-hasja .ga-mn{display:none}.ga-mj rt{font-size:.6em}
 .ga-ex{margin:.55rem 0 0;padding-left:.6rem;border-left:3px solid var(--border,#ddd)}.ga-ex p{margin:0}
 .ga-ex span[lang]{font-size:1.08rem}#ga b.cl{color:var(--accent);font-weight:700}
 .ga-tr{font-size:.88rem;color:var(--text-muted)}
@@ -4674,7 +4676,14 @@ ${(() => {
   // Ten points at a time (site/grammar-audio.js fills it): group chips, play
   // this group, next group, and back to the lesson view.
   const groups = o.itemHead ? "" : `<div class="ga-row ga-groups" id="ga-groups" data-zh="${zh ? 1 : 0}"></div>`;
-  return `<div id="ga-ctl"><div class="ga-row">${modes}\n${trs}${hide}</div>\n${say}${groups}${tocNav}${o.ctlExtra || ""}</div>`;
+  // 意思：中文 / 日本語 (English / 日本語): which meaning line shows. Text only — the
+  // track still reads the page's language. Kept in localStorage ga_mja.
+  const mja = ga.items.some((it) => it.meanJa) ? `<span class="ga-row ga-mjrow" role="group" aria-label="${t("意思用哪种语言", "Meaning in")}" style="display:inline-flex;margin-left:.2rem"><span class="sub" style="font-size:.82rem;color:var(--text-muted)">${t("意思：", "Meaning:")}</span><button type="button" data-ga-mja="0" aria-pressed="true">${t("中文", "English")}</button><button type="button" data-ga-mja="1" aria-pressed="false">日本語</button></span>
+<script>(function(){var g=document.getElementById('ga'),on=false;try{on=localStorage.getItem('ga_mja')==='1'}catch(e){}
+function set(v,user){on=v;var el=document.getElementById('ga');if(el)el.classList.toggle('ga-ja',v);document.querySelectorAll('[data-ga-mja]').forEach(function(b){b.setAttribute('aria-pressed',String((b.getAttribute('data-ga-mja')==='1')===v))});if(user){try{localStorage.setItem('ga_mja',v?'1':'0')}catch(e){}if(window.gaEvent)window.gaEvent('grammar_audio_ja',{on:v?1:0})}}
+document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-ga-mja]');if(b)set(b.getAttribute('data-ga-mja')==='1',true)});
+document.addEventListener('DOMContentLoaded',function(){set(on,false)});if(document.readyState!=='loading')set(on,false);})();</script>` : "";
+  return `<div id="ga-ctl"><div class="ga-row">${modes}\n${trs}${hide}${mja}</div>\n${say}${groups}${tocNav}${o.ctlExtra || ""}</div>`;
 })()}
 <div id="ga-bar"><div class="ga-row"><button type="button" id="ga-play" aria-label="${t("播放", "Play")}" data-play="${t("播放", "Play")}" data-pause="${t("暂停", "Pause")}"></button>
 <input id="ga-seek" type="range" min="0" max="1000" value="0" aria-label="${t("进度", "Position")}"><span id="ga-time">0:00 / ${Math.floor(tr.duration / 60)}:${String(Math.floor(tr.duration % 60)).padStart(2, "0")}</span>
@@ -5247,6 +5256,16 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
     if (hasGa) {
       const ga = JSON.parse(fs.readFileSync(gaFile, "utf-8")), n = ga.items.length;
       gaExam(ga.items, level);
+      // Japanese explanations of each point ({ key: text }, written by Claude
+      // subagents 2026-11-24), shown by the 意思：日本語 switch, with furigana.
+      const gaJaFile = path.join(__dirname, "questions", "grammar-audio", "src", "ja.json");
+      const gaJa = fs.existsSync(gaJaFile) ? JSON.parse(fs.readFileSync(gaJaFile, "utf-8")) : {};
+      // A key used by two points (two senses of 〜そうだ) takes "key#2" for the second.
+      const gaSeen = {};
+      for (const it of ga.items) {
+        const n = (gaSeen[it.key] = (gaSeen[it.key] || 0) + 1), text = gaJa[n > 1 ? `${it.key}#${n}` : it.key] || gaJa[it.key];
+        if (text) it.meanJa = await furiganaText(kuro, text);
+      }
       ga.words = await pageWords(gaId, ga.items);
       const gaMeta = {
         en: {
