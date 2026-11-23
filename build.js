@@ -837,6 +837,7 @@ const JA_TITLES = {
   "jlpt-n4-past-exam-grammar": "N4 過去問の文法",
   "jlpt-n5-past-exam-grammar": "N5 過去問の文法",
   "jlpt-listening-tips": "JLPT 聴解のコツ",
+  "jlpt-past-papers": "JLPT 過去問・公式問題集",
   "jlpt-reading-tips": "JLPT 読解のコツ",
   "jlpt-vocabulary-grammar-tips": "JLPT 文字・語彙・文法のコツ",
   "jlpt-n5-key-grammar": "N5 高频考点",
@@ -2330,7 +2331,7 @@ async function main() {
       const readingMin = computeReadingTime(html);
       const lessonMetaHtml = `<div class="lesson-meta"><span class="lang-zh">📅 最后更新 <time datetime="${lessonLastMod}">${lessonLastMod}</time> · ⏱ 阅读约 ${readingMin} 分钟</span><span class="lang-en">📅 Updated <time datetime="${lessonLastMod}">${lessonLastMod}</time> · ⏱ ${readingMin} min read</span>` +
         // share this lesson (settings-modal.js handles [data-jp-share])
-        ` <button type="button" class="lesson-share" data-jp-share="lesson"><span class="lang-zh">↗ 分享这一课</span><span class="lang-en">↗ Share this lesson</span></button></div>`;
+        (/^lesson\d/.test(file.id) ? ` <button type="button" class="lesson-share" data-jp-share="lesson"><span class="lang-zh">↗ 分享这一课</span><span class="lang-en">↗ Share this lesson</span></button></div>` : ` <button type="button" class="lesson-share" data-jp-share="page"><span class="lang-zh">↗ 分享这一页</span><span class="lang-en">↗ Share this page</span></button></div>`);
       html = html.replace(/(<\/h1>)/, `$1\n${lessonMetaHtml}`);
 
       // SEO lead paragraph: keyword-rich summary inserted after h1.
@@ -5399,7 +5400,7 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
       <p class="hub-listen">${en
         ? ckLevels.length ? `🎧 <b><a href="${SITE_PATH}listening/">Listening practice for every level</a>.</b> For real Japanese, the <a href="${podcastUrl(true, "practice-hub")}" target="_blank">Japanese Daily News podcast</a> has a real Japanese news story every day, with transcripts.` : `🎧 <b>Listening questions are planned, not built yet.</b> If you want them, <a href="#feedback" class="fb-open">say so</a> — demand decides what comes first. Meanwhile the <a href="${podcastUrl(true, "practice-hub")}" target="_blank">Japanese Daily News podcast</a> has a real Japanese news story every day, with transcripts.`
         : ckLevels.length ? `🎧 <b><a href="${SITE_PATH}listening/">各级别的听力练习</a>。</b>想听真实的日语，可以用 <a href="${podcastUrl(false, "practice-hub")}" target="_blank">Japanese Daily News 播客</a>练听力（每天一则日语新闻，附原文和中文翻译）。` : `🎧 <b>听力题在规划中，还没做。</b>想要的话<a href="#feedback" class="fb-open">告诉我们</a>，想要的人多就先做。现在可以先用 <a href="${podcastUrl(false, "practice-hub")}" target="_blank">Japanese Daily News 播客</a>练听力（每天一则日语新闻，附原文和中文翻译）。`}</p>
-      <p class="hub-listen">${en ? `By section: <a href="${SITE_PATH}listening/">listening</a> · <a href="${SITE_PATH}reading/">reading</a> · <a href="${SITE_PATH}vocabulary/">vocabulary</a> · <a href="${SITE_PATH}mock-test/">mock tests</a>. 💡 Tips: <a href="${SITE_PATH}jlpt-vocabulary-grammar-tips/">vocabulary &amp; grammar</a> · <a href="${SITE_PATH}jlpt-reading-tips/">reading</a> · <a href="${SITE_PATH}jlpt-listening-tips/">listening</a>.` : `按部分练：<a href="${SITE_PATH}listening/">听力</a> · <a href="${SITE_PATH}reading/">阅读</a> · <a href="${SITE_PATH}vocabulary/">词汇</a> · <a href="${SITE_PATH}mock-test/">模拟题</a>。💡 做题技巧：<a href="${SITE_PATH}jlpt-vocabulary-grammar-tips/">文字词汇与语法</a> · <a href="${SITE_PATH}jlpt-reading-tips/">阅读</a> · <a href="${SITE_PATH}jlpt-listening-tips/">听力</a>。`}</p>` };
+      <p class="hub-listen">${en ? `By section: <a href="${SITE_PATH}listening/">listening</a> · <a href="${SITE_PATH}reading/">reading</a> · <a href="${SITE_PATH}vocabulary/">vocabulary</a> · <a href="${SITE_PATH}mock-test/">mock tests</a>. 💡 Tips: <a href="${SITE_PATH}jlpt-vocabulary-grammar-tips/">vocabulary &amp; grammar</a> · <a href="${SITE_PATH}jlpt-reading-tips/">reading</a> · <a href="${SITE_PATH}jlpt-listening-tips/">listening</a>. 📄 <a href="${SITE_PATH}jlpt-past-papers/">JLPT past papers (official, free)</a>.` : `按部分练：<a href="${SITE_PATH}listening/">听力</a> · <a href="${SITE_PATH}reading/">阅读</a> · <a href="${SITE_PATH}vocabulary/">词汇</a> · <a href="${SITE_PATH}mock-test/">模拟题</a>。💡 做题技巧：<a href="${SITE_PATH}jlpt-vocabulary-grammar-tips/">文字词汇与语法</a> · <a href="${SITE_PATH}jlpt-reading-tips/">阅读</a> · <a href="${SITE_PATH}jlpt-listening-tips/">听力</a>。📄 <a href="${SITE_PATH}jlpt-past-papers/">JLPT 真题（官方免费）</a>。`}</p>` };
     writeLangPage("practice", lang, localizePage(renderQuiz(lang, { ...m, about: practiceHubAbout(en) }, langVariant("practice", lang), "", null), lang, localizedPageIds));
   }
   quizPageIds.push("practice");
@@ -5726,7 +5727,7 @@ ${(() => {
 <li>${L("一次做完整套，不暂停、不查词典，练时间分配。", "Do a whole set in one go, without pausing or a dictionary, to practise timing.")}</li>
 <li>${L("交卷后看哪一科离最低分最近，回去专练那一科。", "After submitting, see which section is closest to its minimum and practise that.")}</li>
 </ol>
-<p>${L(`各部分的做题技巧：<a href="${SITE_PATH}jlpt-vocabulary-grammar-tips/">文字词汇与语法</a> · <a href="${SITE_PATH}jlpt-reading-tips/">阅读</a> · <a href="${SITE_PATH}jlpt-listening-tips/">听力</a>。考试安排：<a href="${SITE_PATH}jlpt-december-2026/">12 月 JLPT 考前指南</a>。`, `Tips for each part: <a href="${SITE_PATH}jlpt-vocabulary-grammar-tips/">vocabulary &amp; grammar</a> · <a href="${SITE_PATH}jlpt-reading-tips/">reading</a> · <a href="${SITE_PATH}jlpt-listening-tips/">listening</a>. Exam day: <a href="${SITE_PATH}jlpt-december-2026/">December JLPT guide</a>.`)}</p>
+<p>${L(`各部分的做题技巧：<a href="${SITE_PATH}jlpt-vocabulary-grammar-tips/">文字词汇与语法</a> · <a href="${SITE_PATH}jlpt-reading-tips/">阅读</a> · <a href="${SITE_PATH}jlpt-listening-tips/">听力</a>。考试安排：<a href="${SITE_PATH}jlpt-december-2026/">12 月 JLPT 考前指南</a>。官方真题：<a href="${SITE_PATH}jlpt-past-papers/">JLPT 真题与官方样题（N5–N1 免费下载）</a>。`, `Tips for each part: <a href="${SITE_PATH}jlpt-vocabulary-grammar-tips/">vocabulary &amp; grammar</a> · <a href="${SITE_PATH}jlpt-reading-tips/">reading</a> · <a href="${SITE_PATH}jlpt-listening-tips/">listening</a>. Exam day: <a href="${SITE_PATH}jlpt-december-2026/">December JLPT guide</a>. Official tests: <a href="${SITE_PATH}jlpt-past-papers/">JLPT past papers and official sample tests (N5–N1, free)</a>.`)}</p>
 <h2>${L("各级别的模拟题", "The mock tests by level")}</h2>
 <div class="table-scroll"><table><tr><th>${L("级别", "Level")}</th><th>${L("套数", "Sets")}</th><th>${L("言语知识・阅读", "Vocabulary, grammar, reading")}</th><th>${L("听力", "Listening")}</th><th>${L("合格线", "Pass mark")}</th><th>${L("各科最低分", "Section minimums")}</th></tr>${withMock.map((l) => {
       const b = quizBundles[l], cfg = QUIZ_MOCK[l], t = b.mocks[0].test;

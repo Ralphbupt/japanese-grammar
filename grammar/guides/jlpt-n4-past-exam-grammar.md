@@ -181,11 +181,11 @@ These items test no named pattern but a particular use of a particle, which conj
 
 :::zh
 - [N4 语法清单](/N4_grammar_list/)・[N4 高频语法考点](/jlpt-n4-key-grammar/)・[N4 高频词汇（真题词表）](/n4-vocabulary-list/)
-- [N4 练习题](/n4-practice/)・[N4 模拟题](/n4-mock-test/)・[JLPT 估分器](/jlpt-score-calculator/)
+- [N4 练习题](/n4-practice/)・[N4 模拟题](/n4-mock-test/)・[JLPT 估分器](/jlpt-score-calculator/)・[N4 官方真题（免费下载）](/jlpt-past-papers/)
 - 其他级别：[N5 历年真题语法](/jlpt-n5-past-exam-grammar/)・[N3 历年真题语法](/jlpt-n3-past-exam-grammar/)・[N2 历年真题语法](/jlpt-n2-past-exam-grammar/)・[N1 历年真题语法](/jlpt-n1-past-exam-grammar/)
 :::
 :::en
 - [N4 grammar list](/N4_grammar_list/) · [N4 key grammar](/jlpt-n4-key-grammar/) · [N4 vocabulary list from past tests](/n4-vocabulary-list/)
-- [N4 practice](/n4-practice/) · [N4 mock test](/n4-mock-test/) · [JLPT score calculator](/jlpt-score-calculator/)
+- [N4 practice](/n4-practice/) · [N4 mock test](/n4-mock-test/) · [JLPT score calculator](/jlpt-score-calculator/) · [N4 past papers (official, free)](/jlpt-past-papers/)
 - Other levels: [N5 grammar from past tests](/jlpt-n5-past-exam-grammar/) · [N3 grammar from past tests](/jlpt-n3-past-exam-grammar/) · [N2 grammar from past tests](/jlpt-n2-past-exam-grammar/) · [N1 grammar from past tests](/jlpt-n1-past-exam-grammar/)
 :::

@@ -369,11 +369,11 @@ How to use it: go through the patterns tested 3+ times first and open their less
 
 :::zh
 - [N1 语法清单](/N1_grammar_list/)・[N1 高频语法考点](/jlpt-n1-key-grammar/)
-- [N1 练习题](/n1-practice/)・[N1 模拟题](/n1-mock-test/)・[JLPT 估分器](/jlpt-score-calculator/)
+- [N1 练习题](/n1-practice/)・[N1 模拟题](/n1-mock-test/)・[JLPT 估分器](/jlpt-score-calculator/)・[N1 官方真题（免费下载）](/jlpt-past-papers/)
 - 其他级别：[N5 历年真题语法](/jlpt-n5-past-exam-grammar/)・[N4 历年真题语法](/jlpt-n4-past-exam-grammar/)・[N3 历年真题语法](/jlpt-n3-past-exam-grammar/)・[N2 历年真题语法](/jlpt-n2-past-exam-grammar/)
 :::
 :::en
 - [N1 grammar list](/N1_grammar_list/) · [N1 key grammar](/jlpt-n1-key-grammar/)
-- [N1 practice](/n1-practice/) · [N1 mock test](/n1-mock-test/) · [JLPT score calculator](/jlpt-score-calculator/)
+- [N1 practice](/n1-practice/) · [N1 mock test](/n1-mock-test/) · [JLPT score calculator](/jlpt-score-calculator/) · [N1 past papers (official, free)](/jlpt-past-papers/)
 - Other levels: [N5 grammar from past tests](/jlpt-n5-past-exam-grammar/) · [N4 grammar from past tests](/jlpt-n4-past-exam-grammar/) · [N3 grammar from past tests](/jlpt-n3-past-exam-grammar/) · [N2 grammar from past tests](/jlpt-n2-past-exam-grammar/)
 :::

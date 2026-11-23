@@ -322,11 +322,11 @@ How to use it: go through the patterns tested 3+ times first and open their less
 
 :::zh
 - [N2 语法清单](/N2_grammar_list/)・[N2 高频语法考点](/jlpt-n2-key-grammar/)・[N2 高频词汇（真题词表）](/n2-vocabulary-list/)
-- [N2 练习题](/n2-practice/)・[N2 模拟题](/n2-mock-test/)・[JLPT 估分器](/jlpt-score-calculator/)
+- [N2 练习题](/n2-practice/)・[N2 模拟题](/n2-mock-test/)・[JLPT 估分器](/jlpt-score-calculator/)・[N2 官方真题（免费下载）](/jlpt-past-papers/)
 - 其他级别：[N5 历年真题语法](/jlpt-n5-past-exam-grammar/)・[N4 历年真题语法](/jlpt-n4-past-exam-grammar/)・[N3 历年真题语法](/jlpt-n3-past-exam-grammar/)・[N1 历年真题语法](/jlpt-n1-past-exam-grammar/)
 :::
 :::en
 - [N2 grammar list](/N2_grammar_list/) · [N2 key grammar](/jlpt-n2-key-grammar/) · [N2 vocabulary list from past tests](/n2-vocabulary-list/)
-- [N2 practice](/n2-practice/) · [N2 mock test](/n2-mock-test/) · [JLPT score calculator](/jlpt-score-calculator/)
+- [N2 practice](/n2-practice/) · [N2 mock test](/n2-mock-test/) · [JLPT score calculator](/jlpt-score-calculator/) · [N2 past papers (official, free)](/jlpt-past-papers/)
 - Other levels: [N5 grammar from past tests](/jlpt-n5-past-exam-grammar/) · [N4 grammar from past tests](/jlpt-n4-past-exam-grammar/) · [N3 grammar from past tests](/jlpt-n3-past-exam-grammar/) · [N1 grammar from past tests](/jlpt-n1-past-exam-grammar/)
 :::

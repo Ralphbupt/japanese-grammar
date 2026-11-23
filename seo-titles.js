@@ -476,6 +476,13 @@ module.exports = {
     descZh: "日语 N1 语法高频考点整理：最常考的 40 个语法点（接续、意思、例句），最容易混的几组辨析，考试技巧，最后 10 道自测题带答案。",
     level: "N1",
   },
+  "jlpt-past-papers": {
+    en: "JLPT Past Papers (N5–N1) — Free Official Tests with Answers & Audio",
+    zh: "JLPT 真题下载 — 官方免费真题级样题、答案和听力（N5–N1）",
+    desc: "Where to get JLPT past papers: the free official tests on jlpt.jp (real questions from tests since 2010) for N5–N1, with answers, scripts and audio — direct links, and how to use them.",
+    descZh: "JLPT 真题去哪下载：jlpt.jp 免费公开的官方题集（选自 2010 年后的真实考试），N5–N1 每级两套完整试题，附答案、录音稿和听力音频的直接链接，以及怎么用。",
+    level: "JLPT",
+  },
   "jlpt-listening-tips": {
     en: "JLPT Listening Tips — How to Answer Each Question Type (N5–N1)",
     zh: "JLPT 听力技巧 — 各题型怎么听、先看什么、常见陷阱（N5–N1）",
