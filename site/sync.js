@@ -484,7 +484,9 @@
   }
   function signedIn(r, method) {
     setAcct({ token: r.data.token, email: r.data.email });
-    track('account_login', { method: method || 'google', local_answers: Object.keys(state().get().answers || {}).length });
+    // `from`: what sent the reader to sign in, when something said so (the notes script sets jp_login_from).
+    var from = ''; try { from = sessionStorage.getItem('jp_login_from') || ''; sessionStorage.removeItem('jp_login_from'); } catch (e) {}
+    track('account_login', { method: method || 'google', local_answers: Object.keys(state().get().answers || {}).length, from: from.slice(0, 20) });
     status = { kind: 'idle' };
     pull();
   }

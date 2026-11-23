@@ -47,6 +47,14 @@
   }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function track(name, p) { try { if (window.gaEvent) window.gaEvent(name, p); } catch (e) {} }
+  // Which folded parts of an explanation readers open (words, the transcript,
+  // 这题有问题？, the other options…): one quiz_more per open, `what` = its class.
+  document.addEventListener('toggle', function (e) {
+    var d = e.target;
+    if (!d || d.tagName !== 'DETAILS' || !d.open || !d.closest || !d.closest('#quiz-app')) return;
+    var what = (String(d.className || '').match(/\bq-[a-z-]+/) || [String(d.className || '').split(' ')[0] || 'other'])[0].slice(0, 24);
+    track('quiz_more', { what: what, level: LEVEL });
+  }, true);
 
   // ─── Storage ───
   function fresh() { return { v: 1, answers: {}, review: {}, reported: [], session: null, days: {}, prefs: {}, mock: {}, cards: {}, cardDays: {}, fav: {}, words: {} }; }
