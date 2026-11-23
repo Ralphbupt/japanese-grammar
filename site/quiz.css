@@ -171,6 +171,15 @@ html.theme-dark .q-ai .q-ai-main { background: #2f6bd8; border-color: #2f6bd8; c
 html.theme-dark .q-ai .q-btn:not(.q-ai-main) { border-color: color-mix(in srgb, var(--text) 35%, transparent); }
 .q-ai .ico { width: 1.05em; height: 1.05em; }
 .q-report { margin-top: .8rem; font-size: .9em; }
+/* Notes and 这题有问题？ share one quiet row under the explanation; an open report takes the full width. */
+.q-tools { display: flex; flex-wrap: wrap; align-items: flex-start; gap: .2rem 1rem; margin-top: 1.1rem; padding-top: .5rem; border-top: 1px solid var(--border); }
+.q-tools .jp-nt { flex: 1 1 18rem; margin: 0; min-width: 0; }
+.q-tools .q-report { flex: none; margin: 0; padding: 0; background: none; border: 0; box-shadow: none; }
+.q-tools .q-report summary { padding: 4px 0; font-size: .92em; list-style: none; }
+.q-tools .q-report summary::-webkit-details-marker { display: none; }
+.q-tools .q-report[open] { flex-basis: 100%; order: 3; }
+.q-tools .jp-nt.nt-open { flex-basis: 100%; }
+.q-tools .jp-nt.nt-open ~ .q-report:not([open]) { margin-left: auto; }
 .q-report summary { cursor: pointer; color: var(--text-muted); }
 .q-report .q-btn { margin: .4rem .2rem 0 0; padding: .3em .7em; font-size: .9em; }
 .q-next { position: sticky; bottom: 0; padding: .8rem 0 .4rem; background: linear-gradient(transparent, var(--card-bg) 30%); margin-top: .6rem; }

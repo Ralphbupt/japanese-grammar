@@ -226,9 +226,17 @@
     return '<div class="q-words" data-q="' + qid + '">' + (label ? '<span class="q-box-k">' + label + '</span>' : '') + main + ez + '</div>';
   }
   var HINT = function () { return HOVER ? t('鼠标停在带虚线的词上看意思，点一下加入生词本', 'Hover a dotted word for its meaning; click to add it to your word list') : t('点带虚线的词看意思、加入生词本', 'Tap a dotted word for its meaning and to save it'); };
+  // The "hover a dotted word" line: only the first few explanations a reader sees.
+  var hintShown = 0;
+  function hintOnce() {
+    var n = 0; try { n = +localStorage.getItem('jp_whint') || 0; } catch (e) {}
+    if (n >= 5 && !hintShown) return '';
+    if (!hintShown) { hintShown = 1; try { localStorage.setItem('jp_whint', String(n + 1)); } catch (e) {} }
+    return '<p class="q-whint q-muted">' + HINT() + '</p>';
+  }
   function wordsHtml(q) {
     if (isCk(q) || (!q.wd && !q.wde)) return '';
-    if (q.wsp && q.wsp.length) return '<p class="q-whint q-muted">' + HINT() + '</p>' + wordChips(q.wd, q.wde, q.id, t('本题全部生词（含选项）', 'All words in this question (options too)') + ' <span class="q-muted">' + ((q.wd || []).length + (q.wde || []).length) + '</span>', true);
+    if (q.wsp && q.wsp.length) return hintOnce() + wordChips(q.wd, q.wde, q.id, t('本题全部生词（含选项）', 'All words in this question (options too)') + ' <span class="q-muted">' + ((q.wd || []).length + (q.wde || []).length) + '</span>', true);
     return wordChips(q.wd, q.wde, q.id, t('生词', 'Words') + ' <span class="q-muted">' + (HOVER ? t('鼠标停上去看意思，点一下加入生词本', 'hover for meaning · click to save') : t('点词看意思、加入生词本', 'tap for meaning · save')) + '</span>');
   }
   // Listening: the words go inside the transcript, so they show with it.
@@ -1236,12 +1244,13 @@
     if (rows.length) h += '<div class="q-box-k">' + (mineRow ? t('另外两个选项', 'The other options') : t('其他选项为什么不对', 'Why the others don’t work')).replace('另外两个', rows.length === 2 ? '另外两个' : '其他') + '</div><ul class="q-wrong">' + rows.map(function (r) { return '<li>' + optB(r.i) + ' — ' + ex(r.w) + '</li>'; }).join('') + '</ul>';
     if (!left.length) h += wholeHtml(q, D.passages) + passageWords(q);
     h += pointsHtml(q);
-    h += notesMount(q);
-    h += '<details class="q-report"><summary>' + t('这题有问题？', 'Something wrong with this question?') + '</summary>' +
+    // The tools under an explanation, one quiet row: notes (list opens below) · 这题有问题？
+    h += '<div class="q-tools">' + notesMount(q);
+    h += '<details class="q-report"><summary>⚑ ' + t('这题有问题？', 'Something wrong with this question?') + '</summary>' +
       [['answer', '答案不对', 'The answer is wrong'], ['two', '有两个对的', 'Two options work'], ['stem', '题目不通顺', 'The question reads badly'], ['other', '其他', 'Something else']]
         .map(function (r) { return '<button class="q-btn" data-act="report" data-k="' + r[0] + '">' + t(r[1], r[2]) + '</button>'; }).join(' ') +
       '<div class="q-report-more" hidden><textarea maxlength="1000" rows="3" placeholder="' + t('哪里不对？可以不写', 'What’s wrong? (optional)') + '"></textarea>' + (window.jpFeedback && window.jpFeedback.emailField ? window.jpFeedback.emailField() : '') +
-      '<button class="q-btn q-btn-primary" data-act="report-send">' + t('提交', 'Send') + '</button></div></details></div>';
+      '<button class="q-btn q-btn-primary" data-act="report-send">' + t('提交', 'Send') + '</button></div></details></div></div>';
     var P = q.passage && D.passages[q.passage];
     if (!left.length && P && P.au) h += listenBtn(P.au);
     var past = cur.past;

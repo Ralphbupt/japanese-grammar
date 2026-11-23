@@ -104,7 +104,7 @@ const AB_LOADER = AB_SRC ? `<script src="${AB_SRC}" defer></script>` : "";
 // it the "已掌握" buttons to hang a block under, practice pages an empty
 // <div class="jp-nt" data-nt="q:<id>"> in each explanation (site/quiz.js).
 // NOTES_SRC= (empty) builds without it; ?notes=local on a page talks to wrangler dev.
-const NOTES_SRC = process.env.NOTES_SRC !== undefined ? process.env.NOTES_SRC : "https://notes.jpnotes.dev/notes.js?v=2";
+const NOTES_SRC = process.env.NOTES_SRC !== undefined ? process.env.NOTES_SRC : "https://notes.jpnotes.dev/notes.js?v=3";
 const NOTES_ORIGIN = NOTES_SRC ? " " + new URL(NOTES_SRC).origin : "";
 const NOTES_LOADER = NOTES_SRC ? `<script src="${NOTES_SRC}" defer></script>` : "";
 // Content-Security-Policy connect-src allowlist: the browser itself refuses
@@ -750,7 +750,7 @@ const GTAG_DEFERRED = AB_LOADER + NOTES_LOADER + `<script>
   function kindOf(p) {
     var m;
     return /\\/lesson\\d+\\/$/.test(p) ? 'lesson' : (m = p.match(/\\/n[1-5]-(practice|listening|reading|vocabulary-list|vocabulary|mock-test|cards|grammar-audio)\\/$/)) ? m[1]
-      : /\\/jlpt-n[1-5]-past-exam-grammar\\/$/.test(p) ? 'past-exam-grammar' : /^\\/(zh\\/)?(words|my-grammar|review)\\/$/.test(p) ? p.replace(/^\\/(zh\\/)?|\\/$/g, '')
+      : /\\/jlpt-n[1-5]-past-exam-grammar\\/$/.test(p) ? 'past-exam-grammar' : /^\\/(zh\\/)?(words|my-grammar|my-notes|review)\\/$/.test(p) ? p.replace(/^\\/(zh\\/)?|\\/$/g, '')
       : /\\/N[1-5]\\/$/.test(p) ? 'overview' : /_grammar_list\\/$/.test(p) ? 'checklist' : /^\\/(zh\\/)?(practice|listening|reading|vocabulary|mock-test|guides|grammar-audio)\\/$/.test(p) ? 'hub'
       : /^\\/(zh\\/)?$/.test(p) ? 'home' : 'other';
   }
@@ -3464,7 +3464,7 @@ ${AI_SCRIPT}
   // ─── Generate individual lesson pages ───
   // Pages published once per language (PAGE_LANGS); links to them on a
   // non-root copy point at that language's copy.
-  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "changelog", "practice", "listening", "reading", "vocabulary", "mock-test", "grammar-audio", "words", "my-grammar", "review", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`, `${l}-grammar-audio`, `${l}-vocabulary-list`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
+  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "changelog", "practice", "listening", "reading", "vocabulary", "mock-test", "grammar-audio", "words", "my-grammar", "my-notes", "review", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`, `${l}-grammar-audio`, `${l}-vocabulary-list`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
   // "Practice this point" at the end of every grammar point that has practice
   // questions (questions/N*/lessonNN.json refs), linking to the practice page.
   const quizRefCount = {};
@@ -5603,7 +5603,7 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
     }
     const levelsSrc = writeQuizData("word-levels.json", levels);
     // The 复习 pages' tab bar: 错题 | 生词本 | 语法卡, the current one filled.
-    const wbSwitch = (cur, en) => `<nav class="wb-switch" aria-label="${en ? "Review" : "复习"}">${[["review", "✍", en ? "Mistakes" : "错题"], ["words", "📖", en ? "Word list" : "生词本"], ["my-grammar", "🗂", en ? "Grammar cards" : "语法卡"]].map(([id, ico, l]) =>
+    const wbSwitch = (cur, en) => `<nav class="wb-switch" aria-label="${en ? "Review" : "复习"}">${[["review", "✍", en ? "Mistakes" : "错题"], ["words", "📖", en ? "Word list" : "生词本"], ["my-grammar", "🗂", en ? "Grammar cards" : "语法卡"], ...(NOTES_SRC ? [["my-notes", "✎", en ? "Notes" : "笔记"]] : [])].map(([id, ico, l]) =>
       id === cur ? `<b aria-current="page"><span aria-hidden="true">${ico}</span>${l}</b>` : `<a href="${SITE_PATH}${en ? "" : "zh/"}${id}/"><span aria-hidden="true">${ico}</span>${l}</a>`).join("")}</nav>`;
     const WB_JS = fs.readFileSync(path.join(__dirname, "site", "words.js"), "utf-8");
     fs.writeFileSync(path.join(__dirname, "dist", "words.js"), WB_JS, "utf-8");
@@ -5667,6 +5667,29 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
       }, v, "", null), lang, localizedPageIds));
     }
     console.log("  Generated dist/my-grammar/ (grammar cards)");
+
+    // /my-notes/: every note the reader wrote under lesson grammar points and
+    // practice questions. An empty shell: the notes script (NOTES_SRC, not in
+    // this repo) fills #jp-my-notes, using the grammar index and the level's
+    // question file for what each note belongs to.
+    if (NOTES_SRC) {
+      const mnMeta = {
+        en: { title: "My Japanese Study Notes — Grammar Points and Practice Questions", desc: "The notes you wrote on jpnotes.dev under lesson grammar points and practice questions, private or shared, in one list you can search.", h1: "My notes", crumb: "Notes",
+          lead: "Every note you wrote under a lesson grammar point or a practice question, newest first. Private ones only you can see; public ones others can read once approved. Open one to go back to its grammar point or question." },
+        zh: { title: "我的笔记 - 课文语法点和练习题下写的笔记", desc: "你在 jpnotes.dev 课文语法点和练习题下面写的笔记，私有和公开的都在这里，可以搜索。", h1: "我的笔记", crumb: "笔记",
+          lead: "你在课文语法点、练习题下面写的所有笔记，新的在前。私有的只有你看得到，公开的审核后大家都能看到。点一条回到原来的语法点或那道题。" },
+      };
+      for (const lang of PAGE_LANGS) {
+        const en = lang.code === "en", v = langVariant("my-notes", lang), m = mnMeta[lang.code];
+        writeLangPage("my-notes", lang, localizePage(renderQuiz(lang, {
+          ...m, nav: "", ogImage: "og-image.png",
+          body: `${wbCss}${wbSwitch("my-notes", en)}<div id="jp-my-notes" data-index="${SITE_PATH}quiz/grammar-index.json" data-quiz="${SITE_PATH}quiz/{lv}.{lang}.json"><p class="wb-muted">${en ? "Loading…" : "加载中…"}</p></div>`,
+          about: "",
+          schema: JSON.stringify([{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: en ? "Japanese Grammar Notes" : "日语语法笔记", item: SITE }, { "@type": "ListItem", position: 2, name: m.crumb, item: v.url }] }]).replace(/</g, "\\u003c"),
+        }, v, "", null), lang, localizedPageIds));
+      }
+      console.log("  Generated dist/my-notes/ (notes)");
+    }
 
     // /review/: 复习 › 错题 — every level's review list (site/review.js); the
     // questions are done on the practice pages (#review / #reviewlist).
