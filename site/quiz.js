@@ -431,6 +431,10 @@
   }
 
   // Icon + label; on narrow phones the label hides (CSS), so the name is also in aria-label/title.
+  // ✎ 笔记 next to ☆ 收藏 (2026-11-24): the notes block at the foot of the
+  // explanation got no clicks, so the entry sits where every reader looks. It
+  // opens that block's editor (the notes script, notes.jpnotes.dev).
+  function noteBtn(q, ok) { return /^[a-z0-9][a-z0-9-]{2,40}$/.test(q.id) ? '<button class="q-btn q-fav q-note" data-act="note" data-k="' + q.id + '" title="' + (ok ? t('记笔记', 'Add a note') : t('记一下为什么错', 'Note why you missed it')) + '"><span aria-hidden="true">✎</span><span class="q-fav-l">' + t('笔记', 'Note') + '</span></button>' : ''; }
   function favBtn(q) { var on = isFav(q.id), l = on ? t('已收藏', 'Saved') : t('收藏', 'Save'); return '<button class="q-btn q-fav" data-act="fav" data-k="' + q.id + '" aria-pressed="' + on + '" aria-label="' + t('收藏', 'Save') + '" title="' + l + '"><span aria-hidden="true">' + (on ? '★' : '☆') + '</span><span class="q-fav-l">' + l + '</span></button>'; }
 
   // Accuracy over the last RECENT answers to questions matching `pick`.
@@ -1238,7 +1242,7 @@
     // 不会 before answering; 其实是猜的 after a right answer (both go on the review list).
     // The verdict line: the verdict on the left, 其实是猜的 / ☆ on the right of the same line.
     var h = '<div class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '"><span class="q-vtext">' + (ok ? '✓ ' + t('正确', 'Correct') : '✗ ' + (choice == null ? t('不会 · ', 'Didn’t know · ') : '') + t('正确答案是 ', 'The answer is ') + (q.answer + 1) + ' <span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span>') + '</span>' +
-      '<span class="q-vtools">' + (ok ? '<button class="q-btn q-was-guess" data-act="was-guess">' + t('其实是猜的', 'I guessed') + '</button>' : '') + favBtn(q) + '</span></div>';
+      '<span class="q-vtools">' + (ok ? '<button class="q-btn q-was-guess" data-act="was-guess">' + t('其实是猜的', 'I guessed') + '</button>' : '') + noteBtn(q, ok) + favBtn(q) + '</span></div>';
     if (q.type === 'narabe' && !ok) h += '<p class="q-order" lang="ja">' + t('正确顺序：', 'Right order: ') + q.order.map(function (i) { return q.options[i]; }).join(' → ') + '</p>';
     var left = curs ? Object.keys(curs).filter(function (id) { return !curs[id].done; }) : [];
     // A recording with several questions: the transcript (it has every question
@@ -2550,6 +2554,14 @@
     else if (act === 'next') ask(el.hasAttribute('data-k') ? +el.getAttribute('data-k') : undefined);
     else if (act === 'prev') ask(+el.getAttribute('data-k'));
     else if (act === 'idk') { if (curs && !cur.done) pickInGroup(null); else submit(null); }
+    else if (act === 'note') {
+      var nb = root().querySelector('.jp-nt[data-nt="q:' + el.getAttribute('data-k') + '"]'), add = nb && nb.querySelector('[data-nt-act="new"]');
+      track('quiz_note_btn', { level: LEVEL });
+      if (!add) return;
+      var open = nb.querySelector('.nt-slot[data-slot="new"] .nt-form');
+      if (!open) add.click();
+      setTimeout(function () { var ta = nb.querySelector('.nt-slot[data-slot="new"] textarea'); nb.scrollIntoView({ block: 'center', behavior: 'smooth' }); if (ta) ta.focus({ preventScroll: true }); }, 60);
+    }
     else if (act === 'was-guess') {
       var gq = cur.q, ans = S.answers[gq.id], last = ans && ans[ans.length - 1];
       if (last) last.g = true;
