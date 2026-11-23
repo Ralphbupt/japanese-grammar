@@ -655,7 +655,14 @@
   }
   // Set size: the reader's choice, else 5 on listening-only pages (a recording
   // takes far longer than a written question), else 10.
-  function setSize() { return S.prefs.size || (ALL.length && ALL.every(isCk) ? 5 : 10); }
+  // A reader who never chose a size gets 10 (5 on listening-only pages), unless
+  // an outside script (experiments: jpQuizHooks.defaultSize) says 5 / 10 / 20.
+  function setSize() { return S.prefs.size || hookSize() || (ALL.length && ALL.every(isCk) ? 5 : 10); }
+  function hookSize() {
+    var H = window.jpQuizHooks, f = H && H.defaultSize;
+    if (typeof f !== 'function') return 0;
+    try { var n = +f(); return [5, 10, 20].indexOf(n) >= 0 ? n : 0; } catch (e) { return 0; }
+  }
   function home() {
     view(true);
     var size = setSize();
