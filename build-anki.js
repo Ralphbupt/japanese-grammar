@@ -72,7 +72,9 @@ async function withFurigana(text) {
   try {
     // 3階・何階 are さんがい・なんがい; kuroshiro reads the counter alone as かい.
     return (await kuro.convert(text, { to: "hiragana", mode: "furigana" }))
-      .replace(/([3３三]|<ruby>何<rp>\(<\/rp><rt>なん<\/rt><rp>\)<\/rp><\/ruby>)<ruby>階<rp>\(<\/rp><rt>かい<\/rt>/g, "$1<ruby>階<rp>(</rp><rt>がい</rt>");
+      .replace(/([3３三]|<ruby>何<rp>\(<\/rp><rt>なん<\/rt><rp>\)<\/rp><\/ruby>)<ruby>階<rp>\(<\/rp><rt>かい<\/rt>/g, "$1<ruby>階<rp>(</rp><rt>がい</rt>")
+      // 紅葉 in lesson25's examples is もみじ (as in build.js RUBY_FIXES); lesson51 keeps こうよう.
+      .replace(/<ruby>紅葉<rp>\(<\/rp><rt>こうよう<\/rt>(?=<rp>\)<\/rp><\/ruby>(ですね|を<ruby>思))/g, "<ruby>紅葉<rp>(</rp><rt>もみじ</rt>");
   } catch {
     return text;
   }

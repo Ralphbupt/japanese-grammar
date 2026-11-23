@@ -1662,6 +1662,10 @@ async function furiganaText(kuro, text) {
 // surrounding plain text all match; `before`/`after` see the text with tags
 // and readings stripped, so a neighbouring ruby reads as its bare kanji.
 const RUBY_FIXES = [
+  // 紅葉 in lesson25 is もみじ (its word table, and the grammar audio reads it so);
+  // lesson51 keeps こうよう. Reader report 2026-11-24.
+  { kanji: "紅葉", from: /^こうよう$/, before: /やっぱり\s*$/, to: "もみじ" },
+  { kanji: "紅葉", from: /^こうよう$/, after: /^を思い出す/, to: "もみじ" },
   // ── Lesson review (2026-11-09) ──
   { kanji: "長", from: /^た$/, after: /^ければ/, to: "なが" },                    // 長ければ (kuromoji: 長けれ)
   { kanji: "愛", from: /^め$/, after: /^で/, to: "あい" },                       // 母の愛でなくて (not 愛でる)
