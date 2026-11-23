@@ -138,6 +138,15 @@
       history.replaceState(null, '', location.pathname);
       return pm[1] === 'chal' ? chalOpen() : spIntro();
     }
+    // #q=<id> (from 我的笔记 /my-notes/): that one question as a set of its own,
+    // with the rest of its passage when it has one; its notes are under the explanation.
+    var qm = location.hash.match(/^#q=([a-z0-9][a-z0-9-]{2,40})$/);
+    if (qm && Q[qm[1]]) {
+      history.replaceState(null, '', location.pathname);
+      var q0 = Q[qm[1]];
+      track('quiz_one', { level: LEVEL, from: 'notes' });
+      return start('one', q0.passage ? ALL.filter(function (q) { return q.passage === q0.passage; }) : [q0]);
+    }
     var m = location.hash.match(/^#(type|lesson|ref|start)=([\w.]+)$/);
     if (m) {
       history.replaceState(null, '', location.pathname);
