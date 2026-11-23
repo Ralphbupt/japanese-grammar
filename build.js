@@ -751,7 +751,7 @@ const GTAG_DEFERRED = AB_LOADER + NOTES_LOADER + `<script>
   // 2026-11-23): what readers open from the navigation, and from what kind of page.
   function kindOf(p) {
     var m;
-    return /\\/lesson\\d+\\/$/.test(p) ? 'lesson' : (m = p.match(/\\/n[1-5]-(practice|listening|reading|vocabulary-list|vocabulary|mock-test|cards|grammar-audio)\\/$/)) ? m[1]
+    return /\\/lesson\\d+\\/$/.test(p) ? 'lesson' : (m = p.match(/\\/n[1-5]-(practice|listening|reading|vocabulary-list|vocabulary|kanji|mock-test|cards|grammar-audio)\\/$/)) ? m[1]
       : /\\/jlpt-n[1-5]-past-exam-grammar\\/$/.test(p) ? 'past-exam-grammar' : /^\\/(zh\\/)?(words|my-grammar|my-notes|review)\\/$/.test(p) ? p.replace(/^\\/(zh\\/)?|\\/$/g, '')
       : /\\/N[1-5]\\/$/.test(p) ? 'overview' : /_grammar_list\\/$/.test(p) ? 'checklist' : /^\\/(zh\\/)?(practice|listening|reading|vocabulary|mock-test|guides|grammar-audio)\\/$/.test(p) ? 'hub'
       : /^\\/(zh\\/)?$/.test(p) ? 'home' : 'other';
@@ -3226,7 +3226,7 @@ ${AI_SCRIPT}
   // ─── Generate individual lesson pages ───
   // Pages published once per language (PAGE_LANGS); links to them on a
   // non-root copy point at that language's copy.
-  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "changelog", "privacy", "terms", "contact", "practice", "listening", "reading", "vocabulary", "mock-test", "grammar-audio", "words", "my-grammar", "my-notes", "review", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`, `${l}-grammar-audio`, `${l}-vocabulary-list`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
+  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "changelog", "privacy", "terms", "contact", "practice", "listening", "reading", "vocabulary", "mock-test", "grammar-audio", "words", "my-grammar", "my-notes", "review", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`, `${l}-grammar-audio`, `${l}-vocabulary-list`, ...(fs.existsSync(path.join(__dirname, "questions", "kanji", `${l}.json`)) ? [`${l}-kanji`] : [])]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
   // "Practice this point" at the end of every grammar point that has practice
   // questions (questions/N*/lessonNN.json refs), linking to the practice page.
   const quizRefCount = {};
@@ -3870,7 +3870,7 @@ ${sidebarMarkupHtml}
   </nav>
   <h1><span class="lang-zh">JLPT ${level} 语法清单 - ${lessons.length} 课 ${totalPoints}+ 语法点速查</span><span class="lang-en">JLPT ${level} Grammar — ${lessons.length} Lessons, ${totalPoints}+ Grammar Points</span></h1>
   <p class="overview-intro"><span class="lang-zh">${LEVEL_INTRO[level]}</span><span class="lang-en">${LEVEL_INTRO_EN[level]}</span></p>${quizPages(level).length ? `
-  <p class="ov-quiz">${quizPages(level).map((q) => `<a href="${q.href}"><span class="lang-zh">${quizLinkText(q, level, false)}</span><span class="lang-en">${quizLinkText(q, level, true)}</span></a>`).join("")}</p>
+  <p class="ov-quiz">${quizPages(level).map((q) => `<a href="${q.href}"><span class="lang-zh">${quizLinkText(q, level, false)}</span><span class="lang-en">${quizLinkText(q, level, true)}</span></a>`).join("")}${fs.existsSync(path.join(__dirname, "questions", "kanji", `${level.toLowerCase()}.json`)) ? `<a href="${SITE_PATH}${level.toLowerCase()}-kanji/"><span class="lang-zh">漢 JLPT ${level} 汉字表</span><span class="lang-en">漢 JLPT ${level} kanji list</span></a>` : ""}</p>
   ${progressCardHtml(level, quizPages(level).map((q) => q.href.replace(SITE_PATH, "").replace(/\/$/, "")))}` : ""}
   <div class="level-stats">
     <div class="level-stat"><strong>${lessons.length}</strong><span><span class="lang-zh">课</span><span class="lang-en">lessons</span></span></div>
@@ -4984,6 +4984,7 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
     const hasCk = ckLevels.includes(level);
     const gaId = `${lv}-grammar-audio`, gaFile = path.join(__dirname, "questions", "grammar-audio", `${lv}.json`), hasGa = fs.existsSync(gaFile);
     const vlId = `${lv}-vocabulary-list`, vlFile = path.join(__dirname, "questions", "vocab-list", `${lv}.json`), hasVl = fs.existsSync(vlFile);
+    const kjId = `${lv}-kanji`, kjFile = path.join(__dirname, "questions", "kanji", `${lv}.json`), hasKj = fs.existsSync(kjFile);
     // A language whose track isn't made yet (tools/vocab-audio.py --lang=…) gets no page and no link.
     const vlLangs = hasVl ? Object.keys(JSON.parse(fs.readFileSync(vlFile, "utf-8")).tracks) : [];
     // The pages link to each other (when the other one exists).
@@ -4997,6 +4998,7 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
       here !== cardsId && `<a href="${SITE_PATH}${cardsId}/">🗂 ${en ? "Grammar flashcards" : "语法卡片（在线背）"}</a>`,
       here !== gaId && hasGa && `<a href="${SITE_PATH}${gaId}/">🎧 ${en ? `${level} grammar audio` : `${level} 语法听读`}</a>`,
       here !== vlId && vlLangs.includes(en ? "en" : "zh") && `<a href="${SITE_PATH}${vlId}/">📚 ${en ? `${level} vocabulary list` : `${level} 高频词汇`}</a>`,
+      here !== kjId && hasKj && `<a href="${SITE_PATH}${kjId}/">漢 ${en ? `${level} kanji list` : `${level} 汉字表`}</a>`,
     ].filter(Boolean).join(" ");
     // 生词本 dictionary (build-words.js) in its own file, fetched on the first
     // word tap; each page language's bundle carries its own copy's address.
@@ -5288,6 +5290,112 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
       }
       if (PAGE_LANGS.every((l) => ga.tracks[l.code === "zh" ? "zh" : "en"])) quizPageIds.push(vlId);   // sitemap once every language has its page
       console.log(`  Generated dist/${vlId}/ (${n} words)`);
+    }
+    // Kanji list (questions/kanji/{lv}.json: the usual JLPT list for the level —
+    // there is no official one since 2010 — with readings, meanings and example
+    // words written for this site), each kanji marked with the past-test words
+    // (questions/vocab-list/src, this level and below) it appeared in.
+    if (hasKj) {
+      const KJ = JSON.parse(fs.readFileSync(kjFile, "utf-8"));
+      const ORDER5 = ["n5", "n4", "n3", "n2", "n1"], upTo = ORDER5.slice(0, ORDER5.indexOf(lv) + 1);
+      const examWords = upTo.flatMap((l) => { const f = path.join(__dirname, "questions", "vocab-list", "src", `${l}.json`); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf-8")).map((w) => ({ ...w, lv: l.toUpperCase() })) : []; });
+      const kjEsc = (x) => String(x == null ? "" : x).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+      const rb = (w, r) => `<ruby>${kjEsc(w)}<rp>(</rp><rt>${kjEsc(r)}</rt><rp>)</rp></ruby>`;
+      const rows = KJ.map((k) => { const ex = examWords.filter((w) => w.w.includes(k.k)).sort((a, b) => (b.n || 1) - (a.n || 1)); return { ...k, ex, exN: ex.reduce((t, w) => t + (w.n || 1), 0) }; });
+      const n = rows.length, tested = rows.filter((r) => r.ex.length).length;
+      const meta = {
+        en: { title: `JLPT ${level} Kanji List — All ${n} Kanji with Readings, Meanings & Example Words`,
+          desc: `The ${n} JLPT ${level} kanji: on'yomi and kun'yomi, meaning and three example words each, and which kanji appeared in real ${level} test vocabulary (2010–2026). Free, printable.`,
+          h1: `JLPT ${level} Kanji List`, crumb: `${level} Kanji`,
+          lead: `All ${n} kanji usually listed for ${level}, each with its readings, meaning and three everyday example words. ${tested} of them appear in words the real tests have asked since 2010 — marked with the words and how often. Learn those first.`,
+          nav: navLinks(kjId, true) },
+        zh: { title: `JLPT ${level} 汉字表 - 全部 ${n} 个汉字：音读训读、意思和例词`,
+          desc: `JLPT ${level} 的 ${n} 个汉字：音读、训读、中文意思和三个常用例词，并标出哪些字出现在 2010–2026 年 ${level} 真题的词汇里。免费，可打印。`,
+          h1: `JLPT ${level} 汉字表`, crumb: `${level} 汉字表`,
+          lead: `通行 ${level} 汉字表里的全部 ${n} 个字，每个字有读音、意思和三个常用例词。其中 ${tested} 个字出现在 2010 年以来真题考过的词里，标出了是哪些词、考过几次，建议先背这些。`,
+          nav: navLinks(kjId, false) },
+      };
+      const kjCss = `<style>.kj-tools{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}.kj-tools button{font:inherit;font-size:.85rem;padding:.3rem .8rem;border-radius:14px;border:1px solid var(--border,#ccc);background:transparent;color:var(--ui);cursor:pointer}.kj-tools button[aria-pressed=true]{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}
+.kj-t td,.kj-t th{vertical-align:top}.kj-k{font-size:2.1rem;line-height:1.1;font-family:"Hiragino Mincho ProN","Yu Mincho",YuMincho,serif;text-align:center;white-space:nowrap}.kj-k a{color:inherit;text-decoration:none}.kj-rd{white-space:nowrap}.kj-rd span{display:block}.kj-on{color:var(--text-strong)}.kj-kun{color:var(--text-muted)}
+.kj-w{margin:0;padding:0;list-style:none}.kj-w li{margin:.1rem 0}.kj-w small{color:var(--text-muted)}.kj-x{font-size:.82rem;color:var(--text-muted);margin:.35rem 0 0}.kj-x b{color:var(--text-strong);font-weight:600}.kj-t th:nth-child(1){width:4.6rem}.kj-b{display:flex;flex-direction:column;gap:.25rem;margin-top:.35rem;font-family:var(--font-sans,system-ui)}.kj-b button{font:inherit;font-size:.7rem;line-height:1.2;padding:.15rem .3rem;border-radius:10px;border:1px solid var(--border,#ccc);background:transparent;color:var(--ui);cursor:pointer;white-space:nowrap}.kj-b button[aria-pressed=true]{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}.kj-sum{font-size:.82rem;color:var(--text-muted);align-self:center}.kj-sum b{color:var(--text-strong)}.kj-idx a.kj-kn{opacity:.35}tr.kj-done .kj-k>a{opacity:.45}.kj-t th:nth-child(2){width:8.5rem}.kj-t th:nth-child(3){width:9rem}.kj-w li{white-space:nowrap}
+#kj.kj-hr rt,#kj.kj-hr .kj-rd{filter:blur(4px)}#kj.kj-hm .kj-m,#kj.kj-hm .kj-w small{filter:blur(4px)}#kj.kj-only tr.kj-nt{display:none}
+.kj-idx{display:flex;flex-wrap:wrap;gap:.25rem;margin:.6rem 0 1rem}.kj-idx a{display:inline-flex;align-items:center;justify-content:center;width:2.1rem;height:2.1rem;border-radius:6px;border:1px solid var(--border,#ccc);color:inherit;text-decoration:none;font-size:1.15rem;font-family:"Hiragino Mincho ProN","Yu Mincho",YuMincho,serif}.kj-idx a:hover{background:var(--ui-soft)}.kj-idx a.kj-cur{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}
+.kj-pg{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem;margin:.6rem 0}.kj-pg[hidden]{display:none}.kj-pg button{font:inherit;font-size:.85rem;min-width:2.2rem;padding:.25rem .55rem;border-radius:7px;border:1px solid var(--border,#ccc);background:transparent;color:var(--ui);cursor:pointer}.kj-pg button[aria-current=page]{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}.kj-pg button:disabled{opacity:.4;cursor:default}.kj-pg span{font-size:.82rem;color:var(--text-muted);margin-left:.3rem}
+.kj-idx{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(20rem,1fr));gap:.25rem .8rem}.kj-ir{display:flex;gap:.25rem;align-items:center;padding:.15rem .25rem;border-radius:8px;cursor:pointer}.kj-ir.kj-irc{background:var(--ui-soft)}.kj-ir a{flex:1 1 0;min-width:0;max-width:1.9rem;width:auto;height:1.9rem;font-size:1.05rem}.kj-ir .kj-in{width:1.6rem;flex:0 0 auto;text-align:right;font-size:.75rem;color:var(--text-muted);margin-right:.2rem}.kj-ir.kj-irc .kj-in{color:var(--ui);font-weight:700}#kj-find{font:inherit;font-size:.85rem;width:7.5rem;padding:.3rem .6rem;border-radius:14px;border:1px solid var(--border,#ccc);background:transparent;color:inherit}#kj.kj-paged tr.kj-off{display:none}tr.kj-hit td{background:var(--ui-soft)}
+@media print{.kj-b,.kj-tools,.kj-idx,.kj-pg,.quiz-nav,#m-bar,.sidebar{display:none!important}.kj-t{font-size:10pt}#kj.kj-paged tr.kj-off{display:table-row!important}}</style>`;
+      for (const lang of PAGE_LANGS) {
+        const en = lang.code !== "zh", m = meta[lang.code], v = langVariant(kjId, lang), t2 = (z, e) => (en ? e : z);
+        const tr = rows.map((r, i) => `<tr id="k-${r.k}"${r.ex.length ? "" : ' class="kj-nt"'}><td class="kj-k"><a href="#k-${r.k}" lang="ja">${r.k}</a><span class="kj-b"><button type="button" class="kj-got" data-k="${r.k}" aria-pressed="false">${t2("已掌握", "Got it")}</button><button type="button" class="kj-add" data-k="${r.k}" data-r="${kjEsc([...r.on, ...r.kun.map((x) => x.replace(/\./g, ""))].join("・"))}" data-m="${kjEsc(en ? r.en : r.zh)}" aria-pressed="false">${t2("＋生词本", "＋ Word list")}</button></span></td>` +
+          `<td class="kj-rd" lang="ja">${r.on.length ? `<span class="kj-on">${r.on.map(kjEsc).join("・")}</span>` : ""}${r.kun.length ? `<span class="kj-kun">${r.kun.map(kjEsc).join("・")}</span>` : ""}</td>` +
+          `<td class="kj-m">${kjEsc(en ? r.en : r.zh)}</td>` +
+          `<td><ul class="kj-w">${r.words.map((w) => `<li><span lang="ja">${rb(w.w, w.r)}</span> <small>${kjEsc(en ? w.en : w.zh)}</small></li>`).join("")}</ul>` +
+          (r.ex.length ? `<p class="kj-x">${t2("真题：", "On the test: ")}${r.ex.slice(0, 4).map((w) => `<span lang="ja">${kjEsc(w.w)}</span>${w.n > 1 ? `<b>×${w.n}</b>` : ""}`).join("、")}${r.ex.length > 4 ? t2(` 等 ${r.ex.length} 个词`, ` and ${r.ex.length - 4} more`) : ""}</p>` : "") + `</td></tr>`).join("\n");
+        const body = kjCss + `<div class="kj-tools" id="kj-tools"><button type="button" data-kj="kj-only" aria-pressed="false">${t2(`只看真题出现过的（${tested}）`, `Only kanji seen on the test (${tested})`)}</button><button type="button" id="kj-hk" aria-pressed="false">${t2("隐藏已掌握的", "Hide the ones I know")}</button><span id="kj-sum" class="kj-sum"></span><button type="button" data-kj="kj-hr" aria-pressed="false">${t2("遮住读音", "Hide readings")}</button><button type="button" data-kj="kj-hm" aria-pressed="false">${t2("遮住意思", "Hide meanings")}</button><button type="button" onclick="print()">${t2("打印", "Print")}</button><input id="kj-find" type="search" maxlength="1" lang="ja" placeholder="${t2("查一个字", "Find a kanji")}" aria-label="${t2("查一个字", "Find a kanji")}"></div>
+<div id="kj"><nav class="kj-idx" aria-label="${t2("汉字索引", "Kanji index")}">${rows.map((r) => `<a href="#k-${r.k}" lang="ja" title="${kjEsc(en ? r.en : r.zh)}">${r.k}</a>`).join("")}</nav>
+<div class="kj-pg" hidden></div><div class="table-scroll"><table class="kj-t"><thead><tr><th>${t2("汉字", "Kanji")}</th><th>${t2("音读 / 训读", "On / kun")}</th><th>${t2("意思", "Meaning")}</th><th>${t2("例词", "Example words")}</th></tr></thead><tbody>
+${tr}
+</tbody></table></div><div class="kj-pg" hidden></div></div>
+<script>(function(){
+var b=document.getElementById('kj-tools'),k=document.getElementById('kj'),PER=10,page=0,EN=${en ? 1 : 0};
+var rows=[].slice.call(k.querySelectorAll('tbody tr')),pgs=[].slice.call(k.querySelectorAll('.kj-pg'));
+var HK=false;try{HK=localStorage.getItem('jp_kj_hk')==='1';}catch(x){}
+function vis(){return rows.filter(function(r){return !(k.classList.contains('kj-only')&&r.classList.contains('kj-nt'))&&!(HK&&r.classList.contains('kj-done'));});}
+// 已掌握: jp_grammar_checks 'k:<kanji>' (±ms, synced like the grammar points); ＋生词本: progress words (背单词).
+var GK='jp_grammar_checks',QK='jp_quiz_v1';
+function lj(key){try{return JSON.parse(localStorage.getItem(key))||null;}catch(x){return null;}}
+function paint(){var c=lj(GK)||{},q=lj(QK)||{},w=(q&&q.words)||{},done=0;
+rows.forEach(function(r){var ch=r.id.slice(2),on=(c['k:'+ch]||0)>0,inw=w[ch]&&w[ch].t>0;if(on)done++;r.classList.toggle('kj-done',on);
+var g=r.querySelector('.kj-got'),a=r.querySelector('.kj-add');g.setAttribute('aria-pressed',on);g.textContent=on?(EN?'✓ Got it':'✓ 已掌握'):(EN?'Got it':'已掌握');a.setAttribute('aria-pressed',!!inw);a.textContent=inw?(EN?'✓ In list':'✓ 生词本'):(EN?'＋ Word list':'＋生词本');
+var ia=k.querySelector('.kj-idx a[href="#k-'+ch+'"]');if(ia)ia.classList.toggle('kj-kn',on);});
+document.getElementById('kj-sum').innerHTML=(EN?'Got ':'已掌握 ')+'<b>'+done+'</b> / '+rows.length;document.getElementById('kj-hk').setAttribute('aria-pressed',HK);}
+k.addEventListener('click',function(e){var g=e.target.closest('.kj-got'),a=e.target.closest('.kj-add');if(!g&&!a)return;e.stopPropagation();var ch=(g||a).getAttribute('data-k'),n=Date.now();
+if(g){var c=lj(GK)||{},on=(c['k:'+ch]||0)>0;c['k:'+ch]=on?-n:n;try{localStorage.setItem(GK,JSON.stringify(c));}catch(x){}if(window.jpSync)window.jpSync.changed();try{if(window.gaEvent)window.gaEvent(on?'kanji_unmastered':'kanji_mastered',{k:ch,level:'${level}'})}catch(x){}}
+else{var q=lj(QK);if(!q||q.v!==1)q={v:1,answers:{},review:{},reported:[],session:null,days:{},prefs:{},mock:{},cards:{},cardDays:{},fav:{},words:{}};q.words=q.words||{};var inw=q.words[ch]&&q.words[ch].t>0;
+q.words[ch]=inw?{t:-n,q:''}:{t:n,a:n,q:'',r:a.getAttribute('data-r'),m:a.getAttribute('data-m'),k:0,due:n};q.at=n;try{localStorage.setItem(QK,JSON.stringify(q));}catch(x){}if(window.jpSync)window.jpSync.changed();try{dispatchEvent(new Event('jp-words'));if(window.gaEvent)window.gaEvent(inw?'word_remove':'word_add',{via:'kanji_list',level:'${level}'})}catch(x){}}
+paint();if(HK){draw();}},true);
+document.getElementById('kj-hk').addEventListener('click',function(){HK=!HK;try{localStorage.setItem('jp_kj_hk',HK?'1':'0');}catch(x){}page=0;paint();draw();});
+window.addEventListener('storage',function(e){if(e.key===GK||e.key===QK){paint();draw();}});
+// Pages over the rows the filter shows; every row stays in the HTML (search engines, print).
+function draw(){var v=vis(),n=Math.ceil(v.length/PER)||1;if(page>=n)page=n-1;
+rows.forEach(function(r){r.classList.add('kj-off');});v.slice(page*PER,page*PER+PER).forEach(function(r){r.classList.remove('kj-off');});
+var h='<button type="button" data-p="'+(page-1)+'"'+(page?'':' disabled')+' aria-label="'+(EN?'Previous page':'上一页')+'">‹</button>';
+h+='<span>'+(EN?'Page ':'第 ')+(page+1)+(EN?' of '+n:' / '+n+' 页')+'</span>';
+h+='<button type="button" data-p="'+(page+1)+'"'+(page<n-1?'':' disabled')+' aria-label="'+(EN?'Next page':'下一页')+'">›</button><span>'+(page*PER+1)+'–'+Math.min(v.length,page*PER+PER)+' / '+v.length+'</span>';
+pgs.forEach(function(p){p.innerHTML=h;p.hidden=n<2;});k.classList.add('kj-paged');
+// The index: one row per page (PER = kanji that fit on a row), this page's row tinted.
+var idx=k.querySelector('.kj-idx'),all=[].slice.call(idx.querySelectorAll('a'));all.forEach(function(a){idx.appendChild(a);});
+[].forEach.call(idx.querySelectorAll('.kj-ir'),function(x){x.remove();});
+var shown=all.filter(function(a){return v.indexOf(document.getElementById(a.getAttribute('href').slice(1)))>=0;});
+all.forEach(function(a){a.hidden=shown.indexOf(a)<0;});
+for(var j=0;j<n;j++){var row=document.createElement('div');row.className='kj-ir'+(j===page?' kj-irc':'');row.setAttribute('data-p',j);row.innerHTML='<span class="kj-in">'+(j+1)+'</span>';shown.slice(j*PER,j*PER+PER).forEach(function(a){row.appendChild(a);});idx.appendChild(row);}}
+function go(ch,scroll){var r=document.getElementById('k-'+ch);if(!r)return;var v=vis(),i=v.indexOf(r);if(i<0){k.classList.remove('kj-only');var o=b.querySelector('[data-kj=kj-only]');if(o)o.setAttribute('aria-pressed','false');v=vis();i=v.indexOf(r);}
+page=Math.floor(i/PER);draw();rows.forEach(function(x){x.classList.remove('kj-hit');});r.classList.add('kj-hit');
+[].forEach.call(k.querySelectorAll('.kj-idx a'),function(a){a.classList.toggle('kj-cur',a.getAttribute('href')==='#k-'+ch);});if(scroll)r.scrollIntoView({block:'center'});}
+k.addEventListener('click',function(e){var p=e.target.closest('.kj-pg [data-p]')||(!e.target.closest('a')&&e.target.closest('.kj-ir'));if(p){page=+p.getAttribute('data-p');draw();var t=k.querySelector('.kj-pg');if(t&&e.target.closest('.kj-pg')!==t)t.scrollIntoView({block:'start'});return;}
+var a=e.target.closest('.kj-idx a');if(a){e.preventDefault();var ch=a.getAttribute('href').slice(3);history.replaceState(null,'','#k-'+ch);go(ch,true);try{if(window.gaEvent)window.gaEvent('kanji_tool',{t:'index'})}catch(x){}}});
+b.addEventListener('click',function(e){var t=e.target.closest('[data-kj]');if(!t)return;var on=t.getAttribute('aria-pressed')!=='true';t.setAttribute('aria-pressed',on);k.classList.toggle(t.getAttribute('data-kj'),on);if(t.getAttribute('data-kj')==='kj-only'){page=0;draw();}try{if(window.gaEvent)window.gaEvent('kanji_tool',{t:t.getAttribute('data-kj'),on:on})}catch(x){}});
+function fit(){PER=10;}
+paint();fit();var lw=window.innerWidth;window.addEventListener('resize',function(){if(Math.abs(window.innerWidth-lw)<40)return;lw=window.innerWidth;var first=vis()[page*PER];fit();if(first){var i=vis().indexOf(first);page=Math.floor(i/PER);}draw();});
+var f=document.getElementById('kj-find');f.addEventListener('input',function(){var c=f.value.trim().slice(-1);if(!c)return;if(document.getElementById('k-'+c)){go(c,true);history.replaceState(null,'','#k-'+c);f.style.borderColor='';try{if(window.gaEvent)window.gaEvent('kanji_tool',{t:'find'})}catch(x){}}else f.style.borderColor='var(--accent)';});
+draw();var hm=decodeURIComponent(location.hash).match(/^#k-(.)$/);if(hm)go(hm[1],true);
+window.addEventListener('hashchange',function(){var m=decodeURIComponent(location.hash).match(/^#k-(.)$/);if(m)go(m[1],true);});
+})();</script>
+<section class="quiz-about"><h2>${t2("关于这份汉字表", "About this list")}</h2>
+<p>${t2(`JLPT 从 2010 年起没有公布官方汉字表。这里按通行的 ${level} 汉字表收字（各家略有出入，比如 飲、駅、店、花、魚、口、手、言、会 等字，有的表放在 N5，这里和多数 80 字的 N5 表一样放在 N4），读音只列学习者常见的；释义和例词是本站编写的。「真题」一栏来自本站整理的 2010–2026 年 ${level} 及以下级别真题文字词汇部分考过的词，×2 表示这个词考过 2 次。`, `The JLPT has published no official kanji list since 2010. This page follows the commonly used ${level} list (lists differ slightly: some put 飲, 駅, 店, 花, 魚, 口, 手, 言, 会 and a few others at N5; here, as in the 80-kanji N5 lists, they are N4), with the readings learners actually meet; meanings and example words are written for this site. "On the test" lists words containing the kanji that the vocabulary section of real ${level}-and-below tests asked (2010–2026, collected by this site); ×2 means asked twice.`)}</p>
+<p>${t2(`练汉字读音和写法：<a href="${SITE_PATH}${lv}-vocabulary/">${level} 词汇练习</a>（汉字读音、表记题）${hasVl ? ` · <a href="${SITE_PATH}${vlId}/">${level} 高频词汇</a>` : ""} · <a href="${SITE_PATH}${practiceId}/">${level} 练习题</a>。`, `Practise readings and spellings: <a href="${SITE_PATH}${lv}-vocabulary/">${level} vocabulary practice</a> (kanji reading and writing questions)${hasVl ? ` · <a href="${SITE_PATH}${vlId}/">${level} vocabulary list</a>` : ""} · <a href="${SITE_PATH}${practiceId}/">${level} practice test</a>.`)}</p></section>`;
+        const schema = JSON.stringify([
+          { "@context": "https://schema.org", "@type": "LearningResource", name: m.h1, description: m.desc, url: v.url, inLanguage: en ? "en" : "zh-Hans",
+            educationalLevel: `JLPT ${level}`, isAccessibleForFree: true, learningResourceType: "Kanji list", teaches: rows.map((r) => r.k).join(""),
+            about: { "@type": "Thing", name: "Kanji" }, provider: { "@type": "Organization", name: "jpnotes.dev", url: SITE } },
+          { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+            { "@type": "ListItem", position: 1, name: en ? "Japanese Grammar Notes" : "日语语法笔记", item: SITE },
+            { "@type": "ListItem", position: 2, name: level, item: `${SITE}${level}/` },
+            { "@type": "ListItem", position: 3, name: m.crumb, item: v.url }] },
+        ]).replace(/</g, "\\u003c");
+        writeLangPage(kjId, lang, localizePage(renderQuiz(lang, { ...m, body, schema }, v, level, null), lang, localizedPageIds));
+      }
+      quizPageIds.push(kjId);
+      console.log(`  Generated dist/${kjId}/ (${n} kanji, ${tested} seen on the test)`);
     }
     if (!mocks.length) continue;
     // Mock tests: the test file, and its answer key loaded only after submitting.
