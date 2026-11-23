@@ -2089,6 +2089,16 @@ async function main() {
       fs.existsSync(path.join(__dirname, "questions", "grammar-audio", `${lv}.json`)) && { href: `${SITE_PATH}${lv}-grammar-audio/`, zh: "🎧 语法听读", en: "🎧 Grammar audio" },
     ].filter(Boolean);
   };
+  // Link text that says what the page is, the way people search for it
+  // ("JLPT N5 listening practice"), for links outside the sidebar.
+  const quizLinkText = (q, level, en) => {
+    const kind = (q.href.match(/-([a-z-]+)\/$/) || [])[1];
+    const T = { practice: ["✍ JLPT " + level + " 练习题", "✍ JLPT " + level + " practice test"], listening: ["🎧 JLPT " + level + " 听力练习", "🎧 JLPT " + level + " listening practice"],
+      reading: ["📖 JLPT " + level + " 阅读练习", "📖 JLPT " + level + " reading practice"], vocabulary: ["🔤 JLPT " + level + " 词汇练习", "🔤 JLPT " + level + " vocabulary practice"],
+      "mock-test": ["⏱ JLPT " + level + " 模拟题", "⏱ JLPT " + level + " mock test"], cards: ["🗂 " + level + " 语法卡片", "🗂 " + level + " grammar flashcards"],
+      "grammar-audio": ["🎧 " + level + " 语法听读", "🎧 " + level + " grammar audio"] }[kind];
+    return T ? T[en ? 1 : 0] : en ? q.en : q.zh;
+  };
   // Grammar audio: lesson id → { level page, points } (questions/grammar-audio/{lv}.json).
   let gaLessonMap = null;
   const gaLesson = (id) => {
@@ -2981,7 +2991,7 @@ ${SETTINGS_SCRIPT}`;
         const mocks = fs.readdirSync(path.join(__dirname, "questions", lv)).filter((d) => /^mock-\d+$/.test(d) && fs.existsSync(path.join(__dirname, "questions", lv, d, "bunpou.json"))).length;
         const label = { practice: [qs.length, qs.length], listening: [n("choukai"), n("choukai")], reading: [n("dokkai"), n("dokkai")], vocabulary: [n("moji-goi"), n("moji-goi")],
           "mock-test": [`${mocks} 套`, String(mocks)], cards: ["开始", "Go"] };
-        const cell = (kind) => { const pg = pages.find((q) => q.href.endsWith(`-${kind}/`)); return pg && label[kind][0] ? `<td><a href="${pg.href}"><span class="lang-zh">${label[kind][0]}</span><span class="lang-en">${label[kind][1]}</span></a></td>` : `<td class="none">–</td>`; };
+        const cell = (kind) => { const pg = pages.find((q) => q.href.endsWith(`-${kind}/`)); return pg && label[kind][0] ? `<td><a href="${pg.href}"><span class="visually-hidden"><span class="lang-zh">${quizLinkText(pg, lv, false).replace(/^\S+ /, "")}：</span><span class="lang-en">${quizLinkText(pg, lv, true).replace(/^\S+ /, "")}: </span></span><span class="lang-zh">${label[kind][0]}</span><span class="lang-en">${label[kind][1]}</span></a></td>` : `<td class="none">–</td>`; };
         return `
         <tr><th scope="row"><span class="level-tag">${lv}</span></th>${practiceKinds.map((k) => cell(k[0])).join("")}</tr>`;
       }).join("")}
@@ -3257,7 +3267,10 @@ ${AI_SCRIPT}
     // its own link. data-ql says which one was clicked (GA quiz_link).
     const gl = gaLesson(id);
     const audioLink = gl ? `<p class="quiz-link"><a href="${SITE_PATH}${gl.lv}-grammar-audio/#ga-${id}" data-ql="audio">🎧 <span class="lang-zh">听本课语法（${gl.n} 个语法点，带例句朗读）</span><span class="lang-en">Listen to this lesson's grammar (${gl.n} point${gl.n > 1 ? "s" : ""}, examples read aloud)</span></a></p>\n` : "";
-    const lessonLink = audioLink + (!total ? "" : `<div class="quiz-cta"><p><span class="lang-zh">${hasEx ? "课里的练习做完了？" : "学完这一课？"}再做 ${total} 道 JLPT 题型的在线题${withVocab ? "（语法 + 词汇）" : ""}：点了就判分、每题有解析，错题会自动记下来。</span><span class="lang-en">${hasEx ? "Done with the exercises above?" : "Finished the lesson?"} Try ${total} JLPT-style questions online${withVocab ? " (grammar + vocabulary)" : ""}: marked as you go, each explained, and the ones you miss are saved for review.</span></p><a href="${lessonHref}" data-ql="end">✍ <span class="lang-zh">JLPT ${level} 在线练习题</span><span class="lang-en">JLPT ${level} practice questions</span> →</a></div>\n`);
+    const lessonLink = audioLink + (!total ? "" : `<div class="quiz-cta"><p><span class="lang-zh">${hasEx ? "课里的练习做完了？" : "学完这一课？"}再做 ${total} 道 JLPT 题型的在线题${withVocab ? "（语法 + 词汇）" : ""}：点了就判分、每题有解析，错题会自动记下来。</span><span class="lang-en">${hasEx ? "Done with the exercises above?" : "Finished the lesson?"} Try ${total} JLPT-style questions online${withVocab ? " (grammar + vocabulary)" : ""}: marked as you go, each explained, and the ones you miss are saved for review.</span></p><a href="${lessonHref}" data-ql="end">✍ <span class="lang-zh">JLPT ${level} 在线练习题</span><span class="lang-en">JLPT ${level} practice questions</span> →</a>${(() => {
+      const more = quizPages(level).filter((q) => /-(listening|vocabulary|reading|mock-test)\/$/.test(q.href));
+      return more.length ? `<p class="quiz-cta-more"><span class="lang-zh">同级别还有：</span><span class="lang-en">More ${level} practice:</span> ${more.map((q) => `<a href="${q.href}" data-ql="more"><span class="lang-zh">${quizLinkText(q, level, false).replace(/^\S+ /, "")}</span><span class="lang-en">${quizLinkText(q, level, true).replace(/^\S+ /, "")}</span></a>`).join(" · ")}</p>` : "";
+    })()}</div>\n`);
     // Lessons that teach a higher level's grammar early (ABOVE_LEVEL in
     // build-quiz.js) say so, and point to that level's practice, which has
     // these questions as ordinary ones.
@@ -3856,7 +3869,7 @@ ${sidebarMarkupHtml}
   </nav>
   <h1><span class="lang-zh">JLPT ${level} 语法清单 - ${lessons.length} 课 ${totalPoints}+ 语法点速查</span><span class="lang-en">JLPT ${level} Grammar — ${lessons.length} Lessons, ${totalPoints}+ Grammar Points</span></h1>
   <p class="overview-intro"><span class="lang-zh">${LEVEL_INTRO[level]}</span><span class="lang-en">${LEVEL_INTRO_EN[level]}</span></p>${quizPages(level).length ? `
-  <p class="ov-quiz">${quizPages(level).map((q) => `<a href="${q.href}"><span class="lang-zh">${q.zh}</span><span class="lang-en">${q.en}</span></a>`).join("")}</p>
+  <p class="ov-quiz">${quizPages(level).map((q) => `<a href="${q.href}"><span class="lang-zh">${quizLinkText(q, level, false)}</span><span class="lang-en">${quizLinkText(q, level, true)}</span></a>`).join("")}</p>
   ${progressCardHtml(level, quizPages(level).map((q) => q.href.replace(SITE_PATH, "").replace(/\/$/, "")))}` : ""}
   <div class="level-stats">
     <div class="level-stat"><strong>${lessons.length}</strong><span><span class="lang-zh">课</span><span class="lang-en">lessons</span></span></div>
@@ -6755,6 +6768,8 @@ html.gotit-hiding tr.gotit-on { display: none; }
 .quiz-cta p { margin: 0 0 .7rem; }
 .quiz-cta a { display: inline-block; padding: .45em 1.2em; border-radius: 999px; background: var(--ui); color: var(--ui-on); text-decoration: none; font-weight: 700; }
 .quiz-cta a:hover { filter: brightness(1.1); }
+.quiz-cta .quiz-cta-more { margin: .8rem 0 0; font-size: .88rem; color: var(--text-muted); }
+.quiz-cta .quiz-cta-more a { display: inline; padding: 0; border-radius: 0; background: none; color: var(--link); font-weight: 400; text-decoration: underline; }
 .nav-hub { margin: .2rem .6rem .6rem; font-weight: 600; }
 .quiz-link a, .ov-quiz a { display: inline-block; padding: .35em .95em; border: 1px solid var(--ui); border-radius: 999px; color: var(--ui); text-decoration: none; font-size: .92em; }
 .quiz-link a:hover, .ov-quiz a:hover { background: var(--ui); color: var(--ui-on); }
