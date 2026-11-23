@@ -79,6 +79,8 @@ const FEEDBACK_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "feedback.j
 const FEEDBACK_JS_HASH = require("crypto").createHash("md5").update(FEEDBACK_JS_SRC).digest("hex").slice(0, 8);
 // Practice / mock test / flashcard pages; QUIZ_PUBLIC and QUIZ_LINKS are set in build-quiz.js.
 const { buildQuiz, loadLevel: loadQuizLevel, LEVELS: QUIZ_LEVELS, TYPES: QUIZ_TYPES, MOCK: QUIZ_MOCK, QUIZ_PUBLIC, QUIZ_LINKS, AUDIO_REQUESTS: QUIZ_AUDIO_REQUESTS, ABOVE_LEVEL, aboveLevel, CK_IMG_DIR: QUIZ_CK_IMG_DIR } = require("./build-quiz");
+// The flashcard deck's grammar points (the /{lv}-cards/ pages list them); main() only runs from the command line.
+const { lessonIndex } = require("./build-anki");
 const SETTINGS_JS_HASH = require("crypto").createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "settings-modal.js"))).digest("hex").slice(0, 8);
 // With it, on every page: sign-in and progress sync (site/sync.js), which fills
 // the account part of the settings dialog.
@@ -4560,6 +4562,12 @@ html.theme-dark .qs-v-ok { color: #4cc98a; } html.theme-dark .qs-opt.qs-right { 
 .quiz-samples details p { margin: .4rem 0; }
 .quiz-about .lesson-list { columns: 2; column-gap: 2rem; padding-left: 1.2rem; }
 @media (max-width: 600px) { .quiz-about .lesson-list { columns: 1; } }
+.cards-index { columns: 2; column-gap: 2rem; }
+.cards-index section { break-inside: avoid; margin-bottom: 1rem; }
+.cards-index h3 { font-size: 1rem; margin: 0 0 .3rem; }
+.cards-index ul { margin: 0; padding-left: 1.2rem; }
+.cards-index li { margin: .15rem 0; }
+@media (max-width: 600px) { .cards-index { columns: 1; } }
 @media (max-width: 600px) { #content { padding: 1.2rem 1rem 3rem; } }
 ${minifyCss(QUIZ_CSS)}
 </style>
@@ -4769,12 +4777,59 @@ ${lessonList}</section>`;
     return `<section class="quiz-about">
 <h2>${L("卡片上有什么", "What's on the cards")}</h2>
 <p>${L(`${level} 课文里的每个语法点一张卡：语法形式、含义、带振假名和发音的例句。有两种卡：<b>认卡</b>（看语法形式，回想意思）和<b>填空卡</b>（看挖空的例句，回想该填什么）。`, `One card for every grammar point in the ${level} lessons: the form, its meaning, and example sentences with furigana and audio. Two kinds: <b>recognition</b> (see the form, recall the meaning) and <b>fill-in</b> (see an example with a gap, recall what goes there).`)}</p>
-<h2>${L("怎么复习", "How the reviews work")}</h2>
-<p>${L("翻卡后给自己打分（忘了 / 难 / 记得 / 简单），下次复习的间隔随之变长或缩短，和 Anki 的间隔重复是同一个思路。进度保存在这个浏览器里。", "After turning a card, rate yourself (Again / Hard / Good / Easy) and the next review moves further out or comes sooner — the same spaced-repetition idea as Anki. Progress stays in this browser.")}</p>
+<h2>${L("怎么背：先回想，再打分", "How it works: recall first, then grade")}</h2>
+<ol>
+<li>${L("<b>先回想。</b>认卡只显示语法形式：先在心里说出它的意思、接在什么后面，再想一个例句。填空卡显示一个挖掉语法部分的例句和它的翻译：想空里该填什么。", "<b>Recall first.</b> A recognition card shows only the form: say what it means and what it attaches to, and think of an example. A fill-in card shows an example with the grammar blanked out, plus its translation: work out what goes in the gap.")}</li>
+<li>${L("<b>再翻面核对。</b>背面是含义和用法说明、最多三个带振假名和发音的例句，以及到课文和这一课练习题的链接。", "<b>Then check.</b> The back has the meaning and usage notes, up to three examples with furigana and audio, and links to the lesson and to that lesson's practice questions.")}</li>
+<li>${L("<b>最后打分：</b>忘了 / 难 / 记得 / 简单。每个按钮下面写着选它之后这张卡多久再出现。照实打分：回想不出来就选「忘了」。", "<b>Grade yourself:</b> Again / Hard / Good / Easy. Each button shows when the card would come back. Be honest — if nothing came to mind, press Again.")}</li>
+</ol>
+<h2>${L("一张卡什么时候再出现", "When a card comes back")}</h2>
+<p>${L("和 Anki 一样：新卡先过两个短的学习步骤（1 分钟、10 分钟），之后按天复习，间隔由你的打分决定。", "As in Anki: a new card goes through two short learning steps (1 minute, 10 minutes), then moves to reviews measured in days, and your grade sets the next interval.")}</p>
+<div class="table-scroll"><table><tr><th>${L("这张卡", "The card is")}</th><th>${L("忘了", "Again")}</th><th>${L("难", "Hard")}</th><th>${L("记得", "Good")}</th><th>${L("简单", "Easy")}</th></tr>
+<tr><td>${L("新卡", "New")}</td><td>${L("1 分钟后", "1 min")}</td><td>${L("1.5 分钟后", "1.5 min")}</td><td>${L("10 分钟后", "10 min")}</td><td>${L("4 天后", "4 days")}</td></tr>
+<tr><td>${L("学习中（第二步）", "Learning (second step)")}</td><td>${L("1 分钟后", "1 min")}</td><td>${L("15 分钟后", "15 min")}</td><td>${L("1 天后", "1 day")}</td><td>${L("4 天后", "4 days")}</td></tr>
+<tr><td>${L("复习卡（间隔 d 天）", "In review (interval d days)")}</td><td>${L("回到学习步骤：10 分钟后重学，之后从 1 天重新开始", "Back to learning: relearn in 10 min, then start again from 1 day")}</td><td>${L("约 d × 1.2 天", "about d × 1.2 days")}</td><td>${L("d × 熟练度（初始 2.5）", "d × ease (2.5 to start)")}</td><td>${L("d × 熟练度 × 1.3 左右", "about d × ease × 1.3")}</td></tr></table></div>
+<p>${L("每张卡有自己的熟练度（ease），从 2.5 开始：选「难」减 0.15，「忘了」减 0.2（最低 1.3），「简单」加 0.15。所以总觉得难的卡会出现得更勤，容易的卡间隔拉得更快。复习卡每次至少往后推 1 天（「简单」至少 2 天）。一直选「记得」的话，一张新卡会在 10 分钟后、然后 1、3、8、20、50 天后再出现；间隔达到 21 天算「熟记」。", "Every card has its own ease, starting at 2.5: Hard lowers it by 0.15 and Again by 0.2 (never below 1.3), Easy raises it by 0.15. So a card you keep finding hard comes back more often, and an easy one spreads out faster. A review always moves at least one day further out (Easy: two). Pressing Good every time, a new card returns after 10 minutes, then after 1, 3, 8, 20 and 50 days; once its interval reaches 21 days it counts as mature.")}</p>
+<p>${L("每次开始背：先出到期的卡，没有到期的再出新卡；新卡按课的顺序，默认每天 10 张（设置里可选 5 / 10 / 15 / 20 / 30）。学习中的卡如果 20 分钟内到期，会接着出，不会提前结束。默认只有认卡；学过之后可以在设置里打开填空卡（例句里标出了语法部分的语法点才有填空卡）。进度和练习题记录存在这个浏览器里，登录后可以在各设备同步。", "Each session shows the cards that are due first, then new ones, in lesson order — 10 new cards a day by default (5, 10, 15, 20 or 30 in Settings). A learning card that falls due within 20 minutes is shown rather than ending the session early. Only recognition cards are on at first; turn on fill-in cards in Settings once you've met the points (a point has fill-in cards when its examples mark the grammar). Progress is kept in this browser with your practice record; sign in to sync it across devices.")}</p>
 <p>${L(`更喜欢用 Anki？下载 <a href="${SITE_PATH}anki/">免费 Anki 卡组</a>（含例句音频）。想练题：<a href="${SITE_PATH}${lv}-practice/">${level} 练习题</a>。`, `Prefer Anki? Get the <a href="${SITE_PATH}anki/">free Anki decks</a> (with example audio). For questions: <a href="${SITE_PATH}${lv}-practice/">${level} practice</a>.`)}</p>
-<h2>${L(`${level} 语法课文`, `${level} grammar lessons`)}</h2>
-${lessonList}</section>`;
+${(() => {
+      // Every card's grammar point, by lesson, each linking to its section of the lesson.
+      const groups = cardIndex(level), n = groups.reduce((a, g) => a + g.pts.length, 0);
+      if (!n) return `<h2>${L(`${level} 语法课文`, `${level} grammar lessons`)}</h2>\n${lessonList}`;
+      const esc = (s) => String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      const item = ({ e, slug, head }) => {
+        // Labelled as the lesson heading reads in the page's language (the card's
+        // term is cut short on headings like "〜やすい（…）/ 〜にくい（…）");
+        // the card's term and gloss when there is no heading text.
+        const h = en ? head.en : head.zh;
+        let term = h || (en ? e[4] : e[3]), desc = h ? "" : en ? e[6] : e[5];
+        if (en && hasSC(desc)) desc = "";
+        const gloss = desc && !term.includes(desc) ? ` — ${esc(desc)}` : "";
+        return `<li><a href="${SITE_PATH}${e[2]}/${slug ? `#${encodeURIComponent(slug)}` : ""}">${esc(term)}</a>${gloss}</li>`;
+      };
+      return `<h2>${L(`这套卡片里的 ${n} 个 ${level} 语法点`, `The ${n} ${level} grammar points in this deck`)}</h2>
+<p>${L(`按课排列，和卡片出现的顺序一致。点语法点跳到课文里讲它的那一节（接续、含义、例句、易混辨析）。`, `In lesson order, the order new cards come in. Click a point to open its section of the lesson: how it attaches, what it means, examples and look-alikes.`)}</p>
+<div class="cards-index">${groups.map((g) => `<section><h3><a href="${SITE_PATH}${g.l.id}/">${g.l.id.replace("lesson", "Lesson ")} · <span lang="ja">${JA_TITLES[g.l.id] || g.l.id}</span></a></h3><ul>${g.pts.map(item).join("")}</ul></section>`).join("\n")}</div>`;
+    })()}</section>`;
   };
+  // The flashcard deck of a level, by lesson: build-anki.js lessonIndex() gives
+  // the same entries as quiz/grammar-index.json ([id, "lessonNN#K", lesson,
+  // term zh, term en, gloss zh, gloss en]); K is the lesson's "## K." heading,
+  // whose id the link points at (as on the grammar list page).
+  const cardIndex = (level) => lessonPages.filter((l) => l.level === level && /^lesson\d+_.*\.md$/.test(path.basename(l.filePath || ""))).map((l) => {
+    const ids = {}, enHead = {}, zhHead = {};
+    const unesc = (t) => t.replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
+    for (const m of l.html.matchAll(/<h2[^>]*\sid="(\d+)\.([^"]*)"[^>]*>([\s\S]*?)<\/h2>/g)) {
+      if (ids[m[1]]) continue;
+      ids[m[1]] = unesc(`${m[1]}.${m[2]}`);
+      // The heading's English side (no numbering, no romaji): the English page's label for a point the card data names in Chinese.
+      const text = (h) => unesc(h.replace(/<span class="romaji">[\s\S]*?<\/span>/g, "").replace(/<[^>]+>/g, "")).replace(/\s+/g, " ").trim().replace(/^\d+[.．]\s*/, "");
+      const i = m[3].indexOf('<span class="lang-en">'), j = m[3].indexOf('<span class="lang-zh">');
+      if (i >= 0) enHead[m[1]] = text(m[3].slice(i));
+      zhHead[m[1]] = text(j >= 0 ? m[3].slice(j, i > j ? i : undefined) : i >= 0 ? m[3].slice(0, i) : m[3]);
+    }
+    return { l, pts: lessonIndex(fs.readFileSync(l.filePath, "utf-8"), l.id.match(/^lesson(\d+)/)[1]).map((e) => { const k = e[1].split("#")[1]; return { e, slug: ids[k], head: { en: enHead[k], zh: zhHead[k] } }; }) };
+  }).filter((g) => g.pts.length);
   // A few real questions written into the page, under the app: a crawler (or a
   // reader without JS) gets actual questions and answers, not just the shell.
   // In the page's language only; answers folded in <details>. Mock pages show
@@ -5261,6 +5316,40 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
       lead: "这里是本站所有“动手”的部分：练习、模拟、背卡。选你的级别开始，进度保存在这个浏览器里。",
     },
   };
+  // Readable text under the hubs (2026-11-24): what each level's pages hold,
+  // counted from the bundles, and how to choose. GROUPS: the test's four parts.
+  const HUB_GROUPS = [["moji", "文字词汇", "Vocabulary"], ["bunpou", "语法", "Grammar"], ["dokkai", "阅读", "Reading"], ["choukai", "听力", "Listening"]];
+  const HUB_LEVELS = ["N5", "N4", "N3", "N2", "N1"].filter((l) => quizBundles[l]);
+  // A type's levels, when it isn't on every level: "（N3 N2 N1）".
+  const typeLevels = (k, L) => { const ls = HUB_LEVELS.filter((l) => quizBundles[l].practice.types[k]); return ls.length === HUB_LEVELS.length ? "" : L(`（${ls.join(" ")}）`, ` (${ls.join(" ")})`); };
+  const LEVEL_CAN_DO = (L) => ({
+    N5: L("能读懂用平假名、片假名和基础汉字写的常见句子；能听懂课堂和日常生活中说得很慢的简短对话。", "Reads typical phrases and sentences in hiragana, katakana and basic kanji; follows short, slowly spoken conversations about the classroom and daily life."),
+    N4: L("能读懂用基础词汇和汉字写的、关于日常话题的文章；能基本听懂说得稍慢的日常对话。", "Reads passages on familiar daily topics in basic vocabulary and kanji; mostly follows everyday conversations spoken a little slowly."),
+    N3: L("能在一定程度上理解日常场景里的日语：读懂日常话题的具体文章、报纸标题；听懂接近自然语速的日常对话。", "Understands everyday Japanese to a certain degree: concrete texts on daily topics, newspaper headlines, and conversations at near-natural speed."),
+    N2: L("除日常场景外，也能在较广的场合理解日语：读懂报刊上各种话题的报道和评论；听懂自然语速的对话和新闻。", "Beyond everyday situations, understands Japanese in a wider range of settings: newspaper and magazine articles and commentary, conversations and news at natural speed."),
+    N1: L("能理解各种场合的日语：读懂社论等逻辑较复杂、内容抽象的文章；听懂自然语速的深入对话、新闻和讲座。", "Understands Japanese in a broad range of circumstances: logically complex, abstract writing such as editorials, and in-depth conversations, news and lectures at natural speed."),
+  });
+  const practiceHubAbout = (en) => {
+    const L = (zh, e) => (en ? e : zh);
+    const cnt = (l, g) => quizBundles[l].practice.questions.filter((q) => (quizBundles[l].practice.types[q.type] || {}).g === g).length;
+    const pre = HUB_LEVELS.some((l) => quizBundles[l].practice.questions.some((q) => q.pre));
+    const allTypes = [...new Set(HUB_LEVELS.flatMap((l) => Object.keys(quizBundles[l].practice.types)))];
+    const typesOf = (g) => allTypes.filter((k) => QUIZ_TYPES[k] && QUIZ_TYPES[k].g === g).map((k) => `${L(QUIZ_TYPES[k].zh, QUIZ_TYPES[k].en)}${typeLevels(k, L)}`).join(L("、", ", "));
+    return `<section class="quiz-about">
+<h2>${L("各级别的题库", "What each level has")}</h2>
+<div class="table-scroll"><table><tr><th>${L("级别", "Level")}</th>${HUB_GROUPS.map(([, z, e]) => `<th>${L(z, e)}</th>`).join("")}<th>${L("合计", "Total")}</th></tr>${HUB_LEVELS.map((l) => `<tr><td><a href="${SITE_PATH}${l.toLowerCase()}-practice/">${l}</a></td>${HUB_GROUPS.map(([g]) => `<td>${cnt(l, g) || "—"}</td>`).join("")}<td>${quizBundles[l].practice.questions.length}</td></tr>`).join("")}</table></div>
+<p>${L("表里是各级别练习页现有的题数，按真考的四个部分分开；阅读和听力按题算，一篇文章或一段录音常常带几道题。新题上线后数字自动更新。", "These are the questions on each level's practice page, split by the test's four parts. Reading and listening count questions, and one passage or recording often carries several. The numbers update as new questions go live.")}${pre ? L("低一级课文里提前教的语法，题目在高一级的题库里也有；在低一级的页面上标为「预习」，不计入进度。", " Grammar that a lower level's lessons teach early has its questions in the higher level's bank too; on the lower level's page they're marked as a preview and kept out of your progress.") : ""}</p>
+<h2>${L("题型和真考一样", "The real test's item types")}</h2>
+<ul>${HUB_GROUPS.map(([g, z, e]) => `<li><b>${L(z, e)}</b>${L("：", ": ")}${typesOf(g)}</li>`).join("")}</ul>
+<p>${L("括号里是只在部分级别出现的题型。题目全部原创，格式、长度和难度按各级别真题设计。", "Brackets mark item types that only some levels have. Every question is original, written to each level's format, length and difficulty.")}</p>
+<h2>${L("怎么用", "How it works")}</h2>
+<p>${L("选好级别后，可以做「今日练习」（每天一组，各部分混合），也可以按题型专练。每题答完马上判分：正确答案为什么对、每个错误选项错在哪里都有解析，语法题还链到讲这个语法点的课。答错、点了「不会」或标为猜的题进错题本，当天、3 天后、7 天后再考你，答对才移出。进度保存在这个浏览器里；登录后可以在手机和电脑之间同步。", "Pick a level, then do the daily set (a short mix of every part) or drill one item type. Each answer is marked at once, with why the right option is right and where each wrong one goes wrong; grammar questions link to the lesson that teaches the point. Questions you miss, mark “I don’t know” or flag as a guess go to a review list and come back the same day, after 3 days and after 7 days, until you get them right. Progress stays in this browser; sign in to sync it between phone and computer.")}</p>
+<h2>${L("选哪个级别", "Which level is yours")}</h2>
+<p>${L("JLPT 官方对各级别的描述（概括）：", "How the JLPT describes each level (summarised):")}</p>
+<ul>${HUB_LEVELS.map((l) => `<li><b>${l}</b> — ${LEVEL_CAN_DO(L)[l]}</li>`).join("")}</ul>
+<p>${L("拿不准的话，先在比目标低一级的页面做一组今日练习：大部分都能答对，就往上一级。", "Not sure? Do a daily set one level below your goal; if you get most of it right, move up a level.")}</p>
+</section>`;
+  };
   for (const lang of PAGE_LANGS) {
     const en = lang.code === "en";
     const m = { ...hubMeta[lang.code], ogImage: "practice/og-image.png", body: `${hubIntro(en)}<div class="table-scroll"><table class="hub-table"><tbody>${["N5", "N4", "N3", "N2", "N1"].map((l) => hubRow(l, en)).join("")}</tbody></table></div>
@@ -5269,7 +5358,7 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
         ? ckLevels.length ? `🎧 <b><a href="${SITE_PATH}listening/">Listening practice for every level</a>.</b> For real Japanese, the <a href="${podcastUrl(true, "practice-hub")}" target="_blank">Japanese Daily News podcast</a> has a real Japanese news story every day, with transcripts.` : `🎧 <b>Listening questions are planned, not built yet.</b> If you want them, <a href="#feedback" class="fb-open">say so</a> — demand decides what comes first. Meanwhile the <a href="${podcastUrl(true, "practice-hub")}" target="_blank">Japanese Daily News podcast</a> has a real Japanese news story every day, with transcripts.`
         : ckLevels.length ? `🎧 <b><a href="${SITE_PATH}listening/">各级别的听力练习</a>。</b>想听真实的日语，可以用 <a href="${podcastUrl(false, "practice-hub")}" target="_blank">Japanese Daily News 播客</a>练听力（每天一则日语新闻，附原文和中文翻译）。` : `🎧 <b>听力题在规划中，还没做。</b>想要的话<a href="#feedback" class="fb-open">告诉我们</a>，想要的人多就先做。现在可以先用 <a href="${podcastUrl(false, "practice-hub")}" target="_blank">Japanese Daily News 播客</a>练听力（每天一则日语新闻，附原文和中文翻译）。`}</p>
       <p class="hub-listen">${en ? `By section: <a href="${SITE_PATH}listening/">listening</a> · <a href="${SITE_PATH}reading/">reading</a> · <a href="${SITE_PATH}vocabulary/">vocabulary</a> · <a href="${SITE_PATH}mock-test/">mock tests</a>. 💡 Tips: <a href="${SITE_PATH}jlpt-vocabulary-grammar-tips/">vocabulary &amp; grammar</a> · <a href="${SITE_PATH}jlpt-reading-tips/">reading</a> · <a href="${SITE_PATH}jlpt-listening-tips/">listening</a>.` : `按部分练：<a href="${SITE_PATH}listening/">听力</a> · <a href="${SITE_PATH}reading/">阅读</a> · <a href="${SITE_PATH}vocabulary/">词汇</a> · <a href="${SITE_PATH}mock-test/">模拟题</a>。💡 做题技巧：<a href="${SITE_PATH}jlpt-vocabulary-grammar-tips/">文字词汇与语法</a> · <a href="${SITE_PATH}jlpt-reading-tips/">阅读</a> · <a href="${SITE_PATH}jlpt-listening-tips/">听力</a>。`}</p>` };
-    writeLangPage("practice", lang, localizePage(renderQuiz(lang, m, langVariant("practice", lang), "", null), lang, localizedPageIds));
+    writeLangPage("practice", lang, localizePage(renderQuiz(lang, { ...m, about: practiceHubAbout(en) }, langVariant("practice", lang), "", null), lang, localizedPageIds));
   }
   quizPageIds.push("practice");
 
@@ -5280,7 +5369,7 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
     const ckStats = (level) => {
       const b = quizBundles[level], types = Object.keys(b.practice.types).filter((k) => b.practice.types[k].g === "choukai");
       const qs = b.practice.questions.filter((q) => types.includes(q.type));
-      return { types, recs: new Set(qs.map((q) => q.passage || q.id)).size, minutes: QUIZ_MOCK[level].sections.find((x) => x.listening).minutes, min: QUIZ_MOCK[level].listening.min, max: QUIZ_MOCK[level].listening.max, mock: b.mocks.length > 0 };
+      return { types, qs: qs.length, recs: new Set(qs.map((q) => q.passage || q.id)).size, minutes: QUIZ_MOCK[level].sections.find((x) => x.listening).minutes, min: QUIZ_MOCK[level].listening.min, max: QUIZ_MOCK[level].listening.max, mock: b.mocks.length > 0 };
     };
     const stats = Object.fromEntries(ckLevels.map((l) => [l, ckStats(l)]));
     const total = Object.values(stats).reduce((a, x) => a + x.recs, 0);
@@ -5303,8 +5392,10 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
 <h2>${L("JLPT 听力有哪些题型", "JLPT listening item types")}</h2>
 <table><tr><th>${L("题型", "Item type")}</th><th>${L("级别", "Levels")}</th></tr>${allTypes.map((k) => `<tr><td>${L(QUIZ_TYPES[k].zh, QUIZ_TYPES[k].en)} · ${QUIZ_TYPES[k].ja}</td><td>${ORDER.filter((l) => stats[l].types.includes(k)).join(" ")}</td></tr>`).join("")}</table>
 <h2>${L("各级别的听力有什么不同", "How listening differs by level")}</h2>
-<table><tr><th>${L("级别", "Level")}</th><th>${L("语速", "Speed")}</th><th>${L("考试时长", "Time on the test")}</th><th>${L("听力最低分", "Minimum score")}</th></tr>${ORDER.map((l) => `<tr><td>${l}</td><td>${listeningPace(L)[l]}</td><td>${L(`约 ${stats[l].minutes} 分钟`, `about ${stats[l].minutes} min`)}</td><td>${stats[l].min} / ${stats[l].max}</td></tr>`).join("")}</table>
+<div class="table-scroll"><table><tr><th>${L("级别", "Level")}</th><th>${L("语速", "Speed")}</th><th>${L("考试时长", "Time on the test")}</th><th>${L("听力最低分", "Minimum score")}</th><th>${L("这里的录音", "Recordings here")}</th></tr>${ORDER.map((l) => `<tr><td>${l}</td><td>${listeningPace(L)[l]}</td><td>${L(`约 ${stats[l].minutes} 分钟`, `about ${stats[l].minutes} min`)}</td><td>${stats[l].min} / ${stats[l].max}</td><td><a href="${SITE_PATH}${l.toLowerCase()}-listening/">${L(`${stats[l].recs} 段 · ${stats[l].qs} 题`, `${stats[l].recs} · ${stats[l].qs} questions`)}</a></td></tr>`).join("")}</table></div>
 <p>${L("总分过线还不够，听力低于最低分同样不合格，所以听力要单独准备。", "A passing total isn't enough: scoring below the listening minimum fails the test, so listening needs its own practice.")}</p>
+<h2>${L("适合谁", "Who it's for")}</h2>
+<p>${L("主要是准备 JLPT 的人：选你要考的级别，把每种听力题型都练到，再用模拟题按真考节奏做一遍。也适合想提高听力、但还听不太懂日剧和新闻的人：N4、N3 的对话语速稍慢、说得清楚，答完能对着原文逐句重听，比直接听原声材料容易起步。级别拿不准，就从低一级开始：大部分能听懂再往上。", "Mainly for people preparing for the JLPT: pick the level you're taking, cover every listening item type, then sit a mock test at the real pace. It also suits anyone who wants better listening but can't yet follow dramas or the news: the N4 and N3 dialogues are a little slower and clearly spoken, and after answering you can replay them line by line against the transcript — an easier start than native material. Unsure of your level? Start one below and move up once you follow most of it.")}</p>
 <h2>${L("怎么练", "How to practise")}</h2>
 <ol>
 <li>${L("选你要考的级别。听一遍就作答，和真考一样。", "Pick the level you're taking. Listen once and answer, as on the real test.")}</li>
@@ -5518,6 +5609,14 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
 <li>${L("答完看每个选项的解析和全文翻译。", "After answering, every option is explained and the whole passage is translated.")}</li>
 <li>${L("答错的题进错题本，过几天再练。", "Questions you miss come back in a review list a few days later.")}</li>
 </ul>
+<h2>${L("各级别的阅读有什么不同", "How reading differs by level")}</h2>
+<div class="table-scroll"><table><tr><th>${L("级别", "Level")}</th><th>${L("考试时间", "Time on the test")}</th><th>${L("振假名", "Furigana")}</th><th>${L("计分", "Scored")}</th><th>${L("这里的题", "Here")}</th></tr>${ORDER5.map((l) => {
+      const cfg = QUIZ_MOCK[l], sit = cfg.sections.find((x) => x.types.includes("short")) || cfg.sections[cfg.sections.length - 2];
+      const fu = l === "N5" || l === "N4" ? L("有", "Yes") : l === "N3" ? L("只标基础汉字以外的词", "Only on less common kanji") : L("没有", "None");
+      return `<tr><td>${l}</td><td>${L(`和${cfg.sections.length > 2 ? "语法" : "文字词汇、语法"}共用 ${sit.minutes} 分钟`, `${sit.minutes} min shared with ${cfg.sections.length > 2 ? "grammar" : "vocabulary and grammar"}`)}</td><td>${fu}</td><td>${cfg.scoring.length > 1 ? L("单独一科", "On its own") : L("和言语知识合并", "With language knowledge")}</td><td><a href="${SITE_PATH}${l.toLowerCase()}-reading/">${L(`${st[l].passages} 篇 · ${st[l].qs} 题`, `${st[l].passages} passages · ${st[l].qs} questions`)}</a></td></tr>`;
+    }).join("")}</table></div>
+<p>${L("阅读和语法在同一场考，时间要自己分配；文章越往上越长、越抽象。练习时可以先不计时，把每种题型的读法练熟，再用模拟题按真考时间做。答完一篇的最后一题后看全文翻译，对照找出读错的句子；短文、中篇和长篇还能听全文朗读。", "Reading shares its sitting with grammar, so you divide the time yourself, and the passages grow longer and more abstract at each level. Practise untimed at first until each item type feels familiar, then take a mock test at the real pace. After the last question on a passage, read the full translation to find the sentences you misread; short, mid-length and long passages can also be played aloud.")}</p>
+<p>${L("适合准备 JLPT 的人，也适合想用短文章练阅读的人：从 N5、N4 带振假名的短文开始，能读懂大部分再往上。", "For JLPT candidates, and for anyone who wants short texts to build reading: start with the furigana passages of N5 and N4, and move up once you follow most of them.")}</p>
 <h2>${L("常见问题", "Questions")}</h2>
 <dl>${faqFree(L)}
 <dt>${L("阅读有最低分吗？", "Is there a minimum score for reading?")}</dt><dd>${L("N3 到 N1 的阅读单独计分，低于 19/60 即使总分过线也不合格；N4、N5 的阅读和文字词汇、语法合在一起计分。", "From N3 to N1 reading is scored on its own, and below 19/60 fails the test even with a passing total; at N4 and N5 it shares a score with vocabulary and grammar.")}</dd>
@@ -5546,6 +5645,16 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
 <li>${L("和真考一样，题目不标振假名。答完看每个选项为什么对、为什么错。", "As on the real test, no furigana on the questions. After answering, see why each option is right or wrong.")}</li>
 <li>${L("语法题在各级别的「练习题」里；语法卡片按课复习每个语法点。", "Grammar questions are in each level's practice page; the flashcards drill every grammar point by lesson.")}</li>
 </ul>
+<h2>${L("各级别有哪些题", "Questions per level and item type")}</h2>
+${(() => {
+      const keys = Object.keys(QUIZ_TYPES).filter((k) => QUIZ_TYPES[k].g === "moji" && ORDER5.some((l) => st[l].types.includes(k)));
+      const n = (l, k) => quizBundles[l].practice.questions.filter((q) => q.type === k).length;
+      return `<div class="table-scroll"><table><tr><th>${L("题型", "Item type")}</th>${ORDER5.map((l) => `<th><a href="${SITE_PATH}${l.toLowerCase()}-vocabulary/">${l}</a></th>`).join("")}</tr>${keys.map((k) => `<tr><td>${L(QUIZ_TYPES[k].zh, QUIZ_TYPES[k].en)} · <span lang="ja">${QUIZ_TYPES[k].ja}</span></td>${ORDER5.map((l) => `<td>${st[l].types.includes(k) ? n(l, k) : "—"}</td>`).join("")}</tr>`).join("")}</table></div>`;
+    })()}
+<p>${L("「—」表示这个级别的真考没有这种题型。汉字读音和写法考的是认字；选词填空、同义句和用法考的是词的意思和搭配，越往上占比越大。", "“—” means the level's real test has no such item. Kanji reading and writing test whether you know the characters; word in context, paraphrase and usage test meaning and collocation, and weigh more at higher levels.")}</p>
+<h2>${L("怎么用", "How it works")}</h2>
+<p>${L("每天做一组，或者只练一种题型（比如只练汉字读音）。答完马上看每个选项为什么对、为什么错。题目里不认识的词可以点开看读音和意思，加入生词本；生词本用单词卡按 1、3、7、14、30 天的间隔复习。答错的题进错题本，过几天再考你。", "Do a daily set, or drill one item type — kanji readings only, say. After each answer, see why every option is right or wrong. Tap a word you don't know in the question to see its reading and meaning and add it to your word list, which you review with flashcards at 1, 3, 7, 14 and 30 days. Questions you miss come back a few days later.")}</p>
+<p>${L("适合考前补文字词汇的人：这部分题多、每题只有一个词或一句话，做得快才能把时间留给阅读。也适合想检验自己某个级别词汇量的人。", "For anyone shoring up vocabulary before the exam: it's many short items, and answering them quickly leaves time for reading. It also works as a check on your vocabulary at a level.")}</p>
 <h2>${L("常见问题", "Questions")}</h2>
 <dl>${faqFree(L)}</dl>
 </section>`, "Practice questions");
@@ -5576,6 +5685,16 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
 <li>${L("交卷后看哪一科离最低分最近，回去专练那一科。", "After submitting, see which section is closest to its minimum and practise that.")}</li>
 </ol>
 <p>${L(`各部分的做题技巧：<a href="${SITE_PATH}jlpt-vocabulary-grammar-tips/">文字词汇与语法</a> · <a href="${SITE_PATH}jlpt-reading-tips/">阅读</a> · <a href="${SITE_PATH}jlpt-listening-tips/">听力</a>。考试安排：<a href="${SITE_PATH}jlpt-december-2026/">12 月 JLPT 考前指南</a>。`, `Tips for each part: <a href="${SITE_PATH}jlpt-vocabulary-grammar-tips/">vocabulary &amp; grammar</a> · <a href="${SITE_PATH}jlpt-reading-tips/">reading</a> · <a href="${SITE_PATH}jlpt-listening-tips/">listening</a>. Exam day: <a href="${SITE_PATH}jlpt-december-2026/">December JLPT guide</a>.`)}</p>
+<h2>${L("各级别的模拟题", "The mock tests by level")}</h2>
+<div class="table-scroll"><table><tr><th>${L("级别", "Level")}</th><th>${L("套数", "Sets")}</th><th>${L("言语知识・阅读", "Vocabulary, grammar, reading")}</th><th>${L("听力", "Listening")}</th><th>${L("合格线", "Pass mark")}</th><th>${L("各科最低分", "Section minimums")}</th></tr>${withMock.map((l) => {
+      const b = quizBundles[l], cfg = QUIZ_MOCK[l], t = b.mocks[0].test;
+      const nl = t.sections.filter((x) => x.listening).reduce((a, x) => a + x.problems.reduce((c, p) => c + p.ids.length, 0), 0);
+      const mr = t.sections.filter((x) => !x.listening), mMin = mr.reduce((a, x) => a + x.minutes, 0), lMin = t.sections.filter((x) => x.listening).reduce((a, x) => a + x.minutes, 0);
+      const mins = [...cfg.scoring.map((x) => `${L(x.zh, x.en)} ${x.min}/${x.max}`), `${L("听力", "Listening")} ${cfg.listening.min}/${cfg.listening.max}`].join(L("；", "; "));
+      return `<tr><td><a href="${SITE_PATH}${l.toLowerCase()}-mock-test/">${l}</a></td><td>${b.mocks.length}</td><td>${L(`${t.questions.length - nl} 题 · ${mMin} 分钟`, `${t.questions.length - nl} questions · ${mMin} min`)}</td><td>${nl ? L(`${nl} 题 · ${lMin} 分钟`, `${nl} questions · ${lMin} min`) : L("不含", "Not included")}</td><td>${cfg.pass}/180</td><td>${mins}</td></tr>`;
+    }).join("")}</table></div>
+<p>${L("题数和时间按每级的第一套算，结构和真考一致。合格要同时满足两条：总分达到合格线，并且每一科都不低于最低分——总分够了、某一科没过最低分，照样不合格。", "Question counts and times are for each level's first set, laid out like the real test. To pass you need both: a total at or above the pass mark, and every section at or above its minimum — a good total with one section under its minimum still fails.")}</p>
+<p>${L("可以整套做，也可以只做其中一节。每节单独计时，时间到自动结束；作答中能前后翻题、改答案、给拿不准的题做标记，但不显示对错。听力和真考一样每段只放一次。可以暂停，离开页面超过 1 分钟也会自动暂停，暂停过的成绩记为“非正式”。适合考前几周、已经按题型练过一轮的人，用来检查时间够不够、哪一科最危险。还没开始系统练习的话，先去各级别的练习题。", "Take the whole test or a single section. Each section has its own clock and ends when time is up; meanwhile you can move back and forth, change answers and flag the ones you're unsure of, but nothing is marked. Listening plays each recording once, as on the day. You can pause, and leaving the page for over a minute pauses too; a paused attempt is marked informal. Best a few weeks before the exam, once you've worked through the item types in practice — to see whether your time holds out and which section is most at risk. If you haven't practised yet, start with the level's practice questions.")}</p>
 <h2>${L("常见问题", "Questions")}</h2>
 <dl>${faqFree(L)}
 <dt>${L("估分准吗？", "How accurate is the score?")}</dt><dd>${L("只是粗略估计。真考用等化计分，不是按答对题数直接换算。", "It's a rough estimate. The real test uses scaled scoring, not a straight count of correct answers.")}</dd>
@@ -5594,6 +5713,7 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
       return [l, { n: ga.items.length, lessons: new Set(ga.items.map((it) => it.lesson)).size, exam: ga.items.filter((it) => (it.exam || []).length).length, min: { en: Math.round(ga.tracks.en.duration / 60), zh: Math.round(ga.tracks.zh.duration / 60) } }];
     }));
     const gaLevels = ORDER5.filter((l) => gaStats[l]);
+    const gaJaOn = fs.existsSync(path.join(__dirname, "questions", "grammar-audio", "src", "ja.json"));   // the 意思：日本語 switch on the level pages
     const total = gaLevels.reduce((a, l) => a + gaStats[l].n, 0);
     if (gaLevels.length) hubPage("grammar-audio", {
       en: { title: "JLPT Grammar Audio — Free N5 to N1 Grammar Read Aloud with Examples", desc: `Listen to all ${total} JLPT grammar points from N5 to N1: each pattern, its meaning in English and two example sentences with translations, read aloud. Free, no sign-up, works on your phone.`, h1: "JLPT Grammar Audio", crumb: "Grammar audio", lead: "Choose your level. Every grammar point is read as pattern → meaning → example → translation; play a whole level like a podcast, or one lesson or one line at a time." },
@@ -5619,6 +5739,16 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
 <li>${L("听不熟的那一句用单句循环，跟着读几遍。", "Loop a line you don't know yet and shadow it a few times.")}</li>
 </ul>
 ${((ex) => ex.length ? `<p>${L(`标着「真题考过 N 次」的语法在往年真题里出现过（${ex.map((l) => `${l} ${gaStats[l].exam} 个`).join("、")}），考前可以优先听。`, `Patterns marked "on the real test N×" have appeared on past tests (${ex.map((l) => `${l}: ${gaStats[l].exam}`).join(", ")}) — worth hearing first before the exam.`)}</p>` : "")(gaLevels.filter((l) => gaStats[l] && gaStats[l].exam))}
+<h2>${L("播放器能做什么", "What the player does")}</h2>
+<ul>
+<li>${L("<b>播放方式：</b>整体连播、一句一停、单句循环、本课连播；点任意一行从那里开始。", "<b>Play modes:</b> play all, one line at a time, loop a line, or this lesson only; tap any line to start there.")}</li>
+<li>${L("<b>朗读内容：</b>全部朗读、只读日语（语法和例句，不念意思和翻译）、只读例句；「念翻译」可以单独关掉。", "<b>What is read:</b> everything, Japanese only (patterns and examples, no meanings or translations), or examples only; “Read translations” switches off on its own.")}</li>
+<li>${L("<b>自测：</b>「遮住意思」把意思和翻译模糊掉，鼠标移上去才显示。", "<b>Self-test:</b> “Hide meanings” blurs the meanings and translations until you point at them.")}</li>
+${gaJaOn ? `<li>${L("<b>日语释义：</b>「意思：日本語」把每个语法点的意思换成一句简短的日语解释，带振假名（朗读不变）。", "<b>Japanese definitions:</b> “Meaning: 日本語” swaps each meaning for a short Japanese explanation with furigana (the audio stays the same).")}</li>` : ""}
+<li>${L("<b>语速：</b>0.8× 到 1.5×；空格键播放 / 暂停，← → 上一句 / 下一句。播放时页面跟着当前这一句滚动。", "<b>Speed:</b> 0.8× to 1.5×; Space plays / pauses, ← → go to the previous / next line. The page scrolls along with the line being read.")}</li>
+</ul>
+<div class="table-scroll"><table><tr><th>${L("级别", "Level")}</th><th>${L("语法点", "Grammar points")}</th><th>${L("课", "Lessons")}</th><th>${L("时长", "Length")}</th><th>${L("真考出现过的", "Seen on past tests")}</th></tr>${gaLevels.map((l) => { const x = gaStats[l]; return `<tr><td><a href="${SITE_PATH}${l.toLowerCase()}-grammar-audio/">${l}</a></td><td>${x.n}</td><td>${x.lessons}</td><td>${L(`约 ${x.min.zh} 分钟`, `about ${x.min.en} min`)}</td><td>${x.exam || "—"}</td></tr>`; }).join("")}</table></div>
+<p>${L("适合已经学过、想反复复习语法的人：碎片时间听一遍，比翻笔记省事；也适合考前快速过一遍整个级别。第一次学某个语法，最好先看课文里的接续说明和辨析，再用这里巩固。", "For learners who have met the grammar and want to keep it fresh: a run-through in spare minutes is easier than rereading notes, and a whole level makes a quick pre-exam review. Meeting a pattern for the first time? Read its lesson first — how it attaches, and how it differs from look-alikes — then use this to keep it.")}</p>
 <h2>${L("常见问题", "Questions")}</h2>
 <dl>
 <dt>${L("免费吗？要注册吗？", "Is it free? Do I need an account?")}</dt><dd>${L("完全免费，没有广告，不用注册，用手机浏览器打开就能听。", "It's free, with no ads and no sign-up. Open it in your phone's browser.")}</dd>

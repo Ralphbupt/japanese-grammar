@@ -268,6 +268,45 @@ function parseGrammarSections(md) {
   return sections;
 }
 
+// Same-term points within one lesson (e.g. そうだ 样态 vs 传闻) would
+// produce identical fronts — ambiguous at review time and merged by
+// Anki's duplicate detection. Suffix the parenthetical description.
+function markDisplayTerms(sections) {
+  const termCount = {};
+  for (const s of sections) termCount[s.term] = (termCount[s.term] || 0) + 1;
+  for (const s of sections) {
+    const dup = termCount[s.term] > 1;
+    s.displayTerm = dup && s.description ? `${s.term}（${s.description}）` : s.term;
+    const descEn = s.descriptionEn || s.description;
+    s.displayTermEn = dup && descEn ? `${s.term} (${descEn})` : s.term;
+  }
+  return sections;
+}
+// What a parsed section becomes online: "vs" — an "A vs B" point (は vs が
+// 辨析), a comparison kept out of the Anki decks but worth a card online,
+// titled by the pair; "card" — a grammar point; null — a generic section
+// heading (練習, 総結, etc.), no card.
+const POINT_NOISE = /常见错误|总结|総結|対比|对比|知識点|练习|練習|今日|辨析|详解|概论|入门|用法总览|全部|总览|間違い|よくある|同一场景|对照表|比较表|速览/;
+function pointKind(s) {
+  if (/\svs\s/.test(s.heading || "") && !/速览|比较表|全部|总对比/.test(s.heading)) return "vs";
+  return POINT_NOISE.test(s.heading || s.term) ? null : "card";
+}
+function vsTermOf(s) {
+  return s.heading.replace(/[（(].*$/, "").replace(/\s*(辨析|对照|対照|对比|比较)\s*$/, "").trim();
+}
+// One lesson file's online cards as grammar-index.json lists them (same
+// order, no examples needed): [id, ref, lesson, term zh, term en, gloss zh, gloss en].
+function lessonIndex(md, lessonNum) {
+  return markDisplayTerms(parseGrammarSections(md)).map((s) => {
+    const kind = pointKind(s), ref = `lesson${lessonNum}#${s.no}`, lesson = `lesson${lessonNum}`;
+    if (kind === "vs") {
+      const t = vsTermOf(s);
+      return [`${lessonNum}:${t}`, ref, lesson, t, t, s.description && !/辨析|对照|对比/.test(s.description) ? s.description : "", s.descriptionEn || ""];
+    }
+    return kind ? [`${lessonNum}:${s.term}`, ref, lesson, s.displayTerm, s.displayTermEn, s.description || "", s.descriptionEn || s.description || ""] : null;
+  }).filter(Boolean);
+}
+
 // ─── Card formatting (HTML) ───
 
 function escapeHtml(s) {
@@ -460,29 +499,14 @@ async function main() {
       if (!lessonMatch) continue;
       const lessonNum = lessonMatch[1];
       const lessonUrl = `${SITE}lesson${lessonNum}/`;
-      const sections = parseGrammarSections(md);
-      // Same-term points within one lesson (e.g. そうだ 样态 vs 传闻) would
-      // produce identical fronts — ambiguous at review time and merged by
-      // Anki's duplicate detection. Suffix the parenthetical description.
-      const termCount = {};
-      for (const s of sections) termCount[s.term] = (termCount[s.term] || 0) + 1;
-      for (const s of sections) {
-        const dup = termCount[s.term] > 1;
-        s.displayTerm = dup && s.description ? `${s.term}（${s.description}）` : s.term;
-        const descEn = s.descriptionEn || s.description;
-        s.displayTermEn = dup && descEn ? `${s.term} (${descEn})` : s.term;
-      }
+      const sections = markDisplayTerms(parseGrammarSections(md));
       let lessonCards = 0;
       for (const s of sections) {
-        // Filter out non-grammar cards:
-        // 1. Must have examples (section overviews and summaries don't)
-        // 2. Must not be a generic section heading (練習, 総結, etc.)
-        const NOISE = /常见错误|总结|総結|対比|对比|知識点|练习|練習|今日|辨析|详解|概论|入门|用法总览|全部|总览|間違い|よくある|同一场景|对照表|比较表|速览/;
-        // An "A vs B" point (は vs が 辨析) is a comparison, kept out of the
-        // Anki decks, but worth a card online — titled by the pair.
-        const vs = /\svs\s/.test(s.heading || "") && !/速览|比较表|全部|总对比/.test(s.heading);
-        if (vs) {
-          const vsTerm = s.heading.replace(/[（(].*$/, "").replace(/\s*(辨析|对照|対照|对比|比较)\s*$/, "").trim();
+        // Filter out non-grammar cards (pointKind): generic section headings
+        // (練習, 総結, etc.) give none; an "A vs B" point gives an online-only card.
+        const kind = pointKind(s);
+        if (kind === "vs") {
+          const vsTerm = vsTermOf(s);
           const ex0 = s.examples || s.examplesEn ? await buildExamples(s.examples, s.examplesEn) : { items: [] };
           onlineCards[level].push({
             id: `${lessonNum}:${vsTerm}`,
@@ -494,7 +518,7 @@ async function main() {
           });
           continue;
         }
-        if (NOISE.test(s.heading || s.term)) continue;
+        if (!kind) continue;
         const ex = s.examples || s.examplesEn ? await buildExamples(s.examples, s.examplesEn) : { items: [] };
         // 3. Must have at least one REAL Japanese example after filtering —
         //    conjugation-table lessons whose "examples" are Chinese prose or
@@ -904,7 +928,10 @@ function shareApkg(link, filename) {
   }
 }
 
-main().catch(e => {
+// build.js reads lessonIndex() (the flashcard pages list every point); run
+// on its own, this file builds the decks.
+module.exports = { lessonIndex };
+if (require.main === module) main().catch(e => {
   console.error(e);
   process.exit(1);
 });
