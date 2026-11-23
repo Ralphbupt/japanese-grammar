@@ -99,6 +99,14 @@ const AUDIO_ORIGIN = /^https?:/.test(AUDIO_BASE) ? " " + new URL(AUDIO_BASE).ori
 const AB_SRC = process.env.AB_SRC !== undefined ? process.env.AB_SRC : "https://ab.jpnotes.dev/ab.js?v=2";
 const AB_ORIGIN = AB_SRC ? " " + new URL(AB_SRC).origin : "";
 const AB_LOADER = AB_SRC ? `<script src="${AB_SRC}" defer></script>` : "";
+// Notes under grammar points and practice questions: a script from
+// notes.jpnotes.dev (its source is not in this repo either). Lesson pages give
+// it the "已掌握" buttons to hang a block under, practice pages an empty
+// <div class="jp-nt" data-nt="q:<id>"> in each explanation (site/quiz.js).
+// NOTES_SRC= (empty) builds without it; ?notes=local on a page talks to wrangler dev.
+const NOTES_SRC = process.env.NOTES_SRC !== undefined ? process.env.NOTES_SRC : "https://notes.jpnotes.dev/notes.js?v=1";
+const NOTES_ORIGIN = NOTES_SRC ? " " + new URL(NOTES_SRC).origin : "";
+const NOTES_LOADER = NOTES_SRC ? `<script src="${NOTES_SRC}" defer></script>` : "";
 // Content-Security-Policy connect-src allowlist: the browser itself refuses
 // fetch/XHR/beacon to any origin not listed here, even if a script on the page
 // were compromised. The AI host is parsed from site/ai-assistant.js (only the
@@ -116,7 +124,7 @@ const ADSENSE_PUB = "ca-pub-8454405576477743";
 // Inline scripts stay allowed — the pages are built with many of them — but a
 // script or image from any other host is refused, so an injected tag can't
 // load code or leak data (an <img> beacon) elsewhere.
-const CSP_META = `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://accounts.google.com/gsi/client https://static.cloudflareinsights.com${AB_ORIGIN}; style-src 'self' 'unsafe-inline' https://accounts.google.com/gsi/style; img-src 'self' data: blob:; media-src 'self' blob:${AUDIO_ORIGIN}; font-src 'self' data:; frame-src https://accounts.google.com/gsi/; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; connect-src 'self' ${ACCOUNT_API}${AB_ORIGIN} https://cloudflareinsights.com https://accounts.google.com/gsi/ https://*.google-analytics.com https://*.analytics.google.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">` +
+const CSP_META = `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://accounts.google.com/gsi/client https://static.cloudflareinsights.com${AB_ORIGIN}${NOTES_ORIGIN}; style-src 'self' 'unsafe-inline' https://accounts.google.com/gsi/style; img-src 'self' data: blob:; media-src 'self' blob:${AUDIO_ORIGIN}; font-src 'self' data:; frame-src https://accounts.google.com/gsi/; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; connect-src 'self' ${ACCOUNT_API}${AB_ORIGIN}${NOTES_ORIGIN} https://cloudflareinsights.com https://accounts.google.com/gsi/ https://*.google-analytics.com https://*.analytics.google.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">` +
   // Google AdSense site verification (applied 2026-11-18). Only this tag: no
   // ad script is loaded, so the CSP above stays as it is. dist/ads.txt names
   // the same publisher.
@@ -507,7 +515,7 @@ const SUBSET_PAGES = [
   { id: "vocabulary", group: "moji", levels: ["N5", "N4", "N3", "N2", "N1"] },
 ];
 
-const GTAG_DEFERRED = AB_LOADER + `<script>
+const GTAG_DEFERRED = AB_LOADER + NOTES_LOADER + `<script>
 (function() {
   var ua = navigator.userAgent || '';
   // Skip GA for automation / crawlers / SEO tools — they all match here.

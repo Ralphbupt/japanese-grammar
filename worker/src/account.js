@@ -21,7 +21,10 @@
  * random bytes; only its SHA-256 is stored. Stored per user: the email, the
  * Google account id, sessions, the progress JSON and earlier copies of it (the
  * last KEEP_RECENT writes, and the last copy of each of the past KEEP_DAYS days).
- * Nothing else, and no request logging (wrangler.account.toml).
+ * Nothing else, and no request logging (wrangler.account.toml). The same
+ * database also holds readers' notes (tables notes / note_*, written by the
+ * notes Worker at notes.jpnotes.dev, not in this repo); DELETE /account
+ * removes those too.
  *
  * Email codes need the secret RESEND_API_KEY (npx wrangler secret put
  * RESEND_API_KEY -c wrangler.account.toml) and jpnotes.dev verified as a
@@ -310,6 +313,15 @@ async function route(req, env, url, local) {
     return reply({ version: row.version, saved: row.saved, data: JSON.parse(row.data) });
   }
   if (method === 'DELETE' && path === '/account') {
+    // Notes (notes.jpnotes.dev, tables in this database): the reader's own notes go;
+    // one that others replied to stays as an empty 'gone' row so the replies keep a parent.
+    await env.DB.batch([
+      env.DB.prepare('UPDATE notes SET helpful = MAX(0, helpful - 1) WHERE id IN (SELECT note_id FROM note_votes WHERE user_id = ?)').bind(me.userId),
+      env.DB.prepare('DELETE FROM note_votes WHERE user_id = ?').bind(me.userId),
+      env.DB.prepare("UPDATE notes SET body = '', st = 'gone', user_id = NULL WHERE user_id = ?1 AND id IN (SELECT re FROM notes WHERE re IS NOT NULL)").bind(me.userId),
+      env.DB.prepare('DELETE FROM notes WHERE user_id = ?').bind(me.userId),
+      env.DB.prepare('DELETE FROM note_profiles WHERE user_id = ?').bind(me.userId),
+    ]);
     await env.DB.batch(['progress_history', 'progress', 'sessions', 'identities'].map((t) => env.DB.prepare(`DELETE FROM ${t} WHERE user_id = ?`).bind(me.userId))
       .concat(env.DB.prepare('DELETE FROM users WHERE id = ?').bind(me.userId), env.DB.prepare('DELETE FROM email_codes WHERE email = ?').bind(me.email)));
     return reply({ ok: true });

@@ -970,6 +970,9 @@
   // Under the explanation: the question's grammar point with its 接続 lines
   // and an example, taken from the lesson at build time (refs[].conj / .ex),
   // and a link straight to that section; other refs stay plain links.
+  // Readers' notes on this question: an empty block the notes script from
+  // notes.jpnotes.dev fills (build.js NOTES_SRC); without it, nothing shows.
+  function notesMount(q) { return /^[a-z0-9][a-z0-9-]{2,40}$/.test(q.id) ? '<div class="jp-nt" data-nt="q:' + q.id + '"></div>' : ''; }
   function pointLink(p, label) { return '<a href="' + LESSON_BASE + p.lesson + '/#' + encodeURI(p.slug) + '" target="_blank" rel="noopener">' + label + '</a>'; }
   function pointsHtml(q) {
     var refs = (q.refs || []).filter(function (r) { return D.refs[r]; });
@@ -1224,6 +1227,7 @@
     if (rows.length) h += '<div class="q-box-k">' + (mineRow ? t('另外两个选项', 'The other options') : t('其他选项为什么不对', 'Why the others don’t work')).replace('另外两个', rows.length === 2 ? '另外两个' : '其他') + '</div><ul class="q-wrong">' + rows.map(function (r) { return '<li>' + optB(r.i) + ' — ' + ex(r.w) + '</li>'; }).join('') + '</ul>';
     if (!left.length) h += wholeHtml(q, D.passages) + passageWords(q);
     h += pointsHtml(q);
+    h += notesMount(q);
     h += '<details class="q-report"><summary>' + t('这题有问题？', 'Something wrong with this question?') + '</summary>' +
       [['answer', '答案不对', 'The answer is wrong'], ['two', '有两个对的', 'Two options work'], ['stem', '题目不通顺', 'The question reads badly'], ['other', '其他', 'Something else']]
         .map(function (r) { return '<button class="q-btn" data-act="report" data-k="' + r[0] + '">' + t(r[1], r[2]) + '</button>'; }).join(' ') +

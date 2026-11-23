@@ -214,6 +214,32 @@ The account button (top right) lets you sign in with a Google account or a code 
 - **Signing out and deleting.** "Sign out" ends the session on this device only; progress stays both here and online. The account panel also lets you export and import your progress and clear it, one level or all of it (clearing reaches all your devices). "Delete account and synced data" removes everything listed above at once and leaves the progress in this browser alone; Cloudflare's database backups expire on their own within 30 days.
 :::
 
+<a id="notes-privacy"></a>
+
+## 笔记的隐私||Notes: who sees what
+
+:::zh
+课文的每个语法点和练习题的解析下面可以记笔记。写笔记需要登录；看别人公开的笔记不用。
+
+- **私有和公开。** 笔记默认私有，只有你自己看得到。勾选「公开」后先经过审核，通过后所有人都能看到，显示的是你的昵称和印章头像，不显示邮箱。随时可以改回私有（已经有人回复的除外）或删除。
+- **审核。** 公开的笔记和回复先过一遍规则（链接、联系方式交给站长看），再交给 Anthropic 的 Claude 判断：明显没问题的直接公开，明显违规的退回并说明理由，拿不准的由站长人工看。AI 的每个决定站长都会复核。只有你选了公开的内容才会发给 Claude，私有笔记不会；Anthropic 按它的 API 条款处理这些内容，不拿来训练模型。
+- **保存什么。** 笔记内容、写在哪个语法点或哪道题下面、在哪个页面写的、时间；昵称、印章上的字和颜色；你点过「有用」的笔记。都存在上面说的同一个 Cloudflare 数据库里，和账号放在一起。
+- **站长能看到什么。** 后台只显示等待审核、被举报和 AI 审核过的公开笔记，以及笔记总数；私有笔记不会出现在后台。
+- **举报。** 不用登录就能举报。为了防止刷举报，会保存一个按日期加盐的 IP 哈希，30 天后清除。举报只会让站长看一眼，不会自动隐藏笔记。
+- **删除。** 删除一条笔记会把它从数据库里删掉；如果别人已经回复了，原位置只留一行「这条笔记已删除」，内容和你的名字都不保留。删除账号时，你的全部笔记、昵称和「有用」记录一起删除。
+:::
+
+:::en
+You can keep notes under every grammar point of the lessons and under the explanation of every practice question. Writing a note needs an account; reading other people's public notes doesn't.
+
+- **Private or public.** A note is private by default: only you see it. Tick "Public" and it is reviewed first; once approved everyone sees it, under your nickname and seal avatar, never your email. You can make it private again (unless someone has replied) or delete it at any time.
+- **Review.** Public notes and replies first go through a few rules (links and contact details go to the site owner), then to Anthropic's Claude: clearly fine notes go public at once, clear violations come back to you with a reason, and anything uncertain waits for the site owner. The owner also re-checks every decision the AI makes. Only what you chose to make public is sent to Claude, never private notes; Anthropic handles it under its API terms and does not train models on it.
+- **What is stored.** The note, where it belongs (grammar point or question), the page it was written on and when; your nickname and the character and colour of your seal; the notes you marked "Helpful". All of it is in the same Cloudflare database as your account.
+- **What the site owner sees.** The admin page lists public notes that are waiting, reported or decided by the AI, and total counts. Private notes never appear there.
+- **Reports.** Anyone can report a note without signing in. To stop mass reports, a hash of the IP salted with the date is kept and dropped after 30 days. A report only asks the owner to look; it never hides the note by itself.
+- **Deleting.** Deleting a note removes it from the database; if someone already replied, only a line saying "This note was deleted" stays in its place, without your text or name. Deleting your account deletes all your notes, your nickname and your "Helpful" marks with it.
+:::
+
 ## 播客||Podcast
 
 :::zh
