@@ -1,5 +1,5 @@
 # The site itself: dist/ served as static assets by Cloudflare (no script).
-#   npm run build && npx wrangler deploy -c wrangler.site.toml      (from worker/)
+#   npm run build && (cd deploy && npx wrangler deploy -c wrangler.site.toml)
 # Requests for files are free and don't count against the Workers plan.
 # dist/_redirects and dist/_headers (written by build.js) are applied by Cloudflare.
 # jpnotes.dev was attached in the dashboard on 2026-11-10 (Worker → Domains), after

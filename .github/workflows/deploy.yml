@@ -1,7 +1,7 @@
 name: Deploy
 
 # Builds the site and publishes dist/ to Cloudflare, which serves it as static
-# assets (worker/wrangler.site.toml: Worker "jpnotes-site" on jpnotes.dev).
+# assets (deploy/wrangler.site.toml: Worker "jpnotes-site" on jpnotes.dev).
 # Moved off GitHub Pages on 2026-11-10: its deployments had started to stall
 # in "syncing_files" until the action's fixed 10-minute timeout.
 # Secret: CLOUDFLARE_API_TOKEN (Cloudflare's "Edit Cloudflare Workers" template).
@@ -57,9 +57,9 @@ jobs:
         continue-on-error: true
         run: curl -sf https://jpnotes.dev/sitemap.xml -o prev-sitemap.xml || rm -f prev-sitemap.xml
 
-      # Uploads only the files that changed. wrangler comes from worker/'s lockfile.
+      # Uploads only the files that changed. wrangler comes from deploy/'s lockfile.
       - name: Deploy to Cloudflare
-        working-directory: worker
+        working-directory: deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: |

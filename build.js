@@ -6298,7 +6298,7 @@ Each \`/lessonNN/\` page contains:
   }
   console.log(`  Generated ${indexOgPages.length} index-page OG images (N5/N4/N3/N2/about/anki)`);
 
-  // Cloudflare (worker/wrangler.site.toml serves dist/ as static assets) reads
+  // Cloudflare (deploy/wrangler.site.toml serves dist/ as static assets) reads
   // these two files and does not publish them.
   // _redirects, answered before any file is looked up:
   //   - the old /dayNN/ addresses as real 301s (the meta-refresh stubs above

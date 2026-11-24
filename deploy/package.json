@@ -1,0 +1,8 @@
+{
+  "name": "jpnotes-deploy",
+  "private": true,
+  "description": "Publishes dist/ to Cloudflare (CI). The site's Workers live in a private repo.",
+  "devDependencies": {
+    "wrangler": "4.156.0"
+  }
+}

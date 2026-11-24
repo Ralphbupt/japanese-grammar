@@ -22,20 +22,20 @@ pages/drafts/
 /data/podcast-scripts/
 /.fix-content.js
 
-# Worker local secrets
-/worker/.dev.vars
-/worker/.wrangler/
+# Private parts, kept in the jpnotes-ops repo and linked here (symlinks):
+# tools (generation / QA pipelines), docs (plans, specs), worker (the AI relay,
+# accounts and feedback Workers), schedule.md. CI only needs deploy/.
+/tools
+/docs
+/worker
+/schedule.md
+/deploy/node_modules/
+/deploy/.wrangler/
 images/choukai-debug/
 audio/choukai/check-*.json
 audio/choukai/.cache/
 audio/choukai/.index.lock
 images/choukai/.index.lock
-
-# Business plan — stays local (public repo)
-docs/roadmap-2026h2.md
-
-# AI answer-check output (tools/ai-eval)
-tools/ai-eval/results/
 
 # Private agent notes, kept in the jpnotes-ops repo (symlinks)
 /CLAUDE.md

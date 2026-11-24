@@ -106,8 +106,7 @@ questions/              practice and mock-test question bank (JSON)
 pages/                  About page
 audio/                  pre-generated TTS for example sentences
 site/                   client scripts: quiz, AI panel, settings, feedback, service worker
-worker/                 Cloudflare Workers: ai.jpnotes.dev (free AI relay, reader feedback), api.jpnotes.dev (accounts and sync), the site itself
-tools/                  audits (furigana, readings) and Search Console / analytics reports
+deploy/                 Cloudflare config that publishes dist/ (the Worker jpnotes-site)
 build.js                static site generator (markdown → HTML, furigana, audio tags, SEO)
 build-quiz.js           validates and bundles the question bank
 build-anki.js / .py     Anki decks (TSV / .apkg)
@@ -117,9 +116,9 @@ seo-titles.js           per-page titles and descriptions
 
 ## Deployment
 
-Every push to `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). It runs `npm ci` and `npm run build`, builds the `.apkg` decks, and deploys `dist/` to Cloudflare as the static assets of the Worker `jpnotes-site` (`worker/wrangler.site.toml`). Audio is never generated in CI: generate it locally, upload it to the audio bucket with `python3 tools/audio-sync.py`, and commit `audio/`.
+Every push to `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). It runs `npm ci` and `npm run build`, builds the `.apkg` decks, and deploys `dist/` to Cloudflare as the static assets of the Worker `jpnotes-site` (`deploy/wrangler.site.toml`). Audio is never generated in CI: it is generated and uploaded to the audio bucket locally, then `audio/` is committed.
 
-The AI relay and feedback endpoint (`cd worker && npx wrangler deploy`) and the account service (`npx wrangler deploy -c wrangler.account.toml`) are separate Workers; neither is needed to build or preview the site. The notes service (notes.jpnotes.dev) and the experiments script are not in this repo; `NOTES_SRC=` and `AB_SRC=` build the site without them.
+The AI relay (ai.jpnotes.dev), the account service (api.jpnotes.dev), the notes service (notes.jpnotes.dev), the experiments script and the content tools (audio generation, checks) are not in this repo; none is needed to build or preview the site. `NOTES_SRC=` and `AB_SRC=` build it without the notes and experiments scripts.
 
 ## Contributing
 
