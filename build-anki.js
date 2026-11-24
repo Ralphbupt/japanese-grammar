@@ -333,8 +333,11 @@ function parseExampleLine(line) {
   const split = content.match(/^([\s\S]+)[（(]([^（）()]+)[）)](.*)$/);
   if (split) {
     const cand = split[2].trim();
-    // A translation is Chinese: no kana, or contains simplified-only chars.
-    if (!/[぀-ゟ゠-ヿ]/.test(cand) || hasSC(cand)) {
+    // A translation is Chinese: no kana, or contains simplified-only chars, or
+    // a kana-free Chinese sentence followed by a note that quotes Japanese
+    // （我想明年去日本。→ と思う表意志，用意向形）.
+    const head = cand.split(/[→=＝]/)[0];
+    if (!/[぀-ゟ゠-ヿ]/.test(cand) || hasSC(cand) || (/[→=＝]/.test(cand) && /[一-鿿]/.test(head) && !/[぀-ゟ゠-ヿ]/.test(head))) {
       jp = split[1].trim();
       zh = cand + (split[3].trim() ? " " + split[3].trim() : "");
     }

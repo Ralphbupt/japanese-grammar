@@ -625,6 +625,10 @@ const GTAG_DEFERRED = AB_LOADER + NOTES_LOADER + `<script>
     for (var p in params) {
       var v = params[p];
       if (v === undefined || v === null) continue;
+      // GA4 reads an event param named source / medium / campaign as the visit's
+      // traffic source (the AI panel's source: 'example' became a "referrer" until
+      // 2026-11-02), and direct visits then inherit it for 90 days. Never send one.
+      if (p === 'source' || p === 'medium' || p === 'campaign' || p === 'campaign_id') p = 'p_' + p;
       q[(typeof v === 'number' ? 'epn.' : 'ep.') + p] = typeof v === 'number' ? v : String(v);
     }
     var url = URL_ + '?' + Object.keys(q).map(function(k) { return encodeURIComponent(k) + '=' + encodeURIComponent(q[k]); }).join('&');
@@ -5128,7 +5132,7 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
       const gaSeen = {};
       for (const it of ga.items) {
         const n = (gaSeen[it.key] = (gaSeen[it.key] || 0) + 1), text = gaJa[n > 1 ? `${it.key}#${n}` : it.key] || gaJa[it.key];
-        if (text) it.meanJa = await furiganaText(kuro, text);
+        if (text) it.meanJa = fixReadings(await furiganaText(kuro, text));   // same corrections as the lessons
       }
       ga.words = await pageWords(gaId, ga.items);
       const gaMeta = {

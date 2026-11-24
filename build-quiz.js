@@ -258,17 +258,22 @@ const QUIZ_RUBY_FIXES = [
   [new RegExp(RX("日本人", "にっぽんじん"), "g"), R("日本人", "にほんじん")],
   // A date's 1日 (3月1日) is ついたち; 1日で / 1日おきに stay いちにち.
   [new RegExp("(" + RX("月", "がつ") + ")([1１])" + RX("日", "にち"), "g"), (m, month, one) => month + R(one + "日", "ついたち")],
-  [new RegExp(RX("市場", "しじょう"), "g"), R("市場", "いちば")],
+  // 市場 いちば / しじょう is decided in context by lib/ruby-fixes.js (a blanket いちば here
+  // turned 市場を開拓 / 市場では円が急落 into the market place).
   // 何 before a counter or です is なん (何ばん, 何まい, 何ですか); 何も / 何を stay なに.
-  [new RegExp(RX("何", "なに") + "(?=\\s*(?:ばん|まい|がい|かい|さい|ほん|ぼん|ぽん|にん|です))", "g"), R("何", "なん")],
-  // 九時 is くじ (九時間 stays きゅうじかん); in dates 十七日 / 十九日 are じゅうしちにち / じゅうくにち.
+  // がい / かい (何階, 何回 in kana) not when it is the particle: 何がいる, 何がいちばん, 何かいい.
+  [new RegExp(RX("何", "なに") + "(?=\\s*(?:ばん|まい|(?:が|か)い(?![るいちまた])|さい|ほん|ぼん|ぽん|にん|です))", "g"), R("何", "なん")],
+  // 九時 is くじ (九時間 くじかん is fixed in lib/ruby-fixes.js); in dates 十七日 / 十九日 are じゅうしちにち / じゅうくにち.
   [new RegExp(RX("九", "きゅう") + "(?=" + RX("時", "じ") + "(?!間)|" + RX("時半", "じはん") + ")", "g"), R("九", "く")],
   // 七時 is しちじ, as the test audio says it.
   [new RegExp(RX("七", "なな") + "(?=" + RX("時", "じ") + "(?!間)|" + RX("時半", "じはん") + ")", "g"), R("七", "しち")],
   [new RegExp("(" + RX("十", "じゅう") + ")" + RX("七", "なな") + "(?=" + RX("日", "にち") + ")", "g"), (m, ten) => ten + R("七", "しち")],
   [new RegExp("(" + RX("十", "じゅう") + ")" + RX("九", "きゅう") + "(?=" + RX("日", "にち") + ")", "g"), (m, ten) => ten + R("九", "く")],
   // 十分 / 二十分 as minutes (ぐらい・かかる・歩いて…) — not じゅうぶん / じゅうふん
-  [new RegExp(RX("十分", "じゅうぶん") + "(?=\\s*(ぐらい|くらい|ほど|かか|で|前|後|です))", "g"), R("十分", "じゅっぷん")],
+  // ("十分です" / "十分で" alone is mostly "enough": それで十分です, 字数は十分です.)
+  [new RegExp(RX("十分", "じゅうぶん") + "(?=\\s*(ぐらい|くらい|ほど|かか|前|後))", "g"), R("十分", "じゅっぷん")],
+  // kuromoji also cuts "enough" into 十(じゅう)分(ふん): 十分とれる, 十分楽しめる.
+  [new RegExp(RX("十", "じゅう") + RX("分", "ふん") + "(?=\\s*(?:とれ|<ruby>楽))", "g"), R("十分", "じゅうぶん")],
   [new RegExp(RX("十", "じゅう") + RX("分", "ふん"), "g"), R("十", "じゅっ") + R("分", "ぷん")],
   // 一 / 六 / 八 / 十 before a counter read with p- (本 ぽん, 杯 ぱい, 匹 ぴき, 分 ぷん …) take
   // a small っ: kuromoji gave 六(ろく)本(ぽん) for ろっぽん (reader feedback 2026-11-23, n5-mg-157).
@@ -283,6 +288,8 @@ const QUIZ_RUBY_FIXES = [
   // 3階 / 三階 / 何階 are さんがい / なんがい; kuroshiro reads the counter alone as かい.
   [new RegExp("([3３三]|" + RX("何", "なん") + "|" + RX("何", "なに") + ")" + RX("階", "かい"), "g"), "$1" + R("階", "がい")],
   [new RegExp("(" + RX("直接", "ちょくせつ") + ")" + RX("話", "ばなし"), "g"), "$1" + R("話", "はなし")],
+  // A blank stands for ある / その: [[1]] 日、 is ひ (the blank is outside the furigana run).
+  [new RegExp("(\\[\\[\\d+\\]\\]\\s*)" + RX("日", "にち") + "(?=、)", "g"), "$1" + R("日", "ひ")],
 ];
 const WEEKDAY_READING = { 月: "げつ", 火: "か", 水: "すい", 木: "もく", 金: "きん", 土: "ど", 日: "にち" };
 
@@ -660,7 +667,8 @@ async function bundleLevel(level, ruby, mock) {
     const readings = {};
     if (full && withRuby) for (const [, k, r] of full.matchAll(RUBY)) (readings[k] = readings[k] || new Set()).add(r);
     const fix = (html) => html.replace(/<ruby>([^<])<rp>\(<\/rp><rt>([^<]*)<\/rt><rp>\)<\/rp><\/ruby>(?=[ぁ-ゖ（\[])/g, (m, k, r) =>
-      readings[k] && readings[k].size === 1 && !readings[k].has(r) ? `<ruby>${k}<rp>(</rp><rt>${[...readings[k]][0]}</rt><rp>)</rp></ruby>` : m);
+      readings[k] && readings[k].size === 1 && !readings[k].has(r) && !(k === "何" && r === "なん") ? `<ruby>${k}<rp>(</rp><rt>${[...readings[k]][0]}</rt><rp>)</rp></ruby>` : m);
+    // (何(なん)でも / 何(なん)ですか: the なん comes from the kana after it, keep it.)
     // An option that is a lone kanji (方) has no context at all either.
     const opt = async (o) => fix((await render(o, withRuby)).replace(/^(<ruby>[^<]<rp>\(<\/rp><rt>[^<]*<\/rt><rp>\)<\/rp><\/ruby>)$/, "$1（")).replace(/（$/, "");
     out.push({
