@@ -631,6 +631,9 @@ const GTAG_DEFERRED = AB_LOADER + NOTES_LOADER + `<script>
     // User properties: signed in, level last practised, streak band (quiz.js writes jp_up).
     try {
       q['up.signed_in'] = (JSON.parse(store('jp_acct')) || {}).token ? '1' : '0';
+      // Device time zone (GA dimension tz): a reader in mainland China behind a
+      // proxy shows up with a Japanese or US IP but keeps Asia/Shanghai here.
+      var tz = window.Intl && Intl.DateTimeFormat().resolvedOptions().timeZone; if (tz) q['up.tz'] = String(tz).slice(0, 36);
       var upv = JSON.parse(store('jp_up')) || {};
       if (upv.lv) q['up.level'] = upv.lv;
       if (upv.sk) q['up.streak'] = upv.sk;
