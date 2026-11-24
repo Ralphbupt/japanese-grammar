@@ -63,8 +63,14 @@
     var out = { v: 1 };
     out.answers = {};
     keys(a.answers, b.answers).forEach(function (q) {
-      var seen = {}, all = ((a.answers || {})[q] || []).concat((b.answers || {})[q] || []).filter(function (r) {
-        var k = r.t + ':' + r.c; if (seen[k]) return false; seen[k] = 1; return true;
+      // The same answer on both sides is one answer. A reason picked after
+      // answering (y, quiz.js 为什么错了) may be on either copy: keep the copy
+      // that has one, the side changed last if both do.
+      var seen = {}, all = [];
+      ((prim.answers || {})[q] || []).concat((sec.answers || {})[q] || []).forEach(function (r) {
+        var k = r.t + ':' + r.c, o = seen[k];
+        if (!o) { seen[k] = r; all.push(r); }
+        else if (r.y && !o.y) { all[all.indexOf(o)] = r; seen[k] = r; }
       });
       all.sort(function (x, y) { return x.t - y.t; });
       out.answers[q] = all.slice(-KEEP_ANSWERS);
@@ -93,7 +99,18 @@
     out.mock = {};
     keys(a.mock, b.mock).forEach(function (id) {
       var x = (a.mock || {})[id] || {}, y = (b.mock || {})[id] || {}, seen = {};
-      var atts = (x.attempts || []).concat(y.attempts || []).filter(function (t) { if (seen[t.start]) return false; seen[t.start] = 1; return true; });
+      // One attempt on both sides: miss reasons picked in its review (answers[id].y) on either are kept.
+      var atts = (x.attempts || []).concat(y.attempts || []).filter(function (t) {
+        var o = seen[t.start];
+        if (!o) { seen[t.start] = t; return true; }
+        for (var k in (t.answers || {})) {
+          var ta = t.answers[k], oa;
+          if (!ta || !ta.y) continue;
+          o.answers = o.answers || {}; oa = o.answers[k];
+          if (!oa) o.answers[k] = ta; else if (!oa.y) oa.y = ta.y;
+        }
+        return false;
+      });
       atts.sort(function (p, r) { return p.start - r.start; });
       var cur = x.current && y.current ? (x.current.start >= y.current.start ? x.current : y.current) : (x.current || y.current || null);
       if (cur && seen[cur.start]) cur = null;

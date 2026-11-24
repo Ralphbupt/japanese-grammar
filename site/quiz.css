@@ -364,6 +364,22 @@ body.quiz-busy .quiz-about { display: none; }
 .q-idk.q-on { color: var(--ui); border-color: var(--ui); box-shadow: inset 0 0 0 1px var(--ui); }
 .q-group-go { border-top: 1px solid var(--border); padding-top: 1rem; }
 .q-was-guess { padding: .2em .7em; font-size: .8em; font-weight: 400; color: var(--text-muted); vertical-align: middle; }
+/* 为什么错了: one row of small pills under a miss's verdict; once picked, only the pick (ink, not red) and 改 */
+.q-my { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem .4rem; margin: -.1rem 0 .9rem; font-size: .88rem; }
+.q-my-k { color: var(--text-muted); margin-right: .15rem; }
+.q-my-b { padding: .22em .75em; border-radius: 999px; font-size: .84rem; color: var(--text); }
+.q-my-b:hover { border-color: var(--ui); }
+.q-my-b[aria-pressed="true"] { border-color: var(--ui); background: var(--ui-soft); color: var(--ui); font-weight: 600; }
+.q-my-done .q-my-b:not([aria-pressed="true"]) { display: none; }
+.q-my-chg { display: none; font-size: .84rem; }
+.q-my-done .q-my-chg { display: inline; }
+.q-my-after { flex: 1 0 100%; }
+.q-my-after:empty { display: none; }
+.q-my-line { margin: .25rem 0 0; line-height: 1.6; }
+.q-my-note { color: var(--ui); }
+.q-my + .jp-nt { margin-top: -.4rem; }
+.q-ytag { display: inline-block; padding: 0 .5em; border: 1px solid var(--border); border-radius: 999px; font-size: .85em; line-height: 1.5; color: var(--text-muted); }
+.q-why-acc .q-bar span { background: var(--ui); }
 .q-size { display: inline-flex; align-items: center; gap: .25rem; margin-left: auto; font-size: .85rem; color: var(--text-muted); white-space: nowrap; }
 .q-size select { font: inherit; margin: 0; padding: 0 .2rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); color: var(--text); }
 @media (max-width: 600px) {

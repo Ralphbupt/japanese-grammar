@@ -434,12 +434,98 @@
   // ✎ 笔记 next to ☆ 收藏 (2026-11-24): the notes block at the foot of the
   // explanation got no clicks, so the entry sits where every reader looks. It
   // opens that block's editor (the notes script, notes.jpnotes.dev).
-  function noteBtn(q, ok) { return /^[a-z0-9][a-z0-9-]{2,40}$/.test(q.id) ? '<button class="q-btn q-fav q-note" data-act="note" data-k="' + q.id + '" title="' + (ok ? t('记笔记', 'Add a note') : t('记一下为什么错', 'Note why you missed it')) + '"><span aria-hidden="true">✎</span><span class="q-fav-l">' + t('笔记', 'Note') + '</span></button>' : ''; }
+  function noteBtn(q) { return /^[a-z0-9][a-z0-9-]{2,40}$/.test(q.id) ? '<button class="q-btn q-fav q-note" data-act="note" data-k="' + q.id + '" title="' + t('记笔记', 'Add a note') + '"><span aria-hidden="true">✎</span><span class="q-fav-l">' + t('笔记', 'Note') + '</span></button>' : ''; }
   // 考考朋友: share this one question; the link opens it on its own (#q=<id>).
   function quizShareBtn(q) {
     if (!window.jpShare || !/^[a-z0-9][a-z0-9-]{2,40}$/.test(q.id)) return '';
     var url = location.origin + location.pathname + '#q=' + q.id;
     return '<button class="q-btn q-fav q-qshare" data-jp-share="question" data-url="' + url + '" data-text="' + esc(t('这道 JLPT ' + LEVEL + ' 题你会吗？', 'Can you get this JLPT ' + LEVEL + ' question?')) + '" title="' + t('把这道题发给朋友', 'Send this question to a friend') + '"><span aria-hidden="true">↗</span><span class="q-fav-l">' + t('考考朋友', 'Quiz a friend') + '</span></button>';
+  }
+  // ─── 为什么错了 (2026-11-25) ───
+  // 16 readers opened the note box under a miss in two days and none wrote;
+  // one-tap marks (生词本, 已掌握, 其实是猜的) do get used. So a miss asks for
+  // the reason in one tap, kept on the answer (S.answers[id][last].y; a mock
+  // answer's .y), and offers a note started with it. Keys are stored and
+  // synced: short, never renamed. Up to 5 per kind of question.
+  var WHY_SLIP = ['slip', '粗心看错', 'Misread it'], WHY_GUESS = ['guess', '猜的', 'Guessed'];
+  var WHY = {
+    grammar: [['new', '这个语法没学过', 'Not learned yet'], ['mix', '和别的语法搞混了', 'Mixed it up with another'], ['conj', '接续/变形不会', 'Form / conjugation'], WHY_SLIP, WHY_GUESS],
+    vocab: [['word', '不认识这个词', 'Didn’t know the word'], ['spell', '认识但读音或写法记错', 'Wrong reading / spelling'], ['syn', '近义词分不清', 'Similar words'], WHY_SLIP, WHY_GUESS],
+    reading: [['word', '有词不认识', 'Unknown words'], ['sent', '没读懂句子', 'Lost in a sentence'], ['find', '没找到依据', 'Couldn’t find it in the text'], ['time', '时间不够', 'Out of time'], WHY_GUESS],
+    listening: [['hear', '没听清', 'Didn’t catch it'], ['vocab', '听清了但有词不懂', 'Heard it, unknown word'], ['ask', '没抓住问的是什么', 'Missed the question'], ['mem', '记不住细节', 'Lost the details'], WHY_GUESS]
+  };
+  // Short names for the review list tags and the analysis, where kinds mix.
+  var WHY_SHORT = { new: ['没学过', 'Not learned yet'], mix: ['语法搞混', 'Mixed up patterns'], conj: ['接续/变形', 'Form / conjugation'], slip: ['粗心', 'Misread'], guess: ['猜的', 'Guessed'],
+    word: ['生词', 'Unknown words'], spell: ['读音/写法记错', 'Reading / spelling'], syn: ['近义词', 'Similar words'], sent: ['没读懂句子', 'Sentence not understood'], find: ['没找到依据', 'Couldn’t find it in the text'],
+    time: ['时间不够', 'Out of time'], hear: ['没听清', 'Didn’t catch it'], vocab: ['听到生词', 'Unknown word heard'], ask: ['没抓住问题', 'Missed the question'], mem: ['记不住细节', 'Details'] };
+  var WHY_GROUP = { moji: 'vocab', bunpou: 'grammar', dokkai: 'reading', choukai: 'listening' };
+  function whyCat(q) { var ty = q && D && D.types && D.types[q.type]; return ty ? WHY_GROUP[ty.g] || null : null; }
+  function whyLabel(q, y) { var r = (WHY[whyCat(q)] || []).filter(function (x) { return x[0] === y; })[0]; return r ? t(r[1], r[2]) : WHY_SHORT[y] ? t(WHY_SHORT[y][0], WHY_SHORT[y][1]) : ''; }
+  function whyTag(y) { return y && WHY_SHORT[y] ? '<span class="q-ytag">' + t(WHY_SHORT[y][0], WHY_SHORT[y][1]) + '</span> ' : ''; }
+  // The row under the verdict of a miss; y = the reason already picked (re-shown answers, mock review).
+  function missWhy(q, y) {
+    var cat = whyCat(q);
+    if (!cat) return '';
+    return '<div class="q-my' + (y ? ' q-my-done' : '') + '" data-q="' + q.id + '"><span class="q-my-k">' + (y ? t('错因', 'Why') : t('为什么错了？', 'Why did you miss it?')) + '</span>' +
+      WHY[cat].map(function (r) { return '<button class="q-btn q-my-b" data-act="miss-why" data-k="' + r[0] + '" aria-pressed="' + (r[0] === y) + '">' + t(r[1], r[2]) + '</button>'; }).join('') +
+      '<button class="q-link q-my-chg" data-act="miss-why-chg">' + t('改', 'Change') + '</button><div class="q-my-after"></div></div>';
+  }
+  // The answer record that a reason goes on: the last practice answer, or the
+  // mock answer in the stored attempt (M.att may be a copy from before a sync).
+  function whyRecord(id, make) {
+    if (!MOCK) { var a = S.answers[id]; return a && a.length ? a[a.length - 1] : null; }
+    if (!M || !M.att) return null;
+    var att = (mstate(M.set.id).attempts || []).filter(function (x) { return x.start === M.att.start; })[0] || M.att;
+    if (!att.answers[id] && make) att.answers[id] = { c: null };
+    return att.answers[id] || null;
+  }
+  function missWhyPick(el) {
+    var row = el.closest('.q-my'), id = row.getAttribute('data-q'), q = Q[id], y = el.getAttribute('data-k'), rec = whyRecord(id, true);
+    if (!q || !rec) return;
+    var prev = rec.y;
+    rec.y = y;
+    if (MOCK && M.att.answers[id] !== rec) M.att.answers[id] = rec;   // M.att a stale copy: keep the review in step
+    save();
+    track('miss_why', { y: y, type: q.type, level: LEVEL, id: id, re: prev ? 1 : 0 });
+    row.querySelectorAll('.q-my-b').forEach(function (b) { b.setAttribute('aria-pressed', String(b === el)); });
+    row.classList.add('q-my-done');
+    row.querySelector('.q-my-k').textContent = t('错因', 'Why');
+    whyAfter(row, q, y, true);
+  }
+  // What follows a reason: the words to save (unknown word), the lesson
+  // section (grammar), then a note started with the reason. act: just picked
+  // (open the word lists and bring them into view), not re-shown.
+  function whyAfter(row, q, y, act) {
+    var box = row.querySelector('.q-my-after'), h = '';
+    if (y === 'word' || y === 'vocab') {
+      // Reading / listening words sit under the passage's last question or in the transcript.
+      var card = row.closest('.q-card') || app, scope = q.passage || isCk(q) ? card : row.closest('.q-feedback') || card;
+      var lists = [].slice.call(scope.querySelectorAll('.q-words'));
+      if (lists.length) {
+        h += '<p class="q-my-line q-muted">' + (HOVER ? t('生词已展开：点一下词加入生词本，鼠标停留看意思', 'Words opened: click one to add it to your word list, hover for its meaning') : t('生词已展开：点词看意思、加入生词本', 'Words opened: tap one for its meaning and to save it')) + '</p>';
+        if (act) {
+          lists.forEach(function (l) { for (var d = l; d && d !== card; d = d.parentNode) if (d.tagName === 'DETAILS') d.open = true; });
+          setTimeout(function () { (scope.querySelector('.q-sent .q-w') || lists[0]).scrollIntoView({ block: 'center', behavior: 'smooth' }); }, 30);
+        }
+      } else if (q.wd || q.wde) h += wordChips(q.wd, q.wde, q.id, t('生词', 'Words') + ' <span class="q-muted">' + t('点词加入生词本', 'tap to save') + '</span>');
+    }
+    if (y === 'new' || y === 'mix' || y === 'conj') {
+      // No map from grammar points to the comparison guides yet, so the lesson only (its 辨析 part for mix).
+      var refs = (q.refs || []).filter(function (r) { return !/#vocab$/.test(r) && D.refs && D.refs[r]; }).slice(0, 2);
+      if (refs.length) h += '<p class="q-my-line">' + refs.map(function (r) { var p = D.refs[r]; return ICO_BOOK + (y === 'mix' ? t('回课文看辨析：', 'Compare in the lesson: ') : t('回课文看：', 'Read it in the lesson: ') ) + pointLink(p, esc(EN ? p.en : p.zh)); }).join('<br>') + '</p>';
+    }
+    // Only with the notes script (build.js NOTES_SRC) and one new enough to have compose().
+    if (window.jpNotes && window.jpNotes.compose && /^[a-z0-9][a-z0-9-]{2,40}$/.test(q.id)) h += '<p class="q-my-line"><button class="q-btn q-btn-sm q-my-note" data-act="miss-note" data-k="' + y + '">✎ ' + t('记一句笔记', 'Add a note') + '</button></p>';
+    box.innerHTML = h;
+  }
+  // The note: the question's block under the explanation, or (mock review,
+  // which has none) one added under this row; its editor starts with the reason.
+  function missNote(el) {
+    var row = el.closest('.q-my'), id = row.getAttribute('data-q'), q = Q[id], y = el.getAttribute('data-k');
+    var scope = row.closest('.q-feedback') || row.closest('.q-revcard') || app, nb = scope.querySelector('.jp-nt[data-nt="q:' + id + '"]');
+    if (!nb) { nb = document.createElement('div'); nb.className = 'jp-nt'; nb.setAttribute('data-nt', 'q:' + id); nb.setAttribute('data-nt-miss', '1'); row.parentNode.insertBefore(nb, row.nextSibling); }
+    track('miss_note', { y: y, type: q ? q.type : '', level: LEVEL, id: id });
+    window.jpNotes.compose(nb, t('错因：', 'Why I missed it: ') + whyLabel(q, y) + t(' —— ', ' — '), 'why');
   }
   function favBtn(q) { var on = isFav(q.id), l = on ? t('已收藏', 'Saved') : t('收藏', 'Save'); return '<button class="q-btn q-fav" data-act="fav" data-k="' + q.id + '" aria-pressed="' + on + '" aria-label="' + t('收藏', 'Save') + '" title="' + l + '"><span aria-hidden="true">' + (on ? '★' : '☆') + '</span><span class="q-fav-l">' + l + '</span></button>'; }
 
@@ -791,6 +877,23 @@
     });
     return Object.keys(by).map(function (k) { return by[k]; }).sort(function (a, b) { return b.miss - a.miss; }).slice(0, 10);
   }
+  // 你的错因: the reasons picked for the last WHY_RECENT misses (wrong or 不会),
+  // per reason how many and on which questions. null below 5 picked.
+  var WHY_RECENT = 100;
+  function whyStats() {
+    var xs = [];
+    ALL.forEach(function (q) { if (onLevel(q)) (S.answers[q.id] || []).forEach(function (a) { if (!a.ok) xs.push({ q: q, a: a }); }); });
+    xs.sort(function (x, y) { return y.a.t - x.a.t; });
+    xs = xs.slice(0, WHY_RECENT);
+    var by = {}, n = 0;
+    xs.forEach(function (x) {
+      var y = x.a.y; if (!y || !WHY_SHORT[y]) return;
+      var e = by[y] || (by[y] = { y: y, n: 0, qs: {} });
+      e.n++; e.qs[x.q.id] = 1; n++;
+    });
+    if (n < 5) return null;
+    return { miss: xs.length, n: n, by: by, rows: Object.keys(by).map(function (k) { return by[k]; }).sort(function (a, b) { return b.n - a.n; }) };
+  }
   function analysis() {
     view(false);
     var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button><span>' + t('做题分析', 'Analysis') + ' · JLPT ' + LEVEL + '</span><span></span></div><div class="q-card q-an">';
@@ -847,6 +950,13 @@
     }).join('') + '</ul>';
     if (few.length) h += '<p class="q-muted">' + t('做得太少还看不出：', 'Too few answers to tell: ') + few.map(function (x) { return esc(bi(D.types[x.k])); }).join('、') + '</p>';
     if (X && X.items) h += '<p class="q-muted">' + t('正式考试这部分 ', 'The real test: ') + X.minutes + t(' 分钟 ', ' minutes for about ') + X.items + t(' 题左右，平均每题约 ', ' questions, about ') + Math.round(X.minutes * 60 / X.items) + t(' 秒（阅读题要更久，词汇、语法题要更快）。', ' seconds each on average (reading takes longer, so vocabulary and grammar need to go faster).') + '</p>';
+    // The reasons the reader picked after misses; each opens a set of those questions.
+    var W = whyStats();
+    if (W) h += '<h2>' + t('你的错因', 'Why you miss') + '</h2><p class="q-muted">' + t('最近 ' + W.miss + ' 次答错里，你标了 ' + W.n + ' 次错因。点一项，专练这些题。', 'Of your last ' + W.miss + ' misses you marked a reason for ' + W.n + '. Tap one to practise those questions.') + '</p><ul class="q-rows q-an-why">' + W.rows.map(function (x) {
+      var pct = Math.round(x.n * 100 / W.n), nq = Object.keys(x.qs).length;
+      return '<li><button class="q-row" data-act="why-set" data-k="' + x.y + '"><span class="q-row-name">' + t(WHY_SHORT[x.y][0], WHY_SHORT[x.y][1]) + '</span><span class="q-muted q-row-n">' + x.n + t(' 次 · ' + nq + ' 题', (x.n === 1 ? ' time' : ' times') + ' · ' + nq + (nq === 1 ? ' question' : ' questions')) + '</span>' +
+        '<span class="q-acc q-why-acc"><span class="q-bar"><span style="width:' + pct + '%"></span></span><span class="q-pct">' + pct + '%</span></span></button></li>';
+    }).join('') + '</ul>';
     // Marked "got it" on a lesson page, but missed since.
     var slips = masteredSlips();
     if (slips.length) {
@@ -1022,7 +1132,7 @@
   // and a link straight to that section; other refs stay plain links.
   // Readers' notes on this question: an empty block the notes script from
   // notes.jpnotes.dev fills (build.js NOTES_SRC); without it, nothing shows.
-  // data-nt-miss: answered wrong (or 不会), so the empty block asks for a note on why.
+  // data-nt-miss: answered wrong (or 不会); only for GA now — the 为什么错了 row asks for the note.
   function notesMount(q, ok) { return /^[a-z0-9][a-z0-9-]{2,40}$/.test(q.id) ? '<div class="jp-nt" data-nt="q:' + q.id + '"' + (ok === false ? ' data-nt-miss="1"' : '') + '></div>' : ''; }
   function pointLink(p, label) { return '<a href="' + LESSON_BASE + p.lesson + '/#' + encodeURI(p.slug) + '" target="_blank" rel="noopener">' + label + '</a>'; }
   function pointsHtml(q) {
@@ -1262,8 +1372,10 @@
     // 不会 before answering; 其实是猜的 after a right answer (both go on the review list).
     // The verdict line: the verdict on the left, 其实是猜的 / ☆ on the right of the same line.
     var h = '<div class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '"><span class="q-vtext">' + (ok ? '✓ ' + t('正确', 'Correct') : '✗ ' + (choice == null ? t('不会 · ', 'Didn’t know · ') : '') + t('正确答案是 ', 'The answer is ') + (q.answer + 1) + ' <span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span>') + '</span>' +
-      '<span class="q-vtools">' + (ok ? '<button class="q-btn q-was-guess" data-act="was-guess">' + t('其实是猜的', 'I guessed') + '</button>' : '') + noteBtn(q, ok) + quizShareBtn(q) + favBtn(q) + '</span></div>';
+      '<span class="q-vtools">' + (ok ? '<button class="q-btn q-was-guess" data-act="was-guess">' + t('其实是猜的', 'I guessed') + '</button>' : '') + noteBtn(q) + quizShareBtn(q) + favBtn(q) + '</span></div>';
     if (q.type === 'narabe' && !ok) h += '<p class="q-order" lang="ja">' + t('正确顺序：', 'Right order: ') + q.order.map(function (i) { return q.options[i]; }).join(' → ') + '</p>';
+    var wy = !ok && (whyRecord(q.id) || {}).y;
+    if (!ok) h += missWhy(q, wy);
     var left = curs ? Object.keys(curs).filter(function (id) { return !curs[id].done; }) : [];
     // A recording with several questions: the transcript (it has every question
     // and its answer) once all of them are answered, under the last one.
@@ -1299,6 +1411,7 @@
       (past != null && past >= S.session.i ? (S.session.i >= S.session.ids.length ? t('看结果', 'See results') : t('回到当前题', 'Back to where I was')) : S.session.i >= S.session.ids.length && past == null ? t('看结果', 'See results') : t('下一题', 'Next')) + ' →</button></div>';
     root().querySelector('.q-feedback').innerHTML = h;
     linkWords(root().querySelector('.q-feedback .q-sent .q-full'), q);
+    if (wy) whyAfter(root().querySelector('.q-feedback .q-my'), q, wy, false);
     keepAiInView();
     if (left.length) cur = curs[left[0]];   // the keyboard moves on to the next question of the passage
   }
@@ -1331,7 +1444,7 @@
       var a = S.answers[q.id] || [], last = a[a.length - 1], days = Math.ceil((S.review[q.id].due - n) / DAY);
       var mine = !last ? '' : last.ok ? t('猜对', 'Guessed right') : last.c == null ? t('不会', 'Didn’t know') : t('你选 ', 'You: ') + '<span lang="ja">' + q.options[last.c] + '</span>';
       return '<li><div lang="ja" class="q-sumstem">' + sumLabel(q) + '</div>' +
-        '<div class="q-muted">' + (mine ? mine + ' · ' : '') + t('答案 ', 'Answer: ') + '<span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span> · ' +
+        '<div class="q-muted">' + (last && !last.ok ? whyTag(last.y) : '') + (mine ? mine + ' · ' : '') + t('答案 ', 'Answer: ') + '<span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span> · ' +
         (days <= 0 ? t('今天复习', 'due today') : days + t(' 天后复习', days === 1 ? ' day to go' : ' days to go')) + '</div>' +
         '<details class="q-rl-more"><summary>' + t('解析', 'Explanation') + '</summary>' + (isCk(q) ? ckPlayer(q) + ckScript(q, true) : '') + whyHtml(q.why) + kjHtml(q) + (q.tr ? '<p class="q-muted">' + esc(bi(q.tr)) + '</p>' : '') + wholeHtml(q, D.passages) +
         pointsHtml(q) + '<button class="q-btn" data-act="unreview" data-k="' + q.id + '">' + t('已经会了，移出错题本', 'I’ve got it — remove') + '</button></details></li>';
@@ -1419,7 +1532,7 @@
       h += '<h2>' + t('错题和猜的', 'Missed or guessed') + '</h2><ul class="q-sumlist">' + bad.map(function (r) {
         var q = Q[r.id];
         return '<li><div lang="ja" class="q-sumstem">' + sumLabel(q) + '</div>' +
-          '<div class="q-muted">' + (r.ok ? t('猜对', 'Guessed right') : r.c == null ? t('不会', 'Didn’t know') : t('你选 ', 'You: ') + '<span lang="ja">' + q.options[r.c] + '</span>') + ' · ' + t('答案 ', 'Answer: ') + '<span lang="ja">' + q.options[q.answer] + '</span></div></li>';
+          '<div class="q-muted">' + (r.ok ? '' : whyTag((whyRecord(r.id) || {}).y)) + (r.ok ? t('猜对', 'Guessed right') : r.c == null ? t('不会', 'Didn’t know') : t('你选 ', 'You: ') + '<span lang="ja">' + q.options[r.c] + '</span>') + ' · ' + t('答案 ', 'Answer: ') + '<span lang="ja">' + q.options[q.answer] + '</span></div></li>';
       }).join('') + '</ul>';
       // The grammar point missed most often.
       var cnt = {}; bad.forEach(function (r) { var ref = (Q[r.id].refs || [])[0]; if (ref) cnt[ref] = (cnt[ref] || 0) + 1; });
@@ -1453,6 +1566,12 @@
     else if (kind === 'weak' || kind === 'slip') {
       var rs = (kind === 'slip' ? masteredSlips() : weakRefs()).map(function (x) { return x.ref; });
       start('weak', arrange(freshFirst(ALL.filter(function (q) { return (q.refs || []).some(function (r) { return rs.indexOf(r) >= 0; }); })).slice(0, n)));
+    }
+    // The questions missed for one reason (analysis → 你的错因): those still on the review list first, then seen longest ago.
+    else if (kind === 'why') {
+      var ws = whyStats(), wr = ws && ws.by[k];
+      if (!wr) return analysis();
+      start('why', arrange(ALL.filter(function (q) { return wr.qs[q.id]; }).sort(function (a, b) { return (S.review[b.id] ? 1 : 0) - (S.review[a.id] ? 1 : 0) || lastT(a.id) - lastT(b.id); }).slice(0, n)), k);
     }
     else if (kind === 'ref') start('ref', subset(function (q) { return (q.refs || []).indexOf(k) >= 0; }, n), k);
     else if (kind === 'review') {
@@ -1930,7 +2049,7 @@
           var qq = {}; for (var x in q) qq[x] = q[x]; for (var y in kq) qq[y] = kq[y];
           if (isCk(q)) {
             var again = q.passage && shownP[q.passage]; if (q.passage) shownP[q.passage] = 1;
-            h += '<div class="q-card q-revcard"><p class="q-prob"><b>' + (si + 1) + '-' + p.no + '</b> ' + esc(test.types[p.type].ja) + '<span class="q-qno">' + ckNo(p, id) + '番</span></p>' + ckReview(qq, a, again) + '<p>' + favBtn(q) + '</p>' + aiBtn('m-ai', ok).replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
+            h += '<div class="q-card q-revcard"><p class="q-prob"><b>' + (si + 1) + '-' + p.no + '</b> ' + esc(test.types[p.type].ja) + '<span class="q-qno">' + ckNo(p, id) + '番</span></p>' + ckReview(qq, a, again, ok ? '' : missWhy(q, a.y)) + '<p>' + favBtn(q) + '</p>' + aiBtn('m-ai', ok).replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
             return;
           }
           h += '<div class="q-card q-revcard">';
@@ -1939,6 +2058,8 @@
           if (q.type === 'narabe') h += '<p lang="ja">' + t('正确顺序：', 'Order: ') + kq.order.map(function (i) { return q.options[i]; }).join(' / ') + '</p>';
           h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + (i === kq.answer ? ' q-ok' : i === a.c ? ' q-bad' : '') + '"><span class="q-num">' + (i + 1) + '</span><span class="q-otext">' + o + '</span>' + okjOf(qq, i) + '</div></li>'; }).join('') + '</ol>';
           h += '<div class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '"><span class="q-vtext">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 猜对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</span><span class="q-vtools">' + favBtn(q) + '</span></div>';
+          // 为什么错了: in the review only (never while the test runs), like practice.
+          if (!ok) h += missWhy(q, a.y);
           h += '<div class="q-explain">' + whyHtml(kq.why) + (q.type !== 'narabe' ? '<ul class="q-wrong">' + kq.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + q.options[i] + okjOf(qq, i) + '</b> — ' + ex(w) + '</li>' : ''; }).join('') + '</ul>' : '') +
             kjHtml(qq) + trLine(qq, kq.tr) + (lastOfP ? wholeHtml(qq, key.passages, false) : '') + '</div>' +
             aiBtn('m-ai', ok).replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
@@ -1946,6 +2067,7 @@
       });
     });
     app.innerHTML = h;
+    app.querySelectorAll('.q-my-done').forEach(function (row) { var id = row.getAttribute('data-q'); whyAfter(row, Q[id], (att.answers[id] || {}).y, false); });
     toTop();
   }
 
@@ -2223,12 +2345,12 @@
   }
   // A mock test's listening item in the review: replayable, then as in practice.
   // `again`: another question on a recording already shown above (no player or transcript).
-  function ckReview(q, a, again) {
+  function ckReview(q, a, again, why) {
     var ok = a.c === q.answer, mark = function (i) { return i === q.answer ? ' q-ok' : i === a.c ? ' q-bad' : ''; };
     var h = (again ? '' : ckPlayer(q)) + (q.passage ? ckSubNo(q) : '') + (q.pic && q.pic.scene ? ckScene(q) : '');
     if (q.pic && q.pic.opts) h += '<ol class="q-ck-pics">' + q.pic.opts.map(function (f, i) { return '<li><div class="q-opt q-ck-pic' + mark(i) + '"><span class="q-num">' + (i + 1) + '</span><img src="' + CK_IMG + f + '" alt="' + esc(plainJa(q.options[i])) + '" width="304" height="343" loading="lazy"></div></li>'; }).join('') + '</ol>';
     else h += '<ol class="q-opts' + (q.spoken ? ' q-ck-nums q-ck-shown' : '') + '" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + mark(i) + '"><span class="q-num">' + (i + 1) + '</span>' + (q.spoken ? ckOptText(q, i) : o) + '</div></li>'; }).join('') + '</ol>';
-    h += '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 猜对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</p>';
+    h += '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 猜对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</p>' + (why || '');
     return h + (again ? '' : ckScript(q, !ok)) + '<div class="q-explain">' + whyHtml(q.why) + '<ul class="q-wrong">' + q.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + (q.pic && q.pic.opts ? '' : q.options[i]) + '</b> — ' + ex(w) + '</li>' : ''; }).join('') + '</ul></div>';
   }
 
@@ -2582,6 +2704,10 @@
       if (!open) add.click();
       setTimeout(function () { var ta = nb.querySelector('.nt-slot[data-slot="new"] textarea'); nb.scrollIntoView({ block: 'center', behavior: 'smooth' }); if (ta) ta.focus({ preventScroll: true }); }, 60);
     }
+    else if (act === 'miss-why') missWhyPick(el);
+    else if (act === 'miss-why-chg') { var myr = el.closest('.q-my'); myr.classList.remove('q-my-done'); myr.querySelector('.q-my-k').textContent = t('为什么错了？', 'Why did you miss it?'); }
+    else if (act === 'miss-note') missNote(el);
+    else if (act === 'why-set') startKind('why', el.getAttribute('data-k'));
     else if (act === 'was-guess') {
       var gq = cur.q, ans = S.answers[gq.id], last = ans && ans[ans.length - 1];
       if (last) last.g = true;
