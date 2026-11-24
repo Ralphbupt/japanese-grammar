@@ -106,7 +106,7 @@ const AB_LOADER = AB_SRC ? `<script src="${AB_SRC}" defer></script>` : "";
 // it the "已掌握" buttons to hang a block under, practice pages an empty
 // <div class="jp-nt" data-nt="q:<id>"> in each explanation (site/quiz.js).
 // NOTES_SRC= (empty) builds without it; ?notes=local on a page talks to wrangler dev.
-const NOTES_SRC = process.env.NOTES_SRC !== undefined ? process.env.NOTES_SRC : "https://notes.jpnotes.dev/notes.js?v=4";
+const NOTES_SRC = process.env.NOTES_SRC !== undefined ? process.env.NOTES_SRC : "https://notes.jpnotes.dev/notes.js?v=5";
 const NOTES_ORIGIN = NOTES_SRC ? " " + new URL(NOTES_SRC).origin : "";
 const NOTES_LOADER = NOTES_SRC ? `<script src="${NOTES_SRC}" defer></script>` : "";
 // Content-Security-Policy connect-src allowlist: the browser itself refuses
@@ -3122,7 +3122,7 @@ ${SETTINGS_SCRIPT}`;
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>jpnotes — Free JLPT N5–N1 Grammar, Practice Tests & Listening</title>
 <meta name="description" content="Free JLPT N5–N1 grammar lessons, listening practice and mock tests: examples with audio, explanations for every answer, Anki decks. No sign-up. 中文版免费。">
 <meta name="keywords" content="Japanese grammar, JLPT N2, N5, N4, N3, 日语语法, 日本語文法, grammar notes, spaced repetition, 语法笔记">
@@ -3416,7 +3416,7 @@ ${AI_SCRIPT}
 <html lang="${v.htmlLang}"${v.htmlAttrs}>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <script>${LANG_REDIRECT_JS}</script>
 <title>${v.title}</title>
 <meta name="description" content="${v.desc.replace(/"/g, '&quot;')}">
@@ -3739,7 +3739,7 @@ ${APP_PREFS_JS}
   };
   // Shared by the level overview pages and the /guides/ hub.
   const OVERVIEW_CSS = `/* Keep sidebar (pure-CSS hover navigation); hide other JS-dependent chrome. */
-#content { --col: 1100px; margin: 0 auto !important; max-width: var(--col); padding: 2rem 1.5rem 4rem; }
+#content { --col: 1100px; margin: 0 auto !important; max-width: var(--col); padding: 2rem max(1.5rem, var(--sar)) 4rem max(1.5rem, var(--sal)); }
 /* Sidebar open: centre in the space to its right, as on the lessons. */
 @media (min-width: 769px) {
   body:not(.sidebar-collapsed) #content {
@@ -3834,7 +3834,7 @@ ${APP_PREFS_JS}
 <html lang="${lang.htmlLang}"${lv.htmlAttrs}>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <script>${LANG_REDIRECT_JS}</script>
 <title>${m.title}</title>
 <meta name="description" content="${m.desc.replace(/"/g, '&quot;')}">
@@ -3969,7 +3969,7 @@ ${AI_SCRIPT}
 <html lang="${lang.htmlLang}"${lv.htmlAttrs}>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <script>${LANG_REDIRECT_JS}</script>
 <title>${esc(m.title)}</title>
 <meta name="description" content="${esc(m.desc)}">
@@ -4068,7 +4068,7 @@ ${AI_SCRIPT}
 <html lang="${lang.htmlLang}"${lv.htmlAttrs}>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <script>${LANG_REDIRECT_JS}</script>
 <title>${esc(m.title)}</title>
 <meta name="description" content="${esc(m.desc)}">
@@ -4193,7 +4193,7 @@ ${AI_SCRIPT}
 <html lang="${lang.htmlLang}"${lv.htmlAttrs}>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <script>${LANG_REDIRECT_JS}</script>
 <title>${m.title}</title>
 <meta name="description" content="${m.desc.replace(/"/g, '&quot;')}">
@@ -4251,7 +4251,7 @@ ${SW_REGISTER}
 <style>
 ${CSS}
 /* Keep sidebar (pure-CSS hover); hide other JS-dependent chrome. */
-#content { margin: 0 auto !important; max-width: 800px; padding: 2rem 2rem 4rem; }
+#content { margin: 0 auto !important; max-width: 800px; padding: 2rem max(2rem, var(--sar)) 4rem max(2rem, var(--sal)); }
 .breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
 .breadcrumb a { color: var(--text-muted); text-decoration: none; }
 .breadcrumb .sep { margin: 0 .4em; }
@@ -4465,8 +4465,8 @@ ${AI_SCRIPT}
     if (l !== tr.lines.length) throw new Error(`grammar audio ${page}: ${l} lines on the page, ${tr.lines.length} in the ${code} track — rerun tools/grammar-audio.py`);
     return `<style>
 #ga-ctl{padding:.2rem 0 .6rem;border-bottom:1px solid var(--border,#ddd);margin-bottom:.4rem}
-#ga-bar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--bg);border-top:1px solid var(--border,#ddd);box-shadow:0 -4px 16px rgba(0,0,0,.06);padding:.5rem max(1rem,calc((100vw - 760px) / 2)) calc(.5rem + env(safe-area-inset-bottom))}
-#ga{padding-bottom:5rem}.site-footer{padding-bottom:calc(4.5rem + env(safe-area-inset-bottom))}.ga-it,.ga-lh{scroll-margin-top:4rem}
+#ga-bar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--bg);border-top:1px solid var(--border,#ddd);box-shadow:0 -4px 16px rgba(0,0,0,.06);padding:.5rem max(calc(1rem + var(--sar)),calc((100vw - 760px) / 2)) calc(.5rem + var(--sab)) max(calc(1rem + var(--sal)),calc((100vw - 760px) / 2))}
+#ga{padding-bottom:5rem}.site-footer{padding-bottom:calc(4.5rem + var(--sab))}.ga-it,.ga-lh{scroll-margin-top:4rem}
 .ga-row{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}.ga-row+.ga-row{margin-top:.45rem}
 #ga-play{width:2.6rem;height:2.2rem;border-radius:8px;border:0;background:var(--ui);color:var(--ui-on);font-size:1rem;cursor:pointer}
 #ga-play::before{content:"▶"}#ga-play.on::before{content:"❚❚"}
@@ -4557,7 +4557,7 @@ document.addEventListener('DOMContentLoaded',function(){set(on,false)});if(docum
 <html lang="${lang.htmlLang}"${lv.htmlAttrs}>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <script>${LANG_REDIRECT_JS}</script>
 <title>${m.title}</title>
 <meta name="description" content="${m.desc.replace(/"/g, '&quot;')}">${QUIZ_PUBLIC && !m.noindex ? "" : '\n<meta name="robots" content="noindex">'}
@@ -4580,7 +4580,7 @@ ${SW_REGISTER}
 <style>
 ${CSS}
 /* Same column as the lessons, so the site doesn't narrow when you start practising. */
-#content { --col: 1000px; margin: 0 auto !important; max-width: var(--col); padding: 2rem 1.5rem 4rem; }
+#content { --col: 1000px; margin: 0 auto !important; max-width: var(--col); padding: 2rem max(1.5rem, var(--sar)) 4rem max(1.5rem, var(--sal)); }
 @media (min-width: 1500px) { #content { --col: 1120px; } }
 @media (min-width: 769px) {
   body:not(.sidebar-collapsed) #content {
@@ -4637,7 +4637,7 @@ html.theme-dark .qs-v-ok { color: #4cc98a; } html.theme-dark .qs-opt.qs-right { 
 .cards-index ul { margin: 0; padding-left: 1.2rem; }
 .cards-index li { margin: .15rem 0; }
 @media (max-width: 600px) { .cards-index { columns: 1; } }
-@media (max-width: 600px) { #content { padding: 1.2rem 1rem 3rem; } }
+@media (max-width: 600px) { #content { padding: 1.2rem max(1rem, var(--sar)) 3rem max(1rem, var(--sal)); } }
 ${minifyCss(QUIZ_CSS)}
 </style>
 </head>
@@ -5343,7 +5343,7 @@ ${ga.tracks.ja ? `<script type="application/json" id="vl-ja">${JSON.stringify({ 
       };
       const kjCss = `<style>.kj-tools{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}.kj-tools button{font:inherit;font-size:.85rem;padding:.3rem .8rem;border-radius:14px;border:1px solid var(--border,#ccc);background:transparent;color:var(--ui);cursor:pointer}.kj-tools button[aria-pressed=true]{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}
 .kj-t td,.kj-t th{vertical-align:top}.kj-k{font-size:2.1rem;line-height:1.1;font-family:"Hiragino Mincho ProN","Yu Mincho",YuMincho,serif;text-align:center;white-space:nowrap}.kj-k a{color:inherit;text-decoration:none}.kj-rd{white-space:nowrap}.kj-rd span{display:block}.kj-on{color:var(--text-strong)}.kj-kun{color:var(--text-muted)}
-.kj-w{margin:0;padding:0;list-style:none}.kj-w li{margin:.1rem 0}.kj-w small{color:var(--text-muted)}.kj-x{font-size:.82rem;color:var(--text-muted);margin:.35rem 0 0}.kj-x b{color:var(--text-strong);font-weight:600}.kj-t th:nth-child(1){width:4.6rem}.kj-b{display:flex;flex-direction:column;gap:.25rem;margin-top:.35rem;font-family:var(--font-sans,system-ui)}.kj-b button{font:inherit;font-size:.7rem;line-height:1.2;padding:.15rem .3rem;border-radius:10px;border:1px solid var(--border,#ccc);background:transparent;color:var(--ui);cursor:pointer;white-space:nowrap}.kj-b button[aria-pressed=true]{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}.kj-sum{font-size:.82rem;color:var(--text-muted);align-self:center}.kj-sum b{color:var(--text-strong)}.kj-idx a.kj-kn{opacity:.35}tr.kj-done .kj-k>a{opacity:.45}.kj-t th:nth-child(2){width:8.5rem}.kj-t th:nth-child(3){width:9rem}.kj-w li{white-space:nowrap}
+.kj-w{margin:0;padding:0;list-style:none}.kj-w li{margin:.1rem 0}.kj-w small{color:var(--text-muted)}.kj-x{font-size:.82rem;color:var(--text-muted);margin:.35rem 0 0}.kj-x b{color:var(--text-strong);font-weight:600}.kj-t th:nth-child(1){width:4.6rem}.kj-b{display:flex;flex-direction:column;gap:.25rem;margin-top:.35rem;font-family:var(--font-sans,system-ui)}.kj-b button{font:inherit;font-size:.7rem;line-height:1.2;padding:.15rem .3rem;border-radius:10px;border:1px solid var(--border,#ccc);background:transparent;color:var(--ui);cursor:pointer;white-space:nowrap}.kj-b button[aria-pressed=true]{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}@media (pointer:coarse){.kj-b button{position:relative}.kj-b button::after{content:"";position:absolute;inset:-2px -4px}.kj-b .kj-got::after{top:-10px}.kj-b .kj-add::after{bottom:-12px}}.kj-sum{font-size:.82rem;color:var(--text-muted);align-self:center}.kj-sum b{color:var(--text-strong)}.kj-idx a.kj-kn{opacity:.35}tr.kj-done .kj-k>a{opacity:.45}.kj-t th:nth-child(2){width:8.5rem}.kj-t th:nth-child(3){width:9rem}.kj-w li{white-space:nowrap}
 #kj.kj-hr rt,#kj.kj-hr .kj-rd{filter:blur(4px)}#kj.kj-hm .kj-m,#kj.kj-hm .kj-w small{filter:blur(4px)}#kj.kj-only tr.kj-nt{display:none}
 .kj-idx{display:flex;flex-wrap:wrap;gap:.25rem;margin:.6rem 0 1rem}.kj-idx a{display:inline-flex;align-items:center;justify-content:center;width:2.1rem;height:2.1rem;border-radius:6px;border:1px solid var(--border,#ccc);color:inherit;text-decoration:none;font-size:1.15rem;font-family:"Hiragino Mincho ProN","Yu Mincho",YuMincho,serif}.kj-idx a:hover{background:var(--ui-soft)}.kj-idx a.kj-cur{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}
 .kj-pg{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem;margin:.6rem 0}.kj-pg[hidden]{display:none}.kj-pg button{font:inherit;font-size:.85rem;min-width:2.2rem;padding:.25rem .55rem;border-radius:7px;border:1px solid var(--border,#ccc);background:transparent;color:var(--ui);cursor:pointer}.kj-pg button[aria-current=page]{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}.kj-pg button:disabled{opacity:.4;cursor:default}.kj-pg span{font-size:.82rem;color:var(--text-muted);margin-left:.3rem}
@@ -6176,7 +6176,7 @@ Each \`/lessonNN/\` page contains:
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="robots" content="noindex">
 <title>Page not found – jpnotes.dev</title>
 <script>
@@ -6193,7 +6193,7 @@ Each \`/lessonNN/\` page contains:
 })();
 </script>
 <style>
-  body { font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 0 16px; background: #f6f4ef; color: #2b2a27; }
+  body { font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: env(safe-area-inset-top, 0px) max(16px, env(safe-area-inset-right, 0px)) env(safe-area-inset-bottom, 0px) max(16px, env(safe-area-inset-left, 0px)); background: #f6f4ef; color: #2b2a27; }
   @media (prefers-color-scheme: dark) { body { background: #14141e; color: #d4d4dc; } }
   .box { text-align: center; max-width: 30rem; }
   h1 { font-size: 3.5rem; margin: 0; }
@@ -6407,7 +6407,13 @@ ${p} blockquote { background: rgba(233, 69, 96, 0.08); }
 }
 const CSS = minifyCss(`
 :root {
-  --sidebar-w: 230px;
+  /* Safe areas (viewport-fit=cover): notch, home indicator, rounded corners —
+     0 everywhere else. Fixed and sticky things edge-to-edge add these. */
+  --sat: env(safe-area-inset-top, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sidebar-w: calc(230px + var(--sal));
   /* Light theme is "paper": a warm off-white instead of screen white, about
      91% luminance; body text stays ~13:1. */
   --bg: #f6f4ef;
@@ -6561,8 +6567,8 @@ input:focus-visible, summary:focus-visible {
   flex-direction: row;
   align-items: center;
   flex-shrink: 0;
-  height: 48px;
-  padding: 4px;
+  height: calc(48px + var(--sat));
+  padding: calc(4px + var(--sat)) 4px 4px calc(4px + var(--sal));
   width: var(--sidebar-w);
   box-sizing: border-box;
   transition: width var(--transition-slow);
@@ -6571,7 +6577,7 @@ input:focus-visible, summary:focus-visible {
   background: var(--sidebar-bg);
 }
 #sidebar.collapsed .nav-tools {
-  width: 48px;
+  width: calc(48px + var(--sal));
 }
 .nav-tool-extra {
   overflow: hidden;
@@ -6632,7 +6638,7 @@ body:not(.has-ai) .nav-tool-ai {
 }
 #sidebar .nav-scroll {
   flex: 1; overflow-y: auto; overflow-x: hidden;
-  padding-top: 48px;
+  padding: calc(48px + var(--sat)) 0 var(--sab) var(--sal);
 }
 #sidebar.collapsed {
   width: 0;
@@ -6686,13 +6692,13 @@ body:not(.has-ai) .nav-tool-ai {
 #content {
   margin-left: var(--sidebar-w);
   margin-right: 220px;
-  padding: 2rem 3rem 4rem;
+  padding: 2rem max(3rem, var(--sar)) 4rem max(3rem, var(--sal));
   max-width: 1050px;
   transition: margin-left var(--transition-slow);
 }
 body.sidebar-collapsed #content {
   margin-left: 0;
-  padding-top: 3.5rem;
+  padding-top: calc(3.5rem + var(--sat));
 }
 .lesson { display: none; content-visibility: auto; contain-intrinsic-size: 0 500px; }
 .lesson.active { display: block; content-visibility: visible; }
@@ -6861,6 +6867,11 @@ pre code { background: none; padding: 0; }
 td .gotit { margin: 0; padding: .1rem .45rem; }
 td .gotit::before { content: "○"; }
 td .gotit[aria-pressed="true"]::before { content: "✓"; }
+/* Touch: a finger's height to hit, same look (side by side in a row, so mostly up/down) */
+@media (pointer: coarse) {
+  .gotit { position: relative; }
+  .gotit::after { content: ""; position: absolute; inset: -7px -3px; }
+}
 tr.gotit-on td { opacity: .55; }
 html.gotit-hiding tr.gotit-on { display: none; }
 #gotit-sum { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin: .8rem 0 1.2rem; padding: .55rem .8rem; border-radius: 10px; background: var(--chip-bg); font-size: .92rem; }
@@ -7002,8 +7013,8 @@ summary:hover { color: var(--link); }
 @media (max-width: 768px) {
   #m-bar {
     display: flex; align-items: center; gap: 2px;
-    position: fixed; top: 0; left: 0; right: 0; height: 48px; z-index: 90;
-    padding: 4px 6px 4px 54px; background: var(--bg); border-bottom: 1px solid var(--border);
+    position: fixed; top: 0; left: 0; right: 0; height: calc(48px + var(--sat)); z-index: 90;
+    padding: calc(4px + var(--sat)) calc(6px + var(--sar)) 4px calc(54px + var(--sal)); background: var(--bg); border-bottom: 1px solid var(--border);
     transition: transform var(--transition-slow);
   }
   #m-title { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text-strong); font-size: .78rem; font-weight: 700; text-decoration: none; }
@@ -7018,13 +7029,14 @@ summary:hover { color: var(--link); }
   .nav-tool-extra { display: none !important; }
   html.mbar-hidden #m-bar, html.mbar-hidden #sidebar.collapsed .nav-tools { transform: translateY(-100%); }
   html .q-mockbar { transition: top var(--transition-slow); }
-  html:not(.mbar-hidden) .q-mockbar { top: 48px; }
+  html:not(.mbar-hidden) .q-mockbar { top: calc(48px + var(--sat)); }
+  html.mbar-hidden .q-mockbar { top: var(--sat); }
   #sidebar:not(.collapsed) {
     box-shadow: 2px 0 16px rgba(0,0,0,.25);
   }
   body:not(.sidebar-collapsed) #sb-backdrop { display: block; position: fixed; inset: 0; z-index: 99; background: rgba(0,0,0,.35); }
   html.sb-lock, html.sb-lock body { overflow: hidden; }
-  #content { margin-left: 0 !important; margin-right: 0; padding: 3.5rem 1rem 4rem; }
+  #content { margin-left: 0 !important; margin-right: 0; padding: calc(3.5rem + var(--sat)) max(1rem, var(--sar)) calc(4rem + var(--sab)) max(1rem, var(--sal)); }
 }
 
 /* Home page landing layout (no lesson articles inlined).
@@ -7201,7 +7213,7 @@ html.theme-dark {${DARK_VARS}}
 ${darkRules('html.theme-dark')}
 
 /* ─── Search (command palette) ─── */
-#search-overlay { position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,.45); display: flex; align-items: flex-start; justify-content: center; padding: 12vh 1rem 1rem; }
+#search-overlay { position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,.45); display: flex; align-items: flex-start; justify-content: center; padding: max(12vh, calc(1rem + var(--sat))) calc(1rem + var(--sar)) calc(1rem + var(--sab)) calc(1rem + var(--sal)); }
 #search-overlay[hidden] { display: none; }
 #search-box { width: 100%; max-width: 560px; max-height: 70vh; display: flex; flex-direction: column; overflow: hidden; background: var(--card-bg); color: inherit; border: 1px solid var(--border); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
 #search-input { border: none; outline: none; background: transparent; color: inherit; font-size: 1.05rem; padding: 1rem 1.2rem; border-bottom: 1px solid var(--border); }
@@ -7214,7 +7226,7 @@ ${darkRules('html.theme-dark')}
 .sr-pts { font-size: .8rem; opacity: .6; margin-left: auto; text-align: right; }
 .search-empty { padding: 1rem 1.2rem; opacity: .6; }
 #search-hint { font-size: .72rem; opacity: .55; padding: .5rem 1.2rem; border-top: 1px solid var(--border); }
-@media (max-width: 600px) { #search-hint { display: none; } #search-overlay { padding: 6vh .6rem 1rem; } }
+@media (max-width: 600px) { #search-hint { display: none; } #search-overlay { padding: max(6vh, calc(.6rem + var(--sat))) calc(.6rem + var(--sar)) calc(1rem + var(--sab)) calc(.6rem + var(--sal)); } }
 
 /* Desktop top-right quick controls (injected by settings-modal.js). On
    mobile the sidebar toolbar + settings modal take over, so the bar hides and
@@ -7222,7 +7234,7 @@ ${darkRules('html.theme-dark')}
 /* The cluster sits on its own frosted backing so page text scrolling under
    it never shows through between the pills. */
 #top-controls {
-  position: fixed; top: .5rem; right: 1rem;
+  position: fixed; top: calc(.5rem + var(--sat)); right: calc(1rem + var(--sar));
   display: flex; align-items: center; gap: .4rem; z-index: 200;
   padding: .3rem; border-radius: var(--radius-xl);
   background: color-mix(in srgb, var(--bg) 90%, transparent);
@@ -7292,10 +7304,10 @@ body.ai-open #tc-ai { border-color: var(--ui); box-shadow: 0 0 0 2px var(--ui-so
 @media (min-width: 769px) { .nav-tool-extra { display: none; } }
 @media (max-width: 768px) { #top-controls { display: none; } }
 /* The mock test's sticky bar (timer, 答题卡, 暂停) stops below the floating top controls, which would cover its buttons */
-@media (min-width: 769px) { html .q-mockbar { top: 3.7rem; } }
+@media (min-width: 769px) { html .q-mockbar { top: calc(3.7rem + var(--sat)); } }
 
 /* Settings modal */
-#settings-overlay { position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,.45); display: flex; align-items: flex-start; justify-content: center; padding: 10vh 1rem 1rem; }
+#settings-overlay { position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,.45); display: flex; align-items: flex-start; justify-content: center; padding: max(10vh, calc(1rem + var(--sat))) calc(1rem + var(--sar)) calc(1rem + var(--sab)) calc(1rem + var(--sal)); }
 #settings-overlay[hidden] { display: none; }
 #settings-box { width: 100%; max-width: 500px; max-height: 84vh; overflow-y: auto; background: var(--card-bg); color: inherit; border: 1px solid var(--border); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 1.1rem 1.2rem 1.1rem; }
 .settings-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: .9rem; }
@@ -7328,7 +7340,7 @@ body.ai-open #tc-ai { border-color: var(--ui); box-shadow: 0 0 0 2px var(--ui-so
 .settings-more button { display: inline-flex; align-items: center; gap: .45rem; border: 1px solid var(--border); border-radius: 999px; background: none; color: inherit; padding: .4rem 1rem; font: inherit; font-size: .88rem; cursor: pointer; }
 .settings-more button:hover { border-color: var(--ui); }
 .settings-more svg { width: 15px; height: 15px; }
-@media (max-width: 600px) { #settings-overlay { padding: 5vh .6rem 1rem; } }
+@media (max-width: 600px) { #settings-overlay { padding: max(5vh, calc(.6rem + var(--sat))) calc(.6rem + var(--sar)) calc(1rem + var(--sab)) calc(.6rem + var(--sal)); } }
 /* Account and progress cards at the top of the settings dialog (filled by site/sync.js) */
 .acct { margin: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: .8rem; }
 .acct-card { padding: 1rem 1.1rem; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--word-bg); }

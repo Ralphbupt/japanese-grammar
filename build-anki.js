@@ -641,7 +641,7 @@ async function main() {
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="Content-Language" content="zh-CN, en">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://jpnotes.dev https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com https://*.google-analytics.com https://*.analytics.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
 <title>JLPT Grammar Anki Decks N5–N1 (free .apkg) | 日语语法 Anki 卡组</title>
 <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -690,14 +690,14 @@ ${JSON.stringify({
 }
 html.theme-dark { --bg: #14141e; --text: #d4d4dc; --card-bg: #1f1f2e; --border: #2d2d44; --muted: #a8a8b8; --accent: #e94560; --ui: #a9c7ee; --ui-on: #10131c; --link: #a9c7ee; }
 * { box-sizing: border-box; }
-body { font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "PingFang SC", sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 2.5rem 1.5rem; line-height: 1.75; }
+body { font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "PingFang SC", sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: calc(2.5rem + env(safe-area-inset-top, 0px)) max(1.5rem, env(safe-area-inset-right, 0px)) calc(2.5rem + env(safe-area-inset-bottom, 0px)) max(1.5rem, env(safe-area-inset-left, 0px)); line-height: 1.75; }
 .container { max-width: 760px; margin: 0 auto; }
 h1 { font-size: 1.8rem; margin: 0 0 .5rem; }
 .subtitle { color: var(--muted); margin-bottom: 2rem; }
 .breadcrumb { font-size: .85rem; color: var(--muted); margin-bottom: 1rem; }
 .breadcrumb a { color: var(--link); text-decoration: none; }
 /* Theme + language pills, top right (injected by settings-modal.js). */
-#top-controls { position: fixed; top: .8rem; right: 1.2rem; display: flex; align-items: center; gap: .5rem; z-index: 200; }
+#top-controls { position: fixed; top: calc(.8rem + env(safe-area-inset-top, 0px)); right: calc(1.2rem + env(safe-area-inset-right, 0px)); display: flex; align-items: center; gap: .5rem; z-index: 200; }
 .tc-pill { background: var(--card-bg); color: inherit; font: inherit; font-size: .8rem; padding: .4rem .8rem; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 2px 10px rgba(0,0,0,.12); cursor: pointer; line-height: 1.2; }
 .tc-icon { font-size: 1rem; padding: .32rem .6rem; }
 .tc-lang { font-weight: 700; }

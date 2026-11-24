@@ -22,7 +22,7 @@
   css.textContent = '.q-w{cursor:pointer;text-decoration:underline dotted;text-decoration-color:var(--text-muted,#999);text-underline-offset:.25em;border-radius:3px}' +
     '.q-w:hover,.q-w.q-wsel{background:var(--ui-soft,#eef)}.q-w.q-won{text-decoration-style:solid;text-decoration-color:var(--ui,#334)}' +
     '.q-wtip{position:fixed;z-index:95;background:var(--bg,#fff);color:inherit;border:1px solid var(--border,#ddd);border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,.18);padding:.7rem .9rem;font-size:.92rem}' +
-    '.q-wtip.q-wsheet{left:0!important;right:0;bottom:0;top:auto!important;width:auto!important;border-radius:16px 16px 0 0;padding:1rem 1.1rem calc(1rem + env(safe-area-inset-bottom))}' +
+    '.q-wtip.q-wsheet{left:0!important;right:0;bottom:0;top:auto!important;width:auto!important;border-radius:16px 16px 0 0;padding:1rem 1.1rem calc(1rem + var(--sab,env(safe-area-inset-bottom,0px)))}' +
     '.q-wtip-w{font-size:1.35rem;font-weight:700}.q-wtip-w rt{font-size:.55em;font-weight:400}.q-wtip-m{margin:.3rem 0 .6rem}.q-wtip-muted{color:var(--text-muted,#888);font-size:.85rem}' +
     '.q-wtip-add{font:inherit;font-size:.88rem;padding:.35rem .8rem;border-radius:8px;border:1px solid var(--ui,#334);background:var(--ui,#334);color:var(--ui-on,#fff);cursor:pointer}' +
     '.q-wtip-add.on{background:transparent;color:var(--ui,#334)}.q-wtip-go{color:var(--ui,#334);font-size:.88rem}.q-wtip-x{position:absolute;right:.6rem;top:.4rem;border:0;background:none;color:inherit;font-size:1.3rem;cursor:pointer}';

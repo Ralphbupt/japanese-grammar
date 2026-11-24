@@ -100,7 +100,7 @@
     '.fb-r-q{color:var(--text-muted);font-size:.9em;margin:0 0 .3rem}' +
     '.fb-r-a{margin:0;white-space:pre-wrap}' +
     '.fb-r-meta{color:var(--text-muted);font-size:.8em;margin:.3rem 0 0}' +
-    '.fb-toast{position:fixed;right:16px;bottom:16px;z-index:60;width:min(420px,calc(100vw - 32px));max-height:70vh;overflow:auto;box-sizing:border-box;padding:1rem 1.1rem;border:1px solid var(--border);border-radius:var(--radius,8px);background:var(--surface-2,var(--bg));color:var(--text);box-shadow:0 8px 28px rgba(0,0,0,.25)}' +
+    '.fb-toast{position:fixed;right:calc(16px + var(--sar,env(safe-area-inset-right,0px)));bottom:calc(16px + var(--sab,env(safe-area-inset-bottom,0px)));z-index:60;width:min(420px,calc(100vw - 32px));max-height:70vh;overflow:auto;box-sizing:border-box;padding:1rem 1.1rem;border:1px solid var(--border);border-radius:var(--radius,8px);background:var(--surface-2,var(--bg));color:var(--text);box-shadow:0 8px 28px rgba(0,0,0,.25)}' +
     '.fb-toast h2{font-size:1rem;margin:0 0 .4rem}' +
     '.fb-toast .fb-send{margin-top:.6rem}';
   var st = document.createElement('style');

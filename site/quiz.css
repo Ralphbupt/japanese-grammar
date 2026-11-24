@@ -182,7 +182,7 @@ html.theme-dark .q-ai .q-btn:not(.q-ai-main) { border-color: color-mix(in srgb, 
 .q-tools .jp-nt.nt-open ~ .q-report:not([open]) { margin-left: auto; }
 .q-report summary { cursor: pointer; color: var(--text-muted); }
 .q-report .q-btn { margin: .4rem .2rem 0 0; padding: .3em .7em; font-size: .9em; }
-.q-next { position: sticky; bottom: 0; padding: .8rem 0 .4rem; background: linear-gradient(transparent, var(--card-bg) 30%); margin-top: .6rem; }
+.q-next { position: sticky; bottom: 0; padding: .8rem 0 calc(.4rem + var(--sab, env(safe-area-inset-bottom, 0px))); background: linear-gradient(transparent, var(--card-bg) 30%); margin-top: .6rem; }
 
 .q-summary { text-align: left; }
 .q-score { font-size: 2.4rem; font-weight: 700; margin: 0; font-variant-numeric: tabular-nums; }
@@ -244,7 +244,7 @@ html.theme-dark .q-ai .q-btn:not(.q-ai-main) { border-color: color-mix(in srgb, 
 .q-flagged { border-color: var(--ui); color: var(--ui); }
 .q-nav { margin-top: 1.2rem; }
 .q-break { text-align: center; }
-.q-paused { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 1rem; background: var(--bg); }
+.q-paused { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: calc(1rem + var(--sat, 0px)) calc(1rem + var(--sar, 0px)) calc(1rem + var(--sab, 0px)) calc(1rem + var(--sal, 0px)); background: var(--bg); }
 .q-paused .q-card { max-width: 420px; text-align: center; }
 .q-scoreline { display: grid; grid-template-columns: 1fr auto; gap: .2rem 1rem; align-items: center; padding: .8rem 0; border-bottom: 1px solid var(--border); }
 .q-scoreline b { font-size: 2rem; font-variant-numeric: tabular-nums; }
@@ -383,6 +383,7 @@ body.quiz-busy .quiz-about { display: none; }
 .q-why-acc .q-bar span { background: var(--ui); }
 .q-size { display: inline-flex; align-items: center; gap: .25rem; margin-left: auto; font-size: .85rem; color: var(--text-muted); white-space: nowrap; }
 .q-size select { font: inherit; margin: 0; padding: 0 .2rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); color: var(--text); }
+@media (pointer: coarse) { .q-size select { min-height: 36px; padding: 0 .45rem; } }
 @media (max-width: 600px) {
   .hub-table, .hub-table tbody, .hub-table tr, .hub-table th, .hub-table td { display: block; width: auto; }
   .hub-table thead { display: none; }
@@ -539,7 +540,7 @@ body.quiz-busy .quiz-about { display: none; }
 .q-wtip-m { margin: .15rem 0 .6rem; }
 .q-wtip-add { width: 100%; justify-content: center; }
 .q-wtip-hint { margin-top: .35rem; font-size: .78rem; text-align: center; }
-.q-wsheet { left: 0; right: 0; bottom: 0; border-radius: 16px 16px 0 0; padding: 1rem 1.1rem calc(1rem + env(safe-area-inset-bottom)); max-width: 640px; margin: 0 auto; }
+.q-wsheet { left: 0; right: 0; bottom: 0; border-radius: 16px 16px 0 0; padding: 1rem 1.1rem calc(1rem + var(--sab, env(safe-area-inset-bottom, 0px))); max-width: 640px; margin: 0 auto; }
 .q-wsheet .q-wtip-w { font-size: 1.7rem; }
 .q-wsheet .q-wtip-add { min-height: 48px; font-size: 1rem; }
 .q-wtip-x { position: absolute; top: .4rem; right: .5rem; width: 40px; height: 40px; border: 0; background: none; color: var(--text-muted); font-size: 1.5rem; cursor: pointer; }

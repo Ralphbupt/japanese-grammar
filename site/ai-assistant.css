@@ -9,7 +9,9 @@ body.ai-open #ai-btn {
 
 #ai-panel {
   position: fixed; top: 0; right: 0; height: 100vh; height: 100dvh;
-  width: min(var(--ai-w), 100vw);
+  width: min(calc(var(--ai-w) + var(--sar, 0px)), 100vw);
+  /* notch / home indicator (0 elsewhere): the header and the input stay clear */
+  padding: var(--sat, env(safe-area-inset-top, 0px)) var(--sar, env(safe-area-inset-right, 0px)) var(--sab, env(safe-area-inset-bottom, 0px)) 0;
   display: flex; flex-direction: column;
   background: var(--card-bg); color: inherit;
   border-left: 1px solid var(--border); box-shadow: var(--shadow-lg);
