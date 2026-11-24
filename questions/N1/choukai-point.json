@@ -131,7 +131,7 @@
    ],
    [
     "F",
-    "ええ。狭い部屋でも、家具の下まで入り込めるのが売りなんですけどね。パンフレットもテレビのコマーシャルも、広いリビングを走ってる写真ばかりなので。"
+    "ええ。狭い部屋でも、家具の下まで入り込めるのが売りなんですけどね。パンフレットもテレビのコマーシャルも、広いリビングを走ってる写真ばかりなので、小さい部屋向けだってことが、全然伝わってないんですよ。"
    ],
    [
     "M",
@@ -165,7 +165,7 @@
      "那款小型扫地机器人，上市三个月了，听说连目标的一半都没达到。",
      "前几天我去家电卖场看了看。一个像是独居的年轻男人拿起我们的宣传册，看了一会儿，说了句「对我家来说太大了」，就放回架子上了。",
      "太大？那可是我们最小的型号啊。",
-     "是啊。卖点明明是小房间里也能钻到家具底下。可宣传册也好电视广告也好，全是在宽敞客厅里跑的画面。",
+     "是啊。卖点明明是小房间里也能钻到家具底下。可宣传册也好电视广告也好，全是在宽敞客厅里跑的画面，适合小房间这一点完全没传达出去。",
      "原来如此……不过价格也有关系吧？",
      "价格和别家差不多，不好说。说吸力弱的评价，也只限于某些地板。",
      "销售说店里的展示太小了。",
@@ -185,7 +185,7 @@
      "That compact robot vacuum — three months on sale and apparently not even half its target.",
      "The other day I went to look at an electronics store. A young man who looked like he lived alone picked up our brochure, studied it for a while, said 'That's too big for my place,' and put it back.",
      "Too big? That's our smallest model.",
-     "Yes. Its selling point is that it gets under furniture even in a small room. But the brochure and the TV ads only ever show it running around a big living room.",
+     "Yes. Its selling point is that it gets under furniture even in a small room. But the brochure and the TV ads only ever show it running around a big living room, so nobody can tell it's made for small rooms.",
      "I see… But doesn't the price have something to do with it too?",
      "It's priced about the same as competitors', so I'm not sure. And the reviews about weak suction only apply to certain floors.",
      "Sales were saying the in-store display is too small.",
@@ -200,8 +200,8 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「パンフレットもテレビのコマーシャルも、広いリビングを走ってる写真ばかりなので。」\n推理：卖点是「狭い部屋でも、家具の下まで入り込める」，可宣传全是宽敞客厅，所以客人看了宣传册说「うちには大きすぎるな」就放回去了——广告没传达出长处。其他可能的原因她一一否定：价格「ほぼ同じ」，吸力弱只限部分地板，展示问题则用「ちゃんと手に取って見てくれてた」驳回。",
-   "en": "Evidence: The woman says: 「パンフレットもテレビのコマーシャルも、広いリビングを走ってる写真ばかりなので。」\nReasoning: The selling point is 「狭い部屋でも、家具の下まで入り込める」, yet the ads show only big living rooms, so the shopper read the brochure, said 「うちには大きすぎるな」 and put it back: the ads hide its strength. She dismisses the other possible causes one by one: the price is 「ほぼ同じ」, weak suction is limited to some floors, and the display point is answered with 「ちゃんと手に取って見てくれてた」."
+   "zh": "依据：女的说：「パンフレットもテレビのコマーシャルも、広いリビングを走ってる写真ばかりなので、小さい部屋向けだってことが、全然伝わってないんですよ。」\n推理：卖点是「狭い部屋でも、家具の下まで入り込める」，可宣传全是宽敞客厅，所以客人看了宣传册说「うちには大きすぎるな」就放回去了——广告没传达出长处。其他可能的原因她一一否定：价格「ほぼ同じ」，吸力弱只限部分地板，展示问题则用「ちゃんと手に取って見てくれてた」驳回。",
+   "en": "Evidence: The woman says: 「パンフレットもテレビのコマーシャルも、広いリビングを走ってる写真ばかりなので、小さい部屋向けだってことが、全然伝わってないんですよ。」\nReasoning: The selling point is 「狭い部屋でも、家具の下まで入り込める」, yet the ads show only big living rooms, so the shopper read the brochure, said 「うちには大きすぎるな」 and put it back: the ads hide its strength. She dismisses the other possible causes one by one: the price is 「ほぼ同じ」, weak suction is limited to some floors, and the display point is answered with 「ちゃんと手に取って見てくれてた」."
   },
   "wrong": [
    {
