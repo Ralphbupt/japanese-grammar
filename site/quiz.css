@@ -222,6 +222,7 @@ html.theme-dark .q-ai .q-btn:not(.q-ai-main) { border-color: color-mix(in srgb, 
 .q-tag-new { border-color: var(--border); color: var(--text-muted); }
 .q-plan { width: 100%; margin: .6rem 0 1rem; }
 .q-plan th { text-align: left; font-weight: 600; }
+.q-plan td { white-space: nowrap; }
 .q-rules { padding-left: 1.2rem; line-height: 1.8; color: var(--text-muted); }
 .q-start { flex-direction: column; align-items: stretch; }
 .q-mockbar { position: sticky; top: 0; z-index: 5; display: flex; align-items: center; gap: .8rem; flex-wrap: wrap; padding: .6rem 0; margin-bottom: .6rem; background: var(--bg); border-bottom: 1px solid var(--border); font-size: .92rem; }
@@ -307,7 +308,7 @@ html.theme-dark .q-ai .q-btn:not(.q-ai-main) { border-color: color-mix(in srgb, 
   .q-next { padding-top: .5rem; }
   .q-next .q-btn-big { padding-top: .55em; padding-bottom: .55em; }
 }
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .q-ck-nums:not(.q-ck-shown) li { flex: 1 1 0; min-width: 0; }
   .q-ck-nums:not(.q-ck-shown) .q-opt { min-width: 0; width: 100%; }
 }

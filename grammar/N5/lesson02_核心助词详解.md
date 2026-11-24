@@ -172,7 +172,7 @@ With verbs of leaving (出る, 卒業する, 降りる, etc.), を marks the pla
 ### 含義||Meaning
 
 :::zh
-に有很多用法，但核心语感是**"指向某个点"**——时间的点、空间的点、对象的点。常见用法：存在的场所、具体时间点、目的地、动作对象、目的、变化的结果。
+に有很多用法，但核心语感是"**指向某个点**"——时间的点、空间的点、对象的点。常见用法：存在的场所、具体时间点、目的地、动作对象、目的、变化的结果。
 :::
 :::en
 に has many uses, but the core feeling is **"pointing to a specific point"** — a point in time, a point in space, or a target/recipient. Common uses: location of existence, specific time point, destination, target of an action, purpose, and result of a change.
@@ -403,7 +403,7 @@ Frequency:    一週間に二回      (how often?)
 ### 含義||Meaning
 
 :::zh
-核心语感是**"在某个范围/条件下进行动作"**——动作发生的场所、手段/工具、原因/理由、范围、数量或期限的限度。
+核心语感是"**在某个范围/条件下进行动作**"——动作发生的场所、手段/工具、原因/理由、范围、数量或期限的限度。
 :::
 :::en
 Core feeling: **"performing an action within a certain scope or condition"** — the venue of an action, means/instrument, cause/reason, scope, and quantity/time limit.
@@ -700,7 +700,7 @@ Core function: **linking two nouns** to express possession, category, material, 
 ### 含義||Meaning
 
 :::zh
-も表示**"也"**（添加同类）；**疑问词 + も + 否定**＝全否定（什么都/谁都……不）；**数量 + も**＝强调"多/久"。
+も表示"**也**"（添加同类）；**疑问词 + も + 否定**＝全否定（什么都/谁都……不）；**数量 + も**＝强调"多/久"。
 :::
 :::en
 も means **"also"** (adding something of the same kind); **question word + も + negative** = total negation ("nothing / nobody …"); **number + も** = emphasizing "a lot / a long time."
@@ -902,7 +902,7 @@ Similar to に, but emphasizes the direction of movement. に stresses **the arr
 ### 含義||Meaning
 
 :::zh
-と表示**"和……一起"**（共同动作）、**全部列举**（A和B和C，就这些）、以及**引用**（说/想/听说……）。列举对比：と＝全部列举，や＝部分列举。
+と表示"**和……一起**"（共同动作）、**全部列举**（A和B和C，就这些）、以及**引用**（说/想/听说……）。列举对比：と＝全部列举，や＝部分列举。
 :::
 :::en
 と expresses **"together with …"** (joint action), **exhaustive listing** (A and B and C, that's all), and **quotation** (said/thought/heard that …). Compare listing: と = exhaustive, や = partial.

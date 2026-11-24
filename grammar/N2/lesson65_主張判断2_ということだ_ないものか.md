@@ -237,9 +237,9 @@ Relays information heard from others or the news. Equivalent to 「〜そうだ 
 
 ### 含义||Meaning
 :::zh
-**としては：**"作为……来说"，表示从某个立场、身份、角色来评价或判断。常暗含"和一般情况不同"的语气。
+**としては**："作为……来说"，表示从某个立场、身份、角色来评价或判断。常暗含"和一般情况不同"的语气。
 
-**としても：**"即使作为……来说也……"，在「としては」的基础上加了让步。
+**としても**："即使作为……来说也……"，在「としては」的基础上加了让步。
 :::
 :::en
 **としては:** "As (for being)…" — evaluates or judges from a certain standpoint, identity, or role. Often implies "different from the norm."
@@ -323,9 +323,9 @@ Relays information heard from others or the news. Equivalent to 「〜そうだ 
 
 ### 含义||Meaning
 :::zh
-**というものだ：**说话人对某件事下的断定："这才叫……""这就是所谓的……"。常用于说明某事物的本质（「それが人生というものだ」），也常用于批评某个具体行为（「それはわがままというものだ」= 那就叫任性）。
+**というものだ**：说话人对某件事下的断定："这才叫……""这就是所谓的……"。常用于说明某事物的本质（「それが人生というものだ」），也常用于批评某个具体行为（「それはわがままというものだ」= 那就叫任性）。
 
-**というものではない：**部分否定，反驳一种常见的想法："并不是……就（一定）……"。前面通常是"只要A就B"这类看法，说话人指出它不一定成立。
+**というものではない**：部分否定，反驳一种常见的想法："并不是……就（一定）……"。前面通常是"只要A就B"这类看法，说话人指出它不一定成立。
 :::
 :::en
 **というものだ:** the speaker's verdict on something — "that's what… is," "that's what you call…." Used to state the essence of something (「それが人生というものだ」 — that's life), and often to criticize a specific act (「それはわがままというものだ」 — that's just selfish).
