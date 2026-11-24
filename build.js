@@ -602,6 +602,20 @@ const GTAG_DEFERRED = AB_LOADER + NOTES_LOADER + `<script>
     };
     if (!sess.t) q._ss = 1;                       // first hit of the session
     if (document.referrer && seq === 1) q.dr = document.referrer;
+    // Apps that open links in their own browser (WeChat, Douyin, Doubao, LINE …) send
+    // no referrer, so GA files those readers under "direct". Name the app as the
+    // referrer instead (wechat.inapp …): GA then reports it as the source, and the
+    // admin's channel table groups *.inapp. Only when nothing else names a source.
+    // (No backslashes in these regexes: this script sits in a template literal.)
+    else if (seq === 1 && !/[?&](utm_|gclid=|fbclid=)/.test(location.search)) {
+      var ua = navigator.userAgent, app = [['doubao', /doubao/i], ['wecom', /wxwork/i], ['wechat', /MicroMessenger/], ['qq', /[ ;)]QQ[/]|MQQBrowser/],
+        ['tiktok', /musical_ly|TikTok/], ['douyin', /aweme|BytedanceWebview|NewsArticle|TTWebView/], ['quark', /Quark[/]/], ['uc', /UCBrowser/],
+        ['baidu', /baiduboxapp/], ['xiaohongshu', /xhsdiscover/], ['weibo', /Weibo/], ['zhihu', /ZhihuHybrid/], ['dingtalk', /DingTalk/], ['feishu', /Lark|Feishu/],
+        ['line', / Line[/]/], ['facebook', /FBAN|FBAV|FB_IAB/], ['instagram', /Instagram/], ['threads', /Barcelona/], ['kakaotalk', /KAKAOTALK/i],
+        ['naver', /NAVER[(]inapp/], ['zalo', /Zalo/], ['discord', /Discord/], ['telegram', /Telegram/], ['snapchat', /Snapchat/], ['google-app', /GSA[/]/]]
+        .filter(function(a) { return a[1].test(ua); })[0];
+      if (app) q.dr = 'https://' + app[0] + '.inapp/';
+    }
     if (debug) q._dbg = 1;
     if (KEY_EVENTS.indexOf(name) >= 0) q._c = 1;
     // Which theme the page is actually shown in (auto resolved through the
