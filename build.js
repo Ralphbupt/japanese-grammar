@@ -523,6 +523,11 @@ const GTAG_DEFERRED = AB_LOADER + NOTES_LOADER + `<script>
   // Skip GA for automation / crawlers / SEO tools — they all match here.
   if (navigator.webdriver) return;
   if (/HeadlessChrome|Lighthouse|PhantomJS|Puppeteer|Playwright|crawler|spider|bot|Slurp|facebookexternalhit/i.test(ua)) return;
+  // Headless renderers with a normal user agent: 800x600 is their default screen
+  // (2026-11: ~170 "readers" in 28 days, 148 from China, all direct, 3 engaged
+  // sessions, 0 answers), and 1366x1366 behaved the same. No real device today.
+  var scr = screen.width + 'x' + screen.height;
+  if (scr === '800x600' || scr === '1366x1366') return;
 
   var TID = 'G-D1KNQTFN1R', URL_ = 'https://www.google-analytics.com/g/collect';
   // gtag flags key events itself with _c=1; this sender has to do the same, or
