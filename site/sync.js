@@ -226,6 +226,37 @@
   var EMAIL_ON = !!(SCRIPT && SCRIPT.getAttribute('data-email') === '1') || ls.get('jp_acct_email') === '1';
   var mailState = { email: '', code: '', sent: false, busy: false, msg: '' };
 
+  // ─── Which way in is offered first: Google's button or the email code ───
+  // Google refuses sign-in inside apps' own browsers (embedded WebViews), and
+  // mainland China can't reach it at all. There the email code comes first:
+  //   • an app's built-in browser (WeChat, QQ, Douyin …; Android "; wv)", an iOS
+  //     WebView = no "Safari/" in the UA): Google's script isn't even loaded;
+  //   • a mainland-China time zone (Asia/Shanghai …): readers in Japan with a
+  //     zh-CN browser keep Google first, which the language alone would not;
+  //   • Google's script failed in this browser within the last 14 days (jp_gsi_bad);
+  //   • a zh-CN / zh-Hans browser whose Google script hasn't loaded after 2.5 s
+  //     (everyone else keeps the 4 s "isn't loading" notice and Google first).
+  // Testing: ?inapp=1 acts as an app browser, ?tzcn=1 as a China time zone.
+  var UA = (root.navigator && navigator.userAgent) || '';
+  var INAPP_APPS = [['企业微信', 'WeCom', /wxwork/i], ['微信', 'WeChat', /MicroMessenger/], ['QQ', 'QQ', /[ ;)]QQ\//], ['抖音', 'Douyin', /aweme|BytedanceWebview|TTWebView|NewsArticle/],
+    ['TikTok', 'TikTok', /musical_ly|TikTok/], ['豆包', 'Doubao', /doubao/i], ['夸克', 'Quark', /Quark\//], ['小红书', 'Xiaohongshu', /xhsdiscover/], ['微博', 'Weibo', /Weibo/],
+    ['知乎', 'Zhihu', /ZhihuHybrid/], ['钉钉', 'DingTalk', /DingTalk/], ['飞书', 'Lark', /Lark|Feishu/], ['百度', 'Baidu', /baiduboxapp/], ['支付宝', 'Alipay', /AlipayClient/],
+    ['LINE', 'LINE', / Line\//], ['Facebook', 'Facebook', /FBAN|FBAV|FB_IAB/], ['Instagram', 'Instagram', /Instagram/], ['Threads', 'Threads', /Barcelona/]];
+  var INAPP = (function () {
+    if (q.get('inapp') === '1') return ['微信', 'WeChat'];
+    for (var i = 0; i < INAPP_APPS.length; i++) if (INAPP_APPS[i][2].test(UA)) return INAPP_APPS[i];
+    if (/; wv\)/.test(UA)) return ['App', 'app'];
+    if (/(iPhone|iPad|iPod)/.test(UA) && /AppleWebKit/.test(UA) && !/Safari\//.test(UA) && !(root.navigator && navigator.standalone)) return ['App', 'app'];
+    return null;
+  })();
+  var TZ = ''; try { TZ = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+  var TZ_CN = q.get('tzcn') === '1' || /^(Asia\/(Shanghai|Chongqing|Chungking|Harbin|Urumqi|Kashgar)|PRC)$/.test(TZ);
+  var ZH_CN = /^zh-(cn|hans|sg)/i.test(((root.navigator && (navigator.languages || [])[0]) || (root.navigator && navigator.language) || ''));
+  var GSI_BAD = 'jp_gsi_bad', gsiSlow = false;
+  function gsiBadRecently() { var t = +ls.get(GSI_BAD) || 0; return Date.now() - t < 14 * 864e5; }
+  function emailFirst() { return EMAIL_ON && !!(INAPP || TZ_CN || gsiFailed || gsiBadRecently() || (ZH_CN && gsiSlow)); }
+  function firstWay() { return emailFirst() ? 'email' : 'google'; }
+
   function acct() { try { return JSON.parse(ls.get('jp_acct')) || {}; } catch (e) { return {}; } }
   function setAcct(a) {
     if (a) ls.set('jp_acct', JSON.stringify(a)); else { ls.del('jp_acct'); document.documentElement.classList.remove('acct-warn'); }
@@ -432,9 +463,21 @@
     box.hidden = false;
     var a = acct();
     if (!a.token) {
+      var ef = emailFirst(), ways;
+      if (!ef) ways = '<div class="acct-g"></div>' + mailHtml(false);
+      else if (INAPP) {
+        // An app's own browser: Google can't work here, so it isn't loaded; say why and how to get out.
+        var dev = LOCAL && q.get('devlogin');
+        ways = mailHtml(true) + '<details class="acct-manage acct-alt"><summary>' + t('其他登录方式', 'Other ways to sign in') + '</summary>' +
+          '<p class="acct-muted">' + (INAPP[0] === 'App' ? t('在 App 内置的浏览器里无法用 Google 登录', 'Google sign-in doesn’t work inside an app’s built-in browser') : t('在' + INAPP[0] + '里无法用 Google 登录', 'Google sign-in doesn’t work inside ' + INAPP[1] + '’s built-in browser')) +
+          t('（Google 不允许）。想用 Google 登录：点右上角「···」选「在浏览器打开」，或复制链接到浏览器打开。', ' (Google blocks it). To use Google, open this page in your browser: the ··· menu → “Open in browser”, or copy the link.') + '</p>' +
+          '<div class="acct-actions"><button type="button" class="acct-btn" data-acct="copy-link">' + t('复制链接', 'Copy link') + '</button></div>' +
+          (dev ? '<div class="acct-g"></div>' : '') + '</details>';
+      } else ways = mailHtml(true) + '<div class="acct-or"><span>' + t('或用 Google', 'or with Google') + '</span></div><div class="acct-g" style="margin-top:0"></div>';
+      box.setAttribute('data-first', ef ? 'email' : 'google');
       box.innerHTML = '<section class="acct-card"><p class="acct-title">' + t('登录', 'Sign in') + '</p>' +
         '<p class="acct-muted">' + t('在手机和电脑之间同步做题进度，不登录也能用。', 'Sync your practice progress across devices. Optional: everything works without it.') + '</p>' +
-        '<div class="acct-g"></div>' + mailHtml() + (status.kind === 'error' ? '<p class="acct-err">' + esc(status.msg) + '</p>' : '') +
+        ways + (status.kind === 'error' ? '<p class="acct-err">' + esc(status.msg) + '</p>' : '') +
         '<p class="acct-fine">' + t('只保存你的邮箱和进度。', 'Only your email address and progress are stored. ') + about() + '</p></section>' + progressHtml();
       google();
       return;
@@ -469,12 +512,13 @@
     }).join('');
   }
   // The other way in, for readers who can't reach Google: a 6-digit code by email.
-  function mailHtml() {
+  // first: the email code is the main way in (emailFirst()), so no "or" rule above it and a filled button.
+  function mailHtml(first) {
     if (!EMAIL_ON) return '';
     var m = mailState;
-    return '<div class="acct-or"><span>' + t('或', 'or') + '</span></div>' +
+    return (first ? '<p class="acct-muted" style="margin:.8rem 0 0">' + t('用邮箱验证码登录：', 'Sign in with a code sent to your email:') + '</p>' : '<div class="acct-or"><span>' + t('或', 'or') + '</span></div>') +
       '<div class="acct-field"><input type="email" data-mail="email" autocomplete="email" placeholder="' + t('邮箱地址', 'Email address') + '" aria-label="' + t('邮箱地址', 'Email address') + '" value="' + esc(m.email) + '">' +
-      '<button type="button" data-acct="mail-send"' + (m.busy ? ' disabled' : '') + '>' + (m.sent ? t('重新发送', 'Send again') : t('发送验证码', 'Send code')) + '</button></div>' +
+      '<button type="button" data-acct="mail-send"' + (first && !m.sent ? ' class="acct-primary"' : '') + (m.busy ? ' disabled' : '') + '>' + (m.sent ? t('重新发送', 'Send again') : t('发送验证码', 'Send code')) + '</button></div>' +
       (m.sent ? '<div class="acct-field"><input type="text" class="acct-code" data-mail="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="' + t('6 位验证码', '6-digit code') + '" aria-label="' + t('6 位验证码', '6-digit code') + '" value="' + esc(m.code) + '">' +
         '<button type="button" class="acct-primary" data-acct="mail-verify"' + (m.busy ? ' disabled' : '') + '>' + t('登录', 'Sign in') + '</button></div>' : '') +
       (m.msg ? '<p class="' + (m.err ? 'acct-err' : 'acct-muted') + '">' + esc(m.msg) + '</p>' : '');
@@ -486,10 +530,10 @@
     api('POST', '/auth/email/start', { email: m.email.trim(), lang: EN() ? 'en' : 'zh' }).then(function (r) {
       m.busy = false; m.sent = true; m.err = false; m.code = r.data.dev_code || '';
       m.msg = t('验证码已发到 ' + m.email.trim() + '，10 分钟内有效。没收到的话看看垃圾邮件箱。', 'Code sent to ' + m.email.trim() + ', valid for 10 minutes. Check the spam folder if it doesn’t arrive.');
-      track('account_code_sent', {});
+      track('account_code_sent', { first: firstWay() });
       render();
       var c = box && box.querySelector('[data-mail="code"]'); if (c) c.focus();
-    }).catch(function (e) { m.busy = false; m.err = true; m.msg = e.message; track('account_login_error', { status: e.status || 0, method: 'email_start' }); render(); });
+    }).catch(function (e) { m.busy = false; m.err = true; m.msg = e.message; track('account_login_error', { status: e.status || 0, method: 'email_start', first: firstWay() }); render(); });
   }
   function mailVerify() {
     var m = mailState;
@@ -497,13 +541,13 @@
     api('POST', '/auth/email/verify', { email: m.email.trim(), code: m.code }).then(function (r) {
       mailState = { email: '', code: '', sent: false, busy: false, msg: '' };
       signedIn(r, 'email');
-    }).catch(function (e) { m.busy = false; m.err = true; m.msg = e.status === 401 ? t('验证码不对或已过期。', 'That code is wrong or has expired.') : e.message; track('account_login_error', { status: e.status || 0, method: 'email' }); render(); });
+    }).catch(function (e) { m.busy = false; m.err = true; m.msg = e.status === 401 ? t('验证码不对或已过期。', 'That code is wrong or has expired.') : e.message; track('account_login_error', { status: e.status || 0, method: 'email', first: firstWay() }); render(); });
   }
   function signedIn(r, method) {
     setAcct({ token: r.data.token, email: r.data.email });
     // `from`: what sent the reader to sign in, when something said so (the notes script sets jp_login_from).
     var from = ''; try { from = sessionStorage.getItem('jp_login_from') || ''; sessionStorage.removeItem('jp_login_from'); } catch (e) {}
-    track('account_login', { method: method || 'google', local_answers: Object.keys(state().get().answers || {}).length, from: from.slice(0, 20) });
+    track('account_login', { method: method || 'google', local_answers: Object.keys(state().get().answers || {}).length, from: from.slice(0, 20), first: firstWay(), inapp: INAPP ? 1 : 0 });
     status = { kind: 'idle' };
     pull();
   }
@@ -512,6 +556,7 @@
     if (act === 'sync') pull();
     else if (act === 'mail-send') mailSend();
     else if (act === 'mail-verify') mailVerify();
+    else if (act === 'copy-link') copyLink(el);
     else if (act === 'export') exportFile();
     else if (act === 'history') {
       if (versions) { versions = null; render(); return; }
@@ -545,7 +590,7 @@
       if (box !== el) {
         box = el; el.addEventListener('click', onClick);
         el.addEventListener('change', function (e) { if (e.target.hasAttribute('data-acct-file') && e.target.files[0]) importFile(e.target.files[0]); });
-        el.addEventListener('toggle', function (e) { if (e.target.classList && e.target.classList.contains('acct-manage')) manageOpen = e.target.open; }, true);
+        el.addEventListener('toggle', function (e) { if (e.target.classList && e.target.classList.contains('acct-manage') && !e.target.classList.contains('acct-alt')) manageOpen = e.target.open; }, true);
         el.addEventListener('input', function (e) { var k = e.target.getAttribute && e.target.getAttribute('data-mail'); if (k) mailState[k] = e.target.value; });
         el.addEventListener('keydown', function (e) {
           var k = e.key === 'Enter' && e.target.getAttribute && e.target.getAttribute('data-mail');
@@ -553,7 +598,8 @@
         });
       }
       versions = null;
-      track('account_view', { signed_in: !!acct().token });
+      // first: which way in the panel offers first (signed out only); inapp: an app's own browser.
+      track('account_view', acct().token ? { signed_in: true } : { signed_in: false, first: firstWay(), inapp: INAPP ? 1 : 0 });
       render();
       if (acct().token && Date.now() - lastPull > 60000) pull();      // opening the panel checks once
     }
@@ -564,6 +610,7 @@
   var gsi = null, gsiFailed = false;
   function google() {
     var el = box.querySelector('.acct-g');
+    if (!el) return;          // an app's own browser: no Google at all (render())
     var dev = LOCAL && q.get('devlogin');
     if (dev) {    // local worker with DEV_LOGIN=1: no Google round trip, for tests
       el.innerHTML = '<button type="button" class="acct-btn acct-wide" data-dev>Dev sign-in: ' + esc(dev) + '</button>';
@@ -573,12 +620,13 @@
     if (!CLIENT_ID) return;
     // Where Google can't be reached (mainland China) the script neither loads nor
     // fails for a long time: after a few seconds say so and point at the email
-    // code below. A failure is remembered for the page — every render() comes
+    // code. A failure is remembered for the page — every render() comes
     // through here, and retrying each time flashed the notice and counted the
-    // same reader many times.
+    // same reader many times — and for 14 days in jp_gsi_bad (email first next time).
     var slow = function () {
       var target = box && box.querySelector('.acct-g');
-      if (target && !target.firstChild && !acct().token) target.innerHTML = '<p class="acct-muted">' + (EMAIL_ON ? t('Google 登录加载不出来（访问不了 Google 时用不了），请用下面的邮箱验证码登录。', 'Google sign-in isn’t loading (it needs access to Google). Use the email code below instead.') : t('Google 登录没能加载（网络访问不了 Google 时无法使用）。', 'Google sign-in didn’t load (it needs access to Google).')) + '</p>';
+      var where = box && box.getAttribute('data-first') === 'email' ? t('上面', 'above') : t('下面', 'below');
+      if (target && !target.firstChild && !acct().token) target.innerHTML = '<p class="acct-muted">' + (EMAIL_ON ? t('Google 登录加载不出来（访问不了 Google 时用不了），请用' + where + '的邮箱验证码登录。', 'Google sign-in isn’t loading (it needs access to Google). Use the email code ' + where + ' instead.') : t('Google 登录没能加载（网络访问不了 Google 时无法使用）。', 'Google sign-in didn’t load (it needs access to Google).')) + '</p>';
     };
     if (gsiFailed) { slow(); return; }
     if (!gsi) gsi = new Promise(function (ok, fail) {
@@ -586,23 +634,45 @@
       s.src = 'https://accounts.google.com/gsi/client'; s.async = true; s.onload = ok; s.onerror = function () { fail(new Error('gsi')); };
       document.head.appendChild(s);
     });
-    if (!root.google || !root.google.accounts) setTimeout(function () { if (!root.google || !root.google.accounts) slow(); }, 4000);
+    if (!root.google || !root.google.accounts) {
+      // zh-CN / zh-Hans browsers: not there after 2.5 s → the email code moves to the top.
+      if (ZH_CN && !gsiSlow) setTimeout(function () { if (!root.google || !root.google.accounts) { gsiSlow = true; relayout(); } }, 2500);
+      setTimeout(function () { if (!root.google || !root.google.accounts) slow(); }, 4000);
+    }
     gsi.then(function () {
+      ls.del(GSI_BAD);
       var target = box && box.querySelector('.acct-g');
       if (!target || acct().token) return;
       target.innerHTML = '';     // the "isn't loading" notice, if the script arrived late
       root.google.accounts.id.initialize({
         client_id: CLIENT_ID,
-        callback: function (res) { api('POST', '/auth/google', { credential: res.credential }).then(signedIn).catch(function (e) { track('account_login_error', { status: e.status || 0 }); setStatus('error', e.message); }); }
+        callback: function (res) { api('POST', '/auth/google', { credential: res.credential }).then(signedIn).catch(function (e) { track('account_login_error', { status: e.status || 0, first: firstWay() }); setStatus('error', e.message); }); }
       });
       var c = document.documentElement.classList, dark = c.contains('theme-dark') || (!c.contains('theme-light') && root.matchMedia && root.matchMedia('(prefers-color-scheme: dark)').matches);
       root.google.accounts.id.renderButton(target, { theme: dark ? 'filled_black' : 'outline', size: 'large', text: 'continue_with', shape: 'rectangular', logo_alignment: 'center',
         width: Math.max(200, Math.min(400, Math.floor(target.getBoundingClientRect().width) || 320)), locale: EN() ? 'en' : 'zh_CN' });
     }).catch(function () {
-      if (!gsiFailed) track('account_gsi_fail', {});     // Google unreachable (mainland China, blockers); once per page
+      // Google unreachable (mainland China, blockers); once per page
+      if (!gsiFailed) track('account_gsi_fail', { inapp: INAPP ? 1 : 0, tz_cn: TZ_CN ? 1 : 0, zh: ZH_CN ? 1 : 0 });
       gsiFailed = true;
+      ls.set(GSI_BAD, String(Date.now()));
+      relayout();
       slow();
     });
+  }
+  // The open panel switches to email first when that became the better way in
+  // (Google failed or is slow) — not while the reader is typing in it.
+  function relayout() {
+    if (!box || box.hidden || acct().token || box.getAttribute('data-first') === firstWay()) return;
+    var f = document.activeElement;
+    if (f && box.contains(f) && f.tagName === 'INPUT') return;
+    render();
+  }
+  function copyLink(el) {
+    var url = location.href.replace(/[?&](inapp|tzcn)=1/g, '');
+    var done = function () { el.textContent = t('已复制，粘贴到浏览器打开', 'Copied — paste it into your browser'); track('account_copy_link', { inapp: INAPP ? 1 : 0 }); };
+    try { navigator.clipboard.writeText(url).then(done, function () { root.prompt(t('复制这个链接：', 'Copy this link:'), url); }); }
+    catch (e) { root.prompt(t('复制这个链接：', 'Copy this link:'), url); }
   }
 
   // Signed in: a practice page fetches the server's copy once its scripts have
