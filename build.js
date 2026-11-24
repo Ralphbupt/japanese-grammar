@@ -4982,13 +4982,25 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
     }).join("");
     return `<section class="quiz-about quiz-samples"><h2>${L("例题（附答案和解析）", "Sample questions with answers")}</h2><p>${L("从题库里抽的几道题：点一个选项，马上看对错和解析。完整的练习在上面开始。", "A few questions from the bank: pick an option to see if it's right and why. Start the full practice above.")}</p>${items}${QS_JS(en)}</section>`;
   };
-  // schema.org Question for each sample (plain text, no furigana).
-  const quizSampleSchema = (qs, en) => qs.map((q) => {
+  // schema.org Question for each sample (plain text, no furigana), with the
+  // fields Google's Education Q&A report recommends.
+  const quizSampleSchema = (qs, en, level) => qs.map((q, n) => {
     const code = en ? "en" : "zh", text = q.ck ? sPlain(q.ck.question || "") || (en ? "Choose the right reply." : "选出合适的回应。") : sPlain(q.stem || q.q || "");
-    const ans = (i) => ({ "@type": "Answer", position: i, text: sPlain(q.options[i]) });
-    return { "@type": "Question", eduQuestionType: "Multiple choice", text: text || sPlain(q.options.join(" / ")),
-      suggestedAnswer: q.options.map((_, i) => i).filter((i) => i !== q.answer).map(ans),
-      acceptedAnswer: { ...ans(q.answer), answerExplanation: { "@type": "Comment", text: sText(q.why, code).replace(/\s+/g, " ").trim() } } };
+    const ty = QUIZ_TYPES[q.type] || {}, tyName = (en ? ty.en : ty.zh) || q.type;
+    const comment = (t) => ({ "@type": "Comment", text: String(t).replace(/\s+/g, " ").trim() });
+    const why = sText(q.why, code), right = sPlain(q.options[q.answer]);
+    const wrongWhy = (i) => (q.wrong && q.wrong[i] && sText(q.wrong[i], code)) || (en ? `Not this one: the answer is ${q.answer + 1} ${right}.` : `不对：正确答案是 ${q.answer + 1} ${right}。`);
+    const ans = (i, why) => ({ "@type": "Answer", position: i, encodingFormat: "text/html", text: sPlain(q.options[i]), comment: comment(why) });
+    return { "@type": "Question", name: `JLPT ${level} ${tyName} ${n + 1}`, eduQuestionType: "Multiple choice", encodingFormat: "text/html",
+      text: text || sPlain(q.options.join(" / ")),
+      comment: comment(`${tyName}${ty.ja ? ` · ${ty.ja}` : ""}`),
+      assesses: `${tyName}${ty.ja ? ` (${ty.ja})` : ""}`,
+      educationalAlignment: [
+        { "@type": "AlignmentObject", alignmentType: "educationalSubject", targetName: en ? "Japanese language" : "日语" },
+        { "@type": "AlignmentObject", alignmentType: "educationalLevel", educationalFramework: "JLPT", targetName: `JLPT ${level}` }],
+      typicalAgeRange: "12-",
+      suggestedAnswer: q.options.map((_, i) => i).filter((i) => i !== q.answer).map((i) => ans(i, wrongWhy(i))),
+      acceptedAnswer: { ...ans(q.answer, why), answerExplanation: comment(why) } };
   });
   // Schema: what the page is, and where it sits (Home › level › page).
   const quizSchema = (level, kind, m, url, samples) => JSON.stringify([
@@ -5002,7 +5014,7 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
   ]).replace(/</g, "\\u003c");
   const withAbout = (m, level, kind, en, bundle, url) => {
     const qs = quizSamples(kind, bundle);
-    return { ...m, about: quizSamplesHtml(qs, en, bundle) + quizAbout(level, kind, en, bundle), schema: quizSchema(level, kind, { ...m, lang: en ? "en" : "zh-Hans", home: en ? "Japanese Grammar Notes" : "日语语法笔记" }, url, quizSampleSchema(qs, en)) };
+    return { ...m, about: quizSamplesHtml(qs, en, bundle) + quizAbout(level, kind, en, bundle), schema: quizSchema(level, kind, { ...m, lang: en ? "en" : "zh-Hans", home: en ? "Japanese Grammar Notes" : "日语语法笔记" }, url, quizSampleSchema(qs, en, level)) };
   };
   for (const [level, { practice, mocks }] of Object.entries(quizBundles)) {
     const lv = level.toLowerCase();
