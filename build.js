@@ -220,6 +220,8 @@ const LANG_PREF_JS = `(function(){
 })();`;
 
 // Apply saved furigana + language prefs without toggle UI (non-settings pages).
+// Runs first thing in <body>: at the end it ran after first paint and the
+// hidden language collapsed under the reader (home CLS 0.27).
 const APP_PREFS_JS = `(function(){
   var STORE_KEY = 'jp_grammar_prefs';
   function loadPrefs() { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch(e) { return {}; } }
@@ -284,6 +286,47 @@ const PROGRESS_JS = `(function(){
 // 开始做题 takes them straight to their last level.
 const HOME_TRY_SLOT = "<!--home-try-->";
 const HOME_TRY_IDS = { N5: "n5-l08-007", N4: "n4-l31-016", N3: "n3-l58-023", N2: "n2-l59-001", N1: "n1-l83-011" };
+// Home page, first screen: "Which level?" with a button per level straight
+// into that level's daily set (A/B `pick`, launched 2026-11-25; was drawn by
+// ab.js after first paint, which moved the whole page: CLS 0.27).
+const HOME_PICK_LV = [
+  ["N5", "入门", "五十音、基础句型", "Beginner", "kana and basic sentences"],
+  ["N4", "初级", "日常会话", "Elementary", "everyday conversation"],
+  ["N3", "中级", "日常文章、生活场景", "Intermediate", "everyday texts"],
+  ["N2", "中高级", "新闻、职场", "Upper-intermediate", "news and work"],
+  ["N1", "高级", "论说文、抽象话题", "Advanced", "essays and abstract topics"],
+];
+const homePickHtml = () => {
+  const B = (zh, en) => `<span class="lang-zh">${zh}</span><span class="lang-en">${en}</span>`;
+  return `<div class="pick"><p class="pick-q">${B("你在准备哪一级？", "Which JLPT level are you studying for?")}</p><div class="pick-lvs">` +
+    HOME_PICK_LV.map((l) => `<a class="pick-lv" data-lv="${l[0]}" href="${l[0].toLowerCase()}-practice/#start=daily"><b>${l[0]}</b><span class="pick-n">${B(l[1], l[3])}</span><span class="pick-d">${B(l[2], l[4])}</span></a>`).join("") +
+    `</div><p class="pick-more">${B("点一下直接开始 10 道题，每题都有解析。还不确定？", "One tap starts 10 questions, each explained. Not sure? ")}<a href="#home-try" class="pick-try">${B("先试一道", "Try one first")}</a> · <a href="lesson01/">${B("从第 1 课学语法", "Learn from lesson 1")}</a></p></div>`;
+};
+// Runs inline right after the buttons (before first paint): marks the level
+// the reader practised last; clicks go to the /zh/ pages for Chinese readers.
+const HOME_PICK_JS = `(function(){
+  var box = document.currentScript.previousElementSibling;
+  var S = null, last = null, lt = 0;
+  try { S = JSON.parse(localStorage.getItem('jp_quiz_v1')); } catch (e) {}
+  var A = (S && S.answers) || {};
+  for (var id in A) { var a = A[id], x = a && a[a.length - 1], m = /^n([1-5])-/.exec(id); if (m && x && x.t > lt) { lt = x.t; last = 'N' + m[1]; } }
+  var b = box.querySelector('.pick-lv[data-lv="' + last + '"]');
+  if (b) { b.classList.add('pick-last'); b.insertAdjacentHTML('beforeend', '<span class="pick-tag"><span class="lang-zh">上次</span><span class="lang-en">Last time</span></span>'); }
+  box.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a');
+    if (!a) return;
+    var en = document.body.classList.contains('lang-en');
+    if (a.classList.contains('pick-lv')) {
+      var lv = a.getAttribute('data-lv');
+      try { localStorage.setItem('jp_home_lv', lv); } catch (x) {}
+      if (window.gaEvent) window.gaEvent('home_pick', { level: lv });
+      if (!en) { e.preventDefault(); location.href = '/zh/' + lv.toLowerCase() + '-practice/#start=daily'; }
+    } else if (a.classList.contains('pick-try')) {
+      var t = document.getElementById('home-try');
+      if (t && !t.hidden) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+    } else if (!en && a.getAttribute('href') === 'lesson01/') { e.preventDefault(); location.href = '/zh/lesson01/'; }
+  });
+})();`;
 const HOME_TRY_JS = `(function(){
   var box = document.getElementById('home-try'), note = document.getElementById('hero-note'), go = document.getElementById('home-start');
   if (!box) return;
@@ -3028,13 +3071,14 @@ ${SETTINGS_SCRIPT}`;
   const homeQuestionCount = (Math.floor(QUIZ_LEVELS.reduce((n, lv) => n + loadQuizLevel(lv).qs.length, 0) / 100) * 100).toLocaleString("en-US") + "+";
   // The hero shows what the site is by being it: one sentence, marked the way
   // a teacher marks a notebook (the grammar point in red, a note beside it).
-  const homeMainHtml = `<header class="home-hero">
+  const homeMainHtml = `<header class="home-hero${quizPages("N5").length ? " has-pick" : ""}">
     <div class="hero-copy">
       <h1><span class="lang-zh">jpnotes — JLPT N5 到 N1 语法讲解与题库</span><span class="lang-en">jpnotes — JLPT N5 to N1 grammar and practice</span></h1>
       <p class="home-intro">
         <span class="lang-zh">免费 · <strong>${homeQuestionCount} 道题</strong>，每题都有解析 · 听力、阅读、模拟考 · <strong>${totalLessons} 课</strong>语法讲解</span>
         <span class="lang-en">Free · <strong>${homeQuestionCount} questions</strong>, each one explained · listening, reading, mock tests · <strong>${totalLessons} grammar lessons</strong></span>
       </p>
+      ${quizPages("N5").length ? `${homePickHtml()}<script>${HOME_PICK_JS}</script>` : ""}
     </div>
     <div class="home-actions">${quizPages("N5").length ? `
         <a class="btn-primary" id="home-start" href="practice/"><span class="lang-zh">开始做题</span><span class="lang-en">Start practising</span></a>
@@ -3200,14 +3244,12 @@ ${CSS}
 </style>
 </head>
 <body class="sidebar-collapsed">
+<script>${APP_PREFS_JS}</script>
 ${sidebarMarkupHtml}
 <main id="content" class="home">
   ${homeMainHtml}
   ${siteFooterHtml}
 </main>
-<script>
-${APP_PREFS_JS}
-</script>
 ${AI_SCRIPT}
 </body>
 </html>`;
@@ -3511,6 +3553,7 @@ ${CSS}
 </style>
 </head>
 <body class="sidebar-collapsed">
+<script>${APP_PREFS_JS}</script>
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
@@ -3530,7 +3573,6 @@ ${sidebarMarkupHtml}
 </main>
 ${AI_SCRIPT}
 <script>
-${APP_PREFS_JS}
 (function(){
   // Learning-progression events: prev/next lesson + cross-link clicks.
   document.addEventListener('click', function(e) {
@@ -3889,6 +3931,7 @@ ${OVERVIEW_CSS}
 </style>
 </head>
 <body class="sidebar-collapsed">
+<script>${APP_PREFS_JS}</script>
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
@@ -3908,9 +3951,6 @@ ${sidebarMarkupHtml}
   ${tableHtml}
   ${siteFooterHtml}
 </main>
-<script>
-${APP_PREFS_JS}
-</script>
 ${AI_SCRIPT}
 </body>
 </html>`;
@@ -4011,6 +4051,7 @@ ${OVERVIEW_CSS}
 </style>
 </head>
 <body class="sidebar-collapsed">
+<script>${APP_PREFS_JS}</script>
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
@@ -4024,9 +4065,6 @@ ${sidebarMarkupHtml}
   ${table(k)}`).join("\n  ")}
   ${siteFooterHtml}
 </main>
-<script>
-${APP_PREFS_JS}
-</script>
 ${AI_SCRIPT}
 </body>
 </html>`;
@@ -4119,6 +4157,7 @@ ${OVERVIEW_CSS}
 </style>
 </head>
 <body class="sidebar-collapsed">
+<script>${APP_PREFS_JS}</script>
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
@@ -4132,9 +4171,6 @@ ${sidebarMarkupHtml}
   <div class="overview-grid">${compareGuides.map(card).join("\n")}</div>
   ${siteFooterHtml}
 </main>
-<script>
-${APP_PREFS_JS}
-</script>
 ${AI_SCRIPT}
 </body>
 </html>`;
@@ -4268,6 +4304,7 @@ ${CSS}
 </style>
 </head>
 <body class="sidebar-collapsed">
+<script>${APP_PREFS_JS}</script>
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
@@ -4276,9 +4313,6 @@ ${sidebarMarkupHtml}
   <article class="about-content">${p.html || aboutHtml}</article>
   ${siteFooterHtml}
 </main>
-<script>
-${APP_PREFS_JS}
-</script>
 ${AI_SCRIPT}
 </body>
 </html>`;
@@ -4642,6 +4676,7 @@ ${minifyCss(QUIZ_CSS)}
 </style>
 </head>
 <body class="sidebar-collapsed">
+<script>${APP_PREFS_JS}</script>
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
@@ -4652,9 +4687,6 @@ ${sidebarMarkupHtml}
   <div id="quiz-feedback"></div>
   ${siteFooterHtml}
 </main>
-<script>
-${APP_PREFS_JS}
-</script>
 ${appAttrs === null ? "" : `<script src="${SITE_PATH}quiz.js?v=${QUIZ_JS_HASH}" defer></script>`}
 ${AI_SCRIPT}
 </body>
@@ -6339,7 +6371,8 @@ Each \`/lessonNN/\` page contains:
   //     only matter on hosts without redirect rules, i.e. the mirror);
   //   - every page without its trailing slash, as a 301 like GitHub Pages gave
   //     (Cloudflare's own redirect for that is a temporary 307).
-  // _headers: nothing may be sniffed as another type, and the Anki packages
+  // _headers: nothing may be sniffed as another type or framed, HTTPS only,
+  // COOP that still lets the Google sign-in popup talk back; the Anki packages
   // (an extension Cloudflare has no type for) download as files. Caching stays
   // at Cloudflare's default, revalidating with an ETag on every request, which
   // is always fresh; long-lived caching of ?v= files is the service worker's job.
@@ -6366,7 +6399,7 @@ Each \`/lessonNN/\` page contains:
     // previews) then decode as Latin-1 — 日本語 and emoji came out as mojibake / "??".
     // Pages live at /, /x/ and /x/y/; a placeholder never matches a file with an extension.
     const HTML_UTF8 = ["/", "/:a/", "/:a/:b/"].map((p) => `${p}\n  Content-Type: text/html; charset=utf-8\n`).join("\n");
-    fs.writeFileSync(path.join(dist, "_headers"), "/*\n  X-Content-Type-Options: nosniff\n\n" + HTML_UTF8 + "\n/anki/*.apkg\n  Content-Type: application/octet-stream\n  Content-Disposition: attachment\n\n/cram/*\n  X-Robots-Tag: noindex, nofollow\n", "utf-8");
+    fs.writeFileSync(path.join(dist, "_headers"), "/*\n  X-Content-Type-Options: nosniff\n  Strict-Transport-Security: max-age=31536000; includeSubDomains\n  Cross-Origin-Opener-Policy: same-origin-allow-popups\n  X-Frame-Options: DENY\n  Content-Security-Policy: frame-ancestors 'none'\n\n" + HTML_UTF8 + "\n/anki/*.apkg\n  Content-Type: application/octet-stream\n  Content-Disposition: attachment\n\n/cram/*\n  X-Robots-Tag: noindex, nofollow\n", "utf-8");
     // AdSense: the publisher authorised to sell ads on this site (the head meta tag is the verification).
     fs.writeFileSync(path.join(dist, "ads.txt"), `google.com, ${ADSENSE_PUB.replace(/^ca-/, "")}, DIRECT, f08c47fec0942fa0\n`, "utf-8");
     console.log(`  Generated dist/_redirects (${rules.length} rules), dist/_headers, dist/ads.txt`);
@@ -7117,6 +7150,29 @@ html.theme-dark .home-try { --try-ok: #4cc98a; --try-ok-bg: rgba(76,201,138,.14)
 .home-actions .btn-secondary { border-color: var(--border); color: var(--text-strong); }
 .home-actions .btn-secondary:hover { border-color: var(--ui); }
 .home-actions .btn-quiet { padding-left: .4rem; padding-right: .4rem; color: var(--link); font-weight: 500; text-decoration: underline; text-underline-offset: 3px; }
+.has-pick.home-hero { grid-template-columns: minmax(0, 1fr); grid-template-areas: "copy" "note"; gap: 1.4rem; }
+.has-pick .home-actions { display: none; }
+.has-pick .home-try, .has-pick .hero-note { max-width: 36rem; }
+.pick { margin: 1.3rem 0 .4rem; }
+.pick-q { font-size: 1.15rem; font-weight: 700; color: var(--text-strong); margin: 0 0 .7rem; }
+.pick-lvs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .5rem; }
+.pick-lv { display: flex; flex-direction: column; align-items: flex-start; gap: .15rem; padding: .75rem .8rem .7rem; border: 1.5px solid var(--border); border-radius: 12px; background: var(--card-bg); color: var(--text); text-decoration: none; min-height: 44px; position: relative; }
+.pick-lv:hover, .pick-lv:focus-visible { border-color: var(--ui); box-shadow: 0 0 0 1px var(--ui) inset; }
+.pick-lv b { font-size: 1.35rem; line-height: 1.1; color: var(--text-strong); }
+.pick-lv .pick-n { font-size: .85rem; font-weight: 600; color: var(--text); }
+.pick-lv .pick-d { font-size: .75rem; line-height: 1.35; color: var(--text-muted); }
+.pick-lv.pick-last { border-color: var(--ui); }
+.pick-tag { position: absolute; top: .45rem; right: .5rem; font-size: .68rem; font-weight: 600; color: var(--ui); }
+.pick-more { margin: .7rem 0 0; font-size: .88rem; color: var(--text-muted); }
+.pick-more a { color: var(--link); text-underline-offset: 3px; }
+@media (max-width: 860px) {
+  .has-pick.home-hero { grid-template-areas: "copy" "note"; }
+  .pick-lvs { grid-template-columns: 1fr; }
+  .pick-lv { flex-direction: row; align-items: baseline; gap: .7rem; padding: .8rem 1rem; }
+  .pick-lv b { font-size: 1.25rem; min-width: 2.2rem; }
+  .pick-lv .pick-d { margin-left: auto; text-align: right; }
+  .pick-tag { position: static; order: 5; }
+}
 /* The sentence, on ruled paper, marked in red pen */
 .hero-note { margin: 0; padding: 1.1rem 1.5rem 1.2rem; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--card-bg); }
 .hero-ja, .hero-tr { margin: 0; background-image: linear-gradient(to bottom, transparent calc(100% - 1px), var(--border) calc(100% - 1px)); background-repeat: repeat-y; }
