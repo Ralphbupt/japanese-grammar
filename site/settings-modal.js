@@ -303,10 +303,18 @@
     return '<a class="' + cls + '" href="' + (zh ? '/zh/' : '/') + 'review/" aria-label="' + tip + '" title="' + tip + '">' + BOOK_ICON +
       '<span class="tc-words-l">' + (zh ? '复习' : 'Review') + '</span></a>';
   }
+  // 讨论区 (2026-11-26): the board where readers start threads (/discuss/).
+  var DISC_ICON = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg>';
+  function discussLink(cls) {
+    var zh = (document.documentElement.lang || '').indexOf('zh') === 0;
+    var tip = zh ? '讨论区：提问、交流' : 'Discussion: ask and talk';
+    return '<a class="' + cls + '" href="' + (zh ? '/zh/' : '/') + 'discuss/" aria-label="' + tip + '" title="' + tip + '">' + DISC_ICON +
+      '<span class="tc-words-l">' + (zh ? '讨论' : 'Forum') + '</span></a>';
+  }
   function addWordsToPhoneBar() {
     var mb = document.getElementById('m-bar'), st = mb && mb.querySelector('[data-m="settings"]');
     if (!st || mb.querySelector('.m-words')) return;
-    st.insertAdjacentHTML('beforebegin', wordsLink('m-btn m-words'));
+    st.insertAdjacentHTML('beforebegin', discussLink('m-btn m-words m-disc') + wordsLink('m-btn m-words'));
   }
   function buildTopBar() {
     addWordsToPhoneBar();
@@ -327,6 +335,7 @@
       // opens the small menu of the five themes.
       '<button type="button" class="tc-pill tc-icon js-theme-btn" aria-label="主题 / Theme" aria-haspopup="true" aria-expanded="false"></button>' +
       // 生词本 (2026-11-23): the word list's own page, with today's due count.
+      discussLink('tc-pill tc-words tc-disc') +
       wordsLink('tc-pill tc-words') +
       // Account, and with it everything set once and left alone: share.
       '<button type="button" class="tc-pill tc-icon" id="tc-acct" data-open-settings aria-label="账号与设置 / Account & settings" title="账号与设置 / Account & settings">' + USER_ICON + '</button>';

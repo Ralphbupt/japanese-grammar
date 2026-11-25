@@ -126,7 +126,7 @@ const AB_LOADER = AB_SRC ? `<script src="${AB_SRC}" defer></script>` : "";
 // it the "已掌握" buttons to hang a block under, practice pages an empty
 // <div class="jp-nt" data-nt="q:<id>"> in each explanation (site/quiz.js).
 // NOTES_SRC= (empty) builds without it; ?notes=local on a page talks to wrangler dev.
-const NOTES_SRC = process.env.NOTES_SRC !== undefined ? process.env.NOTES_SRC : "https://notes.jpnotes.dev/notes.js?v=8";
+const NOTES_SRC = process.env.NOTES_SRC !== undefined ? process.env.NOTES_SRC : "https://notes.jpnotes.dev/notes.js?v=9";
 const NOTES_ORIGIN = NOTES_SRC ? " " + new URL(NOTES_SRC).origin : "";
 const NOTES_LOADER = NOTES_SRC ? `<script src="${NOTES_SRC}" defer></script>` : "";
 // Content-Security-Policy connect-src allowlist: the browser itself refuses
@@ -3308,6 +3308,10 @@ ${SETTINGS_SCRIPT}`;
       <span class="lang-zh">总分不清 <a href="wa-vs-ga/">は和が</a>、<a href="kara-vs-node/">から和ので</a>？<a href="guides/">专题页</a>把最容易混的语法放在一起对比；12 月考试前看 <a href="jlpt-december-2026/">JLPT 考前指南</a>。</span>
       <span class="lang-en">Mixing up <a href="wa-vs-ga/">は vs が</a> or <a href="kara-vs-node/">から vs ので</a>? The <a href="guides/">guides</a> put confusable patterns side by side; sitting the December exam? See the <a href="jlpt-december-2026/">JLPT exam guide</a>.</span>
     </p>
+    ${NOTES_SRC ? `<p>
+      <span class="lang-zh">学日语、备考遇到问题？去 <a href="zh/discuss/">讨论区</a> 发帖：某句话日语怎么说、这句话自然吗、语法和 JLPT 备考，站长每条都会看。</span>
+      <span class="lang-en">Stuck on something? Ask in the <a href="discuss/">discussion board</a> — how to say something in Japanese, whether a sentence sounds natural, grammar, JLPT prep. The site owner reads every post.</span>
+    </p>` : ""}
     <p>
       <span class="lang-zh">用 Anki 复习？下载 <a href="anki/">免费 JLPT N5–N1 文法卡组</a>（共 {{ANKI_CARDS}} 张，原生 TSV 一键导入）。</span>
       <span class="lang-en">Use Anki for review? Download the <a href="anki/">free JLPT N5–N1 grammar decks</a> ({{ANKI_CARDS}} cards, native TSV one-click import).</span>
@@ -5969,17 +5973,17 @@ window.addEventListener('hashchange',function(){var m=decodeURIComponent(locatio
         .map((f) => f.replace(/\.md$/, "")).sort();
       const dMeta = {
         en: { title: "Discussion — Ask About Japanese, Share What You Learned", desc: "Public discussions on jpnotes.dev: ask how to say something in Japanese, add what you know, and read the site owner's answers.", h1: "Discussion", crumb: "Discussion",
-          lead: "Pages with a public discussion, and the newest comments across them. Ask a question or add something at the bottom of any of these pages; comments are public once approved, and the site owner reads them all." },
+          lead: "Ask anything about Japanese or studying it — start a thread below. Posts are public once approved, and the site owner reads them all. Further down: the pages with their own discussion. The Chinese side of the site has its own board." },
         zh: { title: "讨论区 - 日语问题、学习心得", desc: "jpnotes.dev 的公开讨论：问某句话日语怎么说、补充你知道的、看站长的回答。", h1: "讨论区", crumb: "讨论区",
-          lead: "开了讨论区的页面，和这些页面里最新的留言。在任何一页底部都可以提问或补充；留言审核后公开，站长每条都会看。" },
+          lead: "关于日语、关于备考，想问什么都可以在下面发帖。帖子审核后公开，站长每条都会看。再往下是开了讨论区的页面和里面的最新留言。英文版有自己单独的讨论区。" },
       };
-      const dCss = `<style>.ds-pages{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.6rem;margin:0 0 1.6rem}.ds-page{display:block;padding:.8rem 1rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--card-bg);color:var(--text);text-decoration:none}.ds-page:hover{border-color:var(--ui)}.ds-page b{display:block;color:var(--text-strong);margin-bottom:.2rem}.ds-page small{color:var(--text-muted)}.ds-feed h2{font-size:1.1rem;margin:1.2rem 0 .4rem}.ds-c{padding:.7rem 0;border-bottom:1px solid var(--border)}.ds-c .ds-where{font-size:.85rem;color:var(--text-muted)}.ds-c .ds-body{margin:.25rem 0;white-space:pre-wrap;overflow-wrap:anywhere}</style>`;
+      const dCss = `<style>.ds-pages{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.6rem;margin:0 0 1.6rem}.ds-page{display:block;padding:.8rem 1rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--card-bg);color:var(--text);text-decoration:none}.ds-page:hover{border-color:var(--ui)}.ds-page b{display:block;color:var(--text-strong);margin-bottom:.2rem}.ds-page small{color:var(--text-muted)}.ds-feed h2{font-size:1.1rem;margin:1.2rem 0 .4rem}.ds-c{padding:.7rem 0;border-bottom:1px solid var(--border)}.ds-c .ds-where{font-size:.85rem;color:var(--text-muted)}.ds-c .ds-body{margin:.25rem 0;white-space:pre-wrap;overflow-wrap:anywhere}.ds-board{margin:0 0 1.8rem}</style>`;
       for (const lang of PAGE_LANGS) {
         const en = lang.code === "en", v = langVariant("discuss", lang), m = dMeta[lang.code];
         const cards = dpages.map((id) => { const t = SEO_TITLES[id] || {}; const name = (en ? t.en : t.zh) || id; return `<a class="ds-page" href="${SITE_PATH}${id}/#discuss" data-ds="${id}"><b>${escD(name.split(/ [—-] |[:：]/)[0])}</b><small data-ds-n>${en ? "Discussion" : "讨论"}</small></a>`; }).join("");
         writeLangPage("discuss", lang, localizePage(renderQuiz(lang, {
           ...m, nav: "", ogImage: "og-image.png", noindex: true,
-          body: `${dCss}<div class="ds-pages">${cards}</div><div id="jp-discuss" class="ds-feed" data-pages="${dpages.join(",")}"><h2>${en ? "Latest comments" : "最新留言"}</h2><p class="wb-muted">${en ? "Loading…" : "加载中…"}</p></div>`,
+          body: `${dCss}<h2>${en ? "Threads" : "帖子"}</h2><div class="jp-nt jp-nt-page ds-board" id="discuss" data-nt="p:discuss"></div><div class="ds-more"><h2>${en ? "Pages with a discussion" : "开了讨论区的页面"}</h2><div class="ds-pages">${cards}</div><div id="jp-discuss" class="ds-feed" data-pages="${dpages.join(",")}"><h2>${en ? "Latest comments on pages" : "各页面的最新留言"}</h2><p class="wb-muted">${en ? "Loading…" : "加载中…"}</p></div></div>`,
           about: "",
           schema: JSON.stringify([{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: en ? "Japanese Grammar Notes" : "日语语法笔记", item: SITE }, { "@type": "ListItem", position: 2, name: m.crumb, item: v.url }] }]).replace(/</g, "\\u003c"),
         }, v, "", null), lang, localizedPageIds));
