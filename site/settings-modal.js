@@ -154,16 +154,34 @@
   // Affiliate cards (2026-11-26): aff_show once per card when half of it is on
   // screen, aff_click on its link. Cards added later (a set's result) are
   // picked up by the observer below.
+  // Two tutor programs (2026-11-26): each browser is put on one of them for
+  // good (jp_aff_p), so a reader always sees the same one; the cards are written
+  // for italki and swapped to Preply here. prog travels with aff_show / aff_click.
+  var AFF = { italki: 'https://www.italki.com/affshare?ref=af34594643', preply: 'https://preply.sjv.io/4a9XA1' };
+  var affProg = (function () {
+    var p = null; try { p = localStorage.getItem('jp_aff_p'); } catch (e) {}
+    if (!AFF[p]) { p = Math.random() < 0.5 ? 'italki' : 'preply'; try { localStorage.setItem('jp_aff_p', p); } catch (e) {} }
+    return p;
+  })();
+  window.jpAffProg = affProg;
+  function affSwap(card) {
+    if (affProg === 'italki' || card.getAttribute('data-aff-p') === affProg) return;
+    card.setAttribute('data-aff-p', affProg);
+    card.querySelectorAll('a[data-aff]').forEach(function (a) { a.href = AFF[affProg]; a.setAttribute('data-aff', affProg); });
+    var w = document.createTreeWalker(card, NodeFilter.SHOW_TEXT), n;
+    while ((n = w.nextNode())) if (n.nodeValue.indexOf('italki') >= 0) n.nodeValue = n.nodeValue.replace(/italki/g, 'Preply');
+  }
   (function () {
     var page = location.pathname, seen = typeof WeakSet === 'function' ? new WeakSet() : null;
     var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
       es.forEach(function (e) {
         if (!e.isIntersecting) return;
         io.unobserve(e.target);
-        if (window.gaEvent) window.gaEvent('aff_show', { where: e.target.getAttribute('data-aff-card'), page: page });
+        var l = e.target.querySelector('a[data-aff]');
+        if (window.gaEvent) window.gaEvent('aff_show', { where: e.target.getAttribute('data-aff-card'), prog: l ? l.getAttribute('data-aff') : '', page: page });
       });
     }, { threshold: 0.5 }) : null;
-    function scan() { if (!io) return; document.querySelectorAll('[data-aff-card]').forEach(function (c) { if (seen && seen.has(c)) return; if (seen) seen.add(c); io.observe(c); }); }
+    function scan() { document.querySelectorAll('[data-aff-card]').forEach(function (c) { affSwap(c); if (!io || (seen && seen.has(c))) return; if (seen) seen.add(c); io.observe(c); }); }
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', scan); else scan();
     if ('MutationObserver' in window) new MutationObserver(function (ms) { for (var i = 0; i < ms.length; i++) if (ms[i].addedNodes.length) { scan(); return; } }).observe(document.documentElement, { childList: true, subtree: true });
     document.addEventListener('click', function (e) {
@@ -182,14 +200,14 @@
     var KEY = 'jp_aff_side_off', zh = document.documentElement.getAttribute('data-force-lang') === 'zh' || /^\/zh\//.test(path);
     try { if ((+localStorage.getItem(KEY) || 0) > Date.now()) return; } catch (e) {}
     function t2(a, b) { return zh ? a : b; }
-    var el = null;
+    var el = null, NAME = affProg === 'preply' ? 'Preply' : 'italki';
     function build() {
       el = document.createElement('aside');
       el.className = 'aff aff-side'; el.setAttribute('data-aff-card', 'side'); el.hidden = true;
       el.innerHTML = '<button type="button" class="aff-x" aria-label="' + t2('关闭', 'Close') + '">×</button>' +
         '<p class="aff-h"><span class="aff-pr">PR</span>' + t2('找日语老师一对一练', '1-on-1 Japanese tutors') + '</p>' +
         '<p>' + t2('按价格和时间挑老师，先上一节便宜的体验课。', 'Pick by price and schedule; start with a cheap trial.') + '</p>' +
-        '<p><a class="aff-btn" href="https://www.italki.com/affshare?ref=af34594643" target="_blank" rel="sponsored noopener" data-aff="italki" data-where="side">' + t2('看看 italki →', 'Browse italki →') + '</a></p>' +
+        '<p><a class="aff-btn" href="' + AFF[affProg] + '" target="_blank" rel="sponsored noopener" data-aff="' + affProg + '" data-where="side">' + t2('看看 ' + NAME + ' →', 'Browse ' + NAME + ' →') + '</a></p>' +
         '<p class="aff-note">' + t2('广告：经此链接购课本站得佣金，价格不变。', 'Ad: jpnotes earns a commission; your price is the same.') + '</p>';
       el.querySelector('.aff-x').addEventListener('click', function () {
         try { localStorage.setItem(KEY, String(Date.now() + 7 * 86400e3)); } catch (e) {}
@@ -208,7 +226,7 @@
       var gutter = window.innerWidth - c.getBoundingClientRect().right, w = Math.min(210, gutter - 18);
       el.hidden = w < 128 || document.body.classList.contains('ai-open');
       if (!el.hidden) { el.style.width = w + 'px'; el.style.right = Math.max(8, Math.round((gutter - w) / 2)) + 'px'; var nar = w < 180; el.classList.toggle('aff-narrow', nar);
-        el.querySelector('.aff-btn').textContent = nar ? 'italki →' : t2('看看 italki →', 'Browse italki →');
+        el.querySelector('.aff-btn').textContent = nar ? NAME + ' →' : t2('看看 ' + NAME + ' →', 'Browse ' + NAME + ' →');
         el.querySelector('.aff-note').textContent = nar ? t2('广告 · 本站得佣金', 'Ad · we earn a commission') : t2('广告：经此链接购课本站得佣金，价格不变。', 'Ad: jpnotes earns a commission; your price is the same.'); }
     }
     function start() {
