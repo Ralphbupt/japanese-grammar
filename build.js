@@ -6724,7 +6724,9 @@ const CSS = minifyCss(`
 .aff-narrow .aff-pr { font-size: .66rem; }
 .aff-narrow .aff-btn { display: block; text-align: center; padding: .3rem .3rem; border-radius: 8px; white-space: nowrap; font-size: .76rem; }
 .aff-narrow .aff-pr { display: table; margin: 0 0 .25rem; }
-.aff-x { position: absolute; top: 4px; right: 6px; border: 0; background: none; color: var(--text-muted); font-size: 1rem; line-height: 1; cursor: pointer; padding: 4px; }
+.aff-x { position: absolute; top: -11px; right: -11px; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border); border-radius: 50%; background: var(--bg); color: var(--text-muted); font-size: 1.05rem; line-height: 1; cursor: pointer; padding: 0; box-shadow: 0 1px 4px rgba(0,0,0,.12); }
+.aff-x::before { content: ''; position: absolute; inset: -9px; }
+.aff-x:hover, .aff-x:focus-visible { color: var(--text); border-color: var(--ui); }
 @media (max-width: 600px) { .aff:not(.aff-side) p:not(.aff-h):not(.aff-note):not(:has(.aff-btn)) { display: none; } }
 .aff { margin: 1.4rem 0 .6rem; padding: .9rem 1.1rem; border: 1px dashed var(--border); border-radius: 12px; background: var(--card-bg, transparent); font-size: .94rem; }
 .aff p { margin: .35rem 0; }

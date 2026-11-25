@@ -234,10 +234,10 @@
       if (!main || !c) { el.hidden = true; return; }
       // The card takes the gutter's width less a margin (at most 210 px); under
       // 180 px it drops its sentence, under 128 px it doesn't show at all.
-      var gutter = window.innerWidth - c.getBoundingClientRect().right, w = Math.min(210, gutter - 18);
+      var gutter = window.innerWidth - c.getBoundingClientRect().right, w = Math.min(210, gutter - 26);
       // Not twice on one screen: hidden while an in-page card (lesson end, result) is in view.
       el.hidden = w < 128 || inlineOn || document.body.classList.contains('ai-open');
-      if (!el.hidden) { el.style.width = w + 'px'; el.style.right = Math.max(8, Math.round((gutter - w) / 2)) + 'px'; var nar = w < 180; el.classList.toggle('aff-narrow', nar);
+      if (!el.hidden) { el.style.width = w + 'px'; el.style.right = Math.max(16, Math.round((gutter - w) / 2)) + 'px'; var nar = w < 180; el.classList.toggle('aff-narrow', nar);
         el.querySelector('.aff-h').lastChild.nodeValue = nar ? t2('一对一日语老师', '1-on-1 tutors') : t2('找日语老师一对一练', '1-on-1 Japanese tutors');
         el.querySelector('.aff-btn').textContent = nar ? NAME + ' →' : t2('看看 ' + NAME + ' →', 'Browse ' + NAME + ' →');
         el.querySelector('.aff-note').textContent = nar ? t2('广告 · 本站得佣金', 'Ad · we earn a commission') : t2('广告：经此链接购课本站得佣金，价格不变。', 'Ad: jpnotes earns a commission; your price is the same.'); }
