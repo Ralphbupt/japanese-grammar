@@ -873,6 +873,96 @@ if ('serviceWorker' in navigator) window.addEventListener('load', function() {
 });
 </script>`;
 
+// Add-to-home-screen card (2026-11-26): on a reader's second visit (a new
+// visit = 30+ minutes since the last page), a small card offers to put jpnotes
+// on the home screen — the browser's own install dialog where Chromium offers
+// one (beforeinstallprompt), steps for iPhone Safari, a bookmark shortcut on
+// other desktops. 以后再说 hides it for 7 days; an install hides it for good.
+// Not in app browsers (they can't), not when already installed, not in mock
+// tests. GA: a2hs_show / a2hs_click / a2hs_later / a2hs_prompt / a2hs_installed.
+const A2HS_JS = `<script>
+(function() {
+  var KEY = 'jp_a2hs', now = Date.now(), st;
+  function load() { try { return JSON.parse(localStorage.getItem(KEY)) || null; } catch (e) { return null; } }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} }
+  function ev(n, p) { try { if (window.gaEvent) window.gaEvent(n, p || {}); } catch (e) {} }
+  var deferred = null;
+  window.addEventListener('beforeinstallprompt', function(e) { e.preventDefault(); deferred = e; });
+  window.addEventListener('appinstalled', function() { st = load() || {}; st.done = 1; save(); ev('a2hs_installed'); var c = document.getElementById('a2hs'); if (c) c.remove(); });
+  st = load();
+  if (!st) {
+    // Readers from before this card: the GA client id holds their first visit's time.
+    var cid = null; try { cid = localStorage.getItem('jp_ga_cid'); } catch (e) {}
+    var t0 = cid ? +cid.split('.')[1] * 1000 : 0;
+    st = { n: t0 && now - t0 > 1800e3 ? 1 : 0, last: 0 };
+  }
+  if (now - (st.last || 0) > 1800e3) st.n = (st.n || 0) + 1;
+  st.last = now; save();
+  var standalone = (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone;
+  var ua = navigator.userAgent || '';
+  if (st.done || standalone || st.n < 2 || (st.snooze || 0) > now) return;
+  if (/MicroMessenger|QQ\\/|Weibo|aweme|Bytedance|NewsArticle|Quark|UCBrowser|baiduboxapp|xhsdiscover|DingTalk|Lark|Feishu| Line\\/|FBAN|FBAV|Instagram|KAKAOTALK|GSA\\//i.test(ua)) return;
+  if (/mock|cram/.test(location.pathname)) return;
+  try { if (sessionStorage.getItem('jp_a2hs_shown')) return; } catch (e) {}
+  var zh = /^\\/zh(\\/|$)/.test(location.pathname) || (document.documentElement.lang || '').indexOf('zh') === 0;
+  var ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  var mobile = ios || /Android|Mobile/.test(ua), mac = /Mac/.test(ua);
+  function show() {
+    if (document.getElementById('a2hs')) return;
+    var how = deferred ? 'prompt' : ios ? (/CriOS|FxiOS|EdgiOS/.test(ua) ? 'ios_other' : 'ios') : mobile ? 'android' : 'bookmark';
+    if (how === 'ios_other') return;   // only Safari adds to the iPhone home screen
+    var T = zh ? {
+      title: how === 'bookmark' ? '把 jpnotes 加到书签，下次一键打开' : '把 jpnotes 放到主屏幕，下次一键打开',
+      btn: '添加到主屏幕',
+      ios: '点浏览器的「分享」按钮，再选「添加到主屏幕」',
+      android: '点浏览器右上角的菜单 ⋮，选「添加到主屏幕」或「安装应用」',
+      bookmark: '按 ' + (mac ? '⌘D' : 'Ctrl+D') + ' 把本站加到书签',
+      later: '以后再说'
+    } : {
+      title: how === 'bookmark' ? 'Bookmark jpnotes — one click next time' : 'Put jpnotes on your home screen — one tap next time',
+      btn: 'Add to Home Screen',
+      ios: 'Tap the browser\\u2019s Share button, then \\u201cAdd to Home Screen\\u201d',
+      android: 'Open the browser menu ⋮ and choose \\u201cAdd to Home screen\\u201d or \\u201cInstall app\\u201d',
+      bookmark: 'Press ' + (mac ? '⌘D' : 'Ctrl+D') + ' to bookmark this site',
+      later: 'Later'
+    };
+    var c = document.createElement('div');
+    c.id = 'a2hs'; c.setAttribute('role', 'dialog'); c.setAttribute('aria-label', T.title);
+    c.innerHTML = '<img src="/favicon-192.png" alt="" width="40" height="40"><div class="a2hs-body"><b>' + T.title + '</b>' +
+      (how === 'prompt' ? '' : '<p>' + T[how] + '</p>') +
+      '<div class="a2hs-acts">' + (how === 'prompt' ? '<button type="button" class="a2hs-go">' + T.btn + '</button>' : '') +
+      '<button type="button" class="a2hs-later">' + T.later + '</button></div></div>';
+    document.body.appendChild(c);
+    try { sessionStorage.setItem('jp_a2hs_shown', '1'); } catch (e) {}
+    ev('a2hs_show', { how: how, n: st.n });
+    var go = c.querySelector('.a2hs-go');
+    if (go) go.addEventListener('click', function() {
+      ev('a2hs_click', { how: how });
+      var d = deferred; deferred = null; c.remove();
+      if (!d) return;
+      d.prompt();
+      d.userChoice.then(function(r) { ev('a2hs_prompt', { outcome: r && r.outcome }); if (r && r.outcome === 'dismissed') { st.snooze = Date.now() + 7 * 864e5; save(); } }).catch(function() {});
+    });
+    c.querySelector('.a2hs-later').addEventListener('click', function() {
+      ev('a2hs_later', { how: how }); st.snooze = Date.now() + 7 * 864e5; save(); c.remove();
+    });
+  }
+  // A few seconds in, so it never covers the page as it opens (and Chromium has
+  // had time to offer beforeinstallprompt).
+  window.addEventListener('load', function() { setTimeout(show, 5000); });
+})();
+</script>
+<style>
+#a2hs { position: fixed; z-index: 900; left: 50%; transform: translateX(-50%); bottom: calc(16px + env(safe-area-inset-bottom)); width: min(420px, calc(100vw - 32px)); box-sizing: border-box; display: flex; gap: 12px; align-items: flex-start; padding: 14px 16px; background: var(--card-bg, #fff); color: var(--text, #222); border: 1px solid var(--border, #ddd); border-radius: 14px; box-shadow: 0 8px 28px rgba(0,0,0,.18); font-size: .95rem; line-height: 1.5; }
+#a2hs img { border-radius: 9px; flex: none; }
+#a2hs b { color: var(--text-strong, inherit); display: block; }
+#a2hs p { margin: 4px 0 0; color: var(--text-muted, #555); font-size: .9rem; }
+#a2hs .a2hs-acts { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+#a2hs button { font: inherit; font-size: .9rem; border-radius: 8px; padding: 6px 12px; min-height: 36px; cursor: pointer; border: 1px solid var(--border, #ddd); background: transparent; color: var(--text-muted, #555); }
+#a2hs .a2hs-go { background: var(--ui, #2463d6); color: var(--ui-on, #fff); border-color: transparent; }
+@media print { #a2hs { display: none; } }
+</style>`;
+
 const SPECULATION_RULES = `<script type="speculationrules">
 {"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/*.*"}}]},"eagerness":"moderate"}],
  "prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/*.*"}}]},"eagerness":"conservative"}]}
@@ -3243,8 +3333,8 @@ ${SETTINGS_SCRIPT}`;
 <link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
 <link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
+<link rel="manifest" href="${SITE_PATH}manifest.json">
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
-<link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#14141e" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -3257,6 +3347,7 @@ ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 ${SPECULATION_RULES}
 ${SW_REGISTER}
+${A2HS_JS}
 <style>
 ${CSS}
 </style>
@@ -3536,12 +3627,14 @@ ${AI_SCRIPT}
 <link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
 <link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
+<link rel="manifest" href="${SITE_PATH}manifest.json">
 ${CSP_META}
 ${CLONE_GUARD}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 ${SPECULATION_RULES}
 ${SW_REGISTER}
+${A2HS_JS}
 <style>
 ${CSS}
 /* Hide chrome that requires JS (menu toggle, settings overlay) but
@@ -3937,12 +4030,14 @@ ${AI_SCRIPT}
 <link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
 <link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
+<link rel="manifest" href="${SITE_PATH}manifest.json">
 ${CSP_META}
 ${CLONE_GUARD}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 ${SPECULATION_RULES}
 ${SW_REGISTER}
+${A2HS_JS}
 <style>
 ${CSS}
 ${OVERVIEW_CSS}
@@ -4050,12 +4145,14 @@ ${AI_SCRIPT}
 <link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
 <link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
+<link rel="manifest" href="${SITE_PATH}manifest.json">
 ${CSP_META}
 ${CLONE_GUARD}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 ${SPECULATION_RULES}
 ${SW_REGISTER}
+${A2HS_JS}
 <style>
 ${CSS}
 ${OVERVIEW_CSS}
@@ -4162,12 +4259,14 @@ ${AI_SCRIPT}
 <link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
 <link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
+<link rel="manifest" href="${SITE_PATH}manifest.json">
 ${CSP_META}
 ${CLONE_GUARD}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 ${SPECULATION_RULES}
 ${SW_REGISTER}
+${A2HS_JS}
 <style>
 ${CSS}
 ${OVERVIEW_CSS}
@@ -4296,12 +4395,14 @@ ${AI_SCRIPT}
 <link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
 <link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
+<link rel="manifest" href="${SITE_PATH}manifest.json">
 ${CSP_META}
 ${CLONE_GUARD}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 ${SPECULATION_RULES}
 ${SW_REGISTER}
+${A2HS_JS}
 <style>
 ${CSS}
 /* Keep sidebar (pure-CSS hover); hide other JS-dependent chrome. */
@@ -4622,13 +4723,15 @@ document.addEventListener('DOMContentLoaded',function(){set(on,false)});if(docum
 <link rel="icon" href="${SITE_PATH}favicon.ico" sizes="32x32">
 <link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
 <link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
-<link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">${preload ? `\n<link rel="preload" href="${preload}" as="fetch" crossorigin>` : ""}
+<link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
+<link rel="manifest" href="${SITE_PATH}manifest.json">${preload ? `\n<link rel="preload" href="${preload}" as="fetch" crossorigin>` : ""}
 ${CSP_META}
 ${CLONE_GUARD}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 ${SPECULATION_RULES}
 ${SW_REGISTER}
+${A2HS_JS}
 <style>
 ${CSS}
 /* Same column as the lessons, so the site doesn't narrow when you start practising. */
@@ -6227,8 +6330,10 @@ Each \`/lessonNN/\` page contains:
     display: "standalone",
     background_color: "#fafaf8",
     theme_color: "#1a1a2e",
+    id: SITE_PATH,
     icons: [
-      { src: `${SITE_PATH}favicon-192.png`, sizes: "192x192", type: "image/png" }
+      { src: `${SITE_PATH}favicon-192.png`, sizes: "192x192", type: "image/png" },
+      { src: `${SITE_PATH}favicon-512.png`, sizes: "512x512", type: "image/png" }
     ]
   }, null, 2), "utf-8");
 
