@@ -173,7 +173,10 @@ const THEME_INIT_SCRIPT = `<script>
       h.className += ' ' + x.cls;
       if (x.css) { var st = document.createElement('style'); st.id = 'ab-early'; st.textContent = x.css; document.head.appendChild(st); }
       if (x.wait) { h.classList.add('ab-pending'); setTimeout(function() { h.classList.remove('ab-pending'); }, 1500); }
-    }
+    }${AB_SRC ? `
+    // First visit: nothing stored yet, but the launched sidebar is rebuilt by
+    // ab.js all the same; hide it until then so it doesn't jump.
+    else { h.classList.add('ab-pending'); setTimeout(function() { h.classList.remove('ab-pending'); }, 1500); }` : ""}
   } catch (e) {}
 })();
 </script>`;
@@ -6467,6 +6470,7 @@ ${p} blockquote { background: rgba(233, 69, 96, 0.08); }
 `;
 }
 const CSS = minifyCss(`
+html.ab-pending #sidebar .nav-scroll { visibility: hidden; }
 :root {
   /* Safe areas (viewport-fit=cover): notch, home indicator, rounded corners —
      0 everywhere else. Fixed and sticky things edge-to-edge add these. */

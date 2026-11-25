@@ -121,7 +121,7 @@
     window.scrollTo(0, app.offsetTop - gap);
   }
   function loadFail() { app.innerHTML = '<p class="q-muted">' + t('题目载入失败，刷新再试一次。', 'Couldn’t load the questions — try reloading.') + '</p>'; }
-  app.innerHTML = '<p class="q-muted">' + t('载入题目…', 'Loading questions…') + '</p>';
+  app.innerHTML = '<p class="q-muted q-loading">' + t('载入题目…', 'Loading questions…') + '</p>';
   // Runs at the end of this file, once every mode's state is set up.
   function boot() {
     if (MOCK) return mockList();

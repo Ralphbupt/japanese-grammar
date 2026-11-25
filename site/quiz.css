@@ -5,6 +5,11 @@
   :root:not(.theme-light) #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --q-bad: #ff6b81; --q-bad-bg: rgba(255,107,129,.12); }
 }
 html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --q-bad: #ff6b81; --q-bad-bg: rgba(255,107,129,.12); }
+/* Room for the app until quiz.js has drawn it, so the text below doesn't
+ * jump (practice CLS 0.49); about the height of the cards when drawn. */
+#quiz-app:empty, #quiz-app:has(> .q-loading) { min-height: 100vh; }
+#quiz-app[data-mode="cards"]:empty, #quiz-app[data-mode="cards"]:has(> .q-loading) { min-height: 20rem; }
+@media (max-width: 768px) { #quiz-app[data-mode="cards"]:empty, #quiz-app[data-mode="cards"]:has(> .q-loading) { min-height: 26rem; } }
 
 #quiz-app { margin: 1.5rem 0 2rem; }
 #quiz-app h2 { font-size: var(--text-lg); margin: 0 0 .6rem; border: 0; padding: 0; }
