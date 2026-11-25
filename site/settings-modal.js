@@ -171,6 +171,55 @@
       if (a && window.gaEvent) window.gaEvent('aff_click', { prog: a.getAttribute('data-aff'), where: a.getAttribute('data-where') || '', page: page });
     }, true);
   })();
+  // Side card (2026-11-26, owner: "大量的空白区域，放一个小窗口；手机要克制"):
+  // on wide desktops a small italki card sits in the empty gutter right of the
+  // text, below the top bar — only while that gutter has room (card 128–210 px)
+  // (never on phones), hidden while the AI panel is open, × hides it for 7 days.
+  // Lessons, guides and the practice pages only. GA where=side.
+  (function () {
+    var path = location.pathname;
+    if (/\/(my-notes|my-grammar|words|review|discuss|cram)\//.test(path)) return;
+    var KEY = 'jp_aff_side_off', zh = document.documentElement.getAttribute('data-force-lang') === 'zh' || /^\/zh\//.test(path);
+    try { if ((+localStorage.getItem(KEY) || 0) > Date.now()) return; } catch (e) {}
+    function t2(a, b) { return zh ? a : b; }
+    var el = null;
+    function build() {
+      el = document.createElement('aside');
+      el.className = 'aff aff-side'; el.setAttribute('data-aff-card', 'side'); el.hidden = true;
+      el.innerHTML = '<button type="button" class="aff-x" aria-label="' + t2('关闭', 'Close') + '">×</button>' +
+        '<p class="aff-h"><span class="aff-pr">PR</span>' + t2('找日语老师一对一练', '1-on-1 Japanese tutors') + '</p>' +
+        '<p>' + t2('按价格和时间挑老师，先上一节便宜的体验课。', 'Pick by price and schedule; start with a cheap trial.') + '</p>' +
+        '<p><a class="aff-btn" href="https://www.italki.com/affshare?ref=af34594643" target="_blank" rel="sponsored noopener" data-aff="italki" data-where="side">' + t2('看看 italki →', 'Browse italki →') + '</a></p>' +
+        '<p class="aff-note">' + t2('广告：经此链接购课本站得佣金，价格不变。', 'Ad: jpnotes earns a commission; your price is the same.') + '</p>';
+      el.querySelector('.aff-x').addEventListener('click', function () {
+        try { localStorage.setItem(KEY, String(Date.now() + 7 * 86400e3)); } catch (e) {}
+        el.remove(); el = null;
+        if (window.gaEvent) window.gaEvent('aff_close', { where: 'side', page: path });
+      });
+      document.body.appendChild(el);
+    }
+    function place() {
+      if (!el) return;
+      var main = document.querySelector('article.lesson, #quiz-app');
+      var c = document.getElementById('content');
+      if (!main || !c) { el.hidden = true; return; }
+      // The card takes the gutter's width less a margin (at most 210 px); under
+      // 180 px it drops its sentence, under 128 px it doesn't show at all.
+      var gutter = window.innerWidth - c.getBoundingClientRect().right, w = Math.min(210, gutter - 18);
+      el.hidden = w < 128 || document.body.classList.contains('ai-open');
+      if (!el.hidden) { el.style.width = w + 'px'; el.style.right = Math.max(8, Math.round((gutter - w) / 2)) + 'px'; var nar = w < 180; el.classList.toggle('aff-narrow', nar);
+        el.querySelector('.aff-btn').textContent = nar ? 'italki →' : t2('看看 italki →', 'Browse italki →');
+        el.querySelector('.aff-note').textContent = nar ? t2('广告 · 本站得佣金', 'Ad · we earn a commission') : t2('广告：经此链接购课本站得佣金，价格不变。', 'Ad: jpnotes earns a commission; your price is the same.'); }
+    }
+    function start() {
+      if (!document.querySelector('article.lesson, #quiz-app')) return;
+      build(); place();
+      window.addEventListener('resize', place);
+      // The sidebar opening / closing and the AI panel change the room.
+      if ('MutationObserver' in window) new MutationObserver(place).observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+  })();
   function wireControls(root) {
     root.querySelectorAll('.js-theme-btn').forEach(function (b) {
       b.addEventListener('click', function (e) { e.stopPropagation(); toggleThemeMenu(b); });
