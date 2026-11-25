@@ -3772,7 +3772,7 @@ ${sidebarMarkupHtml}
     ${prevHtml}
     ${nextHtml}
   </nav>
-  ${affLessonCard()}${commentBox(lesson.id, "lesson", /class="jp-nt jp-nt-page"/.test(lesson.html))}<div id="quiz-feedback" data-fb="lesson"></div>
+  ${commentBox(lesson.id, "lesson", /class="jp-nt jp-nt-page"/.test(lesson.html))}<div id="quiz-feedback" data-fb="lesson"></div>${affLessonCard()}
   ${siteFooterHtml}
 </main>
 ${AI_SCRIPT}
