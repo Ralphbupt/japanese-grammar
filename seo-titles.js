@@ -476,6 +476,20 @@ module.exports = {
     descZh: "日语 N1 语法高频考点整理：最常考的 40 个语法点（接续、意思、例句），最容易混的几组辨析，考试技巧，最后 10 道自测题带答案。",
     level: "N1",
   },
+  "i-love-you-in-japanese": {
+    en: "How to Say I Love You in Japanese — Suki, Daisuki, Aishiteru (with Audio)",
+    zh: "日语我爱你怎么说 — 好き、大好き、愛してる的区别和发音",
+    desc: "How to say I love you in Japanese: suki (好き), daisuki (大好き) and aishiteru (愛してる) — how strong each is and when to use it, how to confess and answer, the 'moon is beautiful' story, with audio.",
+    descZh: "日语的\"我爱你\"：好き、大好き、愛してる 分量有多重、什么场合用，怎么告白、怎么回答，「月が綺麗ですね」的来历，每句都有发音。",
+    level: "N5",
+  },
+  "japanese-alphabet": {
+    en: "Japanese Alphabet: Hiragana & Katakana Charts with Romaji and Audio",
+    zh: "日语字母表：平假名、片假名、汉字 — 五十音图带罗马音和发音",
+    desc: "The Japanese alphabet explained: hiragana and katakana charts with romaji and audio for every row, dakuten and combined sounds, how kanji fit in, the rules for small っ, long vowels and は / へ / を, and how to learn kana in two weeks.",
+    descZh: "日语的\"字母\"一页看懂：平假名、片假名五十音图（带罗马音，每行可点发音跟读）、浊音和拗音、汉字怎么用、促音长音和助词は・へ・を的读法，以及两周记住假名的方法。",
+    level: "N5",
+  },
   "jlpt": {
     en: "JLPT (Japanese-Language Proficiency Test) — N5–N1 Levels, Test Format, Pass Marks, Dates",
     zh: "JLPT 日本语能力考试是什么 — N5–N1 级别、题型、合格线、报名和出成绩时间",

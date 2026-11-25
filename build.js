@@ -1018,6 +1018,8 @@ const JA_TITLES = {
   "jlpt-listening-tips": "JLPT 聴解のコツ",
   "jlpt-past-papers": "JLPT 過去問・公式問題集",
   "jlpt": "JLPT とは（レベル・試験・申込）",
+  "japanese-alphabet": "ひらがな・カタカナ・漢字",
+  "i-love-you-in-japanese": "好き・大好き・愛してる",
   "jlpt-reading-tips": "JLPT 読解のコツ",
   "jlpt-vocabulary-grammar-tips": "JLPT 文字・語彙・文法のコツ",
   "jlpt-n5-key-grammar": "N5 高频考点",

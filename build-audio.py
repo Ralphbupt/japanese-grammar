@@ -81,6 +81,15 @@ TTS_READINGS = [
     (r"お義父さん", "おとうさん"),                             # Gemini: おぎふさん (listening N1)
     (r"お義母さん", "おかあさん"),
     (r"材料費", "ざいりょうひ"),                               # Gemini: ざいりょうし (listening N2)
+    # Kana rows on /japanese-alphabet/ (2026-11-26, Whisper ×2): a lone は / へ is
+    # read as the particle (wa / e), so that row is spoken in katakana; ら・だ・わ
+    # and しゃ rows run together with 、 (ろ → "ズロ", ど → "インド") and are split with 。
+    (r"^は、ひ、ふ、へ、ほ。$", "ハ、ヒ、フ、ヘ、ホ。"),
+    (r"^ら、り、る、れ、ろ。$", "ら。り。る。れ。ろ。"),
+    (r"^だ、で、ど。$", "だ。で。ど。"),
+    (r"^わ、を、ん。$", "わ。を。ん。"),
+    (r"^しゃ、しゅ、しょ。$", "しゃ。しゅ。しょ。"),
+    (r"好いとう", "すいとう"),                                 # Hakata 好いとうよ: not いいとう
 ]
 
 
