@@ -2937,7 +2937,8 @@ async function main() {
   const ICON_SIDEBAR = loadIcon("sidebar.svg");
   const ICON_SEARCH = loadIcon("search.svg");
   const ICON_SHARE = loadIcon("share.svg");
-  const ICON_CHAT = loadIcon("chat.svg");
+  // Ask AI: sparkles, not a speech bubble — the bubble read as the discussion board (2026-11-26).
+  const ICON_CHAT = loadIcon("sparkles.svg");
   const ICON_SETTINGS = loadIcon("settings.svg");
   const ICON_USER = loadIcon("user.svg");
 

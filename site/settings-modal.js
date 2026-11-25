@@ -326,14 +326,12 @@
     bar.id = 'top-controls';
     bar.innerHTML =
       (hasSearch ? '<button type="button" class="tc-pill tc-icon" data-proxy="search-btn" aria-label="搜索 / Search" title="搜索 / Search ( / )">' + hasSearch.innerHTML + '</button>' : '') +
+      // Theme (3 readers a day) left the bar on 2026-11-26; it is in the settings dialog.
       (hasAi ? '<button type="button" class="tc-pill tc-icon" id="tc-ai" data-proxy="ai-btn" aria-label="问 AI / Ask AI" title="问 AI / Ask AI">' + document.getElementById('ai-btn').innerHTML + '</button>' : '') +
       // Furigana sits out here (2026-11-12): it is the one setting a reader flips
       // while working — on to read a lesson, off to test themselves on a question.
       '<button type="button" class="tc-pill tc-ruby js-ruby-btn" aria-label="汉字注音 / Furigana" title="汉字注音 / Furigana" lang="ja">ふりがな</button>' +
       '<button type="button" class="tc-pill tc-lang js-lang-btn">EN</button>' +
-      // Theme (2026-11-16): out of the dialog, where 2% of readers ever found it;
-      // opens the small menu of the five themes.
-      '<button type="button" class="tc-pill tc-icon js-theme-btn" aria-label="主题 / Theme" aria-haspopup="true" aria-expanded="false"></button>' +
       // 生词本 (2026-11-23): the word list's own page, with today's due count.
       discussLink('tc-pill tc-words tc-disc') +
       wordsLink('tc-pill tc-words') +
