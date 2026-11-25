@@ -75,11 +75,13 @@ Take a [mock test](/mock-test/): the real test's item types and timing, with a s
 ## 相关页面||Related Pages
 
 :::zh
+- [JLPT 是什么：级别、题型、报名和成绩](/jlpt/)
 - [12 月 JLPT 考前指南](/jlpt-december-2026/)：考试时长、合格线、考试当天清单
 - [JLPT 模拟题](/mock-test/)・[听力练习](/listening/)
 - 做题技巧：[文字词汇与语法](/jlpt-vocabulary-grammar-tips/)・[阅读](/jlpt-reading-tips/)・[听力](/jlpt-listening-tips/)
 :::
 :::en
+- [What is the JLPT: levels, format, registration and results](/jlpt/)
 - [December JLPT guide](/jlpt-december-2026/): timing, pass marks, exam-day checklist
 - [JLPT mock tests](/mock-test/) · [listening practice](/listening/)
 - Tips: [vocabulary & grammar](/jlpt-vocabulary-grammar-tips/) · [reading](/jlpt-reading-tips/) · [listening](/jlpt-listening-tips/)

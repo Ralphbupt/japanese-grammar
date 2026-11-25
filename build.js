@@ -1017,6 +1017,7 @@ const JA_TITLES = {
   "jlpt-n5-past-exam-grammar": "N5 過去問の文法",
   "jlpt-listening-tips": "JLPT 聴解のコツ",
   "jlpt-past-papers": "JLPT 過去問・公式問題集",
+  "jlpt": "JLPT とは（レベル・試験・申込）",
   "jlpt-reading-tips": "JLPT 読解のコツ",
   "jlpt-vocabulary-grammar-tips": "JLPT 文字・語彙・文法のコツ",
   "jlpt-n5-key-grammar": "N5 高频考点",
@@ -1277,7 +1278,7 @@ function discoverFiles() {
       .filter((f) => f.endsWith(".md"))
       // Plain code-unit order (lessons, then N*_grammar_list), except that
       // exam guides (jlpt-*) lead the guides group.
-      .sort((a, b) => (/^jlpt-/.test(b) - /^jlpt-/.test(a)) || (a < b ? -1 : a > b ? 1 : 0));
+      .sort((a, b) => ((b === 'jlpt.md') - (a === 'jlpt.md')) || (/^jlpt-/.test(b) - /^jlpt-/.test(a)) || (a < b ? -1 : a > b ? 1 : 0));   // the JLPT hub, then the other JLPT guides
     if (files.length === 0) continue;
     groups.push({
       label,
@@ -4246,8 +4247,8 @@ ${AI_SCRIPT}
         <p class="guide-card-desc"><span class="lang-zh">${esc(seo.descZh)}</span><span class="lang-en">${esc(seo.desc)}</span></p>
       </a>`;
     };
-    const examGuides = guidePages.filter(l => /^jlpt-/.test(l.id));
-    const compareGuides = guidePages.filter(l => !/^jlpt-/.test(l.id));
+    const examGuides = guidePages.filter(l => /^jlpt(-|$)/.test(l.id));
+    const compareGuides = guidePages.filter(l => !/^jlpt(-|$)/.test(l.id));
     const guidesMeta = {
       en: {
         title: "Confusing Japanese Grammar Pairs Explained (は vs が, に vs で …) & JLPT Exam Guide",

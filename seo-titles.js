@@ -476,9 +476,16 @@ module.exports = {
     descZh: "日语 N1 语法高频考点整理：最常考的 40 个语法点（接续、意思、例句），最容易混的几组辨析，考试技巧，最后 10 道自测题带答案。",
     level: "N1",
   },
+  "jlpt": {
+    en: "JLPT (Japanese-Language Proficiency Test) — N5–N1 Levels, Test Format, Pass Marks, Dates",
+    zh: "JLPT 日本语能力考试是什么 — N5–N1 级别、题型、合格线、报名和出成绩时间",
+    desc: "The JLPT explained: what N5, N4, N3, N2 and N1 mean, what's on the test and how long each part takes, pass marks, July and December test dates, registration (MyJLPT, overseas), results — and free practice for every level.",
+    descZh: "日本语能力考试（JLPT）一页看懂：N5 到 N1 各是什么水平、考什么、每科多长时间、合格线和单科最低分、7 月和 12 月考试、怎么报名、什么时候出成绩，以及每一级的免费练习。",
+    level: "JLPT",
+  },
   "jlpt-past-papers": {
-    en: "JLPT Past Papers (N5–N1) — Free Official Tests with Answers & Audio",
-    zh: "JLPT 真题下载 — 官方免费真题级样题、答案和听力（N5–N1）",
+    en: "JLPT Past Papers & Sample Tests (N5–N1) — Free Official Exam PDFs, Answers, Audio",
+    zh: "JLPT 真题下载（過去問）— N5–N1 官方免费试题、答案和听力",
     desc: "Where to get JLPT past papers: the free official tests on jlpt.jp (real questions from tests since 2010) for N5–N1, with answers, scripts and audio — direct links, and how to use them.",
     descZh: "JLPT 真题去哪下载：jlpt.jp 免费公开的官方题集（选自 2010 年后的真实考试），N5–N1 每级两套完整试题，附答案、录音稿和听力音频的直接链接，以及怎么用。",
     level: "JLPT",

@@ -1,4 +1,4 @@
-# JLPT 真题与官方样题||JLPT Past Papers (N5–N1)
+# JLPT 真题与官方样题（過去問）||JLPT Past Papers & Exam Papers (N5–N1)
 
 :::zh
 **先说结论：JLPT 官方不免费公开完整的历年真题试卷**，网上流传的"真题 PDF 合集"大多是扫描盗版。但官方网站（jlpt.jp）免费提供三套**官方样题**，其中两套的题目**直接选自 2010 年改革以后的真实考试**，带答案、听力录音稿和录音，N5 到 N1 都有。这一页把这些官方文件按级别整理成直接链接，再说明怎么用它们备考，以及本站能接着练什么：按考过次数整理的真题语法、计时模拟题和几千道按题型分类的练习题。
@@ -162,6 +162,8 @@ The two free sets above come from the official workbooks published by Bonjinsha:
 **官方样题够不够备考？** 不够当唯一的材料：每个级别只有两套完整的题。它最适合用来校准难度、熟悉题型和估计水平，再配合模拟题和按题型的练习。
 
 **N4、N3 的旧题和现在的考试一样吗？** 2010 年改革后题型基本没变，所以 2012 年和 2018 年两套样题的题型和今天的考试一致；2010 年以前的旧试卷（旧 1–4 级）题型不同，不建议拿来练。
+
+考试本身的级别、题型、合格线和报名方法，见 [JLPT 是什么](/jlpt/)。
 :::
 :::en
 **Where can I download JLPT past papers?** The JLPT doesn't publish full past tests. The free official material is the three sample sets above, and the 2012 and 2018 sets are taken from real tests given since 2010. Full "past paper" PDFs found elsewhere are usually pirated scans of unknown origin and version.
@@ -169,4 +171,6 @@ The two free sets above come from the official workbooks published by Bonjinsha:
 **Are the official samples enough to prepare?** Not as your only material: there are just two complete tests per level. They're best for calibrating the difficulty, learning the formats and gauging your level — then practise with mock tests and questions by item type.
 
 **Are old N4/N3 papers like today's test?** The formats have barely changed since the 2010 revision, so the 2012 and 2018 sets match today's test. Papers from before 2010 (the old levels 1–4) use different formats and aren't worth practising with.
+
+For the test itself — levels, sections, pass marks, registration — see [What is the JLPT](/jlpt/).
 :::

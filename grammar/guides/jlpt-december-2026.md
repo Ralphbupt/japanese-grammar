@@ -198,12 +198,14 @@ Local host institutions announce the exact dates.
 ## 相关页面||Related Pages
 
 :::zh
+- [JLPT 是什么：级别、题型、报名和成绩](/jlpt/)
 - [JLPT 估分器](/jlpt-score-calculator/)：考完按答对题数估分
 - [专题：易混语法对比](/guides/)
 - [JLPT 语法 Anki 卡组下载](/anki/)
 - [N5](/N5/)・[N4](/N4/)・[N3](/N3/)・[N2](/N2/)・[N1](/N1/) 级别总览
 :::
 :::en
+- [What is the JLPT: levels, format, registration and results](/jlpt/)
 - [JLPT score calculator](/jlpt-score-calculator/): estimate your score after the test
 - [Guides: confusable grammar comparisons](/guides/)
 - [JLPT grammar Anki decks](/anki/)
