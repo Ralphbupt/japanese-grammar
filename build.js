@@ -676,7 +676,14 @@ const GTAG_DEFERRED = AB_LOADER + NOTES_LOADER + `<script>
       sr: screen.width + 'x' + screen.height, en: name
     };
     if (!sess.t) q._ss = 1;                       // first hit of the session
-    if (document.referrer && seq === 1) q.dr = document.referrer;
+    if (document.referrer && seq === 1) {
+      q.dr = document.referrer;
+      // A link inside the site: the previous page stays the page_referrer, but GA
+      // must not take jpnotes.dev itself as the session's source (a session
+      // restarted after 30 min on an internal link came out as "(not set)":
+      // ~6% of sessions, 11-18…25). gtag marks these the same way.
+      if (document.referrer.split('/')[2] === location.host) q['ep.ignore_referrer'] = 'true';
+    }
     // Apps that open links in their own browser (WeChat, Douyin, Doubao, LINE …) send
     // no referrer, so GA files those readers under "direct". Name the app as the
     // referrer instead (wechat.inapp …): GA then reports it as the source, and the
@@ -1668,6 +1675,18 @@ const ICONS = {
   "✎": ICO_SVG('<path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"/><path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/>'),
 };
 const ICON_RE = new RegExp(`(${Object.keys(ICONS).join("|")})\\uFE0F?\\s?`, "gu");
+// Structured data as one object: a list of schema objects becomes
+// { "@context", "@graph": [...] } (2026-11-26). Same meaning for search
+// engines, but some in-app / Safari scripts read r["@context"] from each
+// ld+json block and threw on a bare array (GA js_error on the home page).
+function ldGraph(html) {
+  return html.replace(/(<script type="application\/ld\+json">)([\s\S]*?)(<\/script>)/g, (m, a, json, b) => {
+    let v; try { v = JSON.parse(json); } catch (e) { return m; }
+    if (!Array.isArray(v)) return m;
+    const graph = v.map((o) => { const { ["@context"]: _c, ...rest } = o; return rest; });
+    return a + JSON.stringify({ "@context": "https://schema.org", "@graph": graph }).replace(/</g, "\\u003c") + b;
+  });
+}
 function iconize(html) {
   const at = html.search(/<body[\s>]/i);
   if (at < 0) return html;
@@ -1695,7 +1714,7 @@ function writeLangPage(id, lang, html) {
       ? html.replace(/<meta charset="[^"]*">/i, (m) => `${m}\n${meta}`)
       : html.replace(/<head>/i, `<head>\n${meta}`);
   }
-  fs.writeFileSync(path.join(dir, "index.html"), iconize(html), "utf-8");
+  fs.writeFileSync(path.join(dir, "index.html"), ldGraph(iconize(html)), "utf-8");
 }
 
 // ─── Furigana via kuroshiro ───
@@ -3433,7 +3452,7 @@ ${AI_SCRIPT}
 </html>`;
 
   fs.mkdirSync(path.join(__dirname, "dist"), { recursive: true });
-  fs.writeFileSync(path.join(__dirname, OUT), iconize(fullHtml), "utf-8");
+  fs.writeFileSync(path.join(__dirname, OUT), ldGraph(iconize(fullHtml)), "utf-8");
 
   // Write audio request list for build-audio.py
   fs.mkdirSync(path.join(__dirname, "dist"), { recursive: true });

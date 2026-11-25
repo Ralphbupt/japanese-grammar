@@ -269,7 +269,7 @@
     return fetch(API + path, { method: method, headers: head, body: body ? JSON.stringify(body) : undefined }).then(function (res) {
       return res.json().catch(function () { return {}; }).then(function (data) {
         if (res.status === 401 && a.token) { setAcct(null); render(); }
-        if (!res.ok && res.status !== 409) { var e = new Error(data.error || ('HTTP ' + res.status)); e.status = res.status; throw e; }
+        if (!res.ok && res.status !== 409) { var e = new Error(data.error || ('HTTP ' + res.status)); e.status = res.status; e.detail = data.detail; e.op = method + ' ' + path; throw e; }
         return { status: res.status, data: data };
       });
     });
@@ -352,7 +352,9 @@
       setStatus('ok');
     }).catch(function (e) {
       if (acct().token) setStatus('error', e.message);
-      track('account_sync_error', { status: e.status || 0 });
+      // why: the server's message, or the browser's (Failed to fetch / Load failed = no
+      // network or the page went away; a TypeError = a bug here); op: the request.
+      track('account_sync_error', { status: e.status || 0, why: String(e.detail || (e && e.message) || e).slice(0, 80), op: e.op || '' });
     }).then(function () { busy = false; if (again) return sync(); });
   }
   var lastPull = 0;
