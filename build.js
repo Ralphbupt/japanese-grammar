@@ -162,7 +162,9 @@ const CSP_META = `<meta http-equiv="Content-Security-Policy" content="default-sr
   // Google AdSense site verification (applied 2026-11-18). Only this tag: no
   // ad script is loaded, so the CSP above stays as it is. dist/ads.txt names
   // the same publisher.
-  `\n<meta name="google-adsense-account" content="${ADSENSE_PUB}">`;
+  `\n<meta name="google-adsense-account" content="${ADSENSE_PUB}">` +
+  // Impact (Preply's affiliate network) site verification, 2026-11-26.
+  `\n<meta name="impact-site-verification" value="14490140-b467-4166-8ba6-2526a16e30d6">`;
 // Copies of the site (someone rebuilding the repo on their own domain): the
 // host is checked against jpnotes.dev itself — not SITE, which a copy changes —
 // and a copy gets a banner pointing to the original, a canonical link back to
