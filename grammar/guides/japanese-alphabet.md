@@ -237,6 +237,17 @@ Many look the same or similar (Japan uses mostly traditional forms, simplified d
 For your first few days, yes — then switch to kana as soon as you can. Books, signs, websites and the JLPT don't use romaji, and romaji can't show distinctions like long vowels and small っ reliably.
 :::
 
+## 讨论||Discussion
+
+:::zh
+有问题、想补充，或者想用学到的说法写一句，都可以在下面留言。留言公开，审核后显示，站长会看。
+:::
+:::en
+Questions, additions, or a sentence of your own using what you learned — leave it below. Comments are public once approved, and the site owner reads them.
+:::
+
+<div class="jp-nt jp-nt-page" id="discuss" data-nt="p:japanese-alphabet"></div>
+
 ## 相关页面||Related Pages
 
 :::zh

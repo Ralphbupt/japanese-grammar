@@ -118,6 +118,17 @@ Both mean love, but 恋 (*koi*) is romantic longing for someone — falling for 
 〜が好きです is a basic N5 pattern: what you like takes が, and switches to は when it becomes the topic. It's covered, with practice, in [N5 lesson 1](/lesson01/). New to kana? Start with the [Japanese alphabet (hiragana and katakana)](/japanese-alphabet/).
 :::
 
+## 讨论||Discussion
+
+:::zh
+有问题、想补充，或者想用学到的说法写一句，都可以在下面留言。留言公开，审核后显示，站长会看。
+:::
+:::en
+Questions, additions, or a sentence of your own using what you learned — leave it below. Comments are public once approved, and the site owner reads them.
+:::
+
+<div class="jp-nt jp-nt-page" id="discuss" data-nt="p:i-love-you-in-japanese"></div>
+
 ## 相关页面||Related Pages
 
 :::zh
