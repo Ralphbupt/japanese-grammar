@@ -211,7 +211,7 @@
     var KEY = 'jp_aff_side_off', zh = document.documentElement.getAttribute('data-force-lang') === 'zh' || /^\/zh\//.test(path);
     try { if ((+localStorage.getItem(KEY) || 0) > Date.now()) return; } catch (e) {}
     function t2(a, b) { return zh ? a : b; }
-    var el = null, NAME = affProg === 'preply' ? 'Preply' : 'italki';
+    var el = null, NAME = affProg === 'preply' ? 'Preply' : 'italki', inlineOn = false;
     function build() {
       el = document.createElement('aside');
       el.className = 'aff aff-side'; el.setAttribute('data-aff-card', 'side'); el.hidden = true;
@@ -235,7 +235,8 @@
       // The card takes the gutter's width less a margin (at most 210 px); under
       // 180 px it drops its sentence, under 128 px it doesn't show at all.
       var gutter = window.innerWidth - c.getBoundingClientRect().right, w = Math.min(210, gutter - 18);
-      el.hidden = w < 128 || document.body.classList.contains('ai-open');
+      // Not twice on one screen: hidden while an in-page card (lesson end, result) is in view.
+      el.hidden = w < 128 || inlineOn || document.body.classList.contains('ai-open');
       if (!el.hidden) { el.style.width = w + 'px'; el.style.right = Math.max(8, Math.round((gutter - w) / 2)) + 'px'; var nar = w < 180; el.classList.toggle('aff-narrow', nar);
         el.querySelector('.aff-h').lastChild.nodeValue = nar ? t2('一对一日语老师', '1-on-1 tutors') : t2('找日语老师一对一练', '1-on-1 Japanese tutors');
         el.querySelector('.aff-btn').textContent = nar ? NAME + ' →' : t2('看看 ' + NAME + ' →', 'Browse ' + NAME + ' →');
@@ -244,6 +245,13 @@
     function start() {
       if (!document.querySelector('article.lesson, #quiz-app')) return;
       build(); place();
+      if ('IntersectionObserver' in window) {
+        var vis = new Set();
+        var io2 = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) vis.add(e.target); else vis.delete(e.target); }); inlineOn = vis.size > 0; place(); });
+        var watchInline = function () { document.querySelectorAll('.aff:not(.aff-side)').forEach(function (c) { if (!c._affW) { c._affW = 1; io2.observe(c); } }); };
+        watchInline();
+        if ('MutationObserver' in window) new MutationObserver(watchInline).observe(document.getElementById('content') || document.body, { childList: true, subtree: true });
+      }
       window.addEventListener('resize', place);
       // The column settles after load (sidebar, fonts): measure again then.
       window.addEventListener('load', function () { place(); setTimeout(place, 500); });
