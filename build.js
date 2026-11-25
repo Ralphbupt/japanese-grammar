@@ -126,7 +126,7 @@ const AB_LOADER = AB_SRC ? `<script src="${AB_SRC}" defer></script>` : "";
 // it the "已掌握" buttons to hang a block under, practice pages an empty
 // <div class="jp-nt" data-nt="q:<id>"> in each explanation (site/quiz.js).
 // NOTES_SRC= (empty) builds without it; ?notes=local on a page talks to wrangler dev.
-const NOTES_SRC = process.env.NOTES_SRC !== undefined ? process.env.NOTES_SRC : "https://notes.jpnotes.dev/notes.js?v=9";
+const NOTES_SRC = process.env.NOTES_SRC !== undefined ? process.env.NOTES_SRC : "https://notes.jpnotes.dev/notes.js?v=10";
 const NOTES_ORIGIN = NOTES_SRC ? " " + new URL(NOTES_SRC).origin : "";
 const NOTES_LOADER = NOTES_SRC ? `<script src="${NOTES_SRC}" defer></script>` : "";
 // Content-Security-Policy connect-src allowlist: the browser itself refuses
@@ -5974,9 +5974,9 @@ window.addEventListener('hashchange',function(){var m=decodeURIComponent(locatio
         .map((f) => f.replace(/\.md$/, "")).sort();
       const dMeta = {
         en: { title: "Discussion — Ask About Japanese, Share What You Learned", desc: "Public discussions on jpnotes.dev: ask how to say something in Japanese, add what you know, and read the site owner's answers.", h1: "Discussion", crumb: "Discussion",
-          lead: "Ask anything about Japanese or studying it — start a thread below. Posts are public once approved, and the site owner reads them all. Further down: the pages with their own discussion. The Chinese side of the site has its own board." },
+          lead: "Ask anything about Japanese or studying it — start a thread below. Posts are public once approved, and the site owner reads them all. Pages with their own discussion are in the same list. The Chinese side of the site has its own board." },
         zh: { title: "讨论区 - 日语问题、学习心得", desc: "jpnotes.dev 的公开讨论：问某句话日语怎么说、补充你知道的、看站长的回答。", h1: "讨论区", crumb: "讨论区",
-          lead: "关于日语、关于备考，想问什么都可以在下面发帖。帖子审核后公开，站长每条都会看。再往下是开了讨论区的页面和里面的最新留言。英文版有自己单独的讨论区。" },
+          lead: "关于日语、关于备考，想问什么都可以在下面发帖。帖子审核后公开，站长每条都会看。开了讨论区的页面也在同一个列表里。英文版有自己单独的讨论区。" },
       };
       const dCss = `<style>.ds-pages{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.6rem;margin:0 0 1.6rem}.ds-page{display:block;padding:.8rem 1rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--card-bg);color:var(--text);text-decoration:none}.ds-page:hover{border-color:var(--ui)}.ds-page b{display:block;color:var(--text-strong);margin-bottom:.2rem}.ds-page small{color:var(--text-muted)}.ds-feed h2{font-size:1.1rem;margin:1.2rem 0 .4rem}.ds-c{padding:.7rem 0;border-bottom:1px solid var(--border)}.ds-c .ds-where{font-size:.85rem;color:var(--text-muted)}.ds-c .ds-body{margin:.25rem 0;white-space:pre-wrap;overflow-wrap:anywhere}.ds-board{margin:0 0 1.8rem}</style>`;
       for (const lang of PAGE_LANGS) {
@@ -5984,7 +5984,8 @@ window.addEventListener('hashchange',function(){var m=decodeURIComponent(locatio
         const cards = dpages.map((id) => { const t = SEO_TITLES[id] || {}; const name = (en ? t.en : t.zh) || id; return `<a class="ds-page" href="${SITE_PATH}${id}/#discuss" data-ds="${id}"><b>${escD(name.split(/ [—-] |[:：]/)[0])}</b><small data-ds-n>${en ? "Discussion" : "讨论"}</small></a>`; }).join("");
         writeLangPage("discuss", lang, localizePage(renderQuiz(lang, {
           ...m, nav: "", ogImage: "og-image.png", noindex: true,
-          body: `${dCss}<h2>${en ? "Threads" : "帖子"}</h2><div class="jp-nt jp-nt-page ds-board" id="discuss" data-nt="p:discuss"></div><div class="ds-more"><h2>${en ? "Pages with a discussion" : "开了讨论区的页面"}</h2><div class="ds-pages">${cards}</div><div id="jp-discuss" class="ds-feed" data-pages="${dpages.join(",")}"><h2>${en ? "Latest comments on pages" : "各页面的最新留言"}</h2><p class="wb-muted">${en ? "Loading…" : "加载中…"}</p></div></div>`,
+          // The pages' own discussions are rows of the same list (notes.js reads data-pages); no JS: plain links.
+          body: `${dCss}<div class="jp-nt jp-nt-page ds-board" id="discuss" data-nt="p:discuss" data-pages="${escD(JSON.stringify(dpages.map((id) => { const t = SEO_TITLES[id] || {}; return [id, ((en ? t.en : t.zh) || id).split(/ [—-] |[:：]/)[0]]; })))}"><div class="ds-pages">${cards}</div></div>`,
           about: "",
           schema: JSON.stringify([{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: en ? "Japanese Grammar Notes" : "日语语法笔记", item: SITE }, { "@type": "ListItem", position: 2, name: m.crumb, item: v.url }] }]).replace(/</g, "\\u003c"),
         }, v, "", null), lang, localizedPageIds));
