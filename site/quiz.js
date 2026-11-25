@@ -1585,6 +1585,20 @@
       track('sign_prompt_click', { where: 'result', copy: copy });
     }
   });
+  // ─── Affiliate (2026-11-26): an italki tutor card, PR-labelled, rel=sponsored ───
+  // Mock results show it; a finished set shows it only in the experiment
+  // `tutor` (ab.js calls jpAff.card('result')). Lessons have the same card from
+  // build.js. Impressions / clicks: settings-modal.js (aff_show / aff_click).
+  var AFF_ITALKI = 'https://www.italki.com/affshare?ref=af34594643';
+  function affCard(where) {
+    var h = where === 'mock' ? t('模考做完了，口语和听力也想练？', 'Mock test done — want to practise speaking and listening too?')
+      : t('想开口说日语？找老师一对一练', 'Want to speak, not just pass?');
+    return '<aside class="aff" data-aff-card="' + where + '"><p class="aff-h"><span class="aff-pr">PR</span>' + esc(h) + '</p>' +
+      '<p>' + t('在 italki 上可以按价格和时间挑日语老师，一对一练口语、改作文、陪你备考。可以先上一节便宜的体验课。', 'On italki you can pick a Japanese tutor by price and schedule for one-on-one speaking, writing feedback or exam prep — start with a cheap trial lesson.') + '</p>' +
+      '<p><a class="aff-btn" href="' + AFF_ITALKI + '" target="_blank" rel="sponsored noopener" data-aff="italki" data-where="' + where + '">' + t('看看 italki 上的日语老师 →', 'Browse Japanese tutors on italki →') + '</a></p>' +
+      '<p class="aff-note">' + t('广告：通过这个链接购课，本站会得到一笔佣金，你付的价格不变。', 'Ad: if you book through this link, jpnotes earns a commission at no extra cost to you.') + '</p></aside>';
+  }
+  window.jpAff = { card: affCard };
   function shareBtn() { return window.jpShare ? '<button class="q-btn" data-act="share">' + t('分享成绩', 'Share my score') + '</button>' : ''; }
   function shareScore(el) {
     var o = app._share || {};
@@ -2093,7 +2107,7 @@
       h += '</ul>';
       var slow = Object.keys(att.answers).filter(function (id) { return Q[id] && !isCk(Q[id]); }).sort(function (a, b) { return (att.answers[b].ms || 0) - (att.answers[a].ms || 0); }).slice(0, 3);
       if (slow.length) h += '<p class="q-muted">' + t('用时最长：', 'Slowest: ') + slow.map(function (id) { return id.split('-').pop() + '（' + Math.round((att.answers[id].ms || 0) / 1000) + 's）'; }).join('、') + '</p>';
-      h += '<div class="q-actions"><button class="q-btn q-btn-primary" data-act="m-review" data-k="wrong">' + t('复盘错题和猜的题', 'Review misses and guesses') + '</button><button class="q-btn" data-act="m-review" data-k="all">' + t('全部题目', 'All questions') + '</button></div>' + shareBtn() + syncHint('mock') + '</div>';
+      h += '<div class="q-actions"><button class="q-btn q-btn-primary" data-act="m-review" data-k="wrong">' + t('复盘错题和猜的题', 'Review misses and guesses') + '</button><button class="q-btn" data-act="m-review" data-k="all">' + t('全部题目', 'All questions') + '</button></div>' + shareBtn() + syncHint('mock') + '</div>' + (att.mode === 'full' ? affCard('mock') : '');
       app._share = { text: t('我在 jpnotes.dev 做了 JLPT ' + LEVEL + ' 模拟考，' + (att.mode === 'full' ? (hasL ? '估分 ' + sum + ' / 180。' : '言语知识和阅读估分 ' + sum + ' 分。') : '') + '免费模考，按真题结构出题：', 'I took a JLPT ' + LEVEL + ' mock test on jpnotes.dev' + (att.mode === 'full' ? (hasL ? ' — estimated ' + sum + '/180' : ' — estimated ' + sum + ' without listening') : '') + '. Free mock tests laid out like the real exam:'), src: 'mock_result' };
       M = { set: set, test: test, att: att, key: key };
       app.innerHTML = h;

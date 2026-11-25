@@ -132,6 +132,11 @@ const NOTES_SRC = process.env.NOTES_SRC !== undefined ? process.env.NOTES_SRC : 
 // site owner by default (feedback.js, no sign-in) or publicly when ticked.
 // Personal pages keep the private box only; a guide whose markdown already
 // holds its discussion keeps that one. id="discuss" is where /discuss/ links.
+// Affiliate (2026-11-26): the italki tutor card at the end of lessons and
+// guides, both languages (localizePage keeps one). Same card as quiz.js's
+// affCard(); PR-labelled, rel="sponsored"; aff_show / aff_click from settings-modal.js.
+const AFF_ITALKI = "https://www.italki.com/affshare?ref=af34594643";
+const affLessonCard = () => `<aside class="aff" data-aff-card="lesson"><div class="lang-zh"><p class="aff-h"><span class="aff-pr">PR</span>学完了，想开口用起来？</p><p>在 italki 上可以按价格和时间挑日语老师，一对一练口语、用这一课的语法造句、陪你备考。可以先上一节便宜的体验课。</p><p><a class="aff-btn" href="${AFF_ITALKI}" target="_blank" rel="sponsored noopener" data-aff="italki" data-where="lesson">看看 italki 上的日语老师 →</a></p><p class="aff-note">广告：通过这个链接购课，本站会得到一笔佣金，你付的价格不变。</p></div><div class="lang-en"><p class="aff-h"><span class="aff-pr">PR</span>Want to actually say it out loud?</p><p>On italki you can pick a Japanese tutor by price and schedule for one-on-one speaking practice, sentences with this lesson's grammar, or exam prep — start with a cheap trial lesson.</p><p><a class="aff-btn" href="${AFF_ITALKI}" target="_blank" rel="sponsored noopener" data-aff="italki" data-where="lesson">Browse Japanese tutors on italki →</a></p><p class="aff-note">Ad: if you book through this link, jpnotes earns a commission at no extra cost to you.</p></div></aside>`;
 const NO_COMMENTS = new Set(["discuss", "my-notes", "my-grammar", "words", "review"]);
 const commentBox = (id, kind, has) => NOTES_SRC && !has && /^[a-z0-9][a-z0-9-]{1,60}$/.test(id) ? `<div class="jp-nt jp-nt-page jp-nt-cm" id="discuss" data-nt="p:${id}" data-fb="${kind}"></div>` : "";
 const NOTES_ORIGIN = NOTES_SRC ? " " + new URL(NOTES_SRC).origin : "";
@@ -3767,7 +3772,7 @@ ${sidebarMarkupHtml}
     ${prevHtml}
     ${nextHtml}
   </nav>
-  ${commentBox(lesson.id, "lesson", /class="jp-nt jp-nt-page"/.test(lesson.html))}<div id="quiz-feedback" data-fb="lesson"></div>
+  ${affLessonCard()}${commentBox(lesson.id, "lesson", /class="jp-nt jp-nt-page"/.test(lesson.html))}<div id="quiz-feedback" data-fb="lesson"></div>
   ${siteFooterHtml}
 </main>
 ${AI_SCRIPT}
@@ -6706,6 +6711,16 @@ ${p} blockquote { background: rgba(233, 69, 96, 0.08); }
 `;
 }
 const CSS = minifyCss(`
+/* Affiliate card (PR) */
+.aff { margin: 1.4rem 0 .6rem; padding: .9rem 1.1rem; border: 1px dashed var(--border); border-radius: 12px; background: var(--card-bg, transparent); font-size: .94rem; }
+.aff p { margin: .35rem 0; }
+.aff-h { font-weight: 600; color: var(--text-strong, var(--text)); }
+.aff-pr { display: inline-block; margin-right: .45rem; padding: 0 .35rem; border: 1px solid var(--text-muted); border-radius: 4px; font-size: .72rem; font-weight: 600; color: var(--text-muted); vertical-align: .1em; }
+.aff-btn { display: inline-block; padding: .45rem .9rem; border: 1px solid var(--ui); border-radius: var(--radius-pill, 999px); color: var(--ui); text-decoration: none; font-weight: 600; }
+.aff-btn:hover { background: var(--ui-soft); }
+.aff-note { color: var(--text-muted); font-size: .8rem; }
+
+
 html.ab-pending #sidebar .nav-scroll { visibility: hidden; }
 :root {
   /* Safe areas (viewport-fit=cover): notch, home indicator, rounded corners —

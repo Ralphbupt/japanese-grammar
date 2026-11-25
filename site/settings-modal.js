@@ -151,6 +151,26 @@
     if (window.gaEvent) window.gaEvent('language_toggle', { to: isEn ? 'en' : 'zh' });
   }
 
+  // Affiliate cards (2026-11-26): aff_show once per card when half of it is on
+  // screen, aff_click on its link. Cards added later (a set's result) are
+  // picked up by the observer below.
+  (function () {
+    var page = location.pathname, seen = typeof WeakSet === 'function' ? new WeakSet() : null;
+    var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        io.unobserve(e.target);
+        if (window.gaEvent) window.gaEvent('aff_show', { where: e.target.getAttribute('data-aff-card'), page: page });
+      });
+    }, { threshold: 0.5 }) : null;
+    function scan() { if (!io) return; document.querySelectorAll('[data-aff-card]').forEach(function (c) { if (seen && seen.has(c)) return; if (seen) seen.add(c); io.observe(c); }); }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', scan); else scan();
+    if ('MutationObserver' in window) new MutationObserver(function (ms) { for (var i = 0; i < ms.length; i++) if (ms[i].addedNodes.length) { scan(); return; } }).observe(document.documentElement, { childList: true, subtree: true });
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[data-aff]');
+      if (a && window.gaEvent) window.gaEvent('aff_click', { prog: a.getAttribute('data-aff'), where: a.getAttribute('data-where') || '', page: page });
+    }, true);
+  })();
   function wireControls(root) {
     root.querySelectorAll('.js-theme-btn').forEach(function (b) {
       b.addEventListener('click', function (e) { e.stopPropagation(); toggleThemeMenu(b); });
