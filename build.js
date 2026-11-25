@@ -126,7 +126,7 @@ const AB_LOADER = AB_SRC ? `<script src="${AB_SRC}" defer></script>` : "";
 // it the "已掌握" buttons to hang a block under, practice pages an empty
 // <div class="jp-nt" data-nt="q:<id>"> in each explanation (site/quiz.js).
 // NOTES_SRC= (empty) builds without it; ?notes=local on a page talks to wrangler dev.
-const NOTES_SRC = process.env.NOTES_SRC !== undefined ? process.env.NOTES_SRC : "https://notes.jpnotes.dev/notes.js?v=6";
+const NOTES_SRC = process.env.NOTES_SRC !== undefined ? process.env.NOTES_SRC : "https://notes.jpnotes.dev/notes.js?v=7";
 const NOTES_ORIGIN = NOTES_SRC ? " " + new URL(NOTES_SRC).origin : "";
 const NOTES_LOADER = NOTES_SRC ? `<script src="${NOTES_SRC}" defer></script>` : "";
 // Content-Security-Policy connect-src allowlist: the browser itself refuses
@@ -841,7 +841,7 @@ const GTAG_DEFERRED = AB_LOADER + NOTES_LOADER + `<script>
   function kindOf(p) {
     var m;
     return /\\/lesson\\d+\\/$/.test(p) ? 'lesson' : (m = p.match(/\\/n[1-5]-(practice|listening|reading|vocabulary-list|vocabulary|kanji|mock-test|cards|grammar-audio)\\/$/)) ? m[1]
-      : /\\/jlpt-n[1-5]-past-exam-grammar\\/$/.test(p) ? 'past-exam-grammar' : /^\\/(zh\\/)?(words|my-grammar|my-notes|review)\\/$/.test(p) ? p.replace(/^\\/(zh\\/)?|\\/$/g, '')
+      : /\\/jlpt-n[1-5]-past-exam-grammar\\/$/.test(p) ? 'past-exam-grammar' : /^\\/(zh\\/)?(words|my-grammar|my-notes|discuss|review)\\/$/.test(p) ? p.replace(/^\\/(zh\\/)?|\\/$/g, '')
       : /\\/N[1-5]\\/$/.test(p) ? 'overview' : /_grammar_list\\/$/.test(p) ? 'checklist' : /^\\/(zh\\/)?(practice|listening|reading|vocabulary|mock-test|guides|grammar-audio)\\/$/.test(p) ? 'hub'
       : /^\\/(zh\\/)?$/.test(p) ? 'home' : 'other';
   }
@@ -2978,7 +2978,7 @@ async function main() {
   <div class="nav-scroll">
   <div class="nav-header"><a href="${SITE_PATH}" style="color:inherit;text-decoration:none;"><span class="seal-mark" aria-hidden="true" lang="ja">合格</span>jpnotes.dev</a></div>
   <a class="sb-today" data-nav="today" href="${SITE_PATH}practice/"><span><b><span class="lang-zh">开始做题</span><span class="lang-en">Start practising</span></b><small><span class="lang-zh">选一个级别</span><span class="lang-en">Pick a level</span></small></span><span class="sb-go">›</span></a>
-  <div class="sb-chips sb-mine"><a data-nav="mine" href="${SITE_PATH}words/"><span class="lang-zh">生词本</span><span class="lang-en">Word list</span></a><a data-nav="mine" href="${SITE_PATH}my-grammar/"><span class="lang-zh">我的语法卡</span><span class="lang-en">Grammar cards</span></a></div>
+  <div class="sb-chips sb-mine"><a data-nav="mine" href="${SITE_PATH}words/"><span class="lang-zh">生词本</span><span class="lang-en">Word list</span></a><a data-nav="mine" href="${SITE_PATH}my-grammar/"><span class="lang-zh">我的语法卡</span><span class="lang-en">Grammar cards</span></a>${NOTES_SRC ? `<a data-nav="discuss" href="${SITE_PATH}discuss/"><span class="lang-zh">讨论区</span><span class="lang-en">Discussion</span></a>` : ""}</div>
   ${sidebarHtml.join("\n  ")}
   </div>
 </nav>
@@ -3449,7 +3449,7 @@ ${AI_SCRIPT}
   // ─── Generate individual lesson pages ───
   // Pages published once per language (PAGE_LANGS); links to them on a
   // non-root copy point at that language's copy.
-  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "changelog", "privacy", "terms", "contact", "practice", "listening", "reading", "vocabulary", "mock-test", "grammar-audio", "words", "my-grammar", "my-notes", "review", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`, `${l}-grammar-audio`, `${l}-vocabulary-list`, ...(fs.existsSync(path.join(__dirname, "questions", "kanji", `${l}.json`)) ? [`${l}-kanji`] : [])]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
+  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "changelog", "privacy", "terms", "contact", "practice", "listening", "reading", "vocabulary", "mock-test", "grammar-audio", "words", "my-grammar", "my-notes", "discuss", "review", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`, `${l}-grammar-audio`, `${l}-vocabulary-list`, ...(fs.existsSync(path.join(__dirname, "questions", "kanji", `${l}.json`)) ? [`${l}-kanji`] : [])]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
   // "Practice this point" at the end of every grammar point that has practice
   // questions (questions/N*/lessonNN.json refs), linking to the practice page.
   const quizRefCount = {};
@@ -5953,6 +5953,35 @@ window.addEventListener('hashchange',function(){var m=decodeURIComponent(locatio
         }, v, "", null), lang, localizedPageIds));
       }
       console.log("  Generated dist/my-notes/ (notes)");
+    }
+
+    // /discuss/: the guide pages that have a public discussion at the bottom
+    // (data-nt="p:<slug>" in the markdown), and the latest approved comments
+    // across them — the list is here, the comments come from the notes script
+    // (GET /pub-recent). noindex while there are few comments.
+    if (NOTES_SRC) {
+      const gdir = path.join(__dirname, "grammar", "guides");
+      const escD = (t) => String(t || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+      const dpages = fs.readdirSync(gdir).filter((f) => f.endsWith(".md") && fs.readFileSync(path.join(gdir, f), "utf-8").includes('data-nt="p:'))
+        .map((f) => f.replace(/\.md$/, "")).sort();
+      const dMeta = {
+        en: { title: "Discussion — Ask About Japanese, Share What You Learned", desc: "Public discussions on jpnotes.dev: ask how to say something in Japanese, add what you know, and read the site owner's answers.", h1: "Discussion", crumb: "Discussion",
+          lead: "Pages with a public discussion, and the newest comments across them. Ask a question or add something at the bottom of any of these pages; comments are public once approved, and the site owner reads them all." },
+        zh: { title: "讨论区 - 日语问题、学习心得", desc: "jpnotes.dev 的公开讨论：问某句话日语怎么说、补充你知道的、看站长的回答。", h1: "讨论区", crumb: "讨论区",
+          lead: "开了讨论区的页面，和这些页面里最新的留言。在任何一页底部都可以提问或补充；留言审核后公开，站长每条都会看。" },
+      };
+      const dCss = `<style>.ds-pages{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.6rem;margin:0 0 1.6rem}.ds-page{display:block;padding:.8rem 1rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--card-bg);color:var(--text);text-decoration:none}.ds-page:hover{border-color:var(--ui)}.ds-page b{display:block;color:var(--text-strong);margin-bottom:.2rem}.ds-page small{color:var(--text-muted)}.ds-feed h2{font-size:1.1rem;margin:1.2rem 0 .4rem}.ds-c{padding:.7rem 0;border-bottom:1px solid var(--border)}.ds-c .ds-where{font-size:.85rem;color:var(--text-muted)}.ds-c .ds-body{margin:.25rem 0;white-space:pre-wrap;overflow-wrap:anywhere}</style>`;
+      for (const lang of PAGE_LANGS) {
+        const en = lang.code === "en", v = langVariant("discuss", lang), m = dMeta[lang.code];
+        const cards = dpages.map((id) => { const t = SEO_TITLES[id] || {}; const name = (en ? t.en : t.zh) || id; return `<a class="ds-page" href="${SITE_PATH}${id}/#discuss" data-ds="${id}"><b>${escD(name.split(/ [—-] |[:：]/)[0])}</b><small data-ds-n>${en ? "Discussion" : "讨论"}</small></a>`; }).join("");
+        writeLangPage("discuss", lang, localizePage(renderQuiz(lang, {
+          ...m, nav: "", ogImage: "og-image.png", noindex: true,
+          body: `${dCss}<div class="ds-pages">${cards}</div><div id="jp-discuss" class="ds-feed" data-pages="${dpages.join(",")}"><h2>${en ? "Latest comments" : "最新留言"}</h2><p class="wb-muted">${en ? "Loading…" : "加载中…"}</p></div>`,
+          about: "",
+          schema: JSON.stringify([{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: en ? "Japanese Grammar Notes" : "日语语法笔记", item: SITE }, { "@type": "ListItem", position: 2, name: m.crumb, item: v.url }] }]).replace(/</g, "\\u003c"),
+        }, v, "", null), lang, localizedPageIds));
+      }
+      console.log(`  Generated dist/discuss/ (${dpages.length} pages with a discussion)`);
     }
 
     // /review/: 复习 › 错题 — every level's review list (site/review.js); the

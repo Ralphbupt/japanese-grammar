@@ -121,10 +121,10 @@ Both mean love, but 恋 (*koi*) is romantic longing for someone — falling for 
 ## 讨论||Discussion
 
 :::zh
-有问题、想补充，或者想用学到的说法写一句，都可以在下面留言。留言公开，审核后显示，站长会看。
+有问题、想补充，或者想用学到的说法写一句，都可以在下面留言。留言公开，审核后显示，站长会看。全站的讨论在[讨论区](/discuss/)。
 :::
 :::en
-Questions, additions, or a sentence of your own using what you learned — leave it below. Comments are public once approved, and the site owner reads them.
+Questions, additions, or a sentence of your own using what you learned — leave it below. Comments are public once approved, and the site owner reads them. All discussions are on the [Discussion](/discuss/) page.
 :::
 
 <div class="jp-nt jp-nt-page" id="discuss" data-nt="p:i-love-you-in-japanese"></div>
