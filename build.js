@@ -37,6 +37,21 @@ const INDEXNOW_KEY = "b5c13368abbfcdaf25ed104808caeca9";
 // Conservative CSS minifier for the inline stylesheet: drops comments and
 // collapses whitespace around { } ; , — never touches ':' or '>' (descendant
 // selectors like ".a :not(.b)" depend on that space).
+// Site scripts are served minified (PageSpeed "minify JavaScript"). Only
+// whitespace, local names and syntax are squeezed; top-level names stay, as
+// pages and other scripts call them. ?v= hashes come from the sources.
+function minifyDistScripts(dir) {
+  const esbuild = require("esbuild");
+  let before = 0, after = 0;
+  for (const f of fs.readdirSync(dir).filter((n) => n.endsWith(".js"))) {
+    const p = path.join(dir, f), src = fs.readFileSync(p, "utf-8");
+    const out = esbuild.transformSync(src, { minify: true, charset: "utf8", legalComments: "none" }).code;
+    before += Buffer.byteLength(src); after += Buffer.byteLength(out);
+    fs.writeFileSync(p, out, "utf-8");
+  }
+  console.log(`  Minified dist/*.js: ${Math.round(before / 1024)} → ${Math.round(after / 1024)} KiB`);
+}
+
 function minifyCss(css) {
   return css
     .replace(/\/\*[\s\S]*?\*\//g, "")
@@ -6404,6 +6419,7 @@ Each \`/lessonNN/\` page contains:
     fs.writeFileSync(path.join(dist, "ads.txt"), `google.com, ${ADSENSE_PUB.replace(/^ca-/, "")}, DIRECT, f08c47fec0942fa0\n`, "utf-8");
     console.log(`  Generated dist/_redirects (${rules.length} rules), dist/_headers, dist/ads.txt`);
   }
+  minifyDistScripts(path.join(__dirname, "dist"));
   console.log(`Done! Output: ${OUT}, sitemap.xml, robots.txt, feed.xml, llms.txt, manifest.json, 404.html, og-image.png`);
 }
 
