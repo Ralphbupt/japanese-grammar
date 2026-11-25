@@ -4850,6 +4850,10 @@ html.theme-dark .qs-v-ok { color: #4cc98a; } html.theme-dark .qs-opt.qs-right { 
 .qs-passage, .qs-ck { font-size: .95rem; padding: .5rem .8rem; background: var(--surface-2); border-radius: var(--radius); margin: .4rem 0 .6rem; }
 .qs-passage p, .qs-ck p { margin: .3rem 0; }
 .qs-ck ul { list-style: none; padding: 0; margin: .3rem 0; }
+.qs-audio { display: block; width: 100%; max-width: 32rem; margin: .5rem 0; }
+.qs-ck-fold { margin: .3rem 0 .6rem; }
+.qs-ck-fold summary { cursor: pointer; font-weight: 600; }
+.qs-ck-fold .qs-muted { font-weight: 400; color: var(--text-muted); font-size: .9em; }
 .qs-nar, .qs-tr { color: var(--text-muted); }
 .quiz-samples summary { cursor: pointer; color: var(--link); }
 .quiz-samples details p { margin: .4rem 0; }
@@ -5168,10 +5172,11 @@ ${(() => {
 r.addEventListener('click',function(e){var b=e.target.closest('.qs-opt');if(b){var it=b.closest('.qs-item');if(it.classList.contains('qs-done'))return;var i=+b.getAttribute('data-i'),a=+it.getAttribute('data-ans'),ok=i===a;it.classList.add('qs-done');
 it.querySelectorAll('.qs-opt').forEach(function(x){var k=+x.getAttribute('data-i');x.disabled=true;if(k===a)x.classList.add('qs-right');else if(k===i)x.classList.add('qs-wrong');});
 var v=it.querySelector('.qs-verdict');v.hidden=false;v.className='qs-verdict '+(ok?'qs-v-ok':'qs-v-bad');v.textContent=ok?${JSON.stringify(en ? "✓ Right" : "✓ 答对了")}:${JSON.stringify(en ? "✗ The answer is " : "✗ 正确答案是 ")}+(a+1);
-var d=it.querySelector('details');if(d){d.open=true;d.setAttribute('data-auto','1');}var nx=it.querySelector('.qs-next');if(nx)nx.hidden=false;
+it.querySelectorAll('details').forEach(function(d){d.setAttribute('data-auto','1');d.open=true;});it.querySelectorAll('.qs-st').forEach(function(x){x.hidden=false;});it.querySelectorAll('.qs-sp').forEach(function(x){x.hidden=true;});var au=it.querySelector('audio');if(au&&!au.paused)au.pause();var nx=it.querySelector('.qs-next');if(nx)nx.hidden=false;
 ev('sample_try',{id:it.getAttribute('data-id'),type:it.getAttribute('data-type'),ok:ok,n:[].indexOf.call(r.querySelectorAll('.qs-item'),it)+1});return;}
 var l=e.target.closest('.qs-next a');if(l){ev('sample_next',{type:l.getAttribute('data-type')});}});
-r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'||!d.open||d.getAttribute('data-auto'))return;var it=d.closest('.qs-item');if(it&&!it.classList.contains('qs-done'))ev('sample_open',{id:it.getAttribute('data-id'),type:it.getAttribute('data-type')});},true);})();</script>`;
+r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'||!d.open||d.getAttribute('data-auto'))return;var it=d.closest('.qs-item');if(it&&!it.classList.contains('qs-done'))ev(d.classList.contains('qs-ck-fold')?'sample_script':'sample_open',{id:it.getAttribute('data-id'),type:it.getAttribute('data-type')});},true);
+r.addEventListener('play',function(e){var it=e.target.closest&&e.target.closest('.qs-item');if(it)ev('sample_listen',{id:it.getAttribute('data-id'),type:it.getAttribute('data-type')});},true);})();</script>`;
   const quizSamplesHtml = (qs, en, bundle) => {
     if (!qs.length) return "";
     const L = (zh, e) => (en ? e : zh), code = en ? "en" : "zh", pr = bundle.practice;
@@ -5180,7 +5185,12 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
       let body = "";
       if (q.ck) {
         const who = (s) => (en ? s : s.replace(/^M/, "男").replace(/^F/, "女"));
-        body += `<div class="qs-ck" lang="ja">${q.ck.scene ? `<p class="qs-nar">${q.ck.scene}</p>` : ""}${q.ck.question ? `<p class="qs-nar">${q.ck.question}</p>` : ""}<ul>${q.ck.lines.map((l) => `<li><b>${sEsc(who(l[0]))}</b> ${l[1]}</li>`).join("")}</ul></div>`;
+        // Listening (2026-11-26): the recording first, the transcript folded
+        // until the reader answers (it gave the answer away when shown up front).
+        const script = `<div class="qs-ck" lang="ja">${q.ck.scene ? `<p class="qs-nar">${q.ck.scene}</p>` : ""}${q.ck.question ? `<p class="qs-nar">${q.ck.question}</p>` : ""}<ul>${q.ck.lines.map((l) => `<li><b>${sEsc(who(l[0]))}</b> ${l[1]}</li>`).join("")}</ul></div>`;
+        body += q.au && q.au.f
+          ? `<audio class="qs-audio" controls preload="none" src="${AUDIO_BASE}/choukai/${sEsc(q.au.f)}"></audio><details class="qs-ck-fold"><summary>${L("听力原文", "Transcript")} <span class="qs-muted">${L("先听，答完会自动展开", "listen first — it opens once you answer")}</span></summary>${script}</details>`
+          : script;
       } else {
         const P = q.passage && pr.passages[q.passage];
         if (P) body += `<div class="qs-passage" lang="ja">${P.intro ? `<p class="qs-nar">${P.intro}</p>` : ""}${sTextHtml(P.html)}</div>`;
@@ -5188,7 +5198,8 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
         if (stem) body += `<p class="qs-stem" lang="ja">${stem}</p>`;
       }
       // Options are buttons: pick one to see right/wrong and the explanation (QS_JS).
-      body += `<ol class="qs-opts" lang="ja">${q.options.map((o, i) => `<li><button type="button" class="qs-opt" data-i="${i}">${o}</button></li>`).join("")}</ol>`;
+      // Spoken options (即時応答, 発話表現) are only heard: their text shows after answering.
+      body += `<ol class="qs-opts" lang="ja">${q.options.map((o, i) => `<li><button type="button" class="qs-opt" data-i="${i}">${q.spoken && q.au ? `<span class="qs-sp">${L("选这个", "This one")}</span><span class="qs-st" hidden>${o}</span>` : o}</button></li>`).join("")}</ol>`;
       const okj = (i) => (q.okj && q.okj[i] ? `（${q.okj[i]}）` : "");
       let ans = q.type === "narabe"
         ? `<p><b>${L("★ 处：", "★ is ")}${q.answer + 1}</b> <span lang="ja">${q.options[q.answer]}</span></p>${q.order ? `<p lang="ja">${L("顺序：", "Order: ")}${q.order.map((i) => q.options[i]).join(" → ")}</p>` : ""}`
@@ -5200,7 +5211,7 @@ r.addEventListener('toggle',function(e){var d=e.target;if(d.tagName!=='DETAILS'|
       const wrong = (q.wrong || []).map((w, i) => (w && sText(w, code) ? `<li><b lang="ja">${i + 1} ${q.options[i]}</b> — ${sExpl(sText(w, code))}</li>` : "")).join("");
       if (wrong && q.type !== "narabe") ans += `<ul>${wrong}</ul>`;
       const next = `<p class="qs-next" hidden><a href="?from=sample#type=${sEsc(q.type)}" data-type="${sEsc(q.type)}">${L(`再做一组「${sEsc(ty.zh || "")}」题 →`, `A set of ${sEsc(ty.en || "")} questions →`)}</a></p>`;
-      return `<div class="qs-item" data-id="${sEsc(q.id)}" data-type="${sEsc(q.type)}" data-ans="${q.answer}"><p class="qs-type">${n + 1}. ${sEsc(en ? ty.en : ty.zh)} · <span lang="ja">${sEsc(ty.ja)}</span></p>${body}<p class="qs-verdict" hidden></p><details><summary>${L("看答案和解析", "Answer and explanation")}</summary>${ans}</details>${next}</div>`;
+      return `<div class="qs-item" data-id="${sEsc(q.id)}" data-type="${sEsc(q.type)}" data-ans="${q.answer}"><p class="qs-type">${n + 1}. ${sEsc(en ? ty.en : ty.zh)} · <span lang="ja">${sEsc(ty.ja)}</span></p>${body}<p class="qs-verdict" hidden></p><details class="qs-ans"><summary>${L("看答案和解析", "Answer and explanation")}</summary>${ans}</details>${next}</div>`;
     }).join("");
     return `<section class="quiz-about quiz-samples"><h2>${L("例题（附答案和解析）", "Sample questions with answers")}</h2><p>${L("从题库里抽的几道题：点一个选项，马上看对错和解析。完整的练习在上面开始。", "A few questions from the bank: pick an option to see if it's right and why. Start the full practice above.")}</p>${items}${QS_JS(en)}</section>`;
   };
