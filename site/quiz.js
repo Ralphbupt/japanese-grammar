@@ -2246,7 +2246,7 @@
   }
   // Practice and review: ▶ plays the whole item (tap again to pause, once more
   // to go on); a transcript line's ▶ plays just that segment.
-  function ckPlay(file, from, len) {
+  function ckPlay(file, from, len, via) {
     if (player) player.pause();
     var a = ckEl(), src = CK_AUDIO + file, same = a.src.indexOf(src) >= 0;
     if (!same) a.src = src;
@@ -2258,7 +2258,7 @@
       if (!resume) ckSeek(a, 0);
     } else { ck.mode = 'seg'; ck.from = from; ck.end = from + len; ckSeek(a, from); }
     a.play().catch(function () {});
-    track('quiz_listen_play', { level: LEVEL, part: from == null ? 'all' : 'line' });
+    track('quiz_listen_play', { level: LEVEL, part: from == null ? 'all' : 'line', via: via || '' });
   }
   // Jump within an item (tap on the bar, or ↺ 5 s back): plays the whole item from there.
   function ckJump(file, at) {
@@ -2277,9 +2277,14 @@
     if (CK) { clearInterval(CK.timer); CK = null; }
   }
   // Every player on screen: progress of the file playing, ▶ / ⏸.
+  function ckAllLabel(file) {
+    var a = ck.el, on = a && a.src.indexOf(CK_AUDIO + file) >= 0 && ck.mode === 'all';
+    return on && !a.paused ? '⏸ ' + t('暂停', 'Pause') : on && !a.ended && a.currentTime > 0 ? '▶ ' + t('继续', 'Resume') : '▶ ' + t('全文播放', 'Play all');
+  }
   function ckShow() {
     var a = ck.el;
     if (!a) return;
+    app.querySelectorAll('.q-ck-all').forEach(function (b) { var l = ckAllLabel(b.getAttribute('data-k')); if (b.textContent !== l) b.textContent = l; });
     app.querySelectorAll('.q-ck-player').forEach(function (p) {
       var on = a.src.indexOf(CK_AUDIO + p.getAttribute('data-k')) >= 0, dur = +p.getAttribute('data-dur'), at = on ? a.currentTime : 0;
       p.querySelector('.q-ck-bar span').style.width = Math.min(100, at * 100 / dur) + '%';
@@ -2380,6 +2385,8 @@
     var row = function (who, ja, sub, btn, cls, sg) { return '<li' + (cls ? ' class="' + cls + '"' : '') + (sg ? ' data-k="' + q.au.f + '" data-t="' + sg.t + '" data-d="' + sg.d + '"' : '') + '>' + (who ? '<b class="q-ck-who">' + esc(who) + '</b>' : '') + '<span><span lang="ja">' + ja + '</span>' + btn + (sub ? '<small>' + esc(sub) + '</small>' : '') + '</span></li>'; };
     var open = fold ? '<details class="q-ck-fold"><summary>' + t('显示原文', 'Show the transcript') + ' <span class="q-muted">' + t('先再听一遍，看能不能听出来', 'listen once more first') + '</span></summary>' : '';
     return open + '<div class="q-ck-script"><p class="q-ck-head">' + t('听力原文', 'Transcript') +
+      // 全文播放 (2026-11-26): the whole item from here, the line being heard lit up.
+      (q.au && q.au.f ? ' <button class="q-ck-tool q-ck-all" data-act="ck-play" data-via="script" data-k="' + q.au.f + '">' + ckAllLabel(q.au.f) + '</button>' : '') +
       (segs.length ? ' <button class="q-ck-tool q-ck-loop' + (ck.loop ? ' q-on' : '') + '" data-act="ck-loop" aria-pressed="' + ck.loop + '" title="' + t('点 ▶ 听一句时反复播放，适合跟读', 'Repeat a line played with ▶, for shadowing') + '">🔁 ' + t('单句循环', 'Repeat line') + '</button>' : '') +
       '</p><ol>' + ckParts(q).map(function (p) {
       return row(p.who, p.ja, p.tr, ckSegBtn(q, p.k, p.i), p.who ? '' : 'q-ck-nar', segs.filter(function (x) { return x.k === p.k && x.i === p.i; })[0]);
@@ -2780,7 +2787,7 @@
     else if (act === 'ai') aiExplain(cur.q, cur.choice, cur.guess, D.types[cur.q.type].ja, D.passages, el.getAttribute('data-mode'));
     else if (act === 'listen') listen(el);
     else if (act === 'say') say(el);
-    else if (act === 'ck-play') ckPlay(el.getAttribute('data-k'));
+    else if (act === 'ck-play') ckPlay(el.getAttribute('data-k'), null, null, el.getAttribute('data-via'));
     else if (act === 'ck-seg') ckPlay(el.getAttribute('data-k'), +el.getAttribute('data-t'), +el.getAttribute('data-d'));
     else if (act === 'ck-back') ckJump(el.getAttribute('data-k'), ckPlaying(el.getAttribute('data-k')) - 5);
     else if (act === 'ck-seek') {
