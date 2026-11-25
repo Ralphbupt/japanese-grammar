@@ -316,7 +316,7 @@
     "type": "kanji",
     "difficulty": 1,
     "stem": "<<友だち>>と こうえんで あそびました。",
-    "options": ["ともだち", "どもだち", "ともたち", "ゆうだち"],
+    "options": ["ともだち", "どもだち", "ゆだち", "ゆうだち"],
     "kj": "友だちと公園で遊びました。",
     "answer": 0,
     "tr": { "zh": "我和朋友在公园玩了。", "en": "I played in the park with a friend." },
@@ -324,7 +324,7 @@
     "wrong": [
       null,
       { "zh": "开头是清音「と」。", "en": "It starts unvoiced: と." },
-      { "zh": "「だち」是浊音。", "en": "だち is voiced." },
+      { "zh": "「友」的音读是「ゆう」，也不是「ゆ」；「友だち」用训读「とも」。", "en": "「友」's on-reading is ゆう (not ゆ either); 「友だち」 uses the kun-reading とも." },
       { "zh": "「ゆうだち」是「夕立」（雷阵雨）；「友」读「とも」。", "en": "ゆうだち is 「夕立」 (a summer shower); 「友」 is とも." }
     ]
   },
@@ -542,14 +542,14 @@
     "type": "kanji",
     "difficulty": 1,
     "stem": "あたまが いたいので、きょうは がっこうを <<休みます>>。",
-    "options": ["やすみます", "やすいます", "よすみます", "きゅうみます"],
+    "options": ["やすみます", "やずみます", "よすみます", "きゅうみます"],
     "kj": "頭が痛いので、今日は学校を休みます。",
     "answer": 0,
     "tr": { "zh": "我头疼，所以今天不去上学了。", "en": "I have a headache, so I'll stay home from school today." },
     "why": { "zh": "「休む」（休息、请假）读「やすむ」，ます形「やすみます」。", "en": "「休む」 (rest, take a day off) is やすむ; ます-form やすみます." },
     "wrong": [
       null,
-      { "zh": "和「安い（やすい）」混了。", "en": "Mixed up with 「安い」 (やすい)." },
+      { "zh": "「す」不浊化，不是「ず」。", "en": "The す isn't voiced: not ず." },
       { "zh": "第一个音是「や」。", "en": "The first sound is や." },
       { "zh": "「きゅう」是音读（如「きゅうじつ」），动词用训读。", "en": "きゅう is the on-reading (as in きゅうじつ); the verb uses やすむ." }
     ]
@@ -560,7 +560,7 @@
     "refs": ["lesson03#vocab"],
     "difficulty": 2,
     "stem": "デパートで くつを <<買いました>>。",
-    "options": ["かいました", "がいました", "ばいました", "かえました"],
+    "options": ["かいました", "がいました", "ばいました", "かあいました"],
     "kj": "デパートで靴を買いました。",
     "answer": 0,
     "tr": { "zh": "我在百货商店买了鞋。", "en": "I bought shoes at the department store." },
@@ -569,7 +569,7 @@
       null,
       { "zh": "「か」不浊化。", "en": "The か isn't voiced." },
       { "zh": "「ばい」是音读（如「売買」），动词用训读「かう」。", "en": "ばい is the on-reading (as in 「売買」); the verb is かう." },
-      { "zh": "「かえました」是「変えました」（改变）之类，不是「買う」。", "en": "かえました would be another verb (「変えました」), not 「買う」." }
+      { "zh": "「か」是短音，没有长音「かあ」。", "en": "The か is short — no long かあ." }
     ]
   },
   {
@@ -833,7 +833,7 @@
     "type": "kanji",
     "difficulty": 2,
     "stem": "まいあさ ラジオで ニュースを <<聞きます>>。",
-    "options": ["ききます", "かきます", "いきます", "よみます"],
+    "options": ["ききます", "かきます", "いきます", "ぶんきます"],
     "kj": "毎朝ラジオでニュースを聞きます。",
     "answer": 0,
     "tr": { "zh": "我每天早上用收音机听新闻。", "en": "I listen to the news on the radio every morning." },
@@ -842,7 +842,7 @@
       null,
       { "zh": "「かきます」是「書きます」（写）。", "en": "かきます is 「書きます」 (write)." },
       { "zh": "「いきます」是「行きます」（去）。", "en": "いきます is 「行きます」 (go)." },
-      { "zh": "「よみます」是「読みます」（读）。", "en": "よみます is 「読みます」 (read)." }
+      { "zh": "「ぶん」是「聞」的音读（如「新聞」），动词用训读「きく」。", "en": "ぶん is the on-reading of 「聞」 (as in 「新聞」); the verb is きく." }
     ]
   },
   {
@@ -918,7 +918,7 @@
     "type": "kanji",
     "difficulty": 2,
     "stem": "でんしゃの なかで ずっと <<立って>> いました。",
-    "options": ["たって", "まって", "たて", "だって"],
+    "options": ["たって", "まって", "たつって", "だって"],
     "kj": "電車の中でずっと立っていました。",
     "answer": 0,
     "tr": { "zh": "我在电车里一直站着。", "en": "I was standing the whole time on the train." },
@@ -926,7 +926,7 @@
     "wrong": [
       null,
       { "zh": "「まって」是「待って」（等）。", "en": "まって is 「待って」 (waiting)." },
-      { "zh": "少了促音「っ」。", "en": "Missing the small っ." },
+      { "zh": "把辞书形「たつ」直接接了「って」；て形是「たって」。", "en": "That's the dictionary form たつ plus って; the te-form is たって." },
       { "zh": "开头是清音「た」，不是「だ」。", "en": "It starts unvoiced: た, not だ." }
     ]
   },

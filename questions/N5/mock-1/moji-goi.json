@@ -38,14 +38,14 @@
     "type": "kanji",
     "difficulty": 1,
     "stem": "わたしは まいあさ おちゃを <<飲みます>>。",
-    "options": ["のみます", "のります", "よみます", "やすみます"],
+    "options": ["のみます", "いんみます", "よみます", "やすみます"],
     "kj": "私は毎朝お茶を飲みます。",
     "answer": 0,
     "tr": { "zh": "我每天早上喝茶。", "en": "I drink tea every morning." },
     "why": { "zh": "「飲」是“喝”，「飲みます」读「のみます」，和「おちゃを」搭配。", "en": "「飲」 means drink; 「飲みます」 is のみます, which goes with 「おちゃを」." },
     "wrong": [
       null,
-      { "zh": "「のります」是「乗ります」（乘坐），只差一个假名，容易看错。", "en": "のります is 「乗ります」 (ride) — one kana off, easy to mix up." },
+      { "zh": "「いん」是「飲」的音读（如「飲食」），动词用训读「のむ」。", "en": "いん is the on-reading of 「飲」 (as in 「飲食」); the verb is のむ." },
       { "zh": "「よみます」是「読みます」（读），汉字不同。", "en": "よみます is 「読みます」 (read), a different kanji." },
       { "zh": "「やすみます」是「休みます」（休息），汉字不同。", "en": "やすみます is 「休みます」 (rest), a different kanji." }
     ]
@@ -106,14 +106,14 @@
     "type": "kanji",
     "difficulty": 1,
     "stem": "わたしの <<後ろ>>に だれか います。",
-    "options": ["うしろ", "うしる", "うじろ", "あとろ"],
+    "options": ["うしろ", "おしろ", "うじろ", "あとろ"],
     "kj": "私の後ろにだれかいます。",
     "answer": 0,
     "tr": { "zh": "我身后有人。", "en": "There's someone behind me." },
     "why": { "zh": "「後ろ」（后面）读「うしろ」，送假名「ろ」就是读音的最后一个音。", "en": "「後ろ」 (behind) is うしろ; the okurigana ろ is its last sound." },
     "wrong": [
       null,
-      { "zh": "送假名写的是「ろ」，读音也必须以「ろ」结尾。", "en": "The okurigana is ろ, so the reading must end in ろ, not る." },
+      { "zh": "第一个音是「う」；「おしろ」是「お城」（城堡）。", "en": "The first sound is う; おしろ is 「お城」 (a castle)." },
       { "zh": "「し」不浊化，没有「うじろ」。", "en": "し isn't voiced; うじろ isn't a word." },
       { "zh": "「あと」也是「後」的读音（「後で」），但「後ろ」读「うしろ」。", "en": "あと is another reading of 「後」 (as in 「後で」), but 「後ろ」 is うしろ." }
     ]

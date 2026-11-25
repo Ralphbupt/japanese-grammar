@@ -928,6 +928,23 @@ function cues(practice, mocks) {
     if (len[q.answer] === top && len.filter((n) => n >= top * 0.9).length === 1) t[0]++;
     if (len[q.answer] === low && len.filter((n) => n <= low * 1.1).length === 1) t[1]++;
   }
+  // (5) Okurigana give the answer away (reader feedback 2026-11-26): 漢字読み
+  // whose underlined word ends in kana (弄んで, 賑わう) where a wrong option
+  // doesn't end the same way, and 表記 where the right option's trailing kana
+  // fit the kana in the stem but a wrong one's don't. On the real test all
+  // four options share the ending, so only the stem part is tested.
+  for (const [name, d] of [["practice", practice], ...mocks]) for (const q of d.qs) {
+    if ((q.type !== "kanji" && q.type !== "hyouki") || !Number.isInteger(q.answer) || !Array.isArray(q.options)) continue;
+    const target = plainText(underlined(q.stem)[0] || "");
+    if (!target) continue;
+    const opts = q.options.map(plainText), tail = (x) => (x.match(/[ぁ-ゖ]+$/) || [""])[0];
+    const fits = q.type === "kanji"
+      ? ((t) => (o) => o.endsWith(t))(tail(target))
+      : (o) => { const t = tail(o); return !t || target.endsWith(t); };
+    if (q.type === "kanji" && !tail(target)) continue;
+    const bad = opts.map((o, i) => i !== q.answer && !fits(o) ? i + 1 : 0).filter(Boolean);
+    if (fits(opts[q.answer]) && bad.length) out.push(`${name} ${q.id} (${q.type}): option ${bad.join(", ")} doesn't end like 「${target}」 — the ending gives the answer away`);
+  }
   const pct = (n, all) => `${n}/${all} (${Math.round((100 * n) / all)}%)`;
   for (const [k, [n, m, all]] of Object.entries(longest)) {
     if (all >= 8 && n / all > LONGEST_MAX) out.push(`${k}: the right option is clearly the longest in ${pct(n, all)}`);

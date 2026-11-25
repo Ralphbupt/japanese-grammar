@@ -1527,7 +1527,7 @@
     "stem": "こどもの ときから ピアノを <<習って>> います。",
     "options": [
       "ならって",
-      "ならんで",
+      "しゅうって",
       "なろって",
       "なわって"
     ],
@@ -1544,8 +1544,8 @@
     "wrong": [
       null,
       {
-        "zh": "「ならんで」是「並んで」（排队）。",
-        "en": "ならんで is 「並んで」 (lining up)."
+        "zh": "「しゅう」是「習」的音读（如「練習」），动词用训读「ならう」。",
+        "en": "しゅう is the on-reading of 「習」 (as in 「練習」); the verb is ならう."
       },
       {
         "zh": "第三个音是「ら」，不是「ろ」。",
@@ -1647,16 +1647,16 @@
     "type": "kanji",
     "difficulty": 1,
     "stem": "てんきが いいので、えきまで <<歩いて>> いきました。",
-    "options": ["あるいて", "はしって", "およいで", "とおって"],
+    "options": ["あるいて", "あゆいて", "あらいて", "ほいて"],
     "kj": "天気がいいので、駅まで歩いて行きました。",
     "answer": 0,
     "tr": { "zh": "天气好，所以走着去了车站。", "en": "The weather was nice, so I walked to the station." },
     "why": { "zh": "「歩く」读「あるく」（走），て形「あるいて」。", "en": "「歩く」 is あるく (to walk); te-form あるいて." },
     "wrong": [
       null,
-      { "zh": "「はしって」是「走って」（跑）。", "en": "はしって is 「走って」 (running)." },
-      { "zh": "「およいで」是「泳いで」（游泳）。", "en": "およいで is 「泳いで」 (swimming)." },
-      { "zh": "「とおって」是「通って」（通过）。", "en": "とおって is 「通って」 (passing through)." }
+      { "zh": "「あゆ」是「歩む」的读法，「歩く」读「あるく」，て形「あるいて」。", "en": "あゆ is the reading in 「歩む」; 「歩く」 is あるく, te-form あるいて." },
+      { "zh": "第二个音是「る」，不是「ら」。", "en": "The second sound is る, not ら." },
+      { "zh": "「ほ」是「歩」的音读（如「散歩」），动词用训读「あるく」。", "en": "ほ is the on-reading of 「歩」 (as in 「散歩」); the verb is あるく." }
     ]
   },
   {
@@ -1715,16 +1715,16 @@
     "type": "kanji",
     "difficulty": 1,
     "stem": "あついので、まどを <<開けて>> ください。",
-    "options": ["あけて", "しめて", "つけて", "けして"],
+    "options": ["あけて", "かいけて", "つけて", "あっけて"],
     "kj": "暑いので、窓を開けてください。",
     "answer": 0,
     "tr": { "zh": "太热了，请把窗户打开。", "en": "It's hot, so please open the window." },
     "why": { "zh": "「開ける」读「あける」（打开），て形「あけて」。反义词：閉める（しめる）。", "en": "「開ける」 is あける (to open); te-form あけて. Opposite: 閉める (しめる)." },
     "wrong": [
       null,
-      { "zh": "「しめて」是「閉めて」（关上）。", "en": "しめて is 「閉めて」 (closing)." },
+      { "zh": "「かい」是「開」的音读（如「開始」），动词用训读「あける」。", "en": "かい is the on-reading of 「開」 (as in 「開始」); the verb is あける." },
       { "zh": "「つけて」是「点けて」（打开电器），一般写假名。", "en": "つけて means switching something on; it's usually written in kana." },
-      { "zh": "「けして」是「消して」（关掉）。", "en": "けして is 「消して」 (switching off)." }
+      { "zh": "没有促音「っ」，读「あけて」。", "en": "There's no small っ: あけて." }
     ]
   },
   {
@@ -1749,7 +1749,7 @@
     "type": "kanji",
     "difficulty": 2,
     "stem": "きのうの パーティーは とても <<楽しかった>>です。",
-    "options": ["たのしかった", "うれしかった", "らくしかった", "たのじかった"],
+    "options": ["たのしかった", "うれしかった", "らくしかった", "だのしかった"],
     "kj": "昨日のパーティーはとても楽しかったです。",
     "answer": 0,
     "tr": { "zh": "昨天的聚会很开心。", "en": "Yesterday's party was a lot of fun." },
@@ -1758,7 +1758,7 @@
       null,
       { "zh": "「うれしかった」是「嬉しかった」（高兴），是另一个词。", "en": "うれしかった is 「嬉しかった」 (was glad) — a different word." },
       { "zh": "「らく」是「楽」的音读（「楽な」＝轻松），「楽しい」不这样读。", "en": "らく is the reading in 「楽な」 (easy); 「楽しい」 isn't read that way." },
-      { "zh": "「し」不浊化，不是「じ」。", "en": "The し isn't voiced: not じ." }
+      { "zh": "开头是清音「た」，不是「だ」。", "en": "It starts unvoiced: た, not だ." }
     ]
   },
   {
@@ -1800,7 +1800,7 @@
     "type": "kanji",
     "difficulty": 2,
     "stem": "あの みせでは めずらしい くだものを <<売って>> います。",
-    "options": ["うって", "かって", "うりって", "うて"],
+    "options": ["うって", "かって", "うりって", "ばいって"],
     "kj": "あの店では珍しい果物を売っています。",
     "answer": 0,
     "tr": { "zh": "那家店卖少见的水果。", "en": "That shop sells unusual fruit." },
@@ -1809,7 +1809,7 @@
       null,
       { "zh": "「かって」是「買って」（买）。", "en": "かって is 「買って」 (buying)." },
       { "zh": "て形是「うって」，没有「り」。", "en": "The te-form is うって — there's no り." },
-      { "zh": "少了促音「っ」。", "en": "Missing the small っ." }
+      { "zh": "「ばい」是「売」的音读（如「売店」），动词用训读「うる」。", "en": "ばい is the on-reading of 「売」 (as in 「売店」); the verb is うる." }
     ]
   }
 ]
