@@ -219,7 +219,7 @@ The account button (top right) lets you sign in with a Google account or a code 
 ## 笔记的隐私||Notes: who sees what
 
 :::zh
-课文的每个语法点和练习题的解析下面可以记笔记。不登录也能写：笔记只存在这台设备的浏览器里，本站服务器收不到；登录后这些笔记会转到你的账号里，在各设备同步，也可以选择公开。看别人公开的笔记不用登录。部分专题页（比如「日语我爱你怎么说」）底部有公开讨论区：在那里写的是留言，需要登录，默认公开，审核规则和下面的笔记一样。
+课文的每个语法点和练习题的解析下面可以记笔记。不登录也能写：笔记只存在这台设备的浏览器里，本站服务器收不到；登录后这些笔记会转到你的账号里，在各设备同步，也可以选择公开。看别人公开的笔记不用登录。课文、专题页和练习页底部有「评论 / 反馈」：默认只发给站长，不用登录，和反馈一样处理（见下面「反馈与贡献」）；勾选「公开」就是公开评论，需要登录，审核规则和下面的笔记一样。
 
 - **私有和公开。** 笔记默认私有，只有你自己看得到。勾选「公开」后先经过审核，通过后所有人都能看到，显示的是你的昵称和印章头像，不显示邮箱。随时可以改回私有（已经有人回复的除外）或删除。
 - **审核。** 公开的笔记和回复先过一遍规则（链接、联系方式交给站长看），再交给 Anthropic 的 Claude 判断：明显没问题的直接公开，明显违规的退回并说明理由，拿不准的由站长人工看。AI 的每个决定站长都会复核。只有你选了公开的内容才会发给 Claude，私有笔记不会；Anthropic 按它的 API 条款处理这些内容，不拿来训练模型。
@@ -230,7 +230,7 @@ The account button (top right) lets you sign in with a Google account or a code 
 :::
 
 :::en
-You can keep notes under every grammar point of the lessons and under the explanation of every practice question. Without an account they stay in this browser and this site's server never receives them; sign in and they move to your account, sync across your devices, and can be shared. Reading other people's public notes needs no account. Some guide pages (such as "How to say I love you in Japanese") have a public discussion at the bottom: what you write there is a comment, needs an account, is public by default and is reviewed under the same rules as notes below.
+You can keep notes under every grammar point of the lessons and under the explanation of every practice question. Without an account they stay in this browser and this site's server never receives them; sign in and they move to your account, sync across your devices, and can be shared. Reading other people's public notes needs no account. Lessons, guide pages and practice pages end with "Comments & feedback": by default what you write goes only to the site owner, with no sign-in, handled like feedback (see "Feedback and contributions" below); tick "Public" to post a public comment, which needs a sign-in and is reviewed like the notes below.
 
 - **Private or public.** A note is private by default: only you see it. Tick "Public" and it is reviewed first; once approved everyone sees it, under your nickname and seal avatar, never your email. You can make it private again (unless someone has replied) or delete it at any time.
 - **Review.** Public notes and replies first go through a few rules (links and contact details go to the site owner), then to Anthropic's Claude: clearly fine notes go public at once, clear violations come back to you with a reason, and anything uncertain waits for the site owner. The owner also re-checks every decision the AI makes. Only what you chose to make public is sent to Claude, never private notes; Anthropic handles it under its API terms and does not train models on it.
@@ -258,7 +258,7 @@ You can keep notes under every grammar point of the lessons and under the explan
 - **GitHub Issues**：[提交 issue](https://github.com/Ralphbupt/japanese-grammar/issues)（推荐，公开追踪）
 - **GitHub PR**：直接提交修复，特别欢迎补充例句和易错点对比
 - **邮箱**：[hello@jpnotes.dev](mailto:hello@jpnotes.dev)
-- **页面里直接写**：练习题、模拟题、语法卡片页底部的「💬 反馈 / 建议」，以及每道题解析下的「这题有问题？」。匿名，不用登录。发送的只有：你写的文字、当前页面地址、界面语言；如果是针对某道题，还有题号、你选的选项和你勾的原因。为了防止刷屏，会存一个按日期加盐的 IP 哈希（每天换盐，无法还原 IP，也无法跨天关联），用来限制每人每天最多 20 条。数据存在本站自己的 Cloudflare D1 数据库里，只用来改进题目和网站。
+- **页面里直接写**：课文、练习题、模拟题、语法卡片页底部的「💬 评论 / 反馈」（不勾「公开」时），以及每道题解析下的「这题有问题？」。匿名，不用登录。发送的只有：你写的文字、当前页面地址、界面语言；如果是针对某道题，还有题号、你选的选项和你勾的原因。为了防止刷屏，会存一个按日期加盐的 IP 哈希（每天换盐，无法还原 IP，也无法跨天关联），用来限制每人每天最多 20 条。数据存在本站自己的 Cloudflare D1 数据库里，只用来改进题目和网站。
 - **回复怎么回到你这里**：第一次发反馈时，浏览器会生成一个随机编号（存在本机 localStorage），跟反馈一起发出。它不含任何个人信息，只用来把回复送回这个浏览器：之后打开本站时会拿这个编号问一下有没有回复，有就显示出来。登录了的话，编号会跟进度一起同步，换设备也能看到回复。想收到邮件可以留邮箱（选填）：只用来发这一封回复，发完就删除；90 天内没回复也会删除。
 
 我会回复每一个反馈。
@@ -270,7 +270,7 @@ Found a typo? Awkward example? Unclear explanation?
 - **GitHub Issues**: [open an issue](https://github.com/Ralphbupt/japanese-grammar/issues) — recommended, publicly tracked
 - **GitHub PR**: submit a fix directly; additions to examples and comparison notes especially welcome
 - **Email**: [hello@jpnotes.dev](mailto:hello@jpnotes.dev)
-- **Right on the page**: "💬 Feedback / suggestions" at the bottom of the practice, mock test and flashcard pages, and "Something wrong with this question?" under each explanation. Anonymous, no sign-in. What's sent: the text you write, the page address and the interface language; for a question, also its id, the option you picked and the reason you ticked. To stop flooding, a daily-salted hash of your IP is stored (the salt changes every day, so it can't be turned back into an IP or linked across days) and used to cap each reader at 20 notes a day. It's kept in this site's own Cloudflare D1 database and used only to fix questions and improve the site.
+- **Right on the page**: "💬 Comments & feedback" at the bottom of the lessons, practice, mock test and flashcard pages (with "Public" left unticked), and "Something wrong with this question?" under each explanation. Anonymous, no sign-in. What's sent: the text you write, the page address and the interface language; for a question, also its id, the option you picked and the reason you ticked. To stop flooding, a daily-salted hash of your IP is stored (the salt changes every day, so it can't be turned back into an IP or linked across days) and used to cap each reader at 20 notes a day. It's kept in this site's own Cloudflare D1 database and used only to fix questions and improve the site.
 - **How a reply reaches you**: the first time you send a note, your browser makes a random id (kept in its localStorage) and sends it along. It carries nothing about you; it only lets the reply find its way back to this browser: when you open the site later, it asks whether that id has a reply and shows it if so. If you're signed in, the id syncs with your progress, so replies show on your other devices too. To get an email as well, leave an address (optional): it's used only to send that one reply and deleted right after, or after 90 days if there's no reply.
 
 I respond to every piece of feedback.

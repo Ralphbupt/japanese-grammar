@@ -320,18 +320,20 @@
     addWordsToPhoneBar();
     if (document.getElementById('top-controls')) return;
     var hasSearch = document.getElementById('search-btn');
-    // Any page that loads the AI panel (lessons, practice pages, and a general mode elsewhere).
-    var hasAi = document.querySelector('script[src*="ai-assistant.js"]') && document.getElementById('ai-btn');
     var bar = document.createElement('div');
     bar.id = 'top-controls';
     bar.innerHTML =
+      // Language first (2026-11-26): 70 readers a week use it, mostly ones who
+      // landed on the other language's copy.
+      '<button type="button" class="tc-pill tc-lang js-lang-btn">EN</button>' +
       (hasSearch ? '<button type="button" class="tc-pill tc-icon" data-proxy="search-btn" aria-label="搜索 / Search" title="搜索 / Search ( / )">' + hasSearch.innerHTML + '</button>' : '') +
       // Theme (3 readers a day) left the bar on 2026-11-26; it is in the settings dialog.
-      (hasAi ? '<button type="button" class="tc-pill tc-icon" id="tc-ai" data-proxy="ai-btn" aria-label="问 AI / Ask AI" title="问 AI / Ask AI">' + document.getElementById('ai-btn').innerHTML + '</button>' : '') +
+      // Ask AI left the bar on 2026-11-26: most questions start from 讲解 next to
+      // a question or example; typing one (≈21 readers a week) is the sidebar's
+      // AI button and the phone bar's.
       // Furigana sits out here (2026-11-12): it is the one setting a reader flips
       // while working — on to read a lesson, off to test themselves on a question.
       '<button type="button" class="tc-pill tc-ruby js-ruby-btn" aria-label="汉字注音 / Furigana" title="汉字注音 / Furigana" lang="ja">ふりがな</button>' +
-      '<button type="button" class="tc-pill tc-lang js-lang-btn">EN</button>' +
       // 生词本 (2026-11-23): the word list's own page, with today's due count.
       discussLink('tc-pill tc-words tc-disc') +
       wordsLink('tc-pill tc-words') +

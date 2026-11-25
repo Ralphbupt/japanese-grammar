@@ -126,7 +126,14 @@ const AB_LOADER = AB_SRC ? `<script src="${AB_SRC}" defer></script>` : "";
 // it the "已掌握" buttons to hang a block under, practice pages an empty
 // <div class="jp-nt" data-nt="q:<id>"> in each explanation (site/quiz.js).
 // NOTES_SRC= (empty) builds without it; ?notes=local on a page talks to wrangler dev.
-const NOTES_SRC = process.env.NOTES_SRC !== undefined ? process.env.NOTES_SRC : "https://notes.jpnotes.dev/notes.js?v=12";
+const NOTES_SRC = process.env.NOTES_SRC !== undefined ? process.env.NOTES_SRC : "https://notes.jpnotes.dev/notes.js?v=13";
+// Comments (2026-11-26): the end-of-page 反馈 box became 评论 — the page's
+// discussion (notes.js, p:<page id>), whose composer sends privately to the
+// site owner by default (feedback.js, no sign-in) or publicly when ticked.
+// Personal pages keep the private box only; a guide whose markdown already
+// holds its discussion keeps that one. id="discuss" is where /discuss/ links.
+const NO_COMMENTS = new Set(["discuss", "my-notes", "my-grammar", "words", "review"]);
+const commentBox = (id, kind, has) => NOTES_SRC && !has && /^[a-z0-9][a-z0-9-]{1,60}$/.test(id) ? `<div class="jp-nt jp-nt-page jp-nt-cm" id="discuss" data-nt="p:${id}" data-fb="${kind}"></div>` : "";
 const NOTES_ORIGIN = NOTES_SRC ? " " + new URL(NOTES_SRC).origin : "";
 const NOTES_LOADER = NOTES_SRC ? `<script src="${NOTES_SRC}" defer></script>` : "";
 // Content-Security-Policy connect-src allowlist: the browser itself refuses
@@ -1636,6 +1643,7 @@ function langVariant(id, lang) {
   const others = PAGE_LANGS.filter(o => o !== lang);
   const at = (o) => `${SITE}${o.dir}${id}/`;
   return {
+    id,
     url: at(lang),
     htmlAttrs: ` data-force-lang="${lang.code}"` + others.map(o => ` data-alt-${o.code}="${SITE_PATH}${o.dir}${id}/"`).join(""),
     hreflang: PAGE_LANGS.map(o => `\n<link rel="alternate" hreflang="${o.hreflang}" href="${at(o)}">`).join("")
@@ -1668,7 +1676,14 @@ function iconize(html) {
   return html.slice(0, at) + body;
 }
 
+// Pages with a comment section, and their short names per language (from
+// <title>): /discuss/ lists the ones that have public comments.
+const COMMENT_PAGES = {};
 function writeLangPage(id, lang, html) {
+  if (html.includes(`data-nt="p:${id}"`) && id !== "discuss") {
+    const tt = (html.match(/<title>([^<]*)<\/title>/) || [])[1] || id;
+    (COMMENT_PAGES[id] = COMMENT_PAGES[id] || {})[lang.code] = tt.replace(/&amp;/g, "&").split(/ [—|–-] | \| |[:：]/)[0].trim().slice(0, 60);
+  }
   const dir = path.join(__dirname, "dist", lang.dir, id);
   fs.mkdirSync(dir, { recursive: true });
   // Bing mostly ignores hreflang and goes by the declared language, so every
@@ -2958,7 +2973,7 @@ async function main() {
       <a href="${SITE_PATH}contact/"><span class="lang-zh">联系我们</span><span class="lang-en">Contact</span></a>
       <a href="https://github.com/Ralphbupt" target="_blank">GitHub</a>
       <a href="https://liko.page/" target="_blank" rel="author">liko.page</a>
-      <a href="#feedback" class="fb-open"><span class="lang-zh">💬 反馈</span><span class="lang-en">💬 Feedback</span></a>
+      <a href="#feedback" class="fb-open"><span class="lang-zh">💬 评论 / 反馈</span><span class="lang-en">💬 Comments &amp; feedback</span></a>
     </nav>
     <p>© ${new Date().getFullYear()} <a href="https://jpnotes.dev/">jpnotes.dev</a> · <span class="lang-zh">内容采用 <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans" rel="license">CC BY-NC 4.0</a> 授权，转载请注明出处 jpnotes.dev，禁止商用</span><span class="lang-en">Content licensed <a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="license">CC BY-NC 4.0</a> — credit jpnotes.dev, non-commercial use only</span></p>
   </footer>
@@ -3733,7 +3748,7 @@ ${sidebarMarkupHtml}
     ${prevHtml}
     ${nextHtml}
   </nav>
-  <div id="quiz-feedback" data-fb="lesson"></div>
+  ${commentBox(lesson.id, "lesson", /class="jp-nt jp-nt-page"/.test(lesson.html))}<div id="quiz-feedback" data-fb="lesson"></div>
   ${siteFooterHtml}
 </main>
 ${AI_SCRIPT}
@@ -4859,7 +4874,7 @@ ${sidebarMarkupHtml}
   </nav>
   <header class="quiz-head"><h1>${m.h1}</h1><p>${m.lead}</p><p class="quiz-nav">${m.nav}</p></header>
   ${appAttrs === null ? m.body : `<div id="quiz-app" data-level="${level}" data-audio="${AUDIO_BASE}" ${appAttrs}></div>`}${m.about || ""}
-  <div id="quiz-feedback"></div>
+  ${NO_COMMENTS.has(lv.id) ? "" : commentBox(lv.id, "general", /class="jp-nt jp-nt-page/.test(m.body || ""))}<div id="quiz-feedback"${NO_COMMENTS.has(lv.id) ? ' data-fb="private"' : ""}></div>
   ${siteFooterHtml}
 </main>
 ${appAttrs === null ? "" : `<script src="${SITE_PATH}quiz.js?v=${QUIZ_JS_HASH}" defer></script>`}
@@ -5985,7 +6000,7 @@ window.addEventListener('hashchange',function(){var m=decodeURIComponent(locatio
         writeLangPage("discuss", lang, localizePage(renderQuiz(lang, {
           ...m, nav: "", ogImage: "og-image.png", noindex: true,
           // The pages' own discussions are rows of the same list (notes.js reads data-pages); no JS: plain links.
-          body: `${dCss}<div class="jp-nt jp-nt-page ds-board" id="discuss" data-nt="p:discuss" data-pages="${escD(JSON.stringify(dpages.map((id) => { const t = SEO_TITLES[id] || {}; return [id, ((en ? t.en : t.zh) || id).split(/ [—-] |[:：]/)[0]]; })))}"><div class="ds-pages">${cards}</div></div>`,
+          body: `${dCss}<div class="jp-nt jp-nt-page ds-board" id="discuss" data-nt="p:discuss" data-pages="${escD(JSON.stringify(dpages.map((id) => { const t = SEO_TITLES[id] || {}; return [id, ((en ? t.en : t.zh) || id).split(/ [—-] |[:：]/)[0]]; })))}" data-more="${escD(JSON.stringify(Object.keys(COMMENT_PAGES).filter((id) => !dpages.includes(id)).map((id) => [id, COMMENT_PAGES[id][lang.code] || id])))}"><div class="ds-pages">${cards}</div></div>`,
           about: "",
           schema: JSON.stringify([{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: en ? "Japanese Grammar Notes" : "日语语法笔记", item: SITE }, { "@type": "ListItem", position: 2, name: m.crumb, item: v.url }] }]).replace(/</g, "\\u003c"),
         }, v, "", null), lang, localizedPageIds));

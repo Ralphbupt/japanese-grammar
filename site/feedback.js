@@ -119,7 +119,7 @@
   function render(box) {
     if (box.querySelector('.fb')) return box.querySelector('.fb');
     var lesson = box.getAttribute('data-fb') === 'lesson';
-    box.innerHTML = '<details class="fb"><summary>💬 ' + (lesson ? t('这一课有问题？反馈给作者', 'Spotted a problem in this lesson? Tell us') : t('反馈 / 建议', 'Feedback / suggestions')) + '</summary>' +
+    box.innerHTML = '<details class="fb"><summary>💬 ' + (lesson ? t('这一课有问题？反馈给作者', 'Spotted a problem in this lesson? Tell us') : t('评论 / 反馈', 'Comments & feedback')) + '</summary>' +
       '<p class="fb-note">' + note(box) + '</p>' +
       '<textarea maxlength="1000" rows="4" placeholder="' + t('写点什么……', 'Write something…') + '"></textarea>' + emailField() +
       '<div class="fb-row"><button class="fb-send" type="button">' + t('发送', 'Send') + '</button><span class="fb-msg" aria-live="polite"></span></div>' +
@@ -184,8 +184,18 @@
       }).catch(function () {});
   }
 
+  // 评论 / 反馈 (2026-11-26): where the page has a comment section (notes.js,
+  // .jp-nt-page), that is the box — its composer sends here unless made public
+  // — and #quiz-feedback only lists the owner's replies. If the notes script
+  // never fills it (blocked, down), the old private box comes back.
+  function cmSection() { return document.querySelector('.jp-nt-page:not(.ds-board)'); }
+  function repliesOnly(b) { if (!b.querySelector('.fb-mine')) { b.innerHTML = '<div class="fb-mine"></div>'; mine(b); } }
   var box = document.getElementById('quiz-feedback');
-  if (box) render(box);
+  if (box && cmSection() && box.getAttribute('data-fb') !== 'private') {
+    repliesOnly(box);
+    var fallback = function () { var c = cmSection(); if (c && !c.children.length) { box.innerHTML = ''; render(box); } };
+    if (document.readyState === 'complete') setTimeout(fallback, 6000); else window.addEventListener('load', function () { setTimeout(fallback, 6000); });
+  } else if (box) render(box);
   // After the page has settled: not in the way of anything the page loads first.
   setTimeout(checkReplies, 2500);
 
@@ -194,6 +204,13 @@
     var a = e.target.closest && e.target.closest('.fb-open');
     if (!a) return;
     e.preventDefault();
+    var cs = cmSection(), add = cs && cs.querySelector('[data-nt-act="new"]');
+    if (add) {
+      cs.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      if (!cs.querySelector('.nt-slot[data-slot="new"] .nt-form')) add.click();
+      if (window.gaEvent) window.gaEvent('feedback_open', { from: 'footer', to: 'comments' });
+      return;
+    }
     var b = document.getElementById('quiz-feedback');
     if (!b) {
       b = document.createElement('div');
