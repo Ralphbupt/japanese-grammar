@@ -202,7 +202,7 @@
   })();
   // Side card (2026-11-26, owner: "大量的空白区域，放一个小窗口；手机要克制"):
   // on wide desktops a small italki card sits in the empty gutter right of the
-  // text, below the top bar — only while that gutter has room (card 128–210 px)
+  // text, bottom right (owner 11-26: 右下角) — only while that gutter has room (card 128–210 px)
   // (never on phones), hidden while the AI panel is open, × hides it for 7 days.
   // Lessons, guides and the practice pages only. GA where=side.
   (function () {
@@ -237,6 +237,7 @@
       var gutter = window.innerWidth - c.getBoundingClientRect().right, w = Math.min(210, gutter - 18);
       el.hidden = w < 128 || document.body.classList.contains('ai-open');
       if (!el.hidden) { el.style.width = w + 'px'; el.style.right = Math.max(8, Math.round((gutter - w) / 2)) + 'px'; var nar = w < 180; el.classList.toggle('aff-narrow', nar);
+        el.querySelector('.aff-h').lastChild.nodeValue = nar ? t2('一对一日语老师', '1-on-1 tutors') : t2('找日语老师一对一练', '1-on-1 Japanese tutors');
         el.querySelector('.aff-btn').textContent = nar ? NAME + ' →' : t2('看看 ' + NAME + ' →', 'Browse ' + NAME + ' →');
         el.querySelector('.aff-note').textContent = nar ? t2('广告 · 本站得佣金', 'Ad · we earn a commission') : t2('广告：经此链接购课本站得佣金，价格不变。', 'Ad: jpnotes earns a commission; your price is the same.'); }
     }
@@ -244,6 +245,9 @@
       if (!document.querySelector('article.lesson, #quiz-app')) return;
       build(); place();
       window.addEventListener('resize', place);
+      // The column settles after load (sidebar, fonts): measure again then.
+      window.addEventListener('load', function () { place(); setTimeout(place, 500); });
+      setTimeout(place, 800);
       // The sidebar opening / closing and the AI panel change the room.
       if ('MutationObserver' in window) new MutationObserver(place).observe(document.body, { attributes: true, attributeFilter: ['class'] });
     }

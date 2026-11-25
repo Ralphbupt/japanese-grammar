@@ -6714,12 +6714,14 @@ ${p} blockquote { background: rgba(233, 69, 96, 0.08); }
 }
 const CSS = minifyCss(`
 /* Affiliate card (PR) */
-.aff-side { position: fixed; right: 16px; top: 76px; z-index: 30; width: 210px; box-sizing: border-box; margin: 0; padding: .75rem .85rem; font-size: .84rem; border-style: solid; box-shadow: 0 2px 10px rgba(0,0,0,.06); }
+.aff-side { position: fixed; right: 16px; top: auto; bottom: calc(16px + var(--sab, env(safe-area-inset-bottom, 0px))); z-index: 30; width: 210px; box-sizing: border-box; margin: 0; padding: .75rem .85rem; font-size: .84rem; border-style: solid; box-shadow: 0 2px 10px rgba(0,0,0,.06); }
 .aff-side .aff-btn { padding: .35rem .75rem; font-size: .82rem; }
 .aff-side .aff-note { font-size: .72rem; }
 .aff-narrow p:not(.aff-h):not(.aff-note):not(:has(.aff-btn)) { display: none; }
 .aff-narrow { padding: .65rem .55rem; }
-.aff-narrow .aff-h { font-size: .8rem; line-height: 1.45; padding-right: .6rem; }
+.aff-narrow .aff-h { font-size: .8rem; line-height: 1.45; padding-right: .2rem; white-space: nowrap; }
+.aff-narrow .aff-note { font-size: .66rem; white-space: nowrap; margin-bottom: 0; }
+.aff-narrow .aff-pr { font-size: .66rem; }
 .aff-narrow .aff-btn { display: block; text-align: center; padding: .3rem .3rem; border-radius: 8px; white-space: nowrap; font-size: .76rem; }
 .aff-narrow .aff-pr { display: table; margin: 0 0 .25rem; }
 .aff-x { position: absolute; top: 4px; right: 6px; border: 0; background: none; color: var(--text-muted); font-size: 1rem; line-height: 1; cursor: pointer; padding: 4px; }
