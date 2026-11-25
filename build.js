@@ -879,7 +879,9 @@ if ('serviceWorker' in navigator) window.addEventListener('load', function() {
 // visit = 30+ minutes since the last page), a small card offers to put jpnotes
 // on the home screen — the browser's own install dialog where Chromium offers
 // one (beforeinstallprompt), steps for iPhone Safari, a bookmark shortcut on
-// other desktops. 以后再说 hides it for 7 days; an install hides it for good.
+// other desktops. Once shown it stays away for 7 days whatever the reader did
+// (until 11-26 only 以后再说 did, so a card left alone came back in every new
+// tab), and after 3 showings never again; an install hides it for good.
 // Not in app browsers (they can't), not when already installed, not in mock
 // tests. GA: a2hs_show / a2hs_click / a2hs_later / a2hs_prompt / a2hs_installed.
 const A2HS_JS = `<script>
@@ -902,7 +904,7 @@ const A2HS_JS = `<script>
   st.last = now; save();
   var standalone = (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone;
   var ua = navigator.userAgent || '';
-  if (st.done || standalone || st.n < 2 || (st.snooze || 0) > now) return;
+  if (st.done || standalone || st.n < 2 || (st.snooze || 0) > now || (st.shows || 0) >= 3 || now - (st.seen || 0) < 7 * 864e5) return;
   if (/MicroMessenger|QQ\\/|Weibo|aweme|Bytedance|NewsArticle|Quark|UCBrowser|baiduboxapp|xhsdiscover|DingTalk|Lark|Feishu| Line\\/|FBAN|FBAV|Instagram|KAKAOTALK|GSA\\//i.test(ua)) return;
   if (/mock|cram/.test(location.pathname)) return;
   try { if (sessionStorage.getItem('jp_a2hs_shown')) return; } catch (e) {}
@@ -936,6 +938,7 @@ const A2HS_JS = `<script>
       '<button type="button" class="a2hs-later">' + T.later + '</button></div></div>';
     document.body.appendChild(c);
     try { sessionStorage.setItem('jp_a2hs_shown', '1'); } catch (e) {}
+    st = load() || st; st.seen = Date.now(); st.shows = (st.shows || 0) + 1; save();   // other tabs and later visits see it too
     ev('a2hs_show', { how: how, n: st.n });
     var go = c.querySelector('.a2hs-go');
     if (go) go.addEventListener('click', function() {
