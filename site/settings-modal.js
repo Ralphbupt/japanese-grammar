@@ -164,7 +164,12 @@
   // the link (no sentence about prices).
   var AFF = { italki: 'https://www.italki.com/affshare?ref=af34594643', preply: 'https://preply.sjv.io/c/8329129/2040424/24422' };
   var affProg = (function () {
-    var p = null; try { p = localStorage.getItem('jp_aff_p'); } catch (e) {}
+    var p = null;
+    // Preview (owner): ?aff=italki or ?aff=preply puts this browser on that
+    // program and brings back the side card and today's result card.
+    var force = (location.search.match(/[?&]aff=(italki|preply)\b/) || [])[1];
+    if (force) try { localStorage.setItem('jp_aff_p', force); localStorage.removeItem('jp_aff_side_off'); localStorage.removeItem('jp_aff_day'); } catch (e) {}
+    try { p = localStorage.getItem('jp_aff_p'); } catch (e) {}
     if (!AFF[p]) { p = Math.random() < 0.5 ? 'italki' : 'preply'; try { localStorage.setItem('jp_aff_p', p); } catch (e) {} }
     return p;
   })();
