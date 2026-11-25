@@ -651,8 +651,9 @@ async function bundleLevel(level, ruby, mock) {
       const ckTexts = [q0.scene, q0.question, ...(rec ? rec.questions.map((p) => p.question) : []), ...q0.lines.map((l) => l[1]), ...q0.options];
       // cksp: [surface, lemma] per transcript part (key = part + index, as
       // quiz.js's ckParts), so the words are tappable in the transcript itself.
+      // Mock tests too (they go into the key, so nothing shows before submitting).
       let cksp;
-      if (!mock) {
+      {
         const all = WORDS.wordsOf(level, ckTexts.filter(Boolean)), sp = (x) => (x ? WORDS.spansOf(x).filter(([, l]) => all.includes(l)).map(([w, l]) => (w === l ? w : [w, l])) : []);   // a word already in its dictionary form: just the string
         cksp = {};
         const put = (k, x) => { const v = sp(x); if (v.length) cksp[k] = v; };
@@ -854,7 +855,7 @@ function optionAudio(q) {
 async function bundleMock(level, ruby, n) {
   const b = await bundleLevel(level, ruby, n);
   const cfg = MOCK[level];
-  const SECRET = ["answer", "order", "why", "wrong", "full", "tr", "kj", "okj", "sa", "ck"];
+  const SECRET = ["answer", "order", "why", "wrong", "full", "tr", "kj", "okj", "sa", "ck", "cksp"];
   const key = { questions: {}, passages: {} };
   const qs = b.questions.map((q) => {
     key.questions[q.id] = Object.fromEntries(SECRET.filter((k) => k in q).map((k) => [k, q[k]]));

@@ -5670,6 +5670,8 @@ window.addEventListener('hashchange',function(){var m=decodeURIComponent(locatio
     }
     if (!mocks.length) continue;
     // Mock tests: the test file, and its answer key loaded only after submitting.
+    // The level's word dictionary: transcript words are tappable in the review (2026-11-26).
+    for (const { test } of mocks) if (practice.wsrc) test.wsrc = practice.wsrc;
     const sets = mocks.map(({ test, key }) => ({ id: test.id, n: test.n, src: writeQuizDataByLang(`${test.id}.json`, test), key: writeQuizDataByLang(`${test.id}.key.json`, key) }));
     // sections: what each test is, for the mock list's one-line summary (setWhat() in quiz.js).
     // test.sections are the sittings actually written, so a listening sitting left out for missing audio isn't listed.
