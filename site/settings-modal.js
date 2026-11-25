@@ -157,7 +157,12 @@
   // Two tutor programs (2026-11-26): each browser is put on one of them for
   // good (jp_aff_p), so a reader always sees the same one; the cards are written
   // for italki and swapped to Preply here. prog travels with aff_show / aff_click.
-  var AFF = { italki: 'https://www.italki.com/affshare?ref=af34594643', preply: 'https://preply.sjv.io/4a9XA1' };
+  // Preply: its own approved asset "Japanese subject + EN version + discount"
+  // (Japanese tutors page with the new-student offer). Preply's terms require
+  // its approval for any wording we write ourselves and for price claims, so
+  // until it approves the card text, a Preply card keeps only the title and
+  // the link (no sentence about prices).
+  var AFF = { italki: 'https://www.italki.com/affshare?ref=af34594643', preply: 'https://preply.sjv.io/c/8329129/2040424/24422' };
   var affProg = (function () {
     var p = null; try { p = localStorage.getItem('jp_aff_p'); } catch (e) {}
     if (!AFF[p]) { p = Math.random() < 0.5 ? 'italki' : 'preply'; try { localStorage.setItem('jp_aff_p', p); } catch (e) {} }
@@ -168,6 +173,7 @@
     if (affProg === 'italki' || card.getAttribute('data-aff-p') === affProg) return;
     card.setAttribute('data-aff-p', affProg);
     card.querySelectorAll('a[data-aff]').forEach(function (a) { a.href = AFF[affProg]; a.setAttribute('data-aff', affProg); });
+    card.querySelectorAll('p').forEach(function (p) { if (!p.classList.contains('aff-h') && !p.classList.contains('aff-note') && !p.querySelector('a')) p.remove(); });
     var w = document.createTreeWalker(card, NodeFilter.SHOW_TEXT), n;
     while ((n = w.nextNode())) if (n.nodeValue.indexOf('italki') >= 0) n.nodeValue = n.nodeValue.replace(/italki/g, 'Preply');
   }
