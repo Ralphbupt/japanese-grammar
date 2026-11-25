@@ -22,6 +22,11 @@ const GRAMMAR_DIRS = [
 ];
 // Display names for non-level groups (sidebar header, breadcrumb, hub page).
 const GROUP_NAMES = { guides: { zh: "专题", en: "Guides" } };
+// Sidebar by level: each level's name and its row of pages ([kind, zh, en,
+// path when not /{level}-{kind}/]); "cards" are grammar flashcards.
+const SB_LV_NAME = { N5: ["入门", "Beginner"], N4: ["初级", "Elementary"], N3: ["中级", "Intermediate"], N2: ["中高级", "Upper-intermediate"], N1: ["高级", "Advanced"] };
+const SB_KINDS = [["practice", "练习题", "Practice"], ["listening", "听力", "Listening"], ["reading", "阅读", "Reading"], ["mock-test", "模拟题", "Mock tests"],
+  ["cards", "语法卡片", "Grammar cards"], ["grammar-audio", "语法听读", "Grammar audio"], ["past-exam-grammar", "真题语法", "Past-test grammar", (l) => `jlpt-${l}-past-exam-grammar/`]];
 const groupName = (label, lang) => (GROUP_NAMES[label] ? GROUP_NAMES[label][lang] : label);
 // Hand-written per-page <title>s (and optional descriptions) — see seo-titles.js.
 const SEO_TITLES = require("./seo-titles");
@@ -173,10 +178,7 @@ const THEME_INIT_SCRIPT = `<script>
       h.className += ' ' + x.cls;
       if (x.css) { var st = document.createElement('style'); st.id = 'ab-early'; st.textContent = x.css; document.head.appendChild(st); }
       if (x.wait) { h.classList.add('ab-pending'); setTimeout(function() { h.classList.remove('ab-pending'); }, 1500); }
-    }${AB_SRC ? `
-    // First visit: nothing stored yet, but the launched sidebar is rebuilt by
-    // ab.js all the same; hide it until then so it doesn't jump.
-    else { h.classList.add('ab-pending'); setTimeout(function() { h.classList.remove('ab-pending'); }, 1500); }` : ""}
+    }
   } catch (e) {}
 })();
 </script>`;
@@ -2646,9 +2648,27 @@ async function main() {
       if (/^lesson\d/.test(file.id)) html = LESSON_WORDS.page(file.id, group.label, md, html);
       lessonPages.push({ id: file.id, title, sidebarTitle, html, jaTitle: jaTitle || shortTitle, filePath: file.path, grammarPoints, cleanPoints, cleanPointsEn, level: group.label, md, topLead, firstMeaningZh, topLeadEn, firstMeaningEn, lastMod: lessonLastMod, firstMod: lessonFirstMod, readingMin });
     }
-    // Accordion group: clickable level header toggles its lesson list. The
-    // first item is an "overview" link to the per-level /N{level}/ page (the
-    // direct level link the old flat nav-group used to be).
+    // A level (sidebar by level, A/B nav launched 2026-11-18): the level tag +
+    // its name, a row of the level's pages (practice … overview), then its
+    // lessons. The checklist is linked from the overview page.
+    if (/^N[1-5]$/.test(group.label)) {
+      const L = group.label, l = L.toLowerCase();
+      const chips = SB_KINDS.map(([kind, zh, en, href]) =>
+        `<a data-nav="chip" href="${SITE_PATH}${href ? href(l) : `${l}-${kind}/`}"><span class="lang-zh">${zh}</span><span class="lang-en">${en}</span></a>`).join("") +
+        `<a data-nav="chip" href="${SITE_PATH}${L}/"><span class="lang-zh">总览</span><span class="lang-en">Overview</span></a>`;
+      sidebarHtml.push(
+        `<div class="nav-group-wrap" data-level="${L}">
+    <button type="button" class="nav-group" aria-expanded="false"><span class="nav-group-label"><span class="sb-lvrow"><span class="sb-lv">${L}</span><span class="sb-lvname"><span class="lang-zh">${SB_LV_NAME[L][0]}</span><span class="lang-en">${SB_LV_NAME[L][1]}</span></span></span></span><span class="nav-caret" aria-hidden="true">▸</span></button>
+    <div class="nav-group-items">
+      <div class="sb-chips">${chips}</div><div class="sb-lessons"><span class="lang-zh">语法课</span><span class="lang-en">Grammar lessons</span></div>
+      ${groupItems.filter((x) => !x.includes("_grammar_list/")).join("\n      ")}
+    </div>
+  </div>`
+      );
+      continue;
+    }
+    // Accordion group: clickable header toggles its list (专题). The first
+    // item is an "overview" link to the group's own page.
     sidebarHtml.push(
       `<div class="nav-group-wrap" data-level="${group.label}">
     <button type="button" class="nav-group" aria-expanded="false"><span class="nav-group-label">${GROUP_NAMES[group.label] ? `<span class="lang-zh">${groupName(group.label, "zh")}</span><span class="lang-en">${groupName(group.label, "en")}</span>` : group.label}</span><span class="nav-caret" aria-hidden="true">▸</span></button>
@@ -2661,20 +2681,24 @@ async function main() {
   }
   // 做题 group, like 专题: the practice hub, then each level's practice, mock test and flashcards.
   const practiceItems = QUIZ_LINKS ? QUIZ_LEVELS.flatMap((lv) => quizPages(lv).map((q) => ({ ...q, lv }))) : [];
-  // 做题 and 专题 go first: they're the most-used entries, and collapsed each is one row.
+  // Levels first under 按级别, then 更多: all-level hubs (做题), then 专题.
   const guidesGroup = sidebarHtml.findIndex((g) => g.includes('data-level="guides"'));
-  if (guidesGroup >= 0) sidebarHtml.unshift(...sidebarHtml.splice(guidesGroup, 1));
-  if (practiceItems.length) sidebarHtml.unshift(`<div class="nav-group-wrap" data-level="practice">
-    <button type="button" class="nav-group" aria-expanded="false"><span class="nav-group-label"><span class="lang-zh">做题</span><span class="lang-en">Practice</span></span><span class="nav-caret" aria-hidden="true">▸</span></button>
+  const guidesHtml = guidesGroup >= 0 ? sidebarHtml.splice(guidesGroup, 1)[0] : "";
+  const hub = (href, zh, en) => `<a class="nav-item nav-overview" href="${SITE_PATH}${href}/"><span class="lang-zh">${zh}</span><span class="lang-en">${en}</span></a>`;
+  sidebarHtml.unshift(`<div class="sb-sec"><span class="lang-zh">按级别</span><span class="lang-en">By level</span></div>`);
+  sidebarHtml.push(`<div class="sb-sec"><span class="lang-zh">更多</span><span class="lang-en">More</span></div>`);
+  if (practiceItems.length) sidebarHtml.push(`<div class="nav-group-wrap" data-level="practice">
+    <button type="button" class="nav-group" aria-expanded="false"><span class="nav-group-label"><span class="lang-zh">全部级别</span><span class="lang-en">All levels</span></span><span class="nav-caret" aria-hidden="true">▸</span></button>
     <div class="nav-group-items">
-      <a class="nav-item nav-overview" href="${SITE_PATH}practice/"><span class="lang-zh">做题总览</span><span class="lang-en">Practice hub</span></a>
-      ${practiceItems.some((q) => q.href.endsWith("-listening/")) ? `<a class="nav-item nav-overview" href="${SITE_PATH}listening/"><span class="lang-zh">听力总览</span><span class="lang-en">Listening</span></a>` : ""}
-      <a class="nav-item nav-overview" href="${SITE_PATH}reading/"><span class="lang-zh">阅读总览</span><span class="lang-en">Reading</span></a>
-      <a class="nav-item nav-overview" href="${SITE_PATH}vocabulary/"><span class="lang-zh">词汇总览</span><span class="lang-en">Vocabulary</span></a>
-      <a class="nav-item nav-overview" href="${SITE_PATH}mock-test/"><span class="lang-zh">模拟题总览</span><span class="lang-en">Mock tests</span></a>
-      ${practiceItems.some((q) => q.href.endsWith("-grammar-audio/")) ? `<a class="nav-item nav-overview" href="${SITE_PATH}grammar-audio/"><span class="lang-zh">语法听读</span><span class="lang-en">Grammar audio</span></a>` : ""}
+      ${hub("practice", "各级练习题", "Practice hub")}
+      ${practiceItems.some((q) => q.href.endsWith("-listening/")) ? hub("listening", "听力", "Listening") : ""}
+      ${hub("reading", "阅读", "Reading")}
+      ${hub("vocabulary", "词汇", "Vocabulary")}
+      ${hub("mock-test", "模拟题", "Mock tests")}
+      ${practiceItems.some((q) => q.href.endsWith("-grammar-audio/")) ? hub("grammar-audio", "语法听读", "Grammar audio") : ""}
     </div>
   </div>`);
+  if (guidesHtml) sidebarHtml.push(guidesHtml);
 
   // ─── Cross-link related grammar points between lessons ───
   // Build an index: grammar term → { lessonId, slug }
@@ -2941,7 +2965,7 @@ async function main() {
     <button type="button" class="m-btn" data-m="settings" aria-label="账号与设置 / Account & settings">${ICON_USER}</button>
   </div>`;
   const sidebarMarkupHtml = `${mobileBarHtml}
-<nav id="sidebar" class="collapsed">
+<nav id="sidebar" class="collapsed" data-ab-nav="1">
   <div class="nav-tools">
     <button id="menu-toggle" type="button" class="nav-tool-btn" aria-label="显示/收起侧栏 / Toggle sidebar" title="显示/收起侧栏 / Toggle sidebar">${ICON_SIDEBAR}</button>
     <button id="search-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="搜索 / Search" title="搜索 / Search ( / )">${ICON_SEARCH}</button>
@@ -2950,6 +2974,8 @@ async function main() {
   </div>
   <div class="nav-scroll">
   <div class="nav-header"><a href="${SITE_PATH}" style="color:inherit;text-decoration:none;"><span class="seal-mark" aria-hidden="true" lang="ja">合格</span>jpnotes.dev</a></div>
+  <a class="sb-today" data-nav="today" href="${SITE_PATH}practice/"><span><b><span class="lang-zh">开始做题</span><span class="lang-en">Start practising</span></b><small><span class="lang-zh">选一个级别</span><span class="lang-en">Pick a level</span></small></span><span class="sb-go">›</span></a>
+  <div class="sb-chips sb-mine"><a data-nav="mine" href="${SITE_PATH}words/"><span class="lang-zh">生词本</span><span class="lang-en">Word list</span></a><a data-nav="mine" href="${SITE_PATH}my-grammar/"><span class="lang-zh">我的语法卡</span><span class="lang-en">Grammar cards</span></a></div>
   ${sidebarHtml.join("\n  ")}
   </div>
 </nav>
@@ -2984,31 +3010,48 @@ async function main() {
   var path = location.pathname.replace(/\\/$/, '');
   var slug = path.split('/').pop();
 
-  // Mark the current lesson/level entry active.
+  // A level's own page (n3-reading, n3-vocabulary-list, jlpt-n3-past-exam-grammar …).
+  var pl = (path.match(/\\/(?:jlpt-)?n([1-5])-/) || [])[1], curLv = pl ? 'N' + pl : null;
+  // Mark the current entry: a lesson, a hub, or a page in a level's row (.on).
   var item = slug ? (sidebar.querySelector('a[data-target="' + slug + '"]')
           || sidebar.querySelector('.nav-group-wrap a[href$="/' + slug + '/"]')
           || sidebar.querySelector('a[href$="/' + slug + '/"]')) : null;
-  // A level's practice page (n3-reading, n3-cards …) lights up its hub in 做题.
-  if (!item && /^n[1-5]-/.test(slug || '')) {
-    var hub = slug.replace(/^n[1-5]-/, '');
-    item = sidebar.querySelector('.nav-group-wrap[data-level="practice"] a[href$="/' + (hub === 'cards' ? 'vocabulary' : hub) + '/"]');
-  }
-  if (item) item.classList.add('active');
+  if (item) item.classList.add(item.closest('.sb-chips') ? 'on' : 'active');
 
   function setExpanded(w, on) {
     w.classList.toggle('expanded', on);
     var btn = w.querySelector('.nav-group');
     if (btn) btn.setAttribute('aria-expanded', on ? 'true' : 'false');
   }
-  // Open the group holding the active item; else the level named in the URL
-  // (/N5/ or N5_grammar_list); else N5.
-  var activeWrap = item ? item.closest('.nav-group-wrap') : null;
+  // Open the level of the page; else the group holding the active item; else
+  // the level named in the URL (/N5/ or N5_grammar_list, both light 总览).
+  var activeWrap = curLv ? sidebar.querySelector('.nav-group-wrap[data-level="' + curLv + '"]') : null;
+  if (!activeWrap && item) activeWrap = item.closest('.nav-group-wrap');
   if (!activeWrap) {
     var lvl = (path.match(/\\/(N[1-5])(?=\\b|\\/|_)/) || [])[1] || (slug && (slug.match(/^(N[1-5])/) || [])[1]);
-    if (lvl) activeWrap = sidebar.querySelector('.nav-group-wrap[data-level="' + lvl + '"]');
+    if (lvl) {
+      activeWrap = sidebar.querySelector('.nav-group-wrap[data-level="' + lvl + '"]');
+      var ov = activeWrap && activeWrap.querySelector('.sb-chips a[href$="/' + lvl + '/"]');
+      if (ov) ov.classList.add('on');
+    }
   }
   // Nowhere in particular (the home page): practice is what readers come for.
   if (!activeWrap && wraps.length) activeWrap = sidebar.querySelector('.nav-group-wrap[data-level="practice"]') || sidebar.querySelector('.nav-group-wrap[data-level="N5"]') || wraps[0];
+  // Continue row: the level last practised (quiz.js keeps jp_up), else this page's; the streak.
+  try {
+    var up0 = JSON.parse(localStorage.getItem('jp_up') || 'null') || {}, days = (JSON.parse(localStorage.getItem('jp_quiz_v1') || 'null') || {}).days || {};
+    var wl = activeWrap && activeWrap.getAttribute('data-level'), clv = up0.lv || (/^N[1-5]$/.test(wl || '') ? wl : null);
+    var dk = function (d) { return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); };
+    var sk = 0, d = new Date();
+    if (!days[dk(d)]) d.setDate(d.getDate() - 1);
+    while (days[dk(d)]) { sk++; d.setDate(d.getDate() - 1); }
+    var row = sidebar.querySelector('.sb-today'), B = function (zh, en) { return '<span class="lang-zh">' + zh + '</span><span class="lang-en">' + en + '</span>'; };
+    if (row && (clv || sk)) {
+      if (clv) row.href = '${SITE_PATH}' + (/^\\/zh\\//.test(location.pathname) ? 'zh/' : '') + clv.toLowerCase() + '-practice/';
+      row.firstChild.innerHTML = '<b>' + (clv ? B('继续练习 · ', 'Continue · ') + clv : B('开始做题', 'Start practising')) + '</b><small>' +
+        (sk ? B('连续 ' + sk + ' 天', sk + '-day streak') : clv ? B('今天还没做', 'Not started today') : B('选一个级别', 'Pick a level')) + '</small>';
+    }
+  } catch (e) {}
   wraps.forEach(function(w){ setExpanded(w, w === activeWrap); });
   wraps.forEach(function(w){
     var btn = w.querySelector('.nav-group');
@@ -6857,6 +6900,31 @@ body:not(.has-ai) .nav-tool-ai {
   color: var(--sidebar-hover-text); background: var(--ui-soft);
   border-left-color: var(--ui);
 }
+/* Sidebar by level (A/B nav, launched 2026-11-18): continue row, the reader's
+   lists, level tag + name, a row of the level's pages, then its lessons. */
+#sidebar .nav-group { font-size: .8rem; letter-spacing: .02em; text-transform: none; padding: .55rem 1.2rem .35rem; }
+#sidebar .nav-group-wrap + .nav-group-wrap { border-top: 1px solid var(--sidebar-border, var(--border)); }
+#sidebar .sb-today { display: flex; align-items: center; gap: .6rem; margin: .1rem .8rem .6rem; padding: .55rem .7rem; border-radius: var(--radius); background: var(--ui-soft); color: var(--sidebar-heading); text-decoration: none; font-size: .82rem; line-height: 1.35; }
+#sidebar .sb-today b { font-weight: 700; }
+#sidebar .sb-today small { display: block; color: var(--sidebar-text); font-size: .74rem; }
+#sidebar .sb-today .sb-go { margin-left: auto; font-size: 1.1rem; color: var(--ui); }
+#sidebar .sb-sec { font-size: .66rem; letter-spacing: .08em; color: var(--sidebar-text); opacity: .8; padding: .7rem 1.2rem .15rem; font-weight: 600; }
+#sidebar .sb-lvrow { display: inline-flex; align-items: center; gap: .5rem; }
+#sidebar .sb-lv { font: 700 .7rem/1 system-ui, sans-serif; letter-spacing: .04em; color: #16203a; border-radius: 3px; padding: .28em .4em .22em; }
+#sidebar [data-level="N5"] .sb-lv { background: #b9ecd0; }
+#sidebar [data-level="N4"] .sb-lv { background: #b8dcff; }
+#sidebar [data-level="N3"] .sb-lv { background: #ffe072; }
+#sidebar [data-level="N2"] .sb-lv { background: #ffbe94; }
+#sidebar [data-level="N1"] .sb-lv { background: #dcc2ff; }
+#sidebar .sb-lvname { font-weight: 600; color: var(--sidebar-heading); }
+#sidebar .sb-chips { display: flex; flex-wrap: wrap; gap: .3rem; padding: .25rem 1rem .5rem 1.2rem; }
+#sidebar .sb-chips a { font-size: .72rem; padding: .22rem .55rem; border: 1px solid var(--sidebar-border, var(--border)); border-radius: 999px; color: var(--sidebar-text); text-decoration: none; }
+#sidebar .sb-chips a:hover { border-color: var(--ui); color: var(--sidebar-heading); }
+#sidebar .sb-chips a.on { background: var(--ui); border-color: var(--ui); color: var(--ui-on); }
+#sidebar .sb-mine { padding-top: .55rem; padding-bottom: .2rem; }
+#sidebar .sb-mine a { font-size: .78rem; padding: .28rem .7rem; }
+#sidebar .sb-lessons { font-size: .66rem; letter-spacing: .06em; color: var(--sidebar-text); opacity: .8; padding: .2rem 1.2rem .1rem; }
+#sidebar .nav-group-items .nav-item { padding-top: .22rem; padding-bottom: .22rem; }
 
 /* Main */
 #content {

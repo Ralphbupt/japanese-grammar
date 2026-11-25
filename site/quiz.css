@@ -42,6 +42,12 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-aud a { display: inline-flex; align-items: center; gap: .35rem; padding: .5rem .85rem; min-height: 40px; box-sizing: border-box; border: 1px solid var(--border); border-radius: 999px; background: var(--card-bg); color: var(--text); text-decoration: none; font-size: .92rem; }
 .q-aud a:hover, .q-aud a:focus-visible { border-color: var(--ui); color: var(--ui); }
 .q-aud small { color: var(--text-muted); }
+.q-gm { display: flex; flex-wrap: wrap; align-items: baseline; gap: .3rem 1rem; margin: 0 0 1rem; font-size: .9rem; }
+.q-gm-k { font-weight: 600; color: var(--text); }
+.q-gm a { display: inline-flex; align-items: baseline; gap: .35rem; color: var(--ui); text-decoration: none; min-height: 32px; }
+.q-gm a:hover b { text-decoration: underline; }
+.q-gm b { font-weight: 500; }
+.q-gm small, .q-gm i { color: var(--text-muted); font-size: .8rem; font-style: normal; }
 /* practice home tidy-up (2026-11-23): one review line, settings behind ⚙ */
 .q-revline { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .6rem; margin: 0 0 1.4rem; padding: .6rem .9rem; border-radius: var(--radius); background: var(--card-bg); border: 1px solid var(--border); font-size: .92rem; }
 .q-revline-k { font-weight: 600; margin-right: .2rem; }
@@ -161,6 +167,9 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-wrong li { margin: .3rem 0; }
 .q-wrong .q-mine { color: var(--q-bad); }
 .q-wrong .q-mine b { color: inherit; }
+details.fd { margin: .6rem 0; }
+details.fd > summary { cursor: pointer; color: var(--ui); font-weight: 600; list-style: revert; }
+details.fd > .q-wrong { margin-top: .4rem; }
 .q-full { font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif; font-size: 1.08rem; line-height: 2.1; margin: .8rem 0 0 !important; }
 .q-refs a { color: var(--link); }
 .q-ai { margin: .2rem 0 1.1rem; padding: .65rem .8rem; display: flex; align-items: center; justify-content: flex-start; gap: .5rem 1rem; flex-wrap: wrap; border-radius: var(--radius); background: var(--ui-soft); }
@@ -169,6 +178,8 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-ai .q-btn { padding: .45em .9em; font-size: .9rem; background: transparent; border-color: var(--border); color: var(--text); }
 .q-ai .q-ai-main { background: var(--ui); border-color: var(--ui); color: var(--ui-on); font-weight: 600; }
 .q-ai .q-ai-main:hover:not(:disabled) { opacity: .9; }
+.q-ai.q-ai-top { margin: .6rem 0 .9rem; }
+.q-ai.q-ai-top .q-ai-hint { font-weight: 600; color: var(--text-strong); }
 /* Dark: a pale filled slab would outshine 下一题, a bare outline melted into
    the bar (owner 11-18): a tinted fill with bright text in between, and the
    secondary button's border lifted off the bar. */
@@ -489,6 +500,12 @@ body.quiz-busy .quiz-about { display: none; }
 
 /* One line, signed out, where progress is on the reader's mind */
 .q-sync-hint { margin: .9rem 0 0; font-size: .88rem; color: var(--text-muted); }
+.sg { margin: 1rem 0; padding: .9rem 1rem; border: 1px solid var(--border); border-radius: 12px; background: var(--surface-2, var(--ui-soft)); }
+.sg-h { margin: 0 0 .3rem; font-weight: 700; color: var(--text-strong); }
+.sg p { margin: 0 0 .7rem; }
+.sg-b { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+.sg .q-btn-primary { min-height: 44px; }
+.sg-later { background: none; border: 0; color: var(--text-muted); font: inherit; cursor: pointer; padding: .4rem; }
 
 .q-fav { padding: .2em .7em; font-size: .8em; font-weight: 400; color: var(--text-muted); vertical-align: middle; gap: .3em; }
 .q-fav[aria-pressed="true"] { color: var(--ui); border-color: var(--ui); }

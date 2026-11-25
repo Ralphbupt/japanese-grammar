@@ -57,6 +57,7 @@
   function track(name, p) { try { if (window.gaEvent) window.gaEvent(name, p); } catch (e) {} }
   var VOCAB_LIST = { n2: 1, n4: 1, n5: 1 };   // levels with a /nX-vocabulary-list/ page
   app.addEventListener('click', function (e) { var a = e.target.closest('a[data-aud]'); if (a) track('aud_click', { to: a.getAttribute('data-aud'), level: LEVEL.toLowerCase() }); }, true);
+  app.addEventListener('click', function (e) { var a = e.target.closest('a[data-gm]'); if (a) track('game_click', { to: a.getAttribute('data-gm'), level: LEVEL.toLowerCase() }); }, true);
   // Which folded parts of an explanation readers open (words, the transcript,
   // 这题有问题？, the other options…): one quiz_more per open, `what` = its class.
   document.addEventListener('toggle', function (e) {
@@ -64,6 +65,7 @@
     if (!d || d.tagName !== 'DETAILS' || !d.open || !d.closest || !d.closest('#quiz-app')) return;
     var what = (String(d.className || '').match(/\bq-[a-z-]+/) || [String(d.className || '').split(' ')[0] || 'other'])[0].slice(0, 24);
     track('quiz_more', { what: what, level: LEVEL });
+    if (d.classList.contains('fd')) track('fold_open', {});
   }, true);
 
   // ─── Storage ───
@@ -804,6 +806,15 @@
         '<a href="' + audBase + audLv + '-grammar-audio/" data-aud="grammar">🎧 ' + t(AL + ' 语法音频', AL + ' grammar audio') + ' <small>' + t('通勤听', 'listen on the go') + '</small></a>' +
         (VOCAB_LIST[audLv] ? '<a href="' + audBase + audLv + '-vocabulary-list/" data-aud="vocab">📚 ' + t(AL + ' 高频词汇', AL + ' vocabulary list') + ' <small>' + t('真题考过的词', 'words the real tests asked') + '</small></a>' : '') + '</nav>';
     }
+    // Daily challenge and 60-second sprint, one quiet line (A/B game, launched 2026-11-24: returning readers 48 % → 65 %).
+    if (audLv) {
+      var gmBase = (EN ? '/' : '/zh/') + audLv + '-practice/', gmDone = chalGet(jstDay()), gmBest = spBest();
+      h += '<nav class="q-gm" aria-label="' + t('挑战', 'Challenges') + '"><span class="q-gm-k">' + t('挑战', 'Challenges') + '</span>' +
+        '<a href="' + gmBase + '?play=chal" data-gm="chal"><b>🎯 ' + t('今日挑战', 'Daily challenge') + '</b><small>' + t('每天 5 题，人人同一组', '5 a day, the same for everyone') + '</small>' +
+          (gmDone ? '<i>' + t('今天已完成 ', 'Done today ') + gmDone.reduce(function (a, b) { return a + b; }, 0) + '/' + gmDone.length + '</i>' : '') + '</a>' +
+        '<a href="' + gmBase + '?play=speed" data-gm="speed"><b>⚡ ' + t('60 秒速答', '60-second sprint') + '</b><small>' + t('汉字读音和写法', 'Kanji reading and writing') + '</small>' +
+          (gmBest ? '<i>' + t('最好 ' + gmBest + ' 题', 'Best: ' + gmBest) + '</i>' : '') + '</a></nav>';
+    }
     // Review, words and saved questions: one line (the 复习 page has them all, every level).
     var fv = favs().length, mfv = mockFavs(LEVEL.toLowerCase() + '-m').length, wn = myWords().length, wd = wordsDue().length, rv = [];
     if (r) rv.push('<button class="q-link" data-act="review"' + (d ? '' : ' data-early="1"') + '>' + (d ? t('错题 <b>' + d + '</b> 道到期', '<b>' + d + '</b> reviews due') : t('错题 ' + r + ' 道', r + ' in review')) + '</button>');
@@ -1250,11 +1261,14 @@
   // Right under the explanation, as a tinted bar: GA after 11/13 showed that a
   // small row at the bottom of the answer screen was close to never clicked
   // (13–15 readers a day before, 2 after). ok = the reader answered right.
-  function aiBtn(act, ok) {
+  // top: after a wrong answer the bar sits right under the verdict and asks
+  // about the reader's own pick (A/B aiq, launched 2026-11-19: readers asking
+  // the AI among those answering 4.9 % → 29 %); `top` is that question.
+  function aiBtn(act, ok, top) {
     if (!window.jpAI) return '';
     act = act || 'ai';
-    return '<div class="q-ai"><span class="q-ai-hint">' + (ok ? t('还有不明白的地方？', 'Still unclear?') : t('还没懂为什么错？AI 针对你选的选项讲，可以追问', 'Not sure why yours is wrong? AI explains your pick; ask follow-ups')) + '</span>' +
-      '<span class="q-ai-btns"><button class="q-btn q-ai-main" data-act="' + act + '">' + ICO_BOT + ' ' + t('AI 讲解', 'Explain with AI') + '</button>' +
+    return '<div class="q-ai' + (top ? ' q-ai-top' : '') + '"><span class="q-ai-hint">' + (top ? esc(top) : ok ? t('还有不明白的地方？', 'Still unclear?') : t('还没懂为什么错？AI 针对你选的选项讲，可以追问', 'Not sure why yours is wrong? AI explains your pick; ask follow-ups')) + '</span>' +
+      '<span class="q-ai-btns"><button class="q-btn q-ai-main" data-act="' + act + '">' + ICO_BOT + ' ' + (top ? t('问 AI', 'Ask AI') : t('AI 讲解', 'Explain with AI')) + '</button>' +
       '<button class="q-btn" data-act="' + act + '" data-mode="parse">' + t('拆解句子', 'Break down the sentence') + '</button></span></div>';
   }
   function plainJa(html) {
@@ -1397,14 +1411,16 @@
     // Order: the sentence, then why the reader's own pick fails (what they want
     // to know first), then why the answer is right, then the other options.
     var sent = kjHtml(q) + trLine(q);
-    h += '<div class="q-explain">' + (sent ? '<div class="q-sent">' + sent + '</div>' : '') + wordsHtml(q);
     var rows = q.type === 'narabe' ? [] : q.wrong.map(function (w, i) { return w ? { i: i, w: w } : null; }).filter(Boolean);
     var mineRow = rows.filter(function (r) { return r.i === choice; })[0];
     var optB = function (i) { return '<b lang="ja">' + (i + 1) + ' ' + q.options[i] + okjOf(q, i) + '</b>'; };
+    if (!ok) h += aiBtn('ai', ok, mineRow ? t('为什么不能选「' + plainJa(optB(mineRow.i)) + '」？', 'Why not “' + plainJa(optB(mineRow.i)) + '”?') : t('这题为什么选这个？', 'Why this answer?'));
+    h += '<div class="q-explain">' + (sent ? '<div class="q-sent">' + sent + '</div>' : '') + wordsHtml(q);
     if (mineRow) h += '<div class="q-minebox"><div class="q-box-k">' + t('你选的 ', 'Your pick: ') + optB(mineRow.i) + '</div><div>' + ex(mineRow.w) + '</div></div>';
-    h += '<div class="q-box-k q-box-ok">' + (q.type === 'narabe' ? t('为什么这样排', 'Why this order') : t('为什么是 ', 'Why it’s ') + optB(q.answer)) + '</div>' + whyHtml(q.why) + aiBtn('ai', ok);
+    h += '<div class="q-box-k q-box-ok">' + (q.type === 'narabe' ? t('为什么这样排', 'Why this order') : t('为什么是 ', 'Why it’s ') + optB(q.answer)) + '</div>' + whyHtml(q.why) + (ok ? aiBtn('ai', ok) : '');
     rows = rows.filter(function (r) { return r !== mineRow; });
-    if (rows.length) h += '<div class="q-box-k">' + (mineRow ? t('另外两个选项', 'The other options') : t('其他选项为什么不对', 'Why the others don’t work')).replace('另外两个', rows.length === 2 ? '另外两个' : '其他') + '</div><ul class="q-wrong">' + rows.map(function (r) { return '<li>' + optB(r.i) + ' — ' + ex(r.w) + '</li>'; }).join('') + '</ul>';
+    // The other options folded, one tap to open (A/B fold, launched 2026-11-24).
+    if (rows.length) h += '<details class="fd"><summary>' + (mineRow ? t('另外两个选项', 'The other options') : t('其他选项为什么不对', 'Why the others don’t work')).replace('另外两个', rows.length === 2 ? '另外两个' : '其他') + '</summary><ul class="q-wrong">' + rows.map(function (r) { return '<li>' + optB(r.i) + ' — ' + ex(r.w) + '</li>'; }).join('') + '</ul></details>';
     if (!left.length) h += wholeHtml(q, D.passages) + passageWords(q);
     h += pointsHtml(q);
     // The tools under an explanation, one quiet row: notes (list opens below) · 这题有问题？
@@ -1519,6 +1535,39 @@
     track('account_prompt', { from: b.getAttribute('data-k') });
     window.jpnotesOpenSettings();
   });
+  // After a finished set, signed out: a card saying what signing in keeps
+  // (A/B sign, launched 2026-11-24: sign-ins after a set 5.6 % → 13.3 % on
+  // phones). 以后再说 keeps it (and the hint line) away for 3 days — the key
+  // jp_ab_sign is shared with the experiment script's other sign-in prompts.
+  // jpQuizHooks.signCard(nums) may hand back other wording: { copy, h, p }.
+  var SIGN_LATER = 'jp_ab_sign';
+  function signCard() {
+    if (signedIn() || !window.jpnotesOpenSettings) return '';
+    try { if ((+localStorage.getItem(SIGN_LATER) || 0) > Date.now()) return ''; } catch (e) {}
+    var N = { ans: Object.keys(S.answers).filter(function (k) { return S.answers[k] && S.answers[k].length; }).length, miss: Object.keys(S.review || {}).length, words: myWords().length };
+    var c = null, H = window.jpQuizHooks;
+    try { c = H && typeof H.signCard === 'function' ? H.signCard(N) : null; } catch (e) {}
+    c = c && c.h ? c : { copy: 'save', h: t('保存你的进度', 'Keep your progress'),
+      p: t('登录后，做过的题、错题和生词本都存在账号里，换手机、换电脑都能接着做。免费，用 Google 或邮箱。', 'Sign in and your answers, misses and word list are kept in your account — carry on from any phone or laptop. Free, with Google or email.') };
+    track('sign_prompt', { where: 'result', copy: c.copy });
+    return '<div class="sg" data-copy="' + esc(c.copy) + '"><p class="sg-h">' + esc(c.h) + '</p><p>' + esc(c.p) + '</p>' +
+      '<div class="sg-b"><button class="q-btn q-btn-primary" data-act="signin" data-k="ab-sign">' + t('登录，保存进度', 'Sign in to keep it') + '</button>' +
+      '<button class="sg-later" data-act="sign-later">' + t('以后再说', 'Not now') + '</button></div></div>';
+  }
+  app.addEventListener('click', function (e) {
+    var b = e.target.closest('.sg [data-act]');
+    if (!b) return;
+    var box = b.closest('.sg'), copy = box.getAttribute('data-copy');
+    if (b.getAttribute('data-act') === 'sign-later') {
+      try { localStorage.setItem(SIGN_LATER, String(Date.now() + 3 * 86400e3)); } catch (x) {}
+      box.remove();
+      track('sign_later', { where: 'result', copy: copy });
+    } else {
+      // account_login's `from` (sync.js reads jp_login_from); the dialog opens from the handler above.
+      try { sessionStorage.setItem('jp_login_from', 'ab-result-' + copy); } catch (x) {}
+      track('sign_prompt_click', { where: 'result', copy: copy });
+    }
+  });
   function shareBtn() { return window.jpShare ? '<button class="q-btn" data-act="share">' + t('分享成绩', 'Share my score') + '</button>' : ''; }
   function shareScore(el) {
     var o = app._share || {};
@@ -1537,7 +1586,7 @@
     if (!chal) hook('quizFinish', JSON.stringify({ kind: s.kind, ok: ok, size: res.length, level: LEVEL }));
     if (chal) chalSave(s.label, res.map(function (r) { return r.ok && !r.g ? 1 : 0; }));
     var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button></div>' +
-      '<div class="q-card q-summary">' + (chal ? chalResult(s.label) : '<p class="q-score">' + ok + ' / ' + res.length + '</p><p class="q-muted">' + t('用时约 ', 'About ') + Math.max(mins, 1) + t(' 分钟', ' min') + '</p>' + (shareBtn() ? '<p class="q-share">' + shareBtn() + '</p>' : '')) + syncHint('set');
+      '<div class="q-card q-summary">' + (chal ? chalResult(s.label) : '<p class="q-score">' + ok + ' / ' + res.length + '</p><p class="q-muted">' + t('用时约 ', 'About ') + Math.max(mins, 1) + t(' 分钟', ' min') + '</p>' + (shareBtn() ? '<p class="q-share">' + shareBtn() + '</p>' : '')) + (chal ? syncHint('set') : signCard());
     if (bad.length) {
       h += '<h2>' + t('错题和猜的', 'Missed or guessed') + '</h2><ul class="q-sumlist">' + bad.map(function (r) {
         var q = Q[r.id];
