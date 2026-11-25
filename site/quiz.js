@@ -294,6 +294,23 @@
       try { span.appendChild(r.extractContents()); r.insertNode(span); } catch (x) {}
     });
   }
+  // Listening transcripts (2026-11-26): each line carries its words (data-wsp,
+  // from q.cksp); they are marked once the line is on the page, wherever the
+  // transcript was rendered (after answering, review list, mock review).
+  function ckLinkAll() {
+    app.querySelectorAll('.q-ck-script li[data-wsp]').forEach(function (li) {
+      var sc = li.closest('.q-ck-script'), sp = null;
+      try { sp = JSON.parse(li.getAttribute('data-wsp')).map(function (x) { return typeof x === 'string' ? [x, x] : x; }); } catch (e) {}
+      li.removeAttribute('data-wsp');
+      if (sp) linkWords(li.querySelector('span[lang="ja"]'), { id: sc && sc.getAttribute('data-q'), wsp: sp });
+    });
+  }
+  var ckLinkPending = false;
+  if ('MutationObserver' in window) new MutationObserver(function () {
+    if (ckLinkPending || !app.querySelector('.q-ck-script li[data-wsp]')) return;
+    ckLinkPending = true;
+    requestAnimationFrame(function () { ckLinkPending = false; ckLinkAll(); });
+  }).observe(app, { childList: true, subtree: true });
   function wordEntry(w) {
     var k = wordOf(w), e = WD && WD[k], saved = (S.words || {})[k];
     var r = e && typeof e === 'object' ? e[0] : saved && saved.r, m = e && typeof e === 'object' && e[1] ? (typeof e[1] === 'object' ? bi(e[1]) : e[1]) : saved && saved.m;
@@ -2382,14 +2399,14 @@
   // `fold`: behind 显示原文 (after a miss, so the reader listens again before reading).
   function ckScript(q, fold) {
     var segs = (q.au && q.au.segs) || [];
-    var row = function (who, ja, sub, btn, cls, sg) { return '<li' + (cls ? ' class="' + cls + '"' : '') + (sg ? ' data-k="' + q.au.f + '" data-t="' + sg.t + '" data-d="' + sg.d + '"' : '') + '>' + (who ? '<b class="q-ck-who">' + esc(who) + '</b>' : '') + '<span><span lang="ja">' + ja + '</span>' + btn + (sub ? '<small>' + esc(sub) + '</small>' : '') + '</span></li>'; };
+    var row = function (who, ja, sub, btn, cls, sg, wsp) { return '<li' + (cls ? ' class="' + cls + '"' : '') + (sg ? ' data-k="' + q.au.f + '" data-t="' + sg.t + '" data-d="' + sg.d + '"' : '') + (wsp ? ' data-wsp="' + esc(JSON.stringify(wsp)) + '"' : '') + '>' + (who ? '<b class="q-ck-who">' + esc(who) + '</b>' : '') + '<span><span lang="ja">' + ja + '</span>' + btn + (sub ? '<small>' + esc(sub) + '</small>' : '') + '</span></li>'; };
     var open = fold ? '<details class="q-ck-fold"><summary>' + t('显示原文', 'Show the transcript') + ' <span class="q-muted">' + t('先再听一遍，看能不能听出来', 'listen once more first') + '</span></summary>' : '';
-    return open + '<div class="q-ck-script"><p class="q-ck-head">' + t('听力原文', 'Transcript') +
+    return open + '<div class="q-ck-script" data-q="' + esc(q.id) + '"><p class="q-ck-head">' + t('听力原文', 'Transcript') +
       // 全文播放 (2026-11-26): the whole item from here, the line being heard lit up.
       (q.au && q.au.f ? ' <button class="q-ck-tool q-ck-all" data-act="ck-play" data-via="script" data-k="' + q.au.f + '">' + ckAllLabel(q.au.f) + '</button>' : '') +
       (segs.length ? ' <button class="q-ck-tool q-ck-loop' + (ck.loop ? ' q-on' : '') + '" data-act="ck-loop" aria-pressed="' + ck.loop + '" title="' + t('点 ▶ 听一句时反复播放，适合跟读', 'Repeat a line played with ▶, for shadowing') + '">🔁 ' + t('单句循环', 'Repeat line') + '</button>' : '') +
       '</p><ol>' + ckParts(q).map(function (p) {
-      return row(p.who, p.ja, p.tr, ckSegBtn(q, p.k, p.i), p.who ? '' : 'q-ck-nar', segs.filter(function (x) { return x.k === p.k && x.i === p.i; })[0]);
+      return row(p.who, p.ja, p.tr, ckSegBtn(q, p.k, p.i), p.who ? '' : 'q-ck-nar', segs.filter(function (x) { return x.k === p.k && x.i === p.i; })[0], q.cksp && q.cksp[p.k + p.i]);
     }).join('') + '</ol>' + ckWords(q) + '</div>' + (fold ? '</details>' : '');
   }
   // Plain text of the transcript for the AI context.

@@ -648,7 +648,20 @@ async function bundleLevel(level, ruby, mock) {
   for (const q0 of data.qs) {
     if (q0._kind === "choukai") {
       const it = await choukaiItem(q0, render, rubyMode(level)), rec = q0._rec;
-      out.push({ ...it, ...wd([q0.scene, q0.question, ...(rec ? rec.questions.map((p) => p.question) : []), ...q0.lines.map((l) => l[1]), ...q0.options]) });
+      const ckTexts = [q0.scene, q0.question, ...(rec ? rec.questions.map((p) => p.question) : []), ...q0.lines.map((l) => l[1]), ...q0.options];
+      // cksp: [surface, lemma] per transcript part (key = part + index, as
+      // quiz.js's ckParts), so the words are tappable in the transcript itself.
+      let cksp;
+      if (!mock) {
+        const all = WORDS.wordsOf(level, ckTexts.filter(Boolean)), sp = (x) => (x ? WORDS.spansOf(x).filter(([, l]) => all.includes(l)).map(([w, l]) => (w === l ? w : [w, l])) : []);   // a word already in its dictionary form: just the string
+        cksp = {};
+        const put = (k, x) => { const v = sp(x); if (v.length) cksp[k] = v; };
+        put("scene0", q0.scene);
+        if (rec) rec.questions.forEach((p, i) => put("q" + i, p.question)); else put("q0", q0.question);
+        q0.lines.forEach((l, i) => put("line" + i, l[1]));
+        if (it.spoken) q0.options.forEach((o, i) => put("opt" + i, o));
+      }
+      out.push({ ...it, ...wd(ckTexts), ...(cksp && Object.keys(cksp).length ? { cksp } : {}) });
       continue;
     }
     const q = shuffled(q0);
