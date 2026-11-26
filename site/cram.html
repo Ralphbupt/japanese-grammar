@@ -90,6 +90,19 @@ table.xt{width:100%;border-collapse:collapse;font-size:15px;background:var(--car
   } catch (e) { return say('网络错误，刷新再试。'); }
   const items = d.items, T = d.timing.lines;
   a.src = API + d.audio;
+  // The address is signed for 12 hours: when it fails (expired, or the network
+  // dropped), ask for a fresh one once and carry on from the same place.
+  let renewed = 0;
+  a.addEventListener('error', async () => {
+    if (renewed++ > 2) return;
+    try {
+      const r = await fetch(API + '/cram/data', { headers: { Authorization: 'Bearer ' + tok } }), x = await r.json();
+      if (!r.ok || !x.audio) return;
+      const at = a.currentTime || 0, wasPlaying = !a.paused;
+      a.src = API + x.audio;
+      a.addEventListener('loadedmetadata', () => { try { a.currentTime = at; } catch (e) {} if (wasPlaying) a.play().catch(() => {}); }, { once: true });
+    } catch (e) {}
+  });
   document.getElementById('cnt').textContent = items.length + ' 条';
   const esc = (s) => String(s || '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const idx = {}; T.forEach((l, i) => { idx[l.n + l.k] = i; });
