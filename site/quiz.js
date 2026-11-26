@@ -1101,6 +1101,44 @@
     ids.forEach(function (id) { cur = curs[id]; cur.start = now - share; submit(cur.pend); });
     var first = app.querySelector('.q-sub'); if (first) first.scrollIntoView({ block: 'start', behavior: 'smooth' });
   }
+  // One test-taking tip per question type, folded under the top bar (open state
+  // kept in prefs.tip); the long version with past-paper figures is the guide
+  // /jlpt-test-tips/. Method only, never a hint at this question's answer.
+  var TIPS = {
+    kanji: ['先看整个词再看选项：浊音、促音（っ）、长音是最常见的陷阱。', 'Read the whole word before the options: voicing, small っ and long vowels are the usual traps.'],
+    hyouki: ['选项多是同音不同字，用汉字的意思排除，不要只凭字形。', 'The options are mostly same-sound kanji: rule them out by meaning, not by shape.'],
+    gokeisei: ['考过的前缀、后缀会反复考：「不・無・未」「〜性・〜化・〜風」一类先背熟。', 'Prefixes and suffixes repeat across tests: learn the common ones (不・無・未, 〜性・〜化・〜風) first.'],
+    bunmyaku: ['先看空格前后的搭配（助词、动词），再看整句意思。', 'Check the words right around the blank (particle, verb) first, then the meaning of the whole sentence.'],
+    iikae: ['找意思最接近的，不是字面最像的；正确选项往往并不是最长的那个。', 'Look for the closest meaning, not the closest wording; the right option is often not the longest.'],
+    youhou: ['把词代进每个句子读一遍，先排除词性或搭配接不上的。', 'Read the word in each sentence; drop the ones where its part of speech or collocation can’t fit.'],
+    bunpou: ['先看空格前后的接续形式，接不上的选项直接排除，再比意思。', 'Check what form comes before and after the blank; drop options that can’t connect, then compare meanings.'],
+    narabe: ['靠语法接续，不靠句意：先把能接上的两块连起来，最后再定 ★。', 'Go by grammar, not meaning: join the two pieces that must connect first, then place ★.'],
+    bunshou: ['看前后两句的逻辑关系：转折、因果、举例。接续词是常考点。', 'Look at how the sentences before and after relate — contrast, cause, example. Connectives are tested a lot.'],
+    short: ['先看问题再读文章，回到文中定位答案的那一句。', 'Read the question first, then find the sentence in the passage that answers it.'],
+    mid: ['先看问题再读文章；每段读完想一下这段在说什么。', 'Question first; after each paragraph, sum up what it said.'],
+    long: ['先看所有问题，问题顺序大体跟文章顺序一致。', 'Read all the questions first; they mostly follow the order of the text.'],
+    tougou: ['分别找出两篇文章对同一问题的立场，再比较异同。', 'Find each text’s position on the same point, then compare.'],
+    shuchou: ['作者的主张多在最后一两段，注意「〜のではないか」「〜べきだ」。', 'The author’s view is usually in the last paragraph or two; watch for 〜のではないか and 〜べきだ.'],
+    info: ['先看问题里的条件，只在表格里找符合条件的那一行，不用通读。', 'Take the conditions from the question and look only for the matching row; no need to read it all.'],
+    kadai: ['问的多是「先做什么」：盯住「まず」「先に」「〜てから」，不是最后的决定。', 'It usually asks what to do first: listen for まず, 先に, 〜てから — not for the last decision.'],
+    point: ['先听清问题问什么（理由？时间？），然后专听那一点。', 'Catch what the question asks (a reason? a time?), then listen for just that.'],
+    gaiyou: ['听整体意思，说话人的主张常在开头和结尾。', 'Listen for the gist; the speaker’s point is usually at the start and the end.'],
+    hatsuwa: ['看图想场景：谁对谁说，是请求、道歉还是邀请。', 'Picture the scene: who is speaking to whom, and is it a request, an apology or an invitation.'],
+    sokuji: ['用排除法把三选一变成二选一：先划掉答非所问的，道歉类的回应常是答案。', 'Turn three into two: drop the reply that doesn’t answer, and an apology is often right.'],
+    ctougou: ['边听边记：每个选项被说到的优缺点，讨论最多的常是答案。', 'Take notes on each option’s pros and cons; the one discussed most is often the answer.'],
+  };
+  // Where the past papers say a level works differently (jlpt-test-tips figures).
+  var TIPS_LOW = {
+    kadai: ['N5・N4 听到最后：对话里最后定下来的那件事多半就是答案。', 'At N5 and N4, listen to the end: what gets settled last is usually the answer.'],
+    sokuji: ['用排除法把三选一变成二选一：先划掉答非所问的；照搬题目原词的选项多半是陷阱。', 'Turn three into two: drop the reply that doesn’t answer; an option that just repeats a word from the prompt is usually a trap.'],
+  };
+  function tipLine(q) {
+    var low = LEVEL === 'N5' || LEVEL === 'N4' || (LEVEL === 'N3' && q.type === 'sokuji');
+    var tp = (low && TIPS_LOW[q.type]) || TIPS[q.type];
+    if (!tp) return '';
+    return '<details class="q-tiphint"' + (S.prefs.tip ? ' open' : '') + '><summary data-act="tip-hint" data-k="' + q.type + '">' + t('做题技巧', 'Test tip') + '</summary><p>' + esc(t(tp[0], tp[1])) +
+      ' <a href="' + LESSON_BASE + 'jlpt-test-tips/" data-act="tip-more" data-k="' + q.type + '">' + t('各级别真题数据 ›', 'Past-paper figures ›') + '</a></p></details>';
+  }
   // Back link, previous-question link, position, type, progress bar.
   function topBar(idx, n, q) {
     var s = S.session, p = idx - 1;
@@ -1108,7 +1146,7 @@
     return '<div class="q-top"><span><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button>' +
       (idx > 0 ? ' <button class="q-link q-prev" data-act="prev" data-k="' + p + '" title="' + t('看上一题（←）', 'Previous question (←)') + '">' + t('上一题', 'Previous') + '</button>' : '') + '</span>' +
       '<span>' + (idx + 1) + (n > 1 ? '–' + (idx + n) : '') + ' / ' + s.ids.length + '</span><span class="q-muted">' + esc(bi(D.types[q.type])) + '</span></div>' +
-      '<div class="q-progress"><span style="width:' + (s.i * 100 / s.ids.length) + '%"></span></div>';
+      '<div class="q-progress"><span style="width:' + (s.i * 100 / s.ids.length) + '%"></span></div>' + tipLine(q);
   }
   // Re-show answered questions: their recorded choice, then the feedback.
   function replay(group, nextIdx) {
@@ -2866,6 +2904,8 @@
     else if (act === 'submit') { var star = [].indexOf.call(app.querySelectorAll('.q-slot'), app.querySelector('.q-star')); submit(cur.picked[star]); }
     else if (act === 'next') ask(el.hasAttribute('data-k') ? +el.getAttribute('data-k') : undefined);
     else if (act === 'prev') ask(+el.getAttribute('data-k'));
+    else if (act === 'tip-hint') { var op = !el.parentNode.open; S.prefs.tip = op; save(); if (op) track('tip_hint', { type: el.getAttribute('data-k'), level: LEVEL }); }
+    else if (act === 'tip-more') track('tip_more', { type: el.getAttribute('data-k'), level: LEVEL });
     else if (act === 'idk') { if (curs && !cur.done) pickInGroup(null); else submit(null); }
     else if (act === 'note') {
       var nb = root().querySelector('.jp-nt[data-nt="q:' + el.getAttribute('data-k') + '"]'), add = nb && nb.querySelector('[data-nt-act="new"]');

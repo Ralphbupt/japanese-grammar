@@ -65,7 +65,7 @@ Listening time: N5 30 min, N4 35, N3 40, N2 50, N1 55 (it varies slightly with t
 | 改到以后 | 「それは来週でいいです」 |
 | 计划变了 | 「あ、やっぱりそっちを先にお願い」 |
 
-**技巧**：问题是「これから」「まず」「最初に」的时候，要找的是**接下来第一件**要做的事，不是全部要做的事。常听到的"最后定下来的才是答案"并不可靠：我们核对了 N2、N1 真题（共 274 题），只有约三分之一的题是这样——答案多在对话中段就定了，后面聊的是"做完之后再……"。更可靠的是顺序词：出现「まず」「先に」「〜てから」「その前に」时，它指向的就是答案（N2 91%、N1 90%）；「AてからB」现在要做的是 A。详细数据见 [N2・N1 考前技巧冲刺](/jlpt-n2-n1-tips/)。N3 起会出需要再推一步的题，例如约好的时间、路上要多久，再加一句「少し早めに出たほうがいい」——答案是算出来的时间，不是对话里直接说出的那个。N5 常考数字和顺序（第几页、第几题、几点、几个），数字一出现就写下来。
+**技巧**：问题是「これから」「まず」「最初に」的时候，要找的是**接下来第一件**要做的事，不是全部要做的事。常听到的"最后定下来的才是答案"要看级别：我们核对了 N5–N1 真题，N5 89%、N4 69% 的题是这样，N3 降到 48%，N2、N1 只有约三分之一——高级别的题多问"首先做什么"，答案在对话中段就定了，后面聊的是"做完之后再……"。N3 起更可靠的是顺序词：出现「まず」「先に」「〜てから」「その前に」时，它多半指向答案（N3 62%、N2 91%、N1 90%）；「AてからB」现在要做的是 A。各级详细数据见 [JLPT 做题技巧（N5–N1）](/jlpt-test-tips/)。N3 起会出需要再推一步的题，例如约好的时间、路上要多久，再加一句「少し早めに出たほうがいい」——答案是算出来的时间，不是对话里直接说出的那个。N5 常考数字和顺序（第几页、第几题、几点、几个），数字一出现就写下来。
 :::
 :::en
 **Before the audio**: glance at the options (pictures at N5/N4, text from N3) and see what kind of thing they are — four objects, four times, four combinations of actions — so you have a frame ready.
@@ -79,7 +79,7 @@ Listening time: N5 30 min, N4 35, N3 40, N2 50, N1 55 (it varies slightly with t
 | Put off until later | 「それは来週でいいです」 |
 | Change of plan | 「あ、やっぱりそっちを先にお願い」 |
 
-**Technique**: when the question says 「これから」, 「まず」 or 「最初に」, you want the **first** thing to be done next, not everything on the list. The common rule "whatever gets settled last is the answer" isn't reliable: in the N2 and N1 past papers we checked (274 items) it held in only about a third — the answer is usually settled mid-conversation, and the talk after it is about what comes later. Sequencing words are far more reliable: when まず, 先に, 〜てから or その前に comes up, it points to the answer (91% at N2, 90% at N1); in "A てから B", what you do now is A. Full figures: [N2 & N1 last-minute tips](/jlpt-n2-n1-tips/). From N3 some items need one more step: the agreed time, how long the trip takes, then 「少し早めに出たほうがいい」 — the answer is the time you work out, not the one said aloud. N5 likes numbers and order (which page, which question, what time, how many); write each number down the moment you hear it.
+**Technique**: when the question says 「これから」, 「まず」 or 「最初に」, you want the **first** thing to be done next, not everything on the list. Whether the common rule "whatever gets settled last is the answer" holds depends on the level: on the N5–N1 past papers we checked it held in 89% of N5 items and 69% of N4 items, but only 48% at N3 and about a third at N2 and N1 — higher levels mostly ask what to do **first**, the answer is settled mid-conversation, and the talk after it is about what comes later. From N3 up, sequencing words are more reliable: when まず, 先に, 〜てから or その前に comes up, it usually points to the answer (62% at N3, 91% at N2, 90% at N1); in "A てから B", what you do now is A. Figures for every level: [JLPT test tips (N5–N1)](/jlpt-test-tips/). From N3 some items need one more step: the agreed time, how long the trip takes, then 「少し早めに出たほうがいい」 — the answer is the time you work out, not the one said aloud. N5 likes numbers and order (which page, which question, what time, how many); write each number down the moment you hear it.
 :::
 
 ## ポイント理解：先知道问题，专听理由||ポイント理解: You Know the Question — Listen for the Reason

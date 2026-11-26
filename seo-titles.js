@@ -504,11 +504,11 @@ module.exports = {
     descZh: "JLPT 真题去哪下载：jlpt.jp 免费公开的官方题集（选自 2010 年后的真实考试），N5–N1 每级两套完整试题，附答案、录音稿和听力音频的直接链接，以及怎么用。",
     level: "JLPT",
   },
-  "jlpt-n2-n1-tips": {
-    en: "JLPT N2 & N1 Test Tips — Which Tricks Work on Real Past Papers",
-    zh: "JLPT N2・N1 做题技巧冲刺 — 哪些技巧在真题里真的灵（排序★・阅读・听力）",
-    desc: "The JLPT N2 and N1 test-taking tricks you hear most, each checked against 2010–2026 past papers: which work (pick the apology), which don't (options with 必ず are wrong), and what to guess.",
-    descZh: "N2、N1 最常听到的做题技巧，每条都用 2010–2026 年真题核对过：道歉的选项要选、带「必ず」的选项大多错……哪些真灵、哪些不灵，排序题★、阅读、听力的做法和不会时猜哪个。",
+  "jlpt-test-tips": {
+    en: "JLPT Test Tips (N5–N1) — Which Tricks Work on Real Past Papers",
+    zh: "JLPT 做题技巧（N5–N1）— 哪些技巧在真题里真的灵",
+    desc: "The JLPT test-taking tricks you hear most, checked level by level (N5 to N1) against 2010–2026 past papers: which work (pick the apology, follow まず), which don't (options with 必ず are wrong), and what to guess.",
+    descZh: "最常听到的 JLPT 做题技巧，按 N5–N1 每个级别用 2010–2026 年真题核对：道歉的选项要选、听「まず」……哪些真灵、哪些不灵（带「必ず」的选项大多错），排序题★、阅读、听力的做法和不会时猜哪个。",
     level: "JLPT",
   },
   "jlpt-listening-tips": {

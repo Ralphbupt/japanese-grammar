@@ -998,6 +998,12 @@ const SPECULATION_RULES = `<script type="speculationrules">
 // meta-refresh pages at the old URLs so previously-shared / Google-indexed
 // /dayNN/ links continue to work after the rename. Google treats <meta
 // http-equiv="refresh" content="0;url="> as a 301 equivalent.
+// Pages renamed after they went live: old id → new id. _redirects answers the
+// old address (en and /zh/, with and without the slash) with a 301.
+const MOVED_PAGES = {
+  "jlpt-n2-n1-tips": "jlpt-test-tips",   // 2026-11-27: the tips cover N5–N1 now
+};
+
 const DAY_TO_LESSON = {
   day00:"lesson00",day01:"lesson01",day02:"lesson02",day03:"lesson03",
   day04:"lesson04",day05:"lesson05",day06:"lesson06",day07:"lesson07",
@@ -1039,7 +1045,7 @@ const JA_TITLES = {
   "jlpt-n1-past-exam-grammar": "N1 過去問の文法",
   "jlpt-n4-past-exam-grammar": "N4 過去問の文法",
   "jlpt-n5-past-exam-grammar": "N5 過去問の文法",
-  "jlpt-n2-n1-tips": "N2・N1 直前のコツ",
+  "jlpt-test-tips": "JLPT 直前のコツ（N5–N1）",
   "jlpt-listening-tips": "JLPT 聴解のコツ",
   "jlpt-past-papers": "JLPT 過去問・公式問題集",
   "jlpt": "JLPT とは（レベル・試験・申込）",
@@ -1722,7 +1728,10 @@ function writeLangPage(id, lang, html) {
       ? html.replace(/<meta charset="[^"]*">/i, (m) => `${m}\n${meta}`)
       : html.replace(/<head>/i, `<head>\n${meta}`);
   }
-  fs.writeFileSync(path.join(dir, "index.html"), ldGraph(iconize(html)), "utf-8");
+  // The test-tips guide: level chips + practice links (site/tips-level.js, inlined after iconize so its strings stay as written).
+  let out = ldGraph(iconize(html));
+  if (id === "jlpt-test-tips") out = out.replace(/<\/body>/i, () => `<script>${fs.readFileSync(path.join(__dirname, "site", "tips-level.js"), "utf-8")}</script>\n</body>`);
+  fs.writeFileSync(path.join(dir, "index.html"), out, "utf-8");
 }
 
 // ─── Furigana via kuroshiro ───
@@ -6659,6 +6668,14 @@ Each \`/lessonNN/\` page contains:
   {
     const dist = path.join(__dirname, "dist"), rules = [], moved = new Set(Object.keys(DAY_TO_LESSON));
     for (const [oldId, newId] of Object.entries(DAY_TO_LESSON)) rules.push(`/${oldId} /${newId}/ 301`, `/${oldId}/ /${newId}/ 301`);
+    // Pages renamed after going live: both language copies, with and without the
+    // slash; a copy left in dist/ by an earlier local build is removed.
+    for (const [oldId, newId] of Object.entries(MOVED_PAGES))
+      for (const pre of ["", "/zh"]) {
+        rules.push(`${pre}/${oldId} ${pre}/${newId}/ 301`, `${pre}/${oldId}/ ${pre}/${newId}/ 301`);
+        moved.add(`${pre.slice(1)}${pre ? "/" : ""}${oldId}`);
+        fs.rmSync(path.join(dist, pre.slice(1), oldId), { recursive: true, force: true });
+      }
     const walk = (rel) => {
       for (const e of fs.readdirSync(path.join(dist, rel), { withFileTypes: true })) {
         if (!e.isDirectory()) continue;

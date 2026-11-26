@@ -94,6 +94,9 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 
 .q-top { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: .5rem; font-variant-numeric: tabular-nums; }
 .q-progress { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; margin-bottom: 1rem; }
+.q-tiphint { margin: -.4rem 0 .9rem; font-size: .88rem; color: var(--text-muted); }
+.q-tiphint summary { cursor: pointer; width: fit-content; }
+.q-tiphint p { margin: .3rem 0 0; padding: .45rem .7rem; border-left: 2px solid var(--border); line-height: 1.6; }
 .q-progress span { display: block; height: 100%; background: var(--ui); transition: width .3s; }
 .q-card { border: 1px solid var(--border); border-radius: var(--radius-xl, 12px); background: var(--card-bg); padding: 1.4rem 1.3rem; }
 .q-stem { font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif; font-size: 1.2rem; line-height: 2.3; margin-bottom: 1.2rem; }
