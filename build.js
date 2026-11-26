@@ -137,7 +137,7 @@ const NOTES_SRC = process.env.NOTES_SRC !== undefined ? process.env.NOTES_SRC : 
 // affCard(); PR-labelled, rel="sponsored"; aff_show / aff_click from settings-modal.js.
 const AFF_ITALKI = "https://www.italki.com/affshare?ref=af34594643";
 const affLessonCard = () => `<aside class="aff" data-aff-card="lesson"><div class="lang-zh"><p class="aff-h"><span class="aff-pr">PR</span>学完了，想开口用起来？</p><p>在 italki 上可以按价格和时间挑日语老师，一对一练口语、用这一课的语法造句、陪你备考。可以先上一节便宜的体验课。</p><p><a class="aff-btn" href="${AFF_ITALKI}" target="_blank" rel="sponsored noopener" data-aff="italki" data-where="lesson">看看 italki 上的日语老师 →</a></p><p class="aff-note">广告：通过这个链接购课，本站会得到一笔佣金，你付的价格不变。</p></div><div class="lang-en"><p class="aff-h"><span class="aff-pr">PR</span>Want to actually say it out loud?</p><p>On italki you can pick a Japanese tutor by price and schedule for one-on-one speaking practice, sentences with this lesson's grammar, or exam prep — start with a cheap trial lesson.</p><p><a class="aff-btn" href="${AFF_ITALKI}" target="_blank" rel="sponsored noopener" data-aff="italki" data-where="lesson">Browse Japanese tutors on italki →</a></p><p class="aff-note">Ad: if you book through this link, jpnotes earns a commission at no extra cost to you.</p></div></aside>`;
-const NO_COMMENTS = new Set(["discuss", "my-notes", "my-grammar", "words", "review"]);
+const NO_COMMENTS = new Set(["discuss", "my-notes", "my-grammar", "words", "review", "past"]);
 const commentBox = (id, kind, has) => NOTES_SRC && !has && /^[a-z0-9][a-z0-9-]{1,60}$/.test(id) ? `<div class="jp-nt jp-nt-page jp-nt-cm" id="discuss" data-nt="p:${id}" data-fb="${kind}"></div>` : "";
 const NOTES_ORIGIN = NOTES_SRC ? " " + new URL(NOTES_SRC).origin : "";
 const NOTES_LOADER = NOTES_SRC ? `<script src="${NOTES_SRC}" defer></script>` : "";
@@ -5726,6 +5726,24 @@ window.addEventListener('hashchange',function(){var m=decodeURIComponent(locatio
     console.log(`  Generated dist/${mockId}/ (${mocks.length} sets${QUIZ_PUBLIC ? "" : ", not public"})`);
   }
 
+  // /past/: JLPT past papers as timed mock tests, for invited accounts only
+  // (PAST_ALLOW in the account Worker). The page is the mock-test app with no
+  // sets; quiz.js asks api.jpnotes.dev/past/list for them (data-past) and every
+  // file comes through a signed, expiring address. Content: private R2, built by
+  // ~/jlpt-past/mock/build.js. noindex, not in the sitemap, linked only from the
+  // invited reader's account card. Chinese only.
+  {
+    const zhLang = PAGE_LANGS.find((l) => l.code === "zh");
+    const lv = { id: "past", url: `${SITE}past/`, htmlAttrs: ' data-force-lang="zh"', hreflang: "" };
+    const m = { title: "JLPT 真题模考（受邀）", desc: "受邀账号专用。", noindex: true, crumb: "真题模考", h1: "JLPT 真题模考",
+      lead: "历年真题，按真考的顺序和时间作答，听力用考试原音。交卷后估分、逐题看答案和解析。仅限受邀账号，请勿外传。", nav: "" };
+    const html = renderQuiz(zhLang, m, lv, "", `data-mode="mock" data-sets='[]' data-past="${ACCOUNT_API}"`)
+      .replace(/img-src 'self' data: blob:;/, `img-src 'self' data: blob: ${ACCOUNT_API} http://localhost:*;`)
+      .replace(/media-src 'self' blob:/, `media-src 'self' blob: ${ACCOUNT_API} http://localhost:*`);
+    fs.mkdirSync(path.join(__dirname, "dist", "past"), { recursive: true });
+    fs.writeFileSync(path.join(__dirname, "dist", "past", "index.html"), ldGraph(iconize(html)), "utf-8");
+  }
+
   // Hub for everything you can do rather than read: /practice/, one card per
   // level (practice, mock tests, flashcards), levels without questions yet greyed out.
   // One row per level (practice · mock test · flashcards); what each mode is,
@@ -6660,7 +6678,7 @@ Each \`/lessonNN/\` page contains:
     // previews) then decode as Latin-1 — 日本語 and emoji came out as mojibake / "??".
     // Pages live at /, /x/ and /x/y/; a placeholder never matches a file with an extension.
     const HTML_UTF8 = ["/", "/:a/", "/:a/:b/"].map((p) => `${p}\n  Content-Type: text/html; charset=utf-8\n`).join("\n");
-    fs.writeFileSync(path.join(dist, "_headers"), "/*\n  X-Content-Type-Options: nosniff\n  Strict-Transport-Security: max-age=31536000; includeSubDomains\n  Cross-Origin-Opener-Policy: same-origin-allow-popups\n  X-Frame-Options: DENY\n  Content-Security-Policy: frame-ancestors 'none'\n\n" + HTML_UTF8 + "\n/anki/*.apkg\n  Content-Type: application/octet-stream\n  Content-Disposition: attachment\n\n/cram/*\n  X-Robots-Tag: noindex, nofollow\n", "utf-8");
+    fs.writeFileSync(path.join(dist, "_headers"), "/*\n  X-Content-Type-Options: nosniff\n  Strict-Transport-Security: max-age=31536000; includeSubDomains\n  Cross-Origin-Opener-Policy: same-origin-allow-popups\n  X-Frame-Options: DENY\n  Content-Security-Policy: frame-ancestors 'none'\n\n" + HTML_UTF8 + "\n/anki/*.apkg\n  Content-Type: application/octet-stream\n  Content-Disposition: attachment\n\n/cram/*\n  X-Robots-Tag: noindex, nofollow\n\n/past/*\n  X-Robots-Tag: noindex, nofollow\n", "utf-8");
     // AdSense: the publisher authorised to sell ads on this site (the head meta tag is the verification).
     fs.writeFileSync(path.join(dist, "ads.txt"), `google.com, ${ADSENSE_PUB.replace(/^ca-/, "")}, DIRECT, f08c47fec0942fa0\n`, "utf-8");
     console.log(`  Generated dist/_redirects (${rules.length} rules), dist/_headers, dist/ads.txt`);

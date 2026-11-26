@@ -495,7 +495,7 @@
   }
   // Pages open only to invited Google accounts (account Worker, "Private extras").
   // Asked once a day per sign-in; the answer is kept in jp_acct.x and dies with it.
-  var EXTRAS = { cram: ['/cram/', 'N2 真题语法突击（受邀）', 'N2 grammar cram (invited)'] }, extrasBusy = false;
+  var EXTRAS = { cram: ['/cram/', 'N2 真题语法突击（受邀）', 'N2 grammar cram (invited)'], past: ['/past/', 'JLPT 真题模考（受邀）', 'JLPT past papers (invited)'] }, extrasBusy = false;
   function extrasHtml(a) {
     var x = a.x;
     if (!x || !(Date.now() - x.t < 864e5)) {

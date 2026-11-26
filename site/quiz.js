@@ -112,6 +112,8 @@
   // ─── Data ───
   var D, Q = {}, ALL = [];
   var MOCK = app.getAttribute('data-mode') === 'mock';
+  var PAST = app.getAttribute('data-past');   // the account API's address on /past/
+  if (PAST && /[?&]acct=local\b/.test(location.search)) PAST = 'http://' + location.hostname + ':8788';
   var CARDS = app.getAttribute('data-mode') === 'cards';
   // The text under the app (what the level tests, FAQ, lesson links) is for the
   // start screen; while a set, test or card session is on screen it's hidden.
@@ -127,7 +129,21 @@
   function loadFail() { app.innerHTML = '<p class="q-muted">' + t('题目载入失败，刷新再试一次。', 'Couldn’t load the questions — try reloading.') + '</p>'; }
   app.innerHTML = '<p class="q-muted q-loading">' + t('载入题目…', 'Loading questions…') + '</p>';
   // Runs at the end of this file, once every mode's state is set up.
+  // /past/ (private past papers): the list of tests comes from the account API,
+  // only for accounts on its list; every file address in it is signed and expires.
+  function pastBoot() {
+    var tok = ''; try { tok = (JSON.parse(localStorage.getItem('jp_acct')) || {}).token || ''; } catch (e) {}
+    if (!tok) { app.innerHTML = '<p class="q-muted">' + t('这一页只对受邀的账号开放。请先点右上角的账号按钮登录。', 'This page is for invited accounts. Sign in with the account button first.') + '</p>'; return; }
+    fetch(PAST + '/past/list', { headers: { Authorization: 'Bearer ' + tok } }).then(function (r) { if (!r.ok) throw r.status; return r.json(); }).then(function (d) {
+      SETS = d.sets.map(function (x) { return Object.assign({}, x, { src: PAST + x.src, key: PAST + x.key }); });
+      mockList();
+    }).catch(function (st) {
+      if (st === 403 || st === 401) app.innerHTML = '<p class="q-muted">' + t('这个账号不在邀请名单里。', 'This account isn’t on the invitation list.') + '</p>';
+      else loadFail();
+    });
+  }
   function boot() {
+    if (PAST) return pastBoot();
     if (MOCK) return mockList();
     if (CARDS) return cardsLoad();
     fetch(app.getAttribute('data-src')).then(function (r) { return r.json(); }).then(function (d) {
@@ -179,7 +195,7 @@
   // Grammar questions belong to their lesson; a vocabulary question to the
   // lesson whose word table has the word (refs lessonNN#vocab); reading to none.
   function lessonOf(q) {
-    if (q.type === 'bunpou' || q.type === 'narabe') return q.refs[0].split('#')[0];
+    if (q.type === 'bunpou' || q.type === 'narabe') return q.refs && q.refs[0] ? q.refs[0].split('#')[0] : null;
     var v = (q.refs || []).filter(function (r) { return /#vocab$/.test(r); })[0];
     return v ? v.split('#')[0] : null;
   }
@@ -1599,7 +1615,7 @@
       '<p class="aff-note">' + t('广告：通过这个链接购课，本站会得到一笔佣金，你付的价格不变。', 'Ad: if you book through this link, jpnotes earns a commission at no extra cost to you.') + '</p></aside>';
   }
   window.jpAff = { card: affCard };
-  function shareBtn() { return window.jpShare ? '<button class="q-btn" data-act="share">' + t('分享成绩', 'Share my score') + '</button>' : ''; }
+  function shareBtn() { return window.jpShare && !PAST ? '<button class="q-btn" data-act="share">' + t('分享成绩', 'Share my score') + '</button>' : ''; }
   function shareScore(el) {
     var o = app._share || {};
     window.jpShare({ text: o.text, src: o.src, anchor: el, url: o.url || location.origin + location.pathname });
@@ -1849,9 +1865,10 @@
   var AWAY_GRACE = 60000;   // longer in the background than this pauses the clock and marks the attempt informal
   function mstate(id) { return S.mock[id] || (S.mock[id] = { current: null, attempts: [] }); }
   function fmt(ms) { var s = Math.max(0, Math.ceil(ms / 1000)); return Math.floor(s / 60) + ':' + ('0' + s % 60).slice(-2); }
+  function setName(set) { return set.title ? esc(set.title) : t('第 ' + set.n + ' 套', 'Test ' + set.n); }
   function loadTest(set) {
-    return fetch(set.src).then(function (r) { return r.json(); }).then(function (test) {
-      D = test; Q = {}; test.questions.forEach(function (q) { Q[q.id] = q; }); return test;
+    return fetch(set.src).then(function (r) { if (!r.ok) throw new Error(r.status); return PAST ? r.text().then(function (x) { return JSON.parse(x.split('"/past/f?').join('"' + PAST + '/past/f?')); }) : r.json(); }).then(function (test) {
+      D = test; if (PAST) LEVEL = test.level; Q = {}; test.questions.forEach(function (q) { Q[q.id] = q; }); return test;
     });
   }
   function secIds(sec) { return [].concat.apply([], sec.problems.map(function (p) { return p.ids; })); }
@@ -1861,11 +1878,13 @@
     view(true);
     stopTimer();
     var h = '';
+    var lastLv = null;
     SETS.forEach(function (set) {
+      if (PAST && set.level !== lastLv) { lastLv = set.level; h += '<h2 class="q-past-lv">JLPT ' + esc(set.level) + '</h2>'; }
       var st = mstate(set.id), cur = st.current, att = st.attempts;
       var best = att.filter(function (a) { return a.mode === 'full' && !a.flags.length; }).sort(function (a, b) { return b.total - a.total; })[0];
       var last = att[att.length - 1];
-      h += '<div class="q-card q-set"><h2>' + t('第 ' + set.n + ' 套', 'Test ' + set.n) + (cur ? ' <small class="q-tag">' + t('进行中', 'In progress') + '</small>' : !att.length ? ' <small class="q-tag q-tag-new">' + t('未做', 'Not taken') + '</small>' : '') + '</h2>' +
+      h += '<div class="q-card q-set"><h2>' + setName(set) + (cur ? ' <small class="q-tag">' + t('进行中', 'In progress') + '</small>' : !att.length ? ' <small class="q-tag q-tag-new">' + t('未做', 'Not taken') + '</small>' : '') + '</h2>' +
         '<p class="q-muted q-set-what">' + setWhat(set) + '</p>';
       if (best) h += '<p>' + t('最好成绩 ', 'Best: ') + best.score.map(function (x) { return x.score + '/' + x.max; }).join(' · ') + t('（估算）', ' (estimate)') + '</p>';
       if (last) h += '<p class="q-muted">' + t('上次 ', 'Last: ') + new Date(last.end).toLocaleDateString() + ' · ' + Math.round(last.used / 60000) + t(' 分钟', ' min') + (last.flags.length ? ' · ' + last.flags.map(flagName).join('、') : '') + '</p>';
@@ -1878,7 +1897,7 @@
       h += '</div></div>';
     });
     // More sets are on the way: say so, so a reader who finished set 1 knows to come back.
-    if (SETS.length < 3) {
+    if (!PAST && SETS.length < 3) {
       var nx = SETS.length + 1, pr = location.pathname.replace(/-mock-test\/$/, '-practice/');
       h += '<div class="q-card q-set q-set-soon"><h2>' + t('第 ' + nx + ' 套', 'Test ' + nx) + ' <small class="q-tag">' + t('准备中', 'Coming') + '</small></h2>' +
         '<p class="q-muted">' + t('第 ' + nx + (nx < 3 ? '、3' : '') + ' 套正在出题和审题，做好就会出现在这里。在那之前，可以先在' + '<a href="' + pr + '">练习题</a>' + '里专练薄弱题型，或者隔一两周再做一次第 1 套，看看有没有进步。',
@@ -1903,7 +1922,7 @@
   function mockIntro(set) {
     view(false);
     loadTest(set).then(function (test) {
-      var h = '<div class="q-top"><button class="q-link" data-act="m-list">‹ ' + t('返回', 'Back') + '</button></div><div class="q-card"><h2>' + t('第 ' + set.n + ' 套', 'Test ' + set.n) + '</h2><table class="q-table q-plan">';
+      var h = '<div class="q-top"><button class="q-link" data-act="m-list">‹ ' + t('返回', 'Back') + '</button></div><div class="q-card"><h2>' + setName(set) + '</h2><table class="q-table q-plan">';
       test.sections.forEach(function (sec, i) {
         h += '<tr><th>' + esc(sec.ja) + '<br><small>' + esc(bi(sec)) + '</small></th><td>' + secIds(sec).length + t(' 题', ' questions') + '</td><td>' + sec.minutes + t(' 分钟', ' min') + '</td></tr>';
       });
@@ -2063,7 +2082,7 @@
     view(false);
     var go = function (test) {
       var h = '<div class="q-top"><button class="q-link" data-act="m-list">‹ ' + t('返回', 'Back') + '</button></div><div class="q-card q-result">';
-      h += '<h2>' + t('第 ' + set.n + ' 套 · 结果', 'Test ' + set.n + ' · results') + (att.flags.length ? ' <small class="q-tag">' + att.flags.map(flagName).join('、') + '</small>' : '') + '</h2>';
+      h += '<h2>' + setName(set) + t(' · 结果', ' · results') + (att.flags.length ? ' <small class="q-tag">' + att.flags.map(flagName).join('、') + '</small>' : '') + '</h2>';
       var sum = 0;
       att.score.forEach(function (x) {
         if (!x.n && att.mode !== 'full') return;   // a part this sitting doesn't cover
@@ -2125,7 +2144,7 @@
   function mockReview(which) {
     view(false);
     // which: 'wrong' | 'all' | 'fav' (the saved questions of this test, opened from the list of tests)
-    var test = M.test, key = M.key, att = M.att, FAV = which === 'fav', h = '<div class="q-top"><button class="q-link" data-act="' + (FAV ? 'm-list' : 'm-back-result') + '">‹ ' + (FAV ? t('返回', 'Back') : t('回到结果', 'Back to results')) + '</button>' + (FAV ? '<span>' + t('第 ' + M.set.n + ' 套 · 收藏的题', 'Test ' + M.set.n + ' · saved') + '</span><span></span>' : '') + '</div>';
+    var test = M.test, key = M.key, att = M.att, FAV = which === 'fav', h = '<div class="q-top"><button class="q-link" data-act="' + (FAV ? 'm-list' : 'm-back-result') + '">‹ ' + (FAV ? t('返回', 'Back') : t('回到结果', 'Back to results')) + '</button>' + (FAV ? '<span>' + setName(M.set) + t(' · 收藏的题', ' · saved') + '</span><span></span>' : '') + '</div>';
     var shownP = {};
     function listed(id) { var aa = att.answers[id] || {}; return FAV ? isFav(id) : !(which === 'wrong' && aa.c === key.questions[id].answer && !aa.g); }
     test.sections.forEach(function (sec, si) {
@@ -2145,7 +2164,7 @@
           h += '<div class="q-card q-revcard">';
           if (q.passage && !shownP[q.passage]) { shownP[q.passage] = 1; h += '<details class="q-revpass"><summary>' + t('原文', 'Text') + '</summary>' + passageHtml(qq) + (key.passages[q.passage].au ? listenBtn(key.passages[q.passage].au) : '') + trHtml(key.passages[q.passage].tr) + '</details>'; }
           h += '<p class="q-prob"><b>' + (si + 1) + '-' + p.no + '</b> ' + esc(test.types[p.type].ja) + '</p><div class="q-stem" lang="ja">' + stemHtml(qq).replace(/<button[^>]*>(★)?<\/button>/g, function (m, st) { return st ? '＿★＿' : '＿＿'; }) + '</div>';
-          if (q.type === 'narabe') h += '<p lang="ja">' + t('正确顺序：', 'Order: ') + kq.order.map(function (i) { return q.options[i]; }).join(' / ') + '</p>';
+          if (q.type === 'narabe' && kq.order) h += '<p lang="ja">' + t('正确顺序：', 'Order: ') + kq.order.map(function (i) { return q.options[i]; }).join(' / ') + '</p>';
           h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + (i === kq.answer ? ' q-ok' : i === a.c ? ' q-bad' : '') + '"><span class="q-num">' + (i + 1) + '</span><span class="q-otext">' + o + '</span>' + okjOf(qq, i) + '</div></li>'; }).join('') + '</ol>';
           h += '<div class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '"><span class="q-vtext">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 猜对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</span><span class="q-vtools">' + favBtn(q) + '</span></div>';
           // 为什么错了: in the review only (never while the test runs), like practice.
@@ -2247,6 +2266,9 @@
   // once that element has played, it may go on to the next file by itself,
   // which the mock test's back-to-back items rely on.
   var CK_AUDIO = AUDIO_BASE + '/choukai/', CK_IMG = '/images/choukai/';
+  // Private past papers (/past/) give whole signed addresses instead of file names.
+  function ckSrc(f) { return /^(https?:)?\//.test(f) ? f : CK_AUDIO + f; }
+  function ckImg(f) { return /^(https?:)?\//.test(f) ? f : CK_IMG + f; }
   var ck = { el: null, mode: 'all', end: null, from: 0, loop: false, onEnd: null };
   // Practice speed (0.75× / 1× / 1.25×), kept in prefs; the mock sitting is always 1×.
   var CK_RATES = [0.75, 1, 1.25];
@@ -2279,7 +2301,7 @@
   // to go on); a transcript line's ▶ plays just that segment.
   function ckPlay(file, from, len, via) {
     if (player) player.pause();
-    var a = ckEl(), src = CK_AUDIO + file, same = a.src.indexOf(src) >= 0;
+    var a = ckEl(), src = ckSrc(file), same = a.src.indexOf(src) >= 0;
     if (!same) a.src = src;
     ckSetRate(a, ckRate());
     if (from == null) {
@@ -2294,14 +2316,14 @@
   // Jump within an item (tap on the bar, or ↺ 5 s back): plays the whole item from there.
   function ckJump(file, at) {
     if (player) player.pause();
-    var a = ckEl(), src = CK_AUDIO + file;
+    var a = ckEl(), src = ckSrc(file);
     if (a.src.indexOf(src) < 0) a.src = src;
     ckSetRate(a, ckRate());
     ck.mode = 'all'; ck.end = null;
     ckSeek(a, Math.max(0, at));
     a.play().catch(function () {});
   }
-  function ckPlaying(file) { return ck.el && ck.el.src.indexOf(CK_AUDIO + file) >= 0 ? ck.el.currentTime : 0; }
+  function ckPlaying(file) { return ck.el && ck.el.src.indexOf(ckSrc(file)) >= 0 ? ck.el.currentTime : 0; }
   function ckStop() {
     ck.onEnd = null; ck.end = null;
     if (ck.el) ck.el.pause();
@@ -2309,7 +2331,7 @@
   }
   // Every player on screen: progress of the file playing, ▶ / ⏸.
   function ckAllLabel(file) {
-    var a = ck.el, on = a && a.src.indexOf(CK_AUDIO + file) >= 0 && ck.mode === 'all';
+    var a = ck.el, on = a && a.src.indexOf(ckSrc(file)) >= 0 && ck.mode === 'all';
     return on && !a.paused ? '⏸ ' + t('暂停', 'Pause') : on && !a.ended && a.currentTime > 0 ? '▶ ' + t('继续', 'Resume') : '▶ ' + t('全文播放', 'Play all');
   }
   function ckShow() {
@@ -2317,7 +2339,7 @@
     if (!a) return;
     app.querySelectorAll('.q-ck-all').forEach(function (b) { var l = ckAllLabel(b.getAttribute('data-k')); if (b.textContent !== l) b.textContent = l; });
     app.querySelectorAll('.q-ck-player').forEach(function (p) {
-      var on = a.src.indexOf(CK_AUDIO + p.getAttribute('data-k')) >= 0, dur = +p.getAttribute('data-dur'), at = on ? a.currentTime : 0;
+      var on = a.src.indexOf(ckSrc(p.getAttribute('data-k'))) >= 0, dur = +p.getAttribute('data-dur'), at = on ? a.currentTime : 0;
       p.querySelector('.q-ck-bar span').style.width = Math.min(100, at * 100 / dur) + '%';
       p.querySelector('.q-ck-time').textContent = fmt(at * 1000) + ' / ' + fmt(dur * 1000);
       var b = p.querySelector('.q-ck-play');
@@ -2327,7 +2349,7 @@
     });
     // The transcript line being heard, while the item plays.
     app.querySelectorAll('.q-ck-script li[data-t]').forEach(function (li) {
-      var on = !a.paused && a.src.indexOf(CK_AUDIO + li.getAttribute('data-k')) >= 0, t0 = +li.getAttribute('data-t');
+      var on = !a.paused && a.src.indexOf(ckSrc(li.getAttribute('data-k'))) >= 0, t0 = +li.getAttribute('data-t');
       li.classList.toggle('q-ck-cur', on && a.currentTime >= t0 && a.currentTime < t0 + +li.getAttribute('data-d'));
     });
   }
@@ -2343,7 +2365,8 @@
   // box (box = [ymin, xmin, ymax, xmax] on 0–1000) — drawn here, not in the picture.
   function ckScene(q) {
     var b = q.pic.box;
-    return '<figure class="q-ck-scene"><img src="' + CK_IMG + q.pic.scene + '" alt="' + t('场景图', 'The scene') + '" width="720" height="538">' +
+    if (!b) return '<figure class="q-ck-scene q-ck-print"><img src="' + ckImg(q.pic.scene) + '" alt="' + t('题目图', 'The picture') + '"></figure>';
+    return '<figure class="q-ck-scene"><img src="' + ckImg(q.pic.scene) + '" alt="' + t('场景图', 'The scene') + '" width="720" height="538">' +
       '<svg class="q-ck-arrow" style="left:' + (b[1] + b[3]) / 20 + '%;top:' + b[0] / 10 + '%" viewBox="0 0 40 60" aria-hidden="true"><path d="M13 1h14v31h11L20 58 2 32h11z"/></svg></figure>';
   }
   var CK_HOW = {
@@ -2393,7 +2416,7 @@
     var act = mock ? 'm-opt' : 'opt', cls = function (i) { return 'q-opt' + (picked === i ? ' q-picked' : ''); }, h = '';
     if (q.pic && q.pic.scene) h += ckScene(q);
     if (q.pic && q.pic.opts) h += '<ol class="q-ck-pics">' + q.pic.opts.map(function (f, i) {
-      return '<li><button class="' + cls(i) + ' q-ck-pic" data-act="' + act + '" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span><img src="' + CK_IMG + f + '" alt="' + esc(plainJa(q.options[i])) + '" width="304" height="343"></button></li>';
+      return '<li><button class="' + cls(i) + ' q-ck-pic" data-act="' + act + '" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span><img src="' + ckImg(f) + '" alt="' + esc(plainJa(q.options[i])) + '" width="304" height="343"></button></li>';
     }).join('') + '</ol>';
     else if (q.spoken) h += '<ol class="q-ck-nums">' + q.options.map(function (o, i) { return '<li><button class="' + cls(i) + '" data-act="' + act + '" data-i="' + i + '" aria-label="' + (i + 1) + '"><span class="q-num">' + (i + 1) + '</span></button></li>'; }).join('') + '</ol>';
     else h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><button class="' + cls(i) + '" data-act="' + act + '" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span><span class="q-otext">' + o + '</span></button></li>'; }).join('') + '</ol>';
@@ -2445,7 +2468,7 @@
   function ckReview(q, a, again, why) {
     var ok = a.c === q.answer, mark = function (i) { return i === q.answer ? ' q-ok' : i === a.c ? ' q-bad' : ''; };
     var h = (again ? '' : ckPlayer(q)) + (q.passage ? ckSubNo(q) : '') + (q.pic && q.pic.scene ? ckScene(q) : '');
-    if (q.pic && q.pic.opts) h += '<ol class="q-ck-pics">' + q.pic.opts.map(function (f, i) { return '<li><div class="q-opt q-ck-pic' + mark(i) + '"><span class="q-num">' + (i + 1) + '</span><img src="' + CK_IMG + f + '" alt="' + esc(plainJa(q.options[i])) + '" width="304" height="343" loading="lazy"></div></li>'; }).join('') + '</ol>';
+    if (q.pic && q.pic.opts) h += '<ol class="q-ck-pics">' + q.pic.opts.map(function (f, i) { return '<li><div class="q-opt q-ck-pic' + mark(i) + '"><span class="q-num">' + (i + 1) + '</span><img src="' + ckImg(f) + '" alt="' + esc(plainJa(q.options[i])) + '" width="304" height="343" loading="lazy"></div></li>'; }).join('') + '</ol>';
     else h += '<ol class="q-opts' + (q.spoken ? ' q-ck-nums q-ck-shown' : '') + '" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + mark(i) + '"><span class="q-num">' + (i + 1) + '</span>' + (q.spoken ? ckOptText(q, i) : o) + '</div></li>'; }).join('') + '</ol>';
     h += '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 猜对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</p>' + (why || '');
     return h + (again ? '' : ckScript(q, !ok)) + '<div class="q-explain">' + whyHtml(q.why) + '<ul class="q-wrong">' + q.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + (q.pic && q.pic.opts ? '' : q.options[i]) + '</b> — ' + ex(w) + '</li>' : ''; }).join('') + '</ul></div>';
@@ -2510,7 +2533,7 @@
     ckSheet();
     var el = ckEl();
     ck.mode = 'all'; ck.end = null;
-    el.src = CK_AUDIO + q.au.f;
+    el.src = ckSrc(q.au.f);
     ckSetRate(el, 1);
     ck.onEnd = function () { ckWait(group.length * ((sec.pause || {})[q.type] || 10) * 1000); };
     el.play().catch(ckFail);
