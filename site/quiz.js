@@ -55,6 +55,8 @@
   }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function track(name, p) { try { if (window.gaEvent) window.gaEvent(name, p); } catch (e) {} }
+  var VOCAB_LIST = { n2: 1, n4: 1, n5: 1 };   // levels with a /nX-vocabulary-list/ page
+  app.addEventListener('click', function (e) { var a = e.target.closest('a[data-aud]'); if (a) track('aud_click', { to: a.getAttribute('data-aud'), level: LEVEL.toLowerCase() }); }, true);
   // Which folded parts of an explanation readers open (words, the transcript,
   // 这题有问题？, the other options…): one quiz_more per open, `what` = its class.
   document.addEventListener('toggle', function (e) {
@@ -794,6 +796,14 @@
       : '<button class="q-btn q-btn-primary q-btn-big" data-act="daily">' + dailyLabel + '</button>' +
         '<div class="q-today-line"><span class="q-today-info">' + bits.filter(function (b) { return b.indexOf('q-due') < 0; }).join(' · ') + '</span>' + settings + '</div>') +
       (only ? '<p class="q-muted q-only">' + ONLY[only][1] + '<a href="' + location.pathname.replace(/-(listening|reading|vocabulary)/, '-practice') + '">' + t('练习题', 'practice questions') + '</a></p>' : '') + '</div>';
+    // Grammar audio and the vocabulary list, one row (A/B aud, launched 2026-11-26: pages a reader views +20 %).
+    var audLv = (location.pathname.match(/^\/(?:zh\/)?(n[1-5])-/) || [])[1];
+    if (audLv) {
+      var AL = audLv.toUpperCase(), audBase = EN ? '/' : '/zh/';
+      h += '<nav class="q-aud" aria-label="' + t('音频', 'Audio') + '">' +
+        '<a href="' + audBase + audLv + '-grammar-audio/" data-aud="grammar">🎧 ' + t(AL + ' 语法音频', AL + ' grammar audio') + ' <small>' + t('通勤听', 'listen on the go') + '</small></a>' +
+        (VOCAB_LIST[audLv] ? '<a href="' + audBase + audLv + '-vocabulary-list/" data-aud="vocab">📚 ' + t(AL + ' 高频词汇', AL + ' vocabulary list') + ' <small>' + t('真题考过的词', 'words the real tests asked') + '</small></a>' : '') + '</nav>';
+    }
     // Review, words and saved questions: one line (the 复习 page has them all, every level).
     var fv = favs().length, mfv = mockFavs(LEVEL.toLowerCase() + '-m').length, wn = myWords().length, wd = wordsDue().length, rv = [];
     if (r) rv.push('<button class="q-link" data-act="review"' + (d ? '' : ' data-early="1"') + '>' + (d ? t('错题 <b>' + d + '</b> 道到期', '<b>' + d + '</b> reviews due') : t('错题 ' + r + ' 道', r + ' in review')) + '</button>');

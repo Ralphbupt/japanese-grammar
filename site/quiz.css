@@ -38,6 +38,10 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-due:hover { text-decoration: underline; text-underline-offset: 3px; }
 /* Review list + saved: compact rows, or one quiet line while both are empty */
 .q-lists-empty { margin: 0 0 1.4rem; font-size: .9rem; }
+.q-aud { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 1.1rem; }
+.q-aud a { display: inline-flex; align-items: center; gap: .35rem; padding: .5rem .85rem; min-height: 40px; box-sizing: border-box; border: 1px solid var(--border); border-radius: 999px; background: var(--card-bg); color: var(--text); text-decoration: none; font-size: .92rem; }
+.q-aud a:hover, .q-aud a:focus-visible { border-color: var(--ui); color: var(--ui); }
+.q-aud small { color: var(--text-muted); }
 /* practice home tidy-up (2026-11-23): one review line, settings behind ⚙ */
 .q-revline { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .6rem; margin: 0 0 1.4rem; padding: .6rem .9rem; border-radius: var(--radius); background: var(--card-bg); border: 1px solid var(--border); font-size: .92rem; }
 .q-revline-k { font-weight: 600; margin-right: .2rem; }
