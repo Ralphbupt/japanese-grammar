@@ -1971,7 +1971,8 @@
     var answered = ids.filter(function (x) { return c.answers[x] && c.answers[x].c != null; }).length;
     var h = '<div class="q-mockbar"><span class="q-clock">' + fmt(remaining()) + '</span><span>' + esc(sec.ja) + '</span><span class="q-muted q-answered">' + answered + '/' + ids.length + '</span>' +
       '<button class="q-btn" data-act="m-sheet">' + t('答题卡', 'Answer sheet') + '</button><button class="q-btn" data-act="m-pause">' + t('暂停', 'Pause') + '</button></div>';
-    h += '<div class="q-sheet" hidden>' + sec.problems.map(function (p) {
+    // Answer sheet beside the question on wide screens (quiz.css .q-mgrid), behind 答题卡 on narrow ones.
+    h += '<div class="q-mgrid"><div class="q-sheet" hidden>' + sec.problems.map(function (p) {
       return '<div class="q-sheet-row"><span>' + t('问题', 'もんだい') + p.no + '</span>' + p.ids.map(function (x) {
         var k = ids.indexOf(x), aa = c.answers[x];
         return '<button class="q-cell' + (aa && aa.c != null ? ' q-cell-done' : '') + (c.flagsQ[x] ? ' q-cell-flag' : '') + (x === id ? ' q-cell-on' : '') + '" data-act="m-go" data-k="' + k + '">' + (k + 1) + '</button>';
@@ -2001,7 +2002,7 @@
       // The last question: a reader expects "Next" to go on, so the way to the next
       // section (or to submit) is right here, with the answer sheet beside it.
       (g1 < ids.length - 1 ? '<button class="q-btn q-btn-primary" data-act="m-go" data-k="' + (g1 + 1) + '">' + t('下一题', 'Next') + ' →</button>' :
-        '<button class="q-btn" data-act="m-sheet">' + t('检查答题卡', 'Review answer sheet') + '</button><button class="q-btn q-btn-primary" data-act="m-end">' + (c.si < c.secs.length - 1 ? t('结束本节，进入下一节', 'End section, go to the next') + ' →' : t('交卷', 'Submit')) + '</button>') + '</div></div>';
+        '<button class="q-btn" data-act="m-sheet">' + t('检查答题卡', 'Review answer sheet') + '</button><button class="q-btn q-btn-primary" data-act="m-end">' + (c.si < c.secs.length - 1 ? t('结束本节，进入下一节', 'End section, go to the next') + ' →' : t('交卷', 'Submit')) + '</button>') + '</div></div></div>';
     app.innerHTML = h;
     if (g1 > g0) {
       curs = {};
@@ -2502,12 +2503,12 @@
     CK = { ids: ids, i: Math.min(c.ckAt || 0, ids.length - 1), n: 1, on: false, wait: null, left: null, timer: null };
     app.innerHTML = '<div class="q-mockbar"><span class="q-clock">' + fmt(remaining()) + '</span><span>' + esc(sec.ja) + '</span><span class="q-muted q-answered"></span>' +
       '<button class="q-btn" data-act="m-sheet">' + t('答题卡', 'Answer sheet') + '</button><button class="q-btn" data-act="m-pause">' + t('暂停', 'Pause') + '</button></div>' +
-      '<div class="q-sheet q-ck-sheet" hidden></div><div class="q-card q-ck-now"><h2>' + esc(sec.ja) + ' <small class="q-muted">' + esc(bi(sec)) + '</small></h2><ul class="q-rules">' +
+      '<div class="q-mgrid"><div class="q-sheet q-ck-sheet" hidden></div><div class="q-card q-ck-now"><h2>' + esc(sec.ja) + ' <small class="q-muted">' + esc(bi(sec)) + '</small></h2><ul class="q-rules">' +
       '<li>' + t('一共 ' + ids.length + ' 题，按顺序播放，每题只放一次，不能回放。', ids.length + ' items, played in order, each once, no replay.') + '</li>' +
       '<li>' + t('每题播完后有几秒作答时间，倒计时结束自动播下一题。', 'After each one there are a few seconds to answer; then the next one starts by itself.') + '</li>' +
       '<li>' + t('听过的题可以在答题卡上改答案，直到听力结束。', 'Until the end you can change any answer so far on the answer sheet.') + '</li>' +
       '<li>' + t('请打开声音，最好戴耳机。', 'Turn the sound on; headphones help.') + '</li></ul>' +
-      '<div class="q-actions q-start"><button class="q-btn q-btn-primary q-btn-big" data-act="ck-start">▶ ' + (CK.i ? t('从第 ' + (CK.i + 1) + ' 题接着听', 'Go on from item ' + (CK.i + 1)) : t('开始听力', 'Start listening')) + '</button></div></div>';
+      '<div class="q-actions q-start"><button class="q-btn q-btn-primary q-btn-big" data-act="ck-start">▶ ' + (CK.i ? t('从第 ' + (CK.i + 1) + ' 题接着听', 'Go on from item ' + (CK.i + 1)) : t('开始听力', 'Start listening')) + '</button></div></div></div>';
     ckSheet();
     if (!M.timer) M.timer = setInterval(tick, 1000);
     toTop();

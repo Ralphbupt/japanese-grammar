@@ -257,6 +257,24 @@ html.theme-dark .q-ai .q-btn:not(.q-ai-main) { border-color: color-mix(in srgb, 
 .q-cell-done { background: var(--surface-2); border-color: var(--text-muted); }
 .q-cell-flag { border-color: var(--ui); box-shadow: inset 0 -3px 0 var(--ui); }
 .q-cell-on { outline: 2px solid var(--link); outline-offset: 1px; }
+/* Wide screens: the answer sheet stays beside the question (sticky), no 答题卡 button. */
+@media (min-width: 1100px) {
+  .q-mgrid { display: grid; grid-template-columns: minmax(0, 1fr) 232px; gap: 1rem; align-items: start; }
+  .q-mgrid > .q-card { grid-column: 1; grid-row: 1; margin-top: 0; }
+  .q-mgrid > .q-sheet, .q-mgrid > .q-sheet[hidden] { display: block; grid-column: 2; grid-row: 1; position: sticky; top: calc(7.9rem + var(--sat, 0px)); max-height: calc(100vh - 8.8rem - var(--sat, 0px)); overflow-y: auto; margin: 0; }
+  .q-mgrid > .q-sheet .q-sheet-row { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .3rem; }
+  .q-mgrid > .q-sheet .q-sheet-row > span { grid-column: 1 / -1; width: auto; }
+  .q-mgrid > .q-sheet .q-cell { width: auto; }
+  /* Listening: one line per item, its option bubbles in a row. */
+  .q-mgrid > .q-ck-sheet .q-sheet-row { display: block; }
+  .q-mgrid > .q-ck-sheet .q-sheet-row > span:first-child { display: block; margin-bottom: .3rem; }
+  .q-mgrid > .q-ck-sheet .q-ck-mark { display: flex; margin: 0 0 .3rem; }
+  .q-mgrid > .q-ck-sheet .q-ck-mark small { width: 2.6em; }
+  .q-mgrid > .q-ck-sheet .q-cell { width: 2.2em; }
+  .q-mgrid > .q-sheet > .q-btn { width: 100%; }
+  .q-mockbar [data-act="m-sheet"], .q-mgrid .q-nav [data-act="m-sheet"] { display: none; }
+  .q-mockbar [data-act="m-pause"] { margin-left: auto; }
+}
 .q-prob { display: flex; align-items: baseline; gap: .5rem; margin: 0 0 .8rem; }
 .q-qno { margin-left: auto; font-variant-numeric: tabular-nums; color: var(--text-muted); }
 .q-opt.q-picked { border-color: var(--link); box-shadow: inset 0 0 0 1px var(--link); }
