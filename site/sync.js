@@ -340,6 +340,15 @@
       var cur = withLesson(st.get());
       if (remote.data && same(cur, remote.data)) return;
       var send = strip(cur); send.at = cur.at || Date.now();
+      // The server takes only { v: 1, answers: {…} } on an integer version (400 "Not a
+      // progress file" otherwise, GA 11-20…26: one reader 13 times in a row, never
+      // syncing again). Mend the shape here; an unknown version means fetch it first.
+      if (send.v !== 1) send.v = 1;
+      if (!send.answers || typeof send.answers !== 'object' || Array.isArray(send.answers)) send.answers = {};
+      if (!(remote.version >= 0 && remote.version % 1 === 0)) {
+        if (++tries > 4) throw new Error(t('同步失败，请稍后再试', 'Sync failed — try again later'));
+        return api('GET', '/sync').then(function (r) { remote = r.data; return step(); });
+      }
       return api('PUT', '/sync', { version: remote.version, data: send }).then(function (r) {
         if (r.status === 409) { remote = r.data; if (++tries > 4) throw new Error(t('同步冲突，请稍后再试', 'Sync conflict — try again later')); return step(); }
         remote = { version: r.data.version, data: clone(send) }; moved = true;
@@ -354,7 +363,9 @@
       if (acct().token) setStatus('error', e.message);
       // why: the server's message, or the browser's (Failed to fetch / Load failed = no
       // network or the page went away; a TypeError = a bug here); op: the request.
-      track('account_sync_error', { status: e.status || 0, why: String(e.detail || (e && e.message) || e).slice(0, 80), op: e.op || '' });
+      // No HTTP status = the request never got an answer (offline, the page went
+      // away): its own event, so account_sync_error is the server saying no or a bug.
+      track(e.status ? 'account_sync_error' : 'account_sync_net', { status: e.status || 0, why: String(e.detail || (e && e.message) || e).slice(0, 80), op: e.op || '' });
     }).then(function () { busy = false; if (again) return sync(); });
   }
   var lastPull = 0;
