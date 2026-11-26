@@ -71,7 +71,7 @@ table.xt{width:100%;border-collapse:collapse;font-size:15px;background:var(--car
 <div id="bar"><div class="wrap"><div class="row"><button id="play" aria-label="播放">▶</button><input id="seek" type="range" min="0" max="1000" value="0"><span id="time">0:00</span>
   <select id="rate" aria-label="语速"><option value="0.8">0.8×</option><option value="1" selected>1×</option><option value="1.2">1.2×</option><option value="1.5">1.5×</option></select></div></div></div>
 <main class="wrap" id="list"></main>
-<audio id="a" crossorigin="anonymous" preload="metadata"></audio>
+<audio id="a" preload="metadata"></audio>
 <script>
 (async function () {
   const list = document.getElementById('list'), a = document.getElementById('a');
