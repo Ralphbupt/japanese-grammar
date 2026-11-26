@@ -1868,9 +1868,49 @@
   function setName(set) { return set.title ? esc(set.title) : t('第 ' + set.n + ' 套', 'Test ' + set.n); }
   function loadTest(set) {
     return fetch(set.src).then(function (r) { if (!r.ok) throw new Error(r.status); return PAST ? r.text().then(function (x) { return JSON.parse(x.split('"/past/f?').join('"' + PAST + '/past/f?')); }) : r.json(); }).then(function (test) {
-      D = test; if (PAST) LEVEL = test.level; Q = {}; test.questions.forEach(function (q) { Q[q.id] = q; }); return test;
+      D = test; if (PAST) LEVEL = test.level; Q = {}; test.questions.forEach(function (q) { Q[q.id] = q; }); addParts(test); return test;
     });
   }
+  // A sitting that mixes vocabulary, grammar and reading (N2/N1's one long
+  // sitting, N5–N3's 文法・読解) can also be taken one part at a time. The parts
+  // are extra sections after the real ones (part: group, of: the sitting), so
+  // an attempt's mode stays a section index; test.nReal = the real sittings.
+  // Minutes: the sitting's time shared by question count, weighted (a reading
+  // question takes far longer than a vocabulary one), rounded to 5.
+  var PART_NAME = { moji: ['文字・語彙', '文字・语汇', 'Vocabulary'], bunpou: ['文法', '语法', 'Grammar'], dokkai: ['読解', '阅读', 'Reading'] };
+  var PART_W = { moji: 0.6, bunpou: 1, dokkai: 3.5 };
+  // Reading splits once more, by question type (minutes per question, before scaling to the part's time).
+  var READ_W = { short: 2.5, mid: 2.5, long: 3.5, tougou: 4, shuchou: 4, info: 3 };
+  function addParts(test) {
+    if (!test.sections || test.nReal != null) return;
+    test.nReal = test.sections.length;
+    test.sections.slice().forEach(function (sec, si) {
+      if (sec.listening) return;
+      var by = {}, order = [];
+      sec.problems.forEach(function (p) {
+        var g = (test.types[p.type] || {}).g;
+        if (!PART_W[g]) return;
+        if (!by[g]) { by[g] = []; order.push(g); }
+        by[g].push(p);
+      });
+      if (order.length < 2) return;
+      var w = {}, all = 0;
+      order.forEach(function (g) { w[g] = by[g].reduce(function (a, p) { return a + p.ids.length; }, 0) * PART_W[g]; all += w[g]; });
+      var subs = [];
+      order.forEach(function (g) {
+        var nm = PART_NAME[g], min = Math.max(5, Math.round(sec.minutes * w[g] / all / 5) * 5);
+        test.sections.push({ key: sec.key + '-' + g, part: g, of: si, ja: nm[0], zh: nm[1], en: nm[2], minutes: min, problems: by[g] });
+        if (g !== 'dokkai' || by[g].length < 2) return;
+        var rw = by[g].map(function (p) { return p.ids.length * (READ_W[p.type] || 3); }), rall = rw.reduce(function (a, x) { return a + x; }, 0);
+        by[g].forEach(function (p, k) {
+          var ty = test.types[p.type] || {};
+          subs.push({ key: sec.key + '-' + p.type + '-' + p.no, part: g, sub: p.type, of: si, ja: ty.ja || p.type, zh: ty.zh, en: ty.en, minutes: Math.max(3, Math.round(min * rw[k] / rall)), problems: [p] });
+        });
+      });
+      test.sections.push.apply(test.sections, subs);
+    });
+  }
+  function realSecs(test) { var n = test.nReal != null ? test.nReal : test.sections.length, out = []; for (var i = 0; i < n; i++) out.push(i); return out; }
   function secIds(sec) { return [].concat.apply([], sec.problems.map(function (p) { return p.ids; })); }
   function problemOf(sec, id) { for (var i = 0; i < sec.problems.length; i++) if (sec.problems[i].ids.indexOf(id) >= 0) return sec.problems[i]; }
 
@@ -1916,7 +1956,7 @@
     }
     return t('按真考的结构和时间计时，交卷后估分', 'Timed like the real test, estimated score after you submit');
   }
-  function flagName(f) { return { informal: t('非正式（暂停过）', 'informal (paused)'), partial: t('只做了一节', 'one section only'), retake: t('重做', 'retake') }[f] || f; }
+  function flagName(f) { return { informal: t('非正式（暂停过）', 'informal (paused)'), partial: t('只做了一部分', 'one part only'), retake: t('重做', 'retake') }[f] || f; }
   function setById(id) { return SETS.filter(function (s) { return s.id === id; })[0]; }
 
   function mockIntro(set) {
@@ -1924,6 +1964,7 @@
     loadTest(set).then(function (test) {
       var h = '<div class="q-top"><button class="q-link" data-act="m-list">‹ ' + t('返回', 'Back') + '</button></div><div class="q-card"><h2>' + setName(set) + '</h2><table class="q-table q-plan">';
       test.sections.forEach(function (sec, i) {
+        if (sec.part) return;
         h += '<tr><th>' + esc(sec.ja) + '<br><small>' + esc(bi(sec)) + '</small></th><td>' + secIds(sec).length + t(' 题', ' questions') + '</td><td>' + sec.minutes + t(' 分钟', ' min') + '</td></tr>';
       });
       h += '</table><ul class="q-rules"><li>' + t('作答中不显示对错和解析，交卷后统一看。', 'No answers or explanations until you submit.') + '</li>' +
@@ -1932,7 +1973,7 @@
         '<li>' + t('可以暂停；切到别的 App 超过 1 分钟会自动暂停。暂停过的成绩标为“非正式”。', 'You can pause; leaving the page for over a minute pauses it too. A paused attempt is marked informal.') + '</li>' +
         (test.sections.some(function (sec) { return sec.listening; }) ? '<li>' + t('聴解和真考一样：点一次开始，录音按顺序每题只放一次，不能回放；每题之后有几秒作答时间。请打开声音，最好戴耳机。', 'Listening works like the real test: one tap starts it, each recording plays once, in order, with no replay, and a few seconds to answer after each. Turn the sound on; headphones help.') + '</li>' : '') + '</ul>' +
         '<div class="q-actions q-start"><button class="q-btn q-btn-primary q-btn-big" data-act="m-start" data-k="full">' + t('整套开始', 'Start the full test') + '</button>' +
-        test.sections.map(function (sec, i) { return '<button class="q-btn" data-act="m-start" data-k="' + i + '">' + t('只做：', 'Only: ') + esc(sec.ja) + '</button>'; }).join('') + '</div></div>';
+        test.sections.map(function (sec, i) { return i; }).sort(function (i, j) { var a = test.sections[i], b = test.sections[j]; return ((a.part ? a.of : i) - (b.part ? b.of : j)) || (i - j); }).map(function (i) { var sec = test.sections[i]; return '<button class="q-btn' + (sec.sub ? ' q-btn-sub' : sec.part ? ' q-btn-part' : '') + '" data-act="m-start" data-k="' + i + '">' + t('只做：', 'Only: ') + esc(sec.ja) + ' <small class="q-muted">' + sec.minutes + t(' 分钟', ' min') + '</small></button>'; }).join('') + '</div></div>';
       M = { set: set, test: test };
       app.innerHTML = h;
     }).catch(loadFail);
@@ -1940,9 +1981,9 @@
 
   function mockStart(mode) {
     var st = mstate(M.set.id);
-    st.current = { mode: mode, secs: mode === 'full' ? M.test.sections.map(function (_, i) { return i; }) : [+mode], si: 0, start: Date.now(), secStart: Date.now(), pausedMs: 0, used: [], answers: {}, flagsQ: {}, informal: false, at: 0, retake: st.attempts.length > 0 };
+    st.current = { mode: mode, secs: mode === 'full' ? realSecs(M.test) : [+mode], si: 0, start: Date.now(), secStart: Date.now(), pausedMs: 0, used: [], answers: {}, flagsQ: {}, informal: false, at: 0, retake: st.attempts.length > 0 };
     save();
-    track('mock_start', { set: M.set.id, mode: mode });
+    track('mock_start', { set: M.set.id, mode: mode, part: mode === 'full' ? 'full' : M.test.sections[+mode].sub || M.test.sections[+mode].part || M.test.sections[+mode].key });
     mockSection();
   }
   function cur2() { return mstate(M.set.id).current; }
@@ -2065,7 +2106,7 @@
   // test is equated (IRT), so this is only an estimate.
   function scoreAttempt(att, key) {
     var right = 0, all = 0;
-    var c = mstate(M.set.id).current || { secs: att.mode === 'full' ? M.test.sections.map(function (_, i) { return i; }) : [+att.mode] };
+    var c = mstate(M.set.id).current || { secs: att.mode === 'full' ? realSecs(M.test) : [+att.mode] };
     var taken = [];
     c.secs.forEach(function (i) { taken = taken.concat(secIds(M.test.sections[i])); });
     // Each scored part is a set of question types (N3/N2 split language
@@ -2107,19 +2148,19 @@
       // By もんだい
       h += '<h3>' + t('各题型', 'By question type') + '</h3><table class="q-table q-bytype"><tr><th></th><th>' + t('题型', 'Type') + '</th><th>' + t('对', 'Right') + '</th><th>' + t('猜对', 'Guessed') + '</th><th></th></tr>';
       test.sections.forEach(function (sec, si) {
-        if (att.usedBy && att.mode !== 'full' && +att.mode !== si) return;
+        if (att.mode === 'full' ? sec.part : att.usedBy && +att.mode !== si) return;
         sec.problems.forEach(function (p) {
           var ok = 0, g = 0;
           p.ids.forEach(function (id) { var a = att.answers[id]; if (a && a.c === key.questions[id].answer) { ok++; if (a.g) g++; } });
           var low = ok / p.ids.length < 0.5;
-          h += '<tr' + (low ? ' class="q-low"' : '') + '><td>' + (si + 1) + '-' + p.no + '</td><td>' + esc(test.types[p.type].ja) + '<br><small class="q-muted">' + esc(bi(test.types[p.type])) + '</small></td><td>' + ok + '/' + p.ids.length + '</td><td>' + (g || '') + '</td>' +
+          h += '<tr' + (low ? ' class="q-low"' : '') + '><td>' + ((sec.part ? sec.of : si) + 1) + '-' + p.no + '</td><td>' + esc(test.types[p.type].ja) + '<br><small class="q-muted">' + esc(bi(test.types[p.type])) + '</small></td><td>' + ok + '/' + p.ids.length + '</td><td>' + (g || '') + '</td>' +
             '<td><a href="' + LESSON_BASE + LEVEL.toLowerCase() + '-practice/#type=' + p.type + '" title="' + t('练这个题型', 'Practice this type') + '">✍ ' + t('练', 'Practice') + '</a></td></tr>';
         });
       });
       h += '</table>';
       // Time
       h += '<h3>' + t('时间', 'Time') + '</h3><ul class="q-time">';
-      var secs = att.mode === 'full' ? test.sections.map(function (_, i) { return i; }) : [+att.mode];
+      var secs = att.mode === 'full' ? realSecs(test) : [+att.mode];
       secs.forEach(function (si, k) {
         var sec = test.sections[si], used = (att.usedBy || [])[k] || 0;
         h += '<li>' + esc(sec.ja) + '：' + Math.round(used / 60000) + ' / ' + sec.minutes + t(' 分钟', ' min') + (used >= sec.minutes * 60000 - 1000 ? ' · ' + t('用满了', 'used it all') : '') + '</li>';
@@ -2149,7 +2190,7 @@
     var shownP = {};
     function listed(id) { var aa = att.answers[id] || {}; return FAV ? isFav(id) : !(which === 'wrong' && aa.c === key.questions[id].answer && !aa.g); }
     test.sections.forEach(function (sec, si) {
-      if (!FAV && att.mode !== 'full' && +att.mode !== si) return;
+      if (FAV || att.mode === 'full' ? sec.part : +att.mode !== si) return;
       sec.problems.forEach(function (p) {
         p.ids.forEach(function (id, k) {
           var q = Q[id], kq = key.questions[id], a = att.answers[id] || {}, ok = a.c === kq.answer;

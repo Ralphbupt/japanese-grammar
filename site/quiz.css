@@ -245,6 +245,8 @@ html.theme-dark .q-ai .q-btn:not(.q-ai-main) { border-color: color-mix(in srgb, 
 .q-plan td { white-space: nowrap; }
 .q-rules { padding-left: 1.2rem; line-height: 1.8; color: var(--text-muted); }
 .q-start { flex-direction: column; align-items: stretch; }
+.q-start .q-btn-part { margin-left: 1.25rem; }
+.q-start .q-btn-sub { margin-left: 2.5rem; font-size: .9em; padding-top: .35rem; padding-bottom: .35rem; }
 .q-mockbar { position: sticky; top: 0; z-index: 5; display: flex; align-items: center; gap: .8rem; flex-wrap: wrap; padding: .6rem 0; margin-bottom: .6rem; background: var(--bg); border-bottom: 1px solid var(--border); font-size: .92rem; }
 .q-mockbar .q-btn { padding: .35em .8em; }
 .q-mockbar .q-btn:first-of-type { margin-left: auto; }
