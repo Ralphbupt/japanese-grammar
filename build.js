@@ -4955,7 +4955,9 @@ ${AI_SCRIPT}
       tougou: ["同一话题的两篇短文。先分别记下两人的立场，题目问的是相同点和不同点。", "Two texts on one topic. Note each writer's position first; the questions ask what they share and where they differ."],
       shuchou: ["一篇长的议论文。作者的主张多在最后一段，以及「しかし」这类转折词之后。", "A long opinion piece. The writer's claim tends to sit in the last paragraph and after contrast words such as しかし."],
       info: ["通知、时刻表或价目表。先看题目里的条件，只找符合条件的部分，不要通读；别漏掉「※」后面的注意事项。", "A notice, timetable or price list. Read the conditions in the question first and scan only for those — don't read the whole page, and check the notes marked ※."],
-      kadai: ["对话前先播问题：这个人接下来（或最先）要做什么。计划会在对话里改变，最后定下来的才是答案。", "You hear the question before the talk: what will this person do next, or first? Plans change as they speak — the last decision is the answer."],
+      kadai: level === "N5" || level === "N4"
+        ? ["对话前先播问题：这个人接下来要做什么。计划会在对话里改变，听到最后，最后定下来的那件事多半就是答案。", "You hear the question before the talk: what will this person do next? Plans change as they speak — listen to the end; what gets settled last is usually the answer."]
+        : ["对话前先播问题，问的多是「最先做什么」。盯住「まず」「先に」「〜てから」，不要只等最后的决定——在 N2・N1 真题里，最后的决定只在大约三分之一的题里是答案。", "You hear the question before the talk, and it usually asks what to do first. Listen for まず, 先に, 〜てから rather than waiting for the last decision — on N2 and N1 past papers the last decision was the answer in only about a third of items."],
       point: ["先播问题，并留时间看选项。只听被问的那一点（多半是理由），其余的放过。", "The question comes first and you get time to read the options. Listen for that one thing — usually a reason — and let the rest go."],
       gaiyou: ["事先不播问题，试卷上什么都不印。抓整体的话题或说话人的看法，不追细节。", "No question beforehand and nothing printed. Follow the overall topic or the speaker's opinion, not the details."],
       hatsuwa: ["看图和箭头：箭头指的人是说话的人。三个选项播出之前，先想他是在请求、提议还是道歉。", "Look at the picture and the arrow: the person with the arrow is the one speaking. Before the three options play, decide whether they are asking, offering or apologising."],
@@ -5285,6 +5287,9 @@ r.addEventListener('play',function(e){var it=e.target.closest&&e.target.closest(
     const qs = quizSamples(kind, bundle);
     return { ...m, about: quizSamplesHtml(qs, en, bundle) + quizAbout(level, kind, en, bundle), schema: quizSchema(level, kind, { ...m, lang: en ? "en" : "zh-Hans", home: en ? "Japanese Grammar Notes" : "日语语法笔记" }, url, quizSampleSchema(qs, en, level)) };
   };
+  // Counts in titles ("800+ Free Questions"): the pages ranking above ours name
+  // their size (2026-11-27); rounded down so a few new questions don't churn titles.
+  const plus = (n) => (n >= 100 ? `${Math.floor(n / 50) * 50}+` : String(n));
   for (const [level, { practice, mocks }] of Object.entries(quizBundles)) {
     const lv = level.toLowerCase();
     const practiceId = `${lv}-practice`, mockId = `${lv}-mock-test`, cardsId = `${lv}-cards`, listeningId = `${lv}-listening`;
@@ -5317,14 +5322,14 @@ r.addEventListener('play',function(e){var it=e.target.closest&&e.target.closest(
     const count = practice.questions.length;
     const meta = {
       en: {
-        title: `JLPT ${level} Practice Test — Free Questions with Answers & Explanations`,
+        title: `JLPT ${level} Practice Test — ${plus(count)} Free Questions, No Sign-up`,
         desc: `Free JLPT ${level} practice: ${count} exam-style questions — ${ckLevels.includes(level) ? "listening with audio, " : ""}kanji, vocabulary, grammar and reading — with an explanation for every option.`,
         h1: `JLPT ${level} Practice Test`, crumb: `${level} Practice`,
         lead: `Exam-style ${level} questions in every format of the test${ckLevels.includes(level) ? ", listening included" : " except listening"}. Answer, see why each option is right or wrong, and the ones you miss come back a few days later.`,
         nav: navLinks(practiceId, true),
       },
       zh: {
-        title: `JLPT ${level} 练习题在线做（免费）- 题型同真题${ckLevels.includes(level) ? "，含听力" : ""}，每题有解析`,
+        title: `JLPT ${level} 练习题在线做（免费 ${plus(count)} 道）- 题型同真题${ckLevels.includes(level) ? "，含听力" : ""}，免注册`,
         desc: `免费 JLPT ${level} 练习：${count} 道仿真题，覆盖${ckLevels.includes(level) ? "听力（带音频）、" : ""}汉字读音、词汇、语法、句子排序和阅读，即时判分，每个错误选项都有解析，错题本按间隔重复自动复习。`,
         h1: `JLPT ${level} 练习题`, crumb: `${level} 练习`,
         lead: `${ckLevels.includes(level) ? "覆盖" : "除听力外覆盖 "}${level} 考试的全部题型${ckLevels.includes(level) ? "（含听力）" : ""}。答完马上看每个选项为什么对、为什么错，答错的题过几天会再考你一次。`,
@@ -5347,14 +5352,14 @@ r.addEventListener('play',function(e){var it=e.target.closest&&e.target.closest(
       const recs = new Set(ckQs.map((q) => q.passage || q.id)).size;
       const ckMeta = {
         en: {
-          title: `JLPT ${level} Listening Practice — Free Audio Questions with Transcripts`,
+          title: `JLPT ${level} Listening Practice — ${recs} Free Audio Questions with Transcripts`,
           desc: `Free JLPT ${level} listening practice: ${recs} recordings in every test format, with replayable audio, transcripts with furigana, and every option explained. No sign-up.`,
           h1: `JLPT ${level} Listening Practice`, crumb: `${level} Listening`,
           lead: `Every listening format of the ${level}, in original recordings. Play, answer, then read the transcript and see why each option is right or wrong.`,
           nav: navLinks(listeningId, true),
         },
         zh: {
-          title: `JLPT ${level} 听力练习 - 在线听力题，带音频、原文和解析`,
+          title: `JLPT ${level} 听力练习 - ${recs} 段在线听力题，带音频、原文和解析`,
           desc: `免费 JLPT ${level} 听力在线练习：${recs} 段录音，覆盖真考的全部听力题型，可反复播放，答完看带振假名和翻译的原文，每个选项都有解析。`,
           h1: `JLPT ${level} 听力练习`, crumb: `${level} 听力`,
           lead: `${level} 听力的全部题型，录音原创。听完作答，再看原文和每个选项为什么对、为什么错。`,
@@ -5375,20 +5380,20 @@ r.addEventListener('play',function(e){var it=e.target.closest&&e.target.closest(
       const subSrc = writeQuizDataByLang(`${pageId}.json`, { ...practice, page: p.id, types: subTypes, questions: subQs,
         passages: Object.fromEntries(Object.entries(practice.passages || {}).filter(([id]) => pIds.has(id))) });
       const pageMeta = reading ? {
-        en: { title: `JLPT ${level} Reading Practice — Free Passages with Translations`,
+        en: { title: `JLPT ${level} Reading Practice — ${pIds.size} Free Passages with Translations`,
           desc: `Free JLPT ${level} reading practice: ${pIds.size} original passages in every test format, with full translations and every option explained. No sign-up.`,
           h1: `JLPT ${level} Reading Practice`, crumb: `${level} Reading`,
           lead: `Every reading format of the ${level}, in original passages. Answer, see why each option is right or wrong, then read the full translation.`, nav: navLinks(pageId, true) },
-        zh: { title: `JLPT ${level} 阅读练习 - 在线阅读题，带全文翻译和解析`,
+        zh: { title: `JLPT ${level} 阅读练习 - ${pIds.size} 篇在线阅读题，带全文翻译和解析`,
           desc: `免费 JLPT ${level} 阅读在线练习：${pIds.size} 篇原创文章，覆盖真考的全部阅读题型，答完看全文翻译，每个选项都有解析。`,
           h1: `JLPT ${level} 阅读练习`, crumb: `${level} 阅读`,
           lead: `${level} 阅读的全部题型，文章原创。答完看每个选项为什么对、为什么错，再看全文翻译。`, nav: navLinks(pageId, false) },
       } : {
-        en: { title: `JLPT ${level} Vocabulary Practice — Free Kanji & Word Questions`,
+        en: { title: `JLPT ${level} Vocabulary Practice — ${plus(subQs.length)} Free Kanji & Word Questions`,
           desc: `Free JLPT ${level} vocabulary practice: ${subQs.length} exam-style questions on kanji readings, writing and word use, with every option explained. No sign-up.`,
           h1: `JLPT ${level} Vocabulary Practice`, crumb: `${level} Vocabulary`,
           lead: `Every vocabulary item type of the ${level}: kanji readings, writing, word choice and more. Answer, then see why each option is right or wrong.${vlLangs.includes("en") ? ` Want the words themselves? The <a href="${SITE_PATH}${vlId}/">${level} vocabulary list</a> has every word the real ${level} tests asked, read aloud.` : ""}`, nav: navLinks(pageId, true) },
-        zh: { title: `JLPT ${level} 词汇练习 - 文字词汇在线做题，附详细解析`,
+        zh: { title: `JLPT ${level} 词汇练习 - ${plus(subQs.length)} 道文字词汇在线题，附详细解析`,
           desc: `免费 JLPT ${level} 文字词汇在线练习：${subQs.length} 道仿真题，覆盖汉字读音、汉字写法和词语运用，每个选项都有解析。`,
           h1: `JLPT ${level} 词汇练习`, crumb: `${level} 词汇`,
           lead: `${level} 文字词汇的全部题型：汉字读音、汉字写法、选词填空等。答完马上看每个选项为什么对、为什么错。${vlLangs.includes("zh") ? `想先背词：<a href="${SITE_PATH}${vlId}/">${level} 高频词汇</a>收了历年真题考过的全部词，带朗读。` : ""}`, nav: navLinks(pageId, false) },
@@ -5713,16 +5718,22 @@ window.addEventListener('hashchange',function(){var m=decodeURIComponent(locatio
     // test.sections are the sittings actually written, so a listening sitting left out for missing audio isn't listed.
     const secsOf = mocks.map(({ test }) => test.sections.map((sec) => ({ ja: sec.ja, zh: sec.zh, en: sec.en, minutes: sec.minutes, n: sec.problems.reduce((a, p) => a + p.ids.length, 0) })));
     const setsFor = (code) => JSON.stringify(sets.map((x, i) => ({ ...x, src: x.src[code], key: x.key[code], sections: secsOf[i] }))).replace(/'/g, "\\u0027");
+    // "2 Free Full Exams, 140 Min, Scored out of 180": count, the whole timing (listening included) and the score.
+    const mockMin = mocks[0].test.sections.reduce((a, x) => a + (x.minutes || 0), 0);
+    const mockFull = mocks.every(({ test }) => test.sections.some((x) => x.listening));
+    const mockTitle = (en) => en
+      ? `${mocks.length} Free ${mockFull ? "Full " : ""}Exam${mocks.length > 1 ? "s" : ""}, ${mockMin} Min Timed, Scored /180`
+      : `${mocks.length} 套${mockFull ? "完整" : ""}模拟（共 ${mockMin} 分钟，计时估分${hasCk ? "，含听力" : ""}）`;
     const mockMeta = {
       en: {
-        title: `JLPT ${level} Mock Test — Free Timed Sample Exam with Score`,
+        title: `JLPT ${level} Mock Test — ${mockTitle(true)}`,
         desc: `Free timed JLPT ${level} mock test in the real format${hasCk ? ", listening included" : ""}: an estimated score against the pass marks and every question explained.`,
         h1: `JLPT ${level} Mock Test`, crumb: `${level} Mock test`,
         lead: `Original questions in the real test's order and timing, not in the practice bank. No answers until you submit; then an estimated score, where the time went, and an explanation for every question.`,
         nav: navLinks(mockId, true),
       },
       zh: {
-        title: `JLPT ${level} 模拟题在线测试（免费）- 计时估分${hasCk ? "，含听力" : ""}`,
+        title: `JLPT ${level} 模拟题在线测试（免费）- ${mockTitle(false)}`,
         desc: `免费 JLPT ${level} 在线模拟考：按真题结构和时间出题（文字词汇、语法、阅读${hasCk ? "、听力" : ""}），交卷后估算分数、对照合格线，按题型分析，每道题都有解析。`,
         h1: `JLPT ${level} 模拟题`, crumb: `${level} 模拟题`,
         lead: `原创题目，按真考的顺序和时间作答，和练习题不重复。交卷前不显示答案；交卷后估算分数、看时间花在哪里、逐题看解析。`,
