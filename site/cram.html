@@ -20,7 +20,7 @@ h1{font-size:22px;margin:16px 0 4px}.lead{color:var(--mute);font-size:14px;margi
 #bar{position:fixed;left:0;right:0;bottom:0;z-index:5;background:var(--card);border-top:1px solid var(--line);padding:8px 0 calc(8px + env(safe-area-inset-bottom,0px));box-shadow:0 -4px 16px rgba(0,0,0,.06)}
 .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.row+.row{margin-top:8px}
 #play{width:44px;height:36px;border-radius:8px;border:0;background:var(--ui);color:var(--ui-on);font-size:16px;cursor:pointer}
-#seek{flex:1;min-width:120px;accent-color:var(--ui)}#time{font-size:12px;color:var(--mute);font-variant-numeric:tabular-nums}
+#seek{flex:1;min-width:120px;accent-color:var(--ui)}#time{font-size:12px;color:var(--mute);font-variant-numeric:tabular-nums}#ast{font-size:12px;color:var(--accent,#c0392b);width:100%;text-align:center}#ast:empty{display:none}
 .row button,.row select,#q{font:inherit;font-size:13px;padding:4px 10px;border-radius:7px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
 #q{width:120px;cursor:text}
 .row button[aria-pressed=true]{background:var(--ui);color:var(--ui-on);border-color:var(--ui)}
@@ -68,7 +68,7 @@ table.xt{width:100%;border-collapse:collapse;font-size:15px;background:var(--car
     <button id="trs" aria-pressed="true">念翻译</button><button id="hz" aria-pressed="false">遮住意思</button><button id="real" aria-pressed="false">只看真题</button><input id="q" placeholder="搜语法/序号"></div>
   <div class="row toc" id="toc"></div>
 </div>
-<div id="bar"><div class="wrap"><div class="row"><button id="play" aria-label="播放">▶</button><input id="seek" type="range" min="0" max="1000" value="0"><span id="time">0:00</span>
+<div id="bar"><div class="wrap"><div class="row"><button id="play" aria-label="播放">▶</button><input id="seek" type="range" min="0" max="1000" value="0"><span id="time">0:00</span><span id="ast" role="status"></span>
   <select id="rate" aria-label="语速"><option value="0.8">0.8×</option><option value="1" selected>1×</option><option value="1.2">1.2×</option><option value="1.5">1.5×</option></select></div></div></div>
 <main class="wrap" id="list"></main>
 <audio id="a" preload="metadata"></audio>
@@ -142,7 +142,13 @@ table.xt{width:100%;border-collapse:collapse;font-size:15px;background:var(--car
   // Follow the reading like the podcast pages, but not while the reader is scrolling.
   let userScroll = 0;
   ['wheel', 'touchmove', 'keydown'].forEach((ev) => addEventListener(ev, (e) => { if (ev !== 'keydown' || /^(Page|Arrow(Up|Down)|Home|End)/.test(e.key)) userScroll = Date.now(); }, { passive: true }));
-  const go = () => { const p = a.play(); if (p && p.catch) p.catch(() => {}); };
+  // Say on the bar why nothing is heard (a reader's phone can't be inspected otherwise).
+  const ast = document.getElementById('ast'); let waitT = 0;
+  const st = (m) => { ast.textContent = m; };
+  a.addEventListener('error', () => st('音频加载失败（' + (a.error ? a.error.code : '?') + '），刷新再试'));
+  a.addEventListener('waiting', () => { clearTimeout(waitT); waitT = setTimeout(() => st('加载中…网络慢的话要等几秒'), 1500); });
+  ['playing', 'pause', 'seeked'].forEach((ev) => a.addEventListener(ev, () => { clearTimeout(waitT); if (!a.error) st(''); }));
+  const go = () => { const p = a.play(); if (p && p.catch) p.catch((e) => st('播放被拦下：' + (e && e.name || e) + '，再点一次 ▶')); };
   function playLine(i) { if (!T[i]) return; a.currentTime = T[i].s; stopAt = mode === 'one' || mode === 'loop' ? i : mode === 'part' ? partEnd(i) : null; mark1(i, true); go(); }
   list.addEventListener('click', (e) => { const t = e.target.closest('[data-i]'); if (t) playLine(+t.dataset.i); });
   toc.addEventListener('click', (e) => { const c = e.target.closest('a'); if (!c) return; e.preventDefault(); document.querySelector(c.getAttribute('href')).scrollIntoView({ behavior: 'smooth' }); playLine(partStart[+c.dataset.part]); });
