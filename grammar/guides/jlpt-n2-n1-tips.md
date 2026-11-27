@@ -33,7 +33,12 @@ How to use it: start with the summary table to see which tricks to keep and whic
 | 阅读：带 だけ・しか・最も 等"绝对"词的选项大多错 | 27% / 25% | ✘ 等于瞎猜 |
 | 阅读：照搬原文字句的选项不选 | 31% / 26% | ✘ 不灵 |
 | 阅读：和原文字面最不像的选项 | 16% / 20% | 反而更常是错的 |
+| 阅读：两个很像的选项，答案多在其中 | 73% / 67%（随机 50%） | ✔ 很有用 |
 | 阅读：明显最长的选项 | 11% / 18% | 很少是答案 |
+| 即時応答：附和（そうですね・ええ・うん 开头）的要选 | 57% / 42% | ✔ N2 尤其 |
+| 即時応答：「じゃあ・それなら」开头的不选 | 19% / 24% | ✔ 用来排除 |
+| 阅读：留余地的说法（〜こともある・とは限らない） | 33% / 39% | 略高于瞎猜 |
+| 猜题：相邻两题答案相同 | 14% / 15%（随机约 25–33%） | ✔ 别和上一题选一样的 |
 | 排序题：★ 在第几格 | 第 3 格 63% / 75% | 了解即可 |
 
 即時応答 的数字来自能拿到听力原文的考试（N2 27 次 311 题，N1 25 次 321 题）；阅读的数字来自 N2 595 题、N1 710 题（不含信息检索，因为它的选项多是时间和价格）。"明显最长/最短"= 比第二长（短）的选项长（短）20% 以上，即時応答 用 30%。
@@ -58,7 +63,12 @@ How to use it: start with the summary table to see which tricks to keep and whic
 | Reading: options with だけ, しか, 最も are usually wrong | 27% / 25% | ✘ Same as guessing |
 | Reading: drop options that copy the passage word for word | 31% / 26% | ✘ Doesn't work |
 | Reading: the option least like the passage | 16% / 20% | Wrong more often |
+| Reading: two look-alike options — the answer is usually one of them | 73% / 67% (chance 50%) | ✔ Very useful |
 | Reading: a clearly longest option | 11% / 18% | Rarely the answer |
+| Quick response: pick agreeing replies (そうですね, ええ, うん) | 57% / 42% | ✔ Esp. N2 |
+| Quick response: drop replies opening with じゃあ / それなら | 19% / 24% | ✔ Good for elimination |
+| Reading: hedged options (〜こともある, とは限らない) | 33% / 39% | Slightly above a guess |
+| Guessing: neighbouring items share an answer | 14% / 15% (chance ~25–33%) | ✔ Don't repeat the last number |
 | Sentence order: which slot the ★ is in | 3rd slot 63% / 75% | Good to know |
 
 Quick-response figures come from the sittings whose listening scripts we have (N2: 27 sittings, 311 items; N1: 25 sittings, 321 items). Reading figures: 595 N2 and 710 N1 questions (information retrieval left out — its options are mostly times and prices). "Clearly longest / shortest" = at least 20% longer (shorter) than the next option; 30% for quick response.
@@ -77,6 +87,39 @@ Quick-response figures come from the sittings whose listening scripts we have (N
 - **The figures are averages.** One sitting can go the other way, and the people who write the test have heard these tricks too.
 - **Drop the tricks that don't work.** Crossing out every option with 必ず also crosses out real answers: on N1 papers, options with 必ず, 全て, 決して or 常に were the answer 37% of the time — more than a guess.
 - Word overlap was measured roughly by script (how many 4-character pieces of an option also appear in the test booklet), so treat it as an estimate.
+:::
+
+## 送分题：花最少的时间拿到的分||Free Points: The Cheapest Marks on the Paper
+
+:::zh
+"送分"不是说题简单，而是**准备一次、回报很稳**。从真题数据看，下面几类最值：
+
+**1. 构词（語形成，N2）：考过的前后缀会再考。** N2 每次考 3 题（2019 年前是 5 题），2010–2026 年的考点里 **25% 以前考过**，比任何其他词汇题型都高（汉字读音 8%、用法 6%）。考过两次以上的有这些（括号里是本站举的例词）：
+
+諸（諸外国） · 連れ（子ども連れ） · 再（再確認） · 悪（悪影響） · 風（和風） · 率（合格率） · 高（高収入） · 低（低カロリー） · 現（現社長） · 順（年齢順） · 仮（仮採用） · 無（無責任） · 副（副作用） · 状（招待状） · 真（真夜中） · 制（予約制） · 準（準優勝） · 発（東京発） · 最（最優先） · 未（未使用） · おき（二日おき） · 異（異文化） · づらい（読みづらい） · 主（主成分） · 離れ（活字離れ） · 際（窓際） · 色（国際色） · 流（日本流） · 前（前社長） · 街（商店街） · 別（地域別） · 来（来年度）
+
+**2. 语法题：四分之一是老考点。** 2020 年以后的 N2 文法题，26% 的考点以前在 N2 考过（N1 20%）。按考过次数排好的清单见 [N2 历年真题语法](/jlpt-n2-past-exam-grammar/) 和 [N1 历年真题语法](/jlpt-n1-past-exam-grammar/)，先背"考过 3 次以上"的那几十个。
+
+**3. 即時応答：听懂语气就能拿的分。** 每次 11–14 题，选项只有 3 个，而且有几条真题里很稳的规律：对方抱怨或责备时选道歉（N2 74%）；以「そうですね・ええ・うん」附和开头的选项 N2 57% 是答案；以「じゃあ・それなら」顺着往下接的只有 19–24%；重复题干原词的只有 17–22%。
+
+**4. 情報検索：不用读懂全文。** 每次 2 题，表格、通知或广告，按题目里的条件（谁、什么时候、多少钱、要不要预约）去找，留意「ただし」「〜を除く」这类附加条件就行。放在阅读最后做，用剩下的时间稳稳拿下。
+
+**5. 排序题：会接续就有分。** 每次 5 题。词都认识的话，用上面的接续表几乎一定能排出来，比文法形式题更"有路可走"。
+:::
+:::en
+"Free" doesn't mean easy — it means **prepare once, score reliably**. On the past-paper data these are the best value:
+
+**1. Word formation (語形成, N2): tested affixes come back.** N2 has 3 of these per sitting (5 before 2019), and **25% of the 2010–2026 targets had been tested before** — more than any other vocabulary type (kanji reading 8%, usage 6%). The ones tested twice or more (example words in brackets are ours):
+
+諸（諸外国） · 連れ（子ども連れ） · 再（再確認） · 悪（悪影響） · 風（和風） · 率（合格率） · 高（高収入） · 低（低カロリー） · 現（現社長） · 順（年齢順） · 仮（仮採用） · 無（無責任） · 副（副作用） · 状（招待状） · 真（真夜中） · 制（予約制） · 準（準優勝） · 発（東京発） · 最（最優先） · 未（未使用） · おき（二日おき） · 異（異文化） · づらい（読みづらい） · 主（主成分） · 離れ（活字離れ） · 際（窓際） · 色（国際色） · 流（日本流） · 前（前社長） · 街（商店街） · 別（地域別） · 来（来年度）
+
+**2. Grammar form: a quarter are old targets.** Since 2020, 26% of N2 grammar-form targets had been tested at N2 before (N1 20%). The lists ordered by how often each was tested: [N2 past-exam grammar](/jlpt-n2-past-exam-grammar/) and [N1 past-exam grammar](/jlpt-n1-past-exam-grammar/) — learn the ones tested 3+ times first.
+
+**3. Quick response: points for catching the tone.** 11–14 items per sitting, only 3 options each, and some patterns hold well on real papers: answer a complaint with an apology (74% at N2); options opening with そうですね, ええ or うん were right 57% of the time at N2; options opening with じゃあ or それなら only 19–24%; options repeating the prompt's words only 17–22%.
+
+**4. Information retrieval: no need to read it all.** 2 items per sitting — a table, notice or advert. Search by the question's conditions (who, when, how much, booking needed?) and watch for ただし and 〜を除く. Do it last in the reading section and bank the points with the time left.
+
+**5. Sentence order: connections give you the answer.** 5 items per sitting. If you know the words, the connection table below almost always settles the order — there's a method to follow, unlike most grammar-form items.
 :::
 
 ## 排序题 ★：语法接续比句意更可靠||Sentence Order ★: Grammar Connections Beat Meaning
@@ -153,6 +196,7 @@ On past papers the ★ sits in the 3rd slot most of the time (N2 63%, N1 75%), o
 - **转折词后面是重点**：「しかし」「実は」「ところが」后面通常是作者真正想说的。
 - **主旨多在最后一段**，前面的经历、例子是用来引出观点的。
 - **例子只是为了说明观点**，答案在例子前后的那句总结里，不要陷进例子的细节。
+- **两个选项很像时，答案多半在这两个里**（N2 73%、N1 67%），先比较它们差在哪个词上。
 - **一篇 4–5 分钟**，卡住的题先标记，不要恋战。
 - 回原文找**意思相同、换了说法**的选项。但上面的数据也说明：不要因为一个选项"和原文字句一样"就把它划掉，真题里这种选项反而更常是正解，和原文最不像的才更常错。
 :::
@@ -161,6 +205,7 @@ On past papers the ★ sits in the 3rd slot most of the time (N2 63%, N1 75%), o
 - **What comes after a contrast word matters most**: after しかし, 実は or ところが is usually what the author really means.
 - **The main point is usually in the last paragraph**; experiences and examples earlier on lead up to it.
 - **Examples are there to illustrate a point**: the answer is the summary sentence before or after the example, not its details.
+- **When two options look alike, the answer is usually one of them** (73% at N2, 67% at N1) — compare the word where they differ.
 - **4–5 minutes per passage**; mark a hard question and move on.
 - Look for the option that says **the same thing in other words**. But as the data above shows, don't cross out an option just because it uses the passage's own words — on real papers those are the answer more often, and the option least like the passage is wrong more often.
 :::
@@ -265,6 +310,8 @@ Nothing is printed and the question only comes at the end. What works best is ca
 - **重复题干原词的选项先怀疑**（N2 只有 22%、N1 17% 是答案）。敬语、固定搭配里的重复不算。
 - **授受表达（〜てあげる・〜てもらう）的选项先怀疑**，N2 尤其（16%）。
 - **两长一短时，短的那个值得多看一眼**（N2 43%、N1 45%）。
+- **附和型的选项（「そうですね」「ええ」「うん」开头）值得优先考虑**（N2 57%、N1 42%）；以「じゃあ」「それなら」顺着往下接的选项多是错的（19% / 24%）。
+- 带否定（〜ない・〜ません）的选项并不"危险"，反而有 41–43% 是答案。
 - "反问的不选""提议的要选"在真题里几乎没用，不要靠它们。
 :::
 :::en
@@ -279,6 +326,8 @@ Then eliminate:
 - **Be suspicious of an option that repeats words from the prompt** (only 22% at N2 and 17% at N1 were the answer). Repeats inside set phrases and keigo don't count.
 - **Be suspicious of giving/receiving forms (〜てあげる, 〜てもらう)**, especially at N2 (16%).
 - **With two long options and one short one, take a second look at the short one** (43% at N2, 45% at N1).
+- **Agreeing replies (opening with そうですね, ええ or うん) deserve first look** (57% at N2, 42% at N1); replies that run on with じゃあ or それなら are usually wrong (19% / 24%).
+- Negative options (〜ない, 〜ません) aren't "risky" — 41–43% of them were the answer.
 - "Never pick the question back" and "pick the suggestion" barely work on real papers — don't lean on them.
 :::
 
@@ -297,6 +346,45 @@ Then eliminate:
 - If you're lost: the answer was 2 or 3 in 58% of N2 items and 56% of N1 items.
 :::
 
+## 网上攻略的说法，真题怎么说||What Other Guides Say — and What the Papers Say
+
+:::zh
+我们读了一圈中文、日文和英文的 N2・N1 攻略（培训机构博客、学习社区、备考网站），挑出能用数据检验的说法逐条核对。这里列的是上面没讲过的：
+
+| 攻略里的说法 | 真题 N2 / N1 | 结论 |
+|------|------|------|
+| 阅读：两个选项很像时，答案多半是其中一个 | 答案在最像的两个里：73% / 67%（随机 50%） | ✔ 很有用 |
+| 阅读：用「ない」「ではなく」制造意思相反的干扰项，带否定的选项多错 | 25% / 24% | ✘ 等于瞎猜 |
+| 阅读：写得含糊（往往、通常）的选项比斩钉截铁的更可能对 | 33% / 39% | △ 略高于瞎猜 |
+| 阅读：长度异常的选项可疑 | 最长 11% / 18%，最短 22% / 14% | ✔ 两头都少是答案 |
+| 排序：★ 固定在第 3 格 | 63% / 75% | ✘ 不是固定，第 2 格也常见 |
+| 即時応答：以「が…」「けど…」话说一半结尾的选项正答率低 | 48% / 45% | ✘ 正相反，这类反而常是答案 |
+| 即時応答：「いいですよ」「そうしましょう」这类积极回应常正确 | 61% / 22%（各 18 个） | △ N2 有点用，N1 不灵，样本少 |
+| 听力 問題1 优先猜 2 | 34% / 35% | △ 2 最多，但 3 也差不多（32% / 29%） |
+| 听力 問題3 留意 2；問題4 3 常是得体回答 | 問題3 的 2：20% / 24%；問題4 的 3：32% / 32% | ✘ 都没有这个倾向 |
+| 答案分布没有规律，连续几题同一个答案很正常 | 相邻两题相同只有 14% / 15% | ✘ 有规律：答案很少连着重复 |
+
+还有几条攻略里常见、我们同意但没法用统计检验的：不倒扣分，所以**一题都不要空着**；听力利用例题的时间先看問題1、2 的选项；笔记只记结论的变化和"谁说了什么"，不写汉字；只有找到理由才改答案。
+:::
+:::en
+We read a round of Chinese, Japanese and English N2/N1 guides (prep-school blogs, learner communities, test-prep sites) and checked every claim that data can test. These are the ones not covered above:
+
+| What guides say | Papers N2 / N1 | Verdict |
+|------|------|------|
+| Reading: when two options look alike, the answer is usually one of them | Answer among the two most alike: 73% / 67% (chance 50%) | ✔ Very useful |
+| Reading: negatives (ない, ではなく) make opposite-meaning traps, so negative options are usually wrong | 25% / 24% | ✘ Same as guessing |
+| Reading: vague options ("often", "usually") are likelier than categorical ones | 33% / 39% | △ Slightly above a guess |
+| Reading: options of unusual length are suspicious | Longest 11% / 18%, shortest 22% / 14% | ✔ Both ends rarely the answer |
+| Sentence order: the ★ is always the 3rd slot | 63% / 75% | ✘ Not always — the 2nd is common too |
+| Quick response: replies trailing off with が… or けど… are rarely right | 48% / 45% | ✘ The opposite: these are often the answer |
+| Quick response: positive replies (いいですよ, そうしましょう) are usually right | 61% / 22% (18 each) | △ Some help at N2, not at N1; small samples |
+| Listening part 1: guess 2 | 34% / 35% | △ 2 is most common, but 3 is close (32% / 29%) |
+| Listening part 3: watch for 2; part 4: 3 is often the polite reply | Part 3 answer 2: 20% / 24%; part 4 answer 3: 32% / 32% | ✘ No such lean |
+| There's no pattern in answers; several in a row with the same number is normal | Neighbours share an answer only 14% / 15% | ✘ There is one: answers rarely repeat |
+
+And some common advice we agree with but can't test with numbers: there's no penalty for wrong answers, so **never leave a blank**; use the example item's time to read the options of listening parts 1 and 2; in notes, track only changes of plan and who said what, no kanji; change an answer only when you've found a reason.
+:::
+
 ## 实在不会：猜哪个||If You Have to Guess
 
 :::zh
@@ -313,6 +401,8 @@ Then eliminate:
 | 排序题 | 24·26·26·25 | 29·24·21·26 | 没有规律 |
 
 阅读和文字语法部分的答案位置基本平均，不要指望靠位置猜。
+
+还有一条：**同一大题里，相邻两题答案相同的只有 14–15%**（随机的话是 25–33%），连续三题相同只有 1.5%。所以猜的时候别选和上一题一样的号；如果你连着三题都选了同一个号，回头检查一下。
 :::
 :::en
 A blank scores nothing; a guess at least has a chance. Share of past-paper answers that were option 1, 2, 3 or 4:
@@ -328,6 +418,8 @@ A blank scores nothing; a guess at least has a chance. Share of past-paper answe
 | Sentence order | 24·26·26·25 | 29·24·21·26 | No pattern |
 
 Reading, vocabulary and grammar answers are spread evenly — position won't help you there.
+
+One more: **within a section, two neighbouring items share the same answer only 14–15% of the time** (25–33% by chance), and three in a row only 1.5%. So when guessing, avoid the number you gave the previous item — and if you've picked the same number three times running, check them again.
 :::
 
 ## 用本站的题练这些技巧||Practise the Techniques Here
