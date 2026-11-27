@@ -1039,6 +1039,7 @@ const JA_TITLES = {
   "jlpt-n1-past-exam-grammar": "N1 過去問の文法",
   "jlpt-n4-past-exam-grammar": "N4 過去問の文法",
   "jlpt-n5-past-exam-grammar": "N5 過去問の文法",
+  "jlpt-n2-n1-tips": "N2・N1 直前のコツ",
   "jlpt-listening-tips": "JLPT 聴解のコツ",
   "jlpt-past-papers": "JLPT 過去問・公式問題集",
   "jlpt": "JLPT とは（レベル・試験・申込）",
