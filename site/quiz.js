@@ -1171,6 +1171,15 @@
     player.play().catch(function () {});
     track('quiz_say', { level: LEVEL });
   }
+  // 🔊 on a flashcard: one player for the page — another tap replays from the start
+  // instead of starting a second copy on top of the first
+  function sayCard(el) {
+    var src = AUDIO_BASE + '/' + el.getAttribute('data-k');
+    if (player && player.src.indexOf(src) >= 0) { player.currentTime = 0; player.play().catch(function () {}); return; }
+    if (player) player.pause();
+    player = new Audio(src);
+    player.play().catch(function () {});
+  }
   function listen(el) {
     var src = AUDIO_BASE + '/' + el.getAttribute('data-k') + '.mp3';
     if (player && player.src.indexOf(src) >= 0 && !player.paused) { player.pause(); el.textContent = '🔊 ' + t('继续听', 'Resume'); return; }
@@ -2784,7 +2793,7 @@
       else if (act === 'c-home') cardsHome();
       else if (act === 'c-show') showBack();
       else if (act === 'c-grade') grade(+el.getAttribute('data-k'));
-      else if (act === 'c-audio') new Audio(AUDIO_BASE + '/' + el.getAttribute('data-k')).play().catch(function () {});
+      else if (act === 'c-audio') sayCard(el);
     });
     app.addEventListener('change', function (e) {
       var act = e.target.getAttribute('data-act');
