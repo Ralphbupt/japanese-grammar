@@ -126,7 +126,7 @@ const AB_LOADER = AB_SRC ? `<script src="${AB_SRC}" defer></script>` : "";
 // it the "已掌握" buttons to hang a block under, practice pages an empty
 // <div class="jp-nt" data-nt="q:<id>"> in each explanation (site/quiz.js).
 // NOTES_SRC= (empty) builds without it; ?notes=local on a page talks to wrangler dev.
-const NOTES_SRC = process.env.NOTES_SRC !== undefined ? process.env.NOTES_SRC : "https://notes.jpnotes.dev/notes.js?v=14";
+const NOTES_SRC = process.env.NOTES_SRC !== undefined ? process.env.NOTES_SRC : "https://notes.jpnotes.dev/notes.js?v=15";
 // Comments (2026-11-26): the end-of-page 反馈 box became 评论 — the page's
 // discussion (notes.js, p:<page id>), whose composer sends privately to the
 // site owner by default (feedback.js, no sign-in) or publicly when ticked.
